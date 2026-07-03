@@ -47,13 +47,13 @@ Common,0,BlockType_02,PSO2:NGSブロック
 Common,1,YesText,Si
 Common,1,NoText,No
 Common,1,CloseText,Close
-Common,1,OpenText,Abierto
-Common,1,MaxText,Maximizar
+Common,1,OpenText,abierto
+Common,1,MaxText,maximizar
 Common,1,MinText,Minimizar
 Common,1,Sort,Clasificar
 Common,1,Copy,Copiar
-Common,1,Peaste,Pasta
-Common,1,NextText,Proximo
+Common,1,Peaste,Pastas
+Common,1,NextText,Del mes proximo
 Common,1,PrevText,Anterior
 Common,1,DecideText,Confirmar
 Common,1,CancelText,Cancel
@@ -213,11 +213,11 @@ MainMenu,0,ArksCacheMessage,/ $(0) <pict Arcscash>
 MainMenu,1,MainMenu_CharacterInfo,Informacion del personaje
 MainMenu,1,MainMenu_Palette,Personalizar paletas
 MainMenu,1,MainMenu_Inventory,Inventario
-MainMenu,1,MainMenu_Party,Fiesta
-MainMenu,1,MainMenu_FriendList,Lista de amigos
+MainMenu,1,MainMenu_Party,fiesta
+MainMenu,1,MainMenu_FriendList,lista de amigos
 MainMenu,1,MainMenu_Mail,Correo
 MainMenu,1,MainMenu_Macro,Configuracion de chat automatico
-MainMenu,1,MainMenu_LogWindow,Ventana de registro
+MainMenu,1,MainMenu_LogWindow,ventana de registro
 MainMenu,1,MainMenu_AreaMap,Mapa del area
 MainMenu,1,MainMenu_KeyboardHelp,Ayuda del teclado
 MainMenu,1,MainMenu_Config,Opciones
@@ -234,19 +234,19 @@ MainMenu,1,MainMenu_ItemTreasure,Valores
 MainMenu,1,MainMenu_CharacterStatus,Efectos actuales
 MainMenu,1,MainMenu_Equip_note,Carpeta de coleccion
 MainMenu,1,MainMenu_simple_gat_status,/
-MainMenu,1,MainMenu_Item_Item,Articulo
+MainMenu,1,MainMenu_Item_Item,articulo
 MainMenu,1,MainMenu_Item_Castom,Personalizar
 MainMenu,1,MainMenu_Item_Mug,revistas
-MainMenu,1,MainMenu_Item_Pet,Mascotas
-MainMenu,1,MainMenu_Equip_Weapon,Equipar armas
+MainMenu,1,MainMenu_Item_Pet,mascotas
+MainMenu,1,MainMenu_Equip_Weapon,equipar armas
 MainMenu,1,MainMenu_Equip_Guard,Equipar armadura
 MainMenu,1,MainMenu_Equip_Accessories,Cambiar accesorios
 MainMenu,1,MainMenu_Equip_FashionGroup,Moda
 MainMenu,1,MainMenu_Equip_Fashion,Personalizar looks
 MainMenu,1,MainMenu_Equip_FashionCat,lookbook
 MainMenu,1,MainMenu_Equip_PolluteEdit,Explosion oscura
-MainMenu,1,MainMenu_Equip_Subpalette,Subpaleta
-MainMenu,1,MainMenu_Community_Friend,Lista de amigos
+MainMenu,1,MainMenu_Equip_Subpalette,subpaleta
+MainMenu,1,MainMenu_Community_Friend,lista de amigos
 MainMenu,1,MainMenu_Community_Team,Comandos de la Alianza
 MainMenu,1,MainMenu_Community_Party,Comandos del partido
 MainMenu,1,MainMenu_Community_Mail,Correo
@@ -272,14 +272,14 @@ MainMenu,1,MainMenu_Quest_ShipBattle,Competiciones
 MainMenu,1,MainMenu_Quest_QuestInfo,Informacion de la mision
 MainMenu,1,MainMenu_Quest_MapChange,Cambiar mapas
 MainMenu,1,MainMenu_Quest_EventItem,Articulos de evento
-MainMenu,1,MainMenu_System_SimbolArt,Symbol Art
+MainMenu,1,MainMenu_System_SimbolArt,Arte simbolico
 MainMenu,1,MainMenu_System_ChatConfig,Configuracion de chat
 MainMenu,1,MainMenu_System_Option,Opciones
-MainMenu,1,MainMenu_System_LogWindow,Ventana de registro
+MainMenu,1,MainMenu_System_LogWindow,ventana de registro
 MainMenu,1,MainMenu_System_GameHelp,Ayuda en el juego
 MainMenu,1,MainMenu_System_OnlineHelp,Ayuda en linea
 MainMenu,1,MainMenu_System_Information,Informacion
-MainMenu,1,MainMenu_System_Notify,Notificaciones
+MainMenu,1,MainMenu_System_Notify,notificaciones
 MainMenu,1,MainMenu_System_LoginStamp,Sellos de inicio de sesion
 MainMenu,1,MainMenu_System_StarGem,Ver detalles de CA/SG
 MainMenu,1,MainMenu_ACMenu_ACShop,AC Shop <pict Arcscash>
@@ -288,7 +288,7 @@ MainMenu,1,MainMenu_ACMenu_Gacha,Play Scratch Tickets <pict Arcscash>
 MainMenu,1,MainMenu_ACMenu_Recycle,Tienda de intercambio
 MainMenu,1,MainMenu_ACMenu_MagicStone,Purchase Star Gems <pict Arcscash>
 MainMenu,1,MainMenu_ACMenu_HistoryRental,Historial de compras/vencimiento
-MainMenu,1,MainMenu_ACMenu_History,Historial de compras
+MainMenu,1,MainMenu_ACMenu_History,historia de compras
 MainMenu,1,MainMenu_ACMenu_Rental,Vencimiento del alquiler
 MainMenu,1,MainMenu_Logout_Logout,Finalizar la sesion
 MainMenu,1,MainMenuCategory_ItemPack,Inventario
@@ -297,7 +297,7 @@ MainMenu,1,MainMenuCategory_MyData,Datos personales
 MainMenu,1,MainMenuCategory_Mug,revistas
 MainMenu,1,MainMenuCategory_Community,Comunidad
 MainMenu,1,MainMenuCategory_Quest,Misiones
-MainMenu,1,MainMenuCategory_System,System
+MainMenu,1,MainMenuCategory_System,Sistema
 MainMenu,1,MainMenuCategory_Shop,Menu de aire acondicionado
 MainMenu,1,MainMenuCategory_Logout,Finalizar la sesion
 MainMenu,1,MainMenu_Title,MENU PRINCIPAL
@@ -317,9 +317,9 @@ MainMenu,1,BluaPivot,Ajuste de profundidad
 MainMenu,1,Error_NotSetting,Position adjustment isn't supported<br>for the selected accessory.
 MainMenu,1,StarGemMessage,Purchased: $(0) <pict StarGem><br>Free: $(1) <pict StarGem><br><br>Note: Free Star Gems will be consumed first.
 MainMenu,1,MainMenu_ACMenu_SGShop,SG Shop <pict StarGem>
-MainMenu,1,MainMenu_ArksContract,Misiones ARKS
+MainMenu,1,MainMenu_ArksContract,Misiones ARCAS
 MainMenu,1,NotHoldingEvent,Actualmente no se esta reteniendo nada.
-MainMenu,1,StatusLabel_EveryMpShort1,Pase de mision:$(0)
+MainMenu,1,StatusLabel_EveryMpShort1,Paso de mision:$(0)
 MainMenu,1,StatusLabel_EveryMpShort1_2,Pase de mision: cerrado
 MainMenu,1,StatusLabel_EveryMpShort2,Tier: $(1) (Stars to Next Tier $(0)<pict mp_star_icon>)
 MainMenu,1,MainMenu_Logout_October,<space><space><space><space><space><space><space><space><space><space>
@@ -381,7 +381,7 @@ Poka,1,ShopGuideText,<c f0df60>You can exchange Battle Coins earned for items.<c
 Poka,1,ShopListTitle,MENU DE LA TIENDA
 Poka,1,PluralityMenuGuide,<c f0df60>Select a shop.<c>
 Poka,1,Exit,Salir de la tienda
-Poka,1,Buy,Compra
+Poka,1,Buy,comprar
 Poka,1,NameNumber,$(0) × $(1)
 Poka,1,BuyTitle,CONFIRMAR COMPRA
 Poka,1,BuyCheck,Are you sure you want to purchase the following item(s)<br>for $(1) $(0)?
@@ -396,12 +396,12 @@ Poka,1,CancelMessage,Are you sure you want to cancel<br>your purchase?
 Poka,1,SelectItemInputVita,Ingrese la cantidad deseada.
 Poka,1,MenuErrorTitle,ERROR
 Poka,1,MenuErrorMessage,est.<c><br><br>You currently can't use the shop because you haven't<br>completed a quest.
-Poka,1,PokaQuest_SummaryName,Campo de batalla
+Poka,1,PokaQuest_SummaryName,campo de batalla
 Poka,1,PokaRanking_Title,RECIBIR RECOMPENSA DE CLASIFICACION DE BATALLA
 Poka,1,PokaRanking_RewardConfirm,You have received the following items as a Battle Ranking<br>Reward.
-Poka,1,PokaRanking_Date,Fecha
+Poka,1,PokaRanking_Date,fecha
 Poka,1,PokaRanking_Caption,"$(1) ""$(0)"" Recompensa"
-Poka,1,PokaRanking_Rule_BattleRoyal,Batalla real
+Poka,1,PokaRanking_Rule_BattleRoyal,batalla real
 Poka,1,PokaRanking_Rule_BattleCrystal,Lucha de emblemas
 Poka,1,PokaRanking_Rule_BattleRoyal_Switch,Battle Royale (version en la nube)
 Poka,1,PokaRanking_Rule_BattleCrystal_Switch,Emblem Scramble (version en la nube)
@@ -444,7 +444,7 @@ Challenge,1,ShopGuideText,"<c f0df60>Here, you can exchange Challenge Miles earn
 Challenge,1,ShopListTitle,MENU DE LA TIENDA
 Challenge,1,PluralityMenuGuide,<c f0df60>Select a shop.<c>
 Challenge,1,Exit,Salir de la tienda
-Challenge,1,Buy,Compra
+Challenge,1,Buy,comprar
 Challenge,1,NameNumber,$(0) × $(1)
 Challenge,1,BuyTitle,CONFIRMAR COMPRA
 Challenge,1,BuyCheck,Are you sure you want to purchase the following item(s)<br>for $(1) $(0)?
@@ -483,7 +483,7 @@ black_bord,1,BlackbordCharaName,Nombre del personaje
 black_bord,1,BlackbordPlayerIDname,Nombre de identificacion del jugador
 black_bord,1,BlackbordTime,Hora de publicacion
 black_bord,1,BlackbordMessage,Publicar mensaje
-black_bord,1,BlackbordTitleText,TABLERO DE MENSAJES
+black_bord,1,BlackbordTitleText,MESA DE MENSAJES
 black_bord,1,BlackbordTitleTextTeam,TABLERO DE ANUNCIOS DE LA ALIANZA
 black_bord,1,Blackbord_InputMessage,Ingresa el mensaje que deseas publicar.
 black_bord,1,Blackbord_InputMessageTeam,Enter the message you want to post<br>to the alliance bulletin board.
@@ -521,7 +521,7 @@ TargetInfo,1,TargetInfo_WeakPoint,Debil para:
 TargetInfo,1,TargetInfo_Level,Nivel$(0)
 TargetInfo,1,TargetInfo_Ability,×$(0)
 TargetInfo,1,TargetInfo_Resist,Resistir:
-TargetInfo,1,TargetInfo_ShieldWeakPoint,Escudo Debil P. :
+TargetInfo,1,TargetInfo_ShieldWeakPoint,Escudo Debil P.:
 InterruptCutin,0,INTERRUPT_CODE_ATTACK,[ATTACK]
 InterruptCutin,0,INTERRUPT_CODE_PROTECTION,[PROTECTION]
 InterruptCutin,0,INTERRUPT_CODE_ELIMINATION,[ELIMINATION]
@@ -662,9 +662,9 @@ InterruptCutin,1,INTERRUPT_CODE_DEFEAT,[FRACASO]
 InterruptCutin,1,INTERRUPT_CODE_FEAR,[MIEDO]
 InterruptCutin,1,INTERRUPT_CODE_FUSION,[FUSION]
 InterruptCutin,1,INTERRUPT_CODE_JAMMER,[JAMMER]
-InterruptCutin,1,INTERRUPT_CODE_KEEP,[MANTENER]
+InterruptCutin,1,INTERRUPT_CODE_KEEP,[MANTENEDOR]
 InterruptCutin,1,INTERRUPT_CODE_KILLER,[ASESINO]
-InterruptCutin,1,INTERRUPT_CODE_MANAGE,[ADMINISTRAR]
+InterruptCutin,1,INTERRUPT_CODE_MANAGE,[ADMINISTRADOR]
 InterruptCutin,1,INTERRUPT_CODE_NEGOTIATION,[NEGOCIACION]
 InterruptCutin,1,INTERRUPT_CODE_REGIST,[REGISTRARSE]
 InterruptCutin,1,INTERRUPT_CODE_SACRIFICE,[SACRIFICIO]
@@ -846,7 +846,7 @@ MailList,1,Mail_Send_Title,CREAR CORREO
 MailList,1,Mail_Edit_Time,Fecha de envio
 MailList,1,Mail_Edit_Time2,Fecha de recepcion
 MailList,1,Mail_Edit_To,Recipient
-MailList,1,Mail_Edit_From,Remitente
+MailList,1,Mail_Edit_From,remitente
 MailList,1,Mail_Edit_Subject,Sujeto
 MailList,1,Mail_Edit_Body,Cuerpo
 MailList,1,Mail_Help_ToList,Seleccione un destinatario.
@@ -855,7 +855,7 @@ MailList,1,Mail_Init_Mes_EditList_PC,"<gray>Enter the body text of your mail. Wh
 MailList,1,Mail_Init_Mes_EditList_vita,<gray>Enter the body text of your mail.<c>
 MailList,1,Mail_Button_ToList,...
 MailList,1,Mail_Button_Reply,Responder
-MailList,1,Mail_Button_Send,Enviar
+MailList,1,Mail_Button_Send,enviar
 MailList,1,Mail_Button_Item,-
 MailList,1,Mail_Button_Close,Close
 MailList,1,Mail_Result_ReplyText,Received<br>Text from mail written by $(0) is included.<br><br>
@@ -866,10 +866,10 @@ MailList,1,MailAddress_MessageForm_Title,MIEMBROS
 MailList,1,MailAddress_Create_Title,CAMBIAR DESTINATARIOS
 MailList,1,MailAddress_Button_Reload,Refrescar
 MailList,1,MailAddress_Radio_None,Ninguno
-MailList,1,MailAddress_Radio_ListFriend,Lista de amigos
+MailList,1,MailAddress_Radio_ListFriend,lista de amigos
 MailList,1,MailAddress_Radio_ListMember,Lista de alianzas
 MailList,1,MailList_Tab_All,1. Mostrar todo
-MailList,1,MailList_Tab_System,2. Sistema
+MailList,1,MailList_Tab_System,2.Sistema
 MailList,1,MailList_Tab_Chara,3. Personajes
 MailList,1,MailList_Tab_ShipFriend,4. Amigos y miembros de la alianza
 MailList,1,MailList_Tab_DailyOrder,-
@@ -883,17 +883,17 @@ MailList,1,VITA_MailList_CreateMail,<pict Sign_TRIANGLE> Create New Mail
 MailList,1,MailList_Button_CreateNormalMail,Nuevo correo
 MailList,1,MailList_Button_Delete,Eliminar correo seleccionado
 MailList,1,MailList_Button_Next,Leer siguiente
-MailList,1,MailList_Menu_Open,Abierto
+MailList,1,MailList_Menu_Open,abierto
 MailList,1,MailList_Menu_Delete,Borrar
-MailList,1,MailList_Menu_MultiDelete,Eliminar multiples
+MailList,1,MailList_Menu_MultiDelete,eliminar multiples
 MailList,1,MailList_Menu_MarkRead,Marcar como leido
 MailList,1,MailList_Menu_MarkUnRead,Marcar como no leido
 MailList,1,MailList_Sort_Receive,Por pedido recibido
 MailList,1,MailList_Sort_From,Por remitente/destinatario
 MailList,1,MailList_Sort_Subject,Por tema
-MailList,1,MailList_Sort_Read,Por no leido/sin marcar
+MailList,1,MailList_Sort_Read,Por no leer/sin marcar
 MailList,1,MailList_Mail_None,No se encontro ningun correo.
-MailList,1,Mail_Player_None,Target not found.
+MailList,1,Mail_Player_None,Objetivo no encontrado.
 MailList,1,MailList_List_Remove_Exp,¿Eliminar el correo seleccionado?
 MailList,1,MailList_Error_Command_LISTED,Failed to retrieve mail list.<br><br>[No. 1003]
 MailList,1,MailList_Error_Command_REMOVED,Failed to delete mail.<br><br>[No. 1004]
@@ -1080,9 +1080,9 @@ FriendList,1,FriendList_Name_PlayerID,Nombre de identificacion del jugador
 FriendList,1,FriendList_Name_Login,Hora de inicio de sesion
 FriendList,1,FriendList_Name_Ship,Barco actual
 FriendList,1,FriendList_Name_Chara_Vita,Nombre del personaje
-FriendList,1,FriendList_Name_Block_Vita,Bloquear
+FriendList,1,FriendList_Name_Block_Vita,bloquear
 FriendList,1,FriendList_Name_Place_Vita,Ubicacion
-FriendList,1,FriendList_Name_Priority_Vita,Prioridad
+FriendList,1,FriendList_Name_Priority_Vita,prioridad
 FriendList,1,FriendList_Name_LoginStatus_Vita,Estado de inicio de sesion
 FriendList,1,Priority_Title,ESTABLECER PRIORIDAD DE VISUALIZACION
 FriendList,1,Priority1,Prioridad 1
@@ -1143,9 +1143,9 @@ FriendList,1,Friend_Where_ChallengeLobby,Vestibulo de desafio
 FriendList,1,Friend_Where_BridgeLobby,Puente
 FriendList,1,Friend_Where_CafeLobby,Cafe Franca
 FriendList,1,Friend_Where_PokaLobby,Vestibulo de batalla
-FriendList,1,Friend_Where_Default,Teletransportarse
-FriendList,1,Friend_Message_None,Lista de amigos
-FriendList,1,Friend_Message_Error,Lista de amigos
+FriendList,1,Friend_Where_Default,teletransportarse
+FriendList,1,Friend_Message_None,lista de amigos
+FriendList,1,Friend_Message_Error,lista de amigos
 FriendList,1,Friend_Message_FriendOK,Agregado a la lista de amigos
 FriendList,1,Friend_Message_FriendNG,No agregar a la lista de amigos
 FriendList,1,Friend_Message_Invite,Recibir solicitud de amistad
@@ -1212,10 +1212,10 @@ FriendList,1,FriendGroupTypeD,<pict FriendGroupD>
 FriendList,1,FriendGroupTypeE,<pict FriendGroupE>
 FriendList,1,FriendGroupSetToastMessage,$(0) se ha establecido en el Grupo $(1).
 FriendList,1,FriendGroupClearToastMessage,$(0) ha sido eliminado del grupo.
-FriendList,1,FriendGroupSubPopupValue1,Asignar a
+FriendList,1,FriendGroupSubPopupValue1,Asignar una
 FriendList,1,FriendGroupSubPopupValue2,Mover hacia arriba
 FriendList,1,FriendList_Sub_PopUp_Group,$(0) Grupo $(1)
-FriendList,1,FriendList_Sub_PopUp_Group_Non,Disolver grupo
+FriendList,1,FriendList_Sub_PopUp_Group_Non,grupo disolvedor
 FriendList,1,Friend_From_Comment,Informacion de amigo
 FriendList,1,Friend_Comment,Mensajes de amigos
 FriendList,1,Friend_Quest,Misiones aceptadas
@@ -1274,7 +1274,7 @@ Place,1,PlaceEsthe,Salon
 Place,1,PlaceEvent,Evento en progreso
 Place,1,PlaceBonusmap,???
 Place,1,PlaceSpEsthe,Salon Auxiliar
-Place,1,PlaceSpCharaCreate,Crear auxiliar
+Place,1,PlaceSpCharaCreate,crear auxiliar
 Place,1,PlaceAmLobby,Casino
 Place,1,PlaceChallengeLobby,Vestibulo de desafio
 Place,1,PlaceBridgeLobby,Puente
@@ -1283,7 +1283,7 @@ Place,1,PlacePokaLobby,Vestibulo de batalla
 Place,1,PlaceQuest,Busqueda
 Place,1,PlaceMyRoom,Cuartos personales
 Place,1,PlaceGuildRoom,Cuartos de la Alianza
-Place,1,PlaceDefault,Teletransportarse
+Place,1,PlaceDefault,teletransportarse
 Area,0,Area00,なし
 Area,0,Area01,-
 Area,0,Area02,市街地
@@ -1372,14 +1372,14 @@ Area,0,Area84,パイオニア２
 Area,1,Area00,Ninguno
 Area,1,Area01,-
 Area,1,Area02,Area de la ciudad
-Area,1,Area03,Bosque
+Area,1,Area03,bosques
 Area,1,Area04,Cuevas Volcanicas
 Area,1,Area05,-
 Area,1,Area06,Tundra
 Area,1,Area07,Restos
-Area,1,Area08,Desierto
+Area,1,Area08,desierto
 Area,1,Area09,Pozos subterraneos
-Area,1,Area10,Continente flotante
+Area,1,Area10,continente flotante
 Area,1,Area11,Guarida Falspawn
 Area,1,Area12,ARKS Naufragio - Cubierta
 Area,1,Area13,Altar del Dragon
@@ -1401,7 +1401,7 @@ Area,1,Area28,Entorno de realidad virtual
 Area,1,Area29,???
 Area,1,Area30,■■■■
 Area,1,Area31,Provincia del anochecer
-Area,1,Area32,Tainted End
+Area,1,Area32,Final contaminado
 Area,1,Area33,Lancha de desembarco
 Area,1,Area34,Corrupto - Ruinas
 Area,1,Area35,Base Minera
@@ -1412,7 +1412,7 @@ Area,1,Area40,Las Vegas
 Area,1,Area41,Corrupto - Cuevas volcanicas
 Area,1,Area42,Instalacion abandonada
 Area,1,Area43,Vestibulo ARCAS
-Area,1,Area44,Superficie lunar
+Area,1,Area44,superficie lunar
 Area,1,Area45,Nexo subterraneo
 Area,1,Area46,Arena de realidad virtual
 Area,1,Area47,Arena de realidad virtual
@@ -1421,13 +1421,13 @@ Area,1,Area49,El arbol del mundo
 Area,1,Area50,Torre Esca de Londres - Ultimo piso
 Area,1,Area51,llanuras
 Area,1,Area52,Afueras de Castrum Demonica
-Area,1,Area53,Yermo
+Area,1,Area53,yermo
 Area,1,Area54,Salon del Trono del Castillo de Weyland
 Area,1,Area55,Arena de realidad virtual
 Area,1,Area56,Cuento Castle Ruins
 Area,1,Area57,Cuento Canyon Caldera
 Area,1,Area58,Bosques embrujados
-Area,1,Area59,Caйon
+Area,1,Area59,Caeon
 Area,1,Area60,Desierto de Epyk
 Area,1,Area61,Desierto de Epyk
 Area,1,Area62,Afueras de Castrum Demonica
@@ -1471,18 +1471,18 @@ Planet,0,Planet14,異世界オメガ
 Planet,0,Planet15,オラクル宙域
 Planet,0,Planet16,艦隊交戦区域
 Planet,1,Planet0,Ninguno
-Planet,1,Planet1,Naverio
+Planet,1,Planet1,naverio
 Planet,1,Planet2,Lilipa
 Planet,1,Planet3,Amduskia
 Planet,1,Planet4,Barco ARCAS
 Planet,1,Planet5,Restos del barco ARKS
 Planet,1,Planet6,???
 Planet,1,Planet7,wopal
-Planet,1,Planet8,Nave nodriza
+Planet,1,Planet8,nave nodriza
 Planet,1,Planet9,Nave nodriza corrupta
 Planet,1,Planet10,harukotan
-Planet,1,Planet11,Naverio
-Planet,1,Planet12,Tierra
+Planet,1,Planet11,naverio
+Planet,1,Planet12,tierra
 Planet,1,Planet13,???
 Planet,1,Planet14,Dimension alternativa: Omega
 Planet,1,Planet15,Sector Oraculo
@@ -1505,10 +1505,10 @@ QuestDifficulty,0,QuestRank08_Short,HC
 QuestDifficulty,0,QuestRank_None,-
 QuestDifficulty,0,QuestRankEx_Ultimate,ULT
 QuestDifficulty,1,QuestRank01,Normal
-QuestDifficulty,1,QuestRank02,Duro
+QuestDifficulty,1,QuestRank02,duro
 QuestDifficulty,1,QuestRank03,muy duro
-QuestDifficulty,1,QuestRank04,Super duro
-QuestDifficulty,1,QuestRank05,Extremadamente duro
+QuestDifficulty,1,QuestRank04,super duro
+QuestDifficulty,1,QuestRank05,extremadamente duro
 QuestDifficulty,1,QuestRank06,Ultraduro
 QuestDifficulty,1,QuestRank00_Short,E
 QuestDifficulty,1,QuestRank01_Short,norte
@@ -1622,15 +1622,15 @@ QuestType,1,Type17,Misiones urgentes
 QuestType,1,Type18,● Misiones urgentes (depuracion)
 QuestType,1,Type19,Misiones de contrarreloj
 QuestType,1,Type20,● Tiempo (depuracion)
-QuestType,1,Type21,● ARCAS (Debug02)
+QuestType,1,Type21,● ARCAS (Depuracion02)
 QuestType,1,Type22,● ARKS (Debug03 Set1)
 QuestType,1,Type23,● ARKS (Debug04 Set2)
 QuestType,1,Type24,● ARKS (Debug05 Set3)
-QuestType,1,Type25,● ARCAS (Debug06)
-QuestType,1,Type26,● ARCAS (Debug07)
-QuestType,1,Type27,● ARCAS (Debug08)
-QuestType,1,Type28,● ARCAS (Debug09)
-QuestType,1,Type29,● ARCAS (Debug10)
+QuestType,1,Type25,● ARCAS (Depuracion06)
+QuestType,1,Type26,● ARCAS (Depuracion07)
+QuestType,1,Type27,● ARCAS (Depuracion08)
+QuestType,1,Type28,● ARCAS (Depuracion09)
+QuestType,1,Type29,● ARCAS (Depuracion 10)
 QuestType,1,Type30,-
 QuestType,1,Type31,Misiones de historia [Ep. 3]
 QuestType,1,Type32,Misiones recomendadas
@@ -1652,9 +1652,9 @@ QuestType,1,Type47,Entrenamiento de invocador
 QuestType,1,Type48,Misiones desencadenantes
 QuestType,1,Type49,Misiones ridroides
 QuestType,1,Type50,Misiones AGP exclusivas de Net Cafe
-QuestType,1,Type51,Campo de batalla
+QuestType,1,Type51,campo de batalla
 QuestType,1,Type04_ex,Misiones de nivelacion
-QuestType,1,Type51_ex,Campo de batalla
+QuestType,1,Type51_ex,campo de batalla
 QuestType,1,Type52,● Buster (depuracion)
 QuestType,1,Type53,Poka × 12
 QuestType,1,Type54,Misiones de historia [Ep. 5]
@@ -1750,37 +1750,37 @@ Parameter,1,HP,caballos de fuerza
 Parameter,1,PP,PAGINAS
 Parameter,1,Strike,MEL Encendido
 Parameter,1,Firearm,Encendido RNG
-Parameter,1,Technic,TEC Pwr
+Parameter,1,Technic,Alimentacion TEC
 Parameter,1,Dex,DEX
 Parameter,1,DfpStrike,Mel Def
 Parameter,1,DfpFirearm,Def. RNG
-Parameter,1,DfpTechnic,TEC Def
+Parameter,1,DfpTechnic,Defensa TEC
 Parameter,1,StrikeStance,MEL Encendido
 Parameter,1,FirearmStance,Encendido RNG
-Parameter,1,TechnicStance,TEC Pwr
+Parameter,1,TechnicStance,Alimentacion TEC
 Parameter,1,DexStance,DEX
 Parameter,1,DfpStrikeStance,Mel Def
 Parameter,1,DfpFirearmStance,Def. RNG
-Parameter,1,DfpTechnicStance,TEC Def
+Parameter,1,DfpTechnicStance,Defensa TEC
 Parameter,1,AttackResist,Res fisica
 Parameter,1,Attribute,Elementos
-Parameter,1,AttributeResist,Res elemental
+Parameter,1,AttributeResist,res elemental
 Parameter,1,Skill,Habilidades
 Parameter,1,AttributeFire,Fuego
 Parameter,1,AttributeIce,Hielo
-Parameter,1,AttributeThunder,Iluminacion
+Parameter,1,AttributeThunder,iluminacion
 Parameter,1,AttributeWind,Viento
-Parameter,1,AttributeLight,Luz
+Parameter,1,AttributeLight,luz
 Parameter,1,AttributeDark,Oscuro
 Parameter,1,AttributeResistFire,fuego res
 Parameter,1,AttributeResistIce,Res de hielo
 Parameter,1,AttributeResistThunder,Res. relampago
 Parameter,1,AttributeResistWind,Res. viento
-Parameter,1,AttributeResistLight,Res. ligera
-Parameter,1,AttributeResistDark,Res. oscura
+Parameter,1,AttributeResistLight,Res. ligero
+Parameter,1,AttributeResistDark,Res. oscuro
 Parameter,1,AttackResistStrike,MEL Res
 Parameter,1,AttackResistFirearm,Res. RNG
-Parameter,1,AttackResistTechnic,TEC Res
+Parameter,1,AttackResistTechnic,Res. TEC
 Parameter,1,SkillPoint,Puntos de habilidad
 Parameter,1,SkillPointUp,Puntos de habilidad +$(0) SP
 Parameter,1,ChangeValuePlus,<c ff9c70>(+$(0))<c>
@@ -1790,10 +1790,10 @@ Parameter,1,TitledChangeValuePlus,$(1) <c ff9c70>(+$(0))<c>
 Parameter,1,TitledChangeValueMinus,$(1) <c 32cdff>(-$(0))<c>
 Parameter,1,AtpStrikeRate,Potencia cuerpo a cuerpo
 Parameter,1,AtpFirearmRate,Potencia a distancia
-Parameter,1,AtpTechniqueRate,Technique Potency
+Parameter,1,AtpTechniqueRate,Potencia de la tecnica
 Parameter,1,AddonAttackStrike,MEL Encendido
 Parameter,1,AddonAttackFirearm,Encendido RNG
-Parameter,1,AddonAttackTechnic,TEC Pwr
+Parameter,1,AddonAttackTechnic,Alimentacion TEC
 Parameter,1,AddonAttackDexterity,DEX
 Parameter,1,AddonResistStrike,Resistencia cuerpo a cuerpo
 Parameter,1,AddonResistFirearm,Resistencia a distancia
@@ -1894,7 +1894,7 @@ PartyInfo,1,PartyInfoText17,PSE $(0) Nivel $(1) activado!
 PartyInfo,1,PartyInfoText18,PSE $(0) Nivel $(1) activado!
 PartyInfo,1,PartyInfoText19,Ha abandonado el area de efecto de PSE $(0).
 PartyInfo,1,PartyInfoText20,PSE $(0) Nivel $(1) activado!
-PartyInfo,1,PartyInfoText21,PSE $(0) finalizo.
+PartyInfo,1,PartyInfoText21,PSE $(0) finalizado.
 PartyInfo,1,PartyInfoText22,¡$(0) entro en modo rafaga!
 PartyInfo,1,PartyInfoText23,Modo PSE Burst extendido por $(0) segundo(s).
 PartyInfo,1,PartyInfoText24,El modo PSE Burst finalizo.
@@ -1997,17 +1997,17 @@ CharaMenu,0,CharaMenu_GroupChat,グループ
 CharaMenu,0,CharaMenu_GroupChatChange,リーダーを交代する
 CharaMenu,0,CharaMenu_GroupChatDelete,メンバーを除名する
 CharaMenu,0,CharaMenu_Gamertag,ゲーマーカードを見る
-CharaMenu,1,CharaMenu_Party00,Fiesta
+CharaMenu,1,CharaMenu_Party00,fiesta
 CharaMenu,1,CharaMenu_Party01,Invitar a la fiesta
 CharaMenu,1,CharaMenu_Party02,Cambiar lider del partido
 CharaMenu,1,CharaMenu_Party03,Eliminar de la fiesta
 CharaMenu,1,CharaMenu_Bl01,Agregar a la lista de bloqueo de PSO2
 CharaMenu,1,CharaMenu_Bl02,Eliminar de la lista de bloqueo de PSO2
-CharaMenu,1,CharaMenu_Guild00,Alianza
+CharaMenu,1,CharaMenu_Guild00,alianza
 CharaMenu,1,CharaMenu_Guild01,Explorador de la Alianza
 CharaMenu,1,CharaMenu_Guild02,Liderazgo de la Alianza de Rendicion
 CharaMenu,1,CharaMenu_Guild03,Eliminar de la Alianza
-CharaMenu,1,CharaMenu_Guild04,Promover a Oficial
+CharaMenu,1,CharaMenu_Guild04,Promotor a Oficial
 CharaMenu,1,CharaMenu_Guild05,Promocionar a miembro
 CharaMenu,1,CharaMenu_Guild06,Degradar a miembro
 CharaMenu,1,CharaMenu_Guild07,Degradado a Provisional
@@ -2017,7 +2017,7 @@ CharaMenu,1,CharaMenu_Chat02,-
 CharaMenu,1,CharaMenu_Mail01,Enviar correo
 CharaMenu,1,CharaMenu_Item01,-
 CharaMenu,1,CharaMenu_Item02,Initiate Item Trading <pict Arcscash>
-CharaMenu,1,CharaMenu_Friend01,Enviar solicitud de amistad
+CharaMenu,1,CharaMenu_Friend01,enviar solicitud de amistad
 CharaMenu,1,CharaMenu_Friend02,Eliminar amigo
 CharaMenu,1,CharaMenu_Friend03,Recibir anuncios de inicio de sesion
 CharaMenu,1,CharaMenu_Friend04,No recibir anuncios de inicio de sesion
@@ -2027,30 +2027,30 @@ CharaMenu,1,CharaMenu_Friend07,Configuracion de prioridad de visualizacion
 CharaMenu,1,CharaMenu_Friend08,Configuracion de grupo
 CharaMenu,1,CharaMenu_MyRoom01,Salir de los cuartos personales
 CharaMenu,1,CharaMenu_MyRoom02,Visitar habitaciones personales
-CharaMenu,1,CharaMenu_Chara01,Enviar felicitaciones
+CharaMenu,1,CharaMenu_Chara01,enviar felicitaciones
 CharaMenu,1,CharaMenu_Chara02,Ver informacion del personaje
 CharaMenu,1,CharaMenu_Chara03,Ver desglose de apariencia
 CharaMenu,1,CharaMenu_Chara04,Ver lookbook
-CharaMenu,1,CharaMenu_Chara05,Aйadir a otra moda
+CharaMenu,1,CharaMenu_Chara05,Aeadir a otra moda
 CharaMenu,1,CharaMenu_Apc01,Eliminar de la fiesta
-CharaMenu,1,CharaMenu_Action01,Personificar
-CharaMenu,1,CharaMenu_Action02,Reaccion
+CharaMenu,1,CharaMenu_Action01,personificar
+CharaMenu,1,CharaMenu_Action02,reaccion
 CharaMenu,1,ClickCharaName,Seleccionaste $(0).
 CharaMenu,1,CharaMenu_Error01,No puedes seleccionar tu propia cuenta.
-CharaMenu,1,CharaMenu_Message_Delete01,Eliminar mensaje
+CharaMenu,1,CharaMenu_Message_Delete01,eliminar mensaje
 CharaMenu,1,CharaMenu_GuildRoom01,Visita los barrios de la Alianza
 CharaMenu,1,CharaMenu_GuildRoom02,Salir de los barrios de la Alianza
 CharaMenu,1,CharaMenu_moralskeeper_category,Comandos personales
 CharaMenu,1,CharaMenu_moralskeeper_menu,Reportar a este jugador
 CharaMenu,1,CharaMenu_category00,Personajes
 CharaMenu,1,CharaMenu_category01,Comunicacion
-CharaMenu,1,CharaMenu_category02,Amigos
+CharaMenu,1,CharaMenu_category02,amigos
 CharaMenu,1,CharaMenu_category03,Miscelaneas
 CharaMenu,1,CharaMenu_Error02,No puedes seleccionar este personaje.
 CharaMenu,1,CharaMenu_TypeChange,Cambiar modo de visualizacion
 CharaMenu,1,CharaMenu_ToastType1,Cambiar el modo de visualizacion a vista de categoria
 CharaMenu,1,CharaMenu_ToastType2,Cambiar el modo de visualizacion a vista de resumen
-CharaMenu,1,CharaMenu_GroupChat,Grupo
+CharaMenu,1,CharaMenu_GroupChat,grupo
 CharaMenu,1,CharaMenu_GroupChatChange,Lider del cambio
 CharaMenu,1,CharaMenu_GroupChatDelete,Eliminar miembro
 CharaMenu,1,CharaMenu_Gamertag,Ver tarjeta de jugador
@@ -2170,7 +2170,7 @@ PartyMenu,1,LeaderMenuTitle,COMANDOS DEL LIDER
 PartyMenu,1,LeaderMenuLabel01,Configuraciones de fiesta
 PartyMenu,1,LeaderMenuLabel02,Lider del cambio
 PartyMenu,1,LeaderMenuLabel03,Eliminar de la fiesta
-PartyMenu,1,LeaderMenuLabel04,Abandonar la mision
+PartyMenu,1,LeaderMenuLabel04,abandonar la mision
 PartyMenu,1,LeaderMenuLabel05,Disolver el partido
 PartyMenu,1,LeaderMenuText02,Leadership rights will be transferred to $(0).<br><br>Are you sure you want to change the leader?
 PartyMenu,1,LeaderMenuText03,爀㸀昀爀漀洀 琀栀攀 瀀愀爀琀礀㼀
@@ -2185,14 +2185,14 @@ PartyMenu,1,LeaderMenuText07TriggerQuest,漀甀 眀愀渀琀 琀漀 愀戀
 PartyMenu,1,PartyConfigTab01,Configuraciones basicas
 PartyMenu,1,PartyConfigTab02,Condiciones para unirse
 PartyMenu,1,PartyConfigTab03,Configuracion de contraseйa
-PartyMenu,1,PartyConfigTab04,Gatillo enemigo
+PartyMenu,1,PartyConfigTab04,gatillo enemigo
 PartyMenu,1,PartyConfigLabel01,Nombre del partido
 PartyMenu,1,PartyConfigLabel02,Comentarios del partido
 PartyMenu,1,PartyConfigLabel03,Estilo de juego
-PartyMenu,1,PartyConfigLabel05,Solo amigos
+PartyMenu,1,PartyConfigLabel05,amigos solos
 PartyMenu,1,PartyConfigLabel06,Solo miembros de la Alianza
 PartyMenu,1,PartyConfigLabel07,Maximo
-PartyMenu,1,PartyConfigLabel08,Minimo
+PartyMenu,1,PartyConfigLabel08,minimo
 PartyMenu,1,PartyConfigLabel09,Unirse Contraseйa
 PartyMenu,1,PartyConfigLabel10,Aplicar cambios
 PartyMenu,1,PartyConfigLabel11,Rechazar invitaciones a fiestas
@@ -2201,16 +2201,16 @@ PartyMenu,1,PartyConfigLabel13,Configuraciones basicas
 PartyMenu,1,PartyConfigLabel15,Restricciones de nivel
 PartyMenu,1,PartyConfigLabel16,Otras condiciones
 PartyMenu,1,PartyConfigLabel17,Lista de miembros
-PartyMenu,1,PartyConfigLabel18,Invitar a fiestas
-PartyMenu,1,PartyConfigLabel19,1 solo jugar
+PartyMenu,1,PartyConfigLabel18,invitar a fiestas
+PartyMenu,1,PartyConfigLabel19,1 juego en solitario
 PartyMenu,1,PartyConfigLabel20,<pict Sign_SQUARE> 1 Play Only
 PartyMenu,1,PartyConfigLabel21,Seleccionar disparador
-PartyMenu,1,PartyConfigLabel24,o mayor
+PartyMenu,1,PartyConfigLabel24,Oh alcalde
 PartyMenu,1,PartyConfigPlaystyle0,No especificado
 PartyMenu,1,PartyConfigPlaystyle1,Solo para travesura
-PartyMenu,1,PartyConfigPlaystyle2,Negocio serio
+PartyMenu,1,PartyConfigPlaystyle2,negocios serios
 PartyMenu,1,PartyConfigPlaystyle3,Relajado
-PartyMenu,1,PartyConfigPlaystyle4,Estridente
+PartyMenu,1,PartyConfigPlaystyle4,estridente
 PartyMenu,1,PartyConfigComment01,Selecciona un grupo al que unirte.
 PartyMenu,1,PartyConfigComment02,Seleccione un miembro para eliminar.
 PartyMenu,1,PartyConfigComment03,Seleccione el miembro a quien se transferiran los derechos de liderazgo.
@@ -2218,10 +2218,10 @@ PartyMenu,1,PartyConfigComment04,Seleccione un miembro.
 PartyMenu,1,PartyConfigComment05,No seras invitado a otras fiestas si seleccionas esta casilla de verificacion.
 PartyMenu,1,PartyConfigPopup01,Unete a la fiesta
 PartyMenu,1,PartyConfigPopup02,Enviar chat en voz baja
-PartyMenu,1,PartyConfigPopup03,Rechazar
+PartyMenu,1,PartyConfigPopup03,rechazar
 PartyMenu,1,PartyConfigPopup04,Ver estadisticas
 PartyMenu,1,PartyConfigPopup05,Ver Equipo
-PartyMenu,1,PartyConfigPopup06,Enviar solicitud de amistad
+PartyMenu,1,PartyConfigPopup06,enviar solicitud de amistad
 PartyMenu,1,PartyConfigPopup07,Agregar a la lista de bloqueo de PSO2
 PartyMenu,1,PartyConfigError01,El nombre del partido contiene caracteres ilegales.
 PartyMenu,1,PartyConfigError02,El comentario del partido contiene caracteres ilegales.
@@ -2229,7 +2229,7 @@ PartyMenu,1,PartyConfigPass01,Restringir a unirse unicamente
 PartyMenu,1,PartyConfigPass02,Limite tambien las solicitudes multijugador de otras partes
 PartyMenu,1,PartyConfigPass03,Restricciones multijugador
 PartyMenu,1,PartyCoinNone,No se encontraron elementos utilizables.
-PartyMenu,1,PartyCoinUnuse,No usado
+PartyMenu,1,PartyCoinUnuse,no usado
 PartyMenu,1,PartyCoinBlank,-
 PartyMenu,1,PartyCoinTitle,USAR EL GATILLO ENEMIGO
 PartyMenu,1,PartyCoinError,The current Enemy Trigger can't be<br>used during the selected quest.
@@ -2244,7 +2244,7 @@ PartyMenu,1,PartyConfigLeaderChangeNotTitle,CAMBIO DE LIDER NO PERMITIDO
 PartyMenu,1,PartyConfigLeaderChangeNotMessage,No puedes cambiar el lider del grupo durante esta mision.
 PartyMenu,1,LeaderMenuText04_HighLevelQuest,甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀
 PartyMenu,1,LeaderMenuText05_HighLevelQuest,¿Como proceder?
-PartyMenu,1,PartyMenuText03_HighLevelQuest,¿proceder?
+PartyMenu,1,PartyMenuText03_HighLevelQuest,¿procedimiento?
 PartyMenu,1,PartyConfigTypeChange01,Cambiado al modo detalle.
 PartyMenu,1,PartyConfigTypeChange02,Cambiado al modo estandar.
 PlayerStatus,0,Title,簡易ステータス
@@ -2286,11 +2286,11 @@ PlayerStatus,1,MainStatusLabelNextExp,Hasta el siguiente nivel
 PlayerStatus,1,SubStatusLabelNextExp,Hasta el siguiente nivel (subclase)
 PlayerStatus,1,StatusLabelMeseta,meseta
 PlayerStatus,1,StatusLabelFun,DIVERTIDO
-PlayerStatus,1,StatusLabelAc,C.A.
+PlayerStatus,1,StatusLabelAc,CALIFORNIA.
 PlayerStatus,1,StatusLabelTicket,Vencimiento de la prima
-PlayerStatus,1,StatusLabeMainClass,Clase principal
+PlayerStatus,1,StatusLabeMainClass,clase principal
 PlayerStatus,1,StatusLabelSubClass,Subclase
-PlayerStatus,1,MiKakin,No usado
+PlayerStatus,1,MiKakin,no usado
 PlayerStatus,1,IsPremium,<yellow>Premium Currently in Effect<c>
 PlayerStatus,1,NonPremium,<red>Premium Currently Expired<c>
 PlayerStatus,1,KakinGire,<red>Expired<c>
@@ -2478,7 +2478,7 @@ StatusEffect,1,header2,Duracion del efecto
 StatusEffect,1,EffectTabForwardText,Cambiar
 StatusEffect,1,EffectTabForward,<%NextTabDetails>
 StatusEffect,1,SubTitle_Element,ENFERMEDAD DE ESTADO
-StatusEffect,1,SubTitle_Technic,TECHNIQUE EFFECT
+StatusEffect,1,SubTitle_Technic,EFECTO TECNICA
 StatusEffect,1,SubTitle_Item,EFECTO DEL ARTICULO
 StatusEffect,1,SubTitle_EventBoostItem,Efecto del articulo
 StatusEffect,1,SubTitle_Drink,EFECTO BEBIDA
@@ -2486,7 +2486,7 @@ StatusEffect,1,SubTitle_Guild,EFECTO FOTONICO
 StatusEffect,1,SubTitle_PSE,IMPACTO DEL PSE
 StatusEffect,1,SubTitle_Enemy,EFECTO REGALO ENEMIGO
 StatusEffect,1,SubTitle_Live,EFECTO CONCIERTO
-StatusEffect,1,SubTitle_CraftEnchant,TIMED ABILITY
+StatusEffect,1,SubTitle_CraftEnchant,HABILIDAD CRONOMETRADA
 StatusEffect,1,SubTitle_MyBoost,EFECTO DE IMPULSO DIARIO (REDUCIDO DESPUES DE UN TIEMPO ESTABLECIDO)
 StatusEffect,1,SubTitle_Skill,EFECTO DE HABILIDAD
 StatusEffect,1,SubTitle_RareEnemy,EFECTO DE DISPARADOR ENEMIGO
@@ -2509,7 +2509,7 @@ StatusEffect,1,SubTitle_CloudBlockBuff,IMPULSO DE FIESTA EN LA NUBE
 StatusEffect,1,SubTitle_TotalScoreBoost,EFECTO DE IMPULSION DEL ENLACE DE MISION (NIVEL $(0))
 StatusEffect,1,SubTitle_ArmadaPointBonus,ARMADA INTERCEPTION: INTERCEPTION POINT BONUS ($(0) <pict Target_CP>)
 StatusEffect,1,SubTitle_StyleEffect,EFECTO DE ESTILO
-StatusEffect,1,SubTitle_StyleSubBuffEffect,EFECTO SUB-BUFF
+StatusEffect,1,SubTitle_StyleSubBuffEffect,SUB-BUFF DE EFECTO
 StatusEffect,1,None,Ninguno
 StatusEffect,1,Burn1,Quemar
 StatusEffect,1,Burn2,Quemar
@@ -2547,14 +2547,14 @@ StatusEffect,1,Mirage3,Ciego
 StatusEffect,1,Mirage4,Ciego
 StatusEffect,1,Mirage5,Ciego
 StatusEffect,1,Shifta,Atacar
-StatusEffect,1,Deband,Defensa arriba
+StatusEffect,1,Deband,defensa arriba
 StatusEffect,1,Jellen1,Jellen (Daйo reducido)
 StatusEffect,1,Jellen2,Jellen (Daйo reducido)
 StatusEffect,1,Jellen3,Jellen (Daйo reducido)
 StatusEffect,1,ShitaRide,Atacar
-StatusEffect,1,DebandRide,Defensa arriba
+StatusEffect,1,DebandRide,defensa arriba
 StatusEffect,1,MagShifta,Atacar
-StatusEffect,1,MagDeband,Defensa arriba
+StatusEffect,1,MagDeband,defensa arriba
 StatusEffect,1,DrinkMainAtpUpS,Efecto principal: ATK Up S
 StatusEffect,1,DrinkMainAtpUpM,Efecto principal: ATK Up M
 StatusEffect,1,DrinkMainAtpUpL,Efecto principal: ATK arriba L
@@ -2600,9 +2600,9 @@ StatusEffect,1,DrinkSubPBGageRizeUp,Subefecto: Acelerador de calibre PB
 StatusEffect,1,DrinkSubPADamageUp,Subefecto: aumento del daйo del PA
 StatusEffect,1,DrinkSubAttackHateUp,Subefecto: Aumento del nivel de amenaza
 StatusEffect,1,DrinkSubAttackHateDown,Subefecto: Reduccion del nivel de amenaza
-StatusEffect,1,DrinkSubExperienceUp,Subefecto: EXP Up
+StatusEffect,1,DrinkSubExperienceUp,Subefecto: EXP arriba
 StatusEffect,1,TeamBoost_AttackUp,Atacar
-StatusEffect,1,TeamBoost_DefenseUp,Defensa arriba
+StatusEffect,1,TeamBoost_DefenseUp,defensa arriba
 StatusEffect,1,TeamBoost_EXPUp,EXP hacia arriba
 StatusEffect,1,TeamBoost_MesetaUp,Impulso de la Meseta
 StatusEffect,1,TeamBoost_RareUp,Aumento de la tasa de aparicion de objetos raros
@@ -2650,14 +2650,14 @@ Inventory,0,DropRoot,アイテムを置く
 Inventory,0,Rental_ItemName,レンタルアイテム名
 Inventory,0,Rental_TimeRimit,有効期限
 Inventory,1,Item,Elementos
-Inventory,1,Arms,Equipar armas
+Inventory,1,Arms,equipar armas
 Inventory,1,Guard,Equipar armadura
-Inventory,1,Subpalette,Subpaleta
+Inventory,1,Subpalette,subpaleta
 Inventory,1,WeaponAvatar,Camuflaje de armas
 Inventory,1,WeaponPos,Posicion de la funda
 Inventory,1,Valuables,-
 Inventory,1,Close,Atras
-Inventory,1,DropRoot,Soltar articulo
+Inventory,1,DropRoot,Articulo soltar
 Inventory,1,Rental_ItemName,Nombre del articulo de alquiler
 Inventory,1,Rental_TimeRimit,Vencimiento
 ActionDetails,0,PATitle,フォトンアーツ詳細
@@ -2696,14 +2696,14 @@ ActionDetails,0,PetTitle,ペット詳細
 ActionDetails,0,NeedGauge,消費ストック
 ActionDetails,0,NeedGaugeValue,$(0) (ストック数上限 $(1))
 ActionDetails,0,NotFoundGaugeValue,現在装備している武器では<br>解式PAは使用できません。
-ActionDetails,1,PATitle,DETALLES DEL ARTE DE FOTON
-ActionDetails,1,TechnicTitle,TECHNIQUE DETAILS
+ActionDetails,1,PATitle,DETALLES DEL ARTE DE FOTO
+ActionDetails,1,TechnicTitle,DETALLES DE LA TECNICA
 ActionDetails,1,OverloadTitle,DETALLES DE LA TECNICA FUSIDA
 ActionDetails,1,SkillTitle,DETALLES DE HABILIDAD
 ActionDetails,1,NoSelectPAMessage,Ningun Photon Art seleccionado actualmente.
 ActionDetails,1,NoSelectTechnicMessage,Ninguna tecnica seleccionada actualmente.
 ActionDetails,1,NoSelectOverloadMessage,No hay ninguna tecnica fusionada seleccionada actualmente.
-ActionDetails,1,Power,Potencia
+ActionDetails,1,Power,potencia
 ActionDetails,1,Dex,Correccion DEX
 ActionDetails,1,NeedPp,Costo de PP
 ActionDetails,1,PowerValue,$(0)
@@ -2715,9 +2715,9 @@ ActionDetails,1,Freeze,Congelado
 ActionDetails,1,Bind,Atado
 ActionDetails,1,Silence,Silenciado
 ActionDetails,1,Poison,envenenado
-ActionDetails,1,Break,Roto
-ActionDetails,1,Injury,Herido
-ActionDetails,1,Curse,Maldito
+ActionDetails,1,Break,roto
+ActionDetails,1,Injury,herido
+ActionDetails,1,Curse,Maldita
 ActionDetails,1,Stun,Aturdido
 ActionDetails,1,Panic,En panico
 ActionDetails,1,Mirage,Cegado
@@ -2759,11 +2759,11 @@ ClassSkillDetails,1,Plus,+$(0)
 ClassSkillDetails,1,Minus,-$(0)
 ClassSkillDetails,1,Times,$(0) veces
 ClassSkillDetails,1,Blank,-
-ClassSkillDetails,1,LevelZero,No aprendido
+ClassSkillDetails,1,LevelZero,no lo he aprendido
 ClassSkillDetails,1,MaxLevelValue,($(0))
 ClassSkillDetails,1,Decimal,$(1).$(0)
 ClassSkillDetails,1,Prev,Anterior
-ClassSkillDetails,1,Next,Proximo
+ClassSkillDetails,1,Next,Del mes proximo
 ClassDetails,0,Title,クラス詳細
 ClassDetails,0,Experience,経験値
 ClassDetails,0,NextExperience,次のLv.まで
@@ -2964,7 +2964,7 @@ Palette,1,WindowTitleIconbox,LISTA DE ARTICULOS
 Palette,1,WindowTitleMainTemplate,PALETA PRINCIPAL - PLANTILLA
 Palette,1,WindowTitleSubTemplate,SUBPALETA - PLANTILLA
 Palette,1,ButtonEquip,Equipo
-Palette,1,MenuTemplate,Plantilla
+Palette,1,MenuTemplate,plantilla
 Palette,1,MenuDelete,Claro
 Palette,1,NoPAMessage,No hay artes fotonicas disponibles.
 Palette,1,NoTechnicMessage,No hay tecnicas disponibles.
@@ -3025,8 +3025,8 @@ Palette,1,TabHintPA,Artes fotonicas
 Palette,1,TabHintTechnic,Tecnicas
 Palette,1,TabHintOverload,Tecnicas fusionadas
 Palette,1,TabHintSkill,Habilidades de clase
-Palette,1,TabHintPet,Mascotas
-Palette,1,TabHintPetPA,Artes fotonicas para mascotas
+Palette,1,TabHintPet,mascotas
+Palette,1,TabHintPetPA,Artes fotograficas para mascotas
 Palette,1,TabHintAdvancePA,Artes fotonicas clase Scion
 Palette,1,TabHintGaugePA,Artes fotonicas de acumulacion
 Palette,1,EquipMenuTitle,MENU DE EQUIPO
@@ -3045,16 +3045,16 @@ Palette,1,NoWeapon,Desarmado
 Palette,1,PaletteServerMessage,Se han eliminado los elementos que ya no cumplen con las condiciones de equipamiento aplicables.
 Palette,1,PaletteServerMessageReleaseAction,Se eliminaron las acciones en la paleta de armas que ya no cumplen con las condiciones aplicables.
 Palette,1,SubPaletteTabChangeTag,<%TabForward>
-Palette,1,SubPaletteTabChange,Proximo
-Palette,1,Weapon,Armas
+Palette,1,SubPaletteTabChange,Del mes proximo
+Palette,1,Weapon,armas
 Palette,1,Attack_Arts,Ataque Normal / PA / Tecnicas
 Palette,1,EnsureLearning,Confirmar aprendizaje
-Palette,1,agendum,Articulo
+Palette,1,agendum,articulo
 Palette,1,Before,Anterior
-Palette,1,After,Proximo
+Palette,1,After,Del mes proximo
 Palette,1,Body,Cuerpo
 Palette,1,Back,Atras
-Palette,1,Arm,Brazos
+Palette,1,Arm,brazos
 Palette,1,Leg,Piernas
 Palette,1,Costume,Ropa
 Palette,1,SubWindowChange1,<pict Sign_TRIANGLE> Swap
@@ -3221,7 +3221,7 @@ CharaInfo,1,Class,Informacion de clase
 CharaInfo,1,Pa,Informacion sobre el arte de los fotones
 CharaInfo,1,GaugePA,Detalles de PA de acumulacion
 CharaInfo,1,AdvancePA,Informacion del Scion Class PA
-CharaInfo,1,Technic,Technique Information
+CharaInfo,1,Technic,Informacion tecnica
 CharaInfo,1,Overload,Informacion sobre la tecnica fusionada
 CharaInfo,1,ClassSkill,Informacion de habilidades de clase
 CharaInfo,1,CraftInfo,Informacion de elaboracion
@@ -3234,7 +3234,7 @@ CharaInfo,1,TitleName,Titulos
 CharaInfo,1,NoTitle,Ninguno
 CharaInfo,1,Name,Nombre del personaje
 CharaInfo,1,Guild,Nombre de la alianza
-CharaInfo,1,NoGuild,Sin alianza
+CharaInfo,1,NoGuild,sin alianza
 CharaInfo,1,HunterExplanation,"high HP and Defense,<br>making them exceptional standalone fighters."
 CharaInfo,1,RangerExplanation,-range combat. Rangers are capable of <br>precision attacks from a distance.
 CharaInfo,1,ForceExplanation,t. They boast high Technique <br>Power and a diverse yet powerful array of Techniques.
@@ -3255,7 +3255,7 @@ CharaInfo,1,NoTechnicMessage,No hay tecnicas disponibles.
 CharaInfo,1,NoOverloadMessage,No hay tecnicas fusionadas disponibles.
 CharaInfo,1,NoClassSkillMessage,No hay habilidades de clase disponibles.
 CharaInfo,1,OnMousePaAll,Todas las artes fotonicas
-CharaInfo,1,OnMousePaSword,Sword Photon Arts
+CharaInfo,1,OnMousePaSword,Artes de fotones de espada
 CharaInfo,1,OnMousePaLance,Artes fotonicas de lanza con cable
 CharaInfo,1,OnMousePaPartisan,Artes fotonicas partidistas
 CharaInfo,1,OnMousePaTdagger,Artes fotonicas de dagas gemelas
@@ -3266,7 +3266,7 @@ CharaInfo,1,OnMousePaRifle,Artes fotonicas de rifle de asalto
 CharaInfo,1,OnMousePaLauncher,Lanzador de artes fotonicas
 CharaInfo,1,OnMousePaTmachinegun,Artes fotonicas de ametralladoras gemelas
 CharaInfo,1,OnMousePaRod,Artes de fotones de varilla
-CharaInfo,1,OnMousePaTalis,Talis Photon Arts
+CharaInfo,1,OnMousePaTalis,Artes fotonicas de Talis
 CharaInfo,1,OnMousePaWand,Artes de fotones de varita
 CharaInfo,1,OnMousePaKatana,Artes fotonicas de Katana
 CharaInfo,1,OnMousePaCompoundBow,Artes de fotones de arco
@@ -3275,7 +3275,7 @@ CharaInfo,1,OnMousePaDblade,Artes fotonicas de cuchillas altisimas
 CharaInfo,1,OnMousePaWpnman,Artes fotonicas clase Scion
 CharaInfo,1,OnMousePaWpnmanEP6,Artes de fotones heroe
 CharaInfo,1,OnMousePaVillainEP6,Artes de fotones fantasmas
-CharaInfo,1,OnMousePaMasterEP6,Etoile Photon Arts
+CharaInfo,1,OnMousePaMasterEP6,Artes fotonicas de Etoile
 CharaInfo,1,OnMousePaSlayerEP6,Artes de fotones de brillo
 CharaInfo,1,OnMouseTechnicAttributeAll,Todas las tecnicas
 CharaInfo,1,OnMouseTechnicAttributeFire,Tecnicas de fuego
@@ -3295,7 +3295,7 @@ CharaInfo,1,ClassSkillList,Lista de habilidades de clase
 CharaInfo,1,InquiryErrorTitle,RECUPERAR INFORMACION DEL PERSONAJE
 CharaInfo,1,InquiryErrorMessage1,No se pudo recuperar la informacion del personaje.
 CharaInfo,1,ClassSkillLevel,Nivel (MAX.)
-CharaInfo,1,EquipmentWeapon,Equipar armas
+CharaInfo,1,EquipmentWeapon,equipar armas
 CharaInfo,1,EquipmentUnit,Equipar unidades/anillos de habilidad
 CharaInfo,1,EquipmentCostume,Piezas de equipamiento / Disfraces / Camuflaje de armas
 CharaInfo,1,InquiryErrorMessage2,Failed to acquire character information.<br>Please wait a while and try again.
@@ -3334,7 +3334,7 @@ CharaInfo,1,BonusMessage20,Melee Photon Arts Tipo personalizado 2 aumentado
 CharaInfo,1,BonusMessage21,Artes de fotones a distancia Tipo personalizado 1 aumentado
 CharaInfo,1,BonusMessage22,Artes de fotones a distancia Tipo personalizado 2 aumentado
 CharaInfo,1,BonusMessage23,Artes de fotones a distancia Tipo personalizado 1 aumentado
-CharaInfo,1,BonusMessage24,Technique Photon Arts Custom Type 2 Increased
+CharaInfo,1,BonusMessage24,Tecnica Photon Arts Personalizada Tipo 2 Aumentada
 CharaInfo,1,SetEffectEquipTitle,EQUIPO DE EFECTO ESTABLECIDO
 CharaInfo,1,SetEffectInfoTitle1,ESTADISTICAS
 CharaInfo,1,SetEffectInfoTitle2,CONJUNTO 1
@@ -3393,7 +3393,7 @@ PlayerDeadMenu,1,Failure,Retirarse de la mision
 PlayerDeadMenu,1,FailureMessage,You are about to retire from your current quest.<br>Are you sure you wish to proceed?
 PlayerDeadMenu,1,FailurePartyExit,Retirarse de Quest (Dejar la fiesta)
 PlayerDeadMenu,1,FailurePartyExitMessage,You are about to retire from your current<br>quest and leave your party. Are you sure<br>you wish to proceed?
-PlayerDeadMenu,1,Chat,Charlar
+PlayerDeadMenu,1,Chat,charlar
 PlayerDeadMenu,1,UseHalf,Usa Half Scape Doll y revive
 PlayerDeadMenu,1,HalfDollUseTitle,USA MUЙECA MEDIA ESCAPE
 PlayerDeadMenu,1,HalfDollUseMessage,␀⠀　⤀ 唀猀攀猀⤀
@@ -3405,8 +3405,8 @@ PlayerDeadMenu,1,Revive_count_vita,Reviviras automaticamente en 10 segundos.
 PlayerDeadMenu,1,Revive_count_5,Reviviras automaticamente en 5 segundos.
 PlayerDeadMenu,1,Revive_count_Time,Reviviras automaticamente en $(0) segundo(s).
 PlayerDeadMenu,1,RetryConform,Menu Reintentar
-PlayerDeadMenu,1,Retry,Rever
-PlayerDeadMenu,1,RetrySelect,Seleccione Reintentar
+PlayerDeadMenu,1,Retry,revertir
+PlayerDeadMenu,1,RetrySelect,Seleccionar Reintentar
 PlayerDeadMenu,1,RetryMessage,u will be transported<br>to the Gateway Ship with the quest accepted.)<c>
 SkillTree,0,LevelUp_Ask,$(0)SPを消費してレベルアップを行います。<br>よろしいですか？<br><br>（所持スキルポイント：$(1)SP）
 SkillTree,0,LevelUp_AskNoCost,<yellow>SPを消費せず<c>レベルアップを行います。<br>よろしいですか？
@@ -3461,7 +3461,7 @@ SkillTree,1,LevelUp_LackPre_v,vel.<br><br>You can view your status at each skill
 SkillTree,1,Rename,Se ha cambiado el nombre del arbol de habilidades.
 SkillTree,1,Rename_Text,Cambie el nombre del arbol de habilidades seleccionado.
 SkillTree,1,Exp_WholeSkillTree,Muestra el arbol de habilidades seleccionado en su totalidad.
-SkillTree,1,Exp_AddSkillTree,Agregue un arbol de habilidades consumiendo ARKS Cash.
+SkillTree,1,Exp_AddSkillTree,Agrega un arbol de habilidades consumiendo ARKS Cash.
 SkillTree,1,Exp_RenameSkillTree,Cambia el nombre del arbol de habilidades seleccionado.
 SkillTree,1,Exp_ClassSkillTree,Este es el arbol de habilidades de la clase %s.
 SkillTree,1,Failed,And error has occurred.<br>The process being executed was terminated.
@@ -4165,19 +4165,19 @@ SkillName,0,ring_CriticalField,クリティカル<br>フィールド
 SkillName,0,ring_Sprint,スプリント
 SkillName,0,GaugePA,ゲージ式PA
 SkillName,1,WeaponAction,Accion de arma
-SkillName,1,NormalAttack,Ataque normal
-SkillName,1,Step,Esquivar
+SkillName,1,NormalAttack,ataque normal
+SkillName,1,Step,esquivar
 SkillName,1,StepAdvance,Paso lateral mas
 SkillName,1,StepAttack,Golpe lateral
 SkillName,1,HunterJustReversal,Recuperacion perfecta
 SkillName,1,HunterHPUp1,HP hasta 1
-SkillName,1,GuardStance,Postura de guardia
+SkillName,1,GuardStance,postura de guardia
 SkillName,1,GuardStanceUp1,Posicion de guardia levantada
 SkillName,1,HunterHPUp2,HP hasta 2
 SkillName,1,HunterHPUp3,HP hasta 3
 SkillName,1,AutoMateHalfline,Auto-Mate mitad
 SkillName,1,MaterialDefence1,Guardia de destello 1
-SkillName,1,TechDefence,Guardia tecnologica flash
+SkillName,1,TechDefence,Flash de guardia tecnologica
 SkillName,1,MaterialDefence2,Guardia flash 2
 SkillName,1,GuardStancePoison,Guard Stance <br>Poison
 SkillName,1,GuardStanceBurn,Quemadura en posicion de guardia
@@ -4189,26 +4189,26 @@ SkillName,1,HunterAtpStrikeUp2,Encendido cuerpo a cuerpo 2
 SkillName,1,FuryStance,Postura de furia
 SkillName,1,FuryStanceUp1,Posicion de furia arriba 1
 SkillName,1,FuryStanceUp2,Posicion de furia arriba 2
-SkillName,1,FuryStanceCritical,Furia critica
-SkillName,1,SwordGear,Sword Focus
+SkillName,1,FuryStanceCritical,furia critica
+SkillName,1,SwordGear,Enfoque de espada
 SkillName,1,WiredlanceGear,Wired Lance <br>Focus
 SkillName,1,PartisanGear,Enfoque partidista
 SkillName,1,JustAttackBonus1,Perfect Attack <br>Bonus 1
 SkillName,1,JustAttackBonus2,Perfect Attack <br>Bonus 2
-SkillName,1,Guard,Guardia
+SkillName,1,Guard,guardia
 SkillName,1,HunterDfpFirearmUp1,DEF a distancia hasta 1
-SkillName,1,JustGuard,Guardia perfecta
+SkillName,1,JustGuard,guardia perfecta
 SkillName,1,JustCounter,Contador perfecto
 SkillName,1,Rare10Hunter,Arms Enthusiast: <br>Hunter
 SkillName,1,FuryComboUp,Perfect Fury <br>Bonus
 SkillName,1,PrettyGood,Nada mal
-SkillName,1,Sacrifice,Absorcion
+SkillName,1,Sacrifice,absorcion
 SkillName,1,HunterAtpStrikeUp3,Encendido cuerpo a cuerpo 3
 SkillName,1,JustGuardAdvance,Advanced <br>Perfect Guard
 SkillName,1,FuryGearBoost,Hunter Focus <br>Boost
-SkillName,1,NeverGiveup,Espiritu incondicional
+SkillName,1,NeverGiveup,espiritu incondicional
 SkillName,1,MassiveHunter,Fisico del cazador
-SkillName,1,AdvanceGuard,Guardia curativa
+SkillName,1,AdvanceGuard,guardia curativa
 SkillName,1,WarBrave,Guerra valiente
 SkillName,1,HunterDexUp1,Destreza arriba
 SkillName,1,AllGuard,Toda la guardia
@@ -4219,17 +4219,17 @@ SkillName,1,WarCryJellen,Atraccion de guerra
 SkillName,1,HunterHighLevelBonus,High Level <br>Bonus: Hunter
 SkillName,1,HunterNextJump,doble salto
 SkillName,1,HunterFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,HunterAirReversal,Inversion aerea
-SkillName,1,HunterDushJump,Salto lateral
+SkillName,1,HunterAirReversal,Area de inversion
+SkillName,1,HunterDushJump,salto lateral
 SkillName,1,HunterStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,HunterJustReversalJACombo,Perf. Recovery & <br>ATK Combo
-SkillName,1,FighterStep,Esquivar
+SkillName,1,FighterStep,esquivar
 SkillName,1,FighterStepAdvance,Paso lateral mas
 SkillName,1,FighterStepAttack,Golpe lateral
 SkillName,1,FighterJustReversal,Recuperacion perfecta
 SkillName,1,FighterAtpStrikeUp1,Encendido cuerpo a cuerpo 1
 SkillName,1,BraveStanceUp1,Postura valiente
-SkillName,1,BraveCritical,Critico valiente
+SkillName,1,BraveCritical,critico valiente
 SkillName,1,BraveStance,Postura valiente
 SkillName,1,FighterHPUp1,HP hasta 1
 SkillName,1,KnuckleGear,Enfoque de nudillos
@@ -4267,8 +4267,8 @@ SkillName,1,LimitBreakInsurance,Overload <br>Safeguard
 SkillName,1,FighterHighLevelBonus,High Level <br>Bonus: Fighter
 SkillName,1,FighterNextJump,doble salto
 SkillName,1,FighterFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,FighterAirReversal,Inversion aerea
-SkillName,1,FighterDushJump,Salto lateral
+SkillName,1,FighterAirReversal,Area de inversion
+SkillName,1,FighterDushJump,salto lateral
 SkillName,1,FighterStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,FighterJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,Diveroll,Rollo de buceo
@@ -4298,7 +4298,7 @@ SkillName,1,ReloadMirage,Blinding <br>Shot
 SkillName,1,ReloadPanic,Panic <br>Shot
 SkillName,1,Rare10Ranger,Arms Enthusiast: <br>Ranger
 SkillName,1,KillingBonus,Bono de erradicacion
-SkillName,1,FirstHit,Primer golpe
+SkillName,1,FirstHit,primer golpe
 SkillName,1,BulletPPSave,PP Preservation <br>Bullet
 SkillName,1,TacticsTrap,Tactical <br>Trap
 SkillName,1,PowerBullet,Bala de poder
@@ -4309,14 +4309,14 @@ SkillName,1,GravityBom,Gravity <br>Bomb
 SkillName,1,MovingSnipe,Mobile <br>Fire
 SkillName,1,DiverollShoot,Dive Roll <br>Shot
 SkillName,1,BulletKeepGs,Ammo Maint. <br>Gunblade
-SkillName,1,MassiveBullet,Bala masiva
+SkillName,1,MassiveBullet,bala masiva
 SkillName,1,BulletDiverollShoot,Keep <br>Roll Shot
 SkillName,1,ExTrapMode,Trampa EX
 SkillName,1,RangerHighLevelBonus,High Level <br>Bonus: Ranger
 SkillName,1,RangerNextJump,doble salto
 SkillName,1,RangerFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,RangerAirReversal,Inversion aerea
-SkillName,1,RangerDushJump,Salto lateral
+SkillName,1,RangerAirReversal,Area de inversion
+SkillName,1,RangerDushJump,salto lateral
 SkillName,1,RangerStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,RangerJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,GunnerDiveroll,Rollo de buceo
@@ -4347,7 +4347,7 @@ SkillName,1,SRollArts,Stylish Roll <br>Finisher
 SkillName,1,ShowTimeAdvance,Advanced <br>Showtime
 SkillName,1,ToughnessTime,Ahorro de tiempo
 SkillName,1,ShowTimeStar,Showtime <br>Star
-SkillName,1,HighTime,Hora alta
+SkillName,1,HighTime,hora alta
 SkillName,1,GunnerZeroRangeCritical,Point Blank <br>Critical
 SkillName,1,TwiceChain,Doble Cadena
 SkillName,1,ChainFinishBonus,Chain Finisher <br>Bonus
@@ -4359,14 +4359,14 @@ SkillName,1,SRollArtsModeA,Alternate Stylish <br>Roll Finisher
 SkillName,1,GunnerHighLevelBonus,High Level <br>Bonus: Gunner
 SkillName,1,GunnerNextJump,doble salto
 SkillName,1,GunnerFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,GunnerAirReversal,Inversion aerea
-SkillName,1,GunnerDushJump,Salto lateral
+SkillName,1,GunnerAirReversal,Area de inversion
+SkillName,1,GunnerDushJump,salto lateral
 SkillName,1,GunnerStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,GunnerJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,MirageEscape,Blind <br>Escape
 SkillName,1,MirageEscapeAdvance,Advanced <br>Blinding E
 SkillName,1,ForceJustReversal,Perfect <br>Recovery
-SkillName,1,ForceAtpTechnicUp1,Tech. Power Up 1
+SkillName,1,ForceAtpTechnicUp1,Tecnologia. Encendido 1
 SkillName,1,TechChargeBonus1,Advanced Tech <br>Charge 1
 SkillName,1,TechChargeBonus2,Advanced Tech <br>Charge 2
 SkillName,1,ChargePPRestraint,Charge PP <br>Revival
@@ -4377,7 +4377,7 @@ SkillName,1,ForcePPUp2,PP arriba 2
 SkillName,1,TechNonChargeBonus1,Advanced <br>Normal Tech
 SkillName,1,PPRestraint1,PP <br>Restorate 1
 SkillName,1,PPRestraint2,PP <br>Restorate 2
-SkillName,1,ForceAtpTechnicUp2,Tech. Power Up 2
+SkillName,1,ForceAtpTechnicUp2,Tecnologia. Encendido 2
 SkillName,1,TechJustAttackBonus1,Advanced Tech. <br>Perfect Attacks
 SkillName,1,MasteryFire1,Flame <br>Mastery 1
 SkillName,1,BurnBoost,Burn <br>Boost
@@ -4391,7 +4391,7 @@ SkillName,1,MasteryLightning1,Lightning <br>Mastery 1
 SkillName,1,ShockBoost,Shock <br>Boost
 SkillName,1,MasteryLightning2,Lightning <br>Mastery 2
 SkillName,1,LightningTechnicPPSave,Lightning Tech <br>PP Preservation
-SkillName,1,ForceDfpTechnicUp1,Technique DEF Up
+SkillName,1,ForceDfpTechnicUp1,Tecnica DEF arriba
 SkillName,1,Rare10Force,Arms Enthusiast: <br>Force
 SkillName,1,PhotonFlareAfterBurst,Photon Flare <br>Afterburst
 SkillName,1,PhotonFlareTactics,Photon Flare <br>Boost
@@ -4412,21 +4412,21 @@ SkillName,1,PhotonFlareDenoise,Photon Flare <br>Rod Short Charge
 SkillName,1,ForceHighLevelBonus,High Level <br>Bonus: Force
 SkillName,1,ForceNextJump,doble salto
 SkillName,1,ForceFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,ForceAirReversal,Inversion aerea
-SkillName,1,ForceDushJump,Salto lateral
+SkillName,1,ForceAirReversal,Area de inversion
+SkillName,1,ForceDushJump,salto lateral
 SkillName,1,ForceStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,ForceJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,TecherMirageEscape,Blind <br>Escape
 SkillName,1,TecherJustReversal,Perfect <br>Recovery
-SkillName,1,TecherAtpTechnicUp1,Tech. Power Up 1
+SkillName,1,TecherAtpTechnicUp1,Tecnologia. Encendido 1
 SkillName,1,ShiftaAdvance,Advanced <br>Shifta
 SkillName,1,ShiftaCritical,Critical <br>Shifta
 SkillName,1,DebandAdvance,Advanced <br>Deband
 SkillName,1,DebandCut,Corte Deband
-SkillName,1,TecherAtpTechnicUp2,Tech. Power Up 2
+SkillName,1,TecherAtpTechnicUp2,Tecnologia. Encendido 2
 SkillName,1,ElementalWeakPoint,Elemental <br>Precision Hit
 SkillName,1,TecherPPUp1,PP arriba 1
-SkillName,1,TecherDfpTechnicUp1,Technique DEF Up
+SkillName,1,TecherDfpTechnicUp1,Tecnica DEF arriba
 SkillName,1,PPRestraint,Restauracion de PP
 SkillName,1,WandGear,Enfoque de varita
 SkillName,1,TerritoryBurst,Territory <br>Burst
@@ -4464,12 +4464,12 @@ SkillName,1,AllAssist,Party <br>Support
 SkillName,1,TechterHighLevelBonus,High Level <br>Bonus: Techter
 SkillName,1,TechterNextJump,doble salto
 SkillName,1,TechterFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,TechterAirReversal,Inversion aerea
-SkillName,1,TechterDushJump,Salto lateral
+SkillName,1,TechterAirReversal,Area de inversion
+SkillName,1,TechterDushJump,salto lateral
 SkillName,1,TechterStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,TechterJustReversalJACombo,Perf. Recovery & <br>ATK Combo
-SkillName,1,BraverGuard,Guardia
-SkillName,1,BraverStep,Esquivar
+SkillName,1,BraverGuard,guardia
+SkillName,1,BraverStep,esquivar
 SkillName,1,BraverStepAdvance,Paso lateral mas
 SkillName,1,BraverStepAttack,Golpe lateral
 SkillName,1,BraverJustReversal,Perfect <br>Recovery
@@ -4514,8 +4514,8 @@ SkillName,1,BraverCombination,Braver <br>Combination
 SkillName,1,BraverHighLevelBonus,High Level <br>Bonus: Braver
 SkillName,1,BraverNextJump,doble salto
 SkillName,1,BraverFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,BraverAirReversal,Inversion aerea
-SkillName,1,BraverDushJump,Salto lateral
+SkillName,1,BraverAirReversal,Area de inversion
+SkillName,1,BraverDushJump,salto lateral
 SkillName,1,BraverStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,BraverJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,BouncerStep,Paso lateral cegador
@@ -4525,7 +4525,7 @@ SkillName,1,BouncerJustReversal,Perfect <br>Recovery
 SkillName,1,JustReversalPPBonus,Perfect Recovery <br>PP Gain
 SkillName,1,BouncerAtpStrikeUp1,Encendido cuerpo a cuerpo 1
 SkillName,1,BouncerAtpStrikeUp2,Encendido cuerpo a cuerpo 2
-SkillName,1,BouncerAtpTechnicUp1,Tech. Power Up
+SkillName,1,BouncerAtpTechnicUp1,Tecnologia. Encendido
 SkillName,1,BouncerDexUp1,Destreza arriba
 SkillName,1,JetBootsGear,Jet Boots <br>Focus
 SkillName,1,DualbladeGear,Soaring <br>Blades Focus
@@ -4533,7 +4533,7 @@ SkillName,1,CraftMastaryBouncer,Crafting <br>Mastery
 SkillName,1,Rare10Bouncer,Arms Enthusiast: <br>Bouncer
 SkillName,1,BouncerMag,Gorila Mag
 SkillName,1,ElementalPPRestraintField,Elemental PP <br>Restorate Field
-SkillName,1,CriticalField,Campo critico
+SkillName,1,CriticalField,campo critico
 SkillName,1,ShiftaAirAttackBurst,Shifta Air <br>Attack Boost
 SkillName,1,DebundPPRestraint,Deband Attack <br>PP Restorate
 SkillName,1,HealShare,Compartir curacion
@@ -4560,8 +4560,8 @@ SkillName,1,DodgeAutoField,Dodge <br>Auto Field
 SkillName,1,BouncerHighLevelBonus,High Level <br>Bonus: Bouncer
 SkillName,1,BouncerNextJump,doble salto
 SkillName,1,BouncerFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,BouncerAirReversal,Inversion aerea
-SkillName,1,BouncerDushJump,Salto lateral
+SkillName,1,BouncerAirReversal,Area de inversion
+SkillName,1,BouncerDushJump,salto lateral
 SkillName,1,BouncerStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,BouncerJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,SummonerMirageEscape,Blind <br>Escape
@@ -4579,7 +4579,7 @@ SkillName,1,AllJAUp,Rendimiento total. ATK arriba
 SkillName,1,AllJAComboUp,Total Perf. ATK Up <br>Combo
 SkillName,1,PetPhotonBarrier,Pet <br>Photon Barrier
 SkillName,1,PetResque,Dia <br>Master
-SkillName,1,HPAutoRestraint,Restaurar HP
+SkillName,1,HPAutoRestraint,Restaurador HP
 SkillName,1,MassiveMate,Unstoppable <br>Recovery
 SkillName,1,GetReadyGetUp,Obtener impulso
 SkillName,1,QuickRecovery,Quick <br>Recovery
@@ -4608,8 +4608,8 @@ SkillName,1,PetStandHarmony,Alter Ego <br>Harmony
 SkillName,1,SummonerHighLevelBonus,High Level <br>Bonus: Summoner
 SkillName,1,SummonerNextJump,doble salto
 SkillName,1,SummonerFirstArtsJAAddition,First Arts Perfect <br>Attack Addition
-SkillName,1,SummonerAirReversal,Inversion aerea
-SkillName,1,SummonerDushJump,Salto lateral
+SkillName,1,SummonerAirReversal,Area de inversion
+SkillName,1,SummonerDushJump,salto lateral
 SkillName,1,SummonerStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,SummonerJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,Intensive,Impulso heroico
@@ -4631,11 +4631,11 @@ SkillName,1,VictoryShout,Victory <br>Shout
 SkillName,1,HFlushGuard,H Flash <br>Guard
 SkillName,1,SolidWpnman,Heroe solido
 SkillName,1,WpnmanAttackBonus,H Attack <br>Bonus
-SkillName,1,WpnmanMag,Revista heroe
-SkillName,1,WpnmanAtpAllUp1,Ataque total arriba
-SkillName,1,WpnmanDfpAllUp1,Defensa total arriba
+SkillName,1,WpnmanMag,revista heroe
+SkillName,1,WpnmanAtpAllUp1,ataque total arriba
+SkillName,1,WpnmanDfpAllUp1,defensa total arriba
 SkillName,1,WpnmanHPUp1,HP arriba
-SkillName,1,WpnmanPPUp1,PP arriba
+SkillName,1,WpnmanPPUp1,PParriba
 SkillName,1,WpnmanWill,La voluntad del heroe
 SkillName,1,WpnmanJustReversal,Perfect <br>Recovery
 SkillName,1,WpnmanNextJump,doble salto
@@ -4645,11 +4645,11 @@ SkillName,1,WpnmanChargeKeep,H Talis Charge <br>Preservation
 SkillName,1,WpnmanTMGAttackPPSave,TMG Attack <br>PP Preservation
 SkillName,1,WpnmanGearTimeGain,Hero Focus <br>Time Gain
 SkillName,1,FirstBlood,First <br>Blood
-SkillName,1,WpnmanStep,Esquivar
+SkillName,1,WpnmanStep,esquivar
 SkillName,1,WpnmanStepAttack,Golpe lateral
-SkillName,1,WpnmanTalisWeaponAction,Talis Action
-SkillName,1,WpnmanAirReversal,Inversion aerea
-SkillName,1,WpnmanDushJump,Salto lateral
+SkillName,1,WpnmanTalisWeaponAction,Accion Talis
+SkillName,1,WpnmanAirReversal,Area de inversion
+SkillName,1,WpnmanDushJump,salto lateral
 SkillName,1,WpnmanStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,WpnmanJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,WpnmanRefresh,Hero <br>Refresh
@@ -4660,11 +4660,11 @@ SkillName,1,VillainNextJump,doble salto
 SkillName,1,PrimalTime,Tiempo fantasma
 SkillName,1,VillainTimeFinish,Phantom Time <br>Finish
 SkillName,1,VillainJustReversal,Perfect <br>Recovery
-SkillName,1,VillainAirReversal,Inversion aerea
-SkillName,1,VillainDushJump,Salto lateral
+SkillName,1,VillainAirReversal,Area de inversion
+SkillName,1,VillainDushJump,salto lateral
 SkillName,1,VillainStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,VillainJustReversalJACombo,Perf. Recovery & <br>ATK Combo
-SkillName,1,VillainPPHighUp,Mega-up PP
+SkillName,1,VillainPPHighUp,PP mega-up
 SkillName,1,VillainWeaponBonus1,Ph Weapon <br>Bonus 1
 SkillName,1,VillainWeaponBonus2,Ph Weapon <br>Bonus 2
 SkillName,1,VillainDodgePPRegain,Dodge <br>PP Gain
@@ -4688,12 +4688,12 @@ SkillName,1,VillainLoadOfThorn,Seйor de las espinas
 SkillName,1,VillainBullsEye,Diana
 SkillName,1,VillainAttackJellen,gelatina de ataque
 SkillName,1,VillainJellenRedress,Reparacion de Jellen
-SkillName,1,VillainQuickCut,Corte rapido
+SkillName,1,VillainQuickCut,corte rapido
 SkillName,1,VillainDodgeCounterShot,Dodge Counter <br>Shot
 SkillName,1,VillainSprintTecCharge,Cargo tecnico de Sprint
 SkillName,1,VillainGespenst,Gespenst
 SkillName,1,VillainAmbivalence,Ambivalence
-SkillName,1,VillainTouchDown,Aterrizaje
+SkillName,1,VillainTouchDown,aterrorizaje
 SkillName,1,VillainRifleWeaponAction,Accion del rifle
 SkillName,1,VillainRodWeaponAction,Accion de la varilla
 SkillName,1,VillainDodge,Stealth <br>Tech Charge
@@ -4704,13 +4704,13 @@ SkillName,1,VillainPhotonStream2,Critical <br>Stream
 SkillName,1,VillainTalisShortCharge,Phantom Talis <br>S Charge
 SkillName,1,VillainStepAdvance,Advanced <br>Sidestep Roll
 SkillName,1,MasterWandWeaponAction,Accion de varita
-SkillName,1,MasterAirReversal,Inversion aerea
-SkillName,1,MasterDushJump,Salto lateral
+SkillName,1,MasterAirReversal,Area de inversion
+SkillName,1,MasterDushJump,salto lateral
 SkillName,1,MasterStepJACombo,Sidestep & Perf. <br>ATK Combo
 SkillName,1,MasterJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,MasterFirstBlood,First <br>Blood
 SkillName,1,MasterNextJump,doble salto
-SkillName,1,MasterStep,Esquivar
+SkillName,1,MasterStep,esquivar
 SkillName,1,MasterWeaponBonus1,Étoile Weapon <br>Bonus 1
 SkillName,1,MasterWeaponBonus2,Étoile Weapon <br>Bonus 2
 SkillName,1,MasterDoublesaverGear,Étoile <br>Double Saber Gear
@@ -4727,10 +4727,10 @@ SkillName,1,MasterDSaberCounter,Double Saber <br>Counter
 SkillName,1,MasterStepAttack,Golpe lateral
 SkillName,1,MasterJustReversal,Perfect <br>Recovery
 SkillName,1,MasterHighLevelBonus,High Level <br>Bonus: Étoile
-SkillName,1,MasterDfpAllUp1,Defensa total arriba
+SkillName,1,MasterDfpAllUp1,defensa total arriba
 SkillName,1,MasterHPUp1,HP arriba
-SkillName,1,MasterPPUp1,PP arriba
-SkillName,1,MasterAtpAllUp1,Ataque total arriba
+SkillName,1,MasterPPUp1,PParriba
+SkillName,1,MasterAtpAllUp1,ataque total arriba
 SkillName,1,MasterCoherence,Perfect Guard <br>PP Aile
 SkillName,1,MasterDBladeNaHoming,Soaring Blades <br>Lock-On Chase
 SkillName,1,MasterDBladeGearSkill,S Blades Focus <br>Gauge Heat Up
@@ -4746,7 +4746,7 @@ SkillName,1,MasterInstinct,Étoile <br>Boost
 SkillName,1,MasterArcane,Double Saber <br>Sidestep Guard
 SkillName,1,MasterHPRestraint,Étoile <br>HP Restorate
 SkillName,1,MasterAmbitionMassive,Stationary <br>Physique
-SkillName,1,MasterTimeLeap,Etoile Will
+SkillName,1,MasterTimeLeap,Estrella Will
 SkillName,1,MasterWandTeleport,Wand <br>Teleport
 SkillName,1,MasterCountArtsBonus,Tech Arts <br>Count Bonus
 SkillName,1,MasterJABonus,Étoile Perfect <br>Attack Bonus
@@ -4758,20 +4758,20 @@ SkillName,1,SlayerStyleFM,Fomel <br>Style
 SkillName,1,SlayerStyleZZ,Zandi <br>Style
 SkillName,1,SlayerStyleBG,Baran <br>Style
 SkillName,1,SlayerGunSlashGear,Luster Gunblade <br>Focus
-SkillName,1,SlayerDushJump,Salto lateral
+SkillName,1,SlayerDushJump,salto lateral
 SkillName,1,SlayerFirstBlood,First <br>Blood
-SkillName,1,SlayerAirReversal,Inversion aerea
+SkillName,1,SlayerAirReversal,Area de inversion
 SkillName,1,SlayerJustReversalJACombo,Perf. Recovery & <br>ATK Combo
 SkillName,1,SlayerNextJump,doble salto
 SkillName,1,SlayerHighLevelBonus,High Level <br>Bonus: Luster
 SkillName,1,SlayerHPUp1,HP arriba
-SkillName,1,SlayerPPUp1,PP arriba
-SkillName,1,SlayerAtpAllUp1,Ataque total arriba
-SkillName,1,SlayerDfpAllUp1,Defensa total arriba
+SkillName,1,SlayerPPUp1,PParriba
+SkillName,1,SlayerAtpAllUp1,ataque total arriba
+SkillName,1,SlayerDfpAllUp1,defensa total arriba
 SkillName,1,SlayerWeaponBonus1,Luster Weapon <br>Bonus 1
 SkillName,1,SlayerWeaponBonus2,Luster Weapon <br>Bonus 2
 SkillName,1,SlayerAllAttackBonus,All Attack <br>Bonus: Luster
-SkillName,1,SlayerStep,Esquivar
+SkillName,1,SlayerStep,esquivar
 SkillName,1,SlayerMag,Lustre Mag
 SkillName,1,SlayerStepAttack,Golpe lateral
 SkillName,1,SlayerJustReversal,Perfect <br>Recovery
@@ -4782,7 +4782,7 @@ SkillName,1,SlayerGSlashReferenceChange,Gunblade Augment <br>Power Boost
 SkillName,1,SlayerIgnoreResist,Weapon RST <br>Nullification
 SkillName,1,SlayerTension,Luster <br>Volts
 SkillName,1,SlayerTensionAssist,Volts <br>Bonus
-SkillName,1,SlayerTensionHighBonus,Alto voltaje
+SkillName,1,SlayerTensionHighBonus,alto voltaje
 SkillName,1,SlayerTensionResetGain,Volt Reset <br>Heal
 SkillName,1,SlayerTensionAwake,Volt <br>Heat Up
 SkillName,1,SlayerZealot,Amplified <br>Support
@@ -4818,18 +4818,18 @@ SkillName,1,SlayerMeditation,Complete <br>Rest
 SkillName,1,SlayerHighTecArts,High Combo Var. <br>PP Save
 SkillName,1,SlayerGunSlashAutoPA,Artes de fotones inteligentes
 SkillName,1,SlayerFourthAttack,Extra <br>Attack
-SkillName,1,SlayerQuickTrigger,Disparo rapido
+SkillName,1,SlayerQuickTrigger,disparo rapido
 SkillName,1,CaptureShot,Disparo aturdidor
 SkillName,1,PPOneTimeUp,Frenesi de casting
-SkillName,1,FirstAid,Curar
+SkillName,1,FirstAid,curar
 SkillName,1,Barrier,Proteger
 SkillName,1,Sprint,Sprint
 SkillName,1,ring_MassiveHunter,Fisico del cazador
 SkillName,1,ring_PhotonFlare,Llamarada de fotones
 SkillName,1,ring_PPConvert,Conversion de PP
 SkillName,1,ring_ElementalPPRestraintField,Elemental PP <br>Restorate Field
-SkillName,1,ring_HighJump,Esquivar saltando
-SkillName,1,ring_CriticalField,Campo critico
+SkillName,1,ring_HighJump,esquivar saltando
+SkillName,1,ring_CriticalField,campo critico
 SkillName,1,ring_Sprint,Sprint
 SkillExplanation,0,WeaponAction,武器アクション説明テキスト(仮)
 SkillExplanation,0,NormalAttack,通常攻撃説明テキスト(仮)
@@ -5505,7 +5505,7 @@ SkillExplanation,1,Step,Muevase rapidamente una distancia corta moviendose con d
 SkillExplanation,1,StepAdvance,Extiende la duracion de la invulnerabilidad durante un paso lateral.
 SkillExplanation,1,StepAttack,Te permite atacar mientras realizas un paso lateral.
 SkillExplanation,1,HunterJustReversal,Te permite saltar rapidamente despues de haber sido derribado al suelo.
-SkillExplanation,1,HunterHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,HunterHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,GuardStance,o reducir el nivel de daйo cuerpo a cuerpo que recibes. Hace que la postura de furia sea ineficaz.
 SkillExplanation,1,GuardStanceUp1,Aumenta tu resistencia cuerpo a cuerpo mientras estas en posicion de guardia.
 SkillExplanation,1,HunterHPUp2,Aumenta tu HP maximo. Produce un efecto mas fuerte que HP Up 1.
@@ -5566,7 +5566,7 @@ SkillExplanation,1,FighterAtpStrikeUp1,Aumenta tu poder cuerpo a cuerpo.
 SkillExplanation,1,BraveStanceUp1,Otorga una bonificacion al daйo infligido desde el frente de un enemigo mientras Valiant Stance esta activo.
 SkillExplanation,1,BraveCritical,Aumenta la tasa de golpes criticos al infligir daйo desde el frente de un enemigo mientras Valiant Stance esta activo.
 SkillExplanation,1,BraveStance,Habilidad de postura pasiva que aumenta el daйo que infliges desde el frente de un enemigo.
-SkillExplanation,1,FighterHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,FighterHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,KnuckleGear,洀攀搀 搀甀爀椀渀最 愀 挀漀洀戀漀 愀渀搀 琀栀攀渀 戀漀漀猀琀猀 礀漀甀爀 愀琀琀愀挀欀 猀瀀攀攀搀 愀挀挀漀爀搀椀渀最氀礀⸀
 SkillExplanation,1,TwindaggerGear,forma y luego aumenta la potencia de tus Photon Arts en consecuencia.
 SkillExplanation,1,FighterAtpStrikeUp2,Aumenta tu poder cuerpo a cuerpo. Produce un efecto mas fuerte que Melee Power Up 1.
@@ -5576,7 +5576,7 @@ SkillExplanation,1,AbnormalBind,Otorga la posibilidad de activar un estado de vi
 SkillExplanation,1,WiseStanceUp1,Otorga una bonificacion al daйo infligido detras de un enemigo mientras Wise Stance esta activo.
 SkillExplanation,1,WiseCritical,Aumenta la tasa de golpes criticos al infligir daйo detras de un enemigo mientras Wise Stance esta activo.
 SkillExplanation,1,WiseStance,Habilidad de postura activa que aumenta el daйo que infliges detras de un enemigo. Hace que Postura Valiente sea ineficaz.
-SkillExplanation,1,FighterHPUp2,Aumenta tu HP maximo.
+SkillExplanation,1,FighterHPUp2,Aumenta tu HP al maximo.
 SkillExplanation,1,FighterAtpStrikeUp3,Aumenta tu poder cuerpo a cuerpo. Produce un efecto mas fuerte que Melee Power Up 1.
 SkillExplanation,1,DoublesaverGear,渀 琀漀 甀渀氀攀愀猀栀 愀 搀愀洀愀最椀渀最 眀椀渀搀Ⰰ 琀栀攀 瀀漀眀攀爀 漀昀 眀栀椀挀栀 椀猀 戀愀猀攀搀 漀渀 琀栀攀 最愀甀最攀 挀栀愀爀最攀⸀
 SkillExplanation,1,HalflineSlayer,"Aumenta tu poder cuerpo a cuerpo, poder a distancia y poder tecnico cuando tu HP cae por debajo del 50%."
@@ -5665,7 +5665,7 @@ SkillExplanation,1,GunnerZeroRangeBonus2,Aumenta el daйo infligido cuando golpe
 SkillExplanation,1,GunnerAttackPPRestraint,Aumenta la recuperacion de PP cuando golpeas a un enemigo con un ataque normal.
 SkillExplanation,1,TwinmachinegunGear,Carga tu indicador de enfoque y aumenta la potencia de ataque cuando realizas un ataque con exito.
 SkillExplanation,1,ShowTime,渀 攀砀挀栀愀渀最攀 昀漀爀 愀渀 椀渀挀爀攀愀猀攀搀 琀栀爀攀愀琀 氀攀瘀攀氀 愀最愀椀渀猀猀琀 礀漀甀 昀漀爀 愀 猀攀琀 琀椀洀攀⸀
-SkillExplanation,1,GunnerHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,GunnerHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,ChainTrigger,Inicia una cadena cuando logras un golpe con un ataque normal despues de la activacion de la habilidad.
 SkillExplanation,1,ChainFinish,n Machine Guns are equipped. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,GunnerDexUp1,Aumenta tu destreza.
@@ -5735,7 +5735,7 @@ SkillExplanation,1,ForceAtpTechnicUp3,Aumenta tu poder tecnico. Produce un efect
 SkillExplanation,1,ErementConversion,爀攀愀猀攀搀 椀昀 琀栀攀 眀攀愀瀀漀渀 愀渀搀 吀攀挀栀渀椀焀甀攀 䔀氀攀洀攀渀琀猀 洀愀琀挀栀⸀ 㰀礀攀氀氀漀眀㸀䘀漀爀 䴀愀椀渀 䌀氀愀猀猀 漀渀氀礀⸀
 SkillExplanation,1,ChargeEscape,最椀渀最 愀 吀攀挀栀渀椀焀甀攀⸀ 㰀礀攀氀氀漀眀㸀吀栀椀猀 猀欀椀氀氀 挀愀渀 漀渀氀礀 戀攀 甀猀攀搀 眀椀琀栀 愀 䴀愀椀渀 䌀氀愀猀猀⸀
 SkillExplanation,1,ForceDexUp1,Aumenta tu destreza.
-SkillExplanation,1,ForceHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,ForceHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,RodKeepBornus,"Mientras una Vara esta equipada, te permite usar una Tecnica mantenida con Escape Cargado sin consumir PP."
 SkillExplanation,1,RodChargeGuard,Te permite realizar una Guardia Perfecta en el instante en que comienzas a cargar una Tecnica con una Vara.
 SkillExplanation,1,TalisTecFastThrow,Boosts your Talis' throw speed. <yellow>This skill can only be used with a Main Class.
@@ -5897,8 +5897,8 @@ SkillExplanation,1,BouncerJustReversalJACombo,Hace que el tiempo de Perfect-Atta
 SkillExplanation,1,SummonerMirageEscape,Te permite moverte una distancia determinada en un estado invulnerable despues de interrumpir la vision del enemigo.
 SkillExplanation,1,SummonerJustReversal,Te permite saltar rapidamente despues de haber sido derribado al suelo.
 SkillExplanation,1,Rare10Summoner,"Aumenta tu poder cuerpo a cuerpo, poder a distancia y poder tecnico cuando tienes un arma de rareza 10☆ o mayor equipada."
-SkillExplanation,1,SummonerHPUp1,Aumenta tu HP maximo.
-SkillExplanation,1,SummonerHPUp2,Aumenta enormemente tu HP maximo.
+SkillExplanation,1,SummonerHPUp1,Aumenta tu HP al maximo.
+SkillExplanation,1,SummonerHPUp2,Aumenta tu HP al maximo.
 SkillExplanation,1,SummonerPPUp1,Aumenta tu PP maximo.
 SkillExplanation,1,SummonerPPUp2,Aumenta tu PP maximo.
 SkillExplanation,1,AllAttackUp1,"Aumenta tu poder cuerpo a cuerpo, poder a distancia y poder tecnico."
@@ -5964,7 +5964,7 @@ SkillExplanation,1,WpnmanAttackBonus,"Aumenta la potencia de los ataques normale
 SkillExplanation,1,WpnmanMag,"Convierte el ataque total de un Mag equipado en poder cuerpo a cuerpo, poder a distancia y poder tecnico."
 SkillExplanation,1,WpnmanAtpAllUp1,"Aumenta tu poder cuerpo a cuerpo, poder a distancia y poder tecnico."
 SkillExplanation,1,WpnmanDfpAllUp1,"Aumenta tu defensa cuerpo a cuerpo, defensa a distancia y defensa tecnica, asi como tu destreza."
-SkillExplanation,1,WpnmanHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,WpnmanHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,WpnmanPPUp1,Aumenta tu PP maximo.
 SkillExplanation,1,WpnmanWill,Te he incapacitado. Te vuelve invencible por un corto tiempo cuando se activa.
 SkillExplanation,1,WpnmanJustReversal,Te permite saltar rapidamente despues de haber sido derribado al suelo.
@@ -5994,7 +5994,7 @@ SkillExplanation,1,VillainAirReversal,Le permite realizar una caida mientras est
 SkillExplanation,1,VillainDushJump,Saltar durante una accion de esquivar te convierte en una carrera.
 SkillExplanation,1,VillainStepJACombo,Hace que se aplique el tiempo de ataque perfecto durante un paso lateral.
 SkillExplanation,1,VillainJustReversalJACombo,Hace que el tiempo de Perfect-Attack se aplique despues de una Perfect Recovery.
-SkillExplanation,1,VillainPPHighUp,Aumenta enormemente tu Max PP.
+SkillExplanation,1,VillainPPHighUp,Aumenta tu Max PP.
 SkillExplanation,1,VillainWeaponBonus1,Boosts potency when a Phantom Weapon is equipped. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,VillainWeaponBonus2,Boosts potency when a Phantom Weapon is equipped. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,VillainDodgePPRegain,Recovers PP when you successfully perform a Phantom Sidestep. <yellow>This skill can only be used with a Main Class.
@@ -6022,7 +6022,7 @@ SkillExplanation,1,VillainDodgeCounterShot,洀愀氀 䄀吀䬀Ⰰ 倀䄀 �
 SkillExplanation,1,VillainSprintTecCharge,Te permite moverte a alta velocidad mientras cargas una tecnica.
 SkillExplanation,1,VillainGespenst,ou're attacked while HP is reduced. <yellow>Can only be used with a Main Class.
 SkillExplanation,1,VillainAmbivalence,y with a Technique using a Rod. <yellow>Can only be used with a Main Class.
-SkillExplanation,1,VillainTouchDown,Aterrizaje
+SkillExplanation,1,VillainTouchDown,aterrorizaje
 SkillExplanation,1,VillainDodge,g Technique with a Phantom Weapon. <yellow>Only available with a Main Class.
 SkillExplanation,1,PrimalTimePlus2,Increases marker accumulation during Phantom Time. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,VillainHighLevelBonus,Otorga una bonificacion al daйo infligido por el jugador.
@@ -6051,7 +6051,7 @@ SkillExplanation,1,MasterStepAttack,Te permite atacar mientras realizas un paso 
 SkillExplanation,1,MasterJustReversal,Te permite recuperarte rapidamente saltando despues de haber sido derribado al suelo.
 SkillExplanation,1,MasterHighLevelBonus,Otorga una bonificacion al daйo infligido por el jugador.
 SkillExplanation,1,MasterDfpAllUp1,"Aumenta la defensa cuerpo a cuerpo, a distancia y tecnica, asi como la destreza."
-SkillExplanation,1,MasterHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,MasterHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,MasterPPUp1,Aumenta tu PP maximo.
 SkillExplanation,1,MasterAtpAllUp1,"Aumenta tu poder cuerpo a cuerpo, a distancia y tecnico."
 SkillExplanation,1,MasterCoherence,ull off a Perfect Guard. <yellow>This skill can only be used by a Main Class.
@@ -6087,7 +6087,7 @@ SkillExplanation,1,SlayerAirReversal,Le permite realizar una caida mientras esta
 SkillExplanation,1,SlayerJustReversalJACombo,Hace que el tiempo de ataque perfecto se aplique despues de una recuperacion perfecta.
 SkillExplanation,1,SlayerNextJump,Te permite hacer doble salto.
 SkillExplanation,1,SlayerHighLevelBonus,Otorga una bonificacion al daйo infligido por el jugador.
-SkillExplanation,1,SlayerHPUp1,Aumenta tu HP maximo.
+SkillExplanation,1,SlayerHPUp1,Aumenta tu HP al maximo.
 SkillExplanation,1,SlayerPPUp1,Aumenta tu PP maximo.
 SkillExplanation,1,SlayerAtpAllUp1,"Aumenta tu poder cuerpo a cuerpo, a distancia y tecnico."
 SkillExplanation,1,SlayerDfpAllUp1,"Aumenta la defensa cuerpo a cuerpo, a distancia y tecnica, asi como la destreza."
@@ -6406,16 +6406,16 @@ SkillParameter,0,PpAutoHealRate,ＰＰ自動回復量
 SkillParameter,0,DamageResist,被ダメージ軽減
 SkillParameter,1,Duration,Duracion del efecto
 SkillParameter,1,Recast,Enfriarse
-SkillParameter,1,AtpRate,Potencia
+SkillParameter,1,AtpRate,potencia
 SkillParameter,1,AutoMateRate,Tasa de activacion
 SkillParameter,1,Critical,Tasa de activacion
 SkillParameter,1,CriticalInstant,Tasa de activacion
 SkillParameter,1,ConditionRate,Tasa de activacion
 SkillParameter,1,DamageReductionRate,Tasa de reduccion
-SkillParameter,1,HpMax,HP max.
-SkillParameter,1,HpMaxRate,HP max.
-SkillParameter,1,BaseHpRate,HP max.
-SkillParameter,1,Num,Rondas cargadas
+SkillParameter,1,HpMax,CV max.
+SkillParameter,1,HpMaxRate,CV max.
+SkillParameter,1,BaseHpRate,CV max.
+SkillParameter,1,Num,rondas cargadas
 SkillParameter,1,PpHeal,Recuperacion de PP
 SkillParameter,1,PpUse,Consumo de PP
 SkillParameter,1,PpMax,PP max.
@@ -6428,9 +6428,9 @@ SkillParameter,1,AntiPoison,Recuperacion de veneno
 SkillParameter,1,AntiBurn,Recuperacion de quemaduras
 SkillParameter,1,BlowJABonusRate,Potencia cuerpo a cuerpo
 SkillParameter,1,ShootJABonusRate,Potencia a distancia
-SkillParameter,1,AddRecoverPP,Tasa de aumento de PP
-SkillParameter,1,TechJABonusRate,Potencia
-SkillParameter,1,DamageRate,Potencia
+SkillParameter,1,AddRecoverPP,Tasa de aumento del PP
+SkillParameter,1,TechJABonusRate,potencia
+SkillParameter,1,DamageRate,potencia
 SkillParameter,1,TakeRate,Tasa de activacion
 SkillParameter,1,ChageTimeRate,Tiempo de carga
 SkillParameter,1,StepTime,Extension de efecto
@@ -6466,9 +6466,9 @@ SkillParameter,1,FirearmMagDex,Tasa de conversion de energia a distancia
 SkillParameter,1,VictimNum,Conteo de sacrificios
 SkillParameter,1,StrikeConvertDex,Relacion de poder cuerpo a cuerpo
 SkillParameter,1,FirearmConvertDex,Relacion de potencia a distancia
-SkillParameter,1,ResistAll,Tasa de daйo
-SkillParameter,1,PpHealRate,Tasa de aumento de PP
-SkillParameter,1,PpAttackHealRate,Tasa de aumento de PP
+SkillParameter,1,ResistAll,Tasa de daio
+SkillParameter,1,PpHealRate,Tasa de aumento del PP
+SkillParameter,1,PpAttackHealRate,Tasa de aumento del PP
 SkillParameter,1,PpActionRate,Tasa de uso de PP
 SkillParameter,1,PpActionRateWeapon,Tasa de uso de PP de armas FI
 SkillParameter,1,PpActionRateWeaponOther,Tasa de uso de PP de otras armas
@@ -6476,7 +6476,7 @@ SkillParameter,1,HardnessRate,Resistencia a la congelacion
 SkillParameter,1,TimeDef,Intervalo de ataque
 SkillParameter,1,TimeMax,Intervalo de ataque
 SkillParameter,1,TimeExt,Intervalo de ataque
-SkillParameter,1,FirearmInstant,Poder a distancia
+SkillParameter,1,FirearmInstant,poder a distancia
 SkillParameter,1,PBGageGainRateWeakPointShoot,Tasa de aumento del calibre PB
 SkillParameter,1,DurationRate,Duracion de la dolencia del estado
 SkillParameter,1,ReducedGearRate,Reduccion del indicador de enfoque
@@ -6487,7 +6487,7 @@ SkillParameter,1,GpWlanceGainRate,Tasa de aumento del indicador de enfoque
 SkillParameter,1,GpPartisanGainRate,Tasa de aumento del indicador de enfoque
 SkillParameter,1,GpKatanaGainRate,Tasa de aumento del indicador de enfoque
 SkillParameter,1,AtpRatePerSec,Explosion de potencia corta
-SkillParameter,1,AtpRatePerSecMax,Maximo de aumento de potencia
+SkillParameter,1,AtpRatePerSecMax,Maximo aumento de potencia
 SkillParameter,1,RecastRate,Tasa de reduccion de enfriamiento
 SkillParameter,1,AtpAttributeRate,Mismo elemento Lv. Conversion
 SkillParameter,1,AtpAnotherAttributeRate,Elemento diferente Lv. Conversion
@@ -6495,9 +6495,9 @@ SkillParameter,1,ShotParameterTime,Tiempo de activacion
 SkillParameter,1,PpGainMax,Maximo de recuperacion de PP
 SkillParameter,1,AddChain,Numero de cadena
 SkillParameter,1,SpeedRate,Velocidad circular
-SkillParameter,1,AtpRateMax,Maximo de aumento de potencia
+SkillParameter,1,AtpRateMax,Maximo aumento de potencia
 SkillParameter,1,DamageDrainRate,Tasa de absorbancia de HP
-SkillParameter,1,TechnicMagDex,Technique Power Conversion Rate
+SkillParameter,1,TechnicMagDex,Tecnica Tasa de conversion de energia
 SkillParameter,1,HpRecoveryEffectRate,Correccion de recuperacion de HP
 SkillParameter,1,AnimationSpeedRate,Velocidad de ataque
 SkillParameter,1,PaChageTimeRate,Reduccion de carga
@@ -6519,7 +6519,7 @@ SkillParameter,1,AtpRateKatanaGear1,Potencia del indicador de enfoque 1
 SkillParameter,1,AtpRateKatanaGear2,Potencia del indicador de enfoque 2
 SkillParameter,1,RodShootAtpRate,Potencia redonda ligera
 SkillParameter,1,RodShootPpHeal,Recuperacion de PP redonda ligera
-SkillParameter,1,AtpRateNotJA,No JA
+SkillParameter,1,AtpRateNotJA,Sin JA
 SkillParameter,1,PBGageGainRateJustAttack,Aumento del indicador PB durante JA
 SkillParameter,1,AtpRateGearPoint099,Indicador de enfoque: 0 - Aumento de potencia
 SkillParameter,1,AtpRateGearPoint199,Indicador de enfoque: 1 - Aumento de potencia
@@ -6538,7 +6538,7 @@ SkillParameter,1,PPCutRate,Velocidad de recuperacion de mascotas
 SkillParameter,1,HpHealRateSubPet,Recuperacion de HP
 SkillParameter,1,TamingMaster,Cuerpo a cuerpo/a distancia/poder tecnico
 SkillParameter,1,TamingDexRate,Destreza
-SkillParameter,1,TamingHpRate,HP max.
+SkillParameter,1,TamingHpRate,CV max.
 SkillParameter,1,TamingPpRate,PP max.
 SkillParameter,1,Border,HP de activacion
 SkillParameter,1,EffectTime,Duracion del efecto
@@ -6559,7 +6559,7 @@ SkillParameter,1,ScaleX,Tasa de expansion
 SkillParameter,1,RotationSpeedRate,Tasa de disminucion de la velocidad de rotacion
 SkillParameter,1,AISBlasterspeed,Tasa de aumento de velocidad de lanzamiento
 SkillParameter,1,AISRespawn,Tiempo de avivamiento
-SkillParameter,1,AISResistdown,Tasa de daйo
+SkillParameter,1,AISResistdown,Tasa de daio
 SkillParameter,1,ResistBurn,Resistencia a las quemaduras
 SkillParameter,1,ResistFreeze,Resistencia a la congelacion
 SkillParameter,1,ResistShock,Resistencia a los golpes
@@ -6578,7 +6578,7 @@ SkillParameter,1,LNWU_Rate,Porcentaje de eficacia
 SkillParameter,1,PpActionRateWideSupport,Costo de PP
 SkillParameter,1,Count,Numero de veces
 SkillParameter,1,Criticalpercentage,Tasa critica
-SkillParameter,1,ScaleZ,Rango de ataque
+SkillParameter,1,ScaleZ,rango de ataque
 SkillParameter,1,AtomizerSpeedRate,Velocidad de utilizacion
 SkillParameter,1,CombatDoubleCount,Contar
 SkillParameter,1,HitGpWpnmanRate,Tasa de aumento del indicador de enfoque
@@ -6591,7 +6591,7 @@ SkillParameter,1,IronWillDecayRate,Atenuacion de activacion
 SkillParameter,1,IronWillRateMin,Tasa minima de activacion
 SkillParameter,1,StrikeMagAtpMakingUniform,Tasa de conversion de poder cuerpo a cuerpo
 SkillParameter,1,FirearmMagAtpMakingUniform,Tasa de conversion de energia a distancia
-SkillParameter,1,TechnicMagAtpMakingUniform,Technique Power Conversion Rate
+SkillParameter,1,TechnicMagAtpMakingUniform,Tecnica Tasa de conversion de energia
 SkillParameter,1,GpGainPerSeconds,Explosion de enfoque corto
 SkillParameter,1,IntensiveAdvAtpRate,Tasa de aumento de aumento H
 SkillParameter,1,NeedLevelUpPoint,Puntos requeridos
@@ -6599,11 +6599,11 @@ SkillParameter,1,ChargeTimeRate,Cambio porcentual de carga
 SkillParameter,1,InvokeTime,Tiempo de activacion
 SkillParameter,1,Vitality,Resistencia
 SkillParameter,1,AliveTime,Tiempo de supervivencia
-SkillParameter,1,DamageReductionRatePT2,Grupo de dos jugadores
+SkillParameter,1,DamageReductionRatePT2,grupo de dos jugadores
 SkillParameter,1,DamageReductionRatePT3,Grupo de tres jugadores
 SkillParameter,1,DamageReductionRatePT4,Grupo de cuatro jugadores
-SkillParameter,1,HighTimeRimit,Daйo permitido
-SkillParameter,1,PpHealRateMove,Tasa de aumento de PP
+SkillParameter,1,HighTimeRimit,Daeo permitido
+SkillParameter,1,PpHealRateMove,Tasa de aumento del PP
 SkillParameter,1,PpHealRateNoMove,Tasa de aumento de PP estacionario
 SkillParameter,1,HpGain,Recuperacion de HP
 SkillParameter,1,HpGainMax,Maximo de recuperacion de HP
@@ -6614,7 +6614,7 @@ SkillParameter,1,PPConversionRate,Conversion de potencia
 SkillParameter,1,CriticalConversionRate,Conversion de tasa de activacion
 SkillParameter,1,CriticalConversionRateMax,Tasa de activacion maxima
 SkillParameter,1,CriticalAtpRate,Conversion de potencia
-SkillParameter,1,CriticalAtpRateMax,Maximo de aumento de potencia
+SkillParameter,1,CriticalAtpRateMax,Maximo aumento de potencia
 SkillParameter,1,AtpRateBoss,Daйo infligido al jefe
 SkillParameter,1,AtpRateShield,Daйo de escudo infligido
 SkillParameter,1,DamageReductionRateHate,Efecto de reduccion del defensor
@@ -6776,12 +6776,12 @@ Macro,0,GroupChatDenyCheckBox,グループの招待を拒否する
 Macro,0,GroupChatDenyArticle,チェックすると、グループに誘われなくなります。
 Macro,0,GroupChatNotUseArea,このエリアでは、グループチャットをご利用いただけません。
 Macro,1,MenuButtonShortcut,Atajos de chat
-Macro,1,MenuButtonAuto,Chat automatico
+Macro,1,MenuButtonAuto,chat automatico
 Macro,1,MenuButtonBack,Atras
-Macro,1,MenuButtonGroupChat,Chat grupal
+Macro,1,MenuButtonGroupChat,chat grupal
 Macro,1,MenuButtonDenySettings,Configuracion de rechazo de invitacion de grupo
 Macro,1,MenuBuringTransmission,Envio...
-Macro,1,TitleAutoWordEdit,TEXT ENTERED
+Macro,1,TitleAutoWordEdit,TEXTO INTRODUCIDO
 Macro,1,PictSignCircle,<pict Sign_CIRCLE> Simple Input
 Macro,1,PictSignTriangle,<pict Sign_TRIANGLE> Detailed Input
 Macro,1,ShortcutWordEdit,Editar atajos de chat
@@ -6818,19 +6818,19 @@ Macro,1,AutoWordTypeUseHealItem,Articulo de recuperacion utilizado
 Macro,1,AutoWordTypeGetRareItemSelf,Objeto raro adquirido por el personaje del jugador
 Macro,1,AutoWordTypeGetRareItemFriend,Objeto raro adquirido por un amigo
 Macro,1,AutoWordTypeDamageSmall,Daйos menores
-Macro,1,AutoWordTypeDamageMiddle,Daйo moderado
+Macro,1,AutoWordTypeDamageMiddle,Daeo moderado
 Macro,1,AutoWordTypeDamageLarge,Daйos mayores
-Macro,1,AutoWordTypeAttack,Ataque normal
+Macro,1,AutoWordTypeAttack,ataque normal
 Macro,1,AutoWordTypePhotonArts,Arte fotonico activado
 Macro,1,AutoWordTypeJustGuard,Exito de la guardia perfecta
 Macro,1,AutoWordTypeAvoid,Accion de esquivar
 Macro,1,AutoWordTypeSkill,Habilidad activada
-Macro,1,AutoWordTypeGetKey,Llave recogida
+Macro,1,AutoWordTypeGetKey,llave recogida
 Macro,1,AutoWordTypeReleaseLock,Cerradura abierta
 Macro,1,AutoWordTypeFallTrap,Atrapado en la trampa
 Macro,1,AutoWordTypeRescueTrapSelf,Rescatado de la trampa
 Macro,1,AutoWordTypeRescueTrapFriend,Amigo rescatado de la trampa
-Macro,1,AutoWordTypeTechnique,Technique Activated
+Macro,1,AutoWordTypeTechnique,Tecnica activada
 Macro,1,AutoWordTypePhotonBlast,Explosion de fotones activada
 Macro,1,AutoWordTypeJoinParty,Se unio al grupo invitado a
 Macro,1,AutoWordTypeRideAIS,AIS abordado
@@ -6840,10 +6840,10 @@ Macro,1,ErrorTitle,ADQUISICION DE DATOS DE MENSAJES
 Macro,1,ErrorMessage,Failed to acquire data.<br>Please wait a while before opening the<br>window again.<br>[No. 1103]
 Macro,1,ShortcutWordEditDetail,Editando $(1) $(0)
 Macro,1,AutoWordEditDetail,Editando $(0) $(1)
-Macro,1,WinPoseTitle,SELECCIONAR POSE
-Macro,1,WinExpressionTitle,SELECCIONAR EXPRESION
+Macro,1,WinPoseTitle,POSTURA SELECCIONADORA
+Macro,1,WinExpressionTitle,EXPRESION SELECTORA
 Macro,1,WinTabPose,Tipo 1
-Macro,1,WinTabExpression,Tipo 2
+Macro,1,WinTabExpression,tipo 2
 Macro,1,WinTitlePose,ESTABLECER RENDIMIENTO DE VICTORIA. POSE
 Macro,1,WinTitleExpression,ESTABLECER RENDIMIENTO DE VICTORIA. EXPRESION
 Macro,1,WinButtonPose,Seleccionar postura
@@ -6859,12 +6859,12 @@ Macro,1,ShortcutWordName_Default,Atajos de chat $(0)
 Macro,1,GroupChatList,Lista de grupos
 Macro,1,GroupChatDenySettings,Ajustes
 Macro,1,GroupChatNumber,Numero aйadido
-Macro,1,GroupChatCreateNew,Crear grupo
+Macro,1,GroupChatCreateNew,crear grupo
 Macro,1,GroupChatNewNumber,Numero de invitaciones
-Macro,1,GroupChatNewTitle,CREAR GRUPO
+Macro,1,GroupChatNewTitle,GRUPO CREAR
 Macro,1,GroupChatName,Nombre del grupo
 Macro,1,GroupChatComment,Comentarios de grupo
-Macro,1,GroupChatYes,Invitar miembro
+Macro,1,GroupChatYes,invitar miembro
 Macro,1,GroupChatNo,Cancel
 Macro,1,GroupChatEditTitle,EDITAR AJUSTES DE GRUPO
 Macro,1,GroupChatEditName,Nombre del grupo
@@ -6872,7 +6872,7 @@ Macro,1,GroupChatEditComment,Comentarios de grupo
 Macro,1,GroupChatEditYes,Aplicar cambios
 Macro,1,GroupChatEditNo,Cancel
 Macro,1,GroupChatEntertainTitle,INVITA A $(0)
-Macro,1,GroupChatEntertainYes,Invitar
+Macro,1,GroupChatEntertainYes,invitar
 Macro,1,GroupChatEntertainNo,Cancel
 Macro,1,GroupChatEntertainSend,Numero de invitaciones enviadas
 Macro,1,GroupChatEntertainNumber,$(0)
@@ -6903,7 +6903,7 @@ QuestSimpleInfo,1,QuestTarget,Objetivo de la mision
 QuestSimpleInfo,1,Trial,"Prueba de emergencia: ""$(0)"""
 QuestSimpleInfo,1,Rank,($(0))
 QuestSimpleInfo,1,Count,($(1): +$(0))
-QuestSimpleInfo,1,NowCount,(Actual: +$(0))
+QuestSimpleInfo,1,NowCount,(Real: +$(0))
 QuestSimpleInfo,1,FloorCount,(Etapa alcanzada: $(0))
 QuestSimpleInfo,1,FloorOrder,Ordenes de etapa
 QuestSimpleInfo,1,NumberParticipants,Numero de participantes de la mision
@@ -6935,7 +6935,7 @@ Destination,1,NoEntry,Inaccesible
 Destination,1,NextArea,A la siguiente area
 Destination,1,Campship,Al barco de entrada
 Destination,1,BonusMap,???
-Destination,1,Amusement,Al Casino
+Destination,1,Amusement,Casino
 Destination,1,BridgeWrongWay,Entrada Prohibida
 Destination,1,Bridge,al puente
 Destination,1,ShopAndGate,A otras areas
@@ -6946,7 +6946,7 @@ Destination,1,AmAndCafe,A otras areas
 Destination,1,PokaLobby,Regresa al Battle Lobby sin mas coincidencias.
 Destination,1,ReturnWithoutCampship,Devolver
 Destination,1,EvacuationDummy,Teletransportador de evacuacion
-Destination,1,Block,Transporte de bloques
+Destination,1,Block,transporte de bloques
 Destination,1,ShopArea,A la plaza comercial
 Destination,1,GateArea,Al area de la puerta
 PSE,0,PSE_Messeage,PSEバーストチャンス！！
@@ -6958,7 +6958,7 @@ PlayerList,0,Mainclass,メインクラス
 PlayerList,1,Title,PERSONAJES CERCANOS
 PlayerList,1,Back,Atras
 PlayerList,1,Charaname,Nombre del personaje
-PlayerList,1,Mainclass,Clase principal
+PlayerList,1,Mainclass,clase principal
 ClassCounter,0,Title,クラスカウンター
 ClassCounter,0,MainClass,メインクラス
 ClassCounter,0,SubClass,サブクラス
@@ -7054,7 +7054,7 @@ ClassCounter,0,AutoSkillTreeSuccess,オススメスキルを上書きしまし�
 ClassCounter,0,AutoSkillTreeFailed,オススメスキルの上書きに失敗しました。
 ClassCounter,0,SkillTreeName,$(0)($(1))
 ClassCounter,1,Title,CONTADOR DE CLASES
-ClassCounter,1,MainClass,Clase principal
+ClassCounter,1,MainClass,clase principal
 ClassCounter,1,SubClass,Subclase
 ClassCounter,1,Class,Clase
 ClassCounter,1,MainClassSelect,Seleccionar clase principal
@@ -7104,7 +7104,7 @@ ClassCounter,1,SkillTreeApplyFailed,No se pudo configurar el arbol de habilidade
 ClassCounter,1,SkillTreeApplyFailedCurrent,Este arbol de habilidades ya esta configurado.
 ClassCounter,1,SkillTreeApplyFailedQuest,You can't change your class while<br>undertaking a quest.
 ClassCounter,1,SkillTreeResetAsk,¿Estas seguro de que quieres intercambiar este arbol de habilidades?
-ClassCounter,1,SkillTreeResetSuccess,Arbol de habilidades intercambiado.
+ClassCounter,1,SkillTreeResetSuccess,Arbol de habilidades intercambiadas.
 ClassCounter,1,SkillTreeResetFailed,No se pudo intercambiar el arbol de habilidades.
 ClassCounter,1,SkillTreeResetFailedCurrent,No puedes intercambiar un arbol de habilidades que este configurado actualmente.
 ClassCounter,1,SkillTreeResetAllAsk,"s,<br>allowing you to reassign your Skill Points.<br><br>Are you sure you wish to proceed?"
@@ -7132,7 +7132,7 @@ ClassCounter,1,ClassCounterExplain,<c f0df60>You can change classes and learn Cl
 ClassCounter,1,SkillTreeAddNum,Numero de arboles de habilidades que se pueden agregar
 ClassCounter,1,Check,Confirmar
 ClassCounter,1,SkillTreeInfoTitle,INFORMACION DEL ARBOL DE CLASES/HABILIDADES
-ClassCounter,1,SkillTreeTotal,Total de arboles de habilidades agregados
+ClassCounter,1,SkillTreeTotal,Total de arboles de habilidades agregadas
 ClassCounter,1,TreeListCaption,Arboles ($(0))
 ClassCounter,1,TreeListPoint,SP restantes
 ClassCounter,1,MoreDetails,Select <pict Sign_SELECT> for more details.
@@ -7180,7 +7180,7 @@ Library,0,NotFoundList_GatC,対象アイテムがありません
 Library,0,NotFoundList_GatF,対象アイテムがありません
 Library,0,NotFoundList_Common,対象アイテムがありません
 Library,1,LibraryMenu_Title,LISTA DE COMPENDIO
-Library,1,LibraryMenuType_Weapon,Compendio de armas
+Library,1,LibraryMenuType_Weapon,compendio de armas
 Library,1,LibraryMenuType_Unit,Compendio de la unidad
 Library,1,LibraryMenuType_Story,Resumen de la historia
 Library,1,LibraryMenuType_RoomGoods,-
@@ -7190,7 +7190,7 @@ Library,1,LibraryMenuType_SkitList,-
 Library,1,LibraryMenuType_TutorialList,-
 Library,1,LibraryMenuType_Enchant,-
 Library,1,LibraryMenuType_GatC,Compendio de cosecha
-Library,1,LibraryMenuType_GatF,Compendio de pesca
+Library,1,LibraryMenuType_GatF,compendio de pesca
 Library,1,SkitList_StoryEvent,Eventos de la historia
 Library,1,SkitList_CharacterEvent,Eventos de personajes
 Library,1,SkitList_MessagePack,modulo de datos
@@ -7245,10 +7245,10 @@ Tutorial,0,L_Category_7,マイルーム
 Tutorial,0,L_Category_8,コミュニケーション
 Tutorial,0,L_Category_9,チーム
 Tutorial,0,L_Category_10,AC関連
-Tutorial,1,L_Category_1,Batalla
+Tutorial,1,L_Category_1,batalla
 Tutorial,1,L_C_1_S_Category_1,Controles basicos
 Tutorial,1,L_C_1_S_C_1_Item_1,-
-Tutorial,1,L_C_1_S_Category_2,Cazador
+Tutorial,1,L_C_1_S_Category_2,cazador
 Tutorial,1,L_C_1_S_C_2_Item_1,-
 Tutorial,1,L_C_1_S_Category_3,Guardabosque
 Tutorial,1,L_C_1_S_C_3_Item_1,-
@@ -7256,13 +7256,13 @@ Tutorial,1,L_C_1_S_Category_4,Fuerza
 Tutorial,1,L_C_1_S_C_4_Item_1,-
 Tutorial,1,L_C_1_S_Category_5,Acciones de especies
 Tutorial,1,L_C_1_S_C_5_Item_1,-
-Tutorial,1,L_C_1_S_Category_6,Armas
+Tutorial,1,L_C_1_S_Category_6,armas
 Tutorial,1,L_C_1_S_C_6_Item_1,-
 Tutorial,1,L_C_1_S_Category_7,Revista
 Tutorial,1,L_C_1_S_C_7_Item_1,-
 Tutorial,1,L_C_1_S_Category_8,Crecimiento del personaje
 Tutorial,1,L_C_1_S_C_8_Item_1,-
-Tutorial,1,L_Category_2,Articulo
+Tutorial,1,L_Category_2,articulo
 Tutorial,1,L_C_2_S_Category_1,Habilidades del articulo
 Tutorial,1,L_C_2_S_C_1_Item_1,-
 Tutorial,1,L_C_2_S_Category_2,Crecimiento del articulo
@@ -7277,7 +7277,7 @@ Tutorial,1,L_Category_5,Menu principal
 Tutorial,1,L_Category_6,Tiendas
 Tutorial,1,L_Category_7,Cuartos personales
 Tutorial,1,L_Category_8,Comunicaciones
-Tutorial,1,L_Category_9,Alianza
+Tutorial,1,L_Category_9,alianza
 Tutorial,1,L_Category_10,ARCAS Efectivo
 Profile,0,ReadFormTitle,$(0)のアークスカード
 Profile,0,ReadBasicInfo,基本情報
@@ -7326,12 +7326,12 @@ Profile,0,KeyHelpXbox,<pict Alpha_LEFT><pict Alpha_RIGHT>でページ切替/<%Ca
 Profile,0,KeyHelpPS,<pict Sign_LEFT><pict Sign_RIGHT>でページ切替/<%Cancel>で戻る
 Profile,0,KeyHelpNumber,<pict Number_LEFT><pict Number_RIGHT>でページ切替/<%Cancel>で戻る
 Profile,0,ReadXboxGamersTag,Xbox Liveゲーマータグ
-Profile,1,ReadFormTitle,ID de ARKS de $(0)
+Profile,1,ReadFormTitle,ID de ARCAS de $(0)
 Profile,1,ReadBasicInfo,Informacion basica
 Profile,1,ReadPlayerName,Nombre de identificacion del jugador
 Profile,1,ReadPlayerID,ID del jugador
 Profile,1,ReadPSNOnlineID,"Identificacion en linea de ""PSN"""
-Profile,1,ReadCharaName,Caracter actual
+Profile,1,ReadCharaName,caracter real
 Profile,1,ReadGuildName,Tu Alianza
 Profile,1,ReadBirthday,Fecha de convertirse en ARKS
 Profile,1,ReadHobby,Intereses
@@ -7343,21 +7343,21 @@ Profile,1,MenuWishList,Lista de deseos
 Profile,1,MenuPresentList,Lista de regalos
 Profile,1,MenuOther,Configuracion de privacidad
 Profile,1,MenuPreview,Avance
-Profile,1,EditFormTitle,EDITAR ID DE ARCAS
+Profile,1,EditFormTitle,ID EDITAR DE ARCAS
 Profile,1,EditBirthday,Fecha de convertirse en ARKS
 Profile,1,EditHobby,Intereses
 Profile,1,EditComment,Comentarios
-Profile,1,EditVector,Symbol Art
+Profile,1,EditVector,Arte simbolico
 Profile,1,EditWishList,Lista de deseos
 Profile,1,EditPresentList,Lista de regalos
 Profile,1,EditOpenSetting,Configuracion de privacidad
 Profile,1,EditVectorSet,Agregar arte simbolico
 Profile,1,EditVectorClear,Eliminar el arte del simbolo
 Profile,1,OpenAll,Publico
-Profile,1,OpenFriend,Solo amigos
+Profile,1,OpenFriend,amigos solos
 Profile,1,OpenGuild,Solo miembros de la Alianza
 Profile,1,OpenFriendGuild,Amigos y miembros de la alianza
-Profile,1,OpenNone,Hacer privado
+Profile,1,OpenNone,hacer privado
 Profile,1,ErrorMessageTitle,ID DE ARCAS
 Profile,1,ErrorMessageNotFound,No hay jugadores con ese ARKS ID.
 Profile,1,ErrorMessagePrivate,"That player's ARKS ID has been<br>set to ""Private."""
@@ -7444,16 +7444,16 @@ Trade,0,PictSignRight,<pict Sign_RIGHT>移動
 Trade,0,PictSignLeft,<pict Sign_LEFT>移動
 Trade,0,WaitDecideItemMessage,アイテム決定待機中
 Trade,1,TradingItemTag,Articulos para intercambiar
-Trade,1,TradingMesetaTag,Meseta para comerciar
+Trade,1,TradingMesetaTag,Mesa para comerciar
 Trade,1,CharacterMesetaTag,Sus tenencias actuales:
 Trade,1,DecideItemButtonText,Confirmar articulos
 Trade,1,DecideTradeButtonText,Confirmar comercio
 Trade,1,OpponentTradingItemTag,Articulos para recibir
-Trade,1,OpponentTradingMesetaTag,Meseta para recibir
+Trade,1,OpponentTradingMesetaTag,Mesa para recibir
 Trade,1,OfferingMesetaValueTag,Precio ofrecido:
 Trade,1,WaitOpponentDecideItemMessage,Esperando a que otro jugador decida...
 Trade,1,SelectItemMessage,Seleccionando elementos...
-Trade,1,OfferTradeTitle,TRADE REQUEST SENT
+Trade,1,OfferTradeTitle,SOLICITUD COMERCIAL ENVIADA
 Trade,1,OfferTradeMessage,You sent a trade request.<br>Waiting for the other player's response...
 Trade,1,CantTradeMsg,No puedes operar con $(0).
 Trade,1,CantTradeByRangeMsg,El jugador que seleccionaste esta fuera del rango comercial.
@@ -7465,9 +7465,9 @@ Trade,1,CanceledOfferMsg,$(0) has canceled their<br>Trade Request.
 Trade,1,AnswerTradeOfferError,Unable to start trading as the Trade Request<br>has been canceled.
 Trade,1,AskStartTradeTitle,CONFIRMAR EL INICIO DEL COMERCIO
 Trade,1,AskStartTradeMsg,¿Esta seguro de que desea operar con $(0)?
-Trade,1,RejectOfferMsg,Te negaste a operar con $(0).
+Trade,1,RejectOfferMsg,Te negare a operar con $(0).
 Trade,1,Reject2ndPassOfferMsg,Trade with $(0) was cancelled as authentication<br>with Item Trading Password hasn't been performed.
-Trade,1,RejectedOfferMsg,$(0) se nego a negociar.
+Trade,1,RejectedOfferMsg,$(0) se negocia a negociar.
 Trade,1,Rejected2ndPassOfferMsg,The trade was cancelled as $(0) hasn't yet performed <br>authentication with the Item Trading Password.
 Trade,1,BreakOfferMsg,La solicitud comercial presentada por $(0) fue anulada.
 Trade,1,BrokenOfferMsg,La solicitud comercial enviada a $(0) fue anulada.
@@ -7499,13 +7499,13 @@ Trade,1,WaitOpponentDecideItemGuide_v,<c f0df60>Waiting for $(0) to confirm thei
 Trade,1,UrgeToApproveTradeGuide_v,"<c f0df60>The terms of the trade have been finalized. If there are no problems, press [Confirm Trade].<c>"
 Trade,1,WaitOpponentApproveTradeGuide_v,<c f0df60>Waiting for $(0) to confirm the trade.<c>
 Trade,1,DropOnInventory,Cancel
-Trade,1,MenuObject_Display,Oferta para negociar
+Trade,1,MenuObject_Display,oferta para negociar
 Trade,1,MenuObject_Withdraw,Retirarse del comercio
 Trade,1,MenuObject_ChangeNumber,Cambiar cantidad ofrecida para negociar
-Trade,1,InputStackItemNumberTitle,ESPECIFICAR CANTIDAD PARA COMERCIAR
+Trade,1,InputStackItemNumberTitle,CANTIDAD ESPECIFICAR PARA COMERCIAR
 Trade,1,InputStackItemNumberMsg,¿Cuantos quieres intercambiar?
-Trade,1,Title,TRADE ITEMS
-Trade,1,TradeTitle,TRADE
+Trade,1,Title,ARTICULOS COMERCIALES
+Trade,1,TradeTitle,COMERCIO
 Trade,1,EditMesetaTitle,Especificar meseta
 Trade,1,EditMesetaMessage,Ingresa la cantidad de meseta que deseas negociar.
 Trade,1,ItemEnableSelect,Selectable
@@ -7700,16 +7700,16 @@ Visiphon,1,VisiphonFullTitleHint_v,"<c f0df61>Allows you to search for players, 
 Visiphon,1,VisiphonMenu_Search,Busqueda de ARCAS
 Visiphon,1,VisiphonMenu_Shop,Tienda personal
 Visiphon,1,VisiphonMenu_ItemCode,Codigos de articulo
-Visiphon,1,VisiphonMenu_Friend,Avatares de amigos
-Visiphon,1,VisiphonMenu_Library,Lista de compendio
+Visiphon,1,VisiphonMenu_Friend,avatares de amigos
+Visiphon,1,VisiphonMenu_Library,Lista de compendios
 Visiphon,1,VisiphonMenu_Ranking,Clasificaciones
 Visiphon,1,VisiphonMenu_PlayLog,Logros de juego
 Visiphon,1,VisiphonMenu_LoginStamp,Sellos de inicio de sesion
 Visiphon,1,VisiphonMenu_ProfileEdit,Edite su ID de ARKS
 Visiphon,1,VisiphonMenu_Campaign,Recibir articulos de campaйa
-Visiphon,1,VisiphonMenu_CharaSave,Guardar datos de retrato
+Visiphon,1,VisiphonMenu_CharaSave,guardar datos de retrato
 Visiphon,1,VisiphonMenu_CharaSaveSelect,Seleccionar personaje
-Visiphon,1,VisiphonMenu_CharaSaveUseChara,Caracter actual
+Visiphon,1,VisiphonMenu_CharaSaveUseChara,caracter real
 Visiphon,1,VisiphonMenu_CharaSaveSP,Tropas auxiliares
 Visiphon,1,Exit,Atras
 Visiphon,1,SearchTitle,BUSQUEDA DE ARCAS
@@ -7745,7 +7745,7 @@ Visiphon,1,GuildSearch_GuildName,Nombre de la alianza
 Visiphon,1,GuildSearch_GuildLevel,-
 Visiphon,1,GuildSearch_Comment,Comentarios
 Visiphon,1,GuildSearchResultTitle,RESULTADOS DE LA BUSQUEDA DE LA ALIANZA
-Visiphon,1,GuildSearchResult_Limit,Numero de filtros
+Visiphon,1,GuildSearchResult_Limit,Numerosos filtros
 Visiphon,1,GuildSearchResult_Failure,No se pueden encontrar alianzas relevantes.
 Visiphon,1,GuildSearchStatus_Title,DETALLES DE LA ALIANZA
 Visiphon,1,GuildSearchStatus_Web,Sitio web de la Alianza
@@ -7810,7 +7810,7 @@ Visiphon,1,RecruitTeamInfo,Informacion de la Alianza
 Visiphon,1,RecruitTeamFlag,Bandera de la Alianza
 Visiphon,1,RecruitMasterComment,Comentarios del lider de la alianza
 Visiphon,1,RecruitMemberInfo,Informacion de miembros de la alianza
-Visiphon,1,RecruitFriend,Numero de amigos
+Visiphon,1,RecruitFriend,numero de amigos
 Visiphon,1,RecruitBlackList,Numero de jugadores bloqueados
 Visiphon,1,RecruitLevel,Nivel $(0)
 Visiphon,1,RecruitNumber,$(0)
@@ -7953,7 +7953,7 @@ FriendPartner,1,Title,MENU DE AVATAR DE AMIGO
 FriendPartner,1,Hint,<c f0df60>Manage Friend Avatars.<c>
 FriendPartner,1,FP_Entry,Agregar avatar de amigo
 FriendPartner,1,FP_List,Verificar avatares de amigos
-FriendPartner,1,FP_Delete,Eliminar avatar de amigo
+FriendPartner,1,FP_Delete,eliminar avatar de amigo
 FriendPartner,1,FP_EntryHint,<c f0df60>The current character will be added as a Friend Avatar. Alliance Accessories won't be shown.<c>
 FriendPartner,1,FP_ListHint,<c f0df60>View information on currently added Friend Avatars.<c>
 FriendPartner,1,FP_DeleteHint,<c f0df60>Remove the Friend Avatar.<c>
@@ -8091,7 +8091,7 @@ Ranking,1,RankingMenuWeekly01,Clasificacion de contenedores raros abiertos
 Ranking,1,RankingMenuWeekly02,Clasificacion de visitantes de alojamientos personales
 Ranking,1,RankingMenuWeekly03,Clasificaciones contrarreloj [Grupo]
 Ranking,1,RankingMenuWeekly04,Bloques generales
-Ranking,1,RankingMenuWeekly05,Bloques exclusivos
+Ranking,1,RankingMenuWeekly05,bloques exclusivos
 Ranking,1,RankingMenuWeekly06,Clasificaciones de contrarreloj [Solo]
 Ranking,1,RankinLabelWeekly01,Clasificacion de contenedores raros abiertos
 Ranking,1,RankinLabelWeekly02,Clasificacion de visitantes de alojamientos personales
@@ -8110,17 +8110,17 @@ Ranking,1,RankingText03,Periodo de clasificacion
 Ranking,1,RankingText04,Clasificaciones
 Ranking,1,RankingText05,Nombre del personaje / Nombre de ID del jugador
 Ranking,1,RankingText06,Resultados
-Ranking,1,RankingText07,Tu rango
+Ranking,1,RankingText07,tu rango
 Ranking,1,RankingText07_SeasonEvent,Rango actual
 Ranking,1,RankingText08,Lista de clasificacion
 Ranking,1,RankingText09,El rango de tu alianza
 Ranking,1,RankingText10,Nombre de la alianza
 Ranking,1,RankingText11,Nombre del personaje
 Ranking,1,RankingText12,Nombre de identificacion del jugador
-Ranking,1,RankingTab01,En general
-Ranking,1,RankingTab02,Solo amigos
+Ranking,1,RankingTab01,en general
+Ranking,1,RankingTab02,amigos solos
 Ranking,1,RankingTab03,Dentro de la Alianza
-Ranking,1,RankingTab04,En general
+Ranking,1,RankingTab04,en general
 Ranking,1,RankingTab05,Tu Alianza
 Ranking,1,RankingTab06,A tu alrededor
 Ranking,1,RankingPopup,$(0) Veces Hace
@@ -8142,8 +8142,8 @@ Ranking,1,RankingError_Title,AVISO
 Ranking,1,RankingError_Msg,Rankings are currently temporarily<br>unavailable.
 Ranking,1,ArksRanking_Title,LIGA DE ARCAS
 Ranking,1,ArksRanking_Rank,Posicion
-Ranking,1,ArksRanking_Reward,Premio
-Ranking,1,ArksRanking_TopTitle,MENU DE LA LIGA ARKS
+Ranking,1,ArksRanking_Reward,premio
+Ranking,1,ArksRanking_TopTitle,MENU DE LA LIGA ARCAS
 Ranking,1,ArksRanking_New,Informacion mas reciente de la liga
 Ranking,1,ArksRanking_History,Historia de la Liga ARKS
 Ranking,1,ArksRanking_Back,Atras
@@ -8183,13 +8183,13 @@ Ranking,1,ArksRankingText01,Tiempo
 Ranking,1,ArksRankingText02,Posicion
 Ranking,1,ArksRankingText03,Nombre del personaje / Nombre de ID del jugador
 Ranking,1,ArksRankingText04,Resultados
-Ranking,1,ArksRankingText05,Tu rango
+Ranking,1,ArksRankingText05,tu rango
 Ranking,1,ArksRankingText06,Lista de posiciones
 Ranking,1,ArksRanking_Float,$(0).$(1)
 Ranking,1,ClearRank_S,S
 Ranking,1,ClearRank_A,A
 Ranking,1,ClearRank_B,B
-Ranking,1,ClearRank_C,do
+Ranking,1,ClearRank_C,hacer
 GMmessage,0,Gmmessage_Title,運営からのお知らせ
 GMmessage,0,Gmmessage_AlertTitle,運営からの警告
 GMmessage,1,Gmmessage_Title,AVISO DEL EQUIPO DE DESARROLLO
@@ -8434,9 +8434,9 @@ Synchronize,0,MEDMultiBossGotoExc,突入準備開始。一定時間内に揚陸�
 Synchronize,1,SynchronizeTitle,MIEMBROS DEL PARTIDO
 Synchronize,1,SynchronizeMyParty,tu fiesta
 Synchronize,1,SynchronizeMemberName,Nombres de miembros
-Synchronize,1,SynchronizeStageClear,Etapas completadas
+Synchronize,1,SynchronizeStageClear,etapas completadas
 Synchronize,1,SynchronizeQuestName,Nombre de la mision
-Synchronize,1,SynchronizeBossTitle,TELEPORTER
+Synchronize,1,SynchronizeBossTitle,TELEPORTADOR
 Synchronize,1,SynchronizeStartTitle,PUERTA DE SALIDA
 Synchronize,1,SynchronizeBossMessage,愀猀 琀栀攀 漀瀀琀椀漀渀㰀戀爀㸀漀昀 愀挀琀椀瘀愀琀椀渀最 琀栀攀 吀攀氀攀瀀漀爀琀攀爀 洀愀渀甀愀氀氀礀 猀漀 琀栀愀琀㰀戀爀㸀瀀愀爀琀礀 洀攀洀戀攀爀猀 愀氀爀攀愀搀礀 瀀爀攀猀攀渀琀 挀愀渀㰀戀爀㸀猀攀琀 漀甀琀 昀椀爀猀琀⸀
 Synchronize,1,SynchronizeBossMessage_ex,This Teleporter will activate automatically when all<br>party members are present.
@@ -8502,7 +8502,7 @@ Synchronize,1,AdvanceRiskTitle11,<c ffff00>[CONSUME ADVANCE CAPSULES]<c>
 Synchronize,1,AdvanceRiskDisp,Nivel de amenaza AQ: $(0)
 Synchronize,1,AdvanceRiskReset,Amenaza AQ Lv. El aumento se restablecio debido a que el metodo de pago cambio.
 Synchronize,1,BootupLandingCraft,ow>Note: You won't be able to cancel once you initiate pursuit.<c>
-Synchronize,1,PaidLeaderMessageWarning,desea continuar?
+Synchronize,1,PaidLeaderMessageWarning,¿Quieres continuar?
 Synchronize,1,PaidMemberMessage4,Etapa alcanzada: $(1)
 Synchronize,1,PaidMemberMessage4Warning,"ed stage, so, even if you <br>clear it, your [Stage Reached] status won't be updated.<c>"
 Synchronize,1,PaidMemberMessage4Warning2,猀琀愀最攀Ⰰ 猀漀Ⰰ 攀瘀攀渀 椀昀 㰀戀爀㸀礀漀甀 挀氀攀愀爀 椀琀Ⰰ 礀漀甀爀 嬀匀琀愀最攀 刀攀愀挀栀攀搀崀 猀琀愀琀甀猀 眀漀渀✀琀 戀攀 甀瀀搀愀琀攀搀⸀㰀挀㸀
@@ -8534,7 +8534,7 @@ Synchronize,1,BasnetRemove,Delay deployment
 Synchronize,1,BasnetStart,Desplegar
 Synchronize,1,BasnetFailed1,Unable to deploy.<br>At least $(0) members are required to be present in the room.
 Synchronize,1,BasnetFailed2,Unable to deploy.<br>One or more members are in the lobby.
-Synchronize,1,BasnetTitle,PROCEDER A LA BATALLA
+Synchronize,1,BasnetTitle,PROCEDIMIENTO A LA BATALLA
 Synchronize,1,RDMultiBossGoto,Barrera de transporte activada. Llegue al sitio de teletransportacion en los proximos 30 segundos.
 Synchronize,1,RDBootup,¿Activar la barrera al transporte?
 Synchronize,1,RDMultiBossMessage,be deployed in<br>30 seconds.<br>Would you like to stop the Transport Barrier?
@@ -8548,10 +8548,10 @@ Synchronize,1,OmegaInaccessible,The teleport ring is currently unavailable.<br><
 Synchronize,1,OmegaTransferStart,Anillo de teletransporte activado. Comenzando la teletransportacion.
 Synchronize,1,OmegaMultiBossWakeUp,¿Activar el anillo de teletransporte?
 Synchronize,1,OmegaMultiBossMessage,椀氀氀 戀攀 琀攀氀攀瀀漀爀琀攀搀 椀渀㰀戀爀㸀㌀　 猀攀挀漀渀搀猀⸀㰀戀爀㸀圀漀甀氀搀 礀漀甀 氀椀欀攀 琀漀 猀琀漀瀀 琀栀攀 琀攀氀攀瀀漀爀琀 爀椀渀最㼀
-Synchronize,1,OmegaMultiBossRemove,Deten el anillo de teletransporte.
+Synchronize,1,OmegaMultiBossRemove,Detenga el anillo de teletransporte.
 Synchronize,1,OmegaMultiBossGoto,Anillo de teletransporte activado. Llega al anillo de teletransporte en los proximos 30 segundos.
 Synchronize,1,OmegaMultiBossTrans,Cuenta regresiva completa. Comenzando la teletransportacion.
-Synchronize,1,OmegaBossTitle,TELEPORT RING
+Synchronize,1,OmegaBossTitle,ANILLO DE TELEPORTE
 Synchronize,1,OmegaMultiBossMessageExc,ll<br>be teleported after a set time.<br>Would you like to stop the teleport ring?
 Synchronize,1,OmegaMultiBossGotoExc,Anillo de teletransporte activado. Ingrese al anillo de teletransporte dentro del tiempo asignado.
 Synchronize,1,SelectDifficultyQuestLV,Please select a depth for your survey.<br>(Maximum Depth Reached: Depth Level $(0))
@@ -8628,8 +8628,8 @@ Synchronize,1,DBMultiBossGoto,Comenzaron los preparativos de combate. Reunanse e
 Synchronize,1,DBMultiBossGotoExc,Comenzaron los preparativos de combate. Reunanse en el area de transporte en los proximos 30 segundos.
 Synchronize,1,DBMultiBossStart,Preparativos completos. Comenzando la batalla.
 Synchronize,1,DBBootup,¿Comenzar la batalla con la Oscuridad Primordial?
-Synchronize,1,DBMultiBossMessage,爀㸀搀攀瀀氀漀礀攀搀 愀昀琀攀爀 愀 猀攀琀 琀椀洀攀⸀㰀戀爀㸀㰀戀爀㸀圀漀甀氀搀 礀漀甀 氀椀欀攀 琀漀 挀愀渀挀攀氀 瀀爀攀瀀愀爀愀琀椀漀渀㼀
-Synchronize,1,DBMultiBossMessageExc,爀㸀搀攀瀀氀漀礀攀搀 愀昀琀攀爀 愀 猀攀琀 琀椀洀攀⸀㰀戀爀㸀㰀戀爀㸀圀漀甀氀搀 礀漀甀 氀椀欀攀 琀漀 挀愀渀挀攀氀 瀀爀攀瀀愀爀愀琀椀漀渀㼀
+Synchronize,1,DBMultiBossMessage,爀㸀搀攀瀀氀漀礀攀搀 愀昀琀攀爀 愀 猀攀琀 琀椀洀攀⸀㰀戀爀㸀㰀戀爀㸀㼀㼀
+Synchronize,1,DBMultiBossMessageExc,爀㸀搀攀瀀氀漀礀攀搀 愀昀琀攀爀 愀 猀攀琀 琀椀洀攀⸀㰀戀爀㸀㰀戀爀㸀㼀㼀
 Synchronize,1,DBMultiBossRemove,Cancelar preparativos
 Synchronize,1,DFMultiBossStart,Comenzar la batalla
 Synchronize,1,DFBootup,眀㸀一漀琀攀㨀 夀漀甀 眀漀渀✀琀 戀攀 愀戀氀攀 琀漀 挀愀渀挀攀氀 漀渀挀攀 礀漀甀 椀渀椀琀椀愀琀攀 挀漀洀戀愀琀⸀㰀挀㸀
@@ -8648,7 +8648,7 @@ Synchronize,1,DFSoloMultiBossMessageExc,Commencing battle preparations.<br>The f
 Synchronize,1,DFSoloMultiBossRemove,Cancelar preparativos
 Synchronize,1,DBBootupSt,You hear someone calling you.<br>Move toward the voice?
 Synchronize,1,DBMultiBossStartSt,Avanza hacia la voz.
-Synchronize,1,DBMultiBossRemoveSt,Retiro
+Synchronize,1,DBMultiBossRemoveSt,retiro
 Synchronize,1,DBMultiBossMessageStExc,¿Retiro?
 Synchronize,1,DBMultiBossGotoStExc,Espere un momento.
 Synchronize,1,MEDMultiBossMessageExc,battle after a set time.<br><br>Would you like to stop the strike preparations?
@@ -8739,13 +8739,13 @@ TeamBoost,0,TeamBoost_Error_DontHave,選択された支援フォトンは、現�
 TeamBoost,0,TeamBoost_Error_NotHappen,選択された支援フォトンは、現在発生していません。<br>発生中の支援フォトンをご確認ください。
 TeamBoost,0,TeamBoost_Error_Unexpected,問題が発生したため、<br>選択することができませんでした。<br>しばらく時間をおいてから、再度選択してください。<br><br>[No.1051]
 TeamBoost,0,TeamBoost_end,支援フォトン効果が切れました。
-TeamBoost,1,TeamBoost_MainForm_Title,ARBOL DE FOTONES
+TeamBoost,1,TeamBoost_MainForm_Title,ARBOL DE FOTOS
 TeamBoost,1,TeamBoost_MainForm_Item_Effect,Recibir efecto fotonico
 TeamBoost,1,TeamBoost_MainForm_Item_Treat,Dar agua de fotones
 TeamBoost,1,TeamBoost_MainForm_Item_Grow,cultivar arbol
 TeamBoost,1,TeamBoost_MainForm_Item_GrowCheck,Comprobar el crecimiento del arbol
 TeamBoost,1,TeamBoost_MainForm_Item_EffectCheck,Comprobar efecto fotonico
-TeamBoost,1,TeamBoost_EffectForm_Title,SELECCIONAR EFECTO
+TeamBoost,1,TeamBoost_EffectForm_Title,EFECTO SELECCIONADOR
 TeamBoost,1,TeamBoost_EffectForm_Tag_Name,Nombre del efecto
 TeamBoost,1,TeamBoost_EffectForm_Tag_Effect,Efecto
 TeamBoost,1,TeamBoost_EffectForm_Percentage,$(0)%
@@ -8753,8 +8753,8 @@ TeamBoost,1,TeamBoost_EffectForm_Time,Aproximadamente $(0) hora(s)
 TeamBoost,1,TeamBoost_EffectForm_PercentageLV,Nivel $(1) (Inc. en $(0)%)
 TeamBoost,1,TeamBoost_EffectForm_TimeLV,Nivel $(1) (Aprox. $(0) hora(s))
 TeamBoost,1,TeamBoost_EffectForm_AttackUp,Atacar
-TeamBoost,1,TeamBoost_EffectForm_DefenceUp,Defensa arriba
-TeamBoost,1,TeamBoost_EffectForm_ExpUp,Aumento de EXP obtenida
+TeamBoost,1,TeamBoost_EffectForm_DefenceUp,defensa arriba
+TeamBoost,1,TeamBoost_EffectForm_ExpUp,Aumento de EXP obtenido
 TeamBoost,1,TeamBoost_EffectForm_MesetaUp,Meseta ganada arriba
 TeamBoost,1,TeamBoost_EffectForm_RareDropUp,Aumento de la tasa de aparicion de objetos raros
 TeamBoost,1,TeamBoost_EffectForm_BoostUp,Incidencia del efecto fotonico
@@ -8774,7 +8774,7 @@ TeamBoost,1,TeamBoost_TreatForm_Water_Medium_Message,倀栀漀琀漀渀 圀愀
 TeamBoost,1,TeamBoost_TreatForm_Water_Low_Message,of Photon Water.<br>(Current Alliance Points: $(0))<br>Are you sure you wish to proceed?
 TeamBoost,1,TeamBoost_TreatForm_Water_Min_Message,Photon Water.<br>(Current Alliance Points: $(0))<br>Are you sure you wish to proceed?
 TeamBoost,1,TeamBoost_TreatForm_Water_Message,Diste $(0) de Photon Water.
-TeamBoost,1,TeamBoost_GrowForm_Title,SELECCIONAR EFECTO DE CULTIVO
+TeamBoost,1,TeamBoost_GrowForm_Title,EFECTO SELECCIONADOR DE CULTIVO
 TeamBoost,1,TeamBoost_GrowForm_Tag_Name,Nombre del efecto
 TeamBoost,1,TeamBoost_GrowForm_Tag_Grow,Efecto arriba
 TeamBoost,1,TeamBoost_GrowForm_Tag_TeamPoint,Puntos de alianza consumidos
@@ -8913,12 +8913,12 @@ ClientOrder,1,SortAsAccept,Ordenes pendientes
 ClientOrder,1,SortAsNew,Pedidos aun no aceptados
 ClientOrder,1,SortAsClear,Ordenes reportadas
 ClientOrder,1,FilterAll,$(0). Mostrar todo
-ClientOrder,1,FilterForest,$(0). Bosque
+ClientOrder,1,FilterForest,$(0). bosques
 ClientOrder,1,FilterLaveCave,$(0). Cuevas Volcanicas
-ClientOrder,1,FilterDesert,$(0). Desierto
+ClientOrder,1,FilterDesert,$(0). desierto
 ClientOrder,1,FilterSnowMountain,$(0). Tundra
 ClientOrder,1,FilterTunnel,$(0). Pozos subterraneos
-ClientOrder,1,FilterFly,$(0). Continente flotante
+ClientOrder,1,FilterFly,$(0). continente flotante
 ClientOrder,1,FilterRuins,$(0). Restos
 ClientOrder,1,FilterDragon,$(0). Altar del Dragon
 ClientOrder,1,FilterCity,$(0). Area de la ciudad
@@ -8937,7 +8937,7 @@ ClientOrder,1,FilterUltForest,$(0). C. R. - Bosque
 ClientOrder,1,FilterUltTunnel,$(0).C. R. - Ejes subterraneos
 ClientOrder,1,FilterUltLavaCave,$(0). C. R. - Cuevas Volcanicas
 ClientOrder,1,FilterGlassland,$(0). llanuras
-ClientOrder,1,FilterWasteland,$(0). Yermo
+ClientOrder,1,FilterWasteland,$(0). yermo
 ClientOrder,1,FilterEnchantingForest,$(0). Bosques embrujados
 ClientOrder,1,FilterOmega,$(0). A. Dimension: Omega
 ClientOrder,1,OrderClear_Client,Ordenes de clientes
@@ -8953,7 +8953,7 @@ ClientOrder,1,List_Message_Connection,Espere un momento.
 ClientOrder,1,Chara_OrderNum,$(0) Aceptado
 ClientOrder,1,Chara_Accepted,-
 ClientOrder,1,PropertyTitle,DETALLES DEL PEDIDO DEL CLIENTE
-ClientOrder,1,Property_ClientName,Cliente
+ClientOrder,1,Property_ClientName,cliente
 ClientOrder,1,Property_OrderName,Titulo de la orden del cliente
 ClientOrder,1,Property_Reward,Recompensa por completar
 ClientOrder,1,Property_Explanation,Mensaje del cliente
@@ -8970,7 +8970,7 @@ ClientOrder,1,Property_QuesrClear,Numero de veces completado
 ClientOrder,1,Property_EnemyKill,Numero de muertes
 ClientOrder,1,Property_GuildExpLeast,$(0) mas Puntos Alliance disponibles esta semana.
 ClientOrder,1,Property_Info,The reward increases the more times <br>you successfully complete the order.
-ClientOrder,1,Property_Item,Articulo
+ClientOrder,1,Property_Item,articulo
 ClientOrder,1,Item_Detail_Title,DETALLES DEL ARTICULO
 ClientOrder,1,OrderSelectTitle_Daily,SELECCIONAR PEDIDO DIARIO
 ClientOrder,1,OrderNone_Daily,No hay pedidos diarios disponibles.
@@ -8979,7 +8979,7 @@ ClientOrder,1,Item_Deliver_Title,ENTREGAR ARTICULO
 ClientOrder,1,Item_Deliver,Enter the quantity of $(0) to hand over.<br>You can hand over up to $(1).
 ClientOrder,1,Item_Delivers,Enter the quantity of items.<br>You can hand over up to $(0).
 ClientOrder,1,Item_Deliver_Exp,Recompensa EXP: $(0)
-ClientOrder,1,Item_Deliver_Meseta,Recompensa Meseta: $(0)
+ClientOrder,1,Item_Deliver_Meseta,Meseta de recompensa: $(0)
 ClientOrder,1,item_Deliver_GuildExp,Recompensa de puntos de la Alianza: $(0)
 ClientOrder,1,item_Deliver_Layout,($(0) $(1))
 ClientOrder,1,OrderType_Daily,Pedidos diarios
@@ -8999,16 +8999,16 @@ ClientOrder,1,CurrentNum_Equal,(<c ff9c70>$(0)/$(1)<c>)
 ClientOrder,1,CurrentNum_Over,(<c ff0000>$(0)/$(1)<c>)
 ClientOrder,1,DictatePartner,Enviar en busqueda
 ClientOrder,1,OrderSelect,Seleccionar Orden
-ClientOrder,1,PartnerStart,Mandar
-ClientOrder,1,PartnerCancel,Suspender asistencia
+ClientOrder,1,PartnerStart,mandarin
+ClientOrder,1,PartnerCancel,Asistencia de tirantes
 ClientOrder,1,PartnerOrderCount,$(0) Busquedas realizadas
 ClientOrder,1,TitleOrder,PEDIDOS DE CLIENTES
 ClientOrder,1,ListAccept,Ordenes pendientes
 ClientOrder,1,ListRecommended,Ordenes recomendadas de misiones pendientes
 ClientOrder,1,ListAll,Los pedidos de los clientes de todos
 ClientOrder,1,ListPossible,Ordenes que se pueden aceptar en los campos de misiones en curso
-ClientOrder,1,Accept,Aceptar pedido
-ClientOrder,1,Select,Seleccionar Multiple
+ClientOrder,1,Accept,aceptar pedido
+ClientOrder,1,Select,Seleccionar Multiples
 ItemCode,0,Title,アイテムコード入力
 ItemCode,0,Decide,送信
 ItemCode,0,Message,yellow>※アイテムコードの入力を続けて<br>　10回間違えた場合、次回メンテナンスまで<br>　利用が制限されますので、ご注意ください。<c>
@@ -9028,7 +9028,7 @@ ItemCode,0,ErrorItemCodeMultiOverMessage,既に取得限定数を超えていま
 ItemCode,0,ErrorItemCodeSpentCIIDMessage,既にアイテムを入手しています。
 ItemCode,0,Hint,<c f0df60>16文字のアイテムコードを入力すると、アイテムを入手できます。<c>
 ItemCode,1,Title,INGRESE EL CODIGO DEL ARTICULO
-ItemCode,1,Decide,Enviar
+ItemCode,1,Decide,enviar
 ItemCode,1,Message,imes.<c>
 ItemCode,1,Message_v,te that your use will be restricted<br>until the next maintenance period if you<br>input an invalid item code ten times.<c>
 ItemCode,1,ItemGetMessage,Recibido $(0).
@@ -9059,7 +9059,7 @@ GoodJob,0,Sum,合計
 GoodJob,0,Plus,＋
 GoodJob,0,Cross,×
 GoodJob,1,SendTitle,ENVIAR FELICITACIONES
-GoodJob,1,Decide,Enviar
+GoodJob,1,Decide,enviar
 GoodJob,1,Message,first one <br>sent each day will earn you FUN.
 GoodJob,1,ReceiveTitle,Felicitaciones enviadas
 GoodJob,1,ReceiveMessage,¡Enviaste un Felicitaciones!
@@ -9361,12 +9361,12 @@ Treasure,1,Treasure_012,Permiso de exploracion de tundra
 Treasure,1,Treasure_013,Pozos subterraneos Expl. Permiso
 Treasure,1,Treasure_014,Continente flotante Expl. Permiso
 Treasure,1,Treasure_015,Permiso de exploracion de ruinas
-Treasure,1,Treasure_016,Expl. Ilimitada: Bosque
-Treasure,1,Treasure_017,Expl. Ilimitada: Volc. cuevas
+Treasure,1,Treasure_016,exp. Ilimitada: Bosque
+Treasure,1,Treasure_017,exp. Ilimitada: Volc. cuevas
 Treasure,1,Treasure_018,Expl. Ilimitada: Desierto
-Treasure,1,Treasure_019,Expl. Ilimitada: Tundra
-Treasure,1,Treasure_020,Expl. Ilimitada: Ejes U.
-Treasure,1,Treasure_021,Expl. Ilimitada: F. Continente
+Treasure,1,Treasure_019,exp. Ilimitada: Tundra
+Treasure,1,Treasure_020,exp. Ilimitada: Ejes U.
+Treasure,1,Treasure_021,exp. Ilimitada: F. Continente
 Treasure,1,Treasure_022,Expl. Ilimitada: Ruinas
 Treasure,1,Treasure_023,Permiso de dificultad dificil
 Treasure,1,Treasure_024,Permiso de dificultad muy dificil
@@ -9395,7 +9395,7 @@ Treasure,1,Treasure_046,Fragmento de arma - Consejo
 Treasure,1,Treasure_047,Arma no identificada
 Treasure,1,Treasure_048,Permiso de combate
 Treasure,1,Treasure_049,Permiso de artillero
-Treasure,1,Treasure_050,Permiso tecnico
+Treasure,1,Treasure_050,permiso tecnico
 Treasure,1,Treasure_051,"Certificado de inicio de sesion ""PC"""
 Treasure,1,Treasure_052,Tarjeta de socio de Jose
 Treasure,1,Treasure_053,Tarjeta de socio de Barbara
@@ -9403,19 +9403,19 @@ Treasure,1,Treasure_054,Tarjeta de socio de Lavere
 Treasure,1,Treasure_055,＊＊＊
 Treasure,1,Treasure_056,＊＊＊
 Treasure,1,Treasure_057,Permiso de exploracion del Altar del Dragon
-Treasure,1,Treasure_058,Expl. Ilimitada: Altar del Dragon
+Treasure,1,Treasure_058,exp. Ilimitada: Altar del Dragon
 Treasure,1,Treasure_059,Permiso de exploracion costera
-Treasure,1,Treasure_060,Expl. Ilimitada: Costa
+Treasure,1,Treasure_060,exp. Ilimitada: Costa
 Treasure,1,Treasure_061,Licencia Auxiliar
 Treasure,1,Treasure_062,Tarjeta de Socio de Pati
 Treasure,1,Treasure_063,Tarjeta de socio de Tia
 Treasure,1,Treasure_064,Tarjeta de socio de Azanami
 Treasure,1,Treasure_066,Permiso de exploracion minera
-Treasure,1,Treasure_067,Expl. Ilimitada: Mia
+Treasure,1,Treasure_067,exp. Ilimitada: Mia
 Treasure,1,Treasure_068,Tarjeta de socio de Lottie
 Treasure,1,Treasure_069,Tarjeta de socio de Rubert
 Treasure,1,Treasure_070,Permiso de exploracion del fondo marino
-Treasure,1,Treasure_071,Expl. Ilimitada: Fondo Marino
+Treasure,1,Treasure_071,exp. Ilimitada: Fondo Marino
 Treasure,1,Treasure_072,＊＊＊
 Treasure,1,Treasure_073,Tarjeta de socio de IO
 Treasure,1,Treasure_074,Tarjeta de socio de Theodor
@@ -9469,7 +9469,7 @@ Treasure,1,Treasure_122,Tarjeta de Socio de Emilia
 Treasure,1,Treasure_123,Tarjeta de socio de Vivienne
 Treasure,1,Treasure_124,Tarjeta de socio de Annette
 Treasure,1,Treasure_125,Piedra carmesi
-Treasure,1,Treasure_126,Piedra azur
+Treasure,1,Treasure_126,piedra azul
 Treasure,1,Treasure_127,Tarjeta de socio de Hitsugi
 Treasure,1,Treasure_128,Tarjeta de socio de Kohri
 Treasure,1,Treasure_129,Tarjeta de socio de Enga
@@ -10229,7 +10229,7 @@ EnterConfirm_SP_Message3 -,0,Esthetic_CampaignTitle,キャンペーン情報
 EnterConfirm_SP_Message3 -,0,Esthetic_CampaignText,アイテム消費不要で、何度でもエステを利用できます。<br><br>【消費不要となるアイテム】<br>・エステ無料パス<br>・エステ利用パス<br>・エステ利用パスS
 EnterConfirm_SP_Message3 -,1,Esthetic_Title,SALON
 EnterConfirm_SP_Message3 -,1,Esthetic_Enter,Enter Salon
-EnterConfirm_SP_Message3 -,1,Esthetic_Partner,Administrar auxiliares
+EnterConfirm_SP_Message3 -,1,Esthetic_Partner,auxiliares administrativos
 EnterConfirm_SP_Message3 -,1,Esthetic_Exit,Salir del salon
 EnterConfirm_SP_Message3 -,1,Esthetic_Help,arance and voice. A [Salon Pass] is required in order to use some features.<c>
 EnterConfirm_SP_Message3 -,1,EnterConfirmMessage,"ces inside the Salon are shown in Star Gems, <br>but you can also use a Salon Pass that was purchased <br>with ARKS Cash.<c>"
@@ -10239,11 +10239,11 @@ EnterConfirm_SP_Message3 -,1,EnterConfirmMessage4,㸀␀⠀㌀⤀
 EnterConfirm_SP_Message3 -,1,EnterConfirmMessage5,sure you want to enter the salon?<br><br>Character Creation: Time left to re-edit: $(0)
 EnterConfirm_SP_Message3 -,1,EnterConfirmMessage6,racter Creation: Time left to re-edit: $(0)<br>Color-Change Pass: Editable Items: $(1)<br>Min. Remaining Time: $(2)<br>$(3)
 EnterConfirm_SP_Message3 -,1,Esthetic_More,$(0) Minutos restantes
-EnterConfirm_SP_Message3 -,1,Esthetic_Less,Queda menos de 1 minuto
+EnterConfirm_SP_Message3 -,1,Esthetic_Less,Cada menos de 1 minuto
 EnterConfirm_SP_Message3 -,1,Esthetic_None,Se acabo el tiempo
 EnterConfirm_SP_Message3 -,1,Charamake_SP_Nothing,You can't use the Auxiliary Salon because you don't have<br>an Auxiliary.
 EnterConfirm_SP_Message3 -,1,Charamake_SP_Message,氀㰀戀爀㸀戀攀 瀀爀攀猀攀爀瘀攀搀 椀渀 琀栀攀 䰀漀最 圀椀渀搀漀眀⸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 瀀攀爀昀漀爀洀 愀渀 䄀甀砀椀氀椀愀爀礀 挀栀愀爀愀挀琀攀爀㰀戀爀㸀洀愀欀攀漀瘀攀爀㼀
-EnterConfirm_SP_Message3 -,1,Esthetic_SP_Title,GESTIONAR AUXILIARES
+EnterConfirm_SP_Message3 -,1,Esthetic_SP_Title,AUXILIARES GESTIONARIOS
 EnterConfirm_SP_Message3 -,1,Esthetic_SP_Help,earance and voice. A Salon Pass is required in order to use some features.<c>
 EnterConfirm_SP_Message3 -,1,Esthetic_SP_FormTitle,MENU DEL SALON
 EnterConfirm_SP_Message3 -,1,Esthetic_Menu_Enter,Enter Salon
@@ -10268,7 +10268,7 @@ EnterConfirm_SP_Message3 -,1,Charamake_NewCreate,"haracter basis.<c><br><br>To u
 EnterConfirm_SP_Message3 -,1,Charamake_Message,"haracter basis.<c><br><br>To use the Auxiliary you've created, log in as the same character next time you play."
 EnterConfirm_SP_Message3 -,1,Charamake_Num,$(0) izquierda
 EnterConfirm_SP_Message3 -,1,Charamake_UseInfo,挀琀攀爀⤀
-Charamake_BuyInfo -,1,Charamake_Result_OK,Auxiliar aйadido.
+Charamake_BuyInfo -,1,Charamake_Result_OK,Auxiliar aeadido.
 Charamake_BuyInfo -,1,Charamake_Result_NoFlag,You don't meet the conditions required<br>to acquire an Auxiliary yet.
 Charamake_BuyInfo -,1,Charamake_Result_NumMaxError,No puedes agregar ningun auxiliar adicional.
 Charamake_BuyInfo -,1,Charamake_Result_GetError,No se pudo adquirir un Pase Auxiliar Adicional.
@@ -10307,7 +10307,7 @@ Charamake_BuyInfo -,1,Esthetic_CampaignTime,Hasta $(0)
 Charamake_BuyInfo -,1,Esthetic_CampaignTitle,Informacion de la campaйa
 Charamake_BuyInfo -,1,Esthetic_CampaignText,You can use the Salon without spending any of the following items.<br><br>- Salon Free Pass<br>- Salon Pass<br>- Salon Pass S
 LoginToast,0,LoginCall,$(0)がログインしました。
-LoginToast,1,LoginCall,$(0) ha iniciado sesion.
+LoginToast,1,LoginCall,$(0) ha iniciado la sesion.
 License,0,Title,称号カウンター
 License,0,License,称号報酬受取
 License,0,LicenseDetail,称号詳細
@@ -10497,11 +10497,11 @@ License,0,RewardPlatformSwitch,・Nintendo Switch™
 License,0,RewardPlatformPS4,・PlayStation®4
 License,0,RewardPlatformVita,・PlayStation®Vita
 License,0,RewardBondPlatform,$(0)<br>$(1)
-License,1,Title,TITLE COUNTER
+License,1,Title,CONTADOR DE TITULOS
 License,1,License,Aceptar recompensa de titulo
 License,1,LicenseDetail,Detalles del titulo
 License,1,ItemDetail,Detalles del articulo
-License,1,Reward,Premio
+License,1,Reward,premio
 License,1,Condition,Condiciones de recepcion
 License,1,NoLicense,No se encontraron titulos.
 License,1,NoLicense2,No se encontraron titulos que lo califiquen para recibir una recompensa.
@@ -10536,7 +10536,7 @@ License,1,ActivityMsg,"¡Recompensa recibida por ""$(0)""!"
 License,1,Div,$(0)/$(1)
 License,1,Sub100,Adquirir titulo
 License,1,Sub101,Condiciones de experto
-License,1,Sub102,Supresion enemiga
+License,1,Sub102,enemigo de supresion
 License,1,Sub103,Nivel de clase
 License,1,Sub104,Nivel de mascota
 License,1,Sub105,Desarrollo de mascotas
@@ -10555,7 +10555,7 @@ License,1,Sub117,Licencias
 License,1,Sub118,Explosion oscura
 License,1,Sub119,Manual de ARCAS
 License,1,Sub195,Tiempo conectado a Net Cafe
-License,1,Sub196,Misiones ARKS
+License,1,Sub196,Misiones ARCAS
 License,1,Sub200,Articulos raros adquiridos
 License,1,Sub201,Espada +10 de mejora
 License,1,Sub202,Lanza cableada +10 de mejora
@@ -10568,7 +10568,7 @@ License,1,Sub208,Fusil de asalto +10 de mejora
 License,1,Sub209,Lanzador +10 de mejora
 License,1,Sub210,Ametralladoras gemelas +10 de mejora
 License,1,Sub211,Mejora de varilla +10
-License,1,Sub212,Talis +10 Enhancement
+License,1,Sub212,Mejora +10 de Talis
 License,1,Sub213,Varita +10 de mejora
 License,1,Sub214,7★ Arma +10 de mejora
 License,1,Sub215,8★ Arma +10 de mejora
@@ -10582,7 +10582,7 @@ License,1,Sub222,15★ Arma +10 de mejora
 License,1,Sub223,Mejora de unidad +10
 License,1,Sub224,Registro del compendio de armas
 License,1,Sub225,Registro del compendio de armas por clase
-License,1,Sub226,Armas
+License,1,Sub226,armas
 License,1,Sub227,Carpeta de coleccion
 License,1,Sub228,Mejora de la serie de armas especiales
 License,1,Sub300,Mision completada
@@ -10612,7 +10612,7 @@ License,1,Sub323,Misiones ridroides
 License,1,Sub324,Operaciones defensivas
 License,1,Sub325,Misiones definitivas
 License,1,Sub326,Misiones urgentes en solitario
-License,1,Sub327,Campo de batalla
+License,1,Sub327,campo de batalla
 License,1,Sub328,Misiones destructoras
 License,1,Sub329,Rally de impulso ARKS
 License,1,Sub330,Misiones de historia [Ep. 5]
@@ -10632,45 +10632,45 @@ License,1,Sub343,Dividir misiones
 License,1,Sub344,Supresion de jefes de mision de desafio
 License,1,Sub400,Tarjetas de socio adquiridas
 License,1,Sub401,Colaboracion con socios
-License,1,Sub500,Charlar
-License,1,Sub501,Alianza
-License,1,Sub502,Amigos
+License,1,Sub500,charlar
+License,1,Sub501,alianza
+License,1,Sub502,amigos
 License,1,Sub503,Tus monedas de casino
 License,1,Sub504,Horario de atencion del casino
 License,1,Sub505,Tirador mesetiano
 License,1,Sub506,Tragamonedas raposas
 License,1,Sub507,Lilipans escondidos
 License,1,Sub508,negroyack
-License,1,Sub509,ruleta lilli
+License,1,Sub509,lilli ruleta
 License,1,Sub510,Tragamonedas Arkuma
 License,1,Sub511,lookbook
 License,1,Sub600,Nivel de elaboracion
 License,1,Sub601,Extension de Equipo: Nivel
-License,1,Sub602,Technique Customization: Level
+License,1,Sub602,Personalizacion de la tecnica: Nivel
 License,1,Sub603,Instalacion de habilidad cronometrada: nivel
-License,1,Sub604,Personalizacion del arte fotonico: nivel
+License,1,Sub604,Personalizacion del arte fotografico: nivel
 License,1,Sub605,Extension del equipo: Aceptar
-License,1,Sub606,Technique Customization: Accept
+License,1,Sub606,Personalizacion de la tecnica: Aceptar
 License,1,Sub607,Instalacion de habilidad cronometrada: Aceptar
 License,1,Sub608,Personalizacion de Photon Art: Aceptar
 License,1,Sub609,Extension del equipo: Ejecutar
-License,1,Sub610,Technique Customization: Execute
+License,1,Sub610,Personalizacion de la tecnica: Ejecutar
 License,1,Sub611,Instalacion de habilidad cronometrada: ejecutar
 License,1,Sub612,Personalizacion del arte de fotones: ejecutar
 License,1,Sub613,Analisis de elementos: ejecutar
 License,1,Sub614,Ampliacion de equipos: gran exito
-License,1,Sub615,Technique Customization: Great Success
+License,1,Sub615,Personalizacion de tecnicas: gran exito
 License,1,Sub616,Instalacion de habilidades cronometradas: gran exito
 License,1,Sub617,Personalizacion del arte de fotones: gran exito
 License,1,Sub618,Analisis del articulo: gran exito
-License,1,Sub619,Energia artesanal
+License,1,Sub619,energia artesanal
 License,1,Sub620,Extension del equipo: Diaria
-License,1,Sub621,Technique Customization: Daily
+License,1,Sub621,Personalizacion de la tecnica: Diaria
 License,1,Sub622,Instalacion de habilidad cronometrada: diaria
-License,1,Sub623,Personalizacion del arte fotonico: diario
+License,1,Sub623,Personalizacion del arte fotografico: diario
 License,1,Sub700,Cosecha
 License,1,Sub701,Pesca
-License,1,Sub702,Fiebre acumulada
+License,1,Sub702,Fibra acumulada
 License,1,Sub703,Logros
 License,1,Sub704,Nivel de reunion
 License,1,Sub705,Cafe Franca
@@ -10704,7 +10704,7 @@ Estate,0,PotalUnit_Menu_Cancel,戻る
 Estate,1,PotalUnit_Title,SELECCIONAR DESTINO
 Estate,1,PotalUnit_Menu_MoveShopArea,Mudate a la Plaza Comercial
 Estate,1,PotalUnit_Menu_MoveGateArea,Mover al area de la puerta
-Estate,1,PotalUnit_Menu_MoveAmusement,Mover al Casino
+Estate,1,PotalUnit_Menu_MoveAmusement,Mudanzas al Casino
 Estate,1,PotalUnit_Menu_MoveBridgeArea,Mover al puente
 Estate,1,PotalUnit_Menu_MoveCafe,Mudate al Cafe de Franca
 Estate,1,PotalUnit_Menu_MoveMyRoom,Mudate a tu habitacion personal
@@ -11390,13 +11390,13 @@ PartnerStatus,1,PartnerTitle,INFORMACION AUXILIAR
 PartnerStatus,1,PartnerStatus,Estadisticas
 PartnerStatus,1,PartnerEquipInfo,Informacion del equipo
 PartnerStatus,1,PartnerClassInfo,Informacion de clase
-PartnerStatus,1,PartnerName,Nombre auxiliar
+PartnerStatus,1,PartnerName,nombre auxiliar
 PartnerStatus,1,MasterName,Nombre del controlador
-PartnerStatus,1,Race,Carrera
-PartnerStatus,1,Sex,Tipo
+PartnerStatus,1,Race,carreras
+PartnerStatus,1,Sex,tipo
 PartnerStatus,1,Personality,Disposicion
-PartnerStatus,1,GoodWill,Afinidad
-PartnerStatus,1,Class,Clase principal
+PartnerStatus,1,GoodWill,afinidad
+PartnerStatus,1,Class,clase principal
 PartnerStatus,1,ClassLevel,Lv.
 PartnerStatus,1,SubClass,Subclase
 PartnerStatus,1,ClassDetails,Detalles de la clase
@@ -11412,19 +11412,19 @@ PartnerStatus,1,UniqueState_Init,Estado predeterminado inicial
 PartnerStatus,1,UniqueState_MyRoom,Cuartos personales
 PartnerStatus,1,UniqueState_InOrder,Busqueda
 PartnerStatus,1,UniqueState_OrderResult,Informe disponible
-PartnerStatus,1,UniqueState_Wait,Lejos
+PartnerStatus,1,UniqueState_Wait,lejos
 PartnerStatus,1,UniqueState_Invalid,---
 PartnerStatus,1,UniqueState_Error,???
-PartnerStatus,1,PartnerPersonality1,Puro
-PartnerStatus,1,PartnerPersonality2,Agradable
-PartnerStatus,1,PartnerPersonality3,Timido
+PartnerStatus,1,PartnerPersonality1,puro
+PartnerStatus,1,PartnerPersonality2,agradable
+PartnerStatus,1,PartnerPersonality3,timido
 PartnerStatus,1,PartnerPersonality4,con la cabeza fria
 PartnerStatus,1,PartnerPersonality5,Travieso
-PartnerStatus,1,PartnerPersonality6,Amable
-PartnerStatus,1,PartnerPersonality7,Optimista
+PartnerStatus,1,PartnerPersonality6,amable
+PartnerStatus,1,PartnerPersonality7,optimista
 PartnerStatus,1,PartnerPersonality8,Torpe
-PartnerStatus,1,PartnerPersonality9,Infantil
-PartnerStatus,1,PartnerFriendLevel1,Nervioso
+PartnerStatus,1,PartnerPersonality9,infantil
+PartnerStatus,1,PartnerFriendLevel1,nervioso
 PartnerStatus,1,PartnerFriendLevel2,Confiable
 PartnerStatus,1,PartnerFriendLevel3,Reliable
 PartnerStatus,1,PartnerFriendLevel4,Cortes
@@ -11539,8 +11539,8 @@ Craft,1,ResultCondition2,Debes desbloquear los siguientes logros.
 Craft,1,ResultFavorLevelUp,Licencia adquirida en el siguiente nivel
 Craft,1,Level,Hasta el proximo nivel:
 Craft,1,ResultNum,Lograr. Desbloqueado:
-Craft,1,Guide,Proximo
-Craft,1,Guide_Vita,Proximo
+Craft,1,Guide,Del mes proximo
+Craft,1,Guide_Vita,Del mes proximo
 Craft,1,GuideButton,<%NextTabDetails>
 Craft,1,GuideButton_Vita,<pict Sign_TRIANGLE>
 Craft,1,CraftLevelUpText,Artesania nivelada
@@ -11665,7 +11665,7 @@ MySet,1,EquipError04,- Los articulos no estan en su inventario o almacenamiento.
 MySet,1,EquipError05,- Actualmente no hay mascotas disponibles.
 MySet,1,MySetResult02,Usaste [$(0)].
 MySet,1,MySetResult03,Modificado [$(0)].
-MySet,1,MySetResult04,Eliminaste [$(0)].
+MySet,1,MySetResult04,Elimina [$(0)].
 MySet,1,MySetResult05,Agregaste [$(0)].
 MySet,1,MySetResult06,Agregaste [$(0)].
 MySet,1,MySetResult07,Agregaste [$(0)].
@@ -11740,8 +11740,8 @@ PartyMaker,1,WindowTitle2,CONFIRMAR UNIRSE AL GRUPO
 PartyMaker,1,TitleText2,COMENTARIOS DE RECLUTAMIENTO
 PartyMaker,1,PurposeText0,No especificado
 PartyMaker,1,PurposeText1,Ganar EXP
-PartyMaker,1,PurposeText2,Suprimir jefes
-PartyMaker,1,PurposeText3,Targeting Rare Items
+PartyMaker,1,PurposeText2,suprimir jefes
+PartyMaker,1,PurposeText3,Apuntando a articulos raros
 PartyMaker,1,PurposeText4,Completar pedidos de clientes
 PartyMaker,1,PartyMakerError1,The Recruitment Comments include<br>one or more unsupported characters.
 PartyMaker,1,PartyMakerError2,Can't place a Party Beacon because the maximum<br>number of Party Beacons has already been placed.
@@ -11798,7 +11798,7 @@ MyFashion,1,MyFashionError03,No hay informacion de moda registrada.
 MyFashion,1,MyFashionError04,No se pudo cambiar la apariencia.
 MyFashion,1,MyFashionError05,No se puede ejecutar debido a que no se pudieron adquirir mas articulos de inventario.
 MyFashion,1,MyFashionError06,No se pudo ejecutar debido a un error.
-MyFashion,1,MyFashionError07,Se utilizo un atuendo del mismo tipo de tu inventario.
+MyFashion,1,MyFashionError07,Se utiliza un atuendo del mismo tipo de tu inventario.
 MyFashion,1,OtherFashion_Help_Message,Por favor haga una seleccion.
 MyFashion,1,OtherFashion_Help_Message_v,Por favor haga una seleccion.
 MyFashion,1,OtherFashion_Help_Title_v,MARCADORES
@@ -11980,13 +11980,13 @@ Gat,1,Menu_Open_Win_Close,Atras
 Gat,1,Menu_Open_Disable,昀 挀漀洀瀀氀攀琀攀 栀攀爀㰀戀爀㸀䌀氀椀攀渀琀 伀爀搀攀爀猀 琀漀 攀渀愀戀氀攀 甀猀攀 漀昀 琀栀攀㰀戀爀㸀䜀愀琀栀攀爀椀渀最 吀攀爀洀椀渀愀氀⸀
 Gat,1,Title_Gat_Simple_Status,RECOPILACION DE INFORMACION SIMPLIFICADA
 Gat,1,AchieveNoItem,Sin logros.
-Gat,1,Result_C_1,Reunido $(0).
+Gat,1,Result_C_1,Reunion $(0).
 Gat,1,Result_C_2,Reunidos $(0) × $(1).
 Gat,1,Result_F1,Caught $(0) × 1.<br><br>Size: $(1)
 Gat,1,Result_F2,Caught $(0) × 2.<br><br>Sizes: $(1) and $(2)
 Gat,1,Result_F3,"Caught $(0) × 3.<br><br>Sizes: $(1), $(2), and $(3)"
 Gat,1,Result_F4,"Caught $(0) × $(1).<br><br>Sizes: $(2), $(3), $(4)..."
-Gat,1,Result_F_Log,Tamaйo: $(0)
+Gat,1,Result_F_Log,Tamaeo: $(0)
 Gat,1,Result_C_1_ToDishWarehouse,You received $(0).<br>It was sent to Material Storage.
 Gat,1,Result_C_2_ToDishWarehouse,You received $(0) x$(1).<br>They were sent to Material Storage.
 Gat,1,Result_F1_ToDishWarehouse,You caught $(0) x1.<br>It was sent to Material Storage.<br><br>Size: $(1)
@@ -12001,7 +12001,7 @@ Gat,1,First_Point_End,椀渀 琀栀椀猀 猀瀀漀琀℀㰀戀爀㸀䄀 �
 Gat,1,Action_F_Toast,"When the circle <c ee8888>turns red<c>, <%Access>!"
 Gat,1,Infinite,Ilimitado
 Gat,1,Tool_Item_Count,$(0) × 1 (Tienes: $(1))
-Gat,1,Action_F_Normal,Pez
+Gat,1,Action_F_Normal,pez
 Gat,1,Action_F_Sp_1,buena pesca
 Gat,1,Action_F_Sp_2,Excelente pesca
 Gat,1,Action_F_Sp_3,Bonificacion de pesca
@@ -12015,9 +12015,9 @@ Gat,1,ItemName_F_Norml,Caйa de pescar
 Gat,1,ItemName_F_Sp_1,Buena caйa de pescar
 Gat,1,ItemName_F_Sp_2,Excelente caйa de pescar
 Gat,1,ItemName_F_Sp_3,Caйa de pescar Famitsu
-Gat,1,ItemName_F_Ac,[Excepcional] Caйa de pescar
+Gat,1,ItemName_F_Ac,[Excepcional] Caïa de pescar
 Gat,1,ItemName_F_Sp_4,Caйa de pescar de electrochoque
-Gat,1,ItemName_C_Norml,Piqueta
+Gat,1,ItemName_C_Norml,piqueta
 Gat,1,ItemName_C_Sp_1,Buen pico
 Gat,1,ItemName_C_Sp_2,Excelente pico
 Gat,1,ItemName_C_Sp_3,Pico Famitsu
@@ -12082,7 +12082,7 @@ SG,1,SGShopTitle,COMPRAR GEMAS ESTRELLA
 SG,1,SGShopGuide,"<c f0df60>Here, you can consume ARKS Cash to purchase Star Gems (SG). Select a product to purchase."
 SG,1,ListWindowTitle,LISTA DE PRODUCTOS
 SG,1,ListWindowACButton,Comprar aire acondicionado
-SG,1,ListWindowHistory,Historial de compras
+SG,1,ListWindowHistory,historia de compras
 SG,1,NameOfItem,<yellow>$(0)<c>
 SG,1,DescriptionOfItem,$(0)
 SG,1,MySGWindowTitle,TU SG
@@ -12116,7 +12116,7 @@ SG,1,DirectBuyMessage,㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀�
 SG,1,DirectBuyConfirmTitle,CONFIRMAR COMPRA DEL ARTICULO
 SG,1,DirectBuyConfirmMessage,?<br><br>$(1)<br>The discount rate given may vary depending on the number of purchases made.<br><br>(Your SG: $(0))
 SG,1,DirectBuyResultTitle,RESULTADOS DE LA COMPRA DEL ARTICULO
-SG,1,DirectBuySuccessTitle,COMPRA DEL ARTICULO COMPLETADA
+SG,1,DirectBuySuccessTitle,COMPRA DEL ARTICULO COMPLETADO
 SG,1,DirectBuySuccessMessage,$(0)<br><br>Your purchase quota will be reset every day<br> at <utc>15:00</utc>.
 SG,1,DirectBuyErrorTitle,ERROR DE COMPRA DEL ARTICULO
 SG,1,DirectBuyConfirmListItemText,$(0) (Hora #$(1))
@@ -12242,11 +12242,11 @@ PokaMenu,1,PokaMenu_Content_PokaInfo,Informacion del campo de batalla
 PokaMenu,1,PokaMenu_PokaInfo_Record,Informacion de resultados
 PokaMenu,1,PokaMenu_PokaInfo_Rank,Informacion de rango de batalla
 PokaMenu,1,PokaMenu_PokaInfo_Rank_Switch,Informacion de rango de batalla (version en la nube)
-PokaMenu,1,PokaMenu_RecordTab1,Resultados acumulados
+PokaMenu,1,PokaMenu_RecordTab1,resultados acumulados
 PokaMenu,1,PokaMenu_RecordTab2,Lucha de emblemas
-PokaMenu,1,PokaMenu_RecordTab3,Batalla real
-PokaMenu,1,PokaMenu_RecordTitle1,TOTAL VICTORY COUNT
-PokaMenu,1,PokaMenu_RecordTitle2,TOTAL ENEMIES DEFEATED
+PokaMenu,1,PokaMenu_RecordTab3,batalla real
+PokaMenu,1,PokaMenu_RecordTitle1,CUENTA TOTAL DE VICTORIA
+PokaMenu,1,PokaMenu_RecordTitle2,TOTAL DE ENEMIGOS DERROTADOS
 PokaMenu,1,PokaMenu_RecordTitle3,TUS MONEDAS DE BATALLA
 PokaMenu,1,PokaMenu_RecordTitle4,EMBLEMA SCRAMBLE CUENTA DE VICTORIA
 PokaMenu,1,PokaMenu_RecordTitle5,JUGADORES DE EMBLEM SCRAMBLE DERROTADOS
@@ -12258,7 +12258,7 @@ PokaMenu,1,PokaMenu_Possession,$(0) <pict poka_btl_coin>
 PokaMenu,1,PokaMenu_ArenaPoint,$(0) puntos de arena
 PokaMenu,1,PokaMenu_RankTab1,Lucha de emblemas
 PokaMenu,1,PokaMenu_RankTitle1,NOMBRE ID DEL JUGADOR
-PokaMenu,1,PokaMenu_RankTitle2,RANGO ACTUAL
+PokaMenu,1,PokaMenu_RankTitle2,RANGO REAL
 PokaMenu,1,PokaMenu_RankTitle3,RANGO MAS ALTO OBTENIDO
 PokaMenu,1,PokaMenu_RankTitle4,PUNTOS DE ARENA
 PokaMenu,1,PokaMenu_RankTitle5,RANGO ACTUAL (VERSION EN LA NUBE)
@@ -12276,7 +12276,7 @@ PokaMenu,1,PokaMenu_ContentInfo,Informacion de contenido
 PokaMenu,1,PokaMenu_GatheringInfo,Recopilacion de informacion
 PokaMenu,1,PokaMenu_MoveBlockTitle,CONFIRMAR TRANSFERENCIA EN BLOQUE
 PokaMenu,1,PokaMenu_MoveShipTitle,CONFIRMAR TRANSFERENCIA DE ENVIO
-PokaMenu,1,PokaMenu_MoveBlockMessage,para proceder al Bloque de Batalla?
+PokaMenu,1,PokaMenu_MoveBlockMessage,¿Para proceder al Bloque de Batalla?
 PokaMenu,1,PokaMenu_MoveShipMessage,any time by returning to the Universal Ship.<c><br>Are you sure you want to return to your ship?
 PokaMenu,1,PokaMenu_Content_BasnetInfo,Informacion sobre la mision Buster
 BonusEffect,0,BonusEffect_Title1,特殊能力因子確認
@@ -12353,7 +12353,7 @@ Basnet,1,BasnetInfo_WindowTitle,INFORMACION DE LA MISION DE BUSTER
 Basnet,1,BasnetInfo_Title1,PUNTOS DE BUSTER
 Basnet,1,BasnetInfo_Title2,NUMERO DE IMPULSORES
 Basnet,1,BasnetInfo_ItemTitle1,PUNTOS ACTUALES
-Basnet,1,BasnetInfo_ItemTitle2,GRADO ACTUAL
+Basnet,1,BasnetInfo_ItemTitle2,GRADO REAL
 Basnet,1,BasnetInfo_ItemTitle3,HASTA EL SIGUIENTE GRADO
 Basnet,1,BasnetInfo_ItemTitle5,IMPULSO DEL PARTIDO PRINCIPAL
 Basnet,1,BasnetInfo_ButtonText1,-
@@ -12391,10 +12391,10 @@ ChallengeQuest,1,Achievement_Down,¡terminado!
 ChallengeQuest,1,Clear_Msg,Tasa de finalizacion del desafio: MISION $(0) $(1)%
 ChallengeQuest,1,TextStart,Iniciar desafio
 ChallengeQuest,1,TextClear,Desafio completado
-ChallengeQuest,1,TextMission,Mision
+ChallengeQuest,1,TextMission,mision
 ChallengeQuest,1,TextCongratulations,¡Felicidades!
-ChallengeQuest,1,TextInterval,Zona de intervalo
-ChallengeQuest,1,TextFinalMission,Mision final
+ChallengeQuest,1,TextInterval,zona de intervalo
+ChallengeQuest,1,TextFinalMission,mision final
 ChallengeQuest,1,Clear_Msg_TypeA,¡Nueva puntuacion mas alta! (+$(0) Puntos)
 ChallengeQuest,1,Clear_Msg_TypeB,$(0) Mas puntos hasta alcanzar la puntuacion mas alta
 ChallengeQuest,1,TextStartEx,Iniciar mision
@@ -12415,12 +12415,12 @@ QuestRaid,0,ArmadaSectorEffectSectorName2,SECTOR 2
 QuestRaid,0,ArmadaSectorEffectSectorName3,SECTOR 3
 QuestRaid,0,ArmadaSectorEffectSectorNameBoss,BOSS SECTOR
 QuestRaid,0,ArmadaSectorEffectSectorNameClear,CLEAR
-QuestRaid,1,ArmadaSectorEffectSectorNameNon,Ningun sector
+QuestRaid,1,ArmadaSectorEffectSectorNameNon,sector ningun
 QuestRaid,1,ArmadaSectorEffectSectorName1,Sector 1
 QuestRaid,1,ArmadaSectorEffectSectorName2,Sector 2
 QuestRaid,1,ArmadaSectorEffectSectorName3,Sector 3
 QuestRaid,1,ArmadaSectorEffectSectorNameBoss,Sector jefe
-QuestRaid,1,ArmadaSectorEffectSectorNameClear,Terminado
+QuestRaid,1,ArmadaSectorEffectSectorNameClear,terminado
 SeasonEvent,0,SeasonEventWebWindowTitle,イベント情報
 SeasonEvent,0,SeasonEventPointWindowTitle,個人ポイント
 SeasonEvent,0,SeasonEventShipPointWindowTitle,Ship別ポイント
