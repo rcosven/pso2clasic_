@@ -1,0 +1,35 @@
+﻿section,group,id,text
+common,0,IncidentName,最終決戦に勝利せよ！
+common,0,TrialBeginMsg,最終決戦に勝利せよ！
+common,0,TrialAbstract,最終決戦に勝利せよ！
+common,0,ToastMatoiBuffMsg,【マトイの願い】ＨＰ＆ＰＰ、攻撃力が上昇！
+common,0,ToastHitsugiBuffMsg,【ヒツギの覇気】一定時間敵を束縛！
+common,0,ToastHarrietBuffMsg,【ハリエットの神威】敵に大ダメージ！
+common,1,IncidentName,Suprimir $(0)
+common,1,TrialBeginMsg,¡Suprime todos los $(0) que acechan en el interior!
+common,1,TrialAbstract,¡Suprime $(0)!
+common,1,ToastMatoiBuffMsg,"[El deseo de Matoi] ¡HP, PP y ataque arriba!"
+common,1,ToastHitsugiBuffMsg,[El celo de Hitsugi] ¡Enemigos atados temporalmente!
+common,1,ToastHarrietBuffMsg,[El poder divino de Hariette] ¡Daño importante a los enemigos!
+type9,0,NpcComOnBegin_1,/atime1.0 /voice11_voice_delicious_npcha_012 なんと禍々しい。<br>これが、彼者の真の姿……
+type9,0,NpcComOnGetAngry,/voice11_voice_delicious_npcha_014 ここからが、本番のようです。<br>最後まで、油断せずに！
+type9,0,HP_Under_50_1,/voice11_voice_delicious_npchi_012 絶対に負けない！<br>このまま押し切ろう！
+type9,0,NpcComOnLastPhase,/voice11_voice_delicious_npcma_012 あなた一人に<br>背負わせたりなんかさせない！<br>私も、一緒に戦う！
+type9,0,NpcComOnBuffMatoi,/voice11_voice_delicious_npcma_013 クラリッサ！　あの人を守って！
+type9,0,NpcComOnBuffHitsugi,/voice11_voice_delicious_npchi_013 天叢雲、あの人を助けて！
+type9,0,NpcComOnBuffHarriet,/voice11_voice_delicious_npcha_015 この力、受け取ってください！<br>守護輝士！
+type9,0,HP_Under_10_1,/voice11_voice_delicious_npcma_016 今だよ！　とどめを！
+type9,0,HP_Under_10_2,/voice11_voice_delicious_npchi_014 いっけえええええ！
+type9,0,HP_Under_10_3,/voice11_voice_delicious_npcha_016 守護輝士、今です！
+type9,0,NpcComOnPowerUp,/voice11_voice_delicious_npcma_014 決着をつけ
+type9,1,NpcComOnBegin_1,"/atime1.0 /voice11_voice_delicious_npcha_012 Esta aura siniestra.<br>Entonces, esta es su verdadera forma...."
+type9,1,NpcComOnGetAngry,/voice11_voice_delicious_npcha_014 Parece que la cosa se va a poner seria.<br>¡No bajes la guardia!<br>¡Ni por un segundo!
+type9,1,HP_Under_50_1,/voice11_voice_delicious_npchi_012 ¡No podemos perder!<br>¡Veamos esto!
+type9,1,NpcComOnLastPhase,/voice11_voice_delicious_npcma_012 ¡No puedo dejar que te ocupes de<br>por tu cuenta!<br>¡Lucharé junto a ti!
+type9,1,NpcComOnBuffMatoi,/voice11_voice_delicious_npcma_013 ¡Clarisa! ¡Protege al Guardián!
+type9,1,NpcComOnBuffHitsugi,"/voice11_voice_delicious_npchi_013 Ame no Murakumo, ¡ayúdalos!"
+type9,1,NpcComOnBuffHarriet,"/voice11_voice_delicious_npcha_015 ¡Por favor, acepta esta bendición!<br>¡Guardián!"
+type9,1,HP_Under_10_1,/voice11_voice_delicious_npcma_016 ¡Ahora! ¡Termínalo!
+type9,1,HP_Under_10_2,/voice11_voice_delicious_npchi_014 ¡Toma ESTO!
+type9,1,HP_Under_10_3,"/voice11_voice_delicious_npcha_016 ¡Guardián, ahora!"
+type9,1,NpcComOnPowerUp,/voice11_voice_delicious_npcma_014 ¡Es hora de terminar esto!

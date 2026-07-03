@@ -1,0 +1,379 @@
+section,group,id,text
+Common,0,Symbol_Common_ID,パーツID
+Common,0,Symbol_Common_Name,パーツ名
+Common,0,Symbol_Common_Pos,配置座標
+Common,0,Symbol_Common_Height,縦幅
+Common,0,Symbol_Common_Wight,横幅
+Common,0,Symbol_Common_Rotate,傾き
+Common,0,Symbol_Common_Alpha,透明度
+Common,0,Symbol_Common_Color,色
+Common,0,Symbol_Common_Folder,表示階層
+Common,0,Symbol_Common_Visible,非表示フラグ
+Common,0,Symbol_Common_GroupID,グループID
+Common,0,Symbol_Common_ColorA,A
+Common,0,Symbol_Common_ColorR,R
+Common,0,Symbol_Common_ColorG,G
+Common,0,Symbol_Common_ColorB,B
+Common,0,Symbol_Common_PosX,X
+Common,0,Symbol_Common_PosY,Y
+Common,0,EditVectorSet,シンボルアートを登録する
+Common,0,EditVectorClear,登録を解除する
+Common,1,Symbol_Common_ID,Parts ID
+Common,1,Symbol_Common_Name,Parts Name
+Common,1,Symbol_Common_Pos,Placement Coordinates
+Common,1,Symbol_Common_Height,Height
+Common,1,Symbol_Common_Wight,Width
+Common,1,Symbol_Common_Rotate,Tilt
+Common,1,Symbol_Common_Alpha,Transparency
+Common,1,Symbol_Common_Color,Color
+Common,1,Symbol_Common_Folder,Display Hierarchy
+Common,1,Symbol_Common_Visible,Hide Flag
+Common,1,Symbol_Common_GroupID,Group ID
+Common,1,Symbol_Common_ColorA,A
+Common,1,Symbol_Common_ColorR,R
+Common,1,Symbol_Common_ColorG,G
+Common,1,Symbol_Common_ColorB,B
+Common,1,Symbol_Common_PosX,X
+Common,1,Symbol_Common_PosY,Y
+Common,1,EditVectorSet,Add Symbol Art
+Common,1,EditVectorClear,Remove Symbol Art
+SoundFile,0,SoundFile_00_vita,吹き出し音に従う
+SoundFile,0,SoundFile_00,効果音を選択
+SoundFile,0,SoundFile_01,無音
+SoundFile,0,SoundFile_02,通常
+SoundFile,0,SoundFile_03,喜び
+SoundFile,0,SoundFile_04,怒り
+SoundFile,0,SoundFile_05,悲しみ
+SoundFile,0,SoundFile_06,不安
+SoundFile,0,SoundFile_07,驚き
+SoundFile,0,SoundFile_08,疑問
+SoundFile,0,SoundFile_09,ＨＥＬＰ
+SoundFile,0,SoundFile_10,ホイッスル
+SoundFile,0,SoundFile_11,照れ
+SoundFile,0,SoundFile_12,キメ！
+SoundFile,1,SoundFile_00_vita,Follow the Sound Balloon
+SoundFile,1,SoundFile_00,Select Sound Effect
+SoundFile,1,SoundFile_01,None
+SoundFile,1,SoundFile_02,Normal
+SoundFile,1,SoundFile_03,Joy
+SoundFile,1,SoundFile_04,Anger
+SoundFile,1,SoundFile_05,Sorrow
+SoundFile,1,SoundFile_06,Unease
+SoundFile,1,SoundFile_07,Surprised
+SoundFile,1,SoundFile_08,Doubt
+SoundFile,1,SoundFile_09,Help
+SoundFile,1,SoundFile_10,Whistle
+SoundFile,1,SoundFile_11,Embarrassment
+SoundFile,1,SoundFile_12,Nailed it!
+ColorSelectForm,0,ColorSelectForm_Color_Title,カラー調整
+ColorSelectForm,0,ColorSelectForm_Alpha_Title,透明度設定
+ColorSelectForm,0,EditForm_Color_Exp,パーツの色を設定してください。
+ColorSelectForm,0,EditForm_Alpha_Exp,パーツの透明度を設定してください。
+ColorSelectForm,1,ColorSelectForm_Color_Title,COLOR ADJUSTMENT
+ColorSelectForm,1,ColorSelectForm_Alpha_Title,TRANSPARENCY SETTINGS
+ColorSelectForm,1,EditForm_Color_Exp,Set parts color.
+ColorSelectForm,1,EditForm_Alpha_Exp,Set parts transparency.
+MoneyForm,0,MoneyForm_Title,-
+MoneyForm,0,MoneyForm_Button_Up,-
+MoneyForm,0,MoneyForm_Exp,-
+MoneyForm,1,MoneyForm_Title,-
+MoneyForm,1,MoneyForm_Button_Up,-
+MoneyForm,1,MoneyForm_Exp,-
+EditForm,0,EditForm_Title,シンボルアート編集
+EditForm,0,EditForm_Button_Save,上書き保存
+EditForm,0,EditForm_Button_AsSave,別スロットに保存
+EditForm,0,EditForm_Button_NameEdit,名前をつける
+EditForm,0,EditForm_Button_Create,パーツ追加
+EditForm,0,EditForm_Sort_Big,標準サイズ (チャット/プロフィール用)
+EditForm,0,EditForm_Sort_Normal,中型サイズ (ルーム装飾用)
+EditForm,0,EditForm_Sort_Mini,小型サイズ (チームフラッグ用)
+EditForm,0,EditForm_Button_Back,元に戻す
+EditForm,0,EditForm_Button_Front,やり直し
+EditForm,0,EditForm_Button_Minus,－
+EditForm,0,EditForm_Button_Plus,＋
+EditForm,0,EditForm_Zoom,$(0)％表示
+EditForm,0,EditForm_Title_AddStr,* (更新)
+EditForm,0,EditForm_VITA_Help,ヘルプ
+EditForm,0,EditForm_VITA_Menu,<pict Sign_SELECT>メニュー
+EditForm,0,EditForm_VITA_Menu_Create,新しいパーツを作る
+EditForm,0,EditForm_VITA_Menu_Save,上書き保存
+EditForm,0,EditForm_VITA_Menu_SaveAs,別スロットに保存
+EditForm,0,EditForm_VITA_Menu_NameEdit,名前をつける
+EditForm,0,EditForm_VITA_Menu_Zoom,表示倍率変更
+EditForm,0,EditForm_VITA_Menu_Sound,効果音設定
+EditForm,0,EditForm_VITA_Menu_Size,カンバスサイズ変更
+EditForm,0,EditForm_VITA_Menu_Title,シンボルアートメニュー
+EditForm,0,EditForm_VITA_Size_Title,カンバスサイズ変更
+EditForm,0,EditForm_VITA_Sound_Title,効果音設定
+EditForm,0,EditForm_VITA_Zoom_Title,表示倍率変更
+EditForm,0,EditForm_NoParts,選択できるパーツがありません。
+EditForm,0,EditForm_SaveNoData_Exp,パーツが無い場合は、データを保存できません。
+EditForm,0,EditForm_Exit_Exp,データに変更があった可能性があります。<br>最後に保存した後に編集した内容は失われます。<br>よろしいですか？
+EditForm,0,EditForm_Save_Exp,選択スロットには別のデータがありますが、<br>現在のデータで上書きしますか？
+EditForm,0,EditForm_Exten_Exp,表示されているパーツのみ保存されます。<br>よろしいですか？
+EditForm,0,EditForm_Draft_Exp,この下書きデータは、まだ保存されていません。<br>編集を終了すると、下書きデータは失われますが<br>よろしいですか？
+EditForm,1,EditForm_Title,EDIT SYMBOL ART
+EditForm,1,EditForm_Button_Save,Overwrite and Save
+EditForm,1,EditForm_Button_AsSave,Save in Different Slot
+EditForm,1,EditForm_Button_NameEdit,Add Name
+EditForm,1,EditForm_Button_Create,Add Parts
+EditForm,1,EditForm_Sort_Big,Standard Size (for Chat/Profile)
+EditForm,1,EditForm_Sort_Normal,Medium Size (for Room Decoration)
+EditForm,1,EditForm_Sort_Mini,Small Size (for Alliance Flag)
+EditForm,1,EditForm_Button_Back,Go Back
+EditForm,1,EditForm_Button_Front,Redo
+EditForm,1,EditForm_Button_Minus,-
+EditForm,1,EditForm_Button_Plus,+
+EditForm,1,EditForm_Zoom,Display at $(0)%
+EditForm,1,EditForm_Title_AddStr,* (Update)
+EditForm,1,EditForm_VITA_Help,Help
+EditForm,1,EditForm_VITA_Menu,<pict Sign_SELECT>Menu
+EditForm,1,EditForm_VITA_Menu_Create,Create New Part
+EditForm,1,EditForm_VITA_Menu_Save,Overwrite and Save
+EditForm,1,EditForm_VITA_Menu_SaveAs,Save in Different Slot
+EditForm,1,EditForm_VITA_Menu_NameEdit,Add Name
+EditForm,1,EditForm_VITA_Menu_Zoom,Change Zoom
+EditForm,1,EditForm_VITA_Menu_Sound,Sound Effect Settings
+EditForm,1,EditForm_VITA_Menu_Size,Change Canvas Size
+EditForm,1,EditForm_VITA_Menu_Title,Symbol Art Menu
+EditForm,1,EditForm_VITA_Size_Title,CHANGE CANVAS SIZE
+EditForm,1,EditForm_VITA_Sound_Title,SOUND EFFECT SETTINGS
+EditForm,1,EditForm_VITA_Zoom_Title,CHANGE ZOOM
+EditForm,1,EditForm_NoParts,There are no selectable Parts.
+EditForm,1,EditForm_SaveNoData_Exp,Data cannot be saved when there are no Parts.
+EditForm,1,EditForm_Exit_Exp,Data may have been changed.<br>Edits you made after your last save will be lost.<br>Are you sure you wish to proceed?
+EditForm,1,EditForm_Save_Exp,There is other data in the slot you selected.<br>Would you like to overwrite it with the current data?
+EditForm,1,EditForm_Exten_Exp,Only the Parts shown will be saved.<br>Are you sure you wish to proceed?
+EditForm,1,EditForm_Draft_Exp,"This draft data has not been saved.<br>If you exit editing, that data will be lost.<br>Are you sure you wish to proceed?"
+CreateForm,0,CreateForm_Title,パーツの選択
+CreateForm,0,CreateForm_Parts_NotFound,パーツがありません
+CreateForm,0,CreateForm_Tab_Font,文字
+CreateForm,0,CreateForm_Tab_Base,基本図形
+CreateForm,0,CreateForm_Tab_Line,ライン
+CreateForm,0,CreateForm_Tab_Ink,インク
+CreateForm,0,CreateForm_Tab_Gradation,グラデーション
+CreateForm,0,CreateForm_Tab_Pattern,フラクタル
+CreateForm,0,CreateForm_Tab_Mark,マーク
+CreateForm,0,CreateForm_Tab_Etc,その他
+CreateForm,0,CreateForm_Tab_Stamp,ピクチャー
+CreateForm,0,CreateForm_Menu_View,表示/非表示
+CreateForm,0,CreateForm_Menu_ViewEnable,表示
+CreateForm,0,CreateForm_Menu_ViewDisable,非表示
+CreateForm,0,CreateForm_Menu_Pos,移動
+CreateForm,0,CreateForm_Menu_Size,サイズ
+CreateForm,0,CreateForm_Menu_Rotate,回転
+CreateForm,0,CreateForm_Menu_Warp,ゆがみ
+CreateForm,0,CreateForm_Menu_Reverse,反転
+CreateForm,0,CreateForm_Menu_ReverseUPDOWN,上下反転
+CreateForm,0,CreateForm_Menu_ReverseLEFTRIGHT,左右反転
+CreateForm,0,CreateForm_Menu_ColorSelect,カラー
+CreateForm,0,CreateForm_Menu_Alpha,透明度調整
+CreateForm,0,CreateForm_Menu_Move,並べ替え
+CreateForm,0,CreateForm_Menu_Move_Shift,連続移動
+CreateForm,0,CreateForm_Menu_Move_UP,1つ上に移動　　<gray>[-]<c>
+CreateForm,0,CreateForm_Menu_Move_UP_V,1つ上に移動
+CreateForm,0,CreateForm_Menu_Move_DOWN,１つ下に移動　　<gray>[+]<c>
+CreateForm,0,CreateForm_Menu_Move_DOWN_V,1つ下に移動
+CreateForm,0,CreateForm_Menu_Move_TOP,最上段に移動　<gray>[Ctrl]+[E]<c>
+CreateForm,0,CreateForm_Menu_Move_TOP_V,最上段に移動
+CreateForm,0,CreateForm_Menu_Move_BOTTOM,最下段に移動　<gray>[Ctrl]+[E]<c>
+CreateForm,0,CreateForm_Menu_Move_BOTTOM_V,最下段に移動
+CreateForm,0,CreateForm_Menu_Delete,削除
+CreateForm,0,CreateForm_Menu_Duplicate,複製　　　<gray>[Ctrl]+[D]<c>
+CreateForm,0,CreateForm_Menu_Duplicate_V,複製
+CreateForm,0,CreateForm_Menu_Copy,コピー　　<gray>[Ctrl]+[C]<c>
+CreateForm,0,CreateForm_Menu_Copy_V,コピー
+CreateForm,0,CreateForm_Menu_Paste,貼り付け　<gray>[Ctrl]+[V]<c>
+CreateForm,0,CreateForm_Menu_Paste_V,貼り付け
+CreateForm,0,CreateForm_Menu_AddParts,上にパーツ追加
+CreateForm,0,CreateForm_Menu_ColorCopy,色のコピー
+CreateForm,0,CreateForm_Menu_ColorPaste,色の反映
+CreateForm,0,CreateForm_Menu_Change,パーツ変更
+CreateForm,0,CreateForm_Menu_Edit,編集
+CreateForm,0,CreateForm_Menu_Etc,その他
+CreateForm,0,CreateForm_Menu_ColorPasteToast,色と透明度情報をコピーしました
+CreateForm,1,CreateForm_Title,SELECT PARTS
+CreateForm,1,CreateForm_Parts_NotFound,No Parts Available
+CreateForm,1,CreateForm_Tab_Font,Characters
+CreateForm,1,CreateForm_Tab_Base,Basic Diagrams
+CreateForm,1,CreateForm_Tab_Line,LINES
+CreateForm,1,CreateForm_Tab_Ink,Ink
+CreateForm,1,CreateForm_Tab_Gradation,Gradients
+CreateForm,1,CreateForm_Tab_Pattern,Fractals
+CreateForm,1,CreateForm_Tab_Mark,Marks
+CreateForm,1,CreateForm_Tab_Etc,Misc.
+CreateForm,1,CreateForm_Tab_Stamp,Pictures
+CreateForm,1,CreateForm_Menu_View,Show/Hide
+CreateForm,1,CreateForm_Menu_ViewEnable,Show
+CreateForm,1,CreateForm_Menu_ViewDisable,Hide
+CreateForm,1,CreateForm_Menu_Pos,Move
+CreateForm,1,CreateForm_Menu_Size,Size
+CreateForm,1,CreateForm_Menu_Rotate,Rotation
+CreateForm,1,CreateForm_Menu_Warp,Skew
+CreateForm,1,CreateForm_Menu_Reverse,Reflection
+CreateForm,1,CreateForm_Menu_ReverseUPDOWN,Top to Bottom Reflection
+CreateForm,1,CreateForm_Menu_ReverseLEFTRIGHT,Left to Right Reflection
+CreateForm,1,CreateForm_Menu_ColorSelect,Color
+CreateForm,1,CreateForm_Menu_Alpha,Adjust Transparency
+CreateForm,1,CreateForm_Menu_Move,Sort
+CreateForm,1,CreateForm_Menu_Move_Shift,Continuous Motion
+CreateForm,1,CreateForm_Menu_Move_UP,Move up one　　<gray>[-]<c>
+CreateForm,1,CreateForm_Menu_Move_UP_V,Move up one
+CreateForm,1,CreateForm_Menu_Move_DOWN,Move down one　　<gray>[+]<c>
+CreateForm,1,CreateForm_Menu_Move_DOWN_V,Move down one
+CreateForm,1,CreateForm_Menu_Move_TOP,Move to top layer　<gray>[Ctrl]+[E]<c>
+CreateForm,1,CreateForm_Menu_Move_TOP_V,Move to top layer
+CreateForm,1,CreateForm_Menu_Move_BOTTOM,Move to bottom layer　<gray>[Ctrl]+[E]<c>
+CreateForm,1,CreateForm_Menu_Move_BOTTOM_V,Move to bottom layer
+CreateForm,1,CreateForm_Menu_Delete,Delete
+CreateForm,1,CreateForm_Menu_Duplicate,Duplicate　　　<gray>[Ctrl]+[D]<c>
+CreateForm,1,CreateForm_Menu_Duplicate_V,Duplicate
+CreateForm,1,CreateForm_Menu_Copy,Copy　　<gray>[Ctrl]+[C]<c>
+CreateForm,1,CreateForm_Menu_Copy_V,Copy
+CreateForm,1,CreateForm_Menu_Paste,Paste　<gray>[Ctrl]+[V]<c>
+CreateForm,1,CreateForm_Menu_Paste_V,Paste
+CreateForm,1,CreateForm_Menu_AddParts,Add Parts Above
+CreateForm,1,CreateForm_Menu_ColorCopy,Copy Color
+CreateForm,1,CreateForm_Menu_ColorPaste,Apply Color
+CreateForm,1,CreateForm_Menu_Change,Change Parts
+CreateForm,1,CreateForm_Menu_Edit,Edit
+CreateForm,1,CreateForm_Menu_Etc,Misc.
+CreateForm,1,CreateForm_Menu_ColorPasteToast,Color and Transparency Information Copied
+ListForm,0,ListForm_Title,データの選択
+ListForm,0,ListForm_Hash,識別ID：$(0)
+ListForm,0,ListForm_NoHash,識別ID：なし
+ListForm,0,ListForm_ItemName,スロット$(1)　$(0)
+ListForm,0,ListForm_DefaultName,Untitled
+ListForm,0,ListForm_List_Non,データがありません
+ListForm,0,ListForm_NoSymbolArt,シンボルアートがありません
+ListForm,0,ListForm_NowLoading,読み込み中…
+ListForm,0,ListForm_WrongSize,対象サイズと異なります
+ListForm,0,ListForm_StockSave_Exp,ストックに保存しました。
+ListForm,0,ListForm_ServerSave_Exp,保存しました。
+ListForm,0,ListForm_StockLoad_Exp,ストックから読み込みました。
+ListForm,0,ListForm_ServerLoad_Exp,読み込みました。
+ListForm,0,ListForm_StockRemove_Exp,保存リストから削除しました。
+ListForm,0,ListForm_ServerRemove_Exp,保存リストから削除しました。
+ListForm,0,ListForm_VITA_Status_Title,選択中シンボルアートのステータス
+ListForm,0,ListForm_VITA_Hash,識別ID
+ListForm,0,ListForm_VITA_Size,サイズ
+ListForm,0,ListForm_Say_Title,シンボルアートの発言
+ListForm,0,ListForm_Save_Exp,選択スロットには別のデータがありますが、<br>現在のデータで上書きしますか？
+ListForm,0,ListForm_RemoveQue_Title,シンボルアートの削除
+ListForm,0,ListForm_RemoveQue_Exp,このシンボルアートを削除します。<br>よろしいですか？
+ListForm,0,ListForm_RemoveImport_Title,インポートしたシンボルアートの削除
+ListForm,0,ListForm_RemoveImport_Exp,インポートしたこのシンボルアートを削除します。<br>よろしいですか？
+ListForm,0,ListForm_ClearImport_Title,インポートしたシンボルアートの全削除
+ListForm,0,ListForm_ClearImport_Exp,インポートしたシンボルアートを全て削除します。<br>よろしいですか？
+ListForm,0,ListForm_BAN_Exp,使用を制限されたシンボルアートが含まれていました。<br>制限がかけられていないものだけ保存しました。
+ListForm,0,ListForm_Illegal_LayerDelete,不正なパーツが使用されていたため、削除しました。
+ListForm,0,ListForm_Error_ServerLoadFailed,読み込みに失敗しました。<br><br><br>[No.1200］
+ListForm,0,ListForm_Error_LoacalLoadFailed,読み込みに失敗しました。<br><br>[No.1201］
+ListForm,0,ListForm_Error_LoacalLoadFailed_Null,空のデータがリクエストされました。<br><br>[No.1202］
+ListForm,0,ListForm_Error_LoacalLoadFailed_Not,データが見つかりませんでした。<br><br>[No.1203］
+ListForm,0,ListForm_Error_LoacalLoadFailed_Other,読み込みに失敗しました。<br><br>[No.1204］
+ListForm,0,ListForm_Error_SaveFailed,保存に失敗しました。<br><br>[No.1205］
+ListForm,0,ListForm_Error_LoacalRemoveFailed,削除に失敗しました。<br><br>[No.1206］
+ListForm,0,ListForm_Error_ServerRemoveFailed,削除に失敗しました。<br><br>[No.1207］
+ListForm,0,ListForm_Error_LoadImport,読み込みに失敗しました。<br><br>[No.1208］
+ListForm,0,ListForm_Error_RemoveImport,削除に失敗しました。<br><br>[No.1209］
+ListForm,0,ListForm_Error_Illegaldata,不正なシンボルアートデータであるため、<br>保存できませんでした。<br><br>[No.1210］
+ListForm,0,ListForm_Error_IllegalNotSay,不正なパーツが使用されているため、<br>発言できませんでした。<br><br>[No.1211]
+ListForm,1,ListForm_Title,SELECT DATA
+ListForm,1,ListForm_Hash,Unique ID: $(0)
+ListForm,1,ListForm_NoHash,Unique ID: None
+ListForm,1,ListForm_ItemName,Slot $(1)　$(0)
+ListForm,1,ListForm_DefaultName,Untitled
+ListForm,1,ListForm_List_Non,No Data Available
+ListForm,1,ListForm_NoSymbolArt,No Symbol Art Available
+ListForm,1,ListForm_NowLoading,Loading...
+ListForm,1,ListForm_WrongSize,Incorrect Size
+ListForm,1,ListForm_StockSave_Exp,Saved in stock.
+ListForm,1,ListForm_ServerSave_Exp,Saved.
+ListForm,1,ListForm_StockLoad_Exp,Loaded from stock.
+ListForm,1,ListForm_ServerLoad_Exp,Loaded.
+ListForm,1,ListForm_StockRemove_Exp,Deleted from saved list.
+ListForm,1,ListForm_ServerRemove_Exp,Deleted from saved list.
+ListForm,1,ListForm_VITA_Status_Title,STATUS OF SELECTED SYMBOL ART
+ListForm,1,ListForm_VITA_Hash,Unique ID
+ListForm,1,ListForm_VITA_Size,Size
+ListForm,1,ListForm_Say_Title,SHARING SYMBOL ART
+ListForm,1,ListForm_Save_Exp,There is other data in the slot you selected.<br>Would you like to overwrite it with the current data?
+ListForm,1,ListForm_RemoveQue_Title,DELETING SYMBOL ART
+ListForm,1,ListForm_RemoveQue_Exp,You are about to delete this Symbol Art.<br>Are you sure you wish to proceed?
+ListForm,1,ListForm_RemoveImport_Title,DELETING IMPORTED SYMBOL ART
+ListForm,1,ListForm_RemoveImport_Exp,You are about to delete this imported Symbol Art.<br>Are you sure you wish to proceed?
+ListForm,1,ListForm_ClearImport_Title,DELETING ALL IMPORTED SYMBOL ART
+ListForm,1,ListForm_ClearImport_Exp,You are about to delete all imported Symbol Art.<br>Are you sure you wish to proceed?
+ListForm,1,ListForm_BAN_Exp,Some of the Symbol Art had usage restrictions.<br>Only unrestricted art was saved.
+ListForm,1,ListForm_Illegal_LayerDelete,Deleted due to invalid Parts.
+ListForm,1,ListForm_Error_ServerLoadFailed,Failed to load.<br><br><br>[No.1200］
+ListForm,1,ListForm_Error_LoacalLoadFailed,Failed to load.<br><br>[No.1201］
+ListForm,1,ListForm_Error_LoacalLoadFailed_Null,Empty data requested.<br><br>[No.1202］
+ListForm,1,ListForm_Error_LoacalLoadFailed_Not,Data not found.<br><br>[No.1203］
+ListForm,1,ListForm_Error_LoacalLoadFailed_Other,Failed to load.<br><br>[No.1204］
+ListForm,1,ListForm_Error_SaveFailed,Failed to save.<br><br>[No.1205］
+ListForm,1,ListForm_Error_LoacalRemoveFailed,Failed to delete.<br><br>[No.1206］
+ListForm,1,ListForm_Error_ServerRemoveFailed,Failed to delete.<br><br>[No.1207］
+ListForm,1,ListForm_Error_LoadImport,Failed to load.<br><br>[No.1208］
+ListForm,1,ListForm_Error_RemoveImport,Failed to delete.<br><br>[No.1209］
+ListForm,1,ListForm_Error_Illegaldata,Unable to save because the Symbol Art data is invalid.<br><br>[No.1210］
+ListForm,1,ListForm_Error_IllegalNotSay,Unable to share due to invalid Parts.<br><br>[No.1211］
+SelectedForm,0,SelectedForm_Title,シンボルアートリスト
+SelectedForm,0,SelectedForm_Exp,<c f0df60>編集または発言するシンボルアートを選択してください。空欄で「編集」を選ぶと、新規作成できます。<c>
+SelectedForm,0,SelectedForm_Exp_v,<c f0df60>編集または発言するシンボルアートを選択してください。<c>
+SelectedForm,0,ListForm_Exp,<c f0df60>保存するスロットを選択してください。<c>
+SelectedForm,0,EditForm_Exp,<c f0df60>「パーツ追加」ボタンで追加したパーツを編集し、シンボルアートを作成します。（？ボタンで操作説明）<c>
+SelectedForm,0,EditForm_Exp_v,<c f0df60>「パーツ追加」ボタンで追加したパーツを編集し、シンボルアートを作成します。<c>
+SelectedForm,0,SelectedForm_SaveList,1.保存リスト
+SelectedForm,0,SelectedForm_LogList_Big,2.ヒストリ（標準）
+SelectedForm,0,SelectedForm_LogList_Normal,2.ヒストリ（中）
+SelectedForm,0,SelectedForm_LogList_Mini,3.ヒストリ（小）
+SelectedForm,0,SelectedForm_LogList,2.ヒストリ
+SelectedForm,0,SelectedForm_Etc,4.インポート
+SelectedForm,0,SelectedForm_EditName_Title,シンボルアート名変更
+SelectedForm,0,SelectedForm_EditName_Exp,シンボルアート名 <br>（この名前は他人にも表示されます）
+SelectedForm,0,SelectedForm_Menu_Save,保存する
+SelectedForm,0,SelectedForm_Menu_Say,すぐに発言
+SelectedForm,0,SelectedForm_Menu_Edit,編集
+SelectedForm,0,SelectedForm_Menu_Delete,削除する
+SelectedForm,0,SelectedForm_Menu_Clear,全て削除する
+SelectedForm,0,SelectedForm_Menu_NameEdit,シンボルアート名変更
+SelectedForm,0,SelectedForm_Menu_BlackList,-
+SelectedForm,0,SelectedForm_Menu_Import,インポートする
+SelectedForm,0,SelectedForm_LoadImport_Exp,インポートが完了しました。
+SelectedForm,0,SelectedForm_Error_Filter,シンボルアート名に使用できない文字が含まれています。
+SelectedForm,0,SelectedForm_Error_Premium,能は、<br><yellow>プレミアムセット<c>有効期間中のみ<br>使用することができます。<br><br><yellow>プレミアムセット<c>を利用するには、<br>メインメニューの「ACショップ」からお求めください。
+SelectedForm,1,SelectedForm_Title,SYMBOL ART LIST
+SelectedForm,1,SelectedForm_Exp,栀漀漀猀攀 嬀䔀搀椀琀崀 椀渀 琀栀攀 戀氀愀渀欀 挀漀氀甀洀渀Ⰰ 礀漀甀 挀愀渀 挀爀攀愀琀攀 猀漀洀攀琀栀椀渀最 渀攀眀⸀㰀挀㸀
+SelectedForm,1,SelectedForm_Exp_v,<c f0df60>Select the Symbol Art you wish to edit or share.<c>
+SelectedForm,1,ListForm_Exp,<c f0df60>Select the slot you wish to save to.<c>
+SelectedForm,1,EditForm_Exp,<c f0df60>Add parts with the Add Parts button and combine them to create Symbol Art. (? Button: Explain controls.)<c>
+SelectedForm,1,EditForm_Exp_v,<c f0df60>Add parts with the Add Parts Button and combine them to create Symbol Art.<c>
+SelectedForm,1,SelectedForm_SaveList,1. Saved Lists
+SelectedForm,1,SelectedForm_LogList_Big,2. History (Standard)
+SelectedForm,1,SelectedForm_LogList_Normal,2. History (Medium)
+SelectedForm,1,SelectedForm_LogList_Mini,3. History (Small)
+SelectedForm,1,SelectedForm_LogList,2. History
+SelectedForm,1,SelectedForm_Etc,4. Import
+SelectedForm,1,SelectedForm_EditName_Title,CHANGE SYMBOL ART NAME
+SelectedForm,1,SelectedForm_EditName_Exp,Change Symbol Art Name <br>(This name is also visible to other people)
+SelectedForm,1,SelectedForm_Menu_Save,Save
+SelectedForm,1,SelectedForm_Menu_Say,Share Now
+SelectedForm,1,SelectedForm_Menu_Edit,Edit
+SelectedForm,1,SelectedForm_Menu_Delete,Delete
+SelectedForm,1,SelectedForm_Menu_Clear,Delete All
+SelectedForm,1,SelectedForm_Menu_NameEdit,Change Symbol Art Name
+SelectedForm,1,SelectedForm_Menu_BlackList,-
+SelectedForm,1,SelectedForm_Menu_Import,Import
+SelectedForm,1,SelectedForm_LoadImport_Exp,Import complete.
+SelectedForm,1,SelectedForm_Error_Filter,The Symbol Art name contains forbidden characters.
+SelectedForm,1,SelectedForm_Error_Premium,the AC Shop in the Main Menu.
+SAProjectorForm,0,Title,シンボルアート選択
+SAProjectorForm,0,Title_Monitor,シンボルアートモニター
+SAProjectorForm,0,Close_Title,確認
+SAProjectorForm,0,Close_Exp,選択したシンボルアートを表示します。<br>よろしいですか？<br><br>※選択していない場合、<br>シンボルアートは表示されません。
+SAProjectorForm,1,Title,SELECT SYMBOL ART
+SAProjectorForm,1,Title_Monitor,SYMBOL ART MONITOR
+SAProjectorForm,1,Close_Title,CONFIRM
+SAProjectorForm,1,Close_Exp,"d?<br><br>Note: If you do not select it, the Symbol Art <br>will not be displayed."

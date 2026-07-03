@@ -1,0 +1,242 @@
+section,group,id,text
+EditList,0,Cancel,変更せずに終了
+EditList,0,Decide,変更を確定
+EditList,0,Title,エステ
+EditList,1,Cancel,Discard & Exit
+EditList,1,Decide,Confirm Changes
+EditList,1,Title,SALON
+Confirm,0,Message,変更した内容を反映せずに終了します。<br>よろしいですか？
+Confirm,0,AllRandomTitle,確認
+Confirm,0,AllRandomMessage,すべての項目をランダムで設定しても、<br>よろしいですか？
+Confirm,1,Message,You are about to exit without applying the changes.<br>Are you sure you wish to proceed?
+Confirm,1,AllRandomTitle,CONFIRM
+Confirm,1,AllRandomMessage,You are about to randomize settings for all options.<br>Are you sure you wish to proceed?
+Payment,0,PaymentCheckTitle,退店確認
+Payment,0,PaymentCheckMessage,혰詓蠰坭昰估怰唰䐰Ȱ㰰戀爀㸀㰀戀爀㸀ﬀर鉦椰⢐坵昰0鞐奞謰㐰ࡘ潔İ㰰戀爀㸀
+Payment,0,ColorCheckMessage,内容確認”から変更内容を取り消してください。<br><br>変更内容を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
+Payment,0,ConsumeCheckTitle,パス使用確認
+Payment,0,ConsumeCheckMessage,爀㸀㰀戀爀㸀휀�ꈰर륧ὒ鍧ⶕ潎İ0鞐豞㙟　؀鍒㲕戀爀㸀㰀礀攀氀氀漀眀㸀ꠀ뤰옰⤰⡒텵뤰匰Ā꠰뤰옰⤰⡒텵뤰㰰挀㸀鈀㰰戀爀㸀蠀뭭完娰欰贰왽䲖ﵓ梀樰訰縰夰Ȱ㰰挀㸀
+Payment,0,ConsumeCheckMessage2,㸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀㬀ꠠ뤰옰ℰ饱텥뤰欰漰İ휰�ꈰर륧ὒ鍧ⶕ湎㰰戀爀㸀
+Payment,0,ItemCheckMessage,<c 5fdf00>所持アイテムの使用<c><br>以下の所持アイテムを使用することで、<br>変更を適用して退店します。よろしいですか？
+Payment,0,BuyCheckTitle,パス購入確認
+Payment,0,BuyCheckMessage,(所持AC：$(0))<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
+Payment,0,BuyCheckItem,$(0)($(1)AC)
+Payment,0,PaymentCheckMessageSG,更を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？<br><red>※ACで購入したエステ利用パスも利用できます。<c>
+Payment,0,ConsumeCheckMessageColor,괠뤰젰渰ꬰﰰ砰麐艢贰왽䲖ﵓ枀夰Ȱ㰰挀㸀
+Payment,0,ConsumeCheckMessageSGColor,뤰젰渰ꬰﰰ砰麐艢贰왽䲖ﵓ枀夰Ȱ㰰挀㸀
+Payment,0,ConsumeCheckMessageSG,戀爀㸀㰀戀爀㸀휀�ꈰर륧ὒ鍧ⶕ潎İ0鞐豞㙟　؀鍒㲕戀爀㸀㰀礀攀氀氀漀眀㸀ꠀ뤰옰⤰⡒텵뤰匰Ā꠰뤰옰⤰⡒텵뤰㰰挀㸀鈀㰰戀爀㸀蠀뭭完娰欰贰왽䲖ﵓ梀樰訰縰夰Ȱ0㰀挀 㔀昀搀昀　　㸀ꈀꐰ옰渰缰⡏㱵挀㸀㰀戀爀㸀୎湎ꈰꐰ옰鈰缰⡏奵謰匰栰朰İ㰰戀爀㸀ऀ蕦륑鉛椰⢐坵昰0鞐坞縰夰Ȱ蠰贰地䐰朰夰䬰ἰ㳿戀爀㸀㰀戀爀㸀휀�ꈰर륧ὒ鍧ⶕ潎İ0鞐豞㙟　؀鍒㲕戀爀㸀㰀礀攀氀氀漀眀㸀꬀ﰰ섰ꜰ렰터뤰İ丰ⴀ꬀ﰰ섰ꜰ렰터뤰㰰挀㸀鈀㰰戀爀㸀蠀뭭完娰欰贰왽䲖ﵓ梀樰訰縰夰Ȱ㰰戀爀㸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀㬀ꬠﰰ섰ꜰ렰터뤰İ丰ⴀ꬀ﰰ섰ꜰ렰터뤰鈰㰰戀爀㸀
+Payment,0,ConsumeCheckMessage2Color,鍧䲕椰⢐啵谰縰嬰錰Ȱ吰ཬ佡怰唰䐰Ȱ㰰挀㸀
+Payment,0,ItemCheckMessage2,ェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<br>※キャストのカラー選択も再編集が可能です。<c>
+Payment,0,BuyCheckMessageSG,䀀Ţ卣䜀ᨀ⓿⠀　⤀⤀㰀戀爀㸀㰀戀爀㸀휀�ꈰर륧ὒ鍧ⶕ潎İ0鞐豞㙟　؀鍒㲕戀爀㸀㰀礀攀氀氀漀眀㸀ꠀ뤰옰⤰⡒텵뤰匰Ā꠰뤰옰⤰⡒텵뤰㰰挀㸀鈀㰰戀爀㸀蠀뭭完娰欰贰왽䲖ﵓ梀樰訰縰夰Ȱ0␀⠀　⤀⠀␀⠀㄀⤀匀䜀⤀
+Payment,0,BuyCheckItemSG,$(0)($(1)SG)
+Payment,0,CashIconAC,<white><pict Arcscash><c>
+Payment,0,CashIconSG,<white><pict StarGem><c>
+Payment,0,ColorChangePassIcon,<white><pict c_c_path><c>
+Payment,0,DefaultColorBackCheckTitle,デフォルトカラー確認
+Payment,0,DefaultColorBackCheckMessage,アイテムを身に着けてから退店してください。<br><br>・変更を適用して退店する場合は、<br>　“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
+Payment,1,PaymentCheckTitle,CONFIRM EXIT
+Payment,1,PaymentCheckMessage,you wish to apply the changes <br>and exit the store?
+Payment,1,ColorCheckMessage,礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀 愀瀀瀀氀礀 琀栀攀 挀栀愀渀最攀猀 愀渀搀 攀砀椀琀 琀栀攀 猀琀漀爀攀㼀
+Payment,1,ConsumeCheckTitle,CONFIRM PASS USE
+Payment,1,ConsumeCheckMessage,ow>Salon Pass S or Salon Pass.<c>
+ConsumeCheckMessage2 -,1,ItemCheckMessage,眀椀氀氀 戀攀㰀戀爀㸀愀瀀瀀氀椀攀搀 愀渀搀 礀漀甀 眀椀氀氀 攀砀椀琀 琀栀攀 猀琀漀爀攀⸀ 䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀㰀戀爀㸀瀀爀漀挀攀攀搀㼀
+ConsumeCheckMessage2 -,1,BuyCheckTitle,CONFIRM PASS PURCHASE
+ConsumeCheckMessage2 -,1,BuyCheckMessage,<br>consuming a <yellow>Salon Pass S or Salon Pass.<c>
+ConsumeCheckMessage2 -,1,BuyCheckItem,$(0)($(1) AC)
+ConsumeCheckMessage2 -,1,PaymentCheckMessageSG,椀琀 琀栀攀 猀琀漀爀攀㼀㰀戀爀㸀㰀戀爀㸀㰀爀攀搀㸀⨀ 夀漀甀 挀愀渀 愀氀猀漀 甀猀攀 愀 匀愀氀漀渀 倀愀猀猀 瀀甀爀挀栀愀猀攀搀 眀椀琀栀 䄀䌀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,ConsumeCheckMessageColor,tions.<c>
+ConsumeCheckMessage2 -,1,ConsumeCheckMessageSGColor,椀漀渀猀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,ConsumeCheckMessageSG,漀眀㸀匀愀氀漀渀 倀愀猀猀 匀 漀爀 匀愀氀漀渀 倀愀猀猀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,ConsumeCheckMessage2Color,氀氀 渀漀琀 愀瀀瀀氀礀 琀漀 愀 匀愀氀漀渀 䘀爀攀攀 倀愀猀猀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,ItemCheckMessage2,栀愀琀 愀 䌀漀氀漀爀㰀戀爀㸀䌀栀愀渀最攀 倀愀猀猀 漀爀 一ⴀ䌀漀氀漀爀ⴀ䌀栀愀渀最攀 倀愀猀猀 栀愀猀 戀攀攀渀 甀猀攀搀 漀渀⸀㰀戀爀㸀⨀夀漀甀 挀愀渀 愀氀猀漀 爀攀ⴀ攀搀椀琀 䌀䄀匀吀 挀漀氀漀爀 猀攀氀攀挀琀椀漀渀猀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,BuyCheckMessageSG,椀琀栀漀甀琀 挀漀渀猀甀洀椀渀最 愀 㰀戀爀㸀㰀礀攀氀氀漀眀㸀匀愀氀漀渀 倀愀猀猀 匀 漀爀 匀愀氀漀渀 倀愀猀猀⸀㰀挀㸀
+ConsumeCheckMessage2 -,1,BuyCheckItemSG,$(0)($(1) SG)
+ConsumeCheckMessage2 -,1,CashIconAC,<white><pict Arcscash><c>
+ConsumeCheckMessage2 -,1,CashIconSG,<white><pict StarGem><c>
+ConsumeCheckMessage2 -,1,ColorChangePassIcon,<white><pict c_c_path><c>
+ConsumeCheckMessage2 -,1,DefaultColorBackCheckTitle,Confirm Default Color
+ConsumeCheckMessage2 -,1,DefaultColorBackCheckMessage,甀爀攀 礀漀甀 眀椀猀栀 琀漀 愀瀀瀀氀礀 琀栀攀 挀栀愀渀最攀猀 愀渀搀 攀砀椀琀 琀栀攀 猀琀漀爀攀㼀㰀戀爀㸀
+Error,0,Title,エステ
+Error,0,Result_0,無効
+Error,0,Result_1_1,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。
+Error,0,Result_1_2,お会計はありません。<br>ご利用ありがとうございました。
+Error,0,Result_1_3,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「エステ利用パス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_1_4,再編集可能期間のため、お会計はありません。<br>ご利用ありがとうございました。
+Error,0,Result_2,外見の編集情報に問題が発生しました。<br><br>エラーコード[2000]
+Error,0,Result_3,ACが不足しています。<br>再度、ご確認ください。<br><br>エラーコード[2001]
+Error,0,Result_4,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_5,所持品の編集情報に問題が発生しました。<br><br>エラーコード[2002]
+Error,0,Result_6,該当アイテムを所持していません。<br>もう一度ご確認ください。
+Error,0,Result_7,購入に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_8,購入に失敗しました。<br>システムエラーの可能性があります。<br>時間をおいてお試しください。<br><br>エラーコード[2003]
+Error,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
+Error,0,Title_SPEdit,サポートパートナーエステ
+Error,0,Result_SPCreate_ParamError,正しいデータで作成されませんでした。
+Error,0,Result_SPCreate_MaxError,サポートパートナーを<br>これ以上追加することはできません。
+Error,0,Result_SPCreate_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_SPCreate_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_SPRemake_NoPartner,正しいデータで作成されませんでした。
+Error,0,Result_SPRemake_EquipError,アイテムパックに空きがありません。
+Error,0,Result_SPRemake_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_SPRemake_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_1_5,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_1_6,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br>「エステ利用パス」<br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_3_SG,SGが不足しています。<br>再度、ご確認ください。
+Error,0,Result_7_SG,購入に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_9,サポートパートナーから外した<br>コスチューム（パーツ、アウターウェア）が<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
+Error,0,Result_10,キャラ倉庫から取り出したコスチュームが<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
+Error,0,Result_11,ください<br><yellow>※<c><%TabForward><yellow>を押すことで脱衣状態の身長を確認できます。<c>
+Error,0,Result_12,カラー変更が行えないコスチューム、<br>レイヤリングウェア、セットウェアに<br>カラー変更が適用された可能性があります。<br><br>それぞれのカラーを元に戻してから、<br>エステを退店してください。
+Error,0,Error_ImproperData_Exit,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。<br><br>・該当箇所<br>$(0)
+Error,0,Error_ImproperData_LoadMyFashion,現在の外見データに問題があるため<br>マイファッションへ保存できません。
+Error,0,Error_ImproperData_InMyFashion,現在の外見データに問題があるため<br>マイファッションでの保存ができません。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。<br><br>・該当箇所<br>$(0)
+Error,0,Error_ImproperDataSaveMyFashion,現在の外見データに問題があるため<br>エステから退店できなくなることがあります。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。
+Error,0,Error_ImproperData_TypeNone,その他
+Error,0,Error_ImproperData_TypeSelect,選択項目
+Error,0,Error_ImproperData_TypeRace,種族
+Error,0,Error_ImproperData_TypeSex,タイプ
+Error,0,Error_ImproperData_TypeVoice,ボイス選択
+Error,0,Error_ImproperData_TypeSkinColor,肌カラー設定
+Error,0,Error_ImproperData_Sep,、
+Error,0,Error_ImproperData_SelectType_MainParts,コスチュームまたはボディ
+Error,0,Error_ImproperData_SelectType_BodyPaint1,ボディペイント１
+Error,0,Error_ImproperData_SelectType_BodyPaint2,ステッカー
+Error,0,Error_ImproperData_SelectType_Eye,瞳パターン
+Error,0,Error_ImproperData_SelectType_Eyebrow,まゆ
+Error,0,Error_ImproperData_SelectType_Eyelash,まつげ
+Error,0,Error_ImproperData_SelectType_Face,顔バリエーション
+Error,0,Error_ImproperData_SelectType_FacePaint1,顔バリエーション
+Error,0,Error_ImproperData_SelectType_FacePaint2,メイクパターン１
+Error,0,Error_ImproperData_SelectType_Hair,ヘアスタイルまたはヘッドパーツ
+Error,0,Error_ImproperData_SelectType_Acccessory1,アクセサリ１
+Error,0,Error_ImproperData_SelectType_Acccessory2,アクセサリ２
+Error,0,Error_ImproperData_SelectType_Acccessory3,アクセサリ３
+Error,0,Error_ImproperData_SelectType_FacePaint3,メイクパターン２
+Error,0,Error_ImproperData_SelectType_Leg,レッグ
+Error,0,Error_ImproperData_SelectType_Arm,アーム
+Error,0,Error_ImproperData_SelectType_Acccessory4,アクセサリ4
+Error,0,Error_ImproperData_SelectType_Basewear,ベースウェア
+Error,0,Error_ImproperData_SelectType_Innerwear,インナーウェア
+Error,0,Error_ImproperData_SelectType_BodyPaint3,ボディペイント2
+Error,0,Error_ImproperData_Select_Etc,その他
+Error,0,Error_ImproperData_SelectType_Skin,肌
+Error,0,Error_ImproperData_SelectType_Ears,耳
+Error,0,Error_ImproperData_SelectType_Dental,歯
+Error,0,Error_ImproperData_SelectType_Horn,角
+Error,0,Error_ImproperData_SelectType_Accessory5,アクセサリ５
+Error,0,Error_ImproperData_SelectType_Accessory6,アクセサリ６
+Error,0,Error_ImproperData_SelectType_Accessory7,アクセサリ７
+Error,0,Error_ImproperData_SelectType_Accessory8,アクセサリ８
+Error,0,Error_ImproperData_SelectType_Accessory9,アクセサリ９
+Error,0,Error_ImproperData_SelectType_Accessory10,アクセサリ１０
+Error,0,Error_ImproperData_SelectType_Accessory11,アクセサリ１１
+Error,0,Error_ImproperData_SelectType_Accessory12,アクセサリ１２
+Error,0,Result_SPCreate_ChargeError_SG,作成に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_13,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。
+Error,0,Result_14,アイテムパックの空き容量不足のため、<br>ファッションアイテムを取り外せません。
+Error,1,Title,SALON
+Error,1,Result_0,Disabled
+Error,1,Result_1_1,You have purchased or used a pass and your changes have been applied.<br>Thank you for your business!
+Error,1,Result_1_2,Thank you for using the Salon. There are no new changes at this time.
+Error,1,Result_1_3,椀琀椀渀最 挀愀渀 戀攀 瀀攀爀昀漀爀洀攀搀 眀椀琀栀漀甀琀 挀漀渀猀甀洀椀渀最 愀渀 愀搀搀椀琀椀漀渀愀氀 瀀愀猀猀 昀漀爀 愀 瀀攀爀椀漀搀 漀昀 㘀　 洀椀渀甀琀攀猀 愀昀琀攀爀 甀猀攀 漀昀 愀 匀愀氀漀渀 倀愀猀猀⸀
+Error,1,Result_1_4,You will not be charged for any services as the re-editing period has yet to expire.<br>Thank you for your business!
+Error,1,Result_2,An error occurred in the appearance editing data.<br><br>Error Code [2000]
+Error,1,Result_3,Your AC balance is insufficient.<br>Please re-verify your balance.<br><br>Error Code [2001]
+Error,1,Result_4,A system error has occurred.<br>Please wait a moment before trying again.
+Error,1,Result_5,An error occurred in the inventory editing data.<br>Error Code [2002]
+Error,1,Result_6,You currently do not have that item.<br>Please check your inventory.
+Error,1,Result_7,Purchase failed.<br>Your AC balance may be too low.<br>Please verify your balance.
+Error,1,Result_8,Purchase failed.<br>A system error may have occurred.<br>Please wait a moment before trying again.<br><br>Error Code [2003]
+Error,1,Title_SPCreate,AUXILIARY CHARACTER CREATION
+Error,1,Title_SPEdit,AUXILIARY SALON
+Error,1,Result_SPCreate_ParamError,Not created with the correct data.
+Error,1,Result_SPCreate_MaxError,You cannot add any additional Auxiliaries.
+Error,1,Result_SPCreate_ChargeError,Creation failed.<br>Your AC balance may be too low.<br>Please verify your balance.
+Error,1,Result_SPCreate_SystemError,A system error has occurred.<br>Please wait a moment before trying again.
+Error,1,Result_SPRemake_NoPartner,Not created with the correct data.
+Error,1,Result_SPRemake_EquipError,You have no more room in your inventory.
+Error,1,Result_SPRemake_ChargeError,Creation failed.<br>Your AC balance may be too low.<br>Please verify your balance.
+Error,1,Result_SPRemake_SystemError,A system error has occurred.<br>Please wait a moment before trying again.
+Error,1,Result_1_5,ng can be performed without consuming an additional pass for a period of 60 minutes after use of a Color-Change Pass.
+Error,1,Result_1_6,be performed without consuming an additional pass for a period of 60 minutes after use of a Salon Pass or Color Change Pass.
+Error,1,Result_3_SG,Your SG balance is insufficient.<br>Please re-verify your balance.
+Error,1,Result_7_SG,Purchase failed.<br>Your SG balance may be too low.<br>Please verify your balance.
+Error,1,Result_9,"our<br>inventory, so changes could not be applied. Exit the Salon<br>after returning the outfit to its original state."
+Error,1,Result_10,y so changes<br>could not be applied. Exit the Salon after returning the<br>outfit to its original state.
+Error,1,Result_11,racter at least $(0)cm tall.<br><yellow>Press <c><%TabForward><yellow> to check your character's <br>undressed height.<c>
+Error,1,Result_12,ot be color changed. Exit the Salon <br>after returning the color to its original state.
+Error,1,Error_ImproperData_Exit,n after changing the affected areas or using<br>other saved data from Looks.<br><br>- Affected Areas<br>$(0)
+Error,1,Error_ImproperData_LoadMyFashion,There is a problem with the current appearance data so it<br>could not be saved to Looks.
+Error,1,Error_ImproperData_InMyFashion,猀愀瘀攀搀 搀愀琀愀 昀爀漀洀 䰀漀漀欀猀㰀戀爀㸀漀爀 挀栀愀渀最攀 琀栀攀 愀昀昀攀挀琀攀搀 愀爀攀愀猀 椀渀 琀栀攀 匀愀氀漀渀⸀㰀戀爀㸀㰀戀爀㸀ⴀ 䄀昀昀攀挀琀攀搀 䄀爀攀愀猀㰀戀爀㸀␀⠀　⤀
+Error,1,Error_ImproperDataSaveMyFashion,攀 匀愀氀漀渀⸀㰀戀爀㸀㰀戀爀㸀唀猀攀 漀琀栀攀爀 猀愀瘀攀搀 搀愀琀愀 昀爀漀洀 䰀漀漀欀猀 漀爀 挀栀愀渀最攀 琀栀攀 愀昀昀攀挀琀攀搀 愀爀攀愀猀㰀戀爀㸀椀渀 琀栀攀 匀愀氀漀渀⸀
+Error,1,Error_ImproperData_TypeNone,Other
+Error,1,Error_ImproperData_TypeSelect,Select Item
+Error,1,Error_ImproperData_TypeRace,Race
+Error,1,Error_ImproperData_TypeSex,Type
+Error,1,Error_ImproperData_TypeVoice,Select Voice
+Error,1,Error_ImproperData_TypeSkinColor,Skin Color
+Error,1,Error_ImproperData_Sep,","
+Error,1,Error_ImproperData_SelectType_MainParts,Outfit or Body
+Error,1,Error_ImproperData_SelectType_BodyPaint1,Body Paint 1
+Error,1,Error_ImproperData_SelectType_BodyPaint2,Stickers
+Error,1,Error_ImproperData_SelectType_Eye,Iris Pattern
+Error,1,Error_ImproperData_SelectType_Eyebrow,Eyebrows
+Error,1,Error_ImproperData_SelectType_Eyelash,Eyelashes
+Error,1,Error_ImproperData_SelectType_Face,Face Variants
+Error,1,Error_ImproperData_SelectType_FacePaint1,Face Variants
+Error,1,Error_ImproperData_SelectType_FacePaint2,Makeup Pattern
+Error,1,Error_ImproperData_SelectType_Hair,Hairstyle or Head Parts
+Error,1,Error_ImproperData_SelectType_Acccessory1,Accessory 1
+Error,1,Error_ImproperData_SelectType_Acccessory2,Accessory 2
+Error,1,Error_ImproperData_SelectType_Acccessory3,Accessory 3
+Error,1,Error_ImproperData_SelectType_FacePaint3,Makeup Pattern 2
+Error,1,Error_ImproperData_SelectType_Leg,Legs
+Error,1,Error_ImproperData_SelectType_Arm,Arms
+Error,1,Error_ImproperData_SelectType_Acccessory4,Accessory 4
+Error,1,Error_ImproperData_SelectType_Basewear,Basewear
+Error,1,Error_ImproperData_SelectType_Innerwear,Innerwear
+Error,1,Error_ImproperData_SelectType_BodyPaint3,Body Paint 2
+Error,1,Error_ImproperData_Select_Etc,Other
+Error,1,Error_ImproperData_SelectType_Skin,Skin
+Error,1,Error_ImproperData_SelectType_Ears,Ears
+Error,1,Error_ImproperData_SelectType_Dental,Dental
+Error,1,Error_ImproperData_SelectType_Horn,Horn
+Error,1,Error_ImproperData_SelectType_Accessory5,Accessory 5
+Error,1,Error_ImproperData_SelectType_Accessory6,Accessory 6
+Error,1,Error_ImproperData_SelectType_Accessory7,Accessory 7
+Error,1,Error_ImproperData_SelectType_Accessory8,Accessory 8
+Error,1,Error_ImproperData_SelectType_Accessory9,Accessory 9
+Error,1,Error_ImproperData_SelectType_Accessory10,Accessory 10
+Error,1,Error_ImproperData_SelectType_Accessory11,Accessory 11
+Error,1,Error_ImproperData_SelectType_Accessory12,Accessory 12
+Error,1,Result_SPCreate_ChargeError_SG,Creation failed. Your Star Gems balance <br>may be too low. Please verify your balance.
+Error,1,Result_13,br>Exit the Salon after changing the affected areas or using<br>other saved data from Looks.
+Error,1,Result_14,Not enough space in your inventory to take off your fashion items.
+Common,0,Title,エステ
+Common,0,Message_1,再編集可能期間中のため、<br>「エステ利用パス」を消費せずに<br>編集が可能です。
+Common,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
+Common,0,Title_SPEdit,サポートパートナーエステ
+Common,0,Message_6,レイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_7,ます。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_8,になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_9,トはカラー選択も対象になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_2,爀㸀㬀ꈠꐰ옰터쌰꼰İ괰रꭐ㱞戀爀㸀   欀䈰謰ꈰꐰ옰渰缰栰㪈啹谰縰夰Ȱ㰰戀爀㸀㬀딠�ﰰ젰터ﰰ젰쨰ﰰ䰰䀰⡷⵵湎ꈰꐰ옰䰰㰰戀爀㸀   贀왽ⶖ湎㐰ࡘ潔栰㪈啹谰縰嬰錰Ȱ0贀왽ﵓᾀ鍧ⶕ湎弰脰İ㰰戀爀㸀ఀ꠰뤰옰⤰⡒텵뤰രరꬰﰰ섰ꜰ렰터뤰ര鈰㰰戀爀㸀蠀뭭完娰欰왽䲖ﵓ枀夰Ȱ㰰戀爀㸀㰀戀爀㸀㬀︠慛ꊌꐰ옰欰漰ꈰꐰ옰0Ꝏઉ李㰰戀爀㸀   攀靑䉞湦謰詫䈰鍦䲕栰㪈啹谰昰䐰縰夰Ȱ㰰戀爀㸀㬀ꈠꐰ옰터쌰꼰İ괰रꭐ歞䈰謰㰰戀爀㸀   ꈀꐰ옰渰缰栰㪈啹谰縰夰Ȱ㰰戀爀㸀㬀딠�ﰰ젰터ﰰ젰쨰ﰰ䰰䀰⡷⵵湎ꈰꐰ옰䰰㰰戀爀㸀   贀왽ⶖ湎㐰ࡘ潔栰㪈啹谰縰嬰錰Ȱ0
+Common,0,Message_3,示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Common,0,Message_4,が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Common,0,Message_5,攀靑䉞湦謰詫䈰鍦䲕栰㪈啹谰昰䐰縰夰Ȱ㰰戀爀㸀㬀ꈠꐰ옰터쌰꼰İ괰रꭐ歞䈰謰㰰戀爀㸀   ꈀꐰ옰渰缰栰㪈啹谰縰夰Ȱ㰰戀爀㸀㬀딠�ﰰ젰터ﰰ젰쨰ﰰ䰰䀰⡷⵵湎ꈰꐰ옰䰰㰰戀爀㸀   贀왽ⶖ湎㐰ࡘ潔栰㪈啹谰縰嬰錰Ȱ0刀来獩整敲d㰀─伀眀渀攀爀开椀挀漀渀㸀伀眀渀攀爀 刀攀最椀猀琀攀爀攀搀
+Common,1,Title,SALON
+Common,1,Message_1,"You are still in the allowed re-editing period, so<br>you may edit this character without using a<br>Salon Pass."
+Common,1,Title_SPCreate,AUXILIARY CHARACTER CREATION
+Common,1,Title_SPEdit,AUXILIARY SALON
+Common,1,Message_6,race or gender.<br>*Items which the player is currently wearing will not be<br>displayed.
+Common,1,Message_7,es in race or gender.<br>*Items which the player is currently wearing will not be<br>displayed.
+Common,1,Message_8,due to differences in race or gender.<br>*Items which the player is currently wearing will not be<br>displayed.
+Common,1,Message_9,椀愀爀礀 搀甀攀 琀漀 搀椀昀昀攀爀攀渀挀攀猀 椀渀 爀愀挀攀 漀爀 最攀渀搀攀爀⸀㰀戀爀㸀⨀䤀琀攀洀猀 眀栀椀挀栀 琀栀攀 瀀氀愀礀攀爀 椀猀 挀甀爀爀攀渀琀氀礀 眀攀愀爀椀渀最 眀椀氀氀 渀漀琀 戀攀㰀戀爀㸀 搀椀猀瀀氀愀礀攀搀⸀
+Common,1,Message_2,渀漀琀 㰀戀爀㸀戀攀 猀栀漀眀渀 昀漀爀 椀琀攀洀猀 戀攀椀渀最 眀漀爀渀 戀礀 䄀甀砀椀氀椀愀爀椀攀猀⸀
+Common,1,Message_3,爀㸀匀琀漀爀愀最攀⸀ 䤀琀 眀椀氀氀 渀漀琀 戀攀 猀栀漀眀渀 昀漀爀 椀琀攀洀猀 戀攀椀渀最 㰀戀爀㸀眀漀爀渀 戀礀 䄀甀砀椀氀椀愀爀椀攀猀⸀
+Common,1,Message_4,or Character Storage. It will not be shown for <br>items being worn by Auxiliaries.
+Common,1,Message_5,r <br>inventory or Character Storage. It will not <br>be shown for items being worn by Auxiliaries.
+Owner,0,Registered,<%Owner_icon>オーナー登録済み
+Owner,0,Unregistered,オーナー登録必要
+Owner,1,Registered,<%Owner_icon>Owner Registered
+Owner,1,Unregistered,Registeration Req.

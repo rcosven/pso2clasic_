@@ -1,0 +1,97 @@
+﻿section,group,id,text
+common,0,IncidentName,時限爆弾解除
+common,0,TrialBeginMsg,全ての時限爆弾を解除せよ！
+common,0,TrialAbstract,全ての時限爆弾を解除せよ！
+common,0,ToastOnHalfFinish,時限爆弾残存数、あと半分。
+common,0,ToastOnLast,時限爆弾残存数、あと１つ。
+common,0,ToastCollect,$(0)によって時限爆弾が解除されました。
+common,0,ToastCollect2,時限爆弾が解除されました。
+common,0,ToastRewards,$(0)が$(1)EXP $(2)メセタ獲得
+common,1,IncidentName,Desactivar bombas de tiempo
+common,1,TrialBeginMsg,¡Desactiva todas las bombas de tiempo!
+common,1,TrialAbstract,¡Desactiva todas las bombas de tiempo!
+common,1,ToastOnHalfFinish,La mitad de las bombas de tiempo siguen ahí.
+common,1,ToastOnLast,Sólo queda una bomba de tiempo.
+common,1,ToastCollect,$(0) desactivó una bomba de tiempo.
+common,1,ToastCollect2,Se desactivó una bomba de tiempo.
+common,1,ToastRewards,$(0) ganó $(1) EXP y $(2) meseta.
+type1,0,NpcComOnBegin,ダーカーによる時限式の爆弾が出現。<br>すでに複数個が確認されています。<br>何としても、爆発前に対処して下さい。
+type1,0,NpcComOnBegin2,時限爆弾は威力こそ高いですが<br>仕組みを理解すれば解除可能です。<br>よく、その爆弾を調べてみて下さい。
+type1,0,NpcComOnSuccess,全ての時限爆弾の解除を確認。<br>お疲れ様でした。
+type1,0,NpcComOnFailure,時限爆弾、爆発を検知。<br>……無事、でしょうか？
+type1,0,NpcComOnLastHalf,残りの時限爆弾は約半数です。<br>引き続き解除を続けて下さい。
+type1,0,NpcComOnLastOne,残りの時限爆弾はあと１つです。
+type1,0,NpcComOnCorrect,対象の時限爆弾、熱量低下。<br>無力化を確認しました。解除成功です。
+type1,0,NpcComOnIncorrect,選択に間違いがあったようです。<br>再び選択が可能になるまでは<br>時間がかかるようですね。
+type1,0,NpcComOnRemain30,時限爆弾のタイムリミットまで<br>残り、30秒です。<br>対処を急いでください。
+type1,0,NpcComOnJoin,現在、ダーカーの時限爆弾に対する<br>対応を行っています。<br>各員、協力をお願いします。
+type1,1,NpcComOnBegin,Hemos confirmado la presencia de varias bombas<br>colocadas por Falspawn. ¡Debes<br>desactivarlos antes de que exploten!
+type1,1,NpcComOnBegin2,Puedes descubrir sus<br>mecanismos. Investiga las bombas cuidadosamente.
+type1,1,NpcComOnSuccess,Confirmando que todas las bombas de tiempo están desactivadas.<br>Gran trabajo.
+type1,1,NpcComOnFailure,"¡Detectando la explosión de una bomba de tiempo!... Estás bien,<br>¿verdad?"
+type1,1,NpcComOnLastHalf,La mitad de las bombas de tiempo siguen ahí.<br>¡Continúa desactivandolos!
+type1,1,NpcComOnLastOne,Sólo queda una bomba de tiempo.
+type1,1,NpcComOnCorrect,La bomba de tiempo objetivo se ha enfriado.<br>Confirmado desactivado.
+type1,1,NpcComOnIncorrect,Parece que tomaste una decisión equivocada. Le tomará a<br>un poco de tiempo antes de que pueda elegir nuevamente.
+type1,1,NpcComOnRemain30,Sólo quedan 30 segundos para que se acabe el tiempo.<br>¡Date prisa y desactiva las bombas de tiempo!
+type1,1,NpcComOnJoin,"Actualmente estamos trabajando para desactivar las bombas de tiempo de<br>Falspawn.<br>¡Todos los operativos, por favor ayuden!"
+type2,0,NpcComOnBegin,まずいな……ダーカーの時限爆弾が<br>そこかしこに出現しているようだ。<br>爆発前に対処したい、急げ。
+type2,0,NpcComOnBegin2,かの時限爆弾の威力は図抜けているが<br>仕掛けの謎が解れば無力化も可能だ。<br>時間の許す限り、解除に取り組め。
+type2,0,NpcComOnSuccess,よし、全ての時限爆弾の停止を確認。<br>よくやった。
+type2,0,NpcComOnFailure,異常熱量を感知！<br>止められなかったか……！<br>くっ……無事か？
+type2,0,NpcComOnLastHalf,よし、残りの時限爆弾の数は<br>あと半分ほどだ。<br>引き続き、解除を続けろ。
+type2,0,NpcComOnLastOne,時限爆弾、残りはあと一つだ。<br>最後まで気を抜くなよ。
+type2,0,NpcComOnCorrect,時限爆弾の反応が弱まったな。<br>解除に成功したようだ。
+type2,0,NpcComOnIncorrect,解除ミスだな……<br>その様子だと、しばらくは<br>ポイントの再選択ができないな。
+type2,0,NpcComOnRemain30,時限爆弾のタイムリミットまで<br>あと30秒だ。<br>対処を急げ。
+type2,0,NpcComOnJoin,いいところに来たな。<br>現在、ダーカーの時限爆弾の<br>対応を行っている。手伝えるか？
+type2,1,NpcComOnBegin,"Mierda, parece que tenemos bombas Falspawn de tiempo<br>por todos lados.<br>¡Desactívalos antes de que exploten!"
+type2,1,NpcComOnBegin2,Síguelos si<br>descubres cómo funcionan.<br>¡Desactiva tantos como el tiempo lo permita!
+type2,1,NpcComOnSuccess,"Bien, confirmando que todas las bombas de tiempo<br>han sido detenidas. ¡Bien hecho!"
+type2,1,NpcComOnFailure,¡Detectando niveles de calor anormales! Supongo que<br>significa que estallaron algunas bombas... ¿Estás bien?
+type2,1,NpcComOnLastHalf,"Bien, quedan aproximadamente la mitad de las bombas de tiempo.<br>Sigue apagándolos."
+type2,1,NpcComOnLastOne,Sólo queda una bomba de tiempo. ¡Sigue adelante!
+type2,1,NpcComOnCorrect,La lectura de la bomba de tiempo se ha debilitado.<br>Parece que lo has desactivado con éxito.
+type2,1,NpcComOnIncorrect,Error al desactivar... Parece que tendrás que esperar<br>un poco antes de poder volver a intentarlo.
+type2,1,NpcComOnRemain30,¡Te quedan 30 segundos hasta el momento en que exploten<br>bombas! ¡Date prisa!
+type2,1,NpcComOnJoin,¡Has llegado en un gran momento! Ahora mismo estamos<br>desactivando algunas bombas de tiempo Falspawn.<br>¿Puedes ayudar?
+type3,0,NpcComOnBegin,こ、この反応っ！　警戒、警戒っ！<br>ダーカーの時限爆弾が出現です！<br>しかもすっごくたっくさん！
+type3,0,NpcComOnBegin2,で、でもでも安心して下さい！<br>よく見れば止めるヒントがあるはず！<br>よーく調べて、止めて下さいー！
+type3,0,NpcComOnSuccess,/face2 時限爆弾、ぜーんぶ止まりました！<br>やりましたね！　お疲れ様ですっ！
+type3,0,NpcComOnFailure,あっちゃあー……大爆発……<br>って、そうじゃない！<br>だ、だだっ、大丈夫ですかっ？！
+type3,0,NpcComOnLastHalf,残りはあと半分ですよー！<br>頑張って、頑張ってくださいっ！
+type3,0,NpcComOnLastOne,残り、あと一つです！<br>最後の正念場、ってやつですよ！<br>……あれ、違う？
+type3,0,NpcComOnCorrect,その時限爆弾、止まったようですよ！<br>やりました！　解除大成功ですっ！
+type3,0,NpcComOnIncorrect,うーん、間違えちゃった感じです。<br>再び選択ができるようになるまでは<br>少し時間がかかりそうですねー……
+type3,0,NpcComOnRemain30,あわっ、あわわっ！　時限爆弾<br>あと30秒で爆発しちゃいます！<br>急いで、急いでくださいー！
+type3,0,NpcComOnJoin,/face2 いいところに来てくれました！<br>ダーカーの時限爆弾解除を<br>手伝ってはもらえませんかっ？
+type3,1,NpcComOnBegin,愀眀渀 琀椀洀攀 戀漀洀戀猀 漀渀㰀戀爀㸀漀甀爀 栀愀渀搀猀⸀⸀ ⸀愀渀搀 愀 眀栀漀氀攀 氀漀琀 漀昀 ✀攀洀 愀琀 琀栀愀琀℀
+type3,1,NpcComOnBegin2,攀 栀椀渀琀猀 漀渀 栀漀眀 礀漀甀 挀愀渀 猀琀漀瀀㰀戀爀㸀琀栀攀洀℀ 䌀栀攀挀欀 ✀攀洀 漀甀琀 爀攀愀氀 挀愀爀攀昀甀氀氀礀℀
+type3,1,NpcComOnSuccess,/face2 ¡Se han detenido todas las bombas de tiempo! ¡Lo hiciste!<br>¡Buen trabajo!
+type3,1,NpcComOnFailure,"Santo cielo... eso fue una maravilla... Bueno,<br>no realmente (para mí, al menos)! ¿¡A-A-Estás bien!?"
+type3,1,NpcComOnLastHalf,¡Quedan la mitad de las bombas! ¡Avanza!
+type3,1,NpcComOnLastOne,¡Solo queda uno! ¡Este es el momento de la<br>verdad! ... ¡Tampoco estoy seguro de lo que quiero decir!
+type3,1,NpcComOnCorrect,¡Tú detuviste esa bomba de tiempo! ¡Gran trabajo!<br>¡Defusión exitosa!
+type3,1,NpcComOnIncorrect,"Mmmm, parece que cometiste un error.<br>Supongo que pasará algún tiempo hasta que puedas<br>hacer otra selección....."
+type3,1,NpcComOnRemain30,"¡¡Oh oh!! ¡Solo te quedan 30 segundos hasta que<br>exploten las bombas de tiempo! ¡¡Date prisa, date prisa!!"
+type3,1,NpcComOnJoin,/face2 ¡Llegaste en un gran momento! ¿Podrías ayudar a<br>a desactivar estas bombas de tiempo Falspawn?
+type9f,0,NpcComOnBegin,ダーカーの時限式爆弾が出現！<br>すでに複数個の反応があります！<br>急いで対処してください！
+type9f,0,NpcComOnBegin2,時限式爆弾は、威力は高いですが<br>仕掛けの謎が解ければ解除可能です。<br>爆弾の外周をよく見てください！
+type9f,0,NpcComOnSuccess,時限式爆弾、すべて解除！<br>お疲れさまでした！
+type9f,0,NpcComOnFailure,時限式爆弾の爆発を検知！<br>ご無事ですか！？
+type9f,0,NpcComOnLastHalf,残りあと半分です！<br>引き続き、解除を続けてください！
+type9f,0,NpcComOnLastOne,残りの時限式爆弾、あと１つです！
+type9f,0,NpcComOnCorrect,時限式爆弾、熱量低下を確認。<br>無力化されましたね！<br>解除成功です！
+type9f,0,NpcComOnIncorrect,あちゃー、違うみたいですね。<br>もう一度爆弾の外周をよく見て<br>正解を探してください！
+type9f,0,NpcComOnRemain30,時限式爆弾のタイムリミットまで<br>残り３０秒！　ご注意を！
+type9f,0,NpcComOnJoin,/face2 いいところに来てくれました！<br>ダーカーの時限爆弾解除を<br>手伝ってはもらえませんか？
+type9f,1,NpcComOnBegin,¡Han aparecido bombas de tiempo Falspawn! ¡Recogiendo<br>múltiples señales! ¡Date prisa y desactívalos!
+type9f,1,NpcComOnBegin2,栀漀眀 琀栀攀礀 眀漀爀欀⸀㰀戀爀㸀䰀漀漀欀 爀攀愀氀氀礀 挀愀爀攀昀甀氀氀礀 愀爀漀甀渀搀 琀栀攀 漀甀琀猀椀搀攀 漀昀㰀戀爀㸀琀栀攀 戀漀洀戀℀
+type9f,1,NpcComOnSuccess,¡Todas las bombas de tiempo desactivadas! ¡Buen trabajo!
+type9f,1,NpcComOnFailure,¡Detectando la explosión de una bomba de tiempo!<br>¿¡Estás herido!?
+type9f,1,NpcComOnLastHalf,¡Quedan la mitad de las bombas de tiempo!<br>¡Sigue desactivandolos!
+type9f,1,NpcComOnLastOne,¡Solo queda una bomba de tiempo!
+type9f,1,NpcComOnCorrect,Leyendo que la bomba de tiempo se está enfriando.<br>¡Parece que lo desactivaste!
+type9f,1,NpcComOnIncorrect,漀甀琀猀椀搀攀 漀昀 琀栀攀 戀漀洀戀 漀渀攀㰀戀爀㸀洀漀爀攀 琀椀洀攀 愀渀搀 猀攀愀爀挀栀 昀漀爀 琀栀攀 爀椀最栀琀 挀漀搀攀℀
+type9f,1,NpcComOnRemain30,¡Solo quedan 30 segundos hasta que exploten las bombas de tiempo <br>! ¡Ten cuidado!
+type9f,1,NpcComOnJoin,/face2 ¡Llegaste en un gran momento! ¿Te importaría que<br>ayudara a desactivar estas bombas de tiempo Falspawn?

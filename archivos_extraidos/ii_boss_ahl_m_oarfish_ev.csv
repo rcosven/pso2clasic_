@@ -1,0 +1,31 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)を討伐せよ！
+common,0,TrialBeginMsg,$(0)を討伐せよ！
+common,0,TrialAbstract,$(0)を討伐する
+common,1,IncidentName,¡Suprime el $(0)!
+common,1,TrialBeginMsg,¡Suprime el $(0)!
+common,1,TrialAbstract,Suprimir el $(0)
+type1,0,NpcComOnPreBegin,$(0)の撤退を確認<br>待て、この反応は……<br>各員、警戒を怠るな
+type1,0,NpcComOnBegin,$(0)の再出現を確認<br>構わん、奴を討伐しろ。
+type1,0,NpcComOnSuccess,$(0)の討伐を確認<br>各員、引き続き調査を行え
+type1,1,NpcComOnPreBegin,$(0) repelido. Espera... ¿Qué es esta lectura?<br>Todas las operaciones en alerta máxima.
+type1,1,NpcComOnBegin,Obteniendo una lectura de $(0) nuevamente.<br>Sácalos rápido.
+type1,1,NpcComOnSuccess,"$(0) repelido.<br>Todas las operaciones, reanudar la encuesta."
+type2,0,NpcComOnPreBegin,目標の反応消失を確認……<br>いや、新たな反応を確認した。<br>注意を怠るな、来るぞ。
+type2,0,NpcComOnBegin,$(0)の再出現を確認した。<br>連戦となるが、頼むぞ。
+type2,0,NpcComOnSuccess,敵性存在の反応、完全に消失。<br>今度こそ終わりのようだ。<br>よくやってくれた。
+type2,1,NpcComOnPreBegin,"Objetivo confirmado abajo... Espera, tengo una nueva lectura <br>. Mantente alerta, algo viene."
+type2,1,NpcComOnBegin,"Lectura de un resurgimiento de $(0).<br>Perdón por las peleas consecutivas,<br>haz lo que puedas."
+type2,1,NpcComOnSuccess,Presencia enemiga borrada. Parecía<br>hacerlo. Trabajo bien hecho.
+type3,0,NpcComOnPreBegin,$(0)の撤退を確認<br>待て、この反応は……<br>各員、警戒を怠るな
+type3,0,NpcComOnBegin,$(0)の再出現を確認<br>構わん、奴を討伐しろ。
+type3,0,NpcComOnSuccess,$(0)の討伐を確認<br>各員、引き続き調査を行え
+type3,1,NpcComOnPreBegin,$(0) repelido. Espera... ¿Qué es esta lectura?<br>Todas las operaciones en alerta máxima.
+type3,1,NpcComOnBegin,Obteniendo una lectura de $(0) nuevamente.<br>Sácalos rápido.
+type3,1,NpcComOnSuccess,"$(0) repelido.<br>Todas las operaciones, reanudar la encuesta."
+type6,0,NpcComOnPreBegin,$(0)の撃退を確認。<br>……いえ、新たな敵性反応を感知。<br>各員、引き続き警戒を。
+type6,0,NpcComOnBegin,$(0)の再出現を感知。<br>各員、改めて撃退行動に<br>移ってください。
+type6,0,NpcComOnSuccess,敵性反応、完全消失。<br>新たな反応もありません。<br>見事な対応でした。
+type6,1,NpcComOnPreBegin,"$(0) presencia repelida.<br>Espera, se detectó nueva presencia.<br>Todas las operaciones, manténganse alerta."
+type6,1,NpcComOnBegin,"Obteniendo lecturas de $(0) nuevamente.<br>Todas las operaciones, muévanse para atacar una vez más."
+type6,1,NpcComOnSuccess,Presencia enemiga erradicada. No se detectaron nuevas lecturas <br>. Gran trabajo.

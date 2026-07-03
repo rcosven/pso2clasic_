@@ -1,0 +1,39 @@
+section,group,id,text
+Basic,0,Title,空中遊園アークマランド
+Basic,0,Explanation,アルは<br>スコアを稼ぐには欠かせないものである。<br>各員、積極的な挑戦を推奨する。<br>――――――――――――――――――――<br>ルーム内のスコア共有<br>制限時間経過でクエスト終了
+Basic,1,Title,Sky Playground Arkumaland
+Basic,1,Explanation,me limit expires.
+QuestTarget,0,SimpleExplanation,エネミーを撃破しスコアを獲得せよ！
+QuestTarget,1,SimpleExplanation,Destroy enemies to increase your score!
+PreTransportDirection,0,NpcComMsg1,参集に感謝する。<br>これより、エネミーの撃破数による<br>スコアアタックに挑戦されたし。
+PreTransportDirection,0,NpcComMsg2,なお、クエストの途中で発生する<br>エマージェンシートライアルには<br>トライアルオーダーを設定している。
+PreTransportDirection,0,NpcComMsg3,達成により「スコア上昇倍率」が向上。<br>高得点が期待されるため、各員積極的に<br>挑戦されたし。以上。
+PreTransportDirection,1,NpcComMsg1,n you will earn<br>points depending on the number<br>of enemies defeated.
+PreTransportDirection,1,NpcComMsg2,Note that Trial Orders have been established<br>for the Emergency Trials which are<br>triggered during the quest.
+PreTransportDirection,1,NpcComMsg3,㰀戀爀㸀洀愀砀椀洀椀稀攀 琀栀攀椀爀 猀挀漀爀攀 愀爀攀 愀搀瘀椀猀攀搀 琀漀 琀愀欀攀 攀愀挀栀㰀戀爀㸀挀栀愀氀氀攀渀最攀 漀渀 瀀爀漀愀挀琀椀瘀攀氀礀⸀ 吀栀愀琀 椀猀 愀氀氀⸀
+AreaName,0,Area0S,浮遊大陸エリア1
+AreaName,0,Area0L,惑星アムドゥスキア 浮遊大陸エリア1
+AreaName,0,Area1S,浮遊大陸エリア2
+AreaName,0,Area1L,惑星アムドゥスキア 浮遊大陸エリア2
+AreaName,1,Area0S,Floating Continent Area 1
+AreaName,1,Area0L,Amduskia - Floating Continent Area 1
+AreaName,1,Area1S,Floating Continent Area 2
+AreaName,1,Area1L,Amduskia - Floating Continent Area 2
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Clear a special Client Order
+AcceptCondition,1,a2,Clear a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+NpcMessage,0,NPC_QUEST_START,クエストを開始する。<br>より多くのエネミーを撃破し<br>自身のハイスコアを更新せよ。
+NpcMessage,0,NPC_TIME_HALF,予告：終了時刻まで、半分となった。<br>トライアルオーダーの達成をめざし<br>倍率を上げ高得点を取得せよ。
+NpcMessage,0,NPC_TIME_1MIN,予告：終了時刻まで、あと１分。<br>最後まで、各自奮闘せよ。
+NpcMessage,1,NPC_QUEST_START,The quest starts now.<br>Defeat as many enemies as you can and<br>beat your high score.
+NpcMessage,1,NPC_TIME_HALF,Warning: You've reached the halfway point.<br>Try and complete a Trial Order to increase<br>your multiplier for more points.
+NpcMessage,1,NPC_TIME_1MIN,Warning: Only one minute left until time runs out.<br>Keep fighting until the end.
+LineMessage,0,LINE_QUEST_START,エネミーを撃破しスコアを獲得せよ！
+LineMessage,0,LINE_TIME_1MIN,残り時間、あと1分！
+LineMessage,1,LINE_QUEST_START,Destroy enemies to increase your score!
+LineMessage,1,LINE_TIME_1MIN,Only one minute left!

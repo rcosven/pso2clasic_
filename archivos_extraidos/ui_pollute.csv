@@ -1,0 +1,551 @@
+section,group,id,text
+FormSelect,0,FormSelectOperation_KeyBoard,選択：<%MoveForward><%MoveBack> 発動：<%NormalAttack>/<%Decide>  キャンセル：[Esc]キー
+FormSelect,0,FormSelectOperation_Pad,選択：左スティック/方向キー  発動：<%Decide>  キャンセル：<%Cancel>
+FormSelect,1,FormSelectOperation_KeyBoard,Select: <%MoveForward><%MoveBack> Activate: <%NormalAttack>/<%Decide>  Cancel: [Esc] Key
+FormSelect,1,FormSelectOperation_Pad,Select: Left Stick/Directional Keys  Activate: <%Decide>  Cancel: <%Cancel>
+Common,0,message1,テストデータ
+Common,0,NameAK,エルダー
+Common,0,NameTE,ルーサー
+Common,0,NameDE,アプレンティス
+Common,0,NameMA,ダブル
+Common,0,FormName,$(0)フォーム
+Common,0,DummyFormName,ダークブラスト
+Common,0,CaptionHaveExp,未使用EXP
+Common,0,ToastCancelPollute,ダークブラストがキャンセルされました
+Common,1,message1,Test Data
+Common,1,NameAK,Elder
+Common,1,NameTE,Luther
+Common,1,NameDE,Apprentice
+Common,1,NameMA,Gemini
+Common,1,FormName,$(0) Form
+Common,1,DummyFormName,Dark Blast
+Common,1,CaptionHaveExp,Unused EXP
+Common,1,ToastCancelPollute,Dark Blast was cancelled.
+Mainmenu,0,message1,テストデータ
+Mainmenu,1,message1,Test Data
+Formmenu,0,message1,テストデータ
+Formmenu,0,StatusDetailsFormTitle,ダークブラスト情報
+Formmenu,0,StatusDetailsFormSubTitle,ステータス
+Formmenu,0,PolluteListFormTitle,ダークブラスト
+Formmenu,0,PolluteListFormHaveExp,未使用EXP
+Formmenu,0,PolluteListPopupSkill,スキルを習得する
+Formmenu,0,PolluteListPopupTrans,発動アクションの設定
+Formmenu,0,PolluteListPopupColor,カラーを変更する
+Formmenu,0,PolluteListPopupResetSkillLevel,スキルをリセットする
+Formmenu,0,PolluteListPopupStyle,-
+Formmenu,0,PolluteListPopupStyleAndColor,表示タイプ/カラーを変更する
+Formmenu,0,FormDetailsText1,ダークファルス【巨躯】の力を具現化させ<br>その圧倒的な力による<br>直接攻撃を主体に戦う能力。
+Formmenu,0,FormDetailsText2,ダークファルス【敗者】の力を具現化させ<br>その迸る魔力を操り<br>空中からの遠距離攻撃を主体に戦う能力。
+Formmenu,0,FormDetailsText3,ダークファルス【若人】の力を具現化させ<br>その華麗な敏捷性と、眷属たる蟲を操る力で<br>臨機応変に戦う能力。
+Formmenu,0,FormDetailsText4,ダークファルス【双子】の力を具現化させ<br>その優れた火力と、多彩な玩具型武器に<br>変身する力で、楽しげに戦う能力。
+Formmenu,0,ResetSkillLevel_Title,スキルリセット
+Formmenu,0,ResetSkillLevel_Ask,$(0)の<br>すべてのスキルレベルをリセットします。<br><pure_yellow><br>※レベルアップに消費したEXPが還元されます。<br>※スキル解放条件はリセットされません。<br><c><br>よろしいですか？
+Formmenu,0,ResetSkillLevel_Success,$(0)の<br>すべてのスキルレベルをリセットしました。
+Formmenu,0,ResetSkillLevel_ErrorCommon,予期せぬ問題が発生したため、<br>処理を実行できませんでした。<br><br>しばらく時間をおいてから、再度お試しください。
+Formmenu,0,ResetSkillLevel_ErrorServer,サーバーに問題が発生したため、<br>処理を実行できませんでした。<br><br>しばらく時間をおいてから、再度お試しください。
+Formmenu,0,ResetSkillLevel_ErrorInQuest,クエスト中のため、<br>処理を実行できませんでした。
+Formmenu,0,Style_Title,-
+Formmenu,0,Style_Message,-
+Formmenu,0,Style_RadioItem_0,-
+Formmenu,0,Style_RadioItem_1,-
+Formmenu,1,message1,Test Data
+Formmenu,1,StatusDetailsFormTitle,DARK BLAST INFORMATION
+Formmenu,1,StatusDetailsFormSubTitle,Status
+Formmenu,1,PolluteListFormTitle,DARK BLAST
+Formmenu,1,PolluteListFormHaveExp,Unused EXP
+Formmenu,1,PolluteListPopupSkill,Learn Skills
+Formmenu,1,PolluteListPopupTrans,Activated Action Settings
+Formmenu,1,PolluteListPopupColor,Set Colors
+Formmenu,1,PolluteListPopupResetSkillLevel,Reset Skills
+Formmenu,1,PolluteListPopupStyle,-
+Formmenu,1,PolluteListPopupStyleAndColor,[Aura Options] > [Change Color]
+Formmenu,1,FormDetailsText1,Become embodied with Dark Falz Elder's<br>overwhelming power and perform direct attacks.
+Formmenu,1,FormDetailsText2,Become embodied with Dark Falz Luther's power <br>and manipulate his surging magic to perform <br>ranged attacks from the air.
+Formmenu,1,FormDetailsText3,ly with her elegant <br>agility and ability to manipulate insect followers.
+Formmenu,1,FormDetailsText4,ir superior firepower and <br>ability to morph into various toy-like weapons.
+Formmenu,1,ResetSkillLevel_Title,RESET SKILLS
+Formmenu,1,ResetSkillLevel_Ask,ed to you. <br>Unlock requirements will not be reset.<br><c><br>Are you sure you wish to proceed?
+Formmenu,1,ResetSkillLevel_Success,All skill levels of $(0) have been reset.
+Formmenu,1,ResetSkillLevel_ErrorCommon,Unable to process due to an unexpected error.<br>Please wait a while and try again.
+Formmenu,1,ResetSkillLevel_ErrorServer,Unable to process due to a problem with the server.<br><br>Please wait a while and try again.
+Formmenu,1,ResetSkillLevel_ErrorInQuest,Unable to process because you are on a quest.
+Formmenu,1,Style_Title,-
+Formmenu,1,Style_Message,-
+Formmenu,1,Style_RadioItem_0,-
+Formmenu,1,Style_RadioItem_1,-
+Result,0,message1,テストデータ
+Result,0,PolluteResultTitle,ダークブラストリザルト
+Result,0,BeforePolluteResultTitle,前回のダークブラストリザルト
+Result,0,ExperienceTitle,取得ダークブラストEXP
+Result,0,GetPolluteExperienceText,獲得EXP
+Result,0,HavePolluteExperienceText,所持EXP
+Result,1,message1,Test Data
+Result,1,PolluteResultTitle,DARK BLAST RESULTS
+Result,1,BeforePolluteResultTitle,PREVIOUS DARK BLAST RESULTS
+Result,1,ExperienceTitle,ACQ. DARK BLAST EXP
+Result,1,GetPolluteExperienceText,Earned EXP
+Result,1,HavePolluteExperienceText,Current EXP
+SkillName,0,DBAction,ダークブラスト
+SkillName,0,plt_DH1Ak_Barrier,ダークネス<br>ウォール
+SkillName,0,plt_DH1Ak_Dash,フィジカル<br>ダッシュ
+SkillName,0,plt_DH1Ak_Shock,アルティメット<br>インパクト
+SkillName,0,plt_DH1Ak_HPUp,ＨＰアップ
+SkillName,0,plt_DH1Ak_PPUp,ＰＰアップ
+SkillName,0,plt_DH1Ak_AtpAllUp,全攻撃<br>アップ
+SkillName,0,plt_DH1Ak_DfpAllUp,全防御<br>アップ
+SkillName,0,plt_DH1Ak_NormalAtk1,通常攻撃<br>コンボ追加1
+SkillName,0,plt_DH1Ak_NormalAtk2,通常攻撃<br>コンボ追加2
+SkillName,0,plt_DH1Ak_AttackAdvance,Ｄアタック<br>アドバンス
+SkillName,0,plt_DH1Ak_PA1Up,タイラント<br>ストライク強化
+SkillName,0,plt_DH1Ak_PA2Up,インフィニティ<br>ラッシュ強化
+SkillName,0,plt_DH1Ak_PA3Up,パニッシュメント<br>ナックル強化
+SkillName,0,plt_DH1Ak_PPSave,ＰＰ<br>セイブ
+SkillName,0,plt_DH1Ak_PA3ShortCharge,パニッシュメント<br>ショートチャージ
+SkillName,0,plt_DH1Ak_TimeCountAtkUp,エスカレーション<br>パワー
+SkillName,0,plt_DH1Ak_StunAtk,*****
+SkillName,0,plt_DH1Ak_SnatchStep,ヴァイオレンス<br>ステップ
+SkillName,0,plt_DH1Ak_Heal,ブラッディ<br>ヒール
+SkillName,0,plt_DH2Te_Dash,シャープグライド
+SkillName,0,plt_DH2Te_SubWeapon,ウィズダム<br>フォース
+SkillName,0,plt_DH2Te_Fall,ダイブアサルト
+SkillName,0,plt_DH2Te_HPUp,ＨＰアップ
+SkillName,0,plt_DH2Te_PPUp,ＰＰアップ
+SkillName,0,plt_DH2Te_AtpAllUp,全攻撃<br>アップ
+SkillName,0,plt_DH2Te_DfpAllUp,全防御<br>アップ
+SkillName,0,plt_DH2Te_PA1Up,オルト・<br>サ・バータ強化
+SkillName,0,plt_DH2Te_PA2Up,コンバージェント<br>・レイ強化
+SkillName,0,plt_DH2Te_PA3Up,ガンマバースト<br>強化
+SkillName,0,plt_DH2Te_PenetrationShot,Ｄアタック<br>アドバンス
+SkillName,0,plt_DH2Te_PPSave,ＰＰ<br>セイブ
+SkillName,0,plt_DH2Te_StepShot,カウンター<br>ステップ
+SkillName,0,plt_DH2Te_PA1LockOnUp,オルト・サ・<br>バータ弾数増加
+SkillName,0,plt_DH2Te_StepAdvance,Ｄステップ<br>アドバンス
+SkillName,0,plt_DH2Te_PerfectKeeper,Ｄパーフェクト<br>キーパー
+SkillName,0,plt_DH2Te_Heal,スティール<br>ナレッジ
+SkillName,0,plt_DH2Te_DamageBonus,ダストスウィープ
+SkillName,0,plt_DH2Te_SPLaser,ディフュージョン<br>・レイ
+SkillName,0,DH2Te:HealBtApp,ヒール
+SkillName,0,plt_DH3De_PetAUp,ロイヤル<br>・スコーピオン
+SkillName,0,plt_DH3De_PetBUp,サーヴァント<br>・ホーネット
+SkillName,0,plt_DH3De_Dash,センセーショナ<br>ル・スピード
+SkillName,0,plt_DH3De_Force,ラクシャリアス<br>・ドリーム
+SkillName,0,plt_DH3De_Legion,ブラック・クイー<br>ン・アライバル
+SkillName,0,plt_DH3De_NormalAtk,通常攻撃<br>コンボ増加
+SkillName,0,plt_DH3De_PA2Charge,パッショネイト<br>・スピン
+SkillName,0,plt_DH3De_ForcePet,ラクシャリアス<br>・ドリーム強化
+SkillName,0,plt_DH3De_HPUp,ＨＰアップ
+SkillName,0,plt_DH3De_PPUp,ＰＰアップ
+SkillName,0,plt_DH3De_AtpAllUp,全攻撃<br>アップ
+SkillName,0,plt_DH3De_DfpAllUp,全防御<br>アップ
+SkillName,0,plt_DH3De_AttackAdvance,Ｄアタック<br>アドバンス
+SkillName,0,plt_DH3De_PA1Up,フォルティッシモ<br>・キック強化
+SkillName,0,plt_DH3De_PA2Up,グレイスフル<br>・ダンス強化
+SkillName,0,plt_DH3De_PPSave,ＰＰ<br>セイブ
+SkillName,0,plt_DH3De_Awake,アリュール<br>・シンフォニー
+SkillName,0,plt_DH3De_Drain,メロウ<br>・アブゾプション
+SkillName,0,plt_DH3De_SnatchStep,ラヴィシング<br>・ステップ
+SkillName,0,plt_DH4Ma_Cracker,フラワー<br>カーニバル
+SkillName,0,plt_DH4Ma_HPUp,ＨＰアップ
+SkillName,0,plt_DH4Ma_PPUp,ＰＰアップ
+SkillName,0,plt_DH4Ma_AtpAllUp,全攻撃<br>アップ
+SkillName,0,plt_DH4Ma_DfpAllUp,全防御<br>アップ
+SkillName,0,plt_DH4Ma_PA1Up,ビックリハンマー<br>強化
+SkillName,0,plt_DH4Ma_PA2Up,ハッピー<br>バズーカ強化
+SkillName,0,plt_DH4Ma_PA3Up,ワクワク<br>ゴーカート強化
+SkillName,0,plt_DH4Ma_NormalAtk,通常攻撃<br>コンボ増加
+SkillName,0,plt_DH4Ma_AttackAdvance,Ｄアタック<br>アドバンス
+SkillName,0,plt_DH4Ma_PPSave,ＰＰ<br>セイブ
+SkillName,0,plt_DH4Ma_SnatchStep,クラッチ<br>ステップ
+SkillName,0,plt_DH4Ma_Drain,トリック<br>＆トリート
+SkillName,0,plt_DH4Ma_AttackCountUp,ハイテンション
+SkillName,0,plt_DH4Ma_KillingHeal,デリシャス<br>ランチ
+SkillName,0,plt_DH4Ma_PA3Advance,レーシング<br>スター
+SkillName,1,DBAction,Dark Blast
+SkillName,1,plt_DH1Ak_Barrier,Dark Barrier
+SkillName,1,plt_DH1Ak_Dash,Physical Dash
+SkillName,1,plt_DH1Ak_Shock,Ultimate Impact
+SkillName,1,plt_DH1Ak_HPUp,HP Up
+SkillName,1,plt_DH1Ak_PPUp,PP Up
+SkillName,1,plt_DH1Ak_AtpAllUp,Total Attack Up
+SkillName,1,plt_DH1Ak_DfpAllUp,Total Defense Up
+SkillName,1,plt_DH1Ak_NormalAtk1,Extend Normal <br>Attack Combo 1
+SkillName,1,plt_DH1Ak_NormalAtk2,Extend Normal <br>Attack Combo 2
+SkillName,1,plt_DH1Ak_AttackAdvance,Advanced D-Attack
+SkillName,1,plt_DH1Ak_PA1Up,Enh. Tyrant <br>Strike
+SkillName,1,plt_DH1Ak_PA2Up,Enh. Infinity <br>Dash
+SkillName,1,plt_DH1Ak_PA3Up,Enh. Punishment <br>Knuckle
+SkillName,1,plt_DH1Ak_PPSave,PP Preservation
+SkillName,1,plt_DH1Ak_PA3ShortCharge,Charged <br>Punishment Shot
+SkillName,1,plt_DH1Ak_TimeCountAtkUp,Escalation Power
+SkillName,1,plt_DH1Ak_StunAtk,*****
+SkillName,1,plt_DH1Ak_SnatchStep,Violence Sidestep
+SkillName,1,plt_DH1Ak_Heal,Bloody Heal
+SkillName,1,plt_DH2Te_Dash,Swiftness
+SkillName,1,plt_DH2Te_SubWeapon,Wisdom Force
+SkillName,1,plt_DH2Te_Fall,Assault Dive
+SkillName,1,plt_DH2Te_HPUp,HP Up
+SkillName,1,plt_DH2Te_PPUp,PP Up
+SkillName,1,plt_DH2Te_AtpAllUp,Total Attack Up
+SkillName,1,plt_DH2Te_DfpAllUp,Total Defense Up
+SkillName,1,plt_DH2Te_PA1Up,Enh. Ortho <br>Sa Barta
+SkillName,1,plt_DH2Te_PA2Up,Enh. Convergent <br>Ray
+SkillName,1,plt_DH2Te_PA3Up,Enh. Gamma <br>Burst
+SkillName,1,plt_DH2Te_PenetrationShot,Advanced D-Attack
+SkillName,1,plt_DH2Te_PPSave,PP Preservation
+SkillName,1,plt_DH2Te_StepShot,Sidestep Counter
+SkillName,1,plt_DH2Te_PA1LockOnUp,Ortho Sa Barta <br>Incr. Targeting
+SkillName,1,plt_DH2Te_StepAdvance,Advanced <br>D-Sidestep
+SkillName,1,plt_DH2Te_PerfectKeeper,D-Perfect Keeper
+SkillName,1,plt_DH2Te_Heal,Steadfast <br>Knowledge
+SkillName,1,plt_DH2Te_DamageBonus,Dust Sweep
+SkillName,1,plt_DH2Te_SPLaser,Diffusion Ray
+SkillName,1,DH2Te:HealBtApp,Heal
+SkillName,1,plt_DH3De_PetAUp,Royal Scorpion
+SkillName,1,plt_DH3De_PetBUp,Servant Hornet
+SkillName,1,plt_DH3De_Dash,Sensational Speed
+SkillName,1,plt_DH3De_Force,Luxurious Dream
+SkillName,1,plt_DH3De_Legion,Fell Queen's <br>Advent
+SkillName,1,plt_DH3De_NormalAtk,Incr. Normal <br>Attack Combo
+SkillName,1,plt_DH3De_PA2Charge,Passionate Spin
+SkillName,1,plt_DH3De_ForcePet,Enh. Luxurious <br>Dream
+SkillName,1,plt_DH3De_HPUp,HP Up
+SkillName,1,plt_DH3De_PPUp,PP Up
+SkillName,1,plt_DH3De_AtpAllUp,Total Attack Up
+SkillName,1,plt_DH3De_DfpAllUp,Total Defense Up
+SkillName,1,plt_DH3De_AttackAdvance,Advanced D-Attack
+SkillName,1,plt_DH3De_PA1Up,Enh. Fortissimo <br>Kick
+SkillName,1,plt_DH3De_PA2Up,Enh. Graceful <br>Dance
+SkillName,1,plt_DH3De_PPSave,PP Preservation
+SkillName,1,plt_DH3De_Awake,Bewitching <br>Symphony
+SkillName,1,plt_DH3De_Drain,Savory Drain
+SkillName,1,plt_DH3De_SnatchStep,Ravishing Sidestep
+SkillName,1,plt_DH4Ma_Cracker,Blooming Revelry
+SkillName,1,plt_DH4Ma_HPUp,HP Up
+SkillName,1,plt_DH4Ma_PPUp,PP Up
+SkillName,1,plt_DH4Ma_AtpAllUp,Total Attack Up
+SkillName,1,plt_DH4Ma_DfpAllUp,Total Defense Up
+SkillName,1,plt_DH4Ma_PA1Up,Enh. Smash-Em <br>Hammer
+SkillName,1,plt_DH4Ma_PA2Up,Enh. Magnificent <br>Minigun
+SkillName,1,plt_DH4Ma_PA3Up,Enh. Juicin' <br>Go-Kart
+SkillName,1,plt_DH4Ma_NormalAtk,Incr. Normal <br>Attack Combo
+SkillName,1,plt_DH4Ma_AttackAdvance,Advanced D-Attack
+SkillName,1,plt_DH4Ma_PPSave,PP Preservation
+SkillName,1,plt_DH4Ma_SnatchStep,Clutch Sidestep
+SkillName,1,plt_DH4Ma_Drain,Trick AND Treat
+SkillName,1,plt_DH4Ma_AttackCountUp,Party Time
+SkillName,1,plt_DH4Ma_KillingHeal,Tasty Morsel
+SkillName,1,plt_DH4Ma_PA3Advance,Racing Star
+SkillExplanation,0,DBAction,各ダークファルスの力を呼び出し<br>発現させる能力
+SkillExplanation,0,plt_DH1Ak_Barrier,敵を引き寄せる効果のある障壁を<br>設置する
+SkillExplanation,0,plt_DH1Ak_Dash,一定時間、高速でダッシュを行う
+SkillExplanation,0,plt_DH1Ak_Shock,力を解き放ち<br>広範囲に大ダメージを与える。<br>発動中、一度しか使用できない
+SkillExplanation,0,plt_DH1Ak_HPUp,ＨＰ最大値が上昇する
+SkillExplanation,0,plt_DH1Ak_PPUp,ＰＰ最大値が上昇する
+SkillExplanation,0,plt_DH1Ak_AtpAllUp,打・射・法撃力が上昇する
+SkillExplanation,0,plt_DH1Ak_DfpAllUp,打・射・法防御力が上昇する
+SkillExplanation,0,plt_DH1Ak_NormalAtk1,通常攻撃に４段目を追加する
+SkillExplanation,0,plt_DH1Ak_NormalAtk2,通常攻撃に５段目を追加する
+SkillExplanation,0,plt_DH1Ak_AttackAdvance,通常攻撃にダメージボーナスを得る
+SkillExplanation,0,plt_DH1Ak_PA1Up,タイラントストライクに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH1Ak_PA2Up,インフィニティラッシュに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH1Ak_PA3Up,パニッシュメントナックルに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH1Ak_PPSave,ＰＰを消費する行動の<br>消費ＰＰが軽減される
+SkillExplanation,0,plt_DH1Ak_PA3ShortCharge,パニッシュメントナックルの<br>チャージ時間を短縮する
+SkillExplanation,0,plt_DH1Ak_TimeCountAtkUp,時間経過によって<br>ダメージボーナスを得て<br>被ダメージを軽減する
+SkillExplanation,0,plt_DH1Ak_StunAtk,*****
+SkillExplanation,0,plt_DH1Ak_SnatchStep,ステップで打撃ダメージを与えられる<br>ようになり、JAタイミングが<br>発生するようになる
+SkillExplanation,0,plt_DH1Ak_Heal,自分と、周囲に居る味方のHPを回復する
+SkillExplanation,0,plt_DH2Te_Dash,一定時間、高速で移動する
+SkillExplanation,0,plt_DH2Te_SubWeapon,周囲に衝撃波を発生させ<br>攻撃と同時に身を守る。<br>他の攻撃中でも使用可能
+SkillExplanation,0,plt_DH2Te_Fall,下方に向けて急降下攻撃を行う
+SkillExplanation,0,plt_DH2Te_HPUp,ＨＰ最大値が上昇する
+SkillExplanation,0,plt_DH2Te_PPUp,ＰＰ最大値が上昇する
+SkillExplanation,0,plt_DH2Te_AtpAllUp,打・射・法撃力が上昇する
+SkillExplanation,0,plt_DH2Te_DfpAllUp,打・射・法防御力が上昇する
+SkillExplanation,0,plt_DH2Te_PA1Up,オルト・サ・バータに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH2Te_PA2Up,コンバージェント・レイに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH2Te_PA3Up,ガンマバーストに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH2Te_PenetrationShot,通常攻撃にダメージボーナスを得る
+SkillExplanation,0,plt_DH2Te_PPSave,ＰＰを消費する行動の<br>消費ＰＰが軽減される
+SkillExplanation,0,plt_DH2Te_StepShot,ステップ時に攻撃を発射。<br>敵の攻撃を回避した際は<br>カウンター攻撃を発射する
+SkillExplanation,0,plt_DH2Te_PA1LockOnUp,オルト・サ・バータの<br>発射数を増加する
+SkillExplanation,0,plt_DH2Te_StepAdvance,ステップ中の無敵時間を延長する
+SkillExplanation,0,plt_DH2Te_PerfectKeeper,体力が一定以上のとき<br>エネミーへのダメージが増加する
+SkillExplanation,0,plt_DH2Te_Heal,攻撃回避時に<br>自分のHPを回復する
+SkillExplanation,0,plt_DH2Te_DamageBonus,強敵ではない相手に対して<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH2Te_SPLaser,拡散した魔力の奔流により<br>直線範囲に大ダメージを与える。<br>発動中、一度しか使用できない
+SkillExplanation,0,plt_DH3De_PetAUp,操蟲：ロイヤル・スコーピオンに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH3De_PetBUp,操蟲：サーヴァント・ホーネットに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH3De_Dash,一定時間、高速でダッシュを行う
+SkillExplanation,0,plt_DH3De_Force,自分と、周囲にいる味方の<br>攻撃力とクリティカル率を上昇させる
+SkillExplanation,0,plt_DH3De_Legion,すべての操蟲が一体となって突進する。<br>発動中、一度しか使用できない
+SkillExplanation,0,plt_DH3De_NormalAtk,通常攻撃に５から９段目を追加する
+SkillExplanation,0,plt_DH3De_PA2Charge,グレイスフル・ダンス発動時<br>ボタン長押しで派生可能になる
+SkillExplanation,0,plt_DH3De_ForcePet,ラクシャリアス・ドリーム発動時<br>操蟲の周囲にも同様の効果が発動する
+SkillExplanation,0,plt_DH3De_HPUp,ＨＰ最大値が上昇する
+SkillExplanation,0,plt_DH3De_PPUp,ＰＰ最大値が上昇する
+SkillExplanation,0,plt_DH3De_AtpAllUp,打・射・法撃力が上昇する
+SkillExplanation,0,plt_DH3De_DfpAllUp,打・射・法防御力が上昇する
+SkillExplanation,0,plt_DH3De_AttackAdvance,通常攻撃にダメージボーナスを得る
+SkillExplanation,0,plt_DH3De_PA1Up,フォルティッシモ・キックに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH3De_PA2Up,グレイスフル・ダンスに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH3De_PPSave,ＰＰを消費する行動の<br>消費ＰＰが軽減される
+SkillExplanation,0,plt_DH3De_Awake,与えたダメージに応じてゲージが溜まり<br>最大時に自動発動し、覚醒状態になる。<br>覚醒状態ではすべての攻撃が強化される
+SkillExplanation,0,plt_DH3De_Drain,操蟲が与えたダメージの<br>一部をＨＰとして吸収する
+SkillExplanation,0,plt_DH3De_SnatchStep,ステップで打撃ダメージを与えられる<br>ようになり、JAタイミングが<br>発生するようになる
+SkillExplanation,0,plt_DH4Ma_Cracker,一定時間、高火力の花火砲形態に変身。<br>変身時間終了時に、自動的に特大花火を<br>一斉発射する
+SkillExplanation,0,plt_DH4Ma_HPUp,ＨＰ最大値が上昇する
+SkillExplanation,0,plt_DH4Ma_PPUp,ＰＰ最大値が上昇する
+SkillExplanation,0,plt_DH4Ma_AtpAllUp,打・射・法撃力が上昇する
+SkillExplanation,0,plt_DH4Ma_DfpAllUp,打・射・法防御力が上昇する
+SkillExplanation,0,plt_DH4Ma_PA1Up,ビックリハンマーに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH4Ma_PA2Up,ハッピーバズーカに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH4Ma_PA3Up,ワクワクゴーカートに<br>ダメージボーナスを得る
+SkillExplanation,0,plt_DH4Ma_NormalAtk,通常攻撃に4から5段目を追加する
+SkillExplanation,0,plt_DH4Ma_AttackAdvance,通常攻撃にダメージボーナスを得る
+SkillExplanation,0,plt_DH4Ma_PPSave,ＰＰを消費する行動の<br>消費ＰＰが軽減される
+SkillExplanation,0,plt_DH4Ma_SnatchStep,ステップで打撃ダメージを与えられる<br>ようになり、ＪＡタイミングが<br>発生するようになる
+SkillExplanation,0,plt_DH4Ma_Drain,徒歩形態の通常攻撃とステップ攻撃で<br>与えたダメージの一部をＨＰとして<br>吸収する
+SkillExplanation,0,plt_DH4Ma_AttackCountUp,エネミーに攻撃を当てた回数に応じて<br>２段階までのダメージボーナスを得る
+SkillExplanation,0,plt_DH4Ma_KillingHeal,一定範囲内でエネミーが死亡すると<br>ＨＰとＰＰが回復する
+SkillExplanation,0,plt_DH4Ma_PA3Advance,ワクワクゴーカート発動中<br>突進アクションに<br>ダメージボーナスを得る
+SkillExplanation,1,DBAction,Abilities that summon the power of each Dark Falz.
+SkillExplanation,1,plt_DH1Ak_Barrier,Place a barrier that lures enemies.
+SkillExplanation,1,plt_DH1Ak_Dash,Dash at high speed for a limited time.
+SkillExplanation,1,plt_DH1Ak_Shock,Unleash your power to inflict major damage over <br>a wide area. Can only be used once while active.
+SkillExplanation,1,plt_DH1Ak_HPUp,Boosts your Max HP.
+SkillExplanation,1,plt_DH1Ak_PPUp,Boosts your Max PP.
+SkillExplanation,1,plt_DH1Ak_AtpAllUp,"Boosts your Melee, Ranged, and Technique Power (TEC)."
+SkillExplanation,1,plt_DH1Ak_DfpAllUp,"Boosts your Melee, Ranged, and Technique Defense."
+SkillExplanation,1,plt_DH1Ak_NormalAtk1,Adds a fourth step to Normal Attacks.
+SkillExplanation,1,plt_DH1Ak_NormalAtk2,Adds a fifth step to Normal Attacks.
+SkillExplanation,1,plt_DH1Ak_AttackAdvance,Grants a damage bonus to Normal Attacks.
+SkillExplanation,1,plt_DH1Ak_PA1Up,Grants a damage bonus to Tyrant Strike.
+SkillExplanation,1,plt_DH1Ak_PA2Up,Grants a damage bonus to Infinity Rush.
+SkillExplanation,1,plt_DH1Ak_PA3Up,Grants a damage bonus to Punishment Knuckle.
+SkillExplanation,1,plt_DH1Ak_PPSave,Reduces the amount of PP consumed.
+SkillExplanation,1,plt_DH1Ak_PA3ShortCharge,Shortens the charge time of Punishment Knuckle.
+SkillExplanation,1,plt_DH1Ak_TimeCountAtkUp,Grants a damage bonus based on time <br>passed and reduces damage taken.
+SkillExplanation,1,plt_DH1Ak_StunAtk,*****
+SkillExplanation,1,plt_DH1Ak_SnatchStep,Grants Melee Damage with a Sidestep and <br>causes Perfect Attack timing.
+SkillExplanation,1,plt_DH1Ak_Heal,Recovers HP for you and allies around you.
+SkillExplanation,1,plt_DH2Te_Dash,Move at high speed for a limited time.
+SkillExplanation,1,plt_DH2Te_SubWeapon,tects you at the same time. <br>Can be used during other attacks.
+SkillExplanation,1,plt_DH2Te_Fall,Face downward and perform a diving attack.
+SkillExplanation,1,plt_DH2Te_HPUp,Boosts your Max HP.
+SkillExplanation,1,plt_DH2Te_PPUp,Boosts your Max PP.
+SkillExplanation,1,plt_DH2Te_AtpAllUp,"Boosts your Melee, Ranged, and Technique Power."
+SkillExplanation,1,plt_DH2Te_DfpAllUp,"Boosts your Melee, Ranged, and Technique Defense."
+SkillExplanation,1,plt_DH2Te_PA1Up,Grants a damage bonus to Ortho Sa Barta.
+SkillExplanation,1,plt_DH2Te_PA2Up,Grants a damage bonus to Convergent Ray.
+SkillExplanation,1,plt_DH2Te_PA3Up,Grants a damage bonus to Gamma Burst.
+SkillExplanation,1,plt_DH2Te_PenetrationShot,Grants a damage bonus to Normal Attacks.
+SkillExplanation,1,plt_DH2Te_PPSave,Reduces the amount of PP consumed.
+SkillExplanation,1,plt_DH2Te_StepShot,Launch an attack while Sidestepping. Launch a<br>counter-attack when Dodging an enemy attack.
+SkillExplanation,1,plt_DH2Te_PA1LockOnUp,Increases the number of Ortho Sa Barta attacks.
+SkillExplanation,1,plt_DH2Te_StepAdvance,Extends the duration of invulnerability during a Sidestep.
+SkillExplanation,1,plt_DH2Te_PerfectKeeper,Increases damage to enemies when your HP <br>is above a certain point.
+SkillExplanation,1,plt_DH2Te_Heal,Heals your HP when you Dodge an attack.
+SkillExplanation,1,plt_DH2Te_DamageBonus,Grants a damage bonus against non-boss enemies.
+SkillExplanation,1,plt_DH2Te_SPLaser,Use a torrent of diffused magic to inflict major damage<br>in a linear range. Can only be used once while active.
+SkillExplanation,1,plt_DH3De_PetAUp,Grants a damage bonus to darksect: Royal Scorpion.
+SkillExplanation,1,plt_DH3De_PetBUp,Grants a damage bonus to darksect: Servant Hornet.
+SkillExplanation,1,plt_DH3De_Dash,Dash at high speed for a limited time.
+SkillExplanation,1,plt_DH3De_Force,Boosts attack power and critical hit chance <br>for you and surrounding allies.
+SkillExplanation,1,plt_DH3De_Legion,All darksects unite and charge. Can only be <br>used once while active.
+SkillExplanation,1,plt_DH3De_NormalAtk,Adds steps five to nine to Normal Attacks.
+SkillExplanation,1,plt_DH3De_PA2Charge,"While Graceful Dance is active, hold down <br>the button to perform a derivation."
+SkillExplanation,1,plt_DH3De_ForcePet,"While Luxurious Dream is active, the same effect is<br>activated around the darksects as well."
+SkillExplanation,1,plt_DH3De_HPUp,Boosts your Max HP.
+SkillExplanation,1,plt_DH3De_PPUp,Boosts your Max PP.
+SkillExplanation,1,plt_DH3De_AtpAllUp,"Boosts your Melee, Ranged, and Technique Power."
+SkillExplanation,1,plt_DH3De_DfpAllUp,"Boosts your Melee, Ranged, and Technique Defense."
+SkillExplanation,1,plt_DH3De_AttackAdvance,Grants a damage bonus to Normal Attacks.
+SkillExplanation,1,plt_DH3De_PA1Up,Grants a damage bonus to Fortissimo Kick.
+SkillExplanation,1,plt_DH3De_PA2Up,Grants a damage bonus to Graceful Dance.
+SkillExplanation,1,plt_DH3De_PPSave,Reduces the amount of PP consumed.
+SkillExplanation,1,plt_DH3De_Awake,ctivated and you enter an <br>awakened state where all your attacks are enhanced.
+SkillExplanation,1,plt_DH3De_Drain,A portion of the damage inflicted by the darksects is <br>absorbed as HP.
+SkillExplanation,1,plt_DH3De_SnatchStep,Grants Melee Damage with a Sidestep and causes <br>Perfect Attack timing.
+SkillExplanation,1,plt_DH4Ma_Cracker,甀瀀 愀渀搀 礀漀甀 爀攀瘀攀爀琀 戀愀挀欀Ⰰ 㰀戀爀㸀礀漀甀 眀椀氀氀 猀椀洀甀氀琀愀渀攀漀甀猀氀礀 氀愀甀渀挀栀 攀砀琀爀愀 氀愀爀最攀 昀椀爀攀眀漀爀欀猀⸀
+SkillExplanation,1,plt_DH4Ma_HPUp,Boosts your Max HP.
+SkillExplanation,1,plt_DH4Ma_PPUp,Boosts your Max PP.
+SkillExplanation,1,plt_DH4Ma_AtpAllUp,"Boosts your Melee, Ranged, and Technique Power."
+SkillExplanation,1,plt_DH4Ma_DfpAllUp,"Boosts your Melee, Ranged, and Technique Defense."
+SkillExplanation,1,plt_DH4Ma_PA1Up,Grants a damage bonus to Smash-Em Hammer.
+SkillExplanation,1,plt_DH4Ma_PA2Up,Grants a damage bonus to Magnificent Minigun.
+SkillExplanation,1,plt_DH4Ma_PA3Up,Grants a damage bonus to Juicin' Go-Kart.
+SkillExplanation,1,plt_DH4Ma_NormalAtk,Adds steps four to five to Normal Attacks.
+SkillExplanation,1,plt_DH4Ma_AttackAdvance,Grants a damage bonus to Normal Attacks.
+SkillExplanation,1,plt_DH4Ma_PPSave,Reduces the amount of PP consumed.
+SkillExplanation,1,plt_DH4Ma_SnatchStep,"Grants Melee Damage when sidestepping, with <br>Perfect Attack timing applied."
+SkillExplanation,1,plt_DH4Ma_Drain,A portion of the damage inflicted by Normal Attacks <br>and Sidesteps while walking is absorbed as HP.
+SkillExplanation,1,plt_DH4Ma_AttackCountUp,Grants a damage bonus up to step two based on <br>the number of attacks that connect with enemies.
+SkillExplanation,1,plt_DH4Ma_KillingHeal,"When enemies die within a certain range, <br>you recover HP and PP."
+SkillExplanation,1,plt_DH4Ma_PA3Advance,Grants a damage boost for Gun It while Juicin' <br>Go-Kart is active.
+Skillmenu,0,message1,テストデータ
+Skillmenu,0,SkillList_Title,ダークブラストスキル
+Skillmenu,0,CaptionSkillName,スキル名称
+Skillmenu,0,CaptionSkillLv,現在Lv
+Skillmenu,0,CaptionSkillCostExp,消費EXP
+Skillmenu,0,CaptionSkillNextExp,Next
+Skillmenu,0,ItemSkillName,$(0)
+Skillmenu,0,ItemSkillName_MaxLv,<pure_orange>$(0)<c>
+Skillmenu,0,ItemSkillLv_NotRelease,未解放
+Skillmenu,0,ItemSkillLv_NotLearn,未習得
+Skillmenu,0,ItemSkillLv,Lv.
+Skillmenu,0,ItemSkillLv_MaxLv,<pure_orange>Lv.<c>
+Skillmenu,0,ItemSkillLv_Current,Lv.$(0)
+Skillmenu,0,ItemSkillLv_Current_MaxLv,<pure_orange>Lv.$(0)<c>
+Skillmenu,0,NoticeRelease,[$(0)]の習得が可能になりました
+Skillmenu,0,NoticeReleaseList_Title,スキル解放
+Skillmenu,0,NoticeReleaseList_Msg,以下のスキルが解放されました。
+Skillmenu,0,LevelUp_Title,レベルアップ確認
+Skillmenu,0,LevelUp_Ask,<pure_yellow>　　消費EXP： $(0) EXP<c><br>未使用EXP： $(1) EXP<br><br>上記EXPを消費してレベルアップを行いますか？
+Skillmenu,0,LevelUp_Success,レベルアップしました。
+Skillmenu,0,LevelUp_SuccessSkillName,[$(0)]がレベルアップしました。
+Skillmenu,0,LevelUp_Lack,EXPが不足しているため、習得できません。<br><br>各スキルレベルでのステータスを<br><%NextTabDetails>で確認できます。<br><br>（消費EXP: $(0)EXP）
+Skillmenu,0,LevelUp_Lack_v,EXPが不足しているため、習得できません。<br><br>各スキルレベルでのステータスを<br><pict Sign_SELECT>で確認できます。<br><br>（消費EXP: $(0)EXP）
+Skillmenu,0,LevelUp_LackLv,習得レベルに達していません。
+Skillmenu,0,LevelUp_Max,これ以上レベルアップすることはできません。
+Skillmenu,0,LevelUp_Wait,お待ちください。
+Skillmenu,0,LevelUp_InQuest,クエスト中のため、<br>スキルの習得やレベルアップはできません。
+Skillmenu,0,LevelUp_LackPre,スキルの習得条件を満たしていないため、<br>習得することができません。<br><br>各スキルレベルでのステータスを<br><%NextTabDetails>で確認できます。
+Skillmenu,0,LevelUp_LackPre_v,スキルの習得条件を満たしていないため、<br>習得することができません。<br><br>各スキルレベルでのステータスを<br><pict Sign_SELECT>で確認できます。
+Skillmenu,0,Failed,エラーが発生しました。<br>実行していた処理を中断します。
+Skillmenu,0,Blank,－
+Skillmenu,0,Confirm_Title,スキル確認
+Skillmenu,0,SkillInfo_Title,スキル詳細
+Skillmenu,0,SkillCond_Title,スキル解放条件
+Skillmenu,0,SkillCond_None,解放条件なし
+Skillmenu,0,SkilllistInformation,<%Decide>でスキル習得します。<%NextTabDetails>でスキル詳細を確認します。
+Skillmenu,0,SkilllistInformationInQuest,クエスト中にはスキル習得できません。<%NextTabDetails>でスキル詳細を確認します。
+Skillmenu,0,SkilllistInformation_Vita,<%Decide>でスキル習得します。<pict Sign_SELECT>でスキル詳細を確認します。
+Skillmenu,0,SkilllistInformationInQuest_Vita,クエスト中にはスキル習得できません。<pict Sign_SELECT>でスキル詳細を確認します。
+Skillmenu,1,message1,Test Data
+Skillmenu,1,SkillList_Title,DARK BLAST SKILLS
+Skillmenu,1,CaptionSkillName,Skill Name
+Skillmenu,1,CaptionSkillLv,Current Level
+Skillmenu,1,CaptionSkillCostExp,EXP Cost
+Skillmenu,1,CaptionSkillNextExp,Next
+Skillmenu,1,ItemSkillName,$(0)
+Skillmenu,1,ItemSkillName_MaxLv,<pure_orange>$(0)<c>
+Skillmenu,1,ItemSkillLv_NotRelease,Locked
+Skillmenu,1,ItemSkillLv_NotLearn,Not Learned
+Skillmenu,1,ItemSkillLv,Lv.
+Skillmenu,1,ItemSkillLv_MaxLv,<pure_orange>Lv.<c>
+Skillmenu,1,ItemSkillLv_Current,Level $(0)
+Skillmenu,1,ItemSkillLv_Current_MaxLv,<pure_orange>Level $(0)<c>
+Skillmenu,1,NoticeRelease,You can now learn [$(0)].
+Skillmenu,1,NoticeReleaseList_Title,UNLOCKED SKILLS
+Skillmenu,1,NoticeReleaseList_Msg,The following skills have been unlocked.
+Skillmenu,1,LevelUp_Title,CONFIRM LEVEL UP
+Skillmenu,1,LevelUp_Ask,<pure_yellow> EXP Cost: $(0) EXP<c><br>Unused EXP: $(1) EXP<br><br>Would you like to spend the EXP above and level up?
+Skillmenu,1,LevelUp_Success,You have leveled up.
+Skillmenu,1,LevelUp_SuccessSkillName,[$(0)] leveled up.
+Skillmenu,1,LevelUp_Lack,tus of each skill level in<br><%NextTabDetails>.<br><br>(EXP Cost: $(0) EXP)
+Skillmenu,1,LevelUp_Lack_v,甀猀 漀昀 攀愀挀栀 猀欀椀氀氀 氀攀瘀攀氀 椀渀㰀戀爀㸀㰀瀀椀挀琀 匀椀最渀开匀䔀䰀䔀䌀吀㸀⸀㰀戀爀㸀㰀戀爀㸀⠀䔀堀倀 䌀漀猀琀㨀 ␀⠀　⤀ 䔀堀倀⤀
+Skillmenu,1,LevelUp_LackLv,You haven't reached the sufficient level.
+Skillmenu,1,LevelUp_Max,This skill has reached the maximum level.
+Skillmenu,1,LevelUp_Wait,Please wait.
+Skillmenu,1,LevelUp_InQuest,Skills cannot be learned or leveled up because you are in the<br>middle of a quest.
+Skillmenu,1,LevelUp_LackPre,nts.<br><br>You can check skill level status with <%NextTabDetails>.
+Skillmenu,1,LevelUp_LackPre_v,琀猀⸀㰀戀爀㸀㰀戀爀㸀夀漀甀 挀愀渀 挀栀攀挀欀 猀欀椀氀氀 氀攀瘀攀氀 猀琀愀琀甀猀 眀椀琀栀 㰀瀀椀挀琀 匀椀最渀开匀䔀䰀䔀䌀吀㸀⸀
+Skillmenu,1,Failed,An error has occurred.<br>The process being executed was terminated.
+Skillmenu,1,Blank,-
+Skillmenu,1,Confirm_Title,CHECK SKILLS
+Skillmenu,1,SkillInfo_Title,SKILL DETAILS
+Skillmenu,1,SkillCond_Title,SKILL UNLOCK CONDITIONS
+Skillmenu,1,SkillCond_None,No Unlock Requirements
+Skillmenu,1,SkilllistInformation,Learn a skill with <%Decide>. Check the skill's details with <%NextTabDetails>.
+Skillmenu,1,SkilllistInformationInQuest,You cannot learn a skill while on a quest. Check the skill's details with <%NextTabDetails>.
+Skillmenu,1,SkilllistInformation_Vita,Learn a skill with <%Decide>. Check the skill's details with <pict Sign_SELECT>.
+Skillmenu,1,SkilllistInformationInQuest_Vita,You cannot learn a skill while on a quest. Check the skill's details with <pict Sign_SELECT>.
+Macro,0,AutoWordTypeDarkerBlast,ダークブラスト発動
+Macro,1,AutoWordTypeDarkerBlast,Activating Dark Blast
+PoseForm,0,PoseForm_Title,発動アクションの設定
+PoseForm,0,PoseForm_SubTitle_Pose,発動ポーズ設定
+PoseForm,0,PoseForm_Button_Pose,ポーズを選択する
+PoseForm,0,PoseForm_Message,$(0)の<br>ダークブラスト発動時に使用する<br>ポーズを選択することができます。
+PoseForm,1,PoseForm_Title,ACTIVATED ACTION SETTINGS
+PoseForm,1,PoseForm_SubTitle_Pose,Activation Pose Settings
+PoseForm,1,PoseForm_Button_Pose,Select Pose
+PoseForm,1,PoseForm_Message,You can select your pose when activating the<br>$(0) Dark Blast.
+ColorSetting,0,ColorSetting_Title,ダークブラストカラー変更
+ColorSetting,0,ColorSetting_Title2,ダークブラスト表示タイプ/カラー変更
+ColorSetting,0,ColorSetting_Title_Preview,プレビュー
+ColorSetting,0,ColorSetting_SubTitle_Style,表示タイプ設定
+ColorSetting,0,ColorSetting_SubTitle_Color,カラー設定
+ColorSetting,0,ColorSetting_Title_Color,ダークブラストカラー変更
+ColorSetting,0,ColorSettingButton_Reset,すべて初期化
+ColorSetting,0,ColorSettingButton_Reset2,初期化
+ColorSetting,0,ColorSettingButton_Back,戻る
+ColorSetting,0,ColorSettingButton_Set,変更を確定
+ColorSetting,0,ColorSettingButton_Set2,決定
+ColorSetting,0,ColorSetting_Message,$(0)の<br>カラーを変更できます。<br>変更したいカラーを選択してください。
+ColorSetting,0,ColorSetting_Message2,$(0)の<br>表示タイプとカラーを変更できます。
+ColorSetting,0,ColorSetting_Message3,$(0)の<br>表示タイプとカラーを変更できます。
+ColorSetting,0,ColorSetting_Help_Title,ダークブラストカラー変更
+ColorSetting,0,ColorSetting_Help_Message_0,<soft_yellow>$(0)の表示に関する変更ができます。<c><pure_pink>オーラ表示の透明度は<c><%Decide><pure_pink>＋左右で10段階ずつ調整できます。<c>
+ColorSetting,0,ColorSetting_Help_Message_0_Vita,<soft_yellow>$(0)の表示に関する変更ができます。<c>
+ColorSetting,0,ColorSetting_Help_Message_1,<soft_yellow>$(0)のカラーを設定してください。<c>
+ColorSetting,0,ColorSetting_Item_0_0,メインカラー設定
+ColorSetting,0,ColorSetting_Item_0_1,サブカラー設定
+ColorSetting,0,ColorSetting_Item_1_0,メインカラー設定
+ColorSetting,0,ColorSetting_Item_1_1,サブカラー設定
+ColorSetting,0,ColorSetting_Item_2_0,メインカラー設定
+ColorSetting,0,ColorSetting_Item_2_1,サブカラー設定
+ColorSetting,0,ColorSetting_Item_3_0,メインカラー1設定
+ColorSetting,0,ColorSetting_Item_3_1,メインカラー2設定
+ColorSetting,0,ColorSetting_Item_3_2,サブカラー設定
+ColorSetting,0,ColorSetting_Confirm_Title,変更確認
+ColorSetting,0,ColorSetting_Confirm_Exit,設定が編集されています。<br>このまま戻ると編集内容は破棄されます。<br><br>よろしいですか？
+ColorSetting,0,ColorSetting_Confirm_Decide,変更を確定します。<br><br>よろしいですか？
+ColorSetting,0,ColorSetting_Confirm_Reset,すべての設定を初期化します。<br><br>よろしいですか？
+ColorSetting,0,ColorSetting_Confirm_Reset2,カラーを初期化します。<br><br>よろしいですか？
+ColorSetting,0,ColorSetting_Toast_Changed,設定を変更しました。
+ColorSetting,0,ColorSetting_Toast_Reset,初期カラーにしました
+ColorSetting,0,Style_RadioItem_0,オリジナル表示
+ColorSetting,0,Style_RadioItem_1,オーラ表示
+ColorSetting,0,AuraSlider_Text_0,透明度
+ColorSetting,0,AuraSlider_Text_1,-
+ColorSetting,0,AuraSlider_Text_Hint,透明度を設定します
+ColorSetting,1,ColorSetting_Title,CHANGE DARK BLAST COLOR
+ColorSetting,1,ColorSetting_Title2,CHANGE DARK BLAST DISPLAY TYPE/COLOR
+ColorSetting,1,ColorSetting_Title_Preview,PREVIEW
+ColorSetting,1,ColorSetting_SubTitle_Style,Set Display Type
+ColorSetting,1,ColorSetting_SubTitle_Color,Color Settings
+ColorSetting,1,ColorSetting_Title_Color,CHANGE DARK BLAST COLOR
+ColorSetting,1,ColorSettingButton_Reset,Reset All
+ColorSetting,1,ColorSettingButton_Reset2,Reset
+ColorSetting,1,ColorSettingButton_Back,Back
+ColorSetting,1,ColorSettingButton_Set,Confirm Changes
+ColorSetting,1,ColorSettingButton_Set2,OK
+ColorSetting,1,ColorSetting_Message,You can change the color of $(0).<br>Select the color you want to change.
+ColorSetting,1,ColorSetting_Message2,You can change the display type and color of $(0).
+ColorSetting,1,ColorSetting_Message3,You can change the display type and color of $(0).
+ColorSetting,1,ColorSetting_Help_Title,CHANGE DARK BLAST COLOR
+ColorSetting,1,ColorSetting_Help_Message_0,ncy can be adjusted by pressing <c><%Decide><pure_pink> and moving left and right.<c>
+ColorSetting,1,ColorSetting_Help_Message_0_Vita,Make changes to the display of <soft_yellow>$(0)<c>
+ColorSetting,1,ColorSetting_Help_Message_1,Set the <soft_yellow>$(0) color.<c>
+ColorSetting,1,ColorSetting_Item_0_0,Main Color Settings
+ColorSetting,1,ColorSetting_Item_0_1,Sub-Color Settings
+ColorSetting,1,ColorSetting_Item_1_0,Main Color Settings
+ColorSetting,1,ColorSetting_Item_1_1,Sub-Color Settings
+ColorSetting,1,ColorSetting_Item_2_0,Main Color Settings
+ColorSetting,1,ColorSetting_Item_2_1,Sub-Color Settings
+ColorSetting,1,ColorSetting_Item_3_0,Main Color 1 Settings
+ColorSetting,1,ColorSetting_Item_3_1,Main Color 2 Settings
+ColorSetting,1,ColorSetting_Item_3_2,Sub-Color Settings
+ColorSetting,1,ColorSetting_Confirm_Title,CONFIRM CHANGES
+ColorSetting,1,ColorSetting_Confirm_Exit,最攀猀Ⰰ 礀漀甀爀 攀搀椀琀猀 眀椀氀氀 戀攀 挀愀渀挀攀氀氀攀搀⸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀
+ColorSetting,1,ColorSetting_Confirm_Decide,Changes will be applied.<br><br>Are you sure you wish to proceed?
+ColorSetting,1,ColorSetting_Confirm_Reset,All settings will be reset.<br><br>Are you sure you wish to proceed?
+ColorSetting,1,ColorSetting_Confirm_Reset2,The colors will be reset.<br><br>Are you sure you wish to proceed?
+ColorSetting,1,ColorSetting_Toast_Changed,The settings were changed.
+ColorSetting,1,ColorSetting_Toast_Reset,The colors were reset.
+ColorSetting,1,Style_RadioItem_0,Original Display
+ColorSetting,1,Style_RadioItem_1,Display Aura
+ColorSetting,1,AuraSlider_Text_0,Level
+ColorSetting,1,AuraSlider_Text_1,-
+ColorSetting,1,AuraSlider_Text_Hint,Set Transparency

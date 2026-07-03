@@ -1,0 +1,87 @@
+﻿section,group,id,text
+common,0,IncidentName,リリーパ族の宝探し
+common,0,TrialBeginMsg,宝を探すリリーパ族を最後まで守り抜け！
+common,0,TrialAbstract,宝を探すリリーパ族を最後まで守り抜け！
+common,1,IncidentName,Búsqueda del tesoro de Lilipan
+common,1,TrialBeginMsg,¡Defiende al Lillipan mientras busca tesoros!
+common,1,TrialAbstract,¡Defiende al Lillipan mientras busca tesoros!
+type1,0,NpcComOnBegin,今、現れたリリーパ族……<br>何かを探しているみたいですね。
+type1,0,NpcComOnBeginNext,なるほど……リリーパ族は何か<br>宝のようなものを探しているようです。<br>可能な限り、護衛してあげて下さい。
+type1,0,NpcComOnSuccess,目的の宝物が見つかったようですね。<br>もう護衛の必要もないでしょう。<br>通常任務へ復帰して下さい。
+type1,0,NpcComOnFailure,リリーパ族、大丈夫でしょうか……<br>失礼。残念ですが護衛失敗です。<br>通常任務に戻って下さい。
+type1,0,NpcComOnFindPlayer,あそこが、リリーパ族の目指している<br>目標地点のようですね。
+type1,0,NpcComOnFindLilipa,リリーパ族が目標地点を<br>発見したようです。
+type1,0,NpcComOnArrivalFirst,リリーパ族が目標地点に着きました。<br>どこからか敵が来るかもしれません<br>注意して護衛してください。
+type1,0,NpcComOnArrivalNext,再びリリーパ族が発掘を始めました。<br>何を探しているんでしょう……<br>失礼。引き続き警戒をしてください。
+type1,0,NpcComOnArrivalFinal,ここが最後の地点のようですね。<br>気を抜かず、最後までリリーパ族を<br>守ってあげましょう。
+type1,0,NpcComOnSearchFailure,この目標地点では、目的としている<br>宝物が見つからなかったようですね。
+type1,0,NpcComOnJoin,現在、宝物や遺物を発掘している<br>リリーパ族の護衛を行っています。<br>協力をお願いします。
+type1,1,NpcComOnBegin,Esa Lillipan... ¿Te parece que<br>está buscando algo?
+type1,1,NpcComOnBeginNext,"¡Ah, ya veo! Creo que se trata de una especie de<br>búsqueda del tesoro. ¿Te importaría protegerlo<br>por un momento?"
+type1,1,NpcComOnSuccess,"Parece que encontró lo que buscaba <br>, por lo que no es necesario seguir protegiéndolo.<br>Como eras tú."
+type1,1,NpcComOnFailure,"Espero que Lillipan esté bien... *Ejem* Bueno,<br>eso no funcionó. Regrese a sus tareas habituales."
+type1,1,NpcComOnFindPlayer,Allí debe ser hacia donde se dirige el Lillipan <br>.
+type1,1,NpcComOnFindLilipa,"Ah, parece que Lillipan encontró el lugar que<br>estaba buscando."
+type1,1,NpcComOnArrivalFirst,"El Lillipan ha llegado a su destino.<br>Los enemigos podrían intentar atacarlo, así que mantente atento <br>."
+type1,1,NpcComOnArrivalNext,El Lillipan empezó a cavar de nuevo. ¿Qué busca <br>...? Mmm. Sólo sigue cuidándolo.
+type1,1,NpcComOnArrivalFinal,Parece que este es el último lugar. Mantente alerta y<br>sigue protegiéndolo hasta que esté terminado.
+type1,1,NpcComOnSearchFailure,"Hmm, parece que el tesoro que busca<br>no estaba en este sitio."
+type1,1,NpcComOnJoin,Actualmente estamos protegiendo a un Lillipan mientras excava en<br>en busca de un tesoro. Se agradecería su ayuda.
+type2,0,NpcComOnBegin,そのリリーパ族は……<br>どうやら、何かを探しているようだな。
+type2,0,NpcComOnBeginNext,そのリリーパ族はガラクタから<br>宝物を発掘するつもりのようだ。<br>可能な限り護衛してやれ。
+type2,0,NpcComOnSuccess,目的の物が見つかったようだ。<br>もう護衛の必要もあるまい。<br>通常任務へ復帰しろ。
+type2,0,NpcComOnFailure,護衛失敗だな。<br>まあ、こういうこともある。<br>通常任務に戻れ。
+type2,0,NpcComOnFindPlayer,リリーパ族の目標としている場所は<br>あそこのようだ。
+type2,0,NpcComOnFindLilipa,リリーパ族が目標地点を<br>発見したようだ。
+type2,0,NpcComOnArrivalFirst,リリーパ族は発掘に夢中だな。<br>……こういう時に何かが起こる。<br>周辺警戒を怠るなよ。
+type2,0,NpcComOnArrivalNext,リリーパ族はまた発掘を始めたようだ。<br>……先程と同じ状況だ。<br>周囲の敵影に気をつけろ。
+type2,0,NpcComOnArrivalFinal,ここが最終地点のようだな。<br>最後まで気を抜くなよ。
+type2,0,NpcComOnSearchFailure,ふむ……ここでは目的の物が<br>見つからなかったようだな。
+type2,0,NpcComOnJoin,遺物発掘を行っているリリーパ族の<br>護衛を行っている。<br>可能なら協力してやれ。
+type2,1,NpcComOnBegin,Eh... Parece que Lillipan está buscando algo en <br>.
+type2,1,NpcComOnBeginNext,Esa Lillipan parece estar rebuscando entre la basura<br>en busca de un tesoro. Haz lo que puedas para<br>protegerlo.
+type2,1,NpcComOnSuccess,Parece que encontró lo que buscaba.<br>Puedes dejar de cuidarlo y<br>volver a tu objetivo habitual.
+type2,1,NpcComOnFailure,"La operación de protección falló. Ganar algo, perder algo <br>, supongo. Vuelve a tus deberes habituales."
+type2,1,NpcComOnFindPlayer,Creo que el Lillipan se dirige hacia allí.
+type2,1,NpcComOnFindLilipa,"Ah, parece que Lillipan encontró su lugar."
+type2,1,NpcComOnArrivalFirst,"Vaya, esa Lillipan está completamente concentrada en cavar. <br>...Lo que lo hace vulnerable.<br>Esté en guardia."
+type2,1,NpcComOnArrivalNext,"El Lillipan está cavando de nuevo. Igual que antes,<br>mantente atento a los hostiles."
+type2,1,NpcComOnArrivalFinal,Parece que este es el último lugar. No pierdas<br>concentración ahora.
+type2,1,NpcComOnSearchFailure,Hmm... Aparentemente no encontró lo que<br>buscaba.
+type2,1,NpcComOnJoin,"Estamos defendiendo a Lillipan excavando en busca de reliquias<br>en estos montones de basura. Por favor, eche una mano si<br>es posible."
+type3,0,NpcComOnBegin,おややっ？　あれ、リリーパ族ですね。<br>何か探してるみたいですけど……
+type3,0,NpcComOnBeginNext,うーん、どうやらがらくたの中から<br>宝物とかを探し出す気みたいです。<br>できるだけ守ってあげてもらえますか？
+type3,0,NpcComOnSuccess,/face2 やりました！　無事宝物を見つけ出せた<br>みたいですよ！　お疲れ様でした！
+type3,0,NpcComOnFailure,/face4 ああ……リリーパ族、かわいそう……<br>護衛失敗です、通常任務に<br>復帰してくださいー。
+type3,0,NpcComOnFindPlayer,あれが、目標地点みたいですね！
+type3,0,NpcComOnFindLilipa,おやっ、リリーパ族が目標地点を<br>見つけたみたいですよー！
+type3,0,NpcComOnArrivalFirst,リリーパ族が発掘をはじめました！<br>敵さんが来るかもしれないので<br>周囲を警戒してあげて下さいー！
+type3,0,NpcComOnArrivalNext,再びリリーパ族が発掘開始です！<br>さっきと同様、敵さんに警戒ですよー！
+type3,0,NpcComOnArrivalFinal,ここが最後の目的地みたいですね！<br>しっかり守ってあげてくださいねっ！
+type3,0,NpcComOnSearchFailure,この地点はハズレ、みたいです。<br>次の場所に向かうようですよー。
+type3,0,NpcComOnJoin,現在、リリーパ族の護衛任務を<br>遂行中ですー！　可能なら合流して<br>任務に参加して下さいねっ！
+type3,1,NpcComOnBegin,"Bueno, dispara... ¡Es uno de esos Lillipans!<br>Parece que está buscando algo..."
+type3,1,NpcComOnBeginNext,Hmm... Creo que está buscando objetos de valor entre toda esa<br>basura. ¿Puedes echarle un ojo?
+type3,1,NpcComOnSuccess,/cara2 ¡Muy bien! ¡Parece que encontró lo que<br>estaba buscando! ¡Buen trabajo brindando cobertura!
+type3,1,NpcComOnFailure,"/face4 ...Esa pobre Lillipan. Protección fallida,<br>regreso a sus funciones habituales."
+type3,1,NpcComOnFindPlayer,"¡Oh, entonces hacia allí se dirige!"
+type3,1,NpcComOnFindLilipa,¡Oh! ¡Parece que ha encontrado un lugar para cavar!
+type3,1,NpcComOnArrivalFirst,"¡El Lillipan empezó a cavar! Los enemigos podrían<br>aparecer en cualquier momento, así que cubre su perímetro."
+type3,1,NpcComOnArrivalNext,"¡Empezó a cavar de nuevo! Mantén tus<br>ojos bien abiertos para detectar enemigos, como antes."
+type3,1,NpcComOnArrivalFinal,¡Este parece el último lugar! ¡Sigue cubriéndolo!
+type3,1,NpcComOnSearchFailure,"Hmm, supongo que quedó vacío allí<br>así que pasará al siguiente lugar."
+type3,1,NpcComOnJoin,¡Estamos jugando a ser guardaespaldas de uno de los<br>nativos de Lillipan! ¡Únase a nosotros si puede!
+apc,0,OnFun,り！り！
+apc,0,OnFind,/mn38  りり！
+apc,0,OnDrop,りり！？
+apc,0,OnDamage,/mn2 りり……
+apc,0,OnMove,/mn17 りりりっ！　りりりっ！
+apc,0,OnSuccess,/ci2 1 /mn38 りり！　りりり！
+apc,0,OnDie,りぃ……りりり……
+apc,1,OnFun,¡Li! ¡Li!
+apc,1,OnFind,/mn38 ¡Lili!
+apc,1,OnDrop,¿¡Lili!?
+apc,1,OnDamage,/mn2 Lili...
+apc,1,OnMove,/mn17 ¡Lilili! Lilili!
+apc,1,OnSuccess,/ci2 1 /mn38 Lili! Lilili!
+apc,1,OnDie,Li... Lilili...

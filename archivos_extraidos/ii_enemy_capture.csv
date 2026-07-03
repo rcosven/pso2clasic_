@@ -1,0 +1,59 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)を捕獲せよ！
+common,0,TrialBeginMsg,$(0)を捕獲装置で捕獲せよ！
+common,0,TrialAbstract,$(0)を捕獲装置で捕獲せよ！
+common,0,ToastOnRestTryCaptureNum,捕獲装置起動可能回数　残り$(0)回。
+common,0,ToastOnUselessAccess,現在捕獲装置は起動できない。
+common,1,IncidentName,¡Capture un $(0)!
+common,1,TrialBeginMsg,¡Utilice un campo de contención para capturar<br>a $(0)!
+common,1,TrialAbstract,¡Utilice un campo de contención para capturar<br>a $(0)!
+common,1,ToastOnRestTryCaptureNum,Activaciones del campo de contención restantes: $(0)
+common,1,ToastOnUselessAccess,No se puede activar el campo de contención en este momento.
+type3,0,NpcComOnBegin,$(0)ですっ！<br>専用の装置を使って<br>捕まえちゃってくださいー！
+type3,0,NpcComOnAfterBegin,捕獲装置は$(0)に出しました！<br>なんとか誘導して、捕獲を<br>お願いしますー！
+type3,0,NpcComOnSuccess,/face2 対象の捕獲成功ですー！<br>お見事な動きでしたっ！
+type3,0,NpcComOnFailure,/face6 こ、これ以上は無理みたいですー……<br>通常の任務に戻っちゃってください。
+type3,0,NpcComOnEnableCapture,対象を捕獲有効範囲内に捕捉！<br>今です！<br>捕獲装置の起動を！
+type3,0,NpcComOnCaptureSwitch,タイミングはいいですよー。<br>あとは対象を有効範囲内で<br>がっちり抑えてください！
+type3,0,NpcComOnDisableCapture,/face4 今は捕獲装置が使えないんですー！<br>まずは対象を範囲内に<br>誘導しましょうー！
+type3,0,NpcComOnSuccessCapture,/face2 対象の捕獲、成功です－！<br>転送してしまいますからねー！
+type3,0,NpcComOnFailedCapture,/face4 あっ、ああっ、捕獲失敗です！<br>有効範囲は限られていますので<br>気をつけてくださいー！
+type3,0,NpcComOnAttackTarget,/face4 あのっ、あのあのっ！<br>目標はあくまで捕獲ですよー！<br>対象への攻撃は避けてくださいー！
+type3,0,NpcComOnDeadTarget,/face6 捕獲対象の生体反応、消失……<br>……うーん、仕方ありません。<br>また次の機会ですね。
+type3,0,NpcComOnLastCapture,転送装置がちょっとキツそう……<br>あと１回が限度ですー！<br>慎重にやってくださいねー！
+type3,1,NpcComOnBegin,¡$(0) sueltos! ¡Utilizaremos una trampa<br>que podrás usar para capturar a cualquiera que encuentres!
+type3,1,NpcComOnAfterBegin,¡Campo de contención desplegado a $(0)!<br>¡Mira si puedes atraer al objetivo!
+type3,1,NpcComOnSuccess,/face2 ¡Objetivo capturado! ¡Bien hecho!
+type3,1,NpcComOnFailure,/face6 M-tal vez fue una mala idea.<br>Puedes volver a lo que estabas haciendo.
+type3,1,NpcComOnEnableCapture,¡El objetivo está dentro del alcance!<br>¡Ahora! ¡Activa el Campo de Contención!
+type3,1,NpcComOnCaptureSwitch,Bien oportuno. ¡Ahora sólo tienes que mantener<br>el objetivo dentro del alcance del campo!
+type3,1,NpcComOnDisableCapture,/face4 ¡Aún no puedes usar la trampa!<br>¡Primero atrae al objetivo al alcance!
+type3,1,NpcComOnSuccessCapture,/face2 ¡Objetivo capturado!<br>¡Teletransportándolo ahora!
+type3,1,NpcComOnFailedCapture,"/face4 ¡Maldita sea, la captura falló! Recuerde, el campo<br>Contención<br>tiene un alcance limitado."
+type3,1,NpcComOnAttackTarget,/cara4 ¡Vaya! ¡Esperar! Solo queremos CAPTURAR el objetivo <br>. <br>¡NO lo ataques!
+type3,1,NpcComOnDeadTarget,/face6 Los signos vitales del objetivo se han estancado...<br>Supongo que eso es todo. ¿Quizás podamos intentar<br>nuevamente más tarde?
+type3,1,NpcComOnLastCapture,El Teletransportador no puede soportar mucho más... Este<br>tendrá que ser nuestro último intento. ¡Haz que cuente!
+type6,0,NpcComOnBegin,$(0)の<br>出現を確認しました。<br>目標の捕獲をお願いします。
+type6,0,NpcComOnAfterBegin,捕獲装置を$(0)に転送。<br>対象を誘導の後、捕獲。<br>指令は以上です。
+type6,0,NpcComOnSuccess,対象の捕獲を確認。<br>迅速な対処、感謝します。
+type6,0,NpcComOnFailure,捕獲任務は失敗と判断。<br>通常任務にお戻りください。
+type6,0,NpcComOnEnableCapture,捕獲有効範囲内に対象を確認。<br>捕獲装置を起動してください。
+type6,0,NpcComOnCaptureSwitch,タイミングは問題なし。<br>後は、対象を有効範囲内で<br>捉えるように。
+type6,0,NpcComOnDisableCapture,今、捕獲装置は使用不可能です。<br>まずは対象を捕獲範囲内に<br>誘導してください。
+type6,0,NpcComOnSuccessCapture,対象捕獲、確認。<br>転送シーケンスに移ります。
+type6,0,NpcComOnFailedCapture,捕獲失敗を確認。<br>捕獲装置の有効範囲を確認し<br>再度、捕獲を行ってください。
+type6,0,NpcComOnAttackTarget,再確認。目的は対象の捕獲です。<br>捕獲対象を攻撃しないように。
+type6,0,NpcComOnDeadTarget,捕獲対象、反応消失しました。<br>捕獲はまた、次の機会に。
+type6,0,NpcComOnLastCapture,転送装置負荷限界まで<br>あと1回となります。<br>慎重な試行を求めます。
+type6,1,NpcComOnBegin,$(0) presencia confirmada.<br>Mover para capturar el objetivo.
+type6,1,NpcComOnAfterBegin,Enviando campo de contención a $(0).<br>Atrae al objetivo para capturarlo.<br>Esas son tus órdenes.
+type6,1,NpcComOnSuccess,Objetivo capturado. Apreciar el trabajo rápido.
+type6,1,NpcComOnFailure,La captura falló. Como eras tú.
+type6,1,NpcComOnEnableCapture,Objetivo dentro del alcance.<br>Activar el Campo de Contención.
+type6,1,NpcComOnCaptureSwitch,Tu momento es el adecuado. Ahora mantenga el objetivo<br>dentro del alcance del campo.
+type6,1,NpcComOnDisableCapture,El campo de contención aún no se puede utilizar. Primero<br>atrae al objetivo dentro del alcance.
+type6,1,NpcComOnSuccessCapture,Objetivo capturado. Iniciando secuencia de teletransporte.
+type6,1,NpcComOnFailedCapture,"El intento de captura falló. Asegúrese de que el objetivo<br>esté dentro del alcance del campo de contención,<br>y vuelva a intentarlo."
+type6,1,NpcComOnAttackTarget,"Recordatorio, nuestro objetivo es capturar<br>el objetivo. Abstenerse de atacar."
+type6,1,NpcComOnDeadTarget,El objetivo de captura ha fallecido. Tendremos que intentar<br>nuevamente más tarde.
+type6,1,NpcComOnLastCapture,El Teletransportador sólo se puede activar<br>una vez más. Haga de este su mejor intento.

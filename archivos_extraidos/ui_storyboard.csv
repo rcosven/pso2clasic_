@@ -1,0 +1,85 @@
+section,group,id,text
+Debug,0,SubMenuTitle,ストーリーボードメニュー
+Debug,0,AnimeTest,アニメテスト
+Debug,0,CtrlTest,表示制御テスト
+Board,0,Title,ストーリーボード
+Board,0,HintClose,捜索不可能なマター
+Board,0,HintOpen,捜索可能なマター
+Board,0,HintAchieved,捜索済みのマター
+Board,0,HintAccepted,捜索中のマター
+Board,0,HintGuide,ガイド中のマター
+Board,0,HintKeyOpen,捜索可能なキーマター
+Board,0,HintKeyAchieved,捜索済みのキーマター
+Board,0,HintKeyAccepted,捜索中のキーマター
+Board,0,HintKeyGuide,ガイド中のキーマター
+Board,0,PercentComplete,達成率
+Info,0,Title,マター情報
+Info,0,SynopsisTitle,このイベントのあらすじ
+Info,0,OrderName,$(0)－$(1) $(2)
+Info,0,Info,情報
+Info,0,Target,この先のルートの解放条件
+Info,0,Reward,クリア報酬
+Info,0,Crushing,「$(0)」の撃破
+Info,0,Kills,$(0)
+Info,0,Achievement,「$(0)」の達成
+Info,0,Conversation,「$name)」との会話
+Info,0,ClientOrder,クライアントオーダー
+Info,0,Requester,依頼者：$(0)
+Info,0,Location,場所：$(0)・$(1)
+Info,0,Broadcasting,アニメ版PSO2の放送
+Info,0,BroadcastDate,放送日時：$(0)
+Info,0,Broadcaster,放送局：$(0)
+Info,0,StoryQuestClear,ストーリークエストのクリア
+Info,0,StoryQuestName,クエスト名：$(0)
+Info,0,EventBrowse,イベントの閲覧
+Info,0,EventName,イベント名：$(0)
+Info,0,Close_Vita,捜索不可
+Info,0,Open_Vita,捜索可能
+Info,0,Accepted_Vita,捜索中
+Info,0,Achieved,捜索済み
+Info,0,DetailsTitle1,クリア報酬
+Info,0,DetailsTitle2,イベント情報
+Info,0,SearchGauge,進行状況
+Info,0,SearchGaugeRate,$(0)/$(1)
+Info,0,StoryQuestRankTitle,ランク選択
+Info,0,StoryQuestRankNormal,カジュアル
+Info,0,StoryQuestRankHard,ハードコア
+Info,1,StoryQuestRankTitle,SELECT RANK
+Info,1,StoryQuestRankNormal,Casual
+Info,1,StoryQuestRankHard,Hardcore
+Message,0,AcceptTitle,捜索開始確認
+Message,0,Accept1,このマターの捜索を開始しますか？
+Message,0,Accept2,捜索中のマターを変更し、<br>このマターの捜索を開始しますか？
+Message,0,Accept3,クエストカウンターで<br>このマターのガイドを表示しますか？
+Message,0,Accept4,このマターの対象キャラクターに<br>ガイドを表示しますか？
+Message,0,Target,目標：
+Message,0,Area,主なエリア：
+Message,0,Guide,（このマターをガイドの対象にした場合、<br>　このマターボードが捜索対象となります）
+Message,0,AutoGuide,おすすめのマター「$(0)－$(1) $(2)」にガイドを設定しました。
+Message,0,AcceptPopup1,ストーリークエスト受注
+Message,0,AcceptPopup2,クエストレコードを見る
+Message,0,MessageTitle,メッセージ
+Message,0,WindowTitle,クエスト受注確認
+Message,0,EventTitle,イベント再生
+Message,0,QuestMessage,ストーリークエストを受注して<br>キャンプシップへ移動します。<br>よろしいですか？
+Message,0,QuestSettledMessage,ストーリークエストを受注して<br>キャンプシップへ移動します。<br>よろしいですか？<br><br>　<c ffa800>※このクエストはクリア済みです<c>
+Message,0,QuestNotice,直接フィールドへ移動します<c><br>───────────────────────<br>失敗条件/戦闘不能後、リタイアを選択
+Message,0,QuestSettledNotice,㸀㰀戀爀㸀
+Message,0,QuestNoticeHard,>※ハードコアをクリアすると<br>　　　カジュアルにもクリアマークが付与されます<c><br>───────────────────────<br>失敗条件/戦闘不能後、リタイアを選択
+Message,0,QuestSettledNoticeHard,00ꬰ렰ꈰ欰舰꼰ꈰ�ﰰ꼰䰰�๎啎谰縰夰㰰挀㸀㰀戀爀㸀㰀戀爀㸀
+Message,0,QuestNoticeHard_F,br>　<yellow>※このクエストにカジュアルはありません<c><br>───────────────────────<br>失敗条件/戦闘不能、制限時間の経過
+Message,0,QuestSettledNoticeHard_F,欰ꬰ렰ꈰ漰䈰訰縰嬰錰㰰挀㸀㰀戀爀㸀㰀戀爀㸀
+Message,0,BridgeMessage,ストーリークエストは艦橋でのみ受けられます。<br>　<yellow>※艦橋へはゲートエリア2F、または<br>　　クイックメニューの「艦橋へ行く」から移動できます。<c>
+Message,0,PartyMessage,ストーリークエストはパーティーを組んだ状態では<br>受注できません。
+Message,0,EventMessage,選択したイベントを再生します。<br>よろしいですか？
+Message,0,EventSettledMessage,選択したイベントを再生します。<br>よろしいですか？<br><br>　<c ffa800>※このイベントは閲覧済みです<c>
+Message,0,EventNotice,艦橋以外の場所ではイベント閲覧ができません。<br>　<yellow>※艦橋へはゲートエリア2F、または<br>　　クイックメニューの「艦橋へ行く」から移動できます。<c>
+Message,0,MatterLock,このピースは、まだ解放されていません。
+Message,0,NonSynopsis,このピースにあらすじはありません。
+Message,0,GetReward,<c ffa800>達成報酬は受け取り済みです。<c>
+Message,0,CompleteTitle,選択確認
+Message,0,Complete1,このマターボードは、全てのマターが探索済みの<br>状態です。<br>このマターボードをセットすることで、ロビーにいる<br>キャラクターや会話の内容などが変化します。<br><br>マターボードのセットを変更しますか？
+Message,0,Complete2,マターボードをセットしました。
+Message,0,MethodMessage,ストをクリアすることで<br>次のピースが解放されます。<br><br>※そのクエストがまだ出現していない場合は、<br>　他にまだクリアしていないクエストを<br>　進めてみてください。
+Message,0,MethodOrderMessage,>オーダーを受注して、達成しましょう。<br><br>※そのオーダーがまだ出現していない場合は、<br>　他にまだ達成していないオーダーを<br>　進めてみてください。
+Message,0,ClearMessage,まとめて複数のルートが解放されました。

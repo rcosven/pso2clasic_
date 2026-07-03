@@ -1,0 +1,151 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,緊急指令！<br>$(0)を撃破せよ！
+common,0,TrialAbstract,乱入してきた<br>$(0)を撃破せよ！
+common,1,IncidentName,Derrota $(0)
+common,1,TrialBeginMsg,¡Emergencia! ¡Derrota a $(0)!
+common,1,TrialAbstract,¡Ha aparecido $(0)!<br>¡Derrótalo ahora!
+type1,0,NpcComOnPreBegin,ニャウ、撤退……いえ！<br>撤退の影響で空間に歪みが発生！<br>注意してください！
+type1,0,NpcComOnBegin,$(0)の出現を確認しました。<br>連戦となりますが、各員迎撃を<br>お願いします。
+type1,0,NpcComOnSuccess,お疲れさまでした。<br>適切な対処に感謝します。
+type1,0,NpcComOnFailure,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type1,0,NpcComOnPreBegin_Other,ニャウ、撤退……いえ！<br>撤退の影響で空間に歪みが発生！<br>注意してください！
+type1,0,NpcComOnBegin_Other,$(0)の出現を確認しました。<br>連戦となりますが、各員迎撃を<br>お願いします。
+type1,0,NpcComOnSuccess_Other,お疲れさまでした。<br>適切な対処に感謝します。
+type1,0,NpcComOnFailure_Other,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type1,0,NpcComOnPreBegin_Darker,ニャウ、撤退……いえ！<br>撤退の影響で空間に歪みが発生！<br>注意してください！
+type1,0,NpcComOnBegin_Darker,$(0)の出現を確認しました。<br>連戦となりますが、各員迎撃を<br>お願いします。
+type1,0,NpcComOnSuccess_Darker,お疲れさまでした。<br>適切な対処に感謝します。
+type1,0,NpcComOnFailure_Darker,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type1,1,NpcComOnPreBegin,Nyau se ha retirado... ¡Espera! ¡Su retirada<br>ha provocado una distorsión espacial!<br>¡Ten cuidado!
+type1,1,NpcComOnBegin,"Obteniendo una lectura de $(0). Sé que es una<br>molestia, pero haz lo que tengas que hacer."
+type1,1,NpcComOnSuccess,Buen trabajo a todos.<br>Lo manejaste perfectamente.
+type1,1,NpcComOnFailure,"/face4 La operación falló. Todas las operaciones,<br>regresa a tu objetivo principal."
+type1,1,NpcComOnPreBegin_Other,Criatura objetivo detectada. ¡Está cerca!
+type1,1,NpcComOnBegin_Other,"Obteniendo una lectura de $(0). Sé que es una<br>molestia, pero haz lo que tengas que hacer."
+type1,1,NpcComOnSuccess_Other,Buen trabajo a todos.<br>Lo manejaste perfectamente.
+type1,1,NpcComOnFailure_Other,"/face4 La operación falló. Todas las operaciones, regresen a su objetivo principal <br>."
+type1,1,NpcComOnPreBegin_Darker,Nyau se ha retirado... ¡Espera! ¡Su retirada<br>ha provocado una distorsión espacial!<br>¡Ten cuidado!
+type1,1,NpcComOnBegin_Darker,"Obteniendo una lectura de $(0). Sé que es una<br>molestia, pero haz lo que tengas que hacer."
+type1,1,NpcComOnSuccess_Darker,Buen trabajo a todos.<br>Lo manejaste perfectamente.
+type1,1,NpcComOnFailure_Darker,"/face4 La operación falló. Todas las operaciones, regresen a su objetivo principal <br>."
+type2,0,NpcComOnPreBegin,ニャウの逃亡を確認……む？<br>逃亡の影響による空間の歪みを検知。<br>何か来る、注意しろ！
+type2,0,NpcComOnBegin,ち、厄介なエネミーが現れたものだ。<br>各員、戦闘態勢。目標を撃退せよ。
+type2,0,NpcComOnSuccess,反応消失。<br>突然の来襲だったが、よくやった。
+type2,0,NpcComOnFailure,/face6 ……失敗か。<br>各員、通常任務に戻れ。
+type2,0,NpcComOnPreBegin_Other,ニャウの逃亡を確認……む？<br>逃亡の影響による空間の歪みを検知。<br>何か来る、注意しろ！
+type2,0,NpcComOnBegin_Other,ち、厄介なエネミーが現れたものだ。<br>各員、戦闘態勢。目標を撃退せよ。
+type2,0,NpcComOnSuccess_Other,反応消失。<br>突然の来襲だったが、よくやった。
+type2,0,NpcComOnFailure_Other,/face6 ……失敗か。<br>各員、通常任務に戻れ。
+type2,0,NpcComOnPreBegin_Darker,ニャウの逃亡を確認……む？<br>逃亡の影響による空間の歪みを検知。<br>何か来る、注意しろ！
+type2,0,NpcComOnBegin_Darker,ち、厄介なエネミーが現れたものだ。<br>各員、戦闘態勢。目標を撃退せよ。
+type2,0,NpcComOnSuccess_Darker,反応消失。<br>突然の来襲だったが、よくやった。
+type2,0,NpcComOnFailure_Darker,/face6 ……失敗か。<br>各員、通常任務に戻れ。
+type2,1,NpcComOnPreBegin,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. ¡Algo viene!
+type2,1,NpcComOnBegin,"Enemigo detectado y este<br>será un dolor de cabeza. Todas las operaciones, prepárense para la batalla.<br>Lucha contra ese objetivo."
+type2,1,NpcComOnSuccess,"Objetivo eliminado. Buen trabajo,<br>manera de ser adaptable."
+type2,1,NpcComOnFailure,"/face6 ...Ay. Todas las operaciones, regresa a tu objetivo principal."
+type2,1,NpcComOnPreBegin_Other,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. ¡Algo viene!
+type2,1,NpcComOnBegin_Other,"Enemigo detectado, y este va a<br>ser un dolor de cabeza. Todas las operaciones, prepárense para la batalla.<br>Lucha contra ese objetivo."
+type2,1,NpcComOnSuccess_Other,"Objetivo eliminado. Buen trabajo,<br>manera de ser adaptable."
+type2,1,NpcComOnFailure_Other,"/face6 ...Ay. Todas las operaciones, regresa a tu objetivo principal."
+type2,1,NpcComOnPreBegin_Darker,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. ¡Algo viene!
+type2,1,NpcComOnBegin_Darker,"Enemigo detectado, y este va a<br>ser un dolor de cabeza. Todas las operaciones, prepárense para la batalla.<br>Lucha contra ese objetivo."
+type2,1,NpcComOnSuccess_Darker,"Objetivo eliminado. Buen trabajo,<br>manera de ser adaptable."
+type2,1,NpcComOnFailure_Darker,"/face6 ...Ay. Todas las operaciones, regresa a tu objetivo principal."
+type3,0,NpcComOnPreBegin,ニャウが逃走……って、あれれっ？<br>逃走の影響で空間がヘンな感じ……<br>き、気を付けてくださいー！
+type3,0,NpcComOnBegin,強力な敵さんが来ちゃいましたね……<br>みなさん、もうひと頑張りです！
+type3,0,NpcComOnSuccess,やったやった、やりました！<br>もう敵さんの反応はありませんよ！<br>みなさん、お疲れさまでしたっ！
+type3,0,NpcComOnFailure,/face6 うー、失敗ですねぇ……<br>通常任務に戻ってくださいー。
+type3,0,NpcComOnPreBegin_Other,ニャウが逃走……って、あれれっ？<br>逃走の影響で空間がヘンな感じ……<br>き、気を付けてくださいー！
+type3,0,NpcComOnBegin_Other,強力な敵さんが来ちゃいましたね……<br>みなさん、もうひと頑張りです！
+type3,0,NpcComOnSuccess_Other,やったやった、やりました！<br>もう敵さんの反応はありませんよ！<br>みなさん、お疲れさまでしたっ！
+type3,0,NpcComOnFailure_Other,/face6 うー、失敗ですねぇ……<br>通常任務に戻ってくださいー。
+type3,0,NpcComOnPreBegin_Darker,ニャウが逃走……って、あれれっ？<br>逃走の影響で空間がヘンな感じ……<br>き、気を付けてくださいー！
+type3,0,NpcComOnBegin_Darker,強力な敵さんが来ちゃいましたね……<br>みなさん、もうひと頑張りです！
+type3,0,NpcComOnSuccess_Darker,やったやった、やりました！<br>もう敵さんの反応はありませんよ！<br>みなさん、お疲れさまでしたっ！
+type3,0,NpcComOnFailure_Darker,/face6 うー、失敗ですねぇ……<br>通常任務に戻ってくださいー。
+type3,1,NpcComOnPreBegin,Nyau escapó... ¡W-whoa! Algo raro está pasando <br>... ¡Cuidado!
+type3,1,NpcComOnBegin,"Enemigo poderoso detectado...<br>¡Manténganse enfocados, muchachos!"
+type3,1,NpcComOnSuccess,"¡Sí, lo lograste! ¡Presencia enemiga eliminada!<br>¡Estoy orgulloso de ustedes!"
+type3,1,NpcComOnFailure,"/face6 Bueno, eso no funcionó... Volviendo a tu objetivo habitual <br>."
+type3,1,NpcComOnPreBegin_Other,Nyau escapó... ¡W-whoa! Algo raro está pasando <br>... ¡Cuidado!
+type3,1,NpcComOnBegin_Other,"Enemigo poderoso detectado...<br>¡Manténganse enfocados, muchachos!"
+type3,1,NpcComOnSuccess_Other,"¡Sí, lo lograste! ¡Presencia enemiga eliminada!<br>¡Estoy orgulloso de ustedes!"
+type3,1,NpcComOnFailure_Other,"/face6 Bueno, eso no funcionó... Volviendo a tu objetivo habitual <br>."
+type3,1,NpcComOnPreBegin_Darker,Nyau escapó... ¡W-whoa! Algo raro está pasando <br>... ¡Cuidado!
+type3,1,NpcComOnBegin_Darker,"Enemigo poderoso detectado...<br>¡Manténganse enfocados, muchachos!"
+type3,1,NpcComOnSuccess_Darker,"¡Sí, lo lograste! ¡Presencia enemiga eliminada!<br>¡Estoy orgulloso de ustedes!"
+type3,1,NpcComOnFailure_Darker,"/face6 Bueno, eso no funcionó... Volviendo a tu objetivo habitual <br>."
+type6,0,NpcComOnPreBegin,ニャウの撤退を確認……。<br>撤退の影響による空間の歪みを感知。<br>……新たな敵性反応、来ます。
+type6,0,NpcComOnBegin,緊急通達。<br>出現したエネミーを撃退してください。
+type6,0,NpcComOnSuccess,敵性反応、完全に消失。<br>突発事象への対応、見事でした。
+type6,0,NpcComOnFailure,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type6,0,NpcComOnPreBegin_Other,ニャウの撤退を確認……。<br>撤退の影響による空間の歪みを感知。<br>……新たな敵性反応、来ます。
+type6,0,NpcComOnBegin_Other,緊急通達。<br>出現したエネミーを撃退してください。
+type6,0,NpcComOnSuccess_Other,敵性反応、完全に消失。<br>突発事象への対応、見事でした。
+type6,0,NpcComOnFailure_Other,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type6,0,NpcComOnPreBegin_Darker,ニャウの撤退を確認……。<br>撤退の影響による空間の歪みを感知。<br>……新たな敵性反応、来ます。
+type6,0,NpcComOnBegin_Darker,緊急通達。<br>出現したエネミーを撃退してください。
+type6,0,NpcComOnSuccess_Darker,敵性反応、完全に消失。<br>突発事象への対応、見事でした。
+type6,0,NpcComOnFailure_Darker,/face4 状況、失敗です。<br>各員、通常任務に戻って下さい。
+type6,1,NpcComOnPreBegin,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. Leyendo una nueva presencia enemiga.
+type6,1,NpcComOnBegin,Emergencia. ¡Lucha contra todos los enemigos a la vista!
+type6,1,NpcComOnSuccess,Presencia enemiga eliminada. Buen trabajo<br>bajo presión.
+type6,1,NpcComOnFailure,"/face4 La operación falló. Todas las operaciones, regresen a su objetivo principal <br>."
+type6,1,NpcComOnPreBegin_Other,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. Leyendo una nueva presencia enemiga.
+type6,1,NpcComOnBegin_Other,Emergencia. ¡Lucha contra todos los enemigos a la vista!
+type6,1,NpcComOnSuccess_Other,Presencia enemiga eliminada. Buen trabajo<br>bajo presión.
+type6,1,NpcComOnFailure_Other,"/face4 La operación falló. Todas las operaciones, regresen a su objetivo principal <br>."
+type6,1,NpcComOnPreBegin_Darker,Nyau se escapó... Pero ha provocado una distorsión espacial <br>. Leyendo una nueva presencia enemiga.
+type6,1,NpcComOnBegin_Darker,Emergencia. ¡Lucha contra todos los enemigos a la vista!
+type6,1,NpcComOnSuccess_Darker,Presencia enemiga eliminada. Buen trabajo<br>bajo presión.
+type6,1,NpcComOnFailure_Darker,"/face4 La operación falló. Todas las operaciones, regresen a su objetivo principal <br>."
+type9,0,NpcComOnPreBegin,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9,0,NpcComOnBegin,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9,0,NpcComOnSuccess,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9,0,NpcComOnFailure,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9,0,NpcComOnPreBegin_Other,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9,0,NpcComOnBegin_Other,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9,0,NpcComOnSuccess_Other,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9,0,NpcComOnFailure_Other,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9,0,NpcComOnPreBegin_Darker,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9,0,NpcComOnBegin_Darker,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9,0,NpcComOnSuccess_Darker,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9,0,NpcComOnFailure_Darker,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9,1,NpcComOnPreBegin,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9,1,NpcComOnBegin,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9,1,NpcComOnSuccess,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9,1,NpcComOnFailure,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.
+type9,1,NpcComOnPreBegin_Other,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9,1,NpcComOnBegin_Other,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9,1,NpcComOnSuccess_Other,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9,1,NpcComOnFailure_Other,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.
+type9,1,NpcComOnPreBegin_Darker,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9,1,NpcComOnBegin_Darker,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9,1,NpcComOnSuccess_Darker,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9,1,NpcComOnFailure_Darker,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.
+type9f,0,NpcComOnPreBegin,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9f,0,NpcComOnBegin,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9f,0,NpcComOnSuccess,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9f,0,NpcComOnFailure,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9f,0,NpcComOnPreBegin_Other,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9f,0,NpcComOnBegin_Other,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9f,0,NpcComOnSuccess_Other,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9f,0,NpcComOnFailure_Other,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9f,0,NpcComOnPreBegin_Darker,ニャウは逃げたようです、が……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9f,0,NpcComOnBegin_Darker,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9f,0,NpcComOnSuccess_Darker,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした！
+type9f,0,NpcComOnFailure_Darker,ううむ……残念ですが迎撃失敗です。<br>通常任務に戻ってください。
+type9f,1,NpcComOnPreBegin,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9f,1,NpcComOnBegin,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9f,1,NpcComOnSuccess,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9f,1,NpcComOnFailure,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.
+type9f,1,NpcComOnPreBegin_Other,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9f,1,NpcComOnBegin_Other,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9f,1,NpcComOnSuccess_Other,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9f,1,NpcComOnFailure_Other,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.
+type9f,1,NpcComOnPreBegin_Darker,Parece que Nyau ha escapado... Pero ha provocado una distorsión espacial <br>. ¡Algo malo viene!
+type9f,1,NpcComOnBegin_Darker,Nueva presencia enemiga detectada.<br>¡Muévete para interceptar!
+type9f,1,NpcComOnSuccess_Darker,¡Presencia enemiga interceptada!<br>¡Eso fue largo!
+type9f,1,NpcComOnFailure_Darker,Supongo que no puedo ganarlos todos...<br>Vuelve a tu objetivo habitual.

@@ -1,0 +1,29 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special client order
+AcceptCondition,1,a2,Complete a special client order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+Basic,0,Title,艦隊迎撃戦：戦艦撃破
+Basic,0,Explanation,周囲を固める戦艦群を<br>Ａ．Ｉ．Ｓで撃破し、終の艦隊を撃退せよ。<br>――――――――――――――――――――<br>クリア可能回数/$(0)回<br>失敗条件/制限時間の経過
+Basic,1,Title,Armada Interception: Exterminate
+Basic,1,Explanation,r>This quest can only be completed $(0) time(s).<br>You will fail this quest if you exceed the time limit.
+QuestTarget,0,SimpleExplanation,敵戦艦群を突破せよ！
+QuestTarget,1,SimpleExplanation,Break through the enemy battleships!
+PreTransportDirection0,0,NpcComMsg1,これより、A.I.Sで出撃し<br>敵戦艦との直接戦闘を開始します。
+PreTransportDirection0,0,NpcComMsg2,対A.I.Sのため巨大化したと思われる<br>閃機種も多数確認されています。<br>あわせて撃破してください！
+PreTransportDirection0,1,NpcComMsg1,You will now deploy an AIS and engage <br>the enemy in close-range combat.
+PreTransportDirection0,1,NpcComMsg2,We have readings on what we believe to be <br>massive luminmechs fitted for anti-AIS <br>combat. Take those out too!
+PreTransportDirection,0,NpcComMsg1,これより、A.I.Sで出撃し<br>敵戦艦との直接戦闘を開始します。
+PreTransportDirection,0,NpcComMsg2,対A.I.Sのため巨大化したと思われる<br>閃機種も多数確認されています。<br>あわせて撃破してください！
+PreTransportDirection,1,NpcComMsg1,You will now deploy an AIS and engage <br>the enemy in close-range combat.
+PreTransportDirection,1,NpcComMsg2,We have readings on what we believe<br>to be massive luminmechs fitted for anti-AIS combat.<br>Take those out too!
+AreaName,0,Area0S,艦隊交戦区域
+AreaName,0,Area0L,艦隊交戦区域　セクター３展開エリア
+AreaName,1,Area0S,Armada War Zone
+AreaName,1,Area0L,Armada War Zone Sector 3 Staging Area

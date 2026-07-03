@@ -1,0 +1,161 @@
+section,group,id,text
+terminal,0,Title,エクストリーム端末
+terminal,0,TerminalTitle,エクストリーム端末情報
+terminal,0,TerminalList1,ステージ情報確認
+terminal,0,TerminalList2,仮想アイテム保管庫
+terminal,0,AcceptPoolItem,仮想アイテム受け取り
+terminal,0,AcceptText,受け取る
+terminal,0,ReturnText,戻る
+terminal,0,CheckPoolItem,仮想アイテム保管状況
+terminal,0,PossibleNumber,受け取り可能数
+terminal,0,TotalPoolItem,仮想アイテム総数
+terminal,0,ItemDetails,アイテム詳細
+terminal,0,AcceptItemList,受け取りアイテムリスト
+terminal,0,AcceptNum,$(0)/$(1)
+terminal,0,TotalNum,$(0)
+terminal,0,AcceptConfirmTitle,仮想アイテム受け取り
+terminal,0,AcceptYesNo,以下のアイテムを受け取ります。<br>よろしいですか？<br>
+terminal,0,AcceptErrTitle,仮想アイテム受け取り
+terminal,0,AcceptErr,受け取り可能数を超えているため、<br>これ以上選択することはできません。
+terminal,0,ItemPackErr,アイテムパックが一杯のため、<br>受け取ることができません。
+terminal,0,RecieveErrTitle,通信エラー
+terminal,0,RecieveErr,通信エラーが発生しました。<br>受け取ることができませんでした。
+terminal,0,AcceptAble,受け取り可能
+terminal,0,AcceptSuccessTitle,仮想アイテム受け取り
+terminal,0,AcceptSuccess,選択したアイテムを受け取りました。
+terminal,0,AcceptMaxOver,これ以上受け取れません。
+terminal,0,NoItemMessage,仮想アイテムがありません
+terminal,0,TypeA,エクストリーム端末
+terminal,0,TypeA_Help,<c f0df60>ステージ情報の確認、仮想アイテム保管状況の確認と受け取り（クエストクリア後のみ）ができます。<c>
+terminal,0,TypeB,ステージ情報
+terminal,0,TypeB_Help,<c f0df60>各ステージの情報確認を行うことができます。<c>
+terminal,0,TypeC,仮想アイテム受け取り
+terminal,0,TypeC_Help,<c f0df60>今回拾得した仮想アイテム保管状況の確認と、受け取り（クエストクリア後のみ）ができます。<c>
+terminal,1,Title,EXTREME TERMINAL
+terminal,1,TerminalTitle,EXTREME TERMINAL INF.
+terminal,1,TerminalList1,Check Stage Details
+terminal,1,TerminalList2,Virtual Item Vault
+terminal,1,AcceptPoolItem,Take Virtual Item
+terminal,1,AcceptText,Take
+terminal,1,ReturnText,Back
+terminal,1,CheckPoolItem,Virtual Item Storage Status
+terminal,1,PossibleNumber,Item Pick-up Limit
+terminal,1,TotalPoolItem,Total Number of Virtual Items
+terminal,1,ItemDetails,Item Details
+terminal,1,AcceptItemList,List of Items for Pick-up
+terminal,1,AcceptNum,$(0)/$(1)
+terminal,1,TotalNum,$(0)
+terminal,1,AcceptConfirmTitle,RECEIVING VIRTUAL ITEMS
+terminal,1,AcceptYesNo,You are about to take the items below.<br>Are you sure you wish to proceed?
+terminal,1,AcceptErrTitle,RECEIVING VIRTUAL ITEMS
+terminal,1,AcceptErr,You cannot select any more items because <br>you have exceeded the item pick-up limit.
+terminal,1,ItemPackErr,You cannot take any more items because <br>your inventory is full.
+terminal,1,RecieveErrTitle,COMMUNICATION ERROR
+terminal,1,RecieveErr,"An error has occurred, preventing you <br>from taking your items."
+terminal,1,AcceptAble,Can Be Picked Up
+terminal,1,AcceptSuccessTitle,RECEIVING VIRTUAL ITEMS
+terminal,1,AcceptSuccess,Received selected item.
+terminal,1,AcceptMaxOver,You cannot take any more items.
+terminal,1,NoItemMessage,Virtual Item available
+terminal,1,TypeA,Extreme Terminal
+terminal,1,TypeA_Help,"Item storage, and take items with you (only after clearing quests).<c>"
+terminal,1,TypeB,Stage Details
+terminal,1,TypeB_Help,<c f0df60>Here you can check all kinds of stage details.<c>
+terminal,1,TypeC,Receiving Virtual Items
+terminal,1,TypeC_Help,"up in your last quest, and take items with you (only after clearing quests).<c>"
+area_information,0,EntryEnemy,登場エネミー
+area_information,0,EnemyCondition,エネミー能力変化
+area_information,0,FloorOrder,ステージオーダー
+area_information,0,AbilityUpSmall,能力上昇（小）
+area_information,0,AbilityUpMiddle,能力上昇（中）
+area_information,0,AbilityUpLarge,能力上昇（大）
+area_information,0,AbilityUpExtraBig,能力上昇（特大）
+area_information,0,WeaponResistance,耐性上昇（装備時）
+area_information,0,TechniqueResistance,耐性上昇（属性）
+area_information,0,WeaponResistanceDown,耐性低下（装備時）
+area_information,0,TechniqueResistanceDown,耐性低下（属性）
+area_information,0,HP,HP
+area_information,0,Attack,攻撃力
+area_information,0,Defence,防御力
+area_information,0,HitResistance,打撃耐性
+area_information,0,ShootResistance,射撃耐性
+area_information,0,TecResistance,法撃耐性
+area_information,0,AllResistance,全耐性
+area_information,0,InvalidAbnomalState,状態異常無効
+area_information,0,FloorNumber1,ステージ１
+area_information,0,FloorNumber2,ステージ２
+area_information,0,FloorNumber3,ステージ３
+area_information,0,FloorNumber4,ステージ４
+area_information,0,FloorNumber5,ステージ５
+area_information,0,FloorNumberTab,$(0)
+area_information,0,FloorNumberIndex,ステージ$(0)
+area_information,0,MessageNo,なし
+area_information,0,MessageYes,あり
+area_information,0,Other,ほか
+area_information,0,HitStatus,打撃ダメージ
+area_information,0,ShootStatus,射撃ダメージ
+area_information,0,TecStatus,法撃ダメージ
+area_information,0,AllStatus,すべて
+area_information,0,FloorOrderToast,前のステージオーダー達成により、エネミーの耐性が低下しました。
+area_information,0,AppendMark,、
+area_information,1,EntryEnemy,Enemies Present
+area_information,1,EnemyCondition,Enemy Capability Refactoring
+area_information,1,FloorOrder,Stage Orders
+area_information,1,AbilityUpSmall,Ability up (S)
+area_information,1,AbilityUpMiddle,Ability up (M)
+area_information,1,AbilityUpLarge,Ability up (L)
+area_information,1,AbilityUpExtraBig,Ability up (XL)
+area_information,1,WeaponResistance,Resistance up (equipped)
+area_information,1,TechniqueResistance,Resistance up (Element)
+area_information,1,WeaponResistanceDown,Resistance down (equipped)
+area_information,1,TechniqueResistanceDown,Resistance down (Element)
+area_information,1,HP,HP
+area_information,1,Attack,Attack
+area_information,1,Defence,Defense
+area_information,1,HitResistance,Melee Resistance
+area_information,1,ShootResistance,Ranged Resistance
+area_information,1,TecResistance,Technique Resistance
+area_information,1,AllResistance,Total Resistance
+area_information,1,InvalidAbnomalState,Status Ailment Nullified
+area_information,1,FloorNumber1,Stage 1
+area_information,1,FloorNumber2,Stage 2
+area_information,1,FloorNumber3,Stage 3
+area_information,1,FloorNumber4,Stage 4
+area_information,1,FloorNumber5,Stage 5
+area_information,1,FloorNumberTab,$(0)
+area_information,1,FloorNumberIndex,Stage $(0)
+area_information,1,MessageNo,None
+area_information,1,MessageYes,Yes
+area_information,1,Other,Other
+area_information,1,HitStatus,Melee Damage
+area_information,1,ShootStatus,Ranged Damage
+area_information,1,TecStatus,Technique Damage
+area_information,1,AllStatus,All
+area_information,1,FloorOrderToast,Fulfilling the previous Stage Order has lowered enemy resistances.
+area_information,1,AppendMark,","
+floor_order,0,TitleEnemyDestroy,を$(0)体倒せ！
+floor_order,0,TitleDamageNum,に$(0)以上のダメージを$(1)回以上与えろ！
+floor_order,0,TitlePartDamageNum,の部位を合計$(0)箇所破壊せよ！
+floor_order,0,TitleNoDamage,$(0)秒間、ダメージを受けるな！
+floor_order,0,TitleNoRecover,$(0)秒間、回復効果を受けるな！
+floor_order,0,TitleNoDead,$(0)回以上戦闘不能になるな！
+floor_order,0,SubTitleSecond,$(0)秒以内に
+floor_order,0,SubTitleSecondRecover,$(0)秒以内に回復を受けずに
+floor_order,0,SubTitleWeakPoint,弱点部位を突いて
+floor_order,0,SubTitleForward,正面から
+floor_order,0,SubTitleBack,背後から
+floor_order,0,SubTitleEnemy,エネミー
+floor_order,0,SubTitleState,状態異常になった
+floor_order,1,TitleEnemyDestroy,Take down $(0)
+floor_order,1,TitleDamageNum,Deal $(0) damage more than $(1) times to
+floor_order,1,TitlePartDamageNum,Destroy a total of $(0) sites of
+floor_order,1,TitleNoDamage,Don't take damage for $(0) seconds
+floor_order,1,TitleNoRecover,No recovery effects for $(0) seconds
+floor_order,1,TitleNoDead,Don't get incapacitated over $(0) times
+floor_order,1,SubTitleSecond,within $(0) seconds
+floor_order,1,SubTitleSecondRecover,without receiving healing within $(0) seconds
+floor_order,1,SubTitleWeakPoint,by attacking the Weak Point
+floor_order,1,SubTitleForward,from the front
+floor_order,1,SubTitleBack,from behind
+floor_order,1,SubTitleEnemy,Enemy(s)
+floor_order,1,SubTitleState,inflicted with a Status Ailment

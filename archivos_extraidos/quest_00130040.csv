@@ -1,0 +1,45 @@
+section,group,id,text
+Basic,0,Title,艦内潜入：敵大型戦艦
+Basic,0,Explanation,㐰쩸杘䈰謰Ȱ㰰戀爀㸀甀湥꠰덙鉛䬰䐰估倰訰İאּ�鉒䈰䲐守蠰Ȱ㰰戀爀㸀ᔀᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠᔠ㰠戀爀㸀
+Basic,0,Target_Success,作戦終了！
+Basic,1,Title,Ship Infiltration: Enemy Battleship
+Basic,1,Explanation,this quest by defeating the enemies in the <br>final area. The quest will end if team members are <br>incapacitated 15 times.
+Basic,1,Target_Success,Mission Complete!
+QuestTarget,0,SimpleExplanation,最深部を目指せ！
+QuestTarget,1,SimpleExplanation,Advance to the final area!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+TrialBeginLineMessage,0,TargetExplanation,クエスト目標「最深部を目指せ！」<br><br><c f0df60>全員で合計 <c ff2020>15回戦闘不能<c f0df60> になるとクエスト終了<c>
+TrialBeginLineMessage,1,TargetExplanation,攀渀搀 眀栀攀渀 琀攀愀洀 洀攀洀戀攀爀猀㰀戀爀㸀 栀愀瘀攀 戀攀攀渀 㰀挀 昀昀㈀　㈀　㸀椀渀挀愀瀀愀挀椀琀愀琀攀搀 ㄀㔀 琀椀洀攀猀 㰀挀㸀
+PreTransportDirection0,0,NpcComMsg1,これより、捕捉中の<br>敵大型戦艦内部への<br>潜入作戦を開始します。
+PreTransportDirection0,0,NpcComMsg2,戦闘機にて、敵艦内に潜入後<br>監視システムに注意しつつ<br>最奥の動力炉を目指してください。
+PreTransportDirection0,0,NpcComMsg3,動力炉を破壊後、速やかに脱出し<br>帰還をお願いします。<br>どうか、お気をつけて！
+PreTransportDirection0,1,NpcComMsg1,We will now begin the<br>covert operation to the core of the<br>enemy battleship.
+PreTransportDirection0,1,NpcComMsg2,he reactor while paying<br>attention to the enemy sentry system.
+PreTransportDirection0,1,NpcComMsg3,Exfiltrate quickly once<br>you’ve destroyed the reactor.<br>Be careful!
+AreaName,0,Area0S,敵戦艦近傍　格納庫
+AreaName,0,Area0L,敵戦艦近傍　格納庫
+AreaName,0,Area1S,敵戦艦内部　中枢付近
+AreaName,0,Area1L,敵戦艦内部　中枢付近
+AreaName,0,Area2S,敵戦艦内部　中枢部
+AreaName,0,Area2L,敵戦艦内部　中枢部
+AreaName,0,Area3S,敵戦艦近傍　格納庫
+AreaName,0,Area3L,敵戦艦近傍　格納庫
+AreaName,0,QuestInfoAreaName,敵戦艦内部
+AreaName,1,Area0S,Enemy Battleship Vicinity - Hangar
+AreaName,1,Area0L,Enemy Battleship Vicinity - Hangar
+AreaName,1,Area1S,Enemy Battleship Interior - Center Area
+AreaName,1,Area1L,Enemy Battleship Interior - Center Area
+AreaName,1,Area2S,Enemy Battleship Interior - Central Command
+AreaName,1,Area2L,Enemy Battleship Interior - Central Command
+AreaName,1,Area3S,Enemy Battleship Vicinity - Hangar
+AreaName,1,Area3L,Enemy Battleship Vicinity - Hangar
+AreaName,1,QuestInfoAreaName,Enemy Battleship Interior

@@ -1,0 +1,61 @@
+﻿section,group,id,text
+common,0,IncidentName,リリーパ族集落防衛
+common,0,TrialBeginMsg,リリーパ族の集落を守り通せ！
+common,0,TrialAbstract,リリーパ族の集落を守り通せ！
+common,1,IncidentName,Defender los asentamientos de Lillipan
+common,1,TrialBeginMsg,¡Protege los asentamientos de Lillipan!
+common,1,TrialAbstract,¡Protege los asentamientos de Lillipan!
+type1,0,NpcComOnBegin,エリア内に存在するリリーパ族の集落が<br>襲撃を受けているようです。<br>至急、救援に向かって下さい。
+type1,0,NpcComOnAfterBegin,集落の位置座標は$(0)です。
+type1,0,NpcComOnSuccess,なんとか守り切れましたね。<br>お疲れ様でした。
+type1,0,NpcComOnFailure,/face4 ……集落、全壊。<br>仕方がありません。<br>通常任務に戻ってください。
+type1,0,NpcComOnArrive,その地点にリリーパ族の<br>集落があります。<br>周囲のエネミーを撃退してください。
+type1,0,NpcComOnBroken1,集落の破壊を確認。<br>残り二つです、なんとか防衛を。
+type1,0,NpcComOnBroken2,集落の破壊を確認……<br>残り一つ、せめて一つだけでも……
+type1,0,NpcComOnTimeLimit1,敵の勢いが落ちているようです。<br>引き続き、撃退を続けて下さい。
+type1,0,NpcComOnTimeLimit2,敵の出現が収まりつつあります。<br>最後まで気を抜かずに対処を。
+type1,1,NpcComOnBegin,Los asentamientos de Lillipan en el área parecen estar<br>bajo ataque. Muévete para ayudarlos de inmediato.
+type1,1,NpcComOnAfterBegin,Las coordenadas del asentamiento están en $(0).
+type1,1,NpcComOnSuccess,Los defendiste bien. Excelente trabajo.
+type1,1,NpcComOnFailure,愀琀攀Ⰰ 戀甀琀 琀栀攀爀攀✀猀 渀漀琀栀椀渀最 眀攀 挀愀渀 搀漀⸀㰀戀爀㸀刀攀琀甀爀渀  琀漀 渀漀爀洀愀氀 漀瀀攀爀愀琀椀漀渀猀⸀
+type1,1,NpcComOnArrive,Hay un asentamiento Lillipan allí.<br>Expulsa a todos los enemigos de la zona.
+type1,1,NpcComOnBroken1,Los sensores indican que un asentamiento fue destruido.<br>Sólo quedan dos. Haz todo lo que puedas para<br>protegerlos.
+type1,1,NpcComOnBroken2,Otro asentamiento fue destruido...<br>Sólo queda uno.<br>Tenemos que salvar al menos uno...
+type1,1,NpcComOnTimeLimit1,Los hostiles parecen intimidados. ¡Quédate con ellos!
+type1,1,NpcComOnTimeLimit2,La mayoría de las lecturas hostiles se han desvanecido. Mantente alerta<br>y termina el trabajo.
+type2,0,NpcComOnBegin,近くに存在するリリーパ族の集落が<br>襲撃を受けているようだ。<br>各員、救援へ向かえ。
+type2,0,NpcComOnAfterBegin,座標は$(0)だ。<br>マーカー表示に従い、急行しろ。
+type2,0,NpcComOnSuccess,よし、集落の防衛、完了だ。<br>よくやったな。
+type2,0,NpcComOnFailure,確認されていた集落は全壊だ。<br>……悔やんでも仕方があるまい。<br>通常任務に戻れ。
+type2,0,NpcComOnArrive,よし、集落に辿り着いたようだな。<br>周囲の敵を撃退しろ。
+type2,0,NpcComOnBroken1,ち……集落の一つが破壊されたか。<br>残りは二つだ、対応を急げ。
+type2,0,NpcComOnBroken2,集落の残存数はあと一つだ。<br>なんとしても守り抜け。
+type2,0,NpcComOnTimeLimit1,いいぞ、敵の勢いが落ちてきている。
+type2,0,NpcComOnTimeLimit2,敵の勢いを押し返しつつある。<br>その調子で撃退を続けろ。
+type2,1,NpcComOnBegin,"Los asentamientos cercanos de Lillipan están siendo atacados.<br>Todas las operaciones, acérquense y defiéndanlas."
+type2,1,NpcComOnAfterBegin,Las coordenadas son $(0).<br>Sigue los marcadores y llega rápidamente.
+type2,1,NpcComOnSuccess,Salvaste esos asentamientos.<br>Misión cumplida.
+type2,1,NpcComOnFailure,栀愀瘀攀 琀漀 愀挀挀攀瀀琀 椀琀 愀渀搀㰀戀爀㸀洀漀瘀攀 漀渀⸀ ⸀⸀ 刀攀琀甀爀渀 琀漀 礀漀甀爀 爀攀最甀氀愀爀 搀甀琀椀攀猀⸀
+type2,1,NpcComOnArrive,Parece que has llegado a un acuerdo.<br>Expulsa a todos los hostiles en el área.
+type2,1,NpcComOnBroken1,Maldita sea... Un asentamiento ha sido eliminado.<br>Sólo quedan dos. ¡Apurarse!
+type2,1,NpcComOnBroken2,Sólo queda un acuerdo.<br>¡Protégelos por cualquier medio necesario!
+type2,1,NpcComOnTimeLimit1,"Gran trabajo, los hostiles están retrocediendo."
+type2,1,NpcComOnTimeLimit2,Estás expulsando al enemigo.<br>Sigue empujando.
+type3,0,NpcComOnBegin,エリア内のリリーパ族の集落が<br>襲われています！<br>急いで助けに行ってあげてくださいー！
+type3,0,NpcComOnAfterBegin,集落の位置はー……$(0)ですー！<br>マーカーも出しておきますねっ！
+type3,0,NpcComOnSuccess,/face2 よかったぁ……なんとか集落を<br>守り切れたみたいです。<br>本当に、お疲れ様でしたっ！
+type3,0,NpcComOnFailure,/face6 ……うう、集落、全壊しちゃいました。<br>仕方ありません、通常任務に<br>戻ってください。
+type3,0,NpcComOnArrive,リリーパ族の集落はそのあたりです！<br>周辺の敵を撃退しつつ<br>集落を守ってあげてくださいっ！
+type3,0,NpcComOnBroken1,/face4 ああっ、集落の一つが<br>壊されちゃいました！<br>あと二つ、守ってあげて下さいっ！
+type3,0,NpcComOnBroken2,/face4 集落、残り一つですっ！<br>なんとか、なんとか<br>守ってあげてくださいーっ！
+type3,0,NpcComOnTimeLimit1,/face2 敵の勢いが下がっていますよっ！<br>その調子です！　そのままそのまま！
+type3,0,NpcComOnTimeLimit2,/face2 すごいです！　敵を押し返してます！<br>あと少し、あと少しですよー！
+type3,1,NpcComOnBegin,¡Los asentamientos de Lillipan en el área están bajo<br>ataque! ¡Ve a ayudarlos inmediatamente!
+type3,1,NpcComOnAfterBegin,Los asentamientos están ubicados en... $(0)!<br>¡Yo también tengo marcadores!
+type3,1,NpcComOnSuccess,/face2 Uf... ¡Lograste expulsar a todos los atacantes <br>! ¡Estoy impresionado!
+type3,1,NpcComOnFailure,/face6 No... Todos los asentamientos fueron destruidos.<br>Supongo que no hay nada que podamos hacer ahora...<br>Vuelve a tus tareas habituales.
+type3,1,NpcComOnArrive,¡Los asentamientos de Lillipan están justo por allí! <br>¡Lucha contra los enemigos en el área para mantenerlos<br>a salvo!
+type3,1,NpcComOnBroken1,/cara4 ¡No! ¡Uno de los asentamientos fue destruido!<br>Sólo quedan dos. ¡Por favor mantenlos a salvo!
+type3,1,NpcComOnBroken2,/face4 ¡Solo queda un asentamiento!<br>¡Haz lo que sea necesario para protegerlos!
+type3,1,NpcComOnTimeLimit1,/face2 ¡Los hostiles están perdiendo fuelle!<br>¡Lo estás haciendo! ¡Ve! Ve! Ve!
+type3,1,NpcComOnTimeLimit2,/cara2 ¡Increíble!<br>¡Has hecho retroceder a la mayoría de los enemigos!<br>¡Solo un poquito más!

@@ -1,0 +1,61 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,0,TrialAbstract,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,1,IncidentName,Exterminar la presencia $(0)
+common,1,TrialBeginMsg,¡Derrota cualquier $(0) que encuentres!<br>Fallarás si alguno de los socios queda incapacitado dos veces.
+common,1,TrialAbstract,¡Derrota cualquier $(0) que encuentres!<br>Fallarás si alguno de los socios queda incapacitado dos veces.
+type1,0,NpcComOnBegin,近辺に交戦中のアークスが居ます！<br>至急合流し、協力して<br>周囲一帯の敵を撃退して下さい！
+type1,0,NpcComOnSuccess,/face2 お疲れ様でした！<br>いい協力関係だったと思います！
+type1,0,NpcComOnFailure,/face4 残念ですが、仕方がありません。<br>対象のアークスは、こちらで<br>回収します。
+type1,0,NpcComOnDownA,連携がうまくいっていないようです。<br>互いに協力を忘れないで下さい。
+type1,0,NpcComOnDownB,対象のアークスに多大な負担が<br>かかっています。次の失敗時には<br>撤退を推奨させてもらいます。
+type1,0,NpcComOnDownPB,$(0)に<br>多大な負荷がかかっています。<br>次の戦闘不能時には強制回収します。
+type1,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>エネミーに襲われています！
+type1,0,NpcComOnBeginP2,周囲のエネミーを排除し<br>安全を確保してください。
+type1,0,NpcComOnFailureP,/face4 残念ですが仕方ありません。<br>$(0)は<br>こちらで回収し、帰還させます。
+type1,1,NpcComOnBegin,¡Acción rápidamente y ayúdalos<br>a hacer retroceder a todos los enemigos en el área!
+type1,1,NpcComOnSuccess,/face2 ¡Bien hecho! ¡Hiciste un gran equipo!
+type1,1,NpcComOnFailure,"/face4 Lamentablemente, pero no hay nada más que puedas hacer.<br>Nosotros mismos recogeremos al operativo ARKS."
+type1,1,NpcComOnDownA,Pareces fuera de ritmo. ¡No olvides la<br>importancia del trabajo en equipo!
+type1,1,NpcComOnDownB,"El operativo resultó gravemente herido. Si vuelve a suceder <br>, tendremos que pedirle que cancele."
+type1,1,NpcComOnDownPB,$(0) ha sufrido heridas graves.<br>Si vuelven a estar incapacitados tendremos que hacer una<br>recuperación forzada.
+type1,1,NpcComOnBeginP1,¡Ojos puestos en $(0)! ¡Su Auxiliar está siendo<br>atacado por un enemigo!
+type1,1,NpcComOnBeginP2,Elimina al enemigo y asegura el área.
+type1,1,NpcComOnFailureP,/face4 No hay nada más que puedas hacer. Llevaremos<br>$(0) a casa.
+type6,0,NpcComOnBegin,交戦中のアークスの反応を付近に捕捉。<br>合流し、協力して、周囲の敵性存在を<br>撃退してください。
+type6,0,NpcComOnSuccess,敵性勢力の全滅を確認。<br>協力での任務遂行、見事です。
+type6,0,NpcComOnFailure,任務失敗を確認。<br>対象のアークスを回収します。
+type6,0,NpcComOnDownA,協力が不十分かと。<br>互いの存在を意識して<br>任務にあたってください。
+type6,0,NpcComOnDownB,対象のアークスの負担が大きく<br>危険な状態です。次の失敗時には<br>強制撤退となります。
+type6,0,NpcComOnDownPB,$(0)の負荷<br>限界域。次の戦闘不能時に<br>強制回収を実行します。
+type6,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>敵性存在の襲撃を受けています。
+type6,0,NpcComOnBeginP2,周囲の敵性存在を排除し<br>安全の確保を。
+type6,0,NpcComOnFailureP,限界です。<br>$(0)を<br>強制回収します。
+type6,1,NpcComOnBegin,en ellos y ayúdalos a hacer retroceder a<br>la presencia enemiga en el área.
+type6,1,NpcComOnSuccess,Se confirma la erradicación total de las fuerzas enemigas. Todo<br>gracias a su cooperación. ¡Excelente trabajo!
+type6,1,NpcComOnFailure,Misión fallida. Nos estamos moviendo para traer al operativo ARKS <br>.
+type6,1,NpcComOnDownA,No intentes hacerlo solo. Combine sus<br>fortalezas y trabajen juntos para concluir esto.
+type6,1,NpcComOnDownB,Esa operación de ARKS está gravemente herida. Tendremos que sacarlos<br>si vuelve a suceder.
+type6,1,NpcComOnDownPB,$(0) no puede soportar mucho más. Iniciaremos<br>una recuperación forzada si vuelven a quedar incapacitados.
+type6,1,NpcComOnBeginP1,Aviso por $(0).<br>¡Su Auxiliar está bajo ataque!
+type6,1,NpcComOnBeginP2,Elimina la presencia enemiga y asegura la zona.
+type6,1,NpcComOnFailureP,Esto es demasiado...<br>Estoy sacando $(0).
+type9,0,NpcComOnBegin,<%me>さん！<br>近くで交戦中のアークスがいます！<br>合流の後、協力して敵性存在の撃退を！
+type9,0,NpcComOnSuccess,お疲れさまでした！<br>突然の共闘でしたが<br>上手く連携できてましたね！
+type9,0,NpcComOnFailure,対象のアークスはこちらで回収します！<br><%me>さんは<br>残存している敵性存在の撃退を！
+type9,0,NpcComOnDownA,協力中のアークスの負担が大きいです！<br>上手くフォローしてあげてください！
+type9,0,NpcComOnDownB,協力中のアークスへの負担が大きく<br>危険なため、次の戦闘不能時には<br>強制的に対象者を回収します！
+type9,0,NpcComOnDownPB,$(0)の負荷が<br>かなり大きいです。次の戦闘不能時には<br>強制的に回収させてもらいますね！
+type9,0,NpcComOnBeginP1,$(0)さんの<br>サポートパートナーが襲われています！<br>援護してあげてください！
+type9,0,NpcComOnBeginP2,周囲のエネミーを撃退し、安全確保！<br>よろしくお願いします！
+type9,0,NpcComOnFailureP,うーん、これ以上は危ないですね……<br>$(0)は<br>こちらで回収します。
+type9,1,NpcComOnBegin,<%me>! ¡Hay agentes de ARKS<br>peleando cerca! ¡Únete a ellos y luego<br>ayúdalos a respaldar la presencia del enemigo!
+type9,1,NpcComOnSuccess,"¡Buen trabajo! ¡Incluso juntos así,<br>formabas un gran equipo!"
+type9,1,NpcComOnFailure,"¡Traeremos de vuelta a la operación ARKS herida!<br><%me>,<br>¡elimina a todos los hostiles restantes!"
+type9,1,NpcComOnDownA,¡Una operación de ARKS que coopera ha resultado gravemente<br>herida! ¡Hazles una copia de seguridad!
+type9,1,NpcComOnDownB,"Una operación ARKS que cooperaba quedó incapacitada. <br>Por razones de seguridad, tendremos que forzar un retiro<br>si vuelve a suceder."
+type9,1,NpcComOnDownPB,$(0) ha sufrido heridas graves. ¡Tendremos<br>que sacarlos si están incapacitados<br>otra vez!
+type9,1,NpcComOnBeginP1,¡Ojos puestos en $(0)! ¡Su auxiliar está siendo<br>atacado! ¡Dales algo de respaldo!
+type9,1,NpcComOnBeginP2,¡Haz retroceder al enemigo y asegura el área! <br>¡Contamos contigo!
+type9,1,NpcComOnFailureP,Esto se está volviendo demasiado peligroso...<br>Estamos retirando $(0).

@@ -1,0 +1,49 @@
+﻿section,group,id,text
+common,0,IncidentName,卵型の物質を回収せよ！
+common,0,TrialBeginMsg,卵型の物質を回収せよ！
+common,0,TrialAbstract,隠された卵型の物質を回収せよ！
+common,0,ToastPickup,$(0)個目の$(1)を拾いました。
+common,0,ToastCollect,$(0)が$(1)個回収しました。
+common,0,ToastRewards,$(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+common,1,IncidentName,¡Reúne los objetos con forma de huevo!
+common,1,TrialBeginMsg,¡Reúne los objetos con forma de huevo!
+common,1,TrialAbstract,¡Reúne los objetos ocultos con forma de huevo!
+common,1,ToastPickup,Recogido $(1) #$(0).
+common,1,ToastCollect,Recaudado $(0) x $(1).
+common,1,ToastRewards,Recaudado $(0) x $(1). Ganó $(2) EXP y $(3) meseta.
+type3,0,NpcComOnBegin,緊急通達ですー。<br>近辺に回収対象の標本があるようです。<br>アークス各員は回収をお願いします。
+type3,0,NpcComOnBeginAtRareCase,特別任務です！<br>近辺に回収対象の標本があるようです。<br>急ぎ回収願いますですよー！
+type3,0,NpcComOnSuccess,/face2 対象となった標本の回収<br>確認しましたー！<br>お疲れ様でした！
+type3,0,NpcComOnFailure,/face4 うーん、残念です……<br>アレは危険らしいので、回収して<br>おきたかったのですが……
+type3,0,GoodsPosition,標本の反応は<br>$(0)からです！
+type3,0,RepopGoods,/face2 標本の位置が大体ですがわかりました！<br>各員回収を進めてください。
+type3,0,OnAccessPodByEmptyHand,そのポッドに標本を持ってくれば<br>こちらで回収できますよー。<br>先に標本を探してみてください。
+type3,0,Collect1st,/face2 標本回収、確認です！<br>その調子ですよ～！
+type3,0,CollectHalf,/face2 半分くらい回収できたと思いますよ！
+type3,0,CollectMostly,/face2 もうちょっとです！<br>残りも近くにあると思うので<br>隈なく探してみてください！
+type3,0,Pickup1st,それが……標本？<br>なんだか卵みたいですね。<br>どんどん見つけましょう！
+type3,0,PickupHalf,/face2 それで半分位ですね！<br>残りも頑張りましょう！
+type3,0,PickupEnough,/face2 集める数はそれで充分です！<br>回収ポッドまで届けてくださ～い！
+type3,0,KillTarget1st,龍族が持っていっちゃってる<br>こともあるみたいです。<br>探してみましょう。
+type3,0,KillTargetHalf,これで半分ぐらいでしょうか？<br>反応はまだあるみたいですよー。
+type3,0,KillTargetAll,持っていかれちゃった標本は<br>これで全部、だと思います。
+type3,0,TimeupWarning,むむ、残り時間が少ないです！<br>がんばってくださいー！
+type3,0,TimeupEmergency,できるかぎり急いでください！<br>もう時間がありませんよ！
+type3,1,NpcComOnBegin,"Esta es una petición urgente. Cerca se han encontrado muestras de un material objetivo <br>.<br>Todas las operaciones de ARKS, recójalas."
+type3,1,NpcComOnBeginAtRareCase,¡Esta es una tarea especial! Cerca se han encontrado muestras de un material objetivo <br>.<br>¡Date prisa y recógelos!
+type3,1,NpcComOnSuccess,/face2 ¡Muestras recuperadas! ¡Trabajo bueno!
+type3,1,NpcComOnFailure,"/face4 Eso es una lástima... aparentemente esas cosas son bastante<br>peligrosas, así que esperaba obtener una muestra."
+type3,1,GoodsPosition,¡Muestras detectadas en $(0)!
+type3,1,RepopGoods,"/face2 ¡Tenemos una idea general de<br>dónde están las muestras!  Todas las operaciones,<br>¡sigue recogiéndolas!"
+type3,1,OnAccessPodByEmptyHand,Podemos extraer las muestras una vez que<br>las lleves al módulo. Primero tienes que<br>ir a buscarlos.
+type3,1,Collect1st,/face2 ¡Muestra recuperada! ¡Esa es la manera de hacerlo!
+type3,1,CollectHalf,/face2 ¡Creo que has reunido aproximadamente la mitad de<br>de lo que necesitamos!
+type3,1,CollectMostly,"/face2 ¡Ya casi llegamos! Estoy bastante seguro de que el resto de las muestras<br>no están muy lejos, ¡así que sigue buscando!"
+type3,1,Pickup1st,¿Es eso una muestra? Parece un huevo...<br>¡Intenta encontrar más!
+type3,1,PickupHalf,/face2 ¡Estás a mitad de camino!<br>¡Continúa con el buen trabajo!
+type3,1,PickupEnough,/face2 Eso debería ser suficiente.<br>Ahora tráelos al módulo de colección.
+type3,1,KillTarget1st,"Aparentemente, los draconianos se los llevan<br>a veces. Esté atento."
+type3,1,KillTargetHalf,Debes estar a mitad de camino.<br>¡Aunque todavía estoy recibiendo muchas lecturas!
+type3,1,KillTargetAll,Creo que esas son todas las muestras que se tomaron.
+type3,1,TimeupWarning,"¡Oh, oh, se te está acabando el tiempo!<br>¡Creo en ti!"
+type3,1,TimeupEmergency,¡Ve lo más rápido que puedas!<br>¡Solo queda un poco de<br>tiempo!

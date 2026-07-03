@@ -1,0 +1,23 @@
+﻿section,group,id,text
+common,0,Name,キャッシュボックス
+common,1,Name,Caja de efectivo
+type1,0,CashboxMiss,$(1)<br>$(3)回目　入力した数値：$(4)<br>当たり：$(2)　桁違い：$(0)
+type1,0,CashboxWin,$(1)が<br>最短記録を更新した！<br>最短記録：$(3)回　今回の時間$(4)：$(2)：$(0)
+type1,0,CashboxTimeWin,$(1)が<br>最短記録に並び、クリアタイムを更新した！<br>最短記録：$(3)回　最短時間$(4)：$(2)：$(0)
+type1,0,CashboxDraw,$(1)が<br>最短記録、最速クリアタイムに並んだ！<br>最短記録：$(3)回　最短時間$(4)：$(2)：$(0)
+type1,0,CashboxTimeLose,$(1)が<br>最短記録に並んだ！<br>今回の記録：$(3)回　今回の時間$(4)：$(2)：$(0)
+type1,0,CashboxLose,$(1)が<br>クリアした！<br>今回の記録：$(3)回　今回の時間$(4)：$(2)：$(0)
+type1,0,CashboxRecord,名前：$(1)<br>桁数：$(4)桁　最短記録：$(3)回<br>最短時間$(5)：$(2)：$(0)
+type1,0,CashboxRecordNone,現在の桁数：$(0)桁　記録なし
+type1,0,CashboxWin1,$(1)が<br>最短記録を更新した！<br>ミラクル！ノーヒントで正解！<br>最短記録：$(3)回　今回の時間$(4)：$(2)：$(0)
+type1,0,CashboxDraw1,$(1)が<br>最短記録、最速クリアタイムに並んだ！<br>ミラクル！ノーヒントで正解！<br>最短記録：$(3)回　最短時間$(4)：$(2)：$(0)
+type1,1,CashboxMiss,$(1)<br>No. de intento $(3) Valor ingresado:$(4)<br>Éxitos:$(2) No. de diferencia:$(0)
+type1,1,CashboxWin,$(1)<br>¡estableció un nuevo récord!<br>Nuevo registro: Número de intento $(3) Hora $(4):$(2):$(0)
+type1,1,CashboxTimeWin,¡$(1)<br>ha empatado con el tiempo récord de limpieza!<br>Tiempo récord: intento número $(3) Tiempo más rápido $(4):$(2):$(0)
+type1,1,CashboxDraw,$(1)<br>¡empató el récord de tiempo de limpieza y ayuno!<br>Tiempo récord: intento número $(3) Tiempo más rápido $(4):$(2):$(0)
+type1,1,CashboxTimeLose,¡$(1)<br>ha empatado con el tiempo récord!<br>Registro de este intento: Número de intento $(3) Hora $(4):$(2):$(0)
+type1,1,CashboxLose,$(1)<br>¡lo ha borrado!<br>Registro de este intento: Número de intento $(3) Hora $(4):$(2):$(0)
+type1,1,CashboxRecord,Nombre:$(1)<br>Número: No. $(4) Tiempo de registro: Prueba No. $(3)<br>Tiempo más rápido $(5):$(2):$(0)
+type1,1,CashboxRecordNone,Número actual: No. $(0) Sin registro
+type1,1,CashboxWin1,¡$(1)<br>ha establecido un nuevo tiempo récord!<br>¡Una respuesta correcta sin una sola pista!<br>Tiempo de registro: Número de intento $(3) Tiempo $(4):$(2):$(0)
+type1,1,CashboxDraw1,¡Sin una sola pista!<br>Tiempo récord: intento número $(3) Tiempo más rápido $(4):$(2):$(0)

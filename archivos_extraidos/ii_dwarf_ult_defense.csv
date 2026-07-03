@@ -1,0 +1,19 @@
+﻿section,group,id,text
+common,0,IncidentName,リリーパ族を防衛せよ！
+common,0,TrialBeginMsg,危険にさらされている<br>リリーパ族を守り切れ！
+common,0,TrialAbstract,危険にさらされている<br>リリーパ族を守り切れ！
+common,1,IncidentName,¡Defiende a los Lilipans!
+common,1,TrialBeginMsg,¡Protege a los Lillipans en peligro!
+common,1,TrialAbstract,¡Protege a los Lillipans en peligro!
+type3,0,NpcComOnBegin,/face4 ああっ！　リリーパ族がなにかの<br>装置に挟まれてしまっていますー！<br>た、助けてあげてください！
+type3,0,NpcComOnAfterBegin,/face4 敵さんの攻撃が当たると危険です！<br>リリーパ族が自力で脱出するまで<br>守ってあげてくださいー！
+type3,0,NpcComOnSuccess,/face2 リリーパ族はなんとか逃げられた<br>ようですよー。よかったです。<br>お疲れ様でしたー！
+type3,0,NpcComOnFailure,リリーパ族……どこかに吹き飛んで<br>いっちゃいましたね……<br>たぶん、無事だとは思うんですが……
+type3,0,NpcComOnFirstDamage,/face3 装置は敵さんの攻撃を受けると損傷して<br>爆発しちゃうかもしれないです！<br>敵さんの攻撃から守ってくださいー！
+type3,0,NpcComOnPinch,/face4 こ、これ以上装置が損傷すると<br>爆発してしまいますー！<br>しっかり守ってあげてください―！
+type3,1,NpcComOnBegin,/cara4 ¡Ahh! ¡Esos Lilipans están atrapados en una especie de máquina <br>! ¡Ayúdalos!
+type3,1,NpcComOnAfterBegin,/face4 ¡No podemos permitir que los ataquen! ¡Cubre los<br>Lillipans hasta que puedan escapar por sí solos!
+type3,1,NpcComOnSuccess,/face2 Parece que los Lillipans pudieron escapar.<br>¡Qué alivio! ¡Gran trabajo!
+type3,1,NpcComOnFailure,Los Lillipans fueron enviados a volar.<br>Pero probablemente estén bien... ¿Verdad?
+type3,1,NpcComOnFirstDamage,"/face3 Si esa máquina es golpeada por ataques enemigos, ¡podría<br>explotar! ¡Defiéndelo de actividades hostiles!"
+type3,1,NpcComOnPinch,"/face4 Si esa máquina sufre más daño, ¡<br> explotará! ¡Asegúrate de que eso no suceda!"

@@ -1,0 +1,51 @@
+section,group,id,text
+Basic,0,Title,T:輝光を砕く母なる神
+Basic,0,Explanation,これを撃破せよ。<br>極めて危険な任務だが完遂を望む。<br>――――――――――――――――――――<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,"T: Mother Omnipotent, Shatterer"
+Basic,1,Explanation,㤀Ⰰ㤀㤀㤀⸀㰀戀爀㸀夀漀甀 眀椀氀氀 昀愀椀氀 琀栀椀猀 焀甀攀猀琀 椀昀 礀漀甀 昀愀椀氀 琀漀 昀甀氀昀椀氀氀 礀漀甀爀㰀戀爀㸀洀椀猀猀椀漀渀 漀戀樀攀挀琀椀瘀攀猀 漀爀 礀漀甀 攀砀挀攀攀搀 琀栀攀 琀椀洀攀 氀椀洀椀琀⸀
+QuestTarget,0,SimpleExplanation,時間内にエネミーを全て撃退せよ！
+QuestTarget,1,SimpleExplanation,Defeat all enemies before time runs out!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Clear a special Client Order
+AcceptCondition,1,a2,Clear a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+PreTransportDirection,0,NpcComMsg1,これより、転送を開始します。<br>最初の目標は、月面に出現した<br>巨大幻創種の撃破です。
+PreTransportDirection,0,NpcComMsg2,目標確認後、速やかに<br>攻撃を開始し、撃破してください！<br>お気をつけて！
+PreTransportDirection,1,NpcComMsg1,t the <br>massive phantasm which has <br>manifested on the Moon Surface.
+PreTransportDirection,1,NpcComMsg2,Once you have confirmed the target begin<br>attack maneuvers immediately to destroy it!<br>Be careful out there!
+PreTransportDirection2,0,NpcComMsg1,連戦となりますが<br>地球に突如出現した巨大反応付近に<br>転送します。
+PreTransportDirection2,0,NpcComMsg2,厳しい戦いが予想されますが<br>貴方なら、きっと大丈夫です！<br>どうか、お気をつけて！
+PreTransportDirection2,1,NpcComMsg1,Now preparing to teleport you to the<br>vicinity of the massive signal which was<br>suddenly detected on planet Earth.
+PreTransportDirection2,1,NpcComMsg2,"We expect the battle on the ground will<br>be intense, but someone of your capabilities<br>should be fine! Do be careful."
+AreaName,0,Area0S,月面
+AreaName,0,Area0L,衛星・月　月面
+AreaName,0,Area1S,幻創の柱
+AreaName,0,Area1L,衛星・月　幻創の柱
+AreaName,0,Area2S,世界樹
+AreaName,0,Area2L,惑星・地球　世界樹
+AreaName,0,Area3S,世界樹の頂
+AreaName,0,Area3L,惑星・地球　世界樹の頂
+AreaName,1,Area0S,Moon Surface
+AreaName,1,Area0L,The Moon - Moon Surface
+AreaName,1,Area1S,Phantasm Pillar
+AreaName,1,Area1L,The Moon - Phantasm Pillar
+AreaName,1,Area2S,The World Tree
+AreaName,1,Area2L,Earth - The World Tree
+AreaName,1,Area3S,The Top of The World Tree
+AreaName,1,Area3L,Earth - The Top of The World Tree
+QuestSuccessAreaName,0,Area1S,月面
+QuestSuccessAreaName,0,Area1L,衛星・月　月面
+QuestSuccessAreaName,0,Area3S,イースター島
+QuestSuccessAreaName,0,Area3L,惑星・地球　イースター島
+QuestSuccessAreaName,1,Area1S,Moon Surface
+QuestSuccessAreaName,1,Area1L,The Moon - Moon Surface
+QuestSuccessAreaName,1,Area3S,Easter Island
+QuestSuccessAreaName,1,Area3L,Earth - Easter Island
+PlanetName,0,QuestInfoPlanetName,衛星・月
+PlanetName,1,QuestInfoPlanetName,The Moon

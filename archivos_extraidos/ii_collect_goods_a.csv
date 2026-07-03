@@ -1,0 +1,49 @@
+﻿section,group,id,text
+common,0,IncidentName,昆虫の化石を確保せよ！
+common,0,TrialBeginMsg,昆虫の化石を確保せよ！
+common,0,TrialAbstract,各所に散らばる昆虫の化石を確保せよ！
+common,0,ToastPickup,$(0)個目の$(1)を拾いました。
+common,0,ToastCollect,$(0)が$(1)個回収しました。
+common,0,ToastRewards,$(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+common,1,IncidentName,¡Asegura los fósiles de insectos!
+common,1,TrialBeginMsg,¡Asegura los fósiles de insectos!
+common,1,TrialAbstract,¡Asegura los fósiles de insectos esparcidos por ahí!
+common,1,ToastPickup,Recogido $(1) #$(0).
+common,1,ToastCollect,Recaudado $(0) x $(1).
+common,1,ToastRewards,Recaudado $(0) x $(1). Ganó $(2) EXP y $(3) meseta.
+type1,0,NpcComOnBegin,この付近で研究対象である昆虫の化石が<br>発見されました。各員は指示に従い<br>該当物をポッドへ運んで下さい！
+type1,0,NpcComOnBeginAtRareCase,研究対象である昆虫の化石を発見！<br>許された時間は短いです。各員、急いで<br>該当物をポッドへ運搬して下さい！
+type1,0,NpcComOnSuccess,/face2 対象物の相当数確保を確認。<br>これで十分です。<br>ありがとうございました。
+type1,0,NpcComOnFailure,/face4 対象物を必要数確保できませんでした。<br>仕方がありません。<br>通常任務に戻って下さい。
+type1,0,GoodsPosition,対象物は$(0)にあるようです！
+type1,0,RepopGoods,新しい回収対象物が確認されました！<br>各員回収をお願いします。
+type1,0,OnAccessPodByEmptyHand,対象物を回収してから<br>ポッドにアクセスして下さい。
+type1,0,Collect1st,対象物の格納を確認！<br>引き続きよろしくお願いします！
+type1,0,CollectHalf,対象物の格納を確認！<br>これで半分といったところです！
+type1,0,CollectMostly,/face2 対象物の格納を確認！<br>あと少しで完了です、頑張って！
+type1,0,Pickup1st,対象物を回収したようですね。<br>では、引き続きポッドへ運搬を<br>お願いします！
+type1,0,PickupHalf,その対象物で大体半分です！<br>ポッドへの運搬をお願いします！
+type1,0,PickupEnough,必要十分な量の対象物が<br>回収されたようです！<br>ポッドへ運搬して下さい！
+type1,0,Destroy1st,対象物が破壊されました……<br>注意して下さい。
+type1,0,DestroyWarning,対象物の破損数が多いです。<br>このままでは、必要十分な量を<br>満たせなくなります……！
+type1,0,DestroyEmergency,対象物の破壊数が限界です……<br>これ以上の損失は許されません。<br>急いで下さい！
+type1,0,TimeupWarning,作戦許諾時間が<br>少なくなってきました！
+type1,0,TimeupEmergency,作戦許諾時間、あとわずかです！<br>急いで下さい！
+type1,1,NpcComOnBegin,Los fósiles de insectos que estamos investigando<br>se encontraron en esta zona. Llévalos<br>al módulo de colección.
+type1,1,NpcComOnBeginAtRareCase,"No hay mucho tiempo,<br>así que tráelos al módulo de colección<br>lo más rápido posible."
+type1,1,NpcComOnSuccess,/face2 Has conseguido una cantidad considerable.<br>Eso debería ser suficiente.<br>Se agradece su ayuda.
+type1,1,NpcComOnFailure,/face4 Parece que nos quedamos cortos. Desgraciado.<br>Reanudar sus tareas habituales.
+type1,1,GoodsPosition,¡El objetivo se puede encontrar en $(0)!
+type1,1,RepopGoods,"¡Nuevos objetivos detectados! Todas las operaciones,<br>se mueven para recuperarlas."
+type1,1,OnAccessPodByEmptyHand,Acceda al módulo de recolección después de recolectar<br>objetivos.
+type1,1,Collect1st,¡Artículo objetivo recibido! ¡Sigan con el buen trabajo!
+type1,1,CollectHalf,¡Artículo objetivo recibido!<br>¡Ya estás a mitad de camino!
+type1,1,CollectMostly,"/face2 ¡Artículo objetivo recibido! Ya casi terminas,<br>¡así que sigue así!"
+type1,1,Pickup1st,Parece que has encontrado uno de los objetivos.<br>Tráigalo al módulo de recogida.
+type1,1,PickupHalf,¡Eso nos pondrá por encima de la mitad del camino! Por favor<br>tráelo al módulo de colección.
+type1,1,PickupEnough,Has reunido la cantidad<br>requerida. Tráelos a<br>el módulo de recolección.
+type1,1,Destroy1st,"El objetivo fue destruido...<br>Por favor, tenga más cuidado."
+type1,1,DestroyWarning,"Muchos de los objetivos han sido destruidos.<br>A este ritmo, es posible que no pueda cobrar<br>la cantidad que necesitamos."
+type1,1,DestroyEmergency,No podemos darnos el lujo de perder otro.<br>No dejes que se rompa más. ¡Y date prisa!
+type1,1,TimeupWarning,¡No te queda mucho tiempo!
+type1,1,TimeupEmergency,¡El tiempo casi se acaba! ¡Apurarse!

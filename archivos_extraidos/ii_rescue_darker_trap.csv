@@ -1,0 +1,15 @@
+﻿section,group,id,text
+common,0,IncidentName,ファンジを破壊せよ！
+common,0,TrialBeginMsg,ファンジを破壊してさらわれた仲間を救出せよ！<br>さらわれた仲間が戦闘不能になると失敗。
+common,0,TrialAbstract,さらわれたプレイヤーを助け出せ！
+common,1,IncidentName,¡Destruye al Fhangee!
+common,1,TrialBeginMsg,¡Destruye el Fhangee y rescata a tu aliado<br>capturado! Fallarás si tu aliado capturado queda incapacitado.
+common,1,TrialAbstract,¡Ayuda a liberar a los jugadores capturados!
+type3,0,NpcComOnSuccess,/face2 ファンジ、完全破壊ですっ！<br>各員の協力に感謝します！
+type3,0,NpcComOnFailure,/face4 $(0)さんの<br>救出に失敗しました……すみません<br>私の指示が的確なら……っ！
+type3,1,NpcComOnSuccess,/face2 ¡El Fhangee fue completamente destruido!<br>¡Gracias a todos los operativos por su ayuda!
+type3,1,NpcComOnFailure,"/face4 No lograste rescatar $(0)...<br>Lo siento, tal vez mis órdenes no fueron claras..."
+type9f,0,NpcComOnSuccess,ファンジの破壊を確認しました！<br>引き続き、任務の継続をお願いします！
+type9f,0,NpcComOnFailure,$(0)さんの<br>救出、失敗です……
+type9f,1,NpcComOnSuccess,"¡Confirmada la destrucción del Fhangee!<br>¡Por favor, continúa con tu misión!"
+type9f,1,NpcComOnFailure,No pudiste rescatar $(0)...

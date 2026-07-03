@@ -1,0 +1,87 @@
+﻿section,group,id,text
+common,0,IncidentName,全てのエネミーを撃破せよ！
+common,0,TrialBeginMsg,銃座を利用して全てのエネミーを撃破せよ！
+common,0,TrialAbstract,銃座を利用して全てのエネミーを撃破せよ！
+common,1,IncidentName,¡Destruye a todos los enemigos!
+common,1,TrialBeginMsg,¡Usa la torreta para destruir a todos los enemigos!
+common,1,TrialAbstract,¡Usa la torreta para destruir a todos los enemigos!
+type1,0,NpcComOnPreBegin,新たな敵の接近を確認しました。<br>各員、注意してください。
+type1,0,NpcComOnBegin,周辺座標に銃座を転送します。<br>活用してください。
+type1,0,NpcComOnSuccess,/face2 全ての敵の殲滅を確認。<br>周辺地域の反応もありません。<br>お疲れ様でした。
+type1,0,NpcComOnFailure,枠のみ。不要
+type1,0,HelpMessage,銃座の転送を完了。<br>それを利用して、敵の殲滅を<br>お願いします。
+type1,0,EmplacementBroke,破壊された銃座の補填を行います。<br>あと$(0)秒で完了です。
+type1,0,EmplacementRespawn,銃座の再転送、完了。<br>よろしくお願いします。
+type1,0,EnergyStandRespawn,消費した弾倉を補充しました。
+type1,1,NpcComOnPreBegin,"Se acerca nueva presencia enemiga.<br>Todos los operativos, tengan cuidado."
+type1,1,NpcComOnBegin,Estamos teletransportando una torreta cerca de tus coordenadas <br>. Haz buen uso de ello.
+type1,1,NpcComOnSuccess,/face2 Todos los enemigos destruidos. Tampoco hay más lecturas<br>cercanas. ¡Buen trabajo!
+type1,1,NpcComOnFailure,Sólo marco. Innecesario.
+type1,1,HelpMessage,Despliegue de torreta completo. Úselo para<br>erradicar a los enemigos.
+type1,1,EmplacementBroke,Vamos a reemplazar la torreta que destruyó a <br>. Sólo necesitamos $(0) más<br>segundos.
+type1,1,EmplacementRespawn,"Redistribución de la torreta, completa. ¡El resto depende de ti!"
+type1,1,EnergyStandRespawn,Se ha recargado el cargador gastado.
+type2,0,NpcComOnPreBegin,新たな敵の反応が近づいている。<br>面倒だな……注意しろ。
+type2,0,NpcComOnBegin,周辺座標に銃座を転送する。<br>うまく使え。
+type2,0,NpcComOnSuccess,増援を含むすべての敵の殲滅を確認。<br>状況終了だ。
+type2,0,NpcComOnFailure,枠のみ。不要
+type2,0,HelpMessage,周辺座標に銃座を転送した。<br>そいつを利用して敵を殲滅しろ。
+type2,0,EmplacementBroke,破壊された銃座の補填を行う。<br>$(0)秒後に再転送する。
+type2,0,EmplacementRespawn,銃座再転送、完了。
+type2,0,EnergyStandRespawn,消費した弾倉を補充した。
+type2,1,NpcComOnPreBegin,Se acerca nueva presencia enemiga.<br>Maldita sea... ¡mantente alerta!
+type2,1,NpcComOnBegin,Estamos teletransportando una torreta a unas coordenadas<br>cercanas. Úselo bien.
+type2,1,NpcComOnSuccess,"Confirmando la erradicación de todos los enemigos,<br>incluidos los refuerzos. Se acabó."
+type2,1,NpcComOnFailure,Sólo marco. Innecesario.
+type2,1,HelpMessage,Nos hemos teletransportado en una torreta cerca de tus coordenadas <br>.<br>¡Usa eso para erradicar a los enemigos!
+type2,1,EmplacementBroke,Estamos reemplazando la torre destruida.<br>Redistribución en $(0) segundos.
+type2,1,EmplacementRespawn,Se completó el redespliegue de la torreta.
+type2,1,EnergyStandRespawn,Revista recargada.
+type3,0,NpcComOnPreBegin,敵さんが近づいてきますよー！<br>これは……注意ですよー！
+type3,0,NpcComOnBegin,/face2 銃座を転送しちゃいます！<br>有効活用してくださいー。
+type3,0,NpcComOnSuccess,/face2 敵さんの反応消失ですー！<br>お疲れ様でした！<br>通常任務に戻りましょう！
+type3,0,NpcComOnFailure,枠のみ。不要
+type3,0,HelpMessage,/face2 近くに銃座を転送できたと思います！<br>ガンガン使っちゃってください！
+type3,0,EmplacementBroke,壊された銃座を転送します！<br>再転送まで$(0)秒っ！
+type3,0,EmplacementRespawn,銃座、再転送できましたよね？
+type3,0,EnergyStandRespawn,弾倉、補給しましたよー！
+type3,1,NpcComOnPreBegin,¡Enemigos en camino! ¡Cuidado!
+type3,1,NpcComOnBegin,/face2 ¡Estamos desplegando una torreta! ¡Úsalo bien!
+type3,1,NpcComOnSuccess,/face2 ¡Presencia enemiga eliminada! ¡Gran trabajo!<br>¡Ahora vuelve a tu misión habitual!
+type3,1,NpcComOnFailure,Sólo marco. Innecesario.
+type3,1,HelpMessage,/face2 ¡Teletransportamos una torreta a algún lugar cercano!<br>¡Úsalo para dispararles llenos de agujeros! ¡RATTATAT!
+type3,1,EmplacementBroke,¡Reemplazando la torre destruida! $(0)<br>segundos hasta que se vuelva a implementar.
+type3,1,EmplacementRespawn,¿Creo que debería haber una nueva torreta ahora?
+type3,1,EnergyStandRespawn,¡Torreta recargada!
+type6,0,NpcComOnPreBegin,接近する敵性反応を感知。<br>警戒してください。
+type6,0,NpcComOnBegin,そちらに銃座を転送します。<br>適時利用してください。
+type6,0,NpcComOnSuccess,全ての敵性反応、消失。<br>通常任務に戻ってください。
+type6,0,NpcComOnFailure,枠のみ。不要
+type6,0,HelpMessage,銃座、転送完了。<br>適時利用し、敵性存在の殲滅を。
+type6,0,EmplacementBroke,破壊された銃座を交換します。<br>再転送まで、あと$(0)秒。
+type6,0,EmplacementRespawn,銃座、再転送完了。
+type6,0,EnergyStandRespawn,弾倉、補充完了。
+type6,1,NpcComOnPreBegin,Presencia enemiga entrante. ¡Esté en alerta máxima!
+type6,1,NpcComOnBegin,¡Teletransportando una torreta a tu posición! Úselo como<br>apropiado.
+type6,1,NpcComOnSuccess,Presencia enemiga eliminada. Regresa a tu<br>misión habitual.
+type6,1,NpcComOnFailure,Sólo marco. Innecesario.
+type6,1,HelpMessage,"Despliegue de torreta, completo.<br>¡Utilízalo según corresponda para eliminar la presencia del enemigo <br>!"
+type6,1,EmplacementBroke,¡Estamos reemplazando la torre destruida! $(0) ¡Quedan<br>segundos hasta que se vuelva a implementar!
+type6,1,EmplacementRespawn,Se completó el redespliegue de la torreta.
+type6,1,EnergyStandRespawn,Recarga de cargador completa.
+type9,0,NpcComOnPreBegin,新たな敵性反応が接近中！<br>注意してください！
+type9,0,NpcComOnBegin,周辺座標に銃座を転送しました！<br>がんがん利用しちゃってください！
+type9,0,NpcComOnSuccess,敵性反応、消失確認！<br>流石ですね、お疲れさまでした！
+type9,0,NpcComOnFailure,枠のみ。不要
+type9,0,HelpMessage,銃座の転送、完了しました！<br>うまく使ってくださいね！
+type9,0,EmplacementBroke,破壊された銃座を交換します！<br>再転送まで$(0)秒！
+type9,0,EmplacementRespawn,銃座の再転送、完了しました！
+type9,0,EnergyStandRespawn,弾倉、補充しました！<br>がんがん撃っていきましょう！
+type9,1,NpcComOnPreBegin,¡Se acerca nueva presencia enemiga!<br>¡Esté en guardia!
+type9,1,NpcComOnBegin,¡Teletransportando una torreta cerca de tu ubicación!<br>¡Úsalo para dispararles llenos de agujeros! ¡RATTATAT!
+type9,1,NpcComOnSuccess,¡Presencia enemiga eliminada!<br>¡Excelente! ¡Buen trabajo!
+type9,1,NpcComOnFailure,Sólo marco. Innecesario.
+type9,1,HelpMessage,¡Despliegue de torreta completo!<br>¡Espero que te sea útil!
+type9,1,EmplacementBroke,¡Reemplazando la torre destruida! $(0)<br>segundos hasta la redistribución.
+type9,1,EmplacementRespawn,¡Se completó el redespliegue de la torreta!
+type9,1,EnergyStandRespawn,Magazine reloaded!<br>Now shoot 'em full of holes! RATTATAT!
