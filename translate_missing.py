@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-PSO2 CSV Spanish Translator - Ciclo Continuo
+PSO2 CSV Spanish Translator - Ciclo Continuo con Guardado Parcial
 - Hace Pull constante desde GitHub.
 - Traduce el group 1.
-- Hace Push de vuelta a GitHub.
+- Hace Push intermitente (cada 30 archivos modificados) para evitar pérdidas.
 - No depende de volúmenes persistentes.
 """
 
@@ -27,13 +27,13 @@ except ImportError:
 # === RUTAS DEL PROYECTO NUEVO ===
 REPO_DIR = Path("/app")
 CSV_DIR = REPO_DIR / "archivos_extraidos"
-CACHE_DB = Path("/app/translate_cache.db") # Se guarda temporalmente en la raíz
+CACHE_DB = Path("/app/translate_cache.db")
 LOG = Path("/app/translate_missing.log")
 
 # === CONFIGURACIÓN DE TU GITHUB ===
 GITHUB_REPO = os.getenv("GITHUB_REPO", "tu_usuario/pso2clasic")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
-TIEMPO_ESPERA = 600 # 600 segundos = 10 minutos entre cada revisión
+TIEMPO_ESPERA = 600 # 10 minutos entre cada revisión
 
 TAG_FIXES = {
     "<amarillo>": "<yellow>", "</amarillo>": "</yellow>",
@@ -106,12 +106,10 @@ def setup_git():
         
     log(f"Configurando Git para {GITHUB_REPO} en rama {GITHUB_BRANCH}...")
     
-    # Configuración global de Git en el contenedor
     subprocess.run(["git", "config", "--global", "--add", "safe.directory", str(REPO_DIR)], check=False)
     subprocess.run(["git", "config", "--global", "user.email", "railway@bot.com"], check=False)
     subprocess.run(["git", "config", "--global", "user.name", "Railway Traductor"], check=False)
 
-    # Reconstruir el entorno Git si Railway eliminó la carpeta .git
     if not (REPO_DIR / ".git").exists():
         log("Reconstruyendo entorno Git interno...")
         subprocess.run(["git", "init"], cwd=REPO_DIR, check=False)
@@ -119,12 +117,10 @@ def setup_git():
     
     remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
     
-    # Vincular al repositorio remoto correspondiente
     res = subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
     if res.returncode != 0:
         subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
 
-    # Sincronizar el historial para permitir push/pull continuos sin generar conflictos
     subprocess.run(["git", "fetch", "origin"], cwd=REPO_DIR, check=False)
     subprocess.run(["git", "reset", "--mixed", f"origin/{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
 
@@ -246,7 +242,7 @@ def process_translations(conn, git_ready):
             translated = trans_en.get(text, text) if needs else text
                 
             new_row = list(original_row)
-            new_row[3] = Skinner = translated
+            new_row[3] = translated
             new_rows.append(new_row)
 
         output = StringIO()
@@ -259,7 +255,13 @@ def process_translations(conn, git_ready):
                 f.write(new_content)
             files_modified += 1
             log(f"Traducido: {file_path.name}")
+            
+            # === GUARDADO INTERMITENTE (Cada 30 archivos modificados) ===
+            if git_ready and files_modified % 30 == 0:
+                log(f"Progreso alcanzado ({files_modified} archivos). Asegurando cambios en GitHub...")
+                push_to_github()
 
+    # Guardado final de los archivos restantes que no sumaron un múltiplo de 30
     if git_ready and files_modified > 0:
         push_to_github()
 
@@ -274,7 +276,6 @@ def main():
     git_ready = setup_git()
     conn = init_cache()
 
-    # BUCLE INFINITO
     while True:
         if git_ready:
             pull_from_github()
@@ -282,7 +283,7 @@ def main():
         fix_broken_tags()
         process_translations(conn, git_ready)
         
-        log(f"Ciclo terminado. Esperando {TIEMPO_ESPERA / 60} minutos...")
+        log(f"Ciclo terminado. Esperando {TIEMPO_ESPERA / 60} minutes...")
         time.sleep(TIEMPO_ESPERA)
 
 if __name__ == "__main__":
