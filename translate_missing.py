@@ -105,12 +105,29 @@ def setup_git():
         return False
         
     log(f"Configurando Git para {GITHUB_REPO} en rama {GITHUB_BRANCH}...")
+    
+    # Configuración global de Git en el contenedor
     subprocess.run(["git", "config", "--global", "--add", "safe.directory", str(REPO_DIR)], check=False)
     subprocess.run(["git", "config", "--global", "user.email", "railway@bot.com"], check=False)
     subprocess.run(["git", "config", "--global", "user.name", "Railway Traductor"], check=False)
+
+    # Reconstruir el entorno Git si Railway eliminó la carpeta .git
+    if not (REPO_DIR / ".git").exists():
+        log("Reconstruyendo entorno Git interno...")
+        subprocess.run(["git", "init"], cwd=REPO_DIR, check=False)
+        subprocess.run(["git", "branch", "-m", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
     
     remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
-    subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
+    
+    # Vincular al repositorio remoto correspondiente
+    res = subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
+    if res.returncode != 0:
+        subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
+
+    # Sincronizar el historial para permitir push/pull continuos sin generar conflictos
+    subprocess.run(["git", "fetch", "origin"], cwd=REPO_DIR, check=False)
+    subprocess.run(["git", "reset", "--mixed", f"origin/{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
+
     return True
 
 def pull_from_github():
@@ -229,7 +246,7 @@ def process_translations(conn, git_ready):
             translated = trans_en.get(text, text) if needs else text
                 
             new_row = list(original_row)
-            new_row[3] = translated
+            new_row[3] = Skinner = translated
             new_rows.append(new_row)
 
         output = StringIO()
