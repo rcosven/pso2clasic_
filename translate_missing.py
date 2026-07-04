@@ -206,10 +206,10 @@ JSON A TRADUCIR:
         try:
             log(f"Traduciendo lote de {len(chunk)} textos con IA...")
             response = completion(
-                model="gemini/gemini-1.5-flash", 
+                model="gemini/gemini-1.5-flash-latest", 
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}, 
-                fallbacks=["groq/llama3-8b-8192"], # El relevo mágico
+                fallbacks=["groq/llama-3.1-8b-instant"], # <-- Nuevo modelo de Groq
                 num_retries=2
             )
             
