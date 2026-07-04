@@ -40,16 +40,19 @@ def batch_translate(conn, text_data: list[tuple[str, str]], src_lang: str) -> di
         chunk_dict = {str(idx): {"contexto_original": ctx, "texto_a_traducir": txt} for idx, (txt, ctx) in enumerate(chunk)}
         
         # --- AQUÍ ESTÁ EL PROMPT NUEVO CON EL GLOSARIO ---
+        # --- AQUÍ ESTÁ EL PROMPT ACTUALIZADO ---
         prompt = f"""Eres un traductor profesional de videojuegos de ciencia ficción (PSO2).
-Recibirás un objeto JSON. 'contexto_original' es japonés (NO TRADUCIR). 'texto_a_traducir' es lo que DEBES traducir al español de España de forma natural.
+Recibirás un objeto JSON. 'contexto_original' es el japonés (para referencia de contexto). 'texto_a_traducir' es la frase a traducir al español.
 
-REGLAS:
-1. No traduzcas etiquetas HTML/XML ni corchetes (ej. <br>, <yellow>, {{player}}).
-2. NO TRADUZCAS NOMBRES PROPIOS (Ej: Matoi, Zeno, Echo, Quna, Klariskrays, etc).
-3. TERMINOLOGÍA INTACTA (Mantén estas palabras SIEMPRE en inglés): Ship, Arks, Falspawn, Dark Falz, Photon, Monomate, Dimate, Trimate, Mag, Grinder, Meseta, AC, SG, FUN.
-4. Devuelve SOLO un JSON con formato: {{"0": "Traduccion1", "1": "Traduccion2"}}
+REGLAS DE ORO:
+1. TRADUCE AL ESPAÑOL DE ESPAÑA.
+2. IMPORTANTE: Si 'texto_a_traducir' ya contiene frases en español o es una mezcla, MANTÉN EL ESPAÑOL. NO reviertas nada a inglés ni intentes traducir texto que ya está en español.
+3. No traduzcas etiquetas HTML/XML ni corchetes (ej. <br>, <yellow>, {{player}}).
+4. NO TRADUZCAS NOMBRES PROPIOS (Ej: Matoi, Zeno, Echo, Quna, etc).
+5. TERMINOLOGÍA INTACTA (Mantén estas palabras SIEMPRE en inglés): Ship, Arks, Falspawn, Dark Falz, Photon, Monomate, Dimate, Trimate, Mag, Grinder, Meseta, AC, SG, FUN.
+6. Devuelve SOLO un JSON con formato: {{"0": "Traduccion1", "1": "Traduccion2"}}
 
-JSON A TRADUCIR:
+JSON A PROCESAR:
 {json.dumps(chunk_dict, ensure_ascii=False)}
 """
         translated_dict = {}
