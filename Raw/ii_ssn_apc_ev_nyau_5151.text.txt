@@ -1,0 +1,29 @@
+ii_ssn_apc_ev_nyau_5151.text was created: 04-07-2026 7:29:11
+Filesize is: 2208 bytes
+
+common
+Group 0
+
+Group 1
+
+
+5150
+Group 0
+PreBegin - /ci3 1 ……何か来るようだな。<br>なに、特訓には丁度いいだろう。
+Begin - /ci3 2 見た目に騙されるなと<br>言う前から、これか……<br>先が思いやられるな。
+Success - /ci5 2 これで特訓に集中できるな。
+Failure - /ci5 3 ここまで、歯がたたないとはな……<br>悔しさは残るが、引き際も重要だ。<br>一度退いて、体勢を立て直すとしよう。
+Dead - ……予想以上に損傷が大きい。<br>無念だ……
+BuddyDead - まったく、世話がやける。<br>仕方あるまい。<br>ここは二人で何とかするぞ。
+TargetDead - /ci5 1 それ以前に逃げ出しているが
+
+Group 1
+PreBegin - /ci3 1 ...Looks like something's coming. This will make<br>for some good training.
+Begin - /ci3 2 I guess I should say, don't be fooled by its<br>appearance. Hmm...I'm worried about how this will<br>turn out.
+Success - /ci5 2 Now we can focus on our training.
+Failure - /ci5 3 We've barely made a dent... I'd rather retreat with<br>some regrets than stay here and guarantee more.<br>Let's pull back and get ourselves together.
+Dead - ...The cost was greater than I expected. Alas...
+BuddyDead - Could you pull your own weight for once? Dammit...<br>The two of us'll have to make do.
+TargetDead - /ci5 1 He's...running away?
+
+

@@ -1,0 +1,37 @@
+ii_session_apc_5660.text was created: 04-07-2026 7:29:11
+Filesize is: 2272 bytes
+
+5661
+Group 0
+Begin - /ci1 1 <%me>様！<br>助太刀に参りましたわ！<br>私が来たからには千人力ですわよ！
+Success - /ci1 2 ここの敵は片付きましたわね。<br>さあ、お二人は先へ行ってください！<br>私はここで勝利を願っておりますわ！
+Failure - <%me>様……<br>お役に立てず、申し訳ありません。<br>退かせていただきますわ。
+Dead - 申し訳、ありません……<br>サガさん、お二人のこと……<br>よろしくお願いいたします
+BuddyDead - サガさーん！<br>私一人では手に余りますわー！<br>蘇ってくださいましー！
+
+Group 1
+Begin - /ci1 1 <%me>!<br>You can count on my assistance!<br>I'll fight with the strength of 1,000 men!
+Success - /ci1 2 Looks the enemy has been routed here.<br>You two should carry on ahead!<br>I'll be hoping for your victory!
+Failure - <%me>...<br>My apologies for not being any help.<br>I shall take my leave now.
+Dead - My sincerest apologies...<br>Saga, I leave these two...<br>in your capable hands.
+BuddyDead - Saga, no!<br>I can't do this alone!<br>Please come back to us!
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

@@ -1,0 +1,5794 @@
+ui_bingo.text was created: 04-07-2026 7:34:31
+Filesize is: 272576 bytes
+
+CardSelect
+Group 0
+CardSelect_Title - ビンゴカード選択
+CardSelect_Cancel - 戻る
+CardSelect_None - ビンゴカードがありません
+CardSelect_Set - このビンゴカードを進める
+CardSelect_Detail - 詳細を確認する
+CardSelect_Decide - 「$(0)」に変更しました。
+CardSelect_Achieved - 目標達成済みのマスをオープンしました。
+CardSelect_GetNew - 新しいアークスビンゴカードを取得しました。メインメニューからご確認下さい。
+CardSelect_Ask - ビンゴカード「$(0)」を<br>進めますか？
+CardDetail_Title - ビンゴカード詳細
+CardDetail_Info - ビンゴカード情報
+CardDetail_ExpirationDate - 有効期限
+CardDetail_Bingo - 達成ビンゴ数
+CardDetail_Reach - リーチライン数
+CardDetail_gift - 報酬
+CardDetail_BingoTarget1 - 1 ビンゴ達成報酬
+CardDetail_BingoTarget2 - 2 ビンゴ達成報酬
+CardDetail_BingoTarget3 - 3 ビンゴ達成報酬
+CardDetail_BingoTarget4 - 4 ビンゴ達成報酬
+CardDetail_BingoTarget5 - 5 ビンゴ達成報酬
+CardDetail_BingoTarget6 - 8 ビンゴ達成報酬
+CardDetail_BingoTarget7 - コンプリート報酬
+CardDetail_Line1 - 1 ライン
+CardDetail_Line2 - 2 ライン
+CardDetail_Line3 - 3 ライン
+CardDetail_Line4 - 4 ライン
+CardDetail_Line5 - 5 ライン
+CardDetail_Line6 - 6 ライン
+CardDetail_Line7 - 7 ライン
+CardDetail_Line8 - 8 ライン
+CardDetail_Line9 - 9 ライン
+CardDetail_Line10 - 10 ライン
+CardDetail_Line11 - 11 ライン
+CardDetail_Exp - 経験値　$(0)
+CardDetail_Meseta - $(0)
+CardDetail_CountableItem - $(0)×$(1)
+CardDetail_Line - $(0) ライン
+CardDetail_Explanation - 内容説明
+CardNotice_Achieve - 「$(0)」[$(1)-$(2)]を達成！！
+CardNotice_Achieve2 - ビンゴカードの[$(1)-$(2)]<yellow>$(0)<c>を達成！！
+CardColumn_0 - A
+CardColumn_1 - B
+CardColumn_2 - C
+CardColumn_3 - D
+CardColumn_4 - E
+CardRow_0 - 1
+CardRow_1 - 2
+CardRow_2 - 3
+CardRow_3 - 4
+CardRow_4 - 5
+
+Group 1
+CardSelect_Title - Select Bingo Card
+CardSelect_Cancel - Back
+CardSelect_None - No Bingo Card present
+CardSelect_Set - Use this Bingo Card
+CardSelect_Detail - View Details
+CardSelect_Decide - Modified [$(0)].
+CardSelect_Achieved - The check boxes for your completed objectives have been opened.
+CardSelect_GetNew - You have acquired a new ARKS Bingo Card. You can view it from the Main Menu.
+CardSelect_Ask - Use the "$(0)"<br>Bingo Card?
+CardDetail_Title - Bingo Card Details
+CardDetail_Info - Bingo Card Information
+CardDetail_ExpirationDate - Period of Validity
+CardDetail_Bingo - Bingos Completed
+CardDetail_Reach - Number of Reach Lines
+CardDetail_gift - Rewards
+CardDetail_BingoTarget1 - 1 Bingo Reward
+CardDetail_BingoTarget2 - 2 Bingo Rewards
+CardDetail_BingoTarget3 - 3 Bingo Rewards
+CardDetail_BingoTarget4 - 4 Bingo Rewards
+CardDetail_BingoTarget5 - 5 Bingo Rewards
+CardDetail_BingoTarget6 - 8 Bingo Rewards
+CardDetail_BingoTarget7 - Completion Reward
+CardDetail_Line1 - 1 Line
+CardDetail_Line2 - 2 Lines
+CardDetail_Line3 - 3 Lines
+CardDetail_Line4 - 4 Lines
+CardDetail_Line5 - 5 Lines
+CardDetail_Line6 - 6 Lines
+CardDetail_Line7 - 7 Lines
+CardDetail_Line8 - 8 Lines
+CardDetail_Line9 - 9 Lines
+CardDetail_Line10 - 10 Lines
+CardDetail_Line11 - 11 Lines
+CardDetail_Exp - $(0) EXP
+CardDetail_Meseta - $(0)
+CardDetail_CountableItem - $(0) x$(1)
+CardDetail_Line - $(0) lines
+CardDetail_Explanation - Description
+CardNotice_Achieve - "$(0)" [$(1)-$(2)] Completed!
+CardNotice_Achieve2 - Bingo Card [$(1)-$(2)] <yellow>$(0)<c> Completed!
+CardColumn_0 - A
+CardColumn_1 - B
+CardColumn_2 - C
+CardColumn_3 - D
+CardColumn_4 - E
+CardRow_0 - 1
+CardRow_1 - 2
+CardRow_2 - 3
+CardRow_3 - 4
+CardRow_4 - 5
+
+
+BingoCard
+Group 0
+BingoCard_Title - アークスビンゴカード
+BingoCard_CardTab - ビンゴカード確認
+BingoCard_GiftTab - ビンゴ達成報酬
+BingoCard_OrderDetail - オーダー詳細
+BingoCard_DetailsTitle - アイテム詳細
+BingoCard_Target - 目標：
+BingoCard_Free - フリー枠です。
+
+Group 1
+BingoCard_Title - ARKS Bingo Card
+BingoCard_CardTab - View Bingo Card
+BingoCard_GiftTab - Bingo Completion Reward
+BingoCard_OrderDetail - Order Details
+BingoCard_DetailsTitle - Item Details
+BingoCard_Target - Objective:
+BingoCard_Free - Free frame.
+
+
+Title
+Group 0
+Title01 - 1周年記念ビンゴ
+Title02 - 1周年記念ビンゴ【裏】
+Title03 - 1周年記念ビンゴ【炎】
+Title04 - サマービンゴ
+Title05 - ハロウィンビンゴ
+Title06 - ハロウィンビンゴ【裏】
+Title07 - クリスマスビンゴ
+Title08 - クリスマスビンゴ【裏】
+Title09 - アークス共闘祭2014ビンゴ
+Title10 - アークス共闘祭2014ビンゴ【裏】
+Title100 - バレンタイン2021ビンゴ【表】
+Title101 - バレンタイン2021ビンゴ【裏】
+Title102 - ホワイトデー2019ビンゴ【表】
+Title103 - ホワイトデー2019ビンゴ【裏】
+Title104 - イースター2019ビンゴ【表】
+Title105 - イースター2019ビンゴ【裏】
+Title106 - クリスマス2020ビンゴ【表】
+Title107 - クリスマス2020ビンゴ【裏】
+Title108 - イースター2020ビンゴ【表】
+Title109 - イースター2020ビンゴ【裏】
+Title11 - バレンタインビンゴ
+Title110 - クリスマス2020ビンゴ【表】
+Title111 - クリスマス2020ビンゴ【裏】
+Title12 - バレンタインビンゴ【裏】
+Title13 - スプリングビンゴ
+Title14 - スプリングビンゴ【裏】
+Title15 - 2周年記念ビンゴⅠ
+Title16 - 2周年記念ビンゴⅠ【裏】
+Title17 - 2周年記念ビンゴⅡ
+Title18 - 2周年記念ビンゴⅡ【裏】
+Title19 - お月見ビンゴ
+Title20 - お月見ビンゴ【裏】
+Title21 - ハロウィンビンゴ2014
+Title22 - アークス式典ビンゴ
+Title23 - クリスマス2014ビンゴ
+Title24 - クリスマス2014ビンゴ【裏】
+Title25 - アークス共闘祭2015ビンゴ
+Title26 - バレンタイン2015ビンゴ
+Title27 - バレンタイン2015ビンゴ【裏】
+Title28 - アークス共闘祭2015ビンゴⅡ
+Title29 - ホワイトデー2015ビンゴ
+Title30 - ホワイトデー2015ビンゴ【裏】
+Title30001 - 雨風ビンゴ【表】
+Title30002 - 雨風ビンゴ【裏】
+Title30003 - サマー2020ビンゴ【表】
+Title30004 - サマー2020ビンゴ【裏】
+Title31 - イースター2015ビンゴ
+Title32 - イースター2015ビンゴ【裏】
+Title33 - レイニー2015ビンゴ
+Title34 - レイニー2015ビンゴ【裏】
+Title35 - 3周年記念ビンゴ
+Title36 - 3周年記念ビンゴ【裏】
+Title37 - サマー2015ビンゴ
+Title38 - サマー2015ビンゴ【裏】
+Title39 - お月見2015ビンゴ
+Title40 - お月見2015ビンゴ【裏】
+Title41 - ハロウィン2015ビンゴ
+Title42 - ハロウィン2015ビンゴ【裏】
+Title43 - クリスマス2015ビンゴ
+Title44 - クリスマス2015ビンゴ【裏】
+Title45 - PS感謝祭2016ビンゴⅠ
+Title46 - PS感謝祭2016ビンゴⅡ
+Title47 - ホワイトデー2016ビンゴ
+Title48 - ホワイトデー2016ビンゴ【裏】
+Title49 - イースター2016ビンゴ
+Title50 - イースター2016ビンゴ【裏】
+Title51 - レイニー2016ビンゴ【表】
+Title52 - レイニー2016ビンゴ【裏】
+Title53 - 4周年記念2016ビンゴⅠ
+Title54 - 4周年記念2016ビンゴⅡ
+Title55 - サマー2016ビンゴ
+Title56 - お月見2016ビンゴ【表】
+Title57 - お月見2016ビンゴ【裏】
+Title58 - ハロウィン2016ビンゴ【表】
+Title59 - ハロウィン2016ビンゴ【裏】
+Title60 - クリスマス2016ビンゴ【表】
+Title61 - クリスマス2016ビンゴ【裏】
+Title62 - バレンタイン2017ビンゴ【表】
+Title63 - バレンタイン2017ビンゴ【裏】
+Title64 - ホワイトデー2017ビンゴ【表】
+Title65 - ホワイトデー2017ビンゴ【裏】
+Title66 - スプリング2017ビンゴ【表】
+Title67 - スプリング2017ビンゴ【裏】
+Title68 - レイニー2017ビンゴ【表】
+Title69 - レイニー2017ビンゴ【裏】
+Title70 - 七夕2017ビンゴ【表】
+Title71 - 七夕2017ビンゴ【裏】
+Title72 - サマー2017ビンゴ【表】
+Title73 - サマー2017ビンゴ【裏】
+Title74 - お月見2017ビンゴ【表】
+Title75 - お月見2017ビンゴ【裏】
+Title76 - ハロウィン2017ビンゴ【表】
+Title77 - ハロウィン2017ビンゴ【裏】
+Title78 - クリスマス2017ビンゴ【表】
+Title79 - クリスマス2017ビンゴ【裏】
+Title80 - バレンタイン2018ビンゴ【表】
+Title81 - バレンタイン2018ビンゴ【裏】
+Title82 - ホワイトデー2018ビンゴ【表】
+Title83 - ホワイトデー2018ビンゴ【裏】
+Title84 - イースター2018ビンゴ【表】
+Title85 - イースター2018ビンゴ【裏】
+Title86 - レイニー2018ビンゴ【表】
+Title87 - レイニー2018ビンゴ【裏】
+Title88 - 七夕2018ビンゴ【表】
+Title89 - 七夕2018ビンゴ【裏】
+Title90 - サマー2018ビンゴ【表】
+Title91 - サマー2018ビンゴ【裏】
+Title92 - お月見2018ビンゴ【表】
+Title93 - お月見2018ビンゴ【裏】
+Title94 - ハロウィン2020ビンゴ【表】
+Title95 - ハロウィン2020ビンゴ【裏】
+Title96 - ウィンター2018ビンゴ【表】
+Title97 - ウィンター2018ビンゴ【裏】
+Title98 - クリスマス2018ビンゴ【表】
+Title99 - クリスマス2018ビンゴ【裏】
+
+Group 1
+Title01 - First Anniversary Bingo
+Title02 - First Anniversary Bingo [Reverse]
+Title03 - First Anniversary Bingo [Flame]
+Title04 - Summer Bingo
+Title05 - Halloween Bingo
+Title06 - Halloween Bingo [Reverse]
+Title07 - Christmas Bingo
+Title08 - Christmas Bingo [Reverse]
+Title09 - ARKS United Front Festival 2014 Bingo
+Title10 - ARKS United Front Festival 2014 Bingo [Reverse]
+Title100 - Valentine's Day 2021 Bingo [Front]
+Title101 - Valentine's Day 2021 Bingo [Reverse]
+Title102 - White Day 2019 Bingo [Front]
+Title103 - White Day 2019 Bingo [Reverse]
+Title104 - Easter 2019 Bingo [Front]
+Title105 - Easter 2019 Bingo [Reverse]
+Title106 - Christmas 2020 Bingo [Front]
+Title107 - Christmas 2020 Bingo [Reverse]
+Title11 - Valentine's Day Bingo
+Title12 - Valentine's Day Bingo [Reverse]
+Title13 - Spring Bingo
+Title14 - Spring Bingo [Reverse]
+Title15 - Second Anniversary Bingo I
+Title16 - Second Anniversary Bingo I [Reverse]
+Title17 - Second Anniversary Bingo II
+Title18 - Second Anniversary Bingo II [Reverse]
+Title19 - Moon-Gazing Festival Bingo
+Title20 - Moon-Gazing Festival Bingo [Reverse]
+Title21 - Halloween Bingo 2014
+Title22 - ARKS Ceremonial Bingo
+Title23 - Christmas 2014 Bingo
+Title24 - Christmas 2014 Bingo [Reverse]
+Title25 - ARKS United Front Festival 2015 Bingo
+Title26 - Valentine's Day 2015 Bingo
+Title27 - Valentine's Day 2015 Bingo [Reverse]
+Title28 - ARKS United Front Festival 2015 Bingo II
+Title29 - White Day 2015 Bingo
+Title30 - White Day 2015 Bingo [Reverse]
+Title30001 - Wind & Rain Bingo [Front]
+Title30002 - Wind & Rain Bingo [Reverse]
+Title30003 - Summer 2020 Bingo [Front]
+Title30004 - Summer 2020 Bingo [Reverse]
+Title31 - Easter 2015 Bingo
+Title32 - Easter 2015 Bingo [Reverse]
+Title33 - Rainy 2015 Bingo
+Title34 - Rainy 2015 Bingo [Reverse]
+Title35 - Third Anniversary Bingo
+Title36 - Third Anniversary Bingo [Reverse]
+Title37 - Summer 2015 Bingo
+Title38 - Summer 2015 Bingo [Reverse]
+Title39 - Moon-Gazing Festival 2015 Bingo
+Title40 - Moon-Gazing Festival 2015 Bingo [Reverse]
+Title41 - Halloween 2015 Bingo
+Title42 - Halloween 2015 Bingo [Reverse]
+Title43 - Christmas 2015 Bingo
+Title44 - Christmas 2015 Bingo [Reverse]
+Title45 - PS Thanksgiving Fest 2016 Bingo I
+Title46 - PS Thanksgiving Fest 2016 Bingo II
+Title47 - White Day 2016 Bingo
+Title48 - White Day 2016 Bingo [Reverse]
+Title49 - Easter 2016 Bingo
+Title50 - Easter 2016 Bingo [Reverse]
+Title51 - Rainy 2016 Bingo [Front]
+Title52 - Rainy 2016 Bingo [Reverse]
+Title53 - Fourth Anniversary 2016 Bingo I
+Title54 - Fourth Anniversary 2016 Bingo II
+Title55 - Summer 2016 Bingo
+Title56 - Moon-Gazing Festival 2016 Bingo [Front]
+Title57 - Moon-Gazing Festival 2015 Bingo [Reverse]
+Title58 - Halloween 2016 Bingo [Front]
+Title59 - Halloween 2016 Bingo [Reverse]
+Title60 - Christmas 2016 Bingo [Front]
+Title61 - Christmas 2016 Bingo [Reverse]
+Title62 - Valentine's Day 2017 Bingo [Front]
+Title63 - Valentine's Day 2017 Bingo [Reverse]
+Title64 - White Day 2017 Bingo [Front]
+Title65 - White Day 2017 Bingo [Reverse]
+Title66 - Spring Bingo 2017 Bingo [Front]
+Title67 - Spring Bingo 2017 Bingo [Reverse]
+Title68 - Rainy 2017 Bingo [Front]
+Title69 - Rainy 2017 Bingo [Reverse]
+Title70 - Tanabata Festival 2017 Bingo [Front]
+Title71 - Tanabata Festival 2017 Bingo [Reverse]
+Title72 - Summer 2017 Bingo [Front]
+Title73 - Summer 2017 Bingo [Reverse]
+Title74 - Moon-Gazing Festival 2017 Bingo [Front]
+Title75 - Moon-Gazing Festival 2017 Bingo [Reverse]
+Title76 - Halloween 2017 Bingo [Front]
+Title77 - Halloween 2017 Bingo [Reverse]
+Title78 - Christmas 2017 Bingo [Front]
+Title79 - Christmas 2017 Bingo [Reverse]
+Title80 - Valentine's Day 2018 Bingo [Front]
+Title81 - Valentine's Day 2018 Bingo [Reverse]
+Title82 - White Day 2018 Bingo [Front]
+Title83 - White Day 2018 Bingo [Reverse]
+Title84 - Easter 2018 Bingo [Front]
+Title85 - Easter 2018 Bingo [Reverse]
+Title86 - Rainy 2018 Bingo [Front]
+Title87 - Rainy 2018 Bingo [Reverse]
+Title88 - Tanabata Festival 2018 Bingo [Front]
+Title89 - Tanabata Festival 2018 Bingo [Reverse]
+Title90 - Summer 2018 Bingo [Front]
+Title91 - Summer 2018 Bingo [Reverse]
+Title92 - Moon-Gazing Festival 2018 Bingo [Front]
+Title93 - Moon-Gazing Festival 2018 Bingo [Reverse]
+Title94 - Halloween 2020 Bingo [Front]
+Title95 - Halloween 2020 Bingo [Reverse]
+Title96 - Winter 2018 Bingo [Front]
+Title97 - Winter 2018 Bingo [Reverse]
+Title98 - Christmas 2018 Bingo [Front]
+Title99 - Christmas 2018 Bingo [Reverse]
+
+
+Explain
+Group 0
+Explain01 - アークスビンゴカード第一弾！<br>期間限定クエスト「境界を砕く混沌」を<br>遊んでビンゴを目指そう！ コンプリートすると……。
+Explain02 - 「1周年記念ビンゴ」をコンプリートしたあなたには<br>高難易度の裏カードへの挑戦権が与えられます！<br>君はクリア出来るかな？
+Explain03 - 1周年記念後半のビンゴカード！<br>緊急クエスト「アークスシップの炎渦」を遊んで<br>目標を達成しよう！
+Explain04 - 新惑星への渡航解禁！<br>新たに解放された「惑星ウォパル・海岸エリア」<br>を遊んで目標を達成しよう！
+Explain05 - ハロウィンイベントを記念したビンゴカード！<br>緊急クエスト「トリックオアトリート２！」や<br>「採掘場跡」を遊んでビンゴを目指そう！
+Explain06 - ついに登場、難度「スーパーハード」！<br>「ハロウィンビンゴ」をコンプリートしたあなたには<br>超難度の裏カードへの挑戦権が与えられます！
+Explain07 - メリークリスマス！<br>緊急クエスト「氷上のメリークリスマス２」や<br>「迫る漆黒の腕」を遊んでビンゴを目指そう！
+Explain08 - 「クリスマスビンゴ」をコンプリートしたあなたには<br>高難易度の裏カードへの挑戦権が与えられます！<br>海底エリアを制覇しよう！
+Explain09 - アークス共闘祭を盛り上げるビンゴカード！<br>期間限定クエスト「造龍来たる魔の海域」を遊んで<br>コンプリートを目指そう！
+Explain10 - 「アークス共闘祭2014ビンゴ」のコンプリートおめでとう！<br>でもここからが本番！裏カードをコンプリートしてこそ<br>このお祭りを遊びつくすことができるのだ！
+Explain100 - バレンタインデーは『PSO2』でチョコを集めよう！<br>シー（バレンタイン2021）と一緒にイベントを盛り上げつつ<br>ビンゴをコンプリートして、豪華報酬をもらおう！
+Explain101 - 裏面には手応えのある目標が盛りだくさん！<br>緊急クエスト「チョコレートの行方」を<br>みんなで遊んで、コンプリートを目指そう！
+Explain102 - まだ肌寒い季節。こんなときこそ暖かい部屋でPSO2！<br>今年のホワイトデーは、いつもとちがう<br>アフィン（ホワイトデー）が登場！？<br>彼の相談に乗りつつ、ビンゴをクリアしていこう！
+Explain103 - 裏面には手応えのある目標が盛りだくさん！<br>緊急クエスト「ホワイトデーは大わらわ2019」に<br>みんなで乗り込んで、効率よくコンプリートを目指そう！
+Explain104 - １０連休と話題のゴールデンウィークも目前！<br>もちろん予定はＰＳＯ２で遊ぶこと！<br>なにやら、ショップエリアにお困りの様子のシーが……？<br>彼女の依頼をこなして、ビンゴのクリアを目指そう！
+Explain105 - 裏面の目標は、ちょっぴり難しいかも？<br>緊急クエスト「ワイルドイースター２０１９」を<br>みんなでクリアし、ビンゴの達成を効率よく目指そう！
+Explain106 - クリスマスシーズンがやってきた！<br>予定がある人もない人も『PSO2』で<br>シー（クリスマス2020）のオーダーを達成して<br>ビンゴのクリアを目指そう！
+Explain107 - 裏面にふさわしい強敵が勢ぞろい！<br>緊急クエスト「氷上のメリークリスマス」に挑戦し<br>ビンゴのコンプリートを目指そう！
+Explain108 - ハッピーイースター！　今年も春のお祭りがやってきた。<br>ショップエリアにいる、イベントの準備で大忙しの<br>シー（イースター２０２０）を手伝いつつ<br>ビンゴのクリアを目指そう！
+Explain109 - 手応えある裏面の目標にもチャレンジ！<br>緊急クエスト「ワイルドイースター２０２０」に<br>みんなで乗り込めば、効率よく達成できるかも！？<br>たくさん参加して、ビンゴをコンプリートしよう！
+Explain11 - 今回はあま～い香りのビンゴカードをおとどけ！<br>緊急クエスト「チョコレートの行方２」をプレイして<br>バレンタインイベントを満喫しちゃおう！
+Explain110 - さむ～い冬！　こたつと『PSO2』の準備はＯＫ？<br>ショップエリアではまさかの三人が訪れて大騒ぎ！<br>シバ（クリスマス）たちのオーダーを手伝いつつ<br>ビンゴのコンプリートを目指そう！
+Explain111 - 裏面は難易度がさらにアップ！<br>「氷上のメリークリスマス2020」をプレイしながら<br>ビンゴをコンプリートして、冬の寒さを吹っ飛ばそう！
+Explain12 - 「バレンタインビンゴ」をコンプリートしたあなたには<br>ちょっぴりビターな裏カードへの挑戦権が与えられます！<br>アークス共闘祭もバレンタインも、まだまだ満喫できるよ！
+Explain13 - 新たに配信！ アークスビンゴカード！<br>緊急クエスト「ワイルドイースター」を遊びつくして<br>コンプリートを目指そう！
+Explain14 - 「スプリングビンゴ」をコンプリートしたあなたには<br>高難易度な裏カードへの挑戦権を進呈します。<br>ぜひコンプリートを目指そう！
+Explain15 - おかげさまで２周年突破！<br>期間限定クエスト「静寂に生まれし混沌」を遊びつくして<br>コンプリートを目指そう！
+Explain16 - 宴はまだ終わらない。<br>高難易度の要素にチャレンジして<br>コンプリートを目指そう！
+Explain17 - ２周年記念ビンゴ第２弾！<br>期間限定クエスト「境界を切り裂く銀の鋼刃」を<br>遊びつくしてコンプリートを目指そう！
+Explain18 - 夏到来！<br>緊急クエスト「ビーチウォーズ２！」を軸に<br>様々な要素を遊びつくしてコンプリートを目指そう！
+Explain19 - 惑星ハルコタンで<br>お月見冒険しよう！<br>冒険を通してコンプリートを目指そう！
+Explain20 - お月見は、続くよどこまでも……<br>高難易度の要素にチャレンジして<br>コンプリートを目指そう！
+Explain21 - ＰＳＯ２の秋到来！<br>季節限定クエスト「トリックオアトリート３！」を遊んで<br>コンプリートを目指そう！
+Explain22 - アークス記念式典開催中！<br>式典も大事だけど、カジノで遊んだり<br>「造龍集う死の海域」や「浮上施設」もお忘れなく！
+Explain23 - ２０１４年の締めくくりもPSO２！<br>季節限定クエスト「氷上のメリークリスマス３」を遊んで<br>コンプリートを目指そう！
+Explain24 - 【裏】に相応しい、やや難度の高い要素をつめこみました！<br>新たに難易度が追加された緊急クエストを軸に<br>色々と遊びつくそう！
+Explain25 - “PS Vita”版２周年をお祝いする記念ビンゴ！<br>期間限定クエスト「混沌に惑う白き都」を遊んだり<br>カジノに行ったりしてコンプリートを目指そう！
+Explain26 - チョコレートの飛び交う季節でもPSO2！<br>季節限定クエスト「チョコレートの行方３」を遊びながら<br>コンプリートを目指そう！
+Explain27 - 様々な難易度帯の目標を詰め込みました。<br>高難易度の「混沌に惑う白き都」や「チョコレートの行方３」<br>などをやり尽くし、コンプリートを果たせるか！？
+Explain28 - “PS Vita”版２周年をお祝いする記念ビンゴ後半戦！<br>新たな緊急クエスト「静穏を破りし大海の脅威」を遊んで<br>コンプリートを目指そう！
+Explain29 - ホワイトデーと言えばクッキーと飴とPSO2！<br>季節限定クエスト「ホワイトデーは大わらわ３」<br>を遊びながらコンプリートを目指そう！
+Explain30 - 【裏】ビンゴらしく様々な難易度を取り揃えました。<br>引き続き季節限定クエスト「ホワイトデーは大わらわ３」<br>などを遊びながらコンプリートを目指そう！
+Explain30001 - 外は雨模様でも、家の中ではＰＳＯ２！<br>季節限定クエスト「雨風とともに」で遊びながら<br>ビンゴのコンプリートを目指そう！
+Explain30002 - 【裏】ビンゴらしく様々な難易度を取り揃えました。<br>引き続き季節限定クエスト「雨風とともに」<br>などを遊びながらコンプリートを目指そう！
+Explain30003 - 夏といえばやっぱり『PSO2』！<br>今回は期間限定クエスト「ビーチウォーズ2020！」や<br>シーの夏らしいクライアントオーダーに挑戦してみよう！
+Explain30004 - まだまだ夏は終わらない！？<br>難易度アップ、【裏】のビンゴにチャレンジだ！<br>「ビーチウォーズ2020！」を中心に<br>コンプリートを目指そう！
+Explain31 - 卵だ！ウサギだ！イースターだ！<br>緊急クエスト「ワイルドイースター2」を遊びながら<br>コンプリートを目指そう！
+Explain32 - 表では満足できなかった人に<br>【裏】ではさまざまな難易度を用意しました。<br>コンプリート目指して挑戦してみてくださいね！
+Explain33 - 外は雨模様でも、家の中ではPSO2！<br>季節限定クエスト「雨風とともに３」を遊びながら<br>コンプリートを目指そう！
+Explain34 - 【裏】ビンゴらしく様々な難易度を取り揃えました。<br>引き続き季節限定クエスト「雨風とともに３」<br>などを遊びながらコンプリートを目指そう！
+Explain35 - PSO2もいよいよ4年目に突入！<br>「森林」「火山洞窟」「砂漠」「凍土」「白ノ領域」「海岸」<br>と言ったエリアに出現するダーカーを撃破せよ！
+Explain36 - 【裏】ビンゴらしく様々な難易度を取り揃えました。<br>一見、無茶な内容にも見えますが……。<br>「待てば海路の日和あり」です。頑張りましょう！
+Explain37 - 夏の蒸し暑さなんか吹き飛ばす勢いで<br>海辺に出現するエネミーが中心の<br>「ビーチウォーズ３！」を遊びつくそう！
+Explain38 - まだまだ夏は終わらない！？<br>【裏】のビンゴは各種難易度を揃えました。<br>「ビーチウォーズ３！」を中心にコンプリートを目指そう！
+Explain39 - 秋の夜長はやっぱりPSO2！<br>緊急クエスト「禍魂集いし戦道」を遊びながら<br>コンプリートを目指そう！
+Explain40 - 【裏】ビンゴは一筋縄ではいかない！<br>引き続き「禍魂集いし戦道」を遊びつつ<br>様々な要素に挑戦してコンプリートを目指そう！
+Explain41 - お菓子を貰っても、貰わなくてもPSO2！<br>緊急クエスト「トリックオアトリート４！」を遊びながら<br>コンプリートを目指そう！
+Explain42 - 【裏】ビンゴらしく様々な難易度を取り揃えました。<br>引き続き「トリックオアトリート４！」などを遊びながら<br>コンプリートを目指そう！
+Explain43 - ２０１５年最後もＰＳＯ２！<br>季節限定クエスト「氷上のメリークリスマス４」を遊んで<br>コンプリートを目指そう！
+Explain44 - ビンゴも後半戦に突入！<br>さまざまな難易度が混在する【裏】も<br>コンプリートを目指して頑張ろう！
+Explain45 - ドリームキャストからはじまったPSOシリーズ。<br>おかげさまで15周年を迎えることができました。<br>期間限定クエスト「チョコレートの行方2016」や<br>「混沌導く闇の化身」でコンプリートを目指そう！
+Explain46 - ファンタシースター感謝祭2016も折り返し！<br>期間限定クエストなどだけではなく、エピソード4で<br>新たに追加された要素などもチェックして<br>コンプリートを目指そう！
+Explain47 - キャンディー？マシュマロ？<br>甘いお菓子もいいけれど、ＰＳＯ２も忘れずに！<br>期間限定クエスト「ホワイトデーは大わらわ2016」を<br>遊んでコンプリートを目指そう！
+Explain48 - ホワイトデー2016ビンゴの後半戦は<br>様々な難易度をご用意しました。<br>キャラクターの強化を行いながら、コンプリートを目指そう！
+Explain49 - ぽかぽかの陽気にも慣れて、ゴールデンウィークも目前！<br>外でめいっぱい楽しんだ後はＰＳＯ２でも！<br>期間限定クエスト「ワイルドイースター2016」を<br>プレイしながらコンプリートを目指そう！
+Explain50 - 憂鬱な五月病もＰＳＯ２で吹き飛ばそう！<br>後半戦は様々な難易度の目標にチャレンジして<br>コンプリートを目指してみよう！
+Explain51 - 外で雨が降ろうが風が吹こうが大丈夫！<br>おうちの中やネットカフェでゆったりＰＳＯ２！<br>期間限定クエスト「雨風とともに2016」や東京エリアの<br>各種クエストをプレイしながらコンプリートを目指そう！
+Explain52 - 今回は少々難しめなお題を用意致しました。<br>様々な要素にチャレンジしながら、コンプリートを<br>目指そう！
+Explain53 - おかげさまでPSO2も4周年を迎えました。<br>これもひとえにアークスの皆様の尽力のおかげです！<br>今回は期間限定クエスト「混沌喚び出す龍の咆哮」や<br>基礎的なクライアントオーダ－に触れてみよう！
+Explain54 - 4周年記念も後半に差し掛かりました。<br>今回は期間限定クエスト「境界に彷徨う漆黒の騎士」や<br>ストーリーボードにも触れてみよう！
+Explain55 - 夏といえばやっぱりPSO2ですよね！<br>今回は期間限定クエスト「ビーチウォーズ2016！」や<br>手ごたえのあるクライアントオーダーに挑戦してみよう！
+Explain56 - 今回用意したビンゴのメインターゲットは<br>期間限定クエスト「禍魂集いし戦道2016」！<br>中秋の名月と共にPSO2も楽しんじゃってください！
+Explain57 - 後半は、期間限定クエスト「禍魂集いし戦道2016」に加え<br>ラスベガスエリアも含めた多彩な目標でアナタに挑戦！<br>秋の夜長にじっくりとチャレンジしてみてください！
+Explain58 - 今年もヤツらの宴の時期がやってきた！<br>期間限定クエスト「トリックオアトリート2016！」に<br>参加して、PSO2内でも火花散るパーティーを楽しもう！
+Explain59 - パーティーのクライマックスはこれから！<br>「トリックオアトリート2016！」の高難易度に挑みつつ<br>新たなタイムアタッククエスト「走破演習：東京」で<br>限界記録を目指してみよう！
+Explain60 - 何かと忙しい年末年始ですが、PSO2も忘れずに！<br>アネットの依頼をこなしつつ、期間限定緊急クエストの<br>「氷上のメリークリスマス2016」で<br>ビンゴのコンプリートを目指そう！
+Explain61 - 表をコンプリートしたアークスに贈る挑戦状！<br>高難易度クエストでテクニカルなオーダーに挑み<br>自らの実力を試してみよう！
+Explain62 - 今回のビンゴカードはバレンタイン特別仕様！<br>アークスシップの女のコを巡るスタンプラリー方式です。<br>いつもと違って場所などはノーヒント。<br>どれだけ彼女たちを知っているか、愛が試される!?
+Explain63 - チョコのように甘い目標は表だけ！<br>期間限定の緊急クエスト「チョコレートの行方2017」に<br>高難度でチャレンジし、コンプリートを目指そう！
+Explain64 - ホワイトデーもやります、特別仕様！<br>今度はアークスシップの男性陣を訪ねて回ろう！<br>もちろんノーヒントなのは前回と一緒。<br>目指せ、アークス通！
+Explain65 - 表ビンゴ、ご苦労様でした！　と言いたいところですが<br>もっと高難度のビンゴを用意してあります！　期間限定の<br>緊急クエスト「ホワイトデーは大わらわ2017」を制覇し<br>真のコンプリートをつかみ取ろう！
+Explain66 - 心機一転の春！　何やらアークスシップにも変化が？<br>新規施設のバトルアリーナや遊びやすくなったカジノ<br>桜の装いのフランカ’s カフェなどをまわってみよう！
+Explain67 - 今春のビンゴ後半戦は、ジェネやブルーノの依頼と<br>緊急クエスト「採掘基地防衛戦：VR」を中心にセレクト！<br>難易度の高いクエストでエネミーたちを蹴散らそう！
+Explain68 - じめじめしているこんな季節こそ、PSO2で気分転換！<br>期間限定の緊急クエスト「雨風とともに2017」とともに<br>新コンテンツのコーデカタログにも触れてみよう！
+Explain69 - 表をコンプリートしたキミに贈るのは、<br>さらに目標を難しくしたこの一枚！<br>ビンゴをコンプリートして、憂鬱な気分を吹き飛ばそう！
+Explain70 - 七夕と共に、アークスシップにりらが登場！<br>彼女の依頼や、期間限定クエストをクリアして<br>コンプリートを目指そう！
+Explain71 - 各エピソードの「特別突破訓練」をクリアしたなら<br>「特別突破訓練：Episode1~4」が受注できるはず！<br>今までの集大成となるこの高難易度クエストをクリアして<br>裏のコンプリートにもチャレンジしよう！
+Explain72 - 夏といえば、PSO2ですね！<br>期間限定クエスト「ビーチウォーズ2017！」に<br>どっぷり挑戦してみましょう！
+Explain73 - PSO2の夏はまだまだ終わらない！<br>バスタークエストや、新しいクライアントオーダーに<br>チャレンジしてコンプリートを目指そう！
+Explain74 - 秋の夜には、やっぱりPSO2ですね！<br>期間限定クエスト「禍魂集いし戦道2017」で<br>秋の夜長を楽しみましょう！
+Explain75 - 秋の夜は、まだまだ終わらない！<br>期間限定クエスト「禍魂集いし戦道２０１７！」で<br>秋の夜中を楽しみましょう！
+Explain76 - 今年のハロウィンもヤツらの宴がやってきた！<br>期間限定クエスト「トリックオアトリート2017！」に<br>参加して、PSO2で火花散るパーティーを楽しもう！
+Explain77 - パーティーはまだまだこれから！！<br>今年のハロウィンはPSO2のコスプレで決まり！<br>「トリックオアトリート2017！」の高難易度と<br>クライアントオーダーに挑んでみよう！
+Explain78 - 何かと忙しい年末年始ですが、PSO2も忘れずに！<br>クリスマス気分を味わいながら期間限定緊急クエストの<br>「氷上のメリークリスマス2017」でクリアを目指せ！
+Explain79 - 年末年始は、PSO2も極めよう！<br>表をクリアしたアークスに贈る挑戦状！<br>高難易度クエストでテクニカルなオーダーに挑み<br>自らの実力を試してみよう！
+Explain80 - 今年のバレンタインビンゴの【表】は<br>チョコの様にあまいぞ！<br>「チョコレートの行方2018」をクリアして<br>ビンゴも同時にクリアしちゃおう！
+Explain81 - バレンタイン気分に浸るのは、ここまで！<br>期間限定の緊急クエスト「チョコレートの行方2018」で<br>バレンタインビンゴのコンプリートを目指そう！
+Explain82 - そろそろ春の足音が聞こえてきそうですね。<br>そんな季節の変わり目にはPSO2!<br>緊急クエスト「ホワイトデーは大わらわ2018」を<br>クリアして、ビンゴをクリアしよう。
+Explain83 - 表より難度の高いビンゴをご用意！　<br>期間限定の緊急クエスト<br>「ホワイトデーは大わらわ2018」を制覇し<br>真のコンプリートをつかめ！
+Explain84 - ＰＳＯ２クラウド版のサービスインを記念し<br>始めたばかりの方でもコンプリートできる<br>ビンゴをご用意！　いろいろなコンテンツをまわり<br>コンプリートを目指そう！
+Explain85 - 後半は「ワイルドイースター2018」に出現するエネミーが<br>対象のマスが多め！　出先でも手軽にＰＳＯ２が遊べる<br>クラウド版で期間限定クエストを遊んで<br>コンプリートを目指そう！
+Explain86 - じめじめしている季節こそ、PSO2でスカッとしよう！<br>期間限定の緊急クエスト「雨風とともに2018」とともに<br>ビンゴもスカッとクリアだ！
+Explain87 - 表より難度の高いビンゴをご用意！　<br>期間限定の緊急クエスト<br>「雨風とともに2018」を制覇し<br>真のコンプリートを目指そう！
+Explain88 - 七夕の季節、皆さんはお願い事をしましたか？<br>短冊に願いを書かなくても、レオンティーナ証書などの<br>貴重な品が手に入るこちらのビンゴがおすすめです！
+Explain89 - 七夕ビンゴも後半戦！　目標は少し難しくなりますが<br>アークマランドで遊べばあっという間にコンプリート！<br>期間限定クエスト「アークマランド」に今すぐゴー！
+Explain90 - 今年も夏のアツさに負けないイベント目白押し！<br>緊急クエスト「ビーチウォーズ2018！」をプレイして<br>ビンゴもアツくクリアしよう！
+Explain91 - 夏のアツさもビンゴも最高潮！<br>裏面は強敵が相手だが夏に負けないアツさで<br>コンプリートを目指そう！
+Explain92 - 夜風も涼しくなって、すっかり秋の気配を感じるね！<br>食欲の秋、芸術の秋、そしてＰＳＯ２の秋！<br>盛りだくさんのイベントを楽しんで<br>ビンゴのコンプリートを目指そう！
+Explain93 - 今年のお月見、もう楽しんだ？<br>まだ楽しめていないのなら<br>緊急クエスト「禍魂集いし戦道2018」に参加して<br>一際大きくて赤いお月様を愛でてみてはいかが？
+Explain94 - ハロウィンも『PSO2』で楽しもう！<br>シー（ハロウィン2020）のオーダーを手伝いながら<br>クエストに出かけて、コンプリートを目指そう！
+Explain95 - ハロウィンはまだまだ終わらない！<br>「トリックオアトリート2020！」や「幻惑の森探索」を<br>クリアしながら、コンプリートを目指そう！
+Explain96 - 初冬を思わせる寒さがやってきましたね。<br>本格的な冬に備えるため、今のうちに<br>「森林」「火山洞窟」「海岸」を探索して<br>ビンゴのコンプリートを目指しましょう！
+Explain97 - 裏も「森林」「火山洞窟」「海岸」に行くことで<br>主にクリアすることができます！<br>中にはクライアントオーダーなども含まれているので<br>効率的に進めましょう！
+Explain98 - 今年もクリスマスの季節がやってきましたね！<br>予定がある人もない人もPSO2で<br>クリスマス衣装を着たヒツギたちのオーダーを達成して<br>ビンゴのクリアを目指してみるのはいかがでしょう！
+Explain99 - 裏は今年最後のビンゴにふさわしい強敵が勢ぞろい！<br>緊急クエスト「氷上のメリークリスマス2018」に挑戦し<br>ビンゴのコンプリートを目指しましょう！
+
+Group 1
+Explain01 - It's the first round of ARKS Bingo!<br>Play the Limited Time Quest "Chaos that Breaks Boundaries"<br>and try for Bingo! If you complete it...
+Explain02 - Complete the "First Anniversary Bingo"<br>for a chance to play a highly difficult Reverse Card!<br>Can you complete it?
+Explain03 - It's the second half of the First Anniversary Bingo Card!<br>Play the Urgent Quest "Swirling Inferno on the ARKS Ship"<br>to complete the objective!
+Explain04 - You can now go to a new planet!<br>Play the newly unlocked "Wopal: Coastal Area"<br>to complete the objective!
+Explain05 - A Bingo Card to celebrate Halloween!<br>Play the Urgent Quest "Trick or Treat 2!"<br>or "Abandoned Mine" to get Bingo!
+Explain06 - The "Super Hard" difficulty level is finally here!<br>Complete the "Halloween Bingo"<br>for a chance to play an extremely difficult Reverse Card!
+Explain07 - Merry Christmas!<br>Play the Urgent Quest "Merry Christmas on Ice 2"<br>or "The Approaching Jet-Black Arm" and try to get Bingo!
+Explain08 - Complete "Christmas Bingo"<br>for a chance to play a highly difficult Reverse Card!<br>Conquer the Seabed!
+Explain09 - A Bingo Card to celebrate the ARKS United Front Festival!<br>Play the Limited Time Quest "The Magical Seas Where the <br>Artificial Draconians Come" and try to complete the Bingo!
+Explain10 - Congratulations on completing "ARKS United Front Festival <br>2014 Bingo!" But now the real test begins! It's only when you <br>complete the reverse card that you can really enjoy the festival!
+Explain100 - Get chocolates on Valentine's Day in PSO2!<br>Help Xia (Valentine's Day 2021) with her event to complete the Bingo<br>and get a wonderful reward!
+Explain101 - There are many worthy objectives on the reverse side!<br>Play the Urgent Quest "Where the Chocolate Went" with everyone<br>to complete the Bingo!
+Explain102 - It's still cold outside, which is perfect for staying warm inside <br>while playing PSO2! This year for White Day, a different Afin <br>(White Day) will make an appearance?! Ask him for advice to <br>complete the bingo!
+Explain103 - On the reverse side, there are many worthy objectives!<br>In the Urgent Quest "The Great White Day Kerfuffle 2019,"<br>get on board with your Friends to complete it effectively!
+Explain106 - The Christmas season is here! Regardless of whatever plans<br>you may or may not have, let's play PSO2, and complete<br>orders from Xia (Christmas 2020) to get Bingo!
+Explain107 - There's a line up of strong enemies suitable for the reverse<br>side! Take on the Urgent Quest "Christmas on Ice"<br>to complete the Bingo!
+Explain11 - Sweets for the sweet!<br>Play the Urgent Quest "Where the Chocolate Went 2"<br>and enjoy your Valentine's Day!
+Explain12 - Since you completed the sweet "Valentine's Day Bingo," here's your <br>chance to play the slightly bitter Reverse Card! There's still time <br>to enjoy the ARKS United Front Festival and Valentine's Day!
+Explain13 - New transmission! ARKS Bingo Card!<br>Play the Urgent Quest "Wild Easter"<br>and try for Bingo!
+Explain14 - Now that you've completed "Spring Bingo,"<br>it's your chance to play the high difficulty level Reverse Card.<br>Try to get Bingo!
+Explain15 - Thanks to you, it's our Second Anniversary!<br>Play the Limited Time Quest "TThe Silence Born of Chaos"<br>and try to complete a Bingo!
+Explain16 - The party's not over yet!<br>Challenge yourself against a high difficulty level<br>to complete the Bingo!
+Explain17 - It's the second round of Second Anniversary Bingo!<br>Play the Limited Time Quest "The Boundary-Slashing <br>Silver Steel Blade" to complete the Bingo!
+Explain18 - Summer's here!<br>Play various parts of the Urgent Quest "Beach Wars 2!"<br>and try to fill in the Bingo!
+Explain19 - Adventures in Moon-Gazing on Planet Harukotan!<br>Complete the Bingo through your adventures!
+Explain20 - The Moon-Gazing continues...<br>Challenge yourself against a high difficulty level<br>to complete the Bingo!
+Explain21 - Autumn is in the air at PSO2!<br>Play the seasonal Quest "Trick or Treat 3!" to try for Bingo!
+Explain22 - It's the ARKS Anniversary Ceremony! Ceremonies are important, <br>but don't forget to enjoy yourself in the Casino and play "The <br>Dead Sea Where Artificial Draconians Gather" or "Floating Facility!"
+Explain23 - As 2014 draws to a close, it's time for PSO2!<br>Play the seasonal Quest "Christmas on Ice 3"<br>and try to get Bingo!
+Explain24 - Loaded with difficult elements that are worthy of the Reverse side!<br>Play a variety of Urgent Quests with a newly added difficulty level!
+Explain25 - An Anniversary Bingo to celebrate the second anniversary of the PS Vita!<br>Play the Limited Time Quest "Chaos in the White City"<br>and visit the Casino to complete the Bingo!
+Explain26 - The season of chocolate has come to PSO2!<br>Play the seasonal Quest "Where the Chocolate Went 3"<br>and try to get Bingo!
+Explain27 - Chock-full of goals for every difficulty level. Play difficult quests <br>such as "Chaos in the White City" and "Where the Chocolate <br>Went 3," and try to complete the Bingo!
+Explain28 - It's the second half of the Anniversary Bingo to celebrate the second <br>anniversary of the PS Vita! Play the new Urgent Quest "Great Menace <br>of the Sea, Render of Serenity" and try to complete the Bingo!
+Explain29 - White Day is perfect for cookies and candy and PSO2!<br>Play the seasonal Quest "The Great White Day Kerfuffle 3"<br>as you try to complete the Bingo!
+Explain30 - Reverse Bingo fun at all difficulty levels.<br>Continue to play the seasonal Quest "The Great <br>White Day Kerfuffle 3" as you try to complete the Bingo!
+Explain30001 - When it's pouring down outside, stay dry inside with PSO2!<br>Play the seasonal quest "Gone with the Wind & Rain"<br>and try to get Bingo!
+Explain30002 - [Reverse] Bingo fun at all difficulty levels.<br>Continue to play the seasonal Quest "Gone with the Wind & Rain"<br>and line up all the Bingos you can!
+Explain30003 - Summer is the season of PSO2!<br>Challenge yourself with the Limited-Time Quest <br>"Beach Wars 2020!" or fill Xia's summertime Client Orders!
+Explain30004 - Summer isn't over yet!<br>Try the more challenging Reverse Bingo!<br>Complete it all, starting with "Beach Wars 2020!"
+Explain31 - Eggs! Bunnies! EASTER!<br>Play the Urgent Quest "Wild Easter 2"<br>and try to complete the Bingo!
+Explain32 - If you weren't satisfied with the front,<br>a variety of difficulty levels await you on the reverse.<br>Try it to complete the Bingo!
+Explain33 - When it's pouring down outside, stay inside with PSO2!<br>Play the seasonal Quest "Gone with the Wind & Rain 3"<br>and try to get Bingo!
+Explain34 - Reverse Bingo fun at all difficulty levels.<br>Continue to play the seasonal Quest "Gone with the Wind & Rain 3"<br>as you try to complete the Bingo!
+Explain35 - It's the 4th year of PSO2!<br>Defeat the Falspawn in the Forest, Volcanic Caves,<br>Desert, Tundra, Daybreak Province, and Coast areas!
+Explain36 - Reverse Bingo fun at all difficulty levels.<br>At a glance you might think it's just a mess, but...<br>As they say, good things come to those who wait. Go for it!
+Explain37 - Play "Beach Wars 3!" with enough energy to blast away <br>the summer heat like you'll blast away the Enemies on <br>the seashore!
+Explain38 - Isn't summer over yet!?<br>The Reverse Bingo has something for every level.<br>Complete them all, starting with "Beach Wars 3!"
+Explain39 - The long nights of autumn were made for PSO2!<br>Play the Urgent Quest "Gathering of Cataclysmic Souls"<br>and try to complete the Bingo!
+Explain40 - Reverse Bingo is not that easy!<br>Continue to play "Gathering of Cataclysmic Souls"<br>and meet various challenges as you strive to complete it!
+Explain41 - Even if you didn't get any candy this year, you still have PSO2!<br>Play the seasonal Quest "Trick or Treat 4!" to complete the Bingo!
+Explain42 - Reverse Bingo fun at all difficulty levels.<br>Continue to play "Trick or Treat 4!" and other Quests<br>to complete your Bingo Card!
+Explain43 - The end of 2015 is a perfect time for PSO2!<br>Play the seasonal Quest "Christmas on Ice 4"<br>and try for Bingo!
+Explain44 - The second half of Bingo is here! Play the Reverse side, <br>with various difficulty levels mixed together, and keep <br>those Bingos coming!
+Explain45 - The PSO series got its start on the Dreamcast.<br>Thanks to your support, this is the series' 15th anniversary.<br>Play the Limited Time Quest "Where the Chocolate Went 2016" or<br>"Incarnation of Gloom, Guider of Chaos" and try to get Bingo!
+Explain46 - Phantasy Star Thanksgiving 2016 is here!<br>In addition to the Limited Time Quests, you'll find<br>new elements from Episode 4. Try to complete them all!
+Explain47 - Candy? Marshmallows?<br>Sweets are nice and all, but not as much fun as PSO2!<br>Play the Limited Time Quest "The Great White Day Kerfuffle 2016"<br>to complete your Bingo!
+Explain48 - The second half of White Day 2016 Bingo<br>features something for every difficulty level.<br>Complete the Bingo while enhancing your Character!
+Explain49 - Warm days are upon us, and Golden Week is almost here! After <br>you get your fill of the beautiful weather, come inside for some <br>PSO2! Play the Limited Time Quest "Wild Easter 2016"<br>for your chance to complete the Bingo!
+Explain50 - Beat your summer blues with PSO2!<br>Challenge yourself at a variety of difficulty levels <br>in the latter half, and try to complete the Bingo!
+Explain51 - Let the rain beat down and the wind blow hard!<br>You'll be safe inside playing PSO2!<br>Play the Limited Time Quest "Gone with the Wind & Rain 2016" or<br>the Tokyo area Quests to complete your Bingo Card!
+Explain52 - Are you ready to kick it up a notch?<br>Challenge yourself in various ways<br>to complete the Bingo.
+Explain53 - This year is the 4th anniversary of PSO2. We couldn't have <br>done it without you! Try the Limited Time Quest "The Roar of <br>the Chaos-Summoner Dragon" or fill some basic Client Orders!
+Explain54 - We're heading into the second half of our 4th year.<br>Try the Limited Time Quest "Black Knight at the Border"<br>or the storyboards!
+Explain55 - Summer is the season of PSO2!<br>Challenge yourself with the Limited Time Quest "Beach Wars 2016!"<br>or fill some demanding Client Orders!
+Explain56 - The main target of this Bingo game<br>is the Limited Time Quest "Gathering of Cataclysmic Souls 2016!"<br>Enjoy PSO2 under the harvest moon!
+Explain57 - In addtion to the Limited Time Quest "Gathering of Cataclysmic <br>Souls 2016," take on a variety of challenges in the Las Vegas area!<br>The perfect way to spend those long autumn nights!
+Explain58 - It's the season of ghosts and goblins again!<br>Participate in the Limited Time Quest "Trick or Treat 2016!"<br>and enjoy a dazzling party within PSO2!
+Explain59 - The party's in full swing!<br>Meet the challenge of the high difficulty level "Trick or Treat 3!"<br>and try to set a new record in the Time Attack Quest<br>"Running Maneuvers: Tokyo!"
+Explain60 - The end of the year is a busy time, but don't forget PSO2!<br>Fulfill Annette's requests and play the Limited Time Quest<br>"Merry Christmas on Ice 2016" for a chance to complete the Bingo!
+Explain61 - If you've completed the front, there's a special gift for you!<br>Try the high difficulty level Quests and Technical Orders<br>to improve your skills!
+Explain62 - A special Bingo Card for Valentine's Day!<br>Collect stamps from each of the women on the ARKS Ship.<br>No hints for those who aren't in their usual locations.<br>Show how well you know and love them!
+Explain63 - Only the front objectives are sweet like chocolate!<br>Meet the challenge of the high difficulty level Limited Time Quest<br>"Where the Chocolate Went 2017" to complete the Bingo!
+Explain64 - Another special Bingo Card for White Day!<br>This time you will collect stamps from the men on the ARKS <br>Ship. No hints this time, either. Become an ARKS connoisseur!
+Explain65 - Good job on the front Bingo! is what I want to say,<br>but there is an even more difficult Bingo waiting for you!<br>Conquer the Urgent Quest "The Great White Day Kerfuffle 2017"<br>to truly complete the Bingo Card!
+Explain66 - Spring is the time to turn over a new leaf! And on the ARKS Ship?<br>Visit the new Battle Arena facility, the Casino where it is now <br>easier to play, and Franca's Cafe amid a shower of cherry blossoms!
+Explain67 - The second half of Spring Bingo features Gené and Bruno's requests<br>and the Urgent Quest "Mining Base Defense Ops: VR!"<br>Defeat the enemies in this high difficulty level Quest!
+Explain68 - During this hot, sticky season, get a quick pick-me-up from PSO2!<br>Play the Limited Time Quest "Gone with the Wind & Rain 2017"<br>and check out the new content in Lookbook!
+Explain69 - If you complete the front, your prize will be<br>this card with even more difficult objectives!<br>Complete the Bingo and chase your summer blues away!
+Explain70 - Lila is coming to the ARKS Ship for Tanabata!<br>Clear her requests and the Limited Time Quests<br>to complete the Bingo!
+Explain71 - If you clear the Special Breakthrough Training for each episode,<br>you can order "Special Breathrough Training: Episodes 1-4!"<br>Clear this high difficulty level Quest that compiles all the <br>previous training to complete the reverse Bingo!
+Explain72 - Summer is the season of PSO2!<br>Challenge yourself with the Limited Time Quest<br>"Beach Wars 2017!"
+Explain73 - The summer of PSO2 is not over yet! Take on the <br>challenge of Buster Quests and new Client Orders<br>to complete the Bingo!
+Explain74 - Autumn nights were made for PSO2! Play the Limited <br>Time Quest "Gathering of Cataclysmic Souls 2017,"<br>and the long autumn nights will fly by!
+Explain75 - The nights of autumn are not over yet! Play the Limited <br>Time Quest "Gathering of Cataclysmic Souls 2017!,"<br>and the long autumn nights will fly by!
+Explain76 - Ghosts, goblins, and witches, oh my!<br>Participate in the Limited Time Quest "Trick or Treat 2017!"<br>and enjoy a dazzling Halloween party within PSO2!
+Explain77 - The party's not over yet!<br>This Halloween, choose your costume from PSO2!<br>Clear the high difficulty level "Trick or Treat 2017!"<br>and Client Orders!
+Explain78 - The end of the year is a busy time, but don't forget PSO2!<br>Get in the Christmas spirit with the Limited Time Quest<br>"Merry Christmas on Ice 2017!"
+Explain79 - Ring in the New Year with PSO2!<br>If you've completed the front, there's a special gift for you!<br>Try the high difficulty level Quests and Technical Orders<br>to improve your skills!
+Explain80 - The front of this year's Valentine's Day Bingo<br>is sweeter than chocolate!<br>Clear "Where the Chocolate Went 2018" to clear the Bingo!
+Explain81 - No more sweet Valentine from here on out!<br>Play the Limited Time Quest "Where the Chocolate Went 2018"<br>to complete the Valentine's Day Bingo!
+Explain82 - Spring is just around the corner. That means it's time for <br>more PSO2! Clear the Urgent Quest "White Day is a Great <br>Battle 2018" to clear the Bingo!
+Explain83 - There's a more difficult Bingo game on the front side!<br>Conquer the Limited Time Quest "White Day is a Great <br>Battle 2018" to fully complete the card!
+Explain84 - To commemorate the start of the POS2 cloud service,<br>we have put together a Bingo game that even<br>beginners can enjoy! Clear the various challenges<br>to complete the Bingo!
+Explain85 - The enemies that show up in the second half of "Wild Easter 2018"<br>are even more numerous! Play this Limited Time Quest<br>on the PSO2 cloud version that you can take with you anywhere<br>and complete the Bingo!
+Explain86 - Cool off with PSO2 in this hot and sticky season!<br>Play the Limited Time Urgent Quest "Gone with the Wind <br>& Rain 2018" and breeze through the Bingo!
+Explain87 - There's a more difficult Bingo game on the front side!<br>Conquer the Limited Time Quest "Gone with the Wind <br>& Rain 2018" to fully complete the card!
+Explain88 - It's Tanabata, the season of wishes. Did you make a wish?<br>Rather than paper for writing out your wishes, we recommend<br>Leontina's Certificate and the other valuable items in this Bingo Game!
+Explain89 - Now for the second half of Tanabata Bingo! The objectives are<br>a bit more difficult, but if you play in Arkumaland, you'll<br>complete them before you know it! Start now with the<br>Limited Time Quest "Arkumaland!"
+Explain90 - This summer is packed with events to help you beat the heat!<br>Play the Urgent Quest "Beach Wars 2018!" to clear the Bingo!
+Explain91 - It's the height of summer and the height of Bingo!<br>You'll be fighting bosses on the reverse side, so beat <br>them like the heat to complete the Bingo!
+Explain92 - The evening breeze is getting cooler, and the scent of <br>autumn is in the air! Autumn is the season of delicious foods <br>and the season of PSO2! Enjoy the abundant harvest of events <br>and complete the Bingo!
+Explain93 - Did you enjoy the Moon-Gazing this year?<br>If you haven't yet, participate in the Urgent Quest <br>"Gathering of Cataclysmic Souls 2018" under the <br>light of the large red harvest moon!
+Explain94 - Enjoy Halloween as well with "PSO2"!<br>Help out Xia's (Halloween 2020) Client Order <br>by going to Quests and aim for completion! 
+Explain95 - Halloween isn't over yet! Clear Quests such as <br>"Trick-or-Treat 2020!" and "Explore the Bewitched Woods" <br>and aim for completion!
+Explain96 - There's a chill in the air and it's starting to feel like winter. <br>Get ready for the cold winter before it sets in by exploring the <br>Forest, Volcanic Caves, and the Coast to complete the bingo!
+Explain97 - If you go to the Forest, Volcanic Caves, and the Coast <br>on the Reverse side, you can clear most of them!<br>This includes Client Requests so don't waste any time!
+Explain98 - It's Christmas time! Whether you have plans or not, fulfill <br>the requests of the Christmas Hitsugis to clear the bingo!
+Explain99 - On the reverse side, there is a full line-up of bosses <br>suitable for the last bingo of the year! Try the Urgent <br>Quest "Christmas 2018 on Ice" to complete the bingo!
+
+
+bingoorder
+Group 0
+00000051 - 「黄色コンテナを壊す」
+00000052 - 「迫る漆黒の腕」
+00000053 - 「PSEバーストを発生させる」
+00000054 - 「ダイヤモンドダストの観察」
+00000055 - 「任意のアイテムを1つ属性強化に成功」
+00000056 - 「マルモス撃破」
+00000057 - 「赤コンテナを壊す」
+00000058 - 「ダガン撃破」
+00000059 - 「任意のアイテムを1つ強化に成功」
+00000060 - 「任意のプレイヤーにグッジョブを送信する」
+00000061 - 「クリスマスのお邪魔虫！」
+00000062 - 「ファンガルフル撃破」
+00000063 - 「」
+00000064 - 「氷上のメリークリスマス２」
+00000065 - 「クリスマスのお手伝い！」
+00000066 - 「カルターゴ撃破」
+00000067 - 「任意のアイテムを1つ特殊能力追加に成功」
+00000068 - 「エル・アーダ撃破」
+00000069 - 「青コンテナを壊す」
+00000070 - 「ブリアーダ撃破」
+00000071 - 「FUNスクラッチを引く」
+00000072 - 「イエーデ撃破」
+00000073 - 「クラーダ撃破」
+00000074 - 「ナウラのケーキ屋を守れ！」
+00000075 - 「緑コンテナを壊す」
+00000076 - 「グル・ソルダ撃破」
+00000077 - 「セヴァニアン撃破」
+00000078 - 「嵐の贈り物」
+00000079 - 「タグ・セヴァニアン撃破」
+00000080 - 「デコル・マリューダ討伐」
+00000081 - 「ウォパル危機一髪！」
+00000082 - 「ダーク・ビブラス撃破」
+00000083 - 「ゴルドラーダ撃破」
+00000084 - 「走破演習：ナベリウスⅡ」
+00000085 - 「マターボード入手：忘却の彼方に在り」
+00000086 - 「デコル・マリューダの弱点は!? 」
+00000087 - 「タロベッコ撃破」
+00000088 - 「」
+00000089 - 「【仮面】撃破」
+00000090 - 「ビオル・メデューナ撃破」
+00000091 - 「ディープスノーの観察」
+00000092 - 「凍土の新たな試練」
+00000093 - 「採掘基地防衛戦：襲来」
+00000094 - 「実地研修に付き合ってください」
+00000095 - 「ちゃちゃっと海底地域生態調査」
+00000096 - 「海底探索」
+00000097 - 「ファルカボネ撃破」
+00000098 - 「ブルトルボン撃破」
+00000099 - 「ヴィド・ギロス撃破」
+00000100 - 「ドゥエ・ソルダ撃破」
+00000101 - 「造龍来たる魔の海域」
+00000102 - 「ドリュアーダ撃破」
+00000103 - 「セグレズン撃破」
+00000104 - 「ファルカボネ撃破」
+00000105 - 「戦闘機防衛」
+00000106 - 「ヴィド・ギロス撃破」
+00000107 - 「シュトゥラーダ撃破」
+00000108 - 「リューダソーサラー撃破」
+00000109 - 「共闘祭への乱入者！」
+00000110 - 「自由探索許可申請・海岸」
+00000111 - 「任意のアイテムの強化を成功させる」
+00000112 - 「大雨の観察」
+00000113 - 「」
+00000114 - 「FUNスクラッチを引く」
+00000115 - 「任意のプレイヤーにグッジョブを送信する」
+00000116 - 「デ・マルモス撃破」
+00000117 - 「共闘祭での一幕！」
+00000118 - 「オルグブラン撃破」
+00000119 - 「デコル・マリューダ撃破」
+00000120 - 「ビオル・メデューナ撃破」
+00000121 - 「共闘祭でも変わらずに！」
+00000122 - 「みんな大好き、大人気！」
+00000123 - 「ティラルーダ撃破」
+00000124 - 「ドゥエ・ソルダ撃破」
+00000125 - 「クローム・ドラゴン撃破」
+00000126 - 「アイドルからの難題」
+00000127 - 「プレディカーダ撃破」
+00000128 - 「クラバーダ撃破」
+00000129 - 「クラーダ撃破」
+00000130 - 「ドラゴン・エクス撃破」
+00000131 - 「フォードランサ撃破」
+00000132 - 「マターボード：【涙のセトルメント】の入手」
+00000133 - 「キングイエーデ撃破」
+00000134 - 「ゼッシュレイダ撃破」
+00000135 - 「破壊をもたらす黒曜」
+00000136 - 「エネミー撃破」
+00000137 - 「カルターゴの弱点は！？」
+00000138 - 「」
+00000139 - 「炎のANGEL」
+00000140 - 「ダーク・ラグネ撃破」
+00000141 - 「強力な侵食核！？」
+00000142 - 「キャタドランサ撃破」
+00000143 - 「シグノビート撃破」
+00000144 - 「ダーガッシュ撃破」
+00000145 - 「エクスタミネート・ジャーニー・Ⅱ」
+00000146 - 「グル・ソルダ撃破」
+00000147 - 「ファングバンシー撃破」
+00000148 - 「PSEバーストを発生させる」
+00000149 - 「ミクダ撃破」
+00000150 - 「パートナーキャラクター同行【クーナ】」
+00000151 - 「バレンタイン茶飯事！」
+00000152 - 「ゴロンゾラン撃破」
+00000153 - 「FUNスクラッチを引く」
+00000154 - 「ヴィスボルトを回避せよ！」
+00000155 - 「ダガン撃破」
+00000156 - 「キャタドラン撃破」
+00000157 - 「ノーディラン撃破」
+00000158 - 「緑色のコンテナを破壊する」
+00000159 - 「チョコレートの行方２」
+00000160 - 「ディッグの撃破」
+00000161 - 「チョコレートへの試練！」
+00000162 - 「愛情たっぷり隠し味！？」
+00000163 - 「」
+00000164 - 「恋慕を後押すウワサ話！」
+00000165 - 「今ここに、バレンタインは完成す！」
+00000166 - 「ソル・ディーニアン撃破」
+00000167 - 「ナウラのケーキ屋を守れ！」
+00000168 - 「マグにアイテムを与える」
+00000169 - 「ペンドラン撃破」
+00000170 - 「サポートパートナー講習」
+00000171 - 「ダーカイムを破壊せよ！」
+00000172 - 「へっぽこぴーの溶岩石拾い」
+00000173 - 「任意のアイテムの属性強化を成功させる」
+00000174 - 「ヴォル・ドラゴンの肉の調達」
+00000175 - 「ソル・ディランダール撃破」
+00000176 - 「ディランダール撃破」
+00000177 - 「ダークファルス・エルダー撃破」
+00000178 - 「ブリュンダール撃破」
+00000179 - 「ブリュー・リンガーダ撃破」
+00000180 - 「アナタの手を借りたいの！」
+00000181 - 「かすかに覚えし桃色の花」
+00000182 - 「パートナーキャラクター同行【アザナミ】」
+00000183 - 「フォードラン撃破」
+00000184 - 「恩人を探して」
+00000185 - 「ヒミツの特訓」
+00000186 - 「ブルメガーラ撃破」
+00000187 - 「バル・ロドス撃破」
+00000188 - 「」
+00000189 - 「実地研修に付き合ってください」
+00000190 - 「シル・ディーニアン撃破」
+00000191 - 「エル・ダガン撃破」
+00000192 - 「猛る黒曜の暴腕」
+00000193 - 「熱波の観察」
+00000194 - 「パートナーキャラクター同行【リサ】」
+00000195 - 「ディグナッツ撃破」
+00000196 - 「サディニアン撃破」
+00000197 - 「グワナーダ撃破」
+00000198 - 「オル・ミクダ撃破」
+00000199 - 「クォーツ・ドラゴン撃破」
+00000200 - 「ディーニアン撃破」
+00000201 - 「ブリアーダ撃破」
+00000202 - 「グル・ソルダ撃破」
+00000203 - 「『クエストクリア時』に設定したオートワードを発動させる」
+00000204 - 「ガーディナン撃破」
+00000205 - 「カストキンディッド撃破」
+00000206 - 「イースターの幕開けは」
+00000207 - 「お祭りで使うタマゴって？」
+00000208 - 「おじゃま虫をやっつけろ！」
+00000209 - 「機甲種にも大人気？」
+00000210 - 「みんな揃ってお祭り気分！」
+00000211 - 「FUNスクラッチを引く」
+00000212 - 「マグにアイテムを与える」
+00000213 - 「」
+00000214 - 「緑色のコンテナを破壊する」
+00000215 - 「任意のアイテムの強化を成功させる」
+00000216 - 「シグノビート撃破」
+00000217 - 「ゼッシュレイダ撃破」
+00000218 - 「カルターゴ撃破」
+00000219 - 「ダーク・ラグネ撃破」
+00000220 - 「ギルナッチ撃破」
+00000221 - 「サイクロネーダ撃破」
+00000222 - 「任意のドリンクを飲む」
+00000223 - 「ディンゲール撃破」
+00000224 - 「ヴィントバルガー撃破」
+00000225 - 「ファルス・ヒューナル撃破」
+00000226 - 「狡猾なる黒翼の尖兵」
+00000227 - 「特務先遣調査：海岸」
+00000228 - 「ティラルーダ撃破」
+00000229 - 「シュタークガン撃破」
+00000230 - 「ジャストアタック特訓・Ⅰ」
+00000231 - 「ヴィド・ギロス撃破」
+00000232 - 「任意のプレイヤーにグッジョブを送信する」
+00000233 - 「ソルダ・カピタ撃破」
+00000234 - 「ティフリスに話しかける」
+00000235 - 「極限訓練：遺跡と海王」
+00000236 - 「ヴィドルーダ撃破」
+00000237 - 「マターボード：【未来を迎えるため】の入手」
+00000238 - 「」
+00000239 - ＊＊＊
+00000240 - 「ドゥエ・ソルダ撃破」
+00000241 - 「アークスGP2014予選」
+00000242 - 「パーティー演習・Ⅰ」
+00000243 - 「ブリュンダール撃破」
+00000244 - 「赤色のコンテナを破壊する」
+00000245 - 「ゴルドラーダ撃破」
+00000246 - 「リューダソーサラー撃破」
+00000247 - 「シュトゥラーダ撃破」
+00000248 - 「デコル・マリューダ撃破」
+00000249 - 「トランマイザー撃破」
+00000250 - 「ドリュアーダ撃破」
+00000251 - 「マザーシップに平穏を！　Ⅰ」
+00000252 - 「カルターゴ撃破」
+00000253 - 「混乱誘うダーカーたち！」
+00000254 - 「任意のアイテムの強化を成功させる」
+00000255 - 「マザーシップに平穏を！　Ⅱ」
+00000256 - 「シル・ディーニアン撃破」
+00000257 - 「ブルメガーラ撃破」
+00000258 - 「リューダソーサラー撃破」
+00000259 - 「アクルプス撃破」
+00000260 - 「ディーニアン撃破」
+00000261 - 「ダガン撃破」
+00000262 - 「緑色のコンテナを破壊する」
+00000263 - 「」
+00000264 - 「ディッグ撃破」
+00000265 - 「クラーダ撃破」
+00000266 - 「スパルザイル撃破」
+00000267 - 「ブリアーダ撃破」
+00000268 - 「ガロンゴ撃破」
+00000269 - 「エル・アーダ撃破」
+00000270 - 「シグノビート撃破」
+00000271 - 「マザーシップに平穏を！　Ⅲ」
+00000272 - 「ＦＵＮスクラッチを引く」
+00000273 - 「静寂に生まれし混沌」
+00000274 - 「ディカーダ撃破」
+00000275 - 「マザーシップに平穏を！　Ⅳ」
+00000276 - 「ジャストアタック特訓・Ⅶ」
+00000277 - 「ダブリュンダ撃破」
+00000278 - 「ブラック・スローター・Ⅰ」
+00000279 - 「マターボード：【未来を迎えるため】の入手」
+00000280 - 「新規任務模擬訓練・火山洞窟」
+00000281 - 「ダブリューネ撃破」
+00000282 - 「ギルナスの装甲の調達」
+00000283 - 「黄色のコンテナを破壊する」
+00000284 - 「トランマイザー撃破」
+00000285 - 「アークスＧＰ２０１４予選」
+00000286 - 「ブラック・スローター・Ⅱ」
+00000287 - 「PSEバーストを発生させる」
+00000288 - 「」
+00000289 - 「ファイナに話しかける」
+00000290 - 「ブラック・スローター・Ⅲ」
+00000291 - 「ランズ・ヴァレーダ撃破」
+00000292 - 「クォーツ・ドラゴン撃破」
+00000293 - 「赤色のコンテナを破壊する」
+00000294 - 「ガーディンのフレームの調達」
+00000295 - 「ファルス・アンゲル撃破」
+00000296 - 「ドラゴン・エクス撃破」
+00000297 - 「ブリュー・リンガーダ撃破」
+00000298 - 「ロックベア撃破」
+00000299 - 「ヴィドルーダ撃破」
+00000300 - 「ジャストアタック特訓・Ⅷ」
+00000301 - 「ブルトルボン撃破」
+00000302 - 「キャタドランサ撃破」
+00000303 - 「ゴロンゾラン撃破」
+00000304 - 「マグにアイテムを与える」
+00000305 - 「ディガーラ撃破」
+00000306 - 「お宝探して三千里・その壱」
+00000307 - 「ベンドラン撃破」
+00000308 - 「緑色のコンテナを破壊する」
+00000309 - 「ラケシスに話しかける」
+00000310 - 「お宝探して三千里・その参」
+00000311 - 「シル・サディニアン撃破」
+00000312 - 「ディランダール撃破」
+00000313 - 「」
+00000314 - 「ガルフル撃破」
+00000315 - 「ファンガルフル撃破」
+00000316 - 「お宝が呼んでいる」
+00000317 - 「ファイナに話しかける」
+00000318 - 「青色のコンテナを破壊する」
+00000319 - 「シグノガン撃破」
+00000320 - 「お宝探して三千里・その弐」
+00000321 - 「ヤクトバルガー撃破」
+00000322 - 「ヴァーダーソーマ撃破」
+00000323 - 「オルグブラン撃破」
+00000324 - 「デ・マルモス撃破」
+00000325 - 「イエーデ撃破」
+00000326 - 「パーティー演習・Ⅰ」
+00000327 - 「任意のエクストリームクエスト」
+00000328 - 「ダガッチャ撃破」
+00000329 - 「ファルス・ヒューナル撃破」
+00000330 - 「ビーチウォーズ２！」
+00000331 - 「新規任務模擬訓練・砂漠」
+00000332 - 「サマーリゾート計画！」
+00000333 - 「熾烈な浮遊大陸探索」
+00000334 - 「まずは海岸の安全確保！」
+00000335 - 「ビオル・メデューナ撃破」
+00000336 - 「ブリュンダール撃破」
+00000337 - 「タロベッコ撃破」
+00000338 - 「」
+00000339 - 「セグレズン撃破」
+00000340 - 「クラバーダ撃破」
+00000341 - 「ゼッシュレイダ撃破」
+00000342 - 「ビーチの必需品！」
+00000343 - 「熾烈な龍祭壇探索」
+00000344 - 「バル・ロドスを追っ払え！」
+00000345 - 「オルグブラン撃破」
+00000346 - 「プリンに話しかける」
+00000347 - 「ブリュー・リンガーダ撃破」
+00000348 - 「ダーガッシュ撃破」
+00000349 - 「ナイトギア撃破」
+00000350 - 「赤色のコンテナを破壊する」
+00000351 - 「緑色のコンテナを破壊する」
+00000352 - 「ファイナに話しかける」
+00000353 - 「アヌシザグリ撃破」
+00000354 - 「パジギッリ撃破」
+00000355 - 「ジャストアタック特訓・Ⅰ」
+00000356 - 「任意のドリンクを飲む」
+00000357 - 「アスタルテの個人授業」
+00000358 - 「パラタ・ピコーダ撃破」
+00000359 - 「イザオガル撃破」
+00000360 - 「ギグル・グンネガム撃破」
+00000361 - 「任意のアイテムの強化を成功させる」
+00000362 - 「黒の民鎮圧任務」
+00000363 - 「」
+00000364 - 「ガンナガム撃破」
+00000365 - 「アドオガル撃破」
+00000366 - 「任意のプレイヤーにグッジョブを送信する」
+00000367 - 「アンジャドゥリリ討伐」
+00000368 - 「マターボード：白と黒のはざまで入手」
+00000369 - 「怪奇！　宵闇にうごめく影！」
+00000370 - 「ボンタ・ベアッダ撃破」
+00000371 - 「FUNスクラッチを引く」
+00000372 - 「チップに話しかける」
+00000373 - 「レランガム撃破」
+00000374 - 「ピッタ・ワッダ撃破」
+00000375 - 「お月見開催します！」
+00000376 - 「赤色のコンテナを破壊する」
+00000377 - 「ラケシスに話しかける」
+00000378 - 「ニャウ撃破」
+00000379 - 「走破演習：ウォパル」
+00000380 - 「お月見にはお団子が必要？」
+00000381 - 「パジャドゥリンの暴走を止めろ！」
+00000382 - 「飛翔剣についてご存知？」
+00000383 - 「イザオガル撃破」
+00000384 - 「花舞の観察」
+00000385 - 「デモリション・アンビションⅠ」
+00000386 - 「パラタ・ピコーダ撃破」
+00000387 - 「アヌシザグリ撃破」
+00000388 - 「」
+00000389 - 「ボンタ・ベアッダ撃破」
+00000390 - 「レランガム撃破」
+00000391 - 「ピッタ・ワッダ撃破」
+00000392 - 「ビアに話しかける」
+00000393 - 「黒に染まる領域」
+00000394 - 「魔装脚の使い方」
+00000395 - 「アドオガル撃破」
+00000396 - 「ファーマに話しかける」
+00000397 - 「パジギッリ撃破」
+00000398 - 「白ノ領域探索」
+00000399 - 「ギグル・グンネガム撃破」
+00000400 - 「PSEバーストを発生させる」
+00000401 - 「魔法使いになれるかな？」
+00000402 - 「ニャウ撃破」
+00000403 - 「シグノガン撃破」
+00000404 - 「トランマイザー撃破」
+00000405 - 「侵入者たちを追い払え！」
+00000406 - 「FUNスクラッチを引く」
+00000407 - 「ヤクトディンゲール撃破」
+00000408 - 「スパルダンＡ撃破」
+00000409 - 「ファイナに話しかける」
+00000410 - 「オル・ミクダ撃破」
+00000411 - 「ヴィントバルガー撃破」
+00000412 - 「カストガーディナン撃破」
+00000413 - 「」
+00000414 - 「カストキンディッド撃破」
+00000415 - 「ガノンバルガー撃破」
+00000416 - 「トリックオアトリート３！」
+00000417 - 「緑色のコンテナを破壊する」
+00000418 - 「スパルガン撃破」
+00000419 - 「ディンゲール撃破」
+00000420 - 「任意のプレイヤーにグッジョブを送信する」
+00000421 - 「お菓子は良い子のためのもの！」
+00000422 - 「リューダソーサラー撃破」
+00000423 - 「シグノビート撃破」
+00000424 - 「ブリュンダール撃破」
+00000425 - 「パンプキンパイはどこに！」
+00000426 - 「メセタンシューターでクイーンメセタンを撃破する」
+00000427 - 「ファルカボネ撃破」
+00000428 - 「コインエクスチェンジャーでカジノコインを獲得する」
+00000429 - 「マターボード：【創り出されしものへの追憶】入手」
+00000430 - 「風船にアクセスする」
+00000431 - 「メセタンシューターでＰＳＥバーストを発生させる」
+00000432 - 「ラッピースロットでラッピーＰＳＥバーストを発生させる」
+00000433 - 「ラッピースロットのスロット台にアクセスする」
+00000434 - 「造龍集う死の海域」
+00000435 - 「ネプト・キャサドーラ撃破」
+00000436 - 「ヴィド・ギロス撃破」
+00000437 - 「アクルプス撃破」
+00000438 - 「」
+00000439 - 「ブルメガーラ撃破」
+00000440 - 「ファンガルフル撃破」
+00000441 - 「ヴァラディナン撃破」
+00000442 - 「ブリュンダール撃破」
+00000443 - 「メセタンシューターの座席にアクセスする」
+00000444 - 「バル・ロドス撃破」
+00000445 - 「シルト・グリミアン撃破」
+00000446 - 「リリーパ族の落書きにアクセスする」
+00000447 - 「ドリュアーダ撃破」
+00000448 - 「フリードリンクスタンドにアクセスする」
+00000449 - 「マターボード：【明日を待つ】入手」
+00000450 - 「メセタンシューターでニャウを撃破する」
+00000451 - 「コインエクスチェンジャーでカジノコインを獲得する」
+00000452 - 「ディカーダ撃破」
+00000453 - 「マグにアイテムを与える」
+00000454 - 「プレディカーダ撃破」
+00000455 - 「リューダソーサラー撃破」
+00000456 - 「ピッタ・ワッダ撃破」
+00000457 - 「聖夜の準備は突然に」
+00000458 - 「ファイナに話しかける」
+00000459 - 「漆黒の羽根はお邪魔虫？」
+00000460 - 「アスタルテの個人授業」
+00000461 - 「ガルフル撃破」
+00000462 - 「ファンガルフル撃破」
+00000463 - 「」
+00000464 - 「キングイエーデ撃破」
+00000465 - 「イエーデ撃破」
+00000466 - 「パラタ・ピコーダ撃破」
+00000467 - 「寒さを和らげるアイテムって？」
+00000468 - 「緑色のコンテナを破壊する」
+00000469 - 「良い子のための詰め合わせ！」
+00000470 - 「ボンタ・ベアッダ撃破」
+00000471 - 「ソルダ・カピタ撃破」
+00000472 - 「グル・ソルダ撃破」
+00000473 - 「マルモス撃破」
+00000474 - 「ドゥエ・ソルダ撃破」
+00000475 - 「フリードリンクスタンドにアクセスする」
+00000476 - 「クラフト訓練・梅」
+00000477 - 「クラーダ撃破」
+00000478 - 「ファング・バンサー撃破」
+00000479 - 「マターボード：【EP3-2 創り出されしものへの追憶】入手」
+00000480 - 「反復加工訓練・打撃武器」
+00000481 - 「猛る黒曜の暴腕」
+00000482 - 「アギニス撃破」
+00000483 - 「任意のアイテムの強化を成功させる」
+00000484 - 「ガロンゴ撃破」
+00000485 - 「降臨する星滅の災厄」
+00000486 - 「ダーク・ラグネ撃破」
+00000487 - 「ブリアーダ撃破」
+00000488 - 「オ・ヴァラディナン撃破」
+00000489 - 「ノエミに話しかける」
+00000490 - 「ゼッシュレイダ撃破」
+00000491 - 「深遠に至りし巨なる躯」
+00000492 - 「カルターゴ撃破」
+00000493 - 「任意のドリンクを飲む」
+00000494 - 「ダーガッシュ撃破」
+00000495 - 「採掘基地防衛戦：襲来」
+00000496 - 「反復加工訓練・射撃武器」
+00000497 - 「ダガン撃破」
+00000498 - 「ファング・バンシー撃破」
+00000499 - 「マターボード：【EP1-3 不測の予測が見せるもの】入手」
+00000500 - 「反復加工訓練・法撃武器」
+00000501 - 「ディガーラ撃破」
+00000502 - 「ダーガッシュ撃破」
+00000503 - 「パーティー演習・Ⅰ」
+00000504 - 「バノリディアン撃破」
+00000505 - 「ス・ヴァラディナン撃破」
+00000506 - 「白の民の町を守って！ Ⅰ」
+00000507 - 「メセタンシューターの座席にアクセスする」
+00000508 - 「ラッピースロットのスロット台にアクセスする」
+00000509 - 「風船にアクセスする」
+00000510 - 「白の民の町を守って！ Ⅲ」
+00000511 - 「イエーデ撃破」
+00000512 - 「緑色のコンテナを破壊する」
+00000513 - 「タルボルプス撃破」
+00000514 - 「ファイナに話しかける」
+00000515 - 「キングイエーデ撃破」
+00000516 - 「白の民の町を守って！ Ⅱ」
+00000517 - 「FUNスクラッチを引く」
+00000518 - 「マグにアイテムを与える」
+00000519 - 「任意のプレイヤーにグッジョブを送信する」
+00000520 - 「白の民の町を守って！ Ⅳ」
+00000521 - 「ピッタ・ワッダ撃破」
+00000522 - 「イザオガル撃破」
+00000523 - 「パーティー演習・Ⅱ」
+00000524 - 「ガンナガム撃破」
+00000525 - 「シグノビート撃破」
+00000526 - 「灼熱のバレンタイン? Ⅰ」
+00000527 - 「ディッグ撃破」
+00000528 - 「ディランダール撃破」
+00000529 - 「ノーディラン撃破」
+00000530 - 「灼熱のバレンタイン? Ⅱ」
+00000531 - 「ダブリュンダ撃破」
+00000532 - 「任意のアイテムの強化を成功させる」
+00000533 - 「未知なる試練」
+00000534 - 「PSEバーストを発生させる」
+00000535 - 「ピッタ・ワッダ撃破」
+00000536 - 「カメオに話しかける」
+00000537 - 「コインエクスチェンジャーでカジノコインを獲得する」
+00000538 - 「ブラナディアン撃破」
+00000539 - 「リリーパ族の落書きにアクセスする」
+00000540 - 「クラリスクレイスに話しかける」
+00000541 - 「ダブリューネ撃破」
+00000542 - 「任意のアイテムの属性強化を成功させる」
+00000543 - 「痛撃の鋭角」
+00000544 - 「『クエストクリア時』に設定したオートワードを発動させる」
+00000545 - 「パラタ・ピコーダ撃破」
+00000546 - 「お手本があればいいんだけど……」
+00000547 - 「シル・ディーニアン撃破」
+00000548 - 「ソル・ディランダール撃破」
+00000549 - 「ペンドラン撃破」
+00000550 - 「ケースにも真心をこめて」
+00000551 - 「ドラゴン・エクス撃破」
+00000552 - 「マターボード：【EP3-3 禍なる伝承】入手」
+00000553 - 「レランガム撃破」
+00000554 - 「ネプト・キャサドーラ撃破」
+00000555 - 「レオマドゥラード撃破」
+00000556 - 「ギグル・グンネガム撃破」
+00000557 - 「ヴォル・ドラゴン撃破」
+00000558 - 「ボンタ・ベアッダ撃破」
+00000559 - 「ファングバンシー撃破」
+00000560 - 「飛来せし鉄の巨影」
+00000561 - 「ヴィドルーダ撃破」
+00000562 - 「ウォルガーダ撃破」
+00000563 - 「ビオル・メデューナ撃破」
+00000564 - 「キャタドラン撃破」
+00000565 - 「ランズ・ヴァレーダ撃破」
+00000566 - 「ブリュー・リンガーダ撃破」
+00000567 - 「ファングバンサー撃破」
+00000568 - 「ディカーダ撃破」
+00000569 - 「アンジャドゥリリ撃破」
+00000570 - 「任意のエクストリームクエストのクリア」
+00000571 - 「トランマイザー撃破」
+00000572 - 「ゼッシュレイダ撃破」
+00000573 - 「ガンナガム撃破」
+00000574 - 「マターボード：【EP1-8 壊れた歴史をもう一度】入手」
+00000575 - 「」
+00000576 - 「」
+00000577 - 「」
+00000578 - 「」
+00000579 - 「」
+00000580 - 「ラッピースロットのスロット台にアクセスする」
+00000581 - 「グル・ソルダ撃破」
+00000582 - 「リューダソーサラー撃破」
+00000583 - 「ヴァラディナン撃破」
+00000584 - 「静穏を破りし大海の脅威」
+00000585 - 「ダブリューネ撃破」
+00000586 - 「ソルダ・カピタ撃破」
+00000587 - 「緑色のコンテナを破壊する」
+00000588 - 「ファルガルボン撃破」
+00000589 - 「ファイナに話しかける」
+00000590 - 「ドリュアーダ撃破」
+00000591 - 「ドゥエ・ソルダ撃破」
+00000592 - 「赤色のコンテナを破壊する」
+00000593 - 「ヴィド・ギロス撃破」
+00000594 - 「ランズ・ヴァレーダ撃破」
+00000595 - 「ダブリュンダ撃破」
+00000596 - 「メセタンシューターでキングメセタンを撃破する」
+00000597 - 「ファルカボネ撃破」
+00000598 - 「タロベッコ撃破」
+00000599 - 「タグ・アクルプス撃破」
+00000600 - 「メセタンシューターでニャウを撃破する」
+00000601 - 「シュトゥラーダ撃破」
+00000602 - 「ソル・サディニアン撃破」
+00000603 - 「ハチャメチャなホワイトデー？ Ⅰ」
+00000604 - 「サディニアン撃破」
+00000605 - 「ホワイトデーは大わらわ３」
+00000606 - 「バリドラン撃破」
+00000607 - 「ナノンに話しかける」
+00000608 - 「ダーガッシュ撃破」
+00000609 - 「フリードリンクスタンドにアクセスする」
+00000610 - 「ノーディランサ撃破」
+00000611 - 「ハチャメチャなホワイトデー？ Ⅱ」
+00000612 - 「ディガーラ撃破」
+00000613 - 「」
+00000614 - 「ソル・ディガーラ撃破」
+00000615 - 「大型エネミーから会場を防衛せよ！」
+00000616 - 「ペンドラン撃破」
+00000617 - 「任意のドリンクを飲む」
+00000618 - 「ダガッチャ撃破」
+00000619 - 「アークマミに話しかける」
+00000620 - 「フォードランサ撃破」
+00000621 - 「ティラルーダ撃破」
+00000622 - 「シル・サディニアン撃破」
+00000623 - 「キラキラの贈り物を！」
+00000624 - 「セト・サディニアン撃破」
+00000625 - 「ソル・ディランダール撃破」
+00000626 - 「グウォンダ撃破」
+00000627 - 「マターボード：【EP2-1 違えた道の行き先は】入手」
+00000628 - 「スノウバンサー撃破」
+00000629 - 「ホワイトデーは大わらわ３」
+00000630 - 「ダーカイムを破壊せよ！」
+00000631 - 「ファルス・アンゲル撃破」
+00000632 - 「クラバーダ撃破」
+00000633 - 「ウォルガーダ撃破」
+00000634 - 「サイクロネーダ撃破」
+00000635 - 「闇へのいざない」
+00000636 - 「クォーツ・ドラゴン撃破」
+00000637 - 「ゴロンゾラン撃破」
+00000638 - 「」
+00000639 - 「ランズ・ヴァレーダ撃破」
+00000640 - 「ドラゴン・エクス撃破」
+00000641 - 「デコル・マリューダ撃破」
+00000642 - 「キュクロナーダ撃破」
+00000643 - 「マターボード：【EP3-3 禍なる伝承】入手」
+00000644 - 「水上艦の動力源を破壊しろ！」
+00000645 - 「ブリュー・リンガーダ撃破」
+00000646 - 「マグにアイテムを与える」
+00000647 - 「ダーク・ラグネ撃破」
+00000648 - 「スノウ・バンシー撃破」
+00000649 - 「ゼッシュレイダ撃破」
+00000650 - 「キャタドランサ撃破」
+00000651 - 「まずは安全確保から！　Ⅰ」
+00000652 - 「マグにアイテムを与える」
+00000653 - 「シグノガン撃破」
+00000654 - 「ダガン撃破」
+00000655 - 「まずは安全確保から！　Ⅱ」
+00000656 - 「メセタンシュータ―をプレイする」
+00000657 - 「任意のプレイヤーにグッジョブを送信する」
+00000658 - 「エル・アーダ撃破」
+00000659 - 「任意のドリンクを飲む」
+00000660 - 「ラッピースロットをプレイする」
+00000661 - 「リリーパ族集落防衛」
+00000662 - 「FUNスクラッチを引く」
+00000663 - 「」
+00000664 - 「緑色のコンテナを破壊する」
+00000665 - 「ワイルドイースター２」
+00000666 - 「ディンゲール撃破」
+00000667 - 「ソルダ・カピタ撃破」
+00000668 - 「ドゥエ・ソルダ撃破」
+00000669 - 「ブラックニャックをプレイする」
+00000670 - 「スパルダンＡ撃破」
+00000671 - 「模様にもこだわりを！」
+00000672 - 「リューダソーサラー撃破」
+00000673 - 「ギルナッチ撃破」
+00000674 - 「ランズ・ヴァレーダ撃破」
+00000675 - 「小さな友人を助けて！」
+00000676 - 「ディカーダ撃破」
+00000677 - 「ヤクトディンゲールの剣刃の調達」
+00000678 - 「メセタンシューターでキングメセタンを撃破する」
+00000679 - 「バル・ロドス撃破」
+00000680 - 「グル・ソルダ撃破」
+00000681 - 「浮上施設のブーストエネミー・Ⅰ」
+00000682 - 「ドラゴン・エクス撃破」
+00000683 - 「カストキンディッド撃破」
+00000684 - 「オルグブラン撃破」
+00000685 - 「新たなランクで力試し」
+00000686 - 「シュトゥラーダ撃破」
+00000687 - 「任意のアイテムの属性強化を成功させる」
+00000688 - 「」
+00000689 - 「任意のアイテムの強化を成功させる」
+00000690 - 「プレディカーダ撃破」
+00000691 - 「ファルス・ヒューナル撃破」
+00000692 - 「トランマイザー撃破」
+00000693 - 「ギルナス撃破」
+00000694 - 「シグノビート撃破」
+00000695 - 「ブリュー・リンガーダ撃破」
+00000696 - 「マターボード：【EP3-4 霞んだ記録、微かな記憶】入手」
+00000697 - 「ビオル・メデューナ撃破」
+00000698 - 「赤色のコンテナを破壊する」
+00000699 - 「ヴァーダーソーマの部位破壊を！」
+00000700 - 「クラフト訓練・竹」
+00000701 - 「ミクダ撃破」
+00000702 - 「木々の状態の調査」
+00000703 - 「ウーダン撃破」
+00000704 - 「原生種の異常発生！？」
+00000705 - 「ガロンゴ撃破」
+00000706 - 「ガウォンダ撃破」
+00000707 - 「カルターゴ撃破」
+00000708 - 「ファイナに話しかける」
+00000709 - 「クラバーダ撃破」
+00000710 - 「グウォンダ撃破」
+00000711 - 「ガルフ撃破」
+00000712 - 「新世武器、ユニットのいずれかを1つ強化する」
+00000713 - 「」
+00000714 - 「任意の武器の属性強化をする」
+00000715 - 「フォンガルフ撃破」
+00000716 - 「ダガッチャ撃破」
+00000717 - 「キュクロナーダ撃破」
+00000718 - 「緑色のコンテナを破壊する」
+00000719 - 「サイクロネーダ撃破」
+00000720 - 「ダーガッシュ撃破」
+00000721 - 「アギニス撃破」
+00000722 - 「侵食の懸念」
+00000723 - 「ザウーダン撃破」
+00000724 - 「雨に咲く紫の花」
+00000725 - 「オル・ミクダ撃破」
+00000726 - 「森林を覆う数多の敵意」
+00000727 - 「ファングバンサー撃破」
+00000728 - 「ラッピーなる希少種」
+00000729 - 「ダーク・ラグネ撃破」
+00000730 - 「戦闘機防衛」
+00000731 - 「ネプト・キャサドーラ撃破」
+00000732 - 「ナヴ・ラッピー撃破」
+00000733 - 「釣りをする」
+00000734 - 「嵐の贈り物」
+00000735 - 「レオマドゥラード撃破」
+00000736 - 「ニャウなる希少種」
+00000737 - 「ロックベア撃破」
+00000738 - 「」
+00000739 - 「デ・マルモス撃破」
+00000740 - 「ウォルガーダ撃破」
+00000741 - 「ブラッディ・スカフォード・Ⅲ」
+00000742 - 「ベイゼ破壊」
+00000743 - 「雨風とともに」
+00000744 - 「難易度制限解放試練・Ⅰ」
+00000745 - 「カルターゴ撃破」
+00000746 - 「メセタンシューターでキングメセタンを撃破する」
+00000747 - 「ファングバンシー撃破」
+00000748 - 「スノウバンサー撃破」
+00000749 - 「ゼッシュレイダ撃破」
+00000750 - 「カジノエリアのリリーパ族の落書きにアクセス」
+00000751 - 「ピッタ・ワッダ撃破」
+00000752 - 「リューダソーサラー撃破」
+00000753 - 「ブラックニャックをプレイする」
+00000754 - 「エル・アーダ撃破」
+00000755 - 「シュトゥラーダ撃破」
+00000756 - 「グワナーダ撃破」
+00000757 - 「ファイナに話しかける」
+00000758 - 「カルターゴ撃破」
+00000759 - 「ティラルーダ撃破」
+00000760 - 「ヴェロシティ・アニヒレート・Ⅱ」
+00000761 - 「エドアールに話しかける」
+00000762 - 「任意のドリンクを飲む」
+00000763 - 「」
+00000764 - 「FUNスクラッチを引く」
+00000765 - 「『クエストクリア時』に設定したオートワードを発動させる」
+00000766 - 「砂漠の黒飛蝗」
+00000767 - 「ブリュンダール撃破」
+00000768 - 「ミクダ撃破」
+00000769 - 「緑色のコンテナを破壊する」
+00000770 - 「ヴェロシティ・アニヒレート・Ⅰ」
+00000771 - 「パラタ・ピコーダ撃破」
+00000772 - 「ガウォンダ撃破」
+00000773 - 「ダガン撃破」
+00000774 - 「ブリアーダ撃破」
+00000775 - 「ボンタ・ベアッダ撃破」
+00000776 - 「ズグラフ撃破」
+00000777 - 「ユグルドラーダ撃破」
+00000778 - 「ガルフ撃破」
+00000779 - 「カイズフォエーゴ撃破」
+00000780 - 「ナイトギア撃破」
+00000781 - 「ユーガディカーダ撃破」
+00000782 - 「ロックベア撃破」
+00000783 - 「シル・ディーニアン撃破」
+00000784 - 「シグノガン撃破」
+00000785 - 「ギブルーダン撃破」
+00000786 - 「マルモス撃破」
+00000787 - 「スパルガン撃破」
+00000788 - 「」
+00000789 - 「メセタンシューターでニャウを撃破する」
+00000790 - 「ガロンゴ撃破」
+00000791 - 「PSEバーストを発生させる」
+00000792 - 「グランディルガ撃破」
+00000793 - 「シル・サディニアン撃破」
+00000794 - 「デ・マルモス撃破」
+00000795 - 「プロジオーグルス撃破」
+00000796 - 「ドラゴン・エクス撃破」
+00000797 - 「ディアボイグリシス撃破」
+00000798 - 「ガルフル撃破」
+00000799 - 「ベーアリブルス撃破」
+00000800 - 「バルグラフ撃破」
+00000801 - 「リゾート計画の始まり！」
+00000802 - 「ニッサに話しかける」
+00000803 - 「タグ・セヴァニアン撃破」
+00000804 - 「任意のプレイヤーにグッジョブを送信する」
+00000805 - 「安全確保を万全に！」
+00000806 - 「クラバーダ撃破」
+00000807 - 「タルボルプス撃破」
+00000808 - 「緑色のコンテナを破壊する」
+00000809 - 「セグレズン撃破」
+00000810 - 「シルト・グリミアン撃破」
+00000811 - 「タロベッコ撃破」
+00000812 - 「FUNスクラッチを引く」
+00000813 - 「」
+00000814 - 「任意のドリンクを飲む」
+00000815 - 「ブルトルボン撃破」
+00000816 - 「バノリディアン撃破」
+00000817 - 「ビーチウォーズ３！」
+00000818 - 「アルトに話しかける」
+00000819 - 「アクルプス撃破」
+00000820 - 「ダーガッシュ撃破」
+00000821 - 「お呼びでない侵入者！？」
+00000822 - 「マグにアイテムを与える」
+00000823 - 「セヴァニアン撃破」
+00000824 - 「ノエミに話しかける」
+00000825 - 「ダイビングの必需品？」
+00000826 - 「赤色のコンテナを破壊する」
+00000827 - 「ヴォル・ドラゴン撃破」
+00000828 - 「メセタンシューターをプレイする」
+00000829 - 「任意のアドバンスクエストのクリア」
+00000830 - 「刃片と貝殻の調達」
+00000831 - 「対なる好敵手」
+00000832 - 「ヴィド・ギロス撃破」
+00000833 - 「任意のアイテムの強化を成功させる」
+00000834 - 「リゾート計画防衛戦！？」
+00000835 - 「ゼッシュレイダ撃破」
+00000836 - 「ダガン撃破」
+00000837 - 「ドラゴン・エクス撃破」
+00000838 - 「」
+00000839 - 「キャタドラン撃破」
+00000840 - 「エル・アーダ撃破」
+00000841 - 「ネプト・キャサドーラ撃破」
+00000842 - 「ブリュー・リンガーダ撃破」
+00000843 - 「任意のアイテムの属性強化を成功させる」
+00000844 - 「ファルカボネ撃破」
+00000845 - 「デコル・マリューダ撃破」
+00000846 - 「鱗と鋭棘の調達」
+00000847 - 「マターボード：【EP3-5  闇を抱いた歴史】入手」
+00000848 - 「ブラックニャックをプレイする」
+00000849 - 「ギグル・グンネガム撃破」
+00000850 - 「竜宮の駒からの挑戦」
+00000851 - 「パジゴワン撃破」
+00000852 - 「霊山侵入」
+00000853 - 「ミクダ撃破」
+00000854 - 「マーダ・トカッタ撃破」
+00000855 - 「コドニアガリ撃破」
+00000856 - 「バン・オガキバル撃破」
+00000857 - 「あのお月見をもう一度！」
+00000858 - 「ボンタ・バクタ撃破」
+00000859 - 「みんなを笑顔にするために」
+00000860 - 「ガウ・オガキバル撃破」
+00000861 - 「ビクダ・ラビッタ撃破」
+00000862 - 「ディカーダ撃破」
+00000863 - 「」
+00000864 - 「プレディカーダ撃破」
+00000865 - 「オロタ・ビケッタ撃破」
+00000866 - 「お団子を懸けた戦い!?」
+00000867 - 「黒ノ領域の怪奇現象!?」
+00000868 - 「緑色のコンテナを破壊する」
+00000869 - 「お月見まであと一歩！」
+00000870 - 「ボル・オガキバル撃破」
+00000871 - 「オロオガル撃破」
+00000872 - 「コドッタ・イーデッタ撃破」
+00000873 - 「オル・ミクダ撃破」
+00000874 - 「ファイナに話しかける」
+00000875 - 「イタギザクリ撃破」
+00000876 - 「アドオガル撃破」
+00000877 - 「コドッタ・イーデッタ撃破」
+00000878 - 「アヌシザグリ撃破」
+00000879 - 「ギグル・グンネガム撃破」
+00000880 - 「ボンタ・ベアッダ撃破」
+00000881 - 「禍魂集いし戦道」
+00000882 - 「ボル・オガキバルを討伐せよ！」
+00000883 - 「参道に立ち塞がりし悪鬼」
+00000884 - 「バン・オガキバルを討伐せよ！」
+00000885 - 「ジャストアタック特訓・黒ノ領域」
+00000886 - 「ラッピーなる希少種」
+00000887 - 「レランガム撃破」
+00000888 - 「ギルナス撃破」
+00000889 - 「ガンナガム撃破」
+00000890 - 「ニャウなる希少種」
+00000891 - 「マターボード：【EP3-6 想いの辿り着く先】入手」
+00000892 - 「ガウ・オガキバルを討伐せよ！」
+00000893 - 「イザオガル撃破」
+00000894 - 「PAカスタマイズを実行する」
+00000895 - 「ダーク・ラグネ撃破」
+00000896 - 「ピッタ・ワッダ撃破」
+00000897 - 「グアル・ジグモルデ撃破」
+00000898 - 「パジギッリ撃破」
+00000899 - 「アンジャドゥリリ撃破」
+00000900 - 「パラタ・ピコーダ撃破」
+00000901 - 「カストガーディナン撃破」
+00000902 - 「ヴィントバルガー撃破」
+00000903 - 「ガノンバルガー撃破」
+00000904 - 「ヤクトバルガー撃破」
+00000905 - 「スパルガン撃破」
+00000906 - 「マシンノイズに誘われて」
+00000907 - 「ビクダ・ラビッタ撃破」
+00000908 - 「」
+00000909 - 「」
+00000910 - 「暴れる玩具は玩具箱へ！」
+00000911 - 「シグノガン撃破」
+00000912 - 「ファイナに話しかける」
+00000913 - 「緑色のコンテナを破壊する」
+00000914 - 「トリックオアクリーク！？」
+00000915 - 「シグノビート撃破」
+00000916 - 「ポップでホラーなロリポップ」
+00000917 - 「マーダ・トカッタ撃破」
+00000918 - 「ファーマに話しかける」
+00000919 - 「ボンタ・ベアッダ撃破」
+00000920 - 「知られざる匠の技巧」
+00000921 - 「スパルダンA撃破」
+00000922 - 「ボンタ・バクタ撃破」
+00000923 - 「ピッタ・ワッダ撃破」
+00000924 - 「パラタ・ピコーダ撃破」
+00000925 - 「カストキンディッド撃破」
+00000926 - 「ガーディンのフレームの調達」
+00000927 - 「ランズ・ヴァレーダ撃破」
+00000928 - 「任意のアイテムの強化を成功させる」
+00000929 - 「ゼータ・グランゾ撃破」
+00000930 - 「ニャウなる希少種」
+00000931 - 「砂漠の新たな試練」
+00000932 - 「ドゥエ・ソルダ撃破」
+00000933 - 「赤色のコンテナを破壊する」
+00000934 - 「ソルダ・カピタ撃破」
+00000935 - 「トリックオアトリート４！」
+00000936 - 「ディンゲール撃破」
+00000937 - 「ブラックニャックをプレイする」
+00000938 - 「」
+00000939 - 「PAカスタマイズを実行する」
+00000940 - 「ヤクトディンゲール撃破」
+00000941 - 「ビッグヴァーダー撃破」
+00000942 - 「グル・ソルダ撃破」
+00000943 - 「ノートブルガに話しかける」
+00000944 - 「リューダソーサラー撃破」
+00000945 - 「マターボード：【EP3-7 彼の日を超えて、その先へ】入手」
+00000946 - 「ラッピーなる希少種」
+00000947 - 「オロタ・ビケッタ撃破」
+00000948 - 「任意のアイテムの属性強化を成功させる」
+00000949 - 「コドッタ・イーデッタ撃破」
+00000950 - 「ギルナスの装甲の調達」
+00000951 - 「クリスマスキャロルは突然に」
+00000952 - 「プレディカーダ撃破」
+00000953 - 「マグにアイテムを与える」
+00000954 - 「デ・マルモス撃破」
+00000955 - 「ダーカー・イン・ザ・ナイト」
+00000956 - 「ブリュンダール撃破」
+00000957 - 「パラタ・ピコーダ撃破」
+00000958 - 「任意のドリンクを飲む」
+00000959 - 「ガルフル撃破」
+00000960 - 「マルモス撃破」
+00000961 - 「ラッピースロットをプレイする」
+00000962 - 「ラケシスに話しかける」
+00000963 - 「」
+00000964 - 「アルトに話しかける」
+00000965 - 「ブラックニャックをプレイする」
+00000966 - 「ファンガルフル撃破」
+00000967 - 「イエーデ撃破」
+00000968 - 「FUNスクラッチを引く」
+00000969 - 「ボンタ・バクタ撃破」
+00000970 - 「ピッタ・ワッダ撃破」
+00000971 - 「ジングル・ゴーマイウェイ！」
+00000972 - 「デコル・マリューダ撃破」
+00000973 - 「緑色のコンテナを破壊する」
+00000974 - 「リューダソーサラー撃破」
+00000975 - 「ラッピーは二度ベルを鳴らす！？」
+00000976 - 「ニャウなる希少種」
+00000977 - 「ビクダ・ラビッタ撃破」
+00000978 - 「赤色のコンテナを破壊する」
+00000979 - 「氷上のメリークリスマス４」
+00000980 - 「ダモス撃破」
+00000981 - 「ジャストアタック特訓・黒ノ領域」
+00000982 - 「ボンタ・ベアッダ撃破」
+00000983 - 「ジグに話しかける」
+00000984 - 「ドゥエ・ソルダ撃破」
+00000985 - 「イレイザー・レポート・Ⅳ」
+00000986 - 「シュトゥラーダ撃破」
+00000987 - 「任意のアイテムの属性強化を成功させる」
+00000988 - 「」
+00000989 - 「任意のアイテムの強化を成功させる」
+00000990 - 「ティラルーダ撃破」
+00000991 - 「ブラッディ・スカフォード・Ⅴ」
+00000992 - 「ガル・グリフォン撃破」
+00000993 - 「任意のプレイヤーにグッジョブを送信する」
+00000994 - 「巨大な玩具の破片の調達」
+00000995 - 「任意のエクストリームクエストのクリア」
+00000996 - 「マーダ・トカッタ撃破」
+00000997 - 「ブリュー・リンガーダ撃破」
+00000998 - 「デモリション・アンビション・Ⅱ」
+00000999 - 「マターボード：【EP3-8 煌き来たりて】入手」
+00001000 - 「ラッピーなる希少種」
+00001001 - 「イエーデ撃破」
+00001002 - 「シル・ディーニアン撃破」
+00001003 - 「ディーニアン撃破」
+00001004 - 「ソル・ディーニアン撃破」
+00001005 - 「ヴォル・ドラゴン撃破」
+00001006 - 「ギルナッチ撃破」
+00001007 - 「デコル・マリューダ撃破」
+00001008 - 「ピエトロに話しかける」
+00001009 - 「ファンガルフル撃破」
+00001010 - 「ダブリュンダ撃破」
+00001011 - 「ボンタ・バクタ撃破」
+00001012 - 「メセタンシューターをプレイする」
+00001013 - 「」
+00001014 - 「ラッピースロットをプレイする」
+00001015 - 「サイクロネーダ撃破」
+00001016 - 「ヤクトバルガー撃破」
+00001017 - 「フォンガルフ撃破」
+00001018 - 「緑色のコンテナを破壊する」
+00001019 - 「ブリュー・リンガーダ撃破」
+00001020 - 「クラーダ撃破」
+00001021 - 「ヴァーダーソーマ撃破」
+00001022 - 「ノーディラン撃破」
+00001023 - 「ディッグ撃破」
+00001024 - 「フォードラン撃破」
+00001025 - 「ザウーダン撃破」
+00001026 - 「感謝祭を開催するよ！」
+00001027 - 「ボル・オガキバル撃破」
+00001028 - 「バン・オガキバル撃破」
+00001029 - 「ガウ・オガキバル撃破」
+00001030 - 「感謝祭の準備を始めるよ！」
+00001031 - 「PSEバーストを発生させる」
+00001032 - 「コドッタ・イーデッタ撃破」
+00001033 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00001034 - 「ファイナに話しかける」
+00001035 - 「トランマイザー撃破」
+00001036 - 「オロタ・ビケッタ撃破」
+00001037 - 「キャタドラン撃破」
+00001038 - 「」
+00001039 - 「グワナーダ撃破」
+00001040 - 「リューダソーサラー撃破」
+00001041 - 「ディカーダ撃破」
+00001042 - 「赤色のコンテナを破壊する」
+00001043 - 「ボンタ・ベアッダ撃破」
+00001044 - 「ビクダ・ラビッタ撃破」
+00001045 - 「プレディカーダ撃破」
+00001046 - 「感謝祭の開催……できるかな？」
+00001047 - 「特定封鎖区域討滅任務」
+00001048 - 「ゼータ・グランゾ撃破」
+00001049 - 「ストーリーボード1章「目覚めの時」クリア」
+00001050 - 「幻創種なる新たな脅威」
+00001051 - 「ブラックニャックをプレイする」
+00001052 - 「ダーガッシュ撃破」
+00001053 - 「エッグ合成をする」
+00001054 - 「ウィンディラ撃破」
+00001055 - 「シエラに話しかける」
+00001056 - 「シュトゥラーダ撃破」
+00001057 - 「ギャザリングをしてみましょー」
+00001058 - 「FUNスクラッチを引く」
+00001059 - 「ドリュアーダ撃破」
+00001060 - 「セト・サディニアン撃破」
+00001061 - 「任意のドリンクを飲む」
+00001062 - 「アイーダに話しかける」
+00001063 - 「」
+00001064 - 「ヤーキスに話しかける」
+00001065 - 「緑色のコンテナを破壊する」
+00001066 - 「クラバーダ撃破」
+00001067 - 「ピッタ・ワッダ撃破」
+00001068 - 「マグにアイテムを与える」
+00001069 - 「ディランダール撃破」
+00001070 - 「ノーディランサ撃破」
+00001071 - 「キャタドランサ撃破」
+00001072 - 「グウォンダ撃破」
+00001073 - 「キャンディをセットする」
+00001074 - 「サイクロネーダ撃破」
+00001075 - 「メセタンシューターをプレイする」
+00001076 - 「ドラゴン・エクス撃破」
+00001077 - 「スノウバンサー撃破」
+00001078 - 「ダガン撃破」
+00001079 - 「闇に煌く死神の鎌」
+00001080 - 「ゴロンゾラン撃破」
+00001081 - 「ブリュー・リンガーダ撃破」
+00001082 - 「クォーツ・ドラゴンの鱗の調達」
+00001083 - 「ピエトロに話しかける」
+00001084 - 「ダーク・ラグネ撃破」
+00001085 - 「浮遊大陸の新たな試練」
+00001086 - 「１５式戦車撃破」
+00001087 - 「オロタ・ビケッタ撃破」
+00001088 - 「」
+00001089 - 「ビクダ・ラビッタ撃破」
+00001090 - 「赤色のコンテナを破壊する」
+00001091 - 「ホワイトデーは大わらわ2016」
+00001092 - 「ソル・ディランダール撃破」
+00001093 - キャンディを圧縮する」
+00001094 - 「クォーツ・ドラゴン撃破」
+00001095 - 「グル・ソルダ撃破」
+00001096 - 「トレイン・ギドラン撃破」
+00001097 - 「そびえ立つ黒き巨体」
+00001098 - 「ゼッシュレイダ撃破」
+00001099 - 「ブラッディ・スカフォード・Ⅰ」
+00001100 - 「ウォルガーダ撃破」
+00001101 - 「任意のプレイヤーにグッジョブを送信する」
+00001102 - 「ガウォンダ撃破」
+00001103 - 「リューダソーサラー撃破」
+00001104 - 「メセタンシューターをプレイする」
+00001105 - 「ファイナに話しかける」
+00001106 - 「コドッタ・イーデッタ撃破」
+00001107 - 「アールチェに話しかける」
+00001108 - 「ヤクトバルガー撃破」
+00001109 - 「ゴルドラーダ撃破」
+00001110 - 「エッグ合成をする」
+00001111 - 「ディカーダ撃破」
+00001112 - 「シグノビート撃破」
+00001113 - 「」
+00001114 - 「カルターゴ撃破」
+00001115 - 「オル・ミクダ撃破」
+00001116 - 「マグにアイテムを与える」
+00001117 - 「ブラック・スローター・Ⅰ」
+00001118 - 「カストキンディッド撃破」
+00001119 - 「任意のアイテムの強化を成功させる」
+00001120 - 「カストガーディナン撃破」
+00001121 - 「ラケシスに話しかける」
+00001122 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001123 - 「オロタ・ビケッタ撃破」
+00001124 - 「幻創種なる新たな脅威」
+00001125 - 「緑色のコンテナを破壊する」
+00001126 - 「ラッピースロットをプレイする」
+00001127 - 「ウォルガーダ撃破」
+00001128 - 「絶対黒壁」
+00001129 - 「ワイルドイースター2016」
+00001130 - 「ソフィアに話しかける」
+00001131 - 「カストキンディッドの刃の調達」
+00001132 - 「バル・ロドス撃破」
+00001133 - 「ヴィントバルガー撃破」
+00001134 - 「リングを強化する」
+00001135 - 「風雷を喚びし凶鳥」
+00001136 - 「ストーリークエスト2章「幻創の現実」クリア」
+00001137 - 「ファルス・ヒューナル撃破」
+00001138 - 「」
+00001139 - 「マイルドマイルド・マーダー・Ⅲ」
+00001140 - 「ノートブルガに話しかける」
+00001141 - 「ヴリマ・レオパード撃破」
+00001142 - 「デモリション・アンビション・Ⅲ」
+00001143 - 「カイザーバルガー撃破」
+00001144 - 「赤色のコンテナを破壊する」
+00001145 - 「シノワラピドゥス撃破」
+00001146 - 「任意のアイテムの属性強化を成功させる」
+00001147 - 「ブリュー・リンガーダ撃破」
+00001148 - 「ラッピーなる希少種」
+00001149 - 「ファルケ・レオーネ撃破」
+00001150 - 「特定封鎖区域討滅任務」
+00001151 - 「Ｔ・レックス撃破」
+00001152 - 「任意のドリンクを飲む」
+00001153 - 「リングを作ってみましょー」
+00001154 - 「プリンに話しかける」
+00001155 - 「ファングバンシー撃破」
+00001156 - 「チップに話しかける」
+00001157 - 「ブラウンベア撃破」
+00001158 - 「ＦＵＮスクラッチを引く」
+00001159 - 「キャタドラン撃破」
+00001160 - 「ピエトロに話しかける」
+00001161 - 「キャンディをセットする」
+00001162 - 「クラバーダ撃破」
+00001163 - 「」
+00001164 - 「ジャストアタック特訓・Ⅰ」
+00001165 - 「新世武器能力強化講習」
+00001166 - 「ティフリスに話しかける」
+00001167 - 「ヴォル・ドラゴン撃破」
+00001168 - 「フォンガルフ撃破」
+00001169 - 「ポーラーベア撃破」
+00001170 - 「ノエミに話しかける」
+00001171 - 「ファングバンサー撃破」
+00001172 - 「ヤーキスに話しかける」
+00001173 - 「料理を作ってみましょー」
+00001174 - 「マグにアイテムを与える」
+00001175 - 「ロードローラー撃破」
+00001176 - 「レオマドゥラード撃破」
+00001177 - 「ベーアリブルス撃破」
+00001178 - 「暴走せし警告色の鉄馬」
+00001179 - 「解き放たれし鋼鉄の威信」
+00001180 - 「デ・マルモス撃破」
+00001181 - 「ブリュー・リンガーダ撃破」
+00001182 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001183 - 「ドスゾンビ撃破」
+00001184 - 「スノウバンサー撃破」
+00001185 - 「チャカゾンビ撃破」
+00001186 - 「幻創侵食核の調査依頼・Ⅰ」
+00001187 - 「スネークヘリ撃破」
+00001188 - 「」
+00001189 - 「１５式戦車撃破」
+00001190 - 「トレイン・ギドランの部位破壊を！」
+00001191 - 「コドッタ・イーデッタ撃破」
+00001192 - 「スノウバンシー撃破」
+00001193 - 「PSEバーストを発生させる」
+00001194 - 「ブラッディ・スカフォード・Ⅰ」
+00001195 - 「ゼッシュレイダ撃破」
+00001196 - 「ネプト・キャサドーラ撃破」
+00001197 - 「メセタンシューターでクイーンメセタンを撃破する」
+00001198 - 「極限訓練で力試し・Ⅰ」
+00001199 - 「ディアボイグリシス撃破」
+00001200 - 「ドラゴン・エクス撃破」
+00001201 - 「アールチェに話しかける」
+00001202 - 「マグにアイテムを与える」
+00001203 - 「祭壇に巣食う闇の眷属」
+00001204 - 「緑色のコンテナを破壊する」
+00001205 - 「ゴロンゾラン撃破」
+00001206 - 「探索許可申請試練・Ⅰ」
+00001207 - 「フォードラン撃破」
+00001208 - 「ディーニアン撃破」
+00001209 - 「フォードランサ撃破」
+00001210 - 「クォーツ・ドラゴン撃破」
+00001211 - 「凶徒と化した祭壇の守り人」
+00001212 - 「赤色のコンテナを破壊する」
+00001214 - 「アンリに話しかける」
+00001215 - 「海原よりの乱入者」
+00001216 - 「武器携帯数拡張申請試練・Ⅰ」
+00001217 - 「ディッグ撃破」
+00001218 - 「サディニアン撃破」
+00001219 - 「ディガーラ撃破」
+00001220 - 「ヴォル・ドラゴン撃破」
+00001221 - 「ストーリークエスト1章「目覚めの時」クリア」
+00001222 - 「龍の祭壇と黒の民」
+00001223 - 「リングを強化する」
+00001224 - 「そして異変の終結へ――？」
+00001225 - 「ドラゴン・エクス撃破」
+00001226 - 「森の奥に潜む異変」
+00001227 - 「ビクダ・ラビッタ撃破」
+00001228 - 「遺址を彷徨う亡霊騎士」
+00001229 - 「グアル・ジグモルデ撃破」
+00001230 - 「凶変する原生」
+00001231 - 「ファルス・ヒューナル撃破」
+00001232 - 「ストーリークエスト2章「幻創の現実」クリア」
+00001233 - 「マグにアイテムを与える」
+00001234 - 「難易度制限解放試練・Ⅰ」
+00001235 - 「ゼータ・グランゾ撃破」
+00001236 - 「探索許可申請試練・Ⅱ」
+00001237 - 「ガロンゴ撃破」
+00001239 - 「フォードラン撃破」
+00001240 - 「新世武器の強化を成功させる」
+00001241 - 「ディアボイグリシス撃破」
+00001242 - 「シロナに話しかける」
+00001243 - 「任意のプレイヤーにグッジョブを送信する」
+00001244 - 「ストーリーボードイベントピース【042-E】「アイカの目的」を閲覧」
+00001245 - 「ファルス・アンゲル撃破」
+00001246 - 「混沌を招く巨大な翼」
+00001247 - 「グランディルガ撃破」
+00001248 - 「レベル制限解除試練・Ⅰ」
+00001249 - 「ガンカイザー撃破」
+00001250 - 「森閑を乱す侵入者」
+00001251 - 「探索許可申請試練・Ⅲ」
+00001252 - 「アークマスロットをプレイする」
+00001253 - 「ガル・グリフォン撃破」
+00001254 - 「クローム・ドラゴン撃破」
+00001255 - 「難易度制限解放試練・Ⅱ」
+00001256 - 「一意専心の力試し・Ⅰ」
+00001257 - 「ヴィド・ギロス撃破」
+00001258 - 「ストーリークエスト3章「幻創の暴走」クリア」
+00001259 - 「ブルメガーラ撃破」
+00001260 - 「極限訓練で力試し・Ⅰ」
+00001261 - 「サポートパートナー講習」
+00001262 - 「ゼッシュレイダ撃破」
+00001264 - 「デコル・マリューダ撃破」
+00001265 - 「FUNスクラッチを引く」
+00001266 - 「ブラックニャックをプレイする」
+00001267 - 「バノリディアン撃破」
+00001268 - 「アークス連破能力調査」
+00001269 - 「リューダソーサラー撃破」
+00001270 - 「赤色のコンテナを破壊する」
+00001271 - 「レベル制限解除試練・Ⅱ」
+00001272 - 「ダーク・ビブラス撃破」
+00001273 - 「セヴァニアン撃破」
+00001274 - 「PSEバーストを発生させる」
+00001275 - 「ストーリークエスト3章「日常への帰還」クリア」
+00001276 - 「イザオガル撃破」
+00001277 - 「シロナに話しかける」
+00001278 - 「緑色のコンテナを破壊する」
+00001279 - 「ストーリークエスト1章「目覚めの時」クリア」
+00001280 - 「幻視の巫女と調査」
+00001281 - 「ゴルドラーダ撃破」
+00001282 - 「イタギザクリ撃破」
+00001283 - 「ボンタ・バクタ撃破」
+00001284 - 「アリエルに話しかける」
+00001285 - 「新世武器を強化する」
+00001286 - 「マーダ・トカッタ撃破」
+00001287 - 「マグにアイテムを与える」
+00001289 - 「プリンに話しかける」
+00001290 - 「ボンタ・ベアッダ撃破」
+00001291 - 「アヌシザグリ撃破」
+00001292 - 「英雄と幻視の巫女」
+00001293 - 「プレディカーダ撃破」
+00001294 - 「ヤーキスに話しかける」
+00001295 - 「ミミに話しかける」
+00001296 - 「グアル・ジグモルデ撃破」
+00001297 - 「パジギッリ撃破」
+00001298 - 「コドニアガリ撃破」
+00001299 - 「オロタ・ビケッタ撃破」
+00001300 - 「ガンナガム撃破」
+00001301 - 「ダーク・ラグネ撃破」
+00001302 - 「ゼッシュレイダ撃破」
+00001303 - 「天馬行空の力試し・Ⅰ」
+00001304 - 「ガル・グリフォン撃破」
+00001305 - 「ボル・オガキバル撃破」
+00001306 - 「ベガス・イリュージア撃破」
+00001307 - 「バン・オガキバル撃破」
+00001308 - 「チェーンソーピエロ撃破」
+00001309 - 「ビクダ・ラビッタ撃破」
+00001310 - 「ファルス・ヒューナル撃破」
+00001311 - 「任意のドリンクを飲む」
+00001312 - 「リングを強化する」
+00001314 - 「デュラハンライダー撃破」
+00001315 - 「不夜城を彷徨う幻創種」
+00001316 - 「幻創浮遊要塞を破壊せよ！」
+00001317 - 「オロオガル撃破」
+00001318 - 「アークマスロットをプレイする」
+00001319 - 「縦横無尽のラスベガス探索」
+00001320 - 「グワナーダ撃破」
+00001321 - 「トラックマフラーの調達」
+00001322 - 「コドッタ・イーデッタ撃破」
+00001323 - 「赤色のコンテナを破壊する」
+00001324 - 「ギグル・グンネガム撃破」
+00001325 - 「ニャウなる希少種」
+00001326 - 「リューダソーサラー撃破」
+00001327 - 「コドッタ・イーデッタ撃破」
+00001328 - 「自由探索許可申請・凍土」
+00001329 - 「FUNスクラッチを引く」
+00001330 - 「グル・ソルダ撃破」
+00001331 - 「ガノンバルガー撃破」
+00001332 - 「シグノガン撃破」
+00001333 - 「ピッタ・ワッダ撃破」
+00001334 - 「カストキンディッド撃破」
+00001335 - 「カストガーディナン撃破」
+00001336 - 「ボンタ・ベアッダ撃破」
+00001337 - 「シロナに話しかける」
+00001339 - 「緑色のコンテナを破壊する」
+00001340 - 「ヤクトバルガー撃破」
+00001341 - 「プリンに話しかける」
+00001342 - 「ストーリークエスト1章「目覚めの時」クリア」
+00001343 - 「任意のプレイヤーにグッジョブを送信する」
+00001344 - 「スパルガン撃破」
+00001345 - 「アールチェに話しかける」
+00001346 - 「ランズ・ヴァレーダ撃破」
+00001347 - 「自由探索許可申請・火山洞窟」
+00001348 - 「クロトに話しかける」
+00001349 - 「ゼータ・グランゾ撃破」
+00001350 - 「ドゥエ・ソルダ撃破」
+00001351 - 「走破演習：東京」
+00001352 - 「トランマイザー撃破」
+00001353 - 「赤色のコンテナを破壊する」
+00001354 - 「ゴロンゾラン撃破」
+00001355 - 「Ｔ・レックス撃破」
+00001356 - 「ビッグヴァーダー撃破」
+00001357 - 「デコル・マリューダ撃破」
+00001358 - 「ソルダ・カピタ撃破」
+00001359 - 「ファングバンサー撃破」
+00001360 - 「トレイン・ギドラン撃破」
+00001361 - 「ロードローラー撃破」
+00001362 - 「PSEバーストを発生させる」
+00001364 - 「釣りをする」
+00001365 - 「ギルナス撃破」
+00001366 - 「ブリュー・リンガーダ撃破」
+00001367 - 「ラッピーなる希少種」
+00001368 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001369 - 「ゼッシュレイダ撃破」
+00001370 - 「メセタンシューターでキングメセタンを撃破する」
+00001371 - 「スネークヘリ撃破」
+00001372 - 「ファルケ・レオーネ撃破」
+00001373 - 「採取をする」
+00001374 - 「ディーオ・ヒューナル撃破」
+00001375 - 「１５式戦車撃破」
+00001376 - 「ブラックニャックをプレイする」
+00001377 - 「ブリュンダール撃破」
+00001378 - 「戦い方を見せてほしい」
+00001379 - 「ディーオ・ヒューナル撃破」
+00001380 - 「パラタ・ピコーダ撃破」
+00001381 - 「マーダ・トカッタ撃破」
+00001382 - 「アールチェに話しかける」
+00001383 - 「新世武器を強化する」
+00001384 - 「ジェネに話しかける」
+00001385 - 「ティラルーダ撃破」
+00001386 - 「病室に飾る花を探して」
+00001387 - 「マルモス撃破」
+00001389 - 「マグにアイテムを与える」
+00001390 - 「プリンに話しかける」
+00001391 - 「クロトに話しかける」
+00001392 - 「ノエミに話しかける」
+00001393 - 「赤色のコンテナを破壊する」
+00001394 - 「任意のドリンクを飲む」
+00001395 - 「ディカーダ撃破」
+00001396 - 「アイーダに話しかける」
+00001397 - 「ストーリークエスト2章「幻創の現実」クリア」
+00001398 - 「付き合ってくれないかしら？」
+00001399 - 「シュトゥラーダ撃破」
+00001400 - 「キングイエーデ撃破」
+00001401 - 「ガルフルの肉の調達」
+00001402 - 「ストーリークエスト6章「想いのかたち」クリア」
+00001403 - 「オロタ・ビケッタ撃破」
+00001404 - 「ファナティック・キリング・Ⅱ」
+00001405 - 「アンタへの頼みごと」
+00001406 - 「ファングバンシー撃破」
+00001407 - 「ラッピーなる希少種」
+00001408 - 「ファンガルフル撃破」
+00001409 - 「ディアボイグリシス撃破」
+00001410 - 「グアル・ジグモルデの部位破壊を！」
+00001411 - 「デモリション・アンビション・Ⅱ」
+00001412 - 「アークマスロットをプレイする」
+00001414 - 「子供の幸せ、自分の幸せ！」
+00001415 - 「ランズ・ヴァレーダ撃破」
+00001416 - 「凍土の新たな試練」
+00001417 - 「ガル・グリフォン撃破」
+00001418 - 「プレディカーダ撃破」
+00001419 - 「１５式戦車撃破」
+00001420 - 「ゼータ・グランゾ撃破」
+00001421 - 「リューダソーサラー撃破」
+00001422 - 「強力な侵食核！？」
+00001423 - 「スキルリングを強化する」
+00001424 - 「クォーツ・ドラゴン撃破」
+00001425 - 「巨大な玩具の破片の調達」
+00001426 - 「アザナミに話しかける」
+00001427 - 「ＲＩＮＡに話しかける」
+00001428 - 「ソフィアに話しかける」
+00001429 - 「プリンに話しかける」
+00001430 - 「モニカに話しかける」
+00001431 - 「ウィティアに話しかける」
+00001432 - 「パティに話しかける」
+00001433 - 「ティアに話しかける」
+00001434 - 「クレシダに話しかける」
+00001435 - 「カトリに話しかける」
+00001436 - 「ナノンに話しかける」
+00001437 - 「シロナに話しかける」
+00001439 - 「シエラに話しかける」
+00001440 - 「ロッティに話しかける」
+00001441 - 「マールーに話しかける」
+00001442 - 「ユクリータに話しかける」
+00001443 - 「リサに話しかける」
+00001444 - 「リリカに話しかける」
+00001445 - 「ナリスに話しかける」
+00001446 - 「リーベルに話しかける」
+00001447 - 「フーリエに話しかける」
+00001448 - ＊＊＊
+00001449 - 「ミミに話しかける」
+00001450 - 「シルバに話しかける」
+00001451 - 「サイクロネーダ・ユガ撃破」
+00001452 - 「ユーガディカーダ撃破」
+00001453 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001454 - 「新世武器を強化する」
+00001455 - 「デファンザウル撃破」
+00001456 - 「ドラゴ・デッドリオン撃破」
+00001457 - 「キャタドラン撃破」
+00001458 - 「バレンタインイベントの前に」
+00001459 - 「ユグダソーサラー撃破」
+00001460 - 「ゴロンゾラン撃破」
+00001461 - 「ラッピースロットをプレイする」
+00001462 - 「シュバリザン撃破」
+00001464 - 「ラスベガス・ロワイヤル」
+00001465 - 「任意のプレイヤーにグッジョブを送信する」
+00001466 - 「ウォルガーダ撃破」
+00001467 - 「他ならぬＲＩＮＡさんのために」
+00001468 - 「FUNスクラッチを引く」
+00001469 - 「リングを強化する」
+00001470 - 「紅き甲殻をまとう希少種」
+00001471 - 「ソルザ・ブラーダ撃破」
+00001472 - 「ガウォンダ・ユガ撃破」
+00001473 - 「ストーリークエスト7章「母なる願い」クリア」
+00001474 - 「ボクス・ドゥバルス撃破」
+00001475 - 「アン・ラッキー・ユー」
+00001476 - 「ジャンに話しかける」
+00001477 - 「イツキに話しかける」
+00001478 - 「ビアに話しかける」
+00001479 - 「アンリに話しかける」
+00001480 - 「ドゥドゥに話しかける」
+00001481 - 「†コア†に話しかける」
+00001482 - 「ヤーキスに話しかける」
+00001483 - 「アルトに話しかける」
+00001484 - 「ハンスに話しかける」
+00001485 - 「サガに話しかける」
+00001486 - 「アンテに話しかける」
+00001487 - 「クロトに話しかける」
+00001489 - 「レダに話しかける」
+00001490 - 「ルベルトに話しかける」
+00001491 - 「オーザに話しかける」
+00001492 - 「エメラインに話しかける」
+00001493 - 「キュレイオンに話しかける」
+00001494 - 「ムータンに話しかける」
+00001495 - 「ムサシに話しかける」
+00001496 - 「ピッカに話しかける」
+00001497 - 「ジョーゼフに話しかける」
+00001498 - 「カメオに話しかける」
+00001499 - 「ピエトロに話しかける」
+00001500 - 「キーファスに話しかける」
+00001501 - 「釣りをする」
+00001502 - 「デコル・マリューダ撃破」
+00001503 - 「ブラックニャックをプレイする」
+00001504 - 「浮遊大陸のブーストエネミー・Ⅰ」
+00001505 - 「襲い来る悪意」
+00001506 - 「クォーツ・ドラゴン撃破」
+00001507 - 「アンタへの頼みごと・Ⅲ」
+00001508 - 「デモリション・アンビション・Ⅴ」
+00001509 - 「ビクダ・ラビッタ撃破」
+00001510 - 「ゼッシュレイダ撃破」
+00001511 - 「緑色のコンテナを破壊する」
+00001512 - 「ニャウなる希少種」
+00001514 - 「ストーリークエスト8章「壊れた進化」クリア」
+00001515 - 「お返し、どうしよう？」
+00001516 - 「ゾ・シュバルザス撃破」
+00001517 - 「ソル・ディランダール撃破」
+00001518 - 「ダガッチャ撃破」
+00001519 - 「ウィンディラの翼角の調達」
+00001520 - 「ディーオ・ヒューナル撃破」
+00001521 - 「お返しに渡すものって？」
+00001522 - 「グリュゾラス・ドラゴ撃破」
+00001523 - 「ヴァルガーラ撃破」
+00001524 - 「ドラゴン・エクス撃破」
+00001525 - 「地より出ずる龍」
+00001526 - 「フリードリンクスタンドにアクセスする」
+00001527 - 「ラッピースロットでラッピーＰＳＥバーストを発生させる」
+00001528 - 「ACショップの商品リストを確認する」
+00001529 - 「アークマスロットをプレイする」
+00001530 - 「フロスティに話しかける」
+00001531 - 「チップに話しかける」
+00001532 - 「ナノンに話しかける」
+00001533 - 「釣りをする」
+00001534 - 「ストーリーボードイベントピース【042-E】「アイカの目的」を閲覧」
+00001535 - 「メセタンシューターでキングメセタンを撃破する」
+00001536 - 「採取をする」
+00001537 - 「ジグに話しかける」
+00001539 - 「リリーパ族の落書きにアクセスする」
+00001540 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001541 - 「ストーリークエスト3章「日常への帰還」クリア」
+00001542 - 「FUNスクラッチを引く」
+00001543 - 「メセタンシューターをプレイする」
+00001544 - 「アールチェに話しかける」
+00001545 - 「ラッピースロットをプレイする」
+00001546 - 「コインエクスチェンジャーでカジノコインを獲得する」
+00001547 - 「アイーダに話しかける」
+00001548 - 「シロナに話しかける」
+00001549 - 「新世武器を強化する」
+00001550 - 「ララフに話しかける」
+00001551 - 「デュラハンライダー撃破」
+00001552 - 「嵐と雷の神々」
+00001553 - 「任意のドリンクを飲む」
+00001554 - 「ゼータ・グランゾ撃破」
+00001555 - 「ガンカイザー撃破」
+00001556 - 「風雷を喚びし凶鳥」
+00001557 - 「ヤクトディンゲール撃破」
+00001558 - 「堅き鎧の侵略者」
+00001559 - 「アンジャドゥリリ撃破」
+00001560 - 「ダーク・ビブラス・ユガ撃破」
+00001561 - 「調査のための掃討作戦」
+00001562 - 「マグにアイテムを与える」
+00001564 - 「コフィーに話しかける」
+00001565 - 「大規模エネミー調査」
+00001566 - 「エスカ・ラグナス撃破」
+00001567 - 「カイズフォエーゴ撃破」
+00001568 - 「不自然なダーカー発生？」
+00001569 - 「ランカ・ヴァレース撃破」
+00001570 - 「デコル・マリューダ撃破」
+00001571 - 「参道に立ち塞がりし悪鬼」
+00001572 - 「クローム・ドラゴン撃破」
+00001573 - 「プリンに話しかける」
+00001574 - 「暴虐のリリーパ族？」
+00001575 - 「A.I.Sエクソーダ撃破」
+00001576 - 「新人アークス」
+00001577 - 「コーデカタログで「いいね！」を送信する」
+00001578 - 「ダガッチャ撃破」
+00001579 - 「ピエトロに話しかける」
+00001580 - 「メセタンシューターをプレイする」
+00001581 - 「コドッタ・イーデッタ撃破」
+00001582 - 「デコル・マリューダ撃破」
+00001583 - 「ランカ・ヴァレース撃破」
+00001584 - 「デ・マルモス撃破」
+00001585 - 「ストーリークエスト4章「地球の導き手」クリア」
+00001586 - 「プリンに話しかける」
+00001587 - 「ガロンゴ撃破」
+00001589 - 「ノエミに話しかける」
+00001590 - 「コーデカタログでみんなのコーデを見る」
+00001591 - 「グワナーダ撃破」
+00001592 - 「ブラックニャックをプレイする」
+00001593 - 「ヴィドルーダ撃破」
+00001594 - 「ロックベア撃破」
+00001595 - 「ダーク・ラグネ撃破」
+00001596 - 「マルモス撃破」
+00001597 - 「ディアボイグリシス撃破」
+00001598 - 「モデルへの憧れ」
+00001599 - 「パラス・ピコス撃破」
+00001600 - 「キングイエーデ撃破」
+00001601 - 「ブリュー・リンガーダ撃破」
+00001602 - 「ブラッディ・スカフォード・Ⅲ」
+00001603 - 「ガッチャス撃破」
+00001604 - 「森林のブーストエネミー・Ⅱ」
+00001605 - 「へっぽこぴーの小石拾い」
+00001606 - 「ベガス・イリュージア撃破」
+00001607 - 「デコル・マリューズ撃破」
+00001608 - 「グウォンダ撃破」
+00001609 - 「プロジオーグルス撃破」
+00001610 - 「１５式戦車撃破」
+00001611 - 「ストーリークエスト8章「世界終焉の具現」クリア」
+00001612 - 「プラチドーラス撃破」
+00001614 - 「アークマスロットをプレイする」
+00001615 - 「エンペ・ラッピー撃破」
+00001616 - 「森林の新たな試練」
+00001617 - 「ファングバンサーの皮の調達」
+00001618 - 「ヴィドルース撃破」
+00001619 - 「ベーアリブルス撃破」
+00001620 - 「エスカ・ラグナス撃破」
+00001621 - 「ラッピーなる希少種」
+00001622 - 「ガル・グリフォン撃破」
+00001623 - 「力戦奮闘の力試し・Ⅰ」
+00001624 - 「新世を成す幻創の造神」
+00001625 - 「新世強化の標となる者」
+00001626 - 「ファルス・アンゲル撃破」
+00001627 - ＊＊＊
+00001628 - 「デイ・アフター・デイ」
+00001629 - ＊＊＊
+00001630 - 「ファルス・ヒューナル撃破」
+00001631 - 「ロンゲスト・デイ・Ⅳ」
+00001632 - 「特別突破訓練：Episode1」
+00001633 - 「新世武器を強化する」
+00001634 - 「特別突破訓練：Episode2」
+00001635 - 「ロンゲスト・デイ・Ⅰ」
+00001636 - 「オルグブラン撃破」
+00001637 - 「デビルズトレーラー撃破」
+00001639 - 「レオマドゥラード撃破」
+00001640 - 「ロックベア撃破」
+00001641 - ＊＊＊
+00001642 - 「特別突破訓練：Episode3」
+00001643 - 「レベル制限解除試練・Ⅰ」
+00001644 - 「特別突破訓練：Episode4」
+00001645 - ＊＊＊
+00001646 - 「デウス・ヒューナス撃破」
+00001647 - 「ロンゲスト・デイ・Ⅱ」
+00001648 - ＊＊＊
+00001649 - 「ロンゲスト・デイ・Ⅲ」
+00001650 - 「ディーオ・ヒューナル撃破」
+00001651 - 「A.I.Sエクソーダ撃破」
+00001652 - 「フォードラン撃破」
+00001653 - 「ストーリークエスト8章「世界終焉の具現」クリア」
+00001654 - 「キャタドランサ撃破」
+00001655 - 「バルバリリーパ撃破」
+00001656 - 「宙を切り裂く翼」
+00001657 - 「風雷を喚びし凶鳥」
+00001658 - 「アラトロン・フェムト撃破」
+00001659 - 「ゴルドラーダ撃破」
+00001660 - 「メセタンシューターでキングメセタンを撃破する」
+00001661 - 「ヘブンズ・フォール」
+00001662 - 「デコル・マリューズ撃破」
+00001664 - 「エスカ・ラグナス撃破」
+00001665 - 「リングを強化する」
+00001666 - 「ドラゴン・エクスの部位破壊を！」
+00001667 - 「コドッタ・イーデッタ撃破」
+00001668 - 「デウス・アンジェス撃破」
+00001669 - 「飛来せし鉄の巨影」
+00001670 - 「天を覆いし青き王」
+00001671 - 「ダーク・ビブラス撃破」
+00001672 - 「ペンドラン撃破」
+00001673 - 「パシフィック・コンカラー」
+00001674 - 「ディランダール撃破」
+00001675 - 「マガツ・サイ撃破」
+00001676 - 「ストラトスに話しかける」
+00001677 - 「セグレズン撃破」
+00001678 - 「ビーチウォーズ２０１７！」
+00001679 - 「タルボルプス撃破」
+00001680 - 「マグライセンス授与申請試練」
+00001681 - 「ドリュアーダ撃破」
+00001682 - 「シロナに話しかける」
+00001683 - 「イベントに待ったをかけたのは？」
+00001684 - 「アスタルテに話しかける」
+00001685 - 「探索許可申請試練・Ⅰ」
+00001686 - 「エネミーあふれるイベント？」
+00001687 - 「任意のドリンクを飲む」
+00001689 - 「ラケシスに話しかける」
+00001690 - 「シュトゥラーダ撃破」
+00001691 - 「メセタンシューターをプレイする」
+00001692 - 「釣りをする」
+00001693 - 「ヴァラディナン撃破」
+00001694 - 「アルマに話しかける」
+00001695 - 「イベントの準備をしたいのに！」
+00001696 - 「サマーイベント計画、始動！」
+00001697 - 「難易度制限解放試練・Ⅰ」
+00001698 - 「任意のプレイヤーにグッジョブを送信する」
+00001699 - 「イベント予定地に近寄る不穏な影」
+00001700 - 「ソフィアに話しかける」
+00001701 - 「バル・ブリュンダール撃破」
+00001702 - 「未知なる敵性存在」
+00001703 - 「魔神城・ランザーバレス撃破」
+00001704 - 「ミラージュ・アグレッサー・Ⅳ」
+00001705 - 「リューダソーサラー撃破」
+00001706 - 「エース兵士」
+00001707 - 「バノリディアン撃破」
+00001708 - 「ボンバゴーレム撃破」
+00001709 - 「トレイン・ギドラン撃破」
+00001710 - 「ミラージュ・アグレッサー・Ⅴ」
+00001711 - 「ミラージュ・アグレッサー・Ⅲ」
+00001712 - 「歪んだ世界を正す者」
+00001714 - 「オメガウルフ撃破」
+00001715 - 「任意のバスタークエスト」
+00001716 - 「バル・シュトゥラーダ撃破」
+00001717 - 「ミラージュ・アグレッサー・Ⅱ」
+00001718 - 「シルト・グリミアン撃破」
+00001719 - 「ロックゴーレム撃破」
+00001720 - 「タグ・アクルプス撃破」
+00001721 - 「ソルダ・カピタ撃破」
+00001722 - 「ガッチャス撃破」
+00001723 - 「ミノタオルグス撃破」
+00001724 - 「ガル・グリフォン撃破」
+00001725 - 「ビオル・メデューナ撃破」
+00001726 - 「気高キ武者ノ試練」
+00001727 - 「オロオガル撃破」
+00001728 - 「負ナル侵食ノ試練」
+00001729 - 「パラタ・ピコーダ撃破」
+00001730 - 「荒ブル爪牙ノ試練」
+00001731 - 「ディカーダ撃破」
+00001732 - 「パラス・ピコス撃破」
+00001733 - 「ヤミガラスに話しかける」
+00001734 - 「パジゴワン撃破」
+00001735 - 「コドニアガリ撃破」
+00001736 - 「ACショップの商品リストを確認する」
+00001737 - 「禍魂集いし戦道2017」
+00001739 - 「闇鴉ノ最終試練」
+00001740 - 「任意のドリンクを飲む」
+00001741 - 「パジギッリ撃破」
+00001742 - 「スナイパーネオン撃破」
+00001743 - 「プリンに話しかける」
+00001744 - 「イザオガル撃破」
+00001745 - 「ボンタ・バクタ撃破」
+00001746 - 「天裂ク晶翼ノ試練」
+00001747 - 「イタギザクリ撃破」
+00001748 - 「ブラックニャックをプレイする」
+00001749 - 「アールチェに話しかける」
+00001750 - 「百戦錬磨ノ試練」
+00001751 - 「オークボンバ撃破」
+00001752 - 「プレディカーダ・ネロ撃破」
+00001753 - 「デモリション・アンビション・Ⅲ」
+00001754 - 「ゴルドラーダ撃破」
+00001755 - 「ガル・グリフォン撃破」
+00001756 - 「金色の鎧をまといし番兵」
+00001757 - 「プレディカーダ撃破」
+00001758 - 「ボンバゴーレム撃破」
+00001759 - 「ニャウなる希少種」
+00001760 - 「採取をする」
+00001761 - 「ガンナガム撃破」
+00001762 - 「ヴァレス・ランカース撃破」
+00001764 - 「プラチドーラス撃破」
+00001765 - 「嵐と雷の神々」
+00001766 - 「任意のバスタークエストクリア」
+00001767 - 「グアル・ジグモルデ撃破」
+00001768 - 「ミノタオルグス撃破」
+00001769 - 「大角と風袋の調達」
+00001770 - 「魔神城・ランザーバレス撃破」
+00001771 - 「魂狩の大鎌の調達」
+00001772 - 「ギムナガムリ撃破」
+00001773 - 「ガウ・オガキバル撃破」
+00001774 - 「オルナガムリ撃破」
+00001775 - 「バン・オガキバル撃破」
+00001776 - 「ディンゲール撃破」
+00001777 - 「難敵と連破演習」
+00001778 - 「コーデカタログで「いいね！」を送信する」
+00001779 - 「因縁の遺跡」
+00001780 - 「カストガーディナン撃破」
+00001781 - 「サイクロネーダ撃破」
+00001782 - 「巨なる力を託されし者　獲得」
+00001783 - 「お菓子なマトイ」
+00001784 - 「トリックオアトリート２０１７！」
+00001785 - 「カルターゴ撃破」
+00001786 - 「ボンタ・ベアタス撃破」
+00001787 - 「マトイ（ハロウィン）に話しかける」
+00001789 - 「プリンに話しかける」
+00001790 - 「ガッチャス撃破」
+00001791 - 「不思議のナベリウス」
+00001792 - 「ヴィドルーダ撃破」
+00001793 - 「緑色のコンテナを破壊する」
+00001794 - 「スパルダンＡ撃破」
+00001795 - 「懐かしのハルコタン」
+00001796 - 「スナイパーネオン撃破」
+00001797 - 「ガウォンダ撃破」
+00001798 - 「FUNスクラッチを引く」
+00001799 - 「パラス・ピコス撃破」
+00001800 - 「ダガン撃破」
+00001801 - 「ガンカイザー撃破」
+00001802 - 「ディーオ・ヒューナル撃破」
+00001803 - 「デモリション・アンビション・Ⅲ」
+00001804 - 「Ｔ・レックス撃破」
+00001805 - 「エンペ・ラッピー撃破」
+00001806 - 「ラピドギルナス撃破」
+00001807 - 「エル・アーダ撃破」
+00001808 - 「デビルズトレーラー撃破」
+00001809 - 「変異せし長砲身の防人」
+00001810 - 「ブレードディンゲール撃破」
+00001811 - 「ファルス・ヒューナル撃破」
+00001812 - 「採取をする」
+00001814 - 「釣りをする」
+00001815 - 「ヤクトディンゲール撃破」
+00001816 - 「ガウォンダ・ユガ撃破」
+00001817 - 「A.I.Sエクソーダ撃破」
+00001818 - 「任意のバスタークエスト」
+00001819 - 「エスカ・ラグナス撃破」
+00001820 - 「ファルケ・レオーネ撃破」
+00001821 - 「キュクロナーダ・ユガ撃破」
+00001822 - 「立ちはだかる漆黒」
+00001823 - 「メセタンシューターをプレイする」
+00001824 - 「デコル・マリューズ撃破」
+00001825 - 「ベガス・イリュージア撃破」
+00001826 - 「ティア(クリスマス)に話しかける」
+00001827 - 「イエーデ撃破」
+00001828 - 「標的はサンタクロース！」
+00001829 - 「ACショップの商品リストを確認する」
+00001830 - 「サンタと天使が笑う日！」
+00001831 - 「不安なメディカルセンター」
+00001832 - 「氷上のメリークリスマス2017」
+00001833 - 「ガルフル撃破」
+00001834 - 「足でたくさん稼いじゃおう！」
+00001835 - 「パティ(クリスマス)に話しかける」
+00001836 - 「ニャウ撃破」
+00001837 - 「武器を強化する」
+00001839 - 「ガッチャス撃破」
+00001840 - 「あたしたちの事はあたしたちに聞け！」
+00001841 - 「実地調査で証拠を掴め！」
+00001842 - 「マルモス撃破」
+00001843 - 「アークマスロットをプレイする」
+00001844 - 「パラス・ピコス撃破」
+00001845 - 「キングイエーデ撃破」
+00001846 - 「ファンガルフル撃破」
+00001847 - 「空飛ぶトナカイの秘密に迫れ！」
+00001848 - 「ヴィドルース撃破」
+00001849 - 「FUNスクラッチを引く」
+00001850 - 「エス・オプシス撃破」
+00001851 - 「ファルス・ダラン撃破」
+00001852 - 「ディアボイグリシス撃破」
+00001853 - 「ミラージュ・アグレッサー・Ⅲ」
+00001854 - 「エス・サントルス撃破」
+00001855 - 「プロジオーグルス撃破」
+00001856 - 「ランカ・ヴァレース撃破」
+00001857 - 「エス・アンジェス撃破」
+00001858 - 「リングを強化する」
+00001859 - 「ディーオ・ヒューナル撃破」
+00001860 - 「ラプラスの悪魔撃破」
+00001861 - 「ミラージュ・アグレッサー・Ⅴ」
+00001862 - 「任意のバスタークエスト」
+00001864 - 「カジノロビーのリリーパ族の落書きにアクセス」
+00001865 - 「デ・マルモスの肉の調達」
+00001866 - 「グリュゾラス・ドラゴ撃破」
+00001867 - 「デウス・ヒューナス撃破」
+00001868 - 「任意の武器を属性強化する」
+00001869 - 「ボンタ・ベアタス撃破」
+00001870 - 「アラトロン・フェムト撃破」
+00001871 - 「ファルス・アンゲル撃破」
+00001872 - 「ドラゴ・デッドリオン撃破」
+00001873 - 「ミラージュ・アグレッサー・Ⅳ」
+00001874 - 「エンペ・ラッピー撃破」
+00001875 - 「ファルス・ヒューナル撃破」
+00001876 - 「宙を舞う死神」
+00001877 - 「ラッピー撃破」
+00001878 - 「オークゥ（バレンタイン）に話しかける」
+00001879 - 「ゴルドラーダ撃破」
+00001880 - 「カルターゴ撃破」
+00001881 - 「デモリション・アンビション・Ⅱ」
+00001882 - 「アークスショコラナビ・Ⅱ」
+00001883 - 「ユーガディカーダ撃破」
+00001884 - 「イベント成功の鍵は……？」
+00001885 - 「緑色のコンテナを破壊する」
+00001886 - 「FUNスクラッチを引く」
+00001887 - 「任意のドリンクを飲む」
+00001889 - 「アイテムを1つ強化する」
+00001890 - 「ACショップにアクセスする」
+00001891 - 「アークス的観光旅行？」
+00001892 - 「ユグルドラーダ撃破」
+00001893 - 「クローム・ドラゴン撃破」
+00001894 - 「任意のプレイヤーにグッジョブを送信する」
+00001895 - 「アークスショコラナビ・Ⅰ」
+00001896 - 「ブラックニャックをプレイする」
+00001897 - 「偽物の悪魔退治！」
+00001898 - 「フル（バレンタイン）に話しかける」
+00001899 - 「アークス・デュ・ショコラ？」
+00001900 - 「キャタドランサ撃破」
+00001901 - 「巨龍を呼ぶ龍族」
+00001902 - 「ヴァルガーラ撃破」
+00001903 - 「エラディケート・エイム・Ⅰ」
+00001904 - 「スカルソルジャー撃破」
+00001905 - 「エラディケート・エイム・Ⅳ」
+00001906 - 「コドッタ・イーデッタ撃破」
+00001907 - 「ラッピースロットをプレイする」
+00001908 - 「疾駆する四本腕の突撃龍」
+00001909 - 「混沌の旗幟となりし彫像」
+00001910 - 「ヴェンタザウル撃破」
+00001911 - 「リングを強化する」
+00001912 - 「ブラック・スローター・Ⅱ」
+00001914 - 「オロタ・ビケッタ撃破」
+00001915 - 「未知なる敵性存在」
+00001916 - 「ラプラスの悪魔撃破」
+00001917 - 「ゾ・シュバルザス撃破」
+00001918 - 「カジノロビーのリリーパ族の落書きにアクセス」
+00001919 - 「ファルス・アンゲル撃破」
+00001920 - 「リンゼ・ドラーダ撃破」
+00001921 - 「デファンザウル撃破」
+00001922 - 「エンペ・ラッピー撃破」
+00001923 - 「任意のバスタークエスト」
+00001924 - 「万有を撃砕せし巨腕の紫龍」
+00001925 - 「ゾ・シュバリザン撃破」
+00001926 - 「飛び入り助っ人からの助っ人要請」
+00001927 - 「エル・アーダ撃破」
+00001928 - 「採取をする」
+00001929 - 「プラチドーラス撃破」
+00001930 - 「カジノエリアのフリードリンクスタンドにアクセスする」
+00001931 - 「パラス・ピコス撃破」
+00001932 - 「さらに厄介なエネミ―の討伐」
+00001933 - 「ラッピー撃破」
+00001934 - 「オレの方が上だと証明してやる！」
+00001935 - 「デコル・マリューズ撃破」
+00001936 - 「コインエクスチェンジャーでカジノコインを獲得する」
+00001937 - 「ブラックニャックをプレイする」
+00001939 - 「緑色のコンテナを破壊する」
+00001940 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00001941 - 「カルターゴ撃破」
+00001942 - 「ラッピースロットをプレイする」
+00001943 - 「龍族の親玉を抑えちまおう」
+00001944 - 「カジノエリアの風船にアクセスする」
+00001945 - 「ゾ・シュバリザン撃破」
+00001946 - 「エンガ（ホワイトデー）に話しかける」
+00001947 - 「シュバリザン撃破」
+00001948 - 「続・アークス的観光旅行？」
+00001949 - 「ランカ・ヴァレース撃破」
+00001950 - 「ホワイトデーは大わらわ2018」
+00001951 - 「キュクロナーダ・ユガ撃破」
+00001952 - 「ヴォル・ドラゴン撃破」
+00001953 - 「釣りをする」
+00001954 - 「クォーツ・ドラゴン撃破」
+00001955 - 「サイクロネーダ・ユガ撃破」
+00001956 - 「マクスウェルの悪魔撃破」
+00001957 - 「ジ・シュバリザン撃破」
+00001958 - 「リングを強化する」
+00001959 - 「ゾ・シュバルザス撃破」
+00001960 - 「ラプラスの悪魔撃破」
+00001961 - 「地より出ずる龍」
+00001962 - 「任意のデイリーオーダー」
+00001964 - 「カジノエリアのリリーパ族の落書きにアクセスする」
+00001965 - 「デファンザウル撃破」
+00001966 - 「グリュゾラス・ドラゴ撃破」
+00001967 - 「ミラージュ・アグレッサー・Ⅴ」
+00001968 - 「任意の武器を属性強化する」
+00001969 - 「ボンタ・ベアタス撃破」
+00001970 - 「疾駆する四本腕の突撃龍」
+00001971 - 「ユグダソーサラー撃破」
+00001972 - 「ウォルガーダ撃破」
+00001973 - 「魁偉に変異せし龍族」
+00001974 - 「エンペ・ラッピー撃破」
+00001975 - 「ヴェンタザウル撃破」
+00001976 - 「森林を覆う数多の敵意」
+00001977 - 「アスタルテに話しかける」
+00001978 - 「ファイナに話しかける」
+00001979 - 「レオンティーナに話しかける」
+00001980 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00001981 - 「釣りをする」
+00001982 - 「アネットに話しかける」
+00001983 - 「任意のドリンクを飲む」
+00001984 - 「ジェネに話しかける」
+00001985 - 「採取をする」
+00001986 - 「ハンスに話しかける」
+00001987 - 「FUNスクラッチを引く」
+00001989 - 「ACショップの商品リストを確認する」
+00001990 - 「ノエミに話しかける」
+00001991 - 「コフィーに話しかける」
+00001992 - 「ブルーノに話しかける」
+00001993 - 「ジグに話しかける」
+00001994 - 「アルトに話しかける」
+00001995 - 「ラケシスに話しかける」
+00001996 - 「任意のおすすめクエストをクリアしスペシャルギフトを入手する」
+00001997 - 「ドゥドゥに話しかける」
+00001998 - 「ソフィアに話しかける」
+00001999 - 「ラッピースロットをプレイする」
+00002000 - 「原生種調査を手伝ってください！」
+00002001 - 「ミラージュ・アグレッサー・Ⅳ」
+00002002 - 「ラッピー撃破」
+00002003 - 「ワイルドイースター2018」
+00002004 - 「エス・アンジェス撃破」
+00002005 - 「ダーカーへの影響調査」
+00002006 - 「暴進せし鋼鉄の健脚」
+00002007 - 「エス・サントルス撃破」
+00002008 - 「広域エネミー調査任務です！」
+00002009 - 「ラプラスの悪魔撃破」
+00002010 - 「混沌の旗幟となりし彫像」
+00002011 - コーデカタログ：「いいね！」を送信する」
+00002012 - 「カジノエリアのリリーパ族の落書きにアクセスする」
+00002014 - 「ブラックニャックをプレイする」
+00002015 - 「メセタンシューターをプレイする」
+00002016 - 「変異せし長砲身の防人」
+00002017 - 「アラトロン・フェムト撃破」
+00002018 - 「オルグブランを探して」
+00002019 - 「鉄の道を外れし暴威」
+00002020 - 「デウス・アンジェス撃破」
+00002021 - 「リングを強化する」
+00002022 - 「ミラージュ・アグレッサー・Ⅱ」
+00002023 - 「妖車に煌く鬼火」
+00002024 - 「ラスベガスエリアの新たな試練」
+00002025 - 「ミラージュ・アグレッサー・Ⅴ」
+00002026 - 「ザウーダン撃破」
+00002027 - 「サイクロネーダ撃破」
+00002028 - 「クラバーダ撃破」
+00002029 - 「レオンティーナに話しかける」
+00002030 - 「カルターゴ撃破」
+00002031 - 「キュクロナーダ撃破」
+00002032 - 「アークマスロットをプレイする」
+00002033 - 「ダガッチャ撃破」
+00002034 - 「ウーダン撃破」
+00002035 - 「任意のドリンクを飲む」
+00002036 - 「雨風とともに2018」
+00002037 - 「グウォンダ撃破」
+00002039 - 「コーデカタログでみんなのコーデを見る」
+00002040 - 「ロックベア撃破」
+00002041 - 「オル・ミクダ撃破」
+00002042 - 「ラケシスに話しかける」
+00002043 - 「ファングバンサー撃破」
+00002044 - 「ウォルガーダ撃破」
+00002045 - 「フォンガルフ撃破」
+00002046 - 「ファングバンシー撃破」
+00002047 - 「デ・マルモス撃破」
+00002048 - 「嵐の贈り物」
+00002049 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002050 - 「森林を覆う数多の敵意」
+00002051 - 「エンペ・ラッピー撃破」
+00002052 - 「ガロンゴ撃破」
+00002053 - 「オメガ・アンゲル撃破」
+00002054 - 「カジノエリアのリリーパ族の落書きにアクセス」
+00002055 - 「オメガグリフォン撃破」
+00002056 - 「壊世に踊りし猛威」
+00002057 - 「コーデカタログで「いいね！」を送信する」
+00002058 - 「皇国魔人法兵撃破」
+00002059 - 「最後のさよならの突破者」
+00002060 - 「ファルス・ヒューナル撃破」
+00002061 - 「ヴェルムリッター撃破」
+00002062 - 「リングを強化する」
+00002064 - 「プレディカーダ撃破」
+00002065 - 「任意の武器の属性強化する」
+00002066 - 「強力な侵食核！？」
+00002067 - 「無限連戦：追憶の彼方へ」
+00002068 - 「プロジオーグルス撃破」
+00002069 - 「皇国突撃魔人兵撃破」
+00002070 - 「ブリアーダ撃破」
+00002071 - 「フレイムディアモス撃破」
+00002072 - 「ダークファルス【巨躯】復活の突破者」
+00002073 - 「メセタンシューターでキングメセタンを撃破する」
+00002074 - 「スカルアーチャー撃破」
+00002075 - 「猛炎を放つ極彩色の怪鳥」
+00002076 - 「サイクロネーダ撃破」
+00002077 - 「ノーディランサ撃破」
+00002078 - 「ACショップの商品リストを確認する」
+00002079 - 「ミントロックベア撃破」
+00002080 - 「グランソーサラー撃破」
+00002081 - 「ミントポーラベア撃破」
+00002082 - 「ディガーラ撃破」
+00002083 - 「ラケシスに話しかける」
+00002084 - 「イザオガル撃破」
+00002085 - 「ガンナガム撃破」
+00002086 - 「採取をする」
+00002087 - 「オメガゴブリン撃破」
+00002089 - 「オークボンバ撃破」
+00002090 - 「アークマスロットをプレイする」
+00002091 - 「ヤクトディンゲール撃破」
+00002092 - 「シグノガン撃破」
+00002093 - 「レオンティーナに話しかける」
+00002094 - 「ラットファムト撃破」
+00002095 - 「フレイムディアモス撃破」
+00002096 - 「スネークヘリ撃破」
+00002097 - 「レスタゴーレム撃破」
+00002098 - 「コーデカタログ：カタログを検索する」
+00002099 - 「ボンバゴーレム撃破」
+00002100 - 「ミノタオルグス撃破」
+00002101 - 「グリュゾラス・ドラゴ撃破」
+00002102 - 「ジ・シュバリザン撃破」
+00002103 - 「新たな技術に興味はある？」
+00002104 - 「ガンカイザー撃破」
+00002105 - 「ファルケ・レオーネ撃破」
+00002106 - 「ヴェンタザウル撃破」
+00002107 - 「ソル・サディニアン撃破」
+00002108 - 「オメガグリフォン撃破」
+00002109 - 「ガウ・オガキバル撃破」
+00002110 - 「カイザーバルガー撃破」
+00002111 - 「リングを強化する」
+00002112 - 「任意の武器の属性強化をする」
+00002114 - 「コーデカタログ：「いいね！」を送信する」
+00002115 - 「カジノエリアのリリーパ族の落書きにアクセスする」
+00002116 - 「ガノンバルガー撃破」
+00002117 - 「ヴェルムリッター撃破」
+00002118 - 「サーカスキャリッジ撃破」
+00002119 - 「１５式戦車撃破」
+00002120 - 「ベガス・イリュージア撃破」
+00002121 - 「オメガ・ヒューナル撃破」
+00002122 - 「デュラハンライダー撃破」
+00002123 - 「クライマックスにうってつけの秘訣」
+00002124 - 「デビルズトレーラー撃破」
+00002125 - 「デウス・ヒューナス撃破」
+00002126 - 「ステップ・イントゥ・コア」
+00002127 - 「ドリュアーダ撃破」
+00002128 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002129 - 「セヴァニアン撃破」
+00002130 - 「ラケシスに話しかける」
+00002131 - 「オ・ヴァラディナン撃破」
+00002132 - 「採取をする」
+00002133 - 「ペーパーボーイ、真夏の人力」
+00002134 - 「この夏、一番やかましい海」
+00002135 - 「ボンタ・ベアタス撃破」
+00002136 - 「リューダソーサラー撃破」
+00002137 - 「シルト・グリミアン撃破」
+00002139 - 「バノリディアン撃破」
+00002140 - 「ランカ・ヴァレース撃破」
+00002141 - 「ブラナディアン撃破」
+00002142 - 「ヒューイ（サマー)に話しかける」
+00002143 - 「FUNスクラッチを引く」
+00002144 - 「釣りをする」
+00002145 - 「ランチャーネオン撃破」
+00002146 - 「レオンティーナに話しかける」
+00002147 - 「タグ・アクルプス撃破」
+00002148 - 「コーデカタログ：「いいね！」を送信する」
+00002149 - 「ヴィド・ギロス撃破」
+00002150 - 「任意のドリンクを飲む」
+00002151 - 「アラトロン・フェムト撃破」
+00002152 - 「強鋏の海獣」
+00002153 - 「ビーチウォーズ2018！」
+00002154 - 「混沌の旗幟となりし彫像」
+00002155 - 「トレイン・ギドラン撃破」
+00002156 - 「１５式戦車撃破」
+00002157 - 「プラチドーラス撃破」
+00002158 - 「フレイムディアモス撃破」
+00002159 - 「スネークヘリ撃破」
+00002160 - 「デビルズトレーラー撃破」
+00002161 - 「地底を染めし女王の悪夢」
+00002162 - 「ブラックニャックをプレイする」
+00002164 - 「リングを強化する」
+00002165 - 「メセタンシューターでキングメセタンを撃破する」
+00002166 - 「レオマドゥラード撃破」
+00002167 - 「オルグブラン撃破」
+00002168 - 「ヴェルムリッター撃破」
+00002169 - 「デコル・マリューダ撃破」
+00002170 - 「ネプト・キャサドーラ撃破」
+00002171 - 「ガル・グリフォン撃破」
+00002172 - 「ミラージュ・アグレッサー・Ⅳ」
+00002173 - 「ヒューイとビーチウォーズ参加」
+00002174 - 「イレイザー・レポート・Ⅴ」
+00002175 - 「エスカ・ラグナス撃破」
+00002176 - 「イザオガル撃破」
+00002177 - 「ビクダ・ラビッタ撃破」
+00002178 - 「決闘と正義の序曲」
+00002179 - 「マーダ・トカッタ撃破」
+00002180 - 「ガウ・オガキバル撃破」
+00002181 - 「オロオガル撃破」
+00002182 - 「ピッタ・ワッダ撃破」
+00002183 - 「採取をする」
+00002184 - 「パジゴワン撃破」
+00002185 - 「アヌシザグリ撃破」
+00002186 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002187 - 「レオンティーナに話しかける」
+00002189 - 「ラケシスに話しかける」
+00002190 - 「ラッピースロットをプレイする」
+00002191 - 「パジギッリ撃破」
+00002192 - 「コドニアガリ撃破」
+00002193 - 「釣りをする」
+00002194 - 「イタギザクリ撃破」
+00002195 - 「アドオガル撃破」
+00002196 - 「ガンナガム撃破」
+00002197 - 「ボンタ・バクタ撃破」
+00002198 - 「戦うところ、見せて」
+00002199 - 「オロタ・ビケッタ撃破」
+00002200 - 「レランガム撃破」
+00002201 - 「戦いの先に、求めるもの」
+00002202 - 「コドッタ・イーデッタ撃破」
+00002203 - 「ダーク・ビブラス撃破」
+00002204 - 「ウォルガーダ撃破」
+00002205 - 「コーデカタログ：「いいね！」を送信する」
+00002206 - 「フォイソーサラー撃破」
+00002207 - 「禍魂集いし戦道2018」
+00002208 - 「ミノタオルグス撃破」
+00002209 - 「カジノエリアのリリーパ族の落書きにアクセスする」
+00002210 - 「ロックゴーレム撃破」
+00002211 - 「ギグル・グンネガム撃破」
+00002212 - 「ブリュー・リンガーダ撃破」
+00002214 - 「ボル・オガキバル撃破」
+00002215 - 「グアル・ジグモルデ撃破」
+00002216 - 「ボンバゴーレム撃破」
+00002217 - 「任意の武器の属性強化をする」
+00002218 - 「オークキャバリエ撃破」
+00002219 - 「壊世調査：ナベリウス」
+00002220 - 「メギドソーサラー撃破」
+00002221 - 「メセタンシューターでキングメセタンを撃破する」
+00002222 - 「アンジャドゥリリ撃破」
+00002223 - 「ガル・グリフォン撃破」
+00002224 - 「ダーク・ラグネ撃破」
+00002225 - 「ゼッシュレイダ特殊討伐補助」
+00002226 - 「パーティメイカーを設置する」
+00002227 - 「ディンゲール撃破」
+00002228 - 「ハロウィンは満たされないまま？」
+00002229 - 「A.I.Sエクソーダ撃破」
+00002230 - 「不都合なハロウィン？」
+00002231 - 「ヴァーダーソーマ撃破」
+00002232 - 「ランズ・ヴァレーダ撃破」
+00002233 - 「マグにアイテムを与える」
+00002234 - 「エンペ・ラッピー撃破」
+00002235 - 「クラバーダ撃破」
+00002236 - 「FUNスクラッチを引く」
+00002237 - 「バトラガン撃破」
+00002239 - 「ギルナッチ撃破」
+00002240 - 「レオンティーナに話しかける」
+00002241 - 「ヤクトディンゲール撃破」
+00002242 - 「ダーク・ラグネ撃破」
+00002243 - 「ブラックニャックをプレイする」
+00002244 - 「キュクロナーダ撃破」
+00002245 - 「ダーク・ビブラス撃破」
+00002246 - 「ハロウィンは誰のもの？」
+00002247 - 「ゼータ・グランゾ撃破」
+00002248 - 「トリック・オア・ディフィート？」
+00002249 - 「ソルザ・ブラーダ撃破」
+00002250 - 「はじまりのハロウィン！」
+00002251 - 「特異なる変形機甲」
+00002252 - 「オロタ・ビケッタ撃破」
+00002253 - 「エラディケート・エイム・Ⅰ」
+00002254 - 「ヴェルムリッター撃破」
+00002255 - 「砂塵を巻く鋼の狩人」
+00002256 - 「オメガコカトリス撃破」
+00002257 - 「ファルス・ヒューナル撃破」
+00002258 - 「ボンバヴァレーダ撃破」
+00002259 - 「ファルス・アンゲル撃破」
+00002260 - 「ラピドギルナス撃破」
+00002261 - 「力戦奮闘の力試し・Ⅰ」
+00002262 - 「頑強に変異せし機甲種」
+00002264 - 「リングを強化する」
+00002265 - 「未知なる敵性存在」
+00002266 - 「ユグルドラーダ撃破」
+00002267 - 「オメガ・アプレジナ撃破」
+00002268 - 「ガンカイザー撃破」
+00002269 - 「オメガ・ダランブル撃破」
+00002270 - 「ブレードディンゲール撃破」
+00002271 - 「ヴァーダーソーマの部位破壊を！」
+00002272 - 「コドッタ・イーデッタ撃破」
+00002273 - 「採掘場跡の新たな試練」
+00002274 - 「オメガグリフォン撃破」
+00002275 - 「幻惑の森探索」
+00002276 - 「ラケシスに話しかける」
+00002277 - 「オルグブラン撃破」
+00002278 - ＊＊＊
+00002279 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00002280 - 「森林探索」
+00002281 - 「任意のドリンクを飲む」
+00002282 - 「レベル制限解除試練・Ⅰ」
+00002283 - 「ザウーダン撃破」
+00002284 - 「武器携帯数拡張申請試練・Ⅰ」
+00002285 - 「キャタドラン撃破」
+00002286 - ＊＊＊
+00002287 - 「フォンガルフ撃破」
+00002289 - 「マグライセンス授与申請試練」
+00002290 - ＊＊＊
+00002291 - 「難易度制限解放試練・Ⅰ」
+00002292 - 「サブクラス許可申請試練」
+00002293 - 「レオンティーナに話しかける」
+00002294 - 「練習クエスト履修証明」
+00002295 - 「ソフィアに話しかける」
+00002296 - 「火山洞窟探索」
+00002297 - 「不安なメディカルセンター」
+00002298 - ＊＊＊
+00002299 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002300 - 「海岸探索」
+00002301 - 「キャタドラン撃破」
+00002302 - ＊＊＊
+00002303 - 「ガロンゴ撃破」
+00002304 - 「レベル制限解除試練・Ⅱ」
+00002305 - 「ロックベア撃破」
+00002306 - 「ラッピー撃破」
+00002307 - 「任意のアドバンスクエスト」
+00002308 - 「森林を覆う数多の敵意」
+00002309 - 「ブリアーダ撃破」
+00002310 - 「ナヴ・ラッピー撃破」
+00002311 - 「難易度制限解放試練・Ⅱ」
+00002312 - 「火山洞窟に満ちる数多の敵意」
+00002314 - 「徘徊する海王種」
+00002315 - 「メセタンシューターでキングメセタンを撃破する」
+00002316 - 「ノーディラン撃破」
+00002317 - 「ディッグ撃破」
+00002318 - 「一刻千金の力試し」
+00002319 - 「リューダソーサラー撃破」
+00002320 - 「ブルメガーラ撃破」
+00002321 - 「ヴォル・ドラゴン撃破」
+00002322 - 「フォードラン撃破」
+00002323 - 「リングを作ってみましょー」
+00002324 - 「セグレズン撃破」
+00002325 - 「オルグブラン撃破」
+00002326 - 「キングイエーデ撃破」
+00002327 - 「イエーデ撃破」
+00002328 - 「ヒツギたちとのクリスマス！」
+00002329 - 「ダガッチャ撃破」
+00002330 - 「キュクロナーダ撃破」
+00002331 - 「ガルフル撃破」
+00002332 - 「アル（クリスマス）に話しかける」
+00002333 - 「スイーツ☆クリスマス！」
+00002334 - 「ヒツギ（クリスマス）に話しかける」
+00002335 - 「ダーガッシュ撃破」
+00002336 - 「ラケシスに話しかける」
+00002337 - 「メセタンシューターをプレイする」
+00002339 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002340 - 「レオンティーナに話しかける」
+00002341 - 「オル・ミクダ撃破」
+00002342 - 「ソフィアに話しかける」
+00002343 - 「アルの仲なおり大作戦！」
+00002344 - 「コオリ（クリスマス）に話しかける」
+00002345 - 「ファンガルフル撃破」
+00002346 - 「サイクロネーダ撃破」
+00002347 - 「ガウォンダ撃破」
+00002348 - 「聖夜の平和を守るため！」
+00002349 - 「グウォンダ撃破」
+00002350 - 「マルモス撃破」
+00002351 - 「デウス・アンジェス撃破」
+00002352 - 「アンジャドゥリリ撃破」
+00002353 - 「メセタンシューターでキングメセタンを撃破する」
+00002354 - 「トランマイザー撃破」
+00002355 - 「ゼータ・グランゾ撃破」
+00002356 - 「オルグブラン撃破」
+00002357 - 「スノウバンサー撃破」
+00002358 - 「コーデカタログ：「いいね！」を送信する」
+00002359 - 「スノウバンシー撃破」
+00002360 - 「デ・マルモス撃破」
+00002361 - 「氷上のメリークリスマス2018」
+00002362 - 「カジノエリアのリリーパ族の落書きにアクセスする」
+00002364 - 「FUNスクラッチを引く」
+00002365 - 「嵐の贈り物」
+00002366 - 「グアル・ジグモルデ撃破」
+00002367 - 「ロックベア撃破」
+00002368 - 「ブラックニャックをプレイする」
+00002369 - 「キャタドランサ撃破」
+00002370 - 「コドッタ・イーデッタ撃破」
+00002371 - 「アラトロン・フェムト撃破」
+00002372 - 「ギグル・グンネガム撃破」
+00002373 - 「任意の武器の属性強化をする」
+00002374 - 「ドラゴ・デッドリオン撃破」
+00002375 - 「グリュゾラス・ドラゴ撃破」
+00002376 - 「バレンタインを守るため！」
+00002377 - 「オロタ・ビケッタ撃破」
+00002378 - 「愛情たっぷり隠し味！？」
+00002379 - 「ブラック・スローター・Ⅱ」
+00002380 - 「ベガス・イリュージア撃破」
+00002381 - 「コーデカタログ：カタログを検索する」
+00002382 - 「キャタドランサ撃破」
+00002383 - 「レオンティーナに話しかける」
+00002384 - 「エル・アーダ撃破」
+00002385 - 「採取をする」
+00002386 - 「任意のアドバンスクエストをクリアする」
+00002387 - 「シー（バレンタイン2021）に話しかける」
+00002389 - 「甘い季節の運び方」
+00002390 - 「任意のボーナスクエストをクリアする」
+00002391 - 「アークマスロットをプレイする」
+00002392 - 「ゴルドラーダ撃破」
+00002393 - 「ラケシスに話しかける」
+00002394 - 「ボンタ・バクタ撃破」
+00002395 - 「釣りをする」
+00002396 - 「ソルザ・ブラーダ撃破」
+00002397 - 「デモリション・アンビション・Ⅱ」
+00002398 - 「チョコレートへの試練！」
+00002399 - 「ゴロンゾラン撃破」
+00002400 - 「恋慕を後押すウワサ話！」
+00002401 - 「ボンタ・バクタ撃破」
+00002402 - 「シュバリザン撃破」
+00002403 - 「地より出ずる龍」
+00002404 - 「ゴロンゾラン撃破」
+00002405 - 「コドッタ・イーデッタ撃破」
+00002406 - 「ユーガディカーダ撃破」
+00002407 - 「ラプラスの悪魔撃破」
+00002408 - 「ビクダ・ラビッタ撃破」
+00002409 - 「カルターゴ撃破」
+00002410 - 「ユグルドラーダ撃破」
+00002411 - 「チョコレートの行方」
+00002412 - 「FUNスクラッチを引く」
+00002414 - 「武器、ユニットのいずれかを1つ強化する」
+00002415 - 「魁偉に変異せし龍族」
+00002416 - 「ヴェンタザウル撃破」
+00002417 - 「混沌の旗幟となりし彫像」
+00002418 - 「メセタンシューターでキングメセタンを撃破する」
+00002419 - 「エル・アーダ撃破」
+00002420 - 「ラッピー撃破」
+00002421 - 「オロタ・ビケッタ撃破」
+00002422 - 「ガル・グリフォン撃破」
+00002423 - 「エンペ・ラッピー撃破」
+00002424 - 「ゾ・シュバリザン撃破」
+00002425 - 「疾駆する四本腕の突撃龍」
+00002426 - 「カルターゴ撃破」
+00002427 - 「採取をする」
+00002428 - 「レオンティーナに話しかける」
+00002429 - 「新世武器、旧式武器、ユニットのいずれかを1つ強化する」
+00002430 - 「アフィン（ホワイトデー）に話しかける」
+00002431 - 「しょんぼりアフィンくん」
+00002432 - 「クォーツ・ドラゴン撃破」
+00002433 - 「FUNスクラッチを引く」
+00002434 - 「エンペ・ラッピー撃破」
+00002435 - 「エル・アーダ撃破」
+00002436 - 「マグにアイテムを与える」
+00002437 - 「リングを強化する」
+00002439 - 「忘却のアフィンくん」
+00002440 - 「ラケシスに話しかける」
+00002441 - 「釣りをする」
+00002442 - 「ふたりのアフィンくん」
+00002443 - 「ウォルガーダ撃破」
+00002444 - 「ラッピースロットをプレイする」
+00002445 - 「キャタドランサ撃破」
+00002446 - 「異常発生の影響は」
+00002447 - 「緑色のコンテナを破壊する」
+00002448 - 「お願いアフィンくん」
+00002449 - 「コーデカタログ：「いいね！」を送信する」
+00002450 - 「お返しアフィンくん」
+00002451 - 「グリュゾラス・ドラゴ撃破」
+00002452 - 「ラプラスの悪魔撃破」
+00002453 - 「ウォルガーダ撃破」
+00002454 - 「ヴォル・ドラゴン撃破」
+00002455 - 「ボクス・ドゥバルス撃破」
+00002456 - 「サイクロネーダ・ユガ撃破」
+00002457 - 「ユグダソーサラー撃破」
+00002458 - 「ミラージュ・アグレッサー・Ⅱ」
+00002459 - 「ボンタ・ベアタス撃破」
+00002460 - 「ミラージュ・アグレッサー・Ⅳ」
+00002461 - 「エル・アーダ撃破」
+00002462 - 「カルターゴ撃破」
+00002464 - 「メセタンシューターでキングメセタンを撃破する」
+00002465 - 「キャタドランサ撃破」
+00002466 - 「ミラージュ・アグレッサー・Ⅴ」
+00002467 - 「ラッピー撃破」
+00002468 - 「ミラージュ・アグレッサー・Ⅰ」
+00002469 - 「ジ・シュバリザン撃破」
+00002470 - 「キュクロナーダ・ユガ撃破」
+00002471 - 「クォーツ・ドラゴン撃破」
+00002472 - 「シュバリザン撃破」
+00002473 - 「ミラージュ・アグレッサー・Ⅲ」
+00002474 - 「ヴィドルース撃破」
+00002475 - 「ホワイトデーは大わらわ2019」
+00002476 - 「スネークヘリ撃破」
+00002477 - 「エネミーたちに明日はない」
+00002478 - 「ジャストアタック特訓・Ⅰ」
+00002479 - 「ファインディング・トレジャー」
+00002480 - 「マグにアイテムを与える」
+00002481 - 「バルチャファムト撃破」
+00002482 - 「レベル制限解除試練・Ⅰ」
+00002483 - 「ド派手なのがお好き」
+00002484 - 「カジノエリアのフリードリンクスタンドにアクセスする」
+00002485 - 「サポートパートナー講習」
+00002486 - 「シー(イ－スター2019)に話しかける」
+00002487 - 「キョクヤに話しかける」
+00002489 - 「難易度制限解放試練・Ⅰ」
+00002490 - 「ラッピースロットをプレイする」
+00002491 - 「素晴らしき哉、隠し場所！」
+00002492 - 「コーデカタログ：「いいね！」を送信する」
+00002493 - 「１５式戦車撃破」
+00002494 - 「マグライセンス授与申請試練」
+00002495 - 「レオンティーナに話しかける」
+00002496 - 「ラケシスに話しかける」
+00002497 - 「アイディアの鍵借ります」
+00002498 - 「シロナに話しかける」
+00002499 - 「ACショップの商品リストを確認する」
+00002500 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00002501 - 「ワイルドイースター2019」
+00002502 - 「チェーンソーピエロ撃破」
+00002503 - 「ブリュー・リンガーダ撃破」
+00002504 - 「スネークヘリ撃破」
+00002505 - 「ブラウンベア撃破」
+00002506 - 「デュラハンライダー撃破」
+00002507 - 「指定標本回収：浮遊大陸」
+00002508 - 「エスカ・ラグナス撃破」
+00002509 - 「トレイン・ギドラン撃破」
+00002510 - 「チャカゾンビ撃破」
+00002511 - 「プラチドーラス撃破」
+00002512 - 「ベガス・イリュージア撃破」
+00002514 - 「U.F.O撃破」
+00002515 - 「ロードローラー撃破」
+00002516 - 「遊撃許可申請・ラスベガス」
+00002517 - 「走破演習：東京」
+00002518 - 「暴進せし鋼鉄の健脚」
+00002519 - 「サーカスキャリッジ撃破」
+00002520 - 「１５式戦車撃破」
+00002521 - 「Ｔ・レックス撃破」
+00002522 - 「エンペ・ラッピー撃破」
+00002523 - 「グワナーダ撃破」
+00002524 - 「ラッピーなる希少種」
+00002525 - 「トランマイザー撃破」
+00002526 - 「クリスマスキャロルは突然に」
+00002527 - 「ミクダ撃破」
+00002528 - 「レオンティーナに話しかける」
+00002529 - 「武器、ユニットのいずれかを1つ強化する」
+00002530 - 「シー(クリスマス2020)に話しかける」
+00002531 - 「イエーデ撃破」
+00002532 - 「マイルドマイルド・マーダー・Ⅳ」
+00002533 - 「ナイトメアー・オブ・クリスマス」
+00002534 - 「コーデカタログ：「いいね！」を送信する」
+00002535 - 「FUNスクラッチを引く」
+00002536 - 「マグにアイテムを与える」
+00002537 - 「ブラックニャックをプレイする」
+00002539 - 「グウォンダ撃破」
+00002540 - 「ラッピーは二度ベルを鳴らす!?」
+00002541 - 「釣りをする」
+00002542 - 「ダーカー・イン・ザ・ナイト」
+00002543 - 「ガルフル撃破」
+00002544 - 「ラッピースロットをプレイする」
+00002545 - 「「S級特殊能力で装備品の性能をさらにアップ！」を見る」
+00002546 - 「エマージェンシートライアル『嵐の贈り物』をクリアする」
+00002547 - 「緑色のコンテナを破壊する」
+00002548 - 「ラケシスに話しかける」
+00002549 - 「怖い家」
+00002550 - 「スノウバンシー撃破」
+00002551 - 「マルモス撃破」
+00002552 - 「ファンガルフル撃破」
+00002553 - 「任意のエクストリームクエストをクリア」
+00002554 - 「エンペ・ラッピー撃破」
+00002555 - 「グワナーダ撃破」
+00002556 - 「スノウバンサー撃破」
+00002557 - 「ドラゴ・デッドリオン撃破」
+00002558 - 「凍土に吹き荒れる数多の敵意」
+00002559 - 「ゼッシュレイダ撃破」
+00002560 - 「オル・ミクダ撃破」
+00002561 - 「デモリション・アンビション・Ⅴ」
+00002562 - 「リングを強化する」
+00002564 - 「メセタンシューターでキングメセタンを撃破する」
+00002565 - 「ボクス・ドゥバルス撃破」
+00002566 - 「ガウォンダ撃破」
+00002567 - 「ガル・グリフォン撃破」
+00002568 - 「ラッピー撃破」
+00002569 - 「グリュゾラス・ドラゴ撃破」
+00002570 - 「レオマドゥラード撃破」
+00002571 - 「トランマイザー撃破」
+00002572 - 「ロックベア撃破」
+00002573 - 「イレイザー・レポート・Ⅴ」
+00002574 - 「ダーガッシュ撃破」
+00002575 - 「キングイエーデ撃破」
+00002576 - 「スネークヘリ撃破」
+00002577 - 「エネミーたちの沈黙」
+00002578 - 「ジャストアタック特訓・Ⅰ」
+00002579 - 「吾輩はウサギである」
+00002580 - 「マグにアイテムを与える」
+00002581 - 「チャカゾンビ撃破」
+00002582 - 「レベル制限解除試練・Ⅰ」
+00002583 - 「小さな遊びのメロディ」
+00002584 - 「カジノエリアの風船にアクセスする」
+00002585 - 「サポートパートナー講習」
+00002586 - 「シー(イースター2020)に話しかける」
+00002587 - 「ルコットに話しかける」
+00002589 - 「難易度制限解放試練・Ⅰ」
+00002590 - 「アークマスロットをプレイする」
+00002591 - 「最高のルールの見つけ方」
+00002592 - 「コーデカタログ：「いいね！」を送信する」
+00002593 - 「１５式戦車撃破」
+00002594 - 「マグライセンス授与申請試練」
+00002595 - 「レオンティーナに話しかける」
+00002596 - 「アナトーリヤに話しかける」
+00002597 - 「幸せな青い鳥のタマゴ」
+00002598 - 「シロナに話しかける」
+00002599 - 「ACショップの商品リストを確認する」
+00002600 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00002601 - 「ワイルドイースター2020」
+00002602 - 「U.F.O撃破」
+00002603 - 「ブリュー・リンガーダ撃破」
+00002604 - 「ブラウンベア撃破」
+00002605 - 「スネークヘリ撃破」
+00002606 - 「デュラハンライダー撃破」
+00002607 - 「指定標本回収：浮遊大陸」
+00002608 - 「デビルズトレーラー撃破」
+00002609 - 「トレイン・ギドラン撃破」
+00002610 - 「バルチャファムト撃破」
+00002611 - 「サーカスキャリッジ撃破」
+00002612 - 「ベガス・イリュージア撃破」
+00002614 - 「チェーンソーピエロ撃破」
+00002615 - 「カジノエリアのリリーパ族の落書きにアクセス」
+00002616 - 「採取をする」
+00002617 - 「走破演習：東京」
+00002618 - 「暴進せし鋼鉄の健脚」
+00002619 - 「プラチドーラス撃破」
+00002620 - 「ロードローラー撃破」
+00002621 - 「Ｔ・レックス撃破」
+00002622 - 「エンペ・ラッピー撃破」
+00002623 - 「グワナーダ撃破」
+00002624 - 「ラッピーなる希少種」
+00002625 - 「トランマイザー撃破」
+00002626 - 「マグにアイテムを与える」
+00002627 - 「アークマスロットをプレイする」
+00002628 - 「シー（サマー2020）に話しかける」
+00002629 - 「ゼッシュレイダ撃破」
+00002630 - 「ラケシスに話しかける」
+00002631 - 「安全確保を万全に！」
+00002632 - 「ヴィド・ギロス撃破」
+00002633 - 「コーデカタログで「いいね！」を送信する」
+00002634 - 「ブルメガーラ撃破」
+00002635 - 「幻創種なる新たな脅威」
+00002636 - 「サポートパートナー講習」
+00002637 - 「お呼びでない侵入者！？」
+00002639 - 「デコル・マリューダ撃破」
+00002640 - 「FUNスクラッチを引く」
+00002641 - 「ビーチの平和を守るため！」
+00002642 - 「バノリディアン撃破」
+00002643 - 「特定封鎖区域討滅任務」
+00002644 - 「リューダソーサラー撃破」
+00002645 - 「採取をする」
+00002646 - 「レオンティーナに話しかける」
+00002647 - 「リゾート計画の始まり！」
+00002648 - 「リゾート計画防衛戦！？」
+00002649 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00002650 - 「ストーリークエスト「目覚めの時」クリア」
+00002651 - 「ベガス・イリュージアの部位破壊を！」
+00002652 - 「強鋏の海獣」
+00002653 - 「セヴァニアン撃破」
+00002654 - 「天馬行空の力試し・Ⅰ」
+00002655 - 「ファルガルボン撃破」
+00002656 - 「ダブリュンダ撃破」
+00002657 - 「タロベッコ撃破」
+00002658 - 「ビーチウォーズ2020！」
+00002659 - 「ラスベガス探索」
+00002660 - 「レオマドゥラード撃破」
+00002661 - 「ガル・グリフォン撃破」
+00002662 - 「ゼッシュレイダ撃破」
+00002664 - 「エクスキューブ交換ショップを利用する」
+00002665 - 「ウォルガーダ撃破」
+00002666 - 「ネプト・キャサドーラ撃破」
+00002667 - 「エラディケート・エイム・Ⅱ」
+00002668 - 「デコル・マリューダ撃破」
+00002669 - 「オルグブラン撃破」
+00002670 - 「エンペ・ラッピーなる希少種」
+00002671 - 「ラッピースロットをプレイする」
+00002672 - 「緑色のコンテナを破壊する」
+00002673 - 「セグレズン撃破」
+00002674 - 「プレディカーダ撃破」
+00002675 - 「クラフト訓練・梅」
+00002676 - 「トラベリング・ミーティング」
+00002677 - 「ラケシスに話しかける」
+00002678 - 「ギャザリングフィーバーを発生させる」
+00002679 - 「マグライセンス授与申請試練」
+00002680 - 「ファングバンシー撃破」
+00002681 - 「難易度制限解放試練・Ⅰ」
+00002682 - 「任意のおすすめクエストをクリアし、スペシャルギフトを入手する」
+00002683 - 「レオンティーナに話しかける」
+00002684 - 「ヴォル・ドラゴン撃破」
+00002685 - 「サブクラス許可申請試練」
+00002686 - 「グワナーダ撃破」
+00002687 - 「アメージング・イレージング」
+00002689 - 「アレンジ・リベンジ」
+00002690 - 「オルグブラン撃破」
+00002691 - 「レベル制限解除試練・Ⅰ」
+00002692 - 「ギグル・グンネガム撃破」
+00002693 - 「ブラックニャックをプレイする」
+00002694 - 「FUNスクラッチを引く」
+00002695 - 「サポートパートナー講習」
+00002696 - 「トレイン・ギドラン撃破」
+00002697 - 「ホワイト・ブライト・クリスマス」
+00002698 - 「コーデカタログで「いいね！」を送信する」
+00002699 - 「ファイナに話しかける」
+00002700 - 「マチガイ・チガイ」
+00002701 - 「巨大な剣盾を携えし龍」
+00002702 - 「ヴォル・ドラゴン撃破」
+00002703 - 「キャタドラン撃破」
+00002704 - 「ベガス・イリュージア撃破」
+00002705 - 「氷上のメリークリスマス2020」
+00002706 - 「任意のアドバンスクエスト」
+00002707 - 「クォーツ・ドラゴン撃破」
+00002708 - 「リングを作ってみましょー」
+00002709 - 「ギグル・グンネガム撃破」
+00002710 - 「コドッタ・イーデッタ撃破」
+00002711 - 「ゴロンゾラン撃破」
+00002712 - 「森林を駆る雌雄爪獣」
+00002714 - 「レベル制限解除試練・Ⅱ」
+00002715 - 「デコル・マリューダ撃破」
+00002716 - 「ウォルガーダ撃破」
+00002717 - 「ブリュー・リンガーダ撃破」
+00002718 - 「難易度制限解放試練・Ⅱ」
+00002719 - 「ゼッシュレイダ撃破」
+00002720 - 「任意のボーナスクエスト」
+00002721 - 「メセタンシューターでキングメセタンを撃破する」
+00002722 - 「ベールドフォードルス撃破」
+00002723 - 「トランマイザー撃破」
+00002724 - 「ビオル・メデューナ撃破」
+00002725 - 「鉄の道を外れし暴威」
+00059901 - 「ザウーダン撃破」
+00059902 - 「武器パレットを別のパレットに切り替える」
+00059903 - 「スキルポイントを消費する(スキルを覚える)」
+00059904 - 「PAまたはテクニックの習得」
+00059905 - 「スロット1の武器にPAをセットする」
+00059906 - 「スロット1の武器にテクニックを1つ以上セットする」
+00059907 - 「カジノロビーの風船にアクセス」
+00300033 - 「釣りをする」
+09200033 - 「釣りをする」
+
+Group 1
+00000051 - "Break Yellow Containers"
+00000052 - "The Approaching Jet-Black Arm"
+00000053 - “Cause a PSE Burst”
+00000054 - “Observing Diamond Dust”
+00000055 - "Successfully Enhance One Element of Any Item"
+00000056 - "Destroy Marmoth"
+00000057 - "Break Red Containers"
+00000058 - "Destroy Dagan"
+00000059 - "Successfully Enhance Any One Item"
+00000060 - “Send Kudos to Someone”
+00000061 - "Christmas Nuisance!"
+00000062 - "Destroy Phangrulfer"
+00000063 - “”
+00000064 - “Christmas on Ice 2”
+00000065 - "Christmas Helper!"
+00000066 - "Destroy Carthago"
+00000067 - "Successfully Affix One Augment to Any Item"
+00000068 - "Destroy El Arda"
+00000069 - "Break Blue Containers"
+00000070 - "Destroy Briarda"
+00000071 - “Play a FUN Scratch Ticket”
+00000072 - "Destroy Yedi"
+00000073 - "Destroy Krahda"
+00000074 - “Defend Naura Bakery!”
+00000075 - "Break Green Containers"
+00000076 - "Destroy Guru Solda"
+00000077 - "Destroy Sevanian"
+00000078 - “The Tempest's Gift”
+00000079 - "Destroy Tag Sevanian"
+00000080 - “Suppress Dekor Maryuda”
+00000081 - “Wopal Hanging by a Thread!”
+00000082 - "Destroy Fal Vibras"
+00000083 - "Destroy Goldrahda"
+00000084 - "Running Maneuvers: Naverius II"
+00000085 - "Divergence Matrix: Obtain ‘On the Other Side of Oblivion’"
+00000086 - “Dekor Maryuda's Surprising Weak Point!”
+00000087 - "Destroy Tarobekko"
+00000088 - “”
+00000089 - "Destroy [Persona]"
+00000090 - "Destroy Biol Meduna"
+00000091 - “Observing Deep Snow”
+00000092 - “A New Trial in the Tundra”
+00000093 - “Mining Base Defense Op: Onslaught”
+00000094 - "Participate in Practical Training"
+00000095 - “Lickety-Split Seabed Ecological Survey”
+00000096 - “Seabed Exploration”
+00000097 - "Destroy Falcabone"
+00000098 - "Destroy Bluturbon"
+00000099 - "Destroy Vid Giros"
+00000100 - "Destroy Dwe Solda"
+00000101 - "The Magical Seas Where the Artificial Draconians Come"
+00000102 - "Destroy Druahda"
+00000103 - "Destroy Segrezun"
+00000104 - "Destroy Falcabone"
+00000105 - "Fighter Plane Defense"
+00000106 - "Destroy Vid Giros"
+00000107 - "Destroy Shutrahda"
+00000108 - "Destroy Luda Sorcerer"
+00000109 - "An Intruder in the United Battle Festival!"
+00000110 - “Unrestricted Exploration Permission Request: Coast"
+00000111 - "Successfully Enhance Any Item"
+00000112 - “Observing Heavy Rain”
+00000113 - “”
+00000114 - “Play a FUN Scratch Ticket”
+00000115 - “Send Kudos to Someone”
+00000116 - "Destroy De Marmoth"
+00000117 - "One Act of the United Battle Festival!"
+00000118 - "Destroy Orgbran"
+00000119 - "Destroy Dekor Maryuda"
+00000120 - "Destroy Biol Meduna"
+00000121 - "The United Battle Festival As Usual!"
+00000122 - "Everyone Loves It; It's So Popular!"
+00000123 - "Destroy Tyraluda"
+00000124 - "Destroy Dwe Solda"
+00000125 - "Destroy the Chrome Dragon"
+00000126 - “Big Ask From an Idol”
+00000127 - "Destroy Predicahdr"
+00000128 - "Destroy Krabahda"
+00000129 - "Destroy Krahda"
+00000130 - "Destroy Dragon X"
+00000131 - "Destroy Fodransa"
+00000132 - "Divergence Matrix: Obtain ‘Settlement of Tears’"
+00000133 - "Destroy King Yedi"
+00000134 - "Destroy Zeshraider"
+00000135 - "The Obsidian that Brings Destruction"
+00000136 - “Destroy Enemies”
+00000137 - “Carthago's Surprising Weak Point!”
+00000138 - “”
+00000139 - "Angel of Flame"
+00000140 - "Destroy Dark Ragne"
+00000141 - “An Indomitable Symbiote!?”
+00000142 - "Destroy Catredransa"
+00000143 - "Destroy Signo Beat"
+00000144 - "Destroy Dhargash"
+00000145 - "Exterminating Journey II"
+00000146 - "Destroy Guru Solda"
+00000147 - "Destroy Fang Banshee"
+00000148 - “Cause a PSE Burst”
+00000149 - "Destroy Mikda"
+00000150 - "Accompanied by Partner Quna"
+00000151 - "An Everyday Valentine Affair!"
+00000152 - "Destroy Goron Zran"
+00000153 - “Play a FUN Scratch Ticket”
+00000154 - "Dodge the Vizbolts!"
+00000155 - "Destroy Dagan"
+00000156 - "Destroy Catredran"
+00000157 - "Destroy Nordeeran"
+00000158 - “Destroy Green Containers”
+00000159 - “Where the Chocolate Went 2”
+00000160 - "Destroy Deeg"
+00000161 - "Trial by Chocolate!"
+00000162 - "The Secret Ingredient is Lots of Love!?"
+00000163 - “”
+00000164 - "A Rumor That Pushes Longing Along!"
+00000165 - “Now Valentine's Day is Complete!"
+00000166 - "Destroy Sol Deenian"
+00000167 - “Defend Naura Bakery!”
+00000168 - “Feed an Item to a Mag”
+00000169 - "Destroy Pendran"
+00000170 - “Auxiliary Course”
+00000171 - “Destroy the Falmorpher!”
+00000172 - “Clownish Lavarock Collecting”
+00000173 - "Successfully Enhance the Elements of Any Item"
+00000174 - “Procure Vol Dragon Meat”
+00000175 - "Destroy Sol Dirandahl"
+00000176 - "Destroy Dirandahl"
+00000177 - "Destroy the Dark Falz Elder"
+00000178 - "Destroy Broondarl"
+00000179 - "Destroy Bryu Ringahda"
+00000180 - “I Want Your Help!”
+00000181 - "A Faintly Remembered Pink Flower"
+00000182 - "Accompanied by Partner Azanami"
+00000183 - "Destroy Fodran"
+00000184 - "Search for the Rescuer"
+00000185 - "Secret Boot Camp"
+00000186 - "Destroy Bloomegara"
+00000187 - "Destroy Bar Lodos"
+00000188 - “”
+00000189 - "Participate in Practical Training"
+00000190 - "Destroy Sil Deenian"
+00000191 - "Destroy El Dagan"
+00000192 - “The Raging Obsidian Arm”
+00000193 - “Observing Heat Waves”
+00000194 - "Accompanied by Partner Risa"
+00000195 - "Destroy Deegnacht"
+00000196 - "Destroy Sadeenian"
+00000197 - "Destroy Gwanada"
+00000198 - "Destroy Ahl Mikda"
+00000199 - "Destroy the Quartz Dragon"
+00000200 - "Destroy Deenian"
+00000201 - "Destroy Briarda"
+00000202 - "Destroy Guru Solda"
+00000203 - "Activate an Auto Chat Set to 'Upon Quest Completion'"
+00000204 - "Destroy Guardinan"
+00000205 - "Destroy Kindidd Custom"
+00000206 - "The Origin of Easter"
+00000207 - "Eggs are Used in the Festival?"
+00000208 - "Get Rid of the Nuisance!"
+00000209 - "Also Popular with Automata?"
+00000210 - "Everyone's in the Mood for a Festival!"
+00000211 - “Play a FUN Scratch Ticket”
+00000212 - “Feed an Item to a Mag”
+00000213 - “”
+00000214 - “Destroy Green Containers”
+00000215 - "Successfully Enhance Any Item"
+00000216 - "Destroy Signo Beat"
+00000217 - "Destroy Zeshraider"
+00000218 - "Destroy Carthago"
+00000219 - "Destroy Dark Ragne"
+00000220 - "Destroy Gillnach"
+00000221 - "Destroy Cychronahda"
+00000222 - "Have Any Drink"
+00000223 - "Destroy Dingale"
+00000224 - "Destroy Vint Balger"
+00000225 - "Destroy Falz Hyunal"
+00000226 - “The Cunning Black-Winged Vanguard”
+00000227 - “Advance Directive: Coast”
+00000228 - "Destroy Tyraluda"
+00000229 - "Destroy Starkgun"
+00000230 - “Perfect Attack Boot Camp I”
+00000231 - "Destroy Vid Giros"
+00000232 - “Send Kudos to Someone”
+00000233 - "Destroy Solda Capita"
+00000234 - "Speak to Tifris"
+00000235 - “Extreme Training: Ruins and Oceanids”
+00000236 - "Destroy Vidrolda"
+00000237 - "Divergence Matrix: Obtain 'In Order to Greet the Future'"
+00000238 - “”
+00000239 - ＊＊＊
+00000240 - "Destroy Dwe Solda"
+00000241 - "ARKS GP 2014 Preliminaries"
+00000242 - “Party Maneuvers I”
+00000243 - "Destroy Broondarl"
+00000244 - "Destroy Red Containers"
+00000245 - "Destroy Goldrahda"
+00000246 - "Destroy Luda Sorcerer"
+00000247 - "Destroy Shutrahda"
+00000248 - "Destroy Dekor Maryuda"
+00000249 - "Destroy Tranmizer"
+00000250 - "Destroy Druahda"
+00000251 - "Pacify the Mothership! I"
+00000252 - "Destroy Carthago"
+00000253 - "Those Confounding Falspawn!"
+00000254 - "Successfully Enhance Any Item"
+00000255 - "Pacify the Mothership! II"
+00000256 - "Destroy Sil Deenian"
+00000257 - "Destroy Bloomegara"
+00000258 - "Destroy Luda Sorcerer"
+00000259 - "Destroy Aqualupus"
+00000260 - "Destroy Deenian"
+00000261 - "Destroy Dagan"
+00000262 - “Destroy Green Containers”
+00000263 - “”
+00000264 - "Destroy Deeg"
+00000265 - "Destroy Krahda"
+00000266 - "Destroy Sparzile"
+00000267 - "Destroy Briarda"
+00000268 - "Destroy Garongo"
+00000269 - "Destroy El Arda"
+00000270 - "Destroy Signo Beat"
+00000271 - "Pacify the Mothership! III"
+00000272 - “Play a FUN Scratch Ticket”
+00000273 - "The Silence Born of Chaos"
+00000274 - "Destroy Dicahdr"
+00000275 - "Pacify the Mothership! IV"
+00000276 - “Perfect Attack Boot Camp VII”
+00000277 - "Destroy Davrunda"
+00000278 - “Falspawn Eradication I”
+00000279 - "Divergence Matrix: Obtain 'In Order to Greet the Future'"
+00000280 - New Mission Training: Volcanic Caves
+00000281 - "Destroy Davrune"
+00000282 - “Procure Gillnas Armor”
+00000283 - "Destroy Yellow Containers"
+00000284 - "Destroy Tranmizer"
+00000285 - "ARKS GP 2014 Preliminaries"
+00000286 - “Falspawn Eradication II”
+00000287 - “Cause a PSE Burst”
+00000288 - “”
+00000289 - "Speak to Fina"
+00000290 - “Falspawn Eradication III”
+00000291 - "Destroy Lanz Valehda"
+00000292 - "Destroy the Quartz Dragon"
+00000293 - "Destroy Red Containers"
+00000294 - “Procure Guardine Frames”
+00000295 - "Destroy the Falz Angel"
+00000296 - "Destroy Dragon X"
+00000297 - "Destroy Bryu Ringahda"
+00000298 - "Destroy the Rockbear"
+00000299 - "Destroy Vidrolda"
+00000300 - “Perfect Attack Boot Camp VIII”
+00000301 - "Destroy Bluturbon"
+00000302 - "Destroy Catredransa"
+00000303 - "Destroy Goron Zran"
+00000304 - “Feed an Item to a Mag”
+00000305 - "Destroy Deegahla"
+00000306 - "Searching for Treasure in 3,000 Villages: The First Village"
+00000307 - "Destroy Pendran"
+00000308 - “Destroy Green Containers”
+00000309 - “Speak to Lachesis”
+00000310 - "Searching for Treasure in 3,000 Villages: The Third Village"
+00000311 - "Destroy Sil Sadeenian"
+00000312 - "Destroy Dirandahl"
+00000313 - “”
+00000314 - "Destroy Grulfer"
+00000315 - "Destroy Phangrulfer"
+00000316 - "Treasure is Calling"
+00000317 - "Speak to Fina"
+00000318 - "Destroy Blue Containers"
+00000319 - "Destroy Signogun"
+00000320 - "Searching for Treasure in 3,000 Villages: The Second Village"
+00000321 - "Destroy Jagd Balger"
+00000322 - "Destroy Vardersoma"
+00000323 - "Destroy Orgbran"
+00000324 - "Destroy De Marmoth"
+00000325 - "Destroy Yedi"
+00000326 - “Party Maneuvers I”
+00000327 - "Any Extreme Quest"
+00000328 - "Destroy Dhargacha"
+00000329 - "Destroy Falz Hyunal"
+00000330 - "Beach Wars 2!"
+00000331 - “New Mission Training: Desert”
+00000332 - "Summer Resort Plan!"
+00000333 - "Explore the Harsh Floating Continent"
+00000334 - "First Secure the Safety of the Coast!"
+00000335 - "Destroy Biol Meduna"
+00000336 - "Destroy Broondarl"
+00000337 - "Destroy Tarobekko"
+00000338 - “”
+00000339 - "Destroy Segrezun"
+00000340 - "Destroy Krabahda"
+00000341 - "Destroy Zeshraider"
+00000342 - "Beach Essentials!"
+00000343 - "Explore the Harsh Dragon Altar"
+00000344 - "Drive Out Bar Lodos!"
+00000345 - "Destroy Orgbran"
+00000346 - “Speak to Prin”
+00000347 - "Destroy Bryu Ringahda"
+00000348 - "Destroy Dhargash"
+00000349 - "Destroy Knight Gear"
+00000350 - "Destroy Red Containers"
+00000351 - “Destroy Green Containers”
+00000352 - "Speak to Fina"
+00000353 - "Destroy Anshizagri"
+00000354 - "Destroy Pajigeeri"
+00000355 - “Perfect Attack Boot Camp I”
+00000356 - "Have Any Drink"
+00000357 - “Astarte's Private Lessons”
+00000358 - "Destroy Prata Picohda"
+00000359 - "Destroy Izaogal"
+00000360 - "Destroy Gigur Gunnegam"
+00000361 - "Successfully Enhance Any Item"
+00000362 - “Nightfaller Suppression Mission”
+00000363 - “”
+00000364 - "Destroy Gannagam"
+00000365 - "Destroy Adaogal"
+00000366 - “Send Kudos to Someone”
+00000367 - “Suppress Anjadeurili”
+00000368 - "Divergence Matrix: Obtain ‘Betwixt Day and Night’"
+00000369 - "Mysterious! The Shadows that Crawl in the Twilight!"
+00000370 - "Destroy Bonta Beadda"
+00000371 - “Play a FUN Scratch Ticket”
+00000372 - “Speak to Chip”
+00000373 - "Destroy Rerangam"
+00000374 - "Destroy Pitta Wadda"
+00000375 - "Hold a Moon-Gazing Party!"
+00000376 - "Destroy Red Containers"
+00000377 - “Speak to Lachesis”
+00000378 - "Destroy Nyau"
+00000379 - “Running Maneuvers: Wopal”
+00000380 - "Do We Need Dumplings for the Moon-Gazing Party?"
+00000381 - "Stop the Pajadeurin Rampage!"
+00000382 - “Soaring Blade Showcase”
+00000383 - "Destroy Izaogal"
+00000384 - “Observing a Blossom Shower”
+00000385 - “Demolition Ambition I”
+00000386 - "Destroy Prata Picohda"
+00000387 - "Destroy Anshizagri"
+00000388 - “”
+00000389 - "Destroy Bonta Beadda"
+00000390 - "Destroy Rerangam"
+00000391 - "Destroy Pitta Wadda"
+00000392 - “Speak to Bhea”
+00000393 - “A Blackened Kingdom”
+00000394 - “Jet Boots for Dummies”
+00000395 - "Destroy Adaogal"
+00000396 - "Speak to Fahmer"
+00000397 - "Destroy Pajigeeri"
+00000398 - “Daybreak Province Exploration”
+00000399 - "Destroy Gigur Gunnegam"
+00000400 - “Cause a PSE Burst”
+00000401 - "Can I Become a Wizard?"
+00000402 - "Destroy Nyau"
+00000403 - "Destroy Signogun"
+00000404 - "Destroy Tranmizer"
+00000405 - “Drive Out the Invaders!"
+00000406 - “Play a FUN Scratch Ticket”
+00000407 - "Destroy Jagd Dingale"
+00000408 - "Destroy Spardun A"
+00000409 - "Speak to Fina"
+00000410 - "Destroy Ahl Mikda"
+00000411 - "Destroy Vint Balger"
+00000412 - "Destroy Guardinan Custom"
+00000413 - “”
+00000414 - "Destroy Kindidd Custom"
+00000415 - "Destroy Ganon Balger"
+00000416 - “Trick or Treat 3!”
+00000417 - “Destroy Green Containers”
+00000418 - "Destroy Spargun"
+00000419 - "Destroy Dingale"
+00000420 - “Send Kudos to Someone”
+00000421 - "Treats are for Good Kids!"
+00000422 - "Destroy Luda Sorcerer"
+00000423 - "Destroy Signo Beat"
+00000424 - "Destroy Broondarl"
+00000425 - "Where's the Pumpkin Pie?"
+00000426 - "Defeat Queen Mesetan in Mesetan Shooter"
+00000427 - "Destroy Falcabone"
+00000428 - "Obtain Casino Coins at the Coin Exchanger"
+00000429 - "Divergence Matrix: Obtain ‘Remembrances of Those Created'"
+00000430 - “Access the Balloons”
+00000431 - “Cause a PSE Burst in Mesetan Shooter"
+00000432 - “Cause a Rappy PSE Burst in Rappy Slots"
+00000433 - "Access a Rappy Slots Slot Machine"
+00000434 - “The Dead Sea Where Artificial Draconians Gather”
+00000435 - "Destroy Nept Casadohra"
+00000436 - "Destroy Vid Giros"
+00000437 - "Destroy Aqualupus"
+00000438 - “”
+00000439 - "Destroy Bloomegara"
+00000440 - "Destroy Phangrulfer"
+00000441 - "Destroy Valadinan"
+00000442 - "Destroy Broondarl"
+00000443 - "Access the Mesetan Shooter Seat"
+00000444 - "Destroy Bar Lodos"
+00000445 - "Destroy Silt Grimian"
+00000446 - “Access the Lillipan Graffiti”
+00000447 - "Destroy Druahda"
+00000448 - “Access the Free Drink Stand”
+00000449 - "Divergence Matrix: Obtain 'Wait for Tomorrow'"
+00000450 - "Defeat Nyau in Mesetan Shooter"
+00000451 - "Obtain Casino Coins at the Coin Exchanger"
+00000452 - "Destroy Dicahdr"
+00000453 - “Feed an Item to a Mag”
+00000454 - "Destroy Predicahdr"
+00000455 - "Destroy Luda Sorcerer"
+00000456 - "Destroy Pitta Wadda"
+00000457 - "Sudden Preparations for a Holy Night"
+00000458 - "Speak to Fina"
+00000459 - "The Nuisance with the Jet-Black Feathers?"
+00000460 - “Astarte's Private Lessons”
+00000461 - "Destroy Grulfer"
+00000462 - "Destroy Phangrulfer"
+00000463 - “”
+00000464 - "Destroy King Yedi"
+00000465 - "Destroy Yedi"
+00000466 - "Destroy Prata Picohda"
+00000467 - "Items that Help With the Cold?"
+00000468 - “Destroy Green Containers”
+00000469 - "An Assortment for Good Kids!"
+00000470 - "Destroy Bonta Beadda"
+00000471 - "Destroy Solda Capita"
+00000472 - "Destroy Guru Solda"
+00000473 - "Destroy Marmoth"
+00000474 - "Destroy Dwe Solda"
+00000475 - “Access the Free Drink Stand”
+00000476 - “Crafting Workshop - Plum”
+00000477 - "Destroy Krahda"
+00000478 - "Destroy Fang Banser"
+00000479 - "Divergence Matrix: Obtain ‘Episode 3-2: Remembrance of a Thing Created’"
+00000480 - “Practice Makes Perfect - Melee Weapons”
+00000481 - “The Raging Obsidian Arm”
+00000482 - "Destroy Agnis"
+00000483 - "Successfully Enhance Any Item"
+00000484 - "Destroy Garongo"
+00000485 - "The Descending Planetbreaker Calamity"
+00000486 - "Destroy Dark Ragne"
+00000487 - "Destroy Briarda"
+00000488 - "Destroy O Valadinan"
+00000489 - “Speak to Noemi”
+00000490 - "Destroy Zeshraider"
+00000491 - “A Corpse of Unfathomable Size”
+00000492 - "Destroy Carthago"
+00000493 - "Have Any Drink"
+00000494 - "Destroy Dhargash"
+00000495 - “Mining Base Defense Op: Onslaught”
+00000496 - “Practice Makes Perfect - Ranged Weapons”
+00000497 - "Destroy Dagan"
+00000498 - "Destroy Fang Banshee"
+00000499 - "Divergence Matrix: Obtain ‘Episode 1-3: An Unpredictable Prediction’"
+00000500 - “Practice Makes Perfect - Technique Weapons”
+00000501 - "Destroy Deegahla"
+00000502 - "Destroy Dhargash"
+00000503 - “Party Maneuvers I”
+00000504 - "Destroy Banoridian"
+00000505 - "Destroy Su Valadinan"
+00000506 - "Protect the Daybreaker Village! I"
+00000507 - "Access the Mesetan Shooter Seat"
+00000508 - "Access a Rappy Slots Slot Machine"
+00000509 - “Access the Balloons”
+00000510 - "Protect the Daybreaker Village! III"
+00000511 - "Destroy Yedi"
+00000512 - “Destroy Green Containers”
+00000513 - "Destroy Dalbolupus"
+00000514 - "Speak to Fina"
+00000515 - "Destroy King Yedi"
+00000516 - "Protect the Daybreaker Village! II"
+00000517 - “Play a FUN Scratch Ticket”
+00000518 - “Feed an Item to a Mag”
+00000519 - “Send Kudos to Someone”
+00000520 - "Protect the Daybreaker Village! IV"
+00000521 - "Destroy Pitta Wadda"
+00000522 - "Destroy Izaogal"
+00000523 - “Party Maneuvers II”
+00000524 - "Destroy Gannagam"
+00000525 - "Destroy Signo Beat"
+00000526 - "Red Hot Valentine? I"
+00000527 - "Destroy Deeg"
+00000528 - "Destroy Dirandahl"
+00000529 - "Destroy Nordeeran"
+00000530 - "Red Hot Valentine? II"
+00000531 - "Destroy Davrunda"
+00000532 - "Successfully Enhance Any Item"
+00000533 - "An Unknown Trial"
+00000534 - “Cause a PSE Burst”
+00000535 - "Destroy Pitta Wadda"
+00000536 - “Speak to Kameo”
+00000537 - "Obtain Casino Coins at the Coin Exchanger"
+00000538 - "Destroy Branadian"
+00000539 - “Access the Lillipan Graffiti”
+00000540 - "Speak to Klariskrays"
+00000541 - "Destroy Davrune"
+00000542 - "Successfully Enhance the Elements of Any Item"
+00000543 - "Acute Angle of a Severe Attack"
+00000544 - "Activate an Auto Chat Set to 'Upon Quest Completion'"
+00000545 - "Destroy Prata Picohda"
+00000546 - "An Example Would Be Nice..."
+00000547 - "Destroy Sil Deenian"
+00000548 - "Destroy Sol Dirandahl"
+00000549 - "Destroy Pendran"
+00000550 - "Sincerety in a Case"
+00000551 - "Destroy Dragon X"
+00000552 - "Divergence Matrix: Obtain ‘Episode 3-3: A Calamitous Legend’"
+00000553 - "Destroy Rerangam"
+00000554 - "Destroy Nept Casadohra"
+00000555 - "Destroy Leomaduraad"
+00000556 - "Destroy Gigur Gunnegam"
+00000557 - "Destroy Vol Dragon"
+00000558 - "Destroy Bonta Beadda"
+00000559 - "Destroy Fang Banshee"
+00000560 - “Soaring Iron Shadow”
+00000561 - "Destroy Vidrolda"
+00000562 - "Destroy Wolguarda"
+00000563 - "Destroy Biol Meduna"
+00000564 - "Destroy Catredran"
+00000565 - "Destroy Lanz Valehda"
+00000566 - "Destroy Bryu Ringahda"
+00000567 - "Destroy Fang Banser"
+00000568 - "Destroy Dicahdr"
+00000569 - "Destroy Anjadeurili"
+00000570 - “Clear Any Extreme Quest”
+00000571 - "Destroy Tranmizer"
+00000572 - "Destroy Zeshraider"
+00000573 - "Destroy Gannagam"
+00000574 - "Divergence Matrix: Obtain ‘Episode 1-8 That Broken History Once More’"
+00000575 - “”
+00000576 - “”
+00000577 - “”
+00000578 - “”
+00000579 - “”
+00000580 - "Access a Rappy Slots Slot Machine"
+00000581 - "Destroy Guru Solda"
+00000582 - "Destroy Luda Sorcerer"
+00000583 - "Destroy Valadinan"
+00000584 - “Great Menace of the Sea, Render of Serenity”
+00000585 - "Destroy Davrune"
+00000586 - "Destroy Solda Capita"
+00000587 - “Destroy Green Containers”
+00000588 - "Destroy Falgurbon"
+00000589 - "Speak to Fina"
+00000590 - "Destroy Druahda"
+00000591 - "Destroy Dwe Solda"
+00000592 - "Destroy Red Containers"
+00000593 - "Destroy Vid Giros"
+00000594 - "Destroy Lanz Valehda"
+00000595 - "Destroy Davrunda"
+00000596 - "Defeat King Mesetan in Mesetan Shooter"
+00000597 - "Destroy Falcabone"
+00000598 - "Destroy Tarobekko"
+00000599 - "Destroy Tag Aqualupus"
+00000600 - "Defeat Nyau in Mesetan Shooter"
+00000601 - "Destroy Shutrahda"
+00000602 - "Destroy Sol Sadeenian"
+00000603 - "An Absurd White Day? I"
+00000604 - "Destroy Sadeenian"
+00000605 - “The Great White Day Kerfuffle 3”
+00000606 - "Destroy Baridran"
+00000607 - “Speak to Nanon”
+00000608 - "Destroy Dhargash"
+00000609 - “Access the Free Drink Stand”
+00000610 - "Destroy Nordeeransa"
+00000611 - "An Absurd White Day? II"
+00000612 - "Destroy Deegahla"
+00000613 - “”
+00000614 - "Destroy Sol Deegahla"
+00000615 - "Defend the Venue from Large Enemies!"
+00000616 - "Destroy Pendran"
+00000617 - "Have Any Drink"
+00000618 - "Destroy Dhargacha"
+00000619 - "Speak to Arkumami"
+00000620 - "Destroy Fodransa"
+00000621 - "Destroy Tyraluda"
+00000622 - "Destroy Sil Sadeenian"
+00000623 - "A Glimmering Gift"
+00000624 - "Destroy Ceto Sadeenian"
+00000625 - "Destroy Sol Dirandahl"
+00000626 - "Destroy Guwonda"
+00000627 - "Divergence Matrix: Obtain ‘Episode 2-1: What Awaits on the Diverged Path’"
+00000628 - "Destroy Snow Banser"
+00000629 - “The Great White Day Kerfuffle 3”
+00000630 - “Destroy the Falmorpher!”
+00000631 - "Destroy the Falz Angel"
+00000632 - "Destroy Krabahda"
+00000633 - "Destroy Wolguarda"
+00000634 - "Destroy Cychronahda"
+00000635 - “Drawn to Darkness”
+00000636 - "Destroy the Quartz Dragon"
+00000637 - "Destroy Goron Zran"
+00000638 - “”
+00000639 - "Destroy Lanz Valehda"
+00000640 - "Destroy Dragon X"
+00000641 - "Destroy Dekor Maryuda"
+00000642 - "Destroy Cuchronahda"
+00000643 - "Divergence Matrix: Obtain ‘Episode 3-3: A Calamitous Legend’"
+00000644 - "Destroy the Surface Ship's Power Source!"
+00000645 - "Destroy Bryu Ringahda"
+00000646 - “Feed an Item to a Mag”
+00000647 - "Destroy Dark Ragne"
+00000648 - "Destroy Snow Banshee"
+00000649 - "Destroy Zeshraider"
+00000650 - "Destroy Catredransa"
+00000651 - "Secure Safety First! I"
+00000652 - “Feed an Item to a Mag”
+00000653 - "Destroy Signogun"
+00000654 - "Destroy Dagan"
+00000655 - "Secure Safety First! II"
+00000656 - "Play Mesetan Shooter"
+00000657 - “Send Kudos to Someone”
+00000658 - "Destroy El Arda"
+00000659 - "Have Any Drink"
+00000660 - "Play Rappy Slots"
+00000661 - “Defend the Lillipan Village”
+00000662 - “Play a FUN Scratch Ticket”
+00000663 - “”
+00000664 - “Destroy Green Containers”
+00000665 - “Wild Easter 2”
+00000666 - "Destroy Dingale"
+00000667 - "Destroy Solda Capita"
+00000668 - "Destroy Dwe Solda"
+00000669 - "Play Blacknyack"
+00000670 - "Destroy Spardun A"
+00000671 - “Keeping Up Appearances!"
+00000672 - "Destroy Luda Sorcerer"
+00000673 - "Destroy Gillnach"
+00000674 - "Destroy Lanz Valehda"
+00000675 - "Help Your Small Friends!"
+00000676 - "Destroy Dicahdr"
+00000677 - “Procure Jagd Dingale Blade”
+00000678 - "Defeat King Mesetan in Mesetan Shooter"
+00000679 - "Destroy Bar Lodos"
+00000680 - "Destroy Guru Solda"
+00000681 - “Berserk Enemies in the Floating Facility I”
+00000682 - "Destroy Dragon X"
+00000683 - "Destroy Kindidd Custom"
+00000684 - "Destroy Orgbran"
+00000685 - “A Test of Your New Rank”
+00000686 - "Destroy Shutrahda"
+00000687 - "Successfully Enhance the Elements of Any Item"
+00000688 - “”
+00000689 - "Successfully Enhance Any Item"
+00000690 - "Destroy Predicahdr"
+00000691 - "Destroy Falz Hyunal"
+00000692 - "Destroy Tranmizer"
+00000693 - "Destroy Gillnas"
+00000694 - "Destroy Signo Beat"
+00000695 - "Destroy Bryu Ringahda"
+00000696 - "Divergence Matrix: Obtain ‘Episode 3-4: Hazy Memories and Lost Records’"
+00000697 - "Destroy Biol Meduna"
+00000698 - "Destroy Red Containers"
+00000699 - “Rest in Pieces, Vardersoma!”
+00000700 - “Crafting Workshop - Bamboo”
+00000701 - "Destroy Mikda"
+00000702 - "Survey the Condition of the Trees"
+00000703 - "Destroy Udan"
+00000704 - "A Sylvant Anomaly!?"
+00000705 - "Destroy Garongo"
+00000706 - "Destroy Gawonda"
+00000707 - "Destroy Carthago"
+00000708 - "Speak to Fina"
+00000709 - "Destroy Krabahda"
+00000710 - "Destroy Guwonda"
+00000711 - "Destroy Grulf"
+00000712 - "Enhance Weapon or Unit"
+00000713 - ""
+00000714 - "Enhance a weapon's element"
+00000715 - "Destroy Phongrulf"
+00000716 - "Destroy Dhargacha"
+00000717 - "Destroy Cuchronahda"
+00000718 - "Destroy Green Containers"
+00000719 - "Destroy Cychronahda"
+00000720 - "Destroy Dhargash"
+00000721 - "Destroy Agnis"
+00000722 - "Corrupted Concerns"
+00000723 - "Destroy Za'udan"
+00000724 - "The Purple Flower that Blooms in the Rain"
+00000725 - "Destroy Ahl Mikda"
+00000726 - “Hostiles Hidden in the Forest”
+00000727 - "Destroy Fang Banser"
+00000728 - "The Rarest Rappy"
+00000729 - "Destroy Dark Ragne"
+00000730 - "Fighter Plane Defense"
+00000731 - "Destroy Nept Casadohra"
+00000732 - "Destroy Nav Rappy"
+00000733 - "Go Fishing"
+00000734 - "The Tempest's Gift"
+00000735 - "Destroy Leomaduraad"
+00000736 - "Nyaut and About"
+00000737 - "Destroy the Rockbear"
+00000738 - ""
+00000739 - "Destroy De Marmoth"
+00000740 - "Destroy Wolguarda"
+00000741 - “Bloody Ruins III”
+00000742 - "Bayze Extermination"
+00000743 - Gone With the Wind & Rain
+00000744 - "Difficulty Level Trial Ⅰ"
+00000745 - Destroy Carthago
+00000746 - "Defeat King Mesetan in Mesetan Shooter"
+00000747 - "Destroy Fang Banshee"
+00000748 - "Destroy Snow Banser"
+00000749 - "Destroy Zeshraider"
+00000750 - “Access the Lilipan Graffiti at the Casino”
+00000751 - "Destroy Pitta Wadda"
+00000752 - "Destroy Luda Sorcerer"
+00000753 - "Play Blacknyack"
+00000754 - "Destroy El Arda"
+00000755 - "Destroy Shutrahda"
+00000756 - "Destroy Gwanada"
+00000757 - "Speak to Fina"
+00000758 - "Destroy Carthago"
+00000759 - "Destroy Tyraluda"
+00000760 - "Velocity Annihilation II"
+00000761 - "Speak to Edwahl"
+00000762 - "Have Any Drink"
+00000763 - “”
+00000764 - “Play a FUN Scratch Ticket”
+00000765 - "Activate an Auto Chat Set to 'Upon Quest Completion'"
+00000766 - "The Black Locusts of the Desert"
+00000767 - "Destroy Broondarl"
+00000768 - "Destroy Mikda"
+00000769 - “Destroy Green Containers”
+00000770 - "Velocity Annihilation I"
+00000771 - "Destroy Prata Picohda"
+00000772 - "Destroy Gawonda"
+00000773 - "Destroy Dagan"
+00000774 - "Destroy Briarda"
+00000775 - "Destroy Bonta Beadda"
+00000776 - "Destroy Zgraf"
+00000777 - "Destroy Yuguldrahda"
+00000778 - "Destroy Grulf"
+00000779 - "Destroy Kaisfoehgo"
+00000780 - "Destroy Knight Gear"
+00000781 - "Destroy Yugadicahdr"
+00000782 - "Destroy the Rockbear"
+00000783 - "Destroy Sil Deenian"
+00000784 - "Destroy Signogun"
+00000785 - "Destroy Gibludan"
+00000786 - "Destroy Marmoth"
+00000787 - "Destroy Spargun"
+00000788 - “”
+00000789 - "Defeat Nyau in Mesetan Shooter"
+00000790 - "Destroy Garongo"
+00000791 - “Cause a PSE Burst”
+00000792 - "Destroy Grandilga"
+00000793 - "Destroy Sil Sadeenian"
+00000794 - "Destroy De Marmoth"
+00000795 - "Destroy Plosiogrs"
+00000796 - "Destroy Dragon X"
+00000797 - "Destroy Diaboigryphis"
+00000798 - "Destroy Grulfer"
+00000799 - "Destroy Bearabos"
+00000800 - "Destroy Balgraf"
+00000801 - “The Start of the Resort Plan!"
+00000802 - "Speak to Nyssa"
+00000803 - "Destroy Tag Sevanian"
+00000804 - “Send Kudos to Someone”
+00000805 - "Fully Secure Safety!"
+00000806 - "Destroy Krabahda"
+00000807 - "Destroy Dalbolupus"
+00000808 - “Destroy Green Containers”
+00000809 - "Destroy Segrezun"
+00000810 - "Destroy Silt Grimian"
+00000811 - "Destroy Tarobekko"
+00000812 - “Play a FUN Scratch Ticket”
+00000813 - “”
+00000814 - "Have Any Drink"
+00000815 - "Destroy Bluturbon"
+00000816 - "Destroy Banoridian"
+00000817 - "Beach Wars 3!"
+00000818 - “Speak to Allin”
+00000819 - "Destroy Aqualupus"
+00000820 - "Destroy Dhargash"
+00000821 - "An Uninvited Intruder!?"
+00000822 - “Feed an Item to a Mag”
+00000823 - "Destroy Sevanian"
+00000824 - “Speak to Noemi”
+00000825 - "Diving Essentials?"
+00000826 - "Destroy Red Containers"
+00000827 - "Destroy Vol Dragon"
+00000828 - "Play Mesetan Shooter"
+00000829 - “Clear Any Advance Quest”
+00000830 - “Procure Bladeshards and Shells”
+00000831 - “Archrival Arrivals”
+00000832 - "Destroy Vid Giros"
+00000833 - "Successfully Enhance Any Item"
+00000834 - "Resort Plan Defense Battle!?"
+00000835 - "Destroy Zeshraider"
+00000836 - "Destroy Dagan"
+00000837 - "Destroy Dragon X"
+00000838 - “”
+00000839 - "Destroy Catredran"
+00000840 - "Destroy El Arda"
+00000841 - "Destroy Nept Casadohra"
+00000842 - "Destroy Bryu Ringahda"
+00000843 - "Successfully Enhance the Elements of Any Item"
+00000844 - "Destroy Falcabone"
+00000845 - "Destroy Dekor Maryuda"
+00000846 - “Procure Scales and Spikes”
+00000847 - "Divergence Matrix: Obtain ‘Episode 3-5: A History of Darkness’"
+00000848 - "Play Blacknyack"
+00000849 - "Destroy Gigur Gunnegam"
+00000850 - “A Challenge from the Dragon Palace Knight”
+00000851 - "Destroy Pajigwan"
+00000852 - “Invasion of the Sacred Mountain”
+00000853 - "Destroy Mikda"
+00000854 - "Destroy Mudr Toykatta"
+00000855 - "Destroy Kodoniagari"
+00000856 - "Destroy Ban Ogakibar"
+00000857 - "I Want that Moon-Gazing Party Again!"
+00000858 - “Destroy Bomta Bakuta"
+00000859 - "To Make Everyone Smile"
+00000860 - "Destroy Gau Ogakibar"
+00000861 - "Destroy Bichda Rabitta"
+00000862 - "Destroy Dicahdr"
+00000863 - “”
+00000864 - "Destroy Predicahdr"
+00000865 - "Destroy Orota Bikehta"
+00000866 - "A Fight For Dumplings!?"
+00000867 - "A Strange Phenomenon in Nightfall Province!?"
+00000868 - “Destroy Green Containers”
+00000869 - "Just a Little While Until the Moon-Gazing Party!"
+00000870 - "Destroy Bor Ogakibar"
+00000871 - "Destroy Orogrel"
+00000872 - "Destroy Kodotta Idihta"
+00000873 - "Destroy Ahl Mikda"
+00000874 - "Speak to Fina"
+00000875 - "Destroy Itagizakri"
+00000876 - "Destroy Adaogal"
+00000877 - "Destroy Kodotta Idihta"
+00000878 - "Destroy Anshizagri"
+00000879 - "Destroy Gigur Gunnegam"
+00000880 - "Destroy Bonta Beadda"
+00000881 - "Gathering of Cataclysmic Souls"
+00000882 - “Suppress the Bor Ogakibar!"
+00000883 - “Holy Byway, Foul Impediment”
+00000884 - “Suppress the Ban Ogakibar!"
+00000885 - “Perfect Attack Boot Camp - Nightfall Province”
+00000886 - “The Rarest of Rappies”
+00000887 - "Destroy Rerangam"
+00000888 - "Destroy Gillnas"
+00000889 - "Destroy Gannagam"
+00000890 - “Nyaut and About”
+00000891 - "Divergence Matrix: Obtain ‘Episode 3-6: Where Emotions Lead’"
+00000892 - “Suppress the Gau Ogakibar!"
+00000893 - "Destroy Izaogal"
+00000894 - "Customize Photon Arts"
+00000895 - "Destroy Dark Ragne"
+00000896 - "Destroy Pitta Wadda"
+00000897 - "Destroy Gwahl Jigmolde"
+00000898 - "Destroy Pajigeeri"
+00000899 - "Destroy Anjadeurili"
+00000900 - "Destroy Prata Picohda"
+00000901 - "Destroy Guardinan Custom"
+00000902 - "Destroy Vint Balger"
+00000903 - "Destroy Ganon Balger"
+00000904 - "Destroy Jagd Balger"
+00000905 - "Destroy Spargun"
+00000906 - “Called by Machine Noise"
+00000907 - "Destroy Bichda Rabitta"
+00000908 - “”
+00000909 - “”
+00000910 - "Put the Raging Toys in the Toy Box!"
+00000911 - "Destroy Signogun"
+00000912 - "Speak to Fina"
+00000913 - “Destroy Green Containers”
+00000914 - "Trick or Click!?"
+00000915 - "Destroy Signo Beat"
+00000916 - "Pop a Horror Lollipop"
+00000917 - "Destroy Mudr Toykatta"
+00000918 - "Speak to Fahmer"
+00000919 - "Destroy Bonta Beadda"
+00000920 - "The Technique of an Unknown Craftsman"
+00000921 - "Destroy Spardun A"
+00000922 - “Destroy Bomta Bakuta"
+00000923 - "Destroy Pitta Wadda"
+00000924 - "Destroy Prata Picohda"
+00000925 - "Destroy Kindidd Custom"
+00000926 - “Procure Guardine Frames”
+00000927 - "Destroy Lanz Valehda"
+00000928 - "Successfully Enhance Any Item"
+00000929 - "Destroy Zeta Granz"
+00000930 - “Nyaut and About”
+00000931 - “A New Trial in the Desert”
+00000932 - "Destroy Dwe Solda"
+00000933 - "Destroy Red Containers"
+00000934 - "Destroy Solda Capita"
+00000935 - "Trick or Treat 4!"
+00000936 - "Destroy Dingale"
+00000937 - "Play Blacknyack"
+00000938 - “”
+00000939 - "Customize Photon Arts"
+00000940 - "Destroy Jagd Dingale"
+00000941 - "Destroy Big Varder"
+00000942 - "Destroy Guru Solda"
+00000943 - "Speak to Nautbraugher"
+00000944 - "Destroy Luda Sorcerer"
+00000945 - "Divergence Matrix: Obtain ‘Episode 3-7: Past That Day, To a New Future’"
+00000946 - “The Rarest of Rappies”
+00000947 - "Destroy Orota Bikehta"
+00000948 - "Successfully Enhance the Elements of Any Item"
+00000949 - "Destroy Kodotta Idihta"
+00000950 - “Procure Gillnas Armor”
+00000951 - "A Sudden Christmas Carol"
+00000952 - "Destroy Predicahdr"
+00000953 - “Feed an Item to a Mag”
+00000954 - "Destroy De Marmoth"
+00000955 - "Falspawn in the Night"
+00000956 - "Destroy Broondarl"
+00000957 - "Destroy Prata Picohda"
+00000958 - "Have Any Drink"
+00000959 - "Destroy Grulfer"
+00000960 - "Destroy Marmoth"
+00000961 - "Play Rappy Slots"
+00000962 - “Speak to Lachesis”
+00000963 - “”
+00000964 - “Speak to Allin”
+00000965 - "Play Blacknyack"
+00000966 - "Destroy Phangrulfer"
+00000967 - "Destroy Yedi"
+00000968 - “Play a FUN Scratch Ticket”
+00000969 - “Destroy Bomta Bakuta"
+00000970 - "Destroy Pitta Wadda"
+00000971 - "Jingle Go My Way!"
+00000972 - "Destroy Dekor Maryuda"
+00000973 - “Destroy Green Containers”
+00000974 - "Destroy Luda Sorcerer"
+00000975 - "Rappy Rings Twice!?"
+00000976 - “Nyaut and About”
+00000977 - "Destroy Bichda Rabitta"
+00000978 - "Destroy Red Containers"
+00000979 - “Christmas on Ice 4”
+00000980 - "Destroy Damoth"
+00000981 - “Perfect Attack Boot Camp - Nightfall Province”
+00000982 - "Destroy Bonta Beadda"
+00000983 - "Speak to Zig"
+00000984 - "Destroy Dwe Solda"
+00000985 - “Eraser Report IV”
+00000986 - "Destroy Shutrahda"
+00000987 - "Successfully Enhance the Elements of Any Item"
+00000988 - “”
+00000989 - "Successfully Enhance Any Item"
+00000990 - "Destroy Tyraluda"
+00000991 - “Bloody Ruins V”
+00000992 - "Destroy Gal Gryphon"
+00000993 - “Send Kudos to Someone”
+00000994 - “Procure Giant Toy Fragment”
+00000995 - “Clear Any Extreme Quest”
+00000996 - "Destroy Mudr Toykatta"
+00000997 - "Destroy Bryu Ringahda"
+00000998 - “Demolition Ambition II”
+00000999 - "Divergence Matrix: Obtain ‘Episode 3-8: Shining Comes’"
+00001000 - “The Rarest of Rappies”
+00001001 - "Destroy Yedi"
+00001002 - "Destroy Sil Deenian"
+00001003 - "Destroy Deenian"
+00001004 - "Destroy Sol Deenian"
+00001005 - "Destroy Vol Dragon"
+00001006 - "Destroy Gillnach"
+00001007 - "Destroy Dekor Maryuda"
+00001008 - “Speak to Pietro”
+00001009 - "Destroy Phangrulfer"
+00001010 - "Destroy Davrunda"
+00001011 - “Destroy Bomta Bakuta"
+00001012 - "Play Mesetan Shooter"
+00001013 - “”
+00001014 - "Play Rappy Slots"
+00001015 - "Destroy Cychronahda"
+00001016 - "Destroy Jagd Balger"
+00001017 - "Destroy Phongrulf"
+00001018 - “Destroy Green Containers”
+00001019 - "Destroy Bryu Ringahda"
+00001020 - "Destroy Krahda"
+00001021 - "Destroy Vardersoma"
+00001022 - "Destroy Nordeeran"
+00001023 - "Destroy Deeg"
+00001024 - "Destroy Fodran"
+00001025 - "Destroy Za'udan"
+00001026 - "Hold a Thanksgiving Festival!"
+00001027 - "Destroy Bor Ogakibar"
+00001028 - "Destroy Ban Ogakibar"
+00001029 - "Destroy Gau Ogakibar"
+00001030 - "Start Preparing for Thanksgiving!"
+00001031 - “Cause a PSE Burst”
+00001032 - "Destroy Kodotta Idihta"
+00001033 - “Clear Any Recommended Quest to Get a Special Present”
+00001034 - "Speak to Faina"
+00001035 - "Destroy Tranmizer"
+00001036 - "Destroy Orota Bikehta"
+00001037 - "Destroy Catredran"
+00001038 - “”
+00001039 - "Destroy Gwanada"
+00001040 - "Destroy Luda Sorcerer"
+00001041 - "Destroy Dicahdr"
+00001042 - "Destroy Red Containers"
+00001043 - "Destroy Bonta Beadda"
+00001044 - "Destroy Bichda Rabitta"
+00001045 - "Destroy Predicahdr"
+00001046 - "Can You... Handle Thanksgiving?"
+00001047 - “Special Blockade Area Annihilation”
+00001048 - "Destroy Zeta Granz"
+00001049 - “Clear Storyboard Chapter 1 'When I Opened My Eyes'"
+00001050 - “Emergent Phantasmic Threat”
+00001051 - "Play Blacknyack"
+00001052 - "Destroy Dhargash"
+00001053 - "Do Egg Synthesis"
+00001054 - "Destroy Wyndila"
+00001055 - “Speak to Xiera”
+00001056 - "Destroy Shutrahda"
+00001057 - “Gathering Some Fun”
+00001058 - “Play a FUN Scratch Ticket”
+00001059 - "Destroy Druahda"
+00001060 - "Destroy Ceto Sadeenian"
+00001061 - "Have Any Drink"
+00001062 - "Speak to Aida"
+00001063 - “”
+00001064 - “Speak to Yerkes”
+00001065 - “Destroy Green Containers”
+00001066 - "Destroy Krabahda"
+00001067 - "Destroy Pitta Wadda"
+00001068 - “Feed an Item to a Mag”
+00001069 - "Destroy Dirandahl"
+00001070 - "Destroy Nordeeransa"
+00001071 - "Destroy Catredransa"
+00001072 - "Destroy Guwonda"
+00001073 - "Set Sweets"
+00001074 - "Destroy Cychronahda"
+00001075 - "Play Mesetan Shooter"
+00001076 - "Destroy Dragon X"
+00001077 - "Destroy Snow Banser"
+00001078 - "Destroy Dagan"
+00001079 - "The Reaper Scythe Gleams in the Dark"
+00001080 - "Destroy Goron Zran"
+00001081 - "Destroy Bryu Ringahda"
+00001082 - “Procure Quartz Dragon Scales”
+00001083 - “Speak to Pietro”
+00001084 - "Destroy Dark Ragne"
+00001085 - “A New Trial on the Floating Continent”
+00001086 - "Destroy the T15 Tank"
+00001087 - "Destroy Orota Bikehta"
+00001088 - “”
+00001089 - "Destroy Bichda Rabitta"
+00001090 - "Destroy Red Containers"
+00001091 - “The Great White Day Kerfuffle 2016”
+00001092 - "Destroy Sol Dirandahl"
+00001093 - "Compress Sweets"
+00001094 - "Destroy the Quartz Dragon"
+00001095 - "Destroy Guru Solda"
+00001096 - "Destroy Train Gidrahn"
+00001097 - "The Black Giant Rises"
+00001098 - "Destroy Zeshraider"
+00001099 - “Bloody Ruins I”
+00001100 - "Destroy Wolguarda"
+00001101 - “Send Kudos to Someone”
+00001102 - "Destroy Gawonda"
+00001103 - "Destroy Luda Sorcerer"
+00001104 - "Play Mesetan Shooter"
+00001105 - "Speak to Faina"
+00001106 - "Destroy Kodotta Idihta"
+00001107 - "Speak to Aaltje"
+00001108 - "Destroy Jagd Balger"
+00001109 - "Destroy Goldrahda"
+00001110 - "Do Egg Synthesis"
+00001111 - "Destroy Dicahdr"
+00001112 - "Destroy Signo Beat"
+00001113 - “”
+00001114 - "Destroy Carthago"
+00001115 - "Destroy Ahl Mikda"
+00001116 - “Feed an Item to a Mag”
+00001117 - “Falspawn Eradication I”
+00001118 - "Destroy Kindidd Custom"
+00001119 - "Successfully Enhance Any Item"
+00001120 - "Destroy Guardinan Custom"
+00001121 - “Speak to Lachesis”
+00001122 - “Clear Any Recommended Quest to get a Special Present"
+00001123 - "Destroy Orota Bikehta"
+00001124 - “Emergent Phantasmic Threat”
+00001125 - “Destroy Green Containers”
+00001126 - "Play Rappy Slots"
+00001127 - "Destroy Wolguarda"
+00001128 - "Absolute Black Wall"
+00001129 - “Wild Easter 2016”
+00001130 - “Speak to Sophia”
+00001131 - “Procure Kindidd Custom Blade”
+00001132 - "Destroy Bar Lodos"
+00001133 - "Destroy Vint Balger"
+00001134 - "Enhance a Ring"
+00001135 - “Avian Harbinger of Stormwinds”
+00001136 - "Story Quest Chapter 2 'Phantom Reality' Complete"
+00001137 - "Destroy Falz Hyunal"
+00001138 - “”
+00001139 - “A Mild Case of Murder III”
+00001140 - "Speak to Nautbraugher"
+00001141 - "Destroy Varima Leopod"
+00001142 - “Demolition Ambition III”
+00001143 - "Destroy Kaiser Balger"
+00001144 - "Destroy Red Containers"
+00001145 - "Destroy Sinow Rapidus"
+00001146 - "Successfully Enhance the Elements of Any Item"
+00001147 - "Destroy Bryu Ringahda"
+00001148 - “The Rarest of Rappies”
+00001149 - "Destroy Falke Leone"
+00001150 - “Special Blockade Area Annihilation”
+00001151 - "Destroy T-Rex"
+00001152 - "Have Any Drink"
+00001153 - “Ring Crafting 101”
+00001154 - “Speak to Prin”
+00001155 - "Destroy Fang Banshee"
+00001156 - “Speak to Chip”
+00001157 - "Destroy Brown Bear"
+00001158 - “Play a FUN Scratch Ticket”
+00001159 - "Destroy Catredran"
+00001160 - “Speak to Pietro”
+00001161 - "Set Sweets"
+00001162 - "Destroy Krabahda"
+00001163 - “”
+00001164 - “Perfect Attack Boot Camp I”
+00001165 - “Weapon Enhancement Seminar”
+00001166 - "Speak to Tifris"
+00001167 - "Destroy Vol Dragon"
+00001168 - "Destroy Phongrulf"
+00001169 - "Destroy Polar Bear"
+00001170 - “Speak to Noemi”
+00001171 - "Destroy Fang Banser"
+00001172 - “Speak to Yerkes”
+00001173 - “Cooking 101”
+00001174 - “Feed an Item to a Mag”
+00001175 - "Destroy Road Roller"
+00001176 - "Destroy Leomaduraad"
+00001177 - "Destroy Bearabos"
+00001178 - “Once Discretion, Now Destruction”
+00001179 - "The Dignity of Steel Unleashed"
+00001180 - "Destroy De Marmoth"
+00001181 - "Destroy Bryu Ringahda"
+00001182 - “Clear Any Recommended Quest to get a Special Present"
+00001183 - "Destroy Sword Zombie"
+00001184 - "Destroy Snow Banser"
+00001185 - "Destroy Heat-Packing Zombie"
+00001186 - “Corrupted Phantasm Core Investigation Request I”
+00001187 - "Destroy Snakeheli"
+00001188 - “”
+00001189 - "Destroy the T15 Tank"
+00001190 - “Rest in Pieces, Train Gidrahn!”
+00001191 - "Destroy Kodotta Idihta"
+00001192 - "Destroy Snow Banshee"
+00001193 - “Cause a PSE Burst”
+00001194 - “Bloody Ruins I”
+00001195 - "Destroy Zeshraider"
+00001196 - "Destroy Nept Casadohra"
+00001197 - "Defeat Queen Mesetan in Mesetan Shooter"
+00001198 - "Test Your Strength in Extreme Training I"
+00001199 - "Destroy Diaboigryphis"
+00001200 - "Destroy Dragon X"
+00001201 - "Speak to Aaltje"
+00001202 - “Feed an Item to a Mag”
+00001203 - "The Dark Retainer Haunting the Altar"
+00001204 - “Destroy Green Containers”
+00001205 - "Destroy Goron Zran"
+00001206 - "Exploration Permit Exam I"
+00001207 - "Destroy Fodran"
+00001208 - "Destroy Deenian"
+00001209 - "Destroy Fodransa"
+00001210 - "Destroy the Quartz Dragon"
+00001211 - "The Altar Guardian Turned Outlaw"
+00001212 - "Destroy Red Containers"
+00001214 - “Speak to Henri”
+00001215 - "Intruder From the Deep"
+00001216 - “Weapon Palette Extension Trial I”
+00001217 - "Destroy Deeg"
+00001218 - "Destroy Sadeenian"
+00001219 - "Destroy Deegahla"
+00001220 - "Destroy Vol Dragon"
+00001221 - “Clear Story Quest Chapter 1 'When I Opened My Eyes'"
+00001222 - "The Nightfallers and the Dragon Altar"
+00001223 - "Enhance a Ring"
+00001224 - "And Now the Conclusion of the Incident...?"
+00001225 - "Destroy Dragon X"
+00001226 - "Incident Deep in the Forest"
+00001227 - "Destroy Bichda Rabitta"
+00001228 - "The Phantom Knight who Wanders the Ruins"
+00001229 - "Destroy Gwahl Jigmolde"
+00001230 - "Destructive Wilderness"
+00001231 - "Destroy Falz Hyunal"
+00001232 - "Story Quest Chapter 2 'Phantom Reality' Complete"
+00001233 - “Feed an Item to a Mag”
+00001234 - “Difficulty Level Trial 1”
+00001235 - "Destroy Zeta Granz"
+00001236 - "Exploration Permit Exam II"
+00001237 - "Destroy Garongo"
+00001239 - "Destroy Fodran"
+00001240 - "Successfully Enhance Any Weapon" 
+00001241 - "Destroy Diaboigryphis"
+00001242 - “Speak to Sirona”
+00001243 - “Send Kudos to Someone”
+00001244 - “View Storyboard Piece [042-E] - ‘Aika's Purpose’”
+00001245 - "Destroy the Falz Angel"
+00001246 - "Giant Wings Bringing Chaos"
+00001247 - "Destroy Grandilga"
+00001248 - “Level Limit Break Trial I”
+00001249 - "Destroy Gunkaiser"
+00001250 - "An Intruder Disrupts the Stillness"
+00001251 - "Exploration Permit Exam III"
+00001252 - "Play Arkuma Slots"
+00001253 - "Destroy Gal Gryphon"
+00001254 - "Destroy the Chrome Dragon"
+00001255 - “Difficulty Level Trial 2”
+00001256 - "Test Your Heart and Soul I"
+00001257 - "Destroy Vid Giros"
+00001258 - “Clear Story Quest Chapter 3 'Phantom Rampage'"
+00001259 - "Destroy Bloomegara"
+00001260 - "Test Your Strength in Extreme Training I"
+00001261 - “Auxiliary Course”
+00001262 - "Destroy Zeshraider"
+00001264 - "Destroy Dekor Maryuda"
+00001265 - “Play a FUN Scratch Ticket”
+00001266 - "Play Blacknyack"
+00001267 - "Destroy Banoridian"
+00001268 - “ARKS Rush Survey”
+00001269 - "Destroy Luda Sorcerer"
+00001270 - "Destroy Red Containers"
+00001271 - “Level Limit Break Trial II”
+00001272 - "Destroy Fal Vibras"
+00001273 - "Destroy Sevanian"
+00001274 - “Cause a PSE Burst”
+00001275 - “Clear Story Quest Chapter 3 ‘A Return to Normalcy’"
+00001276 - "Destroy Izaogal"
+00001277 - “Speak to Sirona”
+00001278 - “Destroy Green Containers”
+00001279 - “Clear Story Quest Chapter 1 'When I Opened My Eyes'"
+00001280 - "The Visionary Sorceress and the Investigation"
+00001281 - "Destroy Goldrahda"
+00001282 - "Destroy Itagizakri"
+00001283 - “Destroy Bomta Bakuta"
+00001284 - "Speak to Ariel"
+00001285 - "Enhance a Weapon"
+00001286 - "Destroy Mudr Toykatta"
+00001287 - “Feed an Item to a Mag”
+00001289 - “Speak to Prin”
+00001290 - "Destroy Bonta Beadda"
+00001291 - "Destroy Anshizagri"
+00001292 - "The Hero and the Visionary Sorceress"
+00001293 - "Destroy Predicahdr"
+00001294 - “Speak to Yerkes”
+00001295 - “Speak to Mimi”
+00001296 - "Destroy Gwahl Jigmolde"
+00001297 - "Destroy Pajigeeri"
+00001298 - "Destroy Kodoniagari"
+00001299 - "Destroy Orota Bikehta"
+00001300 - "Destroy Gannagam"
+00001301 - "Destroy Dark Ragne"
+00001302 - "Destroy Zeshraider"
+00001303 - “An Airborne Test of Strength I”
+00001304 - "Destroy Gal Gryphon"
+00001305 - "Destroy Bor Ogakibar"
+00001306 - "Destroy Vegas Illusia"
+00001307 - "Destroy Ban Ogakibar"
+00001308 - "Destroy Chainsaw Clown"
+00001309 - "Destroy Bichda Rabitta"
+00001310 - "Destroy Falz Hyunal"
+00001311 - "Have Any Drink"
+00001312 - "Enhance a Ring"
+00001314 - "Destroy Dullahan Biker"
+00001315 - “Phantasms in the Neon Metropolis”
+00001316 - "Destroy the Phantasm Aerial Fortress!"
+00001317 - "Destroy Orogrel"
+00001318 - "Play Arkuma Slots"
+00001319 - “What Happens in Vegas...”
+00001320 - "Destroy Gwanada"
+00001321 - “Procure Truck Muffler”
+00001322 - "Destroy Kodotta Idihta"
+00001323 - "Destroy Red Containers"
+00001324 - "Destroy Gigur Gunnegam"
+00001325 - “Nyaut and About”
+00001326 - "Destroy Luda Sorcerer"
+00001327 - "Destroy Kodotta Idihta"
+00001328 - "Free Exploration Permission Request: Tundra"
+00001329 - “Play a FUN Scratch Ticket”
+00001330 - "Destroy Guru Solda"
+00001331 - "Destroy Ganon Balger"
+00001332 - "Destroy Signogun"
+00001333 - "Destroy Pitta Wadda"
+00001334 - "Destroy Kindidd Custom"
+00001335 - "Destroy Guardinan Custom"
+00001336 - "Destroy Bonta Beadda"
+00001337 - “Speak to Sirona”
+00001339 - “Destroy Green Containers”
+00001340 - "Destroy Jagd Balger"
+00001341 - “Speak to Prin”
+00001342 - “Clear Story Quest Chapter 1 'When I Opened My Eyes'"
+00001343 - “Send Kudos to Someone”
+00001344 - "Destroy Spargun"
+00001345 - "Speak to Aaltje"
+00001346 - "Destroy Lanz Valehda"
+00001347 - "Free Exploration Permission Request: Volcanic Caves"
+00001348 - “Speak to Chroto”
+00001349 - "Destroy Zeta Granz"
+00001350 - "Destroy Dwe Solda"
+00001351 - “Running Maneuvers: Tokyo”
+00001352 - "Destroy Tranmizer"
+00001353 - "Destroy Red Containers"
+00001354 - "Destroy Goron Zran"
+00001355 - "Destroy T-Rex"
+00001356 - "Destroy Big Varder"
+00001357 - "Destroy Dekor Maryuda"
+00001358 - "Destroy Solda Capita"
+00001359 - "Destroy Fang Banser"
+00001360 - "Destroy Train Gidrahn"
+00001361 - "Destroy Road Roller"
+00001362 - “Cause a PSE Burst”
+00001364 - "Go Fishing"
+00001365 - "Destroy Gillnas"
+00001366 - "Destroy Bryu Ringahda"
+00001367 - “The Rarest of Rappies”
+00001368 - “Clear Any Recommended Quest to get a Special Present"
+00001369 - "Destroy Zeshraider"
+00001370 - "Defeat King Mesetan in Mesetan Shooter"
+00001371 - "Destroy Snakeheli"
+00001372 - "Destroy Falke Leone"
+00001373 - “Go Harvesting”
+00001374 - "Destroy Dio Hyunal"
+00001375 - "Destroy the T15 Tank"
+00001376 - "Play Blacknyack"
+00001377 - "Destroy Broondarl"
+00001378 - "Show Me How You Fight"
+00001379 - "Destroy Dio Hyunal"
+00001380 - "Destroy Prata Picohda"
+00001381 - "Destroy Mudr Toykatta"
+00001382 - "Speak to Aaltje"
+00001383 - "Enhance a Weapon"
+00001384 - "Speak to Gené"
+00001385 - "Destroy Tyraluda"
+00001386 - "Search for Flowers to Decorate a Sickroom"
+00001387 - "Destroy Marmoth"
+00001389 - “Feed an Item to a Mag”
+00001390 - “Speak to Prin”
+00001391 - “Speak to Chroto”
+00001392 - “Speak to Noemi”
+00001393 - "Destroy Red Containers"
+00001394 - "Have Any Drink"
+00001395 - "Destroy Dicahdr"
+00001396 - "Speak to Aida"
+00001397 - "Story Quest Chapter 2 'Phantom Reality' Complete"
+00001398 - "Won't You Come with Me?"
+00001399 - "Destroy Shutrahda"
+00001400 - "Destroy King Yedi"
+00001401 - “Procure Grulfer Meat”
+00001402 - "Story Quest Chapter 6 'Feelings Take Shape' Complete"
+00001403 - "Destroy Orota Bikehta"
+00001404 - “Fervent Onslaught II”
+00001405 - "A Request"
+00001406 - "Destroy Fang Banshee"
+00001407 - “The Rarest of Rappies”
+00001408 - "Destroy Phangrulfer"
+00001409 - "Destroy Diaboigryphis"
+00001410 - “Rest in Pieces, Gwahl Jigmolde!”
+00001411 - “Demolition Ambition II”
+00001412 - "Play Arkuma Slots"
+00001414 - “The Joys of Parenthood”
+00001415 - "Destroy Lanz Valehda"
+00001416 - “A New Trial in the Tundra”
+00001417 - "Destroy Gal Gryphon"
+00001418 - "Destroy Predicahdr"
+00001419 - "Destroy the T15 Tank"
+00001420 - "Destroy Zeta Granz"
+00001421 - "Destroy Luda Sorcerer"
+00001422 - “An Indomitable Symbiote!?”
+00001423 - “Enhance a Skill Ring”
+00001424 - "Destroy the Quartz Dragon"
+00001425 - “Procure Giant Toy Fragment”
+00001426 - “Speak to Azanami”
+00001427 - “Speak to RINA”
+00001428 - “Speak to Sophia”
+00001429 - “Speak to Prin”
+00001430 - “Speak to Monica”
+00001431 - “Speak to Witia”
+00001432 - “Speak to Pati”
+00001433 - “Speak to Tia”
+00001434 - “Speak to Cressida”
+00001435 - “Speak to Katori”
+00001436 - “Speak to Nanon”
+00001437 - “Speak to Sirona”
+00001439 - “Speak to Xiera”
+00001440 - “Speak to Lottie”
+00001441 - “Speak to Marlu”
+00001442 - “Speak to Euclyta”
+00001443 - “Speak to Risa”
+00001444 - “Speak to Lillika”
+00001445 - “Speak to Edge”
+00001446 - “Speak to Flush”
+00001447 - “Speak to Fourie”
+00001448 - ＊＊＊
+00001449 - “Speak to Mimi”
+00001450 - “Speak to Silva”
+00001451 - "Destroy Cychronahda Yuga"
+00001452 - "Destroy Yugadicahdr"
+00001453 - “Clear Any Recommended Quest to get a Special Present"
+00001454 - "Enhance a Weapon"
+00001455 - "Destroy Dephansaur"
+00001456 - "Destroy Drago Deadlion"
+00001457 - "Destroy Catredran"
+00001458 - "Valentine's Advent"
+00001459 - "Destroy Yggda Sorcerer"
+00001460 - "Destroy Goron Zran"
+00001461 - "Play Rappy Slots"
+00001462 - "Destroy Chevalizan"
+00001464 - "Vegas Royale"
+00001465 - “Send Kudos to Someone”
+00001466 - "Destroy Wolguarda"
+00001467 - "For the One and Only RINA"
+00001468 - “Play a FUN Scratch Ticket”
+00001469 - "Enhance a Ring"
+00001470 - “The Elusive Crimson Carapace”
+00001471 - "Destroy Solza Brahda"
+00001472 - "Destroy Gawonda Yuga"
+00001473 - “Clear Story Quest Chapter 7 ‘A Mother's Wish’”
+00001474 - "Destroy Boks Deubarz"
+00001475 - "Unlucky You"
+00001476 - “Speak to Jan”
+00001477 - “Speak to Itsuki”
+00001478 - “Speak to Bhea”
+00001479 - “Speak to Henri”
+00001480 - “Speak to Dudu”
+00001481 - “Speak to Koa”
+00001482 - “Speak to Yerkes”
+00001483 - “Speak to Allin”
+00001484 - “Speak to Hans”
+00001485 - “Speak to Saga”
+00001486 - “Speak to Ante”
+00001487 - “Speak to Chroto”
+00001489 - “Speak to Reda”
+00001490 - “Speak to Rubert”
+00001491 - “Speak to Oza”
+00001492 - “Speak to Amelin”
+00001493 - “Speak to Cuireon”
+00001494 - “Speak to Mutan”
+00001495 - “Speak to Musashi”
+00001496 - “Speak to Pica”
+00001497 - “Speak to Joseph”
+00001498 - “Speak to Kameo”
+00001499 - “Speak to Pietro”
+00001500 - “Speak to Kifas”
+00001501 - "Go Fishing"
+00001502 - "Destroy Dekor Maryuda"
+00001503 - "Play Blacknyack"
+00001504 - “Berserk Enemies at the Floating Continent I”
+00001505 - "Evil Strikes"
+00001506 - "Destroy the Quartz Dragon"
+00001507 - “A Request III”
+00001508 - “Demolition Ambition V”
+00001509 - "Destroy Bichda Rabitta"
+00001510 - "Destroy Zeshraider"
+00001511 - “Destroy Green Containers”
+00001512 - “Nyaut and About”
+00001514 - “Clear Story Quest Chapter 8 ‘Faulty Evolution’"
+00001515 - “Something in Return"
+00001516 - "Destroy Z Schwarzus"
+00001517 - "Destroy Sol Dirandahl"
+00001518 - "Destroy Dhargacha"
+00001519 - “Procure Wyndila Winged Horns”
+00001520 - "Destroy Dio Hyunal"
+00001521 - "Something in Return...in Return"
+00001522 - "Destroy Gryuzoras Drago"
+00001523 - "Destroy Valgahla"
+00001524 - "Destroy Dragon X"
+00001525 - “The Earthdwelling Dragon”
+00001526 - “Access the Free Drink Stand”
+00001527 - “Cause a Rappy PSE Burst in Rappy Slots"
+00001528 - "Check the AC Shop Product List"
+00001529 - "Play Arkuma Slots"
+00001530 - "Speak to Frosty"
+00001531 - “Speak to Chip”
+00001532 - “Speak to Nanon”
+00001533 - "Go Fishing"
+00001534 - “View Storyboard Piece [042-E] - ‘Aika's Purpose’”
+00001535 - "Defeat King Mesetan in Mesetan Shooter"
+00001536 - “Go Harvesting”
+00001537 - "Speak to Zig"
+00001539 - “Access the Lillipan Graffiti”
+00001540 - “Clear Any Recommended Quest to get a Special Present"
+00001541 - “Clear Story Quest Chapter 3 ‘A Return to Normalcy’"
+00001542 - “Play a FUN Scratch Ticket”
+00001543 - "Play Mesetan Shooter"
+00001544 - "Speak to Aaltje"
+00001545 - "Play Rappy Slots"
+00001546 - "Obtain Casino Coins at the Coin Exchanger"
+00001547 - "Speak to Aida"
+00001548 - “Speak to Sirona”
+00001549 - "Enhance a Weapon"
+00001550 - "Speak to Ralaf"
+00001551 - "Destroy Dullahan Biker"
+00001552 - “The Gods of Storms and Lightning”
+00001553 - "Have Any Drink"
+00001554 - "Destroy Zeta Granz"
+00001555 - "Destroy Gunkaiser"
+00001556 - “Avian Harbinger of Stormwinds”
+00001557 - "Destroy Jagd Dingale"
+00001558 - "Unbreakable Invader"
+00001559 - "Destroy Anjadeurili"
+00001560 - "Destroy Fal Vibras Yuga"
+00001561 - "Survey Clean-Up Op"
+00001562 - “Feed an Item to a Mag”
+00001564 - "Speak to Cofy"
+00001565 - "Large-Scale Enemy Survey"
+00001566 - "Destroy Esca Ragnes"
+00001567 - "Destroy Kaisfoehgo"
+00001568 - "An Abnormal Falspawn Outbreak"
+00001569 - "Destroy Lanka Valehs"
+00001570 - "Destroy Dekor Maryuda"
+00001571 - “Holy Byway, Foul Impediment”
+00001572 - "Destroy the Chrome Dragon"
+00001573 - “Speak to Prin”
+00001574 - “The Savage...Lilipans?”
+00001575 - "Destroy AIS Exoda"
+00001576 - “Rookie ARKS”
+00001577 - “Send Someone a ‘Like’ on Lookbook”
+00001578 - "Destroy Dhargacha"
+00001579 - “Speak to Pietro”
+00001580 - "Play Mesetan Shooter"
+00001581 - "Destroy Kodotta Idihta"
+00001582 - "Destroy Dekor Maryuda"
+00001583 - "Destroy Lanka Valehs"
+00001584 - "Destroy De Marmoth"
+00001585 - “Clear Story Quest Chapter 4 ‘Earth's Shepherd’”
+00001586 - “Speak to Prin”
+00001587 - "Destroy Garongo"
+00001589 - “Speak to Noemi”
+00001590 - “View a Player Look in Lookbook”
+00001591 - "Destroy Gwanada"
+00001592 - "Play Blacknyack"
+00001593 - "Destroy Vidrolda"
+00001594 - "Destroy the Rockbear"
+00001595 - "Destroy Dark Ragne"
+00001596 - "Destroy Marmoth"
+00001597 - "Destroy Diaboigryphis"
+00001598 - “Wannabe Model”
+00001599 - "Destroy Pras Picohs"
+00001600 - "Destroy King Yedi"
+00001601 - "Destroy Bryu Ringahda"
+00001602 - “Bloody Ruins III”
+00001603 - "Destroy Gachas"
+00001604 - “Berserk Enemies in the Forest II”
+00001605 - “Clownish Pebble Collecting”
+00001606 - "Destroy Vegas Illusia"
+00001607 - "Destroy Dekor Maryuz"
+00001608 - "Destroy Guwonda"
+00001609 - "Destroy Plosiogrs"
+00001610 - "Destroy the T15 Tank"
+00001611 - “Clear Story Quest Chapter 8 ‘Avatar of Annihilation’"
+00001612 - "Destroy Platidrahs"
+00001614 - "Play Arkuma Slots"
+00001615 - "Destroy Emperappy"
+00001616 - “A New Trial in the Forest”
+00001617 - “Procure Fang Banser Pelts”
+00001618 - "Destroy Vidrols"
+00001619 - "Destroy Bearabos"
+00001620 - "Destroy Esca Ragnes"
+00001621 - “The Rarest of Rappies”
+00001622 - "Destroy Gal Gryphon"
+00001623 - “A Desperate Test of Strength I”
+00001624 - “Deus Esca, the False Creator, Maker of New Epochs”
+00001625 - “An Air of Enhancement”
+00001626 - "Destroy the Falz Angel"
+00001627 - ＊＊＊
+00001628 - "Day After Day"
+00001629 - ＊＊＊
+00001630 - "Destroy Falz Hyunal"
+00001631 - "The Longest Day IV"
+00001632 - "Special Breakthrough Training: Episode 1"
+00001633 - "Enhance a Weapon"
+00001634 - "Special Breakthrough Training: Episode 2"
+00001635 - "The Longest Day I"
+00001636 - "Destroy Orgbran"
+00001637 - "Destroy the Devil Truck"
+00001639 - "Destroy Leomaduraad"
+00001640 - "Destroy the Rockbear"
+00001641 - ＊＊＊
+00001642 - "Special Breakthrough Training: Episode 3"
+00001643 - “Level Limit Break Trial I”
+00001644 - "Special Breakthrough Training: Episode 4"
+00001645 - ＊＊＊
+00001646 - "Destroy Deus Hyunas"
+00001647 - "The Longest Day II"
+00001648 - ＊＊＊
+00001649 - "The Longest Day III"
+00001650 - "Destroy Dio Hyunal"
+00001651 - "Destroy AIS Exoda"
+00001652 - "Destroy Fodran"
+00001653 - “Clear Story Quest Chapter 8 ‘Avatar of Annihilation’"
+00001654 - "Destroy Catredransa"
+00001655 - "Destroy Barbalillipan"
+00001656 - "Wings that Rend the Heavens"
+00001657 - “Avian Harbinger of Stormwinds”
+00001658 - "Destroy Aratron Femt"
+00001659 - "Destroy Goldrahda"
+00001660 - "Defeat King Mesetan in Mesetan Shooter"
+00001661 - "Heaven's Fall"
+00001662 - "Destroy Dekor Maryuz"
+00001664 - "Destroy Esca Ragnes"
+00001665 - "Enhance a Ring"
+00001666 - “Rest in Pieces, Dragon X!”
+00001667 - "Destroy Kodotta Idihta"
+00001668 - "Destroy Deus Anges"
+00001669 - “Soaring Iron Shadow”
+00001670 - “Azure Overlord of the Skies”
+00001671 - "Destroy Fal Vibras"
+00001672 - "Destroy Pendran"
+00001673 - "Pacific Conqueror"
+00001674 - "Destroy Dirandahl"
+00001675 - "Destroy Magatsu Sai"
+00001676 - "Speak to Stratos"
+00001677 - "Destroy Segrezun"
+00001678 - "Beach Wars 2017!"
+00001679 - "Destroy Dalbolupus"
+00001680 - "Mag License Trial"
+00001681 - "Destroy Druahda"
+00001682 - “Speak to Sirona”
+00001683 - “What Put a Stop to the Event?”
+00001684 - "Speak to Astarte"
+00001685 - "Exploration Permit Exam I"
+00001686 - “Enemy-Infested Events, Oh My!”
+00001687 - "Have Any Drink"
+00001689 - “Speak to Lachesis”
+00001690 - "Destroy Shutrahda"
+00001691 - "Play Mesetan Shooter"
+00001692 - "Go Fishing"
+00001693 - "Destroy Valadinan"
+00001694 - "Speak to Alma"
+00001695 - “Event Preparations, Interrupted”
+00001696 - “The Best-Laid Summer Plans”
+00001697 - “Difficulty Level Trial 1”
+00001698 - “Send Kudos to Someone”
+00001699 - “Ominous Shadow, Dog-Day Doom”
+00001700 - “Speak to Sophia”
+00001701 - "Destroy Bal Broondarl"
+00001702 - “The Unknown Threat”
+00001703 - "Destroy Castrum Demonica: Lanzer Vales"
+00001704 - “Aggressive Illusions IV”
+00001705 - "Destroy Luda Sorcerer"
+00001706 - “Ace Soldier”
+00001707 - "Destroy Banoridian"
+00001708 - "Destroy Bomber Golem"
+00001709 - "Destroy Train Gidrahn"
+00001710 - “Aggressive Illusions V”
+00001711 - “Aggressive Illusions III”
+00001712 - “Redresser of Distortion”
+00001714 - "Destroy Omega Wolf"
+00001715 - "Complete Any Buster Quest"
+00001716 - "Destroy Bal Shutrahda"
+00001717 - “Aggressive Illusions II”
+00001718 - "Destroy Silt Grimian"
+00001719 - "Destroy Rock Golem"
+00001720 - "Destroy Tag Aqualupus"
+00001721 - "Destroy Solda Capita"
+00001722 - "Destroy Gachas"
+00001723 - "Destroy Minotaurgz"
+00001724 - "Destroy Gal Gryphon"
+00001725 - "Destroy Biol Meduna" 
+00001726 - “Trial of the Noble Guardian”
+00001727 - "Destroy Orogrel"
+00001728 - “Trial of the Unenviable Violators”
+00001729 - "Destroy Prata Picohda"
+00001730 - “Trial by Fang and Claw”
+00001731 - "Destroy Dicahdr"
+00001732 - "Destroy Pras Picohs"
+00001733 - "Speak to Yamigarasu"
+00001734 - "Destroy Pajigwan"
+00001735 - "Destroy Kodoniagari"
+00001736 - "Check the AC Shop Product List"
+00001737 - "Gathering of Cataclysmic Souls 2017"
+00001739 - “Darkwinged Finale”
+00001740 - "Have Any Drink"
+00001741 - "Destroy Pajigeeri"
+00001742 - "Destroy Sniper Neon"
+00001743 - “Speak to Prin”
+00001744 - "Destroy Izaogal"
+00001745 - “Destroy Bomta Bakuta"
+00001746 - “Trial of the Skyshearing Shards”
+00001747 - "Destroy Itagizakri"
+00001748 - "Play Blacknyack"
+00001749 - "Speak to Aaltje"
+00001750 - “Trial of the Inveterate Veteran”
+00001751 - "Destroy Orc Bomber"
+00001752 - "Destroy Predicahdr Nero"
+00001753 - “Demolition Ambition III”
+00001754 - "Destroy Goldrahda"
+00001755 - "Destroy Gal Gryphon"
+00001756 - “Goldenclad Guardian”
+00001757 - "Destroy Predicahdr"
+00001758 - "Destroy Bomber Golem"
+00001759 - “Nyaut and About”
+00001760 - “Go Harvesting”
+00001761 - "Destroy Gannagam"
+00001762 - "Destroy Valehs Lankaas"
+00001764 - "Destroy Platidrahs"
+00001765 - “The Gods of Storms and Lightning”
+00001766 - “Clear Any Buster Quest"
+00001767 - "Destroy Gwahl Jigmolde"
+00001768 - "Destroy Minotaurgz"
+00001769 - “Procure Horns and Wrappings”
+00001770 - "Destroy Castrum Demonica: Lanzer Vales"
+00001771 - “Procure Soul Hunter's Great Scythe”
+00001772 - "Destroy Gimungamuy"
+00001773 - "Destroy Gau Ogakibar"
+00001774 - "Destroy Olnagamuy"
+00001775 - "Destroy Ban Ogakibar"
+00001776 - "Destroy Dingale"
+00001777 - "Rush Practice and a Mighty Foe"
+00001778 - “Send Someone a ‘Like’ on Lookbook”
+00001779 - "The Ruins of Fate"
+00001780 - "Destroy Guardinan Custom"
+00001781 - "Destroy Cychronahda"
+00001782 - “Acquire Bearer of Formidable Strength"
+00001783 - "Matoi: A Little Sweet, A Little Strange"
+00001784 - Trick or Treat 2017!
+00001785 - "Destroy Carthago"
+00001786 - "Destroy Bonta Beattas"
+00001787 - "Speak to Matoi (Halloween)"
+00001789 - “Speak to Prin”
+00001790 - "Destroy Gachas"
+00001791 - "Spooky Naverius"
+00001792 - "Destroy Vidrolda"
+00001793 - “Destroy Green Containers”
+00001794 - "Destroy Spardun A"
+00001795 - "Dearest Harukotan"
+00001796 - "Destroy Sniper Neon"
+00001797 - "Destroy Gawonda"
+00001798 - “Play a FUN Scratch Ticket”
+00001799 - "Destroy Pras Picohs"
+00001800 - "Destroy Dagan"
+00001801 - "Destroy Gunkaiser"
+00001802 - "Destroy Dio Hyunal"
+00001803 - “Demolition Ambition III”
+00001804 - "Destroy T-Rex"
+00001805 - "Destroy Emperappy"
+00001806 - "Destroy Rapid Gillnas"
+00001807 - "Destroy El Arda"
+00001808 - "Destroy the Devil Truck"
+00001809 - “Long-Barreled Blockader”
+00001810 - "Destroy Bladingale"
+00001811 - "Destroy Falz Hyunal"
+00001812 - “Go Harvesting”
+00001814 - "Go Fishing"
+00001815 - "Destroy Jagd Dingale"
+00001816 - "Destroy Gawonda Yuga"
+00001817 - "Destroy AIS Exoda"
+00001818 - "Complete Any Buster Quest"
+00001819 - "Destroy Esca Ragnes"
+00001820 - "Destroy Falke Leone"
+00001821 - "Destroy Cuchronahda Yuga"
+00001822 - "Face the Dark"
+00001823 - "Play Mesetan Shooter"
+00001824 - "Destroy Dekor Maryuz"
+00001825 - "Destroy Vegas Illusia"
+00001826 - "Speak to Tia (Christmas)"
+00001827 - "Destroy Yedi"
+00001828 - “Target: Santa Claus!”
+00001829 - "Check the AC Shop Product List"
+00001830 - “Santa Claus Is Back in Town!”
+00001831 - "Medical Bay Snafu"
+00001832 - “Christmas on Ice 2017”
+00001833 - "Destroy Grulfer"
+00001834 - “Pound That Pavement!”
+00001835 - "Speak to Pati (Christmas)"
+00001836 - "Destroy Nyau"
+00001837 - "Enhance a Weapon"
+00001839 - "Destroy Gachas"
+00001840 - “Ask Us About Us!”
+00001841 - “Let's Find Some Yuletide Proof!”
+00001842 - "Destroy Marmoth"
+00001843 - "Play Arkuma Slots"
+00001844 - "Destroy Pras Picohs"
+00001845 - "Destroy King Yedi"
+00001846 - "Destroy Phangrulfer"
+00001847 - “How Do Those Reindeer Fly, Anyway!?”
+00001848 - "Destroy Vidrols"
+00001849 - “Play a FUN Scratch Ticket”
+00001850 - "Destroy Es Opsis"
+00001851 - "Destroy Falz Dran"
+00001852 - "Destroy Diaboigryphis"
+00001853 - “Aggressive Illusions III”
+00001854 - "Destroy Es Santrus"
+00001855 - "Destroy Plosiogrs"
+00001856 - "Destroy Lanka Valehs"
+00001857 - "Destroy Es Anges"
+00001858 - "Enhance a Ring"
+00001859 - "Destroy Dio Hyunal"
+00001860 - "Destroy Laplace"
+00001861 - “Aggressive Illusions V”
+00001862 - "Complete Any Buster Quest"
+00001864 - “Access the Lillipan Graffiti at the Casino Lobby”
+00001865 - “Procure De Marmoth Meat”
+00001866 - "Destroy Gryuzoras Drago"
+00001867 - "Destroy Deus Hyunas"
+00001868 - "Enhance the Elements of Any Weapon"
+00001869 - "Destroy Bonta Beattas"
+00001870 - "Destroy Aratron Femt"
+00001871 - "Destroy the Falz Angel"
+00001872 - "Destroy Drago Deadlion"
+00001873 - “Aggressive Illusions IV”
+00001874 - "Destroy Emperappy"
+00001875 - "Destroy Falz Hyunal"
+00001876 - "Death Dances in the Heavens"
+00001877 - "Destroy Rappy"
+00001878 - "Speak to Och (Valentine)"
+00001879 - "Destroy Goldrahda"
+00001880 - "Destroy Carthago"
+00001881 - “Demolition Ambition II”
+00001882 - “ARKS Chocolat Navigation II”
+00001883 - "Destroy Yugadicahdr"
+00001884 - “The Key to Success”
+00001885 - “Destroy Green Containers”
+00001886 - “Play a FUN Scratch Ticket”
+00001887 - "Have Any Drink"
+00001889 - "Enhance One Item" 
+00001890 - "Access the AC Shop"
+00001891 - “Sightseeing, ARKS-Style”
+00001892 - "Destroy Yuguldrahda"
+00001893 - "Destroy the Chrome Dragon"
+00001894 - “Send Kudos to Someone”
+00001895 - “ARKS Chocolat Navigation I”
+00001896 - "Play Blacknyack"
+00001897 - “Take Out the Fake Demons!”
+00001898 - "Speak to Phul (Valentine)"
+00001899 - “ARKS du Chocolat?”
+00001900 - "Destroy Catredransa"
+00001901 - “Callers of the Wyrm”
+00001902 - "Destroy Valgahla"
+00001903 - “Aiming for Eradication I”
+00001904 - "Destroy the Skull Soldiers"
+00001905 - “Aiming for Eradication IV”
+00001906 - "Destroy Kodotta Idihta"
+00001907 - "Play Rappy Slots"
+00001908 - “The Colossal Four-Armed Dragon”
+00001909 - “The Sculpture of Chaos”
+00001910 - "Destroy Ventasaur"
+00001911 - "Enhance a Ring"
+00001912 - “Falspawn Eradication II”
+00001914 - "Destroy Orota Bikehta"
+00001915 - “The Unknown Threat”
+00001916 - "Destroy Laplace"
+00001917 - "Destroy Z Schwarzus"
+00001918 - “Access the Lillipan Graffiti at the Casino Lobby”
+00001919 - "Destroy the Falz Angel"
+00001920 - "Destroy Rinze Drahda"
+00001921 - "Destroy Dephansaur"
+00001922 - "Destroy Emperappy"
+00001923 - "Complete Any Buster Quest"
+00001924 - “Draconic Pugilist, Violet Eradicator”
+00001925 - "Destroy Z Chevalizan"
+00001926 - “Help From a Helper”
+00001927 - "Destroy El Arda"
+00001928 - “Go Harvesting”
+00001929 - "Destroy Platidrahs"
+00001930 - “Access the Free Drink Stand at the Casino”
+00001931 - "Destroy Pras Picohs"
+00001932 - "Suppression of a Far More Troublesome Enemy"
+00001933 - "Destroy Rappy"
+00001934 - “I'll Prove I'm Better!”
+00001935 - "Destroy Dekor Maryuz"
+00001936 - "Obtain Casino Coins at the Coin Exchanger"
+00001937 - "Play Blacknyack"
+00001939 - “Destroy Green Containers”
+00001940 - "Enhance One Weapon or Unit"
+00001941 - "Destroy Carthago"
+00001942 - "Play Rappy Slots"
+00001943 - “Draconian Slaying”
+00001944 - “Hitch a Ride on the Balloons in the Casino”
+00001945 - "Destroy Z Chevalizan"
+00001946 - "Speak to Enga (White Day)"
+00001947 - "Destroy Chevalizan"
+00001948 - “Sightseeing, ARKS-Style (Continued)”
+00001949 - "Destroy Lanka Valehs"
+00001950 - “The Great White Day Kerfuffle 2018”
+00001951 - "Destroy Cuchronahda Yuga"
+00001952 - "Destroy Vol Dragon"
+00001953 - "Go Fishing"
+00001954 - "Destroy the Quartz Dragon"
+00001955 - "Destroy Cychronahda Yuga"
+00001956 - "Destroy Maxwell"
+00001957 - "Destroy G Chevalizan"
+00001958 - "Enhance a Ring"
+00001959 - "Destroy Z Schwarzus"
+00001960 - "Destroy Laplace"
+00001961 - “The Earthdwelling Dragon”
+00001962 - "Any Daily Order"
+00001964 - “Access the Lilipan Graffiti at the Casino”
+00001965 - "Destroy Dephansaur"
+00001966 - "Destroy Gryuzoras Drago"
+00001967 - “Aggressive Illusions V”
+00001968 - "Enhance the Elements of Any Weapon"
+00001969 - "Destroy Bonta Beattas"
+00001970 - “The Colossal Four-Armed Dragon”
+00001971 - "Destroy Yggda Sorcerer"
+00001972 - "Destroy Wolguarda"
+00001973 - “Tough-As-Nails Draconian”
+00001974 - "Destroy Emperappy"
+00001975 - "Destroy Ventasaur"
+00001976 - “Hostiles Hidden in the Forest”
+00001977 - "Speak to Astarte"
+00001978 - "Speak to Faina"
+00001979 - “Speak to Leontina”
+00001980 - "Enhance One Weapon or Unit"
+00001981 - "Go Fishing"
+00001982 - "Speak to Annette"
+00001983 - "Have Any Drink"
+00001984 - "Speak to Gené"
+00001985 - “Go Harvesting”
+00001986 - “Speak to Hans”
+00001987 - “Play a FUN Scratch Ticket”
+00001989 - "Check the AC Shop Product List"
+00001990 - “Speak to Noemi”
+00001991 - "Speak to Cofy"
+00001992 - "Speak to Bruno"
+00001993 - "Speak to Zig"
+00001994 - “Speak to Allin”
+00001995 - “Speak to Lachesis”
+00001996 - “Clear Any Recommended Quest to get a Special Present"
+00001997 - “Speak to Dudu”
+00001998 - “Speak to Sophia”
+00001999 - "Play Rappy Slots"
+00002000 - "A Helping Hand for Science!"
+00002001 - “Aggressive Illusions IV”
+00002002 - "Destroy Rappy"
+00002003 - “Wild Easter 2018”
+00002004 - "Destroy Es Anges"
+00002005 - "A Falspawn Survey"
+00002006 - “Hell on Wheels... Lots of Wheels”
+00002007 - "Destroy Es Santrus"
+00002008 - "A Wide-Ranging Survey"
+00002009 - "Destroy Laplace"
+00002010 - “The Sculpture of Chaos”
+00002011 - “Lookbook: Send Someone a ‘Like’”
+00002012 - “Access the Lilipan Graffiti at the Casino”
+00002014 - "Play Blacknyack"
+00002015 - "Play Mesetan Shooter"
+00002016 - “Long-Barreled Blockader”
+00002017 - "Destroy Aratron Femt"
+00002018 - "Search for Orgbran"
+00002019 - “Rail-Jumping Riot”
+00002020 - "Destroy Deus Anges"
+00002021 - "Enhance a Ring"
+00002022 - “Aggressive Illusions II”
+00002023 - “Haunted Chariot, Wreathed in Hellfire”
+00002024 - “A New Trial in Las Vegas”
+00002025 - “Aggressive Illusions V”
+00002026 - "Destroy Za'udan"
+00002027 - "Destroy Cychronahda"
+00002028 - "Destroy Krabahda"
+00002029 - “Speak to Leontina”
+00002030 - "Destroy Carthago"
+00002031 - "Destroy Cuchronahda"
+00002032 - "Play Arkuma Slots"
+00002033 - "Destroy Dhargacha"
+00002034 - "Destroy Udan"
+00002035 - "Have Any Drink"
+00002036 - “Gone With the Wind & Rain 2018”
+00002037 - "Destroy Guwonda"
+00002039 - “View a Player Look in Lookbook”
+00002040 - "Destroy the Rockbear"
+00002041 - "Destroy Ahl Mikda"
+00002042 - “Speak to Lachesis”
+00002043 - "Destroy Fang Banser"
+00002044 - "Destroy Wolguarda"
+00002045 - "Destroy Phongrulf"
+00002046 - "Destroy Fang Banshee"
+00002047 - "Destroy De Marmoth"
+00002048 - “The Tempest's Gift”
+00002049 - "Enhance One Weapon or Unit"
+00002050 - “Hostiles Hidden in the Forest”
+00002051 - "Destroy Emperappy"
+00002052 - "Destroy Garongo"
+00002053 - "Destroy the Omega Angel"
+00002054 - “Access the Lilipan Graffiti at the Casino”
+00002055 - "Destroy Omega Gryphon"
+00002056 - “The Fury Dancing in the Corruption”
+00002057 - “Send Someone a ‘Like’ on Lookbook”
+00002058 - "Destroy the Imperial Fiendmage"
+00002059 - “Cleared The Final Farewell”
+00002060 - "Destroy Falz Hyunal"
+00002061 - "Destroy Velmuritta"
+00002062 - "Enhance a Ring"
+00002064 - "Destroy Predicahdr"
+00002065 - "Enhance the Elements of Any Weapon"
+00002066 - “An Indomitable Symbiote!?”
+00002067 - “Endless Battle: Edge of Recollection”
+00002068 - "Destroy Plosiogrs"
+00002069 - "Destroy the Imperial Fiendlancer"
+00002070 - "Destroy Briarda"
+00002071 - "Destroy Flame Diamos"
+00002072 - “Cleared Dark Falz Elder Revived”
+00002073 - "Defeat King Mesetan in Mesetan Shooter"
+00002074 - "Destroy the Skull Archers"
+00002075 - “The Diabolic Flame-Breathing Gryphon”
+00002076 - "Destroy Cychronahda"
+00002077 - "Destroy Nordeeransa"
+00002078 - "Check the AC Shop Product List"
+00002079 - "Destroy the Mint Rockbear"
+00002080 - "Destroy the Grants Sorcerer"
+00002081 - "Destroy the Mint Polar Bear"
+00002082 - "Destroy Deegahla"
+00002083 - “Speak to Lachesis”
+00002084 - "Destroy Izaogal"
+00002085 - "Destroy Gannagam"
+00002086 - “Go Harvesting”
+00002087 - "Destroy Omega Goblin"
+00002089 - "Destroy Orc Bomber"
+00002090 - "Play Arkuma Slots"
+00002091 - "Destroy Jagd Dingale"
+00002092 - "Destroy Signogun"
+00002093 - “Speak to Leontina”
+00002094 - "Destroy Rat Phant"
+00002095 - "Destroy Flame Diamos"
+00002096 - "Destroy Snakeheli"
+00002097 - "Destroy Resta Golem"
+00002098 - “Lookbook: Search Through the Catalog”
+00002099 - "Destroy Bomber Golem"
+00002100 - "Destroy Minotaurgz"
+00002101 - "Destroy Gryuzoras Drago"
+00002102 - "Destroy G Chevalizan"
+00002103 - “Could I Interest You in Some New Skills?”
+00002104 - "Destroy Gunkaiser"
+00002105 - "Destroy Falke Leone"
+00002106 - "Destroy Ventasaur"
+00002107 - "Destroy Sol Sadeenian"
+00002108 - "Destroy Omega Gryphon"
+00002109 - "Destroy Gau Ogakibar"
+00002110 - "Destroy Kaiser Balger"
+00002111 - "Enhance a Ring"
+00002112 - "Enhance the Elements of Any Weapon"
+00002114 - “Lookbook: Send Someone a ‘Like’”
+00002115 - “Access the Lilipan Graffiti at the Casino”
+00002116 - "Destroy Ganon Balger"
+00002117 - "Destroy Velmuritta"
+00002118 - "Destroy the Circus Carriage"
+00002119 - "Destroy the T15 Tank"
+00002120 - "Destroy Vegas Illusia"
+00002121 - "Destroy Omega Hyunal"
+00002122 - "Destroy Dullahan Biker"
+00002123 - “A Secret Fit for a Finale”
+00002124 - "Destroy the Devil Truck"
+00002125 - "Destroy Deus Hyunas"
+00002126 - “Step Into the Core”
+00002127 - "Destroy Druahda"
+00002128 - "Enhance One Weapon or Unit"
+00002129 - "Destroy Sevanian"
+00002130 - “Speak to Lachesis”
+00002131 - "Destroy O Valadinan"
+00002132 - “Go Harvesting”
+00002133 - “Delivering Papers in the Summer: A True Test of Character”
+00002134 - “The Busiest Beach”
+00002135 - "Destroy Bonta Beattas"
+00002136 - "Destroy Luda Sorcerer"
+00002137 - "Destroy Silt Grimian"
+00002139 - "Destroy Banoridian"
+00002140 - "Destroy Lanka Valehs"
+00002141 - "Destroy Branadian"
+00002142 - "Speak to Huey (Summer)"
+00002143 - “Play a FUN Scratch Ticket”
+00002144 - "Go Fishing"
+00002145 - "Destroy Launcher Neon"
+00002146 - “Speak to Leontina”
+00002147 - "Destroy Tag Aqualupus"
+00002148 - “Lookbook: Send Someone a ‘Like’”
+00002149 - "Destroy Vid Giros"
+00002150 - "Have Any Drink"
+00002151 - "Destroy Aratron Femt"
+00002152 - “Watch Out For the Pincers!”
+00002153 - "Beach Wars 2018!"
+00002154 - “The Sculpture of Chaos”
+00002155 - "Destroy Train Gidrahn"
+00002156 - "Destroy the T15 Tank"
+00002157 - "Destroy Platidrahs"
+00002158 - "Destroy Flame Diamos"
+00002159 - "Destroy Snakeheli"
+00002160 - "Destroy the Devil Truck"
+00002161 - "The Queen's Nightmare"
+00002162 - "Play Blacknyack"
+00002164 - "Enhance a Ring"
+00002165 - "Defeat King Mesetan in Mesetan Shooter"
+00002166 - "Destroy Leomaduraad"
+00002167 - "Destroy Orgbran"
+00002168 - "Destroy Velmuritta"
+00002169 - "Destroy Dekor Maryuda"
+00002170 - "Destroy Nept Casadohra"
+00002171 - "Destroy Gal Gryphon"
+00002172 - “Aggressive Illusions IV”
+00002173 - “Beach Wars Buddy Huey”
+00002174 - “Eraser Report V”
+00002175 - "Destroy Esca Ragnes"
+00002176 - "Destroy Izaogal"
+00002177 - "Destroy Bichda Rabitta"
+00002178 - “A Duel and the Prelude to Justice”
+00002179 - "Destroy Mudr Toykatta"
+00002180 - "Destroy Gau Ogakibar"
+00002181 - "Destroy Orogrel"
+00002182 - "Destroy Pitta Wadda"
+00002183 - “Go Harvesting”
+00002184 - "Destroy Pajigwan"
+00002185 - "Destroy Anshizagri"
+00002186 - "Enhance One Weapon or Unit"
+00002187 - “Speak to Leontina”
+00002189 - “Speak to Lachesis”
+00002190 - "Play Rappy Slots"
+00002191 - "Destroy Pajigeeri"
+00002192 - "Destroy Kodoniagari"
+00002193 - "Go Fishing"
+00002194 - "Destroy Itagizakri"
+00002195 - "Destroy Adaogal"
+00002196 - "Destroy Gannagam"
+00002197 - “Destroy Bomta Bakuta"
+00002198 - “Show Me What You Got!”
+00002199 - "Destroy Orota Bikehta"
+00002200 - "Destroy Rerangam"
+00002201 - “What Lies Ahead of Battle”
+00002202 - "Destroy Kodotta Idihta"
+00002203 - "Destroy Fal Vibras"
+00002204 - "Destroy Wolguarda"
+00002205 - “Lookbook: Send Someone a ‘Like’”
+00002206 - "Destroy the Foi Sorcerer"
+00002207 - "Gathering of Cataclysmic Souls 2018"
+00002208 - "Destroy Minotaurgz"
+00002209 - “Access the Lilipan Graffiti at the Casino”
+00002210 - "Destroy Rock Golem"
+00002211 - "Destroy Gigur Gunnegam"
+00002212 - "Destroy Bryu Ringahda"
+00002214 - "Destroy Bor Ogakibar"
+00002215 - "Destroy Gwahl Jigmolde"
+00002216 - "Destroy Bomber Golem"
+00002217 - "Enhance the Elements of Any Weapon"
+00002218 - "Destroy the Orc Cavalier"
+00002219 - “Corruption Investigation: Naverius”
+00002220 - "Destroy the Megid Sorcerer"
+00002221 - "Defeat King Mesetan in Mesetan Shooter"
+00002222 - "Destroy Anjadeurili"
+00002223 - "Destroy Gal Gryphon"
+00002224 - "Destroy Dark Ragne"
+00002225 - “Zeshraider Suppression Squad”
+00002226 - “Drop the Party Beacon”
+00002227 - "Destroy Dingale"
+00002228 - “A Halloween Unfulfilled?”
+00002229 - "Destroy AIS Exoda"
+00002230 - “An Inconvenient Halloween”
+00002231 - "Destroy Vardersoma"
+00002232 - "Destroy Lanz Valehda"
+00002233 - “Feed an Item to a Mag”
+00002234 - "Destroy Emperappy"
+00002235 - "Destroy Krabahda"
+00002236 - “Play a FUN Scratch Ticket”
+00002237 - "Destroy Batragun"
+00002239 - "Destroy Gillnach"
+00002240 - “Speak to Leontina”
+00002241 - "Destroy Jagd Dingale"
+00002242 - "Destroy Dark Ragne"
+00002243 - "Play Blacknyack"
+00002244 - "Destroy Cuchronahda"
+00002245 - "Destroy Fal Vibras"
+00002246 - “Whose Halloween?”
+00002247 - "Destroy Zeta Granz"
+00002248 - “Trick or Defeat?”
+00002249 - "Destroy Solza Brahda"
+00002250 - “The First Halloween!”
+00002251 - “The Transforming Automata”
+00002252 - "Destroy Orota Bikehta"
+00002253 - “Aiming for Eradication I”
+00002254 - "Destroy Velmuritta"
+00002255 - “Steel Predator in the Sands”
+00002256 - "Destroy the Omega Cockatrice"
+00002257 - "Destroy Falz Hyunal"
+00002258 - "Destroy Bomber Valehda"
+00002259 - "Destroy the Falz Angel"
+00002260 - "Destroy Rapid Gillnas"
+00002261 - “A Desperate Test of Strength 1”
+00002262 - “An Automata Made Robust”
+00002264 - "Enhance a Ring"
+00002265 - “The Unknown Threat”
+00002266 - "Destroy Yuguldrahda"
+00002267 - "Destroy Omega Appregina"
+00002268 - "Destroy Gunkaiser"
+00002269 - "Destroy Omega Dranble"
+00002270 - "Destroy Bladingale"
+00002271 - “Rest in Pieces, Vardersoma!”
+00002272 - "Destroy Kodotta Idihta"
+00002273 - “A New Trial in the Abandoned Mine”
+00002274 - "Destroy Omega Gryphon"
+00002275 - ”Bewitched Woods Exploration”
+00002276 - “Speak to Lachesis”
+00002277 - "Destroy Orgbran"
+00002278 - ＊＊＊
+00002279 - “Clear Any Recommended Quest to Get a Special Present”
+00002280 - “Explore the Forest”
+00002281 - "Have Any Drink"
+00002282 - “Level Limit Break Trial I”
+00002283 - "Destroy Za'udan"
+00002284 - “Weapon Palette Extension Trial I”
+00002285 - "Destroy Catredran"
+00002286 - ＊＊＊
+00002287 - "Destroy Phongrulf"
+00002289 - "Mag License Trial"
+00002290 - ＊＊＊
+00002291 - “Difficulty Level Trial 1”
+00002292 - “Sub-Class Permit Exam”
+00002293 - “Speak to Leontina”
+00002294 - “Practice Quest Certification”
+00002295 - “Speak to Sophia”
+00002296 - “Explore the Volcanic Caves”
+00002297 - "Medical Bay Snafu"
+00002298 - ＊＊＊
+00002299 - "Enhance One Weapon or Unit"
+00002300 - “Explore the Coast”
+00002301 - "Destroy Catredran"
+00002302 - ＊＊＊
+00002303 - "Destroy Garongo"
+00002304 - “Level Limit Break Trial II”
+00002305 - "Destroy the Rockbear"
+00002306 - "Destroy Rappy"
+00002307 - "Any Advance Quest"
+00002308 - “Hostiles Hidden in the Forest”
+00002309 - "Destroy Briarda"
+00002310 - "Destroy Nav Rappy"
+00002311 - “Difficulty Level Trial 2”
+00002312 - “Hostiles Erupting from the Volcanic Caves”
+00002314 - “A Tale of AWOL Oceanids”
+00002315 - "Defeat King Mesetan in Mesetan Shooter"
+00002316 - "Destroy Nordeeran"
+00002317 - "Destroy Deeg"
+00002318 - “Time Is Money”
+00002319 - "Destroy Luda Sorcerer"
+00002320 - "Destroy Bloomegara"
+00002321 - "Destroy Vol Dragon"
+00002322 - "Destroy Fodran"
+00002323 - “Ring Crafting 101”
+00002324 - "Destroy Segrezun"
+00002325 - "Destroy Orgbran"
+00002326 - "Destroy King Yedi"
+00002327 - "Destroy Yedi"
+00002328 - “A Yuletide Tale with Hitsugi and Pals!”
+00002329 - "Destroy Dhargacha"
+00002330 - "Destroy Cuchronahda"
+00002331 - "Destroy Grulfer"
+00002332 - "Speak to Al (Christmas)"
+00002333 - “A Sweet Christmas!”
+00002334 - "Speak to Hitsugi (Christmas)"
+00002335 - "Destroy Dhargash"
+00002336 - “Speak to Lachesis”
+00002337 - "Play Mesetan Shooter"
+00002339 - "Enhance One Weapon or Unit"
+00002340 - “Speak to Leontina”
+00002341 - "Destroy Ahl Mikda"
+00002342 - “Speak to Sophia”
+00002343 - “Rekindled Friendship”
+00002344 - "Speak to Kohri (Christmas)"
+00002345 - "Destroy Phangrulfer"
+00002346 - "Destroy Cychronahda"
+00002347 - "Destroy Gawonda"
+00002348 - “Make Sure the Silent Night Stays Silent!”
+00002349 - "Destroy Guwonda"
+00002350 - "Destroy Marmoth"
+00002351 - "Destroy Deus Anges"
+00002352 - "Destroy Anjadeurili"
+00002353 - "Defeat King Mesetan in Mesetan Shooter"
+00002354 - "Destroy Tranmizer"
+00002355 - "Destroy Zeta Granz"
+00002356 - "Destroy Orgbran"
+00002357 - "Destroy Snow Banser"
+00002358 - “Lookbook: Send Someone a ‘Like’”
+00002359 - "Destroy Snow Banshee"
+00002360 - "Destroy De Marmoth"
+00002361 - “Christmas on Ice 2018”
+00002362 - “Access the Lilipan Graffiti at the Casino”
+00002364 - “Play a FUN Scratch Ticket”
+00002365 - “The Tempest's Gift”
+00002366 - "Destroy Gwahl Jigmolde"
+00002367 - "Destroy the Rockbear"
+00002368 - "Play Blacknyack"
+00002369 - "Destroy Catredransa"
+00002370 - "Destroy Kodotta Idihta"
+00002371 - "Destroy Aratron Femt"
+00002372 - "Destroy Gigur Gunnegam"
+00002373 - "Enhance the Elements of Any Weapon"
+00002374 - "Destroy Drago Deadlion"
+00002375 - "Destroy Gryuzoras Drago"
+00002376 - “To Protect Valentines!”
+00002377 - "Destroy Orota Bikehta"
+00002378 - “The Secret Ingredient is Love?!”
+00002379 - “Falspawn Eradication II”
+00002380 - "Destroy Vegas Illusia"
+00002381 - “Lookbook: Search Through the Catalog”
+00002382 - "Destroy Catredransa"
+00002383 - “Speak to Leontina”
+00002384 - "Destroy El Arda"
+00002385 - “Go Harvesting”
+00002386 - “Clear Any Advance Quest”
+00002387 - "Speak to Xia (Valentine's Day 2021)"
+00002389 - "Bringing the Sweet Season"
+00002390 - “Clear Any Bonus Quest”
+00002391 - "Play Arkuma Slots"
+00002392 - "Destroy Goldrahda"
+00002393 - “Speak to Lachesis”
+00002394 - “Destroy Bomta Bakuta"
+00002395 - "Go Fishing"
+00002396 - "Destroy Solza Brahda"
+00002397 - “Demolition Ambition II”
+00002398 - “Trial by Chocolate!”
+00002399 - "Destroy Goron Zran"
+00002400 - “Love-Boosting Gossip!”
+00002401 - “Destroy Bomta Bakuta"
+00002402 - "Destroy the Chevalizan"
+00002403 - “The Earthdwelling Dragon”
+00002404 - "Destroy Goron Zran"
+00002405 - "Destroy Kodotta Idihta"
+00002406 - "Destroy Yugadicahdr"
+00002407 - "Destroy Laplace"
+00002408 - "Destroy Bichda Rabitta"
+00002409 - "Destroy Carthago"
+00002410 - "Destroy Yuguldrahda"
+00002411 - “Where the Chocolate Went”
+00002412 - “Play a FUN Scratch Ticket”
+00002414 - "Enhance One Weapon or Unit"
+00002415 - “Tough-As-Nails Draconian”
+00002416 - "Destroy Ventasaur"
+00002417 - “The Sculpture of Chaos”
+00002418 - "Defeat King Mesetan in Mesetan Shooter"
+00002419 - "Destroy El Arda"
+00002420 - "Destroy Rappy"
+00002421 - "Destroy Orota Bikehta"
+00002422 - "Destroy Gal Gryphon"
+00002423 - "Destroy Emperappy"
+00002424 - "Destroy Z Chevalizan"
+00002425 - “The Colossal Four-Armed Dragon”
+00002426 - "Destroy Carthago"
+00002427 - “Go Harvesting”
+00002428 - “Speak to Leontina”
+00002429 - "Enhance One Weapon or Unit"
+00002430 - "Speak to Afin (White Day)"
+00002431 - "Afin, the Dejected"
+00002432 - "Destroy the Quartz Dragon"
+00002433 - “Play a FUN Scratch Ticket”
+00002434 - "Destroy Emperappy"
+00002435 - "Destroy El Arda"
+00002436 - “Feed an Item to a Mag”
+00002437 - "Enhance a Ring"
+00002439 - "Forgetful Afin"
+00002440 - “Speak to Lachesis”
+00002441 - "Go Fishing"
+00002442 - "The Two Afins!?"
+00002443 - "Destroy Wolguarda"
+00002444 - "Play Rappy Slots"
+00002445 - "Destroy Catredransa"
+00002446 - “The Outbreak's Aftermath”
+00002447 - “Destroy Green Containers”
+00002448 - “Please, Afin”
+00002449 - “Lookbook: Send Someone a ‘Like’”
+00002450 - “A Return Gift for Afin”
+00002451 - "Destroy Gryuzoras Drago"
+00002452 - "Destroy Laplace"
+00002453 - "Destroy Wolguarda"
+00002454 - "Destroy Vol Dragon"
+00002455 - "Destroy Boks Deubarz"
+00002456 - "Destroy Cychronahda Yuga"
+00002457 - "Destroy Yggda Sorcerer"
+00002458 - “Aggressive Illusions II”
+00002459 - "Destroy Bonta Beattas"
+00002460 - “Aggressive Illusions IV”
+00002461 - "Destroy El Arda"
+00002462 - "Destroy Carthago"
+00002464 - "Defeat King Mesetan in Mesetan Shooter"
+00002465 - "Destroy Catredransa"
+00002466 - “Aggressive Illusions V”
+00002467 - "Destroy Rappy"
+00002468 - Aggressive Illusions I
+00002469 - "Destroy G Chevalizan"
+00002470 - "Destroy Cuchronahda Yuga"
+00002471 - "Destroy the Quartz Dragon"
+00002472 - "Destroy Chevalizan"
+00002473 - “Aggressive Illusions III”
+00002474 - "Destroy Vidrols"
+00002475 - “The Great White Day Kerfuffle 2019”
+00002476 - "Destroy Snakeheli"
+00002477 - "No Tomorrow for Our Enemies"
+00002478 - "Perfect Attack Boot Camp I"
+00002479 - "Finding Treasure"
+00002480 - "Feed an Item to a Mag"
+00002481 - "Destroy Vulture Phant"
+00002482 - "Level Cap Trial I"
+00002483 - "Blingy Is Best"
+00002484 - "Access the Free Drink Stand at the Casino"
+00002485 - "Auxiliary Course"
+00002486 - "Speak to Xia (Easter 2019)"
+00002487 - "Speak to Kyokuya"
+00002489 - "Difficulty Level Trial I"
+00002490 - "Play Rappy Slots"
+00002491 - "What a Wonderful Hiding Place!"
+00002492 - "Lookbook: Send Someone a 'Like'"
+00002493 - "Destroy the T15 Tank"
+00002494 - "Mag License Trial"
+00002495 - "Speak to Leontina"
+00002496 - "Speak to Lachesis"
+00002497 - "Borrowing the Idea Key"
+00002498 - "Speak to Sirona"
+00002499 - "Check the AC Shop Product List"
+00002500 - "Clear Any Recommended Quest to Get a Special Present"
+00002501 - "Wild Easter 2019"
+00002502 - "Destroy Chainsaw Clown"
+00002503 - "Destroy Bryu Ringahda"
+00002504 - "Destroy Snakeheli"
+00002505 - "Destroy Brown Bear"
+00002506 - "Destroy Dullahan Biker"
+00002507 - "Floating Continent Sample Collection"
+00002508 - "Destroy Esca Ragnes"
+00002509 - "Destroy Train Gidran"
+00002510 - "Destroy Heat-packing Zombie"
+00002511 - "Destroy Platidrahs"
+00002512 - "Destroy Vegas Illusia"
+00002514 - "Destroy the UFO"
+00002515 - "Destroy Road Roller"
+00002516 - "Raid Request: Las Vegas"
+00002517 - "Running Maneuvers: Tokyo"
+00002518 - "Hell on Wheels... Lots of Wheels"
+00002519 - "Destroy the Circus Carriage"
+00002520 - "Destroy the T15 Tank"
+00002521 - "Destroy T-Rex"
+00002522 - "Destroy Emperappy"
+00002523 - "Destroy Gwanada"
+00002524 - "The Rarest Rappy"
+00002525 - "Destroy Tranmizer"
+00002526 - "A Sudden Christmas Carol"
+00002527 - "Destroy Mikda"
+00002528 - "Speak to Leontina"
+00002529 - "Enhance One Weapon or Unit"
+00002530 - "Speak to Xia (Christmas 2020)"
+00002531 - "Destroy Yedi"
+00002532 - "A Mild Case of Murder IV"
+00002533 - "A Christmas Nightmare"
+00002534 - "Lookbook: Send Someone a 'Like'"
+00002535 - “Play a FUN Scratch Ticket”
+00002536 - "Feed an Item to a Mag"
+00002537 - "Play Blacknyack"
+00002539 - "Destroy Guwonda"
+00002540 - "Rappy Rings Twice!?"
+00002541 - "Go Fishing"
+00002542 - "Falspawn in the Night"
+00002543 - "Destroy Grulfer"
+00002544 - "Play Rappy Slots"
+00002545 - "View 'Trick Out Your Equipment with S-Grade Augments!'"
+00002546 - "Clear Emergency Trial 'The Tempest's Gift'"
+00002547 - "Destroy a Green Container"
+00002548 - "Speak to Lachesis"
+00002549 - "A Haunted Mansion"
+00002550 - "Destroy Snow Banshee"
+00002551 - "Destroy Marmoth"
+00002552 - "Destroy Phangrulfer"
+00002553 - "Clear an Extreme Quest"
+00002554 - "Destroy Emperappy"
+00002555 - "Destroy Gwanada"
+00002556 - "Destroy Snow Banser"
+00002557 - "Destroy Drago Deadlion"
+00002558 - "Hostiles Raging Through the Tundra"
+00002559 - "Destroy Zeshraider"
+00002560 - "Destroy Ahl Mikda"
+00002561 - "Demolition Ambition V"
+00002562 - "Enhance a Ring"
+00002564 - "Defeat King Mesetan in Mesetan Shooter"
+00002565 - "Destroy Boks Deubarz"
+00002566 - "Destroy Gawonda"
+00002567 - "Destroy Gal Gryphon"
+00002568 - "Destroy Rappy"
+00002569 - "Destroy Gryzorus Drago"
+00002570 - "Destroy Leomaduraad"
+00002571 - "Destroy Tranmizer"
+00002572 - "Destroy the Rockbear"
+00002573 - "Eraser Report V"
+00002574 - "Destroy Dhargash"
+00002575 - "Destroy King Yedi"
+00002576 - "Destroy Snakeheli"
+00002577 - "The Silence of the Enemies"
+00002578 - "Perfect Attack Boot Camp I"
+00002579 - "I Am Rabbit"
+00002580 - "Feed an Item to a Mag"
+00002581 - "Destroy Heat-packing Zombie"
+00002582 - "Level Cap Trial I"
+00002583 - "A Playful Melody"
+00002584 - "Hitch a Ride on the Balloons at the Casino"
+00002585 - "Auxiliary Course"
+00002586 - "Speak to Xia (Easter 2020)"
+00002587 - "Speak to Lukot"
+00002589 - "Difficulty Level Trial I"
+00002590 - "Play Arkuma Slots"
+00002591 - "How to Find the Best Rule"
+00002592 - "Lookbook: Send Someone a 'Like'"
+00002593 - "Destroy the T15 Tank"
+00002594 - "Mag License Trial"
+00002595 - "Speak to Leontina"
+00002596 - "Speak to Anatoliya"
+00002597 - "A Happy Blue Bird Egg"
+00002598 - "Speak to Sirona"
+00002599 - "Check the AC Shop Product List"
+00002600 - "Clear Any Recommended Quest to Get a Special Present"
+00002601 - "Wild Easter 2020"
+00002602 - "Destroy the UFO"
+00002603 - "Destroy Bryu Ringahda"
+00002604 - "Destroy Brown Bear"
+00002605 - "Destroy Snakeheli"
+00002606 - "Destroy Dullahan Biker"
+00002607 - "Floating Continent Sample Collection"
+00002608 - "Destroy the Devil Truck"
+00002609 - "Destroy Train Gidran"
+00002610 - "Destroy Vulture Phant"
+00002611 - "Destroy the Circus Carriage"
+00002612 - "Destroy Vegas Illusia"
+00002614 - "Destroy Chainsaw Clown"
+00002615 - "Access the Lillipan Graffiti at the Casino"
+00002616 - "Go Harvesting"
+00002617 - "Running Maneuvers: Tokyo"
+00002618 - "Hell on Wheels... Lots of Wheels"
+00002619 - "Destroy Platidrahs"
+00002620 - "Destroy Road Roller"
+00002621 - "Destroy T-Rex"
+00002622 - "Destroy Emperappy"
+00002623 - "Destroy Gwanada"
+00002624 - "The Rarest Rappy"
+00002625 - "Destroy Tranmizer"
+00002626 - "Feed an Item to a Mag"
+00002627 - "Play Arkuma Slots"
+00002628 - "Speak to Xia (Summer 2020)"
+00002629 - "Destroy Zeshraider"
+00002630 - "Speak to Lachesis"
+00002631 - "Fully Secure Safety!"
+00002632 - "Destroy Vid Giros"
+00002633 - “Send Someone a ‘Like’ on Lookbook”
+00002634 - "Destroy Bloomegara"
+00002635 - "Emergent Phantasmic Threat"
+00002636 - "Auxiliary Course"
+00002637 - "An Uninvited Intruder!?"
+00002639 - "Destroy Dekor Maryuda"
+00002640 - "Play a FUN Scratch Ticket"
+00002641 - "Upholding Peace on the Beach!"
+00002642 - "Destroy Banoridian"
+00002643 - "Special Blockade Area Annihilation"
+00002644 - "Destroy Luda Sorcerer"
+00002645 - "Go Harvesting"
+00002646 - "Speak to Leontina"
+00002647 - "The Start of the Resort Plan!"
+00002648 - "Resort Plan Defense Battle!?"
+00002649 - “Clear Any Recommended Quest to Get a Special Present”
+00002650 - “Clear Story Quest 'The Awakening'"
+00002651 - "Rest in Pieces, Vegas Illusia!"
+00002652 - "Claws of Terror"
+00002653 - "Destroy Sevanian"
+00002654 - "An Airborne Test of Strength I"
+00002655 - "Destroy Falgurbon"
+00002656 - "Destroy Davrunda"
+00002657 - "Destroy Tarobekko"
+00002658 - "Beach Wars 2020!"
+00002659 - "Explore Las Vegas"
+00002660 - "Destroy Leomaduraad"
+00002661 - "Destroy Gal Gryphon"
+00002662 - "Destroy Zeshraider"
+00002664 - "Use EX-Cube Exchange Shop"
+00002665 - "Destroy Wolguarda"
+00002666 - "Destroy Nept Casadohra"
+00002667 - "Aiming for Eradication II"
+00002668 - "Destroy Dekor Maryuda"
+00002669 - "Destroy Orgbran"
+00002670 - "The Rarest Emperappy"
+00002671 - "Play Rappy Slots"
+00002672 - "Destroy a Green Container"
+00002673 - "Destroy Segrezun"
+00002674 - "Destroy Predicahdr"
+00002675 - "Crafting Workshop - Plum"
+00059901 - "Destroy Za'udan"
+00059902 - “Change Weapon Palettes”
+00059903 - "Use Skill Points (Learn a Skill)"
+00059904 - “Learn a Photon Art or Technique"
+00059905 - "Set Photon Arts for your Slot 1 Weapon"
+00059906 - "Set One or More Techniques for your Slot 1 Weapon"
+00059907 - "Access the Balloons in the Casino Lobby"
+09200033 - Go Fishing
+
+

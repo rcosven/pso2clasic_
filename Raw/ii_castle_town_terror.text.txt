@@ -1,0 +1,135 @@
+ii_castle_town_terror.text was created: 04-07-2026 7:29:11
+Filesize is: 10912 bytes
+
+common
+Group 0
+IncidentName - パジャドゥリンの暴走を止めろ！
+TrialBeginMsg - パジャドゥリンを倒せ！
+TrialAbstract - $(0)を$(1)体倒せ！
+
+Group 1
+IncidentName - Stop the Pajadeurin Rampage!
+TrialBeginMsg - Defeat the Pajadeurins!
+TrialAbstract - Take on every $(0) you find! Defeat $(1)!
+
+
+type1
+Group 0
+NpcComOnBegin - エリア内にパジャドゥリンが現れた。<br>だが、動きが妙だ……<br>各員、慎重に迎撃しろ。
+NpcComOnBegin2 - 空を黒に包み自らを強化している……？<br>あの灯籠が瘴気の影響を受けたのか？<br>各員、灯籠を攻撃し、浄化しろ！
+NpcComOnSuccess - パジャドゥリンの鎮圧を確認。<br>瘴気の影響を受けた灯籠があるなら<br>今のうちに浄化をしておけ。
+NpcComOnFailure - ……作戦は失敗のようだな。<br>だが、変化した灯籠については<br>瘴気の影響から浄化しておけ。
+NpcComOnLevelUp - 空が一段と黒くなったぞ。<br>瘴気の影響を受けた灯籠を攻撃しろ。<br>急げ、このままでは不利になる。
+NpcComOnLevelUp34 - 瘴気に満ちた場所には気をつけろ。<br>踏み入れば、ダメージを受けるぞ。<br>屋根の上からパジャドゥリンを追え！
+NpcComOnLevelUp45 - 非常にまずい状況だ。<br>瘴気でエネミーが回復しはじめた。<br>灯籠の浄化を急げ！
+NpcComOnLevelDown - よし、その調子で灯籠の浄化を続けろ。<br>空の色が戻り始めたぞ。<br>だが、油断するなよ。
+NpcComOnLevelDown21 - 全ての灯籠を浄化したようだな。<br>このタイミングでパジャドゥリンを<br>一網打尽にしろ。
+NpcComOnRelease - よくやった。<br>他にも瘴気を受けた灯籠があるなら<br>今のように浄化していけ。
+NpcComOnBlack - 灯籠がパジャドゥリンの瘴気を受けた。<br>急いで瘴気を浄化しろ。<br>このままでは被害が増えるだけだ！
+NpcComRollerPos - パジャドゥリンの位置を特定した。<br>$(0)に急行し、早急に撃退しろ。
+
+Group 1
+NpcComOnBegin - Pajadeurin detected in your area. But they're<br>moving strangely. All ops, engage with caution.
+NpcComOnBegin2 - They're darkening the sky to enhance<br>themselves? And that Lantern's been<br>affected by its miasma.<br>All ops, attack and purify the Lantern!
+NpcComOnSuccess - Pajadeurin subjegated. If there are any<br>miasma-infected Lanterns, purify them now.
+NpcComOnFailure - Operation failed... But I still need you to purify<br>any miasma-infected Lanterns.
+NpcComOnLevelUp - The sky's growing darker... Attack the<br>miasma-infected Lanterns on the double!<br>Before things get any worse.
+NpcComOnLevelUp34 - Avoid areas covered in the miasma. You'll take<br>damage if you step in it so go after the<br>Pajadeurin from the rooftops!
+NpcComOnLevelUp45 - This just keeps getting worse. Now the<br>miasma's healing they enemy. Purify those<br>Lanterns, on the double!
+NpcComOnLevelDown - Nice! Keep on purifying those lanterns. The<br>sky's starting to clear up, but we're not out of<br>the woods yet.
+NpcComOnLevelDown21 - All Lanterns have been purified. Time to<br>round up those Pajadeurins.
+NpcComOnRelease - Well done. If you find any more<br>miasma-infected Lanterns, purify them<br>just like that.
+NpcComOnBlack - A Lantern's been corrupted by the Pajadeurin<br>miasm. Hurry and purify it!
+NpcComRollerPos - I've zeroed in on the Pajadeurin. Advance to<br>$(0) and fight it off!
+
+
+type2
+Group 0
+NpcComOnBegin - エリア内にパジャドゥリンが現れた。<br>だが、動きが妙だ……<br>各員、慎重に迎撃しろ。
+NpcComOnBegin2 - 空を黒に包み自らを強化している……？<br>あの灯籠が瘴気の影響を受けたのか？<br>各員、灯籠を攻撃し、浄化しろ！
+NpcComOnSuccess - パジャドゥリンの鎮圧を確認。<br>瘴気の影響を受けた灯籠があるなら<br>今のうちに浄化をしておけ。
+NpcComOnFailure - ……作戦は失敗のようだな。<br>だが、変化した灯籠については<br>瘴気の影響から浄化しておけ。
+NpcComOnLevelUp - 空が一段と黒くなったぞ。<br>瘴気の影響を受けた灯籠を攻撃しろ。<br>急げ、このままでは不利になる。
+NpcComOnLevelUp34 - 瘴気に満ちた場所には気をつけろ。<br>踏み入れば、ダメージを受けるぞ。<br>屋根の上からパジャドゥリンを追え！
+NpcComOnLevelUp45 - 非常にまずい状況だ。<br>瘴気でエネミーが回復しはじめた。<br>灯籠の浄化を急げ！
+NpcComOnLevelDown - よし、その調子で灯籠の浄化を続けろ。<br>空の色が戻り始めたぞ。<br>だが、油断するなよ。
+NpcComOnLevelDown21 - 全ての灯籠を浄化したようだな。<br>このタイミングでパジャドゥリンを<br>一網打尽にしろ。
+NpcComOnRelease - よくやった。<br>他にも瘴気を受けた灯籠があるなら<br>今のように浄化していけ。
+NpcComOnBlack - 灯籠がパジャドゥリンの瘴気を受けた。<br>急いで瘴気を浄化しろ。<br>このままでは被害が増えるだけだ！
+NpcComRollerPos - パジャドゥリンの位置を特定した。<br>$(0)に急行し、早急に撃退しろ。
+
+Group 1
+NpcComOnBegin - Pajadeurin detected in your area. But they're<br>behaving strangely. All ops, engage with<br>caution.
+NpcComOnBegin2 - They're darkening the sky to enhance<br>themselves? And that Lantern's been<br>affected by its miasma.<br>All ops, attack and purify the Lantern!
+NpcComOnSuccess - Pajadeurin subjegated. If there are any<br>miasma-infected Lanterns, purify them now.
+NpcComOnFailure - Operation failed... But I still need you to purify<br>any miasma-infected Lanterns.
+NpcComOnLevelUp - The sky's growing darker... Attack the<br>miasma-infected Lanterns on the double! Before<br>things get any worse.
+NpcComOnLevelUp34 - Avoid areas covered in the miasma. You'll take<br>damage if you step in it so go after the<br>Pajadeurin from the rooftops!
+NpcComOnLevelUp45 - This just keeps getting worse. Now<br>the miasma's healing they enemy.<br>Purify those Lanterns, on the double!
+NpcComOnLevelDown - Nice! Keep on purifying those lanterns. The<br>sky's starting to clear up, but we're not out of<br>the woods yet.
+NpcComOnLevelDown21 - All Lanterns have been purified.<br>Time to round up those Pajadeurins.
+NpcComOnRelease - Well done. If you find any more miasma-infected<br>Lanterns, purify them just like that.
+NpcComOnBlack - A Lantern's been corrupted by the Pajadeurin<br>miasm. Hurry and purify it!
+NpcComRollerPos - I've zeroed in on the Pajadeurin. Advance to<br>$(0) and fight it off!
+
+
+type3
+Group 0
+NpcComOnBegin - エリア内にパジャドゥリンが現れた。<br>だが、動きが妙だ……<br>各員、慎重に迎撃しろ。
+NpcComOnBegin2 - 空を黒に包み自らを強化している……？<br>あの灯籠が瘴気の影響を受けたのか？<br>各員、灯籠を攻撃し、浄化しろ！
+NpcComOnSuccess - パジャドゥリンの鎮圧を確認。<br>瘴気の影響を受けた灯籠があるなら<br>今のうちに浄化をしておけ。
+NpcComOnFailure - ……作戦は失敗のようだな。<br>だが、変化した灯籠については<br>瘴気の影響から浄化しておけ。
+NpcComOnLevelUp - 空が一段と黒くなったぞ。<br>瘴気の影響を受けた灯籠を攻撃しろ。<br>急げ、このままでは不利になる。
+NpcComOnLevelUp34 - 瘴気に満ちた場所には気をつけろ。<br>踏み入れば、ダメージを受けるぞ。<br>屋根の上からパジャドゥリンを追え！
+NpcComOnLevelUp45 - 非常にまずい状況だ。<br>瘴気でエネミーが回復しはじめた。<br>灯籠の浄化を急げ！
+NpcComOnLevelDown - よし、その調子で灯籠の浄化を続けろ。<br>空の色が戻り始めたぞ。<br>だが、油断するなよ。
+NpcComOnLevelDown21 - 全ての灯籠を浄化したようだな。<br>このタイミングでパジャドゥリンを<br>一網打尽にしろ。
+NpcComOnRelease - よくやった。<br>他にも瘴気を受けた灯籠があるなら<br>今のように浄化していけ。
+NpcComOnBlack - 灯籠がパジャドゥリンの瘴気を受けた。<br>急いで瘴気を浄化しろ。<br>このままでは被害が増えるだけだ！
+NpcComRollerPos - パジャドゥリンの位置を特定した。<br>$(0)に急行し、早急に撃退しろ。
+
+Group 1
+NpcComOnBegin - Pajadeurin detected in your area. But they're<br>behaving strangely. All ops, engage with<br>caution.
+NpcComOnBegin2 - They're darkening the sky to enhance<br>themselves? And that Lantern's been<br>affected by its miasma.<br>All ops, attack and purify the Lantern!
+NpcComOnSuccess - Pajadeurin subjegated. If there are any<br>miasma-infected Lanterns, purify them now.
+NpcComOnFailure - Operation failed... But I still need you to purify<br>any miasma-infected Lanterns.
+NpcComOnLevelUp - The sky's growing darker... Attack the<br>miasma-infected Lanterns on the double!<br>Before things get any worse.
+NpcComOnLevelUp34 - Avoid areas covered in the miasma. You'll take<br>damage if you step in it so go after the<br>Pajadeurin from the rooftops!
+NpcComOnLevelUp45 - This just keeps getting worse. Now the<br>miasma's healing they enemy. Purify<br>those Lanterns, on the double!
+NpcComOnLevelDown - Nice! Keep on purifying those lanterns. The<br>sky's starting to clear up, but we're not out of<br>the woods yet.
+NpcComOnLevelDown21 - All Lanterns have been purified.<br>Time to round up those Pajadeurins.
+NpcComOnRelease - Well done. If you find any more<br>miasma-infected Lanterns,<br>purify them just like that.
+NpcComOnBlack - A Lantern's been corrupted by the Pajadeurin<br>miasm. Hurry and purify it!
+NpcComRollerPos - I've zeroed in on the Pajadeurin. Advance to<br>$(0) and fight it off!
+
+
+type6
+Group 0
+NpcComOnBegin - エリア内にパジャドゥリン出現。<br>不自然な挙動が見られます。<br>慎重な対応を。
+NpcComOnBegin2 - 黒天の空によって敵性存在の能力向上が<br>見られます。瘴気の影響を受けた灯籠を<br>攻撃し、浄化してください。
+NpcComOnSuccess - パジャドゥリンの鎮圧、確認。<br>瘴気の影響を受けた灯籠については<br>適時浄化を行ってください。
+NpcComOnFailure - 作戦失敗を確認。<br>しかし、瘴気の影響を受けた灯籠は<br>適時浄化を行っていってください。
+NpcComOnLevelUp - 黒天状態が強くなっています。<br>早急に、瘴気の影響を受けた<br>灯籠の浄化を。
+NpcComOnLevelUp34 - 瘴気だまりに踏み入ると<br>肉体に深刻な影響が出ます。<br>屋根伝いでの移動を推奨。
+NpcComOnLevelUp45 - 黒天状態が深刻です。<br>瘴気が敵性存在に活力を与えています。<br>急ぎ、侵食を受けた灯籠の浄化を。
+NpcComOnLevelDown - 灯籠の浄化を確認。<br>黒天状態も徐々に改善しています。<br>その要領で、灯籠の浄化を。
+NpcComOnLevelDown21 - 全ての灯籠の浄化を確認しました。<br>パジャドゥリンの反応も弱体化。<br>今のうちに、撃退を。
+NpcComOnRelease - 見事な対応です。<br>他に瘴気の影響を受けた灯籠があれば<br>同様の対応をお願いします。
+NpcComOnBlack - パジャドゥリンの瘴気によって<br>灯籠が影響を受けたようです。<br>急ぎ、灯籠を攻撃し、浄化を。
+NpcComRollerPos - パジャドゥリンの位置、特定。<br>$(0)に急行し、早急な撃退を。
+
+Group 1
+NpcComOnBegin - Pajadeurin found in your area, showing erratic<br>behavior. Engage with caution.
+NpcComOnBegin2 - The enemy presence has been strengthened<br>by the blackened sky. Attack all<br>miasma-infected Lanterns and purify them.
+NpcComOnSuccess - Pajadeurin subjegated. Purify all<br>miasma-infected Lanterns as you find them.
+NpcComOnFailure - Operation failed. But please continue<br>purifying all miasma-infected Lanterns.
+NpcComOnLevelUp - The sky is growing even darker. Move quickly<br>and purify all miasma-infected Lanterns.
+NpcComOnLevelUp34 - Walking through the miasma will cause severe<br>physical effects. I recommend taking to the<br>rooftops.
+NpcComOnLevelUp45 - The sky has darkened severely, and the<br>miasma is energizing the enemy. Move<br>quickly and purify those Lanterns.
+NpcComOnLevelDown - Lantern purified and the sky is slowly clearing<br>up. Keep purifying those Lanterns.
+NpcComOnLevelDown21 - All Lanterns have been purified. Pajadeurin<br>readings have weakened. Now's your chance<br>to fight them off.
+NpcComOnRelease - Excellent work. If you find any more<br>miasma-infected Lanterns, do the same.
+NpcComOnBlack - The Pajadeurin miasma is affecting those<br>Lanterns. Purify them quickly.
+NpcComRollerPos - Pajadeurin location confirmed. Advance to<br>$(0) and fight it off.
+
+

@@ -1,0 +1,87 @@
+quest_00120020.text was created: 04-07-2026 7:32:03
+Filesize is: 6032 bytes
+
+AcceptCondition
+Group 0
+
+Group 1
+
+
+AreaName
+Group 0
+Area0S - ミッション1
+Area0L - アークスシップ　ＶＲ空間(マザーシップ)　ミッション1
+Area1S - ミッション2
+Area1L - アークスシップ　ＶＲ空間(ダーカーの巣)　ミッション2
+Area2S - ミッション3
+Area2L - アークスシップ　ＶＲ空間(壊世区域 地下坑道)　ミッション3
+Area3S - ミッション4
+Area3L - アークスシップ　ＶＲ空間(クエント城跡)　ミッション4
+Area4S - ミッション5
+Area4L - アークスシップ　ＶＲ空間(時空の狭間)　ミッション5
+Area21S - インターバルエリア1
+Area21L - アークスシップ　ＶＲ空間(壊世区域 地下坑道)　インターバルエリア1
+Area23S - インターバルエリア2
+Area23L - アークスシップ　ＶＲ空間(マザーシップ・シバ)　インターバルエリア2
+
+Group 1
+Area0S - Mission 1
+Area0L - ARKS Ship - VR (Mothership) - Mission 1
+Area1S - Mission 2
+Area1L - ARKS Ship - VR (Falspawn Den) - Mission 2
+Area2S - Mission 3
+Area2L - ARKS Ship - VR (Corrupted Region - Underground Shafts) - Mission 3
+Area3S - Mission 4
+Area3L - ARKS Ship - VR (Cuento Castle Ruins) - Mission 4
+Area4S - Mission 5
+Area4L - ARKS Ship - VR (Space-Time Interstice) - Mission 5
+Area21S - Interval Zone 1
+Area21L - ARKS Ship - VR (Corrupted Region - Underground Shafts) - Interval Zone 1
+Area23S - Interval Zone 2
+Area23L - ARKS Ship - VR (Mothership Shiva) - Interval Zone 2
+
+
+Basic
+Group 0
+Title - MISSION：激震
+Explanation - アークスの訓練用プログラム、第三弾です。<br>舞台は旧マザーシップ、ダーカーの巣、<br>地下坑道、クエント城跡となります。<br>出撃前に端末で使用クラスセットを選択し<br>クリアを目指していただきます。<br>初期装備や所持品は選択したセットにより<br>異なりますので、ご注意ください。<br>――――――――――――――――――――<br>目標/５つのミッションのクリア<br>※ミッション６以降はありません。
+
+Group 1
+Title - MISSION: Violent Tremor
+Explanation - This is the third iteration of a new ARKS training<br>program employing the old Mothership, Falspawn<br>Den, Underground Shafts, and Cuento Castle<br>Ruins environments. Select a class set at the<br>terminal before heading out and aim for full<br>completion. Note that your initial equipment and<br>items will vary depending on the set you select.<br>------------------------------------------<br>Objective: Complete 5 missions.<br>Only 5 missions are available in this iteration.
+
+
+Challenge
+Group 0
+NPCArea0 - /atime2.5 /voice11_voice_navi07_013 ミッション１です。
+NPCArea1 - /atime2.5 /voice11_voice_navi07_014 ミッション２です。
+NPCArea2 - /atime2.5 /voice11_voice_navi07_015 ミッション３です。
+NPCArea3 - /atime2.5 /voice11_voice_navi07_016 ミッション４です。
+NPCArea4 - /atime2.5 /voice11_voice_navi07_017 ミッション５です。
+
+Group 1
+NPCArea0 - /atime2.5 /voice11_voice_navi07_013 Mission 1.
+NPCArea1 - /atime2.5 /voice11_voice_navi07_014 Mission 2.
+NPCArea2 - /atime2.5 /voice11_voice_navi07_015 Mission 3
+NPCArea3 - /atime2.5 /voice11_voice_navi07_016 Mission 4.
+NPCArea4 - /atime2.5 /voice11_voice_navi07_017 Mission 5.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - まもなくチャレンジを開始します。 <br>ＶＲエネルギーが切れるまでに５つの <br>ミッションをクリアしてください。
+NpcComMsg2 - 大変厳しい訓練となりますが<br>臨機応変に対処してください。<br>健闘を祈ります。
+
+Group 1
+NpcComMsg1 - The Challenge will begin shortly. <br>Clear 5 missions before your VR <br>energy runs out.
+NpcComMsg2 - The training will be rigorous, but we <br>expect you to adapt. Best of luck.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - ５つのミッションをクリアせよ！
+
+Group 1
+SimpleExplanation - Complete 5 missions!
+
+

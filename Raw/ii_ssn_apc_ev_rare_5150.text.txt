@@ -1,0 +1,29 @@
+ii_ssn_apc_ev_rare_5150.text was created: 04-07-2026 7:29:11
+Filesize is: 2304 bytes
+
+common
+Group 0
+
+Group 1
+
+
+5151
+Group 0
+PreBegin - /ci1 1 ……あら？<br>なんだかまた不吉な感じが……
+Begin - /ci4 1 あー……これはまた……<br>私、足手まといになりそうですし<br>逃げてもいいでしょうか？
+Success - /mn15 /ci2 1 おかげ様で、助かりましたわ！<br>私の実力ではご一緒してくださると<br>嬉しいですわ……ってサガさん？
+Failure - /ci4 5 し、失敗してしまいましたわ。<br>せっかく貴方様に手伝って頂いたのに<br>悔しいですわ。
+Dead - /mn5 ああ……限界ですわ。<br>お先に休ませて頂きます……
+BuddyDead - /mn2 ちょちょちょっ、サガさん？<br>二人だけで相手なんて、無理です！<br>早く起きてくださーい！
+TargetDead - /ci4 2 や、やっと倒せました……<br>もう一歩も動けませんわ
+
+Group 1
+PreBegin - /ci1 1 ...Huh? Once again I'm feeling some kind of<br>sinister sensation...
+Begin - /ci4 1 Ah...this again... I think I'll probably just get<br>in your way, so do you mind if I run for it?
+Success - /mn15 /ci2 1 We did it, thanks to you! We're sure glad you<br>teamed up with us! Isn't that right...uh, Saga?
+Failure - /ci4 5 W-We've failed. After all you did to help us...
+Dead - /mn5 Ugh, I've reached my limit. Let me rest a little...
+BuddyDead - /mn2 H-H-Hey! Saga! Together we're unbeatable,<br>right!? Snap out of it!
+TargetDead - /ci4 2 F-Finally...we brought it down... I can barely<br>move...
+
+

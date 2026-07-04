@@ -1,0 +1,85 @@
+ii_session_apc_5150.text was created: 04-07-2026 7:29:11
+Filesize is: 7248 bytes
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+
+5151
+Group 0
+Begin - /mn22 /toge /ci2 1 ああっ、貴方様ではありませんか！<br>助けてください！<br>私、大ピンチです！
+Success - /mn15 /ci2 1 おかげ様で、助かりましたわ！<br>私の実力ではご一緒してくださると<br>嬉しいですわ……ってサガさん？
+Failure - /ci4 5 し、失敗してしまいましたわ。<br>せっかく貴方様に手伝って頂いたのに<br>悔しいですわ。
+Dead - /mn5 ああ……限界ですわ。<br>お先に休ませて頂きます……
+BuddyDead - /mn2 ちょちょちょっ、サガさん？<br>二人だけで相手なんて、無理です！<br>早く起きてくださーい！
+
+Group 1
+Begin - /mn22 /toge /ci2 1 Well, if it isn't you again! Please help! I'm in<br>quite the pinch here!
+Success - /mn15 /ci2 1 We did it, thanks to you! We're sure glad you<br>teamed up with us! Isn't that right...Saga?
+Failure - /ci4 5 W-We've failed. After all you did to help us...
+Dead - /mn5 Ugh, I've reached my limit. Let me rest a little...
+BuddyDead - /mn2 H-H-Hey! Saga! Together we're unbeatable,<br>right!? Snap out of it!
+
+
+5151v2
+Group 0
+Begin - /toge /ci2 2 いまこそ、貴方様のために<br>私の秘められているであろう力を<br>見せつけるときです！
+Success - /ci2 1 ついていきたい気持ちを<br>グッと我慢して、笑顔で送り出します！<br>頑張ってくださいね！
+Failure - サガさん！<br>調子が出てきたところですのに！<br>ごめんなさい、帰還いたしますわ……
+Dead - うう……<br>私の秘めたる力が目覚めない……
+BuddyDead - /toge サガさん、かっこ悪いです！<br>だっさいです！　幻滅しました！<br>これは特訓一回キャンセルですね！
+
+Group 1
+Begin - /toge /ci2 2 This is the perfect time to show off my<br>hidden power!
+Success - /ci2 1 How I wish I could go with you! Instead <br>I'll just send you off with a smile! Good luck <br>out there!
+Failure - Saga! Oh, but we almost had them! I'm sorry, I'm<br>heading back now...
+Dead - Ugh... I couldn't summon the power within me...
+BuddyDead - /toge Saga! How could you!? This is an <br>embarrassment! I'm cancelling one of your boot <br>camp sessions!!
+
+
+5151v3
+Group 0
+Begin - /mn6 /ci2 2 まあ、貴方様ではありませんか！<br>ここで偶然出会うなんて、運命ですわ！<br>それとも、私に贈り物を届けに！？
+Success - /mn26 /ci3 3 ちょ、ちょっとサガさん、どこへ！？<br>私、あの御方と楽しくお話をしながら<br>贈り物を貰わないといけませんのにー！
+Failure - /mn23 /ci4 3 きゅう……さすがにこれ以上は……<br>申し訳ありません、贈り物はまた今度！<br>出直してまいりますわ……
+Dead - /mn13 ああ、もうダメですわ……<br>このまま貴方様の腕の中で<br>しなだれていきたい……
+BuddyDead - /mn37 サ、サガさーん！<br>ちょ、ちょっと休んじゃダメですー！<br>私がやられちゃいますわ！
+
+Group 1
+Begin - /mn6 /ci2 2 Well, if it isn't you again! Meeting like this must<br>be fate! Or did you come to bring me a gift?
+Success - /mn26 /ci3 3 Saga! Where are you going!? I still have to chat<br>with them and get our gift!
+Failure - /mn23 /ci4 3 Ugh...that about does it for me. Terribly sorry,<br>but I'll take a raincheck on that gift! I need a<br>fresh start...
+Dead - /mn13 I can't take anymore... Just let me lay nestled in<br>your arms...
+BuddyDead - /mn37 S-Saga! This is no time for naps! I'm about to be<br>killed here!
+
+
+5242
+Group 0
+Begin - /mn22 /ci1 2 私を呼ぶ声が……と思って来たら<br>全然違うじゃありませんか！
+Success - /ci2 2 なんてまぎらわしいペットの名前……<br>次は勘違いしたりしませんからね！
+Failure - /mn13 名前が似てて、いちいち反応して<br>しまうので余計に疲れてしまいました。<br>……先に退かせてもらいますね。
+Dead - /mn4 きゅう……私、もう限界ですわ……<br>ちょっとだけ、ちょっとだけ<br>お休みさせていただきます……
+BuddyDead - /mn2 ちょっとちょっと、ピエトロさん？<br>敵はまだたくさんいらっしゃいますよ！<br>お願いですから起きてくださーい！
+
+Group 1
+Begin - /mn22 /ci1 2 I thought someone was calling my name...instead<br>I get THIS!
+Success - /ci2 2 What an odd name for a pet... <br>Next time I won't be confused!
+Failure - /mn13 Our names are so similar, and I'm exhausted from<br>reacting to it every time. So I'm leaving.
+Dead - /mn4 I'm completely spent... I'll be taking a break<br>now. Just a little one though...
+BuddyDead - /mn2 Oh no, oh no...Pietro. There's still a plethora of<br>enemies in sight! Get back up and fight! Please!
+
+

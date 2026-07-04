@@ -1,0 +1,63 @@
+ii_collect_goods_a.text was created: 04-07-2026 7:29:11
+Filesize is: 5968 bytes
+
+common
+Group 0
+IncidentName - 昆虫の化石を確保せよ！
+TrialBeginMsg - 昆虫の化石を確保せよ！
+TrialAbstract - 各所に散らばる昆虫の化石を確保せよ！
+ToastPickup - $(0)個目の$(1)を拾いました。
+ToastCollect - $(0)が$(1)個回収しました。
+ToastRewards - $(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+
+Group 1
+IncidentName - Secure the Insect Fossils!
+TrialBeginMsg - Secure the Insect Fossils!
+TrialAbstract - Secure the Insect Fossils scattered about!
+ToastPickup - Picked up $(1) #$(0).
+ToastCollect - Collected $(0) x $(1).
+ToastRewards - Collected $(0) x $(1). Earned $(2) EXP and $(3) meseta.
+
+
+type1
+Group 0
+NpcComOnBegin - この付近で研究対象である昆虫の化石が<br>発見されました。各員は指示に従い<br>該当物をポッドへ運んで下さい！
+NpcComOnBeginAtRareCase - 研究対象である昆虫の化石を発見！<br>許された時間は短いです。各員、急いで<br>該当物をポッドへ運搬して下さい！
+NpcComOnSuccess - /face2 対象物の相当数確保を確認。<br>これで十分です。<br>ありがとうございました。
+NpcComOnFailure - /face4 対象物を必要数確保できませんでした。<br>仕方がありません。<br>通常任務に戻って下さい。
+GoodsPosition - 対象物は$(0)にあるようです！
+RepopGoods - 新しい回収対象物が確認されました！<br>各員回収をお願いします。
+OnAccessPodByEmptyHand - 対象物を回収してから<br>ポッドにアクセスして下さい。
+Collect1st - 対象物の格納を確認！<br>引き続きよろしくお願いします！
+CollectHalf - 対象物の格納を確認！<br>これで半分といったところです！
+CollectMostly - /face2 対象物の格納を確認！<br>あと少しで完了です、頑張って！
+Pickup1st - 対象物を回収したようですね。<br>では、引き続きポッドへ運搬を<br>お願いします！
+PickupHalf - その対象物で大体半分です！<br>ポッドへの運搬をお願いします！
+PickupEnough - 必要十分な量の対象物が<br>回収されたようです！<br>ポッドへ運搬して下さい！
+Destroy1st - 対象物が破壊されました……<br>注意して下さい。
+DestroyWarning - 対象物の破損数が多いです。<br>このままでは、必要十分な量を<br>満たせなくなります……！
+DestroyEmergency - 対象物の破壊数が限界です……<br>これ以上の損失は許されません。<br>急いで下さい！
+TimeupWarning - 作戦許諾時間が<br>少なくなってきました！
+TimeupEmergency - 作戦許諾時間、あとわずかです！<br>急いで下さい！
+
+Group 1
+NpcComOnBegin - The Insect Fossils we're researching<br>were found in this vicinity. Bring them<br>to the Collection Pod.
+NpcComOnBeginAtRareCase - The Insect Fossils we're targeting for research<br>have been found! There's not much time,<br>so bring them to the Collection Pod<br>as quickly as possible!
+NpcComOnSuccess - /face2 You've secured a considerable amount.<br>That should be plenty.<br>Your help is appreciated.
+NpcComOnFailure - /face4 Looks like we came up short. Unfortunate.<br>Resume regular duties.
+GoodsPosition - The target can be found at $(0)!
+RepopGoods - New targets detected! All ops, <br>move to recover them.
+OnAccessPodByEmptyHand - Access the Collection Pod after collecting<br>the targets.
+Collect1st - Target item received! Keep up the good work!
+CollectHalf - Target item received!<br>You're halfway there now!
+CollectMostly - /face2 Target item received! You're almost done,<br>so keep  it up!
+Pickup1st - It seems you've found one of the targets.<br>Please bring it to the Collection Pod.
+PickupHalf - That'll put us over the half way mark! Please<br>bring it to the Collection Pod.
+PickupEnough - You've gathered the required<br>amount. Please bring them to<br>the Collection Pod.
+Destroy1st - The target was destroyed...<br>Please be more careful.
+DestroyWarning - Many of the targets have been destroyed.<br>At this rate, you may not be able to collect<br>the amount we need.
+DestroyEmergency - We can't afford to lose another one.<br>Don't let any more break. And hurry!
+TimeupWarning - You don't have much time left!
+TimeupEmergency - Time's almost up! Hurry!
+
+

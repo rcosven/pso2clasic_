@@ -1,0 +1,111 @@
+coii_mge_avoid.text was created: 04-07-2026 7:29:11
+Filesize is: 6912 bytes
+
+common
+Group 0
+LightRain_IncidentName - 照射攻撃を凌ぎきれ！
+LightRain_TrialBeginMsg - 照射攻撃を凌ぎきれ！
+LightRain_TrialAbstract - 制限時間まで、<br>$(0)回以上照射攻撃を受けるな
+FaceBeam_IncidentName - 無数の熱線攻撃を凌ぎきれ！
+FaceBeam_TrialBeginMsg - 無数の熱線攻撃を凌ぎきれ！
+FaceBeam_TrialAbstract - 制限時間まで、<br>$(0)回以上熱線攻撃を受けるな
+AttackWave_IncidentName - 巨大エネルギー波を回避せよ！
+AttackWave_TrialBeginMsg - 巨大エネルギー波を回避せよ！
+AttackWave_TrialAbstract - $(0)人以上エネルギー波を受けるな
+
+Group 1
+LightRain_IncidentName - Outlast the Beam Attacks!
+LightRain_TrialBeginMsg - Outlast the Beam Attacks!
+LightRain_TrialAbstract - Suffer less than $(0) beam attacks within<br>the specified time.
+FaceBeam_IncidentName - Outlast the Heat Ray Volleys!
+FaceBeam_TrialBeginMsg - Outlast the Heat Ray Volleys!
+FaceBeam_TrialAbstract - Suffer less than $(0) heat ray attacks<br>within the specified time.
+AttackWave_IncidentName - Avoid the Massive Energy Waves!
+AttackWave_TrialBeginMsg - Avoid the Massive Energy Waves!
+AttackWave_TrialAbstract - Less than $(0) members can be hit by<br>energy waves.
+
+
+type1
+Group 0
+LightRain_NpcComOnBegin - 『禍津』胸部にエネルギーを感知。<br>上空からの照射攻撃に最大限の注意を。
+LightRain_NpcComOnBegin2 - 今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+LightRain_NpcComOnSuccess - エネルギー波の停止を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+LightRain_NpcComOnFailure - /face4 エネルギー波の停止を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+FaceBeam_NpcComOnBegin - 『禍津』の無数の顔から熱源を感知。<br>熱源から放たれる攻撃に注意を。
+FaceBeam_NpcComOnBegin2 - 熱線攻撃の軌道は予測不能。<br>今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+FaceBeam_NpcComOnSuccess - 熱源の沈静化を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+FaceBeam_NpcComOnFailure - /face4 熱源の沈静化を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+AttackWave_NpcComOnBegin - 『禍津』の掌から高エネルギー反応。<br>付近の簡易唱壁への退避を推奨します。
+AttackWave_NpcComOnBegin2 - 周辺への大規模攻撃が<br>行われるものと推測されます。<br>各員は最大限の警戒をしてください。
+AttackWave_NpcComOnSuccess - エネルギー反応の消失を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+AttackWave_NpcComOnFailure - /face4 高エネルギー反応の消失を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+
+Group 1
+
+
+type2
+Group 0
+LightRain_NpcComOnBegin - 『禍津』胸部にエネルギーを感知。<br>上空からの照射攻撃に最大限の注意を。
+LightRain_NpcComOnBegin2 - 今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+LightRain_NpcComOnSuccess - エネルギー波の停止を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+LightRain_NpcComOnFailure - /face4 エネルギー波の停止を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+FaceBeam_NpcComOnBegin - 『禍津』の無数の顔から熱源を感知。<br>熱源から放たれる攻撃に注意を。
+FaceBeam_NpcComOnBegin2 - 熱線攻撃の軌道は予測不能。<br>今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+FaceBeam_NpcComOnSuccess - 熱源の沈静化を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+FaceBeam_NpcComOnFailure - /face4 熱源の沈静化を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+AttackWave_NpcComOnBegin - 『禍津』の掌から高エネルギー反応。<br>付近の簡易唱壁への退避を推奨します。
+AttackWave_NpcComOnBegin2 - 周辺への大規模攻撃が<br>行われるものと推測されます。<br>各員は最大限の警戒をしてください。
+AttackWave_NpcComOnSuccess - エネルギー反応の消失を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+AttackWave_NpcComOnFailure - /face4 高エネルギー反応の消失を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+
+Group 1
+
+
+type3
+Group 0
+LightRain_NpcComOnBegin - 『禍津』胸部にエネルギーを感知。<br>上空からの照射攻撃に最大限の注意を。
+LightRain_NpcComOnBegin2 - 今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+LightRain_NpcComOnSuccess - エネルギー波の停止を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+LightRain_NpcComOnFailure - /face4 エネルギー波の停止を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+FaceBeam_NpcComOnBegin - 『禍津』の無数の顔から熱源を感知。<br>熱源から放たれる攻撃に注意を。
+FaceBeam_NpcComOnBegin2 - 熱線攻撃の軌道は予測不能。<br>今は回避に専念する事を推奨します。<br>被弾を$(0)回以内に抑えてください
+FaceBeam_NpcComOnSuccess - 熱源の沈静化を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+FaceBeam_NpcComOnFailure - /face4 熱源の沈静化を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+AttackWave_NpcComOnBegin - 『禍津』の掌から高エネルギー反応。<br>付近の簡易唱壁への退避を推奨します。
+AttackWave_NpcComOnBegin2 - 周辺への大規模攻撃が<br>行われるものと推測されます。<br>各員は最大限の警戒をしてください。
+AttackWave_NpcComOnSuccess - エネルギー反応の消失を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+AttackWave_NpcComOnFailure - /face4 高エネルギー反応の消失を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+
+Group 1
+
+
+type6
+Group 0
+LightRain_NpcComOnBegin - 『禍津』頭部にエネルギーを感知。<br>上空からの照射攻撃に最大限の注意を。
+LightRain_NpcComOnBegin2 - 今は回避に専念する事を推奨します。<br><red>被弾を$(0)回未満<black>に抑えてください。
+LightRain_NpcComOnSuccess - エネルギー波の停止を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+LightRain_NpcComOnFailure - /face4 エネルギー波の停止を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+FaceBeam_NpcComOnBegin - 『禍津』の無数の顔から熱源を感知。<br>熱源から放たれる攻撃に注意を。
+FaceBeam_NpcComOnBegin2 - 熱線攻撃の軌道は予測不能。<br>今は回避に専念する事を推奨します。<br><red>被弾を$(0)回未満<black>に抑えてください。
+FaceBeam_NpcComOnSuccess - 熱源の沈静化を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+FaceBeam_NpcComOnFailure - /face4 熱源の沈静化を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+AttackWave_NpcComOnBegin - 『禍津』の掌から高エネルギー反応。<br>付近の<red>物陰への退避<black>を推奨します。
+AttackWave_NpcComOnBegin2 - 周辺への大規模攻撃が<br>行われるものと推測されます。<br>各員は最大限の警戒をしてください。
+AttackWave_NpcComOnSuccess - エネルギー反応の消失を確認。<br>被害状況、軽微。<br>各員、『禍津』との戦闘継続を。
+AttackWave_NpcComOnFailure - /face4 高エネルギー反応の消失を確認。<br>被害状況、甚大。<br>各員、態勢を立て直し、戦闘継続を。
+
+Group 1
+LightRain_NpcComOnBegin - Energy signal from Magatsu's head. Watch for<br>beam attacks raining down from above. <br>Extreme caution advised.
+LightRain_NpcComOnBegin2 - Recommend you focus on evasion.<br><red>Try to take less than $(0)hits<black>.
+LightRain_NpcComOnSuccess - Energy waves have ceased. Damage is light.<br>All ops, recommence attack on Magatsu.
+LightRain_NpcComOnFailure - /face4 Energy waves have ceased.<br>Heavy damage reported.<br>All ops, regroup and resume your attack.
+FaceBeam_NpcComOnBegin - Detecting a heat source in each of Magatsu's <br>faces. Watch out for attacks from them.
+FaceBeam_NpcComOnBegin2 - Those heat ray attacks are unpredictable.<br>Recommend focusing on evasion.<br>Try to take less than <red>$(0) hits<black>.
+FaceBeam_NpcComOnSuccess - Heat ray attacks appear to have ceased.<br>Damage is light. All ops, recommence<br>attack on Magatsu.
+FaceBeam_NpcComOnFailure - /face4 Heat ray attacks appear to have ceased.<br>Heavy damage. All ops, regroup and resume<br>your attack.
+AttackWave_NpcComOnBegin - Intense energy reading from Magatsu's palms.<br>Recommend <red>taking cover<black> nearby.
+AttackWave_NpcComOnBegin2 - A large scale area attack seems likely. All ops,<br>be on high alert.
+AttackWave_NpcComOnSuccess - Energy reading has dissipated. Damage is light.<br>All ops, resume your attack on Magatsu.
+AttackWave_NpcComOnFailure - /face4 Intense energy reading has dissipated.<br>Heavy damage. All ops, regroup and resume<br>your attack.
+
+

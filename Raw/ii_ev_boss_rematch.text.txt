@@ -1,0 +1,87 @@
+ii_ev_boss_rematch.text was created: 04-07-2026 7:29:11
+Filesize is: 5120 bytes
+
+common
+Group 0
+IncidentName - $(0)を撃破せよ！
+TrialBeginMsg - 緊急指令！新たに現れた<br>$(0)を撃破せよ！
+TrialAbstract - 新たに現れた<br>$(0)を撃破せよ！
+
+Group 1
+IncidentName - Defeat $(0)!
+TrialBeginMsg - This is an urgent order! Defeat all<br>$(0) reinforcements!
+TrialAbstract - Defeat the $(0)<br>reinforcements!
+
+
+type1
+Group 0
+NpcComOnPreBegin - $(0)の撃退を<br>確認しました！　お疲れ様です！<br>……って、え？　大きな反応！？
+NpcComOnBegin - 緊急連絡！<br>新手の$(0)を<br>確認！　接近に気付けないなんて……！　
+NpcComOnSuccess - /face2 $(0)の<br>完全な撃退を確認しました！<br>各員の協力に感謝します！
+
+Group 1
+NpcComOnPreBegin - $(0) has been repelled!<br>Excellent work! Hold on... I've got a huge<br>reading here!
+NpcComOnBegin - Danger! $(0) reinforcements<br>sighted! How did I miss that before?　
+NpcComOnSuccess - /face2 We've confirmed the $(0)<br>forces have been repelled! Well done, everyone!
+
+
+type2
+Group 0
+NpcComOnPreBegin - $(0)の討伐を確認。<br>やれやれ、一段落だな……<br>……いや待て、何だこの反応は！
+NpcComOnBegin - 緊急指令だ、新手の<br>$(0)が出現！<br>ここまで接近に気付かないとは……！
+NpcComOnSuccess - $(0)の討伐を<br>確認した。各員の協力に感謝する。
+
+Group 1
+NpcComOnPreBegin - $(0) suppression confirmed.<br>Whew, I'm glad that's over with... Wait, further<br>activity detected!
+NpcComOnBegin - This is an urgent request!<br>Defeat the $(0) reinforcements!<br>It baffles me how we missed them!
+NpcComOnSuccess - $(0) suppressed.<br>I commend your efforts.
+
+
+type3
+Group 0
+NpcComOnPreBegin - /face2 やりましたね！<br>$(0)、撃破！<br>……あれ？　この反応、おっきいです！
+NpcComOnBegin - わわっ、うわわっ！<br>$(0)！？<br>新手！？　いつのまにそばに！？
+NpcComOnSuccess - /face2 な、なんとか<br>$(0)の撃退に<br>成功しました。お疲れ様でしたー。
+
+Group 1
+NpcComOnPreBegin - /face2 You've done it!<br>$(0) has been eliminated!<br>Wait... I've got a huge reading here!
+NpcComOnBegin - What!? $(0) reinforcements!?<br>Where'd they come from!?
+NpcComOnSuccess - /face2 Whew, you managed to repel the<br>$(0). Nice work.
+
+
+type6
+Group 0
+NpcComOnPreBegin - $(0)、撃破確認。<br>……ですが、別の反応が<br>近づいてきています。
+NpcComOnBegin - 緊急指令発令。<br>出現した$(0)を<br>撃破してください。
+NpcComOnSuccess - 緊急指令の達成を確認。<br>$(0)の反応は<br>消失しました。
+
+Group 1
+NpcComOnPreBegin - $(0) destroyed...<br>But something else is moving in.
+NpcComOnBegin - This is an emergency order.<br>Eliminate the $(0) presence.
+NpcComOnSuccess - Mission accomplished.<br>The $(0) presence is gone.
+
+
+type9
+Group 0
+NpcComOnPreBegin - $(0)の撃退を確認！<br>……ですが、なんだかもう少し<br>続きそうな感じですよ！
+NpcComOnBegin - 緊急連絡！<br>$(0)の反応を確認！<br>連戦です、気をつけてください！
+NpcComOnSuccess - $(0)の撃退を<br>確認しました、お疲れ様です！<br>なんとかなってよかったです！
+
+Group 1
+NpcComOnPreBegin - $(0) defeated!<br>...But I get the feeling we're not out of the<br>woods yet!
+NpcComOnBegin - Emergency! $(0) presence<br>detected! You'll have to make do without<br>a breather!
+NpcComOnSuccess - Well done driving out the $(0)<br>presence! It worked out in the end!
+
+
+type9f
+Group 0
+NpcComOnPreBegin - $(0)の撃退を確認！<br>……ですが、なんだかもう少し<br>続きそうな感じですよ！
+NpcComOnBegin - 緊急連絡！<br>$(0)の反応を確認！<br>連戦です、気をつけてください！
+NpcComOnSuccess - $(0)の撃退を<br>確認しました、お疲れ様です！<br>なんとかなってよかったです！
+
+Group 1
+NpcComOnPreBegin - $(0) defeated!<br>...But I get the feeling we're not out of the<br>woods yet!
+NpcComOnBegin - Emergency! $(0) presence<br>detected! You'll have to make do without<br>a breather!
+NpcComOnSuccess - Well done driving out the $(0)<br>presence! It worked out in the end!
+
+

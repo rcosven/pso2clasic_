@@ -1,0 +1,37 @@
+ii_ev_enemybomb_boss.text was created: 04-07-2026 7:29:11
+Filesize is: 1184 bytes
+
+common
+Group 0
+IncidentName - $(0)討伐
+TrialBeginMsg - $(0)を倒せ！
+TrialAbstract - $(0)を討伐せよ！
+
+Group 1
+IncidentName - $(0) Suppression
+TrialBeginMsg - Defeat the $(0)!
+TrialAbstract - Suppress the $(0)!
+
+
+type1
+Group 0
+
+Group 1
+
+
+type2
+Group 0
+NpcComOnBegin - ベイゼから強力な敵性反応を確認した。<br>アークス各員は速やかにこれを殲滅せよ。
+NpcComOnSuccess - 敵性反応の消失を確認。<br>よくやったな。
+
+Group 1
+NpcComOnBegin - Strong, hostile Bayze readings detected. ARKS<br>operatives, eradicate them immediately.
+NpcComOnSuccess - Enemy presence eliminated. Well done.
+
+
+type3
+Group 0
+
+Group 1
+
+

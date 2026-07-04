@@ -1,0 +1,55 @@
+ii_session_apc_5019.text was created: 04-07-2026 7:29:11
+Filesize is: 3600 bytes
+
+common
+Group 0
+Begin - /ci2 1 マールー開始
+Success - /mn1 /ci2 2 マールー成功
+Failure - /mn1 /ci2 2 マールー失敗
+Dead - /mn1 /ci2 2 マールー自分死亡
+BuddyDead - /mn1 /ci2 2 マールー相手死亡
+Evolution - /mn1 /ci2 2 マールー発展
+
+Group 1
+Begin - /ci2 1 Marlu Beginning
+Success - /mn1 /ci2 2 Marlu Success
+Failure - /mn1 /ci2 2 Marlu Failure
+Dead - /mn1 /ci2 2 Marlu Death
+BuddyDead - /mn1 /ci2 2 Marlu's Partner Dead
+Evolution - /mn1 /ci2 2 Marlu Evolution
+
+
+5020
+Group 0
+Begin - /mn13 /ci3 1 ……それはこっちの台詞。<br>ケーキ屋さんを探してただけなのに<br>ほんと……面倒。
+Success - /ci1 1 ……そんなの私の勝手。<br>私はもともとケーキ屋を探してたの。<br>……それじゃ。
+Failure - /ci1 2 ……次はもっと、上手くやるわ。
+Dead - /ci4 1 ……もう、無理ね。<br>ケーキ、欲しかったな……
+BuddyDead - /ci3 1 ……自業自得ね。<br>でも、きっと私も未熟だったから。
+Evolution - /mn22 /ci1 1 ……同感。<br>思ったより面倒になってきたわね。
+
+Group 1
+Begin - /mn13 /ci3 1 ...That's my line. I was just looking for the<br>bakery... What a freaking hassle.
+Success - /ci1 1 ...I can do as I please. Originally I was searching<br>for the bakery. A search I'll resume.
+Failure - /ci1 2 ...I'll do better next time.
+Dead - /ci4 1 ...I'm done for. Oh how I wanted that cake...
+BuddyDead - /ci3 1 ...You brought this on yourself. Of course,<br>my performance didn't help anything.
+Evolution - /mn22 /ci1 1 ...I agree. This has gotten way out of hand.
+
+
+5020v2
+Group 0
+Begin - /ci1 1 ……貴方にはお節介かもしれない。<br>けど、私達だって、力になりたいの。
+Success - /ci1 2 ……先で何が待ってるかは<br>わからない、けど忘れないで。<br>貴方はひとりじゃない。
+Failure - ……ごめんなさい……<br>また迷惑をかけてしまったわ……
+Dead - ……また、迷惑かけちゃった。
+BuddyDead - ……オーザ！
+
+Group 1
+Begin - /ci1 1 ...We don't want to impose. But we'd sure like<br>to help.
+Success - /ci1 2 ...There's no telling what's ahead. But just<br>remember, you're not alone.
+Failure - I'm sorry... We're nothing but trouble, aren't we?
+Dead - ...I'm always in the way.
+BuddyDead - ...Oza!
+
+

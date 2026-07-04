@@ -1,0 +1,69 @@
+ii_session_apc_5319.text was created: 04-07-2026 7:29:11
+Filesize is: 4704 bytes
+
+common
+Group 0
+Begin - 開始5151
+Success - 成功5151
+Failure - 失敗5151
+Dead - 自分死亡5151
+BuddyDead - 相手死亡5151
+Evolution - 発展5151
+
+Group 1
+Begin - Begin5151
+Success - Success5151
+Failure - Failure5151
+Dead - YouDied5151
+BuddyDead - PartnerDied5151
+Evolution - Evolution5151
+
+
+5323
+Group 0
+Begin - /ci3 1 ちょっとムサシ！<br>あんたがふがいない戦い方するから<br>迷惑かけちゃってるじゃない！
+Success - /ci2 1 えっと、その……ありがとう。<br>実はちょっと危なかったから<br>とっても助かったわ。
+Failure - /ci4 1 ああもうっ、上手くいかないし<br>自分の情けなさに腹が立つっ……！<br>……ごめん、先に退く！
+Dead - 嘘でしょ……！<br>こんなところでやられるなんて……！
+BuddyDead - まったくもう……情けないのは<br>リアルだけにしなさいよ。<br>そこで少し休んでなさい！
+
+Group 1
+Begin - /ci3 1 C'mon, Musashi! If you don't give a proper effort<br>you're just wasting everyone's time!
+Success - /ci2 1 Oh, uh...thanks. Not gonna lie, that was looking<br>pretty hairy for a second. Thanks for the help.
+Failure - /ci4 1 Gah! I don't process failure well!<br>Gonna need...more than a minute. Sorry, bye!
+Dead - This can't be happening! How could I lose?
+BuddyDead - Unbelievable...be this pathetic on your own time,<br>please. For now, just have a little rest there!
+
+
+5314
+Group 0
+Begin - /ci3 2 /mn12 任せてください！<br>こんな奴ら、蹴散らしちゃいます！
+Success - /ci2 2 /mn24 はい、もちろんです！<br>……ＲＩＮＡさんと一緒ですし<br>私、頑張ります！
+Failure - /mn1 す、すみません……<br>私が不甲斐ないばかりに……！
+Dead - /mn24 ＲＩＮＡさんの盾になれたのなら<br>私は本望……！
+BuddyDead - /mn18 そんな……！<br>よくも……絶対に許さないわ！
+
+Group 1
+Begin - /ci3 2 /mn12 Leave it to us! We'll wipe the floor with<br>these idiots!
+Success - /ci2 2 /mn24 Yes, of course! I'm here with RINA, naturally I'll<br>give it my all!
+Failure - /mn1 I-I'm so sorry... I can never do anything right!
+Dead - /mn24 If I was able to protect RINA then I'm happy...
+BuddyDead - /mn18 Hey...! How dare they... I'll never forgive them<br>for this, never!
+
+
+5347
+Group 0
+Begin - /toge /ci3 ＲＩＮＡさんの為に頑張るのよ！<br>こいつらにイベントは<br>絶対に邪魔させないんだから！
+Success - /mn15 /ci2 2 さあ、次へ行くわよ！<br>それがＲＩＮＡさんのためだからね！
+Failure - /mn5 そんな……！<br>なんでこんなことに……！
+Dead - /mn4 ウソでしょ……！<br>ＲＩＮＡさん、ごめんなさい……
+BuddyDead - /mn22 シルバ、大丈夫？<br>私たちで後は片付けるから<br>ちょっと休んでて！
+
+Group 1
+Begin - /toge /ci3 Let's give our all for RINA! We can't let these<br>fools ruin the event!
+Success - /mn15 /ci2 2 OK, on to the next one! For RINA!
+Failure - /mn5 What!? Why...
+Dead - /mn4 No way! RINA, I'm sorry...
+BuddyDead - /mn22 Silva, you okay? We can handle the rest, so go easy!
+
+

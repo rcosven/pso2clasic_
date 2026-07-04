@@ -1,0 +1,181 @@
+ui_qu_eternal.text was created: 04-07-2026 7:34:11
+Filesize is: 9904 bytes
+
+terminal
+Group 0
+Title - エクストリーム端末
+TerminalTitle - エクストリーム端末情報
+TerminalList1 - ステージ情報確認
+TerminalList2 - 仮想アイテム保管庫
+AcceptPoolItem - 仮想アイテム受け取り
+AcceptText - 受け取る
+ReturnText - 戻る
+CheckPoolItem - 仮想アイテム保管状況
+PossibleNumber - 受け取り可能数
+TotalPoolItem - 仮想アイテム総数
+ItemDetails - アイテム詳細
+AcceptItemList - 受け取りアイテムリスト
+AcceptNum - $(0)/$(1)
+TotalNum - $(0)
+AcceptConfirmTitle - 仮想アイテム受け取り
+AcceptYesNo - 以下のアイテムを受け取ります。<br>よろしいですか？<br>
+AcceptErrTitle - 仮想アイテム受け取り
+AcceptErr - 受け取り可能数を超えているため、<br>これ以上選択することはできません。
+ItemPackErr - アイテムパックが一杯のため、<br>受け取ることができません。
+RecieveErrTitle - 通信エラー
+RecieveErr - 通信エラーが発生しました。<br>受け取ることができませんでした。
+AcceptAble - 受け取り可能
+AcceptSuccessTitle - 仮想アイテム受け取り
+AcceptSuccess - 選択したアイテムを受け取りました。
+AcceptMaxOver - これ以上受け取れません。
+NoItemMessage - 仮想アイテムがありません
+TypeA - エクストリーム端末
+TypeA_Help - <c f0df60>ステージ情報の確認、仮想アイテム保管状況の確認と受け取り（クエストクリア後のみ）ができます。<c>
+TypeB - ステージ情報
+TypeB_Help - <c f0df60>各ステージの情報確認を行うことができます。<c>
+TypeC - 仮想アイテム受け取り
+TypeC_Help - <c f0df60>今回拾得した仮想アイテム保管状況の確認と、受け取り（クエストクリア後のみ）ができます。<c>
+
+Group 1
+Title - EXTREME TERMINAL
+TerminalTitle - EXTREME TERMINAL INF.
+TerminalList1 - Check Stage Details
+TerminalList2 - Virtual Item Vault
+AcceptPoolItem - Take Virtual Item
+AcceptText - Take
+ReturnText - Back
+CheckPoolItem - Virtual Item Storage Status
+PossibleNumber - Item Pick-up Limit
+TotalPoolItem - Total Number of Virtual Items
+ItemDetails - Item Details
+AcceptItemList - List of Items for Pick-up
+AcceptNum - $(0)/$(1)
+TotalNum - $(0)
+AcceptConfirmTitle - RECEIVING VIRTUAL ITEMS
+AcceptYesNo - You are about to take the items below.<br>Are you sure you wish to proceed?
+AcceptErrTitle - RECEIVING VIRTUAL ITEMS
+AcceptErr - You cannot select any more items because <br>you have exceeded the item pick-up limit.
+ItemPackErr - You cannot take any more items because <br>your inventory is full.
+RecieveErrTitle - COMMUNICATION ERROR
+RecieveErr - An error has occurred, preventing you <br>from taking your items.
+AcceptAble - Can Be Picked Up
+AcceptSuccessTitle - RECEIVING VIRTUAL ITEMS
+AcceptSuccess - Received selected item.
+AcceptMaxOver - You cannot take any more items.
+NoItemMessage - Virtual Item available
+TypeA - Extreme Terminal
+TypeA_Help - <c f0df60>Here you can check stage details, check the status of Virtual Item storage, and take items with you (only after clearing quests).<c>
+TypeB - Stage Details
+TypeB_Help - <c f0df60>Here you can check all kinds of stage details.<c>
+TypeC - Receiving Virtual Items
+TypeC_Help - <c f0df60>Here you can check the storage status of Virtual Items that you picked up in your last quest, and take items with you (only after clearing quests).<c>
+
+
+area_information
+Group 0
+EntryEnemy - 登場エネミー
+EnemyCondition - エネミー能力変化
+FloorOrder - ステージオーダー
+AbilityUpSmall - 能力上昇（小）
+AbilityUpMiddle - 能力上昇（中）
+AbilityUpLarge - 能力上昇（大）
+AbilityUpExtraBig - 能力上昇（特大）
+WeaponResistance - 耐性上昇（装備時）
+TechniqueResistance - 耐性上昇（属性）
+WeaponResistanceDown - 耐性低下（装備時）
+TechniqueResistanceDown - 耐性低下（属性）
+HP - HP
+Attack - 攻撃力
+Defence - 防御力
+HitResistance - 打撃耐性
+ShootResistance - 射撃耐性
+TecResistance - 法撃耐性
+AllResistance - 全耐性
+InvalidAbnomalState - 状態異常無効
+FloorNumber1 - ステージ１
+FloorNumber2 - ステージ２
+FloorNumber3 - ステージ３
+FloorNumber4 - ステージ４
+FloorNumber5 - ステージ５
+FloorNumberTab - $(0)
+FloorNumberIndex - ステージ$(0)
+MessageNo - なし
+MessageYes - あり
+Other - ほか
+HitStatus - 打撃ダメージ
+ShootStatus - 射撃ダメージ
+TecStatus - 法撃ダメージ
+AllStatus - すべて
+FloorOrderToast - 前のステージオーダー達成により、エネミーの耐性が低下しました。
+AppendMark - 、
+
+Group 1
+EntryEnemy - Enemies Present
+EnemyCondition - Enemy Capability Refactoring
+FloorOrder - Stage Orders
+AbilityUpSmall - Ability up (S)
+AbilityUpMiddle - Ability up (M)
+AbilityUpLarge - Ability up (L)
+AbilityUpExtraBig - Ability up (XL)
+WeaponResistance - Resistance up (equipped)
+TechniqueResistance - Resistance up (Element)
+WeaponResistanceDown - Resistance down (equipped)
+TechniqueResistanceDown - Resistance down (Element)
+HP - HP
+Attack - Attack
+Defence - Defense
+HitResistance - Melee Resistance
+ShootResistance - Ranged Resistance
+TecResistance - Technique Resistance
+AllResistance - Total Resistance
+InvalidAbnomalState - Status Ailment Nullified
+FloorNumber1 - Stage 1
+FloorNumber2 - Stage 2
+FloorNumber3 - Stage 3
+FloorNumber4 - Stage 4
+FloorNumber5 - Stage 5
+FloorNumberTab - $(0)
+FloorNumberIndex - Stage $(0)
+MessageNo - None
+MessageYes - Yes
+Other - Other
+HitStatus - Melee Damage
+ShootStatus - Ranged Damage
+TecStatus - Technique Damage
+AllStatus - All
+FloorOrderToast - Fulfilling the previous Stage Order has lowered enemy resistances.
+AppendMark - ,
+
+
+floor_order
+Group 0
+TitleEnemyDestroy - を$(0)体倒せ！
+TitleDamageNum - に$(0)以上のダメージを$(1)回以上与えろ！
+TitlePartDamageNum - の部位を合計$(0)箇所破壊せよ！
+TitleNoDamage - $(0)秒間、ダメージを受けるな！
+TitleNoRecover - $(0)秒間、回復効果を受けるな！
+TitleNoDead - $(0)回以上戦闘不能になるな！
+SubTitleSecond - $(0)秒以内に
+SubTitleSecondRecover - $(0)秒以内に回復を受けずに
+SubTitleWeakPoint - 弱点部位を突いて
+SubTitleForward - 正面から
+SubTitleBack - 背後から
+SubTitleEnemy - エネミー
+SubTitleState - 状態異常になった
+
+Group 1
+TitleEnemyDestroy - Take down $(0) 
+TitleDamageNum - Deal $(0) damage more than $(1) times to 
+TitlePartDamageNum - Destroy a total of $(0) sites of 
+TitleNoDamage - Don't take damage for $(0) seconds
+TitleNoRecover - No recovery effects for $(0) seconds
+TitleNoDead - Don't get incapacitated over $(0) times
+SubTitleSecond -  within $(0) seconds
+SubTitleSecondRecover - without receiving healing within $(0) seconds
+SubTitleWeakPoint - by attacking the Weak Point
+SubTitleForward -  from the front
+SubTitleBack -  from behind
+SubTitleEnemy - Enemy(s)
+SubTitleState -  inflicted with a Status Ailment
+
+

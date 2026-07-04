@@ -1,0 +1,87 @@
+ii_2ev_boss.text was created: 04-07-2026 7:29:11
+Filesize is: 4176 bytes
+
+common
+Group 0
+IncidentName - $(0)討伐
+TrialBeginMsg - $(0)を倒せ！
+TrialAbstract - $(0)を討伐せよ！
+
+Group 1
+IncidentName - Suppress $(0)
+TrialBeginMsg - Defeat $(0)!
+TrialAbstract - Suppress $(0)!
+
+
+type1
+Group 0
+NpcComOnPreBegin - 強力な熱源反応が接近！<br>注意してください、来ます！
+NpcComOnBegin - 緊急連絡！<br>新手のエネミーの接近を確認！
+NpcComOnSuccess - $(0)の<br>撃破を確認しました！<br>各員の協力に感謝します！
+
+Group 1
+NpcComOnPreBegin - Intense heat source approaching!<br>Stay alert, something's coming!
+NpcComOnBegin - Emergency!<br>More enemies approaching!
+NpcComOnSuccess - $(0) destroyed! Well done, everyone!
+
+
+type2
+Group 0
+NpcComOnPreBegin - こいつは強力な熱源反応だな。<br>油断するなよ、これはでかいぞ。
+NpcComOnBegin - 新手の敵性反応の接近を確認！<br>警戒を怠るな。
+NpcComOnSuccess - 目標の撃破を確認した。<br>各員、通常任務に戻れ。
+
+Group 1
+NpcComOnPreBegin - So this is what was giving off that intense<br>heat reading. Stay sharp, this one's huge.
+NpcComOnBegin - More enemies approaching!<br>Stay sharp people!
+NpcComOnSuccess - Target destroyed.<br>All ops, return to your normal duties.
+
+
+type3
+Group 0
+NpcComOnPreBegin - この熱源反応は異常ですよ！<br>ほんとうに気をつけてください！
+NpcComOnBegin - わわわっ！　新手！？　<br>いつのまにこんな近くに！？
+NpcComOnSuccess - な、なんとか目標の撃破に<br>成功したみたいですー。<br>ふぅ、よかったぁ……
+
+Group 1
+NpcComOnPreBegin - This heat source is off the charts!<br>Be careful out there!
+NpcComOnBegin - What the--!? More!? How'd they get so close, so<br>fast!?
+NpcComOnSuccess - Whew... Targets destroyed. Looks like we got 'em.<br>I'm still shaking here...
+
+
+type6
+Group 0
+NpcComOnPreBegin - 周囲への警戒を強めてください。<br>強力な反応が感知されています。
+NpcComOnBegin - 緊急通達。<br>新たな敵性反応が接近。<br>撃破してください。
+NpcComOnSuccess - 目標を撃破。<br>見事な対応でした。
+
+Group 1
+NpcComOnPreBegin - Transition to high alert. Strong enemy presence<br>detected in the area.
+NpcComOnBegin - Emergency. New enemy approaching.<br>Engage at will.
+NpcComOnSuccess - Target destroyed. You handled that brilliantly.
+
+
+type9
+Group 0
+NpcComOnPreBegin - 周辺、警戒してください！<br>不審な反応があります！
+NpcComOnBegin - 緊急通達です！<br>強力な敵性反応を確認しました！<br>急ぎ対処をお願いします！
+NpcComOnSuccess - 敵性反応、消失確認！<br>お見事です！
+
+Group 1
+NpcComOnPreBegin - Be on high alert! Picking up some suspicious<br>readings!
+NpcComOnBegin - Emergency! Strong enemy presence detected!<br>Please hurry!
+NpcComOnSuccess - The enemy presence has dispersed!<br>Nice work!
+
+
+type9f
+Group 0
+NpcComOnPreBegin - 周辺、警戒してください！<br>不審な反応があります！
+NpcComOnBegin - 緊急通達です！<br>強力な敵性反応を確認しました！<br>急ぎ対処をお願いします！
+NpcComOnSuccess - 敵性反応、消失確認！<br>お見事です！
+
+Group 1
+NpcComOnPreBegin - Be on high alert! Picking up some suspicious<br>readings!
+NpcComOnBegin - Emergency! Strong enemy presence detected!<br>Please hurry!
+NpcComOnSuccess - The enemy presence has dispersed!<br>Nice work!
+
+

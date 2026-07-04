@@ -1,0 +1,64 @@
+quest_00170250.text was created: 04-07-2026 7:32:53
+Filesize is: 2400 bytes
+
+Basic
+Group 0
+Title - T:電撃！ポリタンランド！
+Explanation - ポリタンランドにようこそ！<br>オレの作ったクエストで遊んでみないか？<br>ルールは簡単。決められた時間までに<br>敵をたくさん倒してハイスコアを目指すんだ。<br>途中発生するエマージェンシートライアルは<br>スコア稼ぎのチャンスだから逃すなよっ！<br>ハイスコア目指して頑張ってくれよなっ！<br>――――――――――――――――――――<br>ルーム内のスコア共有<br>制限時間経過でクエスト終了
+
+Group 1
+
+
+QuestTarget
+Group 0
+SimpleExplanation - エネミーを撃破しスコアを獲得せよ！
+
+Group 1
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - ポリタンランドへようこそ！<br>今からどれだけのエネミーを倒せるかの<br>スコアアタックに挑戦してもらうぞ！
+NpcComMsg2 - クエストの途中で発生する<br>エマージェンシートライアルには<br>トライアルオーダーを設定しているんだ
+NpcComMsg3 - そのトライアルオーダーを達成すると<br>スコア上昇倍率がアップするから<br>積極的に挑戦して高得点を狙ってくれ！
+
+Group 1
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+
+Group 1
+
+
+AreaName
+Group 0
+Area0S - 市街地エリア1
+Area0L - アークスシップ　市街地エリア1
+Area1S - 市街地エリア2
+Area1L - アークスシップ　市街地エリア2
+
+Group 1
+
+
+NpcMessage
+Group 0
+NPC_QUEST_START - さあ、クエスト開始だっ！<br>どんどんエネミーを倒して<br>ハイスコア目指してガンバレッ！
+NPC_TIME_HALF - 残り時間、あと半分だっ。<br>トライアルオーダーを達成して<br>倍率を上げながら高得点を狙うんだ！
+NPC_TIME_1MIN - 残り時間、あと１分だっ。<br>最後まであきらめずにガンバレッ！
+
+Group 1
+
+
+LineMessage
+Group 0
+LINE_QUEST_START - エネミーを撃破しスコアを獲得せよ！
+LINE_TIME_1MIN - 残り時間、あと1分！
+
+Group 1
+
+

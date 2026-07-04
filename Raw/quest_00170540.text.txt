@@ -1,0 +1,101 @@
+quest_00170540.text was created: 04-07-2026 7:32:45
+Filesize is: 5392 bytes
+
+Basic
+Group 0
+Title - T:輝光を砕く母なる神
+Explanation - 『守護輝士』に緊急連絡。<br>衛星・月および地球にて<br>エーテルの暴走励起と尋常ならざる<br>巨大な幻創種の反応を検知した。<br>これまでに培ったすべての力を用いて<br>単独でこれを撃破せよ。<br>極めて危険な任務だが完遂を望む。<br>――――――――――――――――――――<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+
+Group 1
+Title - T: Mother Omnipotent, Shatterer
+Explanation - This is an urgent message for all Guardians.<br>We have detected readings corresponding to<br>aether excitation and a massive phantasm on <br>The Moon and Earth. You must defeat them <br>alone using all your abilities. We trust you will <br>be able to complete this delicate mission.<br>----------------------------------------<br>Maximum dealable damage is limited to 999,999.<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 時間内にエネミーを全て撃退せよ！
+
+Group 1
+SimpleExplanation - Defeat all enemies before time runs out!
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Clear a special Client Order
+a2 - Clear a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、転送を開始します。<br>最初の目標は、月面に出現した<br>巨大幻創種の撃破です。
+NpcComMsg2 - 目標確認後、速やかに<br>攻撃を開始し、撃破してください！<br>お気をつけて！
+
+Group 1
+NpcComMsg1 - Preparing to initiate teleportation.<br>Your first objective is to defeat the <br>massive phantasm which has <br>manifested on the Moon Surface.
+NpcComMsg2 - Once you have confirmed the target begin<br>attack maneuvers immediately to destroy it!<br>Be careful out there!
+
+
+PreTransportDirection2
+Group 0
+NpcComMsg1 - 連戦となりますが<br>地球に突如出現した巨大反応付近に<br>転送します。
+NpcComMsg2 - 厳しい戦いが予想されますが<br>貴方なら、きっと大丈夫です！<br>どうか、お気をつけて！
+
+Group 1
+NpcComMsg1 - Now preparing to teleport you to the<br>vicinity of the massive signal which was<br>suddenly detected on planet Earth.
+NpcComMsg2 - We expect the battle on the ground will<br>be intense, but someone of your capabilities<br>should be fine! Do be careful.
+
+
+AreaName
+Group 0
+Area0S - 月面
+Area0L - 衛星・月　月面
+Area1S - 幻創の柱
+Area1L - 衛星・月　幻創の柱
+Area2S - 世界樹
+Area2L - 惑星・地球　世界樹
+Area3S - 世界樹の頂
+Area3L - 惑星・地球　世界樹の頂
+
+Group 1
+Area0S - Moon Surface
+Area0L - The Moon - Moon Surface
+Area1S - Phantasm Pillar
+Area1L - The Moon - Phantasm Pillar
+Area2S - The World Tree
+Area2L - Earth - The World Tree
+Area3S - The Top of The World Tree
+Area3L - Earth - The Top of The World Tree
+
+
+QuestSuccessAreaName
+Group 0
+Area1S - 月面
+Area1L - 衛星・月　月面
+Area3S - イースター島
+Area3L - 惑星・地球　イースター島
+
+Group 1
+Area1S - Moon Surface
+Area1L - The Moon - Moon Surface
+Area3S - Easter Island
+Area3L - Earth - Easter Island
+
+
+PlanetName
+Group 0
+QuestInfoPlanetName - 衛星・月
+
+Group 1
+QuestInfoPlanetName - The Moon
+
+

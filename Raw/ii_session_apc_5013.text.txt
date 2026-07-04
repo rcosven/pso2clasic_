@@ -1,0 +1,55 @@
+ii_session_apc_5013.text was created: 04-07-2026 7:29:11
+Filesize is: 4336 bytes
+
+common
+Group 0
+Begin - /ci2 1 パティー開始
+Success - /mn1 /ci2 2 パティー成功
+Failure - /mn1 /ci2 2 パティー失敗
+Dead - /mn1 /ci2 2 パティー死亡
+BuddyDead - /mn1 /ci2 2 パティー相手が死亡
+Evolution - /mn1 /ci2 2 パティー発展
+
+Group 1
+Begin - /ci2 1 Pati Beginning
+Success - /mn1 /ci2 2 Pati Success
+Failure - /mn1 /ci2 2 Pati Failure
+Dead - /mn1 /ci2 2 Pati Death
+BuddyDead - /mn1 /ci2 2 Pati's Partner Dead
+Evolution - /mn1 /ci2 2 Pati Evolution
+
+
+5014
+Group 0
+Begin - /ci2 1 ケーキ！　ケーキ！　おいしいケーキ！<br>ナウラのケーキ屋でておいでー！<br>でないとこっちから出向くぞー！
+Success - /ci2 2 ふふふふ、この程度でアタシの<br>ケーキへの道を閉ざすことはできない！<br>さあさティア、捜索再開だよー！
+Failure - /ci3 1 むむっ、こりゃたまらん！<br>パティエンティアは撤退します！
+Dead - /ci4 1 ああ……ケーキの家が見える……<br>これは……夢？
+BuddyDead - /mn22 /ci4 1 ティアがやられた、だがティアは<br>あたし達の中でも一番の小物！　胸が！<br>……倒れてるティアからの視線が痛い！
+Evolution - /mn17 /ci2 2 まだ、来る！<br>ケーキへの道は長く険しいね！
+
+Group 1
+Begin - /ci2 1 Cake! I need cake! Delicious cake! I know <br>you're here somewhere Naura Bakery, so come <br>on out! Don't make me come find you!
+Success - /ci2 2 Hahaha... It'll take more than that to stifle my<br>quest for cake. Come Tia, we'll resume our search!
+Failure - /ci3 1 This really SUCKS! PaTia over and out!
+Dead - /ci4 1 What's this... I see a house of cakes...<br>Am I...dreaming?
+BuddyDead - /mn22 /ci4 1 Tia was beaten, but she was the<br>smallest of us! My chest!<br>It's the pain of Tia's piercing glare!
+Evolution - /mn17 /ci2 2 They're still coming! Our quest for <br>cake is an arduous one!
+
+
+5014v2
+Group 0
+Begin - /ci2 4 呼ばれて飛び出てじゃじゃーん！<br>アークスいちの情報屋<br>ただいま登場っ！
+Success - /ci2 2 さてさて！<br>例の件、覚えてるよね！<br>忘れてないよね！
+Failure - このままじゃティアも<br>行方不明になりそうなので<br>ここら辺でお引上げ！
+Dead - ちょ、ちょっと休憩したいかも……
+BuddyDead - ふふふ、ティアがやられたか……<br>しかーし、今日のあたしたちは<br>いつもとはひと味違うよーっ！
+
+Group 1
+Begin - /ci2 4 You asked, and you shall receive! ARKS' <br>number one intel team at your service!
+Success - /ci2 2 Okay, okay! You remember what we're <br>after, right? You better not have forgotten!
+Failure - Tia's bound to get lost at this rate so I'll be<br>pulling out here!
+Dead - Hold on, I...might need a break...
+BuddyDead - Heheh... So Tia's been beaten. But! We've got<br>something up our sleeves today!
+
+

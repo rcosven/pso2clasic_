@@ -1,0 +1,29 @@
+ii_boss_ahl_remaining_buff.text was created: 04-07-2026 7:29:11
+Filesize is: 1600 bytes
+
+common
+Group 0
+IncidentName - 共振エネミー討伐
+TrialBeginMsg - 指定エネミーを同時に討伐せよ！
+TrialAbstract - 指定エネミーを同時に討伐せよ！
+
+Group 1
+IncidentName - Suppress Resonant Enemies
+TrialBeginMsg - Supress both enemies at once!
+TrialAbstract - Supress both enemies at once!
+
+
+type9
+Group 0
+NpcComOnBegin - エネミー同士の共振反応を確認。<br>嫌な予感がします……。<br>可能な限り同時に撃破を！
+NpcComOnSuccess - 敵性反応、すべて消失！<br>目標、達成です！
+NpcComOnDefeatedFirstOne - 一方の目標の反応消失を確認。<br>すみやかに残りを撃破してください！
+NpcComOnAddCondition - 残存目標の反応増大！<br>ご注意を！
+
+Group 1
+NpcComOnBegin - Two resonant enemies detected. I've got a bad<br>feeling about this... Try to take them both out<br>at once!
+NpcComOnSuccess - Enemy presence fully eliminated!<br>Mission accomplished!
+NpcComOnDefeatedFirstOne - One enemy presence eliminated.<br>Destroy the other one now!
+NpcComOnAddCondition - The remaining one has grown more powerful!<br>Be careful!
+
+

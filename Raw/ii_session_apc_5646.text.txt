@@ -1,0 +1,35 @@
+ii_session_apc_5646.text was created: 04-07-2026 7:29:11
+Filesize is: 2080 bytes
+
+5647
+Group 0
+Begin - /ci1 1 そのように、お茶に誘うかのような<br>気軽さで、戦いに巻き込んでしまって<br>よろしいのでしょうか……
+Success - /ci2 1 私からも、ご協力感謝します。<br>ここは、とても良い景勝地ですね。<br>今度はゆっくり遊びに来たいです。
+Dead - 不覚です……！<br>普段より肌の露出が多かったためか<br>動きにためらいが……
+BuddyDead - 無茶はなさらず<br>あとは、私たちにお任せください。
+
+Group 1
+Begin - /ci1 1 Is it okay to so freely bring others<br>into the scuffle? It feels as if I've<br>been cordially invited to tea...
+Success - /ci2 1 I thank you for the help as well.<br>This spot is certainly very scenic.<br>I'd love to come back and enjoy the view.
+Dead - What happened!?<br>Perhaps it's due to the amount of skin<br>on display, but I'm hesitant to move...
+BuddyDead - Don't push yourself too hard.<br>Please leave the rest to us.
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展51
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

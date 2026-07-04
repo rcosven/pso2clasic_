@@ -1,0 +1,37 @@
+ii_session_apc_5580.text was created: 04-07-2026 7:29:11
+Filesize is: 2512 bytes
+
+5584
+Group 0
+Begin - /ci2 2 ここで会えるなんて運命ツナね！<br>リーダー、あたしと一緒に戦うツナ！<br>アギトは無口でつまらないツナ。
+Success - /ci3 2 終わりツナね！　あと面倒を見てるのは<br>あたしツナ！　お前はオロチナントカを<br>捜してすぐ行方不明になるツナ！
+Failure - うぅ、中トロ号も限界ツナ。<br>ここは涙をのんで離脱するツナよ……<br>リーダー、アギト、撤退ツナ！
+Dead - あ、海が見えるツナ……<br>中トロ号、おやすみツナ……
+BuddyDead - アギトが倒れても<br>あたしたちで終わらせるツナ。<br>それが共闘ツナよ！
+
+Group 1
+Begin - /ci2 2 Well, aren't we a couple fish in troubled waters!<br>How about joining forces, Leader?<br>Boring ol' Agito's been quieter than a lamprey!
+Success - /ci3 2 Like shooting fish in a barrel! Leave<br>the rest to me. Try not to go missing<br>looking for that whopper you're after!
+Failure - Oof, Tuna Buster needs a break.<br>Sorry, but I'm swimming back to base...<br>Leader, Agito, "sea" you later!
+Dead - Ahh, I'm sinking into a deep-sea slumber...<br>Nighty-night, Tuna Buster...
+BuddyDead - Even if Agito goes down,<br>we're gonna finish this!<br>We'll fight to the briny end!
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

@@ -1,0 +1,37 @@
+ii_session_apc_5675.text was created: 04-07-2026 7:29:11
+Filesize is: 2272 bytes
+
+5674
+Group 0
+Begin - /ci1 2 リーダーか、ちょうどいい！<br>私とアフタルだけでは手が足りない。<br>エネミー討伐に力を貸してくれ！
+Success - /ci2 1 協力に感謝する、リーダー。<br>やはり貴公が一緒だと心強いな。<br>アフタルもよくやった。
+Failure - くっ、やむを得んか……<br>この場を離脱して、態勢を立て直す。<br>遅れるなよ、アフタル！
+Dead - くっ、不覚……<br>すまない、アフタル。あとは……
+BuddyDead - 動けないのか、アフタル？<br>だったら、あとは私に任せて<br>そこで休んでいろ！
+
+Group 1
+Begin - /ci1 2 Perfect timing, Leader! Aphtal and I<br>can't manage this one on our own.<br>Come help us suppress the enemy!
+Success - /ci2 1 Thanks for the assist, Leader.<br>I feel safe having you around.<br>You did great too, Aphtal.
+Failure - Ugh, that's the end of the line.<br>I'm going to retreat and heal up.<br>Don't be late, Aphtal!
+Dead - Ugh, that was careless.<br>Sorry, Aphtal. The rest is...
+BuddyDead - Are you unable to move, Aphtal?<br>Then rest there and leave it to me!
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

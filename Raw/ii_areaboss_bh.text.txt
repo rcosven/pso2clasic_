@@ -1,0 +1,35 @@
+ii_areaboss_bh.text was created: 04-07-2026 7:29:11
+Filesize is: 2496 bytes
+
+common
+Group 0
+IncidentName - $(0)を撃破せよ！
+TrialBeginMsg - $(0)を撃破せよ！
+TrialAbstract - $(0)を撃破せよ！
+
+Group 1
+IncidentName - Defeat $(0)!
+TrialBeginMsg - Defeat $(0)!
+TrialAbstract - Defeat $(0)!
+
+
+type9
+Group 0
+NpcComOnBegin - いかん、この波動は危険じゃ！<br>わらわが結界を施した神岩を送る！<br>直ちに、その影に隠れよ！
+NpcComOnSuccess - 『禍津』の撃破を確認。<br>お疲れさまでした！
+NpcComOnAnger - /voice11_voice_navi09_smd_107 『禍津』の反応、増大！<br>攻撃の激化が予想されます！<br>ご注意を！
+NpcComOnSP - /voice11_voice_navi09_smd_108 『禍津』から高エネルギー反応！<br>警戒を！
+NpcComOnSPSuccess - /voice11_voice_navi09_smd_109 高エネルギーの消失を確認！<br>目標は反動で停止しています！<br>今がチャンスです！
+HP_Under_50 - 『禍津』残存体力、低下！
+HP_Under_10 - 『禍津』残存体力、残りわずか
+
+Group 1
+NpcComOnBegin - These energy waves are far too dangerous!<br>I'll send out a shielded spirit stone!<br>Quickly, hide in its shadow!
+NpcComOnSuccess - Destruction of Magatsu confirmed.<br>Nice work, everyone!
+NpcComOnAnger - /voice11_voice_navi09_smd_107 Magatsu's readings are spiking!<br>They're about to hit hard!<br>Be careful!
+NpcComOnSP - /voice11_voice_navi09_smd_108 I'm detecting a high energy reading from Magatsu!<br>Stay alert!
+NpcComOnSPSuccess - /voice11_voice_navi09_smd_109 High energy readings eliminated!<br>The target has been interrupted!<br>Now's your chance!
+HP_Under_50 - Magatsu's HP is depleting!
+HP_Under_10 - Magatsu's HP is extremely low.
+
+

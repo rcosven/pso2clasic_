@@ -1,0 +1,57 @@
+quest_00051030.text was created: 04-07-2026 7:32:02
+Filesize is: 3584 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special client order
+a2 - Complete a special client order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+Basic
+Group 0
+Title - 艦隊迎撃戦：敵艦襲撃
+Explanation - 敵艦隊からの攻撃、第一波の迎撃を確認。<br>反撃にはＡ．Ｉ．Ｓの起動が必要不可欠だが<br>敵艦上の装置が発する光子妨害波により<br>Ａ．Ｉ．Ｓの起動が阻害されている。<br>この問題を解消するため<br>敵戦艦へ強襲を仕掛け、搭載されている<br>Ａ．Ｉ．Ｓ妨害装置を全て破壊せよ。<br>――――――――――――――――――――<br>失敗条件/制限時間の経過
+
+Group 1
+Title - Armada Interception: Enemy Attack
+Explanation - We have confirmed reports of an initial salvo coming <br>from the enemy fleet. Deployment of AIS units will <br>be essential to mount a counterattack, but photon-<br>jamming waves produced by equipment on certain <br>enemy ships is preventing startup of our AIS units. <br>To resolve this issue, you have been tasked with <br>mounting a full assault on the enemy’s battleships <br>and destroy all AIS disruptors in operation.<br>-------------------------------------------<br>Maximum dealable damage is limited to 999,999.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、輸送を開始します。<br>今回の目的は、敵戦艦に搭載された<br>Ａ．Ｉ．Ｓ妨害装置の破壊です。
+NpcComMsg2 - Ａ．Ｉ．Ｓ妨害装置は艦上に<br>複数設置されているようです。<br>すべて破壊してください！
+
+Group 1
+NpcComMsg1 - Prepare for teleportation. Your mission is to<br>destroy all AIS disruptors installed aboard<br>the enemy craft.
+NpcComMsg2 - Multiple AIS disruptors are installed <br>atop the enemy vessel.<br>Destroy them all!
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 敵艦を襲撃し、Ａ．Ｉ．Ｓ妨害装置を破壊せよ！
+
+Group 1
+SimpleExplanation - Raid the enemy ships and destroy all AIS<br>disruptors!
+
+
+AreaName
+Group 0
+Area0S - 艦隊交戦区域
+Area0L - 艦隊交戦区域　セクター２展開エリア
+
+Group 1
+Area0S - Armada War Zone
+Area0L - Armada War Zone - Sector 2 Staging Area
+
+

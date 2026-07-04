@@ -1,0 +1,55 @@
+ii_j_s_apc_collabo1.text was created: 04-07-2026 7:29:11
+Filesize is: 3376 bytes
+
+common
+Group 0
+IncidentName - $(0)撃破
+TrialBeginMsg - $(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+TrialAbstract - $(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+
+Group 1
+IncidentName - Exterminate the $(0) Presence
+TrialBeginMsg - Defeat any $(0) you find!<br>You'll fail if any allies are incapacitated twice.
+TrialAbstract - Defeat any $(0) you find!<br>You'll fail if any partners are incapacitated twice.
+
+
+type1
+Group 0
+NpcComOnFailure - 残念ですが、仕方がありません。<br>対象のアークスは、こちらで回収を<br>行います。
+NpcComOnDownB - 対象アークスには多大な負担が<br>かかっています。次の失敗時には<br>撤退を推奨させてもらいます。
+
+Group 1
+NpcComOnFailure - I have to end this here. Moving to retrieve the<br>injured ARKS op.
+NpcComOnDownB - The operative was seriously injured. If it happens<br>again we'll have to ask you to abort.
+
+
+type2
+Group 0
+NpcComOnFailure - ……ここまでだな。<br>対象のアークスはこちらで回収を行う。
+NpcComOnDownB - 対象のアークスに負担が大きい。<br>次、戦闘不能になった場合には<br>強制的に対象を撤退させるぞ。
+
+Group 1
+NpcComOnFailure - That's enough... I'm bringing back the injured<br>ARKS operative.
+NpcComOnDownB - That ARKS op is badly injured. If they're<br>incapacitated again, I'm bringing them back.
+
+
+type3
+Group 0
+NpcComOnFailure - ……うう、残念ですがここまでです。<br>対象のアークスはこちらで回収を<br>行いますー！
+NpcComOnDownB - 一緒に戦っているアークスに負担が<br>かかりすぎています！　次には<br>撤退させるので注意してくださーい！
+
+Group 1
+NpcComOnFailure - I hate to do this, but you're done. Moving to<br>retrieve the injured ARKS op!
+NpcComOnDownB - That ARKS op with you doesn't look too hot! I'll<br>have to force a retreat next time, so be careful!
+
+
+type6
+Group 0
+NpcComOnFailure - 残念ですが、失敗は失敗。<br>対象アークスは回収します。
+NpcComOnDownB - 対象アークスの負担、甚大です。<br>次の失敗時には強制的な撤退を<br>遂行予定となります。
+
+Group 1
+NpcComOnFailure - We'll have to take the loss and move on. I'm<br>bringing that ARKS op back.
+NpcComOnDownB - That ARKS op is taking a beating. If they go down<br>again, I'm forcing a withdrawal.
+
+

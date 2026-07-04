@@ -1,0 +1,33 @@
+ii_dwarf_ult_defense.text was created: 04-07-2026 7:29:11
+Filesize is: 2656 bytes
+
+common
+Group 0
+IncidentName - リリーパ族を防衛せよ！
+TrialBeginMsg - 危険にさらされている<br>リリーパ族を守り切れ！
+TrialAbstract - 危険にさらされている<br>リリーパ族を守り切れ！
+
+Group 1
+IncidentName - Defend the Lillipans!
+TrialBeginMsg - Protect the Lillipans in harm's way!
+TrialAbstract - Protect the Lillipans in harm's way!
+
+
+type3
+Group 0
+NpcComOnBegin - /face4 ああっ！　リリーパ族がなにかの<br>装置に挟まれてしまっていますー！<br>た、助けてあげてください！
+NpcComOnAfterBegin - /face4 敵さんの攻撃が当たると危険です！<br>リリーパ族が自力で脱出するまで<br>守ってあげてくださいー！
+NpcComOnSuccess - /face2 リリーパ族はなんとか逃げられた<br>ようですよー。よかったです。<br>お疲れ様でしたー！
+NpcComOnFailure - リリーパ族……どこかに吹き飛んで<br>いっちゃいましたね……<br>たぶん、無事だとは思うんですが……
+NpcComOnFirstDamage - /face3 装置は敵さんの攻撃を受けると損傷して<br>爆発しちゃうかもしれないです！<br>敵さんの攻撃から守ってくださいー！
+NpcComOnPinch - /face4 こ、これ以上装置が損傷すると<br>爆発してしまいますー！<br>しっかり守ってあげてください―！
+
+Group 1
+NpcComOnBegin - /face4 Ahh! Those Lillipans are caught in some sort of<br>machine! H-help them!
+NpcComOnAfterBegin - /face4 We can't let them be attacked! Cover the<br>Lillipans until they can escape on their own!
+NpcComOnSuccess - /face2 Looks like the Lillipans were able to get away.<br>What a relief! Great work!
+NpcComOnFailure - The Lillipans were sent flying.<br>But, they're probably okay... Right?
+NpcComOnFirstDamage - /face3 If that machine's hit by enemy attacks, it could <br>explode! Defend it from hostile activity!
+NpcComOnPinch - /face4 If that machine takes any more damage, it's<br>gonna blow! Make sure that doesn't happen!
+
+

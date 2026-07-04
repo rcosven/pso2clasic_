@@ -1,0 +1,35 @@
+ii_rescue_darker_trap.text was created: 04-07-2026 7:29:11
+Filesize is: 1968 bytes
+
+common
+Group 0
+IncidentName - ファンジを破壊せよ！
+TrialBeginMsg - ファンジを破壊してさらわれた仲間を救出せよ！<br>さらわれた仲間が戦闘不能になると失敗。
+TrialAbstract - さらわれたプレイヤーを助け出せ！
+
+Group 1
+IncidentName - Destroy the Fhangee!
+TrialBeginMsg - Destroy the Fhangee and rescue your captured<br>ally! You will fail if your captured ally is incapacitated.
+TrialAbstract - Help free the captured players!
+
+
+type3
+Group 0
+NpcComOnSuccess - /face2 ファンジ、完全破壊ですっ！<br>各員の協力に感謝します！
+NpcComOnFailure - /face4 $(0)さんの<br>救出に失敗しました……すみません<br>私の指示が的確なら……っ！
+
+Group 1
+NpcComOnSuccess - /face2 The Fhangee was completely obliterated!<br>Thank you to all operatives for your assistance!
+NpcComOnFailure - /face4 You failed to rescue $(0)...<br>I'm sorry, maybe my orders weren't clear...
+
+
+type9f
+Group 0
+NpcComOnSuccess - ファンジの破壊を確認しました！<br>引き続き、任務の継続をお願いします！
+NpcComOnFailure - $(0)さんの<br>救出、失敗です……
+
+Group 1
+NpcComOnSuccess - Destruction of the Fhangee confirmed!<br>Please, continue with your mission!
+NpcComOnFailure - You failed to rescue $(0)...
+
+

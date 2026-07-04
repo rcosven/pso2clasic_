@@ -1,0 +1,53 @@
+ii_session_apc_5597.text was created: 04-07-2026 7:29:11
+Filesize is: 3712 bytes
+
+5598
+Group 0
+Begin - /ci2 2 お、こんな所で奇遇だね。<br>せっかくだから、一緒にＥトラしよー。<br>テトちゃんもいるよー。
+Success - /ci2 2 これで終わりかな？　おつー。<br>よっしゃ帰るかー。
+Failure - ありゃ、失敗しちゃったかー。<br>まあまあ、次がんばろっか。<br>手伝ってくれてありがとねー。
+Dead - おおう……マジかー。<br>テトちゃーん、ごめーん。<br>ムーン投げてー。
+BuddyDead - あ、テトちゃんまた死んでるー。<br>初めて会った時のこと、思い出すね。
+
+Group 1
+Begin - /ci2 2 What a surprise, seeing you here!<br>We might as well take on an<br>Emergency Trial together. Tetra's here, too.
+Success - /ci2 2 Is that the last of them? Nice work.<br>Let's head back.
+Failure - Oof, we blew this one.<br>Don't worry, we'll get 'em next time.<br>Thanks for your help.
+Dead - Urk... seriously?<br>I'm sorry, Tetra.<br>Give 'em hell...
+BuddyDead - Ah, Tetra's down again.<br>Reminds me of the first time we met.
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+
+5634
+Group 0
+Begin - /ci1 2 /mn22 ブーツ自慢じゃないんかい！<br>ってゼクトくん！　Ｅトラ！<br>キミも、手伝ってくれる？
+Success - /ci2 2 ゼクトくん、サーペンをフブキに<br>フォーム変更したんだって。<br>っと、そいじゃまたねー！
+Failure - くそー、ゼクトくんのレッグパーツが<br>気になって集中できなかったー！<br>手伝ってくれたのに、ごめんね！
+Dead - うっそぉ……<br>ごめーん、やられちゃったー。
+BuddyDead - ああ、「私、汚されたいんだ……」って<br>こないだ言ってたやつね……<br>あれは引いたわ……
+
+Group 1
+Begin - /ci1 2 /mn22 Zect can't wait to show off these boots!<br>It's Emergency Trial time!<br>Care to join?
+Success - /ci2 2 Zect says the Serpent<br>has morphed into Fubuki form.<br>I guess it's bye for now!
+Failure - Damn, I lost focus! I'm too<br>caught up in Zect's Leg Parts!<br>I'm sorry we failed you...
+Dead - Ugh... sorry...<br>They got me...
+BuddyDead - Hey, you're the one that said they<br>wanted to get "dirty" the other day.<br>Looks like it happened...
+
+

@@ -1,0 +1,587 @@
+ii_js_apc_boss_8012.text was created: 04-07-2026 7:29:11
+Filesize is: 34432 bytes
+
+common
+Group 0
+IncidentJsApcBegin - APC共闘開始
+IncidentJsApcSuccess - APC共闘成功
+IncidentJsApcFailure - APC共闘失敗
+IncidentJsApcBeginEvo - APC共闘発展開始
+IncidentJsApcSuccessEvo - APC共闘成功
+
+Group 1
+IncidentJsApcBegin - APC joint battle starts
+IncidentJsApcSuccess - APC joint battle success
+IncidentJsApcFailure - APC joint battle failure
+IncidentJsApcBeginEvo - APC joint battle development starts
+IncidentJsApcSuccessEvo - APC joint battle success
+
+
+5001
+Group 0
+IncidentJsApcBegin - /ci2 2 よう、苦戦してるみたいだな！<br>ちょっくら手伝いに来てみたぜ！
+IncidentJsApcSuccess - /ci2 1 よっし、終了っと！<br>余計なお世話だったかもしれんが<br>ま、終わりよければなんとやら、だ。
+IncidentJsApcFailure - っとと、ここまでやりこまれちまうと<br>ちょっと厳しいな……<br>すまんが俺は帰還させてもらうぜ。
+IncidentJsApcBeginEvo - APC共闘発展開始(仮）
+IncidentJsApcSuccessEvo - /ci2 1 よっし、終了っと！<br>余計なお世話だったかもしれんが<br>ま、終わりよければなんとやら、だ。
+
+Group 1
+IncidentJsApcBegin - /ci2 2 Hey, looks like you could use some help.<br>I thought I'd come give you a hand.
+IncidentJsApcSuccess - /ci2 1 All right! We're all done! You probably didn't<br>need my help, but all's well that ends well, right?
+IncidentJsApcFailure - Uh-oh, things aren't looking too good. Sorry, I've<br>got to head back.
+IncidentJsApcBeginEvo - APC joint battle development starts (provisional）
+IncidentJsApcSuccessEvo - /ci2 1 All right! We're all done! You probably didn't<br>need my help, but all's well that ends well, right?
+
+
+5002
+Group 0
+IncidentJsApcBegin - /ci2 1 あっ、いいところに！<br>ちょっと数が多くて大変だから<br>手伝って貰えないかな？
+IncidentJsApcSuccess - /ci2 3 ふう、なんとかなったぁ……<br>素直にありがとね、助かったよ。<br>それじゃ、またね！
+IncidentJsApcFailure - うう……これ以上はムリ……<br>ごめんなさい、あたしは先に<br>撤退させてもらうわね……
+IncidentJsApcBeginEvo - /ci3 1 うわっ……なんか、やばそーな<br>反応がすっごい近くに……<br>気をつけましょう！
+IncidentJsApcSuccessEvo - /ci2 3 ふう、なんとかなったぁ……<br>素直にありがとね、助かったよ。<br>それじゃ、またね！
+
+Group 1
+IncidentJsApcBegin - /ci2 1 Perfect timing! I'm about up to my neck.<br>Can you help me out?
+IncidentJsApcSuccess - /ci2 3 Phew, we made it through somehow. <br>You're a life-saver. See you around!
+IncidentJsApcFailure - Ugh, this is too much for me... Sorry, I'm pulling<br>back.
+IncidentJsApcBeginEvo - /ci3 1 Whoa, got a funny feeling something REAL bad is<br>REAL close. Keep your eyes peeled!
+IncidentJsApcSuccessEvo - /ci2 3 Phew, we made it through somehow. <br>You're a life-saver. See you around!
+
+
+5003
+Group 0
+IncidentJsApcBegin - /toge /ci2 2 ああっ、相棒！　いいとこに！<br>ヤバイ数のエネミーがいるんだよ<br>ちょっと協力してくれ！
+IncidentJsApcSuccess - /ci2 1 ふぃー、なんとか終わったかぁ。<br>ありがとな相棒。お前のおかげで<br>なんとかなったよ。
+IncidentJsApcFailure - こ、これ以上はきつい……<br>すまん相棒、おれ撤退させてもらうわ。
+IncidentJsApcBeginEvo - /toge /ci3 2 ななっ、なんだよ！<br>すっげー巨大な敵性反応！？<br>相棒、気をつけろよ！
+IncidentJsApcSuccessEvo - /ci2 1 ふぃー、なんとか終わったかぁ。<br>ありがとな相棒。お前のおかげで<br>なんとかなったよ。
+
+Group 1
+IncidentJsApcBegin - /toge /ci2 2 Oh, mate! Good timing! There's a whole horde of<br>enemies here! Help me out real quick!
+IncidentJsApcSuccess - /ci2 1 Wow, we actually pulled that off. Thanks, mate!<br>Couldn't have done it without ya.
+IncidentJsApcFailure - I can't go on... Sorry, mate, gotta run.
+IncidentJsApcBeginEvo - /toge /ci3 2 Wh-wh-what? We just picked up a massive enemy<br>on the scanner! Look out, mate!
+IncidentJsApcSuccessEvo - /ci2 1 Wow, we actually pulled that off. Thanks, mate!<br>Couldn't have done it without ya.
+
+
+5008
+Group 0
+IncidentJsApcBegin - /mn6 /ci2 2 す、すみません。<br>ここ、敵さんがいっぱいなんです。<br>手伝ってもらえませんか！
+IncidentJsApcSuccess - /mn15 /ci2 1 やったぁ！　やりましたねっ！<br>ありがとうございました！<br>本当に助かりましたっ！
+IncidentJsApcFailure - /mn7 すみません……継戦不可です。<br>撤退させてもらいます。<br>ごめんなさい……
+IncidentJsApcBeginEvo - /mn2 /ci2 2 うわわっ、すっごい反応です！<br>これはおっきな敵さんが<br>出てきそうですよ！
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 やったぁ！　やりましたねっ！<br>ありがとうございました！<br>本当に助かりましたっ！
+
+Group 1
+IncidentJsApcBegin - /mn6 /ci2 2 Hey, I'm getting overrun by hostiles here. I could<br>really use some help!
+IncidentJsApcSuccess - /mn15 /ci2 1 Yay! We did it! I don't know how to thank you! <br>What a huge help!
+IncidentJsApcFailure - /mn7 Sorry, I can't go on... Need to fall back.<br>I'm so, so sorry...
+IncidentJsApcBeginEvo - /mn2 /ci2 2 Wow, the scanner is going crazy! Looks like<br>we've got a massive hostile on our hands!
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 Yay! We did it! I don't know how to thank you! <br>What a huge help!
+
+
+5009
+Group 0
+IncidentJsApcBegin - /ci4 5 ああ、キミか。<br>よければ手伝ってくれないかな？<br>何分数が多くて面倒でね。
+IncidentJsApcSuccess - /ci2 1 よし、これで終わりだな。<br>いいデータも取れた、感謝するよ。
+IncidentJsApcFailure - すまないが、撤退させてもらうよ。<br>こんなところで無理をしても<br>何の得にもならないだろうからね。
+IncidentJsApcBeginEvo - /ci4 5 ふむ……この反応は、新手か。<br>まあ、気をつけていこうじゃないか。
+IncidentJsApcSuccessEvo - /ci2 1 よし、これで終わりだな。<br>いいデータも取れた、感謝するよ。
+
+Group 1
+IncidentJsApcBegin - /ci4 5 Oh, it's you. Can you assist me for a bit here?<br>There are just so many of them.
+IncidentJsApcSuccess - /ci2 1 That's all of them, I think. Thank you. I got a lot<br>of good data from that.
+IncidentJsApcFailure - Sorry, but I have to bow out. No point pushing<br>myself further at this juncture.
+IncidentJsApcBeginEvo - /ci4 5 Hm... These readings are new. I think we should<br>proceed carefully.
+IncidentJsApcSuccessEvo - /ci2 1 That's all of them, I think. Thank you. I got a lot<br>of good data from that.
+
+
+5010
+Group 0
+IncidentJsApcBegin - /ci2 1 あっああ！<br>いいところに来てくださいました！<br>助けて、助けてくださいーっ！
+IncidentJsApcSuccess - /ci2 1 ふぅー……な、なんとか無事で<br>終わってくれたようで、よかったです。<br>ありがとうございます。助かりました。
+IncidentJsApcFailure - うう……先生を探していただけなのに<br>どうしてこんなことに……<br>撤退させてもらいます……
+IncidentJsApcBeginEvo - /ci4 1 こ、この反応って……新手！？<br>うう、早く逃げたい……<br>逃げちゃいましょうよ……
+IncidentJsApcSuccessEvo - /ci2 1 ふぅー……な、なんとか無事で<br>終わってくれたようで、よかったです。<br>ありがとうございます。助かりました。
+
+Group 1
+IncidentJsApcBegin - /ci2 1 Ah! You're just in time! Help! Please!
+IncidentJsApcSuccess - /ci2 1 Phew... I'm glad we were able to make it through<br>in one piece. Thank you for your help. <br>Much appreciated.
+IncidentJsApcFailure - I only wanted to find Teach. Why did it have to <br>turn out like this? I'm sorry, I need to leave...
+IncidentJsApcBeginEvo - /ci4 1 M-must be something new coming! <br>Oh no... I want out of here... Come on, <br>let's just run for it!
+IncidentJsApcSuccessEvo - /ci2 1 Phew... I'm glad we were able to make it through<br>in one piece. Thank you for your help. <br>Much appreciated.
+
+
+5015
+Group 0
+IncidentJsApcBegin - /ci2 1 やれやれ、見ちゃいられないね。<br>乗りかかった船ってやつだ<br>少しばかり手伝ってあげるよ。
+IncidentJsApcSuccess - /ci2 3 ま、こんなものかな。<br>それなりに楽しませてもらったよ。<br>それじゃあね。
+IncidentJsApcFailure - うーん……調子が出ないね。<br>一度戻って、身体の調子を<br>確かめた方がいいか……
+IncidentJsApcBeginEvo - /ci1 2 おや、これだけやられても<br>こりないようだね。
+IncidentJsApcSuccessEvo - /ci2 3 ま、こんなものかな。<br>それなりに楽しませてもらったよ。<br>それじゃあね。
+
+Group 1
+IncidentJsApcBegin - /ci2 1 I can't watch this any longer. You've come this far,<br>so I'll help you along a little bit.
+IncidentJsApcSuccess - /ci2 3 That about wraps that up. It was fun, in its own<br>way. Later.
+IncidentJsApcFailure - Ugh...I'm not feeling it today. I should head back <br>and get checked out.
+IncidentJsApcBeginEvo - /ci1 2 Oh dear, I guess they haven't had enough sense<br>beaten into them.
+IncidentJsApcSuccessEvo - /ci2 3 That about wraps that up. It was fun, in its own<br>way. Later.
+
+
+5016
+Group 0
+IncidentJsApcBegin - /toge /ci3 1 ……まったく、見てられない！<br>手伝ってあげるから、さっさと<br>こいつら、片付けるわよ！
+IncidentJsApcSuccess - /ci2 2 一丁上がり、っと。<br>……あたし、もう行くから<br>あんまり無理しないようにね。
+IncidentJsApcFailure - むぅ……あたしもまだ未熟、か。<br>ごめんなさい、先に退くわ。
+IncidentJsApcBeginEvo - APC共闘発展開始
+IncidentJsApcSuccessEvo - /ci2 2 一丁上がり、っと。<br>……あたし、もう行くから<br>あんまり無理しないようにね。
+
+Group 1
+IncidentJsApcBegin - /toge /ci3 1 Geez, I can't watch this. I'm going to help you out.<br>Let's clean house!
+IncidentJsApcSuccess - /ci2 2 Problem solved... I've gotta go now, so try not<br>to get in over your head, okay?
+IncidentJsApcFailure - Mhmm....Seems I'm still a little green. Sorry, but <br>I'm falling back.
+IncidentJsApcBeginEvo - APC joint battle development starts
+IncidentJsApcSuccessEvo - /ci2 2 Problem solved... I've gotta go now, so try not<br>to get in over your head, okay?
+
+
+5018
+Group 0
+IncidentJsApcBegin - /ci2 2 おっ、丁度良いところに<br>少し手伝って貰えるかな？
+IncidentJsApcSuccess - /ci2 2 よーし、終わったっと<br>ありがとね、助かったよ
+IncidentJsApcFailure - あっちゃあ……<br>これ以上は厳しいね<br>撤退させてもらうよ
+IncidentJsApcBeginEvo - /ci4 5 おやおや？<br>まだ来るみたいだねえ
+IncidentJsApcSuccessEvo - /ci2 2 よーし、終わったっと<br>ありがとね、助かったよ
+
+Group 1
+IncidentJsApcBegin - /ci2 2 Oh! You came at just the right time. <br>Could you help me out a little?
+IncidentJsApcSuccess - /ci2 2 Yay, it's over! Thanks for your help.
+IncidentJsApcFailure - Ugh... I've had it. I'm getting out of here.
+IncidentJsApcBeginEvo - /ci4 5 My, my, look who's coming.
+IncidentJsApcSuccessEvo - /ci2 2 Yay, it's over! Thanks for your help.
+
+
+5019
+Group 0
+IncidentJsApcBegin - /ci4 5 ……丁度良いところに来たわね。<br>少し敵の数が多いの、手伝って。
+IncidentJsApcSuccess - /ci1 5 ……私一人じゃ危なかったと思う。<br>だから、ちゃんとお礼は言うわ。<br>……ありがとう。
+IncidentJsApcFailure - ……ごめんなさい、これ以上は<br>戦えない。撤退します。
+IncidentJsApcBeginEvo - /ci4 5 ……新手が来そう。<br>注意して、しっかり準備を。
+IncidentJsApcSuccessEvo - /ci1 5 ……私一人じゃ危なかったと思う。<br>だから、ちゃんとお礼は言うわ。<br>……ありがとう。
+
+Group 1
+IncidentJsApcBegin - /ci4 5 ...You came at the right time. There are too many<br>enemies. Help.
+IncidentJsApcSuccess - /ci1 5 ...That would have been dangerous alone.<br>Allow me to thank you.<br>...Thank you.
+IncidentJsApcFailure - ...Sorry, I can't keep fighting. I have to retreat.
+IncidentJsApcBeginEvo - /ci4 5 ...More are coming. Make sure you're prepared.
+IncidentJsApcSuccessEvo - /ci1 5 ...That would have been dangerous alone.<br>Allow me to thank you.<br>...Thank you.
+
+
+5020
+Group 0
+IncidentJsApcBegin - /ci2 1 おお、いいところに来てくれた！<br>少しばかり敵の数が多くてな<br>手伝ってくれないか。
+IncidentJsApcSuccess - /ci2 1 よし、片付いたようだな！<br>感謝するぞ、お前のおかげで<br>なんとかなった。
+IncidentJsApcFailure - ……ぐっ、こんなことになるとは。<br>すまん、先に撤退する。
+IncidentJsApcBeginEvo - /ci3 1 この空気……<br>新手が来るかもしれないな。<br>準備と留意を忘れるなよ。
+IncidentJsApcSuccessEvo - /ci2 1 よし、片付いたようだな！<br>感謝するぞ、お前のおかげで<br>なんとかなった。
+
+Group 1
+IncidentJsApcBegin - /ci2 1 Hey, I was hoping you'd show! There's a few too<br>many of 'em for me. Can you help?
+IncidentJsApcSuccess - /ci2 1 Great, we cleared them out. All thanks to you!
+IncidentJsApcFailure - ... Gah, I can't believe it's come to this.<br>Sorry, I've got to retreat.
+IncidentJsApcBeginEvo - /ci3 1 I think...a new enemy may be approaching. <br>Stay alert!
+IncidentJsApcSuccessEvo - /ci2 1 Great, we cleared them out. All thanks to you!
+
+
+5021
+Group 0
+IncidentJsApcBegin - /toge /ci1 1 お、おおっ、君はアークスだな！<br>では、少し手伝ってくれないか。<br>数が多くて老体には厳しいのだ。
+IncidentJsApcSuccess - /toge /ci2 1 うむ、これで終わりのはずだ。<br>よくやってくれた、助かったぞ。
+IncidentJsApcFailure - ぐぬ……やはり<br>寄る年波には勝てんか……<br>先に撤退させてもらう。
+IncidentJsApcBeginEvo - /toge /ci3 1 おのれ、新手の気配が！<br>老体にムチ打たせる気か！
+IncidentJsApcSuccessEvo - /toge /ci2 1 うむ、これで終わりのはずだ。<br>よくやってくれた、助かったぞ。
+
+Group 1
+IncidentJsApcBegin - /toge /ci1 1 Oh! Ooh! You're an ARKS operative! Well then,<br>could you give me a hand? This horde is too much<br>for an old-timer.
+IncidentJsApcSuccess - /toge /ci2 1 Mmm, that should be all now. You did well.<br>Thank you.
+IncidentJsApcFailure - Gah...guess there's no stopping the onslaught of<br>time. I have to retreat.
+IncidentJsApcBeginEvo - /toge /ci3 1 Dammit, new readings on the scanner!<br>Won't they give an old man some rest!?
+IncidentJsApcSuccessEvo - /toge /ci2 1 Mmm, that should be all now. You did well.<br>Thank you.
+
+
+5022
+Group 0
+IncidentJsApcBegin - /toge /mn9 /ci2 1 おおおっ、おいおいおい！<br>いいところにいるじゃんかよぉ！<br>ちょっと手伝ってくれよ、なっ！
+IncidentJsApcSuccess - /mn15 /ci2 4 よーっし、一丁上がりっと！<br>へへっ、どうよどうよ？<br>オレもいけるもんだろ、なっ？
+IncidentJsApcFailure - ぐううっ……なんだこりゃあ……<br>やってらんねーよホントに。<br>オレ、撤退させてもらうぜ。
+IncidentJsApcBeginEvo - /mn2 /ci2 1 ちょっと待てってなんだこりゃ！<br>新手の反応がビンビンじゃねーか！
+IncidentJsApcSuccessEvo - /mn15 /ci2 4 よーっし、一丁上がりっと！<br>へへっ、どうよどうよ？<br>オレもいけるもんだろ、なっ？
+
+Group 1
+IncidentJsApcBegin - /toge /mn9 /ci2 1 Hey! Yo! Over here! Just who I was looking for!<br>Help me out, will ya?
+IncidentJsApcSuccess - /mn15 /ci2 4 All right! We did it! So, what do you think?<br>I'm pretty good, right?
+IncidentJsApcFailure - Man oh man, I'm really not feeling up to this.<br>I'm gonna have to head back.
+IncidentJsApcBeginEvo - /mn2 /ci2 1 Hold up! What is that? This new reading is off<br>the charts!
+IncidentJsApcSuccessEvo - /mn15 /ci2 4 All right! We did it! So, what do you think?<br>I'm pretty good, right?
+
+
+5026
+Group 0
+IncidentJsApcBegin - /ci5 2 おやおやおやあー？<br>どうしてこんなに獲物がいるのに<br>リサを呼んでくれないんですかあ？
+IncidentJsApcSuccess - /ci4 3 もう終わりなんですかあ？<br>うーん……もっと戦りたいですねえ。<br>だからリサは、ふらりと去りますよお。
+IncidentJsApcFailure - ……んー、リサはなんだか<br>飽きちゃいました。帰りますね。<br>それでは、それではでは。
+IncidentJsApcBeginEvo - APC共闘発展開始
+IncidentJsApcSuccessEvo - /ci4 3 もう終わりなんですかあ？<br>うーん……もっと戦りたいですねえ。<br>だからリサは、ふらりと去りますよお。
+
+Group 1
+IncidentJsApcBegin - /ci5 2 What do you think you're doing? All these things<br>to kill, and you didn't call Risa!?
+IncidentJsApcSuccess - /ci4 3 It's over already? But...I'm not done fighting.<br>Guess I'll go start something. Risa out.
+IncidentJsApcFailure - ...Uh, quick update on Risa: she's bored. And<br>going home. Laters.
+IncidentJsApcBeginEvo - APC joint battle development starts
+IncidentJsApcSuccessEvo - /ci4 3 It's over already? But...I'm not done fighting.<br>Guess I'll go start something. Risa out.
+
+
+5027
+Group 0
+IncidentJsApcBegin - /mn10 /ci4 5 あ、すみません……よければ<br>ちょっと手伝ってもらえませんか。<br>……危険というより、面倒くさくて。
+IncidentJsApcSuccess - /ci4 1 ……お、終わりましたか？<br>ふぅ……あ、えっと、助かりました。<br>僕、なるべく戦いたくないので……
+IncidentJsApcFailure - ……無理は禁物ですもんね。<br>すみませんが、僕は帰還します。
+IncidentJsApcBeginEvo - /mn10 /ci4 5 はぁ……まだ来そうですね。<br>どうしてこんなにぞくぞくと<br>現れるんだか……
+IncidentJsApcSuccessEvo - /ci4 1 ……お、終わりましたか？<br>ふぅ……あ、えっと、助かりました。<br>僕、なるべく戦いたくないので……
+
+Group 1
+IncidentJsApcBegin - /mn10 /ci4 5 Oh, uh, could I trouble you to help me? I'm not in<br>danger so much as...put out.
+IncidentJsApcSuccess - /ci4 1 ... I-Is it over? Phew... ah, er, thank you. I<br>try to avoid fighting as much as possible.
+IncidentJsApcFailure - ...It's important to know your limits, and this is<br>mine. Sorry, but I'm heading back.
+IncidentJsApcBeginEvo - /mn10 /ci4 5 Oh... Here we go again. Why do they keep <br>popping up everywhere?
+IncidentJsApcSuccessEvo - /ci4 1 ... I-Is it over? Phew... ah, er, thank you. I<br>try to avoid fighting as much as possible.
+
+
+5029
+Group 0
+IncidentJsApcBegin - /toge /ci1 3 アークスの危機とあらば<br>私が駆けつけない理由はない。<br>助太刀させてもらおう。
+IncidentJsApcSuccess - /ci1 3 うむ、よい運動だった。<br>では、私は行くとしよう。<br>精進を怠らないようにな。
+IncidentJsApcFailure - デスクワークばかりでなまったか。<br>いろいろ考えねばならないな……<br>すまんが、退かせてもらうぞ。
+IncidentJsApcBeginEvo - /ci5 3 まだ来るか……<br>余程、命がいらないと見える。
+IncidentJsApcSuccessEvo - /ci1 3 うむ、よい運動だった。<br>では、私は行くとしよう。<br>精進を怠らないようにな。
+
+Group 1
+IncidentJsApcBegin - /toge /ci1 3 Always happy to help when an ARKS <br>operative is in a pinch. My sword is yours.
+IncidentJsApcSuccess - /ci1 3 Mmm, a good workout. I must be going, but <br>remember: never stop striving for greatness!
+IncidentJsApcFailure - Seems desk work has left me rusty. I have a lot to<br>think about... I'm sorry, but I must withdraw.
+IncidentJsApcBeginEvo - /ci5 3 There's still more coming... It's as if they have<br>nothing to lose.
+IncidentJsApcSuccessEvo - /ci1 3 Mmm, a good workout. I must be going, but <br>remember: never stop striving for greatness!
+
+
+5030
+Group 0
+IncidentJsApcBegin - /toge /ci2 2 おい、貴様！　貴様だ貴様！<br>なんだかおもしろそうなことを<br>しているな！　私も混ぜろ！
+IncidentJsApcSuccess - /mn15 /ci2 1 ふっふっふ、見たか貴様？<br>私の実力を見たか？　見ただろう！<br>うん、よしよし、満足した！
+IncidentJsApcFailure - /mn10  むぅ……なんだかつまらないな。<br>眠くなってもきたし、私は帰る！
+IncidentJsApcBeginEvo - /mn15 /ci2 1 おおっ、見ろ見ろ貴様！<br>また敵がでてきたぞ！<br>あれも爆破してしまっていいのだろう？
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 ふっふっふ、見たか貴様？<br>私の実力を見たか？　見ただろう！<br>うん、よしよし、満足した！
+
+Group 1
+IncidentJsApcBegin - /toge /ci2 2 Hey, you! Yeah, you! You look like you're up to<br>something interesting! How about letting me in<br>on the fun?
+IncidentJsApcSuccess - /mn15 /ci2 1 Heh, did you see that? Did you bear <br>witness to my awesome skills? Good! <br>I can call it a day then!
+IncidentJsApcFailure - /mn10 Urgh, that was pointless. I'm gonna go back and<br>hit the hay!
+IncidentJsApcBeginEvo - /mn15 /ci2 1 Oh, would you look at that! Some more baddies<br>coming this way! Shall we steamroll them as well?
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 Heh, did you see that? Did you bear <br>witness to my awesome skills? Good! <br>I can call it a day then!
+
+
+5033
+Group 0
+IncidentJsApcBegin - /toge /ci2 1 ふはははっ！　六芒均衡ヒューイ推参！<br>存外に苦戦しているようだな！<br>大丈夫だ！　ここはオレに任せろ！
+IncidentJsApcSuccess - /toge /ci2 1 オレにかかればこの程度造作もない！<br>また困ったことがあれば呼んでくれ！<br>オレはいつでも、そばにいるぞ！
+IncidentJsApcFailure - /toge /ci2 1 オレが負ける……オレが敗北……！？<br>申し訳ない、先に退かせてもらう！
+IncidentJsApcBeginEvo - /toge /ci2 むむっ……さらなる悪意の気配！<br>おかわりというやつだな！<br>いいだろう、オレが相手をしてやろう！
+IncidentJsApcSuccessEvo - /toge /ci2 1 オレにかかればこの程度造作もない！<br>また困ったことがあれば呼んでくれ！<br>オレはいつでも、そばにいるぞ！
+
+Group 1
+IncidentJsApcBegin - /toge /ci2 1 Fwahaha! It's time for I, the Great Huey of the<br>Council of Six, to get this party started!<br>Leave the rest to me!
+IncidentJsApcSuccess - /toge /ci2 1 Piece of cake! If you're ever in trouble again,<br>just holler! I got your back any day of the week!
+IncidentJsApcFailure - /toge /ci2 1 Did I...did I just lose!? Impossible!<br>Apologies, I have to leave!
+IncidentJsApcBeginEvo - /toge /ci2 Hmm...trouble brewing! Seems we're in for another<br>round! I'll show 'em who's boss!
+IncidentJsApcSuccessEvo - /toge /ci2 1 Piece of cake! If you're ever in trouble again,<br>just holler! I got your back any day of the week!
+
+
+5054
+Group 0
+IncidentJsApcBegin - /toge /ci3 2 囲まれているようだな<br>手伝うぞ！
+IncidentJsApcSuccess - /ci2 2 よし、よくやったぞ！<br>では、私は行くとしよう！
+IncidentJsApcFailure - この程度の交戦で……<br>私も衰えたな……
+IncidentJsApcBeginEvo - む、新手か！<br>気を抜くなよ！
+IncidentJsApcSuccessEvo - /ci2 2 よし、よくやったぞ！<br>では、私は行くとしよう！
+
+Group 1
+IncidentJsApcBegin - /toge /ci3 2 You seem to be in a bit of a pickle.<br>I'll help you out!
+IncidentJsApcSuccess - /ci2 2 Well done, well done! I'll be on my way, then.
+IncidentJsApcFailure - Even I can't keep up with a battle like this...
+IncidentJsApcBeginEvo - Here they come again! Stay focused!
+IncidentJsApcSuccessEvo - /ci2 2 Well done, well done! I'll be on my way, then.
+
+
+5057
+Group 0
+IncidentJsApcBegin - /ci3 2 囲まれているようね<br>協力するわよ
+IncidentJsApcSuccess - /ci2 2 終わったみたいね<br>それじゃ、私は行くわ
+IncidentJsApcFailure - 私がこの程度で……？<br>ごめんなさい、撤退するわ
+IncidentJsApcSuccessEvo - /ci2 2 終わったみたいね<br>それじゃ、私は行くわ
+
+Group 1
+IncidentJsApcBegin - /ci3 2 Looks like you're surrounded. Let me help.
+IncidentJsApcSuccess - /ci2 2 Looks like it's over. I'll take my leave then.
+IncidentJsApcFailure - Is that really all I've got...? I apologize, <br>but I must retreat.
+IncidentJsApcSuccessEvo - /ci2 2 Looks like it's over. I'll take my leave then.
+
+
+5059
+Group 0
+IncidentJsApcBegin - /ci4 2 いいところにいるね<br>ちょっと手伝いな
+IncidentJsApcSuccess - /ci2 2 ……一応、感謝だけはしておくよ
+IncidentJsApcFailure - ……欲張りすぎたか<br>アタシは撤退させてもらうよ
+IncidentJsApcBeginEvo - /ci5 2 ……この気配<br>ちっ、まだ来るか
+IncidentJsApcSuccessEvo - /ci2 2 ……一応、感謝だけはしておくよ
+
+Group 1
+IncidentJsApcBegin - /ci4 2 Good timing. Help me out, would ya?
+IncidentJsApcSuccess - /ci2 2 ...Guess I better thank you.
+IncidentJsApcFailure - Seems like I bit off more than I can chew. Have to<br>retreat for now.
+IncidentJsApcBeginEvo - /ci5 2 I sense something. Ugh, there's more.
+IncidentJsApcSuccessEvo - /ci2 2 ...Guess I better thank you.
+
+
+5062
+Group 0
+IncidentJsApcBegin - /mn2 /ci4 3 せ、先輩っ！<br>すみません、助けて下さい！<br>敵がいっぱいやってきてて……！
+IncidentJsApcSuccess - /mn15 /ci2 1 ふぅ、なんとかなりました……<br>先輩、ありがとうございました！
+IncidentJsApcFailure - /mn7 うう……すみません……<br>これ以上は無理です……
+IncidentJsApcBeginEvo - わわっ、わわわっ……！<br>なんだか、また出てくる気配が……
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 ふぅ、なんとかなりました……<br>先輩、ありがとうございました！
+
+Group 1
+IncidentJsApcBegin - /mn2 /ci4 3 P-please, you've gotta help me! Th-there's too<br>many of them!
+IncidentJsApcSuccess - /mn15 /ci2 1 Phew, looks like I somehow pulled through...<br>Thanks for your help!
+IncidentJsApcFailure - /mn7 Ermm...sorry... I can't keep going...
+IncidentJsApcBeginEvo - Wow, wow, wow! Looks like there's still <br>more coming!
+IncidentJsApcSuccessEvo - /mn15 /ci2 1 Phew, looks like I somehow pulled through...<br>Thanks for your help!
+
+
+5063
+Group 0
+IncidentJsApcBegin - /ci2 1 せ、先生！<br>自分一人では厳しい状況です！<br>すみませんが手を貸して下さい！
+IncidentJsApcSuccess - /ci2 1 やりましたっ！<br>なんとか撃退完了です！<br>先生のおかげですよ！
+IncidentJsApcFailure - ……先生、申し訳ありません。<br>自分、先に退かせてもらいます
+IncidentJsApcBeginEvo - むむっ、おおおっ！<br>新しい気配がっ！<br>先生、まだ終わりじゃないみたいです！
+IncidentJsApcSuccessEvo - /ci2 1 やりましたっ！<br>なんとか撃退完了です！<br>先生のおかげですよ！
+
+Group 1
+IncidentJsApcBegin - /ci2 1 T-teach! I'm sorry but, I'll have a hard time<br>handling this on my own! Please lend me a hand!
+IncidentJsApcSuccess - /ci2 1 We did it! We managed to drive the enemy back!<br>It's all thanks to you, Teach!
+IncidentJsApcFailure - Sorry, Teach. Let me go ahead and get out <br>of your way.
+IncidentJsApcBeginEvo - Mwuh? Ohhh! New readings! Seems like this isn't<br>finished yet, Teach!
+IncidentJsApcSuccessEvo - /ci2 1 We did it! We managed to drive the enemy back!<br>It's all thanks to you, Teach!
+
+
+5032
+Group 0
+IncidentJsApcBegin - /ci1 3 これほどの大物が出てくるとは……<br>ここで始末しなければ、まずいですね。<br>すみません、力を貸してもらえますか。
+IncidentJsApcSuccess - /ci1 5 やはり、背中を任せられる相手がいると<br>すごく、やりやすいんですね。<br>懐かしい感覚でした……感謝します。
+IncidentJsApcFailure - くっ……！　油断したようです。<br>申し訳ありません……<br>私は先に撤退させてもらいます。
+IncidentJsApcSuccessEvo - /ci1 5 やはり、背中を任せられる相手がいると<br>すごく、やりやすいんですね。<br>懐かしい感覚でした……感謝します。
+
+Group 1
+IncidentJsApcBegin - /ci1 3 Geez, never thought I'd run into anything that<br>HUGE... This could get ugly if I don't take it out<br>here and now. Would you mind lending a hand?
+IncidentJsApcSuccess - /ci1 5 Wow, having someone like you to lean on made a<br>world of difference. Brings back memories...thank<br>you.
+IncidentJsApcFailure - Ugh...! Seems we underestimated them. Terribly<br>sorry, but I'll be bidding you a farewell.
+IncidentJsApcSuccessEvo - /ci1 5 Wow, having someone like you to lean on made a<br>world of difference. Brings back memories...thank<br>you.
+
+
+5067
+Group 0
+IncidentJsApcBegin - /ci1 3 ……敵がたくさん居ますね。<br>手伝いますよ、殲滅を。
+IncidentJsApcSuccess - /ci1 5 それでは、僕は次の<br>戦場に向かいますので……
+IncidentJsApcFailure - ……こんな、僕が……？<br>なんて、無様な……
+IncidentJsApcSuccessEvo - /ci1 5 それでは、僕は次の<br>戦場に向かいますので……
+
+Group 1
+IncidentJsApcBegin - /ci1 3 ...There's quite a lot of enemies here.<br>Allow me to help you annihilate them.
+IncidentJsApcSuccess - /ci1 5 Well then, I'm off to the next battle.
+IncidentJsApcFailure - No, how could I...? This is humiliating...
+IncidentJsApcSuccessEvo - /ci1 5 Well then, I'm off to the next battle.
+
+
+5068
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+
+5069
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+
+5086
+Group 0
+IncidentJsApcBegin - /ci2 1 あっ、いいところに！<br>ちょっと数が多くて大変だから<br>手伝って貰えないかな？
+IncidentJsApcSuccess - /ci2 3 ふう、なんとかなったぁ……<br>素直にありがとね、助かったよ。<br>それじゃ、またね！
+IncidentJsApcFailure - うう……これ以上はムリ……<br>ごめんなさい、あたしは先に<br>撤退させてもらうわね……
+IncidentJsApcBeginEvo - /ci3 1 うわっ……なんか、やばそーな<br>反応がすっごい近くに……<br>気をつけましょう！
+IncidentJsApcSuccessEvo - /ci2 3 ふう、なんとかなったぁ……<br>素直にありがとね、助かったよ。<br>それじゃ、またね！
+
+Group 1
+IncidentJsApcBegin - /ci2 1 Perfect timing! I'm about up to my neck.<br>Can you help me out?
+IncidentJsApcSuccess - /ci2 3 Phew, we made it through somehow. <br>You're a life-saver. See you around!
+IncidentJsApcFailure - Ugh, this is too much for me... Sorry, I'm pulling<br>back.
+IncidentJsApcBeginEvo - /ci3 1 Whoa, got a funny feeling something REAL bad is<br>REAL close. Keep your eyes peeled!
+IncidentJsApcSuccessEvo - /ci2 3 Phew, we made it through somehow. <br>You're a life-saver. See you around!
+
+
+5087
+Group 0
+IncidentJsApcBegin - /mn15 /toge /ci2 1 ナイスタイミング！<br>ちょっと手伝ってくれないかなー！
+IncidentJsApcSuccess - /toge /ci2 1 いやー、どうもありがとー！<br>おかげでなんとかなったよ！<br>感謝感謝、大感謝！
+IncidentJsApcFailure - やられたーっ……！<br>ごめん、撤退するね……
+IncidentJsApcBeginEvo - /ci4 5 おおっとぉ、まだ来る気配だね？
+IncidentJsApcSuccessEvo - /toge /ci2 1 いやー、どうもありがとー！<br>おかげでなんとかなったよ！<br>感謝感謝、大感謝！
+
+Group 1
+IncidentJsApcBegin - /mn15 /toge /ci2 1 Good timing! Could you help me out?
+IncidentJsApcSuccess - /toge /ci2 1 Ah, thank you so much! Couldn't have done it<br>without you! You have my sincerest gratitude!
+IncidentJsApcFailure - They got me! Sorry, this is where I leave you...
+IncidentJsApcBeginEvo - /ci4 5 Oh, hmmm. Is something coming?
+IncidentJsApcSuccessEvo - /toge /ci2 1 Ah, thank you so much! Couldn't have done it<br>without you! You have my sincerest gratitude!
+
+
+5090
+Group 0
+IncidentJsApcBegin - /toge /ci3 1 ……まったく、見てられない！<br>手伝ってあげるから、さっさと<br>こいつら、片付けるわよ！
+IncidentJsApcSuccess - /ci2 2 一丁上がり、っと。<br>……あたし、もう行くから<br>あんまり無理しないようにね。
+IncidentJsApcFailure - むぅ……あたしもまだ未熟、か。<br>ごめんなさい、先に退くわ。
+IncidentJsApcBeginEvo - /ci3 1 ……まだ来るみたいね。<br>ほら、さっさと片付けるわよ！
+IncidentJsApcSuccessEvo - /ci2 2 一丁上がり、っと。<br>……あたし、もう行くから<br>あんまり無理しないようにね。
+
+Group 1
+IncidentJsApcBegin - /toge /ci3 1 Geez, I can't watch this. I'm going to help you out.<br>Let's clean house!
+IncidentJsApcSuccess - /ci2 2 Problem solved... I've gotta go now, so try not<br>to get in over your head, okay?
+IncidentJsApcFailure - Mhmm....Seems I'm still a little green. Sorry, but <br>I'm falling back.
+IncidentJsApcBeginEvo - /ci3 1 ...Seems like they're still coming. Let's get<br>this sorted.
+IncidentJsApcSuccessEvo - /ci2 2 Problem solved... I've gotta go now, so try not<br>to get in over your head, okay?
+
+
+5091
+Group 0
+IncidentJsApcBegin - /ci2 2 あ、センパイ！<br>悪い、ちょっと手伝ってくれ！
+IncidentJsApcSuccess - /ci2 1 センパイ……その、助かった<br>来てくれて、ありがとな
+IncidentJsApcFailure - ……これ以上は、無理だ<br>悪いセンパイ、おれは撤退する
+IncidentJsApcBeginEvo - /ci2 2 ちぇっ、まだ来るみたいだ
+IncidentJsApcSuccessEvo - /ci2 1 センパイ……その、助かった<br>来てくれて、ありがとな
+
+Group 1
+IncidentJsApcBegin - /ci2 2 Oh, hello! Sorry, but can you help me?
+IncidentJsApcSuccess - /ci2 1 Really appreciate the help. I'm glad you came<br>along.
+IncidentJsApcFailure - Oh, boy... I can't handle this. Sorry, but I gotta<br>get outta here!
+IncidentJsApcBeginEvo - /ci2 2 Damn, there's still more.
+IncidentJsApcSuccessEvo - /ci2 1 Really appreciate the help. I'm glad you came<br>along.
+
+
+5100
+Group 0
+IncidentJsApcBegin - /ci1 3 ……敵がたくさん居ますね。<br>手伝いますよ、殲滅を。
+IncidentJsApcSuccess - /ci1 5 それでは、僕は次の<br>戦場に向かいますので……
+IncidentJsApcFailure - ……こんな、僕が……？<br>なんて、無様な……
+IncidentJsApcSuccessEvo - /ci1 5 それでは、僕は次の<br>戦場に向かいますので……
+
+Group 1
+IncidentJsApcBegin - /ci1 3 ...There's quite a lot of enemies here.<br>Allow me to help you annihilate them.
+IncidentJsApcSuccess - /ci1 5 Well then, I'm off to the next battle.
+IncidentJsApcFailure - No, how could I...? This is humiliating...
+IncidentJsApcSuccessEvo - /ci1 5 Well then, I'm off to the next battle.
+
+
+5125
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+
+5126
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+
+5127
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+
+5128
+Group 0
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+Group 1
+IncidentJsApcBegin - ※※※
+IncidentJsApcSuccess - ※※※
+IncidentJsApcFailure - ※※※
+IncidentJsApcBeginEvo - ※※※
+IncidentJsApcSuccessEvo - ※※※
+
+

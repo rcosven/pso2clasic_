@@ -1,0 +1,109 @@
+ii_pse_defense.text was created: 04-07-2026 7:29:11
+Filesize is: 9936 bytes
+
+common
+Group 0
+IncidentName - 励起結晶を守り抜け！
+TrialBeginMsg - 一定時間、励起結晶を防衛せよ。<br>２個、破壊されると失敗。
+TrialAbstract - 一定時間、励起結晶を防衛せよ！
+ToastOnSuccess - 励起結晶の効果によって PSEの発生率が上がった！
+ToastOnPinch - $(0)にある励起結晶の力が減衰している！
+
+Group 1
+IncidentName - Defend the Energizer Crystals at all Costs!
+TrialBeginMsg - Defend the energizer crystals for the designated<br>time. You will fail if two are destroyed.
+TrialAbstract - Defend the energizer crystals until time runs out!
+ToastOnSuccess - The PSE trigger rate has been boosted by the effects of the energizer crystals!
+ToastOnPinch - The energizer crystal at $(0) is losing power!
+
+
+type1
+Group 0
+NpcComOnBegin - 各員、励起結晶を防衛してください！<br>結晶の周囲にアークスがいないと<br>力が減衰しますので注意してください！
+NpcComOnSuccess - /face2 防衛、成功です！<br>フォトンが活性化し、ＰＳＥが<br>発生しやすくなったようです！
+NpcComOnFailure - /face4 規定数以上の励起結晶が<br>破壊されてしまいました……。<br>通常任務に戻って下さい。
+NpcComOnDestroy - $(0)にある<br>励起結晶が壊れてしまいました！<br>他の結晶を防衛してください！
+NpcComOnLast - 励起結晶、残りわずかです！<br>なんとか守りきって下さい！
+NpcComOnAddPse - 新たな励起結晶が発生したようです！<br>防衛をお願いします！<br>多く守れば状況の好転が期待できます！
+
+Group 1
+NpcComOnBegin - All operatives, defend the energizer crystals!<br>Remember, the power of the crystals weakens<br>when there are no ARKS operatives nearby!
+NpcComOnSuccess - /face2 You successfully defended the crystals!<br>Photon activity has increased,<br>making it easier to trigger PSE!
+NpcComOnFailure - /face4 More energizer crystals were destroyed than is<br>permissable... Return to your regular duties.
+NpcComOnDestroy - The energizer crystal at $(0)<br>was destroyed! Defend the other crystals!
+NpcComOnLast - Only a few energizer crystals remain! <br>Protect them at all costs!
+NpcComOnAddPse - New energizer crystals have formed!<br>Go defend them! The more crystals you<br>defend, the better our situation becomes!
+
+
+type2
+Group 0
+NpcComOnBegin - 各員、励起結晶を守り抜け。<br>結晶近辺にアークスがいないと<br>力が減衰するようだ。注意しろ。
+NpcComOnSuccess - よし、成功だ。<br>フォトンの活性化を確認、ＰＳＥの<br>発生確率が飛躍的に上昇している。
+NpcComOnFailure - 破壊された励起結晶が<br>規定数を超えてしまったか……。<br>防衛はそこまでだ、通常任務に戻れ。
+NpcComOnDestroy - $(0)の励起結晶が<br>壊れてしまったようだ。<br>他のはやられるなよ。
+NpcComOnLast - 励起結晶の残りが少ないぞ。<br>守れるものを守っていけ。
+NpcComOnAddPse - 新たな励起結晶か……<br>可能ならば、それも守れ。<br>多く残せば状況の好転が予測される。
+
+Group 1
+NpcComOnBegin - All operatives, protect the energizer crystals. It<br>seems an ARKS operative must stand guard<br>nearby each crystal, or else its power will fade.
+NpcComOnSuccess - Yes! Mission accomplished! Confirming<br>increased photon activity. The probability of<br>triggering PSE has increased exponentially!
+NpcComOnFailure - Too many energizer crystals have been<br>destroyed. We're aborting the mission.<br>Return to your regular missions.
+NpcComOnDestroy - The energizer crystal at $(0)<br>was destroyed. Don't let the others get<br>smashed!
+NpcComOnLast - Only a few energizer crystals remain!<br>Keep protecting any you can!
+NpcComOnAddPse - Hmm, so new energizer crystals have formed...<br>Protect them too if you can.<br>The more that survive the better.
+
+
+type3
+Group 0
+NpcComOnBegin - あっ、励起結晶ですねー！<br>結晶の近くにいないと、どんどん<br>力がなくなって壊れちゃいますよー！
+NpcComOnSuccess - /face2 成功みたいですー！<br>フォトンの活性化が確認されました！<br>ＰＳＥ、いーっぱい起こりそうですー！
+NpcComOnFailure - /face4 規定数以上の励起結晶が<br>破壊されちゃったみたいです……。<br>残念ですが、防衛は諦めましょうー。
+NpcComOnDestroy - ああっ！<br>$(0)の励起結晶<br>壊れちゃいましたー！
+NpcComOnLast - /face4 ううう……励起結晶が<br>あと、少ししか残っていません……
+NpcComOnAddPse - /face2 おおっ！　新しい励起結晶！<br>あれも守ってあげてくださーい！<br>守りきるといいことが起きますよー！
+
+Group 1
+NpcComOnBegin - Ah, energizer crystals! They begin to lose their<br>power and will eventually break if someone<br>doesn't stay nearby.
+NpcComOnSuccess - /face2 Looks like you were successful!<br>Confirming photon activity!<br>That should help trigger lots of PSE!
+NpcComOnFailure - /face4 Looks like too many energizer crystals were<br>destroyed... We may as well give up on<br>defending them now.
+NpcComOnDestroy - No! The energizer crystal at $(0)<br>was destroyed!
+NpcComOnLast - /face4 Uh oh...we're running out of energizer crystals!
+NpcComOnAddPse - /face2 A-ha! New energizer crystals!<br>Defend those too if you can!<br>I've got a good feeling about this!
+
+
+type9
+Group 0
+NpcComOnBegin - 励起結晶を守ってください！<br>結晶付近にアークスがいないと<br>結晶の力が減衰してしまいますよ！
+NpcComOnSuccess - 守りきりました！<br>もう大丈夫です、これでフォトンが<br>活性化してＰＳＥ起こし放題ですよ！
+NpcComOnFailure - 励起結晶、壊されすぎましたね……<br>仕方がありません、気持ち切り替えて<br>通常任務に戻りましょう。
+NpcComOnDestroy - あっ、$(0)の<br>励起結晶が壊れてしまいました！<br>他の結晶を守ってください！
+NpcComOnLast - 励起結晶、残りわずかです！<br>それだけでも守りきりましょう！
+NpcComOnAddPse - おや、新たな励起結晶の出現です。<br>たくさん守れるにこしたことはないので<br>出来るだけ守っていきましょう！
+
+Group 1
+NpcComOnBegin - Defend the energizer crystals!<br>Remember, the crystals weaken when<br>there are no ARKS operatives nearby!
+NpcComOnSuccess - You defended them! We're all clear now.<br>The photons have been activated, and you<br>can trigger all the PSE you want!
+NpcComOnFailure - Too many energizer crystals got destroyed....<br>Can't do a thing about it now. Shake it off and<br>return to your regular mission.
+NpcComOnDestroy - Damn, the energizer crystal at $(0)<br>was destroyed! Defend the others!
+NpcComOnLast - Just a few energizer crystals remain!<br>Defend whatever's left at all costs!
+NpcComOnAddPse - Hey, new energizer crystals have appeared.<br>We can't have too many, so defend as many<br>as you can!
+
+
+type9f
+Group 0
+NpcComOnBegin - 励起結晶を守ってください！<br>結晶付近にアークスがいないと<br>結晶の力が減衰してしまいますよ！
+NpcComOnSuccess - 守りきりました！<br>もう大丈夫です、これでフォトンが<br>活性化してＰＳＥ起こし放題ですよ！
+NpcComOnFailure - 励起結晶、壊されすぎましたね……<br>仕方がありません、気持ち切り替えて<br>通常任務に戻りましょう。
+NpcComOnDestroy - あっ、$(0)の<br>励起結晶が壊れてしまいました！<br>他の結晶を守ってください！
+NpcComOnLast - 励起結晶、残りわずかです！<br>それだけでも守りきりましょう！
+NpcComOnAddPse - おや、新たな励起結晶の出現です。<br>たくさん守れるにこしたことはないので<br>出来るだけ守っていきましょう！
+
+Group 1
+NpcComOnBegin - Defend the energizer crystals!<br>Remember, the crystals weaken when<br>there are no ARKS operatives nearby!
+NpcComOnSuccess - You defended them! We're all clear now.<br>The photons have been activated, and you<br>can trigger all the PSE you want!
+NpcComOnFailure - Too many energizer crystals got destroyed....<br>Can't do a thing about it now. Shake it off and<br>return to your regular mission.
+NpcComOnDestroy - Damn, the energizer crystal at $(0)<br>was destroyed! Defend the others!
+NpcComOnLast - Just a few energizer crystals remain!<br>Defend whatever's left at all costs!
+NpcComOnAddPse - Hey, new energizer crystals have appeared.<br>We can't have too many, so defend as many<br>as you can!
+
+

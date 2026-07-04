@@ -1,0 +1,33 @@
+ii_areaboss_de.text was created: 04-07-2026 7:29:11
+Filesize is: 1984 bytes
+
+common
+Group 0
+IncidentName - $(0)撃退
+TrialBeginMsg - $(0)を撃退せよ！
+TrialAbstract - $(0)の撃退
+
+Group 1
+IncidentName - Repel the $(0)
+TrialBeginMsg - Repel the $(0)!
+TrialAbstract - Repel the $(0)
+
+
+type9
+Group 0
+NpcComOnBegin - 目標の形態が変化しました！<br>これまでにない強力な反応です！<br>ここからが本番みたいですよ！
+NpcComOnHpDecreased0 - 攻撃、効いていますよ！
+NpcComOnHpDecreased1 - 目標の損傷、拡大しています！
+NpcComOnBossSkill - 幻創造神の周囲に<br>複数の高エネルギー反応を確認！<br>急ぎ破壊してください！
+NpcComOnBossSkillSuccess - 高エネルギー反応、消失しました！<br>今がチャンスです！
+NpcComOnBossSkillFail - 大丈夫ですか！？<br>すぐに次の攻撃が来ます！<br>急いで体勢を立て直してください！
+
+Group 1
+NpcComOnBegin - The target has altered its form! These readings<br>are off the charts! Time to get serious!
+NpcComOnHpDecreased0 - Your attacks are working!
+NpcComOnHpDecreased1 - The target has suffered heavy damage!
+NpcComOnBossSkill - Multiple high energy readings in the vicinity of<br>Deus Esca! Destroy them at once!
+NpcComOnBossSkillSuccess - High energy readings eliminated!<br>Now's your chance!
+NpcComOnBossSkillFail - Geez, are you okay!? Another attack's coming!<br>Regroup and brace yourself!
+
+

@@ -1,0 +1,45 @@
+ii_escape_enemy_ahl.text was created: 04-07-2026 7:29:11
+Filesize is: 3392 bytes
+
+common
+Group 0
+IncidentName - 逃走$(0)討伐
+TrialBeginMsg - 逃走する$(0)を$(1)体倒せ！<br>$(2)体以上、逃がすと失敗。
+TrialAbstract - 逃走$(0)を討伐せよ！
+TrialBeginMsgForKeyII - 逃走する$(0)を$(1)体倒せ！
+
+Group 1
+IncidentName - Fleeing $(0) Suppression
+TrialBeginMsg - Pursue fleeing $(0) and defeat $(1) of them!<br>If $(2) or more get away, you will fail.
+TrialAbstract - Suppress any fleeing $(0) you find!
+TrialBeginMsgForKeyII - Pursue fleeing $(0) and defeat $(1) of them!
+
+
+type1
+Group 0
+NpcComOnBegin - 逃走する$(0)の<br>存在を確認。奇行の原因調査のため<br>逃走前の討伐回収を願います。
+NpcComOnBeginAtRareCase - $(0)の存在を<br>確認しました。早急な討伐要請が<br>下っています。よろしくお願いします！
+NpcComOnSuccess - /face2 $(0)のデータ<br>取得完了、協力感謝します。
+NpcComOnFailure - $(0)、ロスト。<br>データ取得は失敗しましたが<br>ここまでの協力、感謝します。
+
+Group 1
+NpcComOnBegin - Detecting multiple fleeing $(0)<br>readings. We need you to suppress any you<br>find to get to the bottom of this odd behavior.
+NpcComOnBeginAtRareCase - $(0) presence detected.<br>We need your help with an urgent<br>suppression request!
+NpcComOnSuccess - /face2 $(0) data acquired.<br>Thanks for your cooperation.
+NpcComOnFailure - $(0) readings are gone.<br>We failed to gather enough data, but<br>thank you for your efforts.
+
+
+type9f
+Group 0
+NpcComOnBegin - $(0)の大規模な<br>出現が確認されました！<br>逃走前のデータ収集をお願いします！
+NpcComOnBeginAtRareCase - $(0)の出現を確認！<br>データの収集を要請されました。<br>ご協力、お願いします！
+NpcComOnSuccess - $(0)の<br>データを受領しました。<br>お疲れさまでした！
+NpcComOnFailure - 見失っちゃいましたね……<br>でも、遭遇だけでも<br>貴重なデータです！
+
+Group 1
+NpcComOnBegin - I've detected a large $(0) presence!<br> Gather data on them before they flee!
+NpcComOnBeginAtRareCase - $(0) presence detected!<br>We've been ordered to gather data on<br>them, and your help will be essential!
+NpcComOnSuccess - $(0) data received. Thank you!
+NpcComOnFailure - I guess we lost them... But the encounter<br>alone gave us valuable data!
+
+

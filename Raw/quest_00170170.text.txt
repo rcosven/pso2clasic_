@@ -1,0 +1,77 @@
+quest_00170170.text was created: 04-07-2026 7:32:53
+Filesize is: 3776 bytes
+
+Basic
+Group 0
+Title - T:月駆ける幻創の母
+Explanation - 衛星・月において制御を失ったエーテルが<br>暴走励起し、超巨大幻創種の反応が出現。<br>暴走したエーテルが集い、地球へと向かう<br>柱状物質を創造し、超巨大幻創種を<br>地球へと導こうとしている。<br>アークス各員は追撃用の改良を施した<br>ライドロイドを用い目標を追跡、撃破せよ。<br>――――――――――――――――――――<br>失敗条件／制限時間の経過
+
+Group 1
+Title - T: The Lunar Phantasm Matriarch
+Explanation - Uncontrolled aether has resulted in a state of<br>runaway excitation and we have picked up<br>a supermassive phantasm signal on the Moon.<br>It appears to be trying to collect and form the<br>errant aether into a pillar that it can use to guide<br>itself to Earth. Use the provided modified<br>pursuit Ridroid to track and defeat the target.<br>-------------------------------------------<br>You will fail this quest if you exceed the time limit.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - エスカファルス・マザーを撃破せよ！
+
+Group 1
+SimpleExplanation - Destroy the Eska Falz Mother!
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special Client Order
+a2 - Complete a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - まもなく、月面に発生した<br>巨大幻創種付近へ<br>転送が開始されます。
+NpcComMsg2 - 目標は高速移動しているため<br>まずはライドロイドで目標を追跡しつつ<br>攻撃し、撃破を試みてください！
+
+Group 1
+NpcComMsg1 - You'll now be teleported into<br>the vicinity of the phantasm that's<br>emerged on the moon's surface.
+NpcComMsg2 - The target is moving rapidly,<br>so for now, use the Ridroid to<br>keep on its tail and try to bring it down!
+
+
+AreaName
+Group 0
+Area0S - 月面
+Area0L - 衛星・月　月面
+Area1S - 幻創の柱
+Area1L - 衛星・月　幻創の柱
+
+Group 1
+Area0S - Moon Surface
+Area0L - The Moon - Moon Surface
+Area1S - Phantasm Pillar
+Area1L - The Moon - Phantasm Pillar
+
+
+QuestSuccessAreaName
+Group 0
+Area1S - 月面
+Area1L - 衛星・月　月面
+
+Group 1
+Area1S - Moon Surface
+Area1L - The Moon - Moon Surface
+
+
+PlanetName
+Group 0
+QuestInfoPlanetName - 衛星・月
+
+Group 1
+QuestInfoPlanetName - The Moon
+
+

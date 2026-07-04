@@ -1,0 +1,85 @@
+quest_00170200.text was created: 04-07-2026 7:32:53
+Filesize is: 4176 bytes
+
+Basic
+Group 0
+Title - T:新世を成す幻創の造神
+Explanation - 惑星・地球の太平洋上において<br>強大な幻創種の反応を確認した。<br>地球各地から集めた膨大なエーテルにより<br>世界を創り変えようとしている。<br>アークス各員は、至急現地へと赴き<br>目標を撃破し、その目的を阻止せよ。<br>――――――――――――――――――――<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+
+Group 1
+Title - T: D Esca, Maker of New Epochs
+Explanation - We have readings corresponding to a powerful<br>phantasm originating in the Pacific Ocean. It is<br>attempting to remake the world using the<br>aether it collected from all over Earth. ARKS <br>members are to defeat the target. <br>-------------------------------------------<br>Quest can only be completed once.<br>Maximum damage limited to 999,999.<br>You will fail if mission objectives are not<br>fulfilled or time  limit is exceeded.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - デウス・エスカを撃退せよ！
+
+Group 1
+SimpleExplanation - Repel Deus Esca!
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Clear a special Client Order
+a2 - Clear a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、太平洋上に出現した<br>幻創大陸の中心にそびえ立つ<br>世界樹の消滅作戦を開始します。
+NpcComMsg2 - 対象内を跋扈する幻創造神を倒せば、<br>世界樹は幻創大陸ごと消滅するはずです。<br>激戦が予想されます、お気をつけて！
+
+Group 1
+NpcComMsg1 - The operation to destroy the World Tree<br>on the phantasmal landmass over<br>the Pacific Ocean will commence shortly.
+NpcComMsg2 - Defeating Deus Esca, who controls <br>the target area, should destroy the <br>World Tree and the phantasmal <br>landmass. Expect fierce resistance!
+
+
+AreaName
+Group 0
+Area0S - 世界樹
+Area0L - 惑星・地球　世界樹
+Area1S - 世界樹の頂
+Area1L - 惑星・地球　世界樹の頂
+Area2S - 世界樹の頂
+Area2L - 惑星・地球　世界樹の頂
+Area3S - 世界樹の頂
+Area3L - 惑星・地球　世界樹の頂
+
+Group 1
+Area0S - The World Tree
+Area0L - Earth - The World Tree
+Area1S - The Top of The World Tree
+Area1L - Earth - The Top of The World Tree
+Area2S - The Top of The World Tree
+Area2L - Earth - The Top of The World Tree
+Area3S - The Top of The World Tree
+Area3L - Earth - The Top of The World Tree
+
+
+QuestSuccessAreaName
+Group 0
+Area3S - イースター島
+Area3L - 惑星・地球　イースター島
+
+Group 1
+Area3S - Easter Island
+Area3L - Earth - Easter Island
+
+
+PlanetName
+Group 0
+QuestInfoPlanetName - 惑星・地球
+
+Group 1
+QuestInfoPlanetName - Earth
+
+

@@ -1,0 +1,54 @@
+coii_mge_meteor.text was created: 04-07-2026 7:29:11
+Filesize is: 2288 bytes
+
+common
+Group 0
+IncidentName - 巨顔弾を全て破壊せよ
+TrialBeginMsg - 巨顔弾を全て破壊せよ
+TrialAbstract - 規定数の巨顔弾を破壊せよ
+
+Group 1
+IncidentName - Destroy all Macro Facebullets!
+TrialBeginMsg - Destroy all Macro Facebullets!
+TrialAbstract - Destroy the required number of Macro<br>Facebullets!
+
+
+type1
+Group 0
+NpcComOnBegin - 『禍津』の両肩から異常な反応を確認。<br>顔弾による唱壁門へ攻撃が予想されます<br>各員は速やかに顔弾の破壊を。
+NpcComOnSuccess - 全ての顔弾の破壊を確認。<br>各員、引き続き戦闘の継続を。
+NpcComOnFailure - /face4 唱壁門への被害を確認。<br>対処失敗ですが、仕方がありません。<br>各員、引き続き戦闘の継続を。
+
+Group 1
+
+
+type2
+Group 0
+NpcComOnBegin - 『禍津』の両肩から異常な反応を確認。<br>顔弾による唱壁門へ攻撃が予想されます<br>各員は速やかに顔弾の破壊を。
+NpcComOnSuccess - 全ての顔弾の破壊を確認。<br>各員、引き続き戦闘の継続を。
+NpcComOnFailure - /face4 唱壁門への被害を確認。<br>対処失敗ですが、仕方がありません。<br>各員、引き続き戦闘の継続を。
+
+Group 1
+
+
+type3
+Group 0
+NpcComOnBegin - 『禍津』の両肩から異常な反応を確認。<br>顔弾による唱壁門へ攻撃が予想されます<br>各員は速やかに顔弾の破壊を。
+NpcComOnSuccess - 全ての顔弾の破壊を確認。<br>各員、引き続き戦闘の継続を。
+NpcComOnFailure - /face4 唱壁門への被害を確認。<br>対処失敗ですが、仕方がありません。<br>各員、引き続き戦闘の継続を。
+
+Group 1
+
+
+type6
+Group 0
+NpcComOnBegin - 『禍津』の両肩から異常な反応を確認。<br>巨顔弾による大唱壁門への攻撃を予想。<br>各員は<red>速やかに巨顔弾の破壊<black>を。
+NpcComOnSuccess - 全ての巨顔弾の破壊を確認。<br>各員、引き続き戦闘の継続を。
+NpcComOnFailure - /face4 唱壁門への被害を確認。<br>対処失敗ですが、仕方がありません。<br>各員、引き続き戦闘の継続を。
+
+Group 1
+NpcComOnBegin - Abnormal reading from Magatsu. It's targeting<br>the Great Harmonic Gate with Macro<br>Facebullets. All ops, <red>quickly destroy them<black>.
+NpcComOnSuccess - Macro Facebullets confirmed destroyed.<br>All ops, resume your attack.
+NpcComOnFailure - /face4 Harmonic Gate confirmed damaged.<br>Operation failed, but we'll just have to live<br>with it. All ops, resume your attack.
+
+

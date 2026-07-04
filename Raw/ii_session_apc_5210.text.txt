@@ -1,0 +1,53 @@
+ii_session_apc_5210.text was created: 04-07-2026 7:29:11
+Filesize is: 2976 bytes
+
+common
+Group 0
+Begin - 開始5244
+Success - 成功5244
+Failure - 失敗5244
+Dead - 自分死亡5244
+BuddyDead - 相手死亡5244
+Evolution - 発展5244
+
+Group 1
+Begin - Begin5244
+Success - Success5244
+Failure - Failure5244
+Dead - YouDied5244
+BuddyDead - PartnerDied5244
+Evolution - Evolution5244
+
+
+5227
+Group 0
+Begin - /ci1 1 相棒、いいところに！<br>おれたちだけだと苦しくってさ<br>手伝ってくれよ！
+Success - /ci2 1 ふいー、終わった終わった！<br>相棒、ありがとな！<br>ユク姉、行こうぜ。
+Failure - うあっちゃー……<br>ごめん、ユク姉、相棒
+Dead - そんな……
+BuddyDead - ユク姉！<br>お前ら……絶対、許さねえからな！
+
+Group 1
+Begin - /ci1 1 Brilliant timing, mate! We're getting our arses<br>kicked here. Lend a hand, will ya?
+Success - /ci2 1 Whew, glad that's over! Thanks, mate!<br>Let's go, Eucie.
+Failure - Arrrgh... Sorry, mate. And Eucie...
+Dead - What the...
+BuddyDead - Eucie! You bastards will pay for this!
+
+
+5083
+Group 0
+Begin - /ci2 1 へへっ、ゼノ先輩と三人で戦うなんて<br>あの時のことを思い出すな……ようし！<br>相棒、いっちょやってやろうぜ！
+Success - /mn15 /ci2 1 なんとかなったな、相棒！<br>おれだって、少しは力になれたよな？<br>じゃ、また後で会おうぜ！
+Failure - /mn1 くそっ！<br>まだ力不足なのか！　おれは！
+Dead - /mn2 ぐっ……！<br>相棒……ごめん……
+BuddyDead - /mn2 ゼノ先輩っ！？<br>相棒、二人で持ちこたえるぞ！
+
+Group 1
+Begin - /ci2 1 Hehe, fighting in a trio with Zeno. Just like old<br>times... Let's rock, mate!
+Success - /mn15 /ci2 1 Looks like we did it, mate!<br>Hopefully I made a difference.<br>Till we meet again!
+Failure - /mn1 Damn! I still don't have what it takes!
+Dead - /mn2 Ugh... Sorry, mate...
+BuddyDead - /mn2 Zeno!? Looks like it's just you and me, mate!
+
+

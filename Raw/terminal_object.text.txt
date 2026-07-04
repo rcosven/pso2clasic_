@@ -1,0 +1,89 @@
+terminal_object.text was created: 04-07-2026 7:34:55
+Filesize is: 8272 bytes
+
+common
+Group 0
+CampshipEnter - キャンプシップ入口
+NotAccessQuest - クエスト受注前なのでアクセスできません。
+WarehouseTitle - 倉庫端末
+PartnerObject_ErrorTitle - パートナー呼び出し端末
+PartnerObject_Error1 - 現在、パートナー呼び出し端末を<br>使用することはできません。
+PartnerObject_Error2 - このクエストでは、パートナーを呼び出すことはできません。
+PartnerObject_Error3 - マッチング設定により、<br>パートナーの呼び出しが制限されています。
+GuildWarehouseTitle - チーム倉庫端末
+
+Group 1
+CampshipEnter - Gateway Ship Entrance
+NotAccessQuest - You must have a quest to access this.
+WarehouseTitle - Storehouse Terminal
+PartnerObject_ErrorTitle - Partner Terminal
+PartnerObject_Error1 - The Partner Terminal is currently unavailable.
+PartnerObject_Error2 - You cannot call on a partner for this quest.
+PartnerObject_Error3 - The partners you can call are currently limited<br>due to matching settings.
+GuildWarehouseTitle - Alliance Storehouse Terminal
+
+
+Campship
+Group 0
+TerminalTitle - 情報端末
+ShopTitle - ショップ端末
+MedicalTitle - メディカル端末
+QuestTitle - クエストカウンター端末
+ApcTitle - ＡＰＣ端末
+AccessFaild - 一度決定した後は<br>アクセスできません。
+NonReader - この端末は<br>現在パーティーリーダーしか<br>アクセスできません。
+NotClear - この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+NotClearTelepipe - この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+TerminalDisable - 現在使用することができません。
+TerminalDisableAPC - 現在使用することができません。
+TerminalDisableGuildRoom - チーム倉庫を購入していないため、<br>現在使用することができません。<br><br>チームポイントを消費して<br>チーム倉庫を購入することで<br>使用可能となります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+TerminalDisableGuildMember - 役職がビジターであるため利用できません。<br>使用するためにはコモンメンバー以上の<br>役職である必要があります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+TerminalDisableGuildMember2 - <pict Arcscash><c ff4f3f>AC消費コンテンツ<c><br>選択した機能の利用権をお持ちでないか、<br>利用期限が切れています。<br><br><yellow>「プレミアムセット」<c>を購入し、<br>そのまますぐに機能を有効にできますが、<br>購入確認画面に進みますか？<br><br><red>※個別の機能チケットをご希望の場合は、<br>　メインメニューの「ACショップ」でご購入ください。<c>
+TerminalDisableCancelTower - パーティーメンバー全員がキャンプシップに戻るまで、<br>使用することができません。
+RetryFaild - クエストの受注期間が過ぎているため、<br>もう一度挑戦することができませんでした。
+ClearLimit - クエストのクリア回数制限を超えているため<br>もう一度挑戦することができませんでした。
+QuestDropPenalty - クエストの受注を制限されているため<br>このクエストは受注できません。
+QuestInExtra - このクエストは、<br>キャンペーン対象期間となったため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+QuestOutExtra - このクエストは、<br>キャンペーン対象期間が終了したため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+CantStartProhibitQuestDropTitleCnt - クエストカウンター端末
+CantStartProhibitQuestDropTitleTlp - テレポーター
+CantStartProhibitQuestDropForStart - 現在使用することができません。
+
+Group 1
+TerminalTitle - Data Terminal
+ShopTitle - Shopping Terminal
+MedicalTitle - Medical Terminal
+QuestTitle - Quest Counter Terminal
+ApcTitle - APC Terminal
+AccessFaild - This cannot be accessed after a selection has<br>been confirmed.
+NonReader - Currently, only the party leader can access this<br>terminal.
+NotClear - You cannot access this terminal until you<br>complete or fail your current quest.
+NotClearTelepipe - You cannot access this terminal until you<br>complete or fail your current quest.
+TerminalDisable - This is currently unavailable.
+TerminalDisableAPC - This is currently unavailable.
+TerminalDisableGuildRoom - You cannot access this without having purchased <br>an Alliance Storehouse.<br><br>Access will be granted once you have purchased <br>an Alliance Storehouse with Alliance Points.<br><br>Note: To use the Alliance Storehouse, you must <br>also use a Premium Set.
+TerminalDisableGuildMember - You cannot access this terminal as a Provisional. <br>You must be ranked Member or above to access <br>this terminal.<br><br>Note: To use the Alliance Storehouse, <br>you must also use a Premium Set.
+TerminalDisableGuildMember2 - <pict Arcscash><c ff4f3f>This content requires AC<c><br>You either don't have permission to use the selected <br>function, or your access has expired.<br><br>You can purchase a <yellow>Premium Set<c>to enable <br>this function immediately. Proceed to the purchase screen?<br><br><red>Note: Individual function tickets can be purchased <br>from the AC Shop in the main menu.<c>
+TerminalDisableCancelTower - You cannot cancel until all party members have<br>returned to the Gateway Ship.
+RetryFaild - The period for accepting this quest has expired.<br>You cannot retry this quest.
+ClearLimit - You have exceeded the maximum number of times<br>this quest can be completed.
+QuestDropPenalty - You cannot accept this quest because you<br>currently have a quest access penalty.
+QuestInExtra - You cannot retry this quest during the campaign<br>period. Please accept this quest again.
+QuestOutExtra - You cannot retry this quest as the campaign<br>period has ended. Please accept this quest<br>again.
+CantStartProhibitQuestDropTitleCnt - Quest Counter Terminal
+CantStartProhibitQuestDropTitleTlp - Teleporter
+CantStartProhibitQuestDropForStart - This is currently unavailable.
+
+
+type2
+Group 0
+
+Group 1
+
+
+type3
+Group 0
+
+Group 1
+
+

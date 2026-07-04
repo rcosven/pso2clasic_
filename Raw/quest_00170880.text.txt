@@ -1,0 +1,77 @@
+quest_00170880.text was created: 04-07-2026 7:32:03
+Filesize is: 4608 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Clear a special Client Order
+a2 - Clear a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+AreaName
+Group 0
+Area0S - 艦隊交戦区域
+Area0L - エリア１　艦隊交戦区域
+Area1S - 敵戦艦内部　中枢付近
+Area1L - エリア２　敵戦艦内部　中枢付近
+Area2S - 敵戦艦内部　中枢部
+Area2L - エリア３　敵戦艦内部　中枢部
+QuestInfoAreaName - 艦隊交戦区域
+
+Group 1
+Area0S - Armada War Zone
+Area0L - Area 1 - Armada War Zone
+Area1S - Enemy Battleship Interior - Center Area
+Area1L - Area 2 - Enemy Battleship Interior - Center Area
+Area2S - Enemy Battleship Interior - Central Command
+Area2L - Area 3 - Enemy Battleship Interior - Central Command
+QuestInfoAreaName - Armada War Zone
+
+
+Basic
+Group 0
+Title - T:艦破訓練：終の慟哭
+Explanation - 本任務は、ＶＲ空間にて行う<br>敵戦艦の最奥を目指す実戦訓練である。<br>緊急時における対応能力向上を目的とし<br>様々な障害を配置。最深部到達後は<br>フォトナーとの総力戦が待っている。<br>各員の能力を最大限引き出し、突破せよ。<br>――――――――――――――――――――<br>最深部に出現するエネミーの撃破でクリア
+
+Group 1
+Title - T: Armada Training: Final Lament
+Explanation - This exercise simulates infiltrating an enemy<br>ship to the final area in a VR environment.<br>Various obstacles have been placed to<br>improve your performance under pressure.<br>A fierce battle with a Photoner awaits in the <br>final area. Make good use of your collective<br>abilities to succeed.<br>---------------------------------------<br>Complete this quest by defeating<br>the enemy in the final area.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、緊急訓練を開始します！ <br>今回の目的は、敵大型戦艦への突入<br>および最深部で待つ強敵の撃破です。 
+NpcComMsg2 - 道中には、様々な障害が<br>用意されています。周囲を確認して<br>可能な限り、撃破しましょう！
+NpcComMsg3 - 各員協力し、全力で挑んでください！<br>それでは、訓練スタートです！
+
+Group 1
+NpcComMsg1 - Now commencing emergency training!<br>Infiltrate the Large Enemy Battleship and<br>defeat the boss in the final area.
+NpcComMsg2 - There will be obstacles along the way.<br>Check your surroundings and destroy<br>as many as possible.
+NpcComMsg3 - Work together and do your best!<br>Commence training!
+
+
+PreTransportDirection2
+Group 0
+NpcComMsg1 - まもなく、最深部に転送します。<br>いよいよ本訓練、最後の戦いです。<br>全力でがんばってください！
+
+Group 1
+NpcComMsg1 - Now teleporting to the final area.<br>This is your final training battle.<br>Give it everything you've got!
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 最深部を目指せ！
+
+Group 1
+SimpleExplanation - Get to the final area!
+
+

@@ -1,0 +1,37 @@
+ii_session_apc_5437.text was created: 04-07-2026 7:29:11
+Filesize is: 2112 bytes
+
+5566
+Group 0
+Begin - /mn15 /ci2 1 <%me>さん！<br>遅ればせながら助太刀にきました！<br>さあ、皆さんを助けましょう！
+Success - /mn15 /ci2 1 お見事です！　そして感謝です！<br>さすが、みんなのヒーローですね！<br>ほら、キョーくんもお礼を！
+Failure - /mn1 そんな……<br>ここで止まるわけには……
+Dead - /mn2 あうぅっ……<br>ヒーローが、倒れるわけには……
+BuddyDead - /mn2 キョーくん！<br>ここは私が食い止めますから<br>少し休んでいてください！
+
+Group 1
+Begin - /mn15 /ci2 1 <%me>! <br>Sorry we're late—we came to aid you!<br>Let's see what we can do!
+Success - /mn15 /ci2 1 Excellent! You have my gratitude! <br>You truly are everyone's hero! Hey! Kyokie! <br>You need to thank them too!
+Failure - /mn1 What the...this can't end like this...
+Dead - /mn2 No...a hero can't go down like this...
+BuddyDead - /mn2 Kyokie! I'll hold them back here, so take a<br>little break!
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

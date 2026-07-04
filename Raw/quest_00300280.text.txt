@@ -1,0 +1,145 @@
+quest_00300280.text was created: 04-07-2026 7:32:53
+Filesize is: 21712 bytes
+
+Basic
+Group 0
+Title - 魔神城戦
+Explanation - 異世界オメガに存在する魔神城が活性化。<br>かの世界で戦乱が起こっています。<br>オメガへ向かい、魔神城を撃破しましょう。<br>魔神城の結界を突破するための兵器<br>「破界鎚」が鍵になる戦いですよ！<br>頑張りましょう、守護輝士！<br>――――――――――――――――――――<br>制限時間の経過でクエスト終了<br>敵の戦力ゲージを０にするか<br>制限時間経過時に残量が上回っていれば勝利
+StoryExplanation - クエントとヴェルンの国境近くで<br>魔神城が起動したとの報告が入る。<br>駆け付けた先には、ただ一人きりで<br>魔神城と対峙する少女の姿があった。
+
+Group 1
+Title - Castrum Demonica Battle 
+Explanation - The Castrum Demonica, which is located in<br>Alternate Dimension: Omega, has become highly active.<br>Said world has been locked in a state of war<br>for some time. Go to Omega and destroy the<br>Castrum Demonica. The key to this battle will<br>be the weapon known as the "Buster Ram,"<br>which are designed to break through Castrum Demonica's<br>barrier. We're counting on you, Guardians!<br>-------------------------------------------<br>This quest will end when the time limit expires.<br>Achieve victory by wearing the enemy's Forces Gauge<br>down to zero or ensuring your remaining power<br>is higher when the time limit expires.
+StoryExplanation - Reports came in that the Castrum Demonica had been<br>activated close to the border between Cuento and Weyland.<br>As our heroes rushed into battle, they found a maiden,<br>all alone, standing face to face with Castrum Demonica.
+
+
+Basic_Story
+Group 0
+Title - ヴェルン国境の戦い
+Explanation - クエントとヴェルンの国境近くで<br>魔神城が起動したとの報告が入る。<br>駆け付けた先には、ただ一人きりで<br>魔神城と対峙する少女の姿があった。<br>――――――――――――――――――――<br>制限時間の経過でクエスト終了<br>敵の戦力ゲージを０にするか<br>制限時間経過時に残量が上回っていれば勝利
+
+Group 1
+Title - Battle at the Weyland Border
+Explanation - Reports came in that the Castrum Demonica<br>had been activated close to the border between Cuento and Weyland. As our heroes<br>rushed into battle, they found a maiden, all alone,<br>standing face to face with Castrum Demonica.<br>-------------------------------------------<br>This quest will end when the time limit expires.<br>Achieve victory by wearing the enemy's Forces Gauge<br>down to zero or ensuring your remaining power<br>is higher when the time limit expires.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 魔神城を撃破せよ！
+
+Group 1
+SimpleExplanation - Destroy the Castrum Demonica!
+
+
+AcceptCondition
+Group 0
+
+Group 1
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - まもなく魔神城戦です！<br>既に魔神結界の展開も確認されており<br>激戦が予想されます。
+NpcComMsg2 - 破界鎚を召喚して結界を破壊し<br>魔神城に接近、これを撃破して下さい。<br>健闘を祈ります！　頑張ってください！
+
+Group 1
+NpcComMsg1 - The Battle for Castrum Demonica is about to<br>begin! We've confirmed deployment of the<br>Arx Demonica and anticipate a fierce battle.
+NpcComMsg2 - Summon Buster Rams, destroy barriers, and<br>destroy the Castrum Demonica upon interception.<br>Good luck! I'll keep my fingers crossed for you!
+
+
+BasnetNpcCom
+Group 0
+OnQuestBegin_0 - 敵軍、攻撃準備に入った模様！<br>今のうちに兵器セットの選択と<br>マナの回収を進めましょう！
+OnQuestBegin_1 - マナを溜めるとアークス兵器が<br>強化され、召喚する破界鎚の数が<br>増えるなどの恩恵がありますよ！
+OnDefencePhase1Start0 - 敵軍の侵攻を確認！<br>破界塔を守りつつ、可能な限り<br>マナを回収して下さい！
+OnDefencePhase1Start1 - 敵軍、再度侵攻開始！<br>マナを一定量回収するごとに<br>破界塔が自動で回復しますよ！
+OnDefencePhase1Start2 - 敵軍、再侵攻開始！<br>破界塔を壊されないよう殲滅しつつ<br>マナの回収をお願いします！
+OnDefencePhase2Start0 - 大変です！　破界塔に向けて<br>敵軍が侵攻を開始しました！<br>一旦後退し、防衛に専念して下さい！
+OnDefencePhase2Start1 - 再度敵軍が侵攻を開始！　結界は<br>突破しましたが、破界塔を壊されたら<br>勝機はありません！注意して下さい！
+OnDefencePhase3Start0 - 魔神城から強力な反応を確認！<br>破界塔を狙った攻撃のようです！<br>確実に阻止して下さい！
+OnDefencePhase3Start1 - 再び魔神城から強力な反応……！<br>魔神城の攻撃を阻止し<br>破界塔を防衛して下さい！
+OnAttackPhase1Start0 - 破界鎚、召喚完了！<br>敵軍から破界鎚を護衛し<br>障壁を壊しましょう！
+OnAttackPhase1Start1 - 破界鎚、召喚完了！<br>敵軍の攻撃から破界鎚を守り<br>残った障壁を壊しましょう！
+OnAttackPhase1Start2 - 破界鎚を召喚しました！<br>今度こそ敵の障壁を突破しましょう！
+OnAttackPhase2Start0 - 全障壁の破壊に成功！<br>あとは魔神城を倒すだけです！<br>まずは腹部のコアを攻撃しましょう！
+OnAttackPhase2Start1 - 魔神城は、一定時間ごとに<br>破界塔に向けてレーザーを放ちます！<br>早急にコアを破壊してください！
+OnAttackPhase3Start0_0 - 魔神城を攻撃するために<br>左右の階段から中央の橋上に<br>移動して下さい！
+OnAttackPhase3Start0_1 - 今度も魔神城は、一定時間ごとに<br>強力なレーザーを放ってきます！<br>急ぎ撃破を！
+OnAttackPhase3Start1 - 再び防衛機構に登り<br>魔神城の弱点部へ向かってください！
+OnDefencePhase1End0 - 敵軍の制圧を確認！<br>破界鎚を召喚中です。今のうちに<br>進軍の準備をお願いします！
+OnDefencePhase1End1 - 再度破界鎚を召喚し障壁を攻撃します！<br>マナを回収して、召喚する<br>破界鎚の数を増やしましょう！
+OnDefencePhase1End2 - 破界鎚召喚中！<br>攻め込む準備をして下さい！
+OnAttackPhase1End0 - 破界鎚の消滅、及び敵増援を確認！<br>再侵攻が予測されるため<br>破界塔の守りを固めて下さい！
+OnAttackPhase1End1 - 破界鎚の消滅、及び<br>再度敵増援を確認！<br>破界塔の守りを固めて下さい！
+OnAttackPhase1End2 - 破界鎚の全破壊、及び<br>再度敵増援を確認しました！<br>破界塔の守りを固めて下さい！
+OnDefencePhaseEndByTimeOver - 敵軍の動きに変化を確認しました！<br>一部エネミーは自爆してきますよ！<br>注意して下さい！
+OnDefencePhaseEnemyDecrease0 - 敵軍、数が減ってきています！<br>このまま押し切りましょう！
+OnDefencePhaseEnemyDecrease1 - 敵軍、残りあとわずかです！<br>あと少しですよ！
+OnWaveHapping - 魔神城に不穏な動き有り！<br>妨害を仕掛けてきそうです！<br>各員は状況に応じ行動して下さい！
+OnRamCountIncrease - 一定量のマナを回収しました！<br>より多くの破界鎚が召喚できます！<br>引き続きマナを回収しましょう！
+OnBaseHpDecrease0 - $(0)破界塔の損傷拡大！<br>至急救援に向かって下さい！
+OnBaseHpDecrease1 - $(0)破界塔、もう持ちません！<br>大至急救援をお願いします！
+OnBrokenBase0 - 破界塔の機能停止を確認！<br>残るは３つです！　まだ余裕は<br>あります！　焦らずに行きましょう！
+OnBrokenBase1 - ２つ目の破界塔も機能停止しました！<br>予断を許さない状態です！<br>注意して下さい！
+OnBrokenBase2 - ３つ目の破界塔、機能停止！<br>残る１つは必ず死守して下さい！
+OnBrokenBase3 - 全ての破界塔の停止を確認。<br>残念ですが、これ以上の<br>戦闘継続は不可能です。
+OnBossDeadlySkill - 魔神城から超巨大エネルギー反応！<br>このままだと拠点が危ないです！<br>全力で凌いで下さい！
+OnHpGaugeDecrease0 - 自軍の損傷拡大中！<br>これ以上被害が大きくなれば<br>撤退することになります！
+OnHpGaugeDecrease1 - 自軍の損傷甚大！　これ以上は<br>耐えられません！　破界塔を守り<br>被害を最小限に抑えて下さい！
+OnTimeDecrease0 - 戦闘可能時間、残り半分です！<br>戦局がこちらに傾いていれば勝利ですが<br>可能であれば魔神城を撃破して下さい！
+OnTimeDecrease1 - 戦闘可能時間、残りわずかです！<br>あと少し、最後まで諦めずに<br>頑張って下さい！
+OnSuccessTimeover - 敵軍の撤退を確認しました！<br>損傷もさほど大きくなく<br>我々の勝利ですよ！
+OnSuccessBreakGauge - 魔神城の消滅を確認！<br>我々の完全勝利です！
+OnSuccessReturn - それでは帰還して下さい。<br>お疲れ様でした！
+OnFailureTimeover - 破界塔の損傷を確認。<br>これ以上の戦闘は難しいです。<br>一度退却しましょう。
+OnFailureAnnihilationBase - 全破界塔の機能停止を確認……<br>これ以上の戦闘継続は難しいので<br>一度退却しましょう。
+OnFailureReturn - 残念ですが……仕方がないです。<br>帰還して下さい。
+
+Group 1
+OnQuestBegin_0 - It appears the enemy is preparing to attack!<br>Now is the time to select your weapon<br>settings and collect mana!
+OnQuestBegin_1 - By accumulating mana, your ARKS weapons<br>will become stronger and the number of<br>Buster Rams summoned will increase,<br>among other benefits.
+OnDefencePhase1Start0 - Enemy advance confirmed!<br>Collect as much mana as you can while protecting<br>the Buster Tower!
+OnDefencePhase1Start1 - The enemy has restarted their advance!<br>The Buster Tower will heal itself every time you<br>collect a certain amount of mana!
+OnDefencePhase1Start2 - Enemy advance resuming!<br>Collect mana while eliminating hostiles so that the<br>Buster Tower is not damaged!
+OnDefencePhase2Start0 - This is bad! The enemy host has started its<br>assault on the Buster Tower! Back off a bit<br>and focus on defense!
+OnDefencePhase2Start1 - The enemy has resumed its attack! We have <br>broken through the barrier, but we won't win this <br>battle if the Buster Tower is destroyed! Be careful!
+OnDefencePhase3Start0 - We're picking up strong readings from the Castrum <br>Demonica! It appears to be aiming for the Buster <br>Tower! Make sure you don't let it through!
+OnDefencePhase3Start1 - We're picking up more strong readings from the<br>Castrum Demonica...! Prevent the attack on the<br>Castrum Demonica and protect the Buster Tower!
+OnAttackPhase1Start0 - The Buster Ram has been summoned!<br>Guard the Buster Ram from the enemy's<br>attacks and destroy the remaining barrier!
+OnAttackPhase1Start1 - The Buster Ram has been summoned!<br>Guard the Buster Ram from the enemy's<br>attacks and destroy the remaining barrier!
+OnAttackPhase1Start2 - We've summoned the Buster Ram! Now is our <br>chance to break through the enemy barrier!
+OnAttackPhase2Start0 - We've succeeded in destroying the entire barrier!<br>All that's left is to destroy the Castrum Demonica!<br>First, attack the abdominal core!
+OnAttackPhase2Start1 - The Castrum Demonica will periodically fire<br>a laser at the Buster Tower!<br>Destroy the core as quickly as you can!
+OnAttackPhase3Start0_0 - Move to the central bridge via<br>the left or right stairways to attack<br>the Castrum Demonica!
+OnAttackPhase3Start0_1 - The Castrum Demonica is once again firing<br>a powerful laser at fixed intervals!<br>Attack quickly!
+OnAttackPhase3Start1 - Climb the defense structure again and head<br>for the weak points of the Castrum Demonica!
+OnDefencePhase1End0 - The enemy is bearing down on us!<br>Currently summoning the Buster Ram.<br>Get ready to advance while you still can!
+OnDefencePhase1End1 - Summon the Buster Ram and attack the barrier <br>again! Collect mana to increase the number of<br>Buster Rams summoned!
+OnDefencePhase1End2 - Summoning the Buster Ram!<br>Get ready to attack!
+OnAttackPhase1End0 - The Buster Ram has been destroyed and enemy<br>reinforcements have arrived! Shore up the<br>Buster Tower's defenses to prepare for another <br>attack wave!
+OnAttackPhase1End1 - The Buster Ram has been destroyed and more<br>enemy reinforcements have arrived!<br>Shore up the Buster Tower's defenses!
+OnAttackPhase1End2 - The Buster Ram has been completely destroyed <br>and more enemy reinforcements have arrived!<br>Shore up the Buster Tower's defenses!
+OnDefencePhaseEndByTimeOver - The enemy host appears to be altering its strategy!<br>Some enemies are self-destructing!<br>Exercise caution!
+OnDefencePhaseEnemyDecrease0 - The enemy's numbers are dwindling!<br>Now's our chance to steamroll them!
+OnDefencePhaseEnemyDecrease1 - Only a few enemies remain!<br>Shouldn't be long now!
+OnWaveHapping - Something disturbing is happening to the <br>Castrum Demonica! It looks like it's trying <br>to put in place countermeasures!<br>Adapt your strategy as needed!
+OnRamCountIncrease - You have recovered enough mana to increase<br>the number of Buster Rams summoned!<br>Keep collecting mana!
+OnBaseHpDecrease0 - $(0)The Buster Tower has sustained extensive damage!<br>You must move quickly to intervene!
+OnBaseHpDecrease1 - $(0)The Buster Tower isn't going <br>to hold out much longer! Your <br>intervention is urgently required!
+OnBrokenBase0 - The Buster Tower has stopped functioning!<br>There are three left! We aren't in dire straits<br>yet, so keep it together!
+OnBrokenBase1 - The second Buster Tower has stopped functioning!<br>We can't sustain many more losses!<br>Be careful!
+OnBrokenBase2 - The third Buster Tower has stopped functioning!<br>You must protect the sole remaining tower at<br>all costs!
+OnBrokenBase3 - All Buster Towers have been neutralized.<br>Unfortunately, we will not be able to<br>continue the battle.
+OnBossDeadlySkill - We're picking up a supermassive reading from<br>the Castrum Demonica! The base is in<br>grave danger if something isn't done.<br>Do whatever you can to help!
+OnHpGaugeDecrease0 - Damage is spreading through our forces!<br>If we sustain much more damage, there will<br>be no option but to retreat!
+OnHpGaugeDecrease1 - Our forces have sustained massive damage!<br>We can't take much more! Protect the<br>Buster Tower and minimize your damage exposure!
+OnTimeDecrease0 - Only half the allotted time remains!<br>We can win this if we keep up the momentum!<br>Destroy the Castrum Demonica where possible!
+OnTimeDecrease1 - Not much of the allotted battle time remains!<br>We just need to push on for a little longer<br>so don't give up!
+OnSuccessTimeover - Enemy forces are falling back!<br>We managed to secure victory with only<br>minimal losses!
+OnSuccessBreakGauge - Castrum Demonica is annihilated!<br>Victory for us!
+OnSuccessReturn - It is time for you to return home.<br>Thank you for your brave service!
+OnFailureTimeover - The Buster Tower has taken damage.<br>Continuing the battle further will be difficult.<br>Temporary retreat is advised.
+OnFailureAnnihilationBase - All Buster Towers have been disabled...<br>Continuing the battle further will be difficult,<br>so a temporary retreat is advised.
+OnFailureReturn - Unfortunately... we have run out of options.<br>Please return.
+
+

@@ -1,0 +1,63 @@
+ii_ev_js_apc_boss.text was created: 04-07-2026 7:29:11
+Filesize is: 3344 bytes
+
+common
+Group 0
+IncidentName - $(0)撃破
+TrialBeginMsg - パートナーと共闘して<br>$(0)を撃破せよ！
+TrialAbstract - パートナーと共闘して<br>$(0)を撃破せよ！
+
+Group 1
+IncidentName - Defeat $(0)
+TrialBeginMsg - Join forces with your allies to defeat<br>$(0)!
+TrialAbstract - Join forces with your allies to defeat<br>$(0)!
+
+
+type1
+Group 0
+NpcComOnBegin - さらなる敵性反応を確認。<br>引き続き共闘を続行し撃退に<br>努めてください。
+NpcComOnSuccess - /face2 敵性反応の撃退を確認。<br>急な共闘でしたが……<br>素晴らしい結果です。
+NpcComOnFailure - これ以上の交戦は危険です。<br>残念ですがここは一旦引きましょう。
+
+Group 1
+NpcComOnBegin - More hostile readings detected. Continue<br>cooperating to drive them out.
+NpcComOnSuccess - /face2 The hostiles have been repelled. I know you were <br>only thrown together, but what a result!
+NpcComOnFailure - It's dangerous to go on fighting any longer.<br>I'm afraid we'll have to pull back for now.
+
+
+type2
+Group 0
+
+Group 1
+
+
+type3
+Group 0
+
+Group 1
+
+
+type6
+Group 0
+NpcComOnBegin - 敵性反応の発生が継続。<br>協力体制を続行し、出現した<br>敵性存在を撃退してください。
+NpcComOnSuccess - 敵性反応、完全消失。<br>臨時の協力体制ながら<br>見事な立ち回りでした。
+NpcComOnFailure - これ以上の交戦は危険と判断。<br>今は撤退を。
+
+Group 1
+NpcComOnBegin - Enemy forces are still appearing. Partner up and<br>drive them out as you encounter them.
+NpcComOnSuccess - Enemy presence eradicated. Nice job with the<br>impromptu teamwork.
+NpcComOnFailure - We've determined it's too dangerous to carry on.<br>Moving to withdraw.
+
+
+type9
+Group 0
+NpcComOnBegin - 新たな敵性反応を確認！<br>引き続き協力して<br>目標を撃退してください！
+NpcComOnSuccess - お疲れさまです！<br>文句なしの成果ですね！<br>見事な連携だったと思います！
+NpcComOnFailure - これ以上は危険ですね……<br>何事も引き際が肝心です！<br>ここは撤退しましょう！
+
+Group 1
+NpcComOnBegin - New hostile readings detected. Work together to<br>eradicate all targets!
+NpcComOnSuccess - Impressive results! We couldn't have asked for<br>better teamwork!
+NpcComOnFailure - It's too dangerous to go on fighting. Better safe<br>than sorry... Retreat at once!
+
+

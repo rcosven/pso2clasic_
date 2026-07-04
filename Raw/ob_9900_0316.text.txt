@@ -1,0 +1,161 @@
+ob_9900_0316.text was created: 04-07-2026 7:35:00
+Filesize is: 9776 bytes
+
+common
+Group 0
+Name - ディナル
+
+Group 1
+Name - D'nar
+
+
+type1
+Group 0
+Trouble - 火器管制にトラブル発生<br>一時撤退する
+PassMessage - 偵察飛行中
+PassMessage2 - 編隊にて偵察任務中
+DropHelpItem - 救援物資を投下する
+DropEnemy - 物資の中に熱源反応……？
+Shooting - 目標確認、掃射する
+FallMessage - くっ……これ以上の飛行は無理だ！<br>不時着する！
+RequestDefense - 被弾箇所の修理を開始する<br>救援を頼む
+RequestDefense2 - ここで機体を放棄するわけにはいかない<br>修理の間の救援を頼む
+EnemyFront - 前方より敵影。対処を求む
+EnemyRight - 右舷より敵影。対処を求む
+EnemyBack - 後方より敵影。対処を求む
+EnemyLeft - 左舷より敵影。対処を求む
+Broken - 損傷率拡大<br>あまり長くは持たない
+Destroy - 限界か……<br>機体を破棄、脱出する
+SuccessDefence - コントロールの回復を確認<br>救援、感謝する
+EvFallMessage - 出力異常低下!?<br>再着陸する、援護を頼む！
+EvRequestDefense - 損傷が思った以上に大きかったようだ……<br>応急処置を行う、再度の援護を頼む！
+EvBroken - これ以上の損傷はまずい……
+EvDestroy - ここまでか……<br>すまない、機体を破棄する
+EvSuccessDefence - 迷惑をかけた<br>これで大丈夫だ、援護感謝する
+EvDarker - 何！？　制御を奪われた！<br>非常事態につき、脱出する！
+
+Group 1
+Trouble - We're experiencing malfunctions with <br>the firearm control system. <br>Withdrawing for now.
+PassMessage - Commencing recon.
+PassMessage2 - Commencing squadron recon mission.
+DropHelpItem - Dropping relief supplies.
+DropEnemy - We're detecting thermal readings from <br>the supply<br>drop...
+Shooting - Target confirmed. Strafing target.
+FallMessage - We can't stay in the air any longer! Preparing<br>emergency landing!
+RequestDefense - Repairing fighter damage. Requesting backup.
+RequestDefense2 - I can't just abandon my fighter. Requesting<br>cover while I make repairs.
+EnemyFront - Hostiles at twelve o'clock. Requesting backup.
+EnemyRight - Hostiles at three o'clock. Requesting backup.
+EnemyBack - Hostiles on my six. Requesting backup.
+EnemyLeft - Enemies at nine o'clock. Requesting backup.
+Broken - Taking heavy damage. It won't hold <br>much longer.
+Destroy - That's all she can take... Abandoning ship.
+SuccessDefence - We're operational again. Thanks <br>for the backup.
+EvFallMessage - Losing power! Cover me while I land again!
+EvRequestDefense - The damage was worse than I thought... <br>Cover me again while I patch her up.
+EvBroken - Approaching critical damage...
+EvDestroy - End of the line... Commencing <br>self-destruction. Forgive me.
+EvSuccessDefence - Thanks for your help. I'm alright now.<br>Appreciate the backup.
+EvDarker - What!? They've taken control! Emergency!<br>Abandoning ship!
+
+
+type2
+Group 0
+Trouble - 計器類にトラブル発生<br>一旦撤退する
+PassMessage - 敵影捜索中
+PassMessage2 - 偵察編隊飛行中
+DropHelpItem - 救援物資、投下
+DropEnemy - 妙な物資だったな……
+Shooting - ターゲット確認、攻撃開始
+FallMessage - くそ……コントロールが……！<br>不時着する！
+RequestDefense - 急ぎ修理を行う<br>その間の救援を頼む
+RequestDefense2 - ひどい状態だが、まだ直せるはずだ<br>修理の時間を稼いでほしい
+EnemyFront - 前方より敵影。対処を求む
+EnemyRight - 右舷より敵影。対処を求む
+EnemyBack - 後方より敵影。対処を求む
+EnemyLeft - 左舷より敵影。対処を求む
+Broken - 被弾箇所が多すぎる<br>これ以上はもたないぞ
+Destroy - ここまでだな……<br>脱出する
+SuccessDefence - 応急処置が完了した<br>迅速な援護に感謝する
+EvFallMessage - 駆動機関の緊急停止を確認！<br>くそっ、再度不時着する！
+EvRequestDefense - 再度修理を行う<br>応急処置の間だけでいい、援護を頼む
+EvBroken - これ以上の損傷はまずい……
+EvDestroy - ここまでか……<br>すまない、機体を破棄する
+EvSuccessDefence - 迷惑をかけた<br>これで大丈夫だ、援護感謝する
+EvDarker - 何！？　制御を奪われた！<br>非常事態につき、脱出する！
+
+Group 1
+Trouble - My meters are malfunctioning. <br>Pulling out for now.
+PassMessage - Scouting for hostiles.
+PassMessage2 - Commencing squadron recon.
+DropHelpItem - Dropping relief supplies.
+DropEnemy - There was something odd about <br>those supplies...
+Shooting - Target acquired. Commencing fire.
+FallMessage - Dammit, I've lost control! <br>Making an emergency landing!
+RequestDefense - Requesting cover while I do some <br>quick repairs.
+RequestDefense2 - It's some heavy damage, but nothing I can't<br>patch up. Buy me some time, would you?
+EnemyFront - Hostiles at twelve o'clock. Requesting backup.
+EnemyRight - Hostiles at three o'clock. Requesting backup.
+EnemyBack - Hostiles on my six. Requesting backup.
+EnemyLeft - Enemies at nine o'clock. Requesting backup.
+Broken - I've taken too many hits. It won't <br>hold much longer.
+Destroy - That's it for me... Bailing out.
+SuccessDefence - Emergency repairs complete. I appreciate the<br>speedy backup!
+EvFallMessage - Main drive shutting down! <br>Dammit, I'm going down again!
+EvRequestDefense - Doing some repairs. Think you <br>could cover me again?
+EvBroken - Approaching critical damage...
+EvDestroy - End of the line... Commencing <br>self-destruction. Forgive me.
+EvSuccessDefence - Thanks for your help. I'm alright now.<br>Appreciate the backup.
+EvDarker - What!? They've taken control! Emergency!<br>Abandoning ship!
+
+
+type3
+Group 0
+Trouble - 原因不明のトラブルが発生した<br>一時撤退する
+PassMessage - 偵察任務中
+PassMessage2 - 編隊にて敵影捜索中
+DropHelpItem - 救援物資を送る
+DropEnemy - 通常よりも重量があったな……
+Shooting - 目標を確認した
+FallMessage - もう持たない……<br>くそ、不時着する！
+RequestDefense - 応急処置の間、救援を頼む
+RequestDefense2 - また飛べるはずだ……<br>修理の間、援護を頼む
+EnemyFront - 前方より敵影。対処を求む
+EnemyRight - 右舷より敵影。対処を求む
+EnemyBack - 後方より敵影。対処を求む
+EnemyLeft - 左舷より敵影。対処を求む
+Broken - これ以上はもたない<br>至急援護を頼む
+Destroy - ここまでか……<br>脱出する、後は頼む
+SuccessDefence - 間に合わせだが、これで飛べる<br>援護に感謝する
+EvFallMessage - 出力緊急低下……だと！<br>くっ……再度不時着する！
+EvRequestDefense - 間に合わせが祟ったか<br>再処置の間、救援を頼む
+EvBroken - これ以上の損傷はまずい……
+EvDestroy - ここまでか……<br>すまない、機体を破棄する
+EvSuccessDefence - 迷惑をかけた<br>これで大丈夫だ、援護感謝する
+EvDarker - 何！？　制御を奪われた！<br>非常事態につき、脱出する！
+
+Group 1
+Trouble - I've got an unidentified malfunction here.<br>Pulling out for now.
+PassMessage - Recon mission in progress.
+PassMessage2 - Squadron recon in progress.
+DropHelpItem - Sending down relief supplies.
+DropEnemy - That was heavier than usual...
+Shooting - Target acquired.
+FallMessage - I can't hold on any longer... Dammit! <br>Preparing for crash landing!
+RequestDefense - Requesting backup while I make repairs.
+RequestDefense2 - She should still be able to fly... Requesting<br>cover while I patch her up.
+EnemyFront - Hostiles at twelve o'clock. Requesting backup.
+EnemyRight - Hostiles at three o'clock. Requesting backup.
+EnemyBack - Hostiles on my six. Requesting backup.
+EnemyLeft - Enemies at nine o'clock. Requesting backup.
+Broken - I'm on my last legs here. <br>Urgently requesting backup.
+Destroy - They got me... I'm bailing out. Best of luck.
+SuccessDefence - It's a bandage of a fix, but she'll fly. Thanks<br>for the backup.
+EvFallMessage - Losing power! I'm going down again!
+EvRequestDefense - That's what I get for making half-assed <br>repairs. Cover me while I give it another shot.
+EvBroken - Approaching critical damage...
+EvDestroy - End of the line... Commencing <br>self-destruction. Forgive me.
+EvSuccessDefence - Thanks for your help. I'm alright now.<br>Appreciate the backup.
+EvDarker - What!? They've taken control! Emergency!<br>Abandoning ship!
+
+

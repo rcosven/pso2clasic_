@@ -1,0 +1,1327 @@
+ui_myroom.text was created: 04-07-2026 7:32:52
+Filesize is: 73824 bytes
+
+Debug
+Group 0
+MYROOM - マイルーム
+BACKPACK - 所持品
+WAREHOUSE - 倉庫
+INSTALL - 設置する
+USE - 使用する
+PLAY_CUSTOMIZE - カスタマイズする
+CUSTOMIZE_YOUR_ROOM - 部屋をカスタマイズ
+SEND_TO_BACKPACK - 倉庫から所持品へ送る
+SEND_TO_WAREHOUSE - 所持品から倉庫へ送る
+REMOVAL_TO_BACKPACK - 撤去して所持品に送る
+REMOVAL_TO_WAREHOUSE - 撤去して倉庫に送る
+CANCEL - キャンセル
+INSTALLATION_FAILS - 設置できませんでした。<br>以下の原因の可能性があります。<br><br>・アイテムを所持していない<br>・設置するアイテムが不適切
+ERROR_INSTALLED_ITEM - 選択したアイテムがないため設置できません。
+ERROR_USED_ITEM - 選択したアイテムがないため使用できません。
+ERROR_MOVE_BACKPACK - 所持品に預けられませんでした。
+ERROR_MOVE_WAREHOUSE - 倉庫に預けられませんでした。
+REMOVAL_TO_INSTALLED_GOODS - 設置済みのグッズ撤去
+IF_REMOVAL_GOODS - このグッズを撤去しますか?
+GROUNDER_DECO_GOODS - Debugtext020
+GROUND_SKY_CYLINDER - Debugtext021
+ROOM_CHANGED_TEST - Debugtext022
+GROUND_CYLINDER - Debugtext023
+IF_USED_GROUND_CYLINDER - Debugtext024
+ROOM_CUSTMISE - ルームリフォーム
+IF_CHAGE_ROOM - ルーム変更を行いますか?
+ERROR_ITEM_NOT - アイテムがありません
+GRID_ON_OFF - グリッドON/OFF
+REMOVAL_ALL - 全てのグッズを撤去
+CYLINDER_REFORM - Debugtext030
+IF_REMOVAL_ALL_GOODS - 全てのグッズを撤去しますか?
+TITLE_ROOM_CUTMIZE - ルームのリフォーム
+MENU_CENTER - センター:
+MENU_LEFT - レフト:
+MENU_RIGHT - ライト:
+DEFAULT - デフォルト
+NONE - なし
+
+Group 1
+MYROOM - Personal Quarters
+BACKPACK - Inventory
+WAREHOUSE - Storage
+INSTALL - Place
+USE - Use
+PLAY_CUSTOMIZE - Customize
+CUSTOMIZE_YOUR_ROOM - Customize Quarters
+SEND_TO_BACKPACK - Send from Storage to Inventory
+SEND_TO_WAREHOUSE - Send from Inventory to Storage
+REMOVAL_TO_BACKPACK - Remove and Send to Inventory
+REMOVAL_TO_WAREHOUSE - Remove and Send to Storage
+CANCEL - Cancel
+INSTALLATION_FAILS - Unable to place.<br>Potential reasons include:<br><br>- You don't have that item.<br>- The item can't be used here.
+ERROR_INSTALLED_ITEM - The item can't be placed because you don't have it.
+ERROR_USED_ITEM - The item can't be used because you don't have one.
+ERROR_MOVE_BACKPACK - Unable to send to your inventory.
+ERROR_MOVE_WAREHOUSE - Unable to store item in Storage.
+REMOVAL_TO_INSTALLED_GOODS - Remove Placed Furnishings
+IF_REMOVAL_GOODS - Are you sure you want to remove this furnishing?
+GROUNDER_DECO_GOODS - Debugtext020
+GROUND_SKY_CYLINDER - Debugtext021
+ROOM_CHANGED_TEST - Debugtext022
+GROUND_CYLINDER - Debugtext023
+IF_USED_GROUND_CYLINDER - Debugtext024
+ROOM_CUSTMISE - Remodel Quarters
+IF_CHAGE_ROOM - Are you sure you want to change your quarters?
+ERROR_ITEM_NOT - Item doesn't exist.
+GRID_ON_OFF - Show/Hide Grid
+REMOVAL_ALL - Remove All Furnishings
+CYLINDER_REFORM - Debugtext030
+IF_REMOVAL_ALL_GOODS - Are you sure you want to remove all furnishings?
+TITLE_ROOM_CUTMIZE - REMODEL QUARTERS
+MENU_CENTER - Center:
+MENU_LEFT - Left:
+MENU_RIGHT - Right:
+DEFAULT - Default
+NONE - None
+
+
+Goods
+Group 0
+COMBINE - 組み合わせる
+REMOVED - 移動
+DELETE - 削除
+CANCEL - キャンセル
+ERROR_OWNER_NOT - オーナーでないためアクセスできません。
+MoveItem_Title - 報告
+MoveItem_Message - アイテムパックの空き容量不足、<br>またはアイテムの所持可能数を超えるため、<br>入手したアイテムを倉庫に預けました。
+MoveItem_ToastMessage - アイテムパックがいっぱいのため、撤去したルームグッズを倉庫に送りました。
+
+Group 1
+COMBINE - Combine
+REMOVED - Move
+DELETE - Delete
+CANCEL - Cancel
+ERROR_OWNER_NOT - Access is denied because you aren't the owner.
+MoveItem_Title - NOTICE
+MoveItem_Message - The item acquired was deposited into Storage<br>because your inventory is full, or you would<br>exceed your carry limit.
+MoveItem_ToastMessage - The removed furnishing was sent to Storage because your inventory is full.
+
+
+Menu
+Group 0
+MainMenu_Title - マイルームメニュー
+MainMenu_RoomGoods_Installation - ルームグッズ設置
+MainMenu_RoomGoods_Ceiling - 天井用ルームグッズ設置
+MainMenu_RoomCustmize - ルームリフォーム
+MainMenu_MovePass - 引っ越しをする
+MainMenu_BGM - MusicDisc登録
+MainMenu_RoomLock - ルームロック
+MainMenu_LayoutChange - 使用ルーム変更
+MainMenu_DeleteRoomGoodsInSelectRoom - ルームグッズ全撤去
+MainMenu_Cancel - 戻る
+MainMenu_SupportPartner - サポートパートナー
+MainMenu_Craft - クラフト
+MainMenu_EventChronicle - イベントクロニクル
+SelectMenu_Title_RoomGoods - ルームグッズを選択
+SelectMenu_Title_Reform - テーマを選択
+SelectMenu_Title_DeleteRoom - 減築を選択
+SelectMenu_Title_MovePass - シーナリーパスを選択
+SelectMenu_Title_PresentBox - プレゼントするアイテムを選択
+SelectMenu_Title_MusicDisk - MusicDiscを選択
+SelectMenu_Title_Weapon - 武器を選択
+SelectMenu_Backpack - 所持品から選択
+SelectMenu_Warehouse - $(0)から選択
+SelectMenu_DeleteRoom - 減築する
+SelectMenu_RemovalAll - 全て撤去(デバッグ用)
+SelectMenu_Cancel - 戻る
+SelectMenu_Not_Item - アイテムなし
+guide_move - グッズの移動：
+guide_rotation - グッズの回転：
+guide_enter_cancel - 決定 / 戻る：
+guide_enter_vita - 決定：
+guide_cancel_vita - 戻る：
+guide_move_key - ↑↓←→
+guide_move_pad - <%DirectionButton> / <%LStick>
+guide_rotation_key - Ctrl + ← / Ctrl + →
+guide_rotation_pad -  <%TabBack> / <%TabForward>
+guide_enter_cancel_key - <%Decide> / <%Cancel>
+guide_enter_key_vita - <%Decide>
+guide_cancel_key_vita - <%Cancel>
+guide_enter_total_cost - 設置コスト 
+guide_not_key - 使用しない
+ItemList_Title_RoomGoods - ルームグッズ一覧
+ItemList_Title_Reform - リフォームパス一覧
+ItemList_Title_MovePass - シーナリーパス一覧
+ItemList_Title_MusicDisc - MusicDisc一覧
+ItemList_Title_EntryMusic - 登録済BGM一覧
+ItemList_Title_ItemList_Title_DisplayWeapon - 武器一覧
+ItemList_Title_ItemList_Title_DisplayWeaponAvatar - 武器迷彩一覧
+ItemList_Title_ItemList_Title_DecoGoods - デコグッズ一覧
+ItemList_Title_ItemList_Title_PresentBox - プレゼント対象一覧
+ItemList_Title_ItemList_Title_PhotonGachanItemAdd - 登録可能アイテム一覧
+ItemList_Title_ItemList_Title_PhotonGachanItemDelete - 登録済みアイテム一覧
+ItemList_Title_ItemList_Title_Recommended - ラインナップ
+ItemList_Title_Cost - 設置コスト
+ItemList_Title_Add_Current_Max - $(2) (登録数：$(0)/$(1))
+RoomCustmize_Title - ルームリフォーム
+RoomCustmize_header1 - 部屋
+RoomCustmize_header2 - テーマ・コマンド
+RoomCustmize_header3 - サイズ
+RoomCustmize_Reform - リフォームをする
+RoomCustmize_RoomSize - 部屋を増築する
+RoomCustmize_CheckMessage - リフォームすると、設置している<br>全てのルームグッズが撤去されます。<br>よろしいですか?
+RoomCustmize_RoomSize_Middle - スモール
+RoomCustmize_RoomSize_Large - ラージ
+PortalUnit_Title - ポータルユニット
+PortalUnit_Move_Lobby - アークス・ロビーへ移動
+BGMMenu_Title - MusicDisc登録メニュー
+BGMMenu_Entry - MusicDiscを登録
+BGMMenu_Play - 登録済みリストを確認
+BGMMenu_Cancel - 戻る
+Reform_Room_Center - 中央の部屋
+Reform_Room_Left - 左側の部屋
+Reform_Room_Rght - 右側の部屋
+Reform_Room_None - ルーム拡張パスを使用する
+Reform_UseInfo - このリフォームパスを使用しますか?<br>※部屋のサイズが変わらなければ、<br>　 グッズは撤去されません。
+Reform_DeleteRoomInfo - この部屋を削除しますか?<br>※削除した部屋のグッズは<br>　 すべて撤去されます。
+Reform_Playing - リフォーム中
+DeleteRoomGoods_SelectRoom_Playing - 指定した部屋のルームグッズ全て撤去しました
+MovePass_UseInfo - このシーナリーパスを使用しますか?<br>※ルームグッズは撤去されません。
+DeleteRoomGoodsInSelectRoom_UseInfo_Title - ルームグッズ撤去の確認
+DeleteRoomGoodsInSelectRoom_UseInfo - この部屋に設置しているルームグッズを<br>全て撤去しますか?
+RoomSize_Delete - 削除
+ItemList_MenuTitle - アイテム詳細
+ItemList_Install - 設置する
+Custmize_Main_Install - 設置する
+Custmize_Main_Delete - 撤去する
+Custmize_Main_1 - 1番目
+Custmize_Main_2 - 2番目
+Custmize_Main_3 - 3番目
+Custmize_Main_4 - 4番目
+RoomGoodsSelectTitle - ルームグッズの選択
+SelectMenu_Title_EntryMusicDisc - MusicDisc登録
+ItemList_Title_ItemList_Title_PosterBoardGoods - ポスター類一覧
+BGMMenu_Entry_UseInfo - 登録しますか？
+BGMMenu_Entry_UseInfo2 - $(0)を登録しますか？
+
+Group 1
+MainMenu_Title - PERSONAL QUARTERS MENU
+MainMenu_RoomGoods_Installation - Place Furnishings
+MainMenu_RoomGoods_Ceiling - Place Ceiling Furnishings
+MainMenu_RoomCustmize - Remodel Quarters
+MainMenu_MovePass - Move Quarters
+MainMenu_BGM - Music Disc Registration
+MainMenu_RoomLock - Entry Permissions
+MainMenu_LayoutChange - Change Room Used
+MainMenu_DeleteRoomGoodsInSelectRoom - Remove All Furnishings
+MainMenu_Cancel - Back
+MainMenu_SupportPartner - Auxiliaries
+MainMenu_Craft - Crafting
+MainMenu_EventChronicle - Event Chronicle
+SelectMenu_Title_RoomGoods - SELECT FURNISHINGS
+SelectMenu_Title_Reform - SELECT THEME
+SelectMenu_Title_DeleteRoom - SELECT ROOM TO DELETE
+SelectMenu_Title_MovePass - SELECT SCENERY PASS
+SelectMenu_Title_PresentBox - SELECT ITEM TO GIFT
+SelectMenu_Title_MusicDisk - SELECT MUSIC DISC
+SelectMenu_Title_Weapon - SELECT WEAPON
+SelectMenu_Backpack - Select From Inventory
+SelectMenu_Warehouse - Select From $(0)
+SelectMenu_DeleteRoom - Delete Room
+SelectMenu_RemovalAll - Remove All (For Debugging)
+SelectMenu_Cancel - Back
+SelectMenu_Not_Item - No Items
+guide_move - Move Furniture
+guide_rotation - Rotate Furniture
+guide_enter_cancel - Confirm / Back:
+guide_enter_vita - Confirm:
+guide_cancel_vita - Back:
+guide_move_key - ↑↓←→
+guide_move_pad - <%DirectionButton> / <%LStick>
+guide_rotation_key - Ctrl + ← / Ctrl + →
+guide_rotation_pad -  <%TabBack> / <%TabForward>
+guide_enter_cancel_key - <%Decide> / <%Cancel>
+guide_enter_key_vita - <%Decide>
+guide_cancel_key_vita - <%Cancel>
+guide_enter_total_cost - Placement Cost 
+guide_not_key - Not Used
+ItemList_Title_RoomGoods - FURNISHINGS LIST
+ItemList_Title_Reform - REMODELING PASS LIST
+ItemList_Title_MovePass - SCENERY PASS LIST
+ItemList_Title_MusicDisc - MUSIC DISC LIST
+ItemList_Title_EntryMusic - LIST OF MUSIC ADDED
+ItemList_Title_ItemList_Title_DisplayWeapon - WEAPON LIST
+ItemList_Title_ItemList_Title_DisplayWeaponAvatar - WEAPON CAMO LIST
+ItemList_Title_ItemList_Title_DecoGoods - DECORATION LIST
+ItemList_Title_ItemList_Title_PresentBox - GIFT LIST
+ItemList_Title_ItemList_Title_PhotonGachanItemAdd - LIST OF ITEMS THAT CAN BE REGISTERED
+ItemList_Title_ItemList_Title_PhotonGachanItemDelete - REGISTERED ITEM LIST
+ItemList_Title_ItemList_Title_Recommended - FEATURED ITEMS
+ItemList_Title_Cost - PLACEMENT COST
+ItemList_Title_Add_Current_Max - $(2) (REGISTERED: $(0)/$(1))
+RoomCustmize_Title - REMODEL QUARTERS
+RoomCustmize_header1 - Room
+RoomCustmize_header2 - Themes/Commands
+RoomCustmize_header3 - Size
+RoomCustmize_Reform - Remodel
+RoomCustmize_RoomSize - Enlarge Room
+RoomCustmize_CheckMessage - If you remodel, all the furnishings will be removed.<br>Are you sure you want to continue?
+RoomCustmize_RoomSize_Middle - Small
+RoomCustmize_RoomSize_Large - Large
+PortalUnit_Title - PORTAL UNIT
+PortalUnit_Move_Lobby - Go to ARKS Lobby
+BGMMenu_Title - ADD MUSIC DISC MENU
+BGMMenu_Entry - Add Music Disc
+BGMMenu_Play - See List of Added Music
+BGMMenu_Cancel - Back
+Reform_Room_Center - Center Room
+Reform_Room_Left - Left Room
+Reform_Room_Rght - Right Room
+Reform_Room_None - Use Quarters Expansion Pass
+Reform_UseInfo - Are you sure you want to use this remodeling pass?<br>Note: Furnishings won't be removed unless <br>room size is changed.
+Reform_DeleteRoomInfo - Are you sure you want to delete this room?<br>Note: All furnishings in the deleted room will be removed.
+Reform_Playing - Remodeling...
+DeleteRoomGoods_SelectRoom_Playing - All furnishings in the selected room have been removed.
+MovePass_UseInfo - Are you sure you want to use this scenery pass?<br>Note: Furnishings won't be removed.
+DeleteRoomGoodsInSelectRoom_UseInfo_Title - CONFIRM REMOVAL OF FURNISHINGS
+DeleteRoomGoodsInSelectRoom_UseInfo - Remove all of the furnishings in this room?
+RoomSize_Delete - Delete
+ItemList_MenuTitle - ITEM DETAILS
+ItemList_Install - Place
+Custmize_Main_Install - Place
+Custmize_Main_Delete - Remove
+Custmize_Main_1 - No. 1
+Custmize_Main_2 - No. 2
+Custmize_Main_3 - No. 3
+Custmize_Main_4 - No. 4
+RoomGoodsSelectTitle - SELECT FURNISHING
+SelectMenu_Title_EntryMusicDisc - ADD MUSIC DISC
+ItemList_Title_ItemList_Title_PosterBoardGoods - POSTER LIST
+BGMMenu_Entry_UseInfo - Register?
+BGMMenu_Entry_UseInfo2 - Register $(0)?
+
+
+GoodsMenu
+Group 0
+RoomGoods_Action - グッズを動かす
+RoomGoods_Removal - 撤去する
+RoomGoods_Cancel - 戻る
+RoomGoods_Motion_Default - ギミックの実行
+RoomGoods_Motion_SitDown - 座る
+RoomGoods_Motion_Sleeping - 横になる
+RoomGoods_Motion_Darts - ダーツをする
+RoomGoods_Motion_Bathe - 入浴する
+RoomGoods_Motion_Toilet - フタを上げる
+RoomGoods_Motion_Kusudama - 割る
+RoomGoods_Motion_Instrument - 演奏する
+RoomGoods_Motion_SwitchOn - スイッチを押す
+RoomGoods_Motion_Yoga - ヨガをする
+RoomGoods_Motion_Paku - 手を入れる
+RoomGoods_Motion_Barbel - 持ち上げる
+RoomGoods_Motion_Use - 使用する
+RoomGoods_Motion_RiceCakeMaking - 餅をつく
+RoomGoods_Custmize_Gimmick - グッズの組み合わせ
+RoomGoods_Custmize_Remove - 組み合わせの撤去
+RoomGoods_MessageInOut - メッセージの編集
+RoomGoods_PresentBox - $(0)を開ける
+RoomGoods_GoodJob - グッジョブを送る
+RoomGoods_GoodJob_Greeting - あいさつメッセージの編集
+RoomGoods_GoodJob_Thanks - お礼メッセージの編集
+RoomGoods_PlayingBGM - BGMを再生
+RoomGoods_DefaultBGM - BGMをもとに戻す
+RoomGoods_ChangeTune - 曲調を変える
+RoomGoods_DisplayWeapon - 武器を展示する
+RoomGoods_DisplayWeaponInfo - 武器の詳細を見る
+RoomGoods_DisplayWeaponAvatar - 武器迷彩を展示する
+RoomGoods_DisplayWeaponAvatarInfo - 武器迷彩の詳細を見る
+RoomGoods_MyShop - マイショップを起動する
+RoomGoods_Timer - タイマーをセットする
+RoomGoods_GahaRecommended - ラインナップを見る
+RoomGoods_GahaPlay - フォトガチャンを回す
+RoomGoods_GahaManagement - フォトガチャン管理
+RoomGoods_FatChecker - 体重を量る
+RoomGoods_CashBox_Challenge - パスワードを解く
+RoomGoods_CashBox_ChangeNum - 桁数を変える
+RoomGoods_CashBox_Confirmation - 現在の記録を確認する
+RoomGoods_Mikiri_Challenge - 挑戦する
+RoomGoods_Mikiri_Easy - ノーマルモード
+RoomGoods_Mikiri_Normal - ハードモード
+RoomGoods_Mikiri_Hard - ベリーハードモード
+RoomGoods_Mikiri_HiScore - ハイスコアモード
+RoomGoods_Mikiri_CheckRecord - ハイスコアを確認する
+RoomGoods_SupportPartnerStandSet - サポートパートナーを呼び出す
+RoomGoods_SaProjector - シンボルアートを設定する
+RoomGoods_OrgelPlay - オルゴールを鳴らす
+RoomGoods_OrgelStop - オルゴールを止める
+RoomGoods_StrongBoxOpen - 扉を開く
+RoomGoods_StrongBoxClose - 扉を閉じる
+RoomGoods_DiceShake - サイコロを振る
+RoomGoods_DiceEdit - メッセージを編集する
+RoomGoods_BlackBoard - メッセージを確認する
+RoomGoods_CameraShoot - 撮影メニュー
+RoomGoods_CameraSetting - アングル設定
+RoomGoods_CameraGuideShoot - 撮影メニュー：
+RoomGoods_CameraGuideMove01 - カメラ角度：
+RoomGoods_CameraGuideMove02 - カメラ高さ：
+RoomGoods_CameraGuideMove03 - カメラ回転：
+RoomGoods_CameraGuideMove04 - ズーム：
+RoomGoods_CameraGuideReset - カメラリセット：
+RoomGoods_CameraGuideResetVita - カメラリセット：
+RoomGoods_CameraGuideCancel - 戻る：
+RoomGoods_CameraGuideShoot_key - <%Decide>
+RoomGoods_CameraGuideMove01_key - マウス移動
+RoomGoods_CameraGuideMove02_key - <%MoveForward>/<%MoveBack>
+RoomGoods_CameraGuideMove03_key - <%MoveLeft>/<%MoveRight>
+RoomGoods_CameraGuideMove04_key - <%PaletteForce>/<%PaletteReverse>
+RoomGoods_CameraGuideReset_key - <%NextTabDetails>
+RoomGoods_CameraGuideCancel_key - <%Cancel>/Esc
+RoomGoods_CameraGuideShoot_pad - <%Decide>
+RoomGoods_CameraGuideMove01_pad - <%RStick>
+RoomGoods_CameraGuideMove02_pad - <%LStick>(上下)
+RoomGoods_CameraGuideMove03_pad - <%LStick>(左右)
+RoomGoods_CameraGuideMove04_pad - <%PaletteForce>/<%PaletteReverse>
+RoomGoods_CameraGuideReset_pad - <%NextTabDetails>
+RoomGoods_CameraGuideResetVita_pad - <%AllWindowClose>
+RoomGoods_CameraGuideCancel_pad - <%Cancel>
+RoomGoods_RaceMachine_Entry - レースに参加する
+RoomGoods_RoomRunnerRunning - ランニングをする
+RoomGoods_CraftCommonOwner - クラフトメニュー
+RoomGoods_CraftCommonGuest - 発注書を見る
+RoomGoods_CraftOrderOwner - 依頼リストを見る
+RoomGoods_CraftOrderGuest - 発注書を見る
+RoomGoods_Shower - シャワーを浴びる
+RoomGoods_StopShower - シャワーを止める
+RoomGoods_Motion_Hug - ハグハグされる
+RoomGoods_Motion_Ice - 食べる
+RoomGoods_DioramaOn - 破壊演出をONにする
+RoomGoods_DioramaOff - 破壊演出をOFFにする(元に戻す)
+RoomGoods_DioramaBreak - 壊れた状態にする
+RoomGoods_DioramaReset - 元に戻す
+RoomGoods_GolfPlay - 挑戦する
+RoomGoods_GolfScore - ハイスコアを確認する
+RoomGoods_Tanzaku - 短冊の願い事を編集する
+RoomGoods_Access - アクセスする
+RoomGoods_PlayDrum - 楽器を鳴らす
+RoomGoods_DrumpadGuideSnare - スネアドラムを鳴らす
+RoomGoods_DrumpadGuideHighhat - ハイハットシンバルを鳴らす
+RoomGoods_DrumpadGuideHighTam - ハイタムを鳴らす
+RoomGoods_DrumpadGuideLowTom - ロータムを鳴らす
+RoomGoods_DrumpadGuideCymbal - クラッシュシンバルを鳴らす
+RoomGoods_DrumpadGuideDrum - バスドラムを鳴らす
+RoomGoods_DrumpadGuideReturn - 戻る
+RoomGoods_DrumpadGuideSnare_pad - ：<%SubPaletteLeft>
+RoomGoods_DrumpadGuideHighhat_pad - ：<%PaletteReverse>
+RoomGoods_DrumpadGuideHighTam_pad - ：<%SubPaletteRight>
+RoomGoods_DrumpadGuideLowTom_pad - ：<%PhotonArts>
+RoomGoods_DrumpadGuideCymbal_pad - ：<%NormalAttack>
+RoomGoods_DrumpadGuideDrum_pad - ：<%Access>
+RoomGoods_DrumpadGuideReturn_pad - ：<%Cancel>
+RoomGoods_DrumpadGuideSnare_key - [1]キー
+RoomGoods_DrumpadGuideHighhat_key - [2]キー
+RoomGoods_DrumpadGuideHighTam_key - [3]キー
+RoomGoods_DrumpadGuideLowTom_key - [4]キー
+RoomGoods_DrumpadGuideCymbal_key - [5]キー
+RoomGoods_DrumpadGuideDrum_key - [6]キー
+RoomGoods_DrumpadGuideReturn_key - [0]キー
+RoomGoods_DrumpadGuideOr -  or 
+RoomGoods_LightSourceChangeColor - ライトカラーの変更
+RoomGoods_LightSourceInvalid - 通常のライトに戻す
+RoomGoods_Closet - エステへ行く
+
+Group 1
+RoomGoods_Action - Move Furnishings
+RoomGoods_Removal - Remove
+RoomGoods_Cancel - Back
+RoomGoods_Motion_Default - Execute Gimmick
+RoomGoods_Motion_SitDown - Sit
+RoomGoods_Motion_Sleeping - Lie Down
+RoomGoods_Motion_Darts - Play Darts
+RoomGoods_Motion_Bathe - Bathe
+RoomGoods_Motion_Toilet - Raise Toilet Lid
+RoomGoods_Motion_Kusudama - Open
+RoomGoods_Motion_Instrument - Play
+RoomGoods_Motion_SwitchOn - Press Switch
+RoomGoods_Motion_Yoga - Practice Yoga
+RoomGoods_Motion_Paku - Put Hand in Mouth
+RoomGoods_Motion_Barbel - Lift Weights
+RoomGoods_Motion_Use - Use
+RoomGoods_Motion_RiceCakeMaking - Make Mochi
+RoomGoods_Custmize_Gimmick - Combine Furnishings
+RoomGoods_Custmize_Remove - Remove Combined Furnishings
+RoomGoods_MessageInOut - Edit Message
+RoomGoods_PresentBox - Open $(0)
+RoomGoods_GoodJob - Send Kudos
+RoomGoods_GoodJob_Greeting - Edit Greeting
+RoomGoods_GoodJob_Thanks - Edit Thank-You Message
+RoomGoods_PlayingBGM - Play Music
+RoomGoods_DefaultBGM - Reset Music
+RoomGoods_ChangeTune - Change Tune
+RoomGoods_DisplayWeapon - Display Weapon
+RoomGoods_DisplayWeaponInfo - View Weapon Details
+RoomGoods_DisplayWeaponAvatar - Display Weapon Camo
+RoomGoods_DisplayWeaponAvatarInfo - View Weapon Camo Details
+RoomGoods_MyShop - Launch Personal Shop
+RoomGoods_Timer - Set Timer
+RoomGoods_GahaRecommended - View Featured Items
+RoomGoods_GahaPlay - Use Photon Capsule Machine
+RoomGoods_GahaManagement - Manage Photon Capsule Machine
+RoomGoods_FatChecker - Check Weight
+RoomGoods_CashBox_Challenge - Enter Password
+RoomGoods_CashBox_ChangeNum - Change Number of Characters
+RoomGoods_CashBox_Confirmation - See Current Record
+RoomGoods_Mikiri_Challenge - Try It
+RoomGoods_Mikiri_Easy - Normal Mode
+RoomGoods_Mikiri_Normal - Hard Mode
+RoomGoods_Mikiri_Hard - Very Hard Mode
+RoomGoods_Mikiri_HiScore - High Score Mode
+RoomGoods_Mikiri_CheckRecord - Check High Score
+RoomGoods_SupportPartnerStandSet - Summon Auxiliary
+RoomGoods_SaProjector - Set Symbol Art
+RoomGoods_OrgelPlay - Play Music Box
+RoomGoods_OrgelStop - Stop Music Box
+RoomGoods_StrongBoxOpen - Open Door
+RoomGoods_StrongBoxClose - Close Door
+RoomGoods_DiceShake - Roll Dice
+RoomGoods_DiceEdit - Edit Message
+RoomGoods_BlackBoard - View Message
+RoomGoods_CameraShoot - Camera Menu
+RoomGoods_CameraSetting - Set Angle
+RoomGoods_CameraGuideShoot - Camera Menu:
+RoomGoods_CameraGuideMove01 - Camera Angle:
+RoomGoods_CameraGuideMove02 - Camera Height:
+RoomGoods_CameraGuideMove03 - Camera Rotation:
+RoomGoods_CameraGuideMove04 - Zoom:
+RoomGoods_CameraGuideReset - Camera Reset:
+RoomGoods_CameraGuideResetVita - Camera Reset:
+RoomGoods_CameraGuideCancel - Back:
+RoomGoods_CameraGuideShoot_key - <%Decide>
+RoomGoods_CameraGuideMove01_key - Move Mouse
+RoomGoods_CameraGuideMove02_key - <%MoveForward>/<%MoveBack>
+RoomGoods_CameraGuideMove03_key - <%MoveLeft>/<%MoveRight>
+RoomGoods_CameraGuideMove04_key - <%PaletteForce>/<%PaletteReverse>
+RoomGoods_CameraGuideReset_key - <%NextTabDetails>
+RoomGoods_CameraGuideCancel_key - <%Cancel>/Esc
+RoomGoods_CameraGuideShoot_pad - <%Decide>
+RoomGoods_CameraGuideMove01_pad - <%RStick>
+RoomGoods_CameraGuideMove02_pad - <%LStick> (Up/Down)
+RoomGoods_CameraGuideMove03_pad - <%LStick> (Left/Right)
+RoomGoods_CameraGuideMove04_pad - <%PaletteForce>/<%PaletteReverse>
+RoomGoods_CameraGuideReset_pad - <%NextTabDetails>
+RoomGoods_CameraGuideResetVita_pad - <%AllWindowClose>
+RoomGoods_CameraGuideCancel_pad - <%Cancel>
+RoomGoods_RaceMachine_Entry - Enter Race
+RoomGoods_RoomRunnerRunning - Run
+RoomGoods_CraftCommonOwner - Crafting Menu
+RoomGoods_CraftCommonGuest - View Purchase Order
+RoomGoods_CraftOrderOwner - View Craft Request List
+RoomGoods_CraftOrderGuest - View Purchase Order
+RoomGoods_Shower - Take Shower
+RoomGoods_StopShower - Turn Off Shower
+RoomGoods_Motion_Hug - Get a Hug
+RoomGoods_Motion_Ice - Eat
+RoomGoods_DioramaOn - Turn Destruction Animation ON
+RoomGoods_DioramaOff - Turn Destruction Animation OFF (Reset)
+RoomGoods_DioramaBreak - Break
+RoomGoods_DioramaReset - Undo
+RoomGoods_GolfPlay - Try It
+RoomGoods_GolfScore - Check High Score
+RoomGoods_Tanzaku - Edit Wish Paper
+RoomGoods_Access - Access Features
+RoomGoods_PlayDrum - Play Instrument
+RoomGoods_DrumpadGuideSnare - Play Snare Drum
+RoomGoods_DrumpadGuideHighhat - Play High-hat Cymbals
+RoomGoods_DrumpadGuideHighTam - Play High Tom
+RoomGoods_DrumpadGuideLowTom - Play Low Tom
+RoomGoods_DrumpadGuideCymbal - Play Crash Cymbal
+RoomGoods_DrumpadGuideDrum - Play Bass Drum
+RoomGoods_DrumpadGuideReturn - Back
+RoomGoods_DrumpadGuideSnare_pad - : <%SubPaletteLeft>
+RoomGoods_DrumpadGuideHighhat_pad - : <%PaletteReverse>
+RoomGoods_DrumpadGuideHighTam_pad - : <%SubPaletteRight>
+RoomGoods_DrumpadGuideLowTom_pad - : <%PhotonArts>
+RoomGoods_DrumpadGuideCymbal_pad - : <%NormalAttack>
+RoomGoods_DrumpadGuideDrum_pad - : <%Access>
+RoomGoods_DrumpadGuideReturn_pad - : <%Cancel>
+RoomGoods_DrumpadGuideSnare_key - [1] Key
+RoomGoods_DrumpadGuideHighhat_key - [2] Key
+RoomGoods_DrumpadGuideHighTam_key - [3] Key
+RoomGoods_DrumpadGuideLowTom_key - [4] Key
+RoomGoods_DrumpadGuideCymbal_key - [5] Key
+RoomGoods_DrumpadGuideDrum_key - [6] Key
+RoomGoods_DrumpadGuideReturn_key - [0] Key
+RoomGoods_DrumpadGuideOr -  or 
+RoomGoods_LightSourceChangeColor - Change Light Color
+RoomGoods_LightSourceInvalid - Revert to Normal Light
+RoomGoods_Closet - Go to the Salon
+
+
+DecideItemWarning
+Group 0
+PresentBox - プレゼントボックスはそのルームの<br>所有権を持つプレイヤーのみ開ける権利を持ちます。<br>開けられたプレゼントボックスはなくなり、<br>入れられていたアイテムが、開けたプレイヤーに<br>与えられます。<br><br>プレゼントボックスを設置しますか?
+Common - このグッズはそのルームの<br>所有権を持つプレイヤー以外<br>展示する機能を使用できません。<br><br>グッズを設置しますか?
+
+Group 1
+PresentBox - Only the room owner can open a gift box.<br>The item placed inside will be given to the player who<br>opens the gift box, and the box will then disappear.<br><br>Do you want to place a gift box?
+Common - Only the owner of the room can use the display function of this furnishing.<br><br>Do you want to place the furnishing?
+
+
+Room
+Group 0
+ob_1001_0000 - ベーシック・テーマ
+ob_1001_0001 - ベーシック・テーマ
+ob_1002_0000 - モダン・テーマ
+ob_1002_0001 - モダン・テーマ
+ob_1003_0000 - ゴシック・テーマ／Ｒ
+ob_1003_0001 - ゴシック・テーマ／Ｒ
+ob_1004_0000 - クラシック・テーマ
+ob_1004_0001 - クラシック・テーマ
+ob_1005_0000 - ベーシック・テーマ／Ｂ
+ob_1005_0001 - ベーシック・テーマ／Ｂ
+ob_1006_0000 - ベーシック・テーマ／Ｐ
+ob_1006_0001 - ベーシック・テーマ／Ｐ
+ob_1007_0000 - モダン・テーマ／Ｙ
+ob_1007_0001 - モダン・テーマ／Ｙ
+ob_1008_0000 - モダン・テーマ／Ｂ
+ob_1008_0001 - モダン・テーマ／Ｂ
+ob_1009_0000 - ゴシック・テーマ／Ｂ
+ob_1009_0001 - ゴシック・テーマ／Ｂ
+ob_1010_0000 - ゴシック・テーマ
+ob_1010_0001 - ゴシック・テーマ
+ob_1011_0000 - クラシック・テーマ／Ｐ
+ob_1011_0001 - クラシック・テーマ／Ｐ
+ob_1012_0000 - クラシック・テーマ／Ｃ
+ob_1012_0001 - クラシック・テーマ／Ｃ
+ob_1013_0000 - スイーツ・テーマ
+ob_1013_0001 - スイーツ・テーマ
+ob_1014_0000 - スイーツ・テーマ／Ｂ
+ob_1014_0001 - スイーツ・テーマ／Ｂ
+ob_1015_0000 - スイーツ・テーマ／Ｃ
+ob_1015_0001 - スイーツ・テーマ／Ｃ
+ob_1016_0000 - チャイナ・テーマ
+ob_1016_0001 - チャイナ・テーマ
+ob_1017_0000 - チャイナ・テーマ／G
+ob_1017_0001 - チャイナ・テーマ／G
+ob_1018_0000 - チャイナ・テーマ／Ｂ
+ob_1018_0001 - チャイナ・テーマ／Ｂ
+ob_1019_0000 - ウェスタン・テーマ
+ob_1019_0001 - ウェスタン・テーマ
+ob_1020_0000 - ウェスタン・テーマ／Ｂ
+ob_1020_0001 - ウェスタン・テーマ／Ｂ
+ob_1021_0000 - ウェスタン・テーマ／Ｃ
+ob_1021_0001 - ウェスタン・テーマ／Ｃ
+ob_1022_0000 - オリエント・テーマ
+ob_1022_0001 - オリエント・テーマ
+ob_1023_0000 - 予備枠
+ob_1023_0001 - 予備枠
+ob_1024_0000 - 予備枠
+ob_1024_0001 - 予備枠
+ob_1027_0000 - オリエント・テーマ／Ｂ
+ob_1027_0001 - オリエント・テーマ／Ｂ
+ob_1028_0000 - オリエントテーマ／Ｃ
+ob_1028_0001 - オリエントテーマ／Ｃ
+ob_1029_0000 - レトロ・テーマ
+ob_1029_0001 - レトロ・テーマ
+ob_1030_0000 - オールド・テーマ
+ob_1030_0001 - オールド・テーマ
+ob_1031_0000 - ファンシー・テーマ
+ob_1031_0001 - ファンシー・テーマ
+ob_1032_0000 - レトロ・テーマ／G
+ob_1032_0001 - レトロ・テーマ／G
+ob_1033_0000 - レトロ・テーマ／Ｂ
+ob_1033_0001 - レトロ・テーマ／Ｂ
+ob_1034_0000 - オールド・テーマ／Ｂ
+ob_1034_0001 - オールド・テーマ／Ｂ
+ob_1035_0000 - オールド・テーマ／Ｃ
+ob_1035_0001 - オールド・テーマ／Ｃ
+ob_1036_0000 - ファンシー・テーマ／Ｂ
+ob_1036_0001 - ファンシー・テーマ／Ｂ
+ob_1037_0000 - ファンシー・テーマ／Ｃ
+ob_1037_0001 - ファンシー・テーマ／Ｃ
+ob_1038_0000 - ラボラトリー・テーマ
+ob_1038_0001 - ラボラトリー・テーマ
+ob_1039_0000 - ラボラトリー・テーマ
+ob_1039_0001 - ラボラトリー・テーマ
+ob_1040_0000 - ラボラトリー・テーマ
+ob_1040_0001 - ラボラトリー・テーマ
+ob_1041_0000 - エレガント・テーマ
+ob_1041_0001 - エレガント・テーマ
+ob_1042_0000 - エレガント・テーマ／Ｂ
+ob_1042_0001 - エレガント・テーマ／Ｂ
+ob_1043_0000 - ナイトクラブ・テーマ
+ob_1043_0001 - ナイトクラブ・テーマ
+ob_1044_0000 - ナイトクラブ・テーマ／Ｂ
+ob_1044_0001 - ナイトクラブ・テーマ／Ｂ
+ob_1045_0000 - ウッディ・テーマ
+ob_1045_0001 - ウッディ・テーマ
+ob_1046_0000 - ウッディ・テーマ／Ｂ
+ob_1046_0001 - ウッディ・テーマ／Ｂ
+ob_1047_0000 - ガッコ・テーマ
+ob_1047_0001 - ガッコ・テーマ
+ob_1048_0000 - ガッコ・テーマ／Ｂ
+ob_1048_0001 - ガッコ・テーマ／Ｂ
+ob_1049_0000 - リゾート・テーマ
+ob_1049_0001 - リゾート・テーマ
+ob_1050_0000 - 予備枠
+ob_1050_0001 - 予備枠
+ob_1051_0000 - ビンテージ・テーマ
+ob_1051_0001 - ビンテージ・テーマ
+ob_1052_0000 - 予備枠
+ob_1052_0001 - 予備枠
+
+Group 1
+ob_1001_0000 - Basic Theme
+ob_1001_0001 - Basic Theme
+ob_1002_0000 - Modern Theme
+ob_1002_0001 - Modern Theme
+ob_1003_0000 - Gothic Theme R
+ob_1003_0001 - Gothic Theme R
+ob_1004_0000 - Classic Theme
+ob_1004_0001 - Classic Theme
+ob_1005_0000 - Basic Theme B
+ob_1005_0001 - Basic Theme B
+ob_1006_0000 - Basic Theme P
+ob_1006_0001 - Basic Theme P
+ob_1007_0000 - Modern Theme Y
+ob_1007_0001 - Modern Theme Y
+ob_1008_0000 - Modern Theme B
+ob_1008_0001 - Modern Theme B
+ob_1009_0000 - Gothic Theme B
+ob_1009_0001 - Gothic Theme B
+ob_1010_0000 - Gothic Theme
+ob_1010_0001 - Gothic Theme
+ob_1011_0000 - Classic Theme P
+ob_1011_0001 - Classic Theme P
+ob_1012_0000 - Classic Theme C
+ob_1012_0001 - Classic Theme C
+ob_1013_0000 - Sweets Theme
+ob_1013_0001 - Sweets Theme
+ob_1014_0000 - Sweets Theme B
+ob_1014_0001 - Sweets Theme B
+ob_1015_0000 - Sweets Theme C
+ob_1015_0001 - Sweets Theme C
+ob_1016_0000 - Chinese Theme
+ob_1016_0001 - Chinese Theme
+ob_1017_0000 - Chinese Theme G
+ob_1017_0001 - Chinese Theme G
+ob_1018_0000 - Chinese Theme B
+ob_1018_0001 - Chinese Theme B
+ob_1019_0000 - Country Theme
+ob_1019_0001 - Country Theme
+ob_1020_0000 - Country Theme B
+ob_1020_0001 - Country Theme B
+ob_1021_0000 - Country Theme C
+ob_1021_0001 - Country Theme C
+ob_1022_0000 - Japanese Theme
+ob_1022_0001 - Japanese Theme
+ob_1023_0000 - Extra Spot
+ob_1023_0001 - Extra Spot
+ob_1024_0000 - Extra Spot
+ob_1024_0001 - Extra Spot
+ob_1027_0000 - Japanese Theme B
+ob_1027_0001 - Japanese Theme B
+ob_1028_0000 - Japanese Theme C
+ob_1028_0001 - Japanese Theme C
+ob_1029_0000 - Steampunk Theme
+ob_1029_0001 - Steampunk Theme
+ob_1030_0000 - Retro Theme
+ob_1030_0001 - Retro Theme
+ob_1031_0000 - Fancy Theme
+ob_1031_0001 - Fancy Theme
+ob_1032_0000 - Steampunk Theme G
+ob_1032_0001 - Steampunk Theme G
+ob_1033_0000 - Steampunk Theme B
+ob_1033_0001 - Steampunk Theme B
+ob_1034_0000 - Retro Theme B
+ob_1034_0001 - Retro Theme B
+ob_1035_0000 - Retro Theme C
+ob_1035_0001 - Retro Theme C
+ob_1036_0000 - Fancy Theme B
+ob_1036_0001 - Fancy Theme B
+ob_1037_0000 - Fancy Theme C
+ob_1037_0001 - Fancy Theme C
+ob_1038_0000 - Laboratory Theme
+ob_1038_0001 - Laboratory Theme
+ob_1039_0000 - Laboratory Theme
+ob_1039_0001 - Laboratory Theme
+ob_1040_0000 - Laboratory Theme
+ob_1040_0001 - Laboratory Theme
+ob_1041_0000 - Elegant Theme
+ob_1041_0001 - Elegant Theme
+ob_1042_0000 - Elegant Theme B
+ob_1042_0001 - Elegant Theme B
+ob_1043_0000 - Nightclub Theme
+ob_1043_0001 - Nightclub Theme
+ob_1044_0000 - Nightclub Theme B
+ob_1044_0001 - Nightclub Theme B
+ob_1045_0000 - Log Cabin Theme
+ob_1045_0001 - Log Cabin Theme
+ob_1046_0000 - Log Cabin Theme B
+ob_1046_0001 - Log Cabin Theme B
+ob_1047_0000 - School Theme
+ob_1047_0001 - School Theme
+ob_1048_0000 - School Theme B
+ob_1048_0001 - School Theme B
+ob_1049_0000 - Resort Theme
+ob_1049_0001 - Resort Theme
+ob_1050_0000 - Extra Spot
+ob_1050_0001 - Extra Spot
+ob_1051_0000 - Vintage Theme
+ob_1051_0001 - Vintage Theme
+ob_1052_0000 - Extra Spot
+ob_1052_0001 - Extra Spot
+
+
+RoomGoods
+Group 0
+
+Group 1
+
+
+RoomLock
+Group 0
+Title - 入室可能なグループ設定
+If_All_OK - だれでも可能
+If_Friend_Guild_Member - フレンドとチームメンバーのみ可能
+If_Guild_Member - チームメンバーのみ可能
+If_Friend_Member - フレンドのみ可能
+If_All_Not - 非公開（自分のみ入室可能）
+PasswardInfo - 入室パスワードを設定する(16文字以内)
+Enter - 決定
+Enter_Hint - 決定を押すと設定が反映されます
+
+Group 1
+Title - ENTRY PERMISSION SETTINGS
+If_All_OK - Anyone
+If_Friend_Guild_Member - Friends and Alliance Members Only
+If_Guild_Member - Alliance Members Only
+If_Friend_Member - Friends Only
+If_All_Not - Private (Owner Only)
+PasswardInfo - Set Entry Password (16 Characters Max)
+Enter - Confirm
+Enter_Hint - Press [Confirm] to apply your settings.
+
+
+Message
+Group 0
+Title - メッセージを設定できます
+MenuMessage - 表示するメッセージ
+MenuFukidashi - フキダシの形状
+MenuManpu - 表示する漫符
+
+Group 1
+Title - SET OPTIONAL MESSAGE
+MenuMessage - Message to Display
+MenuFukidashi - Balloon Type
+MenuManpu - Emotive Symbols to Display
+
+
+PresentBox
+Group 0
+Title_Edit - プレゼント設定
+MenuItem - アイテムを入れる
+MenuMeseta - メセタを入れる
+Title_Meseta - 金額設定
+Meseta_Message - プレゼントする金額を入力してください
+Result_Title - プレゼントの獲得
+Result_MesseaeItem - プレゼントアイテム<br>$(0)を手に入れました。
+Result_MesseaeMeseta - $(0)メセタを手に入れました。
+Result_None - 何も入っていませんでした。
+Title_Check - プレゼント確認
+Check_MesseaeItem - $(0)を<br>プレゼントボックスに入れます。<br>よろしいですか?
+Check_MesseaeMeseta - $(0)メセタを<br>プレゼントボックスに入れます。<br>よろしいですか?
+Check_MesseaeNone - 空のプレゼントボックスを設置します。<br>よろしいですか？
+
+Group 1
+Title_Edit - GIFT SETTINGS
+MenuItem - Put Item In
+MenuMeseta - Put Meseta In
+Title_Meseta - SET AMOUNT
+Meseta_Message - Enter the amount to gift.
+Result_Title - GIFT RECEIVED
+Result_MesseaeItem - Received $(0)<br>as a gift.
+Result_MesseaeMeseta - Received $(0) meseta.
+Result_None - It was empty.
+Title_Check - CONFIRM GIFT
+Check_MesseaeItem - Are you sure you want to put<br>$(0) in the gift box?
+Check_MesseaeMeseta - Are you sure you want to put<br>$(0) meseta in the gift box?
+Check_MesseaeNone - Are you sure you want to place an empty gift box?
+
+
+TitleBar
+Group 0
+Title - マイルーム端末
+Menu_Main - <c f0df60>ルームグッズを設置したり、ルームリフォーム（テーマ変更や部屋の増改築）、引っ越し、ルームロック設定が可能です。<c>
+Menu_Main_v - <c f0df60>ルームグッズを設置したり、ルームリフォーム（テーマ変更や部屋の増改築）、などが可能です。<c>
+Menu_RoomGoods - <c f0df60>ルームグッズを選択し、設置できます。設置時は、アイテム詳細の「必要コスト」と「サイズ」をご確認ください。<c>
+Menu_RoomGoods_v - <c f0df60>ルームグッズを選択し、設置できます。<c><pict Sign_TRIANGLE><c ffa500>で倉庫アイコンと装備不可アイコンを切り替えます。<c>
+Menu_RoomSelect - <c f0df60>リフォームする部屋を選択してください。部屋の増改築には「テーマ」系か、「リモデルーム」系のリフォーム用パスが必要です。<c>
+Menu_RoomSelect_v - <c f0df60>リフォームする部屋を選択してください。<c>
+Menu_Reform - <c f0df60>部屋のテーマ変更には「テーマ」系、サイズ変更には「リモデルーム」系パスが必要です。増築にはどちらのパスも使用できます。<c>
+Menu_Reform_v - <c f0df60>部屋のテーマ変更には「テーマ」系、サイズ変更には「リモデルーム」系パスが必要です。<c>
+Menu_MovePass - <c f0df60>引っ越し先のシーナリーパスを選択してください。（シーナリーパスは、スクラッチなどで入手可能です）<c>
+Menu_BGM - <c f0df60>持っているMusicDiscから、BGMを登録できます。登録したBGMは、ルームグッズ「ジュークボックス」で再生できます。<c>
+Menu_BGMEntry - <c f0df60>所持しているMusicDiscをBGMとして登録することができます。登録したいMusicDiscを選択してください。<c>
+Menu_BGMCheck - <c f0df60>マイルームで再生されているBGMを変更することができます。再生したいBGMを選択してください。<c>
+Menu_RoomLock - <c f0df60>ルームロック（入室制限）を設定できます。この部屋に入室可能なグループを選択してください。<c>
+Menu_PresentBoxMain - <c f0df60>プレゼントボックスにアイテムか、メセタを入れることができます。<c>
+Menu_PresentBoxItem - <c f0df60>プレゼントボックスに入れるアイテムを選択してください。<c>
+Menu_PresentBoxMeseta - <c f0df60>プレゼントボックスに入れるメセタを所持金から設定してください。<c>
+Menu_WeaponDisplay - <c f0df60>所持している武器のホログラムを展示します。展示する武器を選択してください。<c>
+Menu_WeaponDisplayInfo - <c f0df60>展示されている武器の詳細を確認します。<c>
+Menu_WeaponAvatarDisplay - <c f0df60>所持している武器迷彩のホログラムを展示します。展示する武器を選択してください。<c>
+Menu_WeaponAvatarDisplayInfo - <c f0df60>展示されている武器迷彩の詳細を確認します。<c>
+Menu_RoomGoodsAccess - <c f0df60>ルームグッズの機能を利用できます。また、マイルームの持ち主はルームグッズの移動、撤去を行うことができます。<c>
+Menu_RoomGoodsAccess_v - <c f0df61>ルームグッズの機能を利用できます。マイルームの持ち主は移動、撤去を行うことができます。<c>
+Menu_DecoGoods - <c f0df60>選択した箇所に1×1のルームグッズを設置することができます。設置したいルームグッズを選択してください。<c>
+Menu_DecoGoods_v - <c f0df60>選択した箇所に1×1のルームグッズを設置できます。ルームグッズを選択してください。<c>
+Menu_Message - <c f0df60>ルームグッズから表示されるメッセージを設定できます。<c>
+Menu_GoodJob - <c f0df60>このマイルームの持ち主にグッジョブを送ります。<c>
+Menu_GoodJob_Greeting - <c f0df60>グッジョブカウンターに近づいた際に表示されるメッセージを設定できます。<c>
+Menu_GoodJob_Thanks - <c f0df60>グッジョブしてくれた際に表示されるメッセージを設定できます。<c>
+Menu_SetTimer - <c f0df60>タイマーをセットすると、数分後メッセージが発動します<c>
+Menu_PhotoGachan_Line_Up - <c f0df60>フォトガチャンに登録されている景品を確認します。<c>
+Menu_PhotoGachan_Play - <c f0df60>フォトガチャンを１回プレイします。<c>
+Menu_PhotoGachan_Management - <c f0df60>フォトガチャンの設定を変更します。<c>
+Menu_Ceilling_RoomSelect - <c f0df60>天井に設置するため、設置したい部屋を選択します<c>
+Menu_Ceilling_SetPointSelect - <c f0df60>設置ポイントを指定し、設置場所を選択・撤去を行います<c>
+Menu_Symbolart - <c f0df60>ルームグッズから表示されるシンボルアートを設定できます。<c>
+Menu_LayoutChange - <c f0df60>マイルームのレイアウトを入れ替えます<c>
+Menu_DeleteRoomGoods_SelectRoom - <c f0df60>ルームグッズの全撤去を行う部屋を選択します<c>
+Menu_SupportPartnerList - <c f0df60>サポートパートナー一覧を表示します<c>
+Menu_Dice - <c f0df60>メッセージを編集します<c>
+Menu_Explain_Order - <c f0df60>あなたが受注しているオーダーの一部を手伝わせることができます。あと <c ff4f3f>$(0)件<c f0df60> 選択できます。<c>
+Menu_Explain_Status - <c f0df60>サポートパートナーのステータスや装備情報を確認できます。<c>
+Menu_Camera_Shoot - <c f0df60>撮影を行うまでの時間を指定できます。タイマー中はマイルームグッズにアクセスすることはできません。<c>
+Menu_PhotoGachanMain - <c f0df60>「オススメアイテムを見る」に表示するアイテムを3つまで選択することができます。<c>
+Menu_CloseoutMoment - <c f0df60>合図に合わせて素早く<c><%Access><c f0df60>を押すゲームをプレイします。ハイスコアモードは最高タイムとの勝負になります。<c>
+Menu_Craft - <c f0df60>依頼リストの確認や、看板の設定が可能です。<c>
+Menu_EventChronicle - <c f0df60>イベントの確認が行えます。<c>
+Menu_Tanzaku - <c f0df60>短冊の願い事を編集します<c>
+Menu_PosterBoard - <c f0df60>ポスター類のルームグッズを設置することができます。ルームグッズを選択してください。<c>
+Menu_PosterBoard_v - <c f0df60>ポスター類のルームグッズを設置することができます。ルームグッズを選択してください。<c>
+
+Group 1
+Title - PERSONAL TERMINAL
+Menu_Main - <c f0df60>Place furnishings, remodel (change themes or add rooms), move, or set entry permissions.<c>
+Menu_Main_v - <c f0df60>Place furnishings or remodel (change themes or add rooms).<c>
+Menu_RoomGoods - <c f0df60>Select and place furnishings. Check the placement cost and size under [Item Details] before placement.<c>
+Menu_RoomGoods_v - <c f0df60>Select and place furnishings.<c> <c ffa500>Toggle between the Storage icon and Unequippable icon with <pict Sign_TRIANGLE>.<c>
+Menu_RoomSelect - <c f0df60>Select the room to remodel. To add or remodel rooms, you must have a Theme-type or Remodel Room-type Remodeling Pass.<c>
+Menu_RoomSelect_v - <c f0df60>Select the room to remodel.<c>
+Menu_Reform - <c f0df60>To change theme, use a Theme-type Remodeling Pass. To change size, use a Remodel Room-type Pass. You can use either pass type to add a room.<c>
+Menu_Reform_v - <c f0df60>To change theme, you need a Theme-type Remodeling Pass. To change size, you need a Remodel Room-type Pass.<c>
+Menu_MovePass - <c f0df60>Select a scenery pass for the place you want to move to. (You can get scenery passes through scratch tickets, etc.)<c>
+Menu_BGM - <c f0df60>You can add music from your Music Discs. Added music can be played on the jukebox.<c>
+Menu_BGMEntry - <c f0df60>You can add music from your Music Discs. Select the Music Disc you want to add.<c>
+Menu_BGMCheck - <c f0df60>You can change the music that plays in your quarters. Select the music you want to play.<c>
+Menu_RoomLock - <c f0df60>Change the entry permissions for your quarters. Select who you want to allow.<c>
+Menu_PresentBoxMain - <c f0df60>You can place items or meseta in gift boxes.<c>
+Menu_PresentBoxItem - <c f0df60>Select the item you want to place in the gift box.<c>
+Menu_PresentBoxMeseta - <c f0df60>Select how much meseta you want to place in the gift box.<c>
+Menu_WeaponDisplay - <c f0df60>Display holograms of your weapons. Select weapons to display.<c>
+Menu_WeaponDisplayInfo - <c f0df60>View details of the displayed weapons.<c>
+Menu_WeaponAvatarDisplay - <c f0df60>Display holograms of your weapon camos. Select weapons to display.<c>
+Menu_WeaponAvatarDisplayInfo - <c f0df60>View details of the displayed weapon camos.<c>
+Menu_RoomGoodsAccess - <c f0df60>Access features of the furnishings. The owner of the Personal Quarters can also move and remove furnishings here.<c>
+Menu_RoomGoodsAccess_v - <c f0df61>Access features of the furnishings. The owner of the Personal Quarters can also move and remove furnishings here.<c>
+Menu_DecoGoods - <c f0df60>Place a 1 x 1 furnishing in the selected location. Select the furnishing to place.<c>
+Menu_DecoGoods_v - <c f0df60>Place a 1 x 1 furnishing in the selected location. Select the furnishing.<c>
+Menu_Message - <c f0df60>Enter a message to be displayed on furnishings.<c>
+Menu_GoodJob - <c f0df60>Send Kudos to the owner of these quarters.<c>
+Menu_GoodJob_Greeting - <c f0df60>Enter a message to be displayed when a player approaches the Kudos counter.<c>
+Menu_GoodJob_Thanks - <c f0df60>Enter a message to be displayed when you receive Kudos.<c>
+Menu_SetTimer - <c f0df60>Set a timer to display a message after several minutes.<c>
+Menu_PhotoGachan_Line_Up - <c f0df60>Check out the prizes in the Photon Capsule Machine.<c>
+Menu_PhotoGachan_Play - <c f0df60>Use the Photon Capsule Machine once.<c>
+Menu_PhotoGachan_Management - <c f0df60>Change the Photon Capsule Machine settings.<c>
+Menu_Ceilling_RoomSelect - <c f0df60>Select the room in which you would like to place ceiling furnishings.<c>
+Menu_Ceilling_SetPointSelect - <c f0df60>Designate the placement point, or remove furnishings.<c>
+Menu_Symbolart - <c f0df60>Enter Symbol Art to be displayed on furnishings.<c>
+Menu_LayoutChange - <c f0df60>Change the layout of your quarters.<c>
+Menu_DeleteRoomGoods_SelectRoom - <c f0df60>Select the room you want to remove all furnishings from.<c>
+Menu_SupportPartnerList - <c f0df60>Display the Auxiliary List.<c>
+Menu_Dice - <c f0df60>Edit message.<c>
+Menu_Explain_Order - <c f0df60>Your Auxiliary can help you with a portion of the orders you have accepted. You can select <c ff4f3f>$(0)<c f0df60> more orders.<c>
+Menu_Explain_Status - <c f0df60>Allows you to check your Auxiliary's stats and equipment.<c>
+Menu_Camera_Shoot - <c f0df60>Set how much time will pass before a photo is taken. Players can't access furnishings while the timer is in progress.<c>
+Menu_PhotoGachanMain - <c f0df60>Set up to 3 items to display under [View Featured Items].<c>
+Menu_CloseoutMoment - <c f0df60>Here, you can play a game in which you press <c><%Access><c f0df60> according to cues. In High Score Mode, you'll compete to top the record high score.<c>
+Menu_Craft - <c f0df60>Check the Craft Request List and edit banner settings.<c>
+Menu_EventChronicle - <c f0df60>Check event.<c>
+Menu_Tanzaku - <c f0df60>Edit wish paper.<c>
+Menu_PosterBoard - <c f0df60>You can place poster-type furnishings. Please make a selection.<c>
+Menu_PosterBoard_v - <c f0df60>You can place poster-type furnishings. Please make a selection.<c>
+
+
+SetTimer
+Group 0
+Title - タイマーのセット
+Menu_Select01 - 1分
+Menu_Select02 - 3分
+Menu_Select03 - 5分
+Menu_Cancel - キャンセル
+Info_SetTimer - サーバー時間$(0)時$(1)分$(2)秒にセットしました。
+Info_TimeUp - $(0)分経過！
+Info_ClockPickUp - 只今、$(0)時になりました。
+
+Group 1
+Title - SET TIMER
+Menu_Select01 - 1 Minute
+Menu_Select02 - 3 Minutes
+Menu_Select03 - 5 Minutes
+Menu_Cancel - Cancel
+Info_SetTimer - Server time has been set to $(0):$(1):$(2).
+Info_TimeUp - $(0) minutes have passed!
+Info_ClockPickUp - It is currently $(0).
+
+
+PhotonGacha
+Group 0
+Cancel - 戻る
+ItemAdd - アイテムの追加
+ItemDelete - アイテムの取り下げ
+MesetaEdit - 価格設定
+PlayInfo_Title - フォトガチャンを回す
+PlayInfo - フォトガチャン１回$(0)メセタです。<br>回しますか？<br>あなたの現在の所持金は<br>$(1)メセタです。
+GetItem - $(0)を手に入れました。
+ErrorItemMax - 倉庫が一杯で空き容量がありません。
+AddSetItem - $(0)を追加しました。
+DeleteSetItem - $(0)を取り下げました。
+EditMesetaInfo - フォトガチャン１回の価格を設定してください。<br>※最低価格未満には変更できません。<br>（税込価格： $(1)$(0)）
+Title_Check - 確認
+Check_Title - 確認
+EmptyItem - 未登録
+Check_AddItem_Message - $(0)を<br>フォトガチャンに追加します。<br>よろしいですか?
+Check_Delete_Message - $(0)を<br>フォトガチャンから取り下げます。<br>よろしいですか?
+AddIten_ResultMessage - $(0)を追加しました。<br><br>フォトガチャンの売り上げは、<br>ビジフォンのマイショップから<br>マイショップ管理　＞ 売り上げ確認より、<br>受け取ることができます。
+DeleteIten_ResultMessage - $(0)を取り下げました。
+GetIten_ResultTtile - フォトガチャンの結果
+GetIten_ResultMessage - $(0)を手に入れました。
+MoveItem_Title - 報告
+MoveItem_Message - アイテムパックの空き容量不足、<br>またはアイテムの所持可能数を超えるため、<br>入手したアイテムを倉庫に預けました。
+
+Group 1
+Cancel - Back
+ItemAdd - Add Item
+ItemDelete - Remove Item
+MesetaEdit - Set Price
+PlayInfo_Title - USE PHOTON CAPSULE MACHINE
+PlayInfo - It costs $(0) meseta to use the Photon Capsule Machine once.<br>Do you want to use it?<br>You currently have<br>$(1) meseta.
+GetItem - Received $(0).
+ErrorItemMax - Storage is full.
+AddSetItem - Added $(0).
+DeleteSetItem - Removed $(0).
+EditMesetaInfo - Sets price for the Photon Capsule Machine (1 Roll).<br>Note: Can't be less than the minimum price set.<br>(Tax-Inclusive Price: $(1) $(0))
+Title_Check - CONFIRM
+Check_Title - CONFIRM
+EmptyItem - Unregistered
+Check_AddItem_Message - You are about to add $(0) to the Photon Capsule<br>Machine.<br>Are you sure you wish to proceed?
+Check_Delete_Message - You are about to remove $(0) from the Photon<br>Capsule Machine.<br>Are you sure you wish to proceed?
+AddIten_ResultMessage - Added $(0).<br><br>You can receive proceeds from the Photon Capsule<br>Machine from the Visiphone Personal Shop, under<br>[Manage Personal Shop] > [View Sales].
+DeleteIten_ResultMessage - Removed $(0).
+GetIten_ResultTtile - Photon Capsule Machine Results
+GetIten_ResultMessage - Received $(0).
+MoveItem_Title - NOTICE
+MoveItem_Message - The item acquired was deposited into Storage<br>because your inventory is full, or you would <br>exceed your carry limit.
+
+
+Ceilling
+Group 0
+Title - ルームグッズ天井設置
+Title_Left - ポイント
+Title_Right - ルームグッズ
+MenuPoint1 - 設置ポイント1
+MenuPoint2 - 設置ポイント2
+MenuPoint3 - 設置ポイント3
+MenuPoint4 - 設置ポイント4
+None - なし
+Select_Set - グッズを設置する
+Select_Delete - 撤去する
+
+Group 1
+Title - PLACE CEILING FURNISHINGS
+Title_Left - POINTS
+Title_Right - FURNISHINGS
+MenuPoint1 - Placement Point 1
+MenuPoint2 - Placement Point 2
+MenuPoint3 - Placement Point 3
+MenuPoint4 - Placement Point 4
+None - None
+Select_Set - Place Furnishings
+Select_Delete - Remove
+
+
+JukeBox
+Group 0
+Adaptive_Tune0 - チューンA
+Adaptive_Tune1 - チューンB
+Adaptive_Tune2 - チューンC
+Adaptive_Tune3 - チューンD
+Adaptive_Tune4 - チューンE
+Adaptive_Tune5 - チューンF
+Adaptive_Tune6 - チューンG
+Adaptive_Tune7 - チューンH
+Adaptive_Tune8 - チューンI
+Adaptive_Tune9 - チューンJ
+Adaptive_Tune10 - チューンK
+Adaptive_Tune11 - チューンL
+Adaptive_Tune12 - チューンM
+Adaptive_Tune13 - チューンN
+Adaptive_Tune14 - チューンO
+Adaptive_Tune15 - チューンP
+Adaptive_Tune16 - チューンQ
+Adaptive_Tune17 - チューンR
+Adaptive_Tune18 - チューンS
+Adaptive_Tune19 - チューンT
+Adaptive_Tune20 - チューンU
+Adaptive_Tune21 - チューンV
+Adaptive_Tune22 - チューンW
+Adaptive_Tune23 - チューンX
+Adaptive_Tune24 - チューンY
+Adaptive_Tune25 - チューンZ
+Entry_BGM - を登録しました。
+Empty_BGM - 登録されたBGMがありません
+Tab_Category_0 - ０．すべて
+Tab_Category_1 - １．『PSO』シリーズ
+Tab_Category_2 - ２．『ファンタシースター』シリーズ
+Tab_Category_3 - ３．セガコラボ
+Tab_Category_4 - ４．コラボ
+Tab_Category_5 - ５．『NGS』シリーズ
+Mag_Jukebox_Play_019 - 選択したミュージックディスクは、『NGS』ブロックでのみ再生ができます
+
+Group 1
+Adaptive_Tune0 - Tune A
+Adaptive_Tune1 - Tune B
+Adaptive_Tune2 - Tune C
+Adaptive_Tune3 - Tune D
+Adaptive_Tune4 - Tune E
+Adaptive_Tune5 - Tune F
+Adaptive_Tune6 - Tune G
+Adaptive_Tune7 - Tune H
+Adaptive_Tune8 - Tune I
+Adaptive_Tune9 - Tune J
+Adaptive_Tune10 - Tune K
+Adaptive_Tune11 - Tune L
+Adaptive_Tune12 - Tune M
+Adaptive_Tune13 - Tune N
+Adaptive_Tune14 - Tune O
+Adaptive_Tune15 - Tune P
+Adaptive_Tune16 - Tune Q
+Adaptive_Tune17 - Tune R
+Adaptive_Tune18 - Tune S
+Adaptive_Tune19 - Tune T
+Adaptive_Tune20 - Tune U
+Adaptive_Tune21 - Tune V
+Adaptive_Tune22 - Tune W
+Adaptive_Tune23 - Tune X
+Adaptive_Tune24 - Tune Y
+Adaptive_Tune25 - Tune Z
+Entry_BGM - Added.
+Empty_BGM - No Music Added
+Tab_Category_0 - 0. All
+Tab_Category_1 - 1. "PSO" Series
+Tab_Category_2 - 2. "Phantasy Star" Series
+Tab_Category_3 - 3. SEGA Crossover
+Tab_Category_4 - 4. Crossover
+Tab_Category_5 - 5. "NGS" Series
+Mag_Jukebox_Play_019 - The selected music disc can only be played in NGS Blocks.
+
+
+LayoutChange
+Group 0
+LayoutChangeCheckTitle - 使用ルームの変更確認
+LayoutChecge_MenuBase - マイルーム レイアウト$(0)<pict Arcscash>
+LayoutChecge_MenuBase2 - マイルーム レイアウト$(0)
+LayoutChecge_Pattern_0 - ミニルーム
+LayoutChecge_Pattern_1 - A
+LayoutChecge_Pattern_2 - B
+LayoutChecge_CheckInfo - マイルームのレイアウトを<br>「$(0)」に変更します。<br>よろしいですか?
+LayoutChecge_IfMyRoom - 「マイルーム利用」有効期間内です。（マイルーム端末で「使用ルーム変更」可能）
+
+Group 1
+LayoutChangeCheckTitle - CONFIRM ROOM CHANGE
+LayoutChecge_MenuBase - Personal Quarters Layout $(0) <pict Arcscash>
+LayoutChecge_MenuBase2 - Personal Quarters Layout $(0)
+LayoutChecge_Pattern_0 - Mini-Room
+LayoutChecge_Pattern_1 - A
+LayoutChecge_Pattern_2 - B
+LayoutChecge_CheckInfo - You are about to change the layout of<br>your Personal Quarters to $(0).<br>Are you sure you wish to proceed?
+LayoutChecge_IfMyRoom - [Right to Use Personal Quarters] still in effect. (You can use the Personal Terminal to change the layout.)
+
+
+FatChecker
+Group 0
+Info_Weight - $(0)の体重は$(1)です。
+
+Group 1
+Info_Weight - $(0) weighs $(1).
+
+
+StrongBox
+Group 0
+StrongBox_Input - パスワードを入力してください。
+StrongBox_PinCode - パスワードは、$(0)に設定されました。
+StrongBox_PinCodeTitle - パスワード確認
+
+Group 1
+StrongBox_Input - Please enter the password.
+StrongBox_PinCode - The password has been set to [$(0)].
+StrongBox_PinCodeTitle - CONFIRM PASSWORD
+
+
+CashBox
+Group 0
+CashBox_Num4 - 4桁
+CashBox_Num5 - 5桁
+CashBox_Num6 - 6桁
+CashBox_Num7 - 7桁
+CashBox_Num8 - 8桁
+CashBox_Num9 - 9桁
+CashBox_InputNum - 設定されているパスワードを予想し入力してください。<br>外れると当たりの数と桁違いの数がヒントとして<br>表示されます。
+CashBox_ChangeDigit - 設定が変更されました。
+
+Group 1
+CashBox_Num4 - 4 Characters
+CashBox_Num5 - 5 Characters
+CashBox_Num6 - 6 Characters
+CashBox_Num7 - 7 Characters
+CashBox_Num8 - 8 Characters
+CashBox_Num9 - 9 Characters
+CashBox_InputNum - Please guess the password. If your guess is incorrect, the number of <br>characters correct or incorrect will be displayed as a hint.
+CashBox_ChangeDigit - Settings have been changed.
+
+
+SupportPartner
+Group 0
+SelectSP_Title - パートナー選択
+SelectSP_Cancel - 戻る
+SetSP - $(0)を呼び出しました。
+Error_NotSP - サポートパートナーを取得していないため、<br>呼び出すことができません。
+
+Group 1
+SelectSP_Title - SELECT AUXILIARY
+SelectSP_Cancel - Back
+SetSP - $(0) has been summoned.
+Error_NotSP - Unable to summon Auxiliary<br>because you don't have one.
+
+
+Dice
+Group 0
+Dice_Text_Title - メッセージを編集する
+Enter - 決定
+Cancel - キャンセル
+DiceMenu_Title - サイコロトップメニュー
+DiceMenu_Play - サイコロを振る
+DiceMenu_Edit - メッセージを編集する
+DiceMenu_Move - グッズを動かす
+DiceMenu_Remove - 撤去する
+DiceMenu_Back - 戻る
+
+Group 1
+Dice_Text_Title - EDIT MESSAGE
+Enter - OK
+Cancel - Cancel
+DiceMenu_Title - DICE TOP MENU
+DiceMenu_Play - Roll Dice
+DiceMenu_Edit - Edit Message
+DiceMenu_Move - Move Furnishings
+DiceMenu_Remove - Remove
+DiceMenu_Back - Back
+
+
+Shower
+Group 0
+Shower_1_1 - 水量を少なめに設定する
+Shower_1_2 - 水量を普通に設定する
+Shower_1_3 - 水量を多めに設定する
+Shower_2_1 - 水温を低く設定する
+Shower_2_2 - 水温を普通に設定する
+Shower_2_3 - 水温を高く設定する
+ShowerTitle_1 - 水量調節
+ShowerTitle_2 - 水温調節
+
+Group 1
+Shower_1_1 - Set Water Volume to Low
+Shower_1_2 - Set Water Volume to Normal
+Shower_1_3 - Set Water Volume to High
+Shower_2_1 - Set Water Temperature to Low
+Shower_2_2 - Set Water Temperature to Normal
+Shower_2_3 - Set Water Temperature to High
+ShowerTitle_1 - WATER VOLUME
+ShowerTitle_2 - WATER TEMPERATURE
+
+
+Camera
+Group 0
+Timer_1 - すぐに撮影
+Timer_2 - 5秒後に撮影
+Timer_3 - 10秒後に撮影
+Timer_4 - 15秒後に撮影
+Back - 戻る
+ErrorShootTitle - 撮影エラー
+ErrorShootMessage - 既に撮影中です。
+ErrorSettingTitle - 撮影エラー
+ErrorSettingMessage - 撮影中のため、<br>設定を変更できませんでした。
+TimerTitle - 撮影メニュー
+
+Group 1
+Timer_1 - Record Now
+Timer_2 - Record in 5 Seconds
+Timer_3 - Record in 10 Seconds
+Timer_4 - Record in 15 Seconds
+Back - Back
+ErrorShootTitle - RECORDING ERROR
+ErrorShootMessage - Already recording.
+ErrorSettingTitle - RECORDING ERROR
+ErrorSettingMessage - Unable to change settings.<br>Recording already in progress.
+TimerTitle - CAMERA MENU
+
+
+Orgel
+Group 0
+OrgelOn - オルゴールが鳴り出しました。
+OrgelOff - オルゴールを止めました。
+
+Group 1
+OrgelOn - The music box is playing.
+OrgelOff - The music box stopped playing.
+
+
+Golf
+Group 0
+KeyAssign - <%NormalAttack>でアタック
+PlayResult - 貴方の飛距離は$(0)
+PlayResultRecord - /toge 最高飛距離が更新されました。<br>貴方の飛距離は$(0)
+PlayResultFailed - /moya 只今の飛距離は失敗の為<br>計測できませんでした。
+HighScoreExistRecord - 現在の最高飛距離：$(0)<br>現在の最高飛距離保持者：<br>$(1)
+HighScoreEmptyRecord - 現在の最高飛距離の記録はありません
+HitEarly - ちょっと早いよ
+HitLate - ちょっと遅いよ
+
+Group 1
+KeyAssign - <%NormalAttack> to Attack
+PlayResult - Your drive had a carry of $(0).
+PlayResultRecord - /toge Your record drive has been updated.<br>Your drive had a carry of $(0).
+PlayResultFailed - /moya Unable to measure distance because<br>your drive failed.
+HighScoreExistRecord - Current Record Drive: $(0)<br>Current Record Holder:<br>$(1)
+HighScoreEmptyRecord - Currently, there is no record drive.
+HitEarly - A Bit Early
+HitLate - A Bit Late
+
+
+paper_strips
+Group 0
+Paper_Strips_Text_Title - 短冊の願い事を編集する
+Enter - 決定
+Cancel - キャンセル
+
+Group 1
+Paper_Strips_Text_Title - EDIT WISH PAPER
+Enter - Confirm
+Cancel - Cancel
+
+
+LightSource
+Group 0
+ColorPickerTitle - カラー調整
+
+Group 1
+ColorPickerTitle - ADJUST COLOR
+
+

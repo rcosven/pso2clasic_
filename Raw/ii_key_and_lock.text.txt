@@ -1,0 +1,65 @@
+ii_key_and_lock.text was created: 04-07-2026 7:29:11
+Filesize is: 4928 bytes
+
+common
+Group 0
+IncidentName - 障壁解除
+LogPickupKey - $(0)が$(1)番の情報キーを拾いました。
+TrialBeginMsg - 障壁を開放するため、情報キーを収集せよ！
+TrialAbstract - $(0)個、鍵を集めて障壁を解除せよ！
+
+Group 1
+IncidentName - Barrier Deactivation
+LogPickupKey - $(0) picked up Datakey #$(1).
+TrialBeginMsg - Collect the Datakeys to open the barriers!
+TrialAbstract - Gather $(0) keys to deactivate the barriers!
+
+
+type1
+Group 0
+NpcComOnBegin - 障壁の起動を確認しました！<br>開放には情報キーが必要です。<br>掃討しつつ、キーを集めてください！
+NpcComOnSuccess - /face2 障壁の開放を確認！<br>アークス各員の努力に感謝します！
+NpcComOnFailure - 障壁の開放失敗を確認。<br>残存のアークス各員は<br>周囲の警戒をお願いします。
+NpcComOnDispKey - 殲滅により情報キーの出現を確認！<br>確保に努めてください！
+NpcComOnCollected - 情報キーの結集を確認！<br>障壁が開放可能となりました！
+
+Group 1
+NpcComOnBegin - Confirming barrier activation! You need Datakeys to<br>open them. Gather keys while you wipe out the<br>hostiles!
+NpcComOnSuccess - /face2 Confirming all barriers are open! Thank you to all<br>ARKS operatives for your hard work!
+NpcComOnFailure - You failed to open the barriers. All remaining ARKS<br>operatives are to watch the perimeter.
+NpcComOnDispKey - A Datakey has appeared! Be sure to secure it!
+NpcComOnCollected - All Datakeys have been collected! You can now open<br>the barriers!
+
+
+type2
+Group 0
+NpcComOnBegin - ちっ、障壁が起動したか……<br>開放には情報キーが必要だ。<br>急いで収集しろ。
+NpcComOnSuccess - 障壁の開放を確認した。<br>よくやった。
+NpcComOnFailure - /face6 ……開放失敗だな。<br>仕方がない、通常任務に戻れ。
+NpcComOnDispKey - よし、情報キーが出現したようだ。<br>回収してくるといい。
+NpcComOnCollected - 情報キーが集まったようだな。<br>障壁を開放できるぞ。
+
+Group 1
+NpcComOnBegin - Damn, barriers? You'll need Datakeys to open them.<br>Collect them as fast as you can.
+NpcComOnSuccess - The barriers are confirmed open. Well done.
+NpcComOnFailure - /face6 ...We failed to open the barriers. Too late to fix<br>it now. Resume your regular mission.
+NpcComOnDispKey - Nice, looks like a Datakey has appeared! You better<br>recover it.
+NpcComOnCollected - You have all the Datakeys you need. You can open<br>the barriers now!
+
+
+type3
+Group 0
+NpcComOnBegin - わわっ、障壁が起動しちゃいました！<br>開放には情報キーの収集が<br>必要なんですー！
+NpcComOnSuccess - /face2 障壁、開放されましたー！<br>おつかれさまでしたー！
+NpcComOnFailure - /face4 開放失敗ですぅー……<br>しょうがありません、通常の<br>任務に戻りましょうー……
+NpcComOnDispKey - 情報キー、出現したようですー！<br>回収しちゃって下さいー！
+NpcComOnCollected - 情報キー収集完了ですー！<br>障壁、開放できますよー！
+
+Group 1
+NpcComOnBegin - Oh, no! Barriers have activated! You need to<br>collect Datakeys to open them!
+NpcComOnSuccess - /face2 You've opened the barriers! Great job!
+NpcComOnFailure - /face4 We failed to open the barriers... There's nothing<br>we can do about it now. Resume your regular<br>mission......
+NpcComOnDispKey - A Datakey has appeared! Recover it now!
+NpcComOnCollected - Datakey collection complete! You can open the<br>barriers!
+
+

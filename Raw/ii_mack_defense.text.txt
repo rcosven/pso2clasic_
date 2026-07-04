@@ -1,0 +1,61 @@
+ii_mack_defense.text was created: 04-07-2026 7:29:11
+Filesize is: 6320 bytes
+
+common
+Group 0
+IncidentName - エネルギーポッドを補充せよ！
+TrialBeginMsg - エネルギーポッドに補充しつつ<br>エネミーの攻撃から守れ！
+TrialAbstract - エネルギーポッドに補充しつつ<br>エネミーの攻撃から守れ！
+ChanceTime - エネミーの撃退に成功！<br>エネルギー結晶を回収せよ！
+
+Group 1
+IncidentName - Recharge the energy pods!
+TrialBeginMsg - Recharge the energy pods while<br>defending them from enemy attacks!
+TrialAbstract - Recharge the energy pods while<br>defending them from enemy attacks!
+ChanceTime - Keep the enemy at bay!<br>Collect the energy crystals!
+
+
+type9
+Group 0
+NpcComOnBegin - この訓練では、エネルギー結晶を集めて<br>エネルギーポッドを満タンにすることが<br>目的です。
+NpcComOnContainerPop - エネルギーポッドと結晶を転送します。<br>エネミーが狙ってきますので<br>どんどん倒しちゃってくださいね。
+NpcComOnTargetPosition - エネルギーポッドが狙われています。<br>$(0)・$(1)、$(2)・$(3)へ<br>防衛に向かってください。
+NpcComOnBossTargetPosition - $(0)に大型エネミー、出現。<br>$(1)のエネルギーポッドが<br>狙われています。
+NpcComOnTimeLimit30 - 訓練完了まで、残り３０秒。<br>それまで耐えるか、すべてのポッドを<br>満タンにすると、クリアですよ。
+NpcComOnSuccess - エネルギーポッドの補充、完了。<br>お疲れさまでした。
+NpcComOnFailure - エネルギーポッド、満タンです。<br>これで、訓練は完了となります。<br>お疲れさまでした。
+NpcComGaugeHp25 - エネルギーポッド残量、２５％到達。<br>エネルギー結晶をざくざく回収して<br>補充しまくってください。
+NpcComGaugeHp50 - エネルギーポッド残量、５０％到達。<br>半分まで補充が終わりました。<br>引き続き、がんばってください。
+NpcComGaugeHp75 - エネルギーポッド残量、７５％到達。<br>ようやく終わりが見えてきましたね。<br>いい感じですよ。
+NpcComGaugeHp90 - エネルギーポッド残量、９０％到達。<br>満タンまで、あと一息です。<br>ラストスパートですよ。
+
+Group 1
+
+
+type22
+Group 0
+NpcComOnBegin - この訓練では、エネルギー結晶を集めて<br>エネルギーポッドを満タンにすることが<br>目的です。
+NpcComOnContainerPop - /atime2.5 /voice11_voice_navi23_bou_02 エネルギーポッドと結晶を転送します。<br>エネミーが狙ってきますので<br>どんどん倒しちゃってくださいね。
+NpcComOnTargetPosition - /atime2.5 /voice11_voice_navi23_bou_07 エネルギーポッドが狙われています。<br>$(0)・$(1)、$(2)・$(3)へ<br>防衛に向かってください。
+NpcComOnBossTargetPosition - /atime2.5 /voice11_voice_navi23_bou_08 $(0)に大型エネミー、出現。<br>$(1)のエネルギーポッドが<br>狙われています。
+NpcComOnTimeLimit30 - /atime2.5 /voice11_voice_navi23_bou_09 訓練完了まで、残り３０秒。<br>それまで耐えるか、すべてのポッドを<br>満タンにすると、クリアですよ。
+NpcComOnSuccess - エネルギーポッドの補充、完了。<br>お疲れさまでした。
+NpcComOnFailure - エネルギーポッド、満タンです。<br>これで、訓練は完了となります。<br>お疲れさまでした。
+NpcComGaugeHp25 - /atime2.5 /voice11_voice_navi23_bou_03 エネルギーポッド残量、２５％到達。<br>エネルギー結晶をざくざく回収して<br>補充しまくってください。
+NpcComGaugeHp50 - /atime2.5 /voice11_voice_navi23_bou_04 エネルギーポッド残量、５０％到達。<br>半分まで補充が終わりました。<br>引き続き、がんばってください。
+NpcComGaugeHp75 - /atime2.5 /voice11_voice_navi23_bou_05 エネルギーポッド残量、７５％到達。<br>ようやく終わりが見えてきましたね。<br>いい感じですよ。
+NpcComGaugeHp90 - エネルギーポッド残量、９０％到達。<br>満タンまで、あと一息です。<br>ラストスパートですよ。
+
+Group 1
+NpcComOnBegin - The objective of this exercise<br>is to collect energy crystals and<br>fill up the energy pods.
+NpcComOnContainerPop - /atime2.5 /voice11_voice_navi23_bou_02 Teleporting energy pods and crystals.<br>Do your best to take enemies down<br>before they reach them.
+NpcComOnTargetPosition - /atime2.5 /voice11_voice_navi23_bou_07 Energy pods are being targeted.<br>$(0)-$(1), $(2)-$(3)<br>require defensive measures.
+NpcComOnBossTargetPosition - /atime2.5 /voice11_voice_navi23_bou_08 Large enemy sighted<br>near $(0).<br>It's targeting energy pod $(1).
+NpcComOnTimeLimit30 - /atime2.5 /voice11_voice_navi23_bou_09 30 seconds remaining until the session ends.<br>Stand your ground or fill up<br>all the pods to clear the mission.
+NpcComOnSuccess - All energy pods recharged.<br>Great work out there.
+NpcComOnFailure - All energy pods refilled.<br>The session has ended.<br>Nicely done.
+NpcComGaugeHp25 - /atime2.5 /voice11_voice_navi23_bou_03 Energy pod recharge at 25%.<br>Collect more energy crystals<br>to continue recharging.
+NpcComGaugeHp50 - /atime2.5 /voice11_voice_navi23_bou_04 Energy pod recharge at 50%.<br>We've reached the halfway point.<br>Keep up the good work.
+NpcComGaugeHp75 - /atime2.5 /voice11_voice_navi23_bou_05 Energy pod recharge at 75%.<br>The end is in sight.<br>You're doing great!
+
+

@@ -1,0 +1,67 @@
+quest_00170600.text was created: 04-07-2026 7:32:03
+Filesize is: 3520 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special Client Order
+a2 - Complete a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+AreaName
+Group 0
+Area0S - 艦隊交戦区域
+Area0L - 艦隊交戦区域　セクター３展開エリア
+
+Group 1
+Area0S - Armada War Zone
+Area0L - Armada War Zone Sector 3 Staging Area
+
+
+Basic
+Group 0
+Title - T:艦隊迎撃戦：戦艦撃破
+Explanation - 敵のA.I.S妨害装置を破壊したことによって<br>A.I.Sでの出撃が可能となった。<br>これより、作戦宙域にて交戦中の<br>敵艦隊に対する反攻作戦を開始する。<br>敵旗艦の周囲を固める戦艦群を<br>A.I.Sで撃破し、終の艦隊を撃退せよ。<br>――――――――――――――――――――<br>失敗条件/制限時間の経過<br>※入手した迎撃ポイントは累計されません
+
+Group 1
+Title - T: Armada Interception: Exterminate
+Explanation - You will be able to deploy an AIS now that the<br>enemy's AIS disruptor has been destroyed. We <br>will start our counterattack on the enemy <br>armada currently engaged in the sector. <br>Destroy the group of battleships attempting <br>to defend the enemy flagship and defeat <br>the Armada of Annihilation.<br>------------------------------------------------<br>You will fail this quest if you exceed the time limit.<br>Interception Points will not be counted.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、A.I.Sで出撃し<br>敵戦艦との直接戦闘を開始します。
+NpcComMsg2 - 対A.I.Sのため巨大化したと思われる<br>閃機種も多数確認されています。<br>あわせて撃破してください！
+
+Group 1
+NpcComMsg1 - You will now deploy an AIS and engage<br>the enemy in close-range combat.
+NpcComMsg2 - We have readings on what we believe<br>to be massive luminmechs fitted for anti-AIS combat.<br>Take those out too!
+
+
+PreTransportDirection0
+Group 0
+NpcComMsg1 - これより、A.I.Sで出撃し<br>敵戦艦との直接戦闘を開始します。
+NpcComMsg2 - 対A.I.Sのため巨大化したと思われる<br>閃機種も多数確認されています。<br>あわせて撃破してください！
+
+Group 1
+NpcComMsg1 - You will now deploy an AIS and engage<br>the enemy in close-range combat.
+NpcComMsg2 - We have readings on what we believe<br>to be massive luminmechs fitted for anti-AIS combat.<br>Take those out too!
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 敵戦艦群を突破せよ！
+
+Group 1
+SimpleExplanation - Break through the enemy battleships!
+
+

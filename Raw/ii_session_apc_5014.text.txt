@@ -1,0 +1,55 @@
+ii_session_apc_5014.text was created: 04-07-2026 7:29:11
+Filesize is: 3968 bytes
+
+common
+Group 0
+Begin - /ci2 1 ティア開始
+Success - /mn1 /ci2 2 ティア成功
+Failure - /mn1 /ci2 2 ティア失敗
+Dead - /mn1 /ci2 2 ティア死亡
+BuddyDead - /mn1 /ci2 2 ティア相手死亡
+Evolution - /mn1 /ci2 2 ティア発展
+
+Group 1
+Begin - /ci2 1 Tia Beginning
+Success - /mn1 /ci2 2 Tia Success
+Failure - /mn1 /ci2 2 Tia Failure
+Dead - /mn1 /ci2 2 Tia Death
+BuddyDead - /mn1 /ci2 2 Tia's Partner Dead
+Evolution - /mn1 /ci2 2 Tia Evolution
+
+
+5013
+Group 0
+Begin - /ci1 1 まあ、出てきたのはエネミーで<br>ケーキのように見られているのは<br>私たちなんだけどね……
+Success - /ci1 2 あっ、ちょっとパティちゃん！<br>すみません、これで失礼します。<br>ありがとうございました。
+Failure - /ci4 1 間違いなく夢。
+Dead - /mn34 /ci4 1 やっぱり、パティちゃんの<br>思いつきなんかに付き合うんじゃ<br>なかったなあ……
+BuddyDead - /ci1 1 はいはいパティちゃん<br>出直しだよ、出直し。<br>寝てないでさっさと戻る、ほらほら。
+Evolution - /ci1 2 いや、ケーキは関係ないと<br>思うけど……
+
+Group 1
+Begin - /ci1 1 Okay so, actually all we found were enemies, <br>and they're looking at us like WE'RE cake...
+Success - /ci1 2 Um, Pati? Sorry, I'm going to excuse myself. <br>Thank you for everything.
+Failure - /ci4 1 This has to be a dream.
+Dead - /mn34 /ci4 1 I knew I shouldn't have gone along <br>with Pati's wild ideas...
+BuddyDead - /ci1 1 Okay Pati, it's time to regroup. Get up. This is<br>no time to be sleeping. Come on.
+Evolution - /ci1 2 Well, I have a feeling this has nothing do with<br>cake...
+
+
+5013v2
+Group 0
+Begin - /ci1 3 でも、今日だけは情報屋じゃなくて<br>アークスとして、お手伝いするね。
+Success - /ci1 5 パティエンティア幻の三人目……<br>どうかよろしくお願いします。
+Failure - パティちゃんがダメそうなので<br>一旦連れて帰ります。<br>ではでは……
+Dead - 慣れないことをしたからかな……？
+BuddyDead - はいはい、すぐ起きてねパティちゃん。<br>今日の私達はひと味違うんでしょ？
+
+Group 1
+Begin - /ci1 3 But for today we'll waive our "intel team" <br>status and assist as a part of ARKS.
+Success - /ci1 5 I'd say this makes you PaTia's phantom <br>third member... You're welcome.
+Failure - I think Pati's had it. So I'm taking her back.<br>Bye now...
+Dead - Guess I got a little out of my wheelhouse...
+BuddyDead - Come on, get up, Pati! We've got a little <br>something up our sleeves today, remember?
+
+

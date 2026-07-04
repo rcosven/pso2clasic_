@@ -1,0 +1,497 @@
+quest_00121000.text was created: 04-07-2026 7:32:45
+Filesize is: 28176 bytes
+
+Basic
+Group 0
+Title - 無限連戦：追憶の彼方へ
+Explanation - 訓練プログラム「特別突破訓練」を<br>さらに改良し開発された<br>アークスの訓練用プログラムです。<br>各惑星を舞台に用意されたミッションを<br>達成し、好成績を目指してください。<br>制限時間内に全て踏破するのは<br>非常に困難な難易度となっております。<br>――――――――――――――――――――<br>目標／ハイスコアの獲得<br>最大与ダメージ制限／999999
+
+Group 1
+Title - Endless Battle: Edge of Recollection
+Explanation - This ARKS training program is an improved version <br>of our "Special Breakthrough Training" program. <br>Complete each of the missions, which incorporate <br>different planetary environments, to the best of <br>your ability. Traversing all the missions within the <br>given time limit should be highly challenging for <br>even the most seasoned veteran.<br>-------------------------------------------<br>Your goal is to achieve a high score.<br>Maximum dealable damage is limited to 999,999.<br>
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 制限時間内により多くのスコアを獲得せよ！
+
+Group 1
+SimpleExplanation - Score as many points as possible within the time limit!
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Clear a special Client Order
+a2 - Clear a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+
+
+AreaName
+Group 0
+Area0S - ＶＲ空間(森林)
+Area0L - アークスシップ　ＶＲ空間(森林)
+Area1S - ＶＲ空間(市街地)
+Area1L - アークスシップ　ＶＲ空間(市街地)
+Area2S - ＶＲ空間(龍祭壇)
+Area2L - アークスシップ　ＶＲ空間(龍祭壇)
+Area3S - ＶＲ空間(遺跡)
+Area3L - アークスシップ　ＶＲ空間(遺跡)
+Area4S - ＶＲ空間(海岸)
+Area4L - アークスシップ　ＶＲ空間(海岸)
+Area5S - ＶＲ空間(海岸)
+Area5L - アークスシップ　ＶＲ空間(海岸)
+Area6S - VR空間(採掘場跡)
+Area6L - アークスシップ　ＶＲ空間(採掘場跡)
+Area7S - ＶＲ空間(マザーシップ内部)
+Area7L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area8S - ＶＲ空間(白ノ領域)
+Area8L - アークスシップ　ＶＲ空間(白ノ領域)
+Area9S - ＶＲ空間(浮上施設)
+Area9L - アークスシップ　ＶＲ空間(浮上施設)
+Area10S - ＶＲ空間(壊世区域　地下坑道)
+Area10L - アークスシップ　ＶＲ空間(壊世区域　地下坑道)
+Area11S - ＶＲ空間(壊世区域　遺跡)
+Area11L - アークスシップ　ＶＲ空間(壊世区域　遺跡)
+Area12S - ＶＲ空間(東京)
+Area12L - アークスシップ　ＶＲ空間(東京)
+Area13S - ＶＲ空間(ラスベガス)
+Area13L - アークスシップ　ＶＲ空間(ラスベガス)
+Area14S - ＶＲ空間(壊世区域　火山洞窟)
+Area14L - アークスシップ　ＶＲ空間(壊世区域　火山洞窟)
+Area15S - ＶＲ空間(アースガイド本部地下)
+Area15L - アークスシップ　ＶＲ空間(アースガイド本部地下)
+Area16S - ＶＲ空間(火山洞窟)
+Area16L - アークスシップ　ＶＲ空間(火山洞窟)
+Area17S - ＶＲ空間(採掘基地)
+Area17L - アークスシップ　ＶＲ空間(採掘基地)
+Area18S - ＶＲ空間(白ノ領域・唱結界内)
+Area18L - アークスシップ　ＶＲ空間(白ノ領域・唱結界内)
+Area19S - ＶＲ空間(月面)　
+Area19L - アークスシップ　ＶＲ空間(月面)
+Area20S - ＶＲ空間(幻創園)
+Area20L - アークスシップ　ＶＲ空間(幻創園)
+Area21S - ＶＲ空間(魔神城周辺)　
+Area21L - アークスシップ　ＶＲ空間(魔神城周辺)
+Area22S - ＶＲ空間(壊世区域　森林)　
+Area22L - アークスシップ　ＶＲ空間(壊世区域　森林)
+Area23S - ＶＲ空間(????)
+Area23L - アークスシップ　ＶＲ空間(????)
+Area24S - ＶＲ空間(シップ残骸・甲板)　
+Area24L - アークスシップ　ＶＲ空間(アークスシップ残骸・甲板)
+Area25S - ＶＲ空間(マザーシップ内部)　
+Area25L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area40S - ＶＲ空間(森林)
+Area40L - アークスシップ　ＶＲ空間(森林)
+Area41S - ＶＲ空間(市街地)
+Area41L - アークスシップ　ＶＲ空間(市街地)
+Area42S - ＶＲ空間(龍祭壇)
+Area42L - アークスシップ　ＶＲ空間(龍祭壇)
+Area43S - ＶＲ空間(遺跡)
+Area43L - アークスシップ　ＶＲ空間(遺跡)
+Area44S - ＶＲ空間(海岸)
+Area44L - アークスシップ　ＶＲ空間(海岸)
+Area45S - ＶＲ空間(海岸)
+Area45L - アークスシップ　ＶＲ空間(海岸)
+Area46S - VR空間(採掘場跡)
+Area46L - アークスシップ　ＶＲ空間(採掘場跡)
+Area47S - ＶＲ空間(マザーシップ内部)
+Area47L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area48S - ＶＲ空間(白ノ領域)
+Area48L - アークスシップ　ＶＲ空間(白ノ領域)
+Area49S - ＶＲ空間(浮上施設)
+Area49L - アークスシップ　ＶＲ空間(浮上施設)
+Area50S - ＶＲ空間(壊世区域　地下坑道)
+Area50L - アークスシップ　ＶＲ空間(壊世区域　地下坑道)
+Area51S - ＶＲ空間(壊世区域　遺跡)
+Area51L - アークスシップ　ＶＲ空間(壊世区域　遺跡)
+Area52S - ＶＲ空間(東京)
+Area52L - アークスシップ　ＶＲ空間(東京)
+Area53S - ＶＲ空間(ラスベガス)
+Area53L - アークスシップ　ＶＲ空間(ラスベガス)
+Area54S - ＶＲ空間(壊世区域　火山洞窟)
+Area54L - アークスシップ　ＶＲ空間(壊世区域　火山洞窟)
+Area55S - ＶＲ空間(アースガイド本部地下)
+Area55L - アークスシップ　ＶＲ空間(アースガイド本部地下)
+Area56S - ＶＲ空間(火山洞窟)
+Area56L - アークスシップ　ＶＲ空間(火山洞窟)
+Area57S - ＶＲ空間(採掘基地)
+Area57L - アークスシップ　ＶＲ空間(採掘基地)
+Area58S - ＶＲ空間(白ノ領域・唱結界内)
+Area58L - アークスシップ　ＶＲ空間(白ノ領域・唱結界内)
+Area59S - ＶＲ空間(月面)　
+Area59L - アークスシップ　ＶＲ空間(月面)
+Area60S - ＶＲ空間(幻創園)
+Area60L - アークスシップ　ＶＲ空間(幻創園)
+Area61S - ＶＲ空間(魔神城周辺)　
+Area61L - アークスシップ　ＶＲ空間(魔神城周辺)
+Area62S - ＶＲ空間(壊世区域　森林)　
+Area62L - アークスシップ　ＶＲ空間(壊世区域　森林)
+Area63S - ＶＲ空間(????)
+Area63L - アークスシップ　ＶＲ空間(????)
+Area64S - ＶＲ空間(シップ残骸・甲板)　
+Area64L - アークスシップ　ＶＲ空間(アークスシップ残骸・甲板)
+Area65S - ＶＲ空間(マザーシップ内部)　
+Area65L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area80S - ＶＲ空間(森林)
+Area80L - アークスシップ　ＶＲ空間(森林)
+Area81S - ＶＲ空間(市街地)
+Area81L - アークスシップ　ＶＲ空間(市街地)
+Area82S - ＶＲ空間(龍祭壇)
+Area82L - アークスシップ　ＶＲ空間(龍祭壇)
+Area83S - ＶＲ空間(遺跡)
+Area83L - アークスシップ　ＶＲ空間(遺跡)
+Area84S - ＶＲ空間(海岸)
+Area84L - アークスシップ　ＶＲ空間(海岸)
+Area85S - ＶＲ空間(海岸)
+Area85L - アークスシップ　ＶＲ空間(海岸)
+Area86S - VR空間(採掘場跡)
+Area86L - アークスシップ　ＶＲ空間(採掘場跡)
+Area87S - ＶＲ空間(マザーシップ内部)
+Area87L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area88S - ＶＲ空間(白ノ領域)
+Area88L - アークスシップ　ＶＲ空間(白ノ領域)
+Area89S - ＶＲ空間(浮上施設)
+Area89L - アークスシップ　ＶＲ空間(浮上施設)
+Area90S - ＶＲ空間(壊世区域　地下坑道)
+Area90L - アークスシップ　ＶＲ空間(壊世区域　地下坑道)
+Area91S - ＶＲ空間(壊世区域　遺跡)
+Area91L - アークスシップ　ＶＲ空間(壊世区域　遺跡)
+Area92S - ＶＲ空間(東京)
+Area92L - アークスシップ　ＶＲ空間(東京)
+Area93S - ＶＲ空間(ラスベガス)
+Area93L - アークスシップ　ＶＲ空間(ラスベガス)
+Area94S - ＶＲ空間(壊世区域　火山洞窟)
+Area94L - アークスシップ　ＶＲ空間(壊世区域　火山洞窟)
+Area95S - ＶＲ空間(アースガイド本部地下)
+Area95L - アークスシップ　ＶＲ空間(アースガイド本部地下)
+Area96S - ＶＲ空間(火山洞窟)
+Area96L - アークスシップ　ＶＲ空間(火山洞窟)
+Area97S - ＶＲ空間(採掘基地)
+Area97L - アークスシップ　ＶＲ空間(採掘基地)
+Area98S - ＶＲ空間(白ノ領域・唱結界内)
+Area98L - アークスシップ　ＶＲ空間(白ノ領域・唱結界内)
+Area99S - ＶＲ空間(月面)　
+Area99L - アークスシップ　ＶＲ空間(月面)
+Area100S - ＶＲ空間(幻創園)
+Area100L - アークスシップ　ＶＲ空間(幻創園)
+Area101S - ＶＲ空間(魔神城周辺)　
+Area101L - アークスシップ　ＶＲ空間(魔神城周辺)
+Area102S - ＶＲ空間(壊世区域　森林)　
+Area102L - アークスシップ　ＶＲ空間(壊世区域　森林)
+Area103S - ＶＲ空間(????)
+Area103L - アークスシップ　ＶＲ空間(????)
+Area104S - ＶＲ空間(シップ残骸・甲板)　
+Area104L - アークスシップ　ＶＲ空間(アークスシップ残骸・甲板)
+Area105S - ＶＲ空間(マザーシップ内部)　
+Area105L - アークスシップ　ＶＲ空間(マザーシップ内部)
+Area30S - インターバルエリア　花園
+Area30L - ＶＲ空間　インターバルエリア　花園
+Area31S - インターバルエリア　浅瀬
+Area31L - ＶＲ空間　インターバルエリア　浅瀬
+Area32S - インターバルエリア　廃地
+Area32L - ＶＲ空間　インターバルエリア　廃地
+Area33S - インターバルエリア　楼閣
+Area33L - ＶＲ空間　インターバルエリア　楼閣
+Area34S - インターバルエリア　秘湯
+Area34L - ＶＲ空間　インターバルエリア　秘湯
+Area35S - インターバルエリア　魔森
+Area35L - ＶＲ空間　インターバルエリア　魔森
+Area70S - インターバルエリア　花園
+Area70L - ＶＲ空間　インターバルエリア　花園
+Area71S - インターバルエリア　浅瀬
+Area71L - ＶＲ空間　インターバルエリア　浅瀬
+Area72S - インターバルエリア　廃地
+Area72L - ＶＲ空間　インターバルエリア　廃地
+Area73S - インターバルエリア　楼閣
+Area73L - ＶＲ空間　インターバルエリア　楼閣
+Area74S - インターバルエリア　秘湯
+Area74L - ＶＲ空間　インターバルエリア　秘湯
+Area75S - インターバルエリア　魔森
+Area75L - ＶＲ空間　インターバルエリア　魔森
+Area110S - インターバルエリア　花園
+Area110L - ＶＲ空間　インターバルエリア　花園
+Area111S - インターバルエリア　浅瀬
+Area111L - ＶＲ空間　インターバルエリア　浅瀬
+Area112S - インターバルエリア　廃地
+Area112L - ＶＲ空間　インターバルエリア　廃地
+Area113S - インターバルエリア　楼閣
+Area113L - ＶＲ空間　インターバルエリア　楼閣
+Area114S - インターバルエリア　秘湯
+Area114L - ＶＲ空間　インターバルエリア　秘湯
+Area115S - インターバルエリア　魔森
+Area115L - ＶＲ空間　インターバルエリア　魔森
+Area120S - ＶＲ空間(魔神城周辺)
+Area120L - アークスシップ　ＶＲ空間(魔神城周辺)
+
+Group 1
+Area0S - VR (Forest)
+Area0L - ARKS Ship - VR (Forest)
+Area1S - VR (City Area)
+Area1L - ARKS Ship - VR (City Area)
+Area2S - VR (Dragon Altar)
+Area2L - ARKS Ship - VR (Dragon Altar)
+Area3S - VR (Ruins)
+Area3L - ARKS Ship - VR (Ruins)
+Area4S - VR (Coast)
+Area4L - ARKS Ship - VR (Coast)
+Area5S - VR (Coast)
+Area5L - ARKS Ship - VR (Coast)
+Area6S - VR (Abandoned Mine)
+Area6L - ARKS Ship - VR (Abandoned Mine)
+Area7S - VR (Mothership Interior)
+Area7L - ARKS Ship - VR (Mothership Interior)
+Area8S - VR (Daybreak Province)
+Area8L - ARKS Ship - VR (Daybreak Province)
+Area9S - VR (Floating Facility)
+Area9L - ARKS Ship - VR (Floating Facility)
+Area10S - VR (Corrupted Region - Underground Shafts)
+Area10L - ARKS Ship - VR (Corrupted Region - Underground Shafts)
+Area11S - VR (Corrupted Region - Ruins)
+Area11L - ARKS Ship - VR (Corrupted Region - Ruins)
+Area12S - VR (Tokyo)
+Area12L - ARKS Ship - VR (Tokyo)
+Area13S - VR (Las Vegas)
+Area13L - ARKS Ship - VR (Las Vegas)
+Area14S - VR (Corrupted Region - Volcanic Caves)
+Area14L - ARKS Ship - VR (Corrupted Region - Volcanic Caves)
+Area15S - VR (Earth Guide Headquarters Basement Level)
+Area15L - ARKS Ship - VR (Earth Guide Headquarters Basement Level)
+Area16S - VR (Volcanic Caves)
+Area16L - ARKS Ship - VR (Volcanic Caves)
+Area17S - VR (Mining Base)
+Area17L - ARKS Ship - VR (Mining Base)
+Area18S - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area18L - ARKS Ship - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area19S - VR (Moon Surface)　
+Area19L - ARKS Ship - VR (Moon Surface)
+Area20S - VR (Phantasm Park)
+Area20L - ARKS Ship - VR (Phantasm Park)
+Area21S - VR (Castrum Demonica Outskirts)　
+Area21L - ARKS Ship - VR (Castrum Demonica Outskirts)
+Area22S - VR (Corrupted Region - Forest)　
+Area22L - ARKS Ship - VR (Corrupted Region - Forest)
+Area23S - VR (????)
+Area23L - ARKS Ship - VR (????)
+Area24S - VR (ARKS Ship Wreckage - Deck)　
+Area24L - ARKS Ship - VR (ARKS Shipwreck - Deck)
+Area25S - VR (Mothership Interior)　
+Area25L - ARKS Ship - VR (Mothership Interior)
+Area40S - VR (Forest)
+Area40L - ARKS Ship - VR (Forest)
+Area41S - VR (City Area)
+Area41L - ARKS Ship - VR (City Area)
+Area42S - VR (Dragon Altar)
+Area42L - ARKS Ship - VR (Dragon Altar)
+Area43S - VR (Ruins)
+Area43L - ARKS Ship - VR (Ruins)
+Area44S - VR (Coast)
+Area44L - ARKS Ship - VR (Coast)
+Area45S - VR (Coast)
+Area45L - ARKS Ship - VR (Coast)
+Area46S - VR (Abandoned Mine)
+Area46L - ARKS Ship - VR (Abandoned Mine)
+Area47S - VR (Mothership Interior)
+Area47L - ARKS Ship - VR (Mothership Interior)
+Area48S - VR (Daybreak Province)
+Area48L - ARKS Ship - VR (Daybreak Province)
+Area49S - VR (Floating Facility)
+Area49L - ARKS Ship - VR (Floating Facility)
+Area50S - VR (Corrupted Region - Underground Shafts)
+Area50L - ARKS Ship - VR (Corrupted Region - Underground Shafts)
+Area51S - VR (Corrupted Region - Ruins)
+Area51L - ARKS Ship - VR (Corrupted Region - Ruins)
+Area52S - VR (Tokyo)
+Area52L - ARKS Ship - VR (Tokyo)
+Area53S - VR (Las Vegas)
+Area53L - ARKS Ship - VR (Las Vegas)
+Area54S - VR (Corrupted Region - Volcanic Caves)
+Area54L - ARKS Ship - VR (Corrupted Region - Volcanic Caves)
+Area55S - VR (Earth Guide Headquarters Basement Level)
+Area55L - ARKS Ship - VR (Earth Guide Headquarters Basement Level)
+Area56S - VR (Volcanic Caves)
+Area56L - ARKS Ship - VR (Volcanic Caves)
+Area57S - VR (Mining Base)
+Area57L - ARKS Ship - VR (Mining Base)
+Area58S - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area58L - ARKS Ship - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area59S - VR (Moon Surface)　
+Area59L - ARKS Ship - VR (Moon Surface)
+Area60S - VR (Phantasm Park)
+Area60L - ARKS Ship - VR (Phantasm Park)
+Area61S - VR (Castrum Demonica Outskirts)　
+Area61L - ARKS Ship - VR (Castrum Demonica Outskirts)
+Area62S - VR (Corrupted Region - Forest)　
+Area62L - ARKS Ship - VR (Corrupted Region - Forest)
+Area63S - VR (????)
+Area63L - ARKS Ship - VR (????)
+Area64S - VR (ARKS Ship Wreckage - Deck)　
+Area64L - ARKS Ship - VR (ARKS Shipwreck - Deck)
+Area65S - VR (Mothership Interior)　
+Area65L - ARKS Ship - VR (Mothership Interior)
+Area80S - VR (Forest)
+Area80L - ARKS Ship - VR (Forest)
+Area81S - VR (City Area)
+Area81L - ARKS Ship - VR (City Area)
+Area82S - VR (Dragon Altar)
+Area82L - ARKS Ship - VR (Dragon Altar)
+Area83S - VR (Ruins)
+Area83L - ARKS Ship - VR (Ruins)
+Area84S - VR (Coast)
+Area84L - ARKS Ship - VR (Coast)
+Area85S - VR (Coast)
+Area85L - ARKS Ship - VR (Coast)
+Area86S - VR (Abandoned Mine)
+Area86L - ARKS Ship - VR (Abandoned Mine)
+Area87S - VR (Mothership Interior)
+Area87L - ARKS Ship - VR (Mothership Interior)
+Area88S - VR (Daybreak Province)
+Area88L - ARKS Ship - VR (Daybreak Province)
+Area89S - VR (Floating Facility)
+Area89L - ARKS Ship - VR (Floating Facility)
+Area90S - VR (Corrupted Region - Underground Shafts)
+Area90L - ARKS Ship - VR (Corrupted Region - Underground Shafts)
+Area91S - VR (Corrupted Region - Ruins)
+Area91L - ARKS Ship - VR (Corrupted Region - Ruins)
+Area92S - VR (Tokyo)
+Area92L - ARKS Ship - VR (Tokyo)
+Area93S - VR (Las Vegas)
+Area93L - ARKS Ship - VR (Las Vegas)
+Area94S - VR (Corrupted Region - Volcanic Caves)
+Area94L - ARKS Ship - VR (Corrupted Region - Volcanic Caves)
+Area95S - VR (Earth Guide Headquarters Basement Level)
+Area95L - ARKS Ship - VR (Earth Guide Headquarters Basement Level)
+Area96S - VR (Volcanic Caves)
+Area96L - ARKS Ship - VR (Volcanic Caves)
+Area97S - VR (Mining Base)
+Area97L - ARKS Ship - VR (Mining Base)
+Area98S - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area98L - ARKS Ship - VR (Daybreak Province - Inside the Harmonic Barrier)
+Area99S - VR (Moon Surface)　
+Area99L - ARKS Ship - VR (Moon Surface)
+Area100S - VR (Phantasm Park)
+Area100L - ARKS Ship - VR (Phantasm Park)
+Area101S - VR (Castrum Demonica Outskirts)　
+Area101L - ARKS Ship - VR (Castrum Demonica Outskirts)
+Area102S - VR (Corrupted Region - Forest)　
+Area102L - ARKS Ship - VR (Corrupted Region - Forest)
+Area103S - VR (????)
+Area103L - ARKS Ship - VR (????)
+Area104S - VR (ARKS Ship Wreckage - Deck)　
+Area104L - ARKS Ship - VR (ARKS Shipwreck - Deck)
+Area105S - VR (Mothership Interior)　
+Area105L - ARKS Ship - VR (Mothership Interior)
+Area30S - Interval Zone - Flower Garden
+Area30L - VR - Interval Zone - Flower Garden
+Area31S - Interval Zone - Shallows
+Area31L - VR - Interval Zone - Shallows
+Area32S - Interval Zone - Wastelands
+Area32L - VR - Interval Zone - Wastelands
+Area33S - Interval Zone - Tower
+Area33L - VR - Interval Zone - Tower
+Area34S - Interval Zone - Secret Hot Spring
+Area34L - VR - Interval Zone - Secret Hot Spring
+Area35S - Interval Zone - Enchanted Forest
+Area35L - VR - Interval Zone - Enchanted Forest
+Area70S - Interval Zone - Flower Garden
+Area70L - VR - Interval Zone - Flower Garden
+Area71S - Interval Zone - Shallows
+Area71L - VR - Interval Zone - Shallows
+Area72S - Interval Zone - Wastelands
+Area72L - VR - Interval Zone - Wastelands
+Area73S - Interval Zone - Tower
+Area73L - VR - Interval Zone - Tower
+Area74S - Interval Zone - Secret Hot Spring
+Area74L - VR - Interval Zone - Secret Hot Spring
+Area75S - Interval Zone - Enchanted Forest
+Area75L - VR - Interval Zone - Enchanted Forest
+Area110S - Interval Zone - Flower Garden
+Area110L - VR - Interval Zone - Flower Garden
+Area111S - Interval Zone - Shallows
+Area111L - VR - Interval Zone - Shallows
+Area112S - Interval Zone - Wastelands
+Area112L - VR - Interval Zone - Wastelands
+Area113S - Interval Zone - Tower
+Area113L - VR - Interval Zone - Tower
+Area114S - Interval Zone - Secret Hot Spring
+Area114L - VR - Interval Zone - Secret Hot Spring
+Area115S - Interval Zone - Enchanted Forest
+Area115L - VR - Interval Zone - Enchanted Forest
+Area120S - VR (Castrum Demonica Outskirts)
+Area120L - ARKS Ship - VR (Castrum Demonica Outskirts)
+
+
+PreTransportDirection0
+Group 0
+NpcComMsg1 - エンドレスクエストを開始します。<br>制限時間までにより多くのミッションを<br>達成しスコアを獲得してください。
+NpcComMsg2 - 「ミッションオーダー」の達成により<br>制限時間が延長し、スコアアップが<br>可能です。それでは頑張ってください。
+
+Group 1
+NpcComMsg1 - Preparing to initiate the Endless Quest.<br>Complete as many missions as you can within<br>the allotted time limit to increase your score.
+NpcComMsg2 - By completing "Mission Orders," you can extend<br>the time limit and increase your score.<br>Good luck.
+
+
+Challenge
+Group 0
+UIQuestTargetOutlineSecond - 限界までより多くのミッションをクリアせよ！
+UIQuestTargetDetailSecond - 限界までより多くのミッションをクリアせよ！
+NPCArea0 - /atime2.5 /voice11_voice_navi07_013 ミッション１は私がナビゲートします。<br>まずは周囲のエネミーを撃破して<br>武器と進路を確保しましょう。
+NPCArea1 - /atime2.5 /voice11_voice_navi07_014 ミッション２からは詳細なナビゲートを<br>行いませんので、自身の力で乗り切って<br>ください。それではご武運を。
+NPCArea2 - /atime2.5 /voice11_voice_navi07_015 ミッション３です。<br>しっかりと休憩はできましたか？<br>そろそろ難易度が上がってきますよ。
+NPCArea3 - /atime2.5 /voice11_voice_navi07_016 ミッション４です。<br>ＶＲエネルギーは大丈夫ですか？<br>エネルギー切れにご注意を。
+NPCArea4 - /atime2.5 /voice11_voice_navi07_017 ミッション５です。<br>最後のミッションとなります。<br>心してお進みください。
+NPCArea5 - /atime2.5 /voice11_voice_navi07_018 ミッション６です。ここからは<br>ＶＲエネルギーの切れるまで<br>全力で頑張ってください。
+NPCArea6 - /atime2.5 /voice11_voice_navi07_019 ミッション７です。<br>同じ光景だとしても、その内容が<br>同じとは限りません。ご注意を。
+NPCArea7 - /atime2.5 /voice11_voice_navi07_015 ミッション８です。すでにお気づきかも<br>しれませんが、マップに表示されない<br>エネルギーカプセルも落ちていますよ。
+NPCArea8 - /atime2.5 /voice11_voice_navi07_016 ミッション９です。<br>残り２ミッション。<br>もうひと踏ん張りですよ。
+NPCArea9 - /atime2.5 /voice11_voice_navi07_017 ミッション１０です。<br>どう転んでも最後のミッションです。<br>死力を尽くして頑張ってください。
+NPCArea10 - /atime2.5 /voice11_voice_navi07_018 ミッション１１です。<br>３週目なので難易度が更に上がります。<br>限界まで力を振り絞りましょう。
+NPCArea11 - /atime2.5 /voice11_voice_navi07_019 ミッション１２です。<br>この難易度にも耐えうる能力……<br>素晴らしいの一言につきます。
+NPCArea12 - /atime2.5 /voice11_voice_navi07_015 ミッション１３です。<br>全力をもって最善を尽くし<br>最深部到達を目指してください。
+NPCArea13 - /atime2.5 /voice11_voice_navi07_016 ミッション１４です。<br>最深部にだいぶ近づいて来ています。<br>３週目の、最深部に。
+NPCArea14 - /atime2.5 /voice11_voice_navi07_017 ミッション１５です。<br>ここを越えれば３週目終了です。<br>ご武運を。
+NPCArea15 - /atime2.5 /voice11_voice_navi07_018 ミッション１６です。<br>４週目のはじまりです。<br>更に難易度が上がりますよ。
+NPCArea16 - /atime2.5 /voice11_voice_navi07_014 ミッション１７です。<br>素晴らしい成果です。次のミッションで<br>ちょっとした情報を提供しますね。
+NPCArea17 - /atime2.5 /voice11_voice_navi07_015 ミッション１８です。<br>本ミッションは、これが最後の周回。<br>つまり、残りは３ミッションです。
+NPCArea18 - /atime2.5 /voice11_voice_navi07_016 ミッション１９です。<br>残り２ミッション。<br>もうひと踏ん張りですよ。
+NPCArea19 - /atime2.5 /voice11_voice_navi07_017 ミッション２０です。<br>どう転んでも最後のミッションです。<br>死力を尽くして頑張ってください。
+NPCArea21 - /atime2.5 /voice11_voice_navi07_002 インターバルエリアとなります。<br>時間内に補給を行い<br>以降のミッションに備えてください。
+NPCArea22 - /atime2.5 /voice11_voice_navi07_002 インターバルエリアとなります。<br>時間内に補給を行い<br>以降のミッションに備えてください。
+NPCArea23 - /atime2.5 /voice11_voice_navi07_002 インターバルエリアとなります。<br>時間内に補給を行い<br>以降のミッションに備えてください。
+NPCArea24 - /atime2.5 /voice11_voice_navi07_002 インターバルエリアとなります。<br>時間内に補給を行い<br>以降のミッションに備えてください。
+
+Group 1
+UIQuestTargetOutlineSecond - Complete as many missions as you can!
+UIQuestTargetDetailSecond - Complete as many missions as you can!
+NPCArea0 - /atime2.5 /voice11_voice_navi07_013 I will act as your navigator for Mission 1.<br>First, let's defeat all enemies in the area to<br>secure weapons and a path forward.
+NPCArea1 - /atime2.5 /voice11_voice_navi07_014 Detailed navigation services will not be provided<br>from Mission 2 onward, so you will have to<br>make it through on your own. Good luck.
+NPCArea2 - /atime2.5 /voice11_voice_navi07_015 Welcome to Mission 3.<br>Have you been able to get plenty of rest?<br>Things are going to get harder from here.
+NPCArea3 - /atime2.5 /voice11_voice_navi07_016 Welcome to Mission 4.<br>How are our VR energy levels doing?<br>Make sure you don't run out!
+NPCArea4 - /atime2.5 /voice11_voice_navi07_017 Welcome to Mission 5.<br>This will be your final mission.<br>Proceed with caution.
+NPCArea5 - /atime2.5 /voice11_voice_navi07_018 Welcome to Mission 6.<br>Give it your all before the<br>VR energy runs out.
+NPCArea6 - /atime2.5 /voice11_voice_navi07_019 Welcome to Mission 7.<br>Note that the scenery might be the same,<br>but the challenges won't necessarily be equivalent.
+NPCArea7 - /atime2.5 /voice11_voice_navi07_015 Welcome to Mission 8. Though you may have<br>already noticed, VR Capsules which are<br>not shown on the map have dropped onto the battlefield.
+NPCArea8 - /atime2.5 /voice11_voice_navi07_016 Welcome to Mission 9.<br>Only two missions left.<br>This is the home-stretch.
+NPCArea9 - /atime2.5 /voice11_voice_navi07_017 Welcome to Mission 10.<br>This will be your final mission.<br>Now is not the time to hold back.
+NPCArea10 - /atime2.5 /voice11_voice_navi07_018 Welcome to Mission 11.<br>Since this is Week 3, the difficulty will be higher.<br>You will have to push yourself to the limit.
+NPCArea11 - /atime2.5 /voice11_voice_navi07_019 Welcome to Mission 12.<br>I must say it is amazing that you are able to<br>adapt to such a high level of difficulty.
+NPCArea12 - /atime2.5 /voice11_voice_navi07_015 Welcome to Mission 13.<br>Do the best you can with what you have and try<br>to reach the final area.
+NPCArea13 - /atime2.5 /voice11_voice_navi07_016 Welcome to Mission 14.<br>You are getting very close to the final area.<br>Onward, to the final area of Week 3.
+NPCArea14 - /atime2.5 /voice11_voice_navi07_017 Welcome to Mission 15.<br>If you get through this one, you will officially complete Week 3.<br>Good luck out there.
+NPCArea15 - /atime2.5 /voice11_voice_navi07_018 Welcome to Mission 16.<br>This is the start of Week 4.<br>The difficulty is going to ramp up even further.
+NPCArea16 - /atime2.5 /voice11_voice_navi07_014 Welcome to Mission 17.<br>You have done marvelously so far. In the next mission<br>I'll provide you with a bit of additional information.
+NPCArea17 - /atime2.5 /voice11_voice_navi07_015 Welcome to Mission 18.<br>This mission will be your final circuit.<br>That is to say, you have three missions left.
+NPCArea18 - /atime2.5 /voice11_voice_navi07_016 Welcome to Mission 19.<br>Two missions left.<br>This is the real home-stretch.
+NPCArea19 - /atime2.5 /voice11_voice_navi07_017 Welcome to Mission 20.<br>Whatever happens, this will be your final mission.<br>Don't hold back anything.
+NPCArea21 - /atime2.5 /voice11_voice_navi07_002 This is the Interval Zone.<br>Prepare for your next mission by<br>replenishing within the allotted time.
+NPCArea22 - /atime2.5 /voice11_voice_navi07_002 This is the Interval Zone.<br>Prepare for your next mission by<br>replenishing within the allotted time.
+NPCArea23 - /atime2.5 /voice11_voice_navi07_002 This is the Interval Zone.<br>Prepare for your next mission by<br>replenishing within the allotted time.
+NPCArea24 - /atime2.5 /voice11_voice_navi07_002 This is the Interval Zone.<br>Prepare for your next mission by<br>replenishing within the allotted time.
+
+

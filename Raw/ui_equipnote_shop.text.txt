@@ -1,0 +1,75 @@
+ui_equipnote_shop.text was created: 04-07-2026 7:32:30
+Filesize is: 4688 bytes
+
+CategoryList
+Group 0
+FullTitle - コレクトファイル
+FullInfo - <c f0df60>目標を達成すると「報酬アイテム」がもらえます。<c><pict sp_icon><c f0df60>があるコレクションは1シートだけ受注できます。<c>
+Title - 配信中のコレクトファイル
+CaptionL - コレクトファイル名
+AppendCollectionName - コレクション
+CaptionR - 配信終了日
+Extend - シート所持数拡張
+ExtendHaveSheet_RemainEnable - <yellow>シート所持数拡張（あと$(0)回）<c><pict StarGem>
+ExtendHaveSheet_RemainDisable - <gray>シート所持数拡張（あと$(0)回）<pict StarGem><c>
+PossessionTitle - 所持中のシート
+
+Group 1
+FullTitle - COLLECTION FOLDER
+FullInfo - <c f0df60>Complete objectives to obtain Reward Items. <c><c f0df60>Collections with <pict sp_icon> can only order 1 Sheet.<c>
+Title - CURRENTLY DISTRIBUTED COLLECTION FOLDER
+CaptionL - Collection Folder Name
+AppendCollectionName - Collection
+CaptionR - Distribution End Date
+Extend - Sheet Expansions
+ExtendHaveSheet_RemainEnable - <yellow> Sheet Expansions ($(0) Left)<c><pict StarGem>
+ExtendHaveSheet_RemainDisable - <gray> Sheet Expansions ($(0) Left)<c><pict StarGem>
+PossessionTitle - CURRENT SHEETS
+
+
+SheetSelect
+Group 0
+FullTitle - コレクトシート選択
+FullTitle_v - シート選択
+FullInfo - <c f0df60>欲しい報酬アイテムのシートを選択してください。<c>
+Title - 報酬アイテム選択
+EquipableCheck - 装備可のみ
+Button - 戻る
+TitleSheetInfo - シート情報
+SheetNum - シート所持数
+SheetNum_CurrentNum - $(0) / $(1) 枚
+SheetNum_CurrentNum_Equal - <c ff9c70>$(0) / $(1) 枚<c>
+SheetNum_CurrentNum_Over - <c ff0000>$(0) / $(1) 枚<c>
+CoolTime - クールタイム
+CoolTime_Free - このシートは、すぐに入手可能です。
+CoolTime_Wait - このシートは<br><red>$(0)<c><br>まで入手できません。<br>（スタージェムでリセット可能）
+CoolTime_SheetExpired - このシートは配信期間が終了しているため<br>シートの入手、再入手を行うことができません。
+
+Group 1
+FullTitle - SELECT COLLECTION SHEET
+FullTitle_v - SELECT SHEET
+FullInfo - <c f0df60>Select the sheet of the desired Reward Item.<c>
+Title - SELECT REWARD ITEM
+EquipableCheck - Equippables only
+Button - Back
+TitleSheetInfo - SHEET INFORMATION
+SheetNum - Number of Sheets
+SheetNum_CurrentNum - $(0) / $(1)
+SheetNum_CurrentNum_Equal - <c ff9c70>$(0) / $(1) <c>
+SheetNum_CurrentNum_Over - <c ff0000>$(0) / $(1) <c>
+CoolTime - Cooldown Time
+CoolTime_Free - This sheet can be claimed immediately.
+CoolTime_Wait - This sheet cannot be claimed until <br><red>$(0)<c>.<br><br>(Can be reset with Star Gems.)
+CoolTime_SheetExpired - The distributon period for this sheet has expired.<br>This sheet cannot be claimed or reclaimed.
+
+
+SheetDetails
+Group 0
+FullTitle - シート詳細
+FullInfo - <c f0df60>それぞれの目標を達成して「必要アイテム」をすべて拾うと、「報酬アイテム」がもらえます。<c>
+
+Group 1
+FullTitle - SHEET DETAILS
+FullInfo - <c f0df60>Complete each objective and gather all required items to receive Reward Items.<c>
+
+

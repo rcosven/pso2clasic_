@@ -1,0 +1,45 @@
+ii_j_s_apc_orakio.text was created: 04-07-2026 7:29:11
+Filesize is: 3008 bytes
+
+common
+Group 0
+IncidentName - $(0)撃破
+TrialBeginMsg - $(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+TrialAbstract - $(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+
+Group 1
+IncidentName - Exterminate the $(0) Presence
+TrialBeginMsg - Defeat any $(0) you find!<br>You'll fail if any partners are incapacitated twice.
+TrialAbstract - Defeat any $(0) you find!<br>You'll fail if any partners are incapacitated twice.
+
+
+type1
+Group 0
+NpcComOnFailure - 残念ですが、仕方がありません。<br>対象のアークスはこちらで回収を……<br>って、あれ……？　反応消失……？
+NpcComOnDownB - 対象のアークスに多大な負担が<br>かかっています。次の失敗時には<br>撤退を推奨させてもらいます。
+
+Group 1
+NpcComOnFailure - Nothing more you can do now. I'll retrieve the<br>injured ARKS op... Wait, what happened to their<br>reading?
+NpcComOnDownB - The operative was seriously injured. If it happens<br>again we'll have to ask you to abort.
+
+
+type2
+Group 0
+NpcComOnFailure - ……ここまでだ、仕方があるまい。<br>対象のアークスはこちらで回収を……<br>……何？　反応が消失しただと……？
+NpcComOnDownB - 対象のアークスに負担がかかりすぎだ。<br>次、戦闘不能になった場合には<br>強制的に対象を撤退させるぞ。
+
+Group 1
+NpcComOnFailure - We have to end it here. I'll bring back the<br>injured ARKS op... What? What happened to their<br>reading?
+NpcComOnDownB - That ARKS op has taken a hell of a beating. If<br>they're incapacitated again, I'll be forced to<br>pull them out.
+
+
+type3
+Group 0
+NpcComOnFailure - ……うう、残念ですけどここまでです。<br>対象のアークスさんを回収して……<br>って、あれあれっ？　反応が消えた……？
+NpcComOnDownB - ああっ、一緒に戦ってるアークスさんに<br>負担がかかりすぎです！　次やられたら<br>無理矢理でも撤退させちゃいます！
+
+Group 1
+NpcComOnFailure - Sorry, but I can't let this go on. Moving to bring<br>back the ARKS op... Wait, there's no reading?
+NpcComOnDownB - That ARKS op with you is taking too much damage!<br>If they go down again, I'll have to force a<br>retreat!
+
+

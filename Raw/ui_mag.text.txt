@@ -1,0 +1,309 @@
+ui_mag.text was created: 04-07-2026 7:31:32
+Filesize is: 20368 bytes
+
+Common
+Group 0
+PB - フォトンブラスト
+AA - オートアクション
+TA - トリガーアクション
+Level - Lv.
+LevelFormat - Lv.$(0)
+Confirm - 確認
+NotifyAcquirePB - $(0)がフォトンブラストを習得しました
+
+Group 1
+PB - Photon Blast
+AA - Auto Action
+TA - Trigger Action
+Level - Lv.
+LevelFormat - Lv. $(0)
+Confirm - Confirm
+NotifyAcquirePB - $(0) learned Photon Blast.
+
+
+List
+Group 0
+Title - マグ一覧
+Command1 - アイテムを与える
+Command2 - デバイスを使う
+Command3 - 装備する
+Command4 - 装備を外す
+Command5 - トリガーアクション優先度
+Command6 - アクション確認
+Command7 - マグ形態変更パスを使う
+
+Group 1
+Title - MAG LIST
+Command1 - Feed Item
+Command2 - Use Device
+Command3 - Equip
+Command4 - Unequip
+Command5 - Trigger Action Priority
+Command6 - View Actions
+Command7 - Use Mag Form Change Pass
+
+
+Info
+Group 0
+Title - マグ情報
+Energy - エネルギー
+EnergyParcent - $(0)％
+SupportLevel - 支援レベル
+Support1 - 打撃支援
+Support2 - 射撃支援
+Support3 - 法撃支援
+Support4 - 技量支援
+Support5 - 打撃防御支援
+Support6 - 射撃防御支援
+Support7 - 法撃防御支援
+mag_color_change - マグカラー変更不可
+Detail_Vita - マグ詳細
+TA_No0 - 0
+TA_No1 - 1
+TA_No2 - 2
+TA_No3 - 3
+TA_No4 - 4
+TA_No5 - 5
+TA_No6 - 6
+TA_No7 - 7
+TA_No8 - 8
+TA_No9 - 9
+
+Group 1
+Title - MAG INFORMATION
+Energy - Energy
+EnergyParcent - $(0)%
+SupportLevel - Support Level
+Support1 - MEL Support
+Support2 - RNG Support
+Support3 - TEC Support
+Support4 - DEX Support
+Support5 - MEL Def Support
+Support6 - RNG Def Support
+Support7 - TEC Def Support
+mag_color_change - Changing Mag Color Not Supported
+Detail_Vita - Mag Details
+TA_No0 - 0
+TA_No1 - 1
+TA_No2 - 2
+TA_No3 - 3
+TA_No4 - 4
+TA_No5 - 5
+TA_No6 - 6
+TA_No7 - 7
+TA_No8 - 8
+TA_No9 - 9
+
+
+Feed
+Group 0
+Title - マグに与えるアイテム
+Indicate - <c f0df60>マグに与えるアイテムを選んでください。<c>
+Msg1 - $(0)を与えます。<br>よろしいですか？<br><br><yellow>※与えたアイテムの種類により<br>　マグの各種「支援レベル」が増減し<br>　装備時の強さが変わります。<c>
+Msg2 - このアイテムはレアリティ７以上です。<br>本当にマグに与えてよろしいですか？
+FeedMsg - $(0)を与えました。
+Error1 - これ以上アイテムを与えることはできません。<br>一定時間経過後に再度お試しください。
+MessageTitle - アイテムを与える
+ErrorTitle - アイテムを与える
+
+Group 1
+Title - ITEM TO FEED MAG
+Indicate - <c f0df60>Select an item to feed to your Mag.<c>
+Msg1 - You are about to feed $(0).<br>Are you sure you wish to proceed?<br><br><yellow>The [Support Level] of the Mag may<br>change, and its strength while equipped may<br>also change, depending on the type of item fed.<c>
+Msg2 - This item has a Rarity of 7 or greater.<br>Are you sure you want to feed it to your Mag?
+FeedMsg - Fed $(0).
+Error1 - You can't feed any more items at this time.<br>Try again after a set time has elapsed.
+MessageTitle - FEED ITEM
+ErrorTitle - FEED ITEM
+
+
+UseDevice
+Group 0
+Title - マグに与えるデバイス
+Indicate - <c f0df60>マグに与えるデバイスを選んでください。<c>
+IndicateCC - <c f0df60>変更したいマグの色を選んでください。リアルタイムに反映されます。<c>
+Msg1 - $(0)を使用します。<br>よろしいですか？
+MsgCC - $(0)を使用して、<br>マグの色を変更します。よろしいですか？
+OverwriteMsgPB - 以下のフォトンブラストを上書きします。<br>よろしいですか？
+OverwriteMsgAA - 以下のオートアクションを上書きします。<br>よろしいですか？
+OverwriteMsgTA - 以下のトリガーアクションを上書きします。<br>よろしいですか？
+OverwriteMsgCraftTA - 生産系デバイスは一つしか設定できません。<br>以下のトリガーアクションを上書きします。<br>よろしいですか？
+OverwriteMsgTAList - 上書きするトリガーアクションを選んでください。
+OverwriteListTitle - トリガーアクションの上書き
+ChangeLooksMsg - マグに進化デバイスを与えて<br>以下のように進化させます。<br><br>また、使用したことがない進化デバイスの場合、<br>「マグ形態変更パスを使う」で選択可能になります。<br>よろしいですか？
+ChangeLooksMsg1 - マグに進化デバイスを与えて<br>以下のように進化させます。<br>よろしいですか？<br><br><yellow>※使用したことがある進化デバイスです。<br>　「マグ形態変更パスを使う」から形態を変更する<br>　こともできます。<c>
+UseDeviceMsg - $(0)を使用しました。
+ResetDeviceMsg - マグを初期状態に戻します。<br>本当に使用しますか？
+Error - $(0)を使用できませんでした。
+ErrorHT - マグがLv.100になるまで使用できません。
+ErrorCraftDevice - 生産系デバイスは一つしか設定できません。
+ErrorLevelCap - レベル成長限界に到達しているため<br>使用できません。
+ErrorAddTA - このデバイスは、これ以上使用できません。
+ErrorNoColorChange - このデバイスは、対象のマグがカラー変更不可のため<br>使用できません。
+ErrorNonEquip - このデバイスは、対象のマグを装備していない場合<br>使用できません。
+ErrorMeaningless - このデバイスによる効果は、既に適用済みです。<br>使用できません。
+ColorTitle - マグカラー選択
+ConfirmTitle - デバイス使用確認
+MessageTitle - デバイスを使う
+ErrorTitle - デバイスを使う
+OverwriteMsgSAA - 以下のSPオートアクションを上書きします。<br>よろしいですか？
+ErrorSAA - マグがLv.200になるまで使用できません。
+ErrorLevelLow - このデバイスは、対象のマグがLv.$(0)になるまで<br>使用できません。
+LearningMsgSAA - $(0)が<br>$(1)を<br>習得しました。
+
+Group 1
+Title - DEVICE TO FEED MAG
+Indicate - <c f0df60>Select a device to feed to your Mag.<c>
+IndicateCC - <c f0df60>Select the color you want to change your Mag to. Changes will be applied in real time.<c>
+Msg1 - You are about to use $(0).<br>Are you sure you wish to proceed?
+MsgCC - You are about to change you Mag's color using $(0).<br>Are you sure you wish to proceed?
+OverwriteMsgPB - You are about to overwrite the following Photon Blast.<br>Are you sure you wish to proceed?
+OverwriteMsgAA - You are about to overwrite the following Auto Action.<br>Are you sure you wish to proceed?
+OverwriteMsgTA - You are about to overwrite the following Trigger Action.<br>Are you sure you wish to proceed?
+OverwriteMsgCraftTA - You can only set one Production Device.<br>The following Trigger Action will be overwritten.<br>Are you sure you want to proceed?
+OverwriteMsgTAList - Select a Trigger Action to overwrite.
+OverwriteListTitle - OVERWRITE TRIGGER ACTION
+ChangeLooksMsg - Feed this Evolution Device to your Mag to alter its <br>appearance to the form shown.<br>If it's an Evolution Device you've never used before, <br>select [Use Mag Form Change Pass] to unlock.<br><br>Are you sure you wish to proceed?
+ChangeLooksMsg1 - Feed this Evolution Device to your Mag to alter its<br>appearance to the form shown.<br>Are you sure you wish to proceed?<br><br><yellow>Note: This Evolution Device has been used previously.<br>You can also change your Mag's form by selecting the<br>[Use Mag Form Change Pass] option.<c>
+UseDeviceMsg - Used $(0).
+ResetDeviceMsg - You are about to return your Mag to its initial default state.<br>Are you sure you wish to proceed?
+Error - Unable to use $(0).
+ErrorHT - Unable to perform action until Mag has reached Level 100.
+ErrorCraftDevice - Only one Production Device can be set.
+ErrorLevelCap - Unable to perform this action because the<br>level cap has already been reached.
+ErrorAddTA - This device can't be used anymore.
+ErrorNoColorChange - This device can't be used because the<br>target Mag doesn't support color changes.
+ErrorNonEquip - This device can't be used when the<br>target Mag isn't equipped.
+ErrorMeaningless - The effect from this device has already been applied.<br>It can't be used again.
+ColorTitle - SELECT MAG COLOR
+ConfirmTitle - CONFIRM DEVICE USE
+MessageTitle - USE DEVICE
+ErrorTitle - USE DEVICE
+OverwriteMsgSAA - You are about to overwrite the following Special Auto Action.<br>Are you sure you wish to proceed?
+ErrorSAA - Unable to perform action until Mag has reached Level 200.
+ErrorLevelLow - This device can't be used until the<br>target Mag has reached Level $(0).
+LearningMsgSAA - $(0) learned $(1).
+
+
+TAPriority
+Group 0
+Title - トリガーアクション優先度変更
+Indicate - 優先度を変更したいトリガーアクションを選んで変更先を指定してください。
+Msg1 - 優先度の変更を反映します。<br>よろしいですか？
+Msg2 - トリガーアクション優先度を変更しました。
+Error1 - トリガーアクション優先度を変更できませんでした。
+MoveTargetMsg - 優先度$(0)に移動
+Update - 更新
+ConfirmTitle - トリガーアクション優先度変更確認
+
+Group 1
+Title - CHANGE TRIGGER ACTION PRIORITY
+Indicate - Select the Trigger Action you want to change the priority for and specify a new priority.
+Msg1 - You are about to change the priority.<br>Are you sure you wish to proceed?
+Msg2 - You changed the Trigger Action Priority.
+Error1 - Failed to change Trigger Action Priority.
+MoveTargetMsg - Move to Priority $(0)
+Update - Refresh
+ConfirmTitle - CONFIRM PRIORITY CHANGE
+
+
+ActionList
+Group 0
+Title - アクション確認
+TANumber - $(0)
+
+Group 1
+Title - VIEW ACTIONS
+TANumber - $(0)
+
+
+Equip
+Group 0
+Msg1 - マグを装備しました。
+Msg2 - マグを外しました。
+Error1 - マグを装備できませんでした。<br><br>[No.2200]
+Error2 - マグを外せませんでした。<br><br>[No.2201]
+
+Group 1
+Msg1 - Mag equipped.
+Msg2 - Mag removed.
+Error1 - Unable to equip Mag.<br><br>[No. 2200]
+Error2 - Unable to remove Mag.<br><br>[No. 2201]
+
+
+ChangeFigure
+Group 0
+ListTitle - マグ形態変更パスを使う
+Indicate - <c f0df60>マグ形態変更パスを使用し、使用したことのある進化デバイスの形態に変更することができます。変更する形態を選んでください。<c>
+EmptyList - 登録されている形態がありません。
+PopupMenuChangeFigure - この形態に変更する
+PopupMenuRegisterFavorite - お気に入り登録する
+PopupMenuCancelFavorite - お気に入り解除
+ChangeFigureConfirm - マグ形態変更パスを使用し、<br>「$(0)」に形態を変更します。<br>よろしいですか？<br><br>マグ形態変更パス（所持：$(1)）
+SortItemFavorite - お気に入り
+SameFigureError - 現在と同じ形態であるため、<br>選択することができません。
+LevelError - マグがレベル１００になるまで形態を変更できません。
+ChangeFigurePassError - マグ形態変更パスがないため<br>実行することができません。
+FavoriteMaxError - お気に入り登録数が上限の20件に<br>達しているため、登録することができません。
+ChangeFigureResult - パスを使用して「$(0)」に変更しました。
+RegisterFavoriteResult - お気に入りに登録しました。
+CancelFavoriteResult - お気に入り登録を解除しました。
+ChangeFigureError - 形態を変更できませんでした。
+RegisterFavoriteError - お気に入り登録できませんでした。
+RegisterFavoriteMaxError - お気に入り登録数が上限の20件に<br>達しているため、登録することができません。
+CancelFavoriteError - お気に入り登録を解除できませんでした。
+RegisterFigure - マグの形態を登録しました。
+ChangeFigureConfirmTitle - パス使用確認
+Vita_ChangeFigureConfirm - マグ形態変更パスを使用し、<br>「$(0)」に形態を変更しますか？<br>マグ形態変更パス（所持：$(1)）
+
+Group 1
+ListTitle - USE MAG FORM CHANGE PASS
+Indicate - <c f0df60>You can use a Mag Form Change Pass to change the form <br>of your Mag to that of any Evolution Device you've used previously. <br>Please select the form you wish to change your Mag to.<c>
+EmptyList - No Mag forms are currently registered.
+PopupMenuChangeFigure - Change to This Form
+PopupMenuRegisterFavorite - Register Favorite
+PopupMenuCancelFavorite - Delete Favorite
+ChangeFigureConfirm - You will use a Mag Form Change Pass <br>to change your Mag to [$(0)].<br>Are you sure you wish to proceed?<br><br>Mag Form Change Pass (You Have: $(1))
+SortItemFavorite - Favorites
+SameFigureError - You can't make that selection because the<br>form is the same as the current one.
+LevelError - You can't change the form of a Mag <br>until the Mag reaches Level 100.
+ChangeFigurePassError - Unable to execute command because <br>you don't have a Mag Form Change Pass.
+FavoriteMaxError - You can't add any additional favorites because your<br>favorites count has already reached the maximum of 20.
+ChangeFigureResult - Changed to [$(0)] using a Mag Form Change Pass.
+RegisterFavoriteResult - Added to favorites.
+CancelFavoriteResult - Deleted from favorites.
+ChangeFigureError - Unable to change form.
+RegisterFavoriteError - Unable to add to favorites.
+RegisterFavoriteMaxError - You can't add any additional favorites because your<br>favorites count has already reached the maximum of 20.
+CancelFavoriteError - Unable to delete from favorites.
+RegisterFigure - Mag form added.
+ChangeFigureConfirmTitle - CONFIRM PASS USE
+Vita_ChangeFigureConfirm - Do you want to use a Form Change Pass <br>to change your Mag to [$(0)]?<br>Mag Form Change Pass (You Have: $(1))
+
+
+Renumber
+Group 0
+Title - -
+Msg1 - -
+Msg2 - -
+Msg3 - -
+
+Group 1
+Title - -
+Msg1 - -
+Msg2 - -
+Msg3 - -
+
+
+Down
+Group 0
+Title - デバイス使用確認
+Msg1 - レベルを１つ下げる支援レベルを<br>選択してください。
+Msg2 - マグレベルダウンデバイスを使用して、<br>マグの支援レベルを1つ下げます。<br>よろしいですか？
+
+Group 1
+Title - CONFIRM DEVICE USE
+Msg1 - Select a Support Level to reduce by<br>one level.
+Msg2 - You are about to use a Mag Level<br>Reduction Device to decrease the Support Level<br>of your Mag by one level.<br>Are you sure you wish to proceed?
+
+

@@ -1,0 +1,57 @@
+quest_00051010.text was created: 04-07-2026 7:32:02
+Filesize is: 3072 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special Client Order
+a2 - Complete a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+Basic
+Group 0
+Title - 艦隊迎撃戦：被害艦救助
+Explanation - 当船団の巡洋艦が終の艦隊から<br>激しい攻撃を受けているとの急報があった。<br><br>損壊率は６０％を超えており<br>自律での航行は不可能な状況であるに加え<br>今もなお敵艦隊からの砲火に晒されている。<br>急ぎ、被害艦の救助に向かえ。<br>――――――――――――――――――――<br>失敗条件/制限時間の経過
+
+Group 1
+Title - Armada Interception: Ship Rescue
+Explanation - Emergency report. Our fleet's cruiser is under <br>attack by the Armada of Annihilation.<br><br>Hull damage is over 60% and it is unable to <br>maneuver away from the enemy barrage.<br>Assist the damaged ship at once.<br>--------------------------------------------------<br>You will fail this quest if you exceed<br>the time limit.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、輸送を開始します。<br>今回の目的は、敵勢力によって<br>被害を受けている味方艦の救助です。
+NpcComMsg2 - 先行して救助に向かった<br>もう一隻の味方艦に合流し<br>協力して作戦を遂行してください！
+
+Group 1
+NpcComMsg1 - Prepare for teleportation. Your mission <br>is to rescue our allies from a ship <br>damaged by enemy forces.
+NpcComMsg2 - Rendezvous with another<br>ally ship and work together to complete<br>this mission!
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 味方艦を救助しろ！
+
+Group 1
+SimpleExplanation - Rescue friendly ships!
+
+
+AreaName
+Group 0
+Area0S - 艦隊交戦区域
+Area0L - 艦隊交戦区域　セクター１展開エリア
+
+Group 1
+Area0S - Armada War Zone
+Area0L - Armada War Zone - Sector 1 Staging Area
+
+

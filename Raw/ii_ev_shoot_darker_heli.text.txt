@@ -1,0 +1,55 @@
+ii_ev_shoot_darker_heli.text was created: 04-07-2026 7:29:11
+Filesize is: 3280 bytes
+
+common
+Group 0
+IncidentName - 侵食戦闘機を破壊せよ
+TrialBeginMsg - ダーカーに侵食された戦闘機を破壊せよ！
+EnemyAppearMsg - $(0)の方向から敵が現れた！
+TrialEvolutionBeginMsg_ReLanding - 修理が完了するまで、再び戦闘機を防衛せよ！
+TrialEvolutionBeginMsg_ShootDarkerHeli - ダーカーに侵食された戦闘機を破壊せよ！
+TrialAbstract - 制限時間内に<br>ダーカーに侵食された戦闘機を破壊せよ
+
+Group 1
+IncidentName - Destroy the Corrupted Aircraft
+TrialBeginMsg - Destroy the Falspawn-corrupted fighter plane!
+EnemyAppearMsg - Enemies moving in from the $(0)!
+TrialEvolutionBeginMsg_ReLanding - Defend the fighter plane again until it's repaired!
+TrialEvolutionBeginMsg_ShootDarkerHeli - Destroy the Falspawn-corrupted fighter plane!
+TrialAbstract - Destroy the Falspawn-corrupted fighter plane<br>before time expires.
+
+
+type1
+Group 0
+
+Group 1
+
+
+type2
+Group 0
+NpcComOnBegin - /face3 アークスの戦闘機がダーカーの<br>侵食を受けた、だと……！<br>ちっ、面倒なことになったな。
+NpcComOnBegin2 - 侵食が不完全な今のうちに<br>該当の機体を破壊しろ！
+NpcComOnHp50 - 気を付けろ。<br>侵食が進行しているぞ。
+NpcComOnHp10 - 侵食戦闘機の破壊まで<br>あと少しだ。
+NpcComOnLanding - 未使用
+NpcComOnTimeNotice - ……侵食レベルがかなり深刻だ。<br>破壊を急げ、奪われてしまうぞ！
+NpcComOnSuccess - 侵食戦闘機の破壊を確認。<br>よくやってくれた。
+NpcComOnFailure - ……戦闘機の反応、消失。<br>ダーカーめ、アレを奪って<br>何をする気だ……？
+
+Group 1
+NpcComOnBegin - /face3 One of our fighter planes has been corrupted<br>by the Falspawn?<br>Dammit... This could get ugly.
+NpcComOnBegin2 - Destroy the aircraft before it's been fully<br>corrupted!
+NpcComOnHp50 - Be careful out there.<br>The corruption is taking hold.
+NpcComOnHp10 - The Corrupted Aircraft is nearly destroyed.
+NpcComOnLanding - Not Used
+NpcComOnTimeNotice - It's been severely corrupted. Destroy it quickly<br>or they'll take it from us!
+NpcComOnSuccess - Sensors indicate the Corrupted Aircraft has<br>been destroyed. You've done well.
+NpcComOnFailure - The fighter plane is gone... What do those<br>damn Falspawn intend to do with it?
+
+
+type3
+Group 0
+
+Group 1
+
+

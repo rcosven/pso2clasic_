@@ -1,0 +1,72 @@
+ii_session_apc_5008.text was created: 04-07-2026 7:29:11
+Filesize is: 4960 bytes
+
+common
+Group 0
+Begin - 開始5008
+Success - 成功5008
+Failure - 失敗5008
+Dead - 自分死亡5008
+BuddyDead - 相手死亡5008
+Evolution - 発展5008
+
+Group 1
+Begin - Begin5008
+Success - Success5008
+Failure - Failure5008
+Dead - YouDied5008
+BuddyDead - PartnerDied5008
+Evolution - Evolution5008
+
+
+5026
+Group 0
+Begin - /mn1 /ci1 1 あの、リサさん。<br>殺気に誘われて、敵さんが<br>出てきてるんですけど……
+Success - /mn19 /ci1 1 あの、リサさん。<br>たしかケーキ屋さんを探してるって<br>話じゃありませんでしたっけ……
+Failure - /mn2 /ci4 1 ごっ、ごめんなさい。<br>撤退させてもらいます！
+Dead - /ci4 1 うう……ケーキ屋さんを<br>探しにきただけなのに<br>どうしてこんな目に……
+BuddyDead - /mn20 /ci2 1 あの、リサさん。<br>休憩にしてはボロボロすぎや<br>しませんか？
+Evolution - /ci1 1 私としては、早いところ<br>ケーキ屋さんに出てきて<br>欲しいんですが……
+
+Group 1
+Begin - /mn1 /ci1 1 Um, Risa. You're drawing in more <br>enemies with that vicious attitude...
+Success - /mn19 /ci1 1 Um, Risa? Aren't we supposed to <br>be out looking for a bakery?
+Failure - /mn2 /ci4 1 S-sorry to say this, but I'm getting out of here!
+Dead - /ci4 1 I only came out here to find the bakery... Why<br>did this have to happen...
+BuddyDead - /mn20 /ci2 1 Um, Risa? In the condition you're in, a break<br>won't cut it.
+Evolution - /ci1 1 Sure would be nice if that bakery turns<br>up soon...
+
+
+5026v2
+Group 0
+Begin - /ci1 1 あ、どうも。<br>いてもたってもいられなくて<br>リサさんについてきちゃいました。
+Success - /ci2 1 そうです、ここは私達に任せて<br>あなたは先に進んでください！
+Failure - リサさん！<br>すみません、帰還します！<br>マトイさんのこと、頼みました！
+Dead - うう……これ以上はきついです……
+BuddyDead - わわわ、リサさんが<br>怒っちゃったかも……
+
+Group 1
+Begin - /ci1 1 Oh, hey. I couldn't help myself, so I followed<br>Risa out here.
+Success - /ci2 1 Right, we'll take this area. You go on ahead!
+Failure - Risa! Sorry, but I'm leaving!<br>Take care of Matoi, okay?
+Dead - I can't take this any more...
+BuddyDead - Wow, wow, wow. I think Risa's pissed...
+
+
+5209
+Group 0
+Begin - /ci1 1 私も加勢しますよー！<br>まとめてやっちゃいましょう！
+Success - /ci2 1 私たちはここで陽動を続けます！<br>シバはとても手強いですけど<br>あなたたちならきっと大丈夫です！
+Failure - /mn2 /ci4 1 リリーパの子たちのためにも<br>頑張らなきゃいけなかったのに……<br>悔しいです……
+Dead - /ci4 1 ごめんなさい……<br>動けなくなってしまいました……<br>離脱します……
+BuddyDead - /ci1 4 メルランディアさん……！<br>はい、任せてください！
+
+Group 1
+Begin - /ci1 1 I’ll back you up!<br>Let’s line ‘em up and knock ‘em down!
+Success - /ci2 1 We’ll keep them busy here!<br>Shiva is very powerful,<br>but I know you will be okay!
+Failure - /mn2 /ci4 1 We were supposed to do our<br>best for the little Lillipans...<br>What a shame...
+Dead - /ci4 1 I'm sorry...<br>I froze up.<br>I'll be taking my leave...
+BuddyDead - /ci1 4 Melrandia...<br>Please, leave this to me!
+Evolution - /ci1 1 Sure would be nice if that bakery turns<br>up soon...
+
+

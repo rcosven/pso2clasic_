@@ -1,0 +1,181 @@
+ui_petlabo.text was created: 04-07-2026 7:34:49
+Filesize is: 20496 bytes
+
+Compress
+Group 0
+SetMessage1 - ロックされているキャンディーは圧縮できません。
+SetMessage2 - すでに限界まで圧縮されているため、<br>これ以上圧縮できません。
+CompressMessage - 圧縮を開始します。<br>よろしいですか？<br><br>※補助アイテムを使用することで、<br>　成功確率を上げることができます。
+CompressMessage_v - 圧縮を開始します。よろしいですか？<br>※補助アイテムを使用することで、<br>  成功確率を上げることができます。
+CompressResultMessage1 - 圧縮に<green>成功<c>しました。
+CompressResultMessage2 - 圧縮に<red>失敗<c>しました。
+CompressSize - サイズ
+CompressSizeNumber - $(0)x$(1)
+CompressItemCandy - アイテムパックから圧縮
+CompressCandyBoxCandy - キャンディーボックスから圧縮
+CompressCompareTitle - キャンディー圧縮内容
+CompressErrorMessage1 - 所持金が不足しています。
+CompressErrorMessage2 - $(0)が不足しています。
+CompressTypeSelectTitle - 圧縮対象の選択
+CompareMessage - <yellow>必要$(1)数：$(2) （現在：$(0)）<br>必要メセタ：$(4) （現在：$(3)）<c>
+CompressNoSupport1Item - 使用しない
+CompressSuccessRateMessage1 - <green>確実<c>
+CompressSuccessRateMessage2 - <c 00ffff>安全<c>
+CompressSuccessRateMessage3 - <yellow>注意<c>
+CompressSuccessRateMessage4 - <red>危険<c>
+CompressSuccessRateMessage5 - <red>危険<c>
+CompressSuccessRate - 成功確率
+SetErrorMessage - 限界まで圧縮されているため、<br>これ以上圧縮できません。
+CompressBackpackErrorMessage - アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。 
+CompressReturnButton - 戻る
+
+Group 1
+SetMessage1 - Locked Sweets can't be compressed.
+SetMessage2 - This item can no longer be compressed, <br>because it's reached its compression limit.
+CompressMessage - Commencing compression.<br>Are you sure you wish to proceed?<br><br>Note: You can use support items to improve the <br>success rate.
+CompressMessage_v - Commencing compression. <br>Are you sure you wish to proceed? <br>Note: You can use support items to improve success rate.
+CompressResultMessage1 - Compression <green>successful<c>.
+CompressResultMessage2 - Compression <red>failed<c>.
+CompressSize - Size
+CompressSizeNumber - $(0) x $(1)
+CompressItemCandy - Compress from Inventory
+CompressCandyBoxCandy - Compress From Sweets Box
+CompressCompareTitle - SWEET COMPRESSION DETAILS
+CompressErrorMessage1 - You don't have enough money.
+CompressErrorMessage2 - You do not have enough $(0).
+CompressTypeSelectTitle - SELECT SWEET TO COMPRESS
+CompareMessage - <yellow>$(1) Required: $(2) (You Have: $(0))<br>Meseta Required: $(4) (You Have: $(3))<c>
+CompressNoSupport1Item - Not Used
+CompressSuccessRateMessage1 - <green>Certain<c>
+CompressSuccessRateMessage2 - <c 00ffff>Safe Bet<c>
+CompressSuccessRateMessage3 - <yellow>Iffy<c>
+CompressSuccessRateMessage4 - <red>High Risk<c>
+CompressSuccessRateMessage5 - <red>High Risk<c>
+CompressSuccessRate - Success Rate
+SetErrorMessage - This item can no longer be compressed, <br>because it's reached its compression limit.
+CompressBackpackErrorMessage - Compression couldn't be completed because your <br>inventory is full, or you would exceed your carry limit. 
+CompressReturnButton - Back
+
+
+LaboShop
+Group 0
+FullSizeTitle - ペットラボ
+Info_PetLabo - <c f0df60>キャンディーを圧縮して小さくしたり、ペットのレアリティを進化させることができます。<c>
+Info_CandyFromPet - <c f0df60>キャンディーボックス上のキャンディーを圧縮できます。最初にキャンディーボックスを選択してください。<c>
+Info_CandyFromItem - <c f0df60>圧縮したいキャンディーを選択してください。（これ以上圧縮できないものは表示されません）<c>
+Info_CandyCheck - <c f0df60>キャンディー圧縮の最終確認画面です。<c>
+Info_Rename - <c f0df60>名前を変更したいペットを選択してください。<c>
+Info_Inheritance_PetList - <c f0df60>レアリティの高いエッグで、現在のペットのレアリティを上げられます。ペットを選択してください。<c>
+Info_Inheritance_EggList - <c f0df60>同種または上位種＆同等以上のレアリティのエッグを選んでください。エッグは<c ff4f3f>実行後に消滅します。<c>
+Info_Inheritance_AbilityList - <c f0df60>どちらの「性格」を引きつぎますか？　性格によって戦闘性能が変わります。<c>
+Info_Inheritance_Confirmation - <c f0df60>レアリティ進化の最終確認画面です。<c>
+info_SelectCompressType - <c f0df60>圧縮するとキャンディーのサイズが小さくなり、<c ff4f3f>より多くセット可能<c f0df60>になります。<c>
+info_ReverseEgg - <c f0df60>経験値とプラス値を残したままペットをエッグに戻すことができます。<c>
+Compare_Title - レアリティ進化情報
+Compare_Rarity - レアリティ
+Title - ペットラボメニュー
+Item_Candy - キャンディー圧縮
+Item_Rename - ペットネーム変更
+Item_Inheritance - ペットのレアリティ進化
+Item_Back - ペットをエッグに戻す
+Item_Release - 限界解放
+Item_Goods - ペットグッズショップ
+Item_Warehouse - 倉庫を開く
+Item_Exit - ペットラボを出る
+Error_Title - ペットラボ
+Info_Title - ペットラボ
+Info_Message_Unregister - ロック状態のアイテムが選択されています。<br>よろしいですか？
+Error_Candy_List_Empty - 圧縮できるキャンディーがありません。
+Error_Pet_List_Empty - ペットがいません。
+
+Group 1
+FullSizeTitle - PET LAB
+Info_PetLabo - <c f0df60>Here, you can compress and minimize Sweets and enhance the Rarity of your pets.<c>
+Info_CandyFromPet - <c f0df60>You can compress Sweets in your Sweets Box. First, select a Sweets Box.<c>
+Info_CandyFromItem - <c f0df60>Select a Sweet to compress. (Sweets that can't be compressed any further aren't displayed.)<c>
+Info_CandyCheck - <c f0df60>This is the final confirmation screen for compressing Sweets.<c>
+Info_Rename - <c f0df60>Select the pet whose name you want to change.<c>
+Info_Inheritance_PetList - <c f0df60>You can increase your pet's Rarity by using an egg with a higher Rarity. Select a pet.<c>
+Info_Inheritance_EggList - <c f0df60>Select an egg of the same type or its evolved form of equal or greater Rarity. The egg will <c ff4f3f>disappear upon use.<c>
+Info_Inheritance_AbilityList - <c f0df60>Which personality do you want to carry over? The personality will affect battle performance.<c>
+Info_Inheritance_Confirmation - <c f0df60>This is the final confirmation screen for Rarity Enhancement.<c>
+info_SelectCompressType - <c f0df60>Compressing a Sweet will make it smaller, allowing you to <c ff4f3f>fit more Sweets<c f0df60>.<c>
+info_ReverseEgg - <c f0df60>You can return a pet to an egg while retaining its EXP and Plus Value.<c>
+Compare_Title - RARITY ENHANCEMENT INFO
+Compare_Rarity - Rarity
+Title - PET LAB MENU
+Item_Candy - Compress Sweets
+Item_Rename - Change Pet Name
+Item_Inheritance - Pet Rarity Enhancement
+Item_Back - Return Pet to Egg
+Item_Release - Limit Unlock
+Item_Goods - Pet Supplies Shop
+Item_Warehouse - Open Storage
+Item_Exit - Leave the Pet Lab
+Error_Title - PET LAB
+Info_Title - PET LAB
+Info_Message_Unregister - A locked item has been selected.<br>Are you sure you wish to proceed?
+Error_Candy_List_Empty - You have no Sweets to compress.
+Error_Pet_List_Empty - No pet available.
+
+
+Inheritance
+Group 0
+Message_Title - レアリティ進化
+Inheritance_Message - レアリティ進化を開始します。<br>よろしいですか？
+Inheritance_Message_Reinforce - レアリティ進化を開始します。<br>よろしいですか？<br><br><red>※上位種のエッグが選択されています。<br>　レアリティ進化を行うと元の種族に戻せなくなります。<c><br><br><yellow>※装備中のペットを上位種に進化させた場合<br>　セットされているPAが外れます。<c>
+Inheritance_Result_OK - レアリティ進化に成功しました。
+Inheritance_Result_NG - レアリティ進化に失敗しました。
+Inheritance_Result_Reinforce - $(0)は、$(1)種にレアリティ進化しました。
+Inheritance_Error_NoItem1 - 条件に合うエッグがありません。<br>ロック非表示設定がONになっているか<br>「対象」として選んだペットと<yellow>同じ種族<c>または<yellow>上位種<c>かつ<br><yellow>それ以上のレアリティ<c>のエッグがありません。
+Inheritance_Error_NoItem2 - 条件に合うエッグがありません。<br>「対象」として選んだペットと<yellow>同じ種族<c>または<yellow>上位種<c>かつ<br><yellow>それ以上のレアリティ<c>のエッグがありません。
+Inheritance_Error_NoItem3 - 条件に合うエッグがありません。<br>ロック非表示設定がONになっているか<br>「対象」として選んだペットと<yellow>同じ種族<c>または<yellow>上位種<c>かつ<br><yellow>それ以上のレアリティ<c>のエッグがありません。
+Inheritance_Title - 上位種ペットへの進化確認
+Inheritance_Change_Message - 上位種ペットが選択されています。<br><red>上位種ペットに進化させると元のペットに戻せません。<c><br><br>よろしいですか？
+Inheritance_Change_Reinforce - 上位種ペットが選択されています。<br><red>上位種ペットに進化させると元のペットに戻せません。<c>
+Inheritance_Change_Color - <yellow>色違いのエッグが選択されているため、<br>ペットのカラーが変更されます。<c>
+Inheritance_Change_Confirm - よろしいですか？
+Inheritance_Confirm_Message - レアリティ進化を開始します。<br>よろしいですか？
+Inheritance_Confirm_Reinforce - <red>※上位種のエッグが選択されています。<br>　レアリティ進化を行うと元の種族に戻せなくなります。<c><br><yellow>※装備中のペットを上位種に進化させた場合<br>　セットされているPAが外れます。<c>
+Inheritance_Confirm_Color - <yellow>※色違いのエッグが選択されているため、<br>　ペットのカラーが変更されます。<c>
+
+Group 1
+Message_Title - RARITY ENHANCEMENT
+Inheritance_Message - Commencing Rarity Enhancement.<br>Are you sure you wish to proceed?
+Inheritance_Message_Reinforce - Commencing Rarity Enhancement.<br>Are you sure you wish to proceed?<br><red>Note: An evolved-form egg has been selected. You won't be <br>able to revert this pet back to its original form once you have<br>performed Rarity Enhancement.<c><br><br><yellow>Note: If you evolve an equipped pet, any PAs that have <br>been set will be removed.<c>
+Inheritance_Result_OK - Rarity Enhancement successful.
+Inheritance_Result_NG - Rarity Enhancement failed.
+Inheritance_Result_Reinforce - Rarity Enhancement has been performed and $(0) has become a $(1).
+Inheritance_Error_NoItem1 - There are no eggs that meet these requirements.<br>Either [Hide Locked Items] is set to ON, or you have no eggs <br>of the <yellow>same type<c> as the selected pet or its <yellow>evolved form<c> <br>of <yellow>equal or greater Rarity<c>.
+Inheritance_Error_NoItem2 - There are no eggs that meet these requirements.<br>You have no eggs of the <yellow>same type<c> <br>as the selected pet or its <yellow>evolved form<c><br>of <yellow>equal or greater Rarity<c>.
+Inheritance_Error_NoItem3 - There are no eggs that meet these requirements.<br>Either [Hide Locked Items] is set to ON, or you have no eggs <br>of the <yellow>same type<c> as the selected pet or its <yellow>evolved form<c>,<br>with a <yellow>higher Rarity<c>.
+Inheritance_Title - PET EVOLUTION CONFIRMATION
+Inheritance_Change_Message - An evolved-form pet is selected.<br><red>You won't be able to revert this pet back to its original form once you <br>have evolved it.<c><br><br>Are you sure you wish to proceed?
+Inheritance_Change_Reinforce - An evolved-form pet is selected.<br><red>You won't be able to revert this pet back to its original form once you have evolved it.<c>
+Inheritance_Change_Color - <yellow>Because a different-colored egg is selected, the pet's color will be <br>changed.<c>
+Inheritance_Change_Confirm - Are you sure you wish to proceed?
+Inheritance_Confirm_Message - Commencing Rarity Enhancement.<br>Are you sure you wish to proceed?
+Inheritance_Confirm_Reinforce - <red>Note: An evolved-form egg has been selected. You won't be able to revert this pet back <br>to its original form once you have performed Rarity Enhancement.<c><br><yellow>Note: If you evolve an equipped pet, any PAs that have been set will be removed.<c>
+Inheritance_Confirm_Color - <yellow>Note: Because a different-colored egg is selected, the pet's color will be changed.<c>
+
+
+ReverseEgg
+Group 0
+Message_Title - ペットをエッグに戻す
+Warning_Message - 以下のアイテムや効果はすべて削除されます。<br><red>エッグ合成：チャージした合成回数<c><br><red>キャンディーボックス：セットしているキャンディー<c><br><red>キャンディーボックス：削除したキャラメルキューブ<c><br>よろしいですか？
+Warning_Rarity - セットされているキャンディーの中に<br>レアリティ$(0)以上のキャンディーが含まれています。<br>本当に実行してもよろしいですか？
+FinalConfirm_Message - ペット『$(2)』をエッグに戻します。<br>よろしいですか？<br>※<yellow>オーナー登録<c>が行われ、他のプレイヤーとの<br>取引ができなくなります。<br><br><red>※以下のアイテムや効果はすべて削除され<br>合成可能回数は０となります。<c><br>セット中のキャンディー数：$(0)<br>残り<pict pet_stone_yellow>合成可能数：$(1)<br>削除した全てのキャラメルキューブ
+Result - ペットをエッグに戻しました。
+ReverseEggBackpackErrorMessage - アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>エッグに戻せませんでした。
+FinalConfirm_GuideBar - <c f0df60>エッグに戻す最終確認画面です。<c>
+
+Group 1
+Message_Title - RETURN PET TO EGG
+Warning_Message - The following items and effects will be deleted.<br><red>Egg Synthesis: The number of times synthesized.<c><br><red>Sweets Box: Any Sweets that have been set.<c><br><red>Sweets Box: Any Caramel Cubes that were crushed.<c><br>Are you sure you wish to proceed?
+Warning_Rarity - There is one or more Sweets with a Rarity of $(0) or greater <br>among the Sweets that have been set.<br>Are you sure you wish to proceed?
+FinalConfirm_Message - Returning pet $(2) to an egg.<br>Are you sure you wish to proceed?<br>Note: The egg will be <yellow>registered to its owner<c> and can't <br>be traded with other players.<br><br><red>Note: The following items and effects will be deleted and <br>the Synthesis Points will be reset to 0.<c><br>Number of Sweets Set: $(0)<br>Remaining <pict pet_stone_yellow> Synthesis Points: $(1)<br>Caramel Cubes Crushed:
+Result - Pet has been returned to an egg.
+ReverseEggBackpackErrorMessage - Couldn't return pet to an egg because you don't<br>have enough space in your inventory, or you would<br>exceed your carry limit.
+FinalConfirm_GuideBar - <c f0df60>Final confirmation to return pet to egg.<c>
+
+

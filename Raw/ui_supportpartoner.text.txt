@@ -1,0 +1,241 @@
+ui_supportpartoner.text was created: 04-07-2026 7:32:52
+Filesize is: 16576 bytes
+
+Common
+Group 0
+ReturnText - 戻る
+ItemDetails - アイテム詳細
+PreviewTitle - プレビュー
+Close - 閉じる
+
+Group 1
+ReturnText - Back
+ItemDetails - Item Details
+PreviewTitle - PREVIEW
+Close - Close
+
+
+PartnerCustom
+Group 0
+PartnerCustom - パートナー装備カスタム
+Weapon - 武器交換
+Back - リアユニット交換
+Arm - アームユニット交換
+Leg - レッグユニット交換
+Costume - コスチューム交換
+BodyParts - ボディパーツ交換
+ArmParts - アームパーツ交換
+LegParts - レッグパーツ交換
+WeaponAvatar - 武器迷彩交換
+PetEgg - エッグ交換
+ItemPacTitle - 候補リスト
+PartnerEquipInfo - 装備情報
+Delete - 装備を外す
+PresentEquipment - 現在の装備
+SwitchVita - <pict Sign_TRIANGLE>切替
+
+Group 1
+PartnerCustom - Customize Auxiliary's Equipment
+Weapon - Swap Weapon
+Back - Swap Back Unit
+Arm - Swap Arm Unit
+Leg - Swap Leg Unit
+Costume - Swap Outfit
+BodyParts - Swap Body Parts
+ArmParts - Swap Arm Parts
+LegParts - Swap Leg Parts
+WeaponAvatar - Swap Weapon Camo
+PetEgg - Swap Egg
+ItemPacTitle - CANDIDATE LIST
+PartnerEquipInfo - Equipment Information
+Delete - Remove Equipment
+PresentEquipment - Current Equipment
+SwitchVita - Switch <pict Sign_TRIANGLE>
+
+
+Leave
+Group 0
+LeaveMessage - サポートパートナーに席を外させ、<br>一時的に部屋にいない状態にできます。<br><br>「サポートパートナーを呼び出す」を選ぶと<br>ふたたび呼び戻すことができます。<br><br>席を外させますか？
+LeaveMessage2 - 席を外させました。
+
+Group 1
+LeaveMessage - Allows you to temporarily dismiss your Auxiliary.<br><br>You can call your Auxiliary back again by<br>selecting [Summon Auxiliary].<br><br>Do you want to temporarily dismiss your Auxiliary?
+LeaveMessage2 - Your Auxiliary left.
+
+
+Result
+Group 0
+ReceiptMessage - $(0)から<br>以下のアイテムを受け取りました。
+GetExpTitle - 取得経験値
+GetExp - 今回の取得経験値
+Exp - 経験値
+Level - Lv.
+NextLevel - 次のレベルまで
+QuestTitle - 探索結果報告
+QuestOrder - 手伝ったオーダー
+ItemTitle - 取得アイテム受け取り
+Success - 成功
+Failure - 失敗
+
+Group 1
+ReceiptMessage - Received the following item(s) from $(0).
+GetExpTitle - EXP EARNED
+GetExp - EXP Earned This Time
+Exp - EXP
+Level - Lv.
+NextLevel - Until Next Level
+QuestTitle - SEARCH RESULTS
+QuestOrder - Orders Assisted
+ItemTitle - ACQUIRED ITEMS RECEIVED
+Success - Success
+Failure - Failure
+
+
+Menu
+Group 0
+Top_Title - サポートパートナーメニュー
+Explain_Top - <c f0df60>サポートパートナーにいろいろな指示を出すことができます。<c>
+Explain_Order - <c f0df60>あなたが受注しているオーダーの一部を手伝わせることができます。あと <c ff4f3f>$(0)件<c f0df60> 選択できます。<c>
+Explain_OrderCancel - <c f0df60>手伝わせている探索をすべて中止させます。<c>
+Explain_Status - <c f0df60>サポートパートナーのステータスや装備情報を確認できます。<c>
+Explain_SubClass - <c f0df60>サポートパートナーのサブクラスを変更することができます。<c>
+Explain_Talk - <c f0df60>サポートパートナーと話をします。<c>
+Explain_Equip - <c f0df60>装備を変更できます。装備品を選ぶと、それを<c ff4f3f>装備可能なクラスに変更させる<c f0df60>ことができます。<c>
+Explain_Move - <space>
+Explain_Return - <c f0df60>サポートパートナーに一時的に席を外させます。<c>
+Explain_Back - <space>
+Explain_Pose - <c f0df60>サポートパートナーのポーズを選択できます。<c>
+AccessMenu_Title - サポートパートナーメニュー
+AccessMenu_Order - 探索指示を出す
+AccessMenu_OrderCancel - 探索を中止する
+AccessMenu_Status - パートナー情報を見る
+AccessMenu_Talk - 話をする
+AccessMenu_Equip - 装備をカスタムする
+AccessMenu_Move - グッズを動かす
+AccessMenu_Return - 席を外させる
+AccessMenu_Back - この場を離れる
+AccessMenu_SubClass - サブクラスを設定する
+AccessMenu_Pose - ポーズを選択する
+Pose_FormTitle - ポーズ選択
+Warehouse - 倉庫を開く
+MyRoomMenu_Order - 探索指示を出す
+MyRoomMenu_OrderCancel - 探索を中止させる
+MyRoomMenu_OrderResult - 探索結果を報告させる
+MyRoomMenu_Status - パートナー情報を見る
+DictatePartner - 探索指示を出す
+OrderSelect - オーダーを選ぶ
+PartnerStart - 探索に出発させる
+PartnerCancel - 探索を中止させる
+PartnerOverStartMessage - 一度に手伝い可能なオーダー数は<br>$(0)件 までです。<br>このオーダーを選択する場合は、<br>1件以上選びなおしてください。
+PartnerStartMessage - 手伝うオーダー数： $(0)件　（最大 $(1)件）<br>終了予定時間： $(2)後<br><br>この内容で、探索に出発させます。<br>よろしいですか？
+PartnerStartMessage2 - 出発させました。
+PartnerFaliedMessage - オーダーが選択されていません。<br>あなたが受注しているオーダーから、<br>サポートパートナーに手伝わせたい<br>オーダーを選択してください。
+PartnerCancelMessage - 現在の探索を中止させ、<br>マイルームに戻らせることができます。<br><br>中止させた場合、探索による<br>アイテムや経験値などは得られません。<br><br>探索を中止させますか？
+PartnerCancelMessage2 - 探索を中止させました。
+PartnerCancelMessage3 - 現在の探索を中止させることができます。<br><br>中止させた場合、探索による<br>アイテムや経験値などは得られません。<br><br>探索を中止させますか？
+PartnerChangeJobMessage - この武器を装備するために<br>サポートパートナーのクラスを<br>$(0)に変更させます。<br><br>よろしいですか？
+PartnerChangeJobError - この武器を装備できるクラスには<br>変更できません。
+PartnerChangeEquipSuccess - 装備を変更しました。
+PartnerChangeEquipError1 - 装備変更に失敗しました。
+PartnerChangeEquipError2 - あなたが装備中のアイテムは<br>渡すことができません。
+PartnerChangeEquipError3 - ロック中のアイテムは<br>渡すことができません。
+PartnerChangeEquipError4 - 種族制限のため<br>装備を変更することができません。
+PartnerChangeEquipError5 - 性別制限のため<br>装備を変更することができません。
+PartnerChangeEquipError6 - クラス制限のため<br>装備を変更することができません。
+PartnerChangeEquipError7 - クラス変更制限のため<br>装備を変更することができません。
+PartnerChangeEquipError8 - サポートパートナーの<br>クラス変更に失敗しました。
+PartnerChangeEquipError9 - サポートパートナーの<br>装備変更に失敗しました。
+PartnerChangeEquipError10 - サポートパートナーの<br>装備変更の処理に<br>失敗しました。
+PartnerChangeEquipError11 - 未鑑定のアイテムは<br>渡すことができません。
+PartnerChangeEquipError12 - アイテムパックの空き容量不足のため<br>装備を外すことができません。
+PartnerChangeSubclassSuccess - サブクラスを変更しました。
+PartnerChangeSubclassError - サポートパートナーの<br>サブクラス変更に失敗しました。
+PartnerChangeSameSubclass - $(0)は現在のサブクラスです。
+StartCheckButton1 - 出発
+StartCheckButton2 - 姿を残して出発
+
+Group 1
+Top_Title - AUXILIARY MENU
+Explain_Top - <c f0df60>Issue a variety of commands to your Auxiliary.<c>
+Explain_Order - <c f0df60>Your Auxiliary can help you with a portion of the orders you have accepted. You can select <c ff4f3f>$(0) <c f0df60>more orders.<c>
+Explain_OrderCancel - <c f0df60>Cancels all searches that your Auxiliary is helping you with.<c>
+Explain_Status - <c f0df60>Allows you to check your Auxiliary's stats and equipment.<c>
+Explain_SubClass - <c f0df60>Change your Auxiliary's Sub-Class.<c>
+Explain_Talk - <c f0df60>Talk with your Auxiliary.<c>
+Explain_Equip - <c f0df60>You can change your auxiliary's equipment. <c f0df60>Once selected, you can <c ff4f3f>change it to an equippable class.<c>
+Explain_Move - <space>
+Explain_Return - <c f0df60>Temporarily dismisses your Auxiliary.<c>
+Explain_Back - <space>
+Explain_Pose - <c f0df60>You can choose your Auxiliary's pose.<c>
+AccessMenu_Title - AUXILIARY MENU
+AccessMenu_Order - Send on Search
+AccessMenu_OrderCancel - Cancel Search
+AccessMenu_Status - View Auxiliary Information
+AccessMenu_Talk - Talk
+AccessMenu_Equip - Customize Equipment
+AccessMenu_Move - Move Furnishings
+AccessMenu_Return - Dismiss Temporarily
+AccessMenu_Back - Leave
+AccessMenu_SubClass - Set Sub-Class
+AccessMenu_Pose - Select Pose
+Pose_FormTitle - SELECT POSE
+Warehouse - Open Storage
+MyRoomMenu_Order - Send on Search
+MyRoomMenu_OrderCancel - Cancel Search
+MyRoomMenu_OrderResult - Report Search Results
+MyRoomMenu_Status - View Auxiliary Information
+DictatePartner - Send on Search
+OrderSelect - Select Order
+PartnerStart - Send on Search
+PartnerCancel - Cancel Search
+PartnerOverStartMessage - Your Auxiliary can only assist with up to<br>$(0) orders.<br>If you would like to select this order, please deselect some other order.
+PartnerStartMessage - No. of Order Assists: $(0) (Max: $(1))<br>Estimated Completion Time: $(2).<br><br>Are you sure you want to send your Auxiliary out with these orders?
+PartnerStartMessage2 - Your Auxiliary has been sent.
+PartnerFaliedMessage - No orders selected. Please select the orders you<br>would like your Auxiliary to assist you with from<br>the ones you have accepted.
+PartnerCancelMessage - You can cancel your Auxiliary's current search and have it return to your Personal Quarters.<br><br>You won't receive items or EXP earned during the search if you cancel.<br><br>Are you sure you want to cancel the search?
+PartnerCancelMessage2 - Search canceled.
+PartnerCancelMessage3 - You can cancel the current search.<br><br>You won't receive items or EXP earned during the search if you cancel.<br><br>Are you sure you want to cancel the search?
+PartnerChangeJobMessage - Your Auxiliary's class will be changed to $(0) in order to equip this weapon.<br>Are you sure you wish to proceed?
+PartnerChangeJobError - Your Auxiliary can't be changed to a class that can equip this weapon.
+PartnerChangeEquipSuccess - Equipment changed.
+PartnerChangeEquipError1 - Failed to change equipment.
+PartnerChangeEquipError2 - You can't give your Auxiliary an item that you currently have equipped.
+PartnerChangeEquipError3 - You can't give your Auxiliary an item that's been locked.
+PartnerChangeEquipError4 - The equipment can't be changed due to race restrictions.
+PartnerChangeEquipError5 - The equipment can't be changed due to gender restrictions.
+PartnerChangeEquipError6 - The equipment can't be changed due to class restrictions.
+PartnerChangeEquipError7 - The equipment can't be changed due to class-change restrictions.
+PartnerChangeEquipError8 - Failed to change your Auxiliary's class.
+PartnerChangeEquipError9 - Failed to change your Auxiliary's equipment.
+PartnerChangeEquipError10 - Failed to process your Auxiliary's equipment change.
+PartnerChangeEquipError11 - You can't give your Auxiliary an unappraised item.
+PartnerChangeEquipError12 - The equipment can't be removed because there isn't enough room in your inventory.
+PartnerChangeSubclassSuccess - Sub-Class changed.
+PartnerChangeSubclassError - Failed to change your Auxiliary's Sub-Class.
+PartnerChangeSameSubclass - Current Sub-Class: $(0).
+StartCheckButton1 - Send
+StartCheckButton2 - Send (Keep image)
+
+
+Status
+Group 0
+Leave - 　（あと $(0)）
+
+Group 1
+Leave - 　($(0) Remaining)
+
+
+SubClass
+Group 0
+SubClassSelectTitle - サブクラスの選択
+SubClassChangeMessage - サポートパートナーのサブクラスを<br>$(0)に変更させます。<br><br>よろしいですか？
+ClassList - クラスリスト
+ClassLevel - Lv.(MAX)
+
+Group 1
+SubClassSelectTitle - SELECT SUB-CLASS
+SubClassChangeMessage - Are you sure you want to change your Auxiliary's Sub-Class<br>to $(0)?
+ClassList - Class List
+ClassLevel - Level (MAX)
+
+

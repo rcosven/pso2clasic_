@@ -1,0 +1,83 @@
+quest_00080340.text was created: 04-07-2026 7:32:45
+Filesize is: 5760 bytes
+
+Basic
+Group 0
+Title - 砂上遊園アークマランド
+Explanation - 全アークスに告ぐ。私はアークマである。<br>貴君らが楽しめる訓練を用意した。<br>内容は簡単。定められた時間内に<br>多くの敵を倒しハイスコアを記録せよ。<br>なお道中のエマージェンシートライアルは<br>スコアを稼ぐには欠かせないものである。<br>各員、積極的な挑戦を推奨する。<br>――――――――――――――――――――<br>ルーム内のスコア共有<br>制限時間経過でクエスト終了
+
+Group 1
+Title - Sand Playground Arkumaland
+Explanation - This is a message for all ARKS operatives.<br>My name is Arkuma and I have prepared a<br>special training program for your pleasure<br>and edification. The premise is simple.<br>Defeat as many enemies as possible within<br>the allotted time to beat the high score.<br>Note that the Emergency Trials you encounter<br>along the way are essential for increasing<br>your score. Are you ready for a real challenge?<br>-------------------------------------------<br>Intra-room score sharing is active.<br>The quest will end when the time limit expires.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - エネミーを撃破しスコアを獲得せよ！
+
+Group 1
+SimpleExplanation - Destroy enemies to increase your score!
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - 参集に感謝する。<br>これより、エネミーの撃破数による<br>スコアアタックに挑戦されたし。
+NpcComMsg2 - なお、クエストの途中で発生する<br>エマージェンシートライアルには<br>トライアルオーダーを設定している。
+NpcComMsg3 - 達成により「スコア上昇倍率」が向上。<br>高得点が期待されるため、各員積極的に<br>挑戦されたし。以上。
+
+Group 1
+NpcComMsg1 - Thank you to all our participants.<br>Next up is Score Attack mode wherein you will earn<br>points depending on the number<br>of enemies defeated.
+NpcComMsg2 - Note that Trial Orders have been established<br>for the Emergency Trials which are<br>triggered during the quest.
+NpcComMsg3 - By completing them, you can increase your<br>"Score Multiplier." All participants wishing to<br>maximize their score are advised to take each<br>challenge on proactively. That is all.
+
+
+AreaName
+Group 0
+Area0S - 採掘場跡エリア1
+Area0L - 惑星リリーパ 採掘場跡エリア1
+Area1S - 採掘場跡エリア2
+Area1L - 惑星リリーパ 採掘場跡エリア2
+
+Group 1
+Area0S - Abandoned Mine Area 1
+Area0L - Lillipa - Abandoned Mine Area 1
+Area1S - Abandoned Mine Area 2
+Area1L - Lillipa - Abandoned Mine Area 2
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Clear a special Client Order
+a2 - Clear a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+
+
+NpcMessage
+Group 0
+NPC_QUEST_START - クエストを開始する。<br>より多くのエネミーを撃破し<br>自身のハイスコアを更新せよ。
+NPC_TIME_HALF - 予告：終了時刻まで、半分となった。<br>トライアルオーダーの達成をめざし<br>倍率を上げ高得点を取得せよ。
+NPC_TIME_1MIN - 予告：終了時刻まで、あと１分。<br>最後まで、各自奮闘せよ。
+
+Group 1
+NPC_QUEST_START - The quest starts now.<br>Defeat as many enemies as you can and<br>beat your high score.
+NPC_TIME_HALF - Warning: You've reached the halfway point.<br>Try and complete a Trial Order to increase<br>your multiplier for more points.
+NPC_TIME_1MIN - Warning: Only one minute left until time runs out.<br>Keep fighting until the end.
+
+
+LineMessage
+Group 0
+LINE_QUEST_START - エネミーを撃破しスコアを獲得せよ！
+LINE_TIME_1MIN - 残り時間、あと1分！
+
+Group 1
+LINE_QUEST_START - Destroy enemies to increase your score!
+LINE_TIME_1MIN - Only one minute left!
+
+

@@ -1,0 +1,123 @@
+quest_00100040.text was created: 04-07-2026 7:32:53
+Filesize is: 14624 bytes
+
+Basic
+Group 0
+Title - 採掘基地防衛戦：終焉
+Explanation - アークス各員に緊急連絡。<br>惑星リリーパの採掘基地の地下より<br>【若人】と思われる強大な反応を確認した。<br>新型フォトン粒子砲を搭載した地中探査艇で<br>【若人】の下へ向かい、これを討伐せよ。<br>作戦中にダーカーの襲来が予想されるため<br>探査艇の拠点が破壊されないよう注意せよ。<br>――――――――――――――――――――<br>全6ウェーブ<br>失敗条件/全拠点の陥落
+
+Group 1
+Title - Mining Base Def. Op.: Ending
+Explanation - This is a notice to all ARKS members. We<br>detected a signal thought to correspond<br>to Apprentice the Vernal coming from<br>the Mining Base on Lillipa. Get underneath<br>using an underground exploration craft<br>Particle Cannon and suppress the beast. We<br>anticipate Falspawn will attack during this<br>operation, ensure they do not destroy the base site.<br>--------------------------------------------------<br>Total of 6 waves. You will fail if all base sites fall.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 採掘基地を防衛せよ！
+
+Group 1
+SimpleExplanation - Defend the Mining Base!
+
+
+Defense
+Group 0
+Wave1_Talk - 強力なダーカーの出現を確認！<br>Ａ．Ｉ．Ｓや銃座を惜しみなく使って<br>どんどん撃破しちゃいましょう！
+Wave2_Talk - たっ、多数のダーカーの出現を確認！<br>拠点に大ダメージを与えてきます！<br>破壊される前に倒しちゃってください！
+Wave3_Talk - 侵食されたＡ．Ｉ．Ｓの出現を確認！<br>耐性があるので、Ａ．Ｉ．Ｓ同士での<br>戦闘は避けてくださーい！
+Wave4_Talk - 侵食Ａ．Ｉ．Ｓの出現と<br>ダーカーの砲台発生を確認！<br>ビームに気をつけてくださーい！
+Wave5_Talk - 【若人】まで後もう少し！<br>ダーカーがたくさんですが……<br>くじけずに頑張りましょう！
+Wave6_Talk - 【若人】の出現を確認しましたっ！<br>新型フォトン粒子砲が発射できるまで<br>【若人】を弱らせてください！
+Wave1_Talk_Cool - 【若人】討伐作戦開始です！<br>ダーカーの襲撃が予想されますよ！<br>正結晶を集めて備えましょう！
+Wave2_Talk_Cool - 拠点は一つでも残っていれば<br>【若人】を倒すことができます！<br>全部破壊されないように注意ですよー！
+Wave3_Talk_Cool - なんとか乗り切れましたね……って<br>大変、大変です！　出撃準備中の<br>Ａ．Ｉ．Ｓが、侵食されていますー！
+Wave4_Talk_Cool - 侵食されたＡ．Ｉ．Ｓの<br>フォトンブラスターは破壊できますよ！<br>撃たれても破壊すれば止められます！
+Wave5_Talk_Cool - 最深部に近づいてきましたよー！<br>【若人】の襲撃に備えて正結晶の回収と<br>拠点の耐久値を回復しましょう！
+Wave6_Talk_Cool - わわっ！　最深部に侵食液を確認！<br>探査艇の高い場所へ避難して<br>急停止の衝撃に備えてください！
+NpcCom00 - NPC通信：クールタイム開始Type9
+NpcCom01 - ……うう、拠点、全壊しちゃいました。<br>仕方ありません、帰還してください。
+NpcCom02 - お疲れ様でした！ 素晴らしい<br>活躍だったと思います！<br>それでは、帰還してください。
+NpcCom03 - お疲れ様でした。すこーし損害が<br>出てしまいましたが、許容範囲です。<br>それでは、帰還して下さい。
+NpcCom04 - お疲れ様でした。かなり被害が<br>出てしまいましたが、仕方ありません。<br>帰還して下さい。
+NpcCom05 - お疲れ様でした。<br>次回は防衛に貢献できるように<br>頑張りましょう！
+NpcCom06 - わわっ、わわわっ！<br>きょ、強力な敵性反応を確認ですー！<br>みなさん、警戒、警戒ですよ－！
+NpcCom07 - $(0)拠点が襲われています！<br>はやく救援に向かってくださいー！
+NpcCom08 - ああっ！<br>$(0)拠点が陥落寸前です！<br>急いで救援に向かってください！
+NpcCom09 - わわっ、何この反応っ！<br>だ、ダーカーが強化されちゃってる！<br>注意注意、要注意ですー！
+NpcCom10 - 敵さんの反応が減ってきましたよ！<br>もう少し、もう少しですよー！
+NpcCom11 - 敵性反応あと僅か！　もう一息です！<br>がんばってくださいー！
+NpcCom12 - ああっ、危ない！　逃げて逃げて！<br>生き残ったゴルドラーダが自爆します！
+NpcCom12_Last - やったやった、やりました！<br>ダーカーが諦めて撤退していきます！
+NpcCom13 - 拠点、破壊されちゃいました！<br>残り１つ、これだけはなんとしても<br>守りきってください！　頑張って！
+NpcCom14 - はわわっ！？<br>拠点、破壊されちゃいました！<br>残り２つをなんとか守って下さいー！
+NpcCom15 - NPC通信：拠点破壊時に残り拠点が３つType9
+NpcCom16 - NPC通信：拠点破壊時に残り拠点が4つType9
+barricade0 - NPC通信：第一防衛ラインバリケード破壊時Type9
+barricade1 - NPC通信：第二防衛ラインバリケード破壊時Type9
+barricade2 - NPC通信：最終防衛ラインバリケード破壊時Type9
+
+Group 1
+Wave1_Talk - Confirmed the appearance of powerful<br>Falspawn! Don't be afraid to use an<br>AIS or a turret to mow them down!
+Wave2_Talk - Confirmed the appearance of a<br>Falspawn horde! The bases are taking<br>heavy damage! Take em out now!
+Wave3_Talk - We've identified a corrupted AIS!<br>These guys are tough, so engaging<br>with another AIS is not advised!
+Wave4_Talk - Corrupted AIS sighted<br>and Falspawn cannon discharge confirmed!<br>Watch out for the beam!
+Wave5_Talk - Apprentice the Vernal is close!<br>There sure are a lot of Falspawn, but let's<br>press on ahead!
+Wave6_Talk - Apprentice the Vernal has finally shown himself!<br>Weaken him until the newly commissioned<br>Photon Particle Cannon is ready to fire!
+Wave1_Talk_Cool - Beginning maneuvers to suppress Apprentice<br>the Vernal! Multiple Falspawn attacks are<br>anticipated, so collect Positive Crystals<br>while you can!
+Wave2_Talk_Cool - We can defeat Apprentice the Vernal as<br>long as we have even one site left! Make<br>sure that they aren't all destroyed!
+Wave3_Talk_Cool - Hey, you did it...Oh? Oh no! An AIS getting<br>ready to attack is being corrupted!
+Wave4_Talk_Cool - You can destroy the corrupted AIS's photon<br>blaster! See if you can prevent further attacks<br>by destroying it!
+Wave5_Talk_Cool - Almost at the final area! Collect Positive<br>Crystals and reinforce the sites to steel<br>against Apprentice the Vernal's attacks!
+Wave6_Talk_Cool - Whoa, we've confirmed erosive fluids<br>in the final area! Evacuate to the highest<br>area in the exploration craft, and brace<br>for sudden stop impact!
+NpcCom00 - NPC Communication:<br>Start of Cooldown Time Type9
+NpcCom01 - Aww, all sites have been destroyed.<br>Well, that's how it goes sometimes.<br>Prepare to return.
+NpcCom02 - Operation complete!<br>Wow, you did really great!<br>Now come on back!
+NpcCom03 - Operation complete. We took a few<br>knocks, but nothing we can't handle.<br>Now it's time for you to return.
+NpcCom04 - Operation complete. We took a real<br>beating, but that can't be helped.<br>Please return.
+NpcCom05 - Operation complete. Next time try<br>contributing more to defense!
+NpcCom06 - Whoa whoa whoa whoa!<br>I've confirmed some very strong enemy<br>readings! Be careful, everyone!
+NpcCom07 - Site $(0) is under attack!<br>Hurry to their rescue!
+NpcCom08 - Oh! Site $(0) is about to fall!<br>This is not good at all! Hurry up and<br>help them out!
+NpcCom09 - Whoa, what's going on with this reading!<br>Th...the Falspawn are getting stronger!<br>Be very, very careful!
+NpcCom10 - The enemy readings are decreasing!<br>Just a little bit more!
+NpcCom11 - Only faint enemy readings remain!<br>We're almost there, keep on pressing on!
+NpcCom12 - Whoa! Everyone, get out of there!<br>The remaining Goldrahda are going<br>to self-destruct!
+NpcCom12_Last - Yes, we did it! The Falspawn are<br>giving up and retreating!
+NpcCom13 - A site has been destroyed! There's only<br>one left, so you have to protect it no<br>matter what!
+NpcCom14 - Oh what?! A site has been destroyed!<br>Please defend the remaining two!
+NpcCom15 - NPC Communication:<br>Site Destroyed with Three Sites Remaining Type9
+NpcCom16 - NPC Communication:<br>Site Destroyed with Four Sites Remaining Type9
+barricade0 - NPC Communication:<br>Primary Defensive Line Barricade Destroyed Type9
+barricade1 - NPC Communication:<br>Secondary Defensive Line Barricade Destroyed Type9
+barricade2 - NPC Communication:<br>Final Defensive Line Barricade Destroyed Type9
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1_Meritta - まもなく転送開始ですよー！<br>地中探査艇でダークファルス【若人】の<br>もとへ向かってくださいっ！
+NpcComMsg2_Meritta - あとあとっ、新型フォトン粒子砲は<br>エネルギータンクが要です！<br>破壊されないように、守ってください！
+NpcComMsg1 - まもなく転送を行います！<br>どうか、【若人】の復活を<br>阻止してください！
+NpcComMsg2 - A.I.Sも使用可能です！<br>使用回数には注意してくださいねー！<br>それでは、ご武運をー！
+
+Group 1
+NpcComMsg1_Meritta - Initiating teleportation!<br>Proceed to Apprentice the Vernal's location<br>using the underground exploration craft!
+NpcComMsg2_Meritta - Just a reminder that the newly developed<br>Photon Particle Cannon requires an energy tank<br>to work! Make sure it isn't destroyed!
+NpcComMsg1 - Teleportation will commence shortly!<br>We'll all trusting you to put a stop to <br>[Apprentice]'s resurrection.
+NpcComMsg2 - AISs are available for this mission.<br>Mind their limited deployment capacity <br>though. Good luck out there!
+
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special Client Order
+a2 - Complete a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+

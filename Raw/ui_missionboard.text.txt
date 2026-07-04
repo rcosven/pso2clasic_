@@ -1,0 +1,208 @@
+ui_missionboard.text was created: 04-07-2026 7:34:31
+Filesize is: 15440 bytes
+
+MissionBoard
+Group 0
+MissionProgress - 簡易ミッション情報
+MissionOrder - クライアントオーダー
+MissionBoard - アークスミッション
+MissionWebLink - WEBページリンク(仮
+MissionWebSubheading - 開催中のキャンペーン(仮
+MissionProgressTab - 進行中
+MissionRecievedTab - 受け取り済み
+MissionSqueezeNew - 新着のみ表示
+MissionRecieveAll - 全て受け取る
+MissionRecieveAll_P - <%MultiSelect>全て受け取る
+MissionRecieveAll_V - 全て受け取る
+MissionReciveOne - <%AcceptK>で報酬を受け取る
+MissionReciveOne_P - <%AcceptP>で報酬を受け取る
+MissionReciveOne_V - <%AcceptV>で報酬を受け取る
+MissionTrack - <pict Arksroicon>追跡中
+MissionTracking - <%AcceptK>で目的地を表示する
+MissionTracking_P - <%AcceptP>で目的地を表示する
+MissionTracking_V - <%AcceptV>で目的地を表示する
+MissionTracking_OFF - <%AcceptK>で目的地の表示をやめる
+MissionTracking_OFF_P - <%AcceptP>で目的地の表示をやめる
+MissionTracking_OFF_V - <%AcceptV>で目的地の表示をやめる
+MissionDetail - ミッション詳細
+MissionTimeLimitCampaign1 - キャンペーン終了　$(0)
+MissionTimeLimitCampaign2 - 受け取り期限　$(0)
+MissionTimeLimitEvent - 有効期限　$(0)
+MissionTimeLimitEtc - 有効期限　$(0)
+MissionTimeLimitUnlimited - 有効期限　なし
+MissionDetail_limited_Issue - <c ff4f3f>※アイテムはアカウントにつき1回のみ受け取れます。<c>
+MissionDetail_limited_Issue_Received - ※アカウント制限のアイテムは受け取り済みです。
+MissionDetail_Repeat_Issue - ※このミッションは<pict repeat>繰り返しプレイが可能です。
+MissionDetail_Repeat_CoolDown - ※再プレイ可能　$(0)
+MissionDetailSwitching - <pict Key_SHIFT>キーでアイテム詳細を表示
+MissionDetailSwitching_P - <%Function>でアイテム詳細を表示
+MissionDetailSwitching_V - <pict Sign_TRIANGLE>でアイテム詳細を表示
+MissionDetail_MissionDetail - 有効期限/目的詳細
+MissionRewardDetail - アイテム詳細
+MissionRewardDetailSwitching - <pict Key_SHIFT>キーでミッション詳細を表示
+MissionRewardDetailSwitching_P - <%Function>でミッション詳細を表示
+MissionRewardDetailSwitching_V - <pict Sign_TRIANGLE>でミッション詳細を表示
+MissionCampaignLink - <%ChangeCtrlWindowForward>でWEBページへ
+MissionCampaignLink_P - <%WEBLinkP>でWEBページへ
+MissionRewardCampaignDetail - キャンペーン達成報酬一覧
+MissionRewardCampaignSwitching - <pict Key_SHIFT>キーでキャンペーン報酬一覧を表示
+MissionRewardCampaignSwitching_P - <%Function>キーでキャンペーン報酬一覧を表示
+MissionRewardCampaignSwitching_V - <pict Sign_TRIANGLE>キーでキャンペーン報酬一覧を表示
+MissionBoardOpen - <pict Sign_SQUARE>でアークスミッションへ
+MissionBoardOpen_P - <%MissionShortCutP>でアークスミッションへ
+MissionBoardOpen_Function - <%Function>でアークスミッションへ
+MissionBoardOpen_MultiSelect - <%MultiSelect>でアークスミッションへ
+MissionBoardOpen_V - <%MissionShortCutV>でアークスミッションへ
+MissionHeldCampaign - 開催中のキャンペーン
+MissionWebLinkOpen - <%ChangeCtrlWindowForward>でWEBページリンク選択へ
+MissionWebLinkOpen_P - <%ChangeWindowActiveP>でWEBページリンク選択へ
+MissionRate - $(0)%
+MissionRateMax - <yellow>達成<c>
+Missionlist - ミッション一覧
+MissionTimeLimitHead - 更新日時
+MissionDaily - デイリーミッション
+MissionDailyLimit - 毎日<utc>08:00</utc>
+MissionWeekly - ウィークリーミッション
+MissionWeeklyLimit - <utcdow>水曜日23:00</utcdow>
+MissionTier - -
+MissionTierLimit - -
+MissionBoardCampaign - キャンペーン
+MissionBoardEvent - イベント
+MissionBoardDailyWeekly - デイリー/ウィークリー
+MissionBoardTutorial - チュートリアル
+MissionBoardNumber - ($(0))
+MissionProgressNumber - $(0)/$(1)
+MissionProgressComplete - <%Decide>報酬受取
+CategoryMenu_GetAll - 報酬をすべて受け取る　($(0))
+MissionRewardConfirmTitle - 報酬受取
+MissionRewardConfirmMsg - タスクの報酬アイテムを受け取ります。<br>よろしいですか？（仮）
+MissionRewardConfirmMsgAll - 報酬をすべて受け取ります。<br>よろしいですか？
+MissionRewardConfirmYes - はい
+MissionRewardConfirmNo - いいえ
+MissionRewardConfirm_limited_Title - 報酬受取
+MissionRewardConfirm_limited_Msg - ミッションの報酬を受け取ります。<br>よろしいですか？<br><br><yellow>※この報酬を受け取れるのは<br>　アカウントにつき1回のみです。<br>　受け取るシップに間違いないかをご確認ください。<c>
+MissionRewardConfirm_limited_Yes - はい
+MissionRewardConfirm_limited_No - いいえ
+MissionRewardConfirm_All_limited_Title - 報酬受取
+MissionRewardConfirm_All_limited_Msg - ミッションの報酬を受け取ります。<br>よろしいですか？<br><yellow>※アカウントにつき1回のみ受け取ることができる<br>　アイテムが含まれています。<br>　受け取るシップに間違いないかをご確認ください。<c><br>※いいえを選ぶと、<br>　アカウント制限のない報酬のみを受け取ります。
+MissionRewardConfirm_All_limited_Msg_Only - ミッションの報酬を受け取ります。<br>よろしいですか？<br><br><yellow>※この報酬を受け取れるのは<br>　アカウントにつき1回のみです。<br>　受け取るシップに間違いないかをご確認ください。<c>
+MissionRewardConfirm_All_limited_Yes - はい
+MissionRewardConfirm_All_limited_No - いいえ
+MissionReward_Error_Close - 閉じる
+MissionReward_Error_Inventorylimit - アイテムパックの空き容量不足<br>または所持数の限界を超えているため<br>受け取れませんでした。
+MissionReward_Error_limitTime - 有効期限を過ぎているため<br>受け取れませんでした。
+MissionNoItem - 選択できるミッションがありません。
+MissionGetReward_Header - ミッション報酬を受け取りました
+MissionReward_RewardList_Header - 報酬一覧
+MissionReward_RewardList_Issue - 以下の報酬を受け取りました。
+MissionReward_RewardList_Next - 次を受け取る
+MissionReward_RewardList_Interrupt - 中断する
+MissionReward_RewardList_Close - 閉じる
+MissionNotice_Issue_Header - <c f0df60>を受注しました<c>
+MissionNotice_Issue_Description - 目標を達成して報酬を手に入れよう。
+MissionNotice_Issue_Number - …他$(0)件
+MissionNotice_Achieve_Header - を達成しました
+MissionNotice_Achieve_Description - アークスミッションで報酬を受け取ろう。
+MissionNotice_Achieve_Number - …他$(0)件
+SimpleStatus_NotOpen - 受注しているミッションがありません
+SimpleStatus_SharedShip - 共通シップではミッションを確認できません
+MissionBoardCategoryMenuDaily - デイリーミッション
+MissionBoardCategoryMenuWeekly - ウィークリーミッション
+MissionBoardCategoryMenuLimited - 期間限定ミッション
+MissionBoardCategoryMenuGuidance - メインミッション
+MissionBoardCategoryMenuTier - -
+MissionReward_Error_General_Header - 報酬受取
+MissionReward_Error_General_Msg - 報酬を受け取ることができませんでした。<br><br>時間をおいて再度お試しください。
+MissionReward_Error_Inventorylimit_Header - 報酬受取
+MissionReward_Error_Inventorylimit_Msg - アイテムパックの空き容量不足<br>または所持数の限界を超えているため<br>受け取れませんでした。
+MissionReward_Error_limitTime_Header - 報酬受取
+MissionReward_Error_limitTime_Msg - 有効期限を過ぎているため<br>受け取れませんでした。
+MissionTracking_Change_toast - 追跡するミッションを変更しました。
+MissionTracking_Change_error - 追跡できないミッションです。
+MissionMenu_ItemDetail_NoItem - 報酬アイテムはありません。
+MissionClear_toast - クリア済みのミッションがあります。メインメニューのクエストのアークスミッションから、報酬
+
+Group 1
+MissionProgress - Simple Mission Information
+MissionBoard - ARKS Missions
+MissionProgressTab - In Progress
+MissionRecievedTab - Already Received
+MissionDetail - Mission Details
+MissionTimeLimitEvent - Expiration: $(0)
+MissionTimeLimitEtc - Expiration: $(0)
+MissionTimeLimitUnlimited - Expiration: None
+MissionDetail_limited_Issue - <c ff4f3f>You can only receive one of this item per account.<c>
+MissionDetail_limited_Issue_Received - You have already received this item on this account.
+MissionDetail_Repeat_Issue - This mission can be <pict repeat> enjoyed over and over.
+MissionDetail_Repeat_CoolDown - Replayable: $(0)
+MissionDetailSwitching - <pict Key_SHIFT> to Show Item Details
+MissionDetailSwitching_P - <%Function> to Show Item Details
+MissionDetailSwitching_V - <pict Sign_TRIANGLE> to Show Item Details
+MissionDetail_MissionDetail - Expiration/Objective Details
+MissionRewardDetail - Item Details
+MissionRewardDetailSwitching - <pict Key_SHIFT> to Show Mission Details
+MissionRewardDetailSwitching_P - <%Function> to Show Mission Details
+MissionRewardDetailSwitching_V - <pict Sign_TRIANGLE> to Show Mission Details
+MissionBoardOpen_P - <%MissionShortCutP> to Go to ARKS Mission
+MissionBoardOpen_Function - <%Function> to Go to ARKS Mission
+MissionBoardOpen_MultiSelect - <%MultiSelect> to Go to ARKS Mission
+MissionBoardOpen_V - <%MissionShortCutV> to Go to ARKS Mission
+MissionRate - $(0)%
+MissionRateMax - <yellow>Achieved<c>
+Missionlist - Mission List
+MissionTimeLimitHead - Update Date
+MissionDaily - Daily Mission
+MissionDailyLimit - Every day at <utc>08:00</utc>
+MissionWeekly - Weekly Mission
+MissionWeeklyLimit - <utcdow>Wednesdays at 23:00</utcdow>
+MissionTier - -
+MissionBoardNumber - ($(0))
+MissionProgressNumber - $(0)/$(1)
+MissionProgressComplete - <%Decide> to Get Rewards
+CategoryMenu_GetAll - Receive All Rewards ($(0))
+MissionRewardConfirmTitle - ACCEPT REWARDS
+MissionRewardConfirmMsgAll - You are about to receive all rewards.<br>Are you sure you wish to proceed?
+MissionRewardConfirmYes - Yes
+MissionRewardConfirmNo - No
+MissionRewardConfirm_limited_Title - ACCEPT REWARDS
+MissionRewardConfirm_limited_Msg - You are about to receive mission rewards.<br>Are you sure you wish to proceed?<br><br><yellow>Note: You can only receive this reward once per account.<br>Please ensure you're on the correct ship when receiving these rewards.<c>
+MissionRewardConfirm_limited_Yes - Yes
+MissionRewardConfirm_limited_No - No
+MissionRewardConfirm_All_limited_Title - ACCEPT REWARDS
+MissionRewardConfirm_All_limited_Msg - You are about to receive mission rewards.<br>Are you sure you wish to proceed?<br><br><yellow>Note: One or more of these items can only be received once per account.<br>Please ensure you're on the correct ship when receiving these rewards.<c><br>If you select [No], you'll receive only the items that don't have an account limit.
+MissionRewardConfirm_All_limited_Msg_Only - You are about to receive mission rewards.<br>Are you sure you wish to proceed?<br><br><yellow>Note: You can only receive this reward once per account.<br>Please ensure you're on the correct ship when receiving these rewards.<c>
+MissionRewardConfirm_All_limited_Yes - Yes
+MissionRewardConfirm_All_limited_No - No
+MissionReward_Error_Close - Close
+MissionReward_Error_Inventorylimit - You were unable to receive the item(s) because you don't have enough space in your inventory,<br>or you would exceed your carry limit.
+MissionReward_Error_limitTime - You were unable to receive the item(s) because they have expired.
+MissionNoItem - There are no selectable missions.
+MissionGetReward_Header - Received mission rewards.
+MissionReward_RewardList_Header - List of Rewards
+MissionReward_RewardList_Issue - Received the following reward(s).
+MissionReward_RewardList_Next - Receive Next Rewards
+MissionReward_RewardList_Interrupt - Cancel
+MissionReward_RewardList_Close - Close
+MissionNotice_Issue_Header - <c f0df60>Accepted<c>
+MissionNotice_Issue_Number - ...and $(0) More
+MissionNotice_Achieve_Header - Completed
+MissionNotice_Achieve_Number - ...and $(0) More
+SimpleStatus_NotOpen - You currently don't have any accepted missions.
+SimpleStatus_SharedShip - You can't view missions on the Universal Ship.
+MissionBoardCategoryMenuDaily - Daily Missions
+MissionBoardCategoryMenuWeekly - Weekly Missions
+MissionBoardCategoryMenuLimited - Limited-Time Missions
+MissionBoardCategoryMenuGuidance - Main Missions
+MissionBoardCategoryMenuTier - -
+MissionReward_Error_General_Header - Accept Rewards
+MissionReward_Error_General_Msg - Unable to receive rewards.<br><br>Please wait a while and try again.
+MissionReward_Error_Inventorylimit_Header - Accept Rewards
+MissionReward_Error_Inventorylimit_Msg - You were unable to receive the item(s) because you don't have enough space in your inventory,<br>or you would exceed your carry limit.
+MissionReward_Error_limitTime_Header - Accept Rewards
+MissionReward_Error_limitTime_Msg - You were unable to receive the item(s) because they have expired.
+MissionTracking_Change_toast - Changed mission to track.
+MissionTracking_Change_error - The mission cannot be tracked.
+MissionMenu_ItemDetail_NoItem - There are no reward items.
+MissionClear_toast - You have cleared missions. Please receive your rewards from ARKS Missions from Quests in the Main Menu.
+
+

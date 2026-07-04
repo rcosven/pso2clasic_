@@ -1,0 +1,37 @@
+ii_escape_boost_v.text was created: 04-07-2026 7:29:11
+Filesize is: 2832 bytes
+
+common
+Group 0
+IncidentName - 暴走ヴィスボルトを回避せよ！
+TrialBeginMsg - 暴走ヴィスボルトの攻撃を回避せよ。
+TrialAbstract - 暴走ヴィスボルトを回避し続けろ。
+TrialLightningStrike - $(0)が被雷した。総被雷数$(1)/$(2)回。
+
+Group 1
+IncidentName - Evade the Runaway Vizbolts!
+TrialBeginMsg - Evade the Runaway Vizbolt attacks!
+TrialAbstract - Evade the Runaway Vizbolts!
+TrialLightningStrike - $(0) was hit. Total hits: $(1)/$(2)
+
+
+type9
+Group 0
+NpcComOnBegin - 暴走したヴィスボルトの発生を確認！<br>敵味方、見境ない攻撃が予想されます！<br>捕捉されたら、無理せず回避を！
+NpcComOnSuccess - /face2 暴走ヴィスボルトの消滅を確認！<br>被害を最小に抑えることができました。<br>お見事です！
+NpcComOnFailure - /face4 暴走ヴィスボルトは<br>消滅しましたが……被害は甚大です。<br>あまり無理しないでくださいね。
+NpcComOnHitOtherPlayer - 大丈夫ですか！？<br>爆発の直前に反応が変化しています。<br>タイミングよく、回避してください！
+NpcComOnLightningStrike - 大丈夫ですか！？<br>爆発の直前に反応が変化しています。<br>タイミングよく、回避してください！
+NpcComOn60SecondLeft - 暴走ヴィスボルト、消滅まで残り１分！<br>なんとか回避してください！
+NpcComOn30SecondLeft - 暴走ヴィスボルトの消滅まで<br>あとわずか
+
+Group 1
+NpcComOnBegin - Runaway Vizbolts confirmed!<br>We won't be able to tell where attacks are coming from!<br>If you get caught, just keep dodging!
+NpcComOnSuccess - /face2Runaway Vizbolts dispersed!<br>Damage was kept to a minimum.<br>Well done!
+NpcComOnFailure - /face4The Runaway Vizbolts are gone...<br>but you've taken massive damage.<br>I'd take it easy for a while.
+NpcComOnHitOtherPlayer - Are you okay!?<br>The reaction is changing right before the explosion.<br>Time your dodge!
+NpcComOnLightningStrike - Are you okay!?<br>The reaction is changing right before the explosion.<br>Time your dodge!
+NpcComOn60SecondLeft - One more minute until the Runaway<br>Vizbolts disappear! Try to avoid them!
+NpcComOn30SecondLeft - Just a little longer until the<br>Runaway Vizbolts disappear!
+
+

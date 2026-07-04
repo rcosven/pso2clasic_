@@ -1,0 +1,37 @@
+ii_session_apc_5674.text was created: 04-07-2026 7:29:11
+Filesize is: 2224 bytes
+
+5675
+Group 0
+Begin - /ci2 2 リーダーが手伝ってくれるなら<br>どんなエネミーだって楽勝だね！<br>よーし、わたしもがんばっちゃうよ！
+Success - /ci2 1 えへへ、ほめられちゃった！<br>リーダーも助けてくれてありがとう。<br>また一緒に戦おうね！
+Failure - わかった、お姉ちゃん！<br>リーダーも無理しないで……<br>あとで一緒にご飯食べようね！
+Dead - うぅ……もう、だめみたい。<br>あとはお願い、お姉ちゃん……
+BuddyDead - 大丈夫なの、お姉ちゃん！？<br>ダメージが大きいなら<br>無理しないで休んでて！
+
+Group 1
+Begin - /ci2 2 We can take on any enemy out there<br>with your help, Leader! Okay, here I go!
+Success - /ci2 1 Hee hee, thanks for the compliment!<br>And for always helping me out.<br>Let's fight together again!
+Failure - You got it! And you shouldn't stretch<br>yourself too thin either, Leader. Let's<br>go get something to eat later!
+Dead - Urgh...I'm done.<br>The rest is in your hands.
+BuddyDead - Are you okay?!<br>If you're hurt badly,<br>you should rest!
+
+
+common
+Group 0
+Begin - 開始5150
+Success - 成功5150
+Failure - 失敗5150
+Dead - 自分死亡5150
+BuddyDead - 相手死亡5150
+Evolution - 発展5150
+
+Group 1
+Begin - Begin5150
+Success - Success5150
+Failure - Failure5150
+Dead - YouDied5150
+BuddyDead - PartnerDied5150
+Evolution - Evolution5150
+
+

@@ -1,0 +1,41 @@
+ii_cleanup_shell_flower.text was created: 04-07-2026 7:29:11
+Filesize is: 2800 bytes
+
+common
+Group 0
+IncidentName - 砲仙花掃討作戦
+TrialBeginMsg - 砲仙花を一掃しろ！
+TrialAbstract - 砲仙花を一掃しろ！
+ToastOnHalfFinish - ノルマ達成まで残り半分
+ToastOnLast - ノルマ達成まであと１つ
+
+Group 1
+IncidentName - Blitzblossom Search and Destroy Op
+TrialBeginMsg - Wipe out all Blitzblossoms!
+TrialAbstract - Wipe out all Blitzblossoms!
+ToastOnHalfFinish - You're halfway to meeting your quota.
+ToastOnLast - One left to meet your quota.
+
+
+type2
+Group 0
+NpcComOnBegin - 砲仙花の群生地帯に入ったようだ。<br>こう数が多いと、調査の邪魔になる。<br>見つけ次第排除せよ。
+NpcComOnBeginNext - 数が多すぎてマーカーに表示できん。<br>手当たり次第に排除しろ。
+NpcComOnSuccess - 排除の成功を確認。<br>よくやった。
+NpcComOnFailure - /face6 この数は手に負えんか……<br>仕方ない、ひとまず撤退しろ。
+NpcComOnAccess - その調子だ。<br>周囲の砲仙花の排除を続けろ。
+NpcComOnHit - 「その調子だ。周囲の砲仙花の一掃を頼む」
+NpcComOnPreSuccess - よし、これだけ排除すれば十分だ。<br>残っている砲仙花の扱いは任せる。
+NpcComOnPreFinish - そろそろ制限時間が終わる。<br>早く砲仙花を排除しろ。
+
+Group 1
+NpcComOnBegin - You've crossed into Blitzblossom territory.<br>It'll be hard to conduct surveys with this<br>many around. Better take out any you find.
+NpcComOnBeginNext - There's too many to mark their locations. Just<br>have at it.
+NpcComOnSuccess - Eradication confirmed. Well done.
+NpcComOnFailure - /face6 Too many to deal with, huh? Pull out for now...
+NpcComOnAccess - Perfect. Keep hacking away at<br>the Blitzblossoms.
+NpcComOnHit - "Nice work. Keep hacking away at those<br>Blitzblossoms."
+NpcComOnPreSuccess - That should be enough. Do what you<br>want with the rest.
+NpcComOnPreFinish - You're almost out of time. Hurry up<br>and take out those Blitzblossoms.
+
+

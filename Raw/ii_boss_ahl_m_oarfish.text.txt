@@ -1,0 +1,63 @@
+ii_boss_ahl_m_oarfish.text was created: 04-07-2026 7:29:11
+Filesize is: 3216 bytes
+
+common
+Group 0
+IncidentName - $(0)を撃退せよ！
+TrialBeginMsg - $(0)を倒せ！
+TrialAbstract - $(0)撃退
+
+Group 1
+IncidentName - Repel the $(0)!
+TrialBeginMsg - Defeat $(0)!
+TrialAbstract - Repel the $(0)
+
+
+type1
+Group 0
+NpcComOnBegin - 緊急連絡だ<br>$(0)が喧騒で出現したようだ<br>調査の障害となる、迎撃しろ。
+NpcComOnBegin2 - 付近にある「ｘｘｘ」を有効利用しろ<br>あの巨体といえど口を狙えば<br>有効なはずだ
+NpcComOnSuccess - $(0)の撤退を確認<br>なんとか撃退できたな。<br>引き続き調査を行え
+
+Group 1
+NpcComOnBegin - Emergency. Reading a rowdy $(0) presence.<br>Drive 'em out for the sake of our survey.
+NpcComOnBegin2 - Use xxx nearby for help. Hit 'em in the mouth<br>and you'll do some damage.
+NpcComOnSuccess - $(0) presence repelled. Looks like<br>you did it. Now back to that survey.
+
+
+type2
+Group 0
+NpcComOnBegin - $(0)の出現を確認した。<br>どうやらこの周辺が縄張りのようだ。<br>各員、警戒を怠るなよ。
+NpcComOnBegin2 - $(0)との交戦時には<br>周囲の大砲を有効活用しろ。<br>有利に戦闘が進められるはずだ。
+NpcComOnSuccess - 目標の反応消失を確認。<br>よくやった。
+
+Group 1
+NpcComOnBegin - Getting some $(0) sightings.<br>Guess we're on  their turf. Stay sharp,<br>everyone.
+NpcComOnBegin2 - Use the Launchers in the area if you're gonna<br>engage a $(0).<br>That oughta put you on top.
+NpcComOnSuccess - Target eliminated. Not bad.
+
+
+type3
+Group 0
+NpcComOnBegin - 緊急連絡だ<br>$(0)が喧騒で出現したようだ<br>調査の障害となる、迎撃しろ。
+NpcComOnBegin2 - 付近にある「ｘｘｘ」を有効利用しろ<br>あの巨体といえど口を狙えば<br>有効なはずだ
+NpcComOnSuccess - $(0)の撤退を確認<br>なんとか撃退できたな。<br>引き続き調査を行え
+
+Group 1
+NpcComOnBegin - Emergency. Reading a rowdy $(0) presence.<br>Drive 'em out for the sake of our survey.
+NpcComOnBegin2 - Use xxx nearby for help. Hit 'em in the mouth<br>and you'll do some damage.
+NpcComOnSuccess - $(0) presence repelled. Looks like<br>you did it. Now back to that survey.
+
+
+type6
+Group 0
+NpcComOnBegin - $(0)の反応を感知。<br>各員、警戒を。
+NpcComOnBegin2 - $(0)には、現地に存在する<br>大砲が有効だという報告があります。<br>状況に応じ、活用してください。
+NpcComOnSuccess - 敵性存在、反応消失。<br>任務完了となります。
+
+Group 1
+NpcComOnBegin - $(0) presence detected.<br>All ops, stay sharp.
+NpcComOnBegin2 - According to my briefing, when engaging a <br>$(0) you may find the Launchers in the<br>area useful. Something to keep in mind.
+NpcComOnSuccess - Hostile presence eliminated. Mission accomplished.
+
+

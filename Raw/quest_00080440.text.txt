@@ -1,0 +1,101 @@
+quest_00080440.text was created: 04-07-2026 7:32:03
+Filesize is: 6240 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+a4 - スーパーハード受注許可証の所持
+a5 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Complete a special Client Order
+a2 - Complete a special Client Order
+a3 - Possess a Super Hard Difficulty Permit
+a4 - Possess a Super Hard Difficulty Permit
+a5 - Possess a Super Hard Difficulty Permit
+
+
+AreaName
+Group 0
+Area0S - 艦隊交戦区域　待機エリア
+Area0L - 艦隊交戦区域　待機エリア
+Area1S - エリア１　味方艦甲板
+Area1L - エリア１　艦隊交戦区域　味方艦甲板
+Area2S - エリア１　味方艦甲板
+Area2L - エリア１　艦隊交戦区域　味方艦甲板
+Area3S - エリア１　味方艦甲板
+Area3L - エリア１　艦隊交戦区域　味方艦甲板
+Area4S - エリア１　敵艦甲板
+Area4L - エリア１　艦隊交戦区域　敵艦甲板
+Area5S - エリア１　敵艦甲板
+Area5L - エリア１　艦隊交戦区域　敵艦甲板
+Area6S - エリア１　敵艦甲板
+Area6L - エリア１　艦隊交戦区域　敵艦甲板
+Area7S - エリア２　最終区域
+Area7L - エリア２　艦隊交戦区域　最終区域
+QuestInfoAreaName - 艦隊交戦区域
+
+Group 1
+Area0S - Armada War Zone - Standby Area
+Area0L - Armada War Zone - Standby Area
+Area1S - Area 1 - ARKS Ship Deck
+Area1L - Area 1 - Armada War Zone: ARKS Ship Deck
+Area2S - Area 1 - ARKS Ship Deck
+Area2L - Area 1 - Armada War Zone: ARKS Ship Deck
+Area3S - Area 1 - ARKS Ship Deck
+Area3L - Area 1 - Armada War Zone: ARKS Ship Deck
+Area4S - Area 1 - Enemy Ship Deck
+Area4L - Area 1 - Armada War Zone: Enemy Ship Deck
+Area5S - Area 1 - Enemy Battleship Deck
+Area5L - Area 1 - Armada War Zone: Enemy Battleship Deck
+Area6S - Area 1 - Enemy Battleship Deck
+Area6L - Area 1 - Armada War Zone: Enemy Battleship Deck
+Area7S - Area 2 - Final Area
+Area7L - Area 2 - Armada War Zone: Final Area
+QuestInfoAreaName - Armada War Zone
+
+
+Basic
+Group 0
+Title - 特別突破訓練：Episode6
+Explanation - 本任務は、ＶＲ空間にて行う<br>エリアの最奥を目指す走破型の訓練である。<br>アークスが経験した様々な事象から<br>艦隊交戦区域を中心に<br>象徴的な障害を選んで再構築した。<br>各員の能力を最大限に引き出し、突破せよ。<br>―――――――――――――――――――<br>最深部に出現するエネミーの撃破でクリア
+
+Group 1
+Title - SP Breakthrough Training: Ep6
+Explanation - In this training, you will learn how to break<br>through to the final area  in VR. We have<br>created a course consisting of obstacles<br>encountered by ARKS operatives in the<br>Armada War Zone. Use all of your tools<br>to complete this mission.<br>----------------------------------------<br><br>Complete this quest by defeating<br>the enemies in the final area.
+
+
+PreTransportDirection
+Group 0
+NpcComMsg1 - これより、特別訓練を開始します！<br>今回の目的は、２つの交戦区域を制圧後<br>最終区域の制圧と強敵の撃破です。
+NpcComMsg2 - まずは、ふたてに分かれて<br>２つのテレポーターから行ける区域を<br>両方とも、制圧してください！
+NpcComMsg3 - 両区域への均等な戦力配分が<br>速やかに制圧するためのカギです！<br>それでは、訓練開始です！
+
+Group 1
+NpcComMsg1 - The Special Training will now begin!<br>Your objective is to seize control of the two<br>areas and eliminate the boss in the final area.
+NpcComMsg2 - First divide in two groups and seize <br>control of the area you can access from<br>each of the two teleporters.
+NpcComMsg3 - "Dividing the attacking forces evenly<br>on both areas will be the key to victory.<br>Commence training!"
+
+
+PreTransportDirection7
+Group 0
+NpcComMsg1 - これより、最終区域に転送します。<br>味方艦上の敵を撃破しつつ、接舷した<br>敵艦に乗り込み、制圧してください。
+NpcComMsg2 - 設置された敵砲台を破壊することで<br>その座標に、支援兵器を転送します。<br>戦況を有利に導けますよ！
+NpcComMsg3 - 総力戦を想定した訓練のため<br>最後まで難敵ぞろいになっています。<br>全力でがんばってください！
+
+Group 1
+NpcComMsg1 - You will now be transferred to the final area.<br>Defeat any enemy you encounter and<br>take control of the Enemy Battleship.
+NpcComMsg2 - If you destroy the enemy's Gun Battery, I will<br>transfer a support weapon to these coordinates.<br>It will give you a huge advantage!
+NpcComMsg3 - This training is preparation for an all-out-war, <br>so expect strong resistance until the end.<br>Good luck and give it your all!
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 敵主力艦隊を鎮圧せよ！
+
+Group 1
+SimpleExplanation - Subjugate the main enemy armada!
+
+

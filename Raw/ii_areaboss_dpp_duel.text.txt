@@ -1,0 +1,29 @@
+ii_areaboss_dpp_duel.text was created: 04-07-2026 7:29:11
+Filesize is: 1312 bytes
+
+common
+Group 0
+IncidentName - $(0)討伐
+TrialBeginMsg - $(0)を討伐せよ！
+TrialAbstract - $(0)を討伐せよ！
+
+Group 1
+IncidentName - Suppress $(0)
+TrialBeginMsg - Suppress the $(0)!
+TrialAbstract - Suppress the $(0)!
+
+
+type9
+Group 0
+NpcComOnBegin - 強力な反応を確認！<br>ここで決着を付けましょう！<br>よろしくお願いします！
+NpcComOnSuccess - 目標の消滅を確認しました！<br>お疲れさまでした！
+HP_Under_50 - 目標、消耗しています！<br>もう少しですよ！
+HP_Under_10 - あともう一息です！頑張って！
+
+Group 1
+NpcComOnBegin - Strong enemy presence detected!<br>Settle this here and now!<br>I'm counting on you!
+NpcComOnSuccess - Target confirmed destroyed! Job well done!
+HP_Under_50 - The target's fading fast! Just a little more!
+HP_Under_10 - Almost got it! Keep attacking!
+
+

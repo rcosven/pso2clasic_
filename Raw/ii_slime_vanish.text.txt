@@ -1,0 +1,81 @@
+ii_slime_vanish.text was created: 04-07-2026 7:29:11
+Filesize is: 9408 bytes
+
+common
+Group 0
+IncidentName - 消滅！　マッドゼリー
+TrialBeginMsg - マッドゼリーを駆除し<br>時間内に消滅ノルマを果たせ！
+TrialAbstract - マッドゼリーを駆除し<br>時間内に消滅ノルマを果たせ！
+
+Group 1
+IncidentName - Extermination: Mad Jelly
+TrialBeginMsg - Exterminate the Mad Jellies to meet your<br>quota within the time limit!
+TrialAbstract - Exterminate the Mad Jellies to meet your<br>quota within the time limit!
+
+
+type1
+Group 0
+NpcComOnBegin - マッドゼリーの反応を確認！<br>時間経過で４段階に肥大化<br>限界を超えると爆発します！
+NpcComOnAfterBegin - 目標は、時間内の一定量撃破。<br>爆発を防ぐため、肥大化した個体から<br>撃破し、安全に消滅させてください。
+NpcComOnSuccess - /face2 目標を達成。<br>周囲のマッドゼリーの掃討に<br>成功しました。
+NpcComOnFailure - /face4 時間内の一定量撃破に失敗。<br>仕方ありません……<br>通常任務に戻ってください。
+NpcComOnDanger - 発光を始めた個体は、<br>爆発寸前の危険な状態です。<br>最優先で撃破し、消滅させてください。
+NpcComOnFirstExplode - マッドゼリーの爆発を確認しました。<br>爆発前に撃破できれば、消滅時に<br>アイテムが吐き出されるようです。
+NpcComOnHalf - /face2 目標まで、あと半分です。<br>なお、「赤い個体は炎に強い」のように<br>体色ごとに属性耐性があるようです。
+NpcComOnFinalNotice - 残り時間、わずかです。<br>肥大化したものほど、撃破した時の<br>達成度ゲージが多めに増加します。
+
+Group 1
+NpcComOnBegin - Mad Jellies detected! They puff up in 4 stages<br>over time. Once they reach their limit they<br>explode!
+NpcComOnAfterBegin - The objective is to destroy a designated number<br>of them within the time limit. Start with<br>the bloated ones to prevent explosions!
+NpcComOnSuccess - /face2 Objective accomplished. You have<br>successfully cleared the area of Mad Jellies.
+NpcComOnFailure - /face4 You failed to destroy the designated<br>number within the time limit. What's done<br>is done. Get back to your regular mission.
+NpcComOnDanger - The glowing ones are just about to explode!<br>Destroying those is your top priority!
+NpcComOnFirstExplode - Mad Jelly explosion confirmed! Apparently<br>they spit out an item if you can destroy them<br>before they explode...
+NpcComOnHalf - /face2 You're halfway to the objective. By the<br>way, you can tell their elemental resistance<br>based on color. Red is strong against fire,<br>and so on.
+NpcComOnFinalNotice - Only a little time remains. Remember, the<br>more bloated ones fill up the gauge more<br>when you destroy them.
+
+
+type2
+Group 0
+NpcComOnBegin - マッドゼリーの群生地だな。<br>徐々に肥大化していって<br>4段階目で爆発する特性がある。
+NpcComOnAfterBegin - 目標は、時間内の一定量撃破。<br>爆発を防ぐため、肥大化した個体から<br>撃破し、安全に消滅させろ。
+NpcComOnSuccess - 目標を達成した。<br>周囲のマッドゼリーの掃討に成功。<br>よくやった。
+NpcComOnFailure - 時間内の一定量撃破に失敗。<br>これ以上は無駄だ。<br>通常任務に戻れ。
+NpcComOnDanger - 発光を始めた個体は、<br>爆発寸前の危険な状態だ。<br>迅速に破壊して消滅させろ。
+NpcComOnFirstExplode - マッドゼリーの爆発を確認した。<br>爆発前に撃破すれば、消滅時に<br>アイテムが吐き出されるようだ。
+NpcComOnHalf - 目標の半分を達成した。<br>体色で属性耐性があるようだ。<br>気をつけて消滅させていけ。
+NpcComOnFinalNotice - 残り時間、わずかだ。<br>肥大化したものほど、達成度が<br>高い。優先的に狙っていけ。
+
+Group 1
+NpcComOnBegin - It's a herd of Mad Jellies. They gradually get<br>bigger until they reach their 4th stage.<br>Then they explode...
+NpcComOnAfterBegin - The objective is to destroy a certain amount<br>within the time limit. To be safe and avoid<br>them exploding, take out the most bloated first.
+NpcComOnSuccess - Objective accomplished. You have successfully<br>cleared the area of Mad Jellies. Great work!
+NpcComOnFailure - You failed to destroy enough within the time<br>limit. Destroying more now would be useless.<br>Get back to your regular mission.
+NpcComOnDanger - The glowing ones are just about to explode!<br>Destroy those ones quick!
+NpcComOnFirstExplode - Mad Jelly explosion confirmed! Apparently<br>they spit out an item if you destroy them<br>before they explode...
+NpcComOnHalf - You have accomplished half of your objective.<br>Their color appears to indicate elemental<br>resistance. Keep that in mind.
+NpcComOnFinalNotice - You are running out of time. Killing the more<br>bloated ones will get you closer to the goal.<br>Prioritize those ones.
+
+
+type3
+Group 0
+NpcComOnBegin - ぬめっとしたヤツが降ってきています！<br>放っておくと、ふくらんでいって<br>爆発するので気をつけてくださいー。
+NpcComOnAfterBegin - 時間内にいっぱい消してくださいー。<br>爆発しちゃうので、まずは<br>ふくらんでいるのを狙ってくださいー。
+NpcComOnSuccess - /face2 目標を達成しましたー。<br>いっぱい消滅させることができました。<br>おつかれさまでしたー。
+NpcComOnFailure - /face4 落ちてこなくなってしまいましたね。<br>失敗みたいですー。
+NpcComOnDanger - 光っているのがいますよー！<br>これ以上大きくなると<br>爆発しちゃいます！　注意ですよー！
+NpcComOnFirstExplode - わっ、爆発しちゃいました！<br>頑張ってください。うまく消せれば<br>アイテムを落としますよ。
+NpcComOnHalf - /face2 いい感じですよー。<br>でも、色にあった属性攻撃は<br>あまり効かないみたいですー。
+NpcComOnFinalNotice - そろそろ出てこなくなるかも……！<br>ふくらんでいるヤツほど<br>ポイント高いですよー。
+
+Group 1
+NpcComOnBegin - These slimy little buggers are falling from<br>above! They keep bloating and eventually<br>explode if you ignore them, so be careful!
+NpcComOnAfterBegin - Get rid of as many as you can within the time<br>limit. Aim for the swollen ones first, because<br>they explode!
+NpcComOnSuccess - /face2 Objective accomplished! You were<br>able to exterminate a whole bunch of them.<br>Great job!
+NpcComOnFailure - /face4 Guess they've stopped falling from above.<br>I think we failed...
+NpcComOnDanger - There's one glowing! If it gets any bigger<br>than that, it's gonna explode! Look out!
+NpcComOnFirstExplode - Whoa! It exploded! Keep fighting. If you do<br>a good job killing them, they'll drop items!
+NpcComOnHalf - /face2 You're doing good! But it looks like<br>element attacks that match their color aren't<br>very effective!
+NpcComOnFinalNotice - They might stop coming soon...! The bloated<br>ones give you more points!
+
+

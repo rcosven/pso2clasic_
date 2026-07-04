@@ -1,0 +1,271 @@
+ui_shop.text was created: 04-07-2026 7:34:31
+Filesize is: 19088 bytes
+
+ShopCommon
+Group 0
+MesetaDenomination - メセタ
+AcDenomination - AC
+CpDenomination - CP
+FunDenomination - FUN
+StarDenomination - スター
+CcDenomination - CC
+CmDenomination - CM
+SgDenomination - SG
+BcDenomination - BC
+SpDenomination - SP
+Cash - 所持金
+CashMeseta - 所持メセタ
+CashAc - 所持AC
+CashCp - 所持CP
+CashFun - 所持FUN
+CashStar - 所持スター
+CashCc - 所持CC
+CashCm - 所持CM
+CashSg - 所持SG
+CashBc - 所持BC
+CashSp - 所持SP
+CashDenomi - 所持$(0)
+TotalAmount - 合計金額
+TotalMeseta - 合計メセタ
+TotalAc - 合計AC
+TotalCp - 合計CP
+TotalFun - 合計FUN
+TotalStar - 合計スター
+TotalCc - 合計CC
+TotalCm - 合計CM
+TotalSg - 合計SG
+TotalBc - 合計BC
+TotalSp - 合計SP
+TotalDenomi - 合計$(0)
+InputBuyNumberTitle_Vita - 購入個数選択
+InputSellNumberTitle_Vita - 売却個数選択
+StockNumber_Vita - 購入(交換)可能数/あと　$(0)個
+InsufficientCash - $(0)が不足しています
+BuyDayLimitOver - 購入可能期間外です。
+ExchangeDayLimitOver - 交換可能期間外です。
+BuyNumLimitOver - 購入上限以上に購入しようとしています。
+ExchangeNumLimitOver - 交換上限以上に交換しようとしています。
+ItemBuyDBAccessError - サーバーが混雑しているため、<br>アイテムの購入ができませんでした。
+ItemChangeDBAccessError - サーバーが混雑しているため、<br>アイテムの交換ができませんでした。
+
+Group 1
+MesetaDenomination - meseta
+AcDenomination - AC
+CpDenomination - CP
+FunDenomination - FUN
+StarDenomination - Stars
+CcDenomination - CC
+CmDenomination - CM
+SgDenomination - SG
+BcDenomination - BC
+SpDenomination - SP
+Cash - Your Money
+CashMeseta - Your Meseta
+CashAc - Your AC
+CashCp - Your CP
+CashFun - Your FUN
+CashStar - Your Stars
+CashCc - Your CC
+CashCm - Your CM
+CashSg - Your SG
+CashBc - Your BC
+CashSp - Your SP
+CashDenomi - Your $(0)
+TotalAmount - Total Money
+TotalMeseta - Total Meseta
+TotalAc - Total AC
+TotalCp - Total CP
+TotalFun - Total FUN
+TotalStar - Total Stars
+TotalCc - Total CC
+TotalCm - Total CM
+TotalSg - Total SG
+TotalBc - Total BC
+TotalSp - Total SP
+TotalDenomi - Total $(0)
+InputBuyNumberTitle_Vita - SELECT QUANTITY TO BUY
+InputSellNumberTitle_Vita - SELECT QUANTITY TO SELL
+StockNumber_Vita - Purchases Allowed / $(0) Remaining
+InsufficientCash - You don't have enough $(0).
+BuyDayLimitOver - Item not available to purchase.
+ExchangeDayLimitOver - Item not available to exchange.
+BuyNumLimitOver - You are trying to purchase more than the purchase maximum.
+ExchangeNumLimitOver - You are trying to exchange more than the exchange maximum.
+ItemBuyDBAccessError - The purchase could not be completed <br>because the server is currently overloaded.
+ItemChangeDBAccessError - The exchange could not be completed <br>because the server is currently overloaded.
+
+
+BlackMarket
+Group 0
+ShopTitle - トレジャーショップ
+MenuGuide - <c f0df60>利用するショップを選択してください。<c>
+MenuTitle - ショップメニュー
+MenuSG - スタージェムで買う
+MenuMeseta - メセタで買う
+MenuEnd - ショップを出る
+SgShopTitle - スタージェムで買う
+SgShopGuide - <c f0df60>購入するアイテムを選択してください。「リストの手動更新<c><pict StarGem><c f0df60>」で、すぐに商品リストを更新できます。<c>
+SgShopGuide_v - <c f0df60>購入するアイテムを選択してください。「リストの手動更新<c><pict StarGem><c f0df60>」で、すぐに商品リストを更新できます。<c>
+MesetaShopTitle - メセタで買う
+MesetaShopGuide - <c f0df60>購入するアイテムを選択してください。「リストの手動更新<c><pict StarGem><c f0df60>」で、すぐに商品リストを更新できます。<c>
+MesetaShopGuide_v - <c f0df60>購入するアイテムを選択してください。「リストの手動更新<c><pict StarGem><c f0df60>」で、すぐに商品リストを更新できます。<c>
+ShopListTitle - 商品リスト
+ShopListResetTime - 次回更新：$(0)
+ShopListResetButton - <yellow>リストの手動更新<c><pict StarGem>
+ShopListResetTime_wait - 情報取得中
+RenewConfirmTitle - リストの手動更新
+RenewConfirmMessage - <pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>「$(0)」を購入し、<br>商品リストをすぐに更新することができます。<br>購入確認画面に進みますか？<br><br><yellow>※商品はランダムのため<br>　同じ商品が選ばれる場合があります。<c><br><br>（所持SG:$(1)）
+RenewBuyTitle - リストの手動更新
+RenewBuyMessage - 以下のアイテムを$(0)SG（通常$(1)SG）で購入し、<br>今すぐに商品リストを更新します。<br>よろしいですか？<br><br><yellow>※連続購入時、購入１回目～９回目までは<br>　価格が割引されますが、回数が増えると<br>　割引率が下がります。<c><br>※購入回数は、毎日<utc>20:00</utc>にリセットされます。<br>（所持SG:$(2)）
+RenewResultTitle - 商品リスト更新結果
+RenewResultMessage - 商品リスト更新に成功しました。
+RenewResultError - 商品リスト更新に失敗しました。
+RenewResultError2 - スタージェムが不足しています。
+RenewResultError3 - すでに自動更新による商品リスト更新が行われました。
+RenewResultError4 - サーバーとの通信に失敗しました。<br><br>時間をおいて再度お試しください。
+RenewResultError5 - 予期せぬ問題が発生しました。<br><br>時間をおいて再度お試しください。
+RenewResultError6 - データベースのアクセスに失敗しました。<br><br>時間をおいて再度お試しください。
+RenewSgShop - ＳＧトレジャーショップ更新
+RenewSgShop01 - ＳＧトレジャーショップ更新（１回目）
+RenewSgShop02 - ＳＧトレジャーショップ更新（２回目）
+RenewSgShop03 - ＳＧトレジャーショップ更新（３回目）
+RenewSgShop04 - ＳＧトレジャーショップ更新（４回目）
+RenewSgShop05 - ＳＧトレジャーショップ更新（５回目）
+RenewSgShop06 - ＳＧトレジャーショップ更新（６回目）
+RenewSgShop07 - ＳＧトレジャーショップ更新（７回目）
+RenewSgShop08 - ＳＧトレジャーショップ更新（８回目）
+RenewSgShop09 - ＳＧトレジャーショップ更新（９回目）
+RenewSgShop10 - ＳＧトレジャーショップ更新（１０回目以上）
+RenewMesetaShop - メセタトレジャーショップ更新
+RenewMesetaShop01 - メセタトレジャーショップ更新（１回目）
+RenewMesetaShop02 - メセタトレジャーショップ更新（２回目）
+RenewMesetaShop03 - メセタトレジャーショップ更新（３回目）
+RenewMesetaShop04 - メセタトレジャーショップ更新（４回目）
+RenewMesetaShop05 - メセタトレジャーショップ更新（５回目）
+RenewMesetaShop06 - メセタトレジャーショップ更新（６回目）
+RenewMesetaShop07 - メセタトレジャーショップ更新（７回目）
+RenewMesetaShop08 - メセタトレジャーショップ更新（８回目）
+RenewMesetaShop09 - メセタトレジャーショップ更新（９回目）
+RenewMesetaShop10 - メセタトレジャーショップ更新（１０回目以上）
+InfoError_None - FailureReason_None<br>成功
+InfoError_Error - 商品リストの情報を取得できませんでした。<br>しばらくしてから、再度アクセスしてください。
+InfoError_NotFound - 商品リストの情報を取得できませんでした。<br>しばらくしてから、再度アクセスしてください。
+InfoError_NoMoney - 所持金が不足しています。
+BuyError_OK - BlackMarketBuyAns_OK<br>交換成功
+BuyError_LowPoint - スタージェムが不足しています。
+BuyError_IllegalParam - 購入することができませんでした。<br>しばらくしてから、再度アクセスしてください。
+BuyError_NoSpace - アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>購入できません。
+BuyError_ExchangeLimit - 購入可能数を超えているため<br>購入することができませんでした。
+BuyError_Other - 購入することができませんでした。<br>しばらくしてから、再度アクセスしてください。
+
+Group 1
+ShopTitle - TREASURE SHOP
+MenuGuide - <c f0df60>Please select a shop.<c>
+MenuTitle - SHOP MENU
+MenuSG - Buy with Star Gems
+MenuMeseta - Buy with meseta
+MenuEnd - Exit Shop
+SgShopTitle - BUY WITH STAR GEMS
+SgShopGuide - <c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+SgShopGuide_v - <c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+MesetaShopTitle - BUY WITH MESETA
+MesetaShopGuide - <c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+MesetaShopGuide_v - <c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+ShopListTitle - PRODUCT LIST
+ShopListResetTime - Next Update: $(0)
+ShopListResetButton - <yellow>Manually Refresh List<c><pict StarGem>
+ShopListResetTime_wait - Acquiring Information
+RenewConfirmTitle - MANUALLY REFRESH LIST
+RenewConfirmMessage - <pict StarGem><c 1dedd7>SG Payment Required<c><br><br>You can purchase $(0) and immediately refresh the<br>product list. Continue to the purchase confirmation screen?<br><br><yellow>Note: The product selection is random, so the same products<br>may be selected.<c><br><br>(Your SG: $(1))
+RenewBuyTitle - MANUALLY REFRESH LIST
+RenewBuyMessage - You can purchase the below item for $(0) SG<br>(usually $(1) SG) and immediately refresh the<br>product list. Are you sure you wish to proceed?<br><br><yellow>Note: When making multiple purchases in a row, the price<br>will be discounted for the first nine, but the discount will<br>decrease beyond that.<c><br>The number of purchases resets every day at <utc>20:00</utc>.<br>(Your SG: $(2)).
+RenewResultTitle - RESULTS OF REFRESHING PRODUCT LIST
+RenewResultMessage - The product list was successfully refreshed.
+RenewResultError - The product list failed to refresh.
+RenewResultError2 - You do not have enough Star Gems.
+RenewResultError3 - The product list was already refreshed automatically.
+RenewResultError4 - Failed to connect to the server.<br><br>Please wait a while and try again.
+RenewResultError5 - An unexpected problem occurred.<br><br>Please wait a while and try again.
+RenewResultError6 - Failed to access the database.<br><br>Please wait a while and try again.
+RenewSgShop - Refresh SG Treasure Shop
+RenewSgShop01 - Refresh SG Treasure Shop (1st time)
+RenewSgShop02 - Refresh SG Treasure Shop (2nd time)
+RenewSgShop03 - Refresh SG Treasure Shop (3rd time)
+RenewSgShop04 - Refresh SG Treasure Shop (4th time)
+RenewSgShop05 - Refresh SG Treasure Shop (5th time)
+RenewSgShop06 - Refresh SG Treasure Shop (6th time)
+RenewSgShop07 - Refresh SG Treasure Shop (7th time)
+RenewSgShop08 - Refresh SG Treasure Shop (8th time)
+RenewSgShop09 - Refresh SG Treasure Shop (9th time)
+RenewSgShop10 - Refresh SG Treasure Shop (10th time or more)
+RenewMesetaShop - Refresh Meseta Treasure Shop
+RenewMesetaShop01 - Refresh Meseta Treasure Shop (1st time)
+RenewMesetaShop02 - Refresh Meseta Treasure Shop (2nd time)
+RenewMesetaShop03 - Refresh Meseta Treasure Shop (3rd time)
+RenewMesetaShop04 - Refresh Meseta Treasure Shop (4th time)
+RenewMesetaShop05 - Refresh Meseta Treasure Shop (5th time)
+RenewMesetaShop06 - Refresh Meseta Treasure Shop (6th time)
+RenewMesetaShop07 - Refresh Meseta Treasure Shop (7th time)
+RenewMesetaShop08 - Refresh Meseta Treasure Shop (8th time)
+RenewMesetaShop09 - Refresh Meseta Treasure Shop (9th time)
+RenewMesetaShop10 - Refresh Meseta Treasure Shop (10th time or more)
+InfoError_None - FailureReason_None<br>Success
+InfoError_Error - Could not obtain product list information.<br>Please wait a while and try again.
+InfoError_NotFound - Could not obtain product list information.<br>Please wait a while and try again.
+InfoError_NoMoney - You don't have enough money.
+BuyError_OK - BlackMarketBuyAns_OK<br>Exchange Successful
+BuyError_LowPoint - You do not have enough Star Gems.
+BuyError_IllegalParam - The purchase could not be completed.<br>Please wait a while and try again.
+BuyError_NoSpace - The purchase could not be completed because your inventory<br>is full or you have exceeded the quantity limit.
+BuyError_ExchangeLimit - The purchase could not be completed because you have <br>reached your purchase maximum.
+BuyError_Other - The purchase could not be completed.<br>Please wait a while and try again.
+
+
+PokaShop
+Group 0
+ShopTitleText - バトルコイン交換ショップ
+NormalShopGuideText - <c f0df60>バトルコインを消費して、アイテムと交換できます。交換するアイテムを選択してください。<c>
+LimitedShopGuideText - <c f0df60>交換するアイテムを選択してください(交換数には週制限があり、毎週<utcdow>水曜日8:00</utcdow>にリセットされます)。<c>
+ShopListTitle - ショップメニュー
+PluralityMenuGuide - <c f0df60>ショップを選んでください。<c>
+Exit - ショップを出る
+Buy - 購入
+NameNumber - $(0)×$(1)
+BuyTitle - 購入確認
+BuyCheck - 以下のアイテムを$(1)$(0)で購入します。<br>よろしいですか？
+BCDenomination - BC
+BuyResultMessage1 - アイテムを購入しました。
+BuyErrorMessage2 - アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>購入できません。
+BCInsufficient - 所持BCが不足しています。
+BuyResultMessage2 - アイテムを購入できませんでした。
+BuyResultTitle - アイテム購入
+CancelTitle - 購入キャンセル確認
+CancelMessage - 購入をキャンセルします。<br>よろしいですか？
+SelectItemInputVita - 個数を入力してください
+MenuErrorTitle - メッセージ
+MenuErrorMessage - 「BC交換ショップ」選択エラーメッセージ
+
+Group 1
+ShopTitleText - BATTLE COIN EXCHANGE SHOP
+NormalShopGuideText - <c f0df60>You can consume Battle Coins to exchange items. Select the items you wish to exchange.<c>
+LimitedShopGuideText - <c f0df60>Select item to exchange. (Number of items to be exchanged each week is capped. The cap is reset every <utcdow>Wednesday at 8:00</utcdow>).<c>
+ShopListTitle - SHOP MENU
+PluralityMenuGuide - <c f0df60>Select a shop.<c>
+Exit - Exit Shop
+Buy - Purchase
+NameNumber - $(0) x $(1)
+BuyTitle - CONFIRM PURCHASE
+BuyCheck - Purchase the following item(s) for $(1) $(0)?
+BCDenomination - BC
+BuyResultMessage1 - Purchase complete.
+BuyErrorMessage2 - The purchase could not be completed because your inventory<br>is full or you have exceeded the quantity limit.
+BCInsufficient - You don't have enough BC.
+BuyResultMessage2 - Purchase could not be completed.
+BuyResultTitle - PURCHASE ITEMS
+CancelTitle - CONFIRM PURCHASE CANCELLATION
+CancelMessage - Are you sure you want to cancel your purchase?
+SelectItemInputVita - Enter quantity
+MenuErrorTitle - MESSAGE
+MenuErrorMessage - BC Exchange Shop Selection Error Message
+
+
