@@ -19,7 +19,7 @@ BaseCustom,1,HelpMsg_ChangeSet,-
 BaseCustom,1,Title_FullSizeWindow,TERMINAL DE LA BASE DE DEFENSA
 BaseCustom,1,Title_TopMenu,PERSONALIZACION BASICA
 BaseCustom,1,TopMenuItem_ChangeSet,Cambiar conjunto de armas
-BaseCustom,1,TopMenuItem_Chat,Charlar
+BaseCustom,1,TopMenuItem_Chat,charlar
 BaseCustom,1,TopMenuItem_Fin,Salir de la personalizacion base
 BaseCustom,1,Title_ChangeSet,Cambiar conjunto de armas
 BaseCustom,1,ChangeItem_Selected,$(0) (Seleccionado)
@@ -70,7 +70,7 @@ BaseTerminal,0,MainFormElement1Info,拠点周辺のエネミーを攻撃し<br>�
 BaseTerminal,0,BaseName1,緑
 BaseTerminal,1,FullsizeFormTitle,BASES: $(0)
 BaseTerminal,1,FullsizeFormTitleHelp,<yellow>You can initiate various actions that support the base.<c>
-BaseTerminal,1,MainFormTitle,$(0) Terminal base
+BaseTerminal,1,MainFormTitle,$(0) Base terminal
 BaseTerminal,1,DecideWindowTitle,MENSAJE DE CONFIRMACION
 BaseTerminal,1,BreakWindowTitle,MENSAJE DE CONFIRMACION
 BaseTerminal,1,MainFormTagTitle1,Detalles de acceso
@@ -88,7 +88,7 @@ BaseTerminal,1,DecideWindowMessage,You are about to start $(0).<br>Are you sure?
 BaseTerminal,1,BreakWindowMessage,This terminal cannot be used<br>because the base is destroyed.
 BaseTerminal,1,MainFormElement1Name,Barrera explosiva
 BaseTerminal,1,MainFormElement1Info,Attacks enemies near the base<br>while protecting it temporarily.<br><br>$(0)
-BaseTerminal,1,BaseName1,Verde
+BaseTerminal,1,BaseName1,verdes
 Condition,0,Condition_Base,$(0)$(1)$(2)$(3)
 Condition,0,Condition_None,なし
 Condition,0,Condition_Info,<br><br>参加メンバーの平均BPによりエネミーが強化
@@ -111,7 +111,7 @@ Condition,1,Condition_Base,$(0)$(1)$(2)$(3)
 Condition,1,Condition_None,Ninguno
 Condition,1,Condition_Info,<br><br>Enemy strength is determined by the average BP of each member.
 Condition,1,EnemyCondition_Base,<br><br><light_red>Enemy Strengthed<c><br>$(0)
-Condition,1,EnemyCondition_HP,PS +$(0)%
+Condition,1,EnemyCondition_HP,PD +$(0)%
 Condition,1,EnemyCondition_Atk,Ataque +$(0)%
 Condition,1,EnemyCondition_Def,Defensa +$(0)%
 Condition,1,EnemyCondition_Dex,Destreza +$(0)%
