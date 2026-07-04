@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 from config import TIEMPO_ESPERA
 from utils import log, fix_broken_tags, HAS_LANGDETECT
