@@ -33,19 +33,21 @@ def batch_translate(conn, text_data: list[tuple[str, str]], src_lang: str) -> di
     if not pending: return out_map
     
     # Lote optimizado para la capa gratuita de Groq (Open Source)
-    # Al procesar de 5 en 5 evitamos saturar el límite de palabras por minuto
     chunk_size = 5
     
     for i in range(0, len(pending), chunk_size):
         chunk = pending[i:i + chunk_size]
         chunk_dict = {str(idx): {"contexto_original": ctx, "texto_a_traducir": txt} for idx, (txt, ctx) in enumerate(chunk)}
         
-        prompt = f"""Eres un traductor profesional de videojuegos (PSO2).
+        # --- AQUÍ ESTÁ EL PROMPT NUEVO CON EL GLOSARIO ---
+        prompt = f"""Eres un traductor profesional de videojuegos de ciencia ficción (PSO2).
 Recibirás un objeto JSON. 'contexto_original' es japonés (NO TRADUCIR). 'texto_a_traducir' es lo que DEBES traducir al español de España de forma natural.
+
 REGLAS:
 1. No traduzcas etiquetas HTML/XML ni corchetes (ej. <br>, <yellow>, {{player}}).
-2. Mantén en inglés: Arks, Falspawn, Monomate, Photon.
-3. Devuelve SOLO un JSON con formato: {{"0": "Traduccion1", "1": "Traduccion2"}}
+2. NO TRADUZCAS NOMBRES PROPIOS (Ej: Matoi, Zeno, Echo, Quna, Klariskrays, etc).
+3. TERMINOLOGÍA INTACTA (Mantén estas palabras SIEMPRE en inglés): Ship, Arks, Falspawn, Dark Falz, Photon, Monomate, Dimate, Trimate, Mag, Grinder, Meseta, AC, SG, FUN.
+4. Devuelve SOLO un JSON con formato: {{"0": "Traduccion1", "1": "Traduccion2"}}
 
 JSON A TRADUCIR:
 {json.dumps(chunk_dict, ensure_ascii=False)}
@@ -58,7 +60,7 @@ JSON A TRADUCIR:
             try:
                 log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
                 response = completion(
-                    model="groq/llama-3.1-8b-instant", # <-- MOTOR PRINCIPAL OPEN SOURCE
+                    model="groq/llama-3.1-8b-instant",
                     messages=[{"role": "user", "content": prompt}],
                     response_format={"type": "json_object"},
                     num_retries=0
@@ -68,7 +70,6 @@ JSON A TRADUCIR:
                 
             except Exception as e:
                 error_str = str(e).lower()
-                # Si chocamos con el límite de velocidad por enviar muy rápido, esperamos un poco
                 if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
                     intentos_limite += 1
                     log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
@@ -85,13 +86,18 @@ JSON A TRADUCIR:
             idx_str = str(idx_str)
             dst = translated_dict.get(idx_str, src_text)
             if isinstance(dst, dict): dst = dst.get("texto_a_traducir", src_text) 
+            
             dst = apply_release_sed(dst)
+            
+            # --- AQUÍ ESTÁ EL FILTRO DE FUERZA BRUTA ---
+            dst = forzar_glosario(dst)
+            
             out_map[src_text] = dst
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src_text, src_lang, dst))
         
         conn.commit()
         
-        # Una pausa de 3 segundos es perfecta para que Groq procese de forma fluida e infinita
-        time.sleep(3) 
+        # --- AQUÍ ESTÁ LA PAUSA LENTA PARA QUE GROQ NO EXPLOTE ---
+        time.sleep(12) 
         
     return out_map
