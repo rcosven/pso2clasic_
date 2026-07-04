@@ -60,29 +60,33 @@ JSON A PROCESAR:
         intentos_limite = 0
         
         while not exito and intentos_limite < 3:
-            try:
-                log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
-                response = completion(
-                    model="groq/llama-3.1-8b-instant",
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format={"type": "json_object"},
-                    num_retries=0
-                )
-                translated_dict = json.loads(response.choices[0].message.content)
-                exito = True 
-                
-                except Exception as e:
-                log(f"ERROR COMPLETO: {repr(e)}")
+    try:
+        log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
+        response = completion(
+            model="groq/llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"},
+            num_retries=0
+        )
+        translated_dict = json.loads(response.choices[0].message.content)
+        exito = True
 
-                error_str = str(e).lower()
+    except Exception as e:
+        log(f"ERROR COMPLETO: {repr(e)}")
+
+        error_str = str(e).lower()
 
         if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
-        ...
-                    time.sleep(30)
-                else:
-                    log("Error en formato de respuesta. Saltando lote...")
-                    translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
-                    exito = True 
+            intentos_limite += 1
+            log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
+            time.sleep(30)
+        else:
+            log("Error en formato de respuesta. Saltando lote...")
+            translated_dict = {
+                str(idx): txt
+                for idx, (txt, ctx) in enumerate(chunk)
+            }
+            exito = True
 
         if not translated_dict:
             translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
