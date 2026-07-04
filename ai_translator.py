@@ -1,15 +1,17 @@
 import json
 import time
 import sqlite3
+import logging
 import litellm
 from litellm import completion
-from litellm.exceptions import RateLimitError
 from config import CACHE_DB
 from utils import log, apply_release_sed, should_skip_translate
 
-# Silenciar completamente los logs ruidosos de la librería
+# === SILENCIO ABSOLUTO ===
+# Apagamos los logs internos y advertencias escandalosas de litellm
 litellm.suppress_debug_info = True 
 litellm.set_verbose = False 
+logging.getLogger("LiteLLM").setLevel(logging.CRITICAL)
 
 def init_cache():
     conn = sqlite3.connect(CACHE_DB)
@@ -58,20 +60,22 @@ JSON A TRADUCIR:
                     messages=[{"role": "user", "content": prompt}],
                     response_format={"type": "json_object"}, 
                     fallbacks=["groq/llama-3.1-8b-instant"],
-                    num_retries=0 # Apagamos el reintento automático ruidoso de litellm
+                    num_retries=0 # Desactivamos el reintento automático ruidoso
                 )
                 translated_dict = json.loads(response.choices[0].message.content)
                 exito = True 
                 
-            except RateLimitError as e:
-                # Capturamos el error 429 silenciosamente
-                intentos_limite += 1
-                log(f"⚠️ Límite de Google alcanzado. Pausando 60 segundos (Intento {intentos_limite}/3)...")
-                time.sleep(60)
             except Exception as e:
-                log("Error en IA o formato. Saltando lote...")
-                translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
-                exito = True 
+                error_str = str(e).lower()
+                # Atrapamos silenciosamente el 429 (Rate Limit) o Quota
+                if "429" in error_str or "quota" in error_str or "rate limit" in error_str or "resource_exhausted" in error_str:
+                    intentos_limite += 1
+                    log(f"⚠️ Límite de Google alcanzado. Pausando 60 segundos (Intento {intentos_limite}/3)...")
+                    time.sleep(60)
+                else:
+                    log("Error en IA o formato. Saltando lote...")
+                    translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
+                    exito = True 
 
         if not translated_dict:
             translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
@@ -85,9 +89,6 @@ JSON A TRADUCIR:
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src_text, src_lang, dst))
         
         conn.commit()
-        
-        # EL SECRETO: 6 segundos de descanso garantizan un máximo de 10 peticiones por minuto.
-        # Google permite hasta 15, así que estamos en la zona segura.
         time.sleep(6) 
         
     return out_map
