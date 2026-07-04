@@ -25,31 +25,31 @@ EndResult,0,Record_Change,<pict Sign_TRIANGLE>切替
 EndResult,0,CommentEdit_Title,戦友たちへのメッセージ
 EndResult,0,CommentEdit_Message,「今回の防衛結果と戦友たち」に表示する<br>コメントを設定してください。<br>この設定は、次回以降の採掘基地防衛戦にも引き継がれます。<br>コメントは、何度でも編集し直すことができます。
 EndResult,0,FriendList_Confirm,全員に<br>フレンド登録要請を送ることができます。<br><br>メッセージを添えることができます。<br>下記のメッセージで<br>フレンド登録要請を送りますか？
-EndResult,1,EndResult_Title,CURRENT DEFENSIVE OUTCOMES AND COMRADES
-EndResult,1,EndResult_Name,Character Name
+EndResult,1,EndResult_Title,RESULTADOS DEFENSIVOS ACTUALES Y COMPAЙEROS
+EndResult,1,EndResult_Name,Nombre del personaje
 EndResult,1,EndResult_Comment,<pict Comment> Comments
-EndResult,1,EndResult__Refresh,Update
+EndResult,1,EndResult__Refresh,Actualizar
 EndResult,1,EndResult_CommentEdit,<pict Comment> Edit
-EndResult,1,EndResult_CommentEdit_Help,Edit Comments
+EndResult,1,EndResult_CommentEdit_Help,Editar comentarios
 EndResult,1,EndResult_GoodJob,-
-EndResult,1,EndResult_GoodJob_Help,Send Kudos
-EndResult,1,EndResult_GoodJobAll,Send Kudos to All
-EndResult,1,EndResult_GoodJobAllFailed,No recipients available for Kudos.
+EndResult,1,EndResult_GoodJob_Help,Enviar felicitaciones
+EndResult,1,EndResult_GoodJobAll,Enviar felicitaciones a todos
+EndResult,1,EndResult_GoodJobAllFailed,No hay destinatarios disponibles para Kudos.
 EndResult,1,EndResult_Friend,-
-EndResult,1,EndResult_Friend_Help,Send/Accept Friend Request
-EndResult,1,EndResult_FriendAll,Send Friend Request to All
-EndResult,1,EndResult_FriendAllFailed,No recipients available for Friend request.
+EndResult,1,EndResult_Friend_Help,Enviar/Aceptar solicitud de amistad
+EndResult,1,EndResult_FriendAll,Enviar solicitud de amistad a todos
+EndResult,1,EndResult_FriendAllFailed,No hay destinatarios disponibles para solicitud de amistad.
 EndResult,1,EndResult_Campship,Close
-EndResult,1,Record_Title,PERSONAL DETAILS
-EndResult,1,Name_Title,Player ID Name
-EndResult,1,Record_Killed,Kill Count
-EndResult,1,Record_Material,Positive Crystals Earned
-EndResult,1,Record_Conduce,Contribution Level
-EndResult,1,Record_Licence,Code Name
-EndResult,1,Preview,Preview
+EndResult,1,Record_Title,DATOS PERSONALES
+EndResult,1,Name_Title,Nombre de identificacion del jugador
+EndResult,1,Record_Killed,Conteo de muertes
+EndResult,1,Record_Material,Cristales positivos obtenidos
+EndResult,1,Record_Conduce,Nivel de contribucion
+EndResult,1,Record_Licence,Nombre del codigo
+EndResult,1,Preview,Avance
 EndResult,1,Record_Change,Switch <pict Sign_TRIANGLE>
-EndResult,1,CommentEdit_Title,MESSAGE TO COMRADES
-EndResult,1,CommentEdit_Message,眀椀氀氀 戀攀 甀猀攀搀 昀漀爀 琀栀攀 渀攀砀琀 䴀椀渀椀渀最 䈀愀猀攀 䐀攀昀攀渀猀攀 伀瀀攀爀愀琀椀漀渀 㰀戀爀㸀愀猀 眀攀氀氀⸀ 夀漀甀 挀愀渀 攀搀椀琀 挀漀洀洀攀渀琀猀 愀猀 洀愀渀礀 琀椀洀攀猀 愀猀 礀漀甀 眀椀猀栀⸀
+EndResult,1,CommentEdit_Title,MENSAJE A LOS COMPAЙEROS
+EndResult,1,CommentEdit_Message,眀椀氀氀 戀攀 甀猀攀搀 昀漀爀 琀栀攀 渀攀砀琀 䴀椀渀椀渀最 䈀愀猀攀 䐀攀昀攀渀猀攀 伀瀀攀爀愀琀椀漀渀 㰀戀爀㸀愀猀 眀攀氀氀⸀ 夀漀甀 挀愀渀 攀搀椀琀 挀漀洀洀攀渀琀猀 愀猀 洀愀渀礀 琀椀洀攀猀 愀猀 礀漀甀 眀椀猀栀⸀
 EndResult,1,FriendList_Confirm,an also attach a message. <br>Send Friend Requests with the following message?
 Terminal,0,Terminal_Title,$(0)拠点端末
 Terminal,0,Terminal_BaseTitle,$(0)防衛ソケット
@@ -91,53 +91,53 @@ Terminal,0,Terminal_ActionInfo_3,A.I.Sを起動します。
 Terminal,0,Terminal_ActionInfo_4,防衛ソケットに銃座を設置します。
 Terminal,0,Terminal_ActionInfo_5,防衛ソケットにフォトン粒子砲を<br>設置します。
 Terminal,0,Terminal_ActionInfo_6,侵食された防衛ソケットを浄化します。
-Terminal,1,Terminal_Title,BASE TERMINALS: $(0)
-Terminal,1,Terminal_BaseTitle,DEFENSE SOCKETS: $(0)
+Terminal,1,Terminal_Title,TERMINALES BASE: $(0)
+Terminal,1,Terminal_BaseTitle,TOMAS DE DEFENSA: $(0)
 Terminal,1,Terminal_Point,Bases: $(0)
-Terminal,1,Terminal_Label_1,Access Details
-Terminal,1,Terminal_Label_2,Positive Crystal Pts Needed
-Terminal,1,Terminal_Use,Can Be Used
-Terminal,1,Terminal_Used,Already Used
-Terminal,1,Terminal_Back,Back
-Terminal,1,Terminal_MaterialPoint,$(0) pt
+Terminal,1,Terminal_Label_1,Detalles de acceso
+Terminal,1,Terminal_Label_2,Se necesitan puntos de cristal positivos
+Terminal,1,Terminal_Use,Se puede utilizar
+Terminal,1,Terminal_Used,Ya usado
+Terminal,1,Terminal_Back,Atras
+Terminal,1,Terminal_MaterialPoint,$(0) puntos
 Terminal,1,Terminal_FullTitle,BASES: $(0)
-Terminal,1,Terminal_FullBaseTitle,DEFENSE SOCKETS: $(0)
+Terminal,1,Terminal_FullBaseTitle,TOMAS DE DEFENSA: $(0)
 Terminal,1,Terminal_Help,<c f0df60>Gathering Positive Crystal points allows you to perform various actions to defend your base.<c>
-Terminal,1,Terminal_InfoTitle,DETAILED DESCRIPTION
-Terminal,1,Terminal_CheckTitle,CONFIRMATION MESSAGE
+Terminal,1,Terminal_InfoTitle,DESCRIPCION DETALLADA
+Terminal,1,Terminal_CheckTitle,MENSAJE DE CONFIRMACION
 Terminal,1,Terminal_CheckMessage,You are about to $(0).<br>Are you sure you wish to proceed?
 Terminal,1,Terminal_ErrorMessage,"Because this feature is currently in use,<br>you cannot activate it."
 Terminal,1,Terminal_ErrorMessage_2,Recover Structural Integrity failed because the base's<br>Structural Integrity is already at the maximum value.
 Terminal,1,Terminal_ErrorMessage_3,Defense Socket purification failed because the defense socket<br>has already been purified.
 Terminal,1,Terminal_ErrorMessage_4,You cannot activate AIS because the Defense Socket<br>is unusable.
 Terminal,1,Terminal_ErrorMessage_5,You cannot install anything because the Defense Socket<br>is unusable.
-Terminal,1,Terminal_BreakTitle,MESSAGE
-Terminal,1,Terminal_BreakMessage,You cannot access this base because it has been destroyed.
-Terminal,1,Terminal_FinishTitle,MESSAGE
-Terminal,1,Terminal_FinishMessage,You cannot access that because the quest has ended.
-Terminal,1,Terminal_VehicleTitle,MESSAGE
-Terminal,1,Terminal_VehicleMessage,You cannot access that because you are inside a vehicle.
-Terminal,1,Terminal_Action_1,Activate Burst Barrier
-Terminal,1,Terminal_Action_2,Recover Structural Integrity
-Terminal,1,Terminal_Action_3,Activate AIS
-Terminal,1,Terminal_Action_4,Install Emplacement
-Terminal,1,Terminal_Action_5,Install Photon Particle Cannon
-Terminal,1,Terminal_Action_6,Purify Defense Socket
+Terminal,1,Terminal_BreakTitle,MENSAJE
+Terminal,1,Terminal_BreakMessage,No puedes acceder a esta base porque ha sido destruida.
+Terminal,1,Terminal_FinishTitle,MENSAJE
+Terminal,1,Terminal_FinishMessage,No puedes acceder a eso porque la mision ha terminado.
+Terminal,1,Terminal_VehicleTitle,MENSAJE
+Terminal,1,Terminal_VehicleMessage,No puedes acceder a eso porque estas dentro de un vehiculo.
+Terminal,1,Terminal_Action_1,Activar barrera de explosion
+Terminal,1,Terminal_Action_2,Recuperar la integridad estructural
+Terminal,1,Terminal_Action_3,Activar AIS
+Terminal,1,Terminal_Action_4,Instalar emplazamiento
+Terminal,1,Terminal_Action_5,Instalar caйon de particulas de fotones
+Terminal,1,Terminal_Action_6,Purificar el zocalo de defensa
 Terminal,1,Terminal_ActionInfoCommon,<c f0df60>Becomes useable at $(0) or more points.<br>(Does not consume Positive Crystal points)<c>
-Terminal,1,Terminal_ActionInfoMaterial,Current Positive Crystal Pt: $(0)
+Terminal,1,Terminal_ActionInfoMaterial,Punto de cristal positivo actual: $(0)
 Terminal,1,Terminal_ActionInfo_1,Attacks enemies near the base while<br>protecting it temporarily.
-Terminal,1,Terminal_ActionInfo_2,Recovers the Structural Integrity of a base.
-Terminal,1,Terminal_ActionInfo_3,Activates the AIS.
-Terminal,1,Terminal_ActionInfo_4,Installs a Turret in a Defense Socket.
+Terminal,1,Terminal_ActionInfo_2,Recupera la Integridad Estructural de una base.
+Terminal,1,Terminal_ActionInfo_3,Activa el AIS.
+Terminal,1,Terminal_ActionInfo_4,Instala una torreta en un zocalo de defensa.
 Terminal,1,Terminal_ActionInfo_5,Installs a Photon Particle Cannon in a<br>Defense Socket.
-Terminal,1,Terminal_ActionInfo_6,Purifies a corrupted Defense Socket.
+Terminal,1,Terminal_ActionInfo_6,Purifica un zocalo de defensa corrupto.
 WaveResult,0,Result_Label_1,順位
 WaveResult,0,Result_Label_2,キャラクター名
 WaveResult,0,Result_Label_3,貢献度
 WaveResult,0,Result_Label_4,Score
 WaveResult,0,Result_Title,ウェーブ$(0)　リザルト
-WaveResult,1,Result_Label_1,Ranking
-WaveResult,1,Result_Label_2,Character Name
-WaveResult,1,Result_Label_3,Contribution Level
-WaveResult,1,Result_Label_4,Score
-WaveResult,1,Result_Title,RESULTS FOR WAVE $(0)
+WaveResult,1,Result_Label_1,Categoria
+WaveResult,1,Result_Label_2,Nombre del personaje
+WaveResult,1,Result_Label_3,Nivel de contribucion
+WaveResult,1,Result_Label_4,Puntaje
+WaveResult,1,Result_Title,RESULTADOS PARA OLA $(0)
