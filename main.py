@@ -1,26 +1,34 @@
-import os
-from pathlib import Path
+import time
+from config import TIEMPO_ESPERA
+from utils import log, fix_broken_tags, HAS_LANGDETECT
+from github_manager import setup_git, pull_from_github
+from ai_translator import init_cache
+from file_processor import process_translations
 
-# === RUTAS DEL PROYECTO ===
-REPO_DIR = Path("/app")
-CSV_DIR = REPO_DIR / "archivos_extraidos"
-QUARANTINE_DIR = REPO_DIR / "Cuarentena"
-CACHE_DB = Path("/app/translate_cache.db")
-LOG = Path("/app/translate_missing.log")
+def main():
+    # Limpiamos el archivo de log al iniciar
+    open("translate_missing.log", "w", encoding="utf-8").close()
+    
+    log("=== Iniciando Demonio Traductor PSO2 ES (Versión Modular) ===")
+    
+    if not HAS_LANGDETECT:
+        log("ERROR: Falta instalar 'langdetect'. Revisa tu requirements.txt.")
+        return
 
-# === CONFIGURACIÓN DE GITHUB ===
-GITHUB_REPO = os.getenv("GITHUB_REPO", "tu_usuario/pso2clasic")
-GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+    # Inicialización
+    git_ready = setup_git()
+    conn = init_cache()
 
-TIEMPO_ESPERA = 600
+    # Ciclo infinito
+    while True:
+        if git_ready: 
+            pull_from_github()
+            
+        fix_broken_tags()
+        process_translations(conn, git_ready)
+        
+        log(f"Ciclo terminado. Esperando {TIEMPO_ESPERA / 60} minutos para el siguiente...")
+        time.sleep(TIEMPO_ESPERA)
 
-# === DICCIONARIO DE ETIQUETAS ===
-TAG_FIXES = {
-    "<amarillo>": "<yellow>", "</amarillo>": "</yellow>",
-    "<rojo>": "<red>", "</rojo>": "</red>",
-    "<verde>": "<green>", "</verde>": "</green>",
-    "<azul>": "<blue>", "</azul>": "</blue>",
-    "<rosa>": "<pink>", "</rosa>": "</pink>",
-    "<morado>": "<purple>", "</morado>": "</purple>",
-}
+if __name__ == "__main__":
+    main()
