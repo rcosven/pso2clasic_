@@ -68,7 +68,9 @@ def process_translations(conn, git_ready):
                     if r[0].strip() == "": r[0] = raw_data[id_val]["section"]
                     if r[1] == "1" and raw_data[id_val]["1"]:
                         while len(r) < 4: r.append("")
-                        r[3] = raw_data[id_val]["1"]
+                        # Solo escribimos si r[3] está vacío o solo contiene espacios
+                        if not r[3].strip(): 
+                            r[3] = raw_data[id_val]["1"]
             fixed_rows.append(r)
         rows = fixed_rows
 
