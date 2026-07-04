@@ -9,16 +9,16 @@ CategoryList,0,Extend,シート所持数拡張
 CategoryList,0,ExtendHaveSheet_RemainEnable,<yellow>シート所持数拡張（あと$(0)回）<c><pict StarGem>
 CategoryList,0,ExtendHaveSheet_RemainDisable,<gray>シート所持数拡張（あと$(0)回）<pict StarGem><c>
 CategoryList,0,PossessionTitle,所持中のシート
-CategoryList,1,FullTitle,COLLECTION FOLDER
+CategoryList,1,FullTitle,CARPETA DE COLECCION
 CategoryList,1,FullInfo,<c f0df60>Complete objectives to obtain Reward Items. <c><c f0df60>Collections with <pict sp_icon> can only order 1 Sheet.<c>
-CategoryList,1,Title,CURRENTLY DISTRIBUTED COLLECTION FOLDER
-CategoryList,1,CaptionL,Collection Folder Name
-CategoryList,1,AppendCollectionName,Collection
-CategoryList,1,CaptionR,Distribution End Date
-CategoryList,1,Extend,Sheet Expansions
+CategoryList,1,Title,CARPETA DE COLECCION ACTUALMENTE DISTRIBUIDA
+CategoryList,1,CaptionL,Nombre de la carpeta de coleccion
+CategoryList,1,AppendCollectionName,Recopilacion
+CategoryList,1,CaptionR,Fecha de finalizacion de distribucion
+CategoryList,1,Extend,Ampliaciones de hoja
 CategoryList,1,ExtendHaveSheet_RemainEnable,<yellow> Sheet Expansions ($(0) Left)<c><pict StarGem>
 CategoryList,1,ExtendHaveSheet_RemainDisable,<gray> Sheet Expansions ($(0) Left)<c><pict StarGem>
-CategoryList,1,PossessionTitle,CURRENT SHEETS
+CategoryList,1,PossessionTitle,HOJAS ACTUALES
 SheetSelect,0,FullTitle,コレクトシート選択
 SheetSelect,0,FullTitle_v,シート選択
 SheetSelect,0,FullInfo,<c f0df60>欲しい報酬アイテムのシートを選択してください。<c>
@@ -34,22 +34,22 @@ SheetSelect,0,CoolTime,クールタイム
 SheetSelect,0,CoolTime_Free,このシートは、すぐに入手可能です。
 SheetSelect,0,CoolTime_Wait,このシートは<br><red>$(0)<c><br>まで入手できません。<br>（スタージェムでリセット可能）
 SheetSelect,0,CoolTime_SheetExpired,このシートは配信期間が終了しているため<br>シートの入手、再入手を行うことができません。
-SheetSelect,1,FullTitle,SELECT COLLECTION SHEET
-SheetSelect,1,FullTitle_v,SELECT SHEET
+SheetSelect,1,FullTitle,SELECCIONAR HOJA DE COLECCION
+SheetSelect,1,FullTitle_v,SELECCIONAR HOJA
 SheetSelect,1,FullInfo,<c f0df60>Select the sheet of the desired Reward Item.<c>
-SheetSelect,1,Title,SELECT REWARD ITEM
-SheetSelect,1,EquipableCheck,Equippables only
-SheetSelect,1,Button,Back
-SheetSelect,1,TitleSheetInfo,SHEET INFORMATION
-SheetSelect,1,SheetNum,Number of Sheets
+SheetSelect,1,Title,SELECCIONAR ARTICULO DE RECOMPENSA
+SheetSelect,1,EquipableCheck,Solo equipables
+SheetSelect,1,Button,Atras
+SheetSelect,1,TitleSheetInfo,INFORMACION DE LA HOJA
+SheetSelect,1,SheetNum,Numero de hojas
 SheetSelect,1,SheetNum_CurrentNum,$(0) / $(1)
 SheetSelect,1,SheetNum_CurrentNum_Equal,<c ff9c70>$(0) / $(1) <c>
 SheetSelect,1,SheetNum_CurrentNum_Over,<c ff0000>$(0) / $(1) <c>
-SheetSelect,1,CoolTime,Cooldown Time
-SheetSelect,1,CoolTime_Free,This sheet can be claimed immediately.
+SheetSelect,1,CoolTime,Tiempo de recuperacion
+SheetSelect,1,CoolTime_Free,Esta hoja se puede reclamar inmediatamente.
 SheetSelect,1,CoolTime_Wait,This sheet cannot be claimed until <br><red>$(0)<c>.<br><br>(Can be reset with Star Gems.)
 SheetSelect,1,CoolTime_SheetExpired,The distributon period for this sheet has expired.<br>This sheet cannot be claimed or reclaimed.
 SheetDetails,0,FullTitle,シート詳細
 SheetDetails,0,FullInfo,<c f0df60>それぞれの目標を達成して「必要アイテム」をすべて拾うと、「報酬アイテム」がもらえます。<c>
-SheetDetails,1,FullTitle,SHEET DETAILS
+SheetDetails,1,FullTitle,DETALLES DE LA HOJA
 SheetDetails,1,FullInfo,<c f0df60>Complete each objective and gather all required items to receive Reward Items.<c>
