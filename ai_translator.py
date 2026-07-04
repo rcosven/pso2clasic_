@@ -39,8 +39,6 @@ def batch_translate(conn, text_data: list[tuple[str, str]], src_lang: str) -> di
         chunk = pending[i:i + chunk_size]
         chunk_dict = {str(idx): {"contexto_original": ctx, "texto_a_traducir": txt} for idx, (txt, ctx) in enumerate(chunk)}
         
-        # --- AQUÍ ESTÁ EL PROMPT NUEVO CON EL GLOSARIO ---
-        # --- AQUÍ ESTÁ EL PROMPT ACTUALIZADO ---
         prompt = f"""Eres un traductor profesional de videojuegos de ciencia ficción (PSO2).
 Recibirás un objeto JSON. 'contexto_original' es el japonés (para referencia de contexto). 'texto_a_traducir' es la frase a traducir al español.
 
@@ -50,7 +48,8 @@ REGLAS DE ORO:
 3. No traduzcas etiquetas HTML/XML ni corchetes (ej. <br>, <yellow>, {{player}}).
 4. NO TRADUZCAS NOMBRES PROPIOS (Ej: Matoi, Zeno, Echo, Quna, etc).
 5. TERMINOLOGÍA INTACTA (Mantén estas palabras SIEMPRE en inglés): Ship, Arks, Falspawn, Dark Falz, Photon, Monomate, Dimate, Trimate, Mag, Grinder, Meseta, AC, SG, FUN.
-6. Devuelve SOLO un JSON con formato: {{"0": "Traduccion1", "1": "Traduccion2"}}
+6. Devuelve SOLO un JSON válido.
+7. CRÍTICO: Asegúrate de cerrar correctamente todas las comillas y NUNCA termines una cadena de texto con una barra invertida (\).
 
 JSON A PROCESAR:
 {json.dumps(chunk_dict, ensure_ascii=False)}
@@ -58,55 +57,55 @@ JSON A PROCESAR:
         translated_dict = {}
         exito = False
         intentos_limite = 0
-
+        
         while not exito and intentos_limite < 3:
             try:
-                log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
-
+                log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos... (Intento {intentos_limite + 1}/3)")
                 response = completion(
                     model="groq/llama-3.1-8b-instant",
                     messages=[{"role": "user", "content": prompt}],
                     response_format={"type": "json_object"},
                     num_retries=0
                 )
-
                 translated_dict = json.loads(response.choices[0].message.content)
-                exito = True
+                exito = True # El JSON se procesó correctamente, salimos del bucle
 
             except Exception as e:
-                log(f"ERROR COMPLETO: {repr(e)}")
-
                 error_str = str(e).lower()
-
+                
                 if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
                     intentos_limite += 1
-                    log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
+                    log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos...")
                     time.sleep(30)
+                elif "json_validate_failed" in error_str or "json" in error_str:
+                    intentos_limite += 1
+                    log(f"⚠️ IA generó un JSON roto. Reintentando...")
+                    time.sleep(2)
                 else:
-                    log("Error en formato de respuesta. Saltando lote...")
-                    translated_dict = {
-                        str(idx): txt
-                        for idx, (txt, ctx) in enumerate(chunk)
-                    }
-                    exito = True
+                    log(f"ERROR DESCONOCIDO: {repr(e)}. Saltando lote...")
+                    translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
+                    exito = True # Si es un error distinto e irremediable, saltamos para que no se congele
 
-        if not translated_dict:
+        # Si agotó los 3 intentos y nunca tuvo éxito
+        if not translated_dict or not exito:
             translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
 
         for idx_str, (src_text, _) in enumerate(chunk):
             idx_str = str(idx_str)
             dst = translated_dict.get(idx_str, src_text)
-            if isinstance(dst, dict):
-                dst = dst.get("texto_a_traducir", src_text)
-
+            if isinstance(dst, dict): dst = dst.get("texto_a_traducir", src_text) 
+            
             dst = apply_release_sed(dst)
+            
+            # Filtro de fuerza bruta
             dst = forzar_glosario(dst)
-
+            
             out_map[src_text] = dst
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src_text, src_lang, dst))
-
+        
         conn.commit()
-
-        time.sleep(12)
-
+        
+        # Pausa lenta para que Groq no explote
+        time.sleep(12) 
+        
     return out_map
