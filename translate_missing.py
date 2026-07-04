@@ -213,7 +213,7 @@ JSON A TRADUCIR:
         try:
             log(f"Traduciendo lote de {len(chunk)} textos (con contexto inyectado)...")
             response = completion(
-                model="gemini/gemini-1.5-flash-latest", 
+                model="gemini/gemini-2.5-flash", 
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}, 
                 fallbacks=["groq/llama-3.1-8b-instant"],
