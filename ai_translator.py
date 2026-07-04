@@ -71,11 +71,13 @@ JSON A PROCESAR:
                 translated_dict = json.loads(response.choices[0].message.content)
                 exito = True 
                 
-            except Exception as e:
+                except Exception as e:
+                log(f"ERROR COMPLETO: {repr(e)}")
+
                 error_str = str(e).lower()
-                if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
-                    intentos_limite += 1
-                    log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
+
+        if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
+        ...
                     time.sleep(30)
                 else:
                     log("Error en formato de respuesta. Saltando lote...")
