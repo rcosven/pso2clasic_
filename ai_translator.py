@@ -58,35 +58,37 @@ JSON A PROCESAR:
         translated_dict = {}
         exito = False
         intentos_limite = 0
-        
-while not exito and intentos_limite < 3:
-    try:
-        log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
-    response = completion(
-            model="groq/llama-3.1-8b-instant",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"},
-            num_retries=0
-        )
-        translated_dict = json.loads(response.choices[0].message.content)
-        exito = True
 
-    except Exception as e:
-        log(f"ERROR COMPLETO: {repr(e)}")
+        while not exito and intentos_limite < 3:
+            try:
+                log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
 
-        error_str = str(e).lower()
+                response = completion(
+                    model="groq/llama-3.1-8b-instant",
+                    messages=[{"role": "user", "content": prompt}],
+                    response_format={"type": "json_object"},
+                    num_retries=0
+                )
 
-        if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
-            intentos_limite += 1
-            log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
-            time.sleep(30)
-        else:
-            log("Error en formato de respuesta. Saltando lote...")
-            translated_dict = {
-                str(idx): txt
-                for idx, (txt, ctx) in enumerate(chunk)
-            }
-            exito = True
+                translated_dict = json.loads(response.choices[0].message.content)
+                exito = True
+
+            except Exception as e:
+                log(f"ERROR COMPLETO: {repr(e)}")
+
+                error_str = str(e).lower()
+
+                if "429" in error_str or "rate_limit" in error_str or "quota" in error_str:
+                    intentos_limite += 1
+                    log(f"⚠️ Ritmo alcanzado en Groq. Pausando 30 segundos (Intento {intentos_limite}/3)...")
+                    time.sleep(30)
+                else:
+                    log("Error en formato de respuesta. Saltando lote...")
+                    translated_dict = {
+                        str(idx): txt
+                        for idx, (txt, ctx) in enumerate(chunk)
+                    }
+                    exito = True
 
         if not translated_dict:
             translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
@@ -94,19 +96,17 @@ while not exito and intentos_limite < 3:
         for idx_str, (src_text, _) in enumerate(chunk):
             idx_str = str(idx_str)
             dst = translated_dict.get(idx_str, src_text)
-            if isinstance(dst, dict): dst = dst.get("texto_a_traducir", src_text) 
-            
+            if isinstance(dst, dict):
+                dst = dst.get("texto_a_traducir", src_text)
+
             dst = apply_release_sed(dst)
-            
-            # --- AQUÍ ESTÁ EL FILTRO DE FUERZA BRUTA ---
             dst = forzar_glosario(dst)
-            
+
             out_map[src_text] = dst
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src_text, src_lang, dst))
-        
+
         conn.commit()
-        
-        # --- AQUÍ ESTÁ LA PAUSA LENTA PARA QUE GROQ NO EXPLOTE ---
-        time.sleep(12) 
-        
+
+        time.sleep(12)
+
     return out_map
