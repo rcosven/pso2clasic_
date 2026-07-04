@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-PSO2 CSV Spanish Translator - Ciclo Continuo con Guardado Parcial
+PSO2 CSV Spanish Translator - Ciclo Continuo con IA Integrada (Fallback)
 - Hace Pull constante desde GitHub.
-- Traduce el group 1.
+- Traduce el group 1 usando Gemini (con Llama 3 como respaldo si falla).
+- Respeta etiquetas de código y glosario.
 - Hace Push intermitente (cada 30 archivos modificados) para evitar pérdidas.
 - No depende de volúmenes persistentes.
 """
@@ -13,9 +14,15 @@ import csv
 import sqlite3
 import time
 import subprocess
+import json
 from pathlib import Path
 from io import StringIO
-from deep_translator import GoogleTranslator
+
+import litellm
+from litellm import completion
+
+# Ocultar advertencias molestas de la consola
+litellm.suppress_debug_info = True 
 
 try:
     from langdetect import detect, DetectorFactory
@@ -70,6 +77,8 @@ def fix_broken_tags():
         log(f"Se arreglaron {fixed_count} tags rotos.")
 
 def apply_release_sed(text: str) -> str:
+    if not isinstance(text, str):
+        return str(text)
     repl = {
         "á": "a", "à": "a", "è": "e", "é": "e", "ì": "i", "í": "i",
         "ò": "o", "ó": "o", "ö": "o", "ō": "o", "ù": "u", "ú": "u", "ü": "u",
@@ -155,39 +164,72 @@ def push_to_github():
     else:
         log(f"Error push: {push.stderr[:150]}")
 
+# === NUEVO MOTOR DE TRADUCCIÓN CON LITELLM ===
 def batch_translate(conn, texts: list[str], src_lang: str) -> dict[str, str]:
     out_map: dict[str, str] = {}
     pending: list[str] = []
+    
     for text in texts:
         if should_skip_translate(text):
             out_map[text] = text
             continue
         row = conn.execute("SELECT dst FROM cache WHERE src=? AND lang=?", (text, src_lang)).fetchone()
-        if row: out_map[text] = row[0]
-        else: pending.append(text)
+        if row: 
+            out_map[text] = row[0]
+        else: 
+            pending.append(text)
         
     if not pending: return out_map
-    tr = GoogleTranslator(source=src_lang, target="es")
-    chunk_size = 40
+    
+    # Procesar en lotes de 20 para no saturar la IA y asegurar que el JSON no se rompa
+    chunk_size = 20
     
     for i in range(0, len(pending), chunk_size):
         chunk = pending[i:i + chunk_size]
-        translated = None
-        for attempt in range(5):
-            try:
-                translated = tr.translate_batch(chunk)
-                break
-            except Exception:
-                time.sleep(2 ** attempt)
-        if not translated: translated = chunk
-        if not isinstance(translated, list): translated = [translated]
+        chunk_dict = {str(idx): text for idx, text in enumerate(chunk)}
         
-        for src, dst in zip(chunk, translated):
-            dst = apply_release_sed(dst or src)
+        prompt = f"""Eres un traductor profesional de videojuegos trabajando en Phantasy Star Online 2 (PSO2).
+Traduce los valores del siguiente objeto JSON de Inglés a Español.
+
+REGLAS ESTRICTAS:
+1. NUNCA traduzcas las etiquetas de color o formato (ej. <yellow>, <red>, \n).
+2. NUNCA traduzcas nombres de variables entre corchetes o llaves (ej. {{player_name}}, [Target]).
+3. GLOSARIO: Mantén estas palabras en inglés: Arks, Falspawn, Monomate, Photon.
+4. Tono: Épico pero natural.
+5. DEBES devolver ÚNICAMENTE un objeto JSON válido con las mismas claves numéricas.
+
+JSON A TRADUCIR:
+{json.dumps(chunk_dict, ensure_ascii=False)}
+"""
+
+        translated_dict = {}
+        try:
+            log(f"Traduciendo lote de {len(chunk)} textos con IA...")
+            response = completion(
+                model="gemini/gemini-1.5-flash", 
+                messages=[{"role": "user", "content": prompt}],
+                response_format={"type": "json_object"}, 
+                fallbacks=["groq/llama3-8b-8192"], # El relevo mágico
+                num_retries=2
+            )
+            
+            result_text = response.choices[0].message.content
+            translated_dict = json.loads(result_text)
+            
+        except Exception as e:
+            log(f"Error en IA o formato JSON inválido. Saltando lote: {str(e)[:100]}")
+            # Si hay error, asignamos el texto original para que el script no se caiga
+            translated_dict = {str(idx): text for idx, text in enumerate(chunk)}
+
+        for idx_str, src in chunk_dict.items():
+            dst = translated_dict.get(idx_str, src)
+            dst = apply_release_sed(dst)
             out_map[src] = dst
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src, src_lang, dst))
+            
         conn.commit()
-        time.sleep(0.12)
+        time.sleep(2) # Pausa obligatoria para evitar baneos por spam (Rate Limit)
+        
     return out_map
 
 def read_csv_rows(path: Path) -> list[list[str]]:
@@ -267,7 +309,7 @@ def process_translations(conn, git_ready):
 
 def main():
     LOG.write_text("", encoding="utf-8")
-    log("=== Iniciando Demonio Traductor PSO2 ES ===")
+    log("=== Iniciando Demonio Traductor PSO2 ES con IA ===")
     
     if not HAS_LANGDETECT:
         log("ERROR: Falta langdetect.")
@@ -283,7 +325,7 @@ def main():
         fix_broken_tags()
         process_translations(conn, git_ready)
         
-        log(f"Ciclo terminado. Esperando {TIEMPO_ESPERA / 60} minutes...")
+        log(f"Ciclo terminado. Esperando {TIEMPO_ESPERA / 60} minutos...")
         time.sleep(TIEMPO_ESPERA)
 
 if __name__ == "__main__":
