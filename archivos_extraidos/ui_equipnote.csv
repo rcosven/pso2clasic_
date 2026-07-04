@@ -146,7 +146,7 @@ EquipNote,1,Quest_QuestType_Urgency,(Incluye misiones desencadenantes)
 EquipNote,1,Quest_QuestType_Warning,<yellow>The amount increased varies depending on quest difficulty<c>
 EquipNote,1,Enemy_None,Ninguno
 EquipNote,1,Enemy_All,Todos los enemigos
-EquipNote,1,Target_Rate,$(0).$(1)%
+EquipNote,1,Target_Rate,0.%
 EquipNote,1,GetRewardMessage,Obtained Reward Item [<yellow>$(0)<c>]!
 EquipNote,1,GetRewardMessage2,Completed the Collection Sheet objective<br>and obtained [<pict $(0)>$(1)] $(2)★.
 EquipNote,1,GetRequireMessage,Drops the required item [<yellow>$(0)<c>]!
@@ -158,7 +158,7 @@ EquipNote,1,EquipNoteError_Payment,No tienes suficiente SG.
 EquipNote,1,EquipNoteError_ExpiredSheet,El periodo de distribucion de esta hoja ha expirado.
 EquipNote,1,EquipNoteError_RequirePremium,xpired.<br><br>Please confirm that there are no issues with your platform<br>time and date settings.
 EquipNote,1,EquipNoteError_MaxExtendHaveSheetByTicket,You have reached the limit for expansions to the number of<br>sheets you can hold. No further expansions available.
-EquipNote,1,EquipNoteError_NoMoreSpecialCollection,夀漀甀 挀愀渀渀漀琀 挀氀愀椀洀 琀栀椀猀 䌀漀氀氀攀挀琀椀漀渀 匀栀攀攀琀 戀攀挀愀甀猀攀 礀漀甀 愀氀爀攀愀搀礀 㰀戀爀㸀栀愀瘀攀 ㄀ 椀渀 礀漀甀爀 瀀漀猀猀攀猀猀椀漀渀⸀
+EquipNote,1,EquipNoteError_NoMoreSpecialCollection,"<pict sp_icon>La Special Collect Sheet se puede poseer solo una vez.<br>Ya posee una, no puede obtener mas."
 EquipNote,1,EquipNote_ConfirmToGetSheet,You can only have 1 <pict sp_icon> Special Collection Sheet in<br>your possession.<br><br>Claim this Collection Sheet?
 EquipNote,1,EquipNote_ClearCoolTimeTitle,CONFIRMAR COMPRA DEL ARTICULO
 EquipNote,1,EquipNote_ClearCoolTimeMessage,<pict $(0)>$(2)<br>sheet immediately.<br><br>Proceed to the [$(1)] purchase screen?
@@ -171,7 +171,7 @@ EquipNote,1,EquipNote_TitleTimeInfo,Periodo de distribucion
 EquipNote,1,EquipNote_CoolTime,Tiempo de recuperacion
 EquipNote,1,EquipNote_CoolTime_Free,-
 EquipNote,1,EquipNote_CoolTime_Wait,This sheet cannot be claimed until <br><red>$(0)<c>.<br><br>(Can be reset with Star Gems.)
-EquipNote,1,EquipNote_CoolTime_None,Pecado sabanas.
+EquipNote,1,EquipNote_CoolTime_None,No tiene hoja.
 EquipNote,1,EquipNote_CoolTime_SheetExpired,The distributon period for this sheet has expired.<br>This sheet cannot be claimed or reclaimed.
 EquipNote,1,EquipNote_BondMessage,$(0)$(1)
 EquipNote,1,EquipNote_AndText,&
@@ -180,7 +180,7 @@ EquipNote,1,EquipNoteBoost_ItemWinTitle,SELECCIONADOR DE ARTICULO
 EquipNote,1,EquipNoteBoost_ProTitle,Articulos y progreso
 EquipNote,1,EquipNoteBoost_UseCheckTitle,CONFIRMAR USO DEL ARTICULO
 EquipNote,1,EquipNoteBoost_UseCheck,You are about to use $(0) to increase the progress gauge for $(1).<br><br>Are you sure you wish to proceed?
-EquipNote,1,EquipNoteBoost_UseToast,Estados Unidos $(0).
+EquipNote,1,EquipNoteBoost_UseToast,Uso $(0).
 EquipNote,1,EquipNoteBoost_Help,<c f0df60>Select an item to use.
 EquipNote,1,EquipNoteBoost_SheetDetail,Informacion de la hoja de coleccion
 EquipNote,1,EquipNoteBoost_UseCheck2,exceeding 100% will be lost.<br>Are you sure you wish to proceed?
