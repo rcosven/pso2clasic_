@@ -59,8 +59,8 @@ JSON A PROCESAR:
         exito = False
         intentos_limite = 0
         
-        while not exito and intentos_limite < 3:
-    try:
+    while not exito and intentos_limite < 3:
+        try:
         log(f"Llama 3.1 (Groq) traduciendo lote de {len(chunk)} textos...")
         response = completion(
             model="groq/llama-3.1-8b-instant",
