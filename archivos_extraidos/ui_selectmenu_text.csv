@@ -57,7 +57,7 @@ CommandList,1,SelectMenuType_CommunicationMenu4,Cambiar estado en linea
 CommandList,1,SelectMenuType_CommunicationMenu5,Mostrar/Ocultar registro corto
 CommandList,1,SelectMenuType_ExecuteMenu1,Tomar captura de pantalla
 CommandList,1,VITA_SelectMenuType_ExecuteMenu1,Cambiar configuracion de vista
-CommandList,1,SelectMenuType_Execute_Camera,SELECCIONAR CAMARA
+CommandList,1,SelectMenuType_Execute_Camera,SELECCION DE CAMARA
 CommandList,1,SelectMenuType_ExecuteMenu2,Ir a cuartos personales
 CommandList,1,SelectMenuType_ExecuteMenu3,Ir a los cuarteles de la Alianza
 CommandList,1,SelectMenuType_QuestMenu1,Instrucciones para los aliados
@@ -66,11 +66,11 @@ CommandList,1,SelectMenuType_QuestMenu3,Mostrar/Ocultar mapa del area
 CommandList,1,SelectMenuType_CommunicationMenu6,Colocar/quitar baliza de fiesta
 CommandList,1,SelectMenuType_CommunicationMenu7,Cambiar mensajes de amigos
 CommandList,1,SelectMenuType_CommunicationMenu8,Personajes cercanos
-CommandList,1,SelectMenuType_CommunicationMenu9,Lista de amigos
+CommandList,1,SelectMenuType_CommunicationMenu9,lista de amigos
 CommandList,1,SelectMenuType_CommunicationMenu10,Comandos de la Alianza
 CommandList,1,SelectMenuType_CommunicationMenu11,Correo
 CommandList,1,SelectMenuType_CommunicationMenu12,Registro de comunicaciones
-CommandList,1,SelectMenuType_CommunicationMenu13,Arte simbolico
+CommandList,1,SelectMenuType_CommunicationMenu13,arte simbolico
 CommandList,1,SelectMenuType_Execute_CameraLight,Seleccionar camara/luz
 CommandList,1,SelectMenuType_ExecuteMenu4,Ve a tu barco
 CommandList,1,SelectMenuType_ExecuteMenu5,Ir al barco universal
@@ -82,7 +82,7 @@ CommandList,1,SelectMenuType_QuestMenu4,Comandos del partido
 CommandList,1,SelectMenuType_QuestMenu5,Ordenes de clientes
 CommandList,1,SelectMenuType_QuestMenu6,Entrenamiento ARCAS
 CommandList,1,SelectMenuType_QuestMenu7,Eventos actuales
-CommandList,1,SelectMenuType_ItemMenu1,Equipar armas
+CommandList,1,SelectMenuType_ItemMenu1,equipar armas
 CommandList,1,SelectMenuType_ItemMenu2,Equipar armadura
 CommandList,1,SelectMenuType_ItemMenu3,Personalizar looks
 CommandList,1,SelectMenuType_ItemMenu4,Editar subpaleta
@@ -90,7 +90,7 @@ CommandList,1,SelectMenuType_ItemMenu5,Elementos
 CommandList,1,SelectMenuType_ItemMenu6,Personalizar
 CommandList,1,SelectMenuType_ItemMenu7,revistas
 CommandList,1,SelectMenuType_ItemMenu8,Tienda de intercambio
-CommandList,1,SelectMenuType_ItemMenu9,Mascotas
+CommandList,1,SelectMenuType_ItemMenu9,mascotas
 CommandList,1,SelectMenuType_MyData1,Informacion del personaje
 CommandList,1,SelectMenuType_MyData2,Titulos
 CommandList,1,SelectMenuType_MyData3,Editar ID de ARKS
@@ -148,7 +148,7 @@ UserCommand,1,Camera_Item1,Ampliar el personaje
 UserCommand,1,Camera_Item2,Alejar el personaje
 UserCommand,1,TagName,: $(0)
 UserCommand,1,TitleNon,Sin titulo
-UserCommand,1,GuildNon,Sin alianza
+UserCommand,1,GuildNon,sin alianza
 UserCommand,1,OverheadDisplay_Item13,Nombre del personaje/HP y barra de PP (durante las misiones)
 UserCommand,1,OverheadDisplay_Item14,Nombre del barco/Nombre del personaje
 ShortcutCommand,0,VITA_Shortcut_Title,ショートカット一覧
@@ -159,8 +159,8 @@ ShortcutCommand,0,VITA_Target,発言先：
 ShortcutCommand,0,SubWindowChange2,<%Function>切替
 ShortcutCommand,0,StartChat,チャット開始
 ShortcutCommand,1,VITA_Shortcut_Title,ATAJOS
-ShortcutCommand,1,VITA_Tab_Symbol,Arte simbolico
-ShortcutCommand,1,VITA_Tab_Chat,Charlar
+ShortcutCommand,1,VITA_Tab_Symbol,arte simbolico
+ShortcutCommand,1,VITA_Tab_Chat,charlar
 ShortcutCommand,1,SubWindowChange1,Switch <pict Sign_TRIANGLE>
 ShortcutCommand,1,VITA_Target,A:
 ShortcutCommand,1,SubWindowChange2,Switch <%Function>
@@ -190,10 +190,10 @@ ScreenCommand,1,VITA_UI_Item1,Mostrar
 ScreenCommand,1,VITA_UI_Item2,Esconder
 ScreenCommand,1,VITA_View_Menu,Ajustar vista
 ScreenCommand,1,VITA_View_Item1,Dar un golpe de zoom
-ScreenCommand,1,VITA_View_Item2,Alejar
+ScreenCommand,1,VITA_View_Item2,alejajar
 ScreenCommand,1,VITA_View_Item3,Panoramica arriba
 ScreenCommand,1,VITA_View_Item4,Panoramica hacia abajo
-ScreenCommand,1,VITA_View_Item5,Captura
+ScreenCommand,1,VITA_View_Item5,captura
 ScreenCommand,1,VITA_View_Item6,Reiniciar
 CameraCommand,0,Camera_Title,カメラ選択
 CameraCommand,0,Menu_Normal,通常カメラ
@@ -274,13 +274,13 @@ CameraCommand,0,Toast_ExitEditinglight,カスタムライトの設定モード�
 CameraCommand,0,ErrorTitle_ShaderSetting,設定エラー
 CameraCommand,0,Error_ShaderSetting,カスタムライト設定は、シェーダー品質が<br>「高品質」の時のみ利用することができます。<br><br>ランチャー画面から環境設定を開き、<br>描画タブのシェーダー品質を変更してください。
 CameraCommand,0,Message_DiscardLightSettings,変更した内容を反映せずに終了します。<br>よろしいですか？
-CameraCommand,1,Camera_Title,SELECCIONAR CAMARA
-CameraCommand,1,Menu_Normal,Camara normal
+CameraCommand,1,Camera_Title,SELECCION DE CAMARA
+CameraCommand,1,Menu_Normal,camara normal
 CameraCommand,1,Menu_Camera1,Camara fija 1
 CameraCommand,1,Menu_Camera2,Camara fija 2
 CameraCommand,1,Menu_Camera3,Camara fija 3
-CameraCommand,1,Pop_ChangeCamera,Usar
-CameraCommand,1,Pop_ChangeAngle,Cambiar angulo
+CameraCommand,1,Pop_ChangeCamera,usar
+CameraCommand,1,Pop_ChangeAngle,cambiar angulo
 CameraCommand,1,Info_ChangeCamera,A new camera angle will be saved for $(0).<br>Are you sure you wish to proceed?
 CameraCommand,1,Message_ChangeCamera,Se guardo un nuevo angulo de camara por $(0).
 CameraCommand,1,Message_ExitEditingCamera,El modo de edicion de camara ha sido desbloqueado.
@@ -315,7 +315,7 @@ CameraCommand,1,CameraLight_Title,SELECCIONAR CAMARA/LUZ
 CameraCommand,1,Menu_Camera4,Fixed Camera 4 <pict Arcscash>
 CameraCommand,1,Menu_Camera5,Fixed Camera 5 <pict Arcscash>
 CameraCommand,1,Menu_Camera6,Fixed Camera 6 <pict Arcscash>
-CameraCommand,1,Menu_NormalLight,Luz normal
+CameraCommand,1,Menu_NormalLight,luz normal
 CameraCommand,1,Menu_FreeLightSetting,Custom Light Setting 1 <pict Arcscash>
 CameraCommand,1,Menu_FreeLightSetting2,Custom Light Setting 2 <pict Arcscash>
 CameraCommand,1,Menu_FreeLightSetting3,Custom Light Setting 3 <pict Arcscash>
@@ -340,7 +340,7 @@ CameraCommand,1,Button_4,Todas las luces apagadas
 CameraCommand,1,Button_5,Restablecer todo
 CameraCommand,1,Button_6,DE ACUERDO
 CameraCommand,1,Button_7,Cancel
-CameraCommand,1,Text_1,Fortaleza
+CameraCommand,1,Text_1,fortaleza
 CameraCommand,1,icon_on,<pict icon_light_on>
 CameraCommand,1,icon_off,<pict icon_light_off>
 CameraCommand,1,Button_Decide,DE ACUERDO
@@ -378,7 +378,7 @@ ActiveStatus,0,ActiveStatus_Connecting,通信中…
 ActiveStatus,0,ActiveStatus_Error,メッセージに<br>使用できない文字が含まれています。
 ActiveStatus,0,ActiveStatus_SendMessage,メッセージを登録しました。
 ActiveStatus,1,ActiveStatus_Title,CAMBIAR MENSAJES DE AMIGOS
-ActiveStatus,1,ActiveStatus_Info,en.
+ActiveStatus,1,ActiveStatus_Info,es.
 ActiveStatus,1,ActiveStatus_Comment,Mensajes de amigos
 ActiveStatus,1,ActiveStatus_Send,DE ACUERDO
 ActiveStatus,1,ActiveStatus_Cancell,Cancel
@@ -444,7 +444,7 @@ Common,1,Caption4,Mapa del vestibulo
 Common,1,OnlineStatus_1,Esconder
 Common,1,OnlineStatus_2,Reclutar miembros del partido
 Common,1,OnlineStatus_3,Se buscan miembros del partido
-Common,1,OnlineStatus_4,Lejos
+Common,1,OnlineStatus_4,lejos
 Common,1,OnlineStatus_5,Abrir mensajeria
 Common,1,OnlineStatus_Free,Abrir configuracion de mensajeria
 Common,1,OnlineStatus_Decide_Vita,Estado de actualizacion
@@ -472,10 +472,10 @@ Common,1,ApcTacticsOrderAttackHint_2,Los aliados no se enfrentaran.
 Common,1,Caption5,Elementos
 Common,1,Caption6,Datos personales
 Common,1,Caption7,Menu de viaje
-Common,1,Caption8,Sistema
-Common,1,Caption9,Alianza
+Common,1,Caption8,sistema
+Common,1,Caption9,alianza
 Common,1,Caption10,Eventos
-Common,1,Caption11,Criar mascotas
+Common,1,Caption11,criar mascotas
 Common,1,Caption12,Menu dedicado
 Common,1,Caption13,Tomar fotografias/Preparacion
 Common,1,Caption14,Menu de plataforma
