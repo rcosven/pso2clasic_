@@ -5,7 +5,7 @@ import logging
 import litellm
 from litellm import completion
 from config import CACHE_DB
-from utils import log, apply_release_sed, should_skip_translate
+from utils import log, apply_release_sed, should_skip_translate, forzar_glosario
 
 # Silenciar por completo las alertas de la librería
 litellm.suppress_debug_info = True 
