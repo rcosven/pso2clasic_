@@ -44,18 +44,38 @@ JSON A TRADUCIR:
 {json.dumps(chunk_dict, ensure_ascii=False)}
 """
         translated_dict = {}
-        try:
-            log(f"Traduciendo lote de {len(chunk)} textos...")
-            response = completion(
-                model="gemini/gemini-2.5-flash", 
-                messages=[{"role": "user", "content": prompt}],
-                response_format={"type": "json_object"}, 
-                fallbacks=["groq/llama-3.1-8b-instant"],
-                num_retries=2
-            )
-            translated_dict = json.loads(response.choices[0].message.content)
-        except Exception as e:
-            log("Error en IA. Saltando lote...")
+        exito = False
+        intentos_limite = 0
+        
+        # Bucle de reintentos inteligentes para evadir el límite de peticiones (429)
+        while not exito and intentos_limite < 3:
+            try:
+                log(f"Traduciendo lote de {len(chunk)} textos...")
+                response = completion(
+                    model="gemini/gemini-2.5-flash", 
+                    messages=[{"role": "user", "content": prompt}],
+                    response_format={"type": "json_object"}, 
+                    fallbacks=["groq/llama-3.1-8b-instant"],
+                    num_retries=2
+                )
+                translated_dict = json.loads(response.choices[0].message.content)
+                exito = True # Si llega aquí, todo salió bien
+                
+            except Exception as e:
+                error_str = str(e).lower()
+                # Si el error es por límite de velocidad, esperamos 60s y volvemos a intentar
+                if "429" in error_str or "quota" in error_str or "rate limit" in error_str:
+                    intentos_limite += 1
+                    log(f"⚠️ Límite de API alcanzado. Pausando 60 segundos (Intento {intentos_limite}/3)...")
+                    time.sleep(60)
+                else:
+                    # Si es un error diferente (JSON roto, IA caída), saltamos el lote
+                    log("Error desconocido en IA. Saltando lote...")
+                    translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
+                    exito = True 
+
+        # Si después de 3 pausas de 60s seguimos bloqueados, devolvemos el original
+        if not translated_dict:
             translated_dict = {str(idx): txt for idx, (txt, ctx) in enumerate(chunk)}
 
         for idx_str, (src_text, _) in enumerate(chunk):
@@ -65,6 +85,8 @@ JSON A TRADUCIR:
             dst = apply_release_sed(dst)
             out_map[src_text] = dst
             conn.execute("INSERT OR REPLACE INTO cache VALUES (?,?,?)", (src_text, src_lang, dst))
+        
         conn.commit()
-        time.sleep(2) 
+        time.sleep(4) # Subimos el descanso base a 4 segundos para un flujo estable
+        
     return out_map
