@@ -31,37 +31,37 @@ terminal,0,TypeB,ステージ情報
 terminal,0,TypeB_Help,<c f0df60>各ステージの情報確認を行うことができます。<c>
 terminal,0,TypeC,仮想アイテム受け取り
 terminal,0,TypeC_Help,<c f0df60>今回拾得した仮想アイテム保管状況の確認と、受け取り（クエストクリア後のみ）ができます。<c>
-terminal,1,Title,EXTREME TERMINAL
-terminal,1,TerminalTitle,EXTREME TERMINAL INF.
-terminal,1,TerminalList1,Check Stage Details
-terminal,1,TerminalList2,Virtual Item Vault
-terminal,1,AcceptPoolItem,Take Virtual Item
-terminal,1,AcceptText,Take
-terminal,1,ReturnText,Back
-terminal,1,CheckPoolItem,Virtual Item Storage Status
-terminal,1,PossibleNumber,Item Pick-up Limit
-terminal,1,TotalPoolItem,Total Number of Virtual Items
-terminal,1,ItemDetails,Item Details
-terminal,1,AcceptItemList,List of Items for Pick-up
+terminal,1,Title,TERMINAL EXTREMO
+terminal,1,TerminalTitle,INF. TERMINAL EXTREMO.
+terminal,1,TerminalList1,Ver detalles de la etapa
+terminal,1,TerminalList2,Boveda de articulos virtuales
+terminal,1,AcceptPoolItem,Tomar articulo virtual
+terminal,1,AcceptText,Llevar
+terminal,1,ReturnText,Atras
+terminal,1,CheckPoolItem,Estado de almacenamiento de articulos virtuales
+terminal,1,PossibleNumber,Limite de recogida de articulos
+terminal,1,TotalPoolItem,Numero total de elementos virtuales
+terminal,1,ItemDetails,Detalles del articulo
+terminal,1,AcceptItemList,Lista de articulos para recoger
 terminal,1,AcceptNum,$(0)/$(1)
 terminal,1,TotalNum,$(0)
-terminal,1,AcceptConfirmTitle,RECEIVING VIRTUAL ITEMS
+terminal,1,AcceptConfirmTitle,RECIBIR ARTICULOS VIRTUALES
 terminal,1,AcceptYesNo,You are about to take the items below.<br>Are you sure you wish to proceed?
-terminal,1,AcceptErrTitle,RECEIVING VIRTUAL ITEMS
+terminal,1,AcceptErrTitle,RECIBIR ARTICULOS VIRTUALES
 terminal,1,AcceptErr,You cannot select any more items because <br>you have exceeded the item pick-up limit.
 terminal,1,ItemPackErr,You cannot take any more items because <br>your inventory is full.
-terminal,1,RecieveErrTitle,COMMUNICATION ERROR
+terminal,1,RecieveErrTitle,ERROR DE COMUNICACION
 terminal,1,RecieveErr,"An error has occurred, preventing you <br>from taking your items."
-terminal,1,AcceptAble,Can Be Picked Up
-terminal,1,AcceptSuccessTitle,RECEIVING VIRTUAL ITEMS
-terminal,1,AcceptSuccess,Received selected item.
-terminal,1,AcceptMaxOver,You cannot take any more items.
-terminal,1,NoItemMessage,Virtual Item available
-terminal,1,TypeA,Extreme Terminal
+terminal,1,AcceptAble,Se puede recoger
+terminal,1,AcceptSuccessTitle,RECIBIR ARTICULOS VIRTUALES
+terminal,1,AcceptSuccess,Recibi el articulo seleccionado.
+terminal,1,AcceptMaxOver,No puedes tomar mas articulos.
+terminal,1,NoItemMessage,Articulo virtual disponible
+terminal,1,TypeA,Terminal extrema
 terminal,1,TypeA_Help,"Item storage, and take items with you (only after clearing quests).<c>"
-terminal,1,TypeB,Stage Details
+terminal,1,TypeB,Detalles de la etapa
 terminal,1,TypeB_Help,<c f0df60>Here you can check all kinds of stage details.<c>
-terminal,1,TypeC,Receiving Virtual Items
+terminal,1,TypeC,Recibir articulos virtuales
 terminal,1,TypeC_Help,"up in your last quest, and take items with you (only after clearing quests).<c>"
 area_information,0,EntryEnemy,登場エネミー
 area_information,0,EnemyCondition,エネミー能力変化
@@ -98,40 +98,40 @@ area_information,0,TecStatus,法撃ダメージ
 area_information,0,AllStatus,すべて
 area_information,0,FloorOrderToast,前のステージオーダー達成により、エネミーの耐性が低下しました。
 area_information,0,AppendMark,、
-area_information,1,EntryEnemy,Enemies Present
-area_information,1,EnemyCondition,Enemy Capability Refactoring
-area_information,1,FloorOrder,Stage Orders
-area_information,1,AbilityUpSmall,Ability up (S)
-area_information,1,AbilityUpMiddle,Ability up (M)
-area_information,1,AbilityUpLarge,Ability up (L)
-area_information,1,AbilityUpExtraBig,Ability up (XL)
-area_information,1,WeaponResistance,Resistance up (equipped)
-area_information,1,TechniqueResistance,Resistance up (Element)
-area_information,1,WeaponResistanceDown,Resistance down (equipped)
-area_information,1,TechniqueResistanceDown,Resistance down (Element)
-area_information,1,HP,HP
-area_information,1,Attack,Attack
-area_information,1,Defence,Defense
-area_information,1,HitResistance,Melee Resistance
-area_information,1,ShootResistance,Ranged Resistance
-area_information,1,TecResistance,Technique Resistance
-area_information,1,AllResistance,Total Resistance
-area_information,1,InvalidAbnomalState,Status Ailment Nullified
-area_information,1,FloorNumber1,Stage 1
-area_information,1,FloorNumber2,Stage 2
-area_information,1,FloorNumber3,Stage 3
-area_information,1,FloorNumber4,Stage 4
-area_information,1,FloorNumber5,Stage 5
+area_information,1,EntryEnemy,Enemigos presentes
+area_information,1,EnemyCondition,Refactorizacion de la capacidad enemiga
+area_information,1,FloorOrder,Ordenes de etapa
+area_information,1,AbilityUpSmall,Habilidad arriba (S)
+area_information,1,AbilityUpMiddle,Capacidad arriba (M)
+area_information,1,AbilityUpLarge,Capacidad arriba (L)
+area_information,1,AbilityUpExtraBig,Capacidad hasta (XL)
+area_information,1,WeaponResistance,Resistencia arriba (equipado)
+area_information,1,TechniqueResistance,Resistencia arriba (Elemento)
+area_information,1,WeaponResistanceDown,Resistencia bajada (equipada)
+area_information,1,TechniqueResistanceDown,Resistencia hacia abajo (Elemento)
+area_information,1,HP,caballos de fuerza
+area_information,1,Attack,Ataque
+area_information,1,Defence,Defensa
+area_information,1,HitResistance,Resistencia cuerpo a cuerpo
+area_information,1,ShootResistance,Resistencia a distancia
+area_information,1,TecResistance,Resistencia a la tecnica
+area_information,1,AllResistance,Resistencia total
+area_information,1,InvalidAbnomalState,Estado dolencia anulada
+area_information,1,FloorNumber1,Etapa 1
+area_information,1,FloorNumber2,Etapa 2
+area_information,1,FloorNumber3,Etapa 3
+area_information,1,FloorNumber4,Etapa 4
+area_information,1,FloorNumber5,Etapa 5
 area_information,1,FloorNumberTab,$(0)
-area_information,1,FloorNumberIndex,Stage $(0)
-area_information,1,MessageNo,None
-area_information,1,MessageYes,Yes
-area_information,1,Other,Other
-area_information,1,HitStatus,Melee Damage
-area_information,1,ShootStatus,Ranged Damage
-area_information,1,TecStatus,Technique Damage
-area_information,1,AllStatus,All
-area_information,1,FloorOrderToast,Fulfilling the previous Stage Order has lowered enemy resistances.
+area_information,1,FloorNumberIndex,Etapa $(0)
+area_information,1,MessageNo,Ninguno
+area_information,1,MessageYes,Si
+area_information,1,Other,Otro
+area_information,1,HitStatus,Daйo cuerpo a cuerpo
+area_information,1,ShootStatus,Daйo a distancia
+area_information,1,TecStatus,Daйo a la tecnica
+area_information,1,AllStatus,Todo
+area_information,1,FloorOrderToast,Cumplir el orden de etapa anterior ha reducido las resistencias enemigas.
 area_information,1,AppendMark,","
 floor_order,0,TitleEnemyDestroy,を$(0)体倒せ！
 floor_order,0,TitleDamageNum,に$(0)以上のダメージを$(1)回以上与えろ！
@@ -146,16 +146,16 @@ floor_order,0,SubTitleForward,正面から
 floor_order,0,SubTitleBack,背後から
 floor_order,0,SubTitleEnemy,エネミー
 floor_order,0,SubTitleState,状態異常になった
-floor_order,1,TitleEnemyDestroy,Take down $(0)
-floor_order,1,TitleDamageNum,Deal $(0) damage more than $(1) times to
-floor_order,1,TitlePartDamageNum,Destroy a total of $(0) sites of
-floor_order,1,TitleNoDamage,Don't take damage for $(0) seconds
-floor_order,1,TitleNoRecover,No recovery effects for $(0) seconds
-floor_order,1,TitleNoDead,Don't get incapacitated over $(0) times
-floor_order,1,SubTitleSecond,within $(0) seconds
-floor_order,1,SubTitleSecondRecover,without receiving healing within $(0) seconds
-floor_order,1,SubTitleWeakPoint,by attacking the Weak Point
-floor_order,1,SubTitleForward,from the front
-floor_order,1,SubTitleBack,from behind
-floor_order,1,SubTitleEnemy,Enemy(s)
-floor_order,1,SubTitleState,inflicted with a Status Ailment
+floor_order,1,TitleEnemyDestroy,Retirar $(0)
+floor_order,1,TitleDamageNum,Inflige $(0) de daйo mas de $(1) veces a
+floor_order,1,TitlePartDamageNum,Destruye un total de $(0) sitios de
+floor_order,1,TitleNoDamage,No recibas daйo durante $(0) segundos
+floor_order,1,TitleNoRecover,Sin efectos de recuperacion durante $(0) segundos
+floor_order,1,TitleNoDead,No quede incapacitado mas de $(0) veces
+floor_order,1,SubTitleSecond,dentro de $(0) segundos
+floor_order,1,SubTitleSecondRecover,sin recibir curacion en $(0) segundos
+floor_order,1,SubTitleWeakPoint,atacando el punto debil
+floor_order,1,SubTitleForward,desde el frente
+floor_order,1,SubTitleBack,por detras
+floor_order,1,SubTitleEnemy,Enemigo(s)
+floor_order,1,SubTitleState,infligido con una dolencia de estado
