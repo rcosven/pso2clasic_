@@ -1,0 +1,37 @@
+trial_object_ahl.text was created: 04-07-2026 10:44:41
+Filesize is: 2640 bytes
+
+common
+Group 0
+TrialName_1Object - ターゲット破壊
+TrialBeginMsg_1Object - 出現したターゲットを破壊せよ！
+TrialAbstract_1Object - ターゲットを破壊する
+TrialName_Multi - ターゲット破壊
+TrialBeginMsg_Multi - 出現したエネミーを倒せ！
+TrialAbstract_Multi - ターゲットを破壊する
+
+Group 1
+TrialName_1Object - Destruye los objetivos
+TrialBeginMsg_1Object - ¡Destruye los objetivos que aparecen!
+TrialAbstract_1Object - Destruye los objetivos
+TrialName_Multi - Destruye los objetivos
+TrialBeginMsg_Multi - ¡Derrota a los enemigos que aparecen!
+TrialAbstract_Multi - Destruye los objetivos
+
+
+type102
+Group 0
+NpcComOnBegin - ターゲットがセントラルシティ内に出現！<br>40個、壊してください！ 
+NpcComOnBeginWave2 - /voice11_voice_navi001_trial_0001_027 新たにターゲットが大量発生！<br>300個、破壊してください！
+NpcComOnBeginWave3 - /voice11_voice_navi001_trial_0001_043 その調子です！<br>まだまだ、ターゲットが出現しますよ！
+NpcComOnBeginLastWave - /voice11_voice_navi001_trial_0001_046 もう一息です！<br>大きなターゲットは、何度か攻撃を加えると破壊できますよ！
+NpcComOnSuccess - ＊＊成功
+NpcComOnFailure - ＊＊失敗
+
+Group 1
+NpcComOnBegin - Targets have appeared within Central City!<br>Destroy 40 of them!
+NpcComOnBeginWave2 - /voice11_voice_navi001_trial_0001_027 A large number of new targets have appeared!<br>Destroy 300 of them!
+NpcComOnBeginWave3 - /voice11_voice_navi001_trial_0001_043 That's the spirit! Keep it up,<br>more targets are appearing!
+NpcComOnBeginLastWave - /voice11_voice_navi001_trial_0001_046 You're almost there!<br>Destroy the big targets by pounding it with large attacks!
+
+

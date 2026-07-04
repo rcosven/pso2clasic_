@@ -1,0 +1,83 @@
+world_trial_gold.text was created: 04-07-2026 10:44:39
+Filesize is: 8688 bytes
+
+common
+Group 0
+WorldTrialName - ステラーグレイス回収作戦
+WorldTrialNameS - ステラーグレイス回収作戦(スティア)
+WorldTrialNameA - ステラーグレイス回収作戦(エアリオ)
+WorldTrialNameR - ステラーグレイス回収作戦(リテム)
+WorldTrialNameK - ステラーグレイス回収作戦(クヴァリス)
+WorldTrialExplain - 各地に出現したステラーグレイスを、時間内により多く収集する。<br>収集数に応じて、レアドロップ倍率が上昇する。
+WorldTrialExplainK - クヴァリスに出現したステラーグレイスを、時間内により多く収集する。<br>収集数に応じて、レアドロップ倍率が上昇する。
+WorldTrialExplainR - リテムに出現したステラーグレイスを、時間内により多く収集する。<br>収集数に応じて、レアドロップ倍率が上昇する。
+WorldTrialExplainA - エアリオに出現したステラーグレイスを、時間内により多く収集する。<br>収集数に応じて、レアドロップ倍率が上昇する。
+WorldTrialExplainS - スティアに出現したステラーグレイスを、時間内により多く収集する。<br>収集数に応じて、レアドロップ倍率が上昇する。
+WorldTrialExplain02 - ステラーグレイスを、時間内により多く収集する。収集数に応じて、<br>レアドロップ倍率とシーズナルポイント獲得倍率が上昇する。
+WorldTrialAbstract - ステラーグレイス回収作戦
+MessageRemainingTreasure1 - セクション内のＳグレイス：残数$(0)個
+MessageRemainingTreasure2 - セクション内のＳグレイス：残数$(0)個
+MessageSectionComplate - セクション内の全Ｓグレイス回収完了！
+ToastTreasureAccess - Ｓグレイス発見総数：$(0)/現在のＳグレイスブースト【個人】：$(1)％
+ProgRemainingSection - セクション内のステラーグレイス：残数$(0)個
+ViewGuide - 詳細はメインメニューをご確認下さい
+ViewPersonalScoreTitle - このセクションのＳグレイス
+ViewPersonalBoostTitle - Ｓグレイスブースト【個人】
+ToastIntegrateTargetBoost - Ｓグレイスブースト【全体】の倍率が$(0)%に上昇しました。
+
+Group 1
+WorldTrialName - Operación de recuperación de gracia estelar
+WorldTrialNameS - Operación de recuperación de gracia estelar (Stia)
+WorldTrialNameA - Operación de recuperación de gracia estelar (Aelio)
+WorldTrialNameR - Operación de recuperación de gracia estelar (Retem)
+WorldTrialNameK - Operación de recuperación de gracia estelar (Kvaris)
+WorldTrialExplain - >dentro del plazo. La tasa de aparición rara aumenta según la cantidad recolectada.
+WorldTrialExplainK - dentro del plazo. La tasa de aparición rara aumenta según la cantidad recolectada.
+WorldTrialExplainR - 椀琀栀椀渀 琀栀攀 琀椀洀攀 氀椀洀椀琀⸀ 吀栀攀 爀愀爀攀 搀爀漀瀀 爀愀琀攀 椀渀挀爀攀愀猀攀猀 戀礀 琀栀攀 愀洀漀甀渀琀 挀漀氀氀攀挀琀攀搀⸀
+WorldTrialExplainA - 椀琀栀椀渀 琀栀攀 琀椀洀攀 氀椀洀椀琀⸀ 吀栀攀 爀愀爀攀 搀爀漀瀀 爀愀琀攀 椀渀挀爀攀愀猀攀猀 戀礀 琀栀攀 愀洀漀甀渀琀 挀漀氀氀攀挀琀攀搀⸀
+WorldTrialExplainS - dentro del límite de tiempo. La tasa de aparición rara aumenta según la cantidad recolectada.
+WorldTrialExplain02 - br>rate y la tarifa adquirida de Puntos de Temporada aumenta según la cantidad recaudada.
+WorldTrialAbstract - Operación de recuperación de gracia estelar
+MessageRemainingTreasure1 - S Grace en el sector: $(0) restantes
+MessageRemainingTreasure2 - S Grace en el sector: $(0) restantes
+MessageSectionComplate - ¡Todas las gracias S del sector recogidas!
+ToastTreasureAccess - Número de S Graces encontrados: $(0)/Impulso de S Grace actual [Personal]: $(1)%
+ProgRemainingSection - Gracia estelar en el sector: $(0) restantes
+ViewGuide - Confirme los detalles a través del menú principal
+ViewPersonalScoreTitle - S Gracias en este Sector
+ViewPersonalBoostTitle - S Grace Boost [Personal]
+ToastIntegrateTargetBoost - La tarifa de S Grace Boost [Todos] ha aumentado a $(0)%.
+
+
+type102
+Group 0
+NpcComOnBegin - 上空に、多数の飛翔体が確認されました！<br>ステラーグレイスが発生したものと思われます。
+NpcComOnBegin2 - アークス各員は、各地に散らばった<br>角錐型のコンテナ回収をお願いします。
+NpcComOnSuccess - アークス各員の協力により、<br>目標数のコンテナ回収に成功しました！
+NpcComOnSuccess2 - 本作戦は完了となります。お疲れ様でした！
+NpcComOnFailure - 規定数のコンテナ回収に至りませんでした。<br>これ以上の作戦継続は、防衛上の危険があると判断します。
+NpcComOnFailure2 - ステラーグレイスのこれ以上の発見は困難と判断されました。<br>アークス各員は通常体制に移行してください。
+NpcComOnPersonalSuccess - 十分な数のステラーグレイスを回収できました！
+NpcComOnPersonalSuccess2 - ご協力ありがとうございました。
+NpcComOnSectionComplate - このセクション内のコンテナは、すべて回収されました。<br>他のセクションに向かってください。
+NpcComOnAllSectionComplate - 十分な数のステラーグレイスを回収できました！<br>ご協力ありがとうございました。
+NpcComOnAllComplate - 十分な数のステラーグレイスを回収できました！<br>ご協力ありがとうございました。
+NpcComOnIntegrateTargetScoreLevel2 - 全体目標スコアレベル2
+NpcComOnIntegrateTargetScoreLevel3 - 全体目標スコアレベル3
+NpcComOnIntegrateTargetScoreLevel4 - 全体目標スコアレベル4
+NpcComOnIntegrateTargetScoreLevel5 - 全体目標スコアレベル5
+
+Group 1
+NpcComOnBegin - Numerous projectiles detected overhead!<br>They seem to be releasing Stellar Grace.
+NpcComOnBegin2 - We ask all ARKS defenders to retrieve the<br>pyramidal containers scattered throughout each area.
+NpcComOnSuccess - Thanks to the hard work of all you ARKS defenders,<br>we successfully obtained the target number of containers!
+NpcComOnSuccess2 - Mission complete. Great work!
+NpcComOnFailure - We were unable to obtain the target number of containers.<br>Extending the operation any further will put a dent in our defenses.
+NpcComOnFailure2 - It has been determined that further Stellar Grace discovery could be <br>difficult. All ARKS defenders are to return to standard operations.
+NpcComOnPersonalSuccess - An adequate number of Stellar Graces have been secured!
+NpcComOnPersonalSuccess2 - Thank you for your support.
+NpcComOnSectionComplate - All containers in this Sector have been secured.<br>Please head to another Sector.
+NpcComOnAllSectionComplate - An adequate number of Stellar Graces have been secured! Thank you for your support!
+NpcComOnAllComplate - An adequate number of Stellar Graces have been secured! Thank you for your suppo
+
+

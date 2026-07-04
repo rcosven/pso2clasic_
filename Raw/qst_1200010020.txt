@@ -1,0 +1,39 @@
+qst_1200010020.text was created: 04-07-2026 10:44:37
+Filesize is: 2016 bytes
+
+MainText
+Group 0
+name010 - ラル
+text010 - ふむ……しっかり狙えているね。じゃあ、“ステップアタック”はできるかな？
+text020 - 回避しながら、攻撃をしてみて。
+
+Group 1
+name010 - Raúl
+text010 - Jeje, realmente tenías tus ojos puestos en el premio.<br>Bueno, entonces, ¿qué tal un próximo golpe lateral?
+text020 - Intenta atacar mientras esquivas.
+
+
+GuideText
+Group 0
+Text_Lock - ロックオン：
+Button_Lock - <%LockOn>
+Text_Avoid - 回避：
+Button_Avoid_Pad - <%Avoid>
+Button_Avoid_Key - 移動キーを２回押す
+Text_StepAttack - ステップアタック：
+Button_StepAttack_Pad - <%Avoid><pict 4space>の後に<pict 4space><%NormalAttack>
+Button_StepAttack_Key - 移動キーを
+Button_StepAttack_Key2 - ２回押した後に<pict 4space><%NormalAttack>
+
+Group 1
+Text_Lock - Acoplarse:
+Button_Lock - <%LockOn>
+Text_Avoid - Esquivar:
+Button_Avoid_Pad - <%Avoid>
+Button_Avoid_Key - Presione una tecla direccional dos veces.
+Text_StepAttack - Golpe lateral:
+Button_StepAttack_Pad - <%NormalAttack><pict 4space>después de<pict 4space><%Avoid>
+Button_StepAttack_Key - Presione una tecla direccional dos veces
+Button_StepAttack_Key2 - entonces<pict 4space><%NormalAttack>
+
+

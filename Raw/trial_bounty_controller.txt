@@ -1,0 +1,57 @@
+trial_bounty_controller.text was created: 04-07-2026 10:44:41
+Filesize is: 3904 bytes
+
+common
+Group 0
+TrialName - ハントラリー
+TrialBeginMsg - 制限時間内に多くの<pict bounty_target>ハント目標を達成せよ！
+TrialAbstract - 達成ごとに更新される<pict bounty_target>ハント目標を<br>制限時間内に多く達成する
+BountyFinishToast - ハント目標<yellow>$(0)<c>クリア
+BountyFinishToastPoint - 獲得探索ポイント：1000
+Bounty_HighStarless - ＊＊ハイスターレス
+Bounty_Dread - ＊＊老練
+Bounty_HighRank - メガロティクスの討伐
+Bounty_Formidable - ＊＊絶望
+Bounty_Boost - ＊＊エンハンスド
+Bounty_God - ドールズの討伐
+Bounty_Alter - アルターズの討伐
+Bounty_Natural - ＊＊フォーマーズ
+Bounty_Remnants - ＊＊ルーイナス
+Bounty_Starless - スターレスの討伐
+Bounty_All - ＊＊任意のエネミー
+Bounty_Boss - ＊＊強力なエネミー
+Bounty_Zako - ＊＊ボス以外のエネミー
+Bounty_Kinoko - 遺跡キノコの収集
+Bounty_Kabu - 遺跡カブの収集
+Bounty_Kiichigo - 遺跡キイチゴの収集
+Bounty_Ninjin - 遺跡ニンジンの収集
+Bounty_Notify - <yellow>目標を達成するたびに探索ポイント獲得！<c>
+
+Group 1
+TrialName - Rally de caza
+TrialBeginMsg - ¡Consigue tantos<pict bounty_target>objetivos de caza como puedas dentro del límite de tiempo!
+TrialAbstract - Obtenga tantos objetivos de caza<pict bounty_target>(actualiza<br>cuando termine) como sea posible dentro del límite de tiempo
+BountyFinishToast - Objetivo de caza<yellow>$(0)<c>borrado
+BountyFinishToastPoint - Puntos de exploración obtenidos: 1000
+Bounty_HighRank - Suprimir Megalotix
+Bounty_God - Suprimir MUÑECAS
+Bounty_Alter - Suprimir ALTERACIONES
+Bounty_Starless - Suprimir sin estrellas
+Bounty_Kinoko - Recoge hongos de las ruinas
+Bounty_Kabu - Recoger nabos de ruinas
+Bounty_Kiichigo - Recoge fresas de las ruinas
+Bounty_Ninjin - Recoge zanahorias de las ruinas
+Bounty_Notify - <yellow> ¡Gana puntos de exploración cada vez que completes una meta! <c>
+
+
+type103
+Group 0
+NpcComOnBegin - /voice11_voice_navi002_trial_0001_015 調査要請です。指定されたエネミーの討伐や<br>オブジェクトの収集に、協力をお願いします。
+NpcComOnSuccess - /voice11_voice_navi002_trial_0001_068 ご協力ありがとうございました。<br>引き続き調査をお願いします。
+NpcComOnFailure - ＊＊（失敗）
+
+Group 1
+NpcComOnBegin - /voice11_voice_navi002_trial_0001_015 Investigation request. Please defeat the specified enemies and collect items.
+NpcComOnSuccess - /voice11_voice_navi002_trial_0001_068 Thank you for your help.<br>Keep up the good work.
+
+

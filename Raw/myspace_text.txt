@@ -1,0 +1,1321 @@
+myspace_text.text was created: 04-07-2026 10:44:39
+Filesize is: 107280 bytes
+
+common
+Group 0
+MySpaceCommonLabel_EditMode - 編集モード
+MySpaceMenuText_OverPeople - 同時に編集できる人数を超えたため、編集モードに移行できません。
+MySpaceMenuText_NoEditAuth2 - 編集権限がないため、編集モードに移行できません。
+MySpaceMenuText_NoEditAuth_Expired_EditMode - クリエイティブスペースの利用期限が切れているため、編集モードに移行できません。
+MySpaceMenuText_NoEditAuth_Expired_Menu - クリエイティブスペースの利用期限が切れているため、メニューを開けません。
+MySpace_Notice_Editing - 他のプレイヤーが操作中のため、編集できません。
+MySpace_EditPublicBlueprintMachine - この設計図端末は、設計図が公開されているため移動や削除などができません。
+MySpaceMenuText_RunOwner - この項目は、スペースオーナーのみ利用できます。
+UnusablePaletteText_BuildParts - このビルドパーツは、現在のクリエイティブスペースでは使用できません。
+UnusablePaletteText_BuildParts_Blueprint - このビルドパーツは、スペースオーナーのみ使用可能です。
+UnusablePaletteText_BuildParts_CSpaceOnly - このビルドパーツは、チームスペースでは使用できません。
+UnusablePaletteText_BuildParts_TeamSpaceOnly - このビルドパーツは、チームスペースでのみ使用できます。
+UnusablePaletteText_Blueprint - この設計図は、現在のクリエイティブスペースでは利用できません。
+MyspaceInfoText_CrowdedPlaces - 一定範囲内に特定のビルドパーツが密集しすぎています。距離を離して設置してください。
+MyspaceInfoText_BlueprintNonEditable - 設計図で設置されたビルドパーツに、この操作は行えません。
+MyspaceInfoText_Outside_Player - クリエイティブスペースの範囲外に移動したため、自動強制転送されました。
+MyspaceInfoText_Outside_BuildParts - この場所には、ビルドパーツを設置できません。
+MySpaceMenuText_SearchTag - 検索用タグ
+MySpaceMenuText_Tag1 - タグ1
+MySpaceMenuText_Tag2 - タグ2
+MySpaceMenuText_Tag3 - タグ3
+MySpaceFloating_up1 - 上昇：
+MySpaceFloating_up2 - <%Jump>を押しながら前進
+MySpaceFloating_down1 - 下降：
+MySpaceFloating_down2 - <%Jump>を押しながら後退
+MySpaceFloating_speed_up1 - 加速：
+MySpaceFloating_speed_up2 - <%Avoid>長押し
+BuildMenu_DisallowBlueprintName - 利用不可の設計図
+BuildMenu_DisallowBlueprintText - クロスプレイ無効のクリエイティブスペースのため、<br>この設計図は利用できません
+BuildMenu_NoPartsBlueprintText - 設計図に含まれるビルドパーツが、なにも登録されていないため設置できません。
+MySpaceDirectPurchase_CantBuyTitle - 購入できないビルドパーツ
+MySpaceDirectPurchase_CantBuyText1 - この設計図には、<br>ジェネシスポイントもしくはスタージェムで購入できない、<br>未所持のビルドパーツが含まれています。
+MySpaceDirectPurchase_CantBuyText2 - この設計図には、<br>ジェネシスポイントもしくはスタージェムで購入できない、<br>未登録のビルドパーツが含まれています。
+MySpaceDirectPurchaseListTitle - ビルドパーツの購入確認
+MySpaceDirectPurchaseListText1 - この設計図に含まれる、以下の未登録のビルドパーツを購入しますか？
+MySpaceDirectPurchaseListText2 - ビルドパーツを購入しなくても設計図は利用できますが、<br>未登録のビルドパーツは配置されません。
+MySpaceDirectPurchaseListText_NotBuy - <yellow>※設計図には、ジェネシスポイントもしくは<br>　スタージェムで購入できないビルドパーツが含まれています。<c>
+MySpaceDirectPurchaseListText_NeedGp - 必要ジェネシスポイント:$(0)<pict 4space><pict myspace_point><pict 4space>(所持GP:$(1)<pict 4space><pict myspace_point><pict 4space>)
+MySpaceDirectPurchaseListText_NeedSg - 必要スタージェム:$(0)<pict 4space><pict StarGem><pict 4space>(所持SG:$(1)<pict 4space><pict StarGem><pict 4space>)
+MySpaceDirectPurchaseListText_ButtonYes - ビルドパーツの購入
+MySpaceDirectPurchaseListText_ButtonNo - 購入しない
+MySpaceBuildPartsPurchaseListTitle - ビルドパーツの購入
+MySpaceBuildPartsPurchaseListText_Gp - アイテムを$(0)GPで購入します。<br>よろしいですか？
+MySpaceBuildPartsPurchaseListText_Sg - アイテムを$(0)SGで購入します。<br>よろしいですか？
+MySpaceBuildPartsPurchaseListText_ButtonYes - はい
+MySpaceBuildPartsPurchaseListText_ButtonNo - いいえ
+MySpaceBuildPartsPurchaseListText_ButtonScc - 特定取引に関する法律に基づく表示
+MySpaceConnect_Busy - コネクトの送受信量が過剰です。配置数や設定を見直してください。
+MySpaceOfficialNotice - ここで使用されている一部のビルドパーツは、<br>$(0)の定期メンテナンス終了後に配信予定です。
+MyspaceInfoText_BuildParts_DeploymentInitialization - ビルドパーツの配置が初期状態に戻されました。
+MyspaceInfoText_Terrain_Initialization - 地形の配置が初期状態に戻されました。
+
+Group 1
+MySpaceCommonLabel_EditMode - Edit Mode
+MySpaceMenuText_OverPeople - The max number of simultaneous editors has been reached.
+MySpaceMenuText_NoEditAuth2 - You do not have permission to edit.
+MySpaceMenuText_NoEditAuth_Expired_EditMode - You do not have permission to edit, as the Creative Space usage period has expired.
+MySpaceMenuText_NoEditAuth_Expired_Menu - Cannot open the menu, as the Creative Space usage period has expired.
+MySpace_Notice_Editing - Cannot be edited because another playing is using it.
+MySpace_EditPublicBlueprintMachine - This Design Terminal cannot be moved or deleted because it has shared designs.
+MySpaceMenuText_RunOwner - Only the owner of this Space can use this item.
+UnusablePaletteText_BuildParts - This Build Part cannot be used in this Creative Space.
+UnusablePaletteText_BuildParts_Blueprint - Only the owner of this Space can use this Build Part.
+UnusablePaletteText_BuildParts_CSpaceOnly - This Build Part cannot be used in an Alliance Space.
+UnusablePaletteText_BuildParts_TeamSpaceOnly - This Build Part can only be used in an Alliance Space.
+UnusablePaletteText_Blueprint - This Design cannot be used in this Creative Space.
+MyspaceInfoText_CrowdedPlaces - The specified Build Parts are too close together. Place them farther apart.
+MyspaceInfoText_BlueprintNonEditable - This action cannot be performed on Build Parts that have been built using a Design.
+MyspaceInfoText_Outside_Player - Automatically force transferred because you moved out of the Creative Space area.
+MyspaceInfoText_Outside_BuildParts - You can't place Build Parts here.
+MySpaceMenuText_SearchTag - Search Tag
+MySpaceMenuText_Tag1 - Tag 1
+MySpaceMenuText_Tag2 - Tag 2
+MySpaceMenuText_Tag3 - Tag 3
+MySpaceFloating_up1 - Ascend:
+MySpaceFloating_up2 - Move forward while holding <%Jump>
+MySpaceFloating_down1 - Descend:
+MySpaceFloating_down2 - Move back while holding <%Jump>
+MySpaceFloating_speed_up1 - Accelerate:
+MySpaceFloating_speed_up2 - Press and hold <%Avoid>
+BuildMenu_DisallowBlueprintName - Unusable Designs
+BuildMenu_DisallowBlueprintText - This Design cannot be used because this Creative Space has<br>Cross-Platform interaction disabled.
+BuildMenu_NoPartsBlueprintText - Cannot place because none of the Build Parts in this Design have been bound.
+MySpaceDirectPurchase_CantBuyTitle - Unpurchasable Build Parts
+MySpaceDirectPurchase_CantBuyText1 - This Design contains unowned Build Parts that cannot be purchased with Genesis Points or Star Gems.
+MySpaceDirectPurchase_CantBuyText2 - This Design contains unbound Build Parts that cannot be purchased with Genesis Points or Star Gems.
+MySpaceDirectPurchaseListTitle - Confirm Build Parts Purchase
+MySpaceDirectPurchaseListText1 - Would you like to purchase the following unbound Build Parts included in this Design?
+MySpaceDirectPurchaseListText2 - Designs can be used without purchasing Build Parts, but unbound Build Parts will not be placed.
+MySpaceDirectPurchaseListText_NotBuy - <yellow>*This Design contains Build Parts that cannot be purchased with Genesis Points or Star Gems.<c>
+MySpaceDirectPurchaseListText_NeedGp - Genesis Points: $(0)<pict 4space><pict myspace_point><pict 4space>(Your GP:$(1)<pict 4space><pict myspace_point><pict 4space>)
+MySpaceDirectPurchaseListText_NeedSg - Star Gems: $(0)<pict 4space><pict StarGem><pict 4space>(Your SG:$(1)<pict 4space><pict StarGem><pict 4space>)
+MySpaceDirectPurchaseListText_ButtonYes - Purchase Build Parts
+MySpaceDirectPurchaseListText_ButtonNo - Do Not Purchase
+MySpaceBuildPartsPurchaseListTitle - Purchase Build Parts
+MySpaceBuildPartsPurchaseListText_Gp - You are about to purchase item(s) for $(0)GP.<br>Are you sure you wish to proceed?
+MySpaceBuildPartsPurchaseListText_Sg - You are about to purchase item(s) for $(0)SG.<br>Are you sure you wish to proceed?
+MySpaceBuildPartsPurchaseListText_ButtonYes - Yes
+MySpaceBuildPartsPurchaseListText_ButtonNo - No
+MySpaceBuildPartsPurchaseListText_ButtonScc - Notice in Accordance with the Specified Commercial Transactions Act
+MySpaceConnect_Busy - Excessive number of Connect transmissions. Please check the number of placements and settings.
+MySpaceOfficialNotice - Some Build Parts used here will be delivered<br>after $(0) scheduled maintenance.
+MyspaceInfoText_BuildParts_DeploymentInitialization - Build Parts have been returned to their initial placements.
+MyspaceInfoText_Terrain_Initialization - Terrain has been returned to its initial placement.
+
+
+BuildMenu
+Group 0
+CraftMenu_BuildCommand - ビルドコマンド
+CraftMenu_BuildParts - ビルドパーツ
+CraftMenu_BuildParts_OthersSpace - $(0)のビルドパーツ
+CraftMenu_DeleteObject - 削除
+CraftMenu_MoveObject - 移動
+CraftMenu_ObjectConfig - 設定
+CraftMenu_ObjectColor - カラー変更
+CraftMenu_EditTerrain - 地形のアップ/ダウン
+CraftMenu_LandLeveling - 地形の整地
+CraftMenu_FloatingOnAir - 空中浮遊
+CraftMenu_QuitEditMode - 編集モードを終了
+CraftMenu_Sort_Normal - 標準ソート
+CraftMenu_NoItem - アイテムがありません
+CraftMenu_NoRecord - 履歴がありません
+MySpaceCraftPaletteFormTitle - ビルドパレット
+MySpaceCraftPalette_DeleteTitle - メッセージ
+MySpaceCraftPalette_ConfirmDeletePalette - ビルドパレットに登録した<br>ビルドコマンドもしくはビルドパーツを削除しますか？
+CraftMenu_Sort_Category - 種類順
+CraftMenu_Sort_Name - 名前順
+CraftMenu_Sort_Rarity - レアリティ
+BuildMenuFullSizeTitle - ビルドメニュー
+BuildMenuTwolineGuide - ビルドコマンドの実行や、設置するビルドパーツが選択できます。
+BuildPaletteGuide_Inactive - パレットに登録/パレットの編集：<%Function>
+BuildPaletteGuide_Active - 登録：<%Decide>　　キャンセル：<%Cancel>　　削除：<%Exception>
+BuildPaletteButton_Initialize - パレットを初期化
+BuildPaletteInitialize_Title - 初期化確認
+BuildPaletteInitialize_Text - ビルドパレットを初期状態に戻しますか？
+Guide_BuildMenu - 決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>
+Guide_BuildMenu_Blueprint - 決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>　　操作ウィンドウ切り替え：<%ChangeCtrlWindowForward>　　未登録ビルドパーツの登録：<%MultiSelect>　　削除：<%Exception>
+Blueprint_RegistMSG_Text1 - この設計図のビルドパーツは、現在のクリエイティブスペースですべて使用可能です。
+Blueprint_RegistMSG_Text2 - このクリエイティブスペースでは、ビルドパーツの登録はできません。
+BuildParts_Positioning_WindowTitle - ビルドパーツ設置微調整
+BuildParts_Positioning_Position - 移動
+BuildParts_Positioning_Rotate - 回転
+BuildParts_Positioning_Size - スケール
+BuildParts_Positioning_SizeSyncMove - スケール一括変更
+BuildParts_Positioning_X - X
+BuildParts_Positioning_Y - Y
+BuildParts_Positioning_Z - Z
+BuildParts_Positioning_Coordinate_Rotate - （X,Y,Z：$(0),$(1),$(2)）
+BuildParts_Positioning_Coordinate_Size - （X,Y,Z：$(0),$(1),$(2)）
+BuildParts_Positioning_Decision - 決定
+BuildParts_Positioning_Cancel - 変更した内容を反映せずに終了します。<br>よろしいですか？
+
+Group 1
+CraftMenu_BuildCommand - Build Commands
+CraftMenu_BuildParts - Build Parts
+CraftMenu_BuildParts_OthersSpace - $(0) Build Parts
+CraftMenu_DeleteObject - Remove
+CraftMenu_MoveObject - Move
+CraftMenu_ObjectConfig - Settings
+CraftMenu_ObjectColor - Change Color
+CraftMenu_EditTerrain - Change Terrain Height
+CraftMenu_LandLeveling - Level Terrain
+CraftMenu_FloatingOnAir - Flying
+CraftMenu_QuitEditMode - Exit Edit Mode
+CraftMenu_Sort_Normal - Default Sorting
+CraftMenu_NoItem - No valid items found.
+CraftMenu_NoRecord - No entries.
+MySpaceCraftPaletteFormTitle - Build Palette
+MySpaceCraftPalette_DeleteTitle - Message
+MySpaceCraftPalette_ConfirmDeletePalette - Remove Build Commands and/or Build Parts added to Palette?
+CraftMenu_Sort_Category - By Type
+CraftMenu_Sort_Name - By Name
+CraftMenu_Sort_Rarity - By Rarity
+BuildMenuFullSizeTitle - Build Menu
+BuildMenuTwolineGuide - Execute Build Commands and select Build Parts to place.
+BuildPaletteGuide_Inactive - Add to Palette/Edit Palette: <%Function>
+BuildPaletteGuide_Active - Add: <%Decide>   Cancel: <%Cancel>   Delete: <%Exception>
+BuildPaletteButton_Initialize - Reset Palette
+BuildPaletteInitialize_Title - Confirm Reset
+BuildPaletteInitialize_Text - Reset Build Palette to Initial State?
+Guide_BuildMenu - Confirm: <%Decide>   Cancel: <%Cancel>   Next Command: <%NextWidget>
+Guide_BuildMenu_Blueprint - Confirm: <%Decide>   Cancel: <%Cancel>   Next Command: <%NextWidget>   Toggle Command Window: <%ChangeCtrlWindowForward>    Bind Unbound Build Parts: <%MultiSelect>    Delete: <%Exception>
+Blueprint_RegistMSG_Text1 - All of this Design's Build Parts can be used in the current Creative Space.
+Blueprint_RegistMSG_Text2 - Build Parts cannot be bound in this Creative Space.
+BuildParts_Positioning_WindowTitle - Precision Build Part Placement
+BuildParts_Positioning_Position - Move
+BuildParts_Positioning_Rotate - Rotate
+BuildParts_Positioning_Size - Scale
+BuildParts_Positioning_SizeSyncMove - Group Scale
+BuildParts_Positioning_X - X
+BuildParts_Positioning_Y - Y
+BuildParts_Positioning_Z - Z
+BuildParts_Positioning_Coordinate_Rotate - dummytext
+BuildParts_Positioning_Coordinate_Size - dummytext
+BuildParts_Positioning_Decision - Confirm
+BuildParts_Positioning_Cancel - Your changes will not be applied.<br>Are you sure you wish to exit?
+
+
+BuildOption
+Group 0
+MySpaceOptionMenuFormTitle - ビルドオプション
+MySpaceOptionMenuTitle_GridTerrain - 地形のグリッド表示
+MySpaceOptionMenuTitle_GridTerrain_exp - ビルドパーツを設置したり地形を編集する時に、<br>地面にグリッドを表示する機能を<br>使用するかを設定します。
+MySpaceOptionMenuTitle_GridSnap - グリッドへのスナップ
+MySpaceOptionMenuTitle_GridSnap_exp - ビルドパーツの設置時に、<br>グリッドに合わせる機能を<br>使用するかを設定します。<br><br><yellow>※“使用しない”を選ぶと、<br>　ビルドパーツを自由な座標に配置できます。<c>
+MySpaceOptionMenuTitle_HitCollision - 設置済みのビルドパーツとの干渉
+MySpaceOptionMenuTitle_HitCollision_exp - ビルドパーツの設置時に、<br>設置済みのビルドパーツと、<br>干渉するようにするかを設定します。
+MySpaceOptionMenuTitle_Rotate - ビルドパーツの回転角度
+MySpaceOptionMenuTitle_Rotate_exp - ビルドパーツの回転角度を、<br>45度ごとに固定する機能を<br>使用するかを設定します。
+MySpaceOptionMenuTitle_Scaling - ビルドパーツの拡縮率
+MySpaceOptionMenuTitle_Scaling_exp - ビルドパーツの拡縮率を、<br>25%ごとに固定する機能を<br>使用するかを設定します。
+MySpaceOptionMenuTitle_Distance - ビルドパーツの設置最大距離
+MySpaceOptionMenuTitle_Distance_exp - ビルドパーツの設置最大距離の変動幅を、<br>一定の距離ごとに固定する機能を<br>使用するかを設定します。<br><br><yellow>“グリッドへのスナップ”が有効な場合、<br>　“使用しない”を選んでも<br>　一定の距離ごとに固定されます。<c>
+MySpaceOptionMenuTitle_Assistance - ビルドパーツ設置時のガイドシルエット表示
+MySpaceOptionMenuTitle_Assistance_exp - ビルドパーツの設置時に、<br>設置面に映るガイドシルエットを<br>表示するかを設定します。
+MySpaceOptionMenuTitle_TerrainAdjustment - 地形のアップ/ダウンの変動幅
+MySpaceOptionMenuTitle_TerrainAdjustment_exp - 地形操作時に、<br>一度にどの程度の高さを<br>変化させるかを設定します。
+MySpaceOptionMenuTitle_TranslucentPlayer - キャラクターの半透明化
+MySpaceOptionMenuTitle_TranslucentPlayer_exp - 自分の操作キャラクターを<br>半透明で表示するかを設定します。<br><br><yellow>※一部のファッションやマグには、<br>　適用されません。<c>
+MySpaceOptionMenuItemText_On - 使用する
+MySpaceOptionMenuItemText_Off - 使用しない
+MySpaceOptionMenuItemText_onefourth - 1/4マスごと
+MySpaceOptionMenuItemText_onehalf - 1/2マスごと
+MySpaceOptionMenuItemText_one - 1マスごと
+
+Group 1
+MySpaceOptionMenuFormTitle - Build Options
+MySpaceOptionMenuTitle_GridTerrain - Overlay Grid
+MySpaceOptionMenuTitle_GridTerrain_exp - Set whether to display a grid on the ground when placing Build Parts or editing terrain.
+MySpaceOptionMenuTitle_GridSnap - Snap to Grid
+MySpaceOptionMenuTitle_GridSnap_exp - Set whether to use the fit to grid function when placing build parts.<br><br><yellow>*If you select "Don't Use", you will be able to place Build Parts at any coordinates.<c>
+MySpaceOptionMenuTitle_HitCollision - Interference with Installed Build Parts
+MySpaceOptionMenuTitle_HitCollision_exp - Sets whether Build Parts should interfere with already installed Build Parts when they are installed.
+MySpaceOptionMenuTitle_Rotate - Build Parts Rotation Angle
+MySpaceOptionMenuTitle_Rotate_exp - Set whether to fix the rotation of Build Parts to 45 degrees at a time.
+MySpaceOptionMenuTitle_Scaling - Build Parts Scaling Ratio
+MySpaceOptionMenuTitle_Scaling_exp - Set whether to fix Build Part scaling to 25% at a time.
+MySpaceOptionMenuTitle_Distance - Max Build Part Placement Distance
+MySpaceOptionMenuTitle_Distance_exp - Set whether to fix maximum Building Part placement at fixed intervals.<br><br><yellow>When "Snap to Grid" is enabled, placement will be set at fixed intervals even if "Don't Use" is selected.<c>
+MySpaceOptionMenuTitle_Assistance - Build Part Placement Guide Display
+MySpaceOptionMenuTitle_Assistance_exp - Set whether to show a transparent placement guide when placing build parts.
+MySpaceOptionMenuTitle_TerrainAdjustment - Terrain Height Increments
+MySpaceOptionMenuTitle_TerrainAdjustment_exp - Set the increments by which to adjust terrain height.
+MySpaceOptionMenuTitle_TranslucentPlayer - Make Character Translucent
+MySpaceOptionMenuTitle_TranslucentPlayer_exp - Set whether or not your character is translucent.<br><br><yellow>*Some fashion items and Mags will not be affected.<c>
+MySpaceOptionMenuItemText_On - Use
+MySpaceOptionMenuItemText_Off - Don't Use
+MySpaceOptionMenuItemText_onefourth - 1/4 block
+MySpaceOptionMenuItemText_onehalf - 1/2 block
+MySpaceOptionMenuItemText_one - 1 block
+
+
+CreativeSpaceMenu
+Group 0
+MySpaceMenuFormTitle - Ｃスペースメニュー
+MySpaceMenuHeadLine_AddObject - ビルドパーツの追加
+MySpaceMenuTitle_ObjectExchange - ビルドパーツの購入
+MySpaceMenuTitle_ObjectRegister - ビルドパーツの登録
+MySpaceMenuHeadLine_Setting - クリエイティブスペースの設定
+MySpaceMenuTitle_BgmSetting - BGMの変更
+MySpaceMenuTitle_TimeControl - 時間の変更
+IntroductionFormTitle - 公開情報の設定
+MySpaceMenuTitle_TeamMag - チームマグ
+MySpaceMenuHeadLine_Init - クリエイティブスペースの状態
+MySpaceMenuTitle_SettingInit - ビルドパーツの配置の初期化
+MySpaceMenuTitle_TerrainInit - 地形の初期化
+MySpaceMenuHeadLine_EditPermission - 編集権限の管理
+MySpaceMenuTitle_EditPermission - 他プレイヤーの編集権限の設定
+TeamSpaceMenuTitle_EditPermission - チームメンバーの編集権限の設定
+TeamSpaceMenuTitle_EditPermission_Title - 編集権限の設定
+MySpaceMenuHeadLine_ObjectSetting - ビルドパーツの状態
+MySpaceMenuTitle_ObjectSetting - ギミックを設定時の状態に戻す
+MySpaceMenuText_NoEditAuth1 - 編集権限がないため、メニューを開けません。
+TeamSpaceMenuText_NoEditAuth1 - 選択したメニューは、このチームスペースのチームマスターとマネージャーのみが操作できます。
+MySpace_Notice_SwitchMode_Editing - 編集モードに変更しました。
+MySpace_Notice_SwitchMode_Normal - 編集モードを終了します。
+MySpaceShopTitle_Guide - 獲得したジェネシスポイントで、ビルドパーツが購入できます。
+MySpaceSgShopTitle_Guide - スタージェムで、ビルドパーツが購入できます。
+MySpaceGPShop_VolumeSelectTitle - ストレージ選択
+MySpaceSGShop_VolumeSelectTitle - ストレージ選択
+MySpaceShop_Volume - ストレージ$(0)
+MySpaceShopCheckBoxTitle - 未登録アイテムのみ表示
+MySpaceRegisterText_Register - $(0) を使用して、<br>新しいビルドパーツを登録します。<br>よろしいですか？
+MySpaceRegisterText_Registered - ビルドパーツを登録しました。
+MySpaceBaseChangeTitle - テーマの変更・解放
+MySpaceBaseChangeName - テーマ名
+MySpaceBaseUnlocked - 解放済み
+MySpaceBaseErr - 価格を取得できませんでした
+MySpaceBaseErrMess_Title - データ取得エラー
+MySpaceBaseErrMess_Text - 価格データの読み込みに<br>エラーが発生しました。<br><br>ゲームを再起動することで<br>解消される場合があります。
+MySpaceBaseChangeAelio - エアリオテーマ
+MySpaceBaseChangeRetem - リテムテーマ
+MySpaceBaseChangeKvaris - クヴァリステーマ
+MySpaceBaseChangeStia - スティアベース
+MySpaceBaseChangeUnkaiSakura - ファーイースタンテーマ
+MySpaceBaseChangeScene - テーマの風景イメージ
+MySpaceBaseApply_Title - メッセージ
+MySpaceBaseApply_Confirm1 - “$(0)”をこのスペースに適用しますか？<br><br>テーマを変更すると、配置しているビルドパーツ<br>および地形が初期化されます。<br><yellow><br>※適用時にスペース内にいる他プレイヤーも、<br>　自動的に変更後のスペースに移動します。<c>
+MySpaceBaseApply_Confirm2 - テーマを変更すると、<br>ビルドパーツや地形が初期状態に戻ります。<br>変更後は、元の状態に戻せません。<br>本当によろしいですか？
+MySpaceBaseApply_Confirm2_Blueprint - テーマを変更すると、<br>ビルドパーツや地形が初期状態に戻ります。<br>変更後は、元の状態に戻せません。<br>本当によろしいですか？<br><br><yellow>※テーマを変更すると、<br>　設置した設計図の公開も中止されます。<c>
+MySpaceBaseChangeBuyData - 購入情報
+MySpaceBaseChangePossessionPoint - 所持ポイント
+MySpaceBaseChangeRequiredPoint - 必要ポイント
+MySpaceBaseChangeSettlement - 決済後
+MySpaceBaseChangeBuyTitle - テーマ購入
+MySpaceBaseChangeBuyConfirm - テーマを$(0)GPで購入します。<br>よろしいですか？
+MySpaceBaseChangeBuySuccess - テーマを購入しました。
+MySpaceBaseChangeBuyFailure - ジェネシスポイントが不足しています。
+MySpaceBgmText_Note - マグジュークボックスで<br>BGMを設定しているときは、<br>そちらが優先されます。<br><br>また、『PSO2』の一部楽曲は、<br>プレイ環境によって<br>再生されない場合があります。
+MySpaceBgmText_Notice - “マグジュークボックス”でBGMを再生しているため、使用できません。
+TimeControl_Title - 時間の変更
+TimeControll_TimePasses - Ｃスペース内で時間が経過する
+TimeControll_TimePasses_TeamSpace - Ｔスペース内で時間が経過する
+DefaultMySpaceName - クリエイティブスペース
+DefaultTeamSpaceName - チームスペース
+DefaultMySpaceComment - <pict 4space>
+If_All_OK - だれでも可能（検索の対象に含む）
+If_Friend_Guild_Member - フレンドとチームメンバーのみ可能
+If_Guild_Member - チームメンバーのみ可能
+If_Friend_Member - フレンドのみ可能
+If_All_Not - 非公開（自分のみ入室可能）
+CancelMessageTitle - メッセージ
+CancelMessage - 変更した内容を反映せずに終了します。<br>よろしいですか？
+IntroductionSaveSameTag - 同じ検索用タグは、複数登録できません。<br>重複したタグを削除します。
+IntroductionSaveFailed - 公開情報の設定に失敗しました。
+MySpaceMenuText_InitTitle - 初期化の確認
+MySpaceMenuText_ConfirmSettingInit - すべてのビルドパーツを<br>配置前の状態に戻します。<br>よろしいですか？
+MySpaceMenuText_ReconfirmSettingInit - すべてのビルドパーツを配置前の状態に戻します。<br>初期化すると元に戻せません。<br>本当によろしいですか？<br><br><yellow>※初期化すると、設置した設計図の公開も中止されます。<c>
+MySpaceMenuText_SettingInit - ビルドパーツの配置を初期状態に戻しました。
+MySpaceMenuText_ConfirmTerrainInit - 変更したすべての地形を<br>初期状態に戻します。<br>よろしいですか？
+MySpaceMenuText_ReconfirmTerrainInit - 初期化すると、元の状態には戻せません。<br>本当によろしいですか？
+MySpaceMenuText_TerrainInit - クリエイティブスペースの地形を初期状態に戻しました。
+TeamSpaceMenuText_TerrainInit - チームスペースの地形を初期状態に戻しました。
+PermissionList_Title - 編集権限の設定
+PermissionList_Editors - 編集権限のあるプレイヤー
+PermissionList_Authorize - 編集権限付与の確認
+PermissionList_Reject - 編集権限無効化の確認
+PermissionList_IdName - $(0)
+PermissionList_Names - $(0) $(1)
+PermissionList_AuthorizeConfirm - $(0)に編集権限を付与しますか？<br>$(1)の<br>すべてのキャラクターに対して<br>編集権限が付与されます。
+PermissionList_RejectConfirm - $(0)の編集権限を無効化しますか？<br>$(1)の<br>すべてのキャラクターに対して<br>編集権限が無効化されます。
+PermissionList_EditorsNumberMax - 編集権限を付与できる人数が、上限に達しています。
+TeamSpaceMenuText_Editpermission_Guide - チームマスターとマネージャー以外の役職に、<br>編集権限を付与するかを設定をします。<br>権限を付与すると、<br>チームスペースの以下の機能が<br>使用可能になります。<br><br>・編集モード<br>・ビルドパーツの購入と登録<br>・時間の変更<br>・ギミックを設定時の状態に戻す
+TeamSpaceMenuText_Editpermission_PositionTitle - 編集権限を付与する役職
+TeamSpaceMenuText_Editpermission_NoAuthority - 権限付与対象を変更しない
+TeamSpaceMenuText_Editpermission_Commonmember - コモンメンバー
+TeamSpaceMenuText_Editpermission_Common_Visitormember - コモンメンバーとビジター
+TeamSpaceMenuText_Editpermission_Position_Decision - チームメンバーの編集権限の設定を変更しました。
+TeamSpaceMenuText_Editpermission_Position_Decision_Fail - チームメンバーの編集権限の変更に失敗しました。
+ObjectReset_Title - 初期化の確認
+ObjectReset_Confirm - 可動するすべてのビルドパーツを、<br>設定した初期状態に戻します。<br>よろしいですか？
+ObjectReset_Complete - ビルドパーツのギミックを実行前の状態に戻しました。
+TeamSpaceMenuFormTitle - Ｔスペースメニュー
+TeamSpaceMenuHeadLine_Setting - チームスペースの設定
+TeamSpaceMenuHeadLine_Init - チームスペースの状態
+TeamSpaceMenuHeadLine_EditPermission - 編集権限の管理
+TeamSpaceBgmText_NotPlay - “マグジュークボックス”でBGMを再生しているため、使用できません。
+TeamSpaceBgmText_Download - 再生できないBGMが設定されています。<br>BGMを再生する場合は、<br>『PSO2』のデータをダウンロードしてください。
+MySpaceBase_ErrorMessage - テーマの変更に失敗しました。時間をおいて再度実行してください。
+MySpace_LinkMoveCSpace - クリエイティブスペースにリンクします。<br>よろしいですか？
+
+Group 1
+MySpaceMenuFormTitle - C-Space Menu
+MySpaceMenuHeadLine_AddObject - Add Build Parts
+MySpaceMenuTitle_ObjectExchange - Buy Build Parts
+MySpaceMenuTitle_ObjectRegister - Bind Build Parts
+MySpaceMenuHeadLine_Setting - Creative Space Settings
+MySpaceMenuTitle_BgmSetting - Change Music
+MySpaceMenuTitle_TimeControl - Change Time
+IntroductionFormTitle - Change Privacy Settings
+MySpaceMenuTitle_TeamMag - Alliance Mag
+MySpaceMenuHeadLine_Init - Reset
+MySpaceMenuTitle_SettingInit - Reset Build Parts Placement
+MySpaceMenuTitle_TerrainInit - Reset Terrain
+MySpaceMenuHeadLine_EditPermission - Manage Edit Permissions
+MySpaceMenuTitle_EditPermission - Adjust Other Players' Edit Permissions
+TeamSpaceMenuTitle_EditPermission - Alliance Member Edit Permission Settings
+TeamSpaceMenuTitle_EditPermission_Title - Change Edit Permissions
+MySpaceMenuHeadLine_ObjectSetting - Build Part Settings
+MySpaceMenuTitle_ObjectSetting - Return Play Parts to Original State
+MySpaceMenuText_NoEditAuth1 - You do not have permission to access this menu.
+TeamSpaceMenuText_NoEditAuth1 - The selected menu can be accessed only by the Alliance Leader and managers of this Creative Space.
+MySpace_Notice_SwitchMode_Editing - Switched to Edit Mode.
+MySpace_Notice_SwitchMode_Normal - Exit Edit Mode.
+MySpaceShopTitle_Guide - Trade Genesis Points for Build Parts.
+MySpaceSgShopTitle_Guide - Purchase Build Parts with Star Gems.
+MySpaceGPShop_VolumeSelectTitle - Select Storage
+MySpaceSGShop_VolumeSelectTitle - Select Storage
+MySpaceShop_Volume - Storage $(0)
+MySpaceShopCheckBoxTitle - Unbound Items Only
+MySpaceRegisterText_Register - Use $(0) and bind new Build Parts. Are you sure you wish to proceed?
+MySpaceRegisterText_Registered - New Build Parts have been bound.
+MySpaceBaseChangeTitle - Change/Unlock Theme
+MySpaceBaseChangeName - Theme Name
+MySpaceBaseUnlocked - Unlocked
+MySpaceBaseErr - Unable to find price
+MySpaceBaseErrMess_Title - Data Retrieval Error
+MySpaceBaseErrMess_Text - An error occurred while<br>loading the price data.<br><br>This may be resolved<br>by restarting the game.
+MySpaceBaseChangeAelio - Aelio Theme
+MySpaceBaseChangeRetem - Retem Theme
+MySpaceBaseChangeKvaris - Kvaris Theme
+MySpaceBaseChangeStia - Stia Base
+MySpaceBaseChangeUnkaiSakura - Far Eastern Theme
+MySpaceBaseChangeScene - Theme Scenery
+MySpaceBaseApply_Title - Message
+MySpaceBaseApply_Confirm1 - Apply the “$(0)” to this Space?<br><br>Changing the theme will cause placed Build Parts and terrain to reset.<br><yellow>Note: All others players who were inside of the space will be automatically moved back to the changed space.
+MySpaceBaseApply_Confirm2 - Changing the theme will cause Build Parts and terrain to reset.<br>You will not be able to undo this.<br>Are you sure you wish to proceed?
+MySpaceBaseApply_Confirm2_Blueprint - Changing the theme will cause Build Parts and terrain to reset.<br>You will not be able to undo this.<br>Are you sure you wish to proceed?<br><br><yellow>*Changing the theme will also unshare any designs.<c>
+MySpaceBaseChangeBuyData - Purchase Info
+MySpaceBaseChangePossessionPoint - Current Points
+MySpaceBaseChangeRequiredPoint - Required Points
+MySpaceBaseChangeSettlement - Balance
+MySpaceBaseChangeBuyTitle - Purchase Themes
+MySpaceBaseChangeBuyConfirm - Purchase this theme for $(0) GP?
+MySpaceBaseChangeBuySuccess - You have purchased the theme.
+MySpaceBaseChangeBuyFailure - You don't have enough Genesis Points.
+MySpaceBgmText_Note - When BGM is set in the Mag Jukebox, that will take precedence.<br><br>In addition, some "PSO2" songs may not play depending on the play environment.
+MySpaceBgmText_Notice - Cannot be used, as BGM is playing in the Mag Jukebox.
+TimeControl_Title - Change Time
+TimeControll_TimePasses - Advance Time in Creative Space
+TimeControll_TimePasses_TeamSpace - Advance Time in Alliance Space
+DefaultMySpaceName - Creative Space
+DefaultTeamSpaceName - Alliance Space
+DefaultMySpaceComment -  <pict 4space>
+If_All_OK - Open to Everyone (Include in search)
+If_Friend_Guild_Member - Friends and Alliance Members Only
+If_Guild_Member - Alliance Members Only
+If_Friend_Member - Friends Only
+If_All_Not - Private (Owner Only)
+CancelMessageTitle - Message
+CancelMessage - Your changes will not be applied.<br>Are you sure?
+IntroductionSaveSameTag - The same search tag cannot be added more than once.<br>Remove duplicate tags.
+IntroductionSaveFailed - Failed to save Privacy Settings.
+MySpaceMenuText_InitTitle - Confirm Reset
+MySpaceMenuText_ConfirmSettingInit - Reset Build Parts placed in Creative Space?
+MySpaceMenuText_ReconfirmSettingInit - Restore all Build Parts to pre-placement state. You will not be able to undo this. Are you sure you wish to proceed?<br><br><yellow>*Once initialized, any placed Designs will be unshared.<c>
+MySpaceMenuText_SettingInit - Build Parts Placement has been reset.
+MySpaceMenuText_ConfirmTerrainInit - Reset all Creative Space terrain?
+MySpaceMenuText_ReconfirmTerrainInit - You will not be able to restore your terrain after resetting. Are you sure you wish to proceed?
+MySpaceMenuText_TerrainInit - Creative Space terrain has been reset.
+TeamSpaceMenuText_TerrainInit - Alliance Space terrain has been reset.
+PermissionList_Title - Change Edit Permissions
+PermissionList_Editors - Players with Edit Permission
+PermissionList_Authorize - Grant Edit Permission
+PermissionList_Reject - Revoke Edit Permission
+PermissionList_IdName - $(0)
+PermissionList_Names - $(0) $(1) 
+PermissionList_AuthorizeConfirm - Grant Edit Permission to $(0)?<br>This will grant edit permission to all of $(1)'s characters.
+PermissionList_RejectConfirm - Revoke Edit Permission from $(0)?<br>This will revoke edit permission from all of $(1)'s characters.
+PermissionList_EditorsNumberMax - You have reached the maximum number of people who can be granted edit permission.
+TeamSpaceMenuText_Editpermission_Guide - Set whether to grant edit permission to positions<br>other than the Alliance Leader and Manager.<br>Granting edit permission enables the following<br>Alliance Space features:<br><br>-Edit Mode<br>-Purchase and Bind Build Parts<br>-Change Time<br>-Return Play Parts to Original State
+TeamSpaceMenuText_Editpermission_PositionTitle - Positions With Edit Permission
+TeamSpaceMenuText_Editpermission_NoAuthority - No Changes to Edit Permissions
+TeamSpaceMenuText_Editpermission_Commonmember - Member
+TeamSpaceMenuText_Editpermission_Common_Visitormember - Member and Provisional
+TeamSpaceMenuText_Editpermission_Position_Decision - Alliance Member edit permission settings have been changed.
+TeamSpaceMenuText_Editpermission_Position_Decision_Fail - Failed to change Alliance Member edit permission settings.
+ObjectReset_Title - Confirm Reset
+ObjectReset_Confirm - Restore all moveable Build Parts to initial settings.<br>Are you sure?
+ObjectReset_Complete - Build Parts restored to previous settings.
+TeamSpaceMenuFormTitle - Alliance Space Menu
+TeamSpaceMenuHeadLine_Setting - Alliance Space Settings
+TeamSpaceMenuHeadLine_Init - Reset
+TeamSpaceMenuHeadLine_EditPermission - Manage Edit Permissions
+TeamSpaceBgmText_NotPlay - This cannot be used, because music is playing from a Mag Jukebox. 
+TeamSpaceBgmText_Download - Unplayable music has been selected.<br>Please download PSO2 to play this music.
+MySpaceBase_ErrorMessage - Failed to change theme. Please wait a while and try again.
+MySpace_LinkMoveCSpace - This will be linked to the Creative Space.<br>Proceed?
+
+
+Edit
+Group 0
+MySpace_Notice_ReachGaugeLimit - 設置容量を超えるため、これ以上は設置できません。
+MySpace_Notice_ReachCreateLimit - 設置数上限を超えるため、これ以上は設置できません。
+MySpace_Notice_ReachUnregisteredParts - 未登録のビルドパーツが含まれています。該当するビルドパーツは設置されませんでした。
+MySpace_Notice_ReachPartsNumberLimit - 設置数上限を超えるビルドパーツがあります。該当するビルドパーツは設置されませんでした。
+MySpaceColorChangeTitle - カラー設定
+MySpaceColorChangePattern1 - カラー１
+MySpaceColorChangePattern2 - カラー２
+MySpaceColorPaletteTitle - カラーパレット
+DefaultColorButton - デフォルトカラーに戻す
+MySpaceConfigGude - <%MultiSelect>で更新情報を表示
+MySpaceUpdateInfo_Title - 更新情報
+MySpaceUpdateInfo_Label - 最後に更新したプレイヤーIDネーム
+MySpaceUpdateInfo_PlayerIDName - $(0)
+MySpace_Label_DisallowChangeConfig - このビルドパーツの設定は変更できません。
+MySpace_Notice_DisallowChangeColor - カラーの変更ができないビルドパーツです。
+MySpace_Notice_NoGeoChangePlace - 地形を変更できない場所です。
+MySpace_Notice_GeoUpperLimit - これ以上は地形を変更できません。
+MySpace_Notice_GeoLowerLimit - これ以上は地形を変更できません。
+MySpace_SwitchInstallation_Title - ビルドパーツ設置
+MySpace_SwitchEditBuildPart_Title - ビルドパーツ編集
+MySpace_SwitchEditTerrain_Title - 地形編集
+MySpace_SwitchInstallation_RotateGuide - 回転：<swguidetype ActionLStick>　　回転軸の変更：<swguidetype ActionUpDown>　　回転のリセット：<%Jump>
+MySpace_SwitchInstallation_RotateGuide_Key - 回転：<swguidetype ActionLStick>　　回転軸の変更：<swguidetype ActionUpDownKey>　　回転のリセット：<%Jump>
+MySpace_SwitchInstallation_ScaleGuide - 拡縮：<swguidetype ActionLStick>　　拡縮軸の変更：<swguidetype ActionUpDown>　　拡縮のリセット：<%Jump>
+MySpace_SwitchInstallation_ScaleGuide_Key - 拡縮：<swguidetype ActionLStick>　　拡縮軸の変更：<swguidetype ActionUpDownKey>　　拡縮のリセット：<%Jump>
+MySpace_SwitchInstallation_DistanceGuide - 最長設置距離の変更：<swguidetype ActionLStick>　　設置距離変更のリセット：<%Jump>
+MySpace_SwitchEditBuildPart_Guide_Hold - 編集項目の決定：<%WeaponAction_2>を離す
+MySpace_SwitchEditBuildPart_Guide_OnePush - 編集項目の決定：<%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_Hold - 範囲の拡縮：<swguidetype ActionUpDown>　　編集項目の決定：<%WeaponAction_2>を離す
+MySpace_SwitchEditTerrain_Guide_Hold_Key - 範囲の拡縮：<swguidetype ActionUpDownKey>　　編集項目の決定：<%WeaponAction_2>を離す
+MySpace_SwitchEditTerrain_Guide_OnePush - 範囲の拡縮：<swguidetype ActionUpDown>　　編集項目の決定：<%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_OnePush_Key - 範囲の拡縮：<swguidetype ActionUpDownKey>　　編集項目の決定：<%WeaponAction_2>
+MySpace_Switch_Right - <swguidetype ActionRight>
+MySpace_Switch_Right_Key - <swguidetype ActionRightKey>
+MySpace_Switch_Left - <swguidetype ActionLeft>
+MySpace_Switch_Left_Key - <swguidetype ActionLeftKey>
+
+Group 1
+MySpace_Notice_ReachGaugeLimit - Placement limit exceeded. Unable to place any more items.
+MySpace_Notice_ReachCreateLimit - Placement limit reached. Unable to place any more items.
+MySpace_Notice_ReachUnregisteredParts - Contains unregistered Build Parts. The corresponding Build Part was not installed.
+MySpace_Notice_ReachPartsNumberLimit - There are Build Parts that exceed the maximum number of parts to be installed. The corresponding Build Parts were not installed.
+MySpaceColorChangeTitle - Color Settings
+MySpaceColorChangePattern1 - Color 1
+MySpaceColorChangePattern2 - Color 2
+MySpaceColorPaletteTitle - Color Palette
+DefaultColorButton - Use Default Color
+MySpaceConfigGude - <%MultiSelect> to show Update Info
+MySpaceUpdateInfo_Title - Update Info
+MySpaceUpdateInfo_Label - Player ID Name of last Player who updated
+MySpaceUpdateInfo_PlayerIDName - $(0)
+MySpace_Label_DisallowChangeConfig - This Build Part's settings cannot be changed.
+MySpace_Notice_DisallowChangeColor - This Build Part's color cannot be changed.
+MySpace_Notice_NoGeoChangePlace - This terrain cannot be changed.
+MySpace_Notice_GeoUpperLimit - Unable to further increase terrain height.
+MySpace_Notice_GeoLowerLimit - Unable to further decrease terrain height.
+MySpace_SwitchInstallation_Title - Place Build Parts
+MySpace_SwitchEditBuildPart_Title - Edit Build Parts
+MySpace_SwitchEditTerrain_Title - Edit Terrain
+MySpace_SwitchInstallation_RotateGuide - Rotate: <swguidetype ActionLStick>    Adjust Rotation Axis: <swguidetype ActionUpDown>     Reset Rotation: <%Jump>
+MySpace_SwitchInstallation_RotateGuide_Key - Rotate: <swguidetype ActionLStick>    Adjust Rotation Axis: <swguidetype ActionUpDownKey>     Reset Rotation: <%Jump>
+MySpace_SwitchInstallation_ScaleGuide - Scaling: <swguidetype ActionLStick>    Adjust Scaling Axis: <swguidetype ActionUpDown>     Reset Scaling: <%Jump>
+MySpace_SwitchInstallation_ScaleGuide_Key - Scaling: <swguidetype ActionLStick>    Adjust Scaling Axis: <swguidetype ActionUpDownKey>     Reset Scaling: <%Jump>
+MySpace_SwitchInstallation_DistanceGuide - Adjust Max Placement Distance: <swguidetype ActionLStick>    Reset Placement Distance Adjustments: <%Jump>
+MySpace_SwitchEditBuildPart_Guide_Hold - Confirm Item: Release <%WeaponAction_2>
+MySpace_SwitchEditBuildPart_Guide_OnePush - Confirm Item: <%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_Hold - Area Scaling: <swguidetype ActionUpDown> Confirm Item: Release <%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_Hold_Key - Area Scaling: <swguidetype ActionUpDownKey> Confirm Item: Release <%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_OnePush - Area Scaling: <swguidetype ActionUpDown> Confirm Item: <%WeaponAction_2>
+MySpace_SwitchEditTerrain_Guide_OnePush_Key - Area Scaling: <swguidetype ActionUpDownKey> Confirm Item: <%WeaponAction_2>
+MySpace_Switch_Right - <swguidetype ActionRight>
+MySpace_Switch_Right_Key - <swguidetype ActionRightKey>
+MySpace_Switch_Left - <swguidetype ActionLeft>
+MySpace_Switch_Left_Key - <swguidetype ActionLeftKey>
+
+
+Journal
+Group 0
+MySpaceJournalInstallation - 設置
+MySpaceJournalInstallationInformation - ビルドパーツ設置情報
+MySpaceJournalBuildPartsInformation - ビルドパーツ情報
+MySpaceJournalEditTerrainInformation - 地形情報
+MySpaceJournalRotate - 回転
+MySpaceJournalXAxis - X軸
+MySpaceJournalYAxis - Y軸
+MySpaceJournalZAxis - Z軸
+MySpaceJournalXYZAxis - 全体
+MySpaceJournalScale - スケール
+MySpaceJournalMaxDistance - 最長設置距離
+MySpaceJournalTerrainScope - 適用範囲
+MySpaceJournalOperation - 操作方法
+MySpaceJournalInst_Icon_Action1 - <%NormalAttack>
+MySpaceJournalInst_Icon_Action2 - <%PhotonArts>
+MySpaceJournalInst_Icon_Action3 - <%MainPaletteC>
+MySpaceJournalInst_Icon_Action1or2 - <%NormalAttack>/<%PhotonArts>
+MySpaceJournalInst_Icon_BP - <%WeaponAction_2>
+MySpaceJournalInst_Icon_Space - <pict 4space>
+MySpaceJournalTextInst_MoveObject_Move - 移動
+MySpaceJournalTextInst_MoveObject_MoveAdjustment - 設置微調整
+MySpaceJournalTextInst_ObjectConfig_Config - 設定
+MySpaceJournalTextInst_ObjectColor_ColorChange - 色を選択して反映
+MySpaceJournalTextInst_ObjectColor_ColorApply - 選択中の色を反映
+MySpaceJournalTextInst_DeleteObject_Delete - 削除
+MySpaceJournalTextInst_EditTerrain_Uplift - 地形のアップ
+MySpaceJournalTextInst_EditTerrain_Downlift - 地形のダウン
+MySpaceJournalTextInst_EditTerrain_LandLeveling - 地形の整地
+MySpaceJournalTextInst_Installation - 設置
+MySpaceJournalTextInst_Sub_SwitchingFunction - ビルドパーツ編集メニュー
+MySpaceJournalTextInst_Sub_SwitchingGeneralControl - 　編集モードを終了
+MySpaceJournalTextInst_Sub_SwitchingAux - ビルドパーツ設置メニュー
+MySpaceJournalTextInst_Sub_ExitInstallation - キャンセル
+MySpaceJournalTextInst_Sub_ExitInstallation_Space - 　ビルドパーツ設置を終了
+MySpaceJournalTextInst_Sub_CraftMenu - ビルドメニュー
+MySpaceJournalTextInst_Sub_SwitchingEditTerrainFunction - 地形編集メニュー
+MySpaceJournalTextInst_Sub_ExitEditTerrain - 　地形編集を終了
+MySpaceJournalTextInst_Sub_InstConfig - 　ビルドオプション
+MySpaceJournalTextInst_Sub_CreativeSpaceMenu - 　Ｃスペースメニュー
+TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu - 　チームスペースメニュー
+MySpaceJournalTextInst_SubTitle_Aux - <%WeaponAction_2>でメニュー表示中に
+MySpaceJournalTextInst_SubTitle_Function - <%WeaponAction_2>でメニュー表示中に
+MySpaceJournalTextInst_SubTitle_TerrainFunction - <%WeaponAction_2>でメニュー表示中に
+
+Group 1
+MySpaceJournalInstallation - Place
+MySpaceJournalInstallationInformation - Build Parts Placement Info
+MySpaceJournalBuildPartsInformation - Build Parts Info
+MySpaceJournalEditTerrainInformation - Terrain Info
+MySpaceJournalRotate - Rotation
+MySpaceJournalXAxis - X Axis 
+MySpaceJournalYAxis - Y Axis 
+MySpaceJournalZAxis - Z Axis 
+MySpaceJournalXYZAxis - All Axes
+MySpaceJournalScale - Scale
+MySpaceJournalMaxDistance - Max Placement Distance
+MySpaceJournalTerrainScope - Applicable Area
+MySpaceJournalOperation - Controls
+MySpaceJournalInst_Icon_Action1 - <%NormalAttack>
+MySpaceJournalInst_Icon_Action2 - <%PhotonArts>
+MySpaceJournalInst_Icon_Action3 - <%MainPaletteC>
+MySpaceJournalInst_Icon_Action1or2 - <%NormalAttack> / <%PhotonArts>
+MySpaceJournalInst_Icon_BP - <%WeaponAction_2>
+MySpaceJournalInst_Icon_Space - <pict 4space>
+MySpaceJournalTextInst_MoveObject_Move - Move
+MySpaceJournalTextInst_MoveObject_MoveAdjustment - Precision Placement
+MySpaceJournalTextInst_ObjectConfig_Config - Settings
+MySpaceJournalTextInst_ObjectColor_ColorChange - Select and Apply Color
+MySpaceJournalTextInst_ObjectColor_ColorApply - Apply Selected Color
+MySpaceJournalTextInst_DeleteObject_Delete - Remove
+MySpaceJournalTextInst_EditTerrain_Uplift - Increase Terrain Height
+MySpaceJournalTextInst_EditTerrain_Downlift - Reduce Terrain Height
+MySpaceJournalTextInst_EditTerrain_LandLeveling - Level Terrain
+MySpaceJournalTextInst_Installation - Place
+MySpaceJournalTextInst_Sub_SwitchingFunction - Build Part Edit Menu
+MySpaceJournalTextInst_Sub_SwitchingGeneralControl - 　Exit Edit Mode
+MySpaceJournalTextInst_Sub_SwitchingAux - Build Part Placement Menu
+MySpaceJournalTextInst_Sub_ExitInstallation - Cancel
+MySpaceJournalTextInst_Sub_ExitInstallation_Space - 　Exit Build Part Placement
+MySpaceJournalTextInst_Sub_CraftMenu - Build Menu
+MySpaceJournalTextInst_Sub_SwitchingEditTerrainFunction - Terrain Edit Menu
+MySpaceJournalTextInst_Sub_ExitEditTerrain - 　Exit Terrain Editing
+MySpaceJournalTextInst_Sub_InstConfig - 　Build Options
+MySpaceJournalTextInst_Sub_CreativeSpaceMenu - 　C-Space Menu
+TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu - 　Alliance Space Menu
+MySpaceJournalTextInst_SubTitle_Aux - While holding <%WeaponAction_2>:
+MySpaceJournalTextInst_SubTitle_Function - While holding <%WeaponAction_2>:
+MySpaceJournalTextInst_SubTitle_TerrainFunction - While holding <%WeaponAction_2>:
+
+
+PartsConfig
+Group 0
+InstallationNumber - 連動するテレポーター番号
+Active - 使用する
+Inactive - 使用しない
+Collision_Active - 接触する
+Collision_Inactive - 接触しない
+Connect_Active - 送受信する
+Connect_Inactive - 送受信しない
+Appear - 表示する
+Disappear - 表示しない
+OpenDoor - 開ける
+CloseDoor - 閉める
+On - オンにする
+Off - オフにする
+Graphics - ビルドパーツの表示
+Collision - ビルドパーツの接触判定
+Access - ビルドパーツのアクセス機能
+TransLock - コネクトの送受信
+SendContainerBreak - 破壊する
+SendSwitchOn - オンにする
+SendSwitchOff - オフにする
+SendDoorOpen - 開ける
+SendDoorClose - 閉める
+SendSit - 座る
+SendGet - とる
+SendTakeShower - シャワーを浴びる
+SendTouch - 接触する
+SendLeave - 接触後にビルドパーツから離れる
+SendLiedown - 横になる
+SendTakeBath - 入浴する
+SendAccess - アクセスする
+SendTeleport - テレポートする
+SendTouchFence - 接触する
+SendUpDrift - アップドラフターに乗る
+SendAfterDelay - 設定した時間が経過する
+SendTimerOverValue - タイマーの設定時間以上になる
+SendTimerUnderValue - タイマーが0になる
+SendRandam1 - ランダム送信する送信先のコネクトIDの指定1
+SendRandam2 - ランダム送信する送信先のコネクトIDの指定2
+SendRandam3 - ランダム送信する送信先のコネクトIDの指定3
+SendRandam4 - ランダム送信する送信先のコネクトIDの指定4
+SendRandam5 - ランダム送信する送信先のコネクトIDの指定5
+SendPlaySE - SEを再生する
+SendCountOverValue - コネクトを指定回数以上受信する
+SendReceiveChannel - 送信条件1と2を受信する
+SendByReceiveChannel - 指定した時間の経過後に送信する
+ReceiveChannel1 - 受信元のコネクトIDの指定1
+ReceiveChannel2 - 受信元のコネクトIDの指定2
+ResetReceiveChannel - 受信内容をリセットする
+CountToByReceiveChannel - カウント数を1増やす
+CountResetByReceiveChannel - カウント数をリセットする
+ActiveConnect - 機能の使用/コネクトID
+ActiveCollision - ビルドパーツの接触判定を有効にする
+InactiveCollision - ビルドパーツの接触判定を無効にする
+ActiveAccess - ビルドパーツのアクセス判定を有効にする
+InactiveAccess - ビルドパーツのアクセス判定を無効にする
+ActiveTransLock - コネクトの送受信を無効にする
+InactiveTransLock - コネクトの送受信を有効にする
+ActiveChannel - 機能の使用/コネクトID
+GraphicsAppear - ビルドパーツを表示する
+GraphicsDisappear - ビルドパーツを非表示にする
+MessageAppear - メッセージを表示する
+DesplayCountBySpeechBubble - 現在のカウント数を表示する
+ConfigInit - 基本設定
+ConfigSend - コネクトの送信条件
+ConfigRecieve - コネクト受信後の動作
+LabelCapacityGauge - 設置容量
+DelayUntilSend - 次のビルドパーツに送信するまでの時間
+IncrementalTimerValueByReceiveChannel - コネクト受信時のタイマーの秒数増加
+DecrementalTimerValueByReceiveChannel - コネクト受信時のタイマーの秒数減少
+TimerValueSended - コネクトを送信する秒数
+CountValueSended - 次のビルドパーツに送信するまでのコネクト受信回数
+StartCountUp - カウントアップを開始する
+StopCountUp - カウントアップを停止する
+IncrementTimer - タイマーの秒数を増やす
+DecrementTimer - タイマーの秒数を減らす
+ResetTimer - タイマーをリセットする
+DesplayTimeBySpeechBubble - 時間を表示する
+StartCountDown - カウントダウンを開始する
+StopCountDown - カウントダウンを停止する
+SEPlayingByReceiveChannel - 再生するSE
+PlaySEByReceiveChannel - SEを再生する
+DefaultTimer - タイマーの初期秒数
+SwitchState - スイッチの初期状態
+MySpaceObjectSE_000 - 再生しない
+MySpaceObjectSE_001 - 正解
+MySpaceObjectSE_002 - ハズレ
+MySpaceObjectSE_003 - クエストクリア
+MySpaceObjectSE_004 - 歓声
+MySpaceObjectSE_005 - 拍手
+MySpaceObjectSE_006 - ブーイング
+MessagePack_Cancel - 他のプレイヤーによってビルドパーツが編集されたため、入力をキャンセルしました。
+MessagePack_Title - メッセージ編集
+MessagePack_Headline_Message - メッセージの設定
+MessagePack_Headline_Balloon - フキダシの設定
+MessagePack_Headline_Symbol - 漫符の設定
+MessagePack_Headline_ModelSetting - モデル設定
+MessagePack_CheckBox_Model - 現在のキャラクターでモデルを更新
+MessagePack_CheckBox_Weapon - 武器を表示する
+MessagePack_Headline_GazeSetting - 顔の追従設定
+MessagePack_CheckBox_Face - 顔をキャラクターに向ける
+MessagePack_CheckBox_Gaze - 視線の追従
+MessagePack_Headline_FacialSetting - 表情設定
+MoveLeft - 左に移動する
+MoveRight - 右に移動する
+MoveStop - 停止する
+MySpaceSettingForm_Title - ビルドパーツ設定
+MessagePack_NGWord_Title - メッセージ
+MessagePack_NGWord - メッセージに使用できないことばが含まれています。
+MessagePack_Confirm_Title - 入力内容の確認
+MessagePack_Confirm - 入力した内容を反映しますか？
+MessagePack_Confirm_Decoy - 入力した内容を反映しますか？<br><br>※初回登録の場合は、<br>　キャンセルしても一部の情報が登録されます。
+PlayingCutin - 再生するテキスト演出
+SendPlayCutin - テキスト演出を再生する
+PlayCutinReceiveChannel - テキスト演出を再生する
+MySpaceObjectCutin_000 - 再生しない
+MySpaceObjectCutin_001 - GOAL!
+MySpaceObjectCutin_002 - CLEAR!
+MySpaceObjectCutin_003 - GAME OVER
+MySpaceObjectCutin_004 - SUCCESS!
+MySpaceObjectCutin_005 - FAILURE
+MySpaceObjectCutin_006 - START!
+MySpaceObjectCutin_007 - TIME UP!
+MoveType - オブジェクトの移動
+MoveType_01 - 移動しない
+MoveType_02 - 左から右に移動する
+MoveType_03 - 右から左に移動する
+MoveType_04 - 下から上に移動する
+MoveType_05 - 上から下に移動する
+MoveTime - 移動時に元の位置に戻るまでの時間
+MoveRange - 移動距離
+SendTouchBomb - 接触する
+Teleporter_NotFound - 同じ番号のテレポーターが見つかりません。
+Teleporter_TimeOut - 通信エラーにより転送されませんでした。
+Turnon_ConnectRecieved - オンにする
+Turnoff_ConnectRecieved - オフにする
+MessagePack_Headline_Username - 名前の設定
+SpeedUp_Time - 移動速度上昇の効果時間
+ActionTypeSended - 送信条件になるアクション
+ActionType_01 - 設定しない
+ActionType_02 - ジャンプ
+ActionType_03 - 攻撃
+ActionType_04 - ステップ
+SendAction - アクションを行う
+SendHatchOpen - 開ける
+SendHatchClose - 閉める
+OpenHatch - 開ける
+CloseHatch - 閉める
+SendByReceiveRandomChannel - 指定したコネクトIDのいずれかに送信する
+TeamSpace_IndependentError - 現在入室中のスペースの所有チームに所属していないため、アクセスできません。
+EditPermission_Assignment - 編集権限が付与されました。
+EditPermission_Deprivation - 編集権限を失いました。
+Guild_mag_level_up - チームマグが大きくなりました。
+Guild_mag_level_down - チームマグが小さくなりました。
+GPTree_GetPoint_Title - 本日分の獲得GP
+GPTree_GetPoint_Caption - 本日分の獲得GP
+GPTree_GetPoint - $(0)/$(1)
+GPTree_GetPointMax - <yellow>$(0)/$(1)<c>
+GPTree_Menu_Title - GPツリーメニュー
+GPTree_Menu_SendGJ - グッジョブを送る
+GPTree_Menu_Favorite - お気に入り登録
+GPTree_Info_Title - GPツリー情報
+GPTree_Info_Title_Caption - 満開度
+GPTree_Info_Advice - <yellow>本日分のジェネシスポイントは獲得済みです。<c>
+GPTree_Info_Lv1 - Rank.1
+GPTree_Info_Lv2 - Rank.2
+GPTree_Info_Lv3 - Rank.3
+GPTree_Info_Lv4 - Rank.4
+GPTree_Info_Lv5 - Rank.5
+GPTree_Info_Lv6 - Rank.MAX
+GPTree_Error_Myself - この機能は、自分のクリエイティブスペースでは使用できません。
+GPTree_Error_NoMenuOpen - 現在、GPツリーにアクセスできません。
+GPTree_Error_Common - 現在、この機能は使用できません。
+GPTree_Error_GJ - グッジョブを送れませんでした。
+GPTree_Error_Favorite - すでに登録済みか、登録できないクリエイティブスペースです。
+Casual_Table_Message - 反対の席にプレイヤーが座ると、フリーバトルが開始されます。
+Casual_Table_Reject - ラインストライクが開放されていません。
+
+Group 1
+InstallationNumber - Linked Teleporter Number
+Active - Enable
+Inactive - Disable
+Collision_Active - Make Contact
+Collision_Inactive - Don't Make Contact
+Connect_Active - Send/Receive
+Connect_Inactive - Don't Send/Receive
+Appear - Display
+Disappear - Hide
+OpenDoor - Open
+CloseDoor - Close
+On - On
+Off - Off
+Graphics - Show Build Parts
+Collision - Build Part Collision Detection
+Access - Build Part Access Function
+TransLock - Send/Receive Connects
+SendContainerBreak - Destroy
+SendSwitchOn - Switch On
+SendSwitchOff - Switch Off
+SendDoorOpen - Open
+SendDoorClose - Close
+SendSit - Sit
+SendGet - Take
+SendTakeShower - Shower
+SendTouch - Make Contact
+SendLeave - Move away from Build Parts after Contact
+SendLiedown - Lie Down
+SendTakeBath - Bathe
+SendAccess - Access
+SendTeleport - Teleport
+SendTouchFence - Make Contact
+SendUpDrift - Ride Updrafter
+SendAfterDelay - When set time elapses
+SendTimerOverValue - When set time is passed
+SendTimerUnderValue - When timer reaches zero
+SendRandam1 - Random Transmission Connect ID 1
+SendRandam2 - Random Transmission Connect ID 2
+SendRandam3 - Random Transmission Connect ID 3
+SendRandam4 - Random Transmission Connect ID 4
+SendRandam5 - Random Transmission Connect ID 5
+SendPlaySE - Play Sound Effect
+SendCountOverValue - When enough Connects are received
+SendReceiveChannel - Receive Transmission Conditions 1 and 2
+SendByReceiveChannel - Send after a specified time
+ReceiveChannel1 - Specified Receiver Connect ID 1
+ReceiveChannel2 - Specified Receiver Connect ID 2
+ResetReceiveChannel - Reset Received Content
+CountToByReceiveChannel - Increase Count by 1
+CountResetByReceiveChannel - Reset Count
+ActiveConnect - Function Use/Connect ID
+ActiveCollision - Enable Build Part Collision Detection
+InactiveCollision - Disable Build Part Collision Detection
+ActiveAccess - Enable Build Part Access Detection
+InactiveAccess - Disable Build Part Access Detection
+ActiveTransLock - Disable Sending and Receiving Connects
+InactiveTransLock - Enable Sending and Receiving Connects
+ActiveChannel - Function Use/Connect ID
+GraphicsAppear - Show Build Parts
+GraphicsDisappear - Hide Build Parts
+MessageAppear - Show Messages
+DesplayCountBySpeechBubble - Show Current Count
+ConfigInit - Basic Settings
+ConfigSend - Connect Send Conditions
+ConfigRecieve - Operation After Receiving Connect
+LabelCapacityGauge - Placed Items
+DelayUntilSend - Time before sending connect to next Build Part
+IncrementalTimerValueByReceiveChannel - Timer increased upon received Connect
+DecrementalTimerValueByReceiveChannel - Timer decrease upon received Connect
+TimerValueSended - Number of seconds at which to send Connect
+CountValueSended - Connects to receive before sending to next Build Part
+StartCountUp - Start Count-up
+StopCountUp - Stop Count-up
+IncrementTimer - Increase Seconds on Timer
+DecrementTimer - Decrease Seconds on Timer
+ResetTimer - Reset Timer
+DesplayTimeBySpeechBubble - Display Time
+StartCountDown - Start Countdown
+StopCountDown - Stop Countdown
+SEPlayingByReceiveChannel - Sound effect to be played
+PlaySEByReceiveChannel - Play Sound Effect
+DefaultTimer - Initial Seconds on Timer
+SwitchState - Default Switch State
+MySpaceObjectSE_000 - Do Not Play
+MySpaceObjectSE_001 - Correct
+MySpaceObjectSE_002 - Incorrect
+MySpaceObjectSE_003 - Quest Clear
+MySpaceObjectSE_004 - Cheer
+MySpaceObjectSE_005 - Applause
+MySpaceObjectSE_006 - Boo
+MessagePack_Cancel - Build Parts have been edited by another player. Input cancelled.
+MessagePack_Title - Edit Message
+MessagePack_Headline_Message - Message Settings
+MessagePack_Headline_Balloon - Balloon Settings
+MessagePack_Headline_Symbol - Manga Expression Settings
+MessagePack_Headline_ModelSetting - Model Settings
+MessagePack_CheckBox_Model - Update Model to Current Character
+MessagePack_CheckBox_Weapon - Show Weapons
+MessagePack_Headline_GazeSetting - Face Tracking Settings
+MessagePack_CheckBox_Face - Face the Character
+MessagePack_CheckBox_Gaze - Dummy
+MessagePack_Headline_FacialSetting - Expression Settings
+MoveLeft - Move Left
+MoveRight - Move Right
+MoveStop - Stop
+MySpaceSettingForm_Title - Build Part Settings
+MessagePack_NGWord_Title - Message
+MessagePack_NGWord - Message contains unusable words.
+MessagePack_Confirm_Title - Review
+MessagePack_Confirm - Apply what you've entered?
+MessagePack_Confirm_Decoy - Apply what you've entered?<br><br>*For your first registration, some info will be registered even if you cancel.
+PlayingCutin - Text Display Playback
+SendPlayCutin - Play Text Display
+PlayCutinReceiveChannel - Play Text Display
+MySpaceObjectCutin_000 - Do Not Play
+MySpaceObjectCutin_001 - GOAL!
+MySpaceObjectCutin_002 - CLEAR!
+MySpaceObjectCutin_003 - GAME OVER
+MySpaceObjectCutin_004 - SUCCESS!
+MySpaceObjectCutin_005 - FAILURE
+MySpaceObjectCutin_006 - START!
+MySpaceObjectCutin_007 - TIME'S UP!
+MoveType - Object Movement
+MoveType_01 - No movement
+MoveType_02 - Move left to right
+MoveType_03 - Move right to left
+MoveType_04 - Move down to up
+MoveType_05 - Move up to down
+MoveTime - Movement time until original position
+MoveRange - Movement distance
+SendTouchBomb - Make Contact
+Teleporter_NotFound - Teleporter with the same number not found.
+Teleporter_TimeOut - Transfer failed due to connection error.
+Turnon_ConnectRecieved - Switch On
+Turnoff_ConnectRecieved - Switch Off
+MessagePack_Headline_Username - Name Settings
+SpeedUp_Time - Movement speed-up duration
+ActionTypeSended - Trigger Action
+ActionType_01 - Don't set
+ActionType_02 - Jump
+ActionType_03 - Attack
+ActionType_04 - Sidestep
+SendAction - Perform an action
+SendHatchOpen - Open
+SendHatchClose - Close
+OpenHatch - Open
+CloseHatch - Close
+SendByReceiveRandomChannel - Send to one of the specified connect IDs
+TeamSpace_IndependentError - Unable to access because you are not a member of the Alliance that owns the space.
+EditPermission_Assignment - Edit permissions granted.
+EditPermission_Deprivation - Edit permissions lost.
+Guild_mag_level_up - Your Alliance Mag is bigger.
+Guild_mag_level_down - Your Alliance Mag is smaller.
+GPTree_GetPoint_Title - Today's Earned GP
+GPTree_GetPoint_Caption - Today's Earned GP
+GPTree_GetPoint - $(0)/$(1)
+GPTree_GetPointMax - <yellow>$(0)/$(1)<c>
+GPTree_Menu_Title - GP Tree Menu
+GPTree_Menu_SendGJ - Send Kudos
+GPTree_Menu_Favorite - Add Favorite
+GPTree_Info_Title - GP Tree Info
+GPTree_Info_Title_Caption - Bloom Level
+GPTree_Info_Advice - <yellow>You have already earned today's Genesis Points.<c>
+GPTree_Info_Lv1 - Rank 1
+GPTree_Info_Lv2 - Rank 2
+GPTree_Info_Lv3 - Rank 3
+GPTree_Info_Lv4 - Rank 4
+GPTree_Info_Lv5 - Rank 5
+GPTree_Info_Lv6 - Rank MAX
+GPTree_Error_Myself - This feature cannot be used in your own Creative Space.
+GPTree_Error_NoMenuOpen - Unable to access GP Tree.
+GPTree_Error_Common - This function is currently unavailable.
+GPTree_Error_GJ - Unable to send Kudos.
+GPTree_Error_Favorite - This Creative Space has already been registered or cannot be registered.
+Casual_Table_Message - Free Battle will begin once a Player sits down across from you.
+Casual_Table_Reject - Line Strike has not been unlocked.
+
+
+PartsConfig_Blueprint
+Group 0
+DefaultBlueprintName - 設計図
+SlotSelect - 保存スロットの選択
+SlotSelectSaveGuideText - 設計図を保存するスロットを選択してください。
+SlotSelectPublishGuideText - 設計図を公開するスロットを選択してください。
+RegionSelect - 設計図の範囲指定
+RegionView - 範囲指定の確認
+RegionSelectExitGuide - 長押しで範囲指定を終了
+RegionViewExitGuide - 長押しで公開範囲の確認を終了
+RegionSelectStartingPoint - 起点
+RegionSelectRight - 右側の幅
+RegionSelectLeft - 左側の幅
+RegionSelectHeight - 高さ
+RegionSelectDepth - 奥行き
+RegionSelectFraction - $(0)（最大選択数：$(1)）
+RegionSelectCaption1 - 設計図の起点
+RegionSelectCaption2 - 設計図の範囲
+RegionSelect_FarAway - 設計図端末から一定距離以上離れたため、自動転送されました。
+LockFailed1 - 設計図の範囲内を、他のプレイヤーが編集中のため、<br>メニューを開けません。
+LockFailed2 - 範囲内にビルドパーツがありません。<br>ビルドパーツのある場所を指定してください。
+LockFailed3 - 範囲内のビルドパーツ数が、<br>設計図の上限を超えています。<br><br>範囲内のビルドパーツ数：$(0)個<br>設計図のビルドパーツ数上限：$(1)個
+LockFailed4 - 以下のビルドパーツは、<br>設計図に含むことができません。<br><br>$(0)
+LockFailed5 - この設計図端末の指定範囲が、<br>他の設計図端末の公開範囲と重複しています。<br><br>いずれかの端末の<br>指定範囲を変更してください。
+LockFailed6 - 別の設計図で再現された建物などは、<br>この設計図に含むことができません。
+ConfirmEdit_Title - 編集終了の確認
+ConfirmEdit - 保存または公開をせずに終了した場合、<br>編集内容が破棄されます。<br>よろしいですか？
+LockFailedConfirm_Title - 編集内容の確認
+LockFailedConfirm1 - 設計図の範囲内を、他のプレイヤーが編集中のため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+LockFailedConfirm2 - 範囲内にビルドパーツがないため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+LockFailedConfirm3 - 範囲内のビルドパーツ数が、<br>設計図の上限を超えているため、<br>設定を適用できません。<br><br>範囲内のビルドパーツ数：$(0)個<br>設計図のビルドパーツ数上限：$(1)個<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+LockFailedConfirm4 - 設計図に含むことができない<br>ビルドパーツが含まれているため、<br>設定を適用できません。<br><br>$(0)<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+LockFailedConfirm5 - 他の設計図端末と指定範囲が重複しているため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+LockFailedConfirm6 - 別の設計図で再現された構築物と指定範囲が<br>重複しているため、設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+DownloadFailed_Title - メッセージ
+DownloadFailed - 設計図がダウンロードできませんでした。
+ConfirmDelete_Title - 設計図削除の確認
+ConfirmDelete1 - この設計図を削除します。<br>よろしいですか？<br><br>削除すると、前の設計図の公開が中止されます。<br><br><yellow>※公開を中止すると、<br>　“注目の設計図”の集計はリセットされます。<c>
+ConfirmDelete2 - この設計図を削除します。<br>よろしいですか？
+ConfirmDelete3 - この設計図を削除します。<br>よろしいですか？
+NoticeLoseConnect - 設計図の編集と保存、公開ができます。<br><yellow>※コネクトの設定は設計図に含まれません。<c>
+ConfirmOverwrite_Title - 上書き保存確認
+ConfirmOverwrite1 - 設計図を上書き保存します。<br>よろしいですか？<br><br>上書き保存すると、前の設計図の公開が停止されます。<br><br><yellow>※公開を中止すると、<br>　“注目の設計図”の集計はリセットされます。<c>
+ConfirmOverwrite2 - 設計図を上書き保存します。<br>よろしいですか？
+ConfirmOverwrite3 - 設計図を上書き保存します。<br>よろしいですか？
+ConfirmPublish_Title - 設計図公開の確認
+ConfirmPublish - 設計図を公開すると、<br>他のプレイヤーが設計図端末から、<br>その設計図をダウンロードできるようになります。<br><br>また、公開中は以下の編集ができなくなります。<br>・設計図の範囲内でのビルドパーツ編集<br>・設計図情報および設計図の範囲設定の編集<br><br>公開してもよろしいですか？
+ConfirmUnpublish_Title - 設計図公開停止の確認
+ConfirmUnpublish - この設計図の公開を停止しますか？<br><br><yellow>※公開を停止すると、<br>　“注目の設計図”の集計はリセットされます。<c>
+ConfirmDownload_Title - 上書き保存確認
+ConfirmDownload1 - この設計図には、<br>所持していないビルドパーツが含まれます。<br>保存してもよろしいですか？
+ConfirmDownload2 - 設計図を上書き保存します。<br>よろしいですか？<br><br>上書き保存すると、前の設計図の公開が停止されます。<br><br><yellow>※公開を停止すると、<br>　“注目の設計図”の集計はリセットされます。<c>
+ConfirmDownload3 - 設計図を上書き保存します。<br>よろしいですか？
+ConfirmDownload4 - 設計図を上書き保存します。<br>よろしいですか？
+SavedMessage_Text - メッセージ
+SavedMessage - 設計図を保存しました。
+PublishedMessage_Text - メッセージ
+PublishedMessage - 設計図を公開しました。
+PermissonChange_Title - メッセージ
+PermissonChange_Text - クリエイティブスペースの公開情報が、<br>非公開になっています。<br>入室設定を“誰でも可能”に変更しますか？<br><br><yellow>※“Ｃスペースメニュー”の“公開情報の設定”で、<br>　より細かく入室設定ができます。<c>
+PermissonChangeFix_Text - 入室設定を変更しました。
+UnpublishedMessage_Text - メッセージ
+UnpublishedMessage - 設計図の公開を停止しました。
+NoBlueprint_Text - 設計図
+NoBlueprint - 設計図が公開されていません。<br><br>設計図の登録、編集は、スペースオーナーのみができます。
+DownloadedMessage_Text - メッセージ
+DownloadedMessage - 設計図をダウンロードしました。
+EditFormTitle - 設計図の編集
+DownloadFormTitle - 設計図のダウンロード
+BlueprintInfo_Edit - 設計図情報の編集
+SaveButtonText - 保存
+PublishButtonText - 公開
+DownloadButtonText - 設計図をダウンロード
+UnpublishGuideText - 設計図が公開されています。<br>編集するには、公開を停止してください。
+UnpublishButtonText - 公開を停止
+MySpace_Notice_NoReplaceBlueprintEditing - 設計図の範囲内のため編集できません。
+MySpace_Notice_NoReplaceBlueprintPublic - 設計図の範囲内のため編集できません。
+MySpace_Notice_NoEditBlueprintEditing - 設計図の範囲内のため編集できません。
+MySpace_Notice_NoEditBlueprintPublic - 設計図の範囲内のため編集できません。
+Guide_Brueprint_RangeSet - 移動：<swguidetype ActionLStick>　　ジャンプ：<%Jump>　　ズームアウト：<%Function>　　ズームイン：<%NextWidget>　　範囲の表示切り替え：<%TabForward>　　範囲指定を終了：<swguidetype BluePrintEscMenu>
+Guide_Brueprint_RangeView - 移動：<swguidetype ActionLStick>　　ジャンプ：<%Jump>　　ズームアウト：<%Function>　　ズームイン：<%NextWidget>　　範囲の表示切り替え：<%TabForward>　　公開範囲の確認を終了：<swguidetype BluePrintEscMenu>
+Guide_Brueprint_Save - 決定：<%Decide>　　削除：<%Exception>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>　　操作ウィンドウ切り替え：<%ChangeCtrlWindowForward>
+MySpaceBlueprintError_InvalidSlotNumber - 設計図が保存されていません。
+MySpaceBlueprintError_ObjectListEmpty - ビルドパーツの読み込み中に問題が発生しました。
+MySpaceBlueprintError_BlueprintIsPSOnly - この設計図は、現在のクリエイティブスペースの設定により利用できません。
+MySpaceBlueprintError_BlueprintIsBan_Title - メッセージ
+MySpaceBlueprintError_BlueprintIsBan - この設計図は、現在使用が停止されています。
+MySpaceBlueprintError_DisableBlueprint_Title - メッセージ
+MySpaceBlueprintError_DisableBlueprint - この設計図は、現在使用が停止されています。<br>設計図を削除しますか？
+MySpaceBlueprintError_ErrorOther - この設計図を利用する際に、問題が発生しました。
+MySpaceBlueprintError_PartsNumberOver - 設置制限数を超えるため、これ以上は設置できません。
+
+Group 1
+DefaultBlueprintName - Design
+SlotSelect - Select Save Slot
+SlotSelectSaveGuideText - Select a slot to save the Design to.
+SlotSelectPublishGuideText - Select a slot to share your Design to.
+RegionSelect - Set Design Area
+RegionView - Confirm Area Settings
+RegionSelectExitGuide - Press and hold to close Area Settings
+RegionViewExitGuide - Press and hold to close Shared Area view
+RegionSelectStartingPoint - Start Point
+RegionSelectRight - Right Width
+RegionSelectLeft - Left Width
+RegionSelectHeight - Height
+RegionSelectDepth - Depth
+RegionSelectFraction - $(0) (Select up to: $(1))
+RegionSelectCaption1 - Design Start Point
+RegionSelectCaption2 - Design Area
+RegionSelect_FarAway - Automatically transferred because it was over a certain distance from the Design Terminal.
+LockFailed1 - Unable to open menu because another Player is currently editing the Design Area.
+LockFailed2 - There are no Build Parts in the area.<br>Select an area with Build Parts.
+LockFailed3 - The number of Build Parts in the area exceeds the Design limit.<br><br>Number of Build Parts: $(0)<br>Design Build Part Limit: $(1)
+LockFailed4 - The following Build Parts cannot be used in the Design:<br><br>$(0)
+LockFailed5 - The specified area of this Design Terminal overlaps with the Shared Area of another Design Terminal.<br><br>Please change the specified area of either terminal.
+LockFailed6 - Buildings and other structures reproduced in another Design cannot be included in this Design.
+ConfirmEdit_Title - Stop Editing
+ConfirmEdit - You will lose your changes if you close without saving or sharing.<br>Are you sure?
+LockFailedConfirm_Title - Review Changes
+LockFailedConfirm1 - Unable to apply settings because another Player is editing the Design Area.<br><br>Abandon changes and return to the Edit Menu?
+LockFailedConfirm2 - Unable to apply settings because there are no Build Parts in the Area.<br><br>Abandon changes and return to the Edit Menu?
+LockFailedConfirm3 - Unable to apply settings because the number of Build Parts in the Area exceeds the Design limit.<br>Number of Build Parts: $(0)<br>Design Build Part Limit: $(1)<br><br>Abandon changes and return to the Edit Menu?
+LockFailedConfirm4 - Unable to apply settings because the following Build Parts cannot be used in your Design.<br><br>$(0)<br><br>Abandon changes and return to the Editing Menu?
+LockFailedConfirm5 - Unable to apply settings because of Area overlap with another Design Terminal.<br><br>Abandon changes and return to the Edit Menu?
+LockFailedConfirm6 - Unable to apply settings because the specified area overlaps with construction produced in another Design.<br><br>Abandon changes and return to the Edit Menu?
+DownloadFailed_Title - Message
+DownloadFailed - Unable to download Design.
+ConfirmDelete_Title - Confirm Design Deletion
+ConfirmDelete1 - This Design will be deleted.<br>Are you sure you wish to proceed?<br><br>Deleting this Design will also unshare it.<br><br><yellow>*The "Featured Design" counter will be reset when it is unshared.<c>
+ConfirmDelete2 - Delete the Design.<br>Are you sure?
+ConfirmDelete3 - Delete the Design.<br>Are you sure?
+NoticeLoseConnect - Designs can be edited, saved, and shared.<br><yellow>*Connect Settings not included in Design.<c>
+ConfirmOverwrite_Title - Confirm Overwrite and Save
+ConfirmOverwrite1 - This Design will be overwritten.<br>Are you sure you wish to proceed?<br><br>Overwriting this Design will also unshare it.<br><br><yellow>*The "Featured Design" counter will be reset when it is unshared.<c>
+ConfirmOverwrite2 - Overwrite the Design.<br>Are you sure?
+ConfirmOverwrite3 - Overwrite the Design.<br>Are you sure?
+ConfirmPublish_Title - Confirm Design Sharing
+ConfirmPublish - Sharing Designs allows other users to download shared Designs via Design Terminals.<br><br>When you share a Design, you will be unable to do the following:<br>- Edit Build Parts within the Design Area<br>- Edit Design Information and the Design Area.<br><br>Are you sure you wish to proceed?
+ConfirmUnpublish_Title - Confirm Design Unshare
+ConfirmUnpublish - Unshare this Design?<br><br><yellow>*The "Featured Design" counter will be reset when it is unshared.<c>
+ConfirmDownload_Title - Confirm Overwrite and Save
+ConfirmDownload1 - This Design contains Build Parts not in your possession.<br>Are you sure you wish to proceed?
+ConfirmDownload2 - Overwrite the Design.<br>Are you sure you wish to proceed?<br><br>Overwriting this Design will also unshare it.<br><br><yellow>*The "Featured Design" counter will be reset when it is unshared.<c>
+ConfirmDownload3 - Overwrite the Design.<br>Are you sure?
+ConfirmDownload4 - Overwrite the Design.<br>Are you sure?
+SavedMessage_Text - Message
+SavedMessage - Design saved.
+PublishedMessage_Text - Message
+PublishedMessage - Design shared.
+PermissonChange_Title - Message
+PermissonChange_Text - Creative Space shared info is currently unshared.<br>Change Entry Settings to "Open to Everyone"?<br><br><yellow>*Detailed C-Space Menu Privacy Settings can be set Entry Settings.<c>
+PermissonChangeFix_Text - Entry Settings changed.
+UnpublishedMessage_Text - Message
+UnpublishedMessage - Design unshared.
+NoBlueprint_Text - Design
+NoBlueprint - The Design is not shared.<br><br>Design adding and editing can only be performed by the owner of this Space.
+DownloadedMessage_Text - Message
+DownloadedMessage - Design downloaded.
+EditFormTitle - Edit Design
+DownloadFormTitle - Download Design
+BlueprintInfo_Edit - Edit Design Information
+SaveButtonText - Save
+PublishButtonText - Share
+DownloadButtonText - Download Design
+UnpublishGuideText - This Design is currently shared.<br>Designs must be unshared to edit.
+UnpublishButtonText - Unshare
+MySpace_Notice_NoReplaceBlueprintEditing - Unable to edit. This area falls within a Design Area.
+MySpace_Notice_NoReplaceBlueprintPublic - Unable to edit. This area falls within a Design Area.
+MySpace_Notice_NoEditBlueprintEditing - Unable to edit. This area falls within a Design Area.
+MySpace_Notice_NoEditBlueprintPublic - Unable to edit. This area falls within a Design Area.
+Guide_Brueprint_RangeSet - Move: <swguidetype ActionLStick>    Jump: <%Jump>    Zoom Out: <%Function>    Zoom In: <%NextWidget>    Toggle Area Display: <%TabForward>    Exit Area Settings: <swguidetype BluePrintEscMenu>
+Guide_Brueprint_RangeView - Move: <swguidetype ActionLStick>    Jump: <%Jump>    Zoom Out: <%Function>    Zoom In: <%NextWidget>    Toggle Area Display: <%TabForward>    Exit Shared Area View: <swguidetype BluePrintEscMenu>
+Guide_Brueprint_Save - Confirm: <%Decide>  Remove: <%Exception>   Cancel: <%Cancel>   Move Active Item: <%NextWidget>   Change Active Window: <%ChangeCtrlWindowForward>
+MySpaceBlueprintError_InvalidSlotNumber - Design not saved.
+MySpaceBlueprintError_ObjectListEmpty - Error loading Build Parts.
+MySpaceBlueprintError_BlueprintIsPSOnly - This Design cannot be used due to current Creative Space settings.
+MySpaceBlueprintError_BlueprintIsBan_Title - Message
+MySpaceBlueprintError_BlueprintIsBan - This Design is currently suspended.
+MySpaceBlueprintError_DisableBlueprint_Title - Message
+MySpaceBlueprintError_DisableBlueprint - This Design is currently suspended.<br>Delete this Design?
+MySpaceBlueprintError_ErrorOther - There was an error using this Design.
+MySpaceBlueprintError_PartsNumberOver - Placement limit has been reached, so no more can be placed.
+
+
+Mag
+Group 0
+MagMenuTitle - チームマグ
+MagMenu_Item_Boost - チームマグブーストを受ける<pict 4space><pict myspace_point>
+MagMenu_Item_Energy - チームマグブーストのレベルアップ<pict 4space><pict reb_team>
+MagMenu_Item_Appearance - チームマグのフォルム変更<pict 4space><pict reb_team>
+MagMenu_SupEnergy_Title - チームマグブースト
+MagMenu_SupEnergy_Info - 支援レベルは毎朝$(1)時にレベルが1段階下がります。<br>（最低支援レベル1）<br><br>効果を選択し、ジェネシスポイントを効果一つにつき<br>$(0)ptを消費することでプレイヤーを強化できます。
+MagMenu_buff_LV - ブースト$(0)
+MagMenu_buff_info - ブースト効果
+MagMenu_Reward_Title - ブースト付与報酬
+MagMenu_Reward_Info_Saving - いずれかのプレイヤーがブースト効果を受けると<br>ゲージが増え、最大時に報酬が受け取れます。
+MagMenu_Reward_Info_Received - 報酬は受け取り済みです。<br>次回更新まで：あと$(0)
+MagMenu_Reward_Info_Stop - チームに加入した週は、<br>報酬を受け取れません。
+MagMenu_Reward_Info_Joining - 報酬は受け取り済みです。<br>次回更新まで：あと$(0)
+MagMenu_Reward_to - 報酬獲得まであと：
+MagMenu_UnusedBoost - 無し
+MagMenu_PossessInfo_Title - 所持ポイント
+MagMenu_PossessInfo_GeneratePoint - ジェネシスポイント
+MagMenu_Boost_Title - チームマグブーストの選択
+MagMenu_Boost_Info - 受けたいチームマグブーストを選んでください。<br>効果ごとに$(0)ptを消費します。
+MagMenu_UseGeneratePoint_Title - メッセージ
+MagMenu_UseGeneratePoint_Info - $(1)GPを消費して、<br>チームマグブーストの効果を受けます。<br>よろしいですか？<br><br>（所持GP：$(0)）<br><br><yellow>※発生中の同じ効果のブーストは上書きされます。<c>
+MagMenu_Mag_Title - チームマグブーストのレベルアップ
+MagMenu_Give_Title - レベルの決定
+MagMenu_Give_Info - N-チームポイントを消費して、<br>チームマグブーストのレベルを上げます。
+MagMenu_Give_LV - ブーストLv.
+MagMenu_Give_Buff - ブースト効果
+MagMenu_NTeamPoint - N-チームポイント
+MagMenu_Give_TeamPoint - 必要N-チームポイント
+MagMenu_Give_Confirm - N-チームポイントを$(2)ポイント消費し、<br>ブースト効果を$(1)に強化します。<br>よろしいですか？<br><br>（所持N-チームポイント：$(0)）
+MagMenu_Appearance_Title - チームマグのフォルム変更
+MagMenu_Appearance_SubTitle_L - マグフォルム
+MagMenu_Appearance_SubTitle_R - 必要N-チームポイント
+MagMenu_Appearance_Preview_Title - 変更後のフォルム
+MagMenu_Appearance_Confirm - マグの見た目を$(1)<pict 4space><pict reb_team>TPで変更します。<br>よろしいですか？<br><br>（所持N-チームポイント：$(0)<pict 4space><pict reb_team>TP）<br><br><yellow>※変更するたびに、N-チームポイントを消費します。<c>
+MagMenu_Message_Loading - 読み込み中…
+MagMenu_Message_Busy - 通信中…
+MagMenu_Success_Boost - チームマグブーストの効果が発生しました。
+MagMenu_Success_Give - チームマグブーストがレベルアップしました。
+MagMenu_Success_Appearance - チームマグのフォルムを変更しました。
+MagMenu_Success_Reward - ブースト付与報酬を入手しました。
+MagMenu_Failed_Reward - ブースト付与報酬を受け取れませんでした。
+MagMenu_Error_Generic - チームマグの処理に失敗しました。
+MagMenu_Error_Generic_Error - エラーが発生したため、実行できませんでした。
+MagMenu_Error_Generic_Authority - 権限がないため、利用できません。
+MagMenu_Error_Boost - チームマグブーストを受けられませんでした。
+MagMenu_Error_UseGeneratePoint - ジェネシスポイントが足りないため、実行できません。
+MagMenu_Error_Diff - チームマグブーストのレベルが変更されたため、キャンセルしました。
+MagMenu_Error_Appearance - チームマグのフォルムを変更できませんでした。
+MagMenu_Error_Appearance_TP - N-チームポイントが足りないため、変更できません。
+MagMenu_Error_Appearance_Equal - 現在設定中のフォルムです。
+MagMenu_Error_Appearance_Simultaneous - 他のプレイヤーによってチームマグのフォルムが変更されたため、キャンセルしました。
+MagMenu_Error_Give - チームマグブーストのレベルアップに失敗しました。
+MagMenu_Error_Give_Full - レベルが最大のため、これ以上レベルアップできません。
+MagMenu_Error_Give_Diff - 他のプレイヤーによってチームマグブーストのレベルが変更されたため、キャンセルしました。
+
+Group 1
+MagMenuTitle - Alliance Mag
+MagMenu_Item_Boost - Receive Alliance Mag Boost <pict 4space><pict myspace_point>
+MagMenu_Item_Energy - Alliance Mag Boost Level Up <pict 4space><pict reb_team>
+MagMenu_Item_Appearance - Change Alliance Mag Form <pict 4space><pict reb_team>
+MagMenu_SupEnergy_Title - Alliance Mag Boost
+MagMenu_SupEnergy_Info - dummytext
+MagMenu_buff_LV - Boost $(0)
+MagMenu_buff_info - Boost Effect
+MagMenu_Reward_Title - Boost Reward
+MagMenu_Reward_Info_Saving - The gauge fills when any player receives<br>a boost, granting a reward when full.
+MagMenu_Reward_Info_Received - You have already received that reward.<br>You can receive it again in: $(0)
+MagMenu_Reward_Info_Stop - You cannot receive a reward in the<br>same week that you join an Alliance.
+MagMenu_Reward_Info_Joining - You have already received that reward.<br>You can receive it again in: $(0)
+MagMenu_Reward_to - Receive Reward in:
+MagMenu_UnusedBoost - None
+MagMenu_PossessInfo_Title - Current Points
+MagMenu_PossessInfo_GeneratePoint - Genesis Points
+MagMenu_Boost_Title - Alliance Mag Boost Selection
+MagMenu_Boost_Info - Select the Alliance Mag Boost(s) you would like.<br>Each effect costs $(0) points.
+MagMenu_UseGeneratePoint_Title - Message
+MagMenu_UseGeneratePoint_Info - Spend $(1) GP to receive Alliance Mag Boost effect(s)?<br><br>(Current GP: $(0))<br><br><yellow>Warning: Any of the same effects currently active will be removed.<c>
+MagMenu_Mag_Title - Alliance Mag Boost Level Up
+MagMenu_Give_Title - Confirm Level
+MagMenu_Give_Info - Spend N-Alliance Points to increase your Alliance Mag Boost Level.
+MagMenu_Give_LV - Boost Lv.
+MagMenu_Give_Buff - Boost Effect
+MagMenu_NTeamPoint - N-Alliance Points
+MagMenu_Give_TeamPoint - Required N-Alliance Points
+MagMenu_Give_Confirm - Spend $(1) N-Alliance Points to upgrade your Boost Effects?<br><br>(Current N-Alliance Points: $(0))
+MagMenu_Appearance_Title - Change Alliance Mag Form <pict reb_team>
+MagMenu_Appearance_SubTitle_L - Mag Form
+MagMenu_Appearance_SubTitle_R - Required N-Alliance Points
+MagMenu_Appearance_Preview_Title - New Form
+MagMenu_Appearance_Confirm - Change the appearance of your Mag for $(1)<pict 4space><pict reb_team><br>N-Alliance Points?<br><br>(Current N-Alliance Points: $(0)<pict 4space><pict reb_team>)<br><br><yellow>N-Alliance Points will be spent every time the appearance is changed.<c>
+MagMenu_Message_Loading - Loading...
+MagMenu_Message_Busy - Transmitting...
+MagMenu_Success_Boost - Alliance Mag Boost Effect applied.
+MagMenu_Success_Give - Alliance Mag Boost Level increased.
+MagMenu_Success_Appearance - Alliance Mag form changed.
+MagMenu_Success_Reward - Boost Reward received.
+MagMenu_Failed_Reward - Boost Reward not received.
+MagMenu_Error_Generic - Failed to process Alliance Mag.
+MagMenu_Error_Generic_Error - Failed to execute due to an error.
+MagMenu_Error_Generic_Authority - You do not have permission to use this.
+MagMenu_Error_Boost - Unable to receive Alliance Mag Boost.
+MagMenu_Error_UseGeneratePoint - Not enough Genesis Points.
+MagMenu_Error_Diff - The Alliance Mag Boost Level has been changed. Cancelled.
+MagMenu_Error_Appearance - Unable to change Alliance Mag form.
+MagMenu_Error_Appearance_TP - Not enough N-Alliance Points.
+MagMenu_Error_Appearance_Equal - You have selected the current form.
+MagMenu_Error_Appearance_Simultaneous - The Mag form has been changed by another player. Cancelled.
+MagMenu_Error_Give - Alliance Mag Boost Level Up failed.
+MagMenu_Error_Give_Full - Alliance Mag Boost at max level.
+MagMenu_Error_Give_Diff - The Alliance Mag Boost Level has been changed by another player. Cancelled.
+
+
+MagName
+Group 0
+0000 - チームマグ
+0001 - チームマグCV
+0002 - チームマグCV2
+0003 - チームマグCV3
+0004 - チームマグUC
+0005 - チームマグUC2
+0006 - チームマグUC3
+
+Group 1
+0000 - Alliance Mag
+0001 - Alliance Mag CV
+0002 - Alliance Mag CV2
+0003 - Alliance Mag CV3
+0004 - Alliance Mag UC
+0005 - Alliance Mag UC2
+0006 - Alliance Mag UC3
+
+

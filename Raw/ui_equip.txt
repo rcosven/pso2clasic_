@@ -1,5 +1,5 @@
-ui_equip.text was created: 04-07-2026 7:34:31
-Filesize is: 12576 bytes
+ui_equip.text was created: 04-07-2026 10:44:40
+Filesize is: 16080 bytes
 
 Accessories
 Group 0
@@ -19,20 +19,20 @@ AccessoryTab_Other - その他
 AccessoryTab_Favorite - お気に入り
 
 Group 1
-Accessories_Name1 - Accessory 1
-Accessories_Name2 - Accessory 2
-Accessories_Name3 - Accessory 3
-Accessories_Name4 - Accessory 4
-Accessories_FormTitle - ACCESSORIES
-List_FormTitle - ACCESSORY LIST
-NoAccessoriesMessage - No Accessories
-Remove - Remove
-AccessoryTab_All - All Accessories
-AccessoryTab_Hat - Upper Head
-AccessoryTab_Glasses - Mid-Head
-AccessoryTab_HeadAll - Minor Head Accessories
-AccessoryTab_Other - Other
-AccessoryTab_Favorite - Favorites
+Accessories_Name1 - Accesorio 1
+Accessories_Name2 - Accesorio 2
+Accessories_Name3 - Accesorio 3
+Accessories_Name4 - Accesorio 4
+Accessories_FormTitle - ACCESORIOS
+List_FormTitle - LISTA DE ACCESORIOS
+NoAccessoriesMessage - Sin accesorios
+Remove - Eliminar
+AccessoryTab_All - Todos los accesorios
+AccessoryTab_Hat - Cabeza superior
+AccessoryTab_Glasses - media cabeza
+AccessoryTab_HeadAll - Accesorios para cabeza menores
+AccessoryTab_Other - Otro
+AccessoryTab_Favorite - Favoritos
 
 
 Fashion
@@ -91,16 +91,16 @@ info_15 - 15
 info_16 - 16
 info_17 - 17
 info_18 - 18
-info_Teeth - 歯
-info_Horn - 角
-info_Ear - 耳
-info_Skin - 肌
 info_Face - 顔
 info_Eye - 瞳
 info_EyeR - 瞳右
 info_EyeL - 瞳左
 info_Eyebrow - まゆ
 info_Eyelash - まつげ
+info_Teeth - 歯
+info_Horn - 角
+info_Ear - 耳
+info_Skin - 肌
 Title_HairStyle - ヘアスタイル一覧
 Title_HeadParts - ヘッドパーツ一覧
 Title_BodyPaint - ボディペイント一覧
@@ -131,7 +131,7 @@ Body_display_3 - 優先度3
 MoveMotion_1 - 二足歩行
 MoveMotion_2 - ホバー
 Fashion_OtherFashion - ブックマーク
-PageSwitch_PC - <%NextTabDetails>で切替
+PageSwitch_PC - <%NextTabDetails><pict 4space>で切替
 PageSwitch_Vita - <pict Sign_TRIANGLE>切替
 Error_Title - エラー
 Error_ImproperData_LoadMyFashion - この保存データは問題があるため<br>適用できません。<br><br>当該データをエステで修正するか<br>他のデータで上書き、もしくは削除してください。
@@ -140,7 +140,6 @@ FashionTab_New_Base - N-ベースウェア
 FashionTab_Base - ベースウェア
 FashionTab_New_Inner - N-インナーウェア
 FashionTab_Inner - インナーウェア
-Fashion_Incompatible - 非対応
 FashionTab_New_Body - N-ボディ
 FashionTab_Body - ボディ
 FashionTab_New_Arms - N-アーム
@@ -149,44 +148,61 @@ FashionTab_New_Legs - N-レッグ
 FashionTab_Legs - レッグ
 FashionTab_New_Outer - N-アウターウェア
 FashionTab_Outer - アウターウェア
+Fashion_Incompatible - 非対応
+info_title_Motion - モーション変更
+info_Motion_Wait - 待機
+info_Motion_Run - 移動
+info_Motion_Jump - ジャンプ
+info_Motion_Landing - 着地
+info_Motion_Dash - ダッシュ
+info_Motion_Glide - グライド
+info_Motion_Swim - 泳ぐ
+Fashion_Visibility - 装飾の表示設定
+Motion_Change_Item - モーション変更
+Motion_Change_Title - モーション変更［$(0)/$(1)］
+Motion_List_Title - モーション一覧［$(0)/$(1)］
+Motion_Change_All - すべてのモーション
+Motion_Change_None - モーションがありません
+Collabo_Equipped - <pict collab_icon><pict 4space><yellow>イベント応募対象外アイテムあり<c>
+With_NewIcon - $(0)<pict 4space><pict New>
 
 Group 1
-Fashion_Title - CUSTOMIZE LOOKS
-Fashion_Title2 - LOOK BREAKDOWN
-Fashion_HairStyle - Select Hairstyle
-Fashion_HeadParts - Select Head Parts
-Fashion_BodyPaint - Select Body Paint
-Fashion_Costume - Select Outfit
-Fashion_Body - Select Body
-Fashion_Arm - Select Arms
-Fashion_Leg - Select Legs
-Fashion_BaseWear - Select Basewear
-Fashion_InnerWear - Select Innerwear
-Fashion_OuterWear - Select Outerwear
-Fashion_Acc - Change Accessories
-Fashion_PaintPriority - Body Paint Priority
-Fashion_SwordPosition - Sheathe Position
-Fashion_MoveMotion - Movement Type
-Fashion_MyFashion - Looks
-Item_Motion_Leg - Bipedal Walk
-Item_Motion_Hover - Hover
-info_title_Hair - HAIRSTYLES / HEAD PARTS
-info_title_Body - BODY PAINT
-info_title_Costume - OUTFITS
-info_title_Parts - PARTS
-info_title_Layer - LAYERS
-info_title_Acc - ACCESSORIES
-info_title_Face - FACE
-info_title_Make - MAKEUP PATTERN
-info_title_Sticker - STICKERS
-info_Hair - Head
-info_Body - Body
-info_Arm - Arms
-info_Leg - Legs
-info_Costume - Clothing
-info_Outer - Outer
+Fashion_Title - PERSONALIZAR MIRADAS
+Fashion_Title2 - MIRAR DESGLOSE
+Fashion_HairStyle - Seleccionar peinado
+Fashion_HeadParts - Seleccionar partes de la cabeza
+Fashion_BodyPaint - Seleccionar pintura corporal
+Fashion_Costume - Seleccionar vestimenta
+Fashion_Body - Seleccionar cuerpo
+Fashion_Arm - Seleccionar brazos
+Fashion_Leg - Seleccionar piernas
+Fashion_BaseWear - Seleccionar ropa básica
+Fashion_InnerWear - Seleccionar ropa interior
+Fashion_OuterWear - Seleccionar ropa exterior
+Fashion_Acc - Cambiar accesorios
+Fashion_PaintPriority - Prioridad de pintura corporal
+Fashion_SwordPosition - Posición de la funda
+Fashion_MoveMotion - Tipo de movimiento
+Fashion_MyFashion - Aspecto
+Item_Motion_Leg - Caminata bípeda
+Item_Motion_Hover - Flotar
+info_title_Hair - PEINADOS/PARTES DE LA CABEZA
+info_title_Body - PINTURA CORPORAL
+info_title_Costume - TRAJES
+info_title_Parts - REGIONES
+info_title_Layer - CAPAS
+info_title_Acc - ACCESORIOS
+info_title_Face - ROSTRO
+info_title_Make - PATRÓN DE MAQUILLAJE
+info_title_Sticker - PEGATINAS
+info_Hair - Cabeza
+info_Body - Cuerpo
+info_Arm - Brazos
+info_Leg - Piernas
+info_Costume - Ropa
+info_Outer - Exterior
 info_Base - Base
-info_Inner - Innerwear
+info_Inner - ropa interior
 info_1 - 1
 info_2 - 2
 info_3 - 3
@@ -205,69 +221,86 @@ info_15 - 15
 info_16 - 16
 info_17 - 17
 info_18 - 18
-info_Teeth - Teeth
-info_Horn - Horns
-info_Ear - Ears
-info_Skin - Skin
-info_Face - Face
-info_Eye - Eyes
-info_EyeR - Right Iris
-info_EyeL - Left Iris
-info_Eyebrow - Eyebrows
-info_Eyelash - Eyelashes
-Title_HairStyle - Hairstyle List
-Title_HeadParts - Head Parts List
-Title_BodyPaint - Body Paint List
-Title_Body - Body List
-Title_Arm - Arms List
-Title_Leg - Legs List
-Title_Costume - Outfits List
-Title_Outer - Outerwear List
-Title_Base - Basewear List
-Title_Inner - Innerwear List
-NoMessage - No Items
-FashionTab_All - All
-FashionTab_Favorite - Favorites
-NoItemMsg - None
-NoOuterItemMsg - No Outerwear
+info_Face - Rostro
+info_Eye - Ojos
+info_EyeR - iris derecho
+info_EyeL - iris izquierdo
+info_Eyebrow - Cejas
+info_Eyelash - Pestañas
+info_Teeth - Dientes
+info_Horn - Cuerna
+info_Ear - Orejas
+info_Skin - Piel
+Title_HairStyle - Lista de peinados
+Title_HeadParts - Lista de piezas del cabezal
+Title_BodyPaint - Lista de pintura corporal
+Title_Body - Lista de cuerpos
+Title_Arm - Lista de armas
+Title_Leg - Lista de piernas
+Title_Costume - Lista de trajes
+Title_Outer - Lista de ropa exterior
+Title_Base - Lista de ropa base
+Title_Inner - Lista de ropa interior
+NoMessage - Sin artículos
+FashionTab_All - Todo
+FashionTab_Favorite - Favoritos
+NoItemMsg - Ninguno
+NoOuterItemMsg - Sin ropa exterior
 InvalidHyphen - -
-Body_Name1 - Body Paint 1
-Body_Name2 - Body Paint 2
-Body_FormTitle - BODY PAINT
-Body_List_FormTitle - BODY PAINT LIST
-NoAccessoriesMessage - No Body Paint
-Remove - Remove
-Favorite_Add - Register to Favorites
-Favorite_Delete - Delete from Favorites
-Body_display_1 - Priority 1
-Body_display_2 - Priority 2
-Body_display_3 - Priority 3
-MoveMotion_1 - Bipedal Walk
-MoveMotion_2 - Hover
-Fashion_OtherFashion - Bookmarks
-PageSwitch_PC - <%NextTabDetails> to Switch
-PageSwitch_Vita - Switch <pict Sign_TRIANGLE>
+Body_Name1 - Pintura corporal 1
+Body_Name2 - pintura corporal 2
+Body_FormTitle - PINTURA CORPORAL
+Body_List_FormTitle - LISTA DE PINTURA CORPORAL
+NoAccessoriesMessage - Sin pintura corporal
+Remove - Eliminar
+Favorite_Add - Regístrate en Favoritos
+Favorite_Delete - Eliminar de favoritos
+Body_display_1 - Prioridad 1
+Body_display_2 - Prioridad 2
+Body_display_3 - Prioridad 3
+MoveMotion_1 - Caminata bípeda
+MoveMotion_2 - Flotar
+Fashion_OtherFashion - Marcadores
+PageSwitch_PC - <%NextTabDetails> para cambiar
+PageSwitch_Vita - Cambiar <pict Sign_TRIANGLE>
 Error_Title - Error
-Error_ImproperData_LoadMyFashion - Could not apply due to an issue with the save data.<br><br>Either edit the corresponding Salon Data, save over existing<br>data with other data, or delete the data.
-Error_ImproperData_SaveMyFashion - Could not save Ensembles due to an issue with current<br>appearance data.<br><br>Apply other data, or make edits at the Salon.
-FashionTab_New_Base - N- Basewear
-FashionTab_Base - Basewear
-FashionTab_New_Inner - N- Innerwear
-FashionTab_Inner - Innerwear
-Fashion_Incompatible - Not Supported
-FashionTab_New_Body - N-Body
-FashionTab_Body - Body
-FashionTab_New_Arms - N-Arms
-FashionTab_Arms - Arms
-FashionTab_New_Legs - N-Legs
-FashionTab_Legs - Legs
-FashionTab_New_Outer - N-Outerwear
-FashionTab_Outer - Outerwear
+Error_ImproperData_LoadMyFashion - Además de los datos del salón, guarde los datos<br>existentes con otros datos o elimine los datos.
+Error_ImproperData_SaveMyFashion - No se pudieron guardar conjuntos debido a un problema con los datos de apariencia actuales de <br>.<br><br> Aplicar otros datos o realizar ediciones en el Salón.
+FashionTab_New_Base - N-Ropa base
+FashionTab_Base - Ropa básica
+FashionTab_New_Inner - N-ropa interior
+FashionTab_Inner - ropa interior
+FashionTab_New_Body - N-cuerpo
+FashionTab_Body - Cuerpo
+FashionTab_New_Arms - N-brazos
+FashionTab_Arms - Brazos
+FashionTab_New_Legs - N-piernas
+FashionTab_Legs - Piernas
+FashionTab_New_Outer - N-ropa exterior
+FashionTab_Outer - Ropa de calle
+Fashion_Incompatible - No compatible
+info_title_Motion - Cambiar mociones
+info_Motion_Wait - Inactivo
+info_Motion_Run - Mover
+info_Motion_Jump - Saltar
+info_Motion_Landing - Aterrizaje
+info_Motion_Dash - Estrellarse
+info_Motion_Glide - Planeo
+info_Motion_Swim - Nadar
+Fashion_Visibility - Configuración de visualización de adornos
+Motion_Change_Item - Cambiar mociones
+Motion_Change_Title - Cambiar mociones [$(0)/$(1)]
+Motion_List_Title - Cambiar mociones [$(0)/$(1)]
+Motion_Change_All - Todas las mociones
+Motion_Change_None - Sin mociones
+Collabo_Equipped - <pict collab_icon><pict 4space><yellow> Contiene elementos que no se pueden enviar <c>
+With_NewIcon - $(0)<pict 4space><pict New>
 
 
 FashionCat
 Group 0
 TopMenuTitle - コーデカタログ
+TopMenuTwolineGuide - 自分のコーデを登録したり、ほかのプレイヤーのコーデを閲覧できます。また、“ファッション情報”から、気に入ったアイテムを“ほしい物リスト”に登録できます。
 TopMenuItem_Ranking - みんなのコーデを見る
 TopMenuItem_Search - みんなのコーデから検索
 TopMenuItem_Posting - 自分のコーデを登録
@@ -283,29 +316,18 @@ BackButton - 戻る
 
 Group 1
 TopMenuTitle - LOOKBOOK
-TopMenuItem_Ranking - View Player Looks
-TopMenuItem_Search - Search Player Looks
-TopMenuItem_Posting - Register Looks
-TopMenuItem_Confirm - Confirm Registered Looks
-TopMenuItem_ConfirmNiceCnt - Confirm Registered Looks ($(0))
-TopMenuItem_ConfirmNiceCntStop - Confirm Registered Looks (99+)
-TopMenuItem_Release - Remove Registration
-TopMenuItem_Back - Back
-TitleProfile - LOOK INFORMATION
-LikeButton - Like
-RegistButton - Add Bookmark
-BackButton - Back
-
-
-Common
-Group 0
-
-Group 1
-
-
-Palette
-Group 0
-
-Group 1
+TopMenuTwolineGuide - Guarde sus propios looks y vea los looks de otros jugadores. También puede agregar artículos del Desglose de apariencia a su Lista de artículos buscados.
+TopMenuItem_Ranking - Ver apariencias de jugadores
+TopMenuItem_Search - Buscar apariencias de jugadores
+TopMenuItem_Posting - Registrarse
+TopMenuItem_Confirm - Confirmar looks registrados
+TopMenuItem_ConfirmNiceCnt - Confirmar looks registrados ($(0))
+TopMenuItem_ConfirmNiceCntStop - Confirmar looks registrados (99+)
+TopMenuItem_Release - Eliminar registro
+TopMenuItem_Back - Atrás
+TitleProfile - MIRAR INFORMACIÓN
+LikeButton - Como
+RegistButton - Agregar marcador
+BackButton - Atrás
 
 

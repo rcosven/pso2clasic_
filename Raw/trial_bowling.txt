@@ -1,0 +1,27 @@
+trial_bowling.text was created: 04-07-2026 10:44:41
+Filesize is: 2000 bytes
+
+common
+Group 0
+TrialName - 寒冷地エネミー討伐
+TrialBeginMsg - フローティングボードを活用し、出現したエネミーを倒せ！
+TrialAbstract - エネミーを倒す
+
+Group 1
+TrialName - Supresión del enemigo de la tundra
+TrialBeginMsg - ¡Usa el tablero flotante y derrota a los enemigos!
+TrialAbstract - Derrota a los enemigos.
+
+
+type103
+Group 0
+NpcComOnBegin - /voice11_voice_navi002_trial_0001_012 周囲にエネミー群の反応あり。<br>周囲のボードターミナルから、フローティングボードが使えそうです。
+NpcComOnSuccess - /voice11_voice_navi002_trial_0001_064 エネミーの殲滅を確認。<br>対応、ありがとうございます。
+NpcComOnFailure - /voice11_voice_navi002_trial_0001_072 エネミーの撤退を確認。<br>次の目標に向かってください。
+
+Group 1
+NpcComOnBegin - /voice11_voice_navi002_trial_0001_012 There's an enemy force reading in the area. It looks like floating boards are available for use at a nearby terminal.
+NpcComOnSuccess - /voice11_voice_navi002_trial_0001_064 Enemy eradication confirmed.<br>Thanks for your support.
+NpcComOnFailure - /voice11_voice_navi002_trial_0001_072 Enemy retreat confirmed. Please proceed to the next target.
+
+

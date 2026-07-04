@@ -1,0 +1,14 @@
+﻿section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+Basic,0,Title,ドライゼンプラント迎撃戦
+Basic,0,Explanation,ドライゼンプラントで、複数の強力な時空振動が確認された。<br>反応の大きさから、多数の統制型ドールズの現出が見込まれる。<br>アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。
+Basic,1,Title,Intercepción de la planta Dreisen
+Basic,1,Explanation,Le ordena a las unidades DOLLS que estén allí.<br>Necesitamos que todos los defensores de ARKS se apresuren al punto designado y derroten al enemigo.
+FailureCondition,0,f0,40回戦闘不能になる<br>制限時間が経過する
+FailureCondition,1,f0,Quedar incapacitado 40 veces<br>Exceder el límite de tiempo
+QuestTarget,0,SimpleExplanation,全てのエネミーを撃破せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota a todos los enemigos!
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota al enemigo objetivo

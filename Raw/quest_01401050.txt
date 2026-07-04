@@ -1,0 +1,57 @@
+quest_01401050.text was created: 04-07-2026 10:44:42
+Filesize is: 1840 bytes
+
+AreaName
+Group 0
+Area0S - 星崩の猛攻：Stage.6
+Area0L - 星崩の猛攻：Stage.6
+
+Group 1
+Area0S - Golpe de caída del planeta: etapa 6
+Area0L - Golpe de caída del planeta: etapa 6
+
+
+Basic
+Group 0
+Title - 星崩の猛攻：Stage.6
+Explanation - これは、能力を認められたアークスへの討伐依頼である。<br>戦闘技術を駆使して、強力なエネミーを単独で撃破せよ。
+
+Group 1
+Title - Golpe de caída del planeta: etapa 6
+Explanation - 甀猀攀 漀昀 礀漀甀爀 戀愀琀琀氀攀 猀欀椀氀氀猀 琀漀 搀攀昀攀愀琀 愀 瀀漀眀攀爀昀甀氀 攀渀攀洀礀 漀渀 礀漀甀爀 漀眀渀⸀
+
+
+FailureCondition
+Group 0
+f0 - 10:00以上経過する
+f4 - 7:00以上経過する
+
+Group 1
+f0 - El tiempo supera las 10:00
+f4 - El tiempo supera las 7:00
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 対象エネミーの撃破
+
+Group 1
+SimpleExplanation - Derrota al enemigo objetivo
+
+
+SuccessCondition
+Group 0
+s0 - 対象エネミーの撃破
+
+Group 1
+s0 - Derrota al enemigo objetivo
+
+
+TrialBeginDetail
+Group 0
+normalMsg_1400000 - 対象エネミーの撃破
+
+Group 1
+normalMsg_1400000 - Derrota al enemigo objetivo
+
+

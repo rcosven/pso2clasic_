@@ -1,0 +1,47 @@
+qst_1200000000.text was created: 04-07-2026 10:44:42
+Filesize is: 2096 bytes
+
+MainText
+Group 0
+name010 - アイナ
+text010 - あたしたちの町に案内するね。<br>詳しい話はそこで。
+text020 - 向こうの崖まで、歩いて行けるかな？
+
+Group 1
+name010 - Aina
+text010 - C'mon! I'll show you to our town! We can talk more there.
+text020 - Do you think you can make it to the cliff?
+
+
+GuideText
+Group 0
+Text_Move_Pad - 移動：
+Text_Move_Key - 前後移動：
+Text_Move_Key2 - 左右移動：
+Text_Jump - ジャンプ：
+Text_DoubleJump - 二段ジャンプ：
+Text_Sight - カメラ操作：
+Button_Move_Pad - <swguidetype T_Moveguide_l>
+Button_Move_Key - <%MoveForward><pict 4space><%MoveBack>
+Button_Move_Key2 - <%MoveLeft><pict 4space><%MoveRight>
+Button_Jump - <%Jump>
+Button_DoubleJump - <%Jump><pict 4space>の後に再度<pict 4space><%Jump>
+Button_Sight_Pad - <swguidetype T_Moveguide_r>
+Button_Sight_Key - マウス移動
+
+Group 1
+Text_Move_Pad - Move: 
+Text_Move_Key - Move Forwards/Backwards: 
+Text_Move_Key2 - Move Left/Right: 
+Text_Jump - Jump: 
+Text_DoubleJump - Double Jump: 
+Text_Sight - Camera Control: 
+Button_Move_Pad - <swguidetype T_Moveguide_l>
+Button_Move_Key - <%MoveForward><pict 4space><%MoveBack>
+Button_Move_Key2 - <%MoveLeft><pict 4space><%MoveRight>
+Button_Jump - <%Jump>
+Button_DoubleJump - <%Jump><pict 4space>and then<pict 4space><%Jump> again.
+Button_Sight_Pad - <swguidetype T_Moveguide_r>
+Button_Sight_Key - Move Mouse
+
+

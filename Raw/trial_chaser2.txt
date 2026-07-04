@@ -1,0 +1,48 @@
+trial_chaser2.text was created: 04-07-2026 10:44:41
+Filesize is: 4544 bytes
+
+common
+Group 0
+TrialName - ギルーヴァ陽動
+TrialBeginMsg - 出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
+TrialAbstract - ギルーヴァコアをすべて破壊し<br>レパルスウェッジでギルーヴァを倒す
+TrialName2 - ギルーヴァ陽動
+TrialBeginMsg2 - 出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
+TrialAbstract2 - レパルスウェッジでギルーヴァを倒す<br>獲得能力強化：<br>$(0)
+OnCoreBreak - $(0)がギルーヴァコアを破壊しました。
+
+Group 1
+TrialName - Desvío Giruva
+TrialBeginMsg - ¡Destruye todos los núcleos de Giruva y derrota a Giruva!<br>En la prueba exitosa: Gana $(0)
+TrialAbstract - Destruye todos los núcleos de Giruva y derrota al Giruva<br>usando la cuña repulsora.
+TrialName2 - Desvío Giruva
+TrialAbstract2 - Derrota al Giruva usando la cuña repulsora.<br>Mejora de habilidad:<br>$(0)
+OnCoreBreak - $(0) destruyó un Giruva Core.
+
+
+type103
+Group 0
+NpcComOnBegin - ギルーヴァの出現を確認。<br>特定のアークスを追走してきます。警戒してください。
+NpcComOnBegin2 - 対ギルーヴァ用兵装の転送が阻害されています……。<br>出現したギルーヴァコアをすべて破壊してください。
+NpcComOn30SecOver - ギルーヴァへの対抗兵装が転送できません。<br>ギルーヴァコアをすべて破壊してください。
+NpcComOnTargeted - /atime-2 ギルーヴァの標的になっています！<br>攻撃範囲外に退避してください。
+NpcComOnTargetedFinish - /atime-2 ギルーヴァの追跡対象から外れました。<br>ギルーヴァコアへの対応をお願いします。
+NpcComOnFirstCoreBreak - ギルーヴァコアの破壊を確認。<br>その調子で、残りもお願いします。
+NpcComOnObjectAppear - すべてのギルーヴァコアの破壊を確認。<br>セクターC-3に、対ギルーヴァ用兵装を転送しました。
+NpcComOnNoDamage30Sec - セクターC-3に、対ギルーヴァ用兵装を転送しました。<br>その“レパルスウェッジ”で、ギルーヴァを攻撃してください。
+NpcComOnSuccess - ギルーヴァの撃退を確認。<br>次の目標に向かってください。
+NpcComOnFailure - ギルーヴァが撤退……。<br>次の目標に向かってください。
+
+Group 1
+NpcComOnBegin - Giruva presence confirmed.<br>It will target and pursue a specific ARKS Defender. Be on alert.
+NpcComOnBegin2 - Deployment of the counter-Giruva weapon is being impeded...<br>Destroy all the Giruva Cores.
+NpcComOn30SecOver - Unable to deploy counter-Giruva weapon.<br>Please destroy all Giruva Cores.
+NpcComOnTargeted - /atime-2 Giruva is targeting you!<br>Get out of its attack range!
+NpcComOnTargetedFinish - /atime-2 Giruva is no longer targeting you.<br>Now focus on the Giruva Cores.
+NpcComOnFirstCoreBreak - Giruva Core destroyed.<br>Keep going until they're all gone.
+NpcComOnObjectAppear - All Giruva Cores destroyed.<br>Deploying counter-Giruva weapon to Sector C-3.
+NpcComOnNoDamage30Sec - Counter-Giruva weapon deployed to Sector C-3.<br>Use the Repulsor Wedge to attack it.
+NpcComOnSuccess - Giruva threat eliminated.<br>Please head to the next objective.
+NpcComOnFailure - The Giruva has retreated....<br>Please head to the next objective.
+
+

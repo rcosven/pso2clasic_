@@ -1,0 +1,47 @@
+quest_01180490.text was created: 04-07-2026 10:44:40
+Filesize is: 1824 bytes
+
+AreaName
+Group 0
+Area0S - 顕現せし偽りの覇者【敗者】
+Area0L - 顕現せし偽りの覇者【敗者】
+
+Group 1
+Area0S - Lutero, manifiesto del falso conquistador
+Area0L - Lutero, manifiesto del falso conquistador
+
+
+Basic
+Group 0
+Title - 顕現せし偽りの覇者【敗者】
+Explanation - 西クヴァリス周辺に、超巨大な反応を確認。<br>報告によると、“ルイノ・ルーサー”に近似したデータが示されている。<br>アークス各員は、当該ポイントに急行し、迫りくる脅威を殲滅せよ。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+
+Group 1
+Title - Lutero, manifiesto del falso conquistador
+Explanation - 渀漀琀 瀀愀爀琀椀挀椀瀀愀琀攀 ⸀㰀挀㸀
+
+
+QuestTarget
+Group 0
+SimpleExplanation - ルイノ・ルーサーを倒す
+
+Group 1
+SimpleExplanation - Derrota a la ruina de Lutero
+
+
+SuccessCondition
+Group 0
+s0 - 対象エネミーの撃破
+
+Group 1
+s0 - Derrota a los enemigos objetivo.
+
+
+FailureCondition
+Group 0
+f0 - ５回戦闘不能になる<br>制限時間が経過する
+
+Group 1
+f0 - Quedar incapacitado 5 veces<br>Exceder el límite de tiempo
+
+

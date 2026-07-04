@@ -1,0 +1,73 @@
+trial_god3.text was created: 04-07-2026 10:44:41
+Filesize is: 4016 bytes
+
+common
+Group 0
+TrialName_1Enemy - $(0)討伐
+TrialBeginMsg_1Enemy - 出現した$(0)を倒せ！
+TrialAbstract_1Enemy - $(0)を倒す
+TrialName_Multi - エネミー討伐
+TrialBeginMsg_Multi - 出現したエネミーを倒せ！
+TrialAbstract_Multi - エネミーを倒す
+Line_HelpEventManonAndAina - 戦闘支援（アイナ＆マノン）<br>移動速度上昇<br>攻撃力上昇
+Line_HelpEventNadereh - 戦闘支援（ナーデレフ）<br>エネミーの防御力低下<br>ダーレットの動作停止
+Line_HelpEventIlma - 戦闘支援（イルマ）<br>攻撃命中時に追加攻撃発生
+Line_HelpEventGlen - 戦闘支援（グレン）<br>PP自然回復量増加
+
+Group 1
+TrialName_1Enemy - $(0) Supresión
+TrialBeginMsg_1Enemy - ¡Derrota a los $(0)!
+TrialAbstract_1Enemy - Derrota al $(0).
+TrialName_Multi - Supresión enemiga
+TrialBeginMsg_Multi - ¡Derrota a los enemigos!
+TrialAbstract_Multi - Derrota a los enemigos.
+Line_HelpEventManonAndAina - Apoyo de combate (Aina y Manon)<br>Velocidad de movimiento aumentada<br>Ataque aumentado
+Line_HelpEventNadereh - Apoyo de combate (Nadereh)<br>Disminución de la defensa enemiga<br>Movimiento de Darlett detenido
+Line_HelpEventIlma - Apoyo de combate (Ilma)<br>El ataque de seguimiento ocurre cuando das un golpe
+Line_HelpEventGlen - Apoyo de combate (Glen)<br>Mayor recuperación natural de PP
+
+
+type100
+Group 0
+NpcComGod3ManonHelpEvent01 - /voicemsc_020060_0370 なんとか、調整が間に合ったわね。
+
+Group 1
+NpcComGod3ManonHelpEvent01 - /voicemsc_020060_0370 You got it worked out just in time.
+
+
+type101
+Group 0
+NpcComGod3AinaHelpEvent01 - /voicemsc_020060_0360 こちらアイナ。<br>これから、支援するよ！
+
+Group 1
+NpcComGod3AinaHelpEvent01 - /voicemsc_020060_0360 This is Aina. Moving to support!
+
+
+type109
+Group 0
+NpcComGod3Nadereh01 - /voicemsc_020060_0380 どうやら私の出番のようだな。
+
+Group 1
+NpcComGod3Nadereh01 - /voicemsc_020060_0380 Time for me to make my appearance.
+
+
+type110
+Group 0
+NpcComGod3IlmaHelpEvent01 - /voicemsc_020060_0390 よし、僕も援護するよ。
+NpcComGod3IlmaHelpEvent02 - /voicemsc_020060_0400 ちゃんとテストしてないけど、<br>たぶん大丈夫なはず……。
+
+Group 1
+NpcComGod3IlmaHelpEvent01 - /voicemsc_020060_0390 ¡Me voy!
+NpcComGod3IlmaHelpEvent02 - /voicemsc_020060_0400 Nunca lo hemos probado, pero debería estar bien...
+
+
+type111
+Group 0
+NpcComGod3Glen01 - /voicemsc_020060_0410 これより、支援を行う。
+NpcComGod3Glen02 - /voicemsc_020060_0420 我々のぶんまで、頼んだぞ。
+
+Group 1
+NpcComGod3Glen01 - /voicemsc_020060_0410 Me mudo al soporte.
+NpcComGod3Glen02 - /voicemsc_020060_0420 Púlsalo una vez por nosotros también.
+
+

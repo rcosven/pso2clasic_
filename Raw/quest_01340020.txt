@@ -1,0 +1,55 @@
+quest_01340020.text was created: 04-07-2026 10:44:40
+Filesize is: 1808 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+
+Group 1
+a1 - Completar un pedido de cliente especial
+a2 - Completar un pedido de cliente especial
+a3 - Poseer un permiso de dificultad súper difícil
+
+
+AreaName
+Group 0
+
+Group 1
+
+
+Basic
+Group 0
+Title - 旧跡の迎撃戦
+Explanation - ベルガナ遺跡で、複数の強力な時空振動が確認された。<br>反応の大きさから、多数の統制型ドールズの現出が見込まれる。<br>アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。
+
+Group 1
+Title - Una intercepción de ruinas
+Explanation - enemigo.
+
+
+QuestTarget
+Group 0
+SimpleExplanation - 全てのエネミーを撃破せよ！
+
+Group 1
+SimpleExplanation - ¡Derrota a todos los enemigos!
+
+
+SuccessCondition
+Group 0
+s0 - 対象エネミーの撃破
+
+Group 1
+s0 - Derrota al enemigo objetivo
+
+
+FailureCondition
+Group 0
+f0 - 40回戦闘不能になる<br>制限時間が経過する
+
+Group 1
+f0 - Quedar incapacitado 40 veces<br>Exceder el límite de tiempo
+
+

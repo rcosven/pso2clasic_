@@ -69,6 +69,7 @@ Date,1,Short_November,Nov
 Date,1,Short_December,Dic
 Time,0,TimeCountSec,$(0)秒
 Time,0,TimeCount,$(0):$(1)
+Time,0,TimeCountHour,$(0):$(1):$(2)
 Time,0,TimeHour,$(0)時$(1)分
 Time,0,TimeHourJust,$(0)時
 Time,0,TimeDayOfHour,$(1)$(0)
@@ -83,24 +84,37 @@ Time,0,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
 Time,0,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
 Time,0,EmptyDateTime,--年--月--日--時--分
 Time,0,Period,$(0)時間$(1)分
-Time,0,PeriodMin,$(分間
+Time,0,PeriodMin,$(0)分間
+Time,0,PeriodDay,$(0)日$(1)時間$(2)分
 Time,0,LeaveHour,$(0)時間$(1)分
-LeaveMin -,1,TimeCountSec,$(0) seg.
-LeaveMin -,1,TimeCount,$(0):$(1)
-LeaveMin -,1,TimeHour,$(0):$(1)
-LeaveMin -,1,TimeHourJust,$(0):$(1)
-LeaveMin -,1,TimeDayOfHour,$(1) en $(0)
-LeaveMin -,1,Time,$(0):$(1)
-LeaveMin -,1,TimeSec,$(0):$(1):$(2)
-LeaveMin -,1,UtcYmdt_MonthDay,"$(1):$(2), $(3) $(0)"
-LeaveMin -,1,UtcYmdt_YearMonthDay,"$(1):$(2), $(3) $(0), $(4)"
-LeaveMin -,1,DateTime,$(3)-$(0)-$(4) $(1):$(2)
-LeaveMin -,1,DateTime_v,$(3)/$(0)/$(4) $(1):$(2)
-LeaveMin -,1,DateTimeSec,$(5)-$(3)-$(0). $(1):$(2):$(4)
-LeaveMin -,1,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
-LeaveMin -,1,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
-LeaveMin -,1,EmptyDateTime,"-- --, -- --:--"
-LeaveMin -,1,Period,$(0)h $(1)m
-LeaveMin -,1,PeriodMin,$(0) millones
-LeaveMin -,1,LeaveHour,$(0)h $(1)m
-LeaveMin -,1,LeaveMin,$(0) millones
+Time,0,LeaveMin,$(0)分
+Time,0,LeaveDay,$(0)日$(1)時間$(2)分
+Time,0,hyphen,--
+Time,0,LeaveTime,あと$(0)
+Time,0,LeaveDayOnly,$(0)
+LeaveHourOnly -,1,TimeCountSec,$(0) seg.
+LeaveHourOnly -,1,TimeCount,$(0):$(1)
+LeaveHourOnly -,1,TimeCountHour,$(0):$(1):$(2)
+LeaveHourOnly -,1,TimeHour,$(0):$(1)
+LeaveHourOnly -,1,TimeHourJust,$(0):$(1)
+LeaveHourOnly -,1,TimeDayOfHour,$(1) en $(0)
+LeaveHourOnly -,1,Time,$(0):$(1)
+LeaveHourOnly -,1,TimeSec,$(0):$(1):$(2)
+LeaveHourOnly -,1,UtcYmdt_MonthDay,"$(1):$(2), $(3) $(0)"
+LeaveHourOnly -,1,UtcYmdt_YearMonthDay,"$(1):$(2), $(3) $(0), $(4)"
+LeaveHourOnly -,1,DateTime,$(3)-$(0)-$(4) $(1):$(2)
+LeaveHourOnly -,1,DateTime_v,$(3)/$(0)/$(4) $(1):$(2)
+LeaveHourOnly -,1,DateTimeSec,$(5)-$(3)-$(0). $(1):$(2):$(4)
+LeaveHourOnly -,1,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
+LeaveHourOnly -,1,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
+LeaveHourOnly -,1,EmptyDateTime,"-- --, -- --:--"
+LeaveHourOnly -,1,Period,$(0)horas. $(1)mínimo.
+LeaveHourOnly -,1,PeriodMin,$(0) minutos.
+LeaveHourOnly -,1,PeriodDay,$(0)d $(1)horas. $(2)mínimo.
+LeaveHourOnly -,1,LeaveHour,$(0)horas. $(1)mínimo.
+LeaveHourOnly -,1,LeaveMin,$(0) mín.
+LeaveHourOnly -,1,LeaveDay,$(0)d $(1)horas. $(2)mínimo.
+LeaveHourOnly -,1,hyphen,--
+LeaveHourOnly -,1,LeaveTime,$(0) restante
+LeaveHourOnly -,1,LeaveDayOnly,$(0)d
+LeaveHourOnly -,1,LeaveHourOnly,$(0)horas.

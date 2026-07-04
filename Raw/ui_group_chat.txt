@@ -1,5 +1,5 @@
-ui_group_chat.text was created: 04-07-2026 7:34:31
-Filesize is: 16560 bytes
+ui_group_chat.text was created: 04-07-2026 10:44:40
+Filesize is: 17760 bytes
 
 GroupChat
 Group 0
@@ -117,11 +117,11 @@ GroupChatTost_QuesInvitedCansel - $(1)の<br>「$(0)」への<br>招待を取り
 GroupChatTost_ButtonInvitedCansel - 招待を取り消す
 GroupChatTost_ToastInvitedCansel - 招待を取り消しました。
 GroupChatTost_ToastInvitedCansel1 - 選択したフレンドはすでにグループを登録しています。
-GroupChatTost_ToastInvitedCansel2 - 招待の取り消しができませんで
+GroupChatTost_ToastInvitedCansel2 - 招待の取り消しができませんでした
 
 Group 1
 GroupChat_Title - Group Chat
-GroupChat_SetMsg - You joined the chat
+GroupChat_SetMsg - Chat You've Joined
 GroupChat_NewMsg - Invite
 GroupChat_MakeGroup - Create Group
 GroupChat_NewNumMsg - Invited ($(0))
@@ -157,7 +157,7 @@ GroupChatError_RenameNGWordFault - The Group Name or Group Comments<br>have char
 GroupChatQues_Title - CONFIRM
 GroupChatQues_Banish - $(0) will be removed from the Group.<br><br>Are you sure you wish to proceed?
 GroupChatQues_Leader - $(0) will be the leader.<br><br>Are you sure you wish to proceed?
-GroupChatQues_Delete - You will leave "$(0)."<br><br><yellow>*After leaving, you must be re-invited to rejoin.<c><br><br>Are you sure you wish to proceed?
+GroupChatQues_Delete - You will leave "$(0)".<br><br><yellow>*After leaving, you must be re-invited to rejoin.<c><br><br>Are you sure you wish to proceed?
 GroupChatQC_Invite_Title - GROUP INVITE
 GroupChatQC_Invite_Mess - You received an invite from "$(0)" in $(1).<br>Would you like to open a reply window?<br><br>*You can also select [No] and send a reply later from<br>[Chat Settings] in the Main Menu.
 GroupChatQC_Join_Log - $(1) joined $(0).
@@ -165,12 +165,12 @@ NewGroupChat - New Group Invite
 NewExpGroupChat - You received a Group Invite.
 GroupChatTost_GroupList - Retrieving Group information.
 GroupChatTost_GroupCreate - You created a new Group.
-GroupChatTost_Delete - You left Group "$(0)."
+GroupChatTost_Delete - You left Group "$(0)".
 GroupChatTost_MemberList - Retrieving Member information.
 GroupChatTost_MemberInvite - You sent an invite to the selected Friend.
-GroupChatTost_MemberJoin - You joined Group "$(0)."
+GroupChatTost_MemberJoin - You joined Group "$(0)".
 GroupChatTost_MemberBanish - You removed $(0).
-GroupChatTost_GroupActive - Opening Group "$(0)."
+GroupChatTost_GroupActive - Opening Group "$(0)".
 GroupChatTost_GroupInactive - No Groups are active.
 GroupChatTost_NameChange - The Group Settings were changed.
 GroupChatTost_MoveTop - Move to Top
@@ -178,6 +178,20 @@ GroupChatTost_LeaderSuccess - The Leader was changed to $(0).
 GroupChatTost_LeaderFailed - The Leader could not be changed.
 GroupChatTost_InviteFailed - You did not receive a Group Invite.
 GroupChatTost_Error - Common Error
+GroupChatTost_CreateGroupError - Failed to create new group.
+GroupChatTost_ListReceiveError - Failed to acquire group member.
+GroupChatTost_InviteGroupError - Invitation failed.
+GroupChatTost_ToInviteGroupError - An error occured during the invitation.
+GroupChatTost_ReInviteGroupError - Failed to retrieve the invitation.
+GroupChatTost_LeaveGroupError - Failed to withdraw.
+GroupChatTost_DeleteGroupError - Failed to expel.
+GroupChatTost_UpdateTextError - Failed to change group name and comment.
+GroupChatTost_MoveListError - Failed to change the group list.
+GroupChatTost_LockError - Failed to lock to the group.
+GroupChatTost_GetLogError - Failed to acquire the log.
+GroupChatTost_DenyInviteError - Invitation block settings failed.
+GroupChatTost_InviteListError - Failed to acquire current invitation list.
+GroupChatTost_InviteLimitOver - No. of invitations exceeded, failed to retrieve $(0)'s invitation.
 GroupChatTost_InviteDeny - A Friend is included in part of your Uninvite Settings.
 FriendList_Title - INVITED TO "$(0)"
 Make_Default_Name - Group Name of "$(0)"
@@ -197,12 +211,13 @@ GroupChatDateThursday - (Thursday)
 GroupChatDateFriday - (Friday)
 GroupChatDateSaturday - (Saturday)
 GroupListLabel - $(0) ($(1))
-GroupChatTost_GroupJoin - $(0) joined "$(1)."
+GroupListLabelMax - $(0) <c ff9933>($(1))<c>
+GroupChatTost_GroupJoin - $(0) joined "$(1)".
 GroupChatTost_InviteDeny2 - You declined the Group Invite.
 Popup_Inviterefuse - Decline Invite
 GroupChat_JoinMax_Title - VIEW THE NUMBER OF GROUPS JOINED
 GroupChat_JoinMax_Message - You have joined the maximum number of Groups and cannot join<br>any more. Please join the Group you have been invited to<br>upon leaving one of the Groups you have joined.
-GroupChatError_MakeEmptyFault - The Group could not be created because you left the Group <br>Name and/or Group Comments blank.
+GroupChatError_MakeEmptyFault - The Group could not be created because you left the<br>Group Name and/or Group Comments blank.
 GroupChatError_RenameEmptyFault - The Group could not be edited because you<br>left the Group Name and/or Group Comments blank.
 GroupChatError_NotFindTitle - CHECK GROUPS
 GroupChatError_NotFindMessage - The Group cannot not be joined because it could not be found.

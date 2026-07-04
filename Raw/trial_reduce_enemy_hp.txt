@@ -1,0 +1,37 @@
+trial_reduce_enemy_hp.text was created: 04-07-2026 10:44:41
+Filesize is: 1760 bytes
+
+common
+Group 0
+TrialName_1Enemy - $(0)討伐
+TrialName_1Enemy_normal - エネミー討伐
+TrialBeginMsg_1Enemy - 出現した$(0)を倒せ！
+TrialBeginMsg_1Enemy_????? - 出現した？？？？？を倒せ！
+TrialAbstract_1Enemy - $(0)を倒す
+TrialAbstract_1Enemy_????? - ？？？？？を倒す
+TrialName_Multi - エネミー討伐
+TrialBeginMsg_Multi - 出現したエネミーを倒せ！
+TrialAbstract_Multi - エネミーを倒す
+
+Group 1
+TrialName_1Enemy - $(0) Supresión
+TrialName_1Enemy_normal - Supresión enemiga
+TrialBeginMsg_1Enemy - ¡Derrota a los $(0)!
+TrialBeginMsg_1Enemy_????? - ¡Derrota al ???!
+TrialAbstract_1Enemy - Derrota al $(0)
+TrialAbstract_1Enemy_????? - Derrota al ???
+TrialName_Multi - Supresión enemiga
+TrialBeginMsg_Multi - ¡Derrota a los enemigos!
+TrialAbstract_Multi - Derrota a los enemigos
+
+
+type103
+Group 0
+NpcComOnBegin - 大変です！　こんなところに、強力なエネミーが……!?<br>至急、対処をお願いします！
+NpcComOnSuccess - エネミーが撤退したようです！<br>追いかけて、討伐しましょう！
+
+Group 1
+NpcComOnBegin - What are such powerful enemies doing here!?<br>Please engage at once!
+NpcComOnSuccess - They're retreating!<br>Give chase and wipe them ou
+
+

@@ -1,0 +1,45 @@
+ti_1019916000_unk_tan_ba.text was created: 04-07-2026 10:44:41
+Filesize is: 2640 bytes
+
+common
+Group 0
+TrialName_1Enemy - $(0)討伐
+TrialBeginMsg_1Enemy - 出現した$(0)を倒せ！
+TrialAbstract_1Enemy - $(0)を倒す
+TrialName_Multi - エネミー討伐
+TrialBeginMsg_Multi - 出現したエネミーを倒せ！
+TrialAbstract_Multi - エネミーを倒す
+
+Group 1
+TrialName_1Enemy - $(0) Supresión
+TrialBeginMsg_1Enemy - ¡Derrota a los $(0)!
+TrialAbstract_1Enemy - Derrota al $(0).
+TrialName_Multi - Supresión enemiga
+TrialBeginMsg_Multi - ¡Derrota a los enemigos!
+TrialAbstract_Multi - Derrota a los enemigos.
+
+
+type102
+Group 0
+NpcComOnForetaste - ＊＊＊その付近に要警戒エネミーがいるようです！<br>至急、討伐をお願いします。
+NpcComOnBegin - ＊＊＊
+NpcComOnSuccess - ＊＊＊エネミーの殲滅を確認しました！<br>即応、ありがとうございます。
+NpcComOnFailure - ＊＊＊エネミーが撤退しました。<br>……ひとまず、脅威は去りましたね。
+
+Group 1
+
+
+type104
+Group 0
+NpcComOnForetaste - /voice11_voice_navi003_trial_0001_011 $(0)の反応あり！<br>気を抜かず、きっちり倒せよ！
+NpcComOnBegin - /voice11_voice_navi003_trial_0001_046 ちょこまか動くから、<br>ダイブアタックで動きを止めるといいぜ。
+NpcComOnSuccess - /voice11_voice_navi003_trial_0001_070 よし！　やったな！
+NpcComOnFailure - /voice11_voice_navi003_trial_0001_074 うーん、逃がしたみたいだな。<br>次は倒そうぜ！
+
+Group 1
+NpcComOnForetaste - /voice11_voice_navi003_trial_0001_011 $(0) detected! Take it down!
+NpcComOnBegin - /voice11_voice_navi003_trial_0001_046 Use a diving attack to stop it in its tracks!
+NpcComOnSuccess - /voice11_voice_navi003_trial_0001_070 Nice job!
+NpcComOnFailure - /voice11_voice_navi003_trial_0001_074 Hmm, you let it escape. Better luck next time!
+
+

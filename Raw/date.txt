@@ -1,5 +1,5 @@
-date.text was created: 04-07-2026 7:33:46
-Filesize is: 4000 bytes
+date.text was created: 04-07-2026 10:44:41
+Filesize is: 5200 bytes
 
 Date
 Group 0
@@ -54,31 +54,32 @@ October - 10
 November - 11
 December - 12
 Date_NoYear - $(1)/$(0)
-Sunday - Sunday
-Monday - Monday
-Tuesday - Tuesday
-Wednesday - Wednesday
-Thursday - Thursday
-Friday - Friday
-Saturday - Saturday
-Short_January - Jan
+Sunday - Domingo
+Monday - Lunes
+Tuesday - Martes
+Wednesday - Miércoles
+Thursday - Jueves
+Friday - Viernes
+Saturday - Sábado
+Short_January - Ene
 Short_February - Feb
 Short_March - Mar
-Short_April - Apr
-Short_May - May
+Short_April - Abr
+Short_May - Puede
 Short_June - Jun
 Short_July - Jul
-Short_August - Aug
+Short_August - Ago
 Short_September - Sep
 Short_October - Oct
 Short_November - Nov
-Short_December - Dec
+Short_December - Dic
 
 
 Time
 Group 0
 TimeCountSec - $(0)秒
 TimeCount - $(0):$(1)
+TimeCountHour - $(0):$(1):$(2)
 TimeHour - $(0)時$(1)分
 TimeHourJust - $(0)時
 TimeDayOfHour - $(1)$(0)
@@ -93,13 +94,20 @@ DateTimeSec_create - $(5)-$(3)-$(0). $(1)_$(2)_$(4)
 DateTimeSec_v - $(5)/$(3)/$(0) $(1):$(2):$(4)
 EmptyDateTime - --年--月--日--時--分
 Period - $(0)時間$(1)分
-PeriodMin - $(分間
+PeriodMin - $(0)分間
+PeriodDay - $(0)日$(1)時間$(2)分
 LeaveHour - $(0)時間$(1)分
-LeaveMin - 
+LeaveMin - $(0)分
+LeaveDay - $(0)日$(1)時間$(2)分
+hyphen - --
+LeaveTime - あと$(0)
+LeaveDayOnly - $(0)日
+LeaveHourOnly - $(0)時間
 
 Group 1
 TimeCountSec - $(0) sec.
 TimeCount - $(0):$(1)
+TimeCountHour - $(0):$(1):$(2)
 TimeHour - $(0):$(1)
 TimeHourJust - $(0):$(1)
 TimeDayOfHour - $(1) at $(0)
@@ -113,9 +121,15 @@ DateTimeSec - $(5)-$(3)-$(0). $(1):$(2):$(4)
 DateTimeSec_create - $(5)-$(3)-$(0). $(1)_$(2)_$(4)
 DateTimeSec_v - $(5)/$(3)/$(0) $(1):$(2):$(4)
 EmptyDateTime - -- --, -- --:--
-Period - $(0)h $(1)m
-PeriodMin - $(0) m
-LeaveHour - $(0)h $(1)m
-LeaveMin - $(0) m
+Period - $(0)hrs. $(1)min.
+PeriodMin - $(0) mins.
+PeriodDay - $(0)d $(1)hrs. $(2)min.
+LeaveHour - $(0)hrs. $(1)min.
+LeaveMin - $(0) min.
+LeaveDay - $(0)d $(1)hrs. $(2)min.
+hyphen - --
+LeaveTime - $(0) Remaining
+LeaveDayOnly - $(0)d
+LeaveHourOnly - $(0)hr
 
 

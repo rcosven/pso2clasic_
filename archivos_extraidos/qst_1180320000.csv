@@ -1,0 +1,503 @@
+﻿section,group,id,text
+MainText,0,name010,ナズーン
+MainText,0,text010,最初のクイズは、<br>“YES or NO”クイズでーす！
+MainText,0,text015,正しいと思ったら<c 008b00>Ｙの足場<c>に、<br>違うと思ったら<red>Ｎの足場<c>に、移動してください。
+MainText,0,text020,それでは、問題です。<br>……じゃん！
+MainText,0,text030,正解だと思う足場に向かってください！<br>レッツ、シンキング！
+MainText,0,text040,タイムアーップ！
+MainText,0,text050,正解は……、<br><red>NO<c>でした！
+MainText,0,text051,正解は……、<br><red>YES<c>でした！
+MainText,0,text052,おめでとうございます！
+MainText,0,text053,残念……。
+MainText,0,text060,続いての問題です。<br>……じゃん！
+MainText,0,text070,それでは、最後の問題です。<br>……じゃん！
+MainText,0,text080,“YES or NO”クイズは、これで終了です。<br>次のクイズ会場に移動しましょう！
+MainText,0,Textobj_Yes,YES
+MainText,0,Textobj_No,NO
+MainText,1,name010,Nazun
+MainText,1,text010,"¡La primera prueba es una simple pregunta de ""Sí o No""!"
+MainText,1,text015,"Si elige ""Sí"", vaya a<c 008b00>el área Y <c>. Si elige ""No"",<br>vaya a<red>el área N <c>."
+MainText,1,text020,"Ahora, aquí está la primera pregunta... ¡Ba-dum!"
+MainText,1,text030,¡Vaya a la respuesta que crea que es correcta! ¡Ponte a pensar!
+MainText,1,text040,¡Se acabó el tiempo!
+MainText,1,text050,La respuesta es...<red>¡No! <c>
+MainText,1,text051,La respuesta es...<red>¡Sí! <c>
+MainText,1,text052,¡Correcto!
+MainText,1,text053,Demasiado...
+MainText,1,text060,Aquí está la siguiente pregunta... ¡Ba-dum!
+MainText,1,text070,Aquí viene la pregunta final... ¡Ba-dum!
+MainText,1,text080,"¡Con esto concluye el cuestionario ""Sí o No""!<br>¡Pasemos a la siguiente etapa, ahora!"
+MainText,1,Textobj_Yes,SÍ
+MainText,1,Textobj_No,NO
+QuizText,0,quiz01,問題<br><yellow>セントラルシティの西門を<br>警備しているのは、“セイター”である。<c><br>YES or NO？
+QuizText,0,quiz00_1,なし
+QuizText,0,quiz01_1,セントラルシティの西門を
+QuizText,0,quiz01_2,警備しているのは、“セイター”である。
+QuizText,0,quiz02,問題<br><yellow>リテムシティのエステ店員は、<br>“カタリナ”である。<c><br>YES or NO？
+QuizText,0,quiz02_1,リテムシティのエステ店員は、
+QuizText,0,quiz02_2,“カタリナ”である。
+QuizText,0,quiz03,問題<br><yellow>サブクラスを設定すると、そのサブクラスの<br>“フォトンアーツ”が使用できる。<c><br>YES or NO？
+QuizText,0,quiz03_1,サブクラスを設定すると、そのサブクラスの
+QuizText,0,quiz03_2,“フォトンアーツ”が使用できる。
+QuizText,0,quiz04,問題<br><yellow>ジェットブーツは、“法撃武器”である。<br>YES or NO？<c>
+QuizText,0,quiz04_1,ジェットブーツは、“法撃武器”である。
+QuizText,0,quiz05,問題<br><yellow>ガンスラッシュは、“打撃武器”である。<c><br>YES or NO？
+QuizText,0,quiz05_1,ガンスラッシュは、“打撃武器”である。
+QuizText,0,quiz06,問題<br><yellow>タクトは、“法撃武器”である。<c><br>YES or NO？
+QuizText,0,quiz06_1,タクトは、“法撃武器”である。
+QuizText,0,quiz07,問題<br><yellow>“探索セクション”では、<br>PSEバーストが発生する。<c><br>YES or NO？
+QuizText,0,quiz07_1,“探索セクション”では、
+QuizText,0,quiz07_2,PSEバーストが発生する。
+QuizText,0,quiz08,問題<br><yellow>“戦闘セクション”では、<br>PSEバーストが発生する。<c><br>YES or NO？
+QuizText,0,quiz08_1,“戦闘セクション”では、
+QuizText,0,quiz08_2,PSEバーストが発生する。
+QuizText,0,quiz09,問題<br><yellow>エアリオリージョンのリーダーは、<br>“クロフォード”である。<c><br>YES or NO？
+QuizText,0,quiz09_1,エアリオリージョンのリーダーは、
+QuizText,0,quiz09_2,“クロフォード”である。
+QuizText,0,quiz10,問題<br><yellow>クラススキル“ウィークバレット”の<br>効果時間は、“10秒”である。<c><br>YES or NO？
+QuizText,0,quiz10_1,クラススキル“ウィークバレット”の
+QuizText,0,quiz10_2,効果時間は、“10秒”である。
+QuizText,0,quiz11,問題<br><yellow>宇宙から降下ポッドでやってきた者は、<br>“星還り”と呼ばれている。<c><br>YES or NO？
+QuizText,0,quiz11_1,宇宙から降下ポッドでやってきた者は、
+QuizText,0,quiz11_2,“星還り”と呼ばれている。
+QuizText,0,quiz12,問題<br><yellow>天候“雷雨”が観測できるリージョンは、<br>“クヴァリス”である。<c><br>YES or NO？
+QuizText,0,quiz12_1,天候“雷雨”が観測できるリージョンは、
+QuizText,0,quiz12_2,“クヴァリス”である。
+QuizText,0,quiz13,問題<br><yellow>“ニルス・スティア”の弱点は、<br>“氷属性”である。<c><br>YES or NO？
+QuizText,0,quiz13_1,“ニルス・スティア”の弱点は、
+QuizText,0,quiz13_2,“氷属性”である。
+QuizText,0,quiz14,問題<br><yellow>“ルメイラー”シリーズの武器は、<br>“闇属性”である。<c><br>YES or NO？
+QuizText,0,quiz14_1,“ルメイラー”シリーズの武器は、
+QuizText,0,quiz14_2,“闇属性”である。
+QuizText,0,quiz15,問題<br><yellow>ひとつのチームに参加できる最大人数は、<br>“120人”である。<c><br>YES or NO？
+QuizText,0,quiz15_1,ひとつのチームに参加できる最大人数は、
+QuizText,0,quiz15_2,“120人”である。
+QuizText,0,quiz16,問題<br><yellow>“レリク・バトルバージ”の武器種は、<br>“ロッド”である。<c><br>YES or NO？
+QuizText,0,quiz16_1,“レリク・バトルバージ”の武器種は、
+QuizText,0,quiz16_2,“ロッド”である。
+QuizText,0,quiz17,問題<br><yellow>ナーデレフが戦闘で使用する武器種は、<br>“デュアルブレード”である。<c><br>YES or NO？
+QuizText,0,quiz17_1,ナーデレフが戦闘で使用する武器種は、
+QuizText,0,quiz17_2,“デュアルブレード”である。
+QuizText,0,quiz18,問題<br><yellow>ヴァンフォードとクロフォードは、<br>“親子”の関係である。<c><br>YES or NO？
+QuizText,0,quiz18_1,ヴァンフォードとクロフォードは、
+QuizText,0,quiz18_2,“親子”の関係である。
+QuizText,0,quiz19,問題<br><yellow>ブルーダーの年齢は、“18歳”である。<c><br>YES or NO？
+QuizText,0,quiz19_1,ブルーダーの年齢は、“18歳”である。
+QuizText,0,quiz20,問題<br><yellow>アークス訓練教官リアメイのクラスは、<br>“テクター”である。<c><br>YES or NO？
+QuizText,0,quiz20_1,アークス訓練教官リアメイのクラスは、
+QuizText,0,quiz20_2,“テクター”である。
+QuizText,0,quiz21,問題<br><yellow>ハルファに降り立った主人公が、<br>初めて会った人物は、“マノン”である。<c><br>YES or NO？
+QuizText,0,quiz21_1,ハルファに降り立った主人公が、
+QuizText,0,quiz21_2,初めて会った人物は、“マノン”である。
+QuizText,0,quiz22,問題<br><yellow>テクターは、“ウォンド”を装備できる。<c><br>YES or NO？
+QuizText,0,quiz22_1,テクターは、“ウォンド”を装備できる。
+QuizText,0,quiz23,問題<br><yellow>リバーサーサインの最大所持数は、<br>“5個”である。<c><br>YES or NO？
+QuizText,0,quiz23_1,リバーサーサインの最大所持数は、
+QuizText,0,quiz23_2,“5個”である。
+QuizText,0,quiz24,問題<br><yellow>ウェイカーは、<br>“ペット”を呼び出して戦う。<c><br>YES or NO？
+QuizText,0,quiz24_1,ウェイカーは、
+QuizText,0,quiz24_2,“ペット”を呼び出して戦う。
+QuizText,0,quiz25,問題<br><yellow>ウォンドは、<br>“テクター”の専用武器である。<c><br>YES or NO？
+QuizText,0,quiz25_1,ウォンドは、
+QuizText,0,quiz25_2,“テクター”の専用武器である。
+QuizText,0,quiz26,問題<br><yellow>“ファイタースキップアーツ”は、<br>“PAボタン長押し”で発動できる。<c><br>YES or NO？
+QuizText,0,quiz26_1,“ファイタースキップアーツ”は、
+QuizText,0,quiz26_2,“PAボタン長押し”で発動できる。
+QuizText,0,quiz27,問題<br><yellow>ステージライブを見ると、<br>“レアドロップ倍率”が一定時間上昇する。<c><br>YES or NO？
+QuizText,0,quiz27_1,ステージライブを見ると、
+QuizText,0,quiz27_2,“レアドロップ倍率”が一定時間上昇する。
+QuizText,0,quiz28,問題<br><yellow>“キリングPPゲイン”は、<br>“レンジャー”のクラススキルである。<c><br>YES or NO？
+QuizText,0,quiz28_1,“キリングPPゲイン”は、
+QuizText,0,quiz28_2,“レンジャー”のクラススキルである。
+QuizText,0,quiz30,問題<br><yellow>“アルファリアクター”は、<br>ひとつ“3500N-メセタ”で換金できる。<c><br>YES or NO？
+QuizText,0,quiz30_1,“アルファリアクター”は、
+QuizText,0,quiz30_2,ひとつ“3500N-メセタ”で換金できる。
+QuizText,0,quiz31,問題<br><yellow>“ミッションパス”は、“20SG”<br>でティアを１段階進めることができる。<c><br>YES or NO？
+QuizText,0,quiz31_1,“ミッションパス”は、“20SG”
+QuizText,0,quiz31_2,でティアを１段階進めることができる。
+QuizText,0,quiz32,問題<br><yellow>『NGS』のアークスカードは、<br>“最大で３つ”の称号を設定できる。<c><br>YES or NO？
+QuizText,0,quiz32_1,『NGS』のアークスカードは、
+QuizText,0,quiz32_2,“最大で３つ”の称号を設定できる。
+QuizText,0,quiz33,問題<br><yellow>西エアリオには、<br>“ダイダル・ソード”が出現する。<c><br>YES or NO？
+QuizText,0,quiz33_1,西エアリオには、
+QuizText,0,quiz33_2,“ダイダル・ソード”が出現する。
+QuizText,0,quiz34,問題<br><yellow>グレンが着用しているウェアの名前は、<br>“クーヴェルウィーズ[Se]”である。<c><br>YES or NO？
+QuizText,0,quiz34_1,グレンが着用しているウェアの名前は、
+QuizText,0,quiz34_2,“クーヴェルウィーズ[Se]”である。
+QuizText,0,quiz35,問題<br><yellow>武器“ククロフィスボウ”は、<br>“クロコダラス”をモチーフにしている。<c><br>YES or NO？
+QuizText,0,quiz35_1,武器“ククロフィスボウ”は、
+QuizText,0,quiz35_2,“クロコダラス”をモチーフにしている。
+QuizText,0,quiz36,問題<br><yellow>主人公のポッドが落下した島の名前は、<br>“カナイ島”である。<c><br>YES or NO？
+QuizText,0,quiz36_1,主人公のポッドが落下した島の名前は、
+QuizText,0,quiz36_2,“カナイ島”である。
+QuizText,0,quiz37,問題<br><yellow>ハルフィリア湖に出現する<br>テイムズのレベルは、“65”である。<c><br>YES or NO？
+QuizText,0,quiz37_1,ハルフィリア湖に出現する
+QuizText,0,quiz37_2,テイムズのレベルは、“65”である。
+QuizText,0,quiz38,問題<br><yellow>アイナは、愛用のアサルトライフルに、<br>“スカーフ”を巻き付けている。<c><br>YES or NO？
+QuizText,0,quiz38_1,アイナは、愛用のアサルトライフルに、
+QuizText,0,quiz38_2,“スカーフ”を巻き付けている。
+QuizText,0,quiz39,問題<br><yellow>南リテムには、<br>“老練のバブルクラッブ”が出現する。<c><br>YES or NO？
+QuizText,0,quiz39_1,南リテムには、
+QuizText,0,quiz39_2,“老練のバブルクラッブ”が出現する。
+QuizText,0,quiz40,問題<br><yellow>レスタサインは、“四角形”の<br>葉のようなかたちをしている。<c><br>YES or NO？
+QuizText,0,quiz40_1,レスタサインは、“四角形”の
+QuizText,0,quiz40_2,葉のようなかたちをしている。
+QuizText,0,quiz41,問題<br><yellow>マグナス山には、メッセージパックが、<br>全部で“３つ”配置されている。<c><br>YES or NO？
+QuizText,0,quiz41_1,マグナス山には、メッセージパックが、
+QuizText,0,quiz41_2,全部で“３つ”配置されている。
+QuizText,0,quiz42,問題<br><yellow>キャラクターメイクで設定できる<br>身長の最大値は、“205”である。<c><br>YES or NO？
+QuizText,0,quiz42_1,キャラクターメイクで設定できる
+QuizText,0,quiz42_2,身長の最大値は、“205”である。
+QuizText,0,quiz43,問題<br><yellow>パーティーブーストの上昇率は、<br>パーティーの“名称”で決まる。<c><br>YES or NO？
+QuizText,0,quiz43_1,パーティーブーストの上昇率は、
+QuizText,0,quiz43_2,パーティーの“名称”で決まる。
+QuizText,0,quiz44,問題<br><yellow>“サッパ・リテナシャッコゥ”という<br>ギャザリング素材がある。<c><br>YES or NO？
+QuizText,0,quiz44_1,“サッパ・リテナシャッコゥ”という
+QuizText,0,quiz44_2,ギャザリング素材がある。
+QuizText,0,quiz45,問題<br><yellow>ベルクマンのタスクで、思い出の景色が<br>見られる山は、“マヒナパリ山”である。<c><br>YES or NO？
+QuizText,0,quiz45_1,ベルクマンのタスクで、思い出の景色が
+QuizText,0,quiz45_2,見られる山は、“マヒナパリ山”である。
+QuizText,0,quiz46,問題<br><yellow>タスク“五つ子の頼みごと”で、クッカから<br>頼まれる届け物は、“毛皮”である。<c><br>YES or NO？
+QuizText,0,quiz46_1,タスク“五つ子の頼みごと”で、クッカから
+QuizText,0,quiz46_2,頼まれる届け物は、“毛皮”である。
+QuizText,0,quiz47,問題<br><yellow>エアリオには、アイテムコンテナ[赤]が<br>全部で“113個”存在する。<c><br>YES or NO？
+QuizText,0,quiz47_1,エアリオには、アイテムコンテナ[赤]が
+QuizText,0,quiz47_2,全部で“113個”存在する。
+QuizText,0,quiz48,問題<br><yellow>リテムシティのステージライブで<br>歌っているのは、“ガロア”である。<c><br>YES or NO？
+QuizText,0,quiz48_1,リテムシティのステージライブで
+QuizText,0,quiz48_2,歌っているのは、“ガロア”である。
+QuizText,0,quiz49,問題<br><yellow>“カイゼラム”シリーズの武器は、<br>“999個”のアイシクルオーブと交換できる。<c><br>YES or NO？
+QuizText,0,quiz49_1,“カイゼラム”シリーズの武器は、
+QuizText,0,quiz49_2,“999個”のアイシクルオーブと交換できる。
+QuizText,0,quiz50,問題<br><yellow>武器“プリムロッド”は、潜在能力解放に<br>“フォトンスケイル”が必要である。<c><br>YES or NO？
+QuizText,0,quiz50_1,武器“プリムロッド”は、潜在能力解放に
+QuizText,0,quiz50_2,“フォトンスケイル”が必要である。
+QuizText,0,quiz51,問題<br><yellow>特殊能力カプセル“C/エアル・ドミナ”の<br>交換には、“C/アームⅢ”が必要である。<c><br>YES or NO？
+QuizText,0,quiz51_1,特殊能力カプセル“C/エアル・ドミナ”の
+QuizText,0,quiz51_2,交換には、“C/アームⅢ”が必要である。
+QuizText,0,quiz52,問題<br><yellow>“プリム”シリーズの<br>カラーバリアント武器は、“黄色”である。<c><br>YES or NO？
+QuizText,0,quiz52_1,“プリム”シリーズの
+QuizText,0,quiz52_2,カラーバリアント武器は、“黄色”である。
+QuizText,0,quiz53,問題<br><yellow>武器“プリム”シリーズの潜在能力は、<br>“不屈の型”である。<c><br>YES or NO？
+QuizText,0,quiz53_1,武器“プリム”シリーズの潜在能力は、
+QuizText,0,quiz53_2,“不屈の型”である。
+QuizText,0,quiz54,問題<br><yellow>クヴァリスの五つ子の三男の名前は、<br>“クッカ”である。<c><br>YES or NO？
+QuizText,0,quiz54_1,クヴァリスの五つ子の三男の名前は、
+QuizText,0,quiz54_2,“クッカ”である。
+QuizText,0,quiz55,問題<br><yellow>クヴァリスの五つ子の祖父の名前は、<br>“ライサス”である。<c><br>YES or NO？
+QuizText,0,quiz55_1,クヴァリスの五つ子の祖父の名前は、
+QuizText,0,quiz55_2,“ライサス”である。
+QuizText,0,quiz56,問題<br><yellow>スティアキャンプにいる、ベルクマンの<br>後輩の名前は、“チトセ”である。<c><br>YES or NO？
+QuizText,0,quiz56_1,スティアキャンプにいる、ベルクマンの
+QuizText,0,quiz56_2,後輩の名前は、“チトセ”である。
+QuizText,0,quiz57,問題<br><yellow>“リゼントス”の破壊できる部位は、<br>全部で“３か所”ある。<c><br>YES or NO？
+QuizText,0,quiz57_1,“リゼントス”の破壊できる部位は、
+QuizText,0,quiz57_2,全部で“３か所”ある。
+QuizText,0,quiz58,問題<br><yellow>アイナの父親であるガロアは、<br>“38歳”である。<c><br>YES or NO？
+QuizText,0,quiz58_1,アイナの父親であるガロアは、
+QuizText,0,quiz58_2,“38歳”である。
+QuizText,0,quiz59,問題<br><yellow>エアリオタウンで、畑仕事をしている<br>人物は、“アグリ”である。<c><br>YES or NO？
+QuizText,0,quiz59_1,エアリオタウンで、畑仕事をしている
+QuizText,0,quiz59_2,人物は、“アグリ”である。
+QuizText,0,quiz29,問題<br><yellow>“ツキミ・ラッピー”は、<br>“仮面”を被っている。<c><br>YES or NO？
+QuizText,0,quiz29_1,“ツキミ・ラッピー”は、
+QuizText,0,quiz29_2,“仮面”を被っている。
+QuizText,0,quiz60,問題<br><yellow>ドレッドエネミーの二つ名は、<br>“老練の”である。<c><br>YES or NO？
+QuizText,0,quiz60_1,ドレッドエネミーの二つ名は、
+QuizText,0,quiz60_2,“老練の”である。
+QuizText,0,quiz61,問題<br><yellow>戦闘セクションで戦闘不能になると、<br>PSEのレベルが“下がる”。<c><br>YES or NO？
+QuizText,0,quiz61_1,戦闘セクションで戦闘不能になると、
+QuizText,0,quiz61_2,PSEのレベルが“下がる”。
+QuizText,0,quiz62,問題<br><yellow>ロストセントラルは、<br>“フォーマーズ”の攻撃によって壊滅した。<c><br>YES or NO？
+QuizText,0,quiz62_1,ロストセントラルは、
+QuizText,0,quiz62_2,“フォーマーズ”の攻撃によって壊滅した。
+QuizText,0,quiz63,問題<br><yellow>エンシェントエネミーの二つ名は、<br>“絶望の”である。<c><br>YES or NO？
+QuizText,0,quiz63_1,エンシェントエネミーの二つ名は、
+QuizText,0,quiz63_2,“絶望の”である。
+QuizText,0,quiz64,問題<br><yellow>クヴァリスには、<br>“耐寒のリージョンマグ”がある。<c><br>YES or NO？
+QuizText,0,quiz64_1,クヴァリスには、
+QuizText,0,quiz64_2,“耐寒のリージョンマグ”がある。
+QuizText,0,quiz65,問題<br><yellow>アイナとマノンの共闘トライアルは、<br>クリア後に必ずPSEバーストが発生する。<c><br>YES or NO？
+QuizText,0,quiz65_1,アイナとマノンの共闘トライアルは、
+QuizText,0,quiz65_2,クリア後に必ずPSEバーストが発生する。
+QuizText,0,quiz66,問題<br><yellow>タスク“観測：PSEバースト”の目標は、<br>PSEバーストを“3回”観測することである。<c><br>YES or NO？
+QuizText,0,quiz66_1,タスク“観測：PSEバースト”の目標は、
+QuizText,0,quiz66_2,PSEバーストを“3回”観測することである。
+QuizText,0,quiz67,問題<br><yellow>アークス装備開発部員ヴルガンスは、<br>“右目”に傷がある。<c><br>YES or NO？
+QuizText,0,quiz67_1,アークス装備開発部員ヴルガンスは、
+QuizText,0,quiz67_2,“右目”に傷がある。
+QuizText,0,quiz68,問題<br><yellow>武器“N-EXPウェポン”には、<br>特殊能力“ハイペリオ”が付与されている。<c><br>YES or NO？
+QuizText,0,quiz68_1,武器“N-EXPウェポン”には、
+QuizText,0,quiz68_2,特殊能力“ハイペリオ”が付与されている。
+QuizText,0,quiz69,問題<br><yellow>コスト１のアクセサリーのみ使用した場合、<br>“18個”のアクセサリーを着用できる。<c><br>YES or NO？
+QuizText,0,quiz69_1,コスト１のアクセサリーのみ使用した場合、
+QuizText,0,quiz69_2,“18個”のアクセサリーを着用できる。
+QuizText,0,quiz70,問題<br><yellow>ボディペイントは、<br>エステの“身体の編集”から変更できる。<c><br>YES or NO？
+QuizText,0,quiz70_1,ボディペイントは、
+QuizText,0,quiz70_2,エステの“身体の編集”から変更できる。
+QuizText,0,quiz71,問題<br><yellow>アクティブソナーは、“レスタサイン”と<br>“リバーサーサイン”には反応しない。<c><br>YES or NO？
+QuizText,0,quiz71_1,アクティブソナーは、“レスタサイン”と
+QuizText,0,quiz71_2,“リバーサーサイン”には反応しない。
+QuizText,0,quiz72,問題<br><yellow>“資源採掘リグ防衛戦：クヴァリス”の、<br>緊急クエストは、“ダナン雪原”で戦う。<c><br>YES or NO？
+QuizText,0,quiz72_1,“資源採掘リグ防衛戦：クヴァリス”の、
+QuizText,0,quiz72_2,緊急クエストは、“ダナン雪原”で戦う。
+QuizText,0,quiz73,問題<br><yellow>果物を10個使ったクイックフードの<br>PP増加量は、“20.0”である。<c><br>YES or NO？
+QuizText,0,quiz73_1,果物を10個使ったクイックフードの
+QuizText,0,quiz73_2,PP増加量は、“20.0”である。
+QuizText,0,quiz74,問題<br><yellow>クラススキル“マッシブハンター”の<br>再使用可能時間は、“180秒”である。<c><br>YES or NO？
+QuizText,0,quiz74_1,クラススキル“マッシブハンター”の
+QuizText,0,quiz74_2,再使用可能時間は、“180秒”である。
+QuizText,0,quiz75,問題<br><yellow>“バニシングウェイⅡ”は、<br>“クヴァリス”のコクーンである。<c><br>YES or NO？
+QuizText,0,quiz75_1,“バニシングウェイⅡ”は、
+QuizText,0,quiz75_2,“クヴァリス”のコクーンである。
+QuizText,0,quiz76,問題<br><yellow>“タワー”の初回クリアで獲得できる<br>スキルポイントは、“３ポイント”である。<c><br>YES or NO？
+QuizText,0,quiz76_1,“タワー”の初回クリアで獲得できる
+QuizText,0,quiz76_2,スキルポイントは、“３ポイント”である。
+QuizText,0,quiz77,問題<br><yellow>ワイヤードランスには、与えるダメージが<br>増減する“適正距離”がある。<c><br>YES or NO？
+QuizText,0,quiz77_1,ワイヤードランスには、与えるダメージが
+QuizText,0,quiz77_2,増減する“適正距離”がある。
+QuizText,0,quiz78,問題<br><yellow>ドロップ一時倉庫は、<br>“150個”のアイテムを保管できる。<c><br>YES or NO？
+QuizText,0,quiz78_1,ドロップ一時倉庫は、
+QuizText,0,quiz78_2,“150個”のアイテムを保管できる。
+QuizText,0,quiz79,問題<br><yellow>エアリオのセクション数は、<br>セントラルシティを含めて“９つ”である。<c><br>YES or NO？
+QuizText,0,quiz79_1,エアリオのセクション数は、
+QuizText,0,quiz79_2,セントラルシティを含めて“９つ”である。
+QuizText,0,quiz80,問題<br><yellow>エンハンスドエネミーは、周囲のエネミーの<br>“攻撃力と防御力”を強化する。<c><br>YES or NO？
+QuizText,0,quiz80_1,エンハンスドエネミーは、周囲のエネミーの
+QuizText,0,quiz80_2,“攻撃力と防御力”を強化する。
+QuizText,1,quiz01,"Pregunta:<br><yellow> El nombre del guardia de la Puerta Oeste de Central City es ""Westley"" <c><br>¿SÍ o NO?"
+QuizText,1,quiz00_1,Ninguno
+QuizText,1,quiz01_1,El nombre de Central City
+QuizText,1,quiz01_2,"El guardia de la Puerta Oeste es ""Westley""."
+QuizText,1,quiz02,"Pregunta:<br><yellow> ""Catalina"" es la empleada del salón de ciudad de Retem. <c><br>¿SÍ o NO?"
+QuizText,1,quiz02_1,"""Catalina"" es la ciudad de Retem."
+QuizText,1,quiz02_2,Empleado de salón.
+QuizText,1,quiz03,"Pregunta:<br><yellow> Una vez que haya seleccionado una subclase, puede utilizar las ""Artes fotónicas"" de esa subclase. <c><br>¿SÍ o NO?"
+QuizText,1,quiz03_1,"Una vez que haya seleccionado una subclase, puede usar"
+QuizText,1,quiz03_2,"las ""Artes fotónicas"" de esa subclase."
+QuizText,1,quiz04,"Pregunta:<br><yellow> Las botas propulsoras son un ""arma técnica"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz04_1,"Las botas jet son un ""arma técnica""."
+QuizText,1,quiz05,"Pregunta:<br><yellow> Los Gunblades son ""armas cuerpo a cuerpo"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz05_1,"Los Gunblades son ""armas cuerpo a cuerpo""."
+QuizText,1,quiz06,"Pregunta:<br><yellow> Los armonizadores son ""armas técnicas"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz06_1,"Los armonizadores son ""armas técnicas""."
+QuizText,1,quiz07,"Pregunta:<br><yellow> Las ráfagas de PSE ocurren en ""Sectores de exploración"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz07_1,Se producen explosiones de PSE
+QuizText,1,quiz07_2,"en ""Sectores de Exploración""."
+QuizText,1,quiz08,"Pregunta:<br><yellow> Las ráfagas de PSE ocurren en ""sectores de combate"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz08_1,Se producen explosiones de PSE
+QuizText,1,quiz08_2,"en ""Sectores de combate""."
+QuizText,1,quiz09,"Pregunta:<br><yellow> El líder de la región de Aelio es ""Crawford"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz09_1,El líder de la región de Aelio.
+QuizText,1,quiz09_2,"es ""Crawford""."
+QuizText,1,quiz10,"Pregunta:<br><yellow> La habilidad de clase ""Blight Rounds"" tiene una duración de efecto de 10 segundos. <c><br>¿SÍ o NO?"
+QuizText,1,quiz10_1,"La habilidad de clase ""Blight Rounds"" tiene una"
+QuizText,1,quiz10_2,Duración del efecto de 10 segundos.
+QuizText,1,quiz11,"Pregunta:<br><yellow> Los que vienen del espacio a través de cápsulas de aterrizaje se llaman ""Meteoranos"" <c><br>¿SÍ o NO?"
+QuizText,1,quiz11_1,Los que vienen del espacio mediante cápsulas de aterrizaje.
+QuizText,1,quiz11_2,"se llaman ""meteoritos""."
+QuizText,1,quiz12,"Pregunta:<br><yellow> La condición climática de ""Tormenta"" ocurre en la región de ""Kvaris"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz12_1,"Ocurre la condición climática ""Tormenta"""
+QuizText,1,quiz12_2,"en la región de ""Kvaris""."
+QuizText,1,quiz13,"Pregunta:<br><yellow> ""Nils Stia"" es débil contra los ataques de ""Hielo"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz13_1,"""Nils Stia"" es débil contra"
+QuizText,1,quiz13_2,"Ataques de ""hielo""."
+QuizText,1,quiz14,"Pregunta:<br><yellow> Las armas ""Lumiere"" causan daño elemental ""Oscuro"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz14_1,"Causa de las armas ""Lumiere"""
+QuizText,1,quiz14_2,"Daño elemental ""oscuro""."
+QuizText,1,quiz15,"Pregunta:<br><yellow> Una Alianza puede tener un máximo de ""120 miembros"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz15_1,Una Alianza puede tener un máximo
+QuizText,1,quiz15_2,"de ""120 miembros""."
+QuizText,1,quiz16,"Pregunta:<br><yellow> ""Relik Battle Verge"" es un arma ""Rod"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz16_1,"""Relik Battle Verge"" es un"
+QuizText,1,quiz16_2,"Arma ""varilla""."
+QuizText,1,quiz17,"Pregunta:<br><yellow> Nadereh usa ""Soaring Blades"" en combate. <c><br>¿SÍ o NO?"
+QuizText,1,quiz17_1,"Nadereh usa ""cuchillas elevadas"""
+QuizText,1,quiz17_2,en combate.
+QuizText,1,quiz18,"Pregunta:<br><yellow> Vanford y Crawford son ""padre e hijo"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz18_1,Vanford y Crawford son
+QuizText,1,quiz18_2,"""padre e hijo""."
+QuizText,1,quiz19,Pregunta:<br><yellow> Dozer tiene 18 años. <c><br>¿SÍ o NO?
+QuizText,1,quiz19_1,Dozer tiene 18 años.
+QuizText,1,quiz20,"Pregunta:<br><yellow> La clase de la instructora de entrenamiento de ARKS, Leah May, es ""Techter"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz20_1,Instructora de entrenamiento de ARKS Leah May's
+QuizText,1,quiz20_2,"La clase es ""Techter""."
+QuizText,1,quiz21,"Pregunta:<br><yellow> ""Manon"" fue la primera persona que el protagonista conoció después de aterrizar en Halpha. <c><br>¿SÍ o NO?"
+QuizText,1,quiz21_1,"""Manon"" fue la primera persona que conoció el protagonista"
+QuizText,1,quiz21_2,después de aterrizar en Halfha.
+QuizText,1,quiz22,"Pregunta:<br><yellow> Los Techters pueden equipar ""Varitas"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz22_1,"Los Techters pueden equipar ""Varitas""."
+QuizText,1,quiz23,"Pregunta:<br><yellow> Sólo puedes mantener hasta ""5"" Reversasigne. <c><br>¿SÍ o NO?"
+QuizText,1,quiz23_1,"Sólo puedes aguantar hasta ""5"""
+QuizText,1,quiz23_2,Reversasign.
+QuizText,1,quiz24,"Pregunta:<br><yellow> Los Wakers luchan invocando ""mascotas"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz24_1,pelea de despertadores
+QuizText,1,quiz24_2,"convocando ""mascotas""."
+QuizText,1,quiz25,"Pregunta:<br><yellow> Las varitas son exclusivas de la clase ""Techter"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz25_1,Las varitas son exclusivas
+QuizText,1,quiz25_2,"a la clase ""Techter""."
+QuizText,1,quiz26,"Pregunta:<br><yellow> Puedes activar ""Fighter Skip Arts"" ""manteniendo presionado el botón PA"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz26_1,"Puedes activar ""Fighter Skip Arts"""
+QuizText,1,quiz26_2,"""manteniendo presionado el botón PA""."
+QuizText,1,quiz27,"Pregunta:<br><yellow> Ver un concierto en vivo aumentará temporalmente la ""tasa de aparición de objetos raros"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz27_1,Ver un concierto en vivo aumentará temporalmente
+QuizText,1,quiz27_2,"la ""tasa de caída poco común""."
+QuizText,1,quiz28,"Pregunta:<br><yellow> ""Erradicación de ganancia de PP"" es una habilidad de clase ""Ranger"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz28_1,"La ""ganancia de PP de erradicación"" es una"
+QuizText,1,quiz28_2,"Habilidad de clase ""Ranger""."
+QuizText,1,quiz30,"Pregunta:<br><yellow> Los ""reactores alfa"" se pueden convertir en ""3500 N-Meseta"" cada uno. <c><br>¿SÍ o NO?"
+QuizText,1,quiz30_1,"Los ""reactores alfa"" se pueden convertir en"
+QuizText,1,quiz30_2,"""3500 N-Meseta"" cada uno."
+QuizText,1,quiz31,"Pregunta:<br><yellow> El Pase de Misión se puede avanzar 1 nivel gastando ""20SG"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz31_1,El Mission Pass se puede avanzar 1 nivel
+QuizText,1,quiz31_2,"gastando ""20SG""."
+QuizText,1,quiz32,"Pregunta:<br><yellow> Puede agregar hasta 3 títulos a su ID de ARKS ""NGS"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz32_1,Puedes agregar hasta 3 títulos
+QuizText,1,quiz32_2,"a su ID de ARKS ""NGS""."
+QuizText,1,quiz33,"Pregunta:<br><yellow> ""Daityl Swords"" pueden aparecer en West Aelio. <c><br>¿SÍ o NO?"
+QuizText,1,quiz33_1,"Pueden aparecer ""Daityl Swords"""
+QuizText,1,quiz33_2,en Aelio Occidental.
+QuizText,1,quiz34,"Pregunta:<br><yellow> El nombre del equipo de Glen es ""Cober Vis [Se]"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz34_1,El nombre del equipo de Glen es
+QuizText,1,quiz34_2,"""Cober Vis [Se]""."
+QuizText,1,quiz35,"Pregunta:<br><yellow> El diseño del ""Arco Kouklophis"" está basado en el ""Crocodylis"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz35_1,"El diseño del ""Arco Kouklophis"" se basa"
+QuizText,1,quiz35_2,"sobre el ""Crocodylis""."
+QuizText,1,quiz36,"Pregunta:<br><yellow> La cápsula del protagonista aterrizó en la isla conocida como ""Isla Kanai"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz36_1,La cápsula del protagonista aterrizó en la isla.
+QuizText,1,quiz36_2,"conocida como ""Isla Kanai""."
+QuizText,1,quiz37,"Pregunta:<br><yellow> Los TAMES que aparecen en Halphia Lake son de nivel ""65"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz37_1,Los TAMES que aparecen en el lago Halphia
+QuizText,1,quiz37_2,"son el nivel ""65""."
+QuizText,1,quiz38,"Pregunta:<br><yellow> Aina tiene una ""bufanda"" envuelta alrededor de su rifle de asalto favorito. <c><br>¿SÍ o NO?"
+QuizText,1,quiz38_1,"Aina tiene una ""bufanda"" envuelta"
+QuizText,1,quiz38_2,alrededor de su rifle de asalto favorito.
+QuizText,1,quiz39,"Pregunta:<br><yellow> El ""Pargo Burbuja Veterano"" aparece en Retem Sur. <c><br>¿SÍ o NO?"
+QuizText,1,quiz39_1,"Aparece el ""Pargo Burbuja Veterano"""
+QuizText,1,quiz39_2,en Retem Sur.
+QuizText,1,quiz40,"Pregunta:<br><yellow> Restasigne tiene hojas de ""cuatro lados"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz40_1,Restasigne tiene
+QuizText,1,quiz40_2,"Hojas de ""cuatro lados""."
+QuizText,1,quiz41,"Pregunta:<br><yellow> Hay un total de ""3"" Datapods en Mt. Magnus. <c><br>¿SÍ o NO?"
+QuizText,1,quiz41_1,"Hay un total de ""3"" Datapods"
+QuizText,1,quiz41_2,en el monte Magnus.
+QuizText,1,quiz42,"Pregunta:<br><yellow> La altura máxima permitida en la creación de personajes es ""205"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz42_1,La altura máxima permitida en el personaje.
+QuizText,1,quiz42_2,"la creación es ""205""."
+QuizText,1,quiz43,"Pregunta:<br><yellow> Los efectos de impulso del grupo están determinados por el ""nombre"" del grupo. <c><br>¿SÍ o NO?"
+QuizText,1,quiz43_1,Los efectos de Party Boost están determinados
+QuizText,1,quiz43_2,"por el ""nombre"" del partido."
+QuizText,1,quiz44,Pregunta:<br><yellow> Existe un material de recolección conocido como “Sardinas Light Retem” <c><br>¿SI o NO?
+QuizText,1,quiz44_1,Existe un material de recolección conocido como
+QuizText,1,quiz44_2,"""Sardinas Retem Ligeras"""
+QuizText,1,quiz45,"Pregunta:<br><yellow> Una de las tareas de Berkman te lleva al ""Monte Mahinapali"",<br>un lugar con una vista nostálgica. <c><br>¿SÍ o NO?"
+QuizText,1,quiz45_1,"Una de las tareas de Berkman te lleva al ""Monte Mahinapali"","
+QuizText,1,quiz45_2,un lugar con una vista nostálgica.
+QuizText,1,quiz46,"Pregunta:<br><yellow> En la tarea ""Favores para los cinco"", Kukka te pide que le entregues una ""piel"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz46_1,"En la tarea ""Favores para los Cinco"","
+QuizText,1,quiz46_2,"Kukka te pide que le entregues una ""piel""."
+QuizText,1,quiz47,"Pregunta:<br><yellow> Hay un total de ""113"" contenedores de objetos rojos en Aelio. <c><br>¿SÍ o NO?"
+QuizText,1,quiz47_1,"Hay un total de ""113"""
+QuizText,1,quiz47_2,Contenedores de artículos rojos en Aelio.
+QuizText,1,quiz48,"Pregunta:<br><yellow> La persona que canta en el escenario de Retem City es ""Garoa"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz48_1,La persona que canta en el escenario en
+QuizText,1,quiz48_2,"La ciudad de Retem es ""Garoa""."
+QuizText,1,quiz49,"Pregunta:<br><yellow> Las armas de la serie ""Kaizaar"" se pueden cambiar por ""999"" Icicle Orbs. <c><br>¿SÍ o NO?"
+QuizText,1,quiz49_1,"Las armas de la serie ""Kaizaar"" pueden ser"
+QuizText,1,quiz49_2,"intercambiado por ""999"" Icicle Orbs."
+QuizText,1,quiz50,"Pregunta:<br><yellow> El arma ""Primm Rod"" requiere ""Photon Scales"" para desbloquear sus potenciales. <c><br>¿SÍ o NO?"
+QuizText,1,quiz50_1,"El arma ""Primm Rod"" requiere"
+QuizText,1,quiz50_2,"""Escalas de Fotones"" para desbloquear sus Potenciales."
+QuizText,1,quiz51,"Pregunta:<br><yellow> Se requiere ""C/Deftness III"" para cambiar por la cápsula de aumento ""C/Ael Domina"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz51_1,"Se requiere ""C/Deftness III"" para canjear por"
+QuizText,1,quiz51_2,"la Cápsula de Aumento ""C/Ael Domina""."
+QuizText,1,quiz52,"Pregunta:<br><yellow> La variante de color del arma en la serie ""Primm"" es ""amarillo"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz52_1,"El arma variante de color en el ""Primm"""
+QuizText,1,quiz52_2,"La serie es ""amarilla""."
+QuizText,1,quiz53,"Pregunta:<br><yellow> El potencial de la serie de armas ""Primm"" es la ""Unidad Indomable"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz53_1,"El potencial de la serie de armas ""Primm"""
+QuizText,1,quiz53_2,"es ""Unidad Indomable""."
+QuizText,1,quiz54,"Pregunta:<br><yellow> El nombre del tercer quintillizo de Kvaris es ""Kukka"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz54_1,El tercer quintillizo de Kvaris
+QuizText,1,quiz54_2,"El nombre es ""Kukká""."
+QuizText,1,quiz55,"Pregunta:<br><yellow> ""Lysas"" es el abuelo de las quintillizas Kvaris. <c><br>¿SÍ o NO?"
+QuizText,1,quiz55_1,"""Lysas"" es el abuelo del"
+QuizText,1,quiz55_2,Quintillizos de Kvaris.
+QuizText,1,quiz56,"Pregunta:<br><yellow> ""Chitose"" trabaja con Berkman en el Stia Camp. <c><br>¿SÍ o NO?"
+QuizText,1,quiz56_1,"""Chitose"" trabaja bajo Berkman"
+QuizText,1,quiz56_2,en el Campamento Stia.
+QuizText,1,quiz57,"Pregunta:<br><yellow> Hay un total de tres partes destructibles en ""Lizentos"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz57_1,Hay un total de tres destructibles.
+QuizText,1,quiz57_2,"partes de ""Lizentos""."
+QuizText,1,quiz58,"Pregunta:<br><yellow> El padre de Aina, Garoa, tiene ""38 años"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz58_1,"El padre de Aina, Garoa,"
+QuizText,1,quiz58_2,"tiene ""38 años""."
+QuizText,1,quiz59,"Pregunta:<br><yellow> La persona que hace trabajo agrícola en Aelio Town es ""Agri"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz59_1,La persona que realiza trabajos agrícolas en
+QuizText,1,quiz59_2,"La ciudad de Aelio es ""Agri""."
+QuizText,1,quiz29,"Pregunta:<br><yellow> Los ""Moongaze Rappies"" usan máscaras. <c><br>¿SÍ o NO?"
+QuizText,1,quiz29_1,"""Rappies de la mirada de la luna"""
+QuizText,1,quiz29_2,usar máscaras.
+QuizText,1,quiz60,"Pregunta:<br><yellow> Los enemigos aterradores también se llaman ""veteranos"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz60_1,Los enemigos aterradores también son
+QuizText,1,quiz60_2,"llamados ""veteranos""."
+QuizText,1,quiz61,"Pregunta:<br><yellow> Estar incapacitado en un sector de combate hará que el nivel de PSE ""baje"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz61_1,Estar incapacitado en un Sector de Combate
+QuizText,1,quiz61_2,"hacer que el nivel de PSE ""baje""."
+QuizText,1,quiz62,"Pregunta:<br><yellow> Lost Central fue destruida debido a un ataque de ""FORMERS"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz62_1,Lost Central fue destruida debido a un
+QuizText,1,quiz62_2,"Ataque de los ""ANTERIORES""."
+QuizText,1,quiz63,"Pregunta:<br><yellow> Los enemigos antiguos también se llaman ""malévolos"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz63_1,Los enemigos antiguos también son
+QuizText,1,quiz63_2,"llamado ""malévolo""."
+QuizText,1,quiz64,"Pregunta:<br><yellow> El ""Región Mag resistente al frío"" se encuentra en Kvaris. <c><br>¿SÍ o NO?"
+QuizText,1,quiz64_1,"La ""Región Mag resistente al frío"""
+QuizText,1,quiz64_2,Se encuentra en Kvaris.
+QuizText,1,quiz65,Pregunta:<br><yellow> Siempre se producirá una ráfaga de PSE después de completar una prueba cooperativa de Aina y Manon. <c><br>¿SÍ o NO?
+QuizText,1,quiz65_1,Siempre se producirá una ráfaga de PSE después de completar
+QuizText,1,quiz65_2,una prueba cooperativa de Aina y Manon.
+QuizText,1,quiz66,"Pregunta:<br><yellow> Para completar la tarea ""Observar: PSE Burst"", debes observar un PSE Burst tres veces. <c><br>¿SÍ o NO?"
+QuizText,1,quiz66_1,"Para completar la tarea ""Observar: PSE Burst"","
+QuizText,1,quiz66_2,debes observar un PSE Burst tres veces.
+QuizText,1,quiz67,"Pregunta:<br><yellow> El desarrollador de equipos ARKS, Wergans, tiene una cicatriz en su ""ojo derecho"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz67_1,"Wergans, desarrollador de equipos ARKS, tiene una cicatriz"
+QuizText,1,quiz67_2,"en su ""ojo derecho""."
+QuizText,1,quiz68,"Pregunta:<br><yellow> El ""Arma N-EXP"" posee el aumento especial ""Hyperio"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz68_1,"El ""Arma N-EXP"" posee el"
+QuizText,1,quiz68_2,"Aumento especial ""Hyperio""."
+QuizText,1,quiz69,"Pregunta:<br><yellow> Asumiendo que cada accesorio solo tiene un costo de 1, puedes equipar hasta ""18"" accesorios. <c><br>¿SÍ o NO?"
+QuizText,1,quiz69_1,"Suponiendo que cada accesorio solo tiene un costo de 1,"
+QuizText,1,quiz69_2,"puedes equipar hasta ""18"" accesorios."
+QuizText,1,quiz70,"Pregunta:<br><yellow> La pintura corporal se puede cambiar desde el menú ""Editar cuerpo"" en el salón. <c><br>¿SÍ o NO?"
+QuizText,1,quiz70_1,La pintura corporal se puede cambiar desde el
+QuizText,1,quiz70_2,"Menú ""Editar Cuerpo"" en el Salón."
+QuizText,1,quiz71,"Pregunta:<br><yellow> Active Sonar no reacciona a ""Restasigne"" o ""Reversasigne"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz71_1,La sonda activa no reacciona
+QuizText,1,quiz71_2,"""Restasigne"" o ""Reversasigne""."
+QuizText,1,quiz72,"Pregunta:<br><yellow> La misión urgente ""Defensa de la plataforma minera: Kvaris"" tiene lugar en el ""Campo nevado de Danann"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz72_1,"La misión urgente ""Defensa de la plataforma minera: Kvaris"""
+QuizText,1,quiz72_2,"tiene lugar en el ""Campo de nieve de Danann""."
+QuizText,1,quiz73,"Pregunta:<br><yellow> La comida rápida que utiliza 10 frutas aumentará los PP en ""20,0"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz73_1,Comida Rápida que utiliza 10 frutas
+QuizText,1,quiz73_2,"aumentará el PP en ""20,0""."
+QuizText,1,quiz74,"Pregunta:<br><yellow> La habilidad de clase ""Hunter Physique"" tiene un tiempo de reutilización de 180 segundos. <c><br>¿SÍ o NO?"
+QuizText,1,quiz74_1,"La habilidad de clase ""Hunter Physique"" tiene una"
+QuizText,1,quiz74_2,tiempo de reutilización de 180 segundos.
+QuizText,1,quiz75,"Pregunta:<br><yellow> ""Vanishing Path II"" es un capullo en ""Kvaris"". <c><br>¿SÍ o NO?"
+QuizText,1,quiz75_1,"""Vanishing Path II"" es un capullo"
+QuizText,1,quiz75_2,"en ""Kvaris""."
+QuizText,1,quiz76,"Pregunta:<br><yellow> Al completar una torre por primera vez, ganas 3 puntos de habilidad. <c><br>¿SÍ o NO?"
+QuizText,1,quiz76_1,"Al completar una torre por primera vez,"
+QuizText,1,quiz76_2,ganas 3 puntos de habilidad.
+QuizText,1,quiz77,"Pregunta:<br><yellow> Las lanzas cableadas tienen un ""alcance perfecto"" en el que el daño puede variar. <c><br>¿SÍ o NO?"
+QuizText,1,quiz77_1,"Las lanzas cableadas tienen un ""alcance perfecto"""
+QuizText,1,quiz77_2,en el que el daño puede variar.
+QuizText,1,quiz78,Pregunta:<br><yellow> El almacenamiento temporal puede almacenar 150 artículos. <c><br>¿SÍ o NO?
+QuizText,1,quiz78_1,El almacenamiento temporal puede
+QuizText,1,quiz78_2,almacenar 150 artículos.
+QuizText,1,quiz79,"Pregunta:<br><yellow> Hay un total de ""9"" sectores en Aelio, incluida Central City. <c><br>¿SÍ o NO?"
+QuizText,1,quiz79_1,"Hay un total de ""9"" sectores en"
+QuizText,1,quiz79_2,"Aelio, incluida Central City."
+QuizText,1,quiz80,"Pregunta:<br><yellow> Los enemigos mejorados fortalecen el ""ataque y defensa"" de los enemigos cercanos. <c><br>¿SÍ o NO?"
+QuizText,1,quiz80_1,Los enemigos mejorados fortalecen el
+QuizText,1,quiz80_2,"""Ataque y Defensa"" de enemigos cercanos."

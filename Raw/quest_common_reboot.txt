@@ -1,0 +1,2140 @@
+quest_common_reboot.text was created: 04-07-2026 10:44:39
+Filesize is: 189232 bytes
+
+CocoonFail
+Group 0
+Cocoon_Fail_None - なし
+Cocoon_Fail_Time - 制限時間：$(0)
+Cocoon_Fail_Fall - 落下回数：$(0)
+Cocoon_Fail_Dead - 戦闘不能回数：$(0)
+
+Group 1
+Cocoon_Fail_None - N / A
+Cocoon_Fail_Time - Límite de tiempo: $(0)
+Cocoon_Fail_Fall - Caídas: $(0)
+Cocoon_Fail_Dead - Tiempos de incapacidad: $(0)
+
+
+CocoonMainMission
+Group 0
+Cocoon_Main_Goal - フィニッシュポイントに到達する
+Cocoon_Main_Target - $(0)を倒す
+Cocoon_Main_TargetVolume - $(0)を$(1)体倒す
+Cocoon_Main_EnemyValue - エネミーを$(0)体倒す
+Cocoon_Main_AllTarget - 全てのエネミーを倒す
+
+Group 1
+Cocoon_Main_Goal - Llega al punto final.
+Cocoon_Main_Target - Derrota al $(0).
+Cocoon_Main_TargetVolume - Derrota a $(1) enemigos objetivo ($(0)).
+Cocoon_Main_EnemyValue - Derrota a $(0) enemigos.
+Cocoon_Main_AllTarget - Derrota a todos los enemigos.
+
+
+CocoonSubMission
+Group 0
+Cocoon_Sub_Target - %(EnemyName)$(0)を倒してクリア
+Cocoon_Sub_TargetVolume - %(EnemyName)を$(0)%(num)体倒してクリア
+Cocoon_Sub_Time - %(Time) 未満でクリア
+Cocoon_Sub_Fall - 落下回数$(0)%(num)回未満でクリア
+Cocoon_Sub_Dead - 戦闘不能回数$(0)%(num)回未満でクリア
+Cocoon_Sub_Complete - サイドミッションを$(0)すべて達成してクリア
+Cocoon_Sub_Volume - エネミーを$(0)%(num)体倒してクリア
+Cocoon_Sub_Damage - %(Damage)以上のダメージを$(0)%(num)回以上与えてクリア
+Cocoon_Sub_Hit - ダメージ回数$(0)%(num)回未満でクリア
+Cocoon_Sub_Coin - ポイントキューブを$(0)%(num)個取得してクリア
+Cocoon_Sub_Down - エネミーを%(num)回$(0)ダウンさせてクリア
+Cocoon_Sub_Action - %(action)の$(0)使用%(num)回未満でクリア
+Cocoon_Sub_TargetVolumeLimit - エネミー討伐数$(0)%(num)体未満でクリア
+Cocoon_Sub_CocoonPoint - コクーンポイント$(0)%(num)ポイント以上でクリア
+Cocoon_Sub_DroneLevel - ドロームの追従レベルが$(0)Lv.3の状態を維持してクリア
+Cocoon_Sub_DiveAttack - ダイブアタックでエネミーに$(0)%(num)以上ダメージを与えてクリア
+Cocoon_Sub_CoreHit - エネミーの弱点部位に%(num)回$(0)攻撃を命中させてクリア
+Cocoon_Sub_FallDownEnemy - エネミーを%(num)体$(0)落下させてクリア
+Cocoon_Sub_Dodged - エネミーの攻撃を%(num)回$(0)ジャストガードか回避してクリア
+
+Group 1
+Cocoon_Sub_Target - Derrota a $(0)%(EnemyName).
+Cocoon_Sub_TargetVolume - Derrota a $(0)%(num) enemigos objetivo (%(EnemyName)) y elimina.
+Cocoon_Sub_Time - Completa before %(Time).
+Cocoon_Sub_Fall - Completa without falling$(0)%(num) times.
+Cocoon_Sub_Dead - Completa without being$(0)incapacitated %(num) times.
+Cocoon_Sub_Complete - Completa y completa todas las misiones secundarias.
+Cocoon_Sub_Volume - Derrota a $(0)%(num) enemigos y elimina.
+Cocoon_Sub_Damage - Inflige más de %(Daño) dmg$(0)%(num) o más veces.
+Cocoon_Sub_Hit - Completa having taken damage$(0)fewer than %(num) times.
+Cocoon_Sub_Coin - Obtenga %(num) de cubos de puntos.
+Cocoon_Sub_Down - Derriba enemigos %(num) veces$(0) y elimina.
+Cocoon_Sub_Action - Completa having used %(action)$(0)fewer than %(num) times.
+Cocoon_Sub_0001 - <space>
+Cocoon_Sub_TargetVolumeLimit - Completa having suppressed less$(0)than %(num) enemies.
+Cocoon_Sub_DroneLevel - Mantén el nivel $(0) de tu Drome pirateado en 3 para limpiarlo.
+Cocoon_Sub_DiveAttack - Ataque en picado a los enemigos para %(num) o más de daño y despeje.
+Cocoon_Sub_CoreHit - Golpea los puntos débiles del enemigo %(num) veces y límpialo.
+Cocoon_Sub_FallDownEnemy - Haz que %(num) enemigos caigan y se despejen.
+Cocoon_Sub_Dodged - Protege o esquiva los ataques enemigos %(num) veces y despeja.
+
+
+CocoonActionName
+Group 0
+Action_Name_Jump - ジャンプ
+Action_Name_Step - ステップ
+Action_Name_HealTank - レスタサイン
+Action_Name_PhotonBlast - フォトンブラスト
+Action_Name_Glide - グライド
+Action_Name_Dash - フォトンダッシュ
+Action_Name_Tech - テクニック
+Action_Name_PA - PA
+Action_Name_TechPA - テクニック/PA
+
+Group 1
+Action_Name_Jump - Saltar
+Action_Name_Step - Esquivar
+Action_Name_HealTank - Restasignar
+Action_Name_PhotonBlast - Explosión de fotones
+Action_Name_Glide - Planeo
+Action_Name_Dash - Dash de fotones
+Action_Name_Tech - Técnica
+Action_Name_PA - Pensilvania
+Action_Name_TechPA - Técnica / PA
+
+
+CocoonUITitle
+Group 0
+Cocoon_UITitle_Main_Mission - メインミッション
+Cocoon_UITitle_Sub_Mission - サイドミッション
+Cocoon_UITitle_Failure - 失敗条件
+UITitle_Trial - トライアル
+UITitle_World_Trial - ワールドトライアル
+UITitle_FieldRace - フィールドレース
+Trinites_UITitle_Score - スコア
+UITitle_EndCondition - クエスト終了条件
+UITitle_ChipClearCondition - 能力強化条件
+
+Group 1
+Cocoon_UITitle_Main_Mission - Misión principal
+Cocoon_UITitle_Sub_Mission - Misión secundaria
+Cocoon_UITitle_Failure - Condiciones de falla
+UITitle_Trial - Ensayos
+UITitle_World_Trial - Pruebas mundiales
+UITitle_FieldRace - Carrera de campo
+Trinites_UITitle_Score - Puntaje
+UITitle_EndCondition - Condiciones de finalización de la misión
+UITitle_ChipClearCondition - Condiciones de mejora de habilidades
+
+
+QuestCommon
+Group 0
+CountDownTime - クエスト開始まで残り$(0)秒
+TimeTextMS - $(0):$(1)
+TimeTextHMS - $(0):$(1):$(2)
+NumberTextCPM - $(0)/$(1)
+QuestTitle - クエスト目標
+Trinites_Update_SideMission - サイドミッション更新
+ScorePt - $(0)Pt
+LastDungeon_Buff_Atk001 - 通常攻撃の威力上昇効果が発生しました。
+LastDungeon_Buff_Atk002 - PA・テクニックの威力上昇効果が発生しました。
+LastDungeon_Buff_Atk003 - ダイブアタックの威力上昇効果が発生しました。
+LastDungeon_Buff_Atk004 - ステップカウンターの威力上昇効果が発生しました。
+BuffLineText_Base - 特定の条件を満たしたため、$(0)以下の効果が発生しました。<br>$(1)
+BuffLineText_Target_1 - 参加者全員に
+BuffLineText_Target_2 - あなたに
+BuffLineText_ConditionBase - $(0) Lv.$(1)
+ScriptSequencer_Wait - 他のプレイヤーを待っています。
+BeginnerBlockWrongRegion - ビギナーブロックでは別リージョンのクエストは開始できません。
+SkipCountDown - 参加メンバーが集合したことにより、クエストを即時開始します。
+QuestPointMagnifiUpFromTime - /delay2 探索時間経過により<br>取得ポイント倍率が$(0)％アップ！（現在の倍率：$(1)％）
+PartyClearRanking - あなたのパーティーの順位：$(0)位
+3452_25 - 30000ポイント到達！（現在の進捗率：25%）
+3452_50 - 60000ポイント到達！（現在の進捗率：50%）
+3452_70 - 84000ポイント到達！（現在の進捗率：70%）
+3452_90 - 108000ポイント到達！（現在の進捗率：90%）
+MessageOnSomeoneQuestDrop - クエストの参加者が$(0)人になりました。
+
+Group 1
+CountDownTime - La misión comenzará en $(0) segundos.
+TimeTextMS - $(0):$(1)
+TimeTextHMS - $(0):$(1):$(2)
+NumberTextCPM - $(0)/$(1)
+QuestTitle - Objetivo de la misión
+Trinites_Update_SideMission - Misiones secundarias actualizadas
+ScorePt - $(0)punto
+LastDungeon_Buff_Atk001 - Se otorga el beneficio de aumento de potencia de ataque normal.
+LastDungeon_Buff_Atk002 - Mejora de aumento de potencia técnica/PA concedida.
+LastDungeon_Buff_Atk003 - Mejora de aumento de potencia de ataque en picado otorgada.
+LastDungeon_Buff_Atk004 - Se otorga el beneficio de aumento de potencia de contraataque lateral.
+BuffLineText_Base - Los siguientes efectos de impulso $(0) se activaron porque se cumplieron las<br>condiciones especificadas.<br>$(1)
+BuffLineText_Target_1 - Para todos los participantes
+BuffLineText_Target_2 - Para ti
+BuffLineText_ConditionBase - $(0) Nivel$(1)
+ScriptSequencer_Wait - Esperando a otros jugadores.
+BeginnerBlockWrongRegion - No puedes iniciar misiones en otras regiones desde el bloque para principiantes.
+SkipCountDown - La misión comenzará inmediatamente una vez que todos los miembros se hayan unido.
+QuestPointMagnifiUpFromTime - /delay2 ¡El multiplicador de puntos ganados aumenta $(0)% con el tiempo de exploración transcurrido <br>! (multiplicador actual: $(1)%)
+PartyClearRanking - Rango de tu grupo: $(0)
+3452_25 - ¡Conseguiste 30.000 puntos! (Progreso actual: 25%)
+3452_50 - ¡Conseguiste 60.000 puntos! (Progreso actual: 50%)
+3452_70 - ¡Logró 84.000 puntos! (Progreso actual: 70%)
+3452_90 - ¡Logró 108.000 puntos! (Progreso actual: 90%)
+MessageOnSomeoneQuestDrop - Ahora hay $(0) miembros de Quest.
+
+
+Reward
+Group 0
+Cocoon_Reward_SkillPoint - スキルポイント
+Cocoon_Reward_SkillPointNum - $(0)ポイント
+Cocoon_Reward_Clear - $(0)クリア
+
+Group 1
+Cocoon_Reward_SkillPoint - Puntos de habilidad
+Cocoon_Reward_SkillPointNum - $(0) Punto(s)
+Cocoon_Reward_Clear - Borrar $(0)
+
+
+Result
+Group 0
+QuestClear - $(0)クリア
+
+Group 1
+QuestClear - Borrar $(0)
+
+
+TrialFailure
+Group 0
+f0 - クエストリタイアを選択
+f1 - タイムオーバー！
+f2 - （仮）防衛失敗
+f3 - 戦闘不能回数上限！
+f4 - 落下回数上限！
+f5 - トライアル“$(0)”失敗
+f6 - サイドミッションの失敗数オーバー！
+f7 - クエスト終了<br>全LPを消失！
+f8 - タイムオーバー！
+
+Group 1
+f0 - Misión abortada
+f1 - ¡Se superó el límite de tiempo!
+f3 - ¡Se superó el límite de incapacitación!
+f4 - ¡Se superó el límite de caída!
+f5 - ¡La prueba “$(0)” falló!
+f6 - ¡Se superó el límite de misiones secundarias fallidas!
+f7 - Misión terminada<br>¡Todos los LP perdidos!
+
+
+TrialCommon
+Group 0
+BeginMsgTemplate - <yellow>クエスト目標　$(0)<c>
+SuccessMsg_1 - <yellow>クエストクリア！<c>
+SuccessMsg_2 - <yellow>出現したテレパイプで帰還せよ<c>
+FailureMsg - <yellow>クエスト失敗！<c>
+RemainPoint - 残り$(0)ポイント
+IncidentQuestPoint - $(0)ポイントを得た
+QuestOpenMsg - 以下のクエストが解放されました。
+QuestOpenOther - 他
+TimeLimitRemainingSec - 制限時間まであと$(0)秒！
+TimeLimitRemainingMin - 制限時間まであと$(0)分！
+LifePointRemaining - 残りLP$(0)！
+QuotationMarks - 「$(0)」
+AchieveQuestPointMin - クエストポイント目標達成！　更にためるとリザルトランクＵＰのチャンス！
+AchieveQuestPointMax - 最大クエストポイント達成！
+UpdateMsgTemplate - <yellow>クエスト目標更新！　$(0)<c>
+ResetHalfDoll - N-ハーフドールが再度使用可能になりました
+TrigerActiveRetiredNotice - バトルトリガーの使用者がクエストを<br>リタイアしたことにより、フィールドに戻ります。
+TrigerJoinDiscardNotice - バトルトリガーの使用者がクエストを<br>破棄したことにより、フィールドに戻ります。
+FailureLimitRemaining - サイドミッションを<br>あと$(0)つ失敗するとクエスト失敗
+FailureLimitRemaining_Dead - あと$(0)回戦闘不能でクエスト失敗
+NextQuestLevel - $(0)のRank.$(1)が解放されました。
+AreaLimitRemineTimeSec - 制限時間まであと$(0)秒！
+AreaLimitRemineTimeMin - 制限時間まであと$(0)分！
+AreaLimitRemineTimeMinSec - 制限時間まであと$(0)分$(1)秒！
+AreaLimitTimeMoveNext - 制限時間経過<br>最深部に移動
+AllClearMoveNext - 最深部に移動
+AllDeathClearRemainingSec - 全滅から一定時間経過でクエスト終了
+LostAllLives - 全LPを消失！
+FinishTheQuest - <yellow>クエスト終了！<c>
+ReachedCertainNumberOfDeaths - 戦闘不能回数上限！
+TimeUp - タイムオーバー！
+
+Group 1
+BeginMsgTemplate - <yellow> Objetivo de la misión: $(0) <c>
+SuccessMsg_1 - <yellow> ¡Misión completada! <c>
+SuccessMsg_2 - <yellow> Utilice el Telepipe proporcionado para regresar. <c>
+FailureMsg - <yellow> ¡Misión fallida! <c>
+RemainPoint - Puntos restantes: $(0)
+IncidentQuestPoint - Puntos obtenidos: $(0)
+QuestOpenMsg - Se han desbloqueado las siguientes misiones.
+QuestOpenOther - Etc.
+TimeLimitRemainingSec - ¡Quedan $(0) segundos!
+TimeLimitRemainingMin - ¡Quedan $(0) minutos!
+LifePointRemaining - ¡Quedan $(0) LP!
+QuotationMarks - "$(0)"
+AchieveQuestPointMin - ¡Se alcanzó el objetivo de puntos de misión! ¡Recoge más para aumentar tu rango!
+AchieveQuestPointMax - ¡Puntos de misión máximos obtenidos!
+UpdateMsgTemplate - <yellow> ¡Objetivo de misión actualizado!$(0) <c>
+ResetHalfDoll - La muñeca N-Half Scape ahora se puede volver a utilizar.
+TrigerActiveRetiredNotice - El iniciador de Battle Trigger se ha retirado de la misión. Serás devuelto al campo.
+TrigerJoinDiscardNotice - El iniciador de Battle Trigger se ha retirado de la misión. Serás devuelto al campo.
+FailureLimitRemaining - Si fallas $(0) más en misiones secundarias, la misión fracasará
+FailureLimitRemaining_Dead - La misión falla si estás incapacitado $(0) veces
+NextQuestLevel - $(0) Rango $(1) desbloqueado
+AreaLimitRemineTimeSec - ¡Quedan $(0) segundos!
+AreaLimitRemineTimeMin - ¡Quedan $(0) minutos!
+AreaLimitRemineTimeMinSec - ¡Quedan $(0) minutos, $(1) segundos!
+AreaLimitTimeMoveNext - Se ha alcanzado el límite de tiempo.<br>Pasando al área final.
+AllClearMoveNext - Pasando a la zona final.
+AllDeathClearRemainingSec - La misión finalizará en un tiempo determinado después de que todos los miembros hayan quedado incapacitados.
+LostAllLives - ¡Todos los LP perdidos!
+FinishTheQuest - <yellow> ¡Misión terminada! <c>
+ReachedCertainNumberOfDeaths - ¡Se superó el límite de incapacitación!
+TimeUp - ¡Se acabó el tiempo!
+
+
+QuestFailureCondition
+Group 0
+None - なし
+TimeOver - $(0)以上経過する
+TrialFailure - 指定トライアルの失敗
+DeadCount - $(0)回戦闘不能になる
+FallCount - $(0)回落下する
+DeadMenu - クエストリタイアを選択
+FailureSideMission - サイドミッションを$(0)回失敗
+
+Group 1
+None - N / A
+TimeOver - El tiempo excede $(0)
+TrialFailure - Fracaso del ensayo designado
+DeadCount - Incapacitado $(0) veces
+FallCount - Caída $(0) veces
+DeadMenu - Misión abandonada
+FailureSideMission - Fallar misiones secundarias $(0) veces
+
+
+QuestSuccessCondition
+Group 0
+None - なし
+Story - 対象エネミーの撃破
+Trainia - メインミッションの達成
+Urgency - 対象エネミーの撃破
+Prize - 対象エネミーの撃破
+Colosseo - 対象エネミーの撃破<br>制限時間の経過
+Trinites - 最深部を目指す
+GoalGetter - エネミーを倒し目標を破壊する
+FinalAttacker - 対象エネミーの撃破
+Babel - 対象エネミーの撃破
+GrowUp - 最深部のエネミーを倒す
+Groom - 最深部のエネミーを倒す
+
+Group 1
+None - N / A
+Story - Derrota al enemigo objetivo
+Trainia - Completa la misión principal
+Urgency - Derrota al enemigo objetivo
+Prize - Derrota a los enemigos objetivo.
+Colosseo - Derrota a los enemigos objetivo<br>El límite de tiempo expira
+Trinites - Dirígete al área final
+GoalGetter - Derrota a los enemigos y destruye los objetivos.
+FinalAttacker - Derrota a los enemigos objetivo.
+Babel - Derrota a los enemigos objetivo.
+GrowUp - Derrota a los enemigos en la zona final.
+Groom - Derrota a los enemigos en la zona final.
+
+
+questblockade
+Group 0
+BlockadeMsg_1 - 現在このクエストを受注できません。詳しくは公式サイトをご確認ください
+
+Group 1
+BlockadeMsg_1 - Esta misión no se puede aceptar actualmente. Consulte el sitio del jugador para obtener más detalles.
+
+
+Common_highrank
+Group 0
+highrank_text01 - ハイランクセクション
+highrank_text02 - 【Rank.1】エネミーLv.5～
+highrank_text03 - 【Rank.2】エネミーLv.15～
+highrank_text04 - 【Rank.2】必要戦闘力：1184以上
+highrank_text05 - 【Rank.1】
+highrank_text06 - 【Rank.2】
+highrank_text07 - 必要戦闘力
+highrank_text08 - 【Rank.2】必要戦闘力：1184以上
+highrank_text09 - 【Rank.1】
+highrank_text10 - 【Rank.2】
+
+Group 1
+highrank_text01 - Sectores de alto rango
+highrank_text02 - [Rango 1] Nivel de enemigo 5+
+highrank_text03 - [Rango 2] Nivel de enemigo 15+
+highrank_text04 - [Rango 2] Poder de batalla requerido: 1184 o superior
+highrank_text05 - [Rango 1]
+highrank_text06 - [Rango 2]
+highrank_text07 - Poder de batalla requerido
+highrank_text08 - [Rango 2]Poder de batalla requerido: 1184 o superior
+highrank_text09 - [Rango 1]
+highrank_text10 - [Rango 2]
+
+
+RebootDefense
+Group 0
+DefensePurpose - クエスト目標
+DefensePurposeDetails - 資源採掘リグを防衛せよ！
+DefenseHP - 防衛対象耐久値
+DefenseMaterial - 取得ポイント
+DefenseMaterialPt - Pt
+WaveRemainTime - 残り時間
+WaveEndRemainTimeDetails - Wave.$(0)終了まで
+WaveStartRemainTimeDetails - Wave.$(0)開始まで
+DefenseNavigation - アドバイス
+MaterialEffectUseable - <yellow>$(0)<c>が使用可能になりました。
+MaterialEffectBaseRecovery - 耐久値回復
+MaterialEffectBaseBarrier - バリアシールド
+MaterialEffectSpeciallyArmedGatling - モバイルキャノン
+MaterialEffectSpeciallyArmedSnowBoard - フローティングボード
+MaterialEffectSpeciallyArmedMultiLockMissle - モバイルキャノンM2
+DiscriptionAccidentWall - 【SUDDEN INCIDENT!!】<br>阻塞壁<yellow>バリゲール<c>が出現！　進路の妨害に注意せよ！
+DiscriptionAccidentErosionCoreRush - 【SUDDEN INCIDENT!!】<br>拠点襲撃機<yellow>バックハック<c>が出現！　資源採掘リグから排除せよ！
+DiscriptionAccidentErosionGunRush - 【SUDDEN INCIDENT!!】<br>中距離重砲<yellow>メルドラーム<c>が出現！　攻撃開始前に撃破せよ！
+DiscriptionAccidentBoostEnemy - 【SUDDEN INCIDENT!!】<br>エンハンスドエネミーの一群を確認！　強力な攻撃に注意せよ！
+NoticeDestroyAllBase - 全資源採掘リグの被害甚大！<br>敵勢力が攻勢を停止……順次撤退する模様……！
+
+Group 1
+DefensePurpose - Objetivo de la misión
+DefensePurposeDetails - ¡Defiende la plataforma minera!
+DefenseHP - Objetivo de defensa Integridad estructural
+DefenseMaterial - Puntos ganados
+DefenseMaterialPt - puntos
+WaveRemainTime - Tiempo restante
+WaveEndRemainTimeDetails - Ola $(0) tiempo restante
+WaveStartRemainTimeDetails - Tiempo hasta que comience la ola $(0)
+DefenseNavigation - Consejo
+MaterialEffectUseable - Ahora puedes usar<yellow>$(0)<c>.
+MaterialEffectBaseRecovery - Recuperar la integridad estructural
+MaterialEffectBaseBarrier - Escudo de barrera
+MaterialEffectSpeciallyArmedGatling - Cañón móvil
+MaterialEffectSpeciallyArmedSnowBoard - tablero flotante
+MaterialEffectSpeciallyArmedMultiLockMissle - Cañón móvil M2
+DiscriptionAccidentWall - [¡ALERTA DE EMERGENCIA!]<br><yellow> ¡Barrigale<c>detectado! ¡Cuidado con posibles interferencias en el rumbo!
+DiscriptionAccidentErosionCoreRush - [¡ALERTA DE EMERGENCIA!] ¡<br> Drone de asalto<yellow>Backhack<c>ha aparecido! ¡Sácalo de la plataforma minera!
+DiscriptionAccidentErosionGunRush - [¡ALERTA DE EMERGENCIA!] ¡<br> Artillería pesada de rango medio<yellow>Meldrum<c>ha aparecido! ¡Destrúyelo antes de que pueda atacar!
+DiscriptionAccidentBoostEnemy - [¡ALERTA DE EMERGENCIA!]<br>¡Se ha visto un grupo de enemigos mejorados! ¡Cuidado con sus poderosos ataques!
+NoticeDestroyAllBase - ¡Todas las plataformas mineras gravemente dañadas!<br>¡El enemigo ha detenido su asalto y se retira!
+
+
+BattleTriggerCommon
+Group 0
+BattleTrigger_ConsumeItem - $(0)を消費しました。
+BattleTrigger_Activate_Success - $(0)が、トリガーポータルを起動しました。
+BattleTrigger_Activate_Error_PartyMember - トリガーポータルは、パーティーリーダーのみが起動できます。
+BattleTrigger_Deactivate - バトルトリガーの使用者がこのセクションから移動したため、トリガーポータルが停止しました。
+BattleTrigger_Deactivate_LostItem - トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
+BattleTrigger_Deactivate_QuestDrop - トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
+BattleTrigger_Deactivate_Worldmap - 異なるトリガーポータルが起動したため、起動中だったポータルが停止しました。
+BattleTrigger_Activate_Marge - トリガーポータルの稼働状況が、参加したパーティー側の状態に更新されました。
+Questcounter_Deactivate_QuestDrop - 必要なバトルトリガーの個数が不足したため、クエストを破棄しました。
+
+Group 1
+BattleTrigger_ConsumeItem - $(0) consumido.
+BattleTrigger_Activate_Success - $(0) ha abierto un Portal de activación.
+BattleTrigger_Activate_Error_PartyMember - Los portales de activación solo pueden ser abiertos por el líder del grupo.
+BattleTrigger_Deactivate - El Portal Trigger se ha cerrado desde que el usuario de Battle Trigger se mudó a un Sector diferente.
+BattleTrigger_Deactivate_LostItem - El portal de activación se ha cerrado porque la cantidad de activadores de batalla necesarios es insuficiente.
+BattleTrigger_Deactivate_QuestDrop - El portal de activación se ha cerrado porque la cantidad de activadores de batalla necesarios es insuficiente.
+BattleTrigger_Deactivate_Worldmap - El Trigger Portal activo se cerró porque se abrió un Trigger Portal diferente.
+BattleTrigger_Activate_Marge - Se actualizó el estado operativo del Portal Trigger al de las partes participantes.
+Questcounter_Deactivate_QuestDrop - La misión ha sido abandonada porque la cantidad requerida de activadores de batalla se ha vuelto insuficiente.
+
+
+BlockMove
+Group 0
+BlockMoveFailed - ブロック移動に失敗しました。
+RegionMoveConfirm - $(0)リージョンのブロックに移動します。<br><br>クエストのマッチングはキャンセルされ、<br>受注中のクエストは破棄されます。<br>よろしいですか？
+RegionCityMoveConfirm - $(0)シティに移動します。<br>よろしいですか？
+RegionMoving - $(0)リージョンに移動中です。
+
+Group 1
+BlockMoveFailed - La transferencia en bloque falló.
+RegionMoveConfirm - 礀漀甀 琀漀 愀戀愀渀搀漀渀 挀甀爀爀攀渀琀氀礀 愀挀挀攀瀀琀攀搀 焀甀攀猀琀猀⸀㰀戀爀㸀䐀漀 礀漀甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀
+RegionCityMoveConfirm - Teletransportándose a $(0). ¿Está seguro?
+RegionMoving - Teletransportándose a $(0).
+
+
+ChallengeBuff
+Group 0
+UpdateToastMessage - 新しいチャレンジ設定が解放されました。
+CbEnemyHp01 - エネミー最大HP＋10％
+DescCbEnemyHp01 - エネミー最大HPが増加する。
+CbEnemyHp02 - エネミー最大HP＋20％
+DescCbEnemyHp02 - エネミー最大HPが増加する。
+CbEnemyHp03 - エネミー最大HP＋30％
+DescCbEnemyHp03 - エネミー最大HPが増加する。
+CbEnemyHp04 - エネミー最大HP＋40％
+DescCbEnemyHp04 - エネミー最大HPが増加する。
+CbEnemyHp05 - エネミー最大HP＋50％
+DescCbEnemyHp05 - エネミー最大HPが増加する。
+CbEnemyHp06 - エネミー最大HP＋60％
+DescCbEnemyHp06 - エネミー最大HPが増加する。
+CbEnemyHp07 - エネミー最大HP＋75％
+DescCbEnemyHp07 - エネミー最大HPが増加する。
+CbEnemyHp08 - エネミー最大HP＋100％
+DescCbEnemyHp08 - エネミー最大HPが増加する。
+CbEnemyHp09 - エネミー最大HP＋125％
+DescCbEnemyHp09 - エネミー最大HPが増加する。
+CbEnemyHp10 - エネミー最大HP＋150％
+DescCbEnemyHp10 - エネミー最大HPが増加する。
+CbEnemyAtkUp01 - エネミー攻撃力＋10％
+DescCbEnemyAtkUp01 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp02 - エネミー攻撃力＋20％
+DescCbEnemyAtkUp02 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp03 - エネミー攻撃力＋30％
+DescCbEnemyAtkUp03 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp04 - エネミー攻撃力＋40％
+DescCbEnemyAtkUp04 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp05 - エネミー攻撃力＋50％
+DescCbEnemyAtkUp05 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp06 - エネミー攻撃力＋60％
+DescCbEnemyAtkUp06 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp07 - エネミー攻撃力＋70％
+DescCbEnemyAtkUp07 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp08 - エネミー攻撃力＋80％
+DescCbEnemyAtkUp08 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp09 - エネミー攻撃力＋90％
+DescCbEnemyAtkUp09 - エネミーの攻撃力が増加する。
+CbEnemyAtkUp10 - エネミー攻撃力＋100％
+DescCbEnemyAtkUp10 - エネミーの攻撃力が増加する。
+FormidableEnemy - ランダムチャレンジC：ギガンティクス化
+DescFormidableEnemy - 一部のフロアでエネミーが<br>一定確率でギガンティクス化する。
+HighRankEnemy_cocoon25 - エネミーメガロティクス化25%
+DescHighRankEnemy_cocoon25 - 出現するエネミーの25%が<br>メガロティクス化する。
+HighRankEnemy_cocoon50 - エネミーメガロティクス化50%
+DescHighRankEnemy_cocoon50 - 出現するエネミーの50%が<br>メガロティクス化する。
+HighRankEnemy_cocoon75 - エネミーメガロティクス化75%
+DescHighRankEnemy_cocoon75 - 出現するエネミーの75%が<br>メガロティクス化する。
+HighRankEnemy_cocoon100 - エネミーメガロティクス化100%
+DescHighRankEnemy_cocoon100 - 出現するエネミーの100%が<br>メガロティクス化する。
+BoostController_cocoon - エネミーエンハンスドエネミー化
+DescBoostController_cocoon - 一部のエネミーが<br>エンハンスドエネミー化する。
+HighRankEnemy_cocoonBoss - 全ボスエネミーメガロティクス化
+DescHighRankEnemy_cocoonBoss - すべてのボスエネミーが<br>メガロティクス化する。
+BoostController_cocoonBoss - 全ボスエネミーエンハンサー付与
+DescBoostController_cocoonBoss - すべてのボスエネミーが<br>エンハンスドエネミー化する。
+RandomSetA - ランダムチャレンジA
+DescRandomSetA - 一部のフロアで<br>ランダムチャレンジが発生する。
+RandomSetB - ランダムチャレンジB
+DescRandomSetB - 一部のフロアで<br>ランダムチャレンジが発生する。
+RandomSetC - ランダムチャレンジC
+DescRandomSetC - 一部のフロアで<br>ランダムチャレンジが発生する。
+CbPlayerHarvest1 - レスタサイン消費数増加：Lv.1
+DescCbPlayerHarvest1 - レスタサインの消費数が2倍になる。
+CbPlayerHarvest2 - レスタサイン消費数増加：Lv.2
+DescCbPlayerHarvest2 - レスタサインの消費数が3倍になる。
+CbPlayerHarvest3 - レスタサイン消費数増加：Lv.3
+DescCbPlayerHarvest3 - レスタサインの消費数が4倍になる。
+CbPlayerHarvest4 - レスタサイン消費数増加：Lv.4
+DescCbPlayerHarvest4 - レスタサインの消費数が5倍になる。
+CbPlayerHarvest5 - レスタサイン消費数増加：Lv.5
+DescCbPlayerHarvest5 - レスタサインの消費数が6倍になる。
+CbPlayerRecoveryGauge1 - 各サイン最大所持数減少：Lv.1
+DescCbPlayerRecoveryGauge1 - レスタサインとリバーサーサインの<br>最大所持数が1個減少する。
+CbPlayerRecoveryGauge2 - 各サイン最大所持数減少：Lv.2
+DescCbPlayerRecoveryGauge2 - レスタサインとリバーサーサインの<br>最大所持数が2個減少する。
+CbPlayerRecoveryGauge3 - 各サイン最大所持数減少：Lv.3
+DescCbPlayerRecoveryGauge3 - レスタサインとリバーサーサインの<br>最大所持数が3個減少する。
+CbPlayerRecoveryGauge4 - 各サイン最大所持数減少：Lv.4
+DescCbPlayerRecoveryGauge4 - レスタサインとリバーサーサインの<br>最大所持数が4個減少する。
+CbPlayerPbGuageReduction2 - ランダムチャレンジB：PBゲージ増加量－90%
+DescCbPlayerPbGuageReduction2 - 一部のフロアでフォトンブラストの<br>ゲージ増加量が90%減少する。
+CbPlayerPpDecrease2 - ランダムチャレンジB：PP消費量＋30%
+DescCbPlayerPpDecrease2 - 一部のフロアで<br>PP消費量が30%増加する。
+CbPlayerContinuousDamage2 - ランダムチャレンジC：HP10秒毎－20
+DescCbPlayerContinuousDamage2 - 一部のフロアで<br>HPが10秒毎20減少する。
+Category2_QuestEnemyLevelUp_001 - エネミーレベルアップ：Lv.1
+DescCategory2_QuestEnemyLevelUp_001 - 出現するエネミーのレベルが＋1される。
+Category2_QuestEnemyLevelUp_002 - エネミーレベルアップ：Lv.2
+DescCategory2_QuestEnemyLevelUp_002 - 出現するエネミーのレベルが＋2される。
+Category2_QuestEnemyLevelUp_003 - エネミーレベルアップ：Lv.3
+DescCategory2_QuestEnemyLevelUp_003 - 出現するエネミーのレベルが＋3される。
+Category2_QuestEnemyLevelUp_004 - エネミーレベルアップ：Lv.4
+DescCategory2_QuestEnemyLevelUp_004 - 出現するエネミーのレベルが＋4される。
+BuffFirstLineMsg_1 - チャレンジ設定<br>$(0)
+BuffFirstLineMsg_2 - チャレンジ設定<br>$(0)<br>$(1)
+BuffFirstLineMsg_3 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)
+BuffFirstLineMsg_4 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+BuffFirstLineMsg_5 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+BuffFirstLineMsg_6 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+BuffFirstLineMsg_7 - チャレンジ設定$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+BuffFirstLineMsg_8 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+BuffFirstLineMsg_9 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+BuffFirstLineMsg_10 - チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+BuffAccidentLineMsg_1 - ランダムチャレンジ発生<br>$(0)
+BuffAccidentLineMsg_2 - ランダムチャレンジ発生<br>$(0)<br>$(1)
+BuffAccidentLineMsg_3 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)
+BuffAccidentLineMsg_4 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+BuffAccidentLineMsg_5 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+BuffAccidentLineMsg_6 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+BuffAccidentLineMsg_7 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+BuffAccidentLineMsg_8 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+BuffAccidentLineMsg_9 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+BuffAccidentLineMsg_10 - ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+HPDownLV2 - ランダムチャレンジA：HP－50%
+DescHPDownLV2 - 一部のフロアで<br>HPが50%減少する。
+PPDownLV2 - ランダムチャレンジA：PP－50
+DescPPDownLV2 - 一部のフロアで<br>PPが50減少する。
+Pyramid_EnemyContensTrigger - イコライジングエネミー弱体化
+DescPyramid_EnemyContensTrigger - イコライジングエネミーの<br>HPが50%減少し、撃破時の<br>周囲へのダメージが100%増加する。
+Pyramid_ClearCountInflictDamage - クリア回数で攻撃威力上昇
+DescPyramid_ClearCountInflictDamage - トリニテスのクリア回数に応じて<br>攻撃威力が上昇する。
+Pyramid_SClearCountCriticalRate - Sランククリア回数でクリティカル率上昇
+DescPyramid_SClearCountCriticalRate - トリニテスのSランククリア回数に応じて<br>クリティカル発生率が上昇する。
+Pyramid_InflictDamageIncrease_SideMissionClear - 攻撃威力＋５%
+Pyramid_InflictDamageIncrease - 攻撃威力＋25%
+DescPyramid_InflictDamageIncrease - 攻撃威力が25%上昇する。
+Pyramid_DamageCut_SideMissionClear - ダメージ耐性＋10％
+Pyramid_DamageCut - ダメージ耐性＋30％
+DescPyramid_DamageCut - ダメージ耐性が＋30％上昇する。
+Pyramid_AddCritical - クリティカル率＋30%
+DescPyramid_AddCritical - クリティカル発生率が30%上昇する。
+Pyramid_AddCriticalDamege - クリティカル威力＋50%
+DescPyramid_AddCriticalDamege - クリティカル時の威力が50%上昇する。
+Pyramid_AttackPpHealRateUp_SideMissionClear - 攻撃時PP回復量＋15%
+Pyramid_AttackPpHealRateUp - 攻撃時PP回復量＋100%
+DescPyramid_AttackPpHealRateUp - 攻撃時のPP回復量が100%増加する。
+Pyramid_PaTechniquePpDwon - PP消費量－30%
+DescPyramid_PaTechniquePpDwon - PP消費量が30%減少する。
+Pyramid_WeekPointDamegeUp - 弱点部位攻撃威力＋50%
+DescPyramid_WeekPointDamegeUp - 弱点攻撃時の攻撃威力が50%上昇する。
+Pyramid_EnemyKillCountHpAdd - エネミー撃破数で最大HP増加
+DescPyramid_EnemyKillCountHpAdd - トリニテスで倒したエネミーの数に応じて<br>最大HPが増加する。
+Pyramid_MaxHpAdd - HP増加＋50％
+DescPyramid_MaxHpAdd - HPが50％増加する。
+Pyramid_MaxPpAdd - PP増加＋20
+DescPyramid_MaxPpAdd - PPが20増加する。
+Pyramid_RecoveryGaugeIncrease - 各サイン最大所持数2倍
+DescPyramid_RecoveryGaugeIncrease - レスタサイン、リバーサーサインの<br>最大所持数が2倍になる。
+Pyramid_PbGuageIncrease - フォトンブラストゲージ自然蓄積量＋100％
+DescPyramid_PbGuageIncrease - フォトンブラストゲージの<br>自然蓄積量が100%増加する。
+Category1_QuestEnemyLevelOffset-5 - エネミーレベルダウン：Lv.5
+DescCategory1_QuestEnemyLevelOffset-5 - 出現するエネミーの<br>レベルがー５される。
+Category1_QuestEnemyLevelOffset-10 - エネミーレベルダウン：Lv.10
+DescCategory1_QuestEnemyLevelOffset-10 - 出現するエネミーの<br>レベルがー10される。
+Pyramid_EqualizingKillCountAddPp - イコライジングエネミー撃破数で最大PP増加
+DescPyramid_EqualizingKillCountAddPp - トリニテスで倒したイコライジングエネミー<br>の数に応じて最大PPが増加する。
+Pyramid_PbGuageBossKillIncrease - ボスエネミー撃破数でPB自然蓄積量増加
+DescPyramid_PbGuageBossKillIncrease - トリニテスで倒したボスエネミーの数に<br>応じてPBゲージの自然蓄積量が増加する。
+RecordSetA - クリア難度倍率最大化セット
+DescRecordSetA - クリア難度倍率が最大になる<br>チャレンジ項目をセットする。
+Category1_EnemyLevelToLevelCap - エネミーレベル最大化
+DescCategory1_EnemyLevelToLevelCap - 出現するエネミーのレベルが、<br>現在のプレイヤーのレベル上限と<br>同一になる。
+
+Group 1
+UpdateToastMessage - Se ha desbloqueado una nueva configuración de desafío.
+CbEnemyHp01 - HP máximo enemigo +10%
+DescCbEnemyHp01 - Aumenta el HP máximo del enemigo.
+CbEnemyHp02 - HP máximo enemigo +20%
+DescCbEnemyHp02 - Aumenta el HP máximo del enemigo.
+CbEnemyHp03 - HP máximo enemigo +30%
+DescCbEnemyHp03 - Aumenta el HP máximo del enemigo.
+CbEnemyHp04 - HP máximo del enemigo +40%
+DescCbEnemyHp04 - Aumenta el HP máximo del enemigo.
+CbEnemyHp05 - HP máximo del enemigo +50%
+DescCbEnemyHp05 - Aumenta el HP máximo del enemigo.
+CbEnemyHp06 - HP máximo del enemigo +60%
+DescCbEnemyHp06 - Aumenta el HP máximo del enemigo.
+CbEnemyHp07 - HP máximo del enemigo +75%
+DescCbEnemyHp07 - Aumenta el HP máximo del enemigo.
+CbEnemyHp08 - HP máximo del enemigo +100%
+DescCbEnemyHp08 - Aumenta el HP máximo del enemigo.
+CbEnemyHp09 - HP máximo enemigo +125%
+DescCbEnemyHp09 - Aumenta el HP máximo del enemigo.
+CbEnemyHp10 - HP máximo enemigo +150%
+DescCbEnemyHp10 - Aumenta el HP máximo del enemigo.
+CbEnemyAtkUp01 - Ataque enemigo +10%
+DescCbEnemyAtkUp01 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp02 - Ataque enemigo +20%
+DescCbEnemyAtkUp02 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp03 - Ataque enemigo +30%
+DescCbEnemyAtkUp03 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp04 - Ataque enemigo +40%
+DescCbEnemyAtkUp04 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp05 - Ataque enemigo +50%
+DescCbEnemyAtkUp05 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp06 - Ataque enemigo +60%
+DescCbEnemyAtkUp06 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp07 - Ataque enemigo +70%
+DescCbEnemyAtkUp07 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp08 - Ataque enemigo +80%
+DescCbEnemyAtkUp08 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp09 - Ataque enemigo +90%
+DescCbEnemyAtkUp09 - Aumenta el poder de ataque del enemigo.
+CbEnemyAtkUp10 - Ataque enemigo +100%
+DescCbEnemyAtkUp10 - Aumenta el poder de ataque del enemigo.
+FormidableEnemy - Desafío aleatorio C: Gigantix
+DescFormidableEnemy - Los enemigos tienen la posibilidad de convertirse en Gigantix en algunos pisos.
+HighRankEnemy_cocoon25 - Enemigos Megalotix 25%
+DescHighRankEnemy_cocoon25 - El 25% de los enemigos que aparecen se convierten en Megalotix.
+HighRankEnemy_cocoon50 - Enemigos Megalotix 50%
+DescHighRankEnemy_cocoon50 - El 50% de los enemigos que aparecen se convierten en Megalotix.
+HighRankEnemy_cocoon75 - Enemigos Megalotix 75%
+DescHighRankEnemy_cocoon75 - El 75% de los enemigos que aparecen se convierten en Megalotix.
+HighRankEnemy_cocoon100 - Enemigos megalotix 100%
+DescHighRankEnemy_cocoon100 - El 100% de los enemigos que aparecen se convierten en Megalotix.
+BoostController_cocoon - Enemigos mejorados
+DescBoostController_cocoon - Una parte de los enemigos se convierten en enemigos mejorados.
+HighRankEnemy_cocoonBoss - Enemigos jefes de Megalotix
+DescHighRankEnemy_cocoonBoss - Todos los jefes enemigos se convierten en Megalotix.
+BoostController_cocoonBoss - Potenciador de enemigos jefe
+DescBoostController_cocoonBoss - Todos los jefes enemigos se convierten en enemigos mejorados.
+RandomSetA - Desafío aleatorio A
+DescRandomSetA - Se activarán desafíos aleatorios en algunos pisos.
+RandomSetB - Desafío aleatorio B
+DescRandomSetB - Se activarán desafíos aleatorios en algunos pisos.
+RandomSetC - Desafío aleatorio C
+DescRandomSetC - Se activarán desafíos aleatorios en algunos pisos.
+CbPlayerHarvest1 - Aumentar el consumo de Restasigne: Lv. 1
+DescCbPlayerHarvest1 - El consumo de Restasign aumentará x2.
+CbPlayerHarvest2 - Aumentar el consumo de Restasigne: Lv. 2
+DescCbPlayerHarvest2 - El consumo de Restasign aumentará x3.
+CbPlayerHarvest3 - Aumentar el consumo de Restasigne: Lv. 3
+DescCbPlayerHarvest3 - El consumo de Restasign aumentará x4.
+CbPlayerHarvest4 - Aumentar el consumo de Restasigne: Lv. 4
+DescCbPlayerHarvest4 - El consumo de Restasign aumentará x5.
+CbPlayerHarvest5 - Aumentar el consumo de Restasigne: Lv. 5
+DescCbPlayerHarvest5 - El consumo de Restasign aumentará x6.
+CbPlayerRecoveryGauge1 - Se redujo el límite máximo de transporte de elementos firmados: Lv. 1
+DescCbPlayerRecoveryGauge1 - El límite máximo de transporte de Restasigne y Reversasigne disminuirá en 1.
+CbPlayerRecoveryGauge2 - Se redujo el límite máximo de transporte de elementos firmados: Lv. 2
+DescCbPlayerRecoveryGauge2 - El límite máximo de transporte de Restasigne y Reversasigne disminuirá en 2.
+CbPlayerRecoveryGauge3 - Se redujo el límite máximo de transporte de elementos firmados: Lv. 3
+DescCbPlayerRecoveryGauge3 - El límite máximo de acarreo de Restasigne y Reversasigne disminuirá en 3.
+CbPlayerRecoveryGauge4 - Se redujo el límite máximo de transporte de elementos firmados: Lv. 4
+DescCbPlayerRecoveryGauge4 - El límite máximo de acarreo de Restasigne y Reversasigne disminuirá en 4.
+CbPlayerPbGuageReduction2 - Desafío aleatorio B: Indicador PB -90 % de tasa de aumento
+DescCbPlayerPbGuageReduction2 - La tasa de aumento de tu indicador de explosión de fotones disminuirá en un 90% en algunos pisos.
+CbPlayerPpDecrease2 - Desafío aleatorio B: Consumo de PP +30%
+DescCbPlayerPpDecrease2 - Tu consumo de PP aumentará un 30% en algunos pisos.
+CbPlayerContinuousDamage2 - Desafío aleatorio C: -20 HP cada 10 segundos
+DescCbPlayerContinuousDamage2 - Tu HP disminuirá en 20 cada 10 segundos en algunos pisos.
+Category2_QuestEnemyLevelUp_001 - Subida de nivel del enemigo: Lv.1
+DescCategory2_QuestEnemyLevelUp_001 - Aumenta en 1 el nivel de los enemigos que aparecen.
+Category2_QuestEnemyLevelUp_002 - Subida de nivel del enemigo: Lv.2
+DescCategory2_QuestEnemyLevelUp_002 - Aumenta en 2 el nivel de los enemigos que aparecen.
+Category2_QuestEnemyLevelUp_003 - Subir de nivel enemigo: Lv.3
+DescCategory2_QuestEnemyLevelUp_003 - Aumenta en 3 el nivel de los enemigos que aparecen.
+Category2_QuestEnemyLevelUp_004 - Subir de nivel del enemigo: Lv.4
+DescCategory2_QuestEnemyLevelUp_004 - Aumenta en 4 el nivel de los enemigos que aparecen.
+BuffFirstLineMsg_1 - Configuración del desafío<br>$(0)
+BuffFirstLineMsg_2 - Configuración del desafío<br>$(0)<br>$(1)
+BuffFirstLineMsg_3 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)
+BuffFirstLineMsg_4 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+BuffFirstLineMsg_5 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+BuffFirstLineMsg_6 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+BuffFirstLineMsg_7 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+BuffFirstLineMsg_8 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+BuffFirstLineMsg_9 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+BuffFirstLineMsg_10 - Configuración del desafío<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+BuffAccidentLineMsg_1 - Desafío aleatorio activado<br>$(0)
+BuffAccidentLineMsg_2 - Desafíos aleatorios activados<br>$(0)<br>$(1)
+BuffAccidentLineMsg_3 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)
+BuffAccidentLineMsg_4 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+BuffAccidentLineMsg_5 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+BuffAccidentLineMsg_6 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+BuffAccidentLineMsg_7 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+BuffAccidentLineMsg_8 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+BuffAccidentLineMsg_9 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+BuffAccidentLineMsg_10 - Desafíos aleatorios activados<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+HPDownLV2 - Desafío aleatorio A: HP -50%
+DescHPDownLV2 - Tu HP disminuirá en un 50% en algunos pisos.
+PPDownLV2 - Desafío aleatorio A: PP -50
+DescPPDownLV2 - Tu PP disminuirá en 50 en algunos pisos.
+Pyramid_EnemyContensTrigger - Debilitar a los enemigos igualadores
+DescPyramid_EnemyContensTrigger - Reduce el HP del enemigo igualador en un<br>50 % y aumenta el daño a los<br>enemigos cercanos en un 100 % al morir.
+Pyramid_ClearCountInflictDamage - Aumentar la potencia de ataque por finalización
+DescPyramid_ClearCountInflictDamage - Aumenta tu potencia de ataque dependiendo de la cantidad de veces que elimines Trinitas.
+Pyramid_SClearCountCriticalRate - Aumentar la tasa crítica por finalización del rango S
+DescPyramid_SClearCountCriticalRate - Aumenta la tasa de golpes críticos dependiendo de la cantidad de veces que elimines Trinitas en el rango S.
+Pyramid_InflictDamageIncrease_SideMissionClear - Potencia de ataque +5%
+Pyramid_InflictDamageIncrease - Potencia de ataque +25%
+DescPyramid_InflictDamageIncrease - Aumenta la potencia de ataque en un 25%.
+Pyramid_DamageCut_SideMissionClear - Resistencia al daño +10%
+Pyramid_DamageCut - Resistencia al daño +30%
+DescPyramid_DamageCut - Aumenta la resistencia al daño en un 30%.
+Pyramid_AddCritical - Tasa crítica +30%
+DescPyramid_AddCritical - Aumenta la tasa de golpes críticos en un 30%.
+Pyramid_AddCriticalDamege - Potencia crítica +50%
+DescPyramid_AddCriticalDamege - Aumenta la potencia del golpe crítico en un 50%.
+Pyramid_AttackPpHealRateUp_SideMissionClear - Recuperación ofensiva de PP +15%
+Pyramid_AttackPpHealRateUp - Recuperación ofensiva de PP +100%
+DescPyramid_AttackPpHealRateUp - Aumenta la recuperación de PP al atacar en un 100%.
+Pyramid_PaTechniquePpDwon - Consumo de PP -30%
+DescPyramid_PaTechniquePpDwon - Reduce el consumo de PP en un 30%.
+Pyramid_WeekPointDamegeUp - Potencia de ataque de puntos débiles +50%
+DescPyramid_WeekPointDamegeUp - Aumenta la potencia de ataque al atacar puntos débiles en un 50%.
+Pyramid_EnemyKillCountHpAdd - Aumentar el HP máximo por enemigo derrotado
+DescPyramid_EnemyKillCountHpAdd - Aumenta Max HP dependiendo de la cantidad de enemigos que derrotes en Trinitas.
+Pyramid_MaxHpAdd - VIT +50%
+DescPyramid_MaxHpAdd - Aumenta los HP en un 50%.
+Pyramid_MaxPpAdd - PP +20%
+DescPyramid_MaxPpAdd - Aumenta el PP en un 20%.
+Pyramid_RecoveryGaugeIncrease - Límite máximo de transporte de artículos firmados +100%
+DescPyramid_RecoveryGaugeIncrease - Duplica la cantidad máxima de Restasigne y Reversasigne que puedes llevar.
+Pyramid_PbGuageIncrease - Acumulación del indicador de explosión de fotones naturales +100%
+DescPyramid_PbGuageIncrease - Aumenta la acumulación natural del indicador de explosión de fotones en un 100%.
+Category1_QuestEnemyLevelOffset-5 - Bajada de nivel del enemigo: -5 niveles
+DescCategory1_QuestEnemyLevelOffset-5 - Disminuye el nivel del enemigo en 5.
+Category1_QuestEnemyLevelOffset-10 - Bajada de nivel del enemigo: -10 niveles
+DescCategory1_QuestEnemyLevelOffset-10 - Disminuye el nivel del enemigo en 10.
+Pyramid_EqualizingKillCountAddPp - Aumentar el PP máximo por cada enemigo igualador derrotado
+DescPyramid_EqualizingKillCountAddPp - Aumenta el PP máximo dependiendo de la cantidad de enemigos igualadores que derrotes en Trinitas.
+Pyramid_PbGuageBossKillIncrease - Aumento natural de la acumulación del indicador PB por jefe enemigo derrotado
+DescPyramid_PbGuageBossKillIncrease - Aumenta la acumulación natural del indicador PB dependiendo de la cantidad de jefes enemigos que derrotes en Trinitas.
+RecordSetA - Borrar conjunto de maximización del multiplicador de dificultad
+DescRecordSetA - Añade un conjunto de desafíos que maximicen el multiplicador de dificultad de despeje.
+Category1_EnemyLevelToLevelCap - Maximizar el nivel del enemigo
+DescCategory1_EnemyLevelToLevelCap - Establece el nivel del enemigo en el nivel máximo<br>actual del jugador.
+
+
+TrinitesCommon
+Group 0
+Trinites_PointSymbol - ($(0)Pt)
+Trinites_FloorInfo - 現在のフロア:
+Trinites_FloorSymbol - $(0)
+Trinites_FailureCondition - サイドミッションの失敗
+Trinites_Mission_Buff - サイドミッション達成ブースト
+
+Group 1
+Trinites_PointSymbol - ($(0)Pt)
+Trinites_FloorInfo - Piso actual:
+Trinites_FloorSymbol - $(0)
+Trinites_FailureCondition - Misiones secundarias fallidas
+Trinites_Mission_Buff - Aumento de finalización de misión secundaria
+
+
+QuestRetryError
+Group 0
+RemainingPoolDrop - メンバーがクエスト倉庫の画面を開いているため、リトライが出来ません。
+
+Group 1
+RemainingPoolDrop - No se puede volver a intentar debido a que uno de los miembros del grupo tiene abierta la ventana de Almacenamiento de misiones.
+
+
+GoalGetterCommon
+Group 0
+GoalGetter_UITitle_TargetNum - ターゲット数
+GoalGetter_UITitle_BoalNum - 出現中のキャノンボール数
+GoalGetter_UITitle_Time - 制限時間
+GoalGetter_UITitle_Score - スコア
+GoalGetter_UITitle_Target_Details - $(0)/$(1)
+GoalGetter_UITitle_Ball_Details - $(0)
+GoalGetter_UITitle_Time_Details - Wave.$(0)終了まで
+GoalGetter_UITitle_Wave_Details - Wave.$(0)
+GoalGetter_UITitle_TimeUp - クエスト終了<br>制限時間超過<br>残りターゲット数：$(0)
+GoalGetter_UITitle_Target_Remaining - 残りターゲット数：$(0)
+
+Group 1
+GoalGetter_UITitle_TargetNum - Número de objetivos
+GoalGetter_UITitle_BoalNum - Bolas de cañón en juego
+GoalGetter_UITitle_Time - Límite de tiempo
+GoalGetter_UITitle_Score - Puntaje
+GoalGetter_UITitle_Target_Details - $(0)/$(1)
+GoalGetter_UITitle_Ball_Details - $(0)
+GoalGetter_UITitle_Time_Details - Ola $(0) Tiempo restante
+GoalGetter_UITitle_Wave_Details - Ola $(0)
+GoalGetter_UITitle_TimeUp - Misión terminada<br>Límite de tiempo excedido<br>Objetivos restantes: $(0)
+GoalGetter_UITitle_Target_Remaining - Número restante de objetivos: $(0)
+
+
+FinalAttackerCommon
+Group 0
+Journal_MissionTitle - クエスト目標
+Jounal_MissionExplanation - エネミーを倒してスコアGET!
+Jounal_ScoreTitle - クエストポイント
+Jounal_TopPlayerTitle - ベストプレイヤー
+Jounal_Point - Pt
+
+Group 1
+Journal_MissionTitle - Objetivo de la misión
+Jounal_MissionExplanation - texto_dummy
+Jounal_ScoreTitle - Puntos de misión
+Jounal_TopPlayerTitle - Mejor jugador
+Jounal_Point - puntos
+
+
+BabelCommon
+Group 0
+Babel_FailureDueToDeath - 戦闘不能$(0)回で失敗
+Babel_FailureDueToTimeLimit - 制限時間の経過
+Babel_UITitle - 到達ランク予想
+
+Group 1
+Babel_FailureDueToDeath - Fallar si está incapacitado $(0) veces
+Babel_FailureDueToTimeLimit - Límite de tiempo excedido
+Babel_UITitle - Rango esperado
+
+
+GrowUpCommon
+Group 0
+GetBuffLevel - セクター$(0)の条件達成により、<yellow>$(1)<c>を獲得しました。(累積数：<yellow>$(2)<c>)
+GetBuff - セクター$(0)の条件達成により、<yellow>$(1) $(2)<c>を獲得しました。
+StackBuff - セクター$(0)の条件達成により、<yellow>$(1) $(2)<c>を獲得しました。
+GetBuffChangePoint - 獲得した効果の累積数が最大、クエストポイントに<yellow>変換<c>
+Floor - (フロア：$(0))
+LifePoint - 全LPの消失
+TimeOver - 制限時間の経過
+GetBingoBuff - クリアラインボーナス！「<yellow>$(0) $(1)<c>」を付与しました。（現在$(2)ライン達成）
+ChipInfoHeader - 能力強化条件：$(0)
+ChipInfoBattle - 出現したエネミーを倒す
+ChipInfoItemContainer - シェアードコンテナを全て壊す
+ChipInfoSearch - ポールスイッチを３つ押す
+ChipInfoNone - なし
+ChipInfoCleared - 獲得済み
+GetFMTBuff - トライアル成功により、<yellow>$(0) $(1)<c>を獲得しました。
+StackFMTBuff - トライアル成功により、<yellow>$(0) $(1)<c>を獲得しました。
+GetStackBuff - 獲得済みのバフ「<yellow>$(0) $(1)<c>」を付与しました。
+GetBuffContainer - フォトンブーストクレートから、<yellow>$(0) $(1)<c>を獲得しました。
+StackBuffContainer - フォトンブーストクレートから、<yellow>$(0) $(1)<c>を獲得しました。
+AppearBuffContainer - 付近に<yellow>フォトンブーストクレート<c>が出現しました。
+GetBuffList - プレイヤー能力強化
+GetBuffLv - Lv.$(0)
+GetChipClearBuff - チップクリアボーナス！「<yellow>$(0) $(1)<c>」を付与しました。（現在$(2)クリア達成）
+TitleBenefit - クエスト効果
+Benefit_None - なし
+Benefit_HighRankEnemyUp - メガロティクス出現確率$(0)%
+Benefit_FormidableEnemyUp - ギガンティクス出現確率$(0)%
+Benefit_BoostController - エンハンスドエネミー出現確率$(0)%
+Benefit_RareEnemyGUp - レアエネミー（金）出現確率$(0)%
+Benefit_RareEnemySUp - レアエネミー（銀）出現確率$(0)%
+Benefit_LifeUp - LP＋$(0)
+Benefit_PointMagnif - ポイント倍率$(0)倍
+AreaWait_QuestDetailsGuide - この情報は、クエスト進行中に<yellow>メインメニューを開いた際に表示される<br>"簡易クエスト情報"<c>でも確認できます。
+AreaWait_QuestDetailsTitle - エネミー情報
+Growup_EnemyBuff_1 - /atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<c>
+Growup_EnemyBuff_2 - /atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<c>
+Growup_EnemyBuff_3 - /atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<br>$(3)<c>
+Growup_EnemyBuff_4 - /atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<c>
+Growup_EnemyBuff_5 - /atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<c>
+ChipClear_LineMessage - このセクターの能力強化条件を達成
+
+Group 1
+GetBuffLevel - Condiciones del sector $(0) cumplidas. Ganó<yellow>$(1)<c>. (Total:<yellow>$(2)<c>)
+GetBuff - Condiciones del sector $(0) cumplidas. Obtuvo<yellow>$(1) $(2)<c>.
+StackBuff - Condiciones del sector $(0) cumplidas. Obtuvo<yellow>$(1) $(2)<c>.
+LifePoint - Todos los LP perdidos
+TimeOver - Límite de tiempo excedido
+ChipInfoHeader - Condición de mejora de habilidad: $(0)
+ChipInfoBattle - Derrota a los enemigos
+ChipInfoItemContainer - Destruye todos los contenedores compartidos
+ChipInfoSearch - Presione interruptores de 3 polos
+ChipInfoNone - Ninguno
+ChipInfoCleared - Adquirido
+GetFMTBuff - Prueba completada. Ganó<yellow>$(0)<c>y<yellow>$(1) <c>.
+StackFMTBuff - Prueba completada. Ganó<yellow>$(0)<c>y<yellow>$(1) <c>.
+GetBuffContainer - Obtuviste<yellow>$(0) $(1)<c>de Photon Boost Crate.
+StackBuffContainer - Obtuviste<yellow>$(0) $(1)<c>de Photon Boost Crate.
+AppearBuffContainer - Una<yellow>caja de refuerzo de fotones<c>ha aparecido cerca.
+GetBuffList - Mejora de la habilidad del jugador
+GetBuffLv - Nivel$(0)
+Benefit_None - Ninguno
+Benefit_LifeUp - LP + $(0)
+AreaWait_QuestDetailsGuide - at aparece al abrir el menú principal<c>mientras la misión está en progreso.
+AreaWait_QuestDetailsTitle - Información del enemigo
+Growup_EnemyBuff_1 - /atime5 Mejora de habilidad para enemigos con "$(0)" en sus nombres<br><yellow> $(1) <c>
+Growup_EnemyBuff_2 - /atime5 Mejora de habilidad para enemigos con "$(0)" en sus nombres<br><yellow> $(1)<br>$(2) <c>
+Growup_EnemyBuff_3 - /atime5 Mejora de habilidad para enemigos con "$(0)" en sus nombres<br><yellow> $(1)<br>$(2)<br>$(3) <c>
+Growup_EnemyBuff_4 - /atime5 Mejora de habilidad para enemigos con "$(0)" en sus nombres<br><yellow> $(1)<br>$(2)<br>$(3)<br>$(4) <c>
+Growup_EnemyBuff_5 - /atime5 Mejora de habilidad para enemigos con "$(0)" en sus nombres<br><yellow> $(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5) <c>
+ChipClear_LineMessage - Completó la condición de mejora de habilidad en este sector.
+
+
+GrowUpBuff
+Group 0
+GrowUpQuest_HpUp - 最大HP増加
+GrowUpQuest_HpUp1 - 最大HP増加　Lv１
+GrowUpQuest_HpUp2 - 最大HP増加　Lv２
+GrowUpQuest_HpUp3 - 最大HP増加　Lv３
+GrowUpQuest_HpUp4 - 最大HP増加　Lv４
+GrowUpQuest_Critical - クリティカル率上昇
+GrowUpQuest_Critical1 - クリティカル率上昇　Lv１
+GrowUpQuest_Critical2 - クリティカル率上昇　Lv２
+GrowUpQuest_Critical3 - クリティカル率上昇　Lv３
+GrowUpQuest_Critical4 - クリティカル率上昇　Lv４
+GrowUpQuest_CriticalDmg - クリティカル威力上昇
+GrowUpQuest_CriticalDmg1 - クリティカル威力上昇　Lv１
+GrowUpQuest_CriticalDmg2 - クリティカル威力上昇　Lv２
+GrowUpQuest_CriticalDmg3 - クリティカル威力上昇　Lv３
+GrowUpQuest_CriticalDmg4 - クリティカル威力上昇　Lv４
+GrowUpQuest_MoveSpeed - 移動速度上昇
+GrowUpQuest_MoveSpeed1 - 移動速度上昇　Lv１
+GrowUpQuest_MoveSpeed2 - 移動速度上昇　Lv２
+GrowUpQuest_MoveSpeed3 - 移動速度上昇　Lv３
+GrowUpQuest_MoveSpeed4 - 移動速度上昇　Lv４
+GrowUpQuest_DamageBuff - 威力上昇
+GrowUpQuest_DamageBuff1 - 威力上昇　Lv１
+GrowUpQuest_DamageBuff2 - 威力上昇　Lv２
+GrowUpQuest_DamageBuff3 - 威力上昇　Lv３
+GrowUpQuest_DamageBuff4 - 威力上昇　Lv４
+GrowUpQuest_MaxPpBuff - 最大PP増加
+GrowUpQuest_MaxPpBuff1 - 最大PP増加　Lv１
+GrowUpQuest_MaxPpBuff2 - 最大PP増加　Lv２
+GrowUpQuest_MaxPpBuff3 - 最大PP増加　Lv３
+GrowUpQuest_MaxPpBuff4 - 最大PP増加　Lv４
+GrowUpQuest_NormalAtkDamageBuff - 通常攻撃威力上昇
+GrowUpQuest_NormalAtkDamageBuff1 - 通常攻撃威力上昇　Lv１
+GrowUpQuest_NormalAtkDamageBuff2 - 通常攻撃威力上昇　Lv２
+GrowUpQuest_NormalAtkDamageBuff3 - 通常攻撃威力上昇　Lv３
+GrowUpQuest_NormalAtkDamageBuff4 - 通常攻撃威力上昇　Lv４
+GrowUpQuest_NormalAtkDrainBuff - 通常攻撃命中時にHP回復
+GrowUpQuest_NormalAtkDrainBuff1 - 通常攻撃命中時にHP回復　Lv１
+GrowUpQuest_NormalAtkDrainBuff2 - 通常攻撃命中時にHP回復　Lv２
+GrowUpQuest_NormalAtkDrainBuff3 - 通常攻撃命中時にHP回復　Lv３
+GrowUpQuest_NormalAtkDrainBuff4 - 通常攻撃命中時にHP回復　Lv４
+GrowUpQuest_PaTechniqueBuff - PA/テクニック威力上昇
+GrowUpQuest_PaTechniqueBuff1 - PA/テクニック威力上昇　Lv１
+GrowUpQuest_PaTechniqueBuff2 - PA/テクニック威力上昇　Lv２
+GrowUpQuest_PaTechniqueBuff3 - PA/テクニック威力上昇　Lv３
+GrowUpQuest_PaTechniqueBuff4 - PA/テクニック威力上昇　Lv４
+GrowUpQuest_PbDamageBuff - フォトンブラスト威力上昇
+GrowUpQuest_PbDamageBuff1 - フォトンブラスト威力上昇　Lv１
+GrowUpQuest_PbDamageBuff2 - フォトンブラスト威力上昇　Lv２
+GrowUpQuest_PbDamageBuff3 - フォトンブラスト威力上昇　Lv３
+GrowUpQuest_PbDamageBuff4 - フォトンブラスト威力上昇　Lv４
+GrowUpQuest_PpHealRateBuff - PP回復量増加
+GrowUpQuest_PpHealRateBuff1 - PP回復量増加　Lv１
+GrowUpQuest_PpHealRateBuff2 - PP回復量増加　Lv２
+GrowUpQuest_PpHealRateBuff3 - PP回復量増加　Lv３
+GrowUpQuest_PpHealRateBuff4 - PP回復量増加　Lv４
+GrowUpQuest_StateResistanceBuff - 状態異常耐性上昇
+GrowUpQuest_StateResistanceBuff1 - 状態異常耐性上昇　Lv１
+GrowUpQuest_StateResistanceBuff2 - 状態異常耐性上昇　Lv２
+GrowUpQuest_StateResistanceBuff3 - 状態異常耐性上昇　Lv３
+GrowUpQuest_StateResistanceBuff4 - 状態異常耐性上昇　Lv４
+GrowUpQuest_DamageCutBuff - ダメージ耐性上昇
+GrowUpQuest_DamageCutBuff1 - ダメージ耐性上昇　Lv１
+GrowUpQuest_DamageCutBuff2 - ダメージ耐性上昇　Lv２
+GrowUpQuest_DamageCutBuff3 - ダメージ耐性上昇　Lv３
+GrowUpQuest_DamageCutBuff4 - ダメージ耐性上昇　Lv４
+GrowUpQuest_AutoRecoveryBuff - HP自動回復
+GrowUpQuest_AutoRecoveryBuff1 - HP自動回復　Lv１
+GrowUpQuest_AutoRecoveryBuff2 - HP自動回復　Lv２
+GrowUpQuest_AutoRecoveryBuff3 - HP自動回復　Lv３
+GrowUpQuest_AutoRecoveryBuff4 - HP自動回復　Lv４
+GrowUpQuest_DownValueBuff - エネミーに与えるダウン値上昇
+GrowUpQuest_DownValueBuff1 - エネミーに与えるダウン値上昇　Lv１
+GrowUpQuest_DownValueBuff2 - エネミーに与えるダウン値上昇　Lv２
+GrowUpQuest_DownValueBuff3 - エネミーに与えるダウン値上昇　Lv３
+GrowUpQuest_DownValueBuff4 - エネミーに与えるダウン値上昇　Lv４
+GrowUpQuest_PbGaugeBuff - フォトンブラストゲージ蓄積量増加
+GrowUpQuest_PbGaugeBuff1 - フォトンブラストゲージ蓄積量増加　Lv１
+GrowUpQuest_PbGaugeBuff2 - フォトンブラストゲージ蓄積量増加　Lv２
+GrowUpQuest_PbGaugeBuff3 - フォトンブラストゲージ蓄積量増加　Lv３
+GrowUpQuest_PbGaugeBuff4 - フォトンブラストゲージ蓄積量増加　Lv４
+GrowUpQuest_CounterAtkBuff - ステップカウンター威力上昇
+GrowUpQuest_CounterAtkBuff1 - ステップカウンター威力上昇　Lv１
+GrowUpQuest_CounterAtkBuff2 - ステップカウンター威力上昇　Lv２
+GrowUpQuest_CounterAtkBuff3 - ステップカウンター威力上昇　Lv３
+GrowUpQuest_CounterAtkBuff4 - ステップカウンター威力上昇　Lv４
+GrowUpQuest_HealRateBuff - HP回復量増加
+GrowUpQuest_HealRateBuff1 - HP回復量増加　Lv１
+GrowUpQuest_HealRateBuff2 - HP回復量増加　Lv２
+GrowUpQuest_HealRateBuff3 - HP回復量増加　Lv３
+GrowUpQuest_HealRateBuff4 - HP回復量増加　Lv４
+GrowUpQuest_NodeDamageBuff - 破壊可能部位への攻撃威力上昇
+GrowUpQuest_NodeDamageBuff1 - 破壊可能部位への攻撃威力上昇　Lv１
+GrowUpQuest_NodeDamageBuff2 - 破壊可能部位への攻撃威力上昇　Lv２
+GrowUpQuest_NodeDamageBuff3 - 破壊可能部位への攻撃威力上昇　Lv３
+GrowUpQuest_NodeDamageBuff4 - 破壊可能部位への攻撃威力上昇　Lv４
+GrowUpQuest_WeakPointDamageBuff - 弱点部位への攻撃威力上昇
+GrowUpQuest_WeakPointDamageBuff1 - 弱点部位への攻撃威力上昇　Lv１
+GrowUpQuest_WeakPointDamageBuff2 - 弱点部位への攻撃威力上昇　Lv２
+GrowUpQuest_WeakPointDamageBuff3 - 弱点部位への攻撃威力上昇　Lv３
+GrowUpQuest_WeakPointDamageBuff4 - 弱点部位への攻撃威力上昇　Lv４
+GrowUpQuest_ActiveSkillCooltimeBuff - アクティブスキル再使用可能時間短縮
+GrowUpQuest_ActiveSkillCooltimeBuff1 - アクティブスキル再使用可能時間短縮　Lv１
+GrowUpQuest_ActiveSkillCooltimeBuff2 - アクティブスキル再使用可能時間短縮　Lv２
+GrowUpQuest_ActiveSkillCooltimeBuff3 - アクティブスキル再使用可能時間短縮　Lv３
+GrowUpQuest_ActiveSkillCooltimeBuff4 - アクティブスキル再使用可能時間短縮　Lv4
+GrowUpQuest_IronWillBuff - 戦闘不能回避（一定時間で効果再発生）
+GrowUpQuest_IronWillBuff1 - 戦闘不能回避（一定時間で効果再発生）　Lv１
+GrowUpQuest_IronWillBuff2 - 戦闘不能回避（一定時間で効果再発生）　Lv２
+GrowUpQuest_IronWillBuff3 - 戦闘不能回避（一定時間で効果再発生）　Lv３
+GrowUpQuest_IronWillBuff4 - 戦闘不能回避（一定時間で効果再発生）　Lv４
+GrowUpQuest_DodgeRecoveryBuff - ステップ回避成功時にHP回復
+GrowUpQuest_DodgeRecoveryBuff1 - ステップ回避成功時にHP回復　Lv１
+GrowUpQuest_DodgeRecoveryBuff2 - ステップ回避成功時にHP回復　Lv２
+GrowUpQuest_DodgeRecoveryBuff3 - ステップ回避成功時にHP回復　Lv３
+GrowUpQuest_DodgeRecoveryBuff4 - ステップ回避成功時にHP回復　Lv４
+GrowUpQuest_RecoveryGaugeIncrease - レスタサイン最大所持数増加
+GrowUpQuest_RecoveryGaugeIncrease1 - レスタサイン最大所持数増加　Lv１
+GrowUpQuest_RecoveryGaugeIncrease2 - レスタサイン最大所持数増加　Lv２
+GrowUpQuest_RecoveryGaugeIncrease3 - レスタサイン最大所持数増加　Lv３
+GrowUpQuest_RecoveryGaugeIncrease4 - レスタサイン最大所持数増加　Lv４
+GrowUpQuest_AutoRecoveryAddBuff - 一定間隔でレスタサイン自動補充
+GrowUpQuest_AutoRecoveryAddBuff1 - 一定間隔でレスタサイン自動補充　Lv１
+GrowUpQuest_AutoRecoveryAddBuff2 - 一定間隔でレスタサイン自動補充　Lv２
+GrowUpQuest_AutoRecoveryAddBuff3 - 一定間隔でレスタサイン自動補充　Lv３
+GrowUpQuest_AutoRecoveryAddBuff4 - 一定間隔でレスタサイン自動補充　Lv４
+GrowUpQuest_HpBonusBuff - HP75%以上で威力/ダメージ耐性上昇
+GrowUpQuest_HpBonusBuff1 - HP75%以上で威力/ダメージ耐性上昇　Lv１
+GrowUpQuest_HpBonusBuff2 - HP75%以上で威力/ダメージ耐性上昇　Lv２
+GrowUpQuest_HpBonusBuff3 - HP75%以上で威力/ダメージ耐性上昇　Lv３
+GrowUpQuest_HpBonusBuff4 - HP75%以上で威力/ダメージ耐性上昇　Lv４
+GrowUpQuest_HitCountPpHealBuff - 攻撃命中20回ごとにPP回復
+GrowUpQuest_HitCountPpHealBuff1 - 攻撃命中20回ごとにPP回復　Lv１
+GrowUpQuest_HitCountPpHealBuff2 - 攻撃命中20回ごとにPP回復　Lv２
+GrowUpQuest_HitCountPpHealBuff3 - 攻撃命中20回ごとにPP回復　Lv３
+GrowUpQuest_HitCountPpHealBuff4 - 攻撃命中20回ごとにPP回復　Lv４
+GrowUpQuest_BadEase - 状態異常の効果時間短縮
+GrowUpQuest_BadEase1 - 状態異常の効果時間短縮　Lv１
+GrowUpQuest_BadEase2 - 状態異常の効果時間短縮　Lv２
+GrowUpQuest_BadEase3 - 状態異常の効果時間短縮　Lv３
+GrowUpQuest_BadEase4 - 状態異常の効果時間短縮　Lv４
+GrowUpQuest_DownDamageBuff - ダウン中のエネミーへの攻撃威力上昇
+GrowUpQuest_DownDamageBuff1 - ダウン中のエネミーへの攻撃威力上昇　Lv１
+GrowUpQuest_DownDamageBuff2 - ダウン中のエネミーへの攻撃威力上昇　Lv２
+GrowUpQuest_DownDamageBuff3 - ダウン中のエネミーへの攻撃威力上昇　Lv３
+GrowUpQuest_DownDamageBuff4 - ダウン中のエネミーへの攻撃威力上昇　Lv４
+GrowUpQuest_ArsenalModuleGaugeBuff - M.A.R.S.バッテリー自然回復量増加
+GrowUpQuest_ArsenalModuleGaugeBuff1 - M.A.R.S.バッテリー自然回復量増加　Lv１
+GrowUpQuest_ArsenalModuleGaugeBuff2 - M.A.R.S.バッテリー自然回復量増加　Lv２
+GrowUpQuest_ArsenalModuleGaugeBuff3 - M.A.R.S.バッテリー自然回復量増加　Lv３
+GrowUpQuest_ArsenalModuleGaugeBuff4 - M.A.R.S.バッテリー自然回復量増加　Lv４
+GrowUpQuest_ArsenalModuleDamageBuff - M.A.R.S.攻撃威力上昇
+GrowUpQuest_ArsenalModuleDamageBuff1 - M.A.R.S.攻撃威力上昇　Lv１
+GrowUpQuest_ArsenalModuleDamageBuff2 - M.A.R.S.攻撃威力上昇　Lv２
+GrowUpQuest_ArsenalModuleDamageBuff3 - M.A.R.S.攻撃威力上昇　Lv３
+GrowUpQuest_ArsenalModuleDamageBuff4 - M.A.R.S.攻撃威力上昇　Lv４
+GrowUpQuest_DodgeAtpBuff - ステップ回避成功時に一定時間威力上昇
+GrowUpQuest_DodgeAtpBuff1 - ステップ回避成功時に一定時間威力上昇　Lv１
+GrowUpQuest_DodgeAtpBuff2 - ステップ回避成功時に一定時間威力上昇　Lv2
+GrowUpQuest_DodgeAtpBuff3 - ステップ回避成功時に一定時間威力上昇　Lv3
+GrowUpQuest_DodgeAtpBuff4 - ステップ回避成功時に一定時間威力上昇　Lv4
+GrowUpQuest_S_PhotonArtsBuff - <yellow>PA/テクニック命中時に追加ダメージ<c>
+GrowUpQuest_S_PhotonArtsBuff1 - PA/テクニック命中時に追加ダメージ
+GrowUpQuest_S_GlideAttackBuff - <yellow>ダイブアタック威力/ダウン値上昇<c>
+GrowUpQuest_S_GlideAttackBuff1 - ダイブアタック威力/ダウン値上昇
+GrowUpQuest_S_DamageShieldBuff - <yellow>リフレクトシールド発生<c>
+GrowUpQuest_S_DamageShieldBuff1 - リフレクトシールド発生
+GrowUpQuest_S_QuickAttackBuff - <yellow>攻撃速度上昇<c>
+GrowUpQuest_S_QuickAttackBuff1 - 攻撃速度上昇
+GrowUpQuest_S_NormalAttackBuff - <yellow>通常攻撃時に追加攻撃発生<c>
+GrowUpQuest_S_NormalAttackBuff1 - 通常攻撃時に追加攻撃発生
+GrowUpQuest_S_RangeDamageBuff - <yellow>一定間隔ごとに自動的に追加攻撃発生<c>
+GrowUpQuest_S_RangeDamageBuff1 - 一定間隔ごとに自動的に追加攻撃発生
+GrowUpQuest_S_OverRecoveryBuff - <yellow>レスタサイン使用後に10秒間能力上昇<c>
+GrowUpQuest_S_OverRecoveryBuff1 - レスタサイン使用後に10秒間能力上昇
+GrowUpQuest_S_AdditionalCriticalAttackBuff - <yellow>クリティカル発生時に追加ダメージ<c>
+GrowUpQuest_S_AdditionalCriticalAttackBuff1 - クリティカル発生時に追加ダメージ
+GrowUpQuest_S_DodgeBombBuff - <yellow>ステップ回避成功時に追加攻撃発生<c>
+GrowUpQuest_S_DodgeBombBuff1 - ステップ回避成功時に追加攻撃発生
+GrowUpQuest_ThrowingSpeedUpBuff - 投擲アクション速度上昇
+GrowUpQuest_ThrowingSpeedUpBuff1 - 投擲アクション速度上昇　Lv１
+GrowUpQuest_ThrowingSpeedUpBuff2 - 投擲アクション速度上昇　Lv２
+GrowUpQuest_ThrowingSpeedUpBuff3 - 投擲アクション速度上昇　Lv３
+GrowUpQuest_ThrowingSpeedUpBuff4 - 投擲アクション速度上昇　Lv４
+GrowUpQuest_ThrowingBuff - 投擲アクション威力上昇
+GrowUpQuest_ThrowingBuff1 - 投擲アクション威力上昇　Lv１
+GrowUpQuest_ThrowingBuff2 - 投擲アクション威力上昇　Lv２
+GrowUpQuest_ThrowingBuff3 - 投擲アクション威力上昇　Lv３
+GrowUpQuest_ThrowingBuff4 - 投擲アクション威力上昇　Lv４
+GrowUpQuest_S_AdditionalThrowAttackBuff - <yellow>投擲アクション命中時に追加ダメージ<c>
+GrowUpQuest_S_AdditionalThrowAttackBuff1 - 投擲アクション命中時に追加ダメージ
+GrowUpQuest_S_PbRecoveryBuff - <yellow>PBを2回連続で発動可能/PB攻撃速度上昇<c>
+GrowUpQuest_S_PbRecoveryBuff1 - PBを2回連続で発動可能/PB攻撃速度上昇
+GrowUpQuest_S_PBMultiMissileBuff - <yellow>PB発動がモバイルキャノンALRを装備に変更<c>
+GrowUpQuest_S_PBMultiMissileBuff1 - PB発動がモバイルキャノンALRを装備に変更
+GrowUpQuest_S_HPTradeTechArtsBuff - <yellow>HP75%以下時PA/TEC威力上昇/使用時HP減<c>
+GrowUpQuest_S_HPTradeTechArtsBuff1 - HP75%以下時PA/TEC威力上昇/使用時HP減
+EnemyGrowUpQuest_AttackUp50 - <yellow>威力＋50%<c>
+EnemyGrowUpQuest_AttackUp100 - <yellow>威力＋100%<c>
+EnemyGrowUpQuest_AttackUp150 - <yellow>威力＋150%<c>
+EnemyGrowUpQuest_AttackUp200 - <yellow>威力＋200%<c>
+EnemyGrowUpQuest_AttackUp250 - <yellow>威力＋250%<c>
+EnemyGrowUpQuest_AttackUp300 - <yellow>威力＋300%<c>
+EnemyGrowUpQuest_AttackUp350 - <yellow>威力＋350%<c>
+EnemyGrowUpQuest_AttackUp400 - <yellow>威力＋400%<c>
+EnemyGrowUpQuest_AttackUp500 - <yellow>威力＋500%<c>
+EnemyGrowUpQuest_AttackUp600 - <yellow>威力＋600%<c>
+EnemyGrowUpQuest_AttackUp700 - <yellow>威力＋700%<c>
+EnemyGrowUpQuest_AttackUp800 - <yellow>威力＋800%<c>
+EnemyGrowUpQuest_AttackUp900 - <yellow>威力＋900%<c>
+EnemyGrowUpQuest_ElementUp50 - <yellow>状態異常蓄積値＋50%<c>
+EnemyGrowUpQuest_ElementUp100 - <yellow>状態異常蓄積値＋100%<c>
+EnemyGrowUpQuest_ElementUp150 - <yellow>状態異常蓄積値＋150%<c>
+EnemyGrowUpQuest_ElementUp200 - <yellow>状態異常蓄積値＋200%<c>
+EnemyGrowUpQuest_ElementUp250 - <yellow>状態異常蓄積値＋250%<c>
+EnemyGrowUpQuest_ElementUp300 - <yellow>状態異常蓄積値＋300%<c>
+EnemyGrowUpQuest_ElementUp350 - <yellow>状態異常蓄積値＋350%<c>
+EnemyGrowUpQuest_ElementUp400 - <yellow>状態異常蓄積値＋400%<c>
+EnemyGrowUpQuest_DamageResist5 - <yellow>ダメージ耐性＋5%<c>
+EnemyGrowUpQuest_DamageResist10 - <yellow>ダメージ耐性＋10%<c>
+EnemyGrowUpQuest_DamageResist15 - <yellow>ダメージ耐性＋15%<c>
+EnemyGrowUpQuest_DamageResist20 - <yellow>ダメージ耐性＋20%<c>
+EnemyGrowUpQuest_DamageResist25 - <yellow>ダメージ耐性＋25%<c>
+EnemyGrowUpQuest_DamageResist30 - <yellow>ダメージ耐性＋30%<c>
+EnemyGrowUpQuest_DamageResist35 - <yellow>ダメージ耐性＋35%<c>
+EnemyGrowUpQuest_DamageResist40 - <yellow>ダメージ耐性＋40%<c>
+EnemyGrowUpQuest_DamageResist45 - <yellow>ダメージ耐性＋45%<c>
+EnemyGrowUpQuest_DamageResist50 - <yellow>ダメージ耐性＋50%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_10 - <yellow>通常攻撃ダメージ耐性＋10%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_20 - <yellow>通常攻撃ダメージ耐性＋20%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_30 - <yellow>通常攻撃ダメージ耐性＋30%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_40 - <yellow>通常攻撃ダメージ耐性＋40%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_50 - <yellow>通常攻撃ダメージ耐性＋50%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_60 - <yellow>通常攻撃ダメージ耐性＋60%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_70 - <yellow>通常攻撃ダメージ耐性＋70%<c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_80 - <yellow>通常攻撃ダメージ耐性＋80%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_10 - <yellow>PA/テクニックダメージ耐性＋10%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_20 - <yellow>PA/テクニックダメージ耐性＋20%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_30 - <yellow>PA/テクニックダメージ耐性＋30%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_40 - <yellow>PA/テクニックダメージ耐性＋40%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_50 - <yellow>PA/テクニックダメージ耐性＋50%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_60 - <yellow>PA/テクニックダメージ耐性＋60%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_70 - <yellow>PA/テクニックダメージ耐性＋70%<c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_80 - <yellow>PA/テクニックダメージ耐性＋80%<c>
+EnemyGrowUpQuest_HPUp20 - <yellow>最大HP＋20%<c>
+EnemyGrowUpQuest_HPUp50 - <yellow>最大HP＋50%<c>
+EnemyGrowUpQuest_HPUp100 - <yellow>最大HP＋100%<c>
+EnemyGrowUpQuest_HPUp150 - <yellow>最大HP＋150%<c>
+EnemyGrowUpQuest_HPUp180 - <yellow>最大HP＋180%<c>
+EnemyGrowUpQuest_HPUp200 - <yellow>最大HP＋200%<c>
+EnemyGrowUpQuest_HPUp250 - <yellow>最大HP＋250%<c>
+EnemyGrowUpQuest_HPUp300 - <yellow>最大HP＋300%<c>
+EnemyGrowUpQuest_HPUp350 - <yellow>最大HP＋350%<c>
+EnemyGrowUpQuest_HPUp400 - <yellow>最大HP＋400%<c>
+EnemyGrowUpQuest_AngerToDamage - HP減少時に<yellow>プレイヤーHPに継続ダメージ<c>
+EnemyGrowUpQuest_AngerToPPDamage - HP減少時に<yellow>プレイヤーPPに継続ダメージ<c>
+EnemyGrowUpQuest_AngerToHpDown50 - HP減少時に<yellow>プレイヤー最大HP－50%<c>
+EnemyGrowUpQuest_AngerToHpDown75 - HP減少時に<yellow>プレイヤー最大HP－75%<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DamageDebuff5 - 攻撃命中時に<yellow>プレイヤー威力/耐性低下<c>
+EnemyGrowUpQuest_Elementboost_F20 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：小
+EnemyGrowUpQuest_Elementboost_F40 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：中
+EnemyGrowUpQuest_Elementboost_F60 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：大
+EnemyGrowUpQuest_Elementboost_I20 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：小
+EnemyGrowUpQuest_Elementboost_I40 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：中
+EnemyGrowUpQuest_Elementboost_I60 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：大
+EnemyGrowUpQuest_Elementboost_T20 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：小
+EnemyGrowUpQuest_Elementboost_T40 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：中
+EnemyGrowUpQuest_Elementboost_T60 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：大
+EnemyGrowUpQuest_Elementboost_W20 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：小
+EnemyGrowUpQuest_Elementboost_W40 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：中
+EnemyGrowUpQuest_Elementboost_W60 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：大
+EnemyGrowUpQuest_Elementboost_D20 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：小
+EnemyGrowUpQuest_Elementboost_D40 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：中
+EnemyGrowUpQuest_Elementboost_D60 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：大
+EnemyGrowUpQuest_Elementboost_L20 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：小
+EnemyGrowUpQuest_Elementboost_L40 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：中
+EnemyGrowUpQuest_Elementboost_L60 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：大
+EnemyGrowUpQuest_ActionPowerUp - 一部攻撃の性能変化
+Common:DownBombBoost - <yellow>バムロードエネミー化<c>
+Common:DownBombBoost1 - <yellow>バムロードエネミー化<c>
+Common:DownBombBoost2 - <yellow>バムロードエネミー化<c>
+Common:TimerBuffBoost - <yellow>グローサードエネミー化<c>
+Common:TimerBuffBoost1 - <yellow>グローサードエネミー化<c>
+Common:TimerBuffBoost2 - <yellow>グローサードエネミー化<c>
+EnemyGrowUpQuest_HpToSummon - 支援：徐々に追加エネミー出現
+EnemyGrowUpQuest_AngerToSummon - HP減少時に<yellow>追加エネミー出現<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_10 - <yellow>弱点部位以外のダメージ耐性＋10%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_15 - <yellow>弱点部位以外のダメージ耐性＋15%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_20 - <yellow>弱点部位以外のダメージ耐性＋20%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_30 - <yellow>弱点部位以外のダメージ耐性＋30%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_40 - <yellow>弱点部位以外のダメージ耐性＋40%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_50 - <yellow>弱点部位以外のダメージ耐性＋50%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_60 - <yellow>弱点部位以外のダメージ耐性＋60%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_70 - <yellow>弱点部位以外のダメージ耐性＋70%<c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_80 - <yellow>弱点部位以外のダメージ耐性＋80%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_10 - <yellow>クリティカル以外のダメージ耐性＋10%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_20 - <yellow>クリティカル以外のダメージ耐性＋20%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_30 - <yellow>クリティカル以外のダメージ耐性＋30%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_40 - <yellow>クリティカル以外のダメージ耐性＋40%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_50 - <yellow>クリティカル以外のダメージ耐性＋50%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_60 - <yellow>クリティカル以外のダメージ耐性＋60%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_70 - <yellow>クリティカル以外のダメージ耐性＋70%<c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_80 - <yellow>クリティカル以外のダメージ耐性＋80%<c>
+EnemyGrowUpQuest_IntervalShot15 - 一定間隔ごとに<yellow>自動的に追加攻撃発生<c>
+EnemyGrowUpQuest_IntervalShotFireBoss15 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGrowUpQuest_IntervalShotFireBoss5 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGrowUpQuest_IntervalShotFire15 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGrowUpQuest_IntervalShotFire5 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGrowUpQuest_IfDownReactionFinishAttackUp - ダウン状態から復帰後<yellow>一定時間威力強化<c>
+EnemyGrowUpQuest_RangeAttackStunS - 一定範囲内に<yellow>スタン攻撃が追加発生<c>
+EnemyGrowUpQuest_RangeAttackStunM - 一定範囲内に<yellow>スタン攻撃が追加発生<c>
+EnemyGrowUpQuest_RangeAttackStunL - 一定範囲内に<yellow>スタン攻撃が追加発生<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_PDamageDownDebuff5 - 攻撃命中時に<yellow>プレイヤー威力低下<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff5 - 攻撃命中時に<yellow>プレイヤー耐性低下<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff20 - 攻撃命中時に<yellow>プレイヤー耐性低下<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff25 - 攻撃命中時に<yellow>プレイヤー耐性低下<c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff40 - 攻撃命中時に<yellow>プレイヤー耐性低下<c>
+EnemyGrowUpQuestBuff_AttackDownUp1 - 攻撃に<yellow>スタン効果追加<c>/効果蓄積量：小
+EnemyGrowUpQuestBuff_AttackDownUp2 - 攻撃に<yellow>スタン効果追加<c>/効果蓄積量：中
+EnemyGrowUpQuestBuff_AttackDownUp3 - 攻撃に<yellow>スタン効果追加<c>/効果蓄積量：大
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss5 - 一定間隔ごとに<yellow>レーザー攻撃発生<c>
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss10 - 一定間隔ごとに<yellow>レーザー攻撃発生<c>
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss15 - 一定間隔ごとに<yellow>レーザー攻撃発生<c>
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss20 - 一定間隔ごとに<yellow>レーザー攻撃発生<c>
+EnemyGroom_AngerToDamage - 最終区画で<yellow>プレイヤーHPに継続ダメージ<c>
+EnemyGroom_AngerToPPDamage - 最終区画で<yellow>プレイヤーPPに継続ダメージ<c>
+EnemyGroom_AngerToHpDown50 - 最終区画で<yellow>プレイヤー最大HP－50%<c>
+EnemyGroom_AngerToHpDown75 - 最終区画で<yellow>プレイヤー最大HP－75%<c>
+EnemyGroom_AngerToSummon - 最終区画で<yellow>追加エネミー出現<c>
+
+Group 1
+GrowUpQuest_HpUp - HP máximo arriba
+GrowUpQuest_HpUp1 - HP máximo hasta Nv.1
+GrowUpQuest_HpUp2 - HP máximo hasta Nv.2
+GrowUpQuest_HpUp3 - HP máximo hasta Nv.3
+GrowUpQuest_HpUp4 - HP máximo hasta Nv.4
+GrowUpQuest_Critical - Aumento de la tasa crítica
+GrowUpQuest_Critical1 - Tasa crítica aumentada Lv.1
+GrowUpQuest_Critical2 - Tasa crítica aumentada Lv.2
+GrowUpQuest_Critical3 - Tasa crítica aumentada Lv.3
+GrowUpQuest_Critical4 - Tasa crítica aumentada Lv.4
+GrowUpQuest_CriticalDmg - Potencia crítica aumentada
+GrowUpQuest_CriticalDmg1 - Potencia crítica aumentada Lv.1
+GrowUpQuest_CriticalDmg2 - Potencia crítica aumentada Lv.2
+GrowUpQuest_CriticalDmg3 - Potencia crítica aumentada Lv.3
+GrowUpQuest_CriticalDmg4 - Potencia crítica aumentada Lv.4
+GrowUpQuest_DamageBuff - Potencia arriba
+GrowUpQuest_DamageBuff1 - Aumento de potencia Lv.1
+GrowUpQuest_DamageBuff2 - Aumento de potencia Lv.2
+GrowUpQuest_DamageBuff3 - Aumento de potencia Lv.3
+GrowUpQuest_DamageBuff4 - Aumento de potencia Lv.4
+GrowUpQuest_MaxPpBuff - PP máx. arriba
+GrowUpQuest_MaxPpBuff1 - PP máximo arriba Lv.1
+GrowUpQuest_MaxPpBuff2 - Máximo PP arriba Lv.2
+GrowUpQuest_MaxPpBuff3 - Máximo PP arriba Lv.3
+GrowUpQuest_MaxPpBuff4 - Máximo PP arriba Lv.4
+GrowUpQuest_NormalAtkDamageBuff - Potencia de ataque normal aumentada
+GrowUpQuest_NormalAtkDamageBuff1 - Potencia de ataque normal aumentada Lv.1
+GrowUpQuest_NormalAtkDamageBuff2 - Potencia de ataque normal aumentada Lv.2
+GrowUpQuest_NormalAtkDamageBuff3 - Potencia de ataque normal aumentada Lv.3
+GrowUpQuest_NormalAtkDamageBuff4 - Potencia de ataque normal aumentada Lv.4
+GrowUpQuest_NormalAtkDrainBuff - Recuperación de HP en caso de ataque normal
+GrowUpQuest_NormalAtkDrainBuff1 - Recuperación de HP en ataque normal Nivel 1
+GrowUpQuest_NormalAtkDrainBuff2 - Recuperación de HP en ataque normal Nivel 2
+GrowUpQuest_NormalAtkDrainBuff3 - Recuperación de HP en ataque normal Nivel 3
+GrowUpQuest_NormalAtkDrainBuff4 - Recuperación de HP en ataque normal Nivel 4
+GrowUpQuest_PaTechniqueBuff - Aumento de potencia de PA/técnica
+GrowUpQuest_PaTechniqueBuff1 - Potencia de PA/técnica aumentada Lv.1
+GrowUpQuest_PaTechniqueBuff2 - Potencia de PA/técnica aumentada Lv.2
+GrowUpQuest_PaTechniqueBuff3 - Potencia de PA/técnica aumentada Lv.3
+GrowUpQuest_PaTechniqueBuff4 - Potencia de PA/técnica aumentada Lv.4
+GrowUpQuest_PbDamageBuff - Aumento de la potencia de la explosión de fotones
+GrowUpQuest_PbDamageBuff1 - Potencia de explosión de fotones aumentada Lv.1
+GrowUpQuest_PbDamageBuff2 - Potencia de explosión de fotones aumentada Lv.2
+GrowUpQuest_PbDamageBuff3 - Potencia de explosión de fotones aumentada Lv.3
+GrowUpQuest_PbDamageBuff4 - Potencia de explosión de fotones aumentada Lv.4
+GrowUpQuest_PpHealRateBuff - Cantidad de recuperación de PP aumentada
+GrowUpQuest_PpHealRateBuff1 - Cantidad de recuperación de PP aumentada Nv.1
+GrowUpQuest_PpHealRateBuff2 - Cantidad de recuperación de PP aumentada Nv.2
+GrowUpQuest_PpHealRateBuff3 - Cantidad de recuperación de PP aumentada Nv.3
+GrowUpQuest_PpHealRateBuff4 - Cantidad de recuperación de PP aumentada Nv.4
+GrowUpQuest_StateResistanceBuff - Resistencia a las dolencias aumenta
+GrowUpQuest_StateResistanceBuff1 - Resistencia a dolencias aumentada Lv.1
+GrowUpQuest_StateResistanceBuff2 - Resistencia a dolencias aumentada Lv.2
+GrowUpQuest_StateResistanceBuff3 - Resistencia a dolencias aumentada Lv.3
+GrowUpQuest_StateResistanceBuff4 - Resistencia a dolencias aumentada Lv.4
+GrowUpQuest_DamageCutBuff - Resistencia al daño aumentada
+GrowUpQuest_DamageCutBuff1 - Resistencia al daño aumentada Lv.1
+GrowUpQuest_DamageCutBuff2 - Resistencia al daño aumentada Lv.2
+GrowUpQuest_DamageCutBuff3 - Resistencia al daño aumentada Lv.3
+GrowUpQuest_DamageCutBuff4 - Resistencia al daño aumentada Lv.4
+GrowUpQuest_AutoRecoveryBuff - Recuperación automática de HP
+GrowUpQuest_AutoRecoveryBuff1 - Recuperación automática de HP Lv.1
+GrowUpQuest_AutoRecoveryBuff2 - Recuperación automática de HP Lv.2
+GrowUpQuest_AutoRecoveryBuff3 - Recuperación automática de HP Lv.3
+GrowUpQuest_AutoRecoveryBuff4 - Recuperación automática de HP Lv.4
+GrowUpQuest_DownValueBuff - Factor de reducción para los enemigos.
+GrowUpQuest_DownValueBuff1 - Factor de reducción para enemigos hasta nivel 1
+GrowUpQuest_DownValueBuff2 - Factor de reducción para enemigos hasta nivel 2
+GrowUpQuest_DownValueBuff3 - Factor de reducción para enemigos hasta nivel 3
+GrowUpQuest_DownValueBuff4 - Factor de reducción para enemigos hasta nivel 4
+GrowUpQuest_PbGaugeBuff - Carga del indicador de explosión de fotones
+GrowUpQuest_PbGaugeBuff1 - Carga del indicador de explosión de fotones Lv.1
+GrowUpQuest_PbGaugeBuff2 - Carga del indicador de explosión de fotones nivel 2
+GrowUpQuest_PbGaugeBuff3 - Carga del indicador de explosión de fotones nivel 3
+GrowUpQuest_PbGaugeBuff4 - Carga del indicador de explosión de fotones nivel 4
+GrowUpQuest_CounterAtkBuff - Aumento de potencia del contador lateral
+GrowUpQuest_CounterAtkBuff1 - Potencia de contraataque lateral aumentada Lv.1
+GrowUpQuest_CounterAtkBuff2 - Potencia de contraataque lateral aumentada Lv.2
+GrowUpQuest_CounterAtkBuff3 - Potencia de contraataque lateral aumentada Lv.3
+GrowUpQuest_CounterAtkBuff4 - Potencia de contraataque lateral aumentada Lv.4
+GrowUpQuest_HealRateBuff - Cantidad de recuperación de HP aumentada
+GrowUpQuest_HealRateBuff1 - Cantidad de recuperación de HP aumentada Nv.1
+GrowUpQuest_HealRateBuff2 - Cantidad de recuperación de HP aumentada Nv.2
+GrowUpQuest_HealRateBuff3 - Cantidad de recuperación de HP aumentada Nv.3
+GrowUpQuest_HealRateBuff4 - Cantidad de recuperación de HP aumentada Nv.4
+GrowUpQuest_NodeDamageBuff - Potencia de ataque a piezas destructibles aumentada
+GrowUpQuest_NodeDamageBuff1 - Potencia de ataque a piezas destructibles hasta nivel 1
+GrowUpQuest_NodeDamageBuff2 - Potencia de ataque a piezas destructibles hasta nivel 2
+GrowUpQuest_NodeDamageBuff3 - Potencia de ataque a piezas destructibles hasta nivel 3
+GrowUpQuest_NodeDamageBuff4 - Potencia de ataque a piezas destructibles hasta nivel 4
+GrowUpQuest_WeakPointDamageBuff - Aumenta la potencia de ataque a los puntos débiles
+GrowUpQuest_WeakPointDamageBuff1 - Potencia de ataque a puntos débiles hasta nivel 1
+GrowUpQuest_WeakPointDamageBuff2 - Potencia de ataque a puntos débiles hasta nivel 2
+GrowUpQuest_WeakPointDamageBuff3 - Potencia de ataque a puntos débiles hasta nivel 3
+GrowUpQuest_WeakPointDamageBuff4 - Potencia de ataque a puntos débiles hasta nivel 4
+GrowUpQuest_ActiveSkillCooltimeBuff - Reducción de enfriamiento de habilidad activa
+GrowUpQuest_ActiveSkillCooltimeBuff1 - Reducción de enfriamiento de habilidad activa Lv.1
+GrowUpQuest_ActiveSkillCooltimeBuff2 - Reducción de enfriamiento de habilidad activa Lv.2
+GrowUpQuest_ActiveSkillCooltimeBuff3 - Reducción de enfriamiento de habilidad activa Lv.3
+GrowUpQuest_ActiveSkillCooltimeBuff4 - Reducción de enfriamiento de habilidad activa Lv.4
+GrowUpQuest_IronWillBuff - Negación de Incapacitación (recargas)
+GrowUpQuest_IronWillBuff1 - Negación de Incapacitación (recargas) Lv.1
+GrowUpQuest_IronWillBuff2 - Negación de Incapacitación (recargas) Lv.2
+GrowUpQuest_IronWillBuff3 - Negación de Incapacitación (recargas) Lv.3
+GrowUpQuest_IronWillBuff4 - Negación de Incapacitación (recargas) Lv.4
+GrowUpQuest_DodgeRecoveryBuff - Recuperación de HP en un paso lateral exitoso
+GrowUpQuest_DodgeRecoveryBuff1 - Recuperación de HP en un paso lateral exitoso Lv.1
+GrowUpQuest_DodgeRecoveryBuff2 - Recuperación de HP en un paso lateral exitoso Lv.2
+GrowUpQuest_DodgeRecoveryBuff3 - Recuperación de HP en el paso lateral exitoso Lv.3
+GrowUpQuest_DodgeRecoveryBuff4 - Recuperación de HP en el paso lateral exitoso Lv.4
+GrowUpQuest_RecoveryGaugeIncrease - Restasignar límite de transporte hacia arriba
+GrowUpQuest_RecoveryGaugeIncrease1 - Restasigne llevar límite arriba Lv.1
+GrowUpQuest_RecoveryGaugeIncrease2 - Restasigne llevar límite arriba Lv.2
+GrowUpQuest_RecoveryGaugeIncrease3 - Restasigne llevar límite arriba Lv.3
+GrowUpQuest_RecoveryGaugeIncrease4 - Restasigne llevar límite arriba Lv.4
+GrowUpQuest_AutoRecoveryAddBuff - Reposición automática periódica de restasigne
+GrowUpQuest_AutoRecoveryAddBuff1 - Reabastecimiento automático periódico de restauración Lv.1
+GrowUpQuest_AutoRecoveryAddBuff2 - Reabastecimiento automático periódico de restauración Lv.2
+GrowUpQuest_AutoRecoveryAddBuff3 - Reabastecimiento automático periódico de restauración Lv.3
+GrowUpQuest_AutoRecoveryAddBuff4 - Reabastecimiento automático periódico de restauración Lv.4
+GrowUpQuest_HpBonusBuff - Potencia/Resistencia al daño aumenta cuando HP es 75%+
+GrowUpQuest_HpBonusBuff1 - Potencia/Resistencia al daño aumenta cuando HP 75%+ Lv.1
+GrowUpQuest_HpBonusBuff2 - Potencia/Resistencia al daño aumenta cuando HP 75%+ Lv.2
+GrowUpQuest_HpBonusBuff3 - Potencia/Resistencia al daño aumenta cuando HP 75%+ Lv.3
+GrowUpQuest_HpBonusBuff4 - Potencia/Resistencia al daño aumenta cuando HP 75%+ Lv.4
+GrowUpQuest_HitCountPpHealBuff - Recuperación de PP cada 20 ataques exitosos
+GrowUpQuest_HitCountPpHealBuff1 - Recuperación de PP cada 20 ataques exitosos Lv.1
+GrowUpQuest_HitCountPpHealBuff2 - Recuperación de PP cada 20 ataques exitosos Lv.2
+GrowUpQuest_HitCountPpHealBuff3 - Recuperación de PP cada 20 ataques exitosos Lv.3
+GrowUpQuest_HitCountPpHealBuff4 - Recuperación de PP cada 20 ataques exitosos Lv.4
+GrowUpQuest_BadEase - Reducción de la duración de la dolencia del estado
+GrowUpQuest_BadEase1 - Reducción de duración de dolencia de estado Nv.1
+GrowUpQuest_BadEase2 - Reducción de la duración de la dolencia de estado Nv.2
+GrowUpQuest_BadEase3 - Reducción de duración de dolencia de estado Lv.3
+GrowUpQuest_BadEase4 - Reducción de duración de dolencia de estado Lv.4
+GrowUpQuest_DownDamageBuff - Aumenta la potencia de ataque para derribar enemigos
+GrowUpQuest_DownDamageBuff1 - Potencia de ataque a enemigos derribados hasta nivel 1
+GrowUpQuest_DownDamageBuff2 - Potencia de ataque a enemigos derribados hasta nivel 2
+GrowUpQuest_DownDamageBuff3 - Potencia de ataque a enemigos derribados hasta nivel 3
+GrowUpQuest_DownDamageBuff4 - Potencia de ataque para enemigos derribados hasta nivel 4
+GrowUpQuest_ArsenalModuleGaugeBuff - MARTE. Aumento de la cantidad de recuperación natural de PP de la batería
+GrowUpQuest_ArsenalModuleGaugeBuff1 - MARTE. Cantidad de recuperación natural de PP de batería hasta Lv. 1
+GrowUpQuest_ArsenalModuleGaugeBuff2 - MARTE. Cantidad de recuperación natural de PP de batería hasta Lv. 2
+GrowUpQuest_ArsenalModuleGaugeBuff3 - MARTE. Cantidad de recuperación natural de PP de batería hasta Lv. 3
+GrowUpQuest_ArsenalModuleGaugeBuff4 - MARTE. Cantidad de recuperación natural de PP de batería hasta Lv. 4
+GrowUpQuest_ArsenalModuleDamageBuff - MARTE. Potencia de ataque aumentada
+GrowUpQuest_ArsenalModuleDamageBuff1 - MARTE. Potencia de ataque aumentada Lv. 1
+GrowUpQuest_ArsenalModuleDamageBuff2 - MARTE. Potencia de ataque aumentada Lv. 2
+GrowUpQuest_ArsenalModuleDamageBuff3 - MARTE. Potencia de ataque aumentada Lv. 3
+GrowUpQuest_ArsenalModuleDamageBuff4 - MARTE. Potencia de ataque aumentada Lv. 4
+GrowUpQuest_DodgeAtpBuff - Temperatura. La potencia aumenta con un paso lateral exitoso
+GrowUpQuest_DodgeAtpBuff1 - Temperatura. Aumento de potencia al esquivar con éxito Lv. 1
+GrowUpQuest_DodgeAtpBuff2 - Temperatura. Aumento de potencia al esquivar con éxito Lv. 2
+GrowUpQuest_DodgeAtpBuff3 - Temperatura. Aumento de potencia al esquivar con éxito Lv. 3
+GrowUpQuest_DodgeAtpBuff4 - Temperatura. Aumento de potencia al esquivar con éxito Lv. 4
+GrowUpQuest_S_PhotonArtsBuff - <yellow> Daño adicional por golpe de PA/técnica <c>
+GrowUpQuest_S_PhotonArtsBuff1 - Daño adicional por golpe de PA/técnica
+GrowUpQuest_S_GlideAttackBuff - <yellow> Potencia de ataque en picado/Factor de reducción <c>
+GrowUpQuest_S_GlideAttackBuff1 - Potencia de ataque en picado/factor de reducción hacia arriba
+GrowUpQuest_S_DamageShieldBuff - <yellow> Activación del escudo reflectante <c>
+GrowUpQuest_S_DamageShieldBuff1 - Activación del escudo reflectante
+GrowUpQuest_S_QuickAttackBuff - <yellow> Aceleración de ataque <c>
+GrowUpQuest_S_QuickAttackBuff1 - Acelerar el ataque
+GrowUpQuest_S_NormalAttackBuff - <yellow> Ataque adicional al ataque normal <c>
+GrowUpQuest_S_NormalAttackBuff1 - Ataque adicional al ataque normal
+GrowUpQuest_S_RangeDamageBuff - <yellow> Ataques adicionales automáticos regulares <c>
+GrowUpQuest_S_RangeDamageBuff1 - Ataques adicionales automáticos regulares
+GrowUpQuest_S_OverRecoveryBuff - <yellow> Habilidad hasta 10 segundos después de usar Restasigne <c>
+GrowUpQuest_S_OverRecoveryBuff1 - Habilidad hasta 10 segundos después de usar Restasigne
+GrowUpQuest_S_AdditionalCriticalAttackBuff - <yellow> Daño adicional por golpe crítico <c>
+GrowUpQuest_S_AdditionalCriticalAttackBuff1 - Daño adicional en caso de golpe crítico
+GrowUpQuest_S_DodgeBombBuff - <yellow> Ataque adicional a una evasión exitosa <c>
+GrowUpQuest_S_DodgeBombBuff1 - Ataque adicional a una evasión exitosa
+GrowUpQuest_ThrowingSpeedUpBuff - Lanzar Acción Acelerar
+GrowUpQuest_ThrowingSpeedUpBuff1 - Lanzar Acción Acelerar Lv. 1
+GrowUpQuest_ThrowingSpeedUpBuff2 - Lanzar Acción Acelerar Lv. 2
+GrowUpQuest_ThrowingSpeedUpBuff3 - Lanzar Acción Acelerar Lv. 3
+GrowUpQuest_ThrowingSpeedUpBuff4 - Lanzar Acción Acelerar Lv. 4
+GrowUpQuest_ThrowingBuff - Aumentar la potencia de acción
+GrowUpQuest_ThrowingBuff1 - Lanzar potencia de acción hacia arriba Lv. 1
+GrowUpQuest_ThrowingBuff2 - Lanzar potencia de acción hacia arriba Lv. 2
+GrowUpQuest_ThrowingBuff3 - Lanzar potencia de acción hacia arriba Lv. 3
+GrowUpQuest_ThrowingBuff4 - Lanzar potencia de acción hacia arriba Lv. 4
+GrowUpQuest_S_AdditionalThrowAttackBuff - <yellow> Daño adicional al golpear la acción de lanzar <c>
+GrowUpQuest_S_AdditionalThrowAttackBuff1 - Daño adicional al golpear la acción de lanzar
+GrowUpQuest_S_PbRecoveryBuff - <yellow> Usar PB 2x consecutivamente/Acelerar ataque <c>
+GrowUpQuest_S_PbRecoveryBuff1 - Usar PB 2x consecutivamente/Acelerar ataque
+GrowUpQuest_S_PBMultiMissileBuff - <yellow> Activar PB para equipar Mobile Cannon ALR <c>
+GrowUpQuest_S_PBMultiMissileBuff1 - Activa PB para equipar Mobile Cannon ALR
+GrowUpQuest_S_HPTradeTechArtsBuff - <yellow> PA/TEC arriba/HP abajo en uso si HP está por debajo del 75% <c>
+GrowUpQuest_S_HPTradeTechArtsBuff1 - PA/TEC arriba/HP abajo en uso si HP está por debajo del 75%
+EnemyGrowUpQuest_AttackUp50 - <yellow> Potencia +50% <c>
+EnemyGrowUpQuest_AttackUp100 - <yellow> Potencia +100% <c>
+EnemyGrowUpQuest_AttackUp150 - <yellow> Potencia +150% <c>
+EnemyGrowUpQuest_AttackUp200 - <yellow> Potencia +200% <c>
+EnemyGrowUpQuest_AttackUp250 - <yellow> Potencia +250% <c>
+EnemyGrowUpQuest_AttackUp300 - <yellow> Potencia +300% <c>
+EnemyGrowUpQuest_AttackUp350 - <yellow> Potencia +350% <c>
+EnemyGrowUpQuest_AttackUp400 - <yellow> Potencia +400% <c>
+EnemyGrowUpQuest_AttackUp500 - <yellow> Potencia +500% <c>
+EnemyGrowUpQuest_AttackUp600 - <yellow> Potencia +600% <c>
+EnemyGrowUpQuest_AttackUp700 - <yellow> Potencia +700% <c>
+EnemyGrowUpQuest_AttackUp800 - <yellow> Potencia +800% <c>
+EnemyGrowUpQuest_AttackUp900 - <yellow> Potencia +900% <c>
+EnemyGrowUpQuest_ElementUp50 - <yellow> Estado Dolencia Eficacia +50% <c>
+EnemyGrowUpQuest_ElementUp100 - <yellow> Estado Dolencia Eficacia +100% <c>
+EnemyGrowUpQuest_ElementUp150 - <yellow> Estado Dolencia Eficacia +150% <c>
+EnemyGrowUpQuest_ElementUp200 - <yellow> Estado Dolencia Eficacia +200% <c>
+EnemyGrowUpQuest_ElementUp250 - <yellow> Estado Dolencia Eficacia +250% <c>
+EnemyGrowUpQuest_ElementUp300 - <yellow> Estado Dolencia Eficacia +300% <c>
+EnemyGrowUpQuest_ElementUp350 - <yellow> Estado Dolencia Eficacia +350% <c>
+EnemyGrowUpQuest_ElementUp400 - <yellow> Estado Dolencia Eficacia +400% <c>
+EnemyGrowUpQuest_DamageResist5 - <yellow> Resistencia al daño +5% <c>
+EnemyGrowUpQuest_DamageResist10 - <yellow> Resistencia al daño +10% <c>
+EnemyGrowUpQuest_DamageResist15 - <yellow> Resistencia al daño +15% <c>
+EnemyGrowUpQuest_DamageResist20 - <yellow> Resistencia al daño +20% <c>
+EnemyGrowUpQuest_DamageResist25 - <yellow> Resistencia al daño +25% <c>
+EnemyGrowUpQuest_DamageResist30 - <yellow> Resistencia al daño +30% <c>
+EnemyGrowUpQuest_DamageResist35 - <yellow> Resistencia al daño +35% <c>
+EnemyGrowUpQuest_DamageResist40 - <yellow> Resistencia al daño +40% <c>
+EnemyGrowUpQuest_DamageResist45 - <yellow> Resistencia al daño +45% <c>
+EnemyGrowUpQuest_DamageResist50 - <yellow> Resistencia al daño +50% <c>
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_10 - Resistencia al daño de ataque normal + 10%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_20 - Resistencia al daño de ataque normal + 20%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_30 - Resistencia al daño de ataque normal + 30%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_40 - Resistencia al daño de ataque normal + 40%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_50 - Resistencia al daño de ataque normal + 50%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_60 - Resistencia al daño de ataque normal + 60%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_70 - Resistencia al daño de ataque normal + 70%
+EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_80 - Resistencia al daño de ataque normal + 80%
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_10 - <yellow> PA/Resistencia al daño técnico +10% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_20 - <yellow> PA/Resistencia al daño técnico +20% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_30 - <yellow> PA/Resistencia al daño técnico +30% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_40 - <yellow> PA/Resistencia al daño técnico +40% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_50 - <yellow> PA/Resistencia al daño técnico +50% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_60 - <yellow> PA/Resistencia al daño técnico +60% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_70 - <yellow> PA/Resistencia al daño técnico +70% <c>
+EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_80 - <yellow> PA/Resistencia al daño técnico +80% <c>
+EnemyGrowUpQuest_HPUp20 - <yellow> HP máximo +20% <c>
+EnemyGrowUpQuest_HPUp50 - <yellow> HP máximo +50% <c>
+EnemyGrowUpQuest_HPUp100 - <yellow> HP máximo +100% <c>
+EnemyGrowUpQuest_HPUp150 - <yellow> HP máximo +150% <c>
+EnemyGrowUpQuest_HPUp180 - <yellow> HP máximo +180% <c>
+EnemyGrowUpQuest_HPUp200 - <yellow> HP máximo +200% <c>
+EnemyGrowUpQuest_HPUp250 - <yellow> HP máximo +250% <c>
+EnemyGrowUpQuest_HPUp300 - <yellow> HP máximo +300% <c>
+EnemyGrowUpQuest_HPUp350 - <yellow> HP máximo +350% <c>
+EnemyGrowUpQuest_HPUp400 - <yellow> HP máximo +400% <c>
+EnemyGrowUpQuest_AngerToDamage - <yellow> Daño sostenido de HP del jugador en disminución de HP <c>
+EnemyGrowUpQuest_AngerToPPDamage - <yellow> Daño sostenido de PP del jugador en disminución de HP <c>
+EnemyGrowUpQuest_AngerToHpDown50 - <yellow> HP máximo -50 % en disminución de HP <c>
+EnemyGrowUpQuest_AngerToHpDown75 - <yellow> HP máximo -75 % en disminución de HP <c>
+EnemyGrowUpQuestAdditionalSkillOnHit_DamageDebuff5 - <yellow> Disminución de potencia/resistencia del jugador<c>en ataque
+EnemyGrowUpQuest_Elementboost_F20 - <yellow> Fuego agregó<c>a ataques/acumulación de quemaduras: pequeña
+EnemyGrowUpQuest_Elementboost_F40 - <yellow> Fuego Añadido<c>a Ataques/Acumulación de Quemaduras: Media
+EnemyGrowUpQuest_Elementboost_F60 - <yellow> Fuego agregó<c>a los ataques/acumulación de quemaduras: grande
+EnemyGrowUpQuest_Elementboost_I20 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: pequeño
+EnemyGrowUpQuest_Elementboost_I40 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: media
+EnemyGrowUpQuest_Elementboost_I60 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: grande
+EnemyGrowUpQuest_Elementboost_T20 - <yellow> Rayo Agregó<c>a los ataques/acumulación de descargas: pequeña
+EnemyGrowUpQuest_Elementboost_T40 - <yellow> Rayo Se agregó<c>a los ataques/acumulación de descargas: media
+EnemyGrowUpQuest_Elementboost_T60 - <yellow> Rayo agregó<c>a los ataques/acumulación de descargas: grande
+EnemyGrowUpQuest_Elementboost_W20 - <yellow> Viento agregó<c>a los ataques/acumulación de ciegas: pequeña
+EnemyGrowUpQuest_Elementboost_W40 - <yellow> Viento Agregó<c>a los ataques/Acumulación de ciegas: Media
+EnemyGrowUpQuest_Elementboost_W60 - <yellow> Viento agregó<c>a los ataques/acumulación de ciegas: grande
+EnemyGrowUpQuest_Elementboost_D20 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: pequeño
+EnemyGrowUpQuest_Elementboost_D40 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: medio
+EnemyGrowUpQuest_Elementboost_D60 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: grande
+EnemyGrowUpQuest_Elementboost_L20 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Pequeña
+EnemyGrowUpQuest_Elementboost_L40 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Media
+EnemyGrowUpQuest_Elementboost_L60 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Grande
+Common:DownBombBoost - <yellow> habilitado para Bomlode <c>
+Common:DownBombBoost1 - <yellow> habilitado para Bomlode <c>
+Common:DownBombBoost2 - <yellow> habilitado para Bomlode <c>
+Common:TimerBuffBoost - <yellow> habilitado para Growzard <c>
+Common:TimerBuffBoost1 - <yellow> habilitado para Growzard <c>
+Common:TimerBuffBoost2 - <yellow> habilitado para Growzard <c>
+EnemyGrowUpQuest_AngerToSummon - <yellow> Aparecen enemigos adicionales<c>con disminución de HP
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_10 - <yellow> Resistencia al daño de puntos no débiles +10% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_15 - <yellow> Resistencia al daño de puntos no débiles +15% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_20 - <yellow> Resistencia al daño de puntos no débiles +20% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_30 - <yellow> Resistencia al daño de puntos no débiles +30% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_40 - <yellow> Resistencia al daño de puntos no débiles +40% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_50 - <yellow> Resistencia al daño de puntos no débiles +50% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_60 - <yellow> Resistencia al daño de puntos no débiles +60% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_70 - <yellow> Resistencia al daño de puntos no débiles +70% <c>
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_80 - <yellow> Resistencia al daño de puntos no débiles +80% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_10 - <yellow> Resistencia a daños no críticos +10% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_20 - <yellow> Resistencia a daños no críticos +20% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_30 - <yellow> Resistencia a daños no críticos +30% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_40 - <yellow> Resistencia a daños no críticos +40% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_50 - <yellow> Resistencia a daños no críticos +50% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_60 - <yellow> Resistencia a daños no críticos +60% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_70 - <yellow> Resistencia a daños no críticos +70% <c>
+EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_80 - <yellow> Resistencia a daños no críticos +80% <c>
+EnemyGrowUpQuest_IntervalShot15 - <yellow> Ataques adicionales automáticos<c>ocurren periódicamente
+EnemyGrowUpQuest_IntervalShotFireBoss15 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGrowUpQuest_IntervalShotFireBoss5 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGrowUpQuest_IntervalShotFire15 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGrowUpQuest_IntervalShotFire5 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGrowUpQuest_IfDownReactionFinishAttackUp - <yellow> Mejora de potencia temporal<c>Después de la recuperación
+EnemyGrowUpQuest_RangeAttackStunS - <yellow> Ataque de aturdimiento adicional<c>Dentro de un cierto rango
+EnemyGrowUpQuest_RangeAttackStunM - <yellow> Ataque de aturdimiento adicional<c>Dentro de un cierto rango
+EnemyGrowUpQuest_RangeAttackStunL - <yellow> Ataque de aturdimiento adicional<c>Dentro de un cierto rango
+EnemyGrowUpQuestAdditionalSkillOnHit_PDamageDownDebuff5 - <yellow> Disminución de la potencia del jugador<c>en el ataque
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff5 - <yellow> Disminución de la resistencia del jugador<c>en caso de ataque
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff20 - <yellow> Disminución de la resistencia del jugador<c>en caso de ataque
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff25 - <yellow> Disminución de la resistencia del jugador<c>en caso de ataque
+EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff40 - <yellow> Disminución de la resistencia del jugador<c>en caso de ataque
+EnemyGrowUpQuestBuff_AttackDownUp1 - <yellow> Efecto de aturdimiento Se agregó<c>a los ataques/acumulación de aturdimiento: pequeño
+EnemyGrowUpQuestBuff_AttackDownUp2 - <yellow> Efecto de aturdimiento Se agregó<c>a los ataques/acumulación de aturdimiento: medio
+EnemyGrowUpQuestBuff_AttackDownUp3 - <yellow> Efecto de aturdimiento Se agregó<c>a los ataques/acumulación de aturdimiento: grande
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss5 - <yellow> Los ataques con láser<c>ocurren a intervalos regulares
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss10 - <yellow> Los ataques con láser<c>ocurren a intervalos regulares
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss15 - <yellow> Los ataques con láser<c>ocurren a intervalos regulares
+EnemyGrowUpQuest_IntervalShotGod3SibaBoss20 - <yellow> Los ataques con láser<c>ocurren a intervalos regulares
+EnemyGroom_AngerToDamage - <yellow> Daño sostenido de HP del jugador<c>en la sección final
+EnemyGroom_AngerToPPDamage - <yellow> Daño PP sostenido al jugador<c>en la sección final
+EnemyGroom_AngerToHpDown50 - <yellow> HP máximo del jugador -50 %<c>en la sección final
+EnemyGroom_AngerToHpDown75 - <yellow> HP máximo del jugador -75%<c>en la sección final
+EnemyGroom_AngerToSummon - <yellow> Enemigos adicionales aparecen<c>en la sección final
+
+
+QuestCommonBuff
+Group 0
+SonicQuest_MaxHpAdd - 最大HP上昇
+SonicQuest_AddCriticalAndDamage - クリティカル強化
+CityQuest_DamageUpDebuff - 防御力ダウン
+NewDuel_PpRecoveryDecrease1 - PP回復量－５%
+NewDuel_PpRecoveryDecrease2 - PP回復量－10%
+NewDuel_PpRecoveryDecrease3 - PP回復量－15%
+NewDuel_PpRecoveryDecrease4 - PP回復量－20%
+NewDuel_PpRecoveryDecrease5 - PP回復量－25%
+NewDuel_PbGuageDecrease1 - フォトンブラストゲージ蓄積量－５%
+NewDuel_PbGuageDecrease2 - フォトンブラストゲージ蓄積量－10%
+NewDuel_PbGuageDecrease3 - フォトンブラストゲージ蓄積量－15%
+NewDuel_PbGuageDecrease4 - フォトンブラストゲージ蓄積量－20%
+NewDuel_PbGuageDecrease5 - フォトンブラストゲージ蓄積量－25%
+NewDuel_MarsRecoveryDecrease1 - M.A.R.S.バッテリー自然回復量－10%
+NewDuel_MarsRecoveryDecrease2 - M.A.R.S.バッテリー自然回復量－20%
+NewDuel_MarsRecoveryDecrease3 - M.A.R.S.バッテリー自然回復量－30%
+NewDuel_MarsRecoveryDecrease4 - M.A.R.S.バッテリー自然回復量－40%
+NewDuel_MarsRecoveryDecrease5 - M.A.R.S.バッテリー自然回復量－50%
+NewDuel_StatusEffectTimeExtend1 - 状態異常効果時間増加：小
+NewDuel_StatusEffectTimeExtend2 - 状態異常効果時間増加：中
+NewDuel_StatusEffectTimeExtend3 - 状態異常効果時間増加：大
+NewDuel_StatusEffectTimeExtend4 - 状態異常効果時間増加：特大
+NewDuel_RestasignLimitChange1 - レスタサイン最大所持数－１
+NewDuel_RestasignLimitChange2 - レスタサイン最大所持数－２
+NewDuel_RestasignLimitChange3 - レスタサイン最大所持数－３
+NewDuel_RestasignLimitChange4 - レスタサイン最大所持数－４
+NewDuel_RestasignLimitChange5 - レスタサイン最大所持数－５
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_5 - 弱点部位以外のダメージ耐性＋5%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_10 - 弱点部位以外のダメージ耐性＋10%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_15 - 弱点部位以外のダメージ耐性＋15%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_20 - 弱点部位以外のダメージ耐性＋20%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_30 - 弱点部位以外のダメージ耐性＋30%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_40 - 弱点部位以外のダメージ耐性＋40%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_50 - 弱点部位以外のダメージ耐性＋50%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_60 - 弱点部位以外のダメージ耐性＋60%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_70 - 弱点部位以外のダメージ耐性＋70%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_80 - 弱点部位以外のダメージ耐性＋80%
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerL - 攻撃命中時低確率で<br>プレイヤー威力低下：小
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerL - 攻撃命中時低確率で<br>プレイヤー威力低下：中
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerL - 攻撃命中時低確率で<br>プレイヤー威力低下：大
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerL - 攻撃命中時低確率で<br>プレイヤー威力低下：特大
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerH - 攻撃命中時高確率で<br>プレイヤー威力低下：小
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerH - 攻撃命中時高確率で<br>プレイヤー威力低下：中
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerH - 攻撃命中時高確率で<br>プレイヤー威力低下：大
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerH - 攻撃命中時高確率で<br>プレイヤー威力低下：特大
+EnemyGrowUpQuest_Elementboost_D10 - 攻撃に闇属性追加/ポイズン蓄積量：小
+EnemyGrowUpQuest_Elementboost_D20 - 攻撃に闇属性追加/ポイズン蓄積量：中
+EnemyGrowUpQuest_Elementboost_D40 - 攻撃に闇属性追加/ポイズン蓄積量：大
+EnemyGrowUpQuest_Elementboost_D60 - 攻撃に闇属性追加/ポイズン蓄積量：特大
+r05_rem_akk_ba:ModeProvokeShadow1 - 挑発行動時に分身体出現：１体
+r05_rem_akk_ba:ModeProvokeShadow2 - 挑発行動時に分身体出現：２体
+r05_rem_akk_ba:ModeProvokeShadow3 - 挑発行動時に分身体出現：３体
+r05_rem_akk_ba:Level100BuffDisplayCondition - ？？？
+EnemyHpUp_025 - 最大HP＋25%
+EnemyHpUp_075 - 最大HP＋75%
+EnemyHpUp_100 - 最大HP＋100%
+HighRankEnemy - エネミーメガロティクス化
+EnemyGrowUpQuest_Elementboost_F60 - 攻撃に炎属性追加/バーン蓄積量：特大
+EnemyGrowUpQuest_Elementboost_T40 - 攻撃に雷属性追加/ショック蓄積量：大
+InjuryBoost<2> - 攻撃にインジュリー追加
+CommonCustomizeAction1 - エネミーアクション強化
+CommonCustomizeAction2 - エネミーアクション強化
+
+Group 1
+SonicQuest_MaxHpAdd - HP máximo aumentado
+SonicQuest_AddCriticalAndDamage - Crítico arriba
+CityQuest_DamageUpDebuff - Defensa abajo
+NewDuel_PpRecoveryDecrease1 - Recuperación PP -5%
+NewDuel_PpRecoveryDecrease2 - Recuperación PP -10%
+NewDuel_PpRecoveryDecrease3 - Recuperación PP -15%
+NewDuel_PpRecoveryDecrease4 - Recuperación PP -20%
+NewDuel_PpRecoveryDecrease5 - Recuperación PP -25%
+NewDuel_PbGuageDecrease1 - Carga del indicador de explosión de fotones -5%
+NewDuel_PbGuageDecrease2 - Carga del indicador de explosión de fotones -10%
+NewDuel_PbGuageDecrease3 - Carga del indicador de explosión de fotones -15%
+NewDuel_PbGuageDecrease4 - Carga del indicador de explosión de fotones -20%
+NewDuel_PbGuageDecrease5 - Carga del indicador de explosión de fotones -25%
+NewDuel_MarsRecoveryDecrease1 - MARTE. Recuperación PP Natural de Batería -10%
+NewDuel_MarsRecoveryDecrease2 - MARTE. Recuperación PP Natural de Batería -20%
+NewDuel_MarsRecoveryDecrease3 - MARTE. Recuperación PP Natural de Batería -30%
+NewDuel_MarsRecoveryDecrease4 - MARTE. Recuperación PP natural de la batería -40%
+NewDuel_MarsRecoveryDecrease5 - MARTE. Recuperación natural de PP de la batería -%50
+NewDuel_StatusEffectTimeExtend1 - Aumento de la duración de la dolencia del estado: pequeño
+NewDuel_StatusEffectTimeExtend2 - Aumento de la duración de la dolencia del estado: medio
+NewDuel_StatusEffectTimeExtend3 - Aumento de la duración de la dolencia del estado: grande
+NewDuel_StatusEffectTimeExtend4 - Aumento de la duración de la dolencia del estado: máx.
+NewDuel_RestasignLimitChange1 - Restasignar límite de transporte -1
+NewDuel_RestasignLimitChange2 - Restasignar límite de transporte -2
+NewDuel_RestasignLimitChange3 - Restasignar límite de transporte -3
+NewDuel_RestasignLimitChange4 - Restasignar límite de transporte -4
+NewDuel_RestasignLimitChange5 - Límite de transporte de reasignación -5
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_5 - Resistencia al daño de puntos no débiles +5%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_10 - Resistencia al daño de puntos no débiles +10%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_15 - Resistencia al daño de puntos no débiles +15%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_20 - Resistencia al daño de puntos no débiles +20%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_30 - Resistencia al daño de puntos no débiles +30%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_40 - Resistencia al daño de puntos no débiles +40%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_50 - Resistencia al daño de puntos no débiles +50%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_60 - Resistencia al daño de puntos no débiles +60%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_70 - Resistencia al daño de puntos no débiles +70%
+EnemyGrowUpQuest_CalcDmageRate_NotWeak_80 - Resistencia al daño de puntos no débiles +80%
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerL - Raro Disminución de la potencia del jugador<br>en el ataque: Pequeño
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerL - Raro Disminución de la potencia del jugador<br>en el ataque: Medio
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerL - Raro Disminución de la potencia del jugador<br>en el ataque: Grande
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerL - Disminución de potencia de jugador poco común<br>en ataque: máx.
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerH - Probable disminución de la potencia del jugador<br>en el ataque: pequeño
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerH - Probable disminución de la potencia del jugador<br>en el ataque: Medio
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerH - Probable disminución de la potencia del jugador<br>en el ataque: grande
+r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerH - Disminución probable de la potencia del jugador<br>en el golpe de ataque: Máx.
+EnemyGrowUpQuest_Elementboost_D10 - Oscuro añadido a los ataques/<br> Acumulación de veneno: pequeño
+EnemyGrowUpQuest_Elementboost_D20 - Oscuridad añadida a los ataques/acumulación de veneno: media
+EnemyGrowUpQuest_Elementboost_D40 - Oscuridad añadida a los ataques/acumulación de veneno: grande
+EnemyGrowUpQuest_Elementboost_D60 - Oscuridad agregada a los ataques/acumulación de veneno: máx.
+r05_rem_akk_ba:ModeProvokeShadow1 - Ataque adicional por fragmento<br>durante la acción provocativa: 1
+r05_rem_akk_ba:ModeProvokeShadow2 - Ataque adicional por fragmento<br>durante la acción provocativa: 2
+r05_rem_akk_ba:ModeProvokeShadow3 - Ataque adicional por fragmento<br>durante la acción provocativa: 3
+r05_rem_akk_ba:Level100BuffDisplayCondition - ???
+EnemyHpUp_025 - Vida máxima +25%
+EnemyHpUp_075 - Vida máxima +75%
+EnemyHpUp_100 - Vida máxima +100%
+HighRankEnemy - Enemigos megalotix
+EnemyGrowUpQuest_Elementboost_F60 - Fuego añadido a los ataques/acumulación de quemaduras: máx.
+EnemyGrowUpQuest_Elementboost_T40 - Rayos añadidos a los ataques/acumulación de descargas: grande
+InjuryBoost<2> - Lesiones sumadas a los ataques
+CommonCustomizeAction1 - Acciones enemigas mejoradas
+CommonCustomizeAction2 - Acciones enemigas mejoradas
+
+
+JournalText
+Group 0
+QuizAnswerCount - %(personalwork0)
+QuizAnswerCount_Title - 正解数
+OngoingQuiz - 問題
+TFQuiz_1_1 - なし
+AnswerTimeLimit_Title - 残り時間
+AnswerTimeLimit_1 - 正解発表まで
+AnswerTimeLimit_2 - %(personalwork1) 秒
+QuestPointAndTargetPoint - $(0)pt / $(1)pt
+
+Group 1
+QuizAnswerCount - %(trabajo personal0)
+QuizAnswerCount_Title - Respuestas correctas
+OngoingQuiz - Preguntas
+TFQuiz_1_1 - Ninguno
+AnswerTimeLimit_Title - Tiempo restante
+AnswerTimeLimit_1 - Respuesta revelada en
+AnswerTimeLimit_2 - %(trabajo personal1) segundo(s)
+QuestPointAndTargetPoint - $(0)pt / $(1)pt
+
+
+BuffLineText
+Group 0
+CityQuest_DamageUpDebuff - 探索ポイントの変動により、被ダメージ増加Lv.$(0)の効果が発生します。
+
+Group 1
+CityQuest_DamageUpDebuff - Debido a los cambios en los puntos de exploración, el daño recibido aumenta el nivel. Se ha aplicado $(0).
+
+
+GroomCommon
+Group 0
+ChooseBuff - <yellow>$(0) Lv.$(1)<c>を獲得しました。
+Toast_All_LevelUp - 獲得している能力強化のLvが上昇しました。
+Toast_ComboBuff_Get - 全体強化<yellow>$(0)$(1)<c>を獲得しました。
+TimeOver - 制限時間の経過
+ChipInfoHeader - 能力強化条件：$(0)
+ChipInfoBattle - 出現したエネミーを倒す
+ChipInfoItemContainer - シェアードコンテナを全て壊す
+ChipInfoSearch - ポールスイッチを３つ押す
+ChipInfoNone - なし
+ChipInfoCleared - 獲得済み
+GetBuffList - プレイヤー能力強化
+GetBuffLv - Lv.$(0)
+Benefit_None - なし
+AreaWait_QuestDetailsGuide - この情報は、クエスト進行中に<yellow>メインメニューを開いた際に表示される<br>"簡易クエスト情報"<c>でも確認できます。
+AreaWait_QuestDetailsTitle - エネミー情報
+BuffGet_WaitTime - 他のプレイヤーのバフ取得を待っています。
+GroomDebuff_Start - \永続お邪魔効果発動！
+GroomDebuff_End - \永続お邪魔効果が解除された！
+Groom_PersistentJournalTitle - ￥発動中の妨害効果
+
+Group 1
+ChooseBuff - Obtenido<yellow>$(0) Lv.$(1)<c>.
+Toast_All_LevelUp - Todas las mejoras de habilidades adquiridas han aumentado de nivel.
+Toast_ComboBuff_Get - Obtuvo una mejora completa<yellow>$(0)$(1) <c>.
+TimeOver - Límite de tiempo excedido
+ChipInfoHeader - Condición de mejora de habilidad: $(0)
+ChipInfoBattle - Derrota a los enemigos
+ChipInfoItemContainer - Destruye todos los contenedores compartidos
+ChipInfoSearch - Presione interruptores de 3 polos
+ChipInfoNone - Ninguno
+ChipInfoCleared - Adquirido
+GetBuffList - Mejora de la habilidad del jugador
+GetBuffLv - Nivel$(0)
+Benefit_None - Ninguno
+AreaWait_QuestDetailsGuide - at aparece al abrir el menú principal<c>mientras la misión está en progreso.
+AreaWait_QuestDetailsTitle - Información del enemigo
+BuffGet_WaitTime - Esperando que otros jugadores obtengan su beneficio.
+
+
+GroomBuff
+Group 0
+Groom_HpUp - 最大HP増加
+Groom_Critical - クリティカル率上昇
+Groom_CriticalDmg - クリティカル威力上昇
+Groom_MoveSpeed - 移動速度上昇
+Groom_DamageBuff - 威力上昇
+Groom_MaxPpBuff - 最大PP増加
+Groom_NormalAtkDamageBuff - 通常攻撃威力上昇
+Groom_NormalAtkDrainBuff - 通常攻撃命中時にHP回復
+Groom_PaTechniqueBuff - PA/テクニック威力上昇
+Groom_PbDamageBuff - フォトンブラスト威力上昇
+Groom_PpHealRateBuff - PP回復量増加
+Groom_StateResistanceBuff - 状態異常耐性上昇
+Groom_DamageCutBuff - ダメージ耐性上昇
+Groom_AutoRecoveryBuff - HP自動回復
+Groom_DownValueBuff - エネミーに与えるダウン値上昇
+Groom_PbGaugeBuff - フォトンブラストゲージ蓄積量増加
+Groom_CounterAtkBuff - ステップカウンター威力上昇
+Groom_HealRateBuff - HP回復量増加
+Groom_NodeDamageBuff - 破壊可能部位への攻撃威力上昇
+Groom_WeakPointDamageBuff - 弱点部位への攻撃威力上昇
+Groom_ActiveSkillCooltimeBuff - アクティブスキル再使用可能時間短縮
+Groom_IronWillBuff - 戦闘不能回避（一定時間で効果再発生）
+Groom_DodgeRecoveryBuff - ステップ回避成功時にHP回復
+Groom_RecoveryGaugeIncrease - レスタサイン最大所持数増加
+Groom_AutoRecoveryAddBuff - 一定間隔でレスタサイン自動補充
+Groom_HpBonusBuff - HP75%以上で威力/ダメージ耐性上昇
+Groom_HitCountPpHealBuff - 攻撃命中20回ごとにPP回復
+Groom_BadEase - 状態異常の効果時間短縮
+Groom_DownDamageBuff - ダウン中のエネミーへの攻撃威力上昇
+Groom_ArsenalModuleGaugeBuff - M.A.R.S.バッテリー自然回復量増加
+Groom_ArsenalModuleDamageBuff - M.A.R.S.攻撃威力上昇
+Groom_DodgeAtpBuff - ステップ回避成功時に一定時間威力上昇
+Groom_S_PhotonArtsBuff - <yellow>PA/テクニック命中時に追加ダメージ<c>
+Groom_S_GlideAttackBuff - <yellow>ダイブアタック威力/ダウン値上昇<c>
+Groom_S_DamageShieldBuff - <yellow>リフレクトシールド発生<c>
+Groom_S_QuickAttackBuff - <yellow>攻撃速度上昇<c>
+Groom_S_NormalAttackBuff - <yellow>通常攻撃時に追加攻撃発生<c>
+Groom_S_RangeDamageBuff - <yellow>一定間隔ごとに自動的に追加攻撃発生<c>
+Groom_S_OverRecoveryBuff - <yellow>レスタサイン使用後に10秒間能力上昇<c>
+Groom_S_AdditionalCriticalAttackBuff - <yellow>クリティカル発生時に追加ダメージ<c>
+Groom_S_DodgeBombBuff - <yellow>ステップ回避成功時に追加攻撃発生<c>
+Groom_ThrowingSpeedUpBuff - <yellow>投擲アクション速度上昇<c>
+Groom_ThrowingBuff - <yellow>投擲アクション威力上昇<c>
+Groom_S_AdditionalThrowAttackBuff - <yellow>投擲アクション命中時に追加ダメージ<c>
+Groom_S_PbRecoveryBuff - <yellow>PBを2回連続で発動可能/PB攻撃速度上昇<c>
+Groom_S_PBMultiMissileBuff - <yellow>PB発動がモバイルキャノンALRを装備に変更<c>
+Groom_S_HPTradeTechArtsBuff - <yellow>HP75%以下時PA/TEC威力上昇/使用時HP減<c>
+EnemyGroom_AttackUp50 - <yellow>威力＋50%<c>
+EnemyGroom_AttackUp100 - <yellow>威力＋100%<c>
+EnemyGroom_AttackUp150 - <yellow>威力＋150%<c>
+EnemyGroom_AttackUp200 - <yellow>威力＋200%<c>
+EnemyGroom_AttackUp250 - <yellow>威力＋250%<c>
+EnemyGroom_AttackUp300 - <yellow>威力＋300%<c>
+EnemyGroom_AttackUp350 - <yellow>威力＋350%<c>
+EnemyGroom_AttackUp400 - <yellow>威力＋400%<c>
+EnemyGroom_AttackUp500 - <yellow>威力＋500%<c>
+EnemyGroom_AttackUp600 - <yellow>威力＋600%<c>
+EnemyGroom_AttackUp700 - <yellow>威力＋700%<c>
+EnemyGroom_AttackUp800 - <yellow>威力＋800%<c>
+EnemyGroom_AttackUp900 - <yellow>威力＋900%<c>
+EnemyGroom_ElementUp50 - <yellow>状態異常蓄積値＋50%<c>
+EnemyGroom_ElementUp100 - <yellow>状態異常蓄積値＋100%<c>
+EnemyGroom_ElementUp150 - <yellow>状態異常蓄積値＋150%<c>
+EnemyGroom_ElementUp200 - <yellow>状態異常蓄積値＋200%<c>
+EnemyGroom_ElementUp250 - <yellow>状態異常蓄積値＋250%<c>
+EnemyGroom_ElementUp300 - <yellow>状態異常蓄積値＋300%<c>
+EnemyGroom_ElementUp350 - <yellow>状態異常蓄積値＋350%<c>
+EnemyGroom_ElementUp400 - <yellow>状態異常蓄積値＋400%<c>
+EnemyGroom_DamageResist5 - <yellow>ダメージ耐性＋5%<c>
+EnemyGroom_DamageResist10 - <yellow>ダメージ耐性＋10%<c>
+EnemyGroom_DamageResist15 - <yellow>ダメージ耐性＋15%<c>
+EnemyGroom_DamageResist20 - <yellow>ダメージ耐性＋20%<c>
+EnemyGroom_DamageResist25 - <yellow>ダメージ耐性＋25%<c>
+EnemyGroom_DamageResist30 - <yellow>ダメージ耐性＋30%<c>
+EnemyGroom_DamageResist35 - <yellow>ダメージ耐性＋35%<c>
+EnemyGroom_DamageResist40 - <yellow>ダメージ耐性＋40%<c>
+EnemyGroom_DamageResist45 - <yellow>ダメージ耐性＋45%<c>
+EnemyGroom_DamageResist50 - <yellow>ダメージ耐性＋50%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_10 - <yellow>通常攻撃ダメージ耐性＋10%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_20 - <yellow>通常攻撃ダメージ耐性＋20%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_30 - <yellow>通常攻撃ダメージ耐性＋30%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_40 - <yellow>通常攻撃ダメージ耐性＋40%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_50 - <yellow>通常攻撃ダメージ耐性＋50%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_60 - <yellow>通常攻撃ダメージ耐性＋60%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_70 - <yellow>通常攻撃ダメージ耐性＋70%<c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_80 - <yellow>通常攻撃ダメージ耐性＋80%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_10 - <yellow>PA/テクニックダメージ耐性＋10%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_20 - <yellow>PA/テクニックダメージ耐性＋20%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_30 - <yellow>PA/テクニックダメージ耐性＋30%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_40 - <yellow>PA/テクニックダメージ耐性＋40%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_50 - <yellow>PA/テクニックダメージ耐性＋50%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_60 - <yellow>PA/テクニックダメージ耐性＋60%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_70 - <yellow>PA/テクニックダメージ耐性＋70%<c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_80 - <yellow>PA/テクニックダメージ耐性＋80%<c>
+EnemyGroom_HPUp50 - <yellow>最大HP＋50%<c>
+EnemyGroom_HPUp100 - <yellow>最大HP＋100%<c>
+EnemyGroom_HPUp150 - <yellow>最大HP＋150%<c>
+EnemyGroom_HPUp180 - <yellow>最大HP＋180%<c>
+EnemyGroom_HPUp200 - <yellow>最大HP＋200%<c>
+EnemyGroom_HPUp250 - <yellow>最大HP＋250%<c>
+EnemyGroom_HPUp300 - <yellow>最大HP＋300%<c>
+EnemyGroom_HPUp350 - <yellow>最大HP＋350%<c>
+EnemyGroom_HPUp400 - <yellow>最大HP＋400%<c>
+EnemyGroom_AngerToDamage - HP減少時に<yellow>プレイヤーHPに継続ダメージ<c>
+EnemyGroom_AngerToPPDamage - HP減少時に<yellow>プレイヤーPPに継続ダメージ<c>
+EnemyGroom_AngerToHpDown50 - HP減少時に<yellow>プレイヤー最大HP－50%<c>
+EnemyGroom_AngerToHpDown75 - HP減少時に<yellow>プレイヤー最大HP－75%<c>
+EnemyGroomAdditionalSkillOnHit_DamageDebuff5 - 攻撃命中時に<yellow>プレイヤー威力/耐性低下<c>
+EnemyGroom_Elementboost_F20 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：小
+EnemyGroom_Elementboost_F40 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：中
+EnemyGroom_Elementboost_F60 - 攻撃に<yellow>炎属性追加<c>/バーン蓄積量：大
+EnemyGroom_Elementboost_I20 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：小
+EnemyGroom_Elementboost_I40 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：中
+EnemyGroom_Elementboost_I60 - 攻撃に<yellow>氷属性追加<c>/フリーズ蓄積量：大
+EnemyGroom_Elementboost_T20 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：小
+EnemyGroom_Elementboost_T40 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：中
+EnemyGroom_Elementboost_T60 - 攻撃に<yellow>雷属性追加<c>/ショック蓄積量：大
+EnemyGroom_Elementboost_W20 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：小
+EnemyGroom_Elementboost_W40 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：中
+EnemyGroom_Elementboost_W60 - 攻撃に<yellow>風属性追加<c>/ミラージュ蓄積量：大
+EnemyGroom_Elementboost_D20 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：小
+EnemyGroom_Elementboost_D40 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：中
+EnemyGroom_Elementboost_D60 - 攻撃に<yellow>闇属性追加<c>/ポイズン蓄積量：大
+EnemyGroom_Elementboost_L20 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：小
+EnemyGroom_Elementboost_L40 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：中
+EnemyGroom_Elementboost_L60 - 攻撃に<yellow>光属性追加<c>/パニック蓄積量：大
+Common:DownBombBoost - <yellow>バムロードエネミー化<c>
+Common:TimerBuffBoost - <yellow>グローサードエネミー化<c>
+EnemyGroom_AngerToSummon - HP減少時に<yellow>追加エネミー出現<c>
+EnemyGroom_CalcDmageRate_NotWeak_10 - <yellow>弱点部位以外のダメージ耐性＋10%<c>
+EnemyGroom_CalcDmageRate_NotWeak_15 - <yellow>弱点部位以外のダメージ耐性＋15%<c>
+EnemyGroom_CalcDmageRate_NotWeak_20 - <yellow>弱点部位以外のダメージ耐性＋20%<c>
+EnemyGroom_CalcDmageRate_NotWeak_30 - <yellow>弱点部位以外のダメージ耐性＋30%<c>
+EnemyGroom_CalcDmageRate_NotWeak_40 - <yellow>弱点部位以外のダメージ耐性＋40%<c>
+EnemyGroom_CalcDmageRate_NotWeak_50 - <yellow>弱点部位以外のダメージ耐性＋50%<c>
+EnemyGroom_CalcDmageRate_NotWeak_60 - <yellow>弱点部位以外のダメージ耐性＋60%<c>
+EnemyGroom_CalcDmageRate_NotWeak_70 - <yellow>弱点部位以外のダメージ耐性＋70%<c>
+EnemyGroom_CalcDmageRate_NotWeak_80 - <yellow>弱点部位以外のダメージ耐性＋80%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_10 - <yellow>クリティカル以外のダメージ耐性＋10%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_20 - <yellow>クリティカル以外のダメージ耐性＋20%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_30 - <yellow>クリティカル以外のダメージ耐性＋30%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_40 - <yellow>クリティカル以外のダメージ耐性＋40%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_50 - <yellow>クリティカル以外のダメージ耐性＋50%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_60 - <yellow>クリティカル以外のダメージ耐性＋60%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_70 - <yellow>クリティカル以外のダメージ耐性＋70%<c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_80 - <yellow>クリティカル以外のダメージ耐性＋80%<c>
+EnemyGroom_IntervalShot15 - 一定間隔ごとに<yellow>自動的に追加攻撃発生<c>
+EnemyGroom_IntervalShotFireBoss15 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGroom_IntervalShotFireBoss5 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGroom_IntervalShotFire15 - 一定間隔ごとに<yellow>隕石が落下<c>
+EnemyGroom_IntervalShotFire5 - 一定間隔ごとに<yellow>隕石が落下<c>
+Groom_S_AdditionalFireElementBuff - 炎属性追加攻撃発生
+Groom_S_AdditionalIceElementBuff - 氷属性追加攻撃発生
+Groom_S_AdditionalThunderElementBuff - 雷属性追加攻撃発生
+Groom_S_AdditionalWindElementBuff - 風属性追加攻撃発生
+Groom_S_AdditionalLightElementBuff - 光属性追加攻撃発生
+Groom_S_AdditionalDarkElementBuff - 闇属性追加攻撃発生
+Groom_S_DashFieldBuff - ダッシュフィールド展開バフ
+Groom_S_DashDropBombBuff - ダッシュ爆弾ドロップバフ
+Groom_S_GlideDropBombBuff - グライド爆弾
+Groom_S_All_LevelUp - 獲得済の全能力強化Lv+1
+Groom_Combo_NormalAtkBuff - <pict icon_buffcon1>通常攻撃威力上昇
+Groom_Combo_AutoRecoveryPPBuff - <pict icon_buffcon1>一定間隔でPP回復
+Groom_Combo_DamageReductionBuff - <pict icon_buffcon2>ダメージ耐性上昇
+Groom_Combo_PATecBuff - <pict icon_buffcon3>PA/テクニック威力上昇
+Groom_Persistent_HPDamageOverTimeDebuff - HP継続ダメージ
+Groom_Persistent_PPDamageOverTimeDebuff - PP継続現象
+Groom_Persistent_NormalAtkDebuff - 通常攻撃威力減少
+Groom_Persistent_PATecDebuff - PA/テクニック威力減少
+Groom_Persistent_VulnerabilityDebuff - 被ダメージ上昇
+Groom_Persistent_BadCondDebuff - 状態異常耐性低下
+
+Group 1
+Groom_HpUp - HP máximo arriba
+Groom_Critical - Aumento de la tasa crítica
+Groom_CriticalDmg - Potencia crítica aumentada
+Groom_DamageBuff - Potencia arriba
+Groom_MaxPpBuff - PP máx. arriba
+Groom_NormalAtkDamageBuff - Potencia de ataque normal aumentada
+Groom_NormalAtkDrainBuff - Recuperación de HP en caso de ataque normal
+Groom_PaTechniqueBuff - Aumento de potencia de PA/técnica
+Groom_PbDamageBuff - Aumento de la potencia de la explosión de fotones
+Groom_PpHealRateBuff - Cantidad de recuperación de PP aumentada
+Groom_StateResistanceBuff - Resistencia a las dolencias aumenta
+Groom_DamageCutBuff - Resistencia al daño aumentada
+Groom_AutoRecoveryBuff - Recuperación automática de HP
+Groom_DownValueBuff - Factor de reducción para los enemigos.
+Groom_PbGaugeBuff - Carga del indicador de explosión de fotones
+Groom_CounterAtkBuff - Aumento de potencia del contador lateral
+Groom_HealRateBuff - Cantidad de recuperación de HP aumentada
+Groom_NodeDamageBuff - Potencia de ataque a piezas destructibles aumentada
+Groom_WeakPointDamageBuff - Aumenta la potencia de ataque a los puntos débiles
+Groom_ActiveSkillCooltimeBuff - Reducción de enfriamiento de habilidad activa
+Groom_IronWillBuff - Negación de Incapacitación (recargas)
+Groom_DodgeRecoveryBuff - Recuperación de HP en un paso lateral exitoso
+Groom_RecoveryGaugeIncrease - Restasignar límite de transporte hacia arriba
+Groom_AutoRecoveryAddBuff - Reposición automática periódica de restasigne
+Groom_HpBonusBuff - Potencia/Resistencia al daño aumenta cuando HP es 75%+
+Groom_HitCountPpHealBuff - Recuperación de PP cada 20 ataques exitosos
+Groom_BadEase - Reducción de la duración de la dolencia del estado
+Groom_DownDamageBuff - Aumenta la potencia de ataque para derribar enemigos
+Groom_ArsenalModuleGaugeBuff - MARTE. Aumento de la cantidad de recuperación natural de PP de la batería
+Groom_ArsenalModuleDamageBuff - MARTE. Potencia de ataque aumentada
+Groom_DodgeAtpBuff - Temperatura. La potencia aumenta con un paso lateral exitoso
+Groom_S_PhotonArtsBuff - <yellow> Daño adicional por golpe de PA/técnica <c>
+Groom_S_GlideAttackBuff - <yellow> Potencia de ataque en picado/Factor de reducción <c>
+Groom_S_DamageShieldBuff - <yellow> Activación del escudo reflectante <c>
+Groom_S_QuickAttackBuff - <yellow> Aceleración de ataque <c>
+Groom_S_NormalAttackBuff - <yellow> Ataque adicional al ataque normal <c>
+Groom_S_RangeDamageBuff - <yellow> Ataques adicionales automáticos regulares <c>
+Groom_S_OverRecoveryBuff - <yellow> Habilidad hasta 10 segundos después de usar Restasigne <c>
+Groom_S_AdditionalCriticalAttackBuff - <yellow> Daño adicional por golpe crítico <c>
+Groom_S_DodgeBombBuff - <yellow> Ataque adicional a una evasión exitosa <c>
+Groom_ThrowingSpeedUpBuff - <yellow> Lanzar Acción Acelerar <c>
+Groom_ThrowingBuff - <yellow> Aumentar la potencia de acción <c>
+Groom_S_AdditionalThrowAttackBuff - <yellow> Daño adicional al golpear la acción de lanzar <c>
+Groom_S_PbRecoveryBuff - <yellow> Usar PB 2x consecutivamente/Acelerar ataque <c>
+Groom_S_PBMultiMissileBuff - <yellow> Activar PB para equipar Mobile Cannon ALR <c>
+Groom_S_HPTradeTechArtsBuff - <yellow> Si HP está por debajo del 75% PA/TEC Potencia arriba/HP abajo en uso <c>
+EnemyGroom_AttackUp50 - <yellow> Potencia +50% <c>
+EnemyGroom_AttackUp100 - <yellow> Potencia +100% <c>
+EnemyGroom_AttackUp150 - <yellow> Potencia +150% <c>
+EnemyGroom_AttackUp200 - <yellow> Potencia +200% <c>
+EnemyGroom_AttackUp250 - <yellow> Potencia +250% <c>
+EnemyGroom_AttackUp300 - <yellow> Potencia +300% <c>
+EnemyGroom_AttackUp350 - <yellow> Potencia +350% <c>
+EnemyGroom_AttackUp400 - <yellow> Potencia +400% <c>
+EnemyGroom_AttackUp500 - <yellow> Potencia +500% <c>
+EnemyGroom_AttackUp600 - <yellow> Potencia +600% <c>
+EnemyGroom_AttackUp700 - <yellow> Potencia +700% <c>
+EnemyGroom_AttackUp800 - <yellow> Potencia +800% <c>
+EnemyGroom_AttackUp900 - <yellow> Potencia +900% <c>
+EnemyGroom_ElementUp50 - <yellow> Estado Dolencia Eficacia +50% <c>
+EnemyGroom_ElementUp100 - <yellow> Estado Dolencia Eficacia +100% <c>
+EnemyGroom_ElementUp150 - <yellow> Estado Dolencia Eficacia +150% <c>
+EnemyGroom_ElementUp200 - <yellow> Estado Dolencia Eficacia +200% <c>
+EnemyGroom_ElementUp250 - <yellow> Estado Dolencia Eficacia +250% <c>
+EnemyGroom_ElementUp300 - <yellow> Estado Dolencia Eficacia +300% <c>
+EnemyGroom_ElementUp350 - <yellow> Estado Dolencia Eficacia +350% <c>
+EnemyGroom_ElementUp400 - <yellow> Estado Dolencia Eficacia +400% <c>
+EnemyGroom_DamageResist5 - <yellow> Resistencia al daño +5% <c>
+EnemyGroom_DamageResist10 - <yellow> Resistencia al daño +10% <c>
+EnemyGroom_DamageResist15 - <yellow> Resistencia al daño +15% <c>
+EnemyGroom_DamageResist20 - <yellow> Resistencia al daño +20% <c>
+EnemyGroom_DamageResist25 - <yellow> Resistencia al daño +25% <c>
+EnemyGroom_DamageResist30 - <yellow> Resistencia al daño +30% <c>
+EnemyGroom_DamageResist35 - <yellow> Resistencia al daño +35% <c>
+EnemyGroom_DamageResist40 - <yellow> Resistencia al daño +40% <c>
+EnemyGroom_DamageResist45 - <yellow> Resistencia al daño +45% <c>
+EnemyGroom_DamageResist50 - <yellow> Resistencia al daño +50% <c>
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_10 - Resistencia al daño de ataque normal + 10%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_20 - Resistencia al daño de ataque normal + 20%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_30 - Resistencia al daño de ataque normal + 30%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_40 - Resistencia al daño de ataque normal + 40%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_50 - Resistencia al daño de ataque normal + 50%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_60 - Resistencia al daño de ataque normal + 60%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_70 - Resistencia al daño de ataque normal + 70%
+EnemyGroom_SendClient_NormalAtkAtpDownBuff1_80 - Resistencia al daño de ataque normal + 80%
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_10 - <yellow> PA/Resistencia al daño técnico +10% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_20 - <yellow> PA/Resistencia al daño técnico +20% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_30 - <yellow> PA/Resistencia al daño técnico +30% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_40 - <yellow> PA/Resistencia al daño técnico +40% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_50 - <yellow> PA/Resistencia al daño técnico +50% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_60 - <yellow> PA/Resistencia al daño técnico +60% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_70 - <yellow> PA/Resistencia al daño técnico +70% <c>
+EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_80 - <yellow> PA/Resistencia al daño técnico +80% <c>
+EnemyGroom_HPUp50 - <yellow> HP máximo +50% <c>
+EnemyGroom_HPUp100 - <yellow> HP máximo +100% <c>
+EnemyGroom_HPUp150 - <yellow> HP máximo +150% <c>
+EnemyGroom_HPUp180 - <yellow> HP máximo +180% <c>
+EnemyGroom_HPUp200 - <yellow> HP máximo +200% <c>
+EnemyGroom_HPUp250 - <yellow> HP máximo +250% <c>
+EnemyGroom_HPUp300 - <yellow> HP máximo +300% <c>
+EnemyGroom_HPUp350 - <yellow> HP máximo +350% <c>
+EnemyGroom_HPUp400 - <yellow> HP máximo +400% <c>
+EnemyGroom_AngerToDamage - <yellow> Daño sostenido de HP del jugador en disminución de HP <c>
+EnemyGroom_AngerToPPDamage - <yellow> Daño sostenido de PP del jugador en disminución de HP <c>
+EnemyGroom_AngerToHpDown50 - <yellow> HP máximo -50 % en disminución de HP <c>
+EnemyGroom_AngerToHpDown75 - <yellow> HP máximo -75 % en disminución de HP <c>
+EnemyGroomAdditionalSkillOnHit_DamageDebuff5 - <yellow> Disminución de potencia/resistencia del jugador<c>en ataque
+EnemyGroom_Elementboost_F20 - <yellow> Fuego agregó<c>a ataques/acumulación de quemaduras: pequeña
+EnemyGroom_Elementboost_F40 - <yellow> Fuego Añadido<c>a Ataques/Acumulación de Quemaduras: Media
+EnemyGroom_Elementboost_F60 - <yellow> Fuego agregó<c>a los ataques/acumulación de quemaduras: grande
+EnemyGroom_Elementboost_I20 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: pequeño
+EnemyGroom_Elementboost_I40 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: media
+EnemyGroom_Elementboost_I60 - <yellow> Hielo agregado<c>a los ataques/acumulación de congelación: grande
+EnemyGroom_Elementboost_T20 - <yellow> Rayo Agregó<c>a los ataques/acumulación de descargas: pequeña
+EnemyGroom_Elementboost_T40 - <yellow> Rayo Se agregó<c>a los ataques/acumulación de descargas: media
+EnemyGroom_Elementboost_T60 - <yellow> Rayo agregó<c>a los ataques/acumulación de descargas: grande
+EnemyGroom_Elementboost_W20 - <yellow> Viento agregó<c>a los ataques/acumulación de ciegas: pequeña
+EnemyGroom_Elementboost_W40 - <yellow> Viento Agregó<c>a los ataques/Acumulación de ciegas: Media
+EnemyGroom_Elementboost_W60 - <yellow> Viento agregó<c>a los ataques/acumulación de ciegas: grande
+EnemyGroom_Elementboost_D20 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: pequeño
+EnemyGroom_Elementboost_D40 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: medio
+EnemyGroom_Elementboost_D60 - <yellow> Oscuro Se agregó<c>a los ataques/acumulación de veneno: grande
+EnemyGroom_Elementboost_L20 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Pequeña
+EnemyGroom_Elementboost_L40 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Media
+EnemyGroom_Elementboost_L60 - <yellow> Luz Añadida<c>a Ataques/Acumulación de Pánico: Grande
+Common:DownBombBoost - <yellow> habilitado para Bomlode <c>
+Common:TimerBuffBoost - <yellow> habilitado para Growzard <c>
+EnemyGroom_AngerToSummon - <yellow> Aparecen enemigos adicionales<c>con disminución de HP
+EnemyGroom_CalcDmageRate_NotWeak_10 - <yellow> Resistencia al daño de puntos no débiles +10% <c>
+EnemyGroom_CalcDmageRate_NotWeak_15 - <yellow> Resistencia al daño de puntos no débiles +15% <c>
+EnemyGroom_CalcDmageRate_NotWeak_20 - <yellow> Resistencia al daño de puntos no débiles +20% <c>
+EnemyGroom_CalcDmageRate_NotWeak_30 - <yellow> Resistencia al daño de puntos no débiles +30% <c>
+EnemyGroom_CalcDmageRate_NotWeak_40 - <yellow> Resistencia al daño de puntos no débiles +40% <c>
+EnemyGroom_CalcDmageRate_NotWeak_50 - <yellow> Resistencia al daño de puntos no débiles +50% <c>
+EnemyGroom_CalcDmageRate_NotWeak_60 - <yellow> Resistencia al daño de puntos no débiles +60% <c>
+EnemyGroom_CalcDmageRate_NotWeak_70 - <yellow> Resistencia al daño de puntos no débiles +70% <c>
+EnemyGroom_CalcDmageRate_NotWeak_80 - <yellow> Resistencia al daño de puntos no débiles +80% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_10 - <yellow> Resistencia a daños no críticos +10% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_20 - <yellow> Resistencia a daños no críticos +20% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_30 - <yellow> Resistencia a daños no críticos +30% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_40 - <yellow> Resistencia a daños no críticos +40% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_50 - <yellow> Resistencia a daños no críticos +50% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_60 - <yellow> Resistencia a daños no críticos +60% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_70 - <yellow> Resistencia a daños no críticos +70% <c>
+EnemyGroom_SendClient_NonCriticalAtpDownBuff1_80 - <yellow> Resistencia a daños no críticos +80% <c>
+EnemyGroom_IntervalShot15 - <yellow> Ataques adicionales automáticos<c>ocurren periódicamente
+EnemyGroom_IntervalShotFireBoss15 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGroom_IntervalShotFireBoss5 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGroom_IntervalShotFire15 - <yellow> Meteoritos caen<c>a intervalos regulares
+EnemyGroom_IntervalShotFire5 - <yellow> Meteoritos caen<c>a intervalos regulares
+Groom_S_All_LevelUp - Todas las mejoras de habilidades adquiridas Lv. +1
+Groom_Combo_AutoRecoveryPPBuff - <pict icon_buffcon1> Recuperación PP a intervalos regulares
+Groom_Combo_DamageReductionBuff - <pict icon_buffcon2> Resistencia al daño aumentada
+Groom_Combo_PATecBuff - <pict icon_buffcon3> Aumento de potencia de PA/técnica
+
+
+NeonCityText
+Group 0
+NeonCity_RewardZone_timer - あと$(0)秒でルームから退出します
+
+Group 1
+NeonCity_RewardZone_timer - Salir de la habitación en $(0) segundo(s)
+
+

@@ -1,0 +1,60 @@
+quest_01340330.text was created: 04-07-2026 10:44:42
+Filesize is: 3200 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+
+Group 1
+
+
+AreaName
+Group 0
+Area0S - 想定演習：強化エネミー討伐戦
+Area0L - 想定演習：強化エネミー討伐戦
+
+Group 1
+Area0S - Ejercicio: supresión enemiga mejorada
+Area0L - Ejercicio: supresión enemiga mejorada
+
+
+Basic
+Group 0
+Title - 想定演習：強化エネミー討伐戦
+Explanation - これは、バトルデータをもとに、能力を向上させたエネミーとの想定演習である。<br>現在の設定では、能力の強化された“ルイノ・ラグネ”との戦闘が体験できる。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※エネミー能力強化：威力＋50%<c>
+Explanation_r2 - これは、バトルデータをもとに、能力を向上させたエネミーとの想定演習である。<br>現在の設定では、能力の強化された“ルイノ・ラグネ”との戦闘が体験できる。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※エネミー能力強化：威力＋70%／HP減少時にプレイヤーHPに継続ダメージ<c>
+Explanation_r3 - これは、バトルデータをもとに、能力を向上させたエネミーとの想定演習である。<br>現在の設定では、能力の強化された“ルイノ・ラグネ”との戦闘が体験できる。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※エネミー能力強化：威力＋100%／HP減少時にプレイヤーHPに継続ダメージ／<br>　グローサードエネミー化<c>
+
+Group 1
+Title - Ejercicio: supresión enemiga mejorada
+Explanation - El ejercicio te permite probar suerte contra Ruine Ragne.<br><yellow> *Mejora de habilidad enemiga: Potencia +50% <c>
+Explanation_r2 - Prueba tu mano contra Ruine Ragne.<br><yellow> *Mejoras de habilidades enemigas: potencia +70 %/daño continuo al jugador en disminución de HP <c>
+Explanation_r3 - Enemigo <c>
+
+
+QuestTarget
+Group 0
+SimpleExplanation - ルイノ・ラグネを倒す
+
+Group 1
+SimpleExplanation - Derrota a Ruine Ragne
+
+
+SuccessCondition
+Group 0
+s0 - 対象エネミーの撃破
+
+Group 1
+s0 - Derrota al enemigo objetivo
+
+
+TrialBeginDetail
+Group 0
+normalMsg_1340330 - ルイノ・ラグネを倒す
+
+Group 1
+normalMsg_1340330 - Derrota a Ruine Ragne
+
+

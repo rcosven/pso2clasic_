@@ -1,0 +1,84 @@
+trial_apc_7711001.text was created: 04-07-2026 10:44:41
+Filesize is: 6624 bytes
+
+common
+Group 0
+Begin - /ci1 1 あら、いいところに。<br>少し手伝ってもらえないかしら。
+Success - /ci2 1 ……ありがとう。助かったわ。<br>これからもよろしく。
+Failure - /ci4 3 これ以上は危険よ！<br>ごめんなさい、先に撤退するわね。
+Dead - /ci5 3 うぅ……こんなはずでは……。
+Begin_v2 - /ci1 1 あら、いいところに。<br>少し手伝ってもらえないかしら。
+Success_v2 - /ci2 1 ……ありがとう。助かったわ。<br>これからもよろしく。
+Failure_v2 - /ci4 3 これ以上は危険よ！<br>ごめんなさい、先に撤退するわね。
+Dead_v2 - /ci5 3 うぅ……こんなはずでは……。
+Begin_7002001 - /ci1 2 なんで、こんなにエネミーが……。
+Success_7002001 - /ci2 1 ふう……、なんとかなったわね。
+Failure_7002001 - /ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
+Dead_7002001 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7002001 - /ci4 3 ……こ、こんなところで……。
+Begin_7002001_v3 - /ci1 2 なんで、こんなにエネミーが……。
+Success_7002001_v3 - /ci2 1 ふう……、なんとかなったわね。
+Failure_7002001_v3 - /ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
+Dead_7002001_v3 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7002001_v3 - /ci4 3 ……こ、こんなところで……。
+
+Group 1
+
+
+trial_boss_ahl
+Group 0
+Begin - /ci1 2 ねえ、そこのあんた！<br>ちょっと手伝ってくれない？
+Success - /ci2 1 まあ、こんなところかしら。あんたも助けてくれて……。<br>い、いや、なんでもないわ！
+Failure - /ci5 3 悔しい！<br>あと少しだったのにっ……！
+Dead - /ci5 3 うぅ……こんなはずでは……。
+Begin_v2 - /ci1 1 あら、いいところに。<br>少し手伝ってもらえないかしら。
+Success_v2 - /ci2 1 ……ありがとう。助かったわ。<br>これからもよろしく。
+Failure_v2 - /ci4 3 これ以上は危険よ！<br>ごめんなさい、先に撤退するわね。
+Dead_v2 - /ci5 3 うぅ……こんなはずでは……。
+Begin_7694001 - /ci1 1 あら、あんた。<br>いいところに来たじゃない！
+Success_7694001 - /ci2 3 ふふん、任務成功よ！<br>あたしたちにかかれば当然ね！
+Failure_7694001 - /ci4 2 くっ、失敗か……。<br>次は絶対に叩きのめしてやる！
+Dead_7711001 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7711001 - /ci4 3 ……こ、こんなところで……。
+Begin_7712001_v3 - /ci1 1 敵だわ！<br>どうやら、わたしの出番のようね！
+Success_7712001_v3 - /ci2 3 当然の勝利ね！<br>わたしの活躍、見ていてくれたかしら？
+Failure_7712001_v3 - /ci4 2 あっ、逃げられたっ……！<br>これじゃ良いところ見せられないじゃないの！
+Dead_7712001_v3 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7712001_v3 - /ci4 3 ……こ、こんなところで……。
+
+Group 1
+
+
+trial_enemy_ahl
+Group 0
+Begin - /ci1 2 ねえ、そこのあんた！<br>ちょっと手伝ってくれない？
+Success - /ci2 1 まあ、こんなところかしら。あんたも助けてくれて……。<br>い、いや、なんでもないわ！
+Failure - /ci5 3 悔しい！<br>あと少しだったのにっ……！
+Dead - /ci5 3 うぅ……こんなはずでは……。
+Begin_v2 - /ci1 1 あら、いいところに。<br>少し手伝ってもらえないかしら。
+Success_v2 - /ci2 1 ……ありがとう。助かったわ。<br>これからもよろしく。
+Failure_v2 - /ci4 3 これ以上は危険よ！<br>ごめんなさい、先に撤退するわね。
+Dead_v2 - /ci5 3 うぅ……こんなはずでは……。
+Begin_7694001 - /ci1 1 あら、あんた。<br>いいところに来たじゃない！
+Success_7694001 - /ci2 3 ふふん、任務成功よ！<br>あたしたちにかかれば当然ね！
+Failure_7694001 - /ci4 2 くっ、失敗か……。<br>次は絶対に叩きのめしてやる！
+Dead_7711001 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7711001 - /ci4 3 ……こ、こんなところで……。
+Begin_7712001 - /ci1 1 敵だわ！<br>どうやら、あたしの出番のようね！
+Success_7712001 - /ci2 3 当然の勝利ね！<br>あたしの活躍、見ていてくれたかしら？
+Failure_7712001 - /ci4 2 あっ、逃げられたっ……！<br>これじゃ良いところ見せられないじゃないの！
+Dead_7712001_v3 - /ci4 3 ……こ、こんなところで……。
+BuddyDead_7712001_v3 - /ci4 3 ……こ、こんなところで……。
+
+Group 1
+Begin - /ci1 2 ¡Oye tú!<br>¿Podrías ayudar un poco?
+Success - /ci2 1 Bueno, supongo que eso es todo. Gracias por...<br>Espera, no, ¡no importa!
+Failure - /ci5 3 ¿¡En serio!?<br>Estábamos tan cerca...
+Begin_7694001 - /ci1 1 Oh, eres tú.<br>¡Llegaste en el momento indicado!
+Success_7694001 - /ci2 3 Jeje, ¡la misión fue un éxito!<br>Bueno, por supuesto que lo fue.
+Failure_7694001 - /ci4 2 Uf, fallamos...<br>¡Los destruiré a todos la próxima vez!
+Begin_7712001 - /ci1 1 ¡Enemigos por delante!<br>Bueno, ¡supongo que es mi turno!
+Success_7712001 - /ci2 3 ¡Por supuesto que ganamos!<br>Entonces, ¿me viste peleando?
+Failure_7712001 - /ci4 2 Oh, se escaparon...<br>¡No puedo presumir así para nada!
+
+

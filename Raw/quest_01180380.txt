@@ -1,0 +1,64 @@
+quest_01180380.text was created: 04-07-2026 10:44:41
+Filesize is: 4432 bytes
+
+AcceptCondition
+Group 0
+a1 - 特定のクライアントオーダーのクリア
+a2 - 特定のクライアントオーダーのクリア
+a3 - スーパーハード受注許可証の所持
+
+Group 1
+
+
+AreaName
+Group 0
+Area0S - 中央リテム
+Area0L - 中央リテム
+
+Group 1
+Area0S - Retem central
+Area0L - Retem central
+
+
+Basic
+Group 0
+Title - 星滅の表徴
+Explanation - 中央リテム周辺で、“ダークファルス・エイジス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Explanation_r2 - 中央リテム周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Explanation_r3 - 中央リテム周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+
+Group 1
+Title - Signo del rompeplanetas
+Explanation - A powerful energy response comparable to that of "Dark Falz Aegis" was observed in the vicinity of Central Retem.<br>All ARKS defenders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>Assist NPC cannot participate.<c>
+Explanation_r2 - A powerful energy reading resembling that of Starless was observed in the vicinity of Central Retem. All ARKS defenders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>A specimen whose name includes "Malignant" will appear.<br>Assist NPCs cannot participate.<c>
+Explanation_r3 - A powerful energy reading resembling that of Starless was observed in the vicinity of Central Retem. All ARKS defenders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>Assist NPCs cannot participate.<c>
+
+
+QuestTarget
+Group 0
+SimpleExplanation - ダークファルス・ソウラスを撃破せよ！
+SimpleExplanation_r2 - ダークファルス・ソウラスを撃破せよ！
+SimpleExplanation_r3 - ソラス・クリプトを撃破せよ！
+
+Group 1
+SimpleExplanation - ¡Derrota al Oscuro Falz Solus!
+SimpleExplanation_r2 - ¡Derrota al Oscuro Falz Solus!
+SimpleExplanation_r3 - ¡Derrota a Sols Krypt!
+
+
+SuccessCondition
+Group 0
+s0 - 対象エネミーの撃破
+
+Group 1
+s0 - Derrota a los enemigos objetivo.
+
+
+FailureCondition
+Group 0
+f0 - ５回戦闘不能になる<br>制限時間が経過する
+
+Group 1
+f0 - Quedar incapacitado 5 veces<br>Exceder el límite de tiempo
+
+

@@ -1,0 +1,67 @@
+trial_god2.text was created: 04-07-2026 10:44:41
+Filesize is: 5024 bytes
+
+common
+Group 0
+TrialName_1Enemy - $(0)討伐
+TrialBeginMsg_1Enemy - 出現した$(0)を倒せ！
+TrialAbstract_1Enemy - $(0)を倒す
+TrialName_Multi - エネミー討伐
+TrialBeginMsg_Multi - 出現したエネミーを倒せ！
+TrialAbstract_Multi - エネミーを倒す
+
+Group 1
+TrialName_1Enemy - $(0) Supresión
+TrialBeginMsg_1Enemy - ¡Derrota a los $(0)!
+TrialAbstract_1Enemy - Derrota al $(0).
+TrialName_Multi - Supresión enemiga
+TrialBeginMsg_Multi - ¡Derrota a los enemigos!
+TrialAbstract_Multi - Derrota a los enemigos.
+
+
+type102
+Group 0
+NpcComGod2RanBossAppear01 - /voicessc_012040_0040 空間上に、高エネルギー反応。強力なエネミーが来ます！
+NpcComGod2RanBossAppear02 - /voicessc_012040_0050 ……ダークファルスの出現を確認。
+NpcComGod2RanBossBattleStart01 - /voicessc_012050_0010 /atime0.5 ……員……、ますか!?　……なら返事……さい！　……が……のか……を！
+NpcComGod2RanLaterHalf01 - /voicessc_012060_0010 通信、回復しました！<br>バイタル確認。そちらの様子もモニターできています。
+NpcComGod2RanLaterHalf02 - /voicessc_012060_0030 /atime0.5 これは……、出現時よりダークファルスが弱体化しています！<br>攻撃を続けてください！
+NpcComGod2RanBrokenAllParts01 - /voicessc_012060_0070 ダークファルス、さらに弱体化。行けます！
+NpcComGod2RanReturnFromDown01 - /voicessc_012060_0050 /atime0.5 セントラルキャノンの発射準備、最終段階に移行。<br>もう少しだけ……頑張ってください！
+
+Group 1
+NpcComGod2RanBossAppear01 - /voicessc_012040_0040 Detecting a large energy reading from the sky. A powerful enemy is coming!
+NpcComGod2RanBossAppear02 - /voicessc_012040_0050 It's... Dark Falz.
+NpcComGod2RanBossBattleStart01 - /voicessc_012050_0010 /atime0.5 Can any......me!? If......please reply! ......what's...on...... Please!
+NpcComGod2RanLaterHalf01 - /voicessc_012060_0010 The signal's been restored! Checking its vitals... I can monitor your stats now, too.
+NpcComGod2RanLaterHalf02 - /voicessc_012060_0030 /atime0.5 It's... weaker than when it first appeared! You're really making progress! Continue your attack!
+NpcComGod2RanBrokenAllParts01 - /voicessc_012060_0070 Dark Falz is even weaker now. We can do this!
+NpcComGod2RanReturnFromDown01 - /voicessc_012060_0050 /atime0.5 The Central Cannon preparation is now in the final stage. Hang in there just a little longer!
+
+
+type100
+Group 0
+NpcComGod2ManonAndAina02 - /voicessc_012040_0020 どうやらお互い別の合流地点にいるようね。
+
+Group 1
+NpcComGod2ManonAndAina02 - /voicessc_012040_0020 It looks like we each went to different locations.
+
+
+type101
+Group 0
+NpcComGod2ManonAndAina01 - /voicessc_012040_0010 キミ、今どのあたりにいる？
+NpcComGod2ManonAndAina03 - /voicessc_012040_0030 今からこっちの座標を送るから、合流しよう……。
+
+Group 1
+NpcComGod2ManonAndAina01 - /voicessc_012040_0010 Hey, where are you right now?
+NpcComGod2ManonAndAina03 - /voicessc_012040_0030 I'll send you my coordinates now, so let's meet up.
+
+
+type106
+Group 0
+NpcComGod2CrawfordBossAppear03 - /voicessc_012040_0060 /atime0.5 キャノンの発射までは、もう少し時間がかかる。<br>みんな、足止めを頼む……。
+
+Group 1
+NpcComGod2CrawfordBossAppear03 - /voicessc_012040_0060 /atime0.5 It'll take a little more time before the cannon is ready. Please do your best to slow it down.
+
+

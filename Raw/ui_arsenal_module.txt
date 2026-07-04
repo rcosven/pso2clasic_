@@ -1,0 +1,119 @@
+ui_arsenal_module.text was created: 04-07-2026 10:44:41
+Filesize is: 6944 bytes
+
+ClassCounter
+Group 0
+TopMenu_Title - M.A.R.S.スキル
+TopMenu_GetSkill - M.A.R.S.スキルポイント交換
+TopMenu_Distribution - M.A.R.S.スキル習得
+TopMenu_Explanation - M.A.R.S.スキルの習得や、ポイントを交換できます。
+Explanation1 - 特定のアイテムを納品することで、M.A.R.S.スキルポイントを獲得できます。
+Title_ModuleSkillSet - M.A.R.S.スキル習得
+ModuleSkillList - スキルツリー$(0)
+HavePointLabel - M.A.R.S.スキルポイント
+GetPointMessage - 指定のアイテムを納品して<br>M.A.R.S.スキルポイントを獲得します。<br><br><yellow>※M.A.R.S.スキルポイントの累計で、必要納品数が変わります。<br>　M.A.R.S.スキルポイントの累計は、アカウントごとに保存されます。<c>
+GetPointLabel - 獲得するM.A.R.S.スキルポイント
+GetPoint_Yes - 決定
+GetPoint_No - キャンセル
+Medium_Title1 - 対象ポイント
+Medium_Title2 - 納品前
+Medium_Title3 - 納品後
+Medium_Title4 - 納品アイテム
+Medium_Title5 - 必要数
+GetPoint_ToastMessage - M.A.R.S.スキルポイントを獲得しました。
+GetPoint_ToastMessage2 - M.A.R.S.スキルポイントは、これ以上獲得できません。
+
+Group 1
+TopMenu_Title - MARTE. Habilidades
+TopMenu_GetSkill - MARTE. Intercambio de puntos de habilidad
+TopMenu_Distribution - MARTE. Aprendizaje de habilidades
+TopMenu_Explanation - Aprende M.A.R.S. Habilidades y puntos de intercambio.
+Explanation1 - Gana M.A.R.S. Puntos de habilidad intercambiando ciertos artículos.
+Title_ModuleSkillSet - MARTE. Aprendizaje de habilidades
+ModuleSkillList - texto ficticio
+HavePointLabel - MARTE. Puntos de habilidad
+GetPointMessage - 猀 搀攀瀀攀渀搀椀渀最 漀渀 礀漀甀爀 䴀⸀䄀⸀刀⸀匀⸀ 匀欀椀氀氀㰀戀爀㸀倀漀椀渀琀 琀漀琀愀氀⸀㰀戀爀㸀夀漀甀爀 䴀⸀䄀⸀刀⸀匀⸀ 匀欀椀氀氀 倀漀椀渀琀 琀漀琀愀氀 椀猀 猀愀瘀攀搀 琀漀 攀愀挀栀 愀挀挀漀甀渀琀⸀
+GetPointLabel - MARTE. Puntos de habilidad
+GetPoint_Yes - Confirmar
+GetPoint_No - Cancelar
+Medium_Title1 - Puntos objetivo
+Medium_Title2 - Antes
+Medium_Title3 - Después
+Medium_Title4 - Artículos para intercambiar
+Medium_Title5 - Necesario
+GetPoint_ToastMessage - Adquiriste M.A.R.S. Puntos de habilidad.
+GetPoint_ToastMessage2 - No puedes adquirir más M.A.R.S. Puntos de habilidad.
+
+
+SkillTree
+Group 0
+Title_ModuleSkillSet - M.A.R.S.スキルリスト
+Explanation1 - M.A.R.S.スキルポイントを消費して、スキルを習得できます。
+Popup_SkillCheck - スキルツリー確認
+Popup_Use - このスキルツリーを使用する
+Popup_Help - ヘルプを表示
+Title_ModuleSkillTree - M.A.R.S.（セット<pict 4space>$(0)）
+Combo_All - すべて表示
+Combo_Common - 各兵装共通スキル
+Combo_Sword - VA-1SRM ガルム
+Combo_Scythe - VA-2MRM ニズヘッグ
+Combo_Railgun - VA-3LRM ハイドラ
+Combo_Broom - VA-4XRM スカイラ
+Combo_Sub - SA型
+Label_HaveSkillPoint - 所持M.A.R.S.スキルポイント
+DecideText - 決定
+CancelText - キャンセル
+SkillPointText - $(0) / $(1)
+Title_SkillAcquisition - スキルポイント
+Message_SkillAcquisition - スキルポイントの割り振りを行います。<br>よろしいですか？
+Message_SkillAcquisitionCancel - 変更を破棄します。<br>よろしいですか？
+Message_SkillAcquisitionLack - スキルポイントが不足しています。
+SkillPoint_ToastMessage - M.A.R.S.スキルポイントの割り振りが完了しました。
+
+Group 1
+Title_ModuleSkillSet - MARTE. Lista de habilidades
+Explanation1 - Gastar M.A.R.S. Puntos de habilidad para aprender habilidades.
+Popup_SkillCheck - Ver árboles de habilidades
+Popup_Use - Utilice este árbol de habilidades
+Popup_Help - Mostrar ayuda
+Title_ModuleSkillTree - MARTE. (Establecer<pict 4space>$(0))
+Combo_All - Mostrar todo
+Combo_Common - Habilidades comunes
+Combo_Sword - Equipo VA-1SRM
+Combo_Scythe - VA-2MRM Nidhoggr
+Combo_Railgun - VA-3LRM Hidra
+Combo_Broom - Escila VA-4XRM
+Combo_Sub - SA
+Label_HaveSkillPoint - M.A.R.S. actual Puntos de habilidad
+DecideText - Confirmar
+CancelText - Cancelar
+SkillPointText - $(0) / $(1)
+Title_SkillAcquisition - Puntos de habilidad
+Message_SkillAcquisition - texto ficticio
+Message_SkillAcquisitionCancel - Sus cambios serán descartados.<br>¿Estás seguro?
+Message_SkillAcquisitionLack - texto ficticio
+SkillPoint_ToastMessage - MARTE. Puntos de habilidad asignados.
+
+
+WeaponCategory
+Group 0
+Sword - VA-1SRM ガルム
+Scythe - VA-2MRM ニズヘッグ
+Railgun - VA-3LRM ハイドラ
+Broom - VA-4XRM スカイラ
+Sub_HMT - SA-1HMP フェンリル
+Sub_HDT - SA-2HDP ファブニル
+Sub_AET - SA-3HFP リントヴルム
+Skillcommon - 各兵装共通スキル
+
+Group 1
+Sword - Equipo VA-1SRM
+Scythe - VA-2MRM Nidhoggr
+Railgun - VA-3LRM Hidra
+Broom - Escila VA-4XRM
+Sub_HMT - SA-1HMP Fenrir
+Sub_HDT - SA-2HDP Fafnir
+Sub_AET - Gusano dulce SA-3HFP
+Skillcommon - Habilidades comunes
+
+

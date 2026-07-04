@@ -1,0 +1,93 @@
+rebops_common.text was created: 04-07-2026 10:44:42
+Filesize is: 6208 bytes
+
+RepeatRequirements
+Group 0
+NoLimit - 制限無し
+LimitedByAccount - アカウント$(0)回限り
+LimitedByCharacter - キャラクター$(0)回限り
+LimitedByAccount_Resettime - <yellow>$(0)に再受注可能です。<c>
+LimitedByAccount_RepeatSelectTask - アカウントごと
+LimitedByCharacter_RepeatSelectTask - キャラクターごと
+
+Group 1
+NoLimit - No Requirements
+LimitedByAccount - $(0) Time(s) per Account
+LimitedByCharacter - $(0) Time(s) per Character
+LimitedByAccount_Resettime - <yellow>Available again at $(0).<c>
+LimitedByAccount_RepeatSelectTask - Per account
+LimitedByCharacter_RepeatSelectTask - Per character
+
+
+SubObjectiveTemplates
+Group 0
+template_enemy - $(0)を$(1)体倒す。
+template_CollisionAccess - %(CollisionId)に行く
+template_GatheringPlayed - %(ObjectId)を%(num)個集める
+template_NpcTalk - %(NpcId)に話す
+template_QuestClear - %(QuestNo)<br>をクリアする
+template_QuestClear_RankS - %(QuestNo)<br>をSランクでクリアする
+template_EnemyKill - %(EnemyName)を%(num)体倒す
+
+Group 1
+template_enemy - Defeat $(0) x $(1).
+template_CollisionAccess - Go to %(CollisionId).
+template_GatheringPlayed - Gather %(ObjectId) x %(num).
+template_NpcTalk - Talk to %(NpcId).
+template_QuestClear - Clear %(QuestNo).
+template_QuestClear_RankS - Clear %(QuestNo) at Rank S.
+template_EnemyKill - Defeat %(EnemyName) x %(num).
+
+
+NotifyMessages
+Group 0
+location_guide_arrival - 小目標“$(0)”の進行可能エリアに入りました。
+location_guide_leave - 小目標“$(0)”の進行可能エリアから出ました。
+recommend_focus_main_task - 新たなメインタスクを受注しました。<br>タスク一覧でガイド情報を表示してください。
+acquired_reward_items - 報酬アイテムを獲得しました。
+discarded_task - タスク“$(0)”を破棄しました。
+discarded_task_error - タスク“$(0)”の破棄に失敗しました。
+subobjective_progress_fifty_percent - 小目標“$(0)”の進捗が50%以上になりました。
+subobjective_progress_eighty_percent - 小目標“$(0)”の進捗が80%以上になりました。
+subobjective_appeared - 小目標“$(0)”が発生しました。
+subobjective_achieved - 小目標“$(0)”を達成しました。
+multi_tasks_accepted - 複数のタスクを受注しました。
+task_accepted - タスク“$(0)”を受注しました。
+focused_task - タスク“$(0)”のガイド情報を表示しました。
+focused_task_error - タスク“$(0)”のガイド情報を表示できませんでした。
+cancelled_focus_task - タスク“$(0)”のガイド情報を非表示にしました。
+cancelled_focus_task_error - タスク“$(0)”のガイド情報を非表示にできませんでした。
+accomplished_task - タスク“$(0)”を達成しました。
+accepted_task_error - タスク“$(0)”は受注出来ませんでした。
+quest_focus_task_cannot - クエスト進行中は、ガイド情報の表示設定が切り替えられません。
+task_unknown_error - 不明なエラーです。
+task_order_expired - タスクの達成期限が切れているので実行できません。
+task_order_restrictions_error - 受注上限を超えているため受注できません。
+task_order_unfulfilled - 未達成の期間限定タスクが残っています。
+
+Group 1
+location_guide_arrival - You have entered the $(0) goal area.
+location_guide_leave - You have left the $(0) goal area.
+recommend_focus_main_task - New Main Task accepted.<br>Access the Task Menu to display the tracker info.
+acquired_reward_items - Reward item(s) acquired.
+discarded_task - Task "$(0)" abandoned.
+discarded_task_error - Failed to abandon task "$(0)".
+subobjective_progress_fifty_percent - Goal "$(0)" now over 50% complete.
+subobjective_progress_eighty_percent - Goal "$(0)" now over 80% complete.
+subobjective_appeared - New goal "$(0)" now available.
+subobjective_achieved - Goal "$(0)" has been achieved.
+multi_tasks_accepted - You have accepted multiple tasks.
+task_accepted - You have accepted task "$(0)".
+focused_task - Task "$(0)" info has been displayed.
+focused_task_error - Task "$(0)" info could not be displayed.
+cancelled_focus_task - Task "$(0)" info display is now off.
+cancelled_focus_task_error - Task "$(0)" info could not be turned off.
+accomplished_task - Task "$(0)" has been achieved.
+accepted_task_error - Could not accept task "$(0)".
+quest_focus_task_cannot - Task info cannot be toggled while on a quest.
+task_unknown_error - An unknown error occurred.
+task_order_expired - Cannot be proceeded since the Task has expired. 
+task_order_restrictions_error - Cannot accept. You have reached your acceptance limit.
+task_order_unfulfilled - You still have incomplete limited-time tasks.
+
+
