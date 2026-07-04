@@ -1,23 +1,23 @@
 section,group,id,text
 Basic,0,Title,威風堂々たる鋼鉄の進撃
 Basic,0,Explanation,アークス各員は、目標の侵攻を阻止せよ。<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>最大与ダメージ制限/９９９９９９<br>失敗条件/制限時間の経過
-Basic,1,Title,Imposing Iron Assault
+Basic,1,Title,Imponente asalto de hierro
 Basic,1,Explanation,"completed $(0) time(s).<br>Maximum damage is limited to 999,999<br>You will fail this quest if you exceed the time limit."
 QuestTarget,0,SimpleExplanation,幻創戦艦・大和を撃退せよ！
-QuestTarget,1,SimpleExplanation,Destroy the Phantom Battleship Yamato!
+QuestTarget,1,SimpleExplanation,¡Destruye el acorazado fantasma Yamato!
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AcceptCondition,0,a4,スーパーハード受注許可証の所持
 AcceptCondition,1,a1,Complete a special Client Order
 AcceptCondition,1,a2,Complete a special Client Order
-AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
-AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
 PreTransportDirection,0,NpcComMsg1,これより、太平洋特定海域で検知された<br>超巨大反応の迎撃作戦を開始します。
 PreTransportDirection,0,NpcComMsg2,まずは、目標の移動手段を封じます。<br>出撃後Ａ．Ｉ．Ｓで新型凍結弾を輸送し<br>目標を付近の海ごと凍結させます。
 PreTransportDirection,0,NpcComMsg3,その後、目標を一気に撃破してください。<br>ただし、目標の武装状況から、かなりの<br>反撃が予想されます……お気を付けて。
 PreTransportDirection,1,NpcComMsg1,"In a moment, you'll be teleported to<br>a region of Earth's Pacific Ocean, where<br>we've detected a massive energy signature."
-PreTransportDirection,1,NpcComMsg2,漀甀爀 渀攀眀 昀爀攀攀稀椀渀最 爀漀甀渀搀猀Ⰰ㰀戀爀㸀眀栀椀挀栀 眀攀✀氀氀 昀椀爀攀 椀渀琀漀 琀栀攀 眀愀琀攀爀猀 愀爀漀甀渀搀 椀琀⸀
+PreTransportDirection,1,NpcComMsg2,漀甀爀 渀攀眀 昀爀攀攀稀椀渀最 爀漀甀渀搀猀Ⰰ㰀戀爀㸀眀栀椀挀栀 眀攀✀氀氀 昀椀爀攀 椀渀琀漀 琀栀攀 眀愀琀攀爀猀 愀爀漀甀渀搀 椀琀⸀
 PreTransportDirection,1,NpcComMsg3,"ful... Judging by its armaments,<br>we expect a fierce counterattack."
 PreTransportDirection1,0,NpcComMsg1,目標は飛行を開始しています。<br>都市部に接近される前に、<br>早急に撃破しなければなりません。
 PreTransportDirection1,0,NpcComMsg2,A.I.Sの新装備「ハイブースト」を駆使して<br>目標に接近、撃破してください。<br>ご武運を、お祈りしています！
@@ -27,7 +27,7 @@ AreaName,0,Area0S,日本近海
 AreaName,0,Area0L,惑星・地球　日本近海
 AreaName,0,Area1S,日本近海
 AreaName,0,Area1L,惑星・地球　日本近海
-AreaName,1,Area0S,Japanese Coastal Waters
-AreaName,1,Area0L,Earth - Japanese Coastal Waters
-AreaName,1,Area1S,Japanese Coastal Waters
-AreaName,1,Area1L,Earth - Japanese Coastal Waters
+AreaName,1,Area0S,Aguas costeras japonesas
+AreaName,1,Area0L,Tierra - Aguas costeras japonesas
+AreaName,1,Area1S,Aguas costeras japonesas
+AreaName,1,Area1L,Tierra - Aguas costeras japonesas
