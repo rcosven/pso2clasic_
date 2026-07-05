@@ -38,12 +38,12 @@ Common,0,BoostCampaignTitle,ブーストキャンペーン情報
 Common,0,SuperBoostCampaignTitle,スーパーブーストキャンペーン情報
 Common,0,ContentsProhibitMessage,現在、このコンテンツはご利用できません。
 Common,1,Coin,Tus monedas de casino
-Common,1,TitleCongest,CONGESTION DE CASINO
+Common,1,TitleCongest,El casino esta atascado
 Common,1,Congest_Name_SlotRappy,Tragamonedas raposas
 Common,1,Congest_Name_Shooter,Tirador mesetiano
 Common,1,Congest_Name_SlotArkuma,Tragamonedas Arkuma
 Common,1,Congest_Name_Roulette,ruleta lilli
-Common,1,Congest_Name_Blackjack,negroyack
+Common,1,Congest_Name_Blackjack,Negro Yack
 Common,1,Congest_Empty,Asientos disponibles
 Common,1,Congest_Full,Bullicioso
 Common,1,Congest_Over,Atestado
@@ -147,7 +147,7 @@ PrizeExchange,1,PrizeExchangeCoin,$(0) <pict AmusementCoin>
 PrizeExchange,1,PrizeExchangeCoinRed,<red>$(0)<c> <pict AmusementCoin>
 PrizeExchange,1,ExchangeCheckTitle,CONFIRMAR CAMBIO
 PrizeExchange,1,ExchangeCheckMessage,You are about to exchange the following<br>item(s) for $(0) <pict AmusementCoin>.<br>Are you sure you wish to proceed?
-PrizeExchange,1,ExchangeLimitCheckMessage,爀攀㼀㰀戀爀㸀⠀吀栀攀 渀甀洀戀攀爀 漀昀 攀砀挀栀愀渀最攀猀 椀猀 爀攀猀攀琀 攀瘀攀爀礀 㰀甀琀挀搀漀眀㸀圀攀搀渀攀猀搀愀礀 愀琀 㠀㨀　　㰀⼀甀琀挀搀漀眀㸀⸀⤀
+PrizeExchange,1,ExchangeLimitCheckMessage,Los siguientes items se intercambiaran por $(0) <span>Amusement Coin</span>. ¿Estas de acuerdo? (La cantidad de intercambios se reseteara cada <span>miercoles a las 8:00</span>)
 PrizeExchange,1,PreExchangeLimitMessage,er.<br>(The number of exchanges is reset every <utcdow>Wednesday at 8:00</utcdow>.)
 PrizeExchange,1,ExchangeLimitMessage,Unable to complete your exchange because you<br>have exceeded the maximum number of allowable exchanges.
 PrizeExchange,1,ExchangeCancelTitle,CONFIRMAR CANCELACION
@@ -206,7 +206,7 @@ gacha,1,Step_1,<c ffffff>$(0)<c> <pict AmusementCoin>
 gacha,1,Step_2,<c 00ff00>$(0)<c> <pict AmusementCoin>
 gacha,1,Step_3,<c ffa800>$(0)<c> <pict AmusementCoin>
 gacha,1,Step_4,<c ffff00>$(0)<c> <pict AmusementCoin>
-gacha,1,CoinPlayMax,漀渀✀琀 戀攀 愀戀氀攀 琀漀 欀攀攀瀀 愀渀礀 洀漀爀攀 挀漀椀渀猀⸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 瀀氀愀礀㼀
+gacha,1,CoinPlayMax,"Los casino coins que posees, no puedes poseer mas de $$(0). ¿Quieres seguir adelante?"
 gacha,1,CampaignText,-
 gacha,1,SuperCampaignText,-
 jihanki,0,react_red1,とても美味しい味がした。　(◇◇◇◇◇)
@@ -226,7 +226,7 @@ jihanki,0,react_purple4,今の運勢は：末吉！　(☆☆)
 jihanki,0,react_purple5,今の運勢は：凶！！　(☆)
 jihanki,1,react_red1,Sabia realmente delicioso. (◇◇◇◇◇)
 jihanki,1,react_red2,Fue un sabor que me gusto. (◇◇◇◇)
-jihanki,1,react_red3,No fue ni bueno ni malo. (◇◇◇)
+jihanki,1,react_red3,No fue ni bueno ni malo. (⌙⌙⌙)
 jihanki,1,react_red4,Fue un sabor que no me gusta. (◇◇)
 jihanki,1,react_red5,El sabor era bastante cuestionable. (◇)
 jihanki,1,react_blue1,Estoy de buen humor. (♪♪♪♪♪)
@@ -288,7 +288,7 @@ shooter,1,rate_3,Oro
 shooter,1,shooter_menu_item,Juega en modo $(0)
 shooter,1,cc_with_icon,$(0) <pict AmusementCoin>
 shooter,1,shooter_result_item,Play in $(0) <pict AmusementCoin> ($(1) Mode)
-shooter,1,contents_info_title,INFORMACION DEL TIRADOR MESETANO
+shooter,1,contents_info_title,Informacion del Tirador Mesetano
 shooter,1,contents_info,<space>
 shooter,1,contents_info_rate,Modo $(0)
 shooter,1,player_num,Numero de jugadores $(1)/$(0)
@@ -413,7 +413,7 @@ slot,1,InfoCoin_05,x8
 slot,1,InfoCoin_06,x5
 slot,1,InfoCoin_07,x3
 slot,1,Help_00,Insertar
-slot,1,Help_01,¡Comenzar!
+slot,1,Help_01,Comenzar
 slot,1,Help_02,Hoja de pagos
 slot,1,Help_03,Salida
 slot,1,Help_04,Charlar
@@ -422,7 +422,7 @@ slot,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
 slot,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
 slot,1,Help_10c,<pict Number_UP><pict Number_DOWN>
 slot,1,Help_11,<%Decide>
-slot,1,Help_12,[←][Fin] Teclas
+slot,1,Help_12,[←] Tecla [End]
 slot,1,Help_12a,<pict Alpha_LEFT>
 slot,1,Help_12b,<pict Sign_LEFT>
 slot,1,Help_12c,<pict Number_LEFT>
@@ -480,7 +480,7 @@ menu,1,SlotInfoTest,Prueba de visualizacion de informacion
 menu,1,SubMenuGacha,Intercambiador de monedas
 menu,1,SubMenuBlackjack,Menu
 menu,1,SlotInfo_01,Establecer apuesta
-menu,1,SlotInfo_02,¡Comenzar!
+menu,1,SlotInfo_02,Comenzar
 menu,1,SlotInfo_03,Hoja de pagos
 menu,1,SlotInfo_04,Salida
 jackpot,0,access,現在のジャックポットは$(0)枚です。<br><br><yellow>　※ジャックポット枚数が500000に到達すると<br>　ジャックポット発生確率アップ！<c>
@@ -559,7 +559,7 @@ Roulette,1,RouletteBETTitle,ruleta lilli
 Roulette,1,RouletteBETMessageAa,<yellow>You can bet in $(0) more places.<c>
 Roulette,1,RouletteBETMessageAb,<red>Bet in up to 2 places.<c>
 Roulette,1,RouletteBETMessageB,<yellow>Select the number of bets.<c>
-Roulette,1,RouletteBETMessage,moneda de segmento>
+Roulette,1,RouletteBETMessage,moneda de segmento
 Roulette,1,RouletteBETMessage2,<yellow>$(0)x<c>
 Roulette,1,RouletteInfoTitle,Resultados pasados
 Roulette,1,RouletteInfoHead1,<c ffc85a>Previous<c>
@@ -585,10 +585,10 @@ Roulette,1,RouletteInfoHead20,<c ffc85a>20<c>
 Roulette,1,RouletteColor1,Rojo
 Roulette,1,RouletteColor2,Azul
 Roulette,1,RouletteColor3,Verde
-Roulette,1,RouletteMiss,Extraйar
+Roulette,1,RouletteMiss,Fallido
 Roulette,1,RouletteChance,Oportunidad
 Roulette,1,RouletteBonus,triple oportunidad
-Roulette,1,RouletteFailure,Extraйar
+Roulette,1,RouletteFailure,Fallido
 Roulette,1,RouletteResultAnd,y $(0)
 Roulette,1,RouletteResultFrame,[$(0)]
 Roulette,1,RouletteResultName,$(0)$(1)
@@ -955,7 +955,7 @@ RouletteNpc3,1,RouletteNpc_ResultHit01,$(0) has won<br>$(1)!
 RouletteNpc3,1,RouletteNpc_ResultHit02,¡$(0) han sido ganados por $(1) personas!
 RouletteNpc3,1,RouletteNpc_ResultNoHit01,No ore lo suficiente.
 RouletteNpc3,1,RouletteNpc_ResultNoHit02,Solo se que la bendicion de Dios estara en tu proxima apuesta.
-RouletteNpc3,1,RouletteNpc_ResultNoHit03,Dios no te ha abandonado todavia.
+RouletteNpc3,1,RouletteNpc_ResultNoHit03,Dios no te ha abandonado todavxADia.
 RouletteNpc3,1,RouletteNpc_Response01,¡Maravilloso!
 RouletteNpc3,1,RouletteNpc_Response02,¡Guau!
 RouletteNpc3,1,RouletteNpc_TalkOne01,¡Las apuestas de colores son las mas faciles de ganar!
@@ -1049,9 +1049,9 @@ blackjack,0,BlackjackBonusMessage,<c ffff00>バトルボーニャス発生！<br
 blackjack,0,BlackjackWaitGameMessage,現在行われているゲームが終わるのを待っています。<br>しばらくお待ちください。
 blackjack,0,CampaignText,バトルボーニャス発生確率アップ<br>バトルボーニャス勝利配当アップ
 blackjack,0,SuperCampaignText,バトルボーニャス発生確率<yellow>超アップ！<c><br>バトルボーニャス勝利配当<yellow>超アップ！<c>
-blackjack,1,BlackjackFullScreenTitle,negroyack
+blackjack,1,BlackjackFullScreenTitle,Negro Yack
 blackjack,1,BlackjackGide,<c f0df60>You can play Blacknyack.<c>
-blackjack,1,BlackjackTitle,negroyack
+blackjack,1,BlackjackTitle,Negro Yack
 blackjack,1,BlackjackMenuItem,Play with $(0) <pict AmusementCoin>
 blackjack,1,BlackjackBasicInfoTitle,Informacion sobre Blacknyack
 blackjack,1,BlackjackBasicInfoHead,Informacion basica
@@ -1095,9 +1095,9 @@ blackjack,1,WinCoin,Reward: $(0) <pict AmusementCoin>
 blackjack,1,BlackjackActionTitle,Es tu turno.
 blackjack,1,BlackjackHitTitle,CONFIRMACION DE GOLPEO
 blackjack,1,BlackjackHitMessage,¿Agregar una tarjeta?
-blackjack,1,BlackjackStayTitle,CONFIRMACION DE ESTANCIA
+blackjack,1,BlackjackStayTitle,CONFIRMACIoN DE ESTANCIA
 blackjack,1,BlackjackStayMessage,¿Pasar sin sacar carta?
-blackjack,1,BlackjackDoubleDownTitle,CONFIRMACION DE DOBLE ABAJO
+blackjack,1,BlackjackDoubleDownTitle,CONFIRMACIoN DE DOBLE ABAJO
 blackjack,1,BlackjackDoubleDownMessage,Double down?<br>Add the same amount of <pict AmusementCoin> as your bet and<br>draw only one card.
 blackjack,1,BlackjackEndGameTitle,¿DEJAR Blacknyack?
 blackjack,1,BlackjackEndGameMessage,You will exit Blacknyack.<br>The Casino Coins you bet will not be returned.<br>Are you sure you wish to proceed?
@@ -1109,7 +1109,7 @@ blackjack,1,BlackjackResultWinInfo2,5 cartas
 blackjack,1,BlackjackResultWinInfo3,Doble abajo
 blackjack,1,BlackjackResultWinInfo4,Titular de SP
 blackjack,1,BlackjackResultWinInfo5,Oportunidad de gato
-blackjack,1,BlackjackResultWinInfo6,negroyack
+blackjack,1,BlackjackResultWinInfo6,Negro Yack
 blackjack,1,BlackjackResultWinInfo7,Ganar
 blackjack,1,BlackjackResultWinInfo8,Tarjeta SP $(0)$(1)
 blackjack,1,BlackjackResultWinInfo9,Prima
@@ -1122,7 +1122,7 @@ blackjack,1,AcquisitionCC,<pict AmusementCoin> Acquired
 blackjack,1,PossessionCC,Total <pict AmusementCoin>
 blackjack,1,BlackjackContinueMessage,¿Quieres seguir jugando a Blacknyack?
 blackjack,1,cc_with_icon,$(0) <pict AmusementCoin>
-blackjack,1,cc_with_bet,$(0) APUESTA
+blackjack,1,cc_with_bet,(0) APUESTA
 blackjack,1,BlackjackBonusMessage,<c ffff00>Purrsuit Bonus!<br>The player with the highest hand will receive a bonus!<c>
 blackjack,1,BlackjackWaitGameMessage,The current game is still in progress.<br>Please wait a moment.
 blackjack,1,CampaignText,Increased Pursuit Bonus rate<br>Increased Pursuit Bonus winner's share
@@ -1260,7 +1260,7 @@ arkuma,1,InfoCoin_05,x8
 arkuma,1,InfoCoin_06,x5
 arkuma,1,InfoCoin_07,x3
 arkuma,1,Help_00,Insertar
-arkuma,1,Help_01,¡Comenzar!
+arkuma,1,Help_01,Comenzar
 arkuma,1,Help_02,Hoja de pagos
 arkuma,1,Help_03,Asentarse
 arkuma,1,Help_04,Charlar
@@ -1272,7 +1272,7 @@ arkuma,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
 arkuma,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
 arkuma,1,Help_10c,<pict Number_UP><pict Number_DOWN>
 arkuma,1,Help_11,<%Decide>
-arkuma,1,Help_12,[←][Fin] Teclas
+arkuma,1,Help_12,[←] Tecla [End]
 arkuma,1,Help_12a,<pict Alpha_LEFT>
 arkuma,1,Help_12b,<pict Sign_LEFT>
 arkuma,1,Help_12c,<pict Number_LEFT>
@@ -1301,8 +1301,8 @@ arkuma,1,ArkumaBetWindowButtonText,deja tu asiento
 arkuma,1,ArkumaResultTitle,Resultados de las tragamonedas Arkuma
 arkuma,1,AcquisitionCC,<pict AmusementCoin> Acquired
 arkuma,1,PossessionCC,Total <pict AmusementCoin>
-arkuma,1,ArkumaRateNumberText,$(0)%
-arkuma,1,ArkumaPointPlusCoinText,$(0)+ $(1)
+arkuma,1,ArkumaRateNumberText,${(0)%}
+arkuma,1,ArkumaPointPlusCoinText,${(0)} + ${(1)}
 arkuma,1,toast_auto_exit,Has abandonado tu asiento por inactividad.
 arkuma,1,toast_no_coin,No tienes suficientes monedas de casino.
 arkuma,1,ArkumaLiquidationTitle,Confirmacion de pago
