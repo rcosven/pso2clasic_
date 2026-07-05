@@ -57,7 +57,7 @@ CommandList,1,SelectMenuType_CommunicationMenu4,Cambiar estado en linea
 CommandList,1,SelectMenuType_CommunicationMenu5,Mostrar/Ocultar registro corto
 CommandList,1,SelectMenuType_ExecuteMenu1,Tomar captura de pantalla
 CommandList,1,VITA_SelectMenuType_ExecuteMenu1,Cambiar configuracion de vista
-CommandList,1,SelectMenuType_Execute_Camera,SELECCION DE CAMARA
+CommandList,1,SelectMenuType_Execute_Camera,Seleccion de camara
 CommandList,1,SelectMenuType_ExecuteMenu2,Ir a cuartos personales
 CommandList,1,SelectMenuType_ExecuteMenu3,Ir a los cuarteles de la Alianza
 CommandList,1,SelectMenuType_QuestMenu1,Instrucciones para los aliados
@@ -70,10 +70,10 @@ CommandList,1,SelectMenuType_CommunicationMenu9,lista de amigos
 CommandList,1,SelectMenuType_CommunicationMenu10,Comandos de la Alianza
 CommandList,1,SelectMenuType_CommunicationMenu11,Correo
 CommandList,1,SelectMenuType_CommunicationMenu12,Registro de comunicaciones
-CommandList,1,SelectMenuType_CommunicationMenu13,arte simbolico
+CommandList,1,SelectMenuType_CommunicationMenu13,Arte simbolico
 CommandList,1,SelectMenuType_Execute_CameraLight,Seleccionar camara/luz
-CommandList,1,SelectMenuType_ExecuteMenu4,Ve a tu barco
-CommandList,1,SelectMenuType_ExecuteMenu5,Ir al barco universal
+CommandList,1,SelectMenuType_ExecuteMenu4,Ve a tu Ship
+CommandList,1,SelectMenuType_ExecuteMenu5,Ir al Ship universal
 CommandList,1,SelectMenuType_ExecuteMenu6,ir al puente
 CommandList,1,SelectMenuType_ExecuteMenu7,ir al salon
 CommandList,1,SelectMenuType_ExecuteMenu8,Ir al cafe de Franca
@@ -88,11 +88,11 @@ CommandList,1,SelectMenuType_ItemMenu3,Personalizar looks
 CommandList,1,SelectMenuType_ItemMenu4,Editar subpaleta
 CommandList,1,SelectMenuType_ItemMenu5,Elementos
 CommandList,1,SelectMenuType_ItemMenu6,Personalizar
-CommandList,1,SelectMenuType_ItemMenu7,revistas
+CommandList,1,SelectMenuType_ItemMenu7,Mag
 CommandList,1,SelectMenuType_ItemMenu8,Tienda de intercambio
 CommandList,1,SelectMenuType_ItemMenu9,mascotas
 CommandList,1,SelectMenuType_MyData1,Informacion del personaje
-CommandList,1,SelectMenuType_MyData2,Titulos
+CommandList,1,SelectMenuType_MyData2,Lista de Titulos
 CommandList,1,SelectMenuType_MyData3,Editar ID de ARKS
 CommandList,1,SelectMenuType_ShareShip1,Para desafiar al lobby
 CommandList,1,SelectMenuType_ShareShip2,Al lobby de batalla
@@ -104,7 +104,7 @@ CommandList,1,SelectMenuType_ShowCollabIcon,Configuraciones de visualizacion rel
 MapCommand,0,MapCommand_Item2_1,エリアマップ非表示
 MapCommand,0,MapCommand_Item2_2,エリアマップ表示
 MapCommand,1,MapCommand_Item2_1,Ocultar mapa de area
-MapCommand,1,MapCommand_Item2_2,Mostrar mapa del area
+MapCommand,1,MapCommand_Item2_2,Mapa de la zona
 UserCommand,0,UserCommand_Item1,キャラクター頭上表示切り替え
 UserCommand,0,UserCommand_Item2,オンラインステータス変更
 UserCommand,0,UserCommand_Item4,カメラ距離切り替え
@@ -148,7 +148,7 @@ UserCommand,1,Camera_Item1,Ampliar el personaje
 UserCommand,1,Camera_Item2,Alejar el personaje
 UserCommand,1,TagName,: $(0)
 UserCommand,1,TitleNon,Sin titulo
-UserCommand,1,GuildNon,sin alianza
+UserCommand,1,GuildNon,Sin alianza
 UserCommand,1,OverheadDisplay_Item13,Nombre del personaje/HP y barra de PP (durante las misiones)
 UserCommand,1,OverheadDisplay_Item14,Nombre del barco/Nombre del personaje
 ShortcutCommand,0,VITA_Shortcut_Title,ショートカット一覧
@@ -159,7 +159,7 @@ ShortcutCommand,0,VITA_Target,発言先：
 ShortcutCommand,0,SubWindowChange2,<%Function>切替
 ShortcutCommand,0,StartChat,チャット開始
 ShortcutCommand,1,VITA_Shortcut_Title,ATAJOS
-ShortcutCommand,1,VITA_Tab_Symbol,arte simbolico
+ShortcutCommand,1,VITA_Tab_Symbol,Arte simbolico
 ShortcutCommand,1,VITA_Tab_Chat,charlar
 ShortcutCommand,1,SubWindowChange1,Switch <pict Sign_TRIANGLE>
 ShortcutCommand,1,VITA_Target,A:
@@ -184,7 +184,7 @@ ScreenCommand,1,ScreenCommand_Item1,Tomar captura de pantalla
 ScreenCommand,1,ScreenCommand_Item2,Iniciar/detener captura de video
 ScreenCommand,1,ScreenShot_Item1,Ocultar interfaz
 ScreenCommand,1,ScreenShot_Item2,Usar la visualizacion en pantalla actual
-ScreenCommand,1,VITA_Screen_Title,CAMBIAR LA CONFIGURACION DE VER
+ScreenCommand,1,VITA_Screen_Title,Cambiar la configuracion de vista
 ScreenCommand,1,VITA_UI_Menu,Menu de captura
 ScreenCommand,1,VITA_UI_Item1,Mostrar
 ScreenCommand,1,VITA_UI_Item2,Esconder
@@ -194,7 +194,7 @@ ScreenCommand,1,VITA_View_Item2,alejajar
 ScreenCommand,1,VITA_View_Item3,Panoramica arriba
 ScreenCommand,1,VITA_View_Item4,Panoramica hacia abajo
 ScreenCommand,1,VITA_View_Item5,captura
-ScreenCommand,1,VITA_View_Item6,Reiniciar
+ScreenCommand,1,VITA_View_Item6,<br>Color Falz
 CameraCommand,0,Camera_Title,カメラ選択
 CameraCommand,0,Menu_Normal,通常カメラ
 CameraCommand,0,Menu_Camera1,固定カメラ1
@@ -274,7 +274,7 @@ CameraCommand,0,Toast_ExitEditinglight,カスタムライトの設定モード�
 CameraCommand,0,ErrorTitle_ShaderSetting,設定エラー
 CameraCommand,0,Error_ShaderSetting,カスタムライト設定は、シェーダー品質が<br>「高品質」の時のみ利用することができます。<br><br>ランチャー画面から環境設定を開き、<br>描画タブのシェーダー品質を変更してください。
 CameraCommand,0,Message_DiscardLightSettings,変更した内容を反映せずに終了します。<br>よろしいですか？
-CameraCommand,1,Camera_Title,SELECCION DE CAMARA
+CameraCommand,1,Camera_Title,Seleccion de camara
 CameraCommand,1,Menu_Normal,camara normal
 CameraCommand,1,Menu_Camera1,Camara fija 1
 CameraCommand,1,Menu_Camera2,Camara fija 2
@@ -336,15 +336,15 @@ CameraCommand,1,Headline_CamLight,Luz de la camara
 CameraCommand,1,Button_1,Ajuste de color
 CameraCommand,1,Button_2,Ajustar posicion
 CameraCommand,1,Button_3,Todas las luces encendidas
-CameraCommand,1,Button_4,Todas las luces apagadas
+CameraCommand,1,Button_4,<br>
 CameraCommand,1,Button_5,Restablecer todo
 CameraCommand,1,Button_6,DE ACUERDO
 CameraCommand,1,Button_7,Cancel
-CameraCommand,1,Text_1,fortaleza
+CameraCommand,1,Text_1,{player}
 CameraCommand,1,icon_on,<pict icon_light_on>
 CameraCommand,1,icon_off,<pict icon_light_off>
 CameraCommand,1,Button_Decide,DE ACUERDO
-CameraCommand,1,Button_Reset,Reiniciar
+CameraCommand,1,Button_Reset,<br>Color Falz
 CameraCommand,1,Message_Initialization_all,All of the adjustments you made will be reset.<br><br>Are you sure you wish to proceed?
 CameraCommand,1,Message_ChangeFreeLight,You are about to use Light $(0).<br><br>Are you sure you wish to proceed?
 CameraCommand,1,Toast_ChangeFreeLight,Ahora estas usando Light $(0).
@@ -440,11 +440,11 @@ Common,1,Title,MENU RAPIDO
 Common,1,Caption1,Comunicaciones
 Common,1,Caption2,Menu de accion
 Common,1,Caption3,Menu de misiones
-Common,1,Caption4,Mapa del vestibulo
+Common,1,Caption4,Mapa de lobbies
 Common,1,OnlineStatus_1,Esconder
 Common,1,OnlineStatus_2,Reclutar miembros del partido
 Common,1,OnlineStatus_3,Se buscan miembros del partido
-Common,1,OnlineStatus_4,lejos
+Common,1,OnlineStatus_4,alejado
 Common,1,OnlineStatus_5,Abrir mensajeria
 Common,1,OnlineStatus_Free,Abrir configuracion de mensajeria
 Common,1,OnlineStatus_Decide_Vita,Estado de actualizacion
@@ -459,21 +459,21 @@ Common,1,ApcTacticsOrderHint_1,-
 Common,1,ApcTacticsOrderHint_2,-
 Common,1,ApcTacticsOrderHint_3,-
 Common,1,ApcTacticsOrderHint_4,-
-Common,1,ApcTacticsOrderPb_title,INSTRUCCIONES DE EXPLOSION DE FOTONES PARA ALIADOS
+Common,1,ApcTacticsOrderPb_title,INSTRUCCIONES DE EXPLOSION DE Photons PARA ALIADOS
 Common,1,ApcTacticsOrderPb_1,Lanzamiento de PB
 Common,1,ApcTacticsOrderPb_2,Cadena PB
 Common,1,ApcTacticsOrderPbHint_1,Utilice explosiones de fotones de forma agresiva.
 Common,1,ApcTacticsOrderPbHint_2,Usa Photon Blasts cuando el jugador los use.
 Common,1,ApcTacticsOrderAttack_title,PARTICIPACION DE ALIADOS EN EL COMBATE
 Common,1,ApcTacticsOrderAttack_1,Unete a la batalla
-Common,1,ApcTacticsOrderAttack_2,no hagas nada
+Common,1,ApcTacticsOrderAttack_2,No hagas nada
 Common,1,ApcTacticsOrderAttackHint_1,Los aliados actuaran segun las condiciones de la batalla.
 Common,1,ApcTacticsOrderAttackHint_2,Los aliados no se enfrentaran.
 Common,1,Caption5,Elementos
 Common,1,Caption6,Datos personales
 Common,1,Caption7,Menu de viaje
-Common,1,Caption8,sistema
-Common,1,Caption9,alianza
+Common,1,Caption8,Sistema
+Common,1,Caption9,Alianza
 Common,1,Caption10,Eventos
 Common,1,Caption11,criar mascotas
 Common,1,Caption12,Menu dedicado
@@ -512,7 +512,7 @@ Edit,0,EditCancel,キャンセル
 Edit,0,EditTitle,クイックメニューパターン変更
 Edit,1,EditSave,Ahorrar
 Edit,1,EditCancel,Cancel
-Edit,1,EditTitle,INTERCAMBIAR DISEЙO DEL MENU RAPIDO
+Edit,1,EditTitle,INTERCAMBIAR PANTALLA DEL MENU RAPIDO
 LobbyActionCommand,0,LobbyActionText,<%NextTabDetails><yellow>お気に入り登録/編集<c>
 LobbyActionCommand,0,VITA_LobbyActionText,<pict Sign_select><yellow>お気に入り登録/編集<c>
 LobbyActionCommand,0,VITA_FavoritesSwitching,<pict Sign_select>すべて/お気に入り 切替
