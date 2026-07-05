@@ -15,9 +15,9 @@ EventChronicle,0,SubScenarioText,(拡張ボタン)サブシナリオ表示
 EventChronicle,0,SubScenarioTextVita,<pict Sign_TRIANGLE>サブシナリオ表示
 EventChronicle,0,SubScenario,サブシナリオ
 EventChronicle,0,EventNone,達成したイベントがありません
-EventChronicle,1,EventChronicleTitle1,CRONICA DEL EVENTO
-EventChronicle,1,EventChronicleTitle2,SELECCIONAR EPISODIO
-EventChronicle,1,EventChronicleTitle3,INFORMACION CRONICA DEL EVENTO
+EventChronicle,1,EventChronicleTitle1,Cronica del Evento
+EventChronicle,1,EventChronicleTitle2,Seleccionar Episodio
+EventChronicle,1,EventChronicleTitle3,Informacion Cronica del Evento
 EventChronicle,1,OccurrenceCondition,Condicion de ocurrencia
 EventChronicle,1,Condition,Progreso
 EventChronicle,1,PerusalOnly,Solo visto
@@ -50,8 +50,8 @@ Episode,1,Episode_1,Episodio 1 Evento principal
 Episode,1,Uncommon1,Subevento del episodio 1
 Episode,1,Episode_2,Episodio 2 Evento principal
 Episode,1,Uncommon2,Subevento del episodio 2
-Episode,1,Episode_3,Episodio 3 Evento principal
-Episode,1,Uncommon3,Subevento del episodio 3
+Episode,1,Episode_3,Evento principal del episodio 3
+Episode,1,Uncommon3,Subevento principal del episodio 3
 Episode,1,Etc,Otros eventos
 Chapter,0,Chapter_0,序章
 Chapter,0,Chapter_1,第１章
@@ -108,8 +108,8 @@ Chapter,0,Etc_Ep6,EP6
 Chapter,0,Etc_EX,EX
 Chapter,0,Rojio,ロジオ
 Chapter,0,Katori,サガ＆カトリ
-Chapter,1,Chapter_0,PRLG
-Chapter,1,Chapter_1,Cap. 1
+Chapter,1,Chapter_0,Introduccion
+Chapter,1,Chapter_1,Capitulo 1
 Chapter,1,Chapter_2,Cap. 2
 Chapter,1,Chapter_3,Cap. 3
 Chapter,1,Chapter_4,Cap. 4
@@ -132,7 +132,7 @@ Chapter,1,Gettem,Gettemhult
 Chapter,1,Melfon,Melfonseana
 Chapter,1,Furie,Fourie
 Chapter,1,Aki,aki
-Chapter,1,Pati,Pati y Tia
+Chapter,1,Pati,Pati & Tia
 Chapter,1,Maria,Maria
 Chapter,1,Sara,sara
 Chapter,1,Philia,filia
@@ -145,7 +145,7 @@ Chapter,1,Risa,risa
 Chapter,1,Klaris,Klariskrays
 Chapter,1,Casra,casra
 Chapter,1,Huey,huey
-Chapter,1,Quna,quna
+Chapter,1,Quna,Quna
 Chapter,1,Hien,Hola
 Chapter,1,Right,Wright
 Chapter,1,Jig,Zig
@@ -667,11 +667,11 @@ TimeLine,1,day_7_23,7/23
 TimeLine,1,day_7_24,7/24
 TimeLine,1,day_7_25,7/25
 TimeLine,1,day_7_26,7/26
-TimeLine,1,day_7_27,7/27
-TimeLine,1,day_7_28,7/28
-TimeLine,1,day_7_29,7/29
-TimeLine,1,day_7_30,30/7
-TimeLine,1,day_8_1,8/1
+TimeLine,1,day_7_27,27/7
+TimeLine,1,day_7_28,28/7
+TimeLine,1,day_7_29,29/7
+TimeLine,1,day_7_30,7/30
+TimeLine,1,day_8_1,1/8
 TimeLine,1,day_8_2,8/2
 TimeLine,1,day_8_3,8/3
 TimeLine,1,day_8_4,8/4
@@ -802,7 +802,7 @@ TimeLine,1,time_23_50,23:50
 TimeLine,1,ep_1,Episodio 1
 TimeLine,1,ep_2,Episodio 2
 TimeLine,1,ch_0,Prologue
-TimeLine,1,ch_1,Cap. 1
+TimeLine,1,ch_1,Capitulo 1
 TimeLine,1,ch_2,Cap. 2
 TimeLine,1,ch_3,Cap. 3
 TimeLine,1,ch_4,Cap. 4
@@ -869,16 +869,16 @@ Ep1_Ch0,1,st_010030_title,VAMOS A REVISAR LO BASICO
 Ep1_Ch0,1,st_010030_date,AP 238/2/20 10:30
 Ep1_Ch0,1,st_010040_title,BATALLA CON SILVANOS
 Ep1_Ch0,1,st_010040_date,AP 238/2/20 11:00
-Ep1_Ch0,1,st_010060_title,ANTES DE QUE APAREZCA EL FALSPAWN
+Ep1_Ch0,1,st_010060_title,antes de que aparezca el Dark Falz
 Ep1_Ch0,1,st_010060_date,AP 238/2/20 11:30
-Ep1_Ch0,1,st_010070_title,UNIRSE A ZENO
+Ep1_Ch0,1,st_010070_title,Unirse a Zeno
 Ep1_Ch0,1,st_010070_date,AP 238/2/20 12:00
 Ep1_Ch0,1,st_010080_title,TOQUES FINALES
 Ep1_Ch0,1,st_010080_date,AP 238/2/20 12:30
 Ep1_Ch0,1,st_010090_title,MISION DE CERTIFICACION CUMPLIDA
 Ep1_Ch0,1,st_010090_date,AP 238/2/20 13:00
 Ep1_Ch0,1,st_010100_title,INFORMAR DE VUELTA
-Ep1_Ch0,1,st_010100_date,AP 238/2/20
+Ep1_Ch0,1,st_010100_date,A.P.238/2/20
 Ep1_Ch1,0,st_010120_title,最初のマターボード
 Ep1_Ch1,0,st_010120_date,A.P.238/2/20/14:00
 Ep1_Ch1,0,ra_010010_title,人影を見たような……
@@ -911,9 +911,9 @@ Ep1_Ch1,0,st_010210_title,不穏な声の誘う先
 Ep1_Ch1,0,st_010210_date,A.P.238/2/20/11:30
 Ep1_Ch1,0,st_010220_title,仮面との遭遇
 Ep1_Ch1,0,st_010220_date,A.P.238/2/20/12:00
-Ep1_Ch1,1,st_010120_title,LA PRIMERA MATRIZ DE DIVERGENCIA
+Ep1_Ch1,1,st_010120_title,Primera Matriz de Divergencia
 Ep1_Ch1,1,st_010120_date,AP 238/2/20 14:00
-Ep1_Ch1,1,ra_010010_title,CREI QUE VI A ALGUIEN
+Ep1_Ch1,1,ra_010010_title,Crei que vi a alguien
 Ep1_Ch1,1,ra_010010_date,AP 238/2/21
 Ep1_Ch1,1,ra_010020_title,FALSPAWN DE LA AZUL
 Ep1_Ch1,1,ra_010020_date,AP 238/2/21
@@ -925,9 +925,9 @@ Ep1_Ch1,1,ra_010030_title,PRACTICA DE PEDIDOS DEL CLIENTE
 Ep1_Ch1,1,ra_010030_date,AP 238/2/22
 Ep1_Ch1,1,ra_010680_title,MENTOR ENTROVISTO
 Ep1_Ch1,1,ra_010680_date,AP 238/2/22
-Ep1_Ch1,1,ra_010040_title,EL EQUIPO TWIN-TEL
+Ep1_Ch1,1,ra_010040_title,Las hermanas de buen entendimiento Arks
 Ep1_Ch1,1,ra_010040_date,AP 238/2/22
-Ep1_Ch1,1,st_010130_title,UNA PETICION DE XION
+Ep1_Ch1,1,st_010130_title,Una peticion de Sion
 Ep1_Ch1,1,st_010130_date,AP 238/2/27 14:00
 Ep1_Ch1,1,st_010140_title,AVISO DE DIVERGENCIA EN LA HISTORIA
 Ep1_Ch1,1,st_010140_date,AP 238/2/20 10:00
@@ -939,9 +939,9 @@ Ep1_Ch1,1,st_010170_title,PROTEGIENDO A LOS MATOI
 Ep1_Ch1,1,st_010170_date,AP 238/2/20 12:00
 Ep1_Ch1,1,st_010180_title,COMUNICADO DE LA BAHIA MEDICA
 Ep1_Ch1,1,st_010180_date,AP 238/2/20 15:00
-Ep1_Ch1,1,st_010210_title,ATRAIDO POR UNA VOZ PERTURBADORA
+Ep1_Ch1,1,st_010210_title,Atrayendo por una voz perturbadora
 Ep1_Ch1,1,st_010210_date,AP 238/2/20 11:30
-Ep1_Ch1,1,st_010220_title,ENCUENTRO CERCA CON LA MASCARA
+Ep1_Ch1,1,st_010220_title,Encuentro cerca con la mascara
 Ep1_Ch1,1,st_010220_date,AP 238/2/20 12:00
 Ep1_Ch2,0,st_010190_title,ＥＰ１－２枚目の受け渡し
 Ep1_Ch2,0,st_010190_date,A.P.238/2/28/14:00
@@ -963,10 +963,10 @@ Ep1_Ch2,0,ra_010690_title,ゼノとエコー
 Ep1_Ch2,0,ra_010690_date,A.P.238/2/28
 Ep1_Ch2,0,ra_010710_title,師匠に似ている
 Ep1_Ch2,0,ra_010710_date,A.P.238/3/3
-Ep1_Ch2,1,st_010190_title,EP1 - ENTREGANDO LA 2DA PIEZA
+Ep1_Ch2,1,st_010190_title,EP1 - entregando la 2da pieza
 Ep1_Ch2,1,st_010190_date,AP 238/2/28 14:00
-Ep1_Ch2,1,ra_010070_title,UNA PRESENCIA INQUIETANTE
-Ep1_Ch2,1,ra_010070_date,AP 238/2/20
+Ep1_Ch2,1,ra_010070_title,Una presencia inquietante
+Ep1_Ch2,1,ra_010070_date,A.P.238/2/20
 Ep1_Ch2,1,ra_010230_title,"BUEN OP, MAL OP"
 Ep1_Ch2,1,ra_010230_date,AP 238/2/21
 Ep1_Ch2,1,ra_010570_title,CARACTERISTICAS GEOLOGICAS DE NAVERIUS
@@ -977,7 +977,7 @@ Ep1_Ch2,1,ra_010060_title,¿FALSPAWN MAS FUERTE?
 Ep1_Ch2,1,ra_010060_date,AP 238/2/23
 Ep1_Ch2,1,un_011060_title,NO HAY OTRA OPCION
 Ep1_Ch2,1,un_011060_date,AP 238/2/24
-Ep1_Ch2,1,un_011130_title,¿COMO FUNCIONAN LOS FOTONES?
+Ep1_Ch2,1,un_011130_title,¿COMO FUNCIONAN LOS Photons?
 Ep1_Ch2,1,un_011130_date,AP 238/2/24
 Ep1_Ch2,1,ra_010690_title,ZENO Y ECO
 Ep1_Ch2,1,ra_010690_date,AP 238/2/28
@@ -1045,11 +1045,11 @@ Ep1_Ch3,1,ra_010100_title,LAS ARMAS COSMOGENICAS LEGENDARIAS
 Ep1_Ch3,1,ra_010100_date,AP 238/3/1
 Ep1_Ch3,1,un_011070_title,¿QUE ES LA ACTITUD?
 Ep1_Ch3,1,un_011070_date,AP 238/3/1
-Ep1_Ch3,1,un_011140_title,UNA VIDA FUERA DE LAS ARCAS
+Ep1_Ch3,1,un_011140_title,Vida fuera de las Arks
 Ep1_Ch3,1,un_011140_date,AP 238/3/1
-Ep1_Ch3,1,st_010240_title,UN EXPLORADOR PROBADO Y VERDADERO
+Ep1_Ch3,1,st_010240_title,Un explorador probado y verdadero
 Ep1_Ch3,1,st_010240_date,AP 238/3/2 9:00
-Ep1_Ch3,1,st_010250_title,FRIO CON LOS HOMBROS POR FALSPAWN
+Ep1_Ch3,1,st_010250_title,Frio con los hombros por Falspawn.
 Ep1_Ch3,1,st_010250_date,AP 238/3/2 10:00
 Ep1_Ch3,1,st_010255_title,LLEGADA
 Ep1_Ch3,1,st_010255_date,AP 238/3/2 10:30
@@ -1061,7 +1061,7 @@ Ep1_Ch3,1,st_010290_title,BRAZOS COSMOGENICOS ROTO
 Ep1_Ch3,1,st_010290_date,AP 238/3/2 11:00
 Ep1_Ch3,1,st_010300_title,DEBAJO DE LA MASCARA
 Ep1_Ch3,1,st_010300_date,AP 238/3/2 11:30
-Ep1_Ch3,1,ra_010600_title,UNA CUESTION DE NAVERIO
+Ep1_Ch3,1,ra_010600_title,LA CUESTION DE NAVERIUS
 Ep1_Ch3,1,ra_010600_date,AP 238/3/3
 Ep1_Ch3,1,ra_010310_title,¡RUMORES DE SOMBRAS EXTRAЙAS!
 Ep1_Ch3,1,ra_010310_date,AP 238/3/5
@@ -1191,15 +1191,15 @@ Ep1_Ch5,0,st_010460_title,対話のはじまり
 Ep1_Ch5,0,st_010460_date,A.P.238/3/19/13:30
 Ep1_Ch5,1,st_010375_title,EP1 - ENTREGANDO LA QUINTA PIEZA
 Ep1_Ch5,1,st_010375_date,AP 238/3/21 14:00
-Ep1_Ch5,1,ra_010250_title,LAZOS PROFUNDOS
+Ep1_Ch5,1,ra_010250_title,lazos profundos
 Ep1_Ch5,1,ra_010250_date,AP 238/3/3
-Ep1_Ch5,1,ra_010280_title,MATARLO COMO EL LO VE
+Ep1_Ch5,1,ra_010280_title,matarlo como el lo ve
 Ep1_Ch5,1,ra_010280_date,AP 238/3/5
-Ep1_Ch5,1,ra_010470_title,¡EL PROFESOR HA DESAPARECIDO!
+Ep1_Ch5,1,ra_010470_title,¡el profesor ha desaparecido!
 Ep1_Ch5,1,ra_010470_date,AP 238/3/8
-Ep1_Ch5,1,ra_010480_title,BUSCADOR DE LA VERDAD
+Ep1_Ch5,1,ra_010480_title,buscador de la verdad
 Ep1_Ch5,1,ra_010480_date,AP 238/3/8
-Ep1_Ch5,1,ra_010490_title,REUNION DE INTELIGENCIA PROXY
+Ep1_Ch5,1,ra_010490_title,reunion de inteligencia proxy
 Ep1_Ch5,1,ra_010490_date,AP 238/3/9
 Ep1_Ch5,1,ra_010500_title,EL ALTAMENTE DRACONIANO
 Ep1_Ch5,1,ra_010500_date,AP 238/3/11
@@ -1275,9 +1275,9 @@ Ep1_Ch6,1,un_011100_title,NO TRABAJES DEMASIADO
 Ep1_Ch6,1,un_011100_date,AP 238/3/16
 Ep1_Ch6,1,ra_010430_title,UN PASO ADELANTE
 Ep1_Ch6,1,ra_010430_date,AP 238/3/20
-Ep1_Ch6,1,ra_010740_title,SOLO UN ARREPENTIMIENTO
+Ep1_Ch6,1,ra_010740_title,UN ARREPENTIMIENTO
 Ep1_Ch6,1,ra_010740_date,AP 238/3/21
-Ep1_Ch6,1,st_010555_title,EP1 - ENTREGANDO LA SEPTIMA PIEZA
+Ep1_Ch6,1,st_010555_title,EP1 - ENTREGANDO LA SETIMA PIEZA
 Ep1_Ch6,1,st_010555_date,AP 238/3/21 14:00
 Ep1_Ch6,1,ra_010440_title,ACUERDO
 Ep1_Ch6,1,ra_010440_date,AP 238/3/21
@@ -1287,10 +1287,10 @@ Ep1_Ch6,1,ra_010450_title,LA DETECCION ES SUFICIENTE
 Ep1_Ch6,1,ra_010450_date,AP 238/3/22
 Ep1_Ch6,1,ra_010290_title,EL PASADO DE GETTEMHULT
 Ep1_Ch6,1,ra_010290_date,AP 238/3/22
-Ep1_Ch6,1,st_010480_title,BUSQUEDA DEL ARMA DAЙADA
-Ep1_Ch6,1,st_010480_date,AP 238/3/24 10:00
+Ep1_Ch6,1,st_010480_title,BUSQUEDA DE ARMAS DAЙADAS
+Ep1_Ch6,1,st_010480_date,A.P. 238/3/24 10:00
 Ep1_Ch6,1,st_010490_title,UNA MARCA MISTERIOSA
-Ep1_Ch6,1,st_010490_date,AP 238/3/24 10:30
+Ep1_Ch6,1,st_010490_date,A.P. 238/3/24 10:30
 Ep1_Ch6,1,st_010500_title,EVIDENCIA DE EXISTENCIA
 Ep1_Ch6,1,st_010500_date,AP 238/3/24 11:00
 Ep1_Ch6,1,st_010580_title,DE QUE HABLAN
@@ -1299,9 +1299,9 @@ Ep1_Ch6,1,st_010510_title,INVESTIGANDO EN VANO
 Ep1_Ch6,1,st_010510_date,AP 238/3/24 11:30
 Ep1_Ch6,1,st_010590_title,GUIADO A LAS PROFUNDIDADES
 Ep1_Ch6,1,st_010590_date,AP 238/3/24 11:30
-Ep1_Ch6,1,st_010600_title,UNA SEGUNDA CLARISSA DAЙADA
+Ep1_Ch6,1,st_010600_title,Una segunda Clurrrisa daйada
 Ep1_Ch6,1,st_010600_date,AP 238/3/24 12:00
-Ep1_Ch6,1,ra_010140_title,¡EL CONSEJO!
+Ep1_Ch6,1,ra_010140_title,¡El consejo!
 Ep1_Ch6,1,ra_010140_date,AP 238/3/24
 Ep1_Ch7,0,st_010470_title,ＥＰ１－６枚目の受け渡し
 Ep1_Ch7,0,st_010470_date,A.P.238/3/21/14:00
@@ -1357,19 +1357,19 @@ Ep1_Ch7,0,st_010649_title,一旦の静寂
 Ep1_Ch7,0,st_010649_date,A.P.238/3/31/14:00
 Ep1_Ch7,1,st_010470_title,EP1 - ENTREGANDO LA 6ª PIEZA
 Ep1_Ch7,1,st_010470_date,AP 238/3/21 14:00
-Ep1_Ch7,1,ra_010530_title,UNA CARRERA CONTRA EL TIEMPO
+Ep1_Ch7,1,ra_010530_title,Una carrera contra el tiempo
 Ep1_Ch7,1,ra_010530_date,AP 238/3/21
 Ep1_Ch7,1,ra_010540_title,LAS ESPERANZAS DE HI'EN
 Ep1_Ch7,1,ra_010540_date,AP 238/3/22
 Ep1_Ch7,1,ra_010800_title,TENACIDAD INCANSABLE
 Ep1_Ch7,1,ra_010800_date,AP 238/3/22
-Ep1_Ch7,1,st_010555_title,EP1 - ENTREGANDO LA SEPTIMA PIEZA
+Ep1_Ch7,1,st_010555_title,EP1 - ENTREGANDO LA SETIMA PIEZA
 Ep1_Ch7,1,st_010555_date,AP 238/3/21 14:00
 Ep1_Ch7,1,ra_010220_title,UNA FIGURA ENMASCARADA SOBRE LAS NUBES
 Ep1_Ch7,1,ra_010220_date,AP 238/3/23
 Ep1_Ch7,1,ra_010550_title,EL ORGULLO VA ANTES DE LA CAIDA
 Ep1_Ch7,1,ra_010550_date,AP 238/3/23
-Ep1_Ch7,1,ra_010560_title,CUENTOS DE UN SALVADOR
+Ep1_Ch7,1,ra_010560_title,Cuentos de un Salvador
 Ep1_Ch7,1,ra_010560_date,AP 238/3/24
 Ep1_Ch7,1,st_010520_title,UNA INVESTIGACION CASUAL
 Ep1_Ch7,1,st_010520_date,AP 238/3/25 10:00
@@ -1383,7 +1383,7 @@ Ep1_Ch7,1,st_010630_title,UNA NUEVA ERA
 Ep1_Ch7,1,st_010630_date,AP 238/3/25 11:00
 Ep1_Ch7,1,st_010545_title,UN RECHAZO DRACONIANO
 Ep1_Ch7,1,st_010545_date,AP 238/3/25 11:30
-Ep1_Ch7,1,st_010635_title,LA PROMESA DE UN VIEJO DRAGON
+Ep1_Ch7,1,st_010635_title,La promesa de un viejo dragon
 Ep1_Ch7,1,st_010635_date,AP 238/3/25 11:30
 Ep1_Ch7,1,st_010550_title,LA RESPUESTA ESTA EN EL AIRE
 Ep1_Ch7,1,st_010550_date,AP 238/3/25 12:00
@@ -1395,9 +1395,9 @@ Ep1_Ch7,1,un_011110_title,RECONCILIACION RETICENTE
 Ep1_Ch7,1,un_011110_date,AP 238/3/29
 Ep1_Ch7,1,un_011170_title,¡EL TRABAJO DURO DA VENTA!
 Ep1_Ch7,1,un_011170_date,AP 238/3/28
-Ep1_Ch7,1,st_010642_title,ESTADO DE EMERGENCIA
+Ep1_Ch7,1,st_010642_title,Estado de emergencia
 Ep1_Ch7,1,st_010642_date,AP 238/3/31 12:00
-Ep1_Ch7,1,st_010643_title,EL DEBER DE LAS ARCAS
+Ep1_Ch7,1,st_010643_title,El deber de El Ark
 Ep1_Ch7,1,st_010643_date,AP 238/3/31 12:30
 Ep1_Ch7,1,st_010644_title,UNA UNION INESPERADA
 Ep1_Ch7,1,st_010644_date,AP 238/3/31 12:40
@@ -1475,7 +1475,7 @@ Ep1_Ch8,1,ra_010640_title,LA OFERTA DE UNA NIЙA
 Ep1_Ch8,1,ra_010640_date,AP 238/3/29
 Ep1_Ch8,1,ra_010650_title,"INTENTACION DE ASESINATO, FINALIDAD AMBIGUA"
 Ep1_Ch8,1,ra_010650_date,AP 238/3/29
-Ep1_Ch8,1,ra_010660_title,UN ENIGMA GANGANTUANO
+Ep1_Ch8,1,ra_010660_title,UN ENIGMA GANGANTO
 Ep1_Ch8,1,ra_010660_date,AP 238/3/30
 Ep1_Ch8,1,ra_010670_title,LA CONJETURA DE ROJIO
 Ep1_Ch8,1,ra_010670_date,AP 238/3/31
@@ -1499,22 +1499,22 @@ Ep1_Ch8,1,st_010710_title,LA PREMONICION DE ZENO
 Ep1_Ch8,1,st_010710_date,AP 238/4/1 10:00
 Ep1_Ch8,1,st_010720_title,UN RUMIDO RECUENTO
 Ep1_Ch8,1,st_010720_date,AP 238/4/1 10:30
-Ep1_Ch8,1,st_010730_title,PECADOS DEL PASADO
+Ep1_Ch8,1,st_010730_title,Los Pecados del Pasado
 Ep1_Ch8,1,st_010730_date,AP 238/4/1 11:00
-Ep1_Ch8,1,st_010740_title,A DONDE LLEVA EL ENERGIA
+Ep1_Ch8,1,st_010740_title,El Lugar al Que Conduce la Energia
 Ep1_Ch8,1,st_010740_date,AP 238/4/1 11:20
 Ep1_Ch8,1,st_010750_title,EL DESPERTAR DEL ANCIANO EL GARGANTUAN
 Ep1_Ch8,1,st_010750_date,AP 238/4/1 11:40
 Ep1_Ch8,1,st_010760_title,UNA PROMESA DE VOLVER
 Ep1_Ch8,1,st_010760_date,AP 238/4/1 12:00
 Ep1_Ch8,1,mv_010080_title,EL RENACIMIENTO DEL ANCIANO DARK FALZ
-Ep1_Ch8,1,mv_010080_date,AP 238/4/1
+Ep1_Ch8,1,mv_010080_date,A.P.238/4/1
 Ep1_Ch8,1,st_010770_title,LOS COMIENZOS DE LA DESESPERACION
-Ep1_Ch8,1,st_010770_date,AP 238/4/1 13:00
-Ep1_Ch8,1,mv_010090_title,LA DERROTA DEL ANCIANO DARK FALZ
-Ep1_Ch8,1,mv_010090_date,AP 238/4/1
-Ep1_Ch8,1,ra_012000_title,COLECTIVO FALZ OSCURO
-Ep1_Ch8,1,ra_012000_date,AP 238/4/1
+Ep1_Ch8,1,st_010770_date,A.P.238/4/1 13:00
+Ep1_Ch8,1,mv_010090_title,LA DERROTA DEL DARK FALZ
+Ep1_Ch8,1,mv_010090_date,A.P.238/4/1
+Ep1_Ch8,1,ra_012000_title,CLUSTER DE FALZ OSCURO
+Ep1_Ch8,1,ra_012000_date,A.P.238/4/1
 Ep1_Ch9,0,un_012000_title,影の捜索者
 Ep1_Ch9,0,un_012000_date,A.P.238/2/23
 Ep1_Ch9,0,un_012010_title,シャドウサーバント
@@ -1591,7 +1591,7 @@ Ep1_Ch9,1,un_012250_title,UN ENCUENTRO OPORTUNIDAD
 Ep1_Ch9,1,un_012250_date,AP 238/3/8
 Ep1_Ch9,1,un_012050_title,DETECTANDO A UN DRACONIANO
 Ep1_Ch9,1,un_012050_date,AP 238/3/15
-Ep1_Ch9,1,un_012060_title,PONLE FIN A EL
+Ep1_Ch9,1,un_012060_title,Ponga fin a
 Ep1_Ch9,1,un_012060_date,AP 238/3/26
 Ep1_Ch9,1,un_012260_title,suspirando
 Ep1_Ch9,1,un_012260_date,AP 238/3/26
@@ -1623,7 +1623,7 @@ Ep1_Ch9,1,un_012110_title,DELANTERO Y TRASERO
 Ep1_Ch9,1,un_012110_date,AP 238/4/10
 Ep1_Ch9,1,un_012160_title,RECUERDOS DE HADDRED
 Ep1_Ch9,1,un_012160_date,AP 238/4/14
-Ep1_Ch9,1,st_012010_title,ATANDO COSAS
+Ep1_Ch9,1,st_012010_title,ATENDO Cosas (Mantenido: ATANDO)
 Ep1_Ch9,1,st_012010_date,AP 238/4/15 10:00
 Ep1_Ch9,1,st_012020_title,ACCIONES INCOMPRENDIBLES
 Ep1_Ch9,1,st_012020_date,AP 238/4/15 10:30
@@ -1679,26 +1679,26 @@ Ep1_Ch10,1,un_012220_title,QUE ES UN IDOLO
 Ep1_Ch10,1,un_012220_date,AP 238/4/16
 Ep1_Ch10,1,un_012140_title,ADVERTENCIA JUSTA
 Ep1_Ch10,1,un_012140_date,AP 238/4/17
-Ep1_Ch10,1,un_012230_title,UN AMOR POR LA CANCION
+Ep1_Ch10,1,un_012230_title,Me gustaba la cancion
 Ep1_Ch10,1,un_012230_date,AP 238/4/17
 Ep1_Ch10,1,un_012120_title,COMO JUGAR EL PARTE
 Ep1_Ch10,1,un_012120_date,AP 238/4/18
 Ep1_Ch10,1,un_012150_title,NUESTRA HISTORIA
 Ep1_Ch10,1,un_012150_date,AP 238/4/19
-Ep1_Ch10,1,un_012155_title,UN ASESINO TERRIBLE
+Ep1_Ch10,1,un_012155_title,Un cliente poco agradable
 Ep1_Ch10,1,un_012155_date,AP 238/4/20
-Ep1_Ch10,1,un_012350_title,A TERR'YIOTR
+Ep1_Ch10,1,un_012350_title,A Terr'iotr
 Ep1_Ch10,1,un_012350_date,AP 238/4/21
-Ep1_Ch10,1,un_012240_title,ADIOS FINAL
+Ep1_Ch10,1,un_012240_title,Adios final
 Ep1_Ch10,1,un_012240_date,AP 238/4/22
 Ep1_Ch10,1,st_012090_title,TAN CERCA PERO TAN LEJOS
 Ep1_Ch10,1,st_012090_date,AP 238/4/23 13:30
 Ep1_Ch10,1,st_012100_title,PRIMERA PELEA DE HERMANOS
 Ep1_Ch10,1,st_012100_date,AP 238/4/23 14:00
 Ep1_Ch10,1,st_012110_title,EL BIS FINAL
-Ep1_Ch10,1,st_012110_date,AP 238/4/23 14:30
+Ep1_Ch10,1,st_012110_date,A.P. 238/4/23/14:30
 Ep1_Ch10,1,st_012120_title,ESPIRITU INOLVIDABLE
-Ep1_Ch10,1,st_012120_date,AP 238/4/25 10:00
+Ep1_Ch10,1,st_012120_date,A.P. 238/4/25 10:00
 Ep1_ChEX,0,ra_013000_title,辿る道筋の交錯
 Ep1_ChEX,0,ra_013000_date,A.P.238/4/2
 Ep1_ChEX,0,ra_013030_title,ダークファルスという存在
@@ -1799,15 +1799,15 @@ Ep1_ChEX,1,un_013010_title,SE que ZENO LO HARIA...
 Ep1_ChEX,1,un_013010_date,AP 238/4/5
 Ep1_ChEX,1,un_013020_title,¿POR QUE ELLA?
 Ep1_ChEX,1,un_013020_date,AP 238/4/7
-Ep1_ChEX,1,un_013210_title,UN PAQUETE DE CURIOSIDAD
+Ep1_ChEX,1,un_013210_title,Un paquete de curiosidad
 Ep1_ChEX,1,un_013210_date,AP 238/4/8
-Ep1_ChEX,1,un_013150_title,EL TORNEO ESTA A LA VUELTA DE LA ESQUINA
+Ep1_ChEX,1,un_013150_title,El torneo esta a la vuelta de la esquina
 Ep1_ChEX,1,un_013150_date,AP 238/4/8
-Ep1_ChEX,1,un_013160_title,EL TORNEO SE ACERCA
+Ep1_ChEX,1,un_013160_title,El torneo se acerca
 Ep1_ChEX,1,un_013160_date,AP 238/4/8
-Ep1_ChEX,1,un_013170_title,¡VAMOS A ENCENDERLO!
+Ep1_ChEX,1,un_013170_title,¡Vamos a encenderlo!
 Ep1_ChEX,1,un_013170_date,AP 238/4/8
-Ep1_ChEX,1,un_013190_title,"¡EL FOCO SERA MIO! O sea, ¡NUESTRO!"
+Ep1_ChEX,1,un_013190_title,"El foco sera mio! O sea, nuestro"
 Ep1_ChEX,1,un_013190_date,AP 238/4/8
 Ep1_ChEX,1,st_013000_title,¿CON QUIEN DEBO IR?
 Ep1_ChEX,1,st_013000_date,AP 238/4/9 10:50
@@ -1815,13 +1815,13 @@ Ep1_ChEX,1,st_013100_title,¡HAGAMOS LO MEJOR!
 Ep1_ChEX,1,st_013100_date,AP 238/4/9 10:55
 Ep1_ChEX,1,st_013200_title,¡DEMOSLO TODO!
 Ep1_ChEX,1,st_013200_date,AP 238/4/9 10:55
-Ep1_ChEX,1,st_013300_title,¡REALMENTE VAMOS A POR ELLO!
+Ep1_ChEX,1,st_013300_title,¡Vamos a por ello!
 Ep1_ChEX,1,st_013300_date,AP 238/4/9 10:55
-Ep1_ChEX,1,st_013500_title,¡MOSTREMOS NUESTRA FUERZA HERMANA!
+Ep1_ChEX,1,st_013500_title,¡Mostremos nuestra fuerza hermana!
 Ep1_ChEX,1,st_013500_date,AP 238/4/9 10:55
-Ep1_ChEX,1,st_013010_title,¡QUE COMIENCE EL TORNEO!
+Ep1_ChEX,1,st_013010_title,¡Que comience el torneo!
 Ep1_ChEX,1,st_013010_date,AP 238/4/9 11:00
-Ep1_ChEX,1,st_013120_title,PROGRESO PROMETEDOR
+Ep1_ChEX,1,st_013120_title,¡Progreso prometedor!
 Ep1_ChEX,1,st_013120_date,AP 238/4/9 11:30
 Ep1_ChEX,1,st_013220_title,CRECIMIENTO EN EL QUE PUEDES CONFIAR
 Ep1_ChEX,1,st_013220_date,AP 238/4/9 11:30
@@ -1844,14 +1844,14 @@ Ep1_ChEX,1,st_013050_date,AP 238/4/9 13:00
 Ep1_ChEX,1,st_013051_title,¡Y ASI TERMINA EL TORNEO! (FRACASO)
 Ep1_ChEX,1,st_013051_date,AP 238/4/9 13:00
 Ep1_ChEX,1,st_013160_title,AGRADEZCO LA INVITACION
-Ep1_ChEX,1,st_013160_date,AP 238/4/9 13:10
+Ep1_ChEX,1,st_013160_date,A.P. 238/4/9 13:10
 Ep1_ChEX,1,st_013260_title,GRACIAS POR INVITARME
-Ep1_ChEX,1,st_013260_date,AP 238/4/9 13:10
+Ep1_ChEX,1,st_013260_date,A.P. 238/4/9 13:10
 Ep1_ChEX,1,st_013360_title,SATISFACCION SIN LIMITES
-Ep1_ChEX,1,st_013360_date,AP 238/4/9 13:10
+Ep1_ChEX,1,st_013360_date,A.P. 238/4/9 13:10
 Ep1_ChEX,1,st_013560_title,INFORMANTES INDOMABLES
-Ep1_ChEX,1,st_013560_date,AP 238/4/9 13:10
-Ep1_ChEX,1,st_013070_title,LA OSCURIDAD DESPEЙADORA
+Ep1_ChEX,1,st_013560_date,A.P. 238/4/9 13:10
+Ep1_ChEX,1,st_013070_title,LA oscuro DESPEIJADORA
 Ep1_ChEX,1,st_013070_date,AP 238/4/9 13:30
 Ep1_ChEX,1,st_013080_title,POR SU ADMISION
 Ep1_ChEX,1,st_013080_date,AP 238/4/9 15:00
@@ -1859,15 +1859,15 @@ Ep1_ChEX,1,un_013200_title,RECUERDA LAS REGLAS
 Ep1_ChEX,1,un_013200_date,AP 238/4/8
 Ep1_ChEX,1,un_013180_title,ALGO AUN ME MOLESTA
 Ep1_ChEX,1,un_013180_date,AP 238/4/8
-Ep1_ChEX,1,st_013600_title,"BIEN, SIGAMOS ADELANTE"
+Ep1_ChEX,1,st_013600_title,Bastante como asi que vamos a seguir adelante
 Ep1_ChEX,1,st_013600_date,AP 238/4/9 10:55
-Ep1_ChEX,1,st_013400_title,MIENTRAS TENGO A MI PAREJA
+Ep1_ChEX,1,st_013400_title,Mientras tenga a mi pareja
 Ep1_ChEX,1,st_013400_date,AP 238/4/9 10:55
-Ep1_ChEX,1,st_013620_title,CRECIMIENTO IMPRESIONANTE
+Ep1_ChEX,1,st_013620_title,Crecimiento mas alla de la imaginacion
 Ep1_ChEX,1,st_013620_date,AP 238/4/9 11:30
-Ep1_ChEX,1,st_013420_title,DESHACERSE DEL NERVIOSO
+Ep1_ChEX,1,st_013420_title,Deshacerse del nervioso
 Ep1_ChEX,1,st_013420_date,AP 238/4/9 11:30
-Ep1_ChEX,1,st_013630_title,UN VERDADERO OCUPADO
+Ep1_ChEX,1,st_013630_title,Un verdadero ocupado
 Ep1_ChEX,1,st_013630_date,AP 238/4/9 12:00
 Ep1_ChEX,1,st_013430_title,UN AMBIENTE FAMILIAR
 Ep1_ChEX,1,st_013430_date,AP 238/4/9 12:00
@@ -1894,11 +1894,11 @@ Ep1_Zeno,0,un_010110_title,進むひとと狂うひと
 Ep1_Zeno,0,un_010120_title,いざというとき
 Ep1_Zeno,0,un_010010_a_title,捜索中のゼノ(A)
 Ep1_Zeno,0,un_010010_b_title,捜索中のゼノ(B)
-Ep1_Zeno,1,un_010010_title,ZENO A LA CAZA
-Ep1_Zeno,1,un_010020_title,LA FUERZA EN LOS NUMEROS
-Ep1_Zeno,1,un_010030_title,EXTRAЙAMENTE FAMILIAR
-Ep1_Zeno,1,un_010040_title,MOTIVOS PARA SER NOSY
-Ep1_Zeno,1,un_010050_title,PAZ POR FIN
+Ep1_Zeno,1,un_010010_title,Zeno A la caza
+Ep1_Zeno,1,un_010020_title,La fuerza en los numeros
+Ep1_Zeno,1,un_010030_title,Extraamente familiar
+Ep1_Zeno,1,un_010040_title,Motores para ser curioso
+Ep1_Zeno,1,un_010050_title,Paz por fin
 Ep1_Zeno,1,un_011470_title,ALTAS EXPECTATIVAS
 Ep1_Zeno,1,un_010060_title,DOS GUISANTES PODRIDOS EN UNA VAINA PODRIDA
 Ep1_Zeno,1,un_010070_title,(NO TAN) ARCAS-MOTIVACIONES EMPLARES
@@ -1971,19 +1971,19 @@ Ep1_Matoi,0,un_012380_title,暴走龍の目的はなんだろう？
 Ep1_Matoi,0,un_012390_title,歌に込められた感情
 Ep1_Matoi,0,un_013220_title,活気があるのはいいこと
 Ep1_Matoi,0,un_013230_title,なにかがおきているんだね
-Ep1_Matoi,1,un_011230_title,¿QUE PUEDO DECIR?
-Ep1_Matoi,1,un_011240_title,NO TE EXCESES
-Ep1_Matoi,1,un_011250_title,NADA ENTENDIDO
-Ep1_Matoi,1,un_011260_title,HABLAR CON LOS DEMAS ES DIFICIL
-Ep1_Matoi,1,un_011330_title,¿CUEVAS VOLCANICAS? SUENA CALIENTE
+Ep1_Matoi,1,un_011230_title,¿Que puedo decir?
+Ep1_Matoi,1,un_011240_title,No te excedas
+Ep1_Matoi,1,un_011250_title,Nada entendido
+Ep1_Matoi,1,un_011260_title,NO HABLAR CON LOS DEMAS
+Ep1_Matoi,1,un_011330_title,¿Cuevas volcanicas? Suenan calientes
 Ep1_Matoi,1,un_011380_title,SE TOMA DE TODO TIPO
 Ep1_Matoi,1,un_011270_title,COMO ES HABLAR CON LOS DEMAS
 Ep1_Matoi,1,un_011280_title,UN DOLOR DE CABEZA INDUCIDO POR RESONANCIA
 Ep1_Matoi,1,un_011310_title,¿COMO ES EL DESIERTO?
 Ep1_Matoi,1,un_011390_title,ALGO NUEVO EN CADA GIRO
-Ep1_Matoi,1,un_011320_title,¿TUNELES? ¿COMO SON?
-Ep1_Matoi,1,un_011400_title,¿SON GRANDES LOS BARCOS ARKS?
-Ep1_Matoi,1,un_011340_title,ALTURAS QUE PONEN LOS PELOS
+Ep1_Matoi,1,un_011320_title,¿TUNELES? ¿CUALES SON?
+Ep1_Matoi,1,un_011400_title,¿SON GRANDES LOS Ship ARKS?
+Ep1_Matoi,1,un_011340_title,ALTURAS QUE PONEN EL CORAZON PALpitante
 Ep1_Matoi,1,un_011290_title,OTRO DOLOR DE CABEZA INDUCIDO POR LA RESONANCIA
 Ep1_Matoi,1,un_011370_title,¿QUE ES LA PAZ DE TODOS MODOS?
 Ep1_Matoi,1,un_011300_title,UN ENORME DOLOR DE CABEZA INDUCIDO POR RESONANCIA
@@ -2002,8 +2002,8 @@ Ep1_Gettem,0,un_010250_title,他人は駒
 Ep1_Gettem,0,un_010260_title,ゲッテムハルトとゼノ
 Ep1_Gettem,0,un_010270_title,ゼノとオマエ
 Ep1_Gettem,0,un_010280_title,死にたがりの
-Ep1_Gettem,1,un_010180_title,UN ENCUENTRO INESPERADO
-Ep1_Gettem,1,un_010190_title,DEBILES SIN VALOR
+Ep1_Gettem,1,un_010180_title,UNCHANCEADO EN EL FRENTE DE BATALLA
+Ep1_Gettem,1,un_010190_title,NO TIENEN VALOR LOS DEBILES
 Ep1_Gettem,1,un_010200_title,APERITIVO O ENTRADA
 Ep1_Gettem,1,un_010210_title,DESTRUYE TODOS LOS FALSPAWN
 Ep1_Gettem,1,un_010220_title,BISOЙO
@@ -2038,8 +2038,8 @@ Ep1_Aki,0,un_012330_title,異文化交流
 Ep1_Aki,1,un_010870_title,NO ES LO SUFICIENTEMENTE INTERESANTE
 Ep1_Aki,1,un_010880_title,NO HAY TIEMPO PARA HABLAR
 Ep1_Aki,1,un_010900_title,EL ENCANTO DE AMDUSKIA
-Ep1_Aki,1,un_010910_title,DESCANSO REQUISITO
-Ep1_Aki,1,un_010920_title,TODAS LAS CRIATURAS GRANDES Y PEQUEЙAS
+Ep1_Aki,1,un_010910_title,Importante el descanso ¿?
+Ep1_Aki,1,un_010920_title,TODAS LAS CRIATURAS GRANDES Y PEQUEЙOS
 Ep1_Aki,1,un_012320_title,EL DRAGON DEL RUMOR
 Ep1_Aki,1,un_012340_title,UNA ENTIDAD ANTINATURAL
 Ep1_Aki,1,un_012330_title,INTERCAMBIO CULTURAL
@@ -2062,14 +2062,14 @@ Ep1_Pati,0,un_012650_title,適材適所にがんばろう！
 Ep1_Pati,1,un_010640_title,¡BAJO INVESTIGACION!
 Ep1_Pati,1,un_010650_title,LA primicia sobre el Consejo de los Seis
 Ep1_Pati,1,un_010660_title,LA primicia sobre el trio de heroes
-Ep1_Pati,1,un_010670_title,FOTONES MARAVILLOSAMENTE MISTERIOSOS
-Ep1_Pati,1,un_010680_title,¿FOTONES? ¿CLASES? ¿CUAL ES EL ENLACE?
+Ep1_Pati,1,un_010670_title,Photons MARAVILLOSAMENTE MISTERIOSOS
+Ep1_Pati,1,un_010680_title,¿Photons? ¿CLASES? ¿CUAL ES EL ENLACE?
 Ep1_Pati,1,un_010690_title,¡EL EQUIPO TWIN-TEL ESTA EN EL CASO!
 Ep1_Pati,1,un_010700_title,FOTON SIGUIENDO A FALSPAWN
-Ep1_Pati,1,un_010710_title,ARCAS ARCAICAS
+Ep1_Pati,1,un_010710_title,ARKS ARCAICAS
 Ep1_Pati,1,un_010720_title,¡FALSPAWN SON LOS PEORES!
 Ep1_Pati,1,un_010730_title,MISION OLVIDADA
-Ep1_Pati,1,un_012280_title,¡EXTRA! ¡EXTRA! ¡ACCIDENTE DE INVESTIGACION EXTRAЙOSO!
+Ep1_Pati,1,un_012280_title,Accidente de Investigacion
 Ep1_Pati,1,un_012290_title,¡UN ASESINO SUELTO!
 Ep1_Pati,1,un_012300_title,¿INVESTIGACION? ¡NO HAY PROBLEMA!
 Ep1_Pati,1,un_012310_title,¡ESCUCHA TODO SOBRE ESO!
@@ -2106,12 +2106,12 @@ Ep1_Clotho,0,un_013060_title,組織に秘密はつきものさ
 Ep1_Clotho,0,un_013070_title,秘密の秘密のおにいさん
 Ep1_Clotho,1,un_010780_title,FALSEAWN FATALE
 Ep1_Clotho,1,un_010790_title,FLARE DE FALSPAWN
-Ep1_Clotho,1,un_011410_title,UN EQUIPO ACE ANIQUILADO
+Ep1_Clotho,1,un_011410_title,Un equipo famoso aniquilado
 Ep1_Clotho,1,un_010820_title,NO CONSTRUIDO PARA EL CALOR
 Ep1_Clotho,1,un_010830_title,NO CONSTRUIDO PARA EL FRIO
-Ep1_Clotho,1,un_010800_title,¿POR QUE EL CAMBIO SALVAJE?
+Ep1_Clotho,1,un_010800_title,¿Por que el cambio salvaje?
 Ep1_Clotho,1,un_010810_title,EXCESSIVE PRECAUTION
-Ep1_Clotho,1,un_012370_title,¿QUIEN ES SU EMPLEADOR?
+Ep1_Clotho,1,un_012370_title,¿Quien es su empleador?
 Ep1_Clotho,1,un_013050_title,GLORIA Y ALEGRIA EN BUENA MEDIDA
 Ep1_Clotho,1,un_013060_title,LAS SOCIEDADES SON SECRETARIAS POR NATURALEZA
 Ep1_Clotho,1,un_013070_title,EL SEЙOR DE LOS SECRETOS
@@ -2129,10 +2129,10 @@ Ep1_Ohza,1,un_010400_title,ARCAS-SITUACION ESTENCIAL
 Ep1_Ohza,1,un_010410_title,SUPREMACISMO DEL CAZADOR
 Ep1_Ohza,1,un_010420_title,FUERZAS SUCIAS
 Ep1_Ohza,1,un_010430_title,DIFICULTADES PARA LOS CAZADORES
-Ep1_Ohza,1,un_010440_title,EN BUSCA DE UNA FIESTA EQUILIBRADA
+Ep1_Ohza,1,un_010440_title,UNA FIESTA EQUILIBRADA
 Ep1_Ohza,1,un_010450_title,FUERZA LETAL
 Ep1_Ohza,1,un_010460_title,INDIGNACION INCONOCIBLE
-Ep1_Ohza,1,un_012580_title,¿POR QUE MANTENERLO CONFIDENCIAL?
+Ep1_Ohza,1,un_012580_title,¿Que lo hace confidencial?
 Ep1_Ohza,1,un_012630_title,HACER EQUIPO
 Ep1_Ohza,1,un_013080_title,NO HAY TORNEO ORDINARIO
 Ep1_Marlu,0,un_010470_title,アークスであること
@@ -2152,15 +2152,15 @@ Ep1_Marlu,1,un_010500_title,DEFECTOS POR FUERZAS
 Ep1_Marlu,1,un_010510_title,UN PARTIDO FORZADAMENTE EQUILIBRADO
 Ep1_Marlu,1,un_010520_title,CAZADORES DESGARRADORES
 Ep1_Marlu,1,un_010530_title,¿TENGO ALGUN SENTIDO?
-Ep1_Marlu,1,un_012570_title,¿POR QUE TODO EL SECRETO?
-Ep1_Marlu,1,un_012620_title,FORMAR UN EQUIPO
-Ep1_Marlu,1,un_013090_title,NO ES UN SOLO TORNEO
+Ep1_Marlu,1,un_012570_title,¿Por que todo el secreto?
+Ep1_Marlu,1,un_012620_title,Formar equipo
+Ep1_Marlu,1,un_013090_title,No es un solo torneo
 Ep1_Jan,0,un_010930_title,アークスとしての心得
 Ep1_Jan,0,un_010940_title,ダーカーには注意せよ
 Ep1_Jan,0,un_010950_title,勝手に懐古
 Ep1_Jan,0,un_010960_title,規格外の存在
-Ep1_Jan,1,un_010930_title,EL CAMINO DE LAS ARCAS
-Ep1_Jan,1,un_010940_title,CUIDADO CON FALSPAWN
+Ep1_Jan,1,un_010930_title,El camino de las Arks
+Ep1_Jan,1,un_010940_title,Cuidado con Dark Falz
 Ep1_Jan,1,un_010950_title,CUANDO ERA UN WHIPPERSNAPPER...
 Ep1_Jan,1,un_010960_title,PODERES EXTRAORDINARIOS
 Ep1_Reda,0,un_010740_title,噂話？　当たり前？
@@ -2170,7 +2170,7 @@ Ep1_Reda,0,un_010750_title,すっげえアークスじゃん？
 Ep1_Reda,1,un_010740_title,UNA ADVERTENCIA UN POCO OBVIA
 Ep1_Reda,1,un_010760_title,UNA SOMBRA SINIESTRA
 Ep1_Reda,1,un_010770_title,¡LAS HABILIDADES ROCA!
-Ep1_Reda,1,un_010750_title,ARCAS INCREIBLES OP
+Ep1_Reda,1,un_010750_title,¿Que arks increibles son estos?
 Ep1_Risa,0,un_010540_title,狙撃手リサちゃん
 Ep1_Risa,0,un_010550_title,銃はサイコーですねえ
 Ep1_Risa,0,un_010560_title,人の手応えはどんなもの
@@ -2183,10 +2183,10 @@ Ep1_Risa,0,un_010630_title,侵食者が襲ってくる理由？
 Ep1_Risa,0,un_012590_title,贖罪の山羊
 Ep1_Risa,0,un_012640_title,愉しさの中の違和感
 Ep1_Risa,0,un_013100_title,踊るあほうに撃つあほう
-Ep1_Risa,1,un_010540_title,RISA LA FIRUTADORA
-Ep1_Risa,1,un_010550_title,LAS ARMAS SON GLORIOSAS
-Ep1_Risa,1,un_010560_title,ME PREGUNTO ¿COMO ES...?
-Ep1_Risa,1,un_010570_title,"¡SUFRE, SE RETORCE, LUCHA!"
+Ep1_Risa,1,un_010540_title,Risa la francotiradora
+Ep1_Risa,1,un_010550_title,Las armas son gloriosas
+Ep1_Risa,1,un_010560_title,¿Como es...?
+Ep1_Risa,1,un_010570_title,"¡Sufre, se retorce, lucha!"
 Ep1_Risa,1,un_010590_title,¿TIENES DESEO DE MUERTE?
 Ep1_Risa,1,un_010600_title,ALGO AUN PEOR QUE LA GENTE
 Ep1_Risa,1,un_010610_title,PERSPECTIVAS DE LO INARTICULADO
@@ -2212,14 +2212,14 @@ Ep1_Klaris,1,un_011620_title,LIBRE POR FIN
 Ep1_Klaris,1,un_011630_title,UNO ES EL NUMERO MAS EXPLOTADOR
 Ep1_Klaris,1,un_011640_title,"SIN DOLOR, TODO GANANCIA"
 Ep1_Klaris,1,un_011650_title,FUERZA COMPLETA DESATADA
-Ep1_Klaris,1,un_012400_title,"EN ALERTA POR... ¡UH, YA SABES!"
+Ep1_Klaris,1,un_012400_title,EN ALERTA. ¡NO QUIERO QUE LLEGUE DEMASIADO LEJOS!
 Ep1_Klaris,1,un_012410_title,¡DEJA DE PONER EXCUSAS POBRES!
 Ep1_Klaris,1,un_013140_title,¡NO ES JUSTO!
 Ep1_Casra,0,un_011540_title,有名アークス、人捜し中
 Ep1_Casra,0,un_012440_title,人使いの荒いことで
 Ep1_Casra,0,un_012450_title,面倒な尻ぬぐい
 Ep1_Casra,0,un_012460_title,あなたの噂を良く聞きます
-Ep1_Casra,1,un_011540_title,ARCAS DE AGOSTO A LA CAZA
+Ep1_Casra,1,un_011540_title,ARCAS DE ガエ A LA CAZA
 Ep1_Casra,1,un_012440_title,ROMPIENDO EL LATIGO
 Ep1_Casra,1,un_012450_title,LIMPIAR EL DESORDEN DE ALGUIEN MAS
 Ep1_Casra,1,un_012460_title,TU REPUTACION TE PRECEDE
@@ -2236,11 +2236,11 @@ Ep1_Huey,1,un_011550_title,¡EL NOMBRE ES HUEY!
 Ep1_Huey,1,un_011560_title,EL BIEN QUE HACEMOS
 Ep1_Huey,1,un_011570_title,ESTUDIANTEMENTE ENSORDEZANTE
 Ep1_Huey,1,un_011580_title,TODO ES DESTINO
-Ep1_Huey,1,un_011600_title,UNA INFLUENCIA CLARAMENTE CORRUPTORA
-Ep1_Huey,1,un_011590_title,REPRODUCIDO POR REGIUS
-Ep1_Huey,1,un_012420_title,¡EL FOTON CON PROBLEMAS SIENTE HORMIGUEO!
-Ep1_Huey,1,un_012430_title,¡POR GRAN JUSTICIA!
-Ep1_Huey,1,un_013130_title,¡BRAVADO SIGUE SIENDO VALIENTE!
+Ep1_Huey,1,un_011600_title,Una clara influencia corruptora
+Ep1_Huey,1,un_011590_title,Reproducido por Regius
+Ep1_Huey,1,un_012420_title,¡El Photon con problemas siente hormigueo!
+Ep1_Huey,1,un_012430_title,¡Por gran justicia!
+Ep1_Huey,1,un_013130_title,¡Braquio sigue siendo valiente!
 Ep1_Quna,0,un_012510_title,明るく激しくいきましょう！
 Ep1_Quna,0,un_012520_title,楽しんでいってねっ！
 Ep1_Quna,1,un_012510_title,¡BRILLANTE! ¡INTENSO! ¡BRILLANTE!
@@ -2305,7 +2305,7 @@ Ep2_Ch1,1,st_020050_title,DESTRUYE TODOS LOS FALSPAWN
 Ep2_Ch1,1,st_020050_date,AP 238/5/10 14:00
 Ep2_Ch1,1,st_020030_title,CONFIANZA MUTUA
 Ep2_Ch1,1,st_020030_date,AP 238/5/10 15:00
-Ep2_Ch1,1,st_020040_title,UN TIEMPO DE IMPERATIVOS
+Ep2_Ch1,1,st_020040_title,Una vez que sea estrictamente necesario
 Ep2_Ch1,1,st_020040_date,AP 238/5/10 16:00
 Ep2_Ch1,1,st_020045_title,GRATITUD FINGIDA
 Ep2_Ch1,1,st_020045_date,AP 238/5/10 17:00
@@ -2363,7 +2363,7 @@ Ep2_Ch2,0,st_020230_title,【巨躯】の減衰
 Ep2_Ch2,0,st_020230_date,A.P.238/4/1/12:50
 Ep2_Ch2,0,st_020240_title,ゼノとの約束
 Ep2_Ch2,0,st_020240_date,A.P.238/4/1/13:10
-Ep2_Ch2,1,ra_020020_title,EP2 - ENTREGANDO LA 2DA PIEZA
+Ep2_Ch2,1,ra_020020_title,EP2 - Entregando la 2da pieza
 Ep2_Ch2,1,ra_020020_date,AP 238/5/11
 Ep2_Ch2,1,ra_020100_title,MEZCLADOS EN TODO TIPO DE COSAS
 Ep2_Ch2,1,ra_020100_date,AP 238/5/13
@@ -2373,11 +2373,11 @@ Ep2_Ch2,1,ra_020120_title,"AUNQUE EL CUERPO PERECE, EL ALMA ES LIBRE"
 Ep2_Ch2,1,ra_020120_date,AP 238/5/17
 Ep2_Ch2,1,ra_020130_title,¡EL ESPIRITU MAS FRESCO QUE EXISTE!
 Ep2_Ch2,1,ra_020130_date,AP 238/5/19
-Ep2_Ch2,1,ra_020140_title,UNA SOLICITUD UNICA
+Ep2_Ch2,1,ra_020140_title,Una solicitud unilateral
 Ep2_Ch2,1,ra_020140_date,AP 238/5/19
-Ep2_Ch2,1,ra_020150_title,AL ALTAR DEL DRAGON
+Ep2_Ch2,1,ra_020150_title,Al altar del dragon
 Ep2_Ch2,1,ra_020150_date,AP 238/5/22
-Ep2_Ch2,1,st_020105_title,UNA SENSACION AMBIGUA
+Ep2_Ch2,1,st_020105_title,Una sensacion ambigua
 Ep2_Ch2,1,st_020105_date,AP 238/5/25
 Ep2_Ch2,1,st_020170_title,EL LIDERAZGO DE SARAH
 Ep2_Ch2,1,st_020170_date,AP 238/5/25 10:00
@@ -2387,7 +2387,7 @@ Ep2_Ch2,1,st_020190_title,LA BROMA DE SARAH
 Ep2_Ch2,1,st_020190_date,AP 238/5/25 11:00
 Ep2_Ch2,1,st_020110_title,SOLICITUD DE RELA
 Ep2_Ch2,1,st_020110_date,AP 238/5/25 11:30
-Ep2_Ch2,1,st_020195_title,XIAO
+Ep2_Ch2,1,st_020195_title,SHA
 Ep2_Ch2,1,st_020195_date,AP 238/5/25 11:30
 Ep2_Ch2,1,st_020120_title,AKI Y QUNA
 Ep2_Ch2,1,st_020120_date,AP 238/5/25 12:00
@@ -2400,16 +2400,16 @@ Ep2_Ch2,1,st_020150_date,AP 238/5/25 13:30
 Ep2_Ch2,1,st_020160_title,VIVE Y RIE
 Ep2_Ch2,1,st_020160_date,AP 238/5/25 14:00
 Ep2_Ch2,1,st_020198_title,HACER CAMBIOS
-Ep2_Ch2,1,st_020198_date,AP 238/4/1
+Ep2_Ch2,1,st_020198_date,A.P.238/4/1
 Ep2_Ch2,1,st_020200_title,AQUI PARA CAMBIAR LA HISTORIA
 Ep2_Ch2,1,st_020200_date,AP 238/4/1 12:10
 Ep2_Ch2,1,st_020210_title,GESTION DE METAS
 Ep2_Ch2,1,st_020210_date,AP 238/4/1 12:20
 Ep2_Ch2,1,st_020220_title,UNA INTENCION ASESINA QUE NO SE SENTIA EN 40 AЙOS
 Ep2_Ch2,1,st_020220_date,AP 238/4/1 12:30
-Ep2_Ch2,1,st_020230_title,DEBILITANDO AL ANCIANO
+Ep2_Ch2,1,st_020230_title,Debilidad del Anciano
 Ep2_Ch2,1,st_020230_date,AP 238/4/1 12:50
-Ep2_Ch2,1,st_020240_title,UNA PROMESA CON ZENO
+Ep2_Ch2,1,st_020240_title,Una promesa con Zeno
 Ep2_Ch2,1,st_020240_date,AP 238/4/1 13:10
 Ep2_Ch3,0,ra_020030_title,ＥＰ２－３枚目の受け渡し
 Ep2_Ch3,0,ra_020030_date,A.P.238/5/27
@@ -2473,7 +2473,7 @@ Ep2_Ch3,1,st_020320_title,VIAJAR CON COMPAЙIA
 Ep2_Ch3,1,st_020320_date,AP 238/6/10 10:20
 Ep2_Ch3,1,st_020330_title,LA PREMONICION DE MARIA
 Ep2_Ch3,1,st_020330_date,AP 238/6/10 10:40
-Ep2_Ch3,1,st_020370_title,NADIE PUEDE RECORDAR
+Ep2_Ch3,1,st_020370_title,NINGUEN PUEDE RECORDAR
 Ep2_Ch3,1,st_020370_date,AP 238/6/10 10:40
 Ep2_Ch3,1,st_020340_title,ELLA NUNCA LO ENTENDERA
 Ep2_Ch3,1,st_020340_date,AP 238/6/10 11:00
@@ -2560,22 +2560,22 @@ Ep2_Ch4,1,ra_020410_date,AP 238/6/24
 Ep2_Ch4,1,ra_020430_title,IMPLICACIONES Y ARTICULACION
 Ep2_Ch4,1,ra_020430_date,AP 238/6/26
 Ep2_Ch4,1,st_020400_title,EN QUIEN CONFIAR
-Ep2_Ch4,1,st_020400_date,AP 238/6/28
+Ep2_Ch4,1,st_020400_date,A.P. 238/6/28
 Ep2_Ch4,1,st_020450_title,"Eres dulce, ¿lo sabias?"
-Ep2_Ch4,1,st_020450_date,AP 238/6/28 9:30
-Ep2_Ch4,1,st_020460_title,SARAH CONMOCIONADA
-Ep2_Ch4,1,st_020460_date,AP 238/6/28 10:00
-Ep2_Ch4,1,st_020470_title,RUPTURA DE COMUNICACION
+Ep2_Ch4,1,st_020450_date,A.P. 238/6/28 9:30
+Ep2_Ch4,1,st_020460_title,Sarah Conmocionada
+Ep2_Ch4,1,st_020460_date,A.P. 238/6/28 10:00
+Ep2_Ch4,1,st_020470_title,Ruptura de comunicacion
 Ep2_Ch4,1,st_020470_date,AP 238/6/28 10:30
 Ep2_Ch4,1,st_020480_title,INVESTIGACION DESCONCENTRANTE
 Ep2_Ch4,1,st_020480_date,AP 238/6/28 11:00
 Ep2_Ch4,1,st_020490_title,UNA DIFERENCIA DE UN MINUTO
 Ep2_Ch4,1,st_020490_date,AP 238/6/28 11:30
-Ep2_Ch4,1,st_020410_title,LA ORIENTACION DE CABRACAN
+Ep2_Ch4,1,st_020410_title,La Orientacion de Cabra Can
 Ep2_Ch4,1,st_020410_date,AP 238/6/28 11:30
-Ep2_Ch4,1,st_020420_title,RECUERDOS IRRESPONSABLES
+Ep2_Ch4,1,st_020420_title,Recuerdos Irresponsables
 Ep2_Ch4,1,st_020420_date,AP 238/6/28 12:00
-Ep2_Ch4,1,st_020430_title,¡TE LO DIJE!
+Ep2_Ch4,1,st_020430_title,¡Te lo dije!
 Ep2_Ch4,1,st_020430_date,AP 238/6/28 12:30
 Ep2_Ch4,1,st_020440_title,AGITACION SIN FIN
 Ep2_Ch4,1,st_020440_date,AP 238/6/28 13:00
@@ -2663,7 +2663,7 @@ Ep2_Ch5,1,st_020600_title,PUESTA EN MOVIMIENTO
 Ep2_Ch5,1,st_020600_date,AP 238/7/7 8:30
 Ep2_Ch5,1,st_020610_title,SIN MISERICORDIA PARA LOS TRAIDORES
 Ep2_Ch5,1,st_020610_date,AP 238/7/7 9:00
-Ep2_Ch5,1,st_020620_title,CODIGO ABISMO
+Ep2_Ch5,1,st_020620_title,CODIGO ABISSAL
 Ep2_Ch5,1,st_020620_date,AP 238/7/7 9:20
 Ep2_Ch5,1,st_020630_title,UN ORDEN PECULIAR
 Ep2_Ch5,1,st_020630_date,AP 238/7/7 9:40
@@ -2678,9 +2678,9 @@ Ep2_Ch5,1,st_020670_date,AP 238/7/7 11:30
 Ep2_Ch5,1,st_020700_title,HASTA EL ALAMBRE
 Ep2_Ch5,1,st_020700_date,AP 238/7/7
 Ep2_Ch5,1,st_020710_title,INVITACION AL FINAL
-Ep2_Ch5,1,st_020710_date,AP 238/7/7 12:00
+Ep2_Ch5,1,st_020710_date,A.P. 238/7/7/12:00
 Ep2_Ch5,1,st_020720_title,EL COMIENZO DE XION
-Ep2_Ch5,1,st_020720_date,AP 238/7/7 12:20
+Ep2_Ch5,1,st_020720_date,A.P. 238/7/7 12:20
 Ep2_Ch5,1,st_020740_title,THEODOR UN POCO ROTO
 Ep2_Ch5,1,st_020740_date,AP 238/7/7 13:00
 Ep2_Ch5,1,st_020750_title,UNA VERDADERA REUNION
@@ -2691,7 +2691,7 @@ Ep2_Ch5,1,st_020770_title,ELEGIA POR LOS CAIDOS
 Ep2_Ch5,1,st_020770_date,AP 238/7/7 15:00
 Ep2_Ch5,1,st_020780_title,LO HICIMOS
 Ep2_Ch5,1,st_020780_date,AP 238/7/7 15:00
-Ep2_Ch5,1,st_020790_title,HIMNO PARA LOS PRIMATES freneticos
+Ep2_Ch5,1,st_020790_title,HIMNO A LOS PRIMATES FRENETICOS
 Ep2_Ch5,1,st_020790_date,AP 238/7/7 15:10
 Ep2_Ch5,1,st_020800_title,EL FIN DE XION
 Ep2_Ch5,1,st_020800_date,AP 238/7/7 15:30
@@ -2763,7 +2763,7 @@ Ep2_Ch6,1,un_025090_title,MENTOR Y MENTEE
 Ep2_Ch6,1,un_025090_date,AP 228/7/11
 Ep2_Ch6,1,ra_025100_title,YO HACE 10 AЙOS
 Ep2_Ch6,1,ra_025100_date,AP 228/7/13
-Ep2_Ch6,1,ra_025110_title,AUN SOLA ES RUIDOSA
+Ep2_Ch6,1,ra_025110_title,Une sola es ruidosa
 Ep2_Ch6,1,ra_025110_date,AP 228/7/16
 Ep2_Ch6,1,ra_025120_title,COMPROMISO DE ANIQUILACION
 Ep2_Ch6,1,ra_025120_date,AP 228/7/19
@@ -2781,35 +2781,35 @@ Ep2_Ch6,1,ra_025160_title,UNA CHICA ORDINARIA
 Ep2_Ch6,1,ra_025160_date,AP 228/8/4
 Ep2_Ch6,1,un_025140_title,DECIR ADIOS AL MAESTRO
 Ep2_Ch6,1,un_025140_date,AP 228/8/7
-Ep2_Ch6,1,ra_025170_title,PARA FINALMENTE LLEVAR LAS COSAS A TRAVES
-Ep2_Ch6,1,ra_025170_date,AP 228/8/7 9:00
+Ep2_Ch6,1,ra_025170_title,¡Para Finalmente Llevar Las Cosas A Tierras
+Ep2_Ch6,1,ra_025170_date,A.P.228/8/7 9:00
 Ep2_Ch6,1,st_025010_title,LA RAZON POR LA QUE NACI
-Ep2_Ch6,1,st_025010_date,AP 228/8/7 12:00
+Ep2_Ch6,1,st_025010_date,A.P.228/8/7 12:00
 Ep2_Ch6,1,st_025020_title,TIEMPOS VALIENTES PERO TONTOS
 Ep2_Ch6,1,st_025020_date,AP 228/8/7 12:20
 Ep2_Ch6,1,st_025030_title,"DESTRUCTORES DE FALSPAWN, PROTECTORES DE ARCAS"
 Ep2_Ch6,1,st_025030_date,AP 228/8/7 12:40
 Ep2_Ch6,1,st_025040_title,TODO SOLO EN EL MUNDO
 Ep2_Ch6,1,st_025040_date,AP 228/8/7 13:00
-Ep2_Ch6,1,st_025050_title,PARA SALVARLA
+Ep2_Ch6,1,st_025050_title,’
 Ep2_Ch6,1,st_025050_date,AP 228/8/7 13:10
-Ep2_Ch6,1,st_025060_title,[PERSONA]
+Ep2_Ch6,1,st_025060_title,?
 Ep2_Ch6,1,st_025060_date,AP 228/8/7 13:20
 Ep2_Ch6,1,st_025070_title,HASTA EL FINAL
 Ep2_Ch6,1,st_025070_date,AP 228/8/7 13:30
 Ep2_Ch6,1,st_025080_title,PRIMER ARREPENTIMIENTO
 Ep2_Ch6,1,st_025080_date,AP 228/8/7
 Ep2_Ch6,1,st_025090_title,Y SIN EMBARGO SONrie
-Ep2_Ch6,1,st_025090_date,AP 238/8/7 14:00
+Ep2_Ch6,1,st_025090_date,A.P. 238/8/7 14:00
 Ep2_Ch6,1,st_025100_title,EUCLYTA
-Ep2_Ch6,1,st_025100_date,AP 228/8/7 14:00
+Ep2_Ch6,1,st_025100_date,A.P. 228/8/7 14:00
 Ep2_Zeno,0,un_020360_title,特訓中のゼノ
 Ep2_Zeno,0,un_025060_title,磨きのかかった朴念仁
-Ep2_Zeno,1,un_020360_title,ZENO EN EL CAMPAMENTO DE ENTRENAMIENTO
-Ep2_Zeno,1,un_025060_title,UN TONTO PULIDO
+Ep2_Zeno,1,un_020360_title,Zeno en el campamento de entrenamiento
+Ep2_Zeno,1,un_025060_title,Un tonto pulido
 Ep2_Echo,0,un_020340_title,ハンターの怖さ
 Ep2_Echo,0,un_020350_title,ゼノの足跡を……
-Ep2_Echo,1,un_020340_title,LA FEROCIDAD DE UN CAZADOR
+Ep2_Echo,1,un_020340_title,La ferocidad de un cazador
 Ep2_Echo,1,un_020350_title,TRAS LOS PASOS DE ZENO
 Ep2_Afin,0,un_020410_title,似てるだけのはずなのに
 Ep2_Afin,0,un_020670_title,人気のない場で人探し
@@ -2822,11 +2822,11 @@ Ep2_Matoi,0,un_020500_title,きゅうくつな武器
 Ep2_Matoi,0,un_025010_title,わたし、アークスになります！
 Ep2_Matoi,1,un_020470_title,PARECE AGRADABLE EN LA COSTA
 Ep2_Matoi,1,un_020480_title,UN CUERPO SANO
-Ep2_Matoi,1,un_020490_title,UNA TECNICA DESATADA
-Ep2_Matoi,1,un_020500_title,UN ARMA RIGIDA
-Ep2_Matoi,1,un_025010_title,¡VOY A SER UN ARCA!
+Ep2_Matoi,1,un_020490_title,La tecnica se ha desatado
+Ep2_Matoi,1,un_020500_title,Una arma rigida
+Ep2_Matoi,1,un_025010_title,¡Voy a ser un Arca!
 Ep2_Melfon,0,un_020210_title,クラリッサの行方
-Ep2_Melfon,1,un_020210_title,EL PARADER DE CLARISSA
+Ep2_Melfon,1,un_020210_title,EL PARADERO DE CLARISSA
 Ep2_Right,0,un_020220_title,ライトの呵責
 Ep2_Right,0,un_020230_title,僕の役目は終わりました
 Ep2_Right,0,un_020240_title,先生が気になる
@@ -2864,11 +2864,11 @@ Ep2_Sara,0,un_020330_title,地獄の特訓
 Ep2_Sara,0,un_025080_title,二心同体
 Ep2_Sara,0,un_020390_a_title,戦技大会にいた理由(A)
 Ep2_Sara,0,un_020390_b_title,戦技大会にいた理由(B)
-Ep2_Sara,1,un_020320_title,¿PONERSE EL RITZ O UN CAMBIO DE RITMO?
-Ep2_Sara,1,un_020330_title,UN CAMPAMENTO DE ENTRENAMIENTO DESDE EL INFIERNO
-Ep2_Sara,1,un_025080_title,DOS CORAZONES UN CUERPO
-Ep2_Sara,1,un_020390_a_title,POR QUE ESTABA EN EL TORNEO (A)
-Ep2_Sara,1,un_020390_b_title,POR QUE ESTABA EN EL TORNEO (B)
+Ep2_Sara,1,un_020320_title,¿Ponerse un ritmo o un cambio de ritmo?
+Ep2_Sara,1,un_020330_title,Un campamento de entrenamiento desde el infierno
+Ep2_Sara,1,un_025080_title,Dos corazones un cuerpo
+Ep2_Sara,1,un_020390_a_title,Por que estaba en el torneo (A)
+Ep2_Sara,1,un_020390_b_title,Por que estaba en el torneo (B)
 Ep2_Clotho,0,un_020260_title,汝に問う、正義とは何か
 Ep2_Clotho,0,un_020270_title,汝に問う、悪とは何か
 Ep2_Clotho,1,un_020260_title,LES PREGUNTO ¿QUE ES LA JUSTICIA?
@@ -2881,7 +2881,7 @@ Ep2_Ohza,0,un_020450_title,よそよそしいアイツ
 Ep2_Ohza,1,un_020370_title,DESAFIENDO UNA NUEVA CLASE
 Ep2_Ohza,1,un_020600_title,UN PLANETA AGRADABLE
 Ep2_Ohza,1,un_020080_title,COMBATE CONTRA UN COMPAЙERO
-Ep2_Ohza,1,un_020430_title,OZA Y AZANAMI
+Ep2_Ohza,1,un_020430_title,AZA Y AZANAMI
 Ep2_Ohza,1,un_020450_title,UN COMPAЙERO DISTANTE
 Ep2_Marlu,0,un_020380_title,ブレイバーのこと
 Ep2_Marlu,0,un_020610_title,穏やかな惑星
@@ -2926,12 +2926,12 @@ Ep2_Regius,1,un_025000_title,DONDE ESTA LA RESPONSABILIDAD
 Ep2_Klaris,0,un_025030_title,私じゃなくても座れた椅子
 Ep2_Klaris,0,un_025040_title,お前はお前だ
 Ep2_Klaris,1,un_025030_title,UN ASIENTO PARA TODOS
-Ep2_Klaris,1,un_025040_title,tu eres tu
+Ep2_Klaris,1,un_025040_title,TU ERES TU
 Ep2_Casra,0,un_020280_title,三英雄の存在意義
 Ep2_Casra,0,un_020580_title,絶対令とは
 Ep2_Casra,0,un_020290_title,三英雄の役割分担
 Ep2_Casra,1,un_020280_title,LA VERDADERA MISION DEL TRIO DE HEROES
-Ep2_Casra,1,un_020580_title,CODIGO ABISMO
+Ep2_Casra,1,un_020580_title,CODIGO ABISSAL
 Ep2_Casra,1,un_020290_title,EL TRIO DE ROLES DE HEROES
 Ep2_Quna,0,un_020310_title,別の手駒
 Ep2_Quna,0,un_020300_title,みんなが忘れないように
@@ -2947,10 +2947,10 @@ Ep2_Azanami,0,un_020150_title,バレットボウの通心
 Ep2_Azanami,0,un_020630_title,拝み倒した結果
 Ep2_Azanami,0,un_020170_title,正義のありか
 Ep2_Azanami,0,un_020420_title,負けない戦い方
-Ep2_Azanami,1,un_020160_title,¡ES UN MUNDO NUEVO MAS VALIENTE!
-Ep2_Azanami,1,un_020140_title,TECNICAS DE RESPIRACION DE KATANA
-Ep2_Azanami,1,un_020150_title,CHARLA DE ARCO
-Ep2_Azanami,1,un_020630_title,DESPUES DE MUCHAS SUPLICAS
+Ep2_Azanami,1,un_020160_title,"¡Hasta luego, Blythe!"
+Ep2_Azanami,1,un_020140_title,Tecnicas de respiracion de Katana
+Ep2_Azanami,1,un_020150_title,Charla de Arco
+Ep2_Azanami,1,un_020630_title,Despues de muchas suplicas
 Ep2_Azanami,1,un_020170_title,LA NATURALEZA DE LA JUSTICIA
 Ep2_Azanami,1,un_020420_title,BATALLAS Y COMO NO PERDERLAS
 Ep2_Io,0,un_020540_title,デューマンの後輩
@@ -2999,13 +2999,13 @@ Ep3_Ch1,1,st_030100_title,CONEXION PURA
 Ep3_Ch1,1,st_030100_date,AP 239/1/7 10:00
 Ep3_Ch1,1,ra_031010_title,PRESTIGIOSO POR RAZONES QUE NO ESTAN CLARAS
 Ep3_Ch1,1,ra_031010_date,AP 239/1/8
-Ep3_Ch1,1,ra_031020_title,POR LOS PIONEROS
+Ep3_Ch1,1,ra_031020_title,Por los pioneros
 Ep3_Ch1,1,ra_031020_date,AP 239/1/8
-Ep3_Ch1,1,ra_031030_title,EL GUARDIAN KOTOSHIRO
+Ep3_Ch1,1,ra_031030_title,El Guardian Kotoshiro
 Ep3_Ch1,1,ra_031030_date,AP 239/1/13
-Ep3_Ch1,1,un_031010_title,LA PROTECCION DEL DIVINO
+Ep3_Ch1,1,un_031010_title,La proteccion del Divino
 Ep3_Ch1,1,un_031010_date,AP 239/1/13
-Ep3_Ch1,1,ra_031050_title,UNA PALABRA DE PRECAUCION
+Ep3_Ch1,1,ra_031050_title,Una palabra de precaucion
 Ep3_Ch1,1,ra_031050_date,AP 239/1/15
 Ep3_Ch1,1,ra_031040_title,AMANECER Y NOCTURNO
 Ep3_Ch1,1,ra_031040_date,AP 239/1/21
@@ -3049,7 +3049,7 @@ Ep3_Ch2,1,un_032050_title,EL MEJOR PARTIDO
 Ep3_Ch2,1,un_032050_date,AP 239/1/24
 Ep3_Ch2,1,ra_032020_title,"ZENO, ECO Y CABRACON"
 Ep3_Ch2,1,ra_032020_date,AP 239/1/25
-Ep3_Ch2,1,ra_032030_title,UNA RELACION SOBREPROTECTORA
+Ep3_Ch2,1,ra_032030_title,RELACION DE PROTECCION EXCESIVA ENTRE UN MASTER Y SU APODERADO
 Ep3_Ch2,1,ra_032030_date,AP 239/1/26
 Ep3_Ch2,1,ra_032040_title,EL PASADO DE SARAH
 Ep3_Ch2,1,ra_032040_date,AP 239/1/28
@@ -3059,7 +3059,7 @@ Ep3_Ch2,1,ra_032060_title,"MAQUILLAJE, INCLUSO A LA FUERZA"
 Ep3_Ch2,1,ra_032060_date,AP 239/1/30
 Ep3_Ch2,1,ra_032070_title,CORRUPCION
 Ep3_Ch2,1,ra_032070_date,AP 239/1/30
-Ep3_Ch2,1,st_032010_title,ARMONIA EN UN LUGAR CURIOSO
+Ep3_Ch2,1,st_032010_title,Armonica en un lugar curioso
 Ep3_Ch2,1,st_032010_date,AP 239/1/31 13:00
 Ep3_Ch2,1,st_032020_title,LA PELEA DE UNA HERMANA
 Ep3_Ch2,1,st_032020_date,AP 239/1/31 14:00
@@ -3105,11 +3105,11 @@ Ep3_Ch3,1,ra_033040_title,LA QUEJA OCIOSA DE UNA DONCELLA
 Ep3_Ch3,1,ra_033040_date,AP 239/2/13
 Ep3_Ch3,1,ra_033050_title,PRESAGIO
 Ep3_Ch3,1,ra_033050_date,AP 239/2/14
-Ep3_Ch3,1,st_033010_title,UNA FUERZA DE SUJUGACION MAS FUERTE
+Ep3_Ch3,1,st_033010_title,Una fuerza de sujecion mas fuerte
 Ep3_Ch3,1,st_033010_date,AP 239/2/18 11:00
-Ep3_Ch3,1,st_033020_title,LA VERDADERA NATURALEZA DE MAGATSU
+Ep3_Ch3,1,st_033020_title,La verdadera naturaleza de Magatsu
 Ep3_Ch3,1,st_033020_date,AP 239/2/18 11:30
-Ep3_Ch3,1,st_033030_title,UN LUGAR PARA PROTEGER
+Ep3_Ch3,1,st_033030_title,Un lugar para proteger
 Ep3_Ch3,1,st_033030_date,AP 239/2/18 12:00
 Ep3_Ch3,1,st_033040_title,EL CIRCULO DE SELLADO
 Ep3_Ch3,1,st_033040_date,AP 239/2/18 12:30
@@ -3139,11 +3139,11 @@ Ep3_Ch4,0,st_034060_title,なにをすべきか、わかっているから
 Ep3_Ch4,0,st_034060_date,A.P.239/3/4/10:00
 Ep3_Ch4,1,ra_034010_title,UNA SITUACION DESCONCENTRANTE
 Ep3_Ch4,1,ra_034010_date,AP 239/2/22
-Ep3_Ch4,1,ra_034020_title,OBJETIVO DEL APRENDIZ
+Ep3_Ch4,1,ra_034020_title,El objetivo del Aprenziente
 Ep3_Ch4,1,ra_034020_date,AP 239/2/24
-Ep3_Ch4,1,ra_034030_title,NEGAR UNA INTERVENCION
+Ep3_Ch4,1,ra_034030_title,Negar una intervencion
 Ep3_Ch4,1,ra_034030_date,AP 239/2/25
-Ep3_Ch4,1,ra_034040_title,RECUERDOS DE UNA DECADA PASADA
+Ep3_Ch4,1,ra_034040_title,Recuerdos de una decada pasada
 Ep3_Ch4,1,ra_034040_date,AP 239/2/27
 Ep3_Ch4,1,ra_034050_title,DARK FALZ UNA DECADA PASADA
 Ep3_Ch4,1,ra_034050_date,AP 239/2/28
@@ -3160,7 +3160,7 @@ Ep3_Ch4,1,st_034040_date,AP 239/3/3 13:30
 Ep3_Ch4,1,st_034050_title,APROVECHA TU FUTURO
 Ep3_Ch4,1,st_034050_date,AP 239/3/3 14:00
 Ep3_Ch4,1,st_034060_title,SE LO QUE DEBO HACER
-Ep3_Ch4,1,st_034060_date,AP 239/3/4 10:00
+Ep3_Ch4,1,st_034060_date,A.P. 239/3/4 10:00
 Ep3_Ch5,0,ra_035010_title,【双子】の行方、そして……
 Ep3_Ch5,0,ra_035010_date,A.P.239/3/7
 Ep3_Ch5,0,ra_035030_title,白の王と黒の王
@@ -3191,21 +3191,21 @@ Ep3_Ch5,0,st_035060_title,『出来損ない』
 Ep3_Ch5,0,st_035060_date,A.P.???/?/?/??:??
 Ep3_Ch5,0,st_035070_title,突然の帰還
 Ep3_Ch5,0,st_035070_date,A.P.239/3/13/12:00
-Ep3_Ch5,1,ra_035010_title,GEMINIS EL PARAdero DEL DUPLICADO
-Ep3_Ch5,1,ra_035010_date,AP 239/3/7
+Ep3_Ch5,1,ra_035010_title,GEMINIS EL PARADERO DEL DUPLICADO
+Ep3_Ch5,1,ra_035010_date,A.P. 239/3/7
 Ep3_Ch5,1,ra_035030_title,SEЙORES DEL DIA Y DE LA NOCHE
 Ep3_Ch5,1,ra_035030_date,AP 239/3/8
 Ep3_Ch5,1,ra_035040_title,UNA RESPUESTA ESPERADA
 Ep3_Ch5,1,ra_035040_date,AP 239/3/10
 Ep3_Ch5,1,ra_035050_title,PROTEGO LO QUE QUIERO
 Ep3_Ch5,1,ra_035050_date,AP 239/3/15
-Ep3_Ch5,1,un_035020_title,AFIN Y APRENDIZ - PARTE 1
+Ep3_Ch5,1,un_035020_title,Afin Y Aprendiz - Parte 1
 Ep3_Ch5,1,un_035020_date,AP 239/3/9
-Ep3_Ch5,1,un_035030_title,VIVIR PARA EL FUTURO
-Ep3_Ch5,1,un_035030_date,AP 239/3/7
-Ep3_Ch5,1,un_035040_title,LAS HERMANAS MAYORES DICEN LO SIENTO PRIMERO
+Ep3_Ch5,1,un_035030_title,Vivir Para El Futuro
+Ep3_Ch5,1,un_035030_date,A.P. 239/3/7
+Ep3_Ch5,1,un_035040_title,Las Hermanas Mayores Dicen Lo Siento Primero
 Ep3_Ch5,1,un_035040_date,AP 239/3/9
-Ep3_Ch5,1,un_035090_title,MANTENER TUS ARMAS CERCA
+Ep3_Ch5,1,un_035090_title,Mantener Tus Armas Cerca
 Ep3_Ch5,1,un_035090_date,AP 239/3/10
 Ep3_Ch5,1,st_035010_title,"VER ALGO, HACER ALGO"
 Ep3_Ch5,1,st_035010_date,AP 239/3/11 11:00
@@ -3253,11 +3253,11 @@ Ep3_Ch6,1,ra_036010_title,NUMEROS ASTRONOMICOS
 Ep3_Ch6,1,ra_036010_date,AP 239/3/17
 Ep3_Ch6,1,ra_036020_title,LO QUE HAY DENTRO
 Ep3_Ch6,1,ra_036020_date,AP 239/3/18
-Ep3_Ch6,1,ra_036030_title,NO LO VAYAS SOLO
+Ep3_Ch6,1,ra_036030_title,Esta solo es mala idea
 Ep3_Ch6,1,ra_036030_date,AP 239/3/20
 Ep3_Ch6,1,ra_036040_title,"COMO SUPERVISOR, COMO AMIGO"
 Ep3_Ch6,1,ra_036040_date,AP 239/3/21
-Ep3_Ch6,1,ra_036050_title,CONCLUSION
+Ep3_Ch6,1,ra_036050_title,\uFE0F
 Ep3_Ch6,1,ra_036050_date,AP 239/3/18
 Ep3_Ch6,1,un_036010_title,AFIN Y APRENDIZ - PARTE 2
 Ep3_Ch6,1,un_036010_date,AP 239/3/17
@@ -3271,7 +3271,7 @@ Ep3_Ch6,1,st_036010_title,VAMOS POR SUKUNAHIME
 Ep3_Ch6,1,st_036010_date,AP 239/3/21 11:00
 Ep3_Ch6,1,st_036020_title,TODO PARA MI SUEGRA
 Ep3_Ch6,1,st_036020_date,AP 239/3/21 11:30
-Ep3_Ch6,1,st_036030_title,MONSTRUOSO ASESINATO MUTUO
+Ep3_Ch6,1,st_036030_title,ASESINATO MUTUO DE MONSTRUOS
 Ep3_Ch6,1,st_036030_date,AP 239/3/21 12:00
 Ep3_Ch6,1,st_036040_title,BIENVENIDAS Y DESPEDIDAS
 Ep3_Ch6,1,st_036040_date,AP 239/3/21 13:00
@@ -3397,7 +3397,7 @@ Ep3_ChEX,1,ra_039020_title,SER PRIMORDIAL
 Ep3_ChEX,1,ra_039020_date,AP 239/5/1
 Ep3_ChEX,1,ra_039030_title,DEPENDIENDO DE TI INDEPENDIENTEMENTE
 Ep3_ChEX,1,ra_039030_date,AP 239/5/1
-Ep3_ChEX,1,ra_039040_title,EL ADVENIMIENTO DE LA OSCURIDAD
+Ep3_ChEX,1,ra_039040_title,EL ADVENCIMIENTO DE LA OSCURIDAD
 Ep3_ChEX,1,ra_039040_date,AP 239/5/4
 Ep3_ChEX,1,ra_039050_title,ESCRITURA DEL FOTOGRAFO
 Ep3_ChEX,1,ra_039050_date,AP 239/5/6
@@ -3444,19 +3444,19 @@ Ep3_Pati,0,un_034030_title,情報屋、初心にかえる
 Ep3_Pati,0,un_035060_title,来る者拒まずパティエンティア！
 Ep3_Pati,0,un_036040_title,【双子】の最新情報！
 Ep3_Pati,0,un_037110_title,アークスいちの情報屋！
-Ep3_Pati,1,un_031070_title,HARUKOTANO ¡HOLA!
+Ep3_Pati,1,un_031070_title,¡HOLA! HARUKOTANO
 Ep3_Pati,1,un_032030_title,UN PATIO DE JUEGOS PARA FOTONEROS
 Ep3_Pati,1,un_033090_title,"¡QUIERAS O NO, UN NUEVO MIEMBRO!"
 Ep3_Pati,1,un_034030_title,INFORMANTES DE VUELTA A LO BASICO
 Ep3_Pati,1,un_035060_title,¡PATIA DA LA BIENVENIDA A TODOS!
 Ep3_Pati,1,un_036040_title,¡NUEVA INFORMACION SOBRE LOS GEMELOS!
-Ep3_Pati,1,un_037110_title,LA OPCION DE ARKS PARA INTEL
+Ep3_Pati,1,un_037110_title,La opcion de Arks para Intel
 Ep3_Maria,0,un_032110_title,彼女が寂しそうな理由
 Ep3_Maria,0,un_034050_title,命がけのじゃれあい
-Ep3_Maria,1,un_032110_title,POR QUE PARECE TAN SOLITARIA
-Ep3_Maria,1,un_034050_title,JUEGO DE VIDA Y MUERTE
+Ep3_Maria,1,un_032110_title,Por que parece tan solitaria
+Ep3_Maria,1,un_034050_title,Juego de vida y muerte
 Ep3_Sara,0,un_032080_title,寂しくなんかないんだから
-Ep3_Sara,1,un_032080_title,¡NO ES QUE ESTE SOLA NI NADA!
+Ep3_Sara,1,un_032080_title,¡No es que este sola ni nada!
 Ep3_Ohza,0,un_031020_title,もう、手遅れかもしれない
 Ep3_Ohza,0,un_032010_title,繋がる気持ち
 Ep3_Ohza,0,un_032010_date,A.P.239/1/29
@@ -3480,12 +3480,12 @@ Ep3_Marlu,1,un_037010_title,USTED NO ESTA SOLO
 Ep3_Reda,0,un_031100_title,カジノマジやべーって！
 Ep3_Reda,0,un_035070_title,ダーカーと勘違い？
 Ep3_Reda,1,un_031100_title,¡EL CASINO ES MAS FRESCO QUE FRESCO!
-Ep3_Reda,1,un_035070_title,FALSPAWN SIENTE HORMIGUEO
+Ep3_Reda,1,un_035070_title,¿Se confunde con Dark Falz?
 Ep3_Risa,0,un_031120_title,困って困って困ったひとたち
 Ep3_Risa,0,un_033060_title,すごくて不思議でおかしな場所
 Ep3_Risa,0,un_036060_title,冗談ですまない冗談
 Ep3_Risa,1,un_031120_title,PERSONAS PROBLEMATICAS
-Ep3_Risa,1,un_033060_title,UN LUGAR DE LO MAS CURIOSO
+Ep3_Risa,1,un_033060_title,UN LUGAR MUY CURIOSO
 Ep3_Risa,1,un_036060_title,UNA BROMA... ¿O LO ES?
 Ep3_Ulc,0,un_031080_title,彼女はいつもやりたい放題
 Ep3_Ulc,0,un_032070_title,役目を得た彼女と彼
@@ -3521,7 +3521,7 @@ Ep3_Io,0,un_036030_title,みんながみんな、変わり者
 Ep3_Io,0,un_037070_title,おれはイヤだ
 Ep3_Io,1,un_031110_title,MUCHAS GRACIAS BIEN DICHO
 Ep3_Io,1,un_035050_title,"SOLO NOSOTROS DOS, JUNTOS POR FIN"
-Ep3_Io,1,un_036030_title,BOLAS EXTRAЙAS POR TODOS LADOS
+Ep3_Io,1,un_036030_title,Todos son un poco raro
 Ep3_Io,1,un_037070_title,NO SOY BUENO
 Ep3_Katori,0,un_031040_title,その名は『バウンサー』
 Ep3_Katori,0,un_031050_title,デュアルブレードの魅力！
@@ -3534,14 +3534,14 @@ Ep3_Katori,0,un_035010_title,カトリののせ方だまし方
 Ep3_Katori,0,un_036050_title,特訓からの帰還
 Ep3_Katori,0,un_037080_title,やってみれば可能性は生まれる
 Ep3_Katori,1,un_031040_title,LOS LLAMAN Bouncers
-Ep3_Katori,1,un_031050_title,LO GRANDE DE LAS HOJAS ALTAS
+Ep3_Katori,1,un_031050_title,LO GRANDE DEL DUALBLADE
 Ep3_Katori,1,un_031060_title,LA NATURALEZA DE LAS BOTAS JET
 Ep3_Katori,1,un_032020_title,CAMPAMENTO DE ENTRENAMIENTO SIN FIN
 Ep3_Katori,1,un_033040_title,KATORI EN COMPETICION
 Ep3_Katori,1,un_033050_title,SAGA EN COMPETENCIA
 Ep3_Katori,1,un_034010_title,RESULTADOS DE LA COMPETENCIA
 Ep3_Katori,1,un_035010_title,EL ENGAЙO DE KATORI
-Ep3_Katori,1,un_036050_title,REGRESO DEL BOOT CAMP
+Ep3_Katori,1,un_036050_title,Regreso del entrenamiento
 Ep3_Katori,1,un_037080_title,PRUEBALO Y VER QUE PASA
 Ep4_Vivian,0,un_045050_title,亜空間からの来訪者
 Ep4_Vivian,0,un_045060_title,ヴィヴィアンの理由
@@ -3569,7 +3569,7 @@ Etc_Ep1,1,mv_010040_title,VIAJE PLANETARIO - LILLIPA
 Etc_Ep1,1,mv_010040_date,<space>
 Etc_Ep1,1,mv_010050_title,VIAJE PLANETARIO - AMDUSKIA
 Etc_Ep1,1,mv_010050_date,<space>
-Etc_Ep1,1,mv_010070_title,VIAJE PLANETARIO - BATALLA OSCURA DE FALZ
+Etc_Ep1,1,mv_010070_title,VIAJE PLANETARIO - BATALLA CONTRA FALZ
 Etc_Ep1,1,mv_010070_date,<space>
 Etc_Ep1,1,mv_010230_title,EPISODIO 1 PELICULA DE APERTURA
 Etc_Ep1,1,mv_010230_date,<space>
@@ -3623,7 +3623,7 @@ Etc_Ep3,0,pr_039010_title,煌き舞う絶対防衛戦
 Etc_Ep3,0,pr_039010_date,<space>
 Etc_Ep3,1,mv_010200_title,VIAJE PLANETARIO - HARUKOTAN
 Etc_Ep3,1,mv_010200_date,<space>
-Etc_Ep3,1,mv_010220_title,ADVIENTO DEL PRESAGIO DE LA CALAMIDAD
+Etc_Ep3,1,mv_010220_title,LA CALAMIDAD DEL PRESAGIO
 Etc_Ep3,1,mv_010220_date,<space>
 Etc_Ep3,1,mv_010270_title,ATAQUE DE LA PROFUNDIDAD TINIEBLAS
 Etc_Ep3,1,mv_010270_date,<space>
@@ -3699,7 +3699,7 @@ Etc_Ep4,1,pr_043080_title,PUERTA DE ENTRADA A LAS MISIONES
 Etc_Ep4,1,pr_043080_date,<space>
 Etc_Ep4,1,pr_043090_title,¡VAMOS A ENTRENAR!
 Etc_Ep4,1,pr_043090_date,<space>
-Etc_Ep4,1,pr_044010_title,LLAMARLOS RIDROIDES
+Etc_Ep4,1,pr_044010_title,Llamarolos Ridroids
 Etc_Ep4,1,pr_044010_date,<space>
 Etc_Ep4,1,pr_045010_title,REGION CORROMPIDA - AMDUSKIA
 Etc_Ep4,1,pr_045010_date,<space>
@@ -3721,7 +3721,7 @@ Etc_Ep4,1,mv_020100_title,VIAJE PLANETARIO - CONTINENTE FANTASMA
 Etc_Ep4,1,mv_020100_date,<space>
 Etc_Ep4,1,mv_020070_title,PILAR FANTASMA DESAPARECIDO
 Etc_Ep4,1,mv_020070_date,<space>
-Etc_Ep4,1,mv_020120_title,EL CONTINENTE DE DIOS COLAPSO
+Etc_Ep4,1,mv_020120_title,EL CONTINENTE DE DIOS EN RUINAS
 Etc_Ep4,1,mv_020120_date,<space>
 Etc_Ep5,0,mv_030030_title,ＥＰＩＳＯＤＥ５オープニングムービー
 Etc_Ep5,0,mv_030030_date,<space>
@@ -3743,7 +3743,7 @@ Etc_Ep5,0,pr_058070_title,領域の調査、完了です！
 Etc_Ep5,0,pr_058070_date,<space>
 Etc_Ep5,1,mv_030030_title,EPISODIO 5 PELICULA DE APERTURA
 Etc_Ep5,1,mv_030030_date,<space>
-Etc_Ep5,1,pr_056020_title,ENCANTAR BOSQUES EN UNA DIMENSION ALTERADA
+Etc_Ep5,1,pr_056020_title,LOS BOSQUES ENCANTADOR EN OTRO MUNDO
 Etc_Ep5,1,pr_056020_date,<space>
 Etc_Ep5,1,pr_058010_title,UN DUO DE COMEDIA EN WOPAL
 Etc_Ep5,1,pr_058010_date,<space>
@@ -3757,7 +3757,7 @@ Etc_Ep5,1,pr_058050_title,COMIENZA EL VIAJE MAS LARGO
 Etc_Ep5,1,pr_058050_date,<space>
 Etc_Ep5,1,pr_058060_title,¡AL FIN A MITAD DE CAMINO!
 Etc_Ep5,1,pr_058060_date,<space>
-Etc_Ep5,1,pr_058070_title,"¡INVESTIGACION DEL TERRITORIO, COMPLETA!"
+Etc_Ep5,1,pr_058070_title,"Investigacion del territorio, completa."
 Etc_Ep5,1,pr_058070_date,<space>
 Etc_EX,0,un_045045_title,あたしの名はエミリア
 Etc_EX,0,un_045045_date,<space>
