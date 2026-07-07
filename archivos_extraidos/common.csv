@@ -404,10 +404,10 @@ ConnectError,1,Code637_Code,No se puede trasladar a alojamiento personal.
 ConnectError,1,Code637_Message,Se ha producido un error en el sistema del servidor.
 ConnectError,1,Code638_Title,Mudarse a habitaciones personales
 ConnectError,1,Code638_Code,No se puede trasladar a alojamiento personal.
-ConnectError,1,Code638_Message,No puedes ingresar porque tu período de pago ha expirado.
+ConnectError,1,Code638_Message,No puedes ingresar porque tu periodo de pago ha expirado.
 ConnectError,1,Code639_Title,Mudarse a habitaciones personales
 ConnectError,1,Code639_Code,No se puede trasladar a alojamiento personal.
-ConnectError,1,Code639_Message,No puedes ingresar porque tu período de pago ha expirado.
+ConnectError,1,Code639_Message,No puedes ingresar porque tu periodo de pago ha expirado.
 ConnectError,1,Code640_Title,Error de versión
 ConnectError,1,Code640_Code,La versión del software no coincide con la del servidor.
 ConnectError,1,Code640_Message,Es posible que el cliente del juego no se haya actualizado<br>correctamente.<br><yellow> Consulta la tienda e instala la última versión. <c>
@@ -497,7 +497,7 @@ ConnectError,1,Code812_Code,Su cuenta está actualmente suspendida.
 ConnectError,1,Code812_Message,"Para comunicarse con el soporte, <br>, visite el sitio web oficial de Phantasy Star Online 2."
 ConnectError,1,Code813_Title,Cuenta suspendida
 ConnectError,1,Code813_Code,Su cuenta ha sido suspendida temporalmente.
-ConnectError,1,Code813_Message,琀栀椀猀 琀椀洀攀⸀㰀戀爀㸀吀漀 挀漀渀琀愀挀琀 匀甀瀀瀀漀爀琀Ⰰ㰀戀爀㸀瀀氀攀愀猀攀 瘀椀猀椀琀 琀栀攀 倀栀愀渀琀愀猀礀 匀琀愀爀 伀渀氀椀渀攀 ㈀ 漀昀昀椀挀椀愀氀 眀攀戀猀椀琀攀⸀
+ConnectError,1,Code813_Message,Tiene %d horas left antes de que se suspenda el servicio. No podras jugar durante este periodo.
 ConnectError,1,Code814_Title,Cuenta suspendida
 ConnectError,1,Code814_Code,"Ahí lo tienes, ese es un mineral precioso.  __0__ Son preciosos por lo difíciles que son __0__ encontrarlos."
 ConnectError,1,Code814_Message,"Para comunicarse con el soporte, <br>, visite el sitio web oficial de Phantasy Star Online 2."
@@ -573,9 +573,9 @@ SystemMessage,1,SystemMesBusy,Transmitiendo...
 SystemMessage,1,SystemGmAlertFormMessage,Aceptar y continuar
 SystemMessage,1,SystemGmAlertFormMessageTitle,Alerta del equipo de desarrollo
 SystemMessage,1,SystemGmMessageFormMessageTitle,Anuncio del equipo de desarrollo
-SystemMessage,1,EmergencyStopMessage,挀琀攀搀 昀漀爀 椀渀瘀攀猀琀椀最愀琀椀漀渀⸀㰀戀爀㸀倀氀攀愀猀攀 挀栀攀挀欀 琀栀攀 瀀氀愀礀攀爀✀猀 猀椀琀攀 昀漀爀 搀攀琀愀椀氀猀⸀
+SystemMessage,1,EmergencyStopMessage,"El servicio que estas utilizando esta actualmente con problemas. Se esta investigando el problema. Por favor, consulte el sitio web del jugador para mas informacion."
 SystemMessage,1,EmergencyStopMessageTitle,Restricciones de uso
-SystemMessage,1,EmergencyStopItemMessage,挀琀攀搀 昀漀爀 椀渀瘀攀猀琀椀最愀琀椀漀渀⸀㰀戀爀㸀倀氀攀愀猀攀 挀栀攀挀欀 琀栀攀 瀀氀愀礀攀爀✀猀 猀椀琀攀 昀漀爀 搀攀琀愀椀氀猀⸀
+SystemMessage,1,EmergencyStopItemMessage,"El servicio que estas utilizando esta actualmente con problemas. Se esta investigando el problema. Por favor, consulte el sitio web del jugador para mas informacion."
 SystemMessage,1,EmergencyStopItemMessageTitle,Restricciones comerciales para artículos específicos
 SystemMessage,1,Toast_StoryQuestAnnounce,"Solicite ""Un encuentro con Xion"" del ""EPISODIO 1"" de Story Quest."
 SystemMessage,1,RestrictionTitle,Restricción funcional
@@ -644,14 +644,14 @@ Window,0,Percent,％
 Window,0,PercentNum,$(0)％
 Window,0,ScratchNote_Title,景品に関する注意事項
 Window,0,ScratchNote,戀爀㸀퀀魣牏ࡒ桔樰訰縰夰Ȱ㰰戀爀㸀崀渰弰脰퀰魣牏ࡒㅔ─渀ꈰꐰ옰䰰㄰　　�ⵖㅎ�Ŗ㰰戀爀㸀씀婟鈰謹啑谰謰픰䑎罽朰漰䈰訰縰嬰錰Ȱ㰰戀爀㸀㰀戀爀㸀뤀꼰쌰섰漰셦潔쨰豎筟䬰渰뤰꼰쌰섰萰㰰戀爀㸀대옰쐰朰舰퀰魣奏謰ﵓ➀䱠䈰訰縰夰Ȱ0刀愀挀攀
-Window,1,Yes,Sí
+Window,1,Yes,Si
 Window,1,No,No
 Window,1,Decide,Confirmar
 Window,1,Cancel,Cancelar
-Window,1,Next,Próximo
-Window,1,Prev,Atrás
+Window,1,Next,Proximo
+Window,1,Prev,Atras
 Window,1,Close,Cerca
-Window,1,Return,Atrás
+Window,1,Return,Atras
 Window,1,CloseHint,Cerca
 Window,1,HelpHint,Ayuda
 Window,1,Level,Lv.
@@ -663,7 +663,7 @@ Window,1,Plus,Texto del diálogo NPC (éxito)
 Window,1,Greater,>
 Window,1,Less,<
 Window,1,WaveDash,Comienza el desarrollo de la batalla conjunta de APC (provisional)
-Window,1,Cross,incógnita
+Window,1,Cross,incognita
 Window,1,MultiSelecting,Seleccionando varios elementos...
 Window,1,MultiDrop,- ($(0))
 Window,1,DropText,$(0)
@@ -676,7 +676,7 @@ Window,1,CaptureMessage2,Captura de pantalla guardada.
 Window,1,CaptureMessage3,Captura de pantalla guardada.
 Window,1,CaptureErrorMessage01,Espacio de almacenamiento insuficiente. No se pudo guardar la captura de pantalla.
 Window,1,MovieStartMessage,Captura de vídeo iniciada. Se mostrará un aviso de derechos de autor durante la captura de video.
-Window,1,MovieEndMessage,Captura de vídeo completa.
+Window,1,MovieEndMessage,Grabacion de video completada.
 Window,1,MovieErrorMessage01,Espacio de almacenamiento insuficiente. No se pudo capturar el video.
 Window,1,MovieErrorMessage02,Espacio de almacenamiento insuficiente. La captura de vídeo finalizó.
 Window,1,Bubble_Chatter1,...
@@ -715,7 +715,7 @@ Race,0,NoHuman,ヒューマン以外
 Race,0,NoNewman,ニューマン以外
 Race,0,NoCast,キャスト以外
 Race,0,NoDewman,デューマン以外
-Race,1,Title,Carrera
+Race,1,Title,Raza
 Race,1,Human,Humano
 Race,1,Newman,hombre nuevo
 Race,1,Cast,ELENCO
@@ -762,15 +762,15 @@ Class,1,Job01,Guardabosque
 Class,1,Job02,Fuerza
 Class,1,Job03,Combatiente
 Class,1,Job04,Artillero
-Class,1,Job05,técnico
-Class,1,Job06,Más valiente
-Class,1,Job07,Bravucón
+Class,1,Job05,tecnico
+Class,1,Job06,Mas valiente
+Class,1,Job07,Bravucon
 Class,1,Job08,Desafiador
 Class,1,Job09,Invocador
 Class,1,Job10,guerrero de batalla
-Class,1,Job11,Héroe
+Class,1,Job11,Heroe
 Class,1,Job12,Fantasma
-Class,1,Job13,Étoile
+Class,1,Job13,Etoile
 Class,1,Job14,Lustre
 Class,1,All,Todo
 Login,0,SaveAccount,アカウントを保存
@@ -797,7 +797,7 @@ Logout,1,AutoLogoutDone_Title,Aviso
 Logout,1,AutoLogoutDone_Message,琀椀琀氀攀 猀挀爀攀攀渀⸀⸀⸀
 Logout,1,AutoLogoutWarning_Message_InChallengeShip,Ⰰ 礀漀甀 眀椀氀氀㰀戀爀㸀愀甀琀漀洀愀琀椀挀愀氀氀礀 戀攀 氀漀最最攀搀 漀甀琀⸀㰀挀㸀
 Logout,1,AutoLogoutDone_Message_InChallengeShip,琀椀琀氀攀 猀挀爀攀攀渀⸀⸀⸀
-Logout,1,AutoLogoutWarning_Message_InPokaShip,渀琀椀渀甀攀 瀀氀愀礀椀渀最⸀
+Logout,1,AutoLogoutWarning_Message_InPokaShip,纠葛的情况。瀀氀愀礀椀渀最。
 Logout,1,AutoLogoutDone_Message_InPokaShip,t.<br><br> Volviendo a la pantalla de título...
 LogWindow,0,LogKind_All,ログ：すべて
 LogWindow,0,LogKind_Custom,ログ：すべて表示
@@ -977,7 +977,7 @@ LogWindow,0,AIChat_Assessment_Bad,「低評価」を送る
 LogWindow,0,AIChat_Assessment_Report,発言を報告する
 LogWindow,1,LogKind_All,Registro: Todos
 LogWindow,1,LogKind_Custom,Registro: Mostrar todo
-LogWindow,1,LogKind_Public,Registro: Área
+LogWindow,1,LogKind_Public,Registro: Area
 LogWindow,1,LogKind_Party,Registro: Fiesta
 LogWindow,1,LogKind_Guild,Registro: Alianza
 LogWindow,1,LogKind_System,Registro: Sistema
@@ -986,21 +986,21 @@ LogWindow,1,LogKind_Whisper,Registro: susurro
 LogWindow,1,LogKind_Channel,-
 LogWindow,1,LogBalloon_All,0. Mostrar todo
 LogWindow,1,LogBalloon_Custom,0. Mostrar todo
-LogWindow,1,LogBalloon_Public,1. Área
+LogWindow,1,LogBalloon_Public,1. Area
 LogWindow,1,LogBalloon_Party,<pict Party> 2. Fiesta
 LogWindow,1,LogBalloon_Guild,<pict Guild> 3. Alianza
 LogWindow,1,LogBalloon_System,7. Sistema
 LogWindow,1,LogBalloon_NPC,6. Carácter
 LogWindow,1,LogBalloon_Whisper,<pict Whisper> 4. Susurro
-LogWindow,1,LogRange_Public,1. Enviar al área
+LogWindow,1,LogRange_Public,1. Enviar al area
 LogWindow,1,LogRange_Party,<pict Party> 2. Enviar a grupo
 LogWindow,1,LogRange_Guild,<pict Guild> 3. Enviar a Alianza
 LogWindow,1,LogRange_Whisper,<pict Whisper> 4. Enviar por susurro
-LogWindow,1,LogRangeTab_Public,1. Área
+LogWindow,1,LogRangeTab_Public,1. Area
 LogWindow,1,LogRangeTab_Party,<pict Party> 2. Fiesta
 LogWindow,1,LogRangeTab_Guild,<pict Guild> 3. Alianza
 LogWindow,1,LogRangeTab_Whisp,<pict Whisper> 4. Susurro
-LogWindow,1,WhisperSendTo,Enviar a $(0)
+LogWindow,1,WhisperSendTo,Enviar a $1
 LogWindow,1,LogName_System,Sistema
 LogWindow,1,LogButton_Send,Enviar
 LogWindow,1,LogButton_Input,Comenzar a chatear con <%ChatStart>
@@ -1022,8 +1022,8 @@ LogWindow,1,LogButton_Twitter,-
 LogWindow,1,LogButton_LobbyAction,Emoticones
 LogWindow,1,LogButton_Symbol,Arte simbólico
 LogWindow,1,LogButton_ContinuousInput,Entrada continua
-LogWindow,1,DirectChatBegin,Chat directo habilitado.
-LogWindow,1,DirectChatEnd,Chat directo deshabilitado.
+LogWindow,1,DirectChatBegin,He habilitado el chat directo.
+LogWindow,1,DirectChatEnd,He deshabilitado el chat directo.
 LogWindow,1,DirectChatEndTmp,Chat directo desactivado temporalmente.
 LogWindow,1,DirectChatBlacklist,El destinatario está bloqueado. No se puede enviar el mensaje.
 LogWindow,1,Log_Toast_Whisper_Name_Fail,No se puede utilizar Whisper Chat. La pareja no es lo suficientemente cercana.
@@ -1036,12 +1036,12 @@ LogWindow,1,Log_ItemGet,Obtuvo $(0).
 LogWindow,1,Log_CapsuleGet,Has encontrado un artículo virtual: $(0). Puedes examinar tu adquisición en Extreme Terminal.
 LogWindow,1,LogSymbolArt,Se muestra el arte del símbolo.
 LogWindow,1,LogWhisperEmpty,El registro de susurros está vacío.
-LogWindow,1,LogGroupChatEmpty,No permitido en esta área.
+LogWindow,1,LogGroupChatEmpty,No permitido en esta area.
 LogWindow,1,LogWhisperButtonText,...
 LogWindow,1,Tab,Pestaña $(0)
 LogWindow,1,TabChange_Title,Cambiar pestaña de canal
 LogWindow,1,Bubble_Normal,Normal
-LogWindow,1,Bubble_Surprise,Énfasis
+LogWindow,1,Bubble_Surprise,Enfasis
 LogWindow,1,Bubble_Question,Incierto
 LogWindow,1,ManpuCategory_01,Positivo
 LogWindow,1,ManpuCategory_02,Negativo
@@ -1061,7 +1061,7 @@ LogWindow,1,Manpu_10,Necio
 LogWindow,1,Manpu_11,suspiro
 LogWindow,1,Manpu_12,Enojado
 LogWindow,1,Manpu_13,Insatisfecho
-LogWindow,1,Manpu_15,Reír
+LogWindow,1,Manpu_15,Reir
 LogWindow,1,Manpu_16,Copas
 LogWindow,1,Manpu_17,Notas musicales
 LogWindow,1,Manpu_18,!
@@ -1072,17 +1072,17 @@ LogWindow,1,Manpu_22,Sorprendido
 LogWindow,1,Manpu_23,Deprimido + Sudando 1
 LogWindow,1,Manpu_24,Sudando 2 + Sonrojándose
 LogWindow,1,Manpu_25,Insatisfecho + Irritado
-LogWindow,1,Manpu_26,¡Irritado +!
+LogWindow,1,Manpu_26, Irritado +!
 LogWindow,1,Manpu_27,Deprimido + Suspirando
 LogWindow,1,Manpu_28,Tonto + sonrojado
-LogWindow,1,Manpu_29,Sonrojándose + Enojado
+LogWindow,1,Manpu_29,Sonrojandose + Enojado
 LogWindow,1,Manpu_30,Ectoplasma + Cráneo
 LogWindow,1,Manpu_31,Idea+!?
 LogWindow,1,Manpu_32,Tontos + Corazones
 LogWindow,1,Manpu_33,Enojado + Suspirando
 LogWindow,1,Manpu_34,Insatisfecho + !
 LogWindow,1,Manpu_35,¿¡Insatisfecho +!?
-LogWindow,1,Manpu_36,¡Sorprendido +!
+LogWindow,1,Manpu_36,¡Sorprendido¡
 LogWindow,1,Manpu_37,Riendo + Corazones
 LogWindow,1,Manpu_38,Riendo + Notas Musicales
 LogWindow,1,Manpu_39,※※※
@@ -1103,14 +1103,14 @@ LogWindow,1,Cutin_Camera_Side,Desde el lado
 LogWindow,1,LogKind_Group,Registro: Grupo
 LogWindow,1,LogTitleLobbyAction,Seleccionar gesto
 LogWindow,1,LogBalloon_Group,<pict Group> 5. Grupo
-LogWindow,1,LogRange_Public_Challenge,1. Enviar al área
+LogWindow,1,LogRange_Public_Challenge,1. Enviar al area
 LogWindow,1,LogRange_Public_Poka,1. Enviar a la Unión
 LogWindow,1,LogRange_Group,<pict Group> 5. Enviar al grupo
 LogWindow,1,LogAnnounce_Show,Camb.
 LogWindow,1,LogAnnounce_Speak,Camb.
 LogWindow,1,LogAnnounce_Plus,+
 LogWindow,1,LogAnnounce_Delete,<%Function> Eliminar 1 carácter
-LogWindow,1,LogRangeTab_Public_Challenge,1. Toda el área
+LogWindow,1,LogRangeTab_Public_Challenge,1. Toda el area
 LogWindow,1,LogRangeTab_Public_Poka,1. Unión
 LogWindow,1,LogRangeTab_Group,<pict Group> 5. Grupo
 LogWindow,1,LogButton_ChatNG,No se puede entrar al chat.
@@ -1130,9 +1130,9 @@ LogWindow,1,LogButton_DirectChat_Guild,<pict Guild> Modo de chat directo
 LogWindow,1,LogButton_DirectChat_Whisper,<pict Whisper> Modo de chat directo
 LogWindow,1,LogButton_ShortcutCloud,<%MainMenu> Toque y mantenga presionado para comenzar a chatear
 LogWindow,1,LogButton_InputCloud,<%MainMenu> Toque y mantenga presionado para comenzar a chatear
-LogWindow,1,Log_Toast_Disable_TeamChat_ChallengeShip,Alliance Chat no está disponible en Universal Ship.
+LogWindow,1,Log_Toast_Disable_TeamChat_ChallengeShip,Alliance Chat no esta disponible en Universal Ship.
 LogWindow,1,Log_Toast_Disable_TeamChat_Poka,El chat de alianza no está disponible actualmente.
-LogWindow,1,Log_Toast_Nouse_Poka_Whisper,Whisper Chat no está disponible durante la batalla.
+LogWindow,1,Log_Toast_Nouse_Poka_Whisper,Whisper Chat no esta disponible durante la batalla.
 LogWindow,1,Log_Toast_Disable_GroupChat,Al menos 2 miembros deben participar para enviar un mensaje de chat grupal.
 LogWindow,1,Log_Toast_Disable_GroupChat_NotActive,No se muestran grupos.
 LogWindow,1,Log_Toast_Disable_GroupChat_NotUseArea,No hay grupos registrados.
@@ -2133,12 +2133,12 @@ LobbyAction,1,LobbyAction_Sorry,Disculparse
 LobbyAction,1,LobbyAction_Provoke,Provocar
 LobbyAction,1,LobbyAction_Praise,Elogio
 LobbyAction,1,LobbyAction_Kiss,Beso
-LobbyAction,1,LobbyAction_Howareyou,¿Qué pasa?
+LobbyAction,1,LobbyAction_Howareyou,¿Que pasa?
 LobbyAction,1,LobbyAction_You,Punto
 LobbyAction,1,LobbyAction_Yell,animate
-LobbyAction,1,LobbyAction_Guts,mentalizado
+LobbyAction,1,LobbyAction_Guts,ponerse en modo mental
 LobbyAction,1,LobbyAction_Laugh,gran risa
-LobbyAction,1,LobbyAction_Clap,Aplaudir
+LobbyAction,1,LobbyAction_Clap,Applaudir
 LobbyAction,1,LobbyAction_Sit1,sentarse 1
 LobbyAction,1,LobbyAction_Sit2,sentarse 2
 LobbyAction,1,LobbyAction_Pose1,postura 1
@@ -2149,7 +2149,7 @@ LobbyAction,1,LobbyAction_darkerblast,Explosión oscura
 LobbyAction,1,LobbyAction_darkblast2,Explosión oscura 2
 LobbyAction,1,LobbyAction_darkblast3,Explosión oscura 3
 LobbyAction,1,LobbyAction_darkblast4,Explosión oscura 4
-LobbyAction,1,LobbyAction_Liveit,¡Déjamelo a mí!
+LobbyAction,1,LobbyAction_Liveit,¡Dejamelo a mi!
 LobbyAction,1,LobbyAction_Deny,Denegar
 LobbyAction,1,LobbyAction_Tired,Indispuesto
 LobbyAction,1,LobbyAction_Happy,Encantado
@@ -2177,10 +2177,10 @@ LobbyAction,1,LobbyAction_Bed1,Cama 1
 LobbyAction,1,LobbyAction_Bed2,Cama 2
 LobbyAction,1,LobbyAction_Sexy,Sexy
 LobbyAction,1,LobbyAction_Drunk,Achispado
-LobbyAction,1,LobbyAction_Pose3,postura 3
+LobbyAction,1,LobbyAction_Pose3,Postura 3
 LobbyAction,1,LobbyAction_Pose4,postura 4
 LobbyAction,1,LobbyAction_Pose5,postura 5
-LobbyAction,1,LobbyAction_Proudback,Mostrar Atrás
+LobbyAction,1,LobbyAction_Proudback,Mostrar Atras
 LobbyAction,1,LobbyAction_Proudarm,Mostrar brazos
 LobbyAction,1,LobbyAction_Proudleg,Mostrar piernas
 LobbyAction,1,LobbyAction_Dance3,baile 3
@@ -2198,24 +2198,24 @@ LobbyAction,1,LobbyAction_clight2,Swing Light 2
 LobbyAction,1,LobbyAction_clight3,Swing Light 3
 LobbyAction,1,LobbyAction_Dance7,Dance 7
 LobbyAction,1,LobbyAction_Dance8,Dance 8
-LobbyAction,1,LobbyAction_go,Let's do this!
+LobbyAction,1,LobbyAction_go,¡Vamos!
 LobbyAction,1,LobbyAction_moji,Bashful
-LobbyAction,1,LobbyAction_comic,Comedy Act
+LobbyAction,1,LobbyAction_comic,Comedia de actos
 LobbyAction,1,LobbyAction_present,Gift
 LobbyAction,1,LobbyAction_water_a,Splash
 LobbyAction,1,LobbyAction_water_b,Get Splashed
-LobbyAction,1,LobbyAction_hot,"Man, it's hot."
+LobbyAction,1,LobbyAction_hot,暑い
 LobbyAction,1,LobbyAction_kagamu,Charm
 LobbyAction,1,LobbyAction_Dance9,Dance 9
 LobbyAction,1,LobbyAction_Dance10,Dance 10
 LobbyAction,1,LobbyAction_Dance11,Dance 11
 LobbyAction,1,LobbyAction_Dance12,Dance 12
 LobbyAction,1,LobbyAction_Sit4,Sit 4
-LobbyAction,1,LobbyAction_Sit5,Sit 5
-LobbyAction,1,LobbyAction_mdpose_a2,Cross Arms
-LobbyAction,1,LobbyAction_mdpose_b2,Hey there!
-LobbyAction,1,LobbyAction_mdpose_a3,Modelling 1
-LobbyAction,1,LobbyAction_mdpose_b3,Modelling 2
+LobbyAction,1,LobbyAction_Sit5,Sentado 5
+LobbyAction,1,LobbyAction_mdpose_a2,Cruzar brazos
+LobbyAction,1,LobbyAction_mdpose_b2,¡Hey!
+LobbyAction,1,LobbyAction_mdpose_a3,Modelo 1
+LobbyAction,1,LobbyAction_mdpose_b3,Modelo 2
 LobbyAction,1,LobbyAction_animal,Animal
 LobbyAction,1,LobbyAction_taiso,Getting Ready
 LobbyAction,1,LobbyAction_boxing,Boxing
@@ -2226,11 +2226,11 @@ LobbyAction,1,LobbyAction_punch,Smack Silly
 LobbyAction,1,LobbyAction_chiba,Special Move
 LobbyAction,1,LobbyAction_ochokuri,Tease
 LobbyAction,1,LobbyAction_kimepose,Pose 9
-LobbyAction,1,LobbyAction_mdwalk,On the Catwalk
+LobbyAction,1,LobbyAction_mdwalk,Modelo que camina
 LobbyAction,1,LobbyAction_kashige,Tilt Head
 LobbyAction,1,LobbyAction_hello2,Greeting 2
 LobbyAction,1,LobbyAction_aid2,Cheer On 2
-LobbyAction,1,LobbyAction_pains2,Cursed
+LobbyAction,1,LobbyAction_pains2,Maldicion
 LobbyAction,1,LobbyAction_chu2,Pose 10
 LobbyAction,1,LobbyAction_salute2,Salute 2
 LobbyAction,1,LobbyAction_ichitarou,Acrobatics
@@ -2246,10 +2246,10 @@ LobbyAction,1,LobbyAction_sc5,Space Channel 5 Dance
 LobbyAction,1,LobbyAction_fireworks,Fireworks
 LobbyAction,1,LobbyAction_pose11,Pose 11
 LobbyAction,1,LobbyAction_pose12,Cheer
-LobbyAction,1,LobbyAction_champagne,Winner's Circle
+LobbyAction,1,LobbyAction_champagne,El Campeon
 LobbyAction,1,LobbyAction_imitateBB,Air Baseball
 LobbyAction,1,LobbyAction_fishing,Fishing
-LobbyAction,1,LobbyAction_yopparai,Drunk
+LobbyAction,1,LobbyAction_yopparai,Borracho
 LobbyAction,1,LobbyAction_enomoto4,Waiting Around 2
 LobbyAction,1,LobbyAction_virtualon,Virtual-On
 LobbyAction,1,LobbyAction_pose13,Pose 12
@@ -2267,10 +2267,10 @@ LobbyAction,1,LobbyAction_pose16,Pose 15
 LobbyAction,1,LobbyAction_ice,Snowball Fight
 LobbyAction,1,LobbyAction_eieio,"Hey, hey, oh!"
 LobbyAction,1,LobbyAction_kick2,Kick 2
-LobbyAction,1,LobbyAction_stylish,Space Jump
-LobbyAction,1,LobbyAction_symbol0,Draw Zero
-LobbyAction,1,LobbyAction_symbol1,Draw 1
-LobbyAction,1,LobbyAction_symbol3,Draw 3
+LobbyAction,1,LobbyAction_stylish,Salto Espacial
+LobbyAction,1,LobbyAction_symbol0,Dibujo Cero
+LobbyAction,1,LobbyAction_symbol1,Dibujo 1
+LobbyAction,1,LobbyAction_symbol3,Dibujo 3
 LobbyAction,1,LobbyAction_symbol4,Draw 4
 LobbyAction,1,LobbyAction_symbol5,Draw 5
 LobbyAction,1,LobbyAction_symbol6,Draw 6
@@ -2282,7 +2282,7 @@ LobbyAction,1,LobbyAction_enemy2,Enemy 2
 LobbyAction,1,LobbyAction_umbrella1,Air Umbrella
 LobbyAction,1,LobbyAction_umbrella2,Real Umbrella
 LobbyAction,1,LobbyAction_dummy,dummy
-LobbyAction,1,LobbyAction_eat,Eat
+LobbyAction,1,LobbyAction_eat,comer
 LobbyAction,1,LobbyAction_pose18,Pose 17
 LobbyAction,1,LobbyAction_fear,Frightened
 LobbyAction,1,LobbyAction_clean,Tidy Up
@@ -2295,14 +2295,14 @@ LobbyAction,1,LobbyAction_freekick,Free Kick
 LobbyAction,1,LobbyAction_pose21,Pose 20
 LobbyAction,1,LobbyAction_jump,Boing Boing
 LobbyAction,1,LobbyAction_pose22,Pose 21
-LobbyAction,1,LobbyAction_aura,ARKS Pose
+LobbyAction,1,LobbyAction_aura,、
 LobbyAction,1,LobbyAction_surprise2,Shock 2
 LobbyAction,1,LobbyAction_magichat,Magic Trick
 LobbyAction,1,LobbyAction_pose23,Pose 22
 LobbyAction,1,LobbyAction_Sdogeza,Super Kowtow
 LobbyAction,1,LobbyAction_bow3,Thank 3
-LobbyAction,1,LobbyAction_jelly,Drink Pouch
-LobbyAction,1,LobbyAction_kouhoutai2,Ramen Time!
+LobbyAction,1,LobbyAction_jelly,Beber bebida en polvo
+LobbyAction,1,LobbyAction_kouhoutai2,¡Ramen Time!
 LobbyAction,1,LobbyAction_kouhoutai3,Crowdpleasers
 LobbyAction,1,LobbyAction_airiai,Air Slash
 LobbyAction,1,LobbyAction_nekopose,Kitty Pose
@@ -2311,7 +2311,7 @@ LobbyAction,1,LobbyAction_bang,Bang Bang
 LobbyAction,1,LobbyAction_gravure,Glamour Pose 2
 LobbyAction,1,LobbyAction_bouquet,Bouquet
 LobbyAction,1,LobbyAction_change,Awakening
-LobbyAction,1,LobbyAction_watermelon,Watermelon Split
+LobbyAction,1,LobbyAction_watermelon,Agrian la sandia
 LobbyAction,1,LobbyAction_hug,Hug
 LobbyAction,1,LobbyAction_pose24,Pose 23
 LobbyAction,1,LobbyAction_janken,Rock Paper Scissors
@@ -2321,22 +2321,22 @@ LobbyAction,1,LobbyAction_sulk,Sulk
 LobbyAction,1,LobbyAction_gravitydaze,Gravity Control
 LobbyAction,1,LobbyAction_pose25,Pose 24
 LobbyAction,1,LobbyAction_emiria,Emilia Pose
-LobbyAction,1,LobbyAction_beckon,Over Here!
+LobbyAction,1,LobbyAction_beckon,¡Aqui!
 LobbyAction,1,LobbyAction_persona5,Persona 5
-LobbyAction,1,LobbyAction_stroke,Pet
-LobbyAction,1,LobbyAction_pardon,All Ears
+LobbyAction,1,LobbyAction_stroke,Acariciar
+LobbyAction,1,LobbyAction_pardon,Oidos atentos a todo
 LobbyAction,1,LobbyAction_papercraft,Paper Airplane
-LobbyAction,1,LobbyAction_tub,Falling Washbasin
+LobbyAction,1,LobbyAction_tub,Fregona caida
 LobbyAction,1,LobbyAction_mock,Poke Fun
 LobbyAction,1,LobbyAction_circle,Huddle
 LobbyAction,1,LobbyAction_nira,NieR: Automata
 LobbyAction,1,LobbyAction_tasty,Tasty!
 LobbyAction,1,LobbyAction_kabuki,Kabuki
-LobbyAction,1,LobbyAction_hagibeto,Mother Corps 1
+LobbyAction,1,LobbyAction_hagibeto,Arks Mater 1
 LobbyAction,1,LobbyAction_orqufull,Cuerpo Madre 2
 LobbyAction,1,LobbyAction_koori,Cuerpo Madre 3
 LobbyAction,1,LobbyAction_fukitobasu,Arrancar
-LobbyAction,1,LobbyAction_ghost,Obsesionado
+LobbyAction,1,LobbyAction_ghost,Obsesonado
 LobbyAction,1,LobbyAction_hitugipose,Postura de Hitsugi
 LobbyAction,1,LobbyAction_warpose,Postura de victoria 1
 LobbyAction,1,LobbyAction_missile,Misil
@@ -2351,7 +2351,7 @@ LobbyAction,1,LobbyAction_winnerpose2,Postura de victoria 2
 LobbyAction,1,LobbyAction_mothercluster4,Cuerpo Madre 4
 LobbyAction,1,LobbyAction_mothercluster5,Cuerpo Madre 5
 LobbyAction,1,LobbyAction_deadoralive1,Pose de victoria viva o muerta
-LobbyAction,1,LobbyAction_deadoralive2,Combo vivo o muerto
+LobbyAction,1,LobbyAction_deadoralive2,Combo D.O.A.
 LobbyAction,1,LobbyAction_magicbookpose,Blandir libro de hechizos
 LobbyAction,1,LobbyAction_curse2,Maldito 2
 LobbyAction,1,LobbyAction_swordpose2,Espada Laconio
@@ -2373,7 +2373,7 @@ LobbyAction,1,LobbyAction_peekaboo,Cucú
 LobbyAction,1,LobbyAction_ninja,ninja
 LobbyAction,1,LobbyAction_luncherpose,Lanzador listo
 LobbyAction,1,LobbyAction_koiyakan,Tetera de amor
-LobbyAction,1,LobbyAction_twoshot,Pose de dúo
+LobbyAction,1,LobbyAction_twoshot,Pose de duo
 LobbyAction,1,LobbyAction_volcano2,MHF2
 LobbyAction,1,LobbyAction_p3colabo,Persona 3
 LobbyAction,1,LobbyAction_p4colabo,Persona 4
@@ -2396,9 +2396,9 @@ LobbyAction,1,LobbyAction_handbell_fa,Campana - F
 LobbyAction,1,LobbyAction_handbell_so,Campana - G
 LobbyAction,1,LobbyAction_handbell_ra,Campana - A
 LobbyAction,1,LobbyAction_handbell_shi,Campana - B
-LobbyAction,1,LobbyAction_1015kick,patada 3
+LobbyAction,1,LobbyAction_1015kick,Patada 3
 LobbyAction,1,LobbyAction_darkblastpose02,Postura de transformación 2
-LobbyAction,1,LobbyAction_dnt,beneficio
+LobbyAction,1,LobbyAction_dnt,Beneficio
 LobbyAction,1,LobbyAction_1015winnerpose,Postura de victoria 4
 LobbyAction,1,LobbyAction_phlg,EN. Campo
 LobbyAction,1,LobbyAction_summon,Convocar
@@ -2412,14 +2412,14 @@ LobbyAction,1,LobbyAction_tapdance,baile 13
 LobbyAction,1,LobbyAction_Dance13,baile 14
 LobbyAction,1,LobbyAction_Dance14,baile 15
 LobbyAction,1,LobbyAction_Dance15,baile 16
-LobbyAction,1,LobbyAction_Dance17,Danza 17
+LobbyAction,1,LobbyAction_Dance17,baile 17
 LobbyAction,1,LobbyAction_Dance18,baile 18
 LobbyAction,1,LobbyAction_orz,Sentirse deprimido
-LobbyAction,1,LobbyAction_kabe,Inclinarse
+LobbyAction,1,LobbyAction_kabe,Se inclina mas
 LobbyAction,1,LobbyAction_house,Danza 19
 LobbyAction,1,LobbyAction_momoi,¡Tiempo de fiesta!
 LobbyAction,1,LobbyAction_headbanging,Golpe de cabeza
-LobbyAction,1,LobbyAction_backflip,voltereta hacia atrás
+LobbyAction,1,LobbyAction_backflip,voltereta hacia atras
 LobbyAction,1,LobbyAction_cartwheel,Rueda de carro
 LobbyAction,1,LobbyAction_squat,sentadillas
 LobbyAction,1,LobbyAction_Dance20,Danza 20
@@ -2444,15 +2444,15 @@ LobbyAction,1,LobbyAction_horror,Escalofriante
 LobbyAction,1,LobbyAction_dance28,Danza 28
 LobbyAction,1,LobbyAction_yuruyuri,Akkariin
 LobbyAction,1,LobbyAction_dance29,Danza 29
-LobbyAction,1,LobbyAction_dance30,baile 30
-LobbyAction,1,LobbyAction_cold,Frío
+LobbyAction,1,LobbyAction_dance30,Danza 30
+LobbyAction,1,LobbyAction_cold,Frio
 LobbyAction,1,LobbyAction_dance31,Danza 31
-LobbyAction,1,LobbyAction_dance32,baile 32
+LobbyAction,1,LobbyAction_dance32,Danza 32
 LobbyAction,1,LobbyAction_warm,Calentamiento
 LobbyAction,1,LobbyAction_taiki1,En espera (ropa japonesa)
 LobbyAction,1,LobbyAction_Fwpose,Pose criminal
 LobbyAction,1,LobbyAction_sokuchu,Voltereta
-LobbyAction,1,LobbyAction_pose17,postura 16
+LobbyAction,1,LobbyAction_pose17,Postura 16
 LobbyAction,1,LobbyAction_danse33,Danza 33
 LobbyAction,1,LobbyAction_fightpose2,Postura preparada 2
 LobbyAction,1,LobbyAction_fightpose1,Postura preparada 1
@@ -2461,14 +2461,14 @@ LobbyAction,1,LobbyAction_dance35,baile 35
 LobbyAction,1,LobbyAction_sing2,Cantante
 LobbyAction,1,LobbyAction_fan,ventilador 1
 LobbyAction,1,LobbyAction_syagam,Agacharse
-LobbyAction,1,LobbyAction_ bonodo,ARCAS Danza
+LobbyAction,1,LobbyAction_ bonodo,ARCS Dance
 LobbyAction,1,LobbyAction_guruguru,Avión
 LobbyAction,1,LobbyAction_fan2,ventilador 2
 LobbyAction,1,LobbyAction_furafura,Escalonar
 LobbyAction,1,LobbyAction_strech,Gimnasia
 LobbyAction,1,LobbyAction_dance36,Danza 36
 LobbyAction,1,LobbyAction_float,Flotar
-LobbyAction,1,LobbyAction_sit4,sentarse 4
+LobbyAction,1,LobbyAction_sit4,Sentarse 4
 LobbyAction,1,LobbyAction_dance37,danza 37
 LobbyAction,1,LobbyAction_lean2,Golpe de pared
 LobbyAction,1,LobbyAction_sidestep,Paso lateral
@@ -2488,8 +2488,8 @@ LobbyAction,1,LobbyAction_turn,Vuelta y vuelta
 LobbyAction,1,LobbyAction_boxing2,boxeo 2
 LobbyAction,1,LobbyAction_Hyurandance,Hyuran Dance
 LobbyAction,1,LobbyAction_Miqo'tedance,Miqo'te Dance
-LobbyAction,1,LobbyAction_sitdown,Have A Seat
-LobbyAction,1,LobbyAction_firedans,Fire Dance
+LobbyAction,1,LobbyAction_sitdown,"Echa aqui la siesta o ""Have a seat"", depende del contexto pero si no hay nada mas se puede seguir con el original."
+LobbyAction,1,LobbyAction_firedans,Fuego que arde
 LobbyAction,1,LobbyAction_lean3,Listless
 LobbyAction,1,LobbyAction_airboard,Airboard
 LobbyAction,1,LobbyAction_rappymimicry,Rappies
@@ -2499,10 +2499,10 @@ LobbyAction,1,LobbyAction_cam2,Pull Out Camera 2
 LobbyAction,1,LobbyAction_yokoso1,Cheer 1
 LobbyAction,1,LobbyAction_yokoso2,Cheer 2
 LobbyAction,1,LobbyAction_motherc,Dignified Greeting
-LobbyAction,1,LobbyAction_hozue,Lean On Hands
+LobbyAction,1,LobbyAction_hozue,Lean on manos
 LobbyAction,1,LobbyAction_dance38,Dance 38
 LobbyAction,1,LobbyAction_Gformation,Group Gymnastics
-LobbyAction,1,LobbyAction_drift,Drift in Space
+LobbyAction,1,LobbyAction_drift,Flotar
 LobbyAction,1,LobbyAction_signboard,Hold Sign
 LobbyAction,1,LobbyAction_vivian,Vivienne Dash
 LobbyAction,1,LobbyAction_cooking,Cook
@@ -2519,7 +2519,7 @@ LobbyAction,1,LobbyAction_dance41,Dance 42
 LobbyAction,1,LobbyAction_dance42,Dance 43
 LobbyAction,1,LobbyAction_dance43,Dance 41
 LobbyAction,1,LobbyAction_dance44,Dance 44
-LobbyAction,1,LobbyAction_gunaction,Ready Firearm
+LobbyAction,1,LobbyAction_gunaction,Dispara con arma
 LobbyAction,1,LobbyAction_hagito,Hagith Femt
 LobbyAction,1,LobbyAction_stscoter,Ride Personal Transporter
 LobbyAction,1,LobbyAction_ippuku,Impromptu Tea Room
@@ -2530,7 +2530,7 @@ LobbyAction,1,LobbyAction_winnerdance,Victory Dance
 LobbyAction,1,LobbyAction_watering,Watering Can
 LobbyAction,1,LobbyAction_waitpose1,On Standby 3
 LobbyAction,1,LobbyAction_beastdush,On All Fours
-LobbyAction,1,LobbyAction_dance45,Dance 45
+LobbyAction,1,LobbyAction_dance45,Dance 45 -
 LobbyAction,1,LobbyAction_playcat,Play With Kitty
 LobbyAction,1,LobbyAction_liveperformance3,Vocal Performance 3
 LobbyAction,1,LobbyAction_loserpose,[Loser] Pose
@@ -2540,10 +2540,10 @@ LobbyAction,1,LobbyAction_flyingbase,FLYING BASE
 LobbyAction,1,LobbyAction_lookup,Look Up
 LobbyAction,1,LobbyAction_repair,Repair
 LobbyAction,1,LobbyAction_dance46,ARKS Dance 2
-LobbyAction,1,LobbyAction_swimming,Swim
+LobbyAction,1,LobbyAction_swimming,Nadar
 LobbyAction,1,LobbyAction_surfing,Surf
 LobbyAction,1,LobbyAction_konamon,Okonomiyaki
-LobbyAction,1,LobbyAction_heropose,Hero Pose
+LobbyAction,1,LobbyAction_heropose,Pozo de Heroe
 LobbyAction,1,LobbyAction_dontaku,Dontaku
 LobbyAction,1,LobbyAction_rappyballoon,Rappy Balloon
 LobbyAction,1,LobbyAction_icecream,Eat Ice Cream
@@ -2560,7 +2560,7 @@ LobbyAction,1,LobbyAction_hangedman,Suspended
 LobbyAction,1,LobbyAction_wiping,Wash The Floor
 LobbyAction,1,LobbyAction_pumpkin,Jack-o'-Lantern
 LobbyAction,1,LobbyAction_trafficcontrol,Traffic Control
-LobbyAction,1,LobbyAction_warp,Flash Step
+LobbyAction,1,LobbyAction_warp,Instante de movimiento
 LobbyAction,1,LobbyAction_dance47,Dance 47
 LobbyAction,1,LobbyAction_waiting4,On Standby 4
 LobbyAction,1,LobbyAction_waiting5,On Standby 5
@@ -2578,7 +2578,7 @@ LobbyAction,1,LobbyAction_norinori,Groovy
 LobbyAction,1,LobbyAction_dance50,Dance 50
 LobbyAction,1,LobbyAction_alisapose,Alis Pose
 LobbyAction,1,LobbyAction_headwash,Wash Hair
-LobbyAction,1,LobbyAction_waiting7,On Standby 7
+LobbyAction,1,LobbyAction_waiting7,En espera 7
 LobbyAction,1,LobbyAction_rhythm,Rhythm
 LobbyAction,1,LobbyAction_psnovapose1,Nova Pose 1
 LobbyAction,1,LobbyAction_psnovapose2,Nova Pose 2
@@ -2590,7 +2590,7 @@ LobbyAction,1,LobbyAction_tcg,VR Card Game
 LobbyAction,1,LobbyAction_maromero,Marron & Melon
 LobbyAction,1,LobbyAction_hopscotch,Hopscotch
 LobbyAction,1,LobbyAction_zenmeditation,Floating Movement
-LobbyAction,1,LobbyAction_halo,Don Halo
+LobbyAction,1,LobbyAction_halo,Halo Posterior
 LobbyAction,1,LobbyAction_soullost,Dispirited
 LobbyAction,1,LobbyAction_dance53,Dance 52
 LobbyAction,1,LobbyAction_henchiranchi,Lutherisms
@@ -2609,13 +2609,13 @@ LobbyAction,1,LobbyAction_yuishaku3,Spin Cycle
 LobbyAction,1,LobbyAction_beatless,Beatless
 LobbyAction,1,LobbyAction_weddingpose,Wedding Pose
 LobbyAction,1,LobbyAction_virginroad,Down the Aisle
-LobbyAction,1,LobbyAction_sit5,Sit 5
+LobbyAction,1,LobbyAction_sit5,Sentado 5
 LobbyAction,1,LobbyAction_dance54,Dance 53
 LobbyAction,1,LobbyAction_henchiranchi2,Lutherisms 2
 LobbyAction,1,LobbyAction_drunkenfist,Drunken Boxing
-LobbyAction,1,LobbyAction_espose,Beach Pose
+LobbyAction,1,LobbyAction_espose,Mariposa (Pose de playa)
 LobbyAction,1,LobbyAction_voperformance7,Vocal Performance 6
-LobbyAction,1,LobbyAction_ermirpose,Elmir Pose
+LobbyAction,1,LobbyAction_ermirpose,Pose Elmir
 LobbyAction,1,LobbyAction_margaretapose,Margareta Pose
 LobbyAction,1,LobbyAction_flyingbase2,FLYING BASE 2
 LobbyAction,1,LobbyAction_weaponoidpose1,Weaponoid Pose 1
@@ -2626,9 +2626,9 @@ LobbyAction,1,LobbyAction_bukikamae,Ready Weapon
 LobbyAction,1,LobbyAction_weaponoidpose3,Weaponoid Pose 3
 LobbyAction,1,LobbyAction_weaponoidpose4,Weaponoid Pose 4
 LobbyAction,1,LobbyAction_burasagaru,Colgar
-LobbyAction,1,LobbyAction_butakimu,comer butakim
+LobbyAction,1,LobbyAction_butakimu,Comer butakim
 LobbyAction,1,LobbyAction_suwadance,Danza elaborada
-LobbyAction,1,LobbyAction_chairdance,baile en silla
+LobbyAction,1,LobbyAction_chairdance,Baile en silla
 LobbyAction,1,LobbyAction_siriusu,yuri/estela
 LobbyAction,1,LobbyAction_maruipose,Postura redonda
 LobbyAction,1,LobbyAction_volcano,FMH 1
@@ -2649,7 +2649,7 @@ LobbyAction,1,LobbyAction_almapose,Pose de alma
 LobbyAction,1,LobbyAction_almaball,alma bola
 LobbyAction,1,LobbyAction_ashikumi,Piernas cruzadas
 LobbyAction,1,LobbyAction_0514dance4,silbido silbido
-LobbyAction,1,LobbyAction_nijidoro,¡Gota arcoíris adquirida!
+LobbyAction,1,LobbyAction_nijidoro,¡Gota arcoiris adquirida!
 LobbyAction,1,LobbyAction_rounddance,danza 56
 LobbyAction,1,LobbyAction_danboul,Caja de cartón
 LobbyAction,1,LobbyAction_danmachi,danmachi 1
@@ -2676,10 +2676,14 @@ LobbyAction,1,LobbyAction_dadakone,Lanzar rabieta
 LobbyAction,1,LobbyAction_katanapose,Postura de katana
 LobbyAction,1,LobbyAction_kono1,Konosuba 1
 LobbyAction,1,LobbyAction_fukuokapose,La especialidad de Fukuoka
-LobbyAction,1,LobbyAction_xiaopose,Postura de Xiao
+LobbyAction,1,LobbyAction_xiaopose,"
+        Postura de Xiao
+      "
 LobbyAction,1,LobbyAction_jumppose,Postura de vuelo
 LobbyAction,1,LobbyAction_falldown,Actuación final
-LobbyAction,1,LobbyAction_regiuspose,Postura regio
+LobbyAction,1,LobbyAction_regiuspose,"
+        Postura regio
+      "
 LobbyAction,1,LobbyAction_mariapose,María Pose
 LobbyAction,1,LobbyAction_harrietpose,Postura de Hariette
 LobbyAction,1,LobbyAction_rain,Lluvia
@@ -2691,7 +2695,7 @@ LobbyAction,1,LobbyAction_tmachinegun,Pose de ametralladoras gemelas
 LobbyAction,1,LobbyAction_bananaboat,Barco plátano
 LobbyAction,1,LobbyAction_stratospose,Postura del estrato
 LobbyAction,1,LobbyAction_lawson,Letrero de Lawson
-LobbyAction,1,LobbyAction_696bed,Cama 3
+LobbyAction,1,LobbyAction_696bed,Cam\'a 3
 LobbyAction,1,LobbyAction_698hiza,Arrodillarse
 LobbyAction,1,LobbyAction_756weaponoidpose,Pose de arma 7
 LobbyAction,1,LobbyAction_photoncircle,Círculo de fotones
@@ -2713,7 +2717,7 @@ LobbyAction,1,LobbyAction_perrier,beber perrier
 LobbyAction,1,LobbyAction_talispose,Postura de Talis
 LobbyAction,1,LobbyAction_775idolapose,Idola Chara Pose 1
 LobbyAction,1,LobbyAction_776idolapose,Idola Chara Pose 2
-LobbyAction,1,LobbyAction_idolachannel,Canal Ídola
+LobbyAction,1,LobbyAction_idolachannel,Canal Idola
 LobbyAction,1,LobbyAction_jasperrosa,Jaspe/Rosa
 LobbyAction,1,LobbyAction_774swordpose,Postura de la espada
 LobbyAction,1,LobbyAction_tsuntsun,Empujar Empujar
@@ -2727,7 +2731,7 @@ LobbyAction,1,LobbyAction_doublesaberpose,Postura del doble sable
 LobbyAction,1,LobbyAction_genocide,Zona/Jaula
 LobbyAction,1,LobbyAction_765genocide,Barta/Estatua
 LobbyAction,1,LobbyAction_wandpose,Postura de la varita
-LobbyAction,1,LobbyAction_seesnow,buscar nieve
+LobbyAction,1,LobbyAction_seesnow,Buscar nieve
 LobbyAction,1,LobbyAction_yukiasobi,Diversión en la nieve 2
 LobbyAction,1,LobbyAction_795na,Festival
 LobbyAction,1,LobbyAction_814na,Xbox X/B
@@ -2743,26 +2747,26 @@ LobbyAction,1,LobbyAction_etoilepose,Pose de estrella
 LobbyAction,1,LobbyAction_787secondkkpose,Klariskrays la segunda pose
 LobbyAction,1,LobbyAction_zenopose,Postura de Zenón
 LobbyAction,1,LobbyAction_788thirdkkpose,Klariskrays la tercera pose
-LobbyAction,1,LobbyAction_811animepose,EP Oráculo 1
-LobbyAction,1,LobbyAction_830animepose,EP Oráculo 2
+LobbyAction,1,LobbyAction_811animepose,EP Oraculo 1
+LobbyAction,1,LobbyAction_830animepose,EP Oraculo 2
 LobbyAction,1,LobbyAction_pillowpose,Almohada corporal
 LobbyAction,1,LobbyAction_taktpose,Postura armonizadora
 LobbyAction,1,LobbyAction_eggrace,carrera de huevos
 LobbyAction,1,LobbyAction_partizanpose,Pose partidista
 LobbyAction,1,LobbyAction_762picnic,Picnic en cualquier lugar 1
-LobbyAction,1,LobbyAction_831animepose,Exdi Spimelra
+LobbyAction,1,LobbyAction_831animepose,EP Oracle 3
 LobbyAction,1,LobbyAction_holaf,Holcido y aftal
-LobbyAction,1,LobbyAction_jene,Pose gené
+LobbyAction,1,LobbyAction_jene,Pose gene
 LobbyAction,1,LobbyAction_836clockpose,Postura del reloj
 LobbyAction,1,LobbyAction_knuckle,Postura de los nudillos
 LobbyAction,1,LobbyAction_825console,Terminal Operativa 3
 LobbyAction,1,LobbyAction_819dance,danza 59
 LobbyAction,1,LobbyAction_gunslashpose,Postura del espadachín
-LobbyAction,1,LobbyAction_teacup,Taza para té
-LobbyAction,1,LobbyAction_tarzan,Atlético
+LobbyAction,1,LobbyAction_teacup,Taza para te
+LobbyAction,1,LobbyAction_tarzan,Atletico
 LobbyAction,1,LobbyAction_760psnikomi,Zect y Mitarashi
-LobbyAction,1,LobbyAction_832animepose,EP Oráculo 4
-LobbyAction,1,LobbyAction_849animepose,EP Oráculo 5
+LobbyAction,1,LobbyAction_832animepose,EP Oraculo 4
+LobbyAction,1,LobbyAction_849animepose,EP Oraculo 5
 LobbyAction,1,LobbyAction_donpose,VP x PSO2
 LobbyAction,1,LobbyAction_851donpose,Postura de relaciones públicas 3
 LobbyAction,1,LobbyAction_848voperformance,Interpretación vocal 10
@@ -2774,7 +2778,7 @@ LobbyAction,1,LobbyAction_jbootspose,Postura de botas a reacción
 LobbyAction,1,LobbyAction_wpswd01,Espada/Partidista
 LobbyAction,1,LobbyAction_arukas,Guerras Sakura A
 LobbyAction,1,LobbyAction_868arukas,Guerras Sakura B
-LobbyAction,1,LobbyAction_sparkler,Bengala
+LobbyAction,1,LobbyAction_sparkler,Fuego de Bengala
 LobbyAction,1,LobbyAction_dance52,baile 60
 LobbyAction,1,LobbyAction_syagami,Agacharse 2
 LobbyAction,1,LobbyAction_hizadati2,Arrodillarse 2
@@ -2813,7 +2817,7 @@ LobbyAction,1,LobbyAction_863oracle,EP Oracle 6
 LobbyAction,1,LobbyAction_892rukot,Lukot Pose 1
 LobbyAction,1,LobbyAction_817steam,Headcrab
 LobbyAction,1,LobbyAction_893rukot,Lukot Pose 2
-LobbyAction,1,LobbyAction_894rukot,Lukot Pose 3
+LobbyAction,1,LobbyAction_894rukot,"""Lukot Pose 3"""
 LobbyAction,1,LobbyAction_idoramatoi,Idola Matoi Pose
 LobbyAction,1,LobbyAction_toutobu,Admire
 LobbyAction,1,LobbyAction_thanksgivingday,Turkey
@@ -2823,8 +2827,8 @@ LobbyAction,1,LobbyAction_dsawlc,Double Saber/Wired Lances
 LobbyAction,1,LobbyAction_lusterpose,Luster Pose
 LobbyAction,1,LobbyAction_wndtkt,Wand/Harmonizer
 LobbyAction,1,LobbyAction_oden,Oden Stew
-LobbyAction,1,LobbyAction_dbljbt,Soaring Blades/Jet Boots
-LobbyAction,1,LobbyAction_ktnbow,Katana/Bow
+LobbyAction,1,LobbyAction_dbljbt,Soaring Blades/Magadura
+LobbyAction,1,LobbyAction_ktnbow,Katana/Arco
 LobbyAction,1,LobbyAction_rodeo,Rodeo Pose 1
 LobbyAction,1,LobbyAction_rodeo2,Rodeo Pose 2
 LobbyAction,1,LobbyAction_clawmachine,UFO CATCHER®
@@ -2833,7 +2837,7 @@ LobbyAction,1,LobbyAction_6posewinthun,Elemental Pose - Ltng & Wind
 LobbyAction,1,LobbyAction_6poselightdark,Elemental Pose - Dark & Light
 LobbyAction,1,LobbyAction_thief,Phantom Thief
 LobbyAction,1,LobbyAction_setsumei,Explain
-LobbyAction,1,LobbyAction_spider,Spider
+LobbyAction,1,LobbyAction_spider,araйa
 LobbyAction,1,LobbyAction_awadate,Lather Up
 LobbyAction,1,LobbyAction_kobushipose,Fist Pose
 LobbyAction,1,LobbyAction_ushipose,Moo Moo Pose
@@ -2890,7 +2894,7 @@ LobbyAction,1,LobbyAction_fingersnapping,Finger Snap
 LobbyAction,1,LobbyAction_955cook,Cook 2
 LobbyAction,1,LobbyAction_465kobushi,Fired Up
 LobbyAction,1,LobbyAction_2017hang,Suspended 2
-LobbyAction,1,LobbyAction_920yubipose,Wait a Minite
+LobbyAction,1,LobbyAction_920yubipose,Wait a minute
 LobbyAction,1,LobbyAction_2006syagamu,Crouch 4
 LobbyAction,1,LobbyAction_yakiimo,Sweet Potato
 LobbyAction,1,LobbyAction_oteage,I Give Up
@@ -2909,7 +2913,7 @@ LobbyAction,1,LobbyAction_tyabudai,Low Table
 LobbyAction,1,LobbyAction_tatami,Tatami Mat
 LobbyAction,1,LobbyAction_commemorative,Commemorative Photo
 LobbyAction,1,LobbyAction_2130dance,Dance 65
-LobbyAction,1,LobbyAction_icehockey,Ice Hockey
+LobbyAction,1,LobbyAction_icehockey,Hockey sobre Hielo
 LobbyAction,1,LobbyAction_prologue,NGS Pose
 LobbyAction,1,LobbyAction_fingerdance,No Border.
 LobbyAction,1,LobbyAction_2123dance,Dance 64
@@ -2927,7 +2931,7 @@ LobbyAction,1,LobbyAction_2083withbird,jugar con el pájaro
 LobbyAction,1,LobbyAction_2084withbird,Jugar con el pájaro 2
 LobbyAction,1,LobbyAction_2085withbird,jugar con el pájaro 3
 LobbyAction,1,LobbyAction_2081rouleau,Voluta
-LobbyAction,1,LobbyAction_2170rouleau,Desplazarse 2
+LobbyAction,1,LobbyAction_2170rouleau,Voluta 2
 LobbyAction,1,LobbyAction_ashiokipose,Postura del explorador
 LobbyAction,1,LobbyAction_2089airchair,sentarse en el aire
 LobbyAction,1,LobbyAction_2151dance,baile 68
@@ -2959,7 +2963,7 @@ LobbyAction,1,LobbyAction_Pchair_viri,Silla Photon (verde oscuro)
 LobbyAction,1,LobbyAction_Pchair_green,Silla Photon (Verde)
 LobbyAction,1,LobbyAction_Pchair_sky,Silla Photon (azul claro)
 LobbyAction,1,LobbyAction_Pchair_blue,Silla Photon (Azul)
-LobbyAction,1,LobbyAction_Pchair_purple,Silla Photon (púrpura)
+LobbyAction,1,LobbyAction_Pchair_purple,Silla Photon (purpura)
 LobbyAction,1,LobbyAction_Pchair_pink,Silla Photon (Rosa)
 LobbyAction,1,LobbyAction_Pchair_red,Silla Photon (Roja)
 LobbyAction,1,LobbyAction_Pchair_oran,Silla Photon (Naranja)
@@ -2967,7 +2971,7 @@ LobbyAction,1,LobbyAction_Pchair_yellow,Silla Photon (Amarillo)
 LobbyAction,1,LobbyAction_Pchair_whiti,Silla Photon (Blanca)
 LobbyAction,1,LobbyAction_Pchair_gold,Silla Photon (Oro)
 LobbyAction,1,LobbyAction_Pchair_black,Silla Photon (negra)
-LobbyAction,1,LobbyAction_Pchair_rappy,Silla de fotones (Rappy)
+LobbyAction,1,LobbyAction_Pchair_rappy,Silla de Photons (Rappy)
 LobbyAction,1,LobbyActionCategory_99,Gestos: Favoritos
 LobbyAction,1,LobbyActionCategory_1,Gestos: Básicos
 LobbyAction,1,LobbyActionCategory_4,Gestos: Otros 1
@@ -3028,7 +3032,7 @@ LobbyAction,1,LobbyActionCategoryTab_18,$(0). Otros 15
 LobbyAction,1,LobbyActionCategoryTab_34,$(0). Otros 16
 LobbyAction,1,LobbyActionCategoryTab_36,$(0). Otros 17
 LobbyAction,1,LobbyActionCategoryTab_19,$(0). Poses 1
-LobbyAction,1,LobbyActionCategoryTab_20,$(0). Posturas 2
+LobbyAction,1,LobbyActionCategoryTab_20,$(0). Poses 2
 LobbyAction,1,LobbyActionCategoryTab_21,$(0). Posturas 3
 LobbyAction,1,LobbyActionCategoryTab_22,$(0). Posturas 4
 LobbyAction,1,LobbyActionCategoryTab_35,$(0). Posturas 5
@@ -3044,7 +3048,7 @@ LobbyAction,1,LobbyActionCategoryTab_31,$(0). Colaboración 1
 LobbyAction,1,LobbyActionCategoryTab_32,$(0). Colaboración 2
 LobbyAction,1,LobbyActionCategoryTab_33,$(0). Colaboración 3
 LobbyAction,1,LobbyActionCategoryTab_37,$(0). Colaboración 4
-LobbyAction,1,LobbyActionCategoryTab_2,$(0). dibujar personajes
+LobbyAction,1,LobbyActionCategoryTab_2,$(0). Dibujar personajes
 LobbyAction,1,LobbyActionCategoryTab_3,Sillas de fotones
 LobbyAction,1,LobbyActionCategoryTab_Used,Acciones utilizadas recientemente
 LobbyAction,1,LobbyActionSex_0,Tipo 1
@@ -3081,10 +3085,10 @@ Term,0,Term_Pp,$(0)/$(1)
 Term,0,Term_ClassSub,$(0) Lv.$(2)/$(1) Lv. $(3)
 Term,0,Term_Class,$(0) Lv.$(1)
 Term,1,Term_Area,$(0)/$(1)
-Term,1,Term_Positon,"($(0), $(1), $(2))"
+Term,1,Term_Positon,"$(0), $(1), $(2)"
 Term,1,Term_Hp,$(0)/$(1)
 Term,1,Term_Pp,$(0)/$(1)
-Term,1,Term_ClassSub,$(0) Level$(2)/$(1) Level $(3)
+Term,1,Term_ClassSub,$(0) Level$(2)//$(1) Level $(3)
 Term,1,Term_Class,$(0) Level $(1)
 Block,0,BlockForm_Title,ブロック移動
 Block,0,BlockForm_Title2,ブロック説明
@@ -3141,7 +3145,7 @@ Block,1,BlockForm_GuildRoom,Move to Alliance Quarters
 Block,1,BlackForm_Cancel,Back
 Block,1,BlackForm_Explanation,Description
 Block,1,BlackForm_PremiumSpace,Premium Space
-Block,1,BlockForm_Move_Exp,㰀戀爀㸀㰀戀爀㸀䤀渀 愀搀搀椀琀椀漀渀Ⰰ 椀昀 礀漀甀 栀愀瘀攀 愀挀挀攀瀀琀攀搀 愀渀礀 焀甀攀猀琀猀Ⰰ㰀戀爀㸀愀渀礀 攀昀昀攀挀琀猀 愀瀀瀀氀椀攀搀 搀甀爀椀渀最 琀栀漀猀攀 焀甀攀猀琀猀 眀椀氀氀 戀攀 爀攀洀漀瘀攀搀⸀㰀戀爀㸀
+Block,1,BlockForm_Move_Exp,"Al moverse entre bloques, se retirara automaticamente del partido en el que participa y se cancelara cualquier solicitud vigente.<br><br>Ademas, si esta realizando una mision, se perderan todos los beneficios obtenidos durante su ejecucion."
 Block,1,BlockForm_MyRoom_Exp,Move to Personal Quarters?
 Block,1,BlockForm_GuildRoom_Exp,Move to Alliance Quarters?
 Block,1,BlockForm_Move_Que,Move to $(0)?
@@ -3160,25 +3164,25 @@ Block,1,BlockForm_ChallengeLobby,To Challenge Lobby
 Block,1,BlockForm_MyShip,To Your Ship
 Block,1,BlockForm_PublicShip_Exp,椀瀀㼀
 Block,1,BlockForm_PublicShip_Exp_TriggerQuest,椀猀猀甀攀猀⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 洀漀瘀攀 琀漀 琀栀攀 唀渀椀瘀攀爀猀愀氀 匀栀椀瀀㼀
-Block,1,BlockForm_MyShip_Exp,匀栀椀瀀㼀
+Block,1,BlockForm_MyShip_Exp,"Si estas realizando una mision, los efectos obtenidos dentro de la mision se perderan.<br><br>¿Quieres moverte a tu nave?"
 Block,1,BlockForm_MyShip_Exp_TriggerQuest,椀猀猀甀攀猀⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 洀漀瘀攀 琀漀 礀漀甀爀 猀栀椀瀀㼀
 Block,1,BlockForm_Move_Exp_TriggerQuest,"ed to you, potentially causing issues.<c>"
 Block,1,BlockForm_ToMyShip_Exp,"If you move to your ship,<br>matchmaking will be canceled.<br><br>Move to your ship?"
 Block,1,BlockForm_ToChallengeLobby_Exp,"If you move to the Challenge Lobby,<br>matchmaking will be canceled.<br><br>Move to the Challenge Lobby?"
 Block,1,BlockForm_ToBattleLobby_Exp,ing video or<br>other broadcasts.<c><br><br>Move to the Battle Lobby?
 Block,1,BlockForm_BattleLobbyToBattleLobby_Exp,"If you move to a Battle Block,<br>matchmaking will be canceled.<br><br>Move to the Battle Block?"
-Block,1,BlockForm_BattleLobbyToBattleLobby_Exp_NoMatching,漀渀搀甀挀琀攀搀 愀挀爀漀猀猀 愀氀氀㰀戀爀㸀䈀愀琀琀氀攀 䈀氀漀挀欀猀㬀 洀漀瘀椀渀最 琀漀 愀 洀漀爀攀 瀀漀瀀甀氀愀琀攀搀 戀氀漀挀欀 眀椀氀氀 渀漀琀㰀戀爀㸀愀昀昀攀挀琀 洀愀琀挀栀洀愀欀椀渀最⸀㰀挀㸀
-Block,1,AreaForm_BridgeArea_Exp,Move to the Bridge?
-Block,1,AreaForm_CafeArea_Exp,Move to Franca's Café?
+Block,1,BlockForm_BattleLobbyToBattleLobby_Exp_NoMatching,"Moveras a otro bloque de batalla.<br>¿Estas de acuerdo?<br><br>Nota: El emparejamiento de la Arena de Batalla se realiza en todos los bloques, por lo que no es necesario moverte a un bloque con mucho gente."
+Block,1,AreaForm_BridgeArea_Exp,¿Quieres moverte a la Puente?
+Block,1,AreaForm_CafeArea_Exp,¿Quieres ir al Cafe de Franca?
 Block,1,Bond_message,$(0)<br><br>$(1)
 Block,1,InPublicShipToast,Status temporarily set to Universal Ship-only.
 Block,1,InChallengeShipToast,Status temporarily set to Challenge Ship-only.
 Block,1,InPokaShipToast,Status temporarily set to Battle Arena-only.
 Block,1,BlockForm_Move_Exp_HighLevelQuest,甀猀攀 礀漀甀 琀漀 愀甀琀漀洀愀琀椀挀愀氀氀礀㰀戀爀㸀眀椀琀栀搀爀愀眀 昀爀漀洀 礀漀甀爀 瀀愀爀琀礀 愀渀搀 愀戀愀渀搀漀渀 礀漀甀爀 挀甀爀爀攀渀琀 焀甀攀猀琀⸀
 Block,1,BlockForm_PublicShip_Exp_HighLevelQuest,sure you wish to proceed?
-Block,1,BlockForm_MyShip_Exp_HighLevelQuest,wish to proceed?
+Block,1,BlockForm_MyShip_Exp_HighLevelQuest,¿Desea proceder?
 Block,1,BlockForm_RebootBlock,Transfer to a PSO2:NGS Block
-Block,1,BlockForm_Reboot_Exp,搀⸀㰀戀爀㸀㰀戀爀㸀䤀渀 愀搀搀椀琀椀漀渀Ⰰ 椀昀 礀漀甀 栀愀瘀攀 愀挀挀攀瀀琀攀搀 愀渀礀 焀甀攀猀琀猀Ⰰ㰀戀爀㸀愀渀礀 攀昀昀攀挀琀猀 愀瀀瀀氀椀攀搀 搀甀爀椀渀最 琀栀漀猀攀 焀甀攀猀琀猀 眀椀氀氀 戀攀 爀攀洀漀瘀攀搀⸀
+Block,1,BlockForm_Reboot_Exp,"Al moverse a un bloque, la parte automatica se ira y se anulara la solicitud actual. Ademas, los efectos en la solicitud tambien se perderan."
 Block,1,BlockForm_Reboot_Que,Transfer to a PSO2:NGS Block?
 Block,1,BlockForm_NotOnlyBlock_Exp_PS4,form<br>parties and communicate with players on other platforms.<br><br>Are you sure you wish to proceed?
 Block,1,BlockForm_Error_IllegalMember,Unable to transfer. One or more party members cannot transfer <br>to the selected block.
@@ -3220,11 +3224,11 @@ Notice,0,Unavailable_ToastMessage3,このプラットフォームでは使用で
 Notice,0,Unavailable_ToastMessage4,このプラットフォームでは選択できないマグフォルムです。
 Notice,0,Unavailable_ToastMessage5,このプラットフォームでは表示できないアイテムを展示しているため外見を一時的に変更しています。
 Notice,1,NewMail,New Mail
-Notice,1,NewFriendLIst,New Friend Request
-Notice,1,NewParty,New Party Invitation
-Notice,1,NewTeam,New Alliance Scouting
-Notice,1,NewTrade,New Trade Request
-Notice,1,NewExpMail,You have new mail.
+Notice,1,NewFriendLIst,Registro de nuevo amigo
+Notice,1,NewParty,Nueva invitacion a la party
+Notice,1,NewTeam,Mision de scouting de nueva alianza
+Notice,1,NewTrade,Solicitud de nuevo intercambio
+Notice,1,NewExpMail,Ha llegado un correo electronico.
 Notice,1,NewExpTrade,You have received a Trade Request.
 Notice,1,NewExpFriendLIst,You have received a Friend Request.
 Notice,1,NewExpParty,You have been invited to join a party.
@@ -3238,14 +3242,14 @@ Notice,1,NewCheckFriendList,"If you select ""No,"" you can also send a reply <br
 Notice,1,NewCheckParty,昀 礀漀甀 猀攀氀攀挀琀 ∀一漀Ⰰ∀ 礀漀甀 挀愀渀 愀氀猀漀 猀攀渀搀 愀 爀攀瀀氀礀 氀愀琀攀爀 㰀戀爀㸀戀礀 猀攀氀攀挀琀椀渀最 ∀倀愀爀琀礀 䌀漀洀洀愀渀搀猀∀ 椀渀 琀栀攀 䴀愀椀渀 䴀攀渀甀⸀
 Notice,1,NewCheckTrade,You have received a Trade Request from<br>$(0).<br>Would you like to open a reply window?
 Notice,1,NewCheckTeam,戀爀㸀⨀䤀昀 礀漀甀 猀攀氀攀挀琀 ∀一漀Ⰰ∀ 礀漀甀 挀愀渀 愀氀猀漀 猀攀渀搀 愀 爀攀瀀氀礀 氀愀琀攀爀 㰀戀爀㸀戀礀 猀攀氀攀挀琀椀渀最 ∀䄀氀氀椀愀渀挀攀 䌀漀洀洀愀渀搀猀∀ 椀渀 琀栀攀 䴀愀椀渀 䴀攀渀甀⸀
-Notice,1,PremiumEnd,Your Premium Status is about to expire.
+Notice,1,PremiumEnd,Su estado Premium esta a punto de expirar.
 Notice,1,NewQuest,Confirm Quest Acceptance
 Notice,1,NewExpQuest,You have been invited to join a quest.
 Notice,1,Unavailable_ToastMessage1,This item cannot be used on this platform.
 Notice,1,Unavailable_ToastMessage2,Temporarily changing the external appearance of items that cannot be displayed on this platform.
-Notice,1,Unavailable_ToastMessage3,This Emote cannot be used on this platform.
-Notice,1,Unavailable_ToastMessage4,This Mag Form cannot be selected on this platform.
-Notice,1,Unavailable_ToastMessage5,"Part of the external appearance will be changed, as an item that cannot be displayed on this platform is displayed."
+Notice,1,Unavailable_ToastMessage3,Este emote no se puede usar en esta plataforma.
+Notice,1,Unavailable_ToastMessage4,Este Mag Form no puede ser elegido en esta plataforma.
+Notice,1,Unavailable_ToastMessage5,"Se cambia la apariencia temporalmente, ya que se muestra un item que no se puede visualizar en esta plataforma."
 Web,0,AccessConfirm_Vita,Webページへ移動します。<br>ログアウトしてゲームを終了しますが<br>よろしいですか？
 Web,0,AccessConfirmTitle_Vita,ブラウザー起動確認
 Save,0,Broken_Vita,ロードに失敗しました。<br>$(0)データが破損していた為<br>新しいセーブデータを上書きしました。
@@ -3256,8 +3260,8 @@ Save,0,Type_4,ポートレート
 Save,0,Initialize,セーブデータ作成中...$(0)％
 Save,0,Type_5,ウィンドウ設定
 Save,1,Broken_Vita,Loading failed.<br>$(0)New save data has been overwritten<br>due to data corruption.
-Save,1,Type_1,Options
-Save,1,Type_2,System
+Save,1,Type_1,Opciones
+Save,1,Type_2,Sistema
 Save,1,Type_3,Create
 Save,1,Type_4,Portrait
 Save,1,Initialize,Creating save data...$(0)%
@@ -3289,9 +3293,9 @@ LoginHistory,0,Thursday,木
 LoginHistory,0,Friday,金
 LoginHistory,0,Saturday,土
 LoginHistory,1,title,Login History (Past 50 Logins)
-LoginHistory,1,login_history_date,Login Date & Time
-LoginHistory,1,login_history_ip,IP Address
-LoginHistory,1,login_history_status,Status
+LoginHistory,1,login_history_date,Fecha y hora de acceso
+LoginHistory,1,login_history_ip,Direccion IP de conexion
+LoginHistory,1,login_history_status,Estatus
 LoginHistory,1,login_history_supplement,*Please contact Support in the event of an unfamiliar <yellow>login<c>.*
 LoginHistory,1,State_OK,<green>Logged in.<c>
 LoginHistory,1,State_OK_PcAuth,<red>Email address confirmed.<c>
@@ -3299,18 +3303,18 @@ LoginHistory,1,State_Error_Account,<yellow>Login error.<c>
 LoginHistory,1,State_Error_PcAuth,<yellow>Email authentication error.<c>
 LoginHistory,1,State_Error_PcAuth_send,<yellow>Authentication email sent.<c>
 LoginHistory,1,State_Error_OTP,<yellow>One-time password error.<c>
-LoginHistory,1,State_Reject_Maintenance,Maintenance in progress.
-LoginHistory,1,State_Reject_System,Unable to login.
+LoginHistory,1,State_Reject_Maintenance,Habia en curso mantenimiento
+LoginHistory,1,State_Reject_System,No pudo logarse
 LoginHistory,1,NoDataError,Unable to obtain information.
 LoginHistory,1,IPAddress,$(0).$(1).$(2).$(3)
 LoginHistory,1,DateWeek,$(1) - $(2) - $(0)
 LoginHistory,1,DateWeek_v,$(0)/$(1)/$(2)/($(3))
 LoginHistory,1,DateTime,$(0) : $(1)
 LoginHistory,1,DateTime_v,$(0):$(1)
-LoginHistory,1,Sunday,Sun.
-LoginHistory,1,Monday,Mon.
-LoginHistory,1,Tuesday,Tues.
-LoginHistory,1,Wednesday,Wed.
+LoginHistory,1,Sunday, Domingo.
+LoginHistory,1,Monday, Lunes.
+LoginHistory,1,Tuesday, Martes.
+LoginHistory,1,Wednesday, Miercoles.
 LoginHistory,1,Thursday,Thurs.
 LoginHistory,1,Friday,Fri.
 LoginHistory,1,Saturday,Sat.
@@ -3399,7 +3403,7 @@ SecondPassword,1,Edit_Title,Register 2nd Password
 SecondPassword,1,Edit_Text,Please enter your 2nd Password. (<yellow>5 digits<c>)
 SecondPassword,1,Edit_Menu1,Password
 SecondPassword,1,Edit_Menu2,Reenter
-SecondPassword,1,Edit_Notice,Ⰰ 瀀氀攀愀猀攀 攀渀琀攀爀 礀漀甀爀 ㈀渀搀 倀愀猀猀眀漀爀搀㰀戀爀㸀甀猀椀渀最 礀漀甀爀 洀漀甀猀攀 愀渀搀 琀栀攀 戀甀琀琀漀渀猀 搀椀猀瀀氀愀礀攀搀 漀渀 琀栀攀 爀椀最栀琀⸀
+SecondPassword,1,Edit_Notice,"La contraseйa registrada se necesaria para comerciar con los articulos. Devido a razones de seguridad, insertala utilizando el mouse desde el boton a la derecha. "
 SecondPassword,1,Edit_NoticeV,Your 2nd Password will be required<br>whenever you conduct an item transaction.
 SecondPassword,1,Edit_Button1,Confirm
 SecondPassword,1,Edit_Button2,Cancel
@@ -3408,8 +3412,8 @@ SecondPassword,1,Edit_KeyShow,Display
 SecondPassword,1,Edit_KeyHide,Hide
 SecondPassword,1,Error_Title,2nd Password
 SecondPassword,1,Error_Button1,Confirm
-SecondPassword,1,Input_Error_Text1,Please reenter your 2nd Password.
-SecondPassword,1,Input_Error_Text2,Please reenter your new 2nd Password.
+SecondPassword,1,Input_Error_Text1,"Por favor, ingrese la misma contraseйa."
+SecondPassword,1,Input_Error_Text2,"Por favor, ingrese la misma contraseйa de nuevo."
 SecondPassword,1,Input_Error_Text3,La contraseña que ingresó es incorrecta.
 SecondPassword,1,Complete_Title,Registre una segunda contraseña
 SecondPassword,1,Complete_Text,Se ha registrado una segunda contraseña.
@@ -3419,7 +3423,7 @@ SecondPassword,1,Edit_Error_Button1,Confirmar
 SecondPassword,1,Entry_Title,Ingrese la segunda contraseña
 SecondPassword,1,Entry_Text,Por favor ingrese su segunda contraseña. (<yellow>5 dígitos<c>)
 SecondPassword,1,Entry_Menu1,Contraseña
-SecondPassword,1,Entry_Notice,攀琀⸀∀
+SecondPassword,1,Entry_Notice,
 SecondPassword,1,Entry_NoticeV,"Olvidó su segunda contraseña, <br>, seleccione la opción ""Segunda contraseña"" en el manual en línea. <c>"
 SecondPassword,1,Entry_Button1,Confirmar
 SecondPassword,1,Entry_Button2,Cancelar
@@ -3438,7 +3442,7 @@ SecondPassword,1,Change_NoticeV,"><br>Para restablecer su segunda contraseña,<b
 SecondPassword,1,Change_Button2,Cancelar
 SecondPassword,1,Change2_Title,Confirmar
 SecondPassword,1,Change2_Text,Se cambiará su segunda contraseña.<br>¿Está seguro de que desea continuar?
-SecondPassword,1,Change2_Button1,Sí
+SecondPassword,1,Change2_Button1,Si
 SecondPassword,1,Change2_Button2,No
 SecondPassword,1,Changed_Title,Cambiar la segunda contraseña
 SecondPassword,1,Changed_Text,Su segunda contraseña ha sido cambiada.
@@ -3452,7 +3456,7 @@ SecondPassword,1,Remove_Button1,Borrar
 SecondPassword,1,Remove_Button2,Cancelar
 SecondPassword,1,Remove2_Title,Confirmar
 SecondPassword,1,Remove2_Text,Su segunda contraseña será eliminada.<br>¿Está seguro de que desea continuar?
-SecondPassword,1,Remove2_Button1,Sí
+SecondPassword,1,Remove2_Button1,Si
 SecondPassword,1,Remove2_Button2,No
 SecondPassword,1,Removed_Title,Eliminar la segunda contraseña
 SecondPassword,1,Removed_Text,Su segunda contraseña ha sido eliminada.
@@ -3497,7 +3501,7 @@ ShipBattle,1,GmMsgF_000,"¡Atención! El $(0)/$(1), a las $(2):$(3), está progr
 ShipBattle,1,GmMsgF_001,¡Atención! La ronda $(1) del concurso ARKS Ship No. $(0) está actualmente en marcha. Deseamos a todos los competidores la mejor de las suertes.
 ShipBattle,1,GmMsgF_002,"¡Atención! La ronda $(4) comenzará en $(0)/$(1) en $(2):$(3). Participantes, hagan todos los preparativos necesarios."
 ShipBattle,1,GmMsgF_004,愀爀攀 愀渀渀漀甀渀挀攀搀⸀ 吀栀愀渀欀猀 琀漀 攀瘀攀爀礀漀渀攀 昀漀爀 礀漀甀爀 瀀愀爀琀椀挀椀瀀愀琀椀漀渀 愀渀搀 瀀愀琀椀攀渀挀攀⸀
-ShipBattle,1,GmMsgF_005,攀猀攀渀琀攀搀 椀渀 昀爀漀渀琀 漀昀 琀栀攀 䰀漀戀戀礀 䴀漀渀椀琀漀爀 椀渀 琀栀攀 匀栀漀瀀瀀椀渀最 倀氀愀稀愀⸀ 夀漀甀爀 瀀爀攀猀攀渀挀攀 椀猀 爀攀焀甀攀猀琀攀搀⸀ 伀瘀攀爀⸀
+ShipBattle,1,GmMsgF_005,"Informe: El $(0) mes, el $(1) dia a las $(2):$(3) horas, en el area de la tienda, se llevara a cabo la presentacion de los resultados de la ultima ronda."
 ShipBattle,1,GmMsgF_006,Deseamos extender nuestro más sincero agradecimiento a todos nuestros competidores.
 ShipBattle,1,GmMsgF_007,0)/$(1) en $(2):$(3) frente al Monitor del Lobby en el Shopping Plaza. Esperamos verte allí.
 PetKind,0,PetKind00001,Wanda
@@ -3520,7 +3524,7 @@ PetKind,1,PetKind00003,Salida
 PetKind,1,PetKind00004,marrón
 PetKind,1,PetKind00005,Melón
 PetKind,1,PetKind00006,Viola
-PetKind,1,PetKind00007,rapero
+PetKind,1,PetKind00007,Rapero
 PetKind,1,PetKind00008,Hablar
 PetKind,1,PetKind00009,jinga
 PetKind,1,PetKind00010,aero
@@ -3541,13 +3545,13 @@ ShipName,0,Ship10,Ship10:ナウシズ
 ShipName,1,Ship01,Barco 01: Feoh
 ShipName,1,Ship02,Barco 02: Ur
 ShipName,1,Ship03,Barco 03: Espina
-ShipName,1,Ship04,Barco 04: Ansur
+ShipName,1,Ship04,Ship 04: Ansur
 ShipName,1,Ship05,Barco 05: Laguz
-ShipName,1,Ship06,Barco 06: Kenaz
-ShipName,1,Ship07,Barco 07: Gyfu
-ShipName,1,Ship08,Barco 08: Wynn
-ShipName,1,Ship09,Barco 09: Hagall
-ShipName,1,Ship10,Barco 10: Naudiz
+ShipName,1,Ship06,Ship 06: Kenaz
+ShipName,1,Ship07,Ship 07: Gyfu
+ShipName,1,Ship08,Ship 08: Wynn
+ShipName,1,Ship09,Ship 09: Hagall
+ShipName,1,Ship10,Ship 10: Naudiz
 DebugShipName,0,Self01_01,Self01_01
 DebugShipName,0,Self01_02,Self01_02
 DebugShipName,0,Self02_01,Self02_01
@@ -3648,13 +3652,13 @@ QuickCharge,1,AcQuickChargeCoin,$(0) <pict Arcscash>
 QuickCharge,1,AcQuickChargePrice,$(0)
 QuickCharge,1,AcQuickChargeTitle,Confirmar carga rápida de CA
 QuickCharge,1,AcQuickChargeMessage,爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀㰀戀爀㸀㰀戀爀㸀䄀䌀 䌀栀愀爀最攀 䄀洀漀甀渀琀㨀 ␀⠀　⤀㰀戀爀㸀倀爀椀挀攀㨀 ␀⠀㄀⤀
-QuickCharge,1,AcQuickChargeCompTitle,Carga rápida de CA
+QuickCharge,1,AcQuickChargeCompTitle,Carga rapida de CA
 QuickCharge,1,AcQuickChargeComp,<pict Arcscash> Carga rápida de CA completa.
 QuickCharge,1,AcChargeComp,<pict Arcscash> $(0)Carga AC completa.
 QuickCharge,1,AcQuickChargeErrorTitle,Error de carga de CA
 QuickCharge,1,AcQuickChargeError,La carga rápida de CA falló.
-QuickCharge,1,MenuCharge,Carga rápida de CA
-QuickCharge,1,MenuButtonChargeGo,Compra a través de AC Quick Charge.
+QuickCharge,1,MenuCharge,Carga rapida de CA
+QuickCharge,1,MenuButtonChargeGo,Compra a traves de AC Quick Charge.
 QuickCharge,1,MenuButtonChancel,Cancelar
 QuickCharge,1,MenuButtonWebGo,Cobrar desde la página web
 QuickCharge,1,MenuButtonPsStoreGo,Compra aire acondicionado en PlayStation® Store
@@ -3665,7 +3669,7 @@ QuickCharge,1,Quick_Guide,Hablar
 QuickCharge,1,Quick_Guide_PS4,欀 䌀栀愀爀最攀⸀∀㰀戀爀㸀㰀戀爀㸀夀漀甀 挀愀渀 愀氀猀漀 猀攀氀攀挀琀㰀戀爀㸀∀䌀栀愀爀最攀 昀爀漀洀 倀氀愀礀匀琀愀琀椀漀渀글 匀琀漀爀攀⸀∀
 QuickCharge,1,ACChargeSelect_Title,Hola.
 QuickCharge,1,ACChargeSelect_Message,Seleccione su método de compra de CA.
-QuickCharge,1,ACChargeSelect_Button_Quick,Carga rápida de CA
+QuickCharge,1,ACChargeSelect_Button_Quick,Carga rapida de CA
 QuickCharge,1,ACChargeSelect_Button_Web,Cargar con SEGA ID
 QuickCharge,1,ACChargeSelect_Button_LinePay,Cargar con <pict linepay_icon>
 QuickCharge,1,ACChargeSelect_Button_NeShop,Cargar desde Nintendo eShop
@@ -3673,19 +3677,19 @@ QuickCharge,1,ACChargeSelect_Desc_Quick,Configurar AC Quick Charge te permite<br
 QuickCharge,1,ACChargeSelect_Desc_Web,"Después de configurar AC Quick Charge,<br>podrás<br>cargar AC en el juego."
 QuickCharge,1,ACChargeSelect_Desc_NeShop,Cargar CA desde Nintendo eShop
 QuickCharge,1,PayCharge_MenuTitle,Cobrar con LINE Pay
-QuickCharge,1,PayCharge_MenuQRButton,Próximo
-QuickCharge,1,PayCharge_MenuReturnButton,Atrás
+QuickCharge,1,PayCharge_MenuQRButton,Proximo
+QuickCharge,1,PayCharge_MenuReturnButton,Atras
 QuickCharge,1,PayCharge_MenuExplain,"Seleccione cómo desea<br>cargar CA y presione ""Siguiente""."
 QuickCharge,1,PayCharge_MenuDetails,一䔀 倀愀礀Ⰰ㰀戀爀㸀礀漀甀 洀甀猀琀 栀愀瘀攀 䰀䤀一䔀 椀渀猀琀愀氀氀攀搀 漀渀 礀漀甀爀 猀洀愀爀琀瀀栀漀渀攀Ⰰ㰀戀爀㸀琀愀戀氀攀琀Ⰰ 漀爀 漀琀栀攀爀 搀攀瘀椀挀攀⸀㰀戀爀㸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀䤀渀猀琀愀氀氀 䰀䤀一䔀 栀攀爀攀⸀㰀挀㸀
 QuickCharge,1,PayCharge_QRTitle,Cobrar con LINE Pay
 QuickCharge,1,PayCharge_QRExplainDown,Code No.: $(0)
-QuickCharge,1,PayCharge_RedrawYes,Refresh
+QuickCharge,1,PayCharge_RedrawYes,Actualizacion
 QuickCharge,1,PayCharge_RedrawNo,Cancel
-QuickCharge,1,PayCharge_AgeCheckTitle,Notice
-QuickCharge,1,PayCharge_AgeCheckMessage,㸀䤀昀 礀漀甀 栀愀瘀攀 瀀攀爀洀椀猀猀椀漀渀㰀戀爀㸀漀爀 愀爀攀 渀漀琀 愀 洀椀渀漀爀Ⰰ 瀀氀攀愀猀攀 瀀爀攀猀猀㰀戀爀㸀∀䄀挀挀攀瀀琀 愀渀搀 䌀漀渀琀椀渀甀攀⸀∀
-QuickCharge,1,PayCharge_AgeCheckYes,Accept and Continue
+QuickCharge,1,PayCharge_AgeCheckTitle,Atencion del usuario
+QuickCharge,1,PayCharge_AgeCheckMessage,"<p>Nos es indispensable tener el permiso de un padre o madre para realizar una carga en el AC si no hemos cumplido los <strong>20</strong> aйos. Si ya tenemos permiso o ya hemos cumplido los <strong>20</strong>, haga clic en ""Continuar"".</p>"
+QuickCharge,1,PayCharge_AgeCheckYes,Acepta y Continua
 QuickCharge,1,PayCharge_AgeCheckNo,Back
-QuickCharge,1,PayCharge_ChargeErrorTitle,Confirm AC Charge
+QuickCharge,1,PayCharge_ChargeErrorTitle,Confirmar Carga AC
 QuickCharge,1,PayCharge_ChargeErrorMessage,Your charge could not be completed<br>due to a communication error.<br>Please try again.
 PlayGo,0,download_progress,インストール中：$(0)％
 PlayGo,0,PlayGo_AreaMove_Message,移動先のエリアのインストールが完了していません。<br>インストールが完了してから、<br>アクセスし直してください。<br><br>インストール中：$(0)％
