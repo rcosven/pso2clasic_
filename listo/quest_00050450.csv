@@ -2,30 +2,30 @@ section,group,id,text
 Basic,0,Title,来襲せし虚なる深遠の躯
 Basic,0,Explanation,アークス各員に緊急連絡。<br>ダークファルス【巨躯】による<br>アークスシップへの襲撃が開始された。<br>また、侵食された旧マザーシップ内からも<br>強大なダーカー反応が確認されている。<br>事態は深刻だ。各員、準備が出来次第<br>【巨躯】の襲撃を速やかに阻止し<br>旧マザーシップに現れた敵を迎撃せよ。<br>――――――――――――――――――――<br>失敗条件/任務の失敗、制限時間の経過
 Basic,1,Title,Asalto del Anciano del Abismo
-Basic,1,Explanation,"Urgent message for all ARKS operatives. Dark Falz,<br>in the form of Elder the Gargantuan, has started his<br>assault on the ARKS Ship. We have also picked up<br>strong Falspawn readings from the corrupted old<br>Mothership. All hands prepare to intercept Elder the<br>Gargantuan with all speed and take care of any<br>enemies present on the old Mothership.<br>----------------------------------------<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit."
+Basic,1,Explanation,"Mensaje urgente para todos los operativos de ARKS. Falz oscuro,<br>en la forma de Elder the Gargantuan, ha comenzado su<br>asalto al barco ARKS. También hemos recogido<br>fuertes lecturas de Falspawn de los viejos corruptos<br>Nave nodriza. Todos los tripulantes se preparan para interceptar al Anciano.<br>Gigantesco a toda velocidad y ocúpate de cualquier<br>enemigos presentes en la antigua nave nodriza.<br><br>Fallarás en esta misión si no cumples con tu<br>objetivos de la misión o excedes el límite de tiempo."
 QuestTarget,0,SimpleExplanation,二体のダークファルスを撃破せよ！
 QuestTarget,1,SimpleExplanation,¡Derrota ambas manifestaciones de Dark Falz!
 AreaName,0,Area0S,アークスシップ残骸
 AreaName,0,Area0L,アークスシップ残骸　アークスシップ残骸・甲板エリア１
 AreaName,0,Area1S,侵食マザーシップ
 AreaName,0,Area1L,侵食マザーシップ マザーシップ内部エリア１
-AreaName,1,Area0S,Restos del Ship ARKS
-AreaName,1,Area0L,Restos del barco ARKS - Naufragio ARKS - Area de cubierta
-AreaName,1,Area1S,Ship corrupta
-AreaName,1,Area1L,Nave nodriza corrupta - Area interior de la nave nodriza 1
+AreaName,1,Area0S,Restos del barco ARKS
+AreaName,1,Area0L,Restos del barco ARKS - Naufragio ARKS - Área de cubierta
+AreaName,1,Area1S,Nave nodriza corrupta
+AreaName,1,Area1L,Nave nodriza corrupta - Área interior de la nave nodriza 1
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AcceptCondition,0,a4,スーパーハード受注許可証の所持
-AcceptCondition,1,a1,Complete a special Client Order
-AcceptCondition,1,a2,Complete a special Client Order
-AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
-AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
 PreTransportDirection,0,NpcComMsg1,準備はできたようだな。<br>これから恐らくダークファルスの<br>連戦となることが予想される……
 PreTransportDirection,0,NpcComMsg2,まずは【巨躯】の正面へ転送する。<br>すみやかに撃退し、次に備えてくれ。<br>厳しい戦いとなるが……必ず生還しろ。
-PreTransportDirection,1,NpcComMsg1,Looks like you're ready now.<br>You will likely have to engage Dark Falz in a<br>series of battles...
-PreTransportDirection,1,NpcComMsg2,I'm going to teleport you in front of Elder the<br>Gargantuan first. Defeat him quickly and get<br>ready for the next battle. It's not going to be<br>easy but... I have faith you will return.
+PreTransportDirection,1,NpcComMsg1,Parece que ya estás listo.<br>Probablemente tendrás que enfrentarte a Dark Falz en un<br>serie de batallas...
+PreTransportDirection,1,NpcComMsg2,Voy a teletransportarte frente al Anciano<br>Gigantesco primero. Derrótalo rápidamente y consigue<br>listo para la próxima batalla. no va a ser<br>fácil pero... tengo fe que volverás.
 PreTransportDirection1,0,NpcComMsg1,【敗者】が姿を現したようです。<br>これからダークファルスの元に<br>転送を行います。
 PreTransportDirection1,0,NpcComMsg2,【巨躯】との戦いで疲弊した皆さんを<br>私は……送り出すことしかできません。<br>……どうか、どうか無事に帰還を。
-PreTransportDirection1,1,NpcComMsg1,La derrota de la oscuridad profunda
-PreTransportDirection1,1,NpcComMsg2,Cielos de Naverius
+PreTransportDirection1,1,NpcComMsg1,Lutero el Caído finalmente se ha mostrado.<br>Iniciando teletransportación a Dark Falz's<br>ubicación momentáneamente.
+PreTransportDirection1,1,NpcComMsg2,"Todos deben estar exhaustos después de la batalla.<br>con el anciano el gigantesco<br>Yo... me temo que no puedo hacer mucho más que arreglar<br>para teletransportación.<br>...Pase lo que pase, vuelve sano y salvo."
