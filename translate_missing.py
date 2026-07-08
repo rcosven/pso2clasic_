@@ -239,6 +239,16 @@ def pull_from_github() -> None:
         log("Nuevos archivos descargados correctamente.")
 
 
+def has_local_changes() -> bool:
+    status = subprocess.run(
+        ["git", "status", "--porcelain", "listo", "archivos a traducir", "Cuarentena", "translation_cache.json"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    return bool(status.stdout.strip())
+
+
 def push_to_github() -> bool:
     subprocess.run(["git", "add", "-A", "listo"], cwd=REPO_DIR, check=False)
     subprocess.run(["git", "add", "-A", "archivos a traducir"], cwd=REPO_DIR, check=False)
@@ -371,6 +381,9 @@ def main() -> None:
     while True:
         if git_ready:
             pull_from_github()
+            if has_local_changes():
+                log("Cambios locales sin subir detectados, haciendo push...")
+                push_to_github()
         fix_broken_tags()
 
         cambios = process_next_file(cache)
