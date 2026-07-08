@@ -1,6 +1,7 @@
 [build]
 builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
+watchPatterns = ["Dockerfile", "requirements.txt", "translate_missing.py", "railway.toml"]
 
 [deploy]
 startCommand = "python translate_missing.py"
