@@ -214,6 +214,10 @@ def setup_git() -> bool:
         log(f"Error al conectar con GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
         return False
 
+    if has_local_changes():
+        log("Guardando trabajo local antes de sincronizar rama...")
+        push_with_retry()
+
     checkout = subprocess.run(
         ["git", "checkout", "-B", GITHUB_BRANCH, f"origin/{GITHUB_BRANCH}"],
         cwd=REPO_DIR,
@@ -228,15 +232,40 @@ def setup_git() -> bool:
     return True
 
 
-def pull_from_github() -> None:
-    res = subprocess.run(
-        ["git", "pull", "origin", GITHUB_BRANCH],
+def push_with_retry(max_attempts: int = 3) -> bool:
+    for intento in range(1, max_attempts + 1):
+        if push_to_github():
+            return True
+        if intento < max_attempts:
+            log(f"Reintentando push ({intento}/{max_attempts})...")
+            time.sleep(5)
+    log("CRITICO: No se pudo subir a GitHub tras varios intentos.")
+    return False
+
+
+def sync_github() -> bool:
+    """Primero PUSH (guardar), luego PULL (traer nuevos). Nunca pull si push fallo."""
+    if has_local_changes():
+        log("Subiendo cambios locales a GitHub antes del pull...")
+        if not push_with_retry():
+            log("CRITICO: Pull cancelado para no perder progreso local.")
+            return False
+
+    pull = subprocess.run(
+        ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
         cwd=REPO_DIR,
         capture_output=True,
         text=True,
     )
-    if "Already up to date" not in res.stdout.strip() and res.returncode == 0:
-        log("Nuevos archivos descargados correctamente.")
+    if pull.returncode != 0:
+        log(f"Error en pull: {pull.stderr.strip() or pull.stdout.strip()}")
+        return False
+
+    if "Already up to date" in pull.stdout:
+        log("Pull: repositorio actualizado.")
+    else:
+        log("Pull completado: nuevos archivos descargados de GitHub.")
+    return True
 
 
 def has_local_changes() -> bool:
@@ -372,18 +401,16 @@ def main() -> None:
     git_ready = setup_git()
     if git_ready:
         log("GitHub: listo para pull/push.")
+        sync_github()
     else:
-        log("GitHub: NO disponible (solo traduce local en el contenedor).")
+        log("CRITICO: GitHub no disponible. El progreso NO se guardara en la nube.")
 
     cache = load_cache()
     modificaciones = 0
 
     while True:
         if git_ready:
-            pull_from_github()
-            if has_local_changes():
-                log("Cambios locales sin subir detectados, haciendo push...")
-                push_to_github()
+            sync_github()
         fix_broken_tags()
 
         cambios = process_next_file(cache)
@@ -391,13 +418,13 @@ def main() -> None:
             modificaciones += cambios
             log(f"Modificaciones acumuladas: {modificaciones}/{PUSH_CADA}")
             if not git_ready:
-                log("Aviso: cambios sin subir (Git no configurado).")
+                log("CRITICO: archivo traducido pero Git no configurado.")
             elif modificaciones >= PUSH_CADA:
-                if push_to_github():
+                if push_with_retry():
                     modificaciones = 0
         elif git_ready and modificaciones > 0:
             log(f"Sin pendientes. Guardando {modificaciones} cambios restantes...")
-            if push_to_github():
+            if push_with_retry():
                 modificaciones = 0
 
         log(f"Esperando {TIEMPO_ESPERA / 60} minutos...")
