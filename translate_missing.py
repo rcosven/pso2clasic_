@@ -26,7 +26,7 @@ LOG = Path("/app/translate_missing.log")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 TIEMPO_ESPERA = int(os.getenv("TIEMPO_ESPERA", "600"))
-PUSH_CADA = int(os.getenv("PUSH_CADA", "10"))
+PUSH_CADA = int(os.getenv("PUSH_CADA", "1"))
 
 FIELDNAMES = ["section", "group", "id", "text"]
 SKIP_IDS = {"name01", "name02"}
