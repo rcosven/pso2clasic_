@@ -26,6 +26,7 @@ LOG = Path("/app/translate_missing.log")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 TIEMPO_ESPERA = int(os.getenv("TIEMPO_ESPERA", "600"))
+PUSH_CADA = int(os.getenv("PUSH_CADA", "10"))
 
 FIELDNAMES = ["section", "group", "id", "text"]
 SKIP_IDS = {"name01", "name02"}
@@ -249,7 +250,7 @@ def push_to_github() -> None:
     subprocess.run(["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
 
 
-def process_one_file(filename: str, cache: dict[str, str], git_ready: bool) -> int:
+def process_one_file(filename: str, cache: dict[str, str]) -> int:
     input_path = INPUT_DIR / filename
     output_path = OUTPUT_DIR / filename
     raw_path = RAW_DIR / filename
@@ -262,7 +263,7 @@ def process_one_file(filename: str, cache: dict[str, str], git_ready: bool) -> i
         log(f"AISLADO: {filename} vacio, movido a Cuarentena.")
         QUARANTINE_DIR.mkdir(exist_ok=True)
         shutil.move(str(input_path), str(QUARANTINE_DIR / filename))
-        return 0
+        return 1
 
     raw_rows = read_csv(raw_path)
     raw_g1 = {(r["section"], r["id"]): r["text"] for r in raw_rows if r["group"] == "1"}
@@ -293,14 +294,11 @@ def process_one_file(filename: str, cache: dict[str, str], git_ready: bool) -> i
     input_path.unlink(missing_ok=True)
     save_cache(cache)
     log(f"OK -> listo/{filename} ({len(g1_rows)} filas group=1)")
-
-    if git_ready:
-        push_to_github()
-
-    return len(g1_rows)
+    return 1
 
 
-def process_translations(cache: dict[str, str], git_ready: bool) -> int:
+def process_next_file(cache: dict[str, str]) -> int:
+    """Traduce un solo archivo. Retorna 1 si hubo cambio, 0 si no hay pendientes."""
     INPUT_DIR.mkdir(exist_ok=True)
     OUTPUT_DIR.mkdir(exist_ok=True)
     QUARANTINE_DIR.mkdir(exist_ok=True)
@@ -310,35 +308,44 @@ def process_translations(cache: dict[str, str], git_ready: bool) -> int:
         log("No hay archivos pendientes en 'archivos a traducir/'.")
         return 0
 
-    log(f"Pendientes: {len(pending)}")
-    total = 0
-    for file_path in pending:
-        try:
-            total += process_one_file(file_path.name, cache, git_ready)
-        except Exception as exc:
-            save_cache(cache)
-            log(f"ERROR en {file_path.name}: {exc}")
-            if (OUTPUT_DIR / file_path.name).exists():
-                file_path.unlink(missing_ok=True)
-    return total
+    filename = pending[0].name
+    log(f"Pendientes: {len(pending)} | Procesando: {filename}")
+    try:
+        return process_one_file(filename, cache)
+    except Exception as exc:
+        save_cache(cache)
+        log(f"ERROR en {filename}: {exc}")
+        if (OUTPUT_DIR / filename).exists():
+            (INPUT_DIR / filename).unlink(missing_ok=True)
+        return 0
 
 
 def main() -> None:
     LOG.write_text("", encoding="utf-8")
     log("=== Traductor PSO2 ES (Google Translate + Railway + GitHub) ===")
+    log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} modificaciones")
 
     git_ready = setup_git()
     cache = load_cache()
+    modificaciones = 0
 
     while True:
         if git_ready:
             pull_from_github()
         fix_broken_tags()
-        processed = process_translations(cache, git_ready)
-        if processed:
-            log(f"Ciclo completado: {processed} filas traducidas.")
-        else:
-            log("Ciclo sin traducciones nuevas.")
+
+        cambios = process_next_file(cache)
+        if cambios:
+            modificaciones += cambios
+            log(f"Modificaciones acumuladas: {modificaciones}/{PUSH_CADA}")
+            if git_ready and modificaciones >= PUSH_CADA:
+                push_to_github()
+                modificaciones = 0
+        elif git_ready and modificaciones > 0:
+            log(f"Sin pendientes. Guardando {modificaciones} cambios restantes...")
+            push_to_github()
+            modificaciones = 0
+
         log(f"Esperando {TIEMPO_ESPERA / 60} minutos...")
         time.sleep(TIEMPO_ESPERA)
 
