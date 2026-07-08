@@ -41,7 +41,7 @@ PartnerCustom,1,PresentEquipment,Current Equipment
 PartnerCustom,1,SwitchVita,Switch <pict Sign_TRIANGLE>
 Leave,0,LeaveMessage,サポートパートナーに席を外させ、<br>一時的に部屋にいない状態にできます。<br><br>「サポートパートナーを呼び出す」を選ぶと<br>ふたたび呼び戻すことができます。<br><br>席を外させますか？
 Leave,0,LeaveMessage2,席を外させました。
-Leave,1,LeaveMessage,戀礀㰀戀爀㸀猀攀氀攀挀琀椀渀最 嬀匀甀洀洀漀渀 䄀甀砀椀氀椀愀爀礀崀⸀㰀戀爀㸀㰀戀爀㸀䐀漀 礀漀甀 眀愀渀琀 琀漀 琀攀洀瀀漀爀愀爀椀氀礀 搀椀猀洀椀猀猀 礀漀甀爀 䄀甀砀椀氀椀愀爀礀㼀
+Leave,1,LeaveMessage,¿Quieres sacar a tu Soporte temporalmente de la habitacion? Si lo eliges puedes volver a llamarlo.
 Leave,1,LeaveMessage2,Your Auxiliary left.
 Result,0,ReceiptMessage,$(0)から<br>以下のアイテムを受け取りました。
 Result,0,GetExpTitle,取得経験値
@@ -60,7 +60,7 @@ Result,1,GetExp,EXP Earned This Time
 Result,1,Exp,EXP
 Result,1,Level,Lv.
 Result,1,NextLevel,Until Next Level
-Result,1,QuestTitle,SEARCH RESULTS
+Result,1,QuestTitle,Resultados de la exploracion
 Result,1,QuestOrder,Orders Assisted
 Result,1,ItemTitle,ACQUIRED ITEMS RECEIVED
 Result,1,Success,Success
@@ -138,11 +138,11 @@ Menu,1,Explain_Return,<c f0df60>Temporarily dismisses your Auxiliary.<c>
 Menu,1,Explain_Back,<space>
 Menu,1,Explain_Pose,<c f0df60>You can choose your Auxiliary's pose.<c>
 Menu,1,AccessMenu_Title,AUXILIARY MENU
-Menu,1,AccessMenu_Order,Send on Search
+Menu,1,AccessMenu_Order,Envia a explorar
 Menu,1,AccessMenu_OrderCancel,Cancel Search
 Menu,1,AccessMenu_Status,View Auxiliary Information
 Menu,1,AccessMenu_Talk,Talk
-Menu,1,AccessMenu_Equip,Customize Equipment
+Menu,1,AccessMenu_Equip,Equipacion a medida
 Menu,1,AccessMenu_Move,Move Furnishings
 Menu,1,AccessMenu_Return,Dismiss Temporarily
 Menu,1,AccessMenu_Back,Leave
@@ -150,17 +150,17 @@ Menu,1,AccessMenu_SubClass,Set Sub-Class
 Menu,1,AccessMenu_Pose,Select Pose
 Menu,1,Pose_FormTitle,SELECT POSE
 Menu,1,Warehouse,Open Storage
-Menu,1,MyRoomMenu_Order,Send on Search
+Menu,1,MyRoomMenu_Order,Envia a explorar
 Menu,1,MyRoomMenu_OrderCancel,Cancel Search
 Menu,1,MyRoomMenu_OrderResult,Report Search Results
 Menu,1,MyRoomMenu_Status,View Auxiliary Information
-Menu,1,DictatePartner,Send on Search
-Menu,1,OrderSelect,Select Order
-Menu,1,PartnerStart,Send on Search
+Menu,1,DictatePartner,Envia a explorar
+Menu,1,OrderSelect,Selecciona la orden
+Menu,1,PartnerStart,Envia a explorar
 Menu,1,PartnerCancel,Cancel Search
-Menu,1,PartnerOverStartMessage,"would like to select this order, please deselect some other order."
-Menu,1,PartnerStartMessage,戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 猀攀渀搀 礀漀甀爀 䄀甀砀椀氀椀愀爀礀 漀甀琀 眀椀琀栀 琀栀攀猀攀 漀爀搀攀爀猀㼀
-Menu,1,PartnerStartMessage2,Your Auxiliary has been sent.
+Menu,1,PartnerOverStartMessage,"Una vez, el numero de ordenes que puedo ayudar es<br>$(0) items. <br> Si deseas seleccionar esta orden, <br> por favor deseleccione al menos una otra orden."
+Menu,1,PartnerStartMessage,"Numero de ordenes que ayudare: $(0) items (hasta $(1))<br> Tiempo de finalizacion: $(2) minutos<br><br>Si es necesario, te enviare a explorar bajo estas condiciones.<br>¿Esta de acuerdo?"
+Menu,1,PartnerStartMessage2,Tu auxiliar ha sido enviado.
 Menu,1,PartnerFaliedMessage,r Auxiliary to assist you with from<br>the ones you have accepted.
 Menu,1,PartnerCancelMessage,攀挀攀椀瘀攀 椀琀攀洀猀 漀爀 䔀堀倀 攀愀爀渀攀搀 搀甀爀椀渀最 琀栀攀 猀攀愀爀挀栀 椀昀 礀漀甀 挀愀渀挀攀氀⸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀愀渀琀 琀漀 挀愀渀挀攀氀 琀栀攀 猀攀愀爀挀栀㼀
 Menu,1,PartnerCancelMessage2,Search canceled.
@@ -168,7 +168,7 @@ Menu,1,PartnerCancelMessage3,爀椀渀最 琀栀攀 猀攀愀爀挀栀 椀
 Menu,1,PartnerChangeJobMessage,Your Auxiliary's class will be changed to $(0) in order to equip this weapon.<br>Are you sure you wish to proceed?
 Menu,1,PartnerChangeJobError,Your Auxiliary can't be changed to a class that can equip this weapon.
 Menu,1,PartnerChangeEquipSuccess,Equipment changed.
-Menu,1,PartnerChangeEquipError1,Failed to change equipment.
+Menu,1,PartnerChangeEquipError1,Fallo el cambio de equipo.
 Menu,1,PartnerChangeEquipError2,You can't give your Auxiliary an item that you currently have equipped.
 Menu,1,PartnerChangeEquipError3,You can't give your Auxiliary an item that's been locked.
 Menu,1,PartnerChangeEquipError4,The equipment can't be changed due to race restrictions.
@@ -178,11 +178,11 @@ Menu,1,PartnerChangeEquipError7,The equipment can't be changed due to class-chan
 Menu,1,PartnerChangeEquipError8,Failed to change your Auxiliary's class.
 Menu,1,PartnerChangeEquipError9,Failed to change your Auxiliary's equipment.
 Menu,1,PartnerChangeEquipError10,Failed to process your Auxiliary's equipment change.
-Menu,1,PartnerChangeEquipError11,You can't give your Auxiliary an unappraised item.
-Menu,1,PartnerChangeEquipError12,The equipment can't be removed because there isn't enough room in your inventory.
-Menu,1,PartnerChangeSubclassSuccess,Sub-Class changed.
-Menu,1,PartnerChangeSubclassError,Failed to change your Auxiliary's Sub-Class.
-Menu,1,PartnerChangeSameSubclass,Current Sub-Class: $(0).
+Menu,1,PartnerChangeEquipError11,No se puede entregar un articulo sin valorar.
+Menu,1,PartnerChangeEquipError12,El equipo no se puede retirar debido a falta de espacio en la invencion.
+Menu,1,PartnerChangeSubclassSuccess,Sub-Class cambiada.
+Menu,1,PartnerChangeSubclassError,Fallo el cambio de Sub-Class del compaйero auxiliar.
+Menu,1,PartnerChangeSameSubclass,Sub-Class actual: $(0)
 Menu,1,StartCheckButton1,Send
 Menu,1,StartCheckButton2,Send (Keep image)
 Status,0,Leave,（あと $(0)）
@@ -194,4 +194,4 @@ SubClass,0,ClassLevel,Lv.(MAX)
 SubClass,1,SubClassSelectTitle,SELECT SUB-CLASS
 SubClass,1,SubClassChangeMessage,Are you sure you want to change your Auxiliary's Sub-Class<br>to $(0)?
 SubClass,1,ClassList,Class List
-SubClass,1,ClassLevel,Level (MAX)
+SubClass,1,ClassLevel,Nivel (MAX)
