@@ -1,0 +1,201 @@
+section,group,id,text
+EquipNote,0,EquipNoteCheckSheet,シートを確認
+EquipNote,0,EquipNoteDeleteSheet,シートを破棄
+EquipNote,0,EquipNoteClearCoolTime,シートを再入手<pict StarGem>
+EquipNote,0,EquipNoteExtendHaveSheet,シート所持数拡張<pict StarGem>
+EquipNote,0,EquipNoteOffTime,配信期限なし
+EquipNote,0,DeleteYesNoTitle,シート破棄
+EquipNote,0,DeleteYesNoMsgOnTime,<pict $(0)>$(1) のシートを破棄します。<c><br><br><red>※シート内の「必要アイテム」のゲージも<br>　すべてリセットされます。<c><br><br>本当によろしいですか？
+EquipNote,0,DeleteYesNoMsgOffTime,<pict $(0)>$(1) のシートを破棄します。<br><br><red>※シート内の「必要アイテム」のゲージも<br>　すべてリセットされます。<c><br><yellow>※配信期間が終了しているため、<br>　再入手はできません。<c><br><br>よろしいですか？
+EquipNote,0,DeleteSuccessMsg,<pict $(0)>$(1) のシートを破棄しました。
+EquipNote,0,TopMenu_Empty,装備管理官プリンから<br>配信中のコレクトファイルを<br>入手できます。
+EquipNote,0,TopMenu_EmptyGray,<gray>装備管理官から入手可能<c>
+EquipNote,0,TopMenu_EmptyByPremium,<pict Arcscash><gray>プレミアムで拡張可能<c>
+EquipNote,0,TopMenu_EmptyByTicket,<pict StarGem><gray>ＳＧで拡張可能<c>
+EquipNote,0,TopMenu_EmptyByPremiumClosable,プレミアム有効期間中<pict Arcscash>に<br>拡張されるシートです。
+EquipNote,0,TopMenu_EmptyByTicketClosable,装備管理官の「コレクトファイル」から<br>SGで「シート所持数拡張」を購入することで<br>拡張されるシートです。
+EquipNote,0,TopMenu_SheetName,<pict $(0)>$(1) のシート
+EquipNote,0,TopMenu_SheetNameExpired,<red><c><pict $(0)><red>$(1) のシート<c>
+EquipNote,0,SheetNum_InfoDefault,<gray>所持数未拡張<c>
+EquipNote,0,SheetNum_InfoPremiumEnable,<pict Arcscash><yellow>プレミアム拡張2枚<c>
+EquipNote,0,SheetNum_InfoPremiumOver,<red>プレミアム期限切れ<c>
+EquipNote,0,SheetNum_InfoPremiumNetCafe,<green>公認ネットカフェ特典拡張2枚<c>
+EquipNote,0,SheetNum_InfoAdd,+ $(0)
+EquipNote,0,SheetNum_InfoTicketEnable,<pict StarGem><c 00ffff>SG拡張$(0)枚<c>
+EquipNote,0,SheetNum_OrderNum,$(0)枚進行中
+EquipNote,0,SheetNum_CurrentNum,（$(0)/$(1)）
+EquipNote,0,SheetNum_CurrentNum_Equal,（<c ff9c70>$(0)/$(1)<c>）
+EquipNote,0,SheetNum_CurrentNum_Over,（<c ff0000>$(0)/$(1)<c>）
+EquipNote,0,Toast_ExpiredSheet,このシートは配信期間が終了しています。
+EquipNote,0,Title_SheetDetail,シート詳細
+EquipNote,0,Title_SheetDetailQuestInfo,ドロップ情報
+EquipNote,0,Title_itemDetail,アイテム詳細
+EquipNote,0,SheetDetail_Reward,報酬アイテム
+EquipNote,0,SheetDetail_SpecialSheetDetail_Reward,報酬アイテム
+EquipNote,0,SheetDetail_Target,必要アイテム
+EquipNote,0,SheetDetail_Quest,以下のクエストで対象エネミーが多く出現
+EquipNote,0,SheetDetail_QuestSpecify,以下のクエストでのみゲージが上昇
+EquipNote,0,SheetDetail_QuestType,以下のクエストタイプで対象エネミーが多く出現
+EquipNote,0,SheetDetail_QuestTypeSpecify,以下のクエストタイプでのみゲージが上昇
+EquipNote,0,SheetDetail_DropEnemy,対象エネミー
+EquipNote,0,SheetDetail_TargetQuestOrQuestType,以下のクエスト/クエストタイプのクリアでゲージ上昇
+EquipNote,0,SheetDetail_SheetGet,このシートを入手する
+EquipNote,0,SheetDetail_Back,戻る
+EquipNote,0,SD_Closable_Title,コレクトファイル
+EquipNote,0,SD_Closable_Message,<pict $(0)>$(1) のシートを入手しました。
+EquipNote,0,SD_Closable_Error_01,シートを取得できませんでした。
+EquipNote,0,Quest_None,無し
+EquipNote,0,Quest_Level,Lv.$(0)～
+EquipNote,0,Quest_Level_New,Lv.$(0)～
+EquipNote,0,Quest_Level_New_Info,<yellow>※エネミーレベルによって上昇量が変動<c>
+EquipNote,0,Quest_Format,$(1)$(0)
+EquipNote,0,Quest_QuestType_Urgency,（トリガークエスト含む）
+EquipNote,0,Quest_QuestType_Warning,<yellow>※クエスト難易度によって上昇量が変動<c>
+EquipNote,0,Enemy_None,無し
+EquipNote,0,Enemy_All,すべてのエネミー
+EquipNote,0,Target_Rate,$(0).$(1)%
+EquipNote,0,GetRewardMessage,報酬アイテム「<yellow>$(0)<c>」を獲得！
+EquipNote,0,GetRewardMessage2,コレクトシートの目標を達成し、<br>「<pict $(0)>$(1)」 ★$(2) を獲得しました。
+EquipNote,0,GetRequireMessage,必要アイテム「<yellow>$(0)<c>」がドロップ！
+EquipNote,0,EquipNoteError_Title,コレクトファイル
+EquipNote,0,EquipNoteError_IllegalParam,エラーが発生しました。<br><br>時間をおいて再度お試しください。
+EquipNote,0,EquipNoteError_DB,問題が発生しました。<br><br>時間をおいて再度お試しください。
+EquipNote,0,EquipNoteError_MaxSheet,これ以上、シートを入手できません。<br>他のシートを破棄してから<br>ふたたび入手してください。
+EquipNote,0,EquipNoteError_Payment,所持SGが不足しています。
+EquipNote,0,EquipNoteError_ExpiredSheet,シートの配信期間が終了しています。
+EquipNote,0,EquipNoteError_RequirePremium,エラーが発生しました。<br>「プレミアムセット」の利用権をお持ちでないか、<br>利用期限が切れています。<br><br>プレイ環境の時刻設定が誤っていないか<br>お確かめください。
+EquipNote,0,EquipNoteError_MaxExtendHaveSheetByTicket,シート所持数の拡張はすでに上限数となっているため<br>これ以上の拡張はできません。
+EquipNote,0,EquipNoteError_NoMoreSpecialCollection,<pict sp_icon>スペシャルコレクトシートは1つしか<br>所持することができません。<br><br>すでに1つ所持しているため入手することができません。
+EquipNote,0,EquipNote_ConfirmToGetSheet,<pict sp_icon>スペシャルコレクトシートは、1つだけ所持できます。<br><br>このコレクトシートを入手しますか？
+EquipNote,0,EquipNote_ClearCoolTimeTitle,アイテム購入確認
+EquipNote,0,EquipNote_ClearCoolTimeMessage,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>「$(1)」を購入すると、<br>すぐに <pict $(0)>$(2) のシートを、<br>再入手できます。<br><br>「$(1)」の購入画面に<br>進みますか？
+EquipNote,0,EquipNote_ClearCoolTimeMessage2,以下のアイテムを$(0)SGで購入します。<br>よろしいですか？<br><br>（所持SG：$(1)）
+EquipNote,0,EquipNote_ClearCoolTimeSuccessTitle,コレクトファイル
+EquipNote,0,EquipNote_ClearCoolTimeSuccessMessage,<pict $(0)>$(1) のシートの<br>クールタイムをリセットし再入手しました。
+EquipNote,0,EquipNote_ClearCoolTimeItem,シートクールタイムリセット
+EquipNote,0,EquipNote_TitleSheetInfo,シート情報
+EquipNote,0,EquipNote_TitleTimeInfo,配信期間
+EquipNote,0,EquipNote_CoolTime,クールタイム
+EquipNote,0,EquipNote_CoolTime_Free,-
+EquipNote,0,EquipNote_CoolTime_Wait,このシートは<br><red>$(0)<c><br>まで入手できません。<br>（スタージェムでリセット可能）
+EquipNote,0,EquipNote_CoolTime_None,シートがありません。
+EquipNote,0,EquipNote_CoolTime_SheetExpired,このシートは配信期間が終了しているため<br>シートの入手、再入手を行うことができません。
+EquipNote,0,EquipNote_BondMessage,$(0)$(1)
+EquipNote,0,EquipNote_AndText,&
+EquipNote,0,EquipNoteBoost_Title,ゲージ増加アイテムを使う
+EquipNote,0,EquipNoteBoost_ItemWinTitle,アイテム選択
+EquipNote,0,EquipNoteBoost_ProTitle,$(0) の必要アイテムと進行度
+EquipNote,0,EquipNoteBoost_UseCheckTitle,アイテム使用確認
+EquipNote,0,EquipNoteBoost_UseCheck,「$(0)」を使用して<br>「$(1)」の<br>進行度ゲージを上昇させます。<br><br>よろしいですか？
+EquipNote,0,EquipNoteBoost_UseToast,「$(0)」 を使用しました。
+EquipNote,0,EquipNoteBoost_Help,<c f0df60>使用するアイテムを選んでください。
+EquipNote,0,EquipNoteBoost_SheetDetail,コレクトシート情報
+EquipNote,0,EquipNoteBoost_UseCheck2,一部の進行度ゲージが100%を超えてしまいます。<br>超えてしまった分は失われますが<br>本当によろしいですか？
+EquipNote,0,EquipNoteBoost_NoItemMessage,アイテムがありません
+EquipNote,1,EquipNoteCheckSheet,Confirm Sheet
+EquipNote,1,EquipNoteDeleteSheet,Discard Sheet
+EquipNote,1,EquipNoteClearCoolTime,Reclaim Sheet <pict StarGem>
+EquipNote,1,EquipNoteExtendHaveSheet,Sheet Expansions <pict StarGem>
+EquipNote,1,EquipNoteOffTime,No Distribution Time Limit
+EquipNote,1,DeleteYesNoTitle,DISCARD SHEET
+EquipNote,1,DeleteYesNoMsgOnTime,This will discard the <pict $(0)>$(1) sheet.<c><br><br><red>Note: All required items and gauges will also be reset.<c><br><br>Are you sure you wish to proceed?
+EquipNote,1,DeleteYesNoMsgOffTime,"This will discard the <pict $(0)>$(1) sheet.<br><br><red>Note: All required items and gauges will also be reset.<c><br><yellow>Note: Because the distribution period has ended, this cannot<br>be reclaimed.<c><br><br>Are you sure you wish to proceed?"
+EquipNote,1,DeleteSuccessMsg,Discarded the <pict $(0)>$(1) sheet.
+EquipNote,1,TopMenu_Empty,Currently distributed Collection Folders can be claimed <br>from Equipment Officer Prin.
+EquipNote,1,TopMenu_EmptyGray,<gray>Claimed from Equip. Officer.<c>
+EquipNote,1,TopMenu_EmptyByPremium,<pict Arcscash><gray>Premium Expansion available.<c>
+EquipNote,1,TopMenu_EmptyByTicket,<pict StarGem><gray>Expansion available with SG.<c>
+EquipNote,1,TopMenu_EmptyByPremiumClosable,Sheet expanded with Premium<pict Arcscash>.
+EquipNote,1,TopMenu_EmptyByTicketClosable,Expanded by purchasing [Sheet Expansions] with SG from an<br>Equipment Officer via [Collection Folder].
+EquipNote,1,TopMenu_SheetName,<pict $(0)>$(1) Sheet
+EquipNote,1,TopMenu_SheetNameExpired,<red><c><pict $(0)><red>$(1) Sheet<c>
+EquipNote,1,SheetNum_InfoDefault,<gray>Not yet expanded<c>
+EquipNote,1,SheetNum_InfoPremiumEnable,<pict Arcscash><yellow> 2 Premium Expansions<c>
+EquipNote,1,SheetNum_InfoPremiumOver,<red>Premium Status Has Expired<c>
+EquipNote,1,SheetNum_InfoPremiumNetCafe,<green>Net Café Special Expansions<c>
+EquipNote,1,SheetNum_InfoAdd,+ $(0)
+EquipNote,1,SheetNum_InfoTicketEnable,<pict StarGem><c 00ffff> SG Expansion: $(0)<c>
+EquipNote,1,SheetNum_OrderNum,$(0) in progress
+EquipNote,1,SheetNum_CurrentNum,($(0)/$(1))
+EquipNote,1,SheetNum_CurrentNum_Equal,(<c ff9c70>$(0)/$(1)<c>)
+EquipNote,1,SheetNum_CurrentNum_Over,(<c ff0000>$(0)/$(1)<c>)
+EquipNote,1,Toast_ExpiredSheet,The distribution period for this sheet has expired.
+EquipNote,1,Title_SheetDetail,SHEET DETAILS
+EquipNote,1,Title_SheetDetailQuestInfo,DROP INFORMATION
+EquipNote,1,Title_itemDetail,ITEM DETAILS
+EquipNote,1,SheetDetail_Reward,Reward Item
+EquipNote,1,SheetDetail_SpecialSheetDetail_Reward,Reward Item
+EquipNote,1,SheetDetail_Target,Required Items
+EquipNote,1,SheetDetail_Quest,Target enemies appear more in the following quests
+EquipNote,1,SheetDetail_QuestSpecify,Gauge increases only for the following quests
+EquipNote,1,SheetDetail_QuestType,Target enemies appear more in the following quest types
+EquipNote,1,SheetDetail_QuestTypeSpecify,Gauge increase only for the following quest types
+EquipNote,1,SheetDetail_DropEnemy,Target enemy
+EquipNote,1,SheetDetail_TargetQuestOrQuestType,Gauge increases by clearing the following quests/quest types
+EquipNote,1,SheetDetail_SheetGet,Claim This Sheet
+EquipNote,1,SheetDetail_Back,Back
+EquipNote,1,SD_Closable_Title,COLLECTION FOLDER
+EquipNote,1,SD_Closable_Message,Claimed the <pict $(0)>$(1) sheet.
+EquipNote,1,SD_Closable_Error_01,Could not obtain sheet.
+EquipNote,1,Quest_None,None
+EquipNote,1,Quest_Level,Level $(0) and up
+EquipNote,1,Quest_Level_New,Level $(0) and up
+EquipNote,1,Quest_Level_New_Info,<yellow>Increase amount varies by enemy level<c>
+EquipNote,1,Quest_Format,$(1)$(0)
+EquipNote,1,Quest_QuestType_Urgency,(Includes Trigger Quests)
+EquipNote,1,Quest_QuestType_Warning,<yellow>The amount increased varies depending on quest difficulty<c>
+EquipNote,1,Enemy_None,None
+EquipNote,1,Enemy_All,All Enemies
+EquipNote,1,Target_Rate,$(0).$(1)%
+EquipNote,1,GetRewardMessage,Obtained Reward Item [<yellow>$(0)<c>]!
+EquipNote,1,GetRewardMessage2,Completed the Collection Sheet objective<br>and obtained [<pict $(0)>$(1)] $(2)★.
+EquipNote,1,GetRequireMessage,Drops the required item [<yellow>$(0)<c>]!
+EquipNote,1,EquipNoteError_Title,COLLECTION FOLDER
+EquipNote,1,EquipNoteError_IllegalParam,An error has occurred.<br><br>Please wait a while and try again.
+EquipNote,1,EquipNoteError_DB,An issue has occurred.<br><br>Please wait a while and try again.
+EquipNote,1,EquipNoteError_MaxSheet,You cannot claim any more sheets. Please discard another<br>sheet and try to claim this sheet again.
+EquipNote,1,EquipNoteError_Payment,You do not have enough SG.
+EquipNote,1,EquipNoteError_ExpiredSheet,The distribution period for this sheet has expired.
+EquipNote,1,EquipNoteError_RequirePremium,"An issue has occurred. You either don't have permission to<br>use Premium Sets, or your access has expired.<br><br>Please confirm that there are no issues with your platform<br>time and date settings."
+EquipNote,1,EquipNoteError_MaxExtendHaveSheetByTicket,You have reached the limit for expansions to the number of<br>sheets you can hold. No further expansions available.
+EquipNote,1,EquipNoteError_NoMoreSpecialCollection,You can only have 1 <pict sp_icon> Special Collection Sheet in<br>your possession.<br><br>You cannot claim this Collection Sheet because you already <br>have 1 in your possession.
+EquipNote,1,EquipNote_ConfirmToGetSheet,You can only have 1 <pict sp_icon> Special Collection Sheet in<br>your possession.<br><br>Claim this Collection Sheet?
+EquipNote,1,EquipNote_ClearCoolTimeTitle,CONFIRM ITEM PURCHASE
+EquipNote,1,EquipNote_ClearCoolTimeMessage,<pict StarGem><c 1dedd7>SG Payment Required<c><br><br>Purchase [$(1)] to reclaim the <pict $(0)>$(2)<br>sheet immediately.<br><br>Proceed to the [$(1)] purchase screen?
+EquipNote,1,EquipNote_ClearCoolTimeMessage2,Are you sure you want to purchase the following item<br>for $(0) SG?<br><br>(SG in possession: $(1))
+EquipNote,1,EquipNote_ClearCoolTimeSuccessTitle,COLLECTION FOLDER
+EquipNote,1,EquipNote_ClearCoolTimeSuccessMessage,Reset <pict $(0)>$(1) sheet cooldown time and<br>reclaimed sheet.
+EquipNote,1,EquipNote_ClearCoolTimeItem,Sheet Cooldown Time Reset
+EquipNote,1,EquipNote_TitleSheetInfo,SHEET INFORMATION
+EquipNote,1,EquipNote_TitleTimeInfo,Distribution Period
+EquipNote,1,EquipNote_CoolTime,Cooldown Time
+EquipNote,1,EquipNote_CoolTime_Free,-
+EquipNote,1,EquipNote_CoolTime_Wait,This sheet cannot be claimed until <br><red>$(0)<c>.<br><br>(Can be reset with Star Gems.)
+EquipNote,1,EquipNote_CoolTime_None,No sheets.
+EquipNote,1,EquipNote_CoolTime_SheetExpired,The distributon period for this sheet has expired.<br>This sheet cannot be claimed or reclaimed.
+EquipNote,1,EquipNote_BondMessage,$(0)$(1)
+EquipNote,1,EquipNote_AndText,&
+EquipNote,1,EquipNoteBoost_Title,Use Gauge Increase Item
+EquipNote,1,EquipNoteBoost_ItemWinTitle,SELECT ITEM
+EquipNote,1,EquipNoteBoost_ProTitle,Items & Progress
+EquipNote,1,EquipNoteBoost_UseCheckTitle,CONFIRM ITEM USE
+EquipNote,1,EquipNoteBoost_UseCheck,You are about to use $(0) to increase the progress gauge for $(1).<br><br>Are you sure you wish to proceed?
+EquipNote,1,EquipNoteBoost_UseToast,You used $(0).
+EquipNote,1,EquipNoteBoost_Help,<c f0df60>Select an item to use.
+EquipNote,1,EquipNoteBoost_SheetDetail,Collection Sheet Information
+EquipNote,1,EquipNoteBoost_UseCheck2,This action will fill a progress gauge to over 100%.<br>Progress exceeding 100% will be lost.<br>Are you sure you wish to proceed?
+EquipNote,1,EquipNoteBoost_NoItemMessage,There are no items.
+Etc,0,DirectBuyTicket_Title,アイテム購入確認
+Etc,0,DirectBuyTicket_Msg1Seq1,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>「$(0)」を購入すると、<br>シート所持数の上限が１つ拡張されます。<br>（最大 $(1)つまで拡張可能）<br><br>「$(0)」の購入画面に<br>進みますか？
+Etc,0,DirectBuyTicket_Msg1Seq2,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>シート所持数が上限に達しているため、<br>これ以上シートを入手することができません。<br><br>SGで「$(0)」を購入すると<br>この上限を増やすことができます。<br>購入画面に進みますか？
+Etc,0,DirectBuyTicket_Msg2,以下のアイテムを$(0)SGで購入し、<br>シート所持数の上限を1つ拡張します。<br>よろしいですか？<br><br>（所持SG：$(1)）
+Etc,0,DirectBuyTicketSuccess_Title,コレクトファイル
+Etc,0,DirectBuyTicketSuccess_Msg,コレクトファイルのシート所持数を<br>1つ拡張しました。
+Etc,0,DirectBuyTicketItem,シート所持数拡張
+Etc,1,DirectBuyTicket_Title,CONFIRM ITEM PURCHASE
+Etc,1,DirectBuyTicket_Msg1Seq1,<pict StarGem><c 1dedd7>SG Payment Required<c><br><br>Purchase [$(0)] to expand the number of sheets<br>you can hold by 1.<br>(Maximum number: $(1))<br><br>Proceed to the [$(0)] purchase screen?
+Etc,1,DirectBuyTicket_Msg1Seq2,<pict StarGem><c 1dedd7>SG Payment Required<c><br><br>You have already reached your current sheet limit.<br>You cannot purchase any more sheets.<br><br>  Purchase [$(0)] to increase your limit.<br>Proceed to the purchase screen?
+Etc,1,DirectBuyTicket_Msg2,Purchase the following item(s) for $(0) SG to expand<br>your sheets by 1. Are you sure?<br><br>(You have: $(1) SG)
+Etc,1,DirectBuyTicketSuccess_Title,COLLECTION FOLDER
+Etc,1,DirectBuyTicketSuccess_Msg,Number of Collection Folder sheets has been expanded<br>by one.
+Etc,1,DirectBuyTicketItem,Sheet Expansions

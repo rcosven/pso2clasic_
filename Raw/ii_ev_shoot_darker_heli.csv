@@ -1,0 +1,29 @@
+section,group,id,text
+common,0,IncidentName,侵食戦闘機を破壊せよ
+common,0,TrialBeginMsg,ダーカーに侵食された戦闘機を破壊せよ！
+common,0,EnemyAppearMsg,$(0)の方向から敵が現れた！
+common,0,TrialEvolutionBeginMsg_ReLanding,修理が完了するまで、再び戦闘機を防衛せよ！
+common,0,TrialEvolutionBeginMsg_ShootDarkerHeli,ダーカーに侵食された戦闘機を破壊せよ！
+common,0,TrialAbstract,制限時間内に<br>ダーカーに侵食された戦闘機を破壊せよ
+common,1,IncidentName,Destroy the Corrupted Aircraft
+common,1,TrialBeginMsg,Destroy the Falspawn-corrupted fighter plane!
+common,1,EnemyAppearMsg,Enemies moving in from the $(0)!
+common,1,TrialEvolutionBeginMsg_ReLanding,Defend the fighter plane again until it's repaired!
+common,1,TrialEvolutionBeginMsg_ShootDarkerHeli,Destroy the Falspawn-corrupted fighter plane!
+common,1,TrialAbstract,Destroy the Falspawn-corrupted fighter plane<br>before time expires.
+type2,0,NpcComOnBegin,/face3 アークスの戦闘機がダーカーの<br>侵食を受けた、だと……！<br>ちっ、面倒なことになったな。
+type2,0,NpcComOnBegin2,侵食が不完全な今のうちに<br>該当の機体を破壊しろ！
+type2,0,NpcComOnHp50,気を付けろ。<br>侵食が進行しているぞ。
+type2,0,NpcComOnHp10,侵食戦闘機の破壊まで<br>あと少しだ。
+type2,0,NpcComOnLanding,未使用
+type2,0,NpcComOnTimeNotice,……侵食レベルがかなり深刻だ。<br>破壊を急げ、奪われてしまうぞ！
+type2,0,NpcComOnSuccess,侵食戦闘機の破壊を確認。<br>よくやってくれた。
+type2,0,NpcComOnFailure,……戦闘機の反応、消失。<br>ダーカーめ、アレを奪って<br>何をする気だ……？
+type2,1,NpcComOnBegin,/face3 One of our fighter planes has been corrupted<br>by the Falspawn?<br>Dammit... This could get ugly.
+type2,1,NpcComOnBegin2,Destroy the aircraft before it's been fully<br>corrupted!
+type2,1,NpcComOnHp50,Be careful out there.<br>The corruption is taking hold.
+type2,1,NpcComOnHp10,The Corrupted Aircraft is nearly destroyed.
+type2,1,NpcComOnLanding,Not Used
+type2,1,NpcComOnTimeNotice,It's been severely corrupted. Destroy it quickly<br>or they'll take it from us!
+type2,1,NpcComOnSuccess,Sensors indicate the Corrupted Aircraft has<br>been destroyed. You've done well.
+type2,1,NpcComOnFailure,The fighter plane is gone... What do those<br>damn Falspawn intend to do with it?

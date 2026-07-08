@@ -1,0 +1,49 @@
+section,group,id,text
+common,0,IncidentName,卵型の物質を回収せよ！
+common,0,TrialBeginMsg,卵型の物質を回収せよ！
+common,0,TrialAbstract,隠された卵型の物質を回収せよ！
+common,0,ToastPickup,$(0)個目の$(1)を拾いました。
+common,0,ToastCollect,$(0)が$(1)個回収しました。
+common,0,ToastRewards,$(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+common,1,IncidentName,Gather the Egg-shaped Objects!
+common,1,TrialBeginMsg,Gather the Egg-shaped Objects!
+common,1,TrialAbstract,Gather the hidden Egg-shaped Objects!
+common,1,ToastPickup,Picked up $(1) #$(0).
+common,1,ToastCollect,Collected $(0) x $(1).
+common,1,ToastRewards,Collected $(0) x $(1). Earned $(2) EXP and $(3) meseta.
+type3,0,NpcComOnBegin,緊急通達ですー。<br>近辺に回収対象の標本があるようです。<br>アークス各員は回収をお願いします。
+type3,0,NpcComOnBeginAtRareCase,特別任務です！<br>近辺に回収対象の標本があるようです。<br>急ぎ回収願いますですよー！
+type3,0,NpcComOnSuccess,/face2 対象となった標本の回収<br>確認しましたー！<br>お疲れ様でした！
+type3,0,NpcComOnFailure,/face4 うーん、残念です……<br>アレは危険らしいので、回収して<br>おきたかったのですが……
+type3,0,GoodsPosition,標本の反応は<br>$(0)からです！
+type3,0,RepopGoods,/face2 標本の位置が大体ですがわかりました！<br>各員回収を進めてください。
+type3,0,OnAccessPodByEmptyHand,そのポッドに標本を持ってくれば<br>こちらで回収できますよー。<br>先に標本を探してみてください。
+type3,0,Collect1st,/face2 標本回収、確認です！<br>その調子ですよ～！
+type3,0,CollectHalf,/face2 半分くらい回収できたと思いますよ！
+type3,0,CollectMostly,/face2 もうちょっとです！<br>残りも近くにあると思うので<br>隈なく探してみてください！
+type3,0,Pickup1st,それが……標本？<br>なんだか卵みたいですね。<br>どんどん見つけましょう！
+type3,0,PickupHalf,/face2 それで半分位ですね！<br>残りも頑張りましょう！
+type3,0,PickupEnough,/face2 集める数はそれで充分です！<br>回収ポッドまで届けてくださ～い！
+type3,0,KillTarget1st,龍族が持っていっちゃってる<br>こともあるみたいです。<br>探してみましょう。
+type3,0,KillTargetHalf,これで半分ぐらいでしょうか？<br>反応はまだあるみたいですよー。
+type3,0,KillTargetAll,持っていかれちゃった標本は<br>これで全部、だと思います。
+type3,0,TimeupWarning,むむ、残り時間が少ないです！<br>がんばってくださいー！
+type3,0,TimeupEmergency,できるかぎり急いでください！<br>もう時間がありませんよ！
+type3,1,NpcComOnBegin,"This is an urgent request. Samples of a<br>targeted material have been found nearby.<br>All ARKS ops, please gather them."
+type3,1,NpcComOnBeginAtRareCase,This is a special assignment! Samples of a<br>targeted material have been found nearby.<br>Hurry and gather them!
+type3,1,NpcComOnSuccess,/face2 Samples recovered! Good work!
+type3,1,NpcComOnFailure,/face4 That's too bad...apparently that stuff is pretty<br>dangerous so I was hoping to get a sample.
+type3,1,GoodsPosition,Samples detected at $(0)!
+type3,1,RepopGoods,"/face2 We've got a general idea of<br>where the samples are!  All ops,<br>keep collecting them!"
+type3,1,OnAccessPodByEmptyHand,We can extract the samples once<br>you bring them to the pod. First you<br>have to go find them.
+type3,1,Collect1st,/face2 Sample recovered! That's the way to do it!
+type3,1,CollectHalf,/face2 I think you've gathered about half of<br>what we need!
+type3,1,CollectMostly,"/face2 Almost there! I'm pretty sure the rest of the<br>samples aren't too far away, so keep looking!"
+type3,1,Pickup1st,Is that a sample? Looks kind of like an egg...<br>Try to find more!
+type3,1,PickupHalf,/face2 You're about halfway there!<br>Keep up the good work!
+type3,1,PickupEnough,/face2 That should be plenty.<br>Now bring them to the Collection Pod.
+type3,1,KillTarget1st,Apparently Draconians make off with them<br>sometimes. Keep an eye out.
+type3,1,KillTargetHalf,You must be about halfway there.<br>I'm still getting plenty of readings though!
+type3,1,KillTargetAll,I think that's all of the samples that were taken.
+type3,1,TimeupWarning,"Uh-oh, you're running out of time!<br>I believe in you!"
+type3,1,TimeupEmergency,Go as fast as you can!<br>There's only a little<br>time left!

@@ -1,0 +1,200 @@
+section,group,id,text
+MissionBoard,0,MissionProgress,簡易ミッション情報
+MissionBoard,0,MissionOrder,クライアントオーダー
+MissionBoard,0,MissionBoard,アークスミッション
+MissionBoard,0,MissionWebLink,WEBページリンク(仮
+MissionBoard,0,MissionWebSubheading,開催中のキャンペーン(仮
+MissionBoard,0,MissionProgressTab,進行中
+MissionBoard,0,MissionRecievedTab,受け取り済み
+MissionBoard,0,MissionSqueezeNew,新着のみ表示
+MissionBoard,0,MissionRecieveAll,全て受け取る
+MissionBoard,0,MissionRecieveAll_P,<%MultiSelect>全て受け取る
+MissionBoard,0,MissionRecieveAll_V,全て受け取る
+MissionBoard,0,MissionReciveOne,<%AcceptK>で報酬を受け取る
+MissionBoard,0,MissionReciveOne_P,<%AcceptP>で報酬を受け取る
+MissionBoard,0,MissionReciveOne_V,<%AcceptV>で報酬を受け取る
+MissionBoard,0,MissionTrack,<pict Arksroicon>追跡中
+MissionBoard,0,MissionTracking,<%AcceptK>で目的地を表示する
+MissionBoard,0,MissionTracking_P,<%AcceptP>で目的地を表示する
+MissionBoard,0,MissionTracking_V,<%AcceptV>で目的地を表示する
+MissionBoard,0,MissionTracking_OFF,<%AcceptK>で目的地の表示をやめる
+MissionBoard,0,MissionTracking_OFF_P,<%AcceptP>で目的地の表示をやめる
+MissionBoard,0,MissionTracking_OFF_V,<%AcceptV>で目的地の表示をやめる
+MissionBoard,0,MissionDetail,ミッション詳細
+MissionBoard,0,MissionTimeLimitCampaign1,キャンペーン終了　$(0)
+MissionBoard,0,MissionTimeLimitCampaign2,受け取り期限　$(0)
+MissionBoard,0,MissionTimeLimitEvent,有効期限　$(0)
+MissionBoard,0,MissionTimeLimitEtc,有効期限　$(0)
+MissionBoard,0,MissionTimeLimitUnlimited,有効期限　なし
+MissionBoard,0,MissionDetail_limited_Issue,<c ff4f3f>※アイテムはアカウントにつき1回のみ受け取れます。<c>
+MissionBoard,0,MissionDetail_limited_Issue_Received,※アカウント制限のアイテムは受け取り済みです。
+MissionBoard,0,MissionDetail_Repeat_Issue,※このミッションは<pict repeat>繰り返しプレイが可能です。
+MissionBoard,0,MissionDetail_Repeat_CoolDown,※再プレイ可能　$(0)
+MissionBoard,0,MissionDetailSwitching,<pict Key_SHIFT>キーでアイテム詳細を表示
+MissionBoard,0,MissionDetailSwitching_P,<%Function>でアイテム詳細を表示
+MissionBoard,0,MissionDetailSwitching_V,<pict Sign_TRIANGLE>でアイテム詳細を表示
+MissionBoard,0,MissionDetail_MissionDetail,有効期限/目的詳細
+MissionBoard,0,MissionRewardDetail,アイテム詳細
+MissionBoard,0,MissionRewardDetailSwitching,<pict Key_SHIFT>キーでミッション詳細を表示
+MissionBoard,0,MissionRewardDetailSwitching_P,<%Function>でミッション詳細を表示
+MissionBoard,0,MissionRewardDetailSwitching_V,<pict Sign_TRIANGLE>でミッション詳細を表示
+MissionBoard,0,MissionCampaignLink,<%ChangeCtrlWindowForward>でWEBページへ
+MissionBoard,0,MissionCampaignLink_P,<%WEBLinkP>でWEBページへ
+MissionBoard,0,MissionRewardCampaignDetail,キャンペーン達成報酬一覧
+MissionBoard,0,MissionRewardCampaignSwitching,<pict Key_SHIFT>キーでキャンペーン報酬一覧を表示
+MissionBoard,0,MissionRewardCampaignSwitching_P,<%Function>キーでキャンペーン報酬一覧を表示
+MissionBoard,0,MissionRewardCampaignSwitching_V,<pict Sign_TRIANGLE>キーでキャンペーン報酬一覧を表示
+MissionBoard,0,MissionBoardOpen,<pict Sign_SQUARE>でアークスミッションへ
+MissionBoard,0,MissionBoardOpen_P,<%MissionShortCutP>でアークスミッションへ
+MissionBoard,0,MissionBoardOpen_Function,<%Function>でアークスミッションへ
+MissionBoard,0,MissionBoardOpen_MultiSelect,<%MultiSelect>でアークスミッションへ
+MissionBoard,0,MissionBoardOpen_V,<%MissionShortCutV>でアークスミッションへ
+MissionBoard,0,MissionHeldCampaign,開催中のキャンペーン
+MissionBoard,0,MissionWebLinkOpen,<%ChangeCtrlWindowForward>でWEBページリンク選択へ
+MissionBoard,0,MissionWebLinkOpen_P,<%ChangeWindowActiveP>でWEBページリンク選択へ
+MissionBoard,0,MissionRate,$(0)%
+MissionBoard,0,MissionRateMax,<yellow>達成<c>
+MissionBoard,0,Missionlist,ミッション一覧
+MissionBoard,0,MissionTimeLimitHead,更新日時
+MissionBoard,0,MissionDaily,デイリーミッション
+MissionBoard,0,MissionDailyLimit,毎日<utc>08:00</utc>
+MissionBoard,0,MissionWeekly,ウィークリーミッション
+MissionBoard,0,MissionWeeklyLimit,<utcdow>水曜日23:00</utcdow>
+MissionBoard,0,MissionTier,-
+MissionBoard,0,MissionTierLimit,-
+MissionBoard,0,MissionBoardCampaign,キャンペーン
+MissionBoard,0,MissionBoardEvent,イベント
+MissionBoard,0,MissionBoardDailyWeekly,デイリー/ウィークリー
+MissionBoard,0,MissionBoardTutorial,チュートリアル
+MissionBoard,0,MissionBoardNumber,($(0))
+MissionBoard,0,MissionProgressNumber,$(0)/$(1)
+MissionBoard,0,MissionProgressComplete,<%Decide>報酬受取
+MissionBoard,0,CategoryMenu_GetAll,報酬をすべて受け取る　($(0))
+MissionBoard,0,MissionRewardConfirmTitle,報酬受取
+MissionBoard,0,MissionRewardConfirmMsg,タスクの報酬アイテムを受け取ります。<br>よろしいですか？（仮）
+MissionBoard,0,MissionRewardConfirmMsgAll,報酬をすべて受け取ります。<br>よろしいですか？
+MissionBoard,0,MissionRewardConfirmYes,はい
+MissionBoard,0,MissionRewardConfirmNo,いいえ
+MissionBoard,0,MissionRewardConfirm_limited_Title,報酬受取
+MissionBoard,0,MissionRewardConfirm_limited_Msg,ミッションの報酬を受け取ります。<br>よろしいですか？<br><br><yellow>※この報酬を受け取れるのは<br>　アカウントにつき1回のみです。<br>　受け取るシップに間違いないかをご確認ください。<c>
+MissionBoard,0,MissionRewardConfirm_limited_Yes,はい
+MissionBoard,0,MissionRewardConfirm_limited_No,いいえ
+MissionBoard,0,MissionRewardConfirm_All_limited_Title,報酬受取
+MissionBoard,0,MissionRewardConfirm_All_limited_Msg,ミッションの報酬を受け取ります。<br>よろしいですか？<br><yellow>※アカウントにつき1回のみ受け取ることができる<br>　アイテムが含まれています。<br>　受け取るシップに間違いないかをご確認ください。<c><br>※いいえを選ぶと、<br>　アカウント制限のない報酬のみを受け取ります。
+MissionBoard,0,MissionRewardConfirm_All_limited_Msg_Only,ミッションの報酬を受け取ります。<br>よろしいですか？<br><br><yellow>※この報酬を受け取れるのは<br>　アカウントにつき1回のみです。<br>　受け取るシップに間違いないかをご確認ください。<c>
+MissionBoard,0,MissionRewardConfirm_All_limited_Yes,はい
+MissionBoard,0,MissionRewardConfirm_All_limited_No,いいえ
+MissionBoard,0,MissionReward_Error_Close,閉じる
+MissionBoard,0,MissionReward_Error_Inventorylimit,アイテムパックの空き容量不足<br>または所持数の限界を超えているため<br>受け取れませんでした。
+MissionBoard,0,MissionReward_Error_limitTime,有効期限を過ぎているため<br>受け取れませんでした。
+MissionBoard,0,MissionNoItem,選択できるミッションがありません。
+MissionBoard,0,MissionGetReward_Header,ミッション報酬を受け取りました
+MissionBoard,0,MissionReward_RewardList_Header,報酬一覧
+MissionBoard,0,MissionReward_RewardList_Issue,以下の報酬を受け取りました。
+MissionBoard,0,MissionReward_RewardList_Next,次を受け取る
+MissionBoard,0,MissionReward_RewardList_Interrupt,中断する
+MissionBoard,0,MissionReward_RewardList_Close,閉じる
+MissionBoard,0,MissionNotice_Issue_Header,<c f0df60>を受注しました<c>
+MissionBoard,0,MissionNotice_Issue_Description,目標を達成して報酬を手に入れよう。
+MissionBoard,0,MissionNotice_Issue_Number,…他$(0)件
+MissionBoard,0,MissionNotice_Achieve_Header,を達成しました
+MissionBoard,0,MissionNotice_Achieve_Description,アークスミッションで報酬を受け取ろう。
+MissionBoard,0,MissionNotice_Achieve_Number,…他$(0)件
+MissionBoard,0,SimpleStatus_NotOpen,受注しているミッションがありません
+MissionBoard,0,SimpleStatus_SharedShip,共通シップではミッションを確認できません
+MissionBoard,0,MissionBoardCategoryMenuDaily,デイリーミッション
+MissionBoard,0,MissionBoardCategoryMenuWeekly,ウィークリーミッション
+MissionBoard,0,MissionBoardCategoryMenuLimited,期間限定ミッション
+MissionBoard,0,MissionBoardCategoryMenuGuidance,メインミッション
+MissionBoard,0,MissionBoardCategoryMenuTier,-
+MissionBoard,0,MissionReward_Error_General_Header,報酬受取
+MissionBoard,0,MissionReward_Error_General_Msg,報酬を受け取ることができませんでした。<br><br>時間をおいて再度お試しください。
+MissionBoard,0,MissionReward_Error_Inventorylimit_Header,報酬受取
+MissionBoard,0,MissionReward_Error_Inventorylimit_Msg,アイテムパックの空き容量不足<br>または所持数の限界を超えているため<br>受け取れませんでした。
+MissionBoard,0,MissionReward_Error_limitTime_Header,報酬受取
+MissionBoard,0,MissionReward_Error_limitTime_Msg,有効期限を過ぎているため<br>受け取れませんでした。
+MissionBoard,0,MissionTracking_Change_toast,追跡するミッションを変更しました。
+MissionBoard,0,MissionTracking_Change_error,追跡できないミッションです。
+MissionBoard,0,MissionMenu_ItemDetail_NoItem,報酬アイテムはありません。
+MissionBoard,0,MissionClear_toast,クリア済みのミッションがあります。メインメニューのクエストのアークスミッションから、報酬
+MissionBoard,1,MissionProgress,Información de misión simple
+MissionBoard,1,MissionBoard,Misiones ARKS
+MissionBoard,1,MissionProgressTab,En progreso
+MissionBoard,1,MissionRecievedTab,Ya recibidas
+MissionBoard,1,MissionDetail,Detalles de la misión
+MissionBoard,1,MissionTimeLimitEvent,Expiración: $(0)
+MissionBoard,1,MissionTimeLimitEtc,Expiración: $(0)
+MissionBoard,1,MissionTimeLimitUnlimited,Expiración: Ninguna
+MissionBoard,1,MissionDetail_limited_Issue,<c ff4f3f>Solo puedes recibir uno de este objeto por cuenta.<c>
+MissionBoard,1,MissionDetail_limited_Issue_Received,Ya has recibido este objeto en esta cuenta.
+MissionBoard,1,MissionDetail_Repeat_Issue,Esta misión puede ser <pict repeat> disfrutada una y otra vez.
+MissionBoard,1,MissionDetail_Repeat_CoolDown,Repetible: $(0)
+MissionBoard,1,MissionDetailSwitching,<pict Key_SHIFT> para mostrar detalles del objeto
+MissionBoard,1,MissionDetailSwitching_P,<%Function> para mostrar detalles del objeto
+MissionBoard,1,MissionDetailSwitching_V,<pict Sign_TRIANGLE> para mostrar detalles del objeto
+MissionBoard,1,MissionDetail_MissionDetail,Detalles de expiración/objetivo
+MissionBoard,1,MissionRewardDetail,Detalles del objeto
+MissionBoard,1,MissionRewardDetailSwitching,<pict Key_SHIFT> para mostrar detalles de la misión
+MissionBoard,1,MissionRewardDetailSwitching_P,<%Function> para mostrar detalles de la misión
+MissionBoard,1,MissionRewardDetailSwitching_V,<pict Sign_TRIANGLE> para mostrar detalles de la misión
+MissionBoard,1,MissionBoardOpen_P,<%MissionShortCutP> para ir a Misión ARKS
+MissionBoard,1,MissionBoardOpen_Function,<%Function> para ir a Misión ARKS
+MissionBoard,1,MissionBoardOpen_MultiSelect,<%MultiSelect> para ir a Misión ARKS
+MissionBoard,1,MissionBoardOpen_V,<%MissionShortCutV> para ir a Misión ARKS
+MissionBoard,1,MissionRate,$(0)%
+MissionBoard,1,MissionRateMax,<yellow>Logrado<c>
+MissionBoard,1,Missionlist,Lista de misiones
+MissionBoard,1,MissionTimeLimitHead,Fecha de actualización
+MissionBoard,1,MissionDaily,Misión diaria
+MissionBoard,1,MissionDailyLimit,Todos los días a las <utc>08:00</utc>
+MissionBoard,1,MissionWeekly,Misión semanal
+MissionBoard,1,MissionWeeklyLimit,<utcdow>Miércoles a las 23:00</utcdow>
+MissionBoard,1,MissionTier,-
+MissionBoard,1,MissionBoardNumber,($(0))
+MissionBoard,1,MissionProgressNumber,$(0)/$(1)
+MissionBoard,1,MissionProgressComplete,<%Decide> para obtener recompensas
+MissionBoard,1,CategoryMenu_GetAll,Recibir todas las recompensas ($(0))
+MissionBoard,1,MissionRewardConfirmTitle,ACEPTAR RECOMPENSAS
+MissionBoard,1,MissionRewardConfirmMsgAll,Estás a punto de recibir todas las recompensas.<br>¿Estás seguro de que deseas continuar?
+MissionBoard,1,MissionRewardConfirmYes,Sí
+MissionBoard,1,MissionRewardConfirmNo,No
+MissionBoard,1,MissionRewardConfirm_limited_Title,ACEPTAR RECOMPENSAS
+MissionBoard,1,MissionRewardConfirm_limited_Msg,Estás a punto de recibir las recompensas de la misión.<br>¿Estás seguro de que deseas continuar?<br><br><yellow>Nota: Solo puedes recibir esta recompensa una vez por cuenta.<br>Por favor, asegúrate de estar en el barco correcto al recibir estas recompensas.<c>
+MissionBoard,1,MissionRewardConfirm_limited_Yes,Sí
+MissionBoard,1,MissionRewardConfirm_limited_No,No
+MissionBoard,1,MissionRewardConfirm_All_limited_Title,ACEPTAR RECOMPENSAS
+MissionBoard,1,MissionRewardConfirm_All_limited_Msg,"Estás a punto de recibir las recompensas de la misión.<br>¿Estás seguro de que deseas continuar?<br><br><yellow>Nota: Uno o más de estos objetos solo pueden recibirse una vez por cuenta.<br>Por favor, asegúrate de estar en el barco correcto al recibir estas recompensas.<c><br>Si seleccionas [No], recibirás solo los objetos que no tienen un límite por cuenta."
+MissionBoard,1,MissionRewardConfirm_All_limited_Msg_Only,Estás a punto de recibir las recompensas de la misión.<br>¿Estás seguro de que deseas continuar?<br><br><yellow>Nota: Solo puedes recibir esta recompensa una vez por cuenta.<br>Por favor, asegúrate de estar en el barco correcto al recibir estas recompensas.<c>
+MissionBoard,1,MissionRewardConfirm_All_limited_Yes,Sí
+MissionBoard,1,MissionRewardConfirm_All_limited_No,No
+MissionBoard,1,MissionReward_Error_Close,Cerrar
+MissionBoard,1,MissionReward_Error_Inventorylimit,"No pudiste recibir el/los objeto(s) porque no tienes suficiente espacio en tu inventario,<br>o excederías tu límite de carga."
+MissionBoard,1,MissionReward_Error_limitTime,No pudiste recibir el/los objeto(s) porque han expirado.
+MissionBoard,1,MissionNoItem,No hay misiones seleccionables.
+MissionBoard,1,MissionGetReward_Header,Recompensas de misión recibidas.
+MissionBoard,1,MissionReward_RewardList_Header,Lista de recompensas
+MissionBoard,1,MissionReward_RewardList_Issue,Se recibió la siguiente recompensa(s).
+MissionBoard,1,MissionReward_RewardList_Next,Recibir siguientes recompensas
+MissionBoard,1,MissionReward_RewardList_Interrupt,Cancelar
+MissionBoard,1,MissionReward_RewardList_Close,Cerrar
+MissionBoard,1,MissionNotice_Issue_Header,<c f0df60>Aceptado<c>
+MissionBoard,1,MissionNotice_Issue_Number,...y $(0) más
+MissionBoard,1,MissionNotice_Achieve_Header,Completado
+MissionBoard,1,MissionNotice_Achieve_Number,...y $(0) más
+MissionBoard,1,SimpleStatus_NotOpen,Actualmente no tienes misiones aceptadas.
+MissionBoard,1,SimpleStatus_SharedShip,No puedes ver misiones en el Barco Universal.
+MissionBoard,1,MissionBoardCategoryMenuDaily,Misiones diarias
+MissionBoard,1,MissionBoardCategoryMenuWeekly,Misiones semanales
+MissionBoard,1,MissionBoardCategoryMenuLimited,Misiones por tiempo limitado
+MissionBoard,1,MissionBoardCategoryMenuGuidance,Misiones principales
+MissionBoard,1,MissionBoardCategoryMenuTier,-
+MissionBoard,1,MissionReward_Error_General_Header,Aceptar recompensas
+MissionBoard,1,MissionReward_Error_General_Msg,No se pueden recibir las recompensas.<br><br>Por favor, espera un momento e inténtalo de nuevo.
+MissionBoard,1,MissionReward_Error_Inventorylimit_Header,Aceptar recompensas
+MissionBoard,1,MissionReward_Error_Inventorylimit_Msg,"No pudiste recibir el/los objeto(s) porque no tienes suficiente espacio en tu inventario,<br>o excederías tu límite de carga."
+MissionBoard,1,MissionReward_Error_limitTime_Header,Aceptar recompensas
+MissionBoard,1,MissionReward_Error_limitTime_Msg,No pudiste recibir el/los objeto(s) porque han expirado.
+MissionBoard,1,MissionTracking_Change_toast,Misión a seguir cambiada.
+MissionBoard,1,MissionTracking_Change_error,La misión no puede ser seguida.
+MissionBoard,1,MissionMenu_ItemDetail_NoItem,No hay objetos de recompensa.
+MissionBoard,1,MissionClear_toast,Has completado misiones. Por favor, recibe tus recompensas de las Misiones ARKS en Misiones, dentro del Menú Principal.

@@ -1,0 +1,13 @@
+section,group,id,text
+Basic,0,Title,救難信号調査
+Basic,0,Explanation,惑星リリーパの地下坑道より、詳細不明の<br>救難信号が発せられていることがわかった。<br>遺留品の誤作動だと思われるが<br>放置しておくわけにもいかない。<br>アークス各員は、地下坑道へと赴き<br>救難信号の発信源付近を探れ。<br>近隣ではリリーパ族が多数目撃されている。<br>そちらも留意するように。<br>――――――――――――――――――――<br>失敗条件/救助の失敗
+Basic,1,Title,Distress Signal Investigation
+Basic,1,Explanation,"We have learned that a distress signal of unknown <br>origin is being relayed from the Underground Shafts <br>on the planet Lillipa. It may just be an old artifact <br>malfunctioning, but we need to check it out to be <br>sure. ARKS operatives should head to the <br>Underground Shafts and find the source of the <br>distress signal. Note that a large numbers of <br>Lillipans have been sighted in the vicinity.<br>----------------------------------------<br>You will fail this quest if the rescue is unsuccessful."
+QuestTarget,0,SimpleExplanation,要救助者を救助せよ！
+QuestTarget,1,SimpleExplanation,Rescue everyone in distress!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit

@@ -1,0 +1,41 @@
+﻿section,group,id,text
+common,0,IncidentName,エネルギーポッドを補充せよ！
+common,0,TrialBeginMsg,エネルギーポッドに補充しつつ<br>エネミーの攻撃から守れ！
+common,0,TrialAbstract,エネルギーポッドに補充しつつ<br>エネミーの攻撃から守れ！
+common,0,ChanceTime,エネミーの撃退に成功！<br>エネルギー結晶を回収せよ！
+common,1,IncidentName,¡Recarga las cápsulas de energía!
+common,1,TrialBeginMsg,¡Recarga las cápsulas de energía mientras<br>las defiende de los ataques enemigos!
+common,1,TrialAbstract,¡Recarga las cápsulas de energía mientras<br>las defiende de los ataques enemigos!
+common,1,ChanceTime,¡Mantén al enemigo a raya!<br>¡Recoge los cristales de energía!
+type9,0,NpcComOnBegin,この訓練では、エネルギー結晶を集めて<br>エネルギーポッドを満タンにすることが<br>目的です。
+type9,0,NpcComOnContainerPop,エネルギーポッドと結晶を転送します。<br>エネミーが狙ってきますので<br>どんどん倒しちゃってくださいね。
+type9,0,NpcComOnTargetPosition,エネルギーポッドが狙われています。<br>$(0)・$(1)、$(2)・$(3)へ<br>防衛に向かってください。
+type9,0,NpcComOnBossTargetPosition,$(0)に大型エネミー、出現。<br>$(1)のエネルギーポッドが<br>狙われています。
+type9,0,NpcComOnTimeLimit30,訓練完了まで、残り３０秒。<br>それまで耐えるか、すべてのポッドを<br>満タンにすると、クリアですよ。
+type9,0,NpcComOnSuccess,エネルギーポッドの補充、完了。<br>お疲れさまでした。
+type9,0,NpcComOnFailure,エネルギーポッド、満タンです。<br>これで、訓練は完了となります。<br>お疲れさまでした。
+type9,0,NpcComGaugeHp25,エネルギーポッド残量、２５％到達。<br>エネルギー結晶をざくざく回収して<br>補充しまくってください。
+type9,0,NpcComGaugeHp50,エネルギーポッド残量、５０％到達。<br>半分まで補充が終わりました。<br>引き続き、がんばってください。
+type9,0,NpcComGaugeHp75,エネルギーポッド残量、７５％到達。<br>ようやく終わりが見えてきましたね。<br>いい感じですよ。
+type9,0,NpcComGaugeHp90,エネルギーポッド残量、９０％到達。<br>満タンまで、あと一息です。<br>ラストスパートですよ。
+type22,0,NpcComOnBegin,この訓練では、エネルギー結晶を集めて<br>エネルギーポッドを満タンにすることが<br>目的です。
+type22,0,NpcComOnContainerPop,/atime2.5 /voice11_voice_navi23_bou_02 エネルギーポッドと結晶を転送します。<br>エネミーが狙ってきますので<br>どんどん倒しちゃってくださいね。
+type22,0,NpcComOnTargetPosition,/atime2.5 /voice11_voice_navi23_bou_07 エネルギーポッドが狙われています。<br>$(0)・$(1)、$(2)・$(3)へ<br>防衛に向かってください。
+type22,0,NpcComOnBossTargetPosition,/atime2.5 /voice11_voice_navi23_bou_08 $(0)に大型エネミー、出現。<br>$(1)のエネルギーポッドが<br>狙われています。
+type22,0,NpcComOnTimeLimit30,/atime2.5 /voice11_voice_navi23_bou_09 訓練完了まで、残り３０秒。<br>それまで耐えるか、すべてのポッドを<br>満タンにすると、クリアですよ。
+type22,0,NpcComOnSuccess,エネルギーポッドの補充、完了。<br>お疲れさまでした。
+type22,0,NpcComOnFailure,エネルギーポッド、満タンです。<br>これで、訓練は完了となります。<br>お疲れさまでした。
+type22,0,NpcComGaugeHp25,/atime2.5 /voice11_voice_navi23_bou_03 エネルギーポッド残量、２５％到達。<br>エネルギー結晶をざくざく回収して<br>補充しまくってください。
+type22,0,NpcComGaugeHp50,/atime2.5 /voice11_voice_navi23_bou_04 エネルギーポッド残量、５０％到達。<br>半分まで補充が終わりました。<br>引き続き、がんばってください。
+type22,0,NpcComGaugeHp75,/atime2.5 /voice11_voice_navi23_bou_05 エネルギーポッド残量、７５％到達。<br>ようやく終わりが見えてきましたね。<br>いい感じですよ。
+type22,0,NpcComGaugeHp90,エネルギーポッド残量、９０％到達。<br>満タンまで、あと一息です。<br>ラストスパートですよ。
+type22,1,NpcComOnBegin,El objetivo de este ejercicio<br>es recolectar cristales de energía y<br>llenar las cápsulas de energía.
+type22,1,NpcComOnContainerPop,estales.<br>Haz tu mejor esfuerzo para derrotar a los enemigos<br>antes de que los alcancen.
+type22,1,NpcComOnTargetPosition,"/atime2.5 /voice11_voice_navi23_bou_07 Se están atacando cápsulas de energía.<br>$(0)-$(1), $(2)-$(3)<br>requieren medidas defensivas."
+type22,1,NpcComOnBossTargetPosition,/atime2.5 /voice11_voice_navi23_bou_08 Enemigo grande avistado<br>cerca de $(0).<br>Está apuntando a la cápsula de energía $(1).
+type22,1,NpcComOnTimeLimit30,/atime2.5 /voice11_voice_navi23_bou_09 30 seconds remaining until the session ends.<br>Stand your ground or fill up<br>all the pods to clear the mission.
+type22,1,NpcComOnSuccess,Todas las cápsulas de energía recargadas.<br>Gran trabajo por ahí.
+type22,1,NpcComOnFailure,Todas las cápsulas de energía se recargaron.<br>La sesión ha finalizado.<br>Muy bien hecho.
+type22,1,NpcComGaugeHp25,/atime2.5 /voice11_voice_navi23_bou_03 Recarga de cápsula de energía al 25%.<br>Recoge más cristales de energía<br>para seguir recargando.
+type22,1,NpcComGaugeHp50,%.<br>Hemos llegado a la mitad del camino.<br>Sigan con el buen trabajo.
+type22,1,NpcComGaugeHp75,/atime2.5 /voice11_voice_navi23_bou_05 Recarga de cápsula de energía al 75%.<br>El final está a la vista.<br>¡Lo estás haciendo genial!

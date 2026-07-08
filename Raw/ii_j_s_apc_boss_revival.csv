@@ -1,0 +1,31 @@
+section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,$(0)を撃破せよ！
+common,0,TrialAbstract,$(0)を撃破せよ！
+common,1,IncidentName,Exterminate the $(0) Presence
+common,1,TrialBeginMsg,Defeat any $(0) you find!
+common,1,TrialAbstract,Defeat any $(0) you find!
+type1,0,NpcComOnBegin,近辺に交戦中のアークスが居ます！<br>至急合流し、協力して<br>周囲一帯の敵を撃退して下さい！
+type1,0,NpcComOnSuccess,/face2 お疲れ様でした！<br>いい協力関係だったと思います！
+type1,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>エネミーに襲われています！
+type1,0,NpcComOnBeginP2,周囲のエネミーを排除し<br>安全を確保してください。
+type1,1,NpcComOnBegin,"There's an ARKS operative fighting nearby!<br>Converge on their location quickly, and help them<br>drive back all enemies in the area!"
+type1,1,NpcComOnSuccess,/face2 Well done! You made a great team!
+type1,1,NpcComOnBeginP1,Eyes on $(0)! Their Auxiliary is being<br>attacked by an enemy!
+type1,1,NpcComOnBeginP2,Eliminate the enemy and secure the area.
+type6,0,NpcComOnBegin,交戦中のアークスの反応を付近に捕捉。<br>合流し、協力して、周囲の敵性存在を<br>撃退してください。
+type6,0,NpcComOnSuccess,敵性勢力の全滅を確認。<br>協力での任務遂行、見事です。
+type6,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>敵性存在の襲撃を受けています。
+type6,0,NpcComOnBeginP2,周囲の敵性存在を排除し<br>安全の確保を。
+type6,1,NpcComOnBegin,"We've picked up a signal from ARKS operatives<br>fighting nearby! Join them, and help them drive<br>back the enemy presence in the area!"
+type6,1,NpcComOnSuccess,Full eradication of enemy forces confirmed. All<br>thanks to your cooperation. Excellent work!
+type6,1,NpcComOnBeginP1,Heads up for $(0).<br>Their Auxiliary is under attack!
+type6,1,NpcComOnBeginP2,Eliminate the enemy presence and secure the area.
+type9,0,NpcComOnBegin,<%me>さん！<br>近くで交戦中のアークスがいます！<br>合流の後、協力して敵性存在の撃退を！
+type9,0,NpcComOnSuccess,お疲れさまでした！<br>突然の共闘でしたが<br>上手く連携できてましたね！
+type9,0,NpcComOnBeginP1,$(0)さんの<br>サポートパートナーが襲われています！<br>援護してあげてください！
+type9,0,NpcComOnBeginP2,周囲のエネミーを撃退し、安全確保！<br>よろしくお願いします！
+type9,1,NpcComOnBegin,"<%me>! There are ARKS <br>operatives fighting nearby! Join them, then help <br>them back the enemy presence!"
+type9,1,NpcComOnSuccess,Good job! Even thrown together like that you made<br>a great team!
+type9,1,NpcComOnBeginP1,Eyes on $(0)! Their auxiliary is being <br>attacked! Give them some backup!
+type9,1,NpcComOnBeginP2,Drive the enemy back and secure the area! We're<br>counting on you!

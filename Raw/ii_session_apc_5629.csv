@@ -1,0 +1,21 @@
+section,group,id,text
+5630,0,Begin,/ci1 2 よう、<%me>。<br>いい所を見せたいのは山々だが……<br>すまん、力を貸してくれ！
+5630,0,Success,/ci2 1 さすがだな、助かったぞ！<br>あとは、オレがやるべきことをやる！<br>応援よろしく頼むぞ！
+5630,0,Dead,お、おのれ……！
+5630,0,BuddyDead,マールー、大丈夫か！？<br>安心して休んでてくれ……<br>これ以上、手出しはさせない！
+5630,1,Begin,"/ci1 2 Yo, <%me>. I have a lot<br>of great things to show you, but...<br>Give me a hand first!"
+5630,1,Success,/ci2 1 I knew I could count on you!<br>Now I can focus on my stuff!<br>Looking forward to your support!
+5630,1,Dead,"Oof, I..."
+5630,1,BuddyDead,"Marlu, are you okay?!<br>Don't worry--justtake it easy.<br>I won't let them lay another hand on you!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展51
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

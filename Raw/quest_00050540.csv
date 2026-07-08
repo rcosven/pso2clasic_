@@ -1,0 +1,33 @@
+section,group,id,text
+Basic,0,Title,解き放たれし鋼鉄の威信
+Basic,0,Explanation,惑星・地球の日本近海において<br>巨大な幻創種の反応を確認した。<br>幻創種は、都市部へと侵攻を開始しており<br>このまま放置すれば、現実の世界にも<br>大きな被害が出ることが予測される。<br>アークス各員は、至急現地へと赴き<br>目標を撃破し、その侵攻を阻止せよ。<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>失敗条件/制限時間の経過
+Basic,1,Title,The Dignity of Steel Unleashed
+Basic,1,Explanation,We have confirmed readings corresponding to a <br>massive phantasm from the Japanese Coastal<br>Waters on planet Earth. The Phantasm has started<br>its assault on urban areas and significant damage<br>is anticipated if nothing is done. ARKS members are<br>to proceed to the designated waypoint and defeat<br>the target to prevent further attacks.<br>-------------------------------------------<br>This quest can only be completed $(0) time(s).<br>You will fail this quest if you exceed the time limit.
+QuestTarget,0,SimpleExplanation,幻創戦艦・大和を撃退せよ！
+QuestTarget,1,SimpleExplanation,Repel the Phantasm Battleship Yamato!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+PreTransportDirection,0,NpcComMsg1,これより、太平洋特定海域で検知された<br>超巨大反応の迎撃作戦を開始します。
+PreTransportDirection,0,NpcComMsg2,まずは、目標の移動手段を封じます。<br>出撃後Ａ．Ｉ．Ｓで新型凍結弾を輸送し<br>目標を付近の海ごと凍結させます。
+PreTransportDirection,0,NpcComMsg3,その後、目標を一気に撃破してください。<br>ただし、目標の武装状況から、かなりの<br>反撃が予想されます……お気を付けて。
+PreTransportDirection,1,NpcComMsg1,"In a moment, you'll be teleported to<br>a region of Earth's Pacific Ocean, where<br>we've detected a massive energy signature."
+PreTransportDirection,1,NpcComMsg2,"Our first priority is holding the target still.<br>AIS units will deliver our new freezing rounds,<br>which we'll fire into the waters around it."
+PreTransportDirection,1,NpcComMsg3,"After that, destroy the target as swiftly as possible.<br>But be careful... Judging by its armaments,<br>we expect a fierce counterattack."
+PreTransportDirection1,0,NpcComMsg1,目標は飛行を開始しています。<br>都市部に接近される前に、<br>早急に撃破しなければなりません。
+PreTransportDirection1,0,NpcComMsg2,A.I.Sの新装備「ハイブースト」を駆使して<br>目標に接近、撃破してください。<br>ご武運を、お祈りしています！
+PreTransportDirection1,1,NpcComMsg1,The target is now airborne.<br>We have to destroy it before it can reach the cities.
+PreTransportDirection1,1,NpcComMsg2,Use the AIS's newly equipped Hi-Boost system<br>to approach and attack the target.<br>We're rooting for you!
+AreaName,0,Area0S,日本近海
+AreaName,0,Area0L,惑星・地球　日本近海
+AreaName,0,Area1S,日本近海
+AreaName,0,Area1L,惑星・地球　日本近海
+AreaName,1,Area0S,Japanese Coastal Waters
+AreaName,1,Area0L,Earth - Japanese Coastal Waters
+AreaName,1,Area1S,Japanese Coastal Waters
+AreaName,1,Area1L,Earth - Japanese Coastal Waters

@@ -1,0 +1,143 @@
+section,group,id,text
+EndResult,0,EndResult_Title,今回の防衛結果と戦友たち
+EndResult,0,EndResult_Name,キャラクター名
+EndResult,0,EndResult_Comment,<pict Comment>コメント
+EndResult,0,EndResult__Refresh,更新
+EndResult,0,EndResult_CommentEdit,<pict Comment>編集
+EndResult,0,EndResult_CommentEdit_Help,コメントを編集する
+EndResult,0,EndResult_GoodJob,-
+EndResult,0,EndResult_GoodJob_Help,グッジョブを送る
+EndResult,0,EndResult_GoodJobAll,全員にグッジョブ
+EndResult,0,EndResult_GoodJobAllFailed,グッジョブ送信を行える対象がいません。
+EndResult,0,EndResult_Friend,-
+EndResult,0,EndResult_Friend_Help,フレンド登録要請の送信/承認
+EndResult,0,EndResult_FriendAll,全員にフレンド登録要請
+EndResult,0,EndResult_FriendAllFailed,フレンド登録要請を送ることができる対象がいません。
+EndResult,0,EndResult_Campship,閉じる
+EndResult,0,Record_Title,個人詳細
+EndResult,0,Name_Title,プレイヤーIDネーム
+EndResult,0,Record_Killed,撃破数
+EndResult,0,Record_Material,獲得正結晶
+EndResult,0,Record_Conduce,貢献度
+EndResult,0,Record_Licence,コードネーム
+EndResult,0,Preview,プレビュー
+EndResult,0,Record_Change,<pict Sign_TRIANGLE>切替
+EndResult,0,CommentEdit_Title,戦友たちへのメッセージ
+EndResult,0,CommentEdit_Message,「今回の防衛結果と戦友たち」に表示する<br>コメントを設定してください。<br>この設定は、次回以降の採掘基地防衛戦にも引き継がれます。<br>コメントは、何度でも編集し直すことができます。
+EndResult,0,FriendList_Confirm,全員に<br>フレンド登録要請を送ることができます。<br><br>メッセージを添えることができます。<br>下記のメッセージで<br>フレンド登録要請を送りますか？
+EndResult,1,EndResult_Title,CURRENT DEFENSIVE OUTCOMES AND COMRADES
+EndResult,1,EndResult_Name,Character Name
+EndResult,1,EndResult_Comment,<pict Comment> Comments
+EndResult,1,EndResult__Refresh,Update
+EndResult,1,EndResult_CommentEdit,<pict Comment> Edit
+EndResult,1,EndResult_CommentEdit_Help,Edit Comments
+EndResult,1,EndResult_GoodJob,-
+EndResult,1,EndResult_GoodJob_Help,Send Kudos
+EndResult,1,EndResult_GoodJobAll,Send Kudos to All
+EndResult,1,EndResult_GoodJobAllFailed,No recipients available for Kudos.
+EndResult,1,EndResult_Friend,-
+EndResult,1,EndResult_Friend_Help,Send/Accept Friend Request
+EndResult,1,EndResult_FriendAll,Send Friend Request to All
+EndResult,1,EndResult_FriendAllFailed,No recipients available for Friend request.
+EndResult,1,EndResult_Campship,Close
+EndResult,1,Record_Title,PERSONAL DETAILS
+EndResult,1,Name_Title,Player ID Name
+EndResult,1,Record_Killed,Kill Count
+EndResult,1,Record_Material,Positive Crystals Earned
+EndResult,1,Record_Conduce,Contribution Level
+EndResult,1,Record_Licence,Code Name
+EndResult,1,Preview,Preview
+EndResult,1,Record_Change,Switch <pict Sign_TRIANGLE>
+EndResult,1,CommentEdit_Title,MESSAGE TO COMRADES
+EndResult,1,CommentEdit_Message,Please choose settings for the comments displayed in<br>[Current Defensive Outcomes and Comrades]. These settings <br>will be used for the next Mining Base Defense Operation <br>as well. You can edit comments as many times as you wish.
+EndResult,1,FriendList_Confirm,This function allows you to send <br>Friend Requests to everyone.<br><br>You can also attach a message. <br>Send Friend Requests with the following message?
+Terminal,0,Terminal_Title,$(0)拠点端末
+Terminal,0,Terminal_BaseTitle,$(0)防衛ソケット
+Terminal,0,Terminal_Point,$(0)拠点
+Terminal,0,Terminal_Label_1,アクセス内容
+Terminal,0,Terminal_Label_2,必要正結晶pt
+Terminal,0,Terminal_Use,使用可
+Terminal,0,Terminal_Used,使用済み
+Terminal,0,Terminal_Back,戻る
+Terminal,0,Terminal_MaterialPoint,$(0) ｐｔ
+Terminal,0,Terminal_FullTitle,$(0)拠点
+Terminal,0,Terminal_FullBaseTitle,$(0)防衛ソケット
+Terminal,0,Terminal_Help,<c f0df60>正結晶ｐｔを集めることで、拠点を守るための様々なアクションを発動させることができます。<c>
+Terminal,0,Terminal_InfoTitle,詳細説明
+Terminal,0,Terminal_CheckTitle,確認メッセージ
+Terminal,0,Terminal_CheckMessage,$(0)を行います。<br>よろしいですか？
+Terminal,0,Terminal_ErrorMessage,その機能は現在使用中のため、<br>起動を行うことができません。
+Terminal,0,Terminal_ErrorMessage_2,拠点の耐久値が最大であるため<br>耐久値回復は行いませんでした。
+Terminal,0,Terminal_ErrorMessage_3,防衛ソケットが浄化済みのため、<br>防衛ソケット浄化を行いませんでした。
+Terminal,0,Terminal_ErrorMessage_4,防衛ソケットが使用不能なため、<br>A.I.S起動を行うことができません。
+Terminal,0,Terminal_ErrorMessage_5,防衛ソケットが使用不能なため、<br>装置の設置を行うことができません。
+Terminal,0,Terminal_BreakTitle,メッセージ
+Terminal,0,Terminal_BreakMessage,この拠点は破壊されているため<br>アクセスできません。
+Terminal,0,Terminal_FinishTitle,メッセージ
+Terminal,0,Terminal_FinishMessage,クエストが終了しているため<br>アクセスすることができません。
+Terminal,0,Terminal_VehicleTitle,メッセージ
+Terminal,0,Terminal_VehicleMessage,乗り物に搭乗しているため<br>アクセスすることができません。
+Terminal,0,Terminal_Action_1,バーストバリア起動
+Terminal,0,Terminal_Action_2,耐久値回復
+Terminal,0,Terminal_Action_3,A.I.S起動
+Terminal,0,Terminal_Action_4,銃座設置
+Terminal,0,Terminal_Action_5,フォトン粒子砲設置
+Terminal,0,Terminal_Action_6,防衛ソケット浄化
+Terminal,0,Terminal_ActionInfoCommon,<c f0df60>$(0)ｐt以上から<br>使用可能になります。<br>(正結晶ptは消費しません)<c>
+Terminal,0,Terminal_ActionInfoMaterial,現在の正結晶  $(0)ｐt
+Terminal,0,Terminal_ActionInfo_1,拠点周辺のエネミーを攻撃し<br>一時的に拠点を守ります。
+Terminal,0,Terminal_ActionInfo_2,拠点の耐久値を回復します。
+Terminal,0,Terminal_ActionInfo_3,A.I.Sを起動します。
+Terminal,0,Terminal_ActionInfo_4,防衛ソケットに銃座を設置します。
+Terminal,0,Terminal_ActionInfo_5,防衛ソケットにフォトン粒子砲を<br>設置します。
+Terminal,0,Terminal_ActionInfo_6,侵食された防衛ソケットを浄化します。
+Terminal,1,Terminal_Title,BASE TERMINALS: $(0)
+Terminal,1,Terminal_BaseTitle,DEFENSE SOCKETS: $(0)
+Terminal,1,Terminal_Point,Bases: $(0)
+Terminal,1,Terminal_Label_1,Access Details
+Terminal,1,Terminal_Label_2,Positive Crystal Pts Needed
+Terminal,1,Terminal_Use,Can Be Used
+Terminal,1,Terminal_Used,Already Used
+Terminal,1,Terminal_Back,Back
+Terminal,1,Terminal_MaterialPoint,$(0) pt
+Terminal,1,Terminal_FullTitle,BASES: $(0)
+Terminal,1,Terminal_FullBaseTitle,DEFENSE SOCKETS: $(0)
+Terminal,1,Terminal_Help,<c f0df60>Gathering Positive Crystal points allows you to perform various actions to defend your base.<c>
+Terminal,1,Terminal_InfoTitle,DETAILED DESCRIPTION
+Terminal,1,Terminal_CheckTitle,CONFIRMATION MESSAGE
+Terminal,1,Terminal_CheckMessage,You are about to $(0).<br>Are you sure you wish to proceed?
+Terminal,1,Terminal_ErrorMessage,"Because this feature is currently in use,<br>you cannot activate it."
+Terminal,1,Terminal_ErrorMessage_2,Recover Structural Integrity failed because the base's<br>Structural Integrity is already at the maximum value.
+Terminal,1,Terminal_ErrorMessage_3,Defense Socket purification failed because the defense socket<br>has already been purified.
+Terminal,1,Terminal_ErrorMessage_4,You cannot activate AIS because the Defense Socket<br>is unusable.
+Terminal,1,Terminal_ErrorMessage_5,You cannot install anything because the Defense Socket<br>is unusable.
+Terminal,1,Terminal_BreakTitle,MESSAGE
+Terminal,1,Terminal_BreakMessage,You cannot access this base because it has been destroyed.
+Terminal,1,Terminal_FinishTitle,MESSAGE
+Terminal,1,Terminal_FinishMessage,You cannot access that because the quest has ended.
+Terminal,1,Terminal_VehicleTitle,MESSAGE
+Terminal,1,Terminal_VehicleMessage,You cannot access that because you are inside a vehicle.
+Terminal,1,Terminal_Action_1,Activate Burst Barrier
+Terminal,1,Terminal_Action_2,Recover Structural Integrity
+Terminal,1,Terminal_Action_3,Activate AIS
+Terminal,1,Terminal_Action_4,Install Emplacement
+Terminal,1,Terminal_Action_5,Install Photon Particle Cannon
+Terminal,1,Terminal_Action_6,Purify Defense Socket
+Terminal,1,Terminal_ActionInfoCommon,<c f0df60>Becomes useable at $(0) or more points.<br>(Does not consume Positive Crystal points)<c>
+Terminal,1,Terminal_ActionInfoMaterial,Current Positive Crystal Pt: $(0)
+Terminal,1,Terminal_ActionInfo_1,Attacks enemies near the base while<br>protecting it temporarily.
+Terminal,1,Terminal_ActionInfo_2,Recovers the Structural Integrity of a base.
+Terminal,1,Terminal_ActionInfo_3,Activates the AIS.
+Terminal,1,Terminal_ActionInfo_4,Installs a Turret in a Defense Socket.
+Terminal,1,Terminal_ActionInfo_5,Installs a Photon Particle Cannon in a<br>Defense Socket.
+Terminal,1,Terminal_ActionInfo_6,Purifies a corrupted Defense Socket.
+WaveResult,0,Result_Label_1,順位
+WaveResult,0,Result_Label_2,キャラクター名
+WaveResult,0,Result_Label_3,貢献度
+WaveResult,0,Result_Label_4,Score
+WaveResult,0,Result_Title,ウェーブ$(0)　リザルト
+WaveResult,1,Result_Label_1,Ranking
+WaveResult,1,Result_Label_2,Character Name
+WaveResult,1,Result_Label_3,Contribution Level
+WaveResult,1,Result_Label_4,Score
+WaveResult,1,Result_Title,RESULTS FOR WAVE $(0)

@@ -1,0 +1,23 @@
+section,group,id,text
+5620,0,Begin,/ci1 2 あ、<%me>様！<br>すみませんが、ご助力いただけますか？<br>兄様、増援ですよ！
+5620,0,Success,/ci2 2 ご助力、ありがとうございました！<br>それから、メリークリスマス！　です！<br>うふふ、なんだか楽しいですね。
+5620,0,Failure,これ以上は厳しいですね……<br>とても心苦しいですが……<br>兄様、撤退しましょう。
+5620,0,Dead,申し訳、ありません……<br>残念ですが、兄様……<br>あとは、お願いいたします。
+5620,0,BuddyDead,……兄様！<br>ご無理をなさらずに！<br>あとは、私にお任せください！
+5620,1,Begin,"/ci1 2 Ah, <%me>! Sorry, but<br>can you give us a hand?<br>Brother, reinforcements have arrived!"
+5620,1,Success,"/ci2 2 Thanks for all your help!<br>And a Merry Christmas to you!<br>Heheh, I love this time of year."
+5620,1,Failure,"We can't keep this up much longer.<br>Sorry to do this, but...<br>Let's retreat for now, brother."
+5620,1,Dead,"I-I'm sorry...<br>Please, brother...<br>I'm leaving the rest to you."
+5620,1,BuddyDead,Brother! Don't push<br>yourself too hard! Please<br>leave the rest to me!
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

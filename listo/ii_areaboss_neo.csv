@@ -1,0 +1,105 @@
+﻿section,group,id,text
+common,0,IncidentName,強敵を撃破せよ！
+common,0,TrialBeginMsg,全ての強敵を撃破せよ！
+common,0,TrialAbstract,全ての強敵を撃破せよ！
+common,1,IncidentName,¡Derrota al jefe!
+common,1,TrialBeginMsg,¡Derrota a todos los enemigos jefes!
+common,1,TrialAbstract,¡Derrota a todos los enemigos jefes!
+type1,0,NpcComOnBegin,緊急通達。<br>強力な敵性反応を確認<br>早急な撃破をお願いします。
+type1,0,NpcComOnBeginMultiEnemy,開始、複数エネミー
+type1,0,NpcComOnSuccess,敵性反応、消失しました<br>各員の努力に感謝します。
+type1,0,NpcComOnFailure,/face4 交戦中の隊員の反応が消失しました。<br>ただちにキャンプシップへの<br>転送を図ります。
+type1,0,HP_Under_50,$(0)残存体力、低下！
+type1,0,HP_Under_10,$(0)残存体力、あとわずかです！
+type1,0,NpcComLastEnemy,残り一体です！
+type1,0,NpcCom2RemainingEnemy,残り二体です！
+type1,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga. Muévete a<br>y participa de inmediato.
+type1,1,NpcComOnBeginMultiEnemy,Emergencia. Detectada fuerte presencia enemiga. Muévete a<br>y participa de inmediato.
+type1,1,NpcComOnSuccess,Presencia enemiga eliminada. Buen trabajo a todos.
+type1,1,NpcComOnFailure,/face4 Las lecturas muestran todas las operaciones inactivas. Teletransportarte<br>de regreso a la nave Gateway.
+type1,1,HP_Under_50,¡El HP de $(0) se está agotando!
+type1,1,HP_Under_10,El HP de $(0) es extremadamente bajo.
+type1,1,NpcComLastEnemy,¡Solo queda uno!
+type1,1,NpcCom2RemainingEnemy,¡Solo queda uno!
+type2,0,NpcComOnBegin,緊急通達だ。<br>強力な敵性反応が確認された。<br>早急に撃破しろ。
+type2,0,NpcComOnBeginMultiEnemy,開始、複数エネミー
+type2,0,NpcComOnSuccess,敵性反応の消失を確認。<br>よくやったな。
+type2,0,NpcComOnFailure,ちっ、こちらがやられたか……<br>キャンプシップへの転送を行う。
+type2,0,HP_Under_50,$(0)残存体力、低下！
+type2,0,HP_Under_10,$(0)残存体力、あとわずかだ！
+type2,0,NpcComLastEnemy,残り一体だ！　気を抜くな！
+type2,0,NpcCom2RemainingEnemy,残り二体だ！　気を抜くな！
+type2,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga. Muévete a<br>y participa de inmediato.
+type2,1,NpcComOnBeginMultiEnemy,Emergencia. Detectada fuerte presencia enemiga. Muévete a<br>y participa de inmediato.
+type2,1,NpcComOnSuccess,Presencia enemiga eliminada. Buen camino.
+type2,1,NpcComOnFailure,Maldita sea... Hemos perdido este. Teletransportarte<br>de regreso a la nave Gateway.
+type2,1,HP_Under_50,¡El HP de $(0) se está agotando!
+type2,1,HP_Under_10,¡El HP de $(0) casi se ha acabado!
+type2,1,NpcComLastEnemy,¡Falta uno mas! ¡Mantengase concentrado!
+type2,1,NpcCom2RemainingEnemy,¡Falta uno mas! ¡Mantengase concentrado!
+type3,0,NpcComOnBegin,きっ、緊急通達ですー！<br>強力な敵さんの反応を確認！<br>急いで撃破しちゃってくださーい！
+type3,0,NpcComOnBeginMultiEnemy,開始、複数エネミー
+type3,0,NpcComOnSuccess,/face2 敵さんの反応消失ーっと！<br>みなさん、お疲れ様でしたー！
+type3,0,NpcComOnFailure,/face6 あああー……交戦中のアークス<br>やられちゃいましたぁ……<br>キャンプシップへ転送しますー……
+type3,0,HP_Under_50,$(0)残存体力、低下ですよー！
+type3,0,HP_Under_10,$(0)残存体力、あとわずかですよー！
+type3,0,NpcComLastEnemy,/face2 あと一体！　あと一体！
+type3,0,NpcCom2RemainingEnemy,/face2 あと一体！　あと二体！
+type3,1,NpcComOnBegin,¡Emergencia! ¡Poderosa presencia enemiga detectada!<br>¡Elimínalos de una vez!
+type3,1,NpcComOnBeginMultiEnemy,¡Emergencia! ¡Poderosa presencia enemiga detectada!<br>¡Elimínalos de una vez!
+type3,1,NpcComOnSuccess,"/face2 ¡Presencia hostil eliminada! ¡Excelente trabajo,<br>a todos!"
+type3,1,NpcComOnFailure,/cara6 ¡No! ¡ARKS cierra sus operaciones! Teletransportándonos de regreso al Portal<br>Enviar ahora...
+type3,1,HP_Under_50,¡$(0) ha sufrido daйos importantes!
+type3,1,HP_Under_10,¡$(0) esta casi terminado!
+type3,1,NpcComLastEnemy,/face2 ¡Uno mas! ¡Solo falta uno mas!
+type3,1,NpcCom2RemainingEnemy,/face2 ¡Uno mas! ¡Solo falta uno mas!
+type6,0,NpcComOnBegin,緊急通達。<br>強力な敵性存在の反応を感知。<br>迅速な対応を望みます。
+type6,0,NpcComOnBeginMultiEnemy,開始、複数エネミー
+type6,0,NpcComOnSuccess,敵性反応、消失。<br>任務完了を確認しました。
+type6,0,NpcComOnFailure,継続戦闘、不可。<br>キャンプシップに強制転送します。
+type6,0,HP_Under_50,$(0)残存体力、低下。
+type6,0,HP_Under_10,$(0)残存体力、あとわずかです。
+type6,0,NpcComLastEnemy,残りの敵性存在は一体です。
+type6,0,NpcCom2RemainingEnemy,残りの敵性存在は二体です。
+type6,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga. Prepare a<br>para participar.
+type6,1,NpcComOnBeginMultiEnemy,Emergencia. Detectada fuerte presencia enemiga. Prepare a<br>para participar.
+type6,1,NpcComOnSuccess,Presencia hostil eliminada. Misión cumplida.
+type6,1,NpcComOnFailure,Estás fuera de servicio. Te teletransportaré de regreso<br>a la nave Gateway.
+type6,1,HP_Under_50,El HP de $(0) se está agotando.
+type6,1,HP_Under_10,El HP de $(0) es extremadamente bajo.
+type6,1,NpcComLastEnemy,Solo queda uno.
+type6,1,NpcCom2RemainingEnemy,Solo queda uno.
+type9,0,NpcComOnBegin,さあ、すっごい強敵の登場です。<br>シミュレーション精度は最高ですよ。<br>がんばってください。
+type9,0,NpcComOnBeginMultiEnemy,さあ、すっごい強敵の登場です。<br>今回は、複数との戦闘になります。<br>がんばってください。
+type9,0,NpcComOnSuccess,わあ……すごいです。<br>強敵の撃破、確認しました。<br>お疲れさまでした。
+type9,0,NpcComOnFailure,制限時間になりました。<br>残念ですが、訓練は終了です。<br>お疲れさまでした。
+type9,0,NpcComLastEnemy,強敵、撃破。<br>あと少しです。
+type9,0,NpcCom2RemainingEnemy,強敵、撃破。<br>その調子です。
+type9f,0,NpcComOnBegin,緊急通達です！<br>強力な敵性反応を確認！<br>すみやかに対処をお願いします！
+type9f,0,NpcComOnBeginMultiEnemy,開始、複数エネミー
+type9f,0,NpcComOnSuccess,敵性反応の消失を確認！<br>お疲れさまでした！
+type9f,0,NpcComOnFailure,これ以上の任務続行は危険です。<br>回収させてもらいますよ！
+type9f,0,HP_Under_50,$(0)の<br>残存体力低下！<br>その調子です！
+type9f,0,HP_Under_10,$(0)の<br>残存体力、あとわずかです！
+type9f,0,NpcComLastEnemy,残り一体です！
+type9f,0,NpcCom2RemainingEnemy,残り二体です！
+type9f,1,NpcComOnBegin,¡Emergencia! ¡Fuerte presencia enemiga detectada! ¡Sacalos<br>rapidamente!
+type9f,1,NpcComOnBeginMultiEnemy,¡Emergencia! ¡Fuerte presencia enemiga detectada! ¡Sacalos<br>rapidamente!
+type9f,1,NpcComOnSuccess,"Nyau se ha retirado. Me imagino que __0__ lo veremos más, así que simplemente enjuágate y __0__ repite cuando llegue el momento."
+type9f,1,NpcComOnFailure,¡Es demasiado arriesgado dejarte continuar! ¡Te traeré<br>de regreso ahora!
+type9f,1,HP_Under_50,¡La salud de $(0) está decayendo!<br>¡Sigue así!
+type9f,1,HP_Under_10,¡$(0) está en sus últimas etapas!
+type9f,1,NpcComLastEnemy,¡Solo queda uno!
+type9f,1,NpcCom2RemainingEnemy,¡Solo queda uno!
+type22,0,NpcComOnBegin,さあ、すっごい強敵の登場です。<br>シミュレーション精度は最高ですよ。<br>がんばってください。
+type22,0,NpcComOnBeginMultiEnemy,さあ、すっごい強敵の登場です。<br>今回は、複数との戦闘になります。<br>がんばってください。
+type22,0,NpcComOnSuccess,わあ……すごいです。<br>強敵の撃破、確認しました。<br>お疲れさまでした。
+type22,0,NpcComOnFailure,制限時間になりました。<br>残念ですが、訓練は終了です。<br>お疲れさまでした。
+type22,0,NpcComLastEnemy,強敵、撃破。<br>あと少しです。
+type22,0,NpcCom2RemainingEnemy,強敵、撃破。<br>その調子です。
+type22,1,NpcComOnBegin,¡Aquí viene un enemigo de aspecto duro!<br>El detalle de esta simulación es increíble.<br>¡Dale tu mejor paliza!
+type22,1,NpcComOnBeginMultiEnemy,¡Aquí vienen algunos enemigos de aspecto duro!<br>Parece que esta vez hay varios.<br>¡Haz lo peor que puedas!
+type22,1,NpcComOnSuccess,Vaya... increíble.<br>Destrucción de todos los objetivos confirmada.<br>¡Gran trabajo!
+type22,1,NpcComOnFailure,"Se nos acabó el tiempo.<br>Lamento decirlo, pero esta sesión terminó.<br>¡Los conseguirás la próxima vez!"
+type22,1,NpcComLastEnemy,Enemigo derrotado.<br>Sólo un poquito más.
+type22,1,NpcCom2RemainingEnemy,Enemigo derrotado.<br>¡Así es como se hace!

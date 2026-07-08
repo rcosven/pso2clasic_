@@ -1,0 +1,37 @@
+section,group,id,text
+common,0,IncidentName,$(0)討伐
+common,0,TrialBeginMsg,$(0)を倒せ！
+common,0,TrialAbstract,$(0)を討伐せよ！
+common,1,IncidentName,$(0) Suppression
+common,1,TrialBeginMsg,Defeat the $(0)!
+common,1,TrialAbstract,Suppress the $(0)!
+type1,0,NpcComOnPreBegin,ファンダージ・ビットの破壊を<br>確認しました！　お疲れ様です！<br>……って、え？　大きな反応！？
+type1,0,NpcComOnBegin,緊急連絡！<br>新手のエネミーの接近を確認！
+type1,0,NpcComOnSuccess,$(0)の<br>撃破を確認しました！<br>各員の協力に感謝します！
+type1,1,NpcComOnPreBegin,Destruction of the Phandaj Bits confirmed! Great<br>work! ...Wait. Getting a huge reading?
+type1,1,NpcComOnBegin,Emergency! New enemy presence approaching!
+type1,1,NpcComOnSuccess,Destruction of $(0) confirmed! Thank you to all<br>operatives for your help!
+type2,0,NpcComOnPreBegin,ファンダージ・ビットの破壊を確認。<br>やれやれ、一段落だな……<br>……いや待て、何だこの反応は！
+type2,0,NpcComOnBegin,新手の敵性反応の接近を確認！<br>警戒を怠るな。
+type2,0,NpcComOnSuccess,目標の撃破を確認した。<br>各員、通常任務に戻れ。
+type2,1,NpcComOnPreBegin,"Destruction of the Phandaj Bits confirmed!<br>Geez-Louise, time for a quick break... No, wait.<br>What the hell is this signal!?"
+type2,1,NpcComOnBegin,Confirming a new enemy presence approaching!<br>Remain on alert!
+type2,1,NpcComOnSuccess,"All targets confirmed destroyed. All operatives,<br>resume your regular missions."
+type3,0,NpcComOnPreBegin,やりましたね！<br>ファンダージ・ビット、破壊！<br>……あれ？　この反応、おっきいです！
+type3,0,NpcComOnBegin,わわわっ！　新手！？　<br>いつのまにこんな近くに！？
+type3,0,NpcComOnSuccess,な、なんとか目標の撃破に<br>成功したみたいですー。<br>ふぅ、よかったぁ……
+type3,1,NpcComOnPreBegin,You got 'em! Phandaj Bits destroyed! ...Huh? This<br>signal...it's huge!
+type3,1,NpcComOnBegin,"What the--!? More!? How'd they get so close, so<br>fast!?"
+type3,1,NpcComOnSuccess,"W-We made it, we've successfully destroyed all<br>targets. Phew...we got lucky..."
+type6,0,NpcComOnPreBegin,ファンダージ・ビット、破壊確認。<br>……ですが、別の反応が<br>近づいてきています。
+type6,0,NpcComOnBegin,緊急通達。<br>新たな敵性反応が接近。<br>撃破してください。
+type6,0,NpcComOnSuccess,目標を撃破。<br>見事な対応でした。
+type6,1,NpcComOnPreBegin,Phandaj Bits confirmed destroyed.<br>...But something else is approaching now.
+type6,1,NpcComOnBegin,Emergency! New enemy presence detected. Engage<br>at will.
+type6,1,NpcComOnSuccess,Target destroyed. You handled that brilliantly.
+type9,0,NpcComOnPreBegin,ファンダージ・ビットの破壊、確認！<br>……ん？　でも何でしょう、この反応。<br>みなさん、引き続き注意を。
+type9,0,NpcComOnBegin,緊急連絡です！<br>新たな敵性反応を確認しました！<br>対応をよろしくお願いします！
+type9,0,NpcComOnSuccess,敵性存在、反応消失を確認！<br>お疲れさまでした！
+type9,1,NpcComOnPreBegin,"Phandaj Bits destroyed! ...Huh? But what could this<br>signal be? Stay on alert, everyone."
+type9,1,NpcComOnBegin,Emergency! New enemy presence detected!<br>You need to handle it!
+type9,1,NpcComOnSuccess,The enemy presence has been eliminated!<br>Excellent work!

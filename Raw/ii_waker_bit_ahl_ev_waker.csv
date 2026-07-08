@@ -1,0 +1,87 @@
+section,group,id,text
+common,0,IncidentName,アンガ・ファンダージ討伐
+common,0,TrialBeginMsg,アンガ・ファンダージを倒せ！
+common,0,TrialAbstract,アンガ・ファンダージを討伐せよ！
+common,1,IncidentName,Anga Phandaj Suppression
+common,1,TrialBeginMsg,Defeat the Anga Phandaj!
+common,1,TrialAbstract,Suppress the Anga Phandaj!
+type1,0,NpcComOnPreBegin,……待ってください。<br>何か様子がおかしいです。
+type1,0,NpcComOnBegin,異常な天候……！？<br>……強力な敵性反応を感知！<br>アークス各員、迎撃態勢を！
+type1,0,NpcComOnSuccess,アンガ・ファンダージ<br>反応消失、確認しました。<br>お疲れ様でした！
+type1,0,1st_HP_Under_50,その調子で問題ありません。<br>攻撃の継続をお願いします。
+type1,0,1st_HP_Under_10,ダメージの蓄積を確認。<br>攻撃の手を緩めないでください。
+type1,0,1st_Dead,アンガ・ファンダージの<br>特性が変化します！<br>各員、注意を！
+type1,0,2nd_HP_Under_50,アンガ・ファンダージの<br>残存体力、低下を確認！<br>気をつけつつ撃破を！
+type1,0,2nd_HP_Under_10,アンガ・ファンダージの<br>残存体力は、あとわずかです！<br>最後まで気を抜かずに！
+type1,1,NpcComOnPreBegin,...Wait. Something seems kind of strange...
+type1,1,NpcComOnBegin,"Hey, what's with this weather!? ...Reading a<br>powerful enemy signal! All ARKS operatives, prepare<br>to intercept!"
+type1,1,NpcComOnSuccess,The Anga Phandaj's signal has vanished. Well done!
+type1,1,1st_HP_Under_50,"Looking good, keep attacking!"
+type1,1,1st_HP_Under_10,Damage is starting to add up! Don't let up with<br>your attacks!
+type1,1,1st_Dead,"The Anga Phandaj's attributes are changing! All<br>operatives, be careful!"
+type1,1,2nd_HP_Under_50,Confirming a drop in the Anga Phandaj's remaining<br>HP! Stay on your guard and keep attacking!
+type1,1,2nd_HP_Under_10,The Anga Phandaj has only a little HP remaining!<br>Stay focused until the end!
+type2,0,NpcComOnPreBegin,目標の撃破を確認……<br>……いや、待て。<br>様子がおかしい。
+type2,0,NpcComOnBegin,強力な敵性反応が近づいている。<br>天候の変化もそいつの影響だろう。<br>早急に撃破しろ。
+type2,0,NpcComOnSuccess,アンガ・ファンダージの<br>反応消失を確認。<br>よくやったな。
+type2,0,1st_HP_Under_50,その調子だ。<br>このまま攻撃を続けろ。
+type2,0,1st_HP_Under_10,攻撃の手を緩めるなよ。<br>ダメージは蓄積されている。
+type2,0,1st_Dead,アンガ・ファンダージの<br>特性が変化するぞ！<br>各員、迎撃態勢を整えろ！
+type2,0,2nd_HP_Under_50,アンガ・ファンダージ<br>残存体力、低下！<br>攻撃の手を緩めるな！
+type2,0,2nd_HP_Under_10,アンガ・ファンダージの<br>残存体力は、わずかだ！<br>最後まで気を抜くなよ！
+type2,1,NpcComOnPreBegin,"Target confirmed destroyed... No, wait! Something<br>strange is going on..."
+type2,1,NpcComOnBegin,Powerful enemy approaching. That seems to be<br>what's causing this weather too.<br>Destroy it immediately!
+type2,1,NpcComOnSuccess,No longer reading the Anga Phandaj's presence.<br>Well done.
+type2,1,1st_HP_Under_50,That's how it's done! Keep attacking like that!
+type2,1,1st_HP_Under_10,Don't let up with your attacks! It's taking massive<br>damage!
+type2,1,1st_Dead,"Anga Phandaj's attributes are changing! All<br>operatives, get ready to intercept!"
+type2,1,2nd_HP_Under_50,Anga Phandaj's HP is dropping! Don't let up with<br>your attacks!
+type2,1,2nd_HP_Under_10,Anga Phandaj has only a little HP remaining! Stay<br>focused until the end!
+type3,0,NpcComOnPreBegin,あれれ……？<br>何か様子がおかしいですよ。
+type3,0,NpcComOnBegin,わわっ！　空が急に！<br>て、敵性反応もありますー！<br>みなさん、気を付けてくださいー！
+type3,0,NpcComOnSuccess,アンガ・ファンダージの<br>反応消失しましたー！<br>みなさん、お疲れ様でしたー！
+type3,0,1st_HP_Under_50,いいですよー！　その調子です！<br>攻撃し続けてくださいー！
+type3,0,1st_HP_Under_10,手を休めずにいきましょうー！<br>ダメージは蓄積されてます！
+type3,0,1st_Dead,ああ！　気を付けてくださいー！<br>アンガ・ファンダージの<br>特性が変化するみたいです！
+type3,0,2nd_HP_Under_50,アンガ・ファンダージの<br>残存体力、低下ですよー！<br>もっともっと、攻撃してくださいー！
+type3,0,2nd_HP_Under_10,アンガ・ファンダージの<br>残存体力、あとわずかですよー！<br>このまま一気にやっつけてー！
+type3,1,NpcComOnPreBegin,Huh...? Something seems kind of strange!
+type3,1,NpcComOnBegin,Whoa! What's with that sky? ...Detecting an enemy<br>presence! Everybody look out!
+type3,1,NpcComOnSuccess,"Anga Phandaj's signal has vanished! Great job,<br>everybody!"
+type3,1,1st_HP_Under_50,Nice! Keep that up! Just keep attacking it!
+type3,1,1st_HP_Under_10,"Keep it up, no time to rest just yet! It's taking<br>massive damage!"
+type3,1,1st_Dead,Ahhh! Look out! Looks like Anga Phandaj's<br>attributes are changing!
+type3,1,2nd_HP_Under_50,Anga Phandaj's remaining HP is dropping! Keep<br>attacking it!
+type3,1,2nd_HP_Under_10,Anga Phandaj has only a little HP remaining! Keep<br>it up and finish it off once and for all!
+type6,0,NpcComOnPreBegin,……異常な反応を計測。<br>警戒を怠らないでください。
+type6,0,NpcComOnBegin,強力な敵性反応を確認。<br>影響により天候の変化を観測。<br>各員、警戒を。
+type6,0,NpcComOnSuccess,アンガ・ファンダージ<br>反応、消失確認。<br>見事な対処です。
+type6,0,1st_HP_Under_50,問題ありません。<br>引き続き、攻撃を続けてください。
+type6,0,1st_HP_Under_10,ダメージの蓄積を確認。<br>攻撃を継続してください。
+type6,0,1st_Dead,アンガ・ファンダージの<br>特性が変化します。<br>各員、さらなる注意を。
+type6,0,2nd_HP_Under_50,アンガ・ファンダージの<br>残存体力、低下。<br>引き続き、攻撃を続けてください。
+type6,0,2nd_HP_Under_10,アンガ・ファンダージ<br>残存体力、あとわずかです。<br>討伐をお願いします。
+type6,1,NpcComOnPreBegin,...Detecting an abnormal signal. Keep your wits<br>about you.
+type6,1,NpcComOnBegin,"Detecting a powerful enemy presence. It's causing<br>the weather changes we're observing. All<br>operatives, be on high alert."
+type6,1,NpcComOnSuccess,No longer detecting Anga Phandaj's presence. You<br>handled that beautifully!
+type6,1,1st_HP_Under_50,This'll be no problem! Just keep on attacking!
+type6,1,1st_HP_Under_10,Confirming that it's taken massive damage. Keep on<br>attacking!
+type6,1,1st_Dead,"Anga Phandaj's attributes are changing! All<br>operatives, take the utmost caution!"
+type6,1,2nd_HP_Under_50,Anga Phandaj's remaining HP is dropping! Keep on<br>attacking!
+type6,1,2nd_HP_Under_10,Anga Phandaj has only a little HP remaining! Bring<br>it down!
+type9,0,NpcComOnPreBegin,……ん？　でも何でしょう、この反応。<br>みなさん、引き続き注意を。
+type9,0,NpcComOnBegin,強力な敵性反応を確認！<br>影響による天候変化が起きています！<br>早急な撃破をお願いします！
+type9,0,NpcComOnSuccess,アンガ・ファンダージの<br>反応消失を確認しました！<br>みなさん、お疲れさまでした！
+type9,0,1st_HP_Under_50,その調子です！<br>そのまま攻撃を継続してください！
+type9,0,1st_HP_Under_10,あともう一息です！<br>頑張ってください！
+type9,0,1st_Dead,アンガ・ファンダージの<br>特性が変化します！<br>みなさん、 注意してください！
+type9,0,2nd_HP_Under_50,アンガ・ファンダージの<br>残存体力、低下！<br>この調子で攻撃を続けましょう！
+type9,0,2nd_HP_Under_10,アンガ・ファンダージの<br>残存体力、わずかです！<br>最後まで気を抜かずに！
+type9,1,NpcComOnPreBegin,"...Huh? But what could this signal be? Stay on<br>alert, everyone."
+type9,1,NpcComOnBegin,Detecting a powerful enemy presence. It's causing<br>the weather to change! Destroy it quickly!
+type9,1,NpcComOnSuccess,"The Anga Phandaj is gone! Great job, everybody!"
+type9,1,1st_HP_Under_50,That's how it's done! Keep up those attacks!
+type9,1,1st_HP_Under_10,It's on its last legs! Just a little more!
+type9,1,1st_Dead,Anga Phandaj's attributes are changing! Everyone<br>take caution!
+type9,1,2nd_HP_Under_50,Anga Phandaj's remaining HP is dropping! Keep up<br>the pace of your attacks!
+type9,1,2nd_HP_Under_10,Anga Phandaj has only a little HP remaining! Remain<br>focused until the end!

@@ -1,0 +1,23 @@
+section,group,id,text
+5660,0,Begin,/ci1 1 過大評価にも程があるな。<br>三人分の力があるかも怪しいが……<br>今は貴重な戦力だ。蹴散らすぞ。
+5660,0,Success,/ci1 2 真顔でサボろうとするな。<br>我々の役目は陽動だ、休む暇などない。<br>お前たちは先へ行け。健闘を祈る。
+5660,0,Failure,二人揃って<br>無様な姿をさらしてしまうとはな……<br>すまない、我々は離脱する。
+5660,0,Dead,すまない……<br>これ以上の戦闘続行は不可能だ。<br>……離脱する。
+5660,0,BuddyDead,ふむ……致し方ない。<br>だが、カトリの離脱は想定の範囲内だ。<br>引き続き、任務を続行する。
+5660,1,Begin,/ci1 1 Talk about a grave overestimation.<br>I doubt she's worth even three soldiers...<br>But she's still a valuable asset. Let's get them.
+5660,1,Success,"/ci1 2 Don't slack off there with your game face on.<br>Our job is to distract, there's no time for rest.<br>You lot go on ahead. I wish you luck."
+5660,1,Failure,"That really was a less than stellar<br>performance from the both of us...<br>Sorry, but we'll be taking our leave."
+5660,1,Dead,Apologies...<br>I can't go on fighting any longer.<br>...I must take my leave.
+5660,1,BuddyDead,Hmph... I suppose it was inevitable.<br>Katori's retreat was well within expectations.<br>I'll continue on with the mission.
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

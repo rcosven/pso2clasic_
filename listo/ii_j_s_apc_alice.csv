@@ -1,0 +1,19 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,0,TrialAbstract,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,1,IncidentName,/face2 Pareces fuera de ritmo. ¡No olvides la$(0)importancia del trabajo en equipo!
+common,1,TrialBeginMsg,¡Derrota cualquier $(0) que encuentres!<br>Fallarás si alguno de los socios queda incapacitado dos veces.
+common,1,TrialAbstract,¡Derrota cualquier $(0) que encuentres!<br>Fallarás si alguno de los socios queda incapacitado dos veces.
+type1,0,NpcComOnFailure,残念ですが、仕方がありません。<br>対象のアークスはこちらで回収を……<br>って、あれ……？　反応消失……？
+type1,0,NpcComOnDownB,対象のアークスに多大な負担が<br>かかっています。次の失敗時には<br>撤退を推奨させてもらいます。
+type1,1,NpcComOnFailure,"Ya no puedes hacer nada más. Recuperaré la operación ARKS<br>lesionada... Espera, ¿qué pasó con su lectura <br>?"
+type1,1,NpcComOnDownB,"El operativo resultó gravemente herido. Si vuelve a suceder <br>, tendremos que pedirle que cancele."
+type2,0,NpcComOnFailure,……ここまでだ、仕方があるまい。<br>対象のアークスはこちらで回収を……<br>……何？　反応が消失しただと……？
+type2,0,NpcComOnDownB,対象のアークスに負担がかかりすぎだ。<br>次、戦闘不能になった場合には<br>強制的に対象を撤退させるぞ。
+type2,1,NpcComOnFailure,Tenemos que terminar aquí...<br>Traeré de vuelta a los ARKS heridos op...<br>¿Qué...? ¿No más lecturas?
+type2,1,NpcComOnDownB,"Esa operación de ARKS ha recibido una gran paliza. Si<br>quedan incapacitados nuevamente, me veré obligado a<br>sacarlos."
+type3,0,NpcComOnFailure,……うう、残念ですけどここまでです。<br>対象のアークスさんを回収して……<br>って、あれあれっ？　反応が消えた……？
+type3,0,NpcComOnDownB,ああっ、一緒に戦ってるアークスさんに<br>負担がかかりすぎです！　次やられたら<br>無理矢理でも撤退させちゃいます！
+type3,1,NpcComOnFailure,"Lo siento, pero no puedo dejar que esto siga así. Moviéndose para traer de vuelta a<br>la operación ARKS... Espera, ¿no hay lectura?"
+type3,1,NpcComOnDownB,"¡Tu compañero está sufriendo demasiado daño!<br>Si vuelven a caer,<br>¡tendré que forzar una retirada!"

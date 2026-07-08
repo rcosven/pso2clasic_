@@ -1,0 +1,61 @@
+section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,0,TrialAbstract,$(0)を撃破せよ！<br>パートナーが2回戦闘不能になったら失敗。
+common,1,IncidentName,Exterminate the $(0) Presence
+common,1,TrialBeginMsg,Defeat any $(0) you find!<br>You'll fail if any partners are incapacitated twice.
+common,1,TrialAbstract,Defeat any $(0) you find!<br>You'll fail if any partners are incapacitated twice.
+type1,0,NpcComOnBegin,近辺に交戦中のアークスが居ます！<br>至急合流し、協力して<br>周囲一帯の敵を撃退して下さい！
+type1,0,NpcComOnSuccess,/face2 お疲れ様でした！<br>いい協力関係だったと思います！
+type1,0,NpcComOnFailure,/face4 残念ですが、仕方がありません。<br>対象のアークスは、こちらで<br>回収します。
+type1,0,NpcComOnDownA,連携がうまくいっていないようです。<br>互いに協力を忘れないで下さい。
+type1,0,NpcComOnDownB,対象のアークスに多大な負担が<br>かかっています。次の失敗時には<br>撤退を推奨させてもらいます。
+type1,0,NpcComOnDownPB,$(0)に<br>多大な負荷がかかっています。<br>次の戦闘不能時には強制回収します。
+type1,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>エネミーに襲われています！
+type1,0,NpcComOnBeginP2,周囲のエネミーを排除し<br>安全を確保してください。
+type1,0,NpcComOnFailureP,/face4 残念ですが仕方ありません。<br>$(0)は<br>こちらで回収し、帰還させます。
+type1,1,NpcComOnBegin,"There's an ARKS operative fighting nearby!<br>Converge on their location quickly, and help them<br>drive back all enemies in the area!"
+type1,1,NpcComOnSuccess,/face2 Well done! You made a great team!
+type1,1,NpcComOnFailure,"/face4 Unfortunate, but there's nothing more you can do.<br>We'll collect the ARKS operative ourselves."
+type1,1,NpcComOnDownA,You seem out of rhythm. Don't forget the<br>importance of teamwork!
+type1,1,NpcComOnDownB,The operative was seriously injured. If it happens<br>again we'll have to ask you to abort.
+type1,1,NpcComOnDownPB,$(0) has sustained heavy injuries.<br>If they're incapacitated again we'll have to do a<br>forced retrieval.
+type1,1,NpcComOnBeginP1,Eyes on $(0)! Their Auxiliary is being<br>attacked by an enemy!
+type1,1,NpcComOnBeginP2,Eliminate the enemy and secure the area.
+type1,1,NpcComOnFailureP,/face4 There's nothing more you can do. We'll bring<br>$(0) home.
+type6,0,NpcComOnBegin,交戦中のアークスの反応を付近に捕捉。<br>合流し、協力して、周囲の敵性存在を<br>撃退してください。
+type6,0,NpcComOnSuccess,敵性勢力の全滅を確認。<br>協力での任務遂行、見事です。
+type6,0,NpcComOnFailure,任務失敗を確認。<br>対象のアークスを回収します。
+type6,0,NpcComOnDownA,協力が不十分かと。<br>互いの存在を意識して<br>任務にあたってください。
+type6,0,NpcComOnDownB,対象のアークスの負担が大きく<br>危険な状態です。次の失敗時には<br>強制撤退となります。
+type6,0,NpcComOnDownPB,$(0)の負荷<br>限界域。次の戦闘不能時に<br>強制回収を実行します。
+type6,0,NpcComOnBeginP1,$(0)の<br>サポートパートナーが<br>敵性存在の襲撃を受けています。
+type6,0,NpcComOnBeginP2,周囲の敵性存在を排除し<br>安全の確保を。
+type6,0,NpcComOnFailureP,限界です。<br>$(0)を<br>強制回収します。
+type6,1,NpcComOnBegin,"We've picked up a signal from ARKS operatives<br>fighting nearby! Join them, and help them drive<br>back the enemy presence in the area!"
+type6,1,NpcComOnSuccess,Full eradication of enemy forces confirmed. All<br>thanks to your cooperation. Excellent work!
+type6,1,NpcComOnFailure,Mission failed. Moving to bring in the ARKS<br>operative.
+type6,1,NpcComOnDownA,Don't try to go at it alone. Combine your<br>strengths and work together to wrap this thing up.
+type6,1,NpcComOnDownB,That ARKS op is badly wounded. We'll have to pull<br>them out if it happens again.
+type6,1,NpcComOnDownPB,$(0) can't take much more. We'll initiate<br>a forced retrieval if they're incapacitated again.
+type6,1,NpcComOnBeginP1,Heads up for $(0).<br>Their Auxiliary is under attack!
+type6,1,NpcComOnBeginP2,Eliminate the enemy presence and secure the area.
+type6,1,NpcComOnFailureP,This is too much...<br>I'm pulling $(0) out.
+type9,0,NpcComOnBegin,<%me>さん！<br>近くで交戦中のアークスがいます！<br>合流の後、協力して敵性存在の撃退を！
+type9,0,NpcComOnSuccess,お疲れさまでした！<br>突然の共闘でしたが<br>上手く連携できてましたね！
+type9,0,NpcComOnFailure,対象のアークスはこちらで回収します！<br><%me>さんは<br>残存している敵性存在の撃退を！
+type9,0,NpcComOnDownA,協力中のアークスの負担が大きいです！<br>上手くフォローしてあげてください！
+type9,0,NpcComOnDownB,協力中のアークスへの負担が大きく<br>危険なため、次の戦闘不能時には<br>強制的に対象者を回収します！
+type9,0,NpcComOnDownPB,$(0)の負荷が<br>かなり大きいです。次の戦闘不能時には<br>強制的に回収させてもらいますね！
+type9,0,NpcComOnBeginP1,$(0)さんの<br>サポートパートナーが襲われています！<br>援護してあげてください！
+type9,0,NpcComOnBeginP2,周囲のエネミーを撃退し、安全確保！<br>よろしくお願いします！
+type9,0,NpcComOnFailureP,うーん、これ以上は危ないですね……<br>$(0)は<br>こちらで回収します。
+type9,1,NpcComOnBegin,"<%me>! There are ARKS <br>operatives fighting nearby! Join them, then <br>help them back the enemy presence!"
+type9,1,NpcComOnSuccess,Good job! Even thrown together like that you <br>made a great team!
+type9,1,NpcComOnFailure,"We'll bring back the injured ARKS op!<br><%me>, <br>take out all remaining hostiles!"
+type9,1,NpcComOnDownA,A cooperating ARKS op has been seriously <br>wounded! Back them up!
+type9,1,NpcComOnDownB,A cooperating ARKS op was incapacitated. <br>For the sake of safety we'll have to force a <br>withdrawal if it happens again.
+type9,1,NpcComOnDownPB,$(0) has sustained heavy injuries. We'll <br>have to pull them out if they're incapacitated <br>again!
+type9,1,NpcComOnBeginP1,Eyes on $(0)! Their auxiliary is being <br>attacked! Give them some backup!
+type9,1,NpcComOnBeginP2,Drive the enemy back and secure the area! <br>We're counting on you!
+type9,1,NpcComOnFailureP,This is getting too dangerous...<br>We're pulling $(0) out.

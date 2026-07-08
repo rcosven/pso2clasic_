@@ -1,0 +1,29 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,まもなく、再び復活した邪竜のもとへ<br>転送します。
+PreTransportDirection,0,NpcComMsg2,前回とはけた違いのエネルギーが<br>観測されており、厳しい戦いと<br>なる事が予想されます。<br>十分に注意して臨んでください。
+PreTransportDirection,0,NpcComMsg3,私たちにはアリサさんの援護がついて<br>います！　そして皆さんの力があれば<br>きっと勝てるはず！
+PreTransportDirection,1,NpcComMsg1,You will be teleporting to the location of<br>the resurrected Crimson Fellwyrm shortly.
+PreTransportDirection,1,NpcComMsg2,Energy readings are an order of magnitude <br>higher than last time and this battle is <br>expected to be very intense. Exercise <br>an abundance of caution.
+PreTransportDirection,1,NpcComMsg3,"With the benefit of Alis' support and protection<br>as well as everyone else's power, our<br>victory should be assured!"
+Basic,0,Title,崩城に甦る黒衣の邪竜
+Basic,0,Explanation,異世界オメガ、クエント城跡に<br>極めて強い反応と、真っ黒な邪竜を確認！<br>アリサさんと協力して、撃退して下さい！<br>大変危険な戦いとなるため、この任務は<br>実績のあるアークスに限定されます！<br>――――――――――――――――――――<br>クリア可能回数$(0)回、ランキングあり<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,Black Fellwyrm Rises From Ruin
+Basic,1,Explanation,"With the confirmed sighting of a Fellwyrm, we have<br>picked up extremely strong readings in the Cuento<br>Castle Ruins of Alternate Dimension: Omega.<br>Defeat the monster with the help of Alis. This<br>extremely dangerous mission is restricted to<br>senior ARKS!<br>-------------------------------------------<br>This quest can only be played $(0) time(s) and<br>is ranked. You will fail this quest if you fail to fulfill<br>your mission objectives, you exceed the time limit."
+QuestTarget,0,SimpleExplanation,ドラゴンを撃退せよ！
+QuestTarget,1,SimpleExplanation,Defeat the dragon!
+AreaName,0,Area0S,異世界オメガ　クエント城跡
+AreaName,0,Area0L,異世界オメガ　クエント城跡
+AreaName,1,Area0S,Alternate Dimension: Omega - Cuento Castle Ruins
+AreaName,1,Area0L,Alternate Dimension: Omega - Cuento Castle Ruins
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Clear a special Client Order
+AcceptCondition,1,a2,Clear a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+TrialBeginLineMessage,0,TargetExplanation,クエスト目標「ドラゴンを撃退せよ！」<br><br><c f0df60>制限時間の経過でクエスト失敗<c>
+TrialBeginLineMessage,1,TargetExplanation,Quest Objective: “Defeat the dragon!”<br><br><c f0df60>You will fail this quest if you exceed the time limit.<c>

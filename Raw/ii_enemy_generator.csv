@@ -1,0 +1,39 @@
+section,group,id,text
+common,0,IncidentName,ダーカイムを破壊せよ！
+common,0,TrialBeginMsg,ダーカイムを破壊せよ！
+common,0,TrialAbstract,ダーカイムをすべて破壊せよ！
+common,1,IncidentName,Destroy the Falmorphers!
+common,1,TrialBeginMsg,Destroy the Falmorphers!
+common,1,TrialAbstract,Destroy all Falmorphers!
+type2,0,NpcComOnBegin,各員へ告ぐ。ダーカイムと呼称される<br>ダーカーの環境汚染機構が出現した。<br>起動まで時間がない、すべて破壊しろ。
+type2,0,NpcComOnSuccess,よし、すべてのダーカイムの反応消失。<br>周囲環境への汚染も防げたようだな。<br>各員の奮闘に感謝する。
+type2,0,NpcComOnFailure,/face6 ダーカイムが起動したか……<br>周囲環境に深刻な影響が出るが<br>止められなかったものは仕方がない。
+type2,0,GeneratorLastOne,よし、ダーカイムの反応はあと１つだ。
+type2,0,GeneratorAdd,新たなダーカイムの出現を確認。<br>範囲が広い、迅速に処理しろ。
+type2,0,TimeLimitNear,ダーカイムの起動まで<br>もう時間がないぞ。急げ。
+type2,0,DestroyGenerator,ダーカイムの破壊を確認。<br>最後まで気を抜くな！
+type2,0,DestroyIndicated,ポイント$(0)に反応。<br>急行し、ダーカイムを破壊せよ。
+type2,1,NpcComOnBegin,"Attention. Falspawn environmental<br>contaminators  known as Falmorphers<br>have appeared. They will activate<br>soon, so destroy them all quickly!"
+type2,1,NpcComOnSuccess,Good. No more Falmorphers detected.<br>That should protect the surrounding<br>environment from contamination.<br>Thank you all for your efforts.
+type2,1,NpcComOnFailure,"/face6 The Falmorphers have activated...the<br>effect on the surrounding area will be<br>devastating, but we did all we could."
+type2,1,GeneratorLastOne,Good. Just one Falmorpher left.
+type2,1,GeneratorAdd,"More Falmorphers have appeared. They're<br>spread out, and you'll have to deal with<br>them quickly."
+type2,1,TimeLimitNear,The Falmorphers are about to activate! Hurry!
+type2,1,DestroyGenerator,Falmorpher destroyed. Stay focused!
+type2,1,DestroyIndicated,Reading detected at point $(0).<br>Move fast to destroy the Falmorphers.
+type9f,0,NpcComOnBegin,ダーカイムの出現を確認しました！<br>時間内にすべて破壊してください！
+type9f,0,NpcComOnSuccess,すべてのダーカイムの消滅を確認。<br>周辺環境への汚染も防げました。<br>お疲れさまです！
+type9f,0,NpcComOnFailure,ダーカイム、起動……<br>周辺環境への影響は避けられません。<br>次は頑張りましょう！
+type9f,0,GeneratorLastOne,ダーカイムの反応、あと１つです！
+type9f,0,GeneratorAdd,新たなダーカイムの出現を確認！<br>探索の上、破壊をお願いします！
+type9f,0,TimeLimitNear,ダーカイムの起動まで<br>もう時間がありません！<br>急いで破壊してください！
+type9f,0,DestroyGenerator,ダーカイムの破壊を確認しました。<br>この調子で頑張りましょう！
+type9f,0,DestroyIndicated,ポイント$(0)に反応を確認！<br>急行し、破壊してください。
+type9f,1,NpcComOnBegin,Falmorpher readings confirmed!<br>Destroy them all before time runs out!
+type9f,1,NpcComOnSuccess,All Falmorphers destroyed! You've saved the<br>surrounding area from significant<br>contamination. Excellent work!
+type9f,1,NpcComOnFailure,The Falmorphers have activated...<br>Environmental damage is unavoidable<br>now. Let's do better next time!
+type9f,1,GeneratorLastOne,Readings show one Falmorpher left!
+type9f,1,GeneratorAdd,More Falmorphers have appeared! Track them<br>down and destroy them!
+type9f,1,TimeLimitNear,"The Falmorphers are about to activate!<br>There's not much time left, so hurry!"
+type9f,1,DestroyGenerator,Falmorpher confirmed destroyed. Keep it up!
+type9f,1,DestroyIndicated,"New reading from $(0)!<br>Quickly, destroy it!"

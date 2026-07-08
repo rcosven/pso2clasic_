@@ -1,0 +1,23 @@
+section,group,id,text
+Basic,0,Title,地底を染めし女王の悪夢
+Basic,0,Explanation,異世界オメガのエピック砂漠の地下で<br>【若人】と思われる強力な反応を感知。<br>自走式高出力フォトン粒子砲を<br>【若人】の反応がある地点まで護送し<br>これを使って撃退してください！<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>失敗条件/任務の失敗、制限時間の経過<br>自走式高出力フォトン粒子砲の破壊
+Basic,1,Title,Queen's Nightmare: Earth Depths
+Basic,1,Explanation,"We've detected strong readings under the Epyk<br>Desert of Alternate Dimension: Omega, likely<br>corresponding to Apprentice the Vernal. Escort<br>the Mobile High Output Photon Particle Cannon<br>to her location and use it to defeat her!<br>――――――――――――――――――――<br>This quest can only be cleared $(0) time(s).<br>You will fail this quest if you fail to fulfill the mission<br>objectives, you exceed the time limit, or the<br>Cannon is destroyed."
+QuestTarget,0,SimpleExplanation,【若人】を撃退せよ！
+QuestTarget,1,SimpleExplanation,Defeat Apprentice the Vernal!
+PreTransportDirection,0,NpcComMsg1,これより、エピック地下に潜伏中の<br>ダークファルス・アプレンティスの<br>撃退作戦を開始します。
+PreTransportDirection,0,NpcComMsg2,作戦の第一段階は、特殊兵器<br>「自走式高出力フォトン粒子砲」を<br>最深部まで護衛することが目的です。
+PreTransportDirection,0,NpcComMsg3,兵器を最深部まで運ぶことができれば、<br>目標を倒せるはずですが、敵の反撃も<br>予想されます。気を付けて。
+PreTransportDirection,1,NpcComMsg1,"We are commencing a counter-offensive <br>against Dark Falz Apprentice, who is hiding <br>beneath Epyk."
+PreTransportDirection,1,NpcComMsg2,"In phase one of the operation, your objective<br>is to escort the Mobile High Output Photon<br>Particle Cannon to the final area."
+PreTransportDirection,1,NpcComMsg3,"We will emerge victorious so long as we can<br>get the cannon to the final area.<br>We anticipate enemy resistance, so stay on<br>your toes."
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit

@@ -1,0 +1,25 @@
+section,group,id,text
+Basic,0,Title,逢魔に誘う幻惑の森
+Basic,0,Explanation,クファルスに似た反応も<br>観測されており、危険です！<br>ハリエットさんの救出に向かってください！<br>――――――――――――――――――――<br>最深部に出現するエネミーの撃破でクリア
+Basic,1,Title,Bosques embrujados a medianoche
+Basic,1,Explanation,Un gran bosque se ha manifestado repentinamente cerca del<br>frontera de Cuento y Weyland en Alterno<br>Dimensión: Omega. Parece que Hariette se ha fijado<br>salió al Bosque para prestar ayuda a los afectados.<br>Hemos recogido lecturas indicativas de Dark Falz.<br>desde dentro del bosque por lo que se recomienda extremar la precaución.<br>¡Necesitamos que salgas y rescates a Hariette!<br>-------------------------------------<br>Completa esta misión derrotando a los enemigos.<br>en la zona final.
+QuestTarget,0,SimpleExplanation,ハリエットを救出せよ！
+QuestTarget,1,SimpleExplanation,¡Rescata a Hariette!
+PreTransportDirection,0,NpcComMsg1,転送装置の起動を確認しました。<br>今回の目的は、幻惑の森に向かった<br>ハリエットさんの救出です。
+PreTransportDirection,0,NpcComMsg2,最深部では、ダークファルスに似た<br>反応も検知されているため<br>ダーカーの出現が予想されます。
+PreTransportDirection,0,NpcComMsg3,薄暗く不気味な森の中です。<br>思わぬところから襲撃される可能性も<br>ありますので、ご注意を！
+PreTransportDirection,1,NpcComMsg1,Teletransportador ahora en línea. Tu objetivo<br>es rescatar a Hariette que actualmente se dirige<br>hacia el Bosque Embrujado.
+PreTransportDirection,1,NpcComMsg2,"Hemos captado señales indicativas de Dark Falz.<br>en el área final del bosque, por lo que debes<br>espera encontrarte con Falspawn."
+PreTransportDirection,1,NpcComMsg3,Este bosque es ciertamente bastante oscuro y espeluznante.<br>Manténgase en guardia ante posibles ataques repentinos<br>¡desde donde menos te lo esperas!
+AreaName,0,Area1S,森の廃城
+AreaName,0,Area1L,森の廃城
+AreaName,1,Area1S,Ruinas del castillo del bosque
+AreaName,1,Area1L,Ruinas del castillo del bosque
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

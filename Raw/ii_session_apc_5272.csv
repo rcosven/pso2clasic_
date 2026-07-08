@@ -1,0 +1,23 @@
+section,group,id,text
+5087,0,Begin,/ci1 2 うわ、艦はもう持ちそうにないな……<br>でも乗組員の人たちはまだ間に合う！<br>センパイ、おれにも手伝わせてくれ！
+5087,0,Success,/ci5 3 t5 やっぱコイツら結構キツイ……<br>センパイのおかげだよ。ありがとう。<br>みんなの救助、頑張るから！
+5087,0,Failure,/mn7 くそっ……<br>悪い……しくじった
+5087,0,Dead,/mn22 センパイ……<br>ごめん、おれ……
+5087,0,BuddyDead,/mn19 /ci5 5 t5 アザナミさんっ……！<br>ちくしょう、負けてたまるかっ！
+5087,1,Begin,"/ci1 2 Whoa, that warship isn't lookin' <br>too good. But we can still save the <br>crew! Boss! Let me help!"
+5087,1,Success,"/ci5 3 t5 Man, these dudes were tough...good goin' boss!<br>We'll do our best to save everyone!"
+5087,1,Failure,"/mn7 Damn, sorry...I couldn't hack it..."
+5087,1,Dead,"/mn22 Boss... I'm sorry, I...."
+5087,1,BuddyDead,/mn19 /ci5 5 t5 Azanami! Damn it...you think we're just gonna<br>stand here and take that!
+common,0,Begin,開始5008
+common,0,Success,成功5008
+common,0,Failure,失敗5008
+common,0,Dead,自分死亡5008
+common,0,BuddyDead,相手死亡5008
+common,0,Evolution,発展5008
+common,1,Begin,Begin5008
+common,1,Success,Success5008
+common,1,Failure,Failure5008
+common,1,Dead,YouDied5008
+common,1,BuddyDead,PartnerDied5008
+common,1,Evolution,Evolution5008

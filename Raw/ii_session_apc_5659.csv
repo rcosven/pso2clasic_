@@ -1,0 +1,23 @@
+section,group,id,text
+5658,0,Begin,/ci1 1 急ぐって言ったって<br>こいつらかなり強くて……！<br>うわわわわわ！
+5658,0,Success,/ci1 2 ここが正念場、ですよね。<br>僕と先生は周辺の敵を引きつけます。<br>お二人も、頑張ってください！
+5658,0,Failure,すみません……<br>僕たちは離脱します……<br>あとは、お願いします……
+5658,0,Dead,すみません……先生……<br>あとは……お願いします……
+5658,0,BuddyDead,先生……！？<br>僕一人だと頼りないとは思いますけど<br>が、頑張ります！
+5658,1,Begin,"/ci1 1 I'm telling you, pick up the pace!<br>These brutes are no trifle!<br>Owowow!"
+5658,1,Success,"/ci1 2 This is the choke point.<br>Teach and I will draw the enemy in.<br>Give 'em hell, you two!"
+5658,1,Failure,I'm sorry...<br>We're pulling out for now.<br>Teach these brutes a lesson.
+5658,1,Dead,"Sorry, Teach...<br>I leave the rest...to you..."
+5658,1,BuddyDead,"Teach!?<br>I may not be able to do this on my own,<br>but I'll give it my best shot!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

@@ -1,0 +1,23 @@
+section,group,id,text
+Basic,0,Title,地底を染めし女王の悪夢
+Basic,0,Explanation,ください！<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>失敗条件/任務の失敗、制限時間の経過<br>自走式高出力フォトン粒子砲の破壊
+Basic,1,Title,La pesadilla de la reina: las profundidades de la tierra
+Basic,1,Explanation,"Hemos detectado lecturas fuertes bajo el Epyk.<br>Desierto de dimensión alternativa: Omega, probablemente<br>correspondiente a Aprendiz el Vernal. Escolta<br>el cañón móvil de partículas de fotones de alto rendimiento<br>¡Ve a su ubicación y úsala para derrotarla!<br>------------------------<br>Esta misión solo se puede completar $(0) veces.<br>Fallarás esta misión si no cumples la misión.<br>objetivos, excedes el límite de tiempo, o el<br>El cañón está destruido."
+QuestTarget,0,SimpleExplanation,【若人】を撃退せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota al Aprendiz Vernal!
+PreTransportDirection,0,NpcComMsg1,これより、エピック地下に潜伏中の<br>ダークファルス・アプレンティスの<br>撃退作戦を開始します。
+PreTransportDirection,0,NpcComMsg2,作戦の第一段階は、特殊兵器<br>「自走式高出力フォトン粒子砲」を<br>最深部まで護衛することが目的です。
+PreTransportDirection,0,NpcComMsg3,兵器を最深部まで運ぶことができれば、<br>目標を倒せるはずですが、敵の反撃も<br>予想されます。気を付けて。
+PreTransportDirection,1,NpcComMsg1,"Estamos iniciando una contraofensiva.<br>contra Dark Falz Apprentice, que se esconde<br>debajo de Epyk."
+PreTransportDirection,1,NpcComMsg2,"En la primera fase de la operación, su objetivo<br>es escoltar al fotón móvil de alto rendimiento<br>Cañón de partículas al área final."
+PreTransportDirection,1,NpcComMsg3,"Saldremos victoriosos mientras podamos<br>Lleva el cañón a la zona final.<br>Anticipamos la resistencia enemiga, así que quédense.<br>tus dedos de los pies."
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil

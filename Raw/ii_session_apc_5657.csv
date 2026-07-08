@@ -1,0 +1,23 @@
+section,group,id,text
+5655,0,Begin,/ci1 2 おい、それでは伝わらないだろう……<br>少々討伐に手こずっている。<br>すまないが、手伝ってもらえないか？
+5655,0,Success,/ci2 2 ありがとうリーダー、助かった。<br>……ところで、オプトレイオン。<br>闇の希望の戦士とは俺のことか……？
+5655,0,Failure,まぁ、そういうことだ……<br>態勢を立て直して出直す。<br>巻き込んでしまい、すまなかった……
+5655,0,Dead,俺も光に……<br>なってみたかった、な……
+5655,0,BuddyDead,宇宙の希望は潰えさせない……<br>光の遺志は、俺が引き継ぐ！
+5655,1,Begin,"/ci1 2 Hey, I don't think we're landing a hit...<br>Might have some trouble taking them down.<br>Sorry, but would you mind lending a hand?"
+5655,1,Success,"/ci2 2 Thanks, Leader, you saved us.<br>By the way, Opt Leon...<br>Am I the dark ""warrior of hope?"""
+5655,1,Failure,"Well, these things happen...<br>I'm heading back to rally and reassemble.<br>Sorry to have gotten you wrapped up in this."
+5655,1,Dead,I've always wanted...<br>to be a beacon of light...
+5655,1,BuddyDead,I won't let the hope of the universe die out...<br>I will carry on your legacy of light!
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

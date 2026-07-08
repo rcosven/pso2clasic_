@@ -1,0 +1,15 @@
+section,group,id,text
+common,0,IncidentName,$(0)を討伐せよ！
+common,0,TrialBeginMsg,$(0)を討伐せよ！
+common,0,TrialAbstract,氷柱に乗ってバリアを飛び越え<br>$(0)を討伐せよ！
+common,1,IncidentName,Suppress the $(0)!
+common,1,TrialBeginMsg,Suppress the $(0)!
+common,1,TrialAbstract,"Climb an ice pillar to jump over the barrier,<br>then suppress the$(0)!"
+type3,0,NpcComOnBegin,きっ、緊急通達ですー！<br>強力な敵さんの反応を確認！<br>急いで撃破しちゃってくださーい！
+type3,0,NpcComOnSuccess,敵さんの反応消失ーっと！<br>みなさん、お疲れ様でしたー！
+type3,0,NpcComOnFailure,だいぶ足止めを食らっちゃいました！<br>このままでは敵さんの思うつぼです。<br>仕方ないので先を急ぎましょう！
+type3,0,NpcComOnHint,バリアで敵さんに攻撃が届きません！<br>あのバリアを上から飛び越えられる<br>登れるようなものがあれば……！
+type3,1,NpcComOnBegin,Emergency!<br>Powerful enemy presence detected!<br>Eliminate them at once!
+type3,1,NpcComOnSuccess,"Enemy presence is toast!<br>Amazing work, everyone!"
+type3,1,NpcComOnFailure,"You're in a real bind! Everything's going the<br>enemies' way. Hate to say it but, time to move<br>on..."
+type3,1,NpcComOnHint,Your attacks can't penetrate the barrier. If only<br>there was something you could use to climb<br>over it...

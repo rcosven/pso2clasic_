@@ -1,0 +1,35 @@
+section,group,id,text
+common,0,Begin,開始5008
+common,0,Success,成功5008
+common,0,Failure,失敗5008
+common,0,Dead,自分死亡5008
+common,0,BuddyDead,相手死亡5008
+common,0,Evolution,発展5008
+common,1,Begin,Begin5008
+common,1,Success,Success5008
+common,1,Failure,Failure5008
+common,1,Dead,YouDied5008
+common,1,BuddyDead,PartnerDied5008
+common,1,Evolution,Evolution5008
+5008,0,Begin,/mn38 /ci2 2 ふふふ、ケーキ屋さん。<br>ケーキ屋さあん。そんな怖がらずに<br>さっさと出てきてくださいねえ。
+5008,0,Success,/mn17 /ci2 2 あらあら、もう終わりですかあ？<br>つまらないですねえ、物足りないです。<br>だから、次の獲物を探しましょうねえ。
+5008,0,Failure,/ci2 2 ケーキを食べてみたかったんですが<br>上手くいかないものですねえ。<br>ま、どうでもいいんですけど。
+5008,0,Dead,/ci4 1 リサ、ちょっとくたびれちゃったので<br>このあたりで休憩です。
+5008,0,BuddyDead,/ci4 2 ケーキ……？　ああ、そういえば<br>そういえばそうでしたねえ。<br>リサ、すっかり忘れてましたよお。
+5008,0,Evolution,/ci2 2 おやおやあらあらまだまだたくさん<br>出てきてくれるみたいですよお？
+5008,1,Begin,"/mn38 /ci2 2 Heheh... Yoohoo, come on out little bakery.<br>Don't be afraid."
+5008,1,Success,"/mn17 /ci2 2 Awww, we're done already? <br>I need something more stimulating. <br>Let's go hunt down our next prey."
+5008,1,Failure,"/ci2 2 I really had a hankering for some cake, but this<br>didn't turn out too well. Not that big a deal,<br>I guess."
+5008,1,Dead,"/ci4 1 I'm pretty gassed, so I think I'll take a<br>breather here."
+5008,1,BuddyDead,"/ci4 2 Cake...? Wow, come to think of it that IS what we<br>were after...huh. Totally slipped my mind."
+5008,1,Evolution,"/ci2 2 My oh my, looks like there's still a lot of<br>baddies coming out of the woodwork."
+5008v2,0,Begin,/ci2 2 <%me>さん<br>殲滅はリサの得意分野ですから<br>ここリサにお任せくださいねえ？
+5008v2,0,Success,/ci2 5 さて、このあたりはリサたちが<br>任されましたので、あなたは<br>先に進んでくださいねえ。
+5008v2,0,Failure,エネミーを殺すのは好きですけど<br>仲間を殺されるのは嫌いなんですよお。<br>そうならないうちに帰りますねえ。
+5008v2,0,Dead,おや、リサにこんなことして<br>ただで済むと思っているんですかねえ？
+5008v2,0,BuddyDead,フーリエさん。<br>自分で望んで来たのですから<br>ちゃんと生きて帰りましょうねえ？
+5008v2,1,Begin,"/ci2 2 Uh, <%me>? <br>Total annihilation is what I do best, <br>so I'll take it from here, m'kay?"
+5008v2,1,Success,"/ci2 5 Just leave the rest to us now, m'kay? <br>You mosey on up ahead."
+5008v2,1,Failure,"Killing enemies is so fun, but watching friends<br>get killed is a major downer. Better get back<br>before things heat up, m'kay?"
+5008v2,1,Dead,"You don't think I'll let you get away with this,<br>do you?"
+5008v2,1,BuddyDead,"Fourie. You came here of your own volition, so<br>let's go back while we're still alive, m'kay?"

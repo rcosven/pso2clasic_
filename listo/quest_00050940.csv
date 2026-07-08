@@ -1,0 +1,29 @@
+section,group,id,text
+Basic,0,Title,氷上のメリークリスマス2018
+Basic,0,Explanation,惑星ナベリウス・凍土エリアの<br>クリスマス会場周辺において<br>ダーカ―ほか多数の反応が確認された。<br>さらに、天候変化に合わせるかのように<br>例外のエネミーも姿を現している。<br>アークス各員は至急現地へ赴き<br>原因を解明し、会場周辺の安全を確保せよ。<br>―――――――――――――――――――<br>ルーム内のクエストポイント共有／有り<br>制限時間経過でクエスト終了
+Basic,1,Title,Este es un ambiente de combate altamente irregular. Resuelva la situacion lo antes posible.
+Basic,1,Explanation,"Una vez que se teleporte, elimine cualquier enemigo hostil, asegure la seguridad del area y determine las causas del disturbio."
+QuestTarget,0,SimpleExplanation,時間内に可能な限りエネミーを撃退せよ！
+QuestTarget,1,SimpleExplanation,Area de Tundra 1
+PreTransportDirection,0,NpcComMsg1,これより転送を開始します。<br>今回の作戦は、会場周辺に現れた<br>敵性存在の討伐です。
+PreTransportDirection,0,NpcComMsg2,多数の敵性反応の確認と<br>著しい天候変化から異常事態と認識。<br>早急な対応が求められます。
+PreTransportDirection,0,NpcComMsg3,転送後、速やかに敵性存在を討伐し<br>会場周辺の安全確保および異常事態の<br>要因について調査を行ってください。
+PreTransportDirection,1,NpcComMsg1,Naverius - Area de Tundra 1
+PreTransportDirection,1,NpcComMsg2,Area de Tundra 2
+PreTransportDirection,1,NpcComMsg3,Naverius - Area de Tundra 2
+AreaName,0,Area0S,凍土エリア1
+AreaName,0,Area0L,惑星ナベリウス 凍土エリア1
+AreaName,0,Area1S,凍土エリア2
+AreaName,0,Area1L,惑星ナベリウス 凍土エリア2
+AreaName,1,Area0S,¿Adonde se fue el chocolate en 2019?
+AreaName,1,Area0L,"Preparese para salir, derroque a los enemigos y asegure la seguridad del lugar.||TAG_0||-------------------------------------------||TAG_1||Si excede el limite de tiempo, fallara esta mision."
+AreaName,1,Area1S,Tundra Area 2
+AreaName,1,Area1L,Naverius - Tundra Area 2
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Cumplir una Mision del Cliente Especial
+AcceptCondition,1,a2,Cumplir una Mision del Cliente Especial
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit

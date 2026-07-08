@@ -1,0 +1,31 @@
+section,group,id,text
+Basic,0,Title,採掘基地防衛戦：侵入
+Basic,0,Explanation,br>防護壁の耐久力にも限度がある。<br>各員、ダーカーの侵入を阻止、撃退せよ。<br>――――――――――――――――――――<br>全6ウェーブ<br>失敗条件/全拠点の陥落
+Basic,1,Title,Base Minera Def. Op.: Invasión
+Basic,1,Explanation,"Aviso urgente a todos los miembros de ARKS. Confirmado<br>Se han identificado firmas de Falspawn en el<br>cercanías de la Base Minera en el planeta Lillipa.<br>Aunque una barrera defensiva recién construida debería<br>prevenir múltiples ataques simultáneos en sitios base,<br>la durabilidad de la barrera es limitada. Todos los operativos<br>Debemos detener esta invasión y derrotar a los Falspawn.<br><br>Total de 6 olas<br>Fallarás esta misión si todos los sitios base caen."
+QuestTarget,0,SimpleExplanation,採掘基地を防衛せよ！
+QuestTarget,1,SimpleExplanation,¡Defiende la base minera!
+Defense,0,Wave1_Talk,ダーカーが出現しましたー！<br>どの拠点が襲われるか分かりません。<br>協力して拠点を防衛してくださいー！
+Defense,0,Wave2_Talk,次のダーカーが襲撃してきましたー！<br>皆さんで声を掛けあって、<br>連携して守ってくださいね！
+Defense,0,Wave3_Talk,み、未確認反応がありますー！<br>ダーカーの兵器が出現する気がします！<br>見つけ次第破壊しちゃって下さい！
+Defense,0,Wave4_Talk,わわっ！<br>複数の強い敵性反応を確認ですー！<br>注意して下さいー！
+Defense,0,Wave5_Talk,わわっ、ものすごい強い反応……！<br>大型ダーカーが出現するかも<br>しれません！
+Defense,0,Wave6_Talk,これが最後みたいです！<br>あと一息です！　なんとか<br>拠点を守りきってくださいー！
+Defense,1,Wave1_Talk,¡Han aparecido los Falspawn!<br>No sabemos qué sitio atacarán.<br>¡Solicitando ayuda para defender el sitio afectado!
+Defense,1,Wave2_Talk,Los Falspawn están lanzando la próxima ola<br>de su ataque! Debemos trabajar juntos para<br>¡Protege la base con todas nuestras fuerzas!
+Defense,1,Wave3_Talk,¡Estamos recibiendo lecturas no confirmadas!<br>¡Parecen corresponder a posibles armas Falspawn!<br>¡Debes destruirlos nada más verlos!
+Defense,1,Wave4_Talk,¡Ay!<br>¡Estoy captando múltiples lecturas poderosas de enemigos!<br>¡Proceda con precaución!
+Defense,1,Wave5_Talk,"¡Oh no, estoy captando una señal muy fuerte...!<br>Parece que un gran Falspawn ha<br>entró en la pelea!"
+Defense,1,Wave6_Talk,¡Ojalá este sea el último!<br>¡Manténganlo juntos un poco más!<br>¡Defiende el sitio con todo lo que tienes!
+PreTransportDirection,0,NpcComMsg1,まもなく状況開始ですっ！<br>反応を見るに、ダーカーが何度も何度も<br>襲ってきそうです！　注意して下さい！
+PreTransportDirection,0,NpcComMsg2,落ちてる結晶のエネルギーを使えば<br>守りを固めることもできますよっ！<br>以上、連絡おしまいです！　ご武運を！
+PreTransportDirection,1,NpcComMsg1,¡La diversión está por comenzar!<br>Las lecturas indican que múltiples Falspawn<br>¡Las olas están llegando! ¡Mantente helado!
+PreTransportDirection,1,NpcComMsg2,Usa la energía de los cristales caídos.<br>para reforzar tu defensa!<br>¡Fin de la transmisión! ¡Buena suerte!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

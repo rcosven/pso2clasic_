@@ -1,0 +1,43 @@
+﻿section,group,id,text
+common,0,IncidentName,ナウラのケーキ屋を守れ！
+common,0,TrialBeginMsg,散らばった商品コンテナを守れ！
+common,0,TrialAbstract,散らばった商品コンテナを守れ！
+common,0,ToastOnSuccess,$(0)が開店しました。
+common,0,ToastOnDestroy,商品が１個破壊されました。残り$(0)個。
+common,0,ToastOnAllDestroy,すべての商品コンテナが破壊されました。
+common,1,IncidentName,¡Defiende la Panaderia Naura!
+common,1,TrialBeginMsg,¡Protege los contenedores de mercancías dispersos!
+common,1,TrialAbstract,¡Protege los contenedores de mercancías dispersos!
+common,1,ToastOnSuccess,$(0) ya esta abierto.
+common,1,ToastOnDestroy,Un contenedor de mercancías ha sido destruido. Restante: $(0)
+common,1,ToastOnAllDestroy,Todos los contenedores de mercancías han sido destruidos.
+first,0,OnBegin,/mn13 /ci5 5 t5 ……渡る世間は馬鹿ばかり、<br>助けなんていやしない。
+first,0,OnDamage,/mn13 ……商品が壊れちゃう。<br>……もったいない、もったいない。
+first,0,OnDestroy,/mn13 ……一個、壊れちゃった。<br>……商品も当然木っ端微塵ね。
+first,0,OnAllDestroy,/ci5 3 t5 /mn13 ……もう売りに来ないから。
+first,0,OnSuccess,/ci1 1 t5 ……いいからケーキ買って。
+first,1,OnBegin,"/mn13 /ci5 5 t5 ...¡El mundo entero se ha vuelto loco, nadie<br>ayuda!"
+first,1,OnDamage,"/mn13 ¡La mercancía se está arruinando!<br>Que desperdicio, que desperdicio tan terrible....."
+first,1,OnDestroy,"/mn13 ¡Aww, otro fue destruido! Y la mercancía<br>junto con ella, por supuesto..."
+first,1,OnAllDestroy,/ci5 3 t5 /mn13 ¡Nunca mas traeremos nada para vender aqui!
+first,1,OnSuccess,"/ci1 1 t5 Como mar, comprate un pastel."
+second,0,OnBegin,/mn2 /toge /ci3 1 t5 はわっ、わわわっ！<br>誰か、助けてくださーい！
+second,0,OnDestroy,/toge /mn1 はわわ……壊されちゃいました。<br>商品が減っちゃいますよぉー……
+second,0,OnAllDestroy,/mn2 /ci4 3 t5 ぜ、ぜんぶ……全部やられましたぁー！<br>これではもう、お店開けません……
+second,0,OnLastOne,/toge はわっ！<br>気付けば商品残り一個です！<br>大変大変、大変ですよぉー！
+second,0,OnSuccess,/ci2 2 t5 ふぅ……助かりましたぁ。
+second,0,OnFailure,/mn23 /ci4 t5 悲しみを背負って帰ります……<br>くすん、くすん。
+second,1,OnBegin,"/mn2 /toge /ci3 1 t5 ¡Que! ¡Si! ¡Alguien, por favor AYUDA!"
+second,1,OnDestroy,/toge /mn1 ¡Que! ¡Otro contenedor fue destruido! ¡Estamos perdiendo toda nuestra mercancia...!
+second,1,OnAllDestroy,/mn2 /ci4 E-Todo...¡todo está arruinado!<br>Ahora ni siquiera podemos abrir la tienda.....
+second,1,OnLastOne,¡Queda contenedor de mercancía! Esto es<br>malo... esto es malo... ¡ESTO ES MALO!
+second,1,OnSuccess,/ci2 2 t5 ¡Uf... salvaste nuestro negocio!
+second,1,OnFailure,/mn23 /ci4 t5 Nos vamos a casa para estar solos con nuestra<br>tristeza... *Sniff*...*sniffle*...
+third,0,OnBegin,/mn2 /ci2 2 t5 うわっ、なんかすごいことに！<br>ちょっと誰か、あたしの商品を守って！
+third,0,OnDestroy,/mn13 あっちゃあ、壊されちゃった……<br>何が入ってたんだっけなぁ。
+third,0,OnAllDestroy,/mn22 /ci3 1 t5 や、やられたーっ！<br>商品なしで開店なんて<br>出来るわけないじゃない！
+third,0,OnSuccess,/mn15 /ci2 1 t5 ふー、ありがと！<br>助かったよ！
+third,1,OnBegin,/mn2 /ci2 2 t5 ¡Uwaaah! ¿¡Que esta pasando aqui!? ¡Alguien! Protege nuestra mercancia!!
+third,1,OnDestroy,"/mn13 Agh, otro arruinado...¿Que hay dentro de ellos otra vez?"
+third,1,OnAllDestroy,/mn22 /ci3 1 t5 W-¡Estamos arruinados! ¡No podemos abrir una tienda<br>sin nada que vender!
+third,1,OnSuccess,"/mn15 /ci2 1 t5 ¡Uf, gracias! ¡Nos salvaste!"

@@ -1,0 +1,63 @@
+section,group,id,text
+common,0,IncidentName,迷子のナウラをカーゴに護送せよ
+common,0,TrialBeginMsg,ナウラ長女を見つけだし<br>カーゴに護送せよ！
+common,0,TrialAbstract,ナウラ長女を見つけだし<br>カーゴに護送せよ！
+common,0,ToastOnSuccess,$(0)が開店しました。
+common,1,IncidentName,Escort the Lost Naura Girl to Her Cargo Truck
+common,1,TrialBeginMsg,Find the Eldest Naura Sister and escort her to the<br>cargo truck!
+common,1,TrialAbstract,Find the Eldest Naura Sister and escort her to the<br>cargo truck!
+common,1,ToastOnSuccess,$(0) is open.
+first,0,OnFind1,/ci4 3 ……ぐすっ。<br>海を見てただけなのに……<br>いつのまにかひとりぼっち。
+first,0,OnFind2,/mn2 /toge /ci4 1 別に、なんでもないし……<br>泣いてないし……<br>迷子じゃないし……
+first,0,OnFind3,/ci3 4 私を探しに来た……？<br>なら、はやく連れてって。
+first,0,OnStopEnemy,……ぐすっ。
+first,0,OnFollow,/ci3 4 帰りたい……<br>だから、はやく連れてって。
+first,0,OnStopPlayer,/mn13 ……待って、待て。<br>歩くの早すぎ、待て。
+first,0,OnRefollow,/ci4 5 帰りたい……<br>だから、はやく連れてって。
+first,0,OnDefeat,/mn6 /ci2 2 ……ふん。
+first,0,OnDead,/mn13 もうやだ……<br>無理にでも、帰る。
+first,0,OnSuccess3,/ci2 2 ……うるさい。<br>迷ってないし、無愛想関係ないし。
+first,0,OnSuccess6,/mn6 /ci1 1 t5 ……いいからケーキ買って。
+first,0,OnFailure3,/mn3 /ci5 2 ……うるさい。<br>気分最悪、だから帰る。
+first,1,OnFind1,"/ci4 3 ...Sniff. I was...just enjoying the ocean, and...<br>suddenly I was alone."
+first,1,OnFind2,"/mn2 /toge /ci4 1 It's nothing, I mean... I'm not crying... and<br>I'm not lost..."
+first,1,OnFind3,"/ci3 4 Were you looking for me? Just take me<br>home, okay?"
+first,1,OnStopEnemy,...Sniff.
+first,1,OnFollow,/ci3 4 I wanna go home... Just take me back.
+first,1,OnStopPlayer,/mn13 Wait for me. You're going too fast.
+first,1,OnRefollow,/ci4 5 I wanna go home... Just take me back.
+first,1,OnDefeat,/mn6 /ci2 2 Hmph.
+first,1,OnDead,/mn13 I hate this...! I'm. Going. Home.
+first,1,OnSuccess3,/ci2 2 Shut up. I wasn't even lost.<br>Why don't YOU get lost?
+first,1,OnSuccess6,/mn6 /ci1 1 t5 ...Now buy me some cake.
+first,1,OnFailure3,/mn3 /ci5 2 Shut up. I feel like crap and I'm going home.
+second,0,OnStart2,/mn2 /ci4 2 じ、実は、うちの姉さんが<br>ふらふらっとどこかに<br>行ってしまいましてー……
+second,0,OnStart3,/mn1 /ci4 1 このままだとケーキ作れません<br>店も開けません、一家離散ですー。<br>お願いです、探して下さいー。
+second,0,OnSuccess1,/mn15 /toge /ci2 1 姉さんー！
+second,0,OnSuccess4,/mn11 /ci2 1 よかったぁ、姉さんが無事で……<br>あのっ、本当に本当に<br>ありがとうございますー。
+second,0,OnFailure1,/mn22 /ci4 2 /toge 姉さんー！<br>姉さんが唐突に帰ってきたー！
+second,0,OnFailure4,/mn11 /ci4 3 とにかく、無事でよかったですー。
+second,0,OnSecondBefore1,ね、姉さんをお願いしますー。
+second,0,OnSecondBefore2,姉さんは今、あっちに<br>いそうな気がしますー。<br>妹のカンですー。
+second,1,OnStart2,"/mn2 /ci4 2 A-actually, my sister she... She just wandered<br>off somewhere..."
+second,1,OnStart3,/mn1 /ci4 1 We can't make any cakes now!<br>Can't even open the shop! We need each<br>other! Please find her!
+second,1,OnSuccess1,/mn15 /toge /ci2 1 There you are!
+second,1,OnSuccess4,/mn11 /ci2 1 I'm so glad she's alright...<br>Thank you sooo much!
+second,1,OnFailure1,/mn22 /ci4 2 /toge My big sis! She found her way back!
+second,1,OnFailure4,"/mn11 /ci4 3 Whatever, I'm glad she's okay."
+second,1,OnSecondBefore1,"Bring her back, 'kay?"
+second,1,OnSecondBefore2,"Something tells me she's off that way. Sister's <br>intuition, maybe?"
+third,0,OnStart1,/mn9 /ci2 1 /toge あっ！　いいところに！<br>相談したいことがっ！
+third,0,OnStart4,/mn16 /toge /ci2 2 お姉ちゃん連れてきてくれたら<br>めいっぱいサービスするからっ！
+third,0,OnSuccess2,/mn12 /toge /ci3 1 もー、心配させないでよね！<br>お姉ちゃん、昔っから方向音痴で<br>無愛想でどーしよーもないんだから！
+third,0,OnSuccess5,/mn15 /toge /ci2 1 さーて、お姉ちゃんも<br>帰ってきたことだし<br>精一杯サービスしちゃうよー！
+third,0,OnFailure2,/mn12 /ci3 2 まったくもー、お姉ちゃんは<br>心配させないでよね！
+third,0,OnThirdBefore1,お姉ちゃんをよろしくっ！
+third,0,OnThirdBefore2,お姉ちゃんはあっちに<br>いそうな気がする！<br>絶対！　たぶん！　おそらくっ！
+third,1,OnStart1,"/mn9 /ci2 1 /toge Oh, perfect timing! Can I ask you a favor?"
+third,1,OnStart4,"/mn16 /toge /ci2 2 If you bring back my big sister, <br>I'll give you a nice surprise!"
+third,1,OnSuccess2,/mn12 /toge /ci3 1 I've been worried sick about you! <br>I turn my head for a second and you're lost!<br>Use your head for once!
+third,1,OnSuccess5,"/mn15 /toge /ci2 1 Well, now that she's back, I'll <br>give you that awesome surprise I promised!"
+third,1,OnFailure2,/mn12 /ci3 2 I've just about had it with you!<br>Stop worrying me to death!
+third,1,OnThirdBefore1,I hope you find my sister!
+third,1,OnThirdBefore2,"I think she wandered off that way! Most<br>definitely! Or probably, anyway!"

@@ -1,0 +1,33 @@
+section,group,id,text
+5597,0,Begin,/ci2 2 あ、それいいですね！<br><%me>さんと一緒に<br>パパっと終わらせちゃいましょう！
+5597,0,Success,/ci1 2 /mn2 みたらしさーん、待ってー！<br>あ、ご協力ありがとうございました。<br>またよろしくですー！
+5597,0,Failure,手伝ってもらったのに……<br>すみません、今度はちゃんと<br>がんばりますね。
+5597,0,Dead,ちょっ、強すぎ……<br>ごめんなさい、みたらしさん！
+5597,0,BuddyDead,え、やられちゃったんですか？<br>ごめんなさい、いまちょっと<br>手が離せないので少しお待ちをー！
+5597,1,Begin,"/ci2 2 Oh, that's perfect!<br><%me>, you and I can<br>finish this in a flash!"
+5597,1,Success,"/ci1 2 /mn2 Mitarashi, wait!<br>Um, thank you so much for your help.<br>I hope we can count on you again!"
+5597,1,Failure,"Even with some help, I wasn't<br>strong enough... Sorry, I'll do<br>better next time."
+5597,1,Dead,"Ugh, they're too strong...<br>Mitarashi, I'm sorry!"
+5597,1,BuddyDead,"What? They got you?<br>Sorry, my hands are a little tied<br>at the moment. Hold on!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150
+5607,0,Begin,/ci1 2 /mn2 わーっ！　スクショ用に光源を<br>探してたら、大変なことにーっ！？<br>す、スミマセン、手伝ってくださいっ！
+5607,0,Success,/ci2 2 /mn17 お手伝い、ありがとうございます！<br>助かっちゃいましたー！<br>では、私は光源探しに戻りますね！
+5607,0,Failure,あああ……失敗しちゃいましたー……<br>助けてもらったのに、ごめんなさい……
+5607,0,Dead,え、うそっ！？<br>ごめんなさい、やられちゃいました……
+5607,0,BuddyDead,わーわーっ！<br>猫ノ宮♪さん、言い方ぁー！<br>と、とにかく私たちで頑張ります！
+5607,1,Begin,/ci1 2 /mn2 Whoa! I was just trying to get<br>good lighting for a photo!<br>P-Please help me!
+5607,1,Success,"/ci2 2 /mn17 Thanks for all your help!<br>I'm saved! Welp, back to<br>finding decent lighting!"
+5607,1,Failure,Aghhh... I'm down for the count...<br>I'm sorry I put you through the trouble...
+5607,1,Dead,W-What?! No way...<br>I'm sorry you got done in on my account...
+5607,1,BuddyDead,"Nekonomiya♪!<br>That's how you say it!<br>A-Anyway, we'll give it our best shot!"

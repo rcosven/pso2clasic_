@@ -1,0 +1,21 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,本作戦は、調査中のアークスを襲撃した<br>複数の大型海王種の撃退が目的となる。
+PreTransportDirection,0,NpcComMsg2,このエリアの奥地に大型海王種が<br>潜んでいることは確認されている。<br>ひとまず、その撃退が目標だ。
+PreTransportDirection,0,NpcComMsg3,また、道中においては<br>水上艦の出現する可能性が高い。<br>各員、十分に注意して任務にあたれ。
+PreTransportDirection,1,NpcComMsg1,"En esta operación, tu objetivo es luchar contra<br>las grandes oceánicas que están atacando el<br>Equipo de investigación ARKS."
+PreTransportDirection,1,NpcComMsg2,Hemos confirmado la presencia de grandes<br>Las oceánidas acechan en el interior de este<br>área. Primero debes cuidarlos.
+PreTransportDirection,1,NpcComMsg3,"Además, puede encontrar uno o más<br>Barcos de superficie en el camino, por lo que todos los operativos<br>Se recomienda tener precaución."
+Basic,0,Title,静穏を破りし大海の脅威
+Basic,0,Explanation,惑星ウォパルの浮上施設を探索していた<br>アークスが突如、大型海王種の群れから<br>襲撃を受けた。それ以外にも水上艦や<br>ダーカー反応が多数確認されている。<br>周辺地域への影響は大きく、放置すれば<br>被害は拡大する一方だろう。<br>アークス各員は準備が整い次第出撃し<br>状況の確認と事態の鎮圧を図れ。<br>――――――――――――――――――――<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,"Amenaza del mar, render de la serenidad"
+Basic,1,Explanation,Una unidad ARKS enviada a la instalación flotante<br>en el planeta Wopal ha sido atacado por grandes<br>oceánidas. Hemos recogido múltiples lecturas.<br>correspondientes a Falspawn y Barcos de Superficie.<br>La región se ha visto gravemente afectada y más<br>Se esperan daños. Los agentes de ARKS se preparan para<br>intervenir y controlar la situación.<br><br>Fallarás en esta misión si no cumples con tu<br>objetivos de la misión o excedes el límite de tiempo.
+QuestTarget,0,SimpleExplanation,最深部を目指せ！
+QuestTarget,1,SimpleExplanation,¡Llega a la zona final!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

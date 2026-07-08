@@ -1,0 +1,29 @@
+section,group,id,text
+Basic,0,Title,T:雨風とともに２０１８
+Basic,0,Explanation,br>至急現地へと赴き、異常事態の原因調査と<br>同時に可能な限りエネミーの撃退に当たれ。<br>―――――――――――――――――――<br>ルーム内のクエストポイント共有／有り<br>制限時間経過でクエスト終了
+Basic,1,Title,T: Lo que el viento y la lluvia se llevaron 2018
+Basic,1,Explanation,Hemos recibido informes de un desconcertante<br>cambio meteorológico acompañado de un extraño<br>Voz resonante en toda la Zona Forestal del<br>Planeta Naverius. El cambio parece haber también<br>resultó en mayores niveles de enemigos frenéticos<br>probablemente afecte otras operaciones en la zona. Nosotros<br>Te necesito en el terreno para investigar y cuidar.<br>de cualquier enemigo que encuentres siempre que sea posible.<br>Se aplicará el intercambio de puntos de misión dentro de la habitación.<br>Fallarás esta misión si excedes el límite de tiempo.
+QuestTarget,0,SimpleExplanation,時間内に可能な限りエネミーを撃退せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota a tantos enemigos como puedas dentro del límite de tiempo!
+PreTransportDirection,0,NpcComMsg1,これより、転送を開始します。<br>今回の目的は、森林エリアにおける<br>原因不明の天候変化の調査です。
+PreTransportDirection,0,NpcComMsg2,報告では、降雨が確認されている間<br>通常と異なる強力な個体の出現が<br>確認されています。
+PreTransportDirection,0,NpcComMsg3,現在の天候は晴れですが<br>調査中に天候変化が起きることが<br>予想されます。ご注意を。
+PreTransportDirection,1,NpcComMsg1,Preparándose para iniciar la teletransportación.<br>Tu misión es investigar el fenómeno meteorológico.<br>desplazamiento de origen desconocido que se ha producido en<br>la Zona Forestal.
+PreTransportDirection,1,NpcComMsg2,Los informes indican que poderosos hostiles atípicos<br>han aparecido a raíz de la<br>aumento de las precipitaciones.
+PreTransportDirection,1,NpcComMsg3,"Aunque actualmente el cielo está despejado, esperamos<br>Las condiciones pueden cambiar mientras su<br>la investigación está en curso. Cuídense ahí fuera."
+AreaName,0,Area0S,森林エリア1
+AreaName,0,Area0L,惑星ナベリウス 森林エリア1
+AreaName,0,Area1S,森林エリア2
+AreaName,0,Area1L,惑星ナベリウス 森林エリア2
+AreaName,1,Area0S,Área forestal 1
+AreaName,1,Area0L,Naverius - Área forestal 1
+AreaName,1,Area1S,Área forestal 2
+AreaName,1,Area1L,Naverius - Área forestal 2
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

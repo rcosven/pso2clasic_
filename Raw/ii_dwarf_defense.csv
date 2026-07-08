@@ -1,0 +1,19 @@
+section,group,id,text
+common,0,IncidentName,リリーパ族を防衛せよ！
+common,0,TrialBeginMsg,危険にさらされている<br>リリーパ族を守り切れ！
+common,0,TrialAbstract,危険にさらされている<br>リリーパ族を守り切れ！
+common,1,IncidentName,Defend the Lillipans!
+common,1,TrialBeginMsg,Protect the Lillipans in harm's way!
+common,1,TrialAbstract,Protect the Lillipans in harm's way!
+type3,0,NpcComOnBegin,/face4 あっ、ああっ！　リリーパ族がギルナスに<br>捕まってますー！　助けてあげてー……<br>ってダメです！　爆発寸前ですー！
+type3,0,NpcComOnAfterBegin,/face4 あのギルナスは攻撃したらダメですー！<br>リリーパ族が自力で<br>脱出するまで、守ってあげてください！
+type3,0,NpcComOnSuccess,/face2 リリーパ族はなんとか逃げられた<br>ようですよー。よかったです。<br>お疲れ様でしたー！
+type3,0,NpcComOnFailure,リリーパ族……どこかに吹き飛んで<br>いっちゃいましたね……<br>たぶん、無事だとは思うんですが……
+type3,0,NpcComOnFirstDamage,/face3 だだっ、ダメですよー！<br>ギルナスは攻撃されると損傷して<br>爆発しちゃいますからねー！
+type3,0,NpcComOnPinch,/face4 こ、これ以上ギルナスが損傷すると<br>爆発して、リリーパ族が危ないですー！<br>刺激しないよう守ってあげて下さいー！
+type3,1,NpcComOnBegin,"/face4 Uh oh! Some Lillipans have been captured by<br>a Gillnas! You've got to help-- Wait, it's about<br>to blow!"
+type3,1,NpcComOnAfterBegin,/face4 Do NOT attack that Gilnas! Protect the <br>Lillipans until they can escape on their own!
+type3,1,NpcComOnSuccess,/face2 It looks like the Lillipans got away.<br>What a relief! Great work!
+type3,1,NpcComOnFailure,"The Lillipans were sent flying.<br>But, they're probably okay... Right?"
+type3,1,NpcComOnFirstDamage,/face3 Hey! Stop it! Attacking a Gilnas will cause it<br>to explode!
+type3,1,NpcComOnPinch,"/face4 If that Gilnas takes any more damage, it'll <br>explode right next to those poor Lillipans! <br>Protect them without triggering the Gilnas!"

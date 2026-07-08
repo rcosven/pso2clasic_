@@ -1,0 +1,43 @@
+section,group,id,text
+common,0,IncidentName,$(0)を撃破せよ！
+common,0,TrialBeginMsg,緊急指令！新たに現れた<br>$(0)を撃破せよ！
+common,0,TrialAbstract,新たに現れた<br>$(0)を撃破せよ！
+common,1,IncidentName,Defeat $(0)!
+common,1,TrialBeginMsg,This is an urgent order! Defeat all<br>$(0) reinforcements!
+common,1,TrialAbstract,Defeat the $(0)<br>reinforcements!
+type1,0,NpcComOnPreBegin,$(0)の撃退を<br>確認しました！　お疲れ様です！<br>……って、え？　大きな反応！？
+type1,0,NpcComOnBegin,緊急連絡！<br>新手の$(0)を<br>確認！　接近に気付けないなんて……！
+type1,0,NpcComOnSuccess,/face2 $(0)の<br>完全な撃退を確認しました！<br>各員の協力に感謝します！
+type1,1,NpcComOnPreBegin,$(0) has been repelled!<br>Excellent work! Hold on... I've got a huge<br>reading here!
+type1,1,NpcComOnBegin,Danger! $(0) reinforcements<br>sighted! How did I miss that before?
+type1,1,NpcComOnSuccess,"/face2 We've confirmed the $(0)<br>forces have been repelled! Well done, everyone!"
+type2,0,NpcComOnPreBegin,$(0)の討伐を確認。<br>やれやれ、一段落だな……<br>……いや待て、何だこの反応は！
+type2,0,NpcComOnBegin,緊急指令だ、新手の<br>$(0)が出現！<br>ここまで接近に気付かないとは……！
+type2,0,NpcComOnSuccess,$(0)の討伐を<br>確認した。各員の協力に感謝する。
+type2,1,NpcComOnPreBegin,"$(0) suppression confirmed.<br>Whew, I'm glad that's over with... Wait, further<br>activity detected!"
+type2,1,NpcComOnBegin,This is an urgent request!<br>Defeat the $(0) reinforcements!<br>It baffles me how we missed them!
+type2,1,NpcComOnSuccess,$(0) suppressed.<br>I commend your efforts.
+type3,0,NpcComOnPreBegin,/face2 やりましたね！<br>$(0)、撃破！<br>……あれ？　この反応、おっきいです！
+type3,0,NpcComOnBegin,わわっ、うわわっ！<br>$(0)！？<br>新手！？　いつのまにそばに！？
+type3,0,NpcComOnSuccess,/face2 な、なんとか<br>$(0)の撃退に<br>成功しました。お疲れ様でしたー。
+type3,1,NpcComOnPreBegin,/face2 You've done it!<br>$(0) has been eliminated!<br>Wait... I've got a huge reading here!
+type3,1,NpcComOnBegin,What!? $(0) reinforcements!?<br>Where'd they come from!?
+type3,1,NpcComOnSuccess,"/face2 Whew, you managed to repel the<br>$(0). Nice work."
+type6,0,NpcComOnPreBegin,$(0)、撃破確認。<br>……ですが、別の反応が<br>近づいてきています。
+type6,0,NpcComOnBegin,緊急指令発令。<br>出現した$(0)を<br>撃破してください。
+type6,0,NpcComOnSuccess,緊急指令の達成を確認。<br>$(0)の反応は<br>消失しました。
+type6,1,NpcComOnPreBegin,$(0) destroyed...<br>But something else is moving in.
+type6,1,NpcComOnBegin,This is an emergency order.<br>Eliminate the $(0) presence.
+type6,1,NpcComOnSuccess,Mission accomplished.<br>The $(0) presence is gone.
+type9,0,NpcComOnPreBegin,$(0)の撃退を確認！<br>……ですが、なんだかもう少し<br>続きそうな感じですよ！
+type9,0,NpcComOnBegin,緊急連絡！<br>$(0)の反応を確認！<br>連戦です、気をつけてください！
+type9,0,NpcComOnSuccess,$(0)の撃退を<br>確認しました、お疲れ様です！<br>なんとかなってよかったです！
+type9,1,NpcComOnPreBegin,$(0) defeated!<br>...But I get the feeling we're not out of the<br>woods yet!
+type9,1,NpcComOnBegin,Emergency! $(0) presence<br>detected! You'll have to make do without<br>a breather!
+type9,1,NpcComOnSuccess,Well done driving out the $(0)<br>presence! It worked out in the end!
+type9f,0,NpcComOnPreBegin,$(0)の撃退を確認！<br>……ですが、なんだかもう少し<br>続きそうな感じですよ！
+type9f,0,NpcComOnBegin,緊急連絡！<br>$(0)の反応を確認！<br>連戦です、気をつけてください！
+type9f,0,NpcComOnSuccess,$(0)の撃退を<br>確認しました、お疲れ様です！<br>なんとかなってよかったです！
+type9f,1,NpcComOnPreBegin,$(0) defeated!<br>...But I get the feeling we're not out of the<br>woods yet!
+type9f,1,NpcComOnBegin,Emergency! $(0) presence<br>detected! You'll have to make do without<br>a breather!
+type9f,1,NpcComOnSuccess,Well done driving out the $(0)<br>presence! It worked out in the end!

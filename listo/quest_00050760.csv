@@ -1,0 +1,25 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,まもなく紅き邪竜との決戦です。<br>すでに覚醒済みで、接敵直後からの<br>猛攻が予想されます、注意して下さい！
+PreTransportDirection,0,NpcComMsg2,剣の巫女、アリサさんの援護があり<br>ラコニウムソードも力を貸してくれる。<br>……負けるわけには、いきませんよね！
+PreTransportDirection,1,NpcComMsg1,Pronto estara luchando contra el dragon rojo. Ya ha despertado y esta esperando a su enemigo con ataque inminente. ¡Ten cuidado!
+PreTransportDirection,1,NpcComMsg2,"La espada de la diosa, Alis, esta protegiendote y el Laconium Sword te ayudara tambien. No deberias perder esta batalla."
+Basic,0,Title,壊城に舞う紅き邪竜
+Basic,0,Explanation,さい！<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,El dragon rojo cae sobre el castillo
+Basic,1,Explanation,Fallo: no lograr completar la mision o superar el limite de tiempo.
+QuestTarget,0,SimpleExplanation,ドラゴンを撃退せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota al dragon!
+AreaName,0,Area0S,異世界オメガ　クエント城跡
+AreaName,0,Area0L,異世界オメガ　クエント城跡
+AreaName,1,Area0S,Dimension alternativa: Omega - Ruinas del castillo de Cuento
+AreaName,1,Area0L,Dimension alternativa: Omega - Ruinas del castillo de Cuento
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a5,Poseer un permiso de dificultad super dificil

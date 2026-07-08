@@ -1,0 +1,61 @@
+section,group,id,text
+common,0,IncidentName,リリーパ族集落防衛
+common,0,TrialBeginMsg,リリーパ族の集落を守り通せ！
+common,0,TrialAbstract,リリーパ族の集落を守り通せ！
+common,1,IncidentName,Defend the Lillipan settlements
+common,1,TrialBeginMsg,Protect the Lillipan settlements!
+common,1,TrialAbstract,Protect the Lillipan settlements!
+type1,0,NpcComOnBegin,エリア内に存在するリリーパ族の集落が<br>襲撃を受けているようです。<br>至急、救援に向かって下さい。
+type1,0,NpcComOnAfterBegin,集落の位置座標は$(0)です。
+type1,0,NpcComOnSuccess,なんとか守り切れましたね。<br>お疲れ様でした。
+type1,0,NpcComOnFailure,/face4 ……集落、全壊。<br>仕方がありません。<br>通常任務に戻ってください。
+type1,0,NpcComOnArrive,その地点にリリーパ族の<br>集落があります。<br>周囲のエネミーを撃退してください。
+type1,0,NpcComOnBroken1,集落の破壊を確認。<br>残り二つです、なんとか防衛を。
+type1,0,NpcComOnBroken2,集落の破壊を確認……<br>残り一つ、せめて一つだけでも……
+type1,0,NpcComOnTimeLimit1,敵の勢いが落ちているようです。<br>引き続き、撃退を続けて下さい。
+type1,0,NpcComOnTimeLimit2,敵の出現が収まりつつあります。<br>最後まで気を抜かずに対処を。
+type1,1,NpcComOnBegin,Lillipan settlements in the area seem to be<br>under attack. Move in to help them at once.
+type1,1,NpcComOnAfterBegin,Settlement coordinates are at $(0).
+type1,1,NpcComOnSuccess,You defended them well. Excellent work.
+type1,1,NpcComOnFailure,"/face4 The settlements were... completely wiped out.<br>It's unfortunate, but there's nothing we can do.<br>Return  to normal operations."
+type1,1,NpcComOnArrive,There's a Lillipan settlement there.<br>Drive out all enemies in the area.
+type1,1,NpcComOnBroken1,Sensors indicate a settlement was destroyed.<br>Only  two remain. Do whatever you can to<br>protect them.
+type1,1,NpcComOnBroken2,Another settlement was destroyed...<br>There's only one left.<br>We have to save at least one...
+type1,1,NpcComOnTimeLimit1,The hostiles seem intimidated. Stay on them!
+type1,1,NpcComOnTimeLimit2,Most hostile readings have faded. Stay sharp<br>and finish the job.
+type2,0,NpcComOnBegin,近くに存在するリリーパ族の集落が<br>襲撃を受けているようだ。<br>各員、救援へ向かえ。
+type2,0,NpcComOnAfterBegin,座標は$(0)だ。<br>マーカー表示に従い、急行しろ。
+type2,0,NpcComOnSuccess,よし、集落の防衛、完了だ。<br>よくやったな。
+type2,0,NpcComOnFailure,確認されていた集落は全壊だ。<br>……悔やんでも仕方があるまい。<br>通常任務に戻れ。
+type2,0,NpcComOnArrive,よし、集落に辿り着いたようだな。<br>周囲の敵を撃退しろ。
+type2,0,NpcComOnBroken1,ち……集落の一つが破壊されたか。<br>残りは二つだ、対応を急げ。
+type2,0,NpcComOnBroken2,集落の残存数はあと一つだ。<br>なんとしても守り抜け。
+type2,0,NpcComOnTimeLimit1,いいぞ、敵の勢いが落ちてきている。
+type2,0,NpcComOnTimeLimit2,敵の勢いを押し返しつつある。<br>その調子で撃退を続けろ。
+type2,1,NpcComOnBegin,"Nearby Lillipan settlements are under attack.<br>All ops, move in and defend them."
+type2,1,NpcComOnAfterBegin,The coordinates are $(0).<br>Follow the markers and get there quickly.
+type2,1,NpcComOnSuccess,You saved those settlements.<br>Mission accomplished.
+type2,1,NpcComOnFailure,"All detected settlements were destroyed. I<br>know it  hurts, but we have to accept it and<br>move on... Return to your regular duties."
+type2,1,NpcComOnArrive,Seems you've arrived at a settlement.<br>Drive out  all hostiles in the area.
+type2,1,NpcComOnBroken1,Dammit... A settlement's been wiped out.<br>There's only two left. Hurry!
+type2,1,NpcComOnBroken2,Just one settlement remains.<br>Protect them by any means necessary!
+type2,1,NpcComOnTimeLimit1,"Great work, the hostiles are backing off."
+type2,1,NpcComOnTimeLimit2,You're driving out the enemy.<br>Keep on pushing.
+type3,0,NpcComOnBegin,エリア内のリリーパ族の集落が<br>襲われています！<br>急いで助けに行ってあげてくださいー！
+type3,0,NpcComOnAfterBegin,集落の位置はー……$(0)ですー！<br>マーカーも出しておきますねっ！
+type3,0,NpcComOnSuccess,/face2 よかったぁ……なんとか集落を<br>守り切れたみたいです。<br>本当に、お疲れ様でしたっ！
+type3,0,NpcComOnFailure,/face6 ……うう、集落、全壊しちゃいました。<br>仕方ありません、通常任務に<br>戻ってください。
+type3,0,NpcComOnArrive,リリーパ族の集落はそのあたりです！<br>周辺の敵を撃退しつつ<br>集落を守ってあげてくださいっ！
+type3,0,NpcComOnBroken1,/face4 ああっ、集落の一つが<br>壊されちゃいました！<br>あと二つ、守ってあげて下さいっ！
+type3,0,NpcComOnBroken2,/face4 集落、残り一つですっ！<br>なんとか、なんとか<br>守ってあげてくださいーっ！
+type3,0,NpcComOnTimeLimit1,/face2 敵の勢いが下がっていますよっ！<br>その調子です！　そのままそのまま！
+type3,0,NpcComOnTimeLimit2,/face2 すごいです！　敵を押し返してます！<br>あと少し、あと少しですよー！
+type3,1,NpcComOnBegin,Lillipan settlements in the area are under<br>attack! Go help them immediately!
+type3,1,NpcComOnAfterBegin,The settlements are located at... $(0)!<br>I've got markers up too!
+type3,1,NpcComOnSuccess,/face2 Whew... You managed to drive all the attackers<br>out! I'm impressed!
+type3,1,NpcComOnFailure,/face6 No... All settlements were destroyed.<br>I suppose there's nothing we can do now...<br>Back to your regular duties.
+type3,1,NpcComOnArrive,The Lillipan settlements are just over there! <br>Fight off enemies in the area to keep<br>them safe!
+type3,1,NpcComOnBroken1,/face4 No! One of the settlements was destroyed!<br>There's only two left. Please keep them safe!
+type3,1,NpcComOnBroken2,/face4 There's only one settlement left!<br>Do whatever it takes to protect them!
+type3,1,NpcComOnTimeLimit1,/face2 The hostiles are losing steam!<br>You're doing it! Go go go!
+type3,1,NpcComOnTimeLimit2,/face2 Amazing!<br>You've pushed back most of the enemies!<br>Just a little more!

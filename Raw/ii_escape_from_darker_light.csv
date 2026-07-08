@@ -1,0 +1,37 @@
+section,group,id,text
+common,0,IncidentName,ヴィスボルトを回避せよ！
+common,0,TrialBeginMsg,ヴィスボルトの攻撃を回避し続けろ。<br>$(0)回以上被雷したら失敗。
+common,0,TrialAbstract,ヴィスボルトの攻撃を回避し続けろ。
+common,0,TrialLightningStrike,$(0)が被雷した。総被雷数$(1)回。
+common,0,TrialDarkerKilledInfo,ヴィスボルトの規模抑制まで、あと$(0)体。
+common,0,TrialDegradationInfo,ヴィスボルトの規模が抑制された！
+common,1,IncidentName,Evade the Vizbolts!
+common,1,TrialBeginMsg,Evade the Visbolt attacks! You'll fail if you're <br>hit $(0) times or more.
+common,1,TrialAbstract,Evade the Visbolt attacks!
+common,1,TrialLightningStrike,$(0) was hit. Total hits: $(1)
+common,1,TrialDarkerKilledInfo,Destroy $(0) more to reduce Vizbolt attack range!
+common,1,TrialDegradationInfo,Vizbolt attack range reduced!
+type1,0,NpcComOnBegin,緊急指令！　ヴィスボルトの発生を<br>確認しました。ダーカーの干渉による<br>天候兵器です！　回避してください！
+type1,0,NpcComOnSuccess,/face2 ヴィスボルトの停止確認！<br>被害は最小限に抑えられました。<br>よかった……
+type1,0,NpcComOnFailure,/face4 ヴィスボルトの発生は止めましたが……<br>被害は甚大です。通常任務に<br>戻りますが、無理はしないように。
+type1,0,NpcComOnBeginTrial,ヴィスボルトの発生時間には限りが<br>あります。被害を抑えるためにも<br>なんとか回避しつづけてください！
+type1,0,NpcComOnLightningStrike,ヴィスボルト発生の干渉源が<br>付近にいるようです。殲滅できれば<br>発生規模を抑制できます！
+type1,0,NpcComOnOneLife,これ以上、ヴィスボルトを<br>受けるのは危険です！<br>残り時間、何とか回避してください！
+type1,1,NpcComOnBegin,Emergency! Vizbolt outbreak confirmed!<br>These are meteorological weapons generated<br>by Falspawn interference.<br>Do your best to avoid them!
+type1,1,NpcComOnSuccess,/face2 The Vizbolts have dispersed! Thankfully<br>damage was kept to a minimum.
+type1,1,NpcComOnFailure,"/face4 The Vizbolt outbreak has stopped, but<br>you've suffered heavy damage. Return to your<br>regular duties but...be careful out there."
+type1,1,NpcComOnBeginTrial,Vizbolts won't keep spawning forever. In the<br>meantime avoid them to minimize damage!
+type1,1,NpcComOnLightningStrike,The interference source spawning the Vizbolts<br>is close by. If you can destroy it you'll reduce<br>their range.
+type1,1,NpcComOnOneLife,You can't afford to be hit by any more Vizbolts! <br>Do what you can to avoid them till time runs out!
+type9f,0,NpcComOnBegin,緊急連絡です！<br>ヴィスボルトの発生を確認しました！<br>回避してください！
+type9f,0,NpcComOnSuccess,ヴィスボルトの停止を確認しました！<br>被害を最小限に抑えられたみたいです。<br>お疲れさまでした！
+type9f,0,NpcComOnFailure,ヴィスボルトの停止を確認しました。<br>しかし、被害は甚大のようです……<br>あまり無理しないでくださいね。
+type9f,0,NpcComOnBeginTrial,ヴィスボルトの発生時間には<br>限りがあります！<br>頑張って回避してください！
+type9f,0,NpcComOnLightningStrike,ヴィスボルト発生の干渉源を観測！<br>撃破し、発生規模を抑制してください！
+type9f,0,NpcComOnOneLife,これ以上、ヴィスボルトの<br>ダメージを受けるのは危険です！<br>注意してください！
+type9f,1,NpcComOnBegin,Emergency! Vizbolt presence detected! Avoid<br>them!
+type9f,1,NpcComOnSuccess,The Vizbolts have dispersed. Damage seems to<br>have been kept to a minimum. Well done!
+type9f,1,NpcComOnFailure,"The Vizbolts have dispersed, but you've taken<br>massive damage... I'd recommend taking it<br>easy for a while."
+type9f,1,NpcComOnBeginTrial,Vizbolts won't keep spawning forever!<br>Do what you can to evade them in the<br>meantime!
+type9f,1,NpcComOnLightningStrike,I've got a visual on the interference source<br>spawning Visbolts! Destroy it to reduce their<br>attack range!
+type9f,1,NpcComOnOneLife,You can't afford to get hit by another Vizbolt!<br>Be careful!

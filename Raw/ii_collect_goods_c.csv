@@ -1,0 +1,43 @@
+section,group,id,text
+common,0,IncidentName,稀少鉱物を回収せよ！
+common,0,TrialBeginMsg,稀少鉱物を回収せよ！
+common,0,TrialAbstract,点在する稀少鉱物を回収せよ！
+common,0,ToastPickup,$(0)個目の$(1)を拾いました。
+common,0,ToastCollect,$(0)が$(1)個回収しました。
+common,0,ToastRewards,$(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+common,1,IncidentName,Collect the Precious Minerals!
+common,1,TrialBeginMsg,Collect the Precious Minerals!
+common,1,TrialAbstract,Collect the Precious Minerals scattered about!
+common,1,ToastPickup,Picked up $(1) #$(0).
+common,1,ToastCollect,Collected $(0) x $(1).
+common,1,ToastRewards,Collected $(0) x $(1). Earned $(2) EXP and $(3) meseta.
+type2,0,NpcComOnBegin,通達だ。その近辺で稀少鉱物の反応が<br>確認された。アークス各員は<br>回収任務へと移行せよ。
+type2,0,NpcComOnBeginAtRareCase,緊急通達。稀少鉱物の反応が顕著だ。<br>作戦許諾時間は限られている。<br>各員、急ぎ回収任務を遂行しろ。
+type2,0,NpcComOnSuccess,よし、対象物の回収を確認。<br>よくやったな。
+type2,0,NpcComOnFailure,ち、必要十分な数は集まらなかったか。<br>仕方がない。通常任務へと戻れ。
+type2,0,GoodsPosition,稀少鉱物の反応は<br>$(0)からだ。
+type2,0,RepopGoods,新しい回収対象物が確認された。<br>各員回収を進めてくれ。
+type2,0,OnAccessPodByEmptyHand,まずは稀少鉱物を回収しろ。<br>ポッドを使うのはその後だ。
+type2,0,Collect1st,よし、稀少鉱物の運搬を確認。<br>引き続き回収を進めろ。
+type2,0,CollectHalf,いいぞ、半数程度は回収できた。<br>引き続き任務を遂行しろ。
+type2,0,CollectMostly,稀少鉱物の回収確認。<br>残数もあとわずかだ。いいぞ。
+type2,0,Pickup1st,そうだ、それが稀少鉱物だ。<br>発見しにくい分、稀少なわけだな。
+type2,0,PickupHalf,よし、そいつで大体半数だ。<br>運搬も忘れるなよ。
+type2,0,PickupEnough,今の回収で、必要十分数は満たした。<br>早急にポッドへと運搬しろ。
+type2,0,TimeupWarning,作戦許諾時間が少なくなってきた。<br>回収と運搬を急げ。
+type2,0,TimeupEmergency,残り時間はあとわずかだ。<br>各員、回収を
+type2,1,NpcComOnBegin,"Listen up. Precious Minerals have been<br>detected nearby. ARKS ops, shift your<br>focus to collecting them."
+type2,1,NpcComOnBeginAtRareCase,"This is urgent. Readings show a strong<br>Precious Mineral presence in the area,<br>but we don't have much time. All ops,<br>hurry up and gather them."
+type2,1,NpcComOnSuccess,"There, target items recovered. Nice work."
+type2,1,NpcComOnFailure,"Damn, we weren't able to gather enough. It<br>happens. Resume regular duties."
+type2,1,GoodsPosition,Precious Minerals detected at<br>$(0).
+type2,1,RepopGoods,"New target items confirmed! All ops, <br>move to retrieve."
+type2,1,OnAccessPodByEmptyHand,"First collect the Precious Minerals, then bring<br>them to the Pod for us."
+type2,1,Collect1st,"Nice, receipt confirmed. Now go get some more<br>Precious Minerals."
+type2,1,CollectHalf,Looking good. That's about half of<br>what we need. Back to it.
+type2,1,CollectMostly,"Precious Minerals received. Almost there,<br>just a bit more."
+type2,1,Pickup1st,"There you go, that's a Precious Mineral. <br>They're precious because of how hard to<br>find they are."
+type2,1,PickupHalf,"Great, about half way there. Don't forget<br>to bring them to the Pod."
+type2,1,PickupEnough,You have enough Minerals now.<br>Get them to the Pod quickly.
+type2,1,TimeupWarning,You're running out of time. Get the<br>Minerals back to the Pod immediately.
+type2,1,TimeupEmergency,"Time's almost up. All ops, get moving!"

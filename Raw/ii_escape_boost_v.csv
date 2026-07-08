@@ -1,0 +1,23 @@
+section,group,id,text
+common,0,IncidentName,暴走ヴィスボルトを回避せよ！
+common,0,TrialBeginMsg,暴走ヴィスボルトの攻撃を回避せよ。
+common,0,TrialAbstract,暴走ヴィスボルトを回避し続けろ。
+common,0,TrialLightningStrike,$(0)が被雷した。総被雷数$(1)/$(2)回。
+common,1,IncidentName,Evade the Runaway Vizbolts!
+common,1,TrialBeginMsg,Evade the Runaway Vizbolt attacks!
+common,1,TrialAbstract,Evade the Runaway Vizbolts!
+common,1,TrialLightningStrike,$(0) was hit. Total hits: $(1)/$(2)
+type9,0,NpcComOnBegin,暴走したヴィスボルトの発生を確認！<br>敵味方、見境ない攻撃が予想されます！<br>捕捉されたら、無理せず回避を！
+type9,0,NpcComOnSuccess,/face2 暴走ヴィスボルトの消滅を確認！<br>被害を最小に抑えることができました。<br>お見事です！
+type9,0,NpcComOnFailure,/face4 暴走ヴィスボルトは<br>消滅しましたが……被害は甚大です。<br>あまり無理しないでくださいね。
+type9,0,NpcComOnHitOtherPlayer,大丈夫ですか！？<br>爆発の直前に反応が変化しています。<br>タイミングよく、回避してください！
+type9,0,NpcComOnLightningStrike,大丈夫ですか！？<br>爆発の直前に反応が変化しています。<br>タイミングよく、回避してください！
+type9,0,NpcComOn60SecondLeft,暴走ヴィスボルト、消滅まで残り１分！<br>なんとか回避してください！
+type9,0,NpcComOn30SecondLeft,暴走ヴィスボルトの消滅まで<br>あとわずか
+type9,1,NpcComOnBegin,"Runaway Vizbolts confirmed!<br>We won't be able to tell where attacks are coming from!<br>If you get caught, just keep dodging!"
+type9,1,NpcComOnSuccess,/face2Runaway Vizbolts dispersed!<br>Damage was kept to a minimum.<br>Well done!
+type9,1,NpcComOnFailure,/face4The Runaway Vizbolts are gone...<br>but you've taken massive damage.<br>I'd take it easy for a while.
+type9,1,NpcComOnHitOtherPlayer,Are you okay!?<br>The reaction is changing right before the explosion.<br>Time your dodge!
+type9,1,NpcComOnLightningStrike,Are you okay!?<br>The reaction is changing right before the explosion.<br>Time your dodge!
+type9,1,NpcComOn60SecondLeft,One more minute until the Runaway<br>Vizbolts disappear! Try to avoid them!
+type9,1,NpcComOn30SecondLeft,Just a little longer until the<br>Runaway Vizbolts disappear!

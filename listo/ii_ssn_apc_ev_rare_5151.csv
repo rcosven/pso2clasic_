@@ -1,0 +1,15 @@
+﻿section,group,id,text
+5150,0,PreBegin,/ci3 1 ……やはり、来たか。<br>油断するな、構えろ。
+5150,0,Begin,/ci3 2 駄目だ。
+5150,0,Success,/ci2 1 実力不足を実感してるなら、話は早い。<br>特訓を再開するとしよう。<br>それではな、協力に感謝する。
+5150,0,Failure,/ci5 3 ここまで、歯がたたないとはな……<br>悔しさは残るが、引き際も重要だ。<br>一度退いて、体勢を立て直すとしよう。
+5150,0,Dead,……予想以上に損傷が大きい。<br>無念だ……
+5150,0,BuddyDead,まったく、世話がやける。<br>仕方あるまい。<br>ここは二人で何とかするぞ。
+5150,0,TargetDead,/ci1 1 終わったようだな。<br>手間をかけた
+5150,1,PreBegin,"{""contexto_original"": ""$(0)を倒せ"", ""texto_a_traducir"": ""Derrota al <br>""}"
+5150,1,Begin,"{""contexto_original"": ""制限時間内に$(0)を倒せ"", ""texto_a_traducir"": ""¡Derrota a ||TAG_0|| dentro del limite de tiempo!""}"
+5150,1,Success,"/ci2 1 Si sientes que no tienes lo que se necesita, hay<br>una solución fácil. Más formación. De todos modos, gracias por tu<br>ayuda."
+5150,1,Failure,¿Quedate aqui y garantiza mas.<br>Retrocedamos y recuperemonos.
+5150,1,Dead,...El costo fue mayor de lo que esperaba. Ay...
+5150,1,BuddyDead,¿Podrías hacer tu propio peso por una vez? Maldita sea...<br>Los dos tendremos que arreglárnoslas.
+5150,1,TargetDead,/ci1 1 Parece que está terminado. Perdón por la molestia.

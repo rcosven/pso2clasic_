@@ -1,0 +1,21 @@
+section,group,id,text
+Basic,0,Title,異界に紡がれし知の化身
+Basic,0,Explanation,異世界オメガ、峡谷地帯のマナ特異点で<br>強力な反応を感知いたしました。<br>各種数値は【敗者】とほぼ一致しており<br>周辺への影響が懸念されます！<br>早急に撃破をお願いします！<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,Sabiduria encarnada
+Basic,1,Explanation,"Hemos detectado una seйal que proviene de un <br>singularidad de mana en el valle del area <br>de Omega. Las lecturas son similares a las de Luther <br>el caido. El area circundante tambien podria ser afectada. Por favor, acuda al lugar lo antes posible. <br>------------------------------------------- <br>Esta mision solo puede ser completada <br> veces.$(0)El daйo maximo que se puede infligir es de 999,999.<br>La mision fallara si no se cumple los objetivos o el limite de tiempo es superado."
+QuestTarget,0,SimpleExplanation,オメガファルス・ルーサーを撃破せよ！
+QuestTarget,1,SimpleExplanation,Destruye Omega Falz Luther
+PreTransportDirection,0,NpcComMsg1,まもなく、ダークファルス【敗者】の<br>出現が確認された戦闘区域への<br>転送を開始します。
+PreTransportDirection,0,NpcComMsg2,以前、マザーシップ内に顕現した<br>【敗者】よりも強力な反応が見られます。<br>厳重な警戒をお願いします！
+PreTransportDirection,1,NpcComMsg1,Comenzamos teleportacion a la zona de batalla donde se detecto Dark Falz Luther.
+PreTransportDirection,1,NpcComMsg2,Nuestras lecturas para este son mas altas que las del [Lutero] que se manifesto en la Nave Madre. ¡Extreme la precaucion!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a5,Poseer un permiso de dificultad super dificil

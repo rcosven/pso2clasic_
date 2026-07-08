@@ -1,0 +1,23 @@
+section,group,id,text
+5580,0,Begin,/ci2 3 ああ、そりゃあいい。<br>オマエはマグロ娘の面倒を見てくれ。<br>戦闘は俺が引き受ける。
+5580,0,Success,/ci4 3 俺はひとりのほうがいいんだけどな。<br>チッ……調子狂うぜ。
+5580,0,Failure,仕方ねぇな。じゃ、帰って一杯やるか。<br>おいマグロ娘、ツナ缶持ってるだろ。<br>そいつを肴にしようぜ。
+5580,0,Dead,慣れない共闘なんか<br>するんじゃなかったぜ……
+5580,0,BuddyDead,チッ……静かになったらなったで<br>調子が狂うぜ。
+5580,1,Begin,"/ci2 3 Hmph, fine by me.<br>You take care of the tuna girl,<br>I'll take care of the fighting."
+5580,1,Success,/ci4 3 I'd rather work alone.<br>Whatever...it's your funeral.
+5580,1,Failure,"Nothin' doin', I guess. Let's head back<br>and have a drink. You still have that can<br>of tuna, fish-girl? It'll pair real nice."
+5580,1,Dead,You shouldn't pick fights<br>you can't finish...
+5580,1,BuddyDead,Hmph... all this silence<br>was starting to drive me nuts.
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

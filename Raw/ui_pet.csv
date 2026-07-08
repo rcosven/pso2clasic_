@@ -1,0 +1,465 @@
+section,group,id,text
+Rename,0,RenameTitle,ペットネーム変更
+Rename,0,Rename,「$(2)」の<br>ペットネームを変更します。<br>新しい名前を入力してください。<br><br><yellow>必要メセタ：$(0)（現在：$(1)）<c>
+Rename,0,RenameConfirm,ペットネームを変更します。<br>よろしいですか？<br><br>　変更前：$(1)<br>　<yellow>変更後：$(0)<c>
+Rename,0,RenameSuccess,ペットネームを変更しました。
+Rename,0,NamingTitle,ペットネーム入力
+Rename,0,Naming,ペットに好きな名前をつけることができます。<br>ペットネームを入力してください。<br><br><yellow>※あとからペットラボで変更できます。<c>
+Rename,0,NamingConfirm,「$(0)」で登録しますか？<br><br>※このエッグが、すでに登録済のペットと同種で<br>　かつ「現在より高いレアリティ」の場合は、<br>　ペットラボの<yellow>レアリティ進化<c>がおすすめです。
+Rename,0,NamingSuccess,登録しました。武器「タクト」にセットできます。
+Rename,0,HatchedTitle,ペット
+Rename,1,RenameTitle,CHANGE PET NAME
+Rename,1,Rename,You are about to change $(2)'s name.<br>Enter a new name.<br><br><yellow>Meseta Required: $(0) (You Have: $(1))<c>
+Rename,1,RenameConfirm,You are about to change your pet's name.<br>Are you sure you wish to proceed?<br><br> Name Before: $(1)<br><yellow>Name After: $(0)<c>
+Rename,1,RenameSuccess,Pet name changed.
+Rename,1,NamingTitle,ENTER PET NAME
+Rename,1,Naming,Enter a name for your pet.<br><br><yellow>Note: You can change this later in the Pet Lab.<c>
+Rename,1,NamingConfirm,"Register pet as $(0)?<br><br>Note: If this egg is the same type as an already-registered <br>pet and has a higher Rarity, <yellow>Rarity Enhancement<c> <br>in the Pet Lab is recommended."
+Rename,1,NamingSuccess,Pet is now registered. You can set it to a Harmonizer weapon.
+Rename,1,HatchedTitle,PET
+POTENTIAL_HELP,0,POTENTIAL_000000,ポテンシャル０の説明
+POTENTIAL_HELP,0,POTENTIAL_000001,ポテンシャル１の説明
+POTENTIAL_HELP,0,POTENTIAL_000002,ポテンシャル２の説明
+POTENTIAL_HELP,0,POTENTIAL_000003,ポテンシャル３の説明
+POTENTIAL_HELP,1,POTENTIAL_000000,Description for Potential 0
+POTENTIAL_HELP,1,POTENTIAL_000001,Description for Potential 1
+POTENTIAL_HELP,1,POTENTIAL_000002,Description for Potential 2
+POTENTIAL_HELP,1,POTENTIAL_000003,Description for Potential 3
+Potential,0,POTENTIAL_000000,ポテンシャル０
+Potential,0,POTENTIAL_000001,ポテンシャル１
+Potential,0,POTENTIAL_000002,ポテンシャル２
+Potential,0,POTENTIAL_000003,ポテンシャル３
+Potential,1,POTENTIAL_000000,Potential 0
+Potential,1,POTENTIAL_000001,Potential 1
+Potential,1,POTENTIAL_000002,Potential 2
+Potential,1,POTENTIAL_000003,Potential 3
+List,0,Title,ペット一覧
+List,0,Command1,エッグ合成
+List,0,Command2,キャンディーボックス
+List,0,Command3,ペットを逃がす
+List,0,Empty,ペットがいません
+List,1,Title,PET LIST
+List,1,Command1,Egg Synthesis
+List,1,Command2,Sweets Box
+List,1,Command3,Release Pet
+List,1,Empty,No pet available.
+Info,0,Title,ペット詳細
+Info,0,Empty,ペットが選択されていません
+Info,0,Tab1,1
+Info,0,Tab2,2
+Info,0,Tab3,3
+Info,0,Tab4,4
+Info,0,Ability,性格
+Info,1,Title,PET DETAILS
+Info,1,Empty,No pet selected.
+Info,1,Tab1,1
+Info,1,Tab2,2
+Info,1,Tab3,3
+Info,1,Tab4,4
+Info,1,Ability,Personality
+CandyBox,0,Title,キャンディーボックス
+CandyBox,0,candyadd,キャンディーの追加
+CandyBox,0,candyremove,キャンディーの移動と削除
+CandyBox,0,Edit,キャンディーボックスの編集
+CandyBox,0,AllErase,すべてのキャンディーを削除する
+CandyBox,0,Remover,キャンディーを取り外す
+CandyBox,0,AllRemover,すべてのキャンディーを取り外す
+CandyBox,0,IceCrush,キャラメルキューブを削除する
+CandyBox,0,RemoverMessage,このキャンディーをアイテムパックに戻します。<br>よろしいですか？<br><br><yellow>必要キャンディーリムーバー数：１<br>(所持数：$(0))<c>
+CandyBox,0,AllEraserMessage,このキャンディーボックスにセットされている<br><yellow>すべてのキャンディーを削除<c>します。<br>本当によろしいですか？<br><br><c ff4f3f>※削除したキャンディーは元に戻せません。<c><br><br><yellow>必要全キャンディーイレイサー数：1<br>（所持数:$(0))<c>
+CandyBox,0,RemoverResultMessage,セットしていたキャンディを取り外して<br>アイテムパックに戻しました。
+CandyBox,0,AllEraserResultMessage,すべてのキャンディーを削除しました。
+CandyBox,0,IceCrushMessage,このキャラメルキューブを削除します。<br>よろしいですか？<br><br><yellow>必要キャラメルクラッシャー数：１<br>(所持数：$(0))<c>
+CandyBox,0,IceCrushResultMessage,キャラメルキューブを削除しました。
+CandyBox,0,SaveMessage,以下をキャンディーボックスに追加します。<br>よろしいですか？
+CandyBox,0,SaveMessage2,以下のキャンディーを削除します。<br>よろしいですか？<br><br><c ff4f3f>※削除したキャンディーは元に戻せません。<c><br><yellow>必要キャンディーイレイサー数：$(0)<br>(所持数：$(1))<c>
+CandyBox,0,CancelSaveMessage,変更を破棄して戻ります。<br>よろしいですか？<br>（編集後は「決定」ボタンで保存）
+CandyBox,0,SaveResultMessage,キャンディーボックスの内容を<br>保存しました。
+CandyBox,0,Move,移動する
+CandyBox,0,Detach,一時的に外す
+CandyBox,0,CandyList,キャンディーリスト
+CandyBox,0,AllRemoverMessage,このキャンディーボックスにセットされている<br>すべてのキャンディーをアイテムパックに戻します。<br>よろしいですか？<br><br><yellow>必要全キャンディーリムーバー数：1<br>（所持数:$(0))<c>
+CandyBox,0,AllRemoverResultMessage,すべてのキャンディーを<br>アイテムパックに戻しました。
+CandyBox,0,ItemPackErrorMessage,アイテムパックの空き容量不足のため、使用できませんでした。
+CandyBox,0,ConfirmTitle,アイテム使用確認
+CandyBox,0,CandySize,$(0)x$(1)
+CandyBox,0,StatusTitle,ステータス
+CandyBox,0,Attribute,属性耐性
+CandyBox,0,StatusNumber,$(0)<c ff9c70> (＋$(1))<c>
+CandyBox,0,StatusPercent,$(0)%
+CandyBox,0,StatusNumber2,(+$(0))
+CandyBox,0,CandyTypeName1,パフェ
+CandyBox,0,CandyTypeName2,ロール
+CandyBox,0,CandyTypeName3,クッキー
+CandyBox,0,CandyTypeName4,ケーキ
+CandyBox,0,CandyTypeName5,ラムネ
+CandyBox,0,CandyTypeName6,クレープ
+CandyBox,0,CandyTypeName7,アメ
+CandyBox,0,CandyTypeName8,サンド
+CandyBox,0,CandyTypeName9,グミ
+CandyBox,0,NumberUnlimited,20
+CandyBox,0,StatusNumberMinus,$(0)<c 32cdff> (－$(1))<c>
+CandyBox,0,StatusPercentPlus,$(0)%<c ff9c70> (＋$(1))<c>
+CandyBox,0,StatusPercentMinus,$(0)%<c 32cdff> (－$(1))<c>
+CandyBox,0,PetName,$(0) ($(1)種)
+CandyBox,0,IceCrushTitle,キャラメルキューブを削除する
+CandyBox,0,RemoverTitle,キャンディーを取り外す
+CandyBox,0,IceCrushNumber,現在の所持数
+CandyBox,0,RemoverNumber,現在の所持数
+CandyBox,0,EraserNumber,キャンディーイレイサー
+CandyBox,0,RemoverHelp,取り外してアイテムパックに戻したい<br>キャンディーを１つ選んでください。<br><br><yellow>必要キャンディーリムーバー数：１<c>
+CandyBox,0,IceCrushHelp,削除したいキャラメルキューブを<br>１つ選んでください。<br><br><yellow>必要キャラメルクラッシャー数：１<c>
+CandyBox,0,CompositeRemainTime1Minute,残り：　1分未満
+CandyBox,0,CompositeRemainTime,残り：　$(0)分
+CandyBox,0,CompositeRemainGauge,+$(0)（+<pict pet_stone_red>$(1)）
+CandyBox,0,CompositeRemainGaugeExtendPay,+$(0)
+CandyBox,0,CompositeRemainGaugeExtendNotPay,（+<pict pet_stone_red>$(0)）
+CandyBox,0,MaxCountError,この種類のキャンディーは<br>これ以上セットできません。
+CandyBox,0,AttributeWarning,属性値が上限を超えてセットされたため、<br>上限値に合わせて、余剰分はカットされました。
+CandyBox,0,IceClushRarityError,実行できませんでした。
+CandyBox,0,HP,HP
+CandyBox,0,Strike,打撃力
+CandyBox,0,Firearm,射撃力
+CandyBox,0,Techinic,法撃力
+CandyBox,0,Dex,技量
+CandyBox,0,DfpStrike,打撃防御
+CandyBox,0,DfpFirearm,射撃防御
+CandyBox,0,DfpTechnic,法撃防御
+CandyBox,0,Element,属性
+CandyBox,0,ItemErrorMessage,$(0)が不足しています。
+CandyBox,0,MoveHelp,外すを選択するとセット済みのキャンディーが外れます。<br>もう一度セットしたい場合はキャンディーの追加から<br>外したキャンディーをセットしてください。
+CandyBox,0,ParfaitErrorMessage,同じ効果を持つパフェはセットできません。
+CandyBox,1,Title,SWEETS BOX
+CandyBox,1,candyadd,Add Sweets
+CandyBox,1,candyremove,Move and Dissolve Sweets
+CandyBox,1,Edit,Edit the Sweets Box
+CandyBox,1,AllErase,Dissolve All Sweets
+CandyBox,1,Remover,Extract Sweets
+CandyBox,1,AllRemover,Extract All Sweets
+CandyBox,1,IceCrush,Crush Caramel Cubes
+CandyBox,1,RemoverMessage,You are about to return this Sweet to your inventory.<br>Are you sure you wish to proceed?<br><br><yellow>Sugar Tongs Required: 1<br>(You Have: $(0))<c>
+CandyBox,1,AllEraserMessage,All the Sweets in this Sweets Box will be <yellow>dissolved<c>.<br>Are you sure you wish to proceed?<br><br><c ff4f3f>Note: This action can't be undone.<c><br><br><yellow>All-Sweets Dissolvers Required: 1<br>(You Have: $(0))<c>
+CandyBox,1,RemoverResultMessage,Sweets have been extracted and returned to your inventory.
+CandyBox,1,AllEraserResultMessage,All Sweets have been dissolved.
+CandyBox,1,IceCrushMessage,You are about to crush this Caramel Cube.<br>Are you sure you wish to proceed?<br><br><yellow>Caramel Crushers Required: 1<br>(You Have: $(0))<c>
+CandyBox,1,IceCrushResultMessage,Caramel Cube has been crushed.
+CandyBox,1,SaveMessage,The following will be added to the Sweets Box.<br>Are you sure you wish to proceed?
+CandyBox,1,SaveMessage2,The following Sweets will be dissolved.<br>Are you sure you wish to proceed?<br><br><c ff4f3f>Note: This action can't be undone.<c><br><br><yellow>Sweets Dissolvers Required: $(0)<br>(You Have: $(1))<c>
+CandyBox,1,CancelSaveMessage,You are about to discard changes and go back.<br>Are you sure you wish to do so?<br>(Press the [Confirm] button to save after editing.)
+CandyBox,1,SaveResultMessage,Saved the contents of the Sweets Box.
+CandyBox,1,Move,Move
+CandyBox,1,Detach,Remove Temporarily
+CandyBox,1,CandyList,Sweets List
+CandyBox,1,AllRemoverMessage,All the Sweets in this Sweets Box will be returned to your inventory.<br>Are you sure you wish to proceed?<br><br><yellow>All-Sweets Sugar Tongs Required: 1<br>(You Have: $(0))<c>
+CandyBox,1,AllRemoverResultMessage,All Sweets have been returned to your inventory.
+CandyBox,1,ItemPackErrorMessage,Item can't be used because there isn't enough room in your inventory.
+CandyBox,1,ConfirmTitle,CONFIRM ITEM USE
+CandyBox,1,CandySize,$(0) x $(1)
+CandyBox,1,StatusTitle,STATS
+CandyBox,1,Attribute,Elemental Resist
+CandyBox,1,StatusNumber,$(0) <c ff9c70>(+$(1))<c>
+CandyBox,1,StatusPercent,$(0)%
+CandyBox,1,StatusNumber2,(+$(0))
+CandyBox,1,CandyTypeName1,Parfait
+CandyBox,1,CandyTypeName2,Roll
+CandyBox,1,CandyTypeName3,Cookie
+CandyBox,1,CandyTypeName4,Cake
+CandyBox,1,CandyTypeName5,Soda
+CandyBox,1,CandyTypeName6,Crepe
+CandyBox,1,CandyTypeName7,Candy
+CandyBox,1,CandyTypeName8,Ice Cream Sandwich
+CandyBox,1,CandyTypeName9,Gummy
+CandyBox,1,NumberUnlimited,20
+CandyBox,1,StatusNumberMinus,$(0) <c 32cdff>(-$(1))<c>
+CandyBox,1,StatusPercentPlus,$(0)% <c ff9c70>(+$(1))<c>
+CandyBox,1,StatusPercentMinus,$(0)% <c 32cdff>(-$(1))<c>
+CandyBox,1,PetName,$(0) (Type: $(1))
+CandyBox,1,IceCrushTitle,CRUSH CARAMEL CUBES
+CandyBox,1,RemoverTitle,EXTRACT SWEETS
+CandyBox,1,IceCrushNumber,You Have:
+CandyBox,1,RemoverNumber,You Have:
+CandyBox,1,EraserNumber,Sweets Dissolvers
+CandyBox,1,RemoverHelp,Select 1 Sweet to extract and return to your inventory.<br><br><yellow>Sugar Tongs Required: 1<c>
+CandyBox,1,IceCrushHelp,Select 1 Caramel Cube to crush.<br><br><yellow>Caramel Crushers Required: 1<c>
+CandyBox,1,CompositeRemainTime1Minute,Remaining Time: Less Than 1 Minute
+CandyBox,1,CompositeRemainTime,Remaining Time: $(0) Minutes
+CandyBox,1,CompositeRemainGauge,+$(0) (+<pict pet_stone_red> $(1))
+CandyBox,1,CompositeRemainGaugeExtendPay,+$(0)
+CandyBox,1,CompositeRemainGaugeExtendNotPay,(+<pict pet_stone_red> $(0))
+CandyBox,1,MaxCountError,You can't set any more of this type of Sweet.
+CandyBox,1,AttributeWarning,The Element Level chosen exceeded the limit and has been lowered.
+CandyBox,1,IceClushRarityError,Failed to execute.
+CandyBox,1,HP,HP
+CandyBox,1,Strike,MEL Pwr
+CandyBox,1,Firearm,RNG Pwr
+CandyBox,1,Techinic,TEC Pwr
+CandyBox,1,Dex,DEX
+CandyBox,1,DfpStrike,MEL Def
+CandyBox,1,DfpFirearm,RNG Def
+CandyBox,1,DfpTechnic,TEC Def
+CandyBox,1,Element,Element
+CandyBox,1,ItemErrorMessage,You do not have enough $(0).
+CandyBox,1,MoveHelp,"If you select [Remove], all the Sweets that have been set will be removed. You can set Sweets again by going to [Add Sweets]."
+CandyBox,1,ParfaitErrorMessage,You can't set another Parfait with the same effect.
+Composition,0,Title,エッグ合成
+Composition,0,List_Title,エッグ選択
+Composition,0,List_CheckLockMessage,ロックを非表示
+Composition,0,List_DirectBuy,合成可能数のチャージ<pict StarGem>
+Composition,0,List_PopupGuide,合成するエッグを選択してください。
+Composition,0,Param_Title,ペットプラス値
+Composition,0,DesideYesNo_Title,エッグ合成
+Composition,0,DesideYesNo_Msg,ペット「$(0)」に<br>$(1)を合成します。<br>よろしいですか？
+Composition,0,DesideYesNo_MsgLock,ペット「$(0)」に<br>$(1)を合成します。<br>よろしいですか？<br><br><yellow>ロック状態のアイテムが選択されています。<c>
+Composition,0,RareYesNo_Title,エッグ合成
+Composition,0,RareYesNo_Msg,このエッグはレアリティ$(0)以上です。<br>本当に合成しますか？
+Composition,0,Toast_Success,エッグ合成をしました。
+Composition,0,Toast_SuccessName,$(0)に<br>$(1)を合成しました。
+Composition,0,SubstitutePetName,ペット
+Composition,0,SubstituteEggName,エッグ
+Composition,0,Warning_MaxLv_Title,エッグ合成
+Composition,0,Warning_MaxLv_Msg,レベルが上限のため、<br>経験値は獲得できません。<br><br>※プラス値のみ上げることが可能です。
+Composition,0,Warning_MaxParam_Title,エッグ合成
+Composition,0,Warning_MaxParam_Msg,$(0)のプラス値が上限のため<br>これ以上、上がらないパラメータがあります。
+Composition,0,Warning_MaxAll_Title,エッグ合成
+Composition,0,Warning_MaxAll_Msg,$(0)に<br>これ以上のエッグ合成は<br>効果がありません。
+Composition,0,Warning_MaxAll_MsgPreLimitBreak,$(0)に<br>これ以上のエッグ合成は<br>効果がありません。<br><br>ゲートエリアにいるピエトロに話しかけて、<br>$(1)を<yellow>限界突破<c>しましょう。
+Composition,0,Warning_LockEgg_Title,エッグ合成
+Composition,0,Warning_LockEgg_Msg,ロックされているアイテムは<br>エッグ合成に使用できません。
+Composition,0,DirectBuy_EggSynthesisNum_MaxCount_Title,アイテム購入確認
+Composition,0,DirectBuy_EggSynthesisNum_MaxCount_Msg,「合成可能数回復」は、$(0)回を超えて<br>購入することはできません。
+Composition,0,DirectBuy_EggSynthesisNum_FromButton_Title,アイテム購入確認
+Composition,0,DirectBuy_EggSynthesisNum_FromButton_Msg,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>$(0)の合成可能数を<br>SGでチャージすることができます。<br><br>「合成可能数回復」の購入確認画面に<br>進みますか？
+Composition,0,DirectBuy_EggSynthesisNum_FromEmpty_Title,アイテム購入確認
+Composition,0,DirectBuy_EggSynthesisNum_FromEmpty_Msg,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>$(0)の<br>合成可能数が不足しています。<br><br>「合成可能数回復」の購入確認画面に<br>進みますか？
+Composition,0,DirectBuy_EggSynthesisNum_Confirm_Title,アイテム購入確認
+Composition,0,DirectBuy_EggSynthesisNum_Confirm_Msg,以下のアイテムを$(0)SG（通常100SG）で購入し、<br>合成可能数を５個回復させます。<br>よろしいですか？<br><yellow><br>※連続購入時、購入１回目～９回目までは<br>　価格が割引されますが、回数が増えると<br>　割引率が下がります。<c><br>※購入回数は毎日<utc>12:00</utc>にリセットされます。<br>（所持SG:$(1)）
+Composition,0,DirectBuy_EggSynthesisNum_Confirm_ItemName,合成可能数回復
+Composition,0,DirectBuy_EggSynthesisNum_Item01,合成可能数回復（１回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item02,合成可能数回復（２回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item03,合成可能数回復（３回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item04,合成可能数回復（４回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item05,合成可能数回復（５回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item06,合成可能数回復（６回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item07,合成可能数回復（７回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item08,合成可能数回復（８回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item09,合成可能数回復（９回目）
+Composition,0,DirectBuy_EggSynthesisNum_Item10,合成可能数回復（１０回目以上）
+Composition,0,DirectBuy_EggSynthesisNum_Success_Title,アイテム購入完了
+Composition,0,DirectBuy_EggSynthesisNum_Success_Msg,$(0)の<br>合成可能数を５つ追加しました。<br><br><yellow>※この５回分は、エッグ合成時の<br>　獲得経験値量にボーナスがつきます。<c><br><br>※購入回数は毎日<utc>12:00</utc>にリセットされます。
+Composition,0,DesideYesNo_MsgAdd_Title,エッグ合成
+Composition,0,DesideYesNo_MsgAdd_Header,ペット「$(0)」に<br>$(1)を合成します。
+Composition,0,DesideYesNo_MsgAdd_Lock,<yellow><br>ロック状態のアイテムが選択されています。<c>
+Composition,0,DesideYesNo_MsgAdd_Rare,<yellow><br>レアリティ$(0)以上のアイテムが選択されています。<c>
+Composition,0,DesideYesNo_MsgAdd_MaxLv,<yellow><br>$(0)のレベルが上限のため、<br>経験値は獲得できません。<c>
+Composition,0,DesideYesNo_MsgAdd_MaxParam,<yellow><br>$(0)のプラス値が上限のため、<br>上がらないプラス値があります。<c>
+Composition,0,DesideYesNo_MsgAdd_ReturnedEgg,<br>※これは、<c ff4f3f>「ペットをエッグに戻す」で作られたエッグ<c><br>　です。本当に素材とするか、<yellow>再度ご確認ください。<c>
+Composition,0,DesideYesNo_MsgAdd_Footer,<yellow><c><br>エッグ合成を実行してもよろしいですか？
+Composition,0,Composition_Error_NoItem1,エッグ合成できるアイテムがありません。
+Composition,0,Composition_After_Title,エッグ合成
+Composition,0,Composition_After_ReleaseCandy_Msg,Lv.50を超えたため、<br>ペットのキャンディーボックスから<br>ゼリーキューブが解放されました。
+Composition,0,Composition_After_LimitBreak_Msg,Lv.100に到達しました。<br><br>ゲートエリアにいるピエトロに話しかけて、<br>$(0)を<yellow>限界突破<c>しましょう。
+Composition,0,Composition_After_MaxLv_Msg,レベル上限に到達しました。
+Composition,1,Title,EGG SYNTHESIS
+Composition,1,List_Title,SELECT EGG
+Composition,1,List_CheckLockMessage,Hide Locked Items
+Composition,1,List_DirectBuy,Replenish Synthesis Points <pict StarGem>
+Composition,1,List_PopupGuide,Please select an egg to synthesize.
+Composition,1,Param_Title,PET PLUS POINTS
+Composition,1,DesideYesNo_Title,EGG SYNTHESIS
+Composition,1,DesideYesNo_Msg,Synthesizing $(1) with pet<br>$(0).<br>Are you sure you wish to proceed?
+Composition,1,DesideYesNo_MsgLock,Synthesizing $(1) with pet<br>$(0).<br>Are you sure you wish to proceed?<br><br><yellow>A locked item has been selected.<c>
+Composition,1,RareYesNo_Title,EGG SYNTHESIS
+Composition,1,RareYesNo_Msg,This egg's Rarity is $(0) or greater.<br>Are you sure you want to synthesize it?
+Composition,1,Toast_Success,Egg Synthesis has been performed.
+Composition,1,Toast_SuccessName,Synthesized $(1) with<br>$(0).
+Composition,1,SubstitutePetName,Pet
+Composition,1,SubstituteEggName,Egg
+Composition,1,Warning_MaxLv_Title,EGG SYNTHESIS
+Composition,1,Warning_MaxLv_Msg,This pet won't gain EXP because it <br>has already reached the maximum level.<br><br>Only the Plus Value can be increased.
+Composition,1,Warning_MaxParam_Title,EGG SYNTHESIS
+Composition,1,Warning_MaxParam_Msg,$(0)'s Plus Value<br>has reached the maximum and won't increase any further.
+Composition,1,Warning_MaxAll_Title,EGG SYNTHESIS
+Composition,1,Warning_MaxAll_Msg,$(0) won't<br>gain any further effect from Egg Synthesis.
+Composition,1,Warning_MaxAll_MsgPreLimitBreak,$(0) won't<br>gain any further effect from Egg Synthesis.<br><br>Talk to Pietro in the Gate Area to <yellow>limit-break<br>$(1).<c>
+Composition,1,Warning_LockEgg_Title,EGG SYNTHESIS
+Composition,1,Warning_LockEgg_Msg,Locked items can't be used in Egg Synthesis.
+Composition,1,DirectBuy_EggSynthesisNum_MaxCount_Title,CONFIRM ITEM PURCHASE
+Composition,1,DirectBuy_EggSynthesisNum_MaxCount_Msg,Synthesis Recovery can't be purchased more than $(0) times.
+Composition,1,DirectBuy_EggSynthesisNum_FromButton_Title,CONFIRM ITEM PURCHASE
+Composition,1,DirectBuy_EggSynthesisNum_FromButton_Msg,<pict StarGem> <c 1dedd7>Star Gem Payment Required<c><br><br>You can replenish $(0)'s<br>Synthesis Points by spending SG.<br><br>Do you want to proceed to the<br>Synthesis Recovery purchase screen?
+Composition,1,DirectBuy_EggSynthesisNum_FromEmpty_Title,CONFIRM ITEM PURCHASE
+Composition,1,DirectBuy_EggSynthesisNum_FromEmpty_Msg,<pict StarGem><c 1dedd7>Star Gem Payment Required<c><br><br>$(0) has insufficient Synthesis Points.<br><br>Do you want to proceed to the Synthesis <br>Recovery purchase screen?
+Composition,1,DirectBuy_EggSynthesisNum_Confirm_Title,CONFIRM ITEM PURCHASE
+Composition,1,DirectBuy_EggSynthesisNum_Confirm_Msg,"You can purchase the below item for $(0) SG (usually 100 SG)<br>and recover 5 Synthesis Points.<br>Are you sure you wish to proceed?<br><yellow><br>*When making multiple purchases in a row, the price will be <br>discounted for the first nine, but the discount will decrease <br>beyond that.<c><br>The number of purchases resets every day at <utc>12:00</utc>.<br>(SG owned: $(1))."
+Composition,1,DirectBuy_EggSynthesisNum_Confirm_ItemName,Synthesis Recovery
+Composition,1,DirectBuy_EggSynthesisNum_Item01,Synthesis Recovery (1st Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item02,Synthesis Recovery (2nd Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item03,Synthesis Recovery (3rd Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item04,Synthesis Recovery (4th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item05,Synthesis Recovery (5th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item06,Synthesis Recovery (6th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item07,Synthesis Recovery (7th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item08,Synthesis Recovery (8th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item09,Synthesis Recovery (9th Time)
+Composition,1,DirectBuy_EggSynthesisNum_Item10,Synthesis Recovery (10th Time+)
+Composition,1,DirectBuy_EggSynthesisNum_Success_Title,ITEM PURCHASE COMPLETED
+Composition,1,DirectBuy_EggSynthesisNum_Success_Msg,Added 5 Synthesis Points to $(0).<br><br><yellow>*A bonus will be added to the EXP gained during <br>Egg Synthesis for these 5 times.<c><br><br>*The number of purchases resets every day at <utc>12:00</utc>.
+Composition,1,DesideYesNo_MsgAdd_Title,EGG SYNTHESIS
+Composition,1,DesideYesNo_MsgAdd_Header,Synthesizing $(1) with pet $(0).
+Composition,1,DesideYesNo_MsgAdd_Lock,<yellow><br>A locked item has been selected.<c>
+Composition,1,DesideYesNo_MsgAdd_Rare,<yellow><br>An item of Rarity $(0) or greater has been selected.<c>
+Composition,1,DesideYesNo_MsgAdd_MaxLv,<yellow><br>$(0) won't gain EXP because it has reached the maximum level.<c>
+Composition,1,DesideYesNo_MsgAdd_MaxParam,<yellow><br>$(0)'s Plus Value<br>has reached the maximum and won't increase.<c>
+Composition,1,DesideYesNo_MsgAdd_ReturnedEgg,<br>Note: This egg was created by <c ff4f3f>returning a pet to an egg<c>.<br><yellow>Are you sure<c> you want to use this egg as material?
+Composition,1,DesideYesNo_MsgAdd_Footer,<yellow><c><br>Are you sure you want to proceed with Egg Synthesis?
+Composition,1,Composition_Error_NoItem1,There are no items Egg Synthesis can be performed on.
+Composition,1,Composition_After_Title,EGG SYNTHESIS
+Composition,1,Composition_After_ReleaseCandy_Msg,All Gelatin Cubes have been removed from this pet's Sweets <br>Box because the pet has reached Level 50.<br>
+Composition,1,Composition_After_LimitBreak_Msg,This pet has reached Level 100.<br><br>Talk to Pietro in the Gate Area to <yellow>limit-break $(0).<c>
+Composition,1,Composition_After_MaxLv_Msg,The maximum level has been reached.
+Release,0,Title,ペットを逃がす
+Release,0,Message,$(0)を逃がします。<br>よろしいですか？<br><br><c ff4f3f>※逃がしたペットは「ペット一覧」から削除され、<br>　元に戻すことはできません。<c>
+Release,0,Success,ペットを逃がしました。
+Release,0,Message2,このペットは、<yellow>レアリティ7以上<c>です。<br>本当に逃がしてよろしいですか？
+Release,1,Title,RELEASE PET
+Release,1,Message,Are you sure you want to release $(0)?<br><br><c ff4f3f>Note: Released pets will be permanently <br>deleted from the Pet List.<c>
+Release,1,Success,Pet released.
+Release,1,Message2,This pet has a <yellow>Rarity of 7 or greater<c>.<br>Are you sure you want to release it?
+LimitBreak,0,Title,限界突破
+LimitBreak,0,Message,以下のペットの限界突破を行います。<br>よろしいですか？<br><br>※限界突破すると、<yellow>Lv.101以上<c>に成長できます。<br>※限界突破後は、エッグ合成で<yellow>低レアリティの<br>エッグ<c>で得られる経験値が大幅に少なくなります。
+LimitBreak,0,Success,対象のペットが、限界突破に成功しました。
+LimitBreak,1,Title,LIMIT BREAK
+LimitBreak,1,Message,"Conducting limit break on the following pet.<br>Are you sure you wish to proceed?<br>Note: If you limit-break this pet, it'll be able to level-up <br>to <yellow>Level 101 and higher<c>. Note: After limit <br>breaking, the EXP gained from Egg Synthesis with <br><yellow>low-Rarity<c> eggs will be significantly less."
+LimitBreak,1,Success,Limit break of selected pet successful.
+Error,0,ErrorServerBug,サーバーとの通信に失敗しました。<br><br>時間をおいて再度お試しください。
+Error,0,ErrorClientBug,予期せぬ問題が発生しました。<br><br>時間をおいて再度お試しください。
+Error,0,ErrorDBAccess,データベースのアクセスに失敗しました。<br><br>時間をおいて再度お試しください。
+Error,0,ErrorPetTypeInvalid,ペットの種類が正しくありません。
+Error,0,ErrorPetHasFound,既にペットを所持しています。
+Error,0,ErrorPetNotFound,ペットが見つかりませんでした。
+Error,0,ErrorPetOwnership,オーナー登録されているペットです。
+Error,0,ErrorPetCanNotLimitBreak,限界突破の条件を満たしていないため、<br>ペットの限界突破に失敗しました。
+Error,0,ErrorPetRarityUnknown,ペットのレアリティが取得できませんでした。
+Error,0,ErrorPetLock,ロックされているペットは<br>選択できません。
+Error,0,ErrorEggTypeInvalid,エッグの種類が正しくありません。
+Error,0,ErrorEggNotFound,エッグが見つかりませんでした。
+Error,0,ErrorEggOwnership,オーナー登録されているエッグです。
+Error,0,ErrorEggCanNotHatch,このエッグは使用することができません。<br>「エッグ合成」でのみ使用することができます。
+Error,0,ErrorEggRarityUnknown,エッグのレアリティが取得できませんでした。
+Error,0,ErrorEggLock,ロックされているエッグは<br>選択できません。
+Error,0,ErrorCandyTypeInvalid,キャンディーの種類が正しくありません。
+Error,0,ErrorCandyNotFound,キャンディーが見つかりませんでした。
+Error,0,ErrorCandyDuplicate,キャンディーのセットができませんでした。
+Error,0,ErrorCandyOutOfBox,キャンディーのセットができませんでした。
+Error,0,ErrorCandyNotArrangement,キャンディーのセットができませんでした。
+Error,0,ErrorCandyTypeFull,キャンディーのセットができませんでした。
+Error,0,ErrorCandyBoxInvalid,キャンディーボックスの状態が正しくない可能性があります。
+Error,0,ErrorNotInLobby,ペットラボの機能を使用することができません。
+Error,0,ErrorSupportInvalid,不明なアイテムが使用されました。
+Error,0,ErrorSupportLack,補助アイテムが不足しています。
+Error,0,ErrorPaidItemNotFound,合成可能数回復を持っていません。
+Error,0,ErrorPaidItemInvalid,不明なアイテムが使用されました。
+Error,0,ErrorMesetaLack,所持金が不足しています。
+Error,0,ErrorMStoneLack,スタージェムが不足しています。
+Error,0,ErrorPetAddInvalid,不正なペットの追加が行なわれました。
+Error,0,ErrorPetAddMax,ペットの登録数が上限に達しています。
+Error,0,ErrorPetDeleteInvalid,ペットを逃がすことができませんでした。
+Error,0,ErrorPetRenameInvalid,ペットネームの変更を行えませんでした。
+Error,0,ErrorPetRenameFilter,不正な文字列が含まれているため<br>変更できませんでした。
+Error,0,ErrorCandyAddInvalid,キャンディーをセットできませんでした。
+Error,0,ErrorCandyAddTypeFull,タイプ設置上限を超えているため、セットできませんでした。
+Error,0,ErrorCandyRemoveInvalid,キャンディーをアイテムに戻すことができませんでした。
+Error,0,ErrorCandyRemoveBackpackFull,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>使用できませんでした。
+Error,0,ErrorCandyRemoveItemLack,キャンディーリムーバーが足りないため、<br>アイテムに戻すことができませんでした。
+Error,0,ErrorCandyDeleteInvalid,キャンディーを削除することができませんでした。
+Error,0,ErrorCandyDeleteitemLack,キャンディーイレイサーが足りないため、<br>削除することができませんでした。
+Error,0,ErrorCandyCompressInvalid,キャンディー圧縮を行うことができませんでした。
+Error,0,ErrorCandyCompressItemInvalid,必要なアイテムが不正です。
+Error,0,ErrorCandyCompressItemNotFound,必要なアイテムが不足しています。
+Error,0,ErrorCandyCompressItemLack,必要なアイテムが不足しています。
+Error,0,ErrorCandyCompressSupportInvalid,補助アイテムが不正です。
+Error,0,ErrorCandyCompressSupportNotFound,補助アイテムが不足しています。
+Error,0,ErrorCandyCompressSupportLack,補助アイテムが不足しています。
+Error,0,ErrorCandyCompressMax,これ以上圧縮できません。
+Error,0,ErrorCandyCompressSettingInvalid,キャンディー圧縮の設定が不正です。
+Error,0,ErrorCandyCompressBackpackFull,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。
+Error,0,ErrorIceBlockInvalid,キャラメルキューブが不正です。
+Error,0,ErrorIceBlockNotFound,キャラメルキューブ以外が選択されました。
+Error,0,ErrorIceBlockLackOfRarity,補助アイテムのレアリティが不足しています。
+Error,0,ErrorIceBlockLackOfItem,キャラメルクラッシャーが足りないため、<br>キャラメルキューブを破壊できませんでした。
+Error,0,ErrorPetSynthesisInvalid,エッグ合成を行えませんでした。
+Error,0,ErrorPetSynthesisSettingInvalid,エッグ合成できないアイテムが選択されました。
+Error,0,ErrorPetSynthesisMany,エッグ合成に複数アイテムが指定されました。
+Error,0,ErrorPetSynthesisPayMax,合成可能数が上限を超えるため、<br>合成可能数回復を購入することができません。
+Error,0,ErrorInheritanceCantGetCost,必要なメセタを取得できませんでした。
+Error,0,ErrorInheritancePetKindInvalid,ペット進化で指定したペットと異なるエッグの種類です。
+Error,0,ErrorInheritanceRarityLack,ペット進化で指定したエッグのレアリティが不足しています。
+Error,0,ErrorInheritancePotentialInvalid,ペット進化で指定したエッグのペット能力が間違っています。
+Error,0,ErrorInheritanceColorInvalid,指定したペット/エッグはカラー変更に対応していません。
+Error,0,ErrorEtc,予期せぬ問題が発生しました。<br><br>その他のエラー($(0))
+Error,1,ErrorServerBug,Failed to connect to the server.<br><br>Please wait a while and try again.
+Error,1,ErrorClientBug,An unexpected problem occurred.<br><br>Please wait a while and try again.
+Error,1,ErrorDBAccess,Failed to access the database.<br><br>Please wait a while and try again.
+Error,1,ErrorPetTypeInvalid,Incorrect pet type.
+Error,1,ErrorPetHasFound,You already have a pet.
+Error,1,ErrorPetNotFound,No pet found.
+Error,1,ErrorPetOwnership,This pet is registered to its owner.
+Error,1,ErrorPetCanNotLimitBreak,Limit break failed because you haven't met the required conditions yet.
+Error,1,ErrorPetRarityUnknown,Couldn't retrieve pet's Rarity.
+Error,1,ErrorPetLock,Locked pets can't be selected.
+Error,1,ErrorEggTypeInvalid,Incorrect egg type.
+Error,1,ErrorEggNotFound,No egg found.
+Error,1,ErrorEggOwnership,This egg is registered to its owner.
+Error,1,ErrorEggCanNotHatch,This egg can only be used in Egg Synthesis.
+Error,1,ErrorEggRarityUnknown,Couldn't retrieve egg's Rarity.
+Error,1,ErrorEggLock,Locked eggs can't be selected.
+Error,1,ErrorCandyTypeInvalid,Incorrect Sweets type.
+Error,1,ErrorCandyNotFound,No Sweets found.
+Error,1,ErrorCandyDuplicate,Couldn't set Sweet.
+Error,1,ErrorCandyOutOfBox,Couldn't set Sweet.
+Error,1,ErrorCandyNotArrangement,Couldn't set Sweet.
+Error,1,ErrorCandyTypeFull,Couldn't set Sweet.
+Error,1,ErrorCandyBoxInvalid,The Sweets Box may be invalid.
+Error,1,ErrorNotInLobby,You can't use the Pet Lab.
+Error,1,ErrorSupportInvalid,An unknown item was used.
+Error,1,ErrorSupportLack,You do not have enough support items.
+Error,1,ErrorPaidItemNotFound,You don't have Synthesis Recovery.
+Error,1,ErrorPaidItemInvalid,An unknown item was used.
+Error,1,ErrorMesetaLack,You don't have enough money.
+Error,1,ErrorMStoneLack,You do not have enough Star Gems.
+Error,1,ErrorPetAddInvalid,An invalid pet has been added.
+Error,1,ErrorPetAddMax,You have reached the maximum number of pets allowed.
+Error,1,ErrorPetDeleteInvalid,Couldn't release pet.
+Error,1,ErrorPetRenameInvalid,Couldn't change pet's name.
+Error,1,ErrorPetRenameFilter,Unable to change name due to invalid string.
+Error,1,ErrorCandyAddInvalid,Couldn't set Sweet.
+Error,1,ErrorCandyAddTypeFull,Unable to set because you've reached the limit for this type.
+Error,1,ErrorCandyRemoveInvalid,Couldn't return Sweet to item.
+Error,1,ErrorCandyRemoveBackpackFull,"Couldn't be used because your inventory is <br>full, or you would exceed your carry limit."
+Error,1,ErrorCandyRemoveItemLack,Unable to return to item because you don't have enough Sugar Tongs.
+Error,1,ErrorCandyDeleteInvalid,Couldn't dissolve Sweet.
+Error,1,ErrorCandyDeleteitemLack,Couldn't dissolve Sweet because you <br>don't have enough Sweets Dissolvers.
+Error,1,ErrorCandyCompressInvalid,Couldn't compress Sweet.
+Error,1,ErrorCandyCompressItemInvalid,Required items are invalid.
+Error,1,ErrorCandyCompressItemNotFound,You don't have enough required items.
+Error,1,ErrorCandyCompressItemLack,You don't have enough required items.
+Error,1,ErrorCandyCompressSupportInvalid,Support items are invalid.
+Error,1,ErrorCandyCompressSupportNotFound,You do not have enough support items.
+Error,1,ErrorCandyCompressSupportLack,You do not have enough support items.
+Error,1,ErrorCandyCompressMax,No further compression can be performed.
+Error,1,ErrorCandyCompressSettingInvalid,Sweets compression settings are invalid.
+Error,1,ErrorCandyCompressBackpackFull,"Compression couldn't be completed because your<br>inventory is full, or you would exceed<br>your carry limit."
+Error,1,ErrorIceBlockInvalid,Caramel Cube is invalid.
+Error,1,ErrorIceBlockNotFound,Object other than Caramel Cube is selected.
+Error,1,ErrorIceBlockLackOfRarity,Insufficient support item Rarity.
+Error,1,ErrorIceBlockLackOfItem,Couldn't crush Caramel Cube because <br>you don't have enough Caramel Crushers.
+Error,1,ErrorPetSynthesisInvalid,Couldn't synthesize egg.
+Error,1,ErrorPetSynthesisSettingInvalid,Invalid item selected for Egg Synthesis.
+Error,1,ErrorPetSynthesisMany,Multiple items were selected for Egg Synthesis.
+Error,1,ErrorPetSynthesisPayMax,Unable to purchase Synthesis Recovery because <br>Synthesis Points would exceed the limit.
+Error,1,ErrorInheritanceCantGetCost,Failed to acquire the required meseta.
+Error,1,ErrorInheritancePetKindInvalid,The type of the pet selected for enhancement differs from the egg type.
+Error,1,ErrorInheritanceRarityLack,The Rarity of the egg selected for enhancement is insufficient.
+Error,1,ErrorInheritancePotentialInvalid,The ability of the egg selected for enhancement is incorrect.
+Error,1,ErrorInheritanceColorInvalid,The selected pet or egg isn't compatible with color changes.
+Error,1,ErrorEtc,An unexpected error has occurred.<br><br>Miscellaneous error ($(0)).

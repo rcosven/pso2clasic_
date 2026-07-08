@@ -1,0 +1,23 @@
+section,group,id,text
+5675,0,Begin,/ci2 2 リーダーが手伝ってくれるなら<br>どんなエネミーだって楽勝だね！<br>よーし、わたしもがんばっちゃうよ！
+5675,0,Success,/ci2 1 えへへ、ほめられちゃった！<br>リーダーも助けてくれてありがとう。<br>また一緒に戦おうね！
+5675,0,Failure,わかった、お姉ちゃん！<br>リーダーも無理しないで……<br>あとで一緒にご飯食べようね！
+5675,0,Dead,うぅ……もう、だめみたい。<br>あとはお願い、お姉ちゃん……
+5675,0,BuddyDead,大丈夫なの、お姉ちゃん！？<br>ダメージが大きいなら<br>無理しないで休んでて！
+5675,1,Begin,"/ci2 2 We can take on any enemy out there<br>with your help, Leader! Okay, here I go!"
+5675,1,Success,"/ci2 1 Hee hee, thanks for the compliment!<br>And for always helping me out.<br>Let's fight together again!"
+5675,1,Failure,"You got it! And you shouldn't stretch<br>yourself too thin either, Leader. Let's<br>go get something to eat later!"
+5675,1,Dead,Urgh...I'm done.<br>The rest is in your hands.
+5675,1,BuddyDead,"Are you okay?!<br>If you're hurt badly,<br>you should rest!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

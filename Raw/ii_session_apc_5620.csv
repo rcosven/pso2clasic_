@@ -1,0 +1,23 @@
+section,group,id,text
+5621,0,Begin,/ci1 2 やあ、守護輝士君か。<br>少々、僕らの手には余っていてね。<br>手伝ってくれるかい？
+5621,0,Success,/ci2 3 t5 やれやれ……ハリエット<br>あまり浮かれすぎるものでもないよ。<br>楽しそうなのは構わないが、ね。
+5621,0,Failure,その判断は正しいよ、ハリエット。<br>祝い事を控えているのに、無理をして<br>怪我をするのは無粋だからね。
+5621,0,Dead,ぐっ、少し計算が狂ったようだ……<br>ハリエット、あとは任せたぞ……
+5621,0,BuddyDead,ハリエット……！<br>大丈夫だ、ゆっくり休みたまえ。<br>あとは、僕が引き受けよう。
+5621,1,Begin,"/ci1 2 Yo, Guardian. We're a<br>little in over our heads here.<br>Mind lending a hand?"
+5621,1,Success,"/ci2 3 t5 Goodness, Hariette...<br>I'm glad you're having fun, but<br>this is no time to just dance around."
+5621,1,Failure,"That's right, Hariette.<br>This is cause for celebration, but that's no<br>reason to go hog wild and hurt yourself."
+5621,1,Dead,"Urk, I underestimated them...<br>I'll leave the rest to you, Hariette."
+5621,1,BuddyDead,"Hariette!<br>Don't worry, take it easy.<br>I'll handle the rest."
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展51
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

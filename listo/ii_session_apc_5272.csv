@@ -1,0 +1,23 @@
+﻿section,group,id,text
+5087,0,Begin,/ci1 2 うわ、艦はもう持ちそうにないな……<br>でも乗組員の人たちはまだ間に合う！<br>センパイ、おれにも手伝わせてくれ！
+5087,0,Success,/ci5 3 t5 やっぱコイツら結構キツイ……<br>センパイのおかげだよ。ありがとう。<br>みんなの救助、頑張るから！
+5087,0,Failure,/mn7 くそっ……<br>悪い……しくじった
+5087,0,Dead,/mn22 センパイ……<br>ごめん、おれ……
+5087,0,BuddyDead,/mn19 /ci5 5 t5 アザナミさんっ……！<br>ちくしょう、負けてたまるかっ！
+5087,1,Begin,"/ci1 2 Vaya, ese buque de guerra no se ve<br>muy bien. ¡Pero aún podemos salvar a la tripulación <br>! ¡Jefe! ¡Déjame ayudarte!"
+5087,1,Success,"/ci5 3 t5 Hombre, estos tipos eran duros... ¡buen jefe!<br>¡Haremos todo lo posible para salvar a todos!"
+5087,1,Failure,"/mn7 Maldita sea, lo siento... No pude hackearlo..."
+5087,1,Dead,"/mn22 Jefe... Lo siento, yo...."
+5087,1,BuddyDead,/mn19 /ci5 5 t5 ¡Azanami! Maldita sea... ¡crees que vamos a<br>quedarnos aquí y tomar eso!
+common,0,Begin,開始5008
+common,0,Success,成功5008
+common,0,Failure,失敗5008
+common,0,Dead,自分死亡5008
+common,0,BuddyDead,相手死亡5008
+common,0,Evolution,発展5008
+common,1,Begin,Empezar5008
+common,1,Success,Exito5008
+common,1,Failure,Fracaso5008
+common,1,Dead,ustedmurio5008
+common,1,BuddyDead,SocioMurio5008
+common,1,Evolution,Evolucion5008

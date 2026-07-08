@@ -1,0 +1,23 @@
+﻿section,group,id,text
+5620,0,Begin,/ci1 2 あ、<%me>様！<br>すみませんが、ご助力いただけますか？<br>兄様、増援ですよ！
+5620,0,Success,/ci2 2 ご助力、ありがとうございました！<br>それから、メリークリスマス！　です！<br>うふふ、なんだか楽しいですね。
+5620,0,Failure,これ以上は厳しいですね……<br>とても心苦しいですが……<br>兄様、撤退しましょう。
+5620,0,Dead,申し訳、ありません……<br>残念ですが、兄様……<br>あとは、お願いいたします。
+5620,0,BuddyDead,……兄様！<br>ご無理をなさらずに！<br>あとは、私にお任せください！
+5620,1,Begin,"/ci1 2 Ah,<%me>! Lo siento, pero<br>¿puedes echarnos una mano?<br>Hermano, ¡han llegado refuerzos!"
+5620,1,Success,"/ci2 2 ¡Gracias por toda tu ayuda!<br>¡Y feliz Navidad para ti!<br>Jejeje, me encanta esta época del año."
+5620,1,Failure,"No podemos seguir así por mucho más tiempo.<br>Lamento hacer esto, pero...<br>Retirémonos por ahora, hermano."
+5620,1,Dead,"L-lo siento...<br>Por favor, hermano...<br>Te dejo el resto."
+5620,1,BuddyDead,¡Hermano! ¡No te presiones demasiado! ¡Por favor<br>déjame el resto a mí!
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Empezar5150
+common,1,Success,Exito5150
+common,1,Failure,Fracaso5150
+common,1,Dead,/ci1 2 Yahoo! ¡Feliz navidad! ¡Este es nuestro aйo! ¡Vamos a agarrar a Santa y agarrar esos regalos!
+common,1,BuddyDead,SocioMurio5150
+common,1,Evolution,Evolucion5150

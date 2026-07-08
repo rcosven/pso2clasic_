@@ -1,0 +1,21 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,最前線への転送が間もなく行われます。<br>第一次作戦は、ファルス・アームを駆逐し、<br>本体を消耗させることが目標です。
+PreTransportDirection,0,NpcComMsg2,/face6 ……これまでの戦闘とは別次元の<br>過酷な戦いになることが予想されます。<br>……どうか、ご無事で。
+PreTransportDirection,1,NpcComMsg1,You will soon be teleported to the <br>frontlines. Your first objective is to <br>destroy the Falz Arms. And exhaust <br>the main body.
+PreTransportDirection,1,NpcComMsg2,"/face6 ...We anticipate the coming battle<br>will present a heretofore unthinkable<br>level of adversity. Godspeed, operative."
+Basic,0,Title,猛る黒曜の暴腕
+Basic,0,Explanation,アークス各員に緊急連絡。<br>ダークファルス【巨躯】の欠片が<br>驚異的なスピードで接近してきている。<br>今までの襲撃とは異なる雰囲気を持ち<br>強力な反応を示している。<br>各員はこれを迎撃し、ダークファルスの<br>戦力を低下させ、来るべき決戦に備えよ。<br>これは何よりも優先の、絶対命令である。<br>――――――――――――――――――――<br>失敗条件/最深部での敗北、制限時間の経過
+Basic,1,Title,The Raging Obsidian Arm
+Basic,1,Explanation,"This is an urgent message for all ARKS personnel.<br>A fragment of Elder the Gargantuan is approaching <br>at great speed. Something about the fragment <br>seems different from previous attacks and it appears<br>to be very powerful. All personnel are directed to <br>intercept it, weaken the Dark Falz, and prepare for <br>the coming battle. The above order is of the highest <br>priority and should supersede all others. You will <br>fail this quest if you are defeated in the final area <br>or exceed the time limit."
+QuestTarget,0,SimpleExplanation,ファルス・アームを撃破せよ！
+QuestTarget,1,SimpleExplanation,Destroy the Falz Arm!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit

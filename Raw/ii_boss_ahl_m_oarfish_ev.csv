@@ -1,0 +1,31 @@
+section,group,id,text
+common,0,IncidentName,$(0)を討伐せよ！
+common,0,TrialBeginMsg,$(0)を討伐せよ！
+common,0,TrialAbstract,$(0)を討伐する
+common,1,IncidentName,Suppress the $(0)!
+common,1,TrialBeginMsg,Suppress the $(0)!
+common,1,TrialAbstract,Suppress the $(0)
+type1,0,NpcComOnPreBegin,$(0)の撤退を確認<br>待て、この反応は……<br>各員、警戒を怠るな
+type1,0,NpcComOnBegin,$(0)の再出現を確認<br>構わん、奴を討伐しろ。
+type1,0,NpcComOnSuccess,$(0)の討伐を確認<br>各員、引き続き調査を行え
+type1,1,NpcComOnPreBegin,$(0) repelled. Wait... What is this reading?<br>All ops on high alert.
+type1,1,NpcComOnBegin,Picking up a $(0) reading again.<br>Take 'em out quick.
+type1,1,NpcComOnSuccess,"$(0) repelled.<br>All ops, resume survey."
+type2,0,NpcComOnPreBegin,目標の反応消失を確認……<br>いや、新たな反応を確認した。<br>注意を怠るな、来るぞ。
+type2,0,NpcComOnBegin,$(0)の再出現を確認した。<br>連戦となるが、頼むぞ。
+type2,0,NpcComOnSuccess,敵性存在の反応、完全に消失。<br>今度こそ終わりのようだ。<br>よくやってくれた。
+type2,1,NpcComOnPreBegin,"Target confirmed down... Wait, I've got a new<br>reading. Stay alert, something's coming."
+type2,1,NpcComOnBegin,"Reading a $(0) resurgance.<br>Sorry for the back-to-back fights,<br>do what you can."
+type2,1,NpcComOnSuccess,Enemy presence obliterated. That seemed<br>to do it. Job well done.
+type3,0,NpcComOnPreBegin,$(0)の撤退を確認<br>待て、この反応は……<br>各員、警戒を怠るな
+type3,0,NpcComOnBegin,$(0)の再出現を確認<br>構わん、奴を討伐しろ。
+type3,0,NpcComOnSuccess,$(0)の討伐を確認<br>各員、引き続き調査を行え
+type3,1,NpcComOnPreBegin,$(0) repelled. Wait... What is this reading?<br>All ops on high alert.
+type3,1,NpcComOnBegin,Picking up a $(0) reading again.<br>Take 'em out quick.
+type3,1,NpcComOnSuccess,"$(0) repelled.<br>All ops, resume survey."
+type6,0,NpcComOnPreBegin,$(0)の撃退を確認。<br>……いえ、新たな敵性反応を感知。<br>各員、引き続き警戒を。
+type6,0,NpcComOnBegin,$(0)の再出現を感知。<br>各員、改めて撃退行動に<br>移ってください。
+type6,0,NpcComOnSuccess,敵性反応、完全消失。<br>新たな反応もありません。<br>見事な対応でした。
+type6,1,NpcComOnPreBegin,"$(0) presence repelled.<br>Hold on, new presence detected.<br>All ops, stay sharp."
+type6,1,NpcComOnBegin,"Getting $(0) readings again.<br>All ops, move to engage once again."
+type6,1,NpcComOnSuccess,Enemy presence eradicated. No new readings<br>detected. Great job.

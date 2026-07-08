@@ -1,0 +1,439 @@
+section,group,id,text
+Message,0,MsgFriendAdd,$(0)がパートナーに加わりました。
+Message,0,MsgJoinEnable,$(0)を呼び出せるようになりました。
+Message,0,MsgJoinDisable,$(0)を呼び出せなくなりました。
+Message,0,MsgErrorExsit,$(0)は、すでにクエスト内の別のプレイヤーが呼び出しています。
+Message,0,MsgErrorNoExsit,$(0)は、すでに帰還しているか、別のプレイヤーが呼び出しています。
+Message,0,MsgErrorFullParty,パーティーメンバー数上限のため、呼び出すことができません。
+Message,0,MsgErrorFullRoom,クエストの参加人数上限のため、呼び出すことができません。
+Message,0,MsgErrorFullEvent,人数上限のため、参加できませんでした。
+Message,0,MsgErrorSystem,パートナー登録が存在しないか、削除されているため、呼び出せませんでした。
+Message,0,MsgErrorLoadApcList,パートナーの呼び出しに失敗しました。
+Message,0,MsgErrorRegisterFriendApc,フレンドパートナーの登録に失敗しました。
+Message,0,MsgRegisterFriendApc,フレンドパートナーの登録が完了しました。
+Message,0,MsgDeleteFriendApc,フレンドパートナーの登録を削除しました。
+Message,0,MsgErrorDeleteFriendApc,フレンドパートナーの登録の削除に失敗しました。
+Message,0,MsgErrorNotRegisterFriendApc,フレンドパートナーが登録されていません。
+Message,0,MsgErrorAddNotListed,パートナーリストで許可していないパートナーカードの入手を検知しました。
+Message,1,MsgFriendAdd,$(0) was added to your partners.
+Message,1,MsgJoinEnable,You can now invite $(0).
+Message,1,MsgJoinDisable,You can no longer invite $(0).
+Message,1,MsgErrorExsit,$(0) has already been invited by another player on a quest.
+Message,1,MsgErrorNoExsit,$(0) has already returned or has been invited by another player.
+Message,1,MsgErrorFullParty,You cannot invite any more players because your party is full.
+Message,1,MsgErrorFullRoom,You cannot invite any more players because the player limit for the quest has been reached.
+Message,1,MsgErrorFullEvent,You could not join because the player limit has been reached.
+Message,1,MsgErrorSystem,"You cannot invite a partner because no partners have been added, or because they have all been deleted."
+Message,1,MsgErrorLoadApcList,Failed to invite partner.
+Message,1,MsgErrorRegisterFriendApc,Failed to add another player's avatar.
+Message,1,MsgRegisterFriendApc,Another player's avatar added.
+Message,1,MsgDeleteFriendApc,Another player's avatar deleted.
+Message,1,MsgErrorDeleteFriendApc,Failed to delete another player's avatar.
+Message,1,MsgErrorNotRegisterFriendApc,You have not added any other players' avatars.
+Message,1,MsgErrorAddNotListed,Detected that you obtained a Partner Card that is not permitted on your Ally List.
+Character,0,Brave,勇者気質
+Character,0,Poser,目立ちたがり
+Character,0,Shy,引っ込み思案
+Character,0,Leader,リーダーシップ
+Character,0,Donkey,ドジっこ
+Character,0,Senior,先輩肌
+Character,0,Sickly,病弱
+Character,0,Daredevil,命知らず
+Character,0,Innocence,天真爛漫
+Character,0,Blonde,天然
+Character,0,Intellectual,理知的
+Character,1,Brave,Brave Spirit
+Character,1,Poser,Show-Off
+Character,1,Shy,Withdrawn
+Character,1,Leader,Leadership
+Character,1,Donkey,Clumsy Kid
+Character,1,Senior,Elder-like
+Character,1,Sickly,Sickly
+Character,1,Daredevil,Fearless
+Character,1,Innocence,Innocent
+Character,1,Blonde,Airhead
+Character,1,Intellectual,Intellectual
+Biorhythm,0,Hypotension,朝型
+Biorhythm,0,Night,夜型
+Biorhythm,0,Sun,晴れ好き
+Biorhythm,0,Cloud,曇り好き
+Biorhythm,0,EnemyLarge,大型狙い
+Biorhythm,0,EnemySmall,小型狙い
+Biorhythm,0,Pinch,逆境好き
+Biorhythm,0,Loonie,スロースターター
+Biorhythm,0,Lonely,さびしがり屋
+Biorhythm,0,DarkerKiller,ダーカー狙い
+Biorhythm,0,NativeKiller,原生狙い
+Biorhythm,0,MachineKiller,メカ狙い
+Biorhythm,0,DragonKiller,龍族狙い
+Biorhythm,0,ChimeraKiller,海王種狙い
+Biorhythm,0,Tsundere,ツンデレ
+Biorhythm,0,TitanKiller,黒の民狙い
+Biorhythm,0,PhantomKiller,幻創種狙い
+Biorhythm,0,BeastKiller,魔物種狙い
+Biorhythm,0,CypherKiller,閃機種狙い
+Biorhythm,1,Hypotension,Early Bird
+Biorhythm,1,Night,Night Owl
+Biorhythm,1,Sun,Sun Lover
+Biorhythm,1,Cloud,Cloud Lover
+Biorhythm,1,EnemyLarge,Big Game Hunter
+Biorhythm,1,EnemySmall,Small Game Hunter
+Biorhythm,1,Pinch,Underdog Lover
+Biorhythm,1,Loonie,Slow Starter
+Biorhythm,1,Lonely,Lonely Soul
+Biorhythm,1,DarkerKiller,Falspawn Hunter
+Biorhythm,1,NativeKiller,Wild Hunter
+Biorhythm,1,MachineKiller,Mech Hunter
+Biorhythm,1,DragonKiller,Draconian Hunter
+Biorhythm,1,ChimeraKiller,Oceanid Hunter
+Biorhythm,1,Tsundere,Hot and Cold Personality
+Biorhythm,1,TitanKiller,Nightfaller Hunter
+Biorhythm,1,PhantomKiller,Phantasm Hunter
+Biorhythm,1,BeastKiller,Supernatural Hunter
+Biorhythm,1,CypherKiller,Luminmech Hunter
+Potential,0,Healing,起死回生
+Potential,0,Valor,臨戦態勢
+Potential,0,Guardian,徹底防御
+Potential,0,Meddler,激昂
+Potential,0,Savior,復活支援
+Potential,0,FavHuman,ヒューマン好き
+Potential,0,FavCast,キャスト好き
+Potential,0,FavNewman,ニューマン好き
+Potential,0,FavDewman,デューマン好き
+Potential,0,FavMale,オトコ好き
+Potential,0,FavFemale,オンナ好き
+Potential,0,Troublemaker,コンディションマスター
+Potential,1,Healing,Resuscitation
+Potential,1,Valor,Ready for War
+Potential,1,Guardian,Full Defense
+Potential,1,Meddler,Rage
+Potential,1,Savior,Recovery and Support
+Potential,1,FavHuman,Human Lover
+Potential,1,FavCast,CAST Lover
+Potential,1,FavNewman,Newman Lover
+Potential,1,FavDewman,Deuman Lover
+Potential,1,FavMale,Guy Chaser
+Potential,1,FavFemale,Skirt Chaser
+Potential,1,Troublemaker,Condition Master
+Profile,0,5001,困った時はいつでも呼べよ！<br>先輩ってのは、そういうもんだ！
+Profile,0,5002,あたしだってアークスなんだから<br>いつでも呼んでいいからね。
+Profile,0,5003,相棒！　おれたちの仲なんだから<br>遠慮なく呼んでくれよ！
+Profile,0,5007,……こんな私でも<br>貴方様が望むのであれば<br>喜んで協力させていただきます。
+Profile,0,5008,私でもお役に立てるのなら、ぜひ！
+Profile,0,5009,研究対象以外には興味ないのだが<br>キミの誘いならば乗らないわけには<br>いかないな。
+Profile,0,5010,え、ええっ、ええっとぉ……<br>ぼくを呼んでもらっても、仕方がないかと……
+Profile,0,5013,アークスいちの情報屋<br>パティエンティアが姉、パティ！<br>お呼びとあらば、どこにでも！
+Profile,0,5014,アークスいちの情報屋<br>パティエンティアの妹、ティアです。<br>いつでも呼んでください。
+Profile,0,5018,まー、何事もほどほどに<br>適当にがんばっていこうよー。<br>気楽に、気楽に。ね。
+Profile,0,5019,……いつでも呼んで。<br>フォースの力、見せてあげるから。
+Profile,0,5020,いつでも呼ぶといい！<br>ハンターの力、見せてやろう！
+Profile,0,5021,ふふふ……私の力が必要ならば<br>いつでも呼ぶといい！<br>私もかつて、戦場において……
+Profile,0,5022,おっ？　おっ？<br>行っちゃう？　オレと行っちゃう？<br>いいぜいいぜ、いつでも行くぜー！
+Profile,0,5026,敵さんを殺して殺して殺して殺すときには<br>ぜひぜひぜひぜひ誘ってくださいねえ。<br>約束ですよお？
+Profile,0,5054,戦技教導官のジョーゼフだ。<br>請われたため、復帰と相成った。<br>よろしく頼むぞ。
+Profile,0,5057,戦技教導官のバルバラよ。<br>戦場でも厳しく行くから<br>そのつもりでね。
+Profile,0,5059,アタシは馴れ合うつもりはない。<br>ダーカーを殺せればそれでいい。<br>余計な詮索は不要だよ。
+Profile,0,5062,わたしなんかじゃ力不足と思いますが<br>先輩に誘ってもらえるのなら……<br>わたし、がんばります。
+Profile,0,5063,不出来で未熟な自分ですが、少しでも<br>先生に近づけるよう頑張ります！<br>ご指導、ご鞭撻お願いします！
+Profile,0,5066,……あなたには大恩があります。<br>いつでも呼んでください。<br>力になれるよう尽力します。
+Profile,0,5068,＊＊＊
+Profile,0,5069,＊＊＊
+Profile,0,5083,困った時はいつでも呼べよ！<br>先輩ってのは、そういうもんだ！
+Profile,0,5086,ゼノの代わりとまではいかないけど<br>全力で頑張るから、いつでも呼んで。
+Profile,0,5087,まだまだ未熟者だけど<br>ブレイバーの第一人者として<br>全力で頑張らせてもらうよー。
+Profile,0,5091,足手まといにはならないつもりだから<br>いつでも誘ってくれよ、センパイ。
+Profile,0,5108,私の力が必要なときは<br>いつでも呼んで欲しい。<br>剣には自信があるからな。
+Profile,0,5125,＊＊＊
+Profile,0,5126,仮
+Profile,0,5127,仮
+Profile,0,5128,仮
+Profile,0,5135,仮
+Profile,0,5150,バウンサー試験運用担当、カトリです！<br>貴方様がお望みならば、どこまでも！
+Profile,0,5151,バウンサー試験運用担当のサガだ。<br>任務参加は格好のデータ収集機会となる。<br>いつでも呼んで欲しい。
+Profile,0,5153,僕なんかの力……じゃなかった。<br>僕の力が役に立つのなら、いつでも<br>呼んでください。すぐに駆けつけます。
+Profile,0,5185,えっと、パートナーカードって何書けば……<br>ってあれ、あれれっ？　これも書かれてる？<br>あ、えっと……いつでも呼んでね！
+Profile,0,5186,六芒の五、クラリスクレイスだ！<br>何かあったらいつでも言うといいぞ！<br>すぐに駆けつけてやるからな！
+Profile,0,5188,頼りないかもしれないけど<br>あたしだってきみの先輩なんだから<br>困った時はいつでも頼ってね。
+Profile,0,5194,色々と世話になっちゃったし<br>もう「関係ない」とは言えないからね。<br>いつ呼んでくれてもいいから。
+Profile,0,5200,私の力、お役に立ててください。<br>いつでも馳せ参じます！
+Profile,0,5201,我が力、必要とあらば<br>いつでも馳せ参じよう。
+Profile,0,5206,いつでもお呼びください。<br>喜んで参ります。
+Profile,0,5207,いかなる時でも駆けつけよう。<br>遠慮せず、呼んでくれ。
+Profile,0,5209,……こんな私でも<br>貴方様が望むのであれば<br>喜んで協力させていただきます。
+Profile,0,5210,相棒！　おれたちの仲なんだから<br>遠慮なく呼んでくれよ！
+Profile,0,5213,わたしもいっぱいあなたを頼るから<br>あなたもどんどんわたしを頼ってね。<br>約束だよ、<%me>
+Profile,0,5220,カレン・エラだ。<br>皆を守るために、この力を使いたい。<br>いつでも呼んでくれ。
+Profile,0,5221,俺、イーサン・ウェーバー！<br>呼んでくれればいつでも<br>駆けつけるぜ！　よろしくな！
+Profile,0,5222,たっくさんお世話になっちゃったし<br>いつでも呼びなさいよ！<br>遠慮とかしたら承知しないんだからね！
+Profile,0,5241,＊＊＊
+Profile,0,5242,マイフレンド！　僕と君の仲だ！<br>困った時はいつでも呼んでくれ！<br>僕の子達も、それを望んでるよ！
+Profile,0,5244,＊＊＊
+Profile,0,5227,好きなときに呼んでくれていいわよ。<br>世話になった分はきちんと返すから。
+Profile,0,5230,＊＊＊
+Profile,0,5272,もう足手まといとは言わせない。<br>いつでも誘ってくれよ、センパイ。
+Profile,0,5288,わたしなんかじゃ力不足と思いますが<br>先輩に誘ってもらえるのなら……<br>わたし、がんばります。
+Profile,0,5289,不出来で未熟な自分ですが、少しでも<br>先生に近づけるよう頑張ります！<br>ご指導、ご鞭撻お願いします！
+Profile,0,5306,わたし、まだまだ未熟ですけど<br>力になれるように頑張りますっ！<br>いつでも呼んでくださいね！
+Profile,0,5292,三代目のクラリスクレイスだ！<br>戦闘部次席だが、いつでも呼べ！<br>すぐに駆けつけてやるからな！
+Profile,0,5293,総務部の次席にすえられちゃったけど<br>別に今までと何も変わりはないから。<br>いつ呼んでくれてもいいわよ。
+Profile,0,5254,アイカだ。所属は情報部になるが<br>遠慮は無用。必要なときは<br>いつでも、呼んでほしい。
+Profile,0,5314,えっと……ＲＩＮＡです。<br>貴方の力になれるよう<br>全力を尽くします。
+Profile,0,5315,ＳＯＲＯだ。<br>私のことを孤高と呼ぶ者もいるが<br>好きなように呼んでくれ。
+Profile,0,5316,俺はＰＳＯ２を通じて色々なことを<br>知ることができた。恩返しってわけ<br>じゃないけど、協力させてほしい。
+Profile,0,5318,ひさびさのＰＳＯ２だから<br>いっぱい楽しんでみたいんだ！<br>だから、よろしく！
+Profile,0,5319,猫の手も借りたいぐらい大変って<br>会長から聞いてるから……<br>少しぐらいなら、手伝えるけど？
+Profile,0,5320,我が名は†コア†！　お見知りおきを！<br>同士よ、共にこの悠久なる冒険へと<br>旅立とうではないかッ！
+Profile,0,5323,ムサシだ。俺様でよければ<br>助けてやってもいいぞ。<br>ただし、足は引っ張るんじゃねぇぞ。
+Profile,0,5321,弓子、と申します。<br>お呼び立てあれば、如何なる時でも<br>馳せ参じます。よろしくお願いします。
+Profile,0,5322,拙者、ラスト侍でござる！<br>助力が必要とあれば、いつでも<br>呼んで欲しいでござるよ！
+Profile,0,5346,俺の力が必要なときは<br>いつでも呼んでくれよ！<br>遠慮はいらねぇからな！
+Profile,0,5347,困ったときは、呼んで。<br>お手伝い、するから。
+Profile,0,5348,必要ならいつでも呼んでニャン！<br>遠慮はいらニャいニャン！
+Profile,0,5349,何かあったら呼んでくれよな！<br>すぐに駆けつけるからよ！
+Profile,0,5363,私の力が必要でしたら<br>いつでも呼んでくださいね。<br>すぐに駆けつけます。
+Profile,0,5378,私でよければ……協力してあげる。<br>困ったときは、いつでも呼んで。
+Profile,0,5407,わたし、まだまだ未熟ですけど<br>力になれるように頑張りますっ！<br>いつでも呼んでくださいね！
+Profile,0,5408,あんまり無茶すんなよ？<br>いつでも頼ってくれていいからさ！
+Profile,0,5409,アースガイド所属、八坂炎雅。<br>気軽にいつでも呼んでくれ。<br>あんたには返しきれない恩がある。
+Profile,0,5410,ヒツギちゃん共々、お世話になりました。<br>必要なら、いつでも呼んでください！<br>まあわたし、あんまり強くないですけど。
+Profile,0,5411,地球に居るからって遠慮しないでね！<br>あたしの力が必要なら、いつどこにでも<br>駆けつけてみせるから！
+Profile,0,5412,ガーディアンズ総裁<br>ライア・マルチネスだ。<br>力が必要ならいつでも呼びな。
+Profile,0,5223,ガーディアンズ総合調査部<br>ルミア・ウェーバーです。<br>よろしくお願いします。
+Profile,0,5443,＊＊＊
+Profile,0,5444,＊＊＊
+Profile,0,5445,＊＊＊
+Profile,0,5437,アークス戦闘部、新規戦術班所属！<br>ストラトス、といいます！<br>いつでも気軽にお声がけください！
+Profile,0,5426,われはただ、純粋なる力なり。<br>共に歩む覚悟あらば<br>われはおぬしの力となろう。
+Profile,0,5457,パートナーカードって、これでいいの？<br>あなたがいて、とても助かっちゃった。<br>いつも呼んでくれたら嬉しいなあ。
+Profile,0,5427,俺様の銃は百発百中！<br>必要な時は呼んでくれ。<br>依頼とあらば、馳せ参じるぜ。
+Profile,0,5428,お楽しみは独り占めするものじゃないわ。<br>アタシを呼んでちょうだいね？<br>うふふ……いっぱい楽しませてあげる。
+Profile,0,5459,＊＊＊
+Profile,0,5462,サンタ探しのついでに<br>クエストも手伝っちゃうから<br>いつでも呼んでねっ！
+Profile,0,5463,サンタ探しもクエストも<br>がんばりますから<br>いつでも呼んでくださいね。
+Profile,0,5478,このオークゥ＝ミラーに任せれば<br>どんな任務も１００％成功間違いなし！<br>え、バレンタイン？　知らないわよ！
+Profile,0,5483,執筆活動には、取材や経験が大事。<br>バレンタインも、現地取材したい。<br>協力してくれるなら、手を貸すから。
+Profile,0,5479,受けた恩は、返す主義でな。<br>いつでも呼んで……チョコのお返し？<br>そ、そのうちな！
+Profile,0,5499,わたし、まだまだ未熟ですけど<br>力になれるように頑張りますっ！<br>いつでも呼んでくださいね！
+Profile,0,5510,アークス戦闘部司令ヒューイ！<br>困ったら遠慮なく呼んでくれ！<br>水着姿でいつでも参上！
+Profile,0,5519,私の力、引き出してみせて。<br>そして……いつか、私と決闘して……
+Profile,0,5525,我が雷剣は正義とともに。<br>お前の戦いに正義があるのなら<br>お前の敵をことごとく討ち払おう。
+Profile,0,5518,すてきな石を探しに行きたいの。<br>あなた……一緒に行ってくれるの？
+Profile,0,5527,ご命令をお待ちしております。<br>いかなる敵であろうと<br>跡形なく消し飛ばしてご覧にいれます！
+Profile,0,5526,もんのすげぇ面倒くさいけど<br>お前の頼みなら、手伝ってやっても<br>いいよ……だ、だから、感謝しろよ？
+Profile,0,5532,マジカル★シエラです！<br>みんなにふしぎな魔法を<br>かけちゃいますよ☆
+Profile,0,5528,＊＊＊
+Profile,0,5533,あたしも、まだまだ強くなる。<br>クリスマスでも、いつでも手を貸すよ！<br>こ、この姿でよければね……！
+Profile,0,5534,わたし、すっごくがんばりますから<br>クリスマスとか関係なく<br>いつでも誘ってくださいね！
+Profile,0,5543,この格好とバレンタインって<br>なにか関係があるのかしら……？<br>まあ、社交性を意識して頑張るわ。
+Profile,0,5544,おれの力が必要なら<br>いつだって、駆けつけるよ！<br>遠慮なく呼んでくれ、相棒！
+Profile,0,5566,この“黒き狼”の力が必要か？<br>ククク、いいだろう。ならばお前も<br>《亡霊》の恐ろしさを知るがいい。
+Profile,0,5570,ごきげんようですの、マスター。<br>いつでもご奉仕に馳せ参じますわ。<br>お気軽に呼んでください、ですの！
+Profile,0,5580,あたしと中トロ号の力が必要ツナ？<br>手伝ってあげてもいいツナよ。<br>マグロ戦士の力、見せつけてやるツナ！
+Profile,0,5581,私でよければ、お手伝いします。<br>あの、フィジとジスも<br>一緒でいいですよ……ね？
+Profile,0,5582,サー、イエッサー！<br>不肖ヤスミノコフ８０００Ｃ<br>よろこんで随伴するであるます！
+Profile,0,5583,貴様なら、力の使い方を<br>間違えることもあるまい。<br>大自然の使者として手を貸そう！
+Profile,0,5584,俺を連れていけ。<br>オマエに手を貸してやる。<br>なに、利害の一致というヤツさ。
+Profile,0,5587,……あなたには大恩があります。<br>いつでも呼んでください。<br>力になれるよう尽力します。
+Profile,0,5589,わたし、まだまだ未熟ですけど<br>力になれるように頑張りますっ！<br>いつでも呼んでくださいね！
+Profile,0,5590,私でよければ……協力してあげる。<br>困ったときは、いつでも呼んで。
+Profile,0,5591,お楽しみは独り占めするものじゃないわ。<br>アタシを呼んでちょうだいね？<br>うふふ……いっぱい楽しませてあげる。
+Profile,0,5597,みたらしだぞ！<br>おすすめクエとか行く時は声かけてー。<br>ボーナスキー金！　ボーナスキー金！
+Profile,0,5598,テトラです。お気軽にどうぞー。<br>あ！　スクショ撮影会やる時は<br>ぜったい呼んでくださいよ！
+Profile,0,5599,いつでも呼んでくれよな。<br>そん時は俺の真の力を解放して<br>どこでも付き合ってやるからよ。
+Profile,0,5620,守護輝士に恩を売っておくのも<br>悪くはなさそうだからね。力を貸すよ。
+Profile,0,5621,私でも力になれることがあるのなら<br>いつでも呼んでくださいね。
+Profile,0,5624,バレンタインの平和とみんなのチョコを<br>守るためにヒーローらしく頑張ります！<br>いつでもお呼びください！
+Profile,0,5625,……お前ほどの実力者に<br>この“黒き狼”が能力を貸すとはな……<br>ククク、恐ろしいことになるぞ。
+Profile,0,5607,ふふ<pict cute_icon>　猫ノ宮♪です。<br>魚ノ宮♪をご希望ならウィスください<pict cute_icon><br>いっぱい、スクショ撮りましょ<pict cute_icon>
+Profile,0,5634,どうも、マジカルロボ☆ゼクトです。<br>クエストに行くなら呼んでくださいね。<br>一緒にキャストの良さを語りましょう！
+Profile,0,5635,牧野ですー。<br>夜遅くは眠くなっちゃいますけど<br>いつでも呼んでくださいねー。
+Profile,0,5636,どうも。ドルチェです。<br>いつでも呼んでもらって大丈夫です。<br>いっしょに行きましょう、クエスト。
+Profile,0,5639,敵さんを倒しに行くんですかあ？<br>それならリサを誘ってくださいねえ。<br>撃って撃って撃ちまくりますよお。
+Profile,0,5646,夏の日差しを浴びると、とても<br>心が伸びやかになるものなのですね。<br>いつでも、お呼び出しください。
+Profile,0,5647,水着はちょっと恥ずかしいけど<br>みんなで着れば、怖くない……！<br>めいっぱい、楽しもうね！
+Profile,0,5648,夏があたしを強くする！<br>いつでも呼んでよね、駆けつけるから。<br>さあ、ガンガン行こう！
+Profile,0,5653,伊達に戦争請負人は名乗っていない。<br>どんな任務であろうと任せるがいい。<br>報酬は……お前が決めてくれ。
+Profile,0,5654,任務ならば、このカザミノタチも<br>共にお連れください！<br>師匠から学ばせていただきます！
+Profile,0,5655,希望の戦士オプトレイオン<br>キミの呼び出しを待ってるよ！<br>今なら手作りゴハンのサービス付きっ！
+Profile,0,5656,闘争を求める衝動……<br>その答えはきっと、戦いの中にある。<br>余を戦場へ連れてゆくのだ。
+Profile,0,5657,禊の戦い……それが俺の贖罪……<br>俺は戦い続けなければならない。<br>どうか俺に償いの機会を与えてほしい。
+Profile,0,5664,よろしく、俺はキリトだ。<br>いつでも呼んでくれよな。
+Profile,0,5665,私はアスナ。<br>パーティーに誘ってくれると嬉しいな。
+Profile,0,5668,今の私は、識らぬことばかりだが……<br>貴方と共に歩むことで、新しい何かを<br>見つけることが出来ると信じている。
+Profile,0,5669,何処から来て、何処へ行くのか……<br>何も解らぬ私を、貴方がエスコートして<br>くださるのですか？
+Profile,0,5670,ここで幸せそうな連中の顔を見てると<br>ムズムズしてくるよ。暴れたいからサ<br>僕も連れてってよ。いいだろ？
+Profile,0,5671,正直、あんたの背中を守れる自信は<br>まだない……でも、力になりたいんだ。<br>助けが必要なら、いつでも呼んでくれ！
+Profile,0,5672,お前の戦いには期待している。<br>強ければ強い程、後で楽しめるからな。<br>安心しろ、魂まで食らってやる……
+Profile,0,5298,必要なのは、ひとりの英雄じゃない。<br>一歩踏み出す時も、あたしがついてる。<br>みんながついてる。それを忘れないで！
+Profile,0,5674,わたしの力が必要になったら<br>いつでも呼んでいいんだからね。<br>わたし、がんばっちゃうよ！
+Profile,0,5675,アークスには返しきれない恩がある。<br>力が必要ならば、いつでも手を貸そう。
+Profile,0,Pure,私を必要とするのであれば<br>いつでも、その力に。
+Profile,0,Bracing,僕の力が必要なら<br>いつでも呼んで欲しいな。
+Profile,0,Cool,ぼ、ぼくも精一杯頑張りますので<br>いつでも誘ってください。
+Profile,0,Pride,俺の力が必要なら、いつでも誘え。<br>どこにでも参上しよう。
+Profile,0,Naughty,おれはいつでも臨戦態勢！<br>かかってこーい！
+Profile,0,Urbane,いついかなる時でも駆けつけます。<br>気軽に呼んで下さいね。
+Profile,0,Noisy,いつでも呼んでね！<br>ササッと駆けつけちゃうよー！
+Profile,0,Sharp,……いつでも呼んで。<br>わたしはそのために、いるんだから。
+Profile,0,Boyish,ボクはいつでも駆けつけるよ！<br>連絡、待ってるから！
+Profile,1,5001,Just give me a call if you ever get into trouble.<br>That's what a veteran ARKS op does!
+Profile,1,5002,"I'm just as much an ARKS op as all the others,<br>so you can call on me anytime, alright?"
+Profile,1,5003,"Heya, mate! I'd like to think we're good enough<br>friends that you'll call on me whenever you need!"
+Profile,1,5007,"...Even in my current state,<br>whenever you so desire,<br>I will gladly be there to help you."
+Profile,1,5008,"If I can be of any use to you, just ask!"
+Profile,1,5009,"I'm only interested in research,<br>but that doesn't mean I won't tag<br>along if you invite me."
+Profile,1,5010,"Uh... uhhm... Even if you call on me,<br>I may not be able to do anything..."
+Profile,1,5013,"Pati of PaTia, ARKS' star intel<br>team, at your service! I'm<br>always ready for anything when you call!"
+Profile,1,5014,"Tia of PaTia, ARKS' star intel<br>team, ready when you call.<br>Give me a call any time you need!"
+Profile,1,5018,"Everything in moderation, y'know?<br>Let's not push ourselves any more than we need to!<br>Nice and easy does it."
+Profile,1,5019,...Call me whenever.<br>I will show you the true power of a Force.
+Profile,1,5020,Call on me anytime!<br>I'll show you the power of a Hunter!
+Profile,1,5021,"Heh heh... If you ever need my help,<br>you can call on me anytime! I myself have <br>spent some time on the battlefield..."
+Profile,1,5022,"Oh, you're headed off somewhere?<br>And you want me to tag along?<br>Sure thing! I'm ready to go anytime!"
+Profile,1,5026,"Be sure sure to invite me when you<br>head out to KILL KILL KILL! Okay?<br>You promise, right?"
+Profile,1,5054,Combat Instructor Joseph here.<br>I've made a full recovery and look<br>forward to future adventures.
+Profile,1,5057,"I'm Combat Instructor Barbara.<br>You won't find any respite on the battlefield,<br>so you'll find none from me either."
+Profile,1,5059,I'm not looking for a friend;<br>All I want is to kill Falspawn.<br>No further prying necessary!
+Profile,1,5062,"I don't really think I have what it takes,<br>but if you're inviting me...<br>I'll give it my all!"
+Profile,1,5063,"I may be unaccomplished and inexperienced,<br>but I'll try my best to be more like you!<br>Thank you for your guidance and encouragement!"
+Profile,1,5066,"I owe you a great deal.<br>Call me whenever you need me,<br>and I will do my utmost to aid you."
+Profile,1,5068,＊＊＊
+Profile,1,5069,＊＊＊
+Profile,1,5083,Just give me a call if you ever get into trouble.<br>That's what a veteran ARKS op does!
+Profile,1,5086,"I don't think I'm much of a replacement for <br>Zeno, but I'll try my best all the same, so <br>call me up anytime."
+Profile,1,5087,"I'm still a little green, but as<br>the number one Braver, you can<br>bet I'll give 110% every time!"
+Profile,1,5091,"I don't plan to trip you up, Boss, so<br>just call me whenever you need me!"
+Profile,1,5108,I hope you'll call me anytime<br>you need my power.<br>My blade is always sharp and at the ready.
+Profile,1,5125,＊＊＊
+Profile,1,5126,Temporary
+Profile,1,5127,Temporary
+Profile,1,5128,Temporary
+Profile,1,5135,Temporary
+Profile,1,5150,"I'm Katori, and I'm in charge of administering the <br>Bouncer test! If you wish, I'll go with you anywhere!"
+Profile,1,5151,"I'm Saga, and I'm in charge of administering the<br>Bouncer test! Joining missions is a great chance to<br>gather data. I hope you'll invite me some time."
+Profile,1,5153,"What you saw was not my power. But if my<br>power is of any use to you, you can call me<br>anytime. I'll come running."
+Profile,1,5185,"Um, what should I write on the Partner Card...<br>Oh, huh? This is already filled out, too?<br>Well, um... just call me whenever!"
+Profile,1,5186,"I am Klariskrays of the Council of Six!<br>If you ever need anything, just say the word!<br>I'll come running to your aid!"
+Profile,1,5188,"I may be a bit unreliable,<br>but since I have seniority over you,<br>you can rely on me anytime you're in trouble!"
+Profile,1,5194,"I can't say ""that's got nothing to do with me"" <br>anymore, because you've helped me out with <br>so much! So call me up anytime."
+Profile,1,5200,Please allow my power to be of use to you.<br>I'll come running to join you at any time!
+Profile,1,5201,"If you should ever need my power,<br>I'll come running to join you at any time!"
+Profile,1,5206,Call upon me any time you wish.<br>I will be happy to join you.
+Profile,1,5207,"I'll come running any time you like.<br>Don't be shy, go ahead and give me a call!"
+Profile,1,5209,"...Even in my current state,<br>whenever you so desire,<br>I will gladly be there to help you."
+Profile,1,5210,"Heya, mate! I'd like to think we're good enough<br>friends that you'll call on me whenever you need!"
+Profile,1,5213,"I've already been relying on you so much,<br>so you can start relying on me more, too.<br>That's a promise, <%me>!"
+Profile,1,5220,I am Karen Erra. I want to use this power of <br>mine to protect everybody. Call on me anytime.
+Profile,1,5221,"It is I, Ethan Waber, at your service!<br>If you ever call on me, I'll<br>come running anytime! I await your call!"
+Profile,1,5222,You've been such a great help to me;<br>Feel free to call me any time you want!<br>No need to be shy about it or anything!
+Profile,1,5241,＊＊＊
+Profile,1,5242,"There's a connection between you and me, mon ami!<br>Call on me anytime you're in trouble!<br>That's what my darlings are hoping for, too!"
+Profile,1,5244,＊＊＊
+Profile,1,5227,You can call me whenever you like!<br>I will properly repay you for all your help.
+Profile,1,5230,＊＊＊
+Profile,1,5272,"No one will call me a burden anymore.<br>Please invite me anytime you need to, sir!"
+Profile,1,5288,"I don't really think I have what it takes,<br>but if you're inviting me...<br>I'll give it my all!"
+Profile,1,5289,"I may be unaccomplished and inexperienced,<br>but I'll try my best to be more like you!<br>Thank you for your guidance and encouragement!"
+Profile,1,5306,"I may still be inexperienced,<br>but I'll try my best to aid you!<br>Please call on me anytime!"
+Profile,1,5292,"I am Klariskrays III! I may be a Combat Bureau <br>Lieutenant, but call me anytime and I'll come <br>running to your aid immediately!"
+Profile,1,5293,"They made me a Lieutenant of the General <br>Affairs Bureau, but I'm still pretty much the <br>same 'ol me. You can call on me whenever!"
+Profile,1,5254,"I'm Aika. I'm assigned to the Intelligence Bureau,<br>but don't let that put you off. I'd love it if<br>you felt free to call me whenever you need me."
+Profile,1,5314,Um... I'm RINA.<br>I will devote my full efforts<br>to being of use to you.
+Profile,1,5315,"I'm SORO.<br>Some people would call me aloof, but<br>call on me as you like."
+Profile,1,5316,"I've been able to learn a lot<br>through PSO2. Not that this repays any<br>favors, but I would still like you to let me help you."
+Profile,1,5318,"It's been awhile since I've played PSO2,<br>so I'm diving back in for some fun!<br>I hope to see you around!"
+Profile,1,5319,I heard from the Chairman that <br>there's a shortage of staff...<br>But I can help if you don't keep me too long.
+Profile,1,5320,"My name is Koa! Pleased to meet you!<br>Seeing as we're comrades, why don't we set out on<br>this journey of endless adventure together!"
+Profile,1,5323,"I'm Musashi. I don't mind giving <br>you a hand, if you want!<br>But you better not get in my way!"
+Profile,1,5321,"My name is Yumiko.<br>If you summon me, I shall hasten to<br>join you at any time. I await your call."
+Profile,1,5322,"It is I, the Last Samurai!<br>If you ever need assistance, summon<br>me at any time!"
+Profile,1,5346,"Call me anytime<br>you need my power.<br>No need to be shy about it now, okay!?"
+Profile,1,5347,Call me when you're in a bind.<br>I'll help you out.
+Profile,1,5348,Call meow anytime you need!<br>No need to be shy about it!
+Profile,1,5349,Call me if anything comes up!<br>I'll rush on over to your side!
+Profile,1,5363,Please call me anytime you<br>ever need my power.<br>I'll come rushing to assist you.
+Profile,1,5378,If you feel I'm good enough... I shall help you.<br>Call me anytime you're in trouble.
+Profile,1,5407,"I may still be inexperienced,<br>but I'll try my best to aid you!<br>Please call on me anytime!"
+Profile,1,5408,"You're not being too reckless, are you?<br>Because you know you can rely on me <br>whenever, right!?"
+Profile,1,5409,I am Enga Yasaka of the Earth Guides.<br>Feel free to call me at anytime.<br>I will forever be in your debt.
+Profile,1,5410,"You've been of great help to both me and Hitsugi.<br>If you ever need me, please call on me at anytime!<br>But, uh... I'm not actually that strong."
+Profile,1,5411,"If you ever ever need my power, I'll come<br>rushing to help you at anytime! I may be on<br>Earth now, but don't be shy about it, alright!?"
+Profile,1,5412,"I am Laia Martinez,<br>President of the Guardians.<br>If it's power you need, call me anytime."
+Profile,1,5223,I'm Lumia Waber of the Guardians<br>General Investigative Bureau.<br>I look forward to working with you.
+Profile,1,5443,＊＊＊
+Profile,1,5444,＊＊＊
+Profile,1,5445,＊＊＊
+Profile,1,5437,"The name's Stratos of the<br>ARKS Combat Bureau, New Tactics Team!<br>Feel free to give a shout whenever!"
+Profile,1,5426,"Simply put, I am made of pure power.<br>And if you are prepared to walk with me,<br>then I shall become your power."
+Profile,1,5457,Does this work for a Partner Card?<br>It's such a huge help that you're here.<br>I'd love it if you call me sometime!
+Profile,1,5427,My guns always hit their marks!<br>Call me when you need me.<br>I'll come rushing to join you!
+Profile,1,5428,"Hey, don't hoard all the fun!<br>Won't you call me up sometime?<br>Hee hee... I'll show you a good time!"
+Profile,1,5459,＊＊＊
+Profile,1,5462,"I can help you with your quests<br>while I'm looking for Santa, so<br>call me whenever!"
+Profile,1,5463,"Whether I'm searching for Santa or doing<br>a quest, I always give it my all!<br>So call me anytime, okay?"
+Profile,1,5478,"Leave it to me, Och Miller, and make no mistake,<br>each mission will be 100% successful!<br>Huh? Valentine's Day? I don't care about that!"
+Profile,1,5483,"Research and experience are important for my <br>writing work. I want to cover local goings-on for <br>Valentine's Day, too. I'll help you if you help me!"
+Profile,1,5479,"I'm obligated to repay any favors I receive.<br>Call me anyti-- You want chocolates from me?<br>S-Sure, one of these days!"
+Profile,1,5499,"I may still be inexperienced,<br>but I'll try my best to aid you!<br>Please call on me anytime!"
+Profile,1,5510,Commander Huey of the ARKS Combat Bureau!<br>Don't hesitate to call me if you get into trouble!<br>I'll join you anytime--even in my swimwear!
+Profile,1,5519,"Let me show you my power.<br>And then...sometime, we must duel..."
+Profile,1,5525,"My thunder sword is justice.<br>If your fight is just,<br>I shall cut down your enemies to the last man."
+Profile,1,5518,I want to go out looking for nice rocks.<br>Would you...go with me?
+Profile,1,5527,I await your orders.<br>No matter what kind of enemies there are...<br>watch me blow them off the face of the planet!
+Profile,1,5526,"Even though it's super annoying...<br>I can still help ya out if ya ask...<br>S-So, you better be grateful, alright?"
+Profile,1,5532,I'm Magical ★ Xiera!<br>I'm ready to spellbind everyone<br>with my amazing magic ☆
+Profile,1,5528,＊＊＊
+Profile,1,5533,"I'm getting stronger and stronger, too.<br>I'll lend you a hand whenever-- even on Christmas!<br>I-If these clothes are okay, that is!"
+Profile,1,5534,"I always try my very best,<br>so please invite me anytime, and<br>it doesn't have to be on Christmas or anything!"
+Profile,1,5543,"Do these clothes I'm wearing have<br>something to do with Valentine's Day?<br>Well whatever, I'll do my best to be sociable!"
+Profile,1,5544,"If you ever need my help,<br>I'll come running!<br>Feel free to call on me, mate!"
+Profile,1,5566,"Do you need the power of the ""Black Wolf""?<br>Heh heh, alright. In that case,<br>you too can learn the horror of the ""Phantom."""
+Profile,1,5570,"I bid you good day, Master.<br>I am always ready to serve you.<br>Please feel free to call on me anytime!"
+Profile,1,5580,Do you need me and Tuna Buster to help out?<br>We have no problem lending a fin or four!<br>We'll show you the power of a Tuna Warrior!
+Profile,1,5581,"I'd be happy to help, if you'd have me.<br>But, um... Do you mind if<br>Fugi and Git come along, too?"
+Profile,1,5582,"Sir, yes, sir! I may not be worthy,<br>but you can always count on the<br>services of Yasminokov 8000C!"
+Profile,1,5583,You can't go wrong with how you use<br>my power! I'll lend you a hand<br>as a guardian of Mother Nature!
+Profile,1,5584,"Bring me along.<br>I'll lend you my strength.<br>Our goals do align, after all."
+Profile,1,5587,"I owe you a great deal.<br>Call me whenever you need me,<br>and I will do my utmost to aid you."
+Profile,1,5589,"I may still be inexperienced,<br>but I'll try my best to aid you!<br>Please call on me anytime!"
+Profile,1,5590,If you feel I'm good enough...<br>Then I shall help you.<br>Call me anytime you're in trouble.
+Profile,1,5591,"Hey, don't hoard all the fun!<br>Don't hesitate to call me up.<br>Hee hee... I'll show you a good time!"
+Profile,1,5597,I'm Mitarashi! Give me a holler if you ever<br>go out on Recommended Quests or the like!<br>Gold Bonus Keys! Gold Bonus Keys!
+Profile,1,5598,"I'm Tetra. I've got your back.<br>Oh, and let me know if you ever<br>want to do a screenshot photo shoot!"
+Profile,1,5599,"You can call on me anytime, all right?<br>When you do, I'll unleash my true power—<br>just point and I'll do the rest!"
+Profile,1,5620,Having a Guardian owe me one doesn't sound<br>like too bad of a deal. I'll help you out.
+Profile,1,5621,Please feel free to call on me anytime<br>if you should need my help.
+Profile,1,5624,"I'll do my best to be a Valentine's hero,<br>protecting peace and chocolate alike!<br>Call on me anytime!"
+Profile,1,5625,"The ""Black Wolf"" lending his abilities<br>to someone of your caliber...<br>Heh. What wicked things we could accomplish."
+Profile,1,5607,"Hee hee <pict cute_icon> I'm Nekonomiya♪. If<br>there's anything you need, whisper it my way <pict cute_icon><br>Let's take a ton of screenshots together <pict cute_icon>"
+Profile,1,5634,"Hello, I'm Magical Robot ☆ Zect.<br>Please call on me if you're going on a quest.<br>We can talk about how great CASTs are!"
+Profile,1,5635,"I'm Makino. Feel free to call on me<br>whenever, though I might be groggy<br>if it's late at night..."
+Profile,1,5636,"Hello, I'm Dolce.<br>You can count on my assistance anytime.<br>Let's go on a quest together."
+Profile,1,5639,"You're going out to fight the enemy, right?<br>If so, you've gotta bring me along, okay?<br>I'm gonna FIRE, FIRE, FIRE, right into their ranks!"
+Profile,1,5646,Nothing soothes the mind<br>like basking in the summer sun.<br>Call on us anytime!
+Profile,1,5647,"Swimsuits are a little embarrassing,<br>but it's not scary if we're all wearing them!<br>Let's have a righteous summer bash!"
+Profile,1,5648,"Suns out, guns out!<br>Call on me anytime, and I'll come running.<br>Let's tear it up!"
+Profile,1,5653,"I'm not called a ""war contractor"" for nothing.<br>I can handle any mission.<br>Payment...? I leave that up to you."
+Profile,1,5654,"Please, you have to take me,<br>Kazami no Tachi, on a mission!<br>Please let me learn from you!"
+Profile,1,5655,"Opt Leon, Warrior of Hope<br>at your service! Act now and<br>I'll throw in a home-cooked meal!"
+Profile,1,5656,A thirst for conflict...<br>can only be quenched in battle.<br>Take me to the fight.
+Profile,1,5657,"Sacred battle for my redemption...<br>I must keep fighting.<br>Please, give me a chance to atone."
+Profile,1,5664,"Hey there, I'm Kirito.<br>Call for me whenever you need."
+Profile,1,5665,I'm Asuna<br>I’d be delighted to join the party!
+Profile,1,5668,Nothing is clear to me now...<br>But I am certain that I will find<br>what I seek with you.
+Profile,1,5669,"Whence I came, and where I go...<br>I know not. I ask you to<br>escort me."
+Profile,1,5670,"All these happy faces are annoying.<br>I wanna smash stuff!<br>Take me with you, okay?"
+Profile,1,5671,"Honestly, I don't yet have the confidence<br>to say I got your back...but I want to help.<br>Call on me anytime you need help!"
+Profile,1,5672,"Show me what you can do in battle. The<br>stronger they are, the more I can enjoy it later.<br>Don't worry, I'll consume your soul properly..."
+Profile,1,5298,"We don't need a solitary hero.<br>Every step you take, I'll be there with you.<br>So is everyone. Don't forget that!"
+Profile,1,5674,"If you ever need my help,<br>let me know right away.<br>I'll do my best!"
+Profile,1,5675,I'm indebted to ARKS. I'll lend<br>you a hand any time you need.
+Profile,1,Pure,"If you ever need me,<br>I'll lend you my power anytime."
+Profile,1,Bracing,Please feel free to call me<br>whenever you need my power.
+Profile,1,Cool,"I, I'll try my very best, too!<br>So please... call for me at any time."
+Profile,1,Pride,"If you need my power, call for me anytime.<br>I will come join you anywhere."
+Profile,1,Naughty,"I'm always ready for action, yo!<br>Bring it on, baby!"
+Profile,1,Urbane,"I will rush to your aid, whenever and wherever.<br>Please don't hesitate to call on me."
+Profile,1,Noisy,Call me anytime!<br>I'll come running lickety-split!
+Profile,1,Sharp,...Call me at anytime.<br>That is the reason I am here.
+Profile,1,Boyish,I'll come rushing to your aid anytime!<br>I'm waiting to hear from you!

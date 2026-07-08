@@ -1,0 +1,67 @@
+section,group,id,text
+common,0,IncidentName,ファンダージ・ビットを破壊せよ
+common,0,TrialBeginMsg,制限時間内にファンダージ・ビットをすべて破壊せよ
+common,0,TrialAbstract,制限時間内にファンダージ・ビットをすべて破壊せよ
+common,1,IncidentName,Destroy the Phandaj Bits!
+common,1,TrialBeginMsg,Destroy all Phandaj Bits within the time limit!
+common,1,TrialAbstract,Destroy all Phandaj Bits within the time limit!
+type1,0,NpcComOnPreBegin,……待ってください。<br>何か様子がおかしいです。
+type1,0,NpcComOnBegin,ファンダージ・ビット出現。<br>急ぎ破壊し、周囲のエネミーへの<br>影響を抑えてください。
+type1,0,NpcComOnSuccess,ファンダージ・ビットの破壊を確認。<br>各員の協力に感謝します。
+type1,0,NpcComOnFailure,ファンダージ・ビットの反応消失。<br>取り逃がしてしまったようです。<br>通常任務に戻ってください。
+type1,0,NpcComOnRemainTimeNotice,制限時間に余裕がありません。<br>急いで破壊してください！
+type1,0,NpcComOnLastOne,ファンダージ・ビットの反応<br>あと１つです！
+type1,1,NpcComOnPreBegin,...Wait. Something seems kind of strange...
+type1,1,NpcComOnBegin,Discovered some Phandaj Bits. Destroy them<br>quickly to limit the influence they have on<br>other enemies in the area.
+type1,1,NpcComOnSuccess,Confirming that all Phandaj Bits have been<br>destroyed. Thank you to all operatives for your<br>assistance.
+type1,1,NpcComOnFailure,The Phandaj Bit signals have vanished. Looks<br>like you let them slip away. Return to your<br>regular mission.
+type1,1,NpcComOnRemainTimeNotice,There's no time to lose!<br>Hurry up and destroy them!
+type1,1,NpcComOnLastOne,Only one Phandaj Bit remains!
+type2,0,NpcComOnPreBegin,目標の撃破を確認……<br>……いや、待て。<br>様子がおかしい。
+type2,0,NpcComOnBegin,ファンダージ・ビットが出現した！<br>早急に破壊し、周囲のエネミーへの<br>影響を抑えろ！
+type2,0,NpcComOnSuccess,ファンダージ・ビットの破壊を確認。<br>通常任務に復帰しろ。
+type2,0,NpcComOnFailure,ファンダージ・ビットの反応消失。<br>取り逃がしてしまったようだな。<br>仕方がない、通常任務に戻れ。
+type2,0,NpcComOnRemainTimeNotice,制限時間が残り少ないぞ！<br>早急に破壊しろ！
+type2,0,NpcComOnLastOne,ファンダージ・ビットの反応<br>あと１つだ！
+type2,1,NpcComOnPreBegin,"Target confirmed destroyed... No, wait!<br>Something strange is going on..."
+type2,1,NpcComOnBegin,Phandaj Bits! Destroy them quickly to limit<br>the influence they have on other enemies<br>in the area!
+type2,1,NpcComOnSuccess,Confirming all Phandaj Bits have been<br>destroyed. Get back to your regular<br>mission!
+type2,1,NpcComOnFailure,"The Phandaj Bit signals have vanished.<br>Looks like you let them slip away.<br>Can't do anything about it now, just return to<br>your regular mission."
+type2,1,NpcComOnRemainTimeNotice,Your time is almost up!<br>Hurry up and destroy them!
+type2,1,NpcComOnLastOne,Only one Phandaj Bit remains!
+type3,0,NpcComOnPreBegin,あれれ……？<br>何か様子がおかしいですよ。
+type3,0,NpcComOnBegin,ファンダージ・ビット出現です！<br>他のエネミーが影響を受けちゃいます！<br>至急破壊してくださいー。
+type3,0,NpcComOnSuccess,やったやった、やりました！<br>ファンダージ・ビットの破壊確認！<br>みなさん、お疲れさまでしたっ！
+type3,0,NpcComOnFailure,ファンダージ・ビット、反応なし。<br>どうやら逃げちゃいました。<br>通常任務に戻ってください。
+type3,0,NpcComOnRemainTimeNotice,急いでください！<br>時間が無くなっちゃいます！
+type3,0,NpcComOnLastOne,ファンダージ・ビットの反応は<br>あと１つですよ！<br>頑張ってくださいー！
+type3,1,NpcComOnPreBegin,Huh...? Something seems kind of strange!
+type3,1,NpcComOnBegin,"We've discovered Phandaj Bits. They have an<br>influence on other enemies! Hurry up, destroy<br>them at once!"
+type3,1,NpcComOnSuccess,"You did it! You did it! All Phandaj Bits<br>confirmed destroyed! Great job, everybody!"
+type3,1,NpcComOnFailure,No more Phandaj Bit signals. They slipped<br>away somehow. Return to your regular<br>mission.
+type3,1,NpcComOnRemainTimeNotice,Please hurry! You're running out of time!
+type3,1,NpcComOnLastOne,Only one Phandaj Bit remains!<br>Don't give up now!
+type6,0,NpcComOnPreBegin,……異常な反応を計測。<br>警戒を怠らないでください。
+type6,0,NpcComOnBegin,ファンダージ・ビットの出現を確認。<br>周囲のエネミーへ影響あり。<br>早急な対処を求めます。
+type6,0,NpcComOnSuccess,ファンダージ・ビット、破壊確認。<br>突発事象への対応、見事でした。
+type6,0,NpcComOnFailure,ファンダージ・ビット、反応消失。<br>破壊失敗です。<br>通常任務へ戻ってください。
+type6,0,NpcComOnRemainTimeNotice,制限時間、残りわずか。<br>早急に破壊してください。
+type6,0,NpcComOnLastOne,ファンダージ・ビット、残存１。<br>攻撃を継続してください。
+type6,1,NpcComOnPreBegin,...Detecting an abnormal signal. Keep your<br>wits about you.
+type6,1,NpcComOnBegin,"Phandaj Bits detected. They can influence<br>other enemies in the area, so deal with them<br>quickly."
+type6,1,NpcComOnSuccess,Phandaj Bits confirmed destroyed. Impressive<br>response in a time-sensitive situation.
+type6,1,NpcComOnFailure,The Phandaj Bit signals have vanished.<br>You failed to destroy them.<br>Return to your regular mission.
+type6,1,NpcComOnRemainTimeNotice,You don't have much time left! Hurry up and<br>destroy them!
+type6,1,NpcComOnLastOne,Only one Phandaj Bit remains.<br>Keep on attacking!
+type9,0,NpcComOnPreBegin,新たな適性反応を感知しました！<br>気をつけてください！
+type9,0,NpcComOnBegin,ファンダージ・ビットの出現を確認！<br>周辺のエネミーへ影響が出ます！<br>急いで破壊してください！
+type9,0,NpcComOnSuccess,ファンダージ・ビットの破壊を確認！<br>お疲れさまでした！
+type9,0,NpcComOnFailure,ファンダージ・ビットの反応消失！<br>……逃げてしまったようです。<br>通常任務に戻りましょう。
+type9,0,NpcComOnRemainTimeNotice,時間がありません！<br>急いで破壊してください！
+type9,0,NpcComOnLastOne,ファンダージ・ビットの<br>反応は残り１つです！<br>焦らず対応してください！
+type9,1,NpcComOnPreBegin,We've detected fresh enemy signals!<br>Be careful!
+type9,1,NpcComOnBegin,Confirming the discovery of Phandaj Bits!<br>They influence the other enemies in the area!<br>Destroy them quickly!
+type9,1,NpcComOnSuccess,The Phandaj Bits are confirmed destroyed!<br>Great job!
+type9,1,NpcComOnFailure,The Phandaj Bit signals have vanished! ...Looks<br>like they slipped away. Return to your regular<br>mission.
+type9,1,NpcComOnRemainTimeNotice,There's no more time!<br>Hurry up and destroy them!
+type9,1,NpcComOnLastOne,Only one Phandaj Bit remains!<br>Keep calm and let's get this done!

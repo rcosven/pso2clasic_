@@ -1,0 +1,13 @@
+section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,緊急指令！<br>$(0)を撃破せよ！
+common,0,TrialAbstract,乱入してきた<br>$(0)を撃破せよ！
+common,1,IncidentName,Defeat $(0)
+common,1,TrialBeginMsg,Emergency!<br>Defeat $(0)!
+common,1,TrialAbstract,$(0) has appeared!<br>Defeat it now!
+type9,0,NpcComOnPreBegin,暴走ヴィスボルトは停止したようですが……<br>空間に歪みが発生しています。<br>何か、出てきますよ！
+type9,0,NpcComOnBegin,新たなエネミーの出現を確認。<br>迎撃をお願いします！
+type9,0,NpcComOnSuccess,皆さんのおかげで迎撃完了！<br>連戦、お疲れさまでした
+type9,1,NpcComOnPreBegin,"The Runaway Vizbolts have dispersed, but...<br>a spatial distortion has been triggered.<br>Something bad is coming!"
+type9,1,NpcComOnBegin,New enemy presence detected.<br>Move to intercept!
+type9,1,NpcComOnSuccess,Enemy presence intercepted!<br>That was a long one!

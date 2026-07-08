@@ -1,0 +1,25 @@
+﻿section,group,id,text
+common,0,IncidentName,大量発生したエネミーを討伐せよ！
+common,0,TrialBeginMsg,制限時間内にエネミーを全て討伐せよ！
+common,0,TrialAbstract,大量発生したエネミーを討伐せよ！
+common,1,IncidentName,¡Suprime al enorme grupo enemigo!
+common,1,TrialBeginMsg,¡Suprime a todos los enemigos antes de que acabe el tiempo!
+common,1,TrialAbstract,¡Suprime al enorme grupo enemigo!
+type9,0,NpcComOnBegin,多数の敵性反応を感知しました！<br>被害を抑えるため、隔離領域を<br>強化し、対応します！
+type9,0,NpcComOnAfterBegin,隔離領域維持のためのエネルギーを<br>転送します。定期的に回収しながら<br>エネミーを撃破してください。
+type9,0,NpcComOnSuccess,敵性反応、消失確認！<br>隔離領域を通常出力へ戻します！<br>お疲れさまでした！
+type9,0,NpcComOnFailure,隔離領域強化の維持が限界です。<br>安定のため、通常出力へ戻します。
+type9,0,NpcComOnBeginEnd,隔離領域維持のためのエネルギーを<br>転送します。定期的に回収しながら<br>エネミーを撃破してください。
+type9,0,NpcComOnEnemy,$(0)に敵性反応あり！<br>討伐、お願いします！
+type9,0,NpcComOnEnemyLast,$(0)に敵性反応！<br>なんだかちょっと強力な感じです！<br>注意してくださいね！
+type9,0,NpcComOnTimeLeftHalf,隔離領域の強化維持、限界が近いです！<br>エネルギーを回収して<br>なんとか維持してください！
+type9,0,NpcComOnTimeLeftLess,隔離領域の強化維持、もう限界です！<br>急ぎ対処をお願いします！
+type9,1,NpcComOnBegin,¡Detectando múltiples enemigos!<br>¡Intentará fortalecer el territorio de bolsillo<br>para minimizar el daño!
+type9,1,NpcComOnAfterBegin,Envío de energía para mantener el territorio de bolsillo <br>. Asegúrate de seguir recogiéndolo<br>mientras luchas contra enemigos.
+type9,1,NpcComOnSuccess,¡La presencia enemiga se ha dispersado!<br>Revertir el territorio de bolsillo a la normalidad.<br>¡Bien hecho!
+type9,1,NpcComOnFailure,No se puede mantener el territorio de bolsillo con la fuerza actual de <br>. Volviendo a la salida normal para una estabilidad <br>.
+type9,1,NpcComOnBeginEnd,Envío de energía para mantener el territorio de bolsillo <br>. Asegúrate de seguir recogiéndolo mientras<br>luchas contra enemigos.
+type9,1,NpcComOnEnemy,¡Presencia enemiga detectada en $(0)!<br>¡Muévete para reprimirlos!
+type9,1,NpcComOnEnemyLast,¡Presencia enemiga en ! Parece bastante fuerte... ¡Cuidado ahi fuera!
+type9,1,NpcComOnTimeLeftHalf,Estamos luchando por mantener el territorio de bolsillo<br>en su nivel actual. ¡Sigue reuniendo energía para<br>mantenerla!
+type9,1,NpcComOnTimeLeftLess,¡El territorio de bolsillo está fracasando! ¡Actúa rápido!

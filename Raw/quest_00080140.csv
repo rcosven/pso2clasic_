@@ -1,0 +1,27 @@
+section,group,id,text
+Basic,0,Title,境界を貫く双角の凶鳥
+Basic,0,Explanation,惑星ナベリウスの壊世区域において<br>突如、世壊種だけでなく、原生種や<br>龍族、機甲種に海王種などのエネミーが<br>発生した。またその現象との関連は不明だが<br>局所的な激しい雷雨の発生と正体不明の<br>有翼型エネミーの出現も確認されている。<br>アークス各員は、至急現地に赴き<br>該当個体を調査し、必要に応じて討伐せよ。<br>――――――――――――――――――――<br>失敗条件/最深部での敗北
+Basic,1,Title,"Boundary-Piercer, Two-Horned Crow"
+Basic,1,Explanation,"A large host of enemies including not only tainted, <br>but also sylvants, Draconians, automata, and <br>oceanids has gathered in the Corrupted Region of <br>the planet Naverius. Moreover, localized <br>thunderstorms and an unidentified winged enemy <br>is in the same region. All ARKS personnel are to <br>proceed to the site of the disturbance immediately, <br>investigate, and neutralize all enemies as required.<br>--------------------------------------------------<br>You will fail if you are defeated in the final area."
+QuestTarget,0,SimpleExplanation,異変を引き起こす元凶を撃破せよ！
+QuestTarget,1,SimpleExplanation,Defeat the culprit responsible for causing the anomaly!
+PreTransportDirection,0,NpcComMsg1,アンガ・ファンダージの反応を感知。<br>この先に出現しているようです。
+PreTransportDirection,0,NpcComMsg2,現在、要調査対象とされている<br>正体不明の有翼型エネミーとは<br>違いますが、放ってはおけません。
+PreTransportDirection,0,NpcComMsg3,この領域で確認されている異常気象の<br>原因かもしれませんし……<br>早急な撃破をお願いします。
+PreTransportDirection,1,NpcComMsg1,Readings corresponding to Anga Phandaj are being<br>picked up. We should see him shortly.
+PreTransportDirection,1,NpcComMsg2,"The current enemy doesn't look like the<br>unidentified winged beast we're looking for,<br>but we can't let it cause any more potential damage."
+PreTransportDirection,1,NpcComMsg3,This may be the cause of the abnormal <br>meteorological conditions detected in this area...<br>Defeat it with all expediency.
+PreTransportDirection1,0,NpcComMsg1,……さん！　……みなさん！　<br>皆さん、応答してください！<br>良かった……通じたようですね。
+PreTransportDirection1,0,NpcComMsg2,……ここは、どこでしょう？<br>座標自体は惑星ナベリウスのまま……<br>ですが、これは？
+PreTransportDirection1,0,NpcComMsg3,今まで起きていた異変も、この先に潜む<br>エネミーによる影響でしょうか？<br>嫌な予感がします、どうか気を付けて。
+PreTransportDirection1,1,NpcComMsg1,"...one! ...Anyone!<br>Anyone, please respond!<br>Phew... looks like I got through."
+PreTransportDirection1,1,NpcComMsg2,"...What is this place?<br>The coordinates still correspond to Naverius, but...<br>Ah, what's this?"
+PreTransportDirection1,1,NpcComMsg3,Perhaps the oddities that we've observed so far have something to do with<br>the enemies that lurk ahead.<br>I have a bad feeling about this. Stay safe.
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit

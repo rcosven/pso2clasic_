@@ -1,0 +1,33 @@
+section,group,id,text
+common,0,IncidentName,ゲル・ブルフを迎撃せよ！
+common,0,TrialBeginMsg,ゲル・ブルフを撃破、または回避せよ<br>時間内に撃破できず、$(0)回以上襲撃されたら失敗
+common,0,TrialAbstract,ゲル・ブルフを撃破<br>または制限時間まで回避せよ
+common,0,TrialOutbreak,$(0)がゲル・ブルフに襲撃された！
+common,1,IncidentName,Intercept the Gehl Bulf!
+common,1,TrialBeginMsg,"Defeat the Gehl Bulf or avoid its attacks. You'll fail if you can't defeat it<br>within the time limit, or if you take $(0) or more hits."
+common,1,TrialAbstract,Defeat the Gehl Bulf or avoid its attacks until<br>time expires.
+common,1,TrialOutbreak,$(0) was attacked by the Gehl Bulf!
+type1,0,NpcComOnBegin,緊急連絡です。<br>ゲル・ブルフの出現を確認しました。
+type1,0,NpcComOnBeginAtRareCase,緊急連絡です。<br>ゲル・ブルフの出現を確認しました。
+type1,0,NpcComOnBeginEmplacement,フォトンキャノンを転送。<br>ゲル・ブルフを破壊できるはずですが<br>無理はせず回避を優先してください。
+type1,0,NpcComOnSuccess,/face2 ゲル・ブルフの反応、全て消失。<br>お見事です。
+type1,0,NpcComOnSuccessDestroy,/face2 ゲル・ブルフの破壊、成功しました。
+type1,0,NpcComOnFailure,/face4 ゲル・ブルフの影響による被害甚大！<br>被害許容範囲を超えました……。<br>残念です。
+type1,0,NpcComOnTarget,$(0)！　注意してください！<br>貴方がターゲットにされています！
+type1,0,NpcComOnTime1,ゲル・ブルフの起動時間には<br>限界があります！<br>それまで凌ぎきってください！
+type1,0,NpcComOnTime2,その調子です！　間もなく<br>ゲル・ブルフの活動限界です！<br>あと少し、凌いでください！
+type1,0,NpcComOnHit,/face2 フォトンキャノンの有効性を確認。<br>やはり、これなら対抗できる<br>みたいですね。
+type1,0,NpcComDeadEmplacement,破壊されたフォトンキャノンを<br>再度転送します。
+type1,0,NpcComOnRepop,ゲル・ブルフの再転送を確認！<br>各員、周囲への警戒を強めてくださ
+type1,1,NpcComOnBegin,Warning. A Gehl Bulf has been<br>sighted in the area.
+type1,1,NpcComOnBeginAtRareCase,Warning. A Gehl Bulf has been<br>sighted in the area.
+type1,1,NpcComOnBeginEmplacement,"I'm sending in a Photon Cannon. It should be<br>capable of destroying the Gehl Bulf, but I'd still<br>recommend prioritizing evasion."
+type1,1,NpcComOnSuccess,/face2 Sensors indicate the Gehl Bulf has<br>been taken out.  Great job.
+type1,1,NpcComOnSuccessDestroy,/face2 Gehl Bulf successfully destroyed.
+type1,1,NpcComOnFailure,"/face4 The Gehl Bulf has caused extensive<br>damage, far exceeding our allowable range..."
+type1,1,NpcComOnTarget,"Look out, $(0)! You're being targeted!"
+type1,1,NpcComOnTime1,The Gehl Bulf can only stay active for a limited<br>time. Stick it out till then!
+type1,1,NpcComOnTime2,Keep it up! The Gehl Bulf doesn't<br>have much more time!<br>Just hold out a bit longer!
+type1,1,NpcComOnHit,/face2 The Photon Cannon seems quite effective. <br>Should be enough for you to take care of business.
+type1,1,NpcComDeadEmplacement,We're sending a replacement Photon Cannon!
+type1,1,NpcComOnRepop,Another Gehl Bulf has teleported in! All ops<br> should be on high alert!

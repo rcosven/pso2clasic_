@@ -1,0 +1,25 @@
+section,group,id,text
+common,0,IncidentName,$(0)討伐
+common,0,TrialBeginMsg,$(0)を倒せ！
+common,0,TrialAbstract,$(0)を討伐せよ！
+common,1,IncidentName,Suppress $(0)
+common,1,TrialBeginMsg,Defeat $(0)!
+common,1,TrialAbstract,Suppress the $(0)!
+type9,0,NpcComOnBegin,ダークファルス・ペルソナの姿を確認！<br>圧倒的な悪意と敵性反応です……！<br>必ず、この場で撃破してください。
+type9,0,NpcComOnSuccess,目標の反応消滅を確認しました。<br>撃破、成功です！
+type9,0,NpcComOnSpCharge,目標のエネルギー反応、急速に増加！<br>注意してください！
+type9,0,NpcComOnSpBegin,この反応は……強烈な攻撃が来ます！<br>警戒してください！
+type9,0,NpcComOnSpGuardSuccess,目標の体勢が崩れました！<br>今がチャンスです。<br>一気に畳みかけましょう！
+type9,0,NpcComOnSpGuardDraw,ご無事ですか！？<br>目標、健在です。<br>急いで態勢を立て直してください！
+type9,0,NpcComOnSpGuardFailure,……大丈夫ですかっ？<br>気を引き締めていきましょう！
+type9,0,NpcComOnDamage1,目標の残存体力、低下！
+type9,0,NpcComOnDamage2,目標残存体力、さらに低下！<br>あと少しです！
+type9,1,NpcComOnBegin,Target detected! This is a staggeringly<br>massive reading! Don't let it leave this spot!
+type9,1,NpcComOnSuccess,Target readings are gone! You've successfully<br>driven it off! Thank goodness for that.
+type9,1,NpcComOnSpCharge,Target energy increasing rapidly! Stay sharp!
+type9,1,NpcComOnSpBegin,You can't let the target get that move off!<br>You have to stop it!
+type9,1,NpcComOnSpGuardSuccess,The target is off-balance! Now's our chance!
+type9,1,NpcComOnSpGuardDraw,Still with me out there!?<br>The target was unfazed.<br>Regroup at once!
+type9,1,NpcComOnSpGuardFailure,A-Are you okay!?
+type9,1,NpcComOnDamage1,Target's vitality is decreasing!
+type9,1,NpcComOnDamage2,Target is visibly worn down! It won't be long now!

@@ -1,0 +1,73 @@
+﻿section,group,id,text
+common,0,IncidentName,炎のＡＮＧＥＬ
+common,0,TrialBeginMsg,炎に囲まれた要救助者を救助せよ！
+common,0,TrialAbstract,炎に囲まれた要救助者を救助せよ！
+common,1,IncidentName,Ángel en las llamas
+common,1,TrialBeginMsg,¡Salva a los supervivientes de los detritos en llamas!
+common,1,TrialAbstract,¡Salva a los supervivientes de los detritos en llamas!
+type1,0,NpcComOnBegin,市街地のあちこちで、逃げ遅れた人が<br>救助を待っています！<br>至急救助に向かって下さい！
+type1,0,NpcComOnSuccess,/face2 反応のあった全ての要救助者の<br>救助を確認しました。<br>お疲れ様でした！
+type1,0,NpcComOnFailure,これ以上は危険です！<br>リスクは高いですが、要救助者全員を<br>強制的に転送します！
+type1,0,NotifyPos,要救助者の位置を確認しました。<br>マーカーに表示された<br>要救助者を助け出してください！
+type1,0,NotifyMethod,安全に転送するため<br>消火後、要救助者にアクセスして<br>正確な座標を送ってください。
+type1,0,FirstTrans,要救助者の座標を特定。<br>転送確認完了です！<br>救助を続けて下さい！
+type1,0,RescueeFound,要救助者が炎に囲まれています。<br>炎を消さないと、転送は危険です。<br>まずは消火してください。
+type1,0,GeneratorAdd,新たな要救助者を確認しました。<br>全て救助してください！
+type1,0,TimeLimitNear,要救助者、危険な状況です！<br>急いで救助に向かってください！
+type1,0,TimeLimitHurry,要救助者のバイタル、危険域です！<br>急いでください！
+type1,0,RescueMethod,消火を確認。<br>要救助者にアクセスし、<br>正確な座標を送ってください。
+type1,1,NpcComOnBegin,¡Algunos supervivientes que aún están atrapados en la ciudad necesitan<br>tu ayuda! ¡Toma acción inmediatamente!
+type1,1,NpcComOnSuccess,/face2 Todos los supervivientes en el radar han sido rescatados.<br>¡Trabajo bien hecho!
+type1,1,NpcComOnFailure,"¡Esto se está volviendo demasiado peligroso! Es arriesgado, pero<br>¡Intentaré teletransportar a todos los supervivientes fuera de allí!"
+type1,1,NotifyPos,He marcado las ubicaciones de todos los supervivientes.<br>¡Ahora ve a sacarlos de ahí!
+type1,1,NotifyMethod,"Para teletransportar a los supervivientes de forma segura, primero apaga<br>las llamas, luego entra y envíame sus<br>coordenadas."
+type1,1,FirstTrans,Coordenadas confirmadas. ¡Listo para teletransportarse!<br>¡Ahora pasa al siguiente!
+type1,1,RescueeFound,Las víctimas están rodeadas de llamas.<br>¡Sácalos primero o teletransportarte podría<br>volverse peligroso!
+type1,1,GeneratorAdd,Hay mas gente necesitada.<br>¡Rescatalos a todos!
+type1,1,TimeLimitNear,¡Se está volviendo realmente peligroso! ¡Salva a esos<br>supervivientes antes de que sea demasiado tarde!
+type1,1,TimeLimitHurry,"¡Sus signos vitales están bajando! ¡Por favor, date prisa!"
+type1,1,RescueMethod,Las llamas se extinguieron. Ahora acércate a los<br>supervivientes y consígueme esas coordenadas.
+type2,0,NpcComOnBegin,市街地で広域にわたって<br>要救助者が存在する。<br>急ぎ救助に向かえ。
+type2,0,NpcComOnSuccess,全ての要救助者の転送を確認。<br>よくやった。
+type2,0,NpcComOnFailure,もう間に合わん。<br>リスクは相当に高いが<br>要救助者全員を強制転送する！
+type2,0,NotifyPos,要救助者の位置を確認。<br>マーカーに表示する。<br>迅速に救助に向かえ。
+type2,0,NotifyMethod,安全に転送するには<br>正確な座標が必要となる。<br>消火後、要救助者に接触しろ。
+type2,0,FirstTrans,要救助者の座標を確認、転送完了。<br>その調子で全て救助しろ。
+type2,0,RescueeFound,要救助者発見。<br>炎を消さねば転送にもリスクが伴う。<br>まずは炎を消火し、救助しろ。
+type2,0,GeneratorAdd,新たな要救助者を確認。<br>早急に救助へ向かえ。
+type2,0,TimeLimitNear,流石に時間がかかりすぎたか……<br>可能な限り、急いで救助しろ。
+type2,0,TimeLimitHurry,これ以上は危険だ。<br>急げ！
+type2,0,RescueMethod,消火確認。今なら安全に転送可能だ。<br>要救助者にアクセスし、<br>正確な座標を送れ。
+type2,1,NpcComOnBegin,Los supervivientes están atrapados por toda la ciudad.<br>Entra allí y sálvalos al instante.
+type2,1,NpcComOnSuccess,Todos los supervivientes se teletransportaron a un lugar seguro. Buen trabajo.
+type2,1,NpcComOnFailure,"Se nos acabó el tiempo. Esto es extremadamente arriesgado, pero<br>¡Intentaré teletransportarlos a todos fuera de allí!"
+type2,1,NotifyPos,Todos los supervivientes fueron detectados y marqué sus<br>ubicaciones. ¡Sácalos de esta pesadilla!
+type2,1,NotifyMethod,"Para teletransportarlos de manera segura, necesitaré que se apaguen esas<br>llamas. Luego avanza para obtener sus coordenadas <br>."
+type2,1,FirstTrans,"Coordenadas confirmadas, teletransportación<br>completa. Continúe así hasta que todos los supervivientes<br>se salven."
+type2,1,RescueeFound,Sobreviviente encontrado. Pero esas llamas son demasiado altas<br>para arriesgarse a teletransportarse. Sácalos y luego mueve a<br>para rescatarlos.
+type2,1,GeneratorAdd,¡Mas personas necesitan ayuda! Salvalos a todos.
+type2,1,TimeLimitNear,Esta tardando demasiado... Guarda tantos como puedas.
+type2,1,TimeLimitHurry,¡Ya casi se nos acaba el tiempo! ¡Apurarse!
+type2,1,RescueMethod,"Las llamas se extinguieron. Ahora podemos teletransportarnos de forma segura a <br>, así que envíame las coordenadas."
+type3,0,NpcComOnBegin,市街地の火災から逃げ遅れた<br>要救助者がたっくさんいますー！<br>至急救助に向かって下さいー！
+type3,0,NpcComOnSuccess,/face2 要救助者全員の救助を<br>確認しましたです！<br>お疲れ様でした！
+type3,0,NpcComOnFailure,/face4 もう、皆さん限界ですー！<br>危険を承知、リスクも踏まえて<br>要救助者を強制転送しますー！
+type3,0,NotifyPos,逃げ遅れた皆さんの<br>位置を確認しました！<br>マーカーを目指してくださいー！
+type3,0,NotifyMethod,要救助者の皆さんを安全に転送<br>するために正確な座標が必要です！<br>消火後にアクセスしてくださいー！
+type3,0,FirstTrans,/face2 座標の確認、完了です。<br>安全に転送できました。<br>その調子ですよー！
+type3,0,RescueeFound,炎に包まれたままだと<br>転送にもリスクが伴いますー！<br>炎を消して助けてあげてください！
+type3,0,GeneratorAdd,わわっ！<br>新たな要救助者の反応ですよ！<br>全部助けてあげてください！
+type3,0,TimeLimitNear,急いで！　急いで下さいー！
+type3,0,TimeLimitHurry,/face4 もう限界です！<br>はやく！　はやく！
+type3,0,RescueMethod,/face2 炎が消えました！<br>要救助者にアクセスして<br>正確な座標を送ってくださいー。
+type3,1,NpcComOnBegin,¡Muchos supervivientes todavía están atrapados en el fuego!<br>¡Sácalos de allí rápido!
+type3,1,NpcComOnSuccess,/face2 ¡Tengo confirmación! ¡Todas las víctimas rescatadas!<br>¡Así se hace!
+type3,1,NpcComOnFailure,"/face4 ¡Se nos acabó el tiempo! ¡Esto es peligroso, pero<br>tendré que arriesgarme a teletransportar a todas las víctimas ahora!"
+type3,1,NotifyPos,¡Tengo ubicaciones de todos aquellos que no pueden<br>evacuar! ¡Dirígete a los marcadores!
+type3,1,NotifyMethod,"¡Necesitaré coordenadas para teletransportarlos<br>de forma segura! ¡Apaga esas llamas primero, luego<br>entra!"
+type3,1,FirstTrans,/face2 ¡Coordenadas confirmadas!<br>Teletransportación completa. ¡Avanza!
+type3,1,RescueeFound,¡Es un riesgo demasiado grande teletransportarlos con todas<br>esas llamas! ¡Sácalos primero!
+type3,1,GeneratorAdd,¡Ay! ¡He detectado más! ¡Tendrás<br>para rescatarlos a todos!
+type3,1,TimeLimitNear,"¡Muevete, muevete, muevete!"
+type3,1,TimeLimitHurry,/face4 ¡No hay más tiempo! ¡Apurarse! ¡Apurarse! ¡Apurarse!
+type3,1,RescueMethod,/face2 ¡Llamas apagadas! Ahora ve con ese sobreviviente<br>y envíame las coordenadas.

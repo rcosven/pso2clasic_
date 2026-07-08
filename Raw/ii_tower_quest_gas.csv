@@ -1,0 +1,19 @@
+section,group,id,text
+common,0,IncidentName,HP回復の妨害を乗り越えろ
+common,0,TrialBeginMsg,HP回復効果の妨害を乗り越えろ！
+common,0,TrialAbstract,HP回復効果の妨害を乗り越えろ！
+common,1,IncidentName,Overcome the Healing Interference
+common,1,TrialBeginMsg,Overcome the device preventing your HP restore!
+common,1,TrialAbstract,Overcome the device preventing your HP restore!
+type5,0,NpcComOnBegin,/face2 おおっ、訓練用の装置が起動しましたね！<br>これは……回復効果低減の装置です！<br>体力回復しにくいですよー。
+type5,0,NpcComOnSuccess,/face2 はーい、装置の停止を確認！<br>この訓練はここまでですね！
+type5,0,DirectionSwitch,/face2 装置を止めたいのなら<br>周囲にある停止スイッチを押して下さい！<br>一個とは限りませんよー！
+type5,0,DirectionNoSwitch,/face2 んー？　あれー？<br>停止スイッチが出るはずなんですが……<br>しょうがない、このまま訓練開始です！
+type5,0,SwitchFirst,/face2 停止スイッチは全部で$(0)個あるので<br>頑張って押してくださいねー！
+type5,0,SwitchLast,/face2 停止スイッチはあと$(0)個です！<br>これも訓練、頑張って、頑張っ
+type5,1,NpcComOnBegin,"/face2 Oh-hoh, the training equipment has activated!<br>This is... a device for mitigating healing<br>effects! It's going to be harder to restore HP!"
+type5,1,NpcComOnSuccess,"/face2 Yup, confirming that the device has been<br>stopped! This training session is over!"
+type5,1,DirectionSwitch,"/face2 If you want to stop the device, just find the<br>stop switch!<br>There could be more than one though!"
+type5,1,DirectionNoSwitch,/face2 Huh? That's odd! There were supposed to be<br>stop switches... Oh well! We'll just start the<br>training without 'em!
+type5,1,SwitchFirst,"/face2 There are $(0) stop switches in total, so do<br>your best to push them all!"
+type5,1,SwitchLast,"/face2 There's only $(0) stop switch left!<br>Remember, this is training! Keep going!"

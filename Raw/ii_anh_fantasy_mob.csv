@@ -1,0 +1,25 @@
+section,group,id,text
+common,0,IncidentName,大量発生したエネミーを討伐せよ！
+common,0,TrialBeginMsg,制限時間内にエネミーを全て討伐せよ！
+common,0,TrialAbstract,大量発生したエネミーを討伐せよ！
+common,1,IncidentName,Suppress the Massive Enemy Group!
+common,1,TrialBeginMsg,Suppres all enemies before time runs out!
+common,1,TrialAbstract,Suppress the Massive Enemy Group!
+type9,0,NpcComOnBegin,多数の敵性反応を感知しました！<br>被害を抑えるため、隔離領域を<br>強化し、対応します！
+type9,0,NpcComOnAfterBegin,隔離領域維持のためのエネルギーを<br>転送します。定期的に回収しながら<br>エネミーを撃破してください。
+type9,0,NpcComOnSuccess,敵性反応、消失確認！<br>隔離領域を通常出力へ戻します！<br>お疲れさまでした！
+type9,0,NpcComOnFailure,隔離領域強化の維持が限界です。<br>安定のため、通常出力へ戻します。
+type9,0,NpcComOnBeginEnd,隔離領域維持のためのエネルギーを<br>転送します。定期的に回収しながら<br>エネミーを撃破してください。
+type9,0,NpcComOnEnemy,$(0)に敵性反応あり！<br>討伐、お願いします！
+type9,0,NpcComOnEnemyLast,$(0)に敵性反応！<br>なんだかちょっと強力な感じです！<br>注意してくださいね！
+type9,0,NpcComOnTimeLeftHalf,隔離領域の強化維持、限界が近いです！<br>エネルギーを回収して<br>なんとか維持してください！
+type9,0,NpcComOnTimeLeftLess,隔離領域の強化維持、もう限界です！<br>急ぎ対処をお願いします！
+type9,1,NpcComOnBegin,Detecting multiple enemies!<br>Will try to strengthen the pocket territory<br>to minimize damage!
+type9,1,NpcComOnAfterBegin,Sending energy to maintain the pocket<br>territory. Make sure to keep collecting it<br>while you're fighting enemies.
+type9,1,NpcComOnSuccess,The enemy presence has dispersed!<br>Reverting pocket territory to normal.<br>Well done!
+type9,1,NpcComOnFailure,Unable to maintain pocket territory at current<br>strength. Returning to normal output for<br>stability.
+type9,1,NpcComOnBeginEnd,Sending energy to maintain the pocket<br>territory. Make sure to keep collecting it while<br>you're fighting enemies.
+type9,1,NpcComOnEnemy,Enemy presence detected in $(0)!<br>Move to suppress them!
+type9,1,NpcComOnEnemyLast,Enemy presence in $(0)!<br>It seems quite strong... Be careful out there!
+type9,1,NpcComOnTimeLeftHalf,We're struggling to keep the pocket territory<br>at its current level. Keep gathering energy to<br>maintain it!
+type9,1,NpcComOnTimeLeftLess,The pocket territory is failing! Act quickly!

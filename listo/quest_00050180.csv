@@ -1,0 +1,21 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,準備はいいな？転送先は、<br>あの巨大なダークファルス本体の<br>正面だ。覚悟を決めろ。
+PreTransportDirection,0,NpcComMsg2,/face6 ……彼奴も消耗し、体積が減っている。<br>怯える必要はない。最初に教えた通りに<br>戦って……必ず生還しろ。必ずだ。
+PreTransportDirection,1,NpcComMsg1,Serás teletransportado directamente a<br>frente al cuerpo principal de Dark Falz.<br>Ármate.
+PreTransportDirection,1,NpcComMsg2,/face6 ...Lo estás desgastando; disminución del volumen.<br>No hay nada que temer. Recuerda tu<br>entrenando... Lograrás regresar.
+Basic,0,Title,深遠に至りし巨なる躯
+Basic,0,Explanation,>犠牲を恐れるな、恐怖を覚えるな。<br>ただ、【巨躯】を討つことだけを考えろ。<br>総員に告ぐ、これこそ決戦である。<br>――――――――――――――――――――<br>失敗条件/最深部での敗北、制限時間の経過
+Basic,1,Title,Anciano del Abismo Insondable
+Basic,1,Explanation,"Elder the Gargantuan se ha manifestado en una forma muy<br>más terrible que antes. Parece haber crecido<br>más fuerte, pero no hay por qué temer. proporcionado todo<br>El personal de ARKS trabaja en conjunto, nuestra victoria será<br>cierto. No temas a la muerte; no sientas miedo.<br>Piense sólo en la inminente desaparición del Anciano.<br>Estimados miembros, nuestra batalla final está cerca.<br><br>Fallarás esta misión si eres derrotado.<br>en el área final o excedes el límite de tiempo."
+QuestTarget,0,SimpleExplanation,ダークファルス・エルダーの撃破
+QuestTarget,1,SimpleExplanation,Derrota al anciano el gigantesco
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil

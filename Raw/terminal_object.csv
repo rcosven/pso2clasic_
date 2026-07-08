@@ -1,0 +1,63 @@
+section,group,id,text
+common,0,CampshipEnter,キャンプシップ入口
+common,0,NotAccessQuest,クエスト受注前なのでアクセスできません。
+common,0,WarehouseTitle,倉庫端末
+common,0,PartnerObject_ErrorTitle,パートナー呼び出し端末
+common,0,PartnerObject_Error1,現在、パートナー呼び出し端末を<br>使用することはできません。
+common,0,PartnerObject_Error2,このクエストでは、パートナーを呼び出すことはできません。
+common,0,PartnerObject_Error3,マッチング設定により、<br>パートナーの呼び出しが制限されています。
+common,0,GuildWarehouseTitle,チーム倉庫端末
+common,1,CampshipEnter,Gateway Ship Entrance
+common,1,NotAccessQuest,You must have a quest to access this.
+common,1,WarehouseTitle,Storehouse Terminal
+common,1,PartnerObject_ErrorTitle,Partner Terminal
+common,1,PartnerObject_Error1,The Partner Terminal is currently unavailable.
+common,1,PartnerObject_Error2,You cannot call on a partner for this quest.
+common,1,PartnerObject_Error3,The partners you can call are currently limited<br>due to matching settings.
+common,1,GuildWarehouseTitle,Alliance Storehouse Terminal
+Campship,0,TerminalTitle,情報端末
+Campship,0,ShopTitle,ショップ端末
+Campship,0,MedicalTitle,メディカル端末
+Campship,0,QuestTitle,クエストカウンター端末
+Campship,0,ApcTitle,ＡＰＣ端末
+Campship,0,AccessFaild,一度決定した後は<br>アクセスできません。
+Campship,0,NonReader,この端末は<br>現在パーティーリーダーしか<br>アクセスできません。
+Campship,0,NotClear,この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+Campship,0,NotClearTelepipe,この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+Campship,0,TerminalDisable,現在使用することができません。
+Campship,0,TerminalDisableAPC,現在使用することができません。
+Campship,0,TerminalDisableGuildRoom,チーム倉庫を購入していないため、<br>現在使用することができません。<br><br>チームポイントを消費して<br>チーム倉庫を購入することで<br>使用可能となります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+Campship,0,TerminalDisableGuildMember,役職がビジターであるため利用できません。<br>使用するためにはコモンメンバー以上の<br>役職である必要があります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+Campship,0,TerminalDisableGuildMember2,<pict Arcscash><c ff4f3f>AC消費コンテンツ<c><br>選択した機能の利用権をお持ちでないか、<br>利用期限が切れています。<br><br><yellow>「プレミアムセット」<c>を購入し、<br>そのまますぐに機能を有効にできますが、<br>購入確認画面に進みますか？<br><br><red>※個別の機能チケットをご希望の場合は、<br>　メインメニューの「ACショップ」でご購入ください。<c>
+Campship,0,TerminalDisableCancelTower,パーティーメンバー全員がキャンプシップに戻るまで、<br>使用することができません。
+Campship,0,RetryFaild,クエストの受注期間が過ぎているため、<br>もう一度挑戦することができませんでした。
+Campship,0,ClearLimit,クエストのクリア回数制限を超えているため<br>もう一度挑戦することができませんでした。
+Campship,0,QuestDropPenalty,クエストの受注を制限されているため<br>このクエストは受注できません。
+Campship,0,QuestInExtra,このクエストは、<br>キャンペーン対象期間となったため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+Campship,0,QuestOutExtra,このクエストは、<br>キャンペーン対象期間が終了したため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+Campship,0,CantStartProhibitQuestDropTitleCnt,クエストカウンター端末
+Campship,0,CantStartProhibitQuestDropTitleTlp,テレポーター
+Campship,0,CantStartProhibitQuestDropForStart,現在使用することができません。
+Campship,1,TerminalTitle,Data Terminal
+Campship,1,ShopTitle,Shopping Terminal
+Campship,1,MedicalTitle,Medical Terminal
+Campship,1,QuestTitle,Quest Counter Terminal
+Campship,1,ApcTitle,APC Terminal
+Campship,1,AccessFaild,This cannot be accessed after a selection has<br>been confirmed.
+Campship,1,NonReader,"Currently, only the party leader can access this<br>terminal."
+Campship,1,NotClear,You cannot access this terminal until you<br>complete or fail your current quest.
+Campship,1,NotClearTelepipe,You cannot access this terminal until you<br>complete or fail your current quest.
+Campship,1,TerminalDisable,This is currently unavailable.
+Campship,1,TerminalDisableAPC,This is currently unavailable.
+Campship,1,TerminalDisableGuildRoom,"You cannot access this without having purchased <br>an Alliance Storehouse.<br><br>Access will be granted once you have purchased <br>an Alliance Storehouse with Alliance Points.<br><br>Note: To use the Alliance Storehouse, you must <br>also use a Premium Set."
+Campship,1,TerminalDisableGuildMember,"You cannot access this terminal as a Provisional. <br>You must be ranked Member or above to access <br>this terminal.<br><br>Note: To use the Alliance Storehouse, <br>you must also use a Premium Set."
+Campship,1,TerminalDisableGuildMember2,"<pict Arcscash><c ff4f3f>This content requires AC<c><br>You either don't have permission to use the selected <br>function, or your access has expired.<br><br>You can purchase a <yellow>Premium Set<c>to enable <br>this function immediately. Proceed to the purchase screen?<br><br><red>Note: Individual function tickets can be purchased <br>from the AC Shop in the main menu.<c>"
+Campship,1,TerminalDisableCancelTower,You cannot cancel until all party members have<br>returned to the Gateway Ship.
+Campship,1,RetryFaild,The period for accepting this quest has expired.<br>You cannot retry this quest.
+Campship,1,ClearLimit,You have exceeded the maximum number of times<br>this quest can be completed.
+Campship,1,QuestDropPenalty,You cannot accept this quest because you<br>currently have a quest access penalty.
+Campship,1,QuestInExtra,You cannot retry this quest during the campaign<br>period. Please accept this quest again.
+Campship,1,QuestOutExtra,You cannot retry this quest as the campaign<br>period has ended. Please accept this quest<br>again.
+Campship,1,CantStartProhibitQuestDropTitleCnt,Quest Counter Terminal
+Campship,1,CantStartProhibitQuestDropTitleTlp,Teleporter
+Campship,1,CantStartProhibitQuestDropForStart,This is currently unavailable.

@@ -1,0 +1,131 @@
+section,group,id,text
+common,0,IncidentName,$(0)を捕獲せよ！
+common,0,TrialBeginMsg,$(0)を捕獲装置で捕獲せよ！
+common,0,TrialAbstract,$(0)を捕獲装置で捕獲せよ！
+common,0,ToastOnRestTryCaptureNum,捕獲装置起動可能回数　残り$(0)回。
+common,0,ToastOnUselessAccess,現在捕獲装置は起動できない。
+common,1,IncidentName,Capture the $(0)!
+common,1,TrialBeginMsg,Use a Containment Field to capture any<br>$(0) you find!
+common,1,TrialAbstract,Use a Containment Field to capture any $(0) you find!
+common,1,ToastOnRestTryCaptureNum,Containment Field activations left: $(0)
+common,1,ToastOnUselessAccess,Unable to activate Containment Field right now.
+type1,0,NpcComOnBegin,指令変更です。<br>$(0)を<br>捕獲してください。
+type1,0,NpcComOnAfterBegin,捕獲装置を$(0)のポイントに転送。<br>各員、対象を誘導し捕獲してください。<br>繰り返します、目標を捕獲です。
+type1,0,NpcComOnSuccess,/face2 捕獲対象の転送成功を確認。<br>急な指令変更にもかかわらず<br>迅速な対応感謝します。
+type1,0,NpcComOnFailure,/face4 捕獲任務、継続不可能。<br>仕方ありません。<br>通常任務に戻ってください。
+type1,0,NpcComOnEnableCapture,対象を捕獲有効範囲内に捕捉！<br>今です、捕獲装置の起動を！
+type1,0,NpcComOnCaptureSwitch,タイミングは問題ありません。<br>あとは対象を有効範囲内から<br>逃がさないようにしてください。
+type1,0,NpcComOnDisableCapture,捕獲装置は現在使用できません。<br>まず捕獲対象を範囲内に<br>誘導してください。
+type1,0,NpcComOnSuccessCapture,対象の捕獲成功。<br>転送完了を確認します。
+type1,0,NpcComOnFailedCapture,対象の捕獲失敗。<br>有効範囲は限られています。<br>対象を逃がさないようにしてください。
+type1,0,NpcComOnAttackTarget,目標はあくまで捕獲です。<br>捕獲対象への攻撃は<br>なるべく避けてください。
+type1,0,NpcComOnDeadTarget,捕獲対象の生体反応、消失。<br>仕方ありません。<br>次の機会を待ちましょう。
+type1,0,NpcComOnLastCapture,転送装置が負荷に耐えられるのは<br>あと1回が限度です。<br>慎重に捕獲任務にあたってください。
+type1,1,NpcComOnBegin,There's been a change of orders.<br>Please capture any $(0) you find.
+type1,1,NpcComOnAfterBegin,"Containment Field deployed to $(0).<br>Lure the target into the Field to capture it.<br>I repeat, the objective is to capture."
+type1,1,NpcComOnSuccess,/face2 The target has been successfully teleported.<br>I appreciate your swift response to this sudden<br>change of orders.
+type1,1,NpcComOnFailure,/face4 Capture mission aborted. That's that I<br>suppose. Resume your original mission.
+type1,1,NpcComOnEnableCapture,The target is within range!<br>Now! Activate the Containment Field!
+type1,1,NpcComOnCaptureSwitch,Well timed. Now just prevent the target<br>from escaping.
+type1,1,NpcComOnDisableCapture,Containment Field cannot be activated currently.<br>Your first step is to lure the target into range.
+type1,1,NpcComOnSuccessCapture,The target has been captured.<br>Teleportation complete.
+type1,1,NpcComOnFailedCapture,"You failed to capture the target. Remember,<br>Containment Fields have a limited range. <br>Don't let the target escape."
+type1,1,NpcComOnAttackTarget,Your goal is simply to capture the target.<br>Avoid attacking it if you can.
+type1,1,NpcComOnDeadTarget,The target seems to have perished. <br>No need to worry about it now. <br>We'll wait for another chance.
+type1,1,NpcComOnLastCapture,The Teleporter can only withstand one more use.<br>Make it count.
+type2,0,NpcComOnBegin,指令変更だ。<br>$(0)を<br>捕獲せよ。討伐ではない、捕獲だ。
+type2,0,NpcComOnAfterBegin,捕獲装置を$(0)に転送した。<br>各員、対象を誘導し、捕獲しろ。<br>繰り返す、対象を捕獲しろ。
+type2,0,NpcComOnSuccess,捕獲対象の転送成功を確認。<br>急な指令変更で手間をかけたな。<br>よくやってくれた。
+type2,0,NpcComOnFailure,/face6 これ以上捕獲を試みるのは無謀か。<br>仕方がない、通常任務に戻れ。
+type2,0,NpcComOnEnableCapture,対象を捕獲有効範囲内に捕捉した。<br>捕獲装置を起動しろ。
+type2,0,NpcComOnCaptureSwitch,今のタイミングで問題ない。<br>あとは対象を有効範囲内から<br>逃がさないようにしろ。
+type2,0,NpcComOnDisableCapture,捕獲装置は暫く使用不可だ。<br>まずは対象を範囲内に誘導しろ。
+type2,0,NpcComOnSuccessCapture,対象の捕獲成功を確認。<br>転送する。
+type2,0,NpcComOnFailedCapture,捕獲対象の捕獲に失敗。<br>有効範囲は限られている。<br>対象を逃がすなよ。
+type2,0,NpcComOnAttackTarget,/face3 目標はあくまで捕獲だ。<br>捕獲対象への攻撃は<br>なるべく避けるべきだぞ。
+type2,0,NpcComOnDeadTarget,/face6 捕獲対象の生体反応、消失。<br>仕方がない、次の機会だ。
+type2,0,NpcComOnLastCapture,転送装置が負荷に耐えられるのは<br>あと１回が限度だな……<br>慎重に任務にあたれ。
+type2,1,NpcComOnBegin,"Change of orders.<br>Capture the $(0).<br>That's capture, not kill."
+type2,1,NpcComOnAfterBegin,"I've sent a Containment Field to $(0).<br>Your mission is to lure and capture the target.<br>I repeat, the target must be captured alive."
+type2,1,NpcComOnSuccess,"Target successfully teleported. Sorry for the<br>sudden change of orders, but you handled it well."
+type2,1,NpcComOnFailure,"/face6 Guess there's no point in trying again. Ah well, <br>back to your mission."
+type2,1,NpcComOnEnableCapture,The target is within range. Activate the<br>Containment Field.
+type2,1,NpcComOnCaptureSwitch,Well timed. Now just keep the target within range.
+type2,1,NpcComOnDisableCapture,You can't use the Containment Field just yet. Lure<br>the target into range first.
+type2,1,NpcComOnSuccessCapture,Target captured. Teleporting it back.
+type2,1,NpcComOnFailedCapture,"You failed to capture the target. Remember, the<br>Containment Field has limited range. Don't let the<br>target escape."
+type2,1,NpcComOnAttackTarget,"/face3 Your mission is to capture, nothing more. Refrain<br>from attacking the target if possible."
+type2,1,NpcComOnDeadTarget,/face6 Not picking up any vital signs from the target.<br>Guess that's that. We'll get 'em next time.
+type2,1,NpcComOnLastCapture,The Teleporter's only good for one more use. Focus<br>in and let's get this done.
+type3,0,NpcComOnBegin,しっ、指令変更ですー！<br>$(0)を<br>捕獲してくださいー！
+type3,0,NpcComOnAfterBegin,捕獲装置は$(0)に出しました！<br>なんとか誘導して、捕獲を<br>お願いしますー！
+type3,0,NpcComOnSuccess,/face2 対象の捕獲成功ですー！<br>急な指令変更でしたけど<br>お見事な動きでしたっ！
+type3,0,NpcComOnFailure,/face4 こ、これ以上は無理みたいですー……<br>通常の任務に戻っちゃってください。
+type3,0,NpcComOnEnableCapture,対象を捕獲有効範囲内に捕捉！<br>今です！<br>捕獲装置の起動を！
+type3,0,NpcComOnCaptureSwitch,/face2 タイミングはいいですよー。<br>あとは対象を有効範囲内で<br>がっちり抑えてください！
+type3,0,NpcComOnDisableCapture,/face4 今は捕獲装置が使えないんですー！<br>まずは対象を範囲内に<br>誘導しましょうー！
+type3,0,NpcComOnSuccessCapture,/face2 対象の捕獲、成功です－！<br>転送してしまいますからねー！
+type3,0,NpcComOnFailedCapture,/face4 あっ、ああっ、捕獲失敗です！<br>有効範囲は限られていますので<br>気をつけてくださいー！
+type3,0,NpcComOnAttackTarget,あのっ、あのあのっ！<br>目標はあくまで捕獲ですよー！<br>対象への攻撃は避けてくださいー！
+type3,0,NpcComOnDeadTarget,/face6 捕獲対象の生体反応、消失……<br>……うーん、仕方ありません。<br>また次の機会ですね。
+type3,0,NpcComOnLastCapture,転送装置がちょっとキツそう……<br>あと１回が限度ですー！<br>慎重にやってくださいねー！
+type3,1,NpcComOnBegin,N-new orders! Your mission is now to capture the <br>$(0)!
+type3,1,NpcComOnAfterBegin,Containment Field deployed to $(0)!<br>Lure the target into range and capture it!
+type3,1,NpcComOnSuccess,"/face2 Target successfully captured! Great work,<br>especially considering the change in orders!"
+type3,1,NpcComOnFailure,/face4 I think we have to give up on this one... Get back <br>to your regular duties.
+type3,1,NpcComOnEnableCapture,The target is within range!<br>Now! Activate the Containment Field!
+type3,1,NpcComOnCaptureSwitch,/face2 Great timing. Now lure the target within field <br>range!
+type3,1,NpcComOnDisableCapture,/face4 You can't use the Containment Field yet! First <br>lure the target into range!
+type3,1,NpcComOnSuccessCapture,/face2 Target captured! Teleporting now!
+type3,1,NpcComOnFailedCapture,"/face4 Dang, capture failed! Remember, the Containment<br>Field has limited range!"
+type3,1,NpcComOnAttackTarget,Whoa! Hold on! We're trying to capture the target!<br>Don't attack it!
+type3,1,NpcComOnDeadTarget,/face6 The target's vital signs have flatlined...<br>Nothing we can do now. Perhaps next time.
+type3,1,NpcComOnLastCapture,The Teleporter can't take much more. We can only<br>make one more attempt so make it a good one!
+type6,0,NpcComOnBegin,指令変更を通達。<br>$(0)の<br>捕獲が目的となります。
+type6,0,NpcComOnAfterBegin,捕獲装置を$(0)に転送。<br>対象を誘導の後、捕獲。<br>指令は以上です。
+type6,0,NpcComOnSuccess,対象の捕獲を確認。<br>指令変更への迅速な対処<br>感謝します。
+type6,0,NpcComOnFailure,捕獲任務は失敗と判断。<br>通常任務にお戻りください。
+type6,0,NpcComOnEnableCapture,捕獲有効範囲内に対象を確認。<br>捕獲装置を起動してください。
+type6,0,NpcComOnCaptureSwitch,タイミングは問題なし。<br>後は、対象を有効範囲内で<br>捉えるように。
+type6,0,NpcComOnDisableCapture,今、捕獲装置は使用不可能です。<br>まずは対象を捕獲範囲内に<br>誘導してください。
+type6,0,NpcComOnSuccessCapture,対象捕獲、確認。<br>転送シーケンスに移ります。
+type6,0,NpcComOnFailedCapture,捕獲失敗を確認。<br>捕獲装置の有効範囲を確認し<br>再度、捕獲を行ってください。
+type6,0,NpcComOnAttackTarget,再確認。目的は対象の捕獲です。<br>捕獲対象を攻撃しないように。
+type6,0,NpcComOnDeadTarget,捕獲対象、反応消失しました。<br>捕獲はまた、次の機会に。
+type6,0,NpcComOnLastCapture,転送装置負荷限界まで<br>あと1回となります。<br>慎重な試行を求めます。
+type6,1,NpcComOnBegin,There's been an official change in orders. Your <br>objective is now to capture the $(0).
+type6,1,NpcComOnAfterBegin,Sending a Containment Field to $(0).<br>Lure the target in for capture. That is all.
+type6,1,NpcComOnSuccess,Target captured. In spite of the change in orders<br>you handled yourself well.
+type6,1,NpcComOnFailure,Capture failed. As you were.
+type6,1,NpcComOnEnableCapture,Target is within range. Activate the Containment<br>Field.
+type6,1,NpcComOnCaptureSwitch,Your timing's on point. Now keep the target within<br>the field's range.
+type6,1,NpcComOnDisableCapture,The Containment Field can't be used yet. First<br>lure the target within range.
+type6,1,NpcComOnSuccessCapture,Target captured. Initiating teleport sequence.
+type6,1,NpcComOnFailedCapture,"Capture attempt failed. Make sure the target is in<br>range of the Containment Field, then try again."
+type6,1,NpcComOnAttackTarget,"Reminder, our objective is to capture the target.<br>Refrain from attacking."
+type6,1,NpcComOnDeadTarget,Capture target has perished. We'll have to try<br>again later.
+type6,1,NpcComOnLastCapture,The Teleporter can only be activated once more.<br>Make this your best attempt.
+type9,0,NpcComOnBegin,目標変更です！<br>$(0)を<br>捕獲してもらえますか！
+type9,0,NpcComOnAfterBegin,捕獲装置を$(0)へ用意しました。<br>対象を誘導して、捕獲してください！
+type9,0,NpcComOnSuccess,捕獲成功を確認しました！<br>急な目標変更にも即刻対応！<br>流石、といった感じですね！
+type9,0,NpcComOnFailure,うーん、捕獲任務はここまでですね。<br>何事も諦めが肝心ですし<br>通常任務に戻りましょう！
+type9,0,NpcComOnEnableCapture,対象、捕獲有効範囲内に捕捉！<br>装置を起動してください！
+type9,0,NpcComOnCaptureSwitch,ああっ、惜しい！<br>タイミングは完璧だったんですが<br>対象が逃げちゃったみたいですね！
+type9,0,NpcComOnDisableCapture,捕獲装置はまだ起動できません！<br>まずは捕獲対象を範囲内に<br>誘導しましょう！
+type9,0,NpcComOnSuccessCapture,捕獲成功、確認しました！<br>そのまま転送しちゃいます！
+type9,0,NpcComOnFailedCapture,捕獲失敗です。<br>範囲内から対象を逃がさないようにして<br>もう一度、挑戦してみましょう。
+type9,0,NpcComOnAttackTarget,おっと、現在の目標は捕獲ですよー！<br>捕獲対象への攻撃は、なるべーく<br>控えてもらえると嬉しいです！
+type9,0,NpcComOnDeadTarget,捕獲対象の反応、消失。<br>うーん、残念ですが仕方ありません。<br>次の機会を待ちましょう！
+type9,0,NpcComOnLastCapture,捕獲装置の使用回数、あと１回！<br>なので、次でずばっと<br>決めちゃいましょう！
+type9,1,NpcComOnBegin,Objective changed! Can we ask you to capture<br>the $(0)?
+type9,1,NpcComOnAfterBegin,We've set up a Containment Field at $(0).<br>Coax the target into range and capture it!
+type9,1,NpcComOnSuccess,Target successfully captured! And you handled the<br>sudden change in objective brilliantly!
+type9,1,NpcComOnFailure,"Hm, I think we have to give up on this capture.<br>It's important to know when to quit. Back to your<br>regular duties!"
+type9,1,NpcComOnEnableCapture,The target is in range! Now activate the<br>Containment Field!
+type9,1,NpcComOnCaptureSwitch,"No, so close! Your timing was perfect, the target<br>just got away!"
+type9,1,NpcComOnDisableCapture,You can't activate the Containment Field yet!<br>First lure the target into range!
+type9,1,NpcComOnSuccessCapture,Capture confirmed! Teleporting now!
+type9,1,NpcComOnFailedCapture,Capture failed... You need to keep the target<br>within range. Go ahead and give it another shot.
+type9,1,NpcComOnAttackTarget,"Hey, this is a capture mission! It'd be great if<br>you could suppress that urge to attack!"
+type9,1,NpcComOnDeadTarget,"Target was destroyed. Well, it is what it is...<br>We'll get it next time!"
+type9,1,NpcComOnLastCapture,The Containment Field only has one use left! You<br>really need to focus in and get it this time!

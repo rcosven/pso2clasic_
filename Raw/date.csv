@@ -1,0 +1,106 @@
+section,group,id,text
+Date,0,Date,$(2)年$(1)月$(0)日
+Date,0,Date_v,$(2)/$(1)/$(0)
+Date,0,January,1
+Date,0,February,2
+Date,0,March,3
+Date,0,April,4
+Date,0,May,5
+Date,0,June,6
+Date,0,July,7
+Date,0,August,8
+Date,0,September,9
+Date,0,October,10
+Date,0,November,11
+Date,0,December,12
+Date,0,Date_NoYear,$(1)/$(0)
+Date,0,Sunday,日曜日
+Date,0,Monday,月曜日
+Date,0,Tuesday,火曜日
+Date,0,Wednesday,水曜日
+Date,0,Thursday,木曜日
+Date,0,Friday,金曜日
+Date,0,Saturday,土曜日
+Date,0,Short_January,1
+Date,0,Short_February,2
+Date,0,Short_March,3
+Date,0,Short_April,4
+Date,0,Short_May,5
+Date,0,Short_June,6
+Date,0,Short_July,7
+Date,0,Short_August,8
+Date,0,Short_September,9
+Date,0,Short_October,10
+Date,0,Short_November,11
+Date,0,Short_December,12
+Date,1,Date,$(1).$(0).$(2)
+Date,1,Date_v,$(1)/$(0)/$(2)
+Date,1,January,1
+Date,1,February,2
+Date,1,March,3
+Date,1,April,4
+Date,1,May,5
+Date,1,June,6
+Date,1,July,7
+Date,1,August,8
+Date,1,September,9
+Date,1,October,10
+Date,1,November,11
+Date,1,December,12
+Date,1,Date_NoYear,$(1)/$(0)
+Date,1,Sunday,Sunday
+Date,1,Monday,Monday
+Date,1,Tuesday,Tuesday
+Date,1,Wednesday,Wednesday
+Date,1,Thursday,Thursday
+Date,1,Friday,Friday
+Date,1,Saturday,Saturday
+Date,1,Short_January,Jan
+Date,1,Short_February,Feb
+Date,1,Short_March,Mar
+Date,1,Short_April,Apr
+Date,1,Short_May,May
+Date,1,Short_June,Jun
+Date,1,Short_July,Jul
+Date,1,Short_August,Aug
+Date,1,Short_September,Sep
+Date,1,Short_October,Oct
+Date,1,Short_November,Nov
+Date,1,Short_December,Dec
+Time,0,TimeCountSec,$(0)秒
+Time,0,TimeCount,$(0):$(1)
+Time,0,TimeHour,$(0)時$(1)分
+Time,0,TimeHourJust,$(0)時
+Time,0,TimeDayOfHour,$(1)$(0)
+Time,0,Time,$(0)時$(1)分
+Time,0,TimeSec,$(0)時$(1)分$(2)秒
+Time,0,UtcYmdt_MonthDay,$(3)月$(0)日$(1)時$(2)分
+Time,0,UtcYmdt_YearMonthDay,$(4)年$(3)月$(0)日$(1)時$(2)分
+Time,0,DateTime,$(4)年$(3)月$(0)日$(1)時$(2)分
+Time,0,DateTime_v,$(4)/$(3)/$(0) $(1):$(2)
+Time,0,DateTimeSec,$(5)年$(3)月$(0)日$(1)時$(2)分$(4)秒
+Time,0,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
+Time,0,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
+Time,0,EmptyDateTime,--年--月--日--時--分
+Time,0,Period,$(0)時間$(1)分
+Time,0,PeriodMin,$(分間
+Time,0,LeaveHour,$(0)時間$(1)分
+LeaveMin -,1,TimeCountSec,$(0) sec.
+LeaveMin -,1,TimeCount,$(0):$(1)
+LeaveMin -,1,TimeHour,$(0):$(1)
+LeaveMin -,1,TimeHourJust,$(0):$(1)
+LeaveMin -,1,TimeDayOfHour,$(1) at $(0)
+LeaveMin -,1,Time,$(0):$(1)
+LeaveMin -,1,TimeSec,$(0):$(1):$(2)
+LeaveMin -,1,UtcYmdt_MonthDay,"$(1):$(2), $(3) $(0)"
+LeaveMin -,1,UtcYmdt_YearMonthDay,"$(1):$(2), $(3) $(0), $(4)"
+LeaveMin -,1,DateTime,$(3)-$(0)-$(4) $(1):$(2)
+LeaveMin -,1,DateTime_v,$(3)/$(0)/$(4) $(1):$(2)
+LeaveMin -,1,DateTimeSec,$(5)-$(3)-$(0). $(1):$(2):$(4)
+LeaveMin -,1,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
+LeaveMin -,1,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
+LeaveMin -,1,EmptyDateTime,"-- --, -- --:--"
+LeaveMin -,1,Period,$(0)h $(1)m
+LeaveMin -,1,PeriodMin,$(0) m
+LeaveMin -,1,LeaveHour,$(0)h $(1)m
+LeaveMin -,1,LeaveMin,$(0) m

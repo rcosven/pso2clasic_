@@ -1,0 +1,27 @@
+section,group,id,text
+Basic,0,Title,T:逢魔に誘う幻惑の森
+Basic,0,Explanation,異世界オメガ、クエントとヴェルンの<br>国境付近に突如、大きな森が出現しました。<br>森の出現に巻き込まれた人々を助けるため<br>ハリエットさんが森に向かったようです！<br>ダークファルスに似た反応もあり危険です！<br>ハリエットさんの救出に向かってください！<br>――――――――――――――――――――<br>クエスト中/HP回復の妨害有り<br>失敗条件/任務の失敗、制限時間の経過<br>　　　　　　　　　全員累計9回の戦闘不能
+Basic,1,Title,T: Bosque embrujado a medianoche
+Basic,1,Explanation,"A large forest has manifested near the border of<br>Cuento and Weyland in Alternate Dimension:<br>Omega. Hariette has set out for the Forest to render<br>aid to those affected. We have picked up readings<br>indicative of Dark Falz so extreme caution is advised.<br>We need you to move out and rescue Hariette!<br>HP recovery will be impeded during this quest.<br>You will fail this quest if you fail the mission<br>objectives, exceed the time limit or if members<br>of your team are incapacitated a total of nine times."
+QuestTarget,0,SimpleExplanation,ハリエットを救出せよ！
+QuestTarget,1,SimpleExplanation,¡Rescata a Hariette!
+PreTransportDirection,0,NpcComMsg1,目標はハリエットさんの救出です。<br>非常に強い敵性反応が確認されており<br>危険な任務となることが予想されます。
+PreTransportDirection,0,NpcComMsg2,現地は、視界が悪いだけではなく<br>多数の敵性存在も確認されており<br>進行妨害される可能性があります。
+PreTransportDirection,0,NpcComMsg3,こちらの被害状況によっては<br>強制撤退もありえます。<br>十分に注意して向かってください！
+PreTransportDirection,1,NpcComMsg1,"Your objective is to rescue Hariette. We have<br>picked up extremely strong hostile readings<br>in the area, so this mission is expected to be dangerous."
+PreTransportDirection,1,NpcComMsg2,"ties have been detected,<br>so your path forward may be obstructed."
+PreTransportDirection,1,NpcComMsg3,If we sustain too much damage it may<br>be necessary to make a forced retreat.<br>Make sure you're careful!
+AreaName,0,Area1S,森の廃城
+AreaName,0,Area1L,森の廃城
+AreaName,1,Area1S,Ruinas del castillo del bosque
+AreaName,1,Area1L,Ruinas del castillo del bosque
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+TrialBeginLineMessage,0,TargetExplanation,クエスト目標「ハリエットを救出せよ！」<br><br><c f0df60>全員で合計 <c ff2020>9回戦闘不能<c f0df60> になるとクエスト失敗<c>
+TrialBeginLineMessage,1,TargetExplanation,if members of your team are <c ff2020>incapacitated nine times<c f0df60>.<c>

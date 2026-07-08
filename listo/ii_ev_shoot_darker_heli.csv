@@ -1,0 +1,29 @@
+﻿section,group,id,text
+common,0,IncidentName,侵食戦闘機を破壊せよ
+common,0,TrialBeginMsg,ダーカーに侵食された戦闘機を破壊せよ！
+common,0,EnemyAppearMsg,$(0)の方向から敵が現れた！
+common,0,TrialEvolutionBeginMsg_ReLanding,修理が完了するまで、再び戦闘機を防衛せよ！
+common,0,TrialEvolutionBeginMsg_ShootDarkerHeli,ダーカーに侵食された戦闘機を破壊せよ！
+common,0,TrialAbstract,制限時間内に<br>ダーカーに侵食された戦闘機を破壊せよ
+common,1,IncidentName,Destruye el avión corrupto
+common,1,TrialBeginMsg,¡Destruye el avión de combate corrupto por Falspawn!
+common,1,EnemyAppearMsg,¡Los enemigos se acercan desde $(0)!
+common,1,TrialEvolutionBeginMsg_ReLanding,¡Defiende el avión de combate nuevamente hasta que sea reparado!
+common,1,TrialEvolutionBeginMsg_ShootDarkerHeli,¡Destruye el avión de combate corrupto por Falspawn!
+common,1,TrialAbstract,Destruye el avión de combate<br>corrompido por Falspawn antes de que acabe el tiempo.
+type2,0,NpcComOnBegin,/face3 アークスの戦闘機がダーカーの<br>侵食を受けた、だと……！<br>ちっ、面倒なことになったな。
+type2,0,NpcComOnBegin2,侵食が不完全な今のうちに<br>該当の機体を破壊しろ！
+type2,0,NpcComOnHp50,気を付けろ。<br>侵食が進行しているぞ。
+type2,0,NpcComOnHp10,侵食戦闘機の破壊まで<br>あと少しだ。
+type2,0,NpcComOnLanding,未使用
+type2,0,NpcComOnTimeNotice,……侵食レベルがかなり深刻だ。<br>破壊を急げ、奪われてしまうぞ！
+type2,0,NpcComOnSuccess,侵食戦闘機の破壊を確認。<br>よくやってくれた。
+type2,0,NpcComOnFailure,……戦闘機の反応、消失。<br>ダーカーめ、アレを奪って<br>何をする気だ……？
+type2,1,NpcComOnBegin,/face3 ¿Uno de nuestros aviones de combate ha sido corrompido<br>por Falspawn?<br>Maldita sea... Esto podría ponerse feo.
+type2,1,NpcComOnBegin2,¡Destruye el avión antes de que se corrompa por completo!
+type2,1,NpcComOnHp50,Ten cuidado ahí fuera.<br>La corrupción se está afianzando.
+type2,1,NpcComOnHp10,El avion corrupto esta casi destruido.
+type2,1,NpcComOnLanding,no usado
+type2,1,NpcComOnTimeNotice,Ha sido severamente corrompido. ¡Destruyelo rapidamente o nos lo quitaran!
+type2,1,NpcComOnSuccess,Los sensores indican que la aeronave corrupta<br>ha sido destruida. Lo has hecho bien.
+type2,1,NpcComOnFailure,El avión de combate ya no está... ¿Qué pretenden hacer esos<br>malditos Falspawn con él?

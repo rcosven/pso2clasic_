@@ -1,0 +1,47 @@
+section,group,id,text
+common,0,IncidentName,リリーパ族への伝言
+common,0,TrialBeginMsg,リリーパ族の伝言を【ロビーアクション】で伝えろ！
+common,0,TrialAbstract,リリーパ族の伝言を【ロビーアクション】で伝えろ！
+common,0,ToastOnEnableGestureRange,【ロビーアクション】を使って伝言を伝えろ！
+common,1,IncidentName,Lillipan Messaging
+common,1,TrialBeginMsg,Use [Emotes] to relay the Lillipan's message!
+common,1,TrialAbstract,Use [Emotes] to relay the Lillipan's message!
+common,1,ToastOnEnableGestureRange,Use [Emotes] to get the message across!
+type3,0,NpcComOnBegin,あれ？　リリーパ族が伝言を<br>お願いしたがっているみたいですよ？<br>何を伝えて欲しいんでしょう……？
+type3,0,NpcComOnSuccess,/face2 伝言、伝わったようです！<br>ふぅ、なんだかこれでリリーパ族とも<br>仲良くなれた気がしますね！
+type3,0,NpcComOnFailure,/face4 ああっ、帰っちゃった？<br>うまく伝わらなかったんでしょうか……<br>仕方がないです、任務に戻りましょう
+type3,0,NpcComOnDwarfGestureA,仲間への伝言、でしょうか？<br>あっ、この動きと同じジェスチャーを<br>してみせれば伝わるかもです！
+type3,0,NpcComOnDwarfGestureB,むむ？　このリリーパ族も<br>何か伝えたいことがあるみたいです<br>ジェスチャーに注目ですよー！
+type3,0,NpcComOnAppearDwarfA,リリーパ族のお仲間発見です！<br>でも、敵さんに怯えてて伝言なんて……<br>周囲の安全を確保してあげてください！
+type3,0,NpcComOnAppearDwarfB,リリーパ族のお仲間はっけーん！<br>今度は敵さんもいませんし、安全です！<br>さあ、伝言を伝えなくちゃですよー！
+type3,0,NpcComOnEnableGesture,さあ、伝言しちゃいましょう！<br>ロビーアクションで同じジェスチャーを<br>やってみせてあげるんですよー！
+type3,0,NpcComOnDisableGesture,怯えててこっちを見てくれません！<br>まずは周囲のエネミーを<br>倒してあげてくださいー！
+type3,0,NpcComOnGestureOK,/face2 上手く伝わったみたいですね！<br>リリーパ族も喜んでくれてます！
+type3,0,NpcComOnGestureNG,あれ……なんだかうまく<br>伝わっていないような……<br>別のジェスチャーをやってみましょう
+type3,0,NpcComOnHintKiss,/face2 なんだか誰かに愛情表現している<br>ように見えますね
+type3,0,NpcComOnHintYes,/face2 なんだか納得して頷いている<br>ように見えますね
+type3,0,NpcComOnHintThanks,/face2 なんだか誰かにお礼を言っている<br>ように見えますね
+type3,0,NpcComOnHintSorry,/face2 なんだか一生懸命謝っている<br>ように見えますね
+type3,0,NpcComOnHintClap,/face2 なんだかおめでとうと拍手している<br>ように見えますね
+type3,0,NpcComOnHintEncourage,/face2 なんだか元気か？　と励ましている<br>ように見えますね
+type3,0,NpcComOnHintYell,/face2 なんだか誰かを応援している<br>ように見えますね
+type3,0,NpcComOnHintHeat,/face2 なんだか気合いを入れている<br>ように見えますね
+type3,1,NpcComOnBegin,Huh? That Lillipan wants you to relay a<br>message. What could it be...?
+type3,1,NpcComOnSuccess,/face2 It worked! I think you just made a new<br>friend! Haha!
+type3,1,NpcComOnFailure,"/face4 Aww, it left... I guess you weren't able to get<br>through to it... Oh well, back to the task at<br>hand."
+type3,1,NpcComOnDwarfGestureA,"I think it wants to tell a friend something.<br>Hey,  maybe you can communicate by<br>copying that gesture!"
+type3,1,NpcComOnDwarfGestureB,Hm? It seems like this Lillipan wants to say <br>something back! Pay attention to its gestures!
+type3,1,NpcComOnAppearDwarfA,You've found its friend! But it seems fearful of<br>the enemies nearby... Better secure the area!
+type3,1,NpcComOnAppearDwarfB,You found the Lillipan's friend!<br>And no hostiles around this time!<br>See if you can communicate!
+type3,1,NpcComOnEnableGesture,"All right, let's see if this works! Try and use <br>emotes to match its gestures!"
+type3,1,NpcComOnDisableGesture,It's too terrified to look this way! You'll have<br>to take out any hostiles in the area first!
+type3,1,NpcComOnGestureOK,/face2 Nice! It got the message! And the Lillipan is<br>pleased as punch!
+type3,1,NpcComOnGestureNG,Oh no... I don't think it understood.<br>Try another gesture.
+type3,1,NpcComOnHintKiss,/face2 Looks like it's making lovey-dovey eyes at someone.
+type3,1,NpcComOnHintYes,/face2 Looks like it's nodding in approval.
+type3,1,NpcComOnHintThanks,/face2 Looks like it's saying thank you to someone.
+type3,1,NpcComOnHintSorry,/face2 Looks like it's apologizing profusely.
+type3,1,NpcComOnHintClap,/face2 Looks like it's applauding to congratule someone.
+type3,1,NpcComOnHintEncourage,/face2 Looks like it's asking how you're doing.
+type3,1,NpcComOnHintYell,/face2 Looks like it's cheering someone on.
+type3,1,NpcComOnHintHeat,/face2 Looks like it's getting really fired up.

@@ -1,0 +1,25 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,まもなく紅き邪竜との決戦です。<br>すでに覚醒済みで、接敵直後からの<br>猛攻が予想されます、注意して下さい！
+PreTransportDirection,0,NpcComMsg2,剣の巫女、アリサさんの援護があり<br>ラコニウムソードも力を貸してくれる。<br>……負けるわけには、いきませんよね！
+PreTransportDirection,1,NpcComMsg1,I'm sending you to the Crimson Menace.<br>It's already awake and likely to attack<br>you on sight. Proceed with caution!
+PreTransportDirection,1,NpcComMsg2,"With the Sword Maiden Alis's protection<br>and the power of the Laconium Sword,<br>your victory is all but assured!"
+Basic,0,Title,壊城に舞う紅き邪竜
+Basic,0,Explanation,異世界オメガ、クエント城跡において<br>封印されていた邪竜の復活を確認しました。<br><br>剣の巫女アリサさんと協力し<br>ラコニウムソードを使い<br>邪竜を撃退してください！<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,Crimson Fellwyrm Over the Castle
+Basic,1,Explanation,"We've confirmed that a malevolent Fellwyrm<br>sealed within the Cuento Castle Ruins of<br>Alternate Dimension: Omega has been revived.<br>Use the Laconium Sword to defeat the evil beast<br>with the help of the Sword Maiden Alis!<br>-------------------------------------------<br>This quest can only be completed $(0) time(s).<br>Maximum dealable damage is limited to 999,999<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit."
+QuestTarget,0,SimpleExplanation,ドラゴンを撃退せよ！
+QuestTarget,1,SimpleExplanation,Defeat the dragon!
+AreaName,0,Area0S,異世界オメガ　クエント城跡
+AreaName,0,Area0L,異世界オメガ　クエント城跡
+AreaName,1,Area0S,Alternate Dimension: Omega - Cuento Castle Ruins
+AreaName,1,Area0L,Alternate Dimension: Omega - Cuento Castle Ruins
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit

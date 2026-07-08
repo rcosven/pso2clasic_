@@ -1,0 +1,109 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)討伐
+common,0,TrialBeginMsg,$(0)を討伐せよ！
+common,0,TrialAbstract,$(0)を討伐せよ！
+common,0,GateBreak1,大唱壁門が破壊された
+common,0,GateBreak2,大唱壁門が破壊された
+common,0,MonoPrincessLevelUpdate1,【スクナヒメの加護】<br>移動速度アップ<br>ジャンプ力アップ<br>コスモ/ムーンアトマイザー効果範囲アップ
+common,0,MonoPrincessLevelUpdate2,【スクナヒメの加護】<br>HP最大値アップ
+common,0,MonoPrincessLevelUpdate3,【スクナヒメの加護】<br>PP回復量アップ
+common,1,IncidentName,$(0) Supresion
+common,1,TrialBeginMsg,¡Suprime el $(0)!
+common,1,TrialAbstract,¡Suprime el $(0)!
+common,1,GateBreak1,La Gran Puerta Armonica fue destruida.
+common,1,GateBreak2,La Gran Puerta Armonica fue destruida.
+common,1,MonoPrincessLevelUpdate1,[Sukunahime's Protection]<br>Movement Speed increased.<br>Jump height increased.<br>Cosmo/Moon Atomizer area of effect increased.
+common,1,MonoPrincessLevelUpdate2,[Proteccion de Sukunahime]<br>Ataque aumentado.
+common,1,MonoPrincessLevelUpdate3,[Protección de Sukunahime]<br>PP La recuperación aumentó.
+type1,0,NpcComOnBegin,緊急通達。<br>強力な敵性反応を確認<br>早急な撃破をお願いします。
+type1,0,NpcComOnSuccess,敵性反応、消失しました<br>各員の努力に感謝します。
+type1,0,NpcComOnFailure,/face4 交戦中の隊員の反応が消失しました。<br>ただちにキャンプシップへの<br>転送を図ります。
+type1,0,HP_Under_50,$(0)残存体力、低下！
+type1,0,HP_Under_10,$(0)残存体力、あとわずかです！
+type1,0,NpcComLastEnemy,残り一体です！
+type1,0,GateBreak1,第一問
+type1,0,GateBreak2,第二問
+type1,0,FinalGateArrival,最終問題
+type1,0,FinalGateWarning1,最終問題残り50%を切りました
+type1,0,FinalGateWarning2,最終問題残り10%を切りました
+type1,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga.<br>Muévete para participar de inmediato.
+type1,1,NpcComOnSuccess,Presencia enemiga eliminada.<br>Buen trabajo a todos.
+type1,1,NpcComOnFailure,/face4 Las lecturas muestran todas las operaciones inactivas. Teletransportarte a<br>de regreso a la nave Gateway.
+type1,1,HP_Under_50,¡El HP de $(0) se está agotando!
+type1,1,HP_Under_10,La salud de $(0) es extremadamente baja.
+type1,1,NpcComLastEnemy,¡Solo queda uno!
+type1,1,GateBreak1,Puerta 1
+type1,1,GateBreak2,Puerta 2
+type1,1,FinalGateArrival,Puerta final
+type1,1,FinalGateWarning1,Puerta final reducida al 50%
+type1,1,FinalGateWarning2,Puerta final reducida al 10%
+type2,0,NpcComOnBegin,緊急通達だ。<br>強力な敵性反応が確認された。<br>早急に撃破しろ。
+type2,0,NpcComOnSuccess,敵性反応の消失を確認。<br>よくやったな。
+type2,0,NpcComOnFailure,ちっ、こちらがやられたか……<br>キャンプシップへの転送を行う。
+type2,0,HP_Under_50,$(0)残存体力、低下！
+type2,0,HP_Under_10,$(0)残存体力、あとわずかだ！
+type2,0,NpcComLastEnemy,残り一体だ！　気を抜くな！
+type2,0,GateBreak1,第一問
+type2,0,GateBreak2,第二問
+type2,0,FinalGateArrival,最終問題
+type2,0,FinalGateWarning1,最終問題残り50%を切りました
+type2,0,FinalGateWarning2,最終問題残り10%を切りました
+type2,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga.<br>Muévete para participar de inmediato.
+type2,1,NpcComOnSuccess,Presencia enemiga eliminada.<br>Buen camino.
+type2,1,NpcComOnFailure,Maldita sea... Hemos perdido este. Teletransportarte a<br>de regreso a la nave Gateway.
+type2,1,HP_Under_50,¡El HP de $(0) se está agotando!
+type2,1,HP_Under_10,¡El HP de $(0) casi se ha acabado!
+type2,1,NpcComLastEnemy,¡Falta uno mas! ¡Mantengase concentrado!
+type2,1,GateBreak1,Puerta 1
+type2,1,GateBreak2,Puerta 2
+type2,1,FinalGateArrival,Puerta final
+type2,1,FinalGateWarning1,Puerta final reducida al 50%
+type2,1,FinalGateWarning2,Puerta final reducida al 10%
+type3,0,NpcComOnBegin,きっ、緊急通達ですー！<br>強力な敵さんの反応を確認！<br>急いで撃破しちゃってくださーい！
+type3,0,NpcComOnSuccess,/face2 敵さんの反応消失ーっと！<br>みなさん、お疲れ様でしたー！
+type3,0,NpcComOnFailure,/face6 あああー……交戦中のアークス<br>やられちゃいましたぁ……<br>キャンプシップへ転送しますー……
+type3,0,HP_Under_50,$(0)残存体力、低下ですよー！
+type3,0,HP_Under_10,$(0)残存体力、あとわずかですよー！
+type3,0,NpcComLastEnemy,/face2 あと一体！　あと一体！
+type3,0,GateBreak1,第一問
+type3,0,GateBreak2,第二問
+type3,0,FinalGateArrival,最終問題
+type3,0,FinalGateWarning1,最終問題残り50%を切りました
+type3,0,FinalGateWarning2,最終問題残り10%を切りました
+type3,1,NpcComOnBegin,¡Emergencia! ¡Poderosa presencia enemiga<br>detectada! ¡Elimínalos de una vez!
+type3,1,NpcComOnSuccess,/face2 ¡Presencia hostil eliminada! <br> ¡Excelente trabajo a todos!
+type3,1,NpcComOnFailure,/cara6 ¡No! ¡ARKS cierra sus operaciones! Teletransportándonos de regreso a<br>la nave Gateway ahora...
+type3,1,HP_Under_50,¡$(0) ha sufrido daйos importantes!
+type3,1,HP_Under_10,¡$(0) esta casi terminado!
+type3,1,NpcComLastEnemy,/face2 ¡Uno mas! ¡Solo falta uno mas!
+type3,1,GateBreak1,Puerta 1
+type3,1,GateBreak2,Puerta 2
+type3,1,FinalGateArrival,Puerta final
+type3,1,FinalGateWarning1,Puerta final reducida al 50%
+type3,1,FinalGateWarning2,Puerta final reducida al 10%
+type6,0,NpcComOnBegin,緊急通達。<br>強力な敵性存在の反応を感知。<br>迅速な対応を望みます。
+type6,0,NpcComOnSuccess,敵性反応、消失。<br>任務完了を確認しました。
+type6,0,NpcComOnFailure,/face4 最終大唱壁門、破壊。<br>継続戦闘、不可。
+type6,0,HP_Under_50,$(0)残存体力、低下。
+type6,0,HP_Under_10,$(0)残存体力、あとわずかです。
+type6,0,NpcComLastEnemy,残りの敵性存在は一体です。
+type6,0,GateBreak1,『禍津』が第一の門を破壊し、侵攻中。<br>各員追撃し、侵攻の阻止を。
+type6,0,GateBreak2,『禍津』が第二の門を破壊し<br>最終大唱壁門へ侵攻中。<br>各員、急ぎ追撃してください。
+type6,0,FinalGateArrival,『禍津』が最終大唱壁門へ到達。<br>アークス各員は『禍津』を追撃し<br>侵攻の阻止に全力を。
+type6,0,FinalGateWarning1,最終大唱壁門の損傷、拡大中。<br>各員、『禍津』の侵攻を食い止めるため<br>全力で状況にあたってください。
+type6,1,NpcComOnBegin,Emergencia. Detectada fuerte presencia enemiga.<br>Prepárese para participar.
+type6,1,NpcComOnSuccess,Presencia hostil eliminada.<br>Misión cumplida.
+type6,1,NpcComOnFailure,/face4 La Gran Puerta Armonica Final destruida... No podemos<br>continuar.
+type6,1,HP_Under_50,El HP de $(0) se está agotando.
+type6,1,HP_Under_10,El HP de $(0) es extremadamente bajo.
+type6,1,NpcComLastEnemy,Solo queda uno.
+type6,1,GateBreak1,"Magatsu ha destruido la primera puerta. Todas las operaciones,<br>se mueven para interceptar y detener su avance."
+type6,1,GateBreak2,"Magatsu ha destruido la segunda puerta. Ahora<br>se dirige hacia la Gran Puerta Armónica final.<br>¡Todas las operaciones, deténganlo de inmediato!"
+type6,1,FinalGateArrival,"Magatsu ha alcanzado la última Gran Puerta Armónica <br>. Operaciones ARKS, dirija todos los esfuerzos a<br>interceptar y detener su avance."
+type6,1,FinalGateWarning1,"La Gran Puerta Armónica final ha sufrido<br>daños significativos. Todas las operaciones, hagan todo lo que puedan<br>para detener el avance de Magatsu."
+type7,0,MonoPrincessLevelUpdate1,/atime2 /voice11_sound_voice_magat_qu002 これより、わらわの加護を授ける。<br>普段よりも身軽に動けるように<br>なるはずじゃ！
+type7,0,MonoPrincessLevelUpdate2,/atime2 /voice11_sound_voice_magat_qu003 『禍津』の力が弱まっておるな。<br>わらわの力が届きやすくなったわ。<br>体力底上げ、恵身の加護、授けるぞ！
+type7,0,MonoPrincessLevelUpdate3,/atime1.5 /voice11_sound_voice_magat_qu004 ここが勝負の決め所よ！<br>わらわの加護と、そなたらの力<br>今こそ一つに合わせる時！
+type7,1,MonoPrincessLevelUpdate1,/atime2 /voice11_sound_voice_magat_qu002 Te concedere mi proteccion. ¡Esto deberia permitirte tener los pies mas ligeros!
+type7,1,MonoPrincessLevelUpdate2,/face2 Los sensores indican que se ha retirado el Gehl Bulf <br>. Gran trabajo.
+type7,1,MonoPrincessLevelUpdate3,¡Tendré que<br>fusionar mi protección con tus<br>habilidades para ganar esto!

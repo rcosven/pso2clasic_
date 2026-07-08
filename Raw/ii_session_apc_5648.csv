@@ -1,0 +1,21 @@
+section,group,id,text
+5424,0,Begin,/ci1 1 コオリ！　戦闘に集中して！<br>……って、ちょうどいい所に！<br>ちょっと手伝って！
+5424,0,Success,/ci1 2 待ちなさい、まだ任務中よ！<br>あたしは本人じゃないって言ってるのに<br>あっさり受け入れすぎでしょ……
+5424,0,Dead,くっ……ごめん！<br>後はまかせた……！
+5424,0,BuddyDead,終わってくれて良かったわ……<br>まあ、カタキは取ってあげるわよ！
+5424,1,Begin,"/ci1 1 Stay focused on the fight, Kohri!<br>...Oh, perfect timing!<br>Would you mind helping us out?"
+5424,1,Success,"/ci1 2 Hold on, we're still mid-mission!<br>Surely you're accepting this all too easily,<br>considering I'm not even the real deal..."
+5424,1,Dead,Urk... I'm sorry!<br>I'll leave the rest to you!
+5424,1,BuddyDead,"I'm glad that's over...<br>Don't worry, I'll avenge you!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

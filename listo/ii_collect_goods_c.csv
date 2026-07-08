@@ -1,0 +1,43 @@
+﻿section,group,id,text
+common,0,IncidentName,稀少鉱物を回収せよ！
+common,0,TrialBeginMsg,稀少鉱物を回収せよ！
+common,0,TrialAbstract,点在する稀少鉱物を回収せよ！
+common,0,ToastPickup,$(0)個目の$(1)を拾いました。
+common,0,ToastCollect,$(0)が$(1)個回収しました。
+common,0,ToastRewards,$(0)が$(1)個回収しました。$(2)EXP $(3)メセタ獲得
+common,1,IncidentName,Minerales preciosos detectados en||TAG_0||||TAG_1||.
+common,1,TrialBeginMsg,Minerales preciosos detectados en||TAG_0||||TAG_1||.
+common,1,TrialAbstract,¡Recoge los minerales preciosos esparcidos por ahí!
+common,1,ToastPickup,Recaudado $(1) x $(0). Gano ||TAG_2|| EXP y ||TAG_3|| meseta.
+common,1,ToastCollect,Los fosiles de insectos que estamos investigando se encontraron en esta zona. Llevalos al modulo de coleccion
+common,1,ToastRewards,"No hay mucho tiempo, asi que traelos al modulo de coleccion lo mas rapido posible."
+type2,0,NpcComOnBegin,通達だ。その近辺で稀少鉱物の反応が<br>確認された。アークス各員は<br>回収任務へと移行せよ。
+type2,0,NpcComOnBeginAtRareCase,緊急通達。稀少鉱物の反応が顕著だ。<br>作戦許諾時間は限られている。<br>各員、急ぎ回収任務を遂行しろ。
+type2,0,NpcComOnSuccess,よし、対象物の回収を確認。<br>よくやったな。
+type2,0,NpcComOnFailure,ち、必要十分な数は集まらなかったか。<br>仕方がない。通常任務へと戻れ。
+type2,0,GoodsPosition,稀少鉱物の反応は<br>$(0)からだ。
+type2,0,RepopGoods,新しい回収対象物が確認された。<br>各員回収を進めてくれ。
+type2,0,OnAccessPodByEmptyHand,まずは稀少鉱物を回収しろ。<br>ポッドを使うのはその後だ。
+type2,0,Collect1st,よし、稀少鉱物の運搬を確認。<br>引き続き回収を進めろ。
+type2,0,CollectHalf,いいぞ、半数程度は回収できた。<br>引き続き任務を遂行しろ。
+type2,0,CollectMostly,稀少鉱物の回収確認。<br>残数もあとわずかだ。いいぞ。
+type2,0,Pickup1st,そうだ、それが稀少鉱物だ。<br>発見しにくい分、稀少なわけだな。
+type2,0,PickupHalf,よし、そいつで大体半数だ。<br>運搬も忘れるなよ。
+type2,0,PickupEnough,今の回収で、必要十分数は満たした。<br>早急にポッドへと運搬しろ。
+type2,0,TimeupWarning,作戦許諾時間が少なくなってきた。<br>回収と運搬を急げ。
+type2,0,TimeupEmergency,残り時間はあとわずかだ。<br>各員、回収を
+type2,1,NpcComOnBegin,"Escuche Se han detectado minerales preciosos<br>cerca. Operaciones de ARKS, cambia tu enfoque<br>para recolectarlos."
+type2,1,NpcComOnBeginAtRareCase,"área,<br>pero no tenemos mucho tiempo. Todas las operaciones,<br>date prisa y recógelas."
+type2,1,NpcComOnSuccess,"Allí, los objetos objetivo se recuperaron. Buen trabajo."
+type2,1,NpcComOnFailure,"Maldita sea, no pudimos reunir lo suficiente.<br>sucede. Reanudar las tareas habituales."
+type2,1,GoodsPosition,Minerales preciosos detectados en<br>$(0).
+type2,1,RepopGoods,"¡Nuevos objetos objetivo confirmados! Todas las operaciones,<br>se mueve para recuperar."
+type2,1,OnAccessPodByEmptyHand,Primero recolecta los minerales preciosos y luego tráelos<br>al Pod por nosotros.
+type2,1,Collect1st,"Bien, recibo confirmado. Ahora ve a buscar mas <br> minerales preciosos."
+type2,1,CollectHalf,Luciendo bien. Eso es aproximadamente la mitad de<br>de lo que necesitamos. De vuelta a eso.
+type2,1,CollectMostly,"Minerales preciosos recibidos. Ya casi llegamos, <br> solo un poquito mas."
+type2,1,Pickup1st,"Ahí lo tienes, ese es un mineral precioso. <br>Son preciosos por lo difíciles que son<br>encontrarlos."
+type2,1,PickupHalf,"Genial, aproximadamente a mitad de camino. No olvides que<br>los llevará al Pod."
+type2,1,PickupEnough,Tienes suficientes minerales ahora. <br> Llevalos al Pod rapidamente.
+type2,1,TimeupWarning,Se te está acabando el tiempo. Devuelva los<br>minerales al Pod inmediatamente.
+type2,1,TimeupEmergency,"El tiempo casi se acaba. ¡Todas las operaciones, muévanse!"

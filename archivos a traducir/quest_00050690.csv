@@ -1,0 +1,37 @@
+section,group,id,text
+Basic,0,Title,創世を謳う幻創の造神
+Basic,0,Explanation,惑星・地球の太平洋上において<br>再び、超巨大幻創種の反応を確認した。<br>尋常ならざる巨大反応が観測されており<br>極めて危険な任務となるため、本任務は<br>熟練のアークスのみ出撃を許可する。<br>――――――――――――――――――――<br>プレイ可能回数$(0)回、ランキングあり<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過、<br>　　　　　　　　　全員累計5回の戦闘不能
+Basic,1,Title,"Deus Esca, cantante del Genesis"
+Basic,1,Explanation,"limited to 999,999.<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit."
+QuestTarget,0,SimpleExplanation,デウス・エスカを撃退せよ！
+QuestTarget,1,SimpleExplanation,Repele a Deus Esca!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+PreTransportDirection,0,NpcComMsg1,これより、太平洋上に再び出現した<br>幻創造神の撃退作戦を<br>開始します。
+PreTransportDirection,0,NpcComMsg2,今までにない膨大な力が観測されており<br>非常に危険な任務となることが<br>予想されます。
+PreTransportDirection,0,NpcComMsg3,でも、皆さんの力を合わせれば<br>きっと！　必ず、勝てます！<br>どうかお気をつけて！
+PreTransportDirection,1,NpcComMsg1,"We're preparing a counter-offensive<br>against the World Tree and Deus Esca,<br>which have reappeared."
+PreTransportDirection,1,NpcComMsg2,We're picking up stronger energy readings<br>than ever before. This will likely be<br>an extremely dangerous mission.
+PreTransportDirection,1,NpcComMsg3,"But with all of you working together,<br>we know you can do it! Just be careful!"
+AreaName,0,Area0S,世界樹
+AreaName,0,Area0L,惑星・地球　世界樹
+AreaName,0,Area1S,世界樹の頂
+AreaName,0,Area1L,惑星・地球　世界樹の頂
+AreaName,1,Area0S,El arbol del mundo
+AreaName,1,Area0L,Tierra - El arbol del mundo
+AreaName,1,Area1S,La cima del arbol del mundo
+AreaName,1,Area1L,Tierra - La cima del arbol del mundo
+QuestSuccessAreaName,0,Area1S,イースター島
+QuestSuccessAreaName,0,Area1L,惑星・地球　イースター島
+QuestSuccessAreaName,1,Area1S,Isla de Pascua
+QuestSuccessAreaName,1,Area1L,Tierra - Isla de Pascua
+PlanetName,0,QuestInfoPlanetName,惑星・地球
+PlanetName,1,QuestInfoPlanetName,Tierra
+TrialBeginLineMessage,0,TargetExplanation,クエスト目標「デウスエスカ・グラーシアを撃退せよ！」<br><br><c f0df60>全員で合計 <c ff2020>5回戦闘不能<c f0df60> になるとクエスト失敗<c>
+TrialBeginLineMessage,1,TargetExplanation,Defeat the Quest Target: Deus Eska Gracia!<br><br><c f0df60>You will fail this mission if members of your party are <c ff2020>incapacitated five times<c f0df60> in total.<c>

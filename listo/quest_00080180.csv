@@ -1,0 +1,21 @@
+section,group,id,text
+Basic,0,Title,混沌導く闇の化身
+Basic,0,Explanation,いる。<br><br>アークス各員は至急現地へと向かい<br>原因解明の調査と、状況の確認を行え。<br>―――――――――――――――――――<br>クエストポイント【2000】達成でクリア
+Basic,1,Title,"Encarnación de Gloom, Guía del Caos"
+Basic,1,Explanation,"Hemos confirmado avistamientos de animales no pertenecientes a Oceanid.<br>enemigos en la instalación flotante en Wopal.<br>Los falspawn también están proliferando en la zona y<br>son cada vez más activos. También tenemos<br>detectó una fuerte firma indicativa de<br>Falz oscuro. El personal de ARKS debe proceder al<br>señalar la ubicación a toda prisa, determinar la causa,<br>y inspeccionar la zona.<br>---------------------------------------------------<br>Complétalo obteniendo 2000 puntos de misión."
+QuestTarget,0,SimpleExplanation,クエストポイントをためろ！
+QuestTarget,1,SimpleExplanation,¡Recoge puntos de misión!
+PreTransportDirection,0,NpcComMsg1,現在、このエリアには存在しないはずの<br>エネミーが多く目撃されています。
+PreTransportDirection,0,NpcComMsg2,合わせて、ダーカーの動きも活発化。<br>ダークファルスと思われる強力な反応も<br>確認されています。
+PreTransportDirection,0,NpcComMsg3,現地では激戦が予想されますが<br>原因解明のため、調査をお願いします。<br>どうか、お気をつけて。
+PreTransportDirection,1,NpcComMsg1,Enemigos que no deberían existir en esta zona.<br>Se informa que han sido vistos.
+PreTransportDirection,1,NpcComMsg2,"Es más, los movimientos Falspawn se están volviendo<br>más agresivo y hemos identificado una fuerte<br>señal que puede corresponder a Dark Falz."
+PreTransportDirection,1,NpcComMsg3,"Esperamos que la batalla sobre el terreno<br>Sea intenso, pero haga lo mejor que pueda para<br>investigar la causa del disturbio.<br>Ten cuidado."
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

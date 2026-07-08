@@ -1,0 +1,91 @@
+section,group,id,text
+Basic,0,Title,採掘基地防衛戦：終焉
+Basic,0,Explanation,アークス各員に緊急連絡。<br>惑星リリーパの採掘基地の地下より<br>【若人】と思われる強大な反応を確認した。<br>新型フォトン粒子砲を搭載した地中探査艇で<br>【若人】の下へ向かい、これを討伐せよ。<br>作戦中にダーカーの襲来が予想されるため<br>探査艇の拠点が破壊されないよう注意せよ。<br>――――――――――――――――――――<br>全6ウェーブ<br>失敗条件/全拠点の陥落
+Basic,1,Title,Base Minera Def. Op.: Final
+Basic,1,Explanation,"This is a notice to all ARKS members. We<br>detected a signal thought to correspond<br>to Apprentice the Vernal coming from<br>the Mining Base on Lillipa. Get underneath<br>using an underground exploration craft<br>Particle Cannon and suppress the beast. We<br>anticipate Falspawn will attack during this<br>operation, ensure they do not destroy the base site.<br>--------------------------------------------------<br>Total of 6 waves. You will fail if all base sites fall."
+QuestTarget,0,SimpleExplanation,採掘基地を防衛せよ！
+QuestTarget,1,SimpleExplanation,¡Defiende la base minera!
+Defense,0,Wave1_Talk,強力なダーカーの出現を確認！<br>Ａ．Ｉ．Ｓや銃座を惜しみなく使って<br>どんどん撃破しちゃいましょう！
+Defense,0,Wave2_Talk,たっ、多数のダーカーの出現を確認！<br>拠点に大ダメージを与えてきます！<br>破壊される前に倒しちゃってください！
+Defense,0,Wave3_Talk,侵食されたＡ．Ｉ．Ｓの出現を確認！<br>耐性があるので、Ａ．Ｉ．Ｓ同士での<br>戦闘は避けてくださーい！
+Defense,0,Wave4_Talk,侵食Ａ．Ｉ．Ｓの出現と<br>ダーカーの砲台発生を確認！<br>ビームに気をつけてくださーい！
+Defense,0,Wave5_Talk,【若人】まで後もう少し！<br>ダーカーがたくさんですが……<br>くじけずに頑張りましょう！
+Defense,0,Wave6_Talk,【若人】の出現を確認しましたっ！<br>新型フォトン粒子砲が発射できるまで<br>【若人】を弱らせてください！
+Defense,0,Wave1_Talk_Cool,【若人】討伐作戦開始です！<br>ダーカーの襲撃が予想されますよ！<br>正結晶を集めて備えましょう！
+Defense,0,Wave2_Talk_Cool,拠点は一つでも残っていれば<br>【若人】を倒すことができます！<br>全部破壊されないように注意ですよー！
+Defense,0,Wave3_Talk_Cool,なんとか乗り切れましたね……って<br>大変、大変です！　出撃準備中の<br>Ａ．Ｉ．Ｓが、侵食されていますー！
+Defense,0,Wave4_Talk_Cool,侵食されたＡ．Ｉ．Ｓの<br>フォトンブラスターは破壊できますよ！<br>撃たれても破壊すれば止められます！
+Defense,0,Wave5_Talk_Cool,最深部に近づいてきましたよー！<br>【若人】の襲撃に備えて正結晶の回収と<br>拠点の耐久値を回復しましょう！
+Defense,0,Wave6_Talk_Cool,わわっ！　最深部に侵食液を確認！<br>探査艇の高い場所へ避難して<br>急停止の衝撃に備えてください！
+Defense,0,NpcCom00,NPC通信：クールタイム開始Type9
+Defense,0,NpcCom01,……うう、拠点、全壊しちゃいました。<br>仕方ありません、帰還してください。
+Defense,0,NpcCom02,お疲れ様でした！ 素晴らしい<br>活躍だったと思います！<br>それでは、帰還してください。
+Defense,0,NpcCom03,お疲れ様でした。すこーし損害が<br>出てしまいましたが、許容範囲です。<br>それでは、帰還して下さい。
+Defense,0,NpcCom04,お疲れ様でした。かなり被害が<br>出てしまいましたが、仕方ありません。<br>帰還して下さい。
+Defense,0,NpcCom05,お疲れ様でした。<br>次回は防衛に貢献できるように<br>頑張りましょう！
+Defense,0,NpcCom06,わわっ、わわわっ！<br>きょ、強力な敵性反応を確認ですー！<br>みなさん、警戒、警戒ですよ－！
+Defense,0,NpcCom07,$(0)拠点が襲われています！<br>はやく救援に向かってくださいー！
+Defense,0,NpcCom08,ああっ！<br>$(0)拠点が陥落寸前です！<br>急いで救援に向かってください！
+Defense,0,NpcCom09,わわっ、何この反応っ！<br>だ、ダーカーが強化されちゃってる！<br>注意注意、要注意ですー！
+Defense,0,NpcCom10,敵さんの反応が減ってきましたよ！<br>もう少し、もう少しですよー！
+Defense,0,NpcCom11,敵性反応あと僅か！　もう一息です！<br>がんばってくださいー！
+Defense,0,NpcCom12,ああっ、危ない！　逃げて逃げて！<br>生き残ったゴルドラーダが自爆します！
+Defense,0,NpcCom12_Last,やったやった、やりました！<br>ダーカーが諦めて撤退していきます！
+Defense,0,NpcCom13,拠点、破壊されちゃいました！<br>残り１つ、これだけはなんとしても<br>守りきってください！　頑張って！
+Defense,0,NpcCom14,はわわっ！？<br>拠点、破壊されちゃいました！<br>残り２つをなんとか守って下さいー！
+Defense,0,NpcCom15,NPC通信：拠点破壊時に残り拠点が３つType9
+Defense,0,NpcCom16,NPC通信：拠点破壊時に残り拠点が4つType9
+Defense,0,barricade0,NPC通信：第一防衛ラインバリケード破壊時Type9
+Defense,0,barricade1,NPC通信：第二防衛ラインバリケード破壊時Type9
+Defense,0,barricade2,NPC通信：最終防衛ラインバリケード破壊時Type9
+Defense,1,Wave1_Talk,Confirmed the appearance of powerful<br>Falspawn! Don't be afraid to use an<br>AIS or a turret to mow them down!
+Defense,1,Wave2_Talk,Confirmed the appearance of a<br>Falspawn horde! The bases are taking<br>heavy damage! Take em out now!
+Defense,1,Wave3_Talk,"We've identified a corrupted AIS!<br>These guys are tough, so engaging<br>with another AIS is not advised!"
+Defense,1,Wave4_Talk,Corrupted AIS sighted<br>and Falspawn cannon discharge confirmed!<br>Watch out for the beam!
+Defense,1,Wave5_Talk,"Apprentice the Vernal is close!<br>There sure are a lot of Falspawn, but let's<br>press on ahead!"
+Defense,1,Wave6_Talk,Apprentice the Vernal has finally shown himself!<br>Weaken him until the newly commissioned<br>Photon Particle Cannon is ready to fire!
+Defense,1,Wave1_Talk_Cool,"attacks are<br>anticipated, so collect Positive Crystals<br>while you can!"
+Defense,1,Wave2_Talk_Cool,We can defeat Apprentice the Vernal as<br>long as we have even one site left! Make<br>sure that they aren't all destroyed!
+Defense,1,Wave3_Talk_Cool,"Hey, you did it...Oh? Oh no! An AIS getting<br>ready to attack is being corrupted!"
+Defense,1,Wave4_Talk_Cool,You can destroy the corrupted AIS's photon<br>blaster! See if you can prevent further attacks<br>by destroying it!
+Defense,1,Wave5_Talk_Cool,Almost at the final area! Collect Positive<br>Crystals and reinforce the sites to steel<br>against Apprentice the Vernal's attacks!
+Defense,1,Wave6_Talk_Cool,"Whoa, we've confirmed erosive fluids<br>in the final area! Evacuate to the highest<br>area in the exploration craft, and brace<br>for sudden stop impact!"
+Defense,1,NpcCom00,NPC Communication:<br>Start of Cooldown Time Type9
+Defense,1,NpcCom01,"Aww, all sites have been destroyed.<br>Well, that's how it goes sometimes.<br>Prepare to return."
+Defense,1,NpcCom02,"Operation complete!<br>Wow, you did really great!<br>Now come on back!"
+Defense,1,NpcCom03,"Operation complete. We took a few<br>knocks, but nothing we can't handle.<br>Now it's time for you to return."
+Defense,1,NpcCom04,"Operation complete. We took a real<br>beating, but that can't be helped.<br>Please return."
+Defense,1,NpcCom05,Operation complete. Next time try<br>contributing more to defense!
+Defense,1,NpcCom06,"Whoa whoa whoa whoa!<br>I've confirmed some very strong enemy<br>readings! Be careful, everyone!"
+Defense,1,NpcCom07,Site $(0) is under attack!<br>Hurry to their rescue!
+Defense,1,NpcCom08,Oh! Site $(0) is about to fall!<br>This is not good at all! Hurry up and<br>help them out!
+Defense,1,NpcCom09,"Whoa, what's going on with this reading!<br>Th...the Falspawn are getting stronger!<br>Be very, very careful!"
+Defense,1,NpcCom10,The enemy readings are decreasing!<br>Just a little bit more!
+Defense,1,NpcCom11,Hay enemigos cercanos. Mantengan la calma y sigan adelante!
+Defense,1,NpcCom12,"Cuidado, tenemos un problema. ¡Salgan de ahi! Los restantes Goldrahda se van a autodestruir."
+Defense,1,NpcCom12_Last,¡Lo hicimos! Los falspawn estan dandose por vencidos y retirandose.
+Defense,1,NpcCom13,"Una base ha sido destruida. Solo queda una, asi que deben protegerla a toda costa!"
+Defense,1,NpcCom14,"Oh no, ¡una base ha sido destruida! Solo quedan dos. ¡No podemos fallar ahora!"
+Defense,1,NpcCom15,"Teletransportacion en curso. Por favor, impidan la resurreccion del aprendiz."
+Defense,1,NpcCom16,Las AIS estan disponibles para esta mision. Recuerden su capacidad limitada y tengan cuidado.
+Defense,1,barricade0,Entrenamiento de defensa de bases mineras: realidad virtual
+Defense,1,barricade1,"Esta mision consiste en una simulacion de defensa de bases mineras en un entorno de realidad virtual. En ella se deben enfrentar no solo falspawn, sino tambien otras criaturas y se esta prohibido el uso de AIS."
+Defense,1,barricade2,Enemigo detectado! Protejan las bases mientras consulten la mapa para planificar su estrategia.
+PreTransportDirection,0,NpcComMsg1_Meritta,まもなく転送開始ですよー！<br>地中探査艇でダークファルス【若人】の<br>もとへ向かってくださいっ！
+PreTransportDirection,0,NpcComMsg2_Meritta,あとあとっ、新型フォトン粒子砲は<br>エネルギータンクが要です！<br>破壊されないように、守ってください！
+PreTransportDirection,0,NpcComMsg1,まもなく転送を行います！<br>どうか、【若人】の復活を<br>阻止してください！
+PreTransportDirection,0,NpcComMsg2,A.I.Sも使用可能です！<br>使用回数には注意してくださいねー！<br>それでは、ご武運をー！
+PreTransportDirection,1,NpcComMsg1_Meritta,La defensa del socket ha sido comprometida por Solza Brahda. ¡Prioricen su eliminacion!
+PreTransportDirection,1,NpcComMsg2_Meritta,AIS Exoda y una bateria de particulas falspawn han sido replicadas en esta simulacion. ¡Preparense para la batalla!
+PreTransportDirection,1,NpcComMsg1,Hay demasiados enemigos alrededor. Eliminen a todos para defender las bases.
+PreTransportDirection,1,NpcComMsg2,AISs are available for this mission.<br>Mind their limited deployment capacity <br>though. Good luck out there!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a5,Poseer un permiso de dificultad super dificil

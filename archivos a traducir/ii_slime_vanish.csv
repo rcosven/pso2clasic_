@@ -1,0 +1,55 @@
+﻿section,group,id,text
+common,0,IncidentName,消滅！　マッドゼリー
+common,0,TrialBeginMsg,マッドゼリーを駆除し<br>時間内に消滅ノルマを果たせ！
+common,0,TrialAbstract,マッドゼリーを駆除し<br>時間内に消滅ノルマを果たせ！
+common,1,IncidentName,Exterminio: Jalea Loca
+common,1,TrialBeginMsg,¡Extermina a las Mad Jellies para cumplir con tu cuota de<br>dentro del límite de tiempo!
+common,1,TrialAbstract,¡Extermina a las Mad Jellies para cumplir con tu cuota de<br>dentro del límite de tiempo!
+type1,0,NpcComOnBegin,マッドゼリーの反応を確認！<br>時間経過で４段階に肥大化<br>限界を超えると爆発します！
+type1,0,NpcComOnAfterBegin,目標は、時間内の一定量撃破。<br>爆発を防ぐため、肥大化した個体から<br>撃破し、安全に消滅させてください。
+type1,0,NpcComOnSuccess,/face2 目標を達成。<br>周囲のマッドゼリーの掃討に<br>成功しました。
+type1,0,NpcComOnFailure,/face4 時間内の一定量撃破に失敗。<br>仕方ありません……<br>通常任務に戻ってください。
+type1,0,NpcComOnDanger,発光を始めた個体は、<br>爆発寸前の危険な状態です。<br>最優先で撃破し、消滅させてください。
+type1,0,NpcComOnFirstExplode,マッドゼリーの爆発を確認しました。<br>爆発前に撃破できれば、消滅時に<br>アイテムが吐き出されるようです。
+type1,0,NpcComOnHalf,/face2 目標まで、あと半分です。<br>なお、「赤い個体は炎に強い」のように<br>体色ごとに属性耐性があるようです。
+type1,0,NpcComOnFinalNotice,残り時間、わずかです。<br>肥大化したものほど、撃破した時の<br>達成度ゲージが多めに増加します。
+type1,1,NpcComOnBegin,"¡Mad Jellies detectadas! Se hinchan en 4 etapas<br>con el tiempo. Una vez que alcanzan su límite, ¡<br> explotan!"
+type1,1,NpcComOnAfterBegin,The objective is to destroy a designated number<br>of them within the time limit. Start with<br>the bloated ones to prevent explosions!
+type1,1,NpcComOnSuccess,/face2 Objetivo cumplido. Has<br>limpiado con éxito el área de Mad Jellies.
+type1,1,NpcComOnFailure,mi límite. Lo hecho<br>está hecho. Vuelve a tu misión habitual.
+type1,1,NpcComOnDanger,¡Los brillantes están a punto de explotar!<br>¡Destruirlos es tu principal prioridad!
+type1,1,NpcComOnFirstExplode,¡Se confirma la explosión de Mad Jelly! Aparentemente<br>escupen un objeto si puedes destruirlos<br>antes de que exploten...
+type1,1,NpcComOnHalf,"/face2 You're halfway to the objective. By the<br>way, you can tell their elemental resistance<br>based on color. Red is strong against fire,<br>and so on."
+type1,1,NpcComOnFinalNotice,"Sólo queda un poco de tiempo. Recuerda, los<br>más hinchados llenan el medidor más<br>cuando los destruyes."
+type2,0,NpcComOnBegin,マッドゼリーの群生地だな。<br>徐々に肥大化していって<br>4段階目で爆発する特性がある。
+type2,0,NpcComOnAfterBegin,目標は、時間内の一定量撃破。<br>爆発を防ぐため、肥大化した個体から<br>撃破し、安全に消滅させろ。
+type2,0,NpcComOnSuccess,目標を達成した。<br>周囲のマッドゼリーの掃討に成功。<br>よくやった。
+type2,0,NpcComOnFailure,時間内の一定量撃破に失敗。<br>これ以上は無駄だ。<br>通常任務に戻れ。
+type2,0,NpcComOnDanger,発光を始めた個体は、<br>爆発寸前の危険な状態だ。<br>迅速に破壊して消滅させろ。
+type2,0,NpcComOnFirstExplode,マッドゼリーの爆発を確認した。<br>爆発前に撃破すれば、消滅時に<br>アイテムが吐き出されるようだ。
+type2,0,NpcComOnHalf,目標の半分を達成した。<br>体色で属性耐性があるようだ。<br>気をつけて消滅させていけ。
+type2,0,NpcComOnFinalNotice,残り時間、わずかだ。<br>肥大化したものほど、達成度が<br>高い。優先的に狙っていけ。
+type2,1,NpcComOnBegin,Es una manada de Mad Jellies. Gradualmente se vuelven<br>más grandes hasta llegar a su cuarta etapa.<br>Luego explotan...
+type2,1,NpcComOnAfterBegin,"The objective is to destroy a certain amount<br>within the time limit. To be safe and avoid<br>them exploding, take out the most bloated first."
+type2,1,NpcComOnSuccess,Objetivo cumplido. Has limpiado con éxito<br>el área de Mad Jellies. ¡Gran trabajo!
+type2,1,NpcComOnFailure,You failed to destroy enough within the time<br>limit. Destroying more now would be useless.<br>Get back to your regular mission.
+type2,1,NpcComOnDanger,¡Los brillantes están a punto de explotar!<br>¡Destruye esos rápido!
+type2,1,NpcComOnFirstExplode,¡Se confirma la explosión de Mad Jelly! Aparentemente<br>escupen un objeto si los destruyes<br>antes de que exploten...
+type2,1,NpcComOnHalf,Has cumplido la mitad de tu objetivo.<br>Su color parece indicar resistencia elemental <br>. Tenlo en cuenta.
+type2,1,NpcComOnFinalNotice,Se te está acabando el tiempo. Matar a los más<br>hinchados te acercará a la meta.<br>Prioriza esos.
+type3,0,NpcComOnBegin,ぬめっとしたヤツが降ってきています！<br>放っておくと、ふくらんでいって<br>爆発するので気をつけてくださいー。
+type3,0,NpcComOnAfterBegin,時間内にいっぱい消してくださいー。<br>爆発しちゃうので、まずは<br>ふくらんでいるのを狙ってくださいー。
+type3,0,NpcComOnSuccess,/face2 目標を達成しましたー。<br>いっぱい消滅させることができました。<br>おつかれさまでしたー。
+type3,0,NpcComOnFailure,/face4 落ちてこなくなってしまいましたね。<br>失敗みたいですー。
+type3,0,NpcComOnDanger,光っているのがいますよー！<br>これ以上大きくなると<br>爆発しちゃいます！　注意ですよー！
+type3,0,NpcComOnFirstExplode,わっ、爆発しちゃいました！<br>頑張ってください。うまく消せれば<br>アイテムを落としますよ。
+type3,0,NpcComOnHalf,/face2 いい感じですよー。<br>でも、色にあった属性攻撃は<br>あまり効かないみたいですー。
+type3,0,NpcComOnFinalNotice,そろそろ出てこなくなるかも……！<br>ふくらんでいるヤツほど<br>ポイント高いですよー。
+type3,1,NpcComOnBegin,"Estos pequeйos bichos pegajosos estan cayendo desde <br> arriba. ¡No los ignore, porque <br> explotan si no se eliminan a tiempo!"
+type3,1,NpcComOnAfterBegin,"Deshazte de tantos como puedas dentro del límite de tiempo <br>. Apunta primero a los hinchados, ¡porque<br>explotan!"
+type3,1,NpcComOnSuccess,/face2 ¡Objetivo cumplido! Fuiste<br>capaz de exterminar a un montón de ellos.<br>¡Buen trabajo!
+type3,1,NpcComOnFailure,/face4 Supongo que han dejado de caer desde arriba.<br>Creo que fallamos...
+type3,1,NpcComOnDanger,"¡Hay uno que brilla! Si se hace <br> mas grande, ¡atenua las seйales!"
+type3,1,NpcComOnFirstExplode,Acepta cualquier ||TAG_0|| que encuentres! ¡Derrota a un numero determinado de ellos!
+type3,1,NpcComOnHalf,/face2 ¡Lo estás haciendo bien! ¡Pero parece que los ataques de<br>elementos que coinciden con su color no son<br>muy efectivos!
+type3,1,NpcComOnFinalNotice,¡Quizás dejen de venir pronto...! ¡Los<br>hinchados te dan más puntos!

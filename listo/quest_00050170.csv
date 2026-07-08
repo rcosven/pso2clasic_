@@ -1,0 +1,21 @@
+section,group,id,text
+PreTransportDirection,0,NpcComMsg1,最前線への転送が間もなく行われます。<br>第一次作戦は、ファルス・アームを駆逐し、<br>本体を消耗させることが目標です。
+PreTransportDirection,0,NpcComMsg2,/face6 ……これまでの戦闘とは別次元の<br>過酷な戦いになることが予想されます。<br>……どうか、ご無事で。
+PreTransportDirection,1,NpcComMsg1,Pronto serás teletransportado al<br>primera línea. Su primer objetivo es<br>Destruye las armas Falz. y escape<br>el cuerpo principal.
+PreTransportDirection,1,NpcComMsg2,"/face6 ...Anticipamos la batalla que se avecina<br>presentará una situación hasta ahora impensable<br>nivel de adversidad. Buena suerte, operativo."
+Basic,0,Title,猛る黒曜の暴腕
+Basic,0,Explanation,、ダークファルスの<br>戦力を低下させ、来るべき決戦に備えよ。<br>これは何よりも優先の、絶対命令である。<br>――――――――――――――――――――<br>失敗条件/最深部での敗北、制限時間の経過
+Basic,1,Title,El brazo de obsidiana furioso
+Basic,1,Explanation,"Este es un mensaje urgente para todo el personal de ARKS.<br>Se acerca un fragmento de Elder the Gargantuan<br>a gran velocidad. Algo sobre el fragmento<br>parece diferente de ataques anteriores y parece<br>ser muy poderoso. Todo el personal está dirigido a<br>interceptarlo, debilitar el Dark Falz y prepararse para<br>la batalla que se avecina. El orden anterior es del más alto.<br>prioridad y debe sustituir a todos los demás. Vas a<br>falla esta misión si eres derrotado en el área final<br>o exceder el límite de tiempo."
+QuestTarget,0,SimpleExplanation,ファルス・アームを撃破せよ！
+QuestTarget,1,SimpleExplanation,¡Destruye el brazo Falz!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil

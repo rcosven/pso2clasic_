@@ -1,0 +1,31 @@
+section,group,id,text
+Basic,0,Title,来襲せし虚なる深遠の躯
+Basic,0,Explanation,アークス各員に緊急連絡。<br>ダークファルス【巨躯】による<br>アークスシップへの襲撃が開始された。<br>また、侵食された旧マザーシップ内からも<br>強大なダーカー反応が確認されている。<br>事態は深刻だ。各員、準備が出来次第<br>【巨躯】の襲撃を速やかに阻止し<br>旧マザーシップに現れた敵を迎撃せよ。<br>――――――――――――――――――――<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,Assault by the Elder of the Abyss
+Basic,1,Explanation,"Urgent message for all ARKS operatives. Dark Falz,<br>in the form of Elder the Gargantuan, has started his<br>assault on the ARKS Ship. We have also picked up<br>strong Falspawn readings from the corrupted old<br>Mothership. All hands prepare to intercept Elder the<br>Gargantuan with all speed and take care of any<br>enemies present on the old Mothership.<br>----------------------------------------<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit."
+QuestTarget,0,SimpleExplanation,二体のダークファルスを撃破せよ！
+QuestTarget,1,SimpleExplanation,Defeat both manifestations of Dark Falz!
+AreaName,0,Area0S,アークスシップ残骸
+AreaName,0,Area0L,アークスシップ残骸　アークスシップ残骸・甲板エリア１
+AreaName,0,Area1S,侵食マザーシップ
+AreaName,0,Area1L,侵食マザーシップ マザーシップ内部エリア１
+AreaName,1,Area0S,ARKS Ship Wreckage
+AreaName,1,Area0L,ARKS Ship Wreckage - ARKS Shipwreck - Deck Area
+AreaName,1,Area1S,Corrupted Mothership
+AreaName,1,Area1L,Corrupted Mothership - Mothership Interior Area 1
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+PreTransportDirection,0,NpcComMsg1,準備はできたようだな。<br>これから恐らくダークファルスの<br>連戦となることが予想される……
+PreTransportDirection,0,NpcComMsg2,まずは【巨躯】の正面へ転送する。<br>すみやかに撃退し、次に備えてくれ。<br>厳しい戦いとなるが……必ず生還しろ。
+PreTransportDirection,1,NpcComMsg1,Looks like you're ready now.<br>You will likely have to engage Dark Falz in a<br>series of battles...
+PreTransportDirection,1,NpcComMsg2,I'm going to teleport you in front of Elder the<br>Gargantuan first. Defeat him quickly and get<br>ready for the next battle. It's not going to be<br>easy but... I have faith you will return.
+PreTransportDirection1,0,NpcComMsg1,【敗者】が姿を現したようです。<br>これからダークファルスの元に<br>転送を行います。
+PreTransportDirection1,0,NpcComMsg2,【巨躯】との戦いで疲弊した皆さんを<br>私は……送り出すことしかできません。<br>……どうか、どうか無事に帰還を。
+PreTransportDirection1,1,NpcComMsg1,Luther the Fallen has finally shown himself.<br>Initiating teleportation to Dark Falz's<br>location momentarily.
+PreTransportDirection1,1,NpcComMsg2,"Everyone must be exhausted after the battle<br>with Elder the Gargantuan<br>I... am afraid I cannot do much except arrange<br>for teleportation.<br>...Whatever happens, come back in one piece."

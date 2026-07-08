@@ -1,0 +1,25 @@
+section,group,id,text
+common,0,IncidentName,$(0)撃破
+common,0,TrialBeginMsg,パートナーと共闘して<br>$(0)を撃破せよ！
+common,0,TrialAbstract,パートナーと共闘して<br>$(0)を撃破せよ！
+common,1,IncidentName,Defeat $(0)
+common,1,TrialBeginMsg,Join forces with your allies to defeat<br>$(0)!
+common,1,TrialAbstract,Join forces with your allies to defeat<br>$(0)!
+type1,0,NpcComOnBegin,さらなる敵性反応を確認。<br>引き続き共闘を続行し撃退に<br>努めてください。
+type1,0,NpcComOnSuccess,/face2 敵性反応の撃退を確認。<br>急な共闘でしたが……<br>素晴らしい結果です。
+type1,0,NpcComOnFailure,これ以上の交戦は危険です。<br>残念ですがここは一旦引きましょう。
+type1,1,NpcComOnBegin,More hostile readings detected. Continue<br>cooperating to drive them out.
+type1,1,NpcComOnSuccess,"/face2 The hostiles have been repelled. I know you were <br>only thrown together, but what a result!"
+type1,1,NpcComOnFailure,It's dangerous to go on fighting any longer.<br>I'm afraid we'll have to pull back for now.
+type6,0,NpcComOnBegin,敵性反応の発生が継続。<br>協力体制を続行し、出現した<br>敵性存在を撃退してください。
+type6,0,NpcComOnSuccess,敵性反応、完全消失。<br>臨時の協力体制ながら<br>見事な立ち回りでした。
+type6,0,NpcComOnFailure,これ以上の交戦は危険と判断。<br>今は撤退を。
+type6,1,NpcComOnBegin,Enemy forces are still appearing. Partner up and<br>drive them out as you encounter them.
+type6,1,NpcComOnSuccess,Enemy presence eradicated. Nice job with the<br>impromptu teamwork.
+type6,1,NpcComOnFailure,We've determined it's too dangerous to carry on.<br>Moving to withdraw.
+type9,0,NpcComOnBegin,新たな敵性反応を確認！<br>引き続き協力して<br>目標を撃退してください！
+type9,0,NpcComOnSuccess,お疲れさまです！<br>文句なしの成果ですね！<br>見事な連携だったと思います！
+type9,0,NpcComOnFailure,これ以上は危険ですね……<br>何事も引き際が肝心です！<br>ここは撤退しましょう！
+type9,1,NpcComOnBegin,New hostile readings detected. Work together to<br>eradicate all targets!
+type9,1,NpcComOnSuccess,Impressive results! We couldn't have asked for<br>better teamwork!
+type9,1,NpcComOnFailure,It's too dangerous to go on fighting. Better safe<br>than sorry... Retreat at once!

@@ -1,0 +1,27 @@
+section,group,id,text
+Basic,0,Title,境界を貫く双角の凶鳥
+Basic,0,Explanation,br>有翼型エネミーの出現も確認されている。<br>アークス各員は、至急現地に赴き<br>該当個体を調査し、必要に応じて討伐せよ。<br>――――――――――――――――――――<br>失敗条件/最深部での敗北
+Basic,1,Title,"Traspasador de límites, cuervo de dos cuernos"
+Basic,1,Explanation,"Una gran cantidad de enemigos, incluidos no sólo los corruptos,<br>pero también silvanos, draconianos, autómatas y<br>Las oceánidas se han reunido en la región corrupta de<br>el planeta Naverius. Además, localizado<br>tormentas eléctricas y un enemigo alado no identificado<br>está en la misma región. Todo el personal de ARKS debe<br>Diríjase inmediatamente al lugar de la perturbación.<br>investiga y neutraliza a todos los enemigos según sea necesario.<br><br>Fallarás si eres derrotado en el área final."
+QuestTarget,0,SimpleExplanation,異変を引き起こす元凶を撃破せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota al culpable de causar la anomalía!
+PreTransportDirection,0,NpcComMsg1,アンガ・ファンダージの反応を感知。<br>この先に出現しているようです。
+PreTransportDirection,0,NpcComMsg2,現在、要調査対象とされている<br>正体不明の有翼型エネミーとは<br>違いますが、放ってはおけません。
+PreTransportDirection,0,NpcComMsg3,この領域で確認されている異常気象の<br>原因かもしれませんし……<br>早急な撃破をお願いします。
+PreTransportDirection,1,NpcComMsg1,Se están realizando lecturas correspondientes a Anga Phandaj.<br>recogido. Deberíamos verlo en breve.
+PreTransportDirection,1,NpcComMsg2,"El enemigo actual no se parece al<br>bestia alada no identificada que estamos buscando,<br>pero no podemos permitir que cause más daños potenciales."
+PreTransportDirection,1,NpcComMsg3,Esta puede ser la causa de la anomalía.<br>Condiciones meteorológicas detectadas en esta zona...<br>Derrótalo con toda conveniencia.
+PreTransportDirection1,0,NpcComMsg1,……さん！　……みなさん！　<br>皆さん、応答してください！<br>良かった……通じたようですね。
+PreTransportDirection1,0,NpcComMsg2,……ここは、どこでしょう？<br>座標自体は惑星ナベリウスのまま……<br>ですが、これは？
+PreTransportDirection1,0,NpcComMsg3,今まで起きていた異変も、この先に潜む<br>エネミーによる影響でしょうか？<br>嫌な予感がします、どうか気を付けて。
+PreTransportDirection1,1,NpcComMsg1,"...¡uno! ...¡Alguien!<br>¡Cualquiera, por favor responda!<br>Uf... parece que lo logré."
+PreTransportDirection1,1,NpcComMsg2,"... ¿Qué es este lugar?<br>Las coordenadas todavía corresponden a Naverius, pero...<br>Ah, ¿qué es esto?"
+PreTransportDirection1,1,NpcComMsg3,Quizás las rarezas que hemos observado hasta ahora tengan algo que ver con<br>los enemigos que acechan por delante.<br>Tengo un mal presentimiento sobre esto. Mantenerse seguro.
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil

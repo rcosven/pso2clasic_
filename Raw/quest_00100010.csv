@@ -1,0 +1,31 @@
+section,group,id,text
+Basic,0,Title,採掘基地防衛戦：襲来
+Basic,0,Explanation,アークス各員に緊急連絡。<br>惑星リリーパの採掘基地周辺に<br>多数のダーカーの反応を確認した。<br>複数回に渡っての攻勢を<br>仕掛けてくるつもりだろう。<br>基地の防衛を最優先事項とし<br>攻撃が止むまで拠点を死守せよ。<br>――――――――――――――――――――<br>全6ウェーブ<br>失敗条件/全拠点の陥落
+Basic,1,Title,Mining Base Def. Op.: Incursion
+Basic,1,Explanation,Urgent notice to all ARKS members.<br>We have acquired confirmed Falspawn<br>readings in the vicinity of the<br>Mining Base on the planet Lillipa. Models suggest<br>several attack waves are planned.<br>Defending the base is your top priority so<br>make sure it is kept intact until the attack ends.<br>--------------------------------------------------<br>Total of 6 waves<br>You will fail this quest if all base sites fall.
+QuestTarget,0,SimpleExplanation,採掘基地を防衛せよ！
+QuestTarget,1,SimpleExplanation,Defend the Mining Base!
+Defense,0,Wave1_Talk,ダーカーが出現しましたー！<br>どの拠点が襲われるか分かりません。<br>協力して拠点を防衛してくださいー！
+Defense,0,Wave2_Talk,次のダーカーが襲撃してきましたー！<br>皆さんで声を掛けあって、<br>連携して守ってくださいね！
+Defense,0,Wave3_Talk,み、未確認反応がありますー！<br>ダーカーの兵器が出現する気がします！<br>見つけ次第破壊しちゃって下さい！
+Defense,0,Wave4_Talk,わわっ、ものすごい強い反応……！<br>敵さんがとっても強化されてる<br>気がします！　注意してくださいー！
+Defense,0,Wave5_Talk,わわっ、ものすごい強い反応……！<br>大型ダーカーが出現するかも<br>しれません！
+Defense,0,Wave6_Talk,これが最後みたいです！<br>あと一息です！　なんとか<br>拠点を守りきってくださいー！
+Defense,1,Wave1_Talk,Falspawn have appeared!<br>We do not know what site they will attack.<br>Requesting assistance to defend the affected site!
+Defense,1,Wave2_Talk,The Falspawn are launching the next wave<br>of their attack! We must join together to<br>protect the base with all our might!
+Defense,1,Wave3_Talk,W-We're getting unconfirmed readings!<br>They appear to correspond to possible Falspawn weapons!<br>You must destroy them on sight!
+Defense,1,Wave4_Talk,"Oh no, I'm picking up a very strong signal...!<br>The enemy appears to have significantly enhanced power!<br>Please be extra careful!"
+Defense,1,Wave5_Talk,"Oh no, I'm picking up a very strong signal...!<br>It seems a large Falspawn has<br>entered the fray!"
+Defense,1,Wave6_Talk,Hopefully this is the last one!<br>Keep it together just a little longer!<br>Defend the site with everything you've got!
+PreTransportDirection,0,NpcComMsg1,まもなく状況開始ですっ！<br>反応を見るに、ダーカーが何度も何度も<br>襲ってきそうです！　注意して下さい！
+PreTransportDirection,0,NpcComMsg2,落ちてる結晶のエネルギーを使えば<br>守りを固めることもできますよっ！<br>以上、連絡おしまいです！　ご武運を！
+PreTransportDirection,1,NpcComMsg1,The fun is about to begin!<br>Readings indicate that multiple Falspawn waves are incoming!<br>Stay frosty!
+PreTransportDirection,1,NpcComMsg2,Use the energy of fallen crystals to<br>shore up your defense! End of transmission!<br>Good luck!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit

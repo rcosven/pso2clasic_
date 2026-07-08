@@ -1,0 +1,63 @@
+section,group,id,text
+common,0,CampshipEnter,キャンプシップ入口
+common,0,NotAccessQuest,クエスト受注前なのでアクセスできません。
+common,0,WarehouseTitle,倉庫端末
+common,0,PartnerObject_ErrorTitle,パートナー呼び出し端末
+common,0,PartnerObject_Error1,現在、パートナー呼び出し端末を<br>使用することはできません。
+common,0,PartnerObject_Error2,このクエストでは、パートナーを呼び出すことはできません。
+common,0,PartnerObject_Error3,マッチング設定により、<br>パートナーの呼び出しが制限されています。
+common,0,GuildWarehouseTitle,チーム倉庫端末
+common,1,CampshipEnter,Gateway Ship Entrance
+common,1,NotAccessQuest,You must have a quest to access this.
+common,1,WarehouseTitle,Storehouse Terminal
+common,1,PartnerObject_ErrorTitle,Partner Terminal
+common,1,PartnerObject_Error1,The Partner Terminal is currently unavailable.
+common,1,PartnerObject_Error2,No puedes llamar a un partner para esta mision.
+common,1,PartnerObject_Error3,Los partners que puedes llamar estan limitados <br>actualmente debido a la configuracion de coincidencia.
+common,1,GuildWarehouseTitle,Terminal del Almacen de la Alianza
+Campship,0,TerminalTitle,情報端末
+Campship,0,ShopTitle,ショップ端末
+Campship,0,MedicalTitle,メディカル端末
+Campship,0,QuestTitle,クエストカウンター端末
+Campship,0,ApcTitle,ＡＰＣ端末
+Campship,0,AccessFaild,一度決定した後は<br>アクセスできません。
+Campship,0,NonReader,この端末は<br>現在パーティーリーダーしか<br>アクセスできません。
+Campship,0,NotClear,この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+Campship,0,NotClearTelepipe,この端末は<br>クエストクリアもしくは<br>クエスト失敗をしない限り<br>アクセスできません。
+Campship,0,TerminalDisable,現在使用することができません。
+Campship,0,TerminalDisableAPC,現在使用することができません。
+Campship,0,TerminalDisableGuildRoom,チーム倉庫を購入していないため、<br>現在使用することができません。<br><br>チームポイントを消費して<br>チーム倉庫を購入することで<br>使用可能となります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+Campship,0,TerminalDisableGuildMember,役職がビジターであるため利用できません。<br>使用するためにはコモンメンバー以上の<br>役職である必要があります。<br><br>※チーム倉庫を使用するためには<br>　プレミアムセットの利用もあわせて<br>　必要となります。
+Campship,0,TerminalDisableGuildMember2,<pict Arcscash><c ff4f3f>AC消費コンテンツ<c><br>選択した機能の利用権をお持ちでないか、<br>利用期限が切れています。<br><br><yellow>「プレミアムセット」<c>を購入し、<br>そのまますぐに機能を有効にできますが、<br>購入確認画面に進みますか？<br><br><red>※個別の機能チケットをご希望の場合は、<br>　メインメニューの「ACショップ」でご購入ください。<c>
+Campship,0,TerminalDisableCancelTower,パーティーメンバー全員がキャンプシップに戻るまで、<br>使用することができません。
+Campship,0,RetryFaild,クエストの受注期間が過ぎているため、<br>もう一度挑戦することができませんでした。
+Campship,0,ClearLimit,クエストのクリア回数制限を超えているため<br>もう一度挑戦することができませんでした。
+Campship,0,QuestDropPenalty,クエストの受注を制限されているため<br>このクエストは受注できません。
+Campship,0,QuestInExtra,このクエストは、<br>キャンペーン対象期間となったため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+Campship,0,QuestOutExtra,このクエストは、<br>キャンペーン対象期間が終了したため<br>もう一度挑戦することができませんでした。<br>クエストを再度、受注しなおしてください。
+Campship,0,CantStartProhibitQuestDropTitleCnt,クエストカウンター端末
+Campship,0,CantStartProhibitQuestDropTitleTlp,テレポーター
+Campship,0,CantStartProhibitQuestDropForStart,現在使用することができません。
+Campship,1,TerminalTitle,Terminal de Datos
+Campship,1,ShopTitle,Terminal de Compras
+Campship,1,MedicalTitle,Terminal Medico
+Campship,1,QuestTitle,Terminal de Contador de Misiones
+Campship,1,ApcTitle,Terminal de APC
+Campship,1,AccessFaild,Esto no se puede acceder despues de confirmar una seleccion.
+Campship,1,NonReader,"Actualmente, solo el lider del partido puede acceder a este <br>terminal."
+Campship,1,NotClear,No puedes acceder a este terminal hasta completar o fallar en tu mision actual.
+Campship,1,NotClearTelepipe,No puedes acceder a este terminal hasta completar o fallar en tu mision actual.
+Campship,1,TerminalDisable,Esto es inaccesible en este momento.
+Campship,1,TerminalDisableAPC,Esto es inaccesible en este momento.
+Campship,1,TerminalDisableGuildRoom,t.
+Campship,1,TerminalDisableGuildMember,"No puedes acceder a este terminal como un Provisional. <br>Debes ser miembro o superior para acceder <br>a este terminal.<br><br>Nota: Para usar el Almacen de la Alianza, <br>tambien debes utilizar un Conjunto Premium."
+Campship,1,TerminalDisableGuildMember2,s se pueden comprar <br>desde la Tienda AC en el menu principal.<c>
+Campship,1,TerminalDisableCancelTower,No puedes cancelar hasta que todos los miembros del partido hayan regresado a la Nave-Cueva.
+Campship,1,RetryFaild,El periodo para aceptar esta mision ha expirado. <br>No puedes repetir esta mision.
+Campship,1,ClearLimit,You have exceeded the maximum number of times<br>this quest can be completed.
+Campship,1,QuestDropPenalty,No puedes aceptar esta mision porque tienes una penalizacion de acceso a misiones. <br>
+Campship,1,QuestInExtra,"No puedes repetir esta mision durante el periodo de la campaйa. Por favor, acepta esta mision nuevamente."
+Campship,1,QuestOutExtra,"No puedes repetir esta mision como el periodo de la campaйa ha terminado. Por favor, acepta esta mision <br>de nuevo."
+Campship,1,CantStartProhibitQuestDropTitleCnt,Terminal de Contador de Misiones
+Campship,1,CantStartProhibitQuestDropTitleTlp,Teleporter
+Campship,1,CantStartProhibitQuestDropForStart,Esto es inaccesible en este momento.

@@ -1,0 +1,23 @@
+section,group,id,text
+5659,0,Begin,/ci1 1 おや、もう来たのか。<br>だったら、ここも早く片付けないとね。<br>ライトくん、急ぐよ。
+5659,0,Success,/ci1 2 ここら一帯は片付いたね。<br>よし、キミたちは先へ行くんだ。<br>シバ撃破の報せを待っているよ。
+5659,0,Failure,露払いのつもりが<br>先に離脱してしまうとは……<br>すまない……
+5659,0,Dead,すまない、先に離脱する……<br>キミなら、必ずやり遂げてくれると<br>信じているよ……
+5659,0,BuddyDead,ライトくんが離脱してしまったか。<br>私一人では、少々荷が重いが……<br>できる限りの最善は尽くそう。
+5659,1,Begin,"/ci1 1 Oh, you're already here?<br>We better mop this mess up quickly then.<br>Let's hop to it, Wright."
+5659,1,Success,"/ci1 2 The area is clear. Alright, you lot go on ahead.<br>I look forward to hearing all about your victory<br>over Shiva."
+5659,1,Failure,"I was hoping to lead the charge,<br>but I'm withdrawing early...<br>Sorry, everyone..."
+5659,1,Dead,"Sorry, but I'm withdrawing for now...<br>I have the utmost faith you'll be able<br>to see this through."
+5659,1,BuddyDead,"It seems Wright has left us.<br>The burden may prove too much to<br>bear alone, but I'll do my best."
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

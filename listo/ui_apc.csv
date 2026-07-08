@@ -1,0 +1,85 @@
+section,group,id,text
+Status,0,Title,パートナーステータス
+Status,0,Status_Character,キャラクター性
+Status,0,Status_Action,特性
+Status,0,Status_Title,特殊補正
+Status,0,Status_Comment,コメント
+Status,0,Title_PaperDoll,プレビュー
+Status,0,Support_Status_Character,性格
+Status,1,Title,Estatus de compaйero
+Status,1,Status_Character,Caracter
+Status,1,Status_Action,Atributos
+Status,1,Status_Title,Titulos especiales
+Status,1,Status_Comment,Comentarios
+Status,1,Title_PaperDoll,Vista previa
+Status,1,Support_Status_Character,Caracter
+RegisterGhosts,0,Title,フレンドパートナー登録
+RegisterGhosts,0,Register_Class,現在のクラス
+RegisterGhosts,0,Register_Name,フレンドパートナー名
+RegisterGhosts,0,Register_Attack,キャラクター性
+RegisterGhosts,0,Register_Ai,特性
+RegisterGhosts,0,Register_Sp,特殊補正
+RegisterGhosts,0,Register_Message,メッセージ
+RegisterGhosts,0,Error,エラーメッセージ
+RegisterGhosts,0,Register_M,フリーパートナー登録
+RegisterGhosts,0,Register_M_C,フレンド以外のプレイヤーにも公開する
+RegisterGhosts,1,Title,Registro de amigo/a
+RegisterGhosts,1,Register_Class,Clase Actual
+RegisterGhosts,1,Register_Name,Nombre del amigo/a
+RegisterGhosts,1,Register_Attack,Caracter
+RegisterGhosts,1,Register_Ai,Atributos
+RegisterGhosts,1,Register_Sp,Titulos especiales
+RegisterGhosts,1,Register_Message,MENSAJE
+RegisterGhosts,1,Error,Mensaje de Error
+RegisterGhosts,1,Register_M,Registro de amigo/a gratis
+RegisterGhosts,1,Register_M_C,Hacerme visible a jugadores no amigos
+Squire,0,Squire_Sort1,標準ソート
+Squire,0,Squire_Sort2,名前順
+Squire,0,Squire_Sort3,レベル順
+Squire,0,Squire_Sort4,好感度順
+Squire,0,Squire_Tab1,パートナー
+Squire,0,Squire_Tab2,フレンド
+Squire,0,Squire_Tab3,サポート
+Squire,0,Squire_Tab4,フリー
+Squire,0,Squire_FUN,FUNがもらえます
+Squire,0,Squire_Sort5,グループ順
+Squire,1,Squire_Sort1,Orden Estandar
+Squire,1,Squire_Sort2,Por Nombre
+Squire,1,Squire_Sort3,Por Nivel
+Squire,1,Squire_Sort4,Por Afinidad
+Squire,1,Squire_Tab1,Aliado
+Squire,1,Squire_Tab2,Amigos
+Squire,1,Squire_Tab3,Soporte
+Squire,1,Squire_Tab4,Gratis
+Squire,1,Squire_FUN,Puedes obtener FUN.
+Squire,1,Squire_Sort5,Por Grupo
+SquireMenu,0,Title,パートナーリスト
+SquireMenu,0,SquireMenu_Item1,パーティーに呼ぶ
+SquireMenu,0,SquireMenu_Item2,ステータスを見る
+SquireMenu,0,SquireMenu_Item3,帰還させる
+SquireMenu,0,ErrorExsit,$(0)は、すでにクエスト内の別のプレイヤーが呼び出しています。
+SquireMenu,0,EmptyText,登録されているパートナーがいません
+SquireMenu,0,MenuItemHint,$(0)
+SquireMenu,0,NotCalls,$(0)は、現在呼び出すことができません。
+SquireMenu,0,HelpText,<c f0df60>冒険するパートナーを選択してください。フレンド/サポート/フリーは同行系オーダーの失敗にはなりません。<c>
+SquireMenu,0,SquireMenu_Item4,パートナーを交代する
+SquireMenu,0,AllApcReturn,呼び出したパートナーを全員帰還させる
+SquireMenu,0,Message,本当に全員帰還させますか？
+SquireMenu,0,Message2,$(0)を帰還させ<br>$(1)をパーティーに参加させます。<br><br>よろしいですか？
+SquireMenu,0,Title2,パートナー帰還
+SquireMenu,0,Title3,パートナー交代
+SquireMenu,1,Title,Lista de Aliados
+SquireMenu,1,SquireMenu_Item1,Invitar a la Partida
+SquireMenu,1,SquireMenu_Item2,Ver Estadisticas
+SquireMenu,1,SquireMenu_Item3,Regresar
+SquireMenu,1,ErrorExsit,$(0) ya ha sido invitado por otro jugador en la mision.
+SquireMenu,1,EmptyText,No hay aliados registrados.
+SquireMenu,1,MenuItemHint,
+SquireMenu,1,NotCalls,$(0) no puede ser invocado en este momento. 
+SquireMenu,1,HelpText,Selecciona un aliado para tu aventura. Los amigos / Soporte / Libre no contaran como una orden de partido fallido. 
+SquireMenu,1,SquireMenu_Item4,Cambiar aliado
+SquireMenu,1,AllApcReturn,Devuelve a todos los aliados que invitas.
+SquireMenu,1,Message,¿Realmente deseas devolver a todos?
+SquireMenu,1,Message2,$(0) sera devuelto y $(1 ) se unira a tu Parte. ¿Estas seguro de querer proceder?
+SquireMenu,1,Title2,Volver a llamar al ally
+SquireMenu,1,Title3,Cambiar aliado

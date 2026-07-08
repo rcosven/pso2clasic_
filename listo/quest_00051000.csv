@@ -1,0 +1,27 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido especial de cliente
+AcceptCondition,1,a2,Completar un pedido especial de cliente
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil
+Basic,0,Title,艦隊迎撃戦：味方救援
+Basic,0,Explanation,当船団の巡洋艦が終の艦隊からの襲撃を<br>受けているとの急報があった。<br>味方艦は航行不能に陥っており<br>捕獲の危機に晒されているとのこと。<br>急ぎ、救援に向かい<br>甲板上の敵勢力を排除せよ。<br>なお、宙域では敵戦闘機の反応も確認。<br>艦外からの攻撃にも注意せよ。<br>――――――――――――――――――――<br>失敗条件/制限時間の経過
+Basic,1,Title,Intercepción de Armada: Rescate de aliados
+Basic,1,Explanation,Informe de emergencia. El crucero de nuestra flota está bajo<br>ataque de la Armada de la Aniquilación. Aliado<br>los barcos no pueden maniobrar en la región y<br>corren el riesgo de sufrir convulsiones. Implementar inmediatamente y<br>Elimina todas las fuerzas enemigas en la cubierta del crucero.<br>Tenga en cuenta que también hemos recogido lecturas de<br>combatientes enemigos en el sector correspondiente.<br>-----------------------------------------------<br>Fallarás esta misión si excedes el tiempo.<br>límite.
+PreTransportDirection,0,NpcComMsg1,これより、輸送を開始します。<br>今回の目的は、敵部隊に<br>襲撃されている味方艦の救援です。
+PreTransportDirection,0,NpcComMsg2,敵勢力の猛攻により<br>味方艦は航行不能状態にあります。<br>敵を撃破し、解放してください。
+PreTransportDirection,1,NpcComMsg1,Prepárate para la teletransportación. Tu misión es<br>Rescata un barco aliado bajo ataque enemigo.
+PreTransportDirection,1,NpcComMsg2,Olas de ataques enemigos han<br>asedió un barco aliado. Lucha contra el enemigo<br>manualidades y rescatar a nuestros amigos.
+PreTransportDirection0,0,NpcComMsg1,艦が捕縛されようとしています。<br>甲板上に出撃し、捕縛を試みている<br>敵部隊を殲滅してください。
+PreTransportDirection0,1,NpcComMsg1,Están intentando apoderarse del barco. Implementar en el<br>cubierta y eliminar la flota enemiga que intenta<br>la convulsión.
+QuestTarget,0,SimpleExplanation,甲板上の敵を排除せよ！
+QuestTarget,1,SimpleExplanation,¡Elimina a todos los enemigos en la cubierta del barco!
+AreaName,0,Area0S,艦隊交戦区域
+AreaName,0,Area0L,艦隊交戦区域　セクター１展開エリア
+AreaName,1,Area0S,Zona de guerra armada
+AreaName,1,Area0L,Zona de guerra armada: área de preparación del sector 1

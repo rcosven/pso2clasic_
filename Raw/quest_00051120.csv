@@ -1,0 +1,23 @@
+section,group,id,text
+Basic,0,Title,チョコレートの行方
+Basic,0,Explanation,惑星アムドゥスキア、火山洞窟の<br>バレンタイン会場付近にて<br>龍族が暴れているとの報告が入った。<br>さらに、ダーカーや幻創種などの<br>出現も確認されている。<br>アークス各員は至急現地へと向かい<br>エネミーを排除、安全を確保せよ。<br>――――――――――――――――――――<br>クリア可能回数/$(0)回<br>失敗条件/制限時間の経過
+Basic,1,Title,Where the Chocolate Went
+Basic,1,Explanation,We have received word that Draconians are running<br>wild in the vicinity of the Valentine Grounds in the<br>Volcanic Caves of the planet Amduskia. There are<br>also eyewitness reports of Falspawn and<br>phantasms in the area. ARKS personnel are to<br>proceed immediately to the designated waypoint<br>and defeat the enemy to ensure the area is safe.<br>-------------------------------------------<br>This quest can be completed $(0) times.<br>You will fail this quest if you exceed the time limit.
+PreTransportDirection,0,NpcComMsg1,まもなく、転送を開始します！<br>今回の任務は、バレンタイン会場周辺で<br>暴れているエネミーの撃破になります！
+PreTransportDirection,0,NpcComMsg2,龍族だけでなく、ダーカーや<br>強力な幻創種も確認されています。<br>充分、気をつけてください！
+PreTransportDirection,0,NpcComMsg3,可憐な女性陣と力を合わせて<br>会場の安全を確保してください！<br>チョコレートの行方は、貴方次第です！
+PreTransportDirection,1,NpcComMsg1,Initiating teleportation momentarily!<br>Your mission is to defeat all enemies <br>running wild on the Valentine Grounds.
+PreTransportDirection,1,NpcComMsg2,"In addition to Draconians, Falspawn and<br>rowdy phantasms have been spotted <br>in the area. Extreme caution is advised!"
+PreTransportDirection,1,NpcComMsg3,Eliminate all enemies in the final area without<br>getting too distracted by the fabulously-dressed<br>female contingent. Figuring out the chocolate's<br>whereabouts is up to you!
+QuestTarget,0,SimpleExplanation,最深部を目指せ！
+QuestTarget,1,SimpleExplanation,Advance to the final area!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit

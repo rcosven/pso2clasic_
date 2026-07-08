@@ -1,0 +1,59 @@
+﻿section,group,id,text
+CharaName,0,name01,ヒルダ
+CharaName,0,name02,『サブパレット』について
+CharaName,1,name01,Hilda
+CharaName,1,name02,La subpaleta
+Skit,0,skit01,/toge お、おい！　大丈夫か相棒！？
+Skit,0,11_voice_navi02_114,攻撃を受けたか。<br>損傷は即座に治療が基本だ。<br>回復手段についても教えておこう。
+Skit,0,11_voice_navi02_115,よし、では実際にモノメイトを<br>使用してみるといい。補給物資として<br>その場に用意しておいた。
+Skit,0,text00,『ＨＰ回復』について
+Skit,0,text01,ダメージを受けて<br>ＨＰ（ヒットポイント）がゼロになると、<br>戦闘不能になってしまいます。<br><br>HPが減ってきたら、<br>「モノメイト」などの回復アイテムで<br>早めにHPを回復しましょう。
+Skit,0,text02,<yellow>サブパレット<c>に登録されている<br>回復アイテム「モノメイト」を使ってみましょう。<br><br><%SubPalette>で、<br>サブパレットで選択中のアイテムを<br>使うことができます。<br><br><red>※サブパレットのカーソルは、<br>　チュートリアル終了後から<br>　<%SubPaletteLeft>と<%SubPaletteRight>で移動できます。<c>
+Skit,0,text03,ペットにもHPがあり、<br>ペットがダメージを受けると減少します。<br><br>HPがゼロになったペットは、<br>しばらく戦闘不能になってしまいます。<br><br>ペットのHPが減ったら、<br>別のペットに切り替えて休ませるか、<br>サブパレットから回復テクニックの<br>「レスタ」をかけてあげましょう。
+Skit,0,text100,モノメイトを使って回復しろ！
+Skit,0,text1000,<%SubPalette1>でモノメイトを使い回復しろ！
+Skit,0,text1001,<%SubPalette>でモノメイトを使い回復しろ！
+Skit,0,text201,モノメイトを使って回復しろ！
+Skit,0,text202,モノメイトを使って回復しろ！
+Skit,0,text203,サブパレットの使用：<%SubPalette1>
+Skit,0,text204,サブパレットの使用：<%SubPalette>
+Skit,0,text205,サブパレットの使用：<br>アイコンをタッチ
+Skit,1,skit01,"/toge ¡E-Oye! ¿¡Estás bien, amigo!?"
+Skit,1,11_voice_navi02_114,
+Skit,1,11_voice_navi02_115,"Bien, intenta usar un Monomate. Preparé<br>un suministro de ellos para momentos como este."
+Skit,1,text00,Recuperacion de HP
+Skit,1,text01,
+Skit,1,text02,
+Skit,1,text03,
+Skit,1,text100,¡Usa un Monomate para curarte a ti mismo!
+Skit,1,text1000,¡Usa un Monomate con<%SubPalette1>y cúrate a ti mismo!
+Skit,1,text1001,¡Usa un Monomate con<%SubPalette>y cúrate a ti mismo!
+Skit,1,text201,¡Usa un Monomate para curarte a ti mismo!
+Skit,1,text202,¡Usa un Monomate para curarte a ti mismo!
+Skit,1,text203,Utilice la subpaleta: <%SubPalette1>
+Skit,1,text204,Utilice la subpaleta: <%SubPalette>
+Skit,1,text205,Utilice la subpaleta:<br>Toque el icono.
+Skit_ci,0,skit01,/ci3 2 /toge お、おい！　大丈夫か相棒！？
+Skit_ci,1,skit01,"/ci3 2 /toge H-¡Oye! ¿¡Estás bien, amigo!?"
+Skit_old,0,skit01,/toge お、おい！　大丈夫か相棒！？
+Skit_old,0,11_voice_navi02_114,攻撃を受けたか。<br>損傷は即座に治療が基本だ。<br>回復手段についても教えておこう。
+Skit_old,0,11_voice_navi02_115,よし、では実際にモノメイトを<br>使用してみるといい。補給物資として<br>その場に用意しておいた。
+Skit_old,0,text00,『ＨＰ回復』について
+Skit_old,0,text01,チュートリアル<br>『ＨＰ回復』について説明します。<br><br>敵からダメージを受けて減少したＨＰ（ヒットポイント）は<br>アイテムを使用することで回復することができます。
+Skit_old,0,text02,<yellow>サブパレット<c>に回復薬が登録されているので<br>ここでは「モノメイト」を選んで回復してみましょう。<br>キーボードの<%SubPalette1>を押すと、回復を行います。<br><br><red>※サブパレットのカーソルは、このチュートリアルをクリア後、<br>　　動かせるようになります。
+Skit_old,0,text03,<yellow>サブパレット<c>に回復薬が登録されているので<br>ここでは「モノメイト」を選んで回復してみましょう。<br>サブパレットのカーソルは<%SubPaletteLeft>と<%SubPaletteRight>で動かし<br><%SubPalette>を押して決定します。<br><br><red>※サブパレットのカーソルは、このチュートリアルをクリア後、<br>　　動かせるようになります。
+Skit_old,0,text04,左下の数字が現在の所持数を示しています。<br><br>アイテムごとに最大所持数が決まっており、<br>上限最大数に達すると、数字がオレンジ色になります。
+Skit_old,0,text100,モノメイトを使って回復しろ！
+Skit_old,0,text1000,<%SubPalette1>でモノメイトを使い回復しろ！
+Skit_old,0,text1001,<%SubPalette>でモノメイトを使い回復しろ！
+Skit_old,1,skit01,"/toge ¡E-Oye! ¿¡Estás bien, amigo!?"
+Skit_old,1,11_voice_navi02_114,
+Skit_old,1,11_voice_navi02_115,"Bien, intenta usar un Monomate. Preparé<br>un suministro de ellos para momentos como este."
+Skit_old,1,text00,Recuperacion de HP
+Skit_old,1,text01,"Cuando recibes daño de los enemigos, puedes<br>recuperar HP (puntos de vida) agotados<br>usando elementos."
+Skit_old,1,text02,"/ci5 1 ¡Vamos! Si es asi, entonces no tengo mas opcion que ir contigo tambien"
+Skit_old,1,text03,"/ci3 2 ¡Un ataque frontal!? Un poco aterrador, pero ahi va!"
+Skit_old,1,text04,¡No podemos volver atras! ¡El lugar esta plagado de enemigos!
+Skit_old,1,text100,¡Usa un Monomate para curarte a ti mismo!
+Skit_old,1,text1000,¡Usa un Monomate con<%SubPalette1>y cúrate a ti mismo!
+Skit_old,1,text1001,¡Usa un Monomate con<%SubPalette>y cúrate a ti mismo!

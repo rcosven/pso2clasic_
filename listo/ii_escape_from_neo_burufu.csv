@@ -1,0 +1,41 @@
+﻿section,group,id,text
+common,0,IncidentName,ゲル・ブルフを凌ぎきれ！
+common,0,TrialBeginMsg,ゲル・ブルフから逃げろ！！<br>$(0)回以上襲撃されたら失敗。
+common,0,TrialAbstract,ゲル・ブルフの襲来を凌ぎ<br>生還せよ！
+common,0,TrialOutbreak,$(0)がゲル・ブルフに襲撃された！
+common,1,IncidentName,¡Sobrevive al ataque de Gehl Bulf!
+common,1,TrialBeginMsg,"¡Escapa del Gehl Bulf! Si recibe $(0)<br>o más veces, fallará."
+common,1,TrialAbstract,¡Soporta el ataque de Gehl Bulf y sobrevive!
+common,1,TrialOutbreak,¡Avanza! El Gehl Bulf no tiene mucho mas tiempo!
+type1,0,NpcComOnBegin,緊急連絡です！<br>ゲル・ブルフの出現を確認しました！<br>できる限り引きつけて凌いでください。
+type1,0,NpcComOnBeginAtRareCase,落ち着いて聞いてください。<br>ゲル・ブルフの発生が確認されました。<br>できる限り引きつけて凌いでください。
+type1,0,NpcComOnSuccess,/face2 ゲル・ブルフを凌ぎきるなんてすごい。<br>……あっ、いえ、見事です。
+type1,0,NpcComOnFailure,/face4 ゲル・ブルフの影響による被害甚大！<br>被害許容範囲を超えました……。<br>残念です。
+type1,0,NpcComOnTarget,$(0)！　逃げてください！<br>貴方がターゲットにされています！
+type1,0,NpcComOnTime1,ゲル・ブルフの起動時間には<br>限界があります！　あと少しです！<br>それまで各員凌ぎきってください！
+type1,0,NpcComOnTime2,/face2 その調子です！間もなく<br>ゲル・ブルフの活動限界です！<br>あと少し、凌いでください！
+type1,0,NpcComOnRepop,ゲル・ブルフの再転送を確認！<br>各員、周囲への警戒を強めてください。
+type1,1,NpcComOnBegin,¡Emergencia! ¡Se ha detectado la presencia de Gehl Bulf!<br>Intenta mantener su atención mientras<br>evades sus ataques.
+type1,1,NpcComOnBeginAtRareCase,Escuche atentamente. Tengo una lectura de Gehl Bulf en<br>tu área. Necesito que mantengas su atención<br>mientras evitas los ataques.
+type1,1,NpcComOnSuccess,¡Advertencia! Se ha avistado un Gehl Bulf<br>en la zona. ¡Es extremadamente peligroso!||TAG_1||
+type1,1,NpcComOnFailure,"/face4 El Gehl Bulf ha causado grandes daños,<br>excediendo con creces nuestro rango permitido..."
+type1,1,NpcComOnTarget,"¡Corre, $(0)! ¡Estás siendo el objetivo!"
+type1,1,NpcComOnTime1,"¡Gehl Bulfs solo puede permanecer activo durante un breve período de <br>! ¡Todas las operaciones, ya casi estás allí! ¡Solo aguanta<br>un poco más!"
+type1,1,NpcComOnTime2,/face2 ¡Sigue así! ¡El Gehl Bulf no tiene<br>mucho más tiempo! ¡Espera un poco más!
+type1,1,NpcComOnRepop,¡Otro Gehl Bulf se ha teletransportado! ¡Todas las operaciones<br>deberían estar en alerta máxima!
+type9f,0,NpcComOnBegin,緊急連絡です！<br>ゲル・ブルフの出現を確認しました！<br>危険です！　避けてください！
+type9f,0,NpcComOnBeginAtRareCase,気をつけてください！<br>ゲル・ブルフが出現しました！<br>可能な限り引きつけて回避を！
+type9f,0,NpcComOnSuccess,ゲル・ブルフの消滅を確認！<br>お見事です！
+type9f,0,NpcComOnFailure,ゲル・ブルフの影響による被害甚大！<br>これ以上は許容できません……<br>残念です。
+type9f,0,NpcComOnTarget,$(0)！　逃げてください！<br>貴方が標的にされています！
+type9f,0,NpcComOnTime1,ゲル・ブルフの活動には<br>限界時間があります。<br>逃げ切りましょう！
+type9f,0,NpcComOnTime2,ゲル・ブルフの活動限界まで<br>あと少しです！<br>頑張ってください！
+type9f,0,NpcComOnRepop,ゲル・ブルフの再転送を確認！<br>気を付けてください！
+type9f,1,NpcComOnBegin,¡Advertencia! Se ha avistado un Gehl Bulf<br>en la zona. ¡Es extremadamente peligroso!<br>¡Haz lo mejor que puedas para evitarlo!
+type9f,1,NpcComOnBeginAtRareCase,¡Cuidadoso! ¡Gehl Bulf detectado! Haz tu mejor esfuerzo<br>para llamar su atención mientras evitas el ataque.
+type9f,1,NpcComOnSuccess,¡Advertencia! Se ha avistado un Gehl Bulf||TAG_0||en la zona. ¡Es extremadamente peligroso!||TAG_1||
+type9f,1,NpcComOnFailure,¡Cuidadoso! ¡Gehl Bulf detectado! Haz tu mejor esfuerzo<br>para llamar su atencion mientras evitas el ataque.
+type9f,1,NpcComOnTarget,"¡Corre, $(0)! ¡Estás en su punto de mira!"
+type9f,1,NpcComOnTime1,El Gehl Bulf no puede arrasar para siempre.<br>¡Sigue adelante!
+type9f,1,NpcComOnTime2,"¡Corre, ||TAG_0||! ¡Estas en su punto de mira!"
+type9f,1,NpcComOnRepop,¡El Gehl Bulf no puede arrasar para siempre.<br>¡Sigue adelante!

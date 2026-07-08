@@ -1,0 +1,63 @@
+section,group,id,text
+common,0,IncidentName,嵐の贈り物
+common,0,TrialBeginMsg,Mr.アンブラを満足させよ！<br>Mr.アンブラの攻撃を1回受けると成功！
+common,0,TrialAbstract,Mr.アンブラに1回叩かれろ！
+common,0,TrialFailureAttack,Mr.アンブラを3回攻撃する
+common,0,TrialFailureMiss,Mr.アンブラが攻撃を5回ミスする
+common,1,IncidentName,The Tempest's Gift
+common,1,TrialBeginMsg,Placate Mr. Umbra! Get attacked by Mr. Umbra once<br>to succeed!
+common,1,TrialAbstract,Get hit by Mr. Umbra once!
+common,1,TrialFailureAttack,Attack Mr. Umbra three times.
+common,1,TrialFailureMiss,Mr. Umbra misses five attacks.
+type1,0,NpcComOnBegin,/face2 Mr.アンブラですね。<br>彼に叩かれると<br>御利益があるようです。
+type1,0,NpcComOnSuccess,/face2 Mr.アンブラが喜んでいますね。<br>何か御利益は受けられましたか？<br>それでは、任務を続けてください。
+type1,0,NpcComOnFailure,/face6 Mr.アンブラが怒っていますね。<br>こうなってしまうと危険です。<br>各員、至急退避してください。
+type1,0,NpcComOnPreBegin,新たな熱源反応が接近！<br>注意してください、来ます！
+type1,1,NpcComOnBegin,"/face2 That's Mr. Umbra. Supposedly, there's some<br>benefit to getting attacked by him."
+type1,1,NpcComOnSuccess,"/face2 Mr. Umbra seems quite pleased, eh?<br>Did you get some kind of benefit?<br>Well anyway, continue your mission."
+type1,1,NpcComOnFailure,"/face6 Mr. Umbra is real ticked off! He's incredibly<br>dangerous when this happens! All operatives,<br>EVACUATE IMMEDIATELY!"
+type1,1,NpcComOnPreBegin,"A new heat source is approaching!<br>Stay alert, here it comes!"
+type2,0,NpcComOnBegin,/face2 Mr.アンブラだな。<br>奴に叩かれると<br>御利益があるらしい。
+type2,0,NpcComOnSuccess,/face2 Mr.アンブラが喜んでいるな。<br>何か御利益はあったか？<br>では、引き続き任務を遂行しろ。
+type2,0,NpcComOnFailure,/face6 Mr.アンブラの機嫌を損ねたようだな。<br>これ以上はどうしようもない。<br>各員、一度退避しろ。
+type2,0,NpcComOnPreBegin,こいつは新たな熱源反応だな。<br>油断するなよ、これはでかいぞ。
+type2,1,NpcComOnBegin,/face2 That's Mr. Umbra. Apparently there's some<br>benefit to getting hit by him.
+type2,1,NpcComOnSuccess,"/face2 Mr. Umbra seems quite pleased, eh?<br>Did you get some kind of benefit?<br>Well, better get back to executing your mission."
+type2,1,NpcComOnFailure,/face6 Looks like Mr. Umbra has lost his temper.<br>There's nothing else we can do now.<br>All operatives withdraw!
+type2,1,NpcComOnPreBegin,"New heat source. Watch out, it's a big one!"
+type3,0,NpcComOnBegin,/face2 アンブラ様！　Mr.アンブラ様ですね！<br>彼に叩かれると<br>御利益あるみたいですよ？
+type3,0,NpcComOnSuccess,/face2 アンブラ様、嬉しそうですね！<br>何か御利益はありましたか？<br>この調子で任務を続けてください。
+type3,0,NpcComOnFailure,/face6 アンブラ様を怒らせてしまいましたね……<br>こうなってはどうしようもないです。<br>至急退避してください。
+type3,0,StruckUmblla,/face3 ダメですよ！アンブラ様を<br>攻撃しないでください！<br>彼が機嫌を損ねると大変ですよ。
+type3,0,BeStruckByUmblla,大丈夫ですか？<br>あと1回、あと1回の辛抱です！
+type3,0,NpcComOnPreBegin,うわわっ、すっごい熱源反応！<br>き、気をつけてくださいね！
+type3,1,NpcComOnBegin,/face2 Mr. Umbra! It's Mr. Umbra! I hear there's some<br>benefit to getting hit by him?
+type3,1,NpcComOnSuccess,"/face2 Mr. Umbra seems rather happy!<br>Did you get anything good?<br>Well, as you were. Continue your mission!"
+type3,1,NpcComOnFailure,"/face6 Uh-oh, looks like you've angered Mr. Umbra...<br>There's nothing you can do once he gets like<br>this. SOUND THE RETREAT!"
+type3,1,StruckUmblla,/face3 NO!! Don't attack Mr. Umbra! You're in deep<br>trouble if he loses his temper!
+type3,1,BeStruckByUmblla,"Are you OK!? One more hit, you just have to<br>endure one more hit!!"
+type3,1,NpcComOnPreBegin,"Whoa, we're reading a huge heat source!<br>B-Be careful, please!"
+type6,0,NpcComOnPreBegin,周囲への警戒を強めてください。<br>新たな反応が感知されています。
+type6,0,NpcComOnBegin,/face2 この反応は、Mr.アンブラですね！<br>彼に叩かれると御利益があるようです。
+type6,0,NpcComOnSuccess,/face2 Mr.アンブラ、嬉しそうです。<br>何か御利益はありましたか？
+type6,0,NpcComOnFailure,/face6 Mr.アンブラが怒っています。<br>このままでは危険です。<br>一時退避してください。
+type6,1,NpcComOnPreBegin,Watch your perimeter.<br>We're getting some readings.
+type6,1,NpcComOnBegin,"/face2 We've detected Mr. Umbra!<br>Supposedly, there's some benefit to getting<br>attacked by him."
+type6,1,NpcComOnSuccess,/face2 Mr. Umbra seems quite pleased!<br>Did you get anything good?
+type6,1,NpcComOnFailure,/face6 Mr. Umbra is enraged!<br>He's incredibly dangerous when<br>he's like this! EVACUATE NOW!
+type9,0,NpcComOnPreBegin,周辺、警戒してください！<br>不審な反応があります！
+type9,0,NpcComOnBegin,/face2 あれ、Mr.アンブラですね！<br>彼に叩いてもらうと<br>御利益があるかもしれませんよ！
+type9,0,NpcComOnSuccess,/face2 Mr.アンブラが嬉しそうにしてます！<br>これできっと御利益もありますよ！
+type9,0,NpcComOnFailure,/face6 Mr.アンブラは怒っているようです！<br>こうなるとどうしようもないですね。<br>一旦退避してください。
+type9,1,NpcComOnPreBegin,Stay on high alert!<br>Suspicious readings detected!
+type9,1,NpcComOnBegin,"/face2 Oh hey, it's Mr. Umbra!<br>If he graces you with a severe beating, you<br>might reap some benefits! Maybe!"
+type9,1,NpcComOnSuccess,"/face2 Looks like you've made Mr. Umbra quite<br>happy! Now you'll get something good,<br>for sure!"
+type9,1,NpcComOnFailure,/face6 Looks like Mr. Umbra is MAD! There's nothing<br>you can do once he gets like this.<br>Everyone withdraw for now!
+type9f,0,NpcComOnPreBegin,周辺、警戒してください！<br>不審な反応があります！
+type9f,0,NpcComOnBegin,/face2 あれ、Mr.アンブラですね！<br>彼に叩いてもらうと<br>御利益があるかもしれませんよ！
+type9f,0,NpcComOnSuccess,/face2 Mr.アンブラが嬉しそうにしてます！<br>これできっと御利益もありますよ！
+type9f,0,NpcComOnFailure,/face6 Mr.アンブラは怒っているようです！<br>こうなるとどうしようもないですね。<br>一旦退避してください。
+type9f,1,NpcComOnPreBegin,Stay on high alert!<br>Suspicious readings detected!
+type9f,1,NpcComOnBegin,"/face2 Oh hey, it's Mr. Umbra!<br>If he graces you with a severe beating, you<br>might reap some benefits! Maybe!"
+type9f,1,NpcComOnSuccess,"/face2 Looks like you've made Mr. Umbra quite<br>happy! Now you'll get something good,<br>for sure!"
+type9f,1,NpcComOnFailure,/face6 Looks like Mr. Umbra is MAD! There's nothing<br>you can do once he gets like this.<br>Everyone withdraw for now!

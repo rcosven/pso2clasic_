@@ -1,0 +1,97 @@
+section,group,id,text
+common,0,IncidentName,時限爆弾解除
+common,0,TrialBeginMsg,全ての時限爆弾を解除せよ！
+common,0,TrialAbstract,全ての時限爆弾を解除せよ！
+common,0,ToastOnHalfFinish,時限爆弾残存数、あと半分。
+common,0,ToastOnLast,時限爆弾残存数、あと１つ。
+common,0,ToastCollect,$(0)によって時限爆弾が解除されました。
+common,0,ToastCollect2,時限爆弾が解除されました。
+common,0,ToastRewards,$(0)が$(1)EXP $(2)メセタ獲得
+common,1,IncidentName,Defusing Time Bombs
+common,1,TrialBeginMsg,Defuse all the time bombs!
+common,1,TrialAbstract,Defuse all the time bombs!
+common,1,ToastOnHalfFinish,Half of the time bombs remain.
+common,1,ToastOnLast,Only one time bomb remains.
+common,1,ToastCollect,$(0) defused a time bomb.
+common,1,ToastCollect2,A time bomb was defused.
+common,1,ToastRewards,$(0) earned $(1) EXP and $(2) meseta.
+type1,0,NpcComOnBegin,ダーカーによる時限式の爆弾が出現。<br>すでに複数個が確認されています。<br>何としても、爆発前に対処して下さい。
+type1,0,NpcComOnBegin2,時限爆弾は威力こそ高いですが<br>仕組みを理解すれば解除可能です。<br>よく、その爆弾を調べてみて下さい。
+type1,0,NpcComOnSuccess,全ての時限爆弾の解除を確認。<br>お疲れ様でした。
+type1,0,NpcComOnFailure,時限爆弾、爆発を検知。<br>……無事、でしょうか？
+type1,0,NpcComOnLastHalf,残りの時限爆弾は約半数です。<br>引き続き解除を続けて下さい。
+type1,0,NpcComOnLastOne,残りの時限爆弾はあと１つです。
+type1,0,NpcComOnCorrect,対象の時限爆弾、熱量低下。<br>無力化を確認しました。解除成功です。
+type1,0,NpcComOnIncorrect,選択に間違いがあったようです。<br>再び選択が可能になるまでは<br>時間がかかるようですね。
+type1,0,NpcComOnRemain30,時限爆弾のタイムリミットまで<br>残り、30秒です。<br>対処を急いでください。
+type1,0,NpcComOnJoin,現在、ダーカーの時限爆弾に対する<br>対応を行っています。<br>各員、協力をお願いします。
+type1,1,NpcComOnBegin,We've confirmed the presence of several time<br>bombs placed by the Falspawn. You must<br>defuse them before they explode!
+type1,1,NpcComOnBegin2,"The time bombs are especially powerful, but<br>you can defuse them if you can figure out their<br>mechanisms. Investigate the bombs carefully."
+type1,1,NpcComOnSuccess,Confirming that all time bombs are defused.<br>Great work.
+type1,1,NpcComOnFailure,"Detecting a time bomb explosion!... You're OK,<br>right?"
+type1,1,NpcComOnLastHalf,Half of the time bombs remain.<br>Continue defusing them!
+type1,1,NpcComOnLastOne,Only one time bomb remains.
+type1,1,NpcComOnCorrect,The targeted time bomb has cooled down.<br>Confirmed defused.
+type1,1,NpcComOnIncorrect,Looks like you made a wrong choice. It'll take<br>a little while before you can choose again.
+type1,1,NpcComOnRemain30,Only 30 seconds remain until time is up.<br>Hurry and defuse the time bombs!
+type1,1,NpcComOnJoin,"We're currently working on defusing the<br>Falspawn's time bombs.<br>All operatives, please help!"
+type2,0,NpcComOnBegin,まずいな……ダーカーの時限爆弾が<br>そこかしこに出現しているようだ。<br>爆発前に対処したい、急げ。
+type2,0,NpcComOnBegin2,かの時限爆弾の威力は図抜けているが<br>仕掛けの謎が解れば無力化も可能だ。<br>時間の許す限り、解除に取り組め。
+type2,0,NpcComOnSuccess,よし、全ての時限爆弾の停止を確認。<br>よくやった。
+type2,0,NpcComOnFailure,異常熱量を感知！<br>止められなかったか……！<br>くっ……無事か？
+type2,0,NpcComOnLastHalf,よし、残りの時限爆弾の数は<br>あと半分ほどだ。<br>引き続き、解除を続けろ。
+type2,0,NpcComOnLastOne,時限爆弾、残りはあと一つだ。<br>最後まで気を抜くなよ。
+type2,0,NpcComOnCorrect,時限爆弾の反応が弱まったな。<br>解除に成功したようだ。
+type2,0,NpcComOnIncorrect,解除ミスだな……<br>その様子だと、しばらくは<br>ポイントの再選択ができないな。
+type2,0,NpcComOnRemain30,時限爆弾のタイムリミットまで<br>あと30秒だ。<br>対処を急げ。
+type2,0,NpcComOnJoin,いいところに来たな。<br>現在、ダーカーの時限爆弾の<br>対応を行っている。手伝えるか？
+type2,1,NpcComOnBegin,"Crap, looks like we've got Falspawn time<br>bombs all over the place.<br>Defuse them before they blow!"
+type2,1,NpcComOnBegin2,"The destructive power of the time bombs is<br>off the charts, but you can nullify them if you<br>figure out how they work.<br>Deactivate as many as time allows!"
+type2,1,NpcComOnSuccess,"Right, confirming that all time bombs have<br>been stopped. Well done!"
+type2,1,NpcComOnFailure,Detecting abnormal heat levels! Guess that<br>means some bombs went off... You okay?
+type2,1,NpcComOnLastHalf,"Okay, about half of the time bombs remain.<br>Keep defusing them."
+type2,1,NpcComOnLastOne,Only one time bomb remains. Keep going!
+type2,1,NpcComOnCorrect,The time bomb's reading has weakened.<br>Seems you have successfully defused it.
+type2,1,NpcComOnIncorrect,Defusing error... Looks like you'll have to wait<br>a bit before you can try again.
+type2,1,NpcComOnRemain30,You've got 30 seconds left until the time<br>bombs blow! Hurry it up!
+type2,1,NpcComOnJoin,You've come at a great time! Right now we're<br>defusing some Falspawn time bombs.<br>Can you help?
+type3,0,NpcComOnBegin,こ、この反応っ！　警戒、警戒っ！<br>ダーカーの時限爆弾が出現です！<br>しかもすっごくたっくさん！
+type3,0,NpcComOnBegin2,で、でもでも安心して下さい！<br>よく見れば止めるヒントがあるはず！<br>よーく調べて、止めて下さいー！
+type3,0,NpcComOnSuccess,/face2 時限爆弾、ぜーんぶ止まりました！<br>やりましたね！　お疲れ様ですっ！
+type3,0,NpcComOnFailure,あっちゃあー……大爆発……<br>って、そうじゃない！<br>だ、だだっ、大丈夫ですかっ？！
+type3,0,NpcComOnLastHalf,残りはあと半分ですよー！<br>頑張って、頑張ってくださいっ！
+type3,0,NpcComOnLastOne,残り、あと一つです！<br>最後の正念場、ってやつですよ！<br>……あれ、違う？
+type3,0,NpcComOnCorrect,その時限爆弾、止まったようですよ！<br>やりました！　解除大成功ですっ！
+type3,0,NpcComOnIncorrect,うーん、間違えちゃった感じです。<br>再び選択ができるようになるまでは<br>少し時間がかかりそうですねー……
+type3,0,NpcComOnRemain30,あわっ、あわわっ！　時限爆弾<br>あと30秒で爆発しちゃいます！<br>急いで、急いでくださいー！
+type3,0,NpcComOnJoin,/face2 いいところに来てくれました！<br>ダーカーの時限爆弾解除を<br>手伝ってはもらえませんかっ？
+type3,1,NpcComOnBegin,"Th-These signals! Warning, warning! Looks<br>like we've got Falspawn time bombs on<br>our hands...and a whole lot of 'em at that!"
+type3,1,NpcComOnBegin2,B-but don't panic just yet! If you look carefully<br>there should be hints on how you can stop<br>them! Check 'em out real carefully!
+type3,1,NpcComOnSuccess,/face2 All time bombs have been stopped! You did it!<br>Great job!
+type3,1,NpcComOnFailure,"Holy cripes...that was a hell of a blast... Well,<br>not really (for me anyway)! A-A-Are you OK!?"
+type3,1,NpcComOnLastHalf,Half of the bombs remain! Keep it up!
+type3,1,NpcComOnLastOne,Only one remains! This is the moment of<br>truth! ...Not sure what I mean either!
+type3,1,NpcComOnCorrect,You stopped that time bomb! Great work!<br>Defusion successful!
+type3,1,NpcComOnIncorrect,"Hmm, seems like you made a mistake.<br>I guess it'll take some time until you can<br>make another selection....."
+type3,1,NpcComOnRemain30,"Uh oh!! You've only got 30 seconds left until<br>the time bombs blow! Hurry up, hurrryyy!!"
+type3,1,NpcComOnJoin,/face2 You came at a great time! Could you help<br>defuse these Falspawn time bombs?
+type9f,0,NpcComOnBegin,ダーカーの時限式爆弾が出現！<br>すでに複数個の反応があります！<br>急いで対処してください！
+type9f,0,NpcComOnBegin2,時限式爆弾は、威力は高いですが<br>仕掛けの謎が解ければ解除可能です。<br>爆弾の外周をよく見てください！
+type9f,0,NpcComOnSuccess,時限式爆弾、すべて解除！<br>お疲れさまでした！
+type9f,0,NpcComOnFailure,時限式爆弾の爆発を検知！<br>ご無事ですか！？
+type9f,0,NpcComOnLastHalf,残りあと半分です！<br>引き続き、解除を続けてください！
+type9f,0,NpcComOnLastOne,残りの時限式爆弾、あと１つです！
+type9f,0,NpcComOnCorrect,時限式爆弾、熱量低下を確認。<br>無力化されましたね！<br>解除成功です！
+type9f,0,NpcComOnIncorrect,あちゃー、違うみたいですね。<br>もう一度爆弾の外周をよく見て<br>正解を探してください！
+type9f,0,NpcComOnRemain30,時限式爆弾のタイムリミットまで<br>残り３０秒！　ご注意を！
+type9f,0,NpcComOnJoin,/face2 いいところに来てくれました！<br>ダーカーの時限爆弾解除を<br>手伝ってはもらえませんか？
+type9f,1,NpcComOnBegin,Falspawn time bombs have appeared! Picking<br>up multiple signals! Hurry and defuse them!
+type9f,1,NpcComOnBegin2,"Time bombs are very powerful, but you can<br>defuse them if you figure out how they work.<br>Look really carefully around the outside of<br>the bomb!"
+type9f,1,NpcComOnSuccess,All time bombs defused! Good job!
+type9f,1,NpcComOnFailure,Detecting a time bomb explosion!<br>Are you hurt!?
+type9f,1,NpcComOnLastHalf,Half of the time bombs remain!<br>Keep defusing them!
+type9f,1,NpcComOnLastOne,Only one time bomb remains!
+type9f,1,NpcComOnCorrect,Reading that the time bomb is cooling off.<br>Looks like you deactivated it!
+type9f,1,NpcComOnIncorrect,Oop! Looks like that was wrong. Look really<br>carefully around the outside of the bomb one<br>more time and search for the right code!
+type9f,1,NpcComOnRemain30,Only 30 seconds remain until the time bombs<br>go off! Be careful!
+type9f,1,NpcComOnJoin,/face2 You came at a great time! Would you mind<br>helping defuse these Falspawn time bombs?

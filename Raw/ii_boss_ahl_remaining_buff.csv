@@ -1,0 +1,15 @@
+section,group,id,text
+common,0,IncidentName,共振エネミー討伐
+common,0,TrialBeginMsg,指定エネミーを同時に討伐せよ！
+common,0,TrialAbstract,指定エネミーを同時に討伐せよ！
+common,1,IncidentName,Suppress Resonant Enemies
+common,1,TrialBeginMsg,Supress both enemies at once!
+common,1,TrialAbstract,Supress both enemies at once!
+type9,0,NpcComOnBegin,エネミー同士の共振反応を確認。<br>嫌な予感がします……。<br>可能な限り同時に撃破を！
+type9,0,NpcComOnSuccess,敵性反応、すべて消失！<br>目標、達成です！
+type9,0,NpcComOnDefeatedFirstOne,一方の目標の反応消失を確認。<br>すみやかに残りを撃破してください！
+type9,0,NpcComOnAddCondition,残存目標の反応増大！<br>ご注意を！
+type9,1,NpcComOnBegin,Two resonant enemies detected. I've got a bad<br>feeling about this... Try to take them both out<br>at once!
+type9,1,NpcComOnSuccess,Enemy presence fully eliminated!<br>Mission accomplished!
+type9,1,NpcComOnDefeatedFirstOne,One enemy presence eliminated.<br>Destroy the other one now!
+type9,1,NpcComOnAddCondition,The remaining one has grown more powerful!<br>Be careful!

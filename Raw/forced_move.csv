@@ -1,0 +1,57 @@
+section,group,id,text
+common,0,SharedServers,共有サーバー
+common,0,MoveSharedServers,共有サーバーへ移動します。
+common,0,NormalServers,通常サーバー
+common,0,ReturnNormalServers,通常サーバーへ戻ります。
+common,0,SelectPlace,転送先選択
+common,0,SelectPlaceMessage,フィールドにテレパイプが置かれています。<br>どちらに移動しますか？
+common,0,TransportPlace,転送先
+common,0,Telepipe,テレパイプ
+common,0,StartPoint,スタート位置
+common,0,ReturnCampship,キャンプシップに戻りますか?
+common,0,ReturnCampshipWarning,報酬を受け取り可能な数まで受け取っていませんが、<br>キャンプシップに戻りますか？<br><br>報酬を受け取る場合は、「いいえ」を選択し、<br>エクストリーム端末にアクセスしてください。<br><br><red>※一度キャンプシップに戻ると、<br>　報酬を受け取ることができなくなります。<c>
+common,0,ReturnWithoutCampship,帰還しますか?
+common,0,ReturnCampshipYes,戻る
+common,0,ReturnCampshipNo,いいえ
+common,1,SharedServers,Shared Server
+common,1,MoveSharedServers,Move to shared server.
+common,1,NormalServers,Standard Server
+common,1,ReturnNormalServers,Return to standard server.
+common,1,SelectPlace,Select Destination
+common,1,SelectPlaceMessage,A Telepipe is on the field. Where would you like<br>to go?
+common,1,TransportPlace,Destination
+common,1,Telepipe,Telepipe
+common,1,StartPoint,Starting Point
+common,1,ReturnCampship,Return to the Gateway Ship?
+common,1,ReturnCampshipWarning,"You haven't accepted all available rewards yet.<br>Would you like to return to the Gateway Ship?<br><br>Select ""Cancel"" and access the Extreme Terminal <br>to accept your rewards.<br><br><red>Warning: If you return to the Gateway Ship,<br>you will not be able to accept your rewards.<c>"
+common,1,ReturnWithoutCampship,Return?
+common,1,ReturnCampshipYes,Back
+common,1,ReturnCampshipNo,No
+Message,0,QuestClear,クエスト終了後は<br>フィールドに降りることは<br>できません。
+Message,0,CampshipToField,出口
+Message,0,ToFieldClear,クエストクリア後は<br>フィールドに降りることは<br>できません。
+Message,0,ToFieldFaild,クエスト失敗後は<br>フィールドに降りることは<br>できません。
+Message,0,ToOtherSinglePartyArea,この先のエリアには<br>進入が許可されていません。
+Message,1,QuestClear,You cannot return to the field after ending a<br>quest.
+Message,1,CampshipToField,Exit
+Message,1,ToFieldClear,You cannot return to the field after completing<br>a quest.
+Message,1,ToFieldFaild,You cannot return to the field after failing a<br>quest.
+Message,1,ToOtherSinglePartyArea,You don't have permission to enter this area.
+RetryQuest,0,NowBlockRetry,現在のブロックでリトライ
+RetryQuest,0,MultiBlockRetry,複数ブロックの検索でリトライ
+RetryQuest,0,ReturnCampship,キャンプシップへ戻る
+RetryQuest,0,CloseWindow,戻る
+RetryQuest,0,RetryConfirmHeader,リトライ確認
+RetryQuest,0,NowBlockRetryDescription,現在のブロックで検索して<br>クエストをリトライしますか?
+RetryQuest,0,MultiBlockRetryDescription,複数のブロックを検索して<br>クエストをリトライしますか?
+RetryQuest,0,RetryYes,リトライする
+RetryQuest,0,RetryNo,いいえ
+RetryQuest,1,NowBlockRetry,Retry in the current block
+RetryQuest,1,MultiBlockRetry,Search across multiple blocks and retry
+RetryQuest,1,ReturnCampship,Return to the Gateway Ship
+RetryQuest,1,CloseWindow,Back
+RetryQuest,1,RetryConfirmHeader,Confirm Retry
+RetryQuest,1,NowBlockRetryDescription,Search in the current block and retry quest?
+RetryQuest,1,MultiBlockRetryDescription,Search in multiple blocks and retry quest?
+RetryQuest,1,RetryYes,Retry
+RetryQuest,1,RetryNo,No

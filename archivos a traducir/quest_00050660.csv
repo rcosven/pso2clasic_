@@ -1,0 +1,41 @@
+section,group,id,text
+Basic,0,Title,新世を成す幻創の造神
+Basic,0,Explanation,惑星・地球の太平洋上において<br>強大な幻創種の反応を確認した。<br>地球各地から集めた膨大なエーテルにより<br>世界を創り変えようとしている。<br>アークス各員は、至急現地へと赴き<br>目標を撃破し、その目的を阻止せよ。<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,"Deus Esca, Hacedor de Nuevas Epocas"
+Basic,1,Explanation,"We have readings corresponding to a powerful<br>phantasm originating in the Pacific Ocean. It is<br>attempting to remake the world using the<br>aether it collected from all over Earth. ARKS <br>members are to defeat the target. <br>-------------------------------------------<br>Quest can only be completed $(0) time(s).<br>Maximum damage limited to 999,999.<br>You will fail if mission objectives are not<br>fulfilled or time limit is exceeded."
+QuestTarget,0,SimpleExplanation,デウス・エスカを撃退せよ！
+QuestTarget,1,SimpleExplanation,Repele a Deus Esca!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+PreTransportDirection,0,NpcComMsg1,これより、太平洋上に出現した<br>幻創大陸の中心にそびえ立つ<br>世界樹の消滅作戦を開始します。
+PreTransportDirection,0,NpcComMsg2,対象内を跋扈する幻創造神を倒せば、<br>世界樹は幻創大陸ごと消滅するはずです。<br>激戦が予想されます、お気をつけて！
+PreTransportDirection,1,NpcComMsg1,The operation to destroy the World Tree<br>on the phantasmal landmass over<br>the Pacific Ocean will commence shortly.
+PreTransportDirection,1,NpcComMsg2,"Defeating Deus Esca, who controls <br>the target area, should destroy the <br>World Tree and the phantasmal <br>landmass. Expect fierce resistance!"
+AreaName,0,Area0S,世界樹
+AreaName,0,Area0L,惑星・地球　世界樹
+AreaName,0,Area1S,世界樹の頂
+AreaName,0,Area1L,惑星・地球　世界樹の頂
+AreaName,0,Area2S,世界樹の頂
+AreaName,0,Area2L,惑星・地球　世界樹の頂
+AreaName,0,Area3S,世界樹の頂
+AreaName,0,Area3L,惑星・地球　世界樹の頂
+AreaName,1,Area0S,El arbol del mundo
+AreaName,1,Area0L,Tierra - El arbol del mundo
+AreaName,1,Area1S,La cima del arbol del mundo
+AreaName,1,Area1L,Tierra - La cima del arbol del mundo
+AreaName,1,Area2S,La cima del arbol del mundo
+AreaName,1,Area2L,Tierra - La cima del arbol del mundo
+AreaName,1,Area3S,La cima del arbol del mundo
+AreaName,1,Area3L,Tierra - La cima del arbol del mundo
+QuestSuccessAreaName,0,Area3S,イースター島
+QuestSuccessAreaName,0,Area3L,惑星・地球　イースター島
+QuestSuccessAreaName,1,Area3S,Isla de Pascua
+QuestSuccessAreaName,1,Area3L,Tierra - Isla de Pascua
+PlanetName,0,QuestInfoPlanetName,惑星・地球
+PlanetName,1,QuestInfoPlanetName,tierra

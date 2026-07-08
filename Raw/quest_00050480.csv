@@ -1,0 +1,35 @@
+section,group,id,text
+Basic,0,Title,世界を壊す流転の徒花
+Basic,0,Explanation,アークス各員に緊急連絡。<br>惑星ナベリウス上空に【深遠なる闇】と<br>【双子】が出現し、地表に向けて侵攻を<br>開始した。【双子】は【深遠なる闇】への<br>進路を阻むように存在し、連戦は確実だ。<br>侵攻を阻止し、敵性存在を殲滅せよ。<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>ランキング期間/任務発生から１時間３０分<br>失敗条件/任務の失敗、制限時間の経過
+Basic,1,Title,"Barren Blossom, Destroyer of All"
+Basic,1,Explanation,"This is an Urgent message for ARKS operatives. The<br>Profound Darkness and Gemini the Duplicate have<br>been spotted in the Naverius Skies and have started<br>to assault the surface. Consecutive combat is certain,<br>because Gemini the Duplicate is hindering on the<br>way. Defeat the target to prevent further attacks.<br>-------------------------------------------<br>This quest can only be completed $(0) time(s).<br>Ranking Time: 1 hr and 30 min from mission start.<br>You will fail this quest if you exceed the time limit."
+QuestTarget,0,SimpleExplanation,【深遠なる闇】の撃破
+QuestTarget,1,SimpleExplanation,The Defeat of Profound Darkness
+AreaName,0,Area0S,惑星ナベリウス上空
+AreaName,0,Area0L,惑星ナベリウス上空　揚陸艇
+AreaName,0,Area1S,壊世の果て
+AreaName,0,Area1L,壊世の果て
+AreaName,1,Area0S,Naverius Skies
+AreaName,1,Area0L,Naverius Skies - Landing Craft
+AreaName,1,Area1S,Tainted End
+AreaName,1,Area1L,Tainted End
+QuestSuccessAreaName,0,Area1S,帰還の場
+QuestSuccessAreaName,0,Area1L,帰還の場
+QuestSuccessAreaName,1,Area1S,Place of Return
+QuestSuccessAreaName,1,Area1L,Place of Return
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+PreTransportDirection,0,NpcComMsg1,間もなく、最前線へ転送されます。<br>目的はダークファルス【双子】を殲滅し<br>【深遠なる闇】への道を作ること。
+PreTransportDirection,0,NpcComMsg2,相手はダークファルス……その力の底は<br>計り知れません。どうか、気をつけて<br>無事に帰ってきてください。
+PreTransportDirection,1,NpcComMsg1,You will be soon teleported to the front lines.<br>Your objective is to eradicate Dark Falz [Gemini]<br>and open a path to the Profound Darkness.
+PreTransportDirection,1,NpcComMsg2,"You'll be facing one of the Dark Falz collective.<br>We have no idea how powerful it is, so be<br>careful. Do whatever it takes to come back safely."
+PreTransportDirection1,0,NpcComMsg1,【深遠なる闇】への道は開かれました。<br>残る目的は、かの強大な目標を<br>打ち倒すことのみです。
+PreTransportDirection1,0,NpcComMsg2,細かな指示や命令はありません。<br>敢然と戦い、必ず生還してください。<br>……絶対に、絶対ですよ。
+PreTransportDirection1,1,NpcComMsg1,The path to the Profound Darkness has been <br>opened.<br>All that's left is to defeat it.
+PreTransportDirection1,1,NpcComMsg2,We can provide no specific orders.<br>Fight valiantly and return alive.<br>Period.

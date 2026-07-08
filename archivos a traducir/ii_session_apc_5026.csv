@@ -1,0 +1,35 @@
+﻿section,group,id,text
+common,0,Begin,開始5008
+common,0,Success,成功5008
+common,0,Failure,失敗5008
+common,0,Dead,自分死亡5008
+common,0,BuddyDead,相手死亡5008
+common,0,Evolution,発展5008
+common,1,Begin,Empezar5008
+common,1,Success,Exito5008
+common,1,Failure,Fracaso5008
+common,1,Dead,ustedmurio5008
+common,1,BuddyDead,SocioMurio5008
+common,1,Evolution,Evolucion5008
+5008,0,Begin,/mn38 /ci2 2 ふふふ、ケーキ屋さん。<br>ケーキ屋さあん。そんな怖がらずに<br>さっさと出てきてくださいねえ。
+5008,0,Success,/mn17 /ci2 2 あらあら、もう終わりですかあ？<br>つまらないですねえ、物足りないです。<br>だから、次の獲物を探しましょうねえ。
+5008,0,Failure,/ci2 2 ケーキを食べてみたかったんですが<br>上手くいかないものですねえ。<br>ま、どうでもいいんですけど。
+5008,0,Dead,/ci4 1 リサ、ちょっとくたびれちゃったので<br>このあたりで休憩です。
+5008,0,BuddyDead,/ci4 2 ケーキ……？　ああ、そういえば<br>そういえばそうでしたねえ。<br>リサ、すっかり忘れてましたよお。
+5008,0,Evolution,/ci2 2 おやおやあらあらまだまだたくさん<br>出てきてくれるみたいですよお？
+5008,1,Begin,"/mn38 /ci2 2 Jejeje... Yoohoo, sal de la pequeña panadería.<br>No tengas miedo."
+5008,1,Success,"{'en': '/mn17 /ci2 1 t5 Si llegamos a este punto, entonces ire a la panaderia'}"
+5008,1,Failure,"/ci2 2 Tenía muchas ganas de comer un pastel, pero este<br>no salió muy bien. No es gran cosa,<br>supongo."
+5008,1,Dead,"/ci4 1 Estoy bastante agotado, asi que creo que tomare un<br>respiro aqui."
+5008,1,BuddyDead,"/ci4 2 ¿Pastel...? Vaya, ahora que lo pienso, eso ES lo que buscábamos <br>... eh. Se me olvidó por completo."
+5008,1,Evolution,"/ci2 2 Dios mío, parece que todavía hay muchos<br>malos saliendo de la nada."
+5008v2,0,Begin,/ci2 2 <%me>さん<br>殲滅はリサの得意分野ですから<br>ここリサにお任せくださいねえ？
+5008v2,0,Success,/ci2 5 さて、このあたりはリサたちが<br>任されましたので、あなたは<br>先に進んでくださいねえ。
+5008v2,0,Failure,エネミーを殺すのは好きですけど<br>仲間を殺されるのは嫌いなんですよお。<br>そうならないうちに帰りますねえ。
+5008v2,0,Dead,おや、リサにこんなことして<br>ただで済むと思っているんですかねえ？
+5008v2,0,BuddyDead,フーリエさん。<br>自分で望んで来たのですから<br>ちゃんと生きて帰りましょうねえ？
+5008v2,1,Begin,"/ci2 2 Eh,<%me>? <br>La aniquilación total es lo que mejor hago,<br>así que lo haré desde aquí, ¿vale?"
+5008v2,1,Success,"/ci2 5 Déjanos el resto a nosotros ahora, ¿vale? <br>Sigues adelante."
+5008v2,1,Failure,"Killing enemies is so fun, but watching friends<br>get killed is a major downer. Better get back<br>before things heat up, m'kay?"
+5008v2,1,Dead,"No creerás que te dejaré salirte con la tuya,<br>¿verdad?"
+5008v2,1,BuddyDead,{'en': '/toge /mn15 /ci2 6 ¿Esa panaderia seria una guia para cruzar el enjambre de enemigos?'}

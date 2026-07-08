@@ -1,0 +1,19 @@
+section,group,id,text
+common,0,IncidentName,全てのエネミーを撃破せよ！
+common,0,TrialBeginMsg,足場に気を付けつつ、エネミーを倒せ！
+common,0,TrialAbstract,足場に気を付けつつ、エネミーを倒せ！
+common,1,IncidentName,Destroy all Enemies!
+common,1,TrialBeginMsg,Watch your footing as you take down the enemies!
+common,1,TrialAbstract,Watch your footing as you take down the enemies!
+type5,0,NpcComOnBegin,/face2 おやっ、フィールドが訓練モードに<br>切り替わったみたいですね！
+type5,0,NpcComOnSuccess,/face2 はーい、訓練終了です！<br>ほんと、おつかれさまでした！
+type5,0,DirectionAim,枠だけ。現状、追跡モードは未使用
+type5,0,DirectionRandom,/face2 この状態の時は、徐々に足場が<br>ダメージゾーンに変わっていきますから<br>敵だけじゃなく、足下にも注意ですよ！
+type5,0,DamageHalf,/face2 どんどん安全な足場がなくなって<br>いってますよ、急いで急いで－！
+type5,0,DamageMax,/face2 この状況でまだ戦えるんですか……<br>ふはー、すごいですねぇ
+type5,1,NpcComOnBegin,"/face2 Whoa, looks like the field switched to<br>training mode!"
+type5,1,NpcComOnSuccess,"/face2 Aaand training is complete! Great job, for real!"
+type5,1,DirectionAim,Frame only. Tracking mode currently<br>not in use.
+type5,1,DirectionRandom,"/face2 When this happens, the ground under your<br>feet will gradually turn into damage zones, so<br>it's not just enemies you need to worry about!<br>Watch your step!"
+type5,1,DamageHalf,"/face2 You're running out of safe ground!<br>Hurry, hurry, hurry!"
+type5,1,DamageMax,"/face2 You can still fight under these conditions...?<br>Wow, you're amazing!"

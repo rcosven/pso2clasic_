@@ -1,0 +1,73 @@
+section,group,id,text
+common,0,IncidentName,炎のＡＮＧＥＬ
+common,0,TrialBeginMsg,炎に囲まれた要救助者を救助せよ！
+common,0,TrialAbstract,炎に囲まれた要救助者を救助せよ！
+common,1,IncidentName,Angel in the Flames
+common,1,TrialBeginMsg,Save survivors from the flaming detritus!
+common,1,TrialAbstract,Save survivors from the flaming detritus!
+type1,0,NpcComOnBegin,市街地のあちこちで、逃げ遅れた人が<br>救助を待っています！<br>至急救助に向かって下さい！
+type1,0,NpcComOnSuccess,/face2 反応のあった全ての要救助者の<br>救助を確認しました。<br>お疲れ様でした！
+type1,0,NpcComOnFailure,これ以上は危険です！<br>リスクは高いですが、要救助者全員を<br>強制的に転送します！
+type1,0,NotifyPos,要救助者の位置を確認しました。<br>マーカーに表示された<br>要救助者を助け出してください！
+type1,0,NotifyMethod,安全に転送するため<br>消火後、要救助者にアクセスして<br>正確な座標を送ってください。
+type1,0,FirstTrans,要救助者の座標を特定。<br>転送確認完了です！<br>救助を続けて下さい！
+type1,0,RescueeFound,要救助者が炎に囲まれています。<br>炎を消さないと、転送は危険です。<br>まずは消火してください。
+type1,0,GeneratorAdd,新たな要救助者を確認しました。<br>全て救助してください！
+type1,0,TimeLimitNear,要救助者、危険な状況です！<br>急いで救助に向かってください！
+type1,0,TimeLimitHurry,要救助者のバイタル、危険域です！<br>急いでください！
+type1,0,RescueMethod,消火を確認。<br>要救助者にアクセスし、<br>正確な座標を送ってください。
+type1,1,NpcComOnBegin,Some survivors still trapped in the city need<br>your help! Take action immediately!
+type1,1,NpcComOnSuccess,/face2 All survivors on radar have been rescued.<br>Job well done!
+type1,1,NpcComOnFailure,"This is getting too dangerous! It's risky, but<br>I'll try to teleport all survivors out of there!"
+type1,1,NotifyPos,I've marked the locations of all survivors.<br>Now go get them out of there!
+type1,1,NotifyMethod,"To teleport survivors out safely, first put out<br>the flames, then move in and send me their<br>coordinates."
+type1,1,FirstTrans,Coordinates confirmed. Ready to teleport!<br>Now go on to the next one!
+type1,1,RescueeFound,The victims are surrounded by flames.<br>Put them out first or teleporting could<br>get dangerous!
+type1,1,GeneratorAdd,There are more people in need.<br>Rescue them all!
+type1,1,TimeLimitNear,It's getting really dangerous! Save those<br>survivors before it's too late!
+type1,1,TimeLimitHurry,Their vitals are dropping! Please hurry!
+type1,1,RescueMethod,Flames extinguished. Now approach the<br>survivors and get me those coordinates.
+type2,0,NpcComOnBegin,市街地で広域にわたって<br>要救助者が存在する。<br>急ぎ救助に向かえ。
+type2,0,NpcComOnSuccess,全ての要救助者の転送を確認。<br>よくやった。
+type2,0,NpcComOnFailure,もう間に合わん。<br>リスクは相当に高いが<br>要救助者全員を強制転送する！
+type2,0,NotifyPos,要救助者の位置を確認。<br>マーカーに表示する。<br>迅速に救助に向かえ。
+type2,0,NotifyMethod,安全に転送するには<br>正確な座標が必要となる。<br>消火後、要救助者に接触しろ。
+type2,0,FirstTrans,要救助者の座標を確認、転送完了。<br>その調子で全て救助しろ。
+type2,0,RescueeFound,要救助者発見。<br>炎を消さねば転送にもリスクが伴う。<br>まずは炎を消火し、救助しろ。
+type2,0,GeneratorAdd,新たな要救助者を確認。<br>早急に救助へ向かえ。
+type2,0,TimeLimitNear,流石に時間がかかりすぎたか……<br>可能な限り、急いで救助しろ。
+type2,0,TimeLimitHurry,これ以上は危険だ。<br>急げ！
+type2,0,RescueMethod,消火確認。今なら安全に転送可能だ。<br>要救助者にアクセスし、<br>正確な座標を送れ。
+type2,1,NpcComOnBegin,Survivors are trapped throughout the city.<br>Get in there and save them on the double.
+type2,1,NpcComOnSuccess,All survivors teleported to safety. Nice work.
+type2,1,NpcComOnFailure,"We're out of time. This is extremely risky, but<br>I'll try to teleport them all outta there!"
+type2,1,NotifyPos,All survivors detected and I've marked their<br>locations. Get them out of this nightmare!
+type2,1,NotifyMethod,"To teleport them out safely, I'll need those<br>flames extinguished. Then move in to get their<br>coordinates."
+type2,1,FirstTrans,"Coordinates confirmed, teleportation<br>complete. Keep it up till all survivors<br>are saved."
+type2,1,RescueeFound,"Survivor found. But those flames are too high<br>to risk teleporting. Put them out, then move<br>in to rescue."
+type2,1,GeneratorAdd,More people need help! Save them all.
+type2,1,TimeLimitNear,It's taking too long... Save as many as you can.
+type2,1,TimeLimitHurry,We're almost out of time! Hurry!
+type2,1,RescueMethod,"Flames extinguished. We can teleport safely<br>now, so send me the coordinates."
+type3,0,NpcComOnBegin,市街地の火災から逃げ遅れた<br>要救助者がたっくさんいますー！<br>至急救助に向かって下さいー！
+type3,0,NpcComOnSuccess,/face2 要救助者全員の救助を<br>確認しましたです！<br>お疲れ様でした！
+type3,0,NpcComOnFailure,/face4 もう、皆さん限界ですー！<br>危険を承知、リスクも踏まえて<br>要救助者を強制転送しますー！
+type3,0,NotifyPos,逃げ遅れた皆さんの<br>位置を確認しました！<br>マーカーを目指してくださいー！
+type3,0,NotifyMethod,要救助者の皆さんを安全に転送<br>するために正確な座標が必要です！<br>消火後にアクセスしてくださいー！
+type3,0,FirstTrans,/face2 座標の確認、完了です。<br>安全に転送できました。<br>その調子ですよー！
+type3,0,RescueeFound,炎に包まれたままだと<br>転送にもリスクが伴いますー！<br>炎を消して助けてあげてください！
+type3,0,GeneratorAdd,わわっ！<br>新たな要救助者の反応ですよ！<br>全部助けてあげてください！
+type3,0,TimeLimitNear,急いで！　急いで下さいー！
+type3,0,TimeLimitHurry,/face4 もう限界です！<br>はやく！　はやく！
+type3,0,RescueMethod,/face2 炎が消えました！<br>要救助者にアクセスして<br>正確な座標を送ってくださいー。
+type3,1,NpcComOnBegin,A lot of survivors are still trapped in the fire!<br>Get them out of there fast!
+type3,1,NpcComOnSuccess,/face2 I've got confirmation! All victims rescued!<br>Way to go!
+type3,1,NpcComOnFailure,"/face4 We're out of time! This is dangerous, but I<br>'ll have to risk teleporting all victims now!"
+type3,1,NotifyPos,I've got locations on all those unable to<br>evacuate! Head for the markers!
+type3,1,NotifyMethod,"I'm gonna need coordinates to teleport them<br>out safely! Put out those flames first, then<br>move in!"
+type3,1,FirstTrans,/face2 Coordinates confirmed!<br>Teleportation complete. Keep it up!
+type3,1,RescueeFound,It's too big a risk to teleport them with all<br>those flames! Put those out first!
+type3,1,GeneratorAdd,Yikes! I've detected more! You're gonna have<br>to rescue all of them!
+type3,1,TimeLimitNear,"Move, move, move!"
+type3,1,TimeLimitHurry,/face4 There's no more time! Hurry! Hurry! Hurry!
+type3,1,RescueMethod,/face2 Flames extinguished! Now get to that survivor<br>and send me the coordinates.

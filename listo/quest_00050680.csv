@@ -1,0 +1,27 @@
+section,group,id,text
+Basic,0,Title,大海に顕れし鋼鉄の巨艦
+Basic,0,Explanation,br>実績あるアークスに限定する。<br>――――――――――――――――――――<br>クエストクリア可能回数/$(0)回<br>ランキング期間/任務発生から1時間30分<br>失敗条件/制限時間の経過
+Basic,1,Title,El gigante de hierro de alta mar
+Basic,1,Explanation,"Lecturas correspondientes a un fantasma masivo.<br>han reaparecido alrededor de las aguas costeras japonesas<br>que se encuentra en el planeta Tierra. La señal aparece<br>mucho más fuerte que la última vez y anticipamos esto<br>misión implicará una mayor cantidad de peligro, por lo que<br>La participación está limitada solo a miembros senior de ARKS.<br>-------------------------------------<br>Esta misión solo se puede completar $(0) veces.<br>Tiempo de Clasificación: 1 hora y 30 minutos desde el inicio.<br>Fallarás esta misión si excedes el límite de tiempo."
+QuestTarget,0,SimpleExplanation,幻創戦艦・大和を撃退せよ！
+QuestTarget,1,SimpleExplanation,¡Repele el acorazado fantasma Yamato!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+PreTransportDirection,0,NpcComMsg1,再出現した目標は都市部に向けて<br>すでに移動を開始しています。<br>あまり時間の猶予はありません。
+PreTransportDirection,0,NpcComMsg2,再度A.I.Sにて出撃し<br>目標の撃退をお願いします。<br>連戦となりますが、お気をつけて。
+PreTransportDirection,1,NpcComMsg1,El objetivo ya ha comenzado.<br>avanzando hacia la ciudad.<br>No tenemos mucho tiempo para actuar.
+PreTransportDirection,1,NpcComMsg2,"Por favor, persíguelo en el AIS y bájalo.<br>Ten cuidado, será difícil hacer todo.<br>¡Esta lucha en rápida sucesión!"
+AreaName,0,Area0S,日本近海
+AreaName,0,Area0L,惑星・地球　日本近海
+AreaName,0,Area1S,日本近海
+AreaName,0,Area1L,惑星・地球　日本近海
+AreaName,1,Area0S,Aguas costeras japonesas
+AreaName,1,Area0L,Tierra - Aguas costeras japonesas
+AreaName,1,Area1S,Aguas costeras japonesas
+AreaName,1,Area1L,Tierra - Aguas costeras japonesas

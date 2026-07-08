@@ -1,0 +1,23 @@
+section,group,id,text
+5566,0,Begin,/mn15 /ci2 1 <%me>さん！<br>遅ればせながら助太刀にきました！<br>さあ、皆さんを助けましょう！
+5566,0,Success,/mn15 /ci2 1 お見事です！　そして感謝です！<br>さすが、みんなのヒーローですね！<br>ほら、キョーくんもお礼を！
+5566,0,Failure,/mn1 そんな……<br>ここで止まるわけには……
+5566,0,Dead,/mn2 あうぅっ……<br>ヒーローが、倒れるわけには……
+5566,0,BuddyDead,/mn2 キョーくん！<br>ここは私が食い止めますから<br>少し休んでいてください！
+5566,1,Begin,/mn15 /ci2 1 <%me>! <br>Sorry we're late—we came to aid you!<br>Let's see what we can do!
+5566,1,Success,/mn15 /ci2 1 Excellent! You have my gratitude! <br>You truly are everyone's hero! Hey! Kyokie! <br>You need to thank them too!
+5566,1,Failure,/mn1 What the...this can't end like this...
+5566,1,Dead,/mn2 No...a hero can't go down like this...
+5566,1,BuddyDead,"/mn2 Kyokie! I'll hold them back here, so take a<br>little break!"
+common,0,Begin,開始5150
+common,0,Success,成功5150
+common,0,Failure,失敗5150
+common,0,Dead,自分死亡5150
+common,0,BuddyDead,相手死亡5150
+common,0,Evolution,発展5150
+common,1,Begin,Begin5150
+common,1,Success,Success5150
+common,1,Failure,Failure5150
+common,1,Dead,YouDied5150
+common,1,BuddyDead,PartnerDied5150
+common,1,Evolution,Evolution5150

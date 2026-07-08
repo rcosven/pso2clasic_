@@ -1,0 +1,27 @@
+section,group,id,text
+common,0,IncidentName,砲仙花掃討作戦
+common,0,TrialBeginMsg,砲仙花を一掃しろ！
+common,0,TrialAbstract,砲仙花を一掃しろ！
+common,0,ToastOnHalfFinish,ノルマ達成まで残り半分
+common,0,ToastOnLast,ノルマ達成まであと１つ
+common,1,IncidentName,Operación de búsqueda y destrucción de Blitzblossom
+common,1,TrialBeginMsg,¡Acaba con todos los Blitzblossoms!
+common,1,TrialAbstract,¡Acaba con todos los Blitzblossoms!
+common,1,ToastOnHalfFinish,Estás a medio camino de cumplir tu cuota.
+common,1,ToastOnLast,Queda uno para cumplir con tu cupo.
+type2,0,NpcComOnBegin,砲仙花の群生地帯に入ったようだ。<br>こう数が多いと、調査の邪魔になる。<br>見つけ次第排除せよ。
+type2,0,NpcComOnBeginNext,数が多すぎてマーカーに表示できん。<br>手当たり次第に排除しろ。
+type2,0,NpcComOnSuccess,排除の成功を確認。<br>よくやった。
+type2,0,NpcComOnFailure,/face6 この数は手に負えんか……<br>仕方ない、ひとまず撤退しろ。
+type2,0,NpcComOnAccess,その調子だ。<br>周囲の砲仙花の排除を続けろ。
+type2,0,NpcComOnHit,「その調子だ。周囲の砲仙花の一掃を頼む」
+type2,0,NpcComOnPreSuccess,よし、これだけ排除すれば十分だ。<br>残っている砲仙花の扱いは任せる。
+type2,0,NpcComOnPreFinish,そろそろ制限時間が終わる。<br>早く砲仙花を排除しろ。
+type2,1,NpcComOnBegin,Has cruzado al territorio de Blitzblossom.<br>Será difícil realizar encuestas con esto.<br>muchos alrededor. Será mejor que saques cualquiera que encuentres.
+type2,1,NpcComOnBeginNext,Hay demasiados para marcar sus ubicaciones. Justo<br>tenerlo.
+type2,1,NpcComOnSuccess,Erradicación confirmada. Bien hecho.
+type2,1,NpcComOnFailure,"/face6 Demasiados para lidiar con ellos, ¿eh? Retirate por ahora..."
+type2,1,NpcComOnAccess,Perfecto. Sigue hackeando<br>los Blitzblossoms.
+type2,1,NpcComOnHit,"""Buen trabajo. Sigue atacando a esos<br>Flores relámpago."""
+type2,1,NpcComOnPreSuccess,Eso debería ser suficiente. haz lo que tu<br>quiero con el resto.
+type2,1,NpcComOnPreFinish,Ya casi se te acaba el tiempo. Apresúrate<br>y saca esos Blitzblossoms.

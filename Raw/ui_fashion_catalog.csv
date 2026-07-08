@@ -1,0 +1,199 @@
+section,group,id,text
+Error,0,ErrorTitle,コーデカタログエラー
+Error,0,ErrorDBAccess,データベースのアクセスに失敗しました。<br><br>時間をおいて再度お試しください。
+Error,0,ErrorUnknown,予期せぬ問題が発生しました。<br><br>時間をおいて再度お試しください。
+Error,0,ErrorInfoNotFound,コーデカタログに登録されていません。
+Error,0,ErrorEtc,予期せぬ問題が発生しました。<br><br>その他のエラー($(0))
+Error,0,Error_DataNone,該当データがありません
+Error,1,ErrorTitle,LOOKBOOK ERROR
+Error,1,ErrorDBAccess,Failed to access the database.<br><br>Please wait a while and try again.
+Error,1,ErrorUnknown,An unexpected problem occurred.<br><br>Please wait a while and try again.
+Error,1,ErrorInfoNotFound,Not registered to Lookbook.
+Error,1,ErrorEtc,An unexpected error has occurred.<br><br>Miscellaneous error ($(0)).
+Error,1,Error_DataNone,No Corresponding Data.
+Menu,0,FashioncatSearchTitle,みんなのコーデから検索
+Menu,0,FashioncatListTitle,みんなのコーデを見る
+Menu,0,CharacterListTitle,キャラクターリスト
+Menu,0,TitleProfile,コーデ情報
+Menu,0,TitleRegist,自分のコーデを登録
+Menu,0,TitleSearchWord,検索用タグ
+Menu,0,TitleComment,コメント
+Menu,0,TitleLike,いいね！
+Menu,0,TitleLikeClose,いいね！
+Menu,0,TitlePose,再生するロビーアクション
+Menu,0,TitleExpression,表情
+Menu,0,LabelViewNum,閲覧数
+Menu,0,LabelLike,いいね！
+Menu,0,Message,<pict like_icon>いいね！<br><pict cute_icon>かわいいね！<br><pict cool_icon>かっこいいね！<br><pict funny_icon>おもしろいね！<br><br>の４つのメッセージから１つを選び、<br>「コメントありグッジョブ」として<br>相手に送ることができます。<br><br>※グッジョブでのFUN獲得は1日10回まで<br>（同じ相手に対するFUN獲得は1日1回まで）<br>※グッジョブ送信が目標のクライアントオーダーや<br>　ビンゴオーダーは達成されません。
+Menu,0,Message_rb,相手のコーデに対して、<br><yellow>“いいね！”<c>を送ることができます。<br><br>“いいね！”は、“コメントありグッジョブ”として、<br>相手に送信されます。<br><br>また、“いいね！”を送信するとSGが獲得できます。<br><br><yellow>※“いいね！”を含めた<br>　グッジョブによるSG獲得は1日5回まで。<br>　同じ相手に対するSG獲得は1日1回までとなります。<c>
+Menu,0,ReceiveMessage,仮テキスト (いいね！送信完了文)
+Menu,0,Point,基本ポイント
+Menu,0,FrendPoint,フレンドポイント
+Menu,0,PremiumPoint,プレミアムポイント
+Menu,0,Sum,合計
+Menu,0,Plus,＋
+Menu,0,LabelColon,：
+Menu,0,LabelName,キャラクター名
+Menu,0,LabelCategory,ジャンル
+Menu,0,LabelTribal,種族
+Menu,0,LabelGender,タイプ
+Menu,0,LabelTribalGender,種族(タイプ)
+Menu,0,LabelSort,ソート
+Menu,0,LabelMonthly,月間
+Menu,0,LabelTotal,累計
+Menu,0,SearchButton,閲覧開始
+Menu,0,LikeButton,いいね！
+Menu,0,SendButton,送る
+Menu,0,CloseButton,閉じる
+Menu,0,CancelButton,キャンセル
+Menu,0,BackButton,戻る
+Menu,0,DecideButton,決定
+Menu,0,RegistButton,ブックマークに登録
+Menu,0,ButtonPose,ロビアク選択
+Menu,0,ButtonExpression,表情選択
+Menu,1,FashioncatSearchTitle,SEARCH PLAYER LOOKS
+Menu,1,FashioncatListTitle,PLAYER LOOKS
+Menu,1,CharacterListTitle,CHARACTER LIST
+Menu,1,TitleProfile,LOOK INFORMATION
+Menu,1,TitleRegist,REGISTER LOOKS
+Menu,1,TitleSearchWord,Search Tags
+Menu,1,TitleComment,Comments
+Menu,1,TitleLike,LIKES
+Menu,1,TitleLikeClose,LIKES
+Menu,1,TitlePose,Preview Emotes
+Menu,1,TitleExpression,Expression
+Menu,1,LabelViewNum,Views
+Menu,1,LabelLike,Likes
+Menu,1,Message,<pict like_icon>Nice!<br><pict cute_icon>Cute!<br><pict cool_icon>Cool!<br><pict funny_icon>Interesting!<br><br>You can choose 1 of these 4 messages to send to other players<br>as a Kudos with a comment.<br><br>Note: Players can obtain FUN with Kudos a maximum of 10 times<br>per day.<br>(1 time per day for Kudos from the same player.)<br>Note: This does not count toward Bingo Orders or Client<br>Orders where the objective is to send Kudos.
+Menu,1,Message_rb,"You can send <yellow>Likes<c> to other player's looks.<br><br>""Likes"" will be sent as ""Kudos with Comments"". <br><br>You will also receive SG when sending ""Likes"".<br><br><yellow>You can send up to 5 Kudos that includes ""Likes"" per day to receive SG.<br>Once per day to send it to the same player.<c>"
+Menu,1,ReceiveMessage,Placeholder text (Liked sent text)
+Menu,1,Point,Basic Points
+Menu,1,FrendPoint,Friend Points
+Menu,1,PremiumPoint,Premium Points
+Menu,1,Sum,Total
+Menu,1,Plus,+
+Menu,1,LabelColon,:
+Menu,1,LabelName,Character name
+Menu,1,LabelCategory,Genre
+Menu,1,LabelTribal,Race
+Menu,1,LabelGender,Type
+Menu,1,LabelTribalGender,Race (Type)
+Menu,1,LabelSort,Sort
+Menu,1,LabelMonthly,Mthly
+Menu,1,LabelTotal,Total
+Menu,1,SearchButton,Search
+Menu,1,LikeButton,Likes
+Menu,1,SendButton,Send
+Menu,1,CloseButton,Close
+Menu,1,CancelButton,Cancel
+Menu,1,BackButton,Back
+Menu,1,DecideButton,Confirm
+Menu,1,RegistButton,Add Bookmark
+Menu,1,ButtonPose,Select Emote
+Menu,1,ButtonExpression,Select Expression
+SearchForm,0,SearchInfo,<c 808080>タグを入力<c>
+SearchForm,0,Item_View,閲覧数の多い順
+SearchForm,0,Item_Nice,いいね！の多い順
+SearchForm,0,Item_New,更新日時の新しい順
+SearchForm,0,Item_Back,戻る
+SearchForm,1,SearchInfo,<c 808080>Enter tag<c>
+SearchForm,1,Item_View,Most Views
+SearchForm,1,Item_Nice,Most Likes
+SearchForm,1,Item_New,Last Updated
+SearchForm,1,Item_Back,Back
+CategoryList,0,Item_Default,すべてのジャンル
+CategoryList,0,Item_Cute,かわいい
+CategoryList,0,Item_Cool,かっこいい
+CategoryList,0,Item_Beauty,きれい
+CategoryList,0,Item_Elegant,エレガント
+CategoryList,0,Item_Wild,ワイルド
+CategoryList,0,Item_Intellectual,インテリ
+CategoryList,0,Item_Dark,ダーク
+CategoryList,0,Item_Sexy,セクシー
+CategoryList,0,Item_Indoor,インドア
+CategoryList,0,Item_Interesting,おもしろい
+CategoryList,1,Item_Default,All Genres
+CategoryList,1,Item_Cute,Cute
+CategoryList,1,Item_Cool,Cool
+CategoryList,1,Item_Beauty,Pretty
+CategoryList,1,Item_Elegant,Elegant
+CategoryList,1,Item_Wild,Wild
+CategoryList,1,Item_Intellectual,Intellectual
+CategoryList,1,Item_Dark,Dark
+CategoryList,1,Item_Sexy,Sexy
+CategoryList,1,Item_Indoor,Indoor
+CategoryList,1,Item_Interesting,Interesting
+TribalList,0,Item_Default,全種族
+TribalList,0,Item_Human,ヒューマン
+TribalList,0,Item_Newman,ニューマン
+TribalList,0,Item_Cast,キャスト
+TribalList,0,Item_Dewman,デューマン
+TribalList,0,ItemBase_Men,$(0) (タイプ1)
+TribalList,0,ItemBase_Female,$(0) (タイプ2)
+TribalList,1,Item_Default,All Types
+TribalList,1,Item_Human,Human
+TribalList,1,Item_Newman,Newman
+TribalList,1,Item_Cast,CAST
+TribalList,1,Item_Dewman,Deuman
+TribalList,1,ItemBase_Men,$(0) (Type 1)
+TribalList,1,ItemBase_Female,$(0) (Type 2)
+GenderList,0,Item_Default,全タイプ
+GenderList,0,Item_Male,タイプ1
+GenderList,0,Item_Female,タイプ2
+GenderList,1,Item_Default,All Types
+GenderList,1,Item_Male,Type 1
+GenderList,1,Item_Female,Type 2
+SortList,0,Item_Default,ランダム
+SortList,0,Item_View,閲覧数順
+SortList,0,Item_Nice,いいね！順
+SortList,0,Item_New,新着順
+SortList,1,Item_Default,Random
+SortList,1,Item_View,Views
+SortList,1,Item_Nice,Likes
+SortList,1,Item_New,Latest Added
+CatRelease,0,CatReleaseConfirm_Title,登録を取り下げる
+CatRelease,0,CatReleaseConfirm_Message,現在登録中のコーデ情報を<br>コーデカタログから取り下げ、<br>表示されないようにします。<br><br><c c0c0c0>※登録中のコーデ情報を更新したい場合は<br>　取り下げではなく、「自分のコーデを登録」で<br>　上書き更新できます。<c><br><br>よろしいですか？
+CatRelease,0,CatReleaseResult_Success,取り下げました。
+CatRelease,0,CatReleaseResult_NotRegister,コーデカタログに登録されていません。
+CatRelease,0,CatReleaseResult_Error,取り下げに失敗しました。
+CatRelease,1,CatReleaseConfirm_Title,REMOVE REGISTRATION
+CatRelease,1,CatReleaseConfirm_Message,Currently registered Look information will be removed from the Lookbook and no longer displayed.<br><br><c c0c0c0>Note: Select [Register Looks] to update currently registered Look information rather than removing it.<c><br><br>Are you sure?
+CatRelease,1,CatReleaseResult_Success,Removed.
+CatRelease,1,CatReleaseResult_NotRegister,Not registered to Lookbook.
+CatRelease,1,CatReleaseResult_Error,Failed to remove.
+RegisterForm,0,Item_Default,登録したいジャンルを選択 （必須）
+RegisterForm,0,TitleSearchWord1,タグ１
+RegisterForm,0,TitleSearchWord2,タグ２
+RegisterForm,0,TitleSearchWord3,タグ３
+RegisterForm,0,EditDefaultSearchWord1,<c 808080>記入可<c>
+RegisterForm,0,EditDefaultSearchWord2,<c 808080>記入可<c>
+RegisterForm,0,EditDefaultSearchWord3,<c 808080>記入可<c>
+RegisterForm,0,TitleComment,コメント
+RegisterForm,0,EditDefaultComment,<c 808080>コメントを記入できます<c>
+RegisterForm,0,ReceiveMessage,コーデカタログに登録しました。
+RegisterForm,0,WarningClosableCategoryDefault,カテゴリー欄は必ずいずれかの項目を選択してください。
+RegisterForm,0,WarningClosableSmutFilter,「$(0)」欄に<br>使用できない語句または記号が<br>含まれています。
+RegisterForm,0,WarningYesNoResist,新しく登録し直す場合には登録済みのプロフィールの<br>いいね！などの月間カウントがリセットされます。<br><br>新しく登録してもよろしいですか？
+RegisterForm,0,WarningClosableDupeTag,「検索用タグ」に、同じ言葉が２つ以上あります。<br>別の言葉にするか、空欄にしてください。
+RegisterForm,0,ErrorClosableErrorDB,データベースのアクセスに失敗しました。<br><br>時間をおいて再度お試しください。
+RegisterForm,0,ErrorClosableErrorBAN,コーデカタログへの登録に失敗しました。
+RegisterForm,0,ErrorClosableErrorUnknown,予期せぬ問題が発生しました。<br><br>時間をおいて再度お試しください。
+RegisterForm,0,ErrorClosableImproperData,現在の外見データは問題があるため<br>コーデカタログへの登録が出来ません。<br><br>マイファッションから他のデータを適用し登録するか、<br>エステで修正してください。
+RegisterForm,1,Item_Default,Select Genre to Register (Required)
+RegisterForm,1,TitleSearchWord1,Tag 1
+RegisterForm,1,TitleSearchWord2,Tag 2
+RegisterForm,1,TitleSearchWord3,Tag 3
+RegisterForm,1,EditDefaultSearchWord1,<c 808080>Can enter text<c>
+RegisterForm,1,EditDefaultSearchWord2,<c 808080>Can enter text<c>
+RegisterForm,1,EditDefaultSearchWord3,<c 808080>Can enter text<c>
+RegisterForm,1,TitleComment,COMMENTS
+RegisterForm,1,EditDefaultComment,<c 808080>Can Comment<c>
+RegisterForm,1,ReceiveMessage,Registered to Lookbook.
+RegisterForm,1,WarningClosableCategoryDefault,Please make a selection in the category field.
+RegisterForm,1,WarningClosableSmutFilter,"""$(0)"" includes words or symbols that<br>cannot be used."
+RegisterForm,1,WarningYesNoResist,Making a new registration will reset monthly counts for Likes<br>and other information for already registered profiles.<br><br>Are you sure you want to proceed with new registration?
+RegisterForm,1,WarningClosableDupeTag,"There are duplicates in the search tags. Please change them<br>to other terms, or leave them empty."
+RegisterForm,1,ErrorClosableErrorDB,Failed to access the database.<br><br>Please wait a while and try again.
+RegisterForm,1,ErrorClosableErrorBAN,Failed to register to Lookbook.
+RegisterForm,1,ErrorClosableErrorUnknown,An unexpected problem occurred.<br><br>Please wait a while and try again.
+RegisterForm,1,ErrorClosableImproperData,"Current appearance data could not be saved to the Lookbook due to an issue.<br><br>Apply and register other data from Looks, or make edits at the Salon."

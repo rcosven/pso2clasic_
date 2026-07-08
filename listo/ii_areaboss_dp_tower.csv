@@ -1,0 +1,19 @@
+﻿section,group,id,text
+common,0,IncidentName,$(0)討伐
+common,0,TrialBeginMsg,$(0)を討伐せよ！
+common,0,TrialAbstract,$(0)を討伐せよ！
+common,1,IncidentName,Suprimir $(0)
+common,1,TrialBeginMsg,¡Suprime el $(0)!
+common,1,TrialAbstract,¡Suprime el $(0)!
+type5,0,NpcComOnBegin,あ、あれ？　こんな訓練メニュー<br>入れてたっけ……おかしいな……<br>とにかく、倒すしかないですよ！
+type5,0,NpcComOnSuccess,/face2 あー、これはもしかして……<br>な、なにはともあれ、ナイスファイト！<br>お疲れ様でした！
+type5,0,NpcComOnFailure,み、みなさーん……<br>大丈夫ですかー？
+type5,0,HP_Under_50,/face2 $(0)が<br>だんだん弱ってきましたよ！
+type5,0,HP_Under_10,/face2 お、あと少しで$(0)を<br>倒せそうですよ！
+type5,0,NpcComLastEnemy,/face2 残り一体で
+type5,1,NpcComOnBegin,Qué raro... No recuerdo que esto estuviera en el expediente de entrenamiento de <br>... Pero será mejor que lo eliminemos.
+type5,1,NpcComOnSuccess,"/face2 Oh, tal vez esa fue la... <br> Bueno, sea lo que sea, ¡<br> pelea increible alli!"
+type5,1,NpcComOnFailure,¿Están ustedes... todavía de una pieza?
+type5,1,HP_Under_50,/face2 $(0) se debilita cada segundo!
+type5,1,HP_Under_10,/cara2 ¡Se ve bien! ¡Tendrás este $(0)<br>lamido en poco tiempo!
+type5,1,NpcComLastEnemy,/face2 ¡Solo queda uno!

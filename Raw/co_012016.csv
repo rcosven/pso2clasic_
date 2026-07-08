@@ -1,0 +1,191 @@
+section,group,id,text
+CharaName,0,name01,ヒルダ
+CharaName,0,name02,武器アクション
+CharaName,0,name03,武器パレットの切り替え
+CharaName,1,name01,Hilda
+CharaName,1,name02,Weapon Actions
+CharaName,1,name03,Switching Weapon Palettes
+Skit,0,11_voice_navi02_121,ふむ、サマになってきたじゃないか。<br>では、次は応用だ。
+Skit,0,11_voice_navi02_122,武器には、応用的な使用方法がある。<br>好きなように試してみるといい。
+Skit,0,text00_3b,『武器アクション』について
+Skit,0,text00,『武器パレットの切り替え』について
+Skit,0,text01,『武器アクション』について、説明します。<br><br><%WeaponAction>を押すことで、武器ごとに設定されている<br>武器アクションを行います。
+Skit,0,text11,<%WeaponAction>で、<br>武器アクションを行います。<br><br>「ソード」の武器アクションは、<br><%WeaponAction><c 00ffff>を押している間、<br>正面の攻撃を防ぐ「ガード」です。<c><br><br>ダメージを軽減できますが、<br>正面以外の攻撃はガードできないので<br>注意しましょう。
+Skit,0,text11_3b,<%MainPaletteC>で、<br>武器アクションを行います。<br><br>「ソード」の武器アクションは、<br><%MainPaletteC><c 00ffff>を押している間、<br>正面の攻撃を防ぐ「ガード」です。<c><br><br>ダメージを軽減できますが、<br>正面以外の攻撃はガードできないので<br>注意しましょう。
+Skit,0,text21,<%WeaponAction><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>「裏パレット」に切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（グレネードシェル）が発動します。
+Skit,0,text21_3b,<%WeaponAction_2><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>「裏パレット」に切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（グレネードシェル）が発動します。
+Skit,0,text31,<%WeaponAction><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>「裏パレット」に切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のテクニック<c><br>（イル・グランツ）が発動します。
+Skit,0,text31_3b,<%WeaponAction_2><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>「裏パレット」に切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のテクニック<c><br>（イル・グランツ）が発動します。
+Skit,0,text41,<%WeaponAction><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>裏パレットに切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（ペネトレイトアロウ）が発動します。
+Skit,0,text41_3b,<%WeaponAction_2><c 00ffff>を押している間、武器パレットを<br>「裏パレット」に切り替えます。<c><br><br>裏パレットに切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（ペネトレイトアロウ）が発動します。
+Skit,0,text51,<%WeaponAction>で、<br>武器アクションを行います。<br><br>「ジェットブーツ」を装備中は<br><%WeaponAction><c 00ffff>で<br>「スイッチアクション」が発動します。<c><br><br>スイッチアクション中は攻撃を回避できます。<br><br>また攻撃中にスイッチアクションを行うと、<br>攻撃アクションが変化します。
+Skit,0,text51_3b,<%MainPaletteC>で、<br>武器アクションを行います。<br><br>「ジェットブーツ」を装備中は<br><%MainPaletteC><c 00ffff>で<br>「スイッチアクション」が発動します。<c><br><br>スイッチアクション中は攻撃を回避できます。<br><br>また攻撃中にスイッチアクションを行うと、<br>攻撃アクションが変化します。
+Skit,0,text61,<%WeaponAction><c 00ffff>を押している間、<br>「裏パレット」に切り替えます。<c><br><br>裏パレットに切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（ワンダブレイク）が発動します。
+Skit,0,text61_3b,<%WeaponAction_2><c 00ffff>を押している間、<br>「裏パレット」に切り替えます。<c><br><br>裏パレットに切り替えた状態で<br><%NormalAttack>を押すと、<yellow>別のＰＡ<c><br>（ワンダアサルト）が発動します。
+Skit,0,text110,<%WeaponAction>で一定時間ガード体勢をとれ！
+Skit,0,text110_3b,<%MainPaletteC>で一定時間ガード体勢をとれ！
+Skit,0,text120,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でグレネードシェルを撃て！
+Skit,0,text130,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でバータを撃て！
+Skit,0,text140,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でペネトレイトアロウを撃て！
+Skit,0,text150,<%WeaponAction>でスイッチアクションを行え！
+Skit,0,text150_3b,<%MainPaletteC>でスイッチアクションを行え！
+Skit,0,text160,<%WeaponAction>でアクションを行え！
+Skit,0,text1010,<%WeaponAction>で一定時間ガードしろ！
+Skit,0,text1010_3b,<%MainPaletteC>で一定時間ガードしろ！
+Skit,0,text1020,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1020_3b,<%WeaponAction_2>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1030,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1030_3b,<%WeaponAction_2>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1040,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1040_3b,<%WeaponAction_2>で切り替えて、<%NormalAttack>で撃て！
+Skit,0,text1050,<%WeaponAction>でスイッチアクションを行え！
+Skit,0,text1050_3b,<%MainPaletteC>でスイッチアクションを行え！
+Skit,0,text201,ガード体勢をとれ！
+Skit,0,text202,ガード体勢をとれ！
+Skit,0,text203,ガード：<%WeaponAction>
+Skit,0,text203_3b,ガード：<%MainPaletteC>
+Skit,0,text204,ガード：<%WeaponAction>
+Skit,0,text205,裏パレットのフォトンアーツを使え！
+Skit,0,text206,裏パレットのフォトンアーツを使え！
+Skit,0,text207,パレット切り替え：<%WeaponAction><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text207_3b,パレット切り替え：<%WeaponAction_2><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text208,パレット切り替え：<%WeaponAction><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text209,裏パレットのテクニックを使え！
+Skit,0,text210,裏パレットのテクニックを使え！
+Skit,0,text211,パレット切り替え：<%WeaponAction><br>テクニック：<%NormalAttack>
+Skit,0,text211_3b,パレット切り替え：<%WeaponAction_2><br>テクニック：<%NormalAttack>
+Skit,0,text212,パレット切り替え：<%WeaponAction><br>テクニック：<%NormalAttack>
+Skit,0,text213,裏パレットのフォトンアーツを使え！
+Skit,0,text214,裏パレットのフォトンアーツを使え！
+Skit,0,text215,パレット切り替え：<%WeaponAction><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text215_3b,パレット切り替え：<%WeaponAction_2><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text216,パレット切り替え：<%WeaponAction><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text217,回避を行え！
+Skit,0,text218,回避を行え！
+Skit,0,text219,回避：<%WeaponAction>
+Skit,0,text219_3b,回避：<%MainPaletteC>
+Skit,0,text220,回避：<%WeaponAction>
+Skit,0,text221,裏パレットのフォトンアーツを使え！
+Skit,0,text222,裏パレットのフォトンアーツを使え！
+Skit,0,text223,パレット切り替え：<%WeaponAction><br>フォトンアーツ：<%NormalAttack>
+Skit,0,text223_3b,パレット切り替え：<%WeaponAction_2><br>フォトンアーツ：<%NormalAttack>
+Skit,1,11_voice_navi02_121,"You're getting the hang of it. Now, you'll put<br>this knowledge to use."
+Skit,1,11_voice_navi02_122,There are a number of ways you can use your<br>weapon. Find what works best for you.
+Skit,1,text00_3b,Weapon Actions
+Skit,1,text00,Switching Weapon Palettes
+Skit,1,text01,"By pressing <%WeaponAction>, you will perform the<br>Weapon Actions that are set for each weapon."
+Skit,1,text11,"Perform a Weapon Action with <%WeaponAction>.<br><br>A sword Weapon Action is to Guard a frontal<br>attack while holding down <%WeaponAction>.<br><c 00ffff><c><br><br>Doing so will reduce the<br>amount of damage you take, but please note<br>that you cannot guard against attacks from<br>any direction other<br>than the front."
+Skit,1,text11_3b,"Perform a Weapon Action with <%MainPaletteC>.<br><br>A sword Weapon Action is to Guard a frontal<br>attack while holding down <%MainPaletteC>.<br><c 00ffff><c><br><br>Doing so will reduce the<br>amount of damage you take, but please note<br>that you cannot guard against attacks from<br>any direction other than the front."
+Skit,1,text21,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Grenade Round)."
+Skit,1,text21_3b,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction_2><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Grenade Round)."
+Skit,1,text31,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>Technique<c> (Ilgrants)."
+Skit,1,text31_3b,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction_2><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>Technique<c> (Ilgrants)."
+Skit,1,text41,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Piercing Arrow)."
+Skit,1,text41_3b,"Switch your Weapon Palette to the Back Palette while holding down <%WeaponAction_2><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Piercing Arrow)."
+Skit,1,text51,"Perform a Weapon Action with <%WeaponAction>.<br><br>With the Jet Boots equipped, press<br><%WeaponAction><c 00ffff> to switch actions.<br><c><br><br>While switching actions, you can avoid attacks.<br><br>Also, if you switch actions while attacking, your attack action will change."
+Skit,1,text51_3b,"Perform a Weapon Action with <%MainPaletteC>.<br><br>With the Jet Boots equipped, press<br><%MainPaletteC><c 00ffff> to switch actions.<br><c><br><br>While switching actions, you can avoid attacks.<br><br>Also, if you switch actions while attacking, your attack action will change."
+Skit,1,text61,"Switch to the Back Palette while holding down<br><%WeaponAction><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Wanda Break)."
+Skit,1,text61_3b,"Switch to the Back Palette while holding down<br><%WeaponAction_2><c 00ffff>.<c><br><br>While on the Back Palette, press <%NormalAttack><br>to activate <yellow>a different<br>PA<c> (Wanda Assault)."
+Skit,1,text110,Use <%WeaponAction> to take a Guard stance for a<br>certain amount of time!
+Skit,1,text110_3b,Use <%MainPaletteC> to take a Guard stance for a<br>certain amount of time!
+Skit,1,text120,"Switch to the Back Palette with <%WeaponAction>,<br>and launch a Grenade Round with <%NormalAttack>!"
+Skit,1,text130,"Switch to the Back Palette with <%WeaponAction>,<br>and shoot a Barta with <%NormalAttack>!"
+Skit,1,text140,"Switch to the Back Palette with <%WeaponAction>,<br>and shoot a Piercing Arrow with <%NormalAttack>!"
+Skit,1,text150,Switch actions with <%WeaponAction>!
+Skit,1,text150_3b,Switch actions with <%MainPaletteC>!
+Skit,1,text160,Perform an action with <%WeaponAction>!
+Skit,1,text1010,Guard for a time with <%WeaponAction>!
+Skit,1,text1010_3b,Guard for a time with <%MainPaletteC>!
+Skit,1,text1020,"Switch with <%WeaponAction>, attack with <%NormalAttack>!"
+Skit,1,text1020_3b,"Switch with <%WeaponAction_2>, attack with <%NormalAttack>!"
+Skit,1,text1030,"Switch with <%WeaponAction>, attack with <%NormalAttack>!"
+Skit,1,text1030_3b,"Switch with <%WeaponAction_2>, attack with <%NormalAttack>!"
+Skit,1,text1040,"Switch with <%WeaponAction>, attack with <%NormalAttack>!"
+Skit,1,text1040_3b,"Switch with <%WeaponAction_2>, attack with <%NormalAttack>!"
+Skit,1,text1050,Switch actions with <%WeaponAction>!
+Skit,1,text1050_3b,Switch actions with <%MainPaletteC>!
+Skit,1,text201,Take a Guard stance!
+Skit,1,text202,Take a Guard stance!
+Skit,1,text203,Guard: <%WeaponAction>
+Skit,1,text203_3b,Guard: <%MainPaletteC>
+Skit,1,text204,Guard: <%WeaponAction>
+Skit,1,text205,Use a Photon Art from the Back Palette!
+Skit,1,text206,Use a Photon Art from the Back Palette!
+Skit,1,text207,Switch Weapon Palettes:<%WeaponAction><br>Photon Arts:<%NormalAttack>
+Skit,1,text207_3b,Switch Weapon Palettes:<%WeaponAction_2><br>Photon Arts:<%NormalAttack>
+Skit,1,text208,Switch Weapon Palettes:<%WeaponAction><br>Photon Arts:<%NormalAttack>
+Skit,1,text209,Use a Technique from the Back Palette!
+Skit,1,text210,Use a Technique from the Back Palette!
+Skit,1,text211,Switch Palettes:<%WeaponAction><br>Techniques:<%NormalAttack>
+Skit,1,text211_3b,Switch Palettes:<%WeaponAction_2><br>Techniques:<%NormalAttack>
+Skit,1,text212,Switch Palettes:<%WeaponAction><br>Techniques:<%NormalAttack>
+Skit,1,text213,Use a Photon Art from the Back Palette!
+Skit,1,text214,Use a Photon Art from the Back Palette!
+Skit,1,text215,Switch Weapon Palettes:<%WeaponAction><br>Photon Arts:<%NormalAttack>
+Skit,1,text215_3b,Switch Weapon Palettes:<%WeaponAction_2><br>Photon Arts:<%NormalAttack>
+Skit,1,text216,Switch Weapon Palettes:<%WeaponAction><br>Photon Arts:<%NormalAttack>
+Skit,1,text217,Dodge!
+Skit,1,text218,Dodge!
+Skit,1,text219,Dodge: <%WeaponAction>
+Skit,1,text219_3b,Dodge: <%MainPaletteC>
+Skit,1,text220,Dodge: <%WeaponAction>
+Skit,1,text221,Use a Photon Art from the Back Palette!
+Skit,1,text222,Use a Photon Art from the Back Palette!
+Skit,1,text223,Switch Weapon Palettes:<%WeaponAction><br>Photon Arts:<%NormalAttack>
+Skit,1,text223_3b,Switch Weapon Palettes:<%WeaponAction_2><br>Photon Arts:<%NormalAttack>
+Skit_old,0,11_voice_navi02_121,ふむ、サマになってきたじゃないか。<br>では、次は応用だ。
+Skit_old,0,11_voice_navi02_122,武器には、応用的な使用方法がある。<br>好きなように試してみるといい。
+Skit_old,0,text00,『武器アクション』について
+Skit_old,0,text01,チュートリアル<br>ハンターの『武器アクション』について説明します。<br><br>武器アクションとは、装備している武器ごとに異なる<br>専用のアクションです。
+Skit_old,0,text02,ソードを装備している状態で、<%WeaponAction>を押すと<br>キャラクターは防御の姿勢をとります。<br>これがソードの武器アクション『ガード』です。
+Skit_old,0,text03,敵から攻撃をガードすることで、<br>ダメージを軽減することができます。<br><br>ただし、正面以外からの攻撃はガードすることが<br>できないので注意しましょう。
+Skit_old,0,text04,チュートリアル<br>レンジャーの『武器アクション』について説明します。<br><br>武器アクションとは、装備している武器ごとに異なる<br>専用のアクションです。
+Skit_old,0,text06,例えばアサルトライフルを装備しながら<br><%WeaponAction><c 00ffff>を押している間、武器パレットが<br>裏パレットに切り替わります。<c><br><br>これがアサルトライフルの武器アクションです。<br><br><%WeaponAction>を押している間のみ切り替える（ホールド操作）か<br>押すたびに切り替える（ワンプッシュ操作）かは<br>オプションの基本設定から変更できます。
+Skit_old,0,text07,裏パレットに切り替え、<%NormalAttack>を押すと<br>「<yellow>グレネードシェル<c>」を発射することができます。<br><br>それでは、実際にやってみましょう。
+Skit_old,0,text08,チュートリアル<br>フォースの『武器アクション』について説明します。<br><br>武器アクションとは、装備している武器ごとに異なる<br>専用のアクションです。
+Skit_old,0,text10,例えばロッドを装備しながら<br><%WeaponAction><c 00ffff>を押している間、武器パレットが<br>裏パレットに切り替わります。<c><br><br>これがロッドの武器アクションです。<br><br><%WeaponAction>を押している間のみ切り替える（ホールド操作）か<br>押すたびに切り替える（ワンプッシュ操作）かは<br>オプションの基本設定から変更できます。
+Skit_old,0,text11,裏パレットに切り替えた状態で<br><%NormalAttack>を押すと「<yellow>バータ<c>」を発射できます。<br><br>それでは、実際にやってみましょう。
+Skit_old,0,text12,チュートリアル<br>ブレイバーの『武器アクション』について説明します。<br><br>武器アクションとは、装備している武器ごとに異なる<br>専用のアクションです。
+Skit_old,0,text13,例えばバレットボウを装備しながら<br><%WeaponAction><c 00ffff>を押している間、武器パレットが<br>裏パレットに切り替わります。<c><br><br>これがバレットボウの武器アクションです。<br><br><%WeaponAction>を押している間のみ切り替える（ホールド操作）か<br>押すたびに切り替える（ワンプッシュ操作）かは<br>オプションの基本設定から変更できます。
+Skit_old,0,text14,裏パレットに切り替えた状態で<br><%NormalAttack>を押すと「<yellow>ペネトレイトアロウ<c>」を発射できます。<br><br>それでは、実際にやってみましょう。
+Skit_old,0,text15,チュートリアル<br>バウンサーの『武器アクション』について説明します。<br><br>武器アクションとは、装備している武器ごとに異なる<br>専用のアクションです。
+Skit_old,0,text16,ジェットブーツを装備し立ち止まった状態で<br><%WeaponAction>を押すと、キャラクターが<br>華麗なジャンプを行います。これを<br>「スイッチアクション」と呼びます。<br><br>スイッチアクションを行うと<br>華麗に敵の攻撃を回避できます。
+Skit_old,0,text17,ジェットブーツを装備して攻撃中に<br><%WeaponAction>を押すと、攻撃アクションが<br>別の攻撃アクションに変化します。<br>状況に合わせて攻撃を使い分けましょう。
+Skit_old,0,text100,<%WeaponAction>で一定時間ガード体勢をとれ！
+Skit_old,0,text101,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でグレネードシェルを撃て！
+Skit_old,0,text102,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でバータを撃て！
+Skit_old,0,text103,<%WeaponAction>で裏パレットに切り替えて、<%NormalAttack>でペネトレイトアロウを撃て！
+Skit_old,0,text104,<%WeaponAction>でスイッチアクションを行え！
+Skit_old,0,text1000,<%WeaponAction>で一定時間ガードしろ！
+Skit_old,0,text1001,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit_old,0,text1002,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit_old,0,text1003,<%WeaponAction>で切り替えて、<%NormalAttack>で撃て！
+Skit_old,0,text1004,<%WeaponAction>でスイッチアクションを行え！
+Skit_old,1,11_voice_navi02_121,"You're getting the hang of it. Now, you'll put<br>this knowledge to use."
+Skit_old,1,11_voice_navi02_122,There are a number of ways you can use your<br>weapon. Find what works best for you.
+Skit_old,1,text00,Weapon Actions
+Skit_old,1,text01,Tutorial<br><br>Hunter Weapon Actions are exclusive actions<br>that differ based on the weapon equipped.
+Skit_old,1,text02,"With a sword equipped, press <%WeaponAction> to<br>have the guard take a defensive stance.<br>This is a ""Guard,"" the Weapon Action of the sword."
+Skit_old,1,text03,"Guarding an attack from an enemy so will reduce<br>the amount of damage you take.<br><br>Please note, however, that you cannot guard<br>against attacks from any direction other<br>than the front."
+Skit_old,1,text04,Tutorial<br><br>Ranger Weapon Actions are exclusive actions<br>that differ based on the weapon equipped.
+Skit_old,1,text06,"For example, while you have an Assault Rifle<br>equipped, <c 00ffff>you can switch between the<br>Weapon Palette and Back Palette while<br>holding down <%WeaponAction><c><br><br>This is the Weapon Action of the Assault Rifle.<br><br>You can choose whether to switch palettes<br>while only holding down <%WeaponAction><br>(hold operation), or switch whenever you press<br>it (single-press operation) in<br>[Options] > [Basic Settings]."
+Skit_old,1,text07,Switch to the Back Palette and press<%NormalAttack> to<br>launch a <yellow>Grenade Round<c>.<br><br>Give it a try!
+Skit_old,1,text08,Tutorial<br><br>Force Weapon Actions are exclusive actions<br>that differ based on the weapon equipped.
+Skit_old,1,text10,"For example, while you have an Rod<br>equipped, <c 00ffff>you can switch between the<br>Weapon Palette and Back Palette while<br>holding down <%WeaponAction><c><br><br>This is the Weapon Action of the Rod.<br><br>You can choose whether to switch palettes<br>while only holding down <%WeaponAction>(hold operation), or switch<br>whenever you press it (single-press operation)<br>in [Options] > [Basic Settings]."
+Skit_old,1,text11,Switch to the Back Palette and press<br><%NormalAttack> to launch a <yellow>Barta<c>.<br><br>Give it a try!
+Skit_old,1,text12,Tutorial<br><br>Weapon Actions are exclusive actions<br>that differ based on the weapon equipped.
+Skit_old,1,text13,"For example, while you have a Bow<br>equipped, <c 00ffff>you can switch between the<br>Weapon Palette and Back Palette while<br>holding down <%WeaponAction><c><br><br>This is the Weapon Action of the Bow.<br><br>You can choose whether to switch palettes<br>while only holding down <%WeaponAction><br>(hold operation), or switch whenever you press<br>it (single-press operation) in<br>[Options] > [Basic Settings]."
+Skit_old,1,text14,Switch to the Back Palette and press<br><%NormalAttack> to launch a <yellow>Piercing Arrow<c>.<br><br>Give it a try!
+Skit_old,1,text15,Tutorial<br><br>Bouncer Weapon Actions are exclusive actions<br>that differ based on the weapon equipped.
+Skit_old,1,text16,"While standing still with the Jet Boots equipped,<br>press <%WeaponAction>. Your character will<br>perform a flashy jump. This is called a<br>""Switch Action.""<br><br>You can dodge enemy attacks beautifully<br>by switching actions."
+Skit_old,1,text17,"If you have Jet Boots equipped and press<br><%WeaponAction> while attacking, the Attack<br>Action will change to a different Attack Action.<br>Switch up your attacks as the situation demands."
+Skit_old,1,text100,Guard for a time with <%WeaponAction>!
+Skit_old,1,text101,"Switch to the Back Palette with <%WeaponAction>, and launch a Grenade Round with <%NormalAttack>!"
+Skit_old,1,text102,"Switch to the Back Palette with <%WeaponAction>, and launch a Barta with <%NormalAttack>!"
+Skit_old,1,text103,"Switch to the Back Palette with <%WeaponAction>, and shoot a Piercing Arrow with <%NormalAttack>!"
+Skit_old,1,text104,Switch actions with <%WeaponAction>!
+Skit_old,1,text1000,Guard for a time with <%WeaponAction>!
+Skit_old,1,text1001,Switch with <%WeaponAction> and attack with <%NormalAttack>!
+Skit_old,1,text1002,Switch with <%WeaponAction> and attack with <%NormalAttack>!
+Skit_old,1,text1003,Switch with <%WeaponAction> and attack with <%NormalAttack>!
+Skit_old,1,text1004,Switch actions with <%WeaponAction>!

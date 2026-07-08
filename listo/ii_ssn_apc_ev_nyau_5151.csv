@@ -1,0 +1,15 @@
+﻿section,group,id,text
+5150,0,PreBegin,/ci3 1 ……何か来るようだな。<br>なに、特訓には丁度いいだろう。
+5150,0,Begin,/ci3 2 見た目に騙されるなと<br>言う前から、これか……<br>先が思いやられるな。
+5150,0,Success,/ci5 2 これで特訓に集中できるな。
+5150,0,Failure,/ci5 3 ここまで、歯がたたないとはな……<br>悔しさは残るが、引き際も重要だ。<br>一度退いて、体勢を立て直すとしよう。
+5150,0,Dead,……予想以上に損傷が大きい。<br>無念だ……
+5150,0,BuddyDead,まったく、世話がやける。<br>仕方あるまい。<br>ここは二人で何とかするぞ。
+5150,0,TargetDead,/ci5 1 それ以前に逃げ出しているが
+5150,1,PreBegin,/ci3 1 ...Parece que algo se acerca. Esto hará que<br>sea un buen entrenamiento.
+5150,1,Begin,/ci3 2 Supongo que debería decir que no se deje engañar por su apariencia <br>. Hmm... Me preocupa cómo resultará esto <br>.
+5150,1,Success,"{""contexto_original"": ""/ci3 1 ……やはり、来たか。<br>油断するな、構えろ。"", ""texto_a_traducir"": ""\/ci3 1 Llego...lo sabia. Prepararse. Que nadie se descuide||TAG_0||ahora.""}"
+5150,1,Failure,¿Quedate aqui y garantiza mas.<br>Retrocedamos y recuperemonos.
+5150,1,Dead,...El costo fue mayor de lo que esperaba. Ay...
+5150,1,BuddyDead,¿Podrías hacer tu propio peso por una vez? Maldita sea...<br>Los dos tendremos que arreglárnoslas.
+5150,1,TargetDead,"{""contexto_original"": ""/mn15 /ci2 1 おかげ様で、助かりましたわ！<br>私の実力ではご一緒してくださると<br>嬉しいですわ……ってサガさん？"", ""texto_a_traducir"": ""\/mn15 /ci2 1 ¡Lo logramos, gracias a ti! ¡Estamos muy contentos de que||TAG_0||se haya asociado con nosotros! ¿No es asi... eh, Saga?""}"

@@ -1,0 +1,29 @@
+section,group,id,text
+Basic,0,Title,仮想惑星実戦訓練
+Basic,0,Explanation,本任務は、VR空間にて行う<br>特殊環境での実戦訓練である。<br>最新の演算データで構築された<br>アークスが未経験の戦闘環境を想定した<br>仮想惑星での戦闘訓練が目的だ。<br>アークス各員は、積極的に参加せよ。<br>――――――――――――――――――――<br>クエストポイント【704】達成でクリア<br>ルーム内のクエストポイント共有／有り
+Basic,1,Title,Virtual Planet Battle Training
+Basic,1,Explanation,"For this training, you will undergo practical<br>combat training for unique conditions in a VR<br>environment. Our goal is to prepare ARKS ops for new combat<br>environments on virtual planets built using data<br>from our latest predictive models. Your participation<br>is strongly encouraged.<br>-------------------------------------------------------<br>Complete by obtaining [704] Quest Points.<br>Intra-room quest point sharing will be in effect."
+PreTransportDirection,0,NpcComMsg1,まもなく、訓練を開始します。<br>目標は、出現したエネミーの討伐による<br>クエストポイントの目標値到達です。
+PreTransportDirection,0,NpcComMsg2,訓練となる舞台は<br>アークスが未経験の戦闘環境を想定した<br>仮想惑星となります。
+PreTransportDirection,0,NpcComMsg3,ただ、演算データに基づくものにしては<br>あまりに高い再現度で気になります。<br>気を抜かずに頑張ってください。
+PreTransportDirection,1,NpcComMsg1,Training will begin shortly.<br>Your objective is to earn the required Quest<br>Points by suppressing enemies.
+PreTransportDirection,1,NpcComMsg2,This training will take place<br>on a virtual planet where we do not yet<br>have combat experience.
+PreTransportDirection,1,NpcComMsg3,"It’s pretty realistic for something<br>based on a predictive model, so I advise<br>you to stay on guard."
+QuestTarget,0,SimpleExplanation,クエストポイントをためろ！
+QuestTarget,1,SimpleExplanation,Collect Quest Points!
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,0,a5,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Complete a special Client Order
+AcceptCondition,1,a2,Complete a special Client Order
+AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+AreaName,0,Area0S,仮想惑星 Type E
+AreaName,0,Area0L,仮想惑星 Type E
+AreaName,0,QuestInfoAreaName,仮想惑星 Type E
+AreaName,1,Area0S,Virtual Planet Type E
+AreaName,1,Area0L,Virtual Planet Type E
+AreaName,1,QuestInfoAreaName,Virtual Planet Type E
