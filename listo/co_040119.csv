@@ -1,0 +1,43 @@
+section,group,id,text
+SelectWindow,0,text10,『ランクマッチ』について
+SelectWindow,0,text20,『パスワードマッチ』について
+SelectWindow,0,text30,『バトルランク』について
+SelectWindow,0,text40,『バトルランキング』について
+SelectWindow,0,text50,『ランキングの確認』について
+SelectWindow,0,text90,戻る
+SelectWindow,1,text10,Partidos clasificados
+SelectWindow,1,text20,Coincidencias de contraseña
+SelectWindow,1,text30,Rangos de batalla
+SelectWindow,1,text40,Clasificación de batalla
+SelectWindow,1,text50,Comprobando las clasificaciones
+SelectWindow,1,text90,Atrás
+TutorialText01,0,Title,『ランクマッチ』について
+TutorialText01,0,text0001,r><br>このマッチング形式では<br>勝敗結果に応じて、バトルランクを決める<br>アリーナポイントが変動し<br>バトルコインを必ず入手できます。<br>
+TutorialText01,1,Title,Partidos clasificados
+TutorialText01,1,text0001,"En partidas igualadas, los jugadores de todos los bloques en el lobby de batalla <c ffff00><br>se combinan aleatoriamente<c> para las batallas.<br><br>En este formato coincidente, los puntos de arena que determinan tu rango de batalla<br>varían dependiendo de si ganas o pierdes, y recibirás<br>Monedas de batalla pase lo que pase.<br>"
+TutorialText02,0,Title,『パスワードマッチ』について
+TutorialText02,0,text0001,式では<br>バトルコインと報酬アイテムを入手できますが<br>アリーナポイントは変動しません。<c><br><br><c ffff00>またバトル終了時の<br>再マッチングは存在せず<br>必ずバトルロビーに帰還します。<c>
+TutorialText02,0,text0002,<c 00b0f0>12人全員の所属ユニオンを決めたい<c>時は<br><c ffff00>参加パスワードを入力し<br>「敵ユニオンも上記パスワードを入力した<br>　相手に限定」にチェックを入れる<c>ことで<br>マッチングを開始できます。<br><br>　※どちらも入力しないことで<br>　　　同じ無入力の人とマッチングできます。
+TutorialText02,0,text0003,●ブルーユニオンを指定<br>#blue<br><br>■入力例<br><c ff9c70>TestPass#red<c>と入力すると、<br>パスワード「TestPass」＆レッドユニオンを<br>指定したことになります。
+TutorialText02,0,text0004,r>●ブルーユニオンを指定<br>#blue<br><br>■入力例<br><c ff9c70>TestPass#red<c>と入力すると、<br>パスワード「TestPass」＆レッドユニオンを<br>指定したことになります。
+TutorialText02,1,Title,Coincidencias de contraseña
+TutorialText02,1,text0001,"En Coincidencias de contraseña, puedes emparejar con jugadores que hayan establecido la misma<br>contraseña como usted. <c ff4f3f>Se necesitan seis o más jugadores para comenzar un juego.<c><br><br><c ff4f3f>En este formato de combinación, recibes monedas de batalla y artículos de recompensa, pero<br>Los puntos de arena no cambian.<c><br><br><c ffff00> Tampoco hay revanchas cuando termina la batalla, por lo que deberás<br>regresa al lobby de batalla.<c>"
+TutorialText02,1,text0002,"<c 00b0f0>Cuando quieras establecer una Unión a la que pertenezcan los 12 jugadores<c>,<br>puede comenzar a emparejar ingresando una contraseña de participación y<br>marcando ""Limitar la unión enemiga a otros jugadores que usen la contraseña anterior"".<br><br>* Si tampoco completas, podrás ser emparejado con otros jugadores<br>que no están usando una contraseña."
+TutorialText02,1,text0003,"Cuando aliados y enemigos luchan usando la misma contraseña, puedes omitir<br>especificando una Unión si agrega <yellow>las cadenas de caracteres siguientes<c> a la contraseña.<br><br>● #red para elegir la Unión roja<br><br>● #blue para elegir la Unión azul<br><br>■ Ejemplo: si ingresa <c ff9c70>TestPass#red<c>, está utilizando<br>la contraseña ""TestPass"" y seleccionando la Unión roja."
+TutorialText02,1,text0004,"Cuando aliados y enemigos luchan usando la misma contraseña, puedes omitir<br>especificando una Unión si agrega <yellow>las cadenas de caracteres siguientes<c> a la contraseña.<br><br>● #red para elegir la Unión roja<br><br>● #blue para elegir la Unión azul<br><br>■ Ejemplo: si ingresa <c ff9c70>TestPass#red<c>, está utilizando<br>la contraseña ""TestPass"" y seleccionando la Unión roja."
+TutorialText03,0,Title,『バトルランク』について
+TutorialText03,0,text0001,ランクマッチのバトル終了時に<br>勝敗に応じて、所属ランクを決める<br>アリーナポイントが変化します。<br><br>アリーナポイントの値に応じて<br>自身の所属するランクが変動します。<br><br><c ffff00>このランクが高ければ高いほど<br>バトル終了時にもらえるバトルコインの量が<br>増加します。<c>
+TutorialText03,0,text0002,またアリーナポイントは一定期間<br>開催されるランキングにも影響します。<br><br><c ffff00>所属するランクが高ければ高いほど<br>期間終了時にもらえるランキング報酬が<br>より豪華なものになります。<c>
+TutorialText03,1,Title,Rangos de batalla
+TutorialText03,1,text0001,"Cuando termina una partida igualada, los puntos de arena que determinan tu rango cambian<br>dependiendo de si ganaste o perdiste.<br><br>Tu rango cambia según la cantidad de puntos Arena que ganes.<br><br><c ffff00>Cuanto más alto sea tu rango, más monedas de batalla recibirás cuando finalice una batalla.<c>"
+TutorialText03,1,text0002,"Los Arena Points también influyen en las clasificaciones que se realizan con regularidad.<br><br><c ffff00>Cuando tu rango es más alto, recibes recompensas más extravagantes<br>cuando termine el período de clasificación.<c>"
+TutorialText04,0,Title,『バトルランキング』について
+TutorialText04,0,text0001,当月の1日AM6:00時点のランクや順位に基づき<br>ランキング報酬を<br><c 00b0f0>所属シップのアークスリーグ管理官ミミ<c>から<br>受け取ることができます。
+TutorialText04,0,text0002,<c ff4f3f>またランキングが終了した時点で<br>所属するランクに応じて<br>以下のようにリセットされます。<c><br><br>　◆LEGEND　⇒　S1<br>　◆S1～S4　⇒　　S5　◆S5　⇒　A1<br>　◆A1～A4　⇒　A5　◆A5　⇒　B1<br>　◆B1～B4　⇒　　B5　◆B5　⇒　C1<br>　◆C1～C4　⇒　C5　◆C5　⇒　D1<br>　◆D1～D4　⇒　　D5　◆D5　⇒　D5維持
+TutorialText04,1,Title,Clasificación de batalla
+TutorialText04,1,text0001,"En Battle Arena, todos los jugadores se clasifican desde las <c ffff00>6:00 a.m. el día 1 de cada mes.<br>a las 6:00 a.m. del día 1 del mes siguiente<c>.<br><br>Clasificación de recompensas según rangos y posición a partir de las 6:00 a. m.<br>el día 1 del mes en curso se puede recoger en<br>el <c 00b0f0>Oficial de la Liga ARKS<c> del barco en el que te encuentras."
+TutorialText04,1,text0002,"<c ff4f3f>Además, lo siguiente se restablece según tu rango cuando finaliza el ranking:<c><br><br>◆LEYENDA ⇒ T1<br>◆S1～S4 ⇒ S5<br>◆S5 ⇒ A1<br>◆A1～A4 ⇒ A5 ◆A5 ⇒ B1<br>◆B1～B4 ⇒ B5 ◆B5 ⇒ C1<br>◆C1～C4 ⇒ C5 ◆C5 ⇒ D1<br>◆D1～D4 ⇒ D5 ◆D5 ⇒ Mantener D5"
+TutorialText05,0,Title,『ランキングの確認』について
+TutorialText05,0,text0001,体のバトルランキング情報や<br>過去の情報を見たい時は<br><c 00b0f0>バトルロビー内のバトルモニュメント<c>から<br>確認することができます。
+TutorialText05,1,Title,Comprobando las clasificaciones
+TutorialText05,1,text0001,"Puedes ver tu propia información de clasificación de batalla yendo a<br><c 00b0f0>Menú principal ⇒ Información de contenido ⇒ Información del campo de batalla<c>.<br><br>Cuando quieras consultar la información general del ranking de batalla o la información anterior.<br>información, <c 00b0f0>ve al Monumento a la Batalla<c> en el Vestíbulo de Batalla."
