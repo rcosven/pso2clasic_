@@ -1,0 +1,39 @@
+section,group,id,text
+Basic,0,Title,砂上遊園アークマランド
+Basic,0,Explanation,アルは<br>スコアを稼ぐには欠かせないものである。<br>各員、積極的な挑戦を推奨する。<br>――――――――――――――――――――<br>ルーム内のスコア共有<br>制限時間経過でクエスト終了
+Basic,1,Title,Parque infantil de arena Arkumaland
+Basic,1,Explanation,Este es un mensaje para todos los agentes de ARKS.<br>My name is Arkuma and I have prepared a<br>programa de entrenamiento especial para su placer<br>y edificación. La premisa es simple.<br>Derrota a tantos enemigos como puedas dentro<br>el tiempo asignado para superar la puntuación más alta.<br>Tenga en cuenta que las pruebas de emergencia que encuentre<br>en el camino son esenciales para aumentar<br>tu puntuación. ¿Estás listo para un verdadero desafío?<br>-------------------------------------<br>El intercambio de puntuaciones dentro de la sala está activo.<br>La misión terminará cuando expire el límite de tiempo.
+QuestTarget,0,SimpleExplanation,エネミーを撃破しスコアを獲得せよ！
+QuestTarget,1,SimpleExplanation,¡Destruye enemigos para aumentar tu puntuación!
+PreTransportDirection,0,NpcComMsg1,参集に感謝する。<br>これより、エネミーの撃破数による<br>スコアアタックに挑戦されたし。
+PreTransportDirection,0,NpcComMsg2,なお、クエストの途中で発生する<br>エマージェンシートライアルには<br>トライアルオーダーを設定している。
+PreTransportDirection,0,NpcComMsg3,達成により「スコア上昇倍率」が向上。<br>高得点が期待されるため、各員積極的に<br>挑戦されたし。以上。
+PreTransportDirection,1,NpcComMsg1,Gracias a todos nuestros participantes.<br>El siguiente paso es el modo Score Attack en el que ganarás<br>puntos dependiendo del número<br>de enemigos derrotados.
+PreTransportDirection,1,NpcComMsg2,Tenga en cuenta que se han establecido órdenes de prueba<br>para los Ensayos de Emergencia que son<br>desencadenado durante la misión.
+PreTransportDirection,1,NpcComMsg3,"Al completarlos, podrás aumentar tu<br>""Multiplicador de puntuación"". Todos los participantes que deseen<br>maximizar su puntuación se recomienda tomar cada<br>desafío de manera proactiva. Eso es todo."
+AreaName,0,Area0S,採掘場跡エリア1
+AreaName,0,Area0L,惑星リリーパ 採掘場跡エリア1
+AreaName,0,Area1S,採掘場跡エリア2
+AreaName,0,Area1L,惑星リリーパ 採掘場跡エリア2
+AreaName,1,Area0S,Área de mina abandonada 1
+AreaName,1,Area0L,Lillipa - Área de mina abandonada 1
+AreaName,1,Area1S,Área de mina abandonada 2
+AreaName,1,Area1L,Lillipa - Área de mina abandonada 2
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,0,a4,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+NpcMessage,0,NPC_QUEST_START,クエストを開始する。<br>より多くのエネミーを撃破し<br>自身のハイスコアを更新せよ。
+NpcMessage,0,NPC_TIME_HALF,予告：終了時刻まで、半分となった。<br>トライアルオーダーの達成をめざし<br>倍率を上げ高得点を取得せよ。
+NpcMessage,0,NPC_TIME_1MIN,予告：終了時刻まで、あと１分。<br>最後まで、各自奮闘せよ。
+NpcMessage,1,NPC_QUEST_START,La búsqueda comienza ahora.<br>Derrota a tantos enemigos como puedas y<br>supera tu puntuación más alta.
+NpcMessage,1,NPC_TIME_HALF,Advertencia: has llegado a la mitad del camino.<br>Intente completar una orden de prueba para aumentar<br>tu multiplicador para obtener más puntos.
+NpcMessage,1,NPC_TIME_1MIN,Warning: Only one minute left until time runs out.<br>Sigue luchando hasta el final.
+LineMessage,0,LINE_QUEST_START,エネミーを撃破しスコアを獲得せよ！
+LineMessage,0,LINE_TIME_1MIN,残り時間、あと1分！
+LineMessage,1,LINE_QUEST_START,¡Destruye enemigos para aumentar tu puntuación!
+LineMessage,1,LINE_TIME_1MIN,¡Solo queda un minuto!
