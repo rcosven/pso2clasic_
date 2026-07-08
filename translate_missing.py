@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import time
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
 from pathlib import Path
 
 from deep_translator import GoogleTranslator
@@ -27,6 +28,7 @@ GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 TIEMPO_ENTRE_ARCHIVOS = int(os.getenv("TIEMPO_ENTRE_ARCHIVOS", "15"))
 TIEMPO_SIN_PENDIENTES = int(os.getenv("TIEMPO_ESPERA", "600"))
+TRADUCCION_TIMEOUT = int(os.getenv("TRADUCCION_TIMEOUT", "30"))
 PUSH_CADA = int(os.getenv("PUSH_CADA", "1"))
 DEFER_FILES = {
     name.strip()
@@ -124,20 +126,41 @@ def restore_tags(text: str, tags: list[str]) -> str:
     return text
 
 
+def is_already_spanish(text: str) -> bool:
+    if not text or not text.strip():
+        return True
+    if re.search(r"[áéíóúñ¿¡]", text):
+        return True
+    sample = text[:80].lower()
+    es_markers = ("tengo", "me ", "el ", "la ", "los ", "una ", "por ", "¿", "¡", "hasta", "voy ")
+    en_markers = ("the ", "you ", "your ", "what ", "this ", "that ", "more ", "it's ", "ah,")
+    has_es = any(m in sample for m in es_markers)
+    has_en = any(m in sample for m in en_markers)
+    return has_es and not has_en
+
+
 def translate_segment(text: str, cache: dict[str, str], tags: list[str]) -> str:
     text = text.strip()
     if not text:
         return restore_tags(text, tags)
     if text in cache:
         return restore_tags(cache[text], tags)
+    if is_already_spanish(text):
+        cache[text] = text
+        return restore_tags(text, tags)
 
     for attempt in range(5):
         try:
-            translated = translator.translate(text)
+            with ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(translator.translate, text)
+                translated = future.result(timeout=TRADUCCION_TIMEOUT)
             result = (translated or "").strip()
             cache[text] = result
-            time.sleep(0.15)
+            time.sleep(0.1)
             return restore_tags(result, tags)
+        except FuturesTimeout:
+            log(f"Timeout traduccion ({attempt + 1}/5), reintentando...")
+            time.sleep(2 ** attempt)
         except Exception as exc:
             log(f"Reintento traduccion ({attempt + 1}/5): {str(exc)[:120]}")
             time.sleep(2 ** attempt)
@@ -374,8 +397,9 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
     raw_g1 = {(r["section"], r["id"]): r["text"] for r in raw_rows if r["group"] == "1"}
     jp_g0 = {(r["section"], r["id"]): r["text"] for r in raw_rows if r["group"] == "0"}
 
-    log(f"Traduciendo: {filename}")
     g1_rows = [r for r in rows if r["group"] == "1"]
+    log(f"Traduciendo: {filename} ({len(g1_rows)} filas group=1)")
+    progress_step = 1 if len(g1_rows) <= 25 else 5
 
     for i, row in enumerate(g1_rows, 1):
         key = (row["section"], row["id"])
@@ -384,9 +408,12 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
         override = should_use_jp_text(row["id"], jp_text, en_text)
         if override is not None:
             row["text"] = override
+        elif is_already_spanish(row["text"]) and is_already_spanish(en_text):
+            pass
         else:
+            log(f"  fila {i}/{len(g1_rows)}: {row['id']}")
             row["text"] = translate_preserve_lines(en_text, jp_text, cache)
-        if i % 10 == 0:
+        if i % progress_step == 0 or i == len(g1_rows):
             save_cache(cache)
             log(f"  ... {i}/{len(g1_rows)} filas")
 
