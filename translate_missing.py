@@ -129,17 +129,33 @@ def setup_git():
     subprocess.run(["git", "config", "--global", "user.email", "railway@bot.com"], check=False)
     subprocess.run(["git", "config", "--global", "user.name", "Railway Traductor"], check=False)
 
+    remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
+
     if not (REPO_DIR / ".git").exists():
+        log("Inicializando Git en /app (contenedor sin historial)...")
         subprocess.run(["git", "init"], cwd=REPO_DIR, check=False)
         subprocess.run(["git", "branch", "-m", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
-
-    remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
-    res = subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
-    if res.returncode != 0:
         subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
+    else:
+        remotes = subprocess.run(["git", "remote"], cwd=REPO_DIR, capture_output=True, text=True)
+        if "origin" in remotes.stdout.split():
+            subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
+        else:
+            subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
 
-    subprocess.run(["git", "fetch", "origin"], cwd=REPO_DIR, check=False)
+    fetch = subprocess.run(
+        ["git", "fetch", "origin", GITHUB_BRANCH],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if fetch.returncode != 0:
+        log(f"Error al conectar con GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
+        return False
+
+    subprocess.run(["git", "branch", "-u", f"origin/{GITHUB_BRANCH}", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
     subprocess.run(["git", "reset", "--mixed", f"origin/{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
+    log("Conexion con GitHub establecida correctamente.")
     return True
 
 
