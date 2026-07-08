@@ -107,7 +107,7 @@ Result,1,Task,tarea
 Result,1,Win,Gana
 Result,1,Lose,Perdidas
 Result,1,Draw,Sorteos
-Result,1,GetMvp,MVP adquiridos
+Result,1,GetMvp,MVP obtendrias
 Result,1,GetMvpSupport,compatibles con MVP
 Result,1,RareWeaponPickup,----
 Result,1,RareWeaponPickup_Num,----
@@ -266,14 +266,14 @@ Counter,1,RuleInfo_BattleTime,tiempo de batalla
 Counter,1,RuleInfo_BattleStage,etapa de batalla
 Counter,1,RuleInfo_JoinTerms,Condiciones para unirse
 Counter,1,RuleInfo_Bringing,equipaje de mano
-Counter,1,RuleInfo_RuleDesc,Descripcion de la regla
+Counter,1,RuleInfo_RuleDesc,Reglas o descripcion de la regla
 Counter,1,RuleInfo_BattleTimeTag,Tiempo
 Counter,1,RuleInfo_BattleStageTag,Ubicacion
 Counter,1,RuleInfo_RuleBasicInfoVita,Informacion basica de la regla
-Counter,1,RuleInfo_RuleDescVita,Descripcion de la regla
+Counter,1,RuleInfo_RuleDescVita,Reglas o descripcion de la regla
 Counter,1,MsgWnd_Yes,Si
 Counter,1,MsgWnd_No,No
-Counter,1,LineMsg_MatchingStart,漀洀瀀氀攀琀攀Ⰰ 琀栀攀 最愀洀攀 眀椀氀氀 愀甀琀漀洀愀琀椀挀愀氀氀礀 猀琀愀爀琀⸀㰀戀爀㸀倀氀攀愀猀攀 眀愀椀琀 愀 洀漀洀攀渀琀⸀
+Counter,1,LineMsg_MatchingStart,"Ha empezado el Matching de $(0)""$(1)"".<br><br>Una vez completado, el juego se iniciara automaticamente.<br>Cada un rato, porfavor, aguante."
 Counter,1,MenuRuleSelect_Item,$(0)
 Counter,1,MenuRuleSelect_StartMatching,Unirse al partido
 Counter,1,MenuRuleSelect_Return,Atras
@@ -362,10 +362,10 @@ Ranking,0,Text_Reword_Item,$(0)×$(1)
 Ranking,0,Text_Reword_Nothing,現在は開催されていません
 Ranking,1,Main_WindowTitle,MONUMENTO DE BATALLA
 Ranking,1,HelpMenu_Top,<c f0df60>Allows you to view the rankings of the players who fought in the Battle Arena.<c>
-Ranking,1,Menu_Top_WindowTitle,CLASIFICACION SELECCIONAR
-Ranking,1,Menu_Top_RankMatchEquipNo,"Partida igualada ""Emblem Scramble"""
-Ranking,1,Menu_Top_RankMatchEquipNo_Switch,"Partida igualada ""Emblem Scramble"" (version en la nube)"
-Ranking,1,Menu_Top_RankMatchEquipYes,"Partida igualada ""Battle Royale"""
+Ranking,1,Menu_Top_WindowTitle,CLASSIFICACION SELECCIONAR
+Ranking,1,Menu_Top_RankMatchEquipNo,"Partida igualada ""Escaramuza del Pendon"""
+Ranking,1,Menu_Top_RankMatchEquipNo_Switch,"Partida igualada ""Escaramuza del Pendon"""
+Ranking,1,Menu_Top_RankMatchEquipYes,"Partida igualada ""Batalla Real"""
 Ranking,1,Menu_Top_RankMatchEquipYes_Switch,"Partida igualada ""Battle Royale"" (version en la nube)"
 Ranking,1,Menu_Return,Atras
 Ranking,1,RankMatchEquipNo_WindowTitle,[REPUESTA DE EMBLEMAS] CLASIFICACION DE BATALLA
@@ -389,9 +389,9 @@ Ranking,1,Popup_Menu_Now,Actualmente en progreso
 Ranking,1,Popup_Menu_New,Ultimas clasificaciones
 Ranking,1,Popup_Menu_Old,Clasificaciones anteriores
 Ranking,1,Tab_Top20,Arriba $(0)
-Ranking,1,Tab_MyRank,A tu alrededor
+Ranking,1,Tab_MyRank, A tu alrededor 
 Ranking,1,Tab_Friend20,Amigos mejores $(0)
-Ranking,1,Tab_Reward,premio
+Ranking,1,Tab_Reward,Premio
 Ranking,1,NoData,No existen datos de clasificacion para la instancia actual.
 Ranking,1,Hint_Crystal_Now,<c f0df60>These are the current Battle Rankings in progress.<c>
 Ranking,1,Hint_Crystal_New,<c f0df60>These are the latest Battle Rankings.<c>
@@ -420,7 +420,7 @@ Ranking,1,Text_Reword_Nothing,Por el momento no se esta celebrando nada.
 Pickup,0,Get_Weapon,$(0)を獲得しました。
 Pickup,0,Get_Item,$(0)×$(1) を獲得しました。
 Pickup,1,Get_Weapon,$(0) adquirido.
-Pickup,1,Get_Item,$(0) x $(1) adquirido.
+Pickup,1,Get_Item,Ha ganado $(0)×$(1).
 Squad,0,SquadNameBlue,BLUE UNION
 Squad,0,SquadNameRed,RED UNION
 Squad,0,SquadEnemyNameMask,ARKS $(0)
@@ -479,7 +479,7 @@ Remuneration,1,Remuneration_Explanation1,¿Estas seguro de que quieres salir de 
 Remuneration,1,Remuneration_Title1,SELECCIONAR ESPACIO DE RECOMPENSA
 Remuneration,1,Remuneration_Help1,"<c f0df60>Select the slot you want, and get the rewards!<c>"
 Remuneration,1,Remuneration_Help2,"<c f0df60>Select the slot you want, and get the rewards! (<c><% Cancel> <c f0df60>to Exit)<c>"
-Remuneration,1,Remuneration_LineMessage1,$(0) adquiridos y enviados a OP Team Storage.
+Remuneration,1,Remuneration_LineMessage1,$(0) obtenido y enviado a Almacen de la Opera.
 Remuneration,1,Remuneration_LineMessage2,$(0) acquired.<br>This will be applied in the next battle.
 Remuneration,1,Remuneration_WindowTitle4,CONFIRMAR COMPRA DEL ARTICULO
 Remuneration,1,Remuneration_Explanation2,"m <br>for $(1), open additional slots, and <br>acquire rewards?<br><br>SG Required: $(2) SG<br>(You Have: $(0))"
@@ -491,7 +491,7 @@ Remuneration,1,Remuneration_OneMoreTitle,CONFIRMAR APERTURA DE SLOT ADICIONAL
 Remuneration,1,Remuneration_OneMoreMessage,mi: $(0))
 Remuneration,1,Remuneration_RemainingReward,<yellow>Possible Remaining Items:<c>
 Remuneration,1,Remuneration_OneMoreFinButton,Salida
-Remuneration,1,Remuneration_ReceiveErrorTitle,NO SE PUDIO RECIBIR ARTICULOS
+Remuneration,1,Remuneration_ReceiveErrorTitle,No se pudo recibir articulo
 Remuneration,1,Remuneration_ReceiveErrorMessage,Failed to receive items.<br>Exiting.
 Matching,0,Matching_Complete,マッチング完了
 Matching,0,Matching_CountDown,参加メンバーが揃いました。<br>$(0)秒後にバトルエリアに転送します。
@@ -652,11 +652,11 @@ RuleCaption,1,RuleInfo_BattleTime,tiempo de batalla
 RuleCaption,1,RuleInfo_BattleStage,etapa de batalla
 RuleCaption,1,RuleInfo_JoinTerms,Condiciones para unirse
 RuleCaption,1,RuleInfo_Bringing,equipaje de mano
-RuleCaption,1,RuleInfo_RuleDesc,Descripcion de la regla
+RuleCaption,1,RuleInfo_RuleDesc,Reglas o descripcion de la regla
 RuleCaption,1,RuleInfo_BattleTimeTag,Tiempo
 RuleCaption,1,RuleInfo_BattleStageTag,Ubicacion
 RuleCaption,1,RuleInfo_RuleBasicInfoVita,Informacion basica de la regla
-RuleCaption,1,RuleInfo_RuleDescVita,Descripcion de la regla
+RuleCaption,1,RuleInfo_RuleDescVita,Reglas o descripcion de la regla
 RuleCaption,1,MsgWnd_Yes,Si
 RuleCaption,1,MsgWnd_No,No
 RuleCaption,1,LineMsg_MatchingStart,"Se ha iniciado la busqueda de partidas del tipo ""$0"".<br><br>Una vez completada la busqueda, se iniciara automaticamente el juego.<br>Por favor, espere un momento."
@@ -672,7 +672,7 @@ RuleCaption,1,Crystal,Lucha de emblemas
 RuleCaption,1,Crystal_Dbg1,Lucha de emblemas (bosque)
 RuleCaption,1,Crystal_Dbg2,Lucha de emblemas (volcan)
 RuleCaption,1,Crystal_Dbg3,Lucha de emblemas (Tokio)
-RuleCaption,1,Crystal_AGP,ARKS BT 2017 Preliminares
+RuleCaption,1,Crystal_AGP,Arks BT 2017 Preliminares
 RuleCaption,1,Crystal_4vs4A,4 contra 4 (VR Arena - Bosque)
 RuleCaption,1,Crystal_4vs4B,4 contra 4 (VR Arena - Volcan)
 RuleCaption,1,Crystal_4vs4C,4 contra 4 (VR Arena - Tokio)
@@ -786,11 +786,11 @@ RuleText,1,RuleInfo_BattleTime,tiempo de batalla
 RuleText,1,RuleInfo_BattleStage,etapa de batalla
 RuleText,1,RuleInfo_JoinTerms,Condiciones de adhesion
 RuleText,1,RuleInfo_Bringing,equipaje de mano
-RuleText,1,RuleInfo_RuleDesc,Descripcion de la regla
+RuleText,1,RuleInfo_RuleDesc,Reglas o descripcion de la regla
 RuleText,1,RuleInfo_BattleTimeTag,Tiempo
 RuleText,1,RuleInfo_BattleStageTag,Ubicacion
 RuleText,1,RuleInfo_RuleBasicInfoVita,Informacion basica de la regla
-RuleText,1,RuleInfo_RuleDescVita,Descripcion de la regla
+RuleText,1,RuleInfo_RuleDescVita,Reglas o descripcion de la regla
 RuleText,1,MsgWnd_Yes,Si
 RuleText,1,MsgWnd_No,No
 RuleText,1,LineMsg_MatchingStart,猀 挀漀洀瀀氀攀琀攀Ⰰ 琀栀攀 最愀洀攀 眀椀氀氀 愀甀琀漀洀愀琀椀挀愀氀氀礀 猀琀愀爀琀⸀㰀戀爀㸀倀氀攀愀猀攀 眀愀椀琀 愀 洀漀洀攀渀琀⸀
@@ -920,11 +920,11 @@ RuleGoalText,1,RuleInfo_BattleTime,tiempo de batalla
 RuleGoalText,1,RuleInfo_BattleStage,etapa de batalla
 RuleGoalText,1,RuleInfo_JoinTerms,Condiciones de adhesion
 RuleGoalText,1,RuleInfo_Bringing,equipaje de mano
-RuleGoalText,1,RuleInfo_RuleDesc,Descripcion de la regla
+RuleGoalText,1,RuleInfo_RuleDesc,Reglas o descripcion de la regla
 RuleGoalText,1,RuleInfo_BattleTimeTag,Tiempo
 RuleGoalText,1,RuleInfo_BattleStageTag,Ubicacion
 RuleGoalText,1,RuleInfo_RuleBasicInfoVita,Informacion basica de la regla
-RuleGoalText,1,RuleInfo_RuleDescVita,Descripcion de la regla
+RuleGoalText,1,RuleInfo_RuleDescVita,Reglas o descripcion de la regla
 RuleGoalText,1,MsgWnd_Yes,Si
 RuleGoalText,1,MsgWnd_No,No
 RuleGoalText,1,LineMsg_MatchingStart,"omplete, the game will automatically start.<br>Please wait a moment."
