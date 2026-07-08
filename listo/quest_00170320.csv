@@ -2,19 +2,19 @@ section,group,id,text
 PreTransportDirection,0,NpcComMsg1,まもなく、再び復活した邪竜のもとへ<br>転送します。
 PreTransportDirection,0,NpcComMsg2,前回とはけた違いのエネルギーが<br>観測されており、厳しい戦いと<br>なる事が予想されます。<br>十分に注意して臨んでください。
 PreTransportDirection,0,NpcComMsg3,私たちにはアリサさんの援護がついて<br>います！　そして皆さんの力があれば<br>きっと勝てるはず！
-PreTransportDirection,1,NpcComMsg1,You will be teleporting to the location of<br>the resurrected Crimson Fellwyrm shortly.
-PreTransportDirection,1,NpcComMsg2,ttle is <br>expected to be very intense. Exercise <br>an abundance of caution.
-PreTransportDirection,1,NpcComMsg3,"With the benefit of Alis' support and protection<br>as well as everyone else's power, our<br>victory should be assured!"
+PreTransportDirection,1,NpcComMsg1,Te teletransportarás a la ubicación de<br>el Crimson Fellwyrm resucitado en breve.
+PreTransportDirection,1,NpcComMsg2,Las lecturas de energía son un orden de magnitud.<br>más alto que la última vez y esta batalla es<br>Se espera que sea muy intenso. Ejercicio<br>mucha precaución.
+PreTransportDirection,1,NpcComMsg3,"Con el beneficio del apoyo y protección de Alis.<br>así como el poder de todos los demás, nuestro<br>¡La victoria debe estar asegurada!"
 Basic,0,Title,T:崩城に甦る黒衣の邪竜
 Basic,0,Explanation,異世界オメガ、クエント城跡に<br>極めて強い反応と、真っ黒な邪竜を確認！<br>アリサさんと協力して、撃退して下さい！<br>大変危険な戦いとなるため、この任務は<br>実績のあるアークスに限定されます！<br>――――――――――――――――――――<br>最大与ダメージ制限/999999<br>失敗条件/任務の失敗、制限時間の経過
 Basic,1,Title,T: Black Fellwyrm surge de las ruinas
-Basic,1,Explanation,"We have picked up extremely strong readings in<br>the Cuento Castle Ruins of Parallel World: Omega,<br>coinciding with confirmed sightings of a pitch <br>black dragon! Defeat the monster with the help of <br>Alis. This mission is restricted to senior ARKS<br>members only due to the extreme danger involved!<br>-------------------------------------------<br>Maximum dealable damage is limited to 999,999<br>You will fail this quest if you fail to fulfill your<br>mission objectives or you exceed the time limit."
+Basic,1,Explanation,"Hemos recogido lecturas extremadamente fuertes en<br>las Ruinas del Castillo de Cuento del Mundo Paralelo: Omega,<br>coincidiendo con avistamientos confirmados de un campo<br>dragón negro! Derrota al monstruo con la ayuda de<br>Alis. Esta misión está restringida a ARKS senior.<br>miembros sólo debido al peligro extremo involucrado!<br>-------------------------------------<br>El daño máximo soportable está limitado a 999,999<br>Fallarás en esta misión si no cumples con tu<br>objetivos de la misión o excedes el límite de tiempo."
 QuestTarget,0,SimpleExplanation,ドラゴンを撃退せよ！
-QuestTarget,1,SimpleExplanation,¡Derrota al dragon!
+QuestTarget,1,SimpleExplanation,¡Derrota al dragón!
 AreaName,0,Area0S,異世界オメガ　クエント城跡
 AreaName,0,Area0L,異世界オメガ　クエント城跡
-AreaName,1,Area0S,Dimension alternativa: Omega - Ruinas del castillo de Cuento
-AreaName,1,Area0L,Dimension alternativa: Omega - Ruinas del castillo de Cuento
+AreaName,1,Area0S,Dimensión alternativa: Omega - Ruinas del castillo de Cuento
+AreaName,1,Area0L,Dimensión alternativa: Omega - Ruinas del castillo de Cuento
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
@@ -22,8 +22,8 @@ AcceptCondition,0,a4,スーパーハード受注許可証の所持
 AcceptCondition,0,a5,スーパーハード受注許可証の所持
 AcceptCondition,1,a1,Borrar un pedido de cliente especial
 AcceptCondition,1,a2,Borrar un pedido de cliente especial
-AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
-AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
-AcceptCondition,1,a5,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil
 TrialBeginLineMessage,0,TargetExplanation,クエスト目標「ドラゴンを撃退せよ！」<br><br><c f0df60>制限時間の経過でクエスト失敗<c>
-TrialBeginLineMessage,1,TargetExplanation,Quest Objective: “Defeat the dragon!”<br><br><c f0df60>You will fail this quest if you exceed the time limit.<c>
+TrialBeginLineMessage,1,TargetExplanation,"Objetivo de la misión: ""¡Derrota al dragón!""<br><br><c f0df60>Fallarás esta misión si excedes el límite de tiempo.<c>"
