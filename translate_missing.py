@@ -6,6 +6,7 @@ Sincroniza con GitHub y corre en Railway.
 
 import os
 import csv
+import logging
 import sqlite3
 import time
 import subprocess
@@ -18,6 +19,9 @@ import litellm
 from litellm import completion
 
 litellm.suppress_debug_info = True
+litellm.set_verbose = False
+logging.getLogger("LiteLLM").setLevel(logging.CRITICAL)
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 try:
     from langdetect import detect, DetectorFactory
@@ -36,6 +40,8 @@ LOG = Path("/app/translate_missing.log")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 TIEMPO_ESPERA = int(os.getenv("TIEMPO_ESPERA", "600"))
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini/gemini-2.0-flash")
+MAX_LLM_RETRIES = int(os.getenv("MAX_LLM_RETRIES", "4"))
 
 TAG_FIXES = {
     "<amarillo>": "<yellow>", "</amarillo>": "</yellow>",
@@ -190,6 +196,32 @@ def push_to_github():
     subprocess.run(["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
 
 
+def call_gemini(prompt: str) -> dict:
+    """Llama solo a Gemini con reintentos. Sin fallback a Groq."""
+    delays = [5, 15, 30, 60]
+    last_error = ""
+
+    for attempt in range(MAX_LLM_RETRIES):
+        try:
+            response = completion(
+                model=GEMINI_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                response_format={"type": "json_object"},
+                num_retries=0,
+                timeout=120,
+            )
+            return json.loads(response.choices[0].message.content)
+        except Exception as exc:
+            last_error = str(exc).split("\n")[0][:300]
+            if attempt < MAX_LLM_RETRIES - 1:
+                wait = delays[min(attempt, len(delays) - 1)]
+                log(f"Gemini fallo (intento {attempt + 1}/{MAX_LLM_RETRIES}): {last_error}")
+                log(f"Reintentando en {wait}s...")
+                time.sleep(wait)
+
+    raise RuntimeError(last_error or "Gemini no respondio")
+
+
 def batch_translate(conn, text_data: list[tuple[str, str]], src_lang: str) -> dict[str, str]:
     out_map: dict[str, str] = {}
     pending: list[tuple[str, str]] = []
@@ -227,17 +259,10 @@ JSON A TRADUCIR:
 """
         translated_dict = {}
         try:
-            log(f"Traduciendo lote de {len(chunk)} textos...")
-            response = completion(
-                model="gemini/gemini-2.5-flash",
-                messages=[{"role": "user", "content": prompt}],
-                response_format={"type": "json_object"},
-                fallbacks=["groq/llama-3.1-8b-instant"],
-                num_retries=2,
-            )
-            translated_dict = json.loads(response.choices[0].message.content)
-        except Exception:
-            log("Error en IA. Saltando lote...")
+            log(f"Traduciendo lote de {len(chunk)} textos con {GEMINI_MODEL}...")
+            translated_dict = call_gemini(prompt)
+        except Exception as exc:
+            log(f"Error en IA (lote omitido): {str(exc).split(chr(10))[0][:300]}")
             translated_dict = {str(idx): txt for idx, (txt, _) in enumerate(chunk)}
 
         for idx_str, (src_text, _) in enumerate(chunk):
@@ -416,6 +441,9 @@ def main():
     log("=== Iniciando Demonio Traductor PSO2 ES (Railway + GitHub) ===")
     if not HAS_LANGDETECT:
         log("ERROR: Falta instalar langdetect.")
+        return
+    if not os.getenv("GEMINI_API_KEY"):
+        log("ERROR: Falta GEMINI_API_KEY en las variables de Railway.")
         return
 
     git_ready = setup_git()
