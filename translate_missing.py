@@ -25,7 +25,8 @@ LOG = Path("/app/translate_missing.log")
 
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
-TIEMPO_ESPERA = int(os.getenv("TIEMPO_ESPERA", "600"))
+TIEMPO_ENTRE_ARCHIVOS = int(os.getenv("TIEMPO_ENTRE_ARCHIVOS", "15"))
+TIEMPO_SIN_PENDIENTES = int(os.getenv("TIEMPO_ESPERA", "600"))
 PUSH_CADA = int(os.getenv("PUSH_CADA", "1"))
 DEFER_FILES = {
     name.strip()
@@ -483,8 +484,13 @@ def main() -> None:
             else:
                 git_ready = False
 
-        log(f"Esperando {TIEMPO_ESPERA / 60} minutos...")
-        time.sleep(TIEMPO_ESPERA)
+        pendientes_restantes = len(list(INPUT_DIR.glob("*.csv")))
+        if pendientes_restantes > 0:
+            log(f"Siguiente archivo en {TIEMPO_ENTRE_ARCHIVOS}s ({pendientes_restantes} pendientes)...")
+            time.sleep(TIEMPO_ENTRE_ARCHIVOS)
+        else:
+            log(f"Sin pendientes. Esperando {TIEMPO_SIN_PENDIENTES / 60} minutos...")
+            time.sleep(TIEMPO_SIN_PENDIENTES)
 
 
 if __name__ == "__main__":
