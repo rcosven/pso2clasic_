@@ -1,18 +1,18 @@
 section,group,id,text
 Basic,0,Title,T:星芒喰らう闇の狂宴
 Basic,0,Explanation,オラクル宙域における複数の惑星<br>およびアークスシップ市街地において<br>異世界オメガのダークファルスと類似した<br>敵性反応が確認された。各員は直ちに出撃し<br>事態の鎮圧をはかれ。極めて危険なことから<br>本作戦は、制限時間内での任務となる。<br>――――――――――――――――――――<br>制限時間20分<br>最大与ダメージ制限/999999<br>最深部に出現するエネミーの撃破でクリア
-Basic,1,Title,",999||TAG_0|Cumplir con su mision antes del limite de tiempo."
-Basic,1,Explanation,Eradique al enemigo!
+Basic,1,Title,T: La juerga oscura consume la luz de las estrellas
+Basic,1,Explanation,"Hemos confirmado lecturas hostiles similares a las<br>para Dark Falz en Dimensión Alternativa: Omega en<br>múltiples planetas en el Sector Oracle, así como el<br>Área de la ciudad del barco ARKS. Todas las unidades deben desplegarse.<br>y reprimir la amenaza. Debido al peligro extremo<br>involucrados, esta misión tendrá una duración limitada.<br>-------------------------------------<br>Time Limit: 20 minutes<br>El daño máximo soportable está limitado a 999,999<br>Completa derrotando a los enemigos en el área final."
 QuestTarget,0,SimpleExplanation,敵性反応を殲滅せよ！
-QuestTarget,1,SimpleExplanation,[Persona]'s Signal Coordinates
+QuestTarget,1,SimpleExplanation,¡Erradica la presencia enemiga!
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AcceptCondition,0,a4,スーパーハード受注許可証の所持
-AcceptCondition,1,a1,Cumplir una Mision del Cliente Especial
-AcceptCondition,1,a2,Cumplir una Mision del Cliente Especial
-AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
-AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a1,Borrar un pedido de cliente especial
+AcceptCondition,1,a2,Borrar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
 AreaName,0,Area0S,【仮面】反応座標付近
 AreaName,0,Area0L,オラクル宙域　【仮面】反応座標付近
 AreaName,0,Area1S,惑星ナベリウス 遺跡
@@ -37,33 +37,33 @@ AreaName,0,Area14S,惑星ハルコタン　黒ノ領域
 AreaName,0,Area14L,惑星ハルコタン　黒ノ領域
 AreaName,0,Area15S,アークスシップ　市街地
 AreaName,0,Area15L,アークスシップ　市街地
-AreaName,1,Area0S,Oracle Sector [Persona]'s Signal Coordinates
-AreaName,1,Area0L,Naverius - Ruins
-AreaName,1,Area1S,Wopal - Floating Facility
-AreaName,1,Area1L,Wopal - Floating Facility
-AreaName,1,Area2S,Facilidad flotante de Wopal
-AreaName,1,Area2L,Facilidad flotante de Wopal
-AreaName,1,Area3S,Harukotan - Nightfall Province
-AreaName,1,Area3L,Harukotan - Nightfall Province
+AreaName,1,Area0S,Coordenadas de señal de [Persona]
+AreaName,1,Area0L,Coordenadas de señal del sector Oracle [Persona]
+AreaName,1,Area1S,Naverio - Ruinas
+AreaName,1,Area1L,Naverio - Ruinas
+AreaName,1,Area2S,Wopal - Instalación flotante
+AreaName,1,Area2L,Wopal - Instalación flotante
+AreaName,1,Area3S,Lillipa - Base Minera
+AreaName,1,Area3L,Lillipa - Base Minera
 AreaName,1,Area4S,Harukotan - Provincia del anochecer
 AreaName,1,Area4L,Harukotan - Provincia del anochecer
-AreaName,1,Area5S,Area de Ship - Area Urbana
-AreaName,1,Area5L,Area de Ship - Area Urbana
-AreaName,1,Area6S,Oracle Sector [Persona]'s Signal Coordinates
-AreaName,1,Area6L,Naverius - Ruins
-AreaName,1,Area11S,Wopal - Floating Facility
-AreaName,1,Area11L,Wopal - Floating Facility
-AreaName,1,Area12S,Facilidad flotante de Wopal
-AreaName,1,Area12L,Facilidad flotante de Wopal
-AreaName,1,Area13S,Harukotan - Nightfall Province
-AreaName,1,Area13L,Harukotan - Nightfall Province
+AreaName,1,Area5S,Barco ARKS - Área de la ciudad
+AreaName,1,Area5L,Barco ARKS - Área de la ciudad
+AreaName,1,Area6S,Coordenadas de señal de [Persona]
+AreaName,1,Area6L,Coordenadas de señal del sector Oracle [Persona]
+AreaName,1,Area11S,Naverio - Ruinas
+AreaName,1,Area11L,Naverio - Ruinas
+AreaName,1,Area12S,Wopal - Instalación flotante
+AreaName,1,Area12L,Wopal - Instalación flotante
+AreaName,1,Area13S,Lillipa - Base Minera
+AreaName,1,Area13L,Lillipa - Base Minera
 AreaName,1,Area14S,Harukotan - Provincia del anochecer
 AreaName,1,Area14L,Harukotan - Provincia del anochecer
-AreaName,1,Area15S,Area de Ship - Area Urbana
-AreaName,1,Area15L,Area de Ship - Area Urbana
+AreaName,1,Area15S,Barco ARKS - Área de la ciudad
+AreaName,1,Area15L,Barco ARKS - Área de la ciudad
 PreTransportDirection0,0,NpcComMsg1,これより、オラクルに出現した<br>オメガのダークファルス勢力の<br>掃討作戦を開始します。
 PreTransportDirection0,0,NpcComMsg2,現在、各ダークファルスは<br>オラクルの各惑星に対し総力を持って<br>攻撃を仕掛けています。
 PreTransportDirection0,0,NpcComMsg3,みなさんは、遊撃隊として各惑星を<br>転戦しこれの撃退をお願いします。<br>厳しい作戦になると思います。ご武運を！
-PreTransportDirection0,1,NpcComMsg1,Iniciamos operaciones contra el poder del <br> Falz Oscuro en la Sectors Oracle.
-PreTransportDirection0,1,NpcComMsg2,Dark Falz's various manifestations <br>are attacking different planets in <br>the Oracle Sector.
-PreTransportDirection0,1,NpcComMsg3,Su tarea es moverse entre planetas y <br>repelar todos los objetivos dentro del tiempo de operacion <br>. ¡Buena suerte!
+PreTransportDirection0,1,NpcComMsg1,Iniciar maniobras de limpieza contra el<br>El poder de Dark Falz en el Sector Oracle.
+PreTransportDirection0,1,NpcComMsg2,Las diversas manifestaciones de Dark Falz<br>están atacando diferentes planetas en<br>el Sector Oráculo.
+PreTransportDirection0,1,NpcComMsg3,Tu trabajo es saltar entre planetas y<br>Repeler todos los objetivos dentro de la operación.<br>periodo de tiempo. ¡Buena caza!
