@@ -214,8 +214,16 @@ def setup_git() -> bool:
         log(f"Error al conectar con GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
         return False
 
-    subprocess.run(["git", "branch", "-u", f"origin/{GITHUB_BRANCH}", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
-    subprocess.run(["git", "reset", "--mixed", f"origin/{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
+    checkout = subprocess.run(
+        ["git", "checkout", "-B", GITHUB_BRANCH, f"origin/{GITHUB_BRANCH}"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if checkout.returncode != 0:
+        log(f"Error sincronizando rama: {checkout.stderr.strip() or checkout.stdout.strip()}")
+        return False
+
     log("Conexion con GitHub establecida correctamente.")
     return True
 
@@ -257,6 +265,11 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
 
     if not input_path.exists():
         return 0
+
+    if output_path.exists():
+        log(f"OMITIDO: {filename} ya traducido en listo/")
+        input_path.unlink(missing_ok=True)
+        return 1
 
     rows = read_csv(input_path)
     if not rows:
@@ -309,7 +322,8 @@ def process_next_file(cache: dict[str, str]) -> int:
         return 0
 
     filename = pending[0].name
-    log(f"Pendientes: {len(pending)} | Procesando: {filename}")
+    restantes = len(pending)
+    log(f"Pendientes: {restantes} | Procesando: {filename}")
     try:
         return process_one_file(filename, cache)
     except Exception as exc:
