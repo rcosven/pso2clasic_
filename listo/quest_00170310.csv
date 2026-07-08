@@ -2,15 +2,15 @@ section,group,id,text
 Basic,0,Title,T:逢魔に誘う幻惑の森
 Basic,0,Explanation,異世界オメガ、クエントとヴェルンの<br>国境付近に突如、大きな森が出現しました。<br>森の出現に巻き込まれた人々を助けるため<br>ハリエットさんが森に向かったようです！<br>ダークファルスに似た反応もあり危険です！<br>ハリエットさんの救出に向かってください！<br>――――――――――――――――――――<br>クエスト中/HP回復の妨害有り<br>失敗条件/任務の失敗、制限時間の経過<br>　　　　　　　　　全員累計9回の戦闘不能
 Basic,1,Title,T: Bosque embrujado a medianoche
-Basic,1,Explanation,"A large forest has manifested near the border of<br>Cuento and Weyland in Alternate Dimension:<br>Omega. Hariette has set out for the Forest to render<br>aid to those affected. We have picked up readings<br>indicative of Dark Falz so extreme caution is advised.<br>We need you to move out and rescue Hariette!<br>HP recovery will be impeded during this quest.<br>You will fail this quest if you fail the mission<br>objectives, exceed the time limit or if members<br>of your team are incapacitated a total of nine times."
+Basic,1,Explanation,"Un gran bosque se ha manifestado cerca del límite de<br>Cuento y Weyland en dimensión alternativa:<br>Omega. Hariette ha partido hacia el bosque para rendir<br>ayuda a los afectados. Hemos recogido lecturas<br>indicative of Dark Falz so extreme caution is advised.<br>¡Necesitamos que salgas y rescates a Hariette!<br>La recuperación de HP se verá impedida durante esta misión.<br>Fallarás esta misión si fallas la misión.<br>objetivos, exceden el límite de tiempo o si los miembros<br>de tu equipo quedan incapacitados un total de nueve veces."
 QuestTarget,0,SimpleExplanation,ハリエットを救出せよ！
 QuestTarget,1,SimpleExplanation,¡Rescata a Hariette!
 PreTransportDirection,0,NpcComMsg1,目標はハリエットさんの救出です。<br>非常に強い敵性反応が確認されており<br>危険な任務となることが予想されます。
 PreTransportDirection,0,NpcComMsg2,現地は、視界が悪いだけではなく<br>多数の敵性存在も確認されており<br>進行妨害される可能性があります。
 PreTransportDirection,0,NpcComMsg3,こちらの被害状況によっては<br>強制撤退もありえます。<br>十分に注意して向かってください！
-PreTransportDirection,1,NpcComMsg1,"Your objective is to rescue Hariette. We have<br>picked up extremely strong hostile readings<br>in the area, so this mission is expected to be dangerous."
-PreTransportDirection,1,NpcComMsg2,"ties have been detected,<br>so your path forward may be obstructed."
-PreTransportDirection,1,NpcComMsg3,If we sustain too much damage it may<br>be necessary to make a forced retreat.<br>Make sure you're careful!
+PreTransportDirection,1,NpcComMsg1,"Tu objetivo es rescatar a Hariette. Tenemos<br>recogió lecturas hostiles extremadamente fuertes<br>en la zona, por lo que se espera que esta misión sea peligrosa."
+PreTransportDirection,1,NpcComMsg2,"No sólo la visibilidad sobre el terreno es deficiente,<br>Se han detectado múltiples entidades hostiles.<br>por lo que tu camino hacia adelante puede verse obstruido."
+PreTransportDirection,1,NpcComMsg3,"Si sufrimos demasiado daño, puede que<br>ser necesario realizar una retirada forzosa.<br>¡Asegúrate de tener cuidado!"
 AreaName,0,Area1S,森の廃城
 AreaName,0,Area1L,森の廃城
 AreaName,1,Area1S,Ruinas del castillo del bosque
@@ -21,7 +21,7 @@ AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AcceptCondition,0,a4,スーパーハード受注許可証の所持
 AcceptCondition,1,a1,Borrar un pedido de cliente especial
 AcceptCondition,1,a2,Borrar un pedido de cliente especial
-AcceptCondition,1,a3,Poseer un permiso de dificultad super dificil
-AcceptCondition,1,a4,Poseer un permiso de dificultad super dificil
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
 TrialBeginLineMessage,0,TargetExplanation,クエスト目標「ハリエットを救出せよ！」<br><br><c f0df60>全員で合計 <c ff2020>9回戦闘不能<c f0df60> になるとクエスト失敗<c>
-TrialBeginLineMessage,1,TargetExplanation,if members of your team are <c ff2020>incapacitated nine times<c f0df60>.<c>
+TrialBeginLineMessage,1,TargetExplanation,"Objetivo de la misión: ""¡Rescata a Hariette!""<br><br><c f0df60>Fallarás esta misión si los miembros de tu equipo quedan <c ff2020>incapacitados nueve veces<c f0df60>.<c>"
