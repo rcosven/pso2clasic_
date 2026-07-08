@@ -183,7 +183,7 @@ def should_use_jp_text(row_id: str, jp_text: str, en_text: str) -> str | None:
 def setup_git() -> bool:
     token = os.getenv("GITHUB_TOKEN")
     if not token:
-        log("ERROR CRITICO: Configura GITHUB_TOKEN en Railway.")
+        log("ERROR CRITICO: Falta GITHUB_TOKEN en Railway.")
         return False
 
     subprocess.run(["git", "config", "--global", "--add", "safe.directory", str(REPO_DIR)], check=False)
@@ -191,9 +191,10 @@ def setup_git() -> bool:
     subprocess.run(["git", "config", "--global", "user.name", "Railway Traductor"], check=False)
 
     remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
+    fresh_init = not (REPO_DIR / ".git").exists()
 
-    if not (REPO_DIR / ".git").exists():
-        log("Inicializando Git en /app (contenedor sin historial)...")
+    if fresh_init:
+        log("Inicializando Git en /app...")
         subprocess.run(["git", "init"], cwd=REPO_DIR, check=False)
         subprocess.run(["git", "branch", "-m", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
         subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
@@ -211,22 +212,48 @@ def setup_git() -> bool:
         text=True,
     )
     if fetch.returncode != 0:
-        log(f"Error al conectar con GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
+        log(f"Error fetch GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
         return False
 
-    if has_local_changes():
-        log("Guardando trabajo local antes de sincronizar rama...")
-        push_with_retry()
+    if fresh_init:
+        sync = subprocess.run(
+            ["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if sync.returncode != 0:
+            log(f"Error sync inicial: {sync.stderr.strip() or sync.stdout.strip()}")
+            return False
+    elif has_local_changes():
+        log("Hay cambios locales sin subir, intentando push...")
+        if not push_with_retry():
+            log("Git listo con cambios pendientes (no se borrara el progreso local).")
+            return True
+        pull = subprocess.run(
+            ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if pull.returncode != 0:
+            log(f"Aviso pull: {pull.stderr.strip() or pull.stdout.strip()}")
+    else:
+        sync = subprocess.run(
+            ["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if sync.returncode != 0:
+            log(f"Error sync git: {sync.stderr.strip() or sync.stdout.strip()}")
+            return False
 
-    checkout = subprocess.run(
-        ["git", "checkout", "-B", GITHUB_BRANCH, f"origin/{GITHUB_BRANCH}"],
+    subprocess.run(
+        ["git", "branch", "--set-upstream-to", f"origin/{GITHUB_BRANCH}", GITHUB_BRANCH],
         cwd=REPO_DIR,
-        capture_output=True,
-        text=True,
+        check=False,
     )
-    if checkout.returncode != 0:
-        log(f"Error sincronizando rama: {checkout.stderr.strip() or checkout.stdout.strip()}")
-        return False
 
     log("Conexion con GitHub establecida correctamente.")
     return True
@@ -399,18 +426,19 @@ def main() -> None:
     log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} modificaciones")
 
     git_ready = setup_git()
-    if git_ready:
-        log("GitHub: listo para pull/push.")
-        sync_github()
-    else:
-        log("CRITICO: GitHub no disponible. El progreso NO se guardara en la nube.")
-
     cache = load_cache()
     modificaciones = 0
 
     while True:
+        if not git_ready:
+            log("Reintentando conexion con GitHub...")
+            git_ready = setup_git()
+
         if git_ready:
             sync_github()
+        else:
+            log("CRITICO: GitHub no disponible. El progreso NO se guardara en la nube.")
+
         fix_broken_tags()
 
         cambios = process_next_file(cache)
@@ -422,10 +450,14 @@ def main() -> None:
             elif modificaciones >= PUSH_CADA:
                 if push_with_retry():
                     modificaciones = 0
+                else:
+                    git_ready = False
         elif git_ready and modificaciones > 0:
             log(f"Sin pendientes. Guardando {modificaciones} cambios restantes...")
             if push_with_retry():
                 modificaciones = 0
+            else:
+                git_ready = False
 
         log(f"Esperando {TIEMPO_ESPERA / 60} minutos...")
         time.sleep(TIEMPO_ESPERA)
