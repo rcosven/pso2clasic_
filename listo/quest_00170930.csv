@@ -4,11 +4,11 @@ AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AcceptCondition,0,a4,スーパーハード受注許可証の所持
 AcceptCondition,0,a5,スーパーハード受注許可証の所持
-AcceptCondition,1,a1,Complete a special Client Order
-AcceptCondition,1,a2,Complete a special Client Order
-AcceptCondition,1,a3,Possess a Super Hard Difficulty Permit
-AcceptCondition,1,a4,Possess a Super Hard Difficulty Permit
-AcceptCondition,1,a5,Possess a Super Hard Difficulty Permit
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a4,Poseer un permiso de dificultad súper difícil
+AcceptCondition,1,a5,Poseer un permiso de dificultad súper difícil
 AreaName,0,Area0S,パイオニア２
 AreaName,0,Area0L,ＶＲ空間　パイオニア２
 AreaName,0,Area1S,森林エリア
@@ -25,34 +25,34 @@ AreaName,0,Area5S,【仮面】反応座標付近
 AreaName,0,Area5L,ＶＲ空間　【仮面】反応座標付近
 AreaName,0,Area9S,パイオニア２
 AreaName,0,Area9L,ＶＲ空間　パイオニア２
-AreaName,1,Area0S,Pioneer II
-AreaName,1,Area0L,VR Pioneer II
-AreaName,1,Area1S,Area de bosque
-AreaName,1,Area1L,Area de bosque en VR
-AreaName,1,Area2S,Area de cuevas
-AreaName,1,Area2L,Area de Cuevas en VR
-AreaName,1,Area20S,Area costera
-AreaName,1,Area20L,Area de Playa en VR
-AreaName,1,Area3S,Area mina
-AreaName,1,Area3L,Area de Minas en VR
-AreaName,1,Area4S,Area ruinas
-AreaName,1,Area4L,Area de Ruinas en VR
-AreaName,1,Area5S,Oracle Sector [Persona]'s Signal Coordinates
-AreaName,1,Area5L,[Persona]'s Coordenadas de seйalizacion
-AreaName,1,Area9S,Pioneer II
-AreaName,1,Area9L,VR Pioneer II
+AreaName,1,Area0S,Pionero II
+AreaName,1,Area0L,Pionero de la realidad virtual II
+AreaName,1,Area1S,Área forestal
+AreaName,1,Area1L,Área forestal de realidad virtual
+AreaName,1,Area2S,Zona de Cuevas
+AreaName,1,Area2L,Área de cuevas de realidad virtual
+AreaName,1,Area20S,Zona costera
+AreaName,1,Area20L,Zona costera de realidad virtual
+AreaName,1,Area3S,Área de Minas
+AreaName,1,Area3L,Área de minas VR
+AreaName,1,Area4S,Área de ruinas
+AreaName,1,Area4L,Área de ruinas de realidad virtual
+AreaName,1,Area5S,Coordenadas de señal de [Persona]
+AreaName,1,Area5L,Coordenadas de señal de VR [Persona]
+AreaName,1,Area9S,Pionero II
+AreaName,1,Area9L,Pionero de la realidad virtual II
 Basic,0,Title,T:掃討作戦：夢幻のごとく
 Basic,0,Explanation,本任務は、ＶＲ空間にて行う<br>突発的な状況下における戦闘能力向上を<br>目的とした訓練である。制限時間内に<br>森林、火山洞窟、地下坑道、遺跡の<br>各フィールドを突発事象に対処しつつ踏破し<br>最深部で待ち受ける強敵を撃破せよ。<br>――――――――――――――――――――<br>最深部のエネミー撃破でクリア<br>制限時間経過でクエスト終了
-Basic,1,Title,Mision de limpieza: Pesadilla sin fin
-Basic,1,Explanation,"In this training, you will improve your combat<br>abilities through unpredictable situations within<br>the VR environment. Break through the Forest,<br>Volcanic Caves, Underground Shafts, and Ruins<br>while dealing with impromptu missions, and defeat<br>the boss in the final area, all within the time limit.<br>----------------------------------------<br>Complete this quest by defeating the enemies in<br>the final area. The quest will end when the time<br>limit expires."
+Basic,1,Title,T: MopUp Op: Pesadilla sin fin
+Basic,1,Explanation,"En este entrenamiento mejorarás tu combate.<br>habilidades a través de situaciones impredecibles dentro<br>el entorno de realidad virtual. Atraviesa el bosque,<br>Cuevas volcánicas, pozos subterráneos y ruinas<br>mientras te enfrentas a misiones improvisadas y derrotas<br>el jefe en el área final, todo dentro del límite de tiempo.<br><br>Completa esta misión derrotando a los enemigos en<br>la zona definitiva. La búsqueda terminará cuando llegue el momento.<br>el límite expira."
 PreTransportDirection0,0,NpcComMsg1,これより、訓練を開始します！<br>本訓練の目的は、時間内に最深部へと<br>到達し、強敵を撃破することです！
 PreTransportDirection0,0,NpcComMsg2,長時間の突発状況下における訓練のため<br>４つのフィールドをすべて踏破します。<br>長丁場ですが、がんばってください！
 PreTransportDirection0,0,NpcComMsg3,最深部の強敵撃破で、訓練終了です。<br>最後まで時間配分にご注意ください！<br>それでは、訓練スタートです！
-PreTransportDirection0,1,NpcComMsg1,Your training will soon commence!<br>Your objective is to reach the final area<br>within the time limit and defeat the boss!
-PreTransportDirection0,1,NpcComMsg2,"Travel through all four fields to train <br>your ability to react to unpredictable <br>situations over a long period of time. <br>It's a long stretch, but you can do it!"
-PreTransportDirection0,1,NpcComMsg3,. Comienza la mision!
+PreTransportDirection0,1,NpcComMsg1,¡Tu entrenamiento pronto comenzará!<br>Tu objetivo es llegar a la zona final.<br>dentro del límite de tiempo y derrota al jefe!
+PreTransportDirection0,1,NpcComMsg2,"Travel through all four fields to train<br>Tu capacidad para reaccionar ante situaciones impredecibles.<br>situaciones durante un largo período de tiempo.<br>Es un largo trecho, ¡pero puedes hacerlo!"
+PreTransportDirection0,1,NpcComMsg3,"Una vez que derrotes al jefe en el área final, el<br>El entrenamiento terminará. Asegúrate de estar atento<br>en el momento! ¡Ahora, comienza a entrenar!"
 PreTransportDirection1,0,NpcComMsg1,まもなく、本訓練の最終地点……<br>動力炉区画への転送を開始します！
 PreTransportDirection1,0,NpcComMsg2,今回の目標は<br>動力炉を護る強敵として配置された<br>グラーブエクゼクルの撃破です。
 PreTransportDirection1,0,NpcComMsg3,最後まで気を抜くことなく<br>全力で挑みましょう！
 QuestTarget,0,SimpleExplanation,時間内に全エリアを突破せよ！
-QuestTarget,1,SimpleExplanation,Pasa por todos los lugares dentro del limite de tiempo.
+QuestTarget,1,SimpleExplanation,¡Atraviesa todas las áreas dentro del límite de tiempo!
