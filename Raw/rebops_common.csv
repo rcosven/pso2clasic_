@@ -1,0 +1,73 @@
+section,group,id,text
+RepeatRequirements,0,NoLimit,制限無し
+RepeatRequirements,0,LimitedByAccount,アカウント$(0)回限り
+RepeatRequirements,0,LimitedByCharacter,キャラクター$(0)回限り
+RepeatRequirements,0,LimitedByAccount_Resettime,<yellow>$(0)に再受注可能です。<c>
+RepeatRequirements,0,LimitedByAccount_RepeatSelectTask,アカウントごと
+RepeatRequirements,0,LimitedByCharacter_RepeatSelectTask,キャラクターごと
+RepeatRequirements,1,NoLimit,No Requirements
+RepeatRequirements,1,LimitedByAccount,$(0) Time(s) per Account
+RepeatRequirements,1,LimitedByCharacter,$(0) Time(s) per Character
+RepeatRequirements,1,LimitedByAccount_Resettime,<yellow>Available again at $(0).<c>
+RepeatRequirements,1,LimitedByAccount_RepeatSelectTask,Per account
+RepeatRequirements,1,LimitedByCharacter_RepeatSelectTask,Per character
+SubObjectiveTemplates,0,template_enemy,$(0)を$(1)体倒す。
+SubObjectiveTemplates,0,template_CollisionAccess,%(CollisionId)に行く
+SubObjectiveTemplates,0,template_GatheringPlayed,%(ObjectId)を%(num)個集める
+SubObjectiveTemplates,0,template_NpcTalk,%(NpcId)に話す
+SubObjectiveTemplates,0,template_QuestClear,%(QuestNo)<br>をクリアする
+SubObjectiveTemplates,0,template_QuestClear_RankS,%(QuestNo)<br>をSランクでクリアする
+SubObjectiveTemplates,0,template_EnemyKill,%(EnemyName)を%(num)体倒す
+SubObjectiveTemplates,1,template_enemy,Defeat $(0) x $(1).
+SubObjectiveTemplates,1,template_CollisionAccess,Go to %(CollisionId).
+SubObjectiveTemplates,1,template_GatheringPlayed,Gather %(ObjectId) x %(num).
+SubObjectiveTemplates,1,template_NpcTalk,Talk to %(NpcId).
+SubObjectiveTemplates,1,template_QuestClear,Clear %(QuestNo).
+SubObjectiveTemplates,1,template_QuestClear_RankS,Clear %(QuestNo) at Rank S.
+SubObjectiveTemplates,1,template_EnemyKill,Defeat %(EnemyName) x %(num).
+NotifyMessages,0,location_guide_arrival,小目標“$(0)”の進行可能エリアに入りました。
+NotifyMessages,0,location_guide_leave,小目標“$(0)”の進行可能エリアから出ました。
+NotifyMessages,0,recommend_focus_main_task,新たなメインタスクを受注しました。<br>タスク一覧でガイド情報を表示してください。
+NotifyMessages,0,acquired_reward_items,報酬アイテムを獲得しました。
+NotifyMessages,0,discarded_task,タスク“$(0)”を破棄しました。
+NotifyMessages,0,discarded_task_error,タスク“$(0)”の破棄に失敗しました。
+NotifyMessages,0,subobjective_progress_fifty_percent,小目標“$(0)”の進捗が50%以上になりました。
+NotifyMessages,0,subobjective_progress_eighty_percent,小目標“$(0)”の進捗が80%以上になりました。
+NotifyMessages,0,subobjective_appeared,小目標“$(0)”が発生しました。
+NotifyMessages,0,subobjective_achieved,小目標“$(0)”を達成しました。
+NotifyMessages,0,multi_tasks_accepted,複数のタスクを受注しました。
+NotifyMessages,0,task_accepted,タスク“$(0)”を受注しました。
+NotifyMessages,0,focused_task,タスク“$(0)”のガイド情報を表示しました。
+NotifyMessages,0,focused_task_error,タスク“$(0)”のガイド情報を表示できませんでした。
+NotifyMessages,0,cancelled_focus_task,タスク“$(0)”のガイド情報を非表示にしました。
+NotifyMessages,0,cancelled_focus_task_error,タスク“$(0)”のガイド情報を非表示にできませんでした。
+NotifyMessages,0,accomplished_task,タスク“$(0)”を達成しました。
+NotifyMessages,0,accepted_task_error,タスク“$(0)”は受注出来ませんでした。
+NotifyMessages,0,quest_focus_task_cannot,クエスト進行中は、ガイド情報の表示設定が切り替えられません。
+NotifyMessages,0,task_unknown_error,不明なエラーです。
+NotifyMessages,0,task_order_expired,タスクの達成期限が切れているので実行できません。
+NotifyMessages,0,task_order_restrictions_error,受注上限を超えているため受注できません。
+NotifyMessages,0,task_order_unfulfilled,未達成の期間限定タスクが残っています。
+NotifyMessages,1,location_guide_arrival,You have entered the $(0) goal area.
+NotifyMessages,1,location_guide_leave,You have left the $(0) goal area.
+NotifyMessages,1,recommend_focus_main_task,New Main Task accepted.<br>Access the Task Menu to display the tracker info.
+NotifyMessages,1,acquired_reward_items,Reward item(s) acquired.
+NotifyMessages,1,discarded_task,"Task ""$(0)"" abandoned."
+NotifyMessages,1,discarded_task_error,"Failed to abandon task ""$(0)""."
+NotifyMessages,1,subobjective_progress_fifty_percent,"Goal ""$(0)"" now over 50% complete."
+NotifyMessages,1,subobjective_progress_eighty_percent,"Goal ""$(0)"" now over 80% complete."
+NotifyMessages,1,subobjective_appeared,"New goal ""$(0)"" now available."
+NotifyMessages,1,subobjective_achieved,"Goal ""$(0)"" has been achieved."
+NotifyMessages,1,multi_tasks_accepted,You have accepted multiple tasks.
+NotifyMessages,1,task_accepted,"You have accepted task ""$(0)""."
+NotifyMessages,1,focused_task,"Task ""$(0)"" info has been displayed."
+NotifyMessages,1,focused_task_error,"Task ""$(0)"" info could not be displayed."
+NotifyMessages,1,cancelled_focus_task,"Task ""$(0)"" info display is now off."
+NotifyMessages,1,cancelled_focus_task_error,"Task ""$(0)"" info could not be turned off."
+NotifyMessages,1,accomplished_task,"Task ""$(0)"" has been achieved."
+NotifyMessages,1,accepted_task_error,"Could not accept task ""$(0)""."
+NotifyMessages,1,quest_focus_task_cannot,Task info cannot be toggled while on a quest.
+NotifyMessages,1,task_unknown_error,An unknown error occurred.
+NotifyMessages,1,task_order_expired,Cannot be proceeded since the Task has expired.
+NotifyMessages,1,task_order_restrictions_error,Cannot accept. You have reached your acceptance limit.
+NotifyMessages,1,task_order_unfulfilled,You still have incomplete limited-time tasks.

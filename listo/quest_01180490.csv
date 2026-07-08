@@ -1,0 +1,15 @@
+﻿section,group,id,text
+AreaName,0,Area0S,顕現せし偽りの覇者【敗者】
+AreaName,0,Area0L,顕現せし偽りの覇者【敗者】
+AreaName,1,Area0S,"Lutero, manifiesto del falso conquistador"
+AreaName,1,Area0L,"Lutero, manifiesto del falso conquistador"
+Basic,0,Title,顕現せし偽りの覇者【敗者】
+Basic,0,Explanation,西クヴァリス周辺に、超巨大な反応を確認。<br>報告によると、“ルイノ・ルーサー”に近似したデータが示されている。<br>アークス各員は、当該ポイントに急行し、迫りくる脅威を殲滅せよ。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Basic,1,Title,"Lutero, manifiesto del falso conquistador"
+Basic,1,Explanation,not participate .<c>
+QuestTarget,0,SimpleExplanation,ルイノ・ルーサーを倒す
+QuestTarget,1,SimpleExplanation,Derrota a la ruina de Lutero
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
+FailureCondition,1,f0,Quedar incapacitado 5 veces<br>Exceder el límite de tiempo

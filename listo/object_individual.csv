@@ -1,0 +1,113 @@
+﻿section,group,id,text
+TransferMulti,0,TransferMultiStart,$(0)秒後に転送を開始します。
+TransferMulti,0,TransferMultiStartLaunch,プレイヤー全員が集まるか、$(0)秒が経過すると転送を開始します。
+TransferMulti,0,TransferMultiStop,転送を中断しました。
+TransferMulti,1,TransferMultiStart,La teletransportación comenzará en $(0) segundos.
+TransferMulti,1,TransferMultiStartLaunch,La teletransportación comenzará en $(0) segundos o cuando todos los jugadores se reúnan.
+TransferMulti,1,TransferMultiStop,Teletransportación cancelada.
+RestaSign,0,RestaSignLimit,取得上限を超えるため、これ以上入手できません。
+RestaSign,1,RestaSignLimit,No puedes obtener más porque ya llevas el importe máximo.
+ReverserSign,0,ReverserSignLimit,取得上限を超えるため、これ以上入手できません。
+ReverserSign,1,ReverserSignLimit,No puedes obtener más porque ya llevas el importe máximo.
+Drone,0,Levelup,制御中のドロームがレベルアップしました。
+Drone,0,Join,敵性ドロームのハッキングに成功。こちらの戦闘行動に加入しました。
+Drone,0,Renounced,制御範囲外のため随伴のドロームが離脱しました。
+Drone,0,Levelup_Drm2,制御中のホーバックがレベルアップしました。
+Drone,0,Join_Drm2,敵性ホーバックのハッキングに成功。こちらの戦闘行動に加入しました。
+Drone,0,Renounced_Drm2,制御範囲外のため随伴のホーバックが離脱しました。
+Drone,0,Levelup_Drm3,制御中のハイドロームがレベルアップしました。
+Drone,0,Join_Drm3,敵性ハイドロームのハッキングに成功。こちらの戦闘行動に加入しました。
+Drone,0,Renounced_Drm3,制御範囲外のため随伴のハイドロームが離脱しました。
+Drone,1,Levelup,El Drome que estás controlando ha subido de nivel.
+Drone,1,Join,Drome enemigo pirateado con éxito. Se unirá a ti en el combate.
+Drone,1,Renounced,Allied Drome ha abandonado tu rango de control y se retirará.
+Drone,1,Levelup_Drm2,El Hobac que controlas ha subido de nivel.
+Drone,1,Join_Drm2,Hackeaste con éxito al enemigo Hobac. Se unirá a ti en el combate.
+Drone,1,Renounced_Drm2,Allied Hobac ha abandonado tu rango de control y se retirará.
+Drone,1,Levelup_Drm3,El Hydrome que estás controlando ha subido de nivel.
+Drone,1,Join_Drm3,Hackeaste con éxito al enemigo Hydrome. Se unirá a ti en el combate.
+Drone,1,Renounced_Drm3,Allied Hydrome ha abandonado tu rango de control y se retirará.
+BlastChargeSign,0,GetBlastChargeSign,フォトンブラストが発動可能な状態です。
+BlastChargeSign,1,GetBlastChargeSign,Photon Blast está listo para ser activado.
+LaserSensor,0,LaserSensorFound,レーザーセンサーに検知されました。
+LaserSensor,1,LaserSensorFound,Detectado por sensor láser.
+BuffContainer,0,BuffContainerOpen_Atk_01,一定時間、<yellow>攻撃速度上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_Atk_01,攻撃速度上昇
+BuffContainer,0,BuffContainerOpen_Def_01,一定時間、<yellow>ダメージ耐性上昇/打ち上げや吹き飛ばし無効<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_Def_01,ダメージ耐性上昇/打ち上げや吹き飛ばし無効
+BuffContainer,0,BuffContainerOpen_Ex_01,一定時間、<yellow>PP自然回復量増加<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_Ex_01,PP自然回復量増加
+BuffContainer,0,BuffContainerOpen_Atk_02,90秒間、<yellow>攻撃速度上昇/PP自然回復量増加<c>の効果が発生します。
+BuffContainer,0,BuffContainerOpen_Atk_03,90秒間、<yellow>ダイブアタック威力/ダウン値上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerOpen_Atk_04,90秒間、<yellow>一定間隔ごとに自動的に追加攻撃発生<c>の効果が発生します。
+BuffContainer,0,LackOfLecielPoints,エナジーポイントが不足しています。
+BuffContainer,0,SignContainerContent,レスタサイン×2 リバーサーサイン×1<br>　　　　　　　　　　　　     3000<pict buffcon_point>
+BuffContainer,0,SignContainerOpenMessage,サインの使用回数を回復しました。
+BuffContainer,0,BuffContainerOpen_RangeDamage,クエスト中、<yellow>一定間隔ごとに自動的に追加攻撃発生<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_RangeDamage,一定間隔ごとに自動的に追加攻撃発生
+BuffContainer,0,BuffContainerOpen_PbGauge,クエスト中、<yellow>フォトンブラストゲージ蓄積量増加<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_PbGauge,フォトンブラストゲージ蓄積量増加
+BuffContainer,0,BuffContainerOpen_PADamage,クエスト中、<yellow>PA/テクニック威力上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_PADamage,PA/テクニック威力上昇
+BuffContainer,0,BuffContainerOpen_WPDamage,クエスト中、<yellow>弱点部位への威力上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_WPDamage,弱点部位への威力上昇
+BuffContainer,0,BuffContainerOpen_OverRecovery,クエスト中、<yellow>レスタサイン使用後に10秒間能力上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_OverRecovery,レスタサイン使用後に10秒間能力上昇
+BuffContainer,0,BuffContainerOpen_CriticalAdd,クエスト中、<yellow>クリティカル率上昇/発生時に追加ダメージ<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_CriticalAdd,クリティカル率上昇/発生時に追加ダメージ
+BuffContainer,0,BuffContainerOpen_StepCounter,クエスト中、<yellow>ステップ時カウンター発生可能/威力上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_StepCounter,ステップ時カウンター発生可能/威力上昇
+BuffContainer,0,BuffContainerOpen_StepShot,クエスト中、<yellow>ステップ発動時に追加攻撃発生<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_StepShot,ステップ発動時に追加攻撃発生
+BuffContainer,0,BuffContainerOpen_GlideAtk,クエスト中、<yellow>ダイブアタック威力/ダウン値上昇<c>の効果が発生します。
+BuffContainer,0,BuffContainerUi_GlideAtk,ダイブアタック威力/ダウン値上昇
+BuffContainer,1,BuffContainerOpen_Atk_01,El efecto<yellow>Incrementar velocidad de ataque<c>ha sido activado por un tiempo limitado.
+BuffContainer,1,BuffContainerUi_Atk_01,Aumentar la velocidad de ataque
+BuffContainer,1,BuffContainerOpen_Def_01,El efecto<yellow>Aumento de resistencia al daño/Inmunidad a ser lanzado o derribado<c>se ha activado por un tiempo limitado.
+BuffContainer,1,BuffContainerUi_Def_01,Resistencia al daño aumentada/<br> Inmunidad a ser lanzado o derribado
+BuffContainer,1,BuffContainerOpen_Ex_01,El efecto<yellow>Incrementar PP Recuperación<c>ha sido activado por un tiempo limitado.
+BuffContainer,1,BuffContainerUi_Ex_01,Aumentar la recuperación de PP
+BuffContainer,1,BuffContainerOpen_Atk_02,El efecto<yellow>Aumentar la velocidad de ataque/Incrementar la recuperación natural de PP<c>se ha activado durante 90<br>segundos.
+BuffContainer,1,BuffContainerOpen_Atk_03,El efecto<yellow>Potencia de ataque en picado/Factor de descenso hacia arriba<c>se ha activado durante 90 segundos.
+BuffContainer,1,BuffContainerOpen_Atk_04,El efecto<yellow>Los ataques adicionales ocurren automáticamente a intervalos regulares<c>se ha activado durante<br>90 segundos.
+BuffContainer,1,LackOfLecielPoints,No tienes suficientes puntos de energía.
+BuffContainer,1,SignContainerContent,刀攀猀琀愀猀椀最渀愀爀 砀㈀ 刀攀瘀攀爀猀愀猀椀最渀愀爀 砀㄀㰀戀爀㸀000000000000 ㌀　　　 㰀瀀椀挀琀 戀甀昀昀挀漀渀开瀀漀椀渀琀㸀
+BuffContainer,1,SignContainerOpenMessage,Tus usos de Signe han sido restaurados.
+BuffContainer,1,BuffContainerOpen_RangeDamage,El efecto<yellow>Los ataques adicionales ocurren automáticamente a intervalos regulares<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_RangeDamage,Los ataques adicionales ocurren automáticamente a intervalos regulares
+BuffContainer,1,BuffContainerOpen_PbGauge,El efecto<yellow>Carga del indicador de explosión de fotones<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_PbGauge,Carga del indicador de explosión de fotones
+BuffContainer,1,BuffContainerOpen_PADamage,El efecto<yellow>PA/Aumento de potencia técnica<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_PADamage,Aumento de potencia de PA/técnica
+BuffContainer,1,BuffContainerOpen_WPDamage,El efecto<yellow>Potencia para aumentar los puntos débiles<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_WPDamage,Potencia hasta los puntos débiles
+BuffContainer,1,BuffContainerOpen_OverRecovery,El efecto<yellow>Capacidad aumentada durante 10 segundos después de usar Restasigne<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_OverRecovery,Capacidad aumentada durante 10 segundos después de usar Restasigne
+BuffContainer,1,BuffContainerOpen_CriticalAdd,El efecto<yellow>Aumento de índice de críticos/daño adicional en caso de golpe crítico<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_CriticalAdd,Aumento de tasa crítica/daño adicional en caso de golpe crítico
+BuffContainer,1,BuffContainerOpen_StepCounter,El efecto<yellow>Aumento de potencia/Posible contraataque al esquivar<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_StepCounter,Aumento de potencia/Posible contraataque al esquivar
+BuffContainer,1,BuffContainerOpen_StepShot,El efecto<yellow>Ataque adicional al activar el paso lateral<c>se ha activado para la Misión.
+BuffContainer,1,BuffContainerUi_StepShot,Ataque adicional a la activación de esquivar
+BuffContainer,1,BuffContainerOpen_GlideAtk,El efecto<yellow>Potencia de ataque en picado/Factor de reducción<c>se ha activado para la misión.
+BuffContainer,1,BuffContainerUi_GlideAtk,Potencia de ataque en picado/factor de reducción hacia arriba
+FoieTorch,0,TorchBuff_NotFound,ヒートコーティング状態でないと使用できません。
+FoieTorch,1,TorchBuff_NotFound,Esto no se puede utilizar sin el estado de Recubrimiento térmico.
+TownTreasure,0,RequiredPoints,<pict quest_point>
+TownTreasure,0,LackOfPoints,探索ポイントが不足しています。
+TownTreasure,0,DiscoverBonus,ワンダリングチェストを発見しました。獲得ポイント：$(0)
+TownTreasure,0,GaugeCharge,M.A.R.S.バッテリーが一定量回復しました。
+TownTreasure,0,LackOfHWPoints,キャンディーが不足しています。
+TownTreasure,0,CandyIcon,<pict icon_sweets>
+TownTreasure,0,LackOfNPoint,探索ポイントが不足しています。
+TownTreasure,1,RequiredPoints,<pict quest_point>
+TownTreasure,1,LackOfPoints,No tienes suficientes puntos de exploración.
+TownTreasure,1,DiscoverBonus,Cofre errante encontrado. Puntos ganados: $(0)
+TownTreasure,1,GaugeCharge,MARTE. batería parcialmente restaurada.
+TownTreasure,1,LackOfHWPoints,No tienes suficientes dulces.
+TownTreasure,1,CandyIcon,<pict icon_sweets>
+TownTreasure,1,LackOfNPoint,No tienes suficientes puntos de exploración.
+AccessObject,0,co_access_object_TitleContainer,コンテナ
+AccessObject,0,co_access_object_ItemSearch,長押しで調べる
+AccessObject,1,co_access_object_TitleContainer,Contenedores
+AccessObject,1,co_access_object_ItemSearch,Mantenga presionado para examinar

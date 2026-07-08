@@ -1,0 +1,25 @@
+section,group,id,text
+MainText,0,name010,ラル
+MainText,0,text010,ふむ……しっかり狙えているね。じゃあ、“ステップアタック”はできるかな？
+MainText,0,text020,回避しながら、攻撃をしてみて。
+MainText,1,name010,Raúl
+MainText,1,text010,"Jeje, realmente tenías tus ojos puestos en el premio.<br>Bueno, entonces, ¿qué tal un próximo golpe lateral?"
+MainText,1,text020,Intenta atacar mientras esquivas.
+GuideText,0,Text_Lock,ロックオン：
+GuideText,0,Button_Lock,<%LockOn>
+GuideText,0,Text_Avoid,回避：
+GuideText,0,Button_Avoid_Pad,<%Avoid>
+GuideText,0,Button_Avoid_Key,移動キーを２回押す
+GuideText,0,Text_StepAttack,ステップアタック：
+GuideText,0,Button_StepAttack_Pad,<%Avoid><pict 4space>の後に<pict 4space><%NormalAttack>
+GuideText,0,Button_StepAttack_Key,移動キーを
+GuideText,0,Button_StepAttack_Key2,２回押した後に<pict 4space><%NormalAttack>
+GuideText,1,Text_Lock,Acoplarse:
+GuideText,1,Button_Lock,<%LockOn>
+GuideText,1,Text_Avoid,Esquivar:
+GuideText,1,Button_Avoid_Pad,<%Avoid>
+GuideText,1,Button_Avoid_Key,Presione una tecla direccional dos veces.
+GuideText,1,Text_StepAttack,Golpe lateral:
+GuideText,1,Button_StepAttack_Pad,<%NormalAttack><pict 4space>después de<pict 4space><%Avoid>
+GuideText,1,Button_StepAttack_Key,Presione una tecla direccional dos veces
+GuideText,1,Button_StepAttack_Key2,entonces<pict 4space><%NormalAttack>

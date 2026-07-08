@@ -1,0 +1,14 @@
+﻿section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+Basic,0,Title,高原の掃討戦'24
+Basic,0,Explanation,北エアリオのアルト・ラニ高原で、輸送隊の救難信号を受信した。<br>発信場所で、多数のエネミーの反応を確認している。<br>アークス各員は、迫りくるエネミーから故障した輸送トラックを防衛せよ。
+Basic,1,Title,Operación de limpieza de meseta '24
+Basic,1,Explanation,been confirmed at the site. <br>Make use of all your skills to defend the immobilized transport truck from enemy attack.
+FailureCondition,0,f0,30:00以上経過する<br>指定トライアルの失敗
+FailureCondition,1,f0,El tiempo excede los 30 minutos<br>Fallo de la prueba designada
+QuestTarget,0,SimpleExplanation,全てのエネミーを殲滅せよ！
+QuestTarget,1,SimpleExplanation,¡Erradica a todos los enemigos!
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.

@@ -1,0 +1,35 @@
+section,group,id,text
+common,0,TrialName_1Enemy,$(0)討伐
+common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
+common,0,TrialAbstract_1Enemy,$(0)を倒す
+common,0,TrialName_Multi,エネミー討伐
+common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
+common,0,TrialAbstract_Multi,エネミーを倒す
+common,0,Line_HelpEventManonAndAina,戦闘支援（アイナ＆マノン）<br>移動速度上昇<br>攻撃力上昇
+common,0,Line_HelpEventNadereh,戦闘支援（ナーデレフ）<br>エネミーの防御力低下<br>ダーレットの動作停止
+common,0,Line_HelpEventIlma,戦闘支援（イルマ）<br>攻撃命中時に追加攻撃発生
+common,0,Line_HelpEventGlen,戦闘支援（グレン）<br>PP自然回復量増加
+common,1,TrialName_1Enemy,$(0) Supresión
+common,1,TrialBeginMsg_1Enemy,¡Derrota a los $(0)!
+common,1,TrialAbstract_1Enemy,Derrota al $(0).
+common,1,TrialName_Multi,Supresión enemiga
+common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos!
+common,1,TrialAbstract_Multi,Derrota a los enemigos.
+common,1,Line_HelpEventManonAndAina,Apoyo de combate (Aina y Manon)<br>Velocidad de movimiento aumentada<br>Ataque aumentado
+common,1,Line_HelpEventNadereh,Apoyo de combate (Nadereh)<br>Disminución de la defensa enemiga<br>Movimiento de Darlett detenido
+common,1,Line_HelpEventIlma,Apoyo de combate (Ilma)<br>El ataque de seguimiento ocurre cuando das un golpe
+common,1,Line_HelpEventGlen,Apoyo de combate (Glen)<br>Mayor recuperación natural de PP
+type100,0,NpcComGod3ManonHelpEvent01,/voicemsc_020060_0370 なんとか、調整が間に合ったわね。
+type100,1,NpcComGod3ManonHelpEvent01,/voicemsc_020060_0370 You got it worked out just in time.
+type101,0,NpcComGod3AinaHelpEvent01,/voicemsc_020060_0360 こちらアイナ。<br>これから、支援するよ！
+type101,1,NpcComGod3AinaHelpEvent01,/voicemsc_020060_0360 This is Aina. Moving to support!
+type109,0,NpcComGod3Nadereh01,/voicemsc_020060_0380 どうやら私の出番のようだな。
+type109,1,NpcComGod3Nadereh01,/voicemsc_020060_0380 Time for me to make my appearance.
+type110,0,NpcComGod3IlmaHelpEvent01,/voicemsc_020060_0390 よし、僕も援護するよ。
+type110,0,NpcComGod3IlmaHelpEvent02,/voicemsc_020060_0400 ちゃんとテストしてないけど、<br>たぶん大丈夫なはず……。
+type110,1,NpcComGod3IlmaHelpEvent01,/voicemsc_020060_0390 ¡Me voy!
+type110,1,NpcComGod3IlmaHelpEvent02,"/voicemsc_020060_0400 Nunca lo hemos probado, pero debería estar bien..."
+type111,0,NpcComGod3Glen01,/voicemsc_020060_0410 これより、支援を行う。
+type111,0,NpcComGod3Glen02,/voicemsc_020060_0420 我々のぶんまで、頼んだぞ。
+type111,1,NpcComGod3Glen01,/voicemsc_020060_0410 Me mudo al soporte.
+type111,1,NpcComGod3Glen02,/voicemsc_020060_0420 Púlsalo una vez por nosotros también.

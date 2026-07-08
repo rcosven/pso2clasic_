@@ -1,0 +1,17 @@
+section,group,id,text
+common,0,TrialName,$(0)迎撃
+common,0,TrialBeginMsg,$(0)を撃墜せよ！
+common,0,TrialAbstract,$(0)を破壊する
+common,1,TrialName,Interceptar $(0)
+common,1,TrialBeginMsg,¡Derriba $(0)!
+common,1,TrialAbstract,Destruir $(0)
+type104,0,NpcComOnForetaste,/voice11_voice_navi003_trial_0001_013 ドールズ管制機の出現を確認した！
+type104,0,NpcComOnBegin,/voice11_voice_navi003_trial_0001_020 管制機の上部にはコアがある。<br>そこが弱点だ。飛び乗る方法を探してくれ！
+type104,0,NpcComOnSuccess,/voice11_voice_navi003_trial_0001_064 ドールズ管制機の撃墜を確認！<br>その調子で次も頼むぜ！
+type104,0,NpcComOnFailure,/voice11_voice_navi003_trial_0001_074 消耗した残敵が撤退。<br>……ドンマイ、次は全部倒そうぜ！
+type104,0,NpcComOnBigLaser,/voice11_voice_navi003_trial_0001_045 管制機の攻撃で、地表が熱くなってるな。<br>そこの気流で飛び上がれ！
+type104,1,NpcComOnForetaste,/voice11_voice_navi003_trial_0001_013 Detecting a DOLLS Control System!
+type104,1,NpcComOnBegin,/voice11_voice_navi003_trial_0001_020 There is a core in its upper part. That is its weak point. Find a way to get up there!
+type104,1,NpcComOnSuccess,/voice11_voice_navi003_trial_0001_064 You felled the DOLLS Control System! I wish you just as much success with the next one!
+type104,1,NpcComOnFailure,/voice11_voice_navi003_trial_0001_074 The DOLLS Control System has retreated!<br>Don't worry. You'll get it next time!
+type104,1,NpcComOnBigLaser,/voice11_voice_navi003_trial_0001_045 The ground has become heated from the Control System's attacks.<br>Use the heat's updraft to jump your way up!

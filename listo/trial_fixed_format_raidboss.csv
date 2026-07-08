@@ -1,0 +1,35 @@
+﻿section,group,id,text
+common,0,TrialName_1Enemy,$(0)討伐
+common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
+common,0,TrialAbstract_1Enemy,$(0)を倒す
+common,0,TrialName_Multi,エネミー討伐
+common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
+common,0,TrialAbstract_Multi,エネミーを倒す
+common,1,TrialName_1Enemy,$(0) Supresión
+common,1,TrialBeginMsg_1Enemy,¡Derrota a los $(0)!
+common,1,TrialAbstract_1Enemy,Derrota al $(0).
+common,1,TrialName_Multi,Supresión enemiga
+common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos!
+common,1,TrialAbstract_Multi,Derrota a los enemigos.
+type100,0,NpcComGod2ManonAndAina02,/voicessc_012040_0020 どうやらお互い別の合流地点にいるようね。
+type100,1,NpcComGod2ManonAndAina02,/voicessc_012040_0020 Parece que cada uno de nosotros fue a lugares diferentes.
+type101,0,NpcComGod2ManonAndAina01,/voicessc_012040_0010 キミ、今どのあたりにいる？
+type101,0,NpcComGod2ManonAndAina03,/voicessc_012040_0030 今からこっちの座標を送るから、合流しよう……。
+type101,1,NpcComGod2ManonAndAina01,"/voicessc_012040_0010 Oye, ¿dónde estás ahora?"
+type101,1,NpcComGod2ManonAndAina03,"/voicessc_012040_0030 Te enviaré mis coordenadas ahora, así que nos vemos."
+type102,0,NpcComGod2RanBossAppear01,/voicessc_012040_0040 空間上に、高エネルギー反応。強力なエネミーが来ます！
+type102,0,NpcComGod2RanBossAppear02,/voicessc_012040_0050 ……ダークファルスの出現を確認。
+type102,0,NpcComGod2RanBossBattleStart01,/voicessc_012050_0010 /atime0.5 ……員……、ますか!?　……なら返事……さい！　……が……のか……を！
+type102,0,NpcComGod2RanLaterHalf01,/voicessc_012060_0010 通信、回復しました！<br>バイタル確認。そちらの様子もモニターできています。
+type102,0,NpcComGod2RanLaterHalf02,/voicessc_012060_0030 /atime0.5 これは……、出現時よりダークファルスが弱体化しています！<br>攻撃を続けてください！
+type102,0,NpcComGod2RanBrokenAllParts01,/voicessc_012060_0070 ダークファルス、さらに弱体化。行けます！
+type102,0,NpcComGod2RanReturnFromDown01,/voicessc_012060_0050 /atime0.5 セントラルキャノンの発射準備、最終段階に移行。<br>もう少しだけ……頑張ってください！
+type102,1,NpcComGod2RanBossAppear01,/voicessc_012040_0040 Detectando una gran lectura de energía desde el cielo. ¡Se acerca un enemigo poderoso!
+type102,1,NpcComGod2RanBossAppear02,/voicessc_012040_0050 Es... Dark Falz.
+type102,1,NpcComGod2RanBossBattleStart01,/voicessc_012050_0010 /atime0.5 ¿Alguien puede...yo? Si... ¡por favor responde! ......qué pasa...¡Por favor!
+type102,1,NpcComGod2RanLaterHalf01,/voicessc_012060_0010 ¡La señal ha sido restaurada! Comprobando sus signos vitales... Ahora también puedo controlar tus estadísticas.
+type102,1,NpcComGod2RanLaterHalf02,¡No apareció! ¡Realmente estás progresando! ¡Continúa tu ataque!
+type102,1,NpcComGod2RanBrokenAllParts01,/voicessc_012060_0070 Dark Falz es aún más débil ahora. ¡Podemos hacer esto!
+type102,1,NpcComGod2RanReturnFromDown01,/voicessc_012060_0050 /atime0.5 La preparación del Cañón Central se encuentra ahora en la etapa final. ¡Aguanta un poco más!
+type106,0,NpcComGod2CrawfordBossAppear03,/voicessc_012040_0060 /atime0.5 キャノンの発射までは、もう少し時間がかかる。<br>みんな、足止めを頼む……。
+type106,1,NpcComGod2CrawfordBossAppear03,"/voicessc_012040_0060 /atime0.5 Pasará un poco más de tiempo antes de que el cañón esté listo. Por favor, haz lo mejor que puedas para reducir la velocidad."

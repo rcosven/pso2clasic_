@@ -1,0 +1,15 @@
+section,group,id,text
+AreaName,0,Area0S,想定演習：海上の護衛戦
+AreaName,0,Area0L,想定演習：海上の護衛戦
+AreaName,1,Area0S,Ejercicio: Escolta Naval
+AreaName,1,Area0L,Ejercicio: Escolta Naval
+Basic,0,Title,想定演習：海上の護衛戦
+Basic,0,Explanation,これは、来るべき戦いに備えてアーカイブより再現された想定演習である。<br>現在の設定では、ガルネール海岸の海上に出現した領域での激戦を体験できる。<br>戦闘技術を駆使して、迫りくるエネミーから故障した輸送トラックを防衛せよ。
+Basic,1,Title,Ejercicio: Escolta Naval
+Basic,1,Explanation,de los enemigos.
+FailureCondition,0,f0,20:00以上経過する
+FailureCondition,1,f0,El tiempo supera los 20 minutos.
+QuestTarget,0,SimpleExplanation,全てのエネミーを倒す
+QuestTarget,1,SimpleExplanation,Derrota a todos los enemigos
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.

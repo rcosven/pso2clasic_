@@ -3,13 +3,14 @@ from pathlib import Path
 
 # === RUTAS DEL PROYECTO ===
 REPO_DIR = Path("/app")
-CSV_DIR = REPO_DIR / "archivos_extraidos"
+CSV_DIR = REPO_DIR / "archivos a traducir"
+LISTO_DIR = REPO_DIR / "listo"
 QUARANTINE_DIR = REPO_DIR / "Cuarentena"
 CACHE_DB = Path("/app/translate_cache.db")
 LOG = Path("/app/translate_missing.log")
 
 # === CONFIGURACIÓN DE GITHUB ===
-GITHUB_REPO = os.getenv("GITHUB_REPO", "tu_usuario/pso2clasic")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 

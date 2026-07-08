@@ -1,0 +1,153 @@
+section,group,id,text
+Common,0,Accomplished,達成済
+Common,0,InProgress,攻略中
+Common,1,Accomplished,Terminado
+Common,1,InProgress,En curso
+MainMenu,0,CATEGORY_STORY,メイン
+MainMenu,0,CATEGORY_SUB_STORY,サイド
+MainMenu,0,CATEGORY_DAILY,デイリー
+MainMenu,0,CATEGORY_WEEKLY,ウィークリー
+MainMenu,0,CATEGORY_LIMITED,期間限定
+MainMenu,0,SORT_NORMAL,標準ソート
+MainMenu,0,SORT_ASC_DATE,日付昇順ソート
+MainMenu,0,SORT_DESC_DATE,日付降順ソート
+MainMenu,0,SORT_DESC_NOT_ACCEPT,未受注タスク優先
+MainMenu,0,BUTTON_BACK,戻る
+MainMenu,0,NOT_FOUND_ANY_TASKS,攻略中のタスクがありません。
+MainMenu,0,NOT_FOUND_ANY_TASKS_MAIN,攻略中のタスクがありません。<br>次回の配信をお待ちください。
+MainMenu,0,NOT_FOUND_ANY_TASKS_2,達成済みのタスクがありません。
+MainMenu,0,NOT_FOUND_ANY_TASKS_3,受注可能なタスクがありません。
+MainMenu,0,PLEASE_WAIT,お待ちください
+MainMenu,0,FOCUS_TASK,ガイド情報に表示する
+MainMenu,0,UNFOCUS_TASK,ガイド情報を表示しない
+MainMenu,0,CHECK_TASK_DETAILS,タスク詳細を確認する
+MainMenu,0,ACCEPT_TASK,タスクを受注する
+MainMenu,0,CONFIRM_ACCEPT_TASK_TITLE,タスク受注の確認
+MainMenu,0,CONFIRM_ACCEPT_TASK_MESSAGE,“$(0)”を<br>受注しますか？
+MainMenu,0,DISCARD_TASK,タスクを破棄する
+MainMenu,0,CONFIRM_DISCARD_TASK_TITLE,タスク破棄の確認
+MainMenu,0,CONFIRM_DISCARD_TASK_MESSAGE,“$(0)”を<br>破棄しますか？<br><br><yellow>※タスク進行状況がリセットされます。<c>
+MainMenu,0,CONFIRM_DISCARD_TASK_MESSAGE_LOOP,“$(0)”を<br>破棄しますか？<br><br><yellow>※ループタスクを破棄した場合、<br>　再受注時は最初のタスクからとなります。<c>
+MainMenu,0,WINDOW_TITLETELOP,タスク
+MainMenu,0,WINDOW_CONTROLGUIDE,<%Decide>：決定　　<%Cancel>：キャンセル　　<%NextWidget>：カーソル移動
+MainMenu,0,FULLSIZE_FORM_TITLE,タスク
+MainMenu,0,RemainingDays,あと$(0)日
+MainMenu,0,RemainingHour,<yellow>あと$(0)時間<c>
+MainMenu,0,RemainingMinutes,<yellow>あと$(0)分<c>
+MainMenu,0,Task_Requester,依頼者
+MainMenu,0,Task_Requester_None,-
+MainMenu,0,Task_List_Tilte,タスク一覧
+MainMenu,0,Accept_Task_Limit,あと$(0)件受注可能　($(1)/$(2))
+MainMenu,0,Task_Chapter_Num,$(0)章
+MainMenu,0,Task_help,ヘルプを表示する
+MainMenu,0,Task_TwolineGuide_1,受注中のタスクを確認できます。それぞれのタスクを選択すると、ガイド情報への表示設定や、ヘルプの表示などができます。
+MainMenu,0,Task_TwolineGuide_2,受注可能なタスクを確認できます。それぞれのタスクを選択すると、そのタスクの受注や、ガイド情報への表示設定などができます。
+MainMenu,0,LoopTask_Count,周回数
+MainMenu,0,Reward_Tier,TIER
+MainMenu,0,Reward_SeasonalPoint,SEASON
+MainMenu,0,Reward_GenesisPoint,GP
+MainMenu,0,CATEGORY_RECOMMEND,おすすめ
+MainMenu,0,Limited_Category_Campaign,キャンペーン
+MainMenu,0,Limited_Category_PSO2,PSO2の日限定
+MainMenu,0,Limited_Category_Season,シーズンイベント
+MainMenu,0,Limited_Category_etr,ストーリー／その他
+MainMenu,0,Limited_Category_CreativeSpace,クリエイティブスペース
+MainMenu,0,Limited_Category_LevelUp,装備／育成
+MainMenu,0,Limited_Category_Contents,コンテンツ
+MainMenu,1,CATEGORY_STORY,Principal
+MainMenu,1,CATEGORY_SUB_STORY,Lado
+MainMenu,1,CATEGORY_DAILY,A diario
+MainMenu,1,CATEGORY_WEEKLY,Semanalmente
+MainMenu,1,CATEGORY_LIMITED,Por tiempo limitado
+MainMenu,1,SORT_NORMAL,Clasificación predeterminada
+MainMenu,1,SORT_ASC_DATE,Ascendente por fecha
+MainMenu,1,SORT_DESC_DATE,Descendente por fecha
+MainMenu,1,SORT_DESC_NOT_ACCEPT,Priorizar tareas no aceptadas
+MainMenu,1,BUTTON_BACK,Atrás
+MainMenu,1,NOT_FOUND_ANY_TASKS,No hay tareas en curso.
+MainMenu,1,NOT_FOUND_ANY_TASKS_MAIN,No hay tareas en curso.
+MainMenu,1,NOT_FOUND_ANY_TASKS_2,No hay tareas completadas.
+MainMenu,1,NOT_FOUND_ANY_TASKS_3,No hay tareas disponibles.
+MainMenu,1,PLEASE_WAIT,Espere por favor
+MainMenu,1,FOCUS_TASK,Centrarse en la tarea
+MainMenu,1,UNFOCUS_TASK,No mostrar información de la tarea
+MainMenu,1,CHECK_TASK_DETAILS,Ver detalles de la tarea
+MainMenu,1,ACCEPT_TASK,Aceptar tarea
+MainMenu,1,CONFIRM_ACCEPT_TASK_TITLE,Aceptar tareas
+MainMenu,1,CONFIRM_ACCEPT_TASK_MESSAGE,¿Aceptar $(0)?
+MainMenu,1,DISCARD_TASK,Abandonar tarea
+MainMenu,1,CONFIRM_DISCARD_TASK_TITLE,Abandonar tareas
+MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE,¿Abandonar $(0)?<br><br><yellow>Se restablecerá el progreso de la tarea. <c>
+MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE_LOOP,¿Abandonar $(0)?<br><br><yellow>Las tareas de bucle abandonadas comenzarán desde la<br>primera tarea. <c>
+MainMenu,1,WINDOW_TITLETELOP,Tareas
+MainMenu,1,WINDOW_CONTROLGUIDE,<%Decide>: Confirmar <%Cancel>: Cancelar <%NextWidget>: Mover cursor
+MainMenu,1,FULLSIZE_FORM_TITLE,Tareas
+MainMenu,1,RemainingDays,$(0) día(s) restantes
+MainMenu,1,RemainingHour,<yellow> $(0) hora(s) restantes <c>
+MainMenu,1,RemainingMinutes,<yellow> $(0) minutos restantes <c>
+MainMenu,1,Task_Requester,Cliente
+MainMenu,1,Task_Requester_None,-
+MainMenu,1,Task_List_Tilte,Lista de tareas
+MainMenu,1,Accept_Task_Limit,$(0) más aceptable ($(1)/$(2))
+MainMenu,1,Task_Chapter_Num,Cap. $(0)
+MainMenu,1,Task_help,Mostrar ayuda
+MainMenu,1,Task_TwolineGuide_1,"Puede confirmar las tareas aceptadas. Puede mostrar la información de cada tarea, la configuración de visualización, el menú de ayuda, etc."
+MainMenu,1,Task_TwolineGuide_2,"Puede confirmar las tareas aceptables. Puede mostrar la información de cada tarea, la configuración de visualización, el menú de ayuda, etc."
+MainMenu,1,LoopTask_Count,Rondas
+MainMenu,1,Reward_Tier,NIVEL
+MainMenu,1,Reward_SeasonalPoint,ESTACIÓN
+MainMenu,1,Reward_GenesisPoint,médico de cabecera
+MainMenu,1,CATEGORY_RECOMMEND,Recomendado
+MainMenu,1,Limited_Category_Campaign,Campaña
+MainMenu,1,Limited_Category_PSO2,Solo día PSO2
+MainMenu,1,Limited_Category_Season,Eventos de temporada
+MainMenu,1,Limited_Category_etr,Historia/Otro
+MainMenu,1,Limited_Category_CreativeSpace,Espacio Creativo
+MainMenu,1,Limited_Category_LevelUp,Equipo/Desarrollo
+MainMenu,1,Limited_Category_Contents,Contenido
+TaskDetails,0,FORM_TITLE,$(0)の詳細
+TaskDetails,0,REWIND_CONDITION,再受注
+TaskDetails,0,TASK_OVERVIEW,概要
+TaskDetails,0,TASK_REWARD,報酬
+TaskDetails,0,TASK_PROGRESSES,詳細進行度
+TaskDetails,0,TASK_TO_ACHIEVEMENT,達成まで
+TaskDetails,0,ITEMDETAIL_CONTROLGUIDE,<%Function>で報酬詳細
+TaskDetails,0,ITEMDETAIL_CONTROLGUIDE_MP,<%Function><pict 4space>で報酬詳細　　<%MultiSelect><pict 4space>でミッションパス
+TaskDetails,0,ITEMDETAIL_MissionPass,<%NextTabDetails>でミッションパス
+TaskDetails,0,BASICINFO_CONTROLGUIDE,<%Function><pict 4space>で基本情報
+TaskDetails,0,BASICINFO_CONTROLGUIDE_MP,<%Function><pict 4space>で基本情報　　<%MultiSelect><pict 4space>でミッションパス
+TaskDetails,0,NO_REWARD_ITEM,報酬アイテムがありません。
+TaskDetails,0,Task_Detial_Tilte,タスク詳細
+TaskDetails,0,TASK_PROGRESSES_2,進行度
+TaskDetails,0,BASIC_INFO,基本情報
+TaskDetails,0,REWARD_INFO,報酬情報
+TaskDetails,0,REWARD_ITEMNAME,アイテム名
+TaskDetails,0,REWARD_QUANTITY,入手数量
+TaskDetails,0,TASK_DETAILS_UNSELECTED,タスクが選択されていません。
+TaskDetails,0,REWARD_QUANTITY_NUM,×$(0)
+TaskDetails,0,TASK_REWARD_LOOP_1,初回達成報酬
+TaskDetails,0,TASK_REWARD_LOOP_2,2回目以降の達成報酬
+TaskDetails,0,TASK_LOOPCOUNT,<space>
+TaskDetails,1,FORM_TITLE,$(0) Detalles
+TaskDetails,1,REWIND_CONDITION,Reaceptar
+TaskDetails,1,TASK_OVERVIEW,Resumen
+TaskDetails,1,TASK_REWARD,Premio
+TaskDetails,1,TASK_PROGRESSES,Progreso
+TaskDetails,1,TASK_TO_ACHIEVEMENT,Restante
+TaskDetails,1,ITEMDETAIL_CONTROLGUIDE,<%Function> para detalles de recompensa
+TaskDetails,1,ITEMDETAIL_CONTROLGUIDE_MP,<%Function> para detalles de recompensa　　<%MultiSelect>para pase de misión
+TaskDetails,1,ITEMDETAIL_MissionPass,<%Function> a MissionPass
+TaskDetails,1,BASICINFO_CONTROLGUIDE,<%Function> a información básica
+TaskDetails,1,BASICINFO_CONTROLGUIDE_MP,<%Function> a Información Básica　　<%MultiSelect>a Pase de Misión
+TaskDetails,1,NO_REWARD_ITEM,No hay artículos de recompensa.
+TaskDetails,1,Task_Detial_Tilte,Detalles de la tarea
+TaskDetails,1,TASK_PROGRESSES_2,Progreso
+TaskDetails,1,BASIC_INFO,Información básica
+TaskDetails,1,REWARD_INFO,Detalles de la recompensa
+TaskDetails,1,REWARD_ITEMNAME,Nombre del artículo
+TaskDetails,1,REWARD_QUANTITY,Número obtenido
+TaskDetails,1,TASK_DETAILS_UNSELECTED,Ninguna tarea seleccionada.
+TaskDetails,1,REWARD_QUANTITY_NUM,x$(0)
+TaskDetails,1,TASK_REWARD_LOOP_1,Recompensa por primera vez
+TaskDetails,1,TASK_REWARD_LOOP_2,Recompensa posterior
+TaskDetails,1,TASK_LOOPCOUNT,<space>

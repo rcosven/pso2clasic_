@@ -1,0 +1,690 @@
+﻿section,group,id,text
+PartySelect,0,Title_Partyselect,パーティー選択
+PartySelect,0,Room_Friend_Filter,フレンドのいるルームを絞り込む
+PartySelect,0,Room_Team_Filter,チームメンバーのいるルームを絞り込む
+PartySelect,0,Basic_Info,基本情報
+PartySelect,0,Field_Info,フィールド情報
+PartySelect,0,Menber_Info,パーティーメンバー
+PartySelect,0,Filter_On,ON
+PartySelect,0,Filter_OFF,OFF
+PartySelect,0,Room_Timecount,$(0)：$(1)
+PartySelect,0,Room_Leaving,3時間以上
+PartySelect,0,PasswordTitle,パスワード入力
+PartySelect,0,PasswordMessage,パスワードを入力してください：
+PartySelect,1,Title_Partyselect,Selección de partido
+PartySelect,1,Room_Friend_Filter,Habitaciones solo con amigos
+PartySelect,1,Room_Team_Filter,Habitaciones solo para miembros de la Alianza
+PartySelect,1,Basic_Info,Información básica
+PartySelect,1,Field_Info,Información de campo
+PartySelect,1,Menber_Info,Miembro del partido
+PartySelect,1,Filter_On,EN
+PartySelect,1,Filter_OFF,APAGADO
+PartySelect,1,Room_Timecount,$(0):$(1)
+PartySelect,1,Room_Leaving,3 horas o más
+PartySelect,1,PasswordTitle,Entrada de contraseña
+PartySelect,1,PasswordMessage,Por favor ingrese la Contraseña:
+QuestInfo,0,Window_Titletelop,クエスト受注メニュー
+QuestInfo,0,Window_TwolineGuide,自分がパーティーリーダーになるか、他のパーティーにメンバーとして参加するかを選択してください。
+QuestInfo,0,Window_ControlGuide,<%Decide>：決定　<%Cancel>：キャンセル
+QuestInfo,0,Window_ControlGuide_infodetails,ページ切り替え：<%NextTabDetails>
+QuestInfo,0,Top_Quest_info,クエスト情報
+QuestInfo,0,Top_Quest_infodetails,クエスト詳細
+QuestInfo,0,Title_Quest_Name,概要
+QuestInfo,0,Title_Quest_Reward,固定クリア報酬 <yellow>※クリアリザルトにより変動<c>
+QuestInfo,0,Title_Quest_Reward_2,初回クリア報酬 <yellow>※アカウント1回のみ<c>
+QuestInfo,0,Title_Quest_Restriction,制限
+QuestInfo,0,Title_Quest_Recommended,推奨能力値
+QuestInfo,0,Title_Quest_Order,受注条件
+QuestInfo,0,Title_Quest_Clear_Failure,クリア条件・失敗条件
+QuestInfo,0,Title_Quest_Clear,クリア条件
+QuestInfo,0,Title_Quest_Failure,失敗条件
+QuestInfo,0,Title_Quest_Description,説明
+QuestInfo,0,Btn_Departimmediately,すぐ出発する
+QuestInfo,0,Btn_Partyconfluence,パーティーに合流して開始する
+QuestInfo,0,AcceptNG_Description1,パーティーメンバーは、<br>クエストを受注できません。
+QuestInfo,0,AcceptNG_Description2,条件を満たしていないため、<br>クエストを受注できません。
+QuestInfo,0,AcceptNG_Description3,クリア回数制限を超えているメンバーがいるため、<br>クエストを受注できません。
+QuestInfo,0,AcceptNG_Description4,作戦準備中のため、<br>クエストを受注できません。
+QuestInfo,0,Btn_Fasttravel,ファストトラベル
+QuestInfo,0,Btn_Storyconfirmation,ストーリーを確認
+QuestInfo,0,Title_Mainmission,メインミッション
+QuestInfo,0,Title_Submission,サイドミッション
+QuestInfo,0,Title_Bestscore,個人記録（ソロプレイ時）
+QuestInfo,0,Title_Bestscore_Challengebuff,個人記録（ソロプレイ時・$(0)）
+QuestInfo,0,Title_Bestscore_pt,個人記録（パーティープレイ時）
+QuestInfo,0,Title_Bestscore_pt_Challengebuff,個人記録（パーティープレイ時・$(0)）
+QuestInfo,0,Title_Subjugationtarget,討伐目標エネミー
+QuestInfo,0,Title_Recommendeditems,おすすめドロップアイテム
+QuestInfo,0,Title_Subjugationtarget_Buff,討伐目標エネミー/エネミー能力強化
+QuestInfo,0,Title_BuffList,プレイヤー能力強化
+QuestInfo,0,Title_BuffListDancehall,プレイヤー能力
+QuestInfo,0,Title_BuffList_Etc,<pict 4space>
+QuestInfo,0,Title_Quest_Tendency,クエスト構成
+QuestInfo,0,Title_Quest_Tendency_Area,出現率の高いリージョン
+QuestInfo,0,Title_Quest_Tendency_Enemy,出現率の高いエネミー
+QuestInfo,0,Title_Quest_Tendency_Etc,その他
+QuestInfo,0,Title_Bestscore_GrowUp,個人記録
+QuestInfo,0,Title_Bestscore_GrowUp_Score,ベストスコア
+QuestInfo,0,Bestscore_GrowUp_Score,$(0)Pt
+QuestInfo,0,Title_Bestscore_GrowUp_Buff,ベストスコア時の能力強化獲得数
+QuestInfo,0,Bestscore_GrowUp_Buff,$(0)個
+QuestInfo,0,Reward_Exp,$(0)<pict 4space><pict exp_boost_icon>
+QuestInfo,0,Reward_Meseta,$(0)<pict 4space><pict reb_meseta>
+QuestInfo,0,Reward_SeasonPoint,$(0)<pict 4space><pict event_point>
+QuestInfo,0,Reward_quantity,×$(0)
+QuestInfo,0,Reward_quantity2,+$(0)
+QuestInfo,0,Reward_Skillpt,スキルポイント
+QuestInfo,0,Reward_GenesisPoint,$(0)<pict 4space><pict myspace_point>
+QuestInfo,0,Reward_N-TeamPoint,$(0)<pict 4space><pict reb_team>
+QuestInfo,0,Bestscore_time,$(1):$(2).$(0)
+QuestInfo,0,Bestscore_score,$(0)Pt
+QuestInfo,0,Bestscore_score_bonus1,<yellow>スコア倍率<c>
+QuestInfo,0,Bestscore_score_bonus2,<yellow>+$(0)%<c>
+QuestInfo,0,Bestscore_score_bonus2_Minus,<yellow>－$(0)%<c>
+QuestInfo,0,Bestscore_score_bonus3,<yellow>クリア難度倍率：<c>
+QuestInfo,0,Bestscore_score_bonus4,<yellow>$(0)%<c>
+QuestInfo,0,Bestscore_score_bonus4_Minus,<yellow>$(0)%<c>
+QuestInfo,0,Trigger_Reward,<yellow>報酬受け取り可能<c>
+QuestInfo,0,Trigger_NoReward,<vivid_red>報酬受取済み 次回報酬：【日時】<c>
+QuestInfo,0,HighLevelQuestName,<yellow>緊急クエスト<c>
+QuestInfo,0,CreateNewRoom,クエストを受注する
+QuestInfo,0,InRoom,クエスト中のパーティーに参加
+QuestInfo,0,OrdersOption,受注設定を変更する
+QuestInfo,0,Exit_QuestCounter,クエスト受注メニューを出る
+QuestInfo,0,SelectPartyList,現在のブロックのパーティーへ参加
+QuestInfo,0,SearchPartyList,クエストを検索して参加
+QuestInfo,0,QuestSelectTitle,クエスト選択
+QuestInfo,0,EventQuestName,期間限定クエスト
+QuestInfo,0,BonusQuestName,ボーナスクエスト
+QuestInfo,0,TriggerQuestName,トリガークエスト
+QuestInfo,0,StoryQuestName,ストーリー回想
+QuestInfo,0,Title_Quest_Order2,解放条件
+QuestInfo,0,Must_Quest_Recommended,必要戦闘力
+QuestInfo,0,PtMakingTitle,パーティー情報入力メニュー
+QuestInfo,0,AdmissionOption,参加設定
+QuestInfo,0,AdmissionWelcome,参加歓迎
+QuestInfo,0,PartnerCardOn,フレンド限定
+QuestInfo,0,GuildMemberOn,チームメンバー限定
+QuestInfo,0,PasswordOption,パスワード設定
+QuestInfo,0,PasswordWrite,参加パスワード
+QuestInfo,0,PTPledge1,パーティーへの参加のみ制限
+QuestInfo,0,PTPledge2,他パーティーとのマルチプレイも制限
+QuestInfo,0,OrdersOptionBlock1,クエストを受注する
+QuestInfo,0,OrdersOptionBlock2,現在のブロックで受注する
+QuestInfo,0,StoryInfo,ストーリー情報
+QuestInfo,0,NoMust_Quest_Recommended,---
+QuestInfo,0,StoryQuestGuide,一度クリアしたメインクエストをもう一度遊ぶことが出来ます。
+QuestInfo,0,QuestTypeSelectTitle,クエストタイプ選択
+QuestInfo,0,QuestSelectCheckTitle,クエスト受注確認
+QuestInfo,0,QuestSelectCheck,このクエストを受注してもよろしいですか？
+QuestInfo,0,BattlePointNum,$(0)～
+QuestInfo,0,AttentionNewRoom,別のクエストやラインストライクのマッチング中です。<br><br>現在のマッチングをキャンセルしても、<br>よろしいですか？
+QuestInfo,0,OrdersOptionBlock3,マッチングを開始する
+QuestInfo,0,NoMust_Quest_Conditions,なし
+QuestInfo,0,Title_TargetEnemy_Unknown,？？？
+QuestInfo,0,BattlePoint_Limit,戦闘力$(0)以上
+QuestInfo,0,level,Lv.
+QuestInfo,0,Title_Quest_Clear_Failure_dot,クリア条件：$(0)<br>失敗条件：$(1)
+QuestInfo,0,BattlePoint_Limit_Red,<yellow>戦闘力$(0)以上<c>
+QuestInfo,0,Level_Limit,メインクラス Lv.$(0)以上
+QuestInfo,0,Level_Limit_Red,<yellow>メインクラス Lv.$(0)以上<c>
+QuestInfo,0,Must_Parem_Text_Red,<yellow>推奨能力値以上<c>
+QuestInfo,0,Must_Parem_Text,推奨能力値以上
+QuestInfo,0,Btn_Quest_Order_Leader,クエストを開始する
+QuestInfo,0,Btn_Quest_Order_Leader_ClearTimes,クエストを開始する<yellow>（クリア可能回数：$(0)回）<c>
+QuestInfo,0,Btn_Quest_Order_Member,ひとりでクエストを開始する
+QuestInfo,0,Btn_Quest_Order_Member_ClearTimes,ひとりでクエストを開始する<yellow>（クリア可能回数：$(0)回）<c>
+QuestInfo,0,Btn_Quest_Order_Password,マッチング設定をして開始する
+QuestInfo,0,Btn_Quest_Party_Setting,メンバーを募集して開始する
+QuestInfo,0,EnemyLvTitle,出現エネミーLv.
+QuestInfo,0,EnemyLv,Lv.$(0)
+QuestInfo,0,EnemyLvWarning,<yellow>Lv.$(0)<c>
+QuestInfo,0,EnemyLvATTENTIONTitle,クエスト受注の確認
+QuestInfo,0,EnemyLvATTENTION,クエスト中に出現するエネミーよりも、<br>レベルが５以上低いメンバーがいます。<br><br>クエストを開始してもよろしいですか？<br><br><yellow>※エネミーレベルよりも<br>　プレイヤーレベルが５以上低い場合は、<br>　与えるダメージが大きく減少します。<c>
+QuestInfo,0,EnemyLvATTENTION2,クエスト中に出現するエネミーに対して、<br>与えるダメージが減少するメンバーがいます。<br>クエストを開始してもよろしいですか？<br><br><yellow>※エネミーレベルよりも、<br>　プレイヤーのレベルが$(0)以上低く、<br>　かつ戦闘力が一定値以下の場合、<br>　与えるダメージが大きく減少します。<c>
+QuestInfo,0,BoostInfo_Title,対象クエスト中の効果
+QuestInfo,0,CampaignBoost_Experience,<pict exp_icon><pict 4space>獲得経験値＋$(0)％
+QuestInfo,0,CampaignBoost_MesetaDrop,<pict meseta_icon2><pict 4space>獲得メセタ＋$(0)％
+QuestInfo,0,CampaignBoost_RareDrop,<pict rare_drop_icon><pict 4space>レアドロップ倍率＋$(0)％
+QuestInfo,0,CampaignBoost_TriggerQuantity,<pict boost_campaign><pict 4space>バトルトリガー必要数変動
+QuestInfo,0,CampaignBoost_Stackitemdropup,<pict boost_campaign><pict 4space>特定アイテムのドロップ数増加
+QuestInfo,0,CampaignBoost_SeasonalPoint,<pict eventpoint_boost><pict 4space>獲得シーズナルポイント＋$(0)%
+QuestInfo,0,CampaignBoost_GenesisPointRate,<pict myspace_point_b><pict 4space>獲得ジェネシスポイント＋$(0)%
+QuestInfo,0,CampaignBoost_PresetSkill,<pict preset_boost><pict 4space>プリセット能力付与倍率＋$(0)％
+QuestInfo,0,Quest_Conditions_Possible,$(0)
+QuestInfo,0,BoostInfo_SubTitleEnemy,<pict boost_campaign><pict 4space>エネミーの追加効果
+QuestInfo,0,BoostInfo_SubTitlePlayer,<pict boost_campaign><pict 4space>プレイヤーの追加効果
+QuestInfo,0,BoostInfo_SubTitleItemDrop,<pict boost_camp_drop><pict 4space>アイテムの追加ドロップ
+QuestInfo,0,BoostInfo_SubTitleQuest,キャンペーンブースト（固定、初回クリア報酬は適用外）
+QuestInfo,0,BoostInfo_SubTitleSection,セクション内の追加効果
+QuestInfo,0,BoostInfo_SubTitleArksRecordBoost,アークスレコードブースト
+QuestInfo,0,Quest_Conditions_Impossible,<yellow>$(0)<c>
+QuestInfo,0,Quest_Conditions_None,---
+QuestInfo,0,Quest_Conditions_Param,推奨能力値以上
+QuestInfo,0,Quest_Conditions_Regions,当該リージョン限定
+QuestInfo,0,Quest_Conditions_Sequence,メインタスクの進行
+QuestInfo,0,Submission_Trinites,フロアごとに異なる
+QuestInfo,0,Quest_Level_Player,Lv.$(0)以上
+QuestInfo,0,HistoryQuest_Noreward,ストーリークエストでは、<br>報酬やドロップアイテムなどを獲得できません。
+QuestInfo,0,WeeklyRanking_Open,<yellow>アークスレコード開催中！　終了まで$(0)<c>
+QuestInfo,0,WeeklyRanking_Close_Soon,<yellow>アークスレコード開催中！　まもなく終了します。<c>
+QuestInfo,0,WeeklyRanking_EndTime,あと$(0)
+QuestInfo,0,WeeklyRanking_EndTime_Soon,まもなく終了します。
+QuestInfo,0,WeeklyRanking_Notice,<yellow>アークスレコード開催予定！<c>
+QuestInfo,0,WeeklyRanking_Close,直近のアークスレコード開催予定はありません
+QuestInfo,0,WeeklyRanking_Message_Open,参加するとこの報酬を獲得できます。<br>※詳しくは“アークスレコード”をご確認ください。
+QuestInfo,0,WeeklyRanking_Message_Notice,あと$(0)後に開催されます。<br>※詳しくは“アークスレコード”をご確認ください。
+QuestInfo,0,WeeklyRanking_Message_Notice_Soon,まもなく開催されます。<br>※詳しくは“アークスレコード”をご確認ください。
+QuestInfo,0,SeasonQuest_Detail_Description,以下の目標達成により、クエストポイントにボーナスが付与されます。<br>また、クリア時のプレイヤー順位に応じて、追加報酬が獲得できます。
+QuestInfo,0,SeasonQuest_Detail_Label1,クエストクリアランキング報酬
+QuestInfo,0,SeasonQuest_Detail_Label2,クエストポイントボーナス
+QuestInfo,0,SeasonQuest_Rank_1_3,$(0)位
+QuestInfo,0,SeasonQuest_Rank_4,4位以下
+QuestInfo,0,SeasonQuest_SeasonalPoint,+$(0)
+QuestInfo,0,SeasonQuest_AddScore,+$(0)Pt
+QuestInfo,0,WeeklyRanking_Close_Rank_Notcovered,このクエストランクは対象外です。<br>※詳しくは“アークスレコード”をご確認ください。
+QuestInfo,0,WeeklyRanking_Close_Not_Aggregate_Class,現在のメインクラスは、このアークスレコードの対象外です。<br>アークスレコードの詳細は、<br>メインメニューを開き、“パーソナル”のなかにある<br>“アークスレコード”から確認できます。
+QuestInfo,0,QuestReward_Empty,クリア報酬はありません
+QuestInfo,0,Recommended_Empty,注目のドロップアイテムはありません
+QuestInfo,0,QuestRewardInformation_Title,クエスト報酬詳細
+QuestInfo,0,QuestRewardInformation_ClearTabText,クリア報酬
+QuestInfo,0,QuestRewardInformation_DropTabText,注目のドロップアイテム
+QuestInfo,0,QuestCounterInformation_GuideText,決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>　　報酬詳細を開く：<%Function>　　操作ウィンドウ切り替え：<%ChangeCtrlWindowForward>
+QuestInfo,0,Title_Quest_Reward_3,初回Sランククリア報酬 <yellow>※アカウント1回のみ<c>
+QuestInfo,0,QuestReward_etr,他
+QuestInfo,1,Window_Titletelop,Menú de aceptación de misiones
+QuestInfo,1,Window_TwolineGuide,Elija entre convertirse en líder de un partido o unirse a otro partido como miembro.
+QuestInfo,1,Window_ControlGuide,<%Decide>: Confirmar <%Cancel>: Cancelar
+QuestInfo,1,Window_ControlGuide_infodetails,Cambiar página: <%NextTabDetails>
+QuestInfo,1,Top_Quest_info,Información de la misión
+QuestInfo,1,Top_Quest_infodetails,Detalles de la misión
+QuestInfo,1,Title_Quest_Name,Resumen
+QuestInfo,1,Title_Quest_Reward,Recompensa clara fija<yellow>*Varía según el resultado claro <c>
+QuestInfo,1,Title_Quest_Reward_2,Primera recompensa clara<yellow>*Una vez por cuenta <c>
+QuestInfo,1,Title_Quest_Restriction,Restricciones
+QuestInfo,1,Title_Quest_Recommended,Estadísticas recomendadas
+QuestInfo,1,Title_Quest_Order,Requisitos de aceptación
+QuestInfo,1,Title_Quest_Clear_Failure,Condiciones claras/fallidas
+QuestInfo,1,Title_Quest_Clear,Condiciones claras
+QuestInfo,1,Title_Quest_Failure,Condiciones de falla
+QuestInfo,1,Title_Quest_Description,Descripción
+QuestInfo,1,Btn_Departimmediately,Salir inmediatamente
+QuestInfo,1,Btn_Partyconfluence,Únase a la fiesta y comience
+QuestInfo,1,AcceptNG_Description1,Un miembro del grupo no puede aceptar la misión.
+QuestInfo,1,AcceptNG_Description2,La misión no se puede aceptar porque no se han cumplido los requisitos.
+QuestInfo,1,AcceptNG_Description3,La misión no se puede aceptar porque un miembro ya ha alcanzado el límite claro.
+QuestInfo,1,AcceptNG_Description4,La misión no se puede aceptar mientras se está preparando la misión.
+QuestInfo,1,Btn_Fasttravel,Viaje rápido
+QuestInfo,1,Btn_Storyconfirmation,Ver historia
+QuestInfo,1,Title_Mainmission,Misión principal
+QuestInfo,1,Title_Submission,Misión secundaria
+QuestInfo,1,Title_Bestscore,Mejor marca personal (juego en solitario)
+QuestInfo,1,Title_Bestscore_Challengebuff,Mejor marca personal (juego en solitario - $(0))
+QuestInfo,1,Title_Bestscore_pt,Mejor marca personal (juego en grupo)
+QuestInfo,1,Title_Bestscore_pt_Challengebuff,Mejor marca personal (Juego en grupo - $(0))
+QuestInfo,1,Title_Subjugationtarget,Enemigo objetivo de supresión
+QuestInfo,1,Title_Recommendeditems,Artículos de entrega recomendados
+QuestInfo,1,Title_Subjugationtarget_Buff,Enemigo objetivo de supresión/mejoras de habilidades enemigas
+QuestInfo,1,Title_BuffList,Mejoras de habilidades del jugador
+QuestInfo,1,Title_BuffListDancehall,Habilidad del jugador
+QuestInfo,1,Title_BuffList_Etc,<pict 4space>
+QuestInfo,1,Title_Quest_Tendency,Configuración de misión
+QuestInfo,1,Title_Quest_Tendency_Area,Región con alta tasa de aparición
+QuestInfo,1,Title_Quest_Tendency_Enemy,Enemigo con alto índice de aparición
+QuestInfo,1,Title_Quest_Tendency_Etc,Otro
+QuestInfo,1,Title_Bestscore_GrowUp,Registro personal
+QuestInfo,1,Title_Bestscore_GrowUp_Score,Puntuación máxima
+QuestInfo,1,Bestscore_GrowUp_Score,$(0) Puntos
+QuestInfo,1,Title_Bestscore_GrowUp_Buff,Mejoras de habilidades adquiridas de Top Score
+QuestInfo,1,Bestscore_GrowUp_Buff,$(0)
+QuestInfo,1,Reward_Exp,$(0)<pict 4space><pict exp_boost_icon>
+QuestInfo,1,Reward_Meseta,$(0)<pict 4space><pict reb_meseta>
+QuestInfo,1,Reward_SeasonPoint,$(0)<pict 4space><pict event_point>
+QuestInfo,1,Reward_quantity,x$(0)
+QuestInfo,1,Reward_quantity2,+$(0)
+QuestInfo,1,Reward_Skillpt,Puntos de habilidad
+QuestInfo,1,Reward_GenesisPoint,$(0)<pict 4space><pict myspace_point>
+QuestInfo,1,Reward_N-TeamPoint,$(0)<pict 4space><pict reb_team>
+QuestInfo,1,Bestscore_time,$(1):$(2).$(0)
+QuestInfo,1,Bestscore_score,$(0)punto
+QuestInfo,1,Bestscore_score_bonus1,<yellow> multiplicador de puntuación <c>
+QuestInfo,1,Bestscore_score_bonus2,<yellow> +$(0)% <c>
+QuestInfo,1,Bestscore_score_bonus2_Minus,<yellow> -$(0)% <c>
+QuestInfo,1,Bestscore_score_bonus3,<yellow> Multiplicador de dificultad clara: <c>
+QuestInfo,1,Bestscore_score_bonus4,<yellow> $(0)% <c>
+QuestInfo,1,Bestscore_score_bonus4_Minus,<yellow> $(0)% <c>
+QuestInfo,1,Trigger_Reward,<yellow> Recompensa disponible <c>
+QuestInfo,1,Trigger_NoReward,<vivid_red> Recompensa recibida Próxima disponibilidad: [Día/Hora] <c>
+QuestInfo,1,HighLevelQuestName,<yellow> Búsqueda Urgente <c>
+QuestInfo,1,CreateNewRoom,Aceptar misión
+QuestInfo,1,InRoom,Únase a un grupo en una misión en progreso
+QuestInfo,1,OrdersOption,Cambiar la configuración de aceptación
+QuestInfo,1,Exit_QuestCounter,Salir del menú de aceptación de misión
+QuestInfo,1,SelectPartyList,Únase a un grupo en el bloque actual
+QuestInfo,1,SearchPartyList,Busque Quest y únase
+QuestInfo,1,QuestSelectTitle,Seleccionar misión
+QuestInfo,1,EventQuestName,Misión por tiempo limitado
+QuestInfo,1,BonusQuestName,Misión de bonificación
+QuestInfo,1,TriggerQuestName,Búsqueda desencadenante
+QuestInfo,1,StoryQuestName,Revisar la historia
+QuestInfo,1,Title_Quest_Order2,Requisitos de desbloqueo
+QuestInfo,1,Must_Quest_Recommended,Poder de batalla requerido
+QuestInfo,1,PtMakingTitle,Menú de configuración de fiesta
+QuestInfo,1,AdmissionOption,Configuración de admisión
+QuestInfo,1,AdmissionWelcome,Reclutamiento Activo
+QuestInfo,1,PartnerCardOn,Sólo amigos
+QuestInfo,1,GuildMemberOn,Sólo miembros de la Alianza
+QuestInfo,1,PasswordOption,Configuración de contraseña
+QuestInfo,1,PasswordWrite,Unirse Contraseña
+QuestInfo,1,PTPledge1,Sólo invitaciones a fiestas
+QuestInfo,1,PTPledge2,Limite también las solicitudes multijugador de otras partes
+QuestInfo,1,OrdersOptionBlock1,Aceptar misión
+QuestInfo,1,OrdersOptionBlock2,Aceptar en el bloque actual
+QuestInfo,1,StoryInfo,Información de la historia
+QuestInfo,1,NoMust_Quest_Recommended,---
+QuestInfo,1,StoryQuestGuide,Puedes volver a jugar misiones principales que ya hayas completado.
+QuestInfo,1,QuestTypeSelectTitle,Seleccione el tipo de misión
+QuestInfo,1,QuestSelectCheckTitle,Confirmar la aceptación de la misión
+QuestInfo,1,QuestSelectCheck,¿Aceptar esta misión?
+QuestInfo,1,BattlePointNum,$(0)~
+QuestInfo,1,AttentionNewRoom,No puedes aceptar otra misión o Line Strike durante el emparejamiento de misiones.<br><br> ¿Cancelar el emparejamiento?
+QuestInfo,1,OrdersOptionBlock3,Iniciar el emparejamiento
+QuestInfo,1,NoMust_Quest_Conditions,Ninguno
+QuestInfo,1,Title_TargetEnemy_Unknown,???
+QuestInfo,1,BattlePoint_Limit,Por encima de $(0) de poder de batalla
+QuestInfo,1,level,Lv.
+QuestInfo,1,Title_Quest_Clear_Failure_dot,Condiciones claras: $(0)<br>Condiciones de falla: $(1)
+QuestInfo,1,BattlePoint_Limit_Red,<yellow> Por encima de $(0) Poder de batalla <c>
+QuestInfo,1,Level_Limit,Nivel $(0) o superior para tu clase principal
+QuestInfo,1,Level_Limit_Red,<yellow> Nivel $(0) o superior para tu Clase Principal <c>
+QuestInfo,1,Must_Parem_Text_Red,<yellow> Estadísticas recomendadas o superiores <c>
+QuestInfo,1,Must_Parem_Text,Estadísticas recomendadas o superiores
+QuestInfo,1,Btn_Quest_Order_Leader,Iniciar misión
+QuestInfo,1,Btn_Quest_Order_Leader_ClearTimes,Iniciar misión<yellow>(Tiempos que se pueden borrar: $(0)) <c>
+QuestInfo,1,Btn_Quest_Order_Member,Iniciar misión en solitario
+QuestInfo,1,Btn_Quest_Order_Member_ClearTimes,Iniciar misión en solitario<yellow>(Tiempos que se pueden borrar: $(0)) <c>
+QuestInfo,1,Btn_Quest_Order_Password,Configurar los ajustes de emparejamiento y comenzar
+QuestInfo,1,Btn_Quest_Party_Setting,Reclutar miembros del grupo y comenzar
+QuestInfo,1,EnemyLvTitle,Lv. de enemigos presentes
+QuestInfo,1,EnemyLv,Nivel$(0)
+QuestInfo,1,EnemyLvWarning,<yellow> Nivel$(0) <c>
+QuestInfo,1,EnemyLvATTENTIONTitle,Confirmar la aceptación de la misión
+QuestInfo,1,EnemyLvATTENTION,gnificantly .<c>
+QuestInfo,1,EnemyLvATTENTION2,alt<br>disminuirá significativamente. <c>
+QuestInfo,1,BoostInfo_Title,Efectos de la misión
+QuestInfo,1,CampaignBoost_Experience,<pict exp_icon><pict 4space>EXP ganada +$(0)%
+QuestInfo,1,CampaignBoost_MesetaDrop,<pict meseta_icon2><pict 4space>Meseta Ganada +$(0)%
+QuestInfo,1,CampaignBoost_RareDrop,<pict rare_drop_icon><pict 4space>Tasa de aparición rara +$(0)%
+QuestInfo,1,CampaignBoost_TriggerQuantity,<pict rare_drop_icon><pict 4space>Necesario Cambio de número de disparador de batalla
+QuestInfo,1,CampaignBoost_Stackitemdropup,<pict boost_campaign><pict 4space>Aumento de entrega de artículos designados
+QuestInfo,1,CampaignBoost_SeasonalPoint,<pict eventpoint_boost><pict 4space>Puntos de temporada adquiridos +$(0)%
+QuestInfo,1,CampaignBoost_GenesisPointRate,<pict myspace_point_b><pict 4space>Puntos Génesis adquiridos +$(0)%
+QuestInfo,1,CampaignBoost_PresetSkill,<pict preset_boost><pict 4space>Tasa de habilidad preestablecida de soltar elemento +$(0)％
+QuestInfo,1,Quest_Conditions_Possible,$(0)
+QuestInfo,1,BoostInfo_SubTitleEnemy,<pict boost_campaign><pict 4space>Efecto adicional del enemigo
+QuestInfo,1,BoostInfo_SubTitlePlayer,<pict boost_campaign><pict 4space>Efecto adicional del jugador
+QuestInfo,1,BoostInfo_SubTitleItemDrop,<pict boost_camp_drop><pict 4space>Artículo de entrega adicional
+QuestInfo,1,BoostInfo_SubTitleQuest,"Impulso de campaña (no se aplica a fijo, primera recompensa clara)"
+QuestInfo,1,BoostInfo_SubTitleSection,Efectos adicionales en este sector
+QuestInfo,1,BoostInfo_SubTitleArksRecordBoost,Aumento de registros de Arcas
+QuestInfo,1,Quest_Conditions_Impossible,<yellow> $(0) <c>
+QuestInfo,1,Quest_Conditions_None,---
+QuestInfo,1,Quest_Conditions_Param,Estadísticas recomendadas o superiores
+QuestInfo,1,Quest_Conditions_Regions,Restricción de región
+QuestInfo,1,Quest_Conditions_Sequence,Progresión de la tarea principal
+QuestInfo,1,Submission_Trinites,Diferente para cada piso
+QuestInfo,1,Quest_Level_Player,Nivel $(0) o superior
+QuestInfo,1,HistoryQuest_Noreward,Las recompensas y los artículos no se otorgan en Story Quests.
+QuestInfo,1,WeeklyRanking_Open,<yellow> ¡ARKS Records está en marcha! ($(0) restante) <c>
+QuestInfo,1,WeeklyRanking_Close_Soon,<yellow> ¡ARKS Records está en marcha! (Terminará en breve) <c>
+QuestInfo,1,WeeklyRanking_Notice,<yellow> ¡Se anuncian los próximos registros de ARKS! <c>
+QuestInfo,1,WeeklyRanking_Close,No hay clasificaciones programadas actualmente
+QuestInfo,1,WeeklyRanking_Message_Open,Puedes recibir estas recompensas por participar.<br>*Consulte Registros ARKS para obtener más detalles.
+QuestInfo,1,WeeklyRanking_Message_Notice,ARKS Records comenzará en $(0).<br>*Consulte Registros ARKS para obtener más detalles.
+QuestInfo,1,WeeklyRanking_Message_Notice_Soon,ARKS Records comenzará en breve.<br>*Consulte Registros ARKS para obtener más detalles.
+QuestInfo,1,SeasonQuest_Detail_Description,Gana recompensas adicionales según tu clasificación al completar la misión.
+QuestInfo,1,SeasonQuest_Detail_Label1,Recompensas de clasificación clara de misiones
+QuestInfo,1,SeasonQuest_Detail_Label2,Bonificación de puntos de misión
+QuestInfo,1,SeasonQuest_Rank_1_3,$(0)
+QuestInfo,1,SeasonQuest_Rank_4,4 o menos
+QuestInfo,1,SeasonQuest_SeasonalPoint,+$(0)
+QuestInfo,1,SeasonQuest_AddScore,+$(0) Puntos
+QuestInfo,1,WeeklyRanking_Close_Rank_Notcovered,Este rango de misión no es elegible.<br>*Consulte Registros ARKS para obtener más detalles.
+QuestInfo,1,WeeklyRanking_Close_Not_Aggregate_Class,"detalles del pedido, vaya al Menú principal y seleccione ""Personal"", luego ""ARKS<br>Registros""."
+QuestInfo,1,QuestReward_Empty,No hay una recompensa clara
+QuestInfo,1,Recommended_Empty,No hay entregas de artículos destacados
+QuestInfo,1,QuestRewardInformation_Title,Detalles de la recompensa de la misión
+QuestInfo,1,QuestRewardInformation_ClearTabText,Borrar recompensa
+QuestInfo,1,QuestRewardInformation_DropTabText,Entrega de artículos destacados
+QuestInfo,1,QuestCounterInformation_GuideText,Detalles de recompensa:<%Function>Cambiar ventana activa: <%ChangeCtrlWindowForward>
+QuestInfo,1,Title_Quest_Reward_3,1er rango S Recompensa clara<yellow>*Una vez por cuenta <c>
+QuestInfo,1,QuestReward_etr,Varios.
+Caution,0,None,不明なエラーです。<br><br>[No.3000]
+Caution,0,NotReceptQuestPartyGuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。
+Caution,0,NotReceptQuestAlreadyQuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。<br>（すでにクエストが始まっています。<br>出発ゲートに向かうことをおすすめします）
+Caution,0,NotFoundQuestSearch,条件に当てはまるクエストが<br>見つかりませんでした。
+Caution,0,NotFoundRoomSearch,条件に当てはまるルームが<br>見つかりませんでした。
+Caution,0,NotFoundPartyList,パーティーが見つかりませんでした。
+Caution,0,NotFoundQuestType,受注可能なクエストがありません。
+Caution,0,NotFoundQuestList,受注可能なクエストがありません。
+Caution,0,CantStartQuestNotFoundRoom,対象ルームが見つからなかったため<br>クエストを開始できません。
+Caution,0,CantStartQuestCapacityOverRoom,ルームの人数オーバーのため参加できません。
+Caution,0,CantStartQuestNewRaidQuest,パーティーメンバーが<br>参加条件であるエネミーを倒していないため、<br>クエストを受注できません。
+Caution,0,CantStartQuestNotNotFoundParty,対象パーティーが見つからなかったため、<br>クエストを開始できません。
+Caution,0,CantStartQuestCapacityOverParty,パーティーの人数オーバーのため参加できません。
+Caution,0,CantStartQuestDifferencePasswordParty,パスワードが間違っているため参加できません。
+Caution,0,CantStartQuestAlreadyFinished,このパーティーは<br>すでにクエストを終了しているため、<br>参加できません。
+Caution,0,CautionNotSoloParty,現在パーティーを組んでいるため<br>他のブロックに移動することはできません。
+Caution,0,CantStartQuestDifferenceCondition,このパーティーの参加条件を満たしていないため、<br>参加できません。
+Caution,0,CantStartQuestDifferenceConditionLine1,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)
+Caution,0,CantStartQuestDifferenceConditionLine2,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)
+Caution,0,CantStartQuestDifferenceConditionLine3,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)
+Caution,0,CantStartQuestDifferenceConditionLine4,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
+Caution,0,CantStartQuestDifferenceConditionLine5,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
+Caution,0,CantStartQuestDifferenceConditionLine6,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)
+Caution,0,CantStartQuestDifferenceConditionLine7,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)
+Caution,0,CantStartQuestDifferenceConditionLine8,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)<br>・$(7)
+Caution,0,QuestLevel,<pict mainclass_icon>Lv.$(0)～
+Caution,0,PartyLevel,パーティー参加条件レベル/Lv.$(1)～$(0)
+Caution,0,FriendOnly,フレンド限定
+Caution,0,GuildOnly,チームメンバー限定
+Caution,0,PasswordNG,パスワードが間違っている
+Caution,0,BurstIntoNG,クエストにより途中参加が制限されている
+Caution,0,ReasonEventFlag,特殊な受注条件
+Caution,0,RareAreaNG,パーティーが特別なエリアにいる
+Caution,0,CantStartQuestTimeLimitOver,クエストの受注可能期間が過ぎています。
+Caution,0,CapacityOverParty,パーティーの人数制限
+Caution,0,PlatformError,プラットフォーム制限
+Caution,0,RaidQuestDisable,参加条件であるエネミーを倒していない
+Caution,0,NotFoundPartyListtInBasnet,パーティーが見つかりませんでした。
+Caution,0,CantStartQuestClearCountLimit,パーティーメンバーが<br>クエストのクリア回数制限を超えているため、<br>参加できません。
+Caution,0,QuestSubLevel,<pict subclass_icon>Lv.$(0)～
+Caution,0,ClearCountLimit,クエストのクリア回数制限を超えている
+Caution,0,CantStartQuestIgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
+Caution,0,IgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
+Caution,0,QuestDropPenalty,「破棄ペナルティー」を受けているメンバーがいます。
+Caution,0,CantStartQuestDropPenalty,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・「破棄ペナルティー」を受けているメンバーがいます。
+Caution,0,CantStartProhibitQuestDropTitleCnt,クエスト受注メニュー端末
+Caution,0,CantStartProhibitQuestDropTitleTlp,テレポーター
+Caution,0,CantStartProhibitQuestDropForStart,現在使用することができません。
+Caution,0,TitleConfirmForQuest,クエスト受注確認
+Caution,0,CautionNon,不明なエラー
+Caution,0,CautionQuestLimitTimeOver,クエストの受注可能期間が過ぎています。
+Caution,0,CautionQuestLevelNG,クエスト受注条件を満たしていません。
+Caution,0,CautionQuestLevelNG2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・Lv.$(0)～
+Caution,0,CautionQuestPartyMemberMax,パーティーメンバーが$(0)人以上いるため<br>このクエストは受注できません。
+Caution,0,CautionQuestPartyMemberJoinMax,参加可能人数が$(0)人以内の<br>クエストを受注中のため<br>このパーティーに参加できません。
+Caution,0,CautionQuestPlatform,パーティーメンバー全員が<br>以下の受注条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
+Caution,0,CautionQuestRaidQuest,クエスト条件を満たしていないため、<br>受注できません。
+Caution,0,CautionMultiConditionLine1,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
+Caution,0,CautionMultiConditionLine2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)
+Caution,0,CautionMultiConditionLine3,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)
+Caution,0,CautionMultiConditionLine4,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
+Caution,0,CautionMultiConditionLine5,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
+Caution,0,CautionQuestClearCountLimit,クエストのクリア回数制限を超えているため、<br>このクエストは受注できません。
+Caution,0,CautionNothingQuest,このクエストタイプのクエストは現在１つもありません。
+Caution,0,NotFoundQuestRecord,クエストレコードが存在しません。
+Caution,0,CantStartQuestNewNetCafeQuest,パーティーメンバーが<br>ネットカフェプレミアムではないため、<br>クエストを受注できません。
+Caution,0,CantStartQuestOutExtraQuest,このクエストのキャンペーン対象期間は終了しました。<br>クエストを再受注してください。
+Caution,0,CantStartQuestInExtraQuest,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
+Caution,0,CantStartCapacityOverInTraning,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
+Caution,0,LeavePenalty,マッチング制限中のため<br>対象クエストを受注できません。<br><br>しばらく時間を空けてから受注してください。
+Caution,0,None,Se produjo un error desconocido.<br><br> [No. 3000]
+Caution,1,NotReceptQuestPartyGuest,No puedes aceptar la misión porque<br>no eres un líder del grupo.
+Caution,1,NotReceptQuestAlreadyQuest,La búsqueda ya ha comenzado. Se recomienda dirigirse<br>hacia la puerta).
+Caution,1,NotFoundQuestSearch,No se pudo encontrar una misión que coincida con<br>las condiciones que ingresaste.
+Caution,1,NotFoundRoomSearch,No se pudo encontrar una habitación que coincida con<br>las condiciones que ingresaste.
+Caution,1,NotFoundPartyList,No se pudo encontrar una fiesta.
+Caution,1,NotFoundQuestType,No hay misiones que aceptar.
+Caution,1,NotFoundQuestList,No hay misiones que aceptar.
+Caution,1,CantStartQuestNotFoundRoom,No se puede iniciar la misión porque<br>no se pudo encontrar la habitación objetivo.
+Caution,1,CantStartQuestCapacityOverRoom,No se puede unir porque la sala está llena.
+Caution,1,CantStartQuestCapacityOverRoom2,No se puede unir porque la sala está llena.
+Caution,1,CantStartQuestNewRaidQuest,La misión no se puede aceptar porque los miembros del grupo<br>no han derrotado a los enemigos en las Condiciones de unión.
+Caution,1,CantStartQuestNotNotFoundParty,No se puede iniciar la misión porque no se pudo encontrar el grupo objetivo <br>.
+Caution,1,CantStartQuestCapacityOverParty,No puedo unirme porque la fiesta está llena.
+Caution,1,CantStartQuestDifferencePasswordParty,No se puede unir porque la contraseña es incorrecta.
+Caution,1,CantStartQuestAlreadyFinished,No se puede unir a esta misión porque este grupo<br>ya la completó.
+Caution,1,CautionNotSoloParty,No puedes transferirte a otro bloque porque actualmente estás<br>en un grupo.
+Caution,1,CantStartQuestDifferenceCondition,No puedes unirte al grupo porque no cumples con las<br>Condiciones para unirte.
+Caution,1,CantStartQuestDifferenceConditionLine1,No puedes unirte a un grupo o aceptar una misión<br>debido a los siguientes motivos:<br><br> - $(0)
+Caution,1,CantStartQuestDifferenceConditionLine2,No puedes unirte a un grupo o aceptar una misión<br>debido a los siguientes motivos:<br><br> - $(0)<br>- $(1)
+Caution,1,CantStartQuestDifferenceConditionLine3,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)
+Caution,1,CantStartQuestDifferenceConditionLine4,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CantStartQuestDifferenceConditionLine5,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CantStartQuestDifferenceConditionLine6,wing reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
+Caution,1,CantStartQuestDifferenceConditionLine7,reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)
+Caution,1,CantStartQuestDifferenceConditionLine8,ns:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)
+Caution,1,QuestLevel,<pict mainclass_icon> Nivel $(0) y superior
+Caution,1,PartyLevel,Condiciones para unirse al grupo: Nivel $(1) a $(0)
+Caution,1,FriendOnly,Sólo amigos
+Caution,1,GuildOnly,Sólo miembros de la Alianza
+Caution,1,PasswordNG,Contraseña incorrecta
+Caution,1,BurstIntoNG,Unirse parcialmente a esta misión está restringido
+Caution,1,ReasonEventFlag,Condiciones Especiales de Aceptación
+Caution,1,RareAreaNG,La fiesta está en un área especial.
+Caution,1,CantStartQuestTimeLimitOver,La misión ya no se puede aceptar
+Caution,1,CapacityOverParty,Restricciones de número de partido
+Caution,1,PlatformError,Restricciones de plataforma
+Caution,1,RaidQuestDisable,Unirse a la condición de enemigos no derrotados
+Caution,1,NotFoundPartyListtInBasnet,No se pudo encontrar una fiesta.
+Caution,1,CantStartQuestClearCountLimit,No se pudo encontrar una fiesta.
+Caution,1,QuestSubLevel,<pict subclass_icon> Nivel $(0) y superior
+Caution,1,ClearCountLimit,Has excedido el máximo de borrados para esta misión.
+Caution,1,CantStartQuestIgnoreQuest,Esta misión no se puede aceptar en este momento.<br>Consulte el sitio del jugador para obtener más detalles.
+Caution,1,IgnoreQuest,Esta misión no se puede aceptar en este momento.<br>Consulte el sitio del jugador para obtener más detalles.
+Caution,1,QuestDropPenalty,"Uno o más miembros tienen una ""penalización por abandono""."
+Caution,1,CantStartQuestDropPenalty,"Uno o más miembros tienen una ""penalización por abandono""."
+Caution,1,CantStartProhibitQuestDropTitleCnt,TERMINAL DEL MENÚ DE ACEPTACIÓN DE MISIONES
+Caution,1,CantStartProhibitQuestDropTitleTlp,TELEPORTADOR
+Caution,1,CantStartProhibitQuestDropForStart,Esto no está disponible actualmente.
+Caution,1,TitleConfirmForQuest,CONFIRMAR ACEPTACIÓN DE MISIÓN
+Caution,1,CautionNon,Error desconocido
+Caution,1,CautionQuestLimitTimeOver,La misión ya no se puede aceptar.
+Caution,1,CautionQuestLevelNG,No has cumplido las condiciones requeridas para esta misión.
+Caution,1,CautionQuestLevelNG2,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - Nivel $(0) y superior
+Caution,1,CautionQuestPartyMemberMax,No puedes aceptar esta misión porque el Partido tiene más de<br>$(0) miembros.
+Caution,1,CautionQuestPartyMemberJoinMax,No puedes unirte a este grupo porque está en medio de una misión<br>que solo permite unirse a miembros de $(0).
+Caution,1,CautionQuestPlatform,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)
+Caution,1,CautionQuestRaidQuest,No puedes aceptar esta misión porque no has cumplido las<br>condiciones requeridas.
+Caution,1,CautionMultiConditionLine1,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)
+Caution,1,CautionMultiConditionLine2,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)<br>- $(1)
+Caution,1,CautionMultiConditionLine3,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)<br>- $(1)<br>- $(2)
+Caution,1,CautionMultiConditionLine4,Et las condiciones a continuación.<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CautionMultiConditionLine5,Las condiciones a continuación.<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
+Caution,1,CautionQuestClearCountLimit,No puedes aceptar esta misión porque has alcanzado el número máximo de<br>veces que se puede completar esta misión.
+Caution,1,CautionNothingQuest,No existen misiones de este tipo.
+Caution,1,NotFoundQuestRecord,No hay registros de misiones.
+Caution,1,CantStartQuestNewNetCafeQuest,Un miembro del grupo no tiene Net Café Premium y no puede aceptar esta Misión.
+Caution,1,CantStartQuestOutExtraQuest,El período de campaña para esta misión ha finalizado. Por favor vuelva a aceptar.
+Caution,1,CantStartQuestInExtraQuest,Ahora se aplica un período de campaña a esta misión. Por favor vuelva a aceptar.
+Caution,1,CantStartCapacityOverInTraning,Lo intentaría de nuevo.<br><br> Nota: Las misiones de práctica se llevan a cabo en el bloque de desafío de su barco.
+Caution,1,LeavePenalty,No puedes aceptar la misión<br>debido a restricciones de emparejamiento.<br><br> Espere un poco y luego acepte la misión.
+Caution,1,Window_Main_Title,섰렰ⶊ驛
+ChallengeBuff,0,Window_List_Title,チャレンジ項目リスト
+ChallengeBuff,0,Challenge_Buff_Bonus1,<c 76d1ff>スコア倍率<c>
+ChallengeBuff,0,Challenge_Buff_Bonus2,<yellow>＋$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_Bonus2_Minus,<yellow>－$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_Bonus3,<c 76d1ff>クリア難度倍率：<c>
+ChallengeBuff,0,Challenge_Buff_Bonus4,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_Bonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus1,<yellow>スコア倍率<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus2,<yellow>＋$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus2_Minus,<yellow>－$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus3,<yellow>合計クリア難度倍率：<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus4,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank1,<yellow>到達可能クエストクリアランク：<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank2,<yellow>$(0)<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_S,Ｓ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_A,Ａ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_B,Ｂ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_C,Ｃ
+ChallengeBuff,0,Window_Main_Button_Add1,チャレンジを追加する
+ChallengeBuff,0,Window_Main_Button_Add2,（あと$(0)枠追加可能）
+ChallengeBuff,0,Window_Main_Button_Clear,設定を初期化する
+ChallengeBuff,0,Window_Main_Button_Load,以前の設定を読み込む
+ChallengeBuff,0,Dialog_Reset_Title,設定のリセット確認
+ChallengeBuff,0,Dialog_Reset_Message,編集中のチャレンジ設定をリセットします。<br>よろしいですか？
+ChallengeBuff,0,Window_Load_Menu1,前回の設定を読み込む
+ChallengeBuff,0,Window_Load_Menu2,ハイスコア(ソロ)達成時の設定を読み込む
+ChallengeBuff,0,Window_Load_Menu3,ハイスコア(パーティー)達成時の設定を読み込む
+ChallengeBuff,0,Dialog_Load_Title,設定の読み込み確認
+ChallengeBuff,0,Dialog_Load_Message,編集中の設定が上書きされます。<br>よろしいですか？
+ChallengeBuff,0,Challenge_Buff_Error1,類似のチャレンジ項目は重複して選択できません。
+ChallengeBuff,0,Challenge_Buff_Error2,効果が合計で$(0)個を超えるため、選択できません。
+ChallengeBuff,0,Window_Guide_Message,効果が合計で$(0)個を超えるため、選択できません。
+ChallengeBuff,0,Window_Guide_Message2,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。
+ChallengeBuff,0,Window_List_Tab_Popup_All,すべてのチャレンジ
+ChallengeBuff,0,Window_List_Tab_Popup_1,エネミーHPアップ
+ChallengeBuff,0,Window_List_Tab_Popup_2,エネミー攻撃力アップ
+ChallengeBuff,0,Window_List_Tab_Popup_3,プレイヤー能力ダウン
+ChallengeBuff,0,Window_List_Tab_Popup_4,その他
+ChallengeBuff,0,Window_List_Tab_Popup_5,プレイヤー能力アップ
+ChallengeBuff,0,Window_Main_Title,Configuración del desafío
+ChallengeBuff,1,Window_List_Title,Lista de desafíos
+ChallengeBuff,1,Challenge_Buff_Bonus1,<c 76d1ff> Multiplicador de puntuación <c>
+ChallengeBuff,1,Challenge_Buff_Bonus2,<yellow> +$(0)% <c>
+ChallengeBuff,1,Challenge_Buff_Bonus2_Minus,<yellow> -$(0)% <c>
+ChallengeBuff,1,Challenge_Buff_Bonus3,<c 76d1ff> Multiplicador de dificultad clara: <c>
+ChallengeBuff,1,Challenge_Buff_Bonus4,<yellow> $(0)% <c>
+ChallengeBuff,1,Challenge_Buff_Bonus4_Minus,<yellow> $(0)％ <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus1,<yellow> Multiplicador de puntuación <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus2,<yellow> +$(0)% <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus2_Minus,<yellow> -$(0)% <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus3,<yellow> Multiplicador de dificultad total clara: <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus4,<yellow> $(0)% <c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus4_Minus,<yellow> $(0)％ <c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank1,<yellow> Rango de misión alcanzable: <c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank2,<yellow> $(0) <c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_S,S
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_A,A
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_B,B
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_C,do
+ChallengeBuff,1,Window_Main_Button_Add1,Agregar desafíos
+ChallengeBuff,1,Window_Main_Button_Add2,($(0) más disponible)
+ChallengeBuff,1,Window_Main_Button_Clear,Restaurar la configuración predeterminada
+ChallengeBuff,1,Window_Main_Button_Load,Cargar configuración anterior
+ChallengeBuff,1,Dialog_Reset_Title,Confirmar restablecer configuración
+ChallengeBuff,1,Dialog_Reset_Message,La configuración del desafío se restablecerá.<br>¿Está seguro de que desea continuar?
+ChallengeBuff,1,Window_Load_Menu1,Cargar configuración anterior
+ChallengeBuff,1,Window_Load_Menu2,Cargar configuración de puntuación más alta (Solo)
+ChallengeBuff,1,Window_Load_Menu3,Cargar configuración de puntuación más alta (grupo)
+ChallengeBuff,1,Dialog_Load_Title,CONFIRMAR
+ChallengeBuff,1,Dialog_Load_Message,Esto sobrescribirá la configuración que se haya modificado.<br>¿Está seguro de que desea continuar?
+ChallengeBuff,1,Challenge_Buff_Error1,No se pueden seleccionar varios desafíos similares.
+ChallengeBuff,1,Challenge_Buff_Error2,No se puede seleccionar porque el efecto total excede $(0).
+ChallengeBuff,1,Window_Guide_Message,No se puede seleccionar porque el efecto total excede $(0).
+ChallengeBuff,1,Window_Guide_Message2,Cambiar las habilidades de los enemigos y de los jugadores afectará el nivel de dificultad de la misión.
+ChallengeBuff,1,Window_List_Tab_Popup_All,Todos los desafíos
+ChallengeBuff,1,Window_List_Tab_Popup_1,HP del enemigo aumentado
+ChallengeBuff,1,Window_List_Tab_Popup_2,Ataque enemigo
+ChallengeBuff,1,Window_List_Tab_Popup_3,Habilidad del jugador hacia abajo
+ChallengeBuff,1,Window_List_Tab_Popup_4,Varios.
+ChallengeBuff,1,Window_List_Tab_Popup_5,Habilidad del jugador aumentada
+ChallengeBuff,1,Window_Titletelop,Aceptación de desafíos
+NpcCounter,0,Window_TwolineGuide,受注したいクエストを選んでください。
+NpcCounter,0,Window_Main_Title,クエストメニュー
+NpcCounter,0,Exit_NpcCounter,クエストカウンターを出る
+NpcCounter,0,NpcCounter_Category1,期間限定クエスト
+NpcCounter,0,NpcCounter_Category2,アークスヒストリー：メインストーリー
+NpcCounter,0,NpcCounter_Category3,常設クエスト
+NpcCounter,0,NpcCounter_Category4,アークスヒストリー：その他
+NpcCounter,0,NpcCounter_Category_0,期間限定クエスト
+NpcCounter,0,NpcCounter_Category_1,トリガークエスト
+NpcCounter,0,NpcCounter_Category_2,アークスヒストリー：メインストーリー
+NpcCounter,0,NpcCounter_Category_3,アークスヒストリー：その他
+NpcCounter,0,NpcCounter_Category_4,スタンダードデュエル
+NpcCounter,0,NpcCounter_Category_5,ルシエル探索
+NpcCounter,0,NpcCounter_Category_6,タイムエクステンションクエスト
+NpcCounter,0,NpcCounter_Category_7,ネームレスシティ探索
+NpcCounter,0,NpcCounter_Category_10,デュエルクエスト
+NpcCounter,0,NpcCounter_Category_20,その他
+NpcCounter,0,NpcCounter_Category_11,エクストラデュエル：虚構の光芒
+NpcCounter,0,NpcCounter_Category_12,ヴァリアスクエスト
+NpcCounter,0,NpcCounter_Category_13,オルタレルム探索
+NpcCounter,0,NpcCounter_Category_30,オルタレルム探索
+NpcCounter,0,NpcCounter_Category_14,迎撃セクション
+NpcCounter,0,NpcCounter_Category_15,戦闘セクション
+NpcCounter,0,NpcCounter_Category_17,分岐界域探索
+NpcCounter,0,NpcCounter_Error1,受注可能なクエストはありません。
+NpcCounter,0,Arkshistory_TwolineGuide,クリアしたストーリークエストを再度プレイすることができます。
+NpcCounter,0,Window_QuestSelect_Title,クエスト選択
+NpcCounter,0,Window_QuestSelect_Chapter,$(0)章
+NpcCounter,0,Window_QuestSelect_FirstChapter,序章
+NpcCounter,0,Window_QuestSelect_FilterMenu,$(1).$(0)
+NpcCounter,0,Filter_Category_All,すべて表示
+NpcCounter,0,Filter_Category_1,ストーリークエスト
+NpcCounter,0,Filter_Category_2,サイドストーリー
+NpcCounter,0,Filter_Category_3,シーン再生
+NpcCounter,0,Filter_Category_4,シーズナルクエスト
+NpcCounter,0,Filter_Category_5,期間限定トリガークエスト
+NpcCounter,0,Filter_Category_6,トリガークエスト
+NpcCounter,0,Filter_Category_7,緊急クエスト
+NpcCounter,0,Filter_Category_8,トレイニア
+NpcCounter,0,Filter_Category_9,通常クエスト
+NpcCounter,0,Filter_Trigger_Category_Prize,バトルディア：イエロー
+NpcCounter,0,Filter_Trigger_Category_Colosseo,バトルディア：パープル
+NpcCounter,0,Filter_Trigger_Category_Region_111,想定演習：エアリオ
+NpcCounter,0,Filter_Trigger_Category_Region_112,想定演習：リテム
+NpcCounter,0,Filter_Trigger_Category_Region_113,想定演習：クヴァリス
+NpcCounter,0,Filter_Trigger_Category_Region_114,想定演習：スティア
+NpcCounter,0,Dialog_Play_Scene_Title,シーン再生確認
+NpcCounter,0,Dialog_Play_Scene_Text,シーンを再生します。<br>よろしいですか？
+NpcCounter,0,Category_AddText,ショートエピソード
+NpcCounter,0,Category_Misc,その他
+NpcCounter,0,NpcCounter_BoostOccurrence,ブースト効果あり
+NpcCounter,0,NpcCounter_Category_16,エクストラデュエル：星崩の猛攻
+NpcCounter,0,Window_Titletelop,Contador de misiones
+NpcCounter,1,Window_TwolineGuide,Seleccione las misiones que le gustaría aceptar.
+NpcCounter,1,Window_Main_Title,Menú de misiones
+NpcCounter,1,Exit_NpcCounter,Salir del contador de misiones
+NpcCounter,1,NpcCounter_Category1,Misiones por tiempo limitado
+NpcCounter,1,NpcCounter_Category2,Las crónicas de ARKS: historia principal
+NpcCounter,1,NpcCounter_Category3,Misiones permanentes
+NpcCounter,1,NpcCounter_Category4,Las crónicas de ARKS: otro
+NpcCounter,1,NpcCounter_Category_0,Misiones por tiempo limitado
+NpcCounter,1,NpcCounter_Category_1,Misiones desencadenantes
+NpcCounter,1,NpcCounter_Category_2,Las crónicas de ARKS: historia principal
+NpcCounter,1,NpcCounter_Category_3,Las crónicas de ARKS: otro
+NpcCounter,1,NpcCounter_Category_4,Duelos estándar
+NpcCounter,1,NpcCounter_Category_5,Exploración Leciel
+NpcCounter,1,NpcCounter_Category_6,Misiones de extensión de tiempo
+NpcCounter,1,NpcCounter_Category_7,Exploración de la ciudad sin nombre
+NpcCounter,1,NpcCounter_Category_10,Misiones de duelo
+NpcCounter,1,NpcCounter_Category_20,Otro
+NpcCounter,1,NpcCounter_Category_11,Duelo Extra: Rayo Ficticio
+NpcCounter,1,NpcCounter_Category_12,Varias misiones
+NpcCounter,1,NpcCounter_Category_13,Alterar la exploración del reino
+NpcCounter,1,NpcCounter_Category_30,Alterar la exploración del reino
+NpcCounter,1,NpcCounter_Category_14,Sectores de interceptación
+NpcCounter,1,NpcCounter_Category_15,Sectores de combate
+NpcCounter,1,NpcCounter_Category_17,Exploración del Reino Astilla
+NpcCounter,1,NpcCounter_Error1,No hay misiones que aceptar.
+NpcCounter,1,Arkshistory_TwolineGuide,Vuelve a reproducir las misiones de historia completadas.
+NpcCounter,1,Window_QuestSelect_Title,Seleccionar misión
+NpcCounter,1,Window_QuestSelect_Chapter,Cap. $(0)
+NpcCounter,1,Window_QuestSelect_FirstChapter,Prólogo
+NpcCounter,1,Window_QuestSelect_FilterMenu,$(1). $(0)
+NpcCounter,1,Filter_Category_All,Mostrar todo
+NpcCounter,1,Filter_Category_1,Misiones de historia
+NpcCounter,1,Filter_Category_2,Historias paralelas
+NpcCounter,1,Filter_Category_3,Reproducir escenas
+NpcCounter,1,Filter_Category_4,Misiones de temporada
+NpcCounter,1,Filter_Category_5,Misiones desencadenantes por tiempo limitado
+NpcCounter,1,Filter_Category_6,Misiones desencadenantes
+NpcCounter,1,Filter_Category_7,Misiones urgentes
+NpcCounter,1,Filter_Category_8,trenia
+NpcCounter,1,Filter_Category_9,Misiones normales
+NpcCounter,1,Filter_Trigger_Category_Prize,Battledia: Amarillo
+NpcCounter,1,Filter_Trigger_Category_Colosseo,Battledia: Púrpura
+NpcCounter,1,Filter_Trigger_Category_Region_111,Taladro: Aelio
+NpcCounter,1,Filter_Trigger_Category_Region_112,Ejercicio: Retem
+NpcCounter,1,Filter_Trigger_Category_Region_113,Ejercicio: Kvaris
+NpcCounter,1,Filter_Trigger_Category_Region_114,Taladro: Stia
+NpcCounter,1,Dialog_Play_Scene_Title,Confirmar repetición de escena
+NpcCounter,1,Dialog_Play_Scene_Text,Se reproducirá la escena. ¿Desea continuar?
+NpcCounter,1,Category_AddText,Miniepisodios
+NpcCounter,1,Category_Misc,Otro
+NpcCounter,1,NpcCounter_BoostOccurrence,Efecto potenciador activo
+NpcCounter,1,NpcCounter_Category_16,Duelo extra: Golpe de caída del planeta

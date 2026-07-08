@@ -1,0 +1,16 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+Basic,0,Title,戦変万花のエネミー掃討戦'24
+Basic,0,Explanation,西エアリオのクライアノ断崖で、強力なエネミーの反応が複数確認された。<br>大型のフォーマーズと目されるが、通常とは異なるスペクトルが見られる。<br>アークス各員は不測の事態に警戒しつつ、エネミーを殲滅せよ。
+Basic,1,Title,Operación de limpieza Ráfaga de flores '24
+Basic,1,Explanation,洀椀攀猀⸀
+QuestTarget,0,SimpleExplanation,全てのエネミーを撃破せよ！
+QuestTarget,1,SimpleExplanation,¡Derrota a todos los enemigos!
+FailureCondition,0,f0,30:00以上経過する<br>指定トライアルの失敗
+FailureCondition,1,f0,El tiempo excede los 30 minutos<br>Fallo de la prueba designada
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+TrialBeginDetail,0,normalMsg_1340170,全てのエネミーを倒す
+TrialBeginDetail,1,normalMsg_1340170,Derrota a todos los enemigos.

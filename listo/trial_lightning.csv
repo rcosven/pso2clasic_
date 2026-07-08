@@ -1,0 +1,14 @@
+﻿section,group,id,text
+common,0,TrialName,強雷域エネミー討伐
+common,0,TrialBeginMsg,特異現象下でエネミーを撃破せよ！<br>トライアル成功時：“$(0)”獲得
+common,0,TrialAbstract,$(0)を倒す<br>獲得能力強化：<br>$(1)
+common,1,TrialName,Supresión enemiga de tormentas eléctricas
+common,1,TrialBeginMsg,"¡Derrota al enemigo bajo fenómenos especiales!<br>Cuando la prueba es exitosa: se obtuvo ""$(0)"""
+common,1,TrialAbstract,Derrota $(0)<br>Obtén mejora de habilidad:<br>$(1)
+type103,0,NpcComOnBegin,大型エネミーの反応を確認。<br>同時に、強雷も発生。警戒してください。
+type103,0,NpcComOnBegin2,関連は不明ですが、天候が変化しています。<br>落雷に注意してください！
+type103,0,NpcComOnSuccess,エネミーの殲滅を確認。
+type103,0,NpcComOnFailure,エネミーの反応消失……。
+type103,1,NpcComOnBegin,Enemigo poderoso confirmado.<br>También se avecina una tormenta. Ten cuidado ahí fuera.
+type103,1,NpcComOnSuccess,¡Aniquilación enemiga confirmada!
+type103,1,NpcComOnFailure,La lectura enemiga ha desaparecido...

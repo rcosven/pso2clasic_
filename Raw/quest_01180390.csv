@@ -1,0 +1,16 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+Basic,0,Title,星砕の暴進
+Basic,0,Explanation,北クヴァリス周辺で、“ダークファルス・ソウラス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Basic,0,Explanation_r2,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Basic,1,Title,Bombardeo aplastaplanetas
+Basic,1,Explanation,搀攀爀猀Ⰰ 爀攀瀀漀爀琀 琀漀 琀栀攀 攀洀攀爀最攀渀挀攀 瀀漀椀渀琀 椀洀洀攀搀椀愀琀攀氀礀 琀漀 攀氀椀洀椀渀愀琀攀 琀栀椀猀 甀渀欀渀漀眀渀 洀攀渀愀挀攀⸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀䄀猀猀椀猀琀 一倀䌀猀 挀愀渀渀漀琀 瀀愀爀琀椀挀椀瀀愀琀攀⸀㰀挀㸀
+Basic,1,Explanation_r2,no puede participar. <c>
+FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
+FailureCondition,1,f0,Quedar incapacitado 5 veces<br>Exceder el límite de tiempo
+QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
+QuestTarget,1,SimpleExplanation,Derrota a Dark Falz Dalion
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.

@@ -1,0 +1,16 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AreaName,0,Area0S,想定演習：強化エネミー討伐連戦
+AreaName,0,Area0L,想定演習：強化エネミー討伐連戦
+AreaName,1,Area0S,Ejercicio: Serie de supresión enemiga mejorada
+AreaName,1,Area0L,Ejercicio: Serie de supresión enemiga mejorada
+Basic,0,Title,想定演習：強化エネミー討伐連戦
+Basic,0,Explanation,これは、バトルデータをもとに、能力を向上させたエネミーとの想定演習である。<br>現在の設定では、能力の強化された複数のエネミーとの戦闘が体験できる。<br>――――――――――――――――――――――――――――――――――――――――<br><yellow>※エネミー能力強化：エネミーごとに個別設定
+Basic,1,Title,Ejercicio: Serie de supresión enemiga mejorada
+Basic,1,Explanation,Te permite probar suerte contra múltiples enemigos.<br><yellow> *Mejoras de habilidades enemigas: varía según el enemigo <c>
+QuestTarget,0,SimpleExplanation,全てのエネミーを倒す
+QuestTarget,1,SimpleExplanation,Derrota a todos los enemigos
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.

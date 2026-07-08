@@ -1,0 +1,16 @@
+﻿section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+Basic,0,Title,星砕の暴進
+Basic,0,Explanation,なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Basic,0,Explanation_r2,r>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Basic,1,Title,Bombardeo aplastaplanetas
+Basic,1,Explanation,ders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>Assist NPCs cannot participate.<c>
+Basic,1,Explanation_r2,no puede participar. <c>
+FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
+FailureCondition,1,f0,Quedar incapacitado 5 veces<br>Exceder el límite de tiempo
+QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
+QuestTarget,1,SimpleExplanation,Derrota a Dark Falz Dalion
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota a los enemigos objetivo.

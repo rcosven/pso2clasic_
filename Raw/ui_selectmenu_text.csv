@@ -1,0 +1,853 @@
+section,group,id,text
+ActiveStatus,0,ActiveStatus_Title,フレンドメッセージ変更
+ActiveStatus,0,ActiveStatus_Info,相手のフレンドリストに表示するメッセージです。<br>「決定」ボタンを押すことで登録されます。<br><br>ゲームからログアウトすると<br>フレンドメッセージは表示されなくなります。<br>再び登録する場合はログインごとに<br>「決定」ボタンを押してください。
+ActiveStatus,0,ActiveStatus_Comment,フレンドメッセージ
+ActiveStatus,0,ActiveStatus_Send,決定
+ActiveStatus,0,ActiveStatus_Cancell,キャンセル
+ActiveStatus,0,ActiveStatus_PartyNum,$(0)／$(1)
+ActiveStatus,0,ActiveStatus_ApcNum,(<pict apc_icon> $(0)人)
+ActiveStatus,0,ActiveStatus_Connecting,通信中…
+ActiveStatus,0,ActiveStatus_Error,メッセージに<br>使用できない文字が含まれています。
+ActiveStatus,0,ActiveStatus_SendMessage,メッセージを登録しました。
+ActiveStatus,1,ActiveStatus_Title,CAMBIAR MENSAJES DE AMIGOS
+ActiveStatus,1,ActiveStatus_Info,en.
+ActiveStatus,1,ActiveStatus_Comment,Mensajes de amigos
+ActiveStatus,1,ActiveStatus_Send,DE ACUERDO
+ActiveStatus,1,ActiveStatus_Cancell,Cancelar
+ActiveStatus,1,ActiveStatus_PartyNum,$(0)/$(1)
+ActiveStatus,1,ActiveStatus_ApcNum,(<pict apc_icon>$(0))
+ActiveStatus,1,ActiveStatus_Connecting,Envío...
+ActiveStatus,1,ActiveStatus_Error,El mensaje contiene caracteres prohibidos.
+ActiveStatus,1,ActiveStatus_SendMessage,Mensaje registrado.
+CameraCommand,0,Camera_Title,カメラ選択
+CameraCommand,0,Menu_Normal,通常カメラ
+CameraCommand,0,Menu_Camera1,固定カメラ1
+CameraCommand,0,Menu_Camera2,固定カメラ2
+CameraCommand,0,Menu_Camera3,固定カメラ3
+CameraCommand,0,Pop_ChangeCamera,使用する
+CameraCommand,0,Pop_ChangeAngle,アングル変更
+CameraCommand,0,Info_ChangeCamera,$(0)に<br>新しいカメラアングルを保存します。<br>よろしいですか？
+CameraCommand,0,Message_ChangeCamera,$(0)に新しいカメラアングルを保存しました。
+CameraCommand,0,Message_ExitEditingCamera,カメラの編集モードが解除されました。
+CameraCommand,0,FreeCamera_CameraGuideSave,カメラ保存：
+CameraCommand,0,FreeCamera_CameraGuide_Angle,カメラ旋回：
+CameraCommand,0,FreeCamera_CameraGuide_Move,カメラ移動：
+CameraCommand,0,FreeCamera_CameraGuide_Height,カメラ高さ：
+CameraCommand,0,FreeCamera_CameraGuide_Rotate,カメラ回転：
+CameraCommand,0,FreeCamera_CameraGuide_Zoom,ズーム：
+CameraCommand,0,FreeCamera_CameraGuideReset,カメラリセット：
+CameraCommand,0,FreeCamera_CameraGuideResetVita,カメラリセット：
+CameraCommand,0,FreeCamera_CameraGuideCancel,戻る：
+CameraCommand,0,FreeCamera_CameraGuideSave_key,<%Decide>
+CameraCommand,0,FreeCamera_CameraGuide_Angle_key,マウス移動
+CameraCommand,0,FreeCamera_CameraGuide_Move_key,<%MultiSelect>＋<%MoveForward>/<%MoveBack>/<%MoveLeft>/<%MoveRight>
+CameraCommand,0,FreeCamera_CameraGuide_Height_key,<%MoveForward>/<%MoveBack>
+CameraCommand,0,FreeCamera_CameraGuide_Rotate_key,<%MoveLeft>/<%MoveRight>
+CameraCommand,0,FreeCamera_CameraGuide_Zoom_key,<%PaletteForce>/<%PaletteReverse>
+CameraCommand,0,FreeCamera_CameraGuideReset_key,<%NextTabDetails>
+CameraCommand,0,FreeCamera_CameraGuideResetVita_key,<%AllWindowClose>
+CameraCommand,0,FreeCamera_CameraGuideCancel_key,<%Cancel>/Esc
+CameraCommand,0,FreeCamera_CameraGuideSave_pad,<%Decide>
+CameraCommand,0,FreeCamera_CameraGuide_Angle_pad,<%RStick>
+CameraCommand,0,FreeCamera_CameraGuide_Move_pad,<%MultiSelect>＋<%LStick>
+CameraCommand,0,FreeCamera_CameraGuide_Height_pad,<%LStick>(上下)
+CameraCommand,0,FreeCamera_CameraGuide_Rotate_pad,<%LStick>(左右)
+CameraCommand,0,FreeCamera_CameraGuide_Zoom_pad,<%PaletteForce>/<%PaletteReverse>
+CameraCommand,0,FreeCamera_CameraGuideReset_pad,<%NextTabDetails>
+CameraCommand,0,FreeCamera_CameraGuideResetVita_pad,<%AllWindowClose>
+CameraCommand,0,FreeCamera_CameraGuideCancel_pad,<%Cancel>
+CameraCommand,0,CameraLight_Title,カメラ/ライト選択
+CameraCommand,0,Menu_Camera4,固定カメラ4<pict 4space><pict Arcscash>
+CameraCommand,0,Menu_Camera5,固定カメラ5<pict 4space><pict Arcscash>
+CameraCommand,0,Menu_Camera6,固定カメラ6<pict 4space><pict Arcscash>
+CameraCommand,0,Menu_NormalLight,通常ライト
+CameraCommand,0,Menu_FreeLightSetting,カスタムライト設定1<pict 4space><pict Arcscash>
+CameraCommand,0,Menu_FreeLightSetting2,カスタムライト設定2<pict 4space><pict Arcscash>
+CameraCommand,0,Menu_FreeLightSetting3,カスタムライト設定3<pict 4space><pict Arcscash>
+CameraCommand,0,Pop_UseFreeLight,使用する
+CameraCommand,0,Pop_ChangeFreeLight,設定変更
+CameraCommand,0,FreeLight_CameraGuideSave,ライト設置：
+CameraCommand,0,Title_1,カスタムライト設定1
+CameraCommand,0,Title_2,カスタムライト設定2
+CameraCommand,0,Title_3,カスタムライト設定3
+CameraCommand,0,Title_ColorPicker,カラー調整
+CameraCommand,0,Title_ChangeFreeLight1,ライト1設置
+CameraCommand,0,Title_ChangeFreeLight2,ライト2設置
+CameraCommand,0,Title_ChangeFreeLight3,ライト3設置
+CameraCommand,0,Headline_LightNum1,ライト1の調整
+CameraCommand,0,Headline_LightNum2,ライト2の調整
+CameraCommand,0,Headline_LightNum3,ライト3の調整
+CameraCommand,0,Headline_CamLight,カメラライト
+CameraCommand,0,Button_1,カラー調整
+CameraCommand,0,Button_2,位置調整
+CameraCommand,0,Button_3,すべて点灯
+CameraCommand,0,Button_4,すべて消灯
+CameraCommand,0,Button_5,すべて初期化
+CameraCommand,0,Button_6,決定
+CameraCommand,0,Button_7,キャンセル
+CameraCommand,0,Text_1,強さ
+CameraCommand,0,icon_on,<pict icon_light_on>
+CameraCommand,0,icon_off,<pict icon_light_off>
+CameraCommand,0,Button_Decide,決定
+CameraCommand,0,Button_Reset,初期化
+CameraCommand,0,Message_Initialization_all,すべての調整内容を初期化します。<br><br>よろしいですか？
+CameraCommand,0,Message_ChangeFreeLight,ライト$(0)を設置します。<br><br>よろしいですか？
+CameraCommand,0,Toast_ChangeFreeLight,ライト$(0)を設置しました。
+CameraCommand,0,Toast_ExitFreeLight,プレミアム有効期限が過ぎたため、設定はキャンセルされました。
+CameraCommand,0,Toast_ExitEditinglight,カスタムライトの設定モードが解除されました。
+CameraCommand,0,ErrorTitle_ShaderSetting,設定エラー
+CameraCommand,0,Error_ShaderSetting,カスタムライト設定は、シェーダー品質が<br>「高品質」の時のみ利用することができます。<br><br>ランチャー画面から環境設定を開き、<br>描画タブのシェーダー品質を変更してください。
+CameraCommand,0,Message_DiscardLightSettings,変更した内容を反映せずに終了します。<br>よろしいですか？
+CameraCommand,0,Selfie_OperationGuide,UI非表示：<%NextTabDetails>　　顔をカメラに向ける：<%Decide>　　視線をカメラに向ける：<%MultiSelect>+<%Decide>　　表情変更：<%TabForward>　　ロビーアクション：<%TabBack>　　ボタン派生：<%NextWidget>　　カメラ設定：<%ChangeCtrlWindowForward>　　キャンセル：<%Cancel>
+CameraCommand,0,Selfie_OperationGuide_Camera_Screenshot,スクリーンショット：
+CameraCommand,0,Selfie_OperationGuide_Camera_Move,カメラ移動：
+CameraCommand,0,Selfie_OperationGuide_Camera_Rotate,カメラ回転：
+CameraCommand,0,Selfie_OperationGuide_Camera_Zoom,ズーム：
+CameraCommand,0,Selfie_OperationGuide_Camera_Reset,カメラリセット：
+CameraCommand,0,Selfie_OperationGuide_Camera_Screenshot_Guide,<%Exception2>
+CameraCommand,0,Selfie_OperationGuide_Camera_Move_Guide,<%LStick>
+CameraCommand,0,Selfie_OperationGuide_Camera_Rotate_Guide,<%MultiSelect>＋<%LStick>
+CameraCommand,0,Selfie_OperationGuide_Camera_Zoom_Guide,<%PaletteForce>/<%PaletteReverse>
+CameraCommand,0,Selfie_OperationGuide_Camera_Reset_Guide,<%Exception>
+CameraCommand,0,Selfie_OperationGuide_Camera_Screenshot_Key_Guide,<%Exception2>
+CameraCommand,0,Selfie_OperationGuide_Camera_Move_Key_Guide,<%MoveForward>/<%MoveBack>/<%MoveLeft>/<%MoveRight>
+CameraCommand,0,Selfie_OperationGuide_Camera_Rotate_Key_Guide,<%MultiSelect>＋<%MoveLeft>/<%MoveRight>
+CameraCommand,0,Selfie_OperationGuide_Camera_Zoom_Key_Guide,<%PaletteForce>/<%PaletteReverse>
+CameraCommand,0,Selfie_OperationGuide_Camera_Reset_Key_Guide,<%Exception>
+CameraCommand,0,Selfie_FacialConfigWindow_Title,表情変更
+CameraCommand,0,Selfie_FacialConfigWindow_Detail,各表情は、エステ内の“表情カスタム”で、<br>細かく調整できます。
+CameraCommand,0,Selfie_FacialConfigWindow_Item1,通常
+CameraCommand,0,Selfie_FacialConfigWindow_Item2,笑顔
+CameraCommand,0,Selfie_FacialConfigWindow_Item3,怒り
+CameraCommand,0,Selfie_FacialConfigWindow_Item4,悲しみ
+CameraCommand,0,Selfie_FacialConfigWindow_Item5,不信感
+CameraCommand,0,Selfie_FacialConfigWindow_Item6,目閉じ
+CameraCommand,0,Selfie_FacialConfigWindow_Item7,通常(口パクなし)
+CameraCommand,0,Selfie_FacialConfigWindow_Item8,笑顔2
+CameraCommand,0,Selfie_FacialConfigWindow_Item9,ウィンク
+CameraCommand,0,Selfie_DepthoffieldWindow_Title,カメラ設定
+CameraCommand,0,Selfie_DepthoffieldWindow_Depthoffield,被写界深度
+CameraCommand,0,Selfie_DepthoffieldWindow_Depthoffield_Select1,使用しない
+CameraCommand,0,Selfie_DepthoffieldWindow_Depthoffield_Select2,使用する
+CameraCommand,0,Selfie_DepthoffieldWindow_Aperturevalue,絞り値（F値）
+CameraCommand,0,Selfie_DepthoffieldWindow_Focus,フォーカス対象
+CameraCommand,0,Selfie_DepthoffieldWindow_Focus_Select1,キャラクター
+CameraCommand,0,Selfie_DepthoffieldWindow_Focus_Select2,手動フォーカス
+CameraCommand,0,Selfie_DepthoffieldWindow_Focusvalue,ピント調節
+CameraCommand,0,Selfie_DepthoffieldWindow_Focusvalue_Balloon,10単位で変更：<%Decide>を押しながら<swguidetype T_ItemWarehouse>
+CameraCommand,0,Selfie_CameraWindow_TemporarySave,カメラ設定の一時保存
+CameraCommand,0,Selfie_CameraWindow_TemporarySave_Select1,使用しない
+CameraCommand,0,Selfie_CameraWindow_TemporarySave_Select2,使用する
+CameraCommand,0,Selfie_CameraWindow_TemporarySave_Balloon,ゲームを起動しているあいだのみカメラの位置と設定を保存
+CameraCommand,0,Selfie_StopActionWindow_Title1,ロビーアクションの停止<pict Arcscash>
+CameraCommand,0,Selfie_StopActionWindow_Item1,ロビーアクションの停止
+CameraCommand,0,Selfie_StopActionWindow_Head1,停止タイミング
+CameraCommand,0,Selfie_StopActionWindow_Detail1,“完全停止”に設定した場合は、他プレイヤーからは動いて見えます。
+CameraCommand,0,Selfie_StopActionWindow_Detail2,ロビーアクションを停止するタイミングを選択してください。
+CameraCommand,0,Selfie_StopActionWindow_Selector1,使用しない
+CameraCommand,0,Selfie_StopActionWindow_Selector2,10秒間停止
+CameraCommand,0,Selfie_StopActionWindow_Selector3,完全停止
+CameraCommand,0,Selfie_StopActionWindow_StopTime_Balloon,0.5秒単位で変更：<%Decide>を押しながら<swguidetype T_ItemWarehouse>
+CameraCommand,0,Selfie_StopActionWindow_StopTime_Disabled,このロビーアクションは、“ロビーアクションの停止”に対応していません。
+CameraCommand,0,Selfie_CameraWindow_Parameter_Title,カメラ設定値の表示
+CameraCommand,0,Selfie_CameraWindow_Parameter_Select1,表示しない
+CameraCommand,0,Selfie_CameraWindow_Parameter_Select2,表示する
+CameraCommand,0,Selfie_CameraWindow_Parameter_Balloon,カメラの位置などの設定値を表示
+CameraCommand,0,Selfie_ParameterWindow_Camera_Fovy,視野角（ズーム）
+CameraCommand,0,Selfie_ParameterWindow_Camera_Roll,回転
+CameraCommand,0,Selfie_ParameterWindow_Camera_Offset,オフセット
+CameraCommand,0,Selfie_ParameterWindow_Camera_AngleUD,上下角
+CameraCommand,0,Selfie_ParameterWindow_Camera_AngleLR,左右角
+CameraCommand,1,Camera_Title,SELECCIONAR CÁMARA
+CameraCommand,1,Menu_Normal,Cámara normal
+CameraCommand,1,Menu_Camera1,Cámara fija 1
+CameraCommand,1,Menu_Camera2,Cámara fija 2
+CameraCommand,1,Menu_Camera3,Cámara fija 3
+CameraCommand,1,Pop_ChangeCamera,Usar
+CameraCommand,1,Pop_ChangeAngle,Cambiar ángulo
+CameraCommand,1,Info_ChangeCamera,Se guardará un nuevo ángulo de cámara por $(0).<br>¿Está seguro de que desea continuar?
+CameraCommand,1,Message_ChangeCamera,Se guardó un nuevo ángulo de cámara por $(0).
+CameraCommand,1,Message_ExitEditingCamera,El modo de edición de cámara ha sido desbloqueado.
+CameraCommand,1,FreeCamera_CameraGuideSave,Guardar cámara:
+CameraCommand,1,FreeCamera_CameraGuide_Angle,Giro de cámara:
+CameraCommand,1,FreeCamera_CameraGuide_Move,Movimiento de cámara:
+CameraCommand,1,FreeCamera_CameraGuide_Height,Altura de la cámara:
+CameraCommand,1,FreeCamera_CameraGuide_Rotate,Rotación de cámara:
+CameraCommand,1,FreeCamera_CameraGuide_Zoom,Zoom:
+CameraCommand,1,FreeCamera_CameraGuideReset,Restablecimiento de la cámara:
+CameraCommand,1,FreeCamera_CameraGuideResetVita,Restablecimiento de la cámara:
+CameraCommand,1,FreeCamera_CameraGuideCancel,Cancelar:
+CameraCommand,1,FreeCamera_CameraGuideSave_key,<%Decide>
+CameraCommand,1,FreeCamera_CameraGuide_Angle_key,Movimiento del mouse
+CameraCommand,1,FreeCamera_CameraGuide_Move_key,<%MultiSelect> +<%MoveForward>/<%MoveBack>/<%MoveLeft>/ <%MoveRight>
+CameraCommand,1,FreeCamera_CameraGuide_Height_key,<%MoveForward> / <%MoveBack>
+CameraCommand,1,FreeCamera_CameraGuide_Rotate_key,<%MoveLeft> / <%MoveRight>
+CameraCommand,1,FreeCamera_CameraGuide_Zoom_key,<%PaletteForce> / <%PaletteReverse>
+CameraCommand,1,FreeCamera_CameraGuideReset_key,<%NextTabDetails>
+CameraCommand,1,FreeCamera_CameraGuideResetVita_key,<%AllWindowClose>
+CameraCommand,1,FreeCamera_CameraGuideCancel_key,<%Cancel> /Esc
+CameraCommand,1,FreeCamera_CameraGuideSave_pad,<%Decide>
+CameraCommand,1,FreeCamera_CameraGuide_Angle_pad,<%RStick>
+CameraCommand,1,FreeCamera_CameraGuide_Move_pad,<%MultiSelect> + <%LStick>
+CameraCommand,1,FreeCamera_CameraGuide_Height_pad,<%LStick> (arriba y abajo)
+CameraCommand,1,FreeCamera_CameraGuide_Rotate_pad,<%LStick> (Izquierda y derecha)
+CameraCommand,1,FreeCamera_CameraGuide_Zoom_pad,<%PaletteForce> / <%PaletteReverse>
+CameraCommand,1,FreeCamera_CameraGuideReset_pad,<%NextTabDetails>
+CameraCommand,1,FreeCamera_CameraGuideResetVita_pad,<%AllWindowClose>
+CameraCommand,1,FreeCamera_CameraGuideCancel_pad,<%Cancel>
+CameraCommand,1,CameraLight_Title,SELECCIONAR CÁMARA/LUZ
+CameraCommand,1,Menu_Camera4,Cámara fija 4 <pict Arcscash>
+CameraCommand,1,Menu_Camera5,Cámara fija 5 <pict Arcscash>
+CameraCommand,1,Menu_Camera6,Cámara fija 6 <pict Arcscash>
+CameraCommand,1,Menu_NormalLight,Luz normal
+CameraCommand,1,Menu_FreeLightSetting,Configuración de luz personalizada 1 <pict Arcscash>
+CameraCommand,1,Menu_FreeLightSetting2,Configuración de luz personalizada 2 <pict Arcscash>
+CameraCommand,1,Menu_FreeLightSetting3,Configuración de luz personalizada 3 <pict Arcscash>
+CameraCommand,1,Pop_UseFreeLight,Permitir
+CameraCommand,1,Pop_ChangeFreeLight,Cambiar configuración
+CameraCommand,1,FreeLight_CameraGuideSave,Configuración de luces:
+CameraCommand,1,Title_1,AJUSTE DE LUZ PERSONALIZADO 1
+CameraCommand,1,Title_2,AJUSTE DE LUZ PERSONALIZADO 2
+CameraCommand,1,Title_3,AJUSTE DE LUZ PERSONALIZADO 3
+CameraCommand,1,Title_ColorPicker,AJUSTE DE COLOR
+CameraCommand,1,Title_ChangeFreeLight1,CONFIGURACIÓN DE LA LUZ 1
+CameraCommand,1,Title_ChangeFreeLight2,CONFIGURACIÓN DE LA LUZ 2
+CameraCommand,1,Title_ChangeFreeLight3,CONFIGURACIÓN DE LA LUZ 3
+CameraCommand,1,Headline_LightNum1,Ajustar la luz 1
+CameraCommand,1,Headline_LightNum2,Ajustar la luz 2
+CameraCommand,1,Headline_LightNum3,Ajustar la luz 3
+CameraCommand,1,Headline_CamLight,Luz de la cámara
+CameraCommand,1,Button_1,Ajuste de color
+CameraCommand,1,Button_2,Ajustar posición
+CameraCommand,1,Button_3,Todas las luces encendidas
+CameraCommand,1,Button_4,Todas las luces apagadas
+CameraCommand,1,Button_5,Restablecer todo
+CameraCommand,1,Button_6,DE ACUERDO
+CameraCommand,1,Button_7,Cancelar
+CameraCommand,1,Text_1,Fortaleza
+CameraCommand,1,icon_on,<pict icon_light_on>
+CameraCommand,1,icon_off,<pict icon_light_off>
+CameraCommand,1,Button_Decide,DE ACUERDO
+CameraCommand,1,Button_Reset,Reiniciar
+CameraCommand,1,Message_Initialization_all,Se restablecerán todos los ajustes que haya realizado.<br><br> ¿Está seguro de que desea continuar?
+CameraCommand,1,Message_ChangeFreeLight,Estás a punto de utilizar Light $(0).<br><br> ¿Está seguro de que desea continuar?
+CameraCommand,1,Toast_ChangeFreeLight,Ahora estás usando Light $(0).
+CameraCommand,1,Toast_ExitFreeLight,La configuración se canceló porque Premium expiró.
+CameraCommand,1,Toast_ExitEditinglight,Se ha desbloqueado el modo de configuración de luz personalizada.
+CameraCommand,1,ErrorTitle_ShaderSetting,ERRORES DE CONFIGURACIÓN
+CameraCommand,1,Error_ShaderSetting,漀渀洀攀渀琀 㰀戀爀㸀匀攀琀琀椀渀最猀 昀爀漀洀 琀栀攀 䰀愀甀渀挀栀攀爀 猀挀爀攀攀渀 愀渀搀 挀栀愀渀最攀 㰀戀爀㸀匀栀愀搀攀爀 儀甀愀氀椀琀礀 椀渀 琀栀攀 䜀爀愀瀀栀椀挀猀 琀愀戀⸀
+CameraCommand,1,Message_DiscardLightSettings,Estás a punto de salir sin aplicar los cambios que realizaste.<br>¿Está seguro de que desea continuar?
+CameraCommand,1,Selfie_OperationGuide,rd> Acción del lobby:<%TabBack>Variante de botón:<%NextWidget>Configuración de la cámara:<%ChangeCtrlWindowForward>Cancelar: <%Cancel>
+CameraCommand,1,Selfie_OperationGuide_Camera_Screenshot,Captura de pantalla:
+CameraCommand,1,Selfie_OperationGuide_Camera_Move,Movimiento de cámara:
+CameraCommand,1,Selfie_OperationGuide_Camera_Rotate,Rotación de cámara:
+CameraCommand,1,Selfie_OperationGuide_Camera_Zoom,Zoom:
+CameraCommand,1,Selfie_OperationGuide_Camera_Reset,Restablecimiento de la cámara:
+CameraCommand,1,Selfie_OperationGuide_Camera_Screenshot_Guide,<%Exception2>
+CameraCommand,1,Selfie_OperationGuide_Camera_Move_Guide,<%LStick>
+CameraCommand,1,Selfie_OperationGuide_Camera_Rotate_Guide,<%MultiSelect> + <%LStick>
+CameraCommand,1,Selfie_OperationGuide_Camera_Zoom_Guide,<%PaletteForce> / <%PaletteReverse>
+CameraCommand,1,Selfie_OperationGuide_Camera_Reset_Guide,<%Exception>
+CameraCommand,1,Selfie_OperationGuide_Camera_Screenshot_Key_Guide,<%Exception2>
+CameraCommand,1,Selfie_OperationGuide_Camera_Move_Key_Guide,<%MoveForward> /<%MoveBack>/<%MoveLeft>/ <%MoveRight>
+CameraCommand,1,Selfie_OperationGuide_Camera_Rotate_Key_Guide,<%MultiSelect> +<%MoveLeft>/ <%MoveRight>
+CameraCommand,1,Selfie_OperationGuide_Camera_Zoom_Key_Guide,<%PaletteForce> / <%PaletteReverse>
+CameraCommand,1,Selfie_OperationGuide_Camera_Reset_Key_Guide,<%Exception>
+CameraCommand,1,Selfie_FacialConfigWindow_Title,Cambiar expresión
+CameraCommand,1,Selfie_FacialConfigWindow_Detail,"Las expresiones se pueden ajustar en detalle en<br>""Personalizar expresiones"" en el Salón."
+CameraCommand,1,Selfie_FacialConfigWindow_Item1,Natural
+CameraCommand,1,Selfie_FacialConfigWindow_Item2,Sonriente
+CameraCommand,1,Selfie_FacialConfigWindow_Item3,Enojado
+CameraCommand,1,Selfie_FacialConfigWindow_Item4,Triste
+CameraCommand,1,Selfie_FacialConfigWindow_Item5,Sospechoso
+CameraCommand,1,Selfie_FacialConfigWindow_Item6,ojos cerrados
+CameraCommand,1,Selfie_FacialConfigWindow_Item7,texto_dummy
+CameraCommand,1,Selfie_FacialConfigWindow_Item8,sonriendo 2
+CameraCommand,1,Selfie_FacialConfigWindow_Item9,Guiño
+CameraCommand,1,Selfie_DepthoffieldWindow_Title,Configuración de la cámara
+CameraCommand,1,Selfie_DepthoffieldWindow_Depthoffield,Profundidad de campo
+CameraCommand,1,Selfie_DepthoffieldWindow_Depthoffield_Select1,Desactivar
+CameraCommand,1,Selfie_DepthoffieldWindow_Depthoffield_Select2,Permitir
+CameraCommand,1,Selfie_DepthoffieldWindow_Aperturevalue,Relación focal (número F)
+CameraCommand,1,Selfie_DepthoffieldWindow_Focus,Punto de enfoque
+CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select1,Personaje
+CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select2,Enfoque manual
+CameraCommand,1,Selfie_DepthoffieldWindow_Focusvalue,Ajuste de enfoque
+CameraCommand,1,Selfie_DepthoffieldWindow_Focusvalue_Balloon,Cambio en incrementos de 10:<swguidetype T_ItemWarehouse>mientras presiona <%Decide>
+CameraCommand,1,Selfie_CameraWindow_TemporarySave,Guardar temporalmente la configuración de la cámara
+CameraCommand,1,Selfie_CameraWindow_TemporarySave_Select1,Desactivar
+CameraCommand,1,Selfie_CameraWindow_TemporarySave_Select2,Permitir
+CameraCommand,1,Selfie_CameraWindow_TemporarySave_Balloon,Guarde la posición y la configuración de la cámara solo mientras se ejecuta el juego.
+CameraCommand,1,Selfie_StopActionWindow_Title1,Pausar gestos <pict Arcscash>
+CameraCommand,1,Selfie_StopActionWindow_Item1,Pausar gestos
+CameraCommand,1,Selfie_StopActionWindow_Head1,Tiempo de pausa
+CameraCommand,1,Selfie_StopActionWindow_Detail1,"Otros jugadores seguirán viendo la animación si seleccionas ""Indefinidamente""."
+CameraCommand,1,Selfie_StopActionWindow_Detail2,Seleccione durante cuánto tiempo pausar los gestos.
+CameraCommand,1,Selfie_StopActionWindow_Selector1,sin pausa
+CameraCommand,1,Selfie_StopActionWindow_Selector2,10 segundos
+CameraCommand,1,Selfie_StopActionWindow_Selector3,indefinidamente
+CameraCommand,1,Selfie_StopActionWindow_StopTime_Balloon,"Ajuste en incrementos de 0,5 segundos:<swguidetype T_ItemWarehouse>con<%Decide>presionado"
+CameraCommand,1,Selfie_StopActionWindow_StopTime_Disabled,Los gestos de pausa no se pueden utilizar con este gesto.
+CameraCommand,1,Selfie_CameraWindow_Parameter_Title,Valores de configuración de la cámara
+CameraCommand,1,Selfie_CameraWindow_Parameter_Select1,Esconder
+CameraCommand,1,Selfie_CameraWindow_Parameter_Select2,Espectáculo
+CameraCommand,1,Selfie_CameraWindow_Parameter_Balloon,Mostrar valores de posición de la cámara
+CameraCommand,1,Selfie_ParameterWindow_Camera_Fovy,Ángulo de visión (zoom)
+CameraCommand,1,Selfie_ParameterWindow_Camera_Roll,Rotación
+CameraCommand,1,Selfie_ParameterWindow_Camera_Offset,Compensar
+CameraCommand,1,Selfie_ParameterWindow_Camera_AngleUD,Ángulo arriba/abajo
+CameraCommand,1,Selfie_ParameterWindow_Camera_AngleLR,Ángulo izquierdo/derecho
+CommandList,0,SelectMenuType_CommunicationMenu1,ショートカットワード実行
+CommandList,0,SelectMenuType_CommunicationMenu2,ロビーアクション実行
+CommandList,0,SelectMenuType_CommunicationMenu3,キャラクター頭上表示切り替え
+CommandList,0,SelectMenuType_CommunicationMenu4,オンラインステータス変更
+CommandList,0,SelectMenuType_CommunicationMenu5,ショートログ表示ON/OFF
+CommandList,0,SelectMenuType_ExecuteMenu1,スクリーンショット撮影
+CommandList,0,VITA_SelectMenuType_ExecuteMenu1,視点設定変更
+CommandList,0,SelectMenuType_Execute_Camera,カメラ選択
+CommandList,0,SelectMenuType_ExecuteMenu2,自分のマイルームへ行く
+CommandList,0,SelectMenuType_ExecuteMenu3,所属のチームルームへ行く
+CommandList,0,SelectMenuType_QuestMenu1,パートナー作戦指示
+CommandList,0,SelectMenuType_QuestMenu2,レーダーマップ表示切り替え
+CommandList,0,SelectMenuType_QuestMenu3,リージョン・シティマップ表示
+CommandList,0,SelectMenuType_CommunicationMenu6,パーティーメイカー設置/撤去
+CommandList,0,SelectMenuType_CommunicationMenu7,フレンドメッセージ変更
+CommandList,0,SelectMenuType_CommunicationMenu8,周囲のキャラクター
+CommandList,0,SelectMenuType_CommunicationMenu9,フレンドリスト
+CommandList,0,SelectMenuType_CommunicationMenu10,チームコマンド
+CommandList,0,SelectMenuType_CommunicationMenu11,メール
+CommandList,0,SelectMenuType_CommunicationMenu12,コミュニケーション履歴
+CommandList,0,SelectMenuType_CommunicationMenu13,シンボルアート
+CommandList,0,SelectMenuType_CommunicationMenu14,スタンプ
+CommandList,0,SelectMenuType_CommunicationMenu15,ルームキーワード/撮影専用ルーム設定
+CommandList,0,SelectMenuType_CommunicationMenu16,クリエイティブスペース
+CommandList,0,SelectMenuType_Execute_CameraLight,カメラ/ライト選択
+CommandList,0,SelectMenuType_ExecuteMenu4,所属のシップへ行く
+CommandList,0,SelectMenuType_ExecuteMenu5,共通シップへ行く
+CommandList,0,SelectMenuType_ExecuteMenu6,艦橋へ行く
+CommandList,0,SelectMenuType_ExecuteMenu7,エステへ行く
+CommandList,0,SelectMenuType_ExecuteMenu8,フランカ’s カフェへ行く
+CommandList,0,SelectMenuType_ExecuteMenu9,UI非表示
+CommandList,0,SelectMenuType_QuestMenu4,パーティーコマンド
+CommandList,0,SelectMenuType_QuestMenu5,クライアントオーダー
+CommandList,0,SelectMenuType_QuestMenu6,アークスロード
+CommandList,0,SelectMenuType_QuestMenu7,開催中イベント
+CommandList,0,SelectMenuType_QuestMenu8,クエスト情報
+CommandList,0,SelectMenuType_QuestMenu9,クエストカウンター
+CommandList,0,SelectMenuType_ItemMenu1,武器装備
+CommandList,0,SelectMenuType_ItemMenu2,防具装備
+CommandList,0,SelectMenuType_ItemMenu3,ファッション編集
+CommandList,0,SelectMenuType_ItemMenu4,サブパレット編集
+CommandList,0,SelectMenuType_ItemMenu5,アイテム
+CommandList,0,SelectMenuType_ItemMenu6,カスタム
+CommandList,0,SelectMenuType_ItemMenu7,マグ
+CommandList,0,SelectMenuType_ItemMenu8,リサイクルショップ
+CommandList,0,SelectMenuType_ItemMenu9,ペット
+CommandList,0,SelectMenuType_MyData1,キャラクター情報
+CommandList,0,SelectMenuType_MyData2,称号リスト
+CommandList,0,SelectMenuType_MyData3,アークスカード編集
+CommandList,0,SelectMenuType_ShareShip1,チャレンジロビーへ
+CommandList,0,SelectMenuType_ShareShip2,バトルロビーへ
+CommandList,0,SelectMenuType_VoiceChatMuteOn,マイクをミュートにする
+CommandList,0,SelectMenuType_VoiceChatMuteOff,マイクのミュートを解除
+CommandList,0,SelectMenuType_LocationNotification,パーティーに位置を知らせる
+CommandList,0,SelectMenuType_RoomPassword,ルームマッチング設定
+CommandList,0,SelectMenuType_EditMenu1,全UI非表示（600秒）
+CommandList,0,SelectMenuType_EditMenu2,タスク
+CommandList,0,SelectMenuType_EditMenu3,ミッションパス
+CommandList,0,SelectMenuType_EditMenu4,リトライする
+CommandList,0,SelectMenuType_EditMenu5,クエストの破棄
+CommandList,0,SelectMenuType_EditMenu6,サブパレット
+CommandList,0,SelectMenuType_EditMenu7,武器迷彩
+CommandList,0,SelectMenuType_EditMenu8,武器納刀位置調整
+CommandList,0,SelectMenuType_EditMenu9,アクティブソナーの目標設定
+CommandList,0,SelectMenuType_EditMenu10,BGM再生
+CommandList,0,SelectMenuType_EditMenu11,BGM登録
+CommandList,0,SelectMenuType_EditMenu12,BGMプレイリスト作成
+CommandList,0,SelectMenuType_EditMenu13,パーティーコマンド
+CommandList,0,SelectMenuType_EditMenu14,アークスサーチ
+CommandList,0,SelectMenuType_EditMenu15,パーティーメンバー集合
+CommandList,0,SelectMenuType_EditMenu16,撮影専用ルーム内の設定
+CommandList,0,SelectMenuType_EditMenu17,ショートカットワード設定
+CommandList,0,SelectMenuType_EditMenu18,グループチャット設定
+CommandList,0,SelectMenuType_EditMenu19,オートワード設定
+CommandList,0,SelectMenuType_EditMenu20,勝利演出設定
+CommandList,0,SelectMenuType_EditMenu21,称号
+CommandList,0,SelectMenuType_EditMenu22,アークスカード
+CommandList,0,SelectMenuType_EditMenu23,コーデカタログ
+CommandList,0,SelectMenuType_EditMenu24,プレイ実績
+CommandList,0,SelectMenuType_EditMenu25,AC・SGショップ
+CommandList,0,SelectMenuType_EditMenu26,スクラッチを引く
+CommandList,0,SelectMenuType_EditMenu27,アイテムリサイクル
+CommandList,0,SelectMenuType_EditMenu28,購入履歴／有効期限
+CommandList,0,SelectMenuType_EditMenu29,オプション
+CommandList,0,SelectMenuType_EditMenu30,操作設定
+CommandList,0,SelectMenuType_EditMenu31,キャンペーンアイテム受け取り
+CommandList,0,SelectMenuType_EditMenu32,アイテムコード
+CommandList,0,SelectMenuType_EditMenu33,インフォメーション
+CommandList,0,SelectMenuType_EditMenu34,ログインボーナス
+CommandList,0,SelectMenuType_EditMenu35,パーティーメンバー募集
+CommandList,0,SelectMenuType_EditMenu36,マイファッション
+CommandList,0,SelectMenuType_EditMenu37,ストリーマーモード
+CommandList,0,SelectMenuType_ShowCollabIcon,イベント応募関連の表示設定
+CommandList,0,SelectMenuType_EditMenuCategory1,[分類]装備メニュー
+CommandList,0,SelectMenuType_EditMenuCategory2,[分類]パーソナルメニュー
+CommandList,0,SelectMenuType_EditMenuCategory3,[分類]システムメニュー
+CommandList,0,SelectMenuType_EditMenuCategory4,[分類]タスクメニュー
+CommandList,0,SelectMenuType_EditMenuCategory5,[分類]クエストメニュー
+CommandList,0,SelectMenuType_EditMenuCategory6,[分類]コミュニケーションメニュー
+CommandList,0,SelectMenuType_EditMenuCategory7,[分類]チャットメニュー
+CommandList,0,SelectMenuType_EditMenuCategory8,[分類]ショップメニュー
+CommandList,0,SelectMenuType_EditMenuCategory9,[分類]実行メニュー
+CommandList,0,SelectMenuType_EditMenuCategory10,[分類]表示メニュー
+CommandList,0,SelectMenuType_EditMenuCategory11,[分類]移動メニュー
+CommandList,0,SelectMenuType_Vitalgauge_PsnOff,キャラクター名を表示
+CommandList,0,SelectMenuType_Vitalgauge_PsnOn,“PSN”のオンラインIDを表示
+CommandList,0,SelectMenuType_PlaceObjectSelect,ポータブルホログラム設置
+CommandList,0,SelectMenuType_PlaceObjectList,周囲のポータブルホログラム
+CommandList,0,SelectMenuType_Selfie,かんたん撮影モード
+CommandList,0,SelectMenuType_LineDuelRankMatch,ラインストライクのレートバトル
+CommandList,0,SelectMenuType_LineDuelCasualMatch,ラインストライクのアンレートバトル
+CommandList,0,SelectMenuType_PartyLeave,パーティー脱退
+CommandList,0,SelectMenuType_WishList,ほしい物リスト
+CommandList,1,SelectMenuType_CommunicationMenu1,Ejecutar macros de chat
+CommandList,1,SelectMenuType_CommunicationMenu2,Realizar gestos
+CommandList,1,SelectMenuType_CommunicationMenu3,Alternar visualización superior de caracteres
+CommandList,1,SelectMenuType_CommunicationMenu4,Cambiar estado en línea
+CommandList,1,SelectMenuType_CommunicationMenu5,Mostrar/Ocultar registro corto
+CommandList,1,SelectMenuType_ExecuteMenu1,Tomar captura de pantalla
+CommandList,1,VITA_SelectMenuType_ExecuteMenu1,Cambiar configuración de vista
+CommandList,1,SelectMenuType_Execute_Camera,SELECCIONAR CÁMARA
+CommandList,1,SelectMenuType_ExecuteMenu2,Ir a cuartos personales
+CommandList,1,SelectMenuType_ExecuteMenu3,Ir a los cuarteles de la Alianza
+CommandList,1,SelectMenuType_QuestMenu1,Instrucciones para los aliados
+CommandList,1,SelectMenuType_QuestMenu2,Mostrar/ocultar mapa de radar
+CommandList,1,SelectMenuType_QuestMenu3,Mostrar mapa de región y ciudad
+CommandList,1,SelectMenuType_CommunicationMenu6,Colocar/quitar baliza de fiesta
+CommandList,1,SelectMenuType_CommunicationMenu7,Cambiar mensajes de amigos
+CommandList,1,SelectMenuType_CommunicationMenu8,Personajes cercanos
+CommandList,1,SelectMenuType_CommunicationMenu9,Lista de amigos
+CommandList,1,SelectMenuType_CommunicationMenu10,Comandos de la Alianza
+CommandList,1,SelectMenuType_CommunicationMenu11,Correo
+CommandList,1,SelectMenuType_CommunicationMenu12,Registro de comunicaciones
+CommandList,1,SelectMenuType_CommunicationMenu13,Arte simbólico
+CommandList,1,SelectMenuType_CommunicationMenu14,Sellos
+CommandList,1,SelectMenuType_CommunicationMenu15,Configuración de sala de palabras clave/fotos
+CommandList,1,SelectMenuType_CommunicationMenu16,Espacio Creativo
+CommandList,1,SelectMenuType_Execute_CameraLight,Seleccionar cámara/luz
+CommandList,1,SelectMenuType_ExecuteMenu4,Ve a tu barco
+CommandList,1,SelectMenuType_ExecuteMenu5,Ir al barco universal
+CommandList,1,SelectMenuType_ExecuteMenu6,ir al puente
+CommandList,1,SelectMenuType_ExecuteMenu7,ir al salón
+CommandList,1,SelectMenuType_ExecuteMenu8,Ir al café de Franca
+CommandList,1,SelectMenuType_ExecuteMenu9,Ocultar interfaz de usuario
+CommandList,1,SelectMenuType_QuestMenu4,Comandos del partido
+CommandList,1,SelectMenuType_QuestMenu5,Órdenes de clientes
+CommandList,1,SelectMenuType_QuestMenu6,Entrenamiento ARCAS
+CommandList,1,SelectMenuType_QuestMenu7,Eventos actuales
+CommandList,1,SelectMenuType_QuestMenu8,Información de la misión
+CommandList,1,SelectMenuType_QuestMenu9,Contador de misiones
+CommandList,1,SelectMenuType_ItemMenu1,Equipar armas
+CommandList,1,SelectMenuType_ItemMenu2,Equipar armadura
+CommandList,1,SelectMenuType_ItemMenu3,Personalizar looks
+CommandList,1,SelectMenuType_ItemMenu4,Editar subpaleta
+CommandList,1,SelectMenuType_ItemMenu5,Elementos
+CommandList,1,SelectMenuType_ItemMenu6,Personalizar
+CommandList,1,SelectMenuType_ItemMenu7,revistas
+CommandList,1,SelectMenuType_ItemMenu8,Tienda de intercambio
+CommandList,1,SelectMenuType_ItemMenu9,Mascotas
+CommandList,1,SelectMenuType_MyData1,Información del personaje
+CommandList,1,SelectMenuType_MyData2,Títulos
+CommandList,1,SelectMenuType_MyData3,Editar ID de ARKS
+CommandList,1,SelectMenuType_ShareShip1,Para desafiar al lobby
+CommandList,1,SelectMenuType_ShareShip2,Al lobby de batalla
+CommandList,1,SelectMenuType_VoiceChatMuteOn,Silenciar micrófono
+CommandList,1,SelectMenuType_VoiceChatMuteOff,Activar micrófono
+CommandList,1,SelectMenuType_LocationNotification,Compartir ubicación con grupo
+CommandList,1,SelectMenuType_RoomPassword,Configuración de emparejamiento de salas
+CommandList,1,SelectMenuType_EditMenu1,Ocultar toda la interfaz de usuario (600 segundos)
+CommandList,1,SelectMenuType_EditMenu2,Tareas
+CommandList,1,SelectMenuType_EditMenu3,Pase de misión
+CommandList,1,SelectMenuType_EditMenu4,Rever
+CommandList,1,SelectMenuType_EditMenu5,Abandonar la misión
+CommandList,1,SelectMenuType_EditMenu6,Subpaleta
+CommandList,1,SelectMenuType_EditMenu7,Camuflaje de armas
+CommandList,1,SelectMenuType_EditMenu8,Ajustar la posición de la funda
+CommandList,1,SelectMenuType_EditMenu9,Configuración del objetivo de sonda activa
+CommandList,1,SelectMenuType_EditMenu10,Reproducir música de fondo
+CommandList,1,SelectMenuType_EditMenu11,Agregar música
+CommandList,1,SelectMenuType_EditMenu12,Crear lista de reproducción
+CommandList,1,SelectMenuType_EditMenu13,Comandos del partido
+CommandList,1,SelectMenuType_EditMenu14,Búsqueda de ARCAS
+CommandList,1,SelectMenuType_EditMenu15,Reunir a los miembros del partido
+CommandList,1,SelectMenuType_EditMenu16,Configuración de la sala de fotos
+CommandList,1,SelectMenuType_EditMenu17,Configuración de accesos directos al chat
+CommandList,1,SelectMenuType_EditMenu18,Configuración de chat grupal
+CommandList,1,SelectMenuType_EditMenu19,Configuración de chat automático
+CommandList,1,SelectMenuType_EditMenu20,Configuración de rendimiento de victoria
+CommandList,1,SelectMenuType_EditMenu21,Títulos
+CommandList,1,SelectMenuType_EditMenu22,ID DE ARCAS
+CommandList,1,SelectMenuType_EditMenu23,lookbook
+CommandList,1,SelectMenuType_EditMenu24,Logros del juego
+CommandList,1,SelectMenuType_EditMenu25,Tienda AC/SG
+CommandList,1,SelectMenuType_EditMenu26,Jugar boletos rasca y gana
+CommandList,1,SelectMenuType_EditMenu27,Reciclaje de artículos
+CommandList,1,SelectMenuType_EditMenu28,Historial de compras/vencimiento
+CommandList,1,SelectMenuType_EditMenu29,Opciones
+CommandList,1,SelectMenuType_EditMenu30,Configuración de controles
+CommandList,1,SelectMenuType_EditMenu31,Obtener artículos de campaña
+CommandList,1,SelectMenuType_EditMenu32,Códigos de artículo
+CommandList,1,SelectMenuType_EditMenu33,Información
+CommandList,1,SelectMenuType_EditMenu34,Bono de inicio de sesión
+CommandList,1,SelectMenuType_EditMenu35,Reclutar miembros del partido
+CommandList,1,SelectMenuType_EditMenu36,Aspecto
+CommandList,1,SelectMenuType_EditMenu37,Modo transmisor
+CommandList,1,SelectMenuType_ShowCollabIcon,Configuración de visualización para el envío de eventos
+CommandList,1,SelectMenuType_EditMenuCategory1,[Categoría] Menú de equipo
+CommandList,1,SelectMenuType_EditMenuCategory2,[Categoría] Menú personal
+CommandList,1,SelectMenuType_EditMenuCategory3,[Categoría] Menú del sistema
+CommandList,1,SelectMenuType_EditMenuCategory4,[Categoría] Menú de tareas
+CommandList,1,SelectMenuType_EditMenuCategory5,[Categoría] Menú de misiones
+CommandList,1,SelectMenuType_EditMenuCategory6,[Categoría] Menú de comunicaciones
+CommandList,1,SelectMenuType_EditMenuCategory7,[Categoría] Menú de chat
+CommandList,1,SelectMenuType_EditMenuCategory8,[Categoría] Menú de la tienda
+CommandList,1,SelectMenuType_EditMenuCategory9,[Categoría] Menú de acciones
+CommandList,1,SelectMenuType_EditMenuCategory10,[Categoría] Menú de visualización
+CommandList,1,SelectMenuType_EditMenuCategory11,[Categoría] Menú de viaje
+CommandList,1,SelectMenuType_Vitalgauge_PsnOff,Nombre del personaje mostrado
+CommandList,1,SelectMenuType_Vitalgauge_PsnOn,"Mostrar ID en línea de ""PSN"""
+CommandList,1,SelectMenuType_PlaceObjectSelect,Colocar holograma portátil
+CommandList,1,SelectMenuType_PlaceObjectList,Hologramas portátiles cercanos
+CommandList,1,SelectMenuType_Selfie,Modo de foto fácil
+CommandList,1,SelectMenuType_LineDuelRankMatch,Batalla clasificatoria de ataque lineal
+CommandList,1,SelectMenuType_LineDuelCasualMatch,Batalla sin clasificación de Line Strike
+CommandList,1,SelectMenuType_PartyLeave,Dejar la fiesta
+CommandList,1,SelectMenuType_WishList,Lista de artículos buscados
+Common,0,Title,クイックメニュー
+Common,0,Caption1,コミュニケーションメニュー
+Common,0,Caption2,実行メニュー
+Common,0,Caption3,クエストメニュー
+Common,0,Caption4,ロビーマップ
+Common,0,OnlineStatus_1,表示しない
+Common,0,OnlineStatus_2,パーティーメンバー募集
+Common,0,OnlineStatus_3,パーティー参加希望
+Common,0,OnlineStatus_4,離席中
+Common,0,OnlineStatus_5,フリーメッセージ
+Common,0,OnlineStatus_Free,フリーメッセージ設定
+Common,0,OnlineStatus_Decide_Vita,ステータスを反映する
+Common,0,OnlineStatus_FreeError_Title,通信エラー
+Common,0,OnlineStatus_FreeError_Msg,フリーメッセージを保存できませんでした。
+Common,0,ApcTacticsOrder_title,-
+Common,0,ApcTacticsOrder_1,-
+Common,0,ApcTacticsOrder_2,-
+Common,0,ApcTacticsOrder_3,-
+Common,0,ApcTacticsOrder_4,-
+Common,0,ApcTacticsOrderHint_1,-
+Common,0,ApcTacticsOrderHint_2,-
+Common,0,ApcTacticsOrderHint_3,-
+Common,0,ApcTacticsOrderHint_4,-
+Common,0,ApcTacticsOrderPb_title,パートナーへのフォトンブラスト指示
+Common,0,ApcTacticsOrderPb_1,ＰＢリリース
+Common,0,ApcTacticsOrderPb_2,ＰＢチェイン
+Common,0,ApcTacticsOrderPbHint_1,フォトンブラストを積極的に使います。
+Common,0,ApcTacticsOrderPbHint_2,プレイヤーのフォトンブラスト実行に<br>合わせてフォトンブラストを使用します。
+Common,0,ApcTacticsOrderAttack_title,パートナー戦闘参加指示
+Common,0,ApcTacticsOrderAttack_1,戦闘に参加しろ
+Common,0,ApcTacticsOrderAttack_2,何もするな
+Common,0,ApcTacticsOrderAttackHint_1,パートナーが戦闘状況に合わせて行動します。
+Common,0,ApcTacticsOrderAttackHint_2,パートナーが戦闘に参加しなくなります。
+Common,0,Caption5,アイテム
+Common,0,Caption6,マイデータ
+Common,0,Caption7,移動メニュー
+Common,0,Caption8,システム
+Common,0,Caption9,チーム
+Common,0,Caption10,イベント
+Common,0,Caption11,育成
+Common,0,Caption12,専用メニュー
+Common,0,Caption13,撮影・準備
+Common,0,Caption14,パーティー
+Common,0,CustomizeGuide,<%MultiSelect><c f0df60>でパターン切り替え/編集
+Common,0,CustomizeGuideVita,<pict Sign_TRIANGLE><c f0df60>でパターンを変更
+Common,0,ConfirmHideInterface,UIを非表示にします。<br>※クイックメニュー表示時に復帰（仮）
+Common,0,Title_chatmenu,ショートカットワード実行
+Common,0,InChallengeShip_DirectBuy_ErrorTitle,購入エラー
+Common,0,InChallengeShip_NotPremium_ErrorMessage,選択した機能の利用権をお持ちでないか、<br>利用期限が切れています。<br><br>チャレンジブロックとバトルブロックでは<br><yellow>「プレミアムセット」<c>の購入はできません。<br>上記以外のブロックにてご購入ください。
+Common,0,QuickMenu_PatternEdit_Menu,パターンのカスタマイズ
+Common,0,QuickMenu_PatternSelect,パターン選択
+Common,0,QuickMenu_PatternDetail,パターン詳細
+Common,0,QuickMenu_ListNumber,$(1) / $(0)
+Common,0,QuickMenu_PatternEdit,編集する
+Common,0,QuickMenu_MenuList,メニュー項目リスト
+Common,0,QuickMenu_PatternInactive,非表示にする
+Common,0,QuickMenu_PatternActive,適用する
+Common,0,QuickMenu_PatternNameEdit,パターン名を変更する
+Common,0,QuickMenu_PatternInitialize,初期化する
+Common,0,QuickMenu_PatternInactive_Text,"""$(0)""をリストから非表示にしました。"
+Common,0,QuickMenu_PatternActive_Text,"""$(0)""をリストに表示しました。"
+Common,0,QuickMenu_PatternInitialize_Text1,"""$(0)""を初期化しますか？<br>パターン名の変更および、<br>カスタマイズの設定が初期化されます。"
+Common,0,QuickMenu_PatternInitialize_Text2,"""$(0)""のカスタマイズ内容を初期化しました。"
+Common,0,QuickMenu_PatternRename_Text1,パターン名の変更
+Common,0,QuickMenu_PatternRename_Text2,"""$(0)""<br>のパターン名を変更します。<br><br>パターン名を入力してください。"
+Common,0,QuickMenu_MenuAdd_Menu,項目を追加する
+Common,0,QuickMenu_MenuSwap,他の項目に変更する
+Common,0,QuickMenu_MenuSort,並び替える
+Common,0,QuickMenu_MenuDelete,削除する
+Common,0,QuickMenu_MenuAdd_Text1,登録できる上限に達しているため、項目を追加できませんでした。
+Common,0,QuickMenu_MenuAdd_Text2,メニューの項目数が上限に達しているため、追加できません。
+Common,0,QuickMenu_PremiumExpired_Text1,"プレミアム有効期限が過ぎたため、クイックメニューを""基本タイプ""に切り替えました。"
+Common,0,QuickMenu_Edit_Text1,"“分類”以外の項目が一番上に設定されています。<br><br>保存するには、リストの一番上を<br>""分類""の項目にしてください。"
+Common,0,QuickMenu_Cancel_Text1,編集をキャンセルします。よろしいですか？
+Common,0,QuickMenu_SaveError_Text1,パターンが空欄のため保存できません。
+Common,0,QuickMenu_SaveError_Text2,"“分類”以外の項目が一番上に設定されています。<br><br>保存するには、リストの一番上を<br>""分類""の項目にしてください。"
+Common,0,QuickMenu_SaveError_Text3,"“分類”の項目が2つ以上並んでいるか、<br>一番下に設定されています。<br><br>保存するには、<br>""分類""の項目を並び替えてください。"
+Common,0,QuickMenu_SaveError_Text4,“分類”のみの状態では保存できません。<br><br>“分類”以外の項目を追加してから<br>保存してください。
+Common,0,QuickMenu_SaveConfirm_Text1,同じ項目が含まれています。よろしいですか？
+Common,0,QuickMenu_SaveConfirm_Text2,"""$(0)""は、<br>このプラットフォームではサポートされていないため、<br>クイックメニューに追加しても使用できません。<br><br>追加してよろしいですか？"
+Common,0,QuickMenu_SaveConfirm_Text3,"""$(0)""を<br>クイックメニューに適用しますか？"
+Common,0,QuickMenu_ListTab_Text0,すべて
+Common,0,QuickMenu_ListTab_Text1,クイックメニュー専用
+Common,0,QuickMenu_ListTab_Text2,タスク / クエスト
+Common,0,QuickMenu_ListTab_Text3,装備/サブパレット
+Common,0,QuickMenu_ListTab_Text4,コミュニケーション
+Common,0,QuickMenu_ListTab_Text5,チャット
+Common,0,QuickMenu_ListTab_Text6,パーソナル
+Common,0,QuickMenu_ListTab_Text7,ショップ
+Common,0,QuickMenu_ListTab_Text8,システム
+Common,0,QuickMenu_ListTab_Text9,ショートカットワードページ切り替え
+Common,0,QuickMenu_ListTab_Text10,ショートカットワード実行
+Common,0,QuickMenu_ListTab_Text11,カメラ/ライト切り替え
+Common,0,QuickMenu_ListTab_Text12,移動
+Common,0,QuickMenu_ListTab_Text13,分類
+Common,0,Caption15,装備メニュー
+Common,0,Caption16,パーソナルメニュー
+Common,0,Caption17,システムメニュー
+Common,0,Caption18,タスクメニュー
+Common,0,Caption19,チャットメニュー
+Common,0,Caption20,ショップメニュー
+Common,0,Caption21,表示メニュー
+Common,0,Caption22,プラットフォームメニュー
+Common,0,Caption23,メニュー
+Common,1,Title,MENÚ RÁPIDO
+Common,1,Caption1,Menú de comunicaciones
+Common,1,Caption2,Menú de acción
+Common,1,Caption3,Menú de misiones
+Common,1,Caption4,Mapa del vestíbulo
+Common,1,OnlineStatus_1,Esconder
+Common,1,OnlineStatus_2,Reclutamiento de miembros del partido
+Common,1,OnlineStatus_3,Buscando una fiesta
+Common,1,OnlineStatus_4,Lejos
+Common,1,OnlineStatus_5,Abrir mensajería
+Common,1,OnlineStatus_Free,Abrir mensajería
+Common,1,OnlineStatus_Decide_Vita,Estado de actualización
+Common,1,OnlineStatus_FreeError_Title,ERROR DE COMUNICACIÓN
+Common,1,OnlineStatus_FreeError_Msg,No se pueden guardar los mensajes abiertos.
+Common,1,ApcTacticsOrder_title,-
+Common,1,ApcTacticsOrder_1,-
+Common,1,ApcTacticsOrder_2,-
+Common,1,ApcTacticsOrder_3,-
+Common,1,ApcTacticsOrder_4,-
+Common,1,ApcTacticsOrderHint_1,-
+Common,1,ApcTacticsOrderHint_2,-
+Common,1,ApcTacticsOrderHint_3,-
+Common,1,ApcTacticsOrderHint_4,-
+Common,1,ApcTacticsOrderPb_title,INSTRUCCIONES DE EXPLOSIÓN DE FOTONES PARA ALIADOS
+Common,1,ApcTacticsOrderPb_1,Lanzamiento de PB
+Common,1,ApcTacticsOrderPb_2,Cadena PB
+Common,1,ApcTacticsOrderPbHint_1,Utilice explosiones de fotones de forma agresiva.
+Common,1,ApcTacticsOrderPbHint_2,Usa Photon Blasts cuando el jugador los use.
+Common,1,ApcTacticsOrderAttack_title,PARTICIPACIÓN DE ALIADOS EN EL COMBATE
+Common,1,ApcTacticsOrderAttack_1,Únete a la batalla
+Common,1,ApcTacticsOrderAttack_2,no hagas nada
+Common,1,ApcTacticsOrderAttackHint_1,Los aliados actuarán según las condiciones de la batalla.
+Common,1,ApcTacticsOrderAttackHint_2,Los aliados no se enfrentarán.
+Common,1,Caption5,Elementos
+Common,1,Caption6,Datos personales
+Common,1,Caption7,Menú de viaje
+Common,1,Caption8,Sistema
+Common,1,Caption9,Alianza
+Common,1,Caption10,Eventos
+Common,1,Caption11,Criar mascotas
+Common,1,Caption12,Menú dedicado
+Common,1,Caption13,Tomar fotografías/Preparación
+Common,1,Caption14,Fiesta
+Common,1,CustomizeGuide,<%MultiSelect><c f0df60>para intercambiar/editar diseño
+Common,1,CustomizeGuideVita,Intercambiar diseño con<pict Sign_TRIANGLE><c f0df60>
+Common,1,ConfirmHideInterface,La interfaz de usuario estará oculta. Volverá a aparecer cuando<br>se muestre el Menú Rápido (provisional).
+Common,1,Title_chatmenu,EJECUTAR MACROS DE CHAT
+Common,1,InChallengeShip_DirectBuy_ErrorTitle,ERROR DE COMPRA
+Common,1,InChallengeShip_NotPremium_ErrorMessage,Elige un<yellow>Conjunto Premium<c><br> de un Bloque de Desafío o Bloque de Batalla. Por favor<br>compre uno de un bloque diferente.
+Common,1,QuickMenu_PatternEdit_Menu,Personalizar diseño
+Common,1,QuickMenu_PatternSelect,Selección de diseño
+Common,1,QuickMenu_PatternDetail,Detalles de diseño
+Common,1,QuickMenu_ListNumber,$(1) / $(0)
+Common,1,QuickMenu_PatternEdit,Editar
+Common,1,QuickMenu_MenuList,Lista de elementos del menú
+Common,1,QuickMenu_PatternInactive,Esconder
+Common,1,QuickMenu_PatternActive,Aplicar
+Common,1,QuickMenu_PatternNameEdit,Cambiar nombre de diseño
+Common,1,QuickMenu_PatternInitialize,Reiniciar
+Common,1,QuickMenu_PatternInactive_Text,"""$(0)"" oculto en la lista."
+Common,1,QuickMenu_PatternActive_Text,"""$(0)"" se muestra en la lista."
+Common,1,QuickMenu_PatternInitialize_Text1,"¿Reiniciar ""$(0)""?<br>Todos los cambios de nombre de diseño y configuraciones de personalización<br>se restablecerán."
+Common,1,QuickMenu_PatternInitialize_Text2,"Restablecer la personalización ""$(0)""."
+Common,1,QuickMenu_PatternRename_Text1,Cambiar nombre de diseño
+Common,1,QuickMenu_PatternRename_Text2,"Cambie el nombre de ""$(0)"".<br><br> Introduzca el nombre del diseño."
+Common,1,QuickMenu_MenuAdd_Menu,Agregar artículo
+Common,1,QuickMenu_MenuSwap,Cambiar a otro artículo
+Common,1,QuickMenu_MenuSort,Clasificar
+Common,1,QuickMenu_MenuDelete,Borrar
+Common,1,QuickMenu_MenuAdd_Text1,El artículo no se pudo agregar porque alcanzó el límite.
+Common,1,QuickMenu_MenuAdd_Text2,No se puede agregar. Ha alcanzado el número máximo de elementos del menú.
+Common,1,QuickMenu_PremiumExpired_Text1,El menú rápido cambió a básico porque la prima expiró.
+Common,1,QuickMenu_Edit_Text1,"Actualmente, un elemento que no pertenece a la categoría se encuentra en la parte superior de la lista.<br><br> Seleccione una categoría como elemento principal para guardar."
+Common,1,QuickMenu_Cancel_Text1,Cancelar ediciones. ¿Está seguro de que desea continuar?
+Common,1,QuickMenu_SaveError_Text1,No se pudo guardar porque el diseño está en blanco.
+Common,1,QuickMenu_SaveError_Text2,"Actualmente, un elemento que no pertenece a la categoría se encuentra en la parte superior de la lista.<br><br> Seleccione una categoría como elemento principal para guardar."
+Common,1,QuickMenu_SaveError_Text3,m de la lista.<br><br> Reorganice los elementos de la categoría para poder guardarlos.
+Common,1,QuickMenu_SaveError_Text4,"No se puede guardar solo con ""Categoría"".<br><br> Agregue otra selección e intente guardar nuevamente."
+Common,1,QuickMenu_SaveConfirm_Text1,Hay duplicados. ¿Está seguro de que desea continuar?
+Common,1,QuickMenu_SaveConfirm_Text2,愀甀猀攀 椀琀 椀猀 渀漀琀 猀甀瀀瀀漀爀琀攀搀 漀渀 琀栀椀猀 瀀氀愀琀昀漀爀洀⸀㰀戀爀㸀㰀戀爀㸀䐀漀 礀漀甀 眀椀猀栀 琀漀 愀搀搀 椀琀㼀
+Common,1,QuickMenu_SaveConfirm_Text3,¿Desea aplicar el diseño $(0) al Menú rápido?
+Common,1,QuickMenu_ListTab_Text0,Todo
+Common,1,QuickMenu_ListTab_Text1,Sólo menú rápido
+Common,1,QuickMenu_ListTab_Text2,Tareas/Misiones
+Common,1,QuickMenu_ListTab_Text3,Engranaje/Subpaleta
+Common,1,QuickMenu_ListTab_Text4,Comunicaciones
+Common,1,QuickMenu_ListTab_Text5,Charlar
+Common,1,QuickMenu_ListTab_Text6,Personal
+Common,1,QuickMenu_ListTab_Text7,Comercio
+Common,1,QuickMenu_ListTab_Text8,Sistema
+Common,1,QuickMenu_ListTab_Text9,Alternar página de acceso directo de Word
+Common,1,QuickMenu_ListTab_Text10,EJECUTAR MACROS DE CHAT
+Common,1,QuickMenu_ListTab_Text11,Alternar cámara/luz
+Common,1,QuickMenu_ListTab_Text12,Mover
+Common,1,QuickMenu_ListTab_Text13,Categorías
+Common,1,Caption15,Menú de equipos
+Common,1,Caption16,Menú personal
+Common,1,Caption17,Menú del sistema
+Common,1,Caption18,Menú de tareas
+Common,1,Caption19,Menú de chat
+Common,1,Caption20,Menú de la tienda
+Common,1,Caption21,Menú de visualización
+Common,1,Caption22,Menú de plataforma
+Common,1,Caption23,Menú
+Edit,0,EditSave,保存
+Edit,0,EditCancel,キャンセル
+Edit,0,EditTitle,パターン切り替え
+Edit,1,EditSave,Ahorrar
+Edit,1,EditCancel,Cancelar
+Edit,1,EditTitle,Intercambiar diseño
+LobbyActionCommand,0,LobbyActionText,<%NextTabDetails><yellow>お気に入り登録/編集<c>
+LobbyActionCommand,0,VITA_LobbyActionText,<pict Sign_select><yellow>お気に入り登録/編集<c>
+LobbyActionCommand,0,VITA_FavoritesSwitching,<pict Sign_select>すべて/お気に入り 切替
+LobbyActionCommand,0,LobbyAction_TypeA,<%MultiSelect>+<%Decide><yellow>別タイプアクション<c>
+LobbyActionCommand,0,LobbyAction_TypeB,<%MultiSelect>+<%Decide><yellow>別タイプアクション<c>
+LobbyActionCommand,0,LobbyAction_TypeC,<%MultiSelect>+<%Decide><yellow>別タイプアクション<c>
+LobbyActionCommand,1,LobbyActionText,<%NextTabDetails><yellow>Agregar a favoritos/Editar <c>
+LobbyActionCommand,1,VITA_LobbyActionText,<pict Sign_select><yellow>Agregar a favoritos/Editar <c>
+LobbyActionCommand,1,VITA_FavoritesSwitching,<pict Sign_select> Alternar todo/Favoritos
+LobbyActionCommand,1,LobbyAction_TypeA,<%MultiSelect> +<%Decide><yellow> Para otro tipo de gesto <c>
+LobbyActionCommand,1,LobbyAction_TypeB,<%MultiSelect> +<%Decide><yellow> Para otro tipo de gesto <c>
+LobbyActionCommand,1,LobbyAction_TypeC,<%MultiSelect> +<%Decide><yellow> Para otro tipo de gesto <c>
+MapCommand,0,MapCommand_Item2_1,エリアマップ非表示
+MapCommand,0,MapCommand_Item2_2,エリアマップ表示
+MapCommand,1,MapCommand_Item2_1,Ocultar mapa de área
+MapCommand,1,MapCommand_Item2_2,Mostrar mapa del área
+PartyMakerCommand,0,Installation,パーティーメイカーを設置する
+PartyMakerCommand,0,Removal,パーティーメイカーを撤去する
+PartyMakerCommand,1,Installation,Colocar baliza de fiesta
+PartyMakerCommand,1,Removal,Quitar baliza de fiesta
+Preset,0,PresetName0,基本タイプ
+Preset,0,PresetName1,01.多様さ重視
+Preset,0,PresetName2,02.コミュニケーション重視
+Preset,0,PresetName3,03.シングルプレイ重視
+Preset,0,PresetName4,04.マルチプレイ重視
+Preset,0,PresetName5,05.移動重視
+Preset,0,PresetName6,06.アイテム重視
+Preset,0,PresetName7,07.イベント重視
+Preset,0,PresetName8,08.育成重視
+Preset,0,PresetName9,09.専用メニュー重視
+Preset,0,PresetName10,10.撮影重視
+Preset,0,PresetName11,コミュニケーションタイプ
+Preset,0,QuickMenu_PatternDefaultName,カスタマイズパターン $(0)
+Preset,0,QuickMenu_PatternDefaultName1,カスタマイズパターン 1
+Preset,0,QuickMenu_PatternDefaultName2,カスタマイズパターン 2
+Preset,0,QuickMenu_PatternDefaultName3,カスタマイズパターン 3
+Preset,0,QuickMenu_PatternDefaultName4,カスタマイズパターン 4
+Preset,1,PresetName0,Tipos básicos
+Preset,1,PresetName1,01. Priorizar la diversidad
+Preset,1,PresetName2,02. Priorizar la comunicación
+Preset,1,PresetName3,03. Priorizar un jugador
+Preset,1,PresetName4,04. Priorizar el modo multijugador
+Preset,1,PresetName5,05. Priorizar los viajes
+Preset,1,PresetName6,06. Priorizar elementos
+Preset,1,PresetName7,07. Priorizar eventos
+Preset,1,PresetName8,08. Prioriza la crianza de mascotas
+Preset,1,PresetName9,09. Priorizar el menú dedicado
+Preset,1,PresetName10,10. Prioriza la toma de fotografías
+Preset,1,PresetName11,Tipos de comunicación
+Preset,1,QuickMenu_PatternDefaultName,Diseño personalizado $(0)
+Preset,1,QuickMenu_PatternDefaultName1,Diseño personalizado 1
+Preset,1,QuickMenu_PatternDefaultName2,Diseño personalizado 2
+Preset,1,QuickMenu_PatternDefaultName3,Diseño personalizado 3
+Preset,1,QuickMenu_PatternDefaultName4,Diseño personalizado 4
+ShortcutCommand,0,VITA_Shortcut_Title,ショートカット一覧
+ShortcutCommand,0,VITA_Tab_Symbol,シンボルアート
+ShortcutCommand,0,VITA_Tab_Chat,チャット
+ShortcutCommand,0,SubWindowChange1,<pict Sign_TRIANGLE>切替
+ShortcutCommand,0,VITA_Target,発言先：
+ShortcutCommand,0,SubWindowChange2,<%Function>切替
+ShortcutCommand,0,StartChat,チャット開始
+ShortcutCommand,1,VITA_Shortcut_Title,ATAJOS
+ShortcutCommand,1,VITA_Tab_Symbol,Arte simbólico
+ShortcutCommand,1,VITA_Tab_Chat,Charlar
+ShortcutCommand,1,SubWindowChange1,Cambiar <pict Sign_TRIANGLE>
+ShortcutCommand,1,VITA_Target,A:
+ShortcutCommand,1,SubWindowChange2,Cambiar <%Function>
+ShortcutCommand,1,StartChat,Comenzar a chatear
+UserCommand,0,UserCommand_Item1,キャラクター頭上表示切り替え
+UserCommand,0,UserCommand_Item2,オンラインステータス変更
+UserCommand,0,UserCommand_Item4,カメラ距離切り替え
+UserCommand,0,OverheadDisplay_NoSENID,なし
+UserCommand,0,OverheadDisplay_Item1,表示なし
+UserCommand,0,OverheadDisplay_Item2,キャラクター名
+UserCommand,0,OverheadDisplay_Item3,クラスレベル/キャラクター名
+UserCommand,0,OverheadDisplay_Item4,“PSN”のオンラインID/プレイヤーIDネーム
+UserCommand,0,OverheadDisplay_Item5,プレイヤーIDネーム
+UserCommand,0,OverheadDisplay_Item6,プレイヤーIDネーム/キャラクター名
+UserCommand,0,OverheadDisplay_Item7,プレイヤーID
+UserCommand,0,OverheadDisplay_Item8,キャラクター名/HPバー
+UserCommand,0,OverheadDisplay_Item9,セット中の称号/キャラクター名
+UserCommand,0,OverheadDisplay_Item10,所属チーム/チーム役職
+UserCommand,0,OverheadDisplay_Item11,所属チーム/キャラクター名
+UserCommand,0,OverheadDisplay_Item12,キャラクター名(自分以外)
+UserCommand,0,Camera_Item1,キャラクターに近づける
+UserCommand,0,Camera_Item2,キャラクターから遠ざける
+UserCommand,0,TagName,：$(0)
+UserCommand,0,TitleNon,称号なし
+UserCommand,0,GuildNon,所属チームなし
+UserCommand,0,OverheadDisplay_Item13,キャラクター名/HP・PPバー
+UserCommand,0,OverheadDisplay_Item14,シップ名/キャラクター名
+UserCommand,1,UserCommand_Item1,Alternar visualización superior de caracteres
+UserCommand,1,UserCommand_Item2,Cambiar estado en línea
+UserCommand,1,UserCommand_Item4,Cambiar la distancia de la cámara
+UserCommand,1,OverheadDisplay_NoSENID,Ninguno
+UserCommand,1,OverheadDisplay_Item1,Esconder
+UserCommand,1,OverheadDisplay_Item2,Nombre del personaje
+UserCommand,1,OverheadDisplay_Item3,Nivel de clase/nombre del personaje
+UserCommand,1,OverheadDisplay_Item4,ID en línea de PSN/Nombre de ID del jugador
+UserCommand,1,OverheadDisplay_Item5,Nombre de identificación del jugador
+UserCommand,1,OverheadDisplay_Item6,Nombre de ID del jugador/Nombre del personaje
+UserCommand,1,OverheadDisplay_Item7,ID del jugador
+UserCommand,1,OverheadDisplay_Item8,Nombre del personaje/barra HP
+UserCommand,1,OverheadDisplay_Item9,Establecer título/nombre de personaje
+UserCommand,1,OverheadDisplay_Item10,Alianza/Posición en la Alianza
+UserCommand,1,OverheadDisplay_Item11,Nombre de la alianza/personaje
+UserCommand,1,OverheadDisplay_Item12,Nombre del personaje (que no sea el tuyo)
+UserCommand,1,Camera_Item1,Ampliar el personaje
+UserCommand,1,Camera_Item2,Alejar el personaje
+UserCommand,1,TagName,: $(0)
+UserCommand,1,TitleNon,Sin título
+UserCommand,1,GuildNon,Sin alianza
+UserCommand,1,OverheadDisplay_Item13,Nombre del personaje/HP y barra PP
+UserCommand,1,OverheadDisplay_Item14,Nombre del barco/Nombre del personaje
