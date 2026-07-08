@@ -27,6 +27,11 @@ GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 TIEMPO_ESPERA = int(os.getenv("TIEMPO_ESPERA", "600"))
 PUSH_CADA = int(os.getenv("PUSH_CADA", "1"))
+DEFER_FILES = {
+    name.strip()
+    for name in os.getenv("ARCHIVOS_DIFERIR", "apc_chat_3.csv").split(",")
+    if name.strip()
+}
 
 FIELDNAMES = ["section", "group", "id", "text"]
 SKIP_IDS = {"name01", "name02"}
@@ -396,20 +401,37 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
     return 1
 
 
+def pick_next_file(pending: list[Path]) -> Path | None:
+    """Elige el CSV mas liviano. Los archivos pesados (DEFER_FILES) van al final."""
+    if not pending:
+        return None
+
+    normal = [p for p in pending if p.name not in DEFER_FILES]
+    deferred = [p for p in pending if p.name in DEFER_FILES]
+    pool = normal if normal else deferred
+    return min(pool, key=lambda p: p.stat().st_size)
+
+
 def process_next_file(cache: dict[str, str]) -> int:
     """Traduce un solo archivo. Retorna 1 si hubo cambio, 0 si no hay pendientes."""
     INPUT_DIR.mkdir(exist_ok=True)
     OUTPUT_DIR.mkdir(exist_ok=True)
     QUARANTINE_DIR.mkdir(exist_ok=True)
 
-    pending = sorted(INPUT_DIR.glob("*.csv"))
+    pending = list(INPUT_DIR.glob("*.csv"))
     if not pending:
         log("No hay archivos pendientes en 'archivos a traducir/'.")
         return 0
 
-    filename = pending[0].name
+    next_file = pick_next_file(pending)
+    if not next_file:
+        return 0
+
+    filename = next_file.name
+    size_kb = next_file.stat().st_size / 1024
     restantes = len(pending)
-    log(f"Pendientes: {restantes} | Procesando: {filename}")
+    defer_note = " (diferido al final)" if filename in DEFER_FILES else ""
+    log(f"Pendientes: {restantes} | Procesando: {filename} ({size_kb:.1f} KB){defer_note}")
     try:
         return process_one_file(filename, cache)
     except Exception as exc:
@@ -423,7 +445,9 @@ def process_next_file(cache: dict[str, str]) -> int:
 def main() -> None:
     LOG.write_text("", encoding="utf-8")
     log("=== Traductor PSO2 ES (Google Translate + Railway + GitHub) ===")
-    log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} modificaciones")
+    log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} | Livianos primero")
+    if DEFER_FILES:
+        log(f"Archivos diferidos al final: {', '.join(sorted(DEFER_FILES))}")
 
     git_ready = setup_git()
     cache = load_cache()
