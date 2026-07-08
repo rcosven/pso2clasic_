@@ -2,7 +2,7 @@
 nixPkgs = ["python311", "git"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip install --no-cache-dir -r requirements.txt"]
 
 [start]
 cmd = "python translate_missing.py"
