@@ -7,14 +7,14 @@ Event1,0,text04,今回は、ウォンドを使った<br>エトワールの戦い
 Event1,0,text05,ウォンドは、攻撃の最中であっても<br><red>常に移動することができる<c>ので<br>流れるように攻撃を当てられます！
 Event1,0,text06,<red>ＰＡ「ブラックホールラプチャー」を<br>移動しながら命中<c>させてみましょう！<br>前方に敵を集める効果もありますよ！
 Event1,0,text101,課題１：<yellow>ＰＡをエネミーに使用する<c>
-Event1,1,name01,Xiera
-Event1,1,11_voice_train_04001,"Hello, and welcome to the <br>Wand Basics training course!"
-Event1,1,text02,n to having <red>powerful <br>defensive capabilities<c> and <red>support skills<c>.
-Event1,1,text03,"They are capable of fighting with <red>Double <br>Sabers<c>, <red>Soaring Blades<c>, and <red>Wands<c>."
-Event1,1,text04,This time we'll be learning how an Étoile <br>fights with a Wand. Let's get to it!
-Event1,1,text05,"A medida que atacas con <br>attacking, puedes enviar una lluvia de ataques <br>"
-Event1,1,text06,"Try <red>hitting the enemy with a Black Hole <br>Rapture Photon Art while moving<c>! That'll <br>gather all the enemies in front of you, too."
-Event1,1,text101,Training 1: <yellow>Use a Photon Art on the enemy<c>
+Event1,1,name01,¿?
+Event1,1,11_voice_train_04001,"Hello, and welcome to the<br>¡Curso de formación sobre conceptos básicos de varita mágica!"
+Event1,1,text02,Étoile es un Scion Class que sobresale en <red>close<br>combate de cuartos<c> además de tener <red>poderoso<br>capacidades defensivas<c> y <red>habilidades de apoyo<c>.
+Event1,1,text03,"Son capaces de luchar con <red>Double<br>Sables<c>, <red>Hojas altísimas<c> y <red>varas<c>."
+Event1,1,text04,Esta vez aprenderemos cómo funciona una Étoile.<br>pelea con una varita. ¡Vamos a ello!
+Event1,1,text05,"Las varitas <red> te permiten moverte<br>veces<c>, incluso cuando esté en medio de<br>atacando, por lo que puedes enviar un<br>corriente de ataques!"
+Event1,1,text06,Intenta <red>golpear al enemigo con un agujero negro<br>¡Arte de fotones de éxtasis mientras te mueves<c>! Eso<br>Reúne también a todos los enemigos frente a ti.
+Event1,1,text101,Entrenamiento 1: <yellow>Usa un Arte de Fotones en el enemigo<c>
 Tut_win,0,train_title,課題１：<yellow>ＰＡをエネミーに使用する<c>
 Tut_win,0,tut_title,フォトンアーツについて
 Tut_win,0,text100,・<%WeaponAction>と<%PhotonArts>でフォトンアーツを発動
@@ -22,10 +22,10 @@ Tut_win,0,text100_3b,・<%PhotonArts>でフォトンアーツを発動
 Tut_win,0,tut_win_title,『エトワールウォンドの武器アクション』について
 Tut_win,0,tut_win_text100,エトワールウォンドは<br>ＰＡ中に表示されるガイドに合わせて<br>武器アクションを押すことで<br>範囲が狭くなる代わりに、威力の高い攻撃<br>「フォーカスＰＡ」を放つことができます。<br><br>戦況によって通常のＰＡと<br>フォーカスＰＡをうまく使い分けましょう。
 Tut_win,0,tut_win_text101,br><br>また、「エトワールウォンドギア」を<br>習得している場合、ギアゲージを消費して<br>ガード状態を維持することもできます。
-Tut_win,1,train_title,Training 1: <yellow>Use a Photon Art on the enemy<c>
-Tut_win,1,tut_title,"A continuacion, practicaremos como saltarnos un Photon Art! ||TAG_0||Ataque con un Photon Art||TAG_1||sin presionar||TAG_2||un boton direccional ||TAG_3||."
-Tut_win,1,text100,-Unleash a Photon Art with <%WeaponAction> and <%PhotonArts>
-Tut_win,1,text100_3b,-Unleash a Photon Art with <%PhotonArts>
-Tut_win,1,tut_win_title,La accion del arma de la varita Etoile
-Tut_win,1,tut_win_text100,"By pressing the Weapon Action button in time with the visual guide <br>during a Photon Art, you will unleash a Focused Photon Art that <br>is smaller in scope, but more powerful.<br><br>Decide when to use a regular Photon Art versus a Focused Photon <br>Art by judging your current battle situation."
-Tut_win,1,tut_win_text101,"><br>Furthermore, if you have learned Étoile Wand Focus then you can <br>deplete the gauge to maintain your defensive stance."
+Tut_win,1,train_title,Entrenamiento 1: <yellow>Usa un Arte de Fotones en el enemigo<c>
+Tut_win,1,tut_title,Artes fotónicas
+Tut_win,1,text100,-Desata un arte fotónico con <%WeaponAction> y <%PhotonArts>
+Tut_win,1,text100_3b,-Desata un arte fotónico con <%PhotonArts>
+Tut_win,1,tut_win_title,La acción del arma de la varita Étoile
+Tut_win,1,tut_win_text100,"Al presionar el botón de acción del arma al mismo tiempo que la guía visual<br>Durante un Photon Art, desatarás un Focused Photon Art que<br>Tiene un alcance más pequeño, pero más poderoso.<br><br>Decida cuándo utilizar un Photon Art normal frente a un Photon Focused<br>Arte juzgando tu situación de batalla actual."
+Tut_win,1,tut_win_text101,"El uso de la acción de arma de la varita Étoile activará la protección de carga,<br>una habilidad que te permite defenderte mientras te mueves.<br><br>Además, si has aprendido Étoile Wand Focus entonces podrás<br>agota el indicador para mantener tu postura defensiva."
