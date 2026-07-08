@@ -239,23 +239,43 @@ def pull_from_github() -> None:
         log("Nuevos archivos descargados correctamente.")
 
 
-def push_to_github() -> None:
-    for path in ("archivos a traducir", "listo", "Cuarentena", "translation_cache.json"):
-        target = REPO_DIR / path
-        if target.exists():
-            subprocess.run(["git", "add", path], cwd=REPO_DIR, check=False)
+def push_to_github() -> bool:
+    subprocess.run(["git", "add", "-A", "listo"], cwd=REPO_DIR, check=False)
+    subprocess.run(["git", "add", "-A", "archivos a traducir"], cwd=REPO_DIR, check=False)
+    subprocess.run(["git", "add", "-A", "Cuarentena"], cwd=REPO_DIR, check=False)
+    if CACHE_FILE.exists():
+        subprocess.run(["git", "add", "-f", "translation_cache.json"], cwd=REPO_DIR, check=False)
 
     status = subprocess.run(["git", "status", "--porcelain"], cwd=REPO_DIR, capture_output=True, text=True)
     if not status.stdout.strip():
-        return
+        log("Push omitido: Git no detecta cambios pendientes.")
+        return False
 
     log("Guardando cambios en GitHub (Push)...")
-    subprocess.run(
+    log(status.stdout.strip().split("\n")[0][:120])
+
+    commit = subprocess.run(
         ["git", "commit", "-m", "Bot: Traducciones Google Translate"],
         cwd=REPO_DIR,
-        check=False,
+        capture_output=True,
+        text=True,
     )
-    subprocess.run(["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
+    if commit.returncode != 0:
+        log(f"Error en commit: {commit.stderr.strip() or commit.stdout.strip()}")
+        return False
+
+    push = subprocess.run(
+        ["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if push.returncode != 0:
+        log(f"Error en push: {push.stderr.strip() or push.stdout.strip()}")
+        return False
+
+    log("Push completado en GitHub.")
+    return True
 
 
 def process_one_file(filename: str, cache: dict[str, str]) -> int:
@@ -340,6 +360,11 @@ def main() -> None:
     log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} modificaciones")
 
     git_ready = setup_git()
+    if git_ready:
+        log("GitHub: listo para pull/push.")
+    else:
+        log("GitHub: NO disponible (solo traduce local en el contenedor).")
+
     cache = load_cache()
     modificaciones = 0
 
@@ -352,13 +377,15 @@ def main() -> None:
         if cambios:
             modificaciones += cambios
             log(f"Modificaciones acumuladas: {modificaciones}/{PUSH_CADA}")
-            if git_ready and modificaciones >= PUSH_CADA:
-                push_to_github()
-                modificaciones = 0
+            if not git_ready:
+                log("Aviso: cambios sin subir (Git no configurado).")
+            elif modificaciones >= PUSH_CADA:
+                if push_to_github():
+                    modificaciones = 0
         elif git_ready and modificaciones > 0:
             log(f"Sin pendientes. Guardando {modificaciones} cambios restantes...")
-            push_to_github()
-            modificaciones = 0
+            if push_to_github():
+                modificaciones = 0
 
         log(f"Esperando {TIEMPO_ESPERA / 60} minutos...")
         time.sleep(TIEMPO_ESPERA)
