@@ -26,7 +26,7 @@ LOG = Path("/app/translate_missing.log")
 
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
-TIEMPO_ENTRE_ARCHIVOS = int(os.getenv("TIEMPO_ENTRE_ARCHIVOS", "15"))
+TIEMPO_ENTRE_ARCHIVOS = int(os.getenv("TIEMPO_ENTRE_ARCHIVOS", "3"))
 TIEMPO_SIN_PENDIENTES = int(os.getenv("TIEMPO_ESPERA", "600"))
 TRADUCCION_TIMEOUT = int(os.getenv("TRADUCCION_TIMEOUT", "30"))
 PUSH_CADA = int(os.getenv("PUSH_CADA", "1"))
