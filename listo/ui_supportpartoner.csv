@@ -3,10 +3,10 @@ Common,0,ReturnText,戻る
 Common,0,ItemDetails,アイテム詳細
 Common,0,PreviewTitle,プレビュー
 Common,0,Close,閉じる
-Common,1,ReturnText,Back
-Common,1,ItemDetails,Item Details
-Common,1,PreviewTitle,PREVIEW
-Common,1,Close,Close
+Common,1,ReturnText,Atrás
+Common,1,ItemDetails,Detalles del artículo
+Common,1,PreviewTitle,AVANCE
+Common,1,Close,Cerca
 PartnerCustom,0,PartnerCustom,パートナー装備カスタム
 PartnerCustom,0,Weapon,武器交換
 PartnerCustom,0,Back,リアユニット交換
@@ -23,26 +23,26 @@ PartnerCustom,0,PartnerEquipInfo,装備情報
 PartnerCustom,0,Delete,装備を外す
 PartnerCustom,0,PresentEquipment,現在の装備
 PartnerCustom,0,SwitchVita,<pict Sign_TRIANGLE>切替
-PartnerCustom,1,PartnerCustom,Customize Auxiliary's Equipment
-PartnerCustom,1,Weapon,Swap Weapon
-PartnerCustom,1,Back,Swap Back Unit
-PartnerCustom,1,Arm,Swap Arm Unit
-PartnerCustom,1,Leg,Swap Leg Unit
-PartnerCustom,1,Costume,Swap Outfit
-PartnerCustom,1,BodyParts,Swap Body Parts
-PartnerCustom,1,ArmParts,Swap Arm Parts
-PartnerCustom,1,LegParts,Swap Leg Parts
-PartnerCustom,1,WeaponAvatar,Swap Weapon Camo
-PartnerCustom,1,PetEgg,Swap Egg
-PartnerCustom,1,ItemPacTitle,CANDIDATE LIST
-PartnerCustom,1,PartnerEquipInfo,Equipment Information
-PartnerCustom,1,Delete,Remove Equipment
-PartnerCustom,1,PresentEquipment,Current Equipment
-PartnerCustom,1,SwitchVita,Switch <pict Sign_TRIANGLE>
+PartnerCustom,1,PartnerCustom,Personalizar el equipo del auxiliar
+PartnerCustom,1,Weapon,Cambiar arma
+PartnerCustom,1,Back,Intercambiar unidad trasera
+PartnerCustom,1,Arm,Unidad de brazo intercambiable
+PartnerCustom,1,Leg,Intercambiar unidad de pierna
+PartnerCustom,1,Costume,Intercambiar atuendo
+PartnerCustom,1,BodyParts,Intercambiar partes del cuerpo
+PartnerCustom,1,ArmParts,Intercambiar piezas del brazo
+PartnerCustom,1,LegParts,Intercambiar partes de las piernas
+PartnerCustom,1,WeaponAvatar,Cambiar camuflaje de arma
+PartnerCustom,1,PetEgg,intercambiar huevo
+PartnerCustom,1,ItemPacTitle,LISTA DE CANDIDATOS
+PartnerCustom,1,PartnerEquipInfo,Información del equipo
+PartnerCustom,1,Delete,Quitar equipo
+PartnerCustom,1,PresentEquipment,Equipo actual
+PartnerCustom,1,SwitchVita,Cambiar <pict Sign_TRIANGLE>
 Leave,0,LeaveMessage,サポートパートナーに席を外させ、<br>一時的に部屋にいない状態にできます。<br><br>「サポートパートナーを呼び出す」を選ぶと<br>ふたたび呼び戻すことができます。<br><br>席を外させますか？
 Leave,0,LeaveMessage2,席を外させました。
-Leave,1,LeaveMessage,Allows you to temporarily dismiss your Auxiliary.<br><br>You can call your Auxiliary back again by<br>selecting [Summon Auxiliary].<br><br>Do you want to temporarily dismiss your Auxiliary?
-Leave,1,LeaveMessage2,Your Auxiliary left.
+Leave,1,LeaveMessage,Le permite dar de baja temporalmente a su Auxiliar.<br><br>Puede volver a llamar a su auxiliar llamando<br>seleccionando [Summon Auxiliary].<br><br>¿Quieres dar de baja temporalmente a tu Auxiliar?
+Leave,1,LeaveMessage2,Tu auxiliar se fue.
 Result,0,ReceiptMessage,$(0)から<br>以下のアイテムを受け取りました。
 Result,0,GetExpTitle,取得経験値
 Result,0,GetExp,今回の取得経験値
@@ -54,17 +54,17 @@ Result,0,QuestOrder,手伝ったオーダー
 Result,0,ItemTitle,取得アイテム受け取り
 Result,0,Success,成功
 Result,0,Failure,失敗
-Result,1,ReceiptMessage,Received the following item(s) from $(0).
-Result,1,GetExpTitle,EXP EARNED
-Result,1,GetExp,EXP Earned This Time
+Result,1,ReceiptMessage,Recibí los siguientes artículos de $(0).
+Result,1,GetExpTitle,EXP OBTENIDA
+Result,1,GetExp,EXP obtenida esta vez
 Result,1,Exp,EXP
 Result,1,Level,Lv.
-Result,1,NextLevel,Until Next Level
-Result,1,QuestTitle,SEARCH RESULTS
-Result,1,QuestOrder,Orders Assisted
-Result,1,ItemTitle,ACQUIRED ITEMS RECEIVED
-Result,1,Success,Success
-Result,1,Failure,Failure
+Result,1,NextLevel,Hasta el siguiente nivel
+Result,1,QuestTitle,RESULTADOS DE LA BÚSQUEDA
+Result,1,QuestOrder,Pedidos asistidos
+Result,1,ItemTitle,ARTÍCULOS ADQUIRIDOS RECIBIDOS
+Result,1,Success,Éxito
+Result,1,Failure,Falla
 Menu,0,Top_Title,サポートパートナーメニュー
 Menu,0,Explain_Top,<c f0df60>サポートパートナーにいろいろな指示を出すことができます。<c>
 Menu,0,Explain_Order,<c f0df60>あなたが受注しているオーダーの一部を手伝わせることができます。あと <c ff4f3f>$(0)件<c f0df60> 選択できます。<c>
@@ -125,73 +125,73 @@ Menu,0,PartnerChangeSubclassError,サポートパートナーの<br>サブクラ
 Menu,0,PartnerChangeSameSubclass,$(0)は現在のサブクラスです。
 Menu,0,StartCheckButton1,出発
 Menu,0,StartCheckButton2,姿を残して出発
-Menu,1,Top_Title,AUXILIARY MENU
-Menu,1,Explain_Top,<c f0df60>Issue a variety of commands to your Auxiliary.<c>
-Menu,1,Explain_Order,<c f0df60>Your Auxiliary can help you with a portion of the orders you have accepted. You can select <c ff4f3f>$(0) <c f0df60>more orders.<c>
-Menu,1,Explain_OrderCancel,<c f0df60>Cancels all searches that your Auxiliary is helping you with.<c>
-Menu,1,Explain_Status,<c f0df60>Allows you to check your Auxiliary's stats and equipment.<c>
-Menu,1,Explain_SubClass,<c f0df60>Change your Auxiliary's Sub-Class.<c>
-Menu,1,Explain_Talk,<c f0df60>Talk with your Auxiliary.<c>
-Menu,1,Explain_Equip,"<c f0df60>You can change your auxiliary's equipment. <c f0df60>Once selected, you can <c ff4f3f>change it to an equippable class.<c>"
+Menu,1,Top_Title,MENÚ AUXILIAR
+Menu,1,Explain_Top,<c f0df60>Envía una variedad de comandos a tu Auxiliar.<c>
+Menu,1,Explain_Order,<c f0df60>Tu Auxiliar puede ayudarte con una parte de los pedidos que hayas aceptado. Puedes seleccionar <c ff4f3f>$(0) <c f0df60>más pedidos.<c>
+Menu,1,Explain_OrderCancel,<c f0df60>Cancela todas las búsquedas en las que te está ayudando tu Auxiliar.<c>
+Menu,1,Explain_Status,<c f0df60>Te permite verificar las estadísticas y el equipo de tu Auxiliar.<c>
+Menu,1,Explain_SubClass,<c f0df60>Cambia la subclase de tu auxiliar.<c>
+Menu,1,Explain_Talk,<c f0df60>Habla con tu Auxiliar.<c>
+Menu,1,Explain_Equip,"<c f0df60>Puedes cambiar el equipo de tu auxiliar. <c f0df60>Una vez seleccionado, puedes <c ff4f3f>cambiarlo a una clase equipable.<c>"
 Menu,1,Explain_Move,<space>
-Menu,1,Explain_Return,<c f0df60>Temporarily dismisses your Auxiliary.<c>
+Menu,1,Explain_Return,<c f0df60>Despide temporalmente a tu Auxiliar.<c>
 Menu,1,Explain_Back,<space>
-Menu,1,Explain_Pose,<c f0df60>You can choose your Auxiliary's pose.<c>
-Menu,1,AccessMenu_Title,AUXILIARY MENU
-Menu,1,AccessMenu_Order,Send on Search
+Menu,1,Explain_Pose,<c f0df60>Puedes elegir la pose de tu Auxiliar.<c>
+Menu,1,AccessMenu_Title,MENÚ AUXILIAR
+Menu,1,AccessMenu_Order,Enviar en búsqueda
 Menu,1,AccessMenu_OrderCancel,Cancel Search
-Menu,1,AccessMenu_Status,View Auxiliary Information
-Menu,1,AccessMenu_Talk,Talk
-Menu,1,AccessMenu_Equip,Customize Equipment
-Menu,1,AccessMenu_Move,Move Furnishings
-Menu,1,AccessMenu_Return,Dismiss Temporarily
-Menu,1,AccessMenu_Back,Leave
-Menu,1,AccessMenu_SubClass,Set Sub-Class
-Menu,1,AccessMenu_Pose,Select Pose
-Menu,1,Pose_FormTitle,SELECT POSE
-Menu,1,Warehouse,Open Storage
-Menu,1,MyRoomMenu_Order,Send on Search
+Menu,1,AccessMenu_Status,Ver información auxiliar
+Menu,1,AccessMenu_Talk,Hablar
+Menu,1,AccessMenu_Equip,Personalizar equipo
+Menu,1,AccessMenu_Move,Mover muebles
+Menu,1,AccessMenu_Return,Descartar temporalmente
+Menu,1,AccessMenu_Back,Dejar
+Menu,1,AccessMenu_SubClass,Establecer subclase
+Menu,1,AccessMenu_Pose,Seleccionar postura
+Menu,1,Pose_FormTitle,SELECCIONAR POSE
+Menu,1,Warehouse,Almacenamiento abierto
+Menu,1,MyRoomMenu_Order,Enviar en búsqueda
 Menu,1,MyRoomMenu_OrderCancel,Cancel Search
-Menu,1,MyRoomMenu_OrderResult,Report Search Results
-Menu,1,MyRoomMenu_Status,View Auxiliary Information
-Menu,1,DictatePartner,Send on Search
-Menu,1,OrderSelect,Select Order
-Menu,1,PartnerStart,Send on Search
+Menu,1,MyRoomMenu_OrderResult,Informar resultados de búsqueda
+Menu,1,MyRoomMenu_Status,Ver información auxiliar
+Menu,1,DictatePartner,Enviar en búsqueda
+Menu,1,OrderSelect,Seleccionar Orden
+Menu,1,PartnerStart,Enviar en búsqueda
 Menu,1,PartnerCancel,Cancel Search
-Menu,1,PartnerOverStartMessage,"Your Auxiliary can only assist with up to<br>$(0) orders.<br>If you would like to select this order, please deselect some other order."
-Menu,1,PartnerStartMessage,No. of Order Assists: $(0) (Max: $(1))<br>Estimated Completion Time: $(2).<br><br>Are you sure you want to send your Auxiliary out with these orders?
-Menu,1,PartnerStartMessage2,Your Auxiliary has been sent.
-Menu,1,PartnerFaliedMessage,No orders selected. Please select the orders you<br>would like your Auxiliary to assist you with from<br>the ones you have accepted.
-Menu,1,PartnerCancelMessage,You can cancel your Auxiliary's current search and have it return to your Personal Quarters.<br><br>You won't receive items or EXP earned during the search if you cancel.<br><br>Are you sure you want to cancel the search?
-Menu,1,PartnerCancelMessage2,Search canceled.
-Menu,1,PartnerCancelMessage3,You can cancel the current search.<br><br>You won't receive items or EXP earned during the search if you cancel.<br><br>Are you sure you want to cancel the search?
-Menu,1,PartnerChangeJobMessage,Your Auxiliary's class will be changed to $(0) in order to equip this weapon.<br>Are you sure you wish to proceed?
-Menu,1,PartnerChangeJobError,Your Auxiliary can't be changed to a class that can equip this weapon.
-Menu,1,PartnerChangeEquipSuccess,Equipment changed.
-Menu,1,PartnerChangeEquipError1,Failed to change equipment.
-Menu,1,PartnerChangeEquipError2,You can't give your Auxiliary an item that you currently have equipped.
-Menu,1,PartnerChangeEquipError3,You can't give your Auxiliary an item that's been locked.
-Menu,1,PartnerChangeEquipError4,The equipment can't be changed due to race restrictions.
-Menu,1,PartnerChangeEquipError5,The equipment can't be changed due to gender restrictions.
-Menu,1,PartnerChangeEquipError6,The equipment can't be changed due to class restrictions.
-Menu,1,PartnerChangeEquipError7,The equipment can't be changed due to class-change restrictions.
-Menu,1,PartnerChangeEquipError8,Failed to change your Auxiliary's class.
-Menu,1,PartnerChangeEquipError9,Failed to change your Auxiliary's equipment.
-Menu,1,PartnerChangeEquipError10,Failed to process your Auxiliary's equipment change.
-Menu,1,PartnerChangeEquipError11,You can't give your Auxiliary an unappraised item.
-Menu,1,PartnerChangeEquipError12,The equipment can't be removed because there isn't enough room in your inventory.
-Menu,1,PartnerChangeSubclassSuccess,Sub-Class changed.
-Menu,1,PartnerChangeSubclassError,Failed to change your Auxiliary's Sub-Class.
-Menu,1,PartnerChangeSameSubclass,Current Sub-Class: $(0).
-Menu,1,StartCheckButton1,Send
-Menu,1,StartCheckButton2,Send (Keep image)
+Menu,1,PartnerOverStartMessage,"Su Auxiliar sólo puede ayudar con hasta<br>$(0) pedidos.<br>Si desea seleccionar este pedido, deseleccione algún otro pedido."
+Menu,1,PartnerStartMessage,No. de asistencias para pedidos: $(0) (Máx.: $(1))<br>Tiempo estimado de finalización: $(2).<br><br>¿Estás seguro de que quieres enviar a tu Auxiliar con estas órdenes?
+Menu,1,PartnerStartMessage2,Su Auxiliar ha sido enviado.
+Menu,1,PartnerFaliedMessage,No hay pedidos seleccionados. Por favor seleccione los pedidos que<br>Le gustaría que su Auxiliar lo ayude desde<br>los que has aceptado.
+Menu,1,PartnerCancelMessage,Puedes cancelar la búsqueda actual de tu Auxiliar y hacer que regrese a tu Alojamiento Personal.<br><br>No recibirás artículos ni EXP obtenidos durante la búsqueda si cancelas.<br><br>¿Estás seguro de que deseas cancelar la búsqueda?
+Menu,1,PartnerCancelMessage2,Búsqueda cancelada.
+Menu,1,PartnerCancelMessage3,Puede cancelar la búsqueda actual.<br><br>No recibirás artículos ni EXP obtenidos durante la búsqueda si cancelas.<br><br>¿Estás seguro de que deseas cancelar la búsqueda?
+Menu,1,PartnerChangeJobMessage,La clase de tu Auxiliar se cambiará a $(0) para poder equipar esta arma.<br>¿Está seguro de que desea continuar?
+Menu,1,PartnerChangeJobError,Tu Auxiliar no se puede cambiar a una clase que pueda equipar esta arma.
+Menu,1,PartnerChangeEquipSuccess,Equipo cambiado.
+Menu,1,PartnerChangeEquipError1,No se pudo cambiar el equipo.
+Menu,1,PartnerChangeEquipError2,No puedes darle a tu Auxiliar un objeto que tengas equipado actualmente.
+Menu,1,PartnerChangeEquipError3,No puedes darle a tu Auxiliar un objeto que haya sido bloqueado.
+Menu,1,PartnerChangeEquipError4,El equipamiento no se puede cambiar debido a restricciones de carrera.
+Menu,1,PartnerChangeEquipError5,El equipo no se puede cambiar debido a restricciones de género.
+Menu,1,PartnerChangeEquipError6,El equipo no se puede cambiar debido a restricciones de clase.
+Menu,1,PartnerChangeEquipError7,El equipo no se puede cambiar debido a restricciones de cambio de clase.
+Menu,1,PartnerChangeEquipError8,No se pudo cambiar la clase de tu Auxiliar.
+Menu,1,PartnerChangeEquipError9,No se pudo cambiar el equipo de su Auxiliar.
+Menu,1,PartnerChangeEquipError10,No se pudo procesar el cambio de equipo de su Auxiliar.
+Menu,1,PartnerChangeEquipError11,No puedes darle a tu Auxiliar un artículo sin tasar.
+Menu,1,PartnerChangeEquipError12,El equipo no se puede retirar porque no hay suficiente espacio en su inventario.
+Menu,1,PartnerChangeSubclassSuccess,Subclase cambiada.
+Menu,1,PartnerChangeSubclassError,No se pudo cambiar la subclase de su auxiliar.
+Menu,1,PartnerChangeSameSubclass,Subclase actual: $(0).
+Menu,1,StartCheckButton1,Enviar
+Menu,1,StartCheckButton2,Enviar (Mantener imagen)
 Status,0,Leave,（あと $(0)）
-Status,1,Leave,($(0) Remaining)
+Status,1,Leave,($(0) restante)
 SubClass,0,SubClassSelectTitle,サブクラスの選択
 SubClass,0,SubClassChangeMessage,サポートパートナーのサブクラスを<br>$(0)に変更させます。<br><br>よろしいですか？
 SubClass,0,ClassList,クラスリスト
 SubClass,0,ClassLevel,Lv.(MAX)
-SubClass,1,SubClassSelectTitle,SELECT SUB-CLASS
-SubClass,1,SubClassChangeMessage,Are you sure you want to change your Auxiliary's Sub-Class<br>to $(0)?
-SubClass,1,ClassList,Class List
+SubClass,1,SubClassSelectTitle,SELECCIONAR SUBCLASE
+SubClass,1,SubClassChangeMessage,¿Estás seguro de que quieres cambiar la subclase de tu auxiliar?<br>a $(0)?
+SubClass,1,ClassList,Lista de clases
 SubClass,1,ClassLevel,Level (MAX)
