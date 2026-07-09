@@ -254,20 +254,22 @@ def setup_git() -> bool:
         if sync.returncode != 0:
             log(f"Error sync inicial: {sync.stderr.strip() or sync.stdout.strip()}")
             return False
-    elif has_local_changes():
-        log("Hay cambios locales sin subir, intentando push...")
+    elif has_local_changes() or commits_ahead_of_remote() > 0:
+        log("Hay cambios/commits locales sin subir, intentando push...")
         if not push_with_retry():
-            log("Git listo con cambios pendientes (no se borrara el progreso local).")
+            log("Git listo con progreso local pendiente (NO se hara reset --hard).")
             return True
         pull = subprocess.run(
-            ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
+            ["git", "pull", "--rebase", "origin", GITHUB_BRANCH],
             cwd=REPO_DIR,
             capture_output=True,
             text=True,
         )
         if pull.returncode != 0:
             log(f"Aviso pull: {pull.stderr.strip() or pull.stdout.strip()}")
+            subprocess.run(["git", "rebase", "--abort"], cwd=REPO_DIR, capture_output=True)
     else:
+        # Solo reset si no hay trabajo local ni commits sin push.
         sync = subprocess.run(
             ["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"],
             cwd=REPO_DIR,
@@ -284,7 +286,131 @@ def setup_git() -> bool:
         check=False,
     )
 
+    # Limpieza inicial: basura vacia fuera de la cola.
+    scrub_empty_from_queue()
+
     log("Conexion con GitHub establecida correctamente.")
+    return True
+
+
+def is_csv_empty(path: Path) -> bool:
+    """True si no hay filas de datos (solo cabecera o archivo vacio)."""
+    try:
+        return len(read_csv(path)) == 0
+    except Exception:
+        return path.stat().st_size < 50
+
+
+def quarantine_empty_file(path: Path) -> bool:
+    """Mueve un CSV vacio a Cuarentena. Si ya estaba ahi, solo lo borra de la cola."""
+    if not path.exists():
+        return False
+    QUARANTINE_DIR.mkdir(parents=True, exist_ok=True)
+    dest = QUARANTINE_DIR / path.name
+    try:
+        if dest.exists():
+            path.unlink(missing_ok=True)
+            log(f"AISLADO: {path.name} vacio (ya en Cuarentena), eliminado de cola.")
+        else:
+            shutil.move(str(path), str(dest))
+            log(f"AISLADO: {path.name} vacio, movido a Cuarentena.")
+        return True
+    except Exception as exc:
+        log(f"ERROR aislando {path.name}: {exc}")
+        return False
+
+
+def scrub_empty_from_queue() -> int:
+    """
+    Limpia de la cola TODOS los CSV vacios de una vez.
+    Evita el bucle de miles de commits solo por gacha/banner vacios.
+    Nunca reintroduce archivos que ya estan en Cuarentena.
+    """
+    ensure_input_dir()
+    QUARANTINE_DIR.mkdir(parents=True, exist_ok=True)
+    cleaned = 0
+    for path in list(INPUT_DIR.glob("*.csv")):
+        if is_csv_empty(path):
+            if quarantine_empty_file(path):
+                cleaned += 1
+    if cleaned:
+        log(f"Limpieza cola: {cleaned} CSV vacios enviados a Cuarentena/borrados.")
+    return cleaned
+
+
+def commits_ahead_of_remote() -> int:
+    """Cuantos commits locales no estan en origin/branch."""
+    subprocess.run(
+        ["git", "fetch", "origin", GITHUB_BRANCH],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    res = subprocess.run(
+        ["git", "rev-list", "--count", f"origin/{GITHUB_BRANCH}..HEAD"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if res.returncode != 0:
+        return 0
+    try:
+        return int((res.stdout or "0").strip() or "0")
+    except ValueError:
+        return 0
+
+
+def push_existing_commits() -> bool:
+    """Intenta push de commits ya hechos. Si remote avanzo, fetch+rebase y reintenta."""
+    push = subprocess.run(
+        ["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if push.returncode == 0:
+        log("Push completado en GitHub.")
+        return True
+
+    err = (push.stderr or push.stdout or "").strip()
+    log(f"Error en push: {err[:300]}")
+
+    if "rejected" not in err.lower() and "fetch first" not in err.lower():
+        return False
+
+    log("Remote adelantado: fetch + rebase y reintento de push...")
+    fetch = subprocess.run(
+        ["git", "fetch", "origin", GITHUB_BRANCH],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if fetch.returncode != 0:
+        log(f"Error fetch: {(fetch.stderr or fetch.stdout or '')[:200]}")
+        return False
+
+    rebase = subprocess.run(
+        ["git", "rebase", f"origin/{GITHUB_BRANCH}"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if rebase.returncode != 0:
+        log(f"Error rebase: {(rebase.stderr or rebase.stdout or '')[:300]}")
+        subprocess.run(["git", "rebase", "--abort"], cwd=REPO_DIR, capture_output=True)
+        return False
+
+    push2 = subprocess.run(
+        ["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if push2.returncode != 0:
+        log(f"Error en push tras rebase: {(push2.stderr or push2.stdout or '')[:300]}")
+        return False
+
+    log("Push completado en GitHub (tras rebase).")
     return True
 
 
@@ -300,27 +426,41 @@ def push_with_retry(max_attempts: int = 3) -> bool:
 
 
 def sync_github() -> bool:
-    """Primero PUSH (guardar), luego PULL (traer nuevos). Nunca pull si push fallo."""
-    if has_local_changes():
+    """PUSH local (commit+push con rebase si hace falta), luego PULL."""
+    # Quitar basura vacia antes de stagear (evita re-añadir gacha vacios a la cola).
+    scrub_empty_from_queue()
+
+    if has_local_changes() or commits_ahead_of_remote() > 0:
         log("Subiendo cambios locales a GitHub antes del pull...")
         if not push_with_retry():
             log("CRITICO: Pull cancelado para no perder progreso local.")
             return False
 
     pull = subprocess.run(
-        ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
+        ["git", "pull", "--rebase", "origin", GITHUB_BRANCH],
         cwd=REPO_DIR,
         capture_output=True,
         text=True,
     )
     if pull.returncode != 0:
-        log(f"Error en pull: {pull.stderr.strip() or pull.stdout.strip()}")
-        return False
+        log(f"Error en pull --rebase: {pull.stderr.strip() or pull.stdout.strip()}")
+        subprocess.run(["git", "rebase", "--abort"], cwd=REPO_DIR, capture_output=True)
+        # Fallback ff-only
+        pull = subprocess.run(
+            ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if pull.returncode != 0:
+            log(f"Error en pull: {pull.stderr.strip() or pull.stdout.strip()}")
+            return False
 
-    if "Already up to date" in pull.stdout:
+    out = pull.stdout or ""
+    if "Already up to date" in out or "up to date" in out.lower():
         log("Pull: repositorio actualizado.")
     else:
-        log("Pull completado: nuevos archivos descargados de GitHub.")
+        log("Pull completado: repo sincronizado con GitHub.")
     return True
 
 
@@ -336,8 +476,10 @@ def has_local_changes() -> bool:
 
 def push_to_github() -> bool:
     ensure_input_dir()
+    # Nunca reintroducir vacios a la cola en el stage.
+    scrub_empty_from_queue()
+
     # Evitar que Git detecte "rename" de cola -> listo y confunda el historial.
-    # Primero stage listo (nuevos/modificados), luego la cola (borrados reales).
     subprocess.run(
         ["git", "-c", "diff.renames=false", "add", "-A", "listo"],
         cwd=REPO_DIR,
@@ -348,44 +490,47 @@ def push_to_github() -> bool:
         cwd=REPO_DIR,
         check=False,
     )
-    subprocess.run(["git", "add", "-A", "Cuarentena"], cwd=REPO_DIR, check=False)
+    subprocess.run(
+        ["git", "-c", "diff.renames=false", "add", "-A", "Cuarentena"],
+        cwd=REPO_DIR,
+        check=False,
+    )
     if CACHE_FILE.exists():
         subprocess.run(["git", "add", "-f", "translation_cache.json"], cwd=REPO_DIR, check=False)
 
     status = subprocess.run(["git", "status", "--porcelain"], cwd=REPO_DIR, capture_output=True, text=True)
-    if not status.stdout.strip():
-        log("Push omitido: Git no detecta cambios pendientes.")
-        return False
+    has_staged_or_worktree = bool(status.stdout.strip())
+    ahead = commits_ahead_of_remote()
 
-    log("Guardando cambios en GitHub (Push)...")
-    # Mostrar un resumen corto (no solo la primera linea: puede ser un rename confuso)
-    lines = [ln for ln in status.stdout.strip().split("\n") if ln.strip()]
-    log(f"Cambios a subir: {len(lines)}")
-    for ln in lines[:5]:
-        log(f"  {ln[:140]}")
+    if not has_staged_or_worktree and ahead <= 0:
+        log("Push omitido: nada que subir (working tree limpio y al dia).")
+        return True  # No es error: ya esta sincronizado
 
-    commit = subprocess.run(
-        ["git", "commit", "-m", "Bot: Traducciones Google Translate"],
-        cwd=REPO_DIR,
-        capture_output=True,
-        text=True,
-    )
-    if commit.returncode != 0:
-        log(f"Error en commit: {commit.stderr.strip() or commit.stdout.strip()}")
-        return False
+    if has_staged_or_worktree:
+        log("Guardando cambios en GitHub (Push)...")
+        lines = [ln for ln in status.stdout.strip().split("\n") if ln.strip()]
+        log(f"Cambios a subir: {len(lines)}")
+        for ln in lines[:5]:
+            log(f"  {ln[:140]}")
 
-    push = subprocess.run(
-        ["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"],
-        cwd=REPO_DIR,
-        capture_output=True,
-        text=True,
-    )
-    if push.returncode != 0:
-        log(f"Error en push: {push.stderr.strip() or push.stdout.strip()}")
-        return False
+        commit = subprocess.run(
+            ["git", "commit", "-m", "Bot: Traducciones Google Translate"],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if commit.returncode != 0:
+            msg = (commit.stderr or commit.stdout or "").strip()
+            if "nothing to commit" in msg.lower():
+                log("Nada nuevo que commitear; intentando push de commits pendientes...")
+            else:
+                log(f"Error en commit: {msg[:300]}")
+                if ahead <= 0:
+                    return False
+    elif ahead > 0:
+        log(f"Hay {ahead} commit(s) local(es) sin push; reintentando subida...")
 
-    log("Push completado en GitHub.")
-    return True
+    return push_existing_commits()
 
 
 def process_one_file(filename: str, cache: dict[str, str]) -> int:
@@ -396,24 +541,23 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
     if not input_path.exists():
         return 0
 
-    # Si el usuario puso el archivo en "archivos a traducir/", hay que procesarlo.
-    # Antes se borraba sin traducir si ya existia en listo/ (OMITIDO) y vaciaba la cola.
-    if output_path.exists():
-        log(f"RE-TRADUCIENDO: {filename} (ya existe en listo/, se sobrescribira)")
-
     rows = read_csv(input_path)
     if not rows:
-        log(f"AISLADO: {filename} vacio, movido a Cuarentena.")
-        QUARANTINE_DIR.mkdir(exist_ok=True)
-        shutil.move(str(input_path), str(QUARANTINE_DIR / filename))
-        return 1
+        return 1 if quarantine_empty_file(input_path) else 0
+
+    # Si el usuario puso el archivo en "archivos a traducir/", hay que procesarlo.
+    if output_path.exists():
+        log(f"RE-TRADUCIENDO: {filename} (ya existe en listo/, se sobrescribira)")
 
     raw_rows = read_csv(raw_path)
     raw_g1 = {(r["section"], r["id"]): r["text"] for r in raw_rows if r["group"] == "1"}
     jp_g0 = {(r["section"], r["id"]): r["text"] for r in raw_rows if r["group"] == "0"}
 
     g1_rows = [r for r in rows if r["group"] == "1"]
-    log(f"Traduciendo: {filename} ({len(g1_rows)} filas group=1)")
+    if not g1_rows:
+        log(f"Sin group=1 en {filename}: se copia a listo/ sin traducir.")
+    else:
+        log(f"Traduciendo: {filename} ({len(g1_rows)} filas group=1)")
     progress_step = 1 if len(g1_rows) <= 25 else 5
 
     for i, row in enumerate(g1_rows, 1):
@@ -452,13 +596,23 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
 
 
 def pick_next_file(pending: list[Path]) -> Path | None:
-    """Elige el CSV mas liviano. Los archivos pesados (DEFER_FILES) van al final."""
+    """
+    Elige el siguiente CSV a traducir.
+    - Ignora vacios (se limpian aparte).
+    - Prefiere archivos con contenido real (no solo livianos vacios).
+    - DEFER_FILES al final.
+    """
     if not pending:
         return None
 
-    normal = [p for p in pending if p.name not in DEFER_FILES]
-    deferred = [p for p in pending if p.name in DEFER_FILES]
+    usable = [p for p in pending if not is_csv_empty(p)]
+    if not usable:
+        return None
+
+    normal = [p for p in usable if p.name not in DEFER_FILES]
+    deferred = [p for p in usable if p.name in DEFER_FILES]
     pool = normal if normal else deferred
+    # Livianos con contenido primero (traducen rapido y desbloquean la cola).
     return min(pool, key=lambda p: p.stat().st_size)
 
 
@@ -476,6 +630,11 @@ def process_next_file(cache: dict[str, str]) -> int:
     OUTPUT_DIR.mkdir(exist_ok=True)
     QUARANTINE_DIR.mkdir(exist_ok=True)
 
+    # Primero sacar basura vacia de la cola (un solo lote, no 1 commit por archivo).
+    cleaned = scrub_empty_from_queue()
+    if cleaned:
+        return cleaned  # que se haga un solo push con todos los vacios
+
     pending = list(INPUT_DIR.glob("*.csv"))
     if not pending:
         log("No hay archivos pendientes en 'archivos a traducir/'.")
@@ -483,6 +642,7 @@ def process_next_file(cache: dict[str, str]) -> int:
 
     next_file = pick_next_file(pending)
     if not next_file:
+        log("Solo habia CSV vacios; cola limpia de basura.")
         return 0
 
     filename = next_file.name
