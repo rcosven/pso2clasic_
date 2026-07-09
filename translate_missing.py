@@ -5,16 +5,21 @@ Usa Google Translate linea por linea (mismo metodo que translate_batch.py).
 """
 
 import csv
+import hashlib
 import json
 import os
 import re
 import shutil
 import subprocess
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
 from pathlib import Path
 
 from deep_translator import GoogleTranslator
+
+# Subir este string cuando cambie la logica. Aparece en logs de Railway.
+BOT_VERSION = "2026-07-09-v3-autorestart"
 
 REPO_DIR = Path("/app")
 INPUT_DIR = REPO_DIR / "archivos a traducir"
@@ -23,6 +28,7 @@ OUTPUT_DIR = REPO_DIR / "listo"
 QUARANTINE_DIR = REPO_DIR / "Cuarentena"
 CACHE_FILE = Path("/app/translation_cache.json")
 LOG = Path("/app/translate_missing.log")
+SCRIPT_PATH = Path(__file__).resolve()
 
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
@@ -35,6 +41,17 @@ DEFER_FILES = {
     for name in os.getenv("ARCHIVOS_DIFERIR", "apc_chat_3.csv").split(",")
     if name.strip()
 }
+
+
+def sha256_file(path: Path) -> str:
+    try:
+        return hashlib.sha256(path.read_bytes()).hexdigest()
+    except Exception:
+        return ""
+
+
+# Hash del codigo con el que arranco ESTE proceso (en memoria).
+RUNNING_CODE_SHA = sha256_file(SCRIPT_PATH)
 
 FIELDNAMES = ["section", "group", "id", "text"]
 SKIP_IDS = {"name01", "name02"}
@@ -659,14 +676,34 @@ def process_next_file(cache: dict[str, str]) -> int:
         return 0
 
 
+def restart_if_script_updated(reason: str = "git pull") -> None:
+    """
+    Si git actualizo translate_missing.py en disco pero este proceso sigue con
+    el codigo viejo en memoria, reinicia el proceso para cargar la version nueva.
+    """
+    disk_sha = sha256_file(SCRIPT_PATH)
+    if not disk_sha or disk_sha == RUNNING_CODE_SHA:
+        return
+    log(f"Codigo nuevo en disco tras {reason}. Reiniciando bot (v={BOT_VERSION})...")
+    log(f"  sha memoria={RUNNING_CODE_SHA[:12]}... disco={disk_sha[:12]}...")
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os.execv(sys.executable, [sys.executable, str(SCRIPT_PATH), *sys.argv[1:]])
+
+
 def main() -> None:
     LOG.write_text("", encoding="utf-8")
     log("=== Traductor PSO2 ES (Google Translate + Railway + GitHub) ===")
+    log(f"BOT_VERSION={BOT_VERSION}")
+    log(f"script_sha={RUNNING_CODE_SHA[:16]}...")
     log(f"Modo: 1 archivo por ciclo | Push cada {PUSH_CADA} | Livianos primero")
     if DEFER_FILES:
         log(f"Archivos diferidos al final: {', '.join(sorted(DEFER_FILES))}")
 
     git_ready = setup_git()
+    # Tras setup_git (reset/pull), el .py en disco puede ser mas nuevo que este proceso.
+    restart_if_script_updated("setup_git")
+
     cache = load_cache()
     modificaciones = 0
 
@@ -674,9 +711,11 @@ def main() -> None:
         if not git_ready:
             log("Reintentando conexion con GitHub...")
             git_ready = setup_git()
+            restart_if_script_updated("setup_git retry")
 
         if git_ready:
             sync_github()
+            restart_if_script_updated("sync_github")
         else:
             log("CRITICO: GitHub no disponible. El progreso NO se guardara en la nube.")
 
