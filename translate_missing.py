@@ -19,7 +19,7 @@ from pathlib import Path
 from deep_translator import GoogleTranslator
 
 # Subir este string cuando cambie la logica. Aparece en logs de Railway.
-BOT_VERSION = "2026-07-09-v4-preserve-code"
+BOT_VERSION = "2026-07-09-v5-no-empty-pull"
 
 # Archivos del bot: NUNCA se pisan con git reset/pull (vienen del Docker/deploy).
 CODE_FILES = (
@@ -413,6 +413,57 @@ def scrub_empty_from_queue() -> int:
     return cleaned
 
 
+def drop_empty_cola_from_git_index() -> int:
+    """
+    Impide que vacios de 'archivos a traducir/' se suban o reaparezcan en el index.
+    - Deshace stage de A/?? de CSV vacios
+    - Borra el archivo del disco si sigue ahi
+    """
+    status = subprocess.run(
+        ["git", "status", "--porcelain", "-u", "archivos a traducir"],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    dropped = 0
+    for raw in (status.stdout or "").splitlines():
+        if not raw.strip():
+            continue
+        # Formato: XY PATH  o  XY "PATH CON ESPACIOS"
+        path_part = raw[3:].strip()
+        if path_part.startswith('"') and path_part.endswith('"'):
+            path_part = path_part[1:-1]
+        # renames: "old -> new"
+        if " -> " in path_part:
+            path_part = path_part.split(" -> ", 1)[1].strip().strip('"')
+        if not path_part.replace("\\", "/").startswith("archivos a traducir/"):
+            continue
+        if not path_part.lower().endswith(".csv"):
+            continue
+        full = REPO_DIR / path_part
+        xy = raw[:2]
+        is_add = "A" in xy or xy == "??" or xy.strip() == "A"
+        # Solo bloquear altas de vacios; los D (borrados) si se permiten.
+        if not is_add:
+            continue
+        empty = (not full.exists()) or is_csv_empty(full)
+        if not empty:
+            continue
+        # Sacar del index y del working tree
+        subprocess.run(
+            ["git", "rm", "-f", "--cached", "--ignore-unmatch", path_part],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if full.exists():
+            quarantine_empty_file(full)
+        dropped += 1
+    if dropped:
+        log(f"Bloqueados {dropped} CSV vacios: no se suben ni se re-anaden a la cola.")
+    return dropped
+
+
 def commits_ahead_of_remote() -> int:
     """Cuantos commits locales no estan en origin/branch."""
     subprocess.run(
@@ -501,9 +552,12 @@ def push_with_retry(max_attempts: int = 3) -> bool:
 
 
 def sync_github() -> bool:
-    """PUSH local (commit+push con rebase si hace falta), luego PULL de datos."""
-    # Quitar basura vacia antes de stagear (evita re-añadir gacha vacios a la cola).
+    """
+    PUSH local, luego PULL de datos.
+    Tras el pull se purgan CSV vacios: no se deja caer basura sin peso a la cola.
+    """
     scrub_empty_from_queue()
+    drop_empty_cola_from_git_index()
     code_backup = backup_code_files()
 
     if has_local_changes() or commits_ahead_of_remote() > 0:
@@ -522,7 +576,6 @@ def sync_github() -> bool:
     if pull.returncode != 0:
         log(f"Error en pull --rebase: {pull.stderr.strip() or pull.stdout.strip()}")
         subprocess.run(["git", "rebase", "--abort"], cwd=REPO_DIR, capture_output=True)
-        # Fallback ff-only
         pull = subprocess.run(
             ["git", "pull", "--ff-only", "origin", GITHUB_BRANCH],
             cwd=REPO_DIR,
@@ -538,6 +591,12 @@ def sync_github() -> bool:
     if restored:
         log(f"Codigo del deploy preservado tras pull ({restored} archivos).")
 
+    # Critico: el pull puede reintroducir gacha vacios desde GitHub. Fuera.
+    cleaned = scrub_empty_from_queue()
+    drop_empty_cola_from_git_index()
+    if cleaned:
+        log(f"Post-pull: {cleaned} vacios descartados (no se procesan ni se re-suben).")
+
     out = pull.stdout or ""
     if "Already up to date" in out or "up to date" in out.lower():
         log("Pull: repositorio actualizado.")
@@ -547,6 +606,9 @@ def sync_github() -> bool:
 
 
 def has_local_changes() -> bool:
+    # Solo cambios reales: no contar basura vacia sin stagear.
+    scrub_empty_from_queue()
+    drop_empty_cola_from_git_index()
     status = subprocess.run(
         ["git", "status", "--porcelain", "listo", "archivos a traducir", "Cuarentena", "translation_cache.json"],
         cwd=REPO_DIR,
@@ -558,20 +620,25 @@ def has_local_changes() -> bool:
 
 def push_to_github() -> bool:
     ensure_input_dir()
-    # Nunca reintroducir vacios a la cola en el stage.
+    # 1) Quitar vacios del disco
     scrub_empty_from_queue()
+    # 2) NUNCA stagear altas de vacios en la cola
+    drop_empty_cola_from_git_index()
 
-    # Evitar que Git detecte "rename" de cola -> listo y confunda el historial.
+    # listo/: traducciones nuevas (si se permiten altas)
     subprocess.run(
         ["git", "-c", "diff.renames=false", "add", "-A", "listo"],
         cwd=REPO_DIR,
         check=False,
     )
+    # cola/: SOLO -u (update) = borrados/modificaciones de tracked.
+    # NUNCA -A: eso re-subia gacha vacios como "A archivos a traducir/..."
     subprocess.run(
-        ["git", "-c", "diff.renames=false", "add", "-A", "archivos a traducir"],
+        ["git", "-c", "diff.renames=false", "add", "-u", "archivos a traducir"],
         cwd=REPO_DIR,
         check=False,
     )
+    # Cuarentena: si, altas de vacios aislados
     subprocess.run(
         ["git", "-c", "diff.renames=false", "add", "-A", "Cuarentena"],
         cwd=REPO_DIR,
@@ -580,19 +647,29 @@ def push_to_github() -> bool:
     if CACHE_FILE.exists():
         subprocess.run(["git", "add", "-f", "translation_cache.json"], cwd=REPO_DIR, check=False)
 
+    # Cinturon de seguridad: si algo vacio se stageo igual, sacarlo
+    drop_empty_cola_from_git_index()
+
     status = subprocess.run(["git", "status", "--porcelain"], cwd=REPO_DIR, capture_output=True, text=True)
-    has_staged_or_worktree = bool(status.stdout.strip())
+    lines = [ln for ln in (status.stdout or "").strip().split("\n") if ln.strip()]
+    # Ignorar lineas que sean solo basura de cola vacia
+    useful = []
+    for ln in lines:
+        if 'archivos a traducir/' in ln and ("A " in ln[:3] or ln.startswith("??") or ln.startswith("A ")):
+            # no deberia quedar, pero por si acaso
+            continue
+        useful.append(ln)
+
     ahead = commits_ahead_of_remote()
 
-    if not has_staged_or_worktree and ahead <= 0:
-        log("Push omitido: nada que subir (working tree limpio y al dia).")
-        return True  # No es error: ya esta sincronizado
+    if not useful and ahead <= 0:
+        log("Push omitido: nada util que subir (sin vacios, sin traducciones).")
+        return True
 
-    if has_staged_or_worktree:
+    if useful:
         log("Guardando cambios en GitHub (Push)...")
-        lines = [ln for ln in status.stdout.strip().split("\n") if ln.strip()]
-        log(f"Cambios a subir: {len(lines)}")
-        for ln in lines[:5]:
+        log(f"Cambios a subir: {len(useful)}")
+        for ln in useful[:5]:
             log(f"  {ln[:140]}")
 
         commit = subprocess.run(
