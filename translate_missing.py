@@ -335,8 +335,19 @@ def has_local_changes() -> bool:
 
 
 def push_to_github() -> bool:
-    subprocess.run(["git", "add", "-A", "listo"], cwd=REPO_DIR, check=False)
-    subprocess.run(["git", "add", "-A", "archivos a traducir"], cwd=REPO_DIR, check=False)
+    ensure_input_dir()
+    # Evitar que Git detecte "rename" de cola -> listo y confunda el historial.
+    # Primero stage listo (nuevos/modificados), luego la cola (borrados reales).
+    subprocess.run(
+        ["git", "-c", "diff.renames=false", "add", "-A", "listo"],
+        cwd=REPO_DIR,
+        check=False,
+    )
+    subprocess.run(
+        ["git", "-c", "diff.renames=false", "add", "-A", "archivos a traducir"],
+        cwd=REPO_DIR,
+        check=False,
+    )
     subprocess.run(["git", "add", "-A", "Cuarentena"], cwd=REPO_DIR, check=False)
     if CACHE_FILE.exists():
         subprocess.run(["git", "add", "-f", "translation_cache.json"], cwd=REPO_DIR, check=False)
@@ -347,7 +358,11 @@ def push_to_github() -> bool:
         return False
 
     log("Guardando cambios en GitHub (Push)...")
-    log(status.stdout.strip().split("\n")[0][:120])
+    # Mostrar un resumen corto (no solo la primera linea: puede ser un rename confuso)
+    lines = [ln for ln in status.stdout.strip().split("\n") if ln.strip()]
+    log(f"Cambios a subir: {len(lines)}")
+    for ln in lines[:5]:
+        log(f"  {ln[:140]}")
 
     commit = subprocess.run(
         ["git", "commit", "-m", "Bot: Traducciones Google Translate"],
@@ -381,10 +396,10 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
     if not input_path.exists():
         return 0
 
+    # Si el usuario puso el archivo en "archivos a traducir/", hay que procesarlo.
+    # Antes se borraba sin traducir si ya existia en listo/ (OMITIDO) y vaciaba la cola.
     if output_path.exists():
-        log(f"OMITIDO: {filename} ya traducido en listo/")
-        input_path.unlink(missing_ok=True)
-        return 1
+        log(f"RE-TRADUCIENDO: {filename} (ya existe en listo/, se sobrescribira)")
 
     rows = read_csv(input_path)
     if not rows:
@@ -404,6 +419,7 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
     for i, row in enumerate(g1_rows, 1):
         key = (row["section"], row["id"])
         jp_text = jp_g0.get(key, "")
+        # Preferir ingles de Raw si existe; si no, el texto del archivo en cola.
         en_text = raw_g1.get(key, row["text"])
         override = should_use_jp_text(row["id"], jp_text, en_text)
         if override is not None:
@@ -423,7 +439,13 @@ def process_one_file(filename: str, cache: dict[str, str]) -> int:
         writer.writeheader()
         writer.writerows(rows)
 
-    input_path.unlink(missing_ok=True)
+    # Solo borrar de la cola DESPUES de guardar bien en listo/
+    if output_path.exists() and output_path.stat().st_size > 0:
+        input_path.unlink(missing_ok=True)
+    else:
+        log(f"ERROR: no se borro {filename} de la cola porque listo/ quedo vacio o no se creo.")
+        return 0
+
     save_cache(cache)
     log(f"OK -> listo/{filename} ({len(g1_rows)} filas group=1)")
     return 1
@@ -440,9 +462,17 @@ def pick_next_file(pending: list[Path]) -> Path | None:
     return min(pool, key=lambda p: p.stat().st_size)
 
 
+def ensure_input_dir() -> None:
+    """Mantiene la carpeta de cola aunque este vacia (Git no versiona dirs vacios)."""
+    INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    gitkeep = INPUT_DIR / ".gitkeep"
+    if not gitkeep.exists():
+        gitkeep.write_text("", encoding="utf-8")
+
+
 def process_next_file(cache: dict[str, str]) -> int:
     """Traduce un solo archivo. Retorna 1 si hubo cambio, 0 si no hay pendientes."""
-    INPUT_DIR.mkdir(exist_ok=True)
+    ensure_input_dir()
     OUTPUT_DIR.mkdir(exist_ok=True)
     QUARANTINE_DIR.mkdir(exist_ok=True)
 
@@ -463,10 +493,9 @@ def process_next_file(cache: dict[str, str]) -> int:
     try:
         return process_one_file(filename, cache)
     except Exception as exc:
+        # NUNCA borrar el pendiente si fallo: debe reintentarse en el siguiente ciclo.
         save_cache(cache)
-        log(f"ERROR en {filename}: {exc}")
-        if (OUTPUT_DIR / filename).exists():
-            (INPUT_DIR / filename).unlink(missing_ok=True)
+        log(f"ERROR en {filename}: {exc} (archivo se conserva en cola para reintento)")
         return 0
 
 
