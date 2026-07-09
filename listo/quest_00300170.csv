@@ -1,0 +1,107 @@
+section,group,id,text
+Basic,0,Title,魔神城戦
+Basic,0,Explanation,異世界オメガに存在する魔神城が活性化。<br>かの世界で戦乱が起こっています。<br>オメガへ向かい、魔神城を撃破しましょう。<br>魔神城の結界を突破するための兵器<br>「破界鎚」が鍵になる戦いですよ！<br>頑張りましょう、守護輝士！<br>――――――――――――――――――――<br>制限時間の経過でクエスト終了<br>敵の戦力ゲージを０にするか<br>制限時間経過時に残量が上回っていれば勝利
+Basic,0,StoryExplanation,ハリエット達の前に単独で姿を見せた<br>剣の巫女アリサとの対面もつかの間<br>ルツの奸計により、陣近くの草原に<br>魔神城が出現する。
+Basic,1,Title,Batalla de Castrum Demonica
+Basic,1,Explanation,"El Castrum Demonica, que se encuentra en<br>Alternate Dimension: Omega has become highly active.<br>Dicho mundo ha quedado encerrado en un estado de guerra.<br>for some time. Go to Omega and destroy the<br>Castrum Demonica. La clave de esta batalla será<br>ser el arma conocida como ""Buster Ram"",<br>que están diseñados para romper con el sistema de Castrum Demonica.<br>barrera. ¡Contamos con vosotros, Guardianes!<br>-------------------------------------<br>Esta misión terminará cuando expire el límite de tiempo.<br>Consigue la victoria usando el medidor de fuerzas del enemigo.<br>hasta cero o asegurar la energía restante<br>es mayor cuando expira el plazo."
+Basic,1,StoryExplanation,"El enfrentamiento con Sword Maiden Alis,<br>quien apareció solo ante Hariette y sus compañeros,<br>Apenas había comenzado cuando, gracias al engaño de Lutz,<br>El Castrum Demonica apareció en las llanuras cercanas."
+Basic_Story,0,Title,クエント中央平原の戦い
+Basic_Story,0,Explanation,ハリエット達の前に単独で姿を見せた<br>剣の巫女アリサとの対面もつかの間<br>ルツの奸計により、陣近くの草原に<br>魔神城が出現する。<br>――――――――――――――――――――<br>制限時間の経過でクエスト終了<br>敵の戦力ゲージを０にするか<br>制限時間経過時に残量が上回っていれば勝利
+Basic_Story,1,Title,La batalla de las llanuras centrales de Cuento
+Basic_Story,1,Explanation,"El enfrentamiento con Sword Maiden Alis, quien<br>apareció sola ante Hariette y su<br>compañeros, apenas había comenzado cuando, gracias<br>al engaño de Lutz, el Castrum Demonica<br>Apareció en las llanuras cercanas.<br>-------------------------------------<br>Esta misión terminará cuando expire el límite de tiempo.<br>Consigue la victoria usando el medidor de fuerzas del enemigo.<br>hasta cero o asegurar la energía restante<br>es mayor cuando expira el plazo."
+QuestTarget,0,SimpleExplanation,魔神城を撃破せよ！
+QuestTarget,1,SimpleExplanation,¡Destruye el Castrum Demonica!
+BasnetNpcCom,0,OnQuestBegin_0,敵軍、攻撃準備に入った模様！<br>今のうちに兵器セットの選択と<br>マナの回収を進めましょう！
+BasnetNpcCom,0,OnQuestBegin_1,マナを溜めるとアークス兵器が<br>強化され、召喚する破界鎚の数が<br>増えるなどの恩恵がありますよ！
+BasnetNpcCom,0,OnDefencePhase1Start0,敵軍の侵攻を確認！<br>破界塔を守りつつ、可能な限り<br>マナを回収して下さい！
+BasnetNpcCom,0,OnDefencePhase1Start1,敵軍、再度侵攻開始！<br>マナを一定量回収するごとに<br>破界塔が自動で回復しますよ！
+BasnetNpcCom,0,OnDefencePhase1Start2,敵軍、再侵攻開始！<br>破界塔を壊されないよう殲滅しつつ<br>マナの回収をお願いします！
+BasnetNpcCom,0,OnDefencePhase2Start0,大変です！　破界塔に向けて<br>敵軍が侵攻を開始しました！<br>一旦後退し、防衛に専念して下さい！
+BasnetNpcCom,0,OnDefencePhase2Start1,再度敵軍が侵攻を開始！　結界は<br>突破しましたが、破界塔を壊されたら<br>勝機はありません！注意して下さい！
+BasnetNpcCom,0,OnDefencePhase3Start0,魔神城から強力な反応を確認！<br>破界塔を狙った攻撃のようです！<br>確実に阻止して下さい！
+BasnetNpcCom,0,OnDefencePhase3Start1,再び魔神城から強力な反応……！<br>魔神城の攻撃を阻止し<br>破界塔を防衛して下さい！
+BasnetNpcCom,0,OnAttackPhase1Start0,破界鎚、召喚完了！<br>敵軍から破界鎚を護衛し<br>障壁を壊しましょう！
+BasnetNpcCom,0,OnAttackPhase1Start1,破界鎚、召喚完了！<br>敵軍の攻撃から破界鎚を守り<br>残った障壁を壊しましょう！
+BasnetNpcCom,0,OnAttackPhase1Start2,破界鎚を召喚しました！<br>今度こそ敵の障壁を突破しましょう！
+BasnetNpcCom,0,OnAttackPhase2Start0,全障壁の破壊に成功！<br>あとは魔神城を倒すだけです！<br>まずは腹部のコアを攻撃しましょう！
+BasnetNpcCom,0,OnAttackPhase2Start1,魔神城は、一定時間ごとに<br>破界塔に向けてレーザーを放ちます！<br>早急にコアを破壊してください！
+BasnetNpcCom,0,OnAttackPhase3Start0_0,魔神城を攻撃するために<br>左右の階段から中央の橋上に<br>移動して下さい！
+BasnetNpcCom,0,OnAttackPhase3Start0_1,今度も魔神城は、一定時間ごとに<br>強力なレーザーを放ってきます！<br>急ぎ撃破を！
+BasnetNpcCom,0,OnAttackPhase3Start1,再び防衛機構に登り<br>魔神城の弱点部へ向かってください！
+BasnetNpcCom,0,OnDefencePhase1End0,敵軍の制圧を確認！<br>破界鎚を召喚中です。今のうちに<br>進軍の準備をお願いします！
+BasnetNpcCom,0,OnDefencePhase1End1,再度破界鎚を召喚し障壁を攻撃します！<br>マナを回収して、召喚する<br>破界鎚の数を増やしましょう！
+BasnetNpcCom,0,OnDefencePhase1End2,破界鎚召喚中！<br>攻め込む準備をして下さい！
+BasnetNpcCom,0,OnAttackPhase1End0,破界鎚の消滅、及び敵増援を確認！<br>再侵攻が予測されるため<br>破界塔の守りを固めて下さい！
+BasnetNpcCom,0,OnAttackPhase1End1,破界鎚の消滅、及び<br>再度敵増援を確認！<br>破界塔の守りを固めて下さい！
+BasnetNpcCom,0,OnAttackPhase1End2,破界鎚の全破壊、及び<br>再度敵増援を確認しました！<br>破界塔の守りを固めて下さい！
+BasnetNpcCom,0,OnDefencePhaseEndByTimeOver,敵軍の動きに変化を確認しました！<br>一部エネミーは自爆してきますよ！<br>注意して下さい！
+BasnetNpcCom,0,OnDefencePhaseEnemyDecrease0,敵軍、数が減ってきています！<br>このまま押し切りましょう！
+BasnetNpcCom,0,OnDefencePhaseEnemyDecrease1,敵軍、残りあとわずかです！<br>あと少しですよ！
+BasnetNpcCom,0,OnWaveHapping,魔神城に不穏な動き有り！<br>妨害を仕掛けてきそうです！<br>各員は状況に応じ行動して下さい！
+BasnetNpcCom,0,OnRamCountIncrease,一定量のマナを回収しました！<br>より多くの破界鎚が召喚できます！<br>引き続きマナを回収しましょう！
+BasnetNpcCom,0,OnBaseHpDecrease0,$(0)破界塔の損傷拡大！<br>至急救援に向かって下さい！
+BasnetNpcCom,0,OnBaseHpDecrease1,$(0)破界塔、もう持ちません！<br>大至急救援をお願いします！
+BasnetNpcCom,0,OnBrokenBase0,破界塔の機能停止を確認！<br>残るは３つです！　まだ余裕は<br>あります！　焦らずに行きましょう！
+BasnetNpcCom,0,OnBrokenBase1,２つ目の破界塔も機能停止しました！<br>予断を許さない状態です！<br>注意して下さい！
+BasnetNpcCom,0,OnBrokenBase2,３つ目の破界塔、機能停止！<br>残る１つは必ず死守して下さい！
+BasnetNpcCom,0,OnBrokenBase3,全ての破界塔の停止を確認。<br>残念ですが、これ以上の<br>戦闘継続は不可能です。
+BasnetNpcCom,0,OnBossDeadlySkill,魔神城から超巨大エネルギー反応！<br>このままだと拠点が危ないです！<br>全力で凌いで下さい！
+BasnetNpcCom,0,OnHpGaugeDecrease0,自軍の損傷拡大中！<br>これ以上被害が大きくなれば<br>撤退することになります！
+BasnetNpcCom,0,OnHpGaugeDecrease1,自軍の損傷甚大！　これ以上は<br>耐えられません！　破界塔を守り<br>被害を最小限に抑えて下さい！
+BasnetNpcCom,0,OnTimeDecrease0,戦闘可能時間、残り半分です！<br>戦局がこちらに傾いていれば勝利ですが<br>可能であれば魔神城を撃破して下さい！
+BasnetNpcCom,0,OnTimeDecrease1,戦闘可能時間、残りわずかです！<br>あと少し、最後まで諦めずに<br>頑張って下さい！
+BasnetNpcCom,0,OnSuccessTimeover,敵軍の撤退を確認しました！<br>損傷もさほど大きくなく<br>我々の勝利ですよ！
+BasnetNpcCom,0,OnSuccessBreakGauge,魔神城の消滅を確認！<br>我々の完全勝利です！
+BasnetNpcCom,0,OnSuccessReturn,それでは帰還して下さい。<br>お疲れ様でした！
+BasnetNpcCom,0,OnFailureTimeover,破界塔の損傷を確認。<br>これ以上の戦闘は難しいです。<br>一度退却しましょう。
+BasnetNpcCom,0,OnFailureAnnihilationBase,全破界塔の機能停止を確認……<br>これ以上の戦闘継続は難しいので<br>一度退却しましょう。
+BasnetNpcCom,0,OnFailureReturn,残念ですが……仕方がないです。<br>帰還して下さい。
+BasnetNpcCom,1,OnQuestBegin_0,¡Parece que el enemigo se está preparando para atacar!<br>Ahora es el momento de seleccionar tu arma.<br>configuración y recolecta maná!
+BasnetNpcCom,1,OnQuestBegin_1,"Al acumular maná, tus armas ARKS<br>se volverá más fuerte y el número de<br>Buster Rams convocados aumentarán,<br>entre otros beneficios."
+BasnetNpcCom,1,OnDefencePhase1Start0,¡Avance enemigo confirmado!<br>Recoge todo el maná que puedas mientras proteges<br>¡La Torre Buster!
+BasnetNpcCom,1,OnDefencePhase1Start1,¡El enemigo ha reiniciado su avance!<br>La Buster Tower se curará sola cada vez que<br>¡Recoge una cierta cantidad de maná!
+BasnetNpcCom,1,OnDefencePhase1Start2,¡Se reanuda el avance enemigo!<br>Recoge maná mientras eliminas enemigos para que el<br>¡Buster Tower no está dañada!
+BasnetNpcCom,1,OnDefencePhase2Start0,¡Esto es malo! El anfitrión enemigo ha iniciado su<br>¡Asalto a la Torre Buster! retrocede un poco<br>¡Y concéntrate en la defensa!
+BasnetNpcCom,1,OnDefencePhase2Start1,"¡El enemigo ha reanudado su ataque! Tenemos<br>Hemos atravesado la barrera, pero no ganaremos esto.<br>¡Batalla si la Buster Tower es destruida! ¡Ten cuidado!"
+BasnetNpcCom,1,OnDefencePhase3Start0,Estamos recogiendo lecturas sólidas del Castrum<br>¡Demoníaca! Parece estar apuntando al Buster.<br>¡Torre! ¡Asegúrate de no dejarlo pasar!
+BasnetNpcCom,1,OnDefencePhase3Start1,Estamos recogiendo lecturas más sólidas del<br>¡Castrum Demoníaca...! Prevenir el ataque a la<br>¡Castrum Demonica y protege la Buster Tower!
+BasnetNpcCom,1,OnAttackPhase1Start0,¡El Buster Ram ha sido convocado!<br>Protege el Buster Ram del enemigo.<br>¡Ataca y destruye la barrera restante!
+BasnetNpcCom,1,OnAttackPhase1Start1,¡El Buster Ram ha sido convocado!<br>Protege el Buster Ram del enemigo.<br>¡Ataca y destruye la barrera restante!
+BasnetNpcCom,1,OnAttackPhase1Start2,¡Hemos convocado al Buster Ram! ahora es nuestro<br>¡Oportunidad de atravesar la barrera enemiga!
+BasnetNpcCom,1,OnAttackPhase2Start0,"¡Hemos logrado destruir toda la barrera!<br>¡Todo lo que queda es destruir el Castrum Demonica!<br>Primero, ¡ataca el núcleo abdominal!"
+BasnetNpcCom,1,OnAttackPhase2Start1,El Castrum Demonica disparará periódicamente<br>¡Un láser en la Buster Tower!<br>¡Destruye el núcleo lo más rápido que puedas!
+BasnetNpcCom,1,OnAttackPhase3Start0_0,Muévete al puente central a través de<br>las escaleras izquierda o derecha para atacar<br>¡El Castrum Demoníaco!
+BasnetNpcCom,1,OnAttackPhase3Start0_1,El Castrum Demonica vuelve a disparar<br>¡Un potente láser a intervalos fijos!<br>¡Ataca rápido!
+BasnetNpcCom,1,OnAttackPhase3Start1,Sube de nuevo a la estructura de defensa y dirígete.<br>¡Por los puntos débiles del Castrum Demonica!
+BasnetNpcCom,1,OnDefencePhase1End0,¡El enemigo nos está atacando!<br>Actualmente convocando al Buster Ram.<br>¡Prepárate para avanzar mientras puedas!
+BasnetNpcCom,1,OnDefencePhase1End1,Invoca al Buster Ram y ataca la barrera.<br>¡de nuevo! Recoge maná para aumentar el número de<br>¡Buster Rams convocado!
+BasnetNpcCom,1,OnDefencePhase1End2,¡Invocando al Buster Ram!<br>¡Prepárate para atacar!
+BasnetNpcCom,1,OnAttackPhase1End0,El Buster Ram ha sido destruido y el enemigo<br>¡Llegaron refuerzos! apuntalar el<br>Las defensas de Buster Tower para prepararse para otra<br>ola de ataque!
+BasnetNpcCom,1,OnAttackPhase1End1,La Buster Ram ha sido destruida y más<br>¡Han llegado refuerzos enemigos!<br>¡Apuntala las defensas de Buster Tower!
+BasnetNpcCom,1,OnAttackPhase1End2,La Buster Ram ha quedado completamente destruida<br>¡Y han llegado más refuerzos enemigos!<br>¡Apuntala las defensas de Buster Tower!
+BasnetNpcCom,1,OnDefencePhaseEndByTimeOver,¡El ejército enemigo parece estar alterando su estrategia!<br>Some enemies are self-destructing!<br>¡Tenga cuidado!
+BasnetNpcCom,1,OnDefencePhaseEnemyDecrease0,¡Los números del enemigo están disminuyendo!<br>¡Ahora es nuestra oportunidad de aplastarlos!
+BasnetNpcCom,1,OnDefencePhaseEnemyDecrease1,¡Solo quedan unos pocos enemigos!<br>¡No debería pasar mucho tiempo!
+BasnetNpcCom,1,OnWaveHapping,Algo inquietante le está sucediendo a la<br>Castrum Demonica! Parece que lo está intentando<br>¡Para implementar contramedidas!<br>¡Adapta tu estrategia según sea necesario!
+BasnetNpcCom,1,OnRamCountIncrease,Has recuperado suficiente maná para aumentar<br>¡El número de Buster Rams convocados!<br>¡Sigue recolectando maná!
+BasnetNpcCom,1,OnBaseHpDecrease0,$(0)¡La Buster Tower ha sufrido grandes daños!<br>¡Debes actuar rápidamente para intervenir!
+BasnetNpcCom,1,OnBaseHpDecrease1,$(0)La Buster Tower no va a funcionar<br>¡para aguantar mucho más! Su<br>¡Se requiere intervención urgente!
+BasnetNpcCom,1,OnBrokenBase0,"¡La Buster Tower ha dejado de funcionar!<br>¡Quedan tres! No estamos en una situación desesperada<br>aún así, ¡manténganse unidos!"
+BasnetNpcCom,1,OnBrokenBase1,¡La segunda Buster Tower ha dejado de funcionar!<br>¡No podemos soportar muchas más pérdidas!<br>¡Ten cuidado!
+BasnetNpcCom,1,OnBrokenBase2,¡La tercera Buster Tower ha dejado de funcionar!<br>Debes proteger la única torre que queda en<br>todos los costos!
+BasnetNpcCom,1,OnBrokenBase3,Todas las Buster Towers han sido neutralizadas.<br>Lamentablemente no podremos<br>continuar la batalla.
+BasnetNpcCom,1,OnBossDeadlySkill,Estamos recogiendo una lectura supermasiva de<br>¡El Castrum Demoníaco! La base está en<br>grave peligro si no se hace algo.<br>¡Haz lo que puedas para ayudar!
+BasnetNpcCom,1,OnHpGaugeDecrease0,"¡El daño se está extendiendo a través de nuestras fuerzas!<br>Si sufrimos muchos más daños, habrá<br>¡No habrá otra opción que retirarse!"
+BasnetNpcCom,1,OnHpGaugeDecrease1,¡Nuestras fuerzas han sufrido daños masivos!<br>¡No podemos aguantar mucho más! Proteger el<br>¡Buster Tower y minimiza tu exposición a daños!
+BasnetNpcCom,1,OnTimeDecrease0,¡Solo queda la mitad del tiempo asignado!<br>¡Podemos ganar esto si mantenemos el impulso!<br>¡Destruye el Castrum Demonica siempre que sea posible!
+BasnetNpcCom,1,OnTimeDecrease1,¡Ya no queda mucho del tiempo asignado!<br>Sólo tenemos que seguir adelante un poco más.<br>¡así que no te rindas!
+BasnetNpcCom,1,OnSuccessTimeover,¡Las fuerzas enemigas están retrocediendo!<br>Logramos asegurar la victoria con sólo<br>pérdidas mínimas!
+BasnetNpcCom,1,OnSuccessBreakGauge,¡Castrum Demonica está aniquilado!<br>¡Victoria para nosotros!
+BasnetNpcCom,1,OnSuccessReturn,Es hora de que regreses a casa.<br>¡Gracias por su valiente servicio!
+BasnetNpcCom,1,OnFailureTimeover,La Buster Tower ha sufrido daños.<br>Continuar la batalla será difícil.<br>Se recomienda una retirada temporal.
+BasnetNpcCom,1,OnFailureAnnihilationBase,"Todas las Buster Towers han sido desactivadas...<br>Continuar la batalla será difícil,<br>por lo que se recomienda una retirada temporal."
+BasnetNpcCom,1,OnFailureReturn,Desafortunadamente... nos hemos quedado sin opciones.<br>Por favor regresa.
+PreTransportDirection,0,NpcComMsg1,まもなく魔神城戦です！<br>既に魔神結界の展開も確認されており<br>激戦が予想されます。
+PreTransportDirection,0,NpcComMsg2,破界鎚を召喚して結界を破壊し<br>魔神城に接近、これを撃破して下さい。<br>健闘を祈ります！　頑張ってください！
+PreTransportDirection,1,NpcComMsg1,La batalla por Castrum Demonica está a punto de comenzar.<br>¡comenzar! Hemos confirmado el despliegue del<br>Arx Demonica y anticipar una feroz batalla.
+PreTransportDirection,1,NpcComMsg2,"Invoca Buster Rams, destruye barreras y<br>Destruye el Castrum Demonica al ser interceptado.<br>¡Buena suerte! ¡Cruzaré los dedos por ti!"
