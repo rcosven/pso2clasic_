@@ -23,30 +23,30 @@ Achievement,0,RareF_Rate,レア釣り率アップ $(0).$(1)%
 Achievement,0,RareC_Rate,レア採取率アップ $(0).$(1)%
 Achievement,0,AddF_Rate,追加釣り率アップ $(0).$(1)%
 Achievement,0,AddC_Rate,追加採取率アップ $(0).$(1)%
-Achievement,1,Gat_TitleStatus,GATHERING STATUS
-Achievement,1,Gat_TitleAbleList,AVAILABLE GATHERING ACHIEVEMENTS
+Achievement,1,Gat_TitleStatus,ESTADO DE LA REUNIÓN
+Achievement,1,Gat_TitleAbleList,LOGROS DE REUNIÓN DISPONIBLES
 Achievement,1,ResultNum,$(0)/$(1)
 Achievement,1,ResultNum_2,$(0)/
-Achievement,1,ResultNumTitle,<yellow>COMPLETED: $(0)/$(1) TIMES<c>
+Achievement,1,ResultNumTitle,<yellow>COMPLETADO: $(0)/$(1) VECES<c>
 Achievement,1,RewardNum,$(0)x$(1)
 Achievement,1,FeverTime_Add,+$(0)s
-Achievement,1,C_Level,Harvesting Level
-Achievement,1,F_Level,Fishing Level
+Achievement,1,C_Level,Nivel de cosecha
+Achievement,1,F_Level,Nivel de pesca
 Achievement,1,NextLevel,Level up by completing $(0) Achievements
 Achievement,1,Percent,$(0)%
 Achievement,1,Percent2,+$(0).$(1)%
 Achievement,1,ComboBonus,$(0)-$(1)
-Achievement,1,NumAchieve,$(0) Achiev.
+Achievement,1,NumAchieve,$(0) Lograr.
 Achievement,1,Time_3,$(0)h $(1)m
-Achievement,1,Time_2,$(0)m
-Achievement,1,Time_2Add,(Heal$(1)in$(0))
+Achievement,1,Time_2,$(0)millones
+Achievement,1,Time_2Add,(Curación$(1)en$(0))
 Achievement,1,Time_3Add,$(0)
-Achievement,1,No_Achievable,There are no available Achievements at this time
-Achievement,1,NoItemMsg,There are no more Achievements
-Achievement,1,RareF_Rate,Boost Rare Fishing Rate $(0).$(1)%
-Achievement,1,RareC_Rate,Boost Rare Harvesting Rate $(0).$(1)%
-Achievement,1,AddF_Rate,Boost Extra Fishing Rate $(0).$(1)%
-Achievement,1,AddC_Rate,Boost Extra Harvest Rate $(0).$(1)%
+Achievement,1,No_Achievable,No hay logros disponibles en este momento
+Achievement,1,NoItemMsg,No hay más logros
+Achievement,1,RareF_Rate,Aumentar la tasa de pesca poco común $(0).$(1)%
+Achievement,1,RareC_Rate,Aumentar la tasa de recolección de objetos raros $(0).$(1)%
+Achievement,1,AddF_Rate,Aumentar la tarifa de pesca adicional $(0).$(1)%
+Achievement,1,AddC_Rate,Aumentar la tasa de cosecha adicional $(0).$(1)%
 Name_C,0,Name_C0000,採取経験1
 Name_C,0,Name_C0001,採取経験2
 Name_C,0,Name_C0002,採取経験3
@@ -229,188 +229,188 @@ Name_C,0,Name_C0178,黒ノ領域ゴボウ採取経験1
 Name_C,0,Name_C0179,黒ノ領域ゴボウ採取経験2
 Name_C,0,Name_C0180,ハルコタンの破片採取経験１
 Name_C,0,Name_C0181,黒ノ領域ヘマタイト採取経験1
-Name_C,1,Name_C0000,Harvest Lv. 1
-Name_C,1,Name_C0001,Harvest Lv. 2
-Name_C,1,Name_C0002,Harvest Lv. 3
-Name_C,1,Name_C0003,Harvest Lv. 4
-Name_C,1,Name_C0004,Harvest Lv. 5
-Name_C,1,Name_C0005,Harvest Lv. 6
-Name_C,1,Name_C0006,Extra Harvest Lv. 1
-Name_C,1,Name_C0007,Extra Harvest Lv. 2
-Name_C,1,Name_C0008,Extra Harvest Lv. 3
-Name_C,1,Name_C0009,Extra Harvest Lv. 4
-Name_C,1,Name_C0010,Rare Harvest Lv. 1
-Name_C,1,Name_C0011,Rare Harvest Lv. 2
-Name_C,1,Name_C0012,Rare Harvest Lv. 3
-Name_C,1,Name_C0013,Rare Harvest Lv. 4
-Name_C,1,Name_C0014,Vegetable Harvest Lv. 1
-Name_C,1,Name_C0015,Fruit Harvest Lv. 1
-Name_C,1,Name_C0016,Grain Harvest Lv. 1
-Name_C,1,Name_C0017,Mineral Harvest Lv. 1
-Name_C,1,Name_C0018,Harvest Lv. 7
-Name_C,1,Name_C0019,Harvest Lv. 8
-Name_C,1,Name_C0020,Harvest Lv. 9
-Name_C,1,Name_C0021,Harvest Lv. 10
-Name_C,1,Name_C0022,Harvest Lv. 11
-Name_C,1,Name_C0023,Extra Harvest Lv. 5
-Name_C,1,Name_C0024,Extra Harvest Lv. 6
-Name_C,1,Name_C0025,Extra Harvest Lv. 7
-Name_C,1,Name_C0026,Extra Harvest Lv. 8
-Name_C,1,Name_C0027,Extra Harvest Lv. 9
-Name_C,1,Name_C0028,Rare Harvest Lv. 5
-Name_C,1,Name_C0029,Rare Harvest Lv. 6
-Name_C,1,Name_C0030,Rare Harvest Lv. 7
-Name_C,1,Name_C0031,Rare Harvest Lv. 8
-Name_C,1,Name_C0032,Rare Harvest Lv. 9
-Name_C,1,Name_C0033,Vegetable Harvest Lv. 2
-Name_C,1,Name_C0034,Fruit Harvest Lv. 2
-Name_C,1,Name_C0035,Grain Harvest Lv. 2
-Name_C,1,Name_C0036,Mineral Harvest Lv. 2
+Name_C,1,Name_C0000,Cosecha Lv. 1
+Name_C,1,Name_C0001,Cosecha Lv. 2
+Name_C,1,Name_C0002,Cosecha Lv. 3
+Name_C,1,Name_C0003,Cosecha Lv. 4
+Name_C,1,Name_C0004,Cosecha Lv. 5
+Name_C,1,Name_C0005,Cosecha Lv. 6
+Name_C,1,Name_C0006,Cosecha extra Lv. 1
+Name_C,1,Name_C0007,Cosecha extra Lv. 2
+Name_C,1,Name_C0008,Cosecha extra Lv. 3
+Name_C,1,Name_C0009,Cosecha extra Lv. 4
+Name_C,1,Name_C0010,Cosecha rara Lv. 1
+Name_C,1,Name_C0011,Cosecha rara Lv. 2
+Name_C,1,Name_C0012,Cosecha rara Lv. 3
+Name_C,1,Name_C0013,Cosecha rara Lv. 4
+Name_C,1,Name_C0014,Cosecha de vegetales Lv. 1
+Name_C,1,Name_C0015,Cosecha de Frutas Lv. 1
+Name_C,1,Name_C0016,Cosecha de Granos Lv. 1
+Name_C,1,Name_C0017,Cosecha de minerales Lv. 1
+Name_C,1,Name_C0018,Cosecha Lv. 7
+Name_C,1,Name_C0019,Cosecha Lv. 8
+Name_C,1,Name_C0020,Cosecha Lv. 9
+Name_C,1,Name_C0021,Cosecha Lv. 10
+Name_C,1,Name_C0022,Cosecha Lv. 11
+Name_C,1,Name_C0023,Cosecha extra Lv. 5
+Name_C,1,Name_C0024,Cosecha extra Lv. 6
+Name_C,1,Name_C0025,Cosecha extra Lv. 7
+Name_C,1,Name_C0026,Cosecha extra Lv. 8
+Name_C,1,Name_C0027,Cosecha extra Lv. 9
+Name_C,1,Name_C0028,Cosecha rara Lv. 5
+Name_C,1,Name_C0029,Cosecha rara Lv. 6
+Name_C,1,Name_C0030,Cosecha rara Lv. 7
+Name_C,1,Name_C0031,Cosecha rara Lv. 8
+Name_C,1,Name_C0032,Cosecha rara Lv. 9
+Name_C,1,Name_C0033,Cosecha de vegetales Lv. 2
+Name_C,1,Name_C0034,Cosecha de Frutas Lv. 2
+Name_C,1,Name_C0035,Cosecha de Granos Lv. 2
+Name_C,1,Name_C0036,Cosecha de minerales Lv. 2
 Name_C,1,Name_C0037,Jewel Harvest Lv. 1
-Name_C,1,Name_C0038,Forest Harvest Lv. 1
-Name_C,1,Name_C0039,Forest Harvest Lv. 2
-Name_C,1,Name_C0040,Forest Harvest Lv. 3
-Name_C,1,Name_C0041,Forest Tomato Harvest Lv. 1
-Name_C,1,Name_C0042,Forest Tomato Harvest Lv. 2
-Name_C,1,Name_C0043,Forest Rice Harvest Lv. 1
-Name_C,1,Name_C0044,Forest Rice Harvest Lv. 2
-Name_C,1,Name_C0045,Navershroom Harvest Lv. 1
-Name_C,1,Name_C0046,Forest Emerald Harvest Lv. 1
-Name_C,1,Name_C0047,Ruins Harvest Lv. 1
-Name_C,1,Name_C0048,Ruins Harvest Lv. 2
-Name_C,1,Name_C0049,Ruins Harvest Lv. 3
-Name_C,1,Name_C0050,Ruins Grape Harvest Lv. 1
-Name_C,1,Name_C0051,Ruins Grape Harvest Lv. 2
-Name_C,1,Name_C0052,Ruins Onion Harvest Lv. 1
-Name_C,1,Name_C0053,Ruins Onion Harvest Lv. 2
-Name_C,1,Name_C0054,Navershroom Harvest Lv. 1
-Name_C,1,Name_C0055,Ruins Amethyst Harvest Lv. 1
-Name_C,1,Name_C0056,Coast Harvest Lv. 1
-Name_C,1,Name_C0057,Coast Harvest Lv. 2
-Name_C,1,Name_C0058,Coast Harvest Lv. 3
-Name_C,1,Name_C0059,Coast Salt Harvest Lv. 1
-Name_C,1,Name_C0060,Coast Salt Harvest Lv. 2
-Name_C,1,Name_C0061,Coast Olive Harvest Lv. 1
-Name_C,1,Name_C0062,Coast Olive Harvest Lv. 2
-Name_C,1,Name_C0063,Wopal Shell Harvest Lv. 1
-Name_C,1,Name_C0064,Coast Sapphire Harvest Lv. 1
-Name_C,1,Name_C0065,Tokyo Harvest Lv. 1
-Name_C,1,Name_C0066,Tokyo Harvest Lv. 2
-Name_C,1,Name_C0067,Tokyo Harvest Lv. 3
-Name_C,1,Name_C0068,Tokyo Soybean Harvest Lv. 1
-Name_C,1,Name_C0069,Tokyo Soybean Harvest Lv. 2
-Name_C,1,Name_C0070,Earth Rock Harvest Lv. 1
-Name_C,1,Name_C0071,Earth Rock Harvest Lv. 2
-Name_C,1,Name_C0072,Empty Bottle Harvest Lv. 1
-Name_C,1,Name_C0073,Tokyo Opal Harvest Lv. 1
-Name_C,1,Name_C0074,Desert Harvest Lv. 1
-Name_C,1,Name_C0075,Desert Harvest Lv. 2
-Name_C,1,Name_C0076,Desert Harvest Lv. 3
-Name_C,1,Name_C0077,Desert Sansho Harvest Lv. 1
-Name_C,1,Name_C0078,Desert Sansho Harvest Lv. 2
-Name_C,1,Name_C0079,Desert Mango Harvest Lv. 1
-Name_C,1,Name_C0080,Desert Mango Harvest Lv. 2
-Name_C,1,Name_C0081,Lillipan Vest Harvest Lv. 1
-Name_C,1,Name_C0082,Desert Topaz Harvest Lv. 1
-Name_C,1,Name_C0083,Abandoned Mine Harvest Lv. 1
-Name_C,1,Name_C0084,Abandoned Mine Harvest Lv. 2
-Name_C,1,Name_C0085,Abandoned Mine Harvest Lv. 3
-Name_C,1,Name_C0086,Abandoned Mine Potato Harvest Lv. 1
-Name_C,1,Name_C0087,Abandoned Mine Potato Harvest Lv. 2
-Name_C,1,Name_C0088,Abandoned Mine Pepper Harvest Lv. 1
-Name_C,1,Name_C0089,Abandoned Mine Pepper Harvest Lv. 2
-Name_C,1,Name_C0090,Lillipan Vest Harvest Lv. 1
-Name_C,1,Name_C0091,Abandoned Mine Lapis Harvest Lv. 1
-Name_C,1,Name_C0092,Float. Facility Harvest Lv. 1
-Name_C,1,Name_C0093,Float. Facility Harvest Lv. 2
-Name_C,1,Name_C0094,Float. Facility Harvest Lv. 3
-Name_C,1,Name_C0095,Float. Facility Mint Harvest Lv. 1
-Name_C,1,Name_C0096,Float. Facility Mint Harvest Lv. 2
-Name_C,1,Name_C0097,Float. Facility Turnip Harvest Lv. 1
-Name_C,1,Name_C0098,Float. Facility Turnip Harvest Lv. 2
-Name_C,1,Name_C0099,Wopal Shell Harvest Lv. 1
-Name_C,1,Name_C0100,Float. Facility Tourmaline Harvest Lv. 1
-Name_C,1,Name_C0101,Las Vegas Harvest Lv. 1
-Name_C,1,Name_C0102,Las Vegas Harvest Lv. 2
-Name_C,1,Name_C0103,Las Vegas Harvest Lv. 3
-Name_C,1,Name_C0104,Las Vegas Lettuce Harvest Lv. 1
-Name_C,1,Name_C0105,Las Vegas Lettuce Harvest Lv. 2
-Name_C,1,Name_C0106,Las Vegas Corn Harvest Lv. 1
-Name_C,1,Name_C0107,Las Vegas Corn Harvest Lv. 2
-Name_C,1,Name_C0108,Empty Bottle Harvest Lv. 1
-Name_C,1,Name_C0109,Las Vegas Diamond Harvest Lv. 1
-Name_C,1,Name_C0110,Volcanic Caves Harvest Lv. 1
-Name_C,1,Name_C0111,Volcanic Caves Harvest Lv. 2
-Name_C,1,Name_C0112,Volcanic Caves Harvest Lv. 3
-Name_C,1,Name_C0113,Volcanic Caves Pumpkin Harvest Lv. 1
-Name_C,1,Name_C0114,Volcanic Caves Pumpkin Harvest Lv. 2
-Name_C,1,Name_C0115,Volcanic Caves Pineapple Harvest Lv. 1
-Name_C,1,Name_C0116,Volcanic Caves Pineapple Harvest Lv. 2
-Name_C,1,Name_C0117,Amduskian Dragonscale Harvest Lv. 1
-Name_C,1,Name_C0118,Volcanic Caves Garnet Harvest Lv. 1
-Name_C,1,Name_C0119,Tundra Harvest Lv. 1
-Name_C,1,Name_C0120,Tundra Harvest Lv. 2
-Name_C,1,Name_C0121,Tundra Harvest Lv. 3
-Name_C,1,Name_C0122,Tundra Spring Onion Harvest Lv. 1
-Name_C,1,Name_C0123,Tundra Spring Onion Harvest Lv. 2
-Name_C,1,Name_C0124,Tundra Green Apple Harvest Lv. 1
-Name_C,1,Name_C0125,Tundra Green Apple Harvest Lv. 2
-Name_C,1,Name_C0126,Navershroom Harvest Lv. 1
-Name_C,1,Name_C0127,Tundra Amber Harvest Lv. 1
-Name_C,1,Name_C0128,Underground Harvest Lv. 1
-Name_C,1,Name_C0129,Underground Harvest Lv. 2
-Name_C,1,Name_C0130,Underground Harvest Lv. 3
-Name_C,1,Name_C0131,Underground Mushroom Harvest Lv. 1
-Name_C,1,Name_C0132,Underground Mushroom Harvest Lv. 2
-Name_C,1,Name_C0133,Underground Ginger Harvest Lv. 1
-Name_C,1,Name_C0134,Underground Ginger Harvest Lv. 2
-Name_C,1,Name_C0135,Lillipan Vest Harvest Lv. 1
-Name_C,1,Name_C0136,Underground Peridot Harvest Lv. 1
-Name_C,1,Name_C0137,Daybreak Harvest Lv. 1
-Name_C,1,Name_C0138,Daybreak Harvest Lv. 2
-Name_C,1,Name_C0139,Daybreak Harvest Lv. 3
-Name_C,1,Name_C0140,Daybreak String Sprout Harvest Lv. 1
-Name_C,1,Name_C0141,Daybreak String Sprout Harvest Lv. 2
-Name_C,1,Name_C0142,Daybreak Eggplant Harvest Lv. 1
-Name_C,1,Name_C0143,Daybreak Eggplant Harvest Lv. 2
-Name_C,1,Name_C0144,Harukotan Fragment Harvest Lv. 1
-Name_C,1,Name_C0145,Daybreak Moon Stone Harvest Lv. 1
-Name_C,1,Name_C0146,Floating Cont. Harvest Lv. 1
-Name_C,1,Name_C0147,Floating Cont. Harvest Lv. 2
-Name_C,1,Name_C0148,Floating Cont. Harvest Lv. 3
-Name_C,1,Name_C0149,Floating Cont. Green Bean Harvest Lv. 1
-Name_C,1,Name_C0150,Floating Cont. Green Bean Harvest Lv. 2
-Name_C,1,Name_C0151,Floating Cont. Chestnut Harvest Lv. 1
-Name_C,1,Name_C0152,Floating Cont. Chestnut Harvest Lv. 2
-Name_C,1,Name_C0153,Amduskian Dragonscale Harvest Lv. 1
-Name_C,1,Name_C0154,Floating Cont. Fluorite Harvest Lv. 1
-Name_C,1,Name_C0155,Seabed Harvest Lv. 1
-Name_C,1,Name_C0156,Seabed Harvest Lv. 2
-Name_C,1,Name_C0157,Seabed Harvest Lv. 3
-Name_C,1,Name_C0158,Seabed Shallot Harvest Lv. 1
-Name_C,1,Name_C0159,Seabed Shallot Harvest Lv. 2
-Name_C,1,Name_C0160,Seabed Lemon Harvest Lv. 1
-Name_C,1,Name_C0161,Seabed Lemon Harvest Lv. 2
-Name_C,1,Name_C0162,Wopal Shell Harvest Lv. 1
-Name_C,1,Name_C0163,Seabed Tanzanite Harvest Lv. 1
-Name_C,1,Name_C0164,Dragon Altar Harvest Lv. 1
-Name_C,1,Name_C0165,Dragon Altar Harvest Lv. 2
-Name_C,1,Name_C0166,Dragon Altar Harvest Lv. 3
-Name_C,1,Name_C0167,Dragon Altar Radish Harvest Lv. 1
-Name_C,1,Name_C0168,Dragon Altar Radish Harvest Lv. 2
-Name_C,1,Name_C0169,Dragon Altar Spinach Harvest Lv. 1
-Name_C,1,Name_C0170,Dragon Altar Spinach Harvest Lv. 2
-Name_C,1,Name_C0171,Amduskian Dragonscale Harvest Lv. 1
-Name_C,1,Name_C0172,Dragon Altar Zircon Harvest Lv. 1
-Name_C,1,Name_C0173,Nightfall Harvest Lv. 1
-Name_C,1,Name_C0174,Nightfall Harvest Lv. 2
-Name_C,1,Name_C0175,Nightfall Harvest Lv. 3
-Name_C,1,Name_C0176,Nightfall Lotus Root Harvest Lv. 1
-Name_C,1,Name_C0177,Nightfall Lotus Root Harvest Lv. 2
-Name_C,1,Name_C0178,Nightfall Burdock Root Harvest Lv. 1
-Name_C,1,Name_C0179,Nightfall Burdock Root Harvest Lv. 2
-Name_C,1,Name_C0180,Harukotan Fragment Harvest Lv. 1
-Name_C,1,Name_C0181,Nightfall Hematite Harvest Lv. 1
+Name_C,1,Name_C0038,Cosecha forestal Lv. 1
+Name_C,1,Name_C0039,Cosecha forestal Lv. 2
+Name_C,1,Name_C0040,Cosecha forestal Lv. 3
+Name_C,1,Name_C0041,Cosecha de tomates del bosque Lv. 1
+Name_C,1,Name_C0042,Cosecha de tomates del bosque Lv. 2
+Name_C,1,Name_C0043,Cosecha de Arroz del Bosque Lv. 1
+Name_C,1,Name_C0044,Cosecha de Arroz del Bosque Lv. 2
+Name_C,1,Name_C0045,Cosecha de hongos de Navers Lv. 1
+Name_C,1,Name_C0046,Cosecha Esmeralda del Bosque Lv. 1
+Name_C,1,Name_C0047,Cosecha de Ruinas Lv. 1
+Name_C,1,Name_C0048,Cosecha de Ruinas Lv. 2
+Name_C,1,Name_C0049,Cosecha de Ruinas Lv. 3
+Name_C,1,Name_C0050,Ruinas de la cosecha de uva Lv. 1
+Name_C,1,Name_C0051,Ruinas de la cosecha de uva Lv. 2
+Name_C,1,Name_C0052,Arruina la cosecha de cebolla Lv. 1
+Name_C,1,Name_C0053,Arruina la cosecha de cebolla Lv. 2
+Name_C,1,Name_C0054,Cosecha de hongos de Navers Lv. 1
+Name_C,1,Name_C0055,Ruinas Cosecha de Amatista Lv. 1
+Name_C,1,Name_C0056,Cosecha costera Lv. 1
+Name_C,1,Name_C0057,Cosecha costera Lv. 2
+Name_C,1,Name_C0058,Cosecha costera Lv. 3
+Name_C,1,Name_C0059,Cosecha de Sal de la Costa Lv. 1
+Name_C,1,Name_C0060,Cosecha de Sal de la Costa Lv. 2
+Name_C,1,Name_C0061,Cosecha de Olivos de la Costa Lv. 1
+Name_C,1,Name_C0062,Cosecha de Olivos de la Costa Lv. 2
+Name_C,1,Name_C0063,Cosecha de Conchas de Wopal Lv. 1
+Name_C,1,Name_C0064,Cosecha de Zafiros de la Costa Lv. 1
+Name_C,1,Name_C0065,Cosecha de Tokio Lv. 1
+Name_C,1,Name_C0066,Cosecha de Tokio Lv. 2
+Name_C,1,Name_C0067,Cosecha de Tokio Lv. 3
+Name_C,1,Name_C0068,Cosecha de soja de Tokio Lv. 1
+Name_C,1,Name_C0069,Cosecha de soja de Tokio Lv. 2
+Name_C,1,Name_C0070,Cosecha de Rocas Terrestres Lv. 1
+Name_C,1,Name_C0071,Cosecha de Rocas Terrestres Lv. 2
+Name_C,1,Name_C0072,Cosecha de Botellas Vacías Lv. 1
+Name_C,1,Name_C0073,Cosecha de ópalo de Tokio Lv. 1
+Name_C,1,Name_C0074,Cosecha del desierto Lv. 1
+Name_C,1,Name_C0075,Cosecha del desierto Lv. 2
+Name_C,1,Name_C0076,Cosecha del desierto Lv. 3
+Name_C,1,Name_C0077,Cosecha Sansho del Desierto Lv. 1
+Name_C,1,Name_C0078,Cosecha Sansho del Desierto Lv. 2
+Name_C,1,Name_C0079,Cosecha de Mango del Desierto Lv. 1
+Name_C,1,Name_C0080,Cosecha de Mango del Desierto Lv. 2
+Name_C,1,Name_C0081,Cosecha de Chaleco Lillipan Lv. 1
+Name_C,1,Name_C0082,Cosecha de Topacio del Desierto Lv. 1
+Name_C,1,Name_C0083,Cosecha de minas abandonadas Lv. 1
+Name_C,1,Name_C0084,Cosecha de minas abandonadas Lv. 2
+Name_C,1,Name_C0085,Cosecha de minas abandonadas Lv. 3
+Name_C,1,Name_C0086,Cosecha de Papas en Mina Abandonada Lv. 1
+Name_C,1,Name_C0087,Cosecha de Papas en Mina Abandonada Lv. 2
+Name_C,1,Name_C0088,Cosecha de Pimienta en Mina Abandonada Lv. 1
+Name_C,1,Name_C0089,Cosecha de Pimienta en Mina Abandonada Lv. 2
+Name_C,1,Name_C0090,Cosecha de Chaleco Lillipan Lv. 1
+Name_C,1,Name_C0091,Mina Abandonada Cosecha de Lapislázuli Lv. 1
+Name_C,1,Name_C0092,Flotar. Cosecha de instalaciones Lv. 1
+Name_C,1,Name_C0093,Flotar. Cosecha de instalaciones Lv. 2
+Name_C,1,Name_C0094,Flotar. Cosecha de instalaciones Lv. 3
+Name_C,1,Name_C0095,Flotar. Cosecha de menta de instalación Lv. 1
+Name_C,1,Name_C0096,Flotar. Cosecha de menta de instalación Lv. 2
+Name_C,1,Name_C0097,Flotar. Instalación Cosecha de nabos Lv. 1
+Name_C,1,Name_C0098,Flotar. Instalación Cosecha de nabos Lv. 2
+Name_C,1,Name_C0099,Cosecha de Conchas de Wopal Lv. 1
+Name_C,1,Name_C0100,Flotar. Instalación Cosecha de Turmalina Lv. 1
+Name_C,1,Name_C0101,Cosecha de Las Vegas Lv. 1
+Name_C,1,Name_C0102,Cosecha de Las Vegas Lv. 2
+Name_C,1,Name_C0103,Cosecha de Las Vegas Lv. 3
+Name_C,1,Name_C0104,Cosecha de lechugas de Las Vegas Lv. 1
+Name_C,1,Name_C0105,Cosecha de lechugas de Las Vegas Lv. 2
+Name_C,1,Name_C0106,Cosecha de maíz de Las Vegas Lv. 1
+Name_C,1,Name_C0107,Cosecha de maíz de Las Vegas Lv. 2
+Name_C,1,Name_C0108,Cosecha de Botellas Vacías Lv. 1
+Name_C,1,Name_C0109,Cosecha de Diamantes de Las Vegas Lv. 1
+Name_C,1,Name_C0110,Cosecha de Cuevas Volcánicas Lv. 1
+Name_C,1,Name_C0111,Cosecha de Cuevas Volcánicas Lv. 2
+Name_C,1,Name_C0112,Cosecha de Cuevas Volcánicas Lv. 3
+Name_C,1,Name_C0113,Cuevas Volcánicas Cosecha de Calabazas Lv. 1
+Name_C,1,Name_C0114,Cuevas Volcánicas Cosecha de Calabazas Lv. 2
+Name_C,1,Name_C0115,Cuevas Volcánicas Cosecha de Piña Lv. 1
+Name_C,1,Name_C0116,Cuevas Volcánicas Cosecha de Piña Lv. 2
+Name_C,1,Name_C0117,Cosecha de escamas de dragón amduskiana Lv. 1
+Name_C,1,Name_C0118,Cuevas Volcánicas Cosecha de Granate Lv. 1
+Name_C,1,Name_C0119,Cosecha de Tundra Lv. 1
+Name_C,1,Name_C0120,Cosecha de Tundra Lv. 2
+Name_C,1,Name_C0121,Cosecha de Tundra Lv. 3
+Name_C,1,Name_C0122,Cosecha de cebolletas de tundra Lv. 1
+Name_C,1,Name_C0123,Cosecha de cebolletas de tundra Lv. 2
+Name_C,1,Name_C0124,Cosecha de Manzana Verde Tundra Lv. 1
+Name_C,1,Name_C0125,Cosecha de Manzana Verde Tundra Lv. 2
+Name_C,1,Name_C0126,Cosecha de hongos de Navers Lv. 1
+Name_C,1,Name_C0127,Cosecha de ámbar de tundra Lv. 1
+Name_C,1,Name_C0128,Cosecha subterránea Lv. 1
+Name_C,1,Name_C0129,Cosecha subterránea Lv. 2
+Name_C,1,Name_C0130,Cosecha subterránea Lv. 3
+Name_C,1,Name_C0131,Cosecha de Hongos Subterráneos Lv. 1
+Name_C,1,Name_C0132,Cosecha de Hongos Subterráneos Lv. 2
+Name_C,1,Name_C0133,Cosecha subterránea de jengibre Lv. 1
+Name_C,1,Name_C0134,Cosecha subterránea de jengibre Lv. 2
+Name_C,1,Name_C0135,Cosecha de Chaleco Lillipan Lv. 1
+Name_C,1,Name_C0136,Cosecha subterránea de peridoto Lv. 1
+Name_C,1,Name_C0137,Cosecha del amanecer Lv. 1
+Name_C,1,Name_C0138,Cosecha del amanecer Lv. 2
+Name_C,1,Name_C0139,Cosecha del amanecer Lv. 3
+Name_C,1,Name_C0140,Cosecha de brotes de hilo del amanecer Lv. 1
+Name_C,1,Name_C0141,Cosecha de brotes de hilo del amanecer Lv. 2
+Name_C,1,Name_C0142,Cosecha de berenjenas al amanecer Lv. 1
+Name_C,1,Name_C0143,Cosecha de berenjenas al amanecer Lv. 2
+Name_C,1,Name_C0144,Cosecha de fragmentos de Harukotan Lv. 1
+Name_C,1,Name_C0145,Cosecha de Piedra Lunar del Amanecer Lv. 1
+Name_C,1,Name_C0146,Continuación flotante. Cosecha Lv. 1
+Name_C,1,Name_C0147,Continuación flotante. Cosecha Lv. 2
+Name_C,1,Name_C0148,Continuación flotante. Cosecha Lv. 3
+Name_C,1,Name_C0149,Continuación flotante. Cosecha de judías verdes Lv. 1
+Name_C,1,Name_C0150,Continuación flotante. Cosecha de judías verdes Lv. 2
+Name_C,1,Name_C0151,Continuación flotante. Cosecha de castañas Lv. 1
+Name_C,1,Name_C0152,Continuación flotante. Cosecha de castañas Lv. 2
+Name_C,1,Name_C0153,Cosecha de escamas de dragón amduskiana Lv. 1
+Name_C,1,Name_C0154,Continuación flotante. Cosecha de Fluorita Lv. 1
+Name_C,1,Name_C0155,Cosecha del Fondo Marino Lv. 1
+Name_C,1,Name_C0156,Cosecha del Fondo Marino Lv. 2
+Name_C,1,Name_C0157,Cosecha del Fondo Marino Lv. 3
+Name_C,1,Name_C0158,Cosecha de chalotes del fondo marino Lv. 1
+Name_C,1,Name_C0159,Cosecha de chalotes del fondo marino Lv. 2
+Name_C,1,Name_C0160,Cosecha de Limón del Fondo Marino Lv. 1
+Name_C,1,Name_C0161,Cosecha de Limón del Fondo Marino Lv. 2
+Name_C,1,Name_C0162,Cosecha de Conchas de Wopal Lv. 1
+Name_C,1,Name_C0163,Cosecha de tanzanita del fondo marino Lv. 1
+Name_C,1,Name_C0164,Cosecha del Altar del Dragón Lv. 1
+Name_C,1,Name_C0165,Cosecha del Altar del Dragón Lv. 2
+Name_C,1,Name_C0166,Cosecha del Altar del Dragón Lv. 3
+Name_C,1,Name_C0167,Cosecha de Rábanos del Altar del Dragón Lv. 1
+Name_C,1,Name_C0168,Cosecha de Rábanos del Altar del Dragón Lv. 2
+Name_C,1,Name_C0169,Cosecha de Espinacas del Altar del Dragón Lv. 1
+Name_C,1,Name_C0170,Cosecha de Espinacas del Altar del Dragón Lv. 2
+Name_C,1,Name_C0171,Cosecha de escamas de dragón amduskiana Lv. 1
+Name_C,1,Name_C0172,Cosecha de Circón del Altar del Dragón Lv. 1
+Name_C,1,Name_C0173,Cosecha del anochecer Lv. 1
+Name_C,1,Name_C0174,Cosecha del anochecer Lv. 2
+Name_C,1,Name_C0175,Cosecha del anochecer Lv. 3
+Name_C,1,Name_C0176,Cosecha de raíz de loto al anochecer Lv. 1
+Name_C,1,Name_C0177,Cosecha de raíz de loto al anochecer Lv. 2
+Name_C,1,Name_C0178,Cosecha de raíz de bardana del anochecer Lv. 1
+Name_C,1,Name_C0179,Cosecha de raíz de bardana del anochecer Lv. 2
+Name_C,1,Name_C0180,Cosecha de fragmentos de Harukotan Lv. 1
+Name_C,1,Name_C0181,Cosecha de hematita al anochecer Lv. 1
 Explain_C,0,Explain_C0000,<yellow>1回、採取をしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
 Explain_C,0,Explain_C0001,<yellow>8回、採取をしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
 Explain_C,0,Explain_C0002,<yellow>20回、採取をしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
@@ -593,188 +593,188 @@ Explain_C,0,Explain_C0178,<yellow>「黒ノ領域ゴボウ」を3回、採取し
 Explain_C,0,Explain_C0179,<yellow>「黒ノ領域ゴボウ」を15回、採取しよう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：野菜<br><c 73d882>　※野菜は料理「地下坑道シャコのグリエ」で<br>　　取得率上昇<c>
 Explain_C,0,Explain_C0180,<yellow>「ハルコタンの破片」を3回、採取しよう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：その他<br><c 73d882>　※その他は料理「地下坑道マキガイのサラダ」<br>　　で取得率上昇<c>
 Explain_C,0,Explain_C0181,<yellow>「黒ノ領域ヘマタイト」を3回、採取しよう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：宝石<br><c 73d882>　※宝石は料理「採掘場跡ウナギのうな重」で<br>　　取得率上昇<c>
-Explain_C,1,Explain_C0000,<yellow>Try harvesting!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0001,<yellow>Harvest 8 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0002,<yellow>Harvest 20 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0003,<yellow>Harvest 30 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0004,<yellow>Harvest 40 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0005,<yellow>Harvest 50 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0006,"<yellow>Extra Harvest 5 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0007,"<yellow>Extra Harvest 10 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0008,"<yellow>Extra Harvest 20 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0009,"<yellow>Extra Harvest 30 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0010,<yellow>Rare Harvest 5 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0011,<yellow>Rare Harvest 10 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0012,<yellow>Rare Harvest 20 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0013,<yellow>Rare Harvest 30 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0014,"<yellow>Harvest Vegetables 10 times!<c><br> Area: Any<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0015,"<yellow>Harvest Fruits 10 times!<c><br> Area: Any<br> Target Category: Fruit<br><c 73d882>The dish ""Salt-grilled Coast File Fish"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0016,"<yellow>Harvest grains 10 times!<c><br> Area: Any<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting Grain<c>"
-Explain_C,1,Explain_C0017,"<yellow>Harvest ores 10 times!<c><br> Area: Any<br> Target Category: Mineral<br><c 73d882>The dish ""Sashimi"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0018,<yellow>Harvest 100 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0019,<yellow>Harvest 200 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0020,<yellow>Harvest 300 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0021,<yellow>Harvest 400 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0022,<yellow>Harvest 500 times!<c><br> Area: Any<br> Target Category: All
-Explain_C,1,Explain_C0023,"<yellow>Extra Harvest 50 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0024,"<yellow>Extra Harvest 75 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0025,"<yellow>Extra Harvest 100 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0026,"<yellow>Extra Harvest 125 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0027,"<yellow>Extra Harvest 150 times!<c><br> Area: Any<br> Target Category: All<br><c 73d882>The dish ""Seafood Soup"" increases<br>Extra Harvesting Rate<c>"
-Explain_C,1,Explain_C0028,<yellow>Rare Harvest 50 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0029,<yellow>Rare Harvest 75 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0030,<yellow>Rare Harvest 100 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0031,<yellow>Rare Harvest 125 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0032,<yellow>Rare Harvest 150 times!<c><br> Area: Any<br> Target Category: All<br><c d468a0>Rare Harvesting occurs<br>at random while harvesting.<c>
-Explain_C,1,Explain_C0033,"<yellow>Harvest Vegetables 50 times!<c><br> Area: Any<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0034,"<yellow>Harvest Fruits 50 times!<c><br> Area: Any<br> Target Category: Fruit<br><c 73d882>The dish ""Salt-grilled Coast File Fish"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0035,"<yellow>Harvest grains 50 times!<c><br> Area: Any<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting Grain<c>"
-Explain_C,1,Explain_C0036,"<yellow>Harvest Minerals 50 times!<c><br> Area: Any<br> Target Category: Mineral<br><c 73d882>The dish ""Sashimi"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0037,"<yellow>Harvest Jewels 10 times!<c><br> Area: Any<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Shark Soup"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0038,<yellow>Harvest 10 times in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_C,1,Explain_C0039,<yellow>Harvest 20 times in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_C,1,Explain_C0040,<yellow>Harvest 30 times in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_C,1,Explain_C0041,<yellow>Harvest Forest Tomatoes 3 times!<c><br> Area: Any<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0042,<yellow>Harvest Forest Tomatoes 10 times!<c><br> Area: Any<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0043,"<yellow>Harvest Forest Rice 3 times!<c><br> Area: Any<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting Grain<c>"
-Explain_C,1,Explain_C0044,"<yellow>Harvest Forest Rice 15 times!<c><br> Area: Any<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting Grain<c>"
-Explain_C,1,Explain_C0045,"<yellow>Harvest Navershrooms 3 times!<c><br> Area: Forest<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0046,"<yellow>Harvest Forest Emeralds 3 times!<c><br> Area: Forest<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Shark Soup"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0047,<yellow>Harvest 10 times in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_C,1,Explain_C0048,<yellow>Harvest 20 times in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_C,1,Explain_C0049,<yellow>Harvest 30 times in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_C,1,Explain_C0050,<yellow>Harvest Ruins Grapes 3 times!<c><br> Area: Ruins<br>Category: Fruit<br><c 73d882>The dish “Grilled Coast Filefish” can boost<br>your chance of Harvesting Fruit<c>
-Explain_C,1,Explain_C0051,<yellow>Harvest Ruins Grapes 15 times!<c><br> Area: Ruins<br>Category: Fruit<br><c 73d882>The dish “Grilled Coast Filefish” can boost<br>your chance of Harvesting Fruit<c>
-Explain_C,1,Explain_C0052,"<yellow>Harvest Ruins Onions 3 times!<c><br> Area: Ruins<br> Target Category: Vegetable<br><c 73d882>The dish ""Ruins Salmon in Fruit Sauce"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0053,"<yellow>Harvest Ruins Onions 15 times!<c><br> Area: Ruins<br> Target Category: Vegetable<br><c 73d882>The dish ""Ruins Salmon in Fruit Sauce"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0054,"<yellow>Harvest Navershrooms 3 times!<c><br> Area: Ruins<br> Target Category: Vegetable<br><c 73d882>The dish ""Ruins Salmon in Fruit Sauce"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0055,"<yellow>Harvest Ruins Amethysts 3 times!<c><br> Area: Ruins<br> Target Category: Jewels <br><c 73d882>The dish ""Abandoned Mine Shark Soup"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0056,<yellow>Harvest 10 times in the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_C,1,Explain_C0057,<yellow>Harvest 20 times in the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_C,1,Explain_C0058,<yellow>Harvest 30 times in the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_C,1,Explain_C0059,"<yellow>Harvest Coast Salts 3 times!<c><br> Area: Coast<br> Target Category: Mineral<br><c 73d882>The dish ""Sashimi"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0060,"<yellow>Harvest Coast Salts 15 times!<c><br> Area: Coast<br> Target Category: Mineral<br><c 73d882>The dish ""Sashimi"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0061,<yellow>Harvest Coast Olives 3 times!<c><br> Area: Coast<br>Category: Fruit<br><c 73d882>The dish “Grilled Coast Filefish” can boost<br>your chance of Harvesting Fruit<c>
-Explain_C,1,Explain_C0062,<yellow>Harvest Coast Olives 15 times!<c><br> Area: Coast<br>Category: Fruit<br><c 73d882>The dish “Grilled Coast Filefish” can boost<br>your chance of Harvesting Fruit<c>
-Explain_C,1,Explain_C0063,"<yellow>Harvest Wopal Shells 3 times!<c><br> Area: Coast<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases <br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0064,"<yellow>Harvest Coast Sapphires 3 times!<c><br> Area: Coast<br> Target Category: Jewels<br><c 73d882>The dish ""Abandoned Mine Shark Soup"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0065,<yellow>Harvest 10 times in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
-Explain_C,1,Explain_C0066,<yellow>Harvest 20 times in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
-Explain_C,1,Explain_C0067,<yellow>Harvest 30 times in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
-Explain_C,1,Explain_C0068,<yellow>Harvest Tokyo Soy Beans 3 times!<c><br> Area: Any<br>Category: Grain<br><c 73d882>The dish “Forest Tuna Carpaccio” can boost<br>your chance of Harvesting Grain<c>
-Explain_C,1,Explain_C0069,<yellow>Harvest Tokyo Soy Beans 15 times!<c><br> Area: Any<br>Category: Grain<br><c 73d882>The dish “Forest Tuna Carpaccio” can boost<br>your chance of Harvesting Grain<c>
-Explain_C,1,Explain_C0070,"<yellow>Harvest Earth Rocks 3 times!<c><br> Area: Tokyo<br> Target Category: Mineral<br><c 73d882>The dish ""Soy-broiled Tokyo Red Seabream"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0071,"<yellow>Harvest Earth Rocks 15 times!<c><br> Area: Tokyo<br> Target Category: Mineral<br><c 73d882>The dish ""Soy-broiled Tokyo Red Seabream"" increases<br>your chances of harvesting Mineral<c>"
-Explain_C,1,Explain_C0072,"<yellow>Harvest Empty Bottles 3 times!<c><br> Area: Tokyo<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0073,"<yellow>Harvest Tokyo Opals 3 times!<c><br> Area: Tokyo<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Shark Soup"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0074,<yellow>Harvest 10 times in the Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_C,1,Explain_C0075,<yellow>Harvest 20 times in the Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_C,1,Explain_C0076,<yellow>Harvest 30 times in the Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_C,1,Explain_C0077,<yellow>Harvest Desert Sanshos 3 times!<c><br> Area: Desert<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0078,<yellow>Harvest Desert Sansho 15 times!<c><br> Area: Desert<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0079,"<yellow>Harvest Desert Mangoes 3 times!<c><br> Area: Any<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0080,"<yellow>Harvest Desert Mangoes 15 times!<c><br> Area: Any<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0081,"<yellow>Harvest Lillipan Vests 3 times!<c><br> Area: Desert<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0082,"<yellow>Harvest Desert Topazes 3 times!<c><br> Area: Desert<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0083,<yellow>Harvest 10 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_C,1,Explain_C0084,<yellow>Harvest 20 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_C,1,Explain_C0085,<yellow>Harvest 30 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_C,1,Explain_C0086,<yellow>Harvest Abandoned Mine Potatoes 3 times!<c><br> Area: Abandoned Mine<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0087,<yellow>Harvest Abandoned Mine Potatoes 15 times!<c><br> Area: Abandoned Mine<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0088,"<yellow>Harvest Abandoned Mine Peppers 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0089,"<yellow>Harvest Abandoned Mine Peppers 15 times!<c><br> Area: Abandoned Mine<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0090,"<yellow>Harvest Lillipan Vests 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases <br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0091,"<yellow>Harvest Abandoned Mine Lapis Lazuli 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0092,<yellow>Harvest 10 times in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_C,1,Explain_C0093,<yellow>Harvest 20 times in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_C,1,Explain_C0094,<yellow>Harvest 30 times in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_C,1,Explain_C0095,<yellow>Harvest Floating Facility Mints 3 times!<c><br> Area: Any<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0096,<yellow>Harvest Floating Facility Mints 15 times!<c><br> Area: Any<br>Category: Vegetable<br><c 73d882>The dish “Forest Tomato Salad” can boost<br>your chance of Harvesting Vegetables<c>
-Explain_C,1,Explain_C0097,"<yellow>Harvest Floating Facility Turnips 3 times!<c><br> Area: Floating Facility<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of catching Vegetables<c>"
-Explain_C,1,Explain_C0098,"<yellow>Harvest Floating Facility Turnips 15 times!<c><br> Area: Floating Facility<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad""<br>increases your chances of catching Vegetables<c>"
-Explain_C,1,Explain_C0099,"<yellow>Harvest Wopal Shells 3 times!<c><br> Area: Floating Facility<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0100,"<yellow>Harvest Floating Facility Tourmalines 3 times!<c><br> Area: Floating Facility<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0101,<yellow>Harvest 10 items in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_C,1,Explain_C0102,<yellow>Harvest 20 items in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_C,1,Explain_C0103,<yellow>Harvest 30 items in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_C,1,Explain_C0104,<yellow>Harvest Las Vegas Lettuce 3 times!<c><br>Area: Las Vegas<br>Target Category: Vegetable
-Explain_C,1,Explain_C0105,<yellow>Harvest Las Vegas Lettuce 15 times!<c><br>Area: Las Vegas<br>Target Category: Vegetable
-Explain_C,1,Explain_C0106,"<yellow>Harvest Las Vegas Corn 3 times!<c><br> Area: Las Vegas<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting grains<c>"
-Explain_C,1,Explain_C0107,"<yellow>Harvest Las Vegas Corn 15 times!<c><br> Area: Las Vegas<br> Target Category: Grain<br><c 73d882>The dish ""Forest Tuna Carpaccio"" increases<br>your chances of harvesting grains<c>"
-Explain_C,1,Explain_C0108,"<yellow>Harvest Empty Bottles 3 times!<c><br> Area: Las Vegas<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0109,"<yellow>Harvest Las Vegas Diamonds 3 times!<c><br> Area: Las Vegas<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases <br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0110,<yellow>Harvest 10 items in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_C,1,Explain_C0111,<yellow>Harvest 20 items in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_C,1,Explain_C0112,<yellow>Harvest 30 items in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_C,1,Explain_C0113,<yellow>Harvest Volcanic Caves Pumpkins 3 times!<c><br>Area: Volcanic Caves<br>Target Category: Vegetable
-Explain_C,1,Explain_C0114,<yellow>Harvest Volcanic Caves Pumpkins 15 times!<c><br>Area: Volcanic Caves<br>Target Category: Vegetable
-Explain_C,1,Explain_C0115,"<yellow>Harvest Volcanic Caves Pineapples 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases your<br>chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0116,"<yellow>Harvest Volcanic Caves Pineapples 15 times!<c><br> Area: Volcanic Caves<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases your<br>chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0117,"<yellow>Harvest Amduskian Dragonscales 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0118,"<yellow>Harvest Volcanic Caves Garnets 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0119,<yellow>Harvest 10 items in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_C,1,Explain_C0120,<yellow>Harvest 20 items in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_C,1,Explain_C0121,<yellow>Harvest 30 items in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_C,1,Explain_C0122,<yellow>Harvest Tundra Spring Onions 3 times!<c><br>Area: Tundra<br>Target Category: Vegetable
-Explain_C,1,Explain_C0123,<yellow>Harvest Tundra Spring Onions 15 times!<c><br>Area: Tundra<br>Target Category: Vegetable
-Explain_C,1,Explain_C0124,"<yellow>Harvest Tundra Green Apples 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0125,"<yellow>Harvest Tundra Green Apples 15 times!<c><br> Area: Volcanic Caves<br> Target Category: Fruit<br><c 73d882>The dish ""Desert Crab Croquette"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0126,"<yellow>Harvest Navershrooms 3 times!<c><br> Area: Tundra<br> Target Category: Vegetable<br><c 73d882>The dish ""Forest Tomato Salad"" increases<br>your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0127,"<yellow>Harvest Tundra Amber 3 times!<c><br> Area: Tundra<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0128,<yellow>Harvest 10 items in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_C,1,Explain_C0129,<yellow>Harvest 20 items in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_C,1,Explain_C0130,<yellow>Harvest 30 items in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_C,1,Explain_C0131,<yellow>Harvest Underground Shafts Mushrooms 3 times!<c><br>Area: Underground Shafts<br>Target Category: Vegetable
-Explain_C,1,Explain_C0132,<yellow>Harvest Underground Shafts Mushrooms 15 times!<c><br>Area: Underground Shafts<br>Target Category: Vegetable
-Explain_C,1,Explain_C0133,"<yellow>Harvest Underground Shafts Ginger 3 times!<c><br> Area: Underground Shafts<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp""<br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0134,"<yellow>Harvest Underground Shafts Ginger 15 times!<c><br> Area: Underground Shafts<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp""<br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0135,"<yellow>Harvest Lillipan Vests 3 times!<c><br> Area: Underground Shafts<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0136,"<yellow>Harvest Underground Shafts Peridots 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0137,<yellow>Harvest 10 items in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_C,1,Explain_C0138,<yellow>Harvest 20 items in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_C,1,Explain_C0139,<yellow>Harvest 30 items in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_C,1,Explain_C0140,<yellow>Harvest Daybreak Province String Sprouts 3 times!<c><br>Area: Daybreak Province<br>Target Category: Vegetable
-Explain_C,1,Explain_C0141,<yellow>Harvest Daybreak Province String Sprouts 15 times!<c><br>Area: Daybreak Province<br>Target Category: Vegetable
-Explain_C,1,Explain_C0142,"<yellow>Harvest Daybreak Province Eggplants 3 times!<c><br> Area: Daybreak Province<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp"" <br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0143,"<yellow>Harvest Daybreak Province Eggplants 15 times!<c><br> Area: Daybreak Province<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp""<br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0144,"<yellow>Harvest Harukotan Fragments 3 times!<c><br> Area: Daybreak Province<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0145,"<yellow>Harvest Daybreak Province Moon Stones 3 times!<c><br> Area: Daybreak Province<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0146,<yellow>Harvest 10 items in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_C,1,Explain_C0147,<yellow>Harvest 20 items in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_C,1,Explain_C0148,<yellow>Harvest 30 items in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_C,1,Explain_C0149,<yellow>Harvest Floating Continent Green Beans 3 times!<c><br>Area: Floating Continent<br>Target Category: Vegetable
-Explain_C,1,Explain_C0150,<yellow>Harvest Floating Continent Green Beans 15 times!<c><br>Area: Floating Continent<br>Target Category: Vegetable
-Explain_C,1,Explain_C0151,"<yellow>Harvest Floating Continent Chestnuts 3 times!<c><br> Area: Floating Continent<br> Target Category: Fruit<br><c 73d882>The dish ""Seabed Octopus Fritters"" increases <br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0152,"<yellow>Harvest Floating Continent Chestnuts 15 times!<c><br> Area: Floating Continent<br> Target Category: Fruit<br><c 73d882>The dish ""Seabed Octopus Fritters"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0153,"<yellow>Harvest Amduskian Dragonscales 3 times!<c><br> Area: Floating Continent<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0154,"<yellow>Harvest Floating Continent Fluorite 3 times!<c><br> Area: Floating Continent<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0155,<yellow>Harvest 10 items in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_C,1,Explain_C0156,<yellow>Harvest 20 items in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_C,1,Explain_C0157,<yellow>Harvest 30 items in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_C,1,Explain_C0158,<yellow>Harvest Seabed Shallots 3 times!<c><br>Area: Seabed<br>Target Category: Vegetable
-Explain_C,1,Explain_C0159,<yellow>Harvest Seabed Shallots 15 times!<c><br>Area: Seabed<br>Target Category: Vegetable
-Explain_C,1,Explain_C0160,"<yellow>Harvest Seabed Lemons 3 times!<c><br> Area: Seabed<br> Target Category: Fruit<br><c 73d882>The dish ""Seabed Octopus Fritters"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0161,"<yellow>Harvest Seabed Lemons 15 times!<c><br> Area: Seabed<br> Target Category: Fruit<br><c 73d882>The dish ""Seabed Octopus Fritters"" increases<br>your chances of harvesting Fruit<c>"
-Explain_C,1,Explain_C0162,"<yellow>Harvest Wopal Shells 3 times!<c><br> Area: Seabed<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0163,"<yellow>Harvest Seabed Tanzanite 3 times!<c><br> Area: Seabed<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0164,<yellow>Harvest 10 items in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_C,1,Explain_C0165,<yellow>Harvest 20 items in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_C,1,Explain_C0166,<yellow>Harvest 30 items in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_C,1,Explain_C0167,<yellow>Harvest Dragon Altar Radishes 3 times!<c><br>Area: Dragon Altar<br>Target Category: Vegetable
-Explain_C,1,Explain_C0168,<yellow>Harvest Dragon Altar Radishes 15 times!<c><br>Area: Dragon Altar<br>Target Category: Vegetable
-Explain_C,1,Explain_C0169,"<yellow>Harvest Dragon Altar Spinach 3 times!<c><br> Area: Dragon Altar<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp""<br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0170,"<yellow>Harvest Dragon Altar Spinach 15 times!<c><br> Area: Dragon Altar<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp""<br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0171,"<yellow>Harvest Amduskian Dragonscales 3 times!<c><br> Area: Dragon Altar<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0172,"<yellow>Harvest Dragon Altar Zircon 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" <br>increases your chances of harvesting Jewels<c>"
-Explain_C,1,Explain_C0173,<yellow>Harvest 10 items in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_C,1,Explain_C0174,<yellow>Harvest 20 items in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_C,1,Explain_C0175,<yellow>Harvest 30 items in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_C,1,Explain_C0176,<yellow>Harvest Nightfall Province Lotus Roots 3 times!<c><br>Area: Nightfall Province<br>Target Category: Vegetable
-Explain_C,1,Explain_C0177,<yellow>Harvest Nightfall Province Lotus Roots 15 times!<c><br>Area: Nightfall Province<br>Target Category: Vegetable
-Explain_C,1,Explain_C0178,"<yellow>Harvest Nightfall Province Burdock Roots 3 times!<c><br> Area: Nightfall Province<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp"" <br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0179,"<yellow>Harvest Nightfall Province Burdock Roots 15 times!<c><br> Area: Nightfall Province<br> Target Category: Vegetable<br><c 73d882>The dish ""Underground Shafts Grilled Mantis Shrimp"" <br>increases your chances of harvesting Vegetables<c>"
-Explain_C,1,Explain_C0180,"<yellow>Harvest Harukotan Fragments 3 times!<c><br> Area: Nightfall Province<br> Target Category: Misc<br><c 73d882>The dish ""Underground Shafts Conch Salad"" increases<br>your chances of harvesting miscellaneous items<c>"
-Explain_C,1,Explain_C0181,"<yellow>Harvest Nightfall Province Hematite 3 times!<c><br> Area: Nightfall Province<br> Target Category: Jewel<br><c 73d882>The dish ""Abandoned Mine Eel Rice Bowl"" increases<br>your chances of harvesting Jewels<c>"
+Explain_C,1,Explain_C0000,<yellow>¡Intenta cosechar!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0001,<yellow>¡Cosecha 8 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0002,<yellow>¡Cosecha 20 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0003,<yellow>¡Cosecha 30 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0004,<yellow>¡Cosecha 40 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0005,<yellow>¡Cosecha 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0006,"<yellow>¡Cosecha extra 5 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0007,"<yellow>¡Cosecha extra 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0008,"<yellow>¡Cosecha extra 20 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0009,"<yellow>¡Cosecha extra 30 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0010,<yellow>¡Cosecha rara 5 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0011,<yellow>¡Cosecha rara 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0012,<yellow>¡Cosecha rara 20 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0013,<yellow>¡Cosecha rara 30 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0014,"<yellow>¡Cosecha verduras 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0015,"<yellow>¡Cosecha frutas 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Pescado de Lima de la Costa a la sal""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0016,<yellow>¡Cosecha granos 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0017,"<yellow>¡Cosecha minerales 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Mineral<br><c 73d882>El plato ""Sashimi"" aumenta<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0018,<yellow>¡Cosecha 100 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0019,<yellow>¡Cosecha 200 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0020,<yellow>¡Cosecha 300 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0021,<yellow>¡Cosecha 400 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0022,<yellow>¡Cosecha 500 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0023,"<yellow>¡Cosecha extra 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0024,"<yellow>¡Cosecha extra 75 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0025,"<yellow>¡Cosecha extra 100 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0026,"<yellow>¡Cosecha extra 125 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0027,"<yellow>¡Cosecha extra 150 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c 73d882>Aumenta el plato ""Sopa de Mariscos""<br>Tasa de cosecha adicional<c>"
+Explain_C,1,Explain_C0028,<yellow>¡Cosecha rara 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0029,<yellow>¡Cosecha rara 75 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0030,<yellow>¡Cosecha rara 100 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0031,<yellow>¡Cosecha rara 125 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0032,<yellow>¡Cosecha rara 150 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Todos<br><c d468a0>Se produce una recolección rara<br>al azar durante la cosecha.<c>
+Explain_C,1,Explain_C0033,"<yellow>¡Cosecha verduras 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0034,"<yellow>¡Cosecha frutas 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Pescado de Lima de la Costa a la sal""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0035,<yellow>¡Cosecha granos 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0036,"<yellow>¡Cosecha minerales 50 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Mineral<br><c 73d882>El plato ""Sashimi"" aumenta<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0037,"<yellow>¡Cosecha joyas 10 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Sopa de tiburón de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0038,<yellow>¡Cosecha 10 veces en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0039,<yellow>¡Cosecha 20 veces en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0040,<yellow>¡Cosecha 30 veces en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0041,<yellow>¡Cosecha tomates del bosque 3 veces!<c><br>Área: Cualquiera<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0042,<yellow>¡Cosecha tomates del bosque 10 veces!<c><br>Área: Cualquiera<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0043,<yellow>¡Cosecha arroz del bosque 3 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0044,<yellow>¡Cosecha arroz del bosque 15 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0045,"<yellow>¡Cosecha hongos Naver 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0046,"<yellow>¡Cosecha esmeraldas del bosque 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Sopa de tiburón de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0047,<yellow>¡Cosecha 10 veces en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0048,<yellow>¡Cosecha 20 veces en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0049,<yellow>¡Cosecha 30 veces en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0050,<yellow>¡Cosecha arruina uvas 3 veces!<c><br>Zona: Ruinas<br>Categoría: Fruta<br><c 73d882>El plato “Lima de Costa a la Parrilla” puede potenciar<br>Tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0051,<yellow>¡Cosecha arruina uvas 15 veces!<c><br>Zona: Ruinas<br>Categoría: Fruta<br><c 73d882>El plato “Lima de Costa a la Parrilla” puede potenciar<br>Tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0052,"<yellow>¡Cosecha cebollas arruinadas 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: Vegetal<br><c 73d882>Se incrementa el plato ""Salmón a las ruinas en salsa de frutas""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0053,"<yellow>¡Cosecha cebollas arruinadas 15 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: Vegetal<br><c 73d882>Se incrementa el plato ""Salmón a las ruinas en salsa de frutas""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0054,"<yellow>¡Cosecha hongos Naver 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: Vegetal<br><c 73d882>Se incrementa el plato ""Salmón a las ruinas en salsa de frutas""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0055,"<yellow>¡Cosecha amatistas de ruinas 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: Joyas<br><c 73d882>Aumenta el plato ""Sopa de tiburón de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0056,<yellow>¡Cosecha 10 veces en la Costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0057,<yellow>¡Cosecha 20 veces en la Costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0058,<yellow>¡Cosecha 30 veces en la Costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0059,"<yellow>¡Cosecha sales de la costa 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: Mineral<br><c 73d882>El plato ""Sashimi"" aumenta<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0060,"<yellow>¡Cosecha sales de la costa 15 veces!<c><br>Zona: Costa<br>Categoría objetivo: Mineral<br><c 73d882>El plato ""Sashimi"" aumenta<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0061,<yellow>¡Cosecha Aceitunas de la Costa 3 veces!<c><br>Zona: Costa<br>Categoría: Fruta<br><c 73d882>El plato “Lima de Costa a la Parrilla” puede potenciar<br>Tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0062,<yellow>¡Cosecha Aceitunas de la Costa 15 veces!<c><br>Zona: Costa<br>Categoría: Fruta<br><c 73d882>El plato “Lima de Costa a la Parrilla” puede potenciar<br>Tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0063,"<yellow>¡Cosecha conchas de Wopal 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0064,"<yellow>¡Cosecha Zafiros de la Costa 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: Joyas<br><c 73d882>Aumenta el plato ""Sopa de tiburón de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0065,<yellow>¡Cosecha 10 veces en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0066,<yellow>¡Cosecha 20 veces en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0067,<yellow>¡Cosecha 30 veces en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0068,<yellow>¡Cosecha soja de Tokio 3 veces!<c><br>Área: Cualquiera<br>Categoría: Grano<br><c 73d882>El plato “Carpaccio de Bonito del Bosque” puede potenciar<br>Tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0069,<yellow>¡Cosecha soja de Tokio 15 veces!<c><br>Área: Cualquiera<br>Categoría: Grano<br><c 73d882>El plato “Carpaccio de Bonito del Bosque” puede potenciar<br>Tus posibilidades de cosechar grano<c>
+Explain_C,1,Explain_C0070,"<yellow>¡Cosecha rocas terrestres 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: Mineral<br><c 73d882>Aumenta el plato ""Besugo rojo de Tokio asado con soja""<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0071,"<yellow>¡Cosecha rocas terrestres 15 veces!<c><br>Zona: Tokio<br>Categoría objetivo: Mineral<br><c 73d882>Aumenta el plato ""Besugo rojo de Tokio asado con soja""<br>tus posibilidades de cosechar Mineral<c>"
+Explain_C,1,Explain_C0072,"<yellow>¡Cosecha botellas vacías 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0073,"<yellow>¡Cosecha ópalos de Tokio 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Sopa de tiburón de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0074,<yellow>¡Cosecha 10 veces en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0075,<yellow>¡Cosecha 20 veces en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0076,<yellow>¡Cosecha 30 veces en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0077,<yellow>¡Cosecha Desert Sanshos 3 veces!<c><br>Zona: Desierto<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0078,<yellow>¡Cosecha Desert Sansho 15 veces!<c><br>Zona: Desierto<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0079,<yellow>¡Cosecha mangos del desierto 3 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato “Croqueta de Cangrejo del Desierto”<br>tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0080,<yellow>¡Cosecha mangos del desierto 15 veces!<c><br>Área: Cualquiera<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato “Croqueta de Cangrejo del Desierto”<br>tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0081,"<yellow>¡Cosecha chalecos Lillipan 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0082,"<yellow>¡Cosecha topacios del desierto 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0083,<yellow>¡Cosecha 10 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0084,<yellow>¡Cosecha 20 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0085,<yellow>¡Cosecha 30 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0086,<yellow>¡Cosecha patatas de una mina abandonada 3 veces!<c><br>Área: Mina Abandonada<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0087,<yellow>¡Cosecha patatas de una mina abandonada 15 veces!<c><br>Área: Mina Abandonada<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0088,"<yellow>¡Coseche los pimientos de la mina abandonada 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0089,"<yellow>¡Cosecha pimientos de la mina abandonada 15 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0090,"<yellow>¡Cosecha chalecos Lillipan 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0091,"<yellow>¡Cosecha mina abandonada lapislázuli 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0092,<yellow>¡Cosecha 10 veces en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0093,<yellow>¡Cosecha 20 veces en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0094,<yellow>¡Cosecha 30 veces en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0095,<yellow>¡Coseche mentas de instalaciones flotantes 3 veces!<c><br>Área: Cualquiera<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0096,<yellow>¡Coseche mentas de instalaciones flotantes 15 veces!<c><br>Área: Cualquiera<br>Categoría: Vegetales<br><c 73d882>El plato “Ensalada de tomate del bosque” puede potenciar<br>Tus posibilidades de cosechar verduras<c>
+Explain_C,1,Explain_C0097,"<yellow>¡Cosecha nabos de instalaciones flotantes 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de atrapar vegetales<c>"
+Explain_C,1,Explain_C0098,"<yellow>¡Coseche nabos de instalaciones flotantes 15 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Ensalada de tomate del bosque""<br>aumenta tus posibilidades de atrapar vegetales<c>"
+Explain_C,1,Explain_C0099,"<yellow>¡Cosecha conchas de Wopal 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0100,"<yellow>¡Cosecha turmalinas de instalaciones flotantes 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0101,<yellow>¡Cosecha 10 artículos en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0102,<yellow>¡Cosecha 20 artículos en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0103,<yellow>¡Cosecha 30 artículos en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0104,<yellow>¡Cosecha lechuga Las Vegas 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0105,<yellow>¡Cosecha lechuga Las Vegas 15 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0106,<yellow>¡Cosecha maíz de Las Vegas 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar granos<c>
+Explain_C,1,Explain_C0107,<yellow>¡Cosecha maíz de Las Vegas 15 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: grano<br><c 73d882>Sube el plato “Carpaccio de Bonito del Bosque”<br>tus posibilidades de cosechar granos<c>
+Explain_C,1,Explain_C0108,"<yellow>¡Cosecha botellas vacías 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0109,"<yellow>¡Cosecha diamantes de Las Vegas 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0110,<yellow>¡Cosecha 10 objetos en las cuevas volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0111,<yellow>¡Cosecha 20 objetos en las cuevas volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0112,<yellow>¡Cosecha 30 objetos en las cuevas volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0113,<yellow>¡Cosecha calabazas de las cuevas volcánicas 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0114,<yellow>¡Cosecha calabazas de las cuevas volcánicas 15 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0115,"<yellow>¡Cosecha piñas de las cuevas volcánicas 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: fruta<br><c 73d882>El plato ""Croqueta de Cangrejo del Desierto"" aumenta tu<br>posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0116,"<yellow>¡Cosecha piñas de las cuevas volcánicas 15 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: fruta<br><c 73d882>El plato ""Croqueta de Cangrejo del Desierto"" aumenta tu<br>posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0117,"<yellow>¡Cosecha escamas de dragón Amduskian 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0118,"<yellow>¡Cosecha granates de cuevas volcánicas 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0119,<yellow>¡Cosecha 10 artículos en la Tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0120,<yellow>¡Cosecha 20 artículos en la Tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0121,<yellow>¡Cosecha 30 artículos en la Tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0122,<yellow>¡Cosecha cebolletas de tundra 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0123,<yellow>¡Cosecha cebolletas de tundra 15 veces!<c><br>Zona: Tundra<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0124,<yellow>¡Cosecha manzanas verdes Tundra 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato “Croqueta de Cangrejo del Desierto”<br>tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0125,<yellow>¡Cosecha manzanas verdes Tundra 15 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato “Croqueta de Cangrejo del Desierto”<br>tus posibilidades de cosechar fruta<c>
+Explain_C,1,Explain_C0126,"<yellow>¡Cosecha hongos Naver 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: Vegetal<br><c 73d882>Aumenta el plato ""Ensalada de tomate del bosque""<br>tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0127,"<yellow>¡Cosecha Tundra Amber 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0128,<yellow>¡Cosecha 10 artículos en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0129,<yellow>¡Cosecha 20 artículos en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0130,<yellow>¡Cosecha 30 artículos en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0131,<yellow>¡Cosecha hongos de ejes subterráneos 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0132,<yellow>¡Cosecha hongos de pozos subterráneos 15 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0133,"<yellow>¡Coseche jengibre de pozos subterráneos 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0134,"<yellow>¡Coseche jengibre de pozos subterráneos 15 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0135,"<yellow>¡Cosecha chalecos Lillipan 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0136,"<yellow>¡Cosecha peridotos de pozos subterráneos 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0137,<yellow>¡Cosecha 10 artículos en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0138,<yellow>¡Cosecha 20 artículos en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0139,<yellow>¡Cosecha 30 artículos en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0140,<yellow>¡Cosecha brotes de hilo de la provincia del amanecer 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0141,<yellow>¡Cosecha brotes de hilo de la provincia del amanecer 15 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0142,"<yellow>¡Cosecha berenjenas de la provincia de Daybreak 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0143,"<yellow>¡Cosecha berenjenas de la provincia de Daybreak 15 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0144,"<yellow>¡Cosecha fragmentos de Harukotan 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0145,"<yellow>¡Cosecha piedras lunares de la provincia del amanecer 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0146,<yellow>¡Cosecha 10 artículos en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0147,<yellow>¡Cosecha 20 artículos en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0148,<yellow>¡Cosecha 30 artículos en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0149,<yellow>¡Cosecha judías verdes del continente flotante 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0150,<yellow>¡Cosecha judías verdes del continente flotante 15 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0151,"<yellow>¡Cosecha castañas del continente flotante 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Buñuelos de Pulpo de Fondo Marino""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0152,"<yellow>¡Cosecha castañas del continente flotante 15 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Buñuelos de Pulpo de Fondo Marino""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0153,"<yellow>¡Cosecha escamas de dragón Amduskian 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0154,"<yellow>¡Cosecha Fluorita Continente Flotante 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0155,<yellow>¡Cosecha 10 artículos en el fondo marino!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0156,<yellow>¡Cosecha 20 artículos en el fondo marino!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0157,<yellow>¡Cosecha 30 artículos en el fondo marino!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0158,<yellow>¡Cosecha chalotes del fondo marino 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0159,<yellow>¡Cosecha chalotes del fondo marino 15 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0160,"<yellow>¡Cosecha limones del fondo marino 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Buñuelos de Pulpo de Fondo Marino""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0161,"<yellow>¡Cosecha limones del fondo marino 15 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: fruta<br><c 73d882>Se incrementa el plato ""Buñuelos de Pulpo de Fondo Marino""<br>tus posibilidades de cosechar fruta<c>"
+Explain_C,1,Explain_C0162,"<yellow>¡Cosecha conchas de Wopal 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0163,"<yellow>¡Cosecha tanzanita del fondo marino 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
+Explain_C,1,Explain_C0164,<yellow>¡Cosecha 10 artículos en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0165,<yellow>¡Cosecha 20 artículos en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0166,<yellow>¡Cosecha 30 artículos en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0167,<yellow>¡Cosecha rábanos del Altar del Dragón 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0168,<yellow>¡Cosecha rábanos del Altar del Dragón 15 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0169,"<yellow>¡Cosecha espinacas Dragon Altar 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0170,"<yellow>¡Cosecha espinacas Dragon Altar 15 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0171,"<yellow>¡Cosecha escamas de dragón Amduskian 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0172,"<yellow>¡Cosecha Dragon Altar Zircon 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Joya<br><c 73d882>El plato ""Tazón de arroz con anguila de la mina abandonada""<br>aumenta tus posibilidades de recolectar joyas<c>"
+Explain_C,1,Explain_C0173,<yellow>¡Cosecha 10 artículos en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0174,<yellow>¡Cosecha 20 artículos en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0175,<yellow>¡Cosecha 30 artículos en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_C,1,Explain_C0176,<yellow>¡Cosecha raíces de loto de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0177,<yellow>¡Cosecha raíces de loto de la provincia Nightfall 15 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Vegetal
+Explain_C,1,Explain_C0178,"<yellow>¡Cosecha raíces de bardana de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0179,"<yellow>¡Cosecha raíces de bardana de la provincia Nightfall 15 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Vegetal<br><c 73d882>El plato ""Camarones mantis a la parrilla con ejes subterráneos""<br>aumenta tus posibilidades de cosechar Verduras<c>"
+Explain_C,1,Explain_C0180,"<yellow>¡Cosecha fragmentos de Harukotan 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Varios<br><c 73d882>Aumenta el plato ""Ensalada de caracolas de ejes subterráneos""<br>tus posibilidades de cosechar artículos varios<c>"
+Explain_C,1,Explain_C0181,"<yellow>¡Cosecha hematita de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Joya<br><c 73d882>Aumenta el plato ""Tazón de arroz con anguila de mina abandonada""<br>tus posibilidades de cosechar joyas<c>"
 SheetName_C,0,SheetName_C0000,共通採取1
 SheetName_C,0,SheetName_C0001,共通採取2
 SheetName_C,0,SheetName_C0002,森林採取1
@@ -793,24 +793,24 @@ SheetName_C,0,SheetName_C0014,浮遊大陸採取1
 SheetName_C,0,SheetName_C0015,海底採取1
 SheetName_C,0,SheetName_C0016,龍祭壇採取1
 SheetName_C,0,SheetName_C0017,黒ノ領域採取1
-SheetName_C,1,SheetName_C0000,Common Harvest 1
-SheetName_C,1,SheetName_C0001,Common Harvest 2
-SheetName_C,1,SheetName_C0002,Forest Harvest 1
-SheetName_C,1,SheetName_C0003,Ruins Harvest 1
-SheetName_C,1,SheetName_C0004,Coast Harvest 1
-SheetName_C,1,SheetName_C0005,Tokyo Harvest 1
-SheetName_C,1,SheetName_C0006,Desert Harvest 1
-SheetName_C,1,SheetName_C0007,Mine Harvest 1
-SheetName_C,1,SheetName_C0008,Facility Harvest 1
-SheetName_C,1,SheetName_C0009,Vegas Harvest 1
-SheetName_C,1,SheetName_C0010,Caves Harvest 1
-SheetName_C,1,SheetName_C0011,Tundra Harvest 1
-SheetName_C,1,SheetName_C0012,Shafts Harvest 1
-SheetName_C,1,SheetName_C0013,Daybreak Harvest 1
-SheetName_C,1,SheetName_C0014,Continent Harvest 1
-SheetName_C,1,SheetName_C0015,Seabed Harvest 1
-SheetName_C,1,SheetName_C0016,Altar Harvest 1
-SheetName_C,1,SheetName_C0017,Nightfall Harvest 1
+SheetName_C,1,SheetName_C0000,Cosecha común 1
+SheetName_C,1,SheetName_C0001,Cosecha común 2
+SheetName_C,1,SheetName_C0002,Cosecha forestal 1
+SheetName_C,1,SheetName_C0003,Cosecha de ruinas 1
+SheetName_C,1,SheetName_C0004,Cosecha de la costa 1
+SheetName_C,1,SheetName_C0005,Cosecha de Tokio 1
+SheetName_C,1,SheetName_C0006,Cosecha del desierto 1
+SheetName_C,1,SheetName_C0007,Cosecha minera 1
+SheetName_C,1,SheetName_C0008,Cosecha de instalaciones 1
+SheetName_C,1,SheetName_C0009,Cosecha de Las Vegas 1
+SheetName_C,1,SheetName_C0010,Cuevas Cosecha 1
+SheetName_C,1,SheetName_C0011,Cosecha de tundra 1
+SheetName_C,1,SheetName_C0012,Cosecha de ejes 1
+SheetName_C,1,SheetName_C0013,Cosecha del amanecer 1
+SheetName_C,1,SheetName_C0014,Cosecha continental 1
+SheetName_C,1,SheetName_C0015,Cosecha del fondo marino 1
+SheetName_C,1,SheetName_C0016,Cosecha de altar 1
+SheetName_C,1,SheetName_C0017,Cosecha del anochecer 1
 Name_F,0,Name_F0000,釣り経験1
 Name_F,0,Name_F0001,釣り経験2
 Name_F,0,Name_F0002,釣り経験3
@@ -993,188 +993,188 @@ Name_F,0,Name_F0178,黒ノ領域ダツ釣り経験1
 Name_F,0,Name_F0179,黒ノ領域ダツ釣り経験2
 Name_F,0,Name_F0180,リトルザクリ釣り経験1
 Name_F,0,Name_F0181,小型黒ノ領域アワビ釣り経験1
-Name_F,1,Name_F0000,Fishing Lv. 1
-Name_F,1,Name_F0001,Fishing Lv. 2
-Name_F,1,Name_F0002,Fishing Lv. 3
-Name_F,1,Name_F0003,Fishing Lv. 4
-Name_F,1,Name_F0004,Fishing Lv. 5
-Name_F,1,Name_F0005,Fishing Lv. 6
-Name_F,1,Name_F0006,Extra Fishing Lv. 1
-Name_F,1,Name_F0007,Extra Fishing Lv. 2
-Name_F,1,Name_F0008,Extra Fishing Lv. 3
-Name_F,1,Name_F0009,Extra Fishing Lv. 4
-Name_F,1,Name_F0010,Rare Fishing Lv. 1
-Name_F,1,Name_F0011,Rare Fishing Lv. 2
-Name_F,1,Name_F0012,Rare Fishing Lv. 3
-Name_F,1,Name_F0013,Rare Fishing Lv. 4
-Name_F,1,Name_F0014,Fish-catcher Lv. 1
-Name_F,1,Name_F0015,Small-sized Fishing Lv. 1
-Name_F,1,Name_F0016,Medium-sized Fishing Lv. 1
-Name_F,1,Name_F0017,Large-sized Fishing Lv. 1
-Name_F,1,Name_F0018,Fishing Lv. 7
-Name_F,1,Name_F0019,Fishing Lv. 8
-Name_F,1,Name_F0020,Fishing Lv. 9
-Name_F,1,Name_F0021,Fishing Lv. 10
-Name_F,1,Name_F0022,Fishing Lv. 11
-Name_F,1,Name_F0023,Extra Fishing Lv. 5
-Name_F,1,Name_F0024,Extra Fishing Lv. 6
-Name_F,1,Name_F0025,Extra Fishing Lv. 7
-Name_F,1,Name_F0026,Extra Fishing Lv. 8
-Name_F,1,Name_F0027,Extra Fishing Lv. 9
-Name_F,1,Name_F0028,Rare Fishing Lv. 5
-Name_F,1,Name_F0029,Rare Fishing Lv. 6
-Name_F,1,Name_F0030,Rare Fishing Lv. 7
-Name_F,1,Name_F0031,Rare Fishing Lv. 8
-Name_F,1,Name_F0032,Rare Fishing Lv. 9
-Name_F,1,Name_F0033,Fish-catcher Lv. 2
-Name_F,1,Name_F0034,Shellfish-catcher Lv. 1
-Name_F,1,Name_F0035,Crustacean-catcher Lv. 1
-Name_F,1,Name_F0036,Miscellaneous-catcher Lv. 1
-Name_F,1,Name_F0037,Special-catcher Lv. 1
-Name_F,1,Name_F0038,Forest Fishing Lv. 1
-Name_F,1,Name_F0039,Forest Fishing Lv. 2
-Name_F,1,Name_F0040,Forest Fishing Lv. 3
-Name_F,1,Name_F0041,Forest Sweetfish-catcher Lv. 1
-Name_F,1,Name_F0042,Forest Sweetfish-catcher Lv. 2
-Name_F,1,Name_F0043,Forest Tuna-catcher Lv. 1
-Name_F,1,Name_F0044,Forest Tuna-catcher Lv. 2
-Name_F,1,Name_F0045,Naverturtle-catcher Lv. 1
-Name_F,1,Name_F0046,Med. Forest Yellowtail-catcher 1
-Name_F,1,Name_F0047,Ruins Fishing Lv. 1
-Name_F,1,Name_F0048,Ruins Fishing Lv. 2
-Name_F,1,Name_F0049,Ruins Fishing Lv. 3
-Name_F,1,Name_F0050,Ruins Shrimp-catcher Lv. 1
-Name_F,1,Name_F0051,Ruins Shrimp-catcher Lv. 2
-Name_F,1,Name_F0052,Ruins Snap-catcher Lv. 1
-Name_F,1,Name_F0053,Ruins Snap-catcher Lv. 2
-Name_F,1,Name_F0054,Naverturtle-catcher Lv. 1
-Name_F,1,Name_F0055,Lg. Ruins Salmon-catcher Lv. 1
-Name_F,1,Name_F0056,Coast Fishing Lv. 1
-Name_F,1,Name_F0057,Coast Fishing Lv. 2
-Name_F,1,Name_F0058,Coast Fishing Lv. 3
-Name_F,1,Name_F0059,Coast Clam-catcher Lv. 1
-Name_F,1,Name_F0060,Coast Clam-catcher Lv. 2
-Name_F,1,Name_F0061,Coast Mussel-catcher Lv. 1
-Name_F,1,Name_F0062,Coast Mussel-catcher Lv. 2
-Name_F,1,Name_F0063,Wopal Shark-catcher Lv. 1
-Name_F,1,Name_F0064,Lg. Coast File Fish-catcher Lv. 1
-Name_F,1,Name_F0065,Tokyo Fishing Lv. 1
-Name_F,1,Name_F0066,Tokyo Fishing Lv. 2
-Name_F,1,Name_F0067,Tokyo Fishing Lv. 3
-Name_F,1,Name_F0068,Tokyo Tuna-catcher Lv. 1
-Name_F,1,Name_F0069,Tokyo Tuna-catcher Lv. 2
-Name_F,1,Name_F0070,Tokyo Shrimp-catcher Lv. 1
-Name_F,1,Name_F0071,Tokyo Shrimp-catcher Lv. 2
-Name_F,1,Name_F0072,Sand Shellfish-catcher Lv. 1
-Name_F,1,Name_F0073,Tokyo Seabream-catcher Lv. 1
-Name_F,1,Name_F0074,Desert Fishing Lv. 1
-Name_F,1,Name_F0075,Desert Fishing Lv. 2
-Name_F,1,Name_F0076,Desert Fishing Lv. 3
-Name_F,1,Name_F0077,Desert Flounder-catcher Lv. 1
-Name_F,1,Name_F0078,Desert Flounder-catcher Lv. 2
-Name_F,1,Name_F0079,Desert Crab-catcher Lv. 1
-Name_F,1,Name_F0080,Desert Crab-catcher Lv. 2
-Name_F,1,Name_F0081,Lillipan Shell-catcher Lv. 1
-Name_F,1,Name_F0082,Med. Desert Flying Fish-catcher Lv. 1
-Name_F,1,Name_F0083,Abandoned Mine Fishing Lv. 1
-Name_F,1,Name_F0084,Abandoned Mine Fishing Lv. 2
-Name_F,1,Name_F0085,Abandoned Mine Fishing Lv. 3
-Name_F,1,Name_F0086,Abandoned Mine Beltfish-catcher Lv. 1
-Name_F,1,Name_F0087,Abandoned Mine Beltfish-catcher Lv. 2
-Name_F,1,Name_F0088,Abandoned Mine Eel-catcher Lv. 1
-Name_F,1,Name_F0089,Abandoned Mine Eel-catcher Lv. 2
-Name_F,1,Name_F0090,Lillipan Shell-catcher Lv. 1
-Name_F,1,Name_F0091,Lg. Abandoned Mine Shark-catcher Lv. 1
-Name_F,1,Name_F0092,Floating Facility Fishing Lv. 1
-Name_F,1,Name_F0093,Floating Facility Fishing Lv. 2
-Name_F,1,Name_F0094,Floating Facility Fishing Lv. 3
-Name_F,1,Name_F0095,Floating Facility Squid-catcher Lv. 1
-Name_F,1,Name_F0096,Floating Facility Squid-catcher Lv. 2
-Name_F,1,Name_F0097,Floating Facility Sardine-catcher Lv. 1
-Name_F,1,Name_F0098,Floating Facility Sardine-catcher Lv. 2
-Name_F,1,Name_F0099,Wopal Shark-catcher Lv. 1
-Name_F,1,Name_F0100,Sm. Floating Facility Shrimp-catcher Lv. 1
-Name_F,1,Name_F0101,Las Vegas Fishing Lv. 1
-Name_F,1,Name_F0102,Las Vegas Fishing Lv. 2
-Name_F,1,Name_F0103,Las Vegas Fishing Lv. 3
-Name_F,1,Name_F0104,Las Vegas Lobster-catcher Lv. 1
-Name_F,1,Name_F0105,Las Vegas Lobster-catcher Lv. 2
-Name_F,1,Name_F0106,Las Vegas Striped Bass-catcher Lv. 1
-Name_F,1,Name_F0107,Las Vegas Striped Bass-catcher Lv. 2
-Name_F,1,Name_F0108,Sand Shellfish-catcher Lv. 1
-Name_F,1,Name_F0109,Med. Las Vegas Bass-catcher Lv. 1
-Name_F,1,Name_F0110,Volcanic Fishing Lv. 1
-Name_F,1,Name_F0111,Volcanic Fishing Lv. 2
-Name_F,1,Name_F0112,Volcanic Fishing Lv. 3
-Name_F,1,Name_F0113,Volcanic Mussel-catcher Lv. 1
-Name_F,1,Name_F0114,Volcanic Mussel-catcher Lv. 2
-Name_F,1,Name_F0115,Volcanic Armored Shrimp-catcher Lv. 1
-Name_F,1,Name_F0116,Volcanic Armored Shrimp-catcher Lv. 2
-Name_F,1,Name_F0117,Amduskia Coral-catcher Lv. 1
-Name_F,1,Name_F0118,Med. Volcanic Caves Char-catcher Lv. 1
-Name_F,1,Name_F0119,Tundra Fishing Lv. 1
-Name_F,1,Name_F0120,Tundra Fishing Lv. 2
-Name_F,1,Name_F0121,Tundra Fishing Lv. 3
-Name_F,1,Name_F0122,Tundra Herring-catcher Lv. 1
-Name_F,1,Name_F0123,Tundra Herring-catcher Lv. 2
-Name_F,1,Name_F0124,Tundra Smelt-catcher Lv. 1
-Name_F,1,Name_F0125,Tundra Smelt-catcher Lv. 2
-Name_F,1,Name_F0126,Naverturtle-catcher Lv. 1
-Name_F,1,Name_F0127,Lg. Tundra Bonito-catcher Lv. 1
-Name_F,1,Name_F0128,Underground Fishing Lv. 1
-Name_F,1,Name_F0129,Underground Fishing Lv. 2
-Name_F,1,Name_F0130,Underground Fishing Lv. 3
-Name_F,1,Name_F0131,Underground Mantis Shrimp-catcher Lv. 1
-Name_F,1,Name_F0132,Underground Mantis Shrimp-catcher Lv. 2
-Name_F,1,Name_F0133,Underground Conch-catcher Lv. 1
-Name_F,1,Name_F0134,Underground Conch-catcher Lv. 2
-Name_F,1,Name_F0135,Lillipan Shell-catcher Lv. 1
-Name_F,1,Name_F0136,Med. Underground Karasin-catcher Lv. 1
-Name_F,1,Name_F0137,Daybreak Fishing Lv. 1
-Name_F,1,Name_F0138,Daybreak Fishing Lv. 2
-Name_F,1,Name_F0139,Daybreak Fishing Lv. 3
-Name_F,1,Name_F0140,Daybreak Carp-catcher Lv. 1
-Name_F,1,Name_F0141,Daybreak Carp-catcher Lv. 2
-Name_F,1,Name_F0142,Daybreak Spider Crab-catcher Lv. 1
-Name_F,1,Name_F0143,Daybreak Spider Crab-catcher Lv. 2
-Name_F,1,Name_F0144,Little Zakri-catcher Lv. 1
-Name_F,1,Name_F0145,Med. Daybreak Dia. Mussel-catcher Lv. 1
-Name_F,1,Name_F0146,Floating Cont. Fishing Lv. 1
-Name_F,1,Name_F0147,Floating Cont. Fishing Lv. 2
-Name_F,1,Name_F0148,Floating Cont. Fishing Lv. 3
-Name_F,1,Name_F0149,Floating Cont. Kelp-catcher Lv. 1
-Name_F,1,Name_F0150,Floating Cont. Kelp-catcher Lv. 2
-Name_F,1,Name_F0151,Floating Cont. Bonito-catcher Lv. 1
-Name_F,1,Name_F0152,Floating Cont. Bonito-catcher Lv. 2
-Name_F,1,Name_F0153,Amduskia Coral-catcher Lv. 1
-Name_F,1,Name_F0154,Med. Floating Cont. Blowfish-catcher Lv. 1
-Name_F,1,Name_F0155,Seabed Fishing Lv. 1
-Name_F,1,Name_F0156,Seabed Fishing Lv. 2
-Name_F,1,Name_F0157,Seabed Fishing Lv. 3
-Name_F,1,Name_F0158,Seabed Iwagaki Oyster-catcher Lv. 1
-Name_F,1,Name_F0159,Seabed Iwagaki Oyster-catcher Lv. 2
-Name_F,1,Name_F0160,Seabed Octopus-catcher Lv. 1
-Name_F,1,Name_F0161,Seabed Octopus-catcher Lv. 2
-Name_F,1,Name_F0162,Wopal Shark-catcher Lv. 1
-Name_F,1,Name_F0163,Med. Seabed Anglerfish-catcher Lv. 1
-Name_F,1,Name_F0164,Dragon Altar Fishing Lv. 1
-Name_F,1,Name_F0165,Dragon Altar Fishing Lv. 2
-Name_F,1,Name_F0166,Dragon Altar Fishing Lv. 3
-Name_F,1,Name_F0167,Dragon Altar Fiddler Crab-catcher Lv. 1
-Name_F,1,Name_F0168,Dragon Altar Fiddler Crab-catcher Lv. 2
-Name_F,1,Name_F0169,Dragon Altar Snakehead-catcher Lv. 1
-Name_F,1,Name_F0170,Dragon Altar Snakehead-catcher Lv. 2
-Name_F,1,Name_F0171,Amduskia Coral-catcher Lv. 1
-Name_F,1,Name_F0172,Giant Dragon Altar Marlin-catcher Lv. 1
-Name_F,1,Name_F0173,Nightfall Fishing Lv. 1
-Name_F,1,Name_F0174,Nightfall Fishing Lv. 2
-Name_F,1,Name_F0175,Nightfall Fishing Lv. 3
-Name_F,1,Name_F0176,Nightfall Firefly Squid-catcher Lv. 1
-Name_F,1,Name_F0177,Nightfall Firefly Squid-catcher Lv. 2
-Name_F,1,Name_F0178,Nightfall Needlefish-catcher Lv. 1
-Name_F,1,Name_F0179,Nightfall Needlefish-catcher Lv. 2
-Name_F,1,Name_F0180,Little Zakri-catcher Lv. 1
-Name_F,1,Name_F0181,Small Nightfall Abalone-catcher Lv. 1
+Name_F,1,Name_F0000,Pesca Nv. 1
+Name_F,1,Name_F0001,Pesca Nv. 2
+Name_F,1,Name_F0002,Pesca Nv. 3
+Name_F,1,Name_F0003,Pesca Nv. 4
+Name_F,1,Name_F0004,Pesca Nv. 5
+Name_F,1,Name_F0005,Pesca Nv. 6
+Name_F,1,Name_F0006,Pesca adicional Lv. 1
+Name_F,1,Name_F0007,Pesca adicional Lv. 2
+Name_F,1,Name_F0008,Pesca adicional Lv. 3
+Name_F,1,Name_F0009,Pesca adicional Lv. 4
+Name_F,1,Name_F0010,Pesca rara Lv. 1
+Name_F,1,Name_F0011,Pesca rara Lv. 2
+Name_F,1,Name_F0012,Pesca rara Lv. 3
+Name_F,1,Name_F0013,Pesca rara Lv. 4
+Name_F,1,Name_F0014,Pescador Lv. 1
+Name_F,1,Name_F0015,Pesca Pequeña Lv. 1
+Name_F,1,Name_F0016,Pesca de tamaño mediano Lv. 1
+Name_F,1,Name_F0017,Pesca de gran tamaño Lv. 1
+Name_F,1,Name_F0018,Pesca Nv. 7
+Name_F,1,Name_F0019,Pesca Nv. 8
+Name_F,1,Name_F0020,Pesca Nv. 9
+Name_F,1,Name_F0021,Pesca Nv. 10
+Name_F,1,Name_F0022,Pesca Nv. 11
+Name_F,1,Name_F0023,Pesca adicional Lv. 5
+Name_F,1,Name_F0024,Pesca adicional Lv. 6
+Name_F,1,Name_F0025,Pesca adicional Lv. 7
+Name_F,1,Name_F0026,Pesca adicional Lv. 8
+Name_F,1,Name_F0027,Pesca adicional Lv. 9
+Name_F,1,Name_F0028,Pesca rara Lv. 5
+Name_F,1,Name_F0029,Pesca rara Lv. 6
+Name_F,1,Name_F0030,Pesca rara Lv. 7
+Name_F,1,Name_F0031,Pesca rara Lv. 8
+Name_F,1,Name_F0032,Pesca rara Lv. 9
+Name_F,1,Name_F0033,Pescador Lv. 2
+Name_F,1,Name_F0034,Recolector de mariscos Lv. 1
+Name_F,1,Name_F0035,Cazador de crustáceos Lv. 1
+Name_F,1,Name_F0036,Receptor misceláneo Lv. 1
+Name_F,1,Name_F0037,Receptor especial Lv. 1
+Name_F,1,Name_F0038,Pesca en el Bosque Lv. 1
+Name_F,1,Name_F0039,Pesca en el Bosque Lv. 2
+Name_F,1,Name_F0040,Pesca en el Bosque Lv. 3
+Name_F,1,Name_F0041,Cazador de peces dulces del bosque Lv. 1
+Name_F,1,Name_F0042,Cazador de peces dulces del bosque Lv. 2
+Name_F,1,Name_F0043,Cazador de atunes del bosque Lv. 1
+Name_F,1,Name_F0044,Cazador de atunes del bosque Lv. 2
+Name_F,1,Name_F0045,Cazatortugas Naver Lv. 1
+Name_F,1,Name_F0046,Medicina. Cazador de cola amarilla del bosque 1
+Name_F,1,Name_F0047,Pesca en Ruinas Lv. 1
+Name_F,1,Name_F0048,Pesca en Ruinas Lv. 2
+Name_F,1,Name_F0049,Pesca en Ruinas Lv. 3
+Name_F,1,Name_F0050,Cazador de camarones en ruinas Lv. 1
+Name_F,1,Name_F0051,Cazador de camarones en ruinas Lv. 2
+Name_F,1,Name_F0052,Atrapasueños de las Ruinas Lv. 1
+Name_F,1,Name_F0053,Atrapasueños de las Ruinas Lv. 2
+Name_F,1,Name_F0054,Cazatortugas Naver Lv. 1
+Name_F,1,Name_F0055,Lg. Ruinas del cazador de salmón Lv. 1
+Name_F,1,Name_F0056,Pesca de Costa Lv. 1
+Name_F,1,Name_F0057,Pesca de Costa Lv. 2
+Name_F,1,Name_F0058,Pesca de Costa Lv. 3
+Name_F,1,Name_F0059,Cazador de almejas de la costa Lv. 1
+Name_F,1,Name_F0060,Cazador de almejas de la costa Lv. 2
+Name_F,1,Name_F0061,Cazador de mejillones de la costa Lv. 1
+Name_F,1,Name_F0062,Cazador de mejillones de la costa Lv. 2
+Name_F,1,Name_F0063,Cazador de tiburones Wopal Lv. 1
+Name_F,1,Name_F0064,Lg. Archivo costero Cazador de peces Lv. 1
+Name_F,1,Name_F0065,Pesca en Tokio Lv. 1
+Name_F,1,Name_F0066,Pesca en Tokio Lv. 2
+Name_F,1,Name_F0067,Pesca en Tokio Lv. 3
+Name_F,1,Name_F0068,Cazador de atún de Tokio Lv. 1
+Name_F,1,Name_F0069,Cazador de atún de Tokio Lv. 2
+Name_F,1,Name_F0070,Cazador de camarones de Tokio Lv. 1
+Name_F,1,Name_F0071,Cazador de camarones de Tokio Lv. 2
+Name_F,1,Name_F0072,Recolector de mariscos de arena Lv. 1
+Name_F,1,Name_F0073,Cazador de dorada de Tokio Lv. 1
+Name_F,1,Name_F0074,Pesca en el desierto Lv. 1
+Name_F,1,Name_F0075,Pesca en el desierto Lv. 2
+Name_F,1,Name_F0076,Pesca en el desierto Lv. 3
+Name_F,1,Name_F0077,Recolector de platija del desierto Lv. 1
+Name_F,1,Name_F0078,Recolector de platija del desierto Lv. 2
+Name_F,1,Name_F0079,Cazacangrejos del desierto Lv. 1
+Name_F,1,Name_F0080,Cazacangrejos del desierto Lv. 2
+Name_F,1,Name_F0081,Lillipan Cazacarros Lv. 1
+Name_F,1,Name_F0082,Medicina. Cazador de peces voladores del desierto Lv. 1
+Name_F,1,Name_F0083,Pesca en mina abandonada Lv. 1
+Name_F,1,Name_F0084,Pesca en mina abandonada Lv. 2
+Name_F,1,Name_F0085,Pesca en mina abandonada Lv. 3
+Name_F,1,Name_F0086,Cazador de pez cinturón de mina abandonada Lv. 1
+Name_F,1,Name_F0087,Cazador de pez cinturón de mina abandonada Lv. 2
+Name_F,1,Name_F0088,Cazador de anguilas de mina abandonada Lv. 1
+Name_F,1,Name_F0089,Cazador de anguilas de mina abandonada Lv. 2
+Name_F,1,Name_F0090,Lillipan Cazacarros Lv. 1
+Name_F,1,Name_F0091,Lg. Cazatiburones de mina abandonada Lv. 1
+Name_F,1,Name_F0092,Pesca en instalaciones flotantes Lv. 1
+Name_F,1,Name_F0093,Pesca en instalaciones flotantes Lv. 2
+Name_F,1,Name_F0094,Pesca en instalaciones flotantes Lv. 3
+Name_F,1,Name_F0095,Instalación flotante para atrapar calamares Lv. 1
+Name_F,1,Name_F0096,Instalación flotante para atrapar calamares Lv. 2
+Name_F,1,Name_F0097,Instalación Flotante Recolector de Sardinas Lv. 1
+Name_F,1,Name_F0098,Instalación Flotante Recolector de Sardinas Lv. 2
+Name_F,1,Name_F0099,Cazador de tiburones Wopal Lv. 1
+Name_F,1,Name_F0100,SM. Instalación flotante para capturar camarones Lv. 1
+Name_F,1,Name_F0101,Pesca en Las Vegas Lv. 1
+Name_F,1,Name_F0102,Pesca en Las Vegas Lv. 2
+Name_F,1,Name_F0103,Pesca en Las Vegas Lv. 3
+Name_F,1,Name_F0104,Cazador de langostas de Las Vegas Lv. 1
+Name_F,1,Name_F0105,Cazador de langostas de Las Vegas Lv. 2
+Name_F,1,Name_F0106,Cazador de lubina rayada de Las Vegas Lv. 1
+Name_F,1,Name_F0107,Cazador de lubina rayada de Las Vegas Lv. 2
+Name_F,1,Name_F0108,Recolector de mariscos de arena Lv. 1
+Name_F,1,Name_F0109,Medicina. Receptor de bajo de Las Vegas Lv. 1
+Name_F,1,Name_F0110,Pesca Volcánica Lv. 1
+Name_F,1,Name_F0111,Pesca Volcánica Lv. 2
+Name_F,1,Name_F0112,Pesca Volcánica Lv. 3
+Name_F,1,Name_F0113,Cazador de mejillones volcánico Lv. 1
+Name_F,1,Name_F0114,Cazador de mejillones volcánico Lv. 2
+Name_F,1,Name_F0115,Cazacamarones blindado volcánico Lv. 1
+Name_F,1,Name_F0116,Cazacamarones blindado volcánico Lv. 2
+Name_F,1,Name_F0117,Amduskia Atrapa corales Lv. 1
+Name_F,1,Name_F0118,Medicina. Atrapa carbón de cuevas volcánicas Lv. 1
+Name_F,1,Name_F0119,Pesca en la tundra Lv. 1
+Name_F,1,Name_F0120,Pesca en la tundra Lv. 2
+Name_F,1,Name_F0121,Pesca en la tundra Lv. 3
+Name_F,1,Name_F0122,Cazador de arenques de tundra Lv. 1
+Name_F,1,Name_F0123,Cazador de arenques de tundra Lv. 2
+Name_F,1,Name_F0124,Atrapasueños de Tundra Lv. 1
+Name_F,1,Name_F0125,Atrapasueños de Tundra Lv. 2
+Name_F,1,Name_F0126,Cazatortugas Naver Lv. 1
+Name_F,1,Name_F0127,Lg. Cazador de Bonitos de Tundra Lv. 1
+Name_F,1,Name_F0128,Pesca Subterránea Lv. 1
+Name_F,1,Name_F0129,Pesca Subterránea Lv. 2
+Name_F,1,Name_F0130,Pesca Subterránea Lv. 3
+Name_F,1,Name_F0131,Cazador de camarones mantis subterráneo Lv. 1
+Name_F,1,Name_F0132,Cazador de camarones mantis subterráneo Lv. 2
+Name_F,1,Name_F0133,Cazador de caracolas subterráneo Lv. 1
+Name_F,1,Name_F0134,Cazador de caracolas subterráneo Lv. 2
+Name_F,1,Name_F0135,Lillipan Cazacarros Lv. 1
+Name_F,1,Name_F0136,Medicina. Atrapa Karasin subterráneo Lv. 1
+Name_F,1,Name_F0137,Pesca al amanecer Lv. 1
+Name_F,1,Name_F0138,Pesca al amanecer Lv. 2
+Name_F,1,Name_F0139,Pesca al amanecer Lv. 3
+Name_F,1,Name_F0140,Cazacarpas del amanecer Lv. 1
+Name_F,1,Name_F0141,Cazacarpas del amanecer Lv. 2
+Name_F,1,Name_F0142,Caza-cangrejo araña del amanecer Lv. 1
+Name_F,1,Name_F0143,Caza-cangrejo araña del amanecer Lv. 2
+Name_F,1,Name_F0144,Pequeño cazador de Zakri Lv. 1
+Name_F,1,Name_F0145,Medicina. Día del amanecer. Cazador de mejillones Lv. 1
+Name_F,1,Name_F0146,Continuación flotante. Pesca Nv. 1
+Name_F,1,Name_F0147,Continuación flotante. Pesca Nv. 2
+Name_F,1,Name_F0148,Continuación flotante. Pesca Nv. 3
+Name_F,1,Name_F0149,Continuación flotante. Cazador de algas Lv. 1
+Name_F,1,Name_F0150,Continuación flotante. Cazador de algas Lv. 2
+Name_F,1,Name_F0151,Continuación flotante. Cazador de bonitos Lv. 1
+Name_F,1,Name_F0152,Continuación flotante. Cazador de bonitos Lv. 2
+Name_F,1,Name_F0153,Amduskia Atrapa corales Lv. 1
+Name_F,1,Name_F0154,Medicina. Continuación flotante. Cazador de pez globo Lv. 1
+Name_F,1,Name_F0155,Pesca en el Fondo Marino Lv. 1
+Name_F,1,Name_F0156,Pesca en el Fondo Marino Lv. 2
+Name_F,1,Name_F0157,Pesca en el Fondo Marino Lv. 3
+Name_F,1,Name_F0158,Ostrero Iwagaki del Fondo Marino Lv. 1
+Name_F,1,Name_F0159,Ostrero Iwagaki del Fondo Marino Lv. 2
+Name_F,1,Name_F0160,Cazador de pulpos del fondo marino Lv. 1
+Name_F,1,Name_F0161,Cazador de pulpos del fondo marino Lv. 2
+Name_F,1,Name_F0162,Cazador de tiburones Wopal Lv. 1
+Name_F,1,Name_F0163,Medicina. Cazador de rape del fondo marino Lv. 1
+Name_F,1,Name_F0164,Pesca del Altar del Dragón Lv. 1
+Name_F,1,Name_F0165,Pesca del Altar del Dragón Lv. 2
+Name_F,1,Name_F0166,Pesca del Altar del Dragón Lv. 3
+Name_F,1,Name_F0167,Dragon Altar Fiddler Cangrejero Lv. 1
+Name_F,1,Name_F0168,Dragon Altar Fiddler Cangrejero Lv. 2
+Name_F,1,Name_F0169,Atrapa cabezas de serpiente del Altar del Dragón Lv. 1
+Name_F,1,Name_F0170,Atrapa cabezas de serpiente del Altar del Dragón Lv. 2
+Name_F,1,Name_F0171,Amduskia Atrapa corales Lv. 1
+Name_F,1,Name_F0172,Altar del Dragón Gigante Cazador de Marlins Lv. 1
+Name_F,1,Name_F0173,Pesca al anochecer Lv. 1
+Name_F,1,Name_F0174,Pesca al anochecer Lv. 2
+Name_F,1,Name_F0175,Pesca al anochecer Lv. 3
+Name_F,1,Name_F0176,Cazador de calamares luciérnaga del anochecer Lv. 1
+Name_F,1,Name_F0177,Cazador de calamares luciérnaga del anochecer Lv. 2
+Name_F,1,Name_F0178,Cazador de peces aguja del anochecer Lv. 1
+Name_F,1,Name_F0179,Cazador de peces aguja del anochecer Lv. 2
+Name_F,1,Name_F0180,Pequeño cazador de Zakri Lv. 1
+Name_F,1,Name_F0181,Pequeño cazador de abulones del anochecer Lv. 1
 Explain_F,0,Explain_F0000,<yellow>1回、釣りをしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
 Explain_F,0,Explain_F0001,<yellow>8回、釣りをしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
 Explain_F,0,Explain_F0002,<yellow>20回、釣りをしよう！<c><br>　※エリア：指定なし<br>　※対象カテゴリ：すべて
@@ -1357,188 +1357,188 @@ Explain_F,0,Explain_F0178,<yellow>「黒ノ領域ダツ」を3回、釣ろう！
 Explain_F,0,Explain_F0179,<yellow>「黒ノ領域ダツ」を15回、釣ろう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：魚類<br><c 73d882>　※魚類は「海底イワガキの紙包み焼き」で<br>　　取得率上昇<c>
 Explain_F,0,Explain_F0180,<yellow>「リトルザクリ」を3回、釣ろう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：その他<br><c 73d882>　※その他は料理「白ノ領域フナの煮付け」で<br>　　取得率上昇<c>
 Explain_F,0,Explain_F0181,<yellow>小型「黒ノ領域アワビ」を3回、釣ろう！<c><br>　※エリア：黒ノ領域<br>　※対象カテゴリ：小型釣り<br><c 73d882>　※小型釣りは「海岸ムール貝のオイルづけ」で<br>　　取得率上昇<c>
-Explain_F,1,Explain_F0000,<yellow>Fish 1 more time!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0001,<yellow>Fish 8 more times!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0002,<yellow>Fish 20 more times!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0003,<yellow>Fish 30 more times!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0004,<yellow>Fish 40 more times!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0005,<yellow>Fish 50 more times!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0006,"<yellow>Fish 5 more times!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases the spawn rate of Marine Life<c>"
-Explain_F,1,Explain_F0007,"<yellow>Fish 10 more times!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases the spawn rate of Marine Life<c>"
-Explain_F,1,Explain_F0008,"<yellow>Fish 20 more times!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases the spawn rate of Marine Life<c>"
-Explain_F,1,Explain_F0009,"<yellow>Fish 30 more times!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases the spawn rate of Marine Life<c>"
-Explain_F,1,Explain_F0010,<yellow>Catch 5 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0011,<yellow>Catch 10 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0012,<yellow>Catch 20 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0013,<yellow>Catch 30 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0014,"<yellow>Catch Fish 10 times!<c><br> Area: Anywhere<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0015,"<yellow>Catch Small-sized Marine Life 10 times!<c><br> Area: Anywhere<br> Target Category: Small-sized Marine Life Fishing<br><c 73d882>The dish ""Marinated Coast Mussels"" increases<br>your chances of catching Small-sized Marine Life<c>"
-Explain_F,1,Explain_F0016,"<yellow>Catch Medium-sized Marine Life 10 times!<c><br> Area: Anywhere<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0017,"<yellow>Catch Large-sized Marine Life 10 times!<c><br> Area: Anywhere<br> Target Category: Large-sized Marine Life Fishing<br><c 73d882>The dish ""Forest Tomato-Simmered Sweetfish"" increases<br>your chances of catching Large-sized Marine Life<c>"
-Explain_F,1,Explain_F0018,<yellow>Catch 100 items!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0019,<yellow>Catch 200 items!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0020,<yellow>Catch 300 items!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0021,<yellow>Catch 400 items!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0022,<yellow>Catch 500 items!<c><br> Area: Anywhere<br> Target Category: All
-Explain_F,1,Explain_F0023,"<yellow>Catch 50 extra Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases your chances of catching extra Marine Life<c>"
-Explain_F,1,Explain_F0024,"<yellow>Catch 75 extra Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases your chances of catching extra Marine Life<c>"
-Explain_F,1,Explain_F0025,"<yellow>Catch 100 extra Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases your chances of catching extra Marine Life<c>"
-Explain_F,1,Explain_F0026,"<yellow>Catch 125 extra Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases your chances of catching extra Marine Life<c>"
-Explain_F,1,Explain_F0027,"<yellow>Catch 150 extra Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c 73d882>The dish ""Forest Yellowtail Fishhead Soup""<br>increases your chances of catching extra Marine Life<c>"
-Explain_F,1,Explain_F0028,<yellow>Catch 50 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0029,<yellow>Catch 75 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0030,<yellow>Catch 100 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0031,<yellow>Catch 125 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0032,<yellow>Catch 150 rare Marine Life!<c><br> Area: Anywhere<br> Target Category: All<br><c d468a0>Rare Marine Life is caught<br>at random<c>
-Explain_F,1,Explain_F0033,"<yellow>Catch  Fish 50 times!<c><br> Area: Anywhere<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0034,"<yellow>Catch Shellfish 50 times!<c><br> Area: Anywhere<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0035,"<yellow>Catch Crustaceans 50 times!<c><br> Area: Anywhere<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0036,"<yellow>Catch miscellaneous items 50 times!<c><br> Area: Anywhere<br> Target Category: Misc<br><c 73d882>The dish ""Daybreak Province Carp in Soy Sauce""<br>increases your chances of catching miscellaneous items<c>"
-Explain_F,1,Explain_F0037,"<yellow>Catch Special items 50 times!<c><br> Area: Anywhere<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" increases<br>your chances of catching special items<c>"
-Explain_F,1,Explain_F0038,<yellow>Catch 10 items in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_F,1,Explain_F0039,<yellow>Catch 20 items in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_F,1,Explain_F0040,<yellow>Catch 30 items in the Forest!<c><br> Area: Forest<br> Target Category: All
-Explain_F,1,Explain_F0041,<yellow>Catch Forest Sweetfish 3 times!<c><br>Area: Forest<br>Target Category: Fish
-Explain_F,1,Explain_F0042,<yellow>Catch Forest Sweetfish 10 times!<c><br>Area: Forest<br>Target Category: Fish
+Explain_F,1,Explain_F0000,<yellow>¡Pesca 1 vez más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0001,<yellow>¡Pesca 8 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0002,<yellow>¡Pesca 20 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0003,<yellow>¡Pesca 30 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0004,<yellow>¡Pesca 40 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0005,<yellow>¡Pesca 50 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0006,"<yellow>¡Pesca 5 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta la tasa de generación de vida marina<c>"
+Explain_F,1,Explain_F0007,"<yellow>¡Pesca 10 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta la tasa de generación de vida marina<c>"
+Explain_F,1,Explain_F0008,"<yellow>¡Pesca 20 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta la tasa de generación de vida marina<c>"
+Explain_F,1,Explain_F0009,"<yellow>¡Pesca 30 veces más!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta la tasa de generación de vida marina<c>"
+Explain_F,1,Explain_F0010,<yellow>¡Captura 5 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0011,<yellow>¡Atrapa 10 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0012,<yellow>¡Captura 20 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0013,<yellow>¡Captura 30 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0014,"<yellow>¡Atrapa peces 10 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: pescado<br><c 73d882>Se incrementa el plato ""Pescado a la Plancha""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0015,<yellow>¡Atrapa vida marina pequeña 10 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Pesca de vida marina de tamaño pequeño<br><c 73d882>Se incrementa el plato “Mejillones de Costa Escabechados”<br>tus posibilidades de capturar vida marina de tamaño pequeño<c>
+Explain_F,1,Explain_F0016,<yellow>¡Atrapa vida marina de tamaño mediano 10 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0017,"<yellow>¡Atrapa vida marina de gran tamaño 10 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: pesca de vida marina de gran tamaño<br><c 73d882>Aumenta el plato ""Pescado dulce al fuego con tomate del bosque""<br>tus posibilidades de capturar vida marina de gran tamaño<c>"
+Explain_F,1,Explain_F0018,<yellow>¡Atrapa 100 artículos!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0019,<yellow>¡Atrapa 200 artículos!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0020,<yellow>¡Atrapa 300 artículos!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0021,<yellow>¡Atrapa 400 artículos!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0022,<yellow>¡Atrapa 500 artículos!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0023,"<yellow>¡Atrapa 50 vida marina adicional!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta tus posibilidades de capturar vida marina adicional<c>"
+Explain_F,1,Explain_F0024,"<yellow>¡Atrapa 75 vida marina extra!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta tus posibilidades de capturar vida marina adicional<c>"
+Explain_F,1,Explain_F0025,"<yellow>¡Atrapa 100 vida marina extra!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta tus posibilidades de capturar vida marina adicional<c>"
+Explain_F,1,Explain_F0026,"<yellow>¡Atrapa 125 vida marina extra!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta tus posibilidades de capturar vida marina adicional<c>"
+Explain_F,1,Explain_F0027,"<yellow>¡Atrapa 150 vida marina extra!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c 73d882>El plato ""Sopa de cabeza de pez de cola amarilla del bosque""<br>aumenta tus posibilidades de capturar vida marina adicional<c>"
+Explain_F,1,Explain_F0028,<yellow>¡Atrapa 50 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0029,<yellow>¡Captura 75 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0030,<yellow>¡Atrapa 100 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0031,<yellow>¡Captura 125 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0032,<yellow>¡Captura 150 especies marinas raras!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Todos<br><c d468a0>Se captura vida marina rara<br>al azar<c>
+Explain_F,1,Explain_F0033,"<yellow>¡Atrapa peces 50 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: pescado<br><c 73d882>Se incrementa el plato ""Pescado a la Plancha""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0034,"<yellow>¡Atrapa mariscos 50 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0035,"<yellow>¡Atrapa crustáceos 50 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0036,"<yellow>¡Atrapa artículos varios 50 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Varios<br><c 73d882>El plato ""Carpa de la Provincia del Alba en Salsa de Soja""<br>aumenta tus posibilidades de atrapar artículos diversos<c>"
+Explain_F,1,Explain_F0037,"<yellow>¡Atrapa objetos especiales 50 veces!<c><br>Área: Cualquier lugar<br>Categoría objetivo: Especial<br><c 73d882>Se incrementa el plato ""Wrap de Marisco Asado""<br>tus posibilidades de atrapar artículos especiales<c>"
+Explain_F,1,Explain_F0038,<yellow>¡Atrapa 10 objetos en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0039,<yellow>¡Atrapa 20 objetos en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0040,<yellow>¡Atrapa 30 objetos en el bosque!<c><br>Área: Bosque<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0041,<yellow>¡Atrapa pez dulce del bosque 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0042,<yellow>¡Atrapa pez dulce del bosque 10 veces!<c><br>Área: Bosque<br>Categoría objetivo: pescado
 Explain_F,1,Explain_F0043,"<yellow>Catch Forest Tuna 3 times!<c><br> Area: Forest<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
 Explain_F,1,Explain_F0044,"<yellow>Catch Forest Tuna 15 times!<c><br> Area: Forest<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0045,"<yellow>Catch Naverturtles 3 times!<c><br> Area: Forest<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br> the chances of catching special items<c>"
-Explain_F,1,Explain_F0046,"<yellow>Catch Medium-sized Forest Yellowtail 3 times!<c><br> Area: Forest<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0047,<yellow>Catch 10 items in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_F,1,Explain_F0048,<yellow>Catch 20 items in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_F,1,Explain_F0049,<yellow>Catch 30 items in the Ruins!<c><br> Area: Ruins<br> Target Category: All
-Explain_F,1,Explain_F0050,<yellow>Catch Ruins Shrimp 3 times!<c><br>Area: Ruins<br>Target Category: Crustacean
-Explain_F,1,Explain_F0051,<yellow>Catch Ruins Shrimp 15 times!<c><br>Area: Ruins<br>Target Category: Crustacean
-Explain_F,1,Explain_F0052,"<yellow>Catch Ruins Golden Eye Snappers 3 times!<c><br> Area: Ruins<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0053,"<yellow>Catch Ruins Golden Eye Snappers 15 times!<c><br> Area: Ruins<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0054,"<yellow>Catch Naverturtles 3 times!<c><br> Area: Ruins<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br>the chances of catching special items<c>"
-Explain_F,1,Explain_F0055,"<yellow>Catch Large-sized Ruins Salmon 3 times!<c><br> Area: Ruins<br> Target Category: Large-sized Marine Life Fishing<br><c 73d882>The dish ""Forest Tomato-Simmered Sweetfish"" increases<br>your chances of catching Large-sized Marine Life<c>"
-Explain_F,1,Explain_F0056,<yellow>Catch 10 items at the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_F,1,Explain_F0057,<yellow>Catch 20 items at the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_F,1,Explain_F0058,<yellow>Catch 30 items at the Coast!<c><br> Area: Coast<br> Target Category: All
-Explain_F,1,Explain_F0059,<yellow>Catch Coast Littleneck Clams 3 times!<c><br>Area: Coast<br>Target Category: Shellfish
-Explain_F,1,Explain_F0060,<yellow>Catch Coast Littleneck Clams 15 times!<c><br>Area: Coast<br>Target Category: Shellfish
-Explain_F,1,Explain_F0061,"<yellow>Catch Coast Mussels 3 times!<c><br> Area: Coast<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0062,"<yellow>Catch Coast Mussels 15 times!<c><br> Area: Coast<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0063,"<yellow>Catch Wopal Sharks 3 times!<c><br> Area: Coast<br> Target Category: Giant-sized Marine Life Fishing<br><c 73d882>The dish ""Floating Facility Turnip Ravioli"" increases<br>your chances of catching Giant-sized Marine Life<c>"
-Explain_F,1,Explain_F0064,"<yellow>Catch Large-sized Coast File Fish 3 times!<c><br> Area: Coast<br> Target Category: Large-sized Marine Life Fishing<br><c 73d882>The dish ""Forest Tomato-Simmered Sweetfish"" increases<br>your chances of catching Large-sized Marine Life<c>"
-Explain_F,1,Explain_F0065,<yellow>Catch 10 items in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
-Explain_F,1,Explain_F0066,<yellow>Catch 20 items in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
-Explain_F,1,Explain_F0067,<yellow>Catch 30 items in Tokyo!<c><br> Area: Tokyo<br> Target Category: All
+Explain_F,1,Explain_F0045,"<yellow>¡Atrapa tortugas Navert 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de atrapar objetos especiales<c>"
+Explain_F,1,Explain_F0046,<yellow>¡Atrapa jurel del bosque de tamaño mediano 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0047,<yellow>¡Atrapa 10 objetos en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0048,<yellow>¡Atrapa 20 objetos en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0049,<yellow>¡Atrapa 30 objetos en las Ruinas!<c><br>Zona: Ruinas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0050,<yellow>¡Atrapa camarones de las ruinas 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0051,<yellow>¡Atrapa camarones en ruinas 15 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0052,"<yellow>¡Atrapa pargos de ojo dorado de las ruinas 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: pescado<br><c 73d882>Se incrementa el plato ""Pescado a la Plancha""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0053,"<yellow>¡Atrapa pargos de ojo dorado de las ruinas 15 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: pescado<br><c 73d882>Se incrementa el plato ""Pescado a la Plancha""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0054,"<yellow>¡Atrapa tortugas Navert 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de atrapar objetos especiales<c>"
+Explain_F,1,Explain_F0055,"<yellow>¡Atrapa salmón de ruinas de gran tamaño 3 veces!<c><br>Zona: Ruinas<br>Categoría objetivo: pesca de vida marina de gran tamaño<br><c 73d882>Aumenta el plato ""Pescado dulce al fuego con tomate del bosque""<br>tus posibilidades de capturar vida marina de gran tamaño<c>"
+Explain_F,1,Explain_F0056,<yellow>¡Atrapa 10 artículos en la costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0057,<yellow>¡Atrapa 20 artículos en la costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0058,<yellow>¡Atrapa 30 artículos en la costa!<c><br>Zona: Costa<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0059,<yellow>¡Atrapa almejas de cuello pequeño de la costa 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0060,<yellow>¡Atrapa almejas de cuello pequeño de la costa 15 veces!<c><br>Zona: Costa<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0061,"<yellow>¡Atrapa mejillones de la costa 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0062,"<yellow>¡Atrapa mejillones de la costa 15 veces!<c><br>Zona: Costa<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0063,"<yellow>¡Atrapa tiburones Wopal 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: Pesca de vida marina de tamaño gigante<br><c 73d882>Aumenta el plato ""Ravioli de nabo con instalación flotante""<br>tus posibilidades de atrapar vida marina gigante<c>"
+Explain_F,1,Explain_F0064,"<yellow>¡Atrapa peces de archivo costero de gran tamaño 3 veces!<c><br>Zona: Costa<br>Categoría objetivo: pesca de vida marina de gran tamaño<br><c 73d882>Aumenta el plato ""Pescado dulce al fuego con tomate del bosque""<br>tus posibilidades de capturar vida marina de gran tamaño<c>"
+Explain_F,1,Explain_F0065,<yellow>¡Atrapa 10 artículos en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0066,<yellow>¡Atrapa 20 artículos en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0067,<yellow>¡Atrapa 30 artículos en Tokio!<c><br>Zona: Tokio<br>Categoría objetivo: Todos
 Explain_F,1,Explain_F0068,"<yellow>Catch Tokyo Tuna 3 times!<c><br> Area: Tokyo<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases your<br> chances of catching Fish<c>"
 Explain_F,1,Explain_F0069,"<yellow>Catch Tokyo Tuna 15 times!<c><br> Area: Tokyo<br> Target Category: Fish<br><c 73d882>The dish ""Grilled Fish"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0070,"<yellow>Catch Tokyo Shrimp 3 times!<c><br> Area: Tokyo<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0071,"<yellow>Catch Tokyo Shrimp 15 times!<c><br> Area: Tokyo<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0072,"<yellow>Catch Sand Shellfish 3 times!<c><br> Area: Tokyo<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0073,"<yellow>Catch Medium-sized Tokyo Red Seabreams 3 times!<c><br> Area: Tokyo<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0074,<yellow>Catch 10 items in Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_F,1,Explain_F0075,<yellow>Catch 20 items in Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_F,1,Explain_F0076,<yellow>Catch 30 items in Desert!<c><br> Area: Desert<br> Target Category: All
-Explain_F,1,Explain_F0077,<yellow>Catch Desert Flounder 3 times!<c><br>Area: Desert<br>Target Category: Fish
-Explain_F,1,Explain_F0078,<yellow>Catch Desert Flounder 15 times!<c><br>Area: Desert<br>Target Category: Fish
-Explain_F,1,Explain_F0079,"<yellow>Catch Desert Crabs 3 times!<c><br> Area: Desert<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0080,"<yellow>Catch Desert Crabs 15 times!<c><br> Area: Desert<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0081,"<yellow>Catch Lillipan Shells 3 times!<c><br> Area: Desert<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0082,"<yellow>Catch Medium-sized Desert Flying Fish 3 times!<c><br> Area: Desert<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0083,<yellow>Fish 10 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_F,1,Explain_F0084,<yellow>Fish 20 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_F,1,Explain_F0085,<yellow>Fish 30 times in the Abandoned Mine!<c><br> Area: Abandoned Mine<br> Target Category: All
-Explain_F,1,Explain_F0086,<yellow>Catch Abandoned Mine Beltfish 3 times!<c><br>Area: Abandoned Mine<br>Target Category: Fish
-Explain_F,1,Explain_F0087,<yellow>Catch Abandoned Mine Beltfish 15 times!<c><br>Area: Abandoned Mine<br>Target Category: Fish
+Explain_F,1,Explain_F0070,"<yellow>¡Atrapa camarones de Tokio 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0071,"<yellow>¡Atrapa camarones de Tokio 15 veces!<c><br>Zona: Tokio<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0072,"<yellow>¡Atrapa mariscos de arena 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0073,<yellow>¡Atrapa doradas rojas de Tokio de tamaño mediano 3 veces!<c><br>Zona: Tokio<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0074,<yellow>¡Atrapa 10 objetos en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0075,<yellow>¡Atrapa 20 objetos en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0076,<yellow>¡Atrapa 30 objetos en el desierto!<c><br>Zona: Desierto<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0077,<yellow>¡Atrapa platija del desierto 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0078,<yellow>¡Atrapa platija del desierto 15 veces!<c><br>Zona: Desierto<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0079,"<yellow>¡Atrapa cangrejos del desierto 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0080,"<yellow>¡Atrapa cangrejos del desierto 15 veces!<c><br>Zona: Desierto<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0081,"<yellow>¡Atrapa conchas de Lillipan 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0082,<yellow>¡Atrapa peces voladores del desierto de tamaño mediano 3 veces!<c><br>Zona: Desierto<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0083,<yellow>¡Pesca 10 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0084,<yellow>¡Pesca 20 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0085,<yellow>¡Pesca 30 veces en la Mina Abandonada!<c><br>Área: Mina Abandonada<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0086,<yellow>¡Atrapa el pez cinturón de la mina abandonada 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0087,<yellow>¡Atrapa el pez cinturón de la mina abandonada 15 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: pescado
 Explain_F,1,Explain_F0088,"<yellow>Catch Abandoned Mine Eels 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
 Explain_F,1,Explain_F0089,"<yellow>Catch Abandoned Mine Eels 15 times!<c><br> Area: Abandoned Mine<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0090,"<yellow>Catch Lillipan Shells 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0091,"<yellow>Catch Large-sized Abandoned Mine Sharks 3 times!<c><br> Area: Abandoned Mine<br> Target Category: Large-sized Marine Life Fishing<br><c 73d882>The dish""Forest Tomato-Simmered Sweetfish"" increases<br>your chances of catching of Large-sized Marine Life<c>"
-Explain_F,1,Explain_F0092,<yellow>Fish 10 times in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_F,1,Explain_F0093,<yellow>Fish 20 times in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_F,1,Explain_F0094,<yellow>Catch 30 Marine Life in the Floating Facility!<c><br> Area: Floating Facility<br> Target Category: All
-Explain_F,1,Explain_F0095,<yellow>Catch Floating Facility Squid 3 times!<c><br>Area: Floating Facility<br>Target Category: Mollusk
-Explain_F,1,Explain_F0096,<yellow>Catch Floating Facility Squid 15 times!<c><br>Area: Floating Facility<br>Target Category: Mollusk
+Explain_F,1,Explain_F0090,"<yellow>¡Atrapa conchas de Lillipan 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0091,"<yellow>¡Atrapa tiburones mineros abandonados de gran tamaño 3 veces!<c><br>Área: Mina Abandonada<br>Categoría objetivo: pesca de vida marina de gran tamaño<br><c 73d882>El plato""Pescado dulce al fuego con tomate del bosque"" aumenta<br>Tus posibilidades de capturar vida marina de gran tamaño<c>"
+Explain_F,1,Explain_F0092,<yellow>¡Pesca 10 veces en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0093,<yellow>¡Pesca 20 veces en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0094,<yellow>¡Atrapa 30 especies de vida marina en la instalación flotante!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0095,<yellow>¡Atrapa calamares de instalaciones flotantes 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: molusco
+Explain_F,1,Explain_F0096,<yellow>¡Atrapa calamares de instalaciones flotantes 15 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: molusco
 Explain_F,1,Explain_F0097,"<yellow>Catch Floating Facility Sardines 3 times!<c><br> Area: Floating Facility<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
 Explain_F,1,Explain_F0098,"<yellow>Catch Floating Facility Sardines 15 times!<c><br> Area: Floating Facility<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0099,"<yellow>Catch Wopal Sharks 3 times!<c><br> Area: Floating Facility<br> Target Category: Giant-sized Marine Life Fishing<br><c 73d882>The dish ""Floating Facility Turnip Ravioli"" increases<br>your chances of catching Giant-sized Marine Life<c>"
-Explain_F,1,Explain_F0100,"<yellow>Catch small Floating Facility Rainbow Shrimp 3 times!<c><br> Area: Floating Facility<br> Target Category: Small-sized Marine Life Fishing<br><c 73d882>The dish ""Marinated Coast Mussels"" increases<br>your chances of catching Small-sized Marine Life<c>"
-Explain_F,1,Explain_F0101,<yellow>Fish 10 times in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_F,1,Explain_F0102,<yellow>Fish 20 times in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_F,1,Explain_F0103,<yellow>Fish 30 times in Las Vegas!<c><br> Area: Las Vegas<br> Target Category: All
-Explain_F,1,Explain_F0104,<yellow>Catch Las Vegas Lobster 3 times!<c><br>Area: Las Vegas<br>Target Category: Crustacean
-Explain_F,1,Explain_F0105,<yellow>Catch Las Vegas Lobster 15 times!<c><br>Area: Las Vegas<br>Target Category: Crustacean
+Explain_F,1,Explain_F0099,"<yellow>¡Atrapa tiburones Wopal 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Pesca de vida marina de tamaño gigante<br><c 73d882>Aumenta el plato ""Ravioli de nabo con instalación flotante""<br>tus posibilidades de atrapar vida marina gigante<c>"
+Explain_F,1,Explain_F0100,<yellow>¡Atrapa pequeños camarones arcoíris de instalaciones flotantes 3 veces!<c><br>Área: Instalación Flotante<br>Categoría objetivo: Pesca de vida marina de tamaño pequeño<br><c 73d882>Se incrementa el plato “Mejillones de Costa Escabechados”<br>tus posibilidades de capturar vida marina de tamaño pequeño<c>
+Explain_F,1,Explain_F0101,<yellow>¡Pesca 10 veces en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0102,<yellow>¡Pesca 20 veces en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0103,<yellow>¡Pesca 30 veces en Las Vegas!<c><br>Zona: Las Vegas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0104,<yellow>¡Atrapa langosta de Las Vegas 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0105,<yellow>¡Atrapa langosta de Las Vegas 15 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: crustáceo
 Explain_F,1,Explain_F0106,"<yellow>Catch Las Vegas Striped Bass 3 times!<c><br> Area: Las Vegas<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
 Explain_F,1,Explain_F0107,"<yellow>Catch Las Vegas Striped Bass 15 times!<c><br> Area: Las Vegas<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0108,"<yellow>Catch Sand Shellfish 3 times!<c><br> Area: Las Vegas<br> Target Category: Shellfish<br><c 73d882>The dish ""Desert Flounder Pasta"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0109,"<yellow>Catch Medium-sized Las Vegas Bass 3 times!<c><br> Area: Las Vegas<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases your<br>chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0110,<yellow>Fish 10 times in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_F,1,Explain_F0111,<yellow>Fish 20 times in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_F,1,Explain_F0112,<yellow>Fish 30 times in the Volcanic Caves!<c><br> Area: Volcanic Caves<br> Target Category: All
-Explain_F,1,Explain_F0113,<yellow>Catch Volcanic Caves Mussels 3 times!<c><br>Area: Volcanic Caves<br>Target Category: Shellfish
-Explain_F,1,Explain_F0114,<yellow>Catch Volcanic Caves Mussels 15 times!<c><br>Area: Volcanic Caves<br>Target Category: Shellfish
-Explain_F,1,Explain_F0115,"<yellow>Catch Volcanic Caves Armored Shrimp 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0116,"<yellow>Catch Volcanic Caves Armored Shrimp 15 times!<c><br> Area: Volcanic Caves<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0117,"<yellow>Catch Amduskia Coral 3 times!<c><br> Area: Volcanic Caves<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br>the chances of catching special Marine Life<c>"
-Explain_F,1,Explain_F0118,"<yellow>Catch Medium-sized Volcanic Caves Char 3 times!<c><br> Area: Forest<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0119,<yellow>Fish 10 times in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_F,1,Explain_F0120,<yellow>Fish 20 times in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_F,1,Explain_F0121,<yellow>Fish 30 times in the Tundra!<c><br> Area: Tundra<br> Target Category: All
-Explain_F,1,Explain_F0122,<yellow>Catch Tundra Herring 3 times!<c><br>Area: Tundra<br>Target Category: Fish
-Explain_F,1,Explain_F0123,<yellow>Catch Tundra Herring 15 times!<c><br>Area: Tundra<br>Target Category: Fish
+Explain_F,1,Explain_F0108,"<yellow>¡Atrapa mariscos de arena 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: mariscos<br><c 73d882>Aumenta el plato ""Pasta de Platija del Desierto""<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0109,"<yellow>¡Atrapa lubinas de Las Vegas de tamaño mediano 3 veces!<c><br>Zona: Las Vegas<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>El plato ""Tempura de Camarones en Ruinas"" aumenta tu<br>posibilidades de capturar vida marina de tamaño mediano<c>"
+Explain_F,1,Explain_F0110,<yellow>¡Pesca 10 veces en las Cuevas Volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0111,<yellow>¡Pesca 20 veces en las Cuevas Volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0112,<yellow>¡Pesca 30 veces en las Cuevas Volcánicas!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0113,<yellow>¡Atrapa mejillones de las cuevas volcánicas 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0114,<yellow>¡Atrapa mejillones de las cuevas volcánicas 15 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0115,"<yellow>¡Atrapa camarones blindados de las cuevas volcánicas 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0116,"<yellow>¡Atrapa camarones blindados de las cuevas volcánicas 15 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0117,"<yellow>¡Atrapa Amduskia Coral 3 veces!<c><br>Zona: Cuevas Volcánicas<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de capturar vida marina especial<c>"
+Explain_F,1,Explain_F0118,<yellow>¡Atrapa cuevas volcánicas de tamaño mediano Char 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0119,<yellow>¡Pesca 10 veces en la tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0120,<yellow>¡Pesca 20 veces en la tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0121,<yellow>¡Pesca 30 veces en la tundra!<c><br>Zona: Tundra<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0122,<yellow>¡Atrapa arenque de tundra 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0123,<yellow>¡Atrapa arenque de tundra 15 veces!<c><br>Zona: Tundra<br>Categoría objetivo: pescado
 Explain_F,1,Explain_F0124,"<yellow>Catch Tundra Smelt 3 times!<c><br> Area: Tundra<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
 Explain_F,1,Explain_F0125,"<yellow>Catch Tundra Smelt 15 times!<c><br> Area: Tundra<br> Target Category: Fish<br><c 73d882>The dish ""Abandoned Mine Sautéed Beltfish""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0126,"<yellow>Catch Naverturtles 3 times!<c><br> Area: Tundra<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br>the chances of catching special items<c>"
-Explain_F,1,Explain_F0127,"<yellow>Catch Lg. Tundra Bonito 3 times!<c><br> Area: Tundra<br> Target Category: Large-sized Marine Life Fishing<br><c 73d882>The dish ""Forest Tomato-Simmered Sweetfish"" increases<br>your chances of catching Large-sized Marine Life<c>"
-Explain_F,1,Explain_F0128,<yellow>Fish 10 times in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_F,1,Explain_F0129,<yellow>Fish 20 times in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_F,1,Explain_F0130,<yellow>Fish 30 times in the Underground Shafts!<c><br> Area: Underground Shafts<br> Target Category: All
-Explain_F,1,Explain_F0131,<yellow>Catch Underground Shafts Mantis Shrimp 3 times!<c><br>Area: Underground Shafts<br>Target Category: Crustacean
-Explain_F,1,Explain_F0132,<yellow>Catch Underground Shafts Mantis Shrimp 15 times!<c><br>Area: Underground Shafts<br>Target Category: Crustacean
-Explain_F,1,Explain_F0133,"<yellow>Harvest Underground Shafts Conches 3 times!<c><br> Area: Underground Shafts<br> Target Category: Shellfish<br><c 73d882>The dish ""Tundra Herring Canh Chua"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0134,"<yellow>Harvest Underground Shafts Conches 15 times!<c><br> Area: Underground Shafts<br> Target Category: Shellfish<br><c 73d882>The dish ""Tundra Herring Canh Chua"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0135,"<yellow>Catch Lillipan Shells 3 times!<c><br> Area: Underground Shafts<br> Target Category: Shellfish<br><c 73d882>The dish ""Tundra Herring Canh Chua"" increases<br>your chances of catching Shellfish<c>"
-Explain_F,1,Explain_F0136,"<yellow>Catch Med. Underground Shafts Karasin 3 times!<c><br> Area: Underground Shafts<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0137,<yellow>Fish 10 times in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_F,1,Explain_F0138,<yellow>Fish 20 times in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_F,1,Explain_F0139,<yellow>Fish 30 times in the Daybreak Province!<c><br> Area: Daybreak Province<br> Target Category: All
-Explain_F,1,Explain_F0140,<yellow>Catch Daybreak Province Carp 3 times!<c><br>Area: Daybreak Province<br>Target Category: Fish
-Explain_F,1,Explain_F0141,<yellow>Catch Daybreak Province Carp 15 times!<c><br>Area: Daybreak Province<br>Target Category: Fish
-Explain_F,1,Explain_F0142,"<yellow>Catch Daybreak Province Spider Crabs 3 times!<c><br> Area: Daybreak Province<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases<br>your chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0143,"<yellow>Catch Daybreak Province Spider Crabs 15 times!<c><br> Area: Daybreak Province<br> Target Category: Crustacean<br><c 73d882>The dish ""Tokyo Tuna Sashimi"" increases your<br>chances of catching Crustaceans<c>"
-Explain_F,1,Explain_F0144,"<yellow>Catch Little Zakris 3 times!<c><br> Area: Daybreak Province<br> Target Category: Misc<br><c 73d882>The dish ""Daybreak Province Carp in Soy Sauce""<br>increases your chances of catching Marine Life<c>"
-Explain_F,1,Explain_F0145,"<yellow>Catch Medium Daybreak Diamond Mussels 3 times!<c><br> Area: Daybreak Province<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0146,<yellow>Fish 10 times in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_F,1,Explain_F0147,<yellow>Fish 20 times in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_F,1,Explain_F0148,<yellow>Fish 30 times in the Floating Continent!<c><br> Area: Floating Continent<br> Target Category: All
-Explain_F,1,Explain_F0149,<yellow>Catch Floating Continent Kelp 3 times!<c><br>Area: Floating Continent<br>Target Category: Medium-sized Marine Life
-Explain_F,1,Explain_F0150,<yellow>Catch Floating Continent Kelp 15 times!<c><br>Area: Floating Continent<br>Target Category: Medium-sized Marine Life
-Explain_F,1,Explain_F0151,"<yellow>Catch Floating Continent Bonito 3 times!<c><br> Area: Floating Continent<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0152,"<yellow>Catch Floating Continent Bonito 15 times!<c><br> Area: Floating Continent<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0153,"<yellow>Catch Amduskia Coral 3 times!<c><br> Area: Floating Continent<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br>the chances of catching special Marine Life<c>"
-Explain_F,1,Explain_F0154,"<yellow>Catch Medium-sized Floating Continent Blowfish 3 times!<c><br> Area: Forest<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases<br>your chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0155,<yellow>Fish 10 times in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_F,1,Explain_F0156,<yellow>Fish 20 times in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_F,1,Explain_F0157,<yellow>Fish 30 times in the Seabed!<c><br> Area: Seabed<br> Target Category: All
-Explain_F,1,Explain_F0158,<yellow>Catch Seabed Iwagaki Oysters 3 times!<c><br>Area: Seabed<br>Target Category: Shellfish
-Explain_F,1,Explain_F0159,<yellow>Catch Seabed Iwagaki Oysters 15 times!<c><br>Area: Seabed<br>Target Category: Shellfish
-Explain_F,1,Explain_F0160,"<yellow>Catch Seabed Octopuses 3 times!<c><br> Area: Seabed<br> Target Category: Mollusk<br><c 73d882>The dish ""Seafood Pumpkin Pie"" increases<br>your chances of catching Mollusks<c>"
-Explain_F,1,Explain_F0161,"<yellow>Catch Seabed Octopuses 15 times!<c><br> Area: Seabed<br> Target Category: Mollusk<br><c 73d882>The dish ""Seafood Pumpkin Pie"" increases<br>your chances of catching Mollusks<c>"
-Explain_F,1,Explain_F0162,"<yellow>Catch Wopal Sharks 3 times!<c><br> Area: Seabed<br> Target Category: Giant-sized Marine Life Fishing<br><c 73d882>The dish ""Floating Facility Turnip Ravioli"" increases<br>your chances of catching Giant-sized Marine Life<c>"
-Explain_F,1,Explain_F0163,"<yellow>Catch Medium-sized Seabed Anglerfish 3 times!<c><br> Area: Forest<br> Target Category: Medium-sized Marine Life Fishing<br><c 73d882>The dish ""Ruins Shrimp Tempura"" increases your<br>chances of catching Medium-sized Marine Life<c>"
-Explain_F,1,Explain_F0164,<yellow>Fish 10 times in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_F,1,Explain_F0165,<yellow>Fish 20 times in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_F,1,Explain_F0166,<yellow>Fish 30 times in the Dragon Altar!<c><br> Area: Dragon Altar<br> Target Category: All
-Explain_F,1,Explain_F0167,<yellow>Catch Dragon Altar Fiddler Crab 3 times!<c><br>Area: Dragon Altar<br>Target Category: Crustacean
-Explain_F,1,Explain_F0168,<yellow>Catch Dragon Altar Fiddler Crab 15 times!<c><br>Area: Dragon Altar<br>Target Category: Crustacean
-Explain_F,1,Explain_F0169,"<yellow>Catch Dragon Altar Snakeheads 3 times!<c><br> Area: Dragon Altar<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0170,"<yellow>Catch Dragon Altar Snakeheads 15 times!<c><br> Area: Dragon Altar<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap""<br>increases your chances of catching Fish<c>"
-Explain_F,1,Explain_F0171,"<yellow>Catch Amduskia Coral 3 times!<c><br> Area: Dragon Altar<br> Target Category: Special<br><c 73d882>The dish ""Roasted Seafood Wrap"" raises<br>the chances of catching special Marine Life<c>"
-Explain_F,1,Explain_F0172,"<yellow>Catch Giant Dragon Altar Marlins 3 times!<c><br> Area: Dragon Altar<br> Target Category: Giant-sized Marine Life Fishing<br><c 73d882>The dish ""Floating Facility Turnip Ravioli"" increases<br>your chances of catching Giant-sized Marine Life<c>"
-Explain_F,1,Explain_F0173,<yellow>Fish 10 times in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_F,1,Explain_F0174,<yellow>Fish 20 times in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_F,1,Explain_F0175,<yellow>Fish 30 times in the Nightfall Province!<c><br> Area: Nightfall Province<br> Target Category: All
-Explain_F,1,Explain_F0176,<yellow>Catch Nightfall Province Firefly Squid 3 times!<c><br>Area: Nightfall Province<br>Target Category: Mollusk
-Explain_F,1,Explain_F0177,<yellow>Catch Nightfall Province Firefly Squid 15 times!<c><br>Area: Nightfall Province<br>Target Category: Mollusk
-Explain_F,1,Explain_F0178,"<yellow>Catch Nightfall Province Needlefish 3 times!<c><br> Area: Nightfall Province<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0179,"<yellow>Catch Nightfall Province Needlefish 15 times!<c><br> Area: Nightfall Province<br> Target Category: Fish<br><c 73d882>The dish ""Roasted Seabed Iwagaki Oyster Wrap"" increases<br>your chances of catching Fish<c>"
-Explain_F,1,Explain_F0180,"<yellow>Catch Little Zakris 3 times!<c><br> Area: Nightfall Province<br> Target Category: Misc<br><c 73d882>The dish ""Daybreak Province Carp in Soy Sauce""<br>increases your chances of catching miscellaneous items<c>"
-Explain_F,1,Explain_F0181,"<yellow>Catch Small Nightfall Province Abalone 3 times!<c><br> Area: Nightfall Province<br> Target Category: Small-sized Marine Life Fishing<br><c 73d882>The dish ""Marinated Coast Mussels"" increases<br>your chances of catching Small-sized Marine Life<c>"
+Explain_F,1,Explain_F0126,"<yellow>¡Atrapa tortugas Navert 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de atrapar objetos especiales<c>"
+Explain_F,1,Explain_F0127,"<yellow>Atrapa Lg. Tundra Bonito 3 veces!<c><br>Zona: Tundra<br>Categoría objetivo: pesca de vida marina de gran tamaño<br><c 73d882>Aumenta el plato ""Pescado dulce al fuego con tomate del bosque""<br>tus posibilidades de capturar vida marina de gran tamaño<c>"
+Explain_F,1,Explain_F0128,<yellow>¡Pesca 10 veces en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0129,<yellow>¡Pesca 20 veces en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0130,<yellow>¡Pesca 30 veces en los pozos subterráneos!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0131,<yellow>¡Atrapa camarones mantis subterráneos 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0132,<yellow>¡Atrapa camarones mantis subterráneos 15 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0133,"<yellow>¡Cosecha caracolas de pozos subterráneos 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: mariscos<br><c 73d882>El plato ""Tundra Herring Canh Chua"" aumenta<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0134,"<yellow>¡Cosecha caracolas de pozos subterráneos 15 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: mariscos<br><c 73d882>El plato ""Tundra Herring Canh Chua"" aumenta<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0135,"<yellow>¡Atrapa conchas de Lillipan 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: mariscos<br><c 73d882>El plato ""Tundra Herring Canh Chua"" aumenta<br>tus posibilidades de pescar mariscos<c>"
+Explain_F,1,Explain_F0136,<yellow>Atrapar Med. ¡Pozos subterráneos Karasin 3 veces!<c><br>Área: Pozos subterráneos<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0137,<yellow>¡Pesca 10 veces en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0138,<yellow>¡Pesca 20 veces en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0139,<yellow>¡Pesca 30 veces en la provincia Daybreak!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0140,<yellow>¡Atrapa la carpa de la provincia del amanecer 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0141,<yellow>¡Atrapa carpas de la provincia del amanecer 15 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: pescado
+Explain_F,1,Explain_F0142,"<yellow>¡Atrapa cangrejos araña de la provincia de Daybreak 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: crustáceo<br><c 73d882>Aumenta el plato ""Tokyo Tuna Sashimi""<br>tus posibilidades de atrapar crustáceos<c>"
+Explain_F,1,Explain_F0143,"<yellow>¡Atrapa cangrejos araña de la provincia de Daybreak 15 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: crustáceo<br><c 73d882>El plato ""Tokyo Tuna Sashimi"" aumenta tu<br>posibilidades de pescar crustáceos<c>"
+Explain_F,1,Explain_F0144,"<yellow>¡Atrapa al pequeño Zakris 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: Varios<br><c 73d882>El plato ""Carpa de la Provincia del Alba en Salsa de Soja""<br>aumenta tus posibilidades de atrapar vida marina<c>"
+Explain_F,1,Explain_F0145,<yellow>¡Atrapa mejillones diamante de amanecer medianos 3 veces!<c><br>Zona: Provincia de Daybreak<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0146,<yellow>¡Pesca 10 veces en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0147,<yellow>¡Pesca 20 veces en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0148,<yellow>¡Pesca 30 veces en el continente flotante!<c><br>Área: Continente flotante<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0149,<yellow>¡Atrapa algas continentales flotantes 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: vida marina de tamaño mediano
+Explain_F,1,Explain_F0150,<yellow>¡Atrapa algas continentales flotantes 15 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: vida marina de tamaño mediano
+Explain_F,1,Explain_F0151,"<yellow>¡Atrapa Bonito Continente Flotante 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado""<br>aumenta tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0152,"<yellow>¡Atrapa Bonito Continente Flotante 15 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado""<br>aumenta tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0153,"<yellow>¡Atrapa Amduskia Coral 3 veces!<c><br>Área: Continente flotante<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de capturar vida marina especial<c>"
+Explain_F,1,Explain_F0154,<yellow>¡Atrapa pez globo flotante continental de tamaño mediano 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>Se incrementa el plato “Tempura de Camarones a las Ruinas”<br>tus posibilidades de capturar vida marina de tamaño mediano<c>
+Explain_F,1,Explain_F0155,<yellow>¡Pesca 10 veces en el fondo del mar!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0156,<yellow>¡Pesca 20 veces en el fondo del mar!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0157,<yellow>¡Pesca 30 veces en el fondo del mar!<c><br>Área: Fondo marino<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0158,<yellow>¡Atrapa ostras Iwagaki del fondo marino 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0159,<yellow>¡Atrapa ostras Iwagaki del fondo marino 15 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: mariscos
+Explain_F,1,Explain_F0160,"<yellow>¡Atrapa pulpos del fondo marino 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: molusco<br><c 73d882>Aumenta el plato ""Pastel de calabaza y mariscos""<br>tus posibilidades de atrapar moluscos<c>"
+Explain_F,1,Explain_F0161,"<yellow>¡Atrapa pulpos del fondo marino 15 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: molusco<br><c 73d882>Aumenta el plato ""Pastel de calabaza y mariscos""<br>tus posibilidades de atrapar moluscos<c>"
+Explain_F,1,Explain_F0162,"<yellow>¡Atrapa tiburones Wopal 3 veces!<c><br>Área: Fondo marino<br>Categoría objetivo: Pesca de vida marina de tamaño gigante<br><c 73d882>Aumenta el plato ""Ravioli de nabo con instalación flotante""<br>tus posibilidades de atrapar vida marina gigante<c>"
+Explain_F,1,Explain_F0163,"<yellow>¡Atrapa rape de fondo marino de tamaño mediano 3 veces!<c><br>Área: Bosque<br>Categoría objetivo: pesca de vida marina de tamaño mediano<br><c 73d882>El plato ""Tempura de Camarones en Ruinas"" aumenta tu<br>posibilidades de capturar vida marina de tamaño mediano<c>"
+Explain_F,1,Explain_F0164,<yellow>¡Pesca 10 veces en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0165,<yellow>¡Pesca 20 veces en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0166,<yellow>¡Pesca 30 veces en el Altar del Dragón!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0167,<yellow>¡Atrapa el cangrejo violinista de altar dragón 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0168,<yellow>¡Atrapa el cangrejo violinista de altar dragón 15 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: crustáceo
+Explain_F,1,Explain_F0169,"<yellow>¡Atrapa Dragon Altar Snakeheads 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado""<br>aumenta tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0170,"<yellow>¡Atrapa Dragon Altar Snakeheads 15 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado""<br>aumenta tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0171,"<yellow>¡Atrapa Amduskia Coral 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Especial<br><c 73d882>El plato ""Wrap de Marisco Asado"" sube<br>las posibilidades de capturar vida marina especial<c>"
+Explain_F,1,Explain_F0172,"<yellow>¡Atrapa Marlins de Altar Dragón Gigante 3 veces!<c><br>Área: Altar del Dragón<br>Categoría objetivo: Pesca de vida marina de tamaño gigante<br><c 73d882>Aumenta el plato ""Ravioli de nabo con instalación flotante""<br>tus posibilidades de atrapar vida marina gigante<c>"
+Explain_F,1,Explain_F0173,<yellow>¡Pesca 10 veces en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0174,<yellow>¡Pesca 20 veces en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0175,<yellow>¡Pesca 30 veces en la provincia Nightfall!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Todos
+Explain_F,1,Explain_F0176,<yellow>¡Atrapa el calamar luciérnaga de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: molusco
+Explain_F,1,Explain_F0177,<yellow>¡Atrapa el calamar luciérnaga de la provincia Nightfall 15 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: molusco
+Explain_F,1,Explain_F0178,"<yellow>¡Atrapa pez aguja de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado"" aumenta<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0179,"<yellow>¡Atrapa pez aguja de la provincia Nightfall 15 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: pescado<br><c 73d882>El plato ""Wrap de ostras Iwagaki de fondo marino asado"" aumenta<br>tus posibilidades de pescar<c>"
+Explain_F,1,Explain_F0180,"<yellow>¡Atrapa al pequeño Zakris 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Varios<br><c 73d882>El plato ""Carpa de la Provincia del Alba en Salsa de Soja""<br>aumenta tus posibilidades de atrapar artículos diversos<c>"
+Explain_F,1,Explain_F0181,<yellow>¡Atrapa el abulón pequeño de la provincia Nightfall 3 veces!<c><br>Área: Provincia del Anochecer<br>Categoría objetivo: Pesca de vida marina de tamaño pequeño<br><c 73d882>Se incrementa el plato “Mejillones de Costa Escabechados”<br>tus posibilidades de capturar vida marina de tamaño pequeño<c>
 SheetName_F,0,SheetName_F0000,共通釣り1
 SheetName_F,0,SheetName_F0001,共通釣り2
 SheetName_F,0,SheetName_F0002,森林釣り1
@@ -1557,24 +1557,24 @@ SheetName_F,0,SheetName_F0014,浮遊大陸釣り1
 SheetName_F,0,SheetName_F0015,海底釣り1
 SheetName_F,0,SheetName_F0016,龍祭壇釣り1
 SheetName_F,0,SheetName_F0017,黒ノ領域釣り1
-SheetName_F,1,SheetName_F0000,Common Fishing 1
-SheetName_F,1,SheetName_F0001,Common Fishing 2
-SheetName_F,1,SheetName_F0002,Forest Fishing 1
-SheetName_F,1,SheetName_F0003,Ruins Fishing 1
-SheetName_F,1,SheetName_F0004,Coast Fishing 1
-SheetName_F,1,SheetName_F0005,Tokyo Fishing 1
-SheetName_F,1,SheetName_F0006,Desert Fishing 1
-SheetName_F,1,SheetName_F0007,Mine Fishing 1
-SheetName_F,1,SheetName_F0008,Facility Fishing 1
-SheetName_F,1,SheetName_F0009,Vegas Fishing 1
-SheetName_F,1,SheetName_F0010,Caves Fishing 1
-SheetName_F,1,SheetName_F0011,Tundra Fishing 1
-SheetName_F,1,SheetName_F0012,Shafts Fishing 1
-SheetName_F,1,SheetName_F0013,Daybreak Fishing 1
-SheetName_F,1,SheetName_F0014,Continent Fishing 1
-SheetName_F,1,SheetName_F0015,Seabed Fishing 1
-SheetName_F,1,SheetName_F0016,Altar Fishing 1
-SheetName_F,1,SheetName_F0017,Nightfall Fishing 1
+SheetName_F,1,SheetName_F0000,Pesca común 1
+SheetName_F,1,SheetName_F0001,Pesca común 2
+SheetName_F,1,SheetName_F0002,Pesca forestal 1
+SheetName_F,1,SheetName_F0003,Ruinas pescando 1
+SheetName_F,1,SheetName_F0004,Pesca costera 1
+SheetName_F,1,SheetName_F0005,Pesca en Tokio 1
+SheetName_F,1,SheetName_F0006,Pesca en el desierto 1
+SheetName_F,1,SheetName_F0007,Pesca minera 1
+SheetName_F,1,SheetName_F0008,Instalación de pesca 1
+SheetName_F,1,SheetName_F0009,Pesca en Las Vegas 1
+SheetName_F,1,SheetName_F0010,Pesca en cuevas 1
+SheetName_F,1,SheetName_F0011,Pesca en la tundra 1
+SheetName_F,1,SheetName_F0012,Pesca con ejes 1
+SheetName_F,1,SheetName_F0013,Pesca al amanecer 1
+SheetName_F,1,SheetName_F0014,Pesca continental 1
+SheetName_F,1,SheetName_F0015,Pesca en los fondos marinos 1
+SheetName_F,1,SheetName_F0016,Pesca de altar 1
+SheetName_F,1,SheetName_F0017,Pesca al anochecer 1
 Recipe,0,RecipeName_0000,使用禁止
 Recipe,0,RecipeName_0001,使用禁止
 Recipe,0,RecipeName_0002,使用禁止
@@ -1628,59 +1628,59 @@ Recipe,0,RecipeName_0049,黒ノ領域ホタルイカのパイのレシピ
 Recipe,0,RecipeName_0050,龍祭壇ライギョのフライのレシピ
 Recipe,0,RecipeName_0051,黒ノ領域ゴボウのビスクのレシピ
 Recipe,0,RecipeName_0052,豪華海鮮盛りのレシピ
-Recipe,1,RecipeName_0000,Do Not Use
-Recipe,1,RecipeName_0001,Do Not Use
-Recipe,1,RecipeName_0002,Do Not Use
-Recipe,1,RecipeName_0003,Forest Tomato Salad Recipe
-Recipe,1,RecipeName_0004,Sashimi Recipe
-Recipe,1,RecipeName_0005,Grilled Fish Recipe
+Recipe,1,RecipeName_0000,No usar
+Recipe,1,RecipeName_0001,No usar
+Recipe,1,RecipeName_0002,No usar
+Recipe,1,RecipeName_0003,Receta de ensalada de tomate del bosque
+Recipe,1,RecipeName_0004,Receta de sashimi
+Recipe,1,RecipeName_0005,Receta De Pescado A La Parrilla
 Recipe,1,RecipeName_0006,Forest Tuna Carpaccio Recipe
-Recipe,1,RecipeName_0007,Forest Tomato-Simmered Sweetfish Recipe
-Recipe,1,RecipeName_0008,Ruins Salmon in Fruit Sauce Recipe
-Recipe,1,RecipeName_0009,Ruins Shrimp Tempura Recipe
-Recipe,1,RecipeName_0010,Salt-grilled Coast File Fish Recipe
-Recipe,1,RecipeName_0011,Marinated Coast Mussels Recipe
-Recipe,1,RecipeName_0012,Soy-broiled Tokyo Red Seabream Recipe
+Recipe,1,RecipeName_0007,Receta de pescado dulce cocido a fuego lento con tomates del bosque
+Recipe,1,RecipeName_0008,Receta de salmón arruinado en salsa de frutas
+Recipe,1,RecipeName_0009,Receta de tempura de camarones en ruinas
+Recipe,1,RecipeName_0010,Receta de pescado de lima de la costa a la sal
+Recipe,1,RecipeName_0011,Receta de mejillones de costa marinados
+Recipe,1,RecipeName_0012,Receta de dorada roja de Tokio asada con soja
 Recipe,1,RecipeName_0013,Tokyo Tuna Sashimi Recipe
-Recipe,1,RecipeName_0014,Seafood Soup Recipe
-Recipe,1,RecipeName_0015,Forest Yellowtail Fishhead Soup Recipe
-Recipe,1,RecipeName_0016,Jerky Recipe
-Recipe,1,RecipeName_0017,Stirfry Recipe
-Recipe,1,RecipeName_0018,Marinade Recipe
-Recipe,1,RecipeName_0019,Bomb Burger Recipe
-Recipe,1,RecipeName_0020,Tokyo Hamburger Steak Recipe
-Recipe,1,RecipeName_0021,Desert Flounder Pasta Recipe
+Recipe,1,RecipeName_0014,Receta de sopa de mariscos
+Recipe,1,RecipeName_0015,Receta de sopa de cabeza de pescado de cola amarilla del bosque
+Recipe,1,RecipeName_0016,Receta cecina
+Recipe,1,RecipeName_0017,Receta salteada
+Recipe,1,RecipeName_0018,Receta de adobo
+Recipe,1,RecipeName_0019,Receta de hamburguesa bomba
+Recipe,1,RecipeName_0020,Receta de filete de hamburguesa de Tokio
+Recipe,1,RecipeName_0021,Receta de pasta con platija del desierto
 Recipe,1,RecipeName_0022,Abandoned Mine Eel Rice Bowl Recipe
-Recipe,1,RecipeName_0023,Desert Crab Croquette Recipe
+Recipe,1,RecipeName_0023,Receta de croqueta de cangrejo del desierto
 Recipe,1,RecipeName_0024,Abandoned Mine Sautéed Beltfish Recipe
-Recipe,1,RecipeName_0025,Floating Facility Mint Meuniere Recipe
-Recipe,1,RecipeName_0026,Floating Facility Squid Burrito Recipe
-Recipe,1,RecipeName_0027,Floating Facility Sardine Salad Recipe
-Recipe,1,RecipeName_0028,Floating Facility Turnip Ravioli Recipe
-Recipe,1,RecipeName_0029,Deep-fried Chicken Recipe
-Recipe,1,RecipeName_0030,Do Not Use
-Recipe,1,RecipeName_0031,Abandoned Mine Shark Soup Recipe
-Recipe,1,RecipeName_0032,Steamed Floating Facility Rainbow Shrimp Recipe
-Recipe,1,RecipeName_0033,Seafood Fruit Confit Recipe
-Recipe,1,RecipeName_0034,Seafood Pumpkin Pie Recipe
-Recipe,1,RecipeName_0035,Tundra Spring Onion Ajillo Recipe
-Recipe,1,RecipeName_0036,Tundra Herring Canh Chua Recipe
-Recipe,1,RecipeName_0037,Volcanic Caves Char Poele Recipe
-Recipe,1,RecipeName_0038,Underground Shafts Grilled Mantis Shrimp Recipe
-Recipe,1,RecipeName_0039,Fried Crab with Underground Mushrooms Recipe
-Recipe,1,RecipeName_0040,Underground Shafts Conch Salad Recipe
-Recipe,1,RecipeName_0041,Daybreak Province Carp in Soy Sauce Recipe
-Recipe,1,RecipeName_0042,Seafood Brochette Recipe
-Recipe,1,RecipeName_0043,Seabed Octopus Fritters Recipe
-Recipe,1,RecipeName_0044,Roasted Seabed Iwagaki Oyster Wrap Recipe
-Recipe,1,RecipeName_0045,Braised Floating Continent Bonito Recipe
-Recipe,1,RecipeName_0046,Roasted Seafood Wrap Recipe
-Recipe,1,RecipeName_0047,Seafood Stew Recipe
-Recipe,1,RecipeName_0048,Nightfall Province Needlefish Galette Recipe
-Recipe,1,RecipeName_0049,Nightfall Province Firefly Squid Pie Recipe
-Recipe,1,RecipeName_0050,Dragon Altar Fried Snakehead Recipe
-Recipe,1,RecipeName_0051,Nightfall Province Burdock Bisque Recipe
-Recipe,1,RecipeName_0052,Extravagant Seafood Platter Recipe
+Recipe,1,RecipeName_0025,Receta de Meuniere de menta para instalaciones flotantes
+Recipe,1,RecipeName_0026,Receta de burrito de calamar en instalación flotante
+Recipe,1,RecipeName_0027,Receta de ensalada de sardinas con instalación flotante
+Recipe,1,RecipeName_0028,Receta de raviolis de nabo en instalación flotante
+Recipe,1,RecipeName_0029,Receta de pollo frito
+Recipe,1,RecipeName_0030,No usar
+Recipe,1,RecipeName_0031,Receta de sopa de tiburón de mina abandonada
+Recipe,1,RecipeName_0032,Receta de camarones arcoíris al vapor en instalaciones flotantes
+Recipe,1,RecipeName_0033,Receta de confitura de frutas y mariscos
+Recipe,1,RecipeName_0034,Receta de pastel de calabaza y mariscos
+Recipe,1,RecipeName_0035,Receta de ajillo de cebolla tierna de tundra
+Recipe,1,RecipeName_0036,Receta de canh chua con arenque de tundra
+Recipe,1,RecipeName_0037,Receta de Char Poele de las cuevas volcánicas
+Recipe,1,RecipeName_0038,Receta de camarones mantis a la parrilla de Underground Shafts
+Recipe,1,RecipeName_0039,Receta de cangrejo frito con champiñones subterráneos
+Recipe,1,RecipeName_0040,Receta de ensalada de caracolas de ejes subterráneos
+Recipe,1,RecipeName_0041,Receta de carpa de la provincia del amanecer en salsa de soja
+Recipe,1,RecipeName_0042,Receta de brocheta de mariscos
+Recipe,1,RecipeName_0043,Receta de buñuelos de pulpo de fondo marino
+Recipe,1,RecipeName_0044,Receta de envoltura de ostras Iwagaki de fondo marino asado
+Recipe,1,RecipeName_0045,Receta de bonito continente flotante estofado
+Recipe,1,RecipeName_0046,Receta de envoltura de mariscos asados
+Recipe,1,RecipeName_0047,Receta de guiso de mariscos
+Recipe,1,RecipeName_0048,Receta de galette de pez aguja de la provincia del anochecer
+Recipe,1,RecipeName_0049,Receta de pastel de calamar luciérnaga de Nightfall Province
+Recipe,1,RecipeName_0050,Receta de cabeza de serpiente frita del Altar del Dragón
+Recipe,1,RecipeName_0051,Receta de sopa de bardana de Nightfall Province
+Recipe,1,RecipeName_0052,Receta extravagante de plato de mariscos
 Toast,0,Achieved,実績：$(0) を達成！
 Toast,0,Achieved2,実績：$(0) を達成し、$(1)を入手！
 Toast,0,ReleasedSheet,新規実績シートが解放されました。
@@ -1688,10 +1688,10 @@ Toast,0,ReleasedKey,新規実績が解放されました。
 Toast,0,ReleasedSheetAndKey,新規実績と実績シートが解放されました。
 Toast,0,LevelUpC,<c 99ff97>採取レベルアップ！<c> <c f0df60>Lv.$(0)<c>になりました。
 Toast,0,LevelUpF,<c 97fff2>釣りレベルアップ！<c> <c f0df60>Lv.$(0)<c>になりました。
-Toast,1,Achieved,Achievement: $(0)!
-Toast,1,Achieved2,Achievement: $(0)! Acquired $(1)!
-Toast,1,ReleasedSheet,A new Achievements Sheet was unlocked.
-Toast,1,ReleasedKey,New achievements were unlocked.
-Toast,1,ReleasedSheetAndKey,New achievements and a new Achievements Sheet were unlocked.
-Toast,1,LevelUpC,<c 99ff97>Harvesting Level Up!<c> You are now<c f0df60> Level $(0)<c>.
-Toast,1,LevelUpF,<c 97fff2>Fishing Level Up!<c> You are now <c f0df60>Level $(0)<c>.
+Toast,1,Achieved,Logro: $(0)!
+Toast,1,Achieved2,Logro: $(0)! ¡Adquiriste $(1)!
+Toast,1,ReleasedSheet,Se desbloqueó una nueva Hoja de Logros.
+Toast,1,ReleasedKey,Se desbloquearon nuevos logros.
+Toast,1,ReleasedSheetAndKey,Se desbloquearon nuevos logros y una nueva Hoja de Logros.
+Toast,1,LevelUpC,<c 99ff97>¡Sube el nivel de cosecha!<c> Ahora estás<c f0df60> Nivel $(0)<c>.
+Toast,1,LevelUpF,<c 97fff2>¡Sube de nivel de pesca!<c> Ahora estás en el <c f0df60>Nivel $(0)<c>.
