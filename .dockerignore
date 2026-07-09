@@ -1,5 +1,4 @@
-# El bot obtiene estos datos con git fetch/reset al arrancar.
-# Si se copian al build, el deploy tarda o falla y se llena la cola de Railway.
+﻿# El bot obtiene estos datos con git fetch/reset al arrancar.
 Raw/
 listo/
 archivos a traducir/
@@ -16,5 +15,3 @@ venv/
 translation_cache.json
 translate_missing.log
 translate_cache.db
-*.md
-_check_pending.py
