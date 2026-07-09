@@ -10,17 +10,17 @@ Notice,0,Notice_Boost,このクエストのみ、+$(0)%分のバトルコイン�
 Notice,0,Notice_SelectSkill,スキル「$(0)」をセットしました。
 Notice,0,Notice_StartWait,対戦開始まで
 Notice,0,Notice_ThirtySec,開始30秒前です
-Notice,1,Notice_Kill,Defeated by <c 00fcc2>$(0)<c>! <c 00fcc2>$(1) Points<c>
-Notice,1,Notice_Death,<c ff81f8>$(0)<c> was killed. <c ff81f8>$(1) Points<c>
-Notice,1,Notice_AccidentalDeath,<c 00fcc2>Opponent<c> was killed! <c 00fcc2>$(0) Points for Your Team<c>
-Notice,1,Notice_MatchingEntry,Commencing matchmaking.
-Notice,1,Notice_MatchingCancel,Matchmaking canceled.
-Notice,1,Notice_MatchingTimeOut,Matchmaking timed out.
-Notice,1,Notice_OwnPoint,Emblem Points Collected
-Notice,1,Notice_Boost,+$(0)% Battle Coin boost for this quest only.
-Notice,1,Notice_SelectSkill,The [$(0)] skill has been set.
-Notice,1,Notice_StartWait,Battle Starts In:
-Notice,1,Notice_ThirtySec,Battle starts in 30 seconds.
+Notice,1,Notice_Kill,¡Derrotado por <c 00fcc2>$(0)<c>! <c 00fcc2>$(1) Puntos<c>
+Notice,1,Notice_Death,<c ff81f8>$(0)<c> fue asesinado. <c ff81f8>$(1) Puntos<c>
+Notice,1,Notice_AccidentalDeath,¡<c 00fcc2>Oponente<c> fue asesinado! <c 00fcc2>$(0) Puntos para tu equipo<c>
+Notice,1,Notice_MatchingEntry,Comenzando el emparejamiento.
+Notice,1,Notice_MatchingCancel,Emparejamiento cancelado.
+Notice,1,Notice_MatchingTimeOut,Se agotó el tiempo de emparejamiento.
+Notice,1,Notice_OwnPoint,Puntos de emblema acumulados
+Notice,1,Notice_Boost,+$(0)% de aumento de monedas de batalla solo para esta misión.
+Notice,1,Notice_SelectSkill,Se ha configurado la habilidad [$(0)].
+Notice,1,Notice_StartWait,La batalla comienza en:
+Notice,1,Notice_ThirtySec,La batalla comienza en 30 segundos.
 Result,0,Totalorb,合計獲得バトルコイン
 Result,0,KillMvp,最多撃破MVP
 Result,0,AtkDamageMvp,最多与ダメージMVP
@@ -87,72 +87,72 @@ Result,0,BonusPoint,+$(0)%
 Result,0,GetOrbBase_Num,$(0)<pict poka_btl_coin>
 Result,0,Ranking,ランキング
 Result,0,Place,位
-Result,1,Totalorb,Total Battle Coins Earned
-Result,1,KillMvp,MVP for Most Kills
-Result,1,AtkDamageMvp,MVP for Most Damage Dealt
-Result,1,DefDamageMvp,MVP for Most Damage Taken
-Result,1,CrystalMvp,MVP for Most Emblems Acquired
-Result,1,DeathMvp,MVP for Fewest Deaths
+Result,1,Totalorb,Total de monedas de batalla obtenidas
+Result,1,KillMvp,MVP por la mayor cantidad de muertes
+Result,1,AtkDamageMvp,MVP por la mayor cantidad de daño infligido
+Result,1,DefDamageMvp,MVP por la mayor cantidad de daño recibido
+Result,1,CrystalMvp,MVP por la mayoría de los emblemas adquiridos
+Result,1,DeathMvp,MVP por la menor cantidad de muertes
 Result,1,PlayerName,$(0)
-Result,1,KillScore,$(0) Kills
-Result,1,DamageScore,$(0) DMG
-Result,1,CrystalScore,$(0) Emblems
-Result,1,DeathScore,$(0) Times
-Result,1,MvpNone,None
-Result,1,OtherPlayerNum,And $(0) Other People
-Result,1,BattleCoinDetail,Battle Coin Breakdown
-Result,1,BattleCoin,Battle Coins
-Result,1,BattleResult,Battle Results
-Result,1,Task,Task
-Result,1,Win,Wins
-Result,1,Lose,Losses
-Result,1,Draw,Draws
-Result,1,GetMvp,MVPs Acquired
-Result,1,GetMvpSupport,MVPs Supported
-Result,1,RareWeaponPickup,----
-Result,1,RareWeaponPickup_Num,----
-Result,1,AtkDamage100Over_Repdigit,Matching-Digit Damage Inflicted (3 Digits or More)
-Result,1,DefDamage100Over_Repdigit,Matching-Digit Damage Taken (3 Digits or More)
-Result,1,FightAlone,----
-Result,1,FightAlone_Num,----
-Result,1,ManyKillWeapon,Killed the Most with $(0)
-Result,1,ManyDeathWeapon,Died the Most by $(0)
-Result,1,WeaponType_Sword,Sword
-Result,1,WeaponType_WiredLance,Wired Lance
-Result,1,WeaponType_Partisan,Partisan
-Result,1,WeaponType_TwinDagger,Twin Daggers
-Result,1,WeaponType_DoubleSaber,Double Saber
-Result,1,WeaponType_Knuckle,Knuckles
-Result,1,WeaponType_Saber,Gunblade
+Result,1,KillScore,$(0) Muertes
+Result,1,DamageScore,$(0) DAÑO
+Result,1,CrystalScore,$(0) Emblemas
+Result,1,DeathScore,$(0) Veces
+Result,1,MvpNone,Ninguno
+Result,1,OtherPlayerNum,Y $(0) otras personas
+Result,1,BattleCoinDetail,Desglose de monedas de batalla
+Result,1,BattleCoin,Monedas de batalla
+Result,1,BattleResult,Resultados de la batalla
+Result,1,Task,Tarea
+Result,1,Win,gana
+Result,1,Lose,Pérdidas
+Result,1,Draw,Sorteos
+Result,1,GetMvp,MVP adquiridos
+Result,1,GetMvpSupport,MVP compatibles
+Result,1,RareWeaponPickup,
+Result,1,RareWeaponPickup_Num,
+Result,1,AtkDamage100Over_Repdigit,Daño infligido por dígitos coincidentes (3 dígitos o más)
+Result,1,DefDamage100Over_Repdigit,Daño recibido por dígitos coincidentes (3 dígitos o más)
+Result,1,FightAlone,
+Result,1,FightAlone_Num,
+Result,1,ManyKillWeapon,Mató a la mayoría con $(0)
+Result,1,ManyDeathWeapon,Murió más por $(0)
+Result,1,WeaponType_Sword,Espada
+Result,1,WeaponType_WiredLance,Lanza cableada
+Result,1,WeaponType_Partisan,Partidista
+Result,1,WeaponType_TwinDagger,Dagas gemelas
+Result,1,WeaponType_DoubleSaber,Sable doble
+Result,1,WeaponType_Knuckle,nudillos
+Result,1,WeaponType_Saber,hoja de pistola
 Result,1,WeaponType_AssaultRifle,Rifle
-Result,1,WeaponType_Launcher,Grenade Launcher
-Result,1,WeaponType_TwinMachinegun,Twin Machine Guns
-Result,1,WeaponType_Rod,Rod
+Result,1,WeaponType_Launcher,Lanzagranadas
+Result,1,WeaponType_TwinMachinegun,Ametralladoras gemelas
+Result,1,WeaponType_Rod,Vara
 Result,1,WeaponType_Talis,Talis
-Result,1,WeaponType_Wand,Wand
+Result,1,WeaponType_Wand,Varita mágica
 Result,1,WeaponType_Katana,Katana
-Result,1,WeaponType_CompoundBow,Bow
-Result,1,WeaponType_JetBoots,Jet Boots
-Result,1,WeaponType_DualBlade,Soaring Blades
-Result,1,WeaponType_Takt,Harmonizer
-Result,1,Kill_Num,$(0) Kills
-Result,1,RainbowCrystal_Num,Acquired $(0) or More Rainbow Emblems
-Result,1,EnemyCrystal_Num,Acquired $(0) or More Enemy Emblems
-Result,1,KillBeforeOneDie_Num,$(0) Consecutive Kills before Dying
+Result,1,WeaponType_CompoundBow,Arco
+Result,1,WeaponType_JetBoots,Botas Jet
+Result,1,WeaponType_DualBlade,Cuchillas altísimas
+Result,1,WeaponType_Takt,Armonizador
+Result,1,Kill_Num,$(0) Muertes
+Result,1,RainbowCrystal_Num,Has adquirido $(0) o más emblemas arcoíris
+Result,1,EnemyCrystal_Num,Has adquirido $(0) o más emblemas enemigos
+Result,1,KillBeforeOneDie_Num,$(0) Muertes consecutivas antes de morir
 Result,1,GetOrb_Num,$(0)
-Result,1,Rank,Rank
-Result,1,GetArp,Arena Points Acquired
-Result,1,TotalArp,Total Arena Points
-Result,1,OrbInfo,Battle Coin Information
-Result,1,GetOrbBase,Basic Battle Coin Acquisition
-Result,1,QuestBonus,Quest Bonus
-Result,1,ClearBonus,Reward Bonus
-Result,1,TotalBonus,Total Bonus
-Result,1,GetArpNum,$(0) Arena Points
+Result,1,Rank,Rango
+Result,1,GetArp,Puntos de arena adquiridos
+Result,1,TotalArp,Puntos totales de arena
+Result,1,OrbInfo,Información de monedas de batalla
+Result,1,GetOrbBase,Adquisición básica de monedas de batalla
+Result,1,QuestBonus,Bonificación de misión
+Result,1,ClearBonus,Bono de recompensa
+Result,1,TotalBonus,Bono Total
+Result,1,GetArpNum,$(0) puntos de arena
 Result,1,BonusPoint,+$(0)%
 Result,1,GetOrbBase_Num,$(0) <pict poka_btl_coin>
-Result,1,Ranking,Rankings
-Result,1,Place,Place #
+Result,1,Ranking,Clasificaciones
+Result,1,Place,Lugar #
 Counter,0,MatchingCounterTitle,バトルカウンター
 Counter,0,MenuSelectMatching_Title,マッチングタイプの選択
 Counter,0,MenuRuleSelect_Title,対戦ルール選択
@@ -228,81 +228,81 @@ Counter,0,Map_Random2,ＶＲアリーナ（ランダム）
 Counter,0,Pwatch_Pass_Title,味方ユニオンを組むためのパスワード
 Counter,0,Pwatch_Pass,パスワード
 Counter,0,Pwatch_Window_Title,パスワードマッチの準備
-Counter,1,MatchingCounterTitle,BATTLE COUNTER
-Counter,1,MenuSelectMatching_Title,SELECT MATCH TYPE
-Counter,1,MenuRuleSelect_Title,SELECT BATTLE RULES
-Counter,1,RuleInfoTitle,BATTLE RULE INFORMATION
-Counter,1,MsgWnd_StartMatchingTitle,JOIN MATCH
-Counter,1,HelpMenuTop,<c f0df60>Please select [Ranked Match] for random battles and [Password Match] when playing with friends.<c>
-Counter,1,HelpMatchingSelect,<c f0df60>Select the match type.<c>
-Counter,1,HelpRuleSelect,<c f0df60>Select the Battle Rules.<c>
-Counter,1,HelpRuleSelectVita,<c f0df60>Select the Battle Rules.<c><red>You can check the details of the Event Boost with the<c> <pict Sign_SQUARE> <red>button.<c>
-Counter,1,MenuTop_Title,BATTLE COUNTER
-Counter,1,MenuTop_SelectMatching,Select Match Type
-Counter,1,MenuTop_RankMatch,Ranked Match
-Counter,1,MenuTop_PwMatch,Password Match
+Counter,1,MatchingCounterTitle,CONTADOR DE BATALLA
+Counter,1,MenuSelectMatching_Title,SELECCIONAR TIPO DE PARTIDO
+Counter,1,MenuRuleSelect_Title,SELECCIONAR REGLAS DE BATALLA
+Counter,1,RuleInfoTitle,INFORMACIÓN DE LAS REGLAS DE BATALLA
+Counter,1,MsgWnd_StartMatchingTitle,ÚNETE AL PARTIDO
+Counter,1,HelpMenuTop,<c f0df60>Selecciona [Ranked Match] para batallas aleatorias y [Password Match] cuando juegues con amigos.<c>
+Counter,1,HelpMatchingSelect,<c f0df60>Seleccione el tipo de coincidencia.<c>
+Counter,1,HelpRuleSelect,<c f0df60>Selecciona las reglas de batalla.<c>
+Counter,1,HelpRuleSelectVita,<c f0df60>Selecciona las reglas de batalla.<c><red>Puedes verificar los detalles del Event Boost con el botón<c> <pict Sign_SQUARE> <red>.<c>
+Counter,1,MenuTop_Title,CONTADOR DE BATALLA
+Counter,1,MenuTop_SelectMatching,Seleccionar tipo de coincidencia
+Counter,1,MenuTop_RankMatch,Partida igualada
+Counter,1,MenuTop_PwMatch,Coincidencia de contraseña
 Counter,1,MenuTop_CancelMatching,Cancel Matchmaking
-Counter,1,MenuTop_BattleArenaHelp,Ask about the Battle Arena
-Counter,1,MenuTop_Leave,Leave Battle Counter
-Counter,1,MenuSelectMatching_Rank,Ranked Match
-Counter,1,MenuTutorial_BattleArena,The Battle Arena
-Counter,1,MenuTutorial_Matching,Matchmaking
-Counter,1,MenuTutorial_ExchangeShop,The Exchange Shop
-Counter,1,MenuTutorial_Ranking,Arena Rankings
-Counter,1,MenuSelectMatching_Leave,Back
-Counter,1,MenuTop_RankMatch_Info,"[Ranked Match] is for random battles.<br>You'll be randomly matched with ARKS ops from<br>any block of the Battle Lobby, based on strength.<br><br>You can't choose your battle opponents, but you'll<br><yellow>acquire Battle Coins and Reward Items, and battle<br>results will affect your Arena Points.<c><br><br>Note: Because you'll be matched from across all<br>blocks, you may be returned to a different block<br>after the battle."
-Counter,1,MenuTop_PwMatch_Info,"[Password Match] allows you to enjoy a private battle mode<br>with Friends and other players by entering a password.<br><br>You can choose your battle opponents with a password.<br><yellow>you can acquire Reward Items or Battle Coins,<br>and battle results won't affect your Arena Points.<c><br><br>Note: Because you'll be matched from across all blocks,<br>you may be returned to a different block after the battle ends."
-Counter,1,MenuTop_CancelMatching_Info,Cancels matchmaking.<br><br><yellow>Note: This option can only be selected during matchmaking.<c>
-Counter,1,MenuTop_BattleArenaHelp_Info,"Here, you can get help on all Battle Arena topics."
-Counter,1,MenuTop_Leave_Info,Leaving the Battle Arena Counter.
-Counter,1,MenuSelectMatching_RankInfo,"Your battle opponents and team will be selected <br>automatically when using this match type.<br><br>In this matching format, wins and losses will affect your ranking.<br><br>You can also earn Arena Points and Battle Coins."
-Counter,1,MsgWnd_StartMatchingText,"Matchmaking has already begun, <br>but would you like to join a new match?"
-Counter,1,MsgWnd_CancelMatchingText,Would you like to cancel $(0) [$(1)] matchmaking?
-Counter,1,RuleInfo_RuleName,Battle Rule Name
-Counter,1,RuleInfo_WinTerms,Win Conditions
-Counter,1,RuleInfo_BattleForm,Battle Format
-Counter,1,RuleInfo_BattleNum,Number of Participants
-Counter,1,RuleInfo_BattleTime,Battle Time
-Counter,1,RuleInfo_BattleStage,Battle Stage
-Counter,1,RuleInfo_JoinTerms,Conditions to Join
-Counter,1,RuleInfo_Bringing,Carry-ins
-Counter,1,RuleInfo_RuleDesc,Rule Description
-Counter,1,RuleInfo_BattleTimeTag,Time
-Counter,1,RuleInfo_BattleStageTag,Location
-Counter,1,RuleInfo_RuleBasicInfoVita,Basic Rule Information
-Counter,1,RuleInfo_RuleDescVita,Rule Description
-Counter,1,MsgWnd_Yes,Yes
+Counter,1,MenuTop_BattleArenaHelp,Pregunta por el campo de batalla
+Counter,1,MenuTop_Leave,Salir del contador de batalla
+Counter,1,MenuSelectMatching_Rank,Partida igualada
+Counter,1,MenuTutorial_BattleArena,La arena de batalla
+Counter,1,MenuTutorial_Matching,Casamentero
+Counter,1,MenuTutorial_ExchangeShop,La tienda de cambio
+Counter,1,MenuTutorial_Ranking,Clasificaciones de arena
+Counter,1,MenuSelectMatching_Leave,Atrás
+Counter,1,MenuTop_RankMatch_Info,"[Ranked Match] es para batallas aleatorias.<br>Se te asignará aleatoriamente con operaciones ARKS de<br>cualquier bloque del Battle Lobby, según su fuerza.<br><br>No puedes elegir a tus oponentes de batalla, pero podrás<br><yellow>adquiere monedas de batalla y artículos de recompensa, y lucha<br>Los resultados afectarán tus puntos de Arena.<c><br><br>Nota: Debido a que serás emparejado en todos<br>bloques, es posible que regreses a un bloque diferente<br>después de la batalla."
+Counter,1,MenuTop_PwMatch_Info,"[Password Match] te permite disfrutar de un modo de batalla privado<br>con amigos y otros jugadores ingresando una contraseña.<br><br>Puedes elegir a tus oponentes de batalla con una contraseña.<br><yellow>puedes adquirir artículos de recompensa o monedas de batalla,<br>y los resultados de la batalla no afectarán tus puntos de arena.<c><br><br>Nota: Debido a que serás emparejado en todos los bloques,<br>Es posible que regreses a un bloque diferente después de que termine la batalla."
+Counter,1,MenuTop_CancelMatching_Info,Cancela el emparejamiento.<br><br><yellow>Nota: esta opción solo se puede seleccionar durante el emparejamiento.<c>
+Counter,1,MenuTop_BattleArenaHelp_Info,Aquí puede obtener ayuda sobre todos los temas de Battle Arena.
+Counter,1,MenuTop_Leave_Info,Saliendo del mostrador de Battle Arena.
+Counter,1,MenuSelectMatching_RankInfo,"Se seleccionarán tus oponentes de batalla y tu equipo.<br>automáticamente cuando se utiliza este tipo de coincidencia.<br><br>En este formato de emparejamiento, las victorias y las derrotas afectarán tu clasificación.<br><br>También puedes ganar puntos de arena y monedas de batalla."
+Counter,1,MsgWnd_StartMatchingText,"El emparejamiento ya ha comenzado,<br>pero ¿te gustaría unirte a una nueva partida?"
+Counter,1,MsgWnd_CancelMatchingText,¿Quieres cancelar el emparejamiento de $(0) [$(1)]?
+Counter,1,RuleInfo_RuleName,Nombre de la regla de batalla
+Counter,1,RuleInfo_WinTerms,Condiciones de victoria
+Counter,1,RuleInfo_BattleForm,Formato de batalla
+Counter,1,RuleInfo_BattleNum,Número de participantes
+Counter,1,RuleInfo_BattleTime,Tiempo de batalla
+Counter,1,RuleInfo_BattleStage,Etapa de batalla
+Counter,1,RuleInfo_JoinTerms,Condiciones para unirse
+Counter,1,RuleInfo_Bringing,equipaje de mano
+Counter,1,RuleInfo_RuleDesc,Descripción de la regla
+Counter,1,RuleInfo_BattleTimeTag,Tiempo
+Counter,1,RuleInfo_BattleStageTag,Ubicación
+Counter,1,RuleInfo_RuleBasicInfoVita,Información básica de la regla
+Counter,1,RuleInfo_RuleDescVita,Descripción de la regla
+Counter,1,MsgWnd_Yes,Sí
 Counter,1,MsgWnd_No,No
-Counter,1,LineMsg_MatchingStart,"Matchmaking for $(0) [$(1)] has started.<br><br>Once matchmaking is complete, the game will automatically start.<br>Please wait a moment."
+Counter,1,LineMsg_MatchingStart,"El emparejamiento para $(0) [$(1)] ha comenzado.<br><br>Una vez que se complete el emparejamiento, el juego comenzará automáticamente.<br>Espere un momento."
 Counter,1,MenuRuleSelect_Item,$(0)
-Counter,1,MenuRuleSelect_StartMatching,Join Match
-Counter,1,MenuRuleSelect_Return,Back
-Counter,1,colon,:
-Counter,1,password_request,Require password for all $(0) players (allies and opponents).
-Counter,1,password_request_ok,Also limit opponent team to players with password.
-Counter,1,team_select,Team (if password required for allies and opponents).
-Counter,1,red_team,Red Team
-Counter,1,blue_team,Blue Team
-Counter,1,passmatch_info,"By sharing the password with friends beforehand, you can play<br>the game with <yellow>$(0) people at once<c> (1 team unit).<br><br>If <yellow>fewer than $(1) people<c> enter the password, <c ff9c70>the game<br>won't start.<c><br><br>Note: Password Matches won't <yellow>affect rankings or generate<br>rewards.<c> This mode is designed for having fun with friends."
-Counter,1,MENU_TUTORIAL_BATTLE_ARENA,The Battle Arena
-Counter,1,MENU_TUTORIAL_RANK_MATCH,Ranked Matches
-Counter,1,MENU_TUTORIAL_PASSWORD,Password Matches
-Counter,1,MENU_TUTORIAL_EXCHANGE_SHOP,The Exchange Shop
-Counter,1,MENU_TUTORIAL_RANKING,Arena Rankings
-Counter,1,MENU_TUTORIAL_RETURN,Back
-Counter,1,PASSMATCH_ERROR_TITLE,NO PASSWORD SET
-Counter,1,PASSMATCH_ERROR_MESSAGE,Please set a password to activate it.
-Counter,1,MsgWnd_SelMatchErrorText,Can't select during matchmaking.<br>Please use the [Cancel Matchmaking] option first.
-Counter,1,BattleKind_Team,$(0) vs. $(1) (2 teams)
-Counter,1,BattleKind_Personal,Individual Match
-Counter,1,EntryMaxNum,$(0) Players
-Counter,1,Rule_Enable,Yes
-Counter,1,Rule_Disable,None
-Counter,1,Map_Random,Random
-Counter,1,Map_Random2,VR Arena (Random)
-Counter,1,Pwatch_Pass_Title,PASSWORD FOR ALLIED TEAM
-Counter,1,Pwatch_Pass,Password
-Counter,1,Pwatch_Window_Title,PASSWORD MATCH PREPARATION
+Counter,1,MenuRuleSelect_StartMatching,Unirse al partido
+Counter,1,MenuRuleSelect_Return,Atrás
+Counter,1,colon,
+Counter,1,password_request,Requerir contraseña para todos los jugadores de $(0) (aliados y oponentes).
+Counter,1,password_request_ok,También limite el equipo oponente a jugadores con contraseña.
+Counter,1,team_select,Equipo (si se requiere contraseña para aliados y oponentes).
+Counter,1,red_team,equipo rojo
+Counter,1,blue_team,equipo azul
+Counter,1,passmatch_info,"Al compartir la contraseña con amigos de antemano, puedes jugar<br>el juego con <yellow>$(0) personas a la vez<c> (1 unidad de equipo).<br><br>Si <yellow>menos de $(1) personas<c> ingresan la contraseña, <c ff9c70>el juego<br>no arranca.<c><br><br>Nota: Las coincidencias de contraseña no <yellow>afectarán las clasificaciones ni generarán<br>recompensas.<c> Este modo está diseñado para divertirse con amigos."
+Counter,1,MENU_TUTORIAL_BATTLE_ARENA,La arena de batalla
+Counter,1,MENU_TUTORIAL_RANK_MATCH,Partidos clasificados
+Counter,1,MENU_TUTORIAL_PASSWORD,Coincidencias de contraseña
+Counter,1,MENU_TUTORIAL_EXCHANGE_SHOP,La tienda de cambio
+Counter,1,MENU_TUTORIAL_RANKING,Clasificaciones de arena
+Counter,1,MENU_TUTORIAL_RETURN,Atrás
+Counter,1,PASSMATCH_ERROR_TITLE,SIN CONTRASEÑA ESTABLECIDA
+Counter,1,PASSMATCH_ERROR_MESSAGE,Por favor establezca una contraseña para activarla.
+Counter,1,MsgWnd_SelMatchErrorText,No se puede seleccionar durante el emparejamiento.<br>Utilice primero la opción [Cancel Matchmaking].
+Counter,1,BattleKind_Team,$(0) vs. $(1) (2 equipos)
+Counter,1,BattleKind_Personal,Partido individual
+Counter,1,EntryMaxNum,$(0) Jugadores
+Counter,1,Rule_Enable,Sí
+Counter,1,Rule_Disable,Ninguno
+Counter,1,Map_Random,Aleatorio
+Counter,1,Map_Random2,Arena de realidad virtual (aleatoria)
+Counter,1,Pwatch_Pass_Title,CONTRASEÑA PARA EQUIPO ALIADO
+Counter,1,Pwatch_Pass,Contraseña
+Counter,1,Pwatch_Window_Title,PREPARACIÓN DE COINCIDENCIA DE CONTRASEÑA
 Ranking,0,Main_WindowTitle,バトルモニュメント
 Ranking,0,HelpMenu_Top,<c f0df60>バトルアリーナに挑戦したプレイヤーのランキングを確認できます。<c>
 Ranking,0,Menu_Top_WindowTitle,ランキング選択
@@ -360,79 +360,79 @@ Ranking,0,Text_RewordRank_12,E5 ～ E1ランク
 Ranking,0,Text_RewordRank_13,上位ランク
 Ranking,0,Text_Reword_Item,$(0)×$(1)
 Ranking,0,Text_Reword_Nothing,現在は開催されていません
-Ranking,1,Main_WindowTitle,BATTLE MONUMENT
-Ranking,1,HelpMenu_Top,<c f0df60>Allows you to view the rankings of the players who fought in the Battle Arena.<c>
-Ranking,1,Menu_Top_WindowTitle,SELECT RANKING
-Ranking,1,Menu_Top_RankMatchEquipNo,"Ranked Match ""Emblem Scramble"""
-Ranking,1,Menu_Top_RankMatchEquipNo_Switch,"Ranked Match ""Emblem Scramble"" (Cloud Version)"
-Ranking,1,Menu_Top_RankMatchEquipYes,"Ranked Match ""Battle Royale"""
-Ranking,1,Menu_Top_RankMatchEquipYes_Switch,"Ranked Match ""Battle Royale"" (Cloud Version)"
-Ranking,1,Menu_Return,Back
-Ranking,1,RankMatchEquipNo_WindowTitle,[EMBLEM SCRAMBLE] BATTLE RANKING
-Ranking,1,RankMatchEquipNo_WindowTitle_Switch,[EMBLEM SCRAMBLE] BATTLE RANKING (CLOUD VERSION)
-Ranking,1,RankMatchEquipYes_WindowTitle,[BATTLE ROYALE] BATTLE RANKING
-Ranking,1,RankMatchEquipYes_WindowTitle_Switch,[BATTLE ROYALE] BATTLE RANKING (CLOUD VERSION)
-Ranking,1,RankMatchEquipNo_Title,[EMBLEM SCRAMBLE] BATTLE RANKING
-Ranking,1,RankMatchEquipYes_Title,[BATTLE ROYALE] BATTLE RANKING
-Ranking,1,Text_Board_RankingPeriod,Ranking Period
-Ranking,1,Param_Board_RankingUpdateInterval,Parameter: Ranking Update Interval
-Ranking,1,Text_Board_Ranking,Rankings
+Ranking,1,Main_WindowTitle,MONUMENTO DE BATALLA
+Ranking,1,HelpMenu_Top,<c f0df60>Te permite ver las clasificaciones de los jugadores que lucharon en Battle Arena.<c>
+Ranking,1,Menu_Top_WindowTitle,SELECCIONAR CLASIFICACIÓN
+Ranking,1,Menu_Top_RankMatchEquipNo,"Partida igualada ""Emblem Scramble"""
+Ranking,1,Menu_Top_RankMatchEquipNo_Switch,"Partida igualada ""Emblem Scramble"" (versión en la nube)"
+Ranking,1,Menu_Top_RankMatchEquipYes,"Partida igualada ""Battle Royale"""
+Ranking,1,Menu_Top_RankMatchEquipYes_Switch,"Partida igualada ""Battle Royale"" (versión en la nube)"
+Ranking,1,Menu_Return,Atrás
+Ranking,1,RankMatchEquipNo_WindowTitle,[EMBLEM SCRAMBLE] CLASIFICACIÓN DE BATALLA
+Ranking,1,RankMatchEquipNo_WindowTitle_Switch,[EMBLEM SCRAMBLE] CLASIFICACIÓN DE BATALLA (VERSIÓN EN LA NUBE)
+Ranking,1,RankMatchEquipYes_WindowTitle,[BATTLE ROYALE] CLASIFICACIÓN DE BATALLA
+Ranking,1,RankMatchEquipYes_WindowTitle_Switch,[BATTLE ROYALE] CLASIFICACIÓN DE BATALLA (VERSIÓN EN LA NUBE)
+Ranking,1,RankMatchEquipNo_Title,[EMBLEM SCRAMBLE] CLASIFICACIÓN DE BATALLA
+Ranking,1,RankMatchEquipYes_Title,[BATTLE ROYALE] CLASIFICACIÓN DE BATALLA
+Ranking,1,Text_Board_RankingPeriod,Período de clasificación
+Ranking,1,Param_Board_RankingUpdateInterval,Parámetro: Intervalo de actualización de clasificación
+Ranking,1,Text_Board_Ranking,Clasificaciones
 Ranking,1,Text_Board_CharacterAndPlayerID,Character Name / Player ID Name
-Ranking,1,Text_Board_RankAndBP,Rank / Arena Points
-Ranking,1,Text_Board_RankAndBP2,Rank / Arena Points
-Ranking,1,Text_Board_AP,Arena Points
-Ranking,1,Text_Board_YouRanking,Your Rank
-Ranking,1,Text_Board_RankingList,Legendary Rankings List
-Ranking,1,Text_Board_PlayerID_VITA,Player ID Name
-Ranking,1,Text_Board_Character_VITA,Character Name
-Ranking,1,Popup_Menu_Now,Currently In-Progress
-Ranking,1,Popup_Menu_New,Latest Rankings
-Ranking,1,Popup_Menu_Old,Previous Rankings
-Ranking,1,Tab_Top20,Top $(0)
-Ranking,1,Tab_MyRank,Around You
-Ranking,1,Tab_Friend20,Friends Top $(0)
-Ranking,1,Tab_Reward,Reward
-Ranking,1,NoData,No ranking data exists for the current instance.
-Ranking,1,Hint_Crystal_Now,<c f0df60>These are the current Battle Rankings in progress.<c>
-Ranking,1,Hint_Crystal_New,<c f0df60>These are the latest Battle Rankings.<c>
-Ranking,1,Hint_Crystal_Old,<c f0df60>These are the past Battle Rankings.<c>
-Ranking,1,Hint_BattleRoyal_Now,<c f0df60>Help for Battle Royale (In Progress)<c>
-Ranking,1,Hint_BattleRoyal_New,<c f0df60>Help for Battle Royale (Latest Rankings)<c>
-Ranking,1,Hint_BattleRoyal_Old,<c f0df60>Help for Battle Royale (Past Rankings)<c>
-Ranking,1,Ranking_UpdateInterval,Updated on the 1st of Each Month at 7:00 AM
-Ranking,1,Text_RankName,Legendary
-Ranking,1,Text_Rank_0,-
-Ranking,1,Text_RewordRank_1,Legendary Rank: 1st
-Ranking,1,Text_RewordRank_2,Legendary Rank: 2nd - 5th
-Ranking,1,Text_RewordRank_3,Legendary Rank: 6th - 10th
-Ranking,1,Text_RewordRank_4,Legendary Rank: 11th - 20th
-Ranking,1,Text_RewordRank_5,Legendary Rank: 21st - 100th
-Ranking,1,Text_RewordRank_6,Legendary Rank: 101st and Below
-Ranking,1,Text_RewordRank_7,Rank S5 - S1
-Ranking,1,Text_RewordRank_8,Rank A5 - A1
-Ranking,1,Text_RewordRank_9,Rank B5 - B1
-Ranking,1,Text_RewordRank_10,Rank C5 - C1
-Ranking,1,Text_RewordRank_11,Rank D5 - D1
-Ranking,1,Text_RewordRank_12,Rank E5 - E1
-Ranking,1,Text_RewordRank_13,Top Rank
+Ranking,1,Text_Board_RankAndBP,Puntos de rango/arena
+Ranking,1,Text_Board_RankAndBP2,Puntos de rango/arena
+Ranking,1,Text_Board_AP,Puntos de arena
+Ranking,1,Text_Board_YouRanking,Tu rango
+Ranking,1,Text_Board_RankingList,Lista de clasificaciones legendarias
+Ranking,1,Text_Board_PlayerID_VITA,Nombre de identificación del jugador
+Ranking,1,Text_Board_Character_VITA,Nombre del personaje
+Ranking,1,Popup_Menu_Now,Actualmente en progreso
+Ranking,1,Popup_Menu_New,Últimas clasificaciones
+Ranking,1,Popup_Menu_Old,Clasificaciones anteriores
+Ranking,1,Tab_Top20,Arriba $(0)
+Ranking,1,Tab_MyRank,A tu alrededor
+Ranking,1,Tab_Friend20,Amigos mejores $(0)
+Ranking,1,Tab_Reward,Premio
+Ranking,1,NoData,No existen datos de clasificación para la instancia actual.
+Ranking,1,Hint_Crystal_Now,<c f0df60>Estas son las clasificaciones de batalla actuales en progreso.<c>
+Ranking,1,Hint_Crystal_New,<c f0df60>Estas son las últimas clasificaciones de batalla.<c>
+Ranking,1,Hint_Crystal_Old,<c f0df60>Estas son las clasificaciones de batalla anteriores.<c>
+Ranking,1,Hint_BattleRoyal_Now,<c f0df60>Ayuda para Battle Royale (en progreso)<c>
+Ranking,1,Hint_BattleRoyal_New,<c f0df60>Ayuda para Battle Royale (últimas clasificaciones)<c>
+Ranking,1,Hint_BattleRoyal_Old,<c f0df60>Ayuda para Battle Royale (clasificaciones anteriores)<c>
+Ranking,1,Ranking_UpdateInterval,Actualizado el día 1 de cada mes a las 7:00 a.m.
+Ranking,1,Text_RankName,Legendario
+Ranking,1,Text_Rank_0,
+Ranking,1,Text_RewordRank_1,Rango legendario: 1.º
+Ranking,1,Text_RewordRank_2,Rango legendario: 2.º - 5.º
+Ranking,1,Text_RewordRank_3,Rango legendario: 6.º - 10.º
+Ranking,1,Text_RewordRank_4,Rango legendario: 11.º - 20.º
+Ranking,1,Text_RewordRank_5,Rango legendario: 21 - 100
+Ranking,1,Text_RewordRank_6,Rango legendario: 101 y menos
+Ranking,1,Text_RewordRank_7,Rango S5 - S1
+Ranking,1,Text_RewordRank_8,Rango A5 - A1
+Ranking,1,Text_RewordRank_9,Rango B5 - B1
+Ranking,1,Text_RewordRank_10,Rango C5 - C1
+Ranking,1,Text_RewordRank_11,Rango D5 - D1
+Ranking,1,Text_RewordRank_12,Rango E5 - E1
+Ranking,1,Text_RewordRank_13,Rango superior
 Ranking,1,Text_Reword_Item,$(0) x $(1)
-Ranking,1,Text_Reword_Nothing,Nothing is being held at the moment.
+Ranking,1,Text_Reword_Nothing,Por el momento no se está celebrando nada.
 Pickup,0,Get_Weapon,$(0)を獲得しました。
 Pickup,0,Get_Item,$(0)×$(1) を獲得しました。
-Pickup,1,Get_Weapon,$(0) acquired.
-Pickup,1,Get_Item,$(0) x $(1) acquired.
+Pickup,1,Get_Weapon,$(0) adquirido.
+Pickup,1,Get_Item,$(0) x $(1) adquirido.
 Squad,0,SquadNameBlue,BLUE UNION
 Squad,0,SquadNameRed,RED UNION
 Squad,0,SquadEnemyNameMask,ARKS $(0)
-Squad,1,SquadNameBlue,BLUE TEAM
-Squad,1,SquadNameRed,RED TEAM
-Squad,1,SquadEnemyNameMask,ARKS $(0)
+Squad,1,SquadNameBlue,EQUIPO AZUL
+Squad,1,SquadNameRed,EQUIPO ROJO
+Squad,1,SquadEnemyNameMask,ARCAS $(0)
 Accident,0,AccidentStart_0000,エンブレムフィーバー発生！
 Accident,0,AccidentFinish_0000,エンブレムフィーバーが終了しました
-Accident,1,AccidentStart_0000,Emblem Fever activated!
-Accident,1,AccidentFinish_0000,Emblem Fever ended.
+Accident,1,AccidentStart_0000,¡Fiebre del emblema activada!
+Accident,1,AccidentFinish_0000,La fiebre del emblema terminó.
 FieldUpdate,0,FieldUpdate_0000,ピックアップスポットがアップデート！
-FieldUpdate,1,FieldUpdate_0000,Supply Points have updated!
+FieldUpdate,1,FieldUpdate_0000,¡Los puntos de suministro se han actualizado!
 SkillSelect,0,SkillSelect_Title,スキル選択
 SkillSelect,0,SkillSelect_Info,使用するスキルを選択して下さい。<br>カウントダウンが始まると<br>スキルが自動で選択されます。
 SkillSelect,0,SkillInfo_Title,スキル詳細情報
@@ -442,15 +442,15 @@ SkillSelect,0,SkillType_Attack,<c 00ec00>攻撃<c>
 SkillSelect,0,SkillType_Heal,回復
 SkillSelect,0,SkillType_Defense,防御
 SkillSelect,0,SkillType_Support,補助
-SkillSelect,1,SkillSelect_Title,SKILL SELECTION
-SkillSelect,1,SkillSelect_Info,"Select the skills to use. When the countdown<br>begins, your skills will be chosen<br>automatically."
-SkillSelect,1,SkillInfo_Title,DETAILED SKILL INFORMATION
-SkillSelect,1,SkillType_None,None
-SkillSelect,1,SkillType_Obstacle,<c 00ff00>Disruption<c>
-SkillSelect,1,SkillType_Attack,<c 00ec00>Attack<c>
-SkillSelect,1,SkillType_Heal,Recovery
-SkillSelect,1,SkillType_Defense,Defense
-SkillSelect,1,SkillType_Support,Supplemental
+SkillSelect,1,SkillSelect_Title,SELECCIÓN DE HABILIDADES
+SkillSelect,1,SkillSelect_Info,"Seleccione las habilidades a utilizar. cuando la cuenta regresiva<br>comienza, tus habilidades serán elegidas<br>automáticamente."
+SkillSelect,1,SkillInfo_Title,INFORMACIÓN DETALLADA DE HABILIDADES
+SkillSelect,1,SkillType_None,Ninguno
+SkillSelect,1,SkillType_Obstacle,<c 00ff00>Interrupción<c>
+SkillSelect,1,SkillType_Attack,<c 00ec00>Ataque<c>
+SkillSelect,1,SkillType_Heal,Recuperación
+SkillSelect,1,SkillType_Defense,Defensa
+SkillSelect,1,SkillType_Support,Hecho suplementario
 Remuneration,0,Remuneration_WindowTitle1,報酬アイテム選択
 Remuneration,0,Remuneration_WindowTitle2,出現候補アイテム
 Remuneration,0,Remuneration_WindowTitle3,終了確認
@@ -472,27 +472,27 @@ Remuneration,0,Remuneration_RemainingReward,<yellow>残りの出現候補アイ�
 Remuneration,0,Remuneration_OneMoreFinButton,終了する
 Remuneration,0,Remuneration_ReceiveErrorTitle,アイテム受け取り失敗
 Remuneration,0,Remuneration_ReceiveErrorMessage,アイテムの受け取りに失敗しました。<br>受け取りを終了します。
-Remuneration,1,Remuneration_WindowTitle1,SELECT REWARD ITEMS
-Remuneration,1,Remuneration_WindowTitle2,POSSIBLE ITEMS
-Remuneration,1,Remuneration_WindowTitle3,CONFIRM EXIT
-Remuneration,1,Remuneration_Explanation1,Are you sure you want to exit rewards?
-Remuneration,1,Remuneration_Title1,SELECT REWARD SLOT
-Remuneration,1,Remuneration_Help1,"<c f0df60>Select the slot you want, and get the rewards!<c>"
-Remuneration,1,Remuneration_Help2,"<c f0df60>Select the slot you want, and get the rewards! (<c><% Cancel> <c f0df60>to Exit)<c>"
-Remuneration,1,Remuneration_LineMessage1,$(0) acquired and sent to OP Team Storage.
-Remuneration,1,Remuneration_LineMessage2,$(0) acquired.<br>This will be applied in the next battle.
-Remuneration,1,Remuneration_WindowTitle4,CONFIRM ITEM PURCHASE
-Remuneration,1,Remuneration_Explanation2,"<pict StarGem><c 1dedd7>Star Gem Payment Required<c><br><br>Are you sure you want to purchase the following item <br>for $(1), open additional slots, and <br>acquire rewards?<br><br>SG Required: $(2) SG<br>(You Have: $(0))"
-Remuneration,1,Remuneration_SGItemName,Open Additional Slot
-Remuneration,1,Remuneration_NoSGTitle,INSUFFICIENT STAR GEMS
-Remuneration,1,Remuneration_Explanation4,You don't have enough SG.
-Remuneration,1,Remuneration_WindowTitle5,SELECT REWARDS
-Remuneration,1,Remuneration_OneMoreTitle,CONFIRM OPENING OF ADDITIONAL SLOT
-Remuneration,1,Remuneration_OneMoreMessage,<pict StarGem><c 1dedd7>Star Gem Payment Required<c><br><br>You can open the other slots and acquire rewards by <br>spending SG. Do you wish to select additional slots <br>to open? (SG will be consumed after your selection.)<br><br>SG Required: $(1) SG<br>(You Have: $(0))
-Remuneration,1,Remuneration_RemainingReward,<yellow>Possible Remaining Items:<c>
-Remuneration,1,Remuneration_OneMoreFinButton,Exit
-Remuneration,1,Remuneration_ReceiveErrorTitle,FAILED TO RECEIVE ITEMS
-Remuneration,1,Remuneration_ReceiveErrorMessage,Failed to receive items.<br>Exiting.
+Remuneration,1,Remuneration_WindowTitle1,SELECCIONAR ARTÍCULOS DE RECOMPENSA
+Remuneration,1,Remuneration_WindowTitle2,POSIBLES ARTÍCULOS
+Remuneration,1,Remuneration_WindowTitle3,CONFIRMAR SALIR
+Remuneration,1,Remuneration_Explanation1,¿Estás seguro de que quieres salir de las recompensas?
+Remuneration,1,Remuneration_Title1,SELECCIONAR ESPACIO DE RECOMPENSA
+Remuneration,1,Remuneration_Help1,<c f0df60>¡Selecciona el espacio que desees y obtén las recompensas!<c>
+Remuneration,1,Remuneration_Help2,<c f0df60>¡Selecciona el espacio que desees y obtén las recompensas! (<c><% Cancel> <c f0df60>para salir)<c>
+Remuneration,1,Remuneration_LineMessage1,$(0) adquiridos y enviados a OP Team Storage.
+Remuneration,1,Remuneration_LineMessage2,$(0) adquirido.<br>Esto se aplicará en la próxima batalla.
+Remuneration,1,Remuneration_WindowTitle4,CONFIRMAR COMPRA DEL ARTÍCULO
+Remuneration,1,Remuneration_Explanation2,"<pict StarGem><c 1dedd7>Se requiere pago con gema estrella<c><br><br>¿Estás seguro de que quieres comprar el siguiente artículo?<br>por $(1), abre espacios adicionales y<br>adquirir recompensas?<br><br>SG requerido: $(2) SG<br>(Tienes: $(0))"
+Remuneration,1,Remuneration_SGItemName,Abrir ranura adicional
+Remuneration,1,Remuneration_NoSGTitle,GEMAS ESTRELLA INSUFICIENTES
+Remuneration,1,Remuneration_Explanation4,No tienes suficiente SG.
+Remuneration,1,Remuneration_WindowTitle5,SELECCIONAR RECOMPENSAS
+Remuneration,1,Remuneration_OneMoreTitle,CONFIRMAR APERTURA DE SLOT ADICIONAL
+Remuneration,1,Remuneration_OneMoreMessage,<pict StarGem><c 1dedd7>Se requiere pago con gema estrella<c><br><br>Puedes abrir las otras máquinas tragamonedas y adquirir recompensas al<br>gasto SG. ¿Desea seleccionar espacios adicionales?<br>para abrir? (SG se consumirá después de su selección).<br><br>SG requerido: $(1) SG<br>(Tienes: $(0))
+Remuneration,1,Remuneration_RemainingReward,<yellow>Posibles elementos restantes:<c>
+Remuneration,1,Remuneration_OneMoreFinButton,Salida
+Remuneration,1,Remuneration_ReceiveErrorTitle,NO SE PUDIÓ RECIBIR ARTÍCULOS
+Remuneration,1,Remuneration_ReceiveErrorMessage,No se pudieron recibir los artículos.<br>Saliendo.
 Matching,0,Matching_Complete,マッチング完了
 Matching,0,Matching_CountDown,参加メンバーが揃いました。<br>$(0)秒後にバトルエリアに転送します。
 Matching,0,Matching_RankTitle,ランクマッチ
@@ -506,18 +506,18 @@ Matching,0,Text_MatchingWait_Slash,/
 Matching,0,Text_MatchingWait_ElapsedTime,マッチング経過時間
 Matching,0,Param_MatchingWait_Colon,：
 Matching,0,Text_Matching_Block,$(0)「$(1)」
-Matching,1,Matching_Complete,Matchmaking Complete
-Matching,1,Matching_CountDown,Matchmaking complete.<br>Teleporting to the battle area in $(0) seconds.
-Matching,1,Matching_RankTitle,RANKED MATCH
-Matching,1,Matching_RankName,Emblem Scramble
-Matching,1,Text_MatchingWait_Title,MATCHMAKING IN PROGRESS
-Matching,1,Text_MatchingWait_Text,Matchmaking Status
-Matching,1,Text_MatchingWait_Team,Assigned Team
-Matching,1,Text_MatchingWait_JoinRule,Participation Rules
-Matching,1,Text_MatchingWait_JoinMemberNum,Number of Participants
-Matching,1,Text_MatchingWait_Slash,/
+Matching,1,Matching_Complete,Emparejamiento completo
+Matching,1,Matching_CountDown,Emparejamiento completo.<br>Teletransportarte al área de batalla en $(0) segundos.
+Matching,1,Matching_RankTitle,PARTIDO CLASIFICADO
+Matching,1,Matching_RankName,Lucha de emblemas
+Matching,1,Text_MatchingWait_Title,Emparejamiento en curso
+Matching,1,Text_MatchingWait_Text,Estado de emparejamiento
+Matching,1,Text_MatchingWait_Team,Equipo asignado
+Matching,1,Text_MatchingWait_JoinRule,Normas de participación
+Matching,1,Text_MatchingWait_JoinMemberNum,Número de participantes
+Matching,1,Text_MatchingWait_Slash,
 Matching,1,Text_MatchingWait_ElapsedTime,Matchmaking Time Elapsed
-Matching,1,Param_MatchingWait_Colon,:
+Matching,1,Param_MatchingWait_Colon,
 Matching,1,Text_Matching_Block,$(0) [$(1)]
 Rematch,0,Rematch_Title,再マッチング確認
 Rematch,0,Rematch_Message,再マッチングをしますか？<br><br>※再マッチングをした場合でも<br>現在のユニオンは解散します
@@ -528,25 +528,25 @@ Rematch,0,Rematch_TimeoutTitle,タイムアウト
 Rematch,0,Rematch_TimeoutMessage,マッチングがタイムアウトしました。<br>ロビーに帰還します。
 Rematch,0,Rematch_ReqErrorTitle,タイムアウト
 Rematch,0,Rematch_ReqErrorMessage,マッチングがタイムアウトしました。<br>ロビーに帰還します。
-Rematch,1,Rematch_Title,RE-MATCHMAKING CONFIRMATION
-Rematch,1,Rematch_Message,Commence re-matchmaking?<br><br>Note: Re-matchmaking will also disband the current team.
-Rematch,1,Rematch_Message_Password,"Commence re-matchmaking?<br><br>Note: After re-matchmaking, the game will <br>automatically begin once both teams are ready."
-Rematch,1,ReturnLobby_Title,CONFIRM QUEST EXIT
-Rematch,1,ReturnLobby_Message,Returning to lobby.
-Rematch,1,Rematch_TimeoutTitle,TIMED OUT
-Rematch,1,Rematch_TimeoutMessage,The matchmaking timed out.<br>Returning to lobby.
-Rematch,1,Rematch_ReqErrorTitle,TIMED OUT
-Rematch,1,Rematch_ReqErrorMessage,The matchmaking timed out.<br>Returning to lobby.
+Rematch,1,Rematch_Title,CONFIRMACIÓN DE RE-MATCHMAKING
+Rematch,1,Rematch_Message,¿Comenzar el nuevo emparejamiento?<br><br>Nota: El nuevo emparejamiento también disolverá el equipo actual.
+Rematch,1,Rematch_Message_Password,"¿Comenzar el nuevo emparejamiento?<br><br>Nota: Después del nuevo emparejamiento, el juego<br>comenzará automáticamente una vez que ambos equipos estén listos."
+Rematch,1,ReturnLobby_Title,CONFIRMAR SALIDA DE MISIÓN
+Rematch,1,ReturnLobby_Message,Volviendo al vestíbulo.
+Rematch,1,Rematch_TimeoutTitle,TIEMPO AGOTADO
+Rematch,1,Rematch_TimeoutMessage,El emparejamiento expiró.<br>Volviendo al vestíbulo.
+Rematch,1,Rematch_ReqErrorTitle,TIEMPO AGOTADO
+Rematch,1,Rematch_ReqErrorMessage,El emparejamiento expiró.<br>Volviendo al vestíbulo.
 MainMenu,0,MainMenu_Mail,共通メール
 MainMenu,0,MainMenu_FriendList,共通フレンドリスト
 MainMenu,0,MainMenu_Community_Friend,共通フレンドリスト
 MainMenu,0,MainMenu_Community_Mail,共通メール
 MainMenu,0,MainMenu_System_SimbolArt,共通シンボルアート
-MainMenu,1,MainMenu_Mail,Mutual Mail
-MainMenu,1,MainMenu_FriendList,Mutual Friend List
-MainMenu,1,MainMenu_Community_Friend,Mutual Friend List
-MainMenu,1,MainMenu_Community_Mail,Mutual Mail
-MainMenu,1,MainMenu_System_SimbolArt,Mutual Symbol Art
+MainMenu,1,MainMenu_Mail,Correo mutuo
+MainMenu,1,MainMenu_FriendList,Lista de amigos mutuos
+MainMenu,1,MainMenu_Community_Friend,Lista de amigos mutuos
+MainMenu,1,MainMenu_Community_Mail,Correo mutuo
+MainMenu,1,MainMenu_System_SimbolArt,Arte de símbolo mutuo
 RuleCaption,0,MatchingCounterTitle,バトルカウンター
 RuleCaption,0,MenuSelectMatching_Title,マッチングタイプの選択
 RuleCaption,0,MenuRuleSelect_Title,対戦ルール選択
@@ -614,73 +614,73 @@ RuleCaption,0,Crystal_Dbg5,エンブレム争奪戦(火山：夜)
 RuleCaption,0,Crystal_Abt2019a,アークスＢＴ２０１９予選
 RuleCaption,0,Crystal_Abt2019b,アークスＢＴ２０１９準決勝
 RuleCaption,0,Crystal_Abt2019c,アークスＢＴ２０１９決勝
-RuleCaption,1,MatchingCounterTitle,BATTLE COUNTER
-RuleCaption,1,MenuSelectMatching_Title,SELECT MATCH TYPE
-RuleCaption,1,MenuRuleSelect_Title,SELECT BATTLE RULES
-RuleCaption,1,RuleInfoTitle,BATTLE RULE INFORMATION
-RuleCaption,1,MsgWnd_StartMatchingTitle,JOIN MATCH
-RuleCaption,1,HelpMenuTop,<c f0df60>You can cancel matchmaking before it starts.<c>
-RuleCaption,1,HelpMatchingSelect,<c f0df60>Select the match type.<c>
-RuleCaption,1,HelpRuleSelect,<c f0df60>Select the Battle Rules.<c>
-RuleCaption,1,HelpRuleSelectVita,<c f0df60>Select the Battle Rules.<c><red>You can check the details of the Battle Arena with the<c> <pict Sign_SQUARE> <red>button.<c>
-RuleCaption,1,MenuTop_Title,BATTLE COUNTER
-RuleCaption,1,MenuTop_SelectMatching,Select Match Type
-RuleCaption,1,MenuTop_RankMatch,Ranked Match
-RuleCaption,1,MenuTop_PwMatch,Password Match
+RuleCaption,1,MatchingCounterTitle,CONTADOR DE BATALLA
+RuleCaption,1,MenuSelectMatching_Title,SELECCIONAR TIPO DE PARTIDO
+RuleCaption,1,MenuRuleSelect_Title,SELECCIONAR REGLAS DE BATALLA
+RuleCaption,1,RuleInfoTitle,INFORMACIÓN DE LAS REGLAS DE BATALLA
+RuleCaption,1,MsgWnd_StartMatchingTitle,ÚNETE AL PARTIDO
+RuleCaption,1,HelpMenuTop,<c f0df60>Puedes cancelar el emparejamiento antes de que comience.<c>
+RuleCaption,1,HelpMatchingSelect,<c f0df60>Seleccione el tipo de coincidencia.<c>
+RuleCaption,1,HelpRuleSelect,<c f0df60>Selecciona las reglas de batalla.<c>
+RuleCaption,1,HelpRuleSelectVita,<c f0df60>Selecciona las reglas de batalla.<c><red>Puedes verificar los detalles de Battle Arena con el botón<c> <pict Sign_SQUARE> <red>.<c>
+RuleCaption,1,MenuTop_Title,CONTADOR DE BATALLA
+RuleCaption,1,MenuTop_SelectMatching,Seleccionar tipo de coincidencia
+RuleCaption,1,MenuTop_RankMatch,Partida igualada
+RuleCaption,1,MenuTop_PwMatch,Coincidencia de contraseña
 RuleCaption,1,MenuTop_CancelMatching,Cancel Matchmaking
-RuleCaption,1,MenuTop_BattleArenaHelp,Battle Arena Help
-RuleCaption,1,MenuTop_Leave,Leave Battle Counter
-RuleCaption,1,MenuSelectMatching_Rank,Ranked Match
-RuleCaption,1,MenuTutorial_BattleArena,The Battle Arena
-RuleCaption,1,MenuTutorial_Matching,Joining a Match
-RuleCaption,1,MenuTutorial_ExchangeShop,The Exchange Shop
-RuleCaption,1,MenuTutorial_Ranking,Arena Rankings
-RuleCaption,1,MenuSelectMatching_Leave,Back
-RuleCaption,1,MenuTop_RankMatch_Info,Unused Text
-RuleCaption,1,MenuTop_PwMatch_Info,You can set a password and team up with specific players.<br><br>Note: Password Matches will award fewer Battle Coins <br>and Arena Points than Ranked Matches.
-RuleCaption,1,MenuTop_CancelMatching_Info,"If you have already entered into a match, <br>you can cancel your entry."
-RuleCaption,1,MenuTop_BattleArenaHelp_Info,"Here, you can get help on all Battle Arena topics."
-RuleCaption,1,MenuTop_Leave_Info,Leave the Battle Arena Counter.
-RuleCaption,1,MenuSelectMatching_RankInfo,"Your battle opponents and team will be selected <br>automatically when using this match type.<br><br>In this matching format, wins and losses will affect your ranking.<br><br>You can also earn Arena Points and Battle Coins."
-RuleCaption,1,MsgWnd_StartMatchingText,"Matchmaking has already begun, <br>but would you like to join a new match?"
-RuleCaption,1,MsgWnd_CancelMatchingText,Would you like to cancel matchmaking for match type [$(0)]?
-RuleCaption,1,RuleInfo_RuleName,Battle Rule Name
-RuleCaption,1,RuleInfo_WinTerms,Win Conditions
-RuleCaption,1,RuleInfo_BattleForm,Battle Format
-RuleCaption,1,RuleInfo_BattleNum,Number of Participants
-RuleCaption,1,RuleInfo_BattleTime,Battle Time
-RuleCaption,1,RuleInfo_BattleStage,Battle Stage
-RuleCaption,1,RuleInfo_JoinTerms,Conditions to Join
-RuleCaption,1,RuleInfo_Bringing,Carry-ins
-RuleCaption,1,RuleInfo_RuleDesc,Rule Description
-RuleCaption,1,RuleInfo_BattleTimeTag,Time
-RuleCaption,1,RuleInfo_BattleStageTag,Location
-RuleCaption,1,RuleInfo_RuleBasicInfoVita,Basic Rule Information
-RuleCaption,1,RuleInfo_RuleDescVita,Rule Description
-RuleCaption,1,MsgWnd_Yes,Yes
+RuleCaption,1,MenuTop_BattleArenaHelp,Ayuda del campo de batalla
+RuleCaption,1,MenuTop_Leave,Salir del contador de batalla
+RuleCaption,1,MenuSelectMatching_Rank,Partida igualada
+RuleCaption,1,MenuTutorial_BattleArena,La arena de batalla
+RuleCaption,1,MenuTutorial_Matching,Unirse a una partida
+RuleCaption,1,MenuTutorial_ExchangeShop,La tienda de cambio
+RuleCaption,1,MenuTutorial_Ranking,Clasificaciones de arena
+RuleCaption,1,MenuSelectMatching_Leave,Atrás
+RuleCaption,1,MenuTop_RankMatch_Info,Texto no utilizado
+RuleCaption,1,MenuTop_PwMatch_Info,Puedes establecer una contraseña y formar equipo con jugadores específicos.<br><br>Nota: Las coincidencias de contraseña otorgarán menos monedas de batalla<br>y puntos de arena que las partidas igualadas.
+RuleCaption,1,MenuTop_CancelMatching_Info,"Si ya has entrado en una partida,<br>puedes cancelar tu entrada."
+RuleCaption,1,MenuTop_BattleArenaHelp_Info,Aquí puede obtener ayuda sobre todos los temas de Battle Arena.
+RuleCaption,1,MenuTop_Leave_Info,Sal del mostrador de Battle Arena.
+RuleCaption,1,MenuSelectMatching_RankInfo,"Se seleccionarán tus oponentes de batalla y tu equipo.<br>automáticamente cuando se utiliza este tipo de coincidencia.<br><br>En este formato de emparejamiento, las victorias y las derrotas afectarán tu clasificación.<br><br>También puedes ganar puntos de arena y monedas de batalla."
+RuleCaption,1,MsgWnd_StartMatchingText,"El emparejamiento ya ha comenzado,<br>pero ¿te gustaría unirte a una nueva partida?"
+RuleCaption,1,MsgWnd_CancelMatchingText,¿Quieres cancelar el emparejamiento para el tipo de coincidencia [$(0)]?
+RuleCaption,1,RuleInfo_RuleName,Nombre de la regla de batalla
+RuleCaption,1,RuleInfo_WinTerms,Condiciones de victoria
+RuleCaption,1,RuleInfo_BattleForm,Formato de batalla
+RuleCaption,1,RuleInfo_BattleNum,Número de participantes
+RuleCaption,1,RuleInfo_BattleTime,Tiempo de batalla
+RuleCaption,1,RuleInfo_BattleStage,Etapa de batalla
+RuleCaption,1,RuleInfo_JoinTerms,Condiciones para unirse
+RuleCaption,1,RuleInfo_Bringing,equipaje de mano
+RuleCaption,1,RuleInfo_RuleDesc,Descripción de la regla
+RuleCaption,1,RuleInfo_BattleTimeTag,Tiempo
+RuleCaption,1,RuleInfo_BattleStageTag,Ubicación
+RuleCaption,1,RuleInfo_RuleBasicInfoVita,Información básica de la regla
+RuleCaption,1,RuleInfo_RuleDescVita,Descripción de la regla
+RuleCaption,1,MsgWnd_Yes,Sí
 RuleCaption,1,MsgWnd_No,No
-RuleCaption,1,LineMsg_MatchingStart,"Matchmaking for match type [$(0)] has begun.<br><br>Once matchmaking is complete, the game will automatically start.<br>Please wait a moment."
+RuleCaption,1,LineMsg_MatchingStart,"El emparejamiento para el tipo de coincidencia [$(0)] ha comenzado.<br><br>Una vez que se complete el emparejamiento, el juego comenzará automáticamente.<br>Espere un momento."
 RuleCaption,1,MenuRuleSelect_Item,$(0)
-RuleCaption,1,MenuRuleSelect_StartMatching,Join Match
-RuleCaption,1,MenuRuleSelect_Return,Back
-RuleCaption,1,colon,:
+RuleCaption,1,MenuRuleSelect_StartMatching,Unirse al partido
+RuleCaption,1,MenuRuleSelect_Return,Atrás
+RuleCaption,1,colon,
 RuleCaption,1,password_request,Require Same Password
-RuleCaption,1,password_request_ok,OK?
-RuleCaption,1,team_select,Assigned Team
-RuleCaption,1,red_team,Red Team
-RuleCaption,1,Crystal,Emblem Scramble
-RuleCaption,1,Crystal_Dbg1,Emblem Scramble (Forest)
-RuleCaption,1,Crystal_Dbg2,Emblem Scramble (Volcano)
-RuleCaption,1,Crystal_Dbg3,Emblem Scramble (Tokyo)
-RuleCaption,1,Crystal_AGP,ARKS BT 2017 Preliminaries
-RuleCaption,1,Crystal_4vs4A,4 vs. 4 (VR Arena - Forest)
-RuleCaption,1,Crystal_4vs4B,4 vs. 4 (VR Arena - Volcano)
-RuleCaption,1,Crystal_4vs4C,4 vs. 4 (VR Arena - Tokyo)
-RuleCaption,1,Crystal_Dbg4,Emblem Scramble (Forest - Rain)
-RuleCaption,1,Crystal_Dbg5,Emblem Scramble (Volcano - Night)
-RuleCaption,1,Crystal_Abt2019a,ARKS BT 2019 Preliminaries
-RuleCaption,1,Crystal_Abt2019b,ARKS BT 2019 Semifinals
-RuleCaption,1,Crystal_Abt2019c,ARKS BT 2019 Finals
+RuleCaption,1,password_request_ok,¿DE ACUERDO?
+RuleCaption,1,team_select,Equipo asignado
+RuleCaption,1,red_team,equipo rojo
+RuleCaption,1,Crystal,Lucha de emblemas
+RuleCaption,1,Crystal_Dbg1,Lucha de emblemas (bosque)
+RuleCaption,1,Crystal_Dbg2,Lucha de emblemas (volcán)
+RuleCaption,1,Crystal_Dbg3,Lucha de emblemas (Tokio)
+RuleCaption,1,Crystal_AGP,ARKS BT 2017 Preliminares
+RuleCaption,1,Crystal_4vs4A,4 contra 4 (VR Arena - Bosque)
+RuleCaption,1,Crystal_4vs4B,4 contra 4 (VR Arena - Volcán)
+RuleCaption,1,Crystal_4vs4C,4 contra 4 (VR Arena - Tokio)
+RuleCaption,1,Crystal_Dbg4,Emblem Scramble (Bosque - Lluvia)
+RuleCaption,1,Crystal_Dbg5,Emblem Scramble (Volcán - Noche)
+RuleCaption,1,Crystal_Abt2019a,ARKS BT 2019 Preliminares
+RuleCaption,1,Crystal_Abt2019b,Semifinales ARKS BT 2019
+RuleCaption,1,Crystal_Abt2019c,Finales ARKS BT 2019
 RuleText,0,MatchingCounterTitle,バトルカウンター
 RuleText,0,MenuSelectMatching_Title,マッチングタイプの選択
 RuleText,0,MenuRuleSelect_Title,対戦ルール選択
@@ -748,73 +748,73 @@ RuleText,0,Crystal_Dbg5,<c ffff00>【対戦ルール：エンブレム争奪戦�
 RuleText,0,Crystal_Abt2019a,<c ffff00>【対戦ルール：アークスＢＴ２０１９予選】<c><br><br>アークスＢＴ２０１９予選で<br>使用されるルールです。<br>対戦ステージは「ＶＲアリーナ（森林：雨）」です。<br>従来の「エンブレム争奪戦」と同じく、<br>「エンブレムポイント」を、より多く集めた<br>ユニオン（グループ）が勝利となります。<br>【注意事項】<br>アークスＢＴへのエントリー方法や<br>レギュレーションに関しては<br>プレイヤーズサイトをご覧ください。
 RuleText,0,Crystal_Abt2019b,<c ffff00>【対戦ルール：アークスＢＴ２０１９準決勝】<c><br><br>アークスＢＴ２０１９準決勝で<br>使用されるルールです。<br>対戦ステージは「ＶＲアリーナ（東京）」です。<br>従来の「エンブレム争奪戦」と同じく、<br>「エンブレムポイント」を、より多く集めた<br>ユニオン（グループ）が勝利となります。<br>【注意事項】<br>アークスＢＴへのエントリー方法や<br>レギュレーションに関しては<br>プレイヤーズサイトをご覧ください。
 RuleText,0,Crystal_Abt2019c,<c ffff00>【対戦ルール：アークスＢＴ２０１９決勝】<c><br><br>アークスＢＴ２０１９決勝で<br>使用されるルールです。<br>対戦ステージは「ＶＲアリーナ（火山：夜）」です。<br>従来の「エンブレム争奪戦」と同じく、<br>「エンブレムポイント」を、より多く集めた<br>ユニオン（グループ）が勝利となります。<br>【注意事項】<br>アークスＢＴへのエントリー方法や<br>レギュレーションに関しては<br>プレイヤーズサイトをご覧ください。
-RuleText,1,MatchingCounterTitle,BATTLE COUNTER
-RuleText,1,MenuSelectMatching_Title,SELECT MATCH TYPE
-RuleText,1,MenuRuleSelect_Title,SELECT BATTLE RULES
-RuleText,1,RuleInfoTitle,BATTLE RULE INFORMATION
-RuleText,1,MsgWnd_StartMatchingTitle,JOIN MATCH
+RuleText,1,MatchingCounterTitle,CONTADOR DE BATALLA
+RuleText,1,MenuSelectMatching_Title,SELECCIONAR TIPO DE PARTIDO
+RuleText,1,MenuRuleSelect_Title,SELECCIONAR REGLAS DE BATALLA
+RuleText,1,RuleInfoTitle,INFORMACIÓN DE LAS REGLAS DE BATALLA
+RuleText,1,MsgWnd_StartMatchingTitle,ÚNETE AL PARTIDO
 RuleText,1,HelpMenuTop,<c f0df60>Start and/or cancel matchmaking.<c>
-RuleText,1,HelpMatchingSelect,<c f0df60>Select the Match Type.<c>
-RuleText,1,HelpRuleSelect,<c f0df60>Select the Battle Rules.<c>
-RuleText,1,HelpRuleSelectVita,<c f0df60>Select the Battle Rules.<c><red>You can check the details of the Battle Arena with the　<c><pict Sign_SQUARE><red>　Button.<c>
-RuleText,1,MenuTop_Title,BATTLE COUNTER
-RuleText,1,MenuTop_SelectMatching,Select Match Type
-RuleText,1,MenuTop_RankMatch,Ranked Match
-RuleText,1,MenuTop_PwMatch,Password Match
+RuleText,1,HelpMatchingSelect,<c f0df60>Seleccione el tipo de coincidencia.<c>
+RuleText,1,HelpRuleSelect,<c f0df60>Selecciona las reglas de batalla.<c>
+RuleText,1,HelpRuleSelectVita,<c f0df60>Selecciona las reglas de batalla.<c><red>Puedes verificar los detalles de Battle Arena con el botón　<c><pict Sign_SQUARE><red>　.<c>
+RuleText,1,MenuTop_Title,CONTADOR DE BATALLA
+RuleText,1,MenuTop_SelectMatching,Seleccionar tipo de coincidencia
+RuleText,1,MenuTop_RankMatch,Partida igualada
+RuleText,1,MenuTop_PwMatch,Coincidencia de contraseña
 RuleText,1,MenuTop_CancelMatching,Cancel Matchmaking
-RuleText,1,MenuTop_BattleArenaHelp,Ask about the Battle Arena
-RuleText,1,MenuTop_Leave,Leave Battle Counter
-RuleText,1,MenuSelectMatching_Rank,Ranked Match
-RuleText,1,MenuTutorial_BattleArena,The Battle Arena
-RuleText,1,MenuTutorial_Matching,Joining a Match
-RuleText,1,MenuTutorial_ExchangeShop,The Exchange Shop
-RuleText,1,MenuTutorial_Ranking,Arena Rankings
-RuleText,1,MenuSelectMatching_Leave,Back
-RuleText,1,MenuTop_RankMatch_Info,Unused Text<br><br>
-RuleText,1,MenuTop_PwMatch_Info,"You will be matched with players using the same password <br>you entered. You cannot receive Battle Coins or Reward Items <br>with this matchmaking. In addition, your Arena Points will <br>not vary whether you win or lose."
-RuleText,1,MenuTop_CancelMatching_Info,Cancel your entry if you've entered into a match.
-RuleText,1,MenuTop_BattleArenaHelp_Info,Hear about the content available in the Battle Arena.
-RuleText,1,MenuTop_Leave_Info,Leave the Battle Arena Counter.
-RuleText,1,MenuSelectMatching_RankInfo,Unused Text
-RuleText,1,MsgWnd_StartMatchingText,"Matchmaking has already begun, <br>would you like to join a new match?"
-RuleText,1,MsgWnd_CancelMatchingText,Would you like to cancel matchmaking for Match Type [$(0)]?
-RuleText,1,RuleInfo_RuleName,Battle Rule Name
-RuleText,1,RuleInfo_WinTerms,Win Conditions
-RuleText,1,RuleInfo_BattleForm,Battle Format
-RuleText,1,RuleInfo_BattleNum,Number of Participants
-RuleText,1,RuleInfo_BattleTime,Battle Time
-RuleText,1,RuleInfo_BattleStage,Battle Stage
-RuleText,1,RuleInfo_JoinTerms,Join Conditions
-RuleText,1,RuleInfo_Bringing,Carry-ins
-RuleText,1,RuleInfo_RuleDesc,Rule Description
-RuleText,1,RuleInfo_BattleTimeTag,Time
-RuleText,1,RuleInfo_BattleStageTag,Location
-RuleText,1,RuleInfo_RuleBasicInfoVita,Basic Rule Information
-RuleText,1,RuleInfo_RuleDescVita,Rule Description
-RuleText,1,MsgWnd_Yes,Yes
+RuleText,1,MenuTop_BattleArenaHelp,Pregunta por el campo de batalla
+RuleText,1,MenuTop_Leave,Salir del contador de batalla
+RuleText,1,MenuSelectMatching_Rank,Partida igualada
+RuleText,1,MenuTutorial_BattleArena,La arena de batalla
+RuleText,1,MenuTutorial_Matching,Unirse a una partida
+RuleText,1,MenuTutorial_ExchangeShop,La tienda de cambio
+RuleText,1,MenuTutorial_Ranking,Clasificaciones de arena
+RuleText,1,MenuSelectMatching_Leave,Atrás
+RuleText,1,MenuTop_RankMatch_Info,Texto no utilizado<br><br>
+RuleText,1,MenuTop_PwMatch_Info,"Se te emparejará con jugadores que usen la misma contraseña.<br>entraste. No puedes recibir monedas de batalla ni artículos de recompensa.<br>con este emparejamiento. Además, tus puntos Arena<br>No varía si se gana o se pierde."
+RuleText,1,MenuTop_CancelMatching_Info,Cancela tu entrada si has participado en un partido.
+RuleText,1,MenuTop_BattleArenaHelp_Info,Escuche sobre el contenido disponible en Battle Arena.
+RuleText,1,MenuTop_Leave_Info,Sal del mostrador de Battle Arena.
+RuleText,1,MenuSelectMatching_RankInfo,Texto no utilizado
+RuleText,1,MsgWnd_StartMatchingText,"El emparejamiento ya ha comenzado,<br>¿Te gustaría unirte a una nueva partida?"
+RuleText,1,MsgWnd_CancelMatchingText,¿Le gustaría cancelar el emparejamiento para el tipo de coincidencia [$(0)]?
+RuleText,1,RuleInfo_RuleName,Nombre de la regla de batalla
+RuleText,1,RuleInfo_WinTerms,Condiciones de victoria
+RuleText,1,RuleInfo_BattleForm,Formato de batalla
+RuleText,1,RuleInfo_BattleNum,Número de participantes
+RuleText,1,RuleInfo_BattleTime,Tiempo de batalla
+RuleText,1,RuleInfo_BattleStage,Etapa de batalla
+RuleText,1,RuleInfo_JoinTerms,Condiciones de adhesión
+RuleText,1,RuleInfo_Bringing,equipaje de mano
+RuleText,1,RuleInfo_RuleDesc,Descripción de la regla
+RuleText,1,RuleInfo_BattleTimeTag,Tiempo
+RuleText,1,RuleInfo_BattleStageTag,Ubicación
+RuleText,1,RuleInfo_RuleBasicInfoVita,Información básica de la regla
+RuleText,1,RuleInfo_RuleDescVita,Descripción de la regla
+RuleText,1,MsgWnd_Yes,Sí
 RuleText,1,MsgWnd_No,No
-RuleText,1,LineMsg_MatchingStart,"Matchmaking for Match Type [$(0)] has started.<br><br>Once matchmaking is complete, the game will automatically start.<br>Please wait a moment."
+RuleText,1,LineMsg_MatchingStart,"El emparejamiento para el tipo de coincidencia [$(0)] ha comenzado.<br><br>Una vez que se complete el emparejamiento, el juego comenzará automáticamente.<br>Espere un momento."
 RuleText,1,MenuRuleSelect_Item,$(0)
-RuleText,1,MenuRuleSelect_StartMatching,Join Match
-RuleText,1,MenuRuleSelect_Return,Back
-RuleText,1,colon,:
+RuleText,1,MenuRuleSelect_StartMatching,Unirse al partido
+RuleText,1,MenuRuleSelect_Return,Atrás
+RuleText,1,colon,
 RuleText,1,password_request,Require Same Password
-RuleText,1,password_request_ok,OK?
-RuleText,1,team_select,Assigned Team
-RuleText,1,red_team,Red Team
-RuleText,1,Crystal,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by defeating <br>battle opponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to pull<br>off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_Dbg1,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by <br>defeating battle opponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to <br>pull off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_Dbg2,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by <br>defeating battleopponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to <br>pull off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_Dbg3,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by <br>defeating battle opponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to pull<br>off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_AGP,<c ffff00>[Battle Rules: ARKS BT 2017 Preliminaries]<c><br><br>Here are the official rules for the ARKS BT 2017<br>Preliminaries. Like previous Emblem Scramble<br>competitions the team that collects the most Emblem<br>Points wins.<br>[Note]<br>Please refer to the Player's Site for information on<br>regulations and how to enter ARKS BT.
-RuleText,1,Crystal_4vs4A,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Forest]<c><br><br>A 4 vs. 4 battle held in VR Arena - Forest.<br><br>The rules are the same as the standard Emblem <br>Scramble. The team that collects the most <br>Emblem Points wins.<br><br>There are five types of weapons you can use: <br>swords, rifles, rods, jet boots, and bows."
-RuleText,1,Crystal_4vs4B,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Volcano]<c><br><br>A 4 vs. 4 battle held in VR Arena - Volcano.<br><br>The rules are the same as the standard Emblem <br>Scramble. The team that collects the most <br>Emblem Points wins.<br><br>There are five types of weapons you can use: <br>swords, rifles, rods, jet boots, and bows."
-RuleText,1,Crystal_4vs4C,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Tokyo]<c><br><br>A 4 vs. 4 battle held in VR Arena - Tokyo.<br><br>The rules are the same as the standard Emblem <br>Scramble. The team that collects the most <br>Emblem Points wins.<br><br>There are five types of weapons you can use: <br>swords, rifles, rods, jet boots, and bows."
-RuleText,1,Crystal_Dbg4,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by <br>defeating battle opponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to pull<br>off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_Dbg5,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>The team that collects the most Emblem Points wins.<br><br>You can acquire Emblems Points by picking up the <br>Emblems that appear in the Battle area or by <br>defeating battle opponents to take some of theirs.<br><br>Also, on rare occassions you might get a chance to pull<br>off a comeback. Fight to the end, no matter how<br>difficult it gets. When the going gets tough, the tough<br>get going!"
-RuleText,1,Crystal_Abt2019a,<c ffff00>[Battle Rules: ARKS BT 2019 Preliminaries]<c><br><br>Here are the official rules for the ARKS BT 2019<br>Preliminaries. The competition will take place in the VR <br>Arena - Forest (Rain). Like previous Emblem Scramble<br>competitions the team that collects the most Emblem<br>Points wins.<br>[Notes]<br>Please refer to the Player's Site for information on<br>regulations and how to enter ARKS BT.
-RuleText,1,Crystal_Abt2019b,<c ffff00>[Battle Rules: ARKS BT 2019 Semifinals]<c><br><br>Here are the official rules for the ARKS BT 2019<br>Semifinals. The competition will take place in the VR<br>Arena - Tokyo. Like previous Emblem Scramble<br>competitions the team that collects the most Emblem<br>Points wins.<br>[Notes]<br>Please refer to the Player's Site for information on<br>regulations and how to enter ARKS BT.
-RuleText,1,Crystal_Abt2019c,<c ffff00>[Battle Rules: ARKS BT 2019 Championship]<c><br><br>Here are the official rules for the ARKS BT 2019<br>Championship. The competition will take place in the VR<br>Arena - Volcano (Night). Like previous Emblem Scramble<br>competitions the team that collects the most Emblem<br>Points wins.<br>[Notes]<br>Please refer to the Player's Site for information on<br>regulations and how to enter ARKS BT.
+RuleText,1,password_request_ok,¿DE ACUERDO?
+RuleText,1,team_select,Equipo asignado
+RuleText,1,red_team,equipo rojo
+RuleText,1,Crystal,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o al derrotar<br>battle opponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de sacar<br>de un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_Dbg1,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o por<br>defeating battle opponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de<br>lograr un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_Dbg2,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o por<br>defeating battleopponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de<br>lograr un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_Dbg3,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o por<br>defeating battle opponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de sacar<br>de un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_AGP,<c ffff00>[Battle Rules: ARKS BT 2017 Preliminaries]<c><br><br>Aquí están las reglas oficiales del ARKS BT 2017<br>Preliminares. Como el anterior Emblem Scramble<br>Competirá el equipo que recolecte más emblemas.<br>Los puntos ganan.<br>[Note]<br>Consulte el sitio del jugador para obtener información sobre<br>regulaciones y cómo ingresar a ARKS BT.
+RuleText,1,Crystal_4vs4A,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Bosque]<c><br><br>Una batalla de 4 contra 4 celebrada en VR Arena - Forest.<br><br>Las reglas son las mismas que las del emblema estándar.<br>Lucha. El equipo que más recauda<br>Los puntos emblema ganan.<br><br>Hay cinco tipos de armas que puedes usar:<br>espadas, rifles, varas, botas propulsoras y arcos."
+RuleText,1,Crystal_4vs4B,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Volcán]<c><br><br>Una batalla 4 contra 4 celebrada en VR Arena - Volcano.<br><br>Las reglas son las mismas que las del emblema estándar.<br>Lucha. El equipo que más recauda<br>Los puntos emblema ganan.<br><br>Hay cinco tipos de armas que puedes usar:<br>espadas, rifles, varas, botas propulsoras y arcos."
+RuleText,1,Crystal_4vs4C,"<c ffff00>[Battle Rules: [4 vs. 4] VR Arena - Tokio]<c><br><br>Una batalla 4 contra 4 celebrada en VR Arena - Tokio.<br><br>Las reglas son las mismas que las del emblema estándar.<br>Lucha. El equipo que más recauda<br>Los puntos emblema ganan.<br><br>Hay cinco tipos de armas que puedes usar:<br>espadas, rifles, varas, botas propulsoras y arcos."
+RuleText,1,Crystal_Dbg4,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o por<br>defeating battle opponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de sacar<br>de un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_Dbg5,"<c ffff00>[Battle Rules: Emblem Scramble]<c><br><br>Gana el equipo que acumule más puntos Emblem.<br><br>Puedes adquirir puntos Emblems recogiendo el<br>Emblemas que aparecen en el área de Batalla o por<br>defeating battle opponents to take some of theirs.<br><br>Además, en raras ocasiones es posible que tengas la oportunidad de sacar<br>de un regreso. Lucha hasta el final, no importa cómo<br>difícil se pone. Cuando las cosas se ponen difíciles, los difíciles<br>¡ponerse en marcha!"
+RuleText,1,Crystal_Abt2019a,<c ffff00>[Battle Rules: ARKS BT 2019 Preliminaries]<c><br><br>Aquí están las reglas oficiales del ARKS BT 2019<br>Preliminares. La competencia se llevará a cabo en la realidad virtual.<br>Arena - Bosque (Lluvia). Como el anterior Emblem Scramble<br>Competirá el equipo que recolecte más emblemas.<br>Los puntos ganan.<br>[Notes]<br>Consulte el sitio del jugador para obtener información sobre<br>regulaciones y cómo ingresar a ARKS BT.
+RuleText,1,Crystal_Abt2019b,<c ffff00>[Battle Rules: ARKS BT 2019 Semifinals]<c><br><br>Aquí están las reglas oficiales del ARKS BT 2019<br>Semifinales. La competencia se llevará a cabo en la realidad virtual.<br>Arena - Tokio. Como el anterior Emblem Scramble<br>Competirá el equipo que recolecte más emblemas.<br>Los puntos ganan.<br>[Notes]<br>Consulte el sitio del jugador para obtener información sobre<br>regulaciones y cómo ingresar a ARKS BT.
+RuleText,1,Crystal_Abt2019c,<c ffff00>[Battle Rules: ARKS BT 2019 Championship]<c><br><br>Aquí están las reglas oficiales del ARKS BT 2019<br>Campeonato. La competencia se llevará a cabo en la realidad virtual.<br>Arena - Volcán (Noche). Como el anterior Emblem Scramble<br>Competirá el equipo que recolecte más emblemas.<br>Los puntos ganan.<br>[Notes]<br>Consulte el sitio del jugador para obtener información sobre<br>regulaciones y cómo ingresar a ARKS BT.
 RuleGoalText,0,MatchingCounterTitle,バトルカウンター
 RuleGoalText,0,MenuSelectMatching_Title,マッチングタイプの選択
 RuleGoalText,0,MenuRuleSelect_Title,対戦ルール選択
@@ -882,72 +882,72 @@ RuleGoalText,0,Crystal_Dbg5,相手ユニオンより多くのエンブレムポ�
 RuleGoalText,0,Crystal_Abt2019a,相手ユニオンより多くのエンブレムポイントを集めろ！
 RuleGoalText,0,Crystal_Abt2019b,相手ユニオンより多くのエンブレムポイントを集めろ！
 RuleGoalText,0,Crystal_Abt2019c,相手ユニオンより多くのエンブレムポイントを集めろ！
-RuleGoalText,1,MatchingCounterTitle,BATTLE COUNTER
-RuleGoalText,1,MenuSelectMatching_Title,SELECT MATCH TYPE
-RuleGoalText,1,MenuRuleSelect_Title,SELECT BATTLE RULES
-RuleGoalText,1,RuleInfoTitle,BATTLE RULE INFORMATION
-RuleGoalText,1,MsgWnd_StartMatchingTitle,JOIN MATCH
+RuleGoalText,1,MatchingCounterTitle,CONTADOR DE BATALLA
+RuleGoalText,1,MenuSelectMatching_Title,SELECCIONAR TIPO DE PARTIDO
+RuleGoalText,1,MenuRuleSelect_Title,SELECCIONAR REGLAS DE BATALLA
+RuleGoalText,1,RuleInfoTitle,INFORMACIÓN DE LAS REGLAS DE BATALLA
+RuleGoalText,1,MsgWnd_StartMatchingTitle,ÚNETE AL PARTIDO
 RuleGoalText,1,HelpMenuTop,<c f0df60>Start and/or cancel matchmaking.<c>
-RuleGoalText,1,HelpMatchingSelect,<c f0df60>Select the Match Type.<c>
-RuleGoalText,1,HelpRuleSelect,<c f0df60>Select the Battle Rules.<c>
-RuleGoalText,1,HelpRuleSelectVita,<c f0df60>Select the Battle Rules.<c><red>You can check the details of the Battle Arena with the　<c><pict Sign_SQUARE><red>　button.<c>
-RuleGoalText,1,MenuTop_Title,BATTLE COUNTER
-RuleGoalText,1,MenuTop_SelectMatching,Select Match Type
-RuleGoalText,1,MenuTop_RankMatch,Ranked Match
-RuleGoalText,1,MenuTop_PwMatch,Password Match
+RuleGoalText,1,HelpMatchingSelect,<c f0df60>Seleccione el tipo de coincidencia.<c>
+RuleGoalText,1,HelpRuleSelect,<c f0df60>Selecciona las reglas de batalla.<c>
+RuleGoalText,1,HelpRuleSelectVita,<c f0df60>Selecciona las reglas de batalla.<c><red>Puedes verificar los detalles de Battle Arena con el botón　<c><pict Sign_SQUARE><red>　.<c>
+RuleGoalText,1,MenuTop_Title,CONTADOR DE BATALLA
+RuleGoalText,1,MenuTop_SelectMatching,Seleccionar tipo de coincidencia
+RuleGoalText,1,MenuTop_RankMatch,Partida igualada
+RuleGoalText,1,MenuTop_PwMatch,Coincidencia de contraseña
 RuleGoalText,1,MenuTop_CancelMatching,Cancel Matchmaking
-RuleGoalText,1,MenuTop_BattleArenaHelp,Ask about the Battle Arena
-RuleGoalText,1,MenuTop_Leave,Leave Battle Counter
-RuleGoalText,1,MenuSelectMatching_Rank,Ranked Match
-RuleGoalText,1,MenuTutorial_BattleArena,The Battle Arena
-RuleGoalText,1,MenuTutorial_Matching,Joining a Match
-RuleGoalText,1,MenuTutorial_ExchangeShop,The Exchange Shop
-RuleGoalText,1,MenuTutorial_Ranking,Arena Rankings
-RuleGoalText,1,MenuSelectMatching_Leave,Back
-RuleGoalText,1,MenuTop_RankMatch_Info,Unused Text
-RuleGoalText,1,MenuTop_PwMatch_Info,Unused Text
-RuleGoalText,1,MenuTop_CancelMatching_Info,Cancel your entry if you've already entered into a match.
-RuleGoalText,1,MenuTop_BattleArenaHelp_Info,Hear about the content available in the Battle Arena.
-RuleGoalText,1,MenuTop_Leave_Info,Leave the Battle Arena Counter.
-RuleGoalText,1,MenuSelectMatching_RankInfo,Your battle opponents and alliance will be selected automatically<br>when using this Match Type.<br><br>In this matching format wins and losses will affect your ranking.<br><br>You can also earn Arena Points and Battle Coins.
-RuleGoalText,1,MsgWnd_StartMatchingText,"Matchmaking has already begun, <br>would you like to join a new match?"
-RuleGoalText,1,MsgWnd_CancelMatchingText,Would you like to cancel matchmaking for $(0)[$(1)]?
-RuleGoalText,1,RuleInfo_RuleName,Battle Rule Name
-RuleGoalText,1,RuleInfo_WinTerms,Win Conditions
-RuleGoalText,1,RuleInfo_BattleForm,Battle Format
-RuleGoalText,1,RuleInfo_BattleNum,Number of Participants
-RuleGoalText,1,RuleInfo_BattleTime,Battle Time
-RuleGoalText,1,RuleInfo_BattleStage,Battle Stage
-RuleGoalText,1,RuleInfo_JoinTerms,Join Conditions
-RuleGoalText,1,RuleInfo_Bringing,Carry-ins
-RuleGoalText,1,RuleInfo_RuleDesc,Rule Description
-RuleGoalText,1,RuleInfo_BattleTimeTag,Time
-RuleGoalText,1,RuleInfo_BattleStageTag,Location
-RuleGoalText,1,RuleInfo_RuleBasicInfoVita,Basic Rule Information
-RuleGoalText,1,RuleInfo_RuleDescVita,Rule Description
-RuleGoalText,1,MsgWnd_Yes,Yes
+RuleGoalText,1,MenuTop_BattleArenaHelp,Pregunta por el campo de batalla
+RuleGoalText,1,MenuTop_Leave,Salir del contador de batalla
+RuleGoalText,1,MenuSelectMatching_Rank,Partida igualada
+RuleGoalText,1,MenuTutorial_BattleArena,La arena de batalla
+RuleGoalText,1,MenuTutorial_Matching,Unirse a una partida
+RuleGoalText,1,MenuTutorial_ExchangeShop,La tienda de cambio
+RuleGoalText,1,MenuTutorial_Ranking,Clasificaciones de arena
+RuleGoalText,1,MenuSelectMatching_Leave,Atrás
+RuleGoalText,1,MenuTop_RankMatch_Info,Texto no utilizado
+RuleGoalText,1,MenuTop_PwMatch_Info,Texto no utilizado
+RuleGoalText,1,MenuTop_CancelMatching_Info,Cancela tu entrada si ya has participado en una partida.
+RuleGoalText,1,MenuTop_BattleArenaHelp_Info,Escuche sobre el contenido disponible en Battle Arena.
+RuleGoalText,1,MenuTop_Leave_Info,Sal del mostrador de Battle Arena.
+RuleGoalText,1,MenuSelectMatching_RankInfo,"Tus oponentes de batalla y tu alianza se seleccionarán automáticamente.<br>al utilizar este tipo de coincidencia.<br><br>En este formato de emparejamiento, las victorias y las derrotas afectarán tu clasificación.<br><br>También puedes ganar puntos de arena y monedas de batalla."
+RuleGoalText,1,MsgWnd_StartMatchingText,"El emparejamiento ya ha comenzado,<br>¿Te gustaría unirte a una nueva partida?"
+RuleGoalText,1,MsgWnd_CancelMatchingText,¿Te gustaría cancelar el emparejamiento de $(0)[$(1)]?
+RuleGoalText,1,RuleInfo_RuleName,Nombre de la regla de batalla
+RuleGoalText,1,RuleInfo_WinTerms,Condiciones de victoria
+RuleGoalText,1,RuleInfo_BattleForm,Formato de batalla
+RuleGoalText,1,RuleInfo_BattleNum,Número de participantes
+RuleGoalText,1,RuleInfo_BattleTime,Tiempo de batalla
+RuleGoalText,1,RuleInfo_BattleStage,Etapa de batalla
+RuleGoalText,1,RuleInfo_JoinTerms,Condiciones de adhesión
+RuleGoalText,1,RuleInfo_Bringing,equipaje de mano
+RuleGoalText,1,RuleInfo_RuleDesc,Descripción de la regla
+RuleGoalText,1,RuleInfo_BattleTimeTag,Tiempo
+RuleGoalText,1,RuleInfo_BattleStageTag,Ubicación
+RuleGoalText,1,RuleInfo_RuleBasicInfoVita,Información básica de la regla
+RuleGoalText,1,RuleInfo_RuleDescVita,Descripción de la regla
+RuleGoalText,1,MsgWnd_Yes,Sí
 RuleGoalText,1,MsgWnd_No,No
-RuleGoalText,1,LineMsg_MatchingStart,"Matchmaking for $(0)[$(1)] has started.<br><br>Once matchmaking is complete, the game will automatically start.<br>Please wait a moment."
+RuleGoalText,1,LineMsg_MatchingStart,"El emparejamiento para $(0)[$(1)] ha comenzado.<br><br>Una vez que se complete el emparejamiento, el juego comenzará automáticamente.<br>Espere un momento."
 RuleGoalText,1,MenuRuleSelect_Item,$(0)
-RuleGoalText,1,MenuRuleSelect_StartMatching,Join Match
-RuleGoalText,1,MenuRuleSelect_Return,Back
-RuleGoalText,1,colon,:
+RuleGoalText,1,MenuRuleSelect_StartMatching,Unirse al partido
+RuleGoalText,1,MenuRuleSelect_Return,Atrás
+RuleGoalText,1,colon,
 RuleGoalText,1,password_request,Require Same Password
-RuleGoalText,1,password_request_ok,OK?
-RuleGoalText,1,team_select,Assigned Team
-RuleGoalText,1,red_team,Red　Team
-RuleGoalText,1,Crystal,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Dbg1,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Dbg2,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Dbg3,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_AGP,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_4vs4A,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_4vs4B,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_4vs4C,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Dbg4,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Dbg5,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Abt2019a,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Abt2019b,Collect more Emblem Points than the opposing team!
-RuleGoalText,1,Crystal_Abt2019c,Collect more Emblem Points than the opposing team!
+RuleGoalText,1,password_request_ok,¿DE ACUERDO?
+RuleGoalText,1,team_select,Equipo asignado
+RuleGoalText,1,red_team,Equipo Rojo
+RuleGoalText,1,Crystal,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Dbg1,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Dbg2,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Dbg3,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_AGP,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_4vs4A,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_4vs4B,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_4vs4C,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Dbg4,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Dbg5,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Abt2019a,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Abt2019b,¡Consigue más puntos emblema que el equipo contrario!
+RuleGoalText,1,Crystal_Abt2019c,¡Consigue más puntos emblema que el equipo contrario!
 SelectedForm,0,SelectedForm_Title,共通シンボルアートリスト
-SelectedForm,1,SelectedForm_Title,COMMON SYMBOL ART LIST
+SelectedForm,1,SelectedForm_Title,LISTA DE ARTE DE SÍMBOLOS COMUNES
