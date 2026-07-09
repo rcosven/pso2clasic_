@@ -14,21 +14,21 @@ BaseCustom,0,ChangeSet_Details_List_Item_Other,・・・その他$(0)個
 BaseCustom,0,CustomFinTitle,拠点カスタム終了確認
 BaseCustom,0,CustomFinMsg,拠点カスタムを終了し、他プレイヤーと<br>合流しますか？
 BaseCustom,0,item_return,戻る
-BaseCustom,1,HelpMsg_TopMenu,-
-BaseCustom,1,HelpMsg_ChangeSet,-
+BaseCustom,1,HelpMsg_TopMenu,
+BaseCustom,1,HelpMsg_ChangeSet,
 BaseCustom,1,Title_FullSizeWindow,TERMINAL DE LA BASE DE DEFENSA
-BaseCustom,1,Title_TopMenu,Personalizacion Basica
-BaseCustom,1,TopMenuItem_ChangeSet,Cambiar conjunto de armas 
-BaseCustom,1,TopMenuItem_Chat,tus usos restantes al||TAG_0||maximo de ||TAG_1|| regresando al Gateway ship.||TAG_2||||TAG_3||(Actualmente tienes: ||TAG_4|| usos)
-BaseCustom,1,TopMenuItem_Fin,Salir de la personalizacion base
-BaseCustom,1,Title_ChangeSet,Cambiar conjunto de armas 
+BaseCustom,1,Title_TopMenu,PERSONALIZACIÓN BÁSICA
+BaseCustom,1,TopMenuItem_ChangeSet,Cambiar conjunto de armas
+BaseCustom,1,TopMenuItem_Chat,Charlar
+BaseCustom,1,TopMenuItem_Fin,Salir de la personalización base
+BaseCustom,1,Title_ChangeSet,Cambiar conjunto de armas
 BaseCustom,1,ChangeItem_Selected,$(0) (Seleccionado)
-BaseCustom,1,ChangeSet_SuccessMsg,<c f0df60>You set $(0)<c>.<br>You can change your Weapons Set as many <br>times as you want before the battle begins.
+BaseCustom,1,ChangeSet_SuccessMsg,<c f0df60>Estableciste $(0)<c>.<br>Puedes cambiar tu conjunto de armas tantas veces como quieras.<br>veces como quieras antes de que comience la batalla.
 BaseCustom,1,ChangeSet_DetailsTitle,Detalles del conjunto de armas
-BaseCustom,1,ChangeSet_Details_List_Item_Other,...otros $(0).
-BaseCustom,1,CustomFinTitle,Confirmar salida de la personalizacion base
-BaseCustom,1,CustomFinMsg,¿Desea salir de la personalizacion del punto de partida y unirse a otros jugadores?
-BaseCustom,1,item_return,Atras
+BaseCustom,1,ChangeSet_Details_List_Item_Other,...$(0) otros.
+BaseCustom,1,CustomFinTitle,Confirmar salida de la personalización base
+BaseCustom,1,CustomFinMsg,¿Quieres salir de la personalización base?<br>y vincularse con los otros jugadores?
+BaseCustom,1,item_return,Atrás
 Common,0,BaseElection_Message,$(0)の防衛拠点担当に選出されました。
 Common,1,BaseElection_Message,Has sido elegido como coordinador de defensa de la base $(0).
 Country,0,TribeAk,ヴェルン皇国
@@ -36,17 +36,17 @@ Country,0,TribeTe,魔道国クエント
 Country,0,TribeDe,神国エピック
 Country,0,TribeMa,イス＝アルス通商連合国
 Country,1,TribeAk,Imperio Weyland
-Country,1,TribeTe,Cuento Reino Magico
+Country,1,TribeTe,Cuento Reino Mágico
 Country,1,TribeDe,Tierra Divina de Epyk
-Country,1,TribeMa,Federacion de Comercio de Ys ​​Artia
+Country,1,TribeMa,Federación de Comercio de Ys ​​Artia
 Buff,0,TribeAk,敵軍ブースト効果：打撃力10%アップ
 Buff,0,TribeTe,敵軍ブースト効果：法撃力10%アップ
 Buff,0,TribeDe,敵軍ブースト効果：技量20%アップ
 Buff,0,TribeMa,敵軍ブースト効果：防御力10%アップ
-Buff,1,TribeAk,Resultado de la explosion de tropas enemigas: 10 % de aumento del poder cuerpo a cuerpo (ATK)
-Buff,1,TribeTe,Resultado de explosion de tropas enemigas: 10 % de aumento del poder tecnico (TEC)
-Buff,1,TribeDe,Resultado de explosion de tropas enemigas: 20 % de aumento de destreza (DEX)
-Buff,1,TribeMa,Resultado de la explosion de tropas enemigas: 10 % de aumento del poder de defensa (DEF)
+Buff,1,TribeAk,Resultado de la explosión de tropas enemigas: 10 % de aumento del poder cuerpo a cuerpo (ATK)
+Buff,1,TribeTe,Resultado de explosión de tropas enemigas: 10 % de aumento del poder técnico (TEC)
+Buff,1,TribeDe,Resultado de explosión de tropas enemigas: 20 % de aumento de destreza (DEX)
+Buff,1,TribeMa,Resultado de la explosión de tropas enemigas: 10 % de aumento del poder de defensa (DEF)
 BaseTerminal,0,FullsizeFormTitle,$(0)拠点
 BaseTerminal,0,FullsizeFormTitleHelp,<yellow>拠点を支援する様々なアクションを発動させることができます<c>
 BaseTerminal,0,MainFormTitle,$(0)拠点端末
@@ -69,26 +69,26 @@ BaseTerminal,0,MainFormElement1Name,バーストバリア
 BaseTerminal,0,MainFormElement1Info,拠点周辺のエネミーを攻撃し<br>一時的に拠点を守ります。<br><br>$(0)
 BaseTerminal,0,BaseName1,緑
 BaseTerminal,1,FullsizeFormTitle,BASES: $(0)
-BaseTerminal,1,FullsizeFormTitleHelp,<yellow>You can initiate various actions that support the base.<c>
-BaseTerminal,1,MainFormTitle,$(0) Base terminal
-BaseTerminal,1,DecideWindowTitle,MENSAJE DE CONFIRMACION
-BaseTerminal,1,BreakWindowTitle,MENSAJE DE CONFIRMACION
+BaseTerminal,1,FullsizeFormTitleHelp,<yellow>Puedes iniciar varias acciones que apoyen la base.<c>
+BaseTerminal,1,MainFormTitle,$(0) Terminal base
+BaseTerminal,1,DecideWindowTitle,MENSAJE DE CONFIRMACIÓN
+BaseTerminal,1,BreakWindowTitle,MENSAJE DE CONFIRMACIÓN
 BaseTerminal,1,MainFormTagTitle1,Detalles de acceso
-BaseTerminal,1,MainFormTagTitle2,Numero de usos
+BaseTerminal,1,MainFormTagTitle2,Número de usos
 BaseTerminal,1,MainFormTagTitle3,Posibles usos adicionales
 BaseTerminal,1,MainFormCanUseNum,$(0) restantes
 BaseTerminal,1,MainFormMaxRecoveryNum,$(0) veces restantes
 BaseTerminal,1,ElementLv,Nivel $(0)
-BaseTerminal,1,MainFormBack,Atras
-BaseTerminal,1,RecoveryNone,No habra mas usos adicionales debido al aumento de nivel.
-BaseTerminal,1,UseNumRecoverylNum,$(0) adiciones restantes debido al aumento de nivel
-BaseTerminal,1,UseNumRecoveryCrystalLv,"<pict basnet_point><yellow>Uses are added<br>when your level goes up.<c><br><br><pict basnet_point>You have reached Level $(0), so you will receive $(1) additional uses <br>(<pict basnet_point>Current Level: $(2))"
+BaseTerminal,1,MainFormBack,Atrás
+BaseTerminal,1,RecoveryNone,<pict basnet_point><red>No habrá más usos adicionales<br>due to level increase.<c>
+BaseTerminal,1,UseNumRecoverylNum,$(0) additions left due to level increase
+BaseTerminal,1,UseNumRecoveryCrystalLv,"<pict basnet_point><yellow>Se agregan usos<br>cuando tu nivel sube.<c><br><br><pict basnet_point>Has alcanzado el nivel $(0), por lo que recibirás $(1) de usos adicionales<br>(<pict basnet_point>Nivel actual: $(2))"
 BaseTerminal,1,LastElement,$(0)$(1)
-BaseTerminal,1,DecideWindowMessage,¿Esta seguro de iniciar $(0)?
-BaseTerminal,1,BreakWindowMessage,No se puede utilizar el terminal porque la base esta destruida.
+BaseTerminal,1,DecideWindowMessage,Estás a punto de comenzar con $(0).<br>¿Está seguro?
+BaseTerminal,1,BreakWindowMessage,Este terminal no se puede utilizar<br>porque la base está destruida.
 BaseTerminal,1,MainFormElement1Name,Barrera explosiva
-BaseTerminal,1,MainFormElement1Info,Ataca a los enemigos cerca de la base mientras protege temporalmente la base. $(0)
-BaseTerminal,1,BaseName1,verdes
+BaseTerminal,1,MainFormElement1Info,Ataca a enemigos cerca de la base.<br>mientras lo protege temporalmente.<br><br>$(0)
+BaseTerminal,1,BaseName1,Verde
 Condition,0,Condition_Base,$(0)$(1)$(2)$(3)
 Condition,0,Condition_None,なし
 Condition,0,Condition_Info,<br><br>参加メンバーの平均BPによりエネミーが強化
@@ -109,21 +109,21 @@ Condition,0,GradeInfo_Limit,<soft_yellow>戦場のグレード：$(0)+<c>$(1)
 Condition,0,SyncLvInfo,<br><soft_yellow>(自動能力調整：Lv.$(0)相当)<c>
 Condition,1,Condition_Base,$(0)$(1)$(2)$(3)
 Condition,1,Condition_None,Ninguno
-Condition,1,Condition_Info,La fuerza del enemigo se determina por el BP promedio de cada miembro.
-Condition,1,EnemyCondition_Base,Fuerza del enemigo <c> <br> $(0) ||TAG_6||
-Condition,1,EnemyCondition_HP,PD +$(0)%
+Condition,1,Condition_Info,<br><br>La fuerza del enemigo está determinada por el BP promedio de cada miembro.
+Condition,1,EnemyCondition_Base,<br><br><light_red>Enemigo fortalecido<c><br>$(0)
+Condition,1,EnemyCondition_HP,PS +$(0)%
 Condition,1,EnemyCondition_Atk,Ataque +$(0)%
 Condition,1,EnemyCondition_Def,Defensa +$(0)%
 Condition,1,EnemyCondition_Dex,Destreza +$(0)%
-Condition,1,PlayerCondition_Base,Reglas Especiales <c> <br> $(0)
-Condition,1,LiveExperienceUp,Inhibir la recuperacion de HP del aliado
-Condition,1,DKRecoveryEffectDown:N,Inhibir la recuperacion de HP del aliado 10%
-Condition,1,DKRecoveryEffectDown:H,Inhibir la recuperacion de HP del aliado 20%
-Condition,1,DKRecoveryEffectDown:VH,Inhibir la recuperacion de HP del aliado 30%
-Condition,1,DKRecoveryEffectDown:SH,Inhibir la recuperacion de HP del aliado 40%
-Condition,1,DKRecoveryEffectDown:XH,Inhibir la recuperacion de HP del aliado 80%
-Condition,1,GradeInfo,Battlefield Grade: <soft_yellow> $(0)+$(1)
-Condition,1,GradeInfo_Limit,<soft_yellow>(Automatica ajuste de habilidad: Nivel $(0) equivalente)$(0)
+Condition,1,PlayerCondition_Base,<br><br><yellow>Reglas Especiales<c><br>$(0)
+Condition,1,LiveExperienceUp,Inhibir la recuperación de HP del aliado
+Condition,1,DKRecoveryEffectDown:N,Inhibir la recuperación de HP del aliado 10%
+Condition,1,DKRecoveryEffectDown:H,Inhibir la recuperación de HP del aliado 20%
+Condition,1,DKRecoveryEffectDown:VH,Inhibir la recuperación de HP del aliado 30%
+Condition,1,DKRecoveryEffectDown:SH,Inhibir la recuperación de HP del aliado 40%
+Condition,1,DKRecoveryEffectDown:XH,Inhibir la recuperación de HP del aliado 80%
+Condition,1,GradeInfo,<soft_yellow>Grado del campo de batalla: $(0)<c>$(1)
+Condition,1,GradeInfo_Limit,<soft_yellow>Grado del campo de batalla: $(0)+<c>$(1)
 Condition,1,SyncLvInfo,Activara el <br>. ¿Estas seguro?<soft_yellow>$(0) Puedes activar <c> mas ||TAG_4|| veces.
 ObjectWindow,0,AccessWindowTitle,$(0)起動
 ObjectWindow,0,AccessWindowRequestActive,$(1)を起動します。<br>よろしいですか？<br><br>※残り<yellow>$(0)回<c>起動することができます。
@@ -132,8 +132,8 @@ ObjectWindow,0,AccessWindowDisableEmptyCanNotHeal,起動可能回数が<yellow>0
 ObjectWindow,0,AccessWindowDisableReady,現在、$(0)を起動することができません。
 ObjectWindow,0,AccessWindowDisableOther,破界塔が破壊されたため<br>$(0)を起動することができません。
 ObjectWindow,1,AccessWindowTitle,Activar $(0)
-ObjectWindow,1,AccessWindowRequestActive,No puedes activar el $(1) porque la torre de Buster ha sido destruida.
-ObjectWindow,1,AccessWindowDisableEmptyCanHeal,"El numero de activaciones es <pict basnet_point> 0, por lo que no puedes activar el $(0)."
-ObjectWindow,1,AccessWindowDisableEmptyCanNotHeal,Actualmente no puedes activar el <yellow>.
+ObjectWindow,1,AccessWindowRequestActive,Se activará $(1).<br>¿Está seguro?<br><br>Puedes activar <yellow>$(0) más<c> veces.
+ObjectWindow,1,AccessWindowDisableEmptyCanHeal,"El número de activaciones es <yellow>0<c>,<br>por lo que no puedes activar $(1).<br><br>Una vez que alcances el <pict basnet_point> Nivel $(0), podrás recargar tus activaciones."
+ObjectWindow,1,AccessWindowDisableEmptyCanNotHeal,"El número de activaciones es <yellow>0<c>,<br>por lo que no puedes activar $(0)."
 ObjectWindow,1,AccessWindowDisableReady,"Actualmente, no puedes activar $(0)."
-ObjectWindow,1,AccessWindowDisableOther,Tienes 0 elementos leidos.
+ObjectWindow,1,AccessWindowDisableOther,No puedes activar $(0) porque<br>la Buster Tower ha sido destruida.
