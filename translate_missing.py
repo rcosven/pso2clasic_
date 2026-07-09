@@ -245,6 +245,33 @@ def should_use_jp_text(row_id: str, jp_text: str, en_text: str) -> str | None:
     return None
 
 
+def backup_code_files() -> dict[str, bytes]:
+    """Guarda el codigo del contenedor (Docker) para no perderlo con git reset."""
+    out: dict[str, bytes] = {}
+    for name in CODE_FILES:
+        path = REPO_DIR / name
+        if path.is_file():
+            try:
+                out[name] = path.read_bytes()
+            except Exception:
+                pass
+    return out
+
+
+def restore_code_files(backups: dict[str, bytes]) -> int:
+    """Restaura el codigo del deploy tras sync con GitHub. Retorna cuantos archivos."""
+    restored = 0
+    for name, data in backups.items():
+        path = REPO_DIR / name
+        try:
+            if not path.exists() or path.read_bytes() != data:
+                path.write_bytes(data)
+                restored += 1
+        except Exception as exc:
+            log(f"No se pudo restaurar {name}: {exc}")
+    return restored
+
+
 def setup_git() -> bool:
     token = os.getenv("GITHUB_TOKEN")
     if not token:
@@ -257,6 +284,10 @@ def setup_git() -> bool:
 
     remote_url = f"https://oauth2:{token}@github.com/{GITHUB_REPO}.git"
     fresh_init = not (REPO_DIR / ".git").exists()
+
+    # Critico: el codigo del bot vive en la imagen Docker. git reset NO debe pisarlo.
+    code_backup = backup_code_files()
+    log(f"Codigo del deploy protegido: {len(code_backup)} archivos (v={BOT_VERSION})")
 
     if fresh_init:
         log("Inicializando Git en /app...")
@@ -278,6 +309,7 @@ def setup_git() -> bool:
     )
     if fetch.returncode != 0:
         log(f"Error fetch GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
+        restore_code_files(code_backup)
         return False
 
     if fresh_init:
@@ -289,11 +321,13 @@ def setup_git() -> bool:
         )
         if sync.returncode != 0:
             log(f"Error sync inicial: {sync.stderr.strip() or sync.stdout.strip()}")
+            restore_code_files(code_backup)
             return False
     elif has_local_changes() or commits_ahead_of_remote() > 0:
         log("Hay cambios/commits locales sin subir, intentando push...")
         if not push_with_retry():
             log("Git listo con progreso local pendiente (NO se hara reset --hard).")
+            restore_code_files(code_backup)
             return True
         pull = subprocess.run(
             ["git", "pull", "--rebase", "origin", GITHUB_BRANCH],
@@ -305,7 +339,7 @@ def setup_git() -> bool:
             log(f"Aviso pull: {pull.stderr.strip() or pull.stdout.strip()}")
             subprocess.run(["git", "rebase", "--abort"], cwd=REPO_DIR, capture_output=True)
     else:
-        # Solo reset si no hay trabajo local ni commits sin push.
+        # Solo reset de DATOS; el codigo se restaura abajo.
         sync = subprocess.run(
             ["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"],
             cwd=REPO_DIR,
@@ -314,7 +348,12 @@ def setup_git() -> bool:
         )
         if sync.returncode != 0:
             log(f"Error sync git: {sync.stderr.strip() or sync.stdout.strip()}")
+            restore_code_files(code_backup)
             return False
+
+    restored = restore_code_files(code_backup)
+    if restored:
+        log(f"Codigo del deploy restaurado tras git sync ({restored} archivos).")
 
     subprocess.run(
         ["git", "branch", "--set-upstream-to", f"origin/{GITHUB_BRANCH}", GITHUB_BRANCH],
@@ -462,14 +501,16 @@ def push_with_retry(max_attempts: int = 3) -> bool:
 
 
 def sync_github() -> bool:
-    """PUSH local (commit+push con rebase si hace falta), luego PULL."""
+    """PUSH local (commit+push con rebase si hace falta), luego PULL de datos."""
     # Quitar basura vacia antes de stagear (evita re-añadir gacha vacios a la cola).
     scrub_empty_from_queue()
+    code_backup = backup_code_files()
 
     if has_local_changes() or commits_ahead_of_remote() > 0:
         log("Subiendo cambios locales a GitHub antes del pull...")
         if not push_with_retry():
             log("CRITICO: Pull cancelado para no perder progreso local.")
+            restore_code_files(code_backup)
             return False
 
     pull = subprocess.run(
@@ -490,7 +531,12 @@ def sync_github() -> bool:
         )
         if pull.returncode != 0:
             log(f"Error en pull: {pull.stderr.strip() or pull.stdout.strip()}")
+            restore_code_files(code_backup)
             return False
+
+    restored = restore_code_files(code_backup)
+    if restored:
+        log(f"Codigo del deploy preservado tras pull ({restored} archivos).")
 
     out = pull.stdout or ""
     if "Already up to date" in out or "up to date" in out.lower():
