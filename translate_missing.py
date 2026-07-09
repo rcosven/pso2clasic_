@@ -36,7 +36,7 @@ CODE_FILES = (
     "audit.py",
     "fix_listo.py",
     "fix_tags.py",
-    "test_one.py",
+    "test_one.py"
     "patch_ra_025020.py"
 )
 
