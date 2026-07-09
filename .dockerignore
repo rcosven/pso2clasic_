@@ -1,0 +1,20 @@
+# El bot obtiene estos datos con git fetch/reset al arrancar.
+# Si se copian al build, el deploy tarda o falla y se llena la cola de Railway.
+Raw/
+listo/
+archivos a traducir/
+Cuarentena/
+terminals/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.railway/
+.env
+.venv/
+venv/
+translation_cache.json
+translate_missing.log
+translate_cache.db
+*.md
+_check_pending.py

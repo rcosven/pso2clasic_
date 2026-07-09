@@ -1,11 +1,17 @@
 [build]
 builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
-# Solo rebuild cuando cambia el bot (no en cada commit de CSV del traductor).
-watchPatterns = ["Dockerfile", "requirements.txt", "translate_missing.py", "railway.toml", "start.sh"]
+# IMPORTANTE: solo redeploy cuando cambia el bot, NO en cada commit de CSV.
+watchPatterns = [
+  "Dockerfile",
+  "requirements.txt",
+  "translate_missing.py",
+  "railway.toml",
+  "start.sh",
+  ".dockerignore",
+]
 
 [deploy]
 startCommand = "python translate_missing.py"
-# Reiniciar el contenedor si el proceso muere (incluye autorestart del bot).
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 100
