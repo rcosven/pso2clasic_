@@ -19,7 +19,7 @@ from pathlib import Path
 from deep_translator import GoogleTranslator
 
 # Subir este string cuando cambie la logica. Aparece en logs de Railway.
-BOT_VERSION = "2026-07-09-v6-pull60-hard-delete"
+BOT_VERSION = "2026-07-09-v6-pull5min"
 
 # Archivos del bot: NUNCA se pisan con git reset/pull (vienen del Docker/deploy).
 CODE_FILES = (
@@ -55,8 +55,8 @@ TIEMPO_ENTRE_ARCHIVOS = int(os.getenv("TIEMPO_ENTRE_ARCHIVOS", "3"))
 TIEMPO_SIN_PENDIENTES = int(os.getenv("TIEMPO_ESPERA", "600"))
 TRADUCCION_TIMEOUT = int(os.getenv("TRADUCCION_TIMEOUT", "30"))
 PUSH_CADA = int(os.getenv("PUSH_CADA", "5"))
-# Minimo entre pulls (evita el ciclo eterno pull/push cada pocos segundos).
-MIN_PULL_INTERVAL = int(os.getenv("MIN_PULL_INTERVAL", "60"))
+# Minimo entre pulls (evita el ciclo eterno pull/push). Default 5 minutos.
+MIN_PULL_INTERVAL = int(os.getenv("MIN_PULL_INTERVAL", "300"))
 DEFER_FILES = {
     name.strip()
     for name in os.getenv("ARCHIVOS_DIFERIR", "apc_chat_3.csv").split(",")
