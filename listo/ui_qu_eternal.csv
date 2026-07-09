@@ -31,38 +31,38 @@ terminal,0,TypeB,ステージ情報
 terminal,0,TypeB_Help,<c f0df60>各ステージの情報確認を行うことができます。<c>
 terminal,0,TypeC,仮想アイテム受け取り
 terminal,0,TypeC_Help,<c f0df60>今回拾得した仮想アイテム保管状況の確認と、受け取り（クエストクリア後のみ）ができます。<c>
-terminal,1,Title,TERMINAL EXTREMO
-terminal,1,TerminalTitle,INF. TERMINAL EXTREMO.
+terminal,1,Title,EXTREME TERMINAL
+terminal,1,TerminalTitle,EXTREME TERMINAL INF.
 terminal,1,TerminalList1,Ver detalles de la etapa
-terminal,1,TerminalList2,Boveda de articulos virtuales
-terminal,1,AcceptPoolItem,Tomar articulo virtual
+terminal,1,TerminalList2,Bóveda de artículos virtuales
+terminal,1,AcceptPoolItem,Tomar artículo virtual
 terminal,1,AcceptText,Llevar
-terminal,1,ReturnText,Atras
-terminal,1,CheckPoolItem,Estado de almacenamiento de articulos virtuales
-terminal,1,PossibleNumber,Limite de recogida de articulos
-terminal,1,TotalPoolItem,Numero total de elementos virtuales
-terminal,1,ItemDetails,Detalles del articulo
-terminal,1,AcceptItemList,Lista de articulos para recoger
-terminal,1,AcceptNum,/
-terminal,1,TotalNum,
-terminal,1,AcceptConfirmTitle,RECIBIR ARTICULOS VIRTUALES
-terminal,1,AcceptYesNo,Estas a punto de tomar los articulos debajo.<br>¿Estas seguro que deseas proceder?
-terminal,1,AcceptErrTitle,RECIBIR ARTICULOS VIRTUALES
-terminal,1,AcceptErr,You cannot select any more items because <br>you have exceeded the item pick-up limit.
-terminal,1,ItemPackErr,No puedes recibir mas articulos porque tu inventario esta lleno.
-terminal,1,RecieveErrTitle,ERROR DE COMUNICACION
-terminal,1,RecieveErr,"Ha ocurrido un error, impidiendote tomar tus articulos.<br>"
+terminal,1,ReturnText,Atrás
+terminal,1,CheckPoolItem,Estado de almacenamiento de artículos virtuales
+terminal,1,PossibleNumber,Límite de recogida de artículos
+terminal,1,TotalPoolItem,Número total de elementos virtuales
+terminal,1,ItemDetails,Detalles del artículo
+terminal,1,AcceptItemList,Lista de artículos para recoger
+terminal,1,AcceptNum,$(0)/$(1)
+terminal,1,TotalNum,$(0)
+terminal,1,AcceptConfirmTitle,RECIBIR ARTÍCULOS VIRTUALES
+terminal,1,AcceptYesNo,Estás a punto de tomar los siguientes artículos.<br>¿Está seguro de que desea continuar?
+terminal,1,AcceptErrTitle,RECIBIR ARTÍCULOS VIRTUALES
+terminal,1,AcceptErr,No puedes seleccionar más elementos porque<br>ha excedido el límite de recogida de artículos.
+terminal,1,ItemPackErr,No puedes tomar más artículos porque<br>Tu inventario está lleno.
+terminal,1,RecieveErrTitle,ERROR DE COMUNICACIÓN
+terminal,1,RecieveErr,Se ha producido un error que le impide<br>de tomar sus artículos.
 terminal,1,AcceptAble,Se puede recoger
-terminal,1,AcceptSuccessTitle,RECIBIR ARTICULOS VIRTUALES
-terminal,1,AcceptSuccess,Recibi el articulo seleccionado.
-terminal,1,AcceptMaxOver,No puedes tomar mas articulos.
-terminal,1,NoItemMessage,Articulo virtual disponible
-terminal,1,TypeA,Terminal extrema
-terminal,1,TypeA_Help,"Almacenamiento de items, y recibir articulos contigo (solo despues de completar misiones).<c>"
+terminal,1,AcceptSuccessTitle,RECIBIR ARTÍCULOS VIRTUALES
+terminal,1,AcceptSuccess,Recibí el artículo seleccionado.
+terminal,1,AcceptMaxOver,No puedes tomar más artículos.
+terminal,1,NoItemMessage,Artículo virtual disponible
+terminal,1,TypeA,Extreme Terminal
+terminal,1,TypeA_Help,"<c f0df60>Aquí puedes verificar los detalles de la etapa, verificar el estado del almacenamiento de artículos virtuales y llevarte artículos contigo (solo después de completar misiones).<c>"
 terminal,1,TypeB,Detalles de la etapa
-terminal,1,TypeB_Help,<c f0df60>Here you can check all kinds of stage details.<c>
-terminal,1,TypeC,Recibir articulos virtuales
-terminal,1,TypeC_Help,"up in your last quest, and take items with you (only after clearing quests).<c>"
+terminal,1,TypeB_Help,<c f0df60>Aquí podrás consultar todo tipo de detalles del escenario.<c>
+terminal,1,TypeC,Recibir artículos virtuales
+terminal,1,TypeC_Help,<c f0df60>Aquí puedes verificar el estado de almacenamiento de los artículos virtuales que recogiste en tu última misión y llevarte artículos contigo (solo después de completar las misiones).<c>
 area_information,0,EntryEnemy,登場エネミー
 area_information,0,EnemyCondition,エネミー能力変化
 area_information,0,FloorOrder,ステージオーダー
@@ -99,8 +99,8 @@ area_information,0,AllStatus,すべて
 area_information,0,FloorOrderToast,前のステージオーダー達成により、エネミーの耐性が低下しました。
 area_information,0,AppendMark,、
 area_information,1,EntryEnemy,Enemigos presentes
-area_information,1,EnemyCondition,Refactorizacion de la capacidad enemiga
-area_information,1,FloorOrder,Ordenes de etapa
+area_information,1,EnemyCondition,Refactorización de la capacidad enemiga
+area_information,1,FloorOrder,Órdenes de etapa
 area_information,1,AbilityUpSmall,Habilidad arriba (S)
 area_information,1,AbilityUpMiddle,Capacidad arriba (M)
 area_information,1,AbilityUpLarge,Capacidad arriba (L)
@@ -109,30 +109,30 @@ area_information,1,WeaponResistance,Resistencia arriba (equipado)
 area_information,1,TechniqueResistance,Resistencia arriba (Elemento)
 area_information,1,WeaponResistanceDown,Resistencia bajada (equipada)
 area_information,1,TechniqueResistanceDown,Resistencia hacia abajo (Elemento)
-area_information,1,HP,HP
+area_information,1,HP,caballos de fuerza
 area_information,1,Attack,Ataque
 area_information,1,Defence,Defensa
 area_information,1,HitResistance,Resistencia cuerpo a cuerpo
 area_information,1,ShootResistance,Resistencia a distancia
-area_information,1,TecResistance,Resistencia a la tecnica
-area_information,1,AllResistance,Resistencia total
+area_information,1,TecResistance,Resistencia a la técnica
+area_information,1,AllResistance,Resistencia Total
 area_information,1,InvalidAbnomalState,Estado dolencia anulada
 area_information,1,FloorNumber1,Etapa 1
 area_information,1,FloorNumber2,Etapa 2
 area_information,1,FloorNumber3,Etapa 3
 area_information,1,FloorNumber4,Etapa 4
 area_information,1,FloorNumber5,Etapa 5
-area_information,1,FloorNumberTab,
+area_information,1,FloorNumberTab,$(0)
 area_information,1,FloorNumberIndex,Etapa $(0)
 area_information,1,MessageNo,Ninguno
-area_information,1,MessageYes,Si
+area_information,1,MessageYes,Sí
 area_information,1,Other,Otro
-area_information,1,HitStatus,Daйo cuerpo a cuerpo
-area_information,1,ShootStatus,Daйo a distancia
-area_information,1,TecStatus,Daйo a la tecnica
+area_information,1,HitStatus,Daño cuerpo a cuerpo
+area_information,1,ShootStatus,Daño a distancia
+area_information,1,TecStatus,Daño a la técnica
 area_information,1,AllStatus,Todo
 area_information,1,FloorOrderToast,Cumplir el orden de etapa anterior ha reducido las resistencias enemigas.
-area_information,1,AppendMark,","
+area_information,1,AppendMark,
 floor_order,0,TitleEnemyDestroy,を$(0)体倒せ！
 floor_order,0,TitleDamageNum,に$(0)以上のダメージを$(1)回以上与えろ！
 floor_order,0,TitlePartDamageNum,の部位を合計$(0)箇所破壊せよ！
@@ -146,16 +146,16 @@ floor_order,0,SubTitleForward,正面から
 floor_order,0,SubTitleBack,背後から
 floor_order,0,SubTitleEnemy,エネミー
 floor_order,0,SubTitleState,状態異常になった
-floor_order,1,TitleEnemyDestroy,Retira el $(0)
-floor_order,1,TitleDamageNum,Inflige $(0) de daйo mas de $(1) veces a
+floor_order,1,TitleEnemyDestroy,Retirar $(0)
+floor_order,1,TitleDamageNum,Inflige $(0) de daño más de $(1) veces a
 floor_order,1,TitlePartDamageNum,Destruye un total de $(0) sitios de
-floor_order,1,TitleNoDamage,No recibas daйo durante $(0) segundos
-floor_order,1,TitleNoRecover,Sin efectos de recuperacion durante $(0) segundos
-floor_order,1,TitleNoDead,No quede incapacitado mas de $(0) veces
+floor_order,1,TitleNoDamage,No recibas daño durante $(0) segundos
+floor_order,1,TitleNoRecover,Sin efectos de recuperación durante $(0) segundos
+floor_order,1,TitleNoDead,No quede incapacitado más de $(0) veces
 floor_order,1,SubTitleSecond,dentro de $(0) segundos
-floor_order,1,SubTitleSecondRecover,sin recibir curacion en $(0) segundos
-floor_order,1,SubTitleWeakPoint,atacando el punto debil
+floor_order,1,SubTitleSecondRecover,sin recibir curación en $(0) segundos
+floor_order,1,SubTitleWeakPoint,atacando el punto débil
 floor_order,1,SubTitleForward,desde el frente
-floor_order,1,SubTitleBack,por detras
+floor_order,1,SubTitleBack,por detrás
 floor_order,1,SubTitleEnemy,Enemigo(s)
 floor_order,1,SubTitleState,infligido con una dolencia de estado
