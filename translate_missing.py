@@ -19,7 +19,26 @@ from pathlib import Path
 from deep_translator import GoogleTranslator
 
 # Subir este string cuando cambie la logica. Aparece en logs de Railway.
-BOT_VERSION = "2026-07-09-v3-autorestart"
+BOT_VERSION = "2026-07-09-v4-preserve-code"
+
+# Archivos del bot: NUNCA se pisan con git reset/pull (vienen del Docker/deploy).
+CODE_FILES = (
+    "translate_missing.py",
+    "start.sh",
+    "railway.toml",
+    "Dockerfile",
+    "requirements.txt",
+    "nixpacks.toml",
+    ".dockerignore",
+    "config.py",
+    "github_manager.py",
+    "apply_translation.py",
+    "audit.py",
+    "fix_listo.py",
+    "fix_tags.py",
+    "test_one.py",
+    "patch_ra_025020.py",
+)
 
 REPO_DIR = Path("/app")
 INPUT_DIR = REPO_DIR / "archivos a traducir"
