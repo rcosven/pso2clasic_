@@ -37,7 +37,7 @@ CODE_FILES = (
     "fix_listo.py",
     "fix_tags.py",
     "test_one.py",
-    "patch_ra_025020.py",
+    "patch_ra_025020.py"
 )
 
 REPO_DIR = Path("/app")
