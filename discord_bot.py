@@ -20,9 +20,12 @@ class BuscadorBot(commands.Bot):
         super().__init__(command_prefix="!", intents=intents)
 
     async def setup_hook(self):
-        # Limpia comandos antiguos globalmente y registra los actuales
-        await self.tree.sync() 
-        print("Comandos sincronizados con Discord.")
+        print("Sincronizando comandos con Discord...")
+        # Esto imprimirá el resultado en los logs de Railway
+        synced = await self.tree.sync()
+        print(f"Comandos registrados: {len(synced)}")
+        for cmd in synced:
+            print(f" - {cmd.name}")
 
 bot = BuscadorBot()
 
