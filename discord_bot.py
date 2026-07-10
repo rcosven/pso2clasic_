@@ -16,15 +16,19 @@ class BuscadorBot(commands.Bot):
         # 2. Diccionario en memoria para búsquedas rápidas
         self.index_datos = {} 
 
-    async def setup_hook(self):
-        # Limpiar comandos cacheados
+async def setup_hook(self):
         self.tree.clear_commands(guild=None) 
-        
-        # Cargar los CSV en memoria al encender el bot
         self.cargar_indices()
         
-        print("Sincronizando comandos de barra...")
-        await self.tree.sync()
+        # --- CAMBIO AQUÍ PARA SINCRONIZACIÓN INSTANTÁNEA ---
+        # Reemplaza los números por el ID real de tu servidor de Discord
+        mi_servidor = discord.Object(id=123456789012345678) 
+        
+        # Copiamos los comandos a ese servidor en específico
+        self.tree.copy_global_to(guild=mi_servidor)
+        
+        print("Sincronizando comandos de barra en el servidor...")
+        await self.tree.sync(guild=mi_servidor)
         print("Sincronización completada.")
 
     def cargar_indices(self):
