@@ -1,59 +1,19 @@
-import subprocess
-from config import REPO_DIR, CSV_DIR, QUARANTINE_DIR, GITHUB_REPO, GITHUB_BRANCH, GITHUB_TOKEN
-from utils import log
+# En lugar de leer todos los archivos en cada comando:
+# Carga los índices una vez al iniciar el bot
+INDEX = {}
 
-def setup_git():
-    if not GITHUB_TOKEN or GITHUB_REPO == "tu_usuario/pso2clasic":
-        log("ERROR CRÍTICO: Configura GITHUB_TOKEN o GITHUB_REPO.")
-        return False
-        
-    subprocess.run(["git", "config", "--global", "--add", "safe.directory", str(REPO_DIR)], check=False)
-    subprocess.run(["git", "config", "--global", "user.email", "railway@bot.com"], check=False)
-    subprocess.run(["git", "config", "--global", "user.name", "Railway Traductor"], check=False)
+def precargar_indices():
+    for f in LISTO_DIR.glob("*.csv"):
+        # Solo mapea los IDs para búsqueda rápida
+        with open(f, 'r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                INDEX[row['id']] = f.name 
 
-    remote_url = f"https://oauth2:{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
-
-    if not (REPO_DIR / ".git").exists():
-        subprocess.run(["git", "init"], cwd=REPO_DIR, check=False)
-        subprocess.run(["git", "branch", "-m", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
-        subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
+@bot.tree.command(name="buscar_id", description="Busca un ID específico")
+async def buscar_id(interaction: discord.Interaction, id_buscado: str):
+    archivo = INDEX.get(id_buscado)
+    if archivo:
+        await interaction.response.send_message(f"El ID {id_buscado} está en el archivo {archivo}")
     else:
-        remotes = subprocess.run(["git", "remote"], cwd=REPO_DIR, capture_output=True, text=True)
-        if "origin" in remotes.stdout.split():
-            subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=REPO_DIR, check=False)
-        else:
-            subprocess.run(["git", "remote", "add", "origin", remote_url], cwd=REPO_DIR, check=False)
-
-    fetch = subprocess.run(
-        ["git", "fetch", "origin", GITHUB_BRANCH],
-        cwd=REPO_DIR,
-        capture_output=True,
-        text=True,
-    )
-    if fetch.returncode != 0:
-        log(f"Error al conectar con GitHub: {fetch.stderr.strip() or fetch.stdout.strip()}")
-        return False
-
-    subprocess.run(["git", "branch", "-u", f"origin/{GITHUB_BRANCH}", GITHUB_BRANCH], cwd=REPO_DIR, check=False)
-    subprocess.run(["git", "reset", "--mixed", f"origin/{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
-    return True
-
-def pull_from_github():
-    res = subprocess.run(["git", "pull", "origin", GITHUB_BRANCH], cwd=REPO_DIR, capture_output=True, text=True)
-    out = res.stdout.strip()
-    if "Already up to date" not in out and res.returncode == 0:
-        log("Nuevos archivos descargados correctamente.")
-
-def push_to_github():
-    if not CSV_DIR.exists(): return
-    for path in ("archivos a traducir", "listo", "Cuarentena"):
-        target = REPO_DIR / path
-        if target.exists():
-            subprocess.run(["git", "add", f"{path}/"], cwd=REPO_DIR, check=False)
-        
-    status = subprocess.run(["git", "status", "--porcelain"], cwd=REPO_DIR, capture_output=True, text=True)
-    if not status.stdout.strip(): return
-        
-    log("Guardando cambios en GitHub (Push)...")
-    subprocess.run(["git", "commit", "-m", "Bot: Traducciones, Raw Healing y Cuarentena"], cwd=REPO_DIR, check=False)
-    subprocess.run(["git", "push", "origin", f"HEAD:{GITHUB_BRANCH}"], cwd=REPO_DIR, check=False)
+        await interaction.response.send_message("ID no encontrado.")
