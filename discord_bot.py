@@ -3,7 +3,11 @@ from discord import app_commands
 from discord.ext import commands
 import os
 import csv
+import logging
 from pathlib import Path
+
+# Configurar el logger
+logger = logging.getLogger("discord.bot")
 
 class BuscadorBot(commands.Bot):
     def __init__(self):
@@ -17,7 +21,6 @@ class BuscadorBot(commands.Bot):
         self.index_datos = {} 
 
     async def setup_hook(self):
-        self.tree.clear_commands(guild=None) 
         self.cargar_indices()
         
         # --- CAMBIO AQUÍ PARA SINCRONIZACIÓN INSTANTÁNEA ---
@@ -27,16 +30,16 @@ class BuscadorBot(commands.Bot):
         # Copiamos los comandos a ese servidor en específico
         self.tree.copy_global_to(guild=mi_servidor)
         
-        print("Sincronizando comandos de barra en el servidor...")
+        logger.info("Sincronizando comandos de barra en el servidor...")
         await self.tree.sync(guild=mi_servidor)
-        print("Sincronización completada.")
+        logger.info("Sincronización completada.")
 
     def cargar_indices(self):
         """Lee los CSV locales y mapea los IDs al archivo correspondiente."""
         self.index_datos.clear()
         
         # Agrega aquí los nombres de las carpetas que contienen tus CSV
-        directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_raw", "Csv_Clasic_Raw"]
+        directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_Raw", "Csv_Clasic_Raw"]
         
         for dir_name in directorios_datos:
             ruta = Path(dir_name)
@@ -50,11 +53,11 @@ class BuscadorBot(commands.Bot):
                                 if 'id' in row:
                                     self.index_datos[row['id']] = archivo_csv.name
                     except Exception as e:
-                        print(f"Error leyendo {archivo_csv.name}: {e}")
+                        logger.error(f"Error leyendo {archivo_csv.name}: {e}")
             else:
-                print(f"Advertencia: No se encontró la carpeta {dir_name}")
+                logger.warning(f"Advertencia: No se encontró la carpeta {dir_name}")
                 
-        print(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
+        logger.info(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
 
 bot = BuscadorBot()
 
@@ -78,6 +81,6 @@ async def recargar(interaction: discord.Interaction):
 
 token = os.getenv("DISCORD_TOKEN")
 if not token:
-    print("ERROR: No se encontró el DISCORD_TOKEN en las variables de entorno.")
+    logger.error("ERROR: No se encontró el DISCORD_TOKEN en las variables de entorno.")
 else:
     bot.run(token)
