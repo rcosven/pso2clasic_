@@ -79,7 +79,11 @@ def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, n
     """
     Lee un archivo CSV, busca la fila exacta por section, group e id, 
     y reemplaza únicamente el campo 'text' conservando la estructura multilínea.
+    Solo permite modificar si group == '1'.
     """
+    if group != '1':
+        return False
+
     ruta = Path(file_path)
     if not ruta.exists():
         return False
@@ -106,6 +110,55 @@ def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, n
         writer.writerows(filas)
         
     return True
+
+def obtener_contexto_csv(file_path: str):
+    """
+    Lee el archivo CSV y agrupa las líneas por (section, id).
+    Retorna un texto formateado amigablemente con los pares (Original vs Traducción).
+    """
+    ruta = Path(file_path)
+    if not ruta.exists():
+        return "No se encontró el archivo."
+
+    # Agrupar por (section, id) -> {'0': original, '1': traduccion}
+    grupos = {}
+    with open(ruta, mode='r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            sec = row.get('section', '')
+            row_id = row.get('id', '')
+            grp = row.get('group', '')
+            text = row.get('text', '')
+            
+            key = (sec, row_id)
+            if key not in grupos:
+                grupos[key] = {}
+            grupos[key][grp] = text
+
+    # Formatear el texto
+    lineas_resultado = [f"📖 **Líneas de traducción en `{ruta.name}`:**\n"]
+    items = list(grupos.items())
+    max_items = 12
+    for (sec, row_id), grp_dict in items[:max_items]:
+        original = grp_dict.get('0', '*(Sin texto original)*')
+        traduccion = grp_dict.get('1', '*(Sin traducción)*')
+        
+        bloque = (
+            f"🔑 **ID:** `{row_id}` (Sección: `{sec}`)\n"
+            f"🇯🇵 **Original:** {original}\n"
+            f"🇪🇸 **Traducción:** {traduccion}\n"
+            f"----------------------------------"
+        )
+        lineas_resultado.append(bloque)
+        
+    if len(items) > max_items:
+        lineas_resultado.append(f"\n*... y {len(items) - max_items} líneas más en el archivo.*")
+        
+    resultado_completo = "\n".join(lineas_resultado)
+    if len(resultado_completo) > 1950:
+        resultado_completo = resultado_completo[:1940] + "\n\n*(Mensaje truncado por límite de longitud en Discord...)*"
+        
+    return resultado_completo
 
 def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: str, row_id: str, usuario_discord: str):
     """
@@ -199,7 +252,10 @@ class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
     async def on_submit(self, interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=True)
         
-        nuevo_texto = self.translation_input.value
+        # Limpiar y sanitizar texto: Reemplazar saltos de línea con <br>
+        nuevo_texto = self.translation_input.value.strip()
+        nuevo_texto = nuevo_texto.replace("\r\n", "<br>").replace("\n", "<br>").replace("\r", "<br>")
+        
         file_path_local = self.item['file']
         
         # 1. Modificar CSV local
@@ -248,6 +304,9 @@ class DescargarCSVView(discord.ui.View):
         if isinstance(item_data_or_filepath, dict):
             self.item_data = item_data_or_filepath
             self.filepath = item_data_or_filepath['file']
+            # Deshabilitar/eliminar traducir si group no es '1' (es original en japonés)
+            if self.item_data.get('group') != '1':
+                self.remove_item(self.traducir)
         else:
             self.item_data = None
             self.filepath = item_data_or_filepath
@@ -267,6 +326,12 @@ class DescargarCSVView(discord.ui.View):
                 content=f"❌ No se pudo enviar el archivo: {e}",
                 ephemeral=True
             )
+
+    @discord.ui.button(label="Ver Contexto", style=discord.ButtonStyle.secondary, emoji="📖")
+    async def ver_contexto(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer(ephemeral=True)
+        contexto_txt = obtener_contexto_csv(self.filepath)
+        await interaction.followup.send(content=contexto_txt, ephemeral=True)
 
     @discord.ui.button(label="Traducir", style=discord.ButtonStyle.success, emoji="✍️")
     async def traducir(self, interaction: discord.Interaction, button: discord.ui.Button):
