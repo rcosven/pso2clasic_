@@ -1,7 +1,15 @@
 [build]
 builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
-watchPatterns = ["Dockerfile", "requirements.txt", "translate_missing.py", "railway.toml"]
+# Solo redeploy cuando cambia el bot (NO en cada commit de CSV).
+watchPatterns = [
+  "Dockerfile",
+  "requirements.txt",
+  "translate_missing.py",
+  "railway.toml",
+  "start.sh",
+  ".dockerignore",
+]
 
 [deploy]
 startCommand = "python translate_missing.py"
