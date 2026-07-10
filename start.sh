@@ -1,2 +1,3 @@
 #!/bin/sh
-exec python discord_bot.py
+# start.sh
+python discord_bot.py
