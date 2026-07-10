@@ -23,15 +23,16 @@ class BuscadorBot(commands.Bot):
     async def setup_hook(self):
         self.cargar_indices()
         
-        # --- CAMBIO AQUÍ PARA SINCRONIZACIÓN INSTANTÁNEA ---
-        # ¡IMPORTANTE! Reemplaza los números por el ID real de tu servidor de Discord
+        # 1. Sincronización instantánea en tu servidor de pruebas
         mi_servidor = discord.Object(id=1525057654446100553) 
-        
-        # Copiamos los comandos a ese servidor en específico
         self.tree.copy_global_to(guild=mi_servidor)
-        
-        logger.info("Sincronizando comandos de barra en el servidor...")
+        logger.info("Sincronizando comandos de barra en el servidor de pruebas...")
         await self.tree.sync(guild=mi_servidor)
+        
+        # 2. Sincronización global para los demás servidores
+        logger.info("Sincronizando comandos globalmente (puede tardar hasta 1 hora en propagarse)...")
+        await self.tree.sync()
+        
         logger.info("Sincronización completada.")
 
     def cargar_indices(self):
@@ -64,6 +65,26 @@ class BuscadorBot(commands.Bot):
                 
         logger.info(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
 
+class DescargarCSVView(discord.ui.View):
+    def __init__(self, filepath: str):
+        super().__init__(timeout=180)
+        self.filepath = filepath
+
+    @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥")
+    async def descargar(self, interaction: discord.Interaction, button: discord.ui.Button):
+        try:
+            archivo = discord.File(self.filepath)
+            await interaction.response.send_message(
+                content=f"Aquí tienes el archivo `{self.filepath}` listo para editar:",
+                file=archivo,
+                ephemeral=True
+            )
+        except Exception as e:
+            await interaction.response.send_message(
+                content=f"❌ No se pudo enviar el archivo: {e}",
+                ephemeral=True
+            )
+
 bot = BuscadorBot()
 
 # --- COMANDOS DE BARRA (SLASH COMMANDS) ---
@@ -90,7 +111,8 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
             f"📁 **Archivo:** `{match['file']}` (Línea {match['line']})\n"
             f"📝 **Texto:** {match['text']}"
         )
-        await interaction.response.send_message(mensaje)
+        view = DescargarCSVView(match['file'])
+        await interaction.response.send_message(mensaje, view=view)
     else:
         limite = 5
         lineas = [f"✅ **Se encontraron {total} coincidencias (mostrando las primeras {limite}):**"]
@@ -101,6 +123,8 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
             )
         if total > limite:
             lineas.append(f"*... y {total - limite} coincidencias más.*")
+            
+        lineas.append("\n💡 *Busca de forma más específica para ver el botón de descarga del archivo.*")
             
         mensaje = "\n".join(lineas)
         if len(mensaje) > 2000:
