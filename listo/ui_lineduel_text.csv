@@ -1,4 +1,4 @@
-﻿section,group,id,text
+section,group,id,text
 InGame,0,LineDuel_DeckSelect_Title_Text,デッキ選択
 InGame,0,LineDuel_DeckSelect_Message_Text,使用するデッキを選択してください。<br><yellow>※選択しない場合、30秒後に、<br>　一番上のデッキが自動的に選択されます。<c>
 InGame,0,LineDuel_DeckSelect_Message_Text_NPC,使用するデッキを選択してください。
@@ -86,7 +86,7 @@ InGame,1,LineDuel_DeckSelect_Title_Text,Seleccionar mazo
 InGame,1,LineDuel_DeckSelect_Message_Text,"Elige tu mazo.<br><yellow> Si no se elige un mazo después de 30 segundos,<br>su mazo superior se seleccionará automáticamente. <c>"
 InGame,1,LineDuel_DeckSelect_Message_Text_NPC,Elige tu mazo.
 InGame,1,LineDuel_Mulligan_Title_Text,Aceptar mano
-InGame,1,LineDuel_Mulligan_Message,r><yellow>You will begin the battle with this hand after 30 seconds.<c>
+InGame,1,LineDuel_Mulligan_Message,爀㸀㰀礀攀氀氀漀眀㸀夀漀甀 眀椀氀氀 戀攀最椀渀 琀栀攀 戀愀琀琀氀攀 眀椀琀栀 琀栀椀猀 栀愀渀搀 愀昀琀攀爀 ㌀　 猀攀挀漀渀搀猀⸀㰀挀㸀
 InGame,1,LineDuel_Mulligan_Message_NPC,¿Comenzar la batalla con esta mano?<br>Puedes volver a dibujar tu mano una vez.
 InGame,1,LineDuel_Mulligan_Text1,Comenzar
 InGame,1,LineDuel_Mulligan_Text2,Redibujar la mano
@@ -95,7 +95,7 @@ InGame,1,LineDuel_Guide_Text2,Atrás
 InGame,1,LineDuel_Guide_Text3,Ver mano
 InGame,1,LineDuel_Guide_Text4,Iniciar batalla
 InGame,1,LineDuel_Guide_Text5,Conceder/Renunciar
-InGame,1,LineDuel_Guide_Text6,Charlar
+InGame,1,LineDuel_Guide_Text6,charlar
 InGame,1,LineDuel_Guide_Text7,Charla/Consulta la plataforma
 InGame,1,LineDuel_Guide_TextAutoFocusOn,Enfoque automático activado
 InGame,1,LineDuel_Guide_TextAutoFocusOff,Enfoque automático desactivado
@@ -107,32 +107,32 @@ InGame,1,LineDuel_Guide_Key5,<swguidetype BluePrintEscMenu>
 InGame,1,LineDuel_Guide_Key6,<%Exception>
 InGame,1,LineDuel_Guide_Key7,<%Exception> / <%Exception2>
 InGame,1,LineDuel_Guide_KeyAutoFocus,<%Exception2>
-InGame,1,LineDuel_SpectatorGuide_Text1,Dejar
+InGame,1,LineDuel_SpectatorGuide_Text1,dejar
 InGame,1,LineDuel_SpectatorGuide_Key1,<swguidetype BluePrintEscMenu>
-InGame,1,LineDuel_SpectatorGuide_Text2,Doble velocidad
-InGame,1,LineDuel_SpectatorGuide_Text2_2,Velocidad normal
+InGame,1,LineDuel_SpectatorGuide_Text2,doble velocidad
+InGame,1,LineDuel_SpectatorGuide_Text2_2,velocidad normal
 InGame,1,LineDuel_SpectatorGuide_Key2,<%ChangeCtrlWindowForward>
 InGame,1,LineDuel_SpectatorGuide_Key2_2,<%ChangeCtrlWindowForward>
-InGame,1,LineDuel_Battle_Surrender_Title,Mensaje
-InGame,1,LineDuel_Battle_Exit_Title,Mensaje
+InGame,1,LineDuel_Battle_Surrender_Title,mensaje
+InGame,1,LineDuel_Battle_Exit_Title,mensaje
 InGame,1,LineDuel_Battle_Surrender_Message,¿Conceder?
 InGame,1,LineDuel_Battle_Surrender_Error,Al menos una base debe ser destruida antes de que puedas ceder.
 InGame,1,LineDuel_Battle_Exit_Message,¿Dejar el tablero?
 InGame,1,LineDuel_Battle_WithWarningCaneclRematch_Message,¿Dejar el tablero?<br><yellow> La solicitud de revancha será cancelada. <c>
 InGame,1,LineDuel_Battle_ExitWithWarningCancelMatchmaking_Message,¿Dejar el tablero?<br><yellow> Se cancelará la igualación. <c>
 InGame,1,LineDuel_Result_Title_Text,Resultados del partido
-InGame,1,LineDuel_Result_Reward,Premio
+InGame,1,LineDuel_Result_Reward,premio
 InGame,1,LineDuel_Result_DailyReward,Recompensas obtenidas esta semana
 InGame,1,LineDuel_Result_DailyRewardNum,$(0)/$(1)
 InGame,1,LineDuel_Result_Rate,Clasificación
 InGame,1,LineDuel_Result_Continue,Regresar al tablero
-InGame,1,LineDuel_Result_End,Dejar
+InGame,1,LineDuel_Result_End,dejar
 InGame,1,LineDuel_Result_Remach,Revancha
 InGame,1,LineDuel_Result_Replay,Ver de nuevo
 InGame,1,LineDuel_RateNum_Gain,<pict ld_rateicon> $(0)(+$(1))
 InGame,1,LineDuel_RateNum_Lose,<pict ld_rateicon> $(0)($(1))
-InGame,1,LineDuel_RateNum_InProgress,Pendiente
-InGame,1,LineDuel_RateNum_None,-
+InGame,1,LineDuel_RateNum_InProgress,pendiente
+InGame,1,LineDuel_RateNum_None,
 InGame,1,LineDuel_ItemNum,$(0) ×$(1)
 InGame,1,LineDuel_Result_Message_Win,Ganaste el partido.
 InGame,1,LineDuel_Result_Message_Lose,Perdiste el partido.
@@ -161,9 +161,9 @@ InGame,1,LineDuel_Rematch_Title,Confirmar revancha
 InGame,1,LineDuel_Rematch_Message,Tu oponente ha solicitado una revancha.<br>¿Te gustaría luchar contra ellos otra vez?
 InGame,1,LineDuel_Rematch_Denay_Title,Confirmar revancha
 InGame,1,LineDuel_Rematch_Denay_Message,El oponente ha rechazado la revancha.<br>¿Dejar el tablero?
-InGame,1,LineDuel_Rematch_Watching_Title,Mensaje
+InGame,1,LineDuel_Rematch_Watching_Title,mensaje
 InGame,1,LineDuel_Rematch_Watching_Message,Ha comenzado un partido entre los mismos jugadores.<br>¿Continuar mirando?
-InGame,1,LineDuel_Rematch_Watching_Title2,Mensaje
+InGame,1,LineDuel_Rematch_Watching_Title2,mensaje
 InGame,1,LineDuel_Rematch_Watching_Message2,"Como uno o más jugadores se han ido, allí<br>no habrá otra batalla.<br>¿Dejar el tablero?"
 MainMenu,0,LineDuel_Title_Text,ラインストライク
 MainMenu,0,LineDuel_Menu_Category1,対戦
@@ -269,7 +269,7 @@ MainMenu,1,LineDuel_NPCBattle,Batalla de PNJ
 MainMenu,1,LineDuel_FreeBattleInvitation,Aceptar batalla gratis
 MainMenu,1,LineDuel_RoomList,Batalla de espectadores
 MainMenu,1,LineDuel_RoomList_Text1,Formato de partido
-MainMenu,1,LineDuel_RoomList_Text2,Doblar
+MainMenu,1,LineDuel_RoomList_Text2,dólar
 MainMenu,1,LineDuel_RoomList_Text3,Clasificación
 MainMenu,1,RoomList_RateSlash,$(0) / $(1)
 MainMenu,1,LineDuel_FreeBattle,Batalla libre
@@ -281,20 +281,20 @@ MainMenu,1,LineDuel_PopUp1,Editar
 MainMenu,1,LineDuel_PopUp2,Construir cubierta
 MainMenu,1,LineDuel_PopUp3,Reiniciar plataforma
 MainMenu,1,LineDuel_PopUp4,Cubierta de copia
-MainMenu,1,LineDuel_PopUp5,Pegar cubierta
-MainMenu,1,LineDuel_PopUp6,Batalla
+MainMenu,1,LineDuel_PopUp5,Pegar cubierto
+MainMenu,1,LineDuel_PopUp6,batalla
 MainMenu,1,LineDuel_CardList_Title_Text,Lista de tarjetas
 MainMenu,1,LineDuel_Details_Title_Text,Detalles de la tarjeta
 MainMenu,1,LineDuel_SkillDetails_Title_Text,Detalles de la habilidad
 MainMenu,1,LineDuel_DeckList_Help_Text,Selecciona una carta de una Lista de mazo para eliminarla de la Lista.
 MainMenu,1,LineDuel_DeckName_Text,Nombre de la plataforma
 MainMenu,1,LineDuel_Sleeve_Text,Seleccionar funda de tarjeta
-MainMenu,1,LineDuel_PlayMat_Text,Seleccionar tapete de juego
+MainMenu,1,LineDuel_PlayMat_Text,Seleccionar cinta de juego
 MainMenu,1,LineDuel_BoardSurface_Text,Transparencia de la cuadrícula del tapete de juego
 MainMenu,1,LineDuel_Synchronize_Text,Aplicar la configuración de la plataforma a otras plataformas
 MainMenu,1,LineDuel_Synchronize_Hint,Aplique estas configuraciones de plataforma a otras plataformas.<br><yellow> *No se aplicará a los nombres de los mazos. <c>
 MainMenu,1,LineDuel_Preview_Title_Text,Avance
-MainMenu,1,LineDuel_Initialization_Title,Mensaje
+MainMenu,1,LineDuel_Initialization_Title,mensaje
 MainMenu,1,LineDuel_Initialization_Message,¿Restaurar Deck a los valores predeterminados?
 MainMenu,1,LineDuel_VictoriaBattle_Message,"coinciden, no podrás salir de<br>hasta que finalice la coincidencia. <c>"
 MainMenu,1,LineDuel_Initialization_Copy,El contenido de la plataforma se guardó temporalmente.
@@ -318,31 +318,31 @@ MainMenu,1,LineDuel_MatchResults_WIN,GANAR
 MainMenu,1,LineDuel_MatchResults_LOSE,PERDER
 MainMenu,1,LineDuel_MatchResults_DRAW,DIBUJAR
 MainMenu,1,LineDuel_NPCBattle_Strength_Text0,Principiante
-MainMenu,1,LineDuel_NPCBattle_Strength_Text1,Veterano
+MainMenu,1,LineDuel_NPCBattle_Strength_Text1,veterano
 MainMenu,1,LineDuel_NPCBattle_Strength_Text2,Experto
 MainMenu,1,LineDuel_MatchDetails_Title_Text,Información detallada
-MainMenu,1,LineDuel_MatchDetails_Message1,in your Rating .<c><br><br>Playable Areas: ARKS bases<br><br>Battle Reward: Card Scratch Voucher x12
-MainMenu,1,LineDuel_MatchDetails_Message2,your Rating .<c><br><br>Playable Areas: ARKS bases<br><br>Battle Reward: Card Scratch Voucher x15
+MainMenu,1,LineDuel_MatchDetails_Message1,椀渀 礀漀甀爀 刀愀琀椀渀最⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㄀㈀
+MainMenu,1,LineDuel_MatchDetails_Message2,礀漀甀爀 刀愀琀椀渀最⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㄀㔀
 MainMenu,1,LineDuel_MatchDetails_Message3,Bases ARKS o Espacios Creativos<br><br> Recompensa por Victoria:$(0)<br>Recompensa por Pérdida:$(1)<br>Recompensa por Empate:$(2)
-MainMenu,1,LineDuel_MatchDetails_Message4,<c><br><br>Playable Areas: ARKS bases or Creative Spaces<br><br>Battle Reward: Card Scratch Voucher x6
-MainMenu,1,LineDuel_CasualBattle_Title,Mensaje
-MainMenu,1,LineDuel_RankBattle_Title,Mensaje
-MainMenu,1,LineDuel_NPCBattle_Title,Mensaje
+MainMenu,1,LineDuel_MatchDetails_Message4,㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀 漀爀 䌀爀攀愀琀椀瘀攀 匀瀀愀挀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㘀
+MainMenu,1,LineDuel_CasualBattle_Title,mensaje
+MainMenu,1,LineDuel_RankBattle_Title,mensaje
+MainMenu,1,LineDuel_NPCBattle_Title,mensaje
 MainMenu,1,LineDuel_CasuaBattle_Message,"¿Iniciar batalla no clasificatoria?<br><br><yellow>*Una vez emparejado, no podrás abandonar hasta que termine el partido <br>. <c>"
 MainMenu,1,LineDuel_RankBattle_Message,"¿Iniciar batalla clasificatoria?<br><br><yellow>*Una vez emparejado, no podrás abandonar hasta que termine el partido <br>. <c>"
 MainMenu,1,LineDuel_NPCBattle_Message,"¿Iniciar la batalla de NPC?<br><br><yellow>*Una vez emparejado, no podrás abandonar hasta que termine el partido <br>. <c>"
 MainMenu,1,LineDuel_InqueCheckMessageWithPartyExit,"¿Iniciar batalla no clasificatoria?<br><br><yellow>*Una vez emparejado, no podrás abandonar hasta que termine el partido <br>. <c>"
-MainMenu,1,LineDuel_Battle_Error1,Las batallas clasificatorias y no clasificatorias solo se pueden jugar en bases ARKS <br>.
-MainMenu,1,LineDuel_Battle_Error2,Las Batallas de NPC solo se pueden jugar en Bases ARKS y Espacios Creativos <br>.
+MainMenu,1,LineDuel_Battle_Error1,Las batallas clasificatorias y no clasificatorias solo se pueden jugar en bases ARKS<br>
+MainMenu,1,LineDuel_Battle_Error2,Las Batallas de NPC solo se pueden jugar en Bases ARKS y Espacios Creativos<br>
 MainMenu,1,LineDuel_Reward_Title_Text,Recompensas obtenidas esta semana
 MainMenu,1,LineDuel_SlashNum,$(0)/$(1)
-MainMenu,1,DeckEdit_GuideText,k List: <%Exception> Change Active Window: <%ChangeCtrlWindowForward> Quit Editing: <%Cancel>
-MainMenu,1,DeckEdit_GuideText_DeckList,xception> Change Active Window: <%ChangeCtrlWindowForward> Quit Editing: <%Cancel>
+MainMenu,1,DeckEdit_GuideText,欀 䰀椀猀琀㨀 㰀─䔀砀挀攀瀀琀椀漀渀㸀 䌀栀愀渀最攀 䄀挀琀椀瘀攀 圀椀渀搀漀眀㨀 㰀─䌀栀愀渀最攀䌀琀爀氀圀椀渀搀漀眀䘀漀爀眀愀爀搀㸀 儀甀椀琀 䔀搀椀琀椀渀最㨀 㰀─䌀愀渀挀攀氀㸀
+MainMenu,1,DeckEdit_GuideText_DeckList,砀挀攀瀀琀椀漀渀㸀 䌀栀愀渀最攀 䄀挀琀椀瘀攀 圀椀渀搀漀眀㨀 㰀─䌀栀愀渀最攀䌀琀爀氀圀椀渀搀漀眀䘀漀爀眀愀爀搀㸀 儀甀椀琀 䔀搀椀琀椀渀最㨀 㰀─䌀愀渀挀攀氀㸀
 MainMenu,1,DeckEdit_Save_Message,Mazo guardado.
 MainMenu,1,DeckEdit_Save_Error_Message,Número insuficiente de cartas en el mazo. Operación cancelada.
 MainMenu,1,InvitationList_EmptyText,No hay solicitudes de batallas gratuitas.
 MainMenu,1,DeckEdit_SortDefault,Clasificación predeterminada
-MainMenu,1,DeckEdit_SortCost,Costo
+MainMenu,1,DeckEdit_SortCost,costo
 MainMenu,1,DeckEdit_SortNormal,Sólo tarjetas normales
 MainMenu,1,DeckEdit_SortRare,Sólo tarjetas de aluminio
 MainMenu,1,DeckEdit_HintTextUsing,Dentro de la cubierta
