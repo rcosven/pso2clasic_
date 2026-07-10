@@ -1,0 +1,25 @@
+﻿section,group,id,text
+common,0,TrialName,トランザーヴ破壊
+common,0,TrialBeginMsg,出現したエネミーを討伐し、発生源を破壊せよ！
+common,0,TrialBeginMsgObjOnly,エネミーの発生源を破壊せよ！
+common,0,TrialAbstract,エネミーを倒す
+common,0,TrialAbstractObjOnly,トランザーヴを破壊する
+common,1,TrialName,Destrucción Transorve
+common,1,TrialBeginMsg,¡Suprime a los enemigos que aparecen y destruye su punto de generación!
+common,1,TrialBeginMsgObjOnly,¡Destruye el punto de generación del enemigo!
+common,1,TrialAbstract,Derrota a los enemigos
+common,1,TrialAbstractObjOnly,Destruye los Transorves
+type103,0,NpcComOnForetaste,/voice11_voice_navi002_trial_0001_011 エネミーの発生源が近くにあるようです。<br>増援が出現する前に破壊してください。
+type103,0,NpcComOnBegin,/voice11_voice_navi002_trial_0001_020 “トランザーヴ”は、エネミーを転送するときに<br>シールドを解除して無防備になります。その隙に攻撃してください。
+type103,0,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 エネミーの殲滅を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnSuccessObjOnly,/voice11_voice_navi002_trial_0001_069 発生源の破壊を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnFailure,/voice11_voice_navi002_trial_0001_073 エネミーが撤退……。<br>通常の監視体制に移行します。
+type103,0,NpcComOnFailureObjOnly,/voice11_voice_navi002_trial_0001_073 発生源が消滅……。<br>通常の監視体制に移行します。
+type103,0,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 “トランザーヴ”がエネミーの転送を開始。<br>今のうちにコアを狙ってください。
+type103,1,NpcComOnForetaste,/voice11_voice_navi002_trial_0001_011 El punto de aparición del enemigo está cerca.<br>Destrúyelo antes de que puedan aparecer más.
+type103,1,NpcComOnBegin,son vulnerables cuando<br>teletransportan a los enemigos. Ese es el momento de atacar.
+type103,1,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 Se confirma la erradicación del enemigo.<br>Gracias por tu apoyo.
+type103,1,NpcComOnSuccessObjOnly,/voice11_voice_navi002_trial_0001_069 Punto de generación destruido.<br>Gracias por su apoyo.
+type103,1,NpcComOnFailure,/voice11_voice_navi002_trial_0001_073 Enemigo en retirada.<br>Cambio a monitorización estándar.
+type103,1,NpcComOnFailureObjOnly,/voice11_voice_navi002_trial_0001_073 El punto de generación ha desaparecido...<br>Cambiando al monitoreo estándar.
+type103,1,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 Los Transorves han comenzado a teletransportar enemigos. Apunta al núcleo<br>ahora.

@@ -1,0 +1,13 @@
+section,group,id,text
+common,0,TrialName,ドールズ輸送物資奪取
+common,0,TrialBeginMsg,フローティングボードを活用し、ドールズ輸送機から物資を奪取せよ！
+common,0,TrialAbstract,フローティングボードでコンテナを破壊する
+common,1,TrialName,Atraco al transporte de MUÑECAS
+common,1,TrialBeginMsg,¡Usa el tablero flotante y roba recursos del transporte DOLLS!
+common,1,TrialAbstract,Destruya contenedores de artículos usando una tabla flotante
+type104,0,NpcComOnBegin,/voice11_voice_navi003_trial_0001_019 ドールズ輸送機が接近中！<br>フローティングボードで追跡して、荷物を狙うんだ！
+type104,0,NpcComOnSuccess,/voice11_voice_navi003_trial_0001_064 全コンテナの切り離しを確認！<br>手に入れた物資は好きに使ってくれ。
+type104,0,NpcComOnFailure,/voice11_voice_navi003_trial_0001_074 輸送機を見失ったようだな。<br>まあ、次がある
+type104,1,NpcComOnBegin,/voice11_voice_navi003_trial_0001_019 ¡Se acerca un vehículo de transporte de MUÑECAS!<br>¡Persíguelo en una tabla flotante y libera sus recursos!
+type104,1,NpcComOnSuccess,/voice11_voice_navi003_trial_0001_064 ¡Se han eliminado todos los contenedores!<br>¡Usa los recursos como quieras!
+type104,1,NpcComOnFailure,/voice11_voice_navi003_trial_0001_074 Parece que el transporte se escapó.

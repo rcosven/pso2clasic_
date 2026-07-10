@@ -1,0 +1,19 @@
+section,group,id,text
+AcceptCondition,0,a1,特定のクライアントオーダーのクリア
+AcceptCondition,0,a2,特定のクライアントオーダーのクリア
+AcceptCondition,0,a3,スーパーハード受注許可証の所持
+AcceptCondition,1,a1,Completar un pedido de cliente especial
+AcceptCondition,1,a2,Completar un pedido de cliente especial
+AcceptCondition,1,a3,Poseer un permiso de dificultad súper difícil
+Basic,0,Title,旧跡の迎撃戦'24
+Basic,0,Explanation,ベルガナ遺跡で、複数の強力な時空振動が確認された。<br>反応の大きさから、多数の統制型ドールズの現出が見込まれる。<br>アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。
+Basic,1,Title,Una intercepción de ruinas '24
+Basic,1,Explanation,enemigo.
+FailureCondition,0,f0,20回戦闘不能になる<br>制限時間が経過する
+FailureCondition,1,f0,Quedar incapacitado 20 veces<br>Exceder el límite de tiempo
+QuestTarget,0,SimpleExplanation,全てのエネミーを倒す
+QuestTarget,1,SimpleExplanation,Derrota a todos los enemigos
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota al enemigo objetivo
+TrialBeginDetail,0,normalMsg_1340200,全てのエネミーを倒す
+TrialBeginDetail,1,normalMsg_1340200,Derrota a todos los enemigos

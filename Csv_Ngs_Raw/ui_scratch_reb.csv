@@ -1,0 +1,288 @@
+section,group,id,text
+ScratchMain,0,ScratchMenue_Title,スクラッチを引く
+ScratchMain,0,ScratchMenue_Help,対応した通貨、チケットでスクラッチを購入し景品を入手できます。
+ScratchMain,0,ScratchChoice_Title,スクラッチ選択
+ScratchMain,0,ScratchChoice_Possession,所持金
+ScratchMain,0,ScratchChoice__FreebieListButton,景品リスト
+ScratchMain,0,ScratchChoice__PossessionTicket,所持スクラッチ券
+ScratchMain,0,ScratchChoice__PossessionTicketCount,$(0)枚
+ScratchMain,0,ScratchChoice__StepUp1,１周
+ScratchMain,0,ScratchChoice__StepUp2,２周
+ScratchMain,0,ScratchChoice__StepUp3,３周
+ScratchMain,0,ScratchChoice_IncentiveTicketName,$(0)
+ScratchMain,0,ScratchChoice_IncentiveTicketCount,$(0)枚
+ScratchMain,0,ScratchChoice__BuyScratchAC,ACで$(1)回引く<br>$(0)<pict 4space><pict ac_icon_22>
+ScratchMain,0,ScratchChoice__BuyScratchSG,SGで$(1)回引く<br>$(0)<pict 4space><pict sg_icon_22>
+ScratchMain,0,ScratchChoice__BuyScratchTicket,スクラッチ券で<br>$(1)回引く<br>必要数：$(0)枚
+ScratchMain,0,ScratchChoice__BuyScratchNoCharge,無料で$(0)回引く<br>毎日<utc>8:00</utc>にリセット
+ScratchMain,0,ScratchChoice__BuyScratchNoCharge_AddPlayLimit,$(0)<br>残り回数：$(1)回
+ScratchMain,0,ScratchChoice__BuyScratchNoChargeFTAC,無料で$(0)回引く
+ScratchMain,0,ScratchChoice__CountBonus,あと$(0)回でプレゼント！
+ScratchMain,0,ScratchChoice__CouponButton,引換券交換<br>$(0)
+ScratchMain,0,ScratchChoice__ScratchCategory_AC,ACスクラッチ
+ScratchMain,0,ScratchChoice__ScratchCategory_SG,SGスクラッチ
+ScratchMain,0,ScratchChoice__ScratchCategory_Ticket,スペシャルスクラッチ
+ScratchMain,0,ScratchChoice__ScratchCategory_NoCharge,無料スクラッチ
+ScratchMain,0,ScratchChoice__ScratchCategory_StepUp,ステップアップ
+ScratchMain,0,ScratchChoice_ConfirmationAC,<pict Arcscash>AC消費コンテンツ<br>$(1)を<br>$(0)ACで購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationSG,<pict StarGem>SG消費コンテンツ<br>$(1)を<br>$(0)SGで購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationTicket,$(1)を<br>スクラッチ券$(0)枚で購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationNoCharge,$(1)を<br>$(0)回、無料で引きます。<br>※毎日、<utc>8:00</utc>に引けます。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationNoChargeFTAC,$(1)を<br>$(0)回、無料で引きます。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationACre,<pict Arcscash>AC消費コンテンツ<br>続けて$(1)を<br>$(0)ACで購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationSGre,<pict StarGem>SG消費コンテンツ<br>続けて$(1)を<br>$(0)SGで購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationTicketRe,続けて$(1)を<br>スクラッチ券$(0)枚で購入します。<br>よろしいですか？
+ScratchMain,0,ScratchChoice_ConfirmationNoChargeRe,続けて$(1)を<br>$(0)回、無料で引きます。<br>※毎日、<utc>15:00</utc>に引けます。<br>よろしいですか？
+ScratchMain,0,ScratchResult_Title,スクラッチ結果
+ScratchMain,0,ScratchResult_Explanation,以下の景品が当たりました！<br>「スクラッチ倉庫」にからお受取りください。<br><yellow>※受け取りに有効期限がありますので<br>　ご注意ください。<c>
+ScratchMain,0,ScratchResult_UseTicket_Title,チケット使用確認
+ScratchMain,0,ScratchResult_UseTicket_Mess,選択したアイテムを使用します。<br>よろしいですか？
+ScratchMain,0,ScratchResult_UseTicket_Mess_NoUse,以下のチケットアイテムを使用できます。<br>このまま使用しますか？<br><br>※リストから選択し、1つずつ使用することもできます。
+ScratchMain,0,ScratchResult_1UseTicket_Mess,$(0)を使用することができます。<br>このまま使用しますか？
+ScratchMain,0,ScratchResult_UseTicket_AllUse,すべて使う
+ScratchMain,0,ScratchResult_AllUseTicket_Title,チケット使用確認
+ScratchMain,0,ScratchResult_AllUseTicket_Mess,使用可能なチケットアイテムをすべて使用します。<br>よろしいですか？
+ScratchMain,0,ScratchError_StorageMax_Title,スクラッチ倉庫容量不足
+ScratchMain,0,ScratchError_StorageMax_Mess,スクラッチ倉庫の容量がいっぱいのため<br>スクラッチを購入できません。<br><br>スクラッチ倉庫から景品を受け取ってから<br>再度購入してください。
+ScratchMain,0,ScratchError_AC_Shortage_Title,所持AC不足
+ScratchMain,0,ScratchError_AC_Shortage_Mess,ACが不足しているため<br>購入できません。<br><br>ACを購入しますか？
+ScratchMain,0,ScratchError_SG_Shortage_Title,所持SG不足
+ScratchMain,0,ScratchError_SG_Shortage_Mess,SGが不足しているため<br>購入できません。<br><br>SGを購入しますか？
+ScratchMain,0,ScratchError_Ticket_Shortage_Title,所持チケット不足
+ScratchMain,0,ScratchError_Ticket_Shortage_Mess,対象のスクラッチ券が不足しているため<br>購入できません。
+ScratchMain,0,CardScratchDirectBillingConfirmation_Message,カードスクラッチ補助券が不足しているため<br>購入できません。<br><br>ACショップに移動しますか？
+ScratchMain,0,CardScratchACShopJumpConfirmation_Message,カードスクラッチ補助券を<br>ACショップで購入することが可能です。<br><br>ACショップに移動しますか？
+ScratchMain,0,CardScratchDirectBillingConfirmation_Title,カードスクラッチ補助券購入確認
+ScratchMain,0,ScratchError_FirstTime_Mess,先に初回無料ACスクラッチを引いてください。
+ScratchMain,0,ScratchPrizeList_Title,景品リスト
+ScratchMain,0,ScratchPrizeList_PrizeItem,景品アイテム
+ScratchMain,0,ScratchPrizeList_EmissionRate,排出率
+ScratchMain,0,Bonus_Title,回数ボーナス確認
+ScratchMain,0,Bonus_Text01,このスクラッチを引いた回数
+ScratchMain,0,Bonus_Text02,<$Count>回
+ScratchMain,0,Bonus_Text03,すべて獲得すると、獲得状況がリセットされ<br>また回数ボーナスを受け取ることができます。
+ScratchMain,0,PrizeChange_Check_Title,交換券消費確認
+ScratchMain,0,PrizeChange_Check_Mess01,$(2)×1<br>と、$(0)を交換します。<br>よろしいですか？<br>※以下のアイテム以外は消費されません。<br><br>（所持交換チケット：$(1)枚）
+ScratchMain,0,PrizeChange_Check_Complete,景品と交換が完了しました。
+ScratchMain,0,PrizeChange_Check_Error,アイテムパックの空き容量不足<br>または所持数の限界を超えているため<br>交換できませんでした。
+ScratchMain,0,PrizeChange_Check_Error02,現在、選択したスクラッチは購入できません。<br>詳細はプレイヤーズサイトをご確認ください。
+ScratchMain,0,EmissionParcent,$(0)%
+ScratchMain,0,ScratchLabelBonus,ボーナス
+ScratchMain,0,ScratchLabelStage1,1周目
+ScratchMain,0,ScratchLabelStage2,2周目以降
+ScratchMain,0,AllUse,すべて使う
+ScratchMain,0,Title_scratch,獲得アイテム一覧
+ScratchMain,0,Title_useitem,アイテム使用
+ScratchMain,0,scratch_message,以下の景品が当たりました！
+ScratchMain,0,bonus_message,「1周目」の報酬をすべて獲得すると、「2周目以降」に進みます。<br>「2周目以降」は、繰り返し報酬を獲得できます。
+ScratchMain,0,useitem_message,使用可能な獲得チケットアイテムを、すべて使用しますか？<br>アイテムを選択して、１つずつ使用することもできます。<br><yellow>※倉庫に送られたアイテムは表示されません。<c>
+ScratchMain,0,useitem_message2,使用可能な獲得チケットアイテムを、すべて使用しますか？<br>アイテムを選択して、１つずつ使用することもできます。
+ScratchMain,0,Tags01,イチオシ！
+ScratchMain,0,Tags02,人気！
+ScratchMain,0,Tags03,ボーナス！
+ScratchMain,0,Tags04,陳列終了予定
+ScratchMain,0,GachaBonusCommentNothing_re,このスクラッチは<br>回数ボーナスがありません。
+ScratchMain,0,GachaBonusCommentAchieved_re,このスクラッチの<br>回数ボーナスは獲得済みです。
+ScratchMain,0,ScratchChoice_LimitedTime,陳列期限
+ScratchMain,0,ScratchStep_CurrentStep,現在のステップ
+ScratchMain,0,ScratchStep_CurrentStep2,Step.$(0)（現在のステップ）
+ScratchMain,0,ScratchStep_Step,Step.$(0)
+ScratchMain,0,ScratchStep_CurrentStepBonus,<c 97e2fc>現在のステップボーナス<c><br>$(0)
+ScratchMain,0,ScratchStep_Bonus01,効果無し
+ScratchMain,0,ScratchStep_Bonus02,イチオシ景品入手確率UP($(0)倍)
+ScratchMain,0,ScratchStepBonus_Title,ステップボーナス確認
+ScratchMain,0,ScratchStepBonus_Text,スクラッチを引いた回数に応じてステップが上がります。<br>現在のステップ数に応じてステップボーナスが発生します。
+ScratchMain,0,ScratchSearchTitle,カテゴリーの設定
+ScratchMain,0,ScratchSearchItem_1,すべて表示
+ScratchMain,0,ScratchSearchItem_2,アウターウェア
+ScratchMain,0,ScratchSearchItem_3,ベースウェア/セットウェア
+ScratchMain,0,ScratchSearchItem_4,インナーウェア
+ScratchMain,0,ScratchSearchItem_5,ヘアスタイル
+ScratchMain,0,ScratchSearchItem_6,アクセサリー
+ScratchMain,0,ScratchSearchItem_7,ボディペイント
+ScratchMain,0,ScratchSearchItem_8,コスチューム
+ScratchMain,0,ScratchSearchItem_9,ボディパーツ
+ScratchMain,0,ScratchSearchItem_10,アームパーツ
+ScratchMain,0,ScratchSearchItem_11,レッグパーツ
+ScratchMain,0,ScratchSearchItem_12,ヘッドパーツ
+ScratchMain,0,ScratchSearchItem_13,武器迷彩
+ScratchMain,0,ScratchSearchItem_14,消費アイテム
+ScratchMain,0,ScratchSearchItem_15,その他
+ScratchMain,0,ScratchSearchItem_none,対象のアイテムがありません
+ScratchMain,0,ScratchSearchItem_16,ビルドパーツ
+ScratchMain,0,ScratchSearchItem_17,ポータブルホログラム
+ScratchMain,0,ScratchError_NotAchieved_Title,条件未達成
+ScratchMain,0,ScratchError_NotAchieved_Mess,このスクラッチは以下の条件を満たすことで<br>引けるようになります。<br>　・メインタスク「リテムシティへ」を達成
+ScratchMain,1,ScratchMenue_Title,Jugar boletos rasca y gana
+ScratchMain,1,ScratchMenue_Help,Compre boletos rasca y gana usando moneda o boletos y obtenga premios.
+ScratchMain,1,ScratchChoice_Title,Selección de boletos rasca y gana
+ScratchMain,1,ScratchChoice_Possession,Efectivo actual
+ScratchMain,1,ScratchChoice__FreebieListButton,Lista de premios
+ScratchMain,1,ScratchChoice__PossessionTicket,Tus boletos rasca y gana
+ScratchMain,1,ScratchChoice__PossessionTicketCount,$(0)
+ScratchMain,1,ScratchChoice__StepUp1,Etapa 1
+ScratchMain,1,ScratchChoice__StepUp2,Etapa 2
+ScratchMain,1,ScratchChoice__StepUp3,Etapa 3
+ScratchMain,1,ScratchChoice_IncentiveTicketName,$(0)
+ScratchMain,1,ScratchChoice_IncentiveTicketCount,$(0)
+ScratchMain,1,ScratchChoice__BuyScratchAC,Juega $(1) veces con<br>AC: $(0) <pict ac_icon_22>
+ScratchMain,1,ScratchChoice__BuyScratchSG,Juega $(1) veces con<br>SG: $(0) <pict sg_icon_22>
+ScratchMain,1,ScratchChoice__BuyScratchTicket,Juegue $(1) veces con boletos rasca y gana<br>Requerido: $(0)
+ScratchMain,1,ScratchChoice__BuyScratchNoCharge,Juega $(0) veces gratis<br>Se reinicia diariamente<utc>8:00 </utc>
+ScratchMain,1,ScratchChoice__BuyScratchNoCharge_AddPlayLimit,$(0)<br>Jugadas restantes: $(1)
+ScratchMain,1,ScratchChoice__BuyScratchNoChargeFTAC,Juega $(0) veces gratis
+ScratchMain,1,ScratchChoice__CountBonus,¡$(0) más juega para obtener un regalo!
+ScratchMain,1,ScratchChoice__CouponButton,Boletos de cambio<br>$(0)
+ScratchMain,1,ScratchChoice__ScratchCategory_AC,Boletos rasca y gana AC
+ScratchMain,1,ScratchChoice__ScratchCategory_SG,Boletos rasca y gana SG
+ScratchMain,1,ScratchChoice__ScratchCategory_Ticket,Rasguño especial
+ScratchMain,1,ScratchChoice__ScratchCategory_NoCharge,Boleto rasca y gana gratis
+ScratchMain,1,ScratchChoice__ScratchCategory_StepUp,Aumentar
+ScratchMain,1,ScratchChoice_ConfirmationAC,<pict Arcscash> Pago de CA requerido<br>Compra $(1)<br>por $(0)AC.<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationSG,<pict StarGem> Pago de SG requerido<br>Compra $(1)<br>por $(0)SG.<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationTicket,Compre $(1)<br>por $(0) boletos rasca y gana.<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationNoCharge,Juega $(1) $(0) veces gratis.<br>Nota: Puedes jugar todos los días a las<utc>8:00 </utc>.<br>¿Está seguro de que desea continuar?
+ScratchMain,1,ScratchChoice_ConfirmationNoChargeFTAC,Juega $(1) $(0) veces gratis.<br>¿Está seguro de que desea continuar?
+ScratchMain,1,ScratchChoice_ConfirmationACre,<pict Arcscash> Pago de AC requerido<br>Continuar comprando $(1)<br>por $(0)AC.<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationSGre,<pict StarGem> Pago de SG requerido<br>Continuar comprando $(1)<br>por $(0)SG.<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationTicketRe,Continuar comprando $(1)<br>por $(0) boletos rasca y gana..<br>¿Continuar?
+ScratchMain,1,ScratchChoice_ConfirmationNoChargeRe,攀瘀攀爀礀 搀愀礀 愀琀 㰀甀琀挀㸀㄀㔀㨀　　㰀⼀甀琀挀㸀⸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀
+ScratchMain,1,ScratchResult_Title,Resultado del billete rasca y gana
+ScratchMain,1,ScratchResult_Explanation,最攀⸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀倀氀攀愀猀攀 渀漀琀攀 琀栀愀琀 琀栀攀爀攀 椀猀 愀 琀椀洀攀 氀椀洀椀琀 昀漀爀 爀攀琀爀椀攀瘀愀氀⸀㰀挀㸀
+ScratchMain,1,ScratchResult_UseTicket_Title,Confirmar el uso del billete
+ScratchMain,1,ScratchResult_UseTicket_Mess,¿Usar el elemento seleccionado?
+ScratchMain,1,ScratchResult_1UseTicket_Mess,$(0) está disponible para su uso.<br>¿Continuar y usarlo?
+ScratchMain,1,ScratchResult_UseTicket_AllUse,Usar todo
+ScratchMain,1,ScratchResult_AllUseTicket_Title,Confirmar el uso del billete
+ScratchMain,1,ScratchResult_AllUseTicket_Mess,¿Utilizar todos los artículos de entradas disponibles?
+ScratchMain,1,ScratchError_StorageMax_Title,Almacenamiento de boletos rasca y gana lleno
+ScratchMain,1,ScratchError_StorageMax_Mess,No se pudieron comprar boletos de rasca y gana porque su almacenamiento de boletos de rasca y gana<br>está lleno.<br><br> Elimina algunos premios y vuelve a intentarlo.
+ScratchMain,1,ScratchError_AC_Shortage_Title,No hay suficiente aire acondicionado
+ScratchMain,1,ScratchError_AC_Shortage_Mess,No tienes suficiente aire acondicionado.<br><br> ¿Comprar más?
+ScratchMain,1,ScratchError_SG_Shortage_Title,No hay suficientes gemas estelares
+ScratchMain,1,ScratchError_SG_Shortage_Mess,No tienes suficientes Star Gems.<br><br> ¿Comprar más?
+ScratchMain,1,ScratchError_Ticket_Shortage_Title,No hay suficientes entradas
+ScratchMain,1,ScratchError_Ticket_Shortage_Mess,No tienes suficientes boletos rasca y gana requeridos.
+ScratchMain,1,CardScratchDirectBillingConfirmation_Message,No tienes suficientes vales de tarjeta rasca y gana para comprar.<br><br> ¿Ir a la tienda de aire acondicionado?
+ScratchMain,1,CardScratchACShopJumpConfirmation_Message,Los vales de tarjeta rasca y gana se pueden comprar en AC Shop.<br><br> ¿Ir a la tienda de aire acondicionado?
+ScratchMain,1,CardScratchDirectBillingConfirmation_Title,Confirmar la compra del cupón de rascar con tarjeta
+ScratchMain,1,ScratchError_FirstTime_Mess,Juegue primero los boletos rasca y gana de AC gratuitos por primera vez.
+ScratchMain,1,ScratchPrizeList_Title,Lista de premios
+ScratchMain,1,ScratchPrizeList_PrizeItem,Artículos de premio
+ScratchMain,1,ScratchPrizeList_EmissionRate,Tasa de victorias
+ScratchMain,1,Bonus_Title,Consulta el bono de juego
+ScratchMain,1,Bonus_Text01,Veces que has jugado este boleto rasca y gana
+ScratchMain,1,Bonus_Text02,<$Count> Veces
+ScratchMain,1,Bonus_Text03,"Una vez que se haya ganado todo, el contador se reinicia y podrá comenzar a ganar nuevamente."
+ScratchMain,1,PrizeChange_Check_Title,Confirmar el uso del billete de cambio
+ScratchMain,1,PrizeChange_Check_Mess01,Cambie 1 $(2) por $(0).<br>¿Estás seguro?<br>Nota: Solo se consumirán los siguientes artículos.<br><br> (Tus boletos de intercambio: $(1))
+ScratchMain,1,PrizeChange_Check_Complete,Premio canjeado.
+ScratchMain,1,PrizeChange_Check_Error,No se pudo intercambiar. O su inventario está lleno o ha excedido su límite de transporte.
+ScratchMain,1,PrizeChange_Check_Error02,No se puede comprar el boleto rasca y gana que seleccionó. Consulte el sitio del jugador para obtener más detalles.
+ScratchMain,1,EmissionParcent,$(0)%
+ScratchMain,1,ScratchLabelBonus,Prima
+ScratchMain,1,ScratchLabelStage1,Etapa 1
+ScratchMain,1,ScratchLabelStage2,Etapa 2 (y superiores)
+ScratchMain,1,AllUse,Usar todo
+ScratchMain,1,Title_scratch,Lista de artículos adquiridos
+ScratchMain,1,Title_useitem,Usar artículo
+ScratchMain,1,scratch_message,¡Ganaste los siguientes premios!
+ScratchMain,1,bonus_message,Adquiera todos los premios de la Etapa 1 para pasar a la Etapa 2 y superiores.<br>En la Etapa 2 y superiores puedes obtener premios repetidamente.
+ScratchMain,1,useitem_message,猀攀 漀渀攀 戀礀 漀渀攀⸀㰀戀爀㸀㰀礀攀氀氀漀眀㸀一漀琀攀㨀 䤀琀攀洀猀 猀攀渀琀 琀漀 猀琀漀爀愀最攀 眀椀氀氀 渀漀琀 戀攀 搀椀猀瀀氀愀礀攀搀⸀㰀挀㸀
+ScratchMain,1,useitem_message2,¿Usar todos los artículos de boletos disponibles obtenidos?<br>También puedes seleccionar qué elementos usar uno por uno.
+ScratchMain,1,Tags01,Presentado
+ScratchMain,1,Tags02,¡CALIENTE!
+ScratchMain,1,Tags03,¡Prima!
+ScratchMain,1,Tags04,Fin de la pantalla
+ScratchMain,1,GachaBonusCommentNothing_re,Este billete rasca y gana<br>no tiene premios de bonificación de conteo.
+ScratchMain,1,GachaBonusCommentAchieved_re,Ha ganado<br>premios de bonificación totales por este boleto.
+ScratchMain,1,ScratchChoice_LimitedTime,Disponible hasta:
+ScratchMain,1,ScratchStep_CurrentStep,Etapa actual
+ScratchMain,1,ScratchStep_CurrentStep2,Etapa $(0) (Etapa actual)
+ScratchMain,1,ScratchStep_Step,Etapa $(0)
+ScratchMain,1,ScratchStep_CurrentStepBonus,<c 97e2fc> Bono de etapa actual<c><br> $(0)
+ScratchMain,1,ScratchStep_Bonus01,Sin efectos
+ScratchMain,1,ScratchStep_Bonus02,Tarifa de artículo destacado ARRIBA (x$(0))
+ScratchMain,1,ScratchStepBonus_Title,Ver bonificación de etapa
+ScratchMain,1,ScratchStepBonus_Text,栀⸀㰀戀爀㸀夀漀甀✀氀氀 愀氀猀漀 最攀琀 愀 猀琀愀最攀 戀漀渀甀猀 搀攀瀀攀渀搀椀渀最 漀渀 礀漀甀爀 挀甀爀爀攀渀琀 猀琀愀最攀⸀
+ScratchMain,1,ScratchSearchTitle,Configuración de categoría
+ScratchMain,1,ScratchSearchItem_1,Mostrar todo
+ScratchMain,1,ScratchSearchItem_2,Ropa de calle
+ScratchMain,1,ScratchSearchItem_3,Ropa básica/Conjunto
+ScratchMain,1,ScratchSearchItem_4,ropa interior
+ScratchMain,1,ScratchSearchItem_5,Peinados
+ScratchMain,1,ScratchSearchItem_6,Accesorios
+ScratchMain,1,ScratchSearchItem_7,pintura corporal
+ScratchMain,1,ScratchSearchItem_8,Trajes
+ScratchMain,1,ScratchSearchItem_9,Partes del cuerpo
+ScratchMain,1,ScratchSearchItem_10,Partes del brazo
+ScratchMain,1,ScratchSearchItem_11,Partes de la pierna
+ScratchMain,1,ScratchSearchItem_12,Partes de la cabeza
+ScratchMain,1,ScratchSearchItem_13,Camuflaje de armas
+ScratchMain,1,ScratchSearchItem_14,Consumibles
+ScratchMain,1,ScratchSearchItem_15,Varios.
+ScratchMain,1,ScratchSearchItem_none,No se encontraron artículos.
+ScratchMain,1,ScratchSearchItem_16,Construir piezas
+ScratchMain,1,ScratchSearchItem_17,Holograma portátil
+ScratchMain,1,ScratchError_NotAchieved_Title,Condiciones no cumplidas
+ScratchMain,1,ScratchError_NotAchieved_Mess,"Debes cumplir con la siguiente condición para jugar este billete rasca y gana.<br>- Completa la tarea principal ""A la ciudad de Retem"""
+ScratchStorage,0,Title,スクラッチ倉庫
+ScratchStorage,0,Header_ItemName,アイテム名
+ScratchStorage,0,Header_SavePeriod,保存期限
+ScratchStorage,0,Sort_Save,保存期限
+ScratchStorage,0,Sort_Reality,レアリティ
+ScratchStorage,0,Sort_Costume,コスチューム/パーツ
+ScratchStorage,0,Sort_Camouflage,武器迷彩
+ScratchStorage,0,Sort_Consumables,消費アイテム
+ScratchStorage,0,Sort_etr,その他
+ScratchStorage,0,ReceiveButton,すべて受け取る
+ScratchStorage,0,SavePeriodNote_Title,保存期限
+ScratchStorage,0,SavePeriodNote_Header1,保存期限が切れたアイテムについて
+ScratchStorage,0,SavePeriodNote_Header1Mess,スクラッチ倉庫は、<yellow>格納された<br>アイテムそれぞれに保存期限があります。<c><br>保存期限を過ぎたアイテムは<br>「リサイクルポイント」に自動変換されます。<br>アイテムは必ず受け取るようにお願いします。
+ScratchStorage,0,SavePeriodNote_Header2,リサイクルポイントの変換
+ScratchStorage,0,SavePeriodNote_Header2Mess,景品に対応したスクラッチ1回分に変換
+ScratchStorage,0,StorageCheck_Title,受け取り倉庫確認
+ScratchStorage,0,StorageCheck_Mess,$(0)個のアイテムの受け取り先を選択してください。<br><yellow>※多すぎる場合、受け取れる分だけ受け取ります。<c>
+ScratchStorage,0,StorageCheck_BuckButton,戻る
+ScratchStorage,0,StorageCheck_GetPrize,アイテムを受け取りました。
+ScratchStorage,0,StorageCheck_MaxError,受け取り先に空きがないため、アイテムを受け取れません。<br>空いている受け取り先を選択するか<br>アイテムを整理してください。
+ScratchStorage,0,StorageCheck_GetPrize2,一部受け取れないアイテムがありました。
+ScratchStorage,0,ChangePoint_Title,スクラッチ
+ScratchStorage,0,ChangePoint_Text01,受け取り期限が過ぎたため<br>以下のアイテムをリサイクルポイントに変換しました。
+ScratchStorage,0,ChangePoint_Text02,景品名
+ScratchStorage,0,ChangePoint_Text03,保存期間
+ScratchStorage,0,ChangePoint_Text04,ポイント
+ScratchStorage,0,ChangePoint_Text05,$(0)まで
+ScratchStorage,0,ChangePoint_CloseButton,閉じる
+ScratchStorage,0,ChangePoint_mess01,スクラッチ倉庫に未受け取りアイテムがあります。
+ScratchStorage,0,ChangePoint_mess02,スクラッチ倉庫に<pure_red>受取期限が近い未受け取りアイテム<c>があります。
+ScratchStorage,1,Title,Almacenamiento de billetes rasca y gana
+ScratchStorage,1,Header_ItemName,Nombre del artículo
+ScratchStorage,1,Header_SavePeriod,Caducidad del almacenamiento
+ScratchStorage,1,Sort_Save,Caducidad del almacenamiento
+ScratchStorage,1,Sort_Reality,Rareza
+ScratchStorage,1,Sort_Costume,Equipo/Partes
+ScratchStorage,1,Sort_Camouflage,Camuflaje de armas
+ScratchStorage,1,Sort_Consumables,Consumibles
+ScratchStorage,1,Sort_etr,Otro
+ScratchStorage,1,ReceiveButton,tomar todo
+ScratchStorage,1,SavePeriodNote_Title,Caducidad del almacenamiento
+ScratchStorage,1,SavePeriodNote_Header1,Artículos más allá de su vencimiento de almacenamiento
+ScratchStorage,1,SavePeriodNote_Header1Mess,Los vencimientos<br>se convierten automáticamente en puntos de intercambio.<br>Asegúrese de recuperar sus artículos.
+ScratchStorage,1,SavePeriodNote_Header2,Conversión de puntos de intercambio
+ScratchStorage,1,SavePeriodNote_Header2Mess,Convertir en billete rasca y gana de 1 premio
+ScratchStorage,1,StorageCheck_Title,Seleccionar almacenamiento de recuperación
+ScratchStorage,1,StorageCheck_Mess,Elija dónde enviar artículos de $(0).<br><yellow> Nota: No se enviará ningún artículo que exceda la capacidad. <c>
+ScratchStorage,1,StorageCheck_BuckButton,Atrás
+ScratchStorage,1,StorageCheck_GetPrize,Artículo recibido.
+ScratchStorage,1,StorageCheck_MaxError,No hay espacio en destino.<br>Seleccione otro destino o libere espacio.
+ScratchStorage,1,StorageCheck_GetPrize2,Algunos elementos no se pudieron recuperar.
+ScratchStorage,1,ChangePoint_Title,Boletos rasca y gana
+ScratchStorage,1,ChangePoint_Text01,El período de recuperación expiró.<br>Los siguientes artículos se convirtieron en puntos de intercambio.
+ScratchStorage,1,ChangePoint_Text02,Nombre del premio
+ScratchStorage,1,ChangePoint_Text03,Período de almacenamiento
+ScratchStorage,1,ChangePoint_Text04,Agujas
+ScratchStorage,1,ChangePoint_Text05,Hasta $(0)
+ScratchStorage,1,ChangePoint_CloseButton,Cerca
+ScratchStorage,1,ChangePoint_mess01,Tienes artículos no recuperados en el almacenamiento de boletos rasca y gana.
+ScratchStorage,1,ChangePoint_mess02,<pure_red> Tiene artículos no recuperados a punto de caducar<c>en el Almacenamiento de boletos rasca y gana.

@@ -1,0 +1,21 @@
+﻿section,group,id,text
+common,0,TrialName,ステラーギフト回収
+common,0,TrialBeginMsg,付近のエネミーを討伐し、落下したステラーギフトを回収せよ！
+common,0,TrialAbstract,エネミーを倒す
+common,1,TrialName,Recoge el paquete estelar
+common,1,TrialBeginMsg,¡Suprime a los enemigos cercanos y recoge el paquete estelar!
+common,1,TrialAbstract,Derrotar enemigos
+type102,0,NpcComOnForetaste,/voice11_voice_navi001_trial_0001_000 上空に飛翔体を確認！<br>近くに落下しそうです。注意してください！
+type102,0,NpcComOnSuccess,/voice11_voice_navi001_trial_0001_007 エネミーの殲滅を確認しました。<br>ステラーギフトを回収してください。
+type102,0,NpcComOnFailure,/voice11_voice_navi001_trial_0001_072 プロテクト解除のリミットに間に合わなかったようです。<br>ステラーギフトの回収に失敗しました。その場から撤収してください。
+type102,1,NpcComOnForetaste,/voice11_voice_navi001_trial_0001_000 ¡Proyectiles detectados en lo alto!<br>Están listos para aterrizar cerca. ¡Esté atento!
+type102,1,NpcComOnSuccess,/voice11_voice_navi001_trial_0001_007 El enemigo ha sido destruido.<br>Por favor recoja los paquetes estelares.
+type102,1,NpcComOnFailure,quitando la protección.<br>Error en la recopilación del paquete estelar. Por favor retírese.
+type108,0,NpcComOnForetaste,あっ……、ステラーギフト。<br>でも、いつものとなにか違う……かも？
+type108,0,NpcComOnForetaste2,いいものが入ってる……かな？<br>エネミー倒して、開けてみてください。
+type108,0,NpcComOnSuccess,エネミー……倒せたみたいですね。<br>ステラーギフトの回収、忘れずに。
+type108,0,NpcComOnFailure,プロテクト解除、間に合わなかったみたいですね。<br>ドンマイ……です。
+type108,1,NpcComOnForetaste,¡Oh! Un paquete estelar.<br>Pero algo es diferente... ¿creo?
+type108,1,NpcComOnForetaste2,Me pregunto si hay algo bueno dentro.<br>Elimina a los enemigos y ábrelo.
+type108,1,NpcComOnSuccess,Los enemigos se han ido.<br>No olvides el Paquete Estelar.
+type108,1,NpcComOnFailure,No quitaste la protección a tiempo.<br>No es gran cosa.

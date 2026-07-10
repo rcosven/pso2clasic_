@@ -1,0 +1,44 @@
+section,group,id,text
+common,0,TrialName_1Enemy,$(0)討伐
+common,0,TrialName_1Enemy_normal,エネミー討伐
+common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
+common,0,TrialBeginMsg_1Enemy_?????,出現した？？？？？を倒せ！
+common,0,TrialAbstract_1Enemy,$(0)を倒す
+common,0,TrialAbstract_1Enemy_?????,？？？？？を倒す
+common,0,TrialName_Multi,エネミー討伐
+common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
+common,0,TrialAbstract_Multi,エネミーを倒す
+common,0,GaugeCharge,M.A.R.S.バッテリーが一定量回復しました。
+common,1,TrialName_1Enemy,$(0) Supresión
+common,1,TrialName_1Enemy_normal,Supresión enemiga
+common,1,TrialBeginMsg_1Enemy,¡Derrota a los $(0)!
+common,1,TrialBeginMsg_1Enemy_?????,¡Derrota al ???!
+common,1,TrialAbstract_1Enemy,Derrota al $(0).
+common,1,TrialAbstract_1Enemy_?????,Derrota al ???
+common,1,TrialName_Multi,Supresión enemiga
+common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos!
+common,1,TrialAbstract_Multi,Derrota a los enemigos.
+common,1,GaugeCharge,MARTE. batería parcialmente restaurada.
+type102,0,NpcComOnForetaste,その付近に要警戒エネミーがいるようです！<br>至急、討伐をお願いします。
+type102,0,NpcComOnSuccess,エネミーの殲滅を確認しました！<br>即応、ありがとうございます。
+type102,0,NpcComOnFailure,エネミーが撤退しました。<br>……ひとまず、脅威は去りましたね。
+type102,0,NpcComOnForetasteNGS2,/voice11_voice_navi001_trial_0001_002 強力なエネミーの出現を確認！<br>そのあたりでは、ふだん見かけない個体です。注意してください！
+type102,0,NpcComOnSuccessNGS2,/voice11_voice_navi001_trial_0001_069 エネミーの撃破を確認しました！<br>対応いただき、ありがとうございます。
+type102,0,NpcComOnFailureNGS2,/voice11_voice_navi001_trial_0001_073 エネミーが撤退しました。<br>……深追いせず、別の目標を探しましょう。
+type102,0,NpcComOnForetaste_DryverusTrial,その付近に強力なエネミーがいるようです！<br>至急、対応をお願いします。
+type102,0,NpcComOnSuccess_DryverusTrial,エネミーへの対応、<br>ありがとうございます。
+type102,1,NpcComOnForetaste,Enemy assembly point discovered nearby!
+type102,1,NpcComOnSuccess,The enemy has been eradicated.<br>Good work!
+type102,1,NpcComOnFailure,"The enemy has fled.<br>There's always next time, I guess."
+type102,1,NpcComOnForetasteNGS2,/voice11_voice_navi001_trial_0001_002 Powerful enemies detected! These enemies are atypical for<br>the area! Be on guard!
+type102,1,NpcComOnSuccessNGS2,/voice11_voice_navi001_trial_0001_069 Enemy destroyed!<br>Your support is appreciated.
+type102,1,NpcComOnFailureNGS2,/voice11_voice_navi001_trial_0001_073 The enemy has retreated.<br>Please do not pursue. Head to another target.
+type102,1,NpcComOnForetaste_DryverusTrial,Powerful enemy detected nearby!<br>Please engage at once!
+type102,1,NpcComOnSuccess_DryverusTrial,Thank you for taking care of that.
+type108,0,NpcComOnForetasteNGS2,あっ……、特殊なエネミーの出現を確認しました。<br>情報収集のために、討伐をお願いします。
+type108,0,NpcComOnSuccessNGS2,さすがは<%me>さんです。<br>討伐お疲れ様でした。
+type108,0,NpcComOnFailureNGS2,エネミーの撤退を確認しました……。<br>気にせず次に行きましょう！
+type103,0,Zsh_Begin,/voice11_voice_navi002_trial_0001_021 強力なエネミーの発生を確認しました。<br>対処をお願いします。
+type103,0,Zsh_Finish,/voice11_voice_navi002_trial_0001_067 対象の討伐を確認。<br>引き続き、調査をお願いします。
+type103,1,Zsh_Begin,/voice11_voice_navi002_trial_0001_021 We've detected a powerful enemy.<br>Please intercept.
+type103,1,Zsh_Finish,/voice11_voice_navi002_trial_0001_067 Enemy destroyed.<br>Thank you for your support.

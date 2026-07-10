@@ -1,0 +1,261 @@
+section,group,id,text
+common,0,ProgressCount,$(0)/$(1)
+common,0,ProgressCountNoDenominator,$(0)
+common,0,ProgressValue,×$(0)
+common,0,TrialSuccessMsg,トライアル<br>“$(0)”成功
+common,0,TrialFailureMsg,トライアル<br>“$(0)”失敗
+common,0,TrialCancelMsg,トライアル<br>“$(0)”から離脱
+common,0,TrialFinishMsg,トライアル<br>“$(0)”終了
+common,0,TrialSuccessQuestBuff_GrowUp,＊報酬：$(0)
+common,0,RewardTextClear,"トライアル<br>""$(0)""成功"
+common,0,RewardTextRew,報酬
+common,0,RewardTextMeseta,<pict reb_meseta>$(0)
+common,0,RewardTextSeasonPoint,<pict event_point>$(0)
+common,0,RewardTextGP,<pict myspace_point>$(0)GP
+common,0,RewardTextItemNameNum,$(0)×$(1)
+common,0,RewardTextItemName,$(0)
+common,0,ProgBodyEnemyName,$(0)
+common,0,ProgDefenceWave,Wave．
+common,0,ProgNumPlayerDied,戦闘不能回数
+common,0,ProgWaveGoal,＊＊Wave目標
+common,0,ProgTrialGoal,＊＊Trial目標
+common,0,ProgNumSubCondition,サイドミッション
+common,0,ProgSideTrialTitle,エクストラミッション
+common,0,ProgSideTrialAbstract,$(0)
+common,0,ProgSub_DontDie,戦闘不能回数0回でクリア
+common,0,ProgSub_NumPlayerDied,戦闘不能回数$(0)回未満でクリア
+common,0,ProgSub_NumPlayerDamage,ダメージ回数$(0)回未満でクリア
+common,0,ProgSub_NoPlayerDamage,ダメージ回数0回でクリア
+common,0,ProgSub_NumEnemyRegionBreak,部位破壊回数$(0)回以上でクリア
+common,0,ProgSub_TimeLimitSecond,トライアル残り時間$(0)秒以上でクリア
+common,0,ProgSub_HpPercent___Defence,輸送トラック耐久値$(0)％以上でクリア
+common,0,ProgSub_NumCreate___Generator,エネミー転送$(0)体未満でクリア
+common,0,Prog_BossWeakCon_TrialPoint,<yellow>任意のエネミー<c>を撃破しトライアルを発生させる
+common,0,Prog_BossWeakCon_PlayTrial,<yellow>任意のエネミー<c>を撃破しトライアルを発生させる
+common,0,Prog_BossWeakCon_Next,トライアル発生まで
+common,0,FLineMsg_TimeOver,トライアル失敗<br>タイムオーバー！
+common,0,FLineMsg_DefenceTarget_Dead,トライアル失敗<br>防衛対象の被害大！
+common,0,FLineMsg_NumPlayerDied,戦闘不能回数上限！
+common,0,MJournal_HostName,ホストプレイヤー
+common,0,MJournal_PlayerNum,参加人数
+common,0,MJournal_RemainDecide,レース開始まで
+common,0,MJournal_RemainBoot,＊開始まで残り
+common,0,MSelectTitle,フィールドレースのコース選択
+common,0,MButtonGuide_HostMenu,長押しでマッチングの状態を変更
+common,0,MButtonGuide_HostMenuTail,受注中のフィールドレース　$(0)
+common,0,MButtonGuide_HostTitle,$(0)
+common,0,MButtonGuide_HostMessage,$(0)を<br>今すぐに開始しますか？
+common,0,MButtonGuide_HostYes,すぐ開始する
+common,0,MButtonGuide_HostNo,マッチングをやめる
+common,0,MButtonGuide_MemberMenu,長押しでマッチングの状態を変更
+common,0,MButtonGuide_MemberMenuTail,受注中のフィールドレース　$(0)
+common,0,MButtonGuide_MemberTitle,$(0)
+common,0,MButtonGuide_MemberMessage,フィールドレースへの参加を<br>キャンセルしますか？
+common,0,MButtonGuide_MemberYes,はい
+common,0,MButtonGuide_MemberNo,いいえ
+common,0,MStartNotice_HostPlayer,フィールドレースの参加受付を開始しました。
+common,0,MStartNotice_MemberPlayer,$(0)のマッチングに参加しました。
+common,0,MCancelReason_EnterNew_ButExist,他のプレイヤーがマッチングを開始したため実行できません。
+common,0,MCancelReason_EnterExist_ButNotFound,マッチングの受付時間が終了しました。
+common,0,MCancelReason_HostChanged,ホストプレイヤーがマッチングをキャンセルしました。
+common,0,MCancelReason_MemberExit,$(0)から離脱しました。
+common,0,MCancelReason_Exclusion,別のフィールドレースに参加中
+common,0,MNotice_HostChanged,$(0)がホストプレイヤーになりました。
+common,0,MNotice_RecruitToast,近くの端末で、フィールドレースの参加受付が開始されました。
+common,0,MCourse_SAerio,南エアリオ走破（Stage.1）
+common,0,MCourse_WAerio,西エアリオ走破（Stage.1）
+common,0,MCourse_WRitem,西リテム走破（Stage.1）
+common,0,MCourse_CKuvaris,中央クヴァリス走破（Stage.1）
+common,0,MCourse_SKuvaris,南クヴァリス走破（Stage.1）
+common,0,MCourse_SKuvaris_LimitedTime,南クヴァリス走破（スプリング'24）
+common,0,MCourse_CAerio,中央エアリオ板操（Stage.1）
+common,0,MCourse_CRitem,中央リテム板操（Stage.1）
+common,0,MCourse_WKuvaris,西クヴァリス走破（Stage.1）
+common,0,MCourse_SRitem,南リテム走破（Stage.1）
+common,0,MCourse_NAerio,北エアリオ板操（Stage.1）
+common,0,MCourse_NRitem,北リテム板操（Stage.1）
+common,0,MRetryMenu_Guide,長押しで途中離脱
+common,0,MRetryMenu_Guide_AfterPlaying,長押しでレーシングコンソール前に戻る
+common,0,MRetryMenu_GuideTail,＊＊<br>リトライ長押しメニュー
+common,0,MRetryMenu_GuideRemain,受付時間：残り $(0):$(1).$(2)
+common,0,MRetryMenu_Title,フィールドレースからの途中離脱
+common,0,MRetryMenu_Message,参加しているフィールドレースから離脱しますか？<br><br>途中で離脱すると<yellow>“自分だけ”<c>が<br>レーシングコンソール前に戻ります。
+common,0,MRetryMenu_Title_AfterPlaying,レーシングコンソール前への移動
+common,0,MRetryMenu_Message_AfterPlaying,$(0)の<br>レーシングコンソール前に戻りますか？
+common,0,MRetryMenu_Yes,はい
+common,0,MRetryMenu_No,いいえ
+common,0,MCourse_StiaB,ドライゼンプラント板操（Stage.1）
+common,0,MCourse_StiaA,スティア外縁部走破（Stage.1）
+common,0,MCourse_HLake,ハルフィリア湖板操（Stage.1）
+common,0,MCourse_StiaC,メディオラ外郭第２区板操（Stage.1）
+common,0,ExRewardToast_050,/atime5 エネミーHP：残り50%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_100,/atime5 エネミーHP：残り100%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_090,/atime5 エネミーHP：残り90%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_080,/atime5 エネミーHP：残り80%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_070,/atime5 エネミーHP：残り70%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_060,/atime5 エネミーHP：残り60%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_040,/atime5 エネミーHP：残り40%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_030,/atime5 エネミーHP：残り30%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_020,/atime5 エネミーHP：残り20%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_010,/atime5 エネミーHP：残り10%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_000,エネミー撃破！<br><yellow>報酬グレードアップ<c>
+common,0,Toast_AddTimeLimitSummary,対象エネミーの撃破により、制限時間が<yellow>$(0)秒<c>増加しました。
+common,0,ExRewardToast_075,/atime5 エネミーHP：残り75%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardToast_025,/atime5 エネミーHP：残り25%<br><yellow>報酬グレードアップ<c>
+common,0,ExRewardTitle,累計ダメージに応じて報酬グレードアップ
+common,0,ExRewardTitle_Point,回収数に応じて報酬グレードアップ
+common,0,ExRewardTitle_Bounty,目標達成数に応じて報酬ランクアップ
+common,0,TrialSuccessByTimeOver,エネミー撤退！
+common,0,TrialSuccessByannihilation,エネミー殲滅完了！
+common,0,TrialSuccessSideMissionSuccess,トライアル“$(0)”成功<br>獲得ポイント：$(1)<br>サイドミッションクリアボーナス：$(2)
+common,0,TrialSuccessSideMissionFailure,トライアル“$(0)”成功<br>獲得ポイント：$(1)
+common,0,TrialRemainXsec,トライアル“$(0)”終了まであと$(1)秒！
+common,0,TrialSuccessSideMissionSuccess2,M.A.R.S.バッテリー$(0)%回復
+common,0,TrialSideTrialBegin,エクストラミッション開始<br>$(0)ターゲットを<yellow>優先して<c>狙え！<br>エクストラミッション成功で<yellow>トライアル成功時にボーナスポイント獲得！<c>
+common,0,TrialSuccessMsgGroom,トライアル“$(0)”成功<br>獲得ポイント：$(1)<br>サイドミッションクリアボーナス：$(2)<br>$(4)エクストラミッションボーナス：$(3)
+common,0,TrialFailurePointGet,トライアル“$(0)”失敗<br>獲得ポイント：$(1)
+common,0,TrialSideTrialSuccess,$(0)エクストラミッション成功<br>トライアルクリア時にボーナス獲得！
+common,0,SLM_QuestPoint,<br>獲得ポイント：$(0)
+common,0,SLM_SubConditionSuccess,<br>サイドミッションクリアボーナス：$(0)
+common,0,SLM_SideTrialSuccess,<br>$(0)エクストラミッションクリアボーナス：$(1)
+common,0,SLM_SideTrialFailure,<br>$(0)エクストラミッションクリアボーナス：０
+common,0,TrialSuccessMsg_QuestPoint,トライアル“$(0)”成功$(1)$(2)$(3)
+common,0,SideTrialNotify,<yellow>※優先してエクストラミッション成功で<br>　トライアル成功時にボーナスポイント獲得！<c>
+common,0,SideTrialNotify_White,<yellow>※優先してエクストラミッション成功で<br>　能力強化獲得！<c>
+common,0,TrialSideTrialBegin_White,エクストラミッション開始<br>$(0)ターゲットを<yellow>優先して<c>狙え！<br>エクストラミッション成功で<yellow>能力強化獲得！<c>
+common,0,TrialSideTrialSuccess_White,\エクストラミッション成功<br><yellow>能力強化＜＞獲得！<c>
+common,0,TrialNotify_BuffGet,<yellow>※トライアル成功で<br>　能力強化獲得！<c>
+common,0,TrialNotify_PSEBurstSuddenly,<yellow>※トライアル成功で<br>　PSEバースト発生！<c>
+common,0,TrialPollution_Monolith,浄化完了まで
+common,0,Bounty_TaskName,$(0)
+common,0,Bounty_ClearNum,目標達成数
+common,0,TrialNotify_NeonGRappy,<yellow>※グレト・ラッピー討伐で<br>探索ポイント倍率がアップ！<c>
+common,1,ProgressCount,$(0)/$(1)
+common,1,ProgressCountNoDenominator,$(0)
+common,1,ProgressValue,×$(0)
+common,1,TrialSuccessMsg,Prueba $(0) ¡Éxito!
+common,1,TrialFailureMsg,¡La prueba $(0) falló!
+common,1,TrialCancelMsg,Retirado de $(0).
+common,1,TrialFinishMsg,prueba<br>“$(0)” terminado
+common,1,RewardTextClear,$(0) Borrar
+common,1,RewardTextRew,premio
+common,1,RewardTextMeseta,<pict reb_meseta> $(0)
+common,1,RewardTextSeasonPoint,<pict event_point> $(0)
+common,1,RewardTextGP,<pict myspace_point> $(0)GP
+common,1,RewardTextItemNameNum,$(0)x$(1)
+common,1,RewardTextItemName,$(0)
+common,1,ProgBodyEnemyName,$(0)
+common,1,ProgDefenceWave,ola
+common,1,ProgNumPlayerDied,incapacitado
+common,1,ProgNumSubCondition,Misión secundaria
+common,1,ProgSideTrialTitle,Misión adicional
+common,1,ProgSideTrialAbstract,$(0)
+common,1,ProgSub_DontDie,Claro sin estar incapacitado
+common,1,ProgSub_NumPlayerDied,Limpiar con menos de $(0) de incapacitaciones
+common,1,ProgSub_NumPlayerDamage,Recibe daño menos de $(0) veces
+common,1,ProgSub_NoPlayerDamage,Limpia sin recibir daño
+common,1,ProgSub_NumEnemyRegionBreak,Destruye $(0) o más piezas
+common,1,ProgSub_TimeLimitSecond,Borrar con $(0) segundos o más restantes
+common,1,ProgSub_HpPercent___Defence,SP de camión $(0) o más restantes
+common,1,ProgSub_NumCreate___Generator,Permitir teletransportar enemigos de menos de $(0)
+common,1,Prog_BossWeakCon_TrialPoint,<yellow> Derrota a los enemigos<c>para activar las Pruebas.
+common,1,Prog_BossWeakCon_PlayTrial,<yellow> Derrota a los enemigos<c>para activar las Pruebas.
+common,1,Prog_BossWeakCon_Next,Hasta la activación de prueba
+common,1,FLineMsg_TimeOver,Prueba fallida<br>Límite de tiempo excedido
+common,1,FLineMsg_DefenceTarget_Dead,Prueba fallida<br>¡El objetivo de defensa sufrió graves daños!
+common,1,FLineMsg_NumPlayerDied,¡Se superó el límite de incapacitación!
+common,1,MJournal_HostName,Jugador anfitrión
+common,1,MJournal_PlayerNum,Número de participantes
+common,1,MJournal_RemainDecide,La carrera comienza en
+common,1,MSelectTitle,Seleccionar campo de carrera
+common,1,MButtonGuide_HostMenu,Mantenga presionado para cambiar el estado del emparejamiento
+common,1,MButtonGuide_HostMenuTail,Carrera de campo seleccionada: $(0)
+common,1,MButtonGuide_HostTitle,$(0)
+common,1,MButtonGuide_HostMessage,¿Comenzar inmediatamente $(0)?
+common,1,MButtonGuide_HostYes,comenzar inmediatamente
+common,1,MButtonGuide_HostNo,dejar de emparejar
+common,1,MButtonGuide_MemberMenu,Mantenga presionado para cambiar el estado del emparejamiento
+common,1,MButtonGuide_MemberMenuTail,Carrera de campo aceptada: $(0)
+common,1,MButtonGuide_MemberTitle,$(0)
+common,1,MButtonGuide_MemberMessage,¿Cancelar unirse a la carrera de campo?
+common,1,MButtonGuide_MemberYes,Sí
+common,1,MButtonGuide_MemberNo,No
+common,1,MStartNotice_HostPlayer,Has iniciado el emparejamiento de Field Race.
+common,1,MStartNotice_MemberPlayer,Te has unido al emparejamiento de $(0).
+common,1,MCancelReason_EnterNew_ButExist,No puedes hacer esto porque otro jugador ha iniciado el emparejamiento.
+common,1,MCancelReason_EnterExist_ButNotFound,El emparejamiento ha terminado.
+common,1,MCancelReason_HostChanged,El jugador anfitrión ha cancelado el emparejamiento.
+common,1,MCancelReason_MemberExit,Te queda $(0).
+common,1,MCancelReason_Exclusion,Actualmente estás participando en otra carrera de campo.
+common,1,MNotice_HostChanged,$(0) se convirtió en el jugador anfitrión.
+common,1,MNotice_RecruitToast,El emparejamiento de Field Race ha comenzado en una terminal cercana.
+common,1,MCourse_SAerio,Dash de Aelio del Sur (Etapa 1)
+common,1,MCourse_WAerio,Oeste Aelio Dash (Etapa 1)
+common,1,MCourse_WRitem,West Retem Dash (Etapa 1)
+common,1,MCourse_CKuvaris,Dash de Kvaris Central (Etapa 1)
+common,1,MCourse_SKuvaris,Dash de Kvaris del Sur (Etapa 1)
+common,1,MCourse_SKuvaris_LimitedTime,Dash de Kvaris del Sur (primavera '24)
+common,1,MCourse_CAerio,Tablero Central Aelio (Etapa 1)
+common,1,MCourse_CRitem,Junta Central Retem (Etapa 1)
+common,1,MCourse_WKuvaris,West Kvaris Dash (Etapa 1)
+common,1,MCourse_SRitem,Carrera de Retem Sur (Etapa 1)
+common,1,MCourse_NAerio,Tablero de Aelio Norte (Etapa 1)
+common,1,MCourse_NRitem,Junta Retem Norte (Etapa 1)
+common,1,MRetryMenu_Guide,Mantenga presionado para salir
+common,1,MRetryMenu_Guide_AfterPlaying,Mantén presionado para regresar a la consola de carreras.
+common,1,MRetryMenu_GuideRemain,Tiempo restante: $(0):$(1).$(2)
+common,1,MRetryMenu_Title,Salir de la carrera de campo
+common,1,MRetryMenu_Message,"¿Te gustaría abandonar la Field Race?<br><br> Si sales a mitad del camino,<yellow>solo tú<c>regresarás a la consola de carreras."
+common,1,MRetryMenu_Title_AfterPlaying,Regresar a la consola de carreras
+common,1,MRetryMenu_Message_AfterPlaying,¿Volver a la consola de carreras de $(0)?
+common,1,MRetryMenu_Yes,Sí
+common,1,MRetryMenu_No,No
+common,1,MCourse_StiaB,Tablero de plantas Dreisen (Etapa 1)
+common,1,MCourse_StiaA,Stia Afueras Dash (Etapa 1)
+common,1,MCourse_HLake,Tabla del lago Halphia (Etapa 1)
+common,1,MCourse_StiaC,Tablero Mediola Área Exterior 2 (Etapa 1)
+common,1,ExRewardToast_050,/atime5 HP enemigo: 50% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_100,/atime5 HP enemigo: 100% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_090,/atime5 HP enemigo: 90% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_080,/atime5 HP enemigo: 80% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_070,/atime5 HP enemigo: 70% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_060,/atime5 HP enemigo: 60% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_040,/atime5 HP enemigo: 40% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_030,/atime5 HP enemigo: 30% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_020,/atime5 HP enemigo: 20 % restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_010,/atime5 HP enemigo: 10% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_000,¡Enemigos derrotados!<br><yellow> Recompensa mejorada <c>
+common,1,Toast_AddTimeLimitSummary,Enemigo objetivo derrotado. Tiempo adicional:<yellow>$(0) segundos<c>.
+common,1,ExRewardToast_075,/atime5 HP enemigo: 75% restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardToast_025,/atime5 HP enemigo: 25 % restante<br><yellow> Recompensa mejorada <c>
+common,1,ExRewardTitle,Mejora de recompensa basada en el daño infligido
+common,1,ExRewardTitle_Point,Actualización de recompensa basada en el no. coleccionado
+common,1,ExRewardTitle_Bounty,Mejora de recompensa según los objetivos completados
+common,1,TrialSuccessByTimeOver,¡El enemigo se retiró!
+common,1,TrialSuccessByannihilation,¡Erradicación enemiga completa!
+common,1,TrialSuccessSideMissionSuccess,Prueba $(0) Éxito<br>Puntos obtenidos: $(1)<br>Bonificación por completar misión secundaria: $(2)
+common,1,TrialSuccessSideMissionFailure,Prueba $(0) Éxito<br>Puntos obtenidos: $(1)
+common,1,TrialRemainXsec,$(1) segundos hasta el final de la prueba “$(0)”
+common,1,TrialSuccessSideMissionSuccess2,MARTE. Batería $(0)% recuperada
+common,1,TrialSideTrialBegin,琀爀愀 䴀椀猀猀椀漀渀 眀椀氀氀 爀攀猀甀氀琀 椀渀 㰀礀攀氀氀漀眀㸀爀攀挀攀椀瘀椀渀最 戀漀渀甀猀 瀀漀椀渀琀猀 眀栀攀渀 琀栀攀 吀爀椀愀氀 椀猀 猀甀挀挀攀猀猀昀甀氀℀㰀挀㸀
+common,1,TrialSuccessMsgGroom,Prueba $(0) Éxito<br>Puntos obtenidos: $(1)<br>Bonificación por completar misión secundaria: $(2)<br>$(4) Bonificación por misión adicional: $(3)
+common,1,TrialFailurePointGet,Prueba $(0) Fallida<br>Puntos obtenidos: $(1)
+common,1,TrialSideTrialSuccess,$(0)Éxito de misión adicional<br>¡Obtuve bonificación por éxito de prueba!
+common,1,SLM_QuestPoint,<br>Puntos ganados: $(0)
+common,1,SLM_SubConditionSuccess,<br> Bonificación por completar misión secundaria: $(0)
+common,1,SLM_SideTrialSuccess,<br> $(0) Bono de misión adicional: $(1)
+common,1,SLM_SideTrialFailure,<br> Bonificación de misión adicional: 0
+common,1,TrialSuccessMsg_QuestPoint,Prueba $(0) ¡Éxito!$(1)$(2)$(3)
+common,1,SideTrialNotify,<yellow> *¡Prioriza el éxito de la misión adicional para<br>obtener puntos de bonificación tras el éxito de la prueba! <c>
+common,1,SideTrialNotify_White,<yellow> *¡Prioriza el éxito de misiones adicionales para ganar una mejora de habilidad! <c>
+common,1,TrialSideTrialBegin_White,¡La misión adicional<yellow>te recompensará con una mejora de habilidad cuando la prueba sea exitosa! <c>
+common,1,TrialNotify_BuffGet,<yellow> *¡Supera la prueba para ganar una mejora de habilidad! <c>
+common,1,TrialNotify_PSEBurstSuddenly,<yellow> *¡Completa la prueba para provocar una explosión de PSE! <c>
+common,1,TrialPollution_Monolith,hasta que sea purgado
+common,1,Bounty_TaskName,$(0)
+common,1,Bounty_ClearNum,Metas completadas
+common,1,TrialNotify_NeonGRappy,<yellow> * ¡Derrota a un gran Rappy para aumentar tu multiplicador de puntos de exploración!  <c>
+type103,0,NpcComOnSideTrialBegin,/voice11_voice_navi002_trial_0001_028 新たな脅威の乱入を確認。<br>優先して対処してください。
+type103,0,NpcComOnSideTrialSuccess,/voice11_voice_navi002_trial_0001_044 乱入した脅威の対処完了。<br>残りの対応もお願いします。
+type103,1,NpcComOnSideTrialBegin,"/voice11_voice_navi002_trial_0001_028 Se ha detectado una nueva amenaza.<br>Por favor, participe de inmediato."
+type103,1,NpcComOnSideTrialSuccess,/voice11_voice_navi002_trial_0001_044 La amenaza ha sido eliminada.<br>Ahora termina el resto.

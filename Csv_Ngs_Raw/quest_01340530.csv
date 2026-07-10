@@ -1,0 +1,17 @@
+section,group,id,text
+AreaName,0,Area0S,西エアリオ
+AreaName,0,Area0L,西エアリオ
+AreaName,1,Area0S,Aelio Occidental
+AreaName,1,Area0L,Aelio Occidental
+Basic,0,Title,戦変万花のエネミー掃討戦'25
+Basic,0,Explanation,西エアリオのクライアノ断崖で、強力なエネミーの反応が複数確認された。<br>大型のフォーマーズと目されるが、通常とは異なるスペクトルが見られる。<br>アークス各員は不測の事態に警戒しつつ、エネミーを殲滅せよ。
+Basic,1,Title,Limpieza de Ráfaga de Flores Op '25
+Basic,1,Explanation,攀渀攀洀椀攀猀⸀
+QuestTarget,0,SimpleExplanation,全てのエネミーを倒す
+QuestTarget,1,SimpleExplanation,Derrota a todos los enemigos
+FailureCondition,0,f0,30:00以上経過する
+FailureCondition,1,f0,El tiempo supera los 30 minutos.
+SuccessCondition,0,s0,対象エネミーの撃破
+SuccessCondition,1,s0,Derrota al enemigo objetivo
+TrialBeginDetail,0,normalMsg_1340530,全てのエネミーを倒す
+TrialBeginDetail,1,normalMsg_1340530,Derrota a todos los enemigos

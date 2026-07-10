@@ -1,0 +1,27 @@
+section,group,id,text
+common,0,TrialName,コールドフォトン励起
+common,0,TrialBeginMsg,特異環境下でエネミーを殲滅せよ！
+common,0,TrialAbstract,コールドフォトンを利用してエネミーを倒す
+common,0,Wave1Msg,エネミー第一波接近！
+common,0,Wave2Msg,エネミー第二波接近！
+common,0,Wave3Msg,追加WAVE発生！
+common,1,TrialName,Excitación de fotones fríos
+common,1,TrialBeginMsg,¡Erradica a los enemigos en entornos anómalos!
+common,1,TrialAbstract,Derrota enemigos usando fotones fríos.
+common,1,Wave1Msg,¡Se acerca la primera oleada enemiga!
+common,1,Wave2Msg,¡Se acerca la segunda oleada enemiga!
+common,1,Wave3Msg,¡Se acerca otra ola!
+type105,0,NpcComOnBegin,/voice11_voice_navi004_trial_0001_019 多数のエネミー反応を確認しました！<br>大気中のフォトンが励起状態にあるみたいなので、そちらも警戒を！
+type105,0,NpcComOnBegin2,中空に発生したのは“コールドフォトン”です。<br>不安定な状態で、大きな力をぶつけたら爆発しますよ。
+type105,0,NpcComOnWave2,/voice11_voice_navi004_trial_0001_027 さらにエネミーの反応を確認しました！<br>コールドフォトンの励起も促進されているみたいです。
+type105,0,NpcComOnExWave,/voice11_voice_navi004_trial_0001_041 エネミーの殲滅をかくに……あら？<br>まだ来るみたいですね。倒しちゃってください。
+type105,0,NpcComOnSuccess,/voice11_voice_navi004_trial_0001_069 今度こそ、エネミーの殲滅を確認しました。<br>ありがとうございました！
+type105,0,NpcComOnSuccessNoBonusWave,/voice11_voice_navi004_trial_0001_069 エネミーの殲滅を確認しました。<br>ありがとうございました！
+type105,0,NpcComOnFailure,/voice11_voice_navi004_trial_0001_073 あらら……エネミーが撤退。<br>フォトンの反応も正常値に戻ったみたいね。
+type105,1,NpcComOnBegin,"/voice11_voice_navi004_trial_0001_019 Numerous enemy readings confirmed!<br>Atmospheric photons appear to be in a high state of agitation, so be on your guard!"
+type105,1,NpcComOnBegin2,"The thing that appeared in the air is a Cold Photon. It's unstable, so hitting it will<br>cause it to explode."
+type105,1,NpcComOnWave2,/voice11_voice_navi004_trial_0001_027 Additional enemy readings confirmed! The Cold Photons<br>appear to be getting more excited!
+type105,1,NpcComOnExWave,"/voice11_voice_navi004_trial_0001_041 Enemy eradication con- what?<br>There's still more. Take them out, please."
+type105,1,NpcComOnSuccess,/voice11_voice_navi004_trial_0001_069 Now we have enemy eradication confirmed. Thank you very<br>much!
+type105,1,NpcComOnSuccessNoBonusWave,/voice11_voice_navi004_trial_0001_069 Enemy eradication confirmed. Thank you very much!
+type105,1,NpcComOnFailure,"/voice11_voice_navi004_trial_0001_073 Well, well... the enemies are retreating. And the photons<br>have stabilized"

@@ -1,0 +1,34 @@
+﻿section,group,id,text
+common,0,TrialName,ギルーヴァ陽動
+common,0,TrialBeginMsg,出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
+common,0,TrialAbstract,ギルーヴァコアをすべて破壊し<br>レパルスウェッジでギルーヴァを倒す
+common,0,TrialName2,ギルーヴァ陽動
+common,0,TrialBeginMsg2,出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
+common,0,TrialAbstract2,レパルスウェッジでギルーヴァを倒す<br>獲得能力強化：<br>$(0)
+common,0,OnCoreBreak,$(0)がギルーヴァコアを破壊しました。
+common,1,TrialName,Desvío Giruva
+common,1,TrialBeginMsg,¡Destruye todos los núcleos de Giruva y derrota a Giruva!<br>En la prueba exitosa: Gana $(0)
+common,1,TrialAbstract,Destruye todos los núcleos de Giruva y derrota al Giruva<br>usando la cuña repulsora.
+common,1,TrialName2,Desvío Giruva
+common,1,TrialAbstract2,Derrota al Giruva usando la cuña repulsora.<br>Mejora de habilidad:<br>$(0)
+common,1,OnCoreBreak,$(0) destruyó un Giruva Core.
+type103,0,NpcComOnBegin,ギルーヴァの出現を確認。<br>特定のアークスを追走してきます。警戒してください。
+type103,0,NpcComOnBegin2,対ギルーヴァ用兵装の転送が阻害されています……。<br>出現したギルーヴァコアをすべて破壊してください。
+type103,0,NpcComOn30SecOver,ギルーヴァへの対抗兵装が転送できません。<br>ギルーヴァコアをすべて破壊してください。
+type103,0,NpcComOnTargeted,/atime-2 ギルーヴァの標的になっています！<br>攻撃範囲外に退避してください。
+type103,0,NpcComOnTargetedFinish,/atime-2 ギルーヴァの追跡対象から外れました。<br>ギルーヴァコアへの対応をお願いします。
+type103,0,NpcComOnFirstCoreBreak,ギルーヴァコアの破壊を確認。<br>その調子で、残りもお願いします。
+type103,0,NpcComOnObjectAppear,すべてのギルーヴァコアの破壊を確認。<br>セクターC-3に、対ギルーヴァ用兵装を転送しました。
+type103,0,NpcComOnNoDamage30Sec,セクターC-3に、対ギルーヴァ用兵装を転送しました。<br>その“レパルスウェッジ”で、ギルーヴァを攻撃してください。
+type103,0,NpcComOnSuccess,ギルーヴァの撃退を確認。<br>次の目標に向かってください。
+type103,0,NpcComOnFailure,ギルーヴァが撤退……。<br>次の目標に向かってください。
+type103,1,NpcComOnBegin,Confirmada la presencia de Giruva.<br>Apuntará y perseguirá a un defensor ARKS específico. Esté alerta.
+type103,1,NpcComOnBegin2,Se está impidiendo el despliegue del arma contra Giruva...<br>Destruye todos los núcleos Giruva.
+type103,1,NpcComOn30SecOver,No se puede desplegar un arma contra Giruva.<br>Por favor destruye todos los Giruva Cores.
+type103,1,NpcComOnTargeted,/atime-2 ¡Giruva te está apuntando!<br>¡Sal de su rango de ataque!
+type103,1,NpcComOnTargetedFinish,/atime-2 Giruva ya no te está apuntando.<br>Ahora concéntrate en los Giruva Cores.
+type103,1,NpcComOnFirstCoreBreak,Núcleo Giruva destruido.<br>Continúa hasta que se acaben todos.
+type103,1,NpcComOnObjectAppear,Todos los núcleos de Giruva destruidos.<br>Desplegando arma contra Giruva en el Sector C-3.
+type103,1,NpcComOnNoDamage30Sec,Arma contra-Giruva desplegada en el Sector C-3.<br>Usa la cuña repulsora para atacarlo.
+type103,1,NpcComOnSuccess,Se elimina la amenaza de Giruva.<br>Dirígete al siguiente objetivo.
+type103,1,NpcComOnFailure,"El Giruva se ha retirado....<br>Por favor, dirígete al siguiente objetivo."

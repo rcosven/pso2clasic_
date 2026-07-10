@@ -1,0 +1,13 @@
+section,group,id,text
+common,0,TrialName,寒冷地エネミー討伐
+common,0,TrialBeginMsg,フローティングボードを活用し、出現したエネミーを倒せ！
+common,0,TrialAbstract,エネミーを倒す
+common,1,TrialName,Supresión del enemigo de la tundra
+common,1,TrialBeginMsg,¡Usa el tablero flotante y derrota a los enemigos!
+common,1,TrialAbstract,Derrota a los enemigos.
+type103,0,NpcComOnBegin,/voice11_voice_navi002_trial_0001_012 周囲にエネミー群の反応あり。<br>周囲のボードターミナルから、フローティングボードが使えそうです。
+type103,0,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_064 エネミーの殲滅を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnFailure,/voice11_voice_navi002_trial_0001_072 エネミーの撤退を確認。<br>次の目標に向かってくだ
+type103,1,NpcComOnBegin,/voice11_voice_navi002_trial_0001_012 Hay una fuerza enemiga leyendo en el área. Parece que hay tablas flotantes disponibles para su uso en una terminal cercana.
+type103,1,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_064 Se confirma la erradicación del enemigo.<br>Gracias por tu apoyo.
+type103,1,NpcComOnFailure,/voice11_voice_navi002_trial_0001_072 Se confirma la retirada del enemigo. Continúe con el siguiente objetivo.

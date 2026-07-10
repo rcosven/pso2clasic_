@@ -1,0 +1,229 @@
+section,group,id,text
+GroupChat,0,GroupChat_Title,グループチャット
+GroupChat,0,GroupChat_SetMsg,登録中
+GroupChat,0,GroupChat_NewMsg,招待
+GroupChat,0,GroupChat_MakeGroup,グループを作る
+GroupChat,0,GroupChat_NewNumMsg,招待($(0))
+GroupChat,0,GroupChat_GroupLeader,グループリーダー
+GroupChat,0,Popup_Active,このグループを表示
+GroupChat,0,Popup_Inactive,このグループを非表示
+GroupChat,0,Popup_Confirm,メンバーを確認
+GroupChat,0,Popup_Invite,フレンドを招待
+GroupChat,0,Popup_Banish,メンバーを除名
+GroupChat,0,Popup_ChangeName,グループ設定を編集
+GroupChat,0,Popup_ChangeLeader,リーダーを交代
+GroupChat,0,Popup_MoveTop,先頭に移動
+GroupChat,0,Popup_Delete,このグループから脱退
+GroupChat,0,Popup_Join,登録する
+GroupChat,0,GroupChat_Title_New,グループ作成
+GroupChat,0,GroupChat_GroupName,グループ名
+GroupChat,0,GroupChat_GroupComment,グループコメント
+GroupChat,0,GroupChat_Decided,決定
+GroupChat,0,GroupChat_Canceled,キャンセル
+GroupChat,0,GroupChat_Title_Rename,グループ設定の編集
+GroupChat,0,GroupChat_Rename,編集内容を反映
+GroupChat,0,GroupChat_MemberTab1,オンライン($(0))
+GroupChat,0,GroupChat_MemberTab4,オンライン
+GroupChat,0,GroupChat_MemberTab2,オフライン
+GroupChat,0,GroupChat_MemberTab3,PSO2ブロックリスト
+GroupChat,0,GroupChatError_Title,メッセージ
+GroupChat,0,GroupChatError_ListNumFault,グループを表示できませんでした。
+GroupChat,0,GroupChatError_MakeGroupFault,グループを作成できませんでした。
+GroupChat,0,GroupChatError_MakeNGWordFault,グループ名、もしくはグループコメントに<br>使用できない文字が含まれています。
+GroupChat,0,GroupChatError_MakeGroupMaxFault,登録できる上限に達しているため<br>グループを作成できませんでした。
+GroupChat,0,GroupChatError_RenameGroupFault,グループの編集ができませんでした。
+GroupChat,0,GroupChatError_RenameNGWordFault,グループ名、もしくはグループコメントに<br>使用できない文字が含まれています。
+GroupChat,0,GroupChatQues_Title,確認
+GroupChat,0,GroupChatQues_Banish,$(0)を<br>このグループから除名します。<br><br>よろしいですか？
+GroupChat,0,GroupChatQues_Leader,$(0)に<br>リーダーを交代します。<br><br>よろしいですか？
+GroupChat,0,GroupChatQues_Delete,「$(0)」から<br>脱退します。<br><br><yellow>※脱退後、再登録したいときは<br>　再度招待される必要があります。<c><br><br>よろしいですか？
+GroupChat,0,GroupChatQC_Invite_Title,グループ招待
+GroupChat,0,GroupChatQC_Invite_Mess,$(1)から<br>「$(0)」に<br>招待されました。<br>返答ウィンドウを開きますか？<br><br>※「いいえ」を選び、あとでメインメニューの<br>　「チャット設定」から返答することもできます。
+GroupChat,0,GroupChatQC_Join_Log,$(1)が$(0)を登録しました。
+GroupChat,0,NewGroupChat,新着グループ招待
+GroupChat,0,NewExpGroupChat,グループへの招待が届きました。
+GroupChat,0,GroupChatTost_GroupList,グループ情報を取得します。
+GroupChat,0,GroupChatTost_GroupCreate,新しいグループを作成しました。
+GroupChat,0,GroupChatTost_Delete,グループ「$(0)」から脱退しました。
+GroupChat,0,GroupChatTost_MemberList,メンバーの情報を取得します。
+GroupChat,0,GroupChatTost_MemberInvite,選択したフレンドに招待を送りました。
+GroupChat,0,GroupChatTost_MemberJoin,グループ「$(0)」を登録しました。
+GroupChat,0,GroupChatTost_MemberBanish,$(0)を除名しました。
+GroupChat,0,GroupChatTost_GroupActive,グループ「$(0)」を表示します。
+GroupChat,0,GroupChatTost_GroupInactive,表示しているグループがありません。
+GroupChat,0,GroupChatTost_NameChange,グループ設定を変更しました。
+GroupChat,0,GroupChatTost_MoveTop,先頭に移動
+GroupChat,0,GroupChatTost_LeaderSuccess,$(0)にリーダーを交代しました。
+GroupChat,0,GroupChatTost_LeaderFailed,リーダーを交代できませんでした。
+GroupChat,0,GroupChatTost_InviteFailed,グループの招待が受け取れませんでした。
+GroupChat,0,GroupChatTost_Error,汎用エラー
+GroupChat,0,GroupChatTost_CreateGroupError,新規グループの作成に失敗しました。
+GroupChat,0,GroupChatTost_ListReceiveError,グループメンバーの取得に失敗しました。
+GroupChat,0,GroupChatTost_InviteGroupError,招待に失敗しました。
+GroupChat,0,GroupChatTost_ToInviteGroupError,招待中にエラーが発生しました。
+GroupChat,0,GroupChatTost_ReInviteGroupError,招待の受け取りに失敗しました。
+GroupChat,0,GroupChatTost_LeaveGroupError,脱退に失敗しました。
+GroupChat,0,GroupChatTost_DeleteGroupError,除名に失敗しました。
+GroupChat,0,GroupChatTost_UpdateTextError,グループ名、コメントの変更に失敗しました。
+GroupChat,0,GroupChatTost_MoveListError,グループリストの変更に失敗しました。
+GroupChat,0,GroupChatTost_LockError,グループにロックに失敗しました。
+GroupChat,0,GroupChatTost_GetLogError,ログの取得に失敗しました。
+GroupChat,0,GroupChatTost_DenyInviteError,招待拒否設定に失敗しました。
+GroupChat,0,GroupChatTost_InviteListError,招待中リストの取得に失敗しました。
+GroupChat,0,GroupChatTost_InviteLimitOver,招待数オーバーの為$(0)からの招待を受け取れませんでした。
+GroupChat,0,GroupChatTost_InviteDeny,一部、非招待設定のフレンドがいました。
+GroupChat,0,FriendList_Title,「$(0)」への招待
+GroupChat,0,Make_Default_Name,$(0)のグループ名
+GroupChat,0,FriendList_Tree_Online,招待できるオンラインのフレンド($(0))
+GroupChat,0,FriendList_Tree_OnlineLite,オンラインのフレンド($(0))
+GroupChat,0,FriendList_Tree_Offline,招待できるオフラインのフレンド($(0))
+GroupChat,0,FriendList_Tree_OfflineLite,オフラインのフレンド($(0))
+GroupChat,0,FriendList_Tree_BlackList,PSO2ブロックリスト
+GroupChat,0,FriendList_Tree_Member,このグループのメンバー($(0))
+GroupChat,0,FriendList_Tree_Invite,招待中のフレンド($(0))
+GroupChat,0,GroupList_NoItem,登録しているグループがありません。<br><br>「グループを作る」でフレンドを招待するか、<br>フレンドからグループへの招待を受けることで<br>グループチャットに参加できます。
+GroupChat,0,InviteList_NoItem,招待されているグループがありません。
+GroupChat,0,GroupChatDate,$(1)/$(0) $(2)
+GroupChat,0,GroupChatDateSunday,(日)
+GroupChat,0,GroupChatDateMonday,(月)
+GroupChat,0,GroupChatDateTuesday,(火)
+GroupChat,0,GroupChatDateWednesday,(水)
+GroupChat,0,GroupChatDateThursday,(木)
+GroupChat,0,GroupChatDateFriday,(金)
+GroupChat,0,GroupChatDateSaturday,(土)
+GroupChat,0,GroupListLabel,$(0) ($(1))
+GroupChat,0,GroupListLabelMax,$(0) <c ff9933>($(1))<c>
+GroupChat,0,GroupChatTost_GroupJoin,$(0)が「$(1)」を登録しました。
+GroupChat,0,GroupChatTost_InviteDeny2,グループの招待を断りました。
+GroupChat,0,Popup_Inviterefuse,招待を断る
+GroupChat,0,GroupChat_JoinMax_Title,登録グループ数確認
+GroupChat,0,GroupChat_JoinMax_Message,登録中のグループ数が上限に達しているため<br>これ以上、登録することができません。<br>登録中のいずれかのグループから脱退後<br>招待されたグループを登録してください。
+GroupChat,0,GroupChatError_MakeEmptyFault,グループ名、もしくはグループコメントが<br>空欄のためグループを作成できませんでした。
+GroupChat,0,GroupChatError_RenameEmptyFault,グループ名、もしくはグループコメントが<br>空欄のためグループを編集できませんでした。
+GroupChat,0,GroupChatError_NotFindTitle,グループ確認
+GroupChat,0,GroupChatError_NotFindMessage,グループが見つからなかったため<br>登録できません。
+GroupChat,0,GroupChatError_NotInviteTitle,グループ確認
+GroupChat,0,GroupChatError_NotInviteMessage,グループを登録できません。<br>登録するグループを確認してください。
+GroupChat,0,GroupChatError_JoiningTitle,登録の確認
+GroupChat,0,GroupChatError_JoiningMessage,すでにこのグループは登録しています。
+GroupChat,0,GroupChatTost_ListNumFault,このグループを表示できませんでした。
+GroupChat,0,GroupChatTost_PopupInvitedCansel,招待を取り消す
+GroupChat,0,GroupChatTost_TitleInvitedCansel,招待の取り消し確認
+GroupChat,0,GroupChatTost_QuesInvitedCansel,$(1)の<br>「$(0)」への<br>招待を取り消します。<br><br>よろしいですか？
+GroupChat,0,GroupChatTost_ButtonInvitedCansel,招待を取り消す
+GroupChat,0,GroupChatTost_ToastInvitedCansel,招待を取り消しました。
+GroupChat,0,GroupChatTost_ToastInvitedCansel1,選択したフレンドはすでにグループを登録しています。
+GroupChat,0,GroupChatTost_ToastInvitedCansel2,招待の取り消しができませんでした
+GroupChat,1,GroupChat_Title,Group Chat
+GroupChat,1,GroupChat_SetMsg,Chat You've Joined
+GroupChat,1,GroupChat_NewMsg,Invite
+GroupChat,1,GroupChat_MakeGroup,Create Group
+GroupChat,1,GroupChat_NewNumMsg,Invited ($(0))
+GroupChat,1,GroupChat_GroupLeader,Group Leader
+GroupChat,1,Popup_Active,Show This Group
+GroupChat,1,Popup_Inactive,Hide This Group
+GroupChat,1,Popup_Confirm,View Members
+GroupChat,1,Popup_Invite,Invite Friends
+GroupChat,1,Popup_Banish,Remove Members
+GroupChat,1,Popup_ChangeName,Edit Group Settings
+GroupChat,1,Popup_ChangeLeader,Change Leader
+GroupChat,1,Popup_MoveTop,Move to Top
+GroupChat,1,Popup_Delete,Leave This Group
+GroupChat,1,Popup_Join,Join
+GroupChat,1,GroupChat_Title_New,CREATE GROUP
+GroupChat,1,GroupChat_GroupName,Group Name
+GroupChat,1,GroupChat_GroupComment,Group Comments
+GroupChat,1,GroupChat_Decided,Confirm
+GroupChat,1,GroupChat_Canceled,Cancel
+GroupChat,1,GroupChat_Title_Rename,EDIT GROUP SETTINGS
+GroupChat,1,GroupChat_Rename,Apply Changes
+GroupChat,1,GroupChat_MemberTab1,Online ($(0))
+GroupChat,1,GroupChat_MemberTab4,Online
+GroupChat,1,GroupChat_MemberTab2,Offline
+GroupChat,1,GroupChat_MemberTab3,PSO2 Blocklist
+GroupChat,1,GroupChatError_Title,MESSAGE
+GroupChat,1,GroupChatError_ListNumFault,Group could not be shown.
+GroupChat,1,GroupChatError_MakeGroupFault,Group could not be created.
+GroupChat,1,GroupChatError_MakeNGWordFault,The Group Name or Group Comments<br>have characters that cannot be used.
+GroupChat,1,GroupChatError_MakeGroupMaxFault,The Group could not be created<br>because it has reached the maximum number of members.
+GroupChat,1,GroupChatError_RenameGroupFault,Could not edit the Group.
+GroupChat,1,GroupChatError_RenameNGWordFault,The Group Name or Group Comments<br>have characters that cannot be used.
+GroupChat,1,GroupChatQues_Title,CONFIRM
+GroupChat,1,GroupChatQues_Banish,$(0) will be removed from the Group.<br><br>Are you sure you wish to proceed?
+GroupChat,1,GroupChatQues_Leader,$(0) will be the leader.<br><br>Are you sure you wish to proceed?
+GroupChat,1,GroupChatQues_Delete,"You will leave ""$(0)"".<br><br><yellow>*After leaving, you must be re-invited to rejoin.<c><br><br>Are you sure you wish to proceed?"
+GroupChat,1,GroupChatQC_Invite_Title,GROUP INVITE
+GroupChat,1,GroupChatQC_Invite_Mess,"You received an invite from ""$(0)"" in $(1).<br>Would you like to open a reply window?<br><br>*You can also select [No] and send a reply later from<br>[Chat Settings] in the Main Menu."
+GroupChat,1,GroupChatQC_Join_Log,$(1) joined $(0).
+GroupChat,1,NewGroupChat,New Group Invite
+GroupChat,1,NewExpGroupChat,You received a Group Invite.
+GroupChat,1,GroupChatTost_GroupList,Retrieving Group information.
+GroupChat,1,GroupChatTost_GroupCreate,You created a new Group.
+GroupChat,1,GroupChatTost_Delete,"You left Group ""$(0)""."
+GroupChat,1,GroupChatTost_MemberList,Retrieving Member information.
+GroupChat,1,GroupChatTost_MemberInvite,You sent an invite to the selected Friend.
+GroupChat,1,GroupChatTost_MemberJoin,"You joined Group ""$(0)""."
+GroupChat,1,GroupChatTost_MemberBanish,You removed $(0).
+GroupChat,1,GroupChatTost_GroupActive,"Opening Group ""$(0)""."
+GroupChat,1,GroupChatTost_GroupInactive,No Groups are active.
+GroupChat,1,GroupChatTost_NameChange,The Group Settings were changed.
+GroupChat,1,GroupChatTost_MoveTop,Move to Top
+GroupChat,1,GroupChatTost_LeaderSuccess,The Leader was changed to $(0).
+GroupChat,1,GroupChatTost_LeaderFailed,The Leader could not be changed.
+GroupChat,1,GroupChatTost_InviteFailed,You did not receive a Group Invite.
+GroupChat,1,GroupChatTost_Error,Common Error
+GroupChat,1,GroupChatTost_CreateGroupError,Failed to create new group.
+GroupChat,1,GroupChatTost_ListReceiveError,Failed to acquire group member.
+GroupChat,1,GroupChatTost_InviteGroupError,Invitation failed.
+GroupChat,1,GroupChatTost_ToInviteGroupError,An error occured during the invitation.
+GroupChat,1,GroupChatTost_ReInviteGroupError,Failed to retrieve the invitation.
+GroupChat,1,GroupChatTost_LeaveGroupError,Failed to withdraw.
+GroupChat,1,GroupChatTost_DeleteGroupError,Failed to expel.
+GroupChat,1,GroupChatTost_UpdateTextError,Failed to change group name and comment.
+GroupChat,1,GroupChatTost_MoveListError,Failed to change the group list.
+GroupChat,1,GroupChatTost_LockError,Failed to lock to the group.
+GroupChat,1,GroupChatTost_GetLogError,Failed to acquire the log.
+GroupChat,1,GroupChatTost_DenyInviteError,Invitation block settings failed.
+GroupChat,1,GroupChatTost_InviteListError,Failed to acquire current invitation list.
+GroupChat,1,GroupChatTost_InviteLimitOver,"No. of invitations exceeded, failed to retrieve $(0)'s invitation."
+GroupChat,1,GroupChatTost_InviteDeny,A Friend is included in part of your Uninvite Settings.
+GroupChat,1,FriendList_Title,"INVITED TO ""$(0)"""
+GroupChat,1,Make_Default_Name,"Group Name of ""$(0)"""
+GroupChat,1,FriendList_Tree_Online,Online Friends that can be invited ($(0))
+GroupChat,1,FriendList_Tree_Offline,Offline Friends that can be invited ($(0))
+GroupChat,1,FriendList_Tree_BlackList,Blocked
+GroupChat,1,FriendList_Tree_Member,Members in this Group ($(0))
+GroupChat,1,FriendList_Tree_Invite,Friends invited ($(0))
+GroupChat,1,GroupList_NoItem,"You have not joined a Group.<br><br>You can join Group Chat by inviting Friends with <br>""Create Group"", or by accepting an invite to a <br>Group by a Friend."
+GroupChat,1,InviteList_NoItem,You have not been invited to any Groups.
+GroupChat,1,GroupChatDate,$(1)/$(0) $(2)
+GroupChat,1,GroupChatDateSunday,(Sunday)
+GroupChat,1,GroupChatDateMonday,(Monday)
+GroupChat,1,GroupChatDateTuesday,(Tuesday)
+GroupChat,1,GroupChatDateWednesday,(Wednesday)
+GroupChat,1,GroupChatDateThursday,(Thursday)
+GroupChat,1,GroupChatDateFriday,(Friday)
+GroupChat,1,GroupChatDateSaturday,(Saturday)
+GroupChat,1,GroupListLabel,$(0) ($(1))
+GroupChat,1,GroupListLabelMax,$(0) <c ff9933>($(1))<c>
+GroupChat,1,GroupChatTost_GroupJoin,"$(0) joined ""$(1)""."
+GroupChat,1,GroupChatTost_InviteDeny2,You declined the Group Invite.
+GroupChat,1,Popup_Inviterefuse,Decline Invite
+GroupChat,1,GroupChat_JoinMax_Title,VIEW THE NUMBER OF GROUPS JOINED
+GroupChat,1,GroupChat_JoinMax_Message,You have joined the maximum number of Groups and cannot join<br>any more. Please join the Group you have been invited to<br>upon leaving one of the Groups you have joined.
+GroupChat,1,GroupChatError_MakeEmptyFault,The Group could not be created because you left the<br>Group Name and/or Group Comments blank.
+GroupChat,1,GroupChatError_RenameEmptyFault,The Group could not be edited because you<br>left the Group Name and/or Group Comments blank.
+GroupChat,1,GroupChatError_NotFindTitle,CHECK GROUPS
+GroupChat,1,GroupChatError_NotFindMessage,The Group cannot not be joined because it could not be found.
+GroupChat,1,GroupChatError_NotInviteTitle,CHECK GROUPS
+GroupChat,1,GroupChatError_NotInviteMessage,The Group cannot be joined because<br>you have not received an invite.
+GroupChat,1,GroupChatError_JoiningTitle,CHECK GROUP ENROLLMENT
+GroupChat,1,GroupChatError_JoiningMessage,You have already joined this Group.
+GroupChat,1,GroupChatTost_ListNumFault,The Group could not be shown.
+GroupChat,1,GroupChatTost_PopupInvitedCansel,Cancel Invitation
+GroupChat,1,GroupChatTost_TitleInvitedCansel,CONFIRM INVITATION CANCELLATION
+GroupChat,1,GroupChatTost_QuesInvitedCansel,This will cancel $(1)'s invitation to $(0).<br><br>Are you sure you wish to proceed?
+GroupChat,1,GroupChatTost_ButtonInvitedCansel,Cancel Invitation
+GroupChat,1,GroupChatTost_ToastInvitedCansel,Invitation cancelled.
+GroupChat,1,GroupChatTost_ToastInvitedCansel1,The friend you selected has already joined this group.
+GroupChat,1,GroupChatTost_ToastInvitedCansel2,Could not cancel invitation.

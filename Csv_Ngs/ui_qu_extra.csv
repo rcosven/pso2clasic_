@@ -1,0 +1,623 @@
+﻿section,group,id,text
+ExtraCondition,0,extra_assign,exq_$(0)
+ExtraCondition,0,exq_EnemyAtkDown_010,攻撃力10%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_020,攻撃力20%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_030,攻撃力30%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_040,攻撃力40%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_050,攻撃力50%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_060,攻撃力60%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_070,攻撃力70%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_080,攻撃力80%ダウン
+ExtraCondition,0,exq_EnemyAtkDown_090,攻撃力90%ダウン
+ExtraCondition,0,exq_EnemyAtkUp_010,攻撃力10%アップ
+ExtraCondition,0,exq_EnemyAtkUp_020,攻撃力20%アップ
+ExtraCondition,0,exq_EnemyAtkUp_030,攻撃力30%アップ
+ExtraCondition,0,exq_EnemyAtkUp_040,攻撃力40%アップ
+ExtraCondition,0,exq_EnemyAtkUp_050,攻撃力50%アップ
+ExtraCondition,0,exq_EnemyAtkUp_060,攻撃力60%アップ
+ExtraCondition,0,exq_EnemyAtkUp_070,攻撃力70%アップ
+ExtraCondition,0,exq_EnemyAtkUp_080,攻撃力80%アップ
+ExtraCondition,0,exq_EnemyAtkUp_090,攻撃力90%アップ
+ExtraCondition,0,exq_EnemyAtkUp_100,攻撃力100%アップ
+ExtraCondition,0,exq_EnemyAtkUp_200,攻撃力200%アップ
+ExtraCondition,0,exq_EnemyAtkUp_300,攻撃力300%アップ
+ExtraCondition,0,exq_EnemyAtkUp_400,攻撃力400%アップ
+ExtraCondition,0,exq_EnemyAtkUp_500,攻撃力500%アップ
+ExtraCondition,0,exq_EnemyDefDown_010,防御力10%ダウン
+ExtraCondition,0,exq_EnemyDefDown_020,防御力20%ダウン
+ExtraCondition,0,exq_EnemyDefDown_030,防御力30%ダウン
+ExtraCondition,0,exq_EnemyDefDown_040,防御力40%ダウン
+ExtraCondition,0,exq_EnemyDefDown_050,防御力50%ダウン
+ExtraCondition,0,exq_EnemyDefDown_060,防御力60%ダウン
+ExtraCondition,0,exq_EnemyDefDown_070,防御力70%ダウン
+ExtraCondition,0,exq_EnemyDefDown_080,防御力80%ダウン
+ExtraCondition,0,exq_EnemyDefDown_090,防御力90%ダウン
+ExtraCondition,0,exq_EnemyDefUp_010,防御力10%アップ
+ExtraCondition,0,exq_EnemyDefUp_020,防御力20%アップ
+ExtraCondition,0,exq_EnemyDefUp_030,防御力30%アップ
+ExtraCondition,0,exq_EnemyDefUp_040,防御力40%アップ
+ExtraCondition,0,exq_EnemyDefUp_050,防御力50%アップ
+ExtraCondition,0,exq_EnemyDefUp_060,防御力60%アップ
+ExtraCondition,0,exq_EnemyDefUp_070,防御力70%アップ
+ExtraCondition,0,exq_EnemyDefUp_080,防御力80%アップ
+ExtraCondition,0,exq_EnemyDefUp_090,防御力90%アップ
+ExtraCondition,0,exq_EnemyHpUp_10,HP10%アップ
+ExtraCondition,0,exq_EnemyHpUp_20,HP20%アップ
+ExtraCondition,0,exq_EnemyHpUp_30,HP30%アップ
+ExtraCondition,0,exq_EnemyHpUp_40,HP40%アップ
+ExtraCondition,0,exq_EnemyHpUp_50,HP50%アップ
+ExtraCondition,0,exq_EnemyHpUp_60,HP60%アップ
+ExtraCondition,0,exq_EnemyHpUp_70,HP70%アップ
+ExtraCondition,0,exq_EnemyHpUp_80,HP80%アップ
+ExtraCondition,0,exq_EnemyHpUp_90,HP90%アップ
+ExtraCondition,0,exq_EnemyHpUp_100,HP100%アップ
+ExtraCondition,0,exq_EnemyHpUp_200,HP200%アップ
+ExtraCondition,0,exq_EnemyHpUp_300,HP300%アップ
+ExtraCondition,0,exq_EnemyHpUp_400,HP400%アップ
+ExtraCondition,0,exq_EnemyHpUp_500,HP500%アップ
+ExtraCondition,0,exq_EnemyHpDown_10,HP10%ダウン
+ExtraCondition,0,exq_EnemyHpDown_20,HP20%ダウン
+ExtraCondition,0,exq_EnemyHpDown_30,HP30%ダウン
+ExtraCondition,0,exq_EnemyHpDown_40,HP40%ダウン
+ExtraCondition,0,exq_EnemyHpDown_50,HP50%ダウン
+ExtraCondition,0,exq_EnemyHpDown_60,HP60%ダウン
+ExtraCondition,0,exq_EnemyHpDown_70,HP70%ダウン
+ExtraCondition,0,exq_EnemyHpDown_80,HP80%ダウン
+ExtraCondition,0,exq_EnemyHpDown_90,HP90%ダウン
+ExtraCondition,0,exq_ResistAll20%,全体耐性20%アップ
+ExtraCondition,0,exq_ResistAll20%Down,全体耐性20%ダウン
+ExtraCondition,0,exq_ResistAll40%,全体耐性40%アップ
+ExtraCondition,0,exq_ResistAll40%Down,全体耐性40%ダウン
+ExtraCondition,0,exq_ResistAll60%,全体耐性60%アップ
+ExtraCondition,0,exq_ResistAll60%Down,全体耐性60%ダウン
+ExtraCondition,0,exq_ResistAll80%,全体耐性80%アップ
+ExtraCondition,0,exq_ResistAll80%Down,全体耐性80%ダウン
+ExtraCondition,0,exq_ResistDarkDown,闇耐性ダウン大
+ExtraCondition,0,exq_ResistDarkDown_low,闇耐性ダウン小
+ExtraCondition,0,exq_ResistDarkUp,闇耐性アップ大
+ExtraCondition,0,exq_ResistDarkUp_low,闇耐性アップ小
+ExtraCondition,0,exq_ResistFirearm20%,射撃耐性20%アップ
+ExtraCondition,0,exq_ResistFirearm20%Down,射撃耐性20%ダウン
+ExtraCondition,0,exq_ResistFirearm40%,射撃耐性40%アップ
+ExtraCondition,0,exq_ResistFirearm40%Down,射撃耐性40%ダウン
+ExtraCondition,0,exq_ResistFirearm60%,射撃耐性60%アップ
+ExtraCondition,0,exq_ResistFirearm60%Down,射撃耐性60%ダウン
+ExtraCondition,0,exq_ResistFirearm80%,射撃耐性80%アップ
+ExtraCondition,0,exq_ResistFirearm80%Down,射撃耐性80%ダウン
+ExtraCondition,0,exq_ResistFireDown,炎耐性ダウン大
+ExtraCondition,0,exq_ResistFireDown_low,炎耐性ダウン小
+ExtraCondition,0,exq_ResistFireUp,炎耐性アップ大
+ExtraCondition,0,exq_ResistFireUp_low,炎耐性アップ小
+ExtraCondition,0,exq_ResistIceDown,氷耐性ダウン大
+ExtraCondition,0,exq_ResistIceDown_low,氷耐性ダウン小
+ExtraCondition,0,exq_ResistIceUp,氷耐性アップ大
+ExtraCondition,0,exq_ResistIceUp_low,氷耐性アップ小
+ExtraCondition,0,exq_ResistLightDown,光耐性ダウン大
+ExtraCondition,0,exq_ResistLightDown_low,光耐性ダウン小
+ExtraCondition,0,exq_ResistLightUp,光耐性アップ大
+ExtraCondition,0,exq_ResistLightUp_low,光耐性アップ小
+ExtraCondition,0,exq_ResistStrike20%,打撃耐性20%アップ
+ExtraCondition,0,exq_ResistStrike20%Down,打撃耐性20%ダウン
+ExtraCondition,0,exq_ResistStrike40%,打撃耐性40%アップ
+ExtraCondition,0,exq_ResistStrike40%Down,打撃耐性40%ダウン
+ExtraCondition,0,exq_ResistStrike60%,打撃耐性60%アップ
+ExtraCondition,0,exq_ResistStrike60%Down,打撃耐性60%ダウン
+ExtraCondition,0,exq_ResistStrike80%,打撃耐性80%アップ
+ExtraCondition,0,exq_ResistStrike80%Down,打撃耐性80%ダウン
+ExtraCondition,0,exq_ResistTechnic20%,法撃耐性20%アップ
+ExtraCondition,0,exq_ResistTechnic20%Down,法撃耐性20%ダウン
+ExtraCondition,0,exq_ResistTechnic40%,法撃耐性40%アップ
+ExtraCondition,0,exq_ResistTechnic40%Down,法撃耐性40%ダウン
+ExtraCondition,0,exq_ResistTechnic60%,法撃耐性60%アップ
+ExtraCondition,0,exq_ResistTechnic60%Down,法撃耐性60%ダウン
+ExtraCondition,0,exq_ResistTechnic80%,法撃耐性80%アップ
+ExtraCondition,0,exq_ResistTechnic80%Down,法撃耐性80%ダウン
+ExtraCondition,0,exq_ResistThunderDown,雷耐性ダウン大
+ExtraCondition,0,exq_ResistThunderDown_low,雷耐性ダウン小
+ExtraCondition,0,exq_ResistThunderUp,雷耐性アップ大
+ExtraCondition,0,exq_ResistThunderUp_low,雷耐性アップ小
+ExtraCondition,0,exq_ResistWindDown,風耐性ダウン大
+ExtraCondition,0,exq_ResistWindDown_low,風耐性ダウン小
+ExtraCondition,0,exq_ResistWindUp,風耐性アップ大
+ExtraCondition,0,exq_ResistWindUp_low,風耐性アップ小
+ExtraCondition,0,exq_PPRegenerateUp10,PP回復速度10%アップ
+ExtraCondition,0,exq_PPRegenerateUp20,PP回復速度20%アップ
+ExtraCondition,0,exq_PPRegenerateUp30,PP回復速度30%アップ
+ExtraCondition,0,exq_PPRegenerateUp40,PP回復速度40%アップ
+ExtraCondition,0,exq_PPRegenerateUp50,PP回復速度50%アップ
+ExtraCondition,0,exq_PPRegenerateUp60,PP回復速度60%アップ
+ExtraCondition,0,exq_PPRegenerateUp70,PP回復速度70%アップ
+ExtraCondition,0,exq_PPRegenerateUp80,PP回復速度80%アップ
+ExtraCondition,0,exq_PPRegenerateUp90,PP回復速度90%アップ
+ExtraCondition,0,exq_PPRegenerateUp100,PP回復速度100%アップ
+ExtraCondition,0,exq_PPRegenerateUp200,PP回復速度200%アップ
+ExtraCondition,0,exq_PPRegenerateUp300,PP回復速度300%アップ
+ExtraCondition,0,exq_PPRegenerateUp400,PP回復速度400%アップ
+ExtraCondition,0,exq_PPRegenerateUp500,PP回復速度500%アップ
+ExtraCondition,0,exq_PPRegenerateDown10,PP回復速度10%ダウン
+ExtraCondition,0,exq_PPRegenerateDown20,PP回復速度20%ダウン
+ExtraCondition,0,exq_PPRegenerateDown30,PP回復速度30%ダウン
+ExtraCondition,0,exq_PPRegenerateDown40,PP回復速度40%ダウン
+ExtraCondition,0,exq_PPRegenerateDown50,PP回復速度50%ダウン
+ExtraCondition,0,exq_PPRegenerateDown60,PP回復速度60%ダウン
+ExtraCondition,0,exq_PPRegenerateDown70,PP回復速度70%ダウン
+ExtraCondition,0,exq_PPRegenerateDown80,PP回復速度80%ダウン
+ExtraCondition,0,exq_PPRegenerateDown90,PP回復速度90%ダウン
+ExtraCondition,0,exq_RecoveryEffectDown,回復効果低下
+ExtraCondition,0,exq_AtpUp10,与ダメージ倍率10%アップ
+ExtraCondition,0,exq_AtpUp20,与ダメージ倍率20%アップ
+ExtraCondition,0,exq_AtpUp30,与ダメージ倍率30%アップ
+ExtraCondition,0,exq_AtpUp40,与ダメージ倍率40%アップ
+ExtraCondition,0,exq_AtpUp50,与ダメージ倍率50%アップ
+ExtraCondition,0,exq_AtpUp60,与ダメージ倍率60%アップ
+ExtraCondition,0,exq_AtpUp70,与ダメージ倍率70%アップ
+ExtraCondition,0,exq_AtpUp80,与ダメージ倍率80%アップ
+ExtraCondition,0,exq_AtpUp90,与ダメージ倍率90%アップ
+ExtraCondition,0,exq_AtpUp100,与ダメージ倍率100%アップ
+ExtraCondition,0,exq_AtpUp110,与ダメージ倍率110%アップ
+ExtraCondition,0,exq_AtpUp120,与ダメージ倍率120%アップ
+ExtraCondition,0,exq_AtpUp130,与ダメージ倍率130%アップ
+ExtraCondition,0,exq_AtpUp140,与ダメージ倍率140%アップ
+ExtraCondition,0,exq_AtpUp150,与ダメージ倍率150%アップ
+ExtraCondition,0,exq_AtpUp160,与ダメージ倍率160%アップ
+ExtraCondition,0,exq_AtpUp170,与ダメージ倍率170%アップ
+ExtraCondition,0,exq_AtpUp180,与ダメージ倍率180%アップ
+ExtraCondition,0,exq_AtpUp190,与ダメージ倍率190%アップ
+ExtraCondition,0,exq_AtpUp200,与ダメージ倍率200%アップ
+ExtraCondition,0,exq_AtpUp210,与ダメージ倍率210%アップ
+ExtraCondition,0,exq_AtpUp220,与ダメージ倍率220%アップ
+ExtraCondition,0,exq_AtpUp230,与ダメージ倍率230%アップ
+ExtraCondition,0,exq_AtpUp240,与ダメージ倍率240%アップ
+ExtraCondition,0,exq_AtpUp250,与ダメージ倍率250%アップ
+ExtraCondition,0,exq_AtpUp260,与ダメージ倍率260%アップ
+ExtraCondition,0,exq_AtpUp270,与ダメージ倍率270%アップ
+ExtraCondition,0,exq_AtpUp280,与ダメージ倍率280%アップ
+ExtraCondition,0,exq_AtpUp290,与ダメージ倍率290%アップ
+ExtraCondition,0,exq_AtpUp300,与ダメージ倍率300%アップ
+ExtraCondition,0,exq_FireWeaponHitAtpDown90,炎属性武器威力－90%
+ExtraCondition,0,exq_FireWeaponHitAtpDown50,炎属性武器威力－50%
+ExtraCondition,0,exq_FireWeaponHitAtpUp10,炎属性武器威力＋10%
+ExtraCondition,0,exq_FireWeaponHitAtpUp20,炎属性武器威力＋20%
+ExtraCondition,0,exq_FireWeaponHitAtpUp30,炎属性武器威力＋30%
+ExtraCondition,0,exq_FireWeaponHitAtpUp40,炎属性武器威力＋40%
+ExtraCondition,0,exq_FireWeaponHitAtpUp50,炎属性武器威力＋50%
+ExtraCondition,0,exq_IceWeaponHitAtpDown90,氷属性武器威力－90%
+ExtraCondition,0,exq_IceWeaponHitAtpDown50,氷属性武器威力－50%
+ExtraCondition,0,exq_IceWeaponHitAtpUp10,氷属性武器威力＋10%
+ExtraCondition,0,exq_IceWeaponHitAtpUp20,氷属性武器威力＋20%
+ExtraCondition,0,exq_IceWeaponHitAtpUp30,氷属性武器威力＋30%
+ExtraCondition,0,exq_IceWeaponHitAtpUp40,氷属性武器威力＋40%
+ExtraCondition,0,exq_IceWeaponHitAtpUp50,氷属性武器威力＋50%
+ExtraCondition,0,exq_ThunderWeaponHitAtpDown90,雷属性武器威力－90%
+ExtraCondition,0,exq_ThunderWeaponHitAtpDown50,雷属性武器威力－50%
+ExtraCondition,0,exq_ThunderWeaponHitAtpUp10,雷属性武器威力＋10%
+ExtraCondition,0,exq_ThunderWeaponHitAtpUp20,雷属性武器威力＋20%
+ExtraCondition,0,exq_ThunderWeaponHitAtpUp30,雷属性武器威力＋30%
+ExtraCondition,0,exq_ThunderWeaponHitAtpUp40,雷属性武器威力＋40%
+ExtraCondition,0,exq_ThunderWeaponHitAtpUp50,雷属性武器威力＋50%
+ExtraCondition,0,exq_WindWeaponHitAtpDown90,風属性武器威力－90%
+ExtraCondition,0,exq_WindWeaponHitAtpDown50,風属性武器威力－50%
+ExtraCondition,0,exq_WindWeaponHitAtpUp10,風属性武器威力＋10%
+ExtraCondition,0,exq_WindWeaponHitAtpUp20,風属性武器威力＋20%
+ExtraCondition,0,exq_WindWeaponHitAtpUp30,風属性武器威力＋30%
+ExtraCondition,0,exq_WindWeaponHitAtpUp40,風属性武器威力＋40%
+ExtraCondition,0,exq_WindWeaponHitAtpUp50,風属性武器威力＋50%
+ExtraCondition,0,exq_DarkWeaponHitAtpDown90,闇属性武器威力－90%
+ExtraCondition,0,exq_DarkWeaponHitAtpDown50,闇属性武器威力－50%
+ExtraCondition,0,exq_DarkWeaponHitAtpUp10,闇属性武器威力＋10%
+ExtraCondition,0,exq_DarkWeaponHitAtpUp20,闇属性武器威力＋20%
+ExtraCondition,0,exq_DarkWeaponHitAtpUp30,闇属性武器威力＋30%
+ExtraCondition,0,exq_DarkWeaponHitAtpUp40,闇属性武器威力＋40%
+ExtraCondition,0,exq_DarkWeaponHitAtpUp50,闇属性武器威力＋50%
+ExtraCondition,0,exq_LightWeaponHitAtpDown90,光属性武器威力－90%
+ExtraCondition,0,exq_LightWeaponHitAtpDown50,光属性武器威力－50%
+ExtraCondition,0,exq_LightWeaponHitAtpUp10,光属性武器威力＋10%
+ExtraCondition,0,exq_LightWeaponHitAtpUp20,光属性武器威力＋20%
+ExtraCondition,0,exq_LightWeaponHitAtpUp30,光属性武器威力＋30%
+ExtraCondition,0,exq_LightWeaponHitAtpUp40,光属性武器威力＋40%
+ExtraCondition,0,exq_LightWeaponHitAtpUp50,光属性武器威力＋50%
+ExtraCondition,0,exq_AllElementWeaponHitAtpDown90,全属性武器威力－90%
+ExtraCondition,0,exq_AllElementWeaponHitAtpDown50,全属性武器威力－50%
+ExtraCondition,0,exq_AllElementWeaponHitAtpUp10,全属性武器威力＋10%
+ExtraCondition,0,exq_AllElementWeaponHitAtpUp20,全属性武器威力＋20%
+ExtraCondition,0,exq_AllElementWeaponHitAtpUp30,全属性武器威力＋30%
+ExtraCondition,0,exq_AllElementWeaponHitAtpUp40,全属性武器威力＋40%
+ExtraCondition,0,exq_AllElementWeaponHitAtpUp50,全属性武器威力＋50%
+ExtraCondition,0,exq_StrikeWeaponHitAtpDown90,打撃属性武器威力－90%
+ExtraCondition,0,exq_StrikeWeaponHitAtpDown50,打撃属性武器威力－50%
+ExtraCondition,0,exq_StrikeWeaponHitAtpUp10,打撃属性武器威力＋10%
+ExtraCondition,0,exq_StrikeWeaponHitAtpUp20,打撃属性武器威力＋20%
+ExtraCondition,0,exq_StrikeWeaponHitAtpUp30,打撃属性武器威力＋30%
+ExtraCondition,0,exq_StrikeWeaponHitAtpUp40,打撃属性武器威力＋40%
+ExtraCondition,0,exq_StrikeWeaponHitAtpUp50,打撃属性武器威力＋50%
+ExtraCondition,0,exq_FirearmWeaponHitAtpDown90,射撃属性武器威力－90%
+ExtraCondition,0,exq_FirearmWeaponHitAtpDown50,射撃属性武器威力－50%
+ExtraCondition,0,exq_FirearmWeaponHitAtpUp10,射撃属性武器威力＋10%
+ExtraCondition,0,exq_FirearmWeaponHitAtpUp20,射撃属性武器威力＋20%
+ExtraCondition,0,exq_FirearmWeaponHitAtpUp30,射撃属性武器威力＋30%
+ExtraCondition,0,exq_FirearmWeaponHitAtpUp40,射撃属性武器威力＋40%
+ExtraCondition,0,exq_FirearmWeaponHitAtpUp50,射撃属性武器威力＋50%
+ExtraCondition,0,exq_TechnicWeaponHitAtpDown90,法撃属性武器威力－90%
+ExtraCondition,0,exq_TechnicWeaponHitAtpDown50,法撃属性武器威力－50%
+ExtraCondition,0,exq_TechnicWeaponHitAtpUp10,法撃属性武器威力＋10%
+ExtraCondition,0,exq_TechnicWeaponHitAtpUp20,法撃属性武器威力＋20%
+ExtraCondition,0,exq_TechnicWeaponHitAtpUp30,法撃属性武器威力＋30%
+ExtraCondition,0,exq_TechnicWeaponHitAtpUp40,法撃属性武器威力＋40%
+ExtraCondition,0,exq_TechnicWeaponHitAtpUp50,法撃属性武器威力＋50%
+ExtraCondition,0,exq_AllWeaponHitAtpDown90,威力－90%
+ExtraCondition,0,exq_AllWeaponHitAtpDown50,威力－50%
+ExtraCondition,0,exq_AllWeaponHitAtpUp10,威力＋10%
+ExtraCondition,0,exq_AllWeaponHitAtpUp20,威力＋20%
+ExtraCondition,0,exq_AllWeaponHitAtpUp30,威力＋30%
+ExtraCondition,0,exq_AllWeaponHitAtpUp40,威力＋40%
+ExtraCondition,0,exq_AllWeaponHitAtpUp50,威力＋50%
+ExtraCondition,0,exq_PPIncreaseDown90,PP自然回復量－90%
+ExtraCondition,0,exq_PPIncreaseDown80,PP自然回復量－80%
+ExtraCondition,0,exq_PPIncreaseDown50,PP自然回復量－50%
+ExtraCondition,0,exq_PPIncreaseUp50,PP自然回復量＋50%
+ExtraCondition,0,exq_PPIncreaseUp100,PP自然回復量＋100%
+ExtraCondition,0,exq_PPIncreaseUp200,PP自然回復量＋200%
+ExtraCondition,0,exq_RecoveryEffectDown90,HP回復量－90%
+ExtraCondition,0,exq_RecoveryEffectDown80,HP回復量－80%
+ExtraCondition,0,exq_RecoveryEffectDown50,HP回復量－50%
+ExtraCondition,0,exq_RecoveryEffectUp50,HP回復量＋50%
+ExtraCondition,0,exq_RecoveryEffectUp100,HP回復量＋100%
+ExtraCondition,0,exq_RecoveryEffectUp200,HP回復量＋200%
+ExtraCondition,0,exq_EnemyHitAtpUp10,攻撃力＋10%
+ExtraCondition,0,exq_EnemyHitAtpUp20,攻撃力＋20%
+ExtraCondition,0,exq_EnemyHitAtpUp50,攻撃力＋50%
+ExtraCondition,0,exq_EnemyHitAtpUp100,攻撃力＋100%
+ExtraCondition,0,exq_EnemyHitAtpUp150,攻撃力＋150%
+ExtraCondition,0,exq_EnemyHitAtpUp200,攻撃力＋200%
+ExtraCondition,0,exq_EnemyHitAtpUp250,攻撃力＋250%
+ExtraCondition,0,exq_EnemyHitAtpUp300,攻撃力＋300%
+ExtraCondition,0,exq_EnemyHitAtpDown10,攻撃力－10%
+ExtraCondition,0,exq_EnemyHitAtpDown20,攻撃力－20%
+ExtraCondition,0,exq_EnemyHitAtpDown30,攻撃力－30%
+ExtraCondition,0,exq_EnemyHitAtpDown50,攻撃力－50%
+ExtraCondition,0,exq_EnemyDmgElementReactUp10,属性ダウン値増加量＋10%
+ExtraCondition,0,exq_EnemyDmgElementReactUp20,属性ダウン値増加量＋20%
+ExtraCondition,0,exq_EnemyDmgElementReactUp50,属性ダウン値増加量＋50%
+ExtraCondition,0,exq_EnemyDmgElementReactUp100,属性ダウン値増加量＋100%
+ExtraCondition,0,exq_EnemyDmgElementReactDown10,属性ダウン値増加量－10%
+ExtraCondition,0,exq_EnemyDmgElementReactDown20,属性ダウン値増加量－20%
+ExtraCondition,0,exq_EnemyDmgElementReactDown50,属性ダウン値増加量－50%
+ExtraCondition,0,exq_EnemyDmgElementReactDown100,属性ダウン値増加量－100%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactUp10,物理ダウン値増加量＋10%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactUp20,物理ダウン値増加量＋20%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactUp50,物理ダウン値増加量＋50%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactUp100,物理ダウン値増加量＋100%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactDown10,物理ダウン値増加量－10%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactDown20,物理ダウン値増加量－20%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactDown50,物理ダウン値増加量－50%
+ExtraCondition,0,exq_EnemyDmgPhysicsReactDown100,物理ダウン値増加量－100%
+ExtraCondition,0,exq_EnemyHPUp10,HP＋10%
+ExtraCondition,0,exq_EnemyHPUp20,HP＋20%
+ExtraCondition,0,exq_EnemyHPUp50,HP＋50%
+ExtraCondition,0,exq_EnemyHPUp100,HP＋100%
+ExtraCondition,0,exq_EnemyHPUp150,HP＋150%
+ExtraCondition,0,exq_EnemyHPUp200,HP＋200%
+ExtraCondition,0,exq_EnemyHPUp250,HP＋250%
+ExtraCondition,0,exq_EnemyHPUp300,HP＋300%
+ExtraCondition,0,exq_EnemyHPDown10,HP－10%
+ExtraCondition,0,exq_EnemyHPDown20,HP－20%
+ExtraCondition,0,exq_EnemyHPDown30,HP－30%
+ExtraCondition,0,exq_EnemyHPDown50,HP－50%
+ExtraCondition,1,extra_assign,exq_$(0)
+ExtraCondition,1,exq_EnemyAtkDown_010,Ataque reducido un 10%
+ExtraCondition,1,exq_EnemyAtkDown_020,Ataque reducido un 20%
+ExtraCondition,1,exq_EnemyAtkDown_030,Ataque reducido un 30%
+ExtraCondition,1,exq_EnemyAtkDown_040,Ataque reducido un 40%
+ExtraCondition,1,exq_EnemyAtkDown_050,Ataque reducido un 50%
+ExtraCondition,1,exq_EnemyAtkDown_060,Ataque reducido un 60%
+ExtraCondition,1,exq_EnemyAtkDown_070,Ataque reducido un 70%
+ExtraCondition,1,exq_EnemyAtkDown_080,Ataque reducido 80%
+ExtraCondition,1,exq_EnemyAtkDown_090,Ataque reducido 90%
+ExtraCondition,1,exq_EnemyAtkUp_010,Ataque hasta un 10%
+ExtraCondition,1,exq_EnemyAtkUp_020,Ataque hasta un 20%
+ExtraCondition,1,exq_EnemyAtkUp_030,Ataque hasta un 30%
+ExtraCondition,1,exq_EnemyAtkUp_040,Ataque hasta un 40%
+ExtraCondition,1,exq_EnemyAtkUp_050,Ataque hasta un 50%
+ExtraCondition,1,exq_EnemyAtkUp_060,Ataque hasta un 60%
+ExtraCondition,1,exq_EnemyAtkUp_070,Ataque hasta un 70%
+ExtraCondition,1,exq_EnemyAtkUp_080,Ataque hasta un 80%
+ExtraCondition,1,exq_EnemyAtkUp_090,Ataque hasta 90%
+ExtraCondition,1,exq_EnemyAtkUp_100,Ataque hasta 100%
+ExtraCondition,1,exq_EnemyAtkUp_200,Ataque hasta 200%
+ExtraCondition,1,exq_EnemyAtkUp_300,Ataque hasta 300%
+ExtraCondition,1,exq_EnemyAtkUp_400,Ataque hasta 400%
+ExtraCondition,1,exq_EnemyAtkUp_500,Ataque hasta 500%
+ExtraCondition,1,exq_EnemyDefDown_010,Defensa baja un 10%
+ExtraCondition,1,exq_EnemyDefDown_020,Defensa baja un 20%
+ExtraCondition,1,exq_EnemyDefDown_030,Defensa baja un 30%
+ExtraCondition,1,exq_EnemyDefDown_040,Defensa baja un 40%
+ExtraCondition,1,exq_EnemyDefDown_050,Defensa bajada un 50%
+ExtraCondition,1,exq_EnemyDefDown_060,Defensa baja un 60%
+ExtraCondition,1,exq_EnemyDefDown_070,Defensa baja un 70%
+ExtraCondition,1,exq_EnemyDefDown_080,Defensa baja un 80%
+ExtraCondition,1,exq_EnemyDefDown_090,Defensa baja un 90%
+ExtraCondition,1,exq_EnemyDefUp_010,Defensa aumenta un 10%
+ExtraCondition,1,exq_EnemyDefUp_020,Defensa aumenta un 20%
+ExtraCondition,1,exq_EnemyDefUp_030,Defensa aumenta un 30%
+ExtraCondition,1,exq_EnemyDefUp_040,Defensa aumenta un 40%
+ExtraCondition,1,exq_EnemyDefUp_050,Defensa aumenta un 50%
+ExtraCondition,1,exq_EnemyDefUp_060,Defensa aumenta un 60%
+ExtraCondition,1,exq_EnemyDefUp_070,Defensa hasta un 70%
+ExtraCondition,1,exq_EnemyDefUp_080,Defensa aumenta un 80%
+ExtraCondition,1,exq_EnemyDefUp_090,Defensa hasta un 90%
+ExtraCondition,1,exq_EnemyHpUp_10,HP aumentó un 10%
+ExtraCondition,1,exq_EnemyHpUp_20,HP aumentó un 20%
+ExtraCondition,1,exq_EnemyHpUp_30,HP aumentó un 30%
+ExtraCondition,1,exq_EnemyHpUp_40,HP aumentó un 40%
+ExtraCondition,1,exq_EnemyHpUp_50,HP aumentó un 50%
+ExtraCondition,1,exq_EnemyHpUp_60,HP aumentó un 60%
+ExtraCondition,1,exq_EnemyHpUp_70,HP aumentó un 70%
+ExtraCondition,1,exq_EnemyHpUp_80,HP aumentó un 80%
+ExtraCondition,1,exq_EnemyHpUp_90,HP aumentó un 90%
+ExtraCondition,1,exq_EnemyHpUp_100,HP aumentó un 100%
+ExtraCondition,1,exq_EnemyHpUp_200,HP aumentó un 200%
+ExtraCondition,1,exq_EnemyHpUp_300,HP aumentó un 300%
+ExtraCondition,1,exq_EnemyHpUp_400,HP aumentó un 400%
+ExtraCondition,1,exq_EnemyHpUp_500,HP aumentó un 500%
+ExtraCondition,1,exq_EnemyHpDown_10,HP bajó un 10%
+ExtraCondition,1,exq_EnemyHpDown_20,HP bajó un 20%
+ExtraCondition,1,exq_EnemyHpDown_30,HP bajó un 30%
+ExtraCondition,1,exq_EnemyHpDown_40,HP bajó un 40%
+ExtraCondition,1,exq_EnemyHpDown_50,HP bajó un 50%
+ExtraCondition,1,exq_EnemyHpDown_60,HP bajó un 60%
+ExtraCondition,1,exq_EnemyHpDown_70,HP bajó un 70%
+ExtraCondition,1,exq_EnemyHpDown_80,HP bajó un 80%
+ExtraCondition,1,exq_EnemyHpDown_90,HP bajó un 90%
+ExtraCondition,1,exq_ResistAll20%,La resistencia general aumentó un 20%
+ExtraCondition,1,exq_ResistAll20%Down,La resistencia general bajó un 20%
+ExtraCondition,1,exq_ResistAll40%,La resistencia general aumentó un 40%
+ExtraCondition,1,exq_ResistAll40%Down,La resistencia general bajó un 40%
+ExtraCondition,1,exq_ResistAll60%,La resistencia general aumentó un 60%
+ExtraCondition,1,exq_ResistAll60%Down,La resistencia general bajó un 60%
+ExtraCondition,1,exq_ResistAll80%,Resistencia general hasta un 80%
+ExtraCondition,1,exq_ResistAll80%Down,La resistencia general bajó un 80%
+ExtraCondition,1,exq_ResistDarkDown,Resistencia oscura hacia abajo L
+ExtraCondition,1,exq_ResistDarkDown_low,Resistencia oscura abajo S
+ExtraCondition,1,exq_ResistDarkUp,Resistencia oscura hasta L
+ExtraCondition,1,exq_ResistDarkUp_low,Resistencia oscura hasta S
+ExtraCondition,1,exq_ResistFirearm20%,La resistencia a distancia aumentó un 20%
+ExtraCondition,1,exq_ResistFirearm20%Down,La resistencia a distancia disminuyó un 20 %.
+ExtraCondition,1,exq_ResistFirearm40%,La resistencia a distancia aumentó un 40%
+ExtraCondition,1,exq_ResistFirearm40%Down,La resistencia a distancia disminuyó un 40 %.
+ExtraCondition,1,exq_ResistFirearm60%,La resistencia a distancia aumentó un 60%
+ExtraCondition,1,exq_ResistFirearm60%Down,La resistencia a distancia disminuyó un 60 %.
+ExtraCondition,1,exq_ResistFirearm80%,La resistencia a distancia aumentó un 80%
+ExtraCondition,1,exq_ResistFirearm80%Down,La resistencia a distancia disminuyó un 80 %.
+ExtraCondition,1,exq_ResistFireDown,Resistencia al fuego abajo L
+ExtraCondition,1,exq_ResistFireDown_low,Resistencia al fuego abajo S
+ExtraCondition,1,exq_ResistFireUp,Resistencia al fuego hasta L
+ExtraCondition,1,exq_ResistFireUp_low,Resistencia al fuego hasta S
+ExtraCondition,1,exq_ResistIceDown,Resistencia al hielo hacia abajo L
+ExtraCondition,1,exq_ResistIceDown_low,Resistencia al hielo hacia abajo S
+ExtraCondition,1,exq_ResistIceUp,Resistencia al hielo hasta L
+ExtraCondition,1,exq_ResistIceUp_low,Resistencia al hielo hasta S
+ExtraCondition,1,exq_ResistLightDown,Resistencia a la luz abajo L
+ExtraCondition,1,exq_ResistLightDown_low,Resistencia a la luz abajo S
+ExtraCondition,1,exq_ResistLightUp,Resistencia a la luz hasta L
+ExtraCondition,1,exq_ResistLightUp_low,Resistencia a la luz hasta S
+ExtraCondition,1,exq_ResistStrike20%,La resistencia cuerpo a cuerpo aumentó un 20%
+ExtraCondition,1,exq_ResistStrike20%Down,La resistencia cuerpo a cuerpo se redujo un 20 %.
+ExtraCondition,1,exq_ResistStrike40%,La resistencia cuerpo a cuerpo aumentó un 40%
+ExtraCondition,1,exq_ResistStrike40%Down,La resistencia cuerpo a cuerpo se redujo un 40%.
+ExtraCondition,1,exq_ResistStrike60%,La resistencia cuerpo a cuerpo aumentó un 60%
+ExtraCondition,1,exq_ResistStrike60%Down,La resistencia cuerpo a cuerpo se redujo un 60 %.
+ExtraCondition,1,exq_ResistStrike80%,La resistencia cuerpo a cuerpo aumentó un 80%
+ExtraCondition,1,exq_ResistStrike80%Down,La resistencia cuerpo a cuerpo se redujo un 80%.
+ExtraCondition,1,exq_ResistTechnic20%,La resistencia de la técnica aumentó un 20 %.
+ExtraCondition,1,exq_ResistTechnic20%Down,La resistencia de la técnica bajó un 20%.
+ExtraCondition,1,exq_ResistTechnic40%,Resistencia técnica hasta un 40%
+ExtraCondition,1,exq_ResistTechnic40%Down,La resistencia de la técnica bajó un 40%.
+ExtraCondition,1,exq_ResistTechnic60%,Resistencia técnica hasta un 60%
+ExtraCondition,1,exq_ResistTechnic60%Down,La resistencia de la técnica bajó un 60%.
+ExtraCondition,1,exq_ResistTechnic80%,Resistencia técnica hasta un 80%
+ExtraCondition,1,exq_ResistTechnic80%Down,La resistencia de la técnica bajó un 80%.
+ExtraCondition,1,exq_ResistThunderDown,Resistencia al rayo hacia abajo L
+ExtraCondition,1,exq_ResistThunderDown_low,Resistencia al rayo hacia abajo S
+ExtraCondition,1,exq_ResistThunderUp,Resistencia al rayo hasta L
+ExtraCondition,1,exq_ResistThunderUp_low,Resistencia al rayo hasta S
+ExtraCondition,1,exq_ResistWindDown,Resistencia al viento hacia abajo L
+ExtraCondition,1,exq_ResistWindDown_low,Resistencia al viento hacia abajo S
+ExtraCondition,1,exq_ResistWindUp,Resistencia al viento hasta L
+ExtraCondition,1,exq_ResistWindUp_low,Resistencia al viento hasta S
+ExtraCondition,1,exq_PPRegenerateUp10,La recuperación de PP se acelera un 10%
+ExtraCondition,1,exq_PPRegenerateUp20,La recuperación de PP se acelera un 20%
+ExtraCondition,1,exq_PPRegenerateUp30,La recuperación de PP se acelera un 30%
+ExtraCondition,1,exq_PPRegenerateUp40,La recuperación de PP se acelera un 40%
+ExtraCondition,1,exq_PPRegenerateUp50,La recuperación de PP se acelera un 50%
+ExtraCondition,1,exq_PPRegenerateUp60,La recuperación de PP se acelera un 60%
+ExtraCondition,1,exq_PPRegenerateUp70,La recuperación de PP se acelera un 70%
+ExtraCondition,1,exq_PPRegenerateUp80,La recuperación de PP se acelera un 80%
+ExtraCondition,1,exq_PPRegenerateUp90,La recuperación de PP se acelera un 90%
+ExtraCondition,1,exq_PPRegenerateUp100,La recuperación de PP se acelera al 100%
+ExtraCondition,1,exq_PPRegenerateUp200,La recuperación de PP se acelera un 200%
+ExtraCondition,1,exq_PPRegenerateUp300,La recuperación de PP se acelera un 300%
+ExtraCondition,1,exq_PPRegenerateUp400,La recuperación de PP se acelera un 400%
+ExtraCondition,1,exq_PPRegenerateUp500,La recuperación de PP se acelera un 500%
+ExtraCondition,1,exq_PPRegenerateDown10,La velocidad de recuperación de PP disminuyó un 10%
+ExtraCondition,1,exq_PPRegenerateDown20,La velocidad de recuperación de PP se redujo un 20 %.
+ExtraCondition,1,exq_PPRegenerateDown30,La velocidad de recuperación de PP se redujo un 30%
+ExtraCondition,1,exq_PPRegenerateDown40,La velocidad de recuperación de PP se redujo un 40%
+ExtraCondition,1,exq_PPRegenerateDown50,La velocidad de recuperación de PP se redujo un 50 %.
+ExtraCondition,1,exq_PPRegenerateDown60,La velocidad de recuperación de PP se redujo un 60%
+ExtraCondition,1,exq_PPRegenerateDown70,La velocidad de recuperación de PP se redujo un 70%
+ExtraCondition,1,exq_PPRegenerateDown80,La velocidad de recuperación de PP disminuyó un 80%
+ExtraCondition,1,exq_PPRegenerateDown90,La velocidad de recuperación de PP se redujo en un 90 %.
+ExtraCondition,1,exq_RecoveryEffectDown,Los efectos de recuperación disminuyen
+ExtraCondition,1,exq_AtpUp10,La tasa de daño infligido aumentó un 10%
+ExtraCondition,1,exq_AtpUp20,La tasa de daño infligido aumentó un 20%
+ExtraCondition,1,exq_AtpUp30,La tasa de daño infligido aumentó un 30%
+ExtraCondition,1,exq_AtpUp40,La tasa de daño infligido aumentó un 40%
+ExtraCondition,1,exq_AtpUp50,La tasa de daño infligido aumentó un 50%
+ExtraCondition,1,exq_AtpUp60,La tasa de daño infligido aumentó un 60%
+ExtraCondition,1,exq_AtpUp70,La tasa de daño infligido aumentó un 70%
+ExtraCondition,1,exq_AtpUp80,La tasa de daño infligido aumentó un 80%
+ExtraCondition,1,exq_AtpUp90,La tasa de daño infligido aumentó un 90%
+ExtraCondition,1,exq_AtpUp100,La tasa de daño infligido aumentó un 100%
+ExtraCondition,1,exq_AtpUp110,La tasa de daño infligido aumentó un 110%
+ExtraCondition,1,exq_AtpUp120,La tasa de daño infligido aumentó un 120%
+ExtraCondition,1,exq_AtpUp130,La tasa de daño infligido aumentó un 130%
+ExtraCondition,1,exq_AtpUp140,La tasa de daño infligido aumentó un 140%
+ExtraCondition,1,exq_AtpUp150,La tasa de daño infligido aumentó un 150%
+ExtraCondition,1,exq_AtpUp160,La tasa de daño infligido aumentó un 160%
+ExtraCondition,1,exq_AtpUp170,La tasa de daño infligido aumentó un 170%
+ExtraCondition,1,exq_AtpUp180,La tasa de daño infligido aumentó un 180%
+ExtraCondition,1,exq_AtpUp190,La tasa de daño infligido aumentó un 190%
+ExtraCondition,1,exq_AtpUp200,La tasa de daño infligido aumentó un 200%
+ExtraCondition,1,exq_AtpUp210,La tasa de daño infligido aumentó un 210%
+ExtraCondition,1,exq_AtpUp220,La tasa de daño infligido aumentó un 220%
+ExtraCondition,1,exq_AtpUp230,La tasa de daño infligido aumentó un 230%
+ExtraCondition,1,exq_AtpUp240,La tasa de daño infligido aumentó un 240%
+ExtraCondition,1,exq_AtpUp250,La tasa de daño infligido aumentó un 250%
+ExtraCondition,1,exq_AtpUp260,La tasa de daño infligido aumentó un 260%
+ExtraCondition,1,exq_AtpUp270,La tasa de daño infligido aumentó un 270%
+ExtraCondition,1,exq_AtpUp280,La tasa de daño infligido aumentó un 280%
+ExtraCondition,1,exq_AtpUp290,La tasa de daño infligido aumentó un 290%
+ExtraCondition,1,exq_AtpUp300,La tasa de daño infligido aumentó un 300%
+ExtraCondition,1,exq_FireWeaponHitAtpDown90,Potencia del arma de fuego -90%
+ExtraCondition,1,exq_FireWeaponHitAtpDown50,Potencia del arma de fuego -50%
+ExtraCondition,1,exq_FireWeaponHitAtpUp10,Potencia del arma de fuego +10%
+ExtraCondition,1,exq_FireWeaponHitAtpUp20,Potencia del arma de fuego +20%
+ExtraCondition,1,exq_FireWeaponHitAtpUp30,Potencia del arma de fuego +30%
+ExtraCondition,1,exq_FireWeaponHitAtpUp40,Potencia del arma de fuego +40%
+ExtraCondition,1,exq_FireWeaponHitAtpUp50,Potencia del arma de fuego +50%
+ExtraCondition,1,exq_IceWeaponHitAtpDown90,Potencia del arma de hielo -90%
+ExtraCondition,1,exq_IceWeaponHitAtpDown50,Potencia del arma de hielo -50%
+ExtraCondition,1,exq_IceWeaponHitAtpUp10,Potencia del arma de hielo +10%
+ExtraCondition,1,exq_IceWeaponHitAtpUp20,Potencia del arma de hielo +20%
+ExtraCondition,1,exq_IceWeaponHitAtpUp30,Potencia del arma de hielo +30%
+ExtraCondition,1,exq_IceWeaponHitAtpUp40,Potencia del arma de hielo +40%
+ExtraCondition,1,exq_IceWeaponHitAtpUp50,Potencia del arma de hielo +50%
+ExtraCondition,1,exq_ThunderWeaponHitAtpDown90,Potencia del arma de rayos -90%
+ExtraCondition,1,exq_ThunderWeaponHitAtpDown50,Potencia del arma de rayos -50%
+ExtraCondition,1,exq_ThunderWeaponHitAtpUp10,Potencia del arma de rayos +10%
+ExtraCondition,1,exq_ThunderWeaponHitAtpUp20,Potencia del arma de rayos +20%
+ExtraCondition,1,exq_ThunderWeaponHitAtpUp30,Potencia del arma de rayos +30%
+ExtraCondition,1,exq_ThunderWeaponHitAtpUp40,Potencia del arma de rayos +40%
+ExtraCondition,1,exq_ThunderWeaponHitAtpUp50,Potencia del arma de rayos +50%
+ExtraCondition,1,exq_WindWeaponHitAtpDown90,Potencia del arma de viento -90%
+ExtraCondition,1,exq_WindWeaponHitAtpDown50,Potencia del arma de viento -50%
+ExtraCondition,1,exq_WindWeaponHitAtpUp10,Potencia del arma de viento +10%
+ExtraCondition,1,exq_WindWeaponHitAtpUp20,Potencia del arma de viento +20%
+ExtraCondition,1,exq_WindWeaponHitAtpUp30,Potencia del arma de viento +30%
+ExtraCondition,1,exq_WindWeaponHitAtpUp40,Potencia del arma de viento +40%
+ExtraCondition,1,exq_WindWeaponHitAtpUp50,Potencia del arma de viento +50%
+ExtraCondition,1,exq_DarkWeaponHitAtpDown90,Potencia del arma oscura -90%
+ExtraCondition,1,exq_DarkWeaponHitAtpDown50,Potencia del arma oscura -50%
+ExtraCondition,1,exq_DarkWeaponHitAtpUp10,Potencia del arma oscura +10%
+ExtraCondition,1,exq_DarkWeaponHitAtpUp20,Potencia del arma oscura +20%
+ExtraCondition,1,exq_DarkWeaponHitAtpUp30,Potencia del arma oscura +30%
+ExtraCondition,1,exq_DarkWeaponHitAtpUp40,Potencia del arma oscura +40%
+ExtraCondition,1,exq_DarkWeaponHitAtpUp50,Potencia del arma oscura +50%
+ExtraCondition,1,exq_LightWeaponHitAtpDown90,Potencia de arma ligera -90%
+ExtraCondition,1,exq_LightWeaponHitAtpDown50,Potencia de arma ligera -50%
+ExtraCondition,1,exq_LightWeaponHitAtpUp10,Potencia de arma ligera +10%
+ExtraCondition,1,exq_LightWeaponHitAtpUp20,Potencia de arma ligera +20%
+ExtraCondition,1,exq_LightWeaponHitAtpUp30,Potencia de arma ligera +30%
+ExtraCondition,1,exq_LightWeaponHitAtpUp40,Potencia de arma ligera +40%
+ExtraCondition,1,exq_LightWeaponHitAtpUp50,Potencia de arma ligera +50%
+ExtraCondition,1,exq_AllElementWeaponHitAtpDown90,Potencia de todas las armas -90%
+ExtraCondition,1,exq_AllElementWeaponHitAtpDown50,Potencia de todas las armas -50%
+ExtraCondition,1,exq_AllElementWeaponHitAtpUp10,Potencia de todas las armas +10%
+ExtraCondition,1,exq_AllElementWeaponHitAtpUp20,Potencia de todas las armas +20%
+ExtraCondition,1,exq_AllElementWeaponHitAtpUp30,Potencia de todas las armas +30%
+ExtraCondition,1,exq_AllElementWeaponHitAtpUp40,Potencia de todas las armas +40%
+ExtraCondition,1,exq_AllElementWeaponHitAtpUp50,Potencia de todas las armas +50%
+ExtraCondition,1,exq_StrikeWeaponHitAtpDown90,Potencia de arma cuerpo a cuerpo -90%
+ExtraCondition,1,exq_StrikeWeaponHitAtpDown50,Potencia de arma cuerpo a cuerpo -50%
+ExtraCondition,1,exq_StrikeWeaponHitAtpUp10,Potencia de arma cuerpo a cuerpo +10%
+ExtraCondition,1,exq_StrikeWeaponHitAtpUp20,Potencia de arma cuerpo a cuerpo +20%
+ExtraCondition,1,exq_StrikeWeaponHitAtpUp30,Potencia de arma cuerpo a cuerpo +30%
+ExtraCondition,1,exq_StrikeWeaponHitAtpUp40,Potencia de arma cuerpo a cuerpo +40%
+ExtraCondition,1,exq_StrikeWeaponHitAtpUp50,Potencia de arma cuerpo a cuerpo +50%
+ExtraCondition,1,exq_FirearmWeaponHitAtpDown90,Potencia de arma a distancia -90%
+ExtraCondition,1,exq_FirearmWeaponHitAtpDown50,Potencia de arma a distancia -50%
+ExtraCondition,1,exq_FirearmWeaponHitAtpUp10,Potencia de arma a distancia +10%
+ExtraCondition,1,exq_FirearmWeaponHitAtpUp20,Potencia de arma a distancia +20%
+ExtraCondition,1,exq_FirearmWeaponHitAtpUp30,Potencia de arma a distancia +30%
+ExtraCondition,1,exq_FirearmWeaponHitAtpUp40,Potencia de arma a distancia +40%
+ExtraCondition,1,exq_FirearmWeaponHitAtpUp50,Potencia de arma a distancia +50%
+ExtraCondition,1,exq_TechnicWeaponHitAtpDown90,Potencia del arma técnica -90%
+ExtraCondition,1,exq_TechnicWeaponHitAtpDown50,Potencia del arma técnica -50%
+ExtraCondition,1,exq_TechnicWeaponHitAtpUp10,Potencia del arma técnica +10%
+ExtraCondition,1,exq_TechnicWeaponHitAtpUp20,Potencia del arma técnica +20%
+ExtraCondition,1,exq_TechnicWeaponHitAtpUp30,Potencia del arma técnica +30%
+ExtraCondition,1,exq_TechnicWeaponHitAtpUp40,Potencia del arma técnica +40%
+ExtraCondition,1,exq_TechnicWeaponHitAtpUp50,Potencia del arma técnica +50%
+ExtraCondition,1,exq_AllWeaponHitAtpDown90,Potencia -90%
+ExtraCondition,1,exq_AllWeaponHitAtpDown50,Potencia -50%
+ExtraCondition,1,exq_AllWeaponHitAtpUp10,Potencia +10%
+ExtraCondition,1,exq_AllWeaponHitAtpUp20,Potencia +20%
+ExtraCondition,1,exq_AllWeaponHitAtpUp30,Potencia +30%
+ExtraCondition,1,exq_AllWeaponHitAtpUp40,Potencia +40%
+ExtraCondition,1,exq_AllWeaponHitAtpUp50,Potencia +50%
+ExtraCondition,1,exq_PPIncreaseDown90,Recuperación PP Natural -90%
+ExtraCondition,1,exq_PPIncreaseDown80,Recuperación PP Natural -80%
+ExtraCondition,1,exq_PPIncreaseDown50,Recuperación PP Natural -50%
+ExtraCondition,1,exq_PPIncreaseUp50,Recuperación PP Natural +50%
+ExtraCondition,1,exq_PPIncreaseUp100,Recuperación PP Natural +100%
+ExtraCondition,1,exq_PPIncreaseUp200,Recuperación PP Natural +200%
+ExtraCondition,1,exq_RecoveryEffectDown90,Recuperación de HP -90%
+ExtraCondition,1,exq_RecoveryEffectDown80,Recuperación de HP -80%
+ExtraCondition,1,exq_RecoveryEffectDown50,Recuperación de HP -50%
+ExtraCondition,1,exq_RecoveryEffectUp50,Recuperación de HP +50%
+ExtraCondition,1,exq_RecoveryEffectUp100,Recuperación de HP +100%
+ExtraCondition,1,exq_RecoveryEffectUp200,Recuperación de HP +200%
+ExtraCondition,1,exq_EnemyHitAtpUp10,Ataque +10%
+ExtraCondition,1,exq_EnemyHitAtpUp20,Ataque +20%
+ExtraCondition,1,exq_EnemyHitAtpUp50,Ataque +50%
+ExtraCondition,1,exq_EnemyHitAtpUp100,Ataque +100%
+ExtraCondition,1,exq_EnemyHitAtpUp150,Ataque +150%
+ExtraCondition,1,exq_EnemyHitAtpUp200,Ataque +200%
+ExtraCondition,1,exq_EnemyHitAtpUp250,Ataque +250%
+ExtraCondition,1,exq_EnemyHitAtpUp300,Ataque +300%
+ExtraCondition,1,exq_EnemyHitAtpDown10,Ataque -10%
+ExtraCondition,1,exq_EnemyHitAtpDown20,Ataque -20%
+ExtraCondition,1,exq_EnemyHitAtpDown30,Ataque -30%
+ExtraCondition,1,exq_EnemyHitAtpDown50,Ataque -50%
+ExtraCondition,1,exq_EnemyDmgElementReactUp10,Aumento del factor de reducción elemental +10%
+ExtraCondition,1,exq_EnemyDmgElementReactUp20,Aumento del factor de reducción elemental +20%
+ExtraCondition,1,exq_EnemyDmgElementReactUp50,Aumento del factor de reducción elemental +50%
+ExtraCondition,1,exq_EnemyDmgElementReactUp100,Aumento del factor de reducción elemental +100%
+ExtraCondition,1,exq_EnemyDmgElementReactDown10,Aumento del factor de reducción elemental -10%
+ExtraCondition,1,exq_EnemyDmgElementReactDown20,Aumento del factor de reducción elemental -20%
+ExtraCondition,1,exq_EnemyDmgElementReactDown50,Aumento del factor de reducción elemental -50%
+ExtraCondition,1,exq_EnemyDmgElementReactDown100,Aumento del factor de reducción elemental -100%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactUp10,Aumento del factor de reducción físico +10%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactUp20,Aumento del factor de reducción físico +20%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactUp50,Aumento del factor de reducción físico +50%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactUp100,Aumento del factor de reducción físico +100%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactDown10,Aumento del factor de reducción físico -10%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactDown20,Aumento del factor de reducción físico -20%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactDown50,Aumento del factor de reducción físico -50%
+ExtraCondition,1,exq_EnemyDmgPhysicsReactDown100,Aumento del factor de reducción físico -100%
+ExtraCondition,1,exq_EnemyHPUp10,VIT +10%
+ExtraCondition,1,exq_EnemyHPUp20,VIT +20%
+ExtraCondition,1,exq_EnemyHPUp50,VIT +50%
+ExtraCondition,1,exq_EnemyHPUp100,VIT +100%
+ExtraCondition,1,exq_EnemyHPUp150,VIT +150%
+ExtraCondition,1,exq_EnemyHPUp200,VIT +200%
+ExtraCondition,1,exq_EnemyHPUp250,VIT +250%
+ExtraCondition,1,exq_EnemyHPUp300,VIT +300%
+ExtraCondition,1,exq_EnemyHPDown10,VIT -10%
+ExtraCondition,1,exq_EnemyHPDown20,VIT -20%
+ExtraCondition,1,exq_EnemyHPDown30,VIT -30%
+ExtraCondition,1,exq_EnemyHPDown50,VIT -50%
+ExtraEnemyName,0,AllEnemy,すべてのエネミー
+ExtraEnemyName,0,EnemyCost7AndMore,ボスエネミー
+ExtraEnemyName,0,EnemyCost6AndLess,通常エネミー
+ExtraEnemyName,0,ExceptAnimal,テイムズ以外のエネミー
+ExtraEnemyName,0,ExceptBoss,ボス以外のエネミー
+ExtraEnemyName,0,OnlyBoss,ボスエネミー
+ExtraEnemyName,0,EnemyNameTag,($(0))
+ExtraEnemyName,1,AllEnemy,Todos los enemigos
+ExtraEnemyName,1,EnemyCost7AndMore,jefe enemigo
+ExtraEnemyName,1,EnemyCost6AndLess,Enemigos habituales
+ExtraEnemyName,1,ExceptAnimal,Enemigos que no son TAMES
+ExtraEnemyName,1,ExceptBoss,Enemigos que no son jefes
+ExtraEnemyName,1,OnlyBoss,Jefes enemigos
+ExtraEnemyName,1,EnemyNameTag,($(0))

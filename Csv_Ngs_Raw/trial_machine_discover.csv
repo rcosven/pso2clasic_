@@ -1,0 +1,29 @@
+section,group,id,text
+common,0,TrialName,ゾンネル破壊
+common,0,TrialBeginMsg,展開したダズルポッドをすべて無効化し、ゾンネルを破壊せよ！
+common,0,TrialAbstract,ダズルポッドを無効化しゾンネルを破壊する
+common,0,BarrierDestroy,$(0)がダズルポッドを破壊しました。
+common,1,TrialName,Destrucción de zonas
+common,1,TrialBeginMsg,¡Desactiva todos los Dazzle Pods y destruye Zonnel!
+common,1,TrialAbstract,Desactiva Dazzle Pods y destruye Zonnel
+common,1,BarrierDestroy,$(0) destruyó un Dazzle Pod.
+type103,0,NpcComOnBegin,自動要撃機の出現を確認！
+type103,0,NpcComOnBegin2,“ゾンネル”本体は、シールドに護られています。<br>まずは、周囲に展開した“ダズルポッド”を破壊してください。
+type103,0,NpcComOnSuccess,ゾンネルの破壊を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnSuccess2,ゾンネルの残骸から、物資を回収してください。
+type103,0,NpcComOnFailure,ゾンネルが撤退……。<br>次の目標に向かってください。
+type103,0,NpcComOnDestroyMachineFirst,周辺地形を解析中。<br>ダズルポッドの位置情報を転送します。
+type103,0,NpcComOnDestroyMachineHalf,周辺地形の解析完了。<br>全ダズルポッドの座標を転送します。
+type103,0,NpcComOnDestroyMachineAll,全ダズルポッドの破壊を確認。<br>ゾンネルのシールドが解除されました。
+type103,0,NpcComOnNMinutesPassed,周辺地形の解析完了。<br>全ダズルポッドの座標を転送します。
+type103,0,NpcComOnDestroyMachineLeader,コントロールポッドの破壊を確認。<br>ダズルポッドの認識阻害機能が解除されました。
+type103,1,NpcComOnBegin,Auto Interceptor reading confirmed!
+type103,1,NpcComOnBegin2,Zonnel's body is protected by a shield! <br>Destroy all the Dazzle Pods deployed nearby.
+type103,1,NpcComOnSuccess,Zonnel destroyed. <br>Thank you for your support.
+type103,1,NpcComOnSuccess2,Please recover materials from the Zonnel wreckage.
+type103,1,NpcComOnFailure,Zonnel has retreated... <br>Please proceed to the next target.
+type103,1,NpcComOnDestroyMachineFirst,Analyzing nearby terrain. <br>I'll send you the Dazzle Pod locations.
+type103,1,NpcComOnDestroyMachineHalf,Terrain analysis complete. <br>Sending all Dazzle Pod coordinates.
+type103,1,NpcComOnDestroyMachineAll,All Dazzle Pods destroyed. <br>Zonnel's shield has been disabled.
+type103,1,NpcComOnNMinutesPassed,Terrain analysis complete. <br>Sending all Dazzle Pod coordinates.
+type103,1,NpcComOnDestroyMachineLeader,Control Pods destroyed. <br>Dazzle Pod stealthing has been disabled.

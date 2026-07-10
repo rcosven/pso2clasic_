@@ -1,0 +1,16 @@
+section,group,id,text
+AreaName,0,Area0S,中央リテム
+AreaName,0,Area0L,中央リテム
+AreaName,1,Area0S,centro de retem
+AreaName,1,Area0L,centro de retem
+Basic,0,Title,ハイ・DFソウラス
+Basic,0,Explanation,中央リテム周辺で、“ダークファルス・エイジス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Basic,0,Explanation_r2,中央リテム周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Basic,1,Title,Solus Falz Alto Oscuro
+Basic,1,Explanation_r2,"Se observó una poderosa lectura de energía parecida a la de Starless en las cercanías de Central Retem. Todos los defensores de ARKS, preséntense inmediatamente en el punto de aparición para eliminar esta amenaza desconocida.<br><yellow>A specimen whose name includes ""Malignant"" will appear.<br>Los NPC asistentes no pueden participar.<c>"
+Basic,1,SimpleExplanation,ハイ・DFソウラスを撃破せよ！
+QuestTarget,0,SimpleExplanation,¡Derrota al Alto Oscuro Falz Solus!
+QuestTarget,1,s0,対象エネミーの撃破
+SuccessCondition,0,s0,Derrota a los enemigos objetivo.
+SuccessCondition,1,f0,５回戦闘不能になる<br>制限時間が経過する
+FailureCondition,0,f0,Quedar incapacitado 5 veces<br>Exceder el límite de tiempo

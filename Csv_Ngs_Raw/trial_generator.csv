@@ -1,0 +1,25 @@
+section,group,id,text
+common,0,TrialName,トランザーヴ破壊
+common,0,TrialBeginMsg,出現したエネミーを討伐し、発生源を破壊せよ！
+common,0,TrialBeginMsgObjOnly,エネミーの発生源を破壊せよ！
+common,0,TrialAbstract,エネミーを倒す
+common,0,TrialAbstractObjOnly,トランザーヴを破壊する
+common,1,TrialName,Destrucción Transorve
+common,1,TrialBeginMsg,¡Suprime a los enemigos que aparecen y destruye su punto de generación!
+common,1,TrialBeginMsgObjOnly,¡Destruye el punto de generación del enemigo!
+common,1,TrialAbstract,Derrota a los enemigos
+common,1,TrialAbstractObjOnly,Destruye los Transorves
+type103,0,NpcComOnForetaste,/voice11_voice_navi002_trial_0001_011 エネミーの発生源が近くにあるようです。<br>増援が出現する前に破壊してください。
+type103,0,NpcComOnBegin,/voice11_voice_navi002_trial_0001_020 “トランザーヴ”は、エネミーを転送するときに<br>シールドを解除して無防備になります。その隙に攻撃してください。
+type103,0,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 エネミーの殲滅を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnSuccessObjOnly,/voice11_voice_navi002_trial_0001_069 発生源の破壊を確認。<br>対応、ありがとうございます。
+type103,0,NpcComOnFailure,/voice11_voice_navi002_trial_0001_073 エネミーが撤退……。<br>通常の監視体制に移行します。
+type103,0,NpcComOnFailureObjOnly,/voice11_voice_navi002_trial_0001_073 発生源が消滅……。<br>通常の監視体制に移行します。
+type103,0,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 “トランザーヴ”がエネミーの転送を開始。<br>今のうちにコアを狙ってください。
+type103,1,NpcComOnForetaste,/voice11_voice_navi002_trial_0001_011 The enemy spawn point is close.<br>Destroy it before more can appear.
+type103,1,NpcComOnBegin,/voice11_voice_navi002_trial_0001_020 Transorves drop their shields and are vulnerable when they<br>teleport enemies. That's the time to strike.
+type103,1,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 Enemy eradication confirmed.<br>Thanks for your support.
+type103,1,NpcComOnSuccessObjOnly,/voice11_voice_navi002_trial_0001_069 Spawn point destroyed.<br>Thank you for your support.
+type103,1,NpcComOnFailure,/voice11_voice_navi002_trial_0001_073 Enemy retreating.<br>Switching to standard monitoring.
+type103,1,NpcComOnFailureObjOnly,/voice11_voice_navi002_trial_0001_073 Spawn point has vanished...<br>Switching to standard monitoring.
+type103,1,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 The Transorves have begun teleporting enemies. Aim for the<br>core now

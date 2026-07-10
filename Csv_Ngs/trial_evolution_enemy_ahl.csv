@@ -1,0 +1,23 @@
+﻿section,group,id,text
+common,0,TrialName_1Enemy,$(0)討伐
+common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
+common,0,TrialAbstract_1Enemy,$(0)を倒す
+common,0,TrialAbstract_1Enemy_SM_PSE,$(0)を倒す<br><yellow>※サイドミッション達成で<br>　次のPSEバースト時バーストチェンジ発生<c>
+common,0,TrialName_Multi,エネミー討伐
+common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
+common,0,TrialAbstract_Multi,エネミーを倒す
+common,0,TrialAbstract_Multi_SM_PSE,エネミーを倒す<br><yellow>※サイドミッション達成で<br>　次のPSEバースト時バーストチェンジ発生<c>
+common,1,TrialName_1Enemy,$(0) Supresión
+common,1,TrialBeginMsg_1Enemy,¡Derrota a los $(0)!
+common,1,TrialAbstract_1Enemy,Derrota al $(0).
+common,1,TrialAbstract_1Enemy_SM_PSE,Derrota al $(0).<br><yellow> *Completa una misión secundaria para activar una ráfaga<br>Cambia durante la próxima ráfaga de PSE.
+common,1,TrialName_Multi,Supresión enemiga
+common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos!
+common,1,TrialAbstract_Multi,Derrota a los enemigos.
+common,1,TrialAbstract_Multi_SM_PSE,Derrota a los enemigos.<br><yellow> *Completa una misión secundaria para activar una ráfaga<br>Cambia durante la próxima ráfaga de PSE.
+type102,0,NpcComOnBegin,……強力なエネミーが、あらたに出現！<br>至急、討伐をお願いします。
+type102,0,NpcComOnSuccess,エネミーの殲滅を確認しました！<br>即応、ありがとうございます。
+type102,0,NpcComOnFailure,エネミーが撤退しました。<br>……ひとまず、脅威は去りまし
+type102,1,NpcComOnBegin,¡Nuevos enemigos poderosos detectados!<br>Por favor elimínelos de inmediato.
+type102,1,NpcComOnSuccess,¡Confirmada la erradicación del enemigo!<br>Se agradece su servicio.
+type102,1,NpcComOnFailure,El enemigo se retira.<br>La amenaza ha pasado... por ahora.

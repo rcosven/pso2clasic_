@@ -1,0 +1,27 @@
+section,group,id,text
+common,0,TrialName,$(0)防衛
+common,0,TrialBeginMsg,エネミーの攻撃から、$(0)を守り抜け！
+common,0,TrialAbstract,$(0)を守る
+common,0,Wave1Msg,エネミー第一波接近！　$(0)を守り切れ！！
+common,0,Wave2Msg,エネミー第二波接近！　$(0)を守り切れ！！
+common,0,Wave3Msg,エネミー第三波接近！　$(0)を守り切れ！！
+common,0,Wave4Msg,エネミー第四波接近！　$(0)を守り切れ！！
+common,0,Wave5Msg,さらに多数のエネミー反応あり！<br>$(0)を守り切れ！！
+common,1,TrialName,Defensa de camiones de transporte
+common,1,TrialBeginMsg,¡Defiende el camión de transporte del asalto enemigo!
+common,1,TrialAbstract,Defensa de camiones de transporte
+common,1,Wave1Msg,¡Se acerca la primera oleada enemiga! ¡Protege ese camión!
+common,1,Wave2Msg,¡Se acerca la segunda oleada enemiga! ¡Protege ese camión!
+common,1,Wave3Msg,¡Se acerca la tercera oleada enemiga! ¡Protege ese camión!
+common,1,Wave4Msg,¡Se acerca la cuarta oleada enemiga! ¡Protege ese camión!
+common,1,Wave5Msg,¡Obteniendo más lecturas de enemigos!<br>¡Protege ese camión!
+type102,0,NpcComOnBegin,/voice11_voice_navi001_trial_0001_004 作戦行動中のアークスから救難信号を受信！<br>現場に急行し、対象の防衛にあたってください！
+type102,0,NpcComOnHp50,/voice11_voice_navi001_trial_0001_057 防衛対象の被害が拡大しています！<br>接近するエネミーを排除してください！
+type102,0,NpcComOnHp20,/voice11_voice_navi001_trial_0001_037 防衛対象の被害甚大！<br>このままでは破壊されてしまいます！なんとしても守り抜いてください！
+type102,0,NpcComOnSuccess,/voice11_voice_navi001_trial_0001_009 周囲のエネミー反応消滅！<br>もう大丈夫です。協力ありがとうございました！
+type102,0,NpcComOnFailure,/voice11_voice_navi001_trial_0001_010 対象の防衛に失敗しました……。<br>作戦参加のアークスは、その場から撤収してください。
+type102,1,NpcComOnBegin,/voice11_voice_navi001_trial_0001_004 We’ve received an SOS from ARKS defenders on a mission!<br>Please hurry to their location and defend the target!
+type102,1,NpcComOnHp50,/voice11_voice_navi001_trial_0001_057 The target is taking damage!<br>Please neutralize approaching enemies!
+type102,1,NpcComOnHp20,/voice11_voice_navi001_trial_0001_037 The target is taking heavy damage!<br>It won’t be able to take much more! Please give it your all!
+type102,1,NpcComOnSuccess,/voice11_voice_navi001_trial_0001_009 Nearby enemy readings have vanished!<br>We’re all clear. Thank you very much!
+type102,1,NpcComOnFailure,"/voice11_voice_navi001_trial_0001_010 Target defense failed...<br>All participating ARKS defenders, please withdraw."
