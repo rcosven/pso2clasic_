@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 ShopCommon,0,MesetaDenomination,<pict reb_meseta>メセタ
 ShopCommon,0,AcDenomination,AC
 ShopCommon,0,CpDenomination,CP
@@ -43,50 +43,50 @@ ShopCommon,0,BuyNumLimitOver,購入上限以上に購入しようとしていま
 ShopCommon,0,ExchangeNumLimitOver,交換上限以上に交換しようとしています。
 ShopCommon,0,ItemBuyDBAccessError,サーバーが混雑しているため、<br>アイテムの購入ができませんでした。
 ShopCommon,0,ItemChangeDBAccessError,サーバーが混雑しているため、<br>アイテムの交換ができませんでした。
-ShopCommon,1,MesetaDenomination,<pict reb_meseta> N-Meseta
-ShopCommon,1,AcDenomination,C.A.
-ShopCommon,1,CpDenomination,PC
-ShopCommon,1,FunDenomination,DIVERTIDO
-ShopCommon,1,StarDenomination,estrellas
+ShopCommon,1,MesetaDenomination,<pict reb_meseta>N-Meseta
+ShopCommon,1,AcDenomination,AC
+ShopCommon,1,CpDenomination,CP
+ShopCommon,1,FunDenomination,FUN
+ShopCommon,1,StarDenomination,Stars
 ShopCommon,1,CcDenomination,CC
-ShopCommon,1,CmDenomination,CENTÍMETRO
+ShopCommon,1,CmDenomination,CM
 ShopCommon,1,SgDenomination,SG
-ShopCommon,1,BcDenomination,ANTES DE CRISTO
+ShopCommon,1,BcDenomination,BC
 ShopCommon,1,SpDenomination,SP
-ShopCommon,1,Cash,dinero
-ShopCommon,1,CashMeseta,meseta
-ShopCommon,1,CashAc,C.A.
-ShopCommon,1,CashCp,PC
-ShopCommon,1,CashFun,DIVERTIDO
-ShopCommon,1,CashStar,estrellas
+ShopCommon,1,Cash,money
+ShopCommon,1,CashMeseta,Meseta
+ShopCommon,1,CashAc,AC
+ShopCommon,1,CashCp,CP
+ShopCommon,1,CashFun,FUN
+ShopCommon,1,CashStar,Stars
 ShopCommon,1,CashCc,CC
-ShopCommon,1,CashCm,CENTÍMETRO
+ShopCommon,1,CashCm,CM
 ShopCommon,1,CashSg,SG
-ShopCommon,1,CashBc,ANTES DE CRISTO
+ShopCommon,1,CashBc,BC
 ShopCommon,1,CashSp,SP
 ShopCommon,1,CashDenomi,$(0)
-ShopCommon,1,TotalAmount,dinero total
-ShopCommon,1,TotalMeseta,Meseta total
-ShopCommon,1,TotalAc,aire acondicionado total
-ShopCommon,1,TotalCp,PC total
-ShopCommon,1,TotalFun,DIVERSIÓN TOTAL
-ShopCommon,1,TotalStar,Estrellas totales
-ShopCommon,1,TotalCc,CC totales
-ShopCommon,1,TotalCm,CM totales
-ShopCommon,1,TotalSg,GS totales
-ShopCommon,1,TotalBc,BC total
-ShopCommon,1,TotalSp,SP totales
+ShopCommon,1,TotalAmount,Total Money
+ShopCommon,1,TotalMeseta,Total Meseta
+ShopCommon,1,TotalAc,Total AC
+ShopCommon,1,TotalCp,Total CP
+ShopCommon,1,TotalFun,Total FUN
+ShopCommon,1,TotalStar,Total Stars
+ShopCommon,1,TotalCc,Total CC
+ShopCommon,1,TotalCm,Total CM
+ShopCommon,1,TotalSg,Total SG
+ShopCommon,1,TotalBc,Total BC
+ShopCommon,1,TotalSp,Total SP
 ShopCommon,1,TotalDenomi,Total $(0)
-ShopCommon,1,InputBuyNumberTitle_Vita,SELECCIONA CANTIDAD A COMPRAR
-ShopCommon,1,InputSellNumberTitle_Vita,SELECCIONE CANTIDAD A VENDER
-ShopCommon,1,StockNumber_Vita,Compras permitidas / $(0) restantes
-ShopCommon,1,InsufficientCash,No tienes suficiente $(0).
-ShopCommon,1,BuyDayLimitOver,Artículo no disponible para comprar.
-ShopCommon,1,ExchangeDayLimitOver,Artículo no disponible para cambio.
-ShopCommon,1,BuyNumLimitOver,Estás intentando comprar más que el máximo de compra.
-ShopCommon,1,ExchangeNumLimitOver,Estás intentando intercambiar más del máximo de intercambio.
-ShopCommon,1,ItemBuyDBAccessError,La compra no se pudo completar<br>porque el servidor está actualmente sobrecargado.
-ShopCommon,1,ItemChangeDBAccessError,El intercambio no se pudo completar<br>porque el servidor está actualmente sobrecargado.
+ShopCommon,1,InputBuyNumberTitle_Vita,SELECT QUANTITY TO BUY
+ShopCommon,1,InputSellNumberTitle_Vita,SELECT QUANTITY TO SELL
+ShopCommon,1,StockNumber_Vita,Purchases Allowed / $(0) Remaining
+ShopCommon,1,InsufficientCash,You don't have enough $(0).
+ShopCommon,1,BuyDayLimitOver,Item not available to purchase.
+ShopCommon,1,ExchangeDayLimitOver,Item not available to exchange.
+ShopCommon,1,BuyNumLimitOver,You are trying to purchase more than the purchase maximum.
+ShopCommon,1,ExchangeNumLimitOver,You are trying to exchange more than the exchange maximum.
+ShopCommon,1,ItemBuyDBAccessError,The purchase could not be completed <br>because the server is currently overloaded.
+ShopCommon,1,ItemChangeDBAccessError,The exchange could not be completed <br>because the server is currently overloaded.
 BlackMarket,0,ShopTitle,トレジャーショップ
 BlackMarket,0,ShopTitle_N_SG,トレジャーショップ<pict 4space><pict StarGem>
 BlackMarket,0,ShopTitle_N_Meseta,トレジャーショップ<pict 4space><pict reb_meseta>
@@ -172,91 +172,91 @@ BlackMarket,0,BuyError_N_BuyPremium,<pict Arcscash><scarlet>AC消費コンテン
 BlackMarket,0,BuyError_N_UsePremium,<pict Arcscash><c 5fdf00>購入済みアイテムの使用<c><br>“プレミアムセット”の有効期限が切れているため、<br>購入できない商品があります。<br><br>所持している<yellow>“プレミアムセット”<c>を使用して<br>購入できるようにしますか？<br><br><yellow>※“プレミアムセット”を複数種類所持している場合は、<br>　有効期限が長いものから優先して使用します。<c>
 BlackMarket,0,Mark_Premium,プレミアム
 BlackMarket,0,Open_SgShop,SGショップで期間限定商品販売中！
-BlackMarket,1,ShopTitle,TIENDA DEL TESORO
-BlackMarket,1,ShopTitle_N_SG,Tienda del tesoro<pict 4space><pict StarGem>
-BlackMarket,1,ShopTitle_N_Meseta,Tienda del tesoro<pict 4space><pict reb_meseta>
-BlackMarket,1,MenuGuide,<c f0df60> Por favor seleccione una tienda. <c>
-BlackMarket,1,MenuGuide_N_SG,"Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
-BlackMarket,1,MenuGuide_N_Meseta,"Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
-BlackMarket,1,MenuTitle,MENÚ DE LA TIENDA
-BlackMarket,1,MenuSG,Comprar con gemas estrella
-BlackMarket,1,MenuMeseta,Comprar con meseta
-BlackMarket,1,MenuEnd,Salir de la tienda
-BlackMarket,1,SgShopTitle,COMPRAR CON GEMAS ESTRELLA
-BlackMarket,1,SgShopGuide,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,SgShopGuide_v,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,MesetaShopTitle,COMPRAR CON MESETA
-BlackMarket,1,MesetaShopGuide,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,MesetaShopGuide_v,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,ShopListTitle,LISTA DE PRODUCTOS
-BlackMarket,1,ShopListResetTime,Próxima actualización: $(0)
-BlackMarket,1,ShopListReset_N_Time,$(0) hasta la próxima actualización
-BlackMarket,1,ShopListReset_N_UpdateTime,Reabrir tienda para renovar productos.
-BlackMarket,1,ShopListResetButton,<yellow> Actualizar lista manualmente<c><pict StarGem>
-BlackMarket,1,ShopListResetButton_N_Free,Actualizar producto (gratis 1 vez al día)
-BlackMarket,1,ShopListResetButton_N_Premium,Actualizar producto (Premium)
-BlackMarket,1,ShopListResetButton_N_SG,Actualizar producto<pict 4space><pict StarGem>
-BlackMarket,1,ShopListResetTime_wait,Adquirir información
-BlackMarket,1,RenewConfirmTitle,ACTUALIZAR LISTA MANUALMENTE
-BlackMarket,1,RenewConfirmTitle_N,Actualizar producto
-BlackMarket,1,RenewConfirmMessage,⠀夀漀甀爀 匀䜀㨀 ␀⠀㄀⤀⤀
-BlackMarket,1,RenewConfirmMessage_N_Free,渀最㨀 㰀礀攀氀氀漀眀㸀␀⠀　⤀㰀挀㸀
-BlackMarket,1,RenewConfirmMessage_N_Premium,:<yellow>$(0) <c>
-BlackMarket,1,RenewBuyTitle,ACTUALIZAR LISTA MANUALMENTE
-BlackMarket,1,RenewBuyMessage,las compras se reinician todos los días a las<utc>20:00 </utc>.<br>(Su SG: $(2)).
-BlackMarket,1,RenewBuyMessage_N_SG,r><pict StarGem>Su SG: $(2)
-BlackMarket,1,RenewResultTitle,RESULTADOS DE LA LISTA DE PRODUCTOS REFRESCANTES
-BlackMarket,1,RenewResultMessage,La lista de productos se actualizó correctamente.
-BlackMarket,1,RenewResultError,La lista de productos no se pudo actualizar.
-BlackMarket,1,RenewResultError2,No tienes suficientes Star Gems.
-BlackMarket,1,RenewResultError3,La lista de productos ya se actualizó automáticamente.
-BlackMarket,1,RenewResultError4,No se pudo conectar con el servidor.<br><br> Espere un momento y vuelva a intentarlo.
-BlackMarket,1,RenewResultError5,Ocurrió un problema inesperado.<br><br> Espere un momento y vuelva a intentarlo.
-BlackMarket,1,RenewResultError6,No se pudo acceder a la base de datos.<br><br> Espere un momento y vuelva a intentarlo.
-BlackMarket,1,RenewSgShop,Actualizar la tienda del tesoro de SG
-BlackMarket,1,RenewSgShop01,Actualizar SG Treasure Shop (primera vez)
-BlackMarket,1,RenewSgShop02,Actualizar SG Treasure Shop (segunda vez)
-BlackMarket,1,RenewSgShop03,Actualizar SG Treasure Shop (tercera vez)
-BlackMarket,1,RenewSgShop04,Actualizar SG Treasure Shop (cuarta vez)
-BlackMarket,1,RenewSgShop05,Actualizar SG Treasure Shop (quinta vez)
-BlackMarket,1,RenewSgShop06,Actualizar SG Treasure Shop (sexta vez)
-BlackMarket,1,RenewSgShop07,Actualizar SG Treasure Shop (séptima vez)
-BlackMarket,1,RenewSgShop08,Actualizar SG Treasure Shop (octava vez)
-BlackMarket,1,RenewSgShop09,Actualizar SG Treasure Shop (novena vez)
-BlackMarket,1,RenewSgShop10,Actualizar SG Treasure Shop (décima vez o más)
-BlackMarket,1,RenewSgShop_N_Free,Actualización de la tienda del tesoro (SG) (gratis)
-BlackMarket,1,RenewSgShop_N_Premium,Actualización de la tienda del tesoro (SG) (Premium)
-BlackMarket,1,RenewSgShop_N_SG,Actualización de la tienda del tesoro (SG) (<pict StarGem> 10 SG)
-BlackMarket,1,RenewMesetaShop,Actualizar la Tienda del Tesoro de Meseta
-BlackMarket,1,RenewMesetaShop01,Actualizar la Tienda del Tesoro de Meseta (primera vez)
-BlackMarket,1,RenewMesetaShop02,Actualizar la Tienda del Tesoro de Meseta (segunda vez)
-BlackMarket,1,RenewMesetaShop03,Actualizar la Tienda del Tesoro de Meseta (tercera vez)
-BlackMarket,1,RenewMesetaShop04,Actualizar la Tienda del Tesoro de Meseta (cuarta vez)
-BlackMarket,1,RenewMesetaShop05,Actualizar la Tienda del Tesoro de Meseta (quinta vez)
-BlackMarket,1,RenewMesetaShop06,Actualizar la Tienda del Tesoro de Meseta (sexta vez)
-BlackMarket,1,RenewMesetaShop07,Actualizar la Tienda del Tesoro de Meseta (séptima vez)
-BlackMarket,1,RenewMesetaShop08,Actualizar la Tienda del Tesoro de Meseta (octava vez)
-BlackMarket,1,RenewMesetaShop09,Actualizar la Tienda del Tesoro de Meseta (novena vez)
-BlackMarket,1,RenewMesetaShop10,Actualizar la Tienda del Tesoro de Meseta (décima vez o más)
-BlackMarket,1,RenewMesetaShop_N_Free,Actualización de la Tienda del Tesoro (N-Meseta) (Gratis)
-BlackMarket,1,RenewMesetaShop_N_Premium,Actualización de la tienda del tesoro (N-Meseta) (Premium)
-BlackMarket,1,RenewMesetaShop_N_SG,Tienda del Tesoro (N-Meseta) Actualizar (<pict StarGem>10 SG)
-BlackMarket,1,InfoError_None,FalloRazón_Ninguno<br>Éxito
-BlackMarket,1,InfoError_Error,No se pudo obtener información de la lista de productos.<br>Espere un momento y vuelva a intentarlo.
-BlackMarket,1,InfoError_NotFound,No se pudo obtener información de la lista de productos.<br>Espere un momento y vuelva a intentarlo.
-BlackMarket,1,InfoError_NoMoney,No tienes suficiente dinero.
-BlackMarket,1,InfoError_N_Premium,Su conjunto premium ha caducado. No se puede utilizar $(0).
-BlackMarket,1,InfoError_N_TimeOut,Ha pasado el tiempo de actualización diaria de la lista de productos. Cierre y vuelva a abrir la tienda antes de realizar una actualización manual.
-BlackMarket,1,BuyError_OK,BlackMarketBuyAns_OK<br>Intercambio exitoso
-BlackMarket,1,BuyError_LowPoint,No tienes suficientes Star Gems.
-BlackMarket,1,BuyError_IllegalParam,La compra no se pudo completar.<br>Espere un momento y vuelva a intentarlo.
-BlackMarket,1,BuyError_NoSpace,La compra no se pudo completar porque su inventario<br>está lleno o excedió el límite de cantidad.
-BlackMarket,1,BuyError_ExchangeLimit,La compra no se pudo completar porque<br>alcanzó su máximo de compra.
-BlackMarket,1,BuyError_Other,La compra no se pudo completar.<br>Espere un momento y vuelva a intentarlo.
-BlackMarket,1,BuyError_N_BuyPremium,El conjunto<c>ha caducado. Activar un Conjunto Premium le permitirá realizar la compra.<br><br> ¿Pasar a la pantalla de compra?
-BlackMarket,1,BuyError_N_UsePremium,0__
-BlackMarket,1,Mark_Premium,De primera calidad
-BlackMarket,1,Open_SgShop,¡Productos por tiempo limitado ya a la venta en SG Shop!
+BlackMarket,1,ShopTitle,TREASURE SHOP
+BlackMarket,1,ShopTitle_N_SG,Treasure Shop<pict 4space><pict StarGem>
+BlackMarket,1,ShopTitle_N_Meseta,Treasure Shop<pict 4space><pict reb_meseta>
+BlackMarket,1,MenuGuide,<c f0df60>Please select a shop.<c>
+BlackMarket,1,MenuGuide_N_SG,"An item shop purchasable with SG where the product list changes every day. Select ""Refresh Product"" to refresh the product list immediately. (Free 1x/day)"
+BlackMarket,1,MenuGuide_N_Meseta,"An item shop purchasable with N-Meseta where the product list changes every day. Select ""Refresh Product"" to refresh the product list immediately. (Free 1x/day)"
+BlackMarket,1,MenuTitle,SHOP MENU
+BlackMarket,1,MenuSG,Buy with Star Gems
+BlackMarket,1,MenuMeseta,Buy with meseta
+BlackMarket,1,MenuEnd,Exit Shop
+BlackMarket,1,SgShopTitle,BUY WITH STAR GEMS
+BlackMarket,1,SgShopGuide,<c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+BlackMarket,1,SgShopGuide_v,<c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+BlackMarket,1,MesetaShopTitle,BUY WITH MESETA
+BlackMarket,1,MesetaShopGuide,<c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+BlackMarket,1,MesetaShopGuide_v,<c f0df60>Select the items you want to purchase. Use [Manually Refresh List<c><pict StarGem><c f0df60>] to refresh the product list immediately.<c>
+BlackMarket,1,ShopListTitle,PRODUCT LIST
+BlackMarket,1,ShopListResetTime,Next Update: $(0)
+BlackMarket,1,ShopListReset_N_Time,$(0) until next refresh
+BlackMarket,1,ShopListReset_N_UpdateTime,Reopen shop to refresh products
+BlackMarket,1,ShopListResetButton,<yellow>Manually Refresh List<c><pict StarGem>
+BlackMarket,1,ShopListResetButton_N_Free,Refresh Product (Free 1x/day)
+BlackMarket,1,ShopListResetButton_N_Premium,Refresh Product (Premium)
+BlackMarket,1,ShopListResetButton_N_SG,Refresh Product <pict 4space><pict StarGem>
+BlackMarket,1,ShopListResetTime_wait,Acquiring Information
+BlackMarket,1,RenewConfirmTitle,MANUALLY REFRESH LIST
+BlackMarket,1,RenewConfirmTitle_N,Refresh Product
+BlackMarket,1,RenewConfirmMessage,"<pict StarGem><c 1dedd7>SG Payment Required<c><br><br>You can purchase $(0) and immediately refresh the<br>product list. Continue to the purchase confirmation screen?<br><br><yellow>Note: The product selection is random, so the same products<br>may be selected.<c><br><br>(Your SG: $(1))"
+BlackMarket,1,RenewConfirmMessage_N_Free,"Refresh the $(1) product list now for free. Refresh?<br><br><yellow>The product list is randomized, so some of the same products may appear. You can refresh once per day for free. A Premium Set allows you to refresh one additional time.<c><br><br>Free Manual Refreshes Remaining: <yellow>$(0)<c>"
+BlackMarket,1,RenewConfirmMessage_N_Premium,"<yellow>Premium Set Bonus<c><br><br>You may refresh the $(1) product list one additional time for free due to your active Premium Set. Proceed?<br><br><yellow>The product list is randomized, so some of the same products may appear.<c><br><br>Free Manual Refreshes Remaining: <yellow>$(0)<c>"
+BlackMarket,1,RenewBuyTitle,MANUALLY REFRESH LIST
+BlackMarket,1,RenewBuyMessage,"You can purchase the below item for $(0) SG<br>(usually $(1) SG) and immediately refresh the<br>product list. Are you sure you wish to proceed?<br><br><yellow>Note: When making multiple purchases in a row, the price<br>will be discounted for the first nine, but the discount will<br>decrease beyond that.<c><br>The number of purchases resets every day at <utc>20:00</utc>.<br>(Your SG: $(2))."
+BlackMarket,1,RenewBuyMessage_N_SG,"<pict StarGem><c 1dedd7>SG Payment Required<c><br><br>You may refresh the $(1) right now for <pict StarGem><yellow>10 SG<c>.<br>Proceed?<br><br><yellow>The product list is randomized, so some of the same products may appear<c>.<br><br>Free Manual Refreshes Remaining: <yellow>$(0)<c><br><pict StarGem>Your SG: $(2)"
+BlackMarket,1,RenewResultTitle,RESULTS OF REFRESHING PRODUCT LIST
+BlackMarket,1,RenewResultMessage,The product list was successfully refreshed.
+BlackMarket,1,RenewResultError,The product list failed to refresh.
+BlackMarket,1,RenewResultError2,You do not have enough Star Gems.
+BlackMarket,1,RenewResultError3,The product list was already refreshed automatically.
+BlackMarket,1,RenewResultError4,Failed to connect to the server.<br><br>Please wait a while and try again.
+BlackMarket,1,RenewResultError5,An unexpected problem occurred.<br><br>Please wait a while and try again.
+BlackMarket,1,RenewResultError6,Failed to access the database.<br><br>Please wait a while and try again.
+BlackMarket,1,RenewSgShop,Refresh SG Treasure Shop
+BlackMarket,1,RenewSgShop01,Refresh SG Treasure Shop (1st time)
+BlackMarket,1,RenewSgShop02,Refresh SG Treasure Shop (2nd time)
+BlackMarket,1,RenewSgShop03,Refresh SG Treasure Shop (3rd time)
+BlackMarket,1,RenewSgShop04,Refresh SG Treasure Shop (4th time)
+BlackMarket,1,RenewSgShop05,Refresh SG Treasure Shop (5th time)
+BlackMarket,1,RenewSgShop06,Refresh SG Treasure Shop (6th time)
+BlackMarket,1,RenewSgShop07,Refresh SG Treasure Shop (7th time)
+BlackMarket,1,RenewSgShop08,Refresh SG Treasure Shop (8th time)
+BlackMarket,1,RenewSgShop09,Refresh SG Treasure Shop (9th time)
+BlackMarket,1,RenewSgShop10,Refresh SG Treasure Shop (10th time or more)
+BlackMarket,1,RenewSgShop_N_Free,Treasure Shop (SG) Refresh (Free)
+BlackMarket,1,RenewSgShop_N_Premium,Treasure Shop (SG) Refresh (Premium)
+BlackMarket,1,RenewSgShop_N_SG,Treasure Shop (SG) Refresh (<pict StarGem>10 SG)
+BlackMarket,1,RenewMesetaShop,Refresh Meseta Treasure Shop
+BlackMarket,1,RenewMesetaShop01,Refresh Meseta Treasure Shop (1st time)
+BlackMarket,1,RenewMesetaShop02,Refresh Meseta Treasure Shop (2nd time)
+BlackMarket,1,RenewMesetaShop03,Refresh Meseta Treasure Shop (3rd time)
+BlackMarket,1,RenewMesetaShop04,Refresh Meseta Treasure Shop (4th time)
+BlackMarket,1,RenewMesetaShop05,Refresh Meseta Treasure Shop (5th time)
+BlackMarket,1,RenewMesetaShop06,Refresh Meseta Treasure Shop (6th time)
+BlackMarket,1,RenewMesetaShop07,Refresh Meseta Treasure Shop (7th time)
+BlackMarket,1,RenewMesetaShop08,Refresh Meseta Treasure Shop (8th time)
+BlackMarket,1,RenewMesetaShop09,Refresh Meseta Treasure Shop (9th time)
+BlackMarket,1,RenewMesetaShop10,Refresh Meseta Treasure Shop (10th time or more)
+BlackMarket,1,RenewMesetaShop_N_Free,Treasure Shop (N-Meseta) Refresh (Free)
+BlackMarket,1,RenewMesetaShop_N_Premium,Treasure Shop (N-Meseta) Refresh (Premium)
+BlackMarket,1,RenewMesetaShop_N_SG,Treasure Shop (N-Meseta) Refresh (<pict StarGem>10 SG)
+BlackMarket,1,InfoError_None,FailureReason_None<br>Success
+BlackMarket,1,InfoError_Error,Could not obtain product list information.<br>Please wait a while and try again.
+BlackMarket,1,InfoError_NotFound,Could not obtain product list information.<br>Please wait a while and try again.
+BlackMarket,1,InfoError_NoMoney,You don't have enough money.
+BlackMarket,1,InfoError_N_Premium,Your Premium Set has expired. Unable to use $(0).
+BlackMarket,1,InfoError_N_TimeOut,The daily product list refresh time has passed. Close and reopen the shop before performing a manual refresh.
+BlackMarket,1,BuyError_OK,BlackMarketBuyAns_OK<br>Exchange Successful
+BlackMarket,1,BuyError_LowPoint,You do not have enough Star Gems.
+BlackMarket,1,BuyError_IllegalParam,The purchase could not be completed.<br>Please wait a while and try again.
+BlackMarket,1,BuyError_NoSpace,The purchase could not be completed because your inventory<br>is full or you have exceeded the quantity limit.
+BlackMarket,1,BuyError_ExchangeLimit,The purchase could not be completed because you have <br>reached your purchase maximum.
+BlackMarket,1,BuyError_Other,The purchase could not be completed.<br>Please wait a while and try again.
+BlackMarket,1,BuyError_N_BuyPremium,<pict Arcscash><scarlet>AC Payment Required<c><br>There are some products you cannot purchase because your <yellow>Premium Set<c> has expired. Activating a Premium Set will enable you to make the purchase.<br><br>Proceed to the purchase screen?
+BlackMarket,1,BuyError_N_UsePremium,"<pict Arcscash><c 5fdf00>Use Previously Purchased Item<c><br>There are some products you cannot purchase because your Premium Set has expired.<br>Use a <yellow>Premium Set<c> in your possession to enable the purchase?<br><br><yellow>Note: If you have more than one in your possession, the one that adds the most time will be used.<c>"
+BlackMarket,1,Mark_Premium,Premium
+BlackMarket,1,Open_SgShop,Limited-time goods now on sale in the SG Shop!
 PokaShop,0,ShopTitleText,バトルコイン交換ショップ
 PokaShop,0,NormalShopGuideText,<c f0df60>バトルコインを消費して、アイテムと交換できます。交換するアイテムを選択してください。<c>
 PokaShop,0,LimitedShopGuideText,<c f0df60>交換するアイテムを選択してください(交換数には週制限があり、毎週<utcdow>水曜日8:00</utcdow>にリセットされます)。<c>
@@ -278,24 +278,24 @@ PokaShop,0,CancelMessage,購入をキャンセルします。<br>よろしいで
 PokaShop,0,SelectItemInputVita,個数を入力してください
 PokaShop,0,MenuErrorTitle,メッセージ
 PokaShop,0,MenuErrorMessage,「BC交換ショップ」選択エラーメッセージ
-PokaShop,1,ShopTitleText,TIENDA DE INTERCAMBIO DE MONEDAS DE BATALLA
-PokaShop,1,NormalShopGuideText,<c f0df60> Puedes consumir Battle Coins para intercambiar artículos. Selecciona los artículos que deseas intercambiar. <c>
-PokaShop,1,LimitedShopGuideText,欀 椀猀 挀愀瀀瀀攀搀⸀ 吀栀攀 挀愀瀀 椀猀 爀攀猀攀琀 攀瘀攀爀礀 㰀甀琀挀搀漀眀㸀圀攀搀渀攀猀搀愀礀 愀琀 㠀㨀　　㰀⼀甀琀挀搀漀眀㸀⤀ ⸀㰀挀㸀
-PokaShop,1,ShopListTitle,MENÚ DE LA TIENDA
-PokaShop,1,PluralityMenuGuide,<c f0df60> Selecciona una tienda. <c>
-PokaShop,1,Exit,Salir de la tienda
-PokaShop,1,Buy,Compra
+PokaShop,1,ShopTitleText,BATTLE COIN EXCHANGE SHOP
+PokaShop,1,NormalShopGuideText,<c f0df60>You can consume Battle Coins to exchange items. Select the items you wish to exchange.<c>
+PokaShop,1,LimitedShopGuideText,<c f0df60>Select item to exchange. (Number of items to be exchanged each week is capped. The cap is reset every <utcdow>Wednesday at 8:00</utcdow>).<c>
+PokaShop,1,ShopListTitle,SHOP MENU
+PokaShop,1,PluralityMenuGuide,<c f0df60>Select a shop.<c>
+PokaShop,1,Exit,Exit Shop
+PokaShop,1,Buy,Purchase
 PokaShop,1,NameNumber,$(0) x $(1)
-PokaShop,1,BuyTitle,CONFIRMAR COMPRA
-PokaShop,1,BuyCheck,¿Comprar los siguientes artículos por $(1) $(0)?
-PokaShop,1,BCDenomination,ANTES DE CRISTO
-PokaShop,1,BuyResultMessage1,Compra completa.
-PokaShop,1,BuyErrorMessage2,La compra no se pudo completar porque su inventario<br>está lleno o excedió el límite de cantidad.
-PokaShop,1,BCInsufficient,No tienes suficiente BC.
-PokaShop,1,BuyResultMessage2,No se pudo completar la compra.
-PokaShop,1,BuyResultTitle,COMPRAR ARTÍCULOS
-PokaShop,1,CancelTitle,CONFIRMAR CANCELACIÓN DE COMPRA
-PokaShop,1,CancelMessage,¿Estás seguro de que quieres cancelar tu compra?
-PokaShop,1,SelectItemInputVita,Introduce la cantidad
-PokaShop,1,MenuErrorTitle,MENSAJE
-PokaShop,1,MenuErrorMessage,Mensaje de error de selección de tienda de BC Exchange
+PokaShop,1,BuyTitle,CONFIRM PURCHASE
+PokaShop,1,BuyCheck,Purchase the following item(s) for $(1) $(0)?
+PokaShop,1,BCDenomination,BC
+PokaShop,1,BuyResultMessage1,Purchase complete.
+PokaShop,1,BuyErrorMessage2,The purchase could not be completed because your inventory<br>is full or you have exceeded the quantity limit.
+PokaShop,1,BCInsufficient,You don't have enough BC.
+PokaShop,1,BuyResultMessage2,Purchase could not be completed.
+PokaShop,1,BuyResultTitle,PURCHASE ITEMS
+PokaShop,1,CancelTitle,CONFIRM PURCHASE CANCELLATION
+PokaShop,1,CancelMessage,Are you sure you want to cancel your purchase?
+PokaShop,1,SelectItemInputVita,Enter quantity
+PokaShop,1,MenuErrorTitle,MESSAGE
+PokaShop,1,MenuErrorMessage,BC Exchange Shop Selection Error Message

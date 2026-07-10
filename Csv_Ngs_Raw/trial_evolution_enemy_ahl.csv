@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName_1Enemy,$(0)討伐
 common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
 common,0,TrialAbstract_1Enemy,$(0)を倒す
@@ -7,17 +7,17 @@ common,0,TrialName_Multi,エネミー討伐
 common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
 common,0,TrialAbstract_Multi,エネミーを倒す
 common,0,TrialAbstract_Multi_SM_PSE,エネミーを倒す<br><yellow>※サイドミッション達成で<br>　次のPSEバースト時バーストチェンジ発生<c>
-common,1,TrialName_1Enemy,$(0) Supresión
-common,1,TrialBeginMsg_1Enemy,¡Derrota a los $(0)!
-common,1,TrialAbstract_1Enemy,Derrota al $(0).
-common,1,TrialAbstract_1Enemy_SM_PSE,Derrota al $(0).<br><yellow> *Completa una misión secundaria para activar una ráfaga<br>Cambia durante la próxima ráfaga de PSE.
-common,1,TrialName_Multi,Supresión enemiga
-common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos!
-common,1,TrialAbstract_Multi,Derrota a los enemigos.
-common,1,TrialAbstract_Multi_SM_PSE,Derrota a los enemigos.<br><yellow> *Completa una misión secundaria para activar una ráfaga<br>Cambia durante la próxima ráfaga de PSE.
+common,1,TrialName_1Enemy,$(0) Suppression
+common,1,TrialBeginMsg_1Enemy,Defeat the $(0)!
+common,1,TrialAbstract_1Enemy,Defeat the $(0).
+common,1,TrialAbstract_1Enemy_SM_PSE,Defeat the $(0).<br><yellow>*Complete a Side Mission to trigger a Burst<br>Change during the next PSE Burst.
+common,1,TrialName_Multi,Enemy Suppression
+common,1,TrialBeginMsg_Multi,Defeat the enemies!
+common,1,TrialAbstract_Multi,Defeat the enemies.
+common,1,TrialAbstract_Multi_SM_PSE,Defeat the enemies.<br><yellow>*Complete a Side Mission to trigger a Burst<br>Change during the next PSE Burst.
 type102,0,NpcComOnBegin,……強力なエネミーが、あらたに出現！<br>至急、討伐をお願いします。
 type102,0,NpcComOnSuccess,エネミーの殲滅を確認しました！<br>即応、ありがとうございます。
-type102,0,NpcComOnFailure,エネミーが撤退しました。<br>……ひとまず、脅威は去りましたね。
+type102,0,NpcComOnFailure,エネミーが撤退しました。<br>……ひとまず、脅威は去りまし
 type102,1,NpcComOnBegin,Powerful new enemies detected!<br>Please eliminate them at once.
 type102,1,NpcComOnSuccess,Enemy eradication confirmed!<br>Your service is appreciated.
-type102,1,NpcComOnFailure,The enemy is retreating.<br>The threat has passed... for n
+type102,1,NpcComOnFailure,The enemy is retreating.<br>The threat has passed... for now.

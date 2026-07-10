@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Key,0,Back,BS
 Key,0,Tab,<pict btn_key_tab>
 Key,0,Return,<pict Key_ENTER>
@@ -127,19 +127,19 @@ Key,0,Ax,Ax
 Key,0,Backslash,<pict btn_key_bkslash>
 Key,0,Break,Break
 Key,0,KeyText,$(0)
-Key,1,Back,Retroceso
+Key,1,Back,Backspace
 Key,1,Tab,<pict btn_key_tab>
 Key,1,Return,<pict Key_ENTER>
 Key,1,Shift,<pict Key_SHIFT>
 Key,1,Control,<pict key_ctrl>
 Key,1,Alt,<pict key_alt>
-Key,1,Pause,Pausa
-Key,1,CapsLock,Bloq Mayús
-Key,1,Kana,kana
-Key,1,Kanji,kanji
+Key,1,Pause,Pause
+Key,1,CapsLock,Caps Lock
+Key,1,Kana,Kana
+Key,1,Kanji,Kanji
 Key,1,Escape,<pict btn_key_esc>
-Key,1,Convert,Conversión (Henkan)
-Key,1,Nonconvert,No conversión (Muhenkan)
+Key,1,Convert,Conversion (Henkan)
+Key,1,Nonconvert,Nonconversion (Muhenkan)
 Key,1,Space,<pict Key_SPACE>
 Key,1,PageUp,<pict btn_key_pgup>
 Key,1,PageDown,<pict btn_key_pgdn>
@@ -149,7 +149,7 @@ Key,1,Left,←
 Key,1,Up,↑
 Key,1,Right,→
 Key,1,Down,↓
-Key,1,PrintScreen,ImprScr
+Key,1,PrintScreen,PrtScr
 Key,1,Insert,<pict btn_key__ins>
 Key,1,Del,<pict btn_key_del>
 Key,1,T0,<pict btn_key_0>
@@ -188,10 +188,10 @@ Key,1,W,<pict btn_key_w>
 Key,1,X,<pict btn_key_x>
 Key,1,Y,<pict btn_key_y>
 Key,1,Z,<pict btn_key_z>
-Key,1,LWin,Ventanas izquierdas
-Key,1,RWin,Ventanas derechas
-Key,1,Apps,Aplicaciones
-Key,1,Sleep,Dormir
+Key,1,LWin,Left Windows
+Key,1,RWin,Right Windows
+Key,1,Apps,Apps
+Key,1,Sleep,Sleep
 Key,1,Numpad0,<pict btn_key_num0>
 Key,1,Numpad1,<pict btn_key_num1>
 Key,1,Numpad2,<pict btn_key_num2>
@@ -231,14 +231,14 @@ Key,1,F21,F21
 Key,1,F22,F22
 Key,1,F23,F23
 Key,1,F24,F24
-Key,1,NumLock,Bloqueo numérico
-Key,1,ScrollLock,Bloqueo de desplazamiento
-Key,1,LShift,Desplazamiento a la izquierda
-Key,1,RShift,Desplazamiento a la derecha
-Key,1,LControl,Ctrl izquierdo
-Key,1,RControl,Ctrl derecho
-Key,1,LAlt,Alt izquierda
-Key,1,RAlt,Alt derecha
+Key,1,NumLock,Num Lock
+Key,1,ScrollLock,Scroll Lock
+Key,1,LShift,Left Shift
+Key,1,RShift,Right Shift
+Key,1,LControl,Left Ctrl
+Key,1,RControl,Right Ctrl
+Key,1,LAlt,Left Alt
+Key,1,RAlt,Right Alt
 Key,1,Colon,<pict btn_key_colon>
 Key,1,Semicolon,<pict btn_key_smcolon>
 Key,1,Comma,<pict btn_key_comma>
@@ -251,9 +251,9 @@ Key,1,Yen,<pict btn_key_yen>
 Key,1,RBracket,<pict btn_key_rightsq>
 Key,1,PrevTrack,<pict btn_key_crcmflx>
 Key,1,Oem8,OEM 8
-Key,1,Ax,Hacha
+Key,1,Ax,Ax
 Key,1,Backslash,<pict btn_key_bkslash>
-Key,1,Break,Romper
+Key,1,Break,Break
 Key,1,KeyText,$(0)
 Mouse,0,L,L
 Mouse,0,LDouble,LDouble
@@ -263,14 +263,14 @@ Mouse,0,RDouble,RDouble
 Mouse,0,WheelUp,WheelUp
 Mouse,0,WheelDown,WheelDown
 Mouse,0,Pos,Pos
-Mouse,1,L,Clic izquierdo
-Mouse,1,LDouble,Doble clic izquierdo
-Mouse,1,M,Clic medio
-Mouse,1,R,Clic derecho
-Mouse,1,RDouble,Doble clic derecho
-Mouse,1,WheelUp,Rueda arriba
-Mouse,1,WheelDown,Rueda hacia abajo
-Mouse,1,Pos,Posición
+Mouse,1,L,Left Click
+Mouse,1,LDouble,Left Double-Click
+Mouse,1,M,Middle Click
+Mouse,1,R,Right Click
+Mouse,1,RDouble,Right Double-Click
+Mouse,1,WheelUp,Wheel Up
+Mouse,1,WheelDown,Wheel Down
+Mouse,1,Pos,Position
 Pad,0,ALPHA_A,<pict Alpha_A>
 Pad,0,ALPHA_B,<pict Alpha_B>
 Pad,0,ALPHA_X,<pict Alpha_X>
@@ -441,9 +441,9 @@ Pad,1,MOSUE_RIGHT,<pict Mouse_RIGHT>
 Pad,1,MOUSE_WHEEL,<pict Mouse_WHEEL>
 Pad,1,MOUSE_SDIE1,<pict Mouse_SIDE1>
 Pad,1,MOUSE_SDIE2,<pict Mouse_SIDE2>
-Pad,1,BODY_NAME,Controlador
+Pad,1,BODY_NAME,Controller
 Pad,1,BODY_NAME_CC,Joy-Con
-Pad,1,BODY_NAME_XX,controlador inalámbrico
+Pad,1,BODY_NAME_XX,wireless controller
 Pad,1,SWITCH_Y,<pict Switch_Y>
 Pad,1,SWITCH_A,<pict Switch_A>
 Pad,1,SWITCH_B,<pict Switch_B>
@@ -460,15 +460,15 @@ Pad,1,SWITCH_DOWN,<pict Switch_DOWN>
 Pad,1,SWITCH_UP,<pict Switch_UP>
 Pad,1,SWITCH_LEFT,<pict Switch_LEFT>
 Pad,1,SWITCH_RIGHT,<pict Switch_RIGHT>
-Pad,1,LSTICK_NAME,Palo izquierdo
-Pad,1,LSTICK_NAME_CC,Palo en L
-Pad,1,LSTICK_NAME_XX,Palo izquierdo
-Pad,1,RSTICK_NAME,Stick derecho
-Pad,1,RSTICK_NAME_CC,Palo R
-Pad,1,RSTICK_NAME_XX,Stick derecho
-Pad,1,DIRECTION_BUTTON,pad direccional
-Pad,1,DIRECTION_BUTTON_CC,Botón de dirección
-Pad,1,DIRECTION_BUTTON_XX,Tecla de flecha
+Pad,1,LSTICK_NAME,Left Stick
+Pad,1,LSTICK_NAME_CC,L-Stick
+Pad,1,LSTICK_NAME_XX,Left Stick
+Pad,1,RSTICK_NAME,Right Stick
+Pad,1,RSTICK_NAME_CC,R-Stick
+Pad,1,RSTICK_NAME_XX,Right Stick
+Pad,1,DIRECTION_BUTTON,D-pad
+Pad,1,DIRECTION_BUTTON_CC,Direction Button
+Pad,1,DIRECTION_BUTTON_XX,Arrow Key
 Pad,1,NA_A,<pict Na_A>
 Pad,1,NA_B,<pict Na_B>
 Pad,1,NA_X,<pict Na_X>
@@ -488,9 +488,9 @@ Pad,1,NA_RIGHT,<pict Na_RIGHT>
 Text,0,NormalAttackText,通常攻撃ボタン
 Text,0,WeaponActionText,武器アクションボタン
 Text,0,PhotonArtsText,フォトンアーツボタン
-Text,1,NormalAttackText,Botón de ataque normal
-Text,1,WeaponActionText,Botón de acción de arma
-Text,1,PhotonArtsText,Botón de artes fotónicas
+Text,1,NormalAttackText,Normal Attack Button
+Text,1,WeaponActionText,Weapon Action Button
+Text,1,PhotonArtsText,Photon Arts Button
 URL,0,pso2_players_manual,<url https://pso2.com/manual/>
 URL,0,pso2_players_manual_setup,<url http://pso2.jp/players/manual/setup/>
 URL,0,pso2_players_manual_setup_ooo,<url https://pso2.com/manual/setup/xbox/>
@@ -745,7 +745,7 @@ URL,1,pso2_players_manual_preparations_info_arksroad,<url http://pso2.jp/players
 URL,1,pso2_players_manual_preparations_party_supportpartner,<url https://pso2.com/manual/fundamentals/party/supportpartner/>
 URL,1,AC_CHARGE_PAGE,https://store.steampowered.com/app/1056640/
 URL,1,USER-INFO-CHANGE-URL,https://member.playpark.net
-URL,1,pso2_players,http://pso2.playpark.com/es
+URL,1,pso2_players,http://pso2.playpark.com/en
 URL,1,pso2_players_Vita,<url http://pso2.jp/vita/>
 URL,1,pso2_reset,<url https://support.pso2.com/>
 URL,1,pso2.hangame.co.jp_support.nhn,<url http://pso2.hangame.co.jp/support.nhn>
@@ -768,15 +768,15 @@ URL,1,pso2_segaid_user_activate_url_pc,https://pso2.jp/ref/ngs004/
 URL,1,pso2_segaid_user_activate_url_ps4,https://pso2.jp/ref/ngs005/
 URL,1,pso2_players_manual_preparations_info_arksleague,<url https://pso2.com/manual/fundamentals/info/arksleague/>
 URL,1,pso2_players_manual_preparations_arkslobby_block,https://pso2.com/manual/fundamentals/arkslobby/blocks/
-URL,1,pso2_players_support_rule_tokutei,http://pso2.jp/players/support/rule/tokutei/
-URL,1,pso2_players_support_rule_tokutei_vita,http://pso2.jp/players/support/rule/tokutei/
+URL,1,pso2_players_support_rule_tokutei,http: //pso2.jp/players/support/rule/tokutei/
+URL,1,pso2_players_support_rule_tokutei_vita,http: //pso2.jp/players/support/rule/tokutei/
 URL,1,pso2_players_support_rule_tokutei_cloud,http://pso2.jp/players/support/rule/tokutei/cloud.html
 URL,1,pso2_players_PVP,<url http://pso2.jp/players/>
 URL,1,pso2_players_manual_coordinate,<url https://pso2.com/manual/fundamentals/equipment/catalog>
 URL,1,pso2_players_poritan,<url http://pso2.jp/players/update/20171108/02/>
 URL,1,pso2_players_manual_preparations_darkblast,<url https://pso2.com/manual/fundamentals/darkblast/>
 URL,1,pso2_segaid_user_activate_url_switch,https://pso2.jp/ref/ngs006/
-URL,1,pso2_players_support_otp,http://pso2.jp/players/support/faq/578/
+URL,1,pso2_players_support_otp,http: //pso2.jp/players/support/faq/578/
 URL,1,pso2_players_manual_menu_mmenu_arksmission,<url https://pso2.com/manual/menu/arksmission/>
 URL,1,pso2_web_event_url,http://pso2.jp/players/event/
 URL,1,pso2_manual_fundamentals_ac_dailyshop,<url https://pso2.com/manual/fundamentals/ac/dailyshop/>

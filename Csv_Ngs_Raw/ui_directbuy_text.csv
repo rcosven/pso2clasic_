@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Common,0,DirectUse_MyRoom_1,アイテム使用確認
 Common,0,DirectUse_MyRoom_2,<pict Arcscash><c 5fdf00>購入済みアイテムの使用<c><br>「マイルーム利用権」をお持ちでないか、<br>利用期限が切れています。<br><br>アイテムパック内にお持ちの<br><yellow>「プレミアムセット」<c>を<br>使用して、マイルームを利用可能にしますか？<br><br><red>※複数種類所持している場合、<br>　追加期限が長いものを優先して使用します。<c><br><br><red>※使用するアイテムを確認したい場合は、<br>　アイテムパックから選んでください。<c>
 Common,0,DirectUse_MyShop_1,アイテム使用確認
@@ -166,42 +166,42 @@ Gat,0,DirectBuy_GatFStaItem06,釣りスタミナドリンク(6回目)
 Gat,0,DirectBuy_GatFStaItem07,釣りスタミナドリンク(7回目)
 Gat,0,DirectBuy_GatFStaItem08,釣りスタミナドリンク(8回目)
 Gat,0,DirectBuy_GatFStaItem09,釣りスタミナドリンク(9回目)
-Gat,0,DirectBuy_GatFStaItem10,釣りスタミナドリンク(10回目以上)
-Gat,1,YesNoTitle,CONFIRMAR COMPRA DEL ARTÍCULO
-Gat,1,YesNoMsgStaminaNotice,椀渀愀 椀洀洀攀搀椀愀琀攀氀礀⸀ 㰀戀爀㸀␀⠀㈀⤀㰀戀爀㸀㰀礀攀氀氀漀眀㸀倀爀漀挀攀攀搀 琀漀 琀栀攀 瀀甀爀挀栀愀猀攀 猀挀爀攀攀渀㼀㰀挀㸀㰀戀爀㸀㰀戀爀㸀␀⠀㌀⤀
-Gat,1,YesNoMsgStaminaBuy,Comprarás el siguiente artículo por $(3)$(2).<br><br> ¿Está seguro de que desea continuar?<br><br> $(0)<br><br> $(1)
-Gat,1,AddMsg_GatType_C,Cosecha
-Gat,1,AddMsg_GatType_F,Pesca
-Gat,1,AddMsg_Symbol_AC,<pict Arcscash><c ff4f3f>Pago de CA requerido <c>
-Gat,1,AddMsg_Symbol_SG,<pict StarGem><c 1dedd7>Pago SG requerido <c>
-Gat,1,AddMsg_NoticePrice_Def,Artículo de compra:<yellow>$(2)<c><br> Precio:<green>$(1)$(0) <c>
-Gat,1,AddMsg_NoticePrice_Off,Artículo de compra:<yellow>$(3)<c><br> Precio después del descuento:<green>$(1)$(0)<c>(Normalmente: $(2)$(0)）
-Gat,1,AddMsg_BuyPrice_Def,Artículo de compra:<yellow>$(2)<c><br> Precio:<green>$(1)$(0) <c>
-Gat,1,AddMsg_BuyPrice_Off,Artículo de compra:<yellow>$(3)<c><br> Precio después del descuento:<green>$(1)$(0)<c>(Normalmente: $(2)$(0)）
-Gat,1,AddMsg_HaveValue,(Tienes $(0): $(1))
-Gat,1,AddMsg_Bill_AC,C.A.
+Gat,0,DirectBuy_GatFStaItem10,釣りスタミナドリンク(10回
+Gat,1,YesNoTitle,CONFIRM ITEM PURCHASE
+Gat,1,YesNoMsgStaminaNotice,You do not have enough $(0) stamina.<br><br>$(1)<br>$(4) can be used to recover stamina immediately. <br>$(2)<br><yellow>Proceed to the purchase screen?<c><br><br>$(3)
+Gat,1,YesNoMsgStaminaBuy,You will be purchasing the following item for $(3)$(2).<br><br>Are you sure you wish to proceed?<br><br>$(0)<br><br>$(1)
+Gat,1,AddMsg_GatType_C,Harvesting
+Gat,1,AddMsg_GatType_F,Fishing
+Gat,1,AddMsg_Symbol_AC,<pict Arcscash><c ff4f3f>AC Payment Required<c>
+Gat,1,AddMsg_Symbol_SG,<pict StarGem><c 1dedd7>SG Payment Required<c>
+Gat,1,AddMsg_NoticePrice_Def,Purchase item： <yellow>$(2)<c><br>Price： <green>$(1)$(0)<c>
+Gat,1,AddMsg_NoticePrice_Off,Purchase item：<yellow>$(3)<c><br>Price after discount： <green>$(1)$(0)<c>  (Normally: $(2)$(0)）
+Gat,1,AddMsg_BuyPrice_Def,Purchase item： <yellow>$(2)<c><br>Price： <green>$(1)$(0)<c>
+Gat,1,AddMsg_BuyPrice_Off,Purchase item：<yellow>$(3)<c><br>Price after discount： <green>$(1)$(0)<c>  (Normally: $(2)$(0)）
+Gat,1,AddMsg_HaveValue,(You have $(0): $(1))
+Gat,1,AddMsg_Bill_AC,AC
 Gat,1,AddMsg_Bill_SG,SG
-Gat,1,YesNoMsgUseItemNotice,recibir materiales raros.<br>$(1)<br>¿Pasar a la pantalla de compra?<br><br> $(2)
-Gat,1,YesNoMsgUseItemBuy,Los siguientes artículos se comprarán por $(1).<br>¿Estás seguro?<br><br> $(0)<br><green> $(1) AC <c><br><br> (Tienes: $(2) AC）
-Gat,1,DirectBuy_GatCStaItem,Bebida de recolección de resistencia
-Gat,1,DirectBuy_GatCStaItem01,Bebida de recolección de resistencia (primera vez)
-Gat,1,DirectBuy_GatCStaItem02,Bebida de recolección de resistencia (segunda vez)
-Gat,1,DirectBuy_GatCStaItem03,Bebida de recolección de resistencia (tercera vez)
-Gat,1,DirectBuy_GatCStaItem04,Bebida de recolección de resistencia (cuarta vez)
-Gat,1,DirectBuy_GatCStaItem05,Bebida de recolección de resistencia (quinta vez)
-Gat,1,DirectBuy_GatCStaItem06,Bebida de recolección de resistencia (sexta vez)
-Gat,1,DirectBuy_GatCStaItem07,Bebida de recolección de resistencia (séptima vez)
-Gat,1,DirectBuy_GatCStaItem08,Bebida de recolección de resistencia (octava vez)
-Gat,1,DirectBuy_GatCStaItem09,Bebida de recolección de resistencia (novena vez)
-Gat,1,DirectBuy_GatCStaItem10,Bebida de resistencia para cosechar (décima vez o más)
-Gat,1,DirectBuy_GatFStaItem,Bebida de resistencia para pescar
-Gat,1,DirectBuy_GatFStaItem01,Bebida de resistencia para pescar (primera vez)
-Gat,1,DirectBuy_GatFStaItem02,Bebida de resistencia para pescar (segunda vez)
-Gat,1,DirectBuy_GatFStaItem03,Bebida de resistencia para pescar (tercera vez)
-Gat,1,DirectBuy_GatFStaItem04,Bebida de resistencia para pescar (cuarta vez)
-Gat,1,DirectBuy_GatFStaItem05,Bebida de resistencia para pescar (quinta vez)
-Gat,1,DirectBuy_GatFStaItem06,Bebida de resistencia para pescar (sexta vez)
-Gat,1,DirectBuy_GatFStaItem07,Bebida de resistencia para pescar (séptima vez)
-Gat,1,DirectBuy_GatFStaItem08,Bebida de resistencia para pescar (octava vez)
-Gat,1,DirectBuy_GatFStaItem09,Bebida de resistencia para pescar (novena vez)
-Gat,1,DirectBuy_GatFStaItem10,Bebida de resistencia para pescar (décima vez o más)
+Gat,1,YesNoMsgUseItemNotice,$(3) supply insufficient.<br><br>$(0)<br>Use of this item guarantees you will receive rare materials.<br>$(1)<br>Proceed to the purchase screen?<br><br>$(2)
+Gat,1,YesNoMsgUseItemBuy,The following item(s) will be purchased for $(1).<br>Are you sure?<br><br>$(0)<br><green>$(1) AC<c><br><br>(You have：$(2) AC）
+Gat,1,DirectBuy_GatCStaItem,Harvesting Stamina Drink
+Gat,1,DirectBuy_GatCStaItem01,Harvesting Stamina Drink (1st time)
+Gat,1,DirectBuy_GatCStaItem02,Harvesting Stamina Drink (2nd time)
+Gat,1,DirectBuy_GatCStaItem03,Harvesting Stamina Drink (3rd time)
+Gat,1,DirectBuy_GatCStaItem04,Harvesting Stamina Drink (4th time)
+Gat,1,DirectBuy_GatCStaItem05,Harvesting Stamina Drink (5th time)
+Gat,1,DirectBuy_GatCStaItem06,Harvesting Stamina Drink (6th time)
+Gat,1,DirectBuy_GatCStaItem07,Harvesting Stamina Drink (7th time)
+Gat,1,DirectBuy_GatCStaItem08,Harvesting Stamina Drink (8th time)
+Gat,1,DirectBuy_GatCStaItem09,Harvesting Stamina Drink (9th time)
+Gat,1,DirectBuy_GatCStaItem10,Harvesting Stamina Drink (10th time+)
+Gat,1,DirectBuy_GatFStaItem,Fishing Stamina Drink
+Gat,1,DirectBuy_GatFStaItem01,Fishing Stamina Drink (1st time)
+Gat,1,DirectBuy_GatFStaItem02,Fishing Stamina Drink (2nd time)
+Gat,1,DirectBuy_GatFStaItem03,Fishing Stamina Drink (3rd time)
+Gat,1,DirectBuy_GatFStaItem04,Fishing Stamina Drink (4th time)
+Gat,1,DirectBuy_GatFStaItem05,Fishing Stamina Drink (5th time)
+Gat,1,DirectBuy_GatFStaItem06,Fishing Stamina Drink (6th time)
+Gat,1,DirectBuy_GatFStaItem07,Fishing Stamina Drink (7th time)
+Gat,1,DirectBuy_GatFStaItem08,Fishing Stamina Drink (8th time)
+Gat,1,DirectBuy_GatFStaItem09,Fishing Stamina Drink (9th time)
+Gat,1,DirectBuy_GatFStaItem10,Fishing Stamina Drink (10th time+)

@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 TicketMain,0,MenuTitle,交換ショップ
 TicketMain,0,MenuGuide,<c f0df60>商品リストにあるアイテムを、指定のアイテムと交換できます。<c>
 TicketMain,0,ButtonChange,交換
@@ -79,7 +79,7 @@ RentalCommon,0,MenuTitle,レンタル有効期限
 RentalCommon,0,RentalExpiration_Supplemental,各利用権の有効期限が確認できます。<br>項目を選択すると利用権が購入できます。
 RentalCommon,0,MenuGuide,-
 RentalCommon,0,RestTitle,有効期限
-RentalCommon,0,RestTimeTitle,あと
+RentalCommon,0,RestTimeTitle,あと 
 RentalCommon,0,RestMonth,$(0)ヶ月
 RentalCommon,0,RestDay,$(0)日
 RentalCommon,0,RestTime,$(0)時間
@@ -124,10 +124,10 @@ RentalCommon,1,RentalExpiration_Supplemental,"Here, you can check the expiration
 RentalCommon,1,MenuGuide,-
 RentalCommon,1,RestTitle,EXPIRATION
 RentalCommon,1,RestTimeTitle,<space>
-RentalCommon,1,RestMonth,$(0) month(s)
-RentalCommon,1,RestDay,$(0) day(s)
-RentalCommon,1,RestTime,$(0) hour(s)
-RentalCommon,1,RestMinits,$(0) min(s)
+RentalCommon,1,RestMonth,$(0) month(s) 
+RentalCommon,1,RestDay,$(0) day(s) 
+RentalCommon,1,RestTime,$(0) hour(s) 
+RentalCommon,1,RestMinits,$(0) min(s) 
 RentalCommon,1,RestSec,$(0) second(s)
 RentalCommon,1,TimeOver,Expired
 RentalCommon,1,ITEM00,Premium Set
@@ -816,10 +816,10 @@ AcShopCommon,0,LimitedItemTitle1_VITA,<yellow>期間限定<c>
 AcShopCommon,0,LimitedItemTitle2_VITA,<yellow>個数限定<c>
 AcShopCommon,0,LimitedItemTitle1a_VITA,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2a_VITA,<yellow>交換可能数<c>
-AcShopCommon,0,LimitedItemText1,$(0)個まで購入可能
+AcShopCommon,0,LimitedItemText1,$(0)個まで購入可能 
 AcShopCommon,0,LimitedItemText2,あと$(0)個
-AcShopCommon,0,LimitedItemText1Reset,毎日$(0)個まで購入可能
-AcShopCommon,0,LimitedItemText1a,$(0)個まで交換可能
+AcShopCommon,0,LimitedItemText1Reset,毎日$(0)個まで購入可能 
+AcShopCommon,0,LimitedItemText1a,$(0)個まで交換可能 
 AcShopCommon,0,LimitedItemTitle3,商品情報
 AcShopCommon,0,PrizeExchangeNoInfo,<utcdow>水曜日8:00</utcdow>にリセット
 AcShopCommon,0,PrizeExchangeNoInfoVITA,交換回数(水曜13時にリセット)
@@ -831,8 +831,8 @@ AcShopCommon,0,LimitedItemTitle1b,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2b,<yellow>交換可能数<c>
 AcShopCommon,0,LimitedItemTitle1b_VITA,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2b_VITA,<yellow>交換可能数<c>
-AcShopCommon,0,LimitedItemText1b,$(0)個まで購入可能
-AcShopCommon,0,LimitedItemText1bReset,毎日$(0)個まで購入可能
+AcShopCommon,0,LimitedItemText1b,$(0)個まで購入可能 
+AcShopCommon,0,LimitedItemText1bReset,毎日$(0)個まで購入可能 
 AcShopCommon,0,Limited_BasnetReset,(<utcdow>水曜日8:00</utcdow>にリセット)
 AcShopCommon,0,LimitedItemText1b_LimitNone,購入制限はありません
 AcShopCommon,0,ItemStockResetError,アイテムの交換個数がリセットされたため<br>画面を更新します。
@@ -934,7 +934,7 @@ AcShopCommon,1,LimitedItemTitle2a_VITA,<yellow>ALLOWED EXCHANGES<c>
 AcShopCommon,1,LimitedItemText1,Purchase limit: $(0)
 AcShopCommon,1,LimitedItemText2,($(0) Remaining)
 AcShopCommon,1,LimitedItemText1Reset,Daily purchase limit: $(0)
-AcShopCommon,1,LimitedItemText1a,You can trade up to $(0) Units
+AcShopCommon,1,LimitedItemText1a,You can trade up to $(0) Units  
 AcShopCommon,1,LimitedItemTitle3,PRODUCT INFORMATION
 AcShopCommon,1,PrizeExchangeNoInfo,Resets on <utcdow>Wednesday at 8:00</utcdow>
 AcShopCommon,1,PrizeExchangeNoInfoVITA,Allowed Exchanges (Resets on Wed. at 1:00 PM)
@@ -1307,7 +1307,7 @@ ItemCommon,0,GrindNumAwardPostMessage,＋$(0)強化報酬「$(1)」を一時倉�
 ItemCommon,0,UseCraftEnchantTimeExtensionItemMessage,$(0)の効果を以下のユニットに付与します。<br><br><yellow>$(1)<c><br><br>※効果時間は使用後に消費を開始します。
 ItemCommon,0,CraftEnchantItemUseErrorTimeMax,効果時間が90日以上になるため使用できません。
 ItemCommon,0,LockMultiErrorMessage,一部ロックできないアイテムがありました。一度の最大数は$(0)個までです。
-ItemCommon,0,UnlockMultiErrorMessage,一部ロック解除できないアイテムがありました。一度の最大数は$(0)個までです。
+ItemCommon,0,UnlockMultiErrorMessage, 一部ロック解除できないアイテムがありました。一度の最大数は$(0)個までです。
 ItemCommon,0,UnlockDialogMessage,選択したアイテムのロックを解除します。<br>よろしいですか？
 ItemCommon,0,PetAbility,$(0)<br>【効果】<br>$(1)
 ItemCommon,0,RingSkill,$(1) Lv.$(0)<br>【効果】<br>$(2)
@@ -1327,8 +1327,8 @@ ItemCommon,0,UseTraceItemTitle,アイテム確認
 ItemCommon,0,UseTraceItemMessage,武器フォーム変更済みのアイテムが選択されています。<br>本当によろしいですか？
 ItemCommon,0,FloatTextItem_1,$(2)$(0)$(1)
 ItemCommon,0,FloatTextItem_2,$(3)$(0)$(1)×$(2)
-ItemCommon,0,FloatTextItem_3,$(0)$(1)
-ItemCommon,0,FloatTextItem_4,$(0)$(1)×$(2)
+ItemCommon,0,FloatTextItem_3,　　$(0)$(1)
+ItemCommon,0,FloatTextItem_4,　　$(0)$(1)×$(2)
 ItemCommon,0,FloatTextItemUnidentified_1,<pict rarity_unk>$(0)<c 00ffff>$(1)<c>
 ItemCommon,0,FloatTextItemUnidentified_2,<pict rarity_unk>$(0)<c 00ffff>$(1)<c>×$(2)
 ItemCommon,0,FloatTextMeseta,<pict reb_meseta>$(0)
@@ -1607,7 +1607,7 @@ ItemCommon,1,GrindNumAwardPostMessage,"+$(0)Enhancement Reward ""$(1)"" deposite
 ItemCommon,1,UseCraftEnchantTimeExtensionItemMessage,$(0)effect will be applied to the following Unitnit.<br><br><yellow>$(1)<c><br><br>Effect Duration will begin after use.
 ItemCommon,1,CraftEnchantItemUseErrorTimeMax,"Cannot be used, as the Effect Duration will exceed 90 days."
 ItemCommon,1,LockMultiErrorMessage,One or more items cannot be locked. The maximum number is$(0)at a time.
-ItemCommon,1,UnlockMultiErrorMessage,One or more items cannot be unlocked. The maximum number is $(0) at a time.
+ItemCommon,1,UnlockMultiErrorMessage, One or more items cannot be unlocked. The maximum number is $(0) at a time.
 ItemCommon,1,UnlockDialogMessage,The selected item will be unlocked.<br>Are you sure you wish to proceed?
 ItemCommon,1,PetAbility,"$(0)<br>""Effect""<br>$(1)"
 ItemCommon,1,RingSkill,"$(1) Level$(0)<br>""Effect""<br>$(2)"
@@ -1627,8 +1627,8 @@ ItemCommon,1,UseTraceItemTitle,CONFIRM ITEM
 ItemCommon,1,UseTraceItemMessage,An item that has undergone Weapon Transmutation has been selected.<br>Are you sure this is okay?
 ItemCommon,1,FloatTextItem_1,$(2) $(0) $(1)
 ItemCommon,1,FloatTextItem_2,$(3) $(0) $(1) x$(2)
-ItemCommon,1,FloatTextItem_3,$(0) $(1)
-ItemCommon,1,FloatTextItem_4,$(0) $(1) x$(2)
+ItemCommon,1,FloatTextItem_3,    $(0) $(1)
+ItemCommon,1,FloatTextItem_4,    $(0) $(1) x$(2)
 ItemCommon,1,FloatTextItemUnidentified_1,<pict rarity_unk> $(0) <c 00ffff>$(1)<c>
 ItemCommon,1,FloatTextItemUnidentified_2,<pict rarity_unk> $(0) <c 00ffff>$(1)<c> x$(2)
 ItemCommon,1,FloatTextMeseta,<pict reb_meseta>$(0)
@@ -2932,8 +2932,8 @@ ItemDetails,1,Musicdisc_Note005,<pict 4space>
 ItemDetails,1,EquipmentCondition_Human,Humanoid
 ItemDetails,1,EquipmentCondition_Cast,CAST
 ItemDetails,1,EquipmentCondition_2Kind,$(0)/$(1)
-ItemDetails,1,EquipmentCondition_Type1,Type 1
-ItemDetails,1,EquipmentCondition_Type2,Type 2
+ItemDetails,1,EquipmentCondition_Type1, Type 1
+ItemDetails,1,EquipmentCondition_Type2, Type 2
 ItemDetails,1,ColorSyncCondition_BaseText,Some parts will sync with $(0) color.
 ItemDetails,1,ColorSyncCondition_Inner,[In]
 ItemDetails,1,ColorSyncCondition_Base,[Ba]
@@ -3505,7 +3505,7 @@ LaboMain,1,Trace,Weapon Transmutation
 LaboMain,1,TraceAdd,Change Weapon Appearance
 LaboMain,1,TraceRemove,Cancel Change
 LaboMain,1,Explanation_GrindGamma_Mate,"<c f0df60>Select ""material"" item. Amount of Enhancement EXP will differ based on selection. Item selected <c ff4f3f>will be consumed once process is done <c f0df60>.<c>"
-LaboMain,1,Explanation_GrindGamma_Mate_v,<c f0df60>Enhancement EXP will differ depending on material. Item selected <c ff4f3f>will be consumed once process is done<c f0df60>.<c>
+LaboMain,1,Explanation_GrindGamma_Mate_v,<c f0df60>Enhancement EXP will differ depending on material. Item selected <c ff4f3f>will be consumed once process is done<c f0df60>.<c> 
 LaboMain,1,Explanation_GrindGamma_Support,<c f0df60>You can also select Support Items if you have any. They can be obtained at the AC Shop or won by using Scratch Tickets.<c>
 LaboMain,1,Explanation_GrindGamma_Support_v,<c f0df60>Support Items can be selected for use when you have them.<c>
 LaboMain,1,Explanation_GrindGamma_Potential_Release,<c f0df60>Further enhancement will require unlocked Potentials. Select the potentials you'd like to unlock.<c>
@@ -3647,7 +3647,7 @@ LaboGrind,0,GrindMessage_Gamma_v_owner,強化を開始します。よろしい�
 LaboGrind,0,GammaGrindSupport1,強化値補助系
 LaboGrind,0,GammaGrindSupport2,属性変化系
 LaboGrind,0,CompareItemMessage,<yellow>必要アイテム：<br>$(0)<br>必要メセタ：$(2) （現在：$(1)）<c>
-LaboGrind,0,GrindItemText,$(0)×$(2) （現在：$(1)）
+LaboGrind,0,GrindItemText,　$(0)×$(2) （現在：$(1)）
 LaboGrind,0,GrindGreatSuccessRate,大成功確率
 LaboGrind,0,GrindParamName,$(0)の強化値
 LaboGrind,0,GrindErrorMessage_SelectParam,上昇させるパラメータを選択してください。
@@ -3758,7 +3758,7 @@ LaboGrind,1,GrindSuccessRateMessage5,<red>Danger<c>
 LaboGrind,1,GrindRisk,Maximum Risk
 LaboGrind,1,GrindRiskMessage1,None
 LaboGrind,1,GrindRiskMessage2,<c f2f2b0>Enh. Lv. 1<c>
-LaboGrind,1,GrindRiskMessage3,<yellow>Enh. Lv. 2<c>
+LaboGrind,1,GrindRiskMessage3, <yellow>Enh. Lv. 2<c>
 LaboGrind,1,GrindRiskMessage4,<c e7609e>Enh. Lv. 3<c>
 LaboGrind,1,GrindRiskMessage5,<red>Enh. Lv. 4<c>
 LaboGrind,1,GrindErrorTitle,ITEM LAB
@@ -3795,7 +3795,7 @@ LaboGrind,1,GrindMessage_Gamma_v_owner,"Enhancement is about to begin.<br>Are yo
 LaboGrind,1,GammaGrindSupport1,Enhancement Level Support Items
 LaboGrind,1,GammaGrindSupport2,Element-changing Items
 LaboGrind,1,CompareItemMessage,<yellow>Items required:<br>$(0)<br>Meseta required: $(2) (You have: $(1))<c>
-LaboGrind,1,GrindItemText,$(0) x $(2) (You have: $(1))
+LaboGrind,1,GrindItemText,  $(0) x $(2) (You have: $(1))
 LaboGrind,1,GrindGreatSuccessRate,Chance of Great Success
 LaboGrind,1,GrindParamName,Enh. Lv. of $(0)
 LaboGrind,1,GrindErrorMessage_SelectParam,Select Stats to Increase
@@ -5474,9 +5474,9 @@ UserShopIntendExhibit,0,StackExhibitInputNumberTitle,アイテムを出品する
 UserShopIntendExhibit,0,StackExhibitInputNumberMessage,出品する個数を入力してください
 UserShopIntendExhibit,0,SetValueInputNumberTitle,価格設定
 UserShopIntendExhibit,0,SetValueInputNumberMessage,設定する価格を入力してください。<br>※最低出品価格未満には変更できません。<br>※出品手数料として一定額が差引かれます。
-UserShopIntendExhibit,0,SetValueInputNumberMessage_2,（出品手数料差引き額：
+UserShopIntendExhibit,0,SetValueInputNumberMessage_2,（出品手数料差引き額： 
 UserShopIntendExhibit,0,SetValueInputNumberMessage_3,$(1)<pict 4space>$(0)）
-UserShopIntendExhibit,0,SetValueInputNumberMessage_4,（税込価格：
+UserShopIntendExhibit,0,SetValueInputNumberMessage_4,（税込価格： 
 UserShopIntendExhibit,0,SetValueInputNumberMessage_5,設定する価格を入力してください。<br>※“イチオシ！”アイテムは最低出品価格未満には変更できません。
 UserShopIntendExhibit,0,SetValueInputNumberMessage_6,（最低出品価格：
 UserShopIntendExhibit,0,SetValueInputNumberMessage_7,※出品手数料として一定額が差引かれます。
@@ -5522,9 +5522,9 @@ UserShopIntendExhibit,1,StackExhibitInputNumberTitle,PUT ITEM(S) UP FOR SALE
 UserShopIntendExhibit,1,StackExhibitInputNumberMessage,Enter the number of items to put up for sale.
 UserShopIntendExhibit,1,SetValueInputNumberTitle,SET PRICE
 UserShopIntendExhibit,1,SetValueInputNumberMessage,Enter the price you wish to set.<br>Note: This cannot be set to less than the item's minimum value.<br>Note: A seller's fee will be deducted.
-UserShopIntendExhibit,1,SetValueInputNumberMessage_2,(Profit after deduction:
+UserShopIntendExhibit,1,SetValueInputNumberMessage_2,(Profit after deduction: 
 UserShopIntendExhibit,1,SetValueInputNumberMessage_3,$(1)<pict 4space>$(0))
-UserShopIntendExhibit,1,SetValueInputNumberMessage_4,(Tax-Inclusive Price:
+UserShopIntendExhibit,1,SetValueInputNumberMessage_4,(Tax-Inclusive Price: 
 UserShopIntendExhibit,1,SetValueInputNumberMessage_5,Enter the price you wish to set.<br>Note: Featured items cannot be sold for less than the minimum value.
 UserShopIntendExhibit,1,SetValueInputNumberMessage_6,(Minimum List Price:
 UserShopIntendExhibit,1,SetValueInputNumberMessage_7,* A set amount will be deducted as a Seller's fee.
@@ -7567,11 +7567,11 @@ ItemSkillName,0,item_ElementalStanceUp2_2,鋭気賢闘の型 Lv.2
 ItemSkillName,0,item_ElementalStanceUp2_3,鋭気賢闘の型 Lv.3
 ItemSkillName,0,item_ElementalStanceUp2_4,鋭気賢闘の型 Lv.4
 ItemSkillName,0,item_ElementalStanceUp2_5,鋭気賢闘の型 Lv.5
-ItemSkillName,0,item_ElementalStanceUp3_1,Lv.1
-ItemSkillName,0,item_ElementalStanceUp3_2,Lv.2
-ItemSkillName,0,item_ElementalStanceUp3_3,Lv.3
-ItemSkillName,0,item_ElementalStanceUp3_4,Lv.4
-ItemSkillName,0,item_ElementalStanceUp3_5,Lv.5
+ItemSkillName,0,item_ElementalStanceUp3_1, Lv.1
+ItemSkillName,0,item_ElementalStanceUp3_2, Lv.2
+ItemSkillName,0,item_ElementalStanceUp3_3, Lv.3
+ItemSkillName,0,item_ElementalStanceUp3_4, Lv.4
+ItemSkillName,0,item_ElementalStanceUp3_5, Lv.5
 ItemSkillName,0,item_PhotonblastEnhancement_1,幻精共鳴 Lv.1
 ItemSkillName,0,item_PhotonblastEnhancement_2,幻精共鳴 Lv.2
 ItemSkillName,0,item_PhotonblastEnhancement_3,幻精共鳴 Lv.3
@@ -11675,11 +11675,11 @@ ItemSkillName,1,item_ElementalStanceUp2_2,Clever Strategic Stance Lv.2
 ItemSkillName,1,item_ElementalStanceUp2_3,Clever Strategic Stance Lv.3
 ItemSkillName,1,item_ElementalStanceUp2_4,Clever Strategic Stance Lv.4
 ItemSkillName,1,item_ElementalStanceUp2_5,Clever Strategic Stance Lv.5
-ItemSkillName,1,item_ElementalStanceUp3_1,Lv.1
-ItemSkillName,1,item_ElementalStanceUp3_2,Lv.2
-ItemSkillName,1,item_ElementalStanceUp3_3,Lv.3
-ItemSkillName,1,item_ElementalStanceUp3_4,Lv.4
-ItemSkillName,1,item_ElementalStanceUp3_5,Lv.5
+ItemSkillName,1,item_ElementalStanceUp3_1, Lv.1
+ItemSkillName,1,item_ElementalStanceUp3_2, Lv.2
+ItemSkillName,1,item_ElementalStanceUp3_3, Lv.3
+ItemSkillName,1,item_ElementalStanceUp3_4, Lv.4
+ItemSkillName,1,item_ElementalStanceUp3_5, Lv.5
 ItemSkillName,1,item_PhotonblastEnhancement_1,Phantom Resonance Lv.1
 ItemSkillName,1,item_PhotonblastEnhancement_2,Phantom Resonance Lv.2
 ItemSkillName,1,item_PhotonblastEnhancement_3,Phantom Resonance Lv.3
@@ -14025,42 +14025,42 @@ ItemSkillName,1,item_AllPowerUp4_Su_2,Liberated Psalm Redux Lv.2
 ItemSkillName,1,item_AllPowerUp4_Su_3,Liberated Psalm Redux Lv.3
 ItemSkillName,1,item_AllPowerUp4_Su_4,Liberated Psalm Redux Lv.4
 ItemSkillName,1,item_AllPowerUp4_Su_5,Liberated Psalm Redux Lv.5
-ItemSkillName,1,pet_WeatherDamageUpFine,Sunny
-ItemSkillName,1,pet_WeatherDamageUpFinePlus,Very Sunny
-ItemSkillName,1,pet_PPOverDrive3,Industrious
-ItemSkillName,1,pet_PPOverDrive3Plus,Very Industrious
-ItemSkillName,1,pet_AbnormalAdvance,Smart Cookie
-ItemSkillName,1,pet_AbnormalAdvancePlus,Super Smart Cookie
-ItemSkillName,1,pet_AttackPPRestraint,Expeditious
-ItemSkillName,1,pet_AttackPPRestraintPlus,Very Expeditious
-ItemSkillName,1,pet_SuperIronWill,Resolved
-ItemSkillName,1,pet_SuperIronWillPlus,Firmly Resolved
-ItemSkillName,1,pet_PetChangeHealBonus,Kind
-ItemSkillName,1,pet_PetChangeHealBonusPlus,Very Kind
-ItemSkillName,1,pet_ReactiveHealing,Indefatigable
-ItemSkillName,1,pet_ReactiveHealingPlus,Very Indefatigable
-ItemSkillName,1,pet_DeadlineSlayer,Underdog
-ItemSkillName,1,pet_DeadlineSlayerPlus,Total Underdog
-ItemSkillName,1,pet_AttackHateUp,Show-Off
-ItemSkillName,1,pet_AttackHateUpPlus,Total Show-Off
-ItemSkillName,1,pet_SubPetRecoverUp,Soothing
-ItemSkillName,1,pet_SubPetRecoverUpPlus,Very Soothing
-ItemSkillName,1,pet_EarlyBird,Total Early Bird
-ItemSkillName,1,pet_PiyoriChangeDamageUp,Thoughtful
-ItemSkillName,1,pet_PiyoriChangeDamageUpPlus,Very Thoughtful
-ItemSkillName,1,pet_PiyoriChangePPSave,Sly
-ItemSkillName,1,pet_PiyoriChangePPSavePlus,Extra Sly
-ItemSkillName,1,pet_KillCountBonus,Rambunctious
-ItemSkillName,1,pet_KillCountBonusPlus,Very Rambunctious
-ItemSkillName,1,pet_AroundEnemyBonus,Belligerent
-ItemSkillName,1,pet_AroundEnemyBonusPlus,Very Belligerent
-ItemSkillName,1,pet_MultiPersonality1,Powerful
-ItemSkillName,1,pet_MultiPersonality2,Elite
-ItemSkillName,1,pet_MultiPersonality3,Pop Star
-ItemSkillName,1,pet_MultiPersonality4,Cute
-ItemSkillName,1,pet_MultiPersonality5,Elegant
-ItemSkillName,1,pet_MultiPersonality6,Gentle
-ItemSkillName,1,pet_MultiPersonality7,Rock Star
+ItemSkillName,1,pet_WeatherDamageUpFine,Sunny 
+ItemSkillName,1,pet_WeatherDamageUpFinePlus,Very Sunny 
+ItemSkillName,1,pet_PPOverDrive3,Industrious 
+ItemSkillName,1,pet_PPOverDrive3Plus,Very Industrious 
+ItemSkillName,1,pet_AbnormalAdvance,Smart Cookie 
+ItemSkillName,1,pet_AbnormalAdvancePlus,Super Smart Cookie 
+ItemSkillName,1,pet_AttackPPRestraint,Expeditious 
+ItemSkillName,1,pet_AttackPPRestraintPlus,Very Expeditious 
+ItemSkillName,1,pet_SuperIronWill,Resolved 
+ItemSkillName,1,pet_SuperIronWillPlus,Firmly Resolved 
+ItemSkillName,1,pet_PetChangeHealBonus,Kind 
+ItemSkillName,1,pet_PetChangeHealBonusPlus,Very Kind 
+ItemSkillName,1,pet_ReactiveHealing,Indefatigable 
+ItemSkillName,1,pet_ReactiveHealingPlus,Very Indefatigable 
+ItemSkillName,1,pet_DeadlineSlayer,Underdog 
+ItemSkillName,1,pet_DeadlineSlayerPlus,Total Underdog 
+ItemSkillName,1,pet_AttackHateUp,Show-Off 
+ItemSkillName,1,pet_AttackHateUpPlus,Total Show-Off 
+ItemSkillName,1,pet_SubPetRecoverUp,Soothing 
+ItemSkillName,1,pet_SubPetRecoverUpPlus,Very Soothing 
+ItemSkillName,1,pet_EarlyBird,Total Early Bird 
+ItemSkillName,1,pet_PiyoriChangeDamageUp,Thoughtful 
+ItemSkillName,1,pet_PiyoriChangeDamageUpPlus,Very Thoughtful 
+ItemSkillName,1,pet_PiyoriChangePPSave,Sly 
+ItemSkillName,1,pet_PiyoriChangePPSavePlus,Extra Sly 
+ItemSkillName,1,pet_KillCountBonus,Rambunctious 
+ItemSkillName,1,pet_KillCountBonusPlus,Very Rambunctious 
+ItemSkillName,1,pet_AroundEnemyBonus,Belligerent 
+ItemSkillName,1,pet_AroundEnemyBonusPlus,Very Belligerent 
+ItemSkillName,1,pet_MultiPersonality1,Powerful 
+ItemSkillName,1,pet_MultiPersonality2,Elite 
+ItemSkillName,1,pet_MultiPersonality3,Pop Star 
+ItemSkillName,1,pet_MultiPersonality4,Cute 
+ItemSkillName,1,pet_MultiPersonality5,Elegant 
+ItemSkillName,1,pet_MultiPersonality6,Gentle 
+ItemSkillName,1,pet_MultiPersonality7,Rock Star 
 ItemSkillName,1,pet_MultiPersonality8,Genius
 ItemSkillName,1,pet_MultiPersonality9,Aggressive
 ItemSkillHelp,0,item_RebootAttackUp_1,威力＋18%
@@ -15966,11 +15966,11 @@ ItemSkillHelp,0,item_AutoRegenerateKatori_2,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_3,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_4,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_5,自動でHPが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_1,5秒毎に<br>最大ＨＰの5%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_2,5秒毎に<br>最大ＨＰの7%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_3,5秒毎に<br>最大ＨＰの10%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_4,5秒毎に<br>最大ＨＰの12%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_5,5秒毎に<br>最大ＨＰの15%分<br>自動でＨＰが回復する。
+ItemSkillHelp,0,item_AutoRegenerateMoa_1,5秒毎に<br>最大ＨＰの5%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_2,5秒毎に<br>最大ＨＰの7%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_3,5秒毎に<br>最大ＨＰの10%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_4,5秒毎に<br>最大ＨＰの12%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_5,5秒毎に<br>最大ＨＰの15%分<br>自動でＨＰが回復する。 
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_1,攻撃時のPP回復量が<br>40%上昇する。
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_2,攻撃時のPP回復量が<br>60%上昇する。
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_3,攻撃時のPP回復量が<br>80%上昇する。
@@ -20048,11 +20048,11 @@ ItemSkillHelp,1,item_AutoRegenerateKatori_2,HP automatically recovers.
 ItemSkillHelp,1,item_AutoRegenerateKatori_3,HP automatically recovers.
 ItemSkillHelp,1,item_AutoRegenerateKatori_4,HP automatically recovers.
 ItemSkillHelp,1,item_AutoRegenerateKatori_5,HP automatically recovers.
-ItemSkillHelp,1,item_AutoRegenerateMoa_1,Automatically recover 5%<br>of Max HP every<br>5 seconds.
-ItemSkillHelp,1,item_AutoRegenerateMoa_2,Automatically recover 7%<br>of Max HP every<br>5 seconds.
-ItemSkillHelp,1,item_AutoRegenerateMoa_3,Automatically recover 10%<br>of Max HP every<br>5 seconds.
-ItemSkillHelp,1,item_AutoRegenerateMoa_4,Automatically recover 12%<br>of Max HP every<br>5 seconds.
-ItemSkillHelp,1,item_AutoRegenerateMoa_5,Automatically recover 15%<br>of Max HP every<br>5 seconds.
+ItemSkillHelp,1,item_AutoRegenerateMoa_1,Automatically recover 5%<br>of Max HP every<br>5 seconds. 
+ItemSkillHelp,1,item_AutoRegenerateMoa_2,Automatically recover 7%<br>of Max HP every<br>5 seconds. 
+ItemSkillHelp,1,item_AutoRegenerateMoa_3,Automatically recover 10%<br>of Max HP every<br>5 seconds. 
+ItemSkillHelp,1,item_AutoRegenerateMoa_4,Automatically recover 12%<br>of Max HP every<br>5 seconds. 
+ItemSkillHelp,1,item_AutoRegenerateMoa_5,Automatically recover 15%<br>of Max HP every<br>5 seconds. 
 ItemSkillHelp,1,item_GunnerAttackPPRestraint2_1,PP Recovery while<br>attacking increases 40%.
 ItemSkillHelp,1,item_GunnerAttackPPRestraint2_2,PP Recovery while<br>attacking increases 60%.
 ItemSkillHelp,1,item_GunnerAttackPPRestraint2_3,PP Recovery while<br>attacking increases 80%.
@@ -20519,10 +20519,10 @@ ItemSkillHelp,1,item_FullHealBonus2_3,When HP is 70%+ and PP is 40%+:<br>Potency
 ItemSkillHelp,1,item_FullHealBonus2_4,When HP is 70%+ and PP is 40%+:<br>Potency increases 20%
 ItemSkillHelp,1,item_FullHealBonus2_5,When HP is 70%+ and PP is 40%+:<br>Potency increases 22%
 ItemSkillHelp,1,item_FullHealBonus3_1,"30% ATK PP recovery, 15% ATK<br>PP auto recovery, and 10%<br>potency increase."
-ItemSkillHelp,1,item_FullHealBonus3_2,"35% ATK PP recovery, 17% ATK<br>PP auto recovery, and 12%<br>potency increase."
-ItemSkillHelp,1,item_FullHealBonus3_3,"40% ATK PP recovery, 20% ATK<br>PP auto recovery, and 15%<br>potency increase."
-ItemSkillHelp,1,item_FullHealBonus3_4,"45% ATK PP recovery, 22% ATK<br>PP auto recovery, and 17%<br>potency increase."
-ItemSkillHelp,1,item_FullHealBonus3_5,"50% ATK PP recovery, 25% ATK<br>PP auto recovery, and 20%<br>potency increase."
+ItemSkillHelp,1,item_FullHealBonus3_2,"35% ATK PP recovery, 17% ATK<br>PP auto recovery, and 12%<br>potency increase. "
+ItemSkillHelp,1,item_FullHealBonus3_3,"40% ATK PP recovery, 20% ATK<br>PP auto recovery, and 15%<br>potency increase. "
+ItemSkillHelp,1,item_FullHealBonus3_4,"45% ATK PP recovery, 22% ATK<br>PP auto recovery, and 17%<br>potency increase. "
+ItemSkillHelp,1,item_FullHealBonus3_5,"50% ATK PP recovery, 25% ATK<br>PP auto recovery, and 20%<br>potency increase. "
 ItemSkillHelp,1,item_MultiPADamegeUp1_1,Increases potency for<br>Overhand Straight and<br>Heartless Impact.
 ItemSkillHelp,1,item_MultiPADamegeUp1_2,Increases potency for<br>Overhand Straight and<br>Heartless Impact.
 ItemSkillHelp,1,item_MultiPADamegeUp1_3,Increases potency for<br>Overhand Straight and<br>Heartless Impact.
@@ -20673,11 +20673,11 @@ ItemSkillHelp,1,item_AbnomalBonus6_2,Increases occurrence of Panic.<br>Increases
 ItemSkillHelp,1,item_AbnomalBonus6_3,Increases occurrence of Panic.<br>Increases damage dealt to<br>Panic-inflicted enemy by 27%.
 ItemSkillHelp,1,item_AbnomalBonus6_4,Increases occurrence of Panic.<br>Increases damage dealt to<br>Panic-inflicted enemy by 27%.
 ItemSkillHelp,1,item_AbnomalBonus6_5,Increases occurrence of Panic.<br>Increases damage dealt to<br>Panic-inflicted enemy by 27%.
-ItemSkillHelp,1,item_AbnomalBonus7_1,Increases chance of inflicting<br>status ailments and 18% damage<br>dealt to enemies inflicted.
-ItemSkillHelp,1,item_AbnomalBonus7_2,Increases chance of inflicting<br>status ailments and 20% damage<br>dealt to enemies inflicted.
-ItemSkillHelp,1,item_AbnomalBonus7_3,Increases chance of inflicting<br>status ailments and 24% damage<br>dealt to enemies inflicted.
-ItemSkillHelp,1,item_AbnomalBonus7_4,Increases chance of inflicting<br>status ailments and 28% damage<br>dealt to enemies inflicted.
-ItemSkillHelp,1,item_AbnomalBonus7_5,Increases chance of inflicting<br>status ailments and 32% damage<br>dealt to enemies inflicted.
+ItemSkillHelp,1,item_AbnomalBonus7_1,Increases chance of inflicting<br>status ailments and 18% damage<br>dealt to enemies inflicted. 
+ItemSkillHelp,1,item_AbnomalBonus7_2,Increases chance of inflicting<br>status ailments and 20% damage<br>dealt to enemies inflicted. 
+ItemSkillHelp,1,item_AbnomalBonus7_3,Increases chance of inflicting<br>status ailments and 24% damage<br>dealt to enemies inflicted. 
+ItemSkillHelp,1,item_AbnomalBonus7_4,Increases chance of inflicting<br>status ailments and 28% damage<br>dealt to enemies inflicted. 
+ItemSkillHelp,1,item_AbnomalBonus7_5,Increases chance of inflicting<br>status ailments and 32% damage<br>dealt to enemies inflicted. 
 ItemSkillHelp,1,item_StandingAttackBonus_1,Increases damage dealt by 18%<br>when attacking from stationary<br>position.
 ItemSkillHelp,1,item_StandingAttackBonus_2,Increases damage dealt by 20%<br>when attacking from stationary<br>position.
 ItemSkillHelp,1,item_StandingAttackBonus_3,Increases damage dealt by 22%<br>when attacking from stationary<br>position.
@@ -21228,11 +21228,11 @@ ItemSkillHelp,1,item_DamageEscape_2,"Increases potency by 12%.<br>After dodging 
 ItemSkillHelp,1,item_DamageEscape_3,"Increases potency by 14%.<br>After dodging an attack as a Hero,<br>blades are unleashed in the area."
 ItemSkillHelp,1,item_DamageEscape_4,"Increases potency by 16%.<br>After dodging an attack as a Hero,<br>blades are unleashed in the area."
 ItemSkillHelp,1,item_DamageEscape_5,"Increases potency by 18%.<br>After dodging an attack as a Hero,<br>blades are unleashed in the area."
-ItemSkillHelp,1,item_JustGuardCountUp_1,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage.
-ItemSkillHelp,1,item_JustGuardCountUp_2,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage.
-ItemSkillHelp,1,item_JustGuardCountUp_3,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage.
-ItemSkillHelp,1,item_JustGuardCountUp_4,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage.
-ItemSkillHelp,1,item_JustGuardCountUp_5,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage.
+ItemSkillHelp,1,item_JustGuardCountUp_1,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage. 
+ItemSkillHelp,1,item_JustGuardCountUp_2,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage. 
+ItemSkillHelp,1,item_JustGuardCountUp_3,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage. 
+ItemSkillHelp,1,item_JustGuardCountUp_4,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage. 
+ItemSkillHelp,1,item_JustGuardCountUp_5,Potency & PP recovery increase<br>for each Perf. Guard. Canceled<br>by taking unguarded damage. 
 ItemSkillHelp,1,item_BrastGaugeDamageUp3_1,"Power fluctuates <br>according to the <br>Photon Blast Gauge. <br>The lower it is, the <br>more potency increases."
 ItemSkillHelp,1,item_BrastGaugeDamageUp3_2,"Power fluctuates <br>according to the <br>Photon Blast Gauge. <br>The lower it is, the <br>more potency increases."
 ItemSkillHelp,1,item_BrastGaugeDamageUp3_3,"Power fluctuates <br>according to the <br>Photon Blast Gauge. <br>The lower it is, the <br>more potency increases."
@@ -21433,11 +21433,11 @@ ItemSkillHelp,1,item_PolluteGaugeUp4_2,"Increases boost rate for the Dark<br>Bla
 ItemSkillHelp,1,item_PolluteGaugeUp4_3,"Increases boost rate for the Dark<br>Blast Gauge, and Apprentice<br>transformation time."
 ItemSkillHelp,1,item_PolluteGaugeUp4_4,"Increases boost rate for the Dark<br>Blast Gauge, and Apprentice<br>transformation time."
 ItemSkillHelp,1,item_PolluteGaugeUp4_5,"Increases boost rate for the Dark<br>Blast Gauge, and Apprentice<br>transformation time."
-ItemSkillHelp,1,item_ChargeAdvance_1,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up."
-ItemSkillHelp,1,item_ChargeAdvance_2,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up."
-ItemSkillHelp,1,item_ChargeAdvance_3,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up."
-ItemSkillHelp,1,item_ChargeAdvance_4,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up."
-ItemSkillHelp,1,item_ChargeAdvance_5,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up."
+ItemSkillHelp,1,item_ChargeAdvance_1,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up. "
+ItemSkillHelp,1,item_ChargeAdvance_2,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up. "
+ItemSkillHelp,1,item_ChargeAdvance_3,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up. "
+ItemSkillHelp,1,item_ChargeAdvance_4,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up. "
+ItemSkillHelp,1,item_ChargeAdvance_5,"6% potency increase and<br>additionally for a limited time<br>while seapon is sheathed.<br>When attacking, effect will<br>vanish once time is up. "
 ItemSkillHelp,1,item_Cursefire_1,Increases potency by 6%.<br>Enhances Combat Finisher and<br>Normal Attack performance<br>according to the number of<br>Normal Attacks landed.
 ItemSkillHelp,1,item_Cursefire_2,Increases potency by 7%.<br>Enhances Combat Finisher and<br>Normal Attack performance<br>according to the number of<br>Normal Attacks landed.
 ItemSkillHelp,1,item_Cursefire_3,Increases potency by 8%.<br>Enhances Combat Finisher and<br>Normal Attack performance<br>according to the number of<br>Normal Attacks landed.
@@ -22207,7 +22207,7 @@ ItemSkillHelp,1,pet_DeadlineSlayerPlus,Item drop rate rises. DMG <br>dealt rises
 ItemSkillHelp,1,pet_AttackHateUp,"Enemy attacks hit the pet <br>more easily, but the damage <br>taken is reduced."
 ItemSkillHelp,1,pet_AttackHateUpPlus,"Item drop rate rises. Enemy <br>ATKs hit the pet more easily, <br>but the DMG taken drops."
 ItemSkillHelp,1,pet_SubPetRecoverUp,HP recovery speeds up for<br>pets in reserve.
-ItemSkillHelp,1,pet_SubPetRecoverUpPlus,Item drop rate increases.<br>The HP recovery speeds <br>up for pets in reserve.
+ItemSkillHelp,1,pet_SubPetRecoverUpPlus,Item drop rate increases.<br>The HP recovery speeds <br>up for pets in reserve. 
 ItemSkillHelp,1,pet_EarlyBird,Item drop rate rises. The <br>duration for a pet to revive <br>after fainting is shortened.
 ItemSkillHelp,1,pet_PiyoriChangeDamageUp,Potency increases when sent<br>out after a pet that fainted.
 ItemSkillHelp,1,pet_PiyoriChangeDamageUpPlus,Item drop rate rises.<br>Potency rises when sent <br>out after a pet that fainted.
@@ -24323,7 +24323,7 @@ SkillRingSkillName,1,ring_WpnKnuckle01,Knuckles Pursuit
 SkillRingSkillName,1,ring_WpnTMachineGun01,Forward Stylish Roll
 SkillRingSkillName,1,ring_WpnKatana01,Katana Focus Guard Release
 SkillRingSkillName,1,ring_WpnDBlade01,Soaring Blades Tackle
-SkillRingSkillName,1,ring_TechChargeGuard,Technique Charge Parry
+SkillRingSkillName,1,ring_TechChargeGuard,Technique Charge Parry 
 SkillRingSkillName,1,ring_RecastRateRebirtherField,Reverser Field Recast
 SkillRingSkillName,1,ring_GearBoostPlus,Hunter Focus Preservation
 SkillRingSkillName,1,ring_HighTimePlus,Time After Time Preserve
@@ -25109,11 +25109,11 @@ LaboElementCompose,1,ConfirmationAbilityDisappearMessage,"An Equipment Augment h
 LaboElementSupplement,0,Explanation1,特殊能力を付与したい武器、または防具を選んでください。
 LaboElementSupplement,0,Explanation2,特殊能力カプセルを選んでください。選んだ特殊能力カプセルは、<scarlet>付与後に消滅<c>します。
 LaboElementSupplement,0,Explanation3,付与したい特殊能力を選んでください。選ばれなかったカプセルの効果は、カプセルが消費することはありません。
-LaboElementSupplement,0,Explanation4,特殊能力カプセルの付与の最終確認です。内容をよく確認して、問題なければ「はい」を選んでください。
+LaboElementSupplement,0,Explanation4,特殊能力カプセルの付与の最終確認です。内容をよく確認して、問題なければ「はい」を選んでください。 
 LaboElementSupplement,1,Explanation1,Select the weapon or armor to which you would like to add an Augment.
 LaboElementSupplement,1,Explanation2,Select an Augment capsule. The selected capsule <scarlet>will be consumed.<c>
 LaboElementSupplement,1,Explanation3,Select an Augment to add. Unselected capsule effects will not cause the capsule to be consumed.
-LaboElementSupplement,1,Explanation4,Confirm your Augment capsule selections carefully and press [Yes] when ready.
+LaboElementSupplement,1,Explanation4,Confirm your Augment capsule selections carefully and press [Yes] when ready. 
 LaboLimitBreak,0,Title,限界突破アイテム選択
 LaboLimitBreak,0,Explanation1,限界突破したい武器、または防具を選んでください。<c f0df60>共通強化上限値に達していると選択できません。<c>
 LaboLimitBreak,0,Explanation2,限界突破の最終確認です。内容をよく確認して、問題なければ「はい」を選んでください。

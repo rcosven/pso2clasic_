@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName,ハントラリー
 common,0,TrialBeginMsg,制限時間内に多くの<pict bounty_target>ハント目標を達成せよ！
 common,0,TrialAbstract,達成ごとに更新される<pict bounty_target>ハント目標を<br>制限時間内に多く達成する
@@ -22,20 +22,20 @@ common,0,Bounty_Kabu,遺跡カブの収集
 common,0,Bounty_Kiichigo,遺跡キイチゴの収集
 common,0,Bounty_Ninjin,遺跡ニンジンの収集
 common,0,Bounty_Notify,<yellow>目標を達成するたびに探索ポイント獲得！<c>
-common,1,TrialName,Rally de caza
-common,1,TrialBeginMsg,¡Consigue tantos<pict bounty_target>objetivos de caza como puedas dentro del límite de tiempo!
-common,1,TrialAbstract,Obtenga tantos objetivos de caza<pict bounty_target>(actualiza<br>cuando termine) como sea posible dentro del límite de tiempo
-common,1,BountyFinishToast,Objetivo de caza<yellow>$(0)<c>borrado
-common,1,BountyFinishToastPoint,Puntos de exploración obtenidos: 1000
-common,1,Bounty_HighRank,Suprimir Megalotix
-common,1,Bounty_God,Suprimir MUÑECAS
-common,1,Bounty_Alter,Suprimir ALTERACIONES
-common,1,Bounty_Starless,Suprimir sin estrellas
-common,1,Bounty_Kinoko,Recoge hongos de las ruinas
-common,1,Bounty_Kabu,Recoger nabos de ruinas
-common,1,Bounty_Kiichigo,Recoge fresas de las ruinas
-common,1,Bounty_Ninjin,Recoge zanahorias de las ruinas
-common,1,Bounty_Notify,<yellow> ¡Gana puntos de exploración cada vez que completes una meta! <c>
+common,1,TrialName,Hunt Rally
+common,1,TrialBeginMsg,Get as many <pict bounty_target> hunt targets as possible within the time limit!
+common,1,TrialAbstract,Get as many hunt targets <pict bounty_target> (refreshes<br>when done) as possible within the time limit
+common,1,BountyFinishToast,Hunt target <yellow>$(0)<c> cleared
+common,1,BountyFinishToastPoint,"Exploration Points Earned: 1,000"
+common,1,Bounty_HighRank,Suppress Megalotix
+common,1,Bounty_God,Suppress DOLLS
+common,1,Bounty_Alter,Suppress ALTERS
+common,1,Bounty_Starless,Suppress Starless
+common,1,Bounty_Kinoko,Collect Ruins Mushrooms
+common,1,Bounty_Kabu,Collect Ruins Turnips
+common,1,Bounty_Kiichigo,Collect Ruins Strawberries
+common,1,Bounty_Ninjin,Collect Ruins Carrots
+common,1,Bounty_Notify,<yellow>Earn Exploration Points each time you complete a goal!<c>
 type103,0,NpcComOnBegin,/voice11_voice_navi002_trial_0001_015 調査要請です。指定されたエネミーの討伐や<br>オブジェクトの収集に、協力をお願いします。
 type103,0,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_068 ご協力ありがとうございました。<br>引き続き調査をお願いします。
 type103,0,NpcComOnFailure,＊＊（失敗）

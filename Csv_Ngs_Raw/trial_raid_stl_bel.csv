@@ -1,6 +1,7 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName,$(0)討伐
 common,0,TrialBeginMsg,出現した$(0)を倒せ！
-TrialAbstract -,1,TrialName,$(0) suppressed
-TrialAbstract -,1,TrialBeginMsg,Defeat $(0)!
-TrialAbstract -,1,TrialAbstract,$(0) defeated
+common,0,TrialAbstract,
+common,1,TrialName,$(0) suppressed
+common,1,TrialBeginMsg,Defeat $(0)!
+common,1,TrialAbstract,$(0) defeated

@@ -1,22 +1,22 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName_1Object,ターゲット破壊
 common,0,TrialBeginMsg_1Object,出現したターゲットを破壊せよ！
 common,0,TrialAbstract_1Object,ターゲットを破壊する
 common,0,TrialName_Multi,ターゲット破壊
 common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
 common,0,TrialAbstract_Multi,ターゲットを破壊する
-common,1,TrialName_1Object,Destruye los objetivos
-common,1,TrialBeginMsg_1Object,¡Destruye los objetivos que aparecen!
-common,1,TrialAbstract_1Object,Destruye los objetivos
-common,1,TrialName_Multi,Destruye los objetivos
-common,1,TrialBeginMsg_Multi,¡Derrota a los enemigos que aparecen!
-common,1,TrialAbstract_Multi,Destruye los objetivos
-type102,0,NpcComOnBegin,ターゲットがセントラルシティ内に出現！<br>40個、壊してください！
+common,1,TrialName_1Object,Destroy the Targets
+common,1,TrialBeginMsg_1Object,Destroy the targets that appear!
+common,1,TrialAbstract_1Object,Destroy the targets
+common,1,TrialName_Multi,Destroy the Targets
+common,1,TrialBeginMsg_Multi,Defeat the enemies that appear!
+common,1,TrialAbstract_Multi,Destroy the targets
+type102,0,NpcComOnBegin,ターゲットがセントラルシティ内に出現！<br>40個、壊してください！ 
 type102,0,NpcComOnBeginWave2,/voice11_voice_navi001_trial_0001_027 新たにターゲットが大量発生！<br>300個、破壊してください！
 type102,0,NpcComOnBeginWave3,/voice11_voice_navi001_trial_0001_043 その調子です！<br>まだまだ、ターゲットが出現しますよ！
 type102,0,NpcComOnBeginLastWave,/voice11_voice_navi001_trial_0001_046 もう一息です！<br>大きなターゲットは、何度か攻撃を加えると破壊できますよ！
 type102,0,NpcComOnSuccess,＊＊成功
-type102,0,NpcComOnFailure,＊＊失敗
+type102,0,NpcComOnFailure,＊＊
 type102,1,NpcComOnBegin,Targets have appeared within Central City!<br>Destroy 40 of them!
 type102,1,NpcComOnBeginWave2,/voice11_voice_navi001_trial_0001_027 A large number of new targets have appeared!<br>Destroy 300 of them!
 type102,1,NpcComOnBeginWave3,"/voice11_voice_navi001_trial_0001_043 That's the spirit! Keep it up,<br>more targets are appearing!"

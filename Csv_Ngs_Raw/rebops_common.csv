@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 RepeatRequirements,0,NoLimit,制限無し
 RepeatRequirements,0,LimitedByAccount,アカウント$(0)回限り
 RepeatRequirements,0,LimitedByCharacter,キャラクター$(0)回限り
@@ -68,6 +68,6 @@ NotifyMessages,1,accomplished_task,"Task ""$(0)"" has been achieved."
 NotifyMessages,1,accepted_task_error,"Could not accept task ""$(0)""."
 NotifyMessages,1,quest_focus_task_cannot,Task info cannot be toggled while on a quest.
 NotifyMessages,1,task_unknown_error,An unknown error occurred.
-NotifyMessages,1,task_order_expired,Cannot be proceeded since the Task has expired.
+NotifyMessages,1,task_order_expired,Cannot be proceeded since the Task has expired. 
 NotifyMessages,1,task_order_restrictions_error,Cannot accept. You have reached your acceptance limit.
 NotifyMessages,1,task_order_unfulfilled,You still have incomplete limited-time tasks.

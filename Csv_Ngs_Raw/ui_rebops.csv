@@ -1,8 +1,8 @@
-section,group,id,text
+﻿section,group,id,text
 Common,0,Accomplished,達成済
 Common,0,InProgress,攻略中
-Common,1,Accomplished,Terminado
-Common,1,InProgress,En curso
+Common,1,Accomplished,Completed
+Common,1,InProgress,In Progress
 MainMenu,0,CATEGORY_STORY,メイン
 MainMenu,0,CATEGORY_SUB_STORY,サイド
 MainMenu,0,CATEGORY_DAILY,デイリー
@@ -54,57 +54,57 @@ MainMenu,0,Limited_Category_etr,ストーリー／その他
 MainMenu,0,Limited_Category_CreativeSpace,クリエイティブスペース
 MainMenu,0,Limited_Category_LevelUp,装備／育成
 MainMenu,0,Limited_Category_Contents,コンテンツ
-MainMenu,1,CATEGORY_STORY,Principal
-MainMenu,1,CATEGORY_SUB_STORY,Lado
-MainMenu,1,CATEGORY_DAILY,A diario
-MainMenu,1,CATEGORY_WEEKLY,Semanalmente
-MainMenu,1,CATEGORY_LIMITED,Por tiempo limitado
-MainMenu,1,SORT_NORMAL,Clasificación predeterminada
-MainMenu,1,SORT_ASC_DATE,Ascendente por fecha
-MainMenu,1,SORT_DESC_DATE,Descendente por fecha
-MainMenu,1,SORT_DESC_NOT_ACCEPT,Priorizar tareas no aceptadas
-MainMenu,1,BUTTON_BACK,Atrás
-MainMenu,1,NOT_FOUND_ANY_TASKS,No hay tareas en curso.
-MainMenu,1,NOT_FOUND_ANY_TASKS_MAIN,No hay tareas en curso.
-MainMenu,1,NOT_FOUND_ANY_TASKS_2,No hay tareas completadas.
-MainMenu,1,NOT_FOUND_ANY_TASKS_3,No hay tareas disponibles.
-MainMenu,1,PLEASE_WAIT,Espere por favor
-MainMenu,1,FOCUS_TASK,Centrarse en la tarea
-MainMenu,1,UNFOCUS_TASK,No mostrar información de la tarea
-MainMenu,1,CHECK_TASK_DETAILS,Ver detalles de la tarea
-MainMenu,1,ACCEPT_TASK,Aceptar tarea
-MainMenu,1,CONFIRM_ACCEPT_TASK_TITLE,Aceptar tareas
-MainMenu,1,CONFIRM_ACCEPT_TASK_MESSAGE,¿Aceptar $(0)?
-MainMenu,1,DISCARD_TASK,Abandonar tarea
-MainMenu,1,CONFIRM_DISCARD_TASK_TITLE,Abandonar tareas
-MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE,¿Abandonar $(0)?<br><br><yellow>Se restablecerá el progreso de la tarea. <c>
-MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE_LOOP,¿Abandonar $(0)?<br><br><yellow>Las tareas de bucle abandonadas comenzarán desde la<br>primera tarea. <c>
-MainMenu,1,WINDOW_TITLETELOP,Tareas
-MainMenu,1,WINDOW_CONTROLGUIDE,<%Decide>: Confirmar <%Cancel>: Cancelar <%NextWidget>: Mover cursor
-MainMenu,1,FULLSIZE_FORM_TITLE,Tareas
-MainMenu,1,RemainingDays,$(0) día(s) restantes
-MainMenu,1,RemainingHour,<yellow> $(0) hora(s) restantes <c>
-MainMenu,1,RemainingMinutes,<yellow> $(0) minutos restantes <c>
-MainMenu,1,Task_Requester,Cliente
+MainMenu,1,CATEGORY_STORY,Main
+MainMenu,1,CATEGORY_SUB_STORY,Side
+MainMenu,1,CATEGORY_DAILY,Daily
+MainMenu,1,CATEGORY_WEEKLY,Weekly
+MainMenu,1,CATEGORY_LIMITED,Limited-Time
+MainMenu,1,SORT_NORMAL,Default Sorting
+MainMenu,1,SORT_ASC_DATE,Ascending by Date
+MainMenu,1,SORT_DESC_DATE,Descending by Date
+MainMenu,1,SORT_DESC_NOT_ACCEPT,Prioritize Unaccepted Tasks
+MainMenu,1,BUTTON_BACK,Back
+MainMenu,1,NOT_FOUND_ANY_TASKS,There are no tasks underway.
+MainMenu,1,NOT_FOUND_ANY_TASKS_MAIN,There are no tasks underway.
+MainMenu,1,NOT_FOUND_ANY_TASKS_2,There are no completed tasks.
+MainMenu,1,NOT_FOUND_ANY_TASKS_3,There are no tasks available.
+MainMenu,1,PLEASE_WAIT,Please Wait
+MainMenu,1,FOCUS_TASK,Focus on Task
+MainMenu,1,UNFOCUS_TASK,Do Not Display Task Information
+MainMenu,1,CHECK_TASK_DETAILS,View Task Details
+MainMenu,1,ACCEPT_TASK,Accept Task
+MainMenu,1,CONFIRM_ACCEPT_TASK_TITLE,Accept Tasks
+MainMenu,1,CONFIRM_ACCEPT_TASK_MESSAGE,Accept $(0)?
+MainMenu,1,DISCARD_TASK,Abandon Task
+MainMenu,1,CONFIRM_DISCARD_TASK_TITLE,Abandon Tasks
+MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE,Abandon $(0)?<br><br><yellow>Task progress will be reset.<c>
+MainMenu,1,CONFIRM_DISCARD_TASK_MESSAGE_LOOP,Abandon $(0)?<br><br><yellow>Abandoned Looping Tasks will start from the<br>first task.<c>
+MainMenu,1,WINDOW_TITLETELOP,Tasks
+MainMenu,1,WINDOW_CONTROLGUIDE,<%Decide>: Confirm  <%Cancel>: Cancel  <%NextWidget>: Move Cursor
+MainMenu,1,FULLSIZE_FORM_TITLE,Tasks
+MainMenu,1,RemainingDays,$(0) day(s) remaining
+MainMenu,1,RemainingHour,<yellow>$(0) hour(s) remaining<c>
+MainMenu,1,RemainingMinutes,<yellow>$(0) minute(s) remaining<c>
+MainMenu,1,Task_Requester,Client
 MainMenu,1,Task_Requester_None,-
-MainMenu,1,Task_List_Tilte,Lista de tareas
-MainMenu,1,Accept_Task_Limit,$(0) más aceptable ($(1)/$(2))
-MainMenu,1,Task_Chapter_Num,Cap. $(0)
-MainMenu,1,Task_help,Mostrar ayuda
-MainMenu,1,Task_TwolineGuide_1,"Puede confirmar las tareas aceptadas. Puede mostrar la información de cada tarea, la configuración de visualización, el menú de ayuda, etc."
-MainMenu,1,Task_TwolineGuide_2,"Puede confirmar las tareas aceptables. Puede mostrar la información de cada tarea, la configuración de visualización, el menú de ayuda, etc."
-MainMenu,1,LoopTask_Count,Rondas
-MainMenu,1,Reward_Tier,NIVEL
-MainMenu,1,Reward_SeasonalPoint,ESTACIÓN
-MainMenu,1,Reward_GenesisPoint,médico de cabecera
-MainMenu,1,CATEGORY_RECOMMEND,Recomendado
-MainMenu,1,Limited_Category_Campaign,Campaña
-MainMenu,1,Limited_Category_PSO2,Solo día PSO2
-MainMenu,1,Limited_Category_Season,Eventos de temporada
-MainMenu,1,Limited_Category_etr,Historia/Otro
-MainMenu,1,Limited_Category_CreativeSpace,Espacio Creativo
-MainMenu,1,Limited_Category_LevelUp,Equipo/Desarrollo
-MainMenu,1,Limited_Category_Contents,Contenido
+MainMenu,1,Task_List_Tilte,Task List
+MainMenu,1,Accept_Task_Limit,$(0) more acceptable ($(1)/$(2))
+MainMenu,1,Task_Chapter_Num,Ch. $(0)
+MainMenu,1,Task_help,Show Help
+MainMenu,1,Task_TwolineGuide_1,"You can confirm the accepted tasks. You can display each task's task info, display settings, help menu, etc. "
+MainMenu,1,Task_TwolineGuide_2,"You can confirm the acceptable tasks. You can display each task's task info, display settings, help menu, etc."
+MainMenu,1,LoopTask_Count,Rounds
+MainMenu,1,Reward_Tier,TIER
+MainMenu,1,Reward_SeasonalPoint,SEASON
+MainMenu,1,Reward_GenesisPoint,GP
+MainMenu,1,CATEGORY_RECOMMEND,Recommended
+MainMenu,1,Limited_Category_Campaign,Campaign
+MainMenu,1,Limited_Category_PSO2,PSO2 Day Only
+MainMenu,1,Limited_Category_Season,Seasonal Events
+MainMenu,1,Limited_Category_etr,Story/Other
+MainMenu,1,Limited_Category_CreativeSpace,Creative Space
+MainMenu,1,Limited_Category_LevelUp,Equipment/Development
+MainMenu,1,Limited_Category_Contents,Contents
 TaskDetails,0,FORM_TITLE,$(0)の詳細
 TaskDetails,0,REWIND_CONDITION,再受注
 TaskDetails,0,TASK_OVERVIEW,概要
@@ -128,26 +128,26 @@ TaskDetails,0,REWARD_QUANTITY_NUM,×$(0)
 TaskDetails,0,TASK_REWARD_LOOP_1,初回達成報酬
 TaskDetails,0,TASK_REWARD_LOOP_2,2回目以降の達成報酬
 TaskDetails,0,TASK_LOOPCOUNT,<space>
-TaskDetails,1,FORM_TITLE,$(0) Detalles
-TaskDetails,1,REWIND_CONDITION,Reaceptar
-TaskDetails,1,TASK_OVERVIEW,Resumen
-TaskDetails,1,TASK_REWARD,Premio
-TaskDetails,1,TASK_PROGRESSES,Progreso
-TaskDetails,1,TASK_TO_ACHIEVEMENT,Restante
-TaskDetails,1,ITEMDETAIL_CONTROLGUIDE,<%Function> para detalles de recompensa
-TaskDetails,1,ITEMDETAIL_CONTROLGUIDE_MP,<%Function> para detalles de recompensa　　<%MultiSelect>para pase de misión
-TaskDetails,1,ITEMDETAIL_MissionPass,<%Function> a MissionPass
-TaskDetails,1,BASICINFO_CONTROLGUIDE,<%Function> a información básica
-TaskDetails,1,BASICINFO_CONTROLGUIDE_MP,<%Function> a Información Básica　　<%MultiSelect>a Pase de Misión
-TaskDetails,1,NO_REWARD_ITEM,No hay artículos de recompensa.
-TaskDetails,1,Task_Detial_Tilte,Detalles de la tarea
-TaskDetails,1,TASK_PROGRESSES_2,Progreso
-TaskDetails,1,BASIC_INFO,Información básica
-TaskDetails,1,REWARD_INFO,Detalles de la recompensa
-TaskDetails,1,REWARD_ITEMNAME,Nombre del artículo
-TaskDetails,1,REWARD_QUANTITY,Número obtenido
-TaskDetails,1,TASK_DETAILS_UNSELECTED,Ninguna tarea seleccionada.
-TaskDetails,1,REWARD_QUANTITY_NUM,x$(0)
-TaskDetails,1,TASK_REWARD_LOOP_1,Recompensa por primera vez
-TaskDetails,1,TASK_REWARD_LOOP_2,Recompensa posterior
+TaskDetails,1,FORM_TITLE,$(0) Details
+TaskDetails,1,REWIND_CONDITION,Reaccept
+TaskDetails,1,TASK_OVERVIEW,Summary
+TaskDetails,1,TASK_REWARD,Reward
+TaskDetails,1,TASK_PROGRESSES,Progress
+TaskDetails,1,TASK_TO_ACHIEVEMENT,Remaining
+TaskDetails,1,ITEMDETAIL_CONTROLGUIDE,<%Function> to Reward Details
+TaskDetails,1,ITEMDETAIL_CONTROLGUIDE_MP,<%Function> to Reward Details　　<%MultiSelect> to Mission Pass
+TaskDetails,1,ITEMDETAIL_MissionPass,<%Function> to MissionPass
+TaskDetails,1,BASICINFO_CONTROLGUIDE,<%Function> to Basic Info
+TaskDetails,1,BASICINFO_CONTROLGUIDE_MP,<%Function> to Basic Info　　<%MultiSelect> to Mission Pass
+TaskDetails,1,NO_REWARD_ITEM,There are no reward items.
+TaskDetails,1,Task_Detial_Tilte,Task Details
+TaskDetails,1,TASK_PROGRESSES_2,Progress
+TaskDetails,1,BASIC_INFO,Basic Info
+TaskDetails,1,REWARD_INFO,Reward Details
+TaskDetails,1,REWARD_ITEMNAME,Item Name
+TaskDetails,1,REWARD_QUANTITY,Number Obtained
+TaskDetails,1,TASK_DETAILS_UNSELECTED,No task selected.
+TaskDetails,1,REWARD_QUANTITY_NUM,x $(0)
+TaskDetails,1,TASK_REWARD_LOOP_1,First Time Reward
+TaskDetails,1,TASK_REWARD_LOOP_2,Subsequent Reward
 TaskDetails,1,TASK_LOOPCOUNT,<space>

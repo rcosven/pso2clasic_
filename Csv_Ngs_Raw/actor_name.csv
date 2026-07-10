@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Enemy,0,r01_gd_flo_wi,フワン
 Enemy,0,r01_gd_pyc_ba,ティノス
 Enemy,0,r01_gd_sol_sw,ペダス・ソード
@@ -1071,7 +1071,7 @@ PAExplanation,0,LauncherPA04,“大砲（ランチャー）”用のフォトン
 PAExplanation,1,SwordPA01,"Sword Photon Art.<br>Rise in a vertical slashing, spiral ascent.<br>Charging increases the potency."
 PAExplanation,1,SwordPA02,"Sword Photon Art.<br>Rise in a horizontal slashing, spiral ascent.<br>Charging increases the number of spins."
 PAExplanation,1,SwordPA03,Sword Photon Art.<br>Unleash a powerful slash.<br>Can attack up to 3 times by pressing <br>the PA button after the slash. <br>Charging the attacks will increase <br>the number of hits for each of them.
-PAExplanation,1,WlancePA01,Wired Lance Photon Art.<br>Launch a wide attack in front of you repeatedly.
+PAExplanation,1,WlancePA01,Wired Lance Photon Art.<br>Launch a wide attack in front of you repeatedly. 
 PAExplanation,1,WlancePA02,Wired Lance Photon Art.<br>Spin and cleave through enemies before<br>unleashing a powerful final blow.<br>Can be used while moving.
 PAExplanation,1,WlancePA03,Wired Lance Photon Art.<br>Launch a vertical slash while spinning aggressively.
 PAExplanation,1,PartisanPA01,Partisan Photon Art.<br>Quickly mows down enemies in front of you.<br>Charge to launch an alternate attack.
@@ -1085,11 +1085,11 @@ PAExplanation,1,DsaberPA02,Double Saber Photon Art.<br>Perform a sweap attack af
 PAExplanation,1,DsaberPA03,Double Saber Photon Art.<br>Spawn a tornado while moving backwards <br>after a quick sideway sweap.<br>Generates a whirlwind when used.
 PAExplanation,1,KnucklePA01,Knuckles Photon Art.<br>Unleash a powerful blow after punching left and right.
 PAExplanation,1,KnucklePA02,Knuckles Photon Art.<br>Pummel an enemy with countless blows <br>before unleashing a powerful upper cut.
-PAExplanation,1,KnucklePA03,Knuckles Photon Art.<br>Leap forward with a punch before unleashing countless blows.
+PAExplanation,1,KnucklePA03,Knuckles Photon Art.<br>Leap forward with a punch before unleashing countless blows. 
 PAExplanation,1,RiflePA02,Assault Rifle Photon Art.<br>Fire special bullets that track multiple<br>enemies in your field of view by charging.
-PAExplanation,1,RiflePA03,"Assault Rifle Photon Art.<br>Fire high-speed volley after a dodge.<br>By pressing and holding down on the PA button,<br>it will continue to fire until PP is depleted."
+PAExplanation,1,RiflePA03,"Assault Rifle Photon Art.<br>Fire high-speed volley after a dodge.<br>By pressing and holding down on the PA button,<br>it will continue to fire until PP is depleted. "
 PAExplanation,1,LauncherPA01,Launcher Photon Art.<br>Drop down an explosive shell in front of you.
-PAExplanation,1,LauncherPA02,"Launcher Photon Art.<br>Fire a high-powered photon laser. By pressing and <br>holding down on the PA button, it will continue to <br>fire until PP is depleted. A follow-up attack will be <br>added when used continuosly for a certain amount of time."
+PAExplanation,1,LauncherPA02,"Launcher Photon Art.<br>Fire a high-powered photon laser. By pressing and <br>holding down on the PA button, it will continue to <br>fire until PP is depleted. A follow-up attack will be <br>added when used continuosly for a certain amount of time. "
 PAExplanation,1,LauncherPA03,Launcher Photon Art.<br>Fire a continuous volley of explosive shells ending in a<br>devastating blast.<br>Can be fired while moving or stationary.
 PAExplanation,1,MachinegunPA01,Twin Machine Guns Photon Art.<br>Launch a powerful focus shot after loosing fire intermittently.<br>Charging increases the potency.
 PAExplanation,1,MachinegunPA02,Twin Machine Guns Photon Art.<br>Pelt the surrounding enemies with a hail <br>of bullets as you spin round and round.<br>Charging increases the potency.
@@ -1126,7 +1126,7 @@ PAExplanation,1,SwordPA04,Sword Photon Art.<br>Cut enemies in half with a powerf
 PAExplanation,1,WlancePA04,"Wired Lance Photon Art.<br>When you strike an enemy, you leap into the air<br>and follow up with a powerful overhead attack.<br>Charge to launch an alternate attack.<br>While charging, you take less damage and cannot<br>be knocked back or launched. However, being hit<br>twice will interrupt your charge and release the attack."
 PAExplanation,1,PartisanPA04,"Partisan Photon Art.<br>Repeats a combo of striking into the air, a stab, and a<br>cleave."
 PAExplanation,1,TdaggerPA04,"Twin Daggers Photon Art.<br>After driving your blade into the enemy, you throw your<br>weapon striking nearby enemies."
-PAExplanation,1,DsaberPA04,"Double Saber Photon Art.<br>After jumping in the air and doing a spinning slash,<br>you slam your photon-charged weapon down<br>unleashing a whirlwind."
+PAExplanation,1,DsaberPA04,"Double Saber Photon Art.<br>After jumping in the air and doing a spinning slash,<br>you slam your photon-charged weapon down<br>unleashing a whirlwind. "
 PAExplanation,1,KnucklePA04,Knuckles Photon Art.<br>Negate your enemy's attack with a swift dodge and<br>then smash your fist into the enemy with a mighty<br>blow. Successfully negating the enemy's attack<br>increases the potency.
 PAExplanation,1,RiflePA04,Assault Rifle Photon Art.<br>Powerfully bombard a location. The location<br>will be displayed while pressing and holding<br>the button. Release to launch the attack.
 PAExplanation,1,MachinegunPA04,Twin Machine Guns Photon Art.<br>Fire ricocheting bullets to your front as<br>you dance gracefully.<br>Charging increases the potency.
@@ -1284,8 +1284,8 @@ Common,1,Toast_Defend,Damage taken is reduced due to level difference.
 Common,1,Toast_Defend_CombatPoint,Damage reduced due to insufficient Battle Power. (Required Battle Power: $(0))
 ItemUse,0,MoonAtmizerToYou,がアイテムを使用し、あなたを復活させました。
 ItemUse,0,ResurrectToYou,があなたを復活させました。
-ItemUse,1,MoonAtmizerToYou,revived you with an item.
-ItemUse,1,ResurrectToYou,revived you.
+ItemUse,1,MoonAtmizerToYou, revived you with an item.
+ItemUse,1,ResurrectToYou, revived you.
 Vehicle,0,<GatlingGun>EquippingEnd,兵装解除
 Vehicle,0,<GatlingGun>AttackGun,ラピッドファイア
 Vehicle,0,<GatlingGun>AttackRailgun,チャージブラスター
@@ -1413,21 +1413,21 @@ Class_NGS,0,AllNGS,全クラス
 Class_NGS,1,ClassNGS,Class
 Class_NGS,1,MainNGS,Main Class
 Class_NGS,1,SubNGS,Sub-Class
-Class_NGS,1,NoneNGS,None
-Class_NGS,1,JobNGS_00,Hunter
-Class_NGS,1,JobNGS_01,Ranger
-Class_NGS,1,JobNGS_02,Force
-Class_NGS,1,JobNGS_03,Fighter
-Class_NGS,1,JobNGS_04,Gunner
-Class_NGS,1,JobNGS_05,Techter
-Class_NGS,1,JobNGS_06,Braver
-Class_NGS,1,JobNGS_07,Bouncer
-Class_NGS,1,JobNGS_08,Challenger
-Class_NGS,1,JobNGS_09,Waker
-Class_NGS,1,JobNGS_10,Battle Warrior
-Class_NGS,1,JobNGS_11,Slayer
-Class_NGS,1,JobNGS_12,Phantom
-Class_NGS,1,JobNGS_13,Étoile
+Class_NGS,1,NoneNGS,None 
+Class_NGS,1,JobNGS_00,Hunter 
+Class_NGS,1,JobNGS_01,Ranger 
+Class_NGS,1,JobNGS_02,Force 
+Class_NGS,1,JobNGS_03,Fighter 
+Class_NGS,1,JobNGS_04,Gunner 
+Class_NGS,1,JobNGS_05,Techter 
+Class_NGS,1,JobNGS_06,Braver 
+Class_NGS,1,JobNGS_07,Bouncer 
+Class_NGS,1,JobNGS_08,Challenger 
+Class_NGS,1,JobNGS_09,Waker 
+Class_NGS,1,JobNGS_10,Battle Warrior 
+Class_NGS,1,JobNGS_11,Slayer 
+Class_NGS,1,JobNGS_12,Phantom 
+Class_NGS,1,JobNGS_13,Étoile 
 Class_NGS,1,AllNGS,All
 ActionCustomize,0,Common_RangeExtendPP,攻撃範囲拡大<br>消費PP<yellow>$(0)<c>
 ActionCustomize,0,Common_LongChargeAtp,チャージ時威力<yellow>$(0)<c><br>チャージ時間<yellow>$(1)<c>

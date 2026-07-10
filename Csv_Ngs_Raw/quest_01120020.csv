@@ -1,17 +1,17 @@
-section,group,id,text
+﻿section,group,id,text
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AreaName,0,Area0S,エアリオ平原
 AreaName,0,Area0L,エアリオ平原
-AreaName,1,Area0S,Llanuras de Aelio
-AreaName,1,Area0L,Llanuras de Aelio
+AreaName,1,Area0S,Aelio Plains
+AreaName,1,Area0L,Aelio Plains
 Basic,0,Title,資源採掘リグ防衛戦：エアリオ
 Basic,0,Explanation,ハルファナ平原で活動中の資源回収部隊より、緊急支援の要請があった。<br>周囲に多数のエネミー反応があり、大規模な攻勢が予想される。<br>アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。<br>――――――――――――――――――――――――――――――――――――――<br>クリア可能回数：$(0)回<yellow>（※同時発生中の緊急クエスト含む）<c>
-Basic,1,Title,Defensa de plataforma minera: Aelio
-Basic,1,Explanation,)<yellow>(incluidas las misiones urgentes activas simultáneamente) <c>
+Basic,1,Title,Mining Rig Defense: Aelio
+Basic,1,Explanation,We've received an emergency support request from our active mining unit in Halphana Plains. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig.<br>---------------------------------------------------<br>Times clearable: $(0) <yellow>(including simultaneously active Urgent Quests)<c>
 QuestTarget,0,SimpleExplanation,資源採掘リグを防衛せよ！
-QuestTarget,1,SimpleExplanation,¡Defiende la plataforma minera!
+QuestTarget,1,SimpleExplanation,Defend the Mining Rig!
 RebootDefense,0,Nav000,Wave.$(0)の<br>残存エネミー反応<yellow>50%<c>。
 RebootDefense,0,Nav001,Wave.$(0)の<br>残存エネミー反応<yellow>20％<c>。
 RebootDefense,0,Nav002,防衛対象がダメージを受けたときは、<br><yellow>フォトンリカバー<c>で回復する。
@@ -51,42 +51,42 @@ RebootDefense,0,Nav205,<yellow>モバイルキャノン<c>の装備中は、<br>
 RebootDefense,0,Nav206,レーダーマップで<br>他プレイヤーの位置を把握し、<br>連携して戦えるようにする。
 RebootDefense,0,Nav207,エネミーの出現地点を予測して、<br><yellow>待ち構えておく<c>と<br>戦いを有利に進められる。
 RebootDefense,0,Nav208,エネミーは、<br>出現から一定時間が経過すると、<br><yellow>防衛対象を集中的に狙う<c>ようになる。
-RebootDefense,1,Nav000,Agite $(0) lecturas enemigas restantes<br>en<yellow>50% <c>.
-RebootDefense,1,Nav001,Agite $(0) lecturas enemigas restantes<br>en<yellow>20% <c>.
-RebootDefense,1,Nav002,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav003,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav004,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav005,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav006,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav007,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav008,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav009,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav010,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav011,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav012,"Cuando el objetivo de la defensa sufre daño,<br>lo repara con<yellow>Photon Recovery <c>."
-RebootDefense,1,Nav013,Usa el<yellow>Cañón móvil<c>para exterminar a los enemigos<br>cuando las cosas se pongan difíciles.
-RebootDefense,1,Nav014,"Si el objetivo de la defensa comienza a sentirse abrumado,<br>protégelo con un<yellow>Escudo de barrera <c>."
-RebootDefense,1,Nav015,Forma equipo con otros jugadores para eliminar primero a<br>enemigos grandes.
-RebootDefense,1,Nav016,Neutraliza la barrera<c>de<yellow>Barrigale<br>destruyendo<yellow>los tres núcleos <c>.
-RebootDefense,1,Nav017,El<yellow>Wave Ram<c>es una batería de arma estacionaria que<br>comienza a disparar poco después de su aparición.
-RebootDefense,1,Nav018,El<yellow>Clingkill<c>inflige daño al objetivo de defensa<br>después de colocarlo.
-RebootDefense,1,Nav019,Destruye primero los<yellow>potenciadores<c>de<yellow>enemigos<br>mejorados <c>.
-RebootDefense,1,Nav020,Misión clara
-RebootDefense,1,Nav021,Misión clara
-RebootDefense,1,Nav022,Misión clara
-RebootDefense,1,Nav023,Misión clara
-RebootDefense,1,Nav101,El punto de generación del enemigo está indicado por<br>el marcador<yellow>E <c>.
-RebootDefense,1,Nav102,El<yellow>Clingkill<c>se adhiere al objetivo de defensa y<br>le inflige daño periódico.
-RebootDefense,1,Nav103,El<yellow>Wave Ram<c>es una batería de arma estacionaria que<br>dispara al objetivo de defensa una vez que está completamente cargada.
-RebootDefense,1,Nav104,Forma equipo con otros jugadores para eliminar primero a<yellow>Clingkills<c><br> y<yellow>Wave Rams <c>.
-RebootDefense,1,Nav105,Trate de no permitir que el objetivo de la defensa sea golpeado por<br>enemigos<yellow>ataques de área de efecto <c>.
-RebootDefense,1,Nav106,Usa el<yellow>Cañón móvil<c>para exterminar enjambres de enemigos<br>y enemigos duros.
-RebootDefense,1,Nav107,琀甀爀愀氀 椀渀琀攀最爀椀琀礀 漀昀 琀栀攀㰀戀爀㸀搀攀昀攀渀猀攀 琀愀爀最攀琀㰀挀㸀 戀攀昀漀爀攀 琀栀攀 愀琀琀愀挀欀 戀攀最椀渀猀⸀
-RebootDefense,1,Nav108,La próxima ola debería ser la última.<br>Verifique la<yellow>cantidad restante de<br>Accumusigne<c>antes de que comience el ataque.
-RebootDefense,1,Nav202,<yellow> Accumusigne<c>puntos se acumulan a medida que progresan<br>ondas.
-RebootDefense,1,Nav203,Cada jugador puede usar cada una de las funciones<c><br> del<yellow>Dispositivo de llamada solo una vez.
-RebootDefense,1,Nav204,<yellow> Clingkills<c>que están adheridos al objetivo de defensa<br>pueden eliminarse mediante un<yellow>Escudo de barrera <c>.
-RebootDefense,1,Nav205,"se reduce, pero<br>puedes moverte rápidamente con un<yellow>Boost Glider <c>."
-RebootDefense,1,Nav206,Realiza un seguimiento de las posiciones de otros jugadores y<br>coordina ataques a través del mapa de radar.
-RebootDefense,1,Nav207,Puedes obtener una ventaja prediciendo dónde aparecerá el<br>enemigo y<yellow>esperando para tenderle una emboscada a <c>.
-RebootDefense,1,Nav208,Los enemigos<yellow>centrarán sus ataques<c>en el objetivo de defensa<br>algún tiempo después de su aparición.
+RebootDefense,1,Nav000,Wave $(0) remaining enemy readings<br>at <yellow>50%<c>.
+RebootDefense,1,Nav001,Wave $(0) remaining enemy readings<br>at <yellow>20%<c>.
+RebootDefense,1,Nav002,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav003,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav004,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav005,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav006,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav007,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav008,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav009,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav010,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav011,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav012,"When the defense target takes damage,<br>repair it with <yellow>Photon Recovery<c>."
+RebootDefense,1,Nav013,Use the <yellow>Mobile Cannon<c> to exterminate enemies<br>when the going gets tough.
+RebootDefense,1,Nav014,"If the defense target starts to get overwhelmed,<br>protect it with a <yellow>Barrier Shield<c>."
+RebootDefense,1,Nav015,Team up with other players to eliminate large<br>enemies first.
+RebootDefense,1,Nav016,Neutralize the <yellow>Barrigale's<c> barrier fence by<br>destroying <yellow>the three cores<c>.
+RebootDefense,1,Nav017,The <yellow>Wave Ram<c> is a stationary gun battery that<br>begins firing soon after it appears.
+RebootDefense,1,Nav018,The <yellow>Clingkill<c> inflicts damage to the defense target<br>after it is attached.
+RebootDefense,1,Nav019,Destroy the <yellow>Enhancers<c> on <yellow>Enhanced<br>Enemies<c> first.
+RebootDefense,1,Nav020,Quest Clear
+RebootDefense,1,Nav021,Quest Clear
+RebootDefense,1,Nav022,Quest Clear
+RebootDefense,1,Nav023,Quest Clear
+RebootDefense,1,Nav101,The enemy's spawn point is indicated by<br>the <yellow>E Marker<c>.
+RebootDefense,1,Nav102,The <yellow>Clingkill<c> attaches to the defense target and<br>inflicts periodic damage to it.
+RebootDefense,1,Nav103,The <yellow>Wave Ram<c> is a stationary gun battery that<br>fires at the defense target once it is fully charged.
+RebootDefense,1,Nav104,Team up with other players to eliminate <yellow>Clingkills<c><br>and <yellow>Wave Rams<c> first.
+RebootDefense,1,Nav105,Try not to let the defense target get hit by<br>enemy <yellow>area-of-effect attacks<c>.
+RebootDefense,1,Nav106,Use the <yellow>Mobile Cannon<c> to exterminate enemy<br>swarms and tough enemies.
+RebootDefense,1,Nav107,We are expecting an even bigger assault.<br>Check on the <yellow>structural integrity of the<br>defense target<c> before the attack begins.
+RebootDefense,1,Nav108,The next wave should be the last.<br>Check the <yellow>remaining amount of<br>Accumusigne<c> before the attack begins.
+RebootDefense,1,Nav202,<yellow>Accumusigne<c> points accumulate as<br>waves progress.
+RebootDefense,1,Nav203,Each player can use each of the <yellow>Calling Device's<c><br>functions once only.
+RebootDefense,1,Nav204,<yellow>Clingkills<c> that are attached to the defense target<br>can be removed by a <yellow>Barrier Shield<c>.
+RebootDefense,1,Nav205,"While equipped with the <yellow>Mobile Cannon<c>,<br>your movement speed is reduced, but you<br>can move rapidly with a <yellow>Boost Glider<c>."
+RebootDefense,1,Nav206,Keep track of other players' positions and<br>coordinate attacks via the Radar Map.
+RebootDefense,1,Nav207,You can gain an edge by predicting where the<br>enemy will appear and <yellow>wait to ambush<c>them.
+RebootDefense,1,Nav208,Enemies will <yellow>focus their attacks<c> on the defense<br>target some time after they appear.

@@ -1,14 +1,14 @@
-section,group,id,text
+﻿section,group,id,text
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 Basic,0,Title,想定演習：山窟の掃討戦
 Basic,0,Explanation,これは、来るべき戦いに備えてアーカイブより再現された想定演習である。<br>現在の設定では、マクアド下層での激戦を追体験できる。<br>戦闘技術を駆使して、迫りくるエネミーから故障した輸送トラックを防衛せよ。
-Basic,1,Title,Simulacro: Operación de limpieza de cuevas
-Basic,1,Explanation,攀渀攀洀椀攀猀⸀
+Basic,1,Title,Drill: Cave Clean-Up Op
+Basic,1,Explanation,This practice drill is a simulation from the archive to help you prepare for the coming battle.<br>The current settings will allow you to reenact fierce fighting in Maqead Lower Level.<br>Make use of all your skills to defend the immobilized transport truck from the enemies.
 FailureCondition,0,f0,20:00以上経過する<br>指定トライアルの失敗
-FailureCondition,1,f0,El tiempo excede los 20 minutos<br>Fallo de la prueba designada
+FailureCondition,1,f0,Time exceeds 20 minutes<br>Failure of designated trial
 QuestTarget,0,SimpleExplanation,全てのエネミーを殲滅せよ！
-QuestTarget,1,SimpleExplanation,¡Erradica a todos los enemigos!
+QuestTarget,1,SimpleExplanation,Eradicate all enemies!
 SuccessCondition,0,s0,対象エネミーの撃破
-SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+SuccessCondition,1,s0,Defeat the target enemies

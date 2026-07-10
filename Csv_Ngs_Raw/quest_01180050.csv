@@ -1,12 +1,12 @@
-section,group,id,text
+﻿section,group,id,text
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 Basic,0,Title,想定演習：ダークファルス迎撃戦
 Basic,0,Explanation,これは、来るべき戦いに備えてアーカイブより再現された想定演習である。<br>現在の設定では、中央エアリオでの激闘を追体験できる。<br>戦闘技術を駆使して、“ダークファルス”を迎撃せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※対象トリガーの換金や特定倉庫への移動でクエスト破棄／アシストNPC参加不可<c>
-Basic,1,Title,Ejercicio: Intercepción de Dark Falz
-Basic,1,Explanation,abandonar la búsqueda.<c><yellow> Los NPC asistentes no pueden participar <c>
+Basic,1,Title,Drill: Dark Falz Interception
+Basic,1,Explanation,This practice drill is a simulation from the archive to help you prepare for the coming battle. The current settings will allow you to reenact fierce fighting in Central Aelio.<br>Make use of all your skills to defeat Dark Falz.<br><yellow>Moving the trigger item to a specific storage or converting it will cause you to abandon the quest.<c> <yellow>Assist NPCs cannot participate<c>
 QuestTarget,0,SimpleExplanation,ダークファルスを迎撃せよ！
-QuestTarget,1,SimpleExplanation,¡Derrota a Dark Falz!
+QuestTarget,1,SimpleExplanation,Defeat Dark Falz!
 SuccessCondition,0,s0,対象エネミーの撃破
-SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+SuccessCondition,1,s0,Defeat the target enemies

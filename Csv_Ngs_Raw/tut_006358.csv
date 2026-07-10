@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 TutorialText,0,Title,移動アクションの操作
 TutorialText,0,text0001,<yellow>移動<c><br>パッド：<pict Alpha_ls><br>キーボード：<%MoveForward>、<%MoveBack>、<%MoveLeft>、<%MoveRight>
 TutorialText,0,text0001_pad,キャラクターの操作方法について説明します。<br><br><yellow>移動<c><br><swguidetype T_Moveguide_l>
@@ -7,15 +7,15 @@ TutorialText,0,text0002,<yellow>移動アクション<c><br>ジャンプ：<%Jum
 TutorialText,0,text0003,<yellow>カメラ操作<c><br>パッド：<pict Alpha_rs><br>キーボード：マウス移動
 TutorialText,0,text0003_pad,<yellow>カメラ操作<c><br><swguidetype T_Moveguide_r>
 TutorialText,0,text0003_key,<yellow>カメラ操作<c><br>マウス移動
-TutorialText,0,text0002_pad,<yellow>移動アクション<c><br>ジャンプ：<%Jump><br>二段ジャンプ：ジャンプ中に<pict 4space><%Jump><br>ステップ（回避アクション）：<%Avoid><br>フォトンダッシュ：移動しながら<pict 4space><%Avoid><pict 4space>長押し<br>グライド：二段ジャンプ中に<%Jump>または空中で<%Jump>長押し<br>グライド解除：グライド中に<%Jump>
-TutorialText,0,text0002_key,<yellow>移動アクション<c><br>ジャンプ：<%Jump><br>二段ジャンプ：ジャンプ中に<pict 4space><%Jump><br>ステップ（回避アクション）：<%Avoid><br>フォトンダッシュ：移動しながら<pict 4space><%Avoid><pict 4space>長押し<br>グライド：二段ジャンプ中に<%Jump>または空中で<%Jump>長押し<br>グライド解除：グライド中に<%Jump>
-TutorialText,1,Title,Moverse
-TutorialText,1,text0001,ct 4espacio><%MoveBack><pict 4space> <%MoveLeft><pict 4space><%MoveRight><br><br>
-TutorialText,1,text0001_pad,Te explicaremos cómo controlar al personaje.<br><br><yellow>Movimiento <c><br><swguidetype T_Moveguide_l>
-TutorialText,1,text0001_key,Te explicaremos cómo controlar al personaje.<br><br><yellow>Movimiento <c><br><swguidetype T_Moveguide_l>
-TutorialText,1,text0002,br>Dash (Teclado): Mantenga presionado<%Avoid>mientras se mueve<br>Dash (Teclado): Presione las teclas direccionales dos veces y mantenga presionadas
-TutorialText,1,text0003,<yellow> Movimiento de la cámara<c><br> Gamepad: <pict Alpha_rs><br>Teclado: mueve el mouse
-TutorialText,1,text0003_pad,<yellow> Movimiento de la cámara<c><br> <swguidetype T_Moveguide_r>
-TutorialText,1,text0003_key,<yellow> Movimiento de la cámara<c><br> Mover el mouse
-TutorialText,1,text0002_pad,Cancelar deslizamiento: ◆Presione<%Jump>mientras se desliza
-TutorialText,1,text0002_key,Cancelar deslizamiento: ◆Presione<%Jump>mientras se desliza
+TutorialText,0,text0002_pad,<yellow>移動アクション<c><br>ジャンプ：<%Jump><br>二段ジャンプ：ジャンプ中に<pict 4space><%Jump><br>ステップ（回避アクション）：<%Avoid><br>フォトンダッシュ：移動しながら<pict 4space><%Avoid><pict 4space>長押し<br>グライド：二段ジャンプ中に<%Jump>または空中で<%Jump>長押し<br>グライド解除：グライド中に<%Jump
+TutorialText,0,text0002_key,<yellow>移動アクション<c><br>ジャンプ：<%Jump><br>二段ジャンプ：ジャンプ中に<pict 4space><%Jump><br>ステップ（回避アクション）：<%Avoid><br>フォトンダッシュ：移動しながら<pict 4space><%Avoid><pict 4space>長押し<br>グライド：二段ジャンプ中に<%Jump>または空中で<%Jump>長押し<br>グライド解除：グライド中に<%Jump
+TutorialText,1,Title,Moving Around
+TutorialText,1,text0001,<yellow>Movement<c><br>Gamepad: <pict Alpha_ls><br>Keyboard: <%MoveForward><pict 4space><%MoveBack><pict 4space><%MoveLeft><pict 4space><%MoveRight><br><br>
+TutorialText,1,text0001_pad,We'll explain how to control the character.<br><br><yellow>Movement<c><br><swguidetype T_Moveguide_l>
+TutorialText,1,text0001_key,We'll explain how to control the character.<br><br><yellow>Movement<c><br><swguidetype T_Moveguide_l>
+TutorialText,1,text0002,<yellow>Traversal Actions<c><br>Jump: <%Jump><br>Double Jump: <%Jump> while jumping<br>Sidestep (Dodge): <%Avoid><br>Dash (Pad): Press and hold <%Avoid> while moving<br>Dash (Keyboard): Press the directional keys twice and hold 
+TutorialText,1,text0003,<yellow>Camera Movement<c><br>Gamepad: <pict Alpha_rs><br>Keyboard: Move the mouse
+TutorialText,1,text0003_pad,<yellow>Camera Movement<c><br><swguidetype T_Moveguide_r>
+TutorialText,1,text0003_key,<yellow>Camera Movement<c><br>Move the mouse
+TutorialText,1,text0002_pad,"<yellow>Traversal Actions<c><br>Jump: <%Jump><br>Double Jump: <pict 4space><%Jump> while jumping<br>Sidestep (Dodge): <%Avoid><br>Photon Dash: Press and hold <pict 4space><%Avoid><pict 4space> while moving<br>Glide: Press <%Jump> while double jumping, or press and hold <%Jump> while in the air<br>Cancel Glide: ◆Press <%Jump> while gliding"
+TutorialText,1,text0002_key,"<yellow>Traversal Actions<c><br>Jump: <%Jump><br>Double Jump: <pict 4space><%Jump> while jumping<br>Sidestep (Dodge): <%Avoid><br>Photon Dash: Press and hold <pict 4space><%Avoid><pict 4space> while moving<br>Glide: Press <%Jump> while double jumping, or press and hold <%Jump> while in the air<br>Cancel Glide: ◆Press <%Jump> while gliding"

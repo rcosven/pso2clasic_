@@ -1,14 +1,14 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName,トランザーヴ破壊
 common,0,TrialBeginMsg,出現したエネミーを討伐し、発生源を破壊せよ！
 common,0,TrialBeginMsgObjOnly,エネミーの発生源を破壊せよ！
 common,0,TrialAbstract,エネミーを倒す
 common,0,TrialAbstractObjOnly,トランザーヴを破壊する
-common,1,TrialName,Destrucción Transorve
-common,1,TrialBeginMsg,¡Suprime a los enemigos que aparecen y destruye su punto de generación!
-common,1,TrialBeginMsgObjOnly,¡Destruye el punto de generación del enemigo!
-common,1,TrialAbstract,Derrota a los enemigos
-common,1,TrialAbstractObjOnly,Destruye los Transorves
+common,1,TrialName,Transorve Destruction
+common,1,TrialBeginMsg,Suppress the enemies that appear and destroy their spawn point!
+common,1,TrialBeginMsgObjOnly,Destroy the enemy spawn point!
+common,1,TrialAbstract,Defeat the enemies
+common,1,TrialAbstractObjOnly,Destroy the Transorves
 type103,0,NpcComOnForetaste,/voice11_voice_navi002_trial_0001_011 エネミーの発生源が近くにあるようです。<br>増援が出現する前に破壊してください。
 type103,0,NpcComOnBegin,/voice11_voice_navi002_trial_0001_020 “トランザーヴ”は、エネミーを転送するときに<br>シールドを解除して無防備になります。その隙に攻撃してください。
 type103,0,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 エネミーの殲滅を確認。<br>対応、ありがとうございます。
@@ -22,4 +22,4 @@ type103,1,NpcComOnSuccess,/voice11_voice_navi002_trial_0001_069 Enemy eradicatio
 type103,1,NpcComOnSuccessObjOnly,/voice11_voice_navi002_trial_0001_069 Spawn point destroyed.<br>Thank you for your support.
 type103,1,NpcComOnFailure,/voice11_voice_navi002_trial_0001_073 Enemy retreating.<br>Switching to standard monitoring.
 type103,1,NpcComOnFailureObjOnly,/voice11_voice_navi002_trial_0001_073 Spawn point has vanished...<br>Switching to standard monitoring.
-type103,1,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 The Transorves have begun teleporting enemies. Aim for the<br>core now
+type103,1,NpcComOnCoreOpen,/voice11_voice_navi002_trial_0001_040 The Transorves have begun teleporting enemies. Aim for the<br>core now.

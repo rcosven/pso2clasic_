@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName,$(0)
 common,0,TrialBeginMsg,すべての<pict minigame_checkp>チェックポイントを<br>2:30以内に通過せよ！
 common,0,TrialAbstract,すべての<pict minigame_checkp>チェックポイントを<br>2:30以内に通過する
@@ -10,16 +10,16 @@ common,0,MLineMsg_GoalNotice_02,$(0)がゴール！
 common,0,MLineMsg_GoalNotice_03,クリアタイム：$(0):$(1).$(2)
 common,0,MLineMsg_GoalNotice_04,スコアシンボル獲得数：$(0)個
 common,0,MGoalNotice_PlayerFinish,$(0)がゴール！（$(1)人/$(2)人中）
-common,0,MBreakawayNotice_PlayerExit,$(0)から離脱しました。
+common,0,MBreakawayNotice_PlayerExit,$(0)から離脱しま
 common,1,TrialName,$(0)
-common,1,TrialBeginMsg,¡Pase cada<pict minigame_checkp>punto de control dentro de las 2:30!
-common,1,TrialAbstract,Pase cada<pict minigame_checkp>punto de control dentro de las 2:30
-common,1,MLineMsg_TransferSoon,¡Emparejamiento completo! Transferencia inicial en 5 segundos.
-common,1,MLineMsg_Success,Carrera de campo $(0) ¡Claro!
-common,1,MLineMsg_TimeOver,Carrera de campo fallida<br>¡Se acabó el tiempo!
+common,1,TrialBeginMsg,Pass every <pict minigame_checkp> checkpoint within 2:30!
+common,1,TrialAbstract,Pass every <pict minigame_checkp> checkpoint within 2:30
+common,1,MLineMsg_TransferSoon,Matchmaking complete! Beginning transfer in 5 seconds.
+common,1,MLineMsg_Success,Field Race $(0) Clear!
+common,1,MLineMsg_TimeOver,Field Race Failed<br>Time's Up!
 common,1,MLineMsg_GoalNotice_01,$(0)/$(1)
-common,1,MLineMsg_GoalNotice_02,¡$(0) ha alcanzado la meta!
-common,1,MLineMsg_GoalNotice_03,Hora: $(0):$(1).$(2)
-common,1,MLineMsg_GoalNotice_04,Símbolos de puntuación: $(0)
-common,1,MGoalNotice_PlayerFinish,¡$(0) ha alcanzado la meta! ($(1)/$(2))
-common,1,MBreakawayNotice_PlayerExit,Te queda $
+common,1,MLineMsg_GoalNotice_02,$(0) has reached the goal!
+common,1,MLineMsg_GoalNotice_03,Time: $(0):$(1).$(2)
+common,1,MLineMsg_GoalNotice_04,Score Symbols: $(0)
+common,1,MGoalNotice_PlayerFinish,$(0) has reached the goal! ($(1)/$(2))
+common,1,MBreakawayNotice_PlayerExit,You have left $(0).

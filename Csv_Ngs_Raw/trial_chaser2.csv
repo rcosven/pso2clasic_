@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,TrialName,ギルーヴァ陽動
 common,0,TrialBeginMsg,出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
 common,0,TrialAbstract,ギルーヴァコアをすべて破壊し<br>レパルスウェッジでギルーヴァを倒す
@@ -6,12 +6,12 @@ common,0,TrialName2,ギルーヴァ陽動
 common,0,TrialBeginMsg2,出現したギルーヴァコアをすべて破壊し、ギルーヴァを倒せ！<br>トライアル成功時：“$(0)”獲得
 common,0,TrialAbstract2,レパルスウェッジでギルーヴァを倒す<br>獲得能力強化：<br>$(0)
 common,0,OnCoreBreak,$(0)がギルーヴァコアを破壊しました。
-common,1,TrialName,Desvío Giruva
-common,1,TrialBeginMsg,¡Destruye todos los núcleos de Giruva y derrota a Giruva!<br>En la prueba exitosa: Gana $(0)
-common,1,TrialAbstract,Destruye todos los núcleos de Giruva y derrota al Giruva<br>usando la cuña repulsora.
-common,1,TrialName2,Desvío Giruva
-common,1,TrialAbstract2,Derrota al Giruva usando la cuña repulsora.<br>Mejora de habilidad:<br>$(0)
-common,1,OnCoreBreak,$(0) destruyó un Giruva Core.
+common,1,TrialName,Giruva Diversion
+common,1,TrialBeginMsg,Destroy all Giruva Cores and defeat the Giruva!<br>On Trial Success: Earn $(0)
+common,1,TrialAbstract,Destroy all Giruva Cores and defeat the Giruva<br>using the Repulsor Wedge.
+common,1,TrialName2,Giruva Diversion
+common,1,TrialAbstract2,Defeat the Giruva using the Repulsor Wedge.<br>Ability Buff:<br>$(0)
+common,1,OnCoreBreak,$(0) destroyed a Giruva Core.
 type103,0,NpcComOnBegin,ギルーヴァの出現を確認。<br>特定のアークスを追走してきます。警戒してください。
 type103,0,NpcComOnBegin2,対ギルーヴァ用兵装の転送が阻害されています……。<br>出現したギルーヴァコアをすべて破壊してください。
 type103,0,NpcComOn30SecOver,ギルーヴァへの対抗兵装が転送できません。<br>ギルーヴァコアをすべて破壊してください。

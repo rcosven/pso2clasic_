@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,MySpaceCommonLabel_EditMode,編集モード
 common,0,MySpaceMenuText_OverPeople,同時に編集できる人数を超えたため、編集モードに移行できません。
 common,0,MySpaceMenuText_NoEditAuth2,編集権限がないため、編集モードに移行できません。
@@ -402,7 +402,7 @@ CreativeSpaceMenu,1,TimeControll_TimePasses,Advance Time in Creative Space
 CreativeSpaceMenu,1,TimeControll_TimePasses_TeamSpace,Advance Time in Alliance Space
 CreativeSpaceMenu,1,DefaultMySpaceName,Creative Space
 CreativeSpaceMenu,1,DefaultTeamSpaceName,Alliance Space
-CreativeSpaceMenu,1,DefaultMySpaceComment,<pict 4space>
+CreativeSpaceMenu,1,DefaultMySpaceComment, <pict 4space>
 CreativeSpaceMenu,1,If_All_OK,Open to Everyone (Include in search)
 CreativeSpaceMenu,1,If_Friend_Guild_Member,Friends and Alliance Members Only
 CreativeSpaceMenu,1,If_Guild_Member,Alliance Members Only
@@ -425,7 +425,7 @@ CreativeSpaceMenu,1,PermissionList_Editors,Players with Edit Permission
 CreativeSpaceMenu,1,PermissionList_Authorize,Grant Edit Permission
 CreativeSpaceMenu,1,PermissionList_Reject,Revoke Edit Permission
 CreativeSpaceMenu,1,PermissionList_IdName,$(0)
-CreativeSpaceMenu,1,PermissionList_Names,$(0) $(1)
+CreativeSpaceMenu,1,PermissionList_Names,$(0) $(1) 
 CreativeSpaceMenu,1,PermissionList_AuthorizeConfirm,Grant Edit Permission to $(0)?<br>This will grant edit permission to all of $(1)'s characters.
 CreativeSpaceMenu,1,PermissionList_RejectConfirm,Revoke Edit Permission from $(0)?<br>This will revoke edit permission from all of $(1)'s characters.
 CreativeSpaceMenu,1,PermissionList_EditorsNumberMax,You have reached the maximum number of people who can be granted edit permission.
@@ -443,7 +443,7 @@ CreativeSpaceMenu,1,TeamSpaceMenuFormTitle,Alliance Space Menu
 CreativeSpaceMenu,1,TeamSpaceMenuHeadLine_Setting,Alliance Space Settings
 CreativeSpaceMenu,1,TeamSpaceMenuHeadLine_Init,Reset
 CreativeSpaceMenu,1,TeamSpaceMenuHeadLine_EditPermission,Manage Edit Permissions
-CreativeSpaceMenu,1,TeamSpaceBgmText_NotPlay,"This cannot be used, because music is playing from a Mag Jukebox."
+CreativeSpaceMenu,1,TeamSpaceBgmText_NotPlay,"This cannot be used, because music is playing from a Mag Jukebox. "
 CreativeSpaceMenu,1,TeamSpaceBgmText_Download,Unplayable music has been selected.<br>Please download PSO2 to play this music.
 CreativeSpaceMenu,1,MySpaceBase_ErrorMessage,Failed to change theme. Please wait a while and try again.
 CreativeSpaceMenu,1,MySpace_LinkMoveCSpace,This will be linked to the Creative Space.<br>Proceed?
@@ -549,16 +549,16 @@ Journal,0,MySpaceJournalTextInst_EditTerrain_Downlift,地形のダウン
 Journal,0,MySpaceJournalTextInst_EditTerrain_LandLeveling,地形の整地
 Journal,0,MySpaceJournalTextInst_Installation,設置
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingFunction,ビルドパーツ編集メニュー
-Journal,0,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,編集モードを終了
+Journal,0,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,　編集モードを終了
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingAux,ビルドパーツ設置メニュー
 Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation,キャンセル
-Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation_Space,ビルドパーツ設置を終了
+Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation_Space,　ビルドパーツ設置を終了
 Journal,0,MySpaceJournalTextInst_Sub_CraftMenu,ビルドメニュー
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingEditTerrainFunction,地形編集メニュー
-Journal,0,MySpaceJournalTextInst_Sub_ExitEditTerrain,地形編集を終了
-Journal,0,MySpaceJournalTextInst_Sub_InstConfig,ビルドオプション
-Journal,0,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,Ｃスペースメニュー
-Journal,0,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,チームスペースメニュー
+Journal,0,MySpaceJournalTextInst_Sub_ExitEditTerrain,　地形編集を終了
+Journal,0,MySpaceJournalTextInst_Sub_InstConfig,　ビルドオプション
+Journal,0,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,　Ｃスペースメニュー
+Journal,0,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,　チームスペースメニュー
 Journal,0,MySpaceJournalTextInst_SubTitle_Aux,<%WeaponAction_2>でメニュー表示中に
 Journal,0,MySpaceJournalTextInst_SubTitle_Function,<%WeaponAction_2>でメニュー表示中に
 Journal,0,MySpaceJournalTextInst_SubTitle_TerrainFunction,<%WeaponAction_2>でメニュー表示中に
@@ -567,9 +567,9 @@ Journal,1,MySpaceJournalInstallationInformation,Build Parts Placement Info
 Journal,1,MySpaceJournalBuildPartsInformation,Build Parts Info
 Journal,1,MySpaceJournalEditTerrainInformation,Terrain Info
 Journal,1,MySpaceJournalRotate,Rotation
-Journal,1,MySpaceJournalXAxis,X Axis
-Journal,1,MySpaceJournalYAxis,Y Axis
-Journal,1,MySpaceJournalZAxis,Z Axis
+Journal,1,MySpaceJournalXAxis,X Axis 
+Journal,1,MySpaceJournalYAxis,Y Axis 
+Journal,1,MySpaceJournalZAxis,Z Axis 
 Journal,1,MySpaceJournalXYZAxis,All Axes
 Journal,1,MySpaceJournalScale,Scale
 Journal,1,MySpaceJournalMaxDistance,Max Placement Distance
@@ -592,16 +592,16 @@ Journal,1,MySpaceJournalTextInst_EditTerrain_Downlift,Reduce Terrain Height
 Journal,1,MySpaceJournalTextInst_EditTerrain_LandLeveling,Level Terrain
 Journal,1,MySpaceJournalTextInst_Installation,Place
 Journal,1,MySpaceJournalTextInst_Sub_SwitchingFunction,Build Part Edit Menu
-Journal,1,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,Exit Edit Mode
+Journal,1,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,　Exit Edit Mode
 Journal,1,MySpaceJournalTextInst_Sub_SwitchingAux,Build Part Placement Menu
 Journal,1,MySpaceJournalTextInst_Sub_ExitInstallation,Cancel
-Journal,1,MySpaceJournalTextInst_Sub_ExitInstallation_Space,Exit Build Part Placement
+Journal,1,MySpaceJournalTextInst_Sub_ExitInstallation_Space,　Exit Build Part Placement
 Journal,1,MySpaceJournalTextInst_Sub_CraftMenu,Build Menu
 Journal,1,MySpaceJournalTextInst_Sub_SwitchingEditTerrainFunction,Terrain Edit Menu
-Journal,1,MySpaceJournalTextInst_Sub_ExitEditTerrain,Exit Terrain Editing
-Journal,1,MySpaceJournalTextInst_Sub_InstConfig,Build Options
-Journal,1,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,C-Space Menu
-Journal,1,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,Alliance Space Menu
+Journal,1,MySpaceJournalTextInst_Sub_ExitEditTerrain,　Exit Terrain Editing
+Journal,1,MySpaceJournalTextInst_Sub_InstConfig,　Build Options
+Journal,1,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,　C-Space Menu
+Journal,1,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,　Alliance Space Menu
 Journal,1,MySpaceJournalTextInst_SubTitle_Aux,While holding <%WeaponAction_2>:
 Journal,1,MySpaceJournalTextInst_SubTitle_Function,While holding <%WeaponAction_2>:
 Journal,1,MySpaceJournalTextInst_SubTitle_TerrainFunction,While holding <%WeaponAction_2>:

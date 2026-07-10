@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
@@ -6,9 +6,9 @@ AreaName,0,Area0S,ハルフィリア湖
 AreaName,0,Area0L,ハルフィリア湖
 Basic,0,Title,第二次ハルフィリア湖要撃戦
 Basic,0,Explanation,ハルフィリア湖周辺で、強力なエネルギー反応が確認された。<br>報告によると、“ダークファルス・エイジス”に近似したデータが示されている。<br>アークス各員は、当該ポイントに急行し、状況を確認せよ。<br>――――――――――――――――――――――――――――――――――――――――<br>クリア可能回数：$(0)回<yellow>（※同時発生中の緊急クエストを含む）※アシストNPC参加不可<c>
-Basic,1,Title,"Contraataque del lago Halphia, parte II"
-Basic,1,Explanation,Misiones urgentes activas simultáneamente) *Los NPC de asistencia no están disponibles<c><br>
+Basic,1,Title,Halphia Lake Counter-Attack Part II
+Basic,1,Explanation,"A powerful energy reading has been confirmed in the Halphia Lake vicinity.<br>Reports indicate that the data shows similarities to Dark Falz Aegis.<br>All ARKS defenders, report to the emergence point immediately to assess the situation.<br>----------------------------------------<br>Times clearable: $(0) <yellow>(including simultaneously active Urgent Quests) *Assist NPCs are not available<c><br>"
 QuestTarget,0,SimpleExplanation,ダークファルス・エイジスを撃破せよ！
-QuestTarget,1,SimpleExplanation,¡Destruye Dark Falz Aegis!
+QuestTarget,1,SimpleExplanation,Destroy Dark Falz Aegis!
 SuccessCondition,0,s0,対象エネミーの撃破
-SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+SuccessCondition,1,s0,Defeat the target enemies

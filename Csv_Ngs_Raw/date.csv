@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Date,0,Date,$(2)年$(1)月$(0)日
 Date,0,Date_v,$(2)/$(1)/$(0)
 Date,0,January,1
@@ -48,25 +48,25 @@ Date,1,October,10
 Date,1,November,11
 Date,1,December,12
 Date,1,Date_NoYear,$(1)/$(0)
-Date,1,Sunday,Domingo
-Date,1,Monday,Lunes
-Date,1,Tuesday,Martes
-Date,1,Wednesday,Miércoles
-Date,1,Thursday,Jueves
-Date,1,Friday,Viernes
-Date,1,Saturday,Sábado
-Date,1,Short_January,Ene
+Date,1,Sunday,Sunday
+Date,1,Monday,Monday
+Date,1,Tuesday,Tuesday
+Date,1,Wednesday,Wednesday
+Date,1,Thursday,Thursday
+Date,1,Friday,Friday
+Date,1,Saturday,Saturday
+Date,1,Short_January,Jan
 Date,1,Short_February,Feb
 Date,1,Short_March,Mar
-Date,1,Short_April,Abr
-Date,1,Short_May,Puede
+Date,1,Short_April,Apr
+Date,1,Short_May,May
 Date,1,Short_June,Jun
 Date,1,Short_July,Jul
-Date,1,Short_August,Ago
+Date,1,Short_August,Aug
 Date,1,Short_September,Sep
 Date,1,Short_October,Oct
 Date,1,Short_November,Nov
-Date,1,Short_December,Dic
+Date,1,Short_December,Dec
 Time,0,TimeCountSec,$(0)秒
 Time,0,TimeCount,$(0):$(1)
 Time,0,TimeCountHour,$(0):$(1):$(2)
@@ -91,8 +91,8 @@ Time,0,LeaveMin,$(0)分
 Time,0,LeaveDay,$(0)日$(1)時間$(2)分
 Time,0,hyphen,--
 Time,0,LeaveTime,あと$(0)
-Time,0,LeaveDayOnly,$(0)日
-Time,0,LeaveHourOnly,$(0)時間
+Time,0,LeaveDayOnly,$(0)
+Time,0,LeaveHourOnly,
 Time,1,TimeCountSec,$(0) sec.
 Time,1,TimeCount,$(0):$(1)
 Time,1,TimeCountHour,$(0):$(1):$(2)
@@ -118,4 +118,4 @@ Time,1,LeaveDay,$(0)d $(1)hrs. $(2)min.
 Time,1,hyphen,--
 Time,1,LeaveTime,$(0) Remaining
 Time,1,LeaveDayOnly,$(0)d
-Time,1,LeaveHourOnly,$(0)hr
+Time,1,LeaveHourOnly,$(0)hrs.
