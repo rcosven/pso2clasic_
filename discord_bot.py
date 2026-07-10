@@ -5,6 +5,14 @@ import os
 import csv
 import logging
 from pathlib import Path
+import base64
+import requests
+import time
+
+# Configurar variables de GitHub
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
+GITHUB_BASE_BRANCH = os.getenv("GITHUB_BASE_BRANCH", "main")
 
 # Configurar el logger
 logger = logging.getLogger("discord.bot")
@@ -53,6 +61,8 @@ class BuscadorBot(commands.Bot):
                             for row in reader:
                                 if 'id' in row:
                                     self.index_datos.append({
+                                        'section': row.get('section', ''),
+                                        'group': row.get('group', ''),
                                         'id': row['id'],
                                         'text': row.get('text', ''),
                                         'file': f"{dir_name}/{archivo_csv.name}",
@@ -65,10 +75,183 @@ class BuscadorBot(commands.Bot):
                 
         logger.info(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
 
+def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, nuevo_texto: str):
+    """
+    Lee un archivo CSV, busca la fila exacta por section, group e id, 
+    y reemplaza únicamente el campo 'text' conservando la estructura multilínea.
+    """
+    ruta = Path(file_path)
+    if not ruta.exists():
+        return False
+
+    filas = []
+    headers = []
+    modificado = False
+
+    with open(ruta, mode='r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        headers = reader.fieldnames
+        for row in reader:
+            if row.get('section') == section and row.get('group') == group and row.get('id') == row_id:
+                row['text'] = nuevo_texto
+                modificado = True
+            filas.append(row)
+
+    if not modificado:
+        return False
+
+    with open(ruta, mode='w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=headers, lineterminator='\r\n')
+        writer.writeheader()
+        writer.writerows(filas)
+        
+    return True
+
+def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: str, row_id: str, usuario_discord: str):
+    """
+    Crea una rama temporal a partir de la rama base, sube el archivo modificado y genera un Pull Request.
+    """
+    if not GITHUB_TOKEN:
+        return None, "GITHUB_TOKEN no está configurado en las variables de entorno."
+
+    base_url = f"https://api.github.com/repos/{GITHUB_REPO}"
+    nombre_branch_seguro = "".join(c if c.isalnum() or c in "-_" else "_" for c in row_id)[:30]
+    nombre_rama = f"translation-{nombre_branch_seguro}-{int(time.time())}"
+    headers_api = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json"
+    }
+    
+    # 1. Obtener SHA de la rama base
+    res = requests.get(f"{base_url}/git/ref/heads/{GITHUB_BASE_BRANCH}", headers=headers_api)
+    if res.status_code != 200:
+        return None, f"Error al obtener rama base '{GITHUB_BASE_BRANCH}': {res.text}"
+    base_sha = res.json()["object"]["sha"]
+
+    # 2. Crear rama temporal
+    payload_ref = {
+        "ref": f"refs/heads/{nombre_rama}",
+        "sha": base_sha
+    }
+    res = requests.post(f"{base_url}/git/refs", headers=headers_api, json=payload_ref)
+    if res.status_code != 201:
+        return None, f"Error al crear rama temporal: {res.text}"
+
+    # 3. Obtener SHA del archivo original en el repo (para poder actualizarlo)
+    res = requests.get(f"{base_url}/contents/{ruta_archivo_repo}?ref={GITHUB_BASE_BRANCH}", headers=headers_api)
+    file_sha = None
+    if res.status_code == 200:
+        file_sha = res.json()["sha"]
+
+    # 4. Codificar archivo en Base64
+    try:
+        with open(ruta_archivo_local, "rb") as f:
+            content_b64 = base64.b64encode(f.read()).decode("utf-8")
+    except Exception as e:
+        return None, f"Error al leer archivo local: {e}"
+
+    # 5. Subir el cambio a la rama temporal
+    payload_content = {
+        "message": f"Traduccion sugerida por {usuario_discord} para ID: {row_id}",
+        "content": content_b64,
+        "branch": nombre_rama
+    }
+    if file_sha:
+        payload_content["sha"] = file_sha
+
+    # Normalizar ruta del archivo para URL
+    ruta_archivo_repo_url = ruta_archivo_repo.replace("\\", "/")
+    res = requests.put(f"{base_url}/contents/{ruta_archivo_repo_url}", headers=headers_api, json=payload_content)
+    if res.status_code not in [200, 201]:
+        return None, f"Error al actualizar archivo en GitHub: {res.text}"
+
+    # 6. Crear el Pull Request
+    payload_pr = {
+        "title": f"📝 Sugerencia de traducción: {row_id} por @{usuario_discord}",
+        "head": nombre_rama,
+        "base": GITHUB_BASE_BRANCH,
+        "body": (
+            f"El usuario de Discord **@{usuario_discord}** ha sugerido una traducción para el ID `{row_id}` "
+            f"en el archivo `{ruta_archivo_repo}`.\n\n"
+            f"Por favor, revisa los cambios antes de fusionar."
+        )
+    }
+    res = requests.post(f"{base_url}/pulls", headers=headers_api, json=payload_pr)
+    if res.status_code == 201:
+        return res.json()["html_url"], None
+    else:
+        return None, f"Error al crear Pull Request: {res.text}"
+
+class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
+    translation_input = discord.ui.TextInput(
+        label="Texto traducido",
+        style=discord.TextStyle.paragraph,
+        placeholder="Introduce la traducción aquí...",
+        required=True
+    )
+
+    def __init__(self, bot_instance, item_data: dict):
+        super().__init__()
+        self.bot = bot_instance
+        self.item = item_data
+        self.translation_input.default = item_data.get('text', '')
+
+    async def on_submit(self, interaction: discord.Interaction):
+        await interaction.response.defer(ephemeral=True)
+        
+        nuevo_texto = self.translation_input.value
+        file_path_local = self.item['file']
+        
+        # 1. Modificar CSV local
+        exito = modificar_texto_csv(
+            file_path=file_path_local,
+            section=self.item.get('section', ''),
+            group=self.item.get('group', ''),
+            row_id=self.item['id'],
+            nuevo_texto=nuevo_texto
+        )
+        
+        if not exito:
+            await interaction.followup.send("❌ Error: No se pudo modificar el archivo CSV local.", ephemeral=True)
+            return
+
+        # 2. Actualizar el índice en memoria para que esté disponible inmediatamente
+        for indexed_item in self.bot.index_datos:
+            if (indexed_item.get('section') == self.item.get('section') and
+                indexed_item.get('group') == self.item.get('group') and
+                indexed_item.get('id') == self.item['id'] and
+                indexed_item.get('file') == self.item['file']):
+                indexed_item['text'] = nuevo_texto
+                break
+
+        # 3. Crear el Pull Request en GitHub
+        pr_url, error = crear_pull_request_traduccion(
+            ruta_archivo_local=file_path_local,
+            ruta_archivo_repo=file_path_local,
+            row_id=self.item['id'],
+            usuario_discord=interaction.user.name
+        )
+
+        if error:
+            await interaction.followup.send(f"❌ Guardado localmente, pero error en GitHub: {error}", ephemeral=True)
+        else:
+            await interaction.followup.send(
+                f"✅ **Traducción guardada localmente y enviada a GitHub!**\n"
+                f"He creado un Pull Request para revisión:\n🔗 <{pr_url}>",
+                ephemeral=True
+            )
+
 class DescargarCSVView(discord.ui.View):
-    def __init__(self, filepath: str):
+    def __init__(self, bot_instance, item_data_or_filepath):
         super().__init__(timeout=180)
-        self.filepath = filepath
+        self.bot = bot_instance
+        if isinstance(item_data_or_filepath, dict):
+            self.item_data = item_data_or_filepath
+            self.filepath = item_data_or_filepath['file']
+        else:
+            self.item_data = None
+            self.filepath = item_data_or_filepath
+            self.remove_item(self.traducir)
 
     @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥")
     async def descargar(self, interaction: discord.Interaction, button: discord.ui.Button):
@@ -84,6 +267,10 @@ class DescargarCSVView(discord.ui.View):
                 content=f"❌ No se pudo enviar el archivo: {e}",
                 ephemeral=True
             )
+
+    @discord.ui.button(label="Traducir", style=discord.ButtonStyle.success, emoji="✍️")
+    async def traducir(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.send_modal(TranslationModal(self.bot, self.item_data))
 
 class DescargarDropdown(discord.ui.Select):
     def __init__(self, files: list):
@@ -151,7 +338,7 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
             f"📁 **Archivo:** `{match['file']}` (Línea {match['line']})\n"
             f"📝 **Texto:** {match['text']}"
         )
-        view = DescargarCSVView(match['file'])
+        view = DescargarCSVView(bot, match)
         await interaction.response.send_message(mensaje, view=view)
     else:
         limite = 5
@@ -165,7 +352,7 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
             lineas.append(f"*... y {total - limite} coincidencias más.*")
             
         if len(archivos_unicos) == 1:
-            view = DescargarCSVView(archivos_unicos[0])
+            view = DescargarCSVView(bot, archivos_unicos[0])
             lineas.append("\n💡 *Usa el botón de abajo para descargar el archivo.*")
         else:
             view = DescargarMultipleView(archivos_unicos)
