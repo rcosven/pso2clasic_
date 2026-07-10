@@ -22,7 +22,7 @@ class BuscadorBot(commands.Bot):
         
         # --- CAMBIO AQUÍ PARA SINCRONIZACIÓN INSTANTÁNEA ---
         # ¡IMPORTANTE! Reemplaza los números por el ID real de tu servidor de Discord
-        mi_servidor = discord.Object(id=123456789012345678) 
+        mi_servidor = discord.Object(id=1525057654446100553) 
         
         # Copiamos los comandos a ese servidor en específico
         self.tree.copy_global_to(guild=mi_servidor)
