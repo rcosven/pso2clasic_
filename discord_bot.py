@@ -85,6 +85,40 @@ class DescargarCSVView(discord.ui.View):
                 ephemeral=True
             )
 
+class DescargarDropdown(discord.ui.Select):
+    def __init__(self, files: list):
+        options = []
+        for fpath in files[:25]:
+            label = fpath[-100:]
+            options.append(discord.SelectOption(label=label, value=fpath, emoji="📁"))
+            
+        super().__init__(
+            placeholder="Elige un archivo para descargar...",
+            min_values=1,
+            max_values=1,
+            options=options
+        )
+        
+    async def callback(self, interaction: discord.Interaction):
+        filepath = self.values[0]
+        try:
+            archivo = discord.File(filepath)
+            await interaction.response.send_message(
+                content=f"Aquí tienes el archivo `{filepath}` listo para editar:",
+                file=archivo,
+                ephemeral=True
+            )
+        except Exception as e:
+            await interaction.response.send_message(
+                content=f"❌ No se pudo enviar el archivo: {e}",
+                ephemeral=True
+            )
+
+class DescargarMultipleView(discord.ui.View):
+    def __init__(self, files: list):
+        super().__init__(timeout=180)
+        self.add_item(DescargarDropdown(files))
+
 bot = BuscadorBot()
 
 # --- COMANDOS DE BARRA (SLASH COMMANDS) ---
@@ -103,6 +137,12 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
         await interaction.response.send_message(f"❌ No se encontraron coincidencias para: **{id_buscado}**")
         return
         
+    # Obtener archivos únicos
+    archivos_unicos = []
+    for item in coincidencias:
+        if item['file'] not in archivos_unicos:
+            archivos_unicos.append(item['file'])
+            
     total = len(coincidencias)
     if total == 1:
         match = coincidencias[0]
@@ -124,12 +164,19 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
         if total > limite:
             lineas.append(f"*... y {total - limite} coincidencias más.*")
             
-        lineas.append("\n💡 *Busca de forma más específica para ver el botón de descarga del archivo.*")
+        if len(archivos_unicos) == 1:
+            view = DescargarCSVView(archivos_unicos[0])
+            lineas.append("\n💡 *Usa el botón de abajo para descargar el archivo.*")
+        else:
+            view = DescargarMultipleView(archivos_unicos)
+            lineas.append("\n💡 *Usa la lista desplegable de abajo para descargar cualquiera de los archivos.*")
+            if len(archivos_unicos) > 25:
+                lineas.append("⚠️ *Hay más de 25 archivos. Se muestran los primeros 25 en la lista desplegable.*")
             
         mensaje = "\n".join(lineas)
         if len(mensaje) > 2000:
             mensaje = mensaje[:1990] + "\n..."
-        await interaction.response.send_message(mensaje)
+        await interaction.response.send_message(mensaje, view=view)
 
 @bot.tree.command(name="recargar", description="Vuelve a leer los archivos CSV sin reiniciar el bot")
 async def recargar(interaction: discord.Interaction):
