@@ -10,7 +10,9 @@ GITHUB_URL = "https://github.com/rcosven/pso2clasic_.git"
 # Usamos el directorio temporal de Railway si está disponible, o una carpeta local
 BASE_DIR = Path("/app/repos_bot") if Path("/app").exists() else Path("./repos_bot")
 
-bot = commands.Bot(command_prefix='/', intents=discord.Intents.default())
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='/', intents=intents)
 
 def setup_repo(folder_name: str, branch: str):
     """Clona o actualiza el repositorio para la búsqueda."""
@@ -81,4 +83,4 @@ if __name__ == "__main__":
     if not TOKEN:
         print("ERROR: No se encontró la variable DISCORD_TOKEN.")
     else:
-        bot.run(TOKEN)
+        bot.run(TOKEN)a
