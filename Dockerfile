@@ -3,4 +3,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python", "discord_bot.py"]
+# Añadimos el -u aquí abajo:
+CMD ["python", "-u", "discord_bot.py"]
