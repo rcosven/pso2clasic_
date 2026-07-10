@@ -2,26 +2,78 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 import os
+import csv
+from pathlib import Path
 
 class BuscadorBot(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix="!", intents=discord.Intents.default())
+        # 1. Configurar los Intents
+        intents = discord.Intents.default()
+        intents.message_content = True 
+        
+        super().__init__(command_prefix="!", intents=intents)
+        
+        # 2. Diccionario en memoria para búsquedas rápidas
+        self.index_datos = {} 
 
     async def setup_hook(self):
-        # 1. Borramos comandos previos de Discord para limpiar caché
-        await self.tree.clear_commands(guild=None)
+        # Limpiar comandos cacheados
+        self.tree.clear_commands(guild=None) 
         
-        # 2. Registramos el comando nuevamente
-        print("Registrando comando /buscar...")
+        # Cargar los CSV en memoria al encender el bot
+        self.cargar_indices()
+        
+        print("Sincronizando comandos de barra...")
         await self.tree.sync()
-        print("Sincronización forzada completada.")
+        print("Sincronización completada.")
+
+    def cargar_indices(self):
+        """Lee los CSV locales y mapea los IDs al archivo correspondiente."""
+        self.index_datos.clear()
+        
+        # Agrega aquí los nombres de las carpetas que contienen tus CSV
+        directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_raw", "Csv_Clasic_Raw"]
+        
+        for dir_name in directorios_datos:
+            ruta = Path(dir_name)
+            if ruta.exists():
+                for archivo_csv in ruta.glob("*.csv"):
+                    try:
+                        # utf-8-sig previene errores de formato con Excel/GitHub
+                        with open(archivo_csv, 'r', encoding='utf-8-sig') as f:
+                            reader = csv.DictReader(f)
+                            for row in reader:
+                                if 'id' in row:
+                                    self.index_datos[row['id']] = archivo_csv.name
+                    except Exception as e:
+                        print(f"Error leyendo {archivo_csv.name}: {e}")
+            else:
+                print(f"Advertencia: No se encontró la carpeta {dir_name}")
+                
+        print(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
 
 bot = BuscadorBot()
 
-# Definición del comando
-@bot.tree.command(name="buscar", description="Busca texto en una categoría")
-@app_commands.describe(categoria="Categoría", query="Texto")
-async def buscar(interaction: discord.Interaction, categoria: str, query: str):
-    await interaction.response.send_message("Buscando...")
+# --- COMANDOS DE BARRA (SLASH COMMANDS) ---
 
-bot.run(os.getenv("DISCORD_TOKEN"))
+@bot.tree.command(name="buscar_id", description="Busca en qué archivo está un ID específico")
+@app_commands.describe(id_buscado="El ID de la línea que deseas encontrar")
+async def buscar_id(interaction: discord.Interaction, id_buscado: str):
+    archivo = bot.index_datos.get(id_buscado)
+    if archivo:
+        await interaction.response.send_message(f"✅ El ID **{id_buscado}** se encuentra en el archivo: `{archivo}`")
+    else:
+        await interaction.response.send_message(f"❌ No se encontró el ID **{id_buscado}** en los registros.")
+
+@bot.tree.command(name="recargar", description="Vuelve a leer los archivos CSV sin reiniciar el bot")
+async def recargar(interaction: discord.Interaction):
+    bot.cargar_indices()
+    await interaction.response.send_message(f"🔄 Datos recargados con éxito. IDs mapeados: {len(bot.index_datos)}")
+
+# --- ARRANQUE DEL BOT ---
+
+token = os.getenv("DISCORD_TOKEN")
+if not token:
+    print("ERROR: No se encontró el DISCORD_TOKEN en las variables de entorno.")
+else:
+    bot.run(token)
