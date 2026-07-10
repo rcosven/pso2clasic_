@@ -1,4 +1,4 @@
-﻿section,group,id,text
+section,group,id,text
 ActiveStatus,0,ActiveStatus_Title,フレンドメッセージ変更
 ActiveStatus,0,ActiveStatus_Info,相手のフレンドリストに表示するメッセージです。<br>「決定」ボタンを押すことで登録されます。<br><br>ゲームからログアウトすると<br>フレンドメッセージは表示されなくなります。<br>再び登録する場合はログインごとに<br>「決定」ボタンを押してください。
 ActiveStatus,0,ActiveStatus_Comment,フレンドメッセージ
@@ -10,8 +10,8 @@ ActiveStatus,0,ActiveStatus_Connecting,通信中…
 ActiveStatus,0,ActiveStatus_Error,メッセージに<br>使用できない文字が含まれています。
 ActiveStatus,0,ActiveStatus_SendMessage,メッセージを登録しました。
 ActiveStatus,1,ActiveStatus_Title,CAMBIAR MENSAJES DE AMIGOS
-ActiveStatus,1,ActiveStatus_Info,en.
-ActiveStatus,1,ActiveStatus_Comment,Mensajes de amigos
+ActiveStatus,1,ActiveStatus_Info,es.
+ActiveStatus,1,ActiveStatus_Comment,mensajes de amigos
 ActiveStatus,1,ActiveStatus_Send,DE ACUERDO
 ActiveStatus,1,ActiveStatus_Cancell,Cancelar
 ActiveStatus,1,ActiveStatus_PartyNum,$(0)/$(1)
@@ -163,7 +163,7 @@ CameraCommand,1,Menu_Normal,Cámara normal
 CameraCommand,1,Menu_Camera1,Cámara fija 1
 CameraCommand,1,Menu_Camera2,Cámara fija 2
 CameraCommand,1,Menu_Camera3,Cámara fija 3
-CameraCommand,1,Pop_ChangeCamera,Usar
+CameraCommand,1,Pop_ChangeCamera,usar
 CameraCommand,1,Pop_ChangeAngle,Cambiar ángulo
 CameraCommand,1,Info_ChangeCamera,Se guardará un nuevo ángulo de cámara por $(0).<br>¿Está seguro de que desea continuar?
 CameraCommand,1,Message_ChangeCamera,Se guardó un nuevo ángulo de cámara por $(0).
@@ -199,7 +199,7 @@ CameraCommand,1,CameraLight_Title,SELECCIONAR CÁMARA/LUZ
 CameraCommand,1,Menu_Camera4,Cámara fija 4 <pict Arcscash>
 CameraCommand,1,Menu_Camera5,Cámara fija 5 <pict Arcscash>
 CameraCommand,1,Menu_Camera6,Cámara fija 6 <pict Arcscash>
-CameraCommand,1,Menu_NormalLight,Luz normal
+CameraCommand,1,Menu_NormalLight,luz normal
 CameraCommand,1,Menu_FreeLightSetting,Configuración de luz personalizada 1 <pict Arcscash>
 CameraCommand,1,Menu_FreeLightSetting2,Configuración de luz personalizada 2 <pict Arcscash>
 CameraCommand,1,Menu_FreeLightSetting3,Configuración de luz personalizada 3 <pict Arcscash>
@@ -235,7 +235,7 @@ CameraCommand,1,Toast_ChangeFreeLight,Ahora estás usando Light $(0).
 CameraCommand,1,Toast_ExitFreeLight,La configuración se canceló porque Premium expiró.
 CameraCommand,1,Toast_ExitEditinglight,Se ha desbloqueado el modo de configuración de luz personalizada.
 CameraCommand,1,ErrorTitle_ShaderSetting,ERRORES DE CONFIGURACIÓN
-CameraCommand,1,Error_ShaderSetting,onment <br>Settings from the Launcher screen and change <br>Shader Quality in the Graphics tab.
+CameraCommand,1,Error_ShaderSetting,漀渀洀攀渀琀 㰀戀爀㸀匀攀琀琀椀渀最猀 昀爀漀洀 琀栀攀 䰀愀甀渀挀栀攀爀 猀挀爀攀攀渀 愀渀搀 挀栀愀渀最攀 㰀戀爀㸀匀栀愀搀攀爀 儀甀愀氀椀琀礀 椀渀 琀栀攀 䜀爀愀瀀栀椀挀猀 琀愀戀⸀
 CameraCommand,1,Message_DiscardLightSettings,Estás a punto de salir sin aplicar los cambios que realizaste.<br>¿Está seguro de que desea continuar?
 CameraCommand,1,Selfie_OperationGuide,rd> Acción del lobby:<%TabBack>Variante de botón:<%NextWidget>Configuración de la cámara:<%ChangeCtrlWindowForward>Cancelar: <%Cancel>
 CameraCommand,1,Selfie_OperationGuide_Camera_Screenshot,Captura de pantalla:
@@ -258,8 +258,8 @@ CameraCommand,1,Selfie_FacialConfigWindow_Detail,"Las expresiones se pueden ajus
 CameraCommand,1,Selfie_FacialConfigWindow_Item1,Natural
 CameraCommand,1,Selfie_FacialConfigWindow_Item2,Sonriente
 CameraCommand,1,Selfie_FacialConfigWindow_Item3,Enojado
-CameraCommand,1,Selfie_FacialConfigWindow_Item4,Triste
-CameraCommand,1,Selfie_FacialConfigWindow_Item5,Sospechoso
+CameraCommand,1,Selfie_FacialConfigWindow_Item4,triste
+CameraCommand,1,Selfie_FacialConfigWindow_Item5,sospechoso
 CameraCommand,1,Selfie_FacialConfigWindow_Item6,ojos cerrados
 CameraCommand,1,Selfie_FacialConfigWindow_Item7,texto_dummy
 CameraCommand,1,Selfie_FacialConfigWindow_Item8,sonriendo 2
@@ -270,8 +270,8 @@ CameraCommand,1,Selfie_DepthoffieldWindow_Depthoffield_Select1,Desactivar
 CameraCommand,1,Selfie_DepthoffieldWindow_Depthoffield_Select2,Permitir
 CameraCommand,1,Selfie_DepthoffieldWindow_Aperturevalue,Relación focal (número F)
 CameraCommand,1,Selfie_DepthoffieldWindow_Focus,Punto de enfoque
-CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select1,Personaje
-CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select2,Enfoque manual
+CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select1,personajes
+CameraCommand,1,Selfie_DepthoffieldWindow_Focus_Select2,manual de instrucciones
 CameraCommand,1,Selfie_DepthoffieldWindow_Focusvalue,Ajuste de enfoque
 CameraCommand,1,Selfie_DepthoffieldWindow_Focusvalue_Balloon,Cambio en incrementos de 10:<swguidetype T_ItemWarehouse>mientras presiona <%Decide>
 CameraCommand,1,Selfie_CameraWindow_TemporarySave,Guardar temporalmente la configuración de la cámara
@@ -289,7 +289,7 @@ CameraCommand,1,Selfie_StopActionWindow_Selector3,indefinidamente
 CameraCommand,1,Selfie_StopActionWindow_StopTime_Balloon,"Ajuste en incrementos de 0,5 segundos:<swguidetype T_ItemWarehouse>con<%Decide>presionado"
 CameraCommand,1,Selfie_StopActionWindow_StopTime_Disabled,Los gestos de pausa no se pueden utilizar con este gesto.
 CameraCommand,1,Selfie_CameraWindow_Parameter_Title,Valores de configuración de la cámara
-CameraCommand,1,Selfie_CameraWindow_Parameter_Select1,Esconder
+CameraCommand,1,Selfie_CameraWindow_Parameter_Select1,esconder
 CameraCommand,1,Selfie_CameraWindow_Parameter_Select2,Espectáculo
 CameraCommand,1,Selfie_CameraWindow_Parameter_Balloon,Mostrar valores de posición de la cámara
 CameraCommand,1,Selfie_ParameterWindow_Camera_Fovy,Ángulo de visión (zoom)
@@ -411,7 +411,7 @@ CommandList,0,SelectMenuType_LineDuelCasualMatch,ラインストライクのア�
 CommandList,0,SelectMenuType_PartyLeave,パーティー脱退
 CommandList,0,SelectMenuType_WishList,ほしい物リスト
 CommandList,1,SelectMenuType_CommunicationMenu1,Ejecutar macros de chat
-CommandList,1,SelectMenuType_CommunicationMenu2,Realizar gestos
+CommandList,1,SelectMenuType_CommunicationMenu2,realizar gestos
 CommandList,1,SelectMenuType_CommunicationMenu3,Alternar visualización superior de caracteres
 CommandList,1,SelectMenuType_CommunicationMenu4,Cambiar estado en línea
 CommandList,1,SelectMenuType_CommunicationMenu5,Mostrar/Ocultar registro corto
@@ -424,12 +424,12 @@ CommandList,1,SelectMenuType_QuestMenu1,Instrucciones para los aliados
 CommandList,1,SelectMenuType_QuestMenu2,Mostrar/ocultar mapa de radar
 CommandList,1,SelectMenuType_QuestMenu3,Mostrar mapa de región y ciudad
 CommandList,1,SelectMenuType_CommunicationMenu6,Colocar/quitar baliza de fiesta
-CommandList,1,SelectMenuType_CommunicationMenu7,Cambiar mensajes de amigos
+CommandList,1,SelectMenuType_CommunicationMenu7,cambiar mensajes de amigos
 CommandList,1,SelectMenuType_CommunicationMenu8,Personajes cercanos
-CommandList,1,SelectMenuType_CommunicationMenu9,Lista de amigos
+CommandList,1,SelectMenuType_CommunicationMenu9,lista de amigos
 CommandList,1,SelectMenuType_CommunicationMenu10,Comandos de la Alianza
-CommandList,1,SelectMenuType_CommunicationMenu11,Correo
-CommandList,1,SelectMenuType_CommunicationMenu12,Registro de comunicaciones
+CommandList,1,SelectMenuType_CommunicationMenu11,correo
+CommandList,1,SelectMenuType_CommunicationMenu12,registro de comunicaciones
 CommandList,1,SelectMenuType_CommunicationMenu13,Arte simbólico
 CommandList,1,SelectMenuType_CommunicationMenu14,Sellos
 CommandList,1,SelectMenuType_CommunicationMenu15,Configuración de sala de palabras clave/fotos
@@ -447,15 +447,15 @@ CommandList,1,SelectMenuType_QuestMenu6,Entrenamiento ARCAS
 CommandList,1,SelectMenuType_QuestMenu7,Eventos actuales
 CommandList,1,SelectMenuType_QuestMenu8,Información de la misión
 CommandList,1,SelectMenuType_QuestMenu9,Contador de misiones
-CommandList,1,SelectMenuType_ItemMenu1,Equipar armas
+CommandList,1,SelectMenuType_ItemMenu1,equipar armas
 CommandList,1,SelectMenuType_ItemMenu2,Equipar armadura
 CommandList,1,SelectMenuType_ItemMenu3,Personalizar looks
 CommandList,1,SelectMenuType_ItemMenu4,Editar subpaleta
 CommandList,1,SelectMenuType_ItemMenu5,Elementos
 CommandList,1,SelectMenuType_ItemMenu6,Personalizar
 CommandList,1,SelectMenuType_ItemMenu7,revistas
-CommandList,1,SelectMenuType_ItemMenu8,Tienda de intercambio
-CommandList,1,SelectMenuType_ItemMenu9,Mascotas
+CommandList,1,SelectMenuType_ItemMenu8,tienda de intercambio
+CommandList,1,SelectMenuType_ItemMenu9,mascotas
 CommandList,1,SelectMenuType_MyData1,Información del personaje
 CommandList,1,SelectMenuType_MyData2,Títulos
 CommandList,1,SelectMenuType_MyData3,Editar ID de ARKS
@@ -468,9 +468,9 @@ CommandList,1,SelectMenuType_RoomPassword,Configuración de emparejamiento de sa
 CommandList,1,SelectMenuType_EditMenu1,Ocultar toda la interfaz de usuario (600 segundos)
 CommandList,1,SelectMenuType_EditMenu2,Tareas
 CommandList,1,SelectMenuType_EditMenu3,Pase de misión
-CommandList,1,SelectMenuType_EditMenu4,Rever
+CommandList,1,SelectMenuType_EditMenu4,revertir
 CommandList,1,SelectMenuType_EditMenu5,Abandonar la misión
-CommandList,1,SelectMenuType_EditMenu6,Subpaleta
+CommandList,1,SelectMenuType_EditMenu6,subpaleta
 CommandList,1,SelectMenuType_EditMenu7,Camuflaje de armas
 CommandList,1,SelectMenuType_EditMenu8,Ajustar la posición de la funda
 CommandList,1,SelectMenuType_EditMenu9,Configuración del objetivo de sonda activa
@@ -500,7 +500,7 @@ CommandList,1,SelectMenuType_EditMenu32,Códigos de artículo
 CommandList,1,SelectMenuType_EditMenu33,Información
 CommandList,1,SelectMenuType_EditMenu34,Bono de inicio de sesión
 CommandList,1,SelectMenuType_EditMenu35,Reclutar miembros del partido
-CommandList,1,SelectMenuType_EditMenu36,Aspecto
+CommandList,1,SelectMenuType_EditMenu36,aspectos
 CommandList,1,SelectMenuType_EditMenu37,Modo transmisor
 CommandList,1,SelectMenuType_ShowCollabIcon,Configuración de visualización para el envío de eventos
 CommandList,1,SelectMenuType_EditMenuCategory1,[Categoría] Menú de equipo
@@ -632,28 +632,28 @@ Common,1,Caption1,Menú de comunicaciones
 Common,1,Caption2,Menú de acción
 Common,1,Caption3,Menú de misiones
 Common,1,Caption4,Mapa del vestíbulo
-Common,1,OnlineStatus_1,Esconder
+Common,1,OnlineStatus_1,esconder
 Common,1,OnlineStatus_2,Reclutamiento de miembros del partido
 Common,1,OnlineStatus_3,Buscando una fiesta
-Common,1,OnlineStatus_4,Lejos
+Common,1,OnlineStatus_4,lejos
 Common,1,OnlineStatus_5,Abrir mensajería
 Common,1,OnlineStatus_Free,Abrir mensajería
 Common,1,OnlineStatus_Decide_Vita,Estado de actualización
 Common,1,OnlineStatus_FreeError_Title,ERROR DE COMUNICACIÓN
 Common,1,OnlineStatus_FreeError_Msg,No se pueden guardar los mensajes abiertos.
-Common,1,ApcTacticsOrder_title,-
-Common,1,ApcTacticsOrder_1,-
-Common,1,ApcTacticsOrder_2,-
-Common,1,ApcTacticsOrder_3,-
-Common,1,ApcTacticsOrder_4,-
-Common,1,ApcTacticsOrderHint_1,-
-Common,1,ApcTacticsOrderHint_2,-
-Common,1,ApcTacticsOrderHint_3,-
-Common,1,ApcTacticsOrderHint_4,-
+Common,1,ApcTacticsOrder_title,
+Common,1,ApcTacticsOrder_1,
+Common,1,ApcTacticsOrder_2,
+Common,1,ApcTacticsOrder_3,
+Common,1,ApcTacticsOrder_4,
+Common,1,ApcTacticsOrderHint_1,
+Common,1,ApcTacticsOrderHint_2,
+Common,1,ApcTacticsOrderHint_3,
+Common,1,ApcTacticsOrderHint_4,
 Common,1,ApcTacticsOrderPb_title,INSTRUCCIONES DE EXPLOSIÓN DE FOTONES PARA ALIADOS
 Common,1,ApcTacticsOrderPb_1,Lanzamiento de PB
 Common,1,ApcTacticsOrderPb_2,Cadena PB
-Common,1,ApcTacticsOrderPbHint_1,Utilice explosiones de fotones de forma agresiva.
+Common,1,ApcTacticsOrderPbHint_1,Utilice explosiones de fotografías de forma agresiva.
 Common,1,ApcTacticsOrderPbHint_2,Usa Photon Blasts cuando el jugador los use.
 Common,1,ApcTacticsOrderAttack_title,PARTICIPACIÓN DE ALIADOS EN EL COMBATE
 Common,1,ApcTacticsOrderAttack_1,Únete a la batalla
@@ -663,13 +663,13 @@ Common,1,ApcTacticsOrderAttackHint_2,Los aliados no se enfrentarán.
 Common,1,Caption5,Elementos
 Common,1,Caption6,Datos personales
 Common,1,Caption7,Menú de viaje
-Common,1,Caption8,Sistema
-Common,1,Caption9,Alianza
+Common,1,Caption8,sistema
+Common,1,Caption9,alianza
 Common,1,Caption10,Eventos
-Common,1,Caption11,Criar mascotas
+Common,1,Caption11,criar mascotas
 Common,1,Caption12,Menú dedicado
 Common,1,Caption13,Tomar fotografías/Preparación
-Common,1,Caption14,Fiesta
+Common,1,Caption14,fiesta
 Common,1,CustomizeGuide,<%MultiSelect><c f0df60>para intercambiar/editar diseño
 Common,1,CustomizeGuideVita,Intercambiar diseño con<pict Sign_TRIANGLE><c f0df60>
 Common,1,ConfirmHideInterface,La interfaz de usuario estará oculta. Volverá a aparecer cuando<br>se muestre el Menú Rápido (provisional).
@@ -682,8 +682,8 @@ Common,1,QuickMenu_PatternDetail,Detalles de diseño
 Common,1,QuickMenu_ListNumber,$(1) / $(0)
 Common,1,QuickMenu_PatternEdit,Editar
 Common,1,QuickMenu_MenuList,Lista de elementos del menú
-Common,1,QuickMenu_PatternInactive,Esconder
-Common,1,QuickMenu_PatternActive,Aplicar
+Common,1,QuickMenu_PatternInactive,esconder
+Common,1,QuickMenu_PatternActive,aplicar
 Common,1,QuickMenu_PatternNameEdit,Cambiar nombre de diseño
 Common,1,QuickMenu_PatternInitialize,Reiniciar
 Common,1,QuickMenu_PatternInactive_Text,"""$(0)"" oculto en la lista."
@@ -706,21 +706,21 @@ Common,1,QuickMenu_SaveError_Text2,"Actualmente, un elemento que no pertenece a 
 Common,1,QuickMenu_SaveError_Text3,m de la lista.<br><br> Reorganice los elementos de la categoría para poder guardarlos.
 Common,1,QuickMenu_SaveError_Text4,"No se puede guardar solo con ""Categoría"".<br><br> Agregue otra selección e intente guardar nuevamente."
 Common,1,QuickMenu_SaveConfirm_Text1,Hay duplicados. ¿Está seguro de que desea continuar?
-Common,1,QuickMenu_SaveConfirm_Text2,ause it is not supported on this platform.<br><br>Do you wish to add it?
+Common,1,QuickMenu_SaveConfirm_Text2,愀甀猀攀 椀琀 椀猀 渀漀琀 猀甀瀀瀀漀爀琀攀搀 漀渀 琀栀椀猀 瀀氀愀琀昀漀爀洀⸀㰀戀爀㸀㰀戀爀㸀䐀漀 礀漀甀 眀椀猀栀 琀漀 愀搀搀 椀琀㼀
 Common,1,QuickMenu_SaveConfirm_Text3,¿Desea aplicar el diseño $(0) al Menú rápido?
-Common,1,QuickMenu_ListTab_Text0,Todo
+Common,1,QuickMenu_ListTab_Text0,Hacer
 Common,1,QuickMenu_ListTab_Text1,Sólo menú rápido
 Common,1,QuickMenu_ListTab_Text2,Tareas/Misiones
 Common,1,QuickMenu_ListTab_Text3,Engranaje/Subpaleta
 Common,1,QuickMenu_ListTab_Text4,Comunicaciones
-Common,1,QuickMenu_ListTab_Text5,Charlar
+Common,1,QuickMenu_ListTab_Text5,charlar
 Common,1,QuickMenu_ListTab_Text6,Personal
 Common,1,QuickMenu_ListTab_Text7,Comercio
-Common,1,QuickMenu_ListTab_Text8,Sistema
+Common,1,QuickMenu_ListTab_Text8,sistema
 Common,1,QuickMenu_ListTab_Text9,Alternar página de acceso directo de Word
 Common,1,QuickMenu_ListTab_Text10,EJECUTAR MACROS DE CHAT
 Common,1,QuickMenu_ListTab_Text11,Alternar cámara/luz
-Common,1,QuickMenu_ListTab_Text12,Mover
+Common,1,QuickMenu_ListTab_Text12,Agente de mudanzas
 Common,1,QuickMenu_ListTab_Text13,Categorías
 Common,1,Caption15,Menú de equipos
 Common,1,Caption16,Menú personal
@@ -800,7 +800,7 @@ ShortcutCommand,0,SubWindowChange2,<%Function>切替
 ShortcutCommand,0,StartChat,チャット開始
 ShortcutCommand,1,VITA_Shortcut_Title,ATAJOS
 ShortcutCommand,1,VITA_Tab_Symbol,Arte simbólico
-ShortcutCommand,1,VITA_Tab_Chat,Charlar
+ShortcutCommand,1,VITA_Tab_Chat,charlar
 ShortcutCommand,1,SubWindowChange1,Cambiar <pict Sign_TRIANGLE>
 ShortcutCommand,1,VITA_Target,A:
 ShortcutCommand,1,SubWindowChange2,Cambiar <%Function>
@@ -832,7 +832,7 @@ UserCommand,1,UserCommand_Item1,Alternar visualización superior de caracteres
 UserCommand,1,UserCommand_Item2,Cambiar estado en línea
 UserCommand,1,UserCommand_Item4,Cambiar la distancia de la cámara
 UserCommand,1,OverheadDisplay_NoSENID,Ninguno
-UserCommand,1,OverheadDisplay_Item1,Esconder
+UserCommand,1,OverheadDisplay_Item1,esconder
 UserCommand,1,OverheadDisplay_Item2,Nombre del personaje
 UserCommand,1,OverheadDisplay_Item3,Nivel de clase/nombre del personaje
 UserCommand,1,OverheadDisplay_Item4,ID en línea de PSN/Nombre de ID del jugador
@@ -848,6 +848,6 @@ UserCommand,1,Camera_Item1,Ampliar el personaje
 UserCommand,1,Camera_Item2,Alejar el personaje
 UserCommand,1,TagName,: $(0)
 UserCommand,1,TitleNon,Sin título
-UserCommand,1,GuildNon,Sin alianza
+UserCommand,1,GuildNon,sin alianza
 UserCommand,1,OverheadDisplay_Item13,Nombre del personaje/HP y barra PP
 UserCommand,1,OverheadDisplay_Item14,Nombre del barco/Nombre del personaje
