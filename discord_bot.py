@@ -17,8 +17,8 @@ class BuscadorBot(commands.Bot):
         
         super().__init__(command_prefix="!", intents=intents)
         
-        # 2. Diccionario en memoria para búsquedas rápidas
-        self.index_datos = {} 
+        # 2. Lista en memoria para búsquedas rápidas
+        self.index_datos = [] 
 
     async def setup_hook(self):
         self.cargar_indices()
@@ -35,7 +35,7 @@ class BuscadorBot(commands.Bot):
         logger.info("Sincronización completada.")
 
     def cargar_indices(self):
-        """Lee los CSV locales y mapea los IDs al archivo correspondiente."""
+        """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
         self.index_datos.clear()
         
         # Agrega aquí los nombres de las carpetas que contienen tus CSV
@@ -51,7 +51,12 @@ class BuscadorBot(commands.Bot):
                             reader = csv.DictReader(f)
                             for row in reader:
                                 if 'id' in row:
-                                    self.index_datos[row['id']] = archivo_csv.name
+                                    self.index_datos.append({
+                                        'id': row['id'],
+                                        'text': row.get('text', ''),
+                                        'file': f"{dir_name}/{archivo_csv.name}",
+                                        'line': reader.line_num
+                                    })
                     except Exception as e:
                         logger.error(f"Error leyendo {archivo_csv.name}: {e}")
             else:
@@ -63,14 +68,45 @@ bot = BuscadorBot()
 
 # --- COMANDOS DE BARRA (SLASH COMMANDS) ---
 
-@bot.tree.command(name="buscar_id", description="Busca en qué archivo está un ID específico")
-@app_commands.describe(id_buscado="El ID de la línea que deseas encontrar")
+@bot.tree.command(name="buscar_id", description="Busca un ID o fragmento de texto en los archivos CSV")
+@app_commands.describe(id_buscado="El ID o texto que deseas encontrar")
 async def buscar_id(interaction: discord.Interaction, id_buscado: str):
-    archivo = bot.index_datos.get(id_buscado)
-    if archivo:
-        await interaction.response.send_message(f"✅ El ID **{id_buscado}** se encuentra en el archivo: `{archivo}`")
+    query = id_buscado.lower()
+    coincidencias = []
+    
+    for item in bot.index_datos:
+        if query in item['id'].lower() or query in item['text'].lower():
+            coincidencias.append(item)
+            
+    if not coincidencias:
+        await interaction.response.send_message(f"❌ No se encontraron coincidencias para: **{id_buscado}**")
+        return
+        
+    total = len(coincidencias)
+    if total == 1:
+        match = coincidencias[0]
+        mensaje = (
+            f"✅ **Se encontró 1 coincidencia:**\n"
+            f"📁 **Archivo:** `{match['file']}` (Línea {match['line']})\n"
+            f"🔑 **ID:** `{match['id']}`\n"
+            f"📝 **Texto:** {match['text']}"
+        )
+        await interaction.response.send_message(mensaje)
     else:
-        await interaction.response.send_message(f"❌ No se encontró el ID **{id_buscado}** en los registros.")
+        limite = 5
+        lineas = [f"✅ **Se encontraron {total} coincidencias (mostrando las primeras {limite}):**"]
+        for match in coincidencias[:limite]:
+            lineas.append(
+                f"📁 `{match['file']}` (Línea {match['line']}) ➔ 🔑 `{match['id']}`\n"
+                f"   📝 *Texto:* {match['text'][:150]}"
+            )
+        if total > limite:
+            lineas.append(f"*... y {total - limite} coincidencias más.*")
+            
+        mensaje = "\n".join(lineas)
+        if len(mensaje) > 2000:
+            mensaje = mensaje[:1990] + "\n..."
+        await interaction.response.send_message(mensaje)
 
 @bot.tree.command(name="recargar", description="Vuelve a leer los archivos CSV sin reiniciar el bot")
 async def recargar(interaction: discord.Interaction):
