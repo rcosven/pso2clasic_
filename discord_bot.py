@@ -15,10 +15,10 @@ CARPETAS = {
 
 class BuscadorBot(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix="!", intents=discord.Intents.default())
-
-    async def setup_hook(self):
-        await self.tree.sync()
+        # Creamos los intents y habilitamos message_content
+        intents = discord.Intents.default()
+        intents.message_content = True  # <--- ESTA LÍNEA ES CLAVE
+        super().__init__(command_prefix="!", intents=intents)
 
 bot = BuscadorBot()
 
