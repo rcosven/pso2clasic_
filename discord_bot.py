@@ -68,14 +68,14 @@ bot = BuscadorBot()
 
 # --- COMANDOS DE BARRA (SLASH COMMANDS) ---
 
-@bot.tree.command(name="buscar_id", description="Busca un ID o fragmento de texto en los archivos CSV")
-@app_commands.describe(id_buscado="El ID o texto que deseas encontrar")
+@bot.tree.command(name="buscar_id", description="Busca un fragmento de texto en los archivos CSV")
+@app_commands.describe(id_buscado="El texto que deseas encontrar")
 async def buscar_id(interaction: discord.Interaction, id_buscado: str):
     query = id_buscado.lower()
     coincidencias = []
     
     for item in bot.index_datos:
-        if query in item['id'].lower() or query in item['text'].lower():
+        if query in item['text'].lower():
             coincidencias.append(item)
             
     if not coincidencias:
@@ -86,9 +86,8 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
     if total == 1:
         match = coincidencias[0]
         mensaje = (
-            f"✅ **Se encontró 1 coincidencia:**\n"
+            f"✅ **Coincidencia encontrada:**\n"
             f"📁 **Archivo:** `{match['file']}` (Línea {match['line']})\n"
-            f"🔑 **ID:** `{match['id']}`\n"
             f"📝 **Texto:** {match['text']}"
         )
         await interaction.response.send_message(mensaje)
@@ -97,7 +96,7 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
         lineas = [f"✅ **Se encontraron {total} coincidencias (mostrando las primeras {limite}):**"]
         for match in coincidencias[:limite]:
             lineas.append(
-                f"📁 `{match['file']}` (Línea {match['line']}) ➔ 🔑 `{match['id']}`\n"
+                f"📁 `{match['file']}` (Línea {match['line']})\n"
                 f"   📝 *Texto:* {match['text'][:150]}"
             )
         if total > limite:
