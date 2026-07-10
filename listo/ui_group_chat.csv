@@ -1,4 +1,4 @@
-﻿section,group,id,text
+section,group,id,text
 GroupChat,0,GroupChat_Title,グループチャット
 GroupChat,0,GroupChat_SetMsg,登録中
 GroupChat,0,GroupChat_NewMsg,招待
@@ -144,16 +144,16 @@ GroupChat,1,GroupChat_MemberTab3,Lista de bloqueo de PSO2
 GroupChat,1,GroupChatError_Title,MENSAJE
 GroupChat,1,GroupChatError_ListNumFault,No se pudo mostrar el grupo.
 GroupChat,1,GroupChatError_MakeGroupFault,No se pudo crear el grupo.
-GroupChat,1,GroupChatError_MakeNGWordFault,El nombre del grupo o los comentarios del grupo<br>tienen caracteres que no se pueden utilizar.
-GroupChat,1,GroupChatError_MakeGroupMaxFault,No se pudo crear el Grupo<br>porque ha alcanzado el número máximo de miembros.
+GroupChat,1,GroupChatError_MakeNGWordFault,El nombre del grupo o los comentarios del grupo<br>Tienen caracteres que no se pueden utilizar.
+GroupChat,1,GroupChatError_MakeGroupMaxFault,El grupo no se pudo crear.<br>porque ha alcanzado el número máximo de socios.
 GroupChat,1,GroupChatError_RenameGroupFault,No se pudo editar el grupo.
-GroupChat,1,GroupChatError_RenameNGWordFault,El nombre del grupo o los comentarios del grupo<br>tienen caracteres que no se pueden utilizar.
+GroupChat,1,GroupChatError_RenameNGWordFault,El nombre del grupo o los comentarios del grupo<br>Tienen caracteres que no se pueden utilizar.
 GroupChat,1,GroupChatQues_Title,CONFIRMAR
-GroupChat,1,GroupChatQues_Banish,$(0) se eliminará del grupo.<br><br> ¿Está seguro de que desea continuar?
-GroupChat,1,GroupChatQues_Leader,$(0) será el líder.<br><br> ¿Está seguro de que desea continuar?
-GroupChat,1,GroupChatQues_Delete,"You will leave ""$(0)"".<br><br><yellow>*After leaving, you must be re-invited to rejoin.<c><br><br>Are you sure you wish to proceed?"
+GroupChat,1,GroupChatQues_Banish,$(0) se eliminará del grupo.<br><br>¿Está seguro de que desea continuar?
+GroupChat,1,GroupChatQues_Leader,$(0) será el líder.<br><br>¿Está seguro de que desea continuar?
+GroupChat,1,GroupChatQues_Delete,"Dejarás ""$(0)"".<br><br><yellow>*Después de salir, se le debe volver a invitar a volver a unirse.<c><br><br>¿Está seguro de que desea continuar?"
 GroupChat,1,GroupChatQC_Invite_Title,INVITACIÓN DE GRUPO
-GroupChat,1,GroupChatQC_Invite_Mess,"You received an invite from ""$(0)"" in $(1).<br>Would you like to open a reply window?<br><br>*You can also select [No] and send a reply later from<br>[Chat Settings] in the Main Menu."
+GroupChat,1,GroupChatQC_Invite_Mess,"Recibiste una invitación de ""$(0)"" en $(1).<br>¿Le gustaría abrir una ventana de respuesta?<br><br>*También puedes seleccionar [No] y enviar una respuesta más tarde desde<br>[Chat Settings] en el Menú Principal."
 GroupChat,1,GroupChatQC_Join_Log,$(1) se unió a $(0).
 GroupChat,1,NewGroupChat,Nueva invitación de grupo
 GroupChat,1,NewExpGroupChat,Recibiste una invitación de grupo.
@@ -194,7 +194,7 @@ GroupChat,1,FriendList_Tree_Offline,Amigos sin conexión que pueden ser invitado
 GroupChat,1,FriendList_Tree_BlackList,Obstruido
 GroupChat,1,FriendList_Tree_Member,Miembros de este grupo ($(0))
 GroupChat,1,FriendList_Tree_Invite,Amigos invitados ($(0))
-GroupChat,1,GroupList_NoItem,"con<br>""Crear grupo"", o aceptando una invitación de un amigo a un grupo <br>."
+GroupChat,1,GroupList_NoItem,"No te has unido a un grupo.<br><br>Puedes unirte al chat grupal invitando a amigos con<br>""Crear grupo"", o aceptando una invitación a un<br>Grupo de un amigo."
 GroupChat,1,InviteList_NoItem,No has sido invitado a ningún grupo.
 GroupChat,1,GroupChatDate,$(1)/$(0) $(2)
 GroupChat,1,GroupChatDateSunday,(Domingo)
@@ -205,24 +205,24 @@ GroupChat,1,GroupChatDateThursday,(Jueves)
 GroupChat,1,GroupChatDateFriday,(Viernes)
 GroupChat,1,GroupChatDateSaturday,(Sábado)
 GroupChat,1,GroupListLabel,$(0) ($(1))
-GroupChat,1,GroupListLabelMax,$(0)<c ff9933>($(1)) <c>
+GroupChat,1,GroupListLabelMax,$(0) <c ff9933>($(1))<c>
 GroupChat,1,GroupChatTost_GroupJoin,"$(0) se unió a ""$(1)""."
 GroupChat,1,GroupChatTost_InviteDeny2,Rechazaste la invitación de grupo.
 GroupChat,1,Popup_Inviterefuse,Rechazar invitación
 GroupChat,1,GroupChat_JoinMax_Title,VER EL NÚMERO DE GRUPOS UNIDOS
-GroupChat,1,GroupChat_JoinMax_Message,You have joined the maximum number of Groups and cannot join<br>any more. Please join the Group you have been invited to<br>upon leaving one of the Groups you have joined.
-GroupChat,1,GroupChatError_MakeEmptyFault,No se pudo crear el grupo porque dejó en blanco el nombre del grupo<br>y/o los comentarios del grupo.
-GroupChat,1,GroupChatError_RenameEmptyFault,El grupo no se pudo editar porque<br>dejó el nombre del grupo y/o los comentarios del grupo en blanco.
+GroupChat,1,GroupChat_JoinMax_Message,Te has unido al número máximo de grupos y no puedes unirte<br>ya no. Únase al grupo al que ha sido invitado<br>al abandonar uno de los Grupos a los que se ha unido.
+GroupChat,1,GroupChatError_MakeEmptyFault,No se pudo crear el grupo porque abandonaste el<br>Group Name and/or Group Comments blank.
+GroupChat,1,GroupChatError_RenameEmptyFault,El grupo no se pudo editar porque usted<br>Dejó en blanco el nombre del grupo y/o los comentarios del grupo.
 GroupChat,1,GroupChatError_NotFindTitle,VER GRUPOS
 GroupChat,1,GroupChatError_NotFindMessage,No se puede no unirse al Grupo porque no se pudo encontrar.
 GroupChat,1,GroupChatError_NotInviteTitle,VER GRUPOS
-GroupChat,1,GroupChatError_NotInviteMessage,No se puede unir al grupo porque<br>no has recibido una invitación.
+GroupChat,1,GroupChatError_NotInviteMessage,No se puede unir al Grupo porque<br>no has recibido una invitación.
 GroupChat,1,GroupChatError_JoiningTitle,CONSULTAR MATRÍCULA DE GRUPOS
 GroupChat,1,GroupChatError_JoiningMessage,Ya te has unido a este grupo.
 GroupChat,1,GroupChatTost_ListNumFault,No se pudo mostrar el grupo.
 GroupChat,1,GroupChatTost_PopupInvitedCansel,Cancelar invitación
 GroupChat,1,GroupChatTost_TitleInvitedCansel,CONFIRMAR CANCELACIÓN DE INVITACIÓN
-GroupChat,1,GroupChatTost_QuesInvitedCansel,Esto cancelará la invitación de $(1) a $(0).<br><br> ¿Está seguro de que desea continuar?
+GroupChat,1,GroupChatTost_QuesInvitedCansel,Esto cancelará la invitación de $(1) a $(0).<br><br>¿Está seguro de que desea continuar?
 GroupChat,1,GroupChatTost_ButtonInvitedCansel,Cancelar invitación
 GroupChat,1,GroupChatTost_ToastInvitedCansel,Invitación cancelada.
 GroupChat,1,GroupChatTost_ToastInvitedCansel1,El amigo que seleccionaste ya se unió a este grupo.
