@@ -16,12 +16,12 @@ class BuscadorBot(commands.Bot):
         # 2. Diccionario en memoria para búsquedas rápidas
         self.index_datos = {} 
 
-async def setup_hook(self):
+    async def setup_hook(self):
         self.tree.clear_commands(guild=None) 
         self.cargar_indices()
         
         # --- CAMBIO AQUÍ PARA SINCRONIZACIÓN INSTANTÁNEA ---
-        # Reemplaza los números por el ID real de tu servidor de Discord
+        # ¡IMPORTANTE! Reemplaza los números por el ID real de tu servidor de Discord
         mi_servidor = discord.Object(id=123456789012345678) 
         
         # Copiamos los comandos a ese servidor en específico
