@@ -717,8 +717,8 @@ Race,0,NoCast,キャスト以外
 Race,0,NoDewman,デューマン以外
 Race,1,Title,Carrera
 Race,1,Human,Humano
-Race,1,Newman,hombre nuevo
-Race,1,Cast,ELENCO
+Race,1,Newman,Newman
+Race,1,Cast,Cast
 Race,1,Dewman,Deuman
 Race,1,All,Todo
 Race,1,NoHuman,Todos menos humanos
@@ -757,21 +757,21 @@ Class,1,Class,Clase
 Class,1,Main,Clase principal
 Class,1,Sub,Subclase
 Class,1,None,Ninguno
-Class,1,Job00,Cazador
-Class,1,Job01,Guardabosque
-Class,1,Job02,Fuerza
-Class,1,Job03,Combatiente
-Class,1,Job04,Artillero
-Class,1,Job05,técnico
-Class,1,Job06,Más valiente
-Class,1,Job07,Bravucón
-Class,1,Job08,Desafiador
-Class,1,Job09,Invocador
-Class,1,Job10,guerrero de batalla
-Class,1,Job11,Héroe
-Class,1,Job12,Fantasma
+Class,1,Job00,Hunter
+Class,1,Job01,Ranger
+Class,1,Job02,Force
+Class,1,Job03,Fighter
+Class,1,Job04,Gunner
+Class,1,Job05,Techter
+Class,1,Job06,Braver
+Class,1,Job07,Bouncer
+Class,1,Job08,Challenger
+Class,1,Job09,Summoner
+Class,1,Job10,Battle Warrior
+Class,1,Job11,Hero
+Class,1,Job12,Phantom
 Class,1,Job13,Étoile
-Class,1,Job14,Lustre
+Class,1,Job14,Luster
 Class,1,All,Todo
 Login,0,SaveAccount,アカウントを保存
 Login,0,SavePassword,パスワードを保存
@@ -2121,931 +2121,931 @@ LobbyAction,0,ChangeCtrWindow,<%ChangeCtrlWindowForward><yellow>操作ウィン�
 LobbyAction,0,LobbyAction_Disable_Toast,このロビーアクションは、エステ内では使用できません。
 LobbyAction,0,LobbyAction_EmotionType_Display,$(0)（$(1)）
 LobbyAction,0,LobbyAction_Unsupported_Toast,実行したロビーアクションは『PSO2』ブロック非対応です。
-LobbyAction,1,LobbyAction_Monomane,Personificar
-LobbyAction,1,LobbyAction_Reaction,Reacción
-LobbyAction,1,LobbyAction_Greet,Saludar
-LobbyAction,1,LobbyAction_Wave,Ola
-LobbyAction,1,LobbyAction_Bow,Arco
-LobbyAction,1,LobbyAction_Salute,Saludo
-LobbyAction,1,LobbyAction_Yes,Confirmar
-LobbyAction,1,LobbyAction_No,Denegar
-LobbyAction,1,LobbyAction_Sorry,Disculparse
-LobbyAction,1,LobbyAction_Provoke,Provocar
-LobbyAction,1,LobbyAction_Praise,Elogio
-LobbyAction,1,LobbyAction_Kiss,Beso
-LobbyAction,1,LobbyAction_Howareyou,¿Qué pasa?
-LobbyAction,1,LobbyAction_You,Punto
-LobbyAction,1,LobbyAction_Yell,animate
-LobbyAction,1,LobbyAction_Guts,mentalizado
-LobbyAction,1,LobbyAction_Laugh,gran risa
-LobbyAction,1,LobbyAction_Clap,Aplaudir
-LobbyAction,1,LobbyAction_Sit1,sentarse 1
-LobbyAction,1,LobbyAction_Sit2,sentarse 2
-LobbyAction,1,LobbyAction_Pose1,postura 1
-LobbyAction,1,LobbyAction_Pose2,postura 2
-LobbyAction,1,LobbyAction_Dance1,Danza 1
-LobbyAction,1,LobbyAction_Dance2,baile 2
-LobbyAction,1,LobbyAction_darkerblast,Explosión oscura
-LobbyAction,1,LobbyAction_darkblast2,Explosión oscura 2
-LobbyAction,1,LobbyAction_darkblast3,Explosión oscura 3
-LobbyAction,1,LobbyAction_darkblast4,Explosión oscura 4
-LobbyAction,1,LobbyAction_Liveit,¡Déjamelo a mí!
-LobbyAction,1,LobbyAction_Deny,Denegar
-LobbyAction,1,LobbyAction_Tired,Indispuesto
-LobbyAction,1,LobbyAction_Happy,Encantado
-LobbyAction,1,LobbyAction_Angry,Enojado
-LobbyAction,1,LobbyAction_Sad,Triste
-LobbyAction,1,LobbyAction_Fun,Optimismo
-LobbyAction,1,LobbyAction_Disgust,Harto
-LobbyAction,1,LobbyAction_Worry,Preocupado
-LobbyAction,1,LobbyAction_Shy,Avergonzado
-LobbyAction,1,LobbyAction_Surprise,Choque
-LobbyAction,1,LobbyAction_Frustrated,Frustrado
-LobbyAction,1,LobbyAction_Cry,Llorar
-LobbyAction,1,LobbyAction_Ball,Cooperar
-LobbyAction,1,LobbyAction_Peep,Ojeada
-LobbyAction,1,LobbyAction_Flag,Levantar la cabeza
-LobbyAction,1,LobbyAction_Mdtrn,postura 6
-LobbyAction,1,LobbyAction_Sit3,sentarse 3
-LobbyAction,1,LobbyAction_mdpose_a1,postura 7
-LobbyAction,1,LobbyAction_mdpose_b1,postura 8
-LobbyAction,1,LobbyAction_yesorno,X o O
-LobbyAction,1,LobbyAction_cam,Saque la cámara
-LobbyAction,1,LobbyAction_pray,Visitación
-LobbyAction,1,LobbyAction_hima,Estirar
-LobbyAction,1,LobbyAction_Bed1,Cama 1
-LobbyAction,1,LobbyAction_Bed2,Cama 2
+LobbyAction,1,LobbyAction_Monomane,Impersonate
+LobbyAction,1,LobbyAction_Reaction,Reaction
+LobbyAction,1,LobbyAction_Greet,Greet
+LobbyAction,1,LobbyAction_Wave,Wave
+LobbyAction,1,LobbyAction_Bow,Bow
+LobbyAction,1,LobbyAction_Salute,Salute
+LobbyAction,1,LobbyAction_Yes,Confirm
+LobbyAction,1,LobbyAction_No,Deny
+LobbyAction,1,LobbyAction_Sorry,Apologize
+LobbyAction,1,LobbyAction_Provoke,Provoke
+LobbyAction,1,LobbyAction_Praise,Praise
+LobbyAction,1,LobbyAction_Kiss,Kiss
+LobbyAction,1,LobbyAction_Howareyou,What's up?
+LobbyAction,1,LobbyAction_You,Point
+LobbyAction,1,LobbyAction_Yell,Cheer on
+LobbyAction,1,LobbyAction_Guts,Psyched
+LobbyAction,1,LobbyAction_Laugh,Big Laugh
+LobbyAction,1,LobbyAction_Clap,Clap
+LobbyAction,1,LobbyAction_Sit1,Sit 1
+LobbyAction,1,LobbyAction_Sit2,Sit 2
+LobbyAction,1,LobbyAction_Pose1,Pose 1
+LobbyAction,1,LobbyAction_Pose2,Pose 2
+LobbyAction,1,LobbyAction_Dance1,Dance 1
+LobbyAction,1,LobbyAction_Dance2,Dance 2
+LobbyAction,1,LobbyAction_darkerblast,Dark Blast
+LobbyAction,1,LobbyAction_darkblast2,Dark Blast 2
+LobbyAction,1,LobbyAction_darkblast3,Dark Blast 3
+LobbyAction,1,LobbyAction_darkblast4,Dark Blast 4
+LobbyAction,1,LobbyAction_Liveit,Leave it to me!
+LobbyAction,1,LobbyAction_Deny,Deny
+LobbyAction,1,LobbyAction_Tired,Under the Weather
+LobbyAction,1,LobbyAction_Happy,Thrilled
+LobbyAction,1,LobbyAction_Angry,Angry
+LobbyAction,1,LobbyAction_Sad,Sad
+LobbyAction,1,LobbyAction_Fun,High Spirits
+LobbyAction,1,LobbyAction_Disgust,Fed Up
+LobbyAction,1,LobbyAction_Worry,Worried
+LobbyAction,1,LobbyAction_Shy,Embarrassed
+LobbyAction,1,LobbyAction_Surprise,Shock
+LobbyAction,1,LobbyAction_Frustrated,Frustrated
+LobbyAction,1,LobbyAction_Cry,Cry
+LobbyAction,1,LobbyAction_Ball,Play Ball
+LobbyAction,1,LobbyAction_Peep,Peek
+LobbyAction,1,LobbyAction_Flag,Raise Overhead
+LobbyAction,1,LobbyAction_Mdtrn,Pose 6
+LobbyAction,1,LobbyAction_Sit3,Sit 3
+LobbyAction,1,LobbyAction_mdpose_a1,Pose 7
+LobbyAction,1,LobbyAction_mdpose_b1,Pose 8
+LobbyAction,1,LobbyAction_yesorno,X Or O
+LobbyAction,1,LobbyAction_cam,Pull Out Camera
+LobbyAction,1,LobbyAction_pray,Visitation
+LobbyAction,1,LobbyAction_hima,Stretch
+LobbyAction,1,LobbyAction_Bed1,Bed 1
+LobbyAction,1,LobbyAction_Bed2,Bed 2
 LobbyAction,1,LobbyAction_Sexy,Sexy
-LobbyAction,1,LobbyAction_Drunk,Achispado
-LobbyAction,1,LobbyAction_Pose3,postura 3
-LobbyAction,1,LobbyAction_Pose4,postura 4
-LobbyAction,1,LobbyAction_Pose5,postura 5
-LobbyAction,1,LobbyAction_Proudback,Mostrar Atrás
-LobbyAction,1,LobbyAction_Proudarm,Mostrar brazos
-LobbyAction,1,LobbyAction_Proudleg,Mostrar piernas
-LobbyAction,1,LobbyAction_Dance3,baile 3
-LobbyAction,1,LobbyAction_Dance4,baile 4
-LobbyAction,1,LobbyAction_Dance5,Danza 5
-LobbyAction,1,LobbyAction_Sing,Cantar
-LobbyAction,1,LobbyAction_Gj,Prestigio
-LobbyAction,1,LobbyAction_Pleasure,¡Enorme!
-LobbyAction,1,LobbyAction_Talk,Apelación persistente
-LobbyAction,1,LobbyAction_Pains,Dolorido
-LobbyAction,1,LobbyAction_Mc,En el micrófono
-LobbyAction,1,LobbyAction_Dance6,Danza 6
-LobbyAction,1,LobbyAction_clight1,Luz oscilante 1
-LobbyAction,1,LobbyAction_clight2,Luz oscilante 2
-LobbyAction,1,LobbyAction_clight3,Luz oscilante 3
-LobbyAction,1,LobbyAction_Dance7,Danza 7
-LobbyAction,1,LobbyAction_Dance8,baile 8
-LobbyAction,1,LobbyAction_go,¡Hagamos esto!
-LobbyAction,1,LobbyAction_moji,Tímido
-LobbyAction,1,LobbyAction_comic,Ley de comedia
-LobbyAction,1,LobbyAction_present,Regalo
-LobbyAction,1,LobbyAction_water_a,Chapoteo
-LobbyAction,1,LobbyAction_water_b,Salpicarse
-LobbyAction,1,LobbyAction_hot,"Hombre, hace calor."
-LobbyAction,1,LobbyAction_kagamu,Encanto
-LobbyAction,1,LobbyAction_Dance9,Danza 9
-LobbyAction,1,LobbyAction_Dance10,Danza 10
-LobbyAction,1,LobbyAction_Dance11,Danza 11
-LobbyAction,1,LobbyAction_Dance12,baile 12
-LobbyAction,1,LobbyAction_Sit4,sentarse 4
-LobbyAction,1,LobbyAction_Sit5,sentarse 5
-LobbyAction,1,LobbyAction_mdpose_a2,brazos cruzados
-LobbyAction,1,LobbyAction_mdpose_b2,¡Hola!
-LobbyAction,1,LobbyAction_mdpose_a3,Modelado 1
-LobbyAction,1,LobbyAction_mdpose_b3,Modelado 2
+LobbyAction,1,LobbyAction_Drunk,Tipsy
+LobbyAction,1,LobbyAction_Pose3,Pose 3
+LobbyAction,1,LobbyAction_Pose4,Pose 4
+LobbyAction,1,LobbyAction_Pose5,Pose 5
+LobbyAction,1,LobbyAction_Proudback,Show off Back
+LobbyAction,1,LobbyAction_Proudarm,Show off Arms
+LobbyAction,1,LobbyAction_Proudleg,Show off Legs
+LobbyAction,1,LobbyAction_Dance3,Dance 3
+LobbyAction,1,LobbyAction_Dance4,Dance 4
+LobbyAction,1,LobbyAction_Dance5,Dance 5
+LobbyAction,1,LobbyAction_Sing,Sing
+LobbyAction,1,LobbyAction_Gj,Kudos
+LobbyAction,1,LobbyAction_Pleasure,Tremendous!
+LobbyAction,1,LobbyAction_Talk,Nagging Appeal
+LobbyAction,1,LobbyAction_Pains,Pained
+LobbyAction,1,LobbyAction_Mc,On the Mic
+LobbyAction,1,LobbyAction_Dance6,Dance 6
+LobbyAction,1,LobbyAction_clight1,Swing Light 1
+LobbyAction,1,LobbyAction_clight2,Swing Light 2
+LobbyAction,1,LobbyAction_clight3,Swing Light 3
+LobbyAction,1,LobbyAction_Dance7,Dance 7
+LobbyAction,1,LobbyAction_Dance8,Dance 8
+LobbyAction,1,LobbyAction_go,Let's do this!
+LobbyAction,1,LobbyAction_moji,Bashful
+LobbyAction,1,LobbyAction_comic,Comedy Act
+LobbyAction,1,LobbyAction_present,Gift
+LobbyAction,1,LobbyAction_water_a,Splash
+LobbyAction,1,LobbyAction_water_b,Get Splashed
+LobbyAction,1,LobbyAction_hot,"Man, it's hot."
+LobbyAction,1,LobbyAction_kagamu,Charm
+LobbyAction,1,LobbyAction_Dance9,Dance 9
+LobbyAction,1,LobbyAction_Dance10,Dance 10
+LobbyAction,1,LobbyAction_Dance11,Dance 11
+LobbyAction,1,LobbyAction_Dance12,Dance 12
+LobbyAction,1,LobbyAction_Sit4,Sit 4
+LobbyAction,1,LobbyAction_Sit5,Sit 5
+LobbyAction,1,LobbyAction_mdpose_a2,Cross Arms
+LobbyAction,1,LobbyAction_mdpose_b2,Hey there!
+LobbyAction,1,LobbyAction_mdpose_a3,Modelling 1
+LobbyAction,1,LobbyAction_mdpose_b3,Modelling 2
 LobbyAction,1,LobbyAction_animal,Animal
-LobbyAction,1,LobbyAction_taiso,Preparándose
-LobbyAction,1,LobbyAction_boxing,Boxeo
-LobbyAction,1,LobbyAction_enemy,enemigo 1
-LobbyAction,1,LobbyAction_riseki,En espera
-LobbyAction,1,LobbyAction_kick,Patada
-LobbyAction,1,LobbyAction_punch,Golpe tonto
-LobbyAction,1,LobbyAction_chiba,Movimiento especial
-LobbyAction,1,LobbyAction_ochokuri,Fastidiar
-LobbyAction,1,LobbyAction_kimepose,postura 9
-LobbyAction,1,LobbyAction_mdwalk,En la pasarela
-LobbyAction,1,LobbyAction_kashige,Cabezal inclinable
-LobbyAction,1,LobbyAction_hello2,Saludo 2
-LobbyAction,1,LobbyAction_aid2,animar a 2
-LobbyAction,1,LobbyAction_pains2,Maldito
-LobbyAction,1,LobbyAction_chu2,postura 10
-LobbyAction,1,LobbyAction_salute2,Saludo 2
-LobbyAction,1,LobbyAction_ichitarou,Acrobacia
-LobbyAction,1,LobbyAction_enomoto,Alt. Modelado
-LobbyAction,1,LobbyAction_symbolP,Dibujar P
-LobbyAction,1,LobbyAction_symbolS,Dibujar S
-LobbyAction,1,LobbyAction_symbolO,Dibujar O
-LobbyAction,1,LobbyAction_symbol2,Sorteo 2
-LobbyAction,1,LobbyAction_wave2,Ola 2
-LobbyAction,1,LobbyAction_bow2,Gracias 2
-LobbyAction,1,LobbyAction_kanpai,Salud
+LobbyAction,1,LobbyAction_taiso,Getting Ready
+LobbyAction,1,LobbyAction_boxing,Boxing
+LobbyAction,1,LobbyAction_enemy,Enemy 1
+LobbyAction,1,LobbyAction_riseki,On Standby
+LobbyAction,1,LobbyAction_kick,Kick
+LobbyAction,1,LobbyAction_punch,Smack Silly
+LobbyAction,1,LobbyAction_chiba,Special Move
+LobbyAction,1,LobbyAction_ochokuri,Tease
+LobbyAction,1,LobbyAction_kimepose,Pose 9
+LobbyAction,1,LobbyAction_mdwalk,On the Catwalk
+LobbyAction,1,LobbyAction_kashige,Tilt Head
+LobbyAction,1,LobbyAction_hello2,Greeting 2
+LobbyAction,1,LobbyAction_aid2,Cheer On 2
+LobbyAction,1,LobbyAction_pains2,Cursed
+LobbyAction,1,LobbyAction_chu2,Pose 10
+LobbyAction,1,LobbyAction_salute2,Salute 2
+LobbyAction,1,LobbyAction_ichitarou,Acrobatics
+LobbyAction,1,LobbyAction_enomoto,Alt. Modelling
+LobbyAction,1,LobbyAction_symbolP,Draw P
+LobbyAction,1,LobbyAction_symbolS,Draw S
+LobbyAction,1,LobbyAction_symbolO,Draw O
+LobbyAction,1,LobbyAction_symbol2,Draw 2
+LobbyAction,1,LobbyAction_wave2,Wave 2
+LobbyAction,1,LobbyAction_bow2,Thank 2
+LobbyAction,1,LobbyAction_kanpai,Cheers
 LobbyAction,1,LobbyAction_sc5,Space Channel 5 Dance
-LobbyAction,1,LobbyAction_fireworks,Fuegos artificiales
-LobbyAction,1,LobbyAction_pose11,postura 11
-LobbyAction,1,LobbyAction_pose12,Alegría
-LobbyAction,1,LobbyAction_champagne,Círculo de ganadores
-LobbyAction,1,LobbyAction_imitateBB,Béisbol aéreo
-LobbyAction,1,LobbyAction_fishing,Pesca
-LobbyAction,1,LobbyAction_yopparai,Ebrio
-LobbyAction,1,LobbyAction_enomoto4,Esperando alrededor 2
-LobbyAction,1,LobbyAction_virtualon,Virtual encendido
-LobbyAction,1,LobbyAction_pose13,postura 12
-LobbyAction,1,LobbyAction_kyouki,Lleno de alegría
-LobbyAction,1,LobbyAction_line,¡Formad una fila!
-LobbyAction,1,LobbyAction_pose14,postura 13
-LobbyAction,1,LobbyAction_halloween,¡Truco o trato!
-LobbyAction,1,LobbyAction_crash,impresionado
-LobbyAction,1,LobbyAction_cracker,Popper de fiesta
-LobbyAction,1,LobbyAction_pose15,postura 14
-LobbyAction,1,LobbyAction_massgame1,Letrero (rojo/azul)
-LobbyAction,1,LobbyAction_massgame2,Letrero (verde/amarillo)
-LobbyAction,1,LobbyAction_massgame3,Letrero (Blanco/Negro)
-LobbyAction,1,LobbyAction_pose16,postura 15
-LobbyAction,1,LobbyAction_ice,Pelea de bolas de nieve
-LobbyAction,1,LobbyAction_eieio,"¡Oye, oye, oh!"
-LobbyAction,1,LobbyAction_kick2,Patada 2
-LobbyAction,1,LobbyAction_stylish,Salto espacial
-LobbyAction,1,LobbyAction_symbol0,Dibujar cero
-LobbyAction,1,LobbyAction_symbol1,Sorteo 1
-LobbyAction,1,LobbyAction_symbol3,Sorteo 3
-LobbyAction,1,LobbyAction_symbol4,Sorteo 4
-LobbyAction,1,LobbyAction_symbol5,Sorteo 5
-LobbyAction,1,LobbyAction_symbol6,Sorteo 6
-LobbyAction,1,LobbyAction_symbol7,Sorteo 7
-LobbyAction,1,LobbyAction_symbol8,Sorteo 8
-LobbyAction,1,LobbyAction_symbol9,Sorteo 9
-LobbyAction,1,LobbyAction_bubble,Soplar burbujas
-LobbyAction,1,LobbyAction_enemy2,enemigo 2
-LobbyAction,1,LobbyAction_umbrella1,Paraguas de aire
-LobbyAction,1,LobbyAction_umbrella2,Paraguas real
-LobbyAction,1,LobbyAction_dummy,ficticio
-LobbyAction,1,LobbyAction_eat,Comer
-LobbyAction,1,LobbyAction_pose18,postura 17
-LobbyAction,1,LobbyAction_fear,Atemorizado
-LobbyAction,1,LobbyAction_clean,Poner en orden
+LobbyAction,1,LobbyAction_fireworks,Fireworks
+LobbyAction,1,LobbyAction_pose11,Pose 11
+LobbyAction,1,LobbyAction_pose12,Cheer
+LobbyAction,1,LobbyAction_champagne,Winner's Circle
+LobbyAction,1,LobbyAction_imitateBB,Air Baseball
+LobbyAction,1,LobbyAction_fishing,Fishing
+LobbyAction,1,LobbyAction_yopparai,Drunk
+LobbyAction,1,LobbyAction_enomoto4,Waiting Around 2
+LobbyAction,1,LobbyAction_virtualon,Virtual-On
+LobbyAction,1,LobbyAction_pose13,Pose 12
+LobbyAction,1,LobbyAction_kyouki,Overjoyed
+LobbyAction,1,LobbyAction_line,Form a Line!
+LobbyAction,1,LobbyAction_pose14,Pose 13
+LobbyAction,1,LobbyAction_halloween,Trick or Treat!
+LobbyAction,1,LobbyAction_crash,Blown Away
+LobbyAction,1,LobbyAction_cracker,Party Popper
+LobbyAction,1,LobbyAction_pose15,Pose 14
+LobbyAction,1,LobbyAction_massgame1,Signboard (Red/Blue)
+LobbyAction,1,LobbyAction_massgame2,Signboard (Green/Yellow)
+LobbyAction,1,LobbyAction_massgame3,Signboard (White/Black)
+LobbyAction,1,LobbyAction_pose16,Pose 15
+LobbyAction,1,LobbyAction_ice,Snowball Fight
+LobbyAction,1,LobbyAction_eieio,"Hey, hey, oh!"
+LobbyAction,1,LobbyAction_kick2,Kick 2
+LobbyAction,1,LobbyAction_stylish,Space Jump
+LobbyAction,1,LobbyAction_symbol0,Draw Zero
+LobbyAction,1,LobbyAction_symbol1,Draw 1
+LobbyAction,1,LobbyAction_symbol3,Draw 3
+LobbyAction,1,LobbyAction_symbol4,Draw 4
+LobbyAction,1,LobbyAction_symbol5,Draw 5
+LobbyAction,1,LobbyAction_symbol6,Draw 6
+LobbyAction,1,LobbyAction_symbol7,Draw 7
+LobbyAction,1,LobbyAction_symbol8,Draw 8
+LobbyAction,1,LobbyAction_symbol9,Draw 9
+LobbyAction,1,LobbyAction_bubble,Blow Bubbles
+LobbyAction,1,LobbyAction_enemy2,Enemy 2
+LobbyAction,1,LobbyAction_umbrella1,Air Umbrella
+LobbyAction,1,LobbyAction_umbrella2,Real Umbrella
+LobbyAction,1,LobbyAction_dummy,dummy
+LobbyAction,1,LobbyAction_eat,Eat
+LobbyAction,1,LobbyAction_pose18,Pose 17
+LobbyAction,1,LobbyAction_fear,Frightened
+LobbyAction,1,LobbyAction_clean,Tidy Up
 LobbyAction,1,LobbyAction_virtualon2,Virtual-On 2
-LobbyAction,1,LobbyAction_volley,Voleibol
-LobbyAction,1,LobbyAction_pose19,postura 18
-LobbyAction,1,LobbyAction_fireworks2,fuegos artificiales 2
-LobbyAction,1,LobbyAction_pose20,postura 19
-LobbyAction,1,LobbyAction_freekick,Tiro libre
-LobbyAction,1,LobbyAction_pose21,postura 20
-LobbyAction,1,LobbyAction_jump,boingboing
-LobbyAction,1,LobbyAction_pose22,postura 21
-LobbyAction,1,LobbyAction_aura,Pose de ARCAS
-LobbyAction,1,LobbyAction_surprise2,Choque 2
-LobbyAction,1,LobbyAction_magichat,truco de magia
-LobbyAction,1,LobbyAction_pose23,postura 22
-LobbyAction,1,LobbyAction_Sdogeza,Súper reverencia
-LobbyAction,1,LobbyAction_bow3,Gracias 3
-LobbyAction,1,LobbyAction_jelly,Bolsa para bebidas
-LobbyAction,1,LobbyAction_kouhoutai2,¡Hora del ramen!
-LobbyAction,1,LobbyAction_kouhoutai3,complacedores del público
-LobbyAction,1,LobbyAction_airiai,Corte aéreo
-LobbyAction,1,LobbyAction_nekopose,Postura del gatito
+LobbyAction,1,LobbyAction_volley,Volleyball
+LobbyAction,1,LobbyAction_pose19,Pose 18
+LobbyAction,1,LobbyAction_fireworks2,Fireworks 2
+LobbyAction,1,LobbyAction_pose20,Pose 19
+LobbyAction,1,LobbyAction_freekick,Free Kick
+LobbyAction,1,LobbyAction_pose21,Pose 20
+LobbyAction,1,LobbyAction_jump,Boing Boing
+LobbyAction,1,LobbyAction_pose22,Pose 21
+LobbyAction,1,LobbyAction_aura,ARKS Pose
+LobbyAction,1,LobbyAction_surprise2,Shock 2
+LobbyAction,1,LobbyAction_magichat,Magic Trick
+LobbyAction,1,LobbyAction_pose23,Pose 22
+LobbyAction,1,LobbyAction_Sdogeza,Super Kowtow
+LobbyAction,1,LobbyAction_bow3,Thank 3
+LobbyAction,1,LobbyAction_jelly,Drink Pouch
+LobbyAction,1,LobbyAction_kouhoutai2,Ramen Time!
+LobbyAction,1,LobbyAction_kouhoutai3,Crowdpleasers
+LobbyAction,1,LobbyAction_airiai,Air Slash
+LobbyAction,1,LobbyAction_nekopose,Kitty Pose
 LobbyAction,1,LobbyAction_kancho,Kancho
-LobbyAction,1,LobbyAction_bang,explosión explosión
-LobbyAction,1,LobbyAction_gravure,Pose de glamour 2
-LobbyAction,1,LobbyAction_bouquet,Ramo
-LobbyAction,1,LobbyAction_change,Despertar
-LobbyAction,1,LobbyAction_watermelon,Sandía dividida
-LobbyAction,1,LobbyAction_hug,Abrazo
-LobbyAction,1,LobbyAction_pose24,postura 23
-LobbyAction,1,LobbyAction_janken,"Piedra, Papel o Tijera"
-LobbyAction,1,LobbyAction_icchou,Aplausos
-LobbyAction,1,LobbyAction_flash,idea brillante
-LobbyAction,1,LobbyAction_sulk,Estar mohíno
-LobbyAction,1,LobbyAction_gravitydaze,Control de gravedad
-LobbyAction,1,LobbyAction_pose25,postura 24
-LobbyAction,1,LobbyAction_emiria,Postura de Emilia
-LobbyAction,1,LobbyAction_beckon,¡Por aquí!
+LobbyAction,1,LobbyAction_bang,Bang Bang
+LobbyAction,1,LobbyAction_gravure,Glamour Pose 2
+LobbyAction,1,LobbyAction_bouquet,Bouquet
+LobbyAction,1,LobbyAction_change,Awakening
+LobbyAction,1,LobbyAction_watermelon,Watermelon Split
+LobbyAction,1,LobbyAction_hug,Hug
+LobbyAction,1,LobbyAction_pose24,Pose 23
+LobbyAction,1,LobbyAction_janken,Rock Paper Scissors
+LobbyAction,1,LobbyAction_icchou,Clapping
+LobbyAction,1,LobbyAction_flash,Bright Idea
+LobbyAction,1,LobbyAction_sulk,Sulk
+LobbyAction,1,LobbyAction_gravitydaze,Gravity Control
+LobbyAction,1,LobbyAction_pose25,Pose 24
+LobbyAction,1,LobbyAction_emiria,Emilia Pose
+LobbyAction,1,LobbyAction_beckon,Over Here!
 LobbyAction,1,LobbyAction_persona5,Persona 5
-LobbyAction,1,LobbyAction_stroke,Mascota
-LobbyAction,1,LobbyAction_pardon,Todos los oídos
-LobbyAction,1,LobbyAction_papercraft,Avión de papel
-LobbyAction,1,LobbyAction_tub,Lavabo que cae
-LobbyAction,1,LobbyAction_mock,Tomar el pelo
-LobbyAction,1,LobbyAction_circle,Grupo
-LobbyAction,1,LobbyAction_nira,NieR: Autómatas
-LobbyAction,1,LobbyAction_tasty,¡Sabroso!
-LobbyAction,1,LobbyAction_kabuki,kabuki
-LobbyAction,1,LobbyAction_hagibeto,Cuerpo Madre 1
-LobbyAction,1,LobbyAction_orqufull,Cuerpo Madre 2
-LobbyAction,1,LobbyAction_koori,Cuerpo Madre 3
-LobbyAction,1,LobbyAction_fukitobasu,Arrancar
-LobbyAction,1,LobbyAction_ghost,Obsesionado
-LobbyAction,1,LobbyAction_hitugipose,Postura de Hitsugi
-LobbyAction,1,LobbyAction_warpose,Postura de victoria 1
-LobbyAction,1,LobbyAction_missile,Misil
-LobbyAction,1,LobbyAction_pitfall,Trampa
-LobbyAction,1,LobbyAction_swordpose,Espada lista
-LobbyAction,1,LobbyAction_dfwarp,Deformación Falz Oscura
-LobbyAction,1,LobbyAction_spearpose,Lanza lista
-LobbyAction,1,LobbyAction_kendama,kendama
-LobbyAction,1,LobbyAction_atorie,Taller
-LobbyAction,1,LobbyAction_dengekipose,Postura Dengeki
-LobbyAction,1,LobbyAction_winnerpose2,Postura de victoria 2
-LobbyAction,1,LobbyAction_mothercluster4,Cuerpo Madre 4
-LobbyAction,1,LobbyAction_mothercluster5,Cuerpo Madre 5
-LobbyAction,1,LobbyAction_deadoralive1,Pose de victoria viva o muerta
-LobbyAction,1,LobbyAction_deadoralive2,Combo vivo o muerto
-LobbyAction,1,LobbyAction_magicbookpose,Blandir libro de hechizos
-LobbyAction,1,LobbyAction_curse2,Maldito 2
-LobbyAction,1,LobbyAction_swordpose2,Espada Laconio
-LobbyAction,1,LobbyAction_hunting,En la caza
-LobbyAction,1,LobbyAction_heart,hacer un corazón
-LobbyAction,1,LobbyAction_magicsword,Magia de mejora de armas
-LobbyAction,1,LobbyAction_throw,¡Boom!
-LobbyAction,1,LobbyAction_staffpose,Personal listo
+LobbyAction,1,LobbyAction_stroke,Pet
+LobbyAction,1,LobbyAction_pardon,All Ears
+LobbyAction,1,LobbyAction_papercraft,Paper Airplane
+LobbyAction,1,LobbyAction_tub,Falling Washbasin
+LobbyAction,1,LobbyAction_mock,Poke Fun
+LobbyAction,1,LobbyAction_circle,Huddle
+LobbyAction,1,LobbyAction_nira,NieR: Automata
+LobbyAction,1,LobbyAction_tasty,Tasty!
+LobbyAction,1,LobbyAction_kabuki,Kabuki
+LobbyAction,1,LobbyAction_hagibeto,Mother Corps 1
+LobbyAction,1,LobbyAction_orqufull,Mother Corps 2
+LobbyAction,1,LobbyAction_koori,Mother Corps 3
+LobbyAction,1,LobbyAction_fukitobasu,Blow Away
+LobbyAction,1,LobbyAction_ghost,Haunted
+LobbyAction,1,LobbyAction_hitugipose,Hitsugi Pose
+LobbyAction,1,LobbyAction_warpose,Victory Pose 1
+LobbyAction,1,LobbyAction_missile,Missile
+LobbyAction,1,LobbyAction_pitfall,Pitfall
+LobbyAction,1,LobbyAction_swordpose,Ready Sword
+LobbyAction,1,LobbyAction_dfwarp,Dark Falz Warp
+LobbyAction,1,LobbyAction_spearpose,Ready Spear
+LobbyAction,1,LobbyAction_kendama,Kendama
+LobbyAction,1,LobbyAction_atorie,Atelier
+LobbyAction,1,LobbyAction_dengekipose,Dengeki Pose
+LobbyAction,1,LobbyAction_winnerpose2,Victory Pose 2
+LobbyAction,1,LobbyAction_mothercluster4,Mother Corps 4
+LobbyAction,1,LobbyAction_mothercluster5,Mother Corps 5
+LobbyAction,1,LobbyAction_deadoralive1,Dead or Alive Victory Pose
+LobbyAction,1,LobbyAction_deadoralive2,Dead or Alive Combo
+LobbyAction,1,LobbyAction_magicbookpose,Brandish Spellbook
+LobbyAction,1,LobbyAction_curse2,Cursed 2
+LobbyAction,1,LobbyAction_swordpose2,Laconium Sword
+LobbyAction,1,LobbyAction_hunting,On the Hunt
+LobbyAction,1,LobbyAction_heart,Make a Heart
+LobbyAction,1,LobbyAction_magicsword,Weapon Enhancement Magic
+LobbyAction,1,LobbyAction_throw,Kaboom!
+LobbyAction,1,LobbyAction_staffpose,Ready Staff
 LobbyAction,1,LobbyAction_virtualon3,Virtual-On 3
-LobbyAction,1,LobbyAction_yuyuyu,Activación del sistema héroe
-LobbyAction,1,LobbyAction_chant,lanzar un hechizo
-LobbyAction,1,LobbyAction_rezero,Re: cero
+LobbyAction,1,LobbyAction_yuyuyu,Hero System Activate
+LobbyAction,1,LobbyAction_chant,Cast a Spell
+LobbyAction,1,LobbyAction_rezero,Re:Zero
 LobbyAction,1,LobbyAction_taikyokuken,Tai Chi
-LobbyAction,1,LobbyAction_greatswordpose,Espada magna lista
-LobbyAction,1,LobbyAction_acchimuite,¡Mira hacia allá!
-LobbyAction,1,LobbyAction_hitouch,Choca esos cinco
-LobbyAction,1,LobbyAction_umbrella3,Paraguas abierto
-LobbyAction,1,LobbyAction_peekaboo,Cucú
-LobbyAction,1,LobbyAction_ninja,ninja
-LobbyAction,1,LobbyAction_luncherpose,Lanzador listo
-LobbyAction,1,LobbyAction_koiyakan,Tetera de amor
-LobbyAction,1,LobbyAction_twoshot,Pose de dúo
+LobbyAction,1,LobbyAction_greatswordpose,Ready Greatsword
+LobbyAction,1,LobbyAction_acchimuite,Look that way!
+LobbyAction,1,LobbyAction_hitouch,High Five
+LobbyAction,1,LobbyAction_umbrella3,Open Umbrella
+LobbyAction,1,LobbyAction_peekaboo,Peekaboo
+LobbyAction,1,LobbyAction_ninja,Ninja
+LobbyAction,1,LobbyAction_luncherpose,Ready Launcher
+LobbyAction,1,LobbyAction_koiyakan,Kettle of Love
+LobbyAction,1,LobbyAction_twoshot,Duo Pose
 LobbyAction,1,LobbyAction_volcano2,MHF2
 LobbyAction,1,LobbyAction_p3colabo,Persona 3
 LobbyAction,1,LobbyAction_p4colabo,Persona 4
-LobbyAction,1,LobbyAction_danmachi2,danmachi 2
+LobbyAction,1,LobbyAction_danmachi2,DanMachi 2
 LobbyAction,1,LobbyAction_ksng2,KOF 2
 LobbyAction,1,LobbyAction_ksng3,KOF 3
 LobbyAction,1,LobbyAction_ksng4,KOF 4
-LobbyAction,1,LobbyAction_sortie3,Llegada
+LobbyAction,1,LobbyAction_sortie3,Arrival
 LobbyAction,1,LobbyAction_kono2,Konosuba 2
 LobbyAction,1,LobbyAction_kono3,Konosuba 3
-LobbyAction,1,LobbyAction_vcpose3,Postura de victoria 3
-LobbyAction,1,LobbyAction_aurapose,Reunir energía
-LobbyAction,1,LobbyAction_slaconium,Espada Laconio Estrella
-LobbyAction,1,LobbyAction_zidanda,frustrado 2
-LobbyAction,1,LobbyAction_darkblastpose01,Postura de transformación 1
-LobbyAction,1,LobbyAction_handbell_do,Campana - C
-LobbyAction,1,LobbyAction_handbell_re,Campana - D
-LobbyAction,1,LobbyAction_handbell_mi,Campana - E
-LobbyAction,1,LobbyAction_handbell_fa,Campana - F
-LobbyAction,1,LobbyAction_handbell_so,Campana - G
-LobbyAction,1,LobbyAction_handbell_ra,Campana - A
-LobbyAction,1,LobbyAction_handbell_shi,Campana - B
-LobbyAction,1,LobbyAction_1015kick,patada 3
-LobbyAction,1,LobbyAction_darkblastpose02,Postura de transformación 2
-LobbyAction,1,LobbyAction_dnt,beneficio
-LobbyAction,1,LobbyAction_1015winnerpose,Postura de victoria 4
-LobbyAction,1,LobbyAction_phlg,EN. Campo
-LobbyAction,1,LobbyAction_summon,Convocar
-LobbyAction,1,LobbyAction_bubblegumfly,Globo de chicle
-LobbyAction,1,LobbyAction_futtobu2,Impresionado 2
-LobbyAction,1,LobbyAction_mochitsuki,Hacer pastel de arroz
-LobbyAction,1,LobbyAction_meteogyu,Puño de meteorito Gyu
-LobbyAction,1,LobbyAction_ykzld,Esencia de Smackdown
-LobbyAction,1,LobbyAction_october,Habilidad con la espada
-LobbyAction,1,LobbyAction_tapdance,baile 13
-LobbyAction,1,LobbyAction_Dance13,baile 14
-LobbyAction,1,LobbyAction_Dance14,baile 15
-LobbyAction,1,LobbyAction_Dance15,baile 16
-LobbyAction,1,LobbyAction_Dance17,Danza 17
-LobbyAction,1,LobbyAction_Dance18,baile 18
-LobbyAction,1,LobbyAction_orz,Sentirse deprimido
-LobbyAction,1,LobbyAction_kabe,Inclinarse
-LobbyAction,1,LobbyAction_house,Danza 19
-LobbyAction,1,LobbyAction_momoi,¡Tiempo de fiesta!
-LobbyAction,1,LobbyAction_headbanging,Golpe de cabeza
-LobbyAction,1,LobbyAction_backflip,voltereta hacia atrás
-LobbyAction,1,LobbyAction_cartwheel,Rueda de carro
-LobbyAction,1,LobbyAction_squat,sentadillas
-LobbyAction,1,LobbyAction_Dance20,Danza 20
-LobbyAction,1,LobbyAction_Dance21,Danza 21
-LobbyAction,1,LobbyAction_ichitarou2,Esperando
-LobbyAction,1,LobbyAction_ichitarou3,ROTURA
-LobbyAction,1,LobbyAction_enomoto2,Llamar
-LobbyAction,1,LobbyAction_enomoto3,Ansioso de ir de fiesta
+LobbyAction,1,LobbyAction_vcpose3,Victory Pose 3
+LobbyAction,1,LobbyAction_aurapose,Gather Energy
+LobbyAction,1,LobbyAction_slaconium,Star Laconium Sword
+LobbyAction,1,LobbyAction_zidanda,Frustrated 2
+LobbyAction,1,LobbyAction_darkblastpose01,Transformation Pose 1
+LobbyAction,1,LobbyAction_handbell_do,Handbell - C
+LobbyAction,1,LobbyAction_handbell_re,Handbell - D
+LobbyAction,1,LobbyAction_handbell_mi,Handbell - E
+LobbyAction,1,LobbyAction_handbell_fa,Handbell - F
+LobbyAction,1,LobbyAction_handbell_so,Handbell - G
+LobbyAction,1,LobbyAction_handbell_ra,Handbell - A
+LobbyAction,1,LobbyAction_handbell_shi,Handbell - B
+LobbyAction,1,LobbyAction_1015kick,Kick 3
+LobbyAction,1,LobbyAction_darkblastpose02,Transformation Pose 2
+LobbyAction,1,LobbyAction_dnt,Prosit
+LobbyAction,1,LobbyAction_1015winnerpose,Victory Pose 4
+LobbyAction,1,LobbyAction_phlg,A.T. Field
+LobbyAction,1,LobbyAction_summon,Summon
+LobbyAction,1,LobbyAction_bubblegumfly,Bubble Gum Balloon
+LobbyAction,1,LobbyAction_futtobu2,Blown Away 2
+LobbyAction,1,LobbyAction_mochitsuki,Rice Cake Making
+LobbyAction,1,LobbyAction_meteogyu,Meteor Fist Gyu
+LobbyAction,1,LobbyAction_ykzld,Essence of Smackdown
+LobbyAction,1,LobbyAction_october,Sword Skill
+LobbyAction,1,LobbyAction_tapdance,Dance 13
+LobbyAction,1,LobbyAction_Dance13,Dance 14
+LobbyAction,1,LobbyAction_Dance14,Dance 15
+LobbyAction,1,LobbyAction_Dance15,Dance 16
+LobbyAction,1,LobbyAction_Dance17,Dance 17
+LobbyAction,1,LobbyAction_Dance18,Dance 18
+LobbyAction,1,LobbyAction_orz,Feeling Down
+LobbyAction,1,LobbyAction_kabe,Lean
+LobbyAction,1,LobbyAction_house,Dance 19
+LobbyAction,1,LobbyAction_momoi,Party Time!
+LobbyAction,1,LobbyAction_headbanging,Headbang
+LobbyAction,1,LobbyAction_backflip,Backflip
+LobbyAction,1,LobbyAction_cartwheel,Cartwheel
+LobbyAction,1,LobbyAction_squat,Squats
+LobbyAction,1,LobbyAction_Dance20,Dance 20
+LobbyAction,1,LobbyAction_Dance21,Dance 21
+LobbyAction,1,LobbyAction_ichitarou2,Waiting Around
+LobbyAction,1,LobbyAction_ichitarou3,RIP
+LobbyAction,1,LobbyAction_enomoto2,Beckon
+LobbyAction,1,LobbyAction_enomoto3,Anxious Partygoing
 LobbyAction,1,LobbyAction_sc5_ulala,Space Channel 5 - Ulala Mimicry
-LobbyAction,1,LobbyAction_talking,En conversación
-LobbyAction,1,LobbyAction_dance22,Danza 22
-LobbyAction,1,LobbyAction_dance23,Danza 23
-LobbyAction,1,LobbyAction_ichitaro4,Representación teatral
-LobbyAction,1,LobbyAction_visphon,Terminal de operación
-LobbyAction,1,LobbyAction_koikoi,no puedo esperar
-LobbyAction,1,LobbyAction_dance24,Danza 24
-LobbyAction,1,LobbyAction_dance25,Danza 25
-LobbyAction,1,LobbyAction_dance26,Danza 26
-LobbyAction,1,LobbyAction_airguitar,Guitarra de aire
-LobbyAction,1,LobbyAction_dance27,Danza 27
-LobbyAction,1,LobbyAction_horror,Escalofriante
-LobbyAction,1,LobbyAction_dance28,Danza 28
+LobbyAction,1,LobbyAction_talking,In Conversation
+LobbyAction,1,LobbyAction_dance22,Dance 22
+LobbyAction,1,LobbyAction_dance23,Dance 23
+LobbyAction,1,LobbyAction_ichitaro4,Theatrical Performance
+LobbyAction,1,LobbyAction_visphon,Operating Terminal
+LobbyAction,1,LobbyAction_koikoi,Can't Wait
+LobbyAction,1,LobbyAction_dance24,Dance 24
+LobbyAction,1,LobbyAction_dance25,Dance 25
+LobbyAction,1,LobbyAction_dance26,Dance 26
+LobbyAction,1,LobbyAction_airguitar,Air Guitar
+LobbyAction,1,LobbyAction_dance27,Dance 27
+LobbyAction,1,LobbyAction_horror,Spooky
+LobbyAction,1,LobbyAction_dance28,Dance 28
 LobbyAction,1,LobbyAction_yuruyuri,Akkariin
-LobbyAction,1,LobbyAction_dance29,Danza 29
-LobbyAction,1,LobbyAction_dance30,baile 30
-LobbyAction,1,LobbyAction_cold,Frío
-LobbyAction,1,LobbyAction_dance31,Danza 31
-LobbyAction,1,LobbyAction_dance32,baile 32
-LobbyAction,1,LobbyAction_warm,Calentamiento
-LobbyAction,1,LobbyAction_taiki1,En espera (ropa japonesa)
-LobbyAction,1,LobbyAction_Fwpose,Pose criminal
-LobbyAction,1,LobbyAction_sokuchu,Voltereta
-LobbyAction,1,LobbyAction_pose17,postura 16
-LobbyAction,1,LobbyAction_danse33,Danza 33
-LobbyAction,1,LobbyAction_fightpose2,Postura preparada 2
-LobbyAction,1,LobbyAction_fightpose1,Postura preparada 1
-LobbyAction,1,LobbyAction_dance34,danza 34
-LobbyAction,1,LobbyAction_dance35,baile 35
-LobbyAction,1,LobbyAction_sing2,Cantante
-LobbyAction,1,LobbyAction_fan,ventilador 1
-LobbyAction,1,LobbyAction_syagam,Agacharse
-LobbyAction,1,LobbyAction_ bonodo,ARCAS Danza
-LobbyAction,1,LobbyAction_guruguru,Avión
-LobbyAction,1,LobbyAction_fan2,ventilador 2
-LobbyAction,1,LobbyAction_furafura,Escalonar
-LobbyAction,1,LobbyAction_strech,Gimnasia
-LobbyAction,1,LobbyAction_dance36,Danza 36
-LobbyAction,1,LobbyAction_float,Flotar
-LobbyAction,1,LobbyAction_sit4,sentarse 4
-LobbyAction,1,LobbyAction_dance37,danza 37
-LobbyAction,1,LobbyAction_lean2,Golpe de pared
-LobbyAction,1,LobbyAction_sidestep,Paso lateral
-LobbyAction,1,LobbyAction_lookout,Encuesta
-LobbyAction,1,LobbyAction_snow2,Pelea de bolas de nieve 2
-LobbyAction,1,LobbyAction_graduate,Postura de graduación
-LobbyAction,1,LobbyAction_petal,Pétalos de flores
-LobbyAction,1,LobbyAction_kouhoutai1,Pose de glamour
-LobbyAction,1,LobbyAction_kouhoutai4,¡Lo logramos!
-LobbyAction,1,LobbyAction_bigpresent,Caja de regalo
-LobbyAction,1,LobbyAction_blanko,Balancearse
-LobbyAction,1,LobbyAction_tobu,Volar
-LobbyAction,1,LobbyAction_simpledance,Danza única
-LobbyAction,1,LobbyAction_dislike,Asco
-LobbyAction,1,LobbyAction_catapult,Salida
-LobbyAction,1,LobbyAction_turn,Vuelta y vuelta
-LobbyAction,1,LobbyAction_boxing2,boxeo 2
-LobbyAction,1,LobbyAction_Hyurandance,Danza Hyuran
-LobbyAction,1,LobbyAction_Miqo'tedance,Danza Miqo'te
-LobbyAction,1,LobbyAction_sitdown,Toma asiento
-LobbyAction,1,LobbyAction_firedans,danza del fuego
-LobbyAction,1,LobbyAction_lean3,Apático
-LobbyAction,1,LobbyAction_airboard,aeroplano
+LobbyAction,1,LobbyAction_dance29,Dance 29
+LobbyAction,1,LobbyAction_dance30,Dance 30
+LobbyAction,1,LobbyAction_cold,Chilly
+LobbyAction,1,LobbyAction_dance31,Dance 31
+LobbyAction,1,LobbyAction_dance32,Dance 32
+LobbyAction,1,LobbyAction_warm,Warming Up
+LobbyAction,1,LobbyAction_taiki1,On Standby (Japanese Clothing)
+LobbyAction,1,LobbyAction_Fwpose,Criminal Pose
+LobbyAction,1,LobbyAction_sokuchu,Somersault
+LobbyAction,1,LobbyAction_pose17,Pose 16
+LobbyAction,1,LobbyAction_danse33,Dance 33
+LobbyAction,1,LobbyAction_fightpose2,Ready Stance 2
+LobbyAction,1,LobbyAction_fightpose1,Ready Stance 1
+LobbyAction,1,LobbyAction_dance34,Dance 34
+LobbyAction,1,LobbyAction_dance35,Dance 35
+LobbyAction,1,LobbyAction_sing2,Singer
+LobbyAction,1,LobbyAction_fan,Fan 1
+LobbyAction,1,LobbyAction_syagam,Crouch
+LobbyAction,1,LobbyAction_ bonodo,ARKS Dance
+LobbyAction,1,LobbyAction_guruguru,Airplane
+LobbyAction,1,LobbyAction_fan2,Fan 2
+LobbyAction,1,LobbyAction_furafura,Stagger
+LobbyAction,1,LobbyAction_strech,Gymnastics
+LobbyAction,1,LobbyAction_dance36,Dance 36
+LobbyAction,1,LobbyAction_float,Float
+LobbyAction,1,LobbyAction_sit4,Sit 4
+LobbyAction,1,LobbyAction_dance37,Dance 37
+LobbyAction,1,LobbyAction_lean2,Wall Slam
+LobbyAction,1,LobbyAction_sidestep,Side Step
+LobbyAction,1,LobbyAction_lookout,Survey
+LobbyAction,1,LobbyAction_snow2,Snowball Fight 2
+LobbyAction,1,LobbyAction_graduate,Graduation Pose
+LobbyAction,1,LobbyAction_petal,Flower Petals
+LobbyAction,1,LobbyAction_kouhoutai1,Glamour Pose
+LobbyAction,1,LobbyAction_kouhoutai4,We Did It!
+LobbyAction,1,LobbyAction_bigpresent,Gift Box
+LobbyAction,1,LobbyAction_blanko,Swing
+LobbyAction,1,LobbyAction_tobu,Fly
+LobbyAction,1,LobbyAction_simpledance,Unique Dance
+LobbyAction,1,LobbyAction_dislike,Disgust
+LobbyAction,1,LobbyAction_catapult,Sortie
+LobbyAction,1,LobbyAction_turn,Round & Round
+LobbyAction,1,LobbyAction_boxing2,Boxing 2
+LobbyAction,1,LobbyAction_Hyurandance,Hyuran Dance
+LobbyAction,1,LobbyAction_Miqo'tedance,Miqo'te Dance
+LobbyAction,1,LobbyAction_sitdown,Have A Seat
+LobbyAction,1,LobbyAction_firedans,Fire Dance
+LobbyAction,1,LobbyAction_lean3,Listless
+LobbyAction,1,LobbyAction_airboard,Airboard
 LobbyAction,1,LobbyAction_rappymimicry,Rappies
-LobbyAction,1,LobbyAction_liveperformance,Interpretación vocal
-LobbyAction,1,LobbyAction_shake,Influencia
-LobbyAction,1,LobbyAction_cam2,Saque la cámara 2
-LobbyAction,1,LobbyAction_yokoso1,animar 1
-LobbyAction,1,LobbyAction_yokoso2,animar 2
-LobbyAction,1,LobbyAction_motherc,Saludo digno
-LobbyAction,1,LobbyAction_hozue,apoyarse en las manos
-LobbyAction,1,LobbyAction_dance38,baile 38
-LobbyAction,1,LobbyAction_Gformation,Gimnasia grupal
-LobbyAction,1,LobbyAction_drift,Deriva en el espacio
-LobbyAction,1,LobbyAction_signboard,Mantenga la señal
-LobbyAction,1,LobbyAction_vivian,Viviana Dash
-LobbyAction,1,LobbyAction_cooking,Cocinar
-LobbyAction,1,LobbyAction_flightform,Modo de vuelo
-LobbyAction,1,LobbyAction_teatime,Fiesta del té improvisada
-LobbyAction,1,LobbyAction_famitu,Leer Famitsu
-LobbyAction,1,LobbyAction_console2,Terminal Operativa 2
-LobbyAction,1,LobbyAction_snowplay,Diversión en la nieve
-LobbyAction,1,LobbyAction_dance39,danza 39
-LobbyAction,1,LobbyAction_shimamura,Postura de relaciones públicas
-LobbyAction,1,LobbyAction_liveperformance2,Interpretación vocal 2
-LobbyAction,1,LobbyAction_dance40,baile 40
-LobbyAction,1,LobbyAction_dance41,baile 42
-LobbyAction,1,LobbyAction_dance42,baile 43
-LobbyAction,1,LobbyAction_dance43,baile 41
-LobbyAction,1,LobbyAction_dance44,baile 44
-LobbyAction,1,LobbyAction_gunaction,Arma de fuego lista
+LobbyAction,1,LobbyAction_liveperformance,Vocal Performance
+LobbyAction,1,LobbyAction_shake,Sway
+LobbyAction,1,LobbyAction_cam2,Pull Out Camera 2
+LobbyAction,1,LobbyAction_yokoso1,Cheer 1
+LobbyAction,1,LobbyAction_yokoso2,Cheer 2
+LobbyAction,1,LobbyAction_motherc,Dignified Greeting
+LobbyAction,1,LobbyAction_hozue,Lean On Hands
+LobbyAction,1,LobbyAction_dance38,Dance 38
+LobbyAction,1,LobbyAction_Gformation,Group Gymnastics
+LobbyAction,1,LobbyAction_drift,Drift in Space
+LobbyAction,1,LobbyAction_signboard,Hold Sign
+LobbyAction,1,LobbyAction_vivian,Vivienne Dash
+LobbyAction,1,LobbyAction_cooking,Cook
+LobbyAction,1,LobbyAction_flightform,Flight Mode
+LobbyAction,1,LobbyAction_teatime,Impromptu Tea Party
+LobbyAction,1,LobbyAction_famitu,Read Famitsu
+LobbyAction,1,LobbyAction_console2,Operating Terminal 2
+LobbyAction,1,LobbyAction_snowplay,Snow Fun
+LobbyAction,1,LobbyAction_dance39,Dance 39
+LobbyAction,1,LobbyAction_shimamura,PR Pose
+LobbyAction,1,LobbyAction_liveperformance2,Vocal Performance 2
+LobbyAction,1,LobbyAction_dance40,Dance 40
+LobbyAction,1,LobbyAction_dance41,Dance 42
+LobbyAction,1,LobbyAction_dance42,Dance 43
+LobbyAction,1,LobbyAction_dance43,Dance 41
+LobbyAction,1,LobbyAction_dance44,Dance 44
+LobbyAction,1,LobbyAction_gunaction,Ready Firearm
 LobbyAction,1,LobbyAction_hagito,Hagith Femt
-LobbyAction,1,LobbyAction_stscoter,Viajar en transportador personal
-LobbyAction,1,LobbyAction_ippuku,Salón de té improvisado
-LobbyAction,1,LobbyAction_waiting2,En espera 2
-LobbyAction,1,LobbyAction_kumite,Espato
-LobbyAction,1,LobbyAction_refuse,Salir del escenario por la izquierda
-LobbyAction,1,LobbyAction_winnerdance,Danza de la victoria
-LobbyAction,1,LobbyAction_watering,Regadera
-LobbyAction,1,LobbyAction_waitpose1,En espera 3
-LobbyAction,1,LobbyAction_beastdush,A gatas
-LobbyAction,1,LobbyAction_dance45,baile 45
-LobbyAction,1,LobbyAction_playcat,jugar con gatito
-LobbyAction,1,LobbyAction_liveperformance3,Interpretación vocal 3
+LobbyAction,1,LobbyAction_stscoter,Ride Personal Transporter
+LobbyAction,1,LobbyAction_ippuku,Impromptu Tea Room
+LobbyAction,1,LobbyAction_waiting2,On Standby 2
+LobbyAction,1,LobbyAction_kumite,Spar
+LobbyAction,1,LobbyAction_refuse,Exit Stage Left
+LobbyAction,1,LobbyAction_winnerdance,Victory Dance
+LobbyAction,1,LobbyAction_watering,Watering Can
+LobbyAction,1,LobbyAction_waitpose1,On Standby 3
+LobbyAction,1,LobbyAction_beastdush,On All Fours
+LobbyAction,1,LobbyAction_dance45,Dance 45
+LobbyAction,1,LobbyAction_playcat,Play With Kitty
+LobbyAction,1,LobbyAction_liveperformance3,Vocal Performance 3
 LobbyAction,1,LobbyAction_loserpose,[Loser] Pose
-LobbyAction,1,LobbyAction_ski,Esquí
-LobbyAction,1,LobbyAction_syachihoko,shachihoko
-LobbyAction,1,LobbyAction_flyingbase,BASE VOLADORA
-LobbyAction,1,LobbyAction_lookup,Buscar
-LobbyAction,1,LobbyAction_repair,Reparar
-LobbyAction,1,LobbyAction_dance46,ARCAS Danza 2
-LobbyAction,1,LobbyAction_swimming,Nadar
-LobbyAction,1,LobbyAction_surfing,Navegar
+LobbyAction,1,LobbyAction_ski,Ski
+LobbyAction,1,LobbyAction_syachihoko,Shachihoko
+LobbyAction,1,LobbyAction_flyingbase,FLYING BASE
+LobbyAction,1,LobbyAction_lookup,Look Up
+LobbyAction,1,LobbyAction_repair,Repair
+LobbyAction,1,LobbyAction_dance46,ARKS Dance 2
+LobbyAction,1,LobbyAction_swimming,Swim
+LobbyAction,1,LobbyAction_surfing,Surf
 LobbyAction,1,LobbyAction_konamon,Okonomiyaki
-LobbyAction,1,LobbyAction_heropose,Pose de héroe
+LobbyAction,1,LobbyAction_heropose,Hero Pose
 LobbyAction,1,LobbyAction_dontaku,Dontaku
-LobbyAction,1,LobbyAction_rappyballoon,globo rapero
-LobbyAction,1,LobbyAction_icecream,comer helado
+LobbyAction,1,LobbyAction_rappyballoon,Rappy Balloon
+LobbyAction,1,LobbyAction_icecream,Eat Ice Cream
 LobbyAction,1,LobbyAction_qunapose,Quna Pose
-LobbyAction,1,LobbyAction_liveperformance4,Interpretación vocal 4
-LobbyAction,1,LobbyAction_polldance,baile en barra
-LobbyAction,1,LobbyAction_cameraappeal,sesión de fotos
+LobbyAction,1,LobbyAction_liveperformance4,Vocal Performance 4
+LobbyAction,1,LobbyAction_polldance,Pole Dance
+LobbyAction,1,LobbyAction_cameraappeal,Photo Op
 LobbyAction,1,LobbyAction_pizza,Pizza-La
-LobbyAction,1,LobbyAction_swimming2,Diversión en la piscina
-LobbyAction,1,LobbyAction_dance46_2,danza 46
-LobbyAction,1,LobbyAction_kasakasa,Paseo del cangrejo
-LobbyAction,1,LobbyAction_reachingout,Unir las manos
-LobbyAction,1,LobbyAction_hangedman,Suspendido
-LobbyAction,1,LobbyAction_wiping,lavar el piso
+LobbyAction,1,LobbyAction_swimming2,Pool Fun
+LobbyAction,1,LobbyAction_dance46_2,Dance 46
+LobbyAction,1,LobbyAction_kasakasa,Crab Walk
+LobbyAction,1,LobbyAction_reachingout,Join Hands
+LobbyAction,1,LobbyAction_hangedman,Suspended
+LobbyAction,1,LobbyAction_wiping,Wash The Floor
 LobbyAction,1,LobbyAction_pumpkin,Jack-o'-Lantern
-LobbyAction,1,LobbyAction_trafficcontrol,Control de tráfico
-LobbyAction,1,LobbyAction_warp,Paso rápido
-LobbyAction,1,LobbyAction_dance47,danza 47
-LobbyAction,1,LobbyAction_waiting4,En espera 4
-LobbyAction,1,LobbyAction_waiting5,En espera 5
-LobbyAction,1,LobbyAction_punk,¡Adelante!
-LobbyAction,1,LobbyAction_bodybuild,Carrocero
-LobbyAction,1,LobbyAction_waiting6,En espera 6
-LobbyAction,1,LobbyAction_takoage,volar cometa
-LobbyAction,1,LobbyAction_winnerdance2,Danza de la victoria 2
+LobbyAction,1,LobbyAction_trafficcontrol,Traffic Control
+LobbyAction,1,LobbyAction_warp,Flash Step
+LobbyAction,1,LobbyAction_dance47,Dance 47
+LobbyAction,1,LobbyAction_waiting4,On Standby 4
+LobbyAction,1,LobbyAction_waiting5,On Standby 5
+LobbyAction,1,LobbyAction_punk,Rock on!
+LobbyAction,1,LobbyAction_bodybuild,Bodybuilder
+LobbyAction,1,LobbyAction_waiting6,On Standby 6
+LobbyAction,1,LobbyAction_takoage,Fly Kite
+LobbyAction,1,LobbyAction_winnerdance2,Victory Dance 2
 LobbyAction,1,LobbyAction_xierapose,Xiera Pose
-LobbyAction,1,LobbyAction_bbq,barbacoa
-LobbyAction,1,LobbyAction_dance48,danza 48
-LobbyAction,1,LobbyAction_shoji,Pantalla Shoji
-LobbyAction,1,LobbyAction_dance49,danza 49
-LobbyAction,1,LobbyAction_norinori,maravilloso
-LobbyAction,1,LobbyAction_dance50,Danza 50
+LobbyAction,1,LobbyAction_bbq,Barbeque
+LobbyAction,1,LobbyAction_dance48,Dance 48
+LobbyAction,1,LobbyAction_shoji,Shoji Screen
+LobbyAction,1,LobbyAction_dance49,Dance 49
+LobbyAction,1,LobbyAction_norinori,Groovy
+LobbyAction,1,LobbyAction_dance50,Dance 50
 LobbyAction,1,LobbyAction_alisapose,Alis Pose
-LobbyAction,1,LobbyAction_headwash,lavar el cabello
-LobbyAction,1,LobbyAction_waiting7,En espera 7
-LobbyAction,1,LobbyAction_rhythm,Ritmo
-LobbyAction,1,LobbyAction_psnovapose1,Postura Nova 1
-LobbyAction,1,LobbyAction_psnovapose2,Postura Nova 2
-LobbyAction,1,LobbyAction_dance51,danza 51
-LobbyAction,1,LobbyAction_rapper,rapero
-LobbyAction,1,LobbyAction_pose26,Postura de relaciones públicas 2
-LobbyAction,1,LobbyAction_voperformance5,Interpretación vocal 5
-LobbyAction,1,LobbyAction_tcg,Juego de cartas de realidad virtual
-LobbyAction,1,LobbyAction_maromero,Marrón y Melón
-LobbyAction,1,LobbyAction_hopscotch,Rayuela
-LobbyAction,1,LobbyAction_zenmeditation,Movimiento flotante
-LobbyAction,1,LobbyAction_halo,don halo
-LobbyAction,1,LobbyAction_soullost,Desalentado
-LobbyAction,1,LobbyAction_dance53,danza 52
-LobbyAction,1,LobbyAction_henchiranchi,luterismos
+LobbyAction,1,LobbyAction_headwash,Wash Hair
+LobbyAction,1,LobbyAction_waiting7,On Standby 7
+LobbyAction,1,LobbyAction_rhythm,Rhythm
+LobbyAction,1,LobbyAction_psnovapose1,Nova Pose 1
+LobbyAction,1,LobbyAction_psnovapose2,Nova Pose 2
+LobbyAction,1,LobbyAction_dance51,Dance 51
+LobbyAction,1,LobbyAction_rapper,Rapper
+LobbyAction,1,LobbyAction_pose26,PR Pose 2
+LobbyAction,1,LobbyAction_voperformance5,Vocal Performance 5
+LobbyAction,1,LobbyAction_tcg,VR Card Game
+LobbyAction,1,LobbyAction_maromero,Marron & Melon
+LobbyAction,1,LobbyAction_hopscotch,Hopscotch
+LobbyAction,1,LobbyAction_zenmeditation,Floating Movement
+LobbyAction,1,LobbyAction_halo,Don Halo
+LobbyAction,1,LobbyAction_soullost,Dispirited
+LobbyAction,1,LobbyAction_dance53,Dance 52
+LobbyAction,1,LobbyAction_henchiranchi,Lutherisms
 LobbyAction,1,LobbyAction_umbrelladance,Umbrella Dance
-LobbyAction,1,LobbyAction_cowboy,Espectáculo del salvaje oeste
-LobbyAction,1,LobbyAction_yuishaku,Saltar sobre
-LobbyAction,1,LobbyAction_p3dance1,Persona 3 Danza 1
-LobbyAction,1,LobbyAction_p3dance2,Persona 3 Danza 2
-LobbyAction,1,LobbyAction_p3dance3,Persona 3 Danza 3
-LobbyAction,1,LobbyAction_p5dance1,Persona 5 Danza 1
-LobbyAction,1,LobbyAction_p5dance2,Persona 5 Danza 2
-LobbyAction,1,LobbyAction_p5dance3,Persona 5 Danza 3
-LobbyAction,1,LobbyAction_swimming2tr,nadar 2
-LobbyAction,1,LobbyAction_yuishaku2,girando
-LobbyAction,1,LobbyAction_yuishaku3,Ciclo de centrifugado
-LobbyAction,1,LobbyAction_beatless,Sin ritmo
-LobbyAction,1,LobbyAction_weddingpose,Postura de boda
-LobbyAction,1,LobbyAction_virginroad,Por el pasillo
-LobbyAction,1,LobbyAction_sit5,sentarse 5
-LobbyAction,1,LobbyAction_dance54,danza 53
-LobbyAction,1,LobbyAction_henchiranchi2,Luterismos 2
-LobbyAction,1,LobbyAction_drunkenfist,Boxeo borracho
-LobbyAction,1,LobbyAction_espose,Postura de playa
-LobbyAction,1,LobbyAction_voperformance7,Interpretación vocal 6
-LobbyAction,1,LobbyAction_ermirpose,Postura de Elmir
-LobbyAction,1,LobbyAction_margaretapose,Margarita Pose
-LobbyAction,1,LobbyAction_flyingbase2,BASE VOLADORA 2
-LobbyAction,1,LobbyAction_weaponoidpose1,Pose de arma 1
-LobbyAction,1,LobbyAction_weaponoidpose2,Pose de arma 2
-LobbyAction,1,LobbyAction_jyudenkun,Jyuden-kun
-LobbyAction,1,LobbyAction_flowpose,Postura de Florent y Fleur
-LobbyAction,1,LobbyAction_bukikamae,Arma lista
-LobbyAction,1,LobbyAction_weaponoidpose3,Pose de arma 3
-LobbyAction,1,LobbyAction_weaponoidpose4,Pose de arma 4
-LobbyAction,1,LobbyAction_burasagaru,Colgar
-LobbyAction,1,LobbyAction_butakimu,comer butakim
-LobbyAction,1,LobbyAction_suwadance,Danza elaborada
-LobbyAction,1,LobbyAction_chairdance,baile en silla
-LobbyAction,1,LobbyAction_siriusu,yuri/estela
-LobbyAction,1,LobbyAction_maruipose,Postura redonda
-LobbyAction,1,LobbyAction_volcano,FMH 1
-LobbyAction,1,LobbyAction_638dance,danza 54
-LobbyAction,1,LobbyAction_simpledanse,danza 55
-LobbyAction,1,LobbyAction_candle,Vela/Linterna
-LobbyAction,1,LobbyAction_tabledance,baile de mesa
-LobbyAction,1,LobbyAction_voperformance6,Interpretación vocal 7
-LobbyAction,1,LobbyAction_636voperformance,Interpretación vocal 8
-LobbyAction,1,LobbyAction_637voperformance,Interpretación vocal 9
-LobbyAction,1,LobbyAction_sealandfree,Sellado y liberado
-LobbyAction,1,LobbyAction_kkpose,Klariskrays la primera pose 1
-LobbyAction,1,LobbyAction_kkpose2,Klariskrays la primera pose 2
-LobbyAction,1,LobbyAction_wolfatossapose,Lobo y Atossa
-LobbyAction,1,LobbyAction_wasabeaf,comer wasabief
-LobbyAction,1,LobbyAction_648prpose,Postura dulce para
-LobbyAction,1,LobbyAction_almapose,Pose de alma
-LobbyAction,1,LobbyAction_almaball,alma bola
-LobbyAction,1,LobbyAction_ashikumi,Piernas cruzadas
-LobbyAction,1,LobbyAction_0514dance4,silbido silbido
-LobbyAction,1,LobbyAction_nijidoro,¡Gota arcoíris adquirida!
-LobbyAction,1,LobbyAction_rounddance,danza 56
-LobbyAction,1,LobbyAction_danboul,Caja de cartón
-LobbyAction,1,LobbyAction_danmachi,danmachi 1
-LobbyAction,1,LobbyAction_birthday,Cumpleaños
-LobbyAction,1,LobbyAction_valentine,Día de San Valentín
+LobbyAction,1,LobbyAction_cowboy,Wild West Show
+LobbyAction,1,LobbyAction_yuishaku,Hop About
+LobbyAction,1,LobbyAction_p3dance1,Persona 3 Dance 1
+LobbyAction,1,LobbyAction_p3dance2,Persona 3 Dance 2
+LobbyAction,1,LobbyAction_p3dance3,Persona 3 Dance 3
+LobbyAction,1,LobbyAction_p5dance1,Persona 5 Dance 1
+LobbyAction,1,LobbyAction_p5dance2,Persona 5 Dance 2
+LobbyAction,1,LobbyAction_p5dance3,Persona 5 Dance 3
+LobbyAction,1,LobbyAction_swimming2tr,Swim 2
+LobbyAction,1,LobbyAction_yuishaku2,Twirling
+LobbyAction,1,LobbyAction_yuishaku3,Spin Cycle
+LobbyAction,1,LobbyAction_beatless,Beatless
+LobbyAction,1,LobbyAction_weddingpose,Wedding Pose
+LobbyAction,1,LobbyAction_virginroad,Down the Aisle
+LobbyAction,1,LobbyAction_sit5,Sit 5
+LobbyAction,1,LobbyAction_dance54,Dance 53
+LobbyAction,1,LobbyAction_henchiranchi2,Lutherisms 2
+LobbyAction,1,LobbyAction_drunkenfist,Drunken Boxing
+LobbyAction,1,LobbyAction_espose,Beach Pose
+LobbyAction,1,LobbyAction_voperformance7,Vocal Performance 6
+LobbyAction,1,LobbyAction_ermirpose,Elmir Pose
+LobbyAction,1,LobbyAction_margaretapose,Margareta Pose
+LobbyAction,1,LobbyAction_flyingbase2,FLYING BASE 2
+LobbyAction,1,LobbyAction_weaponoidpose1,Weaponoid Pose 1
+LobbyAction,1,LobbyAction_weaponoidpose2,Weaponoid Pose 2
+LobbyAction,1,LobbyAction_jyudenkun,Jyuden kun
+LobbyAction,1,LobbyAction_flowpose,Florent & Fleur Pose
+LobbyAction,1,LobbyAction_bukikamae,Ready Weapon
+LobbyAction,1,LobbyAction_weaponoidpose3,Weaponoid Pose 3
+LobbyAction,1,LobbyAction_weaponoidpose4,Weaponoid Pose 4
+LobbyAction,1,LobbyAction_burasagaru,Dangle
+LobbyAction,1,LobbyAction_butakimu,Eat ButaKim
+LobbyAction,1,LobbyAction_suwadance,Elaborate Dance
+LobbyAction,1,LobbyAction_chairdance,Chair Dance
+LobbyAction,1,LobbyAction_siriusu,Yuri/Stella
+LobbyAction,1,LobbyAction_maruipose,Round Pose
+LobbyAction,1,LobbyAction_volcano,MHF 1
+LobbyAction,1,LobbyAction_638dance,Dance 54
+LobbyAction,1,LobbyAction_simpledanse,Dance 55
+LobbyAction,1,LobbyAction_candle,Candle/Lantern
+LobbyAction,1,LobbyAction_tabledance,Table Dance
+LobbyAction,1,LobbyAction_voperformance6,Vocal Performance 7
+LobbyAction,1,LobbyAction_636voperformance,Vocal Performance 8
+LobbyAction,1,LobbyAction_637voperformance,Vocal Performance 9
+LobbyAction,1,LobbyAction_sealandfree,Sealed & Released
+LobbyAction,1,LobbyAction_kkpose,Klariskrays the First Pose 1
+LobbyAction,1,LobbyAction_kkpose2,Klariskrays the First Pose 2
+LobbyAction,1,LobbyAction_wolfatossapose,Wolf & Atossa
+LobbyAction,1,LobbyAction_wasabeaf,Eat Wasabeef
+LobbyAction,1,LobbyAction_648prpose,SweePara Pose
+LobbyAction,1,LobbyAction_almapose,Alma Pose
+LobbyAction,1,LobbyAction_almaball,Alma Ball
+LobbyAction,1,LobbyAction_ashikumi,Cross Legs
+LobbyAction,1,LobbyAction_0514dance4,Swish Swish
+LobbyAction,1,LobbyAction_nijidoro,Rainbow Drop Acquired!
+LobbyAction,1,LobbyAction_rounddance,Dance 56
+LobbyAction,1,LobbyAction_danboul,Cardboard Box
+LobbyAction,1,LobbyAction_danmachi,DanMachi 1
+LobbyAction,1,LobbyAction_birthday,Birthday
+LobbyAction,1,LobbyAction_valentine,Valentine's Day
 LobbyAction,1,LobbyAction_taruasobi,Barrel Game
 LobbyAction,1,LobbyAction_ksng,KOF 1
-LobbyAction,1,LobbyAction_prpose2,Almohada Village Vanguard
-LobbyAction,1,LobbyAction_sakura,Observación de los cerezos en flor
-LobbyAction,1,LobbyAction_yumomi,Revolviendo el baño
-LobbyAction,1,LobbyAction_477sit,sentarse 6
-LobbyAction,1,LobbyAction_0725dance,danza 57
-LobbyAction,1,LobbyAction_rrnn1,Postura de Nanoha
-LobbyAction,1,LobbyAction_rrnn2,Postura del destino
-LobbyAction,1,LobbyAction_rrnn3,Postura de Hayate
-LobbyAction,1,LobbyAction_kantopose,La especialidad de Kanto
-LobbyAction,1,LobbyAction_psnikomi,Pose del personaje de PSO2COMI
-LobbyAction,1,LobbyAction_psnikomi2,Postura de Ichika y Tetra
-LobbyAction,1,LobbyAction_nagoyapose,La especialidad de Nagoya
-LobbyAction,1,LobbyAction_sapporopose,La especialidad de Sapporo
-LobbyAction,1,LobbyAction_phantom,Postura fantasma
-LobbyAction,1,LobbyAction_656pose,inclinación diagonal
-LobbyAction,1,LobbyAction_dadakone,Lanzar rabieta
-LobbyAction,1,LobbyAction_katanapose,Postura de katana
+LobbyAction,1,LobbyAction_prpose2,Village Vanguard Pillow
+LobbyAction,1,LobbyAction_sakura,Cherry Blossom Viewing
+LobbyAction,1,LobbyAction_yumomi,Stirring Up The Bath
+LobbyAction,1,LobbyAction_477sit,Sit 6
+LobbyAction,1,LobbyAction_0725dance,Dance 57
+LobbyAction,1,LobbyAction_rrnn1,Nanoha Pose
+LobbyAction,1,LobbyAction_rrnn2,Fate Pose
+LobbyAction,1,LobbyAction_rrnn3,Hayate Pose
+LobbyAction,1,LobbyAction_kantopose,Kanto's Specialty
+LobbyAction,1,LobbyAction_psnikomi,PSO2COMI Character Pose
+LobbyAction,1,LobbyAction_psnikomi2,Ichika & Tetra Pose
+LobbyAction,1,LobbyAction_nagoyapose,Nagoya's Specialty
+LobbyAction,1,LobbyAction_sapporopose,Sapporo's Specialty
+LobbyAction,1,LobbyAction_phantom,Phantom Pose
+LobbyAction,1,LobbyAction_656pose,Diagonal Lean
+LobbyAction,1,LobbyAction_dadakone,Throw Tantrum
+LobbyAction,1,LobbyAction_katanapose,Katana Pose
 LobbyAction,1,LobbyAction_kono1,Konosuba 1
-LobbyAction,1,LobbyAction_fukuokapose,La especialidad de Fukuoka
-LobbyAction,1,LobbyAction_xiaopose,Postura de Xiao
-LobbyAction,1,LobbyAction_jumppose,Postura de vuelo
-LobbyAction,1,LobbyAction_falldown,Actuación final
-LobbyAction,1,LobbyAction_regiuspose,Postura regio
-LobbyAction,1,LobbyAction_mariapose,María Pose
-LobbyAction,1,LobbyAction_harrietpose,Postura de Hariette
-LobbyAction,1,LobbyAction_rain,Lluvia
-LobbyAction,1,LobbyAction_gunpose,A. Postura del rifle
-LobbyAction,1,LobbyAction_kansaipose,La especialidad de Kobe
-LobbyAction,1,LobbyAction_ep4dance7,danza 58
-LobbyAction,1,LobbyAction_mgr,tiovivo
-LobbyAction,1,LobbyAction_tmachinegun,Pose de ametralladoras gemelas
-LobbyAction,1,LobbyAction_bananaboat,Barco plátano
-LobbyAction,1,LobbyAction_stratospose,Postura del estrato
-LobbyAction,1,LobbyAction_lawson,Letrero de Lawson
-LobbyAction,1,LobbyAction_696bed,Cama 3
-LobbyAction,1,LobbyAction_698hiza,Arrodillarse
-LobbyAction,1,LobbyAction_756weaponoidpose,Pose de arma 7
-LobbyAction,1,LobbyAction_photoncircle,Círculo de fotones
-LobbyAction,1,LobbyAction_752psnikomi,Letrero PSO2COMI
-LobbyAction,1,LobbyAction_755weaponoidpose,Pose de arma 6
-LobbyAction,1,LobbyAction_754weaponoidpose,Pose de arma 5
-LobbyAction,1,LobbyAction_rodpose,Postura de la varilla
+LobbyAction,1,LobbyAction_fukuokapose,Fukuoka's Specialty
+LobbyAction,1,LobbyAction_xiaopose,Xiao Pose
+LobbyAction,1,LobbyAction_jumppose,Flight Pose
+LobbyAction,1,LobbyAction_falldown,Final Performance
+LobbyAction,1,LobbyAction_regiuspose,Regius Pose
+LobbyAction,1,LobbyAction_mariapose,Maria Pose
+LobbyAction,1,LobbyAction_harrietpose,Hariette Pose
+LobbyAction,1,LobbyAction_rain,Rainfall
+LobbyAction,1,LobbyAction_gunpose,A. Rifle Pose
+LobbyAction,1,LobbyAction_kansaipose,Kobe's Specialty
+LobbyAction,1,LobbyAction_ep4dance7,Dance 58
+LobbyAction,1,LobbyAction_mgr,Merry-Go-Round
+LobbyAction,1,LobbyAction_tmachinegun,Twin Machine Guns Pose
+LobbyAction,1,LobbyAction_bananaboat,Banana Boat
+LobbyAction,1,LobbyAction_stratospose,Stratos Pose
+LobbyAction,1,LobbyAction_lawson,Lawson Signboard
+LobbyAction,1,LobbyAction_696bed,Bed 3
+LobbyAction,1,LobbyAction_698hiza,Kneel
+LobbyAction,1,LobbyAction_756weaponoidpose,Weaponoid Pose 7
+LobbyAction,1,LobbyAction_photoncircle,Photon Circle
+LobbyAction,1,LobbyAction_752psnikomi,PSO2COMI Signboard
+LobbyAction,1,LobbyAction_755weaponoidpose,Weaponoid Pose 6
+LobbyAction,1,LobbyAction_754weaponoidpose,Weaponoid Pose 5
+LobbyAction,1,LobbyAction_rodpose,Rod Pose
 LobbyAction,1,LobbyAction_699qunapose,Quna Pose 2
-LobbyAction,1,LobbyAction_risapose,Postura de Risa
-LobbyAction,1,LobbyAction_dice,tirar dados
-LobbyAction,1,LobbyAction_730sitdown,Toma asiento 2
-LobbyAction,1,LobbyAction_allfire,Disparar
-LobbyAction,1,LobbyAction_matoipose,Postura Matoi 1
-LobbyAction,1,LobbyAction_771matoivielpose,Postura Matoi 2
-LobbyAction,1,LobbyAction_772matoivielpose,Postura Matoi 3
-LobbyAction,1,LobbyAction_twindaggerpose,Postura de las dagas gemelas
-LobbyAction,1,LobbyAction_766sit,sentarse 7
-LobbyAction,1,LobbyAction_perrier,beber perrier
-LobbyAction,1,LobbyAction_talispose,Postura de Talis
+LobbyAction,1,LobbyAction_risapose,Risa Pose
+LobbyAction,1,LobbyAction_dice,Throw Dice
+LobbyAction,1,LobbyAction_730sitdown,Have a Seat 2
+LobbyAction,1,LobbyAction_allfire,Fire Away
+LobbyAction,1,LobbyAction_matoipose,Matoi Pose 1
+LobbyAction,1,LobbyAction_771matoivielpose,Matoi Pose 2
+LobbyAction,1,LobbyAction_772matoivielpose,Matoi Pose 3
+LobbyAction,1,LobbyAction_twindaggerpose,Twin Daggers Pose
+LobbyAction,1,LobbyAction_766sit,Sit 7
+LobbyAction,1,LobbyAction_perrier,Drink Perrier
+LobbyAction,1,LobbyAction_talispose,Talis Pose
 LobbyAction,1,LobbyAction_775idolapose,Idola Chara Pose 1
 LobbyAction,1,LobbyAction_776idolapose,Idola Chara Pose 2
 LobbyAction,1,LobbyAction_idolachannel,Idola Channel
-LobbyAction,1,LobbyAction_jasperrosa,Jaspe/Rosa
-LobbyAction,1,LobbyAction_774swordpose,Postura de la espada
-LobbyAction,1,LobbyAction_tsuntsun,Empujar Empujar
+LobbyAction,1,LobbyAction_jasperrosa,Jasper/Rosa
+LobbyAction,1,LobbyAction_774swordpose,Sword Pose
+LobbyAction,1,LobbyAction_tsuntsun,Poke Poke
 LobbyAction,1,LobbyAction_812sukunahime,Sukunahime Pose 1
 LobbyAction,1,LobbyAction_813sukunahime,Sukunahime Pose 2
 LobbyAction,1,LobbyAction_828sukunahime,Sukunahime Pose 3
-LobbyAction,1,LobbyAction_timecheck,Verificar hora
-LobbyAction,1,LobbyAction_komamawashi,peonza
-LobbyAction,1,LobbyAction_labomikuji,dibujar fortuna de papel
-LobbyAction,1,LobbyAction_doublesaberpose,Postura del doble sable
-LobbyAction,1,LobbyAction_genocide,Zona/Jaula
-LobbyAction,1,LobbyAction_765genocide,Barta/Estatua
-LobbyAction,1,LobbyAction_wandpose,Postura de la varita
-LobbyAction,1,LobbyAction_seesnow,buscar nieve
-LobbyAction,1,LobbyAction_yukiasobi,Diversión en la nieve 2
+LobbyAction,1,LobbyAction_timecheck,Check Time
+LobbyAction,1,LobbyAction_komamawashi,Spin Top
+LobbyAction,1,LobbyAction_labomikuji,Draw Paper Fortune
+LobbyAction,1,LobbyAction_doublesaberpose,Double Saber Pose
+LobbyAction,1,LobbyAction_genocide,Zonde/Cage
+LobbyAction,1,LobbyAction_765genocide,Barta/Statue
+LobbyAction,1,LobbyAction_wandpose,Wand Pose
+LobbyAction,1,LobbyAction_seesnow,Look up Snow
+LobbyAction,1,LobbyAction_yukiasobi,Snow Fun 2
 LobbyAction,1,LobbyAction_795na,Festival
 LobbyAction,1,LobbyAction_814na,Xbox X/B
 LobbyAction,1,LobbyAction_815na,Xbox O/X
-LobbyAction,1,LobbyAction_816na,Sonic/Colas
-LobbyAction,1,LobbyAction_fanservice,Servicio de fans
-LobbyAction,1,LobbyAction_dualbladepose,Postura de las cuchillas altísimas
-LobbyAction,1,LobbyAction_launcherpose,Postura del lanzador
-LobbyAction,1,LobbyAction_rideon,Conducir
-LobbyAction,1,LobbyAction_wiredlancepose,Postura de lanza con cable
-LobbyAction,1,LobbyAction_officechair,Silla de oficina
-LobbyAction,1,LobbyAction_etoilepose,Pose de estrella
-LobbyAction,1,LobbyAction_787secondkkpose,Klariskrays la segunda pose
-LobbyAction,1,LobbyAction_zenopose,Postura de Zenón
-LobbyAction,1,LobbyAction_788thirdkkpose,Klariskrays la tercera pose
-LobbyAction,1,LobbyAction_811animepose,EP Oráculo 1
-LobbyAction,1,LobbyAction_830animepose,EP Oráculo 2
-LobbyAction,1,LobbyAction_pillowpose,Almohada corporal
-LobbyAction,1,LobbyAction_taktpose,Postura armonizadora
-LobbyAction,1,LobbyAction_eggrace,carrera de huevos
-LobbyAction,1,LobbyAction_partizanpose,Pose partidista
-LobbyAction,1,LobbyAction_762picnic,Picnic en cualquier lugar 1
-LobbyAction,1,LobbyAction_831animepose,EP Oráculo 3
-LobbyAction,1,LobbyAction_holaf,Holcido y aftal
+LobbyAction,1,LobbyAction_816na,Sonic/Tails
+LobbyAction,1,LobbyAction_fanservice,Fan Service
+LobbyAction,1,LobbyAction_dualbladepose,Soaring Blades Pose
+LobbyAction,1,LobbyAction_launcherpose,Launcher Pose
+LobbyAction,1,LobbyAction_rideon,Ride
+LobbyAction,1,LobbyAction_wiredlancepose,Wired Lance Pose
+LobbyAction,1,LobbyAction_officechair,Office Chair
+LobbyAction,1,LobbyAction_etoilepose,Étoile Pose
+LobbyAction,1,LobbyAction_787secondkkpose,Klariskrays the Second Pose
+LobbyAction,1,LobbyAction_zenopose,Zeno Pose
+LobbyAction,1,LobbyAction_788thirdkkpose,Klariskrays the Third Pose
+LobbyAction,1,LobbyAction_811animepose,EP Oracle 1
+LobbyAction,1,LobbyAction_830animepose,EP Oracle 2
+LobbyAction,1,LobbyAction_pillowpose,Body Pillow
+LobbyAction,1,LobbyAction_taktpose,Harmonizer Pose
+LobbyAction,1,LobbyAction_eggrace,Egg Race
+LobbyAction,1,LobbyAction_partizanpose,Partisan Pose
+LobbyAction,1,LobbyAction_762picnic,Picnic Anywhere 1
+LobbyAction,1,LobbyAction_831animepose,EP Oracle 3
+LobbyAction,1,LobbyAction_holaf,Holcid & Aphtal
 LobbyAction,1,LobbyAction_jene,Gené Pose
-LobbyAction,1,LobbyAction_836clockpose,Postura del reloj
-LobbyAction,1,LobbyAction_knuckle,Postura de los nudillos
-LobbyAction,1,LobbyAction_825console,Terminal Operativa 3
-LobbyAction,1,LobbyAction_819dance,danza 59
-LobbyAction,1,LobbyAction_gunslashpose,Postura del espadachín
-LobbyAction,1,LobbyAction_teacup,Taza para té
-LobbyAction,1,LobbyAction_tarzan,Atlético
-LobbyAction,1,LobbyAction_760psnikomi,Zect y Mitarashi
-LobbyAction,1,LobbyAction_832animepose,EP Oráculo 4
-LobbyAction,1,LobbyAction_849animepose,EP Oráculo 5
-LobbyAction,1,LobbyAction_donpose,VP x PSO2
-LobbyAction,1,LobbyAction_851donpose,Postura de relaciones públicas 3
-LobbyAction,1,LobbyAction_848voperformance,Interpretación vocal 10
-LobbyAction,1,LobbyAction_ashpose,Comunicaciones Oracle EP
-LobbyAction,1,LobbyAction_etph,Estrella y fantasma
-LobbyAction,1,LobbyAction_bbowpose,Postura del arco
-LobbyAction,1,LobbyAction_sliding,Deslizamiento controlado
-LobbyAction,1,LobbyAction_jbootspose,Postura de botas a reacción
-LobbyAction,1,LobbyAction_wpswd01,Espada/Partidista
-LobbyAction,1,LobbyAction_arukas,Guerras Sakura A
-LobbyAction,1,LobbyAction_868arukas,Guerras Sakura B
-LobbyAction,1,LobbyAction_sparkler,Bengala
-LobbyAction,1,LobbyAction_dance52,baile 60
-LobbyAction,1,LobbyAction_syagami,Agacharse 2
+LobbyAction,1,LobbyAction_836clockpose,Clock Pose
+LobbyAction,1,LobbyAction_knuckle,Knuckles Pose
+LobbyAction,1,LobbyAction_825console,Operating Terminal 3
+LobbyAction,1,LobbyAction_819dance,Dance 59
+LobbyAction,1,LobbyAction_gunslashpose,Gunblade Pose
+LobbyAction,1,LobbyAction_teacup,Teacup
+LobbyAction,1,LobbyAction_tarzan,Athletic
+LobbyAction,1,LobbyAction_760psnikomi,Zect & Mitarashi
+LobbyAction,1,LobbyAction_832animepose,EP Oracle 4
+LobbyAction,1,LobbyAction_849animepose,EP Oracle 5
+LobbyAction,1,LobbyAction_donpose,PW x PSO2
+LobbyAction,1,LobbyAction_851donpose,PR Pose 3
+LobbyAction,1,LobbyAction_848voperformance,Vocal Performance 10
+LobbyAction,1,LobbyAction_ashpose,EP Oracle Comms
+LobbyAction,1,LobbyAction_etph,Étoile & Phantom
+LobbyAction,1,LobbyAction_bbowpose,Bow Pose
+LobbyAction,1,LobbyAction_sliding,Controlled Slide
+LobbyAction,1,LobbyAction_jbootspose,Jet Boots Pose
+LobbyAction,1,LobbyAction_wpswd01,Sword/Partisan
+LobbyAction,1,LobbyAction_arukas,Sakura Wars A
+LobbyAction,1,LobbyAction_868arukas,Sakura Wars B
+LobbyAction,1,LobbyAction_sparkler,Sparkler
+LobbyAction,1,LobbyAction_dance52,Dance 60
+LobbyAction,1,LobbyAction_syagami,Crouch 2
 LobbyAction,1,LobbyAction_hizadati2,Kneel 2
-LobbyAction,1,LobbyAction_876picnic,Picnic en cualquier lugar 2
-LobbyAction,1,LobbyAction_rfllncaction,Rifle de asalto/lanzador
-LobbyAction,1,LobbyAction_874weaponoid,Pose de arma 8
-LobbyAction,1,LobbyAction_875weaponoid,Pose de arma 9
-LobbyAction,1,LobbyAction_879xibapose,Postura de Shiva 1
+LobbyAction,1,LobbyAction_876picnic,Picnic Anywhere 2
+LobbyAction,1,LobbyAction_rfllncaction,Assault Rifle/Launcher
+LobbyAction,1,LobbyAction_874weaponoid,Weaponoid Pose 8
+LobbyAction,1,LobbyAction_875weaponoid,Weaponoid Pose 9
+LobbyAction,1,LobbyAction_879xibapose,Shiva Pose 1
 LobbyAction,1,LobbyAction_varuna,Varuna Pose
-LobbyAction,1,LobbyAction_880xibapose,Postura de Shiva 2
-LobbyAction,1,LobbyAction_grd,hombre grillo
-LobbyAction,1,LobbyAction_campmk,Acampar
-LobbyAction,1,LobbyAction_sortie5,Llegada 2
-LobbyAction,1,LobbyAction_katoripose,Postura de Katori
-LobbyAction,1,LobbyAction_euclitapose,Postura de Euclita
-LobbyAction,1,LobbyAction_898effpose,Pose mágica 1
-LobbyAction,1,LobbyAction_899effpose,Pose mágica 2
-LobbyAction,1,LobbyAction_658effectpose,Postura mágica 3
-LobbyAction,1,LobbyAction_aikapose,Pose de Aika
-LobbyAction,1,LobbyAction_itsukirina,Postura de Itsuki/Rina
-LobbyAction,1,LobbyAction_885hitsugi,Postura de Hitsugi 2
-LobbyAction,1,LobbyAction_rodtls,Varilla/Talis
-LobbyAction,1,LobbyAction_556poseneta,Postura de relaciones públicas 4
-LobbyAction,1,LobbyAction_850clockpose,Pose del reloj 2
-LobbyAction,1,LobbyAction_rodfly,Vuelo en escoba
-LobbyAction,1,LobbyAction_udekumi,brazos cruzados 2
+LobbyAction,1,LobbyAction_880xibapose,Shiva Pose 2
+LobbyAction,1,LobbyAction_grd,Gridman
+LobbyAction,1,LobbyAction_campmk,Camp
+LobbyAction,1,LobbyAction_sortie5,Arrival 2
+LobbyAction,1,LobbyAction_katoripose,Katori Pose
+LobbyAction,1,LobbyAction_euclitapose,Euclyta Pose
+LobbyAction,1,LobbyAction_898effpose,Magic Pose 1
+LobbyAction,1,LobbyAction_899effpose,Magic Pose 2
+LobbyAction,1,LobbyAction_658effectpose,Magic Pose 3
+LobbyAction,1,LobbyAction_aikapose,Aika Pose
+LobbyAction,1,LobbyAction_itsukirina,Itsuki/Rina Pose
+LobbyAction,1,LobbyAction_885hitsugi,Hitsugi Pose 2
+LobbyAction,1,LobbyAction_rodtls,Rod/Talis
+LobbyAction,1,LobbyAction_556poseneta,PR Pose 4
+LobbyAction,1,LobbyAction_850clockpose,Clock Pose 2
+LobbyAction,1,LobbyAction_rodfly,Broom Flight
+LobbyAction,1,LobbyAction_udekumi,Cross Arms 2
 LobbyAction,1,LobbyAction_kgr,Senran Kagura
-LobbyAction,1,LobbyAction_dagknu,Dagas gemelas/nudillos
-LobbyAction,1,LobbyAction_tmggth,Ametralladoras gemelas/Gunblade
-LobbyAction,1,LobbyAction_sitirin,Hora de la parrilla
-LobbyAction,1,LobbyAction_888stratos,Postura del estrato 2
-LobbyAction,1,LobbyAction_889stratos,Postura del estrato 3
-LobbyAction,1,LobbyAction_890kyokuya,Postura de Kyokuya 1
-LobbyAction,1,LobbyAction_891kyokuya,Postura de Kyokuya 2
-LobbyAction,1,LobbyAction_863oracle,EP Oráculo 6
-LobbyAction,1,LobbyAction_892rukot,Postura de Lukot 1
-LobbyAction,1,LobbyAction_817steam,cangrejo
-LobbyAction,1,LobbyAction_893rukot,Postura de Lukot 2
-LobbyAction,1,LobbyAction_894rukot,Postura de Lukot 3
+LobbyAction,1,LobbyAction_dagknu,Twin Daggers/Knuckles
+LobbyAction,1,LobbyAction_tmggth,Twin Machine Guns/Gunblade
+LobbyAction,1,LobbyAction_sitirin,Grill Time
+LobbyAction,1,LobbyAction_888stratos,Stratos Pose 2
+LobbyAction,1,LobbyAction_889stratos,Stratos Pose 3
+LobbyAction,1,LobbyAction_890kyokuya,Kyokuya Pose 1
+LobbyAction,1,LobbyAction_891kyokuya,Kyokuya Pose 2
+LobbyAction,1,LobbyAction_863oracle,EP Oracle 6
+LobbyAction,1,LobbyAction_892rukot,Lukot Pose 1
+LobbyAction,1,LobbyAction_817steam,Headcrab
+LobbyAction,1,LobbyAction_893rukot,Lukot Pose 2
+LobbyAction,1,LobbyAction_894rukot,Lukot Pose 3
 LobbyAction,1,LobbyAction_idoramatoi,Idola Matoi Pose
-LobbyAction,1,LobbyAction_toutobu,Admirar
-LobbyAction,1,LobbyAction_thanksgivingday,Pavo
-LobbyAction,1,LobbyAction_kotatsu,Relájate 1
-LobbyAction,1,LobbyAction_464relax,Relájate 2
-LobbyAction,1,LobbyAction_dsawlc,Lanzas dobles de sable/cableadas
-LobbyAction,1,LobbyAction_lusterpose,Postura de brillo
-LobbyAction,1,LobbyAction_wndtkt,Varita/armonizador
-LobbyAction,1,LobbyAction_oden,Estofado de Odén
-LobbyAction,1,LobbyAction_dbljbt,Cuchillas altísimas/Botas Jet
-LobbyAction,1,LobbyAction_ktnbow,Katana/Arco
-LobbyAction,1,LobbyAction_rodeo,Postura de rodeo 1
-LobbyAction,1,LobbyAction_rodeo2,Postura de rodeo 2
-LobbyAction,1,LobbyAction_clawmachine,ATRAPADOR DE OVNIS®
-LobbyAction,1,LobbyAction_6posefireice,Pose elemental: fuego y hielo
-LobbyAction,1,LobbyAction_6posewinthun,Pose elemental - Ltng y viento
-LobbyAction,1,LobbyAction_6poselightdark,Pose elemental: oscuridad y luz
-LobbyAction,1,LobbyAction_thief,Ladrón fantasma
-LobbyAction,1,LobbyAction_setsumei,Explicar
-LobbyAction,1,LobbyAction_spider,Araña
-LobbyAction,1,LobbyAction_awadate,hacer espuma
-LobbyAction,1,LobbyAction_kobushipose,Postura del puño
-LobbyAction,1,LobbyAction_ushipose,Postura de mu mu mu
-LobbyAction,1,LobbyAction_goodpose,buena pose
-LobbyAction,1,LobbyAction_nakayoshi,Postura de las mejores amigas
-LobbyAction,1,LobbyAction_1yubipose,"""Una"" postura"
-LobbyAction,1,LobbyAction_koyubipose,Postura del dedo meñique
-LobbyAction,1,LobbyAction_heartpose,Postura del corazón
-LobbyAction,1,LobbyAction_bakyunpose,Postura de bang bang
-LobbyAction,1,LobbyAction_909vocaldance,diva movimiento 1
-LobbyAction,1,LobbyAction_910vocaldance,diva movimiento 2
-LobbyAction,1,LobbyAction_911vocaldance,diva movimiento 3
-LobbyAction,1,LobbyAction_932vocaldance,diva movimiento 4
-LobbyAction,1,LobbyAction_2yubipose,"Postura ""dos"""
-LobbyAction,1,LobbyAction_0309jumppose,Postura de salto
-LobbyAction,1,LobbyAction_hitonakapose,Postura de dos dedos
-LobbyAction,1,LobbyAction_airquotes,Cotizaciones aéreas
-LobbyAction,1,LobbyAction_maloiksign,Roca en
+LobbyAction,1,LobbyAction_toutobu,Admire
+LobbyAction,1,LobbyAction_thanksgivingday,Turkey
+LobbyAction,1,LobbyAction_kotatsu,Relax 1
+LobbyAction,1,LobbyAction_464relax,Relax 2
+LobbyAction,1,LobbyAction_dsawlc,Double Saber/Wired Lances
+LobbyAction,1,LobbyAction_lusterpose,Luster Pose
+LobbyAction,1,LobbyAction_wndtkt,Wand/Harmonizer
+LobbyAction,1,LobbyAction_oden,Oden Stew
+LobbyAction,1,LobbyAction_dbljbt,Soaring Blades/Jet Boots
+LobbyAction,1,LobbyAction_ktnbow,Katana/Bow
+LobbyAction,1,LobbyAction_rodeo,Rodeo Pose 1
+LobbyAction,1,LobbyAction_rodeo2,Rodeo Pose 2
+LobbyAction,1,LobbyAction_clawmachine,UFO CATCHER®
+LobbyAction,1,LobbyAction_6posefireice,Elemental Pose - Fire & Ice
+LobbyAction,1,LobbyAction_6posewinthun,Elemental Pose - Ltng & Wind
+LobbyAction,1,LobbyAction_6poselightdark,Elemental Pose - Dark & Light
+LobbyAction,1,LobbyAction_thief,Phantom Thief
+LobbyAction,1,LobbyAction_setsumei,Explain
+LobbyAction,1,LobbyAction_spider,Spider
+LobbyAction,1,LobbyAction_awadate,Lather Up
+LobbyAction,1,LobbyAction_kobushipose,Fist Pose
+LobbyAction,1,LobbyAction_ushipose,Moo Moo Pose
+LobbyAction,1,LobbyAction_goodpose,Good Pose
+LobbyAction,1,LobbyAction_nakayoshi,Besties Pose
+LobbyAction,1,LobbyAction_1yubipose,"""One"" Pose"
+LobbyAction,1,LobbyAction_koyubipose,Little Finger Pose
+LobbyAction,1,LobbyAction_heartpose,Heart Pose
+LobbyAction,1,LobbyAction_bakyunpose,Bang Bang Pose
+LobbyAction,1,LobbyAction_909vocaldance,Diva Motion 1
+LobbyAction,1,LobbyAction_910vocaldance,Diva Motion 2
+LobbyAction,1,LobbyAction_911vocaldance,Diva Motion 3
+LobbyAction,1,LobbyAction_932vocaldance,Diva Motion 4
+LobbyAction,1,LobbyAction_2yubipose,"""Two"" Pose"
+LobbyAction,1,LobbyAction_0309jumppose,Jumping Pose
+LobbyAction,1,LobbyAction_hitonakapose,Two Fingers Pose
+LobbyAction,1,LobbyAction_airquotes,Air Quotes
+LobbyAction,1,LobbyAction_maloiksign,Rock On
 LobbyAction,1,LobbyAction_kamenpose,[Persona] Pose
-LobbyAction,1,LobbyAction_935prpose,Postura de relaciones públicas 5
-LobbyAction,1,LobbyAction_933sonictails,Sonic/Colas 2
-LobbyAction,1,LobbyAction_sitpiece,Agacharse 3
-LobbyAction,1,LobbyAction_threepose,"Postura ""tres"""
-LobbyAction,1,LobbyAction_heropose2,Pose de héroe +
-LobbyAction,1,LobbyAction_phantom2,Postura fantasma +
-LobbyAction,1,LobbyAction_966dance,Interpretación vocal 11
-LobbyAction,1,LobbyAction_972performance,Interpretación vocal 12
-LobbyAction,1,LobbyAction_hinadan,Espectador entusiasta
-LobbyAction,1,LobbyAction_fourpose,"Postura ""cuatro"""
-LobbyAction,1,LobbyAction_943cheerup,Animar
-LobbyAction,1,LobbyAction_950aisatsu,Arco profundo
-LobbyAction,1,LobbyAction_hello2re,Saludo 2+
-LobbyAction,1,LobbyAction_rabbitdance,danza del conejo
-LobbyAction,1,LobbyAction_944look,Observar
-LobbyAction,1,LobbyAction_fivepose,"Postura ""cinco"""
-LobbyAction,1,LobbyAction_graffiti,Pintada
-LobbyAction,1,LobbyAction_953sonkei,Gracias 4
-LobbyAction,1,LobbyAction_947sit,sentarse 8
-LobbyAction,1,LobbyAction_954hurue,Temblar
+LobbyAction,1,LobbyAction_935prpose,PR Pose 5
+LobbyAction,1,LobbyAction_933sonictails,Sonic/Tails 2
+LobbyAction,1,LobbyAction_sitpiece,Crouch 3
+LobbyAction,1,LobbyAction_threepose,"""Three"" Pose"
+LobbyAction,1,LobbyAction_heropose2,Hero Pose +
+LobbyAction,1,LobbyAction_phantom2,Phantom Pose +
+LobbyAction,1,LobbyAction_966dance,Vocal Performance 11
+LobbyAction,1,LobbyAction_972performance,Vocal Performance 12
+LobbyAction,1,LobbyAction_hinadan,Enthusiastic Spectator
+LobbyAction,1,LobbyAction_fourpose,"""Four"" Pose"
+LobbyAction,1,LobbyAction_943cheerup,Cheer Up
+LobbyAction,1,LobbyAction_950aisatsu,Deep Bow
+LobbyAction,1,LobbyAction_hello2re,Greeting 2+
+LobbyAction,1,LobbyAction_rabbitdance,Rabbit Dance
+LobbyAction,1,LobbyAction_944look,Observe
+LobbyAction,1,LobbyAction_fivepose,"""Five"" Pose"
+LobbyAction,1,LobbyAction_graffiti,Graffiti
+LobbyAction,1,LobbyAction_953sonkei,Thank 4
+LobbyAction,1,LobbyAction_947sit,Sit 8
+LobbyAction,1,LobbyAction_954hurue,Tremble
 LobbyAction,1,LobbyAction_pccollabo,Intel
-LobbyAction,1,LobbyAction_icecreamre,Comer helado +
-LobbyAction,1,LobbyAction_2000ice,comer helado 2
-LobbyAction,1,LobbyAction_2001ice,comer helado 3
-LobbyAction,1,LobbyAction_2045dance,baile 61
-LobbyAction,1,LobbyAction_parasolpose,Sombrilla
-LobbyAction,1,LobbyAction_summeritempose,Diversión de verano
-LobbyAction,1,LobbyAction_musclepose,Postura de culturismo
-LobbyAction,1,LobbyAction_913catpose,Postura del zorro
-LobbyAction,1,LobbyAction_otukimi,contemplar la luna
-LobbyAction,1,LobbyAction_2044dance,baile 62
-LobbyAction,1,LobbyAction_912handcam,Marco de dedo
-LobbyAction,1,LobbyAction_949sit,sentarse 9
-LobbyAction,1,LobbyAction_fingersnapping,chasquido de dedos
-LobbyAction,1,LobbyAction_955cook,cocinar 2
-LobbyAction,1,LobbyAction_465kobushi,encendido
-LobbyAction,1,LobbyAction_2017hang,suspendido 2
-LobbyAction,1,LobbyAction_920yubipose,Espera un minuto
-LobbyAction,1,LobbyAction_2006syagamu,Agacharse 4
-LobbyAction,1,LobbyAction_yakiimo,Batata
-LobbyAction,1,LobbyAction_oteage,Me rindo
-LobbyAction,1,LobbyAction_2105dance,baile 63
-LobbyAction,1,LobbyAction_967sonictails,Sonic/Colas 3
-LobbyAction,1,LobbyAction_956tyouhatsu,Provocar 2
-LobbyAction,1,LobbyAction_redyarn,hilo rojo
-LobbyAction,1,LobbyAction_2097redyarn,hilo rojo 2
-LobbyAction,1,LobbyAction_positioning,Posicionamiento
-LobbyAction,1,LobbyAction_2052yukiasobi,Diversión en la nieve 3
-LobbyAction,1,LobbyAction_948sit,Siéntate 10
-LobbyAction,1,LobbyAction_ozouni,Disfruta de la sopa de año nuevo
-LobbyAction,1,LobbyAction_gaow,Postura del tigre
-LobbyAction,1,LobbyAction_2066ninja,ninja 2
-LobbyAction,1,LobbyAction_tyabudai,Mesa Baja
-LobbyAction,1,LobbyAction_tatami,Estera de tatami
-LobbyAction,1,LobbyAction_commemorative,Foto conmemorativa
-LobbyAction,1,LobbyAction_2130dance,baile 65
-LobbyAction,1,LobbyAction_icehockey,Hockey sobre hielo
-LobbyAction,1,LobbyAction_prologue,Postura NGS
-LobbyAction,1,LobbyAction_fingerdance,Sin fronteras.
-LobbyAction,1,LobbyAction_2123dance,baile 64
-LobbyAction,1,LobbyAction_2132heartpose,Postura del corazón 2
-LobbyAction,1,LobbyAction_pourtea,La hora del té
-LobbyAction,1,LobbyAction_2078service,A Su Servicio/Relajarse
-LobbyAction,1,LobbyAction_skyama,Yamada el Flash Pose
-LobbyAction,1,LobbyAction_2144dance,baile 66
-LobbyAction,1,LobbyAction_2133heartpose,Postura del corazón 3
-LobbyAction,1,LobbyAction_2145dance,baile 67
-LobbyAction,1,LobbyAction_2079shooting,Disparos de desplazamiento lateral
-LobbyAction,1,LobbyAction_2007bed,Cama 4
-LobbyAction,1,LobbyAction_2141prpose,Postura de relaciones públicas 6
-LobbyAction,1,LobbyAction_2083withbird,jugar con el pájaro
-LobbyAction,1,LobbyAction_2084withbird,Jugar con el pájaro 2
-LobbyAction,1,LobbyAction_2085withbird,jugar con el pájaro 3
-LobbyAction,1,LobbyAction_2081rouleau,Voluta
-LobbyAction,1,LobbyAction_2170rouleau,Desplazarse 2
-LobbyAction,1,LobbyAction_ashiokipose,Postura del explorador
-LobbyAction,1,LobbyAction_2089airchair,sentarse en el aire
-LobbyAction,1,LobbyAction_2151dance,baile 68
-LobbyAction,1,LobbyAction_2080hiding,Furtivo
-LobbyAction,1,LobbyAction_2152dance,baile 69
-LobbyAction,1,LobbyAction_2154prpose,Postura de relaciones públicas 7
-LobbyAction,1,LobbyAction_boxingre,Boxeo +
-LobbyAction,1,LobbyAction_remakeup,Constituir
-LobbyAction,1,LobbyAction_souvenirphoto,Pose de foto de truco
-LobbyAction,1,LobbyAction_himedakko,Transporte nupcial
-LobbyAction,1,LobbyAction_2135korpokkur,Paraguas de hoja
+LobbyAction,1,LobbyAction_icecreamre,Eat Ice Cream +
+LobbyAction,1,LobbyAction_2000ice,Eat Ice Cream 2
+LobbyAction,1,LobbyAction_2001ice,Eat Ice Cream 3
+LobbyAction,1,LobbyAction_2045dance,Dance 61
+LobbyAction,1,LobbyAction_parasolpose,Parasol
+LobbyAction,1,LobbyAction_summeritempose,Summer Fun
+LobbyAction,1,LobbyAction_musclepose,Bodybuilding Pose
+LobbyAction,1,LobbyAction_913catpose,Fox Pose
+LobbyAction,1,LobbyAction_otukimi,Moon-Gazing
+LobbyAction,1,LobbyAction_2044dance,Dance 62
+LobbyAction,1,LobbyAction_912handcam,Finger Frame
+LobbyAction,1,LobbyAction_949sit,Sit 9
+LobbyAction,1,LobbyAction_fingersnapping,Finger Snap
+LobbyAction,1,LobbyAction_955cook,Cook 2
+LobbyAction,1,LobbyAction_465kobushi,Fired Up
+LobbyAction,1,LobbyAction_2017hang,Suspended 2
+LobbyAction,1,LobbyAction_920yubipose,Wait a Minite
+LobbyAction,1,LobbyAction_2006syagamu,Crouch 4
+LobbyAction,1,LobbyAction_yakiimo,Sweet Potato
+LobbyAction,1,LobbyAction_oteage,I Give Up
+LobbyAction,1,LobbyAction_2105dance,Dance 63
+LobbyAction,1,LobbyAction_967sonictails,Sonic/Tails 3
+LobbyAction,1,LobbyAction_956tyouhatsu,Provoke 2
+LobbyAction,1,LobbyAction_redyarn,Red String
+LobbyAction,1,LobbyAction_2097redyarn,Red String 2
+LobbyAction,1,LobbyAction_positioning,Positioning
+LobbyAction,1,LobbyAction_2052yukiasobi,Snow Fun 3
+LobbyAction,1,LobbyAction_948sit,Sit 10
+LobbyAction,1,LobbyAction_ozouni,Enjoy New Year Soup
+LobbyAction,1,LobbyAction_gaow,Tiger Pose
+LobbyAction,1,LobbyAction_2066ninja,Ninja 2
+LobbyAction,1,LobbyAction_tyabudai,Low Table
+LobbyAction,1,LobbyAction_tatami,Tatami Mat
+LobbyAction,1,LobbyAction_commemorative,Commemorative Photo
+LobbyAction,1,LobbyAction_2130dance,Dance 65
+LobbyAction,1,LobbyAction_icehockey,Ice Hockey
+LobbyAction,1,LobbyAction_prologue,NGS Pose
+LobbyAction,1,LobbyAction_fingerdance,No Border.
+LobbyAction,1,LobbyAction_2123dance,Dance 64
+LobbyAction,1,LobbyAction_2132heartpose,Heart Pose 2
+LobbyAction,1,LobbyAction_pourtea,Tea Time
+LobbyAction,1,LobbyAction_2078service,At Your Service/Relax
+LobbyAction,1,LobbyAction_skyama,Yamada the Flash Pose
+LobbyAction,1,LobbyAction_2144dance,Dance 66
+LobbyAction,1,LobbyAction_2133heartpose,Heart Pose 3
+LobbyAction,1,LobbyAction_2145dance,Dance 67
+LobbyAction,1,LobbyAction_2079shooting,Side-Scrolling Shooting
+LobbyAction,1,LobbyAction_2007bed,Bed 4
+LobbyAction,1,LobbyAction_2141prpose,PR Pose 6
+LobbyAction,1,LobbyAction_2083withbird,Play With Bird
+LobbyAction,1,LobbyAction_2084withbird,Play With Bird 2
+LobbyAction,1,LobbyAction_2085withbird,Play With Bird 3
+LobbyAction,1,LobbyAction_2081rouleau,Scroll
+LobbyAction,1,LobbyAction_2170rouleau,Scroll 2
+LobbyAction,1,LobbyAction_ashiokipose,Explorer Pose
+LobbyAction,1,LobbyAction_2089airchair,Sit on Air
+LobbyAction,1,LobbyAction_2151dance,Dance 68
+LobbyAction,1,LobbyAction_2080hiding,Sneaky
+LobbyAction,1,LobbyAction_2152dance,Dance 69
+LobbyAction,1,LobbyAction_2154prpose,PR Pose 7
+LobbyAction,1,LobbyAction_boxingre,Boxing +
+LobbyAction,1,LobbyAction_remakeup,Makeup
+LobbyAction,1,LobbyAction_souvenirphoto,Trick Photo Pose
+LobbyAction,1,LobbyAction_himedakko,Bridal Carry
+LobbyAction,1,LobbyAction_2135korpokkur,Leaf Umbrella
 LobbyAction,1,LobbyAction_2136korpokkur,Leaf Umbrella 2
-LobbyAction,1,LobbyAction_moonstarsit,Asiento estrella
-LobbyAction,1,LobbyAction_muscletraining,Calistenia
-LobbyAction,1,LobbyAction_abdominal,abdominales
-LobbyAction,1,LobbyAction_jankenre,"Piedra, papel o tijera +"
-LobbyAction,1,LobbyAction_fanservicere,Servicio de fans +
-LobbyAction,1,LobbyAction_2169lc,comer pastel de rollo
-LobbyAction,1,LobbyAction_watersidepose,Silla de playa
-LobbyAction,1,LobbyAction_dive,Buceo
-LobbyAction,1,LobbyAction_2058makefire,Iniciar un incendio
-LobbyAction,1,LobbyAction_2181dance,Interpretación vocal 13
-LobbyAction,1,LobbyAction_957taoreru,Jugando a la zarigüeya
-LobbyAction,1,LobbyAction_bartender,camarero
-LobbyAction,1,LobbyAction_blind,Mirando a través de las persianas
-LobbyAction,1,LobbyAction_selfmainte,Automantenimiento
-LobbyAction,1,LobbyAction_2295showhand,Mostrar manos
-LobbyAction,1,LobbyAction_Pchair_viri,Silla Photon (verde oscuro)
-LobbyAction,1,LobbyAction_Pchair_green,Silla Photon (Verde)
-LobbyAction,1,LobbyAction_Pchair_sky,Silla Photon (azul claro)
-LobbyAction,1,LobbyAction_Pchair_blue,Silla Photon (Azul)
-LobbyAction,1,LobbyAction_Pchair_purple,Silla Photon (púrpura)
-LobbyAction,1,LobbyAction_Pchair_pink,Silla Photon (Rosa)
-LobbyAction,1,LobbyAction_Pchair_red,Silla Photon (Roja)
-LobbyAction,1,LobbyAction_Pchair_oran,Silla Photon (Naranja)
-LobbyAction,1,LobbyAction_Pchair_yellow,Silla Photon (Amarillo)
-LobbyAction,1,LobbyAction_Pchair_whiti,Silla Photon (Blanca)
-LobbyAction,1,LobbyAction_Pchair_gold,Silla Photon (Oro)
-LobbyAction,1,LobbyAction_Pchair_black,Silla Photon (negra)
-LobbyAction,1,LobbyAction_Pchair_rappy,Silla de fotones (Rappy)
-LobbyAction,1,LobbyActionCategory_99,Gestos: Favoritos
-LobbyAction,1,LobbyActionCategory_1,Gestos: Básicos
-LobbyAction,1,LobbyActionCategory_4,Gestos: Otros 1
-LobbyAction,1,LobbyActionCategory_5,Gestos: Otros 2
-LobbyAction,1,LobbyActionCategory_6,Gestos: Otros 3
-LobbyAction,1,LobbyActionCategory_7,Gestos: Otros 4
-LobbyAction,1,LobbyActionCategory_8,Gestos: Otros 5
-LobbyAction,1,LobbyActionCategory_9,Gestos: Otros 6
-LobbyAction,1,LobbyActionCategory_10,Gestos: Otros 7
-LobbyAction,1,LobbyActionCategory_11,Gestos: Otros 8
-LobbyAction,1,LobbyActionCategory_12,Gestos: Otros 9
-LobbyAction,1,LobbyActionCategory_13,Gestos: Otros 10
-LobbyAction,1,LobbyActionCategory_14,Gestos: Otros 11
-LobbyAction,1,LobbyActionCategory_15,Gestos: Otros 12
-LobbyAction,1,LobbyActionCategory_16,Gestos: Otros 13
-LobbyAction,1,LobbyActionCategory_17,Gestos: Otros 14
-LobbyAction,1,LobbyActionCategory_18,Gestos: Otros 15
-LobbyAction,1,LobbyActionCategory_34,Gestos: Otros 16
-LobbyAction,1,LobbyActionCategory_36,Gestos: Otros 17
-LobbyAction,1,LobbyActionCategory_19,Gestos: Poses 1
-LobbyAction,1,LobbyActionCategory_20,Gestos: Poses 2
-LobbyAction,1,LobbyActionCategory_21,Gestos: Poses 3
-LobbyAction,1,LobbyActionCategory_22,Gestos: Poses 4
-LobbyAction,1,LobbyActionCategory_35,Gestos: Poses 5
-LobbyAction,1,LobbyActionCategory_23,Gestos: NPC Poses 1
-LobbyAction,1,LobbyActionCategory_24,Gestos: NPC Poses 2
-LobbyAction,1,LobbyActionCategory_25,Gestos: NPC Poses 3
-LobbyAction,1,LobbyActionCategory_26,Gestos: NPC Poses 4
-LobbyAction,1,LobbyActionCategory_27,Gestos: Actuación 1
-LobbyAction,1,LobbyActionCategory_28,Gestos: Actuación 2
-LobbyAction,1,LobbyActionCategory_29,Gestos: Actuación 3
-LobbyAction,1,LobbyActionCategory_30,Gestos: Actuación 4
-LobbyAction,1,LobbyActionCategory_31,Gestos: Colaboración 1
-LobbyAction,1,LobbyActionCategory_32,Gestos: Colaboración 2
-LobbyAction,1,LobbyActionCategory_33,Gestos: Colaboración 3
-LobbyAction,1,LobbyActionCategory_37,Gestos: Colaboración 4
-LobbyAction,1,LobbyActionCategory_2,Emotes: dibujar personajes
-LobbyAction,1,LobbyActionCategory_3,Sillas de fotones
+LobbyAction,1,LobbyAction_moonstarsit,Star Seat
+LobbyAction,1,LobbyAction_muscletraining,Calisthenics
+LobbyAction,1,LobbyAction_abdominal,Sit-Ups
+LobbyAction,1,LobbyAction_jankenre,Rock Paper Scissors +
+LobbyAction,1,LobbyAction_fanservicere,Fan Service +
+LobbyAction,1,LobbyAction_2169lc,Eat Roll Cake
+LobbyAction,1,LobbyAction_watersidepose,Beach Chair
+LobbyAction,1,LobbyAction_dive,Diving
+LobbyAction,1,LobbyAction_2058makefire,Starting a Fire
+LobbyAction,1,LobbyAction_2181dance,Vocal Performance 13
+LobbyAction,1,LobbyAction_957taoreru,Playing Possum
+LobbyAction,1,LobbyAction_bartender,Bartending
+LobbyAction,1,LobbyAction_blind,Peering through Blinds
+LobbyAction,1,LobbyAction_selfmainte,Self-Maintenance
+LobbyAction,1,LobbyAction_2295showhand,Show Hands
+LobbyAction,1,LobbyAction_Pchair_viri,Photon Chair (Dark Green)
+LobbyAction,1,LobbyAction_Pchair_green,Photon Chair (Green)
+LobbyAction,1,LobbyAction_Pchair_sky,Photon Chair (Light Blue)
+LobbyAction,1,LobbyAction_Pchair_blue,Photon Chair (Blue)
+LobbyAction,1,LobbyAction_Pchair_purple,Photon Chair (Purple)
+LobbyAction,1,LobbyAction_Pchair_pink,Photon Chair (Pink)
+LobbyAction,1,LobbyAction_Pchair_red,Photon Chair (Red)
+LobbyAction,1,LobbyAction_Pchair_oran,Photon Chair (Orange)
+LobbyAction,1,LobbyAction_Pchair_yellow,Photon Chair (Yellow)
+LobbyAction,1,LobbyAction_Pchair_whiti,Photon Chair (White)
+LobbyAction,1,LobbyAction_Pchair_gold,Photon Chair (Gold)
+LobbyAction,1,LobbyAction_Pchair_black,Photon Chair (Black)
+LobbyAction,1,LobbyAction_Pchair_rappy,Photon Chair (Rappy)
+LobbyAction,1,LobbyActionCategory_99,Emotes: Favorites
+LobbyAction,1,LobbyActionCategory_1,Emotes: Basic
+LobbyAction,1,LobbyActionCategory_4,Emotes: Other 1
+LobbyAction,1,LobbyActionCategory_5,Emotes: Other 2
+LobbyAction,1,LobbyActionCategory_6,Emotes: Other 3
+LobbyAction,1,LobbyActionCategory_7,Emotes: Other 4
+LobbyAction,1,LobbyActionCategory_8,Emotes: Other 5
+LobbyAction,1,LobbyActionCategory_9,Emotes: Other 6
+LobbyAction,1,LobbyActionCategory_10,Emotes: Other 7
+LobbyAction,1,LobbyActionCategory_11,Emotes: Other 8
+LobbyAction,1,LobbyActionCategory_12,Emotes: Other 9
+LobbyAction,1,LobbyActionCategory_13,Emotes: Other 10
+LobbyAction,1,LobbyActionCategory_14,Emotes: Other 11
+LobbyAction,1,LobbyActionCategory_15,Emotes: Other 12
+LobbyAction,1,LobbyActionCategory_16,Emotes: Other 13
+LobbyAction,1,LobbyActionCategory_17,Emotes: Other 14
+LobbyAction,1,LobbyActionCategory_18,Emotes: Other 15
+LobbyAction,1,LobbyActionCategory_34,Emotes: Other 16
+LobbyAction,1,LobbyActionCategory_36,Emotes: Other 17
+LobbyAction,1,LobbyActionCategory_19,Emotes: Poses 1
+LobbyAction,1,LobbyActionCategory_20,Emotes: Poses 2
+LobbyAction,1,LobbyActionCategory_21,Emotes: Poses 3
+LobbyAction,1,LobbyActionCategory_22,Emotes: Poses 4
+LobbyAction,1,LobbyActionCategory_35,Emotes: Poses 5
+LobbyAction,1,LobbyActionCategory_23,Emotes: NPC Poses 1
+LobbyAction,1,LobbyActionCategory_24,Emotes: NPC Poses 2
+LobbyAction,1,LobbyActionCategory_25,Emotes: NPC Poses 3
+LobbyAction,1,LobbyActionCategory_26,Emotes: NPC Poses 4
+LobbyAction,1,LobbyActionCategory_27,Emotes: Performance 1
+LobbyAction,1,LobbyActionCategory_28,Emotes: Performance 2
+LobbyAction,1,LobbyActionCategory_29,Emotes: Performance 3
+LobbyAction,1,LobbyActionCategory_30,Emotes: Performance 4
+LobbyAction,1,LobbyActionCategory_31,Emotes: Collaboration 1
+LobbyAction,1,LobbyActionCategory_32,Emotes: Collaboration 2
+LobbyAction,1,LobbyActionCategory_33,Emotes: Collaboration 3
+LobbyAction,1,LobbyActionCategory_37,Emotes: Collaboration 4
+LobbyAction,1,LobbyActionCategory_2,Emotes: Draw Characters
+LobbyAction,1,LobbyActionCategory_3,Photon Chairs
 LobbyAction,1,LobbyAction_MonomanePayAction,Este gesto requiere el ticket correspondiente.
-LobbyAction,1,LobbyActionCategoryTab_99,0. Favoritos
-LobbyAction,1,LobbyActionCategoryTab_0,1. Mostrar todo
-LobbyAction,1,LobbyActionCategoryTab_1,$(0). Básico
-LobbyAction,1,LobbyActionCategoryTab_4,$(0). Otro 1
-LobbyAction,1,LobbyActionCategoryTab_5,$(0). Otros 2
-LobbyAction,1,LobbyActionCategoryTab_6,$(0). Otros 3
-LobbyAction,1,LobbyActionCategoryTab_7,$(0). Otros 4
-LobbyAction,1,LobbyActionCategoryTab_8,$(0). Otros 5
-LobbyAction,1,LobbyActionCategoryTab_9,$(0). Otros 6
-LobbyAction,1,LobbyActionCategoryTab_10,$(0). Otros 7
-LobbyAction,1,LobbyActionCategoryTab_11,$(0). Otros 8
-LobbyAction,1,LobbyActionCategoryTab_12,$(0). Otros 9
-LobbyAction,1,LobbyActionCategoryTab_13,$(0). Otros 10
-LobbyAction,1,LobbyActionCategoryTab_14,$(0). Otros 11
-LobbyAction,1,LobbyActionCategoryTab_15,$(0). Otros 12
-LobbyAction,1,LobbyActionCategoryTab_16,$(0). Otros 13
-LobbyAction,1,LobbyActionCategoryTab_17,$(0). Otros 14
-LobbyAction,1,LobbyActionCategoryTab_18,$(0). Otros 15
-LobbyAction,1,LobbyActionCategoryTab_34,$(0). Otros 16
-LobbyAction,1,LobbyActionCategoryTab_36,$(0). Otros 17
+LobbyAction,1,LobbyActionCategoryTab_99,0. Favorites
+LobbyAction,1,LobbyActionCategoryTab_0,1. Show All
+LobbyAction,1,LobbyActionCategoryTab_1,$(0). Basic
+LobbyAction,1,LobbyActionCategoryTab_4,$(0). Other 1
+LobbyAction,1,LobbyActionCategoryTab_5,$(0). Other 2
+LobbyAction,1,LobbyActionCategoryTab_6,$(0). Other 3
+LobbyAction,1,LobbyActionCategoryTab_7,$(0). Other 4
+LobbyAction,1,LobbyActionCategoryTab_8,$(0). Other 5
+LobbyAction,1,LobbyActionCategoryTab_9,$(0). Other 6
+LobbyAction,1,LobbyActionCategoryTab_10,$(0). Other 7
+LobbyAction,1,LobbyActionCategoryTab_11,$(0). Other 8
+LobbyAction,1,LobbyActionCategoryTab_12,$(0). Other 9
+LobbyAction,1,LobbyActionCategoryTab_13,$(0). Other 10
+LobbyAction,1,LobbyActionCategoryTab_14,$(0). Other 11
+LobbyAction,1,LobbyActionCategoryTab_15,$(0). Other 12
+LobbyAction,1,LobbyActionCategoryTab_16,$(0). Other 13
+LobbyAction,1,LobbyActionCategoryTab_17,$(0). Other 14
+LobbyAction,1,LobbyActionCategoryTab_18,$(0). Other 15
+LobbyAction,1,LobbyActionCategoryTab_34,$(0). Other 16
+LobbyAction,1,LobbyActionCategoryTab_36,$(0). Other 17
 LobbyAction,1,LobbyActionCategoryTab_19,$(0). Poses 1
-LobbyAction,1,LobbyActionCategoryTab_20,$(0). Posturas 2
-LobbyAction,1,LobbyActionCategoryTab_21,$(0). Posturas 3
-LobbyAction,1,LobbyActionCategoryTab_22,$(0). Posturas 4
-LobbyAction,1,LobbyActionCategoryTab_35,$(0). Posturas 5
-LobbyAction,1,LobbyActionCategoryTab_23,$(0). Poses de PNJ 1
-LobbyAction,1,LobbyActionCategoryTab_24,$(0). Poses de PNJ 2
-LobbyAction,1,LobbyActionCategoryTab_25,$(0). Poses de PNJ 3
-LobbyAction,1,LobbyActionCategoryTab_26,$(0). Poses de PNJ 4
-LobbyAction,1,LobbyActionCategoryTab_27,$(0). Rendimiento 1
-LobbyAction,1,LobbyActionCategoryTab_28,$(0). Rendimiento 2
-LobbyAction,1,LobbyActionCategoryTab_29,$(0). Rendimiento 3
-LobbyAction,1,LobbyActionCategoryTab_30,$(0). Rendimiento 4
-LobbyAction,1,LobbyActionCategoryTab_31,$(0). Colaboración 1
-LobbyAction,1,LobbyActionCategoryTab_32,$(0). Colaboración 2
-LobbyAction,1,LobbyActionCategoryTab_33,$(0). Colaboración 3
-LobbyAction,1,LobbyActionCategoryTab_37,$(0). Colaboración 4
-LobbyAction,1,LobbyActionCategoryTab_2,$(0). dibujar personajes
-LobbyAction,1,LobbyActionCategoryTab_3,Sillas de fotones
+LobbyAction,1,LobbyActionCategoryTab_20,$(0). Poses 2
+LobbyAction,1,LobbyActionCategoryTab_21,$(0). Poses 3
+LobbyAction,1,LobbyActionCategoryTab_22,$(0). Poses 4
+LobbyAction,1,LobbyActionCategoryTab_35,$(0). Poses 5
+LobbyAction,1,LobbyActionCategoryTab_23,$(0). NPC Poses 1
+LobbyAction,1,LobbyActionCategoryTab_24,$(0). NPC Poses 2
+LobbyAction,1,LobbyActionCategoryTab_25,$(0). NPC Poses 3
+LobbyAction,1,LobbyActionCategoryTab_26,$(0). NPC Poses 4
+LobbyAction,1,LobbyActionCategoryTab_27,$(0). Performance 1
+LobbyAction,1,LobbyActionCategoryTab_28,$(0). Performance 2
+LobbyAction,1,LobbyActionCategoryTab_29,$(0). Performance 3
+LobbyAction,1,LobbyActionCategoryTab_30,$(0). Performance 4
+LobbyAction,1,LobbyActionCategoryTab_31,$(0). Collaboration 1
+LobbyAction,1,LobbyActionCategoryTab_32,$(0). Collaboration 2
+LobbyAction,1,LobbyActionCategoryTab_33,$(0). Collaboration 3
+LobbyAction,1,LobbyActionCategoryTab_37,$(0). Collaboration 4
+LobbyAction,1,LobbyActionCategoryTab_2,$(0). Draw Characters
+LobbyAction,1,LobbyActionCategoryTab_3,Photon Chairs
 LobbyAction,1,LobbyActionCategoryTab_Used,Acciones utilizadas recientemente
 LobbyAction,1,LobbyActionSex_0,Tipo 1
 LobbyAction,1,LobbyActionSex_1,Tipo 2
