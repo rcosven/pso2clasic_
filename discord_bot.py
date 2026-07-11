@@ -502,6 +502,14 @@ async def web_api_github(request):
         if filename in bot.modified_files:
             bot.modified_files.remove(filename)
             
+        # Notificar en Discord al canal 1525352131111026709
+        try:
+            channel = bot.get_channel(1525352131111026709)
+            if channel:
+                await channel.send(f"🚀 **¡Nuevo Pull Request desde la Web!**\n**Autor:** `{autor_pr}`\n**Archivo modificado:** `{filename}`\n**Revisar y hacer Merge:** {pr_url}")
+        except Exception as e:
+            print(f"Error al enviar notificación de Discord: {e}")
+            
         return web.json_response({"success": True, "url": pr_url})
     except Exception as e:
         return web.json_response({"error": str(e)}, status=500)
