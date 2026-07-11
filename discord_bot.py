@@ -5,11 +5,16 @@ import os
 import csv
 import logging
 from pathlib import Path
+from dotenv import load_dotenv
+import unicodedata
 import base64
 import requests
 import time
 import json
 from aiohttp import web
+
+# Cargar variables de entorno
+load_dotenv()
 
 # Configurar variables de GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -77,11 +82,14 @@ class BuscadorBot(commands.Bot):
                             reader = csv.DictReader(f)
                             for row in reader:
                                 if 'id' in row:
+                                    texto_original = row.get('text', '')
+                                    texto_norm = ''.join(c for c in unicodedata.normalize('NFKD', texto_original.lower()) if not unicodedata.combining(c))
                                     self.index_datos.append({
                                         'section': row.get('section', ''),
                                         'group': row.get('group', ''),
                                         'id': row['id'],
-                                        'text': row.get('text', ''),
+                                        'text': texto_original,
+                                        'text_norm': texto_norm,
                                         'file': f"{dir_name}/{archivo_csv.name}",
                                         'line': reader.line_num
                                     })
@@ -373,18 +381,28 @@ async def web_api_search(request):
     if len(query) < 3:
         return web.json_response({"items": []})
         
+    query_norm = ''.join(c for c in unicodedata.normalize('NFKD', query) if not unicodedata.combining(c))
+    
     bot = request.app['bot']
     coincidencias = []
+    ids_vistos = set()
     
     for item in bot.index_datos:
-        # Solo devolver del grupo 1 porque queremos editar
-        if item.get('group') == '1' and query in item['text'].lower():
-            coincidencias.append({
-                "file": item['file'],
-                "id": item['id'],
-                "text": item['text']
-            })
-            if len(coincidencias) >= 100:  # Limitar a 100 resultados para evitar colapsar la web
+        # Buscar en TODOS los textos (Español, Inglés, Japonés) usando texto normalizado (sin tildes)
+        if query_norm in item.get('text_norm', ''):
+            # Calcular el archivo editable real (quitar _Raw)
+            editable_file = item['file'].replace('_Raw', '')
+            clave_unica = f"{editable_file}_{item['id']}"
+            
+            if clave_unica not in ids_vistos:
+                ids_vistos.add(clave_unica)
+                coincidencias.append({
+                    "file": editable_file,
+                    "id": item['id'],
+                    "text": item['text']
+                })
+            
+            if len(coincidencias) >= 100:  # Limitar resultados
                 break
                 
     return web.json_response({"items": coincidencias})
