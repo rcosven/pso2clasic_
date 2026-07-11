@@ -548,9 +548,10 @@
                     }, 1500);
                     
                 } else {
+                    const data = await response.json();
                     btnSave.innerHTML = 'Error al guardar';
                     btnSave.classList.add('btn-error');
-                    showNotification("❌", "Error al guardar");
+                    showNotification("❌", data.error || "Error al guardar");
                 }
             } catch (error) {
                 btnSave.innerHTML = 'Error de conexión';

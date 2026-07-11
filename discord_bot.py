@@ -451,7 +451,16 @@ async def web_api_save(request):
         
         exito = modificar_texto_csv(filename, section, '1', row_id, new_text)
         if not exito:
-            return web.json_response({"error": "No se pudo modificar CSV"}, status=500)
+            # DEBUG: find out WHY it failed
+            ruta = Path(filename)
+            debug_info = f"Exists: {ruta.exists()}. "
+            if ruta.exists():
+                with open(ruta, 'r', encoding='utf-8-sig') as f:
+                    matches = [r for r in csv.DictReader(f) if r.get('id') == row_id]
+                    debug_info += f"Matches found: {len(matches)}. "
+                    for m in matches:
+                        debug_info += f"[sec: '{m.get('section')}', grp: '{m.get('group')}'] "
+            return web.json_response({"error": f"No se pudo modificar CSV. {debug_info}"}, status=500)
             
         for item in bot.index_datos:
             if item['file'] == filename and item.get('section') == section and item['id'] == row_id and item.get('group') == '1':
