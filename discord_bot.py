@@ -5,16 +5,13 @@ import os
 import csv
 import logging
 from pathlib import Path
-from dotenv import load_dotenv
 import unicodedata
 import base64
 import requests
 import time
 import json
+import asyncio
 from aiohttp import web
-
-# Cargar variables de entorno
-load_dotenv()
 
 # Configurar variables de GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
