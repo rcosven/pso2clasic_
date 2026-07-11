@@ -36,19 +36,28 @@ class BuscadorBot(commands.Bot):
     async def setup_hook(self):
         self.cargar_indices()
         
+        # 0. Arrancar servidor web de inmediato
+        try:
+            await start_web_server(self)
+        except Exception as e:
+            logger.error(f"Error al iniciar el servidor web: {e}")
+        
         # 1. Sincronización instantánea en tu servidor de pruebas
         mi_servidor = discord.Object(id=1525057654446100553) 
-        self.tree.copy_global_to(guild=mi_servidor)
-        logger.info("Sincronizando comandos de barra en el servidor de pruebas...")
-        await self.tree.sync(guild=mi_servidor)
+        try:
+            self.tree.copy_global_to(guild=mi_servidor)
+            logger.info("Sincronizando comandos de barra en el servidor de pruebas...")
+            await self.tree.sync(guild=mi_servidor)
+        except Exception as e:
+            logger.error(f"Error al sincronizar comandos en el servidor de pruebas: {e}")
         
         # 2. Sincronización global para los demás servidores
-        logger.info("Sincronizando comandos globalmente (puede tardar hasta 1 hora en propagarse)...")
-        await self.tree.sync()
-        
-        # 3. Arrancar servidor web
-        await start_web_server(self)
-        
+        try:
+            logger.info("Sincronizando comandos globalmente (puede tardar hasta 1 hora en propagarse)...")
+            await self.tree.sync()
+        except Exception as e:
+            logger.error(f"Error al sincronizar comandos globalmente: {e}")
+            
         logger.info("Sincronización completada.")
 
     def cargar_indices(self):
