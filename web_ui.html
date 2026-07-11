@@ -343,7 +343,12 @@
                 </div>
 
                 <div class="box-group">
-                    <label>Traducción al Español <span class="badge-edit">(Al realizar enter y guardar el texto, el programa generará automáticamente un &lt;br&gt; al código)</span></label>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                        <label style="margin-bottom: 0;">Traducción al Español <span class="badge-edit">(Al realizar enter y guardar el texto, el programa generará automáticamente un &lt;br&gt; al código)</span></label>
+                        <div>
+                            <button class="btn btn-primary" onclick="pasteText('box-spanish')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #238636; border-color: #2ea043;">Pegar</button>
+                        </div>
+                    </div>
                     <textarea id="box-spanish" class="textarea-editable" placeholder="Escribe la traducción aquí..."></textarea>
                 </div>
             </div>
@@ -613,6 +618,24 @@
             const encodedText = encodeURIComponent(textToTranslate);
             const url = `https://translate.google.com/?sl=auto&tl=es&text=${encodedText}&op=translate`;
             window.open(url, "GoogleTranslatePopup", "width=850,height=650,menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes");
+        }
+        
+        async function pasteText(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            
+            try {
+                const text = await navigator.clipboard.readText();
+                if (text) {
+                    el.value = text;
+                    // Disparar evento input para auto-guardar y reescalar
+                    el.dispatchEvent(new Event('input'));
+                    showNotification("📋", "Texto pegado desde el portapapeles");
+                }
+            } catch (err) {
+                console.error("Error al pegar: ", err);
+                showNotification("❌", "El navegador bloqueó el pegado automático. Usa Ctrl+V.");
+            }
         }
     </script>
 </body>
