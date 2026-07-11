@@ -445,6 +445,23 @@
             boxSpanish.focus();
         }
 
+        // PREVENT PHYSICAL NEWLINES (ENTER KEY)
+        boxSpanish.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Stop the physical newline
+                
+                // Insert <br> at cursor position
+                const start = this.selectionStart;
+                const end = this.selectionEnd;
+                const val = this.value;
+                this.value = val.substring(0, start) + "<br>" + val.substring(end);
+                this.selectionStart = this.selectionEnd = start + 4;
+                
+                // Trigger input event to auto-save and auto-resize
+                this.dispatchEvent(new Event('input'));
+            }
+        });
+
         // AUTO-RESIZE
         boxSpanish.addEventListener('input', function() {
             this.style.height = 'auto';
