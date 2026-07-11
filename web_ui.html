@@ -309,22 +309,28 @@
     </div>
 
     <div class="main-editor">
-        <div class="editor-container" id="editor-container">
+        <div class="editor-area" id="editor-area" style="display: none;">
             <div class="editor-header">
-                <h1 id="editor-title">Selecciona una línea</h1>
-                <p id="editor-subtitle">Haz clic en un elemento de la barra lateral para comenzar a editar.</p>
+                <h1 id="item-id-title">TitleLogo_Enter</h1>
+                <p>Haz clic en un elemento de la barra lateral para comenzar a editar.</p>
             </div>
+            
+            <div class="editor-boxes">
+                <div class="box-group">
+                    <label>Texto Original Japonés <span class="badge">Solo Lectura</span></label>
+                    <textarea id="box-japanese" class="textarea-readonly" readonly></textarea>
+                </div>
+                
+                <div class="box-group">
+                    <label>Inglés Original (Raw) <span class="badge">Solo Lectura</span></label>
+                    <textarea id="box-english" class="textarea-readonly" readonly></textarea>
+                </div>
 
-            <div class="input-group">
-                <label>Texto Original Japonés <span>(Solo lectura)</span></label>
-                <textarea id="txt-original" readonly></textarea>
+                <div class="box-group">
+                    <label>Traducción al Español <span class="badge-edit">Use &lt;br&gt; en lugar de Enter para saltos</span></label>
+                    <textarea id="box-spanish" class="textarea-editable" placeholder="Escribe la traducción aquí..."></textarea>
+                </div>
             </div>
-
-            <div class="input-group">
-                <label>Traducción <span>(Usa &lt;br&gt; en lugar de Enter para saltos)</span></label>
-                <textarea id="txt-traduccion" placeholder="Escribe la traducción aquí..."></textarea>
-            </div>
-
             <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
                 <button class="btn btn-primary" id="btn-save" style="width: auto;">
                     <div class="loader"></div>
@@ -349,11 +355,11 @@
 
         const itemListEl = document.getElementById('item-list');
         const filenameDisplayEl = document.getElementById('filename-display');
-        const editorContainerEl = document.getElementById('editor-container');
-        const editorTitleEl = document.getElementById('editor-title');
-        const txtOriginalEl = document.getElementById('txt-original');
-        const txtTraduccionEl = document.getElementById('txt-traduccion');
-        const btnSaveEl = document.getElementById('btn-save');
+        const editorArea = document.getElementById('editor-area');
+        const boxJapanese = document.getElementById('box-japanese');
+        const boxEnglish = document.getElementById('box-english');
+        const boxSpanish = document.getElementById('box-spanish');
+        const btnSave = document.getElementById('btn-save');
         const btnGithubEl = document.getElementById('btn-github');
         
         if (!fileName) {
@@ -369,7 +375,7 @@
                 if (!response.ok) throw new Error("Error al cargar datos");
                 
                 const data = await response.json();
-                allItems = data.items; // Expecting [{id: '...', section: '...', group: '1', text: '...', original: '...'}, ...]
+                allItems = data.items;
                 
                 renderList();
                 if (allItems.length > 0) {
@@ -414,45 +420,67 @@
         }
 
         function selectItem(index) {
-            // Remove active class from previous
             document.querySelectorAll('.list-item').forEach(el => el.classList.remove('active'));
             // Add active class to current
             document.getElementById(`item-${index}`).classList.add('active');
             
             currentItem = allItems[index];
             
-            editorTitleEl.textContent = currentItem.id;
-            txtOriginalEl.value = currentItem.original || "(Sin original)";
-            txtTraduccionEl.value = currentItem.text || "";
+            document.getElementById('item-id-title').textContent = currentItem.id;
             
-            editorContainerEl.classList.add('active');
-            txtTraduccionEl.focus();
+            // Reemplazar <br> con saltos de línea reales para visualización
+            boxJapanese.value = (currentItem.original || "").replace(/<br>/g, "\n");
+            boxEnglish.value = (currentItem.english || "").replace(/<br>/g, "\n");
+            boxSpanish.value = (currentItem.text || "").replace(/<br>/g, "\n");
+            
+            // Auto resize textareas
+            boxJapanese.style.height = 'auto';
+            boxJapanese.style.height = (boxJapanese.scrollHeight) + 'px';
+            boxEnglish.style.height = 'auto';
+            boxEnglish.style.height = (boxEnglish.scrollHeight) + 'px';
+            boxSpanish.style.height = 'auto';
+            boxSpanish.style.height = (boxSpanish.scrollHeight) + 'px';
+            
+            editorArea.style.display = 'block';
+            boxSpanish.focus();
         }
 
-        // PREVENT PHYSICAL NEWLINES (ENTER KEY)
-        txtTraduccionEl.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                e.preventDefault(); // Stop the physical newline
-                
-                // Insert <br> at cursor position
-                const start = this.selectionStart;
-                const end = this.selectionEnd;
-                const val = this.value;
-                this.value = val.substring(0, start) + "<br>" + val.substring(end);
-                this.selectionStart = this.selectionEnd = start + 4;
-            }
+        // AUTO-RESIZE
+        boxSpanish.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+            
+            // Revert background if modified
+            this.style.backgroundColor = 'var(--panel-bg)';
         });
 
-        // SAVE BUTTON
-        btnSaveEl.addEventListener('click', async () => {
+        // AUTO-SAVE LOGIC
+        let saveTimeout;
+        boxSpanish.addEventListener('input', () => {
+            clearTimeout(saveTimeout);
+            
+            btnSave.classList.remove('btn-success', 'btn-error');
+            btnSave.textContent = 'Guardar Cambios Localmente';
+            
+            saveTimeout = setTimeout(() => {
+                saveCurrentItem();
+            }, 1500); // Auto-save after 1.5 seconds of no typing
+        });
+
+        btnSave.addEventListener('click', () => {
+            saveCurrentItem();
+        });
+
+        async function saveCurrentItem() {
             if (!currentItem) return;
+
+            // Restore <br> format before saving
+            const newText = boxSpanish.value.replace(/\n/g, "<br>");
             
-            // Re-sanitize just in case someone pasted physical newlines
-            let finalVal = txtTraduccionEl.value.trim();
-            finalVal = finalVal.replace(/\r\n|\n|\r/g, "<br>");
-            txtTraduccionEl.value = finalVal;
-            
-            btnSaveEl.classList.add('loading');
+            if (newText === currentItem.text) return; // No changes
+
+            btnSave.innerHTML = '<div class="loader" style="display:block;"></div> Guardando...';
+            btnSave.classList.remove('btn-success', 'btn-error');
             
             try {
                 const response = await fetch('/api/save', {
@@ -462,26 +490,34 @@
                         file: fileName,
                         section: currentItem.section,
                         id: currentItem.id,
-                        text: finalVal
+                        text: newText
                     })
                 });
                 
-                if (!response.ok) throw new Error();
-                
-                // Update local state and UI list
-                currentItem.text = finalVal;
-                const activeListItemTxt = document.querySelector('.list-item.active .item-text');
-                if (activeListItemTxt) {
-                    activeListItemTxt.textContent = finalVal;
+                if (response.ok) {
+                    currentItem.text = newText;
+                    document.getElementById(`item-${allItems.indexOf(currentItem)}`).querySelector('.item-text').textContent = newText;
+                    
+                    btnSave.innerHTML = '¡Guardado!';
+                    btnSave.classList.add('btn-success');
+                    
+                    // Highlight the input temporarily
+                    boxSpanish.style.backgroundColor = 'rgba(46, 160, 67, 0.1)';
+                    setTimeout(() => {
+                        boxSpanish.style.backgroundColor = 'var(--panel-bg)';
+                    }, 1500);
+                    
+                } else {
+                    btnSave.innerHTML = 'Error al guardar';
+                    btnSave.classList.add('btn-error');
+                    showNotification("❌", "Error al guardar");
                 }
-                
-                showNotification("✅", "Línea guardada localmente");
-            } catch (e) {
-                showNotification("❌", "Error al guardar localmente");
-            } finally {
-                btnSaveEl.classList.remove('loading');
+            } catch (error) {
+                btnSave.innerHTML = 'Error de conexión';
+                btnSave.classList.add('btn-error');
+                showNotification("❌", "No se pudo contactar con el servidor local.");
             }
-        });
+        }
 
         // GITHUB BUTTON
         btnGithubEl.addEventListener('click', async () => {

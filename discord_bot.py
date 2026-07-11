@@ -400,19 +400,26 @@ async def web_api_file(request):
     # 1. Obtener todos los items del archivo (O(N))
     file_items = [item for item in bot.index_datos if item['file'] == filename]
     
-    # 2. Crear diccionario de grupos 0 (original) para búsqueda O(1)
-    # Llave: (section, id) -> Valor: text
-    g0_dict = {(item.get('section'), item['id']): item.get('text', '') for item in file_items if item.get('group') == '0'}
+    # 2. Obtener los items del archivo Raw (O(N))
+    raw_filename = filename.replace("Csv_Ngs", "Csv_Ngs_Raw").replace("Csv_Clasic", "Csv_Clasic_Raw")
+    raw_items = [item for item in bot.index_datos if item['file'] == raw_filename]
     
-    # 3. Emparejar con grupo 1 (traducción)
+    # 3. Crear diccionarios para búsqueda O(1)
+    g0_dict = {(item.get('section'), item['id']): item.get('text', '') for item in file_items if item.get('group') == '0'}
+    g_raw_dict = {(item.get('section'), item['id']): item.get('text', '') for item in raw_items if item.get('group') == '1'}
+    
+    # 4. Emparejar con grupo 1 (traducción al español)
     for g1 in file_items:
         if g1.get('group') == '1':
             original_text = g0_dict.get((g1.get('section'), g1['id']), "")
+            english_text = g_raw_dict.get((g1.get('section'), g1['id']), "")
+            
             items.append({
                 'section': g1.get('section', ''),
                 'id': g1['id'],
                 'text': g1.get('text', ''),
-                'original': original_text
+                'original': original_text,
+                'english': english_text
             })
             
     return web.json_response({"items": items})
