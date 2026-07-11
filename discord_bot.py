@@ -8,6 +8,8 @@ from pathlib import Path
 import base64
 import requests
 import time
+import json
+from aiohttp import web
 
 # Configurar variables de GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -43,6 +45,9 @@ class BuscadorBot(commands.Bot):
         # 2. Sincronización global para los demás servidores
         logger.info("Sincronizando comandos globalmente (puede tardar hasta 1 hora en propagarse)...")
         await self.tree.sync()
+        
+        # 3. Arrancar servidor web
+        await start_web_server(self)
         
         logger.info("Sincronización completada.")
 
@@ -251,8 +256,9 @@ def construir_mensaje_archivo(bot_instance, filepath: str, match_item: dict = No
 
     # Construir el cuerpo del mensaje
     mensaje_lineas = [
-        f"📁 **Archivo:** `{filepath}`\n",
-        "💡 **Líneas traducibles en este archivo (haz clic en el número correspondiente abajo para traducir):**"
+        f"📁 **Archivo:** `{filepath}`",
+        f"🌐 **Traductor Visual (Recomendado):** [Abrir en el Navegador](http://localhost:8080/edit?file={filepath})\n",
+        "💡 **O usa los botones numéricos abajo:**"
     ]
     
     for i, item in enumerate(lineas_traducibles[:20]):
@@ -466,6 +472,102 @@ class DescargarMultipleView(discord.ui.View):
     def __init__(self, files: list):
         super().__init__(timeout=180)
         self.add_item(DescargarDropdown(files))
+
+# --- WEB SERVER (TRADUCTOR VISUAL) ---
+async def web_index(request):
+    try:
+        with open("web_ui.html", "r", encoding="utf-8") as f:
+            content = f.read()
+        return web.Response(text=content, content_type="text/html")
+    except Exception as e:
+        return web.Response(text=f"Error al cargar UI: {e}", status=500)
+
+async def web_api_file(request):
+    filename = request.query.get("name")
+    if not filename:
+        return web.json_response({"error": "Falta parámetro 'name'"}, status=400)
+        
+    bot = request.app['bot']
+    items = []
+    
+    group_1_items = [item for item in bot.index_datos if item['file'] == filename and item.get('group') == '1']
+    
+    for g1 in group_1_items:
+        original_text = ""
+        for g0 in bot.index_datos:
+            if g0['file'] == filename and g0.get('section') == g1.get('section') and g0['id'] == g1['id'] and g0.get('group') == '0':
+                original_text = g0.get('text', '')
+                break
+        
+        items.append({
+            'section': g1.get('section', ''),
+            'id': g1['id'],
+            'text': g1.get('text', ''),
+            'original': original_text
+        })
+        
+    return web.json_response({"items": items})
+
+async def web_api_save(request):
+    try:
+        data = await request.json()
+        filename = data.get('file')
+        section = data.get('section', '')
+        row_id = data.get('id')
+        new_text = data.get('text', '')
+        
+        bot = request.app['bot']
+        
+        exito = modificar_texto_csv(filename, section, '1', row_id, new_text)
+        if not exito:
+            return web.json_response({"error": "No se pudo modificar CSV"}, status=500)
+            
+        for item in bot.index_datos:
+            if item['file'] == filename and item.get('section') == section and item['id'] == row_id and item.get('group') == '1':
+                item['text'] = new_text
+                break
+                
+        bot.modified_files.add(filename)
+        return web.json_response({"success": True})
+    except Exception as e:
+        return web.json_response({"error": str(e)}, status=500)
+
+async def web_api_github(request):
+    try:
+        data = await request.json()
+        filename = data.get('file')
+        bot = request.app['bot']
+        
+        pr_url, error = crear_pull_request_traduccion(
+            ruta_archivo_local=filename,
+            ruta_archivo_repo=filename,
+            row_id="WebUpdate",
+            usuario_discord="TraductorWeb"
+        )
+        
+        if error:
+            return web.json_response({"error": error}, status=500)
+            
+        if filename in bot.modified_files:
+            bot.modified_files.remove(filename)
+            
+        return web.json_response({"success": True, "url": pr_url})
+    except Exception as e:
+        return web.json_response({"error": str(e)}, status=500)
+
+async def start_web_server(bot):
+    app = web.Application()
+    app['bot'] = bot
+    app.router.add_get('/edit', web_index)
+    app.router.add_get('/api/file', web_api_file)
+    app.router.add_post('/api/save', web_api_save)
+    app.router.add_post('/api/github', web_api_github)
+    
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, '0.0.0.0', 8080)
+    await site.start()
+    logger.info("Servidor Web (Traductor Visual) iniciado en http://localhost:8080")
 
 bot = BuscadorBot()
 
