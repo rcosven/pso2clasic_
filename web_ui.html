@@ -462,6 +462,29 @@
             }
         });
 
+        // HANDLE PASTING (CONVERT NEWLINES TO <BR>)
+        boxSpanish.addEventListener('paste', function(e) {
+            e.preventDefault(); // Prevent default paste
+            
+            // Get pasted text
+            let pastedText = (e.clipboardData || window.clipboardData).getData('text');
+            
+            // Replace any newlines (\r\n, \n, \r) with <br>
+            pastedText = pastedText.replace(/\r\n|\n|\r/g, "<br>");
+            
+            // Insert at cursor position
+            const start = this.selectionStart;
+            const end = this.selectionEnd;
+            const val = this.value;
+            this.value = val.substring(0, start) + pastedText + val.substring(end);
+            
+            // Move cursor to end of pasted text
+            this.selectionStart = this.selectionEnd = start + pastedText.length;
+            
+            // Trigger input event to auto-save and auto-resize
+            this.dispatchEvent(new Event('input'));
+        });
+
         // AUTO-RESIZE
         boxSpanish.addEventListener('input', function() {
             this.style.height = 'auto';
