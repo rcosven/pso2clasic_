@@ -301,6 +301,10 @@
             <!-- Items added by JS -->
         </div>
         <div class="sidebar-footer">
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="input-nickname" placeholder="Tu Nick para créditos (Opcional)" 
+                       style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #30363d; background-color: #0d1117; color: #c9d1d9;">
+            </div>
             <button class="btn btn-primary" id="btn-github" disabled>
                 <div class="loader"></div>
                 Subir a GitHub (Crear PR)
@@ -523,15 +527,20 @@
         }
 
         // GITHUB BUTTON
-        btnGithubEl.addEventListener('click', async () => {
+        btnGithubEl.addEventListener('click', async function createPullRequest() {
             if (!fileName) return;
+            
             btnGithubEl.classList.add('loading');
+            
+            // Obtener el nick
+            const nicknameEl = document.getElementById('input-nickname');
+            const nickname = nicknameEl ? nicknameEl.value.trim() : "";
             
             try {
                 const response = await fetch('/api/github', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ file: fileName })
+                    body: JSON.stringify({ file: fileName, nickname: nickname })
                 });
                 
                 const data = await response.json();

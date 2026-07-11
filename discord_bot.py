@@ -478,13 +478,16 @@ async def web_api_github(request):
     try:
         data = await request.json()
         filename = data.get('file')
+        nickname = data.get('nickname', '').strip()
         bot = request.app['bot']
+        
+        autor_pr = f"Web: {nickname}" if nickname else "TraductorWeb"
         
         pr_url, error = crear_pull_request_traduccion(
             ruta_archivo_local=filename,
             ruta_archivo_repo=filename,
             row_id="WebUpdate",
-            usuario_discord="TraductorWeb"
+            usuario_discord=autor_pr
         )
         
         if error:
