@@ -514,8 +514,8 @@
         async function saveCurrentItem() {
             if (!currentItem) return;
 
-            // Restore <br> format before saving
-            const newText = boxSpanish.value.replace(/\n/g, "<br>");
+            // Restore <br> format before saving, catching any stray physical newlines
+            const newText = boxSpanish.value.replace(/\r\n|\n|\r/g, "<br>");
             
             if (newText === currentItem.text) return; // No changes
 
