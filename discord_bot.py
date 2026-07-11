@@ -238,15 +238,79 @@ def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: st
     else:
         return None, f"Error al crear Pull Request: {res.text}"
 
+class EditarLineaSelect(discord.ui.Select):
+    def __init__(self, bot_instance, filepath: str):
+        self.bot = bot_instance
+        self.filepath = filepath
+        
+        # Encontrar todos los registros del archivo donde group == '1'
+        options = []
+        seen = set()
+        count = 0
+        for item in self.bot.index_datos:
+            if item['file'] == filepath and item.get('group') == '1':
+                sec_id = f"{item.get('section')}|{item['id']}"
+                if sec_id not in seen:
+                    seen.add(sec_id)
+                    txt = item.get('text', '')
+                    label_text = f"{item['id']}: {txt}" if txt else item['id']
+                    if len(label_text) > 100:
+                        label_text = label_text[:97] + "..."
+                    options.append(discord.SelectOption(
+                        label=label_text,
+                        value=sec_id,
+                        description=f"Sección: {item.get('section')}"
+                    ))
+                    count += 1
+                    if count >= 25:
+                        break
+                        
+        super().__init__(
+            placeholder="Selecciona una línea para traducir/editar...",
+            min_values=1,
+            max_values=1,
+            options=options if options else [discord.SelectOption(label="Sin líneas de traducción", value="none")]
+        )
+        if not options:
+            self.disabled = True
+
+    async def callback(self, interaction: discord.Interaction):
+        if self.values[0] == "none":
+            await interaction.response.send_message("No hay líneas editables.", ephemeral=True)
+            return
+            
+        sec, row_id = self.values[0].split("|", 1)
+        
+        # Buscar los datos del group 1
+        item_data = None
+        for item in self.bot.index_datos:
+            if item['file'] == self.filepath and item.get('section') == sec and item['id'] == row_id and item.get('group') == '1':
+                item_data = item
+                break
+                
+        if not item_data:
+            await interaction.response.send_message("❌ Error: No se encontró la línea a editar.", ephemeral=True)
+            return
+            
+        # Buscar el original (group 0)
+        original_text = ""
+        for item in self.bot.index_datos:
+            if item['file'] == self.filepath and item.get('section') == sec and item['id'] == row_id and item.get('group') == '0':
+                original_text = item.get('text', '')
+                break
+                
+        # Abrir el Modal de Traducción
+        await interaction.response.send_modal(TranslationModal(self.bot, item_data, original_text))
+
 class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
     def __init__(self, bot_instance, item_data: dict, original_text: str):
         super().__init__()
         self.bot = bot_instance
         self.item = item_data
         
-        # Caja de texto para el japonés original (de referencia)
+        # Caja de texto para el japonés original (de referencia, explícitamente lectura)
         self.original_input = discord.ui.TextInput(
-            label="Texto Original (Referencia - No Editar)",
+            label="⚠️ LECTURA - Original (Se ignorará si editas)",
             style=discord.TextStyle.paragraph,
             default=original_text if original_text else "*(Sin original)*",
             required=False
@@ -329,6 +393,9 @@ class DescargarCSVView(discord.ui.View):
             self.filepath = item_data_or_filepath
             self.original_text = ""
             self.remove_item(self.traducir)
+
+        # Agregar el selector de líneas si el archivo tiene líneas traducibles
+        self.add_item(EditarLineaSelect(self.bot, self.filepath))
 
     @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥")
     async def descargar(self, interaction: discord.Interaction, button: discord.ui.Button):
