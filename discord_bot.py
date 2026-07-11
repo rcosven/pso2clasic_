@@ -456,7 +456,9 @@ async def web_api_save(request):
             debug_info = f"Exists: {ruta.exists()}. "
             if ruta.exists():
                 with open(ruta, 'r', encoding='utf-8-sig') as f:
-                    matches = [r for r in csv.DictReader(f) if r.get('id') == row_id]
+                    all_rows = list(csv.DictReader(f))
+                    debug_info += f"Total rows in file: {len(all_rows)}. "
+                    matches = [r for r in all_rows if r.get('id') == row_id]
                     debug_info += f"Matches found: {len(matches)}. "
                     for m in matches:
                         debug_info += f"[sec: '{m.get('section')}', grp: '{m.get('group')}'] "
