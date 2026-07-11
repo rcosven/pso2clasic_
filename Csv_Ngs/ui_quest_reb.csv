@@ -66,13 +66,13 @@ UrgencyQuest,1,E_Section11102_Notice,[ATENCIÓN] Se ha detectado una anomalía c
 UrgencyQuest,1,E_Section11102_Open,"[URGENTE] Emergencia cerca de Aelio Cliffs. Operaciones de ARKS, responde de inmediato."
 UrgencyQuest,1,E_Section11110_Notice,[ATENCIÓN] Se ha detectado una anomalía cerca de las Ruinas de Aelio.
 UrgencyQuest,1,E_Section11110_Open,"[URGENTE] Emergencia cerca de las Ruinas de Aelio. Operaciones de ARKS, responde de inmediato."
-UrgencyQuest,1,E_eario_Dolls_1120000_Notice,prepárese para el despliegue. <yellow>(Para jugadores con 950 de poder de batalla y más). <c>
-UrgencyQuest,1,E_eario_Dolls_1120000_Open,Solicite la participación de todos los defensores de ARKS. <yellow>(Para jugadores con 950 de poder de batalla y más). <c>
+UrgencyQuest,1,E_eario_Dolls_1120000_Notice,"Anuncio de emergencia: Se han detectado DOLLS poderosos en la región de Aelio. Todos los defensores ARKS, prepárense para el despliegue. <amarillo>(Para jugadores con 950 de poder de batalla o superior).<c>"
+UrgencyQuest,1,E_eario_Dolls_1120000_Open,Atención defensores de ARKS: Estamos iniciando una contraofensiva contra DOLLS en la región de Aelio. Solicitamos la participación de todos los defensores de ARKS. <yellow>(Para jugadores con 950 de Poder de Batalla o superior).<c>
 UrgencyQuest,1,E_eario_Common_End,Misión cumplida. Gracias por tu contribución.
-UrgencyQuest,1,W_Trial_Gold_Notice,"llegarnos momentáneamente. Todos los defensores de ARKS, prepárense para el despliegue."
-UrgencyQuest,1,W_Trial_Gold_Open,operación. Solicitamos la participación de todos los defensores de ARKS disponibles.
+UrgencyQuest,1,W_Trial_Gold_Notice,"Aviso de emergencia: Se han detectado numerosos proyectiles en el cielo. Nos alcanzarán en breve. Todos los defensores de ARKS, prepárense para el despliegue."
+UrgencyQuest,1,W_Trial_Gold_Open,Atención a todos los defensores de ARKS. Estamos lanzando una operación de recuperación de Stellar Grace. Solicitamos la participación de todos los defensores de ARKS disponibles.
 UrgencyQuest,1,W_Trial_Gold_End,La operación de recuperación de Stellar Grace está completa. Gracias por tu contribución.
-UrgencyQuest,1,W_Trial_Gold_Failure,peligroso. Todos los defensores de ARKS deben volver a las operaciones estándar.
+UrgencyQuest,1,W_Trial_Gold_Failure,Se ha determinado que cualquier descubrimiento adicional de Stellar Grace podría ser peligroso. Todos los defensores de ARKS deben retomar sus operaciones habituales.
 UrgencyQuest,1,E_eario_Dolls_1120001_Notice,"Anuncio de emergencia: Se han detectado DOLLS poderosos en la región de Aelio. Todos los defensores ARKS, prepárense para el despliegue. <yellow>(Para jugadores con $(0) de Poder de Batalla o superior).<c>"
 UrgencyQuest,1,E_eario_Dolls_1120001_Open,Atención defensores de ARKS: Estamos iniciando una contraofensiva contra DOLLS en la región de Aelio. Solicitamos la participación de todos los defensores de ARKS. <yellow>(Para jugadores con $(0) de Poder de Batalla o superior).<c>
 UrgencyQuest,1,E_defense_Common_End,Se confirma la erradicación de DOLLS según la directiva de defensa. Gracias por su contribución a la misión.
@@ -109,7 +109,7 @@ UrgencyQuest,1,ML_Event_Open001,¡El concierto de cine está en marcha ahora mis
 UrgencyQuest,1,ML_Event_End001,El concierto de cine está completo. Gracias por unirte.
 UrgencyQuest,1,E_Leciel_General_Notice,"Anuncio de emergencia: Tenemos una lectura de energía alta confirmada en Leciel y actualmente estamos evaluando la situación. Todos los defensores de ARKS, por favor prepárense para el despliegue. <yellow>(Para jugadores con $(0) de Poder de Batalla o superior.)<c>"
 UrgencyQuest,1,E_Leciel_General_Open,Atención defensores de ARKS: Estamos iniciando una contraofensiva contra los poderosos enemigos en Leciel. Solicitamos la participación de todos los defensores de ARKS. <yellow>(Para jugadores con $(0) de Poder de Batalla o superior.)<c>
-UrgencyQuest,1,E_Aelio_sinDF_General_Notice,爀攀 挀甀爀爀攀渀琀氀礀 愀猀猀攀猀猀椀渀最 琀栀攀 猀椀琀甀愀琀椀漀渀⸀ 䄀氀氀 䄀刀䬀匀 搀攀昀攀渀搀攀爀猀Ⰰ 瀀氀攀愀猀攀 瀀爀攀瀀愀爀攀 昀漀爀 搀攀瀀氀漀礀洀攀渀琀⸀
+UrgencyQuest,1,E_Aelio_sinDF_General_Notice,"Aviso de emergencia: Hemos confirmado una lectura de alta energía en la región de Aelio y estamos evaluando la situación. Todos los defensores de ARKS, prepárense para el despliegue."
 UrgencyQuest,1,E_Aelio_sinDF_General_Open,"Atención, defensores de ARKS: Estamos iniciando una contraofensiva contra los poderosos enemigos en la región de Aelio. Solicitamos la participación de todos los defensores de ARKS."
 UrgencyQuest,1,E_Ritemu_sinDF_General_Notice,"Aviso de emergencia: Hemos confirmado una lectura de alta energía en la región de Retem y estamos evaluando la situación. Todos los defensores de ARKS, prepárense para el despliegue."
 UrgencyQuest,1,E_Ritemu_sinDF_General_Open,"Atención, defensores de ARKS: Estamos iniciando una contraofensiva contra los poderosos enemigos en la región de Retem. Solicitamos la participación de todos los defensores de ARKS."
@@ -404,7 +404,7 @@ NewPartyMatching,1,Mes_Matching_Election_Error3,Esta función sólo puede ser ut
 NewPartyMatching,1,Mes_Matching_Election_Com3,Inicio inmediato de la misión
 NewPartyMatching,1,Mes_Matching_Election_Countdown1,: $(0) segundo(s) restante(s)
 NewPartyMatching,1,Mes_Matching_Election_Title,Aceptar misión Inicio inmediato
-NewPartyMatching,1,Mes_Matching_Election_Msg2,hormigas? Se le retirará<br>del emparejamiento si no está de acuerdo $(0) más veces. <br>
+NewPartyMatching,1,Mes_Matching_Election_Msg2,¿Aceptas comenzar la misión inmediatamente con menos<br>del número máximo de participantes? Serás excluido del<br>proceso de emparejamiento si rechazas $(0) veces más.
 NewPartyMatching,1,Mes_Matching_Election_Countdown2,<center> $(0) segundo(s) restante(s) </center>
 NewPartyMatching,1,Mes_Matching_Election_Yes,Aceptar
 NewPartyMatching,1,Mes_Matching_Election_No,discrepar
@@ -416,7 +416,7 @@ NewPartyMatching,1,Mes_Matching_Number_Limit,Esta misión se puede completar $(0
 NewPartyMatching,1,Mes_Matching_Start,Se inició el emparejamiento para [$(0)].
 NewPartyMatching,1,Mes_Quest_Desorption,Volviendo a $(0).
 NewPartyMatching,1,Mes_Matching_Election_non,
-NewPartyMatching,1,Mes_Matching_Election_Desp1,Seleccione [Inicio inmediato de la misión] en [Menú de aceptación de misión <br>] para comenzar la misión con los miembros actuales.
+NewPartyMatching,1,Mes_Matching_Election_Desp1,Selecciona [Inicio inmediato de la misión] <br>en el [Menú de aceptación de la misión] <br>para comenzar la misión con los miembros actuales.
 NewPartyMatching,1,Mes_Matching_Election_Desp2,Se propone inicio inmediato de la misión.<br>Consulte sus notificaciones para obtener más detalles.
 NewPartyMatching,1,Mes_Matching_Election_Start1,Se propone inicio inmediato de la misión.<br>Consulte sus notificaciones para obtener más detalles.
 NewPartyMatching,1,Mes_Matching_Election_Start2,Esperando respuesta de los miembros participantes.
@@ -426,7 +426,7 @@ NewPartyMatching,1,Mes_Matching_Election_Com5,El líder del partido aceptó el i
 NewPartyMatching,1,Mes_Matching_AutoStart_Mes1,Se recibió confirmación de inicio de misión urgente. (La misión comienza en $(0) segundos)
 NewPartyMatching,1,Mes_Matching_AutoStart_Arrival1,Confirmación de inicio de misión urgente
 NewPartyMatching,1,Mes_Matching_AutoStart_Title1,Confirmación de inicio de misión urgente
-NewPartyMatching,1,Mes_Matching_AutoStart_Mes2,猀
+NewPartyMatching,1,Mes_Matching_AutoStart_Mes2,Ya puedes aceptar la Misión Urgente.<br>La misión comenzará automáticamente con los miembros<br>del sistema de emparejamiento actual.<br>¿Te gustaría unirte a la misión con estos miembros?<br>Nota: El sistema de emparejamiento se cancelará si no te unes.<br>La misión comienza en $(0) segundos.
 NewPartyMatching,1,Mes_Matching_AutoStart_Btn1,Únete a la búsqueda
 NewPartyMatching,1,Mes_Matching_AutoStart_Btn2,Retirarse del emparejamiento
 NewPartyMatching,1,Mes_Matching_AutoStart_Sub1,Unión
@@ -445,10 +445,10 @@ NewPartyMatching,1,Mes_Matching_MatchingWord_Mes6,Reiniciar
 NewPartyMatching,1,Mes_Matching_MatchingWord_Mes7,Cambiar la configuración del emparejamiento
 NewPartyMatching,1,Mes_Matching_ChangeQuestSettingFailed,Error al cambiar la configuración de emparejamiento.
 NewPartyMatching,1,Mes_Matching_MatchingWord_Mes8,Deshabilitar NPC de asistencia
-NewPartyMatching,1,Mes_Matching_MatchingWord_Mes9,Aquí hay espacios abiertos.<br><br><yellow>Esta configuración no se puede cambiar después de crear la sala. <c>
+NewPartyMatching,1,Mes_Matching_MatchingWord_Mes9,La función de asistencia a PNJ permite que los PNJ se unan<br>automáticamente a ti para participar en una misión cuando haya<br>cupos disponibles.<br><yellow>Esta configuración no se puede cambiar una vez creada la sala.<c>
 NewPartyMatching,1,Mes_Matching_MatchingWord_Mes10,Habilitar el emparejamiento de todos los barcos
 NewPartyMatching,1,Mes_Matching_MatchingWord_Mes11,El sistema All-Ship Matchmaking permite a los jugadores de todos los barcos jugar las mismas misiones juntos.
-NewPartyMatching,1,Mes_Matching_MatchingWord_Mes12,猀甀戀ⴀ氀攀愀搀攀爀 挀愀渀 挀栀愀渀最攀 猀漀洀攀 漀昀 琀栀攀 倀栀漀琀漀 刀漀漀洀 猀攀琀琀椀渀最猀 愀昀琀攀爀 椀琀 栀愀猀 戀攀攀渀 挀爀攀愀琀攀搀⸀
+NewPartyMatching,1,Mes_Matching_MatchingWord_Mes12,Crea una Sala de Fotos cuando una palabra clave de emparejamiento esté activa.<br>El líder o sublíder del grupo puede modificar algunos ajustes de la Sala de Fotos una vez creada.
 NewPartyMatching,1,Mes_LeavePenalty,No puedes aceptar la misión debido a restricciones de emparejamiento.
 Defense,0,DefenseTerminal_Title,資源採掘リグ
 Defense,0,DefenseTerminal_Title_BLUEFULL,資源採掘リグ[ブルー]
@@ -682,7 +682,7 @@ Container,1,Container_Buff_Title,Elige tu habilidad
 Container,1,Container_Buff_EffectText,Capacidad
 Container,1,Container_Buff_PointText,Puntos requeridos<pict 4space><pict buffcon_point>
 Container,1,Container_Buff_Button,Confirmar
-Container,1,Container_Buff_Help,渀搀椀渀最 漀瘀攀爀愀氀氀 攀昀昀攀挀琀 眀椀氀氀 椀渀挀爀攀愀猀攀⸀
+Container,1,Container_Buff_Help,"Tiempo restante para completar la selección:<br><yellow>$(0) segundos (si no se selecciona, se seleccionará <br>automáticamente la primera opción).<br><pict find> tiene un efecto efectivo contra jefes.<br>Si obtienes tres objetos del mismo tipo de <pict icon_buffcon1><pict icon_buffcon2><pict icon_buffcon3>,<br>el efecto general correspondiente aumentará."
 Container,1,Container_Buff_Lv,Lv.
 QuestShop,0,BuffShop_Title,獲得するクエスト支援効果の選択
 QuestShop,0,BuffShop_header_EffectsTime,効果
