@@ -352,7 +352,11 @@
                     <textarea id="box-spanish" class="textarea-editable" placeholder="Escribe la traducción aquí..."></textarea>
                 </div>
             </div>
-            <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                <div>
+                    <button class="btn" onclick="navigateItem(-1)" style="background-color: #30363d; border-color: #8b949e; margin-right: 5px; color: white;">⬅️ Anterior</button>
+                    <button class="btn" onclick="navigateItem(1)" style="background-color: #30363d; border-color: #8b949e; color: white;">Siguiente ➡️</button>
+                </div>
                 <button class="btn btn-primary" id="btn-save" style="width: auto;">
                     <div class="loader"></div>
                     Guardar Cambios Localmente
@@ -373,6 +377,7 @@
         
         let allItems = [];
         let currentItem = null;
+        let currentIndex = -1;
 
         const itemListEl = document.getElementById('item-list');
         const filenameDisplayEl = document.getElementById('filename-display');
@@ -443,7 +448,13 @@
         function selectItem(index) {
             document.querySelectorAll('.list-item').forEach(el => el.classList.remove('active'));
             // Add active class to current
-            document.getElementById(`item-${index}`).classList.add('active');
+            const targetEl = document.getElementById(`item-${index}`);
+            if (targetEl) {
+                targetEl.classList.add('active');
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            
+            currentIndex = index;
             
             currentItem = allItems[index];
             
@@ -635,6 +646,16 @@
             } catch (err) {
                 console.error("Error al pegar: ", err);
                 showNotification("❌", "El navegador bloqueó el pegado automático. Usa Ctrl+V.");
+            }
+        }
+        
+        function navigateItem(direction) {
+            if (currentIndex === -1) return;
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < allItems.length) {
+                selectItem(newIndex);
+            } else {
+                showNotification("⚠️", direction > 0 ? "Ya estás en el último elemento." : "Ya estás en el primer elemento.");
             }
         }
     </script>
