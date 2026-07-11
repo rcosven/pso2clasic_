@@ -28,6 +28,9 @@ class BuscadorBot(commands.Bot):
         # 2. Lista en memoria para búsquedas rápidas
         self.index_datos = [] 
 
+        # 3. Conjunto para rastrear archivos modificados localmente
+        self.modified_files = set() 
+
     async def setup_hook(self):
         self.cargar_indices()
         
@@ -236,18 +239,29 @@ def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: st
         return None, f"Error al crear Pull Request: {res.text}"
 
 class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
-    translation_input = discord.ui.TextInput(
-        label="Texto traducido",
-        style=discord.TextStyle.paragraph,
-        placeholder="Introduce la traducción aquí...",
-        required=True
-    )
-
-    def __init__(self, bot_instance, item_data: dict):
+    def __init__(self, bot_instance, item_data: dict, original_text: str):
         super().__init__()
         self.bot = bot_instance
         self.item = item_data
-        self.translation_input.default = item_data.get('text', '')
+        
+        # Caja de texto para el japonés original (de referencia)
+        self.original_input = discord.ui.TextInput(
+            label="Texto Original (Referencia - No Editar)",
+            style=discord.TextStyle.paragraph,
+            default=original_text if original_text else "*(Sin original)*",
+            required=False
+        )
+        
+        # Caja de texto para el español traducido (editable)
+        self.translation_input = discord.ui.TextInput(
+            label="Texto traducido",
+            style=discord.TextStyle.paragraph,
+            default=item_data.get('text', ''),
+            required=True
+        )
+        
+        self.add_item(self.original_input)
+        self.add_item(self.translation_input)
 
     async def on_submit(self, interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=True)
@@ -280,22 +294,14 @@ class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
                 indexed_item['text'] = nuevo_texto
                 break
 
-        # 3. Crear el Pull Request en GitHub
-        pr_url, error = crear_pull_request_traduccion(
-            ruta_archivo_local=file_path_local,
-            ruta_archivo_repo=file_path_local,
-            row_id=self.item['id'],
-            usuario_discord=interaction.user.name
-        )
+        # 3. Registrar el archivo como modificado para el PR acumulativo
+        self.bot.modified_files.add(file_path_local)
 
-        if error:
-            await interaction.followup.send(f"❌ Guardado localmente, pero error en GitHub: {error}", ephemeral=True)
-        else:
-            await interaction.followup.send(
-                f"✅ **Traducción guardada localmente y enviada a GitHub!**\n"
-                f"He creado un Pull Request para revisión:\n🔗 <{pr_url}>",
-                ephemeral=True
-            )
+        await interaction.followup.send(
+            f"✅ **Traducción guardada localmente en `{file_path_local}`.**\n"
+            f"Puedes seguir traduciendo otras líneas. Cuando termines, presiona el botón **'Subir a GitHub'** para enviar todas las sugerencias de este archivo juntas.",
+            ephemeral=True
+        )
 
 class DescargarCSVView(discord.ui.View):
     def __init__(self, bot_instance, item_data_or_filepath):
@@ -304,12 +310,24 @@ class DescargarCSVView(discord.ui.View):
         if isinstance(item_data_or_filepath, dict):
             self.item_data = item_data_or_filepath
             self.filepath = item_data_or_filepath['file']
+            
+            # Buscar el texto original de referencia en group 0
+            self.original_text = ""
+            for indexed_item in self.bot.index_datos:
+                if (indexed_item.get('section') == self.item_data.get('section') and
+                    indexed_item.get('id') == self.item_data.get('id') and
+                    indexed_item.get('file') == self.item_data.get('file') and
+                    indexed_item.get('group') == '0'):
+                    self.original_text = indexed_item.get('text', '')
+                    break
+                    
             # Deshabilitar/eliminar traducir si group no es '1' (es original en japonés)
             if self.item_data.get('group') != '1':
                 self.remove_item(self.traducir)
         else:
             self.item_data = None
             self.filepath = item_data_or_filepath
+            self.original_text = ""
             self.remove_item(self.traducir)
 
     @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥")
@@ -335,7 +353,40 @@ class DescargarCSVView(discord.ui.View):
 
     @discord.ui.button(label="Traducir", style=discord.ButtonStyle.success, emoji="✍️")
     async def traducir(self, interaction: discord.Interaction, button: discord.ui.Button):
-        await interaction.response.send_modal(TranslationModal(self.bot, self.item_data))
+        await interaction.response.send_modal(TranslationModal(self.bot, self.item_data, self.original_text))
+
+    @discord.ui.button(label="Subir a GitHub", style=discord.ButtonStyle.primary, emoji="📤")
+    async def subir_github(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer(ephemeral=True)
+        
+        # 1. Comprobar si hay cambios locales
+        if self.filepath not in self.bot.modified_files:
+            await interaction.followup.send(
+                "⚠️ No se han registrado traducciones nuevas en este archivo durante esta sesión, "
+                "pero intentaré subirlo de todos modos por si realizaste cambios anteriormente.",
+                ephemeral=True
+            )
+            
+        # 2. Generar Pull Request acumulativo
+        pr_url, error = crear_pull_request_traduccion(
+            ruta_archivo_local=self.filepath,
+            ruta_archivo_repo=self.filepath,
+            row_id=self.item_data['id'] if self.item_data else "BatchUpdate",
+            usuario_discord=interaction.user.name
+        )
+        
+        if error:
+            await interaction.followup.send(f"❌ Error al subir cambios a GitHub: {error}", ephemeral=True)
+        else:
+            # 3. Limpiar estado de modificado
+            if self.filepath in self.bot.modified_files:
+                self.bot.modified_files.remove(self.filepath)
+                
+            await interaction.followup.send(
+                f"✅ **¡Archivo subido a GitHub con éxito!**\n"
+                f"Se ha creado un Pull Request con todos los cambios acumulados de este archivo:\n🔗 <{pr_url}>",
+                ephemeral=True
+            )
 
 class DescargarDropdown(discord.ui.Select):
     def __init__(self, files: list):
