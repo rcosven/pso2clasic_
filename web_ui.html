@@ -319,6 +319,7 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const fileName = urlParams.get('file');
+        const targetId = urlParams.get('id');
         
         let allItems = [];
         let currentItem = null;
@@ -350,6 +351,16 @@
                 renderList();
                 if (allItems.length > 0) {
                     btnGithubEl.disabled = false;
+                }
+                
+                if (targetId) {
+                    const targetIndex = allItems.findIndex(item => item.id === targetId);
+                    if (targetIndex !== -1) {
+                        selectItem(targetIndex);
+                        setTimeout(() => {
+                            document.getElementById(`item-${targetIndex}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
+                    }
                 }
             } catch (e) {
                 showNotification("❌", "Error al cargar el archivo desde el bot.");

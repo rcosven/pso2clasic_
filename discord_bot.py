@@ -263,131 +263,63 @@ def construir_mensaje_archivo(bot_instance, filepath: str, match_item: dict = No
         f"📁 **Archivo:** `{filepath}`",
         f"📊 Contiene {count} líneas traducibles.",
         f"",
-        f"🌐 **TRADUCTOR VISUAL WEB (Haz clic aquí para traducir de forma fácil):**",
-        f"➡️ **http://localhost:8080/edit?file={filepath}** ⬅️",
-        f"",
-        f"*(El enlace abrirá una interfaz con todas las líneas listas para hacer clic y editar en tiempo real)*"
+        f"💡 Haz clic en **Abrir Editor Visual** abajo para traducir directamente en el navegador."
     ]
+    
+    if match_item:
+        mensaje_lineas.append(f"*(Se abrirá directamente en la línea:* `{match_item['id']}`*)*")
+        
     return "\n".join(mensaje_lineas)
 
-class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
-    def __init__(self, bot_instance, item_data: dict, original_text: str):
-        super().__init__()
-        self.bot = bot_instance
-        self.item = item_data
-        
-        # Caja de texto para el japonés original (de referencia, explícitamente lectura)
-        self.original_input = discord.ui.TextInput(
-            label="⚠️ LECTURA - Original (Se ignorará si editas)",
-            style=discord.TextStyle.paragraph,
-            default=original_text if original_text else "*(Sin original)*",
-            required=False
-        )
-        
-        # Caja de texto para el español traducido (editable)
-        self.translation_input = discord.ui.TextInput(
-            label="Texto traducido",
-            style=discord.TextStyle.paragraph,
-            default=item_data.get('text', ''),
-            required=True
-        )
-        
-        self.add_item(self.original_input)
-        self.add_item(self.translation_input)
-
-    async def on_submit(self, interaction: discord.Interaction):
-        await interaction.response.defer(ephemeral=True)
-        
-        # Limpiar y sanitizar texto: Reemplazar saltos de línea con <br>
-        nuevo_texto = self.translation_input.value.strip()
-        nuevo_texto = nuevo_texto.replace("\r\n", "<br>").replace("\n", "<br>").replace("\r", "<br>")
-        
-        file_path_local = self.item['file']
-        
-        # 1. Modificar CSV local
-        exito = modificar_texto_csv(
-            file_path=file_path_local,
-            section=self.item.get('section', ''),
-            group=self.item.get('group', ''),
-            row_id=self.item['id'],
-            nuevo_texto=nuevo_texto
-        )
-        
-        if not exito:
-            await interaction.followup.send("❌ Error: No se pudo modificar el archivo CSV local.", ephemeral=True)
-            return
-
-        # 2. Actualizar el índice en memoria para que esté disponible inmediatamente
-        for indexed_item in self.bot.index_datos:
-            if (indexed_item.get('section') == self.item.get('section') and
-                indexed_item.get('group') == self.item.get('group') and
-                indexed_item.get('id') == self.item['id'] and
-                indexed_item.get('file') == self.item['file']):
-                indexed_item['text'] = nuevo_texto
-                break
-
-        # 3. Registrar el archivo como modificado para el PR acumulativo
-        self.bot.modified_files.add(file_path_local)
-
-        await interaction.followup.send(
-            f"✅ **Traducción guardada localmente en `{file_path_local}`.**\n"
-            f"Puedes seguir traduciendo otras líneas. Cuando termines, presiona el botón **'Subir a GitHub'** para enviar todas las sugerencias de este archivo juntas.",
-            ephemeral=True
-        )
-
 class DescargarCSVView(discord.ui.View):
-    def __init__(self, bot_instance, filepath: str):
+    def __init__(self, bot_instance, filepath: str, target_id: str = None):
         super().__init__(timeout=180)
         self.bot = bot_instance
         self.filepath = filepath
 
-    @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥", row=0)
+        public_url = os.getenv("PUBLIC_URL", "http://localhost:5000")
+        url_edit = f"{public_url}/edit?file={filepath}"
+        if target_id:
+            url_edit += f"&id={target_id}"
+
+        # Botón para el Editor Web
+        self.add_item(discord.ui.Button(
+            label="Abrir Editor Visual (Recomendado)", 
+            style=discord.ButtonStyle.link, 
+            url=url_edit, 
+            emoji="🌐", 
+            row=0
+        ))
+
+    @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥", row=1)
     async def descargar(self, interaction: discord.Interaction, button: discord.ui.Button):
         try:
             archivo = discord.File(self.filepath)
             await interaction.response.send_message(
-                content=f"Aquí tienes el archivo `{self.filepath}` listo para editar:",
+                content=f"Aquí tienes el archivo `{self.filepath}`:",
                 file=archivo,
                 ephemeral=True
             )
         except Exception as e:
-            await interaction.response.send_message(
-                content=f"❌ No se pudo enviar el archivo: {e}",
-                ephemeral=True
-            )
+            await interaction.response.send_message(f"❌ Error al enviar el archivo: {e}", ephemeral=True)
 
-    @discord.ui.button(label="Subir a GitHub", style=discord.ButtonStyle.primary, emoji="📤", row=0)
-    async def subir_github(self, interaction: discord.Interaction, button: discord.ui.Button):
+    @discord.ui.button(label="Subir a GitHub", style=discord.ButtonStyle.success, emoji="📤", row=1)
+    async def github_pr(self, interaction: discord.Interaction, button: discord.ui.Button):
         await interaction.response.defer(ephemeral=True)
         
-        # 1. Comprobar si hay cambios locales
-        if self.filepath not in self.bot.modified_files:
-            await interaction.followup.send(
-                "⚠️ No se han registrado traducciones nuevas en este archivo durante esta sesión, "
-                "pero intentaré subirlo de todos modos por si realizaste cambios anteriormente.",
-                ephemeral=True
-            )
-            
-        # 2. Generar Pull Request acumulativo
         pr_url, error = crear_pull_request_traduccion(
             ruta_archivo_local=self.filepath,
             ruta_archivo_repo=self.filepath,
-            row_id="BatchUpdate",
-            usuario_discord=interaction.user.name
+            row_id="MultipleUpdates",
+            usuario_discord=str(interaction.user)
         )
         
         if error:
-            await interaction.followup.send(f"❌ Error al subir cambios a GitHub: {error}", ephemeral=True)
+            await interaction.followup.send(f"❌ Error: {error}", ephemeral=True)
         else:
-            # 3. Limpiar estado de modificado
             if self.filepath in self.bot.modified_files:
                 self.bot.modified_files.remove(self.filepath)
-                
-            await interaction.followup.send(
-                f"✅ **¡Archivo subido a GitHub con éxito!**\n"
-                f"Se ha creado un Pull Request con todos los cambios acumulados de este archivo:\n🔗 <{pr_url}>",
-                ephemeral=True
-            )
+            await interaction.followup.send(f"✅ **Pull Request creado exitosamente:**\n🔗 <{pr_url}>", ephemeral=True)
 
 class DescargarDropdown(discord.ui.Select):
     def __init__(self, bot_instance, files: list):
@@ -511,9 +443,18 @@ async def start_web_server(bot):
     
     runner = web.AppRunner(app)
     await runner.setup()
-    site = web.TCPSite(runner, '0.0.0.0', 8080)
+    
+    # Railway provee la variable PORT dinámica. Si no existe, usamos 5000 para pruebas locales.
+    port = int(os.getenv("PORT", 5000))
+    site = web.TCPSite(runner, '0.0.0.0', port)
     await site.start()
-    logger.info("Servidor Web (Traductor Visual) iniciado en http://localhost:8080")
+    
+    # Prevenir que Python elimine el servidor de la memoria guardando referencias
+    bot.web_runner = runner
+    bot.web_site = site
+    
+    public_url = os.getenv("PUBLIC_URL", "http://localhost:5000")
+    logger.info(f"Servidor Web (Traductor Visual) iniciado en puerto {port}. URL pública: {public_url}")
 
 bot = BuscadorBot()
 
