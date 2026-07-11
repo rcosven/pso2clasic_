@@ -118,6 +118,12 @@ def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, n
         reader = csv.DictReader(f)
         headers = reader.fieldnames
         for row in reader:
+            # Si hay columnas extra por comas sin escapar en el CSV original, unirlas al texto
+            if None in row:
+                extra_data = row.pop(None)
+                if isinstance(extra_data, list):
+                    row['text'] = row.get('text', '') + "," + ",".join(extra_data)
+
             if row.get('section', '') == section and row.get('group') == group and row.get('id') == row_id:
                 row['text'] = nuevo_texto
                 modificado = True
