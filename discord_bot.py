@@ -238,69 +238,55 @@ def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: st
     else:
         return None, f"Error al crear Pull Request: {res.text}"
 
-class EditarLineaSelect(discord.ui.Select):
-    def __init__(self, bot_instance, filepath: str):
-        self.bot = bot_instance
-        self.filepath = filepath
+def construir_mensaje_archivo(bot_instance, filepath: str, match_item: dict = None):
+    # Encontrar todas las líneas traducibles (group == '1')
+    lineas_traducibles = []
+    seen = set()
+    for item in bot_instance.index_datos:
+        if item['file'] == filepath and item.get('group') == '1':
+            sec_id = f"{item.get('section')}|{item['id']}"
+            if sec_id not in seen:
+                seen.add(sec_id)
+                lineas_traducibles.append(item)
+
+    # Construir el cuerpo del mensaje
+    mensaje_lineas = [
+        f"📁 **Archivo:** `{filepath}`\n",
+        "💡 **Líneas traducibles en este archivo (haz clic en el número correspondiente abajo para traducir):**"
+    ]
+    
+    for i, item in enumerate(lineas_traducibles[:20]):
+        numero = i + 1
+        es_match = match_item and item.get('section') == match_item.get('section') and item['id'] == match_item['id']
+        txt = item.get('text', '')
+        # Formato de línea
+        linea_str = f"**{numero}.** `{item['id']}`: {txt}"
+        if es_match:
+            linea_str = f"➡️ **{numero}.** `{item['id']}`: **{txt}** *(Coincidencia)*"
         
-        # Encontrar todos los registros del archivo donde group == '1'
-        options = []
-        seen = set()
-        count = 0
-        for item in self.bot.index_datos:
-            if item['file'] == filepath and item.get('group') == '1':
-                sec_id = f"{item.get('section')}|{item['id']}"
-                if sec_id not in seen:
-                    seen.add(sec_id)
-                    txt = item.get('text', '')
-                    label_text = f"{item['id']}: {txt}" if txt else item['id']
-                    if len(label_text) > 100:
-                        label_text = label_text[:97] + "..."
-                    options.append(discord.SelectOption(
-                        label=label_text,
-                        value=sec_id,
-                        description=f"Sección: {item.get('section')}"
-                    ))
-                    count += 1
-                    if count >= 25:
-                        break
-                        
+        mensaje_lineas.append(linea_str)
+
+    if len(lineas_traducibles) > 20:
+        mensaje_lineas.append(f"\n*... y {len(lineas_traducibles) - 20} líneas más en el archivo (descarga el CSV para edición masiva).*")
+
+    resultado = "\n".join(mensaje_lineas)
+    if len(resultado) > 1950:
+        resultado = resultado[:1940] + "\n\n*(Mensaje truncado por longitud)*"
+    return resultado
+
+class BotonLinea(discord.ui.Button):
+    def __init__(self, numero: int, bot_instance, item_data: dict, original_text: str):
         super().__init__(
-            placeholder="Selecciona una línea para traducir/editar...",
-            min_values=1,
-            max_values=1,
-            options=options if options else [discord.SelectOption(label="Sin líneas de traducción", value="none")]
+            label=str(numero),
+            style=discord.ButtonStyle.success,
+            row=(numero - 1) // 5 + 1  # Fila 1 a 4 (la fila 0 queda libre para Descarga y GitHub)
         )
-        if not options:
-            self.disabled = True
+        self.bot = bot_instance
+        self.item_data = item_data
+        self.original_text = original_text
 
     async def callback(self, interaction: discord.Interaction):
-        if self.values[0] == "none":
-            await interaction.response.send_message("No hay líneas editables.", ephemeral=True)
-            return
-            
-        sec, row_id = self.values[0].split("|", 1)
-        
-        # Buscar los datos del group 1
-        item_data = None
-        for item in self.bot.index_datos:
-            if item['file'] == self.filepath and item.get('section') == sec and item['id'] == row_id and item.get('group') == '1':
-                item_data = item
-                break
-                
-        if not item_data:
-            await interaction.response.send_message("❌ Error: No se encontró la línea a editar.", ephemeral=True)
-            return
-            
-        # Buscar el original (group 0)
-        original_text = ""
-        for item in self.bot.index_datos:
-            if item['file'] == self.filepath and item.get('section') == sec and item['id'] == row_id and item.get('group') == '0':
-                original_text = item.get('text', '')
-                break
-                
-        # Abrir el Modal de Traducción
-        await interaction.response.send_modal(TranslationModal(self.bot, item_data, original_text))
+        await interaction.response.send_modal(TranslationModal(self.bot, self.item_data, self.original_text))
 
 class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
     def __init__(self, bot_instance, item_data: dict, original_text: str):
@@ -368,36 +354,38 @@ class TranslationModal(discord.ui.Modal, title="Sugerir Traducción"):
         )
 
 class DescargarCSVView(discord.ui.View):
-    def __init__(self, bot_instance, item_data_or_filepath):
+    def __init__(self, bot_instance, filepath: str):
         super().__init__(timeout=180)
         self.bot = bot_instance
-        if isinstance(item_data_or_filepath, dict):
-            self.item_data = item_data_or_filepath
-            self.filepath = item_data_or_filepath['file']
+        self.filepath = filepath
+
+        # Encontrar todas las líneas traducibles (group == '1') del archivo
+        self.lineas_traducibles = []
+        seen = set()
+        for item in self.bot.index_datos:
+            if item['file'] == filepath and item.get('group') == '1':
+                sec_id = f"{item.get('section')}|{item['id']}"
+                if sec_id not in seen:
+                    seen.add(sec_id)
+                    self.lineas_traducibles.append(item)
+
+        # Agregar botones para las primeras 20 líneas
+        for i, item in enumerate(self.lineas_traducibles[:20]):
+            numero = i + 1
             
             # Buscar el texto original de referencia en group 0
-            self.original_text = ""
+            original_text = ""
             for indexed_item in self.bot.index_datos:
-                if (indexed_item.get('section') == self.item_data.get('section') and
-                    indexed_item.get('id') == self.item_data.get('id') and
-                    indexed_item.get('file') == self.item_data.get('file') and
+                if (indexed_item.get('section') == item.get('section') and
+                    indexed_item.get('id') == item.get('id') and
+                    indexed_item.get('file') == filepath and
                     indexed_item.get('group') == '0'):
-                    self.original_text = indexed_item.get('text', '')
+                    original_text = indexed_item.get('text', '')
                     break
-                    
-            # Deshabilitar/eliminar traducir si group no es '1' (es original en japonés)
-            if self.item_data.get('group') != '1':
-                self.remove_item(self.traducir)
-        else:
-            self.item_data = None
-            self.filepath = item_data_or_filepath
-            self.original_text = ""
-            self.remove_item(self.traducir)
+            
+            self.add_item(BotonLinea(numero, self.bot, item, original_text))
 
-        # Agregar el selector de líneas si el archivo tiene líneas traducibles
-        self.add_item(EditarLineaSelect(self.bot, self.filepath))
-
-    @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥")
+    @discord.ui.button(label="Descargar CSV", style=discord.ButtonStyle.primary, emoji="📥", row=0)
     async def descargar(self, interaction: discord.Interaction, button: discord.ui.Button):
         try:
             archivo = discord.File(self.filepath)
@@ -412,17 +400,7 @@ class DescargarCSVView(discord.ui.View):
                 ephemeral=True
             )
 
-    @discord.ui.button(label="Ver Contexto", style=discord.ButtonStyle.secondary, emoji="📖")
-    async def ver_contexto(self, interaction: discord.Interaction, button: discord.ui.Button):
-        await interaction.response.defer(ephemeral=True)
-        contexto_txt = obtener_contexto_csv(self.filepath)
-        await interaction.followup.send(content=contexto_txt, ephemeral=True)
-
-    @discord.ui.button(label="Traducir", style=discord.ButtonStyle.success, emoji="✍️")
-    async def traducir(self, interaction: discord.Interaction, button: discord.ui.Button):
-        await interaction.response.send_modal(TranslationModal(self.bot, self.item_data, self.original_text))
-
-    @discord.ui.button(label="Subir a GitHub", style=discord.ButtonStyle.primary, emoji="📤")
+    @discord.ui.button(label="Subir a GitHub", style=discord.ButtonStyle.primary, emoji="📤", row=0)
     async def subir_github(self, interaction: discord.Interaction, button: discord.ui.Button):
         await interaction.response.defer(ephemeral=True)
         
@@ -438,7 +416,7 @@ class DescargarCSVView(discord.ui.View):
         pr_url, error = crear_pull_request_traduccion(
             ruta_archivo_local=self.filepath,
             ruta_archivo_repo=self.filepath,
-            row_id=self.item_data['id'] if self.item_data else "BatchUpdate",
+            row_id="BatchUpdate",
             usuario_discord=interaction.user.name
         )
         
@@ -516,12 +494,8 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
     total = len(coincidencias)
     if total == 1:
         match = coincidencias[0]
-        mensaje = (
-            f"✅ **Coincidencia encontrada:**\n"
-            f"📁 **Archivo:** `{match['file']}` (Línea {match['line']})\n"
-            f"📝 **Texto:** {match['text']}"
-        )
-        view = DescargarCSVView(bot, match)
+        mensaje = construir_mensaje_archivo(bot, match['file'], match)
+        view = DescargarCSVView(bot, match['file'])
         await interaction.response.send_message(mensaje, view=view)
     else:
         limite = 5
@@ -535,18 +509,21 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
             lineas.append(f"*... y {total - limite} coincidencias más.*")
             
         if len(archivos_unicos) == 1:
+            mensaje = construir_mensaje_archivo(bot, archivos_unicos[0], coincidencias[0])
             view = DescargarCSVView(bot, archivos_unicos[0])
-            lineas.append("\n💡 *Usa el botón de abajo para descargar el archivo.*")
         else:
             view = DescargarMultipleView(archivos_unicos)
             lineas.append("\n💡 *Usa la lista desplegable de abajo para descargar cualquiera de los archivos.*")
             if len(archivos_unicos) > 25:
                 lineas.append("⚠️ *Hay más de 25 archivos. Se muestran los primeros 25 en la lista desplegable.*")
             
-        mensaje = "\n".join(lineas)
-        if len(mensaje) > 2000:
-            mensaje = mensaje[:1990] + "\n..."
-        await interaction.response.send_message(mensaje, view=view)
+        if len(archivos_unicos) == 1:
+            await interaction.response.send_message(mensaje, view=view)
+        else:
+            mensaje_completo = "\n".join(lineas)
+            if len(mensaje_completo) > 2000:
+                mensaje_completo = mensaje_completo[:1990] + "\n..."
+            await interaction.response.send_message(mensaje_completo, view=view)
 
 @bot.tree.command(name="recargar", description="Vuelve a leer los archivos CSV sin reiniciar el bot")
 async def recargar(interaction: discord.Interaction):
