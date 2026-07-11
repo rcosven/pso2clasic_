@@ -352,6 +352,14 @@ class DescargarMultipleView(discord.ui.View):
         self.add_item(DescargarDropdown(bot_instance, files))
 
 # --- WEB SERVER (TRADUCTOR VISUAL) ---
+async def web_home(request):
+    try:
+        with open("web_search.html", "r", encoding="utf-8") as f:
+            content = f.read()
+        return web.Response(text=content, content_type="text/html")
+    except Exception as e:
+        return web.Response(text=f"Error al cargar Buscador: {e}", status=500)
+
 async def web_index(request):
     try:
         with open("web_ui.html", "r", encoding="utf-8") as f:
@@ -359,6 +367,27 @@ async def web_index(request):
         return web.Response(text=content, content_type="text/html")
     except Exception as e:
         return web.Response(text=f"Error al cargar UI: {e}", status=500)
+
+async def web_api_search(request):
+    query = request.query.get("q", "").strip().lower()
+    if len(query) < 3:
+        return web.json_response({"items": []})
+        
+    bot = request.app['bot']
+    coincidencias = []
+    
+    for item in bot.index_datos:
+        # Solo devolver del grupo 1 porque queremos editar
+        if item.get('group') == '1' and query in item['text'].lower():
+            coincidencias.append({
+                "file": item['file'],
+                "id": item['id'],
+                "text": item['text']
+            })
+            if len(coincidencias) >= 100:  # Limitar a 100 resultados para evitar colapsar la web
+                break
+                
+    return web.json_response({"items": coincidencias})
 
 async def web_api_file(request):
     filename = request.query.get("name")
@@ -438,7 +467,9 @@ async def web_api_github(request):
 async def start_web_server(bot):
     app = web.Application()
     app['bot'] = bot
+    app.router.add_get('/', web_home)
     app.router.add_get('/edit', web_index)
+    app.router.add_get('/api/search', web_api_search)
     app.router.add_get('/api/file', web_api_file)
     app.router.add_post('/api/save', web_api_save)
     app.router.add_post('/api/github', web_api_github)

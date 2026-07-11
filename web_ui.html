@@ -46,6 +46,28 @@
         .sidebar-header {
             padding: 20px;
             border-bottom: 1px solid var(--panel-border);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-back {
+            background: none;
+            border: none;
+            color: var(--accent-blue);
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 0;
+            transition: color 0.2s;
+            font-family: var(--font-main);
+            text-decoration: none;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-blue-hover);
         }
 
         .sidebar-header h2 {
@@ -271,8 +293,9 @@
 
     <div class="sidebar">
         <div class="sidebar-header">
+            <a href="/" class="btn-back">⬅️ Volver al Buscador</a>
             <h2>Líneas Traducibles</h2>
-            <p id="filename-display">Cargando...</p>
+            <div id="filename-display" class="filename">Cargando...</div>
         </div>
         <div class="item-list" id="item-list">
             <!-- Items added by JS -->
