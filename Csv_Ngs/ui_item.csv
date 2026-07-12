@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 TicketMain,0,MenuTitle,交換ショップ
 TicketMain,0,MenuGuide,<c f0df60>商品リストにあるアイテムを、指定のアイテムと交換できます。<c>
 TicketMain,0,ButtonChange,交換
@@ -263,8 +263,8 @@ NetcafeMain,1,CancelMessage,¿Estás seguro de que quieres cancelar tu compra?
 NetcafeMain,1,CafePointInsufficient,No tienes suficientes Cafe Points.
 NetcafeMain,1,MenuConnectTime,Tiempo de conexión desde Net Café
 NetcafeMain,1,ConnectTimeTitle,TIEMPO TOTAL DE JUEGO
-NetcafeMain,1,ConnectTimeMessage,"■ Tiempo de juego acumulado desde cibercafé<br> $(0)"
-NetcafeMain,1,NetCafeEventInfo,"<br><br>$(1)<br>Tiempo de conexión: $(3) (Obtenga recompensa en $(2))<br>* El período se extiende hasta $(0)"
+NetcafeMain,1,ConnectTimeMessage,■ Tiempo de juego acumulado desde cibercafé<br> $(0)
+NetcafeMain,1,NetCafeEventInfo,<br><br>$(1)<br>Tiempo de conexión: $(3) (Obtenga recompensa en $(2))<br>* El período se extiende hasta $(0)
 RecycleMain,0,ShopTitle,リサイクルショップ
 RecycleMain,0,ShopTitle_k_m,輝石交換ショップ
 RecycleMain,0,MenuGuide,<c f0df60>特定の所持品を渡すと、商品を入手できます。要求数より多く渡すと、複数個入手できる商品もあります。<c>
@@ -427,7 +427,7 @@ RecycleMain,1,ShopTitle,TIENDA DE INTERCAMBIO
 RecycleMain,1,ShopTitle_k_m,TIENDA DE INTERCAMBIO DE ASTRACITA
 RecycleMain,1,MenuGuide,"<c f0df60>Puedes adquirir productos entregando objetos de tu inventario. Al entregar más objetos de los necesarios, puedes adquirir más de una unidad de ciertos productos.<c>"
 RecycleMain,1,MenuGuideItemSelect,"<c f0df60>Selecciona la cantidad de objetos a entregar correspondiente al número de productos que necesitas. Para algunos productos, puedes seleccionar más de uno usando <c><%MultiSelect><c f0df60>.<c>"
-RecycleMain,1,NotingSetItem,"No se ha seleccionado ningún objeto de destino."
+RecycleMain,1,NotingSetItem,No se ha seleccionado ningún objeto de destino.
 RecycleMain,1,SuccessMessage,Intercambio completo.
 RecycleMain,1,FailedMessage,El intercambio falló.
 RecycleMain,1,FailedMessage2,"Tu intercambio no se puede completar, porque no<br>tienes suficiente espacio en tu Inventario, o porque <br>has excedido el límite de carga."
@@ -513,12 +513,12 @@ RecycleMain,1,MenuTitleJig016,ACTUALIZACIÓN DE LA SERIE VAL
 RecycleMain,1,MenuTitleJig017,CAMBIAR CATEGORÍA DE ARMAS SERIE ATLAS
 RecycleMain,1,MenuTitleJig018,ACTUALIZACIÓN DE LA SERIE NEMESIS
 RecycleMain,1,MenuTitleJig019,ACTUALIZACIÓN DE LA SERIE RAVEN
-RecycleMain,1,MenuTitleJig020,"USA LA CREMA DEL CONQUISTADOR PARA OBTENER UN ARMA 14*"
+RecycleMain,1,MenuTitleJig020,USA LA CREMA DEL CONQUISTADOR PARA OBTENER UN ARMA 14*
 RecycleMain,1,MenuTitleJig021,OBTÉN LA SERIE INVADE
 RecycleMain,1,MenuTitleJig022,ACTUALIZACIÓN DE LA SERIE SOBRENATURAL
 RecycleMain,1,MenuTitleJig023,ACTUALIZACIÓN DE LA SERIE JUTUS
 RecycleMain,1,MenuTitleJig024,ACTUALIZACIÓN DE LA SERIE HOMURA
-RecycleMain,1,MenuTitleJig025,"USA LA CRESTA DEL REY PARA OBTENER UN ARMA 14*"
+RecycleMain,1,MenuTitleJig025,USA LA CRESTA DEL REY PARA OBTENER UN ARMA 14*
 RecycleMain,1,MenuTitleJig026,CAMBIAR LA CATEGORÍA DE ARMAS DE LA SERIE ARES
 RecycleMain,1,MenuTitleJig027,ACTUALIZACIÓN DE LA SERIE CERES
 RecycleMain,1,MenuTitleJig028,ACTUALIZACIÓN PROFUNDA DE LA SERIE XION
@@ -557,8 +557,8 @@ RecycleMain,1,MenuTitleJig05_01,<pict ab_icon> VOLVER
 RecycleMain,1,MenuTitleJig05_02,<pict ah_icon> BRAZOS
 RecycleMain,1,MenuTitleJig05_03,<pict al_icon> PIERNAS
 RecycleMain,1,MenuTitleJig07,<pict qi_icon> ARTÍCULO MATERIAL
-RecycleMain,1,MenuTitleReo001,"USA EL CERTIFICADO PARA OBTENER EL ARMA 13*"
-RecycleMain,1,MenuTitleReo002,"USA EL CERTIFICADO B PARA OBTENER ARMA 14*"
+RecycleMain,1,MenuTitleReo001,USA EL CERTIFICADO PARA OBTENER EL ARMA 13*
+RecycleMain,1,MenuTitleReo002,USA EL CERTIFICADO B PARA OBTENER ARMA 14*
 RecycleMain,1,MenuTitleSea001,OBTÉN LA SERIE HOMURA
 RecycleMain,1,MenuTitleSea003,OBTENER SERIE DE NOVELA
 RecycleMain,1,MenuTitleCollabo001,OBTÉN LA SERIE CERES
@@ -905,7 +905,7 @@ AcShopCommon,1,TabName8,9. Indefinido
 AcShopCommon,1,Date,Fecha
 AcShopCommon,1,NewHistory,Nueva historia
 AcShopCommon,1,HistoryDBError,Error al acceder al registro. Inténtelo de nuevo más tarde.
-AcShopCommon,1,MultiCheckMessage,"Los siguientes objetos <yellow>solo pueden usarse un número limitado<br>de veces<c> por personaje:<br>• N-Inventario +10<br>El uso de este objeto expande tu inventario en 10 espacios.<br><yellow>Puede usarse un máx. de 10 veces para expandir tu inventario<br>hasta 100 espacios.<c><br>• Expansión de almacenamiento de personaje (50)<br>El uso de este objeto expande tu almacenamiento de personaje en 50.<br><yellow>Puede usarse un máx. de 34 veces para expandir tu almacenamiento<br>hasta 1700 espacios.<c><br>• «Ticket de subpaleta»<br><yellow>Esto expande tus espacios de subpaleta al máximo en un solo uso.<c><br><br><c ff4f3f>*Comprueba tu estado de uso antes de comprar.<c><br>¿Deseas continuar a la pantalla de confirmación de compra?"
+AcShopCommon,1,MultiCheckMessage,Los siguientes objetos <yellow>solo pueden usarse un número limitado<br>de veces<c> por personaje:<br>• N-Inventario +10<br>El uso de este objeto expande tu inventario en 10 espacios.<br><yellow>Puede usarse un máx. de 10 veces para expandir tu inventario<br>hasta 100 espacios.<c><br>• Expansión de almacenamiento de personaje (50)<br>El uso de este objeto expande tu almacenamiento de personaje en 50.<br><yellow>Puede usarse un máx. de 34 veces para expandir tu almacenamiento<br>hasta 1700 espacios.<c><br>• «Ticket de subpaleta»<br><yellow>Esto expande tus espacios de subpaleta al máximo en un solo uso.<c><br><br><c ff4f3f>*Comprueba tu estado de uso antes de comprar.<c><br>¿Deseas continuar a la pantalla de confirmación de compra?
 AcShopCommon,1,MultiCheckMessage_v,ge estado antes de comprar.<c><br> ¿Le gustaría pasar a la pantalla de Confirmación de compra <br>?
 AcShopCommon,1,HistoryItem,Nombre del artículo
 AcShopCommon,1,HistoryMoney,Cantidad
@@ -1010,7 +1010,7 @@ SgShopCommon,0,SetItemHelp_vita,<yellow><pict Sign_TRIANGLE>で詳細を確認�
 SgShopCommon,1,BuyCheck,¿Está seguro de que desea comprar los<br>siguientes artículos por $(2)$(0)? <br><br> (Tienes: $(1)SG)
 SgShopCommon,1,HaveTicket,<c><br>se agregará al siguiente elemento.<br>¿Está seguro de que desea continuar?<br>(Tienes: $(1)SG)
 SgShopCommon,1,TimesaleBuyCheck,¿Está seguro de que desea comprar los<br>siguientes artículos por<s>$(3)</s><red> $(2)<c>$(0)? <br><br> (Tienes: $(1)SG)
-SgShopCommon,1,TimesaleHaveTicket,"<pict StarGem><c ff4f3f>Compra adicional de un <br>objeto ya adquirido<c> <c 5fdf00><s>$(3)</s><br><red>$(2)<c>$(0) <c> se añadirá <br>al siguiente objeto que ya has comprado.<br>¿Estás seguro de que deseas continuar?<br>(Tienes: $(1)SG)"
+SgShopCommon,1,TimesaleHaveTicket,<pict StarGem><c ff4f3f>Compra adicional de un <br>objeto ya adquirido<c> <c 5fdf00><s>$(3)</s><br><red>$(2)<c>$(0) <c> se añadirá <br>al siguiente objeto que ya has comprado.<br>¿Estás seguro de que deseas continuar?<br>(Tienes: $(1)SG)
 SgShopCommon,1,LimitedTime,El período de compra finaliza el $(0)
 SgShopCommon,1,BuySG,Comprar gemas estrella <pict Arcscash>
 SgShopCommon,1,MenuAboutSG,Gemas estelares
@@ -1612,7 +1612,7 @@ ItemCommon,1,UnlockDialogMessage,El elemento seleccionado se desbloqueará.<br>�
 ItemCommon,1,PetAbility,"$(0)<br>""Efecto""<br>$(1)"
 ItemCommon,1,RingSkill,"$(1) Nivel$(0)<br>""Efecto""<br>$(2)"
 ItemCommon,1,RingSkill_2,"$(1)<br>""Efecto""<br>$(2)<br><br> $(0)"
-ItemCommon,1,ItemAutoPickUpRarityOn,"<yellow> $(0)★$(1)<c> recibido."
+ItemCommon,1,ItemAutoPickUpRarityOn,<yellow> $(0)★$(1)<c> recibido.
 ItemCommon,1,ItemAutoPickUpRarityOff,<yellow> $(0)<c>recibido.
 ItemCommon,1,ConsumeTicketErrorAllRegisted,No se puede utilizar<br>porque Ticket está registrado<br>para todos los personajes.
 ItemCommon,1,TicketItemUseErrorServerBug,$(0) no se puede utilizar.
@@ -1634,8 +1634,8 @@ ItemCommon,1,FloatTextItemUnidentified_2,<pict rarity_unk> $(0)<c 00ffff>$(1)<c>
 ItemCommon,1,FloatTextMeseta,<pict reb_meseta> $(0)
 ItemCommon,1,FloatTextSeasonPoint,<pict event_point> $(0)
 ItemCommon,1,UseDiskError_ForChallenge,Las clases Scion no se pueden usar en esta misión.
-ItemCommon,1,UseTicketUpgrade_UsedNormal_UsePlus,"Actualizar de la versión normal ""$(0)""<br>a la versión Plus, ""$(1)""."<br><br><yellow>La versión normal seguirá siendo accesible mediante:<c><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?"
-ItemCommon,1,UseTicketUpgrade_UsedPlus_UseNormal,"Selecciona lo siguiente:<br><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?"
+ItemCommon,1,UseTicketUpgrade_UsedNormal_UsePlus,"Actualizar de la versión normal ""$(0)""<br>a la versión Plus, ""$(1)"".<br><br><yellow>La versión normal seguirá siendo accesible mediante:<c><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?"""
+ItemCommon,1,UseTicketUpgrade_UsedPlus_UseNormal,Selecciona lo siguiente:<br><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?
 ItemCommon,1,CostumeRemoveError,No hay suficiente espacio en tu inventario para sacar tus artículos de moda.
 ItemCommon,1,MoveWarehouseErrorMessage10,"No se puede mover, ya que no tienes suficiente espacio<br>en tu inventario de PSO2, o has excedido la<br>capacidad máxima de carga para los objetos."
 ItemCommon,1,Missionpass_ReceiveMessage1,"Actualmente tienes recompensas de Mission Pass no reclamadas. Reclámalos desde el ""Pase de misión"" en ""Tareas/Misiones"" en el menú principal."
@@ -2231,9 +2231,9 @@ ItemParameter,1,ElementOmit,...$(0)más
 ItemParameter,1,HandoverGamma1,"Límite de ancemento, Elementos, Niveles del Elemento <br>, Aumentos, Color del fotón y Registro de propietario."
 ItemParameter,1,HandoverGamma2,Los aumentos<br>se heredarán de<br>el elemento base.
 ItemParameter,1,HandoverTakt1,"<c ff9c70>Se heredará lo siguiente del objeto base:<c><br>Nivel de mejora, límite de mejora, color de fotones<br>y registro de propietario."
-ItemParameter,1,HandoverTakt2,"Los aumentos<br>no se heredarán."
+ItemParameter,1,HandoverTakt2,Los aumentos<br>no se heredarán.
 ItemParameter,1,HandoverAddon1,"<c ff9c70>Se heredará lo siguiente del objeto base:<c><br>Nivel de mejora, elementos y niveles de elemento, aumentos,<br>habilidades de unidad, habilidades temporales instaladas, color de fotones y<br>registro de propietario."
-ItemParameter,1,HandoverAddon2,"Los aumentos<br>se heredarán del<br>objeto base."
+ItemParameter,1,HandoverAddon2,Los aumentos<br>se heredarán del<br>objeto base.
 ItemParameter,1,AcceptType,Compatibilidad
 ItemParameter,1,ValueZero,(+0)
 ItemParameter,1,ValueZeroNaked,+0
@@ -3173,16 +3173,16 @@ ShopShelf,1,BuyResultMessage1,Compra completa.
 ShopShelf,1,BuyResultMessage2,No se pudo completar la compra.
 ShopShelf,1,BuyResultMessage3,La compra está completa. ¿Le gustaría<br>enviar felicitaciones al vendedor?
 ShopShelf,1,BuyResultMessage4,El artículo que eligió ya no está<br>en la lista de productos. Se agotó o el vendedor lo eliminó <br>.
-ShopShelf,1,TicketWeapon,"★$(0) Pase de compra de armas"
-ShopShelf,1,TicketUnit,"★$(0) Pase de compra de unidades"
-ShopShelf,1,TicketNumber,"$(0) (Tienes: $(1))"
-ShopShelf,1,TicketTitle,"Se incluyen artículos de ★10 o superior entre los<br>artículos que intentas comprar.<br><br>Se requieren los siguientes artículos para completar la<br>compra y serán consumidos como resultado.<br><br>¿Estás seguro de que deseas continuar?"
-ShopShelf,1,TicketError,"Se incluyen artículos de ★10 o superior entre los<br>artículos que intentas comprar.<br>La compra no puede completarse<br>porque te faltan los siguientes artículos."
-ShopShelf,1,BuyResultMessage5,"Artículos comprados.<br><yellow>Registro de propietario<c> completo."
-ShopShelf,1,BuyResultMessage6,"Ya realizó la compra y<br><yellow>Registro de propietario<c> está completo.<br>¿Le gustaría enviar una felicitación al vendedor?"
-ShopShelf,1,OwnershipMessage,"Se incluyen artículos de ★13 o superior entre los<br>artículos que intentas comprar.<br><br><yellow>Registro de propietario<c> se realizará<br>una vez que la compra esté completa.<br>¿Estás seguro de que deseas continuar?"
-ShopShelf,1,WeaponRarity,"★$(0) Arma ★$(1)"
-ShopShelf,1,UnitRarity,"★$(0) Unidad ★$(1)"
+ShopShelf,1,TicketWeapon,★$(0) Pase de compra de armas
+ShopShelf,1,TicketUnit,★$(0) Pase de compra de unidades
+ShopShelf,1,TicketNumber,$(0) (Tienes: $(1))
+ShopShelf,1,TicketTitle,Se incluyen artículos de ★10 o superior entre los<br>artículos que intentas comprar.<br><br>Se requieren los siguientes artículos para completar la<br>compra y serán consumidos como resultado.<br><br>¿Estás seguro de que deseas continuar?
+ShopShelf,1,TicketError,Se incluyen artículos de ★10 o superior entre los<br>artículos que intentas comprar.<br>La compra no puede completarse<br>porque te faltan los siguientes artículos.
+ShopShelf,1,BuyResultMessage5,Artículos comprados.<br><yellow>Registro de propietario<c> completo.
+ShopShelf,1,BuyResultMessage6,Ya realizó la compra y<br><yellow>Registro de propietario<c> está completo.<br>¿Le gustaría enviar una felicitación al vendedor?
+ShopShelf,1,OwnershipMessage,Se incluyen artículos de ★13 o superior entre los<br>artículos que intentas comprar.<br><br><yellow>Registro de propietario<c> se realizará<br>una vez que la compra esté completa.<br>¿Estás seguro de que deseas continuar?
+ShopShelf,1,WeaponRarity,★$(0) Arma ★$(1)
+ShopShelf,1,UnitRarity,★$(0) Unidad ★$(1)
 ShopSellOff,0,SellOff,売却
 ShopSellOff,0,Back,戻る
 ShopSellOff,0,SellOffErrorTitle,ショップ
@@ -3720,9 +3720,9 @@ LaboGrind,1,Back,Atrás
 LaboGrind,1,NoItemMessage,No hay ningún elemento configurado para mejora
 LaboGrind,1,DropItem,Establecer elemento para mejorar
 LaboGrind,1,GrindTitle,MEJORAR ARTÍCULO
-LaboGrind,1,GrindMessage,"La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Los objetos de soporte pueden utilizarse para reducir<br>el riesgo o aumentar el nivel de mejora."
-LaboGrind,1,GrindMessage_v,"Los objetos de soporte se pueden utilizar para reducir el riesgo<br>o aumentar el nivel de mejora."
-LaboGrind,1,GrindSupport1,"Objeto de soporte 1"
+LaboGrind,1,GrindMessage,La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Los objetos de soporte pueden utilizarse para reducir<br>el riesgo o aumentar el nivel de mejora.
+LaboGrind,1,GrindMessage_v,Los objetos de soporte se pueden utilizar para reducir el riesgo<br>o aumentar el nivel de mejora.
+LaboGrind,1,GrindSupport1,Objeto de soporte 1
 LaboGrind,1,GrindNoSupport1Item,No usar
 LaboGrind,1,GrindSupport1Item,$(0) x $(1)
 LaboGrind,1,GrindSupport2,Artículo de soporte 2
@@ -3743,8 +3743,8 @@ LaboGrind,1,MaterialTitle,Selección de elementos materiales
 LaboGrind,1,ResultMessage1,$(2) mejora<green>exitosa <c>.<br>El nivel de mejora cambió de $(1) a $(0).
 LaboGrind,1,ResultMessage2,Mejora de $(2)<c ff007f>muy exitosa <c>.<br>El nivel de mejora cambió de $(1) a $(0).
 LaboGrind,1,ResultMessage3,br><br><br> Nivel de mejora $(0) excedido. Las ranuras de aumento aumentaron de $(5) a $(4).
-LaboGrind,1,ResultMessage4,"Mejora de $(3) <c ff007f>muy exitosa<c>.<br>El nivel de mejora cambió de $(2) a $(1)<br><br><br>Se superó el nivel de mejora $(0). Los espacios de aumento aumentaron de $(5) a $(4)."
-LaboGrind,1,ConfirmationAttentionMessage,"Una o más de las siguientes condiciones se aplican a este objeto. ¿Estás seguro de que deseas continuar?<br><br><br>- Rareza ★$(0)+<br>- En el nivel máximo de mejora"
+LaboGrind,1,ResultMessage4,Mejora de $(3) <c ff007f>muy exitosa<c>.<br>El nivel de mejora cambió de $(2) a $(1)<br><br><br>Se superó el nivel de mejora $(0). Los espacios de aumento aumentaron de $(5) a $(4).
+LaboGrind,1,ConfirmationAttentionMessage,Una o más de las siguientes condiciones se aplican a este objeto. ¿Estás seguro de que deseas continuar?<br><br><br>- Rareza ★$(0)+<br>- En el nivel máximo de mejora
 LaboGrind,1,ConfirmationMessage,Gran éxito Tasa <c>.<br>Nota: Cualquier EXP de mejora obtenida que supere el máximo se descartará.
 LaboGrind,1,SkipConfirmationMessage,t.<br><br><yellow>Solo se pueden seleccionar ciertos elementos de soporte. <c><br><br> ¿Está seguro de que desea continuar?
 LaboGrind,1,SkipConfirmationMessage2,>
@@ -3786,8 +3786,8 @@ LaboGrind,1,SrcSelect,Confirmar
 LaboGrind,1,SelectRiseParam,Seleccione estadísticas para aumentar para los anillos
 LaboGrind,1,DefRiseParam,Seleccione estadísticas para aumentar
 LaboGrind,1,NoMatchRiseParam,No se puede seleccionar
-LaboGrind,1,GrindMessage_Gadget,"La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Los aumentos de estadísticas solo se pueden seleccionar<br>al mejorar los anillos L."
-LaboGrind,1,GrindMessage_Gadget_v,"Nota: Los aumentos de estadísticas solo se pueden seleccionar<br>al mejorar los anillos L."
+LaboGrind,1,GrindMessage_Gadget,La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Los aumentos de estadísticas solo se pueden seleccionar<br>al mejorar los anillos L.
+LaboGrind,1,GrindMessage_Gadget_v,Nota: Los aumentos de estadísticas solo se pueden seleccionar<br>al mejorar los anillos L.
 LaboGrind,1,GrindMessage_Gamma,"La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Puedes usar objetos de soporte para mejorar la probabilidad<br>de un <c ff007f>Gran éxito<c>. Si superas el límite de EXP de mejora,<br>el exceso de EXP se descartará. Si un objeto tiene una<br>rareza de 13 o más, serás <yellow>registrado como su propietario<c><br>y ya no podrá intercambiarse con otros jugadores."
 LaboGrind,1,GrindMessage_Gamma_v,"La mejora está a punto de comenzar.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Puedes usar objetos de soporte para mejorar la probabilidad<br>de un <c ff007f>Gran éxito<c>. Si superas el límite de EXP de mejora,<br>el exceso de EXP se descartará. Si un objeto tiene una<br>rareza de 13 o más, serás <yellow>registrado como su propietario<c><br>y ya no podrá intercambiarse con otros jugadores."
 LaboGrind,1,GrindMessage_Gamma_owner,"probabilidad<br>de un<c ff007f>gran éxito <c>. Si excede el límite de EXP de mejora <br>, el exceso de EXP se descartará."
@@ -3801,9 +3801,9 @@ LaboGrind,1,GrindParamName,Enh. Lv. de $(0)
 LaboGrind,1,GrindErrorMessage_SelectParam,Seleccione estadísticas para aumentar
 LaboGrind,1,GrindErrorMessage_ShortageItem,No tienes suficientes materiales necesarios.
 LaboGrind,1,GrindErrorMessage_FailedParam,No se pudieron adquirir estadísticas.
-LaboGrind,1,GrindResultMessage_Gamma1,"La mejora fue <green>exitosa<c>.<br>El nivel de mejora del artículo aumentó de $(0) a $(1)."
-LaboGrind,1,GrindResultMessage_Gamma2,"La mejora fue un <c ff007f>Gran éxito<c>.<br>El nivel de mejora del artículo aumentó de $(0) a $(1)."
-LaboGrind,1,GrindResultMessage_Gamma3,"La mejora fue un <c ff007f>Gran éxito<c>."
+LaboGrind,1,GrindResultMessage_Gamma1,La mejora fue <green>exitosa<c>.<br>El nivel de mejora del artículo aumentó de $(0) a $(1).
+LaboGrind,1,GrindResultMessage_Gamma2,La mejora fue un <c ff007f>Gran éxito<c>.<br>El nivel de mejora del artículo aumentó de $(0) a $(1).
+LaboGrind,1,GrindResultMessage_Gamma3,La mejora fue un <c ff007f>Gran éxito<c>.
 LaboGrind,1,GrindResultMessage_Gamma_BonusElement,"Factor de aumento desbloqueado.<br><br> Si seleccionaste esta arma en Affix Augment,<br><pict bonus_elem_icon> $(0) será seleccionable."
 LaboGrind,1,GrindResultMessage_Waker_BonusElement,"Factor de aumento desbloqueado.<br><br> Si seleccionaste esta arma en Affix Augment,<br><pict awake_sp_icon> $(0) será seleccionable."
 LaboGrind,1,GrindResultMessage_Unit_BonusElement,"Aumento de afijo],<br><pict bonus_elem_icon> $(0) será seleccionable."
@@ -3832,11 +3832,11 @@ LaboGrind,1,GammaGrindBonusVal,+$(0)
 LaboGrind,1,GammaCompareListNone,-
 LaboGrind,1,GammaCompareListAttrNone,Ningún elemento
 LaboGrind,1,GammaCompareListPotentialNone,Aún no desbloqueado
-LaboGrind,1,ConfirmMessage_Gamma1,"Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior"
-LaboGrind,1,ConfirmMessage_Gamma2,"Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior"
-LaboGrind,1,ConfirmMessage_Gamma3,"Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior"
-LaboGrind,1,Gamma_Potential_SequenceMessage,"<yellow>Desbloqueo de potenciales<c> te permite mejorar las armas.<br><br>Seleccione el Potencial que desea desbloquear."
-LaboGrind,1,GammaGrindResultMessage_Potential,"como gotas de fotones<br>o esferas de fotones."
+LaboGrind,1,ConfirmMessage_Gamma1,Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior
+LaboGrind,1,ConfirmMessage_Gamma2,Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior
+LaboGrind,1,ConfirmMessage_Gamma3,Una de las siguientes condiciones se aplica a este objeto.<br>¿Estás seguro de que deseas continuar?<br><br>- Rareza de ★7 o superior<br>- Nivel de mejora de +1 o superior<br>- Límite de mejora de +31 o superior
+LaboGrind,1,Gamma_Potential_SequenceMessage,<yellow>Desbloqueo de potenciales<c> te permite mejorar las armas.<br><br>Seleccione el Potencial que desea desbloquear.
+LaboGrind,1,GammaGrindResultMessage_Potential,como gotas de fotones<br>o esferas de fotones.
 LaboGrind,1,GammaGrindResultMessage_GrindNumLimitUp,Apoyar elementos para<br>mejorar un elemento al nivel máximo<yellow>$(0) <c>.
 LaboGrind,1,GammaGrindResultMessage_GrindNumLimitUp_v,Apoyar elementos para<br>mejorar un elemento al nivel máximo<yellow>$(0) <c>.
 LaboGrind,1,GammaGrindResultMessage1,$(0)
@@ -3969,8 +3969,8 @@ LaboComposeElement,1,AddElementItem,$(0) x $(1)
 LaboComposeElement,1,AddElementItemCancel,Cancelar
 LaboComposeElement,1,ComposeTitle,FIJAR AUMENTO AL ARTÍCULO
 LaboComposeElement,1,ComposeMessage1,completo<c>.)
-LaboComposeElement,1,ComposeMessage2,"Se añadirá un aumento. ¿Estás seguro de que deseas continuar?<br><yellow>Nota: La tasa de éxito es menor porque estás utilizando una <br>Ranura extra.<c><br>Puedes utilizar objetos de soporte para mejorar la tasa de éxito<br>o conservar los objetos objetivo y materiales si el proceso falla.<br>(Los objetos de soporte <yellow>se consumen aunque la síntesis tenga éxito<c>.)"
-LaboComposeElement,1,ComposeSupport1,"Impulsores del éxito"
+LaboComposeElement,1,ComposeMessage2,Se añadirá un aumento. ¿Estás seguro de que deseas continuar?<br><yellow>Nota: La tasa de éxito es menor porque estás utilizando una <br>Ranura extra.<c><br>Puedes utilizar objetos de soporte para mejorar la tasa de éxito<br>o conservar los objetos objetivo y materiales si el proceso falla.<br>(Los objetos de soporte <yellow>se consumen aunque la síntesis tenga éxito<c>.)
+LaboComposeElement,1,ComposeSupport1,Impulsores del éxito
 LaboComposeElement,1,ComposeNoSupport1Item,No usar
 LaboComposeElement,1,ComposeSupport1Item,$(0) x $(1)
 LaboComposeElement,1,CompareTitle,DETALLES SOBRE LA FIJACIÓN DEL AUMENTO AL ARTÍCULO
@@ -4009,7 +4009,7 @@ LaboComposeElement,1,ExclusiveMessage,Se cambió porque ya se especificó el mis
 LaboComposeElement,1,OverSlotMessage,Cambiado porque has alcanzado el número máximo de adiciones.
 LaboComposeElement,1,ExtraSlotMessage,El uso de ranuras adicionales reduce la tasa de éxito general.
 LaboComposeElement,1,ElementGrindSupport,Artículos de soporte para colocar aumentos
-LaboComposeElement,1,ConfirmMessage,"Este objeto tiene un nivel de mejora de +1 o superior y su rareza es ★7 o superior.<br>¿Estás seguro de que deseas continuar?"
+LaboComposeElement,1,ConfirmMessage,Este objeto tiene un nivel de mejora de +1 o superior y su rareza es ★7 o superior.<br>¿Estás seguro de que deseas continuar?
 LaboComposeElement,1,SupportConfirmMessage,ht_red>El artículo aún se consumirá.<c><br><br>¿Está seguro de que desea continuar?
 LaboComposeElement,1,CheckLockMessage,Ocultar elementos bloqueados
 LaboComposeElement,1,CheckLockMessage_VITA,<pict Sign_SQUARE> Ocultar elementos bloqueados
@@ -4024,7 +4024,7 @@ LaboComposeElement,1,ProtectedMessage,Re de un artículo de soporte. <br><yellow
 LaboComposeElement,1,ProtectedAndRegisteredOwnerMessage,[<red>Affix Failed<c>] for some Augments.<br><yellow>Synthesis was canceled because of a support item <c>.<br>Check which items were preserved.<br><yellow>Owner Registration for the target item is complete<c>.
 LaboComposeElement,1,CheckProtectedItem,Verificar artículo conservado
 LaboComposeElement,1,ExElementLimitMessage,No se pueden seleccionar más aumentos EX.
-LaboComposeElement,1,ExElementLvelLimitMessage,"No se pueden seleccionar más aumentos EX de ★7 o más."
+LaboComposeElement,1,ExElementLvelLimitMessage,No se pueden seleccionar más aumentos EX de ★7 o más.
 LaboGrindAttribute,0,Title,属性強化アイテム選択
 LaboGrindAttribute,0,MenuAppendDst,対象アイテムにセット
 LaboGrindAttribute,0,MenuAppendSrc,素材アイテムにセット
@@ -4089,7 +4089,7 @@ LaboGrindAttribute,1,DropDst,Establecer un elemento para mejora de elementos
 LaboGrindAttribute,1,DropSrc,Establecer un elemento para usarlo como material
 LaboGrindAttribute,1,GrindTitle,ELEMENTO DEL ARTÍCULO ENH.
 LaboGrindAttribute,1,GrindMessage,<br> * Los elementos de soporte se pueden usar para cambiar<br>elementos y aumentar los niveles de los elementos.
-LaboGrindAttribute,1,GrindMessage_v,"La mejora está a punto de comenzar. ¿Deseas continuar?<br> Se pueden usar objetos de soporte para cambiar<br> elementos y aumentar los niveles de elemento."
+LaboGrindAttribute,1,GrindMessage_v,La mejora está a punto de comenzar. ¿Deseas continuar?<br> Se pueden usar objetos de soporte para cambiar<br> elementos y aumentar los niveles de elemento.
 LaboGrindAttribute,1,AttributeMessage,Nivel.<br><br> * Se puede<br>seleccionar un elemento de cambio de elemento para cambiar el elemento del elemento.
 LaboGrindAttribute,1,AttributeMessage_v,ement Cambiar elemento<br>se puede seleccionar para cambiar el elemento del elemento.
 LaboGrindAttribute,1,GrindSupport1,Artículo de soporte 1
@@ -4241,9 +4241,9 @@ LaboReleasePotential,1,PotentialResult,El potencial de $(0) ahora es [$(1)]
 LaboReleasePotential,1,CompareNum1,Nombre potencial
 LaboReleasePotential,1,CompareNum2,Nuevos detalles potenciales
 LaboReleasePotential,1,CompareNum3,Nivel$(0)
-LaboReleasePotential,1,ConfirmationMessage,"Comenzando el desbloqueo de Potencial.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Agregar objetos de soporte te permite romper el límite <yellow>sin consumir <br>los materiales requeridos.<c><br><pict reb_meseta>Siempre se consumen N-Meseta."
-LaboReleasePotential,1,ConfirmationMessage_Select,"Comenzando el desbloqueo/reemplazo de Potencial.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Agregar objetos de soporte te permite romper el límite <yellow>sin consumir <br>los materiales requeridos.<c><br><pict reb_meseta>Siempre se consumen N-Meseta."
-LaboReleasePotential,1,CompareMessage,"<yellow>Meseta requerida: $(1) (Tienes: $(0)) <c>"
+LaboReleasePotential,1,ConfirmationMessage,Comenzando el desbloqueo de Potencial.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Agregar objetos de soporte te permite romper el límite <yellow>sin consumir <br>los materiales requeridos.<c><br><pict reb_meseta>Siempre se consumen N-Meseta.
+LaboReleasePotential,1,ConfirmationMessage_Select,Comenzando el desbloqueo/reemplazo de Potencial.<br>¿Estás seguro de que deseas continuar?<br><br>Nota: Agregar objetos de soporte te permite romper el límite <yellow>sin consumir <br>los materiales requeridos.<c><br><pict reb_meseta>Siempre se consumen N-Meseta.
+LaboReleasePotential,1,CompareMessage,<yellow>Meseta requerida: $(1) (Tienes: $(0)) <c>
 LaboReleasePotential,1,CompareNeedItemHead,Artículos requeridos
 LaboReleasePotential,1,CompareNeedItemOK,$(0) x $(2) (Tienes: $(1))
 LaboReleasePotential,1,CompareNeedItemNG,<red> $(0) x $(2) (Tienes: $(1)) <c>
@@ -4372,16 +4372,16 @@ LaboRingSynthesis,0,RingSkillDesMsgNone,リングスキルがありません
 LaboRingSynthesis,0,RingSkillDesMsg_vita,$(0)<br>【効果】<br>$(1)<br><br>$(2)
 LaboRingSynthesis,0,RingSkillNoneEffect,リングスキル効果がありません
 LaboRingSynthesis,0,NoneRingSkillMsg,リングスキルはありません
-LaboRingSynthesis,1,Explanation1,"<c f0df60> Puedes agregar una habilidad de anillo de un anillo L a una unidad de ★12 o superior. Selecciona una unidad. <c>"
-LaboRingSynthesis,1,SynthesisItemSelectTitle,"AÑADIR HABILIDAD DE LA UNIDAD"
-LaboRingSynthesis,1,NoDstMessage,"No se ha establecido ningún elemento de destino."
-LaboRingSynthesis,1,SynthesisErrorTitile,"Laboratorio de artículos"
-LaboRingSynthesis,1,SynthesisErrorMes1,"No tienes unidades seleccionables de ★12 o más."
-LaboRingSynthesis,1,SynthesisErrorMes2,"Los elementos bloqueados no se pueden utilizar."
-LaboRingSynthesis,1,SynthesisErrorMes3,"Esto será sobrescrito por una nueva habilidad.<br>¿Estás seguro de que deseas continuar?<br><br>* La habilidad de unidad actual será <c ff4f3f>eliminada<c>."
-LaboRingSynthesis,1,SynthesisErrorMes4,"No tienes un anillo de habilidad seleccionable (anillo L) ni una unidad con una habilidad de unidad."
-LaboRingSynthesis,1,SynthesisErrorMes5,"Se ha seleccionado un elemento bloqueado.<br>¿Está seguro de que desea continuar?"
-LaboRingSynthesis,1,Explanation2,"<c f0df60> Selecciona un elemento que te gustaría usar para agregar una habilidad de unidad."
+LaboRingSynthesis,1,Explanation1,<c f0df60> Puedes agregar una habilidad de anillo de un anillo L a una unidad de ★12 o superior. Selecciona una unidad. <c>
+LaboRingSynthesis,1,SynthesisItemSelectTitle,AÑADIR HABILIDAD DE LA UNIDAD
+LaboRingSynthesis,1,NoDstMessage,No se ha establecido ningún elemento de destino.
+LaboRingSynthesis,1,SynthesisErrorTitile,Laboratorio de artículos
+LaboRingSynthesis,1,SynthesisErrorMes1,No tienes unidades seleccionables de ★12 o más.
+LaboRingSynthesis,1,SynthesisErrorMes2,Los elementos bloqueados no se pueden utilizar.
+LaboRingSynthesis,1,SynthesisErrorMes3,Esto será sobrescrito por una nueva habilidad.<br>¿Estás seguro de que deseas continuar?<br><br>* La habilidad de unidad actual será <c ff4f3f>eliminada<c>.
+LaboRingSynthesis,1,SynthesisErrorMes4,No tienes un anillo de habilidad seleccionable (anillo L) ni una unidad con una habilidad de unidad.
+LaboRingSynthesis,1,SynthesisErrorMes5,Se ha seleccionado un elemento bloqueado.<br>¿Está seguro de que desea continuar?
+LaboRingSynthesis,1,Explanation2,<c f0df60> Selecciona un elemento que te gustaría usar para agregar una habilidad de unidad.
 LaboRingSynthesis,1,SkillRingSelectTitle,Selección de artículos
 LaboRingSynthesis,1,RingSkillDes,Descripción de la habilidad del anillo
 LaboRingSynthesis,1,RingSkilleffect,Descripción adicional de la habilidad de anillo
@@ -5173,7 +5173,7 @@ UserShopSearchItem,1,CategorySkillRing,Anillos de habilidad
 UserShopSearchItem,1,CategoryWeaponRare13,Rareza 13 armas
 UserShopSearchItem,1,CategoryWeaponRare14,Rareza 14 armas
 UserShopSearchItem,1,CategoryWeaponRare15,Rareza 15 armas
-UserShopSearchItem,1,CategoryLayeringCostume,Desgaste en capas
+UserShopSearchItem,1,CategoryLayeringCostume,Conjunto de ropa
 UserShopSearchItem,1,CategoryPetEgg,Huevos
 UserShopSearchItem,1,CategoryPetCandy,dulces
 UserShopSearchItem,1,CategoryGat,Materiales de recolección
@@ -5358,8 +5358,8 @@ UserShopSearchItem,1,Target Count Bonus Item,Artículo de bonificación por recu
 UserShopSearchItem,1,Evoleclipse Series,Serie Evoleclipse
 UserShopSearchItem,1,Target Gathering Materials (Kvaris),Materiales de recolección de objetivos (Kvaris)
 UserShopSearchItem,1,Target Gathering Materials (food),Materiales de recolección de objetivos (alimentos)
-UserShopSearchItem,1,Basic capsule 1,"Cápsula objetivo ★"
-UserShopSearchItem,1,Basic capsule 2,"Cápsula objetivo ★★"
+UserShopSearchItem,1,Basic capsule 1,Cápsula objetivo ★
+UserShopSearchItem,1,Basic capsule 2,Cápsula objetivo ★★
 UserShopSearchItem,1,Trigger/Yellow,Objetivo B-Trigger/Amarillo
 UserShopSearchItem,1,Trigger/Purple,Objetivo B-Trigger/Púrpura
 UserShopSearchItem,1,Target Quartz,"""-citar"" Mineral"
@@ -5383,9 +5383,9 @@ UserShopSearchItem,1,SubCategoryOther,Otro
 UserShopSearchItem,1,SubCategoryConsumeArksCardBackground,Antecedentes de ARKS ID
 UserShopSearchItem,1,SubCategoryVitalgauge,Diseño de medidor vital
 UserShopSearchItem,1,Verschmelz Series,Serie Verschmelz
-UserShopSearchItem,1,ItemNameDeleteButtonGuide,"Confirmar: <%Decide>    Cancelar: <%Cancel>    Mover objeto activo: <%NextWidget>    Cambiar ventana activa: <%ChangeCtrlWindowForward>    Eliminar nombre del objeto introducido: <%NextTabDetails>"
-UserShopSearchItem,1,Target Gathering Materials (Quartz),"Materiales de recolección de objetivos (minerales)"
-UserShopSearchItem,1,Basic capsule 3,"Cápsula objetivo ★★★"
+UserShopSearchItem,1,ItemNameDeleteButtonGuide,Confirmar: <%Decide>    Cancelar: <%Cancel>    Mover objeto activo: <%NextWidget>    Cambiar ventana activa: <%ChangeCtrlWindowForward>    Eliminar nombre del objeto introducido: <%NextTabDetails>
+UserShopSearchItem,1,Target Gathering Materials (Quartz),Materiales de recolección de objetivos (minerales)
+UserShopSearchItem,1,Basic capsule 3,Cápsula objetivo ★★★
 UserShopSearchItem,1,Recycle Reward Box,Reciclar caja de recompensas
 UserShopSearchItem,1,Recycle Reward Box Medal,Medalla de caja de recompensas de reciclaje
 UserShopSearchItem,1,Target N-Class EX-Cubes,Objetivo EX-Cubos Clase N
@@ -5396,10 +5396,10 @@ UserShopSearchItem,1,Recycle Kira Card,Tarjeta de papel de reciclaje
 UserShopSearchItem,1,Recycle Normal Card,Reciclar tarjeta normal
 UserShopSearchItem,1,Basic capsule Dualble V,Objetivo Cápsula Dualble V
 UserShopSearchItem,1,Search_EXElement_HintText,"Busca todas las variantes de ""Aumentos EX"" <yellow>cambiando la última letra del nombre por ""?""<c>.<br><yellow>*Por ejemplo: EX Risky Stance ?<c>"
-UserShopSearchItem,1,Target Capsule Domina LC,"Cápsula Domina LC objetivo"
-UserShopSearchItem,1,Target DP Capsules,"Cápsulas de DP objetivo"
-UserShopSearchItem,1,Target Dualble DP Capsules,"Cápsulas Durables de DP objetivo"
-UserShopSearchItem,1,Target N-Weapons Badge,"Insignia de armas N objetivo"
+UserShopSearchItem,1,Target Capsule Domina LC,Cápsula Domina LC objetivo
+UserShopSearchItem,1,Target DP Capsules,Cápsulas de DP objetivo
+UserShopSearchItem,1,Target Dualble DP Capsules,Cápsulas Durables de DP objetivo
+UserShopSearchItem,1,Target N-Weapons Badge,Insignia de armas N objetivo
 UserShopSearchItem,1,Search_Series_HintText,"Para armas y armaduras, busca todos los objetos de una serie determinada <yellow>añadiendo un ""?""<c> al<br>nombre.<br><yellow>*Ejemplo: Primm Sword?<c><br>*Excluye algunas series."
 UserShopSearchShop,0,Title,ショップ検索
 UserShopSearchShop,0,ResultTitle,ショップ検索結果
@@ -5449,7 +5449,7 @@ UserShopDetails,1,Comment,Anuncio
 UserShopDetails,1,Recent_transaction_status,Transacciones recientes
 UserShopDetails,1,Closed_owner_info_1,Revelado una vez que el propietario obtiene un determinado título.
 UserShopDetails,1,Closed_owner_info_2,"Obtenga el título ""Comprador de tienda personal"" para verlo."
-UserShopDetails,1,Closed_symbolart_option_Info,"El Arte de Símbolo no se mostrará.<br><br><yellow>Nota: Esta configuración puede cambiarse en <br>[Mostrar Arte de Símbolo: Tiendas personales] dentro de <br>[Sonido/Chat] en [Opciones].<c>"
+UserShopDetails,1,Closed_symbolart_option_Info,El Arte de Símbolo no se mostrará.<br><br><yellow>Nota: Esta configuración puede cambiarse en <br>[Mostrar Arte de Símbolo: Tiendas personales] dentro de <br>[Sonido/Chat] en [Opciones].<c>
 UserShopDetails,1,AddBlockList_SymbolArt,Bloquear este arte de símbolo
 UserShopDetails,1,AddBlockList_Player,Agregar este propietario a la lista de bloqueo
 UserShopDetails,1,Alert_Player,Denunciar a este propietario
@@ -5673,7 +5673,7 @@ IdentifyMain,1,Explanation2,para tasar.<c>Puedes seleccionar múltiples armas co
 IdentifyMain,1,Explanation3,"Un artículo ha sido tasado, puedes agregarle Elementos y Aumentos. <c>"
 IdentifyMain,1,IdentifyItem_special,Evaluación mejorada
 IdentifyMain,1,IdentifyEgg,tasar huevos
-IdentifyMain,1,Explanation4,"<c f0df60>Selecciona el o los huevos (<c 00ffff>? Huevo(s) especial(es)<c f0df60>) que deseas tasar.<c> Puedes seleccionar varios huevos con <%MultiSelect><c f0df60><c>"
+IdentifyMain,1,Explanation4,<c f0df60>Selecciona el o los huevos (<c 00ffff>? Huevo(s) especial(es)<c f0df60>) que deseas tasar.<c> Puedes seleccionar varios huevos con <%MultiSelect><c f0df60><c>
 IdentifyMain,1,Explanation5,"Una vez que la mascota ha sido tasada, puedes agregarle un Elemento. <c>"
 IdentifyMain,1,Explanation2_special,<c f0df60> Selecciona el arma (<c 00ffff>? Arma especial<c f0df60>) para la que deseas realizar una evaluación mejorada. <c>
 IdentifyMain,1,Explanation3_special,"em ha sido evaluado, puedes agregarle Elementos y Aumentos más poderosos. <c>"
@@ -18217,16 +18217,16 @@ ItemSkillHelp,1,item_WholeBody_3,"Potencia +20%/<br>Aumenta la potencia con HP a
 ItemSkillHelp,1,item_WholeBody_4,"Potencia +21%/<br>Aumenta la potencia con HP alto,<br>hasta un máximo de +5.0%"
 ItemSkillHelp,1,item_WholeBody_5,"Potencia +22%/<br>Aumenta la potencia con HP alto,<br>hasta un máximo de +8.0%"
 ItemSkillHelp,1,item_WholeBody_6,"Potencia +35%/<br>Aumenta la potencia con HP alto,<br>hasta un máximo de +8.0%"
-ItemSkillHelp,1,item_StackHeal_1,"Potencia +17%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)"
-ItemSkillHelp,1,item_StackHeal_2,"Potencia +19%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)"
-ItemSkillHelp,1,item_StackHeal_3,"Potencia +22%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)"
-ItemSkillHelp,1,item_StackHeal_4,"Potencia +25%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)"
-ItemSkillHelp,1,item_StackHeal_5,"Potencia +28%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)"
-ItemSkillHelp,1,item_LifeGuts_1,"Potencia +18%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse"
-ItemSkillHelp,1,item_LifeGuts_2,"Potencia +20%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse"
-ItemSkillHelp,1,item_LifeGuts_3,"Potencia +23%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse"
-ItemSkillHelp,1,item_LifeGuts_4,"Potencia +26%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse"
-ItemSkillHelp,1,item_LifeGuts_5,"Potencia +29%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse"
+ItemSkillHelp,1,item_StackHeal_1,Potencia +17%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)
+ItemSkillHelp,1,item_StackHeal_2,Potencia +19%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)
+ItemSkillHelp,1,item_StackHeal_3,Potencia +22%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)
+ItemSkillHelp,1,item_StackHeal_4,Potencia +25%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)
+ItemSkillHelp,1,item_StackHeal_5,Potencia +28%/<br>Acumula hasta 3 cargas mediante<br>esquivas exitosas que restauran<br>HP al recibir daño<br>(hasta un máximo de 300 HP)
+ItemSkillHelp,1,item_LifeGuts_1,Potencia +18%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse
+ItemSkillHelp,1,item_LifeGuts_2,Potencia +20%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse
+ItemSkillHelp,1,item_LifeGuts_3,Potencia +23%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse
+ItemSkillHelp,1,item_LifeGuts_4,Potencia +26%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse
+ItemSkillHelp,1,item_LifeGuts_5,Potencia +29%/<br>Un ataque incapacitante te<br>dejará con 1 HP y un<br>momento de invulnerabilidad<br>(600 seg. de tiempo de reutilización). El efecto<br>comienza 10 seg. después de equiparse
 ItemSkillHelp,1,item_ReactionBonus_1,Potencia +18%/<br>Todas las eficacias bajas +20%
 ItemSkillHelp,1,item_ReactionBonus_2,Potencia +20%/<br>Todas las eficacias bajas +20%
 ItemSkillHelp,1,item_ReactionBonus_3,Potencia +23%/<br>Todas las eficacias bajas +20%
@@ -18340,28 +18340,28 @@ ItemSkillHelp,1,item_ChanceUp_4,Potencia +21%/<br>Los golpes no críticos aument
 ItemSkillHelp,1,item_ChanceUp_5,Potencia +22%/<br>Los golpes no críticos aumentan<br>Tasa de golpes críticos hasta<br>+30%. La bonificación se reinicia con<br>golpe crítico.
 ItemSkillHelp,1,item_ChanceUp_6,Potencia +37%/<br>Los golpes no críticos aumentan<br>Tasa de golpes críticos hasta<br>+30%. La bonificación se reinicia con<br>golpe crítico.
 ItemSkillHelp,1,item_ElementPpBonus2_1,k que inflige un<br>Elemental Down de acuerdo<br>con el elemento de tu arma.<br>20 segundos de recuperación
-ItemSkillHelp,1,item_ElementPpBonus2_2,"Potencia +10%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización"
-ItemSkillHelp,1,item_ElementPpBonus2_3,"Potencia +13%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización"
-ItemSkillHelp,1,item_ElementPpBonus2_4,"Potencia +14%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización"
-ItemSkillHelp,1,item_ElementPpBonus2_5,"Potencia +15%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización"
-ItemSkillHelp,1,item_Highlander_1,"Potencia +18%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%)."
-ItemSkillHelp,1,item_Highlander_2,"Potencia +20%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%)."
-ItemSkillHelp,1,item_Highlander_3,"Potencia +22%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%)."
-ItemSkillHelp,1,item_Highlander_4,"Potencia +26%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%)."
-ItemSkillHelp,1,item_Highlander_5,"Potencia +27%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 2%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%)."
-ItemSkillHelp,1,item_Highlander_6,"Potencia +44%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 2%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%)."
-ItemSkillHelp,1,item_QuestBuster_1,"Potencia +15%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico."
-ItemSkillHelp,1,item_QuestBuster_2,"Potencia +18%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico."
-ItemSkillHelp,1,item_QuestBuster_3,"Potencia +20%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión Laberinto Geométrico."
-ItemSkillHelp,1,item_QuestBuster_4,"Potencia +22%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico."
+ItemSkillHelp,1,item_ElementPpBonus2_2,Potencia +10%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización
+ItemSkillHelp,1,item_ElementPpBonus2_3,Potencia +13%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización
+ItemSkillHelp,1,item_ElementPpBonus2_4,Potencia +14%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización
+ItemSkillHelp,1,item_ElementPpBonus2_5,Potencia +15%/<br>Vuelve a atacar al enemigo 10 segundos<br>después de un ataque inicial para activar<br>un ataque adicional que inflige una<br>Caída Elemental de acuerdo con<br>el elemento de tu arma.<br>20 segundos de tiempo de reutilización
+ItemSkillHelp,1,item_Highlander_1,Potencia +18%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%).
+ItemSkillHelp,1,item_Highlander_2,Potencia +20%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%).
+ItemSkillHelp,1,item_Highlander_3,Potencia +22%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +15%).
+ItemSkillHelp,1,item_Highlander_4,Potencia +26%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 1%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%).
+ItemSkillHelp,1,item_Highlander_5,Potencia +27%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 2%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%).
+ItemSkillHelp,1,item_Highlander_6,Potencia +44%/<br>Aumenta la recuperación de HP de Restasigne<br>y reduce el consumo de PP en un 2%<br>por el número de aumentos diferentes<br>en armas y armaduras<br>(hasta +20%).
+ItemSkillHelp,1,item_QuestBuster_1,Potencia +15%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico.
+ItemSkillHelp,1,item_QuestBuster_2,Potencia +18%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico.
+ItemSkillHelp,1,item_QuestBuster_3,Potencia +20%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión Laberinto Geométrico.
+ItemSkillHelp,1,item_QuestBuster_4,Potencia +22%/<br>Resistencia al daño +5%/<br>Potencia adicional +5% y<br>Resistencia al daño +50%<br>cuando estás en la misión<br>Laberinto Geométrico.
 ItemSkillHelp,1,item_QuestBuster_5,nd<br>Resistencia al daño +50%<br>durante una misión del Laberinto geométrico <br>
 ItemSkillHelp,1,item_QuestBuster_6,nd<br>Resistencia al daño +50%<br>durante una misión del Laberinto geométrico <br>
-ItemSkillHelp,1,item_EnemyBuster_1,"Potencia +13%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
-ItemSkillHelp,1,item_EnemyBuster_2,"Potencia +15%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
-ItemSkillHelp,1,item_EnemyBuster_3,"Potencia +18%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
-ItemSkillHelp,1,item_EnemyBuster_4,"Potencia +19%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
-ItemSkillHelp,1,item_EnemyBuster_5,"Potencia +21%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
-ItemSkillHelp,1,item_EnemyBuster_6,"Potencia +31%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS."
+ItemSkillHelp,1,item_EnemyBuster_1,Potencia +13%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
+ItemSkillHelp,1,item_EnemyBuster_2,Potencia +15%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
+ItemSkillHelp,1,item_EnemyBuster_3,Potencia +18%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
+ItemSkillHelp,1,item_EnemyBuster_4,Potencia +19%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
+ItemSkillHelp,1,item_EnemyBuster_5,Potencia +21%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
+ItemSkillHelp,1,item_EnemyBuster_6,Potencia +31%/<br>Resistencia al daño +5% y<br>Potencia + 6%/<br>Resistencia al daño +5%<br>contra DOLLS.
 ItemSkillHelp,1,item_EscapePpConvert_1,Potencia +16%/<br>Velocidad de recuperación de PP natural<br>+100% durante 20 segundos con<br>Paso lateral exitoso.<br>10 segundos de recuperación
 ItemSkillHelp,1,item_EscapePpConvert_2,Potencia +18%/<br>Velocidad de recuperación de PP natural<br>+100% durante 20 segundos con<br>Paso lateral exitoso.<br>10 segundos de recuperación
 ItemSkillHelp,1,item_EscapePpConvert_3,Potencia +21%/<br>Velocidad de recuperación de PP natural<br>+100% durante 20 segundos con<br>Paso lateral exitoso.<br>10 segundos de recuperación
@@ -18716,18 +18716,18 @@ ItemSkillHelp,1,item_AchieveBuff_3,"Potencia +55%/<br>Resistencia al daño +5% c
 ItemSkillHelp,1,item_AchieveBuff_4,"Potencia +58%/<br>Resistencia al daño +5% cada<br>vez que se cumple una de estas<br>condiciones, hasta un máximo de 15%:<br>1. Al realizar un golpe crítico<br>2. Al usar Restasigne<br>3. Después de 100 seg.<br>Cuando se cumplen todas las condiciones,<br>se evita ser lanzado o derribado por<br>los ataques enemigos,<br>Índice de golpes críticos +20%,<br>Potencia crítica +5% por 20 seg.<br>Tras finalizar este efecto,<br>se repone un Restasigne."
 ItemSkillHelp,1,item_AchieveBuff_5,"Potencia +59%/<br>Resistencia al daño +5% cada<br>vez que se cumple una de estas<br>condiciones, hasta un máximo de 15%:<br>1. Al realizar un golpe crítico<br>2. Al usar Restasigne<br>3. Después de 100 seg.<br>Cuando se cumplen todas las condiciones,<br>se evita ser lanzado o derribado por<br>los ataques enemigos,<br>Índice de golpes críticos +20%,<br>Potencia crítica +5% por 20 seg.<br>Tras finalizar este efecto,<br>se repone un Restasigne."
 ItemSkillHelp,1,item_AchieveBuff_6,"Potencia +65%/<br>Resistencia al daño +5% cada<br>vez que se cumple una de estas<br>condiciones, hasta un máximo de 15%:<br>1. Al realizar un golpe crítico<br>2. Al usar Restasigne<br>3. Después de 100 seg.<br>Cuando se cumplen todas las condiciones,<br>se evita ser lanzado o derribado por<br>los ataques enemigos,<br>Índice de golpes críticos +20%,<br>Potencia crítica +5% por 20 seg.<br>Tras finalizar este efecto,<br>se repone un Restasigne."
-ItemSkillHelp,1,item_GenericBuff4_1,"Potencia +42%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_GenericBuff4_2,"Potencia +45%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_GenericBuff4_3,"Potencia +48%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_GenericBuff4_4,"Potencia +51%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_GenericBuff4_5,"Potencia +52%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_GenericBuff4_6,"Potencia +58%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%"
-ItemSkillHelp,1,item_AllBonus9_1,"Potencia +42%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
-ItemSkillHelp,1,item_AllBonus9_2,"Potencia +45%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
-ItemSkillHelp,1,item_AllBonus9_3,"Potencia +48%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
-ItemSkillHelp,1,item_AllBonus9_4,"Potencia +51%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
-ItemSkillHelp,1,item_AllBonus9_5,"Potencia +52%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
-ItemSkillHelp,1,item_AllBonus9_6,"Potencia +58%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%"
+ItemSkillHelp,1,item_GenericBuff4_1,Potencia +42%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_GenericBuff4_2,Potencia +45%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_GenericBuff4_3,Potencia +48%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_GenericBuff4_4,Potencia +51%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_GenericBuff4_5,Potencia +52%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_GenericBuff4_6,Potencia +58%/<br>Índice de golpes críticos +5%/<br>Consumo de PP -10%/<br>Resistencia al daño +10%
+ItemSkillHelp,1,item_AllBonus9_1,Potencia +42%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
+ItemSkillHelp,1,item_AllBonus9_2,Potencia +45%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
+ItemSkillHelp,1,item_AllBonus9_3,Potencia +48%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
+ItemSkillHelp,1,item_AllBonus9_4,Potencia +51%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
+ItemSkillHelp,1,item_AllBonus9_5,Potencia +52%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
+ItemSkillHelp,1,item_AllBonus9_6,Potencia +58%/<br>Recuperación de PP ofensiva +15%/<br>Velocidad de recuperación de PP natural<br>+15%/<br>Resistencia al daño +10%/<br>Aumento de la barra de Photon Blast<br>al atacar +10%
 ItemSkillHelp,1,item_GuardStanceUp_1,La efectividad de la postura de guardia<br>aumenta un 1%.
 ItemSkillHelp,1,item_GuardStanceUp_2,La efectividad de la postura de guardia<br>aumenta un 2%.
 ItemSkillHelp,1,item_GuardStanceUp_3,La efectividad de la postura de guardia<br>aumenta un 3%.
@@ -21578,11 +21578,11 @@ ItemSkillHelp,1,item_ComboDBonus_Su_2,eso niega<br>golpes. No atacar durante un<
 ItemSkillHelp,1,item_ComboDBonus_Su_3,eso niega<br>golpes. No atacar durante un<br>tiempo determinado detendrá el efecto.
 ItemSkillHelp,1,item_ComboDBonus_Su_4,eso niega<br>golpes. No atacar durante un<br>tiempo determinado detendrá el efecto.
 ItemSkillHelp,1,item_ComboDBonus_Su_5,eso niega<br>golpes. No atacar durante un<br>tiempo determinado detendrá el efecto.
-ItemSkillHelp,1,item_ComboDBonus2_Su_1,Además del efecto<br>"Ceremonia duradera"<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes.
-ItemSkillHelp,1,item_ComboDBonus2_Su_2,Además del efecto<br>"Ceremonia duradera"<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes.
-ItemSkillHelp,1,item_ComboDBonus2_Su_3,Además del efecto<br>"Ceremonia duradera"<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes.
-ItemSkillHelp,1,item_ComboDBonus2_Su_4,Además del efecto<br>"Ceremonia duradera"<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes.
-ItemSkillHelp,1,item_ComboDBonus2_Su_5,Además del efecto<br>"Ceremonia duradera"<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes.
+ItemSkillHelp,1,item_ComboDBonus2_Su_1,"Además del efecto<br>""Ceremonia duradera""<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes."
+ItemSkillHelp,1,item_ComboDBonus2_Su_2,"Además del efecto<br>""Ceremonia duradera""<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes."
+ItemSkillHelp,1,item_ComboDBonus2_Su_3,"Además del efecto<br>""Ceremonia duradera""<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes."
+ItemSkillHelp,1,item_ComboDBonus2_Su_4,"Además del efecto<br>""Ceremonia duradera""<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes."
+ItemSkillHelp,1,item_ComboDBonus2_Su_5,"Además del efecto<br>""Ceremonia duradera""<br>, aumenta el daño -<br>efectos reductores basados<br>en el recuento de golpes."
 ItemSkillHelp,1,item_GearAATecBurst_1,"El efecto se pierde cuando<br>golpea con un TEC, pero aumenta la potencia de<br>TEC durante un tiempo determinado."
 ItemSkillHelp,1,item_GearAATecBurst_2,"El efecto se pierde cuando<br>golpea con un TEC, pero aumenta la potencia de<br>TEC durante un tiempo determinado."
 ItemSkillHelp,1,item_GearAATecBurst_3,"El efecto se pierde cuando<br>golpea con un TEC, pero aumenta la potencia de<br>TEC durante un tiempo determinado."
@@ -22490,7 +22490,7 @@ TechnicCustomizeExplanation,1,Light06_01,Para Prueba de Personalización de Téc
 TechnicCustomizeExplanation,1,Light07_01,Para Prueba de Personalización de Técnica:<br>Técnica de Luz 7 - Descripción de Personalización 1.<br>Línea 3.
 TechnicCustomizeExplanation,1,Dark01_01,Para prueba de personalización de técnicas:<br>Técnica oscura 1 - Descripción de personalización 1.<br>Línea 3.
 TechnicCustomizeExplanation,1,Dark02_01,Para prueba de personalización de técnicas:<br>Técnica oscura 2 - Descripción de personalización 1.<br>Línea 3.
-TechnicCustomizeExplanation,1,Dark03_01,"Mantiene una masa de fotones condensados en<br>tu vecindad durante un tiempo determinado."
+TechnicCustomizeExplanation,1,Dark03_01,Mantiene una masa de fotones condensados en<br>tu vecindad durante un tiempo determinado.
 TechnicCustomizeExplanation,1,Dark04_01,Para la prueba de personalización de técnicas:<br>Técnica oscura 4 - Descripción de personalización 1.<br>Línea 3.
 TechnicCustomizeExplanation,1,Dark05_01,Para la prueba de personalización de la técnica:<br>Técnica oscura 5 - Descripción de personalización 1.<br>Línea 3.
 TechnicCustomizeExplanation,1,Dark06_01,Para la prueba de personalización de técnicas:<br>Técnica oscura 6 - Descripción de personalización 1.<br>Línea 3.
@@ -23323,12 +23323,12 @@ PaCustomizeExplanation,1,WlancePA04_01,Agarra un objetivo y lo hace girar.<br>Ma
 PaCustomizeExplanation,1,WlancePA05_01,Descripción de Wired Lance Photon Art 4 / Custom 1
 PaCustomizeExplanation,1,WlancePA06_01,Descripción de Wired Lance Photon Art 6 / Custom 1
 PaCustomizeExplanation,1,WlancePA07_01,Descripción de Wired Lance Photon Art 7 / Custom 1
-PaCustomizeExplanation,1,WlancePA08_01,"Desata una serie de ataques combinados sin utilizar<br>el cable. Esta astuta y despiadada danza de la<br>muerte acaba rápidamente con el objetivo."
-PaCustomizeExplanation,1,WlancePA09_01,"Descripción del Arte de Fotones de Wired Lance 9 / Personalizado 1"
-PaCustomizeExplanation,1,WlancePA10_01,"Descripción del Arte de Fotones de Wired Lance 10 / Personalizado 1"
-PaCustomizeExplanation,1,WlancePA11_01,"Descripción del Arte de Fotones de Wired Lance 11 / Personalizado 1"
-PaCustomizeExplanation,1,PartisanPA01_01,"Descripción del Arte de Fotones de Partisan 1 / Personalizado 1"
-PaCustomizeExplanation,1,PartisanPA02_01,"Descripción del Arte de Fotones de Partisan 2 / Personalizado 1"
+PaCustomizeExplanation,1,WlancePA08_01,Desata una serie de ataques combinados sin utilizar<br>el cable. Esta astuta y despiadada danza de la<br>muerte acaba rápidamente con el objetivo.
+PaCustomizeExplanation,1,WlancePA09_01,Descripción del Arte de Fotones de Wired Lance 9 / Personalizado 1
+PaCustomizeExplanation,1,WlancePA10_01,Descripción del Arte de Fotones de Wired Lance 10 / Personalizado 1
+PaCustomizeExplanation,1,WlancePA11_01,Descripción del Arte de Fotones de Wired Lance 11 / Personalizado 1
+PaCustomizeExplanation,1,PartisanPA01_01,Descripción del Arte de Fotones de Partisan 1 / Personalizado 1
+PaCustomizeExplanation,1,PartisanPA02_01,Descripción del Arte de Fotones de Partisan 2 / Personalizado 1
 PaCustomizeExplanation,1,PartisanPA03_01,"Acércate rápidamente para golpear al objetivo con<br>la empuñadura del arma, luego lánzalo hacia lo<br>alto en el aire mientras está tambaleándose."
 PaCustomizeExplanation,1,PartisanPA04_01,Descripción de Partisan Photon Art 4 / Custom 1
 PaCustomizeExplanation,1,PartisanPA05_01,Descripción de Partisan Photon Art 5 / Custom 1
@@ -23398,7 +23398,7 @@ PaCustomizeExplanation,1,LauncherPA02_01,Lanzagranadas Photon Art 2 / Personaliz
 PaCustomizeExplanation,1,LauncherPA03_01,Lanzagranadas Photon Art 3 / Personalizado 1 descripción
 PaCustomizeExplanation,1,LauncherPA04_01,Lanzagranadas Photon Art 4 / Personalizado 1 descripción
 PaCustomizeExplanation,1,LauncherPA05_01,Descripción del Lanzagranadas Photon Art 5 / Personalizado 1
-PaCustomizeExplanation,1,LauncherPA06_01,"Mantener pulsado el botón te permite moverte en cualquier<br>dirección con un ataque de embestida. Pulsar el botón<br>repetidamente durante un tiempo limitado aumenta la potencia."
+PaCustomizeExplanation,1,LauncherPA06_01,Mantener pulsado el botón te permite moverte en cualquier<br>dirección con un ataque de embestida. Pulsar el botón<br>repetidamente durante un tiempo limitado aumenta la potencia.
 PaCustomizeExplanation,1,LauncherPA07_01,Lanzagranadas Photon Art 7 / Personalizado 1 descripción
 PaCustomizeExplanation,1,LauncherPA08_01,Lanzagranadas Photon Art 8 / Personalizado 1 descripción
 PaCustomizeExplanation,1,LauncherPA09_01,Lanzagranadas Photon Art 9 / Personalizado 1 descripción
@@ -23431,21 +23431,21 @@ PaCustomizeExplanation,1,CompoundBowPA02_01,Descripción de Bow Photon Art 2 / P
 PaCustomizeExplanation,1,CompoundBowPA03_01,Descripción de Bow Photon Art 3 / Personalizado 1
 PaCustomizeExplanation,1,CompoundBowPA04_01,Descripción de Bow Photon Art 4 / Personalizado 1
 PaCustomizeExplanation,1,CompoundBowPA05_01,Descripción de Bow Photon Art 5 / Personalizado 1
-PaCustomizeExplanation,1,CompoundBowPA06_01,"Dispara flechas especiales desde arriba que explotan al<br>impactar. Cargar aumentará la potencia y el alcance.<br>Presionar hacia adelante activará ataques de flecha."
-PaCustomizeExplanation,1,CompoundBowPA07_01,"Descripción del Arte de Fotones de Bow 7 / Personalizado 1"
-PaCustomizeExplanation,1,CompoundBowPA08_01,"Múltiples flechas. La carga aumentará<br>el número de ataques. Es posible moverse."
-PaCustomizeExplanation,1,CompoundBowPA09_01,"Descripción del Arte de Fotones de Bow 9 / Personalizado 1"
-PaCustomizeExplanation,1,CompoundBowPA10_01,"Descripción del Arte de Fotones de Bow 10 / Personalizado 1"
-PaCustomizeExplanation,1,CompoundBowPA11_01,"Descripción del Arte de Fotones de Bow 11 / Personalizado 1"
+PaCustomizeExplanation,1,CompoundBowPA06_01,Dispara flechas especiales desde arriba que explotan al<br>impactar. Cargar aumentará la potencia y el alcance.<br>Presionar hacia adelante activará ataques de flecha.
+PaCustomizeExplanation,1,CompoundBowPA07_01,Descripción del Arte de Fotones de Bow 7 / Personalizado 1
+PaCustomizeExplanation,1,CompoundBowPA08_01,Múltiples flechas. La carga aumentará<br>el número de ataques. Es posible moverse.
+PaCustomizeExplanation,1,CompoundBowPA09_01,Descripción del Arte de Fotones de Bow 9 / Personalizado 1
+PaCustomizeExplanation,1,CompoundBowPA10_01,Descripción del Arte de Fotones de Bow 10 / Personalizado 1
+PaCustomizeExplanation,1,CompoundBowPA11_01,Descripción del Arte de Fotones de Bow 11 / Personalizado 1
 PaCustomizeExplanation,1,JetBootsPA01_01,"Mantener pulsado el botón extiende el tiempo de ataque, y<br>se puede usar una patada giratoria como derivación.<br>La extensión del tiempo de ataque aumenta la potencia."
-PaCustomizeExplanation,1,JetBootsPA02_01,"Descripción del Arte de Fotones de Jet Boots 2 / Personalizado 1"
-PaCustomizeExplanation,1,JetBootsPA03_01,"Descripción del Arte de Fotones de Jet Boots 3 / Personalizado 1"
-PaCustomizeExplanation,1,JetBootsPA04_01,"Descripción del Arte de Fotones de Jet Boots 4 / Personalizado 1"
-PaCustomizeExplanation,1,DbladePA01_01,"Descripción del Arte de Fotones de Soaring Blades 1 / Personalizado 1"
-PaCustomizeExplanation,1,DbladePA02_01,"Descripción del Arte de Fotones de Soaring Blades 2 / Personalizado 1"
-PaCustomizeExplanation,1,DbladePA03_01,"Descripción del Arte de Fotones de Soaring Blades 3 / Personalizado 1"
-PaCustomizeExplanation,1,DbladePA04_01,"Descripción del Arte de Fotones de Soaring Blades 4 / Personalizado 1"
-PaCustomizeExplanation,1,DbladePA05_01,"Descripción del Arte de Fotones de Soaring Blades 5 / Personalizado 1"
+PaCustomizeExplanation,1,JetBootsPA02_01,Descripción del Arte de Fotones de Jet Boots 2 / Personalizado 1
+PaCustomizeExplanation,1,JetBootsPA03_01,Descripción del Arte de Fotones de Jet Boots 3 / Personalizado 1
+PaCustomizeExplanation,1,JetBootsPA04_01,Descripción del Arte de Fotones de Jet Boots 4 / Personalizado 1
+PaCustomizeExplanation,1,DbladePA01_01,Descripción del Arte de Fotones de Soaring Blades 1 / Personalizado 1
+PaCustomizeExplanation,1,DbladePA02_01,Descripción del Arte de Fotones de Soaring Blades 2 / Personalizado 1
+PaCustomizeExplanation,1,DbladePA03_01,Descripción del Arte de Fotones de Soaring Blades 3 / Personalizado 1
+PaCustomizeExplanation,1,DbladePA04_01,Descripción del Arte de Fotones de Soaring Blades 4 / Personalizado 1
+PaCustomizeExplanation,1,DbladePA05_01,Descripción del Arte de Fotones de Soaring Blades 5 / Personalizado 1
 PaCustomizeExplanation,1,DbladePA06_01,"Usa todo el enfoque para formar una espada de luz, luego desata<br>una danza vertiginosa de ataques junto con hojas<br>fotónicas, cortando múltiples objetivos en pedazos."
 PaCustomizeExplanation,1,DbladePA07_01,Descripción de Soaring Blades Photon Art 7 / Custom 1
 PaCustomizeExplanation,1,SwordPA01_02,Descripción de Sword Photon Art 1 / Personalizado 2
@@ -24876,20 +24876,20 @@ Boost,1,Boost_Before,Anterior
 Boost,1,Boost_After,Próximo
 Boost,1,Boost_Yes,Sí
 Boost,1,Boost_No,No
-Boost,1,Boost_Message,"Esto sobrescribirá tu potenciador actual.<br>La duración del efecto será reemplazada<br>por la del nuevo objeto. ¿Estás seguro de que deseas continuar?"
-Boost,1,Boost_Message1,"Ya estás utilizando otro potenciador con el mismo efecto.<br>¿Estás seguro de que deseas actualizar el nombre del potenciador mostrado y extender la duración del efecto?<br><yellow>Nota: No se puede utilizar si la duración del efecto excede el límite máximo.<c>"
-Boost,1,Boost_Percent,"Efecto %"
+Boost,1,Boost_Message,Esto sobrescribirá tu potenciador actual.<br>La duración del efecto será reemplazada<br>por la del nuevo objeto. ¿Estás seguro de que deseas continuar?
+Boost,1,Boost_Message1,Ya estás utilizando otro potenciador con el mismo efecto.<br>¿Estás seguro de que deseas actualizar el nombre del potenciador mostrado y extender la duración del efecto?<br><yellow>Nota: No se puede utilizar si la duración del efecto excede el límite máximo.<c>
+Boost,1,Boost_Percent,Efecto %
 Boost,1,Boost_Time,Duración del efecto
 Boost,1,Boost_Experience,Multiplicador de EXP ganado
 Boost,1,Boost_MesetaDrop,Multiplicador de Meseta obtenido
 Boost,1,Boost_RareDrop,Multiplicador de caída poco común
 Boost,1,KisekiBoost_Message_EffectName,Recuento de caídas adicionales
 Boost,1,EventBoost_Title,CONFIRMAR USO DEL ARTÍCULO
-Boost,1,EventBoost_Message_Change,"Esto sobrescribirá tu potenciador actual.<br>Tu multiplicador existente y la duración del efecto<br>serán reemplazados por los del nuevo objeto.<br>¿Estás seguro de que deseas continuar?"
+Boost,1,EventBoost_Message_Change,Esto sobrescribirá tu potenciador actual.<br>Tu multiplicador existente y la duración del efecto<br>serán reemplazados por los del nuevo objeto.<br>¿Estás seguro de que deseas continuar?
 Boost,1,EventBoost_Message_Plus,"Estás a punto de usar un potenciador.<br>Al hacerlo, aumentarás tu multiplicador<br>y la duración del efecto como se muestra a continuación.<br>¿Estás seguro de que deseas continuar?"
-Boost,1,KisekiBoost_Message_Plus,"Estás a punto de utilizar un potenciador.<br>¿Estás seguro de que deseas continuar?"
-Boost,1,EventBoost_Message_Alert,"Esto sobrescribirá los efectos de tu potenciador actualmente activo.<br>¿Estás seguro de que deseas continuar?"
-Boost,1,KisekiBoost_Message_Change,"Esto sobrescribirá tu potenciador actual.<br>La duración del efecto será reemplazada por la del nuevo objeto.<br>¿Estás seguro de que deseas continuar?"
+Boost,1,KisekiBoost_Message_Plus,Estás a punto de utilizar un potenciador.<br>¿Estás seguro de que deseas continuar?
+Boost,1,EventBoost_Message_Alert,Esto sobrescribirá los efectos de tu potenciador actualmente activo.<br>¿Estás seguro de que deseas continuar?
+Boost,1,KisekiBoost_Message_Change,Esto sobrescribirá tu potenciador actual.<br>La duración del efecto será reemplazada por la del nuevo objeto.<br>¿Estás seguro de que deseas continuar?
 UserShopRecommendations,0,RecommendTitle,売れ筋商品から購入
 UserShopRecommendations,0,RecommendRank,順位
 UserShopRecommendations,0,RecommendItemState,アイテム情報
@@ -25104,7 +25104,7 @@ LaboElementCompose,1,ConfirmationNum3,Cápsula de aumento para consumir
 LaboElementCompose,1,ConfirmationNum4,Contar
 LaboElementCompose,1,ConfirmationNum5,Categoría $(0)
 LaboElementCompose,1,AttentionMessage,Ya se ha añadido un aumento con el mismo efecto.
-LaboElementCompose,1,ConfirmationAttentionMessage,"¿Deseas continuar?<br><br><br>- Rareza 4+<br>- En el nivel máximo de mejora"
+LaboElementCompose,1,ConfirmationAttentionMessage,¿Deseas continuar?<br><br><br>- Rareza 4+<br>- En el nivel máximo de mejora
 LaboElementCompose,1,ConfirmationAbilityDisappearMessage,>
 LaboElementSupplement,0,Explanation1,特殊能力を付与したい武器、または防具を選んでください。
 LaboElementSupplement,0,Explanation2,特殊能力カプセルを選んでください。選んだ特殊能力カプセルは、<scarlet>付与後に消滅<c>します。
@@ -25951,11 +25951,11 @@ LaboPorting,0,Message_Confirm1,プリセット能力が“ベースアイテム�
 LaboPorting,0,Message_Attention1,選択したプリセット能力は、<br>元のプリセット能力より<scarlet>レベルが低く<c>なります。<br><br>このまま実行してもよろしいですか？
 LaboPorting,0,Message_Finish,$(0)の移植が完了しました。
 LaboPorting,0,ComposeStart_Button,能力移植開始
-LaboPorting,1,Explanation1,"Seleccione el arma o armadura a la que desea realizar la transferencia (que recibirá la Habilidad Preestablecida)."
-LaboPorting,1,Explanation2,"Seleccione el arma o armadura desde la cual desea realizar la transferencia (que enviará la Habilidad Preestablecida). El objeto seleccionado <scarlet>será consumido una vez finalizado el proceso<c>."
-LaboPorting,1,Explanation3,"Seleccione las habilidades preestablecidas que desea transferir. Las habilidades no seleccionadas serán <scarlet>destruidas después de su uso<c>."
-LaboPorting,1,Explanation4,"Confirme sus habilidades preestablecidas cuidadosamente y seleccione [Sí] cuando esté listo."
-LaboPorting,1,Large_Title1,"Selección de objeto base"
+LaboPorting,1,Explanation1,Seleccione el arma o armadura a la que desea realizar la transferencia (que recibirá la Habilidad Preestablecida).
+LaboPorting,1,Explanation2,Seleccione el arma o armadura desde la cual desea realizar la transferencia (que enviará la Habilidad Preestablecida). El objeto seleccionado <scarlet>será consumido una vez finalizado el proceso<c>.
+LaboPorting,1,Explanation3,Seleccione las habilidades preestablecidas que desea transferir. Las habilidades no seleccionadas serán <scarlet>destruidas después de su uso<c>.
+LaboPorting,1,Explanation4,Confirme sus habilidades preestablecidas cuidadosamente y seleccione [Sí] cuando esté listo.
+LaboPorting,1,Large_Title1,Selección de objeto base
 LaboPorting,1,Large_Title2,Selección de elementos materiales
 LaboPorting,1,Large_Title3,Seleccionar habilidad preestablecida
 LaboPorting,1,Large_Title4,Confirmar habilidades preestablecidas para transferir
@@ -26160,7 +26160,7 @@ LaboPresetGrant,1,Small_Title2,Conservadores de artículos
 LaboPresetGrant,1,Message_Confirm1,usando<yellow>Artículos de soporte <c>.
 LaboPresetGrant,1,Message_Attention1,"<yellow>El nivel de Habilidad Preestablecida del objeto que has seleccionado es alto<c>,<br>sin embargo, se añadirá una habilidad de Nivel 1.<br><br>¿Estás seguro de que deseas continuar?<br><yellow>Nota: Se recomienda usar un objeto sin Habilidad Preestablecida asignada.<c>"
 LaboPresetGrant,1,Message_Attention2,"<yellow>El nivel de Habilidad Preestablecida del objeto que has seleccionado es alto<c>,<br>sin embargo, se añadirá una habilidad de Nivel 1.<br><br>¿Estás seguro de que deseas continuar?<br><yellow>Nota: Se recomienda usar un objeto sin Habilidad Preestablecida asignada.<c>"
-LaboPresetGrant,1,Message_Finish,"Adición de habilidades preestablecidas completada."
+LaboPresetGrant,1,Message_Finish,Adición de habilidades preestablecidas completada.
 LaboPresetGrant,1,Result_Title,Resultado de adición de habilidad preestablecida
 LaboPresetGrant,1,Message_Finish_Success,Adición de habilidad preestablecida<green>exitosa <c>.
 LaboPresetGrant,1,Message_Finish_Failure,La adición de habilidades preestablecidas<scarlet>falló <c>.
@@ -26213,7 +26213,7 @@ LaboElementPorting,1,Message_Attention1,inferior a<c>que el artículo base.<br>�
 LaboElementPorting,1,Message_Attention2,The total Augment number of the item you've selected is <scarlet>lower<c> than the Base Item.<br>Are you sure you wish to proceed?
 LaboElementPorting,1,Message_PassConsumption,Este artículo requiere un<red>Pase de transferencia N-Augment <c>.<br><br> ¿Está seguro de que desea continuar?
 LaboElementPorting,1,Message_Finish,Los aumentos han sido transferidos.
-LaboElementPorting,1,Explanation1,"Seleccione el arma o unidad base (la que recibirá el nivel de mejora)."
+LaboElementPorting,1,Explanation1,Seleccione el arma o unidad base (la que recibirá el nivel de mejora).
 LaboElementEXPorting,0,Explanation2,移植する（EX特殊能力を渡す）武器、または防具を選んでください。選んだアイテムは、<scarlet>実行後にEX特殊能力が消滅<c>します。
 LaboElementEXPorting,0,Explanation3,EX特殊能力の移植の最終確認です。内容をよく確認して、問題なければ“はい”を選んでください。
 LaboElementEXPorting,0,Large_Title1,ベースアイテム選択
@@ -26249,7 +26249,7 @@ LaboElementEXPorting,1,Small_Title2,<yellow> $(0) <c>
 LaboElementEXPorting,1,Small_Title3,<yellow> - <c>
 LaboElementEXPorting,1,Message_DisableItem1,No se puede seleccionar porque los Aumentos que se transferirán son los mismos.
 LaboElementEXPorting,1,Message_PassConsumption,Este artículo requiere un<red>Pase de transferencia N-Augment <c>.<br><br> ¿Está seguro de que desea continuar?
-LaboElementEXPorting,1,Message_Confirm1,"Este objeto requiere un <red>N-Augment Transfer Pass<c>.<br><br>¿Estás seguro de que deseas continuar?"
+LaboElementEXPorting,1,Message_Confirm1,Este objeto requiere un <red>N-Augment Transfer Pass<c>.<br><br>¿Estás seguro de que deseas continuar?
 LaboElementEXPorting,1,Message_Confirm2,ts.
 LaboElementEXPorting,1,Message_Finish,Los aumentos EX han sido transferidos.
 LaboElementEXPorting,1,Message_Error_Unsupported,Este artículo no es compatible con la transferencia de aumento EX.
@@ -26359,7 +26359,7 @@ LaboRingGrind,1,RingGrindFullSizeGuide_SelectBase,Selecciona el anillo de habili
 LaboRingGrind,1,RingGrindFullSizeGuide_SelectMaterial,Selecciona los anillos de habilidad para usarlos como materiales. Estos anillos de habilidad se consumirán<scarlet><c> después de la mejora.
 LaboRingGrind,1,RingGrindFullSizeGuide_Confirm,Confirme su mejora de Skill Ring con cuidado y seleccione [Sí] cuando esté listo.
 LaboRingGrind,1,RingGrindBase_NoRing_Message,Sin anillos de habilidad
-LaboRingGrind,1,Title_Need_MesetaAndItem,"Meseta y objetos necesarios"
+LaboRingGrind,1,Title_Need_MesetaAndItem,Meseta y objetos necesarios
 LaboCustomDetail,0,Title_Need_Item,必要アイテム
 LaboCustomDetail,0,Title_Need_Meseta,必要メセタ
 LaboCustomDetail,0,Title_SelectiveItem,所持中の素材アイテム
