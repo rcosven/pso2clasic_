@@ -302,10 +302,10 @@
         </div>
         <div class="sidebar-footer">
             <div style="margin-bottom: 10px; font-size: 12px; color: #8b949e; line-height: 1.4;">
-                No necesitas cuenta de GitHub. Escribe un nick y envía tu sugerencia; un contribuidor la revisará y hará merge.
+                No necesitas cuenta de GitHub. El nick es opcional; si lo dejas vacío se enviará como anónimo. Un contribuidor revisará y hará merge.
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="input-nickname" placeholder="Tu nick (requerido para créditos)" maxlength="40" required
+                <input type="text" id="input-nickname" placeholder="Tu nick (opcional, para créditos)" maxlength="40"
                        style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #30363d; background-color: #0d1117; color: #c9d1d9;">
             </div>
             <button class="btn btn-primary" id="btn-github" disabled title="Crea una solicitud de cambio anónima para revisión">
@@ -583,12 +583,10 @@
 
             const nickInput = document.getElementById('input-nickname');
             const nickname = nickInput ? nickInput.value.trim() : "";
-            if (!nickname || nickname.length < 2) {
-                showNotification("❌", "Escribe un nick (mín. 2 caracteres). No necesitas cuenta de GitHub.");
-                if (nickInput) nickInput.focus();
-                return;
+            // Nick opcional: sin nick se envía como anónimo
+            if (nickname) {
+                try { localStorage.setItem('pso2_translator_nick', nickname); } catch (e) { /* ignore */ }
             }
-            try { localStorage.setItem('pso2_translator_nick', nickname); } catch (e) { /* ignore */ }
 
             btnGithubEl.classList.add('loading');
 
@@ -602,12 +600,13 @@
                 const data = await response.json();
 
                 if (response.ok && data.url) {
+                    const displayName = (data.author || nickname || "Anónimo").replace(/</g, '&lt;');
                     showNotification("✅", "Sugerencia enviada");
                     editorArea.innerHTML = `
                         <div style="text-align:center; padding: 40px;">
                             <h2 style="color: #2ea043; margin-bottom: 20px;">¡Sugerencia enviada!</h2>
                             <p style="color: #c9d1d9; margin-bottom: 12px;">
-                                Se creó una solicitud de cambio a nombre de <strong>${nickname.replace(/</g, '&lt;')}</strong> (sin cuenta GitHub).
+                                Se creó una solicitud de cambio a nombre de <strong>${displayName}</strong> (sin cuenta GitHub).
                             </p>
                             <p style="color: #8b949e; margin-bottom: 20px; font-size: 14px;">
                                 Un contribuidor del proyecto la revisará y, si está bien, hará el merge. Tú no necesitas aprobar nada en GitHub.

@@ -486,7 +486,8 @@ async def web_api_save(request):
 async def web_api_github(request):
     """
     Crea un PR anónimo en nombre del proyecto (GITHUB_TOKEN del bot).
-    El editor NO necesita cuenta de GitHub: solo un nick para créditos.
+    El editor NO necesita cuenta de GitHub. El nick es opcional (créditos);
+    si no se envía, se atribuye como Anónimo.
     Solo contribuidores con Write en el repo pueden hacer merge de main.
     """
     try:
@@ -498,22 +499,21 @@ async def web_api_github(request):
         if not filename:
             return web.json_response({"error": "Falta el archivo a enviar."}, status=400)
 
-        # Nick obligatorio para poder atribuir la sugerencia anónima
-        if len(nickname) < 2:
-            return web.json_response({
-                "error": "Escribe un nick (mínimo 2 caracteres). No necesitas cuenta de GitHub."
-            }, status=400)
-
-        # Sanitizar nick (evitar basura en títulos de PR)
-        nickname_safe = "".join(
-            c for c in nickname if c.isalnum() or c in " ._-"
-        ).strip()[:40]
-        if len(nickname_safe) < 2:
-            return web.json_response({
-                "error": "El nick solo puede usar letras, números, espacios, . _ -"
-            }, status=400)
-
-        autor_pr = f"Anonimo: {nickname_safe}"
+        # Nick opcional: sanitizar si hay; si no, Anónimo
+        if nickname:
+            nickname_safe = "".join(
+                c for c in nickname if c.isalnum() or c in " ._-"
+            ).strip()[:40]
+            if not nickname_safe:
+                return web.json_response({
+                    "error": "El nick solo puede usar letras, números, espacios, . _ - (o déjalo vacío para anónimo)."
+                }, status=400)
+            autor_pr = f"Anonimo: {nickname_safe}"
+            author_display = nickname_safe
+        else:
+            nickname_safe = "Anónimo"
+            autor_pr = "Anonimo"
+            author_display = "Anónimo"
 
         pr_url, error = crear_pull_request_traduccion(
             ruta_archivo_local=filename,
@@ -534,14 +534,14 @@ async def web_api_github(request):
             if channel:
                 await channel.send(
                     f"🚀 **¡Nueva sugerencia anónima (sin cuenta GitHub)!**\n"
-                    f"**Autor (nick):** `{nickname_safe}`\n"
+                    f"**Autor (nick):** `{author_display}`\n"
                     f"**Archivo:** `{filename}`\n"
                     f"**Solo contribuidores pueden hacer merge:** {pr_url}"
                 )
         except Exception as e:
             print(f"Error al enviar notificación de Discord: {e}")
 
-        return web.json_response({"success": True, "url": pr_url, "author": nickname_safe})
+        return web.json_response({"success": True, "url": pr_url, "author": author_display})
     except Exception as e:
         return web.json_response({"error": str(e)}, status=500)
 
