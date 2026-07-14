@@ -246,15 +246,18 @@ def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: st
     if res.status_code not in [200, 201]:
         return None, f"Error al actualizar archivo en GitHub: {res.text}"
 
-    # 6. Crear el Pull Request
+    # 6. Crear el Pull Request (cuenta del bot/token; el traductor no necesita GitHub)
     payload_pr = {
-        "title": f"📝 Sugerencia de traducción: {row_id} por @{usuario_discord}",
+        "title": f"📝 Sugerencia: {row_id} por {usuario_discord}",
         "head": nombre_rama,
         "base": GITHUB_BASE_BRANCH,
         "body": (
-            f"El usuario de Discord **@{usuario_discord}** ha sugerido una traducción para el ID `{row_id}` "
-            f"en el archivo `{ruta_archivo_repo}`.\n\n"
-            f"Por favor, revisa los cambios antes de fusionar."
+            f"## Sugerencia de traducción (sin cuenta GitHub del autor)\n\n"
+            f"- **Autor (nick):** `{usuario_discord}`\n"
+            f"- **ID / lote:** `{row_id}`\n"
+            f"- **Archivo:** `{ruta_archivo_repo}`\n\n"
+            f"Esta PR la abrió el bot del proyecto de forma anónima para el editor. "
+            f"**Solo contribuidores del repositorio deben hacer merge** tras revisar los cambios.\n"
         )
     }
     res = requests.post(f"{base_url}/pulls", headers=headers_api, json=payload_pr)
@@ -481,36 +484,64 @@ async def web_api_save(request):
         return web.json_response({"error": str(e)}, status=500)
 
 async def web_api_github(request):
+    """
+    Crea un PR anónimo en nombre del proyecto (GITHUB_TOKEN del bot).
+    El editor NO necesita cuenta de GitHub: solo un nick para créditos.
+    Solo contribuidores con Write en el repo pueden hacer merge de main.
+    """
     try:
         data = await request.json()
         filename = data.get('file')
-        nickname = data.get('nickname', '').strip()
+        nickname = (data.get('nickname') or '').strip()
         bot = request.app['bot']
-        
-        autor_pr = f"Web: {nickname}" if nickname else "TraductorWeb"
-        
+
+        if not filename:
+            return web.json_response({"error": "Falta el archivo a enviar."}, status=400)
+
+        # Nick obligatorio para poder atribuir la sugerencia anónima
+        if len(nickname) < 2:
+            return web.json_response({
+                "error": "Escribe un nick (mínimo 2 caracteres). No necesitas cuenta de GitHub."
+            }, status=400)
+
+        # Sanitizar nick (evitar basura en títulos de PR)
+        nickname_safe = "".join(
+            c for c in nickname if c.isalnum() or c in " ._-"
+        ).strip()[:40]
+        if len(nickname_safe) < 2:
+            return web.json_response({
+                "error": "El nick solo puede usar letras, números, espacios, . _ -"
+            }, status=400)
+
+        autor_pr = f"Anonimo: {nickname_safe}"
+
         pr_url, error = crear_pull_request_traduccion(
             ruta_archivo_local=filename,
             ruta_archivo_repo=filename,
             row_id="WebUpdate",
             usuario_discord=autor_pr
         )
-        
+
         if error:
             return web.json_response({"error": error}, status=500)
-            
+
         if filename in bot.modified_files:
             bot.modified_files.remove(filename)
-            
+
         # Notificar en Discord al canal 1525352131111026709
         try:
             channel = bot.get_channel(1525352131111026709)
             if channel:
-                await channel.send(f"🚀 **¡Nuevo Pull Request desde la Web!**\n**Autor:** `{autor_pr}`\n**Archivo modificado:** `{filename}`\n**Revisar y hacer Merge:** {pr_url}")
+                await channel.send(
+                    f"🚀 **¡Nueva sugerencia anónima (sin cuenta GitHub)!**\n"
+                    f"**Autor (nick):** `{nickname_safe}`\n"
+                    f"**Archivo:** `{filename}`\n"
+                    f"**Solo contribuidores pueden hacer merge:** {pr_url}"
+                )
         except Exception as e:
             print(f"Error al enviar notificación de Discord: {e}")
-            
-        return web.json_response({"success": True, "url": pr_url})
+
+        return web.json_response({"success": True, "url": pr_url, "author": nickname_safe})
     except Exception as e:
         return web.json_response({"error": str(e)}, status=500)
 
