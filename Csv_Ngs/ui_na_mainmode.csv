@@ -1,12 +1,12 @@
-section,group,id,text
+﻿section,group,id,text
 Block,0,BlockForm_NotOnlyBlock_Exp,XBox Live専用ブロックから移動します。<br>専用ブロックから移動をすると<br>他のプラットフォームのプレイヤーとも<br>パーティーを組むなどコミュニケーションが<br>可能になります。<br><br>移動してもよろしいですか？
 Block,0,BlockForm_Move_VoiceChatPriority,えてしまいます。<br><br><yellow>ボイスチャット推奨ブロック<c>に移動しますか？<br><yellow>※ボイスチャットを使用したパーティプレイ推奨の<br>　ブロックです。<c>
 Block,0,BlockForm_Name_VoiceChatPriority,ボイスチャット推奨
-Block,1,BlockForm_NotOnlyBlock_Exp,琀漀 昀漀爀洀 瀀愀爀琀椀攀猀 愀渀搀 挀漀洀洀甀渀椀挀愀琀攀 㰀戀爀㸀眀椀琀栀 瀀氀愀礀攀爀猀 漀渀 漀琀栀攀爀 瀀氀愀琀昀漀爀洀猀⸀㰀戀爀㸀㰀戀爀㸀䄀爀攀 礀漀甀 猀甀爀攀 礀漀甀 眀椀猀栀 琀漀 瀀爀漀挀攀攀搀㼀
-Block,1,BlockForm_Move_VoiceChatPriority,眀椀琀栀 瘀漀椀挀攀 挀栀愀琀 椀猀 爀攀挀漀洀洀攀渀搀攀搀 漀渀 琀栀椀猀 戀氀漀挀欀⸀㰀挀㸀
+Block,1,BlockForm_NotOnlyBlock_Exp,"Estás a punto de salir de un bloqueo exclusivo de Xbox Live.<br>Al salir de este bloqueo exclusivo, <br>podrás formar grupos y comunicarte con jugadores de otras plataformas.<br><br>¿Estás seguro de que deseas continuar?"
+Block,1,BlockForm_Move_VoiceChatPriority,"Al cambiar a otro bloque, abandonarás tu grupo actual <br>y se cancelarán todas las misiones que hayas aceptado.<br><br>Además, si has aceptado alguna misión, <br>perderás cualquier progreso o recompensa obtenible durante dichas misiones.<br><br>¿Deseas cambiar a un bloque <yellow>centrado en el chat de voz<c>?<br><yellow>En este bloque se recomienda jugar en grupo utilizando el chat de voz.<c>"
 Block,1,BlockForm_Name_VoiceChatPriority,Centrado en el chat de voz
 BlockhelpMessage,0,Block_help_Message_1001,ボイスチャットをしながら遊びたい方が<br>パーティーを組みやすくするためのブロックです。<br>※複数ブロックマッチングは同名ブロック限定
-BlockhelpMessage,1,Block_help_Message_1001,琀⸀㰀戀爀㸀一漀琀攀㨀 䴀甀氀琀椀ⴀ戀氀漀挀欀 洀愀琀挀栀洀愀欀椀渀最 椀猀 氀椀洀椀琀攀搀 琀漀 戀氀漀挀欀猀 㰀戀爀㸀漀昀 琀栀攀 猀愀洀攀 渀愀洀攀⸀
+BlockhelpMessage,1,Block_help_Message_1001,Este bloque está diseñado para ayudar <br>a los jugadores que desean formar grupos <br>y usar el chat de voz.<br>Nota: El emparejamiento entre varios bloques <br>está limitado a bloques con el mismo nombre.
 Dailyshop,0,Dailyshop_Menu,おすすめショップ<pict Arcscash><pict StarGem>
 Dailyshop,0,Dailyshop_Title,おすすめショップ
 Dailyshop,0,Dailyshop_Help,<c f0df60>購入するアイテムを選択してください。<c>
@@ -360,7 +360,7 @@ FriendList,1,FriendList_TabGroupChatOnline,Amigos en línea
 FriendList,1,FriendList_TabGroupChatOffline,Amigos sin conexión
 FriendList,1,FriendList_TabGroupChatInviting,amigos invitados
 FriendList,1,Gamertag_title,Ver tarjeta de jugador
-FriendList,1,Gamertag_FriendInviteSend,漀甀 㰀戀爀㸀洀甀猀琀 猀攀渀搀 愀 爀攀焀甀攀猀琀 昀爀漀洀 琀栀攀椀爀 䜀愀洀攀爀䌀愀爀搀⸀㰀戀爀㸀嘀椀攀眀 䜀愀洀攀爀䌀愀爀搀㼀
+FriendList,1,Gamertag_FriendInviteSend,"Solicitud de amistad enviada.<br>Para agregar a este usuario como amigo en Xbox Live,<br>debes enviar una solicitud desde su GamerCard.<br>¿Ver GamerCard?"
 FriendList,1,Gamertag_FrindRemove,"Amigo eliminado.<br>Para eliminar a este usuario como amigo en Xbox Live,<br>debes hacerlo desde su GamerCard.<br>¿Ver GamerCard?"
 FriendList,1,Gamertag_BlackListInviteSend,"Usuario bloqueado.<br>Para bloquear a este usuario en Xbox Live,<br>debes hacerlo desde su GamerCard.<br>¿Ver GamerCard?"
 FriendList,1,Gamertag_BlackListRemove,䰀椀瘀攀Ⰰ 㰀戀爀㸀礀漀甀 洀甀猀琀 搀漀 猀漀 昀爀漀洀 琀栀攀椀爀 䜀愀洀攀爀䌀愀爀搀⸀㰀戀爀㸀嘀椀攀眀 䜀愀洀攀爀䌀愀爀搀㼀
@@ -607,7 +607,7 @@ EveryMP,1,MP_RewardList_Issue,Recibiste las siguientes recompensas.
 EveryMP,1,MP_RewardList_Close,cerca
 EveryMP,1,Title,DETALLES DEL ARTÍCULO
 EveryMP,1,Bulk_receipt_Title,Reciba todas las recompensas de los niveles desbloqueados
-EveryMP,1,Bulk_receipt_Message,攀 爀攀眀愀爀搀猀 漀渀氀礀 漀渀挀攀 瀀攀爀 愀挀挀漀甀渀琀⸀
+EveryMP,1,Bulk_receipt_Message,"Recibirás todas las recompensas correspondientes al progreso de tu Nivel.<br>¿Deseas continuar?<br><br><yellow>Las recompensas selectivas del Nivel no están incluidas.<c><br><br><yellow>También puedes recibir las recompensas Gold utilizando un ""N-Mission Pass Gold"" o mientras el ""Premium Set"" esté activo.<c><br><br>Las recompensas solo pueden reclamarse una vez por cuenta."
 MainMenu,0,MainMenu_EveryMP,ミッションパス
 MainMenu,0,StatusLabel_EveryMp_Title,簡易ミッションパス情報
 MainMenu,0,MissionPassOpen,<%Exception>でミッションパスへ
