@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 ShopCommon,0,MesetaDenomination,<pict reb_meseta>メセタ
 ShopCommon,0,AcDenomination,AC
 ShopCommon,0,CpDenomination,CP
@@ -184,10 +184,10 @@ BlackMarket,1,MenuMeseta,Comprar con meseta
 BlackMarket,1,MenuEnd,Salir de la tienda
 BlackMarket,1,SgShopTitle,COMPRAR CON GEMAS ESTRELLA
 BlackMarket,1,SgShopGuide,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,SgShopGuide_v,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
+BlackMarket,1,SgShopGuide_v,<c f0df60>Selecciona los objetos que deseas comprar. Usa [Actualizar lista manualmente<c><pict StarGem><c f0df60>] para actualizar la lista de productos inmediatamente.<c>
 BlackMarket,1,MesetaShopTitle,COMPRAR CON MESETA
-BlackMarket,1,MesetaShopGuide,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
-BlackMarket,1,MesetaShopGuide_v,琀㰀挀㸀㰀瀀椀挀琀 匀琀愀爀䜀攀洀㸀㰀挀 昀　搀昀㘀　㸀崀 琀漀 爀攀昀爀攀猀栀 琀栀攀 瀀爀漀搀甀挀琀 氀椀猀琀 椀洀洀攀搀椀愀琀攀氀礀⸀㰀挀㸀
+BlackMarket,1,MesetaShopGuide,<c f0df60>Selecciona los objetos que deseas comprar. Usa [Actualizar lista manualmente<c><pict StarGem><c f0df60>] para actualizar la lista de productos inmediatamente.<c>
+BlackMarket,1,MesetaShopGuide_v,<c f0df60>Selecciona los objetos que deseas comprar. Usa [Actualizar lista manualmente<c><pict StarGem><c f0df60>] para actualizar la lista de productos inmediatamente.<c>
 BlackMarket,1,ShopListTitle,LISTA DE PRODUCTOS
 BlackMarket,1,ShopListResetTime,Próxima actualización: $(0)
 BlackMarket,1,ShopListReset_N_Time,$(0) hasta la próxima actualización
@@ -199,8 +199,8 @@ BlackMarket,1,ShopListResetButton_N_SG,Actualizar producto<pict 4space><pict Sta
 BlackMarket,1,ShopListResetTime_wait,Adquirir información
 BlackMarket,1,RenewConfirmTitle,ACTUALIZAR LISTA MANUALMENTE
 BlackMarket,1,RenewConfirmTitle_N,Actualizar producto
-BlackMarket,1,RenewConfirmMessage,⠀夀漀甀爀 匀䜀㨀 ␀⠀㄀⤀⤀
-BlackMarket,1,RenewConfirmMessage_N_Free,渀最㨀 㰀礀攀氀氀漀眀㸀␀⠀　⤀㰀挀㸀
+BlackMarket,1,RenewConfirmMessage,"<pict StarGem><c 1dedd7>Se requiere pago de SG<c><br><br>Puedes comprar $(0) y actualizar inmediatamente la lista de productos.<br>¿Continuar a la pantalla de confirmación de compra?<br><br><yellow>Nota: La selección de productos es aleatoria, <br>por lo que pueden seleccionarse los mismos productos.<c><br>(Tus SG: $(1))"
+BlackMarket,1,RenewConfirmMessage_N_Free,"Actualiza ahora gratis la lista de productos de $(1). ¿Actualizar?<br><br><yellow>La lista de productos se genera aleatoriamente, por lo que pueden aparecer algunos de los mismos productos. Puedes actualizarla gratis una vez al día. Un Set Premium permite realizar una actualización adicional.<c><br><br>Actualizaciones manuales gratuitas restantes: <yellow>$(0)<c>"
 BlackMarket,1,RenewConfirmMessage_N_Premium,:<yellow>$(0) <c>
 BlackMarket,1,RenewBuyTitle,ACTUALIZAR LISTA MANUALMENTE
 BlackMarket,1,RenewBuyMessage,las compras se reinician todos los días a las<utc>20:00 </utc>.<br>(Su SG: $(2)).
@@ -280,7 +280,7 @@ PokaShop,0,MenuErrorTitle,メッセージ
 PokaShop,0,MenuErrorMessage,「BC交換ショップ」選択エラーメッセージ
 PokaShop,1,ShopTitleText,TIENDA DE INTERCAMBIO DE MONEDAS DE BATALLA
 PokaShop,1,NormalShopGuideText,<c f0df60> Puedes consumir Battle Coins para intercambiar artículos. Selecciona los artículos que deseas intercambiar. <c>
-PokaShop,1,LimitedShopGuideText,欀 椀猀 挀愀瀀瀀攀搀⸀ 吀栀攀 挀愀瀀 椀猀 爀攀猀攀琀 攀瘀攀爀礀 㰀甀琀挀搀漀眀㸀圀攀搀渀攀猀搀愀礀 愀琀 㠀㨀　　㰀⼀甀琀挀搀漀眀㸀⤀ ⸀㰀挀㸀
+PokaShop,1,LimitedShopGuideText,<c f0df60>Selecciona el objeto que deseas intercambiar. (La cantidad de objetos que se pueden intercambiar cada semana tiene un límite. El límite se restablece cada <utcdow>miércoles a las 8:00</utcdow>).<c>
 PokaShop,1,ShopListTitle,MENÚ DE LA TIENDA
 PokaShop,1,PluralityMenuGuide,<c f0df60> Selecciona una tienda. <c>
 PokaShop,1,Exit,Salir de la tienda
