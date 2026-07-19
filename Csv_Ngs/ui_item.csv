@@ -57,10 +57,10 @@ TicketMain,1,ChangeCheckVita,Realizará un cambio por los artículos seleccionad
 TicketMain,1,MenuGuideVita,Información de intercambio
 TicketMain,1,TitleVita,LISTA DE PRODUCTOS
 TicketMain,1,ItemNum,($(0))
-TicketMain,1,SelectItemVita,Seleccione la cantidad a cambiar
+TicketMain,1,SelectItemVita,Seleccione la Cantidad a Intercambiar
 TicketMain,1,SelectItemInputVita,Ingrese la cantidad deseada.
 TicketMain,1,PluralityMenuGuide,<c f0df60> Selecciona una tienda. <c>
-TicketMain,1,Warehouse,Almacenamiento abierto
+TicketMain,1,Warehouse,Abrir Almacenamiento
 TicketMain,1,MenuTitleCq01,RETO CANJE MILLAS TIENDA 1
 TicketMain,1,MenuTitleCq02,RETO TIENDA CANJE MILLAS 2
 TicketMain,1,MenuTitle_jene,TIENDA DE CAMBIO POR TIEMPO LIMITADO (HASTA LAS 11:00 A.M. DEL 7 DE JUNIO DE 2017)
@@ -4540,7 +4540,7 @@ LaboTrace,1,TraceCheckSubTitle1,TRANSMUTACIÓN DE ARMAS
 LaboTrace,1,TraceCheckSubTitle2,ARTÍCULOS REQUERIDOS
 LaboTrace,1,TraceCheckSubTitle3,ARTÍCULOS DE CAMBIO DE TRANSMUTACIÓN DE ARMAS
 LaboTrace,1,ItemTraceCheckTitle,CONFIRMACIÓN DEL CAMBIO DE TRANSMUTACIÓN DE ARMAS
-LaboTrace,1,ItemTraceMessage,"Weapon appearance is about to be changed.<br>Are you sure you wish to proceed?<br><br>* The item's performance will not be changed.<br>* If the base item's photon color has been<br>changed, restoring the item to its original appearance<br>will change the photon color to default.<br>* When changing the appearance, both the<br>base item and item used for its appearance<br>will no longer be selectable for trading or at your Personal Shop."
+LaboTrace,1,ItemTraceMessage,"La apariencia del Arma esta a punto de ser cambiada.<br>Estas seguro que quieres proceder?<br><br>* El desempeño del item no sera cambiado.<br>* Si es que el photon color base del item ha sido cambiado, restaurar el item a su apariencia original cambiara el photon color a su estado por defecto.<br>* Mientras al cambiar la apariencia, ambos, el item base y el usado para su apariencia <br>no podran ser seleccionables para ser intercambiados en tu Personal Shop."
 LaboTrace,1,ResetTraceCheckTitle,DETALLES DE LA TRANSMUTACIÓN INVERSA
 LaboTrace,1,ResetTraceCheckSubTitle,TRANSMUTACIÓN DE ARMAS
 LaboTrace,1,ResetItemTraceCheckTitle,CONFIRMANDO LA TRANSMUTACIÓN INVERSA
@@ -4631,28 +4631,28 @@ UserShopMain,1,Explanation1,You can sell items you don't need or purchase items 
 UserShopMain,1,Explanation1_v,"<c f0df61> Esta característica te permite abrir una tienda y vender tus artículos, así como comprar artículos de las tiendas de otros jugadores. <c>"
 UserShopMain,1,Explanation2,Presione cualquiera de los botones [Buscar]. Se pueden mostrar hasta 50 resultados de búsqueda a la vez.
 UserShopMain,1,Explanation2_v,<c f0df60> Busca artículos que otros jugadores actualmente ponen a la venta.  <c>
-UserShopMain,1,Explanation3,Seleccione un artículo para ir a la tienda donde se puso a la venta. Los artículos que haya puesto a la venta no se mostrarán.
-UserShopMain,1,Explanation3_v,<c f0df60> Selecciona un producto para trasladarlo a la tienda donde ese artículo se ha puesto a la venta. <c>
-UserShopMain,1,Explanation4,"Una vez que hayas seleccionado todo, podrás comprarlos todos a la vez."
-UserShopMain,1,Explanation4_v,<c f0df60> Elige el artículo que deseas comprar con<%Decide><c f0df60>. Luego presione el botón [Comprar] para pagar. <c>
-UserShopMain,1,Explanation5,"palabras clave. Seleccione el tipo de búsqueda que desea, luego ingrese las palabras clave correspondientes. <c>"
+UserShopMain,1,Explanation3,Seleccione un artículo para ir a la tienda donde se puso a la venta. Los artículos que hayas puesto a la venta no se mostrarán.
+UserShopMain,1,Explanation3_v,<c f0df60> Selecciona un producto para moverlo a la shop donde ese item sera puesto a la venta. <c>
+UserShopMain,1,Explanation4,"Puedes seleccionar y cambiar las cantidades de los items que quieres comprar. Despues de que hayas seleccionado todo, puedes comprar todo de una vez."
+UserShopMain,1,Explanation4_v,<c f0df60> Elige el item que deseas comprar con<%Decide><c f0df60>. Luego presione el botón [Comprar] para pagar. <c>
+UserShopMain,1,Explanation5,"<c f0df60> Puedes buscar por el nombre de player ID, nombre del personaje o texto de publicidad utilizando palabras clave. Seleccione el tipo de busqueda que desee, entonces escriba las palabras clave correspondientes.<c>"
 UserShopMain,1,Label_Item_Num,Cantidad que tienes actualmente
 UserShopMain,1,Label_Item_Capacity,Espacio de inventario después del retiro.
 UserShopMain,1,Label_Item_Warehouse_Capacity,$(0) de capacidad después del retiro
-UserShopMain,1,Explanation5_v,"<c f0df61> Puedes buscar usando palabras clave por nombre de identificación del jugador, nombre del personaje o texto publicitario. <c>"
-UserShopMain,1,Explanation6,<c f0df60>Select a shop. Move your cursor over a selection to display the owner's player ID name as well as the shop's advertisement text under [Personal Shop Details].<c>
-UserShopMain,1,Explanation6_v,Selecciona una tienda. Mueva el cursor sobre una selección para mostrar los [Detalles personales de la tienda].
-UserShopMain,1,Explanation7,"Aquí puede poner artículos a la venta en su Tienda personal, retirar artículos y editar el texto de su anuncio."
-UserShopMain,1,Explanation8,"sh para poner a la venta, luego seleccione la ranura nuevamente para establecer el precio."
-UserShopMain,1,Explanation8_v,"<c f0df60>Select a slot and determine how many items you wish to put up for sale, set a price, and add the item(s) to the List of Candidate Items to Sell.<c>"
-UserShopMain,1,Explanation9,Seleccione un artículo que desee poner a la venta.
-UserShopMain,1,Explanation10,Seleccione un artículo que desee poner a la venta en Almacenamiento.
+UserShopMain,1,Explanation5_v,"<c f0df61> Puedes buscar usando palabras clave como nombre del player ID, nombre del personaje o texto del aviso de publicidad. <c>"
+UserShopMain,1,Explanation6,<c f0df60>Selecciona una tienda. Mueve tu cursor sobre una seleccion para mostrar el player ID del dueño ademas del texto de publicidad bajo [Detalles del Personal Shop].<c>
+UserShopMain,1,Explanation6_v,Selecciona una tienda. Mueva el cursor sobre una selección para mostrar los [Detalles del Personal Shop].
+UserShopMain,1,Explanation7,"Aquí puede poner artículos a la venta en su Personal Shop, retirar artículos y editar el texto de su anuncio."
+UserShopMain,1,Explanation8,"Seleccione un slot para usar para tu nuevo item a vender, el o los items que desee poner a la venta, luego seleccione el slot nuevamente para determinar el precio."
+UserShopMain,1,Explanation8_v,"<c f0df60>Seleccione un slot y determine cuantos items desea poner a la venta, determine un precio y agregue el o los items a la lista de objetos para Vender<c>"
+UserShopMain,1,Explanation9,Seleccione un item que desee poner a la venta.
+UserShopMain,1,Explanation10,Seleccione un artículo que desee poner a la venta desde el Storage.
 UserShopMain,1,Explanation11,Utilice<%Decide><c f0df60> para seleccionar todos los artículos que desea retirar y luego presione el botón [Retirar].
-UserShopMain,1,Explanation12,Utilice<%Decide>para seleccionar todos los elementos que desea retirar al Almacenamiento y luego presione el botón [Retirar].
-UserShopMain,1,Explanation13,Introduzca el texto de su anuncio. El texto de su anuncio aparecerá en los resultados de búsqueda de artículos de su Tienda personal.
+UserShopMain,1,Explanation12,Utilice<%Decide>para seleccionar todos los items que desea retirar al Storage y luego presione el botón [Retirar].
+UserShopMain,1,Explanation13,Introduzca el texto de su anuncio. El texto de su anuncio aparecerá en los resultados de búsqueda de artículos para tu Personal Shop.
 UserShopMain,1,Explanation14,Aquí puede ver sus ventas y cobrar las ganancias de sus ventas.
-UserShopMain,1,Explanation15,Aquí puede verificar su período de permiso de uso y comprar artículos para extenderlo.
-UserShopMain,1,ManageWithRightsBuy_Supplemental,utilice<br>cualquiera de los siguientes. Seleccione el título para comprar el permiso.
+UserShopMain,1,Explanation15,Aquí puede verificar su período de permiso de uso y comprar artículos para extenderlos.
+UserShopMain,1,ManageWithRightsBuy_Supplemental,Tu puedes <yellow>poner items a la venta<c> si posees el permiso para<br> usar cualquiera de los siguientes. Seleccione el titulo para comprar el permiso.
 UserShopSearchItem,0,Title,商品検索
 UserShopSearchItem,0,ResultTitle,商品検索結果
 UserShopSearchItem,0,NoItemMessage,条件に合致するアイテムがありません
@@ -5029,47 +5029,47 @@ UserShopSearchItem,0,Target N-Weapons Badge,対象のN-ウェポンズバッヂ
 UserShopSearchItem,0,Search_Series_HintText,“武器”や“防具”は、アイテム名に<yellow>“？”を加える<c>ことで、<br>対応するシリーズのアイテムをまとめて検索できます。<br><yellow>※入力例：プリムソード？<c><br>※一部のシリーズでは対象外となります。
 UserShopSearchItem,1,Title,BÚSQUEDA DE PRODUCTOS
 UserShopSearchItem,1,ResultTitle,RESULTADOS DE LA BÚSQUEDA DE PRODUCTOS
-UserShopSearchItem,1,NoItemMessage,Ningún artículo coincidió con sus términos de búsqueda.
-UserShopSearchItem,1,SearchingMessage,Búsqueda...
-UserShopSearchItem,1,ItemName,Configuración de nombre (coincidencia exacta)
-UserShopSearchItem,1,ItemNameHead,Nombre del artículo
+UserShopSearchItem,1,NoItemMessage,No hay items que coincidan con tus terminos de busqueda.
+UserShopSearchItem,1,SearchingMessage,Buscando...
+UserShopSearchItem,1,ItemName,Configuración de Nombre (Coincidencia Exacta)
+UserShopSearchItem,1,ItemNameHead,Nombre del Item
 UserShopSearchItem,1,ExplanationHead,-
-UserShopSearchItem,1,ElementNameHead,Nombre de la habilidad
+UserShopSearchItem,1,ElementNameHead,Nombre de la Skill
 UserShopSearchItem,1,Category,Configuración de categoría
 UserShopSearchItem,1,Category_Vita,Categorías
 UserShopSearchItem,1,CategoryNone,No especificado
 UserShopSearchItem,1,CategoryWeapon,Armas
 UserShopSearchItem,1,CategoryAddon,Armadura
-UserShopSearchItem,1,CategoryConsumeSpecialabilitycapsule,Cápsulas de aumento
-UserShopSearchItem,1,CategoryCostumeParts,Conjuntos/Piezas
+UserShopSearchItem,1,CategoryConsumeSpecialabilitycapsule,Cápsulas de Augments
+UserShopSearchItem,1,CategoryCostumeParts,Trajes/Partes
 UserShopSearchItem,1,CategoryConsume,Consumibles
 UserShopSearchItem,1,CategoryDisk,Discos
-UserShopSearchItem,1,CategoryRoomGoods,Mobiliario
-UserShopSearchItem,1,CategoryQuestItem,Ordenar artículos/materiales de elaboración
+UserShopSearchItem,1,CategoryRoomGoods,Muebles
+UserShopSearchItem,1,CategoryQuestItem,Items de Orden/Materiales de Crafteo
 UserShopSearchItem,1,CategoryOther,Misceláneas
-UserShopSearchItem,1,CategoryAcGacha,Artículos de boletos rasca y gana de AC
+UserShopSearchItem,1,CategoryAcGacha,Items de AC Scratch
 UserShopSearchItem,1,CategoryWeaponAvatar,Camuflaje de armas
-UserShopSearchItem,1,CategoryWeaponRare10,Rareza 10 armas
-UserShopSearchItem,1,CategoryWeaponRare11,Rareza 11 armas
-UserShopSearchItem,1,CategoryWeaponRare12,Rareza 12 armas
-UserShopSearchItem,1,CategoryAddonRare10,Rareza 10 Unidades
-UserShopSearchItem,1,CategoryAddonRare11,Rareza 11 Unidades
-UserShopSearchItem,1,CategoryAddonRare12,Rareza 12 Unidades
-UserShopSearchItem,1,CategoryRappySuits,Trajes raperos
+UserShopSearchItem,1,CategoryWeaponRare10,Armas de Rareza 10
+UserShopSearchItem,1,CategoryWeaponRare11,Armas de Rareza 11
+UserShopSearchItem,1,CategoryWeaponRare12,Armas de Rareza 12
+UserShopSearchItem,1,CategoryAddonRare10,Units de Rareza 10
+UserShopSearchItem,1,CategoryAddonRare11,Units de Rareza 11
+UserShopSearchItem,1,CategoryAddonRare12,Units de Rareza 12
+UserShopSearchItem,1,CategoryRappySuits,Trajes Rappy
 UserShopSearchItem,1,CategoryGemStone,Astracita
 UserShopSearchItem,1,SubCategory,Subcategorías
 UserShopSearchItem,1,SubCategoryWeaponNone,No especificado
-UserShopSearchItem,1,SubCategoryWeaponSword,espadas
+UserShopSearchItem,1,SubCategoryWeaponSword,Swords
 UserShopSearchItem,1,SubCategoryWeaponDoublesaber,Sables dobles
 UserShopSearchItem,1,SubCategoryWeaponKnuckle,nudillos
 UserShopSearchItem,1,SubCategoryWeaponSaber,Hojas de pistola
 UserShopSearchItem,1,SubCategoryWeaponTwindagger,Dagas gemelas
-UserShopSearchItem,1,SubCategoryWeaponPartisan,partisanos
+UserShopSearchItem,1,SubCategoryWeaponPartisan,Partisans
 UserShopSearchItem,1,SubCategoryWeaponWiredlance,Lanzas cableadas
 UserShopSearchItem,1,SubCategoryWeaponAssaultrifle,Rifles de asalto
 UserShopSearchItem,1,SubCategoryWeaponLauncher,Lanzadores
 UserShopSearchItem,1,SubCategoryWeaponTwinmachinegun,Ametralladoras gemelas
-UserShopSearchItem,1,SubCategoryWeaponRod,Varillas
+UserShopSearchItem,1,SubCategoryWeaponRod,Rods
 UserShopSearchItem,1,SubCategoryWeaponTalis,Talises
 UserShopSearchItem,1,SubCategoryWeaponWand,varitas
 UserShopSearchItem,1,SubCategoryWeaponKatana,katanas
