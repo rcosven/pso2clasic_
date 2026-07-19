@@ -39,16 +39,6 @@ Con esta herramienta podrás:
 
 Todas las sugerencias son revisadas por el equipo antes de incorporarse al proyecto.
 
-## 🤝 Cómo contribuir desde GitHub
-
-Si prefieres colaborar directamente en el repositorio:
-
-1. Abre el archivo que deseas modificar.
-2. Haz clic en el botón **Edit** (ícono del lápiz).
-3. Modifica **únicamente el texto entre comillas**, respetando el formato del archivo.
-4. Escribe un breve resumen de los cambios realizados.
-5. Confirma los cambios directamente en la rama principal del repositorio (salvo que el equipo indique otro flujo de trabajo).
-
 ## ✅ Revisión de textos
 
 Aunque no sepas Ingles, también puedes ayudar.
