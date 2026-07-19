@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Common,0,YesText,はい
 Common,0,NoText,いいえ
 Common,0,CloseText,閉じる
@@ -64,8 +64,8 @@ Common,1,CheckText,Esta ventana no se volvera a abrir.
 Common,1,NoneText,Ninguno
 Common,1,Preview,Avance
 Common,1,SimplePreview,Vista previa simplificada
-Common,1,Skip,"¿Estás seguro de que deseas omitir la escena del evento e ir a<br>la siguiente serie de opciones o al final?"
-Common,1,SkipMovie,"La reproducción de la escena actual terminará.<br><br>¿Estás seguro?"
+Common,1,Skip,¿Estás seguro de que deseas omitir la escena del evento e ir a<br>la siguiente serie de opciones o al final?
+Common,1,SkipMovie,La reproducción de la escena actual terminará.<br><br>¿Estás seguro?
 Common,1,SymbolArt_BANtext,Actualmente no puedes guardar ese simbolo artistico.
 Common,1,BlockBurstIntoNG,No se puede unir porque el estado del grupo al que desea unirse ha cambiado.
 Common,1,TimeText,"$(0) minuto(s), $(1) segundo(s) $(2)"
@@ -73,18 +73,18 @@ Common,1,NumItem,$(1) $(0)(s)
 Common,1,NumItem2,$(0) × $(1)
 Common,1,Bracket,($(0))
 Common,1,SquareBracket,[$(0)]
-Common,1,ErrorResetAmCoinWithoutWarning,"No puedes moverte porque la cantidad de CC que tienes supera el máximo."
-Common,1,Ranking,"$(3) $(2) No. $(1) $(0)"
+Common,1,ErrorResetAmCoinWithoutWarning,No puedes moverte porque la cantidad de CC que tienes supera el máximo.
+Common,1,Ranking,$(3) $(2) No. $(1) $(0)
 Common,1,RankingVita,"$(3) $(2) No. $(1) $(0) Bloque exclusivo de ""PS Vita"""
-Common,1,VolcanoClearTime,"Tiempo de finalización: $(0)"
+Common,1,VolcanoClearTime,Tiempo de finalización: $(0)
 Common,1,Contribution,"Puntos totales de intercepción, todos los sectores: $(0)<pict Target_CP>"
-Common,1,SkipNaviKey,"Presiona la <yellow>[Tecla Esc]<c> para omitir."
-Common,1,SkipNaviButton,"Presiona el <yellow>[Botón <c><%AllWindowClose><yellow>]<c> para omitir."
-Common,1,BoostLevelUp,"¡Tu Nivel de Mejora de Vínculo de Misión ha aumentado a $(0)!<br>¡Ahora se aplicarán nuevos efectos en las Misiones de Mejora!"
-Common,1,PreviewZoom,"(<c cfcfcf>Rotar/Acercar<c> <%Exception> <yellow>Movimiento lateral<c>)"
-Common,1,PreviewZoom_mouse,"(<c cfcfcf>Rotar/Acercar<c> <pict mouse_right> <yellow>Movimiento lateral<c>)"
-Common,1,PreviewMove,"(<yellow>Rotar/Acercar<c> <%Exception> <c cfcfcf>Movimiento lateral<c>)"
-Common,1,PreviewMove_mouse,"(<yellow>Rotar/Acercar<c> <pict mouse_right> <c cfcfcf>Movimiento lateral<c>)"
+Common,1,SkipNaviKey,Presiona la <yellow>[Tecla Esc]<c> para omitir.
+Common,1,SkipNaviButton,Presiona el <yellow>[Botón <c><%AllWindowClose><yellow>]<c> para omitir.
+Common,1,BoostLevelUp,¡Tu Nivel de Mejora de Vínculo de Misión ha aumentado a $(0)!<br>¡Ahora se aplicarán nuevos efectos en las Misiones de Mejora!
+Common,1,PreviewZoom,(<c cfcfcf>Rotar/Acercar<c> <%Exception> <yellow>Movimiento lateral<c>)
+Common,1,PreviewZoom_mouse,(<c cfcfcf>Rotar/Acercar<c> <pict mouse_right> <yellow>Movimiento lateral<c>)
+Common,1,PreviewMove,(<yellow>Rotar/Acercar<c> <%Exception> <c cfcfcf>Movimiento lateral<c>)
+Common,1,PreviewMove_mouse,(<yellow>Rotar/Acercar<c> <pict mouse_right> <c cfcfcf>Movimiento lateral<c>)
 Common,1,BlockType_02,PSO2: Bloques NGS
 MainMenu,0,MainMenu_CharacterInfo,キャラクター情報
 MainMenu,0,MainMenu_Palette,パレットカスタマイズ
@@ -487,12 +487,12 @@ black_bord,1,BlackbordTitleText,MESA DE MENSAJES
 black_bord,1,BlackbordTitleTextTeam,TABLERO DE ANUNCIOS DE LA ALIANZA
 black_bord,1,Blackbord_InputMessage,Ingresa el mensaje que deseas publicar.
 black_bord,1,Blackbord_InputMessageTeam,Introduce el mensaje que deseas publicar<br>en el tablón de anuncios de la alianza.
-black_bord,1,Blackbord_NoMessage,No se ha introducido ningún mensaje.<br>Por favor, introduce un mensaje<br>y selecciona [Confirmar].
-black_bord,1,Blackbord_MessageWriteError,No se puede publicar<br>tu mensaje.<br><br>Por favor, espera un momento<br>e inténtalo de nuevo.
+black_bord,1,Blackbord_NoMessage,"No se ha introducido ningún mensaje.<br>Por favor, introduce un mensaje<br>y selecciona [Confirmar]."
+black_bord,1,Blackbord_MessageWriteError,"No se puede publicar<br>tu mensaje.<br><br>Por favor, espera un momento<br>e inténtalo de nuevo."
 black_bord,1,Blackbord_WriteToast,Mensaje publicado.
 black_bord,1,Blackbord_DeleteMessage,El mensaje seleccionado será eliminado.<br>¿Estás seguro?
 black_bord,1,Blackbord_DeleteToast,Mensaje eliminado.
-black_bord,1,Blackbord_MessageDeleteError,No se puede eliminar el mensaje.<br><br>Por favor, espera un momento<br>e inténtalo de nuevo.
+black_bord,1,Blackbord_MessageDeleteError,"No se puede eliminar el mensaje.<br><br>Por favor, espera un momento<br>e inténtalo de nuevo."
 black_bord,1,Blackbord_NoMessageTitle,CONFIRMAR QUE NO HAY MENSAJE INTRODUCIDO
 black_bord,1,Blackbord_MessageWriteErrorTitle,ERROR DE PUBLICACION DE MENSAJE
 black_bord,1,Blackbord_DeleteMessageTitle,CONFIRMAR ELIMINACION DEL MENSAJE
@@ -850,7 +850,7 @@ MailList,1,Mail_Edit_From,remitente
 MailList,1,Mail_Edit_Subject,Base
 MailList,1,Mail_Edit_Body,Cuerpo
 MailList,1,Mail_Help_ToList,Seleccione un destinatario.
-MailList,1,Mail_Init_Mes_ToList,<gray>Por favor, selecciona un destinatario.<c>
+MailList,1,Mail_Init_Mes_ToList,"<gray>Por favor, selecciona un destinatario.<c>"
 MailList,1,Mail_Init_Mes_EditList_PC,"<gray>Introduce el cuerpo del texto de tu correo. Cuando uses la entrada de teclado, usa<br>[Alt] + [Enter] para pasar a la siguiente línea.<c>"
 MailList,1,Mail_Init_Mes_EditList_vita,<gray>Introduce el cuerpo del texto de tu correo.<c>
 MailList,1,Mail_Button_ToList,...
@@ -1128,9 +1128,9 @@ FriendList,1,Ship_Menu_Myroom,Mover a cuartos personales
 FriendList,1,Frined_Invite_Menu_Remove,Cancel Friend Request
 FriendList,1,Frined_Invite_Menu_Accept,Aceptar solicitud de amistad
 FriendList,1,Frined_Invite_Menu_Reject,Rechazar solicitud de amistad
-FriendList,1,Frined_Invite_Reject_Exp,"¿Estás seguro de que deseas eliminar la<br>solicitud de amistad que recibiste de $(0)?<br><br>(Aún podrás recibir solicitudes de amistad<br>de ese jugador en el futuro)."
-FriendList,1,Frined_List_Remove_Exp,"¿Estás seguro de que deseas eliminar a este<br>jugador de tu lista de amigos?"
-FriendList,1,Frined_Invite_Remove_Exp,"¿Estás seguro de que deseas cancelar la<br>solicitud de amistad que le enviaste a $(0)?"
+FriendList,1,Frined_Invite_Reject_Exp,¿Estás seguro de que deseas eliminar la<br>solicitud de amistad que recibiste de $(0)?<br><br>(Aún podrás recibir solicitudes de amistad<br>de ese jugador en el futuro).
+FriendList,1,Frined_List_Remove_Exp,¿Estás seguro de que deseas eliminar a este<br>jugador de tu lista de amigos?
+FriendList,1,Frined_Invite_Remove_Exp,¿Estás seguro de que deseas cancelar la<br>solicitud de amistad que le enviaste a $(0)?
 FriendList,1,Friend_Menu_None,-
 FriendList,1,BlackList_Menu_Remove,Eliminar de la lista de bloqueo de PSO2
 FriendList,1,Chara_Form_Title,AMIGOS
@@ -3236,19 +3236,19 @@ CharaInfo,1,Name,Nombre del personaje
 CharaInfo,1,Guild,Nombre de la alianza
 CharaInfo,1,NoGuild,sin alianza
 CharaInfo,1,HunterExplanation,"tienen HP y Defensa altos,<br>lo que los convierte en luchadores excepcionales por sí mismos."
-CharaInfo,1,RangerExplanation,-combate a distancia. Los Rangers son capaces de <br>realizar ataques de precisión desde lejos."
-CharaInfo,1,ForceExplanation,t. Poseen un alto Poder de Técnica <br>y una diversa pero poderosa variedad de Técnicas."
-CharaInfo,1,FighterExplanation,"Los Fighters sobresalen en combate usando armas ligeras<br>de corto alcance. Su verdadero valor sale a relucir<br>bajo condiciones especiales."
-CharaInfo,1,GunnerExplanation,a sus oponentes mediante una mezcla <br>de ataques rápidos de proyectiles y alta movilidad."
+CharaInfo,1,RangerExplanation,"-combate a distancia. Los Rangers son capaces de <br>realizar ataques de precisión desde lejos."""
+CharaInfo,1,ForceExplanation,"t. Poseen un alto Poder de Técnica <br>y una diversa pero poderosa variedad de Técnicas."""
+CharaInfo,1,FighterExplanation,Los Fighters sobresalen en combate usando armas ligeras<br>de corto alcance. Su verdadero valor sale a relucir<br>bajo condiciones especiales.
+CharaInfo,1,GunnerExplanation,"a sus oponentes mediante una mezcla <br>de ataques rápidos de proyectiles y alta movilidad."""
 CharaInfo,1,TecherExplanation,"t papel, y es especialmente capaz cuando <br>se trata de mejora y recuperación."
-CharaInfo,1,BraverExplanation,Capaz tanto en combate a larga como a corta distancia. Mejorar <br>tus habilidades y refinar tu enfoque en la batalla te permitirá <br>sacar el máximo provecho de las habilidades físicas de esta clase."
+CharaInfo,1,BraverExplanation,"Capaz tanto en combate a larga como a corta distancia. Mejorar <br>tus habilidades y refinar tu enfoque en la batalla te permitirá <br>sacar el máximo provecho de las habilidades físicas de esta clase."""
 CharaInfo,1,BouncerExplanation,"Soporta el uso de Técnicas además del combate <br>cercano, y cuenta con robustas habilidades de apoyo, lo que la hace<br>especialmente valiosa en batallas multijugador."
 CharaInfo,1,ChallengerExplanation,"Esta es una clase especial que se utiliza en el programa de<br>entrenamiento de realidad virtual de ARCAS. La clase permite<br>el uso de todos los tipos de armas, permitiendo al jugador<br>entrenar para cualquier situación de combate."
 CharaInfo,1,SummonerExplanation,"Participa en la batalla invocando a una mascota. Al criar <br>diferentes mascotas y emplearlas estratégicamente, esta <br>clase puede utilizarse eficazmente en casi cualquier situación."
 CharaInfo,1,PokaExplanation,"Esta es una clase especial utilizada en la Arena de Batalla.<br>Está diseñada para el combate entre operativos de ARCAS,<br>y puede ser utilizada para el entrenamiento bajo una amplia gama de condiciones."
 CharaInfo,1,WpnmanExplanation,"Fue concebida para sobresalir en el combate contra grupos de múltiples <br>enemigos. Soporta tres tipos diferentes de armas para llevar a cabo <br>ataques cuerpo a cuerpo, ataques a distancia y Técnicas."
 CharaInfo,1,VillainExplanation,"habilidades, y está bien adaptada para <br>mantenerse en movimiento mientras atraviesa los ataques enemigos."
-CharaInfo,1,MasterExplanation,un frente ofensivo/defensivo unificado y controlar al enemigo sin mostrarle ningún defecto."
+CharaInfo,1,MasterExplanation,"un frente ofensivo/defensivo unificado y controlar al enemigo sin mostrarle ningún defecto."""
 CharaInfo,1,SlayerExplanation,"estilos de juego basados en el Elemento del Arma,<br>cada uno con capacidades únicas."
 CharaInfo,1,NoPaMessage,No hay artes fotonicas disponibles.
 CharaInfo,1,NoTechnicMessage,No hay tecnicas disponibles.
@@ -3484,7 +3484,7 @@ SkillTree,1,SKillName,Nombre de la habilidad
 SkillTree,1,SKillTreeNameChange,Cambiar el nombre del arbol de habilidades
 SkillTree,1,SKillTreeNameChangeVita,<pict Sign_SQUARE> Cambiar nombre del árbol
 SkillTree,1,NameInput,Introduzca el nombre
-SkillTree,1,RenameExplain,Por favor, introduce un nombre para el Árbol de Habilidades seleccionado<br>y pulsa el botón [Confirmar].
+SkillTree,1,RenameExplain,"Por favor, introduce un nombre para el Árbol de Habilidades seleccionado<br>y pulsa el botón [Confirmar]."
 SkillTree,1,RenameError,El nombre especificado no se puede utilizar.
 SkillTree,1,LevelUp_LackClassLv,No puedes aprender esta habilidad porque no has<br>alcanzado el nivel de clase requerido.<br><br>Información del nivel de clase requerido<br>$(0) $(1) Nivel $(2)
 SkillTree,1,LevelUp_LackClassLv_v,No puedes aprender esta habilidad porque no has<br>alcanzado el nivel de clase requerido.<br><br>Información del nivel de clase requerido<br>$(0) $(1) Nivel $(2)
@@ -5600,7 +5600,7 @@ SkillExplanation,1,TecArtsJAPPSave,Reduce tu consumo de PP cuando realizas un At
 SkillExplanation,1,LimitBreakInsurance,incapacitarte. Tiempo de reutilización extendido con cada uso. <yellow>Solo para Clase Principal.
 SkillExplanation,1,FighterHighLevelBonus,Otorga una bonificación al daño infligido por el jugador.
 SkillExplanation,1,FighterNextJump,Permite saltar en dos etapas.
-SkillExplanation,1,FighterFirstArtsJAAddition,"Convierte tu primer ataque en un Ataque Perfecto. Se aplica un tiempo de reutilización tras la activación. No afecta los ataques de Harmonizer, ataques de mascotas o Técnicas."SkillExplanation,1,FighterAirReversal,Le permite realizar una caida mientras esta en el aire.
+SkillExplanation,1,FighterFirstArtsJAAddition,"Convierte tu primer ataque en un Ataque Perfecto. Se aplica un tiempo de reutilización tras la activación. No afecta los ataques de Harmonizer, ataques de mascotas o Técnicas.SkillExplanation,1,FighterAirReversal,Le permite realizar una caida mientras esta en el aire."
 SkillExplanation,1,FighterDushJump,Saltar durante una accion de esquivar te convierte en una carrera.
 SkillExplanation,1,FighterStepJACombo,Hace que se aplique el tiempo de ataque perfecto durante un paso lateral.
 SkillExplanation,1,FighterJustReversalJACombo,Hace que el tiempo de Perfect-Attack se aplique despues de una Perfect Recovery.
@@ -5856,9 +5856,9 @@ SkillExplanation,1,BouncerAtpStrikeUp1,Aumenta tu poder cuerpo a cuerpo.
 SkillExplanation,1,BouncerAtpStrikeUp2,Aumenta tu poder cuerpo a cuerpo. Produce un efecto mas fuerte que Melee Power Up 1.
 SkillExplanation,1,BouncerAtpTechnicUp1,Aumenta tu poder tecnico.
 SkillExplanation,1,BouncerDexUp1,Aumenta tu destreza.
-SkillExplanation,1,JetBootsGear,"Aumenta el Focus cuando aciertas un ataque o cargas una Technique. Aplica el Element de la última Technique cargada a tu arma y potencia la fuerza del ataque."
-SkillExplanation,1,DualbladeGear,"Potencia tus PA según el nivel de Focus y te permite usar la barra de Focus para lanzar Photon Blades con una Weapon Action. Los ataques aumentan la recuperación de PP."
-SkillExplanation,1,CraftMastaryBouncer,"Boosts your equipment's stats when you equip a crafted weapon or armor."
+SkillExplanation,1,JetBootsGear,Aumenta el Focus cuando aciertas un ataque o cargas una Technique. Aplica el Element de la última Technique cargada a tu arma y potencia la fuerza del ataque.
+SkillExplanation,1,DualbladeGear,Potencia tus PA según el nivel de Focus y te permite usar la barra de Focus para lanzar Photon Blades con una Weapon Action. Los ataques aumentan la recuperación de PP.
+SkillExplanation,1,CraftMastaryBouncer,Boosts your equipment's stats when you equip a crafted weapon or armor.
 SkillExplanation,1,Rare10Bouncer,Boosts the damage you deal when a crafted weapon or a weapon of Rarity 10☆ or greater is equipped. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,BouncerMag,Agrega un porcentaje establecido de la destreza de un Mag equipado al poder cuerpo a cuerpo y al poder tecnico.
 SkillExplanation,1,ElementalPPRestraintField,Despliega un campo a tu alrededor que aumenta la recuperacion de PP cuando conectas un ataque aprovechando la debilidad elemental del enemigo.
@@ -6068,16 +6068,16 @@ SkillExplanation,1,MasterInstinct,Reciba una bonificación de reducción de dañ
 SkillExplanation,1,MasterArcane,"Cuando se equipa un Sable Doble, esquivar hacia adelante mientras un enemigo fijado ataca activará un contraataque especial. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
 SkillExplanation,1,MasterHPRestraint,Hace que recuperes HP gradualmente cuando tu HP cae por debajo de un cierto umbral.
 SkillExplanation,1,MasterAmbitionMassive,"Cuando estás parado, estás protegido de ser lanzado o lanzado hacia atrás."
-SkillExplanation,1,MasterTimeLeap,ll be invulnerable for a time (serás invulnerable por un tiempo). Este efecto solo se activa una vez. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
+SkillExplanation,1,MasterTimeLeap,"ll be invulnerable for a time (serás invulnerable por un tiempo). Este efecto solo se activa una vez. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."""
 SkillExplanation,1,MasterWandTeleport,"Cuando se equipa una Varita, muévete una distancia fija y ataca en la dirección que ingresas manteniendo presionado el botón de Acción de Arma por un corto tiempo y soltándolo. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
-SkillExplanation,1,MasterCountArtsBonus,"Usar diferentes Artes Fotónicas en sucesión durante un combo disminuirá el coste de PP para un número fijo de Artes Fotónicas y otorgará una bonificación de daño."
+SkillExplanation,1,MasterCountArtsBonus,Usar diferentes Artes Fotónicas en sucesión durante un combo disminuirá el coste de PP para un número fijo de Artes Fotónicas y otorgará una bonificación de daño.
 SkillExplanation,1,MasterJABonus,Otorga una bonificación de daño a los ataques perfectos.
 SkillExplanation,1,MasterDamageThrottling,"efecto de fuentes distintas a objetos, objetos y habilidades de clase Étoile."
-SkillExplanation,1,MasterWandReferenceChange,lues from weapon Augments (valores de aumentos de arma). <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
+SkillExplanation,1,MasterWandReferenceChange,"lues from weapon Augments (valores de aumentos de arma). <yellow>Esta habilidad solo puede ser usada por una Clase Principal."""
 SkillExplanation,1,MasterStepAdvance,Extiende la duración de la invulnerabilidad durante un paso lateral o una tirada en picado.
 SkillExplanation,1,SlayerTime,habilidad está activa desatará un ataque poderoso. <yellow>Utilizable solo por una Clase Principal.
 SkillExplanation,1,SlayerStyleFM,l Style (Estilo Fomel) se especializa en repartir ataques totales. <yellow>Utilizable solo por una Clase Principal.
-SkillExplanation,1,SlayerStyleZZ,n fights with machines and against groups of enemies (pelea con máquinas y contra grupos de enemigos). <yellow>Utilizable solo por una Clase Principal."
+SkillExplanation,1,SlayerStyleZZ,"n fights with machines and against groups of enemies (pelea con máquinas y contra grupos de enemigos). <yellow>Utilizable solo por una Clase Principal."""
 SkillExplanation,1,SlayerStyleBG,Asume el estilo Baran cuando tienes una espada de pistola (Gunblade) de elemento hielo o luz equipada. El estilo Baran se especializa en protección y contraataques. <yellow>Utilizable solo por una Clase Principal.
 SkillExplanation,1,SlayerGunSlashGear,Mantén presionado cualquier botón de ataque para gastar Enfoque y desatar un ataque mejorado. <yellow>Esta habilidad solo puede ser usada por una Clase Principal.
 SkillExplanation,1,SlayerDushJump,Saltar durante una acción de esquivar te convierte en una carrera.
@@ -6100,7 +6100,7 @@ SkillExplanation,1,SlayerJustReversal,Te permite recuperarte rápidamente saltan
 SkillExplanation,1,SlayerStepJACombo,Hace que se aplique el tiempo de ataque perfecto durante un paso lateral.
 SkillExplanation,1,SlayerWill,"Te permite conservar 1 HP/tiempo de invulnerabilidad una vez, después de recibir DMG fatal. Reutilizable después de alcanzar Alto Voltaje. <yellow>Utilizable solo por una Clase Principal."
 SkillExplanation,1,SlayerTalent,Aumenta la potencia de tu Clase Principal cuando se equipa una espada de pistola (Gunblade). <yellow>Esta habilidad solo puede ser usada cuando se establece una Sub-Clase.
-SkillExplanation,1,SlayerGSlashReferenceChange,P. and RNG. P. of AUGs (P. y RNG. P. de aumentos) unidos al arma. <yellow>Solo puede ser usada por una Clase Principal."
+SkillExplanation,1,SlayerGSlashReferenceChange,"P. and RNG. P. of AUGs (P. y RNG. P. de aumentos) unidos al arma. <yellow>Solo puede ser usada por una Clase Principal."""
 SkillExplanation,1,SlayerIgnoreResist,"Cuando se equipa una espada de pistola, inflige daño que ignora las resistencias de armas de enemigos especiales. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
 SkillExplanation,1,SlayerTension,e Bonificaciones de potencia y recibe menos daño dependiendo de cuántos Voltios tengas.
 SkillExplanation,1,SlayerTensionAssist,Shifta y Deband se activan cuando los voltios se elevan por encima de una cantidad fija.
@@ -6129,8 +6129,8 @@ SkillExplanation,1,SlayerUpLift,"Con una espada de pistola equipada, saltar desp
 SkillExplanation,1,SlayerDownLift,"Con una espada de pistola equipada, saltar después de cualquier acción de ataque sin ninguna entrada direccional desatará un ataque especial mientras caes. <yellow>Utilizable solo por una Clase Principal."
 SkillExplanation,1,SlayerDodgeCounter,"Con una espada de pistola equipada, los Golpes de Paso Lateral después de una evasión exitosa con un Paso Lateral o Acción de Arma, serán más poderosos. <yellow>Utilizable solo por una Clase Principal."
 SkillExplanation,1,SlayerStepGuard,"Con una espada de pistola equipada, esquivar hacia adelante o hacia atrás a tiempo con el ATK de un enemigo fijado desencadenará un contraataque especial. <yellow>Utilizable solo por una Clase Principal."
-SkillExplanation,1,SlayerStepSlide,u a fixed distance (una distancia fija) mientras realizas un ataque a distancia. <yellow>Utilizable solo por una Clase Principal."
-SkillExplanation,1,SlayerBlink,u to move at high speed (moverte a alta velocidad). <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
+SkillExplanation,1,SlayerStepSlide,"u a fixed distance (una distancia fija) mientras realizas un ataque a distancia. <yellow>Utilizable solo por una Clase Principal."""
+SkillExplanation,1,SlayerBlink,"u to move at high speed (moverte a alta velocidad). <yellow>Esta habilidad solo puede ser usada por una Clase Principal."""
 SkillExplanation,1,SlayerBackStep,"FWDs or BWDs (hacia adelante o atrás), lo cambiará por un ATK móvil. <yellow>Utilizable solo por una Clase Principal."
 SkillExplanation,1,SlayerStylePurge,"Con una espada de pistola equipada, usar rápidamente tu Acción de Arma dos veces abandonará tu estilo actual y desatará un ataque poderoso. <yellow>Utilizable solo por una Clase Principal."
 SkillExplanation,1,SlayerStepAdvance,Extiende la duración de la invulnerabilidad durante un paso lateral o una tirada en picado.
@@ -6576,9 +6576,9 @@ SkillParameter,1,SDR_Rate,Duracion de la invulnerabilidad
 SkillParameter,1,LNWU_Rate,Porcentaje de eficacia
 SkillParameter,1,PpActionRateWideSupport,Costo de PP
 SkillParameter,1,Count,Numero de veces
-SkillParameter,1,Criticalpercentage,Tasa critica
-SkillParameter,1,ScaleZ,rango de ataque
-SkillParameter,1,AtomizerSpeedRate,Velocidad de utilizacion
+SkillParameter,1,Criticalpercentage,Tasa de Critico
+SkillParameter,1,ScaleZ,Rango de Ataque
+SkillParameter,1,AtomizerSpeedRate,Velocidad de Utilizacion
 SkillParameter,1,CombatDoubleCount,Contar
 SkillParameter,1,HitGpWpnmanRate,Tasa de aumento del indicador de enfoque
 SkillParameter,1,PpTecRate,Porcentaje de consumo de PP
@@ -6836,7 +6836,7 @@ Macro,1,AutoWordTypeRideAIS,AIS abordado
 Macro,1,AutoWordTypePetGo,Ataque normal por mascota
 Macro,1,AutoWordTypePetPa,Arte de fotones activado por mascota
 Macro,1,ErrorTitle,ADQUISICION DE DATOS DE MENSAJES
-Macro,1,ErrorMessage,Error al adquirir los datos.<br>Por favor, espera un momento antes de abrir la<br>ventana de nuevo.<br>[No. 1103]
+Macro,1,ErrorMessage,"Error al adquirir los datos.<br>Por favor, espera un momento antes de abrir la<br>ventana de nuevo.<br>[No. 1103]"
 Macro,1,ShortcutWordEditDetail,Editando $(1) $(0)
 Macro,1,AutoWordEditDetail,Editando $(0) $(1)
 Macro,1,WinPoseTitle,SELECTOR DE POSTURAS
@@ -7101,14 +7101,14 @@ ClassCounter,1,SkillTreeApplyAsk,¿Estas seguro de que quieres configurar este a
 ClassCounter,1,SkillTreeApplySuccess,Conjunto de arbol de habilidades.
 ClassCounter,1,SkillTreeApplyFailed,No se pudo configurar el arbol de habilidades.
 ClassCounter,1,SkillTreeApplyFailedCurrent,Este arbol de habilidades ya esta configurado.
-ClassCounter,1,SkillTreeApplyFailedQuest,"No puedes cambiar de clase mientras<br>realizas una misión."
+ClassCounter,1,SkillTreeApplyFailedQuest,No puedes cambiar de clase mientras<br>realizas una misión.
 ClassCounter,1,SkillTreeResetAsk,¿Estas seguro de que quieres intercambiar este arbol de habilidades?
 ClassCounter,1,SkillTreeResetSuccess,Arbol de habilidades intercambiadas.
 ClassCounter,1,SkillTreeResetFailed,No se pudo intercambiar el arbol de habilidades.
 ClassCounter,1,SkillTreeResetFailedCurrent,No puedes intercambiar un arbol de habilidades que este configurado actualmente.
 ClassCounter,1,SkillTreeResetAllAsk,"s,<br>lo que te permite reasignar tus Puntos de Habilidad.<br><br>¿Estás seguro de que deseas continuar?"
 ClassCounter,1,SkillTreeResetAllSuccess,Todos los Árboles de Habilidades han sido restablecidos. <br>No olvides reasignar tus Puntos de Habilidad.
-ClassCounter,1,SkillTreeResetAllFailed,El restablecimiento de todos los Árboles de Habilidades falló. <br>Por favor, espera un momento e inténtalo de nuevo.
+ClassCounter,1,SkillTreeResetAllFailed,"El restablecimiento de todos los Árboles de Habilidades falló. <br>Por favor, espera un momento e inténtalo de nuevo."
 ClassCounter,1,SkillTreeResetAllFailedNG,No se puede realizar un restablecimiento<br>porque no posees un<br>[Pase de Restablecimiento de Todos los Árboles de Habilidades].
 ClassCounter,1,ClassSelectExplain,"<c f0df60>Puedes cambiar tu clase actual mediante la opción [Seleccionar Clase]. Si tienes múltiples Árboles de Habilidades, puedes elegir el que deseas configurar con la opción [Seleccionar Árbol de Habilidades].<c>"
 ClassCounter,1,ClassSelectExplain_v,"tienes múltiples Árboles de Habilidades, elige uno con [Seleccionar Árbol de Habilidades].<c>"
@@ -7126,7 +7126,7 @@ ClassCounter,1,SkillTreeResetExplainSG,", o comprando uno con Star Gems. Empieza
 ClassCounter,1,SkillTreeResetExplain_v,"<c f0df61>Restablece tu Árbol de Habilidades usando un [Pase de Restablecimiento y Traslado de Árbol de Habilidades] comprado previamente, o comprando uno con ARKS Cash."
 ClassCounter,1,SkillTreeResetExplainSG_v,"Pase de Restablecimiento y Traslado de Árbol de Habilidades], o comprando uno con Star Gems.<c>"
 ClassCounter,1,SkillTreeReset2Explain,e a otra clase. <c f0df60>Selecciona la clase a la que te gustaría trasladar el Árbol de Habilidades.<c>
-ClassCounter,1,SkillTreeReset2Explain_v,<c f0df60>Restablece el Árbol de Habilidades seleccionado. Durante el restablecimiento, también puedes <yellow>trasladar el árbol a otra clase. <c f0df61>Selecciona una clase.<c>
+ClassCounter,1,SkillTreeReset2Explain_v,"<c f0df60>Restablece el Árbol de Habilidades seleccionado. Durante el restablecimiento, también puedes <yellow>trasladar el árbol a otra clase. <c f0df61>Selecciona una clase.<c>"
 ClassCounter,1,ClassCounterExplain,<c f0df60>Puedes cambiar de clase y aprender Habilidades de Clase mediante los Árboles de Habilidades.<c>
 ClassCounter,1,SkillTreeAddNum,Número de árboles de habilidades que se pueden agregar
 ClassCounter,1,Check,Confirmar
@@ -7479,7 +7479,7 @@ Trade,1,AskCancelTradeMsg,¿Estás seguro de que deseas cancelar la operación?
 Trade,1,AbortTradeByCancel,El comercio fue cancelado.
 Trade,1,AbortTradeByDisconnection,El comercio fue cancelado debido a una<br>interrupción de la conexión.<br><br>[No. 1039]
 Trade,1,AbortTradeByError,El comercio fue cancelado debido a<br>un error.<br><br>[No. 1040]
-Trade,1,AbortTradeByRange,Tú y el otro jugador ya no están<br>en rango de comercio o no pueden<br>operar, por lo que el comercio fue cancelado.
+Trade,1,AbortTradeByRange,"Tú y el otro jugador ya no están<br>en rango de comercio o no pueden<br>operar, por lo que el comercio fue cancelado."
 Trade,1,AbortByAnyUser,Tú o el otro jugador<br>cancelaron el comercio.
 Trade,1,AbortByOppDisconnection,El comercio fue cancelado ya que $(0) perdió su conexión al servidor.<br><br>[No. 1041]
 Trade,1,AbortByOppRequest,$(0) canceló la operación.
@@ -7786,7 +7786,7 @@ Visiphon,1,CharaSaveOverwriteMessage,Tarjeta de Socio<br>no evitará que uses al
 Visiphon,1,CharaSaveSucsessMessage,"Los datos del personaje, Socio y<br>emote adicional<br>han sido guardados."
 Visiphon,1,CharaSaveFailureMessage,"Los datos del personaje, Socio y emote<br>adicional no pudieron guardarse.<br><br>Intenta presionar [Guardar Datos de Retrato] de nuevo."
 Visiphon,1,CharaSaveNone,Sin datos guardados.
-Visiphon,1,CharaSaveMemoryCardNone,No se puede localizar la tarjeta de memoria.<br><br>Por favor, comprueba que la tarjeta de memoria<br>esté insertada correctamente.
+Visiphon,1,CharaSaveMemoryCardNone,"No se puede localizar la tarjeta de memoria.<br><br>Por favor, comprueba que la tarjeta de memoria<br>esté insertada correctamente."
 Visiphon,1,CharaSaveCrashData,los datos se eliminarán y se crearán datos nuevos.<br><br>¿Estás seguro de que deseas continuar?
 Visiphon,1,CharaSaveDataSave,Socio invocable<br>y los datos de emote adicional<br>se actualizarán.<br><br>¿Estás seguro de que deseas continuar?
 Visiphon,1,CharaSaveFailureMessage01,No se puede guardar en la tarjeta de memoria actual<br>ya que los datos que se guardan pueden ser fraudulentos.
@@ -7859,18 +7859,18 @@ Visiphon,1,CampaignTopTitle,ARTÍCULOS DE CAMPAÑA
 Visiphon,1,CampaignTopMenu1,Recibir artículo: Cuenta
 Visiphon,1,CampaignTopMenu2,Recibir artículo: Personaje
 Visiphon,1,VisiphonMenu_Gat,Reunión
-Visiphon,1,VisiphonMenu_GatHint,"<c f0df60>Aquí puedes encontrar información detallada sobre la Recolección (Gathering).<c>"
+Visiphon,1,VisiphonMenu_GatHint,<c f0df60>Aquí puedes encontrar información detallada sobre la Recolección (Gathering).<c>
 Visiphon,1,SiriusMenu,Canjear puntos Idola
 Visiphon,1,SiriusMenu_WindowTitle,MENÚ DE ENLACE
 Visiphon,1,SiriusMenu_Name1,Canjear puntos Idola
 Visiphon,1,SiriusMenu_Name2,Cerrar el intercambio de puntos Idola
-Visiphon,1,SiriusMenu_Name1_Hint,"<c f0df60>Aquí puedes encontrar información sobre el canje de Puntos Idola.<c>"
+Visiphon,1,SiriusMenu_Name1_Hint,<c f0df60>Aquí puedes encontrar información sobre el canje de Puntos Idola.<c>
 Visiphon,1,SiriusMenu_Name2_Hint,<c f0df60>Cerrar el Intercambio de Puntos Idola.<c>
 Visiphon,1,SiriusMenu_Point,Tus puntos Idola
 Visiphon,1,SiriusMenu_Point_Vita,Tus puntos Idola
-Visiphon,1,SiriusMenu_HeadSelect,"Tus Puntos Idola"
-Visiphon,1,VisiphonBuyItem,"Purchase / Receive Benefits: Account"
-Visiphon,1,VisiphonBuyItemMessage,"Comprar / Recibir Beneficios: Cuenta"
+Visiphon,1,SiriusMenu_HeadSelect,Tus Puntos Idola
+Visiphon,1,VisiphonBuyItem,Purchase / Receive Benefits: Account
+Visiphon,1,VisiphonBuyItemMessage,Comprar / Recibir Beneficios: Cuenta
 Visiphon,0,PrizeExchangePoint,$(0)<pict sirius_icon>
 SiriusPointShop,0,PrizeExchangePointRed,<red>$(0)<c><pict sirius_icon>
 SiriusPointShop,0,ExchangeCheckTitle,交換確認
@@ -7953,12 +7953,12 @@ FriendPartner,1,Hint,<c f0df60>Manage Friend Avatars.<c>
 FriendPartner,1,FP_Entry,Agregar avatar de amigo
 FriendPartner,1,FP_List,Verificar avatares de amigos
 FriendPartner,1,FP_Delete,eliminar avatar de amigo
-FriendPartner,1,FP_EntryHint,"<c f0df60>El personaje actual se agregará como un avatar de amigo. No se mostrarán los accesorios de alianza.<c>"
-FriendPartner,1,FP_ListHint,"<c f0df60>Ver información sobre los avatares de amigos añadidos actualmente.<c>"
-FriendPartner,1,FP_DeleteHint,"<c f0df60>Eliminar el avatar de amigo.<c>"
-FriendPartner,1,FP_DeleteMessage,"Estás a punto de eliminar este avatar de amigo.<br>¿Estás seguro de que deseas continuar?"
-FriendPartner,1,FP_ListDisableMessage,"No Friend Avatar has been added."
-FriendPartner,1,FP_DeletetDisableMessage,"No Friend Avatar has been added."
+FriendPartner,1,FP_EntryHint,<c f0df60>El personaje actual se agregará como un avatar de amigo. No se mostrarán los accesorios de alianza.<c>
+FriendPartner,1,FP_ListHint,<c f0df60>Ver información sobre los avatares de amigos añadidos actualmente.<c>
+FriendPartner,1,FP_DeleteHint,<c f0df60>Eliminar el avatar de amigo.<c>
+FriendPartner,1,FP_DeleteMessage,Estás a punto de eliminar este avatar de amigo.<br>¿Estás seguro de que deseas continuar?
+FriendPartner,1,FP_ListDisableMessage,No Friend Avatar has been added.
+FriendPartner,1,FP_DeletetDisableMessage,No Friend Avatar has been added.
 FriendPartner,0,RankingMenuTitle,ランキングメニュー
 Ranking,0,RankingMenuHint,<c f0df60>確認したいランキングを選択してください。<c>
 Ranking,0,RankingMenuSurprize,インタラプトランキング
@@ -8472,15 +8472,15 @@ Synchronize,1,PaidSelectMessage,PUERTA DE INICIO
 Synchronize,1,PaidSelectTag1,El líder paga por todos
 Synchronize,1,PaidSelectTag2,Cada miembro paga por separado
 Synchronize,1,PaidWaitTitle,PUERTA DE SALIDA
-Synchronize,1,PaidLeaderWait,Se ha seleccionado [El líder paga por todos].<br>Por favor, espera hasta que todos los miembros se hayan<br>reunido en la puerta.
-Synchronize,1,PaidMemberWait,El pago de artículos está listo.<br>Por favor, espera hasta que todos los miembros del grupo estén listos.
+Synchronize,1,PaidLeaderWait,"Se ha seleccionado [El líder paga por todos].<br>Por favor, espera hasta que todos los miembros se hayan<br>reunido en la puerta."
+Synchronize,1,PaidMemberWait,"El pago de artículos está listo.<br>Por favor, espera hasta que todos los miembros del grupo estén listos."
 Synchronize,1,PaidWaitLeaderDecide,Espera a que el líder del grupo decida cómo pagar.
-Synchronize,1,PaidMemberToast,Se ha seleccionado [Cada miembro paga por separado] como método de pago. Por favor, realiza el pago en la puerta.
+Synchronize,1,PaidMemberToast,"Se ha seleccionado [Cada miembro paga por separado] como método de pago. Por favor, realiza el pago en la puerta."
 Synchronize,1,PaidLeaderToast,"Se ha seleccionado [El líder paga por todos]. Todos los miembros, reúnanse en la puerta."
 Synchronize,1,PaidChangeToast,Se debe reiniciar el procedimiento porque las condiciones de pago han cambiado.
-Synchronize,1,EternalWaitStart,Se ha seleccionado una Etapa de Juego.<br>Por favor, espera a que todos los miembros del grupo se<br>reúnan en la puerta.
-Synchronize,1,EternalWaitSelect,Por favor, espera hasta que el líder del grupo seleccione<br>una Etapa de Juego.
-Synchronize,1,EternalSelectWessage,Por favor, selecciona la etapa<br>que deseas jugar.
+Synchronize,1,EternalWaitStart,"Se ha seleccionado una Etapa de Juego.<br>Por favor, espera a que todos los miembros del grupo se<br>reúnan en la puerta."
+Synchronize,1,EternalWaitSelect,"Por favor, espera hasta que el líder del grupo seleccione<br>una Etapa de Juego."
+Synchronize,1,EternalSelectWessage,"Por favor, selecciona la etapa<br>que deseas jugar."
 Synchronize,1,EternalPlayFloor,Escenario de juego
 Synchronize,1,EternalFloorChange,Etapa de cambio
 Synchronize,1,PaidLeaderMessage2,Cambiar etapa
@@ -8553,9 +8553,9 @@ Synchronize,1,OmegaMultiBossTrans,Cuenta regresiva completa. Comenzando la telet
 Synchronize,1,OmegaBossTitle,ANILLO DE TELEPORTE
 Synchronize,1,OmegaMultiBossMessageExc,ll<br>será teletransportado después de un tiempo determinado.<br>¿Deseas detener el anillo de teletransporte?
 Synchronize,1,OmegaMultiBossGotoExc,Anillo de teletransporte activado. Ingresa al anillo de teletransporte dentro del tiempo asignado.
-Synchronize,1,SelectDifficultyQuestLV,Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Nivel de Profundidad $(0))
-Synchronize,1,SelectDifficultyQuestLV0,Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)
-Synchronize,1,SelectDifficultyQuestCountCheck,Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)
+Synchronize,1,SelectDifficultyQuestLV,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Nivel de Profundidad $(0))"
+Synchronize,1,SelectDifficultyQuestLV0,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)"
+Synchronize,1,SelectDifficultyQuestCountCheck,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)"
 Synchronize,1,DPP1MultiBossMessageExc,¿Deseas iniciar la misión?<br>(Un total de $(0) intentos de supresión<br>quedan para la misión objetivo)<br><br>El contador de intentos de supresión se restablece cada día a las <utc>20:00</utc>.<br>Cualquier intento de supresión no utilizado no se acumulará<br>para el día siguiente. Se consumirá un intento de supresión<br>cuando completes con éxito la misión.
 Synchronize,1,DPP1MultiBossGotoExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
 Synchronize,1,DEMultiBossMessageExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
@@ -8576,15 +8576,15 @@ Synchronize,1,MEDMultiBossRemove,Los preparativos para el ataque terminaron.
 Synchronize,1,MEDMultiBossTrans,Se completaron los preparativos para el ataque. Entrando en el espacio alterado.
 Synchronize,1,MEDInaccessible,Los preparativos para el ataque terminaron.
 Synchronize,1,SynchronizeBossTitleMED,POSTQUEMADOR FOTÓNICO
-Synchronize,1,SynchronizeInaccessibleMED,Preparación del Postquemador Fotónico en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso.
+Synchronize,1,SynchronizeInaccessibleMED,"Preparación del Postquemador Fotónico en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso."
 Synchronize,1,SynchronizeButtonRemoveMED,Poner fin a los preparativos para el ataque.
 Synchronize,1,ArmadaQuestGoto1,Secuencia de despliegue activada. Ingresa al hangar dentro del tiempo asignado.
 Synchronize,1,ArmadaQuestGoto1Exc,Secuencia de despliegue activada. Ingresa al hangar dentro del tiempo asignado.
 Synchronize,1,ArmadaQuestStart,Preparativos de combate completos. Ahora implementando.
 Synchronize,1,ArmadaBootup,¿Estás seguro de que deseas implementar?
 Synchronize,1,SynchronizeArmadaTitle,Dispositivo de Control de Secuencia de Lanzamiento
-Synchronize,1,SynchronizeArmadaInaccessible,Preparación del Dispositivo de Control de Secuencia de Lanzamiento en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso.
-Synchronize,1,ArmadaMessage1Exc,Preparación del Dispositivo de Control de Secuencia de Lanzamiento en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso.
+Synchronize,1,SynchronizeArmadaInaccessible,"Preparación del Dispositivo de Control de Secuencia de Lanzamiento en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso."
+Synchronize,1,ArmadaMessage1Exc,"Preparación del Dispositivo de Control de Secuencia de Lanzamiento en curso.<br>Por favor, espera un momento antes de volver a intentar el acceso."
 Synchronize,1,ArmadaMessage2Exc,La secuencia de despliegue ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegados después de un tiempo determinado.<br>¿Deseas detener la secuencia de despliegue?
 Synchronize,1,ArmadaMessage1,La secuencia de embarque AIS ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegados después de un tiempo determinado.<br>¿Deseas detener la secuencia de embarque AIS?
 Synchronize,1,ArmadaMessage2,La secuencia de despliegue ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegados después de un tiempo determinado.<br>¿Deseas detener la secuencia de despliegue?
@@ -8781,16 +8781,16 @@ TeamBoost,1,TeamBoost_GrowForm_PercentageLV,Nivel $(1) ($(0)%)
 TeamBoost,1,TeamBoost_GrowForm_TimeLV,Nivel $(1) ($(0) horas)
 TeamBoost,1,TeamBoost_GrowForm_Grow_Check_Message,Nivel $(1) ($(0) horas)
 TeamBoost,1,TeamBoost_GrowForm_Grow_Message,El $(0) del Árbol de Fotones subió de nivel.
-TeamBoost,1,TeamBoost_Error_Unknown,No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1049]
-TeamBoost,1,TeamBoost_Error_NotMember,No se puede completar la selección porque<br>no eres miembro de la alianza.<br>Por favor, verifica tu afiliación a la alianza actual.
-TeamBoost,1,TeamBoost_Error_NoPrivilege,No se puede completar la selección porque<br>no tienes Derechos de Oficial.<br>Por favor, verifica tu posición actual dentro de la alianza.
-TeamBoost,1,TeamBoost_Error_LevelMismatch,Es posible que otro miembro de la Alianza<br>ya haya subido de nivel eso. Por favor, confirma el<br>nivel del elemento seleccionado.
-TeamBoost,1,TeamBoost_Error_Water_Max,otro miembro ya ha<br>dado Agua Fotónica, así que por favor verifica el<br>estado del Árbol de Fotones.
-TeamBoost,1,TeamBoost_Error_NotEnough,Puntos de Alianza insuficientes.<br>Por favor, verifica tu total actual.
-TeamBoost,1,TeamBoost_Error_PortError,No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1050]
-TeamBoost,1,TeamBoost_Error_DontHave,El Efecto Fotónico seleccionado no está activado actualmente.<br>Por favor, verifica el Efecto Fotónico.
+TeamBoost,1,TeamBoost_Error_Unknown,"No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1049]"
+TeamBoost,1,TeamBoost_Error_NotMember,"No se puede completar la selección porque<br>no eres miembro de la alianza.<br>Por favor, verifica tu afiliación a la alianza actual."
+TeamBoost,1,TeamBoost_Error_NoPrivilege,"No se puede completar la selección porque<br>no tienes Derechos de Oficial.<br>Por favor, verifica tu posición actual dentro de la alianza."
+TeamBoost,1,TeamBoost_Error_LevelMismatch,"Es posible que otro miembro de la Alianza<br>ya haya subido de nivel eso. Por favor, confirma el<br>nivel del elemento seleccionado."
+TeamBoost,1,TeamBoost_Error_Water_Max,"otro miembro ya ha<br>dado Agua Fotónica, así que por favor verifica el<br>estado del Árbol de Fotones."
+TeamBoost,1,TeamBoost_Error_NotEnough,"Puntos de Alianza insuficientes.<br>Por favor, verifica tu total actual."
+TeamBoost,1,TeamBoost_Error_PortError,"No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1050]"
+TeamBoost,1,TeamBoost_Error_DontHave,"El Efecto Fotónico seleccionado no está activado actualmente.<br>Por favor, verifica el Efecto Fotónico."
 TeamBoost,1,TeamBoost_Error_NotHappen,verifica qué Efectos Fotónicos<br>están actualmente ya activados.
-TeamBoost,1,TeamBoost_Error_Unexpected,No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1051]
+TeamBoost,1,TeamBoost_Error_Unexpected,"No se puede completar la selección debido a un error.<br>Por favor, espera un momento e inténtalo de nuevo.<br><br>[No. 1051]"
 TeamBoost,1,TeamBoost_end,El efecto fotonico ha terminado.
 TeamBoost,0,Msg_Accept,-
 ClientOrder,0,CharaSelectFormTitle,受注中のクライアントオーダー
@@ -9035,10 +9035,10 @@ ItemCode,1,ItemGetMessage_Num,Recibido $(0) × $(1).
 ItemCode,1,ItemGetMessage_Red,Recibido <light_red2>$(0)<c>
 ItemCode,1,ItemGetMessage_Red_Num,Recibido <light_red2>$(0) × $(1)<c>
 ItemCode,1,ErrorItemGetMessage,Recibiste un artículo.
-ItemCode,1,ErrorItemCodeMessage,Ingresaste un código de artículo inválido.<br>Por favor, verifica el código e inténtalo de nuevo.
+ItemCode,1,ErrorItemCodeMessage,"Ingresaste un código de artículo inválido.<br>Por favor, verifica el código e inténtalo de nuevo."
 ItemCode,1,ErrorServerMessage,Error al adquirir el artículo.<br><br>[No. 1046]
 ItemCode,1,ErrorItemCodeLenMessage,El código de artículo que ingresaste es demasiado corto.<br>Los códigos de artículo deben tener dieciséis caracteres de largo.
-ItemCode,1,ErrorItemCodePeriodMessage,ed.<br><br>Por favor, verifica la fecha de vencimiento de<br>tu código de campaña.
+ItemCode,1,ErrorItemCodePeriodMessage,"ed.<br><br>Por favor, verifica la fecha de vencimiento de<br>tu código de campaña."
 ItemCode,1,ErrorItemCodeSpentMessage,El código de artículo que ingresaste ya se ha utilizado.
 ItemCode,1,ErrorItemCodeLimitOverMessage,El código de artículo que ingresaste ya se ha utilizado.
 ItemCode,1,ErrorItemCodeMultiOverMessage,Ya se ha alcanzado el límite de adquisición para este artículo.<br><br>El artículo no puede adquirirse<br>con este código de artículo.
@@ -9881,7 +9881,7 @@ TreasureDetail,1,Treasure_042,Una unidad de prospección geológica<br>que te di
 TreasureDetail,1,Treasure_043,Una pequeña tela que recogiste en el desierto.
 TreasureDetail,1,Treasure_044,Un fragmento de arma confiado por<br>los Draconianos del planeta Amduskia.<br>Parece ser un núcleo de forma esférica.
 TreasureDetail,1,Treasure_045,"Parece ser parte de<br>un arma, pero su origen específico no está claro."
-TreasureDetail,1,Treasure_046,"Un fragmento de arma al que te guiaron los Lillipans.<br>Parece ser un mango de un hermoso<br>color blanco puro."
+TreasureDetail,1,Treasure_046,Un fragmento de arma al que te guiaron los Lillipans.<br>Parece ser un mango de un hermoso<br>color blanco puro.
 TreasureDetail,1,Treasure_047,Un arma que Zig restauró para ti.<br>Parece ser una especie de vara...
 TreasureDetail,1,Treasure_048,Un permiso emitido por el Cuartel General de ARKS que<br>te permite cambiar tu clase a Fighter.
 TreasureDetail,1,Treasure_049,Un permiso emitido por el Cuartel General de ARKS que<br>te permite cambiar tu clase a Gunner.
@@ -10287,7 +10287,7 @@ Esthetic,1,DirectUse_Title,CONFIRMAR USO DEL ARTÍCULO
 Esthetic,1,DirectBuy_Title,CONFIRMAR COMPRA DE PASE
 Esthetic,1,Remake_Message,"Recrear un Auxiliar restablecerá su apariencia,<br>disposición, afinidad y nivel de clase.<c>"
 Esthetic,1,Remake_BuyMessage,CONFIRMAR USO DE ARTÍCULO
-Esthetic,1,Remake_UseMessage,"afinidad y nivel de clase.<c>"
+Esthetic,1,Remake_UseMessage,afinidad y nivel de clase.<c>
 Esthetic,1,Remake_OK,Tu Auxiliar ha sido restablecido a su estado original.
 Esthetic,1,Remake_PointError,El reinicio del auxiliar falló debido a AC insuficiente.
 Esthetic,1,Remake_ErrorNoPartner,Tu Auxiliar no se pudo restablecer porque no se encontró el Auxiliar especificado.
@@ -11152,7 +11152,7 @@ BlockhelpMessage,1,Block_help_Message_171,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_172,"Este bloque es donde los jugadores que quieren disfrutar<br>de una Misión de Desafío a un ritmo más suave pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_173,Este bloque es donde los jugadores que quieren<br>probar diferentes estrategias para completar una<br>Misión de Desafío pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_174,"Este bloque es donde los jugadores que quieren disfrutar<br>comunicándose entre sí a través de chat, etc.,<br>pueden reunirse."
-BlockhelpMessage,1,Block_help_Message_175,Este bloque es donde los jugadores experimentados que<br>quieren intentar completar una Misión de Desafío en<br>el menor tiempo posible pueden reunirse.<br>¡Solo los más incondicionales deben aplicar!"
+BlockhelpMessage,1,Block_help_Message_175,"Este bloque es donde los jugadores experimentados que<br>quieren intentar completar una Misión de Desafío en<br>el menor tiempo posible pueden reunirse.<br>¡Solo los más incondicionales deben aplicar!"""
 BlockhelpMessage,1,Block_help_Message_176,"""Naverius"" Misión Definitiva,<br>o una misión Extremadamente Difícil, pueden<br>reunirse."
 BlockhelpMessage,1,Block_help_Message_177,"Este bloque es donde los jugadores que quieren disfrutar<br>comunicándose entre sí a través de chat, etc.,<br>pueden reunirse."
 BlockhelpMessage,1,Block_help_Message_178,"Este bloque es donde los jugadores que quieren disfrutar<br>comunicándose entre sí pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
@@ -11193,7 +11193,7 @@ BlockhelpMessage,1,Block_help_Message_212,"misiones de alta dificultad juntos.<b
 BlockhelpMessage,1,Block_help_Message_213,"realizado<br>en todos los bloques, por lo que no hay diferencias<br>entre los bloques individuales."
 BlockhelpMessage,1,Block_help_Message_214,Este Bloque Experto es donde los jugadores que quieren<br>jugar una misión usando un Disparador de Misión<br>(Quest Trigger) o Disparador de Enemigo (Enemy Trigger) pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_215,"Este bloque es para jugadores que tienen el título<br>""Lone Defender"" (Defensor Solitario) y quieren realizar<br>misiones de alta dificultad juntos.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_216,realizar<br>misiones juntos. Por favor, consulta el<br>sitio web oficial para ver los títulos que califican."
+BlockhelpMessage,1,Block_help_Message_216,"realizar<br>misiones juntos. Por favor, consulta el<br>sitio web oficial para ver los títulos que califican."""
 BlockhelpMessage,1,Block_help_Message_217,Este Bloque Experto es donde los jugadores que quieren<br>jugar una misión usando un Disparador de Misión<br>(Quest Trigger) o Disparador de Enemigo (Enemy Trigger) pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_218,Este bloque es donde los jugadores que quieren<br>jugar Misiones Buster pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_219,"reunirse juntos.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
@@ -11287,8 +11287,8 @@ MyRoomError,1,Error_ItemPackMax,Los muebles no se pudieron<br>quitar porque no h
 MyRoomError,1,Error_ReformChicket,Su configuración sigue siendo la misma. No son necesarios cambios.
 MyRoomError,1,Error_MoveRoomGoods,Los muebles no se pueden mover<br>porque un jugador está accediendo a ellos actualmente.
 MyRoomError,1,Error_DeleteRoomGoods,Los muebles no se pueden quitar<br>porque un jugador está accediendo a ellos actualmente.
-MyRoomError,1,Error_Irregular,El procesamiento falló.<br>Por favor, inténtalo de nuevo más tarde.<br><br>[No. 1100]
-MyRoomError,1,Error_MesetaCheck_Over,No puedes quitar la caja de regalo porque<br>te pondría por encima de tu límite de meseta.<br>Por favor, guarda tu meseta en el Almacenamiento.
+MyRoomError,1,Error_Irregular,"El procesamiento falló.<br>Por favor, inténtalo de nuevo más tarde.<br><br>[No. 1100]"
+MyRoomError,1,Error_MesetaCheck_Over,"No puedes quitar la caja de regalo porque<br>te pondría por encima de tu límite de meseta.<br>Por favor, guarda tu meseta en el Almacenamiento."
 MyRoomError,1,Error_MesetaCheck_DB_Delete,Ocurrió un problema al actualizar tu meseta.<br>No se pueden quitar los muebles.<br><br>[No. 1103]
 MyRoomError,1,Error_MyRoomDB_MissMatch,Los muebles le han sido devueltos automáticamente debido a un problema con uno o más.
 MyRoomError,1,Error_MyRoomDB_MissMatch_NG,Hubo un problema con uno o más muebles. Los artículos serán devueltos una vez finalizada la remodelación.
@@ -11304,7 +11304,7 @@ MyRoomError,1,Error_RoomGoods_PhotoGachan_MyRoomDB,Ocurrió un error durante el 
 MyRoomError,1,Error_RoomGoods_PhotoGachan_Access,El acceso no está disponible actualmente debido a<br>su uso por otro jugador.
 MyRoomError,1,Error_RoomGoods_PhotoGachan_PrizeItemMax,No se pueden agregar más elementos.
 MyRoomError,1,Error_RoomGoods_PresentBox_Not_PremiumUser,No se puede colocar una caja de regalo porque actualmente<br>no está dentro del periodo de efecto del Set Premium.
-MyRoomError,1,Error_RoomGoods_PresentBoxInReform,y<br>no se pueden quitar muebles.<br>Por favor, retira la caja de regalo e inténtalo de nuevo.
+MyRoomError,1,Error_RoomGoods_PresentBoxInReform,"y<br>no se pueden quitar muebles.<br>Por favor, retira la caja de regalo e inténtalo de nuevo."
 MyRoomError,1,Error_RoomGoods_MusicDisc_Same,El Disco de Música<br>seleccionado ya está registrado.
 MyRoomError,1,Error_RoomGoodsNone,No hay muebles que quitar.
 MyRoomError,1,Error_LayoutChange_FreeRoom,"Debido a que se ha colocado una caja de regalo,<br>el tamaño de la habitación no se puede cambiar mediante remodelación, y<br>no se pueden quitar muebles.<br>Por favor, retira la caja de regalo e inténtalo de nuevo."
@@ -11312,8 +11312,8 @@ MyRoomError,1,Error_ReformChicket_Premiere,"efecto, o que tu [Derecho a usar Apo
 MyRoomError,1,Error_MaxSetOver,No hay muebles que quitar.
 MyRoomError,1,Error_PresentBoxMesetaOver,No se puede almacenar ya que la meseta contenida<br>en la caja de regalo no es válida.<br><br>[No. 1114]
 MyRoomError,1,Error_RoomGoods_PhotoGachanInReform,"Falló la remodelación.<br>Es posible que el Premium no esté actualmente en<br>efecto, o que tu [Derecho a usar Aposentos Personales] ha expirado.<br><br>[No. 1113]"
-MyRoomError,1,Error_RoomGoods_PhotoGachanInPrizeItem,Máquina de Cápsulas.<br>Por favor, retira todos los premios antes de intentar<br>quitar la máquina.
-MyRoomError,1,Error_RoomGoods_PhotoGachan_MissMatchMeseta,La cantidad establecida para la Máquina de Cápsulas Fotónicas ha cambiado.<br>Por favor, intenta acceder a ella de nuevo.
+MyRoomError,1,Error_RoomGoods_PhotoGachanInPrizeItem,"Máquina de Cápsulas.<br>Por favor, retira todos los premios antes de intentar<br>quitar la máquina."
+MyRoomError,1,Error_RoomGoods_PhotoGachan_MissMatchMeseta,"La cantidad establecida para la Máquina de Cápsulas Fotónicas ha cambiado.<br>Por favor, intenta acceder a ella de nuevo."
 MyRoomError,1,Error_RoomGoods_PhotoGachan_Not_PremiumUser,No puedes agregar premios a la Máquina de Cápsulas Fotónicas<br>porque actualmente no está dentro del periodo de efecto<br>del Set Premium.
 MyRoomError,1,Error_RoomGoods_SupportPartner_Entry,No se pudo convocar al Auxiliar.
 MyRoomError,1,Error_RoomGoods_MiniRoomNG,"pueden, sin embargo, ser colocados en Aposentos Personales<br>con Diseño A o Diseño B."
@@ -11641,7 +11641,7 @@ MySet,1,MySetPopup05,Sobrescribir el equipo actual
 MySet,1,MySetPopup06,Sobrescribir sin cambiar el nombre
 MySet,1,MySetPopup07,Agregar equipamiento
 MySet,1,MySetMessage02,r>contenido de [Carga $(0) $(1)].<br>¿Estás seguro de que deseas continuar?
-MySet,1,MySetMessage03,Estás a punto de cambiar el nombre de [Carga $(0) $(1)].<br>Por favor, ingresa un nuevo nombre.
+MySet,1,MySetMessage03,"Estás a punto de cambiar el nombre de [Carga $(0) $(1)].<br>Por favor, ingresa un nuevo nombre."
 MySet,1,MySetMessage04,Estás a punto de eliminar [Carga $(0) $(1)].<br>¿Estás seguro de que deseas continuar?
 MySet,1,MySetMessage05,t estado de clase y equipamiento.<br>¿Estás seguro de que deseas continuar?
 MySet,1,MySetMessage06,<br><yellow>Nota: El nombre de la Carga no cambiará.<c><br>¿Estás seguro de que deseas continuar?
@@ -11651,10 +11651,10 @@ MySet,1,RenameError01,El nombre especificado no se puede utilizar.
 MySet,1,ServerError01,"No se puede procesar debido a un problema<br>con el servidor.<br><br>Por favor, espera un momento e inténtalo de nuevo."
 MySet,1,ServerError02,"No se puede procesar debido a un problema<br>con la base de datos.<br><br>Por favor, espera un momento e inténtalo de nuevo."
 MySet,1,ServerError03,"No se puede procesar debido a un problema imprevisto<br>con el servidor.<br><br>Por favor, espera un momento e inténtalo de nuevo."
-MySet,1,ServerError04,"Error al procesar debido a un problema con<br>los datos contenidos en la ranura seleccionada."
-MySet,1,ServerError05,"Error al procesar debido a un problema con<br>la clase seleccionada."
-MySet,1,ServerError06,"Error al procesar debido a un problema con el<br>Árbol de Habilidades de la Clase Principal seleccionada."
-MySet,1,ServerError07,"Error al procesar debido a un problema con el<br>Árbol de Habilidades de la Sub-Clase seleccionada."
+MySet,1,ServerError04,Error al procesar debido a un problema con<br>los datos contenidos en la ranura seleccionada.
+MySet,1,ServerError05,Error al procesar debido a un problema con<br>la clase seleccionada.
+MySet,1,ServerError06,Error al procesar debido a un problema con el<br>Árbol de Habilidades de la Clase Principal seleccionada.
+MySet,1,ServerError07,Error al procesar debido a un problema con el<br>Árbol de Habilidades de la Sub-Clase seleccionada.
 MySet,1,ServerError08,No se puede cambiar de clase porque actualmente<br>estás realizando una misión.
 MySet,1,EquipError,Hay uno o más artículos que no se pueden<br>equipar debido a las siguientes razones.
 MySet,1,EquipError01,- Ha ocurrido un error inesperado.
@@ -11928,7 +11928,7 @@ Gat,1,Menu_Achievement07,Logros de la Tierra
 Gat,1,Help_Top_Title,REUNION
 Gat,1,Help_Status_Title,ESTADISTICAS DE REUNION
 Gat,1,Help_Achievement_Title,LOGROS DE REUNION DISPONIBLES
-Gat,1,Help_Top_Explain,"<c f0df60>Aquí puedes consultar varios logros que se pueden obtener mientras recolectas.<c>"
+Gat,1,Help_Top_Explain,<c f0df60>Aquí puedes consultar varios logros que se pueden obtener mientras recolectas.<c>
 Gat,1,Help_Status_Explain,<c f0df60>Lista de estadísticas relacionadas con la recolección<c>
 Gat,1,Help_Achievement_Explain,El nivel de recolección también aumentará cuando se haya desbloqueado un número determinado de logros.<c>
 Gat,1,Menu_Gat_Info,Recopilacion de informacion
