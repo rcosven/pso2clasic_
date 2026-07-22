@@ -2638,7 +2638,7 @@ PartyMenu,1,LeaderMenuText05,"Los miembros<c> <br>también regresarán a casa.<b
 PartyMenu,1,LeaderMenuText05ex,<c><br><br>¿Estás seguro de que quieres disolver el grupo?
 PartyMenu,1,LeaderMenuText05TriggerQuest,¿Estás seguro de que quieres disolver el grupo?
 PartyMenu,1,LeaderMenuText06,Los cambios<br>en tus ajustes se perderán.<br>¿Estás seguro de que deseas continuar?
-PartyMenu,1,LeaderMenuText07TriggerQuest,Si abandonas la misión durante una Trigger Quest<br><yellow>todos los miembros que se hayan unido, incluyendo <br>a los miembros de la multi-party, serán forzados a abandonar la <br>misión<c> también, y cualquier miembro en el campo será <br>devuelto al Lobby de ARKS. Nota: Solo aplicable <br>cuando aún quede tiempo o al menos una oportunidad restante <br>para volver a aceptar la misión. Además, todos los efectos <br>aplicados durante la misión serán eliminados.<br><br><red>Ten en cuenta que cualquier meseta u objetos usados <br>para iniciar la misión no serán devueltos.<c><br>¿Estás seguro de que quieres abandonar la misión?
+PartyMenu,1,LeaderMenuText07TriggerQuest,"Si abandonas la misión durante una Trigger Quest<br><yellow>todos los miembros que se hayan unido, incluyendo <br>a los miembros de la multi-party, serán forzados a abandonar la <br>misión<c> también, y cualquier miembro en el campo será <br>devuelto al Lobby de ARKS. Nota: Solo aplicable <br>cuando aún quede tiempo o al menos una oportunidad restante <br>para volver a aceptar la misión. Además, todos los efectos <br>aplicados durante la misión serán eliminados.<br><br><red>Ten en cuenta que cualquier meseta u objetos usados <br>para iniciar la misión no serán devueltos.<c><br>¿Estás seguro de que quieres abandonar la misión?"
 PartyMenu,1,PartyConfigTab01,Configuraciones básicas
 PartyMenu,1,PartyConfigTab02,Condiciones para unirse al partido
 PartyMenu,1,PartyConfigTab03,Configuración de contraseña
@@ -19228,9 +19228,9 @@ ActionCustomizeMenu,1,Small_Title6,Resultado de personalización
 ActionCustomizeMenu,1,Small_Title7,N / A
 ActionCustomizeMenu,1,Button1,Confirmar
 ActionCustomizeMenu,1,Button2,Atrás
-ActionCustomizeMenu,1,Button3,Eliminar
+ActionCustomizeMenu,1,Button3,Remover
 ActionCustomizeMenu,1,Button4,texto ficticio
-ActionCustomizeMenu,1,Message_Confirm1,Eliminar
+ActionCustomizeMenu,1,Message_Confirm1,Esto implementará tu personalización de Técnicas Artísticas.<br>¿Estás seguro de que deseas continuar?<br><yellow>*Las personalizaciones se guardan para cada PA/Técnica.<br>*Las personalizaciones existentes se sobrescribirán en caso de superposición.<c>
 ActionCustomizeMenu,1,Message_Finish,Personalización de Tech Arts implementada.
 ActionCustomizeMenu,1,Message_ActionChange,El tipo de personalización de Tech Arts cambió.
 ActionCustomizeMenu,1,Message_ActionLift,Se eliminó la personalización de Tech Arts.
@@ -19343,29 +19343,29 @@ AMSkillExplanation,0,ArsenalModule:Sword:BoostArcane,Esquiva hábilmente con For
 AMSkillExplanation,1,ArsenalModule:Sword:BoardControl,Recupera HP y PP cuando destruyes enemigos cercanos.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
 AMSkillExplanation,1,ArsenalModule:Sword:BurnerLinkage,Esquiva hábilmente con Forward Thrust.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
 AMSkillExplanation,1,ArsenalModule:Sword:Quicksilver,Recupera HP y PP cuando destruyes enemigos cercanos.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
-AMSkillExplanation,1,ArsenalModule:Scythe:LacerationMarker,nts you use after this attack are changed to their final attack.<br><yellow>*Can only be used with VA-1SRM Garm.<c>
-AMSkillExplanation,1,ArsenalModule:Scythe:Vengeance,Este efecto se activará incluso si se utiliza un arma diferente.<br><yellow> *Solo se puede utilizar con VA-2MRM Nidhoggr. <c>
-AMSkillExplanation,1,ArsenalModule:Scythe:Serenity,cy aumenta según la duración del retraso.<br><yellow> *Solo se puede utilizar con VA-2MRM Nidhoggr. <c>
+AMSkillExplanation,1,ArsenalModule:Scythe:LacerationMarker,"Marca a los enemigos golpeándolos un número determinado de veces con tus ataques.<br>Puedes marcar a un enemigo hasta dos veces, reduciendo el daño que recibes según la cantidad de marcas.<br>Golpear a un enemigo marcado con Ejecución Nidhoggr provocará una explosión, causando ataques adicionales de una potencia que dependerá del número de marcas.<br>*Solo se puede usar con VA-2MRM Nidhoggr."
+AMSkillExplanation,1,ArsenalModule:Scythe:Vengeance,"Genera un ataque adicional cuando un ataque se anula con éxito.<br>Mientras Nidhoggr esté configurado como una de las armas principales, este efecto se activará incluso si se está usando otra arma.<br><yellow>*Solo se puede usar con VA-2MRM Nidhoggr.<c>"
+AMSkillExplanation,1,ArsenalModule:Scythe:Serenity,Retrasar tu siguiente ataque tras uno genera un ataque adicional.<br>La potencia del ataque adicional aumenta según la duración del retraso.<br><yellow>*Solo se puede usar con VA-2MRM Nidhoggr.<c>
 AMSkillExplanation,1,ArsenalModule:Scythe:Efficiency,Golpear a un enemigo con el quinto ataque normal extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-2MRM Nidhoggr. <c>
-AMSkillExplanation,1,ArsenalModule:Scythe:FocusDebuff,cy aumenta según la duración del retraso.<br><yellow> *Solo se puede utilizar con VA-2MRM Nidhoggr. <c>
-AMSkillExplanation,1,ArsenalModule:Railgun:Spark,Golpear a un enemigo con el quinto ataque normal extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-2MRM Nidhoggr. <c>
-AMSkillExplanation,1,ArsenalModule:Railgun:DodgeArcane,M Hidra. <c>
-AMSkillExplanation,1,ArsenalModule:Railgun:TacticalReload,nly be used with VA-3LRM Hydra .<c>
+AMSkillExplanation,1,ArsenalModule:Scythe:FocusDebuff,"Al golpear a un enemigo con la explosión del Marcador de Debilidad de Nidhoggr, aumentas temporalmente el daño que infliges.<br>Este efecto se reduce contra algunos enemigos poderosos.<br><yellow>*Solo se puede usar con VA-2MRM Nidhoggr.<c>"
+AMSkillExplanation,1,ArsenalModule:Railgun:Spark,"Se llena un indicador al golpear a los enemigos un cierto número de veces.<br>Una vez que el indicador esté lleno, un cierto número de ataques normales se convertirán en ataques poderosos, y mientras el efecto esté activo,<br>la cantidad de PP que recupera cada arma de forma natural aumentará.<br><yellow>*Solo se puede usar con VA-3LRM Hydra.<c>"
+AMSkillExplanation,1,ArsenalModule:Railgun:DodgeArcane,"Contraataca automáticamente al esquivar un ataque enemigo con Paso lateral o Evasión rápida mientras tienes fijado el objetivo.<br>Mientras Hydra esté configurada como una de las armas principales, este efecto se activará incluso si se usa otra arma.<br><yellow>*Solo se puede usar con la Hydra VA-3LRM.<c>"
+AMSkillExplanation,1,ArsenalModule:Railgun:TacticalReload,"Al pulsar el botón de acción del arma tras algunos ataques, como el último de un combo, el siguiente ataque normal de la Hydra se ejecutará a una mayor cadencia de fuego.<br><yellow>*Solo se puede usar con la Hydra VA-3LRM.<c>"
 AMSkillExplanation,1,ArsenalModule:Railgun:Perpetual,Un ataque normal se convierte en un ataque poderoso cuando los PP son 5 o menos.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
 AMSkillExplanation,1,ArsenalModule:Railgun:Payback,Golpear a un enemigo con Hydra Termination extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
-AMSkillExplanation,1,ArsenalModule:Broom:3DGraze,Un ataque normal se convierte en un ataque poderoso cuando los PP son 5 o menos.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
+AMSkillExplanation,1,ArsenalModule:Broom:3DGraze,"Cuando los enemigos permanecen dentro de un cierto rango o si los golpeas con ataques, aparecerán hasta 3 estrellas.<br>Usar un ataque de acción de arma en ese estado consumirá las estrellas y hará que tus proyectiles explosivos sean más potentes según su cantidad.<br>Pierdes 1 estrella cuando los enemigos están fuera de alcance por un tiempo, recibes un ataque o realizas una esquiva lateral.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
 AMSkillExplanation,1,ArsenalModule:Broom:BlinkCombo,Golpear a un enemigo con Hydra Termination extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
-AMSkillExplanation,1,ArsenalModule:Broom:Euphoria,ylla. <c>
-AMSkillExplanation,1,ArsenalModule:Broom:Retaliate,imum of 3 highly mobile attacks.<br><yellow>*Can only be used with VA-4XRM Scylla.<c>
-AMSkillExplanation,1,ArsenalModule:Broom:Annihilation,ylla. <c>
+AMSkillExplanation,1,ArsenalModule:Broom:Euphoria,"Al golpear a un enemigo con un ataque de acción de arma mientras tienes 3 estrellas, te vuelves temporalmente invulnerable.<br>No recuperas PP de forma natural mientras estás en este estado de invulnerabilidad, pero la potencia de Represalia de Scylla aumenta.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
+AMSkillExplanation,1,ArsenalModule:Broom:Retaliate,Ataca automáticamente cuando los enemigos permanezcan dentro de un cierto rango y no recibas daño.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>
+AMSkillExplanation,1,ArsenalModule:Broom:Annihilation,"Al golpear a un enemigo con Scylla Retaliation, se crea temporalmente un campo a tu alrededor que ocasionalmente produce ataques en una amplia zona.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
 AMSkillExplanation,1,ArsenalModule:BackPack01:Passive,"Me quedé quieto por un tiempo.<br>Además, tu velocidad de movimiento aumenta.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>"
 AMSkillExplanation,1,ArsenalModule:BackPack01:StepCombo,Le permite realizar dos pasos laterales consecutivos.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
 AMSkillExplanation,1,ArsenalModule:BackPack01:DodgeRicochet,Produce un ataque adicional cuando esquivas un ataque.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
-AMSkillExplanation,1,ArsenalModule:Backpack02:Passive,afnir. <c>
+AMSkillExplanation,1,ArsenalModule:Backpack02:Passive,"Genera automáticamente ataques de apoyo periódicos.<br>Estos ataques de apoyo se vuelven más poderosos después de equipar M.A.R.S. durante un tiempo.<br>Además, el daño que recibes se reduce una vez que tus PV están por debajo de cierto nivel.<br><yellow>*Solo se puede usar con SA-2HDP Fafnir.<c>"
 AMSkillExplanation,1,ArsenalModule:Backpack02:DefenseBuffArea,golpes de ataque.<br><yellow> *Solo se puede utilizar con SA-2HDP Fafnir. <c>
 AMSkillExplanation,1,ArsenalModule:Backpack02:GuardEmp,Produce un ataque adicional cuando anulas con éxito un ataque.<br><yellow> *Solo se puede utilizar con SA-2HDP Fafnir. <c>
-AMSkillExplanation,1,ArsenalModule:Backpack03:Passive,-3HFP Lindworm. <c>
-AMSkillExplanation,1,ArsenalModule:Backpack03:EcmLockOn,Ud.<br>Algunos enemigos poderosos no se ven afectados.<br><yellow> *Solo se puede utilizar con SA-3HFP Lindworm. <c>
+AMSkillExplanation,1,ArsenalModule:Backpack03:Passive,"Genera automáticamente ataques de apoyo periódicos.<br>Estos ataques de apoyo se vuelven más poderosos después de equipar M.A.R.S. durante un tiempo.<br>Además, aumenta tu tasa de recuperación de PP natural y la tasa de recuperación de PP durante los ataques.<br><yellow>*Solo se puede usar con SA-3HFP Lindworm.<c>"
+AMSkillExplanation,1,ArsenalModule:Backpack03:EcmLockOn,"Aplica un efecto negativo a los enemigos dentro de tu campo de visión, reduciendo el daño que te infligen.<br>Algunos enemigos poderosos no se ven afectados.<br>*Solo se puede usar con SA-3HFP Lindworm."
 AMSkillExplanation,1,ArsenalModule:Backpack03:CountShot,Produce un ataque adicional después de golpear una cierta cantidad de veces.<br><yellow> *Solo se puede utilizar con SA-3HFP Lindworm. <c>
 AMSkillExplanation,1,ArsenalModule:Boost:Dodge,Es el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
 AMSkillExplanation,1,ArsenalModule:Boost:Approach,Saltar con el avance presionado mientras estás fijado cambia el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
@@ -19455,28 +19455,28 @@ AMSkillName,1,ArsenalModule:Parameter:CritUp,Aumento del índice de golpes crít
 AMSkillName,1,ArsenalModule:Parameter:CritDmgUp,Golpe crítico<br>Aumento de potencia
 AMSkillName,1,ArsenalModule:Parameter:HpUp,HP arriba
 AMSkillName,1,ArsenalModule:Parameter:HpRecovery,Recuperación natural de HP
-AMSkillName,1,ArsenalModule:Parameter:PpUp,PP arriba
-AMSkillName,1,ArsenalModule:Parameter:AtkPpUp,Ofensiva<br>PP Recuperación arriba
+AMSkillName,1,ArsenalModule:Parameter:PpUp,PP Up
+AMSkillName,1,ArsenalModule:Parameter:AtkPpUp,Ofensiva<br>PP Recovery Up
 AMBackpackExplanation,1,0,<yellow>Armamento secundario de alta movilidad<c><br>Tiene características que mejoran la<br>capacidad de movimiento y el rendimiento de evasión.<br>También realiza ataques de apoyo automáticos.
 AMBackpackExplanation,1,1,<yellow>Armamento secundario de alta durabilidad<c><br>Tiene características que mejoran la<br>capacidad de guardia y el rendimiento de durabilidad.<br>También realiza ataques de apoyo automáticos.
 AMBackpackExplanation,0,2,<yellow>支援型のサブ兵装<c><br>PP回復能力を向上させ、<br>前方のエネミーの攻撃力を<br>低下させる特性をもつ。<br>自動で支援攻撃も行う。
 AMBackpackExplanation,0,0,<yellow> Un subarmamento de alta movilidad<c><br> Mejora el movimiento y la evasión.<br>Proporciona ataques de soporte automatizados.
 AMBackpackExplanation,0,1,<yellow> Un subarmamento de gran durabilidad<c><br> Mejora la guardia y la resistencia.<br>Proporciona ataques de soporte automatizados.
-AMBackpackExplanation,1,2,ck<br>poder de los enemigos frente a ti.<br>Proporciona ataques de soporte automatizados.
+AMBackpackExplanation,1,2,<yellow>Un armamento secundario de apoyo<c><br>Mejora la recuperación de PP y reduce el poder de ataque<br>de los enemigos que tienes delante.<br>Proporciona ataques de apoyo automáticos.
 AMBackpackName,0,0,SA-1HMP フェンリル
 AMBackpackName,0,1,SA-2HDP ファブニル
 AMBackpackName,0,2,SA-3HFP リントヴルム
 AMBackpackName,1,0,SA-1HMP Fenrir
 AMBackpackName,1,1,SA-2HDP Fafnir
 AMBackpackName,1,2,SA-3HFP Lindworm
-AMBackpackName,1,0,<yellow>Armamento principal para combate cuerpo a cuerpo<c><br>Es un armamento tipo gran espada<br>que aniquila a los enemigos circundantes.<br>Tiene la característica de recuperar HP<br>al impactar ataques normales.
-AMBackpackName,1,1,<yellow>Armamento principal para combate cuerpo a cuerpo<c><br>Es un armamento tipo guadaña grande<br>que barre a los enemigos circundantes.<br>Tiene la característica de bloquear los ataques enemigos<br>mientras se blande la guadaña.
+AMBackpackName,1,0,SA-1HMP Fenrir
+AMBackpackName,1,1,SA-2HDP Fafnir
 AMWeaponExplanation,0,2,<yellow>遠距離戦闘向きのメイン兵装<c><br>大砲型の兵装で、<br>遠距離のエネミーを撃ちぬく。<br>周囲の味方を回復する<br>支援弾を撃つこともできる。
 AMWeaponExplanation,0,3,<yellow>特殊戦闘向きのメイン兵装<c><br>長杖型の兵装で、<br>あらゆる距離のエネミーを攻撃する。<br>可変機構をもち、<br>高速移動しながら攻撃もできる。
 AMWeaponExplanation,0,0,<yellow>遠距離戦闘向きのメイン兵装<c><br>大砲型の兵装で、<br>遠距離のエネミーを撃ちぬく。<br>周囲の味方を回復する<br>支援弾を撃つこともできる。
 AMWeaponExplanation,0,1,enemigos cercanos.<br>Se defiende de los ataques enemigos mientras<br>mueves la guadaña.
-AMWeaponExplanation,1,2,enemigos rudos desde<br>lejos. También puede disparar rondas que curan a<br>aliados cercanos.
-AMWeaponExplanation,1,3,enemigos cercanos.<br>Se defiende de los ataques enemigos mientras<br>mueves la guadaña.
+AMWeaponExplanation,1,2,<yellow>Un armamento principal diseñado para el combate a distancia<c><br>Este lanzador arrasa con los enemigos desde lejos.<br>También puede disparar proyectiles que curan a los aliados cercanos.
+AMWeaponExplanation,1,3,<yellow>Un armamento principal creado para la guerra especial<c><br>Esta vara ataca a los enemigos a cualquier distancia.<br>Puede transformarse y atacar mientras se desplaza a gran velocidad.
 AMWeaponName,0,0,VA-1SRM ガルム
 AMWeaponName,0,1,VA-2MRM ニズヘッグ
 AMWeaponName,0,2,VA-3LRM ハイドラ
@@ -19485,20 +19485,20 @@ AMWeaponName,1,0,VA-1SRM Garm
 AMWeaponName,1,1,VA-2MRM Nidhoggr
 AMWeaponName,1,2,VA-3LRM Hydra
 AMWeaponName,1,3,VA-4XRM Scylla
-SubStyleExplanation,1,00,<yellow>Estilo que apoya la durabilidad y el contraataque<c><br>Posee habilidades que ayudan en los contraataques.<br>Bloquear ataques fortalece algunas habilidades.
-SubStyleExplanation,1,01,<yellow>Estilo que apoya los ataques continuos y la frecuencia de golpes<c><br>Posee habilidades que recuperan PP mediante ataques continuos.<br>Golpear al enemigo varias veces fortalece algunas habilidades.
+SubStyleExplanation,1,00,<yellow>Un estilo que favorece la resistencia y los contraataques.<c><br>Este estilo cuenta con habilidades que favorecen los contraataques. Algunas habilidades también se potencian al prevenir ataques.
+SubStyleExplanation,1,01,<yellow>Un estilo que permite realizar combos y usar múltiples acciones.<c><br>Este estilo cuenta con habilidades que recuperan PP con combos. Algunas habilidades también se potencian al conectar varios ataques.
 SubStyleExplanation,0,02,<yellow>ダウンやチャージをサポートするスタイル<c><br>チャージ攻撃や大技の発動を補助するスキルを持つ。<br>ダウン値を蓄積することで、一部のスキルが強化される。
 SubStyleExplanation,0,00,lls que apoyan los contraataques. Algunas habilidades también se mejoran al prevenir ataques.
 SubStyleExplanation,0,01,que recuperan PP con ataques combinados. Algunas habilidades también se mejoran al realizar múltiples ataques.
-SubStyleExplanation,1,02,lls que apoyan los contraataques. Algunas habilidades también se mejoran al prevenir ataques.
-SubStyleExplanation,1,00,Defensivo
-SubStyleExplanation,1,01,Ofensivo
+SubStyleExplanation,1,02,<yellow>Un estilo que favorece derribar enemigos y cargar ataques.<c><br>Este estilo cuenta con habilidades que potencian los ataques cargados y técnicas poderosas. Algunas habilidades también se mejoran al acumular tu Factor de Derribo.
+SubStyleExplanation,1,00,<yellow>Un estilo que favorece la resistencia y los contraataques.<c><br>Este estilo cuenta con habilidades que favorecen los contraataques. Algunas habilidades también se potencian al prevenir ataques.
+SubStyleExplanation,1,01,<yellow>Un estilo que permite realizar combos y usar múltiples acciones.<c><br>Este estilo cuenta con habilidades que recuperan PP con combos. Algunas habilidades también se potencian al conectar varios ataques.
 SubStyleName,0,02,セレスト
 SubStyleName,0,00,Adrás
 SubStyleName,0,01,Bombardeo aéreo
-SubStyleName,1,02,celeste
-SubStyleSkillExplanation,1,HelixQuickBlast,Hold the Photon Blast button again after activating a Photon Blast to activate an After Blast.
-SubStyleSkillExplanation,1,HelixBlastEcho,"For a certain period after activating an After Blast, incoming damage is gradually reduced in up to four stages over time, and damage dealt (excluding Photon Blasts and After Blasts) is increased.<br>Reduce the time taken to progress to the next stage by successfully negating enemy attacks, up to four times when this effect activates."
+SubStyleName,1,02,Celeste
+SubStyleSkillExplanation,1,HelixQuickBlast,Mantén pulsado de nuevo el botón Photon Blast después de activar un Photon Blast para activar un After Blast.
+SubStyleSkillExplanation,1,HelixBlastEcho,"Tras activar un After Blast, durante un periodo determinado, el daño recibido se reduce gradualmente en hasta cuatro fases, y el daño infligido (excepto con Photon Blasts y After Blasts) aumenta.<br>Reduce el tiempo necesario para avanzar a la siguiente fase al anular con éxito los ataques enemigos, hasta cuatro veces cuando se activa este efecto."
 SubStyleSkillExplanation,0,HelixTriggerAttack,が<br>可能になるまでの時間も短縮する。<br>また、１度の発動につき最大３回まで、<br>攻撃の無効化に成功するたびに、<br>次の発動までの時間が短縮される。
 SubStyleSkillExplanation,0,HelixAttackDrain,アフターブラスト発動後、一定時間、<br>時間経過とともに最大４段階まで段階的に<br>受けるダメージを軽減し、<br>フォトンブラストとアフターブラスト以外の<br>与えるダメージが増加する。<br>また、１度の発動中に最大４回まで、<br>攻撃の無効化に成功するたびに、<br>段階の上昇に必要な時間が短縮される。
 SubStyleSkillExplanation,0,HelixPerfection,武器アクションを発動し、<br>直後に攻撃を受けなかった場合、<br>その武器アクションを<br>攻撃の回避または無効化に成功した状態にする。<br>さらに追加攻撃を１つストックし、<br>次に攻撃を当てたとき、追加攻撃を行う。
@@ -19523,18 +19523,18 @@ SubStyleSkillExplanation,0,KetosPBRecastQuick,フォトンブラストの<br>再
 SubStyleSkillExplanation,0,KetosChargeParrying,る。<br>さらにこの効果中に攻撃を無効化または軽減するか<br>この効果中にアクティブスキルで攻撃を回避すると<br>追加攻撃を１つストックし、<br>次に攻撃を当てたとき、追加攻撃を行う。
 SubStyleSkillExplanation,0,HelixQuickBlast,Mantenga presionado el botón Photon Blast nuevamente después de activar un Photon Blast para activar un After Blast.
 SubStyleSkillExplanation,0,HelixBlastEcho,o cuatro veces cuando se activa este efecto.
-SubStyleSkillExplanation,1,HelixTriggerAttack,Mantenga presionado el botón Photon Blast nuevamente después de activar un Photon Blast para activar un After Blast.
-SubStyleSkillExplanation,1,HelixAttackDrain,o cuatro veces cuando se activa este efecto.
-SubStyleSkillExplanation,1,HelixPerfection,"ataque, evasión o negación.<br>Obtienes una reserva de ataque adicional, que desata un ataque adicional cuando aterriza tu próximo ataque."
+SubStyleSkillExplanation,1,HelixTriggerAttack,"Periódicamente, al golpear a un enemigo con PA o Técnicas, se producirá un ataque adicional.<br>Esto llena la barra de Explosión de Fotones y reduce su tiempo de recarga.<br>Cada vez que se active, reduce el tiempo de recarga de este efecto hasta tres veces al anular con éxito los ataques enemigos."
+SubStyleSkillExplanation,1,HelixAttackDrain,"Tras activar un After Blast, el primer ataque normal que realices te otorgará una mejora durante un tiempo determinado.<br>El daño infligido aumenta y recuperas puntos de vida con cada ataque.<br>Cuando recuperas puntos de vida con este efecto, tus puntos de vida máximos aumentan durante un tiempo determinado."
+SubStyleSkillExplanation,1,HelixPerfection,"Si activas la Acción de Arma,<br>pero no recibes un ataque inmediatamente,<br>la Acción de Arma cuenta como una<br>evasión o negación de ataque exitosa.<br>Obtienes una reserva de ataque adicional, <br>que desata un ataque extra cuando tu próximo ataque impacte."
 SubStyleSkillExplanation,1,AjaxQuickBlast,Mantenga presionado el botón Photon Blast nuevamente después de activar un Photon Blast para activar un After Blast.
-SubStyleSkillExplanation,1,AjaxBlastEcho,"ataque, evasión o negación.<br>Obtienes una reserva de ataque adicional, que desata un ataque adicional cuando aterriza tu próximo ataque."
-SubStyleSkillExplanation,1,AjaxTriggerAttack,"An additional attack will periodically occur when you hit an enemy with PA or Techniques.<br>This fills the Photon Blast gauge and reduces the Photon Blast cooldown.<br>Each time this activates, reduce the cooldown of this effect up to three times by reaching a certain number of attack hits."
-SubStyleSkillExplanation,1,AjaxDecayBullet,ed para ataques a estos enemigos.
-SubStyleSkillExplanation,1,AjaxCascade,"When you activate the same PA or Technique<br>three times in a row, or hold the button to activate a PA with a continuous attack for a certain amount of time, PP is recovered and Max PP is temporarily increased.<br>Additionally, one extra attack is stocked which will be unleashed when your next attack lands."
+SubStyleSkillExplanation,1,AjaxBlastEcho,"Tras activar un After Blast, durante un periodo determinado, el daño recibido se reduce gradualmente en hasta cuatro fases, mientras que el daño infligido (excepto en los Photon Blasts y After Blasts) aumenta.<br>Reduce el tiempo necesario para avanzar a la siguiente fase al alcanzar un número determinado de impactos, hasta cuatro veces cada vez que se active."
+SubStyleSkillExplanation,1,AjaxTriggerAttack,"Periódicamente, al golpear a un enemigo con PA o Técnicas, se producirá un ataque adicional.<br>Esto llena la barra de Explosión de Fotones y reduce su tiempo de recarga.<br>Cada vez que se activa, reduce el tiempo de recarga de este efecto hasta tres veces al alcanzar un cierto número de golpes de ataque."
+SubStyleSkillExplanation,1,AjaxDecayBullet,"Tras activar un After Blast, el primer ataque normal que impacte a un enemigo debilitará a los enemigos cercanos.<br>El daño que infliges a los enemigos debilitados aumentará y se producirán ataques adicionales cuando tus ataques los alcancen.<br>La potencia de los ataques dirigidos a estos enemigos siempre aumentará al máximo en función de la distancia."
+SubStyleSkillExplanation,1,AjaxCascade,"Cuando activas la misma PA o Técnica tres veces seguidas, o mantienes pulsado el botón para activar una PA con un ataque continuo durante un tiempo determinado, recuperas PP y tu PP máximo aumenta temporalmente.<br>Además, se acumula un ataque extra que se ejecutará con tu próximo ataque."
 SubStyleSkillExplanation,1,KetosQuickBlast,Mantenga presionado el botón Photon Blast nuevamente después de activar un Photon Blast para activar un After Blast.
-SubStyleSkillExplanation,1,KetosBlastEcho,hasta cuatro veces cada vez que se activa.
-SubStyleSkillExplanation,1,KetosTriggerAttack,cuenta del factor de reducción.
-SubStyleSkillExplanation,1,KetosIteration,"After activating an After Blast, the first active skill used that consumes a gauge or Focus Gauge will increase damage dealt for a certain period.<br>The gauge or Focus Gauge consumed with that skill will recover a certain amount, and the skill’s cooldown will be reduced."
+SubStyleSkillExplanation,1,KetosBlastEcho,"Tras activar un After Blast, el daño recibido se reduce gradualmente en hasta cuatro etapas, mientras que el daño infligido (excepto Photon Blasts y After Blasts) aumenta. Acumula una cierta cantidad de Down Factor para reducir el tiempo necesario para avanzar a la siguiente etapa, hasta cuatro veces cada vez que se active."
+SubStyleSkillExplanation,1,KetosTriggerAttack,"Periódicamente, al golpear a un enemigo con PA o Técnicas, se producirá un ataque adicional.<br>Esto llena la barra de Explosión de Fotones y reduce su tiempo de recarga.<br>Cada vez que se activa, reduce el tiempo de recarga de este efecto hasta tres veces al acumular cierta cantidad de Factor de Reducción."
+SubStyleSkillExplanation,1,KetosIteration,"Tras activar un After Blast, la primera habilidad activa que consuma una barra de energía o de concentración aumentará el daño infligido durante un tiempo determinado.<br>La barra de energía o de concentración consumida con dicha habilidad se recuperará parcialmente y su tiempo de reutilización se reducirá."
 SubStyleSkillExplanation,1,HelixDamageUp,Aumenta la potencia de ataque.
 SubStyleSkillExplanation,1,HelixPPUp,Aumenta el PP máximo.
 SubStyleSkillExplanation,1,HelixPBRecastQuick,Reduce el tiempo antes de que se pueda volver a utilizar Photon Blast.
@@ -19544,7 +19544,7 @@ SubStyleSkillExplanation,1,AjaxPBRecastQuick,Reduce el tiempo antes de que se pu
 SubStyleSkillExplanation,1,KetosDamageUp,Aumenta la potencia de ataque.
 SubStyleSkillExplanation,1,KetosPPUp,Aumenta el PP máximo.
 SubStyleSkillExplanation,1,KetosPBRecastQuick,Reduce el tiempo antes de que se pueda volver a utilizar Photon Blast.
-SubStyleSkillExplanation,1,KetosChargeParrying,"Perfecto, hay un ataque adicional almacenado para tu próximo ataque."
+SubStyleSkillExplanation,1,KetosChargeParrying,"Anula los ataques enemigos y reduce el daño de algunos ataques cuando: comiences a cargar un ataque que no sea una Acción de Arma, uses una habilidad activa que consuma una barra de Concentración o ataques con una Técnica Talis desplegada. Si un ataque es anulado, su daño se reduce o es esquivado con una habilidad activa durante este efecto, se acumula un ataque adicional para tu próximo ataque."
 SubStyleSkillName,0,HelixTriggerAttack,アドラス<br>トリガーアタック
 SubStyleSkillName,0,HelixAttackDrain,アドラス<br>アブソープション
 SubStyleSkillName,0,HelixPerfection,アドラス<br>パーフェクション
@@ -19568,7 +19568,7 @@ SubStyleSkillName,0,KetosDamageUp,威力アップ
 SubStyleSkillName,0,KetosPPUp,PPアップ
 SubStyleSkillName,0,KetosPBRecastQuick,フォトンブラスト<br>再使用時間短縮
 SubStyleSkillName,0,HelixQuickBlast,Adras<br>después de la explosión
-SubStyleSkillName,1,HelixBlastEcho,Adras<br>Eco de explosión
+SubStyleSkillName,1,HelixBlastEcho,Adras<br>Blast Echo
 SubStyleSkillName,1,HelixTriggerAttack,Adras<br>Ataque desencadenante
 SubStyleSkillName,1,HelixAttackDrain,Adras<br>Absorción
 SubStyleSkillName,1,HelixPerfection,Adras<br>Perfección
