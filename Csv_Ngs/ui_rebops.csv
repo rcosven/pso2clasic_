@@ -55,10 +55,10 @@ MainMenu,0,Limited_Category_CreativeSpace,クリエイティブスペース
 MainMenu,0,Limited_Category_LevelUp,装備／育成
 MainMenu,0,Limited_Category_Contents,コンテンツ
 MainMenu,1,CATEGORY_STORY,Principal
-MainMenu,1,CATEGORY_SUB_STORY,Lado
-MainMenu,1,CATEGORY_DAILY,A diario
-MainMenu,1,CATEGORY_WEEKLY,Semanalmente
-MainMenu,1,CATEGORY_LIMITED,Por tiempo limitado
+MainMenu,1,CATEGORY_SUB_STORY,Secundarias
+MainMenu,1,CATEGORY_DAILY,Diarias
+MainMenu,1,CATEGORY_WEEKLY,Semanales
+MainMenu,1,CATEGORY_LIMITED,Temporales
 MainMenu,1,SORT_NORMAL,Clasificación predeterminada
 MainMenu,1,SORT_ASC_DATE,Ascendente por fecha
 MainMenu,1,SORT_DESC_DATE,Descendente por fecha
@@ -95,11 +95,11 @@ MainMenu,1,Task_TwolineGuide_1,"Puede confirmar las tareas aceptadas. Puede most
 MainMenu,1,Task_TwolineGuide_2,"Puede confirmar las tareas aceptables. Puede mostrar la información de cada tarea, la configuración de visualización, el menú de ayuda, etc."
 MainMenu,1,LoopTask_Count,Rondas
 MainMenu,1,Reward_Tier,NIVEL
-MainMenu,1,Reward_SeasonalPoint,ESTACIÓN
-MainMenu,1,Reward_GenesisPoint,médico de cabecera
+MainMenu,1,Reward_SeasonalPoint,SEASON
+MainMenu,1,Reward_GenesisPoint,GP
 MainMenu,1,CATEGORY_RECOMMEND,Recomendado
 MainMenu,1,Limited_Category_Campaign,Campaña
-MainMenu,1,Limited_Category_PSO2,Solo día PSO2
+MainMenu,1,Limited_Category_PSO2,PSO2 Day Only
 MainMenu,1,Limited_Category_Season,Eventos de temporada
 MainMenu,1,Limited_Category_etr,Historia/Otro
 MainMenu,1,Limited_Category_CreativeSpace,Espacio Creativo
@@ -138,7 +138,7 @@ TaskDetails,1,ITEMDETAIL_CONTROLGUIDE,<%Function> para detalles de recompensa
 TaskDetails,1,ITEMDETAIL_CONTROLGUIDE_MP,<F> para detalles de recompensa00<MultiSelect>para pase de misión
 TaskDetails,1,ITEMDETAIL_MissionPass,<%Function> a MissionPass
 TaskDetails,1,BASICINFO_CONTROLGUIDE,<%Function> a información básica
-TaskDetails,1,BASICINFO_CONTROLGUIDE_MP,<F> a Información Básica00<MultiSelect>a Pase de Misión
+TaskDetails,1,BASICINFO_CONTROLGUIDE_MP,<%Function> a Información básica　　<%MultiSelect> al Pase de misión
 TaskDetails,1,NO_REWARD_ITEM,No hay artículos de recompensa.
 TaskDetails,1,Task_Detial_Tilte,Detalles de la tarea
 TaskDetails,1,TASK_PROGRESSES_2,Progreso
@@ -147,7 +147,7 @@ TaskDetails,1,REWARD_INFO,Detalles de la recompensa
 TaskDetails,1,REWARD_ITEMNAME,Nombre del artículo
 TaskDetails,1,REWARD_QUANTITY,Número obtenido
 TaskDetails,1,TASK_DETAILS_UNSELECTED,Ninguna tarea seleccionada.
-TaskDetails,1,REWARD_QUANTITY_NUM,x$(0)
+TaskDetails,1,REWARD_QUANTITY_NUM,×$(0)
 TaskDetails,1,TASK_REWARD_LOOP_1,Recompensa por primera vez
 TaskDetails,1,TASK_REWARD_LOOP_2,Recompensa posterior
 TaskDetails,1,TASK_LOOPCOUNT,<space>
