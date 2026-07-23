@@ -131,37 +131,37 @@ RentalCommon,1,RestMinits,$(0) min(s)
 RentalCommon,1,RestSec,$(0) segundo(s)
 RentalCommon,1,TimeOver,Venció
 RentalCommon,1,ITEM00,Conjunto premium
-RentalCommon,1,ITEM01,Uso para el comercio
-RentalCommon,1,ITEM02,Uso para alojamiento personal
-RentalCommon,1,ITEM03,Uso para tienda personal
-RentalCommon,1,ITEM04,ARTÍCULO04
-RentalCommon,1,ITEM05,ARTÍCULO05
+RentalCommon,1,ITEM01,Usar para Intercambio
+RentalCommon,1,ITEM02,Uso para Cuarteles Personales
+RentalCommon,1,ITEM03,Uso para Tienda Personal
+RentalCommon,1,ITEM04,ITEM04
+RentalCommon,1,ITEM05,ITEM05
 RentalCommon,1,ITEM06,Expandir Máx. Pedidos recibidos
 RentalCommon,1,ITEM07,Cancelar máx. Límite para monedas CC
 RentalCommon,1,ITEM08,Sellos Premium
-RentalCommon,1,ITEM09,ARTÍCULO09
-RentalCommon,1,ITEM10,Artículos de venta automática
-RentalCommon,1,ITEM11,ARTÍCULO 11
+RentalCommon,1,ITEM09,ITEM09
+RentalCommon,1,ITEM10,Auto Vender Items del Botín
+RentalCommon,1,ITEM11,ITEM11
 RentalCommon,1,ITEM12,Alquiler C-Space 01
 RentalCommon,1,ITEM13,Alquiler C-Space 02
 RentalCommon,1,ITEM14,Alquiler C-Space 03
 RentalCommon,1,ITEM15,Alquiler C-Space 04
-RentalCommon,1,ITEM16,ARTÍCULO16
-RentalCommon,1,ITEM17,ARTÍCULO17
-RentalCommon,1,ITEM18,ARTÍCULO18
-RentalCommon,1,ITEM19,ARTÍCULO19
-RentalCommon,1,ITEM20,ARTÍCULO20
-RentalCommon,1,ITEM21,ARTÍCULO21
-RentalCommon,1,ITEM22,ARTÍCULO22
-RentalCommon,1,ITEM23,ARTÍCULO23
-RentalCommon,1,ITEM24,Almacenamiento extendido 7
-RentalCommon,1,ITEM25,Almacenamiento extendido 6
-RentalCommon,1,ITEM26,Almacenamiento de materiales <pict StarGem>
-RentalCommon,1,ITEM27,Almacenamiento extendido 4
-RentalCommon,1,ITEM28,Almacenamiento extendido 5
-RentalCommon,1,ITEM29,Almacenamiento extendido 1 <pict StarGem>
-RentalCommon,1,ITEM30,Almacenamiento extendido 2
-RentalCommon,1,ITEM31,Almacenamiento extendido 3
+RentalCommon,1,ITEM16,ITEM16
+RentalCommon,1,ITEM17,ITEM17
+RentalCommon,1,ITEM18,ITEM18
+RentalCommon,1,ITEM19,ITEM19
+RentalCommon,1,ITEM20,ITEM20
+RentalCommon,1,ITEM21,ITEM21
+RentalCommon,1,ITEM22,ITEM22
+RentalCommon,1,ITEM23,ITEM23
+RentalCommon,1,ITEM24,Almacenamiento Extendido 7
+RentalCommon,1,ITEM25,Almacenamiento Extendido 6
+RentalCommon,1,ITEM26,Almacenamiento de Materiales <pict StarGem>
+RentalCommon,1,ITEM27,Almacenamiento Extendido 4
+RentalCommon,1,ITEM28,Almacenamiento Extendido 5
+RentalCommon,1,ITEM29,Almacenamiento Extendido 1 <pict StarGem>
+RentalCommon,1,ITEM30,Almacenamiento Extendido 2
+RentalCommon,1,ITEM31,Almacenamiento Extendido 3
 RentalCommon,1,TimesaleTitle,¡OFERTA POR TIEMPO LIMITADO!
 MedicalCommon,0,MenuTitle,メディカルセンター
 MedicalCommon,0,MenuTitleCampship,メディカル端末
@@ -192,11 +192,11 @@ MedicalCommon,0,ItemEffect_SuspendHint,「ブーストアイテム効果を停�
 MedicalCommon,1,MenuTitle,BAHÍA MÉDICA
 MedicalCommon,1,MenuTitleCampship,TERMINAL MÉDICO
 MedicalCommon,1,MenuGuide,<c f0df60> Compra y consume una variedad de bebidas que mejoran tus habilidades y te ayudarán en tu próxima misión. <c>
-MedicalCommon,1,CategoryAtp,Atacar
-MedicalCommon,1,CategoryDef,Defensa arriba
-MedicalCommon,1,CategoryHp,HP arriba
-MedicalCommon,1,CategoryPp,PP arriba
-MedicalCommon,1,CategoryRandom,Efecto aleatorio
+MedicalCommon,1,CategoryAtp,Mas Ataque
+MedicalCommon,1,CategoryDef,Mas Defensa
+MedicalCommon,1,CategoryHp,Mas HP
+MedicalCommon,1,CategoryPp,Mas PP
+MedicalCommon,1,CategoryRandom,Efecto Aleatorio
 MedicalCommon,1,BuyCheck,"¿Seguro que quieres comprar<br>$(0)<br>por $(1) meseta?<br><c f0df60>* Si ya has consumido una bebida, <br>su efecto será sobrescrito.<c>"
 MedicalCommon,1,ErrorDrinked,"Como ya has consumido una bebida con el efecto ""Detener efecto de <br>impulsor"" activo, no puedes consumir otra diferente.<br><br><yellow>* Al consumir una bebida mientras el efecto ""Detener efecto de <br>impulsor"" está activo y comenzar una misión, no podrás consumir <br>una nueva bebida hasta que la misión haya terminado.<c>"
 MedicalCommon,1,ErrorNotMeseta,No tienes suficiente meseta.
@@ -1404,11 +1404,11 @@ ItemCommon,1,StackDisposeInputNumberTitle,DESECHAR ARTÍCULO
 ItemCommon,1,StackDisposeInputNumberMessage,Seleccione el número a descartar.
 ItemCommon,1,StackPutInputNumberTitle,SOLTAR ARTÍCULO
 ItemCommon,1,StackPutInputNumberMessage,Seleccione el número a soltar.
-ItemCommon,1,StackSendInputNumberTitle,DEPÓSITO A ALMACENAJE
-ItemCommon,1,StackSendInputNumberMessage,Ingrese el número para depositar.
-ItemCommon,1,StackTakeInputNumberTitle,RECUPERAR DEL ALMACENAMIENTO
-ItemCommon,1,StackTakeInputNumberMessage,Ingrese el número para recuperar.
-ItemCommon,1,StackMoveInputNumberTitle,OTRO ALMACENAJE - DEPÓSITO
+ItemCommon,1,StackSendInputNumberTitle,DEPOSITAR AL ALMACENAMIENTO
+ItemCommon,1,StackSendInputNumberMessage,Ingrese el número a depositar.
+ItemCommon,1,StackTakeInputNumberTitle,SACAR DEL ALMACENAMIENTO
+ItemCommon,1,StackTakeInputNumberMessage,Ingrese el número a recuperar.
+ItemCommon,1,StackMoveInputNumberTitle,OTRO ALMACENAMIENTO - DEPOSITAR
 ItemCommon,1,StackMoveInputNumberMessage,Ingrese el número para depositar.
 ItemCommon,1,StackSendGuildWarehouseInputNumberTitle,ALMACENAMIENTO ALIANZA - DEPÓSITO
 ItemCommon,1,StackSendGuildWarehouseInputNumberMessage,Ingrese el número para depositar.
@@ -2050,22 +2050,22 @@ ItemParameter,1,Tdagger,Dagas gemelas
 ItemParameter,1,Wsaber,Sable doble
 ItemParameter,1,Knuckle,nudillos
 ItemParameter,1,Saber,hoja de pistola
-ItemParameter,1,Rifle,Rifle de asalto
+ItemParameter,1,Rifle,Rifle de Asalto
 ItemParameter,1,Launcher,Lanzacohetes
 ItemParameter,1,Tmachinegun,Ametralladoras gemelas
-ItemParameter,1,Rod,Vara
+ItemParameter,1,Rod,Rod
 ItemParameter,1,Talis,Talis
-ItemParameter,1,Wand,Varita mágica
+ItemParameter,1,Wand,Wand
 ItemParameter,1,Katana,Katana
 ItemParameter,1,CompoundBow,Arco
 ItemParameter,1,Costume,Atuendo
-ItemParameter,1,BodyParts,Partes del cuerpo
-ItemParameter,1,ArmParts,Partes del brazo
-ItemParameter,1,LegParts,Partes de la pierna
+ItemParameter,1,BodyParts,Partes del Cuerpo
+ItemParameter,1,ArmParts,Partes del Brazo
+ItemParameter,1,LegParts,Partes de la Pierna
 ItemParameter,1,Avatar,-
-ItemParameter,1,AddonBack,Unidad trasera
-ItemParameter,1,AddonArm,Unidad de brazo
-ItemParameter,1,AddonLeg,Unidad de piernas
+ItemParameter,1,AddonBack,Unidad Trasera
+ItemParameter,1,AddonArm,Unidad de Brazo
+ItemParameter,1,AddonLeg,Unidad de Piernas
 ItemParameter,1,AddonUnit,Subunidad
 ItemParameter,1,StackHeal,Artículo de recuperación
 ItemParameter,1,StackBoost,Refuerzo
@@ -10400,24 +10400,24 @@ ItemSkillName,1,item_DefeatReinforce_3,Unidad de conquista Lv. 3
 ItemSkillName,1,item_DefeatReinforce_4,Unidad de conquista Lv. 4
 ItemSkillName,1,item_DefeatReinforce_5,Unidad de conquista Lv. 5
 ItemSkillName,1,item_DefeatReinforce_6,Unidad de conquista Lv. 6
-ItemSkillName,1,item_MultiBonus4_1,Unidad incondicional Lv. 1
-ItemSkillName,1,item_MultiBonus4_2,Unidad incondicional Lv. 2
-ItemSkillName,1,item_MultiBonus4_3,Unidad incondicional Lv. 3
-ItemSkillName,1,item_MultiBonus4_4,Unidad incondicional Lv. 4
-ItemSkillName,1,item_MultiBonus4_5,Unidad incondicional Lv. 5
-ItemSkillName,1,item_MultiBonus4_6,Unidad incondicional Lv. 6
-ItemSkillName,1,item_ChargePbAttack3_1,Unidad de origen: Ultime Lv. 1
-ItemSkillName,1,item_ChargePbAttack3_2,Unidad de origen: Ultime Lv. 2
-ItemSkillName,1,item_ChargePbAttack3_3,Unidad de origen: Ultime Lv. 3
-ItemSkillName,1,item_ChargePbAttack3_4,Unidad de origen: Ultime Lv. 4
-ItemSkillName,1,item_ChargePbAttack3_5,Unidad de origen: Ultime Lv. 5
-ItemSkillName,1,item_ChargePbAttack3_6,Unidad de origen: Ultime Lv. 6
-ItemSkillName,1,item_DrawAreaBuff_1,Unidad de dominio Lv.1
-ItemSkillName,1,item_DrawAreaBuff_2,Unidad de dominio Lv.2
-ItemSkillName,1,item_DrawAreaBuff_3,Unidad de dominio Lv.3
-ItemSkillName,1,item_DrawAreaBuff_4,Unidad de dominio Lv.4
-ItemSkillName,1,item_DrawAreaBuff_5,Unidad de dominio Lv.5
-ItemSkillName,1,item_DrawAreaBuff_6,Unidad de dominio Lv.6
+ItemSkillName,1,item_MultiBonus4_1,Unidad Incondicional Lv. 1
+ItemSkillName,1,item_MultiBonus4_2,Unidad Incondicional Lv. 2
+ItemSkillName,1,item_MultiBonus4_3,Unidad Incondicional Lv. 3
+ItemSkillName,1,item_MultiBonus4_4,Unidad Incondicional Lv. 4
+ItemSkillName,1,item_MultiBonus4_5,Unidad Incondicional Lv. 5
+ItemSkillName,1,item_MultiBonus4_6,Unidad Incondicional Lv. 6
+ItemSkillName,1,item_ChargePbAttack3_1,Unidad de Origen: Ultime Lv. 1
+ItemSkillName,1,item_ChargePbAttack3_2,Unidad de Origen: Ultime Lv. 2
+ItemSkillName,1,item_ChargePbAttack3_3,Unidad de Origen: Ultime Lv. 3
+ItemSkillName,1,item_ChargePbAttack3_4,Unidad de Origen: Ultime Lv. 4
+ItemSkillName,1,item_ChargePbAttack3_5,Unidad de Origen: Ultime Lv. 5
+ItemSkillName,1,item_ChargePbAttack3_6,Unidad de Origen: Ultime Lv. 6
+ItemSkillName,1,item_DrawAreaBuff_1,Unidad de Dominio Lv.1
+ItemSkillName,1,item_DrawAreaBuff_2,Unidad de Dominio Lv.2
+ItemSkillName,1,item_DrawAreaBuff_3,Unidad de Dominio Lv.3
+ItemSkillName,1,item_DrawAreaBuff_4,Unidad de Dominio Lv.4
+ItemSkillName,1,item_DrawAreaBuff_5,Unidad de Dominio Lv.5
+ItemSkillName,1,item_DrawAreaBuff_6,Unidad de Dominio Lv.6
 ItemSkillName,1,item_AllBonus7_1,Unidad Rompebatallas Lv.1
 ItemSkillName,1,item_AllBonus7_2,Unidad Rompebatallas Lv.2
 ItemSkillName,1,item_AllBonus7_3,Unidad Rompebatallas Lv.3
@@ -10430,48 +10430,48 @@ ItemSkillName,1,item_HrBoostRe_3,Unidad Brillante Lv. 3
 ItemSkillName,1,item_HrBoostRe_4,Unidad Brillante Lv. 4
 ItemSkillName,1,item_HrBoostRe_5,Unidad Brillante Lv. 5
 ItemSkillName,1,item_HrBoostRe_6,Unidad Brillante Lv. 6
-ItemSkillName,1,item_HighMultiBuff_1,Unidad pulida Lv. 1
-ItemSkillName,1,item_HighMultiBuff_2,Unidad pulida Lv. 2
-ItemSkillName,1,item_HighMultiBuff_3,Unidad pulida Lv. 3
-ItemSkillName,1,item_HighMultiBuff_4,Unidad pulida Lv. 4
-ItemSkillName,1,item_HighMultiBuff_5,Unidad pulida Lv. 5
-ItemSkillName,1,item_HighMultiBuff_6,Unidad pulida Lv. 6
-ItemSkillName,1,item_MultiBonus5_1,Unidad incondicional: Deux Lv. 1
-ItemSkillName,1,item_MultiBonus5_2,Unidad incondicional: Deux Lv. 2
-ItemSkillName,1,item_MultiBonus5_3,Unidad incondicional: Deux Lv. 3
-ItemSkillName,1,item_MultiBonus5_4,Unidad incondicional: Deux Lv. 4
-ItemSkillName,1,item_MultiBonus5_5,Unidad incondicional: Deux Lv. 5
-ItemSkillName,1,item_MultiBonus5_6,Unidad incondicional: Deux Lv. 6
-ItemSkillName,1,item_AttackWeak_1,Unidad de corte Lv. 1
-ItemSkillName,1,item_AttackWeak_2,Unidad de corte Lv. 2
-ItemSkillName,1,item_AttackWeak_3,Unidad de corte Lv. 3
-ItemSkillName,1,item_AttackWeak_4,Unidad de corte Lv. 4
-ItemSkillName,1,item_AttackWeak_5,Unidad de corte Lv. 5
-ItemSkillName,1,item_AttackWeak_6,Unidad de corte Lv. 6
+ItemSkillName,1,item_HighMultiBuff_1,Unidad Pulida Lv. 1
+ItemSkillName,1,item_HighMultiBuff_2,Unidad Pulida Lv. 2
+ItemSkillName,1,item_HighMultiBuff_3,Unidad Pulida Lv. 3
+ItemSkillName,1,item_HighMultiBuff_4,Unidad Pulida Lv. 4
+ItemSkillName,1,item_HighMultiBuff_5,Unidad Pulida Lv. 5
+ItemSkillName,1,item_HighMultiBuff_6,Unidad Pulida Lv. 6
+ItemSkillName,1,item_MultiBonus5_1,Unidad Incondicional: Deux Lv. 1
+ItemSkillName,1,item_MultiBonus5_2,Unidad Incondicional: Deux Lv. 2
+ItemSkillName,1,item_MultiBonus5_3,Unidad Incondicional: Deux Lv. 3
+ItemSkillName,1,item_MultiBonus5_4,Unidad Incondicional: Deux Lv. 4
+ItemSkillName,1,item_MultiBonus5_5,Unidad Incondicional: Deux Lv. 5
+ItemSkillName,1,item_MultiBonus5_6,Unidad Incondicional: Deux Lv. 6
+ItemSkillName,1,item_AttackWeak_1,Unidad de Corte Lv. 1
+ItemSkillName,1,item_AttackWeak_2,Unidad de Corte Lv. 2
+ItemSkillName,1,item_AttackWeak_3,Unidad de Corte Lv. 3
+ItemSkillName,1,item_AttackWeak_4,Unidad de Corte Lv. 4
+ItemSkillName,1,item_AttackWeak_5,Unidad de Corte Lv. 5
+ItemSkillName,1,item_AttackWeak_6,Unidad de Corte Lv. 6
 ItemSkillName,1,item_HrBoostRe2_1,Unidad Brillante: Ultime Lv. 1
 ItemSkillName,1,item_HrBoostRe2_2,Unidad Brillante: Ultime Lv. 2
 ItemSkillName,1,item_HrBoostRe2_3,Unidad Brillante: Ultime Lv. 3
 ItemSkillName,1,item_HrBoostRe2_4,Unidad Brillante: Ultime Lv. 4
 ItemSkillName,1,item_HrBoostRe2_5,Unidad Brillante: Ultime Lv. 5
 ItemSkillName,1,item_HrBoostRe2_6,Unidad Brillante: Ultime Lv. 6
-ItemSkillName,1,item_HighMultiBuff2_1,Unidad pulida: Deux Lv. 1
-ItemSkillName,1,item_HighMultiBuff2_2,Unidad pulida: Deux Lv. 2
-ItemSkillName,1,item_HighMultiBuff2_3,Unidad pulida: Deux Lv. 3
-ItemSkillName,1,item_HighMultiBuff2_4,Unidad pulida: Deux Lv. 4
-ItemSkillName,1,item_HighMultiBuff2_5,Unidad pulida: Deux Lv. 5
-ItemSkillName,1,item_HighMultiBuff2_6,Unidad pulida: Deux Lv. 6
-ItemSkillName,1,item_HighMultiBuff3_1,Unidad pulida: Ultime Lv. 1
-ItemSkillName,1,item_HighMultiBuff3_2,Unidad pulida: Ultime Lv. 2
-ItemSkillName,1,item_HighMultiBuff3_3,Unidad pulida: Ultime Lv. 3
-ItemSkillName,1,item_HighMultiBuff3_4,Unidad pulida: Ultime Lv. 4
-ItemSkillName,1,item_HighMultiBuff3_5,Unidad pulida: Ultime Lv. 5
-ItemSkillName,1,item_HighMultiBuff3_6,Unidad pulida: Ultime Lv. 6
-ItemSkillName,1,item_PpGainBuff_1,Unidad de riqueza espiritual Lv.1
-ItemSkillName,1,item_PpGainBuff_2,Unidad de riqueza espiritual Lv.2
-ItemSkillName,1,item_PpGainBuff_3,Unidad de riqueza espiritual Lv.3
-ItemSkillName,1,item_PpGainBuff_4,Unidad de riqueza espiritual Lv.4
-ItemSkillName,1,item_PpGainBuff_5,Unidad de riqueza espiritual Lv.5
-ItemSkillName,1,item_PpGainBuff_6,Unidad de riqueza espiritual Lv.6
+ItemSkillName,1,item_HighMultiBuff2_1,Unidad Pulida: Deux Lv. 1
+ItemSkillName,1,item_HighMultiBuff2_2,Unidad Pulida: Deux Lv. 2
+ItemSkillName,1,item_HighMultiBuff2_3,Unidad Pulida: Deux Lv. 3
+ItemSkillName,1,item_HighMultiBuff2_4,Unidad Pulida: Deux Lv. 4
+ItemSkillName,1,item_HighMultiBuff2_5,Unidad Pulida: Deux Lv. 5
+ItemSkillName,1,item_HighMultiBuff2_6,Unidad Pulida: Deux Lv. 6
+ItemSkillName,1,item_HighMultiBuff3_1,Unidad Pulida: Ultime Lv. 1
+ItemSkillName,1,item_HighMultiBuff3_2,Unidad Pulida: Ultime Lv. 2
+ItemSkillName,1,item_HighMultiBuff3_3,Unidad Pulida: Ultime Lv. 3
+ItemSkillName,1,item_HighMultiBuff3_4,Unidad Pulida: Ultime Lv. 4
+ItemSkillName,1,item_HighMultiBuff3_5,Unidad Pulida: Ultime Lv. 5
+ItemSkillName,1,item_HighMultiBuff3_6,Unidad Pulida: Ultime Lv. 6
+ItemSkillName,1,item_PpGainBuff_1,Unidad de Riqueza Espiritual Lv.1
+ItemSkillName,1,item_PpGainBuff_2,Unidad de Riqueza Espiritual Lv.2
+ItemSkillName,1,item_PpGainBuff_3,Unidad de Riqueza Espiritual Lv.3
+ItemSkillName,1,item_PpGainBuff_4,Unidad de Riqueza Espiritual Lv.4
+ItemSkillName,1,item_PpGainBuff_5,Unidad de Riqueza Espiritual Lv.5
+ItemSkillName,1,item_PpGainBuff_6,Unidad de Riqueza Espiritual Lv.6
 ItemSkillName,1,item_DefeatReinforce2_1,Unidad de Conquista - Ultime Lv.1
 ItemSkillName,1,item_DefeatReinforce2_2,Unidad de Conquista - Ultime Lv.2
 ItemSkillName,1,item_DefeatReinforce2_3,Unidad de Conquista - Ultime Lv.3
@@ -10479,17 +10479,17 @@ ItemSkillName,1,item_DefeatReinforce2_4,Unidad de Conquista - Ultime Lv.4
 ItemSkillName,1,item_DefeatReinforce2_5,Unidad de Conquista - Ultime Lv.5
 ItemSkillName,1,item_DefeatReinforce2_6,Unidad de Conquista - Ultime Lv.6
 ItemSkillName,1,item_DrawAreaBuff2_1,Unidad de dominio: Ultime Lv.1
-ItemSkillName,1,item_DrawAreaBuff2_2,Unidad de dominio: Ultime Lv.2
-ItemSkillName,1,item_DrawAreaBuff2_3,Unidad de dominio: Ultime Lv.3
-ItemSkillName,1,item_DrawAreaBuff2_4,Unidad de dominio: Ultime Lv.4
-ItemSkillName,1,item_DrawAreaBuff2_5,Unidad de dominio: Ultime Lv.5
-ItemSkillName,1,item_DrawAreaBuff2_6,Unidad de dominio: Ultime Lv.6
-ItemSkillName,1,item_AttackWeak2_1,Unidad de corte - Ultime Lv.1
-ItemSkillName,1,item_AttackWeak2_2,Unidad de corte - Ultime Lv.2
-ItemSkillName,1,item_AttackWeak2_3,Unidad de corte - Ultime Lv.3
-ItemSkillName,1,item_AttackWeak2_4,Unidad de corte - Ultime Lv.4
-ItemSkillName,1,item_AttackWeak2_5,Unidad de corte - Ultime Lv.5
-ItemSkillName,1,item_AttackWeak2_6,Unidad de corte - Ultime Lv.6
+ItemSkillName,1,item_DrawAreaBuff2_2,Unidad de Dominio: Ultime Lv.2
+ItemSkillName,1,item_DrawAreaBuff2_3,Unidad de Dominio: Ultime Lv.3
+ItemSkillName,1,item_DrawAreaBuff2_4,Unidad de Dominio: Ultime Lv.4
+ItemSkillName,1,item_DrawAreaBuff2_5,Unidad de Dominio: Ultime Lv.5
+ItemSkillName,1,item_DrawAreaBuff2_6,Unidad de Dominio: Ultime Lv.6
+ItemSkillName,1,item_AttackWeak2_1,Unidad de Corte - Ultime Lv.1
+ItemSkillName,1,item_AttackWeak2_2,Unidad de Corte - Ultime Lv.2
+ItemSkillName,1,item_AttackWeak2_3,Unidad de Corte - Ultime Lv.3
+ItemSkillName,1,item_AttackWeak2_4,Unidad de Corte - Ultime Lv.4
+ItemSkillName,1,item_AttackWeak2_5,Unidad de Corte - Ultime Lv.5
+ItemSkillName,1,item_AttackWeak2_6,Unidad de Corte - Ultime Lv.6
 ItemSkillName,1,item_AllBonus8_1,Unidad incondicional - Trois Lv.1
 ItemSkillName,1,item_AllBonus8_2,Unidad incondicional - Trois Lv.2
 ItemSkillName,1,item_AllBonus8_3,Unidad incondicional - Trois Lv.3
@@ -10502,142 +10502,142 @@ ItemSkillName,1,item_GenericBuff_3,Unidad Madera Espiritual Lv.3
 ItemSkillName,1,item_GenericBuff_4,Unidad Madera Espiritual Lv.4
 ItemSkillName,1,item_GenericBuff_5,Unidad Madera Espiritual Lv.5
 ItemSkillName,1,item_GenericBuff_6,Unidad Madera Espiritual Lv.6
-ItemSkillName,1,item_GenericBuff2_1,Unidad de Madera Espiritual: Dos Lv.1
-ItemSkillName,1,item_GenericBuff2_2,Unidad de Madera Espiritual: Dos Lv.2
-ItemSkillName,1,item_GenericBuff2_3,Unidad de Madera Espiritual: Dos Lv.3
-ItemSkillName,1,item_GenericBuff2_4,Unidad Spiritwood: Dos Lv.4
-ItemSkillName,1,item_GenericBuff2_5,Unidad de Madera Espiritual: Dos Lv.5
-ItemSkillName,1,item_GenericBuff2_6,Unidad de Madera Espiritual: Dos Lv.6
-ItemSkillName,1,item_GenericBuff3_1,Unidad Spiritwood: Ultime Lv.1
-ItemSkillName,1,item_GenericBuff3_2,Unidad Spiritwood: Ultime Lv.2
-ItemSkillName,1,item_GenericBuff3_3,Unidad Spiritwood: Ultime Lv.3
-ItemSkillName,1,item_GenericBuff3_4,Unidad Spiritwood: Ultime Lv.4
-ItemSkillName,1,item_GenericBuff3_5,Unidad Spiritwood: Ultime Lv.5
-ItemSkillName,1,item_GenericBuff3_6,Unidad Spiritwood: Ultime Lv.6
-ItemSkillName,1,item_PursuitBuff_1,Unidad de luz de seguimiento Lv. 1
-ItemSkillName,1,item_PursuitBuff_2,Unidad de luz de seguimiento Lv. 2
-ItemSkillName,1,item_PursuitBuff_3,Unidad de luz de seguimiento Lv. 3
-ItemSkillName,1,item_PursuitBuff_4,Unidad de luz de seguimiento Lv. 4
-ItemSkillName,1,item_PursuitBuff_5,Unidad de luz de seguimiento Lv. 5
-ItemSkillName,1,item_PursuitBuff_6,Unidad de luz de seguimiento Lv. 6
+ItemSkillName,1,item_GenericBuff2_1,Unidad Madera Espiritual: Deux Lv.1
+ItemSkillName,1,item_GenericBuff2_2,Unidad Madera Espiritual: Deux  Lv.2
+ItemSkillName,1,item_GenericBuff2_3,Unidad Madera Espiritual: Deux Lv.3
+ItemSkillName,1,item_GenericBuff2_4,Unidad Madera Espiritual: Deux Lv.4
+ItemSkillName,1,item_GenericBuff2_5,Unidad Madera Espiritual: Deux Lv.5
+ItemSkillName,1,item_GenericBuff2_6,Unidad Madera Espiritual: Deux Lv.6
+ItemSkillName,1,item_GenericBuff3_1,Unidad Madera Espiritual: Ultime Lv.1
+ItemSkillName,1,item_GenericBuff3_2,Unidad Madera Espiritual: Ultime Lv.1
+ItemSkillName,1,item_GenericBuff3_3,Unidad Madera Espiritual: Ultime Lv.3
+ItemSkillName,1,item_GenericBuff3_4,Unidad Madera Espiritual: Ultime Lv.4
+ItemSkillName,1,item_GenericBuff3_5,Unidad Madera Espiritual: Ultime Lv.5
+ItemSkillName,1,item_GenericBuff3_6,Unidad Madera Espiritual: Ultime Lv.6
+ItemSkillName,1,item_PursuitBuff_1,Unidad Luz de Seguimiento Lv. 1
+ItemSkillName,1,item_PursuitBuff_2,Unidad Luz de Seguimiento Lv. 2
+ItemSkillName,1,item_PursuitBuff_3,Unidad Luz de Seguimiento Lv. 3
+ItemSkillName,1,item_PursuitBuff_4,Unidad Luz de Seguimiento Lv. 4
+ItemSkillName,1,item_PursuitBuff_5,Unidad Luz de Seguimiento Lv. 5
+ItemSkillName,1,item_PursuitBuff_6,Unidad Luz de Seguimiento Lv. 6
 ItemSkillName,1,item_AchieveBuff_1,Unidad de Luz Triunfante Lv. 1
 ItemSkillName,1,item_AchieveBuff_2,Unidad de Luz Triunfante Lv. 2
 ItemSkillName,1,item_AchieveBuff_3,Unidad de Luz Triunfante Lv. 3
 ItemSkillName,1,item_AchieveBuff_4,Unidad de Luz Triunfante Lv. 4
 ItemSkillName,1,item_AchieveBuff_5,Unidad de Luz Triunfante Lv. 5
 ItemSkillName,1,item_AchieveBuff_6,Unidad de Luz Triunfante Lv. 6
-ItemSkillName,1,item_GenericBuff4_1,Unidad espectral Lv. 1
-ItemSkillName,1,item_GenericBuff4_2,Unidad espectral Lv. 2
-ItemSkillName,1,item_GenericBuff4_3,Unidad espectral Lv. 3
-ItemSkillName,1,item_GenericBuff4_4,Unidad espectral Lv. 4
-ItemSkillName,1,item_GenericBuff4_5,Unidad espectral Lv. 5
-ItemSkillName,1,item_GenericBuff4_6,Unidad espectral Lv. 6
-ItemSkillName,1,item_AllBonus9_1,Unidad incondicional - Quatre Lv. 1
-ItemSkillName,1,item_AllBonus9_2,Unidad incondicional - Quatre Lv. 2
-ItemSkillName,1,item_AllBonus9_3,Unidad incondicional - Quatre Lv. 3
-ItemSkillName,1,item_AllBonus9_4,Unidad incondicional - Quatre Lv. 4
-ItemSkillName,1,item_AllBonus9_5,Unidad incondicional - Quatre Lv. 5
-ItemSkillName,1,item_AllBonus9_6,Unidad incondicional - Quatre Lv. 6
-ItemSkillName,1,item_GuardStanceUp_1,Guardia practicada Lv.1
-ItemSkillName,1,item_GuardStanceUp_2,Guardia practicada Lv.2
-ItemSkillName,1,item_GuardStanceUp_3,Guardia practicada Lv.3
-ItemSkillName,1,item_GuardStanceUp_4,Guardia practicada Lv.4
-ItemSkillName,1,item_GuardStanceUp_5,Guardia practicada Lv.5
-ItemSkillName,1,item_AutoMateHalfline_1,Automate Mitad Lv.1
-ItemSkillName,1,item_AutoMateHalfline_2,Automate Medio Lv.2
-ItemSkillName,1,item_AutoMateHalfline_3,Automate Medio Lv.3
-ItemSkillName,1,item_AutoMateHalfline_4,Automate Mitad Lv.4
-ItemSkillName,1,item_AutoMateHalfline_5,Automate Medio Lv.5
-ItemSkillName,1,item_MaterialDefence_1,Bloque físico Lv.1
-ItemSkillName,1,item_MaterialDefence_2,Bloque físico Lv.2
-ItemSkillName,1,item_MaterialDefence_3,Bloque Físico Lv.3
-ItemSkillName,1,item_MaterialDefence_4,Bloque físico Lv.4
-ItemSkillName,1,item_MaterialDefence_5,Bloque físico Lv.5
-ItemSkillName,1,item_TechDefence_1,Bloque técnico Lv.1
-ItemSkillName,1,item_TechDefence_2,Bloque técnico Lv.2
-ItemSkillName,1,item_TechDefence_3,Bloque técnico Lv.3
-ItemSkillName,1,item_TechDefence_4,Bloque técnico Lv.4
-ItemSkillName,1,item_TechDefence_5,Bloque técnico Lv.5
-ItemSkillName,1,item_IronWill_1,Corazón resuelto Lv.1
-ItemSkillName,1,item_IronWill_2,Corazón resuelto Lv.2
-ItemSkillName,1,item_IronWill_3,Corazón Resuelto Lv.3
-ItemSkillName,1,item_IronWill_4,Corazón Resuelto Lv.4
-ItemSkillName,1,item_IronWill_5,Corazón resuelto Lv.5
-ItemSkillName,1,item_FuryStanceUp_1,Postura enfurecida Lv.1
-ItemSkillName,1,item_FuryStanceUp_2,Postura enfurecida Lv.2
-ItemSkillName,1,item_FuryStanceUp_3,Postura enfurecida Lv.3
-ItemSkillName,1,item_FuryStanceUp_4,Postura enfurecida Lv.4
-ItemSkillName,1,item_FuryStanceUp_5,Postura enfurecida Lv.5
-ItemSkillName,1,item_FuryStanceCritical_1,Emblema de sacrificio Lv.1
-ItemSkillName,1,item_FuryStanceCritical_2,Emblema de sacrificio Lv.2
-ItemSkillName,1,item_FuryStanceCritical_3,Emblema de sacrificio Lv.3
-ItemSkillName,1,item_FuryStanceCritical_4,Emblema de sacrificio Lv.4
-ItemSkillName,1,item_FuryStanceCritical_5,Emblema de sacrificio Lv.5
-ItemSkillName,1,item_JustAttackBonus_1,Golpe de precisión Lv.1
-ItemSkillName,1,item_JustAttackBonus_2,Golpe de precisión Lv.2
-ItemSkillName,1,item_JustAttackBonus_3,Golpe de precisión Lv.3
-ItemSkillName,1,item_JustAttackBonus_4,Golpe de precisión Lv.4
-ItemSkillName,1,item_JustAttackBonus_5,Golpe de precisión Lv.5
+ItemSkillName,1,item_GenericBuff4_1,Unidad Espectral Lv. 1
+ItemSkillName,1,item_GenericBuff4_2,Unidad Espectral Lv. 2
+ItemSkillName,1,item_GenericBuff4_3,Unidad Espectral Lv. 3
+ItemSkillName,1,item_GenericBuff4_4,Unidad Espectral Lv. 4
+ItemSkillName,1,item_GenericBuff4_5,Unidad Espectral Lv. 5
+ItemSkillName,1,item_GenericBuff4_6,Unidad Espectral Lv. 6
+ItemSkillName,1,item_AllBonus9_1,Unidad Incondicional - Quatre Lv. 1
+ItemSkillName,1,item_AllBonus9_2,Unidad Incondicional - Quatre Lv. 2
+ItemSkillName,1,item_AllBonus9_3,Unidad Incondicional - Quatre Lv. 3
+ItemSkillName,1,item_AllBonus9_4,Unidad Incondicional - Quatre Lv. 4
+ItemSkillName,1,item_AllBonus9_5,Unidad Incondicional - Quatre Lv. 5
+ItemSkillName,1,item_AllBonus9_6,Unidad Incondicional - Quatre Lv. 6
+ItemSkillName,1,item_GuardStanceUp_1,Guardia Practicada Lv.1
+ItemSkillName,1,item_GuardStanceUp_2,Guardia Practicada Lv.2
+ItemSkillName,1,item_GuardStanceUp_3,Guardia Practicada Lv.3
+ItemSkillName,1,item_GuardStanceUp_4,Guardia Practicada Lv.4
+ItemSkillName,1,item_GuardStanceUp_5,Guardia Practicada Lv.5
+ItemSkillName,1,item_AutoMateHalfline_1,Mitad Auto-mate Lv.1
+ItemSkillName,1,item_AutoMateHalfline_2,Mitad Auto-mate Lv.2
+ItemSkillName,1,item_AutoMateHalfline_3,Mitad Auto-mate Lv.3
+ItemSkillName,1,item_AutoMateHalfline_4,Mitad Auto-mate Lv.4
+ItemSkillName,1,item_AutoMateHalfline_5,Mitad Auto-mate Lv.5
+ItemSkillName,1,item_MaterialDefence_1,Bloqueo Físico Lv.1
+ItemSkillName,1,item_MaterialDefence_2,Bloqueo Físico Lv.2
+ItemSkillName,1,item_MaterialDefence_3,Bloqueo Físico Lv.3
+ItemSkillName,1,item_MaterialDefence_4,Bloqueo Físico Lv.4
+ItemSkillName,1,item_MaterialDefence_5,Bloqueo Físico Lv.5
+ItemSkillName,1,item_TechDefence_1,Bloqueo Técnico Lv.1
+ItemSkillName,1,item_TechDefence_2,Bloqueo Técnico Lv.2
+ItemSkillName,1,item_TechDefence_3,Bloqueo Técnico Lv.3
+ItemSkillName,1,item_TechDefence_4,Bloqueo Técnico Lv.4
+ItemSkillName,1,item_TechDefence_5,Bloqueo Técnico Lv.5
+ItemSkillName,1,item_IronWill_1,Corazón Decidido Lv.1
+ItemSkillName,1,item_IronWill_2,Corazón Decidido Lv.2
+ItemSkillName,1,item_IronWill_3,Corazón Decidido Lv.3
+ItemSkillName,1,item_IronWill_4,Corazón Decidido Lv.4
+ItemSkillName,1,item_IronWill_5,Corazón Decidido Lv.5
+ItemSkillName,1,item_FuryStanceUp_1,Postura Enfurecida Lv.1
+ItemSkillName,1,item_FuryStanceUp_2,Postura Enfurecida Lv.2
+ItemSkillName,1,item_FuryStanceUp_3,Postura Enfurecida Lv.3
+ItemSkillName,1,item_FuryStanceUp_4,Postura Enfurecida Lv.4
+ItemSkillName,1,item_FuryStanceUp_5,Postura Enfurecida Lv.5
+ItemSkillName,1,item_FuryStanceCritical_1,Emblema de Sacrificio Lv.1
+ItemSkillName,1,item_FuryStanceCritical_2,Emblema de Sacrificio Lv.2
+ItemSkillName,1,item_FuryStanceCritical_3,Emblema de Sacrificio Lv.3
+ItemSkillName,1,item_FuryStanceCritical_4,Emblema de Sacrificio Lv.4
+ItemSkillName,1,item_FuryStanceCritical_5,Emblema de Sacrificio Lv.5
+ItemSkillName,1,item_JustAttackBonus_1,Golpe de Precisión Lv.1
+ItemSkillName,1,item_JustAttackBonus_2,Golpe de Precisión Lv.2
+ItemSkillName,1,item_JustAttackBonus_3,Golpe de Precisión Lv.3
+ItemSkillName,1,item_JustAttackBonus_4,Golpe de Precisión Lv.4
+ItemSkillName,1,item_JustAttackBonus_5,Golpe de Precisión Lv.5
 ItemSkillName,1,item_BraveStanceUp_1,Fuego Infernal Lv.1
 ItemSkillName,1,item_BraveStanceUp_2,Fuego Infernal Lv.2
 ItemSkillName,1,item_BraveStanceUp_3,Fuego Infernal Lv.3
 ItemSkillName,1,item_BraveStanceUp_4,Fuego Infernal Lv.4
 ItemSkillName,1,item_BraveStanceUp_5,Fuego Infernal Lv.5
-ItemSkillName,1,item_BraveStanceUp2_1,Postura frontal Lv.1
-ItemSkillName,1,item_BraveStanceUp2_2,Postura frontal Lv.2
-ItemSkillName,1,item_BraveStanceUp2_3,Postura frontal Lv.3
-ItemSkillName,1,item_BraveStanceUp2_4,Postura frontal Lv.4
-ItemSkillName,1,item_BraveStanceUp2_5,Postura frontal Lv.5
-ItemSkillName,1,item_BraveCritical1_1,Brillo cortante Lv.1
-ItemSkillName,1,item_BraveCritical1_2,Brillo cortante Lv.2
-ItemSkillName,1,item_BraveCritical1_3,Brillo cortante Lv.3
-ItemSkillName,1,item_BraveCritical1_4,Brillo cortante Lv.4
-ItemSkillName,1,item_BraveCritical1_5,Brillo cortante Lv.5
-ItemSkillName,1,item_BraveCritical2_1,Golpe directo Lv.1
-ItemSkillName,1,item_BraveCritical2_2,Golpe directo Lv.2
+ItemSkillName,1,item_BraveStanceUp2_1,Postura Frontal Lv.1
+ItemSkillName,1,item_BraveStanceUp2_2,Postura Frontal Lv.2
+ItemSkillName,1,item_BraveStanceUp2_3,Postura Frontal Lv.3
+ItemSkillName,1,item_BraveStanceUp2_4,Postura Frontal Lv.4
+ItemSkillName,1,item_BraveStanceUp2_5,Postura Frontal Lv.5
+ItemSkillName,1,item_BraveCritical1_1,Brillo Cortante Lv.1
+ItemSkillName,1,item_BraveCritical1_2,Brillo Cortante Lv.2
+ItemSkillName,1,item_BraveCritical1_3,Brillo Cortante Lv.3
+ItemSkillName,1,item_BraveCritical1_4,Brillo Cortante Lv.4
+ItemSkillName,1,item_BraveCritical1_5,Brillo Cortante Lv.5
+ItemSkillName,1,item_BraveCritical2_1,Golpe Directo Lv.1
+ItemSkillName,1,item_BraveCritical2_2,Golpe Directo Lv.2
 ItemSkillName,1,item_BraveCritical2_3,Golpe Directo Lv.3
 ItemSkillName,1,item_BraveCritical2_4,Golpe Directo Lv.4
-ItemSkillName,1,item_BraveCritical2_5,Golpe directo Lv.5
-ItemSkillName,1,item_AbnormalAdvance_1,Golpe de acecho Lv.1
-ItemSkillName,1,item_AbnormalAdvance_2,Golpe de acecho Lv.2
-ItemSkillName,1,item_AbnormalAdvance_3,Golpe de acecho Lv.3
-ItemSkillName,1,item_AbnormalAdvance_4,Golpe de acecho Lv.4
-ItemSkillName,1,item_AbnormalAdvance_5,Golpe de acecho Lv.5
-ItemSkillName,1,item_AbnormalBind_1,Ataduras persistentes Lv.1
-ItemSkillName,1,item_AbnormalBind_2,Ataduras persistentes Lv.2
-ItemSkillName,1,item_AbnormalBind_3,Ataduras persistentes Lv.3
-ItemSkillName,1,item_AbnormalBind_4,Ataduras persistentes Lv.4
-ItemSkillName,1,item_AbnormalBind_5,Ataduras persistentes Lv.5
-ItemSkillName,1,item_WiseStanceUp_1,Emblema de traición Lv.1
-ItemSkillName,1,item_WiseStanceUp_2,Emblema de traición Lv.2
-ItemSkillName,1,item_WiseStanceUp_3,Emblema de traición Lv.3
-ItemSkillName,1,item_WiseStanceUp_4,Emblema de traición Lv.4
-ItemSkillName,1,item_WiseStanceUp_5,Emblema de traición Lv.5
+ItemSkillName,1,item_BraveCritical2_5,Golpe Directo Lv.5
+ItemSkillName,1,item_AbnormalAdvance_1,Golpe Acechante Lv.1
+ItemSkillName,1,item_AbnormalAdvance_2,Golpe Acechante Lv.2
+ItemSkillName,1,item_AbnormalAdvance_3,Golpe Acechante Lv.3
+ItemSkillName,1,item_AbnormalAdvance_4,Golpe Acechante Lv.4
+ItemSkillName,1,item_AbnormalAdvance_5,Golpe Acechante Lv.5
+ItemSkillName,1,item_AbnormalBind_1,Ataduras Persistentes Lv.1
+ItemSkillName,1,item_AbnormalBind_2,Ataduras Persistentes Lv.2
+ItemSkillName,1,item_AbnormalBind_3,Ataduras Persistentes Lv.3
+ItemSkillName,1,item_AbnormalBind_4,Ataduras Persistentes Lv.4
+ItemSkillName,1,item_AbnormalBind_5,Ataduras Persistentes Lv.5
+ItemSkillName,1,item_WiseStanceUp_1,Emblema Traicionero Lv.1
+ItemSkillName,1,item_WiseStanceUp_2,Emblema Traicionero Lv.2
+ItemSkillName,1,item_WiseStanceUp_3,Emblema Traicionero Lv.3
+ItemSkillName,1,item_WiseStanceUp_4,Emblema Traicionero Lv.4
+ItemSkillName,1,item_WiseStanceUp_5,Emblema Traicionero Lv.5
 ItemSkillName,1,item_PPSlayer2_1,Danza Macabra Lv.1
 ItemSkillName,1,item_PPSlayer2_2,Danza Macabra Lv.2
 ItemSkillName,1,item_PPSlayer2_3,Danza Macabra Lv.3
 ItemSkillName,1,item_PPSlayer2_4,Danza Macabra Lv.4
 ItemSkillName,1,item_PPSlayer2_5,Danza Macabra Lv.5
-ItemSkillName,1,item_HalflineSlayer_1,Cresta de matanza Lv.1
-ItemSkillName,1,item_HalflineSlayer_2,Cresta de matanza Lv.2
-ItemSkillName,1,item_HalflineSlayer_3,Cresta de matanza Lv.3
-ItemSkillName,1,item_HalflineSlayer_4,Cresta de matanza Lv.4
-ItemSkillName,1,item_HalflineSlayer_5,Cresta de matanza Lv.5
-ItemSkillName,1,item_DeadlineSlayer_1,Última batalla Lv.1
-ItemSkillName,1,item_DeadlineSlayer_2,Última Batalla Lv.2
-ItemSkillName,1,item_DeadlineSlayer_3,Última batalla Lv.3
-ItemSkillName,1,item_DeadlineSlayer_4,Última batalla Lv.4
-ItemSkillName,1,item_DeadlineSlayer_5,Última batalla Lv.5
-ItemSkillName,1,item_WeakSnipeBonus_1,Golpe aplastante Lv.1
-ItemSkillName,1,item_WeakSnipeBonus_2,Golpe aplastante Lv.2
-ItemSkillName,1,item_WeakSnipeBonus_3,Golpe aplastante Lv.3
-ItemSkillName,1,item_WeakSnipeBonus_4,Golpe aplastante Lv.4
-ItemSkillName,1,item_WeakSnipeBonus_5,Golpe aplastante Lv.5
-ItemSkillName,1,item_StandUpSnipe_1,Parca firme Lv.1
-ItemSkillName,1,item_StandUpSnipe_2,Parca firme Lv.2
-ItemSkillName,1,item_StandUpSnipe_3,Parca firme Lv.3
-ItemSkillName,1,item_StandUpSnipe_4,Parca firme Lv.4
-ItemSkillName,1,item_StandUpSnipe_5,Parca firme Lv.5
+ItemSkillName,1,item_HalflineSlayer_1,Cresta de la Matanza Lv.1
+ItemSkillName,1,item_HalflineSlayer_2,Cresta de la Matanza Lv.2
+ItemSkillName,1,item_HalflineSlayer_3,Cresta de la Matanza Lv.3
+ItemSkillName,1,item_HalflineSlayer_4,Cresta de la Matanza Lv.4
+ItemSkillName,1,item_HalflineSlayer_5,Cresta de la Matanza Lv.5
+ItemSkillName,1,item_DeadlineSlayer_1,Última Bastión Lv.1
+ItemSkillName,1,item_DeadlineSlayer_2,Última Bastión Lv.2
+ItemSkillName,1,item_DeadlineSlayer_3,Última Bastión Lv.3
+ItemSkillName,1,item_DeadlineSlayer_4,Última Bastión Lv.4
+ItemSkillName,1,item_DeadlineSlayer_5,Última Bastión Lv.5
+ItemSkillName,1,item_WeakSnipeBonus_1,Golpe Aplastante Lv.1
+ItemSkillName,1,item_WeakSnipeBonus_2,Golpe Aplastante Lv.2
+ItemSkillName,1,item_WeakSnipeBonus_3,Golpe Aplastante Lv.3
+ItemSkillName,1,item_WeakSnipeBonus_4,Golpe Aplastante Lv.4
+ItemSkillName,1,item_WeakSnipeBonus_5,Golpe Aplastante Lv.5
+ItemSkillName,1,item_StandUpSnipe_1,Segador Constante Lv.1
+ItemSkillName,1,item_StandUpSnipe_2,Segador Constante Lv.2
+ItemSkillName,1,item_StandUpSnipe_3,Segador Constante Lv.3
+ItemSkillName,1,item_StandUpSnipe_4,Segador Constante Lv.4
+ItemSkillName,1,item_StandUpSnipe_5,Segador Constante Lv.5
 ItemSkillName,1,item_ToolMastery_1,Trampas eternas Lv.1
 ItemSkillName,1,item_ToolMastery_2,Trampas eternas Lv.2
 ItemSkillName,1,item_ToolMastery_3,Trampas eternas Lv.3
@@ -25231,7 +25231,7 @@ SelectionCommand,1,Menu_SendWarehouse,Enviar al Almacenamiento
 SelectionCommand,1,Menu_SendWarehouseNone,Sin Almacenamiento Válido
 SelectionCommand,1,Menu_PetAbility,Ver Personalidad
 SelectionCommand,1,Menu_SetEffect,Ver Efecto Seleccionado
-SelectionCommand,1,Menu_RingSkill,Ver Anillo de Skill
+SelectionCommand,1,Menu_RingSkill,Ver Anillo de Habilidad
 SelectionCommand,1,Menu_LockMulti,Bloquear Todo ($(1)/$(0))
 SelectionCommand,1,Menu_UnlockMulti,Desbloquear Todo ($(1)/$(0))
 SelectionCommand,1,Menu_PutMulti,Soltar Todo
@@ -25662,31 +25662,31 @@ PresetHelp,1,Drop_PPRestraint_2,"PP natural recuperador. Velocidad +5,5%"
 PresetHelp,1,Drop_PPRestraint_3,PP natural recuperador. Velocidad +6%
 PresetHelp,1,Drop_PPRestraint_4,"PP natural recuperador. Velocidad +6,5%"
 PresetHelp,1,Drop_PPRestraint_5,PP natural recuperador. Velocidad +7%
-PresetHelp,1,Drop_AttackPPRestraint_1,Recuperación PP ofensiva +4%
-PresetHelp,1,Drop_AttackPPRestraint_2,"Recuperación PP ofensiva +4,5%"
-PresetHelp,1,Drop_AttackPPRestraint_3,Recuperación PP ofensiva +5%
-PresetHelp,1,Drop_AttackPPRestraint_4,"Recuperación PP ofensiva +5,5%"
-PresetHelp,1,Drop_AttackPPRestraint_5,Recuperación PP ofensiva +6%
+PresetHelp,1,Drop_AttackPPRestraint_1,Recuperación PP Ofensiva +4%
+PresetHelp,1,Drop_AttackPPRestraint_2,"Recuperación PP Ofensiva +4,5%"
+PresetHelp,1,Drop_AttackPPRestraint_3,Recuperación PP Ofensiva +5%
+PresetHelp,1,Drop_AttackPPRestraint_4,"Recuperación PP Ofensiva +5,5%"
+PresetHelp,1,Drop_AttackPPRestraint_5,Recuperación PP Ofensiva +6%
 PresetHelp,1,Drop_DamageUp_6,"Potencia +5,25%"
 PresetHelp,1,Drop_DamageUp_7,"Potencia +5,5%"
 PresetHelp,1,Drop_DamageUp_8,"Potencia +5,75%"
 PresetHelp,1,Drop_DamageUp_9,"Potencia +6,0%"
 PresetHelp,1,Drop_DamageUp_10,"Potencia +6,5%"
-PresetHelp,1,Drop_DamageReduction_6,"Resistencia al daño +4,25%"
-PresetHelp,1,Drop_DamageReduction_7,"Resistencia al daño +4,5%"
-PresetHelp,1,Drop_DamageReduction_8,"Resistencia al daño +4,75%"
-PresetHelp,1,Drop_DamageReduction_9,Resistencia al daño +5.0%
-PresetHelp,1,Drop_DamageReduction_10,"Resistencia al daño +5,5%"
-PresetHelp,1,Drop_Critical_6,"Tasa de golpes críticos +13,25%"
-PresetHelp,1,Drop_Critical_7,"Tasa de golpes críticos +13,5%"
-PresetHelp,1,Drop_Critical_8,"Tasa de golpes críticos +13,75%"
-PresetHelp,1,Drop_Critical_9,Tasa de golpes críticos +14%
-PresetHelp,1,Drop_Critical_10,"Tasa de golpes críticos +14,5%"
-PresetHelp,1,Drop_CriticalDamage_6,Potencia crítica +16%
-PresetHelp,1,Drop_CriticalDamage_7,Potencia crítica +17%
-PresetHelp,1,Drop_CriticalDamage_8,Potencia crítica +18%
-PresetHelp,1,Drop_CriticalDamage_9,Potencia crítica +19%
-PresetHelp,1,Drop_CriticalDamage_10,Potencia crítica +20%
+PresetHelp,1,Drop_DamageReduction_6,"Resistencia al Daño +4,25%"
+PresetHelp,1,Drop_DamageReduction_7,"Resistencia al Daño +4,5%"
+PresetHelp,1,Drop_DamageReduction_8,"Resistencia al Daño +4,75%"
+PresetHelp,1,Drop_DamageReduction_9,Resistencia al Daño +5.0%
+PresetHelp,1,Drop_DamageReduction_10,"Resistencia al Daño +5,5%"
+PresetHelp,1,Drop_Critical_6,"Tasa de Golpes Críticos +13,25%"
+PresetHelp,1,Drop_Critical_7,"Tasa de Golpes Críticos +13,5%"
+PresetHelp,1,Drop_Critical_8,"Tasa de Golpes Críticos +13,75%"
+PresetHelp,1,Drop_Critical_9,Tasa de Golpes Críticos +14%
+PresetHelp,1,Drop_Critical_10,"Tasa de Golpes Críticos +14,5%"
+PresetHelp,1,Drop_CriticalDamage_6,Potencia de Crítico +16%
+PresetHelp,1,Drop_CriticalDamage_7,Potencia de Crítico +17%
+PresetHelp,1,Drop_CriticalDamage_8,Potencia de Crítico +18%
+PresetHelp,1,Drop_CriticalDamage_9,Potencia de Crítico +19%
+PresetHelp,1,Drop_CriticalDamage_10,Potencia de Crítico +20%
 PresetHelp,1,Drop_PpActionRate_6,"Consumo PP +4,25%"
 PresetHelp,1,Drop_PpActionRate_7,"Consumo PP +4,5%"
 PresetHelp,1,Drop_PpActionRate_8,"Consumo PP +4,75%"
