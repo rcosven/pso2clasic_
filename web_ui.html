@@ -343,6 +343,13 @@
                         <span style="color: #daa520; font-weight: bold; font-size: 14px;">🛠️ Modo Desarrollador Activo</span>
                         <button class="btn" onclick="openRawEditor()" style="background-color: #daa520; border-color: #daa520; color: #000; padding: 4px 10px; font-size: 12px; width: auto; min-height: 24px;">Abrir archivo en editor completo de CSV (Tipo Excel)</button>
                     </div>
+                    
+                    <div style="display: flex; gap: 10px; margin-bottom: 15px; align-items: center; border-bottom: 1px dashed rgba(218, 165, 32, 0.4); padding-bottom: 15px;">
+                        <span style="font-size: 12px; color: #daa520; white-space: nowrap;">Cargar por nombre:</span>
+                        <input type="text" id="dev-filename-input" placeholder="Ej: Csv_Ngs/quest_01340990.csv" style="flex: 1; height: 32px; padding: 4px 8px; background-color: var(--bg-color); border: 1px solid var(--panel-border); color: var(--text-primary); border-radius: 6px; font-size: 13px;" />
+                        <button class="btn btn-primary" onclick="loadSpecificFile()" style="width: auto; min-height: 32px; padding: 4px 12px; font-size: 12px;">Cargar Archivo</button>
+                    </div>
+
                     <div style="display: flex; gap: 15px; margin-bottom: 10px;">
                         <div class="input-group" style="flex: 1;">
                             <label>Section</label>
@@ -762,6 +769,9 @@
                 if (pass === "89159891") {
                     isDevMode = true;
                     document.getElementById('dev-mode-fields').style.display = 'block';
+                    if (fileName) {
+                        document.getElementById('dev-filename-input').value = fileName;
+                    }
                     showNotification("🔓", "Modo desarrollador activado");
                 } else if (pass !== null) {
                     showNotification("❌", "Contraseña incorrecta");
@@ -770,6 +780,13 @@
                 isDevMode = false;
                 document.getElementById('dev-mode-fields').style.display = 'none';
                 showNotification("🔒", "Modo desarrollador desactivado");
+            }
+        }
+        
+        function loadSpecificFile() {
+            const f = document.getElementById('dev-filename-input').value.trim();
+            if (f) {
+                window.location.href = `/edit?file=${encodeURIComponent(f)}`;
             }
         }
         
