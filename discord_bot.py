@@ -450,6 +450,27 @@ async def web_api_file(request):
             
     return web.json_response({"items": items})
 
+async def web_api_file_raw(request):
+    filename = request.query.get("name")
+    if not filename:
+        return web.json_response({"error": "Falta parámetro 'name'"}, status=400)
+        
+    bot = request.app['bot']
+    file_items = [item for item in bot.index_datos if item['file'] == filename]
+    file_items.sort(key=lambda x: x.get('line', 0))
+    
+    items = []
+    for item in file_items:
+        items.append({
+            'section': item.get('section', ''),
+            'group': item.get('group', ''),
+            'id': item['id'],
+            'text': item.get('text', ''),
+            'line': item.get('line', 0)
+        })
+            
+    return web.json_response({"items": items})
+
 async def web_api_save(request):
     try:
         data = await request.json()
@@ -562,6 +583,7 @@ async def start_web_server(bot):
     app.router.add_get('/edit', web_index)
     app.router.add_get('/api/search', web_api_search)
     app.router.add_get('/api/file', web_api_file)
+    app.router.add_get('/api/file_raw', web_api_file_raw)
     app.router.add_post('/api/save', web_api_save)
     app.router.add_post('/api/github', web_api_github)
     
