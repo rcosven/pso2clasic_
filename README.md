@@ -13,7 +13,7 @@ La traducción es un esfuerzo colaborativo y cualquier ayuda es bienvenida, ya s
 Puedes seguir el proyecto y mantenerte al día a través de nuestros canales oficiales:
 
 * **Facebook:** https://www.facebook.com/PSO2spanish
-* **Discord:** https://discord.gg/Q6R4GjBCE
+* **Discord:** https://discord.gg/5GPm2rxzj
 * **Repositorio Web:** https://github.com/rcosven/pso2clasic_
 
 En nuestro servidor de Discord encontrarás:
