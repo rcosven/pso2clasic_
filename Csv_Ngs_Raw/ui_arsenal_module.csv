@@ -1,23 +1,4 @@
 ﻿section,group,id,text
-ClassCounter,0,TopMenu_Title,M.A.R.S.スキル
-ClassCounter,0,TopMenu_GetSkill,M.A.R.S.スキルポイント交換
-ClassCounter,0,TopMenu_Distribution,M.A.R.S.スキル習得
-ClassCounter,0,TopMenu_Explanation,M.A.R.S.スキルの習得や、ポイントを交換できます。
-ClassCounter,0,Explanation1,特定のアイテムを納品することで、M.A.R.S.スキルポイントを獲得できます。
-ClassCounter,0,Title_ModuleSkillSet,M.A.R.S.スキル習得
-ClassCounter,0,ModuleSkillList,スキルツリー$(0)
-ClassCounter,0,HavePointLabel,M.A.R.S.スキルポイント
-ClassCounter,0,GetPointMessage,指定のアイテムを納品して<br>M.A.R.S.スキルポイントを獲得します。<br><br><yellow>※M.A.R.S.スキルポイントの累計で、必要納品数が変わります。<br>　M.A.R.S.スキルポイントの累計は、アカウントごとに保存されます。<c>
-ClassCounter,0,GetPointLabel,獲得するM.A.R.S.スキルポイント
-ClassCounter,0,GetPoint_Yes,決定
-ClassCounter,0,GetPoint_No,キャンセル
-ClassCounter,0,Medium_Title1,対象ポイント
-ClassCounter,0,Medium_Title2,納品前
-ClassCounter,0,Medium_Title3,納品後
-ClassCounter,0,Medium_Title4,納品アイテム
-ClassCounter,0,Medium_Title5,必要数
-ClassCounter,0,GetPoint_ToastMessage,M.A.R.S.スキルポイントを獲得しました。
-ClassCounter,0,GetPoint_ToastMessage2,M.A.R.S.スキルポイントは、これ以上獲得できません。
 ClassCounter,1,TopMenu_Title,M.A.R.S. Skills
 ClassCounter,1,TopMenu_GetSkill,M.A.R.S. Skill Point Exchange
 ClassCounter,1,TopMenu_Distribution,M.A.R.S. Skill Learning
@@ -37,28 +18,25 @@ ClassCounter,1,Medium_Title4,Items to Exchange
 ClassCounter,1,Medium_Title5,Needed
 ClassCounter,1,GetPoint_ToastMessage,You acquired M.A.R.S. Skill Points.
 ClassCounter,1,GetPoint_ToastMessage2,You cannot acquire any more M.A.R.S. Skill Points.
-SkillTree,0,Title_ModuleSkillSet,M.A.R.S.スキルリスト
-SkillTree,0,Explanation1,M.A.R.S.スキルポイントを消費して、スキルを習得できます。
-SkillTree,0,Popup_SkillCheck,スキルツリー確認
-SkillTree,0,Popup_Use,このスキルツリーを使用する
-SkillTree,0,Popup_Help,ヘルプを表示
-SkillTree,0,Title_ModuleSkillTree,M.A.R.S.（セット<pict 4space>$(0)）
-SkillTree,0,Combo_All,すべて表示
-SkillTree,0,Combo_Common,各兵装共通スキル
-SkillTree,0,Combo_Sword,VA-1SRM ガルム
-SkillTree,0,Combo_Scythe,VA-2MRM ニズヘッグ
-SkillTree,0,Combo_Railgun,VA-3LRM ハイドラ
-SkillTree,0,Combo_Broom,VA-4XRM スカイラ
-SkillTree,0,Combo_Sub,SA型
-SkillTree,0,Label_HaveSkillPoint,所持M.A.R.S.スキルポイント
-SkillTree,0,DecideText,決定
-SkillTree,0,CancelText,キャンセル
-SkillTree,0,SkillPointText,$(0) / $(1)
-SkillTree,0,Title_SkillAcquisition,スキルポイント
-SkillTree,0,Message_SkillAcquisition,スキルポイントの割り振りを行います。<br>よろしいですか？
-SkillTree,0,Message_SkillAcquisitionCancel,変更を破棄します。<br>よろしいですか？
-SkillTree,0,Message_SkillAcquisitionLack,スキルポイントが不足しています。
-SkillTree,0,SkillPoint_ToastMessage,M.A.R.S.スキルポイントの割り振りが完了しました。
+ClassCounter,0,TopMenu_Title,M.A.R.S.スキル
+ClassCounter,0,TopMenu_GetSkill,M.A.R.S.スキルポイント交換
+ClassCounter,0,TopMenu_Distribution,M.A.R.S.スキル習得
+ClassCounter,0,TopMenu_Explanation,M.A.R.S.スキルの習得や、ポイントを交換できます。
+ClassCounter,0,Explanation1,特定のアイテムを納品することで、M.A.R.S.スキルポイントを獲得できます。
+ClassCounter,0,Title_ModuleSkillSet,M.A.R.S.スキル習得
+ClassCounter,0,ModuleSkillList,スキルツリー$(0)
+ClassCounter,0,HavePointLabel,M.A.R.S.スキルポイント
+ClassCounter,0,GetPointMessage,指定のアイテムを納品して<br>M.A.R.S.スキルポイントを獲得します。<br><br><yellow>※M.A.R.S.スキルポイントの累計で、必要納品数が変わります。<br>　M.A.R.S.スキルポイントの累計は、アカウントごとに保存されます。<c>
+ClassCounter,0,GetPointLabel,獲得するM.A.R.S.スキルポイント
+ClassCounter,0,GetPoint_Yes,決定
+ClassCounter,0,GetPoint_No,キャンセル
+ClassCounter,0,Medium_Title1,対象ポイント
+ClassCounter,0,Medium_Title2,納品前
+ClassCounter,0,Medium_Title3,納品後
+ClassCounter,0,Medium_Title4,納品アイテム
+ClassCounter,0,Medium_Title5,必要数
+ClassCounter,0,GetPoint_ToastMessage,M.A.R.S.スキルポイントを獲得しました。
+ClassCounter,0,GetPoint_ToastMessage2,M.A.R.S.スキルポイントは、これ以上獲得できません。
 SkillTree,1,Title_ModuleSkillSet,M.A.R.S. Skill List
 SkillTree,1,Explanation1,Spend M.A.R.S. Skill Points to learn skills.
 SkillTree,1,Popup_SkillCheck,View Skill Trees
@@ -81,14 +59,28 @@ SkillTree,1,Message_SkillAcquisition,dummy text
 SkillTree,1,Message_SkillAcquisitionCancel,Your changes will be discarded.<br>Are you sure?
 SkillTree,1,Message_SkillAcquisitionLack,dummy text
 SkillTree,1,SkillPoint_ToastMessage,M.A.R.S. Skill Points assigned.
-WeaponCategory,0,Sword,VA-1SRM ガルム
-WeaponCategory,0,Scythe,VA-2MRM ニズヘッグ
-WeaponCategory,0,Railgun,VA-3LRM ハイドラ
-WeaponCategory,0,Broom,VA-4XRM スカイラ
-WeaponCategory,0,Sub_HMT,SA-1HMP フェンリル
-WeaponCategory,0,Sub_HDT,SA-2HDP ファブニル
-WeaponCategory,0,Sub_AET,SA-3HFP リントヴルム
-WeaponCategory,0,Skillcommon,各兵装共通スキル
+SkillTree,0,Title_ModuleSkillSet,M.A.R.S.スキルリスト
+SkillTree,0,Explanation1,M.A.R.S.スキルポイントを消費して、スキルを習得できます。
+SkillTree,0,Popup_SkillCheck,スキルツリー確認
+SkillTree,0,Popup_Use,このスキルツリーを使用する
+SkillTree,0,Popup_Help,ヘルプを表示
+SkillTree,0,Title_ModuleSkillTree,M.A.R.S.（セット<pict 4space>$(0)）
+SkillTree,0,Combo_All,すべて表示
+SkillTree,0,Combo_Common,各兵装共通スキル
+SkillTree,0,Combo_Sword,VA-1SRM ガルム
+SkillTree,0,Combo_Scythe,VA-2MRM ニズヘッグ
+SkillTree,0,Combo_Railgun,VA-3LRM ハイドラ
+SkillTree,0,Combo_Broom,VA-4XRM スカイラ
+SkillTree,0,Combo_Sub,SA型
+SkillTree,0,Label_HaveSkillPoint,所持M.A.R.S.スキルポイント
+SkillTree,0,DecideText,決定
+SkillTree,0,CancelText,キャンセル
+SkillTree,0,SkillPointText,$(0) / $(1)
+SkillTree,0,Title_SkillAcquisition,スキルポイント
+SkillTree,0,Message_SkillAcquisition,スキルポイントの割り振りを行います。<br>よろしいですか？
+SkillTree,0,Message_SkillAcquisitionCancel,変更を破棄します。<br>よろしいですか？
+SkillTree,0,Message_SkillAcquisitionLack,スキルポイントが不足しています。
+SkillTree,0,SkillPoint_ToastMessage,M.A.R.S.スキルポイントの割り振りが完了しました。
 WeaponCategory,1,Sword,VA-1SRM Garm
 WeaponCategory,1,Scythe,VA-2MRM Nidhoggr
 WeaponCategory,1,Railgun,VA-3LRM Hydra
@@ -97,3 +89,11 @@ WeaponCategory,1,Sub_HMT,SA-1HMP Fenrir
 WeaponCategory,1,Sub_HDT,SA-2HDP Fafnir
 WeaponCategory,1,Sub_AET,SA-3HFP Lindworm
 WeaponCategory,1,Skillcommon,Common Skills
+WeaponCategory,0,Sword,VA-1SRM ガルム
+WeaponCategory,0,Scythe,VA-2MRM ニズヘッグ
+WeaponCategory,0,Railgun,VA-3LRM ハイドラ
+WeaponCategory,0,Broom,VA-4XRM スカイラ
+WeaponCategory,0,Sub_HMT,SA-1HMP フェンリル
+WeaponCategory,0,Sub_HDT,SA-2HDP ファブニル
+WeaponCategory,0,Sub_AET,SA-3HFP リントヴルム
+WeaponCategory,0,Skillcommon,各兵装共通スキル

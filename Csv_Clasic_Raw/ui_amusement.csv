@@ -1,42 +1,4 @@
-section,group,id,text
-Common,0,Coin,所持カジノコイン
-Common,0,TitleCongest,カジノエリア混雑状況
-Common,0,Congest_Name_SlotRappy,ラッピースロット
-Common,0,Congest_Name_Shooter,メセタンシューター
-Common,0,Congest_Name_SlotArkuma,アークマスロット
-Common,0,Congest_Name_Roulette,リーリールーレット
-Common,0,Congest_Name_Blackjack,ブラックニャック
-Common,0,Congest_Empty,空席あり
-Common,0,Congest_Full,盛況
-Common,0,Congest_Over,混雑
-Common,0,Congest_Loading,読み込み中
-Common,0,Congest_Failure,不明
-Common,0,ContentInfo,コンテンツ情報
-Common,0,ContentInfo_Nothing,なし
-Common,0,ContentMenu_None,通信中…
-Common,0,WindowTitle,メッセージ
-Common,0,ComeInMessage,預けていたカジノコインを受け取りました。
-Common,0,ComeInMessage2,現在$(0)<pict AmusementCoin>所持しています。
-Common,0,ComeOutMessage,所持カジノコインを預かりました。
-Common,0,ComeOutWarning,カジノコインが上限を超えています。景品交換するか、ACショップで上限を拡張しましょう。
-Common,0,ComeOutBetsCancel,BETをキャンセルしました。
-Common,0,PossessNum,現在の所持数
-Common,0,Back,戻る
-Common,0,Message,メッセージ
-Common,0,Yes,はい
-Common,0,No,いいえ
-Common,0,Close,閉じる
-Common,0,Decide,決定
-Common,0,Cancel,キャンセル
-Common,0,BigHitShooter,$(0)さんがメセタンシューターで大当たりしました！
-Common,0,BigHitSlotRappy,$(0)さんがラッピースロットで大当たりしました！
-Common,0,BigHitSlotRappyJP,$(0)さんがラッピースロットでジャックポットを達成しました！
-Common,0,BigHitCard,$(0)さんがブラックニャックで大当たりしました！
-Common,0,BigHitRoulette,$(0)さんがリーリールーレットで大当たりしました！
-Common,0,BigHitSlotArkuma,$(0)さんがアークマスロットで大当たりしました！
-Common,0,BoostCampaignTitle,ブーストキャンペーン情報
-Common,0,SuperBoostCampaignTitle,スーパーブーストキャンペーン情報
-Common,0,ContentsProhibitMessage,現在、このコンテンツはご利用できません。
+﻿section,group,id,text
 Common,1,Coin,Your Casino Coins
 Common,1,TitleCongest,CASINO CONGESTION
 Common,1,Congest_Name_SlotRappy,Rappy Slots
@@ -75,50 +37,44 @@ Common,1,BigHitSlotArkuma,$(0) won big in Arkuma Slots!
 Common,1,BoostCampaignTitle,Boost Campaign Information
 Common,1,SuperBoostCampaignTitle,Super Boost Campaign Information
 Common,1,ContentsProhibitMessage,This content is currently unavailable.
-PrizeExchange,0,PrizeExchangeTitleMenu,ショップメニュー
-PrizeExchange,0,PrizeExchangeInfo,景品交換所情報
-PrizeExchange,0,PrizeExchangeNo,交換回数
-PrizeExchange,0,PrizeExchangeNoInfo,<utcdow>水曜日8:00</utcdow>にリセット
-PrizeExchange,0,PrizeExchangeNoInfoVITA,交換回数(水曜13時にリセット)
-PrizeExchange,0,PrizeExchangeTitle,景品交換カウンター
-PrizeExchange,0,PrizeExchangeHead,<c f0df60>コインで景品を交換できます。<c>
-PrizeExchange,0,PrizeExchangeHead_1,<c f0df60>コインを交換回数制限のない景品と交換できます。<c>
-PrizeExchange,0,PrizeExchangeHead_2,<c f0df60>コインを交換回数に制限のある景品と交換できます。<c>
-PrizeExchange,0,PrizeExchangeHeadExit,<c f0df60>景品交換カウンターから出ます。<c>
-PrizeExchange,0,PrizeExchangeHeadSelect_1,<c f0df60>コインを消費して、景品と交換できます。交換する景品を選択してください。<c>
-PrizeExchange,0,PrizeExchangeHeadSelect_2,<c f0df60>交換する景品を選択してください(交換数には週制限があり、毎週<utcdow>水曜日4:00</utcdow>にリセットされます)。<c>
-PrizeExchange,0,PrizeExchangeContents,景品交換カウンターメニュー
-PrizeExchange,0,PrizeExchangeMenu_1,通常景品と交換
-PrizeExchange,0,PrizeExchangeMenu_2,限定景品と交換
-PrizeExchange,0,PrizeExchangeMenuExit,カウンターを出る
-PrizeExchange,0,PrizeExchangeList,景品リスト
-PrizeExchange,0,PrizeExchangeTotalCoin,合計枚数
-PrizeExchange,0,PrizeExchangeItemPack,アイテムバック
-PrizeExchange,0,PrizeExchangeExchange,交換
-PrizeExchange,0,PrizeExchangeSort,標準ソート
-PrizeExchange,0,PrizeExchangeDetails,アイテム詳細
-PrizeExchange,0,PrizeExchangeRadioButton,装備可のみ
-PrizeExchange,0,simpleinput,<pict Sign_SQUARE>簡易入力
-PrizeExchange,0,PrizeExchangeCoin,$(0)<pict AmusementCoin>
-PrizeExchange,0,PrizeExchangeCoinRed,<red>$(0)<c><pict AmusementCoin>
-PrizeExchange,0,ExchangeCheckTitle,交換確認
-PrizeExchange,0,ExchangeCheckMessage,以下のアイテムを、$(0)<pict AmusementCoin>で交換します。<br>よろしいですか？<br>
-PrizeExchange,0,ExchangeLimitCheckMessage,以下のアイテムを、$(0)<pict AmusementCoin>で交換します。<br>よろしいですか？<br>（交換回数は、毎週<utcdow>水曜日8:00</utcdow>にリセット）
-PrizeExchange,0,PreExchangeLimitMessage,交換回数が上限を超えています。<br>期間を空けて、またお越しください。<br>（交換回数は、毎週<utcdow>水曜日8:00</utcdow>にリセット）
-PrizeExchange,0,ExchangeLimitMessage,交換回数の上限を超えているので、<br>交換できませんでした。
-PrizeExchange,0,ExchangeCancelTitle,交換キャンセル確認
-PrizeExchange,0,ExchangeCancelMessage,交換をキャンセルします。<br>よろしいですか？
-PrizeExchange,0,ExchangeCoinInsufficient,所持カジノコインが不足しています。
-PrizeExchange,0,ExchangeResultTitle,アイテム交換
-PrizeExchange,0,ExchangeResultMessage1,アイテムを交換しました。
-PrizeExchange,0,ExchangeResultMessage2,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>交換できませんでした。
-PrizeExchange,0,ExchangeDBAccessMessage,サーバーが混雑しているため、<br>景品の交換ができませんでした。
-PrizeExchange,0,LimitedItem,<yellow>限定<c>
-PrizeExchange,0,LimitedItemTitle1,<yellow>交換可能数<c>
-PrizeExchange,0,LimitedItemTitle2,<yellow>リセット日時<c>
-PrizeExchange,0,LimitedItemText1,$(0)個まで交換可能
-PrizeExchange,0,LimitedItemText2,あと$(0)個
-PrizeExchange,0,LimitedItemTitle3,交換アイテム情報
+Common,0,Coin,所持カジノコイン
+Common,0,TitleCongest,カジノエリア混雑状況
+Common,0,Congest_Name_SlotRappy,ラッピースロット
+Common,0,Congest_Name_Shooter,メセタンシューター
+Common,0,Congest_Name_SlotArkuma,アークマスロット
+Common,0,Congest_Name_Roulette,リーリールーレット
+Common,0,Congest_Name_Blackjack,ブラックニャック
+Common,0,Congest_Empty,空席あり
+Common,0,Congest_Full,盛況
+Common,0,Congest_Over,混雑
+Common,0,Congest_Loading,読み込み中
+Common,0,Congest_Failure,不明
+Common,0,ContentInfo,コンテンツ情報
+Common,0,ContentInfo_Nothing,なし
+Common,0,ContentMenu_None,通信中…
+Common,0,WindowTitle,メッセージ
+Common,0,ComeInMessage,預けていたカジノコインを受け取りました。
+Common,0,ComeInMessage2,現在$(0)<pict AmusementCoin>所持しています。
+Common,0,ComeOutMessage,所持カジノコインを預かりました。
+Common,0,ComeOutWarning,カジノコインが上限を超えています。景品交換するか、ACショップで上限を拡張しましょう。
+Common,0,ComeOutBetsCancel,BETをキャンセルしました。
+Common,0,PossessNum,現在の所持数
+Common,0,Back,戻る
+Common,0,Message,メッセージ
+Common,0,Yes,はい
+Common,0,No,いいえ
+Common,0,Close,閉じる
+Common,0,Decide,決定
+Common,0,Cancel,キャンセル
+Common,0,BigHitShooter,$(0)さんがメセタンシューターで大当たりしました！
+Common,0,BigHitSlotRappy,$(0)さんがラッピースロットで大当たりしました！
+Common,0,BigHitSlotRappyJP,$(0)さんがラッピースロットでジャックポットを達成しました！
+Common,0,BigHitCard,$(0)さんがブラックニャックで大当たりしました！
+Common,0,BigHitRoulette,$(0)さんがリーリールーレットで大当たりしました！
+Common,0,BigHitSlotArkuma,$(0)さんがアークマスロットで大当たりしました！
+Common,0,BoostCampaignTitle,ブーストキャンペーン情報
+Common,0,SuperBoostCampaignTitle,スーパーブーストキャンペーン情報
+Common,0,ContentsProhibitMessage,現在、このコンテンツはご利用できません。
 PrizeExchange,1,PrizeExchangeTitleMenu,SHOP MENU
 PrizeExchange,1,PrizeExchangeInfo,Prize Exchange Information
 PrizeExchange,1,PrizeExchangeNo,Number of Exchanges
@@ -160,32 +116,53 @@ PrizeExchange,1,ExchangeDBAccessMessage,The exchange could not be completed<br>d
 PrizeExchange,1,LimitedItem,<yellow>Limited<c>
 PrizeExchange,1,LimitedItemTitle1,<yellow>ALLOWED EXCHANGES<c>
 PrizeExchange,1,LimitedItemTitle2,<yellow>RESET TIME<c>
-PrizeExchange,1,LimitedItemText1,You can trade up to $(0) Units
+PrizeExchange,1,LimitedItemText1,You can trade up to $(0) Units  
 PrizeExchange,1,LimitedItemText2,($(0) Remaining)
 PrizeExchange,1,LimitedItemTitle3,EXCHANGE ITEM INFO
-gacha,0,title_big_gacha,コインエクスチェンジャー
-gacha,0,2gide_big_gacha,<c f0df60>カジノコインパス１枚で１回まわすことができ、カジノコインが当たります。<c>
-gacha,0,content_big_gacha,コインエクスチェンジャー
-gacha,0,mawasu_gacha,コインエクスチェンジャーを回す
-gacha,0,Play_1Time,1回まわす
-gacha,0,Play_5Time,5回まわす
-gacha,0,Return,戻る
-gacha,0,PrizeInfo,景品情報
-gacha,0,PosCoin,獲得カジノコイン
-gacha,0,PlayConfirmTitle,確認
-gacha,0,PlayConfirm,カジノコインパスを$(0)枚使用します。<br>よろしいですか？<br><br>(所持カジノコインパス：$(1)枚)
-gacha,0,CoinPassMiss,カジノコインパスが不足しています。
-gacha,0,SystemError,交換できませんでした。
-gacha,0,SuccessMessage,カジノコインを獲得しました。
-gacha,0,ExplainMessage,$(0)～$(1)<pict AmusementCoin>
-gacha,0,ExplainMessage2,<c ffff00>$(0)～$(1)<pict AmusementCoin>(キャンペーン中)<c>
-gacha,0,Step_1,<c ffffff>$(0)<c><pict AmusementCoin>
-gacha,0,Step_2,<c 00ff00>$(0)<c><pict AmusementCoin>
-gacha,0,Step_3,<c ffa800>$(0)<c><pict AmusementCoin>
-gacha,0,Step_4,<c ffff00>$(0)<c><pict AmusementCoin>
-gacha,0,CoinPlayMax,所持カジノコインは、<br>$(0)を超えた分は所持することができません。<br>それでも、まわしますか？
-gacha,0,CampaignText,-
-gacha,0,SuperCampaignText,-
+PrizeExchange,0,PrizeExchangeTitleMenu,ショップメニュー
+PrizeExchange,0,PrizeExchangeInfo,景品交換所情報
+PrizeExchange,0,PrizeExchangeNo,交換回数
+PrizeExchange,0,PrizeExchangeNoInfo,<utcdow>水曜日8:00</utcdow>にリセット
+PrizeExchange,0,PrizeExchangeNoInfoVITA,交換回数(水曜13時にリセット)
+PrizeExchange,0,PrizeExchangeTitle,景品交換カウンター
+PrizeExchange,0,PrizeExchangeHead,<c f0df60>コインで景品を交換できます。<c>
+PrizeExchange,0,PrizeExchangeHead_1,<c f0df60>コインを交換回数制限のない景品と交換できます。<c>
+PrizeExchange,0,PrizeExchangeHead_2,<c f0df60>コインを交換回数に制限のある景品と交換できます。<c>
+PrizeExchange,0,PrizeExchangeHeadExit,<c f0df60>景品交換カウンターから出ます。<c>
+PrizeExchange,0,PrizeExchangeHeadSelect_1,<c f0df60>コインを消費して、景品と交換できます。交換する景品を選択してください。<c>
+PrizeExchange,0,PrizeExchangeHeadSelect_2,<c f0df60>交換する景品を選択してください(交換数には週制限があり、毎週<utcdow>水曜日4:00</utcdow>にリセットされます)。<c>
+PrizeExchange,0,PrizeExchangeContents,景品交換カウンターメニュー
+PrizeExchange,0,PrizeExchangeMenu_1,通常景品と交換
+PrizeExchange,0,PrizeExchangeMenu_2,限定景品と交換
+PrizeExchange,0,PrizeExchangeMenuExit,カウンターを出る
+PrizeExchange,0,PrizeExchangeList,景品リスト
+PrizeExchange,0,PrizeExchangeTotalCoin,合計枚数
+PrizeExchange,0,PrizeExchangeItemPack,アイテムバック
+PrizeExchange,0,PrizeExchangeExchange,交換
+PrizeExchange,0,PrizeExchangeSort,標準ソート
+PrizeExchange,0,PrizeExchangeDetails,アイテム詳細
+PrizeExchange,0,PrizeExchangeRadioButton,装備可のみ
+PrizeExchange,0,simpleinput,<pict Sign_SQUARE>簡易入力
+PrizeExchange,0,PrizeExchangeCoin,$(0)<pict AmusementCoin>
+PrizeExchange,0,PrizeExchangeCoinRed,<red>$(0)<c><pict AmusementCoin>
+PrizeExchange,0,ExchangeCheckTitle,交換確認
+PrizeExchange,0,ExchangeCheckMessage,以下のアイテムを、$(0)<pict AmusementCoin>で交換します。<br>よろしいですか？<br>
+PrizeExchange,0,ExchangeLimitCheckMessage,以下のアイテムを、$(0)<pict AmusementCoin>で交換します。<br>よろしいですか？<br>（交換回数は、毎週<utcdow>水曜日8:00</utcdow>にリセット）
+PrizeExchange,0,PreExchangeLimitMessage,交換回数が上限を超えています。<br>期間を空けて、またお越しください。<br>（交換回数は、毎週<utcdow>水曜日8:00</utcdow>にリセット）
+PrizeExchange,0,ExchangeLimitMessage,交換回数の上限を超えているので、<br>交換できませんでした。
+PrizeExchange,0,ExchangeCancelTitle,交換キャンセル確認
+PrizeExchange,0,ExchangeCancelMessage,交換をキャンセルします。<br>よろしいですか？
+PrizeExchange,0,ExchangeCoinInsufficient,所持カジノコインが不足しています。
+PrizeExchange,0,ExchangeResultTitle,アイテム交換
+PrizeExchange,0,ExchangeResultMessage1,アイテムを交換しました。
+PrizeExchange,0,ExchangeResultMessage2,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>交換できませんでした。
+PrizeExchange,0,ExchangeDBAccessMessage,サーバーが混雑しているため、<br>景品の交換ができませんでした。
+PrizeExchange,0,LimitedItem,<yellow>限定<c>
+PrizeExchange,0,LimitedItemTitle1,<yellow>交換可能数<c>
+PrizeExchange,0,LimitedItemTitle2,<yellow>リセット日時<c>
+PrizeExchange,0,LimitedItemText1,$(0)個まで交換可能 
+PrizeExchange,0,LimitedItemText2,あと$(0)個
+PrizeExchange,0,LimitedItemTitle3,交換アイテム情報
 gacha,1,title_big_gacha,Coin Exchanger
 gacha,1,2gide_big_gacha,<c f0df60>Spin it 1 time for 1 Casino Coin Pass to win Casino Coins.<c>
 gacha,1,content_big_gacha,Coin Exchanger
@@ -209,21 +186,29 @@ gacha,1,Step_4,<c ffff00>$(0)<c> <pict AmusementCoin>
 gacha,1,CoinPlayMax,"If the number of Casino Coins in your possession exceeds<br>$(0), you won't be able to keep any more coins.<br>Are you sure you want to play?"
 gacha,1,CampaignText,-
 gacha,1,SuperCampaignText,-
-jihanki,0,react_red1,とても美味しい味がした。　(◇◇◇◇◇)
-jihanki,0,react_red2,自分好みの味がした。　(◇◇◇◇)
-jihanki,0,react_red3,良くも悪くもない味がした。　(◇◇◇)
-jihanki,0,react_red4,好みではない味がした。　(◇◇)
-jihanki,0,react_red5,とても微妙な味がした。　(◇)
-jihanki,0,react_blue1,晴れやかな気分だ。　(♪♪♪♪♪)
-jihanki,0,react_blue2,さわやかな気分だ。　(♪♪♪♪)
-jihanki,0,react_blue3,いつもと同じ気分だ。　(♪♪♪)
-jihanki,0,react_blue4,イマイチな気分だ。　(♪♪)
-jihanki,0,react_blue5,グッタリした気分だ。　(♪)
-jihanki,0,react_purple1,今の運勢は：大吉！！　(☆☆☆☆☆)
-jihanki,0,react_purple2,今の運勢は：中吉！　(☆☆☆☆)
-jihanki,0,react_purple3,今の運勢は：吉　(☆☆☆)
-jihanki,0,react_purple4,今の運勢は：末吉！　(☆☆)
-jihanki,0,react_purple5,今の運勢は：凶！！　(☆)
+gacha,0,title_big_gacha,コインエクスチェンジャー
+gacha,0,2gide_big_gacha,<c f0df60>カジノコインパス１枚で１回まわすことができ、カジノコインが当たります。<c>
+gacha,0,content_big_gacha,コインエクスチェンジャー
+gacha,0,mawasu_gacha,コインエクスチェンジャーを回す
+gacha,0,Play_1Time,1回まわす
+gacha,0,Play_5Time,5回まわす
+gacha,0,Return,戻る
+gacha,0,PrizeInfo,景品情報
+gacha,0,PosCoin,獲得カジノコイン
+gacha,0,PlayConfirmTitle,確認
+gacha,0,PlayConfirm,カジノコインパスを$(0)枚使用します。<br>よろしいですか？<br><br>(所持カジノコインパス：$(1)枚)
+gacha,0,CoinPassMiss,カジノコインパスが不足しています。
+gacha,0,SystemError,交換できませんでした。
+gacha,0,SuccessMessage,カジノコインを獲得しました。
+gacha,0,ExplainMessage,$(0)～$(1)<pict AmusementCoin>
+gacha,0,ExplainMessage2,<c ffff00>$(0)～$(1)<pict AmusementCoin>(キャンペーン中)<c>
+gacha,0,Step_1,<c ffffff>$(0)<c><pict AmusementCoin>
+gacha,0,Step_2,<c 00ff00>$(0)<c><pict AmusementCoin>
+gacha,0,Step_3,<c ffa800>$(0)<c><pict AmusementCoin>
+gacha,0,Step_4,<c ffff00>$(0)<c><pict AmusementCoin>
+gacha,0,CoinPlayMax,所持カジノコインは、<br>$(0)を超えた分は所持することができません。<br>それでも、まわしますか？
+gacha,0,CampaignText,-
+gacha,0,SuperCampaignText,-
 jihanki,1,react_red1,It tasted really delicious. (◇◇◇◇◇)
 jihanki,1,react_red2,It was a taste I liked. (◇◇◇◇)
 jihanki,1,react_red3,It was neither good nor bad. (◇◇◇)
@@ -239,37 +224,21 @@ jihanki,1,react_purple2,Today's fortune: Good luck! (☆☆☆☆)
 jihanki,1,react_purple3,Today's fortune: Lucky (☆☆☆)
 jihanki,1,react_purple4,Today's fortune: Good luck to come! (☆☆)
 jihanki,1,react_purple5,Today's fortune: Bad luck!! (☆)
-shooter,0,title_shooter,メセタンシューター
-shooter,0,2gide_shooter,<c f0df60>最大４人プレイでメセタンシューターを遊ぶことができます。<c>
-shooter,0,2gide_shooter_item,<c f0df60>$(0)<pict AmusementCoin>で$(1)倍<c>
-shooter,0,content_shooter,メセタンシューター
-shooter,0,shooter_help,射撃：<%NormalAttack> 移動：<%LStick> カメラ操作：<%RStick> 途中で退席：<%MainMenu>
-shooter,0,shooter_help_key,射撃：<%NormalAttack> 移動：<%MoveLeft>/<%MoveRight> カメラ操作：マウス移動 途中で退席：Esc
-shooter,0,away_confirmation,退席確認
-shooter,0,away_button,退席する
-shooter,0,shooter_result,シューターリザルト
-shooter,0,shooter_result_comment,メセタンシューターを続けますか？
-shooter,0,acquisition_cc,獲得<pict AmusementCoin>
-shooter,0,possession_cc,合計所持<pict AmusementCoin>
-shooter,0,rate_1,ブロンズ
-shooter,0,rate_2,シルバー
-shooter,0,rate_3,ゴールド
-shooter,0,shooter_menu_item,$(0)モードでプレイ
-shooter,0,cc_with_icon,$(0)<pict AmusementCoin>
-shooter,0,shooter_result_item,$(0)<pict AmusementCoin>でプレイ（$(1)モード）
-shooter,0,contents_info_title,メセタンシューター情報
-shooter,0,contents_info,<space>
-shooter,0,contents_info_rate,$(0)モード
-shooter,0,player_num,プレイヤー人数　$(1)／$(0)
-shooter,0,shooter_menu_message,$(0)<pict AmusementCoin>で<br>メセタンシューターを遊びます。<br>よろしいですか？<br><br>（所持<pict AmusementCoin>：$(1)）<br><br>メセタンシューターのプレイ中は<br>パーティーやクエストに関連する<br>一部の通知は行われません。
-shooter,0,shooter_menu_coin_message,所持カジノコインが不足しています。
-shooter,0,away_message,メセタンシューターから退席し、<br>獲得したコインを精算します。<br><br>よろしいですか？
-shooter,0,line_message,WAITING…<br>現在のWAVEが終わるまでお待ちください。
-shooter,0,toast_playing,他のプレイヤーが遊んでいるため、遊べません。
-shooter,0,toast_burst_failed,他のプレイヤーがPSEバースト中です。しばらくお待ちください。
-shooter,0,toast_coin_message,コインが足りないのでゲームを終了しました
-shooter,0,CampaignText,PSEレベル上昇倍率アップ
-shooter,0,SuperCampaignText,PSEレベル上昇倍率<yellow>超アップ！<c>
+jihanki,0,react_red1,とても美味しい味がした。　(◇◇◇◇◇)
+jihanki,0,react_red2,自分好みの味がした。　(◇◇◇◇)
+jihanki,0,react_red3,良くも悪くもない味がした。　(◇◇◇)
+jihanki,0,react_red4,好みではない味がした。　(◇◇)
+jihanki,0,react_red5,とても微妙な味がした。　(◇)
+jihanki,0,react_blue1,晴れやかな気分だ。　(♪♪♪♪♪)
+jihanki,0,react_blue2,さわやかな気分だ。　(♪♪♪♪)
+jihanki,0,react_blue3,いつもと同じ気分だ。　(♪♪♪)
+jihanki,0,react_blue4,イマイチな気分だ。　(♪♪)
+jihanki,0,react_blue5,グッタリした気分だ。　(♪)
+jihanki,0,react_purple1,今の運勢は：大吉！！　(☆☆☆☆☆)
+jihanki,0,react_purple2,今の運勢は：中吉！　(☆☆☆☆)
+jihanki,0,react_purple3,今の運勢は：吉　(☆☆☆)
+jihanki,0,react_purple4,今の運勢は：末吉！　(☆☆)
+jihanki,0,react_purple5,今の運勢は：凶！！　(☆)
 shooter,1,title_shooter,Mesetan Shooter
 shooter,1,2gide_shooter,<c f0df60>You can play Mesetan Shooter with up to 4 people.<c>
 shooter,1,2gide_shooter_item,<c f0df60>$(0) <pict AmusementCoin> is $(1) times<c>
@@ -301,6 +270,116 @@ shooter,1,toast_burst_failed,Another player is in a PSE Burst. Please wait a mom
 shooter,1,toast_coin_message,The game will end because you don’t have enough coins.
 shooter,1,CampaignText,PSE Level Up Rate Increase
 shooter,1,SuperCampaignText,Send your PSE level-up rate <yellow>sky high<c>!
+shooter,0,title_shooter,メセタンシューター
+shooter,0,2gide_shooter,<c f0df60>最大４人プレイでメセタンシューターを遊ぶことができます。<c>
+shooter,0,2gide_shooter_item,<c f0df60>$(0)<pict AmusementCoin>で$(1)倍<c>
+shooter,0,content_shooter,メセタンシューター
+shooter,0,shooter_help,射撃：<%NormalAttack> 移動：<%LStick> カメラ操作：<%RStick> 途中で退席：<%MainMenu>
+shooter,0,shooter_help_key,射撃：<%NormalAttack> 移動：<%MoveLeft>/<%MoveRight> カメラ操作：マウス移動 途中で退席：Esc
+shooter,0,away_confirmation,退席確認
+shooter,0,away_button,退席する
+shooter,0,shooter_result,シューターリザルト
+shooter,0,shooter_result_comment,メセタンシューターを続けますか？
+shooter,0,acquisition_cc,獲得<pict AmusementCoin>
+shooter,0,possession_cc,合計所持<pict AmusementCoin>
+shooter,0,rate_1,ブロンズ
+shooter,0,rate_2,シルバー
+shooter,0,rate_3,ゴールド
+shooter,0,shooter_menu_item,$(0)モードでプレイ
+shooter,0,cc_with_icon,$(0)<pict AmusementCoin>
+shooter,0,shooter_result_item,$(0)<pict AmusementCoin>でプレイ（$(1)モード）
+shooter,0,contents_info_title,メセタンシューター情報
+shooter,0,contents_info,<space>
+shooter,0,contents_info_rate,$(0)モード
+shooter,0,player_num,プレイヤー人数　$(1)／$(0)
+shooter,0,shooter_menu_message,$(0)<pict AmusementCoin>で<br>メセタンシューターを遊びます。<br>よろしいですか？<br><br>（所持<pict AmusementCoin>：$(1)）<br><br>メセタンシューターのプレイ中は<br>パーティーやクエストに関連する<br>一部の通知は行われません。
+shooter,0,shooter_menu_coin_message,所持カジノコインが不足しています。
+shooter,0,away_message,メセタンシューターから退席し、<br>獲得したコインを精算します。<br><br>よろしいですか？
+shooter,0,line_message,WAITING…<br>現在のWAVEが終わるまでお待ちください。
+shooter,0,toast_playing,他のプレイヤーが遊んでいるため、遊べません。
+shooter,0,toast_burst_failed,他のプレイヤーがPSEバースト中です。しばらくお待ちください。
+shooter,0,toast_coin_message,コインが足りないのでゲームを終了しました
+shooter,0,CampaignText,PSEレベル上昇倍率アップ
+shooter,0,SuperCampaignText,PSEレベル上昇倍率<yellow>超アップ！<c>
+slot,1,title_slot,Rappy Slots
+slot,1,2gide_slot,<c f0df60>You can play Rappy Slots.<c>
+slot,1,content_slot,Rappy Slots
+slot,1,bet_maisu,Number of Bets
+slot,1,Coin,Your Casino Coins
+slot,1,slot_tonyu,Insert
+slot,1,slot_help,Insert　　　　/← →<br>Start　　　/Enter<br>Quit Slots/Esc<br>See Payout Sheet　/End<br>Help　　　　/Home
+slot,1,slot_haitohyo,Payout Sheet
+slot,1,SlotInfo,Basic Information
+slot,1,SlotBonus,Bonus Games Won
+slot,1,SlotMeter,Rappy Meter
+slot,1,SlotJackpot,Jackpot
+slot,1,SlotMenuPlay,Play
+slot,1,SlotMenuBack,Back
+slot,1,SlotMenuTitle,Rappy Slots Information
+slot,1,BasicInfo,1 Play 1-5 <pict AmusementCoin>
+slot,1,BonusNum,$(0) Times
+slot,1,RappyOn,<pict slot_rappy_on>
+slot,1,RappyOff,<pict slot_rappy_off>
+slot,1,EndConfirmTitle,CONFIRM EXIT
+slot,1,EndConfirm,Exit Rappy Slots.<br>Are you sure?
+slot,1,CoinNum,$(0) <pict AmusementCoin>
+slot,1,InfoCoinNum, x $(0)
+slot,1,InfoStr00,+bonus game
+slot,1,InfoStr01,meter+1
+slot,1,InfoCoin_01,x 100
+slot,1,InfoCoin_02,x 30
+slot,1,InfoCoin_03,x 15
+slot,1,InfoCoin_04,x 10
+slot,1,InfoCoin_05,x 8
+slot,1,InfoCoin_06,x 5
+slot,1,InfoCoin_07,x 3
+slot,1,Help_00,Insert
+slot,1,Help_01,Start!
+slot,1,Help_02,Payout Sheet
+slot,1,Help_03,Exit
+slot,1,Help_04,Chat
+slot,1,Help_10,[↑][↓] Keys
+slot,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
+slot,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
+slot,1,Help_10c,<pict Number_UP><pict Number_DOWN>
+slot,1,Help_11,<%Decide>
+slot,1,Help_12,[←][End] Keys
+slot,1,Help_12a,<pict Alpha_LEFT>
+slot,1,Help_12b,<pict Sign_LEFT>
+slot,1,Help_12c,<pict Number_LEFT>
+slot,1,Help_13,<%Cancel>/[ESC] Key
+slot,1,Help_13a,<%Cancel>
+slot,1,Help_14,<pict Sign_SELECT>
+slot,1,Help_14a,<pict Sign_START>
+slot,1,SlotInitMsg,"-,---,---"
+slot,1,NoCoinTitle,Casino Coin Error
+slot,1,NoCoinMessage,You do not have enough Casino Coins.
+slot,1,WaitLongMsg,You have left your seat due to inactivity.
+slot,1,ChanceModeExplanation,"/mn17 Kyu~♪ Jump in with a free spin!<br>There's a WILD symbol appearance rate increase going on now! Win, win, win, kyu kyu kyu♪!"
+slot,1,BonusModeExplanation,"/mn38 /toge Kyukyuu~♪♪ Look at that, a WILD symbol, and 'cause it's a Rappy PSE Burst, it's being held! Now’s the time to bet kyu kyu kyu♪!"
+slot,1,JackpotText,/mn22 /toge $(0)!<br>Wow! Kyul♪!
+slot,1,TipsText0,"/mn9 The WILD symbol is a special symbol that can count as any other symbol, kyu kyu kyu♪!"
+slot,1,TipsText1,/mn1 The footprint mark is a miss... kyu bad...
+slot,1,TipsText2,"/mn9 Fill up 5 Rappy Meters, then watch your timing and go for the WILD symbol for a kyutiful win!"
+slot,1,TipsText3,/mn9 Rappy PSE Chance is holding a WILD symbol on the middle reel! Kyu lucky~♪!
+slot,1,TipsText4,"/mn9 If a WILD symbol stops during a Rappy PSE Burst,<br>it will be held! That’s your big chance kyu kyu kyu♪!"
+slot,1,TipsText5,"/mn9 If you get all WILD symbols in a row, you hit the Jackpot! Kyuuu lucky!"
+slot,1,TipsText6,"/mn9 If you hit the Jackpot, you will get a ton of coins, kyu kyu kyu♪!"
+slot,1,TipsText7,"/mn9 Some people say certain machines are looser than others...<br>Hmm. I'm sure this one’s fine, kyu kyu kyu♪!"
+slot,1,TipsText8,"/mn9 Depending on how many bets you make,<br>you can get a multiplier on coins paid out! Kyu♪!"
+slot,1,TipsText9,/mn9 Rappy PSE Chance is a free spin<br>that lets you keep the number of bets you have at the time!
+slot,1,TipsText10,/mn16 /moya Today is another Rappy perfect day to win! Kyu kyu♪!
+slot,1,TipsText11,"/moya /mn4 Please win, kyu kyu kyu♪!"
+slot,1,TipsText12,"/mn15 If you keep playing until you win,<br>you can't lose, kyu kyu kyu♪!"
+slot,1,TipsText13,"/mn7  Rappy God, your kyuoperation is appreciated!"
+slot,1,TipsText14,"/mn10 If you get a big win, you can have as<br>many prizes as you want, kyu kyu kyu♪!"
+slot,1,TipsText15,/mn20 Kyu kyu♪! Here it comes!
+slot,1,TipsText16,I wanna get the Rappy PSE Chance! Kyu kyu♪!
+slot,1,TipsText17,If it goes up to Rappy PSE Burst...<br>Kyu kyu kyu♪!
+slot,1,TipsText18,"/mn1 Kyu♪... It spins so fast,<br>my eyes can't keep up with it. Kyu kyu♪!"
+slot,1,TipsText19,/moya I wanna see a Jackpot at least once!<br>Kyu kyu♪
+slot,1,CampaignText,Rappy PSE Chance entry rate increase
+slot,1,SuperCampaignText,Rappy PSE Chance entry rate <yellow>way up!<c><br>WILD symbol rate <yellow>doubled<c>!
 slot,0,title_slot,ラッピースロット
 slot,0,2gide_slot,<c f0df60>ラッピースロットを遊ぶことができます。<c>
 slot,0,content_slot,ラッピースロット
@@ -380,97 +459,6 @@ slot,0,TipsText18,/mn1 きゅぅ……ぐるぐる回るの早すぎて<br>目�
 slot,0,TipsText19,/moya ジャックポット、一度は見てみたい！<br>きゅきゅっ！
 slot,0,CampaignText,ラッピーPSEチャンス突入率アップ
 slot,0,SuperCampaignText,ラッピーPSEチャンス突入率<yellow>超アップ！<c><br>WILD図柄確率<yellow>2倍！<c>
-slot,1,title_slot,Rappy Slots
-slot,1,2gide_slot,<c f0df60>You can play Rappy Slots.<c>
-slot,1,content_slot,Rappy Slots
-slot,1,bet_maisu,Number of Bets
-slot,1,Coin,Your Casino Coins
-slot,1,slot_tonyu,Insert
-slot,1,slot_help,Insert　　　　/← →<br>Start　　　/Enter<br>Quit Slots/Esc<br>See Payout Sheet　/End<br>Help　　　　/Home
-slot,1,slot_haitohyo,Payout Sheet
-slot,1,SlotInfo,Basic Information
-slot,1,SlotBonus,Bonus Games Won
-slot,1,SlotMeter,Rappy Meter
-slot,1,SlotJackpot,Jackpot
-slot,1,SlotMenuPlay,Play
-slot,1,SlotMenuBack,Back
-slot,1,SlotMenuTitle,Rappy Slots Information
-slot,1,BasicInfo,1 Play 1-5 <pict AmusementCoin>
-slot,1,BonusNum,$(0) Times
-slot,1,RappyOn,<pict slot_rappy_on>
-slot,1,RappyOff,<pict slot_rappy_off>
-slot,1,EndConfirmTitle,CONFIRM EXIT
-slot,1,EndConfirm,Exit Rappy Slots.<br>Are you sure?
-slot,1,CoinNum,$(0) <pict AmusementCoin>
-slot,1,InfoCoinNum,x $(0)
-slot,1,InfoStr00,+bonus game
-slot,1,InfoStr01,meter+1
-slot,1,InfoCoin_01,x 100
-slot,1,InfoCoin_02,x 30
-slot,1,InfoCoin_03,x 15
-slot,1,InfoCoin_04,x 10
-slot,1,InfoCoin_05,x 8
-slot,1,InfoCoin_06,x 5
-slot,1,InfoCoin_07,x 3
-slot,1,Help_00,Insert
-slot,1,Help_01,Start!
-slot,1,Help_02,Payout Sheet
-slot,1,Help_03,Exit
-slot,1,Help_04,Chat
-slot,1,Help_10,[↑][↓] Keys
-slot,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
-slot,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
-slot,1,Help_10c,<pict Number_UP><pict Number_DOWN>
-slot,1,Help_11,<%Decide>
-slot,1,Help_12,[←][End] Keys
-slot,1,Help_12a,<pict Alpha_LEFT>
-slot,1,Help_12b,<pict Sign_LEFT>
-slot,1,Help_12c,<pict Number_LEFT>
-slot,1,Help_13,<%Cancel>/[ESC] Key
-slot,1,Help_13a,<%Cancel>
-slot,1,Help_14,<pict Sign_SELECT>
-slot,1,Help_14a,<pict Sign_START>
-slot,1,SlotInitMsg,"-,---,---"
-slot,1,NoCoinTitle,Casino Coin Error
-slot,1,NoCoinMessage,You do not have enough Casino Coins.
-slot,1,WaitLongMsg,You have left your seat due to inactivity.
-slot,1,ChanceModeExplanation,"/mn17 Kyu~♪ Jump in with a free spin!<br>There's a WILD symbol appearance rate increase going on now! Win, win, win, kyu kyu kyu♪!"
-slot,1,BonusModeExplanation,"/mn38 /toge Kyukyuu~♪♪ Look at that, a WILD symbol, and 'cause it's a Rappy PSE Burst, it's being held! Now’s the time to bet kyu kyu kyu♪!"
-slot,1,JackpotText,/mn22 /toge $(0)!<br>Wow! Kyul♪!
-slot,1,TipsText0,"/mn9 The WILD symbol is a special symbol that can count as any other symbol, kyu kyu kyu♪!"
-slot,1,TipsText1,/mn1 The footprint mark is a miss... kyu bad...
-slot,1,TipsText2,"/mn9 Fill up 5 Rappy Meters, then watch your timing and go for the WILD symbol for a kyutiful win!"
-slot,1,TipsText3,/mn9 Rappy PSE Chance is holding a WILD symbol on the middle reel! Kyu lucky~♪!
-slot,1,TipsText4,"/mn9 If a WILD symbol stops during a Rappy PSE Burst,<br>it will be held! That’s your big chance kyu kyu kyu♪!"
-slot,1,TipsText5,"/mn9 If you get all WILD symbols in a row, you hit the Jackpot! Kyuuu lucky!"
-slot,1,TipsText6,"/mn9 If you hit the Jackpot, you will get a ton of coins, kyu kyu kyu♪!"
-slot,1,TipsText7,"/mn9 Some people say certain machines are looser than others...<br>Hmm. I'm sure this one’s fine, kyu kyu kyu♪!"
-slot,1,TipsText8,"/mn9 Depending on how many bets you make,<br>you can get a multiplier on coins paid out! Kyu♪!"
-slot,1,TipsText9,/mn9 Rappy PSE Chance is a free spin<br>that lets you keep the number of bets you have at the time!
-slot,1,TipsText10,/mn16 /moya Today is another Rappy perfect day to win! Kyu kyu♪!
-slot,1,TipsText11,"/moya /mn4 Please win, kyu kyu kyu♪!"
-slot,1,TipsText12,"/mn15 If you keep playing until you win,<br>you can't lose, kyu kyu kyu♪!"
-slot,1,TipsText13,"/mn7  Rappy God, your kyuoperation is appreciated!"
-slot,1,TipsText14,"/mn10 If you get a big win, you can have as<br>many prizes as you want, kyu kyu kyu♪!"
-slot,1,TipsText15,/mn20 Kyu kyu♪! Here it comes!
-slot,1,TipsText16,I wanna get the Rappy PSE Chance! Kyu kyu♪!
-slot,1,TipsText17,If it goes up to Rappy PSE Burst...<br>Kyu kyu kyu♪!
-slot,1,TipsText18,"/mn1 Kyu♪... It spins so fast,<br>my eyes can't keep up with it. Kyu kyu♪!"
-slot,1,TipsText19,/moya I wanna see a Jackpot at least once!<br>Kyu kyu♪
-slot,1,CampaignText,Rappy PSE Chance entry rate increase
-slot,1,SuperCampaignText,Rappy PSE Chance entry rate <yellow>way up!<c><br>WILD symbol rate <yellow>doubled<c>!
-menu,0,TopMenu,メニュー
-menu,0,MenuSlot,スロット
-menu,0,MenuShooter,シューター
-menu,0,SubMenuSlot,スロットメニュー
-menu,0,SlotAnimeTest,アニメテスト
-menu,0,SlotInfoTest,情報表示テスト
-menu,0,SubMenuGacha,コインエクスチェンジャー
-menu,0,SubMenuBlackjack,ブラックニャックメニュー
-menu,0,SlotInfo_01,BET設定
-menu,0,SlotInfo_02,スタート
-menu,0,SlotInfo_03,配当表
-menu,0,SlotInfo_04,終了
 menu,1,TopMenu,Menu
 menu,1,MenuSlot,Slots
 menu,1,MenuShooter,Shooter
@@ -483,75 +471,22 @@ menu,1,SlotInfo_01,Set Bet
 menu,1,SlotInfo_02,Start!
 menu,1,SlotInfo_03,Payout Sheet
 menu,1,SlotInfo_04,Exit
-jackpot,0,access,現在のジャックポットは$(0)枚です。<br><br><yellow>　※ジャックポット枚数が500000に到達すると<br>　ジャックポット発生確率アップ！<c>
+menu,0,TopMenu,メニュー
+menu,0,MenuSlot,スロット
+menu,0,MenuShooter,シューター
+menu,0,SubMenuSlot,スロットメニュー
+menu,0,SlotAnimeTest,アニメテスト
+menu,0,SlotInfoTest,情報表示テスト
+menu,0,SubMenuGacha,コインエクスチェンジャー
+menu,0,SubMenuBlackjack,ブラックニャックメニュー
+menu,0,SlotInfo_01,BET設定
+menu,0,SlotInfo_02,スタート
+menu,0,SlotInfo_03,配当表
+menu,0,SlotInfo_04,終了
 jackpot,1,access,"The current jackpot is $(0).<br><br><yellow>If the number in the jackpot reaches 500,000,<br>the jackpot rate will increase!<c>"
-balloon,0,balloon_help,<%PhotonArts>で降りる。
+jackpot,0,access,現在のジャックポットは$(0)枚です。<br><br><yellow>　※ジャックポット枚数が500000に到達すると<br>　ジャックポット発生確率アップ！<c>
 balloon,1,balloon_help,Land with <%PhotonArts>.
-Roulette,0,RouletteFullScreenTitle,リーリールーレット
-Roulette,0,RouletteGuide,<c f0df60>リーリールーレットを遊ぶことができます。<c>
-Roulette,0,RouletteTitle,リーリールーレット
-Roulette,0,RouletteBETTitle,リーリールーレット
-Roulette,0,RouletteBETMessageAa,<yellow>あと$(0)箇所BETが可能です。<c>
-Roulette,0,RouletteBETMessageAb,<red>BETは２箇所までです。<c>
-Roulette,0,RouletteBETMessageB,<yellow>BET枚数を選択してください。<c>
-Roulette,0,RouletteBETMessage,BETした場合結果を確認するまでエリア移動を<br>行わないことを推奨します。<br>正常に支払われない可能性があります。<br><br>自分のBET枚数：$(0)<pict AmusementCoin><br>全体のBET枚数：$(1)<pict AmusementCoin>
-Roulette,0,RouletteBETMessage2,<yellow>$(0)倍<c>
-Roulette,0,RouletteInfoTitle,過去の抽選結果
-Roulette,0,RouletteInfoHead1,<c ffc85a>前回<c>
-Roulette,0,RouletteInfoHead2,<c ffc85a>2<c>
-Roulette,0,RouletteInfoHead3,<c ffc85a>3<c>
-Roulette,0,RouletteInfoHead4,<c ffc85a>4<c>
-Roulette,0,RouletteInfoHead5,<c ffc85a>5<c>
-Roulette,0,RouletteInfoHead6,<c ffc85a>6<c>
-Roulette,0,RouletteInfoHead7,<c ffc85a>7<c>
-Roulette,0,RouletteInfoHead8,<c ffc85a>8<c>
-Roulette,0,RouletteInfoHead9,<c ffc85a>9<c>
-Roulette,0,RouletteInfoHead10,<c ffc85a>10<c>
-Roulette,0,RouletteInfoHead11,<c ffc85a>11<c>
-Roulette,0,RouletteInfoHead12,<c ffc85a>12<c>
-Roulette,0,RouletteInfoHead13,<c ffc85a>13<c>
-Roulette,0,RouletteInfoHead14,<c ffc85a>14<c>
-Roulette,0,RouletteInfoHead15,<c ffc85a>15<c>
-Roulette,0,RouletteInfoHead16,<c ffc85a>16<c>
-Roulette,0,RouletteInfoHead17,<c ffc85a>17<c>
-Roulette,0,RouletteInfoHead18,<c ffc85a>18<c>
-Roulette,0,RouletteInfoHead19,<c ffc85a>19<c>
-Roulette,0,RouletteInfoHead20,<c ffc85a>20<c>
-Roulette,0,RouletteColor1,赤
-Roulette,0,RouletteColor2,青
-Roulette,0,RouletteColor3,緑
-Roulette,0,RouletteMiss,ハズレマス
-Roulette,0,RouletteChance,チャンスマス
-Roulette,0,RouletteBonus,トリプルチャンスマス
-Roulette,0,RouletteFailure,ハズレ
-Roulette,0,RouletteResultAnd,と$(0)
-Roulette,0,RouletteResultFrame,【$(0)】
-Roulette,0,RouletteResultName,$(0)$(1)
-Roulette,0,RouletteColorMessage1,<red>$(0)<c>
-Roulette,0,RouletteColorMessage2,<blue>$(0)<c>
-Roulette,0,RouletteColorMessage3,<c 00552e>$(0)<c>
-Roulette,0,RoulettePayoutCoins,リーリールーレット：払い戻しは$(0)枚です。
-Roulette,0,RoulettePayoutNone,リーリールーレット：払い戻しはありません。
-Roulette,0,RouletteBetSuccesss,BETしました。
-Roulette,0,RouletteBetErrorState,今はBETできません。
-Roulette,0,RouletteBetErrorCoin,コインが足りません。
-Roulette,0,RouletteBetErrorMaxCoin,最大BET枚数を超えています。
-Roulette,0,RouletteBetErrorMaxBet,最大BET箇所を超えています。
-Roulette,0,RouletteCancelSuccesss,BETをキャンセルしました。
-Roulette,0,RouletteCancelErrorState,可能期間を過ぎました。キャンセルできません。
-Roulette,0,RouletteCancelErrorCoin,BETされていません。キャンセルできません。
-Roulette,0,RouletteBetTerminal,BET端末
-Roulette,0,RouletteBetTerminalAccess,$(0)に賭ける
-Roulette,0,RouletteBetMagnification,倍率：$(0)倍
-Roulette,0,RouletteBetNone,なし
-Roulette,0,RouletteMenuBetCoins,$(0)<pict AmusementCoin> 追加する
-Roulette,0,RouletteMenuBetCancel,BETの取り消し
-Roulette,0,RouletteMenuClose,戻る
-Roulette,0,RouletteCampaignText,ダブルチャンス発生確率アップ
-Roulette,0,SuperRouletteCampaignText,ダブルチャンス発生確率<yellow>超アップ！
-Roulette,0,RouletteBETInfo,現在のBET
-Roulette,0,RouletteBETCoinsDisplay,$(0)<pict AmusementCoin>
-Roulette,0,RouletteAnyNumber,１～５
+balloon,0,balloon_help,<%PhotonArts>で降りる。
 Roulette,1,RouletteFullScreenTitle,Lilli Roulette
 Roulette,1,RouletteGuide,<c f0df60>You can play Lilli Roulette.<c>
 Roulette,1,RouletteTitle,Lilli Roulette
@@ -617,35 +552,71 @@ Roulette,1,SuperRouletteCampaignText,Rate of Double Chance <yellow>way up!
 Roulette,1,RouletteBETInfo,Current Bet
 Roulette,1,RouletteBETCoinsDisplay,$(0) <pict AmusementCoin>
 Roulette,1,RouletteAnyNumber,1-5
-BubbleRouletteNpc1,0,RouletteNpc_ChanceSelectStart,/mn9
-BubbleRouletteNpc1,0,RouletteNpc_ChanceSelectEnd,-
-BubbleRouletteNpc1,0,RouletteNpc_RouletteStart,-
-BubbleRouletteNpc1,0,RouletteNpc_BetStart,-
-BubbleRouletteNpc1,0,RouletteNpc_BetEndNearly,/mn15
-BubbleRouletteNpc1,0,RouletteNpc_BetEnd,-
-BubbleRouletteNpc1,0,RouletteNpc_ChanceStart,/toge /mn22
-BubbleRouletteNpc1,0,RouletteNpc_BonusStart,/toge /mn22
-BubbleRouletteNpc1,0,RouletteNpc_RouletteEnd,-
-BubbleRouletteNpc1,0,RouletteNpc_ResultHit01,-
-BubbleRouletteNpc1,0,RouletteNpc_ResultHit02,-
-BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit01,/mn4
-BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit02,/mn1
-BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit03,/mn2
-BubbleRouletteNpc1,0,RouletteNpc_Response01,/toge
-BubbleRouletteNpc1,0,RouletteNpc_Response02,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne01,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne02,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne03,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne04,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne05,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne06,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne07,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne08,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne09,-
-BubbleRouletteNpc1,0,RouletteNpc_TalkOne10,-
-BubbleRouletteNpc1,0,RouletteNpc_ChanceResponse01,-
-BubbleRouletteNpc1,0,RouletteNpc_ChanceResponse02,/toge
-BubbleRouletteNpc1,0,RouletteNpc_Explosion,/toge
+Roulette,0,RouletteFullScreenTitle,リーリールーレット
+Roulette,0,RouletteGuide,<c f0df60>リーリールーレットを遊ぶことができます。<c>
+Roulette,0,RouletteTitle,リーリールーレット
+Roulette,0,RouletteBETTitle,リーリールーレット
+Roulette,0,RouletteBETMessageAa,<yellow>あと$(0)箇所BETが可能です。<c>
+Roulette,0,RouletteBETMessageAb,<red>BETは２箇所までです。<c>
+Roulette,0,RouletteBETMessageB,<yellow>BET枚数を選択してください。<c>
+Roulette,0,RouletteBETMessage,BETした場合結果を確認するまでエリア移動を<br>行わないことを推奨します。<br>正常に支払われない可能性があります。<br><br>自分のBET枚数：$(0)<pict AmusementCoin><br>全体のBET枚数：$(1)<pict AmusementCoin>
+Roulette,0,RouletteBETMessage2,<yellow>$(0)倍<c>
+Roulette,0,RouletteInfoTitle,過去の抽選結果
+Roulette,0,RouletteInfoHead1,<c ffc85a>前回<c>
+Roulette,0,RouletteInfoHead2,<c ffc85a>2<c>
+Roulette,0,RouletteInfoHead3,<c ffc85a>3<c>
+Roulette,0,RouletteInfoHead4,<c ffc85a>4<c>
+Roulette,0,RouletteInfoHead5,<c ffc85a>5<c>
+Roulette,0,RouletteInfoHead6,<c ffc85a>6<c>
+Roulette,0,RouletteInfoHead7,<c ffc85a>7<c>
+Roulette,0,RouletteInfoHead8,<c ffc85a>8<c>
+Roulette,0,RouletteInfoHead9,<c ffc85a>9<c>
+Roulette,0,RouletteInfoHead10,<c ffc85a>10<c>
+Roulette,0,RouletteInfoHead11,<c ffc85a>11<c>
+Roulette,0,RouletteInfoHead12,<c ffc85a>12<c>
+Roulette,0,RouletteInfoHead13,<c ffc85a>13<c>
+Roulette,0,RouletteInfoHead14,<c ffc85a>14<c>
+Roulette,0,RouletteInfoHead15,<c ffc85a>15<c>
+Roulette,0,RouletteInfoHead16,<c ffc85a>16<c>
+Roulette,0,RouletteInfoHead17,<c ffc85a>17<c>
+Roulette,0,RouletteInfoHead18,<c ffc85a>18<c>
+Roulette,0,RouletteInfoHead19,<c ffc85a>19<c>
+Roulette,0,RouletteInfoHead20,<c ffc85a>20<c>
+Roulette,0,RouletteColor1,赤
+Roulette,0,RouletteColor2,青
+Roulette,0,RouletteColor3,緑
+Roulette,0,RouletteMiss,ハズレマス
+Roulette,0,RouletteChance,チャンスマス
+Roulette,0,RouletteBonus,トリプルチャンスマス
+Roulette,0,RouletteFailure,ハズレ
+Roulette,0,RouletteResultAnd,と$(0)
+Roulette,0,RouletteResultFrame,【$(0)】
+Roulette,0,RouletteResultName,$(0)$(1)
+Roulette,0,RouletteColorMessage1,<red>$(0)<c>
+Roulette,0,RouletteColorMessage2,<blue>$(0)<c>
+Roulette,0,RouletteColorMessage3,<c 00552e>$(0)<c>
+Roulette,0,RoulettePayoutCoins,リーリールーレット：払い戻しは$(0)枚です。
+Roulette,0,RoulettePayoutNone,リーリールーレット：払い戻しはありません。
+Roulette,0,RouletteBetSuccesss,BETしました。
+Roulette,0,RouletteBetErrorState,今はBETできません。
+Roulette,0,RouletteBetErrorCoin,コインが足りません。
+Roulette,0,RouletteBetErrorMaxCoin,最大BET枚数を超えています。
+Roulette,0,RouletteBetErrorMaxBet,最大BET箇所を超えています。
+Roulette,0,RouletteCancelSuccesss,BETをキャンセルしました。
+Roulette,0,RouletteCancelErrorState,可能期間を過ぎました。キャンセルできません。
+Roulette,0,RouletteCancelErrorCoin,BETされていません。キャンセルできません。
+Roulette,0,RouletteBetTerminal,BET端末
+Roulette,0,RouletteBetTerminalAccess,$(0)に賭ける
+Roulette,0,RouletteBetMagnification,倍率：$(0)倍
+Roulette,0,RouletteBetNone,なし
+Roulette,0,RouletteMenuBetCoins,$(0)<pict AmusementCoin> 追加する
+Roulette,0,RouletteMenuBetCancel,BETの取り消し
+Roulette,0,RouletteMenuClose,戻る
+Roulette,0,RouletteCampaignText,ダブルチャンス発生確率アップ
+Roulette,0,SuperRouletteCampaignText,ダブルチャンス発生確率<yellow>超アップ！
+Roulette,0,RouletteBETInfo,現在のBET
+Roulette,0,RouletteBETCoinsDisplay,$(0)<pict AmusementCoin>
+Roulette,0,RouletteAnyNumber,１～５
 BubbleRouletteNpc1,1,RouletteNpc_ChanceSelectStart,/mn9
 BubbleRouletteNpc1,1,RouletteNpc_ChanceSelectEnd,-
 BubbleRouletteNpc1,1,RouletteNpc_RouletteStart,-
@@ -675,36 +646,35 @@ BubbleRouletteNpc1,1,RouletteNpc_TalkOne10,-
 BubbleRouletteNpc1,1,RouletteNpc_ChanceResponse01,-
 BubbleRouletteNpc1,1,RouletteNpc_ChanceResponse02,/toge
 BubbleRouletteNpc1,1,RouletteNpc_Explosion,/toge
-RouletteNpc1,0,RouletteNpc_Name,レッド・リリーパ
-RouletteNpc1,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定するぜ！
-RouletteNpc1,0,RouletteNpc_ChanceSelectEnd,チャンスマス決定！
-RouletteNpc1,0,RouletteNpc_RouletteStart,ルーレットスタートするぜ！
-RouletteNpc1,0,RouletteNpc_BetStart,BETタイム開始だぜ！
-RouletteNpc1,0,RouletteNpc_BetEndNearly,BET締切が近いぜ！
-RouletteNpc1,0,RouletteNpc_BetEnd,BETタイム終了だぜ！
-RouletteNpc1,0,RouletteNpc_ChanceStart,$(0)だぜ！
-RouletteNpc1,0,RouletteNpc_BonusStart,いいぞ、$(0)だ！
-RouletteNpc1,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)だぜ
-RouletteNpc1,0,RouletteNpc_ResultHit01,$(0)が<br>$(1)枚当てたぜ！
-RouletteNpc1,0,RouletteNpc_ResultHit02,$(0)枚獲得した奴が$(1)人もいるぜ！
-RouletteNpc1,0,RouletteNpc_ResultNoHit01,次は当てようぜ！
-RouletteNpc1,0,RouletteNpc_ResultNoHit02,いつかは当たるの原理だぜ
-RouletteNpc1,0,RouletteNpc_ResultNoHit03,負け分は取りかえそうぜ！
-RouletteNpc1,0,RouletteNpc_Response01,流れが来てるぜ！
-RouletteNpc1,0,RouletteNpc_Response02,天晴だぜ！
-RouletteNpc1,0,RouletteNpc_TalkOne01,賭けるなら色と数字賭けの１５倍狙いだぜ
-RouletteNpc1,0,RouletteNpc_TalkOne02,トリプルチャンスルーレットはチャンスが3倍だぜ
-RouletteNpc1,0,RouletteNpc_TalkOne03,BETは１箇所にコイン１００枚迄賭けられるぜ
-RouletteNpc1,0,RouletteNpc_TalkOne04,BETは最大２箇所迄賭けられるぜ
-RouletteNpc1,0,RouletteNpc_TalkOne05,BETタイム中はBETのキャンセルができるぜ
-RouletteNpc1,0,RouletteNpc_TalkOne06,履歴を参考にしてみようぜ
-RouletteNpc1,0,RouletteNpc_TalkOne07,迷った時は１点勝負だぜ
-RouletteNpc1,0,RouletteNpc_TalkOne08,ルーレットは記憶を持たないぜ
-RouletteNpc1,0,RouletteNpc_TalkOne09,当てやすいのは色賭けだぜ
-RouletteNpc1,0,RouletteNpc_TalkOne10,流れに乗ろうぜ
-RouletteNpc1,0,RouletteNpc_ChanceResponse01,チャンスルーレットだぜ
-RouletteNpc1,0,RouletteNpc_ChanceResponse02,期待しようぜ
-RouletteNpc1,0,RouletteNpc_Explosion,ボンバーっ！
+BubbleRouletteNpc1,0,RouletteNpc_ChanceSelectStart,/mn9
+BubbleRouletteNpc1,0,RouletteNpc_ChanceSelectEnd,-
+BubbleRouletteNpc1,0,RouletteNpc_RouletteStart,-
+BubbleRouletteNpc1,0,RouletteNpc_BetStart,-
+BubbleRouletteNpc1,0,RouletteNpc_BetEndNearly,/mn15
+BubbleRouletteNpc1,0,RouletteNpc_BetEnd,-
+BubbleRouletteNpc1,0,RouletteNpc_ChanceStart,/toge /mn22
+BubbleRouletteNpc1,0,RouletteNpc_BonusStart,/toge /mn22
+BubbleRouletteNpc1,0,RouletteNpc_RouletteEnd,-
+BubbleRouletteNpc1,0,RouletteNpc_ResultHit01,-
+BubbleRouletteNpc1,0,RouletteNpc_ResultHit02,-
+BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit01,/mn4
+BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit02,/mn1
+BubbleRouletteNpc1,0,RouletteNpc_ResultNoHit03,/mn2
+BubbleRouletteNpc1,0,RouletteNpc_Response01,/toge
+BubbleRouletteNpc1,0,RouletteNpc_Response02,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne01,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne02,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne03,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne04,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne05,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne06,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne07,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne08,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne09,-
+BubbleRouletteNpc1,0,RouletteNpc_TalkOne10,-
+BubbleRouletteNpc1,0,RouletteNpc_ChanceResponse01,-
+BubbleRouletteNpc1,0,RouletteNpc_ChanceResponse02,/toge
+BubbleRouletteNpc1,0,RouletteNpc_Explosion,/toge
 RouletteNpc1,1,RouletteNpc_Name,Red Lillipan
 RouletteNpc1,1,RouletteNpc_ChanceSelectStart,We're about to set the chance!
 RouletteNpc1,1,RouletteNpc_ChanceSelectEnd,Chance set!
@@ -735,35 +705,36 @@ RouletteNpc1,1,RouletteNpc_TalkOne10,Go with the flow!
 RouletteNpc1,1,RouletteNpc_ChanceResponse01,It's Chance Roulette!
 RouletteNpc1,1,RouletteNpc_ChanceResponse02,I just know you’re gonna win!
 RouletteNpc1,1,RouletteNpc_Explosion,Bomber!
-BubbleRouletteNpc2,0,RouletteNpc_ChanceSelectStart,-
-BubbleRouletteNpc2,0,RouletteNpc_ChanceSelectEnd,-
-BubbleRouletteNpc2,0,RouletteNpc_RouletteStart,-
-BubbleRouletteNpc2,0,RouletteNpc_BetStart,-
-BubbleRouletteNpc2,0,RouletteNpc_BetEndNearly,/mn18
-BubbleRouletteNpc2,0,RouletteNpc_BetEnd,-
-BubbleRouletteNpc2,0,RouletteNpc_ChanceStart,/toge /mn20
-BubbleRouletteNpc2,0,RouletteNpc_BonusStart,/toge /mn20
-BubbleRouletteNpc2,0,RouletteNpc_RouletteEnd,-
-BubbleRouletteNpc2,0,RouletteNpc_ResultHit01,-
-BubbleRouletteNpc2,0,RouletteNpc_ResultHit02,-
-BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit01,/mn2
-BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit02,/mn8
-BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit03,-
-BubbleRouletteNpc2,0,RouletteNpc_Response01,-
-BubbleRouletteNpc2,0,RouletteNpc_Response02,/mn22
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne01,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne02,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne03,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne04,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne05,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne06,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne07,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne08,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne09,-
-BubbleRouletteNpc2,0,RouletteNpc_TalkOne10,-
-BubbleRouletteNpc2,0,RouletteNpc_ChanceResponse01,-
-BubbleRouletteNpc2,0,RouletteNpc_ChanceResponse02,/toge
-BubbleRouletteNpc2,0,RouletteNpc_Explosion,/toge
+RouletteNpc1,0,RouletteNpc_Name,レッド・リリーパ
+RouletteNpc1,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定するぜ！
+RouletteNpc1,0,RouletteNpc_ChanceSelectEnd,チャンスマス決定！
+RouletteNpc1,0,RouletteNpc_RouletteStart,ルーレットスタートするぜ！
+RouletteNpc1,0,RouletteNpc_BetStart,BETタイム開始だぜ！
+RouletteNpc1,0,RouletteNpc_BetEndNearly,BET締切が近いぜ！
+RouletteNpc1,0,RouletteNpc_BetEnd,BETタイム終了だぜ！
+RouletteNpc1,0,RouletteNpc_ChanceStart,$(0)だぜ！
+RouletteNpc1,0,RouletteNpc_BonusStart,いいぞ、$(0)だ！
+RouletteNpc1,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)だぜ
+RouletteNpc1,0,RouletteNpc_ResultHit01,$(0)が<br>$(1)枚当てたぜ！
+RouletteNpc1,0,RouletteNpc_ResultHit02,$(0)枚獲得した奴が$(1)人もいるぜ！
+RouletteNpc1,0,RouletteNpc_ResultNoHit01,次は当てようぜ！
+RouletteNpc1,0,RouletteNpc_ResultNoHit02,いつかは当たるの原理だぜ
+RouletteNpc1,0,RouletteNpc_ResultNoHit03,負け分は取りかえそうぜ！
+RouletteNpc1,0,RouletteNpc_Response01,流れが来てるぜ！
+RouletteNpc1,0,RouletteNpc_Response02,天晴だぜ！
+RouletteNpc1,0,RouletteNpc_TalkOne01,賭けるなら色と数字賭けの１５倍狙いだぜ
+RouletteNpc1,0,RouletteNpc_TalkOne02,トリプルチャンスルーレットはチャンスが3倍だぜ
+RouletteNpc1,0,RouletteNpc_TalkOne03,BETは１箇所にコイン１００枚迄賭けられるぜ
+RouletteNpc1,0,RouletteNpc_TalkOne04,BETは最大２箇所迄賭けられるぜ
+RouletteNpc1,0,RouletteNpc_TalkOne05,BETタイム中はBETのキャンセルができるぜ
+RouletteNpc1,0,RouletteNpc_TalkOne06,履歴を参考にしてみようぜ
+RouletteNpc1,0,RouletteNpc_TalkOne07,迷った時は１点勝負だぜ
+RouletteNpc1,0,RouletteNpc_TalkOne08,ルーレットは記憶を持たないぜ
+RouletteNpc1,0,RouletteNpc_TalkOne09,当てやすいのは色賭けだぜ
+RouletteNpc1,0,RouletteNpc_TalkOne10,流れに乗ろうぜ
+RouletteNpc1,0,RouletteNpc_ChanceResponse01,チャンスルーレットだぜ
+RouletteNpc1,0,RouletteNpc_ChanceResponse02,期待しようぜ
+RouletteNpc1,0,RouletteNpc_Explosion,ボンバーっ！
 BubbleRouletteNpc2,1,RouletteNpc_ChanceSelectStart,-
 BubbleRouletteNpc2,1,RouletteNpc_ChanceSelectEnd,-
 BubbleRouletteNpc2,1,RouletteNpc_RouletteStart,-
@@ -793,36 +764,35 @@ BubbleRouletteNpc2,1,RouletteNpc_TalkOne10,-
 BubbleRouletteNpc2,1,RouletteNpc_ChanceResponse01,-
 BubbleRouletteNpc2,1,RouletteNpc_ChanceResponse02,/toge
 BubbleRouletteNpc2,1,RouletteNpc_Explosion,/toge
-RouletteNpc2,0,RouletteNpc_Name,ブルー・リリーパ
-RouletteNpc2,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定します
-RouletteNpc2,0,RouletteNpc_ChanceSelectEnd,チャンスマスが決定しました
-RouletteNpc2,0,RouletteNpc_RouletteStart,ルーレットスタートします
-RouletteNpc2,0,RouletteNpc_BetStart,BETタイム開始です
-RouletteNpc2,0,RouletteNpc_BetEndNearly,BETタイム終了が間近です
-RouletteNpc2,0,RouletteNpc_BetEnd,BETタイム終了です
-RouletteNpc2,0,RouletteNpc_ChanceStart,$(0)に止まりました
-RouletteNpc2,0,RouletteNpc_BonusStart,$(0)です！
-RouletteNpc2,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)です
-RouletteNpc2,0,RouletteNpc_ResultHit01,当選者は$(0)<br>$(1)枚獲得しました
-RouletteNpc2,0,RouletteNpc_ResultHit02,$(0)枚、$(1)名が獲得しました
-RouletteNpc2,0,RouletteNpc_ResultNoHit01,厳しい結果でした
-RouletteNpc2,0,RouletteNpc_ResultNoHit02,次のゲームが勝負です
-RouletteNpc2,0,RouletteNpc_ResultNoHit03,勝ちを諦めたら負けです
-RouletteNpc2,0,RouletteNpc_Response01,おめでとうございます
-RouletteNpc2,0,RouletteNpc_Response02,素晴らしい！
-RouletteNpc2,0,RouletteNpc_TalkOne01,数字賭けの配当は5倍です
-RouletteNpc2,0,RouletteNpc_TalkOne02,チャンスマス停止は期待が膨らみます
-RouletteNpc2,0,RouletteNpc_TalkOne03,1箇所にBETできるのは100枚迄です
-RouletteNpc2,0,RouletteNpc_TalkOne04,最大２箇所迄BETが可能です
-RouletteNpc2,0,RouletteNpc_TalkOne05,過去の履歴は判断材料になります
-RouletteNpc2,0,RouletteNpc_TalkOne06,直感を信じることも大事です
-RouletteNpc2,0,RouletteNpc_TalkOne07,勝ち負けよりも収支が重要です
-RouletteNpc2,0,RouletteNpc_TalkOne08,BETタイム中はBETのキャンセルができます
-RouletteNpc2,0,RouletteNpc_TalkOne09,履歴を参考にするのも手です
-RouletteNpc2,0,RouletteNpc_TalkOne10,稀に連続して同じ結果が出ます
-RouletteNpc2,0,RouletteNpc_ChanceResponse01,チャンスルーレットです
-RouletteNpc2,0,RouletteNpc_ChanceResponse02,期待したいですね
-RouletteNpc2,0,RouletteNpc_Explosion,不覚っ！
+BubbleRouletteNpc2,0,RouletteNpc_ChanceSelectStart,-
+BubbleRouletteNpc2,0,RouletteNpc_ChanceSelectEnd,-
+BubbleRouletteNpc2,0,RouletteNpc_RouletteStart,-
+BubbleRouletteNpc2,0,RouletteNpc_BetStart,-
+BubbleRouletteNpc2,0,RouletteNpc_BetEndNearly,/mn18
+BubbleRouletteNpc2,0,RouletteNpc_BetEnd,-
+BubbleRouletteNpc2,0,RouletteNpc_ChanceStart,/toge /mn20
+BubbleRouletteNpc2,0,RouletteNpc_BonusStart,/toge /mn20
+BubbleRouletteNpc2,0,RouletteNpc_RouletteEnd,-
+BubbleRouletteNpc2,0,RouletteNpc_ResultHit01,-
+BubbleRouletteNpc2,0,RouletteNpc_ResultHit02,-
+BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit01,/mn2
+BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit02,/mn8
+BubbleRouletteNpc2,0,RouletteNpc_ResultNoHit03,-
+BubbleRouletteNpc2,0,RouletteNpc_Response01,-
+BubbleRouletteNpc2,0,RouletteNpc_Response02,/mn22
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne01,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne02,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne03,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne04,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne05,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne06,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne07,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne08,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne09,-
+BubbleRouletteNpc2,0,RouletteNpc_TalkOne10,-
+BubbleRouletteNpc2,0,RouletteNpc_ChanceResponse01,-
+BubbleRouletteNpc2,0,RouletteNpc_ChanceResponse02,/toge
+BubbleRouletteNpc2,0,RouletteNpc_Explosion,/toge
 RouletteNpc2,1,RouletteNpc_Name,Blue Lillipan
 RouletteNpc2,1,RouletteNpc_ChanceSelectStart,We’re about to set the chance.
 RouletteNpc2,1,RouletteNpc_ChanceSelectEnd,Chance set.
@@ -853,35 +823,36 @@ RouletteNpc2,1,RouletteNpc_TalkOne10,It is rare for the same result to appear in
 RouletteNpc2,1,RouletteNpc_ChanceResponse01,This is Chance Roulette.
 RouletteNpc2,1,RouletteNpc_ChanceResponse02,I hope things work out.
 RouletteNpc2,1,RouletteNpc_Explosion,Failed!
-BubbleRouletteNpc3,0,RouletteNpc_ChanceSelectStart,/mn6
-BubbleRouletteNpc3,0,RouletteNpc_ChanceSelectEnd,-
-BubbleRouletteNpc3,0,RouletteNpc_RouletteStart,-
-BubbleRouletteNpc3,0,RouletteNpc_BetStart,-
-BubbleRouletteNpc3,0,RouletteNpc_BetEndNearly,/mn17
-BubbleRouletteNpc3,0,RouletteNpc_BetEnd,-
-BubbleRouletteNpc3,0,RouletteNpc_ChanceStart,/toge /mn16
-BubbleRouletteNpc3,0,RouletteNpc_BonusStart,/toge /mn16
-BubbleRouletteNpc3,0,RouletteNpc_RouletteEnd,-
-BubbleRouletteNpc3,0,RouletteNpc_ResultHit01,-
-BubbleRouletteNpc3,0,RouletteNpc_ResultHit02,-
-BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit01,/mn13
-BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit02,-
-BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit03,/moya
-BubbleRouletteNpc3,0,RouletteNpc_Response01,/moya
-BubbleRouletteNpc3,0,RouletteNpc_Response02,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne01,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne02,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne03,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne04,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne05,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne06,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne07,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne08,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne09,-
-BubbleRouletteNpc3,0,RouletteNpc_TalkOne10,-
-BubbleRouletteNpc3,0,RouletteNpc_ChanceResponse01,-
-BubbleRouletteNpc3,0,RouletteNpc_ChanceResponse02,/toge
-BubbleRouletteNpc3,0,RouletteNpc_Explosion,/toge
+RouletteNpc2,0,RouletteNpc_Name,ブルー・リリーパ
+RouletteNpc2,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定します
+RouletteNpc2,0,RouletteNpc_ChanceSelectEnd,チャンスマスが決定しました
+RouletteNpc2,0,RouletteNpc_RouletteStart,ルーレットスタートします
+RouletteNpc2,0,RouletteNpc_BetStart,BETタイム開始です
+RouletteNpc2,0,RouletteNpc_BetEndNearly,BETタイム終了が間近です
+RouletteNpc2,0,RouletteNpc_BetEnd,BETタイム終了です
+RouletteNpc2,0,RouletteNpc_ChanceStart,$(0)に止まりました
+RouletteNpc2,0,RouletteNpc_BonusStart,$(0)です！
+RouletteNpc2,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)です
+RouletteNpc2,0,RouletteNpc_ResultHit01,当選者は$(0)<br>$(1)枚獲得しました
+RouletteNpc2,0,RouletteNpc_ResultHit02,$(0)枚、$(1)名が獲得しました
+RouletteNpc2,0,RouletteNpc_ResultNoHit01,厳しい結果でした
+RouletteNpc2,0,RouletteNpc_ResultNoHit02,次のゲームが勝負です
+RouletteNpc2,0,RouletteNpc_ResultNoHit03,勝ちを諦めたら負けです
+RouletteNpc2,0,RouletteNpc_Response01,おめでとうございます
+RouletteNpc2,0,RouletteNpc_Response02,素晴らしい！
+RouletteNpc2,0,RouletteNpc_TalkOne01,数字賭けの配当は5倍です
+RouletteNpc2,0,RouletteNpc_TalkOne02,チャンスマス停止は期待が膨らみます
+RouletteNpc2,0,RouletteNpc_TalkOne03,1箇所にBETできるのは100枚迄です
+RouletteNpc2,0,RouletteNpc_TalkOne04,最大２箇所迄BETが可能です
+RouletteNpc2,0,RouletteNpc_TalkOne05,過去の履歴は判断材料になります
+RouletteNpc2,0,RouletteNpc_TalkOne06,直感を信じることも大事です
+RouletteNpc2,0,RouletteNpc_TalkOne07,勝ち負けよりも収支が重要です
+RouletteNpc2,0,RouletteNpc_TalkOne08,BETタイム中はBETのキャンセルができます
+RouletteNpc2,0,RouletteNpc_TalkOne09,履歴を参考にするのも手です
+RouletteNpc2,0,RouletteNpc_TalkOne10,稀に連続して同じ結果が出ます
+RouletteNpc2,0,RouletteNpc_ChanceResponse01,チャンスルーレットです
+RouletteNpc2,0,RouletteNpc_ChanceResponse02,期待したいですね
+RouletteNpc2,0,RouletteNpc_Explosion,不覚っ！
 BubbleRouletteNpc3,1,RouletteNpc_ChanceSelectStart,/mn6
 BubbleRouletteNpc3,1,RouletteNpc_ChanceSelectEnd,-
 BubbleRouletteNpc3,1,RouletteNpc_RouletteStart,-
@@ -911,36 +882,35 @@ BubbleRouletteNpc3,1,RouletteNpc_TalkOne10,-
 BubbleRouletteNpc3,1,RouletteNpc_ChanceResponse01,-
 BubbleRouletteNpc3,1,RouletteNpc_ChanceResponse02,/toge
 BubbleRouletteNpc3,1,RouletteNpc_Explosion,/toge
-RouletteNpc3,0,RouletteNpc_Name,グリーン・リリーパ
-RouletteNpc3,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定するよ
-RouletteNpc3,0,RouletteNpc_ChanceSelectEnd,チャンスマスが決定したわ
-RouletteNpc3,0,RouletteNpc_RouletteStart,ルーレットスタート！
-RouletteNpc3,0,RouletteNpc_BetStart,BETタイムスタート！
-RouletteNpc3,0,RouletteNpc_BetEndNearly,BETタイムが終了するよ
-RouletteNpc3,0,RouletteNpc_BetEnd,BETタイムが終了したわ
-RouletteNpc3,0,RouletteNpc_ChanceStart,$(0)よ！
-RouletteNpc3,0,RouletteNpc_BonusStart,$(0)に停止したわ！
-RouletteNpc3,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)よ
-RouletteNpc3,0,RouletteNpc_ResultHit01,$(0)が<br>$(1)枚当てたわ！
-RouletteNpc3,0,RouletteNpc_ResultHit02,$(0)枚、当てた人が$(1)人よ！
-RouletteNpc3,0,RouletteNpc_ResultNoHit01,お祈りが足りなかったわ
-RouletteNpc3,0,RouletteNpc_ResultNoHit02,次こそ、神の祝福があるわ
-RouletteNpc3,0,RouletteNpc_ResultNoHit03,まだ、神に見放されていないわ
-RouletteNpc3,0,RouletteNpc_Response01,ステキよ！
-RouletteNpc3,0,RouletteNpc_Response02,カッコいいわ！
-RouletteNpc3,0,RouletteNpc_TalkOne01,色賭けが一番当てやすいよ
-RouletteNpc3,0,RouletteNpc_TalkOne02,クラッシュだけは出て欲しくないわ
-RouletteNpc3,0,RouletteNpc_TalkOne03,BETは１箇所に１００枚迄よ
-RouletteNpc3,0,RouletteNpc_TalkOne04,BETは最大２箇所迄よ
-RouletteNpc3,0,RouletteNpc_TalkOne05,BETタイム中はBETのキャンセルができるわ
-RouletteNpc3,0,RouletteNpc_TalkOne06,過去の履歴が参考になるわ
-RouletteNpc3,0,RouletteNpc_TalkOne07,当たるように祈りを捧げるわ
-RouletteNpc3,0,RouletteNpc_TalkOne08,運を味方にするのよ
-RouletteNpc3,0,RouletteNpc_TalkOne09,欲の出し過ぎは良くないわ
-RouletteNpc3,0,RouletteNpc_TalkOne10,クラッシュだけは出て欲しくないわ
-RouletteNpc3,0,RouletteNpc_ChanceResponse01,チャンスルーレットよ！
-RouletteNpc3,0,RouletteNpc_ChanceResponse02,祈りましょう
-RouletteNpc3,0,RouletteNpc_Explosion,いやあぁぁぁぁ！
+BubbleRouletteNpc3,0,RouletteNpc_ChanceSelectStart,/mn6
+BubbleRouletteNpc3,0,RouletteNpc_ChanceSelectEnd,-
+BubbleRouletteNpc3,0,RouletteNpc_RouletteStart,-
+BubbleRouletteNpc3,0,RouletteNpc_BetStart,-
+BubbleRouletteNpc3,0,RouletteNpc_BetEndNearly,/mn17
+BubbleRouletteNpc3,0,RouletteNpc_BetEnd,-
+BubbleRouletteNpc3,0,RouletteNpc_ChanceStart,/toge /mn16
+BubbleRouletteNpc3,0,RouletteNpc_BonusStart,/toge /mn16
+BubbleRouletteNpc3,0,RouletteNpc_RouletteEnd,-
+BubbleRouletteNpc3,0,RouletteNpc_ResultHit01,-
+BubbleRouletteNpc3,0,RouletteNpc_ResultHit02,-
+BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit01,/mn13
+BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit02,-
+BubbleRouletteNpc3,0,RouletteNpc_ResultNoHit03,/moya
+BubbleRouletteNpc3,0,RouletteNpc_Response01,/moya
+BubbleRouletteNpc3,0,RouletteNpc_Response02,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne01,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne02,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne03,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne04,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne05,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne06,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne07,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne08,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne09,-
+BubbleRouletteNpc3,0,RouletteNpc_TalkOne10,-
+BubbleRouletteNpc3,0,RouletteNpc_ChanceResponse01,-
+BubbleRouletteNpc3,0,RouletteNpc_ChanceResponse02,/toge
+BubbleRouletteNpc3,0,RouletteNpc_Explosion,/toge
 RouletteNpc3,1,RouletteNpc_Name,Green Lillipan
 RouletteNpc3,1,RouletteNpc_ChanceSelectStart,We're about to set the chance.
 RouletteNpc3,1,RouletteNpc_ChanceSelectEnd,The chance has been set.
@@ -971,6 +941,114 @@ RouletteNpc3,1,RouletteNpc_TalkOne10,I just don't want the crash to come up.
 RouletteNpc3,1,RouletteNpc_ChanceResponse01,It's Chance Roulette!
 RouletteNpc3,1,RouletteNpc_ChanceResponse02,Let’s pray.
 RouletteNpc3,1,RouletteNpc_Explosion,Noooooo!
+RouletteNpc3,0,RouletteNpc_Name,グリーン・リリーパ
+RouletteNpc3,0,RouletteNpc_ChanceSelectStart,チャンスマスを決定するよ
+RouletteNpc3,0,RouletteNpc_ChanceSelectEnd,チャンスマスが決定したわ
+RouletteNpc3,0,RouletteNpc_RouletteStart,ルーレットスタート！
+RouletteNpc3,0,RouletteNpc_BetStart,BETタイムスタート！
+RouletteNpc3,0,RouletteNpc_BetEndNearly,BETタイムが終了するよ
+RouletteNpc3,0,RouletteNpc_BetEnd,BETタイムが終了したわ
+RouletteNpc3,0,RouletteNpc_ChanceStart,$(0)よ！
+RouletteNpc3,0,RouletteNpc_BonusStart,$(0)に停止したわ！
+RouletteNpc3,0,RouletteNpc_RouletteEnd,ルーレット：結果は$(0)$(1)$(2)$(3)よ
+RouletteNpc3,0,RouletteNpc_ResultHit01,$(0)が<br>$(1)枚当てたわ！
+RouletteNpc3,0,RouletteNpc_ResultHit02,$(0)枚、当てた人が$(1)人よ！
+RouletteNpc3,0,RouletteNpc_ResultNoHit01,お祈りが足りなかったわ
+RouletteNpc3,0,RouletteNpc_ResultNoHit02,次こそ、神の祝福があるわ
+RouletteNpc3,0,RouletteNpc_ResultNoHit03,まだ、神に見放されていないわ
+RouletteNpc3,0,RouletteNpc_Response01,ステキよ！
+RouletteNpc3,0,RouletteNpc_Response02,カッコいいわ！
+RouletteNpc3,0,RouletteNpc_TalkOne01,色賭けが一番当てやすいよ
+RouletteNpc3,0,RouletteNpc_TalkOne02,クラッシュだけは出て欲しくないわ
+RouletteNpc3,0,RouletteNpc_TalkOne03,BETは１箇所に１００枚迄よ
+RouletteNpc3,0,RouletteNpc_TalkOne04,BETは最大２箇所迄よ
+RouletteNpc3,0,RouletteNpc_TalkOne05,BETタイム中はBETのキャンセルができるわ
+RouletteNpc3,0,RouletteNpc_TalkOne06,過去の履歴が参考になるわ
+RouletteNpc3,0,RouletteNpc_TalkOne07,当たるように祈りを捧げるわ
+RouletteNpc3,0,RouletteNpc_TalkOne08,運を味方にするのよ
+RouletteNpc3,0,RouletteNpc_TalkOne09,欲の出し過ぎは良くないわ
+RouletteNpc3,0,RouletteNpc_TalkOne10,クラッシュだけは出て欲しくないわ
+RouletteNpc3,0,RouletteNpc_ChanceResponse01,チャンスルーレットよ！
+RouletteNpc3,0,RouletteNpc_ChanceResponse02,祈りましょう
+RouletteNpc3,0,RouletteNpc_Explosion,いやあぁぁぁぁ！
+blackjack,1,BlackjackFullScreenTitle,Blacknyack
+blackjack,1,BlackjackGide,<c f0df60>You can play Blacknyack.<c>
+blackjack,1,BlackjackTitle,Blacknyack
+blackjack,1,BlackjackMenuItem,Play with $(0) <pict AmusementCoin>
+blackjack,1,BlackjackBasicInfoTitle,Blacknyack Information
+blackjack,1,BlackjackBasicInfoHead,Basic Information
+blackjack,1,BlackjackBasicInfoRate,1 Rate $(0) <pict AmusementCoin>
+blackjack,1,BlackjackBasicInfoCoinNum, (You have: $(0) <pict AmusementCoin>)
+blackjack,1,BlackjackBasicInfoSeatColor,Seat Color
+blackjack,1,BlackjackMenuMessage,"Spend $(0) <pict AmusementCoin><br>to play Blacknyack.<br>Are you sure you wish to proceed?<br><br>(You have $(1) <pict AmusementCoin>)<br><br>If you are disconnected after betting,<br>your Casino Coins will not be returned."
+blackjack,1,Help_00,Change Expression
+blackjack,1,Help_01,Change Angle
+blackjack,1,Help_02,Payout Sheet
+blackjack,1,Help_02a,Display points
+blackjack,1,Help_02b,Hide points
+blackjack,1,Help_03,Hit (Draw a card)
+blackjack,1,Help_04,Stay (Do not draw a card)
+blackjack,1,Help_05,Roll Dice
+blackjack,1,Help_06,Hit
+blackjack,1,Help_07,Stay
+blackjack,1,Help_08,Double Down
+blackjack,1,Help_09,Leave your seat
+blackjack,1,Help_20,Chat
+blackjack,1,Help_10,[←] Key
+blackjack,1,Help_10a,<pict Alpha_LEFT>
+blackjack,1,Help_10b,<pict Sign_LEFT>
+blackjack,1,Help_10c,<pict Number_LEFT>
+blackjack,1,Help_11,[↑][↓] Keys
+blackjack,1,Help_11a,<pict Alpha_UP><pict Alpha_DOWN>
+blackjack,1,Help_11b,<pict Sign_UP><pict Sign_DOWN>
+blackjack,1,Help_11c,<pict Number_UP><pict Number_DOWN>
+blackjack,1,Help_12,[←] Key
+blackjack,1,Help_12a,<pict Alpha_LEFT>
+blackjack,1,Help_12b,<pict Sign_LEFT>
+blackjack,1,Help_12c,<pict Number_LEFT>
+blackjack,1,Help_13,<%Decide>
+blackjack,1,Help_14,<%Cancel>
+blackjack,1,Help_15,[ENTER] Key
+blackjack,1,Help_16,<%MultiSelect>
+blackjack,1,Help_19,[Esc] Key
+blackjack,1,Help_19b,<%MainMenu>
+blackjack,1,Help_40,<%SelectMenu>
+blackjack,1,WinCoin,Reward: $(0) <pict AmusementCoin>
+blackjack,1,BlackjackActionTitle,It's your turn.
+blackjack,1,BlackjackHitTitle,HIT CONFIRMATION
+blackjack,1,BlackjackHitMessage,Add a card?
+blackjack,1,BlackjackStayTitle,STAY CONFIRMATION
+blackjack,1,BlackjackStayMessage,Pass without drawing a card?
+blackjack,1,BlackjackDoubleDownTitle,DOUBLE DOWN CONFIRMATION
+blackjack,1,BlackjackDoubleDownMessage,Double down?<br>Add the same amount of <pict AmusementCoin> as your bet and<br>draw only one card.
+blackjack,1,BlackjackEndGameTitle,QUIT Blacknyack?
+blackjack,1,BlackjackEndGameMessage,You will exit Blacknyack.<br>The Casino Coins you bet will not be returned.<br>Are you sure you wish to proceed?
+blackjack,1,BlackjackResultWinTitle,WIN
+blackjack,1,BlackjackResultLoseTitle,LOSE
+blackjack,1,BlackjackResultDrawTitle,DRAW
+blackjack,1,BlackjackResultWinInfo1,Three SP
+blackjack,1,BlackjackResultWinInfo2,5 Card
+blackjack,1,BlackjackResultWinInfo3,Double Down
+blackjack,1,BlackjackResultWinInfo4,SP Holder
+blackjack,1,BlackjackResultWinInfo5,Cat Chance
+blackjack,1,BlackjackResultWinInfo6,Blacknyack
+blackjack,1,BlackjackResultWinInfo7,Win
+blackjack,1,BlackjackResultWinInfo8,SP Card $(0)$(1)
+blackjack,1,BlackjackResultWinInfo9,Bonus
+blackjack,1,BlackjackResultHyphen,--
+blackjack,1,BlackjackResultMultiply,x
+blackjack,1,BlackjackResultLoseInfo1,Bets Deducted
+blackjack,1,BlackjackResultDrawInfo1,Return Bet
+blackjack,1,BlackjackContinueTitle,Blacknyack Results
+blackjack,1,AcquisitionCC,<pict AmusementCoin> Acquired
+blackjack,1,PossessionCC,Total <pict AmusementCoin>
+blackjack,1,BlackjackContinueMessage,Do you want to continue playing Blacknyack?
+blackjack,1,cc_with_icon,$(0) <pict AmusementCoin>
+blackjack,1,cc_with_bet,$(0) BET
+blackjack,1,BlackjackBonusMessage,<c ffff00>Purrsuit Bonus!<br>The player with the highest hand will receive a bonus!<c>
+blackjack,1,BlackjackWaitGameMessage,The current game is still in progress.<br>Please wait a moment.
+blackjack,1,CampaignText,Increased Pursuit Bonus rate<br>Increased Pursuit Bonus winner's share
+blackjack,1,SuperCampaignText,Pursuit Bonus rate <yellow>way up!<c><br>Pursuit Bonus winner's share <yellow>way up!<c>
 blackjack,0,BlackjackFullScreenTitle,ブラックニャック
 blackjack,0,BlackjackGide,<c f0df60>ブラックニャックで遊ぶことができます。<c>
 blackjack,0,BlackjackTitle,ブラックニャック
@@ -1049,84 +1127,105 @@ blackjack,0,BlackjackBonusMessage,<c ffff00>バトルボーニャス発生！<br
 blackjack,0,BlackjackWaitGameMessage,現在行われているゲームが終わるのを待っています。<br>しばらくお待ちください。
 blackjack,0,CampaignText,バトルボーニャス発生確率アップ<br>バトルボーニャス勝利配当アップ
 blackjack,0,SuperCampaignText,バトルボーニャス発生確率<yellow>超アップ！<c><br>バトルボーニャス勝利配当<yellow>超アップ！<c>
-blackjack,1,BlackjackFullScreenTitle,Blacknyack
-blackjack,1,BlackjackGide,<c f0df60>You can play Blacknyack.<c>
-blackjack,1,BlackjackTitle,Blacknyack
-blackjack,1,BlackjackMenuItem,Play with $(0) <pict AmusementCoin>
-blackjack,1,BlackjackBasicInfoTitle,Blacknyack Information
-blackjack,1,BlackjackBasicInfoHead,Basic Information
-blackjack,1,BlackjackBasicInfoRate,1 Rate $(0) <pict AmusementCoin>
-blackjack,1,BlackjackBasicInfoCoinNum,(You have: $(0) <pict AmusementCoin>)
-blackjack,1,BlackjackBasicInfoSeatColor,Seat Color
-blackjack,1,BlackjackMenuMessage,"Spend $(0) <pict AmusementCoin><br>to play Blacknyack.<br>Are you sure you wish to proceed?<br><br>(You have $(1) <pict AmusementCoin>)<br><br>If you are disconnected after betting,<br>your Casino Coins will not be returned."
-blackjack,1,Help_00,Change Expression
-blackjack,1,Help_01,Change Angle
-blackjack,1,Help_02,Payout Sheet
-blackjack,1,Help_02a,Display points
-blackjack,1,Help_02b,Hide points
-blackjack,1,Help_03,Hit (Draw a card)
-blackjack,1,Help_04,Stay (Do not draw a card)
-blackjack,1,Help_05,Roll Dice
-blackjack,1,Help_06,Hit
-blackjack,1,Help_07,Stay
-blackjack,1,Help_08,Double Down
-blackjack,1,Help_09,Leave your seat
-blackjack,1,Help_20,Chat
-blackjack,1,Help_10,[←] Key
-blackjack,1,Help_10a,<pict Alpha_LEFT>
-blackjack,1,Help_10b,<pict Sign_LEFT>
-blackjack,1,Help_10c,<pict Number_LEFT>
-blackjack,1,Help_11,[↑][↓] Keys
-blackjack,1,Help_11a,<pict Alpha_UP><pict Alpha_DOWN>
-blackjack,1,Help_11b,<pict Sign_UP><pict Sign_DOWN>
-blackjack,1,Help_11c,<pict Number_UP><pict Number_DOWN>
-blackjack,1,Help_12,[←] Key
-blackjack,1,Help_12a,<pict Alpha_LEFT>
-blackjack,1,Help_12b,<pict Sign_LEFT>
-blackjack,1,Help_12c,<pict Number_LEFT>
-blackjack,1,Help_13,<%Decide>
-blackjack,1,Help_14,<%Cancel>
-blackjack,1,Help_15,[ENTER] Key
-blackjack,1,Help_16,<%MultiSelect>
-blackjack,1,Help_19,[Esc] Key
-blackjack,1,Help_19b,<%MainMenu>
-blackjack,1,Help_40,<%SelectMenu>
-blackjack,1,WinCoin,Reward: $(0) <pict AmusementCoin>
-blackjack,1,BlackjackActionTitle,It's your turn.
-blackjack,1,BlackjackHitTitle,HIT CONFIRMATION
-blackjack,1,BlackjackHitMessage,Add a card?
-blackjack,1,BlackjackStayTitle,STAY CONFIRMATION
-blackjack,1,BlackjackStayMessage,Pass without drawing a card?
-blackjack,1,BlackjackDoubleDownTitle,DOUBLE DOWN CONFIRMATION
-blackjack,1,BlackjackDoubleDownMessage,Double down?<br>Add the same amount of <pict AmusementCoin> as your bet and<br>draw only one card.
-blackjack,1,BlackjackEndGameTitle,QUIT Blacknyack?
-blackjack,1,BlackjackEndGameMessage,You will exit Blacknyack.<br>The Casino Coins you bet will not be returned.<br>Are you sure you wish to proceed?
-blackjack,1,BlackjackResultWinTitle,WIN
-blackjack,1,BlackjackResultLoseTitle,LOSE
-blackjack,1,BlackjackResultDrawTitle,DRAW
-blackjack,1,BlackjackResultWinInfo1,Three SP
-blackjack,1,BlackjackResultWinInfo2,5 Card
-blackjack,1,BlackjackResultWinInfo3,Double Down
-blackjack,1,BlackjackResultWinInfo4,SP Holder
-blackjack,1,BlackjackResultWinInfo5,Cat Chance
-blackjack,1,BlackjackResultWinInfo6,Blacknyack
-blackjack,1,BlackjackResultWinInfo7,Win
-blackjack,1,BlackjackResultWinInfo8,SP Card $(0)$(1)
-blackjack,1,BlackjackResultWinInfo9,Bonus
-blackjack,1,BlackjackResultHyphen,--
-blackjack,1,BlackjackResultMultiply,x
-blackjack,1,BlackjackResultLoseInfo1,Bets Deducted
-blackjack,1,BlackjackResultDrawInfo1,Return Bet
-blackjack,1,BlackjackContinueTitle,Blacknyack Results
-blackjack,1,AcquisitionCC,<pict AmusementCoin> Acquired
-blackjack,1,PossessionCC,Total <pict AmusementCoin>
-blackjack,1,BlackjackContinueMessage,Do you want to continue playing Blacknyack?
-blackjack,1,cc_with_icon,$(0) <pict AmusementCoin>
-blackjack,1,cc_with_bet,$(0) BET
-blackjack,1,BlackjackBonusMessage,<c ffff00>Purrsuit Bonus!<br>The player with the highest hand will receive a bonus!<c>
-blackjack,1,BlackjackWaitGameMessage,The current game is still in progress.<br>Please wait a moment.
-blackjack,1,CampaignText,Increased Pursuit Bonus rate<br>Increased Pursuit Bonus winner's share
-blackjack,1,SuperCampaignText,Pursuit Bonus rate <yellow>way up!<c><br>Pursuit Bonus winner's share <yellow>way up!<c>
+arkuma,1,title_slot,Arkuma Slots
+arkuma,1,2gide_slot,<c f0df60>You can play Arkuma Slots.<c>
+arkuma,1,content_slot,Arkuma Slots
+arkuma,1,bet_maisu,Number of Bets
+arkuma,1,Coin,Your Casino Coins
+arkuma,1,slot_tonyu,Insert
+arkuma,1,slot_help,Insert　　　　/← →<br>Start　　　/Enter<br>Slot Adjustment/Esc<br>See distribution list　/End<br>Help　　　　/Home
+arkuma,1,slot_haitohyo,Payout Sheet
+arkuma,1,SlotInfo,Basic Information
+arkuma,1,WaveAverageTitle,Average Stage Reached
+arkuma,1,SlotBonus,Bonus Games Won
+arkuma,1,SlotMeter,Arkuma Meter
+arkuma,1,SlotJackpot,Jackpot
+arkuma,1,SlotMenuPlay,Play
+arkuma,1,SlotMenuBack,Back
+arkuma,1,SlotMenuExplanation,See description
+arkuma,1,SlotMenuTitle,Arkuma Slots Information
+arkuma,1,BasicInfo,1 Play $(0) <pict AmusementCoin>
+arkuma,1,WaveAverage,Stage $(0)
+arkuma,1,BonusNum,$(0) Times
+arkuma,1,EndConfirmTitle,Checkout Confirmation
+arkuma,1,EndConfirm,Arkuma Slots will be settled.<br>Are you sure you wish to proceed?
+arkuma,1,CoinNum,$(0) <pict AmusementCoin>
+arkuma,1,InfoCoinNum, x $(0)
+arkuma,1,InfoStr00,+bonusgame
+arkuma,1,InfoStr01,meter+1
+arkuma,1,InfoCoin_01,x 100
+arkuma,1,InfoCoin_02,x 30
+arkuma,1,InfoCoin_03,x 15
+arkuma,1,InfoCoin_04,x 10
+arkuma,1,InfoCoin_05,x 8
+arkuma,1,InfoCoin_06,x 5
+arkuma,1,InfoCoin_07,x 3
+arkuma,1,Help_00,Insert
+arkuma,1,Help_01,Start!
+arkuma,1,Help_02,Payout Sheet
+arkuma,1,Help_03,Settle
+arkuma,1,Help_04,Chat
+arkuma,1,Help_05,Select
+arkuma,1,Help_06,Confirm
+arkuma,1,Help_07,Arkumami
+arkuma,1,Help_10,[↑][↓] Keys
+arkuma,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
+arkuma,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
+arkuma,1,Help_10c,<pict Number_UP><pict Number_DOWN>
+arkuma,1,Help_11,<%Decide>
+arkuma,1,Help_12,[←][End] Keys
+arkuma,1,Help_12a,<pict Alpha_LEFT>
+arkuma,1,Help_12b,<pict Sign_LEFT>
+arkuma,1,Help_12c,<pict Number_LEFT>
+arkuma,1,Help_13,<%Cancel>/[ESC] Key
+arkuma,1,Help_13a,<%Cancel>
+arkuma,1,Help_14,<pict Sign_SELECT>
+arkuma,1,Help_14a,<pict Sign_START>
+arkuma,1,Help_15,[↑][↓][←][→] Keys
+arkuma,1,Help_15a,<pict Alpha_UP><pict Alpha_DOWN><pict Alpha_LEFT><pict Alpha_RIGHT>
+arkuma,1,Help_15b,<pict Sign_UP><pict Sign_DOWN><pict Sign_LEFT><pict Sign_RIGHT>
+arkuma,1,Help_15c,<pict Number_UP><pict Number_DOWN><pict Number_LEFT><pict Number_RIGHT>
+arkuma,1,Help_16,<%MultiSelect>
+arkuma,1,SlotInitMsg,"-,---,---"
+arkuma,1,NoCoinTitle,Casino Coin Error
+arkuma,1,NoCoinMessage,You do not have enough Casino Coins.
+arkuma,1,PlayCountLimit,You have exceeded your number of available plays for the day.<br>(Resets everyday at <utc>13:00</utc>)
+arkuma,1,PushButtonToPlay,<%Decide> to play the slot machine.
+arkuma,1,PushKeyToSelect,Select with $(0).
+arkuma,1,WaitLongMsg,You have left your seat due to inactivity.
+arkuma,1,CampaignText,Regular game payout is up by 50%
+arkuma,1,SuperCampaignText,Regular game payout is <yellow>up by 100%!<c>
+arkuma,1,ArkumaBetWindowTitle,Arkuma Slots Bet Confirmation
+arkuma,1,ArkumaBetWindowText2,Play Arkuma Slots with $(0) <pict AmusementCoin>.<br>Are you sure?<br><br>You can play <yellow>$(2)<c> more times.<br>The number of plays resets everyday at <utc>13:00</utc>.<br><br>(Number of <pict AmusementCoin>：$(1))
+arkuma,1,ArkumaBetWindowMenuText,Play with $(0)
+arkuma,1,ArkumaBetWindowButtonText,Leave your seat
+arkuma,1,ArkumaResultTitle,Arkuma Slots Results
+arkuma,1,AcquisitionCC,<pict AmusementCoin> Acquired
+arkuma,1,PossessionCC,Total <pict AmusementCoin>
+arkuma,1,ArkumaRateNumberText,$(0)%
+arkuma,1,ArkumaPointPlusCoinText,$(0)+ $(1)
+arkuma,1,toast_auto_exit,You have left your seat due to inactivity.
+arkuma,1,toast_no_coin,You do not have enough Casino Coins.
+arkuma,1,ArkumaLiquidationTitle,Checkout Confirmation
+arkuma,1,ArkumaLiquidationText,The coins you acquired will be settled<br>and you will exit this play session.<br>Are you sure?
+arkuma,1,bubbleStartGame,"Are you ready?<br>Then onward, to the ends of the universe."
+arkuma,1,bubbleRest1,Your sliding is coming along nicely.<br>Keep it up.
+arkuma,1,bubbleRest2,There are 10 stages until your destination.<br>Keep on going.
+arkuma,1,bubbleRest3,There are 5 stages until your destination.<br>The goal is just ahead. Good luck.
+arkuma,1,bubbleHitSpecialPanels,Dark Falz detected.<br>Please be careful.
+arkuma,1,bubbleToBattleBonus,It seems that a fake item is preventing the<br>attack. Find the real item and attack.
+arkuma,1,bubbleToElderBonus,Dark Falz sighted.<br>Put everything you've got into this attack!
+arkuma,1,bubbleWinBattle,"Pretty good strategy, if I do say so myself.<br>We won."
+arkuma,1,bubbleLoseBattle,"The damage is severe...<br>Unfortunately, this is the end of the line."
+arkuma,1,bubbleWinElder1,Congratulations.<br>This is a wonderful result!
+arkuma,1,bubbleWinElder2,A truly fantastic result!<br>You won it all.
+arkuma,1,bubbleWinElder3,This is a result for the history books!<br>I am truly honored<br>to have been present for it.
+arkuma,1,wave_average,Average Stage Reached
+arkuma,1,slot2_result,Arkuma Slots Results
+arkuma,1,playable_number,Number of plays available
+arkuma,1,reset,<yellow>Resets everyday at <utc>13:00</utc>.<c>
+arkuma,1,player_info,Number of plays available today (Current/Max.)
+arkuma,1,toast_no_playable,You exceeded your number of plays for the day.
 arkuma,0,title_slot,アークマスロット
 arkuma,0,2gide_slot,<c f0df60>アークマスロットを遊ぶことができます。<c>
 arkuma,0,content_slot,アークマスロット
@@ -1226,102 +1325,3 @@ arkuma,0,playable_number,プレイ可能数
 arkuma,0,reset,<yellow>※毎日<utc>13:00</utc>にリセットされます<c>
 arkuma,0,player_info,本日のプレイ可能数 （現在/最大）
 arkuma,0,toast_no_playable,本日のプレイ可能数を超えています。
-arkuma,1,title_slot,Arkuma Slots
-arkuma,1,2gide_slot,<c f0df60>You can play Arkuma Slots.<c>
-arkuma,1,content_slot,Arkuma Slots
-arkuma,1,bet_maisu,Number of Bets
-arkuma,1,Coin,Your Casino Coins
-arkuma,1,slot_tonyu,Insert
-arkuma,1,slot_help,Insert　　　　/← →<br>Start　　　/Enter<br>Slot Adjustment/Esc<br>See distribution list　/End<br>Help　　　　/Home
-arkuma,1,slot_haitohyo,Payout Sheet
-arkuma,1,SlotInfo,Basic Information
-arkuma,1,WaveAverageTitle,Average Stage Reached
-arkuma,1,SlotBonus,Bonus Games Won
-arkuma,1,SlotMeter,Arkuma Meter
-arkuma,1,SlotJackpot,Jackpot
-arkuma,1,SlotMenuPlay,Play
-arkuma,1,SlotMenuBack,Back
-arkuma,1,SlotMenuExplanation,See description
-arkuma,1,SlotMenuTitle,Arkuma Slots Information
-arkuma,1,BasicInfo,1 Play $(0) <pict AmusementCoin>
-arkuma,1,WaveAverage,Stage $(0)
-arkuma,1,BonusNum,$(0) Times
-arkuma,1,EndConfirmTitle,Checkout Confirmation
-arkuma,1,EndConfirm,Arkuma Slots will be settled.<br>Are you sure you wish to proceed?
-arkuma,1,CoinNum,$(0) <pict AmusementCoin>
-arkuma,1,InfoCoinNum,x $(0)
-arkuma,1,InfoStr00,+bonusgame
-arkuma,1,InfoStr01,meter+1
-arkuma,1,InfoCoin_01,x 100
-arkuma,1,InfoCoin_02,x 30
-arkuma,1,InfoCoin_03,x 15
-arkuma,1,InfoCoin_04,x 10
-arkuma,1,InfoCoin_05,x 8
-arkuma,1,InfoCoin_06,x 5
-arkuma,1,InfoCoin_07,x 3
-arkuma,1,Help_00,Insert
-arkuma,1,Help_01,Start!
-arkuma,1,Help_02,Payout Sheet
-arkuma,1,Help_03,Settle
-arkuma,1,Help_04,Chat
-arkuma,1,Help_05,Select
-arkuma,1,Help_06,Confirm
-arkuma,1,Help_07,Arkumami
-arkuma,1,Help_10,[↑][↓] Keys
-arkuma,1,Help_10a,<pict Alpha_UP><pict Alpha_DOWN>
-arkuma,1,Help_10b,<pict Sign_UP><pict Sign_DOWN>
-arkuma,1,Help_10c,<pict Number_UP><pict Number_DOWN>
-arkuma,1,Help_11,<%Decide>
-arkuma,1,Help_12,[←][End] Keys
-arkuma,1,Help_12a,<pict Alpha_LEFT>
-arkuma,1,Help_12b,<pict Sign_LEFT>
-arkuma,1,Help_12c,<pict Number_LEFT>
-arkuma,1,Help_13,<%Cancel>/[ESC] Key
-arkuma,1,Help_13a,<%Cancel>
-arkuma,1,Help_14,<pict Sign_SELECT>
-arkuma,1,Help_14a,<pict Sign_START>
-arkuma,1,Help_15,[↑][↓][←][→] Keys
-arkuma,1,Help_15a,<pict Alpha_UP><pict Alpha_DOWN><pict Alpha_LEFT><pict Alpha_RIGHT>
-arkuma,1,Help_15b,<pict Sign_UP><pict Sign_DOWN><pict Sign_LEFT><pict Sign_RIGHT>
-arkuma,1,Help_15c,<pict Number_UP><pict Number_DOWN><pict Number_LEFT><pict Number_RIGHT>
-arkuma,1,Help_16,<%MultiSelect>
-arkuma,1,SlotInitMsg,"-,---,---"
-arkuma,1,NoCoinTitle,Casino Coin Error
-arkuma,1,NoCoinMessage,You do not have enough Casino Coins.
-arkuma,1,PlayCountLimit,You have exceeded your number of available plays for the day.<br>(Resets everyday at <utc>13:00</utc>)
-arkuma,1,PushButtonToPlay,<%Decide> to play the slot machine.
-arkuma,1,PushKeyToSelect,Select with $(0).
-arkuma,1,WaitLongMsg,You have left your seat due to inactivity.
-arkuma,1,CampaignText,Regular game payout is up by 50%
-arkuma,1,SuperCampaignText,Regular game payout is <yellow>up by 100%!<c>
-arkuma,1,ArkumaBetWindowTitle,Arkuma Slots Bet Confirmation
-arkuma,1,ArkumaBetWindowText2,Play Arkuma Slots with $(0) <pict AmusementCoin>.<br>Are you sure?<br><br>You can play <yellow>$(2)<c> more times.<br>The number of plays resets everyday at <utc>13:00</utc>.<br><br>(Number of <pict AmusementCoin>：$(1))
-arkuma,1,ArkumaBetWindowMenuText,Play with $(0)
-arkuma,1,ArkumaBetWindowButtonText,Leave your seat
-arkuma,1,ArkumaResultTitle,Arkuma Slots Results
-arkuma,1,AcquisitionCC,<pict AmusementCoin> Acquired
-arkuma,1,PossessionCC,Total <pict AmusementCoin>
-arkuma,1,ArkumaRateNumberText,$(0)%
-arkuma,1,ArkumaPointPlusCoinText,$(0)+ $(1)
-arkuma,1,toast_auto_exit,You have left your seat due to inactivity.
-arkuma,1,toast_no_coin,You do not have enough Casino Coins.
-arkuma,1,ArkumaLiquidationTitle,Checkout Confirmation
-arkuma,1,ArkumaLiquidationText,The coins you acquired will be settled<br>and you will exit this play session.<br>Are you sure?
-arkuma,1,bubbleStartGame,"Are you ready?<br>Then onward, to the ends of the universe."
-arkuma,1,bubbleRest1,Your sliding is coming along nicely.<br>Keep it up.
-arkuma,1,bubbleRest2,There are 10 stages until your destination.<br>Keep on going.
-arkuma,1,bubbleRest3,There are 5 stages until your destination.<br>The goal is just ahead. Good luck.
-arkuma,1,bubbleHitSpecialPanels,Dark Falz detected.<br>Please be careful.
-arkuma,1,bubbleToBattleBonus,It seems that a fake item is preventing the<br>attack. Find the real item and attack.
-arkuma,1,bubbleToElderBonus,Dark Falz sighted.<br>Put everything you've got into this attack!
-arkuma,1,bubbleWinBattle,"Pretty good strategy, if I do say so myself.<br>We won."
-arkuma,1,bubbleLoseBattle,"The damage is severe...<br>Unfortunately, this is the end of the line."
-arkuma,1,bubbleWinElder1,Congratulations.<br>This is a wonderful result!
-arkuma,1,bubbleWinElder2,A truly fantastic result!<br>You won it all.
-arkuma,1,bubbleWinElder3,This is a result for the history books!<br>I am truly honored<br>to have been present for it.
-arkuma,1,wave_average,Average Stage Reached
-arkuma,1,slot2_result,Arkuma Slots Results
-arkuma,1,playable_number,Number of plays available
-arkuma,1,reset,<yellow>Resets everyday at <utc>13:00</utc>.<c>
-arkuma,1,player_info,Number of plays available today (Current/Max.)
-arkuma,1,toast_no_playable,You exceeded your number of plays for the day.

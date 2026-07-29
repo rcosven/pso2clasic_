@@ -1,14 +1,4 @@
 ﻿section,group,id,text
-common,0,TrialName_1Enemy,$(0)討伐
-common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
-common,0,TrialAbstract_1Enemy,$(0)を倒す
-common,0,TrialName_Multi,エネミー討伐
-common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
-common,0,TrialAbstract_Multi,エネミーを倒す
-common,0,Line_HelpEventManonAndAina,戦闘支援（アイナ＆マノン）<br>移動速度上昇<br>攻撃力上昇
-common,0,Line_HelpEventNadereh,戦闘支援（ナーデレフ）<br>エネミーの防御力低下<br>ダーレットの動作停止
-common,0,Line_HelpEventIlma,戦闘支援（イルマ）<br>攻撃命中時に追加攻撃発生
-common,0,Line_HelpEventGlen,戦闘支援（グレン）<br>PP自然回復量増加
 common,1,TrialName_1Enemy,$(0) Suppression
 common,1,TrialBeginMsg_1Enemy,Defeat the $(0)!
 common,1,TrialAbstract_1Enemy,Defeat the $(0).
@@ -19,17 +9,27 @@ common,1,Line_HelpEventManonAndAina,Combat Support (Aina & Manon)<br>Increased M
 common,1,Line_HelpEventNadereh,Combat Support (Nadereh)<br>Decreased Enemy Defense<br>Darlett Movement Stopped
 common,1,Line_HelpEventIlma,Combat Support (Ilma)<br>Follow-Up Attack Occurs When You Land a Hit
 common,1,Line_HelpEventGlen,Combat Support (Glen)<br>Increased PP Natural Recovery
-type100,0,NpcComGod3ManonHelpEvent01,/voicemsc_020060_0370 なんとか、調整が間に合ったわね。
+common,0,TrialName_1Enemy,$(0)討伐
+common,0,TrialBeginMsg_1Enemy,出現した$(0)を倒せ！
+common,0,TrialAbstract_1Enemy,$(0)を倒す
+common,0,TrialName_Multi,エネミー討伐
+common,0,TrialBeginMsg_Multi,出現したエネミーを倒せ！
+common,0,TrialAbstract_Multi,エネミーを倒す
+common,0,Line_HelpEventManonAndAina,戦闘支援（アイナ＆マノン）<br>移動速度上昇<br>攻撃力上昇
+common,0,Line_HelpEventNadereh,戦闘支援（ナーデレフ）<br>エネミーの防御力低下<br>ダーレットの動作停止
+common,0,Line_HelpEventIlma,戦闘支援（イルマ）<br>攻撃命中時に追加攻撃発生
+common,0,Line_HelpEventGlen,戦闘支援（グレン）<br>PP自然回復量増加
 type100,1,NpcComGod3ManonHelpEvent01,/voicemsc_020060_0370 You got it worked out just in time.
-type101,0,NpcComGod3AinaHelpEvent01,/voicemsc_020060_0360 こちらアイナ。<br>これから、支援するよ！
+type100,0,NpcComGod3ManonHelpEvent01,/voicemsc_020060_0370 なんとか、調整が間に合ったわね。
 type101,1,NpcComGod3AinaHelpEvent01,/voicemsc_020060_0360 This is Aina. Moving to support!
-type109,0,NpcComGod3Nadereh01,/voicemsc_020060_0380 どうやら私の出番のようだな。
+type101,0,NpcComGod3AinaHelpEvent01,/voicemsc_020060_0360 こちらアイナ。<br>これから、支援するよ！
 type109,1,NpcComGod3Nadereh01,/voicemsc_020060_0380 Time for me to make my appearance.
-type110,0,NpcComGod3IlmaHelpEvent01,/voicemsc_020060_0390 よし、僕も援護するよ。
-type110,0,NpcComGod3IlmaHelpEvent02,/voicemsc_020060_0400 ちゃんとテストしてないけど、<br>たぶん大丈夫なはず……。
+type109,0,NpcComGod3Nadereh01,/voicemsc_020060_0380 どうやら私の出番のようだな。
 type110,1,NpcComGod3IlmaHelpEvent01,/voicemsc_020060_0390 I'm moving out!
 type110,1,NpcComGod3IlmaHelpEvent02,"/voicemsc_020060_0400 We've never tested it, but it should be okay..."
-type111,0,NpcComGod3Glen01,/voicemsc_020060_0410 これより、支援を行う。
-type111,0,NpcComGod3Glen02,/voicemsc_020060_0420 我々のぶんまで、頼んだぞ。
+type110,0,NpcComGod3IlmaHelpEvent01,/voicemsc_020060_0390 よし、僕も援護するよ。
+type110,0,NpcComGod3IlmaHelpEvent02,/voicemsc_020060_0400 ちゃんとテストしてないけど、<br>たぶん大丈夫なはず……。
 type111,1,NpcComGod3Glen01,/voicemsc_020060_0410 I'm moving to support.
 type111,1,NpcComGod3Glen02,"/voicemsc_020060_0420 Hit it once for us, too."
+type111,0,NpcComGod3Glen01,/voicemsc_020060_0410 これより、支援を行う。
+type111,0,NpcComGod3Glen02,/voicemsc_020060_0420 我々のぶんまで、頼んだぞ。

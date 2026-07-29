@@ -2,15 +2,15 @@
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
-Basic,0,Title,星砕の暴進
-Basic,0,Explanation,北クヴァリス周辺で、“ダークファルス・ソウラス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
-Basic,0,Explanation_r2,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
 Basic,1,Title,Planetcrusher Blitz
 Basic,1,Explanation,"A powerful energy response comparable to that of Dark Falz Solus was observed in the vicinity of North Kvaris.<br>All ARKS defenders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>Assist NPCs cannot participate.<c>"
 Basic,1,Explanation_r2,"A powerful energy reading resembling that of Starless was observed in the vicinity of North Kvaris. All ARKS defenders, report to the designated point immediately to eliminate this unknown menace.<br><yellow>*A specimen whose name includes ""Malignant"" will appear.<br>Assist NPCs cannot participate.<c>"
-FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
+Basic,0,Title,星砕の暴進
+Basic,0,Explanation,北クヴァリス周辺で、“ダークファルス・ソウラス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Basic,0,Explanation_r2,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
 FailureCondition,1,f0,Become incapacitated 5 times<br>Exceed the time limit
-QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
+FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
 QuestTarget,1,SimpleExplanation,Defeat Dark Falz Dalion
-SuccessCondition,0,s0,対象エネミーの撃破
+QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
 SuccessCondition,1,s0,Defeat the target enemies
+SuccessCondition,0,s0,対象エネミーの撃破

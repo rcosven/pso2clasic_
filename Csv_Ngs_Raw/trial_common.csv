@@ -1,4 +1,129 @@
 ﻿section,group,id,text
+common,1,ProgressCount,$(0)/$(1)
+common,1,ProgressCountNoDenominator,$(0)
+common,1,ProgressValue,×$(0)
+common,1,TrialSuccessMsg,Trial $(0) Success!
+common,1,TrialFailureMsg,Trial $(0) Failed!
+common,1,TrialCancelMsg,Withdrew from $(0).
+common,1,TrialFinishMsg,Trial<br>“$(0)” Over
+common,1,RewardTextClear,$(0) Clear
+common,1,RewardTextRew,Reward
+common,1,RewardTextMeseta,<pict reb_meseta>$(0)
+common,1,RewardTextSeasonPoint,<pict event_point>$(0)
+common,1,RewardTextGP,<pict myspace_point>$(0)GP
+common,1,RewardTextItemNameNum,$(0)x$(1)
+common,1,RewardTextItemName,$(0)
+common,1,ProgBodyEnemyName,$(0)
+common,1,ProgDefenceWave,Wave
+common,1,ProgNumPlayerDied,Incapacitated
+common,1,ProgNumSubCondition,Side Mission
+common,1,ProgSideTrialTitle,Extra Mission
+common,1,ProgSideTrialAbstract,$(0)
+common,1,ProgSub_DontDie,Clear without being incapacitated
+common,1,ProgSub_NumPlayerDied,Clear with less than $(0) incapacitations
+common,1,ProgSub_NumPlayerDamage,Take damage less than $(0) times
+common,1,ProgSub_NoPlayerDamage,Clear without taking damage
+common,1,ProgSub_NumEnemyRegionBreak,Destroy $(0) or more parts
+common,1,ProgSub_TimeLimitSecond,Clear with $(0) secs or more remaining
+common,1,ProgSub_HpPercent___Defence,Truck SP $(0) or more remaining
+common,1,ProgSub_NumCreate___Generator,Allow less than $(0) enemy teleports
+common,1,Prog_BossWeakCon_TrialPoint,<yellow>Defeat enemies<c> to activate Trials
+common,1,Prog_BossWeakCon_PlayTrial,<yellow>Defeat enemies<c> to activate Trials
+common,1,Prog_BossWeakCon_Next,Until Trial activation
+common,1,FLineMsg_TimeOver,Trial Failed<br>Time Limit Exceeded
+common,1,FLineMsg_DefenceTarget_Dead,Trial Failed<br>Defense target took heavy damage!
+common,1,FLineMsg_NumPlayerDied,Incapacitation limit exceeded!
+common,1,MJournal_HostName,Host Player
+common,1,MJournal_PlayerNum,Number of Participants
+common,1,MJournal_RemainDecide,Race begins in
+common,1,MSelectTitle,Select Field Race Course
+common,1,MButtonGuide_HostMenu,Press and hold to change matchmaking status
+common,1,MButtonGuide_HostMenuTail,Selected Field Race: $(0)
+common,1,MButtonGuide_HostTitle,$(0)
+common,1,MButtonGuide_HostMessage,Immediately begin $(0)?
+common,1,MButtonGuide_HostYes,Immediately begin
+common,1,MButtonGuide_HostNo,Stop matchmaking
+common,1,MButtonGuide_MemberMenu,Press and hold to change matchmaking status
+common,1,MButtonGuide_MemberMenuTail,Accepted Field Race: $(0)
+common,1,MButtonGuide_MemberTitle,$(0)
+common,1,MButtonGuide_MemberMessage,Cancel joining the Field Race?
+common,1,MButtonGuide_MemberYes,Yes
+common,1,MButtonGuide_MemberNo,No
+common,1,MStartNotice_HostPlayer,You have started Field Race matchmaking.
+common,1,MStartNotice_MemberPlayer,You have joined $(0) matchmaking.
+common,1,MCancelReason_EnterNew_ButExist,You cannot do this because another player has started matchmaking.
+common,1,MCancelReason_EnterExist_ButNotFound,Matchmaking has finished.
+common,1,MCancelReason_HostChanged,The host player has cancelled matchmaking.
+common,1,MCancelReason_MemberExit,You have left $(0).
+common,1,MCancelReason_Exclusion,You are currently participating in another Field Race
+common,1,MNotice_HostChanged,$(0) became the host player.
+common,1,MNotice_RecruitToast,Field Race matchmaking has started at a nearby terminal.
+common,1,MCourse_SAerio,South Aelio Dash (Stage 1)
+common,1,MCourse_WAerio,West Aelio Dash (Stage 1)
+common,1,MCourse_WRitem,West Retem Dash (Stage 1)
+common,1,MCourse_CKuvaris,Central Kvaris Dash (Stage 1)
+common,1,MCourse_SKuvaris,South Kvaris Dash (Stage 1)
+common,1,MCourse_SKuvaris_LimitedTime,South Kvaris Dash (Spring '24)
+common,1,MCourse_CAerio,Central Aelio Board (Stage 1)
+common,1,MCourse_CRitem,Central Retem Board (Stage 1)
+common,1,MCourse_WKuvaris,West Kvaris Dash (Stage 1)
+common,1,MCourse_SRitem,South Retem Dash (Stage 1)
+common,1,MCourse_NAerio,North Aelio Board (Stage 1)
+common,1,MCourse_NRitem,North Retem Board (Stage 1)
+common,1,MRetryMenu_Guide,Hold to leave
+common,1,MRetryMenu_Guide_AfterPlaying,Hold to return to the Racing Console
+common,1,MRetryMenu_GuideRemain,Time remaining: $(0):$(1).$(2)
+common,1,MRetryMenu_Title,Leave the Field Race
+common,1,MRetryMenu_Message,"Would you like to leave the Field Race?<br><br>If you leave midway, <yellow>only you<c> will return to the Racing Console."
+common,1,MRetryMenu_Title_AfterPlaying,Return to the Racing Console
+common,1,MRetryMenu_Message_AfterPlaying,Return to $(0)'s Racing Console?
+common,1,MRetryMenu_Yes,Yes
+common,1,MRetryMenu_No,No
+common,1,MCourse_StiaB,Dreisen Plant Board (Stage 1)
+common,1,MCourse_StiaA,Stia Outskirts Dash (Stage 1)
+common,1,MCourse_HLake,Halphia Lake Board (Stage 1)
+common,1,MCourse_StiaC,Mediola Outer Area 2 Board (Stage 1)
+common,1,ExRewardToast_050,/atime5 Enemy HP: 50% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_100,/atime5 Enemy HP: 100% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_090,/atime5 Enemy HP: 90% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_080,/atime5 Enemy HP: 80% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_070,/atime5 Enemy HP: 70% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_060,/atime5 Enemy HP: 60% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_040,/atime5 Enemy HP: 40% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_030,/atime5 Enemy HP: 30% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_020,/atime5 Enemy HP: 20% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_010,/atime5 Enemy HP: 10% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_000,Enemies defeated!<br><yellow>Reward Upgraded<c>
+common,1,Toast_AddTimeLimitSummary,Target enemy defeated. Additional time: <yellow>$(0) seconds<c>.
+common,1,ExRewardToast_075,/atime5 Enemy HP: 75% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardToast_025,/atime5 Enemy HP: 25% Remaining<br><yellow>Reward Upgraded<c>
+common,1,ExRewardTitle,Reward Upgrade based on damage dealt
+common,1,ExRewardTitle_Point,Reward Upgrade based on no. collected
+common,1,ExRewardTitle_Bounty,Reward upgrade based on goals completed
+common,1,TrialSuccessByTimeOver,Enemy Retreated!
+common,1,TrialSuccessByannihilation,Enemy eradication complete!
+common,1,TrialSuccessSideMissionSuccess,Trial $(0) Success<br>Points Earned: $(1)<br>Side Mission Clear Bonus: $(2)
+common,1,TrialSuccessSideMissionFailure,Trial $(0) Success<br>Points Earned: $(1)
+common,1,TrialRemainXsec,$(1) seconds until Trial “$(0)” End
+common,1,TrialSuccessSideMissionSuccess2,M.A.R.S. Battery $(0)% recovered
+common,1,TrialSideTrialBegin,Extra Mission Begin<br>$(0)Aim at the target <yellow>with priority<c>!<br>Success in the Extra Mission will result in <yellow>receiving bonus points when the Trial is successful!<c>
+common,1,TrialSuccessMsgGroom,Trial $(0) Success<br>Points Earned: $(1)<br>Side Mission Clear Bonus: $(2)<br>$(4) Extra Mission Bonus: $(3)
+common,1,TrialFailurePointGet,Trial $(0) Failed<br>Points Earned: $(1)
+common,1,TrialSideTrialSuccess,$(0)Extra Mission Success<br>Obtained trial success bonus!
+common,1,SLM_QuestPoint,<br>Points Earned: $(0)
+common,1,SLM_SubConditionSuccess,<br>Side Mission Clear Bonus: $(0)
+common,1,SLM_SideTrialSuccess,<br>$(0) Extra Mission Bonus: $(1)
+common,1,SLM_SideTrialFailure,<br>Extra Mission Bonus: 0
+common,1,TrialSuccessMsg_QuestPoint,Trial $(0) Success!$(1)$(2)$(3)
+common,1,SideTrialNotify,<yellow>*Prioritize Extra Mission success in order to<br>obtain bonus points upon Trial Success!<c>
+common,1,SideTrialNotify_White,<yellow>*Prioritize Extra Mission success to earn an Ability Buff!<c>
+common,1,TrialSideTrialBegin_White,Commencing Extra Mission<br>$(0)Aim for the target <yellow>with priority<c>!<br>Success in the Extra Mission will <yellow>reward you with an Ability Buff when the Trial is successful!<c>
+common,1,TrialNotify_BuffGet,<yellow>*Clear the trial to earn an Ability Buff!<c>
+common,1,TrialNotify_PSEBurstSuddenly,<yellow>*Clear the trial to cause a PSE Burst!<c>
+common,1,TrialPollution_Monolith,Until purged
+common,1,Bounty_TaskName,$(0)
+common,1,Bounty_ClearNum,Goals Completed
+common,1,TrialNotify_NeonGRappy,<yellow>* Defeat a Great Rappy to boost your Exploration Point multiplier! <c>
 common,0,ProgressCount,$(0)/$(1)
 common,0,ProgressCountNoDenominator,$(0)
 common,0,ProgressValue,×$(0)
@@ -130,132 +255,7 @@ common,0,TrialPollution_Monolith,浄化完了まで
 common,0,Bounty_TaskName,$(0)
 common,0,Bounty_ClearNum,目標達成数
 common,0,TrialNotify_NeonGRappy,<yellow>※グレト・ラッピー討伐で<br>探索ポイント倍率がアップ！<c>
-common,1,ProgressCount,$(0)/$(1)
-common,1,ProgressCountNoDenominator,$(0)
-common,1,ProgressValue,×$(0)
-common,1,TrialSuccessMsg,Trial $(0) Success!
-common,1,TrialFailureMsg,Trial $(0) Failed!
-common,1,TrialCancelMsg,Withdrew from $(0).
-common,1,TrialFinishMsg,Trial<br>“$(0)” Over
-common,1,RewardTextClear,$(0) Clear
-common,1,RewardTextRew,Reward
-common,1,RewardTextMeseta,<pict reb_meseta>$(0)
-common,1,RewardTextSeasonPoint,<pict event_point>$(0)
-common,1,RewardTextGP,<pict myspace_point>$(0)GP
-common,1,RewardTextItemNameNum,$(0)x$(1)
-common,1,RewardTextItemName,$(0)
-common,1,ProgBodyEnemyName,$(0)
-common,1,ProgDefenceWave,Wave
-common,1,ProgNumPlayerDied,Incapacitated
-common,1,ProgNumSubCondition,Side Mission
-common,1,ProgSideTrialTitle,Extra Mission
-common,1,ProgSideTrialAbstract,$(0)
-common,1,ProgSub_DontDie,Clear without being incapacitated
-common,1,ProgSub_NumPlayerDied,Clear with less than $(0) incapacitations
-common,1,ProgSub_NumPlayerDamage,Take damage less than $(0) times
-common,1,ProgSub_NoPlayerDamage,Clear without taking damage
-common,1,ProgSub_NumEnemyRegionBreak,Destroy $(0) or more parts
-common,1,ProgSub_TimeLimitSecond,Clear with $(0) secs or more remaining
-common,1,ProgSub_HpPercent___Defence,Truck SP $(0) or more remaining
-common,1,ProgSub_NumCreate___Generator,Allow less than $(0) enemy teleports
-common,1,Prog_BossWeakCon_TrialPoint,<yellow>Defeat enemies<c> to activate Trials
-common,1,Prog_BossWeakCon_PlayTrial,<yellow>Defeat enemies<c> to activate Trials
-common,1,Prog_BossWeakCon_Next,Until Trial activation
-common,1,FLineMsg_TimeOver,Trial Failed<br>Time Limit Exceeded
-common,1,FLineMsg_DefenceTarget_Dead,Trial Failed<br>Defense target took heavy damage!
-common,1,FLineMsg_NumPlayerDied,Incapacitation limit exceeded!
-common,1,MJournal_HostName,Host Player
-common,1,MJournal_PlayerNum,Number of Participants
-common,1,MJournal_RemainDecide,Race begins in
-common,1,MSelectTitle,Select Field Race Course
-common,1,MButtonGuide_HostMenu,Press and hold to change matchmaking status
-common,1,MButtonGuide_HostMenuTail,Selected Field Race: $(0)
-common,1,MButtonGuide_HostTitle,$(0)
-common,1,MButtonGuide_HostMessage,Immediately begin $(0)?
-common,1,MButtonGuide_HostYes,Immediately begin
-common,1,MButtonGuide_HostNo,Stop matchmaking
-common,1,MButtonGuide_MemberMenu,Press and hold to change matchmaking status
-common,1,MButtonGuide_MemberMenuTail,Accepted Field Race: $(0)
-common,1,MButtonGuide_MemberTitle,$(0)
-common,1,MButtonGuide_MemberMessage,Cancel joining the Field Race?
-common,1,MButtonGuide_MemberYes,Yes
-common,1,MButtonGuide_MemberNo,No
-common,1,MStartNotice_HostPlayer,You have started Field Race matchmaking.
-common,1,MStartNotice_MemberPlayer,You have joined $(0) matchmaking.
-common,1,MCancelReason_EnterNew_ButExist,You cannot do this because another player has started matchmaking.
-common,1,MCancelReason_EnterExist_ButNotFound,Matchmaking has finished.
-common,1,MCancelReason_HostChanged,The host player has cancelled matchmaking.
-common,1,MCancelReason_MemberExit,You have left $(0).
-common,1,MCancelReason_Exclusion,You are currently participating in another Field Race
-common,1,MNotice_HostChanged,$(0) became the host player.
-common,1,MNotice_RecruitToast,Field Race matchmaking has started at a nearby terminal.
-common,1,MCourse_SAerio,South Aelio Dash (Stage 1)
-common,1,MCourse_WAerio,West Aelio Dash (Stage 1)
-common,1,MCourse_WRitem,West Retem Dash (Stage 1)
-common,1,MCourse_CKuvaris,Central Kvaris Dash (Stage 1)
-common,1,MCourse_SKuvaris,South Kvaris Dash (Stage 1)
-common,1,MCourse_SKuvaris_LimitedTime,South Kvaris Dash (Spring '24)
-common,1,MCourse_CAerio,Central Aelio Board (Stage 1)
-common,1,MCourse_CRitem,Central Retem Board (Stage 1)
-common,1,MCourse_WKuvaris,West Kvaris Dash (Stage 1)
-common,1,MCourse_SRitem,South Retem Dash (Stage 1)
-common,1,MCourse_NAerio,North Aelio Board (Stage 1)
-common,1,MCourse_NRitem,North Retem Board (Stage 1)
-common,1,MRetryMenu_Guide,Hold to leave
-common,1,MRetryMenu_Guide_AfterPlaying,Hold to return to the Racing Console
-common,1,MRetryMenu_GuideRemain,Time remaining: $(0):$(1).$(2)
-common,1,MRetryMenu_Title,Leave the Field Race
-common,1,MRetryMenu_Message,"Would you like to leave the Field Race?<br><br>If you leave midway, <yellow>only you<c> will return to the Racing Console."
-common,1,MRetryMenu_Title_AfterPlaying,Return to the Racing Console
-common,1,MRetryMenu_Message_AfterPlaying,Return to $(0)'s Racing Console?
-common,1,MRetryMenu_Yes,Yes
-common,1,MRetryMenu_No,No
-common,1,MCourse_StiaB,Dreisen Plant Board (Stage 1)
-common,1,MCourse_StiaA,Stia Outskirts Dash (Stage 1)
-common,1,MCourse_HLake,Halphia Lake Board (Stage 1)
-common,1,MCourse_StiaC,Mediola Outer Area 2 Board (Stage 1)
-common,1,ExRewardToast_050,/atime5 Enemy HP: 50% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_100,/atime5 Enemy HP: 100% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_090,/atime5 Enemy HP: 90% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_080,/atime5 Enemy HP: 80% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_070,/atime5 Enemy HP: 70% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_060,/atime5 Enemy HP: 60% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_040,/atime5 Enemy HP: 40% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_030,/atime5 Enemy HP: 30% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_020,/atime5 Enemy HP: 20% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_010,/atime5 Enemy HP: 10% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_000,Enemies defeated!<br><yellow>Reward Upgraded<c>
-common,1,Toast_AddTimeLimitSummary,Target enemy defeated. Additional time: <yellow>$(0) seconds<c>.
-common,1,ExRewardToast_075,/atime5 Enemy HP: 75% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardToast_025,/atime5 Enemy HP: 25% Remaining<br><yellow>Reward Upgraded<c>
-common,1,ExRewardTitle,Reward Upgrade based on damage dealt
-common,1,ExRewardTitle_Point,Reward Upgrade based on no. collected
-common,1,ExRewardTitle_Bounty,Reward upgrade based on goals completed
-common,1,TrialSuccessByTimeOver,Enemy Retreated!
-common,1,TrialSuccessByannihilation,Enemy eradication complete!
-common,1,TrialSuccessSideMissionSuccess,Trial $(0) Success<br>Points Earned: $(1)<br>Side Mission Clear Bonus: $(2)
-common,1,TrialSuccessSideMissionFailure,Trial $(0) Success<br>Points Earned: $(1)
-common,1,TrialRemainXsec,$(1) seconds until Trial “$(0)” End
-common,1,TrialSuccessSideMissionSuccess2,M.A.R.S. Battery $(0)% recovered
-common,1,TrialSideTrialBegin,Extra Mission Begin<br>$(0)Aim at the target <yellow>with priority<c>!<br>Success in the Extra Mission will result in <yellow>receiving bonus points when the Trial is successful!<c>
-common,1,TrialSuccessMsgGroom,Trial $(0) Success<br>Points Earned: $(1)<br>Side Mission Clear Bonus: $(2)<br>$(4) Extra Mission Bonus: $(3)
-common,1,TrialFailurePointGet,Trial $(0) Failed<br>Points Earned: $(1)
-common,1,TrialSideTrialSuccess,$(0)Extra Mission Success<br>Obtained trial success bonus!
-common,1,SLM_QuestPoint,<br>Points Earned: $(0)
-common,1,SLM_SubConditionSuccess,<br>Side Mission Clear Bonus: $(0)
-common,1,SLM_SideTrialSuccess,<br>$(0) Extra Mission Bonus: $(1)
-common,1,SLM_SideTrialFailure,<br>Extra Mission Bonus: 0
-common,1,TrialSuccessMsg_QuestPoint,Trial $(0) Success!$(1)$(2)$(3)
-common,1,SideTrialNotify,<yellow>*Prioritize Extra Mission success in order to<br>obtain bonus points upon Trial Success!<c>
-common,1,SideTrialNotify_White,<yellow>*Prioritize Extra Mission success to earn an Ability Buff!<c>
-common,1,TrialSideTrialBegin_White,Commencing Extra Mission<br>$(0)Aim for the target <yellow>with priority<c>!<br>Success in the Extra Mission will <yellow>reward you with an Ability Buff when the Trial is successful!<c>
-common,1,TrialNotify_BuffGet,<yellow>*Clear the trial to earn an Ability Buff!<c>
-common,1,TrialNotify_PSEBurstSuddenly,<yellow>*Clear the trial to cause a PSE Burst!<c>
-common,1,TrialPollution_Monolith,Until purged
-common,1,Bounty_TaskName,$(0)
-common,1,Bounty_ClearNum,Goals Completed
-common,1,TrialNotify_NeonGRappy,<yellow>* Defeat a Great Rappy to boost your Exploration Point multiplier! <c>
-type103,0,NpcComOnSideTrialBegin,/voice11_voice_navi002_trial_0001_028 新たな脅威の乱入を確認。<br>優先して対処してください。
-type103,0,NpcComOnSideTrialSuccess,/voice11_voice_navi002_trial_0001_044 乱入した脅威の対処完了。<br>残りの対応もお願いします。
 type103,1,NpcComOnSideTrialBegin,/voice11_voice_navi002_trial_0001_028 A new threat has been detected.<br>Please engage at once.
 type103,1,NpcComOnSideTrialSuccess,/voice11_voice_navi002_trial_0001_044 The threat has been eliminated.<br>Now finish off the rest.
+type103,0,NpcComOnSideTrialBegin,/voice11_voice_navi002_trial_0001_028 新たな脅威の乱入を確認。<br>優先して対処してください。
+type103,0,NpcComOnSideTrialSuccess,/voice11_voice_navi002_trial_0001_044 乱入した脅威の対処完了。<br>残りの対応もお願いします。

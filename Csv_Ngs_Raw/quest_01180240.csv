@@ -4,11 +4,11 @@ AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
 AreaName,0,Area0S,ハルフィリア湖
 AreaName,0,Area0L,ハルフィリア湖
-Basic,0,Title,想定演習：ハルフィリア湖の戦い
-Basic,0,Explanation,これは、来るべき戦いに備えてアーカイブより再現された想定演習である。<br>現在の設定では、ハルフィリア湖での激闘を追体験できる。<br>戦闘技術を駆使して、“ダークファルス・エイジス”を迎撃せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※対象トリガーの換金や特定倉庫への移動でクエスト破棄／アシストNPC参加不可<c>
 Basic,1,Title,Drill: The Battle of Halphia Lake
 Basic,1,Explanation,This practice drill is a simulation from the archive to help you prepare for the coming battle.<br>The current settings will allow you to reenact The Battle of Halphia Lake.<br>Make use of all your skills to defeat Dark Falz Aegis.<br><yellow>Note: Moving the trigger items to certain storage locations or converting them will cause the quest to be abandoned. / Assist NPCs cannot participate<c>
-QuestTarget,0,SimpleExplanation,ダークファルス・エイジスを撃破せよ！
+Basic,0,Title,想定演習：ハルフィリア湖の戦い
+Basic,0,Explanation,これは、来るべき戦いに備えてアーカイブより再現された想定演習である。<br>現在の設定では、ハルフィリア湖での激闘を追体験できる。<br>戦闘技術を駆使して、“ダークファルス・エイジス”を迎撃せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※対象トリガーの換金や特定倉庫への移動でクエスト破棄／アシストNPC参加不可<c>
 QuestTarget,1,SimpleExplanation,Destroy Dark Falz Aegis!
-SuccessCondition,0,s0,対象エネミーの撃破
+QuestTarget,0,SimpleExplanation,ダークファルス・エイジスを撃破せよ！
 SuccessCondition,1,s0,Defeat the target enemies
+SuccessCondition,0,s0,対象エネミーの撃破
