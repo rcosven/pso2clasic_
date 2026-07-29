@@ -76,7 +76,7 @@ Block,1,BlackForm_Cancel,Atrás
 Block,1,BlackForm_Explanation,Descripción
 Block,1,BlackForm_PremiumSpace,Espacio Premium
 Block,1,BlockForm_Move_Exp,"Al moverte de bloque,<br>las misiones que hayas aceptado se cancelarán.<br><br>Además, si tienes misiones activas,<br>los efectos obtenidos en ellas<br>también desaparecerán."
-Block,1,BlockForm_ToMyShip_Exp,"Si regresas a tu nave de origen, se<br>cancelará el emparejamiento.<br><br>¿Quieres regresar a tu nave de origen?"
+Block,1,BlockForm_Classic_Exp,"When you change blocks, you are automatically removed<br>from any party you're in and any quests you're on are<br>abandoned.<br><br>Any active in-quest effects will also be removed."
 Block,1,BlockFormTitle_Streamer_Classic_Exp,Modo transmisor
 Block,1,BlockForm_Streamer_Classic_Exp,"Estás en el modo Streamer.<br><br>El modo Streamer solo es válido<br>en los bloques de ""PSO2: NGS"".<br>Si te trasladas a un bloque de ""PSO2"",<br>el modo Streamer se desactivará temporalmente.<br><br>¿Quieres trasladarte al bloque de ""PSO2""?"
 Block,1,BlockForm_MyRoom_Exp,¿Mudarse a una vivienda personal?
@@ -4250,21 +4250,21 @@ PlayGo,0,download_progress,インストール中：$(0)％
 PlayGo,0,PlayGo_AreaMove_Message,移動先のエリアのインストールが完了していません。<br>インストールが完了してから、<br>アクセスし直してください。<br><br>インストール中：$(0)％
 PlayGo,0,PlayGo_Confirm_Message,移動先のエリアのデータがありません。<br>追加データをダウンロードしますか？<br><br><yellow>空き容量が不足している場合、<br>ダウンロードできません。<br>データのダウンロードには、<br>長時間かかる場合があります。
 PlayGo,0,PlayGo_Confirm_Message_FirstTime,『ファンタシースターオンライン２　ニュージェネシス』<br>がサービス開始される以前に配信されていた<br>『ファンタシースターオンライン２』をプレイする場合は<br>追加データのダウンロードが必要です。<br><br>『ファンタシースターオンライン２』を<br>すぐにプレイしない場合は「いいえ」を選んでください。<br><br>※「いいえ」を選んだ場合でも<br>　あとからダウンロード可能です。<br><br><yellow>ダウンロードには、長時間かかる場合があります。<c><br><br>追加データをダウンロードしますか？
-PlayGo,0,PlayGo_Confirm_Message_FirstTime_Epic,<c><br><br>追加データをダウンロードしますか？
+PlayGo,0,PlayGo_Confirm_Message_FirstTime_Epic,『ファンタシースターオンライン２　ニュージェネシス』<br>がサービス開始される以前に配信されていた<br>『ファンタシースターオンライン２』をプレイする場合は<br>追加データのダウンロードが必要です。 <br><br>『ファンタシースターオンライン２』を<br>すぐにプレイしない場合は「いいえ」を選んでください。<br><br>※「いいえ」を選んだ場合でも<br>　あとからダウンロード可能です。<br><br><yellow>ダウンロードには、長時間かかる場合があります。<br>追加データをダウンロードする場合は、<br>ゲームを一度終了する必要があります。<c><br><br>追加データをダウンロードしますか？
 PlayGo,0,PlayGo_DL_ Notice_Message,エリアデータのダウンロード中に<br>エラーが発生しました。<br><br>ゲームを再起動して追加データの<br>ダウンロードをやり直してください。
 PlayGo,0,PlayGo_IS_ Notice_Message,エリアデータのインストール中に<br>エラーが発生しました。<br><br>追加データのダウンロードを<br>やり直してください。
 PlayGo,0,PlayGo_CharaSelect_Title,メッセージ
-PlayGo,0,PlayGo_CharaSelect_Message,エリアへの移動など<br>一部機能がご利用できません。<br><br>インストールが完了した後、<br>改めて選択してください。
+PlayGo,0,PlayGo_CharaSelect_Message,<yellow>現在データをインストール中です。<c><br><br>インストールが完了するまで<br>キャラクター選択や、特定エリアへの移動など<br>一部機能がご利用できません。<br><br>インストールが完了した後、<br>改めて選択してください。
 PlayGo,0,PlayGo_IS_Uncompleted_Message,移動先のエリアのインストールが完了していません。<br>インストールが完了してから、<br>アクセスし直してください。
-PlayGo,0,PlayGo_DLC_Confirm_Message,加データのストアページを開きます。<br><br><yellow>※空き容量が不足している場合はダウンロードできません。<br>　データのダウンロードには、時間がかかる場合があります。<c>
+PlayGo,0,PlayGo_DLC_Confirm_Message,移動先のエリアのデータがインストールされていないか、<br>ダウンロードが完了していないため移動できません。<br><br>追加データをダウンロードしますか？<br>“はい”を選択すると、追加データのストアページを開きます。<br><br><yellow>※空き容量が不足している場合はダウンロードできません。<br>　データのダウンロードには、時間がかかる場合があります。<c>
 PlayGo,0,PlayGo_DLC_Confirm_Message_Epic,移動先のエリアのデータがインストールされていないか、<br>ダウンロードが完了していないため移動できません。<br><br>追加データをダウンロードしますか？<br>“はい”を選択すると、追加データのストアページを開きます。<br><br><yellow>※空き容量が不足している場合はダウンロードできません。<br>　データのダウンロードには、時間がかかる場合があります。<br>※追加データをダウンロードする場合は、<br>　ゲームを一度終了する必要があります。<c>
 PlayGo,1,download_progress,Progreso de la instalación: $(0)%
 PlayGo,1,PlayGo_AreaMove_Message,"Por favor, espera a que finalice la instalación<br>antes de intentar acceder.<br><br>Progreso de la instalación: $(0)%"
 PlayGo,1,PlayGo_Confirm_Message,<br><yellow>Requiere suficiente espacio en disco. La descarga puede tardar un tiempo.<c>
 PlayGo,1,PlayGo_Confirm_Message_FirstTime,<yellow>Este proceso puede requerir una cantidad considerable de tiempo.<c><br><br>¿Descargar datos adicionales?
 PlayGo,1,PlayGo_Confirm_Message_FirstTime_Epic,<yellow>Debes salir del juego para poder descargar datos adicionales.<c><br><br>¿Descargar datos adicionales?
-PlayGo,1,PlayGo_DL_Notice_Message,Hubo un error al descargar los datos del área.<br><br>Intente descargar los datos nuevamente.
-PlayGo,1,PlayGo_IS_Notice_Message,Hubo un error al instalar los datos del área.<br><br>Intente descargar los datos nuevamente.
+PlayGo,1,PlayGo_DL_ Notice_Message,There was an error downloading the area data.<br><br>Please try downloading the data again.
+PlayGo,1,PlayGo_IS_ Notice_Message,There was an error installing the area data.<br><br>Please try downloading the data again.
 PlayGo,1,PlayGo_CharaSelect_Title,MENSAJE
 PlayGo,1,PlayGo_CharaSelect_Message,No puede acceder a este archivo hasta que se complete la instalación de datos.<br><br>Intente hacer su selección nuevamente después de que los datos hayan terminado de instalarse.
 PlayGo,1,PlayGo_IS_Uncompleted_Message,"Por favor, espera a que finalice la instalación<br>antes de intentar acceder.<br><br>"
@@ -4307,13 +4307,13 @@ QuickCharge,0,PayCharge_MenuQRButton,次へ
 QuickCharge,0,PayCharge_MenuReturnButton,戻る
 QuickCharge,0,PayCharge_MenuExplain,購入するACチャージ額を選択し<br>「次へ」を押してください。
 QuickCharge,0,PayCharge_MenuDetails,LINE PayでACをチャージします。<br><br>選択した価格分の金額がLINE Payの<br>残高から引かれます。<br><br>LINE Payを利用するには<br>スマートフォンやタブレットなどの端末上に<br>アプリケーション「LINE」が必要です。<br><br><yellow>【LINEのインストールはこちら】<c>
-QuickCharge,0,PayCharge_MenuDetails_Merpay,トフォンやタブレットなどの端末上に<br>アプリケーション「メルカリ」が必要です。<br><br><yellow>【メルカリのインストールはこちら】<c>
+QuickCharge,0,PayCharge_MenuDetails_Merpay,メルペイでACをチャージします。<br><br>選択した価格分の金額が<br>メルペイで支払われます。<br><br>メルペイを利用するには<br>スマートフォンやタブレットなどの端末上に<br>アプリケーション「メルカリ」が必要です。<br><br><yellow>【メルカリのインストールはこちら】<c>
 QuickCharge,0,PayCharge_QRTitle,LINE Payでチャージ
 QuickCharge,0,PayCharge_QRTitle_MerPay,メルペイでチャージ
 QuickCharge,0,PayCharge_QRExplainUp,購入するACチャージ額と価格を確認し<br>右記の手順で二次元コードを読み取ってください。
 QuickCharge,0,PayCharge_QRExplainDown,コード番号：$(0)
-QuickCharge,0,PayCharge_QRDetails,力してください。
-QuickCharge,0,PayCharge_QRDetails_MerPay,r>スマートフォンやタブレットの端末上で<br>メルカリを起動し、「メルペイ」タブ内の<br>「読み取り」を選択して二次元コードを<br>読み取ってください。
+QuickCharge,0,PayCharge_QRDetails,アプリケーション「LINE」を起動して<br>表示されている二次元コードを<br>読み取ってください。<br><br><yellow>【読み取り方】<c><br>スマートフォンやタブレットの端末上で<br>LINEを起動し、「ウォレット」タブ内の<br>「コードリーダー」を選択して二次元コードを<br>読み取ってください。<br><br><yellow>【二次元コードが読み取れない時は】<c><br>「コードリーダー」の画面下部にある<br>「コード番号を入力」をタップして<br>二次元コード下にあるコード番号を<br>入力してください。
+QuickCharge,0,PayCharge_QRDetails_MerPay,アプリケーション「メルカリ」を起動して<br>表示されている二次元コードを<br>読み取ってください。<br><br><yellow>【読み取り方】<c><br>スマートフォンやタブレットの端末上で<br>メルカリを起動し、「メルペイ」タブ内の<br>「読み取り」を選択して二次元コードを<br>読み取ってください。
 QuickCharge,0,PayCharge_RedrawTitle,二次元コード更新確認
 QuickCharge,0,PayCharge_RedrawMessage,二次元コードの表示期限が過ぎました。<br>「更新」を押して、再度表示してください。
 QuickCharge,0,PayCharge_RedrawYes,更新
@@ -4417,7 +4417,7 @@ Save,1,Type_4,Retrato
 Save,1,Initialize,Creando datos guardados...$(0)%
 Save,1,Type_5,Configuración de ventana
 SecondPassword,0,Notice_Title,アイテム取引パスワード未設定
-SecondPassword,0,Notice_Text,<br><br>パスワードは、他人から推測されづらくするため<br>生年月日・住所・電話番号などの個人情報、および<br>同じ数字や連番など<yellow>安易に推測される数字<c>を<br>設定しないよう、ご注意ください。
+SecondPassword,0,Notice_Text,「アイテム取引パスワード」とは、<br>不正なログインによりアイテムの取引が<br>行われることを防ぐためのものです。<br><br>アイテムトレード等の機能をご利用頂くには、<br>アイテム取引パスワードの設定が必要です。<br><br>パスワードは、他人から推測されづらくするため<br>生年月日・住所・電話番号などの個人情報、および<br>同じ数字や連番など<yellow>安易に推測される数字<c>を<br>設定しないよう、ご注意ください。
 SecondPassword,0,Notice_Button1,決定
 SecondPassword,0,Notice_Button2,キャンセル
 SecondPassword,0,Edit_Title,アイテム取引パスワード登録
@@ -4444,7 +4444,7 @@ SecondPassword,0,Edit_Error_Button1,OK
 SecondPassword,0,Entry_Title,アイテム取引パスワード入力
 SecondPassword,0,Entry_Text,パスワードを入力してください。(半角<yellow>数字<c>5文字)
 SecondPassword,0,Entry_Menu1,パスワード
-SecondPassword,0,Entry_Notice,<br>アイテム取引パスワードがロックされます。<br>パスワードの変更、リセットを行う場合は<br>「変更/リセット」を選択してください。
+SecondPassword,0,Entry_Notice,安全のため、右に表示されているボタンから<br>マウスでパスワードを入力してください。<br><br>正しくないパスワードが6回入力されると<br>アイテム取引パスワードがロックされます。<br>パスワードの変更、リセットを行う場合は<br>「変更/リセット」を選択してください。
 SecondPassword,0,Entry_NoticeV,正しくないパスワードが6回入力されると<br>アイテム取引パスワードがロックされます。<br><yellow>パスワードを忘れた場合は、オンラインマニュアルの<br>「アイテム取引パスワード」項目をご確認ください。<c>
 SecondPassword,0,Entry_Button1,決定
 SecondPassword,0,Entry_Button2,キャンセル
@@ -4483,7 +4483,7 @@ SecondPassword,0,Removed_Title,アイテム取引パスワード解除
 SecondPassword,0,Removed_Text,アイテム取引パスワードを解除しました。
 SecondPassword,0,Removed_Button1,OK
 SecondPassword,0,Edit_NoticePS4,登録したアイテム取引パスワードは<br>アイテムを取引する際に必要となります。<br><br>右に表示されているボタンから、マウスを使って<br>パスワードを入力することも可能です。
-SecondPassword,0,Entry_NoticePS4,パスワードがロックされます。<br><yellow>パスワードを忘れた場合は、オンラインマニュアルの<br>「アイテム取引パスワード」項目をご確認ください。<c>
+SecondPassword,0,Entry_NoticePS4,右に表示されているボタンから、マウスを使って<br>パスワードを入力することも可能です。<br><br>正しくないパスワードが6回入力されると<br>アイテム取引パスワードがロックされます。<br><yellow>パスワードを忘れた場合は、オンラインマニュアルの<br>「アイテム取引パスワード」項目をご確認ください。<c>
 SecondPassword,0,Entry_Button5,パスワードのリセット
 SecondPassword,0,Change_NoticePS4,右に表示されているボタンから、マウスを使って<br>パスワードを入力することも可能です。<br>パスワードをリセットする場合は<br>「パスワードのリセット」を選択してください。
 SecondPassword,0,Remove_NoticePS4,右に表示されているボタンから、マウスを使って<br>パスワードを入力することも可能です。<br><br>正しくないパスワードが6回入力されると<br>アイテム取引パスワードがロックされます。
@@ -4733,7 +4733,7 @@ Window,0,Less,<
 Window,0,WaveDash,～
 Window,0,Cross,×
 Window,0,MultiSelecting,複数選択中…
-Window,0,MultiDrop,- ($(0))
+Window,0,MultiDrop, - ($(0))
 Window,0,DropText,$(0)
 Window,0,MultiDropText,$(1) - ($(0))
 Window,0,SubmenuType_StyleChange,表示形式変更

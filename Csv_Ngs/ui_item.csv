@@ -79,7 +79,7 @@ RentalCommon,0,MenuTitle,レンタル有効期限
 RentalCommon,0,RentalExpiration_Supplemental,各利用権の有効期限が確認できます。<br>項目を選択すると利用権が購入できます。
 RentalCommon,0,MenuGuide,-
 RentalCommon,0,RestTitle,有効期限
-RentalCommon,0,RestTimeTitle,あと
+RentalCommon,0,RestTimeTitle,あと 
 RentalCommon,0,RestMonth,$(0)ヶ月
 RentalCommon,0,RestDay,$(0)日
 RentalCommon,0,RestTime,$(0)時間
@@ -420,7 +420,7 @@ RecycleMain,0,HandoverAddonMessage,<c f0df60>$(0)<c>×$(1)<br>と、選択した
 RecycleMain,0,MenuGuide_Limit,<c f0df60>交換するアイテムを選択してください(交換数には週制限があり、毎週<utcdow>水曜日8:00</utcdow>にリセットされます)。<c>
 RecycleMain,0,MenuGuideKey,<c f0df60>有効期限が$(4)年$(3)月$(0)日$(1)時$(2)分以降のアイテムのみ交換できます。<c>
 RecycleMain,0,NoPotentialErrorMessage,表示できる潜在能力がありません。
-RecycleMain,0,HandoverTactMessage,>「強化値｣ 「最大強化値」<br> 「フォトンカラー」 「オーナー登録」<br><br>よろしいですか？<br><yellow>※以下のアイテム以外は消費されません。<c>
+RecycleMain,0,HandoverTactMessage,<c f0df60>$(0)<c>×$(1)<br>と、選択したアイテムを交換します。<br><br><c fba646>ベースのアイテムから下記を引き継ぎます。<c><br>「強化値｣ 「最大強化値」<br> 「フォトンカラー」 「オーナー登録」<br><br>よろしいですか？<br><yellow>※以下のアイテム以外は消費されません。<c>
 RecycleMain,0,CategoryChangeTactMessage,<c f0df60>$(0)<c>×$(1)<br>と、選択したアイテムを交換します。<br><br><c fba646>ベースのアイテムから下記を引き継ぎます。<c><br>「強化値｣ 「最大強化値」<br> 「フォトンカラー」 「オーナー登録」<br><c ff4f3f>※「属性と属性値」「特殊能力」は消滅します。<c><br><br>よろしいですか？<br><yellow>※以下のアイテム以外は消費されません。<c>
 RecycleMain,0,MenuTitleLimit,期間限定交換ショップ
 RecycleMain,1,ShopTitle,TIENDA DE INTERCAMBIO
@@ -791,7 +791,7 @@ AcShopCommon,0,Date,日付
 AcShopCommon,0,NewHistory,新着履歴
 AcShopCommon,0,HistoryDBError,履歴の取得に失敗しました。時間をおいてリトライしてください。
 AcShopCommon,0,MultiCheckMessage,キャラクター単位の<yellow>使用回数上限<c>がある商品です。<br>　■「N-アイテムパック拡張＋10」<br>　このアイテムを1回使うと、10拡張されます。<br>　<yellow>最大10回使って、100拡張できます。<c><br><br>　■「キャラ倉庫拡張50」<br>　このアイテムを1回使うと、50拡張されます。<br>　<yellow>最大34回使って、1700拡張できます。<c><br><br>　■「サブパレット拡張チケット」<br>　<yellow>これ1つで、最大まで拡張できます。<c><br><br><c ff4f3f>※ご購入前に、現在のご利用状態をご確認ください。<c><br>購入確認画面に進みますか？
-AcShopCommon,0,MultiCheckMessage_v,用状態をご確認ください。<c><br>購入確認画面に進みますか？
+AcShopCommon,0,MultiCheckMessage_v,キャラクター単位の<yellow>使用回数上限<c>がある商品です。<br>　■「N-アイテムパック拡張＋10」<br>　このアイテムを1回使うと、10拡張されます。<br>　<yellow>最大10回使って、100拡張できます。<c><br><br>　■「キャラ倉庫拡張50」<br>　このアイテムを1回使うと、50拡張されます。<br>　<yellow>最大14回使って、700拡張できます。<c><br><br>　■「サブパレット拡張チケット」<br>　<yellow>これ1つで、最大まで拡張できます。<c><br><br><c ff4f3f>※ご購入前に、現在のご利用状態をご確認ください。<c><br>購入確認画面に進みますか？
 AcShopCommon,0,HistoryItem,アイテム名
 AcShopCommon,0,HistoryMoney,金額
 AcShopCommon,0,TimesaleTitle,タイムセール中！
@@ -799,7 +799,7 @@ AcShopCommon,0,TimesaleBuyCheck,以下のアイテムを<s>$(3)</s> <red>$(2)<c>
 AcShopCommon,0,TimesalePrice,<red>$(0)<c>
 AcShopCommon,0,TimesaleErrorTitle,ラインナップが変更されました
 AcShopCommon,0,TimesaleErrorMessage,<red>商品の価格が変更されました。<c><br><br>画面を更新します。
-AcShopCommon,0,TimesaleHaveTicket,、<br><s>$(3)</s> <red>$(2)<c>$(0)で追加購入します。<br>よろしいですか？<br><br>（所持AC：$(1)）
+AcShopCommon,0,TimesaleHaveTicket,<pict Arcscash><c ff4f3f>購入済アイテムの追加購入<c><br><c 5fdf00>すでに購入済み<c>の以下のアイテムを、<br><s>$(3)</s> <red>$(2)<c>$(0)で追加購入します。<br>よろしいですか？<br><br>（所持AC：$(1)）
 AcShopCommon,0,MessageLimitOver,限定数を超えました。<br><br>[No.2104]
 AcShopCommon,0,MessageSoldOut,販売期限を過ぎました。<br><br>[No.2105]
 AcShopCommon,0,MessageLimitOverError,限定数を超えたため、<br>購入できません。
@@ -816,10 +816,10 @@ AcShopCommon,0,LimitedItemTitle1_VITA,<yellow>期間限定<c>
 AcShopCommon,0,LimitedItemTitle2_VITA,<yellow>個数限定<c>
 AcShopCommon,0,LimitedItemTitle1a_VITA,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2a_VITA,<yellow>交換可能数<c>
-AcShopCommon,0,LimitedItemText1,$(0)個まで購入可能
+AcShopCommon,0,LimitedItemText1,$(0)個まで購入可能 
 AcShopCommon,0,LimitedItemText2,あと$(0)個
-AcShopCommon,0,LimitedItemText1Reset,毎日$(0)個まで購入可能
-AcShopCommon,0,LimitedItemText1a,$(0)個まで交換可能
+AcShopCommon,0,LimitedItemText1Reset,毎日$(0)個まで購入可能 
+AcShopCommon,0,LimitedItemText1a,$(0)個まで交換可能 
 AcShopCommon,0,LimitedItemTitle3,商品情報
 AcShopCommon,0,PrizeExchangeNoInfo,<utcdow>水曜日8:00</utcdow>にリセット
 AcShopCommon,0,PrizeExchangeNoInfoVITA,交換回数(水曜13時にリセット)
@@ -831,8 +831,8 @@ AcShopCommon,0,LimitedItemTitle1b,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2b,<yellow>交換可能数<c>
 AcShopCommon,0,LimitedItemTitle1b_VITA,<yellow>交換期限<c>
 AcShopCommon,0,LimitedItemTitle2b_VITA,<yellow>交換可能数<c>
-AcShopCommon,0,LimitedItemText1b,$(0)個まで購入可能
-AcShopCommon,0,LimitedItemText1bReset,毎日$(0)個まで購入可能
+AcShopCommon,0,LimitedItemText1b,$(0)個まで購入可能 
+AcShopCommon,0,LimitedItemText1bReset,毎日$(0)個まで購入可能 
 AcShopCommon,0,Limited_BasnetReset,(<utcdow>水曜日8:00</utcdow>にリセット)
 AcShopCommon,0,LimitedItemText1b_LimitNone,購入制限はありません
 AcShopCommon,0,ItemStockResetError,アイテムの交換個数がリセットされたため<br>画面を更新します。
@@ -1139,7 +1139,7 @@ ItemCommon,0,SendWarehouseErrorMessage0,アイテムを倉庫に預けること�
 ItemCommon,0,SendWarehouseErrorMessage1,このアイテムは倉庫に預けることができません。
 ItemCommon,0,SendWarehouseErrorMessage2,倉庫の空き容量不足のため、<br>預けることができませんでした。
 ItemCommon,0,SendWarehouseErrorMessage3,倉庫の空き容量不足のため、<br>預けることができませんでした。
-ItemCommon,0,SendWarehouseErrorMessage4,素材倉庫利用チケット」<c>が必要です。<br>拡張倉庫のご利用には<br><yellow>「拡張倉庫利用チケット」<c>が必要です。
+ItemCommon,0,SendWarehouseErrorMessage4,プレミアム倉庫のご利用には<br><yellow>「プレミアムセット」<c>が、<br>素材倉庫のご利用には<br><yellow>「素材倉庫利用チケット」<c>が必要です。<br>拡張倉庫のご利用には<br><yellow>「拡張倉庫利用チケット」<c>が必要です。
 ItemCommon,0,SendWarehouseErrorMessage5,この倉庫は、ご利用期限が過ぎています。<br>預けることができませんでした。
 ItemCommon,0,SendWarehouseErrorMessage6,一時倉庫は、「取り出す」専用の倉庫です。<br>アイテムを預けることはできません。
 ItemCommon,0,SendWarehouseErrorMessage7,このアイテムは装備中のため、<br>預けることができません。
@@ -1155,7 +1155,7 @@ ItemCommon,0,TakeWarehouseNoticeMessage1,一部、取り出せないアイテム
 ItemCommon,0,MoveWarehouseErrorTitle,アイテムを移動
 ItemCommon,0,MoveWarehouseErrorMessage0,アイテムを移動することができません。
 ItemCommon,0,MoveWarehouseErrorMessage1,倉庫の空き容量不足のため、<br>移動することができませんでした。
-ItemCommon,0,MoveWarehouseErrorMessage2,素材倉庫利用チケット」<c>が必要です。<br>拡張倉庫のご利用には<br><yellow>「拡張倉庫利用チケット」<c>が必要です。
+ItemCommon,0,MoveWarehouseErrorMessage2,プレミアム倉庫のご利用には<br><yellow>「プレミアムセット」<c>が、<br>素材倉庫のご利用には<br><yellow>「素材倉庫利用チケット」<c>が必要です。<br>拡張倉庫のご利用には<br><yellow>「拡張倉庫利用チケット」<c>が必要です。
 ItemCommon,0,MoveWarehouseErrorMessage3,この倉庫は、利用期限が切れています。<br>移動することができませんでした。
 ItemCommon,0,MoveWarehouseErrorMessage4,一時倉庫は、「取り出す」専用の倉庫です。<br>アイテムを移動することはできません。
 ItemCommon,0,MoveWarehouseErrorMessage5,運営倉庫は、「取り出す」専用の倉庫です。<br>アイテムを移動することはできません。
@@ -1307,7 +1307,7 @@ ItemCommon,0,GrindNumAwardPostMessage,＋$(0)強化報酬「$(1)」を一時倉�
 ItemCommon,0,UseCraftEnchantTimeExtensionItemMessage,$(0)の効果を以下のユニットに付与します。<br><br><yellow>$(1)<c><br><br>※効果時間は使用後に消費を開始します。
 ItemCommon,0,CraftEnchantItemUseErrorTimeMax,効果時間が90日以上になるため使用できません。
 ItemCommon,0,LockMultiErrorMessage,一部ロックできないアイテムがありました。一度の最大数は$(0)個までです。
-ItemCommon,0,UnlockMultiErrorMessage,一部ロック解除できないアイテムがありました。一度の最大数は$(0)個までです。
+ItemCommon,0,UnlockMultiErrorMessage, 一部ロック解除できないアイテムがありました。一度の最大数は$(0)個までです。
 ItemCommon,0,UnlockDialogMessage,選択したアイテムのロックを解除します。<br>よろしいですか？
 ItemCommon,0,PetAbility,$(0)<br>【効果】<br>$(1)
 ItemCommon,0,RingSkill,$(1) Lv.$(0)<br>【効果】<br>$(2)
@@ -1320,21 +1320,21 @@ ItemCommon,0,TicketItemUseErrorServerBug_2,アイテムを使用することが�
 ItemCommon,0,UseTicketMessage1,『$(0)』を使用します。<br>よろしいですか？<br><br><yellow>※このアイテムの使用後に、同じキャラクター<br>　または別のキャラクターで<br>　同じアイテムを、もう1つ使用すると<br>　すべてのキャラクターで選択可能になります。<c>
 ItemCommon,0,UseTicketMessage2,『$(0)』を使用します。<br>よろしいですか？<br><br><yellow>※このアイテムを使用すると<br>　すべてのキャラクターで選択可能になります。<c>
 ItemCommon,0,UseTicketMessage3,『$(0)』を使用します。<br>よろしいですか？<br><br><yellow>※このアイテムを使用すると現在のシップの<br>　すべてのキャラクターで使用可能になります。<c>
-ItemCommon,0,UseTicketForSPMessage2,(0)』を登録します。<br>よろしいですか？<br><br><yellow>※このチケットを使用すると<br>　すべてのキャラクターで選択可能になります。<c>
+ItemCommon,0,UseTicketForSPMessage2,種族制限、または性別制限のため、<br>このアイテムはプレイヤーキャラクターに<br>適用することはできません。<br><br>サポートパートナー用に<br>『$(0)』を登録します。<br>よろしいですか？<br><br><yellow>※このチケットを使用すると<br>　すべてのキャラクターで選択可能になります。<c>
 ItemCommon,0,FlagTicketAllRegistedTitle,登録済みチケットの入手確認
 ItemCommon,0,FlagTicketAllRegisted,以下のアイテムは、現在のキャラクターで、<br><red>すでに使用済み<c>のチケットです。<br><yellow>2枚目を使用するとすべてのキャラクターで<br>選択可能<c>になります。<br><br>よろしいですか？
 ItemCommon,0,UseTraceItemTitle,アイテム確認
 ItemCommon,0,UseTraceItemMessage,武器フォーム変更済みのアイテムが選択されています。<br>本当によろしいですか？
 ItemCommon,0,FloatTextItem_1,$(2)$(0)$(1)
 ItemCommon,0,FloatTextItem_2,$(3)$(0)$(1)×$(2)
-ItemCommon,0,FloatTextItem_3,$(0)$(1)
-ItemCommon,0,FloatTextItem_4,$(0)$(1)×$(2)
+ItemCommon,0,FloatTextItem_3,　　$(0)$(1)
+ItemCommon,0,FloatTextItem_4,　　$(0)$(1)×$(2)
 ItemCommon,0,FloatTextItemUnidentified_1,<pict rarity_unk>$(0)<c 00ffff>$(1)<c>
 ItemCommon,0,FloatTextItemUnidentified_2,<pict rarity_unk>$(0)<c 00ffff>$(1)<c>×$(2)
 ItemCommon,0,FloatTextMeseta,<pict reb_meseta>$(0)
 ItemCommon,0,FloatTextSeasonPoint,<pict event_point>$(0)
 ItemCommon,0,UseDiskError_ForChallenge,このクエストでは後継クラスで使用することはできません
-ItemCommon,0,UseTicketUpgrade_UsedNormal_UsePlus,で引き続き実行できます。<c><br>・チャットコマンド<br>・キーボードショートカット<br><br>使用してもよろしいですか？
+ItemCommon,0,UseTicketUpgrade_UsedNormal_UsePlus,通常版『$(0)』を<br>プラス版『$(1)』に<br>アップグレードします。<br><br><yellow>※通常版は以下の方法で引き続き実行できます。<c><br>・チャットコマンド<br>・キーボードショートカット<br><br>使用してもよろしいですか？
 ItemCommon,0,UseTicketUpgrade_UsedPlus_UseNormal,プラス版『$(1)』を<br>既に登録済みのため<br>通常版『$(0)』は<br><yellow>以下の方法でのみ実行できます。<c><br><br>・チャットコマンド<br>・キーボードショートカット<br><br>使用してもよろしいですか？
 ItemCommon,0,CostumeRemoveError,アイテムパックの空き容量不足のため、<br>ファッションアイテムを取り外せません。
 ItemCommon,0,MoveWarehouseErrorMessage10,『PSO2』アイテムパックの空き容量不足、<br>または個々のアイテムの最大所持数を<br>超えるため、移動できません。
@@ -3647,7 +3647,7 @@ LaboGrind,0,GrindMessage_Gamma_v_owner,強化を開始します。よろしい�
 LaboGrind,0,GammaGrindSupport1,強化値補助系
 LaboGrind,0,GammaGrindSupport2,属性変化系
 LaboGrind,0,CompareItemMessage,<yellow>必要アイテム：<br>$(0)<br>必要メセタ：$(2) （現在：$(1)）<c>
-LaboGrind,0,GrindItemText,$(0)×$(2) （現在：$(1)）
+LaboGrind,0,GrindItemText,　$(0)×$(2) （現在：$(1)）
 LaboGrind,0,GrindGreatSuccessRate,大成功確率
 LaboGrind,0,GrindParamName,$(0)の強化値
 LaboGrind,0,GrindErrorMessage_SelectParam,上昇させるパラメータを選択してください。
@@ -3688,7 +3688,7 @@ LaboGrind,0,ConfirmMessage_Gamma1,下記のいずれかに該当するアイテ�
 LaboGrind,0,ConfirmMessage_Gamma2,下記のいずれかに該当するアイテムです。<br>本当によろしいですか？<br><br>・レアリティが★7以上<br>・強化値が+1以上<br>・強化上限値が+31以上
 LaboGrind,0,ConfirmMessage_Gamma3,下記のいずれかに該当するアイテムです。<br>本当によろしいですか？<br><br>・レアリティが★7以上<br>・強化値が+1以上<br>・強化上限値が+31以上
 LaboGrind,0,Gamma_Potential_SequenceMessage,<yellow>潜在能力解放<c>をすると、<br>この新世武器をさらに強化できます。<br><br>解放したい潜在能力を選択してください。
-LaboGrind,0,GammaGrindResultMessage_Potential,<yellow>自動的に「潜在能力解放」に進みます。<c><br><br>※潜在能力解放には、フォトンドロップや<br>　フォトンスフィアなどのアイテムが必要です。
+LaboGrind,0,GammaGrindResultMessage_Potential,アイテム強化によって、<br>強化値が＋１０、＋２０、＋３０の<br>いずれかの上限に達しました。<br><br>さらに強化するために、次回アイテム強化時は<br><yellow>自動的に「潜在能力解放」に進みます。<c><br><br>※潜在能力解放には、フォトンドロップや<br>　フォトンスフィアなどのアイテムが必要です。
 LaboGrind,0,GammaGrindResultMessage_GrindNumLimitUp,同じ武器を合成、または補助アイテムの効果で<br>最大<yellow>$(0)<c>まで強化可能になりました。
 LaboGrind,0,GammaGrindResultMessage_GrindNumLimitUp_v,同じ武器を合成、または補助アイテムの効果で<br>最大<yellow>$(0)<c>まで強化可能になりました。
 LaboGrind,0,GammaGrindResultMessage1,$(0)
@@ -4135,7 +4135,7 @@ LaboChangePotential,0,ConfirmTitle,アイテム潜在能力切り替え
 LaboChangePotential,0,CompareTitle,アイテム潜在能力切り替え内容
 LaboChangePotential,0,CompareNeedItemTitle,必要アイテム
 LaboChangePotential,0,CompareChangePotentialTitle,切り替え後の潜在能力
-LaboChangePotential,0,ConfirmMessage,f3f>潜在能力のレベルはリセットされません<c><br>※レアリティ13以上は<yellow>オーナー登録<c>が行われ、<br>　他のプレイヤーと取り引き不可になります。
+LaboChangePotential,0,ConfirmMessage,潜在能力切り替えを開始します。<br>よろしいですか？<br><br>※潜在能力を切り替えても<br>　<c ff4f3f>強化値は0に戻りません<c><br>　<c ff4f3f>潜在能力のレベルはリセットされません<c><br>※レアリティ13以上は<yellow>オーナー登録<c>が行われ、<br>　他のプレイヤーと取り引き不可になります。
 LaboChangePotential,0,CompareNeedItem_OK,$(0)×$(2) （現在：$(1)）
 LaboChangePotential,0,CompareNeedItem_NG,<red>$(0)×$(2) （現在：$(1)）<c>
 LaboChangePotential,0,CompareNeedItem_Unnecessary,必要アイテムは不要
@@ -4190,7 +4190,7 @@ LaboReleasePotential,0,CompareNum1,潜在能力名
 LaboReleasePotential,0,CompareNum2,新しい潜在能力の詳細
 LaboReleasePotential,0,CompareNum3,Lv.$(0)
 LaboReleasePotential,0,ConfirmationMessage,潜在能力解放を開始します。<br>よろしいですか？<br><br>※補助アイテムを使用することで、<br>　<yellow>必要素材を消費せずに実行<c>できます。<br>　ただし、<pict reb_meseta>メセタは必ず必要になります。
-LaboReleasePotential,0,ConfirmationMessage_Select,low>必要素材を消費せずに実行<c>できます。<br>　ただし、<pict reb_meseta>メセタは必ず必要になります。
+LaboReleasePotential,0,ConfirmationMessage_Select,潜在能力の解放・切り替えを開始します。<br>よろしいですか？<br><br>※補助アイテムを使用することで、<br>　<yellow>必要素材を消費せずに実行<c>できます。<br>　ただし、<pict reb_meseta>メセタは必ず必要になります。
 LaboReleasePotential,0,CompareMessage,<yellow>必要メセタ：$(1) （現在：$(0)）<c>
 LaboReleasePotential,0,CompareNeedItemHead,必要アイテム
 LaboReleasePotential,0,CompareNeedItemOK,$(0)×$(2) （現在：$(1)）
@@ -4277,7 +4277,7 @@ LaboUnregister,0,UnregisterErrorMessage1,オーナー登録されているアイ
 LaboUnregister,0,UnregisterTitle2,オーナー登録解除
 LaboUnregister,0,UnregisterMessage1,ロック状態のアイテムが選択されています。<br>よろしいですか？
 LaboUnregister,0,UnregisterMessage2,オーナー登録を解除するとクラフトによる<br>エクステンドレベルや時限能力インストールが<br>リセットされます。<br><red>※装備条件も初期化されるため、<br>装備ができなくなる場合があります。<c><br>よろしいですか？
-LaboUnregister,0,UnregisterMessage3,low><br>クラフト効果：エクステンドレベル<br>クラフト効果：装備条件緩和・クラスの追加<br>クラフト効果：時限能力インストールの効果<c>
+LaboUnregister,0,UnregisterMessage3,オーナー登録解除を開始します。<br>よろしいですか？<br><br>※オーナー登録の解除により<br>以下の効果はリセットされます。<br><yellow><br>クラフト効果：エクステンドレベル<br>クラフト効果：装備条件緩和・クラスの追加<br>クラフト効果：時限能力インストールの効果<c>
 LaboUnregister,0,UnregisterTitle3,必要なアイテム
 LaboUnregister,0,UnregisterTitle4,オーナー登録解除結果
 LaboUnregister,0,UnregisterSuccessMessage,オーナー登録を解除しました。
@@ -5474,9 +5474,9 @@ UserShopIntendExhibit,0,StackExhibitInputNumberTitle,アイテムを出品する
 UserShopIntendExhibit,0,StackExhibitInputNumberMessage,出品する個数を入力してください
 UserShopIntendExhibit,0,SetValueInputNumberTitle,価格設定
 UserShopIntendExhibit,0,SetValueInputNumberMessage,設定する価格を入力してください。<br>※最低出品価格未満には変更できません。<br>※出品手数料として一定額が差引かれます。
-UserShopIntendExhibit,0,SetValueInputNumberMessage_2,（出品手数料差引き額：
+UserShopIntendExhibit,0,SetValueInputNumberMessage_2,（出品手数料差引き額： 
 UserShopIntendExhibit,0,SetValueInputNumberMessage_3,$(1)<pict 4space>$(0)）
-UserShopIntendExhibit,0,SetValueInputNumberMessage_4,（税込価格：
+UserShopIntendExhibit,0,SetValueInputNumberMessage_4,（税込価格： 
 UserShopIntendExhibit,0,SetValueInputNumberMessage_5,設定する価格を入力してください。<br>※“イチオシ！”アイテムは最低出品価格未満には変更できません。
 UserShopIntendExhibit,0,SetValueInputNumberMessage_6,（最低出品価格：
 UserShopIntendExhibit,0,SetValueInputNumberMessage_7,※出品手数料として一定額が差引かれます。
@@ -5694,7 +5694,7 @@ IdentifyIdentify,0,IdentifySelectMenu01,アイテムを鑑定する
 IdentifyIdentify,0,IdentifySelectMenu02,アイテムを上級鑑定する
 IdentifyIdentify,0,IdentifySelectMenu03,ショップを出る
 IdentifyIdentify,0,IdentifySelectItemTitle,未鑑定対象アイテム選択
-IdentifyIdentify,0,identifyConfrimMessage,。<br>※すべての対象アイテムに選択した属性が<br>付与されますのでご注意ください。<br>※対象アイテム10個ずつ鑑定されます。
+IdentifyIdentify,0,identifyConfrimMessage,サービスで、選択した1個のアイテムに<br>好きな属性を付与できます。<br>属性を１つ選択後、<br>「鑑定ボタン」を押してください。<br>※すべての対象アイテムに選択した属性が<br>付与されますのでご注意ください。<br>※対象アイテム10個ずつ鑑定されます。
 IdentifyIdentify,0,identifyConfrimSelectAttribute,付与したい属性
 IdentifyIdentify,0,identifyConfrimSelectResultTtile,鑑定結果
 IdentifyIdentify,0,identifyConfrimSelectResultMessage,以下のアイテム$(1)個の鑑定が終了しました。<br>（$(1)個/$(0)個）<br>「鑑定終了」ボタンを押してください。
@@ -7567,11 +7567,11 @@ ItemSkillName,0,item_ElementalStanceUp2_2,鋭気賢闘の型 Lv.2
 ItemSkillName,0,item_ElementalStanceUp2_3,鋭気賢闘の型 Lv.3
 ItemSkillName,0,item_ElementalStanceUp2_4,鋭気賢闘の型 Lv.4
 ItemSkillName,0,item_ElementalStanceUp2_5,鋭気賢闘の型 Lv.5
-ItemSkillName,0,item_ElementalStanceUp3_1,Lv.1
-ItemSkillName,0,item_ElementalStanceUp3_2,Lv.2
-ItemSkillName,0,item_ElementalStanceUp3_3,Lv.3
-ItemSkillName,0,item_ElementalStanceUp3_4,Lv.4
-ItemSkillName,0,item_ElementalStanceUp3_5,Lv.5
+ItemSkillName,0,item_ElementalStanceUp3_1, Lv.1
+ItemSkillName,0,item_ElementalStanceUp3_2, Lv.2
+ItemSkillName,0,item_ElementalStanceUp3_3, Lv.3
+ItemSkillName,0,item_ElementalStanceUp3_4, Lv.4
+ItemSkillName,0,item_ElementalStanceUp3_5, Lv.5
 ItemSkillName,0,item_PhotonblastEnhancement_1,幻精共鳴 Lv.1
 ItemSkillName,0,item_PhotonblastEnhancement_2,幻精共鳴 Lv.2
 ItemSkillName,0,item_PhotonblastEnhancement_3,幻精共鳴 Lv.3
@@ -14514,12 +14514,12 @@ ItemSkillHelp,0,item_MultiBonus4_3,威力＋29%／<br>攻撃時PP回復量＋15%
 ItemSkillHelp,0,item_MultiBonus4_4,威力＋32%／<br>攻撃時PP回復量＋15%<br>PP自然回復速度＋15%<br>ダメージ耐性＋10%
 ItemSkillHelp,0,item_MultiBonus4_5,威力＋33%／<br>攻撃時PP回復量＋15%<br>PP自然回復速度＋15%<br>ダメージ耐性＋10%
 ItemSkillHelp,0,item_MultiBonus4_6,威力＋39%／<br>攻撃時PP回復量＋15%<br>PP自然回復速度＋15%<br>ダメージ耐性＋10%
-ItemSkillHelp,0,item_ChargePbAttack3_1,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
-ItemSkillHelp,0,item_ChargePbAttack3_2,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
-ItemSkillHelp,0,item_ChargePbAttack3_3,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
-ItemSkillHelp,0,item_ChargePbAttack3_4,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
-ItemSkillHelp,0,item_ChargePbAttack3_5,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
-ItemSkillHelp,0,item_ChargePbAttack3_6,トンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_1,威力＋30%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_2,威力＋33%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_3,威力＋36%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_4,威力＋39%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_5,威力＋40%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
+ItemSkillHelp,0,item_ChargePbAttack3_6,威力＋46%／攻撃時に<br>PBゲージ増加＋20%／<br>ステップや<br>武器アクションなどによる<br>攻撃の無効化に<br>一定回数成功すると<br>ストックを3個まで獲得／<br>フォトンブラスト発動時<br>ストックを全て消費して<br>以下の追加効果が発生<br>90秒間PP消費量軽減<br>HP回復<br>PB再使用時間短縮<br>追加攻撃／<br>ストック数で性能が強化
 ItemSkillHelp,0,item_DrawAreaBuff_1,威力＋31%／<br>納刀状態の時間経過で<br>ストックを2個まで獲得<br>攻撃時にストックを<br>全て消費して追加攻撃と<br>30秒間支援エリアを生成<br>ストック数で追加攻撃威力と<br>支援エリアの範囲が変化<br>自分と支援エリアに入った<br>パーティーメンバーに30秒間<br>ダメージ耐性＋20%<br>フォトンブラストゲージの<br>攻撃時増加＋20%<br>自動蓄積量増加＋50%<br>装備から10秒後に効果発動
 ItemSkillHelp,0,item_DrawAreaBuff_2,威力＋34%／<br>納刀状態の時間経過で<br>ストックを2個まで獲得<br>攻撃時にストックを<br>全て消費して追加攻撃と<br>30秒間支援エリアを生成<br>ストック数で追加攻撃威力と<br>支援エリアの範囲が変化<br>自分と支援エリアに入った<br>パーティーメンバーに30秒間<br>ダメージ耐性＋20%<br>フォトンブラストゲージの<br>攻撃時増加＋20%<br>自動蓄積量増加＋50%<br>装備から10秒後に効果発動
 ItemSkillHelp,0,item_DrawAreaBuff_3,威力＋37%／<br>納刀状態の時間経過で<br>ストックを2個まで獲得<br>攻撃時にストックを<br>全て消費して追加攻撃と<br>30秒間支援エリアを生成<br>ストック数で追加攻撃威力と<br>支援エリアの範囲が変化<br>自分と支援エリアに入った<br>パーティーメンバーに30秒間<br>ダメージ耐性＋20%<br>フォトンブラストゲージの<br>攻撃時増加＋20%<br>自動蓄積量増加＋50%<br>装備から10秒後に効果発動
@@ -14532,12 +14532,12 @@ ItemSkillHelp,0,item_AllBonus7_3,威力＋31%／<br>クリティカル発生率�
 ItemSkillHelp,0,item_AllBonus7_4,威力＋34%／<br>クリティカル発生率＋5%／<br>ダメージ耐性＋10%／<br>PP消費量軽減＋10%／<br>エネミーに与える<br>ダウン値＋10%
 ItemSkillHelp,0,item_AllBonus7_5,威力＋35%／<br>クリティカル発生率＋5%／<br>ダメージ耐性＋10%／<br>PP消費量軽減＋10%／<br>エネミーに与える<br>ダウン値＋10%
 ItemSkillHelp,0,item_AllBonus7_6,威力＋41%／<br>クリティカル発生率＋5%／<br>ダメージ耐性＋10%／<br>PP消費量軽減＋10%／<br>エネミーに与える<br>ダウン値＋10%
-ItemSkillHelp,0,item_HrBoostRe_1,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
-ItemSkillHelp,0,item_HrBoostRe_2,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
-ItemSkillHelp,0,item_HrBoostRe_3,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
-ItemSkillHelp,0,item_HrBoostRe_4,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
-ItemSkillHelp,0,item_HrBoostRe_5,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
-ItemSkillHelp,0,item_HrBoostRe_6,被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_1,威力＋35%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_2,威力＋38%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_3,威力＋41%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_4,威力＋44%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_5,威力＋45%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
+ItemSkillHelp,0,item_HrBoostRe_6,威力＋52%／<br>エネミーに攻撃命中時<br>威力＋3%<br>PP消費量軽減＋15%<br>の効果が発生<br>最大HPの20%以上の<br>被ダメージで効果消失<br>リキャスト60秒<br>効果がリキャスト中に<br>500000ダメージを<br>与えたとき<br>リキャストをリセット
 ItemSkillHelp,0,item_HighMultiBuff_1,威力＋30%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>攻撃時にフォトンブラスト<br>ゲージ増加＋10%
 ItemSkillHelp,0,item_HighMultiBuff_2,威力＋33%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>攻撃時にフォトンブラスト<br>ゲージ増加＋10%
 ItemSkillHelp,0,item_HighMultiBuff_3,威力＋36%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>攻撃時にフォトンブラスト<br>ゲージ増加＋10%
@@ -14622,18 +14622,18 @@ ItemSkillHelp,0,item_GenericBuff3_3,威力＋50%／<br>クリティカル発生�
 ItemSkillHelp,0,item_GenericBuff3_4,威力＋53%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>10秒ごとにHPを4%回復<br>装備から10秒後に効果発動
 ItemSkillHelp,0,item_GenericBuff3_5,威力＋54%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>10秒ごとにHPを4%回復<br>装備から10秒後に効果発動
 ItemSkillHelp,0,item_GenericBuff3_6,威力＋60%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%／<br>10秒ごとにHPを4%回復<br>装備から10秒後に効果発動
-ItemSkillHelp,0,item_PursuitBuff_1,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_PursuitBuff_2,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_PursuitBuff_3,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_PursuitBuff_4,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_PursuitBuff_5,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_PursuitBuff_6,ャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
-ItemSkillHelp,0,item_AchieveBuff_1,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
-ItemSkillHelp,0,item_AchieveBuff_2,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
-ItemSkillHelp,0,item_AchieveBuff_3,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
-ItemSkillHelp,0,item_AchieveBuff_4,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
-ItemSkillHelp,0,item_AchieveBuff_5,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
-ItemSkillHelp,0,item_AchieveBuff_6,全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_PursuitBuff_1,威力＋46%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_PursuitBuff_2,威力＋49%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_PursuitBuff_3,威力＋52%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_PursuitBuff_4,威力＋55%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_PursuitBuff_5,威力＋56%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_PursuitBuff_6,威力＋62%／<br>エネミーに<br>250000ダメージを<br>与えたとき<br>自分とパーティメンバーに<br>追加攻撃を1つストック<br>ストックは最大4つまで獲得<br>リキャスト5秒／<br>エネミーに攻撃命中時<br>ストックを1つ消費して<br>追加攻撃を行い<br>HPを2%回復<br>追加攻撃が4回発生時<br>15秒間<br>クリティカル威力＋5%
+ItemSkillHelp,0,item_AchieveBuff_1,威力＋49%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_AchieveBuff_2,威力＋52%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_AchieveBuff_3,威力＋55%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_AchieveBuff_4,威力＋58%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_AchieveBuff_5,威力＋59%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
+ItemSkillHelp,0,item_AchieveBuff_6,威力＋65%／<br>1. クリティカル発生時<br>2. レスタサイン使用時<br>3. 100秒間経過後<br>上記の条件を満たすたびに<br>ダメージ耐性＋5%<br>最大で15%まで上昇／<br>全ての条件を満たした時<br>20秒間、エネミーによる<br>打ち上げや吹き飛ばしを防ぎ<br>クリティカル発生率＋20%<br>クリティカル威力＋5%<br>効果時間終了後<br>レスタサインを1つ補充
 ItemSkillHelp,0,item_GenericBuff4_1,威力＋42%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%
 ItemSkillHelp,0,item_GenericBuff4_2,威力＋45%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%
 ItemSkillHelp,0,item_GenericBuff4_3,威力＋48%／<br>クリティカル発生率＋5%／<br>PP消費量軽減＋10%／<br>ダメージ耐性＋10%
@@ -15966,11 +15966,11 @@ ItemSkillHelp,0,item_AutoRegenerateKatori_2,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_3,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_4,自動でHPが回復する。
 ItemSkillHelp,0,item_AutoRegenerateKatori_5,自動でHPが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_1,5秒毎に<br>最大ＨＰの5%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_2,5秒毎に<br>最大ＨＰの7%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_3,5秒毎に<br>最大ＨＰの10%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_4,5秒毎に<br>最大ＨＰの12%分<br>自動でＨＰが回復する。
-ItemSkillHelp,0,item_AutoRegenerateMoa_5,5秒毎に<br>最大ＨＰの15%分<br>自動でＨＰが回復する。
+ItemSkillHelp,0,item_AutoRegenerateMoa_1,5秒毎に<br>最大ＨＰの5%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_2,5秒毎に<br>最大ＨＰの7%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_3,5秒毎に<br>最大ＨＰの10%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_4,5秒毎に<br>最大ＨＰの12%分<br>自動でＨＰが回復する。 
+ItemSkillHelp,0,item_AutoRegenerateMoa_5,5秒毎に<br>最大ＨＰの15%分<br>自動でＨＰが回復する。 
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_1,攻撃時のPP回復量が<br>40%上昇する。
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_2,攻撃時のPP回復量が<br>60%上昇する。
 ItemSkillHelp,0,item_GunnerAttackPPRestraint2_3,攻撃時のPP回復量が<br>80%上昇する。
@@ -25109,7 +25109,7 @@ LaboElementCompose,1,ConfirmationAbilityDisappearMessage,>
 LaboElementSupplement,0,Explanation1,特殊能力を付与したい武器、または防具を選んでください。
 LaboElementSupplement,0,Explanation2,特殊能力カプセルを選んでください。選んだ特殊能力カプセルは、<scarlet>付与後に消滅<c>します。
 LaboElementSupplement,0,Explanation3,付与したい特殊能力を選んでください。選ばれなかったカプセルの効果は、カプセルが消費することはありません。
-LaboElementSupplement,0,Explanation4,特殊能力カプセルの付与の最終確認です。内容をよく確認して、問題なければ「はい」を選んでください。
+LaboElementSupplement,0,Explanation4,特殊能力カプセルの付与の最終確認です。内容をよく確認して、問題なければ「はい」を選んでください。 
 LaboElementSupplement,1,Explanation1,Selecciona el arma o armadura a la que te gustaría agregar un aumento.
 LaboElementSupplement,1,Explanation2,Seleccione una cápsula Augment. Se consumirá la cápsula seleccionada <scarlet>. <c>
 LaboElementSupplement,1,Explanation3,Seleccione un aumento para agregar. Los efectos de la cápsula no seleccionados no harán que se consuma la cápsula.
@@ -25947,7 +25947,7 @@ LaboPorting,0,Medium_Title3,素材に選択したアイテム
 LaboPorting,0,Medium_Title4,付与予定のプリセット能力
 LaboPorting,0,Small_Title1,カテゴリー$(0)
 LaboPorting,0,Small_Title2,プリセット能力移植補助アイテム
-LaboPorting,0,Message_Confirm1,プリセット能力が“ベースアイテム”に引き継がれます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　必要素材を消費せずに実行できます。
+LaboPorting,0,Message_Confirm1,プリセット能力の移植を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムは<yellow>消滅<c>し、<br>　プリセット能力が“ベースアイテム”に引き継がれます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　必要素材を消費せずに実行できます。
 LaboPorting,0,Message_Attention1,選択したプリセット能力は、<br>元のプリセット能力より<scarlet>レベルが低く<c>なります。<br><br>このまま実行してもよろしいですか？
 LaboPorting,0,Message_Finish,$(0)の移植が完了しました。
 LaboPorting,0,ComposeStart_Button,能力移植開始
@@ -26055,13 +26055,13 @@ LaboPresetUpgrade,0,Medium_Preset_SkillLv,$(0)
 LaboPresetUpgrade,0,Medium_Preset_Value,$(0)
 LaboPresetUpgrade,0,Small_Title1,成功率アップ系
 LaboPresetUpgrade,0,Small_Title2,アイテム保護系
-LaboPresetUpgrade,0,Message_Confirm1,ースアイテム”のプリセット能力が強化されます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　素材アイテムの保護や、強化成功率を上げることができます。
+LaboPresetUpgrade,0,Message_Confirm1,プリセット能力の強化を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムは<scarlet>消滅<c>し、<br>　成功すると“ベースアイテム”のプリセット能力が強化されます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　素材アイテムの保護や、強化成功率を上げることができます。
 LaboPresetUpgrade,0,Message_Attention1,プリセット能力のレベルが、<br><yellow>“ベースアイテム”より高い<c>アイテムを選択しています。<br><br>このまま実行してもよろしいですか？<br><yellow>※同じレベルのアイテムの使用が推奨されます。<c>
 LaboPresetUpgrade,0,Message_Finish,プリセット能力の強化が完了しました。
 LaboPresetUpgrade,0,Message_Finish_Success,プリセット能力の強化が<green>成功<c>しました。
 LaboPresetUpgrade,0,Message_Finish_Failure,プリセット能力の強化が<scarlet>失敗<c>しました。
 LaboPresetUpgrade,0,ComposeStart_Button,能力強化開始
-LaboPresetUpgrade,0,ProtectedMessage,r><yellow>※補助アイテムと<pict 4space><pict reb_meseta><pict 4space>メセタは消費されます。<c>
+LaboPresetUpgrade,0,ProtectedMessage,<scarlet>強化失敗<c>が発生したため、補助アイテムの機能により、<br><yellow>プリセット能力の強化<c>をキャンセルしました。<br><yellow>※補助アイテムと<pict 4space><pict reb_meseta><pict 4space>メセタは消費されます。<c>
 LaboPresetUpgrade,0,ComposeResultSucceeded,<green>強化成功<c>
 LaboPresetUpgrade,0,ComposeResultFailed,<scarlet>強化失敗<c>
 LaboPresetUpgrade,0,AuxiliaryItem_SequenceTitle,補助アイテム使用の確認
@@ -26123,15 +26123,15 @@ LaboPresetGrant,0,Medium_Preset_SkillLv,$(0)
 LaboPresetGrant,0,Medium_Preset_Value,$(0)
 LaboPresetGrant,0,Small_Title1,成功率アップ系
 LaboPresetGrant,0,Small_Title2,アイテム保護系
-LaboPresetGrant,0,Message_Confirm1,ム”にいずれかのLv.1のプリセット能力が追加されます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　素材アイテムの保護や、強化成功率を上げることができます。
-LaboPresetGrant,0,Message_Attention1,r>このまま実行してもよろしいですか？<br><yellow>※プリセット能力の付いていないアイテムの<br>　使用が推奨されます。<c>
-LaboPresetGrant,0,Message_Attention2,r>このまま実行してもよろしいですか？<br><yellow>※プリセット能力の付いていないアイテムの<br>　使用が推奨されます。<c>
+LaboPresetGrant,0,Message_Confirm1,プリセット能力の追加を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムは<scarlet>消滅<c>し、成功すると<br>　“ベースアイテム”にいずれかのLv.1のプリセット能力が追加されます。<br><br>※<yellow>“補助アイテム”<c>を使用することで、<br>　素材アイテムの保護や、強化成功率を上げることができます。
+LaboPresetGrant,0,Message_Attention1,<yellow>プリセット能力レベルの高い<c>アイテムを選択していますが<br>追加されるのは、いずれかのLv.1の能力となります。<br>このまま実行してもよろしいですか？<br><yellow>※プリセット能力の付いていないアイテムの<br>　使用が推奨されます。<c>
+LaboPresetGrant,0,Message_Attention2,<yellow>プリセット能力レベルの高い<c>アイテムを選択していますが<br>追加されるのは、いずれかのLv.1の能力となります。<br>このまま実行してもよろしいですか？<br><yellow>※プリセット能力の付いていないアイテムの<br>　使用が推奨されます。<c>
 LaboPresetGrant,0,Message_Finish,プリセット能力の追加が完了しました。
 LaboPresetGrant,0,Result_Title,プリセット能力の追加結果
 LaboPresetGrant,0,Message_Finish_Success,プリセット能力の追加が<green>成功<c>しました。
 LaboPresetGrant,0,Message_Finish_Failure,プリセット能力の追加が<scarlet>失敗<c>しました。
 LaboPresetGrant,0,ComposeStart_Button,能力付与開始
-LaboPresetGrant,0,ProtectedMessage,r><yellow>※補助アイテムと<pict 4space><pict reb_meseta><pict 4space>メセタは消費されます。<c>
+LaboPresetGrant,0,ProtectedMessage,<scarlet>追加失敗<c>が発生したため、補助アイテムの機能により、<br><yellow>プリセット能力の追加<c>をキャンセルしました。<br><yellow>※補助アイテムと<pict 4space><pict reb_meseta><pict 4space>メセタは消費されます。<c>
 LaboPresetGrant,0,ComposeResultSucceeded,<green>付与成功<c>
 LaboPresetGrant,0,ComposeResultFailed,<scarlet>付与失敗<c>
 LaboPresetGrant,0,AuxiliaryItem_SequenceTitle,補助アイテム使用の確認
@@ -26189,12 +26189,12 @@ LaboElementPorting,0,Small_Title1,$(0)
 LaboElementPorting,0,Small_Title2,<yellow>$(0)<c>
 LaboElementPorting,0,Small_Title3,<yellow>－<c>
 LaboElementPorting,0,Message_Confirm1,特殊能力の移植を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムの<yellow>特殊能力はすべて消滅し、<c><br>　“ベースアイテム”に引き継がれます。
-LaboElementPorting,0,Message_Confirm2,>“素材アイテム”<c>として使用したアイテムの<yellow>特殊能力はすべて消滅し、<c><br>　“ベースアイテム”に引き継がれます。
+LaboElementPorting,0,Message_Confirm2,特殊能力の移植を開始します。よろしいですか？<br><br>※<red>「N-特殊能力移植パス」を消費します。<c><br>※<yellow>“素材アイテム”<c>として使用したアイテムの<yellow>特殊能力はすべて消滅し、<c><br>　“ベースアイテム”に引き継がれます。
 LaboElementPorting,0,Message_Attention1,ベースアイテムよりも、<br>特殊能力の<scarlet>総数が少ない<c>アイテムを選択しています。<br><br>このまま実行してもよろしいですか？
 LaboElementPorting,0,Message_Attention2,ベースアイテムよりも、<br><scarlet>EX特殊能力の総数が少ない<c>アイテムを選択しています。<br><br>このまま実行してもよろしいですか？<br><br><yellow>※EX特殊能力は、<br>　消滅すると後から追加できません。<c>
 LaboElementPorting,0,Message_PassConsumption,<red>「N-特殊能力移植パス」が必要<c>なアイテムです。<br><br>このまま実行してもよろしいですか？
 LaboElementPorting,0,Message_Finish,特殊能力の移植が完了しました。
-LaboElementPorting,1,Explanation1,Selecciona el arma o armadura a la que te gustaría transferir aumentos.
+LaboElementPorting,1,Explanation1,Seleccione el arma o unidad base (la que recibirá el nivel de mejora).
 LaboElementPorting,1,Explanation2,Todos los Aumentos<c>colocados en el elemento que seleccione serán<scarlet>destruidos <c>.
 LaboElementPorting,1,Explanation3,Confirme cuidadosamente sus selecciones de Transferencia de aumento y presione [Sí] cuando esté listo.
 LaboElementPorting,1,Large_Title1,Selección de artículos básicos
@@ -26209,11 +26209,12 @@ LaboElementPorting,1,Small_Title1,$(0)
 LaboElementPorting,1,Small_Title2,<yellow> $(0) <c>
 LaboElementPorting,1,Small_Title3,<yellow> - <c>
 LaboElementPorting,1,Message_Confirm1,Los aumentos del artículo inicial<c>se consumirán <yellow><c>y el artículo base<br>adquirirá los aumentos.
+LaboElementPorting,1,Message_Confirm2,Transferring Augments. Are you sure you wish to proceed?<br><br><red>An N-Augment Transfer Pass will be consumed.<c><br><yellow>All<c> of the <yellow>Material Item's Augments<c> will<br>be <yellow>consumed<c> and the Base Item will<br>acquire the Augments.
 LaboElementPorting,1,Message_Attention1,inferior a<c>que el artículo base.<br>¿Está seguro de que desea continuar?
 LaboElementPorting,1,Message_Attention2,The total Augment number of the item you've selected is <scarlet>lower<c> than the Base Item.<br>Are you sure you wish to proceed?
 LaboElementPorting,1,Message_PassConsumption,Este artículo requiere un<red>Pase de transferencia N-Augment <c>.<br><br> ¿Está seguro de que desea continuar?
 LaboElementPorting,1,Message_Finish,Los aumentos han sido transferidos.
-LaboElementPorting,1,Explanation1,Seleccione el arma o unidad base (la que recibirá el nivel de mejora).
+LaboElementEXPorting,0,Explanation1,移植したい（EX特殊能力を受け取る）武器、または防具を選んでください。
 LaboElementEXPorting,0,Explanation2,移植する（EX特殊能力を渡す）武器、または防具を選んでください。選んだアイテムは、<scarlet>実行後にEX特殊能力が消滅<c>します。
 LaboElementEXPorting,0,Explanation3,EX特殊能力の移植の最終確認です。内容をよく確認して、問題なければ“はい”を選んでください。
 LaboElementEXPorting,0,Large_Title1,ベースアイテム選択
@@ -26230,10 +26231,10 @@ LaboElementEXPorting,0,Small_Title3,<yellow>－<c>
 LaboElementEXPorting,0,Message_DisableItem1,移植する特殊能力が同一のため、選択できません。
 LaboElementEXPorting,0,Message_PassConsumption,<red>「N-特殊能力移植パス」が必要<c>なアイテムです。<br><br>このまま実行してもよろしいですか？
 LaboElementEXPorting,0,Message_Confirm1,EX特殊能力の移植を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムの<yellow>EX特殊能力は消滅し、<c><br>　“ベースアイテム”に引き継がれます。
-LaboElementEXPorting,0,Message_Confirm2,EX特殊能力の移植を開始します。よろしいですか？<br><br>※<yellow>“素材アイテム”<c>として使用したアイテムの<yellow>EX特殊能力は消滅し、<c><br>　“ベースアイテム”に引き継がれます。
+LaboElementEXPorting,0,Message_Confirm2,EX特殊能力の移植を開始します。よろしいですか？<br><br>※<red>「N-特殊能力移植パス」を消費します。<c><br>※<yellow>“素材アイテム”<c>として使用したアイテムの<yellow>EX特殊能力は消滅し、<c><br>　“ベースアイテム”に引き継がれます。
 LaboElementEXPorting,0,Message_Finish,EX特殊能力の移植が完了しました。
 LaboElementEXPorting,0,Message_Error_Unsupported,EX特殊能力の移植に対応していないアイテムです。
-LaboElementEXPorting,0,Explanation1,Selecciona el arma o armadura a la que te gustaría transferir los aumentos EX.
+LaboElementEXPorting,1,Explanation1,Select the weapon or armor to which you would like to transfer EX Augments.
 LaboElementEXPorting,1,Explanation2,Select the weapon or armor to which you would like to transfer EX Augments.
 LaboElementEXPorting,1,Explanation3,Confirme cuidadosamente sus selecciones de Transferencia de Aumento EX y presione [Sí] cuando esté listo.
 LaboElementEXPorting,1,Large_Title1,Selección de artículos básicos
@@ -26253,7 +26254,7 @@ LaboElementEXPorting,1,Message_Confirm1,Este objeto requiere un <red>N-Augment T
 LaboElementEXPorting,1,Message_Confirm2,ts.
 LaboElementEXPorting,1,Message_Finish,Los aumentos EX han sido transferidos.
 LaboElementEXPorting,1,Message_Error_Unsupported,Este artículo no es compatible con la transferencia de aumento EX.
-LaboElementEXPorting,1,ring_AvoidBuff,ボスエネミーへの威力$(0)／<br>ステップや武器アクションなどによる攻撃の無効化時<br>$(2)間、威力$(1)
+RebootSkillRingSkillHelp,0,ring_AvoidBuff,ボスエネミーへの威力$(0)／<br>ステップや武器アクションなどによる攻撃の無効化時<br>$(2)間、威力$(1)
 RebootSkillRingSkillHelp,0,ring_AvoidBuffFollow,ステップや武器アクションなどによる攻撃の無効化時<br>HPを$(2)回復、PPを$(3)回復、リキャスト$(4)<br>$(1)間、PP自然回復速度$(0)
 RebootSkillRingSkillHelp,0,ring_HpKeepBuff,HP残量が多いほど威力が上昇、最大$(2)／<br>$(1)ごとにHPを$(0)回復
 RebootSkillRingSkillHelp,0,ring_HpKeepFollow,HPが$(0)以上時に被ダメージ$(1)／<br>HPが$(2)以上時にエネミーの攻撃による<br>打ち上げや吹き飛ばしを防ぐ
@@ -26269,7 +26270,7 @@ RebootSkillRingSkillHelp,0,ring_HitcountBuff,威力$(0)／<br>エネミーに攻
 RebootSkillRingSkillHelp,0,ring_HitcountFollow,エネミーに攻撃が$(0)命中した時<br>HPを$(1)回復、PPを$(2)回復、リキャスト$(3)
 RebootSkillRingSkillHelp,0,ring_DownBuff,威力$(0)／<br>エネミーに与えるダウン値$(1)／<br>自身の周囲でエネミーがダウンした時<br>$(3)間、威力$(2)
 RebootSkillRingSkillHelp,0,ring_GiftAtk,威力$(0)
-RebootSkillRingSkillHelp,0,ring_AvoidBuff,Potencia contra enemigos jefes $(0)/<br>Potencia $(1) por $(2) cuando niegas<br>un ataque con Paso lateral o una acción de arma
+RebootSkillRingSkillHelp,1,ring_AvoidBuff,Ajuste de evasión
 RebootSkillRingSkillHelp,1,ring_AvoidBuffFollow,"2) HP y $(3) PP, $(4) enfriamiento<br>$(0) Velocidad de recuperación natural de PP por $(1)"
 RebootSkillRingSkillHelp,1,ring_HpKeepBuff,"Cuanto mayor sea tu HP restante,<br>mayor será tu potencia hasta un máximo de $(2)/<br>Recupera $(0) de HP cada $(1)"
 RebootSkillRingSkillHelp,1,ring_HpKeepFollow,Herido o derribado por ataques enemigos<br>cuando HP es $(2) o más
@@ -26285,7 +26286,7 @@ RebootSkillRingSkillHelp,1,ring_HitcountBuff,Potencia $(0)/<br>Potencia $(2) por
 RebootSkillRingSkillHelp,1,ring_HitcountFollow,"Cuando tus ataques golpean a los enemigos $(0),<br>recuperan $(1) HP y $(2) PP<br>$(3) de enfriamiento"
 RebootSkillRingSkillHelp,1,ring_DownBuff,Potencia $(0)/<br>Factor de reducción de enemigos $(1)/<br>Potencia $(2) por $(3) cuando<br>derribas a los enemigos cercanos
 RebootSkillRingSkillHelp,1,ring_GiftAtk,Potencia $(0)
-RebootSkillRingSkillHelp,1,ring_AvoidBuff,Ajuste de evasión
+RebootSkillRingSkillName,0,ring_AvoidBuff,スウィッシュライズ
 RebootSkillRingSkillName,0,ring_AvoidBuffFollow,スウィッシュフォロー
 RebootSkillRingSkillName,0,ring_HpKeepBuff,HPキープライズ
 RebootSkillRingSkillName,0,ring_HpKeepFollow,オーバーHPフォロー
@@ -26301,7 +26302,7 @@ RebootSkillRingSkillName,0,ring_HitcountBuff,カウントライズ
 RebootSkillRingSkillName,0,ring_HitcountFollow,カウントフォロー
 RebootSkillRingSkillName,0,ring_DownBuff,ディフィートライズ
 RebootSkillRingSkillName,0,ring_GiftAtk,シンプルアタック
-RebootSkillRingSkillName,0,ring_AvoidBuff,Amplificador Swish
+RebootSkillRingSkillName,1,ring_AvoidBuff,Swish Amp
 RebootSkillRingSkillName,1,ring_AvoidBuffFollow,Seguir
 RebootSkillRingSkillName,1,ring_HpKeepBuff,HP mantener amplificador
 RebootSkillRingSkillName,1,ring_HpKeepFollow,Más de HP Seguir
@@ -26317,13 +26318,13 @@ RebootSkillRingSkillName,1,ring_HitcountBuff,Contar amplificador
 RebootSkillRingSkillName,1,ring_HitcountFollow,Contar Seguir
 RebootSkillRingSkillName,1,ring_DownBuff,Derrota al amplificador
 RebootSkillRingSkillName,1,ring_GiftAtk,Ataque sencillo
-LaboRingGrind,1,RingGrindBase_Title,Selección de anillos de habilidad de mejora
+LaboRingGrind,0,RingGrindBase_Title,強化スキルリング選択
 LaboRingGrind,0,RingGrindEffectDetails_Title,スキルリング強化詳細
 LaboRingGrind,0,RingGrindEffectDetails_Explanation,強化後のスキルリング効果
 LaboRingGrind,0,RingGrindMaterial_Title,素材スキルリング選択
 LaboRingGrind,0,RingGrindMaterialsList_Title,素材スキルリング
 LaboRingGrind,0,RingGrindMaterialsList_Explanation,強化に必要な同名スキルリング：$(0)<br>選択同名スキルリング数：$(1)／$(2)
-LaboRingGrind,0,RingGrindConfirm_Explanation,"""ベースのスキルリング""の強化値が上昇します。<br><br><yellow>""補助アイテム""<c>を使用することで<br>素材スキルリングを消費せずに強化することができます。"
+LaboRingGrind,0,RingGrindConfirm_Explanation,"スキルリングの強化を開始します。よろしいですか？<br><br><yellow>""素材スキルリング""<c>として使用したスキルリングは<red>消滅<c>し、<br>成功すると""ベースのスキルリング""の強化値が上昇します。<br><br><yellow>""補助アイテム""<c>を使用することで<br>素材スキルリングを消費せずに強化することができます。"
 LaboRingGrind,0,RingGrindConfirm_MarkdownTitle,アイテム保護系
 LaboRingGrind,0,RingGrindConfirm_Details_TitleBase,ベースに選択したスキルリング
 LaboRingGrind,0,RingGrindConfirm_Details_TitleMaterial,素材に選択したスキルリング
@@ -26338,7 +26339,7 @@ LaboRingGrind,0,RingGrindFullSizeGuide_SelectBase,強化したいスキルリン
 LaboRingGrind,0,RingGrindFullSizeGuide_SelectMaterial,素材にするスキルリングを選んでください。選んだスキルリングは、<scarlet>実行後に消滅<c>します。
 LaboRingGrind,0,RingGrindFullSizeGuide_Confirm,スキルリング強化の最終確認です。内容をよく確認して、問題なければ“はい”を選んでください。
 LaboRingGrind,0,RingGrindBase_NoRing_Message,スキルリングがありません
-LaboRingGrind,0,RingGrindBase_Title,Selección de anillo de habilidad de mejora
+LaboRingGrind,1,RingGrindBase_Title,Selección de anillos de habilidad de mejora
 LaboRingGrind,1,RingGrindEffectDetails_Title,Detalles de mejora del anillo de habilidades
 LaboRingGrind,1,RingGrindEffectDetails_Explanation,Habilidad del anillo de habilidad después de la mejora
 LaboRingGrind,1,RingGrindMaterial_Title,Selección de anillo de habilidad de material
@@ -26359,7 +26360,7 @@ LaboRingGrind,1,RingGrindFullSizeGuide_SelectBase,Selecciona el anillo de habili
 LaboRingGrind,1,RingGrindFullSizeGuide_SelectMaterial,Selecciona los anillos de habilidad para usarlos como materiales. Estos anillos de habilidad se consumirán<scarlet><c> después de la mejora.
 LaboRingGrind,1,RingGrindFullSizeGuide_Confirm,Confirme su mejora de Skill Ring con cuidado y seleccione [Sí] cuando esté listo.
 LaboRingGrind,1,RingGrindBase_NoRing_Message,Sin anillos de habilidad
-LaboRingGrind,1,Title_Need_MesetaAndItem,Meseta y objetos necesarios
+LaboCustomDetail,0,Title_Need_MesetaAndItem,必要アイテム ／メセタ
 LaboCustomDetail,0,Title_Need_Item,必要アイテム
 LaboCustomDetail,0,Title_Need_Meseta,必要メセタ
 LaboCustomDetail,0,Title_SelectiveItem,所持中の素材アイテム
@@ -26379,7 +26380,7 @@ LaboCustomDetail,0,ItemName_NoItem,対象アイテムを所持していません
 LaboCustomDetail,0,Explanation_Server_Failure,情報の取得に失敗しました。
 LaboCustomDetail,0,Title__MultiWeapon_Alternative,所持中の代用材アイテム
 LaboCustomDetail,0,Explanation_Grind_Meseta,素材を１つ選択したときの必要メセタ
-LaboCustomDetail,0,Title_Need_MesetaAndItem,Artículos requeridos/Meseta
+LaboCustomDetail,1,Title_Need_MesetaAndItem,Required Items/Meseta
 LaboCustomDetail,1,Title_Need_Item,Artículos requeridos
 LaboCustomDetail,1,Title_Need_Meseta,Mesa requerida
 LaboCustomDetail,1,Title_SelectiveItem,Artículos materiales retenidos

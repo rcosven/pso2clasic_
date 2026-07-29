@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 SelectWindow,0,choice01,『ラスター』について
 SelectWindow,0,choice02,『ラスターガンスラッシュ』について
 SelectWindow,0,choice03,『スタイル』について
@@ -21,9 +21,9 @@ TutorialText01,1,text0001,"El Lustre es una clase Scion que acelera en combates 
 TutorialText01,1,text0002,"El brillo es diferente al anterior.<br>clases de determinadas maneras.<br><br>- No se admite la configuración de una subclase.<br>(Para pedidos que requieren un cierto nivel de subclase,<br>En su lugar se utilizará el nivel de clase principal del jugador.)<br><br>- Ciertos potenciales y efectos del anillo de habilidades<br>no funciona<br>(Ejemplo: Espíritu de guerrero, R/Avance de ataque, etc.)<br><br>- Un Auxiliar no puede cambiar su clase a Lustre"
 TutorialText02,0,Title,『ラスターガンスラッシュ』について
 TutorialText02,0,text0001,ラスターが装備したガンスラッシュ<br>「ラスターガンスラッシュ」<br>について説明します。<br><br>ラスターガンスラッシュは<br>銃と剣を自在に使い分けることで<br>距離を問わず高速な戦闘を可能にします。<br><br>アクションを変化させるスキルが多く存在し<br>自身の戦闘スタイルに適したスキルを<br>習得することで戦闘の幅を<br>広げることができます。
-TutorialText02,0,text0002,に無敵時間が存在します。<br><br>使用するＰＡは剣を使用した近距離ＰＡと<br>銃を使用した中遠距離ＰＡに分かれます。<br>エネミーとの距離や戦況に応じて<br>自在に使い分けることで真価を発揮します。
-TutorialText02,0,text0003,減少します。<c>
-TutorialText02,0,text0004,発動しません。<c><br><br>③「エンハンスアーツ」<br><yellow>・ＰＡボタンを長押し<c><br>ギアを１つ消費してＰＡ毎に異なる追加攻撃を発動します。<br><c ff4f3f>※ギアを消費せず発動した場合、威力が減少します。<c>
+TutorialText02,0,text0002,ラスターのガンスラッシュは<br>通常攻撃で剣による素早い攻撃を行います。<br><br><yellow>武器アクション「イベイドシュート」<c>は<br>入力方向に移動しながら射撃を行います。<br>発動直後に無敵時間が存在します。<br><br>使用するＰＡは剣を使用した近距離ＰＡと<br>銃を使用した中遠距離ＰＡに分かれます。<br>エネミーとの距離や戦況に応じて<br>自在に使い分けることで真価を発揮します。
+TutorialText02,0,text0003,ラスターはクラススキル<br>「ラスターガンスラッシュギア」を<br>初期状態で習得しています。<br><br><yellow>いずれかの攻撃ボタンを長押しすると<br>ギアゲージを消費し、攻撃アクションが強化<c>されます。<br><br>ギアゲージは時間経過もしくは<br>エネミーを攻撃することで増加します。<br><br>①「エンハンスアタック」<br><yellow>・通常攻撃ボタンを長押し<c><br>スタイルに応じて異なる効果を持つ攻撃を発動します。<br><c ff4f3f>※ギアを消費せず発動した場合、威力が減少します。<c>
+TutorialText02,0,text0004,②「エンハンスシュート」<br><yellow>・武器アクションボタンを長押し<c><br>長押しの時間に応じてギアを消費し<br>スタイルに応じた強力な攻撃を発動します。<br><c ff4f3f>※ギアが１つ以上たまっていない<br>   状態では発動しません。<c><br><br>③「エンハンスアーツ」<br><yellow>・ＰＡボタンを長押し<c><br>ギアを１つ消費してＰＡ毎に異なる追加攻撃を発動します。<br><c ff4f3f>※ギアを消費せず発動した場合、威力が減少します。<c>
 TutorialText02,0,text0005,ラスターガンスラッシュのＰＡは移動入力の<br>有無で性能の異なるアクションが発動します。<br><br>「ムーブアーツ」<br><yellow>・移動入力を行いながらＰＡを使用<c><br>移動性能を持つアクションが発動します。<br><br>「ステイアーツ」<br><yellow>・移動入力を行わずＰＡを使用<c><br>移動せずその場に留まるアクションが発動します。<br><c ff4f3f>※クラススキル「ステイアーツ」未習得の場合<br>   入力を問わずムーブアーツが発動します。<c>
 TutorialText02,1,Title,Hojas de armas brillantes
 TutorialText02,1,text0001,"Un Gunblade equipado con un Lustre se conoce como ""Luster Gunblade"".<br><br>Los Lustre Gunblades son capaces de atacar tanto a corta como a larga distancia cambiando libremente entre las piezas del arma y la espada.<br><br>Muchas habilidades modifican los ataques del arma, así que intenta aprender habilidades que se adapten a tu estilo de combate para ampliar las estrategias disponibles para ti."
@@ -35,11 +35,11 @@ TutorialText03,0,Title,『スタイル』について
 TutorialText03,0,text0001,ラスターは装備したガンスラッシュの<br>武器属性によってスタイルが変化します。<br><br><yellow>「ザンディスタイル」<c><br>雷・風属性のガンスラッシュを装備<br><br><yellow>「フォメルスタイル」<c><br>炎・闇属性のガンスラッシュを装備<br><br><yellow>「バーランスタイル」<c><br>氷・光属性のガンスラッシュを装備
 TutorialText03,0,text0002,ザンディスタイルは<br>速度重視のスタイルで<br><c 00ffff>ムーブアーツの攻撃速度が上昇<c>します。<br>クラススキルを習得することで<br>ムーブアーツや回避成功に<br>ボーナスを得られるようになります。<br><br>「ザンディアタックエンハンス」<br><yellow>・通常攻撃ボタンを長押し<c><br>スタン効果、吸い寄せ効果を持つ領域を発生させます。<br><br><c ff4f3f>※ギアがたまっていない状態で<br>   発動した場合、領域は発生しません。<c>
 TutorialText03,0,text0003,「ザンディシュートエンハンス」<br><yellow>・武器アクションボタンを長押し<c><br>長押しの時間に応じてギアを消費し<br>展開した領域内のエネミーすべてに<br>雷を落とします。<br><br><c ff4f3f>※ギアが１つ以上たまっていない<br>   状態では発動しません。<c>
-TutorialText03,0,text0004,れません。<c>
+TutorialText03,0,text0004,フォメルスタイルは<br>攻撃重視のスタイルで<br>頑強を備えた近接戦闘を得意とします。<br>クラススキルを習得することで<br>エンハンスアーツや最適タイミングでの<br>ＪＡにボーナスを得られるようになります。<br><br>「フォメルアタックエンハンス」<br><yellow>・通常攻撃ボタンを長押し<c><br>ジェルン効果とＰＰ回復に優れた槍を３つストックします。<br>槍はPA使用時、自動的に発射されます。<br><br><c ff4f3f>※ギアがたまっていない状態で<br>   発動した場合、槍は生成されません。<c>
 TutorialText03,0,text0005,「フォメルシュートエンハンス」<br><yellow>・武器アクションボタンを長押し<c><br>ギアを消費して連続突きを発動し<br>長押しで消費したギアに応じて<br>強力なフィニッシュ攻撃を行います。<br><br><c ff4f3f>※ギアが１つ以上たまっていない<br>   状態では発動しません。<c>
 TutorialText03,0,text0006,バーランスタイルは防御重視のスタイルで<br><c 00ffff>ステイアーツの攻撃範囲と<br>ガードポイントが強化<c>されます。<br>クラススキルを習得することで<br>ステイアーツやガード成功に<br>ボーナスを得られるようになります。<br><br>「バーランアタックエンハンス」<br><yellow>・通常攻撃ボタンを長押し<c><br>バインド効果を持ち、広範囲に継続して<br>攻撃を行うビットを展開します。<br><br><c ff4f3f>※ギアがたまっていない状態で<br>   発動した場合、ビットは展開されません。<c>
 TutorialText03,0,text0007,「バーランシュートエンハンス」<br><yellow>・武器アクションボタンを長押し<c><br>ギアを消費してチャージを行い<br>消費したギアに応じた<br>強力な遠距離狙撃を行います。<br><br><c ff4f3f>※ギアが１つ以上たまっていない<br>   状態では発動しません。<c>
-TutorialText03,0,text0008,シュートエンハンス」<br><yellow>・スタイルパージ効果中もしくは<br> 無属性のガンスラッシュ装備時<br> 武器アクションボタンを長押し<c><br>ギア、ＰＰの順に高速で消費し<br>銃による連射攻撃を行います。
+TutorialText03,0,text0008,「スタイルパージ」<br><yellow>・武器アクションボタンを素早く２回押し<c><br>PP回復とギア増加に優れる<br>属性爆発攻撃を行います。<br>使用後、一定時間スタイル効果が消失します。<br><br>「ノーマルシュートエンハンス」<br><yellow>・スタイルパージ効果中もしくは<br> 無属性のガンスラッシュ装備時<br> 武器アクションボタンを長押し<c><br>ギア、ＰＰの順に高速で消費し<br>銃による連射攻撃を行います。
 TutorialText03,1,Title,Estilos
 TutorialText03,1,text0001,Los lustres pueden cambiar de estilo según el elemento del Gunblade que tengan equipado actualmente.<br><br><yellow>Estilo Zandi<c><br>-Equipa un elemento de rayo o viento Gunblade<br><br><yellow>Fomel Style<c><br>-Equipa un Gunblade de elemento fuego u oscuro.<br><br><yellow>Estilo Baran<c><br>-Equipa un Gunblade de elemento ligero o de hielo.
 TutorialText03,1,text0002,"Zandi Style se centra en la velocidad y <c 00ffff>acelera los ataques de Mobile Arts<c>.<br>Al aprender ciertas habilidades de clase, puedes obtener bonificaciones por Mobile Arts o esquivar con éxito.<br><br>Ataque Zandi mejorado<br>-<yellow>Presiona y mantén presionado el botón de ataque normal<c> para crear un área que tiene un efecto gravitacional y sorprendente.<br><br><c ff4f3f>Nota: El área no se creará si el indicador de enfoque no se ha creado lo suficiente.<c>"
@@ -51,14 +51,14 @@ TutorialText03,1,text0007,"Disparo de Baran mejorado<br>-<yellow>Mantén presion
 TutorialText03,1,text0008,"Purga de estilo<br>-<yellow>Presiona rápidamente el botón de acción del arma dos veces<c> para desatar un ataque elemental explosivo que sobresale en la recuperación de PP y en llenar el indicador de enfoque. Después del uso, todos los efectos de estilo desaparecerán temporalmente.<br><br>Disparo normal mejorado<br>-<yellow>Mantén presionado el botón de acción del arma durante los efectos de Style Purge o mientras un Gunblade no elemental está equipado<c> para desatar un ataque de fuego rápido con el arma que rápidamente agota tu indicador de enfoque y PP a su vez."
 TutorialText04,0,Title,『ラスターのスキル』について
 TutorialText04,0,text0001,「ラスターボルテージ」<br>スキルを習得するとサブパレットに<br>ボルテージ表示が追加されます。<br><br>攻撃をヒットさせた回数に応じて<br>ボルテージが上昇し、威力と<br>被ダメージの軽減にボーナスが得られます。<br><br>クラススキルを習得していくことで<br>ボルテージを上昇させやすくなったり<br>自己支援の効果を得られるようになります。
-TutorialText04,0,text0002,3f>※ボルテージには残り時間を示すゲージが<br>   表示されますが、通信環境により<br>   誤差が発生する場合があります。<c>
-TutorialText04,0,text0003,「ザンバース」<br>   ＨP７５％未満の場合「メギバース」が自動的に発動します。<c>
+TutorialText04,0,text0002,「ラスターボルテージ」<br>ボルテージは攻撃をヒットさせずに<br>一定時間が経過するとリセットされます。<br><br><c ff4f3f>※ボルテージには残り時間を示すゲージが<br>   表示されますが、通信環境により<br>   誤差が発生する場合があります。<c>
+TutorialText04,0,text0003,「スラッシュライズ」<br><yellow>・攻撃の後に、移動入力を行いながらジャンプを使用<c><br>上昇を伴う攻撃が発動。長押しすると<br>ギアを消費して、残りＨＰに応じた支援テクニックが発動します。<br><br>「スラッシュフォール」<br><yellow>・攻撃の後に、移動入力を行わずジャンプを使用<c><br>急降下を伴う攻撃が発動。長押しすると<br>ギアを消費して、残りＨＰに応じた支援テクニックが発動します。<br><br><c ff4f3f>※クラススキル「スラッシュフォール」未習得の場合<br>   入力を問わずスラッシュライズが発動します。<br>※ＨP７５％以上の場合「ザンバース」<br>   ＨP７５％未満の場合「メギバース」が自動的に発動します。<c>
 TutorialText04,0,text0004,「ラスターステップスライド」<br><yellow>・ステップ中に再度ステップを使用<c><br>ＰＰを消費して一定距離を移動します。<br>エネミーがいる場合は同時に射撃を行います。<br><br>「ステップスライドアドバンス」<br><yellow>・ロックオン中、前もしくは後ろに<br> 方向入力しながら<br> ステップ中に再度ステップを使用<c><br>ＰＰを消費して入力方向に応じた移動攻撃を<br>行います。発動時に無敵時間が存在します。
-TutorialText04,0,text0005,テップガード」<br><yellow>・ロックオン中、エネミーの攻撃に合わせて<br> タイミングよく前もしくは後ろにステップ<c><br>エネミーの攻撃をジャストガードして<br>入力方向に応じたカウンター攻撃を行います。
+TutorialText04,0,text0005,「ラスターカウンター」<br><yellow>・ステップもしくは武器アクションで<br> 回避成功後にステップアタック<c><br>回避に成功した直後は強力な<br>ステップアタックが発動します。<br><br>「ラスターステップガード」<br><yellow>・ロックオン中、エネミーの攻撃に合わせて<br> タイミングよく前もしくは後ろにステップ<c><br>エネミーの攻撃をジャストガードして<br>入力方向に応じたカウンター攻撃を行います。
 TutorialText04,0,text0006,「エクストラアタック」<br><yellow>・ステップアタックを除く通常攻撃を<br> ４回連続で使用<c><br>ＰＰやギアの増加量が強力な攻撃が発動します。
 TutorialText04,0,text0007,「エンハンスコンボ」<br><yellow>・ギアが１つ以上ある状態で<br> エンハンスアーツ中に<br> 任意のＰＡボタンを押す<c><br>ギアを１つ消費して<br>エンハンスアーツを続けて発動します。
-TutorialText04,0,text0008,プガード発動後
-TutorialText04,0,text0009,し<br>被ダメージが減少するなどの効果を得ます。<br><br>ラスタータイム中に再度スキルを発動することで<br>フィニッシュ技を発動します。
+TutorialText04,0,text0008,「クイックスラッシュ」<br><yellow>・ＰＡ後などに発生するガイド表示に<br> 合わせて通常攻撃<c><br>発動時に入力していた方向に応じて<br>高速な移動を伴う攻撃が発動します。<br><br>「クイックシュート」<br><yellow>・特定タイミングに発生する<br> ガイド表示に合わせて武器アクション<c><br>スタイルに応じて異なる攻撃が発動します。<br>共通：エクストラアタック発動後<br>ザンディ：ステップで回避成功後<br>フォメル：エンハンスコンボ発動後<br>バーラン：ラスターステップガード発動後
+TutorialText04,0,text0009,「ラスタータイム」<br>スキルを発動すると範囲攻撃を行い<br>ラスタータイムを開始します。<br><br>ラスタータイム中はＰＰの回復量が増加し<br>被ダメージが減少するなどの効果を得ます。<br><br>ラスタータイム中に再度スキルを発動することで<br>フィニッシュ技を発動します。
 TutorialText04,1,Title,Habilidades de brillo
 TutorialText04,1,text0001,"Voltios de brillo<br>Cuando aprendas la habilidad de clase requerida, se agregará un medidor de voltaje a tu subpaleta. Ganarás voltios cada vez que te conectes con éxito con un ataque, lo que aumentará tu potencia y reducirá el daño recibido.<br><br>Al aprender más habilidades de clase, será más fácil ganar voltios y se les darán otros efectos de apoyo."
 TutorialText04,1,text0002,"Voltios de brillo<br>If a certain amount of time passes without an attack connecting with an enemy, the voltage gauge will be reset.<br><br><c ff4f3f>Nota: El indicador de voltaje muestra cuánto tiempo le queda, pero dependiendo del entorno de conexión puede haber errores en el tiempo.<c>"
@@ -70,6 +70,6 @@ TutorialText04,1,text0007,"Combinación mejorada<br>-<yellow>Cuando el indicador
 TutorialText04,1,text0008,"Tajo veloz<br>-<yellow>After a Photon Art or other attack, perform a Normal Attack in time with the guide<c> to unleash a quick attack while moving in the direction of your choice.<br><br>Disparo rápido<br>-<yellow>Presiona el botón de acción del arma al mismo tiempo que la guía que aparece en momentos específicos<c> para desatar un ataque que varía según tu estilo actual.<br>Común: después de un ataque adicional<br>Zandi: Después de esquivar con éxito con Sidestep<br>Fomel: después de un combo mejorado<br>Baran: después de una guardia de paso lateral brillante"
 TutorialText04,1,text0009,"Tiempo de brillo<br>Cuando se activa esta habilidad, se desatará un ataque AoE<br>and Luster Time will begin.<br><br>Durante Lustre Time, obtendrás varios efectos,<br>como recuperar más PP y recibir menos daño.<br><br>Si la habilidad se activa nuevamente mientras Lustre Time está vigente,<br>Se realizará un ataque final."
 TutorialText05,0,Title,『スマートＰＡ』について
-TutorialText05,0,text0001,動的に選択して発動します。<br><br>スマートＰＡで戦闘を行っている場合も<br>スキルの効果や威力が通常通り発揮されます。<br>ラスターのアクションに慣れていなかったり<br>コンボの構成に迷った時に活用しましょう。
+TutorialText05,0,text0001,ラスターのガンスラッシュには<br>簡単な操作でアクションを楽しめるよう<br>スマートＰＡが用意されています。<br><br>スマートＰＡはエネミーとの距離や<br>ＰＡを連続で使用した時のコンボなど<br>状況に応じて自動的に選択して発動します。<br><br>スマートＰＡで戦闘を行っている場合も<br>スキルの効果や威力が通常通り発揮されます。<br>ラスターのアクションに慣れていなかったり<br>コンボの構成に迷った時に活用しましょう。
 TutorialText05,1,Title,Artes de fotones inteligentes
 TutorialText05,1,text0001,Lustre Gunblade tiene Smart Photon Arts que se puede activar con entradas simples.<br><br>Smart Photon Arts se elegirá automáticamente según las condiciones.<br>como la distancia del enemigo y los combos de Photon Arts.<br><br>Los efectos y la potencia de las habilidades funcionarán como de costumbre incluso cuando se use Smart Photon Arts.<br>en batalla. Se recomiendan Smart Photon Arts para aquellos que todavía se están acostumbrando<br>para controlar su Lustre o para aquellos que tienen problemas para formar combos.

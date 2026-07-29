@@ -369,6 +369,7 @@ Caution,0,NotFoundQuestType,受注可能なクエストがありません。
 Caution,0,NotFoundQuestList,受注可能なクエストがありません。
 Caution,0,CantStartQuestNotFoundRoom,対象ルームが見つからなかったため<br>クエストを開始できません。
 Caution,0,CantStartQuestCapacityOverRoom,ルームの人数オーバーのため参加できません。
+Caution,0,CantStartQuestCapacityOverRoom2,　ルームの人数オーバーのため参加できません。<br>　人数にはルームに参加予定のプレイヤーも含んでおり、<br>　参加人数に反映されていない場合があります。<br>　<br>　<yellow>※参加予定の有効期限は1分ですので、<br>　　時間を置いて再度お試しいただくことで、<br>　　参加可能となる場合もあります。<c>
 Caution,0,CantStartQuestNewRaidQuest,パーティーメンバーが<br>参加条件であるエネミーを倒していないため、<br>クエストを受注できません。
 Caution,0,CantStartQuestNotNotFoundParty,対象パーティーが見つからなかったため、<br>クエストを開始できません。
 Caution,0,CantStartQuestCapacityOverParty,パーティーの人数オーバーのため参加できません。
@@ -427,9 +428,9 @@ Caution,0,NotFoundQuestRecord,クエストレコードが存在しません。
 Caution,0,CantStartQuestNewNetCafeQuest,パーティーメンバーが<br>ネットカフェプレミアムではないため、<br>クエストを受注できません。
 Caution,0,CantStartQuestOutExtraQuest,このクエストのキャンペーン対象期間は終了しました。<br>クエストを再受注してください。
 Caution,0,CantStartQuestInExtraQuest,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
-Caution,0,CantStartCapacityOverInTraning,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
+Caution,0,CantStartCapacityOverInTraning,練習クエストを開始できませんでした。<br>移動先のブロックが混雑している場合は<br>しばらく時間をあけてからお試しください。<br><br>※練習クエストは所属シップの<br>　　チャレンジブロックで行われます。
 Caution,0,LeavePenalty,マッチング制限中のため<br>対象クエストを受注できません。<br><br>しばらく時間を空けてから受注してください。
-Caution,0,None,Se produjo un error desconocido.<br><br> [No. 3000]
+Caution,1,None,An unknown error occurred.<br><br>[No. 3000]
 Caution,1,NotReceptQuestPartyGuest,No puedes aceptar la misión porque<br>no eres un líder del grupo.
 Caution,1,NotReceptQuestAlreadyQuest,La búsqueda ya ha comenzado. Se recomienda dirigirse<br>hacia la puerta).
 Caution,1,NotFoundQuestSearch,No se pudo encontrar una misión que coincida con<br>las condiciones que ingresaste.
@@ -500,7 +501,7 @@ Caution,1,CantStartQuestOutExtraQuest,El período de campaña para esta misión 
 Caution,1,CantStartQuestInExtraQuest,Ahora se aplica un período de campaña a esta misión. Por favor vuelva a aceptar.
 Caution,1,CantStartCapacityOverInTraning,Lo intentaría de nuevo.<br><br> Nota: Las misiones de práctica se llevan a cabo en el bloque de desafío de su barco.
 Caution,1,LeavePenalty,No puedes aceptar la misión<br>debido a restricciones de emparejamiento.<br><br> Espere un poco y luego acepte la misión.
-Caution,1,Window_Main_Title,섰렰ⶊ驛
+ChallengeBuff,0,Window_Main_Title,チャレンジ設定
 ChallengeBuff,0,Window_List_Title,チャレンジ項目リスト
 ChallengeBuff,0,Challenge_Buff_Bonus1,<c 76d1ff>スコア倍率<c>
 ChallengeBuff,0,Challenge_Buff_Bonus2,<yellow>＋$(0)%<c>
@@ -533,7 +534,7 @@ ChallengeBuff,0,Dialog_Load_Title,設定の読み込み確認
 ChallengeBuff,0,Dialog_Load_Message,編集中の設定が上書きされます。<br>よろしいですか？
 ChallengeBuff,0,Challenge_Buff_Error1,類似のチャレンジ項目は重複して選択できません。
 ChallengeBuff,0,Challenge_Buff_Error2,効果が合計で$(0)個を超えるため、選択できません。
-ChallengeBuff,0,Window_Guide_Message,効果が合計で$(0)個を超えるため、選択できません。
+ChallengeBuff,0,Window_Guide_Message,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。<br><br><yellow>難度を上げるほど、<br>スコアにかかる倍率も上昇します。<br><br>スコアはクエストクリア時の<br>ランクに影響し、報酬が変動します。<c>
 ChallengeBuff,0,Window_Guide_Message2,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。
 ChallengeBuff,0,Window_List_Tab_Popup_All,すべてのチャレンジ
 ChallengeBuff,0,Window_List_Tab_Popup_1,エネミーHPアップ
@@ -541,7 +542,7 @@ ChallengeBuff,0,Window_List_Tab_Popup_2,エネミー攻撃力アップ
 ChallengeBuff,0,Window_List_Tab_Popup_3,プレイヤー能力ダウン
 ChallengeBuff,0,Window_List_Tab_Popup_4,その他
 ChallengeBuff,0,Window_List_Tab_Popup_5,プレイヤー能力アップ
-ChallengeBuff,0,Window_Main_Title,Configuración del desafío
+ChallengeBuff,1,Window_Main_Title,Challenge Settings
 ChallengeBuff,1,Window_List_Title,Lista de desafíos
 ChallengeBuff,1,Challenge_Buff_Bonus1,<c 76d1ff> Multiplicador de puntuación <c>
 ChallengeBuff,1,Challenge_Buff_Bonus2,<yellow> +$(0)% <c>
@@ -582,7 +583,7 @@ ChallengeBuff,1,Window_List_Tab_Popup_2,Ataque enemigo
 ChallengeBuff,1,Window_List_Tab_Popup_3,Habilidad del jugador hacia abajo
 ChallengeBuff,1,Window_List_Tab_Popup_4,Varios.
 ChallengeBuff,1,Window_List_Tab_Popup_5,Habilidad del jugador aumentada
-ChallengeBuff,1,Window_Titletelop,Aceptación de desafíos
+NpcCounter,0,Window_Titletelop,クエストカウンター
 NpcCounter,0,Window_TwolineGuide,受注したいクエストを選んでください。
 NpcCounter,0,Window_Main_Title,クエストメニュー
 NpcCounter,0,Exit_NpcCounter,クエストカウンターを出る
@@ -635,7 +636,7 @@ NpcCounter,0,Category_AddText,ショートエピソード
 NpcCounter,0,Category_Misc,その他
 NpcCounter,0,NpcCounter_BoostOccurrence,ブースト効果あり
 NpcCounter,0,NpcCounter_Category_16,エクストラデュエル：星崩の猛攻
-NpcCounter,0,Window_Titletelop,Contador de misiones
+NpcCounter,1,Window_Titletelop,Quest Counter
 NpcCounter,1,Window_TwolineGuide,Seleccione las misiones que le gustaría aceptar.
 NpcCounter,1,Window_Main_Title,Menú de misiones
 NpcCounter,1,Exit_NpcCounter,Salir del contador de misiones

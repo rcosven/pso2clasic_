@@ -1,6 +1,6 @@
-section,group,id,text
+﻿section,group,id,text
 Block,0,BlockForm_NotOnlyBlock_Exp,XBox Live専用ブロックから移動します。<br>専用ブロックから移動をすると<br>他のプラットフォームのプレイヤーとも<br>パーティーを組むなどコミュニケーションが<br>可能になります。<br><br>移動してもよろしいですか？
-Block,0,BlockForm_Move_VoiceChatPriority,えてしまいます。<br><br><yellow>ボイスチャット推奨ブロック<c>に移動しますか？<br><yellow>※ボイスチャットを使用したパーティプレイ推奨の<br>　ブロックです。<c>
+Block,0,BlockForm_Move_VoiceChatPriority,ブロックを移動すると、参加している<br>パーティーから自動的に脱退し、<br>受注中のクエストも破棄されます。<br><br>また、クエストを受けている場合、<br>クエスト内で得られる効果も消えてしまいます。<br><br><yellow>ボイスチャット推奨ブロック<c>に移動しますか？<br><yellow>※ボイスチャットを使用したパーティプレイ推奨の<br>　ブロックです。<c>
 Block,0,BlockForm_Name_VoiceChatPriority,ボイスチャット推奨
 Block,1,BlockForm_NotOnlyBlock_Exp,Estás a punto de abandonar un Bloque<br>exclusivo de Xbox Live. Abandonar este Bloque exclusivo hará<br>posible formar grupos y comunicarte<br>con jugadores en otras plataformas.<br><br>¿Estás seguro de que deseas continuar?
 Block,1,BlockForm_Move_VoiceChatPriority,"Moverte a un bloque diferente hará que abandones tu<br>grupo actual y cualquier misión que hayas aceptado.<br><br>Además, si has aceptado alguna misión, se perderán todos los resultados<br>que se puedan obtener durante estas misiones.<br><br>¿Moverte a un bloque <yellow>centrado en el chat de voz<c>?<br><yellow>Se recomienda jugar en grupo con chat de voz en este bloque.<c>"
@@ -406,7 +406,7 @@ moralskeeper_SA,1,moralskeeper_SA_category_disturb,Obstrucción
 moralskeeper_SA,1,moralskeeper_SA_category_harassment,Acoso
 moralskeeper_SA,1,moralskeeper_SA_category_Slander,Calumnia
 moralskeeper_SA,1,moralskeeper_SA_category_etcetera,Otro
-moralskeeper_SA,1,moralskeeper_SA_comment_default,<c c0c0c0>Por favor, explica el motivo de este bloqueo.<c>
+moralskeeper_SA,1,moralskeeper_SA_comment_default,<c c0c0c0>Por favor
 moralskeeper_SA,1,moralskeeper_SA_button_transmit,Enviar
 moralskeeper_SA,1,moralskeeper_SA_button_cancel,Cancelar
 moralskeeper_SA,1,moralskeeper_SA_message,Symbol Art bloqueado.
@@ -439,7 +439,7 @@ PartyMenu,1,PartyConfigLabeln3,Rechazar todas las invitaciones a fiestas
 Visiphon,0,VisiphonBuyItem,購入/特典受取
 Visiphon,0,VisiphonBuyItemMessage,以下のアイテムを受け取ります。<br>よろしいですか？<br><br>※アイテムを受け取れるのは、<br>　アカウントにつき１回のみです。<br>　受け取るシップに間違いないかをご確認ください。
 Visiphon,1,VisiphonBuyItem,Comprar / Recibir Beneficios
-Visiphon,1,VisiphonBuyItemMessage,"Estás a punto de recibir los siguientes objetos.<br>¿Estás seguro de que deseas continuar?<br><br>Cada cuenta solo puede realizar esta acción una vez.<br>Asegúrate de especificar la nave correcta en la que deseas recibir tus objetos."
+Visiphon,1,VisiphonBuyItemMessage,Estás a punto de recibir los siguientes objetos.<br>¿Estás seguro de que deseas continuar?<br><br>Cada cuenta solo puede realizar esta acción una vez.<br>Asegúrate de especificar la nave correcta en la que deseas recibir tus objetos.
 EveryMP,0,DetailsFormTitle,ミッションパス詳細画面
 EveryMP,0,GoToArksMission,<%Function>でアークスミッションへ
 EveryMP,0,GoToArksMission_Key,<%MultiSelect>でアークスミッションへ
@@ -463,7 +463,7 @@ EveryMP,0,RewardAcceptanceFormTitle,報酬受け取り画面
 EveryMP,0,RewardAcceptanceFormMessage,以下から受け取る報酬を１つだけ選択してください。<br><br><yellow>※選択するアイテムが装備可能かご確認ください。<c>
 EveryMP,0,RewardConfirmationFormTitle,報酬詳細画面
 EveryMP,0,RewardReceiptFormAcceptanceTitle,受け取り確認
-EveryMP,0,RewardReceiptFormAcceptanceMessage,らアイテムの変更は<br>　できませんのでご注意ください。<br>※受け取りはアカウントにつき1回です。<br>※受け取るシップにご注意ください。<c>
+EveryMP,0,RewardReceiptFormAcceptanceMessage,以下のアイテムを受け取ります。<br>よろしいですか？<br><br><yellow>※受け取るアイテムの中に装備できない<br>　ものがある場合、後からアイテムの変更は<br>　できませんのでご注意ください。<br>※受け取りはアカウントにつき1回です。<br>※受け取るシップにご注意ください。<c>
 EveryMP,0,RewardReceiptFormPurchaseTitle,購入確認
 EveryMP,0,RewardReceiptFormPurchaseMessage,以下のアイテムを$(2)$(0)で購入します。<br>よろしいですか？<br><br>（所持SG：$(1)）
 EveryMP,0,RewardReceiptFormTierPurchaseMessage,以下のアイテムを$(2)$(0)で購入します。<br>よろしいですか？<br><br>（所持SG：$(1)）<br>購入前ティア：$(3)<br>購入後ティア：$(4)
@@ -536,7 +536,7 @@ EveryMP,1,CancelText,Cancelar
 EveryMP,1,YesText,Sí
 EveryMP,1,NoText,No
 EveryMP,1,RewardAcceptanceFormTitle,RECLAMAR RECOMPENSAS
-EveryMP,1,RewardAcceptanceFormMessage,Elige tu recompensa de los objetos de abajo.<br><yellow>Por favor, asegúrate de que el objeto que selecciones sea <br> equipable.<c>
+EveryMP,1,RewardAcceptanceFormMessage,Elige tu recompensa de los objetos de abajo.<br><yellow>Por favor
 EveryMP,1,RewardConfirmationFormTitle,DETALLES DE LA RECOMPENSA
 EveryMP,1,RewardReceiptFormAcceptanceTitle,CONFIRMAR ACEPTACIÓN
 EveryMP,1,RewardReceiptFormAcceptanceMessage,barco para recibir tu recompensa.<c>
@@ -574,7 +574,7 @@ EveryMP,1,RewardAcceptanceForm_other,Otros x$(0)
 EveryMP,1,ErrorMessageGeneral2,Se produjo un error inesperado.
 EveryMP,1,MP_Error_Inventorylimit,"espacio en tu inventario,<br>o excederías tu límite de carga."
 EveryMP,1,RewardDetailsFormMessage,A continuación se muestran las recompensas.<br><yellow>Se puede reclamar hasta 1 grupo.<c>
-EveryMP,1,RewardReceivingFormMessage1,Elige tu recompensa para este nivel de los objetos de abajo.<br><yellow>Se puede seleccionar hasta 1 grupo.<c><br><yellow>Por favor, asegúrate de que el objeto que selecciones sea equipable.<c>
+EveryMP,1,RewardReceivingFormMessage1,Elige tu recompensa para este nivel de los objetos de abajo.<br><yellow>Se puede seleccionar hasta 1 grupo.<c><br><yellow>Por favor
 EveryMP,1,RewardReceivingFormMessage2,Elija su(s) recompensa(s) para este nivel entre los siguientes elementos.
 EveryMP,1,TakeText,Llevar
 EveryMP,1,MP_PopupMessage,Texto ficticio
@@ -650,7 +650,7 @@ MovieWindow,1,WelcomeMovie_CancelTitle,CONFIRMAR SALIR
 MovieWindow,1,WelcomeMovie_CancelMessage,Esto terminará la cinemática.<br>¿Estás seguro de que deseas continuar?
 MovieWindow,1,WelcomeMovie_CancelYes,Sí
 MovieWindow,1,WelcomeMovie_CancelNo,No
-Arksleague,0,NOTIFY_BEFORE_STARTING_ARKS_LEAGUE,プレイ中の皆様にお知らせいたします。  $(0)から$(1)まで、アークスリーグを開催いたします。  アークスリーグは、開催中にメインメニューの「クエスト」から「開催中イベント」を選択いただき、アークスリーグの「最新リーグ情報」をご覧いただくか、ブロック移動を行っていただく事で参加することができます。  ぜひご参加ください。
-Arksleague,0,NOTIFY_AFTER_STARTING_ARKS_LEAGUE,ⵐꑎ젰ര鈰砰麐䑢弰怰䴰İꈰﰰ꼰뤰ﰰ뀰渰ర0끧ﰰ뀰씰ㅠ൘鈰吰ꜰ䒉弰怰估䬰İ혰쌰꼰אּ핹鉒䰰授昰䐰弰怰估謰李숰ꁓ奒謰匰栰䰰朰䴰縰夰Ȱ00尰爰吰숰ꁓ佒怰唰䐰Ȱ0䈀潬正
+Arksleague,0,NOTIFY_BEFORE_STARTING_ARKS_LEAGUE,プレイ中の皆様にお知らせいたします。　　$(0)から$(1)まで、アークスリーグを開催いたします。　　アークスリーグは、開催中にメインメニューの「クエスト」から「開催中イベント」を選択いただき、アークスリーグの「最新リーグ情報」をご覧いただくか、ブロック移動を行っていただく事で参加することができます。　　ぜひご参加ください。
+Arksleague,0,NOTIFY_AFTER_STARTING_ARKS_LEAGUE,プレイ中の皆様にお知らせいたします。　　$(0)から$(1)まで、アークスリーグを開催中です。　　アークスリーグは、開催中にメインメニューの「クエスト」から「開催中イベント」を選択いただき、アークスリーグの「最新リーグ情報」をご覧いただくか、ブロック移動を行っていただく事で参加することができます。　　ぜひご参加ください。
 Arksleague,1,NOTIFY_BEFORE_STARTING_ARKS_LEAGUE,"Aviso a todos los jugadores: La ARKS League se llevará a cabo desde $(0) hasta $(1). Puedes participar en la ARKS League seleccionando Eventos actuales en Misiones dentro del Menú Principal y viendo la Información más reciente de la liga en ARKS League mientras la liga esté en curso, o cambiando de bloque. Esperamos tu participación."
 Arksleague,1,NOTIFY_AFTER_STARTING_ARKS_LEAGUE,"Aviso a todos los jugadores: La ARKS League se llevará a cabo desde $(0) hasta $(1). Puedes participar en la ARKS League seleccionando Eventos actuales en Misiones dentro del Menú Principal y viendo la Información más reciente de la liga en ARKS League mientras la liga esté en curso, o cambiando de bloque. Esperamos tu participación."

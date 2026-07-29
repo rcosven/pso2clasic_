@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Config,0,Title,オプション
 Config,0,Category_Game,ゲーム設定
 Config,0,Category_Game_Hint,ゲームプレイに関連する機能や<br>カメラ操作などの設定をします。
@@ -158,11 +158,11 @@ Config,0,BasicHintKeyMoveEscape,キーボードのキャラクター移動キー
 Config,0,BasicHintSavePartySetting,パーティー設定を保存しブロック移動やログアウトが行われても<br>消えないようにするかを設定します。<br>パーティー設定の保存は、ゲームが終了するまで有効です。
 Config,0,BasicHintLockonChange,ロックオンしている時、<%RStick>でロックオン対象を<br>切り替える機能を使用するかを設定します。
 Config,0,BasicHintNavi,アークスロードの次の目標を知らせる<br>ナビアイコンを表示するかしないか設定します。
-Config,0,BasicHintEvent,イベントが発生した時に注目をするか設定します。<br>アクセスをホールドしてイベント注目をするか、<br>イベント注目をしないかを選択します。
+Config,0,BasicHintEvent,イベントが発生した時に注目をするか設定します。<br>アクセスをホールドしてイベント注目をするか、<br>イベント注目をしないかを選択します。 
 Config,0,BasicHintMeseta,メセタを自動で拾う機能を使用するかしないか設定します。
 Config,0,BasicHintColor,他パーティーに参加中のキャラクター名について<br>カラーを変更するかしないか設定します。
 Config,0,BasicHintAttackProperty,ダメージを受けた際に表示されるHPバーの色を<br>打撃、射撃、法撃ごとに変化させるか設定します。
-Config,0,BasicHintAutoPartyName,パーティー名を設定しないままクエストを受注した時に<br>自動で付けられるパーティー名を選択します。
+Config,0,BasicHintAutoPartyName,パーティー名を設定しないままクエストを受注した時に<br>自動で付けられるパーティー名を選択します。 
 Config,0,BasicHintBeginner,レベル20以下のキャラクターでログインする時、<br>ビギナーブロックが選ばれやすくするかを選択します。
 Config,0,BasicHintSubActionPalletName,選択中のサブパレット内容を表示させるか設定します。
 Config,0,BasicHintRareDrop,レアアイテムがドロップした際に表示される演出を<br>どのレアリティから表示するか設定します。
@@ -609,7 +609,7 @@ Config,0,CtrlCtrlAssignTypeCtrlN,Ctrl+Num1～Num0
 Config,0,CtrlCtrlSwapMessage,「$(0)」と入れ替えました。
 Config,0,CtrlCtrlCaptionFuncName,項目名
 Config,0,CtrlCtrlCaptionAssign,現在の設定
-Config,0,CtrlPartition,/
+Config,0,CtrlPartition, / 
 Config,0,CtrlVitaAccessEscape,<pict Sign_L3> ＋ <pict Sign_CIRCLE>
 Config,0,CtrlVitaPalletinfo,武器パレット切り替えの操作が一部制限されます
 Config,0,CtrlVitaSubPalletinfo,サブパレット切り替えの操作が一部制限されます
@@ -825,11 +825,11 @@ Config,0,Damegesize_config_title,クエスト中のダメージやEXPの表示�
 Config,0,Damegesize_app,与ダメージ表示
 Config,0,Damegesize_taken,回復／被ダメージ表示
 Config,0,Damegesize_exp,EXPなどの表示
-Config,0,Damegesize_for_player,プレイヤーキャラクター
-Config,0,Damegesize_for_party,パーティーメンバー
-Config,0,Damegesize_for_other,その他のキャラクター
-Config,0,Damegesize_for_exp,EXP／その他
-Config,0,Damegesize_for_enemy,特殊なダメージ（敵同士など）
+Config,0,Damegesize_for_player,　　　プレイヤーキャラクター
+Config,0,Damegesize_for_party,　　　パーティーメンバー
+Config,0,Damegesize_for_other,　　　その他のキャラクター
+Config,0,Damegesize_for_exp,　　　EXP／その他
+Config,0,Damegesize_for_enemy,　　　特殊なダメージ（敵同士など）
 Config,0,Damegesize_vita_app_player,プレイヤーの与ダメージ
 Config,0,Damegesize_vita_app_party,パーティーメンバーの与ダメージ
 Config,0,Damegesize_vita_app_other,その他のキャラの与ダメージ
@@ -869,7 +869,7 @@ Config,0,BasicHintAutoGetUnit,レアリティの高いユニットがドロッ�
 Config,0,BasicHintAutoGetMaterial,『オーダーアイテム／素材』カテゴリの<br>アイテムがドロップする際に<br>取得ミスを防ぐため、フィールドにドロップさせず<br>アイテムパックに即時取得するかを設定します。<br><br>※素材倉庫が有効な場合は<br>　　自動的に素材倉庫へ送られます。
 Config,0,BasicHintAutoGetOther,武器、ユニット、素材以外のアイテムを対象として<br>レアリティの高いアイテムがドロップする際に<br>取得ミスを防ぐため、フィールドにドロップさせず<br>アイテムパックに即時取得するかを設定します。
 Config,0,BasicTextFloatTextItem,ドロップアイテムの取得表示
-Config,0,FloatTextItem,アイテムの取得
+Config,0,FloatTextItem,　　　アイテムの取得
 Config,0,FloatTextItemVita,ドロップアイテムの取得表示
 Config,0,SelectFloatTextOn,表示する
 Config,0,SelectFloatTextList,キャラクター横に表示

@@ -1,6 +1,6 @@
 ﻿section,group,id,text
 Block,0,BlockForm_NotOnlyBlock_Exp,XBox Live専用ブロックから移動します。<br>専用ブロックから移動をすると<br>他のプラットフォームのプレイヤーとも<br>パーティーを組むなどコミュニケーションが<br>可能になります。<br><br>移動してもよろしいですか？
-Block,0,BlockForm_Move_VoiceChatPriority,えてしまいます。<br><br><yellow>ボイスチャット推奨ブロック<c>に移動しますか？<br><yellow>※ボイスチャットを使用したパーティプレイ推奨の<br>　ブロックです。<c>
+Block,0,BlockForm_Move_VoiceChatPriority,ブロックを移動すると、参加している<br>パーティーから自動的に脱退し、<br>受注中のクエストも破棄されます。<br><br>また、クエストを受けている場合、<br>クエスト内で得られる効果も消えてしまいます。<br><br><yellow>ボイスチャット推奨ブロック<c>に移動しますか？<br><yellow>※ボイスチャットを使用したパーティプレイ推奨の<br>　ブロックです。<c>
 Block,0,BlockForm_Name_VoiceChatPriority,ボイスチャット推奨
 Block,1,BlockForm_NotOnlyBlock_Exp,"Estás a punto de salir de un bloqueo exclusivo de Xbox Live.<br>Al salir de este bloqueo exclusivo, <br>podrás formar grupos y comunicarte con jugadores de otras plataformas.<br><br>¿Estás seguro de que deseas continuar?"
 Block,1,BlockForm_Move_VoiceChatPriority,"Al cambiar a otro bloque, abandonarás tu grupo actual <br>y se cancelarán todas las misiones que hayas aceptado.<br><br>Además, si has aceptado alguna misión, <br>perderás cualquier progreso o recompensa obtenible durante dichas misiones.<br><br>¿Deseas cambiar a un bloque <yellow>centrado en el chat de voz<c>?<br><yellow>En este bloque se recomienda jugar en grupo utilizando el chat de voz.<c>"
@@ -517,7 +517,7 @@ EveryMP,0,MP_Group11,グループ11
 EveryMP,0,MP_Group12,グループ12
 EveryMP,0,AnnounceIcon1,<%TabBack>
 EveryMP,0,AnnounceIcon2,<%TabForward>
-EveryMP,0,MP_ControlGuide,決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>
+EveryMP,0,MP_ControlGuide,決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>　　
 EveryMP,0,MP_RewardList_Header,報酬一覧
 EveryMP,0,MP_RewardList_Issue,以下の報酬を受け取りました。
 EveryMP,0,MP_RewardList_Close,閉じる

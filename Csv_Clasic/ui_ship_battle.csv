@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Mainmenu,0,EventInformation,開催中イベント
 Mainmenu,0,ShipConfrontation,アークスシップ対抗戦
 Mainmenu,0,PlayerInformation,あなたの情報
@@ -13,7 +13,7 @@ Mainmenu,0,Affiliation,所属グループ
 Mainmenu,0,BoostInformation,現在のブースト情報
 Mainmenu,0,Grouppoint,現在の貢献ポイント
 Mainmenu,0,BingoCard,アークスビンゴカード
-Mainmenu,0,BingoCardNum,（$(0)）
+Mainmenu,0,BingoCardNum, （$(0)）
 Mainmenu,0,MenuShipConfrontation,アークスシップ対抗戦
 Mainmenu,0,Rank,ランク
 Mainmenu,0,Star,スター（pt）
@@ -23,7 +23,7 @@ Mainmenu,0,Normal,ノーマル
 Mainmenu,0,Hard,ハード
 Mainmenu,0,VeryHard,ベリーハード
 Mainmenu,0,SuperHard,スーパーハード
-Mainmenu,0,StarExpire,$(0)（有効期限/$(1) $(2))
+Mainmenu,0,StarExpire, $(0)（有効期限/$(1) $(2))
 Mainmenu,0,Loading,通信中…
 Mainmenu,0,NotPlayMessage,現在は開催されていません。
 Mainmenu,0,StopMessage,中断しています。
@@ -102,6 +102,7 @@ Npc,0,Point,貢献ポイント
 Npc,0,Progression,進行度
 Npc,0,Ranking,順位
 Npc,0,RequiredStar,必要スター数
+Npc,0,Group,グループ
 Npc,0,GroupPoint,貢献ポイント
 Npc,0,Pts,勝ち点
 Npc,0,PrizeMenu,賞品名
@@ -179,6 +180,7 @@ Npc,1,Point,Puntos de contribución
 Npc,1,Progression,Progreso
 Npc,1,Ranking,Clasificación
 Npc,1,RequiredStar,Número de estrellas necesarias
+Npc,1,Group,Group
 Npc,1,GroupPoint,Puntos de contribución
 Npc,1,Pts,Puntos de victoria
 Npc,1,PrizeMenu,Nombre del premio
@@ -201,8 +203,8 @@ Npc,1,RoundNum,Ronda $(0)
 Npc,1,TotalPointNum,$(0) puntos
 Npc,1,Unknown,???
 Npc,1,CancelStr,-
-Npc,1,WaitMsg,Por favor, espera mientras se prepara el anuncio de la clasificación.
-Npc,1,ResultWaitMsg,Por favor, espera mientras se preparan los resultados finales.
+Npc,1,WaitMsg,Por favor
+Npc,1,ResultWaitMsg,Por favor
 Npc,1,BoostRank,$(0) lugar
 Npc,1,TimeStart,desde
 Npc,1,TimeEnd,hasta
@@ -240,9 +242,9 @@ Common,0,NumberFormatColor,<c ffa800>$(0)/$(1)<c>
 Common,0,NumberFormat2Color,(<c ffa800>$(0)/$(1)<c>)
 Common,0,ErrorMsg,通信エラー
 Common,0,StarNumText,x$(0)
-Common,0,DayAddText,～
+Common,0,DayAddText, ～ 
 Common,0,ItemName_00,「
-Common,0,ItemName_01,」
+Common,0,ItemName_01,」 
 Common,0,GetStar,スター獲得
 Common,0,ClearStar,ボーダーライン到達
 Common,0,GetStarMsg,$(0)スターを獲得しました。
@@ -273,9 +275,9 @@ Common,0,WinPoint,$(0)点
 Common,0,StarNumberFormat,$(0)/$(1)<pict sb_star_icon> ($(2)<pict sb_star_icon>)
 Common,0,StarNumberFormat2,<c ffa800>$(0)/$(1)<c><pict sb_star_icon> ($(2)<pict sb_star_icon>)
 Common,0,Finish,完了
-Common,0,Number_00,$(0)/$(1)<pict sb_star_icon>
+Common,0,Number_00,$(0)/$(1)<pict sb_star_icon> 
 Common,0,Number_01,($(0)/$(1)<pict sb_star_icon>)
-Common,0,NumberColor_00,<c ffa800>$(0)/$(1)<c><pict sb_star_icon>
+Common,0,NumberColor_00,<c ffa800>$(0)/$(1)<c><pict sb_star_icon> 
 Common,0,NumberColor_01,(<c ffa800>$(0)/$(1)<c><pict sb_star_icon>)
 Common,1,YesText,Yes
 Common,1,NoText,No

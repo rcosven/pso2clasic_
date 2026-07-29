@@ -382,7 +382,7 @@ Config,0,CtrlCtrlAssignTypeCtrlN,Ctrl+Num1～Num0
 Config,0,CtrlCtrlSwapMessage,「$(0)」と入れ替えました。
 Config,0,CtrlCtrlCaptionFuncName,項目名
 Config,0,CtrlCtrlCaptionAssign,現在の設定
-Config,0,CtrlPartition,/
+Config,0,CtrlPartition, / 
 Config,0,CtrlVitaAccessEscape,<pict Sign_L3> ＋ <pict Sign_CIRCLE>
 Config,0,CtrlVitaPalletinfo,武器パレット切り替えの操作が一部制限されます
 Config,0,CtrlVitaSubPalletinfo,サブパレット切り替えの操作が一部制限されます
@@ -404,7 +404,7 @@ Config,0,CtrlPadBehaviorInitialize,自動で設定を行う
 Config,0,CtrlPadBehaviorStickTitle,アナログスティック動作設定
 Config,0,CtrlPadBehaviorStickPrepare,アナログスティックの動作設定を開始します。<br>スティックに触らず「閉じる」を押してください。
 Config,0,CtrlPadBehaviorStickSubTitleLU,1.<%LStick>の「上」範囲の認識テスト
-Config,0,CtrlPadBehaviorStickMessageLU,手元をご確認いただき、<br><c ff007f>「ANALOG」<c><yellow>や<c ff007f>「MODE」<c><yellow>などと表記されたボタンを<br>押して、アナログモードに切り替えてください。<c>
+Config,0,CtrlPadBehaviorStickMessageLU,「<%LStick>」の認識テストを行います。<br><%LStick>を<c ff007f>「上」<c>に倒しながら、$(0)<pict 4space>を押してください。<br><br><yellow>※反応しない場合は、お手元をご確認いただき、<br><c ff007f>「ANALOG」<c><yellow>や<c ff007f>「MODE」<c><yellow>などと表記されたボタンを<br>押して、アナログモードに切り替えてください。<c>
 Config,0,CtrlPadBehaviorStickSubTitleLL,2.<%LStick>の「左」範囲の認識テスト
 Config,0,CtrlPadBehaviorStickMessageLL,次に<br><%LStick>を<green>「左」<c>に倒しながら、$(0)<pict 4space>を押してください。
 Config,0,CtrlPadBehaviorStickSubTitleRU,3.<%RStick>の「上」範囲の認識テスト
@@ -457,7 +457,7 @@ Config,0,VITA_CustomToast1,カスタム設定が変更されました。各操�
 Config,0,VITA_CustomToast2,重要な操作が未設定になっています。
 Config,0,VITA_AutoRun,オートラン/サブパレット切替左
 Config,0,VITA_ChangeView,視点切替/サブパレット切替右
-Config,0,VITA_CustomInfo,>を設定できます。<br><br>変更したい項目名を選んでから、ボタンまたは<br>背面タッチパッドを押して、設定を変更してください。
+Config,0,VITA_CustomInfo,カスタム設定はボタン以外にも<br>背面タッチパッドの左上<pict Sign_BACK_L>と右上<pict Sign_BACK_R>を設定できます。<br><br>変更したい項目名を選んでから、ボタンまたは<br>背面タッチパッドを押して、設定を変更してください。
 Config,0,DrawFilterText,画面フィルター<pict Arcscash>
 Config,0,DrawFilterUsually,通常
 Config,0,DrawFilterGrayScale,モノクロ
@@ -499,7 +499,7 @@ Config,0,Config_PadInput17,ゲームパッドの初期設定
 Config,0,Config_PadInput18,“DirectInput”選択時にのみ、初期設定（キャリブレーション）が行えます。
 Config,0,SubCategory_ToonTitle,キャラクターのトゥーン表示設定
 Config,0,SubCategory_ToonDetail,キャラクターやコスチュームなどの表示を、<br>トゥーン（アニメ）調で描写するかを設定します。<br><br>この設定は、作成済みの<yellow>すべてのキャラクター<c>に<br>反映されます。<br><br><yellow>※『NGS』ブロックでのみ、表示が適用されます。<br><br>※後から各キャラクターごとに、<br>　“エステ”や“オプション”で<br>　設定の変更や調整ができます。<c>
-Config,0,SubCategory_ToonDetail2,S』ブロックでのみ、表示が適用されます。<br><br>※後からエステ”や“オプション”で<br>　設定の変更や調整ができます。<c>
+Config,0,SubCategory_ToonDetail2,キャラクターやコスチュームなどの表示を、<br>トゥーン（アニメ）調で描写するかを設定します。<br><br><yellow>※『NGS』ブロックでのみ、表示が適用されます。<br><br>※後からエステ”や“オプション”で<br>　設定の変更や調整ができます。<c>
 Config,0,SubCategory_ToonSelect1,トゥーン調にする
 Config,0,SubCategory_ToonSelect2,変更しない
 Config,1,Title,Opciones
@@ -985,7 +985,7 @@ Config,1,Config_Padinput02_Select02,Vibración apagada
 Config,1,Config_Padinput03_Select01,Permitir
 Config,1,Config_Padinput03_Select02,Desactivar
 Config,1,Config_PadInput04,Selección del tipo de entrada del gamepad
-Config,1,Config_PadInput05,ot work properly, change it back to "DirectInput"<br>using the keyboard or mouse.<c>
+Config,1,Config_PadInput05,ot work properly
 Config,1,Config_PadInput06,Alternar<%GamePad>Vibración
 Config,1,Config_PadInput07,La vibración solo está disponible cuando se selecciona XInput.<br>Nota: Es posible que ciertos<%GamePad>no admitan vibraciones.
 Config,1,Config_PadInput07_PS4,<yellow> Nota: Es posible que algunos controladores no admitan vibraciones. <c>
@@ -1739,7 +1739,7 @@ ConfigContents,0,Config_Reb_089_Name,ロックオンの優先対象
 ConfigContents,0,Config_Reb_089_Select_0,カメラの方向
 ConfigContents,0,Config_Reb_089_Select_1,キャラクターの方向1
 ConfigContents,0,Config_Reb_089_Select_2,キャラクターの方向2
-ConfigContents,0,Config_Reb_089_Hint,いた側にいる<br>対象を優先します。<br>【キャラクターの方向2】<br>キャラクターの向いた側に加えて、<br>エネミーの弱点部位や、<br>距離が近い部位を優先します。
+ConfigContents,0,Config_Reb_089_Hint,ロックオンする対象の優先度を設定します。<br><br>【カメラの方向】<br>カメラの向いた側にいる対象を優先します。<br>【キャラクターの方向1】<br>キャラクターの向いた側にいる<br>対象を優先します。<br>【キャラクターの方向2】<br>キャラクターの向いた側に加えて、<br>エネミーの弱点部位や、<br>距離が近い部位を優先します。
 ConfigContents,0,Config_Reb_090_Name,スタンプの効果音再生
 ConfigContents,0,Config_Reb_090_Hint,スタンプの効果音や音声を<br>再生するかを設定します。<br><br><yellow>※“再生しない”を選ぶと、<br>　自分のスタンプも他プレイヤーのスタンプも<br>　効果音や音声が再生されなくなります。<c>
 ConfigContents,0,Config_Reb_090_Select_0,再生する
@@ -1892,7 +1892,7 @@ ConfigContents,0,Config_Reb_139_Select_2,クオリティー
 ConfigContents,0,Config_Reb_139_Select_3,バランス
 ConfigContents,0,Config_Reb_139_Select_4,パフォーマンス
 ConfigContents,0,Config_Reb_140_Name,素材倉庫への自動送り
-ConfigContents,0,Config_Reb_140_Hint,>・ドロップアイテム<br>・ギャザリング<br>・トライアル報酬<br>・タスク/クエストの報酬<br>・ミッションパスの報酬<br>・スクラッチ回数ボーナス報酬
+ConfigContents,0,Config_Reb_140_Hint,“素材”カテゴリーのアイテムを取得した際、<br>素材倉庫が有効な場合に自動で素材倉庫へ<br>送るかを設定します。<br><br>【対象となる主な取得方法】<br>・ドロップアイテム<br>・ギャザリング<br>・トライアル報酬<br>・タスク/クエストの報酬<br>・ミッションパスの報酬<br>・スクラッチ回数ボーナス報酬
 ConfigContents,0,Config_Reb_141_Name,AMD FSR 1.0
 ConfigContents,0,Config_Reb_141_Hint,AMD FidelityFX Super Resolution 1.0を、<br>有効にするかを設定します。<br><br>FSR 1.0を有効にすると、<br>画像処理負荷を低減したうえで、<br>最大のグラフィック設定で可能な限り最高の<br>フレームレートを達成するように調整されます。<br><br><yellow>※FSR 1.0を使用するには、<br>　対応するグラフィックカードが必要です。<c>
 ConfigContents,0,Config_Reb_141_Select_0,OFF
@@ -1938,9 +1938,9 @@ ConfigContents,0,Config_Reb_Streamer_Title,ストリーマーモード
 ConfigContents,0,Config_Reb_Streamer_Name,ストリーマーモード
 ConfigContents,0,Config_Reb_Streamer_Select0,使用する
 ConfigContents,0,Config_Reb_Streamer_Select1,使用しない
-ConfigContents,0,Config_Reb_Streamer_Hint,r>ストリーマーモード中は<br>一部のオプション設定が自動で変更されます。<br>変更された項目はオプションから確認できます。
+ConfigContents,0,Config_Reb_Streamer_Hint,ストリーマーモードは、<br>個人情報を保護するため、画面を共有する際に<br>チャットなどを非表示にする機能です。<br><br>ストリーマーモード中は<br>一部のオプション設定が自動で変更されます。<br>変更された項目はオプションから確認できます。
 ConfigContents,0,Config_Reb_152_Name,チャットの自動返信
-ConfigContents,0,Config_Reb_152_Hint,<br><br><yellow>定型文1：【自動返信】ウィスパーチャットが利用できない状態です。<br>定型文2：【自動返信】ストリーマーモード中のため、ウィスパーチャットが利用できません。<c>
+ConfigContents,0,Config_Reb_152_Hint,<yellow>ウィスパーチャット<c>の表示に関連する項目を、<br>“表示しない”に設定している時に、<br>相手にウィスパーチャットを利用できない旨を、<br>自動的に伝えるかを設定します。<br><br><yellow>定型文1：【自動返信】ウィスパーチャットが利用できない状態です。<br>定型文2：【自動返信】ストリーマーモード中のため、ウィスパーチャットが利用できません。<c>
 ConfigContents,0,Config_Reb_152_Select_0,使用しない
 ConfigContents,0,Config_Reb_152_Select_1,定型文1
 ConfigContents,0,Config_Reb_152_Select_2,定型文2
@@ -1960,12 +1960,12 @@ ConfigContents,0,Config_Reb_159_Hint,プレイヤーとパーティーキャラ�
 ConfigContents,0,Config_Reb_161_Name,シンボルアートの表示：マイショップ
 ConfigContents,0,Config_Reb_161_Hint,マイショップで、<br>シンボルアートを表示するかを選択します。<br><br><yellow>※“表示しない”を選ぶと、<br>　他のプレイヤーのマイショップに設定されている<br>　シンボルアートが表示されなくなります。<c>
 ConfigContents,0,Config_Reb_162_Name,簡易モデルの表示形式
-ConfigContents,0,Config_Reb_162_Hint,色のモデルで表示します。<br>【モデル3】半透明のモデルで表示します。<br><br><yellow>※“モデル3”は、処理がやや重くなります。<c>
+ConfigContents,0,Config_Reb_162_Hint,キャラクターが詳細に描写できない時の<br>表示タイプを設定します。<br><br>【モデル1】シルエット状のモデルで表示します。<br>【モデル2】白色のモデルで表示します。<br>【モデル3】半透明のモデルで表示します。<br><br><yellow>※“モデル3”は、処理がやや重くなります。<c>
 ConfigContents,0,Config_Reb_162_Select_0,モデル1
 ConfigContents,0,Config_Reb_162_Select_1,モデル2
 ConfigContents,0,Config_Reb_162_Select_2,モデル3
 ConfigContents,0,Config_Reb_163_Name,拡大鏡モードの使用
-ConfigContents,0,Config_Reb_163_Hint,igger><yellow>＋<c><swguidetype EscMenu><yellow>で<br>　拡大鏡モードを使用できます。<c>
+ConfigContents,0,Config_Reb_163_Hint,拡大鏡モードを使用するかを設定します。<br><br><yellow>※“使用する”を選ぶと、<c><swguidetype ShiftTrigger><yellow>＋<c><swguidetype EscMenu><yellow>で<br>　拡大鏡モードを使用できます。<c>
 ConfigContents,0,Config_Reb_164_Name,通知メッセージの表示件数
 ConfigContents,0,Config_Reb_164_Hint,タスク目標達成時などに、<br>画面下部に表示される通知メッセージを、<br>最大何件まで同時に表示するかを設定します。
 ConfigContents,0,Config_Reb_164_Select_0,3件
@@ -1996,7 +1996,7 @@ ConfigContents,0,Config_Reb_172_Hint,自分の画面上に、<br>ログインコ
 ConfigContents,0,Config_Reb_172_Select_0,表示しない
 ConfigContents,0,Config_Reb_172_Select_1,表示する
 ConfigContents,0,Config_Reb_173_Name,ロックオン対象の自動切り替え
-ConfigContents,0,Config_Reb_173_Hint,。<br><br><yellow>※次にロックオンする目標の優先度は、<br>　“ロックオンの優先対象”の設定で変更できます。<c>
+ConfigContents,0,Config_Reb_173_Hint,ロックオン中に、<br>対象エネミーを倒したときなどに、<br>自動的に次の目標をロックオンする機能を<br>使用するかを選択します。<br><br><yellow>※次にロックオンする目標の優先度は、<br>　“ロックオンの優先対象”の設定で変更できます。<c>
 ConfigContents,0,Config_Reb_173_Select_0,使用しない
 ConfigContents,0,Config_Reb_173_Select_1,使用する
 ConfigContents,0,Config_Reb_174_Name,他プレイヤーのポータブルホログラム表示
@@ -2190,7 +2190,7 @@ ConfigContents,1,Config_011_Choices_2,Almacenamiento de personajes
 ConfigContents,1,Config_011_Choices_3,Almacenamiento premium
 ConfigContents,1,Config_011_Choices_4,Almacenamiento OTP
 ConfigContents,1,Config_011_Choices_5,Almacenamiento de PSO2es
-ConfigContents,1,Config_011_Hint,rminal, selling items in your Personal<br>Shop, or buying or selling items at an NPC shop.
+ConfigContents,1,Config_011_Hint,rminal
 ConfigContents,1,Config_012_Name,Información de recopilación simplificada
 ConfigContents,1,Config_012_Hint,Seleccione si se mostrará información simplificada de la reunión<br>cuando el menú principal esté abierto.
 ConfigContents,1,Config_013_Name,Formato de visualización del menú de caracteres
@@ -2321,7 +2321,7 @@ ConfigContents,1,Config_061_Hint,"No se mostrará si otros jugadores tienen desa
 ConfigContents,1,Config_062_Name,Chat directo
 ConfigContents,1,Config_062_Hint,other players <br>instead of moving your character and performing <br>other actions.
 ConfigContents,1,Config_063_Name,Alternar clave de chat directo
-ConfigContents,1,Config_063_Hint,hat is not <br>functioning properly, turning this setting on <br>may resolve the problem.
+ConfigContents,1,Config_063_Hint,hat is not <br>functioning properly
 ConfigContents,1,Config_064_Name,Citar mensajes en respuestas
 ConfigContents,1,Config_064_Choices_0,Cita
 ConfigContents,1,Config_064_Choices_1,No cites
@@ -2383,7 +2383,7 @@ ConfigContents,1,Config_085_Hint_Switch,eenshots.<br>Note: This setting affects 
 ConfigContents,1,Config_086_Name,Sincronización del tipo de cuerpo en el Salón I
 ConfigContents,1,Config_086_Choices_0,Sincronizar automáticamente
 ConfigContents,1,Config_086_Choices_1,Editar modelos por separado
-ConfigContents,1,Config_086_Hint,> or edit them individually when changing outfits, CAST parts, etc. in the Salon.
+ConfigContents,1,Config_086_Hint,> or edit them individually when changing outfits
 ConfigContents,1,Config_087_Name,Configuración de controles
 ConfigContents,1,Config_087_Choices_0,Manual
 ConfigContents,1,Config_087_Choices_1,Auto
@@ -2406,7 +2406,7 @@ ConfigContents,1,Config_097_Name,Tipo de visualización para las explosiones osc
 ConfigContents,1,Config_097_Choices_0,Predeterminado a la configuración de otros
 ConfigContents,1,Config_097_Choices_1,Mostrar aura
 ConfigContents,1,Config_097_Choices_2,Carácter de visualización
-ConfigContents,1,Config_097_Hint,.<br><br>This setting will not be applied if<br>[Graphics] > [Shader Quality] is set to "Simple."
+ConfigContents,1,Config_097_Hint,".<br><br>This setting will not be applied if<br>[Graphics] > [Shader Quality] is set to ""Simple."""
 ConfigContents,1,Config_097_Hint_PS4,isplay the character and do not show Dark Blasts.
 ConfigContents,1,Config_097_Hint_Switch,isplay the character and do not show Dark Blasts.
 ConfigContents,1,Config_097_Hint_PCCloud,isplay the character and do not show Dark Blasts.
@@ -2548,7 +2548,7 @@ ConfigContents,1,Config_Reb_013_Hint,Seleccione si desea priorizar la selección
 ConfigContents,1,Config_Reb_013_Select_0,No priorices
 ConfigContents,1,Config_Reb_013_Select_1,priorizar
 ConfigContents,1,Config_Reb_014_Name,Posición inicial del cursor de almacenamiento
-ConfigContents,1,Config_Reb_014_Hint,rminal, selling items in your Personal<br>Shop, or buying or selling items at an NPC shop.
+ConfigContents,1,Config_Reb_014_Hint,rminal
 ConfigContents,1,Config_Reb_014_Select_0,Todo el almacenamiento
 ConfigContents,1,Config_Reb_014_Select_1,Almacenamiento predeterminado
 ConfigContents,1,Config_Reb_014_Select_2,Almacenamiento de personajes
@@ -2604,7 +2604,7 @@ ConfigContents,1,Config_Reb_027_Hint,"No se mostrará si otros jugadores tienen 
 ConfigContents,1,Config_Reb_027_Select_0,Esconder
 ConfigContents,1,Config_Reb_027_Select_1,Mostrar
 ConfigContents,1,Config_Reb_028_Name,Sincronización del tipo de cuerpo en el Salón I
-ConfigContents,1,Config_Reb_028_Hint,<c> or edit them individually when changing outfits, CAST parts, etc. in Salon.
+ConfigContents,1,Config_Reb_028_Hint,<c> or edit them individually when changing outfits
 ConfigContents,1,Config_Reb_028_Select_0,Sincronizar automáticamente
 ConfigContents,1,Config_Reb_028_Select_1,Editar modelos por separado
 ConfigContents,1,Config_Reb_029_Name,Modo de bloqueo
@@ -2658,7 +2658,7 @@ ConfigContents,1,Config_Reb_042_Hint,usas tu mouse.<br><br><yellow>Nota: Vista s
 ConfigContents,1,Config_Reb_042_Select_0,Cámara
 ConfigContents,1,Config_Reb_042_Select_1,Cursor del ratón
 ConfigContents,1,Config_Reb_047_Name,Uso del chat directo
-ConfigContents,1,Config_Reb_047_Hint,Selecting "Use" will disable the function <br>for actions such as character movement.<c> <br>
+ConfigContents,1,Config_Reb_047_Hint,"Selecting ""Use"" will disable the function <br>for actions such as character movement.<c> <br>"
 ConfigContents,1,Config_Reb_047_Select_0,No usado
 ConfigContents,1,Config_Reb_047_Select_1,Usar
 ConfigContents,1,Config_Reb_048_Name,Uso del chat automático
@@ -2699,14 +2699,14 @@ ConfigContents,1,Config_Reb_054_Hint,"Seleccione si desea mostrar el arte del s�
 ConfigContents,1,Config_Reb_054_Select_0,Esconder
 ConfigContents,1,Config_Reb_054_Select_1,Mostrar
 ConfigContents,1,Config_Reb_118_Name,Visualización de arte simbólico: área
-ConfigContents,1,Config_Reb_118_Hint,Symbol Art graphics sent by yourself, your friends, <br>your Alliance Members, and your party members will <br>be displayed.<c>
+ConfigContents,1,Config_Reb_118_Hint,Symbol Art graphics sent by yourself
 ConfigContents,1,Config_Reb_118_Select_0,Esconder
 ConfigContents,1,Config_Reb_118_Select_1,Mostrar solo seleccionado
 ConfigContents,1,Config_Reb_118_Select_2,Mostrar
 ConfigContents,1,Config_Reb_119_Name,Exhibición de arte simbólico: fiesta
-ConfigContents,1,Config_Reb_119_Hint,está seleccionado, el Symbol Art <br>gráfico enviado por usted u otros jugadores no será mostrado.<c>
+ConfigContents,1,Config_Reb_119_Hint,está seleccionado
 ConfigContents,1,Config_Reb_120_Name,Exhibición de arte simbólico: Alianza
-ConfigContents,1,Config_Reb_120_Hint,está seleccionado, el Symbol Art <br>gráfico enviado por usted u otros jugadores no será mostrado.<c>
+ConfigContents,1,Config_Reb_120_Hint,está seleccionado
 ConfigContents,1,Config_Reb_121_Name,Exhibición de arte simbólico: grupo
 ConfigContents,1,Config_Reb_121_Hint,"Si se elige, los gráficos Symbol Art<br>enviados por usted u otros jugadores no se mostrarán. <c>"
 ConfigContents,1,Config_Reb_055_Name,Mostrar el nombre del orador del chat
@@ -2832,7 +2832,7 @@ ConfigContents,1,Config_Reb_089_Select_1,Dirección del personaje 1
 ConfigContents,1,Config_Reb_089_Select_2,Dirección del personaje 2
 ConfigContents,1,Config_Reb_089_Hint,ion al que se enfrenta tu personaje y que están más cerca.
 ConfigContents,1,Config_Reb_090_Name,Efectos de sonido de sello
-ConfigContents,1,Config_Reb_090_Hint,ot Play está seleccionado, no podrás <br>escucharte a ti mismo ni a otros jugadores.<c>
+ConfigContents,1,Config_Reb_090_Hint,ot Play está seleccionado
 ConfigContents,1,Config_Reb_090_Select_0,Jugar
 ConfigContents,1,Config_Reb_090_Select_1,Área silenciada solamente
 ConfigContents,1,Config_Reb_090_Select_2,No jugar
@@ -2856,7 +2856,7 @@ ConfigContents,1,Config_Reb_097_Hint,reduce la carga de procesamiento.<br><br><y
 ConfigContents,1,Config_Reb_098_Name,teselado
 ConfigContents,1,Config_Reb_098_Hint,Activa o desactiva el dibujo preciso de algunas ondulaciones del terreno <br>.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_099_Name,sincronización vertical
-ConfigContents,1,Config_Reb_099_Hint,te.<br><br><yellow>Cuando "Compulsory On" está seleccionado, no se<br>desactivará cuando el tiempo de procesamiento del juego sea mayor.<c>
+ConfigContents,1,Config_Reb_099_Hint,"te.<br><br><yellow>Cuando ""Compulsory On"" está seleccionado"
 ConfigContents,1,Config_Reb_099_Select_0,Apagado
 ConfigContents,1,Config_Reb_099_Select_1,En
 ConfigContents,1,Config_Reb_099_Select_2,Obligatorio encendido
@@ -3405,4 +3405,4 @@ InitPadInput,1,Config_PadInput14,Entrada del mando
 InitPadInput,1,Config_PadInput15,Permitir
 InitPadInput,1,Config_PadInput16,Desactivar
 InitPadInput,1,Config_PadInput17,Configuración predeterminada del mando
-InitPadInput,1,Config_PadInput18,Sólo se puede configurar cuando se selecciona ""DirectInput""."
+InitPadInput,1,Config_PadInput18,"Sólo se puede configurar cuando se selecciona """"DirectInput""""."""

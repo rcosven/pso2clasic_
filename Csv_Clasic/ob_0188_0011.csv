@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,luck1,大運
 common,0,luck2,中運
 common,0,luck3,小運
@@ -171,6 +171,7 @@ luck4,1,result14,{rojo}Elaboración [No. 14-D]<br>{def}Esté atento a la cantida
 luck4,1,result15,"{rojo}Rendimiento [No. 15-D]<br>{def}Presta atención al momento de tu PA<br>y Técnicas. Si entras en pánico, fracasarás."
 UI,0,FullSize_Help,<c f0df60>運をためす事ができる不思議な祠です。<c>
 UI,0,Child_Menu1,運をためす
-Child_Menu2 -,1,FullSize_Help,<c f0df60>Un santuario misterioso donde puedes probar suerte.<c>
-Child_Menu2 -,1,Child_Menu1,Prueba tu suerte
-Child_Menu2 -,1,Child_Menu2,Atrás
+UI,0,Child_Menu2,戻る
+UI,1,FullSize_Help,<c f0df60>A mysterious shrine where you can try your luck.<c>
+UI,1,Child_Menu1,Try your luck
+UI,1,Child_Menu2,Back
