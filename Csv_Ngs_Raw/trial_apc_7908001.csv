@@ -17,6 +17,12 @@ common,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなったわね。
 common,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 common,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 common,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
+trial_boss_ahl,1,Begin,This is worrisome...<br>I could use your help in this battle.
+trial_boss_ahl,1,Success,"Well, that went smoothly.<br>If something comes up again, I'll call on you."
+trial_boss_ahl,1,Failure,Too bad--looks like they got away.<br>Let's take this chance to catch some R&R.
+trial_boss_ahl,1,Begin_7904001,Just who I was hoping to see.<br>Won't you fight alongside me?
+trial_boss_ahl,1,Success_7904001,"Hm, not bad.<br>I hope we fight together again."
+trial_boss_ahl,1,Failure_7904001,Let's not waste time giving chase.
 trial_boss_ahl,0,Begin,これは……、困ったね。<br>一緒に戦ってもらえると助かるな。
 trial_boss_ahl,0,Success,やれやれ、なんとかなったね。<br>またなにかあったら、よろしく頼むよ。
 trial_boss_ahl,0,Failure,やれやれ、逃げられてしまったね。<br>……こちらも一休みしようかな。
@@ -35,12 +41,12 @@ trial_boss_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった�
 trial_boss_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_boss_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_boss_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_boss_ahl,1,Begin,This is worrisome...<br>I could use your help in this battle.
-trial_boss_ahl,1,Success,"Well, that went smoothly.<br>If something comes up again, I'll call on you."
-trial_boss_ahl,1,Failure,Too bad--looks like they got away.<br>Let's take this chance to catch some R&R.
-trial_boss_ahl,1,Begin_7904001,Just who I was hoping to see.<br>Won't you fight alongside me?
-trial_boss_ahl,1,Success_7904001,"Hm, not bad.<br>I hope we fight together again."
-trial_boss_ahl,1,Failure_7904001,Let's not waste time giving chase.
+trial_enemy_ahl,1,Begin,"/ci1 2 Hey, fancy seeing you here.<br>Sorry to ask, but could you help me out?"
+trial_enemy_ahl,1,Success,"/ci1 3 Alright, that should just about do it.<br>You really saved my bacon. Thanks."
+trial_enemy_ahl,1,Failure,/ci4 1 Hm? Is it over already?<br>Too bad. What a waste.
+trial_enemy_ahl,1,Begin_7904001,"/ci1 3 Sorry to be a bother,<br>but I'd really appreciate your help."
+trial_enemy_ahl,1,Success_7904001,/ci1 2 You were a huge help.<br>Thank you.
+trial_enemy_ahl,1,Failure_7904001,"/ci4 1 Oh well, there's always next time."
 trial_enemy_ahl,0,Begin,/ci1 2 おや、いいところに。<br>すまないけど、手を貸してくれないかな？
 trial_enemy_ahl,0,Success,/ci1 3 まあ、ざっとこんなもんかな。<br>おかげで助かったよ、ありがとう。
 trial_enemy_ahl,0,Failure,/ci4 1 おや？　もう終わりかい？<br>少し、物足りないね。
@@ -59,9 +65,3 @@ trial_enemy_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった
 trial_enemy_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_enemy_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_enemy_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_enemy_ahl,1,Begin,"/ci1 2 Hey, fancy seeing you here.<br>Sorry to ask, but could you help me out?"
-trial_enemy_ahl,1,Success,"/ci1 3 Alright, that should just about do it.<br>You really saved my bacon. Thanks."
-trial_enemy_ahl,1,Failure,/ci4 1 Hm? Is it over already?<br>Too bad. What a waste.
-trial_enemy_ahl,1,Begin_7904001,"/ci1 3 Sorry to be a bother,<br>but I'd really appreciate your help."
-trial_enemy_ahl,1,Success_7904001,/ci1 2 You were a huge help.<br>Thank you.
-trial_enemy_ahl,1,Failure_7904001,"/ci4 1 Oh well, there's always next time."

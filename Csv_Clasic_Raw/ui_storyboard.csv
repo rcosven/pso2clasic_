@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Debug,0,SubMenuTitle,ストーリーボードメニュー
 Debug,0,AnimeTest,アニメテスト
 Debug,0,CtrlTest,表示制御テスト
@@ -13,6 +13,9 @@ Board,0,HintKeyAchieved,捜索済みのキーマター
 Board,0,HintKeyAccepted,捜索中のキーマター
 Board,0,HintKeyGuide,ガイド中のキーマター
 Board,0,PercentComplete,達成率
+Info,1,StoryQuestRankTitle,SELECT RANK
+Info,1,StoryQuestRankNormal,Casual
+Info,1,StoryQuestRankHard,Hardcore
 Info,0,Title,マター情報
 Info,0,SynopsisTitle,このイベントのあらすじ
 Info,0,OrderName,$(0)－$(1) $(2)
@@ -40,13 +43,10 @@ Info,0,Achieved,捜索済み
 Info,0,DetailsTitle1,クリア報酬
 Info,0,DetailsTitle2,イベント情報
 Info,0,SearchGauge,進行状況
-Info,0,SearchGaugeRate,$(0)/$(1)
+Info,0,SearchGaugeRate,$(0)/$(1) 
 Info,0,StoryQuestRankTitle,ランク選択
 Info,0,StoryQuestRankNormal,カジュアル
 Info,0,StoryQuestRankHard,ハードコア
-Info,1,StoryQuestRankTitle,SELECT RANK
-Info,1,StoryQuestRankNormal,Casual
-Info,1,StoryQuestRankHard,Hardcore
 Message,0,AcceptTitle,捜索開始確認
 Message,0,Accept1,このマターの捜索を開始しますか？
 Message,0,Accept2,捜索中のマターを変更し、<br>このマターの捜索を開始しますか？

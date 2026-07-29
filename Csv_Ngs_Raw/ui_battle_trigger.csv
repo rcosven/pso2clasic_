@@ -1,17 +1,4 @@
 ﻿section,group,id,text
-common,0,battletrigger_use_check_title,イエローポータル
-common,0,battletrigger_use_check_message,持っている「$(0)」が<br>光り輝いている。台座にはめますか？<br><br>※タスク「$(0)」を達成し<br>　台座を起動します。<br>　起動後はクエストが受注可能になります。
-common,0,battletrigger_used_message,付近の台座が他のアークスにより起動された！
-common,0,CodeKey_w1_r1_1,パープルポータル：エアリオ
-common,0,CodeKey_w1_r1_3,イエローポータル：エアリオ
-common,0,CodeKey_w1_r2_1,パープルポータル：リテム
-common,0,CodeKey_w1_r2_3,イエローポータル：リテム
-common,0,CodeKey_s2022_1,ブルーポータル：バリアブル
-common,0,CodeKey_w1_r3_1,パープルポータル：クヴァリス
-common,0,CodeKey_w1_r3_3,イエローポータル：クヴァリス
-common,0,CodeKey_w1_r4_3,イエローポータル：スティア
-common,0,CodeKey_w1_r4_1,パープルポータル：スティア
-common,0,CodeKey_w1_r1_4,パープルポータル：エアリオEX
 common,1,battletrigger_use_check_title,Yellow Portal
 common,1,battletrigger_use_check_message,Your $(0) is sparkling. <br>Put it on the pedestal? <br><br>Successfully complete $(0) to <br>activate the pedestal. <br>You will be able to accept quests <br>after activation.
 common,1,battletrigger_used_message,A nearby pedestal has been activated by an ARKS op!
@@ -25,15 +12,19 @@ common,1,CodeKey_w1_r3_3,Yellow Portal: Kvaris
 common,1,CodeKey_w1_r4_3,Yellow Portal: Stia
 common,1,CodeKey_w1_r4_1,Purple Portal: Stia
 common,1,CodeKey_w1_r1_4,Purple Portal: Aelio EX
-error,0,battletrigger_error1_title,<オブジェクト名を代入>
-error,0,battletrigger_error2_title,<オブジェクト名を代入>
-error,0,battletrigger_error_message_CodeKey_w1_r1_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/エアルパープル（×5）<c>
-error,0,battletrigger_error_message_CodeKey_w1_r1_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/エアルイエロー（×5）<c>
-error,0,battletrigger_error_message_CodeKey_w1_r2_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/リテナパープル（×5）<c>
-error,0,battletrigger_error_message_CodeKey_w1_r2_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/リテナイエロー（×5）<c>
-error,0,battletrigger_error_message_CodeKey_all,バトルトリガーが不足しています。<br><br><yellow>※必要アイテム：<br>　$(0)（×$(1)）<c>
-error,0,battletrigger_error_message_CodeKey_w1_r3_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/クヴァルパープル（×5）<c>
-error,0,battletrigger_error_message_CodeKey_w1_r3_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/クヴァルイエロー（×5）<c>
+common,0,battletrigger_use_check_title,イエローポータル
+common,0,battletrigger_use_check_message,持っている「$(0)」が<br>光り輝いている。台座にはめますか？<br><br>※タスク「$(0)」を達成し<br>　台座を起動します。<br>　起動後はクエストが受注可能になります。
+common,0,battletrigger_used_message,付近の台座が他のアークスにより起動された！
+common,0,CodeKey_w1_r1_1,パープルポータル：エアリオ
+common,0,CodeKey_w1_r1_3,イエローポータル：エアリオ
+common,0,CodeKey_w1_r2_1,パープルポータル：リテム
+common,0,CodeKey_w1_r2_3,イエローポータル：リテム
+common,0,CodeKey_s2022_1,ブルーポータル：バリアブル
+common,0,CodeKey_w1_r3_1,パープルポータル：クヴァリス
+common,0,CodeKey_w1_r3_3,イエローポータル：クヴァリス
+common,0,CodeKey_w1_r4_3,イエローポータル：スティア
+common,0,CodeKey_w1_r4_1,パープルポータル：スティア
+common,0,CodeKey_w1_r1_4,パープルポータル：エアリオEX
 error,1,battletrigger_error1_title,<オブジェクト名を代入>*
 error,1,battletrigger_error2_title,<オブジェクト名を代入>*
 error,1,battletrigger_error_message_CodeKey_w1_r1_1,A special training facility that can be accessed by setting a<br>Battle Trigger.<br><br><yellow>Required Item:<br>B-Trigger/Ael Purple (x5)<c>
@@ -43,3 +34,12 @@ error,1,battletrigger_error_message_CodeKey_w1_r2_3,A special training facility 
 error,1,battletrigger_error_message_CodeKey_all,You don't have enough Battle Triggers.<br><br><yellow>Required Items:<br>$(0) x$(1)<c>
 error,1,battletrigger_error_message_CodeKey_w1_r3_1,A special training facility that can be accessed by setting a<br>Battle Trigger.<br><br><yellow>Necessary Items:<br>Battle Trigger/Kvar Purple (x5)<c>
 error,1,battletrigger_error_message_CodeKey_w1_r3_3,A special training facility that can be accessed by setting a<br>Battle Trigger.<br><br><yellow>Necessary Items:<br>Battle Trigger/Kvar Yellow (x5)<c>
+error,0,battletrigger_error1_title,<オブジェクト名を代入>
+error,0,battletrigger_error2_title,<オブジェクト名を代入>
+error,0,battletrigger_error_message_CodeKey_w1_r1_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/エアルパープル（×5）<c>
+error,0,battletrigger_error_message_CodeKey_w1_r1_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/エアルイエロー（×5）<c>
+error,0,battletrigger_error_message_CodeKey_w1_r2_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/リテナパープル（×5）<c>
+error,0,battletrigger_error_message_CodeKey_w1_r2_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/リテナイエロー（×5）<c>
+error,0,battletrigger_error_message_CodeKey_all,バトルトリガーが不足しています。<br><br><yellow>※必要アイテム：<br>　$(0)（×$(1)）<c>
+error,0,battletrigger_error_message_CodeKey_w1_r3_1,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/クヴァルパープル（×5）<c>
+error,0,battletrigger_error_message_CodeKey_w1_r3_3,バトルトリガーをセットすることで<br>アクセス可能になる特殊な訓練設備。<br><br><yellow>※必要アイテム：<br>　Bトリガー/クヴァルイエロー（×5）<c>

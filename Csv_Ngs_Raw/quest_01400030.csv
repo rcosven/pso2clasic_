@@ -1,17 +1,17 @@
 ﻿section,group,id,text
-AreaName,0,Area0S,虚構の光芒：Depth.4
-AreaName,0,Area0L,虚構の光芒：Depth.4
 AreaName,1,Area0S,Fictitious Beam: Depth 4
 AreaName,1,Area0L,Fictitious Beam: Depth 4
-Basic,0,Title,虚構の光芒：Depth.4
-Basic,0,Explanation,これは、能力を認められたアークスへの討伐依頼である。<br>戦闘技術を駆使して、“ルイノ・マスカレーダ”を単独で撃破せよ。
+AreaName,0,Area0S,虚構の光芒：Depth.4
+AreaName,0,Area0L,虚構の光芒：Depth.4
 Basic,1,Title,Fictitious Beam: Depth 4
 Basic,1,Explanation,This is a suppression operation for elite ARKS Defenders.<br>Make use of your battle skills to defeat the powerful Ruine Masquerader on your own.
-QuestTarget,0,SimpleExplanation,対象エネミーの撃破
+Basic,0,Title,虚構の光芒：Depth.4
+Basic,0,Explanation,これは、能力を認められたアークスへの討伐依頼である。<br>戦闘技術を駆使して、“ルイノ・マスカレーダ”を単独で撃破せよ。
 QuestTarget,1,SimpleExplanation,Defeat the target enemy
-SuccessCondition,0,s0,対象エネミーの撃破
+QuestTarget,0,SimpleExplanation,対象エネミーの撃破
 SuccessCondition,1,s0,Defeat the target enemy
-FailureCondition,0,f0,15:00以上経過する
+SuccessCondition,0,s0,対象エネミーの撃破
 FailureCondition,1,f0,Time exceeds 15:00
-TrialBeginDetail,0,normalMsg_1400000,対象エネミーの撃破
+FailureCondition,0,f0,15:00以上経過する
 TrialBeginDetail,1,normalMsg_1400000,Defeat the target enemy
+TrialBeginDetail,0,normalMsg_1400000,対象エネミーの撃破

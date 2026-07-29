@@ -17,6 +17,18 @@ common,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなったわね。
 common,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 common,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 common,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
+trial_boss_ahl,1,Begin,"Hey, great timing!<br>Let's do this together!"
+trial_boss_ahl,1,Success,"How did it come to this?<br>Ah well, at least we got to bust some heads."
+trial_boss_ahl,1,Failure,"Hey now, I was just getting warmed up!<br>Guess I'll save it for the next bout."
+trial_boss_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
+trial_boss_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
+trial_boss_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
+trial_boss_ahl,1,Begin_7903001,"Hey, just who I was hoping to see!<br>Could use your help with somethin'!"
+trial_boss_ahl,1,Success_7903001,"Heh, that's them done and dusted.<br>You did a real bang up job."
+trial_boss_ahl,1,Failure_7903001,"Oh well, let’s keep this energy up for the next<br>one."
+trial_boss_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
+trial_boss_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
+trial_boss_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
 trial_boss_ahl,0,Begin,おっ！　グッドタイミング！<br>一緒に戦おうぜ！
 trial_boss_ahl,0,Success,なんだよ、こんなもんか。<br>まあ、あんたと楽しめたし、よしとするか。
 trial_boss_ahl,0,Failure,なんだよ、これからってときに！<br>……こっちも仕切りなおすか。
@@ -35,18 +47,12 @@ trial_boss_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった�
 trial_boss_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_boss_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_boss_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_boss_ahl,1,Begin,"Hey, great timing!<br>Let's do this together!"
-trial_boss_ahl,1,Success,"How did it come to this?<br>Ah well, at least we got to bust some heads."
-trial_boss_ahl,1,Failure,"Hey now, I was just getting warmed up!<br>Guess I'll save it for the next bout."
-trial_boss_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
-trial_boss_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
-trial_boss_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
-trial_boss_ahl,1,Begin_7903001,"Hey, just who I was hoping to see!<br>Could use your help with somethin'!"
-trial_boss_ahl,1,Success_7903001,"Heh, that's them done and dusted.<br>You did a real bang up job."
-trial_boss_ahl,1,Failure_7903001,"Oh well, let’s keep this energy up for the next<br>one."
-trial_boss_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
-trial_boss_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
-trial_boss_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
+trial_enemy_ahl,1,Begin,/ci2 2 Hey there! You showed up at the perfect time.<br>Help me out with something!
+trial_enemy_ahl,1,Success,"/ci8 1 Ah, well. Can't win 'em all.<br>You were really something, though!"
+trial_enemy_ahl,1,Failure,"/ci5 3 Hey, hey, don't turn tail and run!<br>Hmph. Buncha wimps."
+trial_enemy_ahl,1,Begin_7903001,/ci2 1 Time to take out the trash.<br>I'm counting on you!
+trial_enemy_ahl,1,Success_7903001,/ci8 2 You did it! Thanks for the help!
+trial_enemy_ahl,1,Failure_7903001,/ci4 3 What gives? I was just getting started.
 trial_enemy_ahl,0,Begin,/ci2 2 おっ！　いいところにいるじゃないか。<br>手を貸してもらうぜ！
 trial_enemy_ahl,0,Success,/ci8 1 まぁ、こんなもんか。<br>あんたも、なかなかいい動きしてたぜ！
 trial_enemy_ahl,0,Failure,/ci5 3 おいおい、逃げてくぜ。<br>なんだよ、大したことないな。
@@ -65,9 +71,3 @@ trial_enemy_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった
 trial_enemy_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_enemy_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_enemy_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_enemy_ahl,1,Begin,/ci2 2 Hey there! You showed up at the perfect time.<br>Help me out with something!
-trial_enemy_ahl,1,Success,"/ci8 1 Ah, well. Can't win 'em all.<br>You were really something, though!"
-trial_enemy_ahl,1,Failure,"/ci5 3 Hey, hey, don't turn tail and run!<br>Hmph. Buncha wimps."
-trial_enemy_ahl,1,Begin_7903001,/ci2 1 Time to take out the trash.<br>I'm counting on you!
-trial_enemy_ahl,1,Success_7903001,/ci8 2 You did it! Thanks for the help!
-trial_enemy_ahl,1,Failure_7903001,/ci4 3 What gives? I was just getting started.

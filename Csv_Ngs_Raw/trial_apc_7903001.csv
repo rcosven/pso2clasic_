@@ -17,6 +17,18 @@ common,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなったわね。
 common,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 common,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 common,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
+trial_boss_ahl,1,Begin,"This could be bad...<br>Sorry, but could you lend a hand?"
+trial_boss_ahl,1,Success,Phew... My savior!<br>Thanks for all the help!
+trial_boss_ahl,1,Failure,Hm? The enemies are retreating...<br>Oh well. I'm just glad everyone's alright.
+trial_boss_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
+trial_boss_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
+trial_boss_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
+trial_boss_ahl,1,Begin_7905001,This doesn't look good...
+trial_boss_ahl,1,Success_7905001,Phew... that was a close one.<br>Thanks for the help!
+trial_boss_ahl,1,Failure_7905001,The enemy is retreating!
+trial_boss_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
+trial_boss_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
+trial_boss_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
 trial_boss_ahl,0,Begin,これは、ちょっとまずいかも……。<br>すみません！　手を貸してもらえますか？
 trial_boss_ahl,0,Success,はぁ……おかげで助かりました。<br>ありがとうございます！
 trial_boss_ahl,0,Failure,おや？　エネミーが退いていきますね。<br>……まあ、お互い無事でなによりです。
@@ -35,18 +47,18 @@ trial_boss_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった�
 trial_boss_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_boss_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_boss_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_boss_ahl,1,Begin,"This could be bad...<br>Sorry, but could you lend a hand?"
-trial_boss_ahl,1,Success,Phew... My savior!<br>Thanks for all the help!
-trial_boss_ahl,1,Failure,Hm? The enemies are retreating...<br>Oh well. I'm just glad everyone's alright.
-trial_boss_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
-trial_boss_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
-trial_boss_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
-trial_boss_ahl,1,Begin_7905001,This doesn't look good...
-trial_boss_ahl,1,Success_7905001,Phew... that was a close one.<br>Thanks for the help!
-trial_boss_ahl,1,Failure_7905001,The enemy is retreating!
-trial_boss_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
-trial_boss_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
-trial_boss_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
+trial_enemy_ahl,1,Begin,"/ci1 5 Sorry to bother you, but I'm taking a real<br>beating. Can you help out for a sec?"
+trial_enemy_ahl,1,Success,/ci1 1 Phew... We got out of that somehow.<br>Thanks for everything!
+trial_enemy_ahl,1,Failure,/ci4 3 The enemy is retreating!<br>Let’s not worry about going after them.
+trial_enemy_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
+trial_enemy_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
+trial_enemy_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
+trial_enemy_ahl,1,Begin_7905001,"/ci1 2 Sorry to bother you,<br>but could you help me out?"
+trial_enemy_ahl,1,Success_7905001,/ci1 5  Phew... We made it out alive.
+trial_enemy_ahl,1,Failure_7905001,"/ci4 5 Wait, the enemy is..."
+trial_enemy_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
+trial_enemy_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
+trial_enemy_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
 trial_enemy_ahl,0,Begin,/ci1 5 すみません！　少し苦戦していて……。<br>手伝ってもらえますか？
 trial_enemy_ahl,0,Success,/ci1 1 ふぅ……なんとかなりました。<br>ありがとうございます！
 trial_enemy_ahl,0,Failure,/ci4 3 エネミーが撤退！<br>……深追いはやめておきましょうか。
@@ -65,15 +77,3 @@ trial_enemy_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった
 trial_enemy_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_enemy_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_enemy_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_enemy_ahl,1,Begin,"/ci1 5 Sorry to bother you, but I'm taking a real<br>beating. Can you help out for a sec?"
-trial_enemy_ahl,1,Success,/ci1 1 Phew... We got out of that somehow.<br>Thanks for everything!
-trial_enemy_ahl,1,Failure,/ci4 3 The enemy is retreating!<br>Let’s not worry about going after them.
-trial_enemy_ahl,1,Begin_v2,"/ci1 1 Oh, perfect timing.<br>Could you give me a hand?"
-trial_enemy_ahl,1,Success_v2,/ci2 1 Thank you. That was a great help.<br>I look forward to working with you again.
-trial_enemy_ahl,1,Failure_v2,"/ci4 3 This is getting dangerous!<br>I'm sorry, but I'm going to need to fall back."
-trial_enemy_ahl,1,Begin_7905001,"/ci1 2 Sorry to bother you,<br>but could you help me out?"
-trial_enemy_ahl,1,Success_7905001,/ci1 5  Phew... We made it out alive.
-trial_enemy_ahl,1,Failure_7905001,"/ci4 5 Wait, the enemy is..."
-trial_enemy_ahl,1,Begin_7002001_v3,/ci1 2 Why are there so many enemies?
-trial_enemy_ahl,1,Success_7002001_v3,/ci2 1 Phew... We managed somehow.
-trial_enemy_ahl,1,Failure_7002001_v3,/ci4 3 Ugh... I took one too many hits.<br>I'm going to retreat for now.
