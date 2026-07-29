@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Common,0,Title,クエストカウンター
 Common,0,TitleCampship,クエストカウンター端末
 Common,0,HelpNon,<c f0df60>しばらくお待ちください。<c>
@@ -63,7 +63,7 @@ Caution,0,NotFoundFreeFieldQuest,クエストが受注されていません。<b
 Caution,0,NotFoundQuestRecord,クエストレコードが存在しません。
 Caution,0,CantStartQuestNotFoundRoom,対象ルームが見つからなかったため<br>クエストを開始できません。
 Caution,0,CantStartQuestCapacityOverRoom,ルームの人数オーバーのため参加できません。
-Caution,0,CantStartQuestCapacityOverRoom2,ルームの人数オーバーのため参加できません。<br>　人数にはルームに参加予定のプレイヤーも含んでおり、<br>　参加人数に反映されていない場合があります。<br>　<br>　<yellow>※参加予定の有効期限は1分ですので、<br>　　時間を置いて再度お試しいただくことで、<br>　　参加可能となる場合もあります。<c>
+Caution,0,CantStartQuestCapacityOverRoom2,　ルームの人数オーバーのため参加できません。<br>　人数にはルームに参加予定のプレイヤーも含んでおり、<br>　参加人数に反映されていない場合があります。<br>　<br>　<yellow>※参加予定の有効期限は1分ですので、<br>　　時間を置いて再度お試しいただくことで、<br>　　参加可能となる場合もあります。<c>
 Caution,0,CantStartQuestNewRaidQuest,パーティーメンバーが<br>参加条件であるエネミーを倒していないため、<br>クエストを受注できません。
 Caution,0,CantStartQuestNotNotFoundParty,対象パーティーが見つからなかったため、<br>クエストを開始できません。
 Caution,0,CantStartQuestCapacityOverParty,パーティーの人数オーバーのため参加できません。
@@ -289,10 +289,10 @@ Boost_info,0,Shipbonus,アークスシップ対抗戦ブースト情報
 Boost_info,0,Gpboost,ラウンドブースト
 Boost_info,0,BoostExplain,アークスシップ対抗戦のラウンド順位の結果、<br>貢献ポイントへのラウンドブーストが発生中です。
 Boost_info,0,BoostPoint,デイリーブースト
-Boost_info,0,MyBoostPointValue,+$(0)％
+Boost_info,0,MyBoostPointValue, +$(0)％
 Boost_info,0,BoostUpperLimit,(MAX)
 Boost_info,0,BoostInformation,デイリーブースト情報
-Boost_info,0,MyBoostPointValueEx,+$(0)％(MAX)
+Boost_info,0,MyBoostPointValueEx, +$(0)％(MAX)
 Boost_info,1,Shipbonus,Información sobre el impulso de la competencia de barcos ARKS
 Boost_info,1,Gpboost,Impulso redondo
 Boost_info,1,BoostExplain,Se han aplicado aumentos de ronda a los puntos de contribución<br>basado en clasificaciones de rondas de las competiciones de barcos ARKS.
@@ -333,7 +333,7 @@ QuestTypeSelect,0,HelpMes04,特定の期間のみ公開される<br>期間限定
 QuestTypeSelect,0,HelpMes05,-
 QuestTypeSelect,0,HelpMes06,-
 QuestTypeSelect,0,HelpMes07,PHANTASY STAR ONLINE2 の世界の<br>謎に迫る物語のエピソード2を<br>体験するクエストです。<br><br>日常的に各地を回り、情報を集めていると<br>それらの情報を元に、新たな道を発見し<br>新事実や真相に近づいていきます。<br><br>観測と異なる歴史を創り出し<br>さらなる未来へ繋ぐため<br>あなた一人で挑むクエストとなります。
-QuestTypeSelect,0,HelpMes08,大会やイベント用に、<br>公式ネットカフェの中でも特定店舗限定で<br>公開されているクエストです。
+QuestTypeSelect,0,HelpMes08,大会やイベント用に、<br>公式ネットカフェの中でも特定店舗限定で<br>公開されているクエストです。 
 QuestTypeSelect,0,HelpMes09,-
 QuestTypeSelect,0,HelpMes10,-
 QuestTypeSelect,0,HelpMes11,参加者が「アドバンスカプセル」を<br>特定数所持している必要があります。<br><br>クエストクリア時に<br>「アドバンスリスク」が上昇します。<br>パーティーリーダーの<br>「アドバンスリスク」の数値に応じて<br>クエストの難易度が変化します。<br><br>「アドバンスリスク」は、クエストごとに<br>累積計算されており、一定期間で<br>数値がリセットされます。
@@ -344,7 +344,7 @@ QuestTypeSelect,0,CautionNon,不明なエラーです。<br><br>[No.3002]
 QuestTypeSelect,0,CautionNothingQuest,このクエストタイプのクエストは現在１つもありません。
 QuestTypeSelect,0,HelpMes15,レベル・装備・アイテムなどの<br>初期ステータスを統一した環境で行う<br>仮想空間（ＶＲ）での訓練クエストです。<br>ＶＲエネルギーが無くなる前に<br>指定されたミッション数のクリアを<br>目指すクエストとなります。<br><br>受注時、全員同じステータスに統一される為<br>プレイヤー自身の実力と<br>プレイヤー間の連携が重要です。
 QuestTypeSelect,0,CautionNonChallengeArea,チャレンジクエストは、「共通シップ」または<br>「チャレンジブロック」でのみ受注できます。<br>ブロック転送テレポーターから移動してください。<br><br>【共通シップとは？】<br>　異なるシップに所属するプレイヤーと一緒に、<br>　チャレンジクエストやバトルアリーナを<br>　プレイできる専用のシップです。<br><yellow>※フレンドリスト・メール・シンボルアートは<br>　共通シップ専用に切り替わります。<c><br><br>【チャレンジブロックとは？】<br>　チャレンジクエストを受注できるブロックです。<br>　受注できるクエストは共通シップと同じです。
-QuestTypeSelect,0,CautionNonContestArea,「アークスGP2016予選」を公開中です。<br>今回のアークスGPクエストは、共通シップ<br>またはチャレンジブロックで受注できます。<br>ブロック転送テレポーターから移動して下さい。<br><br>「アークスGP2016予選」では<br>キャンプシップ内の「クラスセット端末」から<br>ハンタータイプ、レンジャータイプなど<br>各クラスの装備、クラススキルのセットを<br>選んでプレイすることができます。
+QuestTypeSelect,0,CautionNonContestArea,「アークスGP2016予選」を公開中です。<br>今回のアークスGPクエストは、共通シップ<br>またはチャレンジブロックで受注できます。<br>ブロック転送テレポーターから移動して下さい。<br><br>「アークスGP2016予選」では<br>キャンプシップ内の「クラスセット端末」から<br>ハンタータイプ、レンジャータイプなど<br>各クラスの装備、クラススキルのセットを<br>選んでプレイすることができます。 
 QuestTypeSelect,0,CautionNonContestArea_NetCafe,ネットカフェ限定のクエストを公開中です。<br>共通シップまたはチャレンジブロックでのみ<br>受注できます。<br>ブロック転送テレポーターから移動して下さい。<br><br>【共通シップ】<br>異なるシップに所属するプレイヤーと一緒に、<br>クエストをプレイできるシップです。<br><yellow>※フレンドリスト・メール・シンボルアートは<br>　共通シップ専用のデータに切り替わります。<c><br><br>【チャレンジブロック】<br>対象クエストを受注できるブロックです。<br>受注できるクエストは共通シップと同じです。
 QuestTypeSelect,0,CautionNonPokaArea,バトルアリーナは、「共通シップ」でのみプレイできます。<br>以下のいずれかの方法で、共通シップに<br>移動してください。<br><br>・クエストカウンターのトップメニューから<br>　<yellow>「バトルアリーナをプレイする」<c>を選択<br><br>・ブロック転送テレポーターから<br>　<yellow>「共通シップのバトルロビーへ移動」<c>を選択<br><br>・クイックメニューから<yellow>「共通シップへ行く」<c>を選択<br><br>【共通シップとは？】<br>　異なるシップに所属するプレイヤーと一緒に、<br>　バトルアリーナやチャレンジクエストを<br>　プレイできる専用のシップです。
 QuestTypeSelect,0,CautionNonBasnetOpen,バスタークエストは<br>メインクエスト【EP5】のメインストーリー<br>「メチャクチャな世界」のクリア後に解放されます。<br><br><yellow>※同一アカウントの他のキャラクターで<br>　すでにバスタークエストを解放済みの場合は<br>　EP5モードに遷移することで<br>　同クエストが受注可能になります。<c>
@@ -1053,7 +1053,7 @@ RankSelect,0,MessageQuestTriggerConsumption_OnlyBeforeStart,このトリガー�
 RankSelect,0,TitleQuestTriggerReorderConfirm,再受注確認
 RankSelect,0,MessageQuestTriggerReorderConfirm,トリガークエストを再受注します。<br><br><green>※アイテムを消費せず再受注できます。<c><br><br><yellow>あなたがこのクエストから離脱すると、<br>クエストに参加している全員がクエスト破棄と<br>なりますのでご注意ください。<c><br><br>また、クエスト破棄や回線切断など、<br>いかなる理由でも消費されたクエストトリガーは<br>戻りませんので、ご了承ください。<br><br>クエストを再受注してよろしいですか？
 RankSelect,0,RidingQuestPoint,$(0)pt
-RankSelect,0,RidingQuestPointTime,($(0))
+RankSelect,0,RidingQuestPointTime, ($(0))
 RankSelect,0,AttentionNewRoom_HighLevelQuest,<red>受注中のクエストは<br>「破棄ペナルティー」対象です！<c><br><br>破棄すると他のプレイヤーに迷惑がかかるため、<br>発生中の緊急クエストを再受注できなくなります。<br>また、強制的に別ブロックへの移動が行われます。<br><br>他のクエストを受注する場合は、クエスト破棄となり、<br>別ブロックに移動後、そのクエストを受注できます。<br><br>「破棄ペナルティー」を受け、クエストを破棄します。<br>よろしいですか？
 RankSelect,0,HighScore_Solo,(ソロ)
 RankSelect,0,HighScore_Multi,(クラス別4人)
@@ -1543,20 +1543,20 @@ Episode5,0,Quest_Explain_Continue_6,配信中のストーリーはすべてク�
 Episode5,0,Quest_Explain_Continue_Main_NormalEnd,EPISODE 6ストーリーのノーマルエンドに到達しました。<br>特定条件を満たすことで、もう一つの選択が可能です。
 Episode5,0,Quest_Explain_Continue_Main_TrueEnd,EPISODE 6ストーリーの<br>グランドエンドクリア済みです。
 Episode5,0,Quest_Explain_Continue_Sub_End,EPISODE 6のサブストーリーは<br>すべてクリア済みです。
-Episode5,0,Quest_Name_Continue,EPISODE 5　メインストーリー全クリア済み
-Episode5,0,Quest_Name_Continue_Sub,EPISODE 5　サブストーリー全クリア済み
-Episode5,0,Quest_Name_Continue_1,EPISODE 2へ
-Episode5,0,Quest_Name_Continue_2,EPISODE 3へ
-Episode5,0,Quest_Name_Continue_3,EPISODE4へ
-Episode5,0,Quest_Name_Continue_4,EPISODE5へ
-Episode5,0,Quest_Name_Continue_5,EPISODE6へ
-Episode5,0,Quest_Name_Continue_6,次回配信に続く…
-Episode5,0,Quest_Name_Continue_Main_NormalEnd,EPISODE 6　ノーマルエンドに到達
-Episode5,0,Quest_Name_Continue_Main_TrueEnd,EPISODE 6　グランドエンドクリア済み
-Episode5,0,Quest_Name_Continue_Sub_End,EPISODE 6　サブストーリー全クリア済み
-Episode5,0,Quest_Name_TopContinue_1,EPISODE 2へ
-Episode5,0,Quest_Name_TopContinue_2,EPISODE 3へ
-Episode5,0,Quest_Name_TopContinue_3,EPISODE 3全クリア済み
+Episode5,0,Quest_Name_Continue,　　　EPISODE 5　メインストーリー全クリア済み
+Episode5,0,Quest_Name_Continue_Sub,　　　EPISODE 5　サブストーリー全クリア済み
+Episode5,0,Quest_Name_Continue_1,　　　EPISODE 2へ
+Episode5,0,Quest_Name_Continue_2,　　　EPISODE 3へ
+Episode5,0,Quest_Name_Continue_3,　　　EPISODE4へ
+Episode5,0,Quest_Name_Continue_4,　　　EPISODE5へ
+Episode5,0,Quest_Name_Continue_5,　　　EPISODE6へ
+Episode5,0,Quest_Name_Continue_6,　　　次回配信に続く…
+Episode5,0,Quest_Name_Continue_Main_NormalEnd,　　　EPISODE 6　ノーマルエンドに到達
+Episode5,0,Quest_Name_Continue_Main_TrueEnd,　　　EPISODE 6　グランドエンドクリア済み
+Episode5,0,Quest_Name_Continue_Sub_End,　　　EPISODE 6　サブストーリー全クリア済み
+Episode5,0,Quest_Name_TopContinue_1,　　　EPISODE 2へ
+Episode5,0,Quest_Name_TopContinue_2,　　　EPISODE 3へ
+Episode5,0,Quest_Name_TopContinue_3,　　　EPISODE 3全クリア済み
 Episode5,0,Quest_Explain_TopContinue_1,EPISODE 1のストーリーは<br>すべてクリア済みです。<br><br>続きは、EPISODE 2でプレイ可能です。<br><br><yellow>※<c><%Decide><yellow>でEPISODE 2へ<c>
 Episode5,0,Quest_Explain_TopContinue_2,EPISODE 2のストーリーは<br>すべてクリア済みです。<br><br>続きは、EPISODE 3でプレイ可能です。<br><br><yellow>※<c><%Decide><yellow>でEPISODE 3へ<c>
 Episode5,0,Quest_Explain_TopContinue_3,オムニバスクエスト【EP3】の<br>ストーリーは、すべてクリア済みです。<br><br>引き続き、EPISODE 4以降の<br>ストーリーをお楽しみください。<br><br><yellow>※EPISODE 4のストーリーは<br>艦橋にいるシエラから「EP4モード」に変更し<br>「ストーリーボード【EP4】」を進行することで<br>お楽しみいただけます。<c>

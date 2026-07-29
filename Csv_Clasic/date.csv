@@ -83,24 +83,25 @@ Time,0,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
 Time,0,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
 Time,0,EmptyDateTime,--年--月--日--時--分
 Time,0,Period,$(0)時間$(1)分
-Time,0,PeriodMin,$(分間
+Time,0,PeriodMin,$(0)分間
 Time,0,LeaveHour,$(0)時間$(1)分
-LeaveMin -,1,TimeCountSec,$(0) seg.
-LeaveMin -,1,TimeCount,$(0):$(1)
-LeaveMin -,1,TimeHour,$(0):$(1)
-LeaveMin -,1,TimeHourJust,$(0):$(1)
-LeaveMin -,1,TimeDayOfHour, mes de $(1) en $(0)
-LeaveMin -,1,Time,$(0):$(1)
-LeaveMin -,1,TimeSec,$(0):$(1):$(2)
-LeaveMin -,1,UtcYmdt_MonthDay," mes de $(1):$(2), $(3) $(0)"
-LeaveMin -,1,UtcYmdt_YearMonthDay," mes de $(1):$(2), $(3) $(0), $(4)"
-LeaveMin -,1,DateTime,mes - dia - aйo $(1):$(2)
-LeaveMin -,1,DateTime_v,mes/dia/aйo $(1):$(2)
-LeaveMin -,1,DateTimeSec,mes-dia-aйo. $(1):$(2):$(4)
-LeaveMin -,1,DateTimeSec_create,mes-dia-aйo. $(1)_$(2)_$(4)
-LeaveMin -,1,DateTimeSec_v,mes/dia/aйo $(1):$(2):$(4)
-LeaveMin -,1,EmptyDateTime,"-- --, -- --:--"
-LeaveMin -,1,Period,%h %m
-LeaveMin -,1,PeriodMin,millones
-LeaveMin -,1,LeaveHour,%h %m
-LeaveMin -,1,LeaveMin,millones
+Time,0,LeaveMin,$(0)分
+Time,1,TimeCountSec,$(0) sec.
+Time,1,TimeCount,$(0):$(1)
+Time,1,TimeHour,$(0):$(1)
+Time,1,TimeHourJust,$(0):$(1)
+Time,1,TimeDayOfHour,$(1) at $(0)
+Time,1,Time,$(0):$(1)
+Time,1,TimeSec,$(0):$(1):$(2)
+Time,1,UtcYmdt_MonthDay,"$(1):$(2), $(3) $(0)"
+Time,1,UtcYmdt_YearMonthDay,"$(1):$(2), $(3) $(0), $(4)"
+Time,1,DateTime,$(3)-$(0)-$(4) $(1):$(2)
+Time,1,DateTime_v,$(3)/$(0)/$(4) $(1):$(2)
+Time,1,DateTimeSec,$(5)-$(3)-$(0). $(1):$(2):$(4)
+Time,1,DateTimeSec_create,$(5)-$(3)-$(0). $(1)_$(2)_$(4)
+Time,1,DateTimeSec_v,$(5)/$(3)/$(0) $(1):$(2):$(4)
+Time,1,EmptyDateTime,"-- --, -- --:--"
+Time,1,Period,$(0)h $(1)m
+Time,1,PeriodMin,$(0) m
+Time,1,LeaveHour,$(0)h $(1)m
+Time,1,LeaveMin,$(0) m

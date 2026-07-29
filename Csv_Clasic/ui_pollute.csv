@@ -1,6 +1,6 @@
-section,group,id,text
-FormSelect,0,FormSelectOperation_KeyBoard,選択：<%MoveForward><%MoveBack> 発動：<%NormalAttack>/<%Decide>  キャンセル：[Esc]キー
-FormSelect,0,FormSelectOperation_Pad,選択：左スティック/方向キー  発動：<%Decide>  キャンセル：<%Cancel>
+﻿section,group,id,text
+FormSelect,0,FormSelectOperation_KeyBoard,　選択：<%MoveForward><%MoveBack> 発動：<%NormalAttack>/<%Decide>  キャンセル：[Esc]キー　
+FormSelect,0,FormSelectOperation_Pad,　選択：左スティック/方向キー  発動：<%Decide>  キャンセル：<%Cancel>　
 FormSelect,1,FormSelectOperation_KeyBoard,Select: <%MoveForward><%MoveBack> Activate: <%NormalAttack>/<%Decide>  Cancel: [Esc] Key
 FormSelect,1,FormSelectOperation_Pad,Select: Left Stick/Directional Keys  Activate: <%Decide>  Cancel: <%Cancel>
 Common,0,message1,テストデータ
@@ -66,8 +66,8 @@ Formmenu,1,FormDetailsText4,Encarna el poder de Dark Falz Gemini <br>y lucha ale
 Formmenu,1,ResetSkillLevel_Title,RESTABLECER HABILIDADES
 Formmenu,1,ResetSkillLevel_Ask,Todos los $(0) niveles de habilidad serán restablecidos.<br><pure_yellow><br>La EXP que gastaste para subir de nivel te será devuelta. <br>Los requisitos de desbloqueo no serán restablecidos.<br><c><br>¿Estás seguro de que deseas continuar?
 Formmenu,1,ResetSkillLevel_Success,Todos los niveles de habilidad de $(0) han sido restablecidos.
-Formmenu,1,ResetSkillLevel_ErrorCommon,No se puede procesar debido a un error inesperado.<br>Por favor, espera un momento e inténtalo de nuevo.
-Formmenu,1,ResetSkillLevel_ErrorServer,No se puede procesar debido a un problema con el servidor.<br><br>Por favor, espera un momento e inténtalo de nuevo.
+Formmenu,1,ResetSkillLevel_ErrorCommon,No se puede procesar debido a un error inesperado.<br>Por favor
+Formmenu,1,ResetSkillLevel_ErrorServer,No se puede procesar debido a un problema con el servidor.<br><br>Por favor
 Formmenu,1,ResetSkillLevel_ErrorInQuest,No se puede procesar porque estás en una misión.
 Formmenu,1,Style_Title,-
 Formmenu,1,Style_Message,-
@@ -447,7 +447,7 @@ Skillmenu,1,LevelUp_Lack,No tienes suficiente EXP para aprender esta habilidad.<
 Skillmenu,1,LevelUp_Lack_v,No tienes suficiente EXP para aprender esta habilidad.<br><br>Puedes comprobar el estado de cada nivel de habilidad en<br><pict Sign_SELECT>.<br><br>(Coste de EXP: $(0) EXP)
 Skillmenu,1,LevelUp_LackLv,No has alcanzado el nivel suficiente.
 Skillmenu,1,LevelUp_Max,Esta habilidad ha alcanzado el nivel máximo.
-Skillmenu,1,LevelUp_Wait,Por favor, espera.
+Skillmenu,1,LevelUp_Wait,Por favor
 Skillmenu,1,LevelUp_InQuest,Las habilidades no pueden ser aprendidas o subidas de nivel porque estás en<br>medio de una misión.
 Skillmenu,1,LevelUp_LackPre,No puedes aprender esta habilidad porque no has cumplido los<br>requisitos.<br><br>Puedes comprobar el estado del nivel de habilidad con <%NextTabDetails>.
 Skillmenu,1,LevelUp_LackPre_v,No puedes aprender esta habilidad porque no has cumplido los<br>requisitos.<br><br>Puedes comprobar el estado del nivel de habilidad con <pict Sign_SELECT>.

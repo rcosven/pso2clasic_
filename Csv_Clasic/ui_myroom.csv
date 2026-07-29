@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Debug,0,MYROOM,マイルーム
 Debug,0,BACKPACK,所持品
 Debug,0,WAREHOUSE,倉庫
@@ -123,11 +123,11 @@ Menu,0,guide_cancel_vita,戻る：
 Menu,0,guide_move_key,↑↓←→
 Menu,0,guide_move_pad,<%DirectionButton> / <%LStick>
 Menu,0,guide_rotation_key,Ctrl + ← / Ctrl + →
-Menu,0,guide_rotation_pad,<%TabBack> / <%TabForward>
+Menu,0,guide_rotation_pad, <%TabBack> / <%TabForward>
 Menu,0,guide_enter_cancel_key,<%Decide> / <%Cancel>
 Menu,0,guide_enter_key_vita,<%Decide>
 Menu,0,guide_cancel_key_vita,<%Cancel>
-Menu,0,guide_enter_total_cost,設置コスト
+Menu,0,guide_enter_total_cost,設置コスト 
 Menu,0,guide_not_key,使用しない
 Menu,0,ItemList_Title_RoomGoods,ルームグッズ一覧
 Menu,0,ItemList_Title_Reform,リフォームパス一覧
@@ -397,7 +397,7 @@ GoodsMenu,0,RoomGoods_DrumpadGuideLowTom_key,[4]キー
 GoodsMenu,0,RoomGoods_DrumpadGuideCymbal_key,[5]キー
 GoodsMenu,0,RoomGoods_DrumpadGuideDrum_key,[6]キー
 GoodsMenu,0,RoomGoods_DrumpadGuideReturn_key,[0]キー
-GoodsMenu,0,RoomGoods_DrumpadGuideOr,or
+GoodsMenu,0,RoomGoods_DrumpadGuideOr, or 
 GoodsMenu,0,RoomGoods_LightSourceChangeColor,ライトカラーの変更
 GoodsMenu,0,RoomGoods_LightSourceInvalid,通常のライトに戻す
 GoodsMenu,0,RoomGoods_Closet,エステへ行く

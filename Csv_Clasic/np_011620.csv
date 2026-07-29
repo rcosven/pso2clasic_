@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Select01,0,11_voice_NPC_5162_111,何が知りたいのかな？
 Select01,0,text01,『ブラックニャック』って？
 Select01,0,text02,『ブラックニャック』の遊び方（基本編）
@@ -11,9 +11,9 @@ Select01,1,text03,Cómo jugar Blacknyack (avanzado)
 Select01,1,text04,Dejar
 tut01,0,text00,『ブラックニャック』について
 tut01,0,text01,『ブラックニャック』について説明します。<br><br>ブラックニャックは最大５人同時プレイが<br>可能なカジノゲームとなります。<br><br>各テーブルに配置されたディーラーに勝利し<br>カジノコインを増やすゲームです。
-tut01,0,text02,ジノコインは没収されます。<br>ディーラーと引き分けた場合は<br>ＢＥＴしたカジノコインが全額払い<br>戻されます。<br><br>配られたカードで勝負に出るのか<br>追加でカードを引くのかが<br>勝敗の分かれ道になります。
+tut01,0,text02,手札の合計点が２１点を超えないように<br><red>２１点に近づけるゲームです<c>。<br>ディーラーよりも２１点に近ければ<br>勝利となります。<br>合計点が<red>２１点を超えると負け<c>が確定して<br>ＢＥＴしたカジノコインは没収されます。<br>ディーラーと引き分けた場合は<br>ＢＥＴしたカジノコインが全額払い<br>戻されます。<br><br>配られたカードで勝負に出るのか<br>追加でカードを引くのかが<br>勝敗の分かれ道になります。
 tut01,0,text03,カードは、スペード、ハート、クラブ<br>ダイヤのスート４種類、ＡからＫまでの<br>各１３枚ずつの合計５２枚と<br>スペシャルカードで構成されています。<br><br>カードは１ゲーム毎に、シャッフルされます。
-tut01,0,text04,ーは合計点が１６点以下の場合、<br>必ずカードを引きます。<br>１７点以上でカードを引くのをやめますが<br>気まぐれで引いてしまう場合もあります。<br><br>※手札の合計が「21」になると、<br>自動的に「STAY」扱いとなります。
+tut01,0,text04,『カードの点数・Ａ』<br>Ａ／エースは、１点か１１点となり<br>プレイヤーの任意で選択できます。<br><br>『カードの点数・Ｊ～Ｋ』<br>Ｊ／ジャック、Ｑ／クイーン<br>Ｋ／キングは１０点として計算します。<br><br>※ディーラーは合計点が１６点以下の場合、<br>必ずカードを引きます。<br>１７点以上でカードを引くのをやめますが<br>気まぐれで引いてしまう場合もあります。<br><br>※手札の合計が「21」になると、<br>自動的に「STAY」扱いとなります。
 tut01,0,text05,<red>スペシャルカード<c><br><br>サイコロの出目でカードの点数が変動する<br>特殊なカードとなります。<br>サイコロはスペシャルカードが出現する度に<br>振ってカードの点数を決めます。<br>場に複数のスペシャルカードが出た場合は<br>サイコロの出た目が全て加算されます。<br>ディーラーとプレイヤーは<br>振るサイコロが異なり、出目も異なります。<br><br>現在のスペシャルカードの合計点は<br>画面右上に表示されます。
 tut01,1,text00,negroyack
 tut01,1,text01,Blacknyack es un juego de casino al que pueden jugar hasta cinco jugadores.<br><br>¡Vence al crupier en cada mesa y gana CC!
@@ -22,14 +22,14 @@ tut01,1,text03,"El juego se juega con una baraja estándar de 52 cartas:<br>cuat
 tut01,1,text04,"Ases<br>Los ases valen 1 u 11 puntos.<br>(Puedes elegir cuál).<br><br>Jotas-Reyes<br>Las jotas, las reinas y los reyes valen 10 puntos cada uno.<br><br>Nota: el crupier debe empatar si tiene 16 puntos o menos.<br>Normalmente paran a partir de los 17 años, pero nunca se sabe...<br><br>Si tu mano suma 21, te quedarás automáticamente."
 tut01,1,text05,"<red>Tarjetas especiales<c><br><br>El valor de estas cartas está determinado por la tirada de un dado. Cada vez una tarjeta especial<br>Se juega, se tira un dado para determinar su valor. Si se juegan varias cartas especiales<br>simultáneamente, el dado determina todos sus valores. Si las tiradas de dados difieren entre<br>Los jugadores y el crupier, también lo hacen sus valores.<br><br>El valor total actual de las tarjetas especiales.<br>aparece en la esquina superior derecha."
 tut02,0,text00,『ブラックニャック』の遊び方（基本編）について
-tut02,0,text01,対戦します。<br><br><red><br>フレンドと一緒にプレイしたい時は<br>同じテーブルの座席にアクセスしましょう。<c>
-tut02,0,text02,が<br>大きくなります。<br><br>カジノコインは１ゲーム毎に清算されます。<br><br>ゲームを継続する場合は、ゲームレートを<br>選択します。<br><br>※１ゲーム毎にカードはシャッフルされます。
+tut02,0,text01,『ブラックニャックの遊び方』<br><br>ブラックニャックは<br>最大５人で遊べるカードゲームで<br>プレイヤーはディーラーと対戦します。<br><br><red><br>フレンドと一緒にプレイしたい時は<br>同じテーブルの座席にアクセスしましょう。<c>
+tut02,0,text02,空いている座席にアクセスすることで<br>ゲームにエントリーすることができます。<br>エントリー後、ゲームレートを選択します。<br>ゲームレートは支払うカジノコインが多い程<br>ゲーム内で増減するカジノコインが<br>大きくなります。<br><br>カジノコインは１ゲーム毎に清算されます。<br><br>ゲームを継続する場合は、ゲームレートを<br>選択します。<br><br>※１ゲーム毎にカードはシャッフルされます。
 tut02,0,text03,［←］キーで表向きのカードの数値を<br>表示することができます。<br>［Ｅｓｃ］キーで退室することができます。<br><br>自分の手番になると選択ウィンドウが<br>表示されます。<br>選択ウィンドウに表示される<br>「ＨＩＴ（カードを引く）」<br>「ＳＴＡＹ（カードを引かない）」<br>「ＤＯＵＢＬＥ　ＤＯＷＮ」の中から<br>一つを選択します。<br><br><red>※途中終了した際は、ＢＥＴの返還および<br>そのゲームの配当を得ることはできません。<c>
 tut02,0,text04,<pict Sign_LEFT>で表向きのカードの数値を<br>表示することができます。<br><%MainMenu>で退室することができます。<br><br>自分の手番になると選択ウィンドウが<br>表示されます。<br>選択ウィンドウに表示される<br>「ＨＩＴ（カードを引く）」<br>「ＳＴＡY（カードを引かない）」<br>「ＤＯＵＢＬＥ　ＤＯＷＮ」の中から<br>一つを選択します。<br><br><red>※途中終了した際は、ＢＥＴの返還および<br>そのゲームの配当を得ることはできません。<c>
 tut02,0,text05,<pict Sign_LEFT>で表向きのカードの数値を<br>表示することができます。<br><pict Sign_CROSS>で退室することができます。<br><br>自分の手番になると選択ウィンドウが<br>表示されます。<br>選択ウィンドウに表示される<br>「ＨＩＴ（カードを引く）」<br>「ＳＴＡY（カードを引かない）」<br>「ＤＯＵＢＬＥ　ＤＯＷＮ」の中から<br>一つを選択します。<br><br><red>※途中終了した際は、ＢＥＴの返還および<br>そのゲームの配当を得ることはできません。<c>
-tut02,0,text06,点で<br>勝負することです。<br><br>『ＢＵＳＴ／バスト』<br>２１点を超えてしまうことです。<br>ＢＥＴしたカジノコインはすべて没収され<br>ます。
-tut02,0,text07,れ以上カードを引くことはできません。<br><br><red>ＤＯＵＢＬＥ　ＤＯＷＮ／ダブルダウンで<br>勝利すると高い配当が得られます。<c>
-tut02,0,text08,レートを選択することで<br>次ゲームがプレイできます。<br><br>※一定時間、選択決定がされない場合は<br>強制的に退席させられます。
+tut02,0,text06,『ＨＩＴ／ヒット』<br>カードを１枚追加することです。<br>ＨＩＴは３回まで可能です。<br><br>『ＳＴＡＹ／ステイ』<br>カードを追加しないで現在の合計点で<br>勝負することです。<br><br>『ＢＵＳＴ／バスト』<br>２１点を超えてしまうことです。<br>ＢＥＴしたカジノコインはすべて没収され<br>ます。
+tut02,0,text07,『ＤＯUＢＬＥ　ＤＯＷＮ／ダブルダウン』<br>最初のＨＩＴのみできるＢＥＴの増額です。<br>ＢＥＴを倍にし３枚目のカードを引きますが<br>それ以上カードを引くことはできません。<br><br><red>ＤＯＵＢＬＥ　ＤＯＷＮ／ダブルダウンで<br>勝利すると高い配当が得られます。<c>
+tut02,0,text08,１ゲーム終了時にはリザルト画面が表示され<br>獲得したカジノコインが清算されます。<br>勝利時には、配当の内訳が表示されます。<br>再びレートを選択することで<br>次ゲームがプレイできます。<br><br>※一定時間、選択決定がされない場合は<br>強制的に退席させられます。
 tut02,1,text00,Cómo jugar Blacknyack (básico)
 tut02,1,text01,"Blacknyack es un juego de cartas en el que hasta cinco jugadores intentan vencer al crupier.<br><br><red><br>Si quieres jugar con amigos, accede a asientos en la misma mesa.<c>"
 tut02,1,text02,"Acceda a un asiento vacío para unirse a un juego y luego seleccione una tarifa de pago.<br>Cuantas más monedas pagues, más monedas ganarás (¡o perderás!) durante el juego.<br>Las monedas se pagan por juego.<br><br>Se te pedirá que elijas una nueva tasa de pago al comienzo del siguiente juego.<br>Nota: el mazo se baraja entre juegos."
@@ -40,9 +40,9 @@ tut02,1,text06,"Golpe: roba una carta. Puedes acertar hasta tres veces.<br><br>Q
 tut02,1,text07,"Double Down: duplica tu apuesta, pero solo se puede elegir en tu primer acierto.<br>Después de doblar, robas una carta y ya no puedes pedir.<br><br><red>Gana un doble intento para recibir una generosa recompensa.<c>"
 tut02,1,text08,"Se muestra una pantalla de resultados al final de cada juego, donde se paga lo ganado.<br>monedas de casino. La pantalla de resultados también muestra los detalles de su pago cuando<br>ganar. Luego podrás comenzar un nuevo juego con una nueva tasa de pago.<br><br>Nota: abandonarás tu silla automáticamente después de un período de tiempo determinado<br>si no haces una selección."
 tut03,0,text00,『ブラックニャック』の遊び方（応用編）について
-tut03,0,text01,／ブラックニャック（２１点）<br>４．ナンバー（２０以下の点数）<br><br>強さの順は、１＞２＞３＞４となります。<br><br><red>ＴＨＲＥＥ　ＳＰと５ＣＡＲＤについては<br>BUSTしていないことが条件です。<c>
-tut03,0,text02,は<br>複数のプレイヤーに支払われます。<br><br>ディーラーだけでなく<br>他のプレイヤーよりも高い手を<br>目指しましょう。<br><br><red>バトルボーニャスは同時参加人数が<br>多いほど発生確率があがります。<c>
-tut03,0,text03,br>所有した状態でディーラーに勝利すると<br>所有していたスペシャルカード枚数分の<br>報酬が貰えます。<br>報酬額はＢＥＴ額に応じて変わります。<br><br>※上の画面は50CCBET時のリザルト例となります。
+tut03,0,text01,『ブラックニャックの攻略』<br><br>役の種類は４種類です。<br>１．ＴＨＲＥＥ　ＳＰ／スリーエスピー<br>　　３枚のスペシャルカードを所有<br>２．５ＣＡＲＤ／ファイブカード<br>３．ＢＬＡＣＫ　ＮＹＡＣＫ<br>　　／ブラックニャック（２１点）<br>４．ナンバー（２０以下の点数）<br><br>強さの順は、１＞２＞３＞４となります。<br><br><red>ＴＨＲＥＥ　ＳＰと５ＣＡＲＤについては<br>BUSTしていないことが条件です。<c>
+tut03,0,text02,『バトルボーニャス』<br><br>バトルボーニャスは突如発生する、<br>ボーナスゲームとなります。<br>ディーラーに勝利し、かつ最も手役の高い<br>プレイヤーにはボーナスが支払われます。<br>手役の高さが同じプレイヤーが複数の場合は<br>複数のプレイヤーに支払われます。<br><br>ディーラーだけでなく<br>他のプレイヤーよりも高い手を<br>目指しましょう。<br><br><red>バトルボーニャスは同時参加人数が<br>多いほど発生確率があがります。<c>
+tut03,0,text03,『配当』<br><br>ＴＨＲＥＥ　ＳＰ：ＢＥＴ額×５０倍<br>５CＡＲＤ：ＢＥＴ額×５倍<br>ＢＬＡＣＫ　ＮＹＡＣＫ：ＢＥＴ額×３倍<br>ＷＩＮ：ＢＥＴ額×２倍<br><br>スペシャルカードを１枚、または２枚を<br>所有した状態でディーラーに勝利すると<br>所有していたスペシャルカード枚数分の<br>報酬が貰えます。<br>報酬額はＢＥＴ額に応じて変わります。<br><br>※上の画面は50CCBET時のリザルト例となります。
 tut03,0,text04,<red>『ＤＯUＢＬＥ　ＤＯＷＮの活用方法』<c><br><br>ＢＥＴしたカジノコインと同額を追加して<br>１枚だけカードを追加し、３枚だけで勝負を<br>します。<br>ＤＯUＢＬＥ　ＤＯＷＮは<br>最初の手番のみ実行できます。<br><br>ＤＯＵＢＬＥ　ＤＯＷＮで勝利すると<br>ＴＨＲＥＥ　ＳＰやＢＬＡＣＫ　ＮＹＡＣＫの手役が<br>成立していた場合、配当が倍になります。<br><br>最初に配られたカードの合計点が<br>１０や１１の時に狙うと良いでしょう。
 tut03,1,text00,Cómo jugar Blacknyack (avanzado)
 tut03,1,text01,Estrategia Blackyack<br><br>Hay cuatro manos a las que apuntar:<br>1) Triple Especial<br>(Tres cartas especiales).<br>2) 5 cartas<br>3) Blacknyack (21 puntos)<br>4) Números (20 puntos o menos)<br><br>El orden de fuerza de las manos es: 1>2>3>4.<br><br><red>No puedes lograr Triple Especial o 5 Cartas si has fracasado.<c>
