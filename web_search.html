@@ -168,6 +168,64 @@
             border-radius: 4px;
         }
 
+        .scope-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 0;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .scope-group .scope-btn {
+            border: none;
+            border-right: 1px solid var(--panel-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: var(--font-main);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 14px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .scope-group .scope-btn:last-child {
+            border-right: none;
+        }
+
+        .scope-group .scope-btn:hover:not(.active) {
+            background: var(--item-hover);
+            color: var(--text-primary);
+        }
+
+        .scope-group .scope-btn.active {
+            background: rgba(88, 166, 255, 0.18);
+            color: var(--accent-blue);
+        }
+
+        .result-corpus {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 2px 7px;
+            border-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .result-corpus.classic {
+            color: #3fb950;
+            background: rgba(63, 185, 80, 0.12);
+        }
+
+        .result-corpus.ng {
+            color: #f778ba;
+            background: rgba(247, 120, 186, 0.12);
+        }
+
         .result-cmd {
             font-size: 12px;
             color: #a371f7;
@@ -367,6 +425,11 @@
     </div>
 
     <div class="search-options">
+        <div class="scope-group" role="group" aria-label="Ámbito de búsqueda">
+            <button type="button" class="scope-btn active" data-scope="all" title="Classic + NGS">Ambos</button>
+            <button type="button" class="scope-btn" data-scope="classic" title="Solo Csv_Clasic">Classic</button>
+            <button type="button" class="scope-btn" data-scope="ng" title="Solo Csv_Ngs">NGS</button>
+        </div>
         <label class="deep-toggle" title="Incluye section, group e id del CSV (comandos)">
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
@@ -402,12 +465,14 @@
         const resultsCount = document.getElementById('resultsCount');
         const paginationEl = document.getElementById('pagination');
         const loader = document.getElementById('loader');
+        const scopeButtons = document.querySelectorAll('.scope-btn');
 
         const PER_PAGE = 50;
         let debounceTimer;
         let currentPage = 1;
         let lastQuery = '';
         let lastDeep = false;
+        let currentScope = 'all'; // all | classic | ng
 
         function scheduleSearch(resetPage = true) {
             clearTimeout(debounceTimer);
@@ -427,6 +492,15 @@
                 performSearch(query, currentPage);
             }, 500);
         }
+
+        scopeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                scopeButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentScope = btn.dataset.scope || 'all';
+                scheduleSearch(true);
+            });
+        });
 
         deepSearch.addEventListener('change', () => {
             deepHint.style.display = deepSearch.checked ? 'block' : 'none';
@@ -453,6 +527,7 @@
                 const params = new URLSearchParams({
                     q: query,
                     deep,
+                    scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
                 });
@@ -572,10 +647,15 @@
                 return;
             }
 
-            const modeLabel = deep ? " (avanzada)" : "";
+            const modeLabel = deep ? " · avanzada" : "";
+            const scopeLabel = {
+                all: " · Ambos",
+                classic: " · Classic",
+                ng: " · NGS",
+            }[data.scope || currentScope] || "";
             const from = (page - 1) * perPage + 1;
             const to = Math.min(page * perPage, total);
-            resultsCount.textContent = `${total} resultados${modeLabel} · mostrando ${from}–${to}`;
+            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
 
@@ -596,9 +676,14 @@
                 const matchBadge = (item.match && item.match !== 'text')
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
+                const corpus = item.corpus || (String(item.file).toLowerCase().includes('ng') ? 'ng' : 'classic');
+                const corpusBadge = corpus === 'ng'
+                    ? `<span class="result-corpus ng">NGS</span>`
+                    : `<span class="result-corpus classic">Classic</span>`;
 
                 a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(item.file)}</div>
+                    ${corpusBadge}
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
                     <div class="result-id">ID: ${escapeHtml(item.id)}</div>
