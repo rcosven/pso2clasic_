@@ -465,17 +465,17 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
-        <label class="deep-toggle" title="Texto dañado tipo 夀漀甀 (UTF-16 mal leído)">
+        <label class="deep-toggle" title="Lista todas las líneas con caracteres raros (sin escribir nada)">
             <input type="checkbox" id="corruptSearch">
-            <span>Texto corrupto</span>
+            <span>Líneas raras</span>
         </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
         </span>
         <span class="deep-hint" id="corruptHint" style="display: none;">
-            Lista líneas con caracteres tipo <code>夀漀甀 眀椀氀氀</code> (UTF-16 invertido).
-            Query opcional. Muestra vista reparada en verde.
+            <strong>No hace falta escribir nada.</strong> Lista todas las filas (group 0/1/…)
+            con caracteres no comunes (ej. <code>夀漀甀</code>). Edición manual al abrir.
         </span>
     </div>
 
@@ -517,15 +517,18 @@
 
         function updatePlaceholders() {
             if (corruptSearch.checked) {
-                searchInput.placeholder = 'Opcional: filtrar (vacío = listar todo lo corrupto)...';
+                searchInput.placeholder = 'No hace falta escribir — lista todas las líneas raras';
+                searchInput.disabled = false; // filtro opcional por archivo/id
                 corruptHint.style.display = 'block';
                 deepHint.style.display = 'none';
             } else if (deepSearch.checked) {
                 searchInput.placeholder = 'Ej: Basic,1,Explanation  o  texto vacío / ID...';
+                searchInput.disabled = false;
                 deepHint.style.display = 'block';
                 corruptHint.style.display = 'none';
             } else {
                 searchInput.placeholder = 'Ej: Pose elemental: oscuridad y luz...';
+                searchInput.disabled = false;
                 deepHint.style.display = 'none';
                 corruptHint.style.display = 'none';
             }
@@ -534,10 +537,10 @@
         function scheduleSearch(resetPage = true) {
             clearTimeout(debounceTimer);
             const query = searchInput.value.trim();
-            const corruptMode = corruptSearch.checked;
+            const rareMode = corruptSearch.checked;
 
-            // Modo corrupto: permite query vacía (lista todo)
-            if (!corruptMode && query.length < 3) {
+            // Líneas raras: no requiere texto (lista todo al activar)
+            if (!rareMode && query.length < 3) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -549,7 +552,7 @@
 
             debounceTimer = setTimeout(() => {
                 performSearch(query, currentPage);
-            }, corruptMode && !query ? 150 : 500);
+            }, rareMode && !query ? 100 : 500);
         }
 
         scopeButtons.forEach(btn => {
@@ -568,7 +571,11 @@
         });
 
         corruptSearch.addEventListener('change', () => {
-            if (corruptSearch.checked) deepSearch.checked = false;
+            if (corruptSearch.checked) {
+                deepSearch.checked = false;
+                // Limpiar caja: no hace falta escribir caracteres raros
+                // (se deja el valor si el usuario quiere filtrar después)
+            }
             updatePlaceholders();
             scheduleSearch(true);
         });
@@ -702,21 +709,21 @@
 
             resultsContainer.style.display = 'flex';
 
-            const corruptMode = !!data.corrupt;
+            const rareMode = !!(data.rare || data.corrupt);
 
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
-                const tip = corruptMode
-                    ? "No hay líneas con el patrón UTF-16 corrupto en este ámbito."
+                const tip = rareMode
+                    ? "No hay líneas con caracteres raros en este ámbito (Classic/NGS)."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Búsqueda avanzada</strong> o <strong>Texto corrupto</strong>.";
+                    : "Activa <strong>Líneas raras</strong> (sin escribir) o <strong>Búsqueda avanzada</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
             }
 
-            const modeLabel = corruptMode ? " · corrupto" : (deep ? " · avanzada" : "");
+            const modeLabel = rareMode ? " · líneas raras" : (deep ? " · avanzada" : "");
             const scopeLabel = {
                 all: " · Ambos",
                 classic: " · Classic",
@@ -744,8 +751,10 @@
                     ? escapeHtml(String(item.text_fixed).replace(/<br>/gi, "\n"))
                     : '';
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || corruptMode || (item.match && item.match !== 'text');
-                const matchBadge = (item.match && item.match !== 'text')
+                const showCmd = deep || rareMode || (item.match && item.match !== 'text');
+                const matchBadge = rareMode
+                    ? `<span class="result-match-badge">caracteres raros</span>`
+                    : (item.match && item.match !== 'text')
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
                 const corpus = item.corpus || (String(item.file).toLowerCase().includes('ng') ? 'ng' : 'classic');
@@ -753,8 +762,9 @@
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
 
-                const bodyHtml = (item.corrupt && fixedTxt)
-                    ? `<div class="result-fixed"><div class="result-fixed-label">Reparación sugerida</div>${fixedTxt}</div>
+                // En modo raras: mostrar texto tal cual (para editar a mano); si hay preview reparado, como ayuda
+                const bodyHtml = (rareMode && fixedTxt)
+                    ? `<div class="result-fixed"><div class="result-fixed-label">Vista legible (solo ayuda — edita a mano)</div>${fixedTxt}</div>
                        <div class="result-corrupt-raw">${displayTxt}</div>`
                     : `<div class="result-text">${displayTxt}</div>`;
 
@@ -763,7 +773,7 @@
                     ${corpusBadge}
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
-                    <div class="result-id">ID: ${escapeHtml(item.id)}${item.group != null ? ` · g${escapeHtml(item.group)}` : ''}</div>
+                    <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(String(item.group ?? ''))} · id: ${escapeHtml(item.id)}</div>
                     ${bodyHtml}
                 `;
 
