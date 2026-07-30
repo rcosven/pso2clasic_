@@ -439,7 +439,7 @@ async def web_api_search(request):
             matched = True
             match_where = "text"
         elif deep:
-            # Búsqueda profunda: section, group, id y comando CSV
+            # Búsqueda avanzada: section, group, id y comando CSV
             cmd_norm = item.get("cmd_norm", "")
             cmd_full = item.get("cmd_full_norm", "")
             if (
