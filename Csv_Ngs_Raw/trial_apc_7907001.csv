@@ -17,6 +17,12 @@ common,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなったわね。
 common,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 common,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 common,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
+trial_boss_ahl,1,Begin,"Hey, hey! I'm struggling!<br>Fight with me, won’t you?"
+trial_boss_ahl,1,Success,We did it!<br>We won! Thank you!
+trial_boss_ahl,1,Failure,"Ah, they ran off!<br>Aaand on to the next!"
+trial_boss_ahl,1,Begin_7906001,This could be bad... Help me out!
+trial_boss_ahl,1,Success_7906001,We really did it! Let’s fight together again<br>someday!
+trial_boss_ahl,1,Failure_7906001,"Ah well, on to the next fight!"
 trial_boss_ahl,0,Begin,ねえねえ！　ちょっと、苦戦中！<br>いっしょに戦ってくれると、ホサーニャうれしい！
 trial_boss_ahl,0,Success,やったやった！<br>勝てたよ！　ありがとー！
 trial_boss_ahl,0,Failure,あっ、逃げちゃう！<br>……じゃあ、次！
@@ -35,12 +41,12 @@ trial_boss_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった�
 trial_boss_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_boss_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_boss_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_boss_ahl,1,Begin,"Hey, hey! I'm struggling!<br>Fight with me, won’t you?"
-trial_boss_ahl,1,Success,We did it!<br>We won! Thank you!
-trial_boss_ahl,1,Failure,"Ah, they ran off!<br>Aaand on to the next!"
-trial_boss_ahl,1,Begin_7906001,This could be bad... Help me out!
-trial_boss_ahl,1,Success_7906001,We really did it! Let’s fight together again<br>someday!
-trial_boss_ahl,1,Failure_7906001,"Ah well, on to the next fight!"
+trial_enemy_ahl,1,Begin,"/ci2 3 Hooray, a friend!<br>Fight alongside me!"
+trial_enemy_ahl,1,Success,/ci9 1 We did it! We won!<br>Thank you!
+trial_enemy_ahl,1,Failure,/ci4 1 They're getting away!<br>Meh. Oh well.
+trial_enemy_ahl,1,Begin_7906001,/ci8 2 Yay! Let's fight together!
+trial_enemy_ahl,1,Success_7906001,/ci9 3 We won! Thanks a bunch!
+trial_enemy_ahl,1,Failure_7906001,/ci4 1 Oh well. No worries.
 trial_enemy_ahl,0,Begin,/ci2 3 やったー、仲間だー！<br>ホサーニャと一緒に戦って！
 trial_enemy_ahl,0,Success,/ci9 1 やったー！　勝てたー！<br>ありがとー！
 trial_enemy_ahl,0,Failure,/ci4 1 あ、逃げてく！<br>……ま、いっか。
@@ -59,9 +65,3 @@ trial_enemy_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった
 trial_enemy_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_enemy_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_enemy_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_enemy_ahl,1,Begin,"/ci2 3 Hooray, a friend!<br>Fight alongside me!"
-trial_enemy_ahl,1,Success,/ci9 1 We did it! We won!<br>Thank you!
-trial_enemy_ahl,1,Failure,/ci4 1 They're getting away!<br>Meh. Oh well.
-trial_enemy_ahl,1,Begin_7906001,/ci8 2 Yay! Let's fight together!
-trial_enemy_ahl,1,Success_7906001,/ci9 3 We won! Thanks a bunch!
-trial_enemy_ahl,1,Failure_7906001,/ci4 1 Oh well. No worries.

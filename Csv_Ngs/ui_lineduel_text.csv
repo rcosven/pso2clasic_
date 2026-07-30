@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 InGame,0,LineDuel_DeckSelect_Title_Text,デッキ選択
 InGame,0,LineDuel_DeckSelect_Message_Text,使用するデッキを選択してください。<br><yellow>※選択しない場合、30秒後に、<br>　一番上のデッキが自動的に選択されます。<c>
 InGame,0,LineDuel_DeckSelect_Message_Text_NPC,使用するデッキを選択してください。
@@ -86,7 +86,7 @@ InGame,1,LineDuel_DeckSelect_Title_Text,Seleccionar mazo
 InGame,1,LineDuel_DeckSelect_Message_Text,"Elige tu mazo.<br><yellow> Si no se elige un mazo después de 30 segundos,<br>su mazo superior se seleccionará automáticamente. <c>"
 InGame,1,LineDuel_DeckSelect_Message_Text_NPC,Elige tu mazo.
 InGame,1,LineDuel_Mulligan_Title_Text,Aceptar mano
-InGame,1,LineDuel_Mulligan_Message,爀㸀㰀礀攀氀氀漀眀㸀夀漀甀 眀椀氀氀 戀攀最椀渀 琀栀攀 戀愀琀琀氀攀 眀椀琀栀 琀栀椀猀 栀愀渀搀 愀昀琀攀爀 ㌀　 猀攀挀漀渀搀猀⸀㰀挀㸀
+InGame,1,LineDuel_Mulligan_Message,¿Comenzar la batalla con esta mano?<br>Puedes volver a robar tu mano una vez.<br><br><yellow>Comenzarás la batalla con esta mano después de 30 segundos.<c>
 InGame,1,LineDuel_Mulligan_Message_NPC,¿Comenzar la batalla con esta mano?<br>Puedes volver a dibujar tu mano una vez.
 InGame,1,LineDuel_Mulligan_Text1,Comenzar
 InGame,1,LineDuel_Mulligan_Text2,Redibujar la mano
@@ -321,10 +321,10 @@ MainMenu,1,LineDuel_NPCBattle_Strength_Text0,Principiante
 MainMenu,1,LineDuel_NPCBattle_Strength_Text1,veterano
 MainMenu,1,LineDuel_NPCBattle_Strength_Text2,Experto
 MainMenu,1,LineDuel_MatchDetails_Title_Text,Información detallada
-MainMenu,1,LineDuel_MatchDetails_Message1,椀渀 礀漀甀爀 刀愀琀椀渀最⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㄀㈀
-MainMenu,1,LineDuel_MatchDetails_Message2,礀漀甀爀 刀愀琀椀渀最⸀㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㄀㔀
+MainMenu,1,LineDuel_MatchDetails_Message1,Desafía a otro jugador mediante <yellow>Emparejamiento entre todas las naves<c>.<br><yellow>*Los resultados no se verán reflejados en tu Clasificación.<c><br><br>Áreas jugables: Bases de ARKS<br><br>Recompensa de batalla: Vale de Rasca de Cartas x12
+MainMenu,1,LineDuel_MatchDetails_Message2,Desafía a otro jugador mediante <yellow>Emparejamiento entre todas las naves<c>.<br><yellow>*Los resultados se verán reflejados en tu Clasificación.<c><br><br>Áreas jugables: Bases de ARKS<br><br>Recompensa de batalla: Vale de Rasca de Cartas x15
 MainMenu,1,LineDuel_MatchDetails_Message3,Bases ARKS o Espacios Creativos<br><br> Recompensa por Victoria:$(0)<br>Recompensa por Pérdida:$(1)<br>Recompensa por Empate:$(2)
-MainMenu,1,LineDuel_MatchDetails_Message4,㰀挀㸀㰀戀爀㸀㰀戀爀㸀倀氀愀礀愀戀氀攀 䄀爀攀愀猀㨀 䄀刀䬀匀 戀愀猀攀猀 漀爀 䌀爀攀愀琀椀瘀攀 匀瀀愀挀攀猀㰀戀爀㸀㰀戀爀㸀䈀愀琀琀氀攀 刀攀眀愀爀搀㨀 䌀愀爀搀 匀挀爀愀琀挀栀 嘀漀甀挀栀攀爀 砀㘀
+MainMenu,1,LineDuel_MatchDetails_Message4,Acepta una solicitud de Batalla Gratis de otro jugador.<br><yellow>*Los resultados no se verán reflejados en tu Clasificación.<c><br><br>Áreas jugables: Bases de ARKS o Espacios Creativos<br><br>Recompensa de batalla: Vale de Rasca de Cartas x6
 MainMenu,1,LineDuel_CasualBattle_Title,mensaje
 MainMenu,1,LineDuel_RankBattle_Title,mensaje
 MainMenu,1,LineDuel_NPCBattle_Title,mensaje
@@ -336,8 +336,8 @@ MainMenu,1,LineDuel_Battle_Error1,Las batallas clasificatorias y no clasificator
 MainMenu,1,LineDuel_Battle_Error2,Las Batallas de NPC solo se pueden jugar en Bases ARKS y Espacios Creativos<br>
 MainMenu,1,LineDuel_Reward_Title_Text,Recompensas obtenidas esta semana
 MainMenu,1,LineDuel_SlashNum,$(0)/$(1)
-MainMenu,1,DeckEdit_GuideText,欀 䰀椀猀琀㨀 㰀─䔀砀挀攀瀀琀椀漀渀㸀 䌀栀愀渀最攀 䄀挀琀椀瘀攀 圀椀渀搀漀眀㨀 㰀─䌀栀愀渀最攀䌀琀爀氀圀椀渀搀漀眀䘀漀爀眀愀爀搀㸀 儀甀椀琀 䔀搀椀琀椀渀最㨀 㰀─䌀愀渀挀攀氀㸀
-MainMenu,1,DeckEdit_GuideText_DeckList,砀挀攀瀀琀椀漀渀㸀 䌀栀愀渀最攀 䄀挀琀椀瘀攀 圀椀渀搀漀眀㨀 㰀─䌀栀愀渀最攀䌀琀爀氀圀椀渀搀漀眀䘀漀爀眀愀爀搀㸀 儀甀椀琀 䔀搀椀琀椀渀最㨀 㰀─䌀愀渀挀攀氀㸀
+MainMenu,1,DeckEdit_GuideText,Añadir carta: <%Decide> Eliminar carta seleccionada: <%Function> Eliminar todas las cartas: <%Exception2>Ordenar lista de Mazos: <%Exception> Cambiar ventana activa: <%ChangeCtrlWindowForward> Salir de la edición: <%Cancel>
+MainMenu,1,DeckEdit_GuideText_DeckList,Eliminar carta seleccionada: <%Decide> Eliminar todas las cartas: <%Exception2> Ordenar lista de Mazos: <%Exception> Cambiar ventana activa: <%ChangeCtrlWindowForward> Salir de la edición: <%Cancel>
 MainMenu,1,DeckEdit_Save_Message,Mazo guardado.
 MainMenu,1,DeckEdit_Save_Error_Message,Número insuficiente de cartas en el mazo. Operación cancelada.
 MainMenu,1,InvitationList_EmptyText,No hay solicitudes de batallas gratuitas.

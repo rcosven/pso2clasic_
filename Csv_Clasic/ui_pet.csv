@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Rename,0,RenameTitle,ペットネーム変更
 Rename,0,Rename,「$(2)」の<br>ペットネームを変更します。<br>新しい名前を入力してください。<br><br><yellow>必要メセタ：$(0)（現在：$(1)）<c>
 Rename,0,RenameConfirm,ペットネームを変更します。<br>よろしいですか？<br><br>　変更前：$(1)<br>　<yellow>変更後：$(0)<c>
@@ -326,7 +326,7 @@ Release,1,Message,¿Está seguro de que desea liberar $(0)?<br><br><c ff4f3f>Not
 Release,1,Success,Mascota liberada.
 Release,1,Message2,Esta mascota tiene una <yellow>rareza de 7 o mayor<c>.<br>¿Estás seguro de que quieres publicarlo?
 LimitBreak,0,Title,限界突破
-LimitBreak,0,Message,できます。<br>※限界突破後は、エッグ合成で<yellow>低レアリティの<br>エッグ<c>で得られる経験値が大幅に少なくなります。
+LimitBreak,0,Message,以下のペットの限界突破を行います。<br>よろしいですか？<br><br>※限界突破すると、<yellow>Lv.101以上<c>に成長できます。<br>※限界突破後は、エッグ合成で<yellow>低レアリティの<br>エッグ<c>で得られる経験値が大幅に少なくなります。
 LimitBreak,0,Success,対象のペットが、限界突破に成功しました。
 LimitBreak,1,Title,ROMPER EL LÍMITE
 LimitBreak,1,Message,"Realización de límite de ruptura en la siguiente mascota.<br>¿Está seguro de que desea continuar?<br>Nota: Si superas el límite de esta mascota, podrá subir de nivel.<br>to <yellow>Level 101 and higher<c>. Note: After limit<br>rompiendo, la EXP obtenida de la Síntesis de Huevo con<br>Los huevos <yellow>low-Rarity<c> serán significativamente menos."
@@ -382,7 +382,7 @@ Error,0,ErrorCandyCompressSupportNotFound,補助アイテムが不足してい�
 Error,0,ErrorCandyCompressSupportLack,補助アイテムが不足しています。
 Error,0,ErrorCandyCompressMax,これ以上圧縮できません。
 Error,0,ErrorCandyCompressSettingInvalid,キャンディー圧縮の設定が不正です。
-Error,0,ErrorCandyCompressBackpackFull,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。
+Error,0,ErrorCandyCompressBackpackFull,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。 
 Error,0,ErrorIceBlockInvalid,キャラメルキューブが不正です。
 Error,0,ErrorIceBlockNotFound,キャラメルキューブ以外が選択されました。
 Error,0,ErrorIceBlockLackOfRarity,補助アイテムのレアリティが不足しています。

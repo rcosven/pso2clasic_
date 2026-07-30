@@ -17,6 +17,12 @@ common,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなったわね。
 common,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 common,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 common,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
+trial_boss_ahl,1,Begin,"Well, well. Look who showed up!<br>Be a pal and help me out?"
+trial_boss_ahl,1,Success,"We got it done, thanks to you.<br>I appreciate your help!"
+trial_boss_ahl,1,Failure,"Hm, they've beat a hasty retreat.<br>Let’s get ourselves together and prepare for the<br>next."
+trial_boss_ahl,1,Begin_7907001,Just who I was hoping to see!
+trial_boss_ahl,1,Success_7907001,Looks like we got them all.
+trial_boss_ahl,1,Failure_7907001,"Oh my, looks like they've run off."
 trial_boss_ahl,0,Begin,これは、いいところに！<br>もしよければ、手伝ってもらえないでしょうか？
 trial_boss_ahl,0,Success,あなたのおかげで、なんとかなりました。<br>ありがとうございます！
 trial_boss_ahl,0,Failure,なんと、逃げられてしまいました。<br>……気持ちを切り替えて、次に備えましょう。
@@ -35,12 +41,12 @@ trial_boss_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった�
 trial_boss_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_boss_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_boss_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_boss_ahl,1,Begin,"Well, well. Look who showed up!<br>Be a pal and help me out?"
-trial_boss_ahl,1,Success,"We got it done, thanks to you.<br>I appreciate your help!"
-trial_boss_ahl,1,Failure,"Hm, they've beat a hasty retreat.<br>Let’s get ourselves together and prepare for the<br>next."
-trial_boss_ahl,1,Begin_7907001,Just who I was hoping to see!
-trial_boss_ahl,1,Success_7907001,Looks like we got them all.
-trial_boss_ahl,1,Failure_7907001,"Oh my, looks like they've run off."
+trial_enemy_ahl,1,Begin,"/ci1 1 Hey, perfect timing!<br>Would you mind helping me with a little<br>something?"
+trial_enemy_ahl,1,Success,/ci2 1 That's them buttered and toasted.<br>Thanks for all your help!
+trial_enemy_ahl,1,Failure,/ci4 1 Hm? Looks like they’re skulking away.<br>Oh well. On to the next target.
+trial_enemy_ahl,1,Begin_7907001,/ci1 3 Just who I was hoping to see!
+trial_enemy_ahl,1,Success_7907001,/ci1 3 Another one bites the dust... I suppose.
+trial_enemy_ahl,1,Failure_7907001,/ci4 3 Seems the enemy has called it a day.
 trial_enemy_ahl,0,Begin,/ci1 1 これはいいところに！<br>少し、手を貸してもらえないでしょうか。
 trial_enemy_ahl,0,Success,/ci2 1 これで、一段落ですね。<br>ありがとうございます！
 trial_enemy_ahl,0,Failure,/ci4 1 あれ？　退いていくみたいですね。<br>……仕方が無いです。次の目標に向かいますね。
@@ -59,9 +65,3 @@ trial_enemy_ahl,0,Success_7002001_v3,/ci2 1 ふう……、なんとかなった
 trial_enemy_ahl,0,Failure_7002001_v3,/ci4 3 くっ……少し攻撃を受けすぎたわ……。<br>ここは、後退せてもらうわね。
 trial_enemy_ahl,0,Dead_7002001_v3,/ci4 3 ……こ、こんなところで……。
 trial_enemy_ahl,0,BuddyDead_7002001_v3,/ci4 3 ……こ、こんなところで……。
-trial_enemy_ahl,1,Begin,"/ci1 1 Hey, perfect timing!<br>Would you mind helping me with a little<br>something?"
-trial_enemy_ahl,1,Success,/ci2 1 That's them buttered and toasted.<br>Thanks for all your help!
-trial_enemy_ahl,1,Failure,/ci4 1 Hm? Looks like they’re skulking away.<br>Oh well. On to the next target.
-trial_enemy_ahl,1,Begin_7907001,/ci1 3 Just who I was hoping to see!
-trial_enemy_ahl,1,Success_7907001,/ci1 3 Another one bites the dust... I suppose.
-trial_enemy_ahl,1,Failure_7907001,/ci4 3 Seems the enemy has called it a day.

@@ -120,15 +120,11 @@ class BuscadorBot(commands.Bot):
                 
         logger.info(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
 
-def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, nuevo_texto: str):
+def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig_id: str, nuevo_texto: str, nueva_section: str = None, nuevo_group: str = None, nuevo_id: str = None):
     """
-    Lee un archivo CSV, busca la fila exacta por section, group e id, 
-    y reemplaza únicamente el campo 'text' conservando la estructura multilínea.
-    Solo permite modificar si group == '1'.
+    Lee un archivo CSV, busca la fila exacta por section, group e id original, 
+    y reemplaza el texto, o incluso la section/group/id si se especifican.
     """
-    if group != '1':
-        return False
-
     ruta = Path(file_path)
     if not ruta.exists():
         return False
@@ -147,8 +143,14 @@ def modificar_texto_csv(file_path: str, section: str, group: str, row_id: str, n
                 if isinstance(extra_data, list):
                     row['text'] = row.get('text', '') + "," + ",".join(extra_data)
 
-            if row.get('section', '') == section and row.get('group') == group and row.get('id') == row_id:
+            if row.get('section', '') == orig_section and row.get('group') == orig_group and row.get('id') == orig_id:
                 row['text'] = nuevo_texto
+                if nueva_section is not None:
+                    row['section'] = nueva_section
+                if nuevo_group is not None:
+                    row['group'] = nuevo_group
+                if nuevo_id is not None:
+                    row['id'] = nuevo_id
                 modificado = True
             filas.append(row)
 
@@ -445,7 +447,7 @@ async def web_api_search(request):
                 and (
                     query_cmd in cmd_norm
                     or query_cmd in cmd_full
-                    or cmd_norm in query_cmd  # query más larga que incluye text
+                    or cmd_norm in query_cmd
                 )
             ):
                 matched = True
@@ -457,7 +459,6 @@ async def web_api_search(request):
                 matched = True
                 match_where = "section"
             elif query_norm in (item.get("group") or "").lower():
-                # group es "0"/"1"; solo útil con deep y queries cortas, se filtra por len>=3
                 matched = True
                 match_where = "group"
 
@@ -466,7 +467,7 @@ async def web_api_search(request):
 
         # Calcular el archivo editable real (quitar _Raw)
         editable_file = item["file"].replace("_Raw", "")
-        # Clave única: section+id (mismo id puede existir en varias sections)
+        # Clave única: section+id+group (mismo id puede existir en varias sections)
         clave_unica = f"{editable_file}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
 
         if clave_unica not in ids_vistos:
@@ -521,17 +522,43 @@ async def web_api_file(request):
             
     return web.json_response({"items": items})
 
+async def web_api_file_raw(request):
+    filename = request.query.get("name")
+    if not filename:
+        return web.json_response({"error": "Falta parámetro 'name'"}, status=400)
+        
+    bot = request.app['bot']
+    file_items = [item for item in bot.index_datos if item['file'] == filename]
+    file_items.sort(key=lambda x: x.get('line', 0))
+    
+    items = []
+    for item in file_items:
+        items.append({
+            'section': item.get('section', ''),
+            'group': item.get('group', ''),
+            'id': item['id'],
+            'text': item.get('text', ''),
+            'line': item.get('line', 0)
+        })
+            
+    return web.json_response({"items": items})
+
 async def web_api_save(request):
     try:
         data = await request.json()
         filename = data.get('file')
-        section = data.get('section', '')
-        row_id = data.get('id')
+        orig_section = data.get('orig_section', data.get('section', ''))
+        orig_group = data.get('orig_group', '1')
+        orig_id = data.get('orig_id', data.get('id'))
+        
+        new_section = data.get('section')
+        new_group = data.get('group')
+        new_id = data.get('id')
         new_text = data.get('text', '')
         
         bot = request.app['bot']
         
-        exito = modificar_texto_csv(filename, section, '1', row_id, new_text)
+        exito = modificar_texto_csv(filename, orig_section, orig_group, orig_id, new_text, new_section, new_group, new_id)
         if not exito:
             # DEBUG: find out WHY it failed
             ruta = Path(filename)
@@ -540,15 +567,18 @@ async def web_api_save(request):
                 with open(ruta, 'r', encoding='utf-8-sig') as f:
                     all_rows = list(csv.DictReader(f))
                     debug_info += f"Total rows in file: {len(all_rows)}. "
-                    matches = [r for r in all_rows if r.get('id') == row_id]
+                    matches = [r for r in all_rows if r.get('id') == orig_id]
                     debug_info += f"Matches found: {len(matches)}. "
                     for m in matches:
                         debug_info += f"[sec: '{m.get('section')}', grp: '{m.get('group')}'] "
             return web.json_response({"error": f"No se pudo modificar CSV. {debug_info}"}, status=500)
             
         for item in bot.index_datos:
-            if item['file'] == filename and item.get('section') == section and item['id'] == row_id and item.get('group') == '1':
+            if item['file'] == filename and item.get('section') == orig_section and item['id'] == orig_id and item.get('group') == orig_group:
                 item['text'] = new_text
+                if new_section is not None: item['section'] = new_section
+                if new_group is not None: item['group'] = new_group
+                if new_id is not None: item['id'] = new_id
                 break
                 
         bot.modified_files.add(filename)
@@ -581,11 +611,11 @@ async def web_api_github(request):
                 return web.json_response({
                     "error": "El nick solo puede usar letras, números, espacios, . _ - (o déjalo vacío para anónimo)."
                 }, status=400)
-            autor_pr = f"Anonimo: {nickname_safe}"
+            autor_pr = f": {nickname_safe}"
             author_display = nickname_safe
         else:
             nickname_safe = "Anónimo"
-            autor_pr = "Anonimo"
+            autor_pr = "Anónimo"
             author_display = "Anónimo"
 
         pr_url, error = crear_pull_request_traduccion(
@@ -625,6 +655,7 @@ async def start_web_server(bot):
     app.router.add_get('/edit', web_index)
     app.router.add_get('/api/search', web_api_search)
     app.router.add_get('/api/file', web_api_file)
+    app.router.add_get('/api/file_raw', web_api_file_raw)
     app.router.add_post('/api/save', web_api_save)
     app.router.add_post('/api/github', web_api_github)
     

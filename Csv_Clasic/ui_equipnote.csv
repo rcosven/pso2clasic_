@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 EquipNote,0,EquipNoteCheckSheet,シートを確認
 EquipNote,0,EquipNoteDeleteSheet,シートを破棄
 EquipNote,0,EquipNoteClearCoolTime,シートを再入手<pict StarGem>
@@ -6,7 +6,7 @@ EquipNote,0,EquipNoteExtendHaveSheet,シート所持数拡張<pict StarGem>
 EquipNote,0,EquipNoteOffTime,配信期限なし
 EquipNote,0,DeleteYesNoTitle,シート破棄
 EquipNote,0,DeleteYesNoMsgOnTime,<pict $(0)>$(1) のシートを破棄します。<c><br><br><red>※シート内の「必要アイテム」のゲージも<br>　すべてリセットされます。<c><br><br>本当によろしいですか？
-EquipNote,0,DeleteYesNoMsgOffTime,トされます。<c><br><yellow>※配信期間が終了しているため、<br>　再入手はできません。<c><br><br>よろしいですか？
+EquipNote,0,DeleteYesNoMsgOffTime,<pict $(0)>$(1) のシートを破棄します。<br><br><red>※シート内の「必要アイテム」のゲージも<br>　すべてリセットされます。<c><br><yellow>※配信期間が終了しているため、<br>　再入手はできません。<c><br><br>よろしいですか？
 EquipNote,0,DeleteSuccessMsg,<pict $(0)>$(1) のシートを破棄しました。
 EquipNote,0,TopMenu_Empty,装備管理官プリンから<br>配信中のコレクトファイルを<br>入手できます。
 EquipNote,0,TopMenu_EmptyGray,<gray>装備管理官から入手可能<c>
@@ -20,12 +20,12 @@ EquipNote,0,SheetNum_InfoDefault,<gray>所持数未拡張<c>
 EquipNote,0,SheetNum_InfoPremiumEnable,<pict Arcscash><yellow>プレミアム拡張2枚<c>
 EquipNote,0,SheetNum_InfoPremiumOver,<red>プレミアム期限切れ<c>
 EquipNote,0,SheetNum_InfoPremiumNetCafe,<green>公認ネットカフェ特典拡張2枚<c>
-EquipNote,0,SheetNum_InfoAdd,+ $(0)
+EquipNote,0,SheetNum_InfoAdd, + $(0)
 EquipNote,0,SheetNum_InfoTicketEnable,<pict StarGem><c 00ffff>SG拡張$(0)枚<c>
 EquipNote,0,SheetNum_OrderNum,$(0)枚進行中
-EquipNote,0,SheetNum_CurrentNum,（$(0)/$(1)）
-EquipNote,0,SheetNum_CurrentNum_Equal,（<c ff9c70>$(0)/$(1)<c>）
-EquipNote,0,SheetNum_CurrentNum_Over,（<c ff0000>$(0)/$(1)<c>）
+EquipNote,0,SheetNum_CurrentNum, （$(0)/$(1)）
+EquipNote,0,SheetNum_CurrentNum_Equal, （<c ff9c70>$(0)/$(1)<c>）
+EquipNote,0,SheetNum_CurrentNum_Over, （<c ff0000>$(0)/$(1)<c>）
 EquipNote,0,Toast_ExpiredSheet,このシートは配信期間が終了しています。
 EquipNote,0,Title_SheetDetail,シート詳細
 EquipNote,0,Title_SheetDetailQuestInfo,ドロップ情報
@@ -151,12 +151,12 @@ EquipNote,1,GetRewardMessage,¡Obtenido artículo de recompensa [<yellow>$(0)<c>
 EquipNote,1,GetRewardMessage2,Se completó el objetivo de la Hoja de Colección<br>y se obtuvo [<pict $(0)>$(1)] $(2)★.
 EquipNote,1,GetRequireMessage,¡Suelta el artículo requerido [<yellow>$(0)<c>]!
 EquipNote,1,EquipNoteError_Title,CARPETA DE COLECCIÓN
-EquipNote,1,EquipNoteError_IllegalParam,Ha ocurrido un error.<br><br>Por favor, espera un momento e inténtalo de nuevo.
-EquipNote,1,EquipNoteError_DB,Ha ocurrido un problema.<br><br>Por favor, espera un momento e inténtalo de nuevo.
-EquipNote,1,EquipNoteError_MaxSheet,No puedes reclamar más hojas. Por favor, descarta otra<br>hoja e intenta reclamar esta hoja de nuevo.
+EquipNote,1,EquipNoteError_IllegalParam,Ha ocurrido un error.<br><br>Por favor
+EquipNote,1,EquipNoteError_DB,Ha ocurrido un problema.<br><br>Por favor
+EquipNote,1,EquipNoteError_MaxSheet,No puedes reclamar más hojas. Por favor
 EquipNote,1,EquipNoteError_Payment,No tienes suficiente SG.
 EquipNote,1,EquipNoteError_ExpiredSheet,El periodo de distribución de esta hoja ha expirado.
-EquipNote,1,EquipNoteError_RequirePremium,Expirado.<br><br>Por favor, confirma que no hay problemas con la configuración de<br>fecha y hora de tu plataforma.
+EquipNote,1,EquipNoteError_RequirePremium,Expirado.<br><br>Por favor
 EquipNote,1,EquipNoteError_MaxExtendHaveSheetByTicket,Has alcanzado el límite de expansiones para el número de<br>hojas que puedes tener. No hay más expansiones disponibles.
 EquipNote,1,EquipNoteError_NoMoreSpecialCollection,"<pict sp_icon>La Special Collect Sheet se puede poseer solo una vez.<br>Ya posee una, no puede obtener más."
 EquipNote,1,EquipNote_ConfirmToGetSheet,Solo puedes tener 1 <pict sp_icon> Special Collection Sheet en<br>tu posesión.<br><br>¿Reclamar esta Hoja de Colección?
@@ -186,7 +186,7 @@ EquipNote,1,EquipNoteBoost_SheetDetail,Información de la hoja de colección
 EquipNote,1,EquipNoteBoost_UseCheck2,superar el 100% se perderá.<br>¿Estás seguro de que deseas continuar?
 EquipNote,1,EquipNoteBoost_NoItemMessage,No hay artículos.
 Etc,0,DirectBuyTicket_Title,アイテム購入確認
-Etc,0,DirectBuyTicket_Msg1Seq1,持数の上限が１つ拡張されます。<br>（最大 $(1)つまで拡張可能）<br><br>「$(0)」の購入画面に<br>進みますか？
+Etc,0,DirectBuyTicket_Msg1Seq1,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>「$(0)」を購入すると、<br>シート所持数の上限が１つ拡張されます。<br>（最大 $(1)つまで拡張可能）<br><br>「$(0)」の購入画面に<br>進みますか？
 Etc,0,DirectBuyTicket_Msg1Seq2,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br><br>シート所持数が上限に達しているため、<br>これ以上シートを入手することができません。<br><br>SGで「$(0)」を購入すると<br>この上限を増やすことができます。<br>購入画面に進みますか？
 Etc,0,DirectBuyTicket_Msg2,以下のアイテムを$(0)SGで購入し、<br>シート所持数の上限を1つ拡張します。<br>よろしいですか？<br><br>（所持SG：$(1)）
 Etc,0,DirectBuyTicketSuccess_Title,コレクトファイル

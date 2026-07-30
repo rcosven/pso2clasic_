@@ -1,19 +1,19 @@
 ﻿section,group,id,text
-AreaName,0,Area0S,星崩の猛攻：Stage.2
-AreaName,0,Area0L,星崩の猛攻：Stage.2
 AreaName,1,Area0S,Planetfall Strike: Stage 2
 AreaName,1,Area0L,Planetfall Strike: Stage 2
-Basic,0,Title,星崩の猛攻：Stage.2
-Basic,0,Explanation,これは、能力を認められたアークスへの討伐依頼である。<br>戦闘技術を駆使して、強力なエネミーを単独で撃破せよ。
+AreaName,0,Area0S,星崩の猛攻：Stage.2
+AreaName,0,Area0L,星崩の猛攻：Stage.2
 Basic,1,Title,Planetfall Strike: Stage 2
 Basic,1,Explanation,This is a suppression operation for elite ARKS Defenders.<br>Make use of your battle skills to defeat a powerful enemy on your own.
-FailureCondition,0,f0,10:00以上経過する
-FailureCondition,0,f4,7:00以上経過する
+Basic,0,Title,星崩の猛攻：Stage.2
+Basic,0,Explanation,これは、能力を認められたアークスへの討伐依頼である。<br>戦闘技術を駆使して、強力なエネミーを単独で撃破せよ。
 FailureCondition,1,f0,Time exceeds 10:00
 FailureCondition,1,f4,Time exceeds 7:00
-QuestTarget,0,SimpleExplanation,対象エネミーの撃破
+FailureCondition,0,f0,10:00以上経過する
+FailureCondition,0,f4,7:00以上経過する
 QuestTarget,1,SimpleExplanation,Defeat the target enemy
-SuccessCondition,0,s0,対象エネミーの撃破
+QuestTarget,0,SimpleExplanation,対象エネミーの撃破
 SuccessCondition,1,s0,Defeat the target enemy
-TrialBeginDetail,0,normalMsg_1400000,対象エネミーの撃破
+SuccessCondition,0,s0,対象エネミーの撃破
 TrialBeginDetail,1,normalMsg_1400000,Defeat the target enemy
+TrialBeginDetail,0,normalMsg_1400000,対象エネミーの撃破

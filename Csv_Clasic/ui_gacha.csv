@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 LotList,0,Title,購入メニュー
 LotList,0,Caption1,商品名
 LotList,0,Caption2,陳列期限
@@ -136,9 +136,9 @@ Confirm,0,NextBonusOtherNum,他$(0)種
 Confirm,0,LimitedTimeMessage,$(0)<br>　<br>販売期限：$(1)
 Confirm,0,ExchangeUseTitle,スクラッチ景品交換券
 Confirm,0,ExchangeUseMessage,対応するスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br>今すぐ景品リストから交換しますか？<br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
-Confirm,0,ExchangeUseMessage_ItemPackFull,ら交換してください。<c><br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
+Confirm,0,ExchangeUseMessage_ItemPackFull,対応するスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br><red>スクラッチ景品交換券を倉庫から取り出して<br>景品リストから交換してください。<c><br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
 Confirm,0,ExchangeUseMessage_SG,対応するSGスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br>今すぐ景品リストから交換しますか？<br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
-Confirm,0,ExchangeUseMessage_ItemPackFull_SG,から交換してください。<c><br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
+Confirm,0,ExchangeUseMessage_ItemPackFull_SG,対応するSGスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br><red>スクラッチ景品交換券を倉庫から取り出して<br>景品リストから交換してください。<c><br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
 Confirm,0,ExchangeUseButton1,はい
 Confirm,0,ExchangeUseButton2,いいえ
 Confirm,0,ExchangeConsumptionTitle,交換チケット消費確認
@@ -148,7 +148,7 @@ Confirm,0,StepUp_Message,<yellow>Step.$(1)<c>に上がりました！<br><br>ス
 Confirm,0,ExchangeConsumptionButton1,はい
 Confirm,0,ExchangeConsumptionButton2,いいえ
 Confirm,0,BundleNameConsolidation,$(0) $(1)
-Confirm,0,ExchangeUseMessage_FUN,br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
+Confirm,0,ExchangeUseMessage_FUN,対応するFUNスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br>今すぐ景品リストから交換しますか？<br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
 Confirm,0,ExchangeUseMessage_ItemPackFull_FUN,対応するFUNスクラッチの景品リストから<br>どれでも好きな景品を一つ選んで交換できる<br>『$(0)』を獲得しました。<br><br><red>スクラッチ景品交換券を倉庫から取り出して<br>景品リストから交換してください。<c><br><br><yellow>※景品と引き換えに交換券は消費されます。<br>※対応するスクラッチの配信期間が過ぎると<br>　景品と交換できなくなるのでご注意ください。<c>
 Confirm,0,Message_Have_AC,（所持AC：$(0)）
 Confirm,0,Message_Have_SG,（所持SG：$(0)）
@@ -197,7 +197,7 @@ GetItem,0,Count,（$(0)個）
 GetItem,0,Title_scratch,獲得アイテム一覧
 GetItem,0,scratch_message,以下の景品が当たりました！
 GetItem,0,GachaBonusGet,スクラッチ回数ボーナス！<br><br>$(0)を獲得しました！<br><br>このスクラッチ$(1)回で次のボーナスがもらえます！
-GetItem,0,GachaBonusGetSimple,スクラッチ回数ボーナス！<br><br>$(0)を獲得しました！<br><br>
+GetItem,0,GachaBonusGetSimple,スクラッチ回数ボーナス！<br><br>$(0)を獲得しました！<br><br> 
 GetItem,0,Title_bonus,獲得ボーナスアイテム一覧
 GetItem,0,bonus_message,<yellow>回数ボーナス<c>により<br>以下のアイテムを獲得しました！
 GetItem,0,exchange_message,景品と交換が完了しました。

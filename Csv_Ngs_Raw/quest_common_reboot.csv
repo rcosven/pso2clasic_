@@ -1,41 +1,22 @@
 ﻿section,group,id,text
-CocoonFail,0,Cocoon_Fail_None,なし
-CocoonFail,0,Cocoon_Fail_Time,制限時間：$(0)
-CocoonFail,0,Cocoon_Fail_Fall,落下回数：$(0)
-CocoonFail,0,Cocoon_Fail_Dead,戦闘不能回数：$(0)
 CocoonFail,1,Cocoon_Fail_None,NA
 CocoonFail,1,Cocoon_Fail_Time,Time Limit: $(0)
 CocoonFail,1,Cocoon_Fail_Fall,Falls: $(0)
 CocoonFail,1,Cocoon_Fail_Dead,Times Incapacitated: $(0)
-CocoonMainMission,0,Cocoon_Main_Goal,フィニッシュポイントに到達する
-CocoonMainMission,0,Cocoon_Main_Target,$(0)を倒す
-CocoonMainMission,0,Cocoon_Main_TargetVolume,$(0)を$(1)体倒す
-CocoonMainMission,0,Cocoon_Main_EnemyValue,エネミーを$(0)体倒す
-CocoonMainMission,0,Cocoon_Main_AllTarget,全てのエネミーを倒す
+CocoonFail,0,Cocoon_Fail_None,なし
+CocoonFail,0,Cocoon_Fail_Time,制限時間：$(0)
+CocoonFail,0,Cocoon_Fail_Fall,落下回数：$(0)
+CocoonFail,0,Cocoon_Fail_Dead,戦闘不能回数：$(0)
 CocoonMainMission,1,Cocoon_Main_Goal,Reach the finish point.
 CocoonMainMission,1,Cocoon_Main_Target,Defeat the $(0).
 CocoonMainMission,1,Cocoon_Main_TargetVolume,Defeat $(1) target enemies ($(0)).
 CocoonMainMission,1,Cocoon_Main_EnemyValue,Defeat $(0) enemies.
 CocoonMainMission,1,Cocoon_Main_AllTarget,Defeat all enemies.
-CocoonSubMission,0,Cocoon_Sub_Target,%(EnemyName)$(0)を倒してクリア
-CocoonSubMission,0,Cocoon_Sub_TargetVolume,%(EnemyName)を$(0)%(num)体倒してクリア
-CocoonSubMission,0,Cocoon_Sub_Time,%(Time) 未満でクリア
-CocoonSubMission,0,Cocoon_Sub_Fall,落下回数$(0)%(num)回未満でクリア
-CocoonSubMission,0,Cocoon_Sub_Dead,戦闘不能回数$(0)%(num)回未満でクリア
-CocoonSubMission,0,Cocoon_Sub_Complete,サイドミッションを$(0)すべて達成してクリア
-CocoonSubMission,0,Cocoon_Sub_Volume,エネミーを$(0)%(num)体倒してクリア
-CocoonSubMission,0,Cocoon_Sub_Damage,%(Damage)以上のダメージを$(0)%(num)回以上与えてクリア
-CocoonSubMission,0,Cocoon_Sub_Hit,ダメージ回数$(0)%(num)回未満でクリア
-CocoonSubMission,0,Cocoon_Sub_Coin,ポイントキューブを$(0)%(num)個取得してクリア
-CocoonSubMission,0,Cocoon_Sub_Down,エネミーを%(num)回$(0)ダウンさせてクリア
-CocoonSubMission,0,Cocoon_Sub_Action,%(action)の$(0)使用%(num)回未満でクリア
-CocoonSubMission,0,Cocoon_Sub_TargetVolumeLimit,エネミー討伐数$(0)%(num)体未満でクリア
-CocoonSubMission,0,Cocoon_Sub_CocoonPoint,コクーンポイント$(0)%(num)ポイント以上でクリア
-CocoonSubMission,0,Cocoon_Sub_DroneLevel,ドロームの追従レベルが$(0)Lv.3の状態を維持してクリア
-CocoonSubMission,0,Cocoon_Sub_DiveAttack,ダイブアタックでエネミーに$(0)%(num)以上ダメージを与えてクリア
-CocoonSubMission,0,Cocoon_Sub_CoreHit,エネミーの弱点部位に%(num)回$(0)攻撃を命中させてクリア
-CocoonSubMission,0,Cocoon_Sub_FallDownEnemy,エネミーを%(num)体$(0)落下させてクリア
-CocoonSubMission,0,Cocoon_Sub_Dodged,エネミーの攻撃を%(num)回$(0)ジャストガードか回避してクリア
+CocoonMainMission,0,Cocoon_Main_Goal,フィニッシュポイントに到達する
+CocoonMainMission,0,Cocoon_Main_Target,$(0)を倒す
+CocoonMainMission,0,Cocoon_Main_TargetVolume,$(0)を$(1)体倒す
+CocoonMainMission,0,Cocoon_Main_EnemyValue,エネミーを$(0)体倒す
+CocoonMainMission,0,Cocoon_Main_AllTarget,全てのエネミーを倒す
 CocoonSubMission,1,Cocoon_Sub_Target,Defeat $(0)%(EnemyName).
 CocoonSubMission,1,Cocoon_Sub_TargetVolume,Defeat $(0)%(num) target enemies (%(EnemyName)) and clear.
 CocoonSubMission,1,Cocoon_Sub_Time,Clear before %(Time).
@@ -55,15 +36,25 @@ CocoonSubMission,1,Cocoon_Sub_DiveAttack,Dive Attack enemies for %(num) or more 
 CocoonSubMission,1,Cocoon_Sub_CoreHit,Hit enemy weak points %(num) times and clear.
 CocoonSubMission,1,Cocoon_Sub_FallDownEnemy,Make %(num) enemies fall and clear.
 CocoonSubMission,1,Cocoon_Sub_Dodged,Guard or dodge the enemy attacks %(num) times and clear.
-CocoonActionName,0,Action_Name_Jump,ジャンプ
-CocoonActionName,0,Action_Name_Step,ステップ
-CocoonActionName,0,Action_Name_HealTank,レスタサイン
-CocoonActionName,0,Action_Name_PhotonBlast,フォトンブラスト
-CocoonActionName,0,Action_Name_Glide,グライド
-CocoonActionName,0,Action_Name_Dash,フォトンダッシュ
-CocoonActionName,0,Action_Name_Tech,テクニック
-CocoonActionName,0,Action_Name_PA,PA
-CocoonActionName,0,Action_Name_TechPA,テクニック/PA
+CocoonSubMission,0,Cocoon_Sub_Target,%(EnemyName)$(0)を倒してクリア
+CocoonSubMission,0,Cocoon_Sub_TargetVolume,%(EnemyName)を$(0)%(num)体倒してクリア
+CocoonSubMission,0,Cocoon_Sub_Time,%(Time) 未満でクリア
+CocoonSubMission,0,Cocoon_Sub_Fall,落下回数$(0)%(num)回未満でクリア
+CocoonSubMission,0,Cocoon_Sub_Dead,戦闘不能回数$(0)%(num)回未満でクリア
+CocoonSubMission,0,Cocoon_Sub_Complete,サイドミッションを$(0)すべて達成してクリア
+CocoonSubMission,0,Cocoon_Sub_Volume,エネミーを$(0)%(num)体倒してクリア
+CocoonSubMission,0,Cocoon_Sub_Damage,%(Damage)以上のダメージを$(0)%(num)回以上与えてクリア
+CocoonSubMission,0,Cocoon_Sub_Hit,ダメージ回数$(0)%(num)回未満でクリア
+CocoonSubMission,0,Cocoon_Sub_Coin,ポイントキューブを$(0)%(num)個取得してクリア
+CocoonSubMission,0,Cocoon_Sub_Down,エネミーを%(num)回$(0)ダウンさせてクリア
+CocoonSubMission,0,Cocoon_Sub_Action,%(action)の$(0)使用%(num)回未満でクリア
+CocoonSubMission,0,Cocoon_Sub_TargetVolumeLimit,エネミー討伐数$(0)%(num)体未満でクリア
+CocoonSubMission,0,Cocoon_Sub_CocoonPoint,コクーンポイント$(0)%(num)ポイント以上でクリア
+CocoonSubMission,0,Cocoon_Sub_DroneLevel,ドロームの追従レベルが$(0)Lv.3の状態を維持してクリア
+CocoonSubMission,0,Cocoon_Sub_DiveAttack,ダイブアタックでエネミーに$(0)%(num)以上ダメージを与えてクリア
+CocoonSubMission,0,Cocoon_Sub_CoreHit,エネミーの弱点部位に%(num)回$(0)攻撃を命中させてクリア
+CocoonSubMission,0,Cocoon_Sub_FallDownEnemy,エネミーを%(num)体$(0)落下させてクリア
+CocoonSubMission,0,Cocoon_Sub_Dodged,エネミーの攻撃を%(num)回$(0)ジャストガードか回避してクリア
 CocoonActionName,1,Action_Name_Jump,Jump
 CocoonActionName,1,Action_Name_Step,Sidestep
 CocoonActionName,1,Action_Name_HealTank,Restasigne
@@ -73,15 +64,15 @@ CocoonActionName,1,Action_Name_Dash,Photon Dash
 CocoonActionName,1,Action_Name_Tech,Technique
 CocoonActionName,1,Action_Name_PA,PA
 CocoonActionName,1,Action_Name_TechPA,Technique / PA
-CocoonUITitle,0,Cocoon_UITitle_Main_Mission,メインミッション
-CocoonUITitle,0,Cocoon_UITitle_Sub_Mission,サイドミッション
-CocoonUITitle,0,Cocoon_UITitle_Failure,失敗条件
-CocoonUITitle,0,UITitle_Trial,トライアル
-CocoonUITitle,0,UITitle_World_Trial,ワールドトライアル
-CocoonUITitle,0,UITitle_FieldRace,フィールドレース
-CocoonUITitle,0,Trinites_UITitle_Score,スコア
-CocoonUITitle,0,UITitle_EndCondition,クエスト終了条件
-CocoonUITitle,0,UITitle_ChipClearCondition,能力強化条件
+CocoonActionName,0,Action_Name_Jump,ジャンプ
+CocoonActionName,0,Action_Name_Step,ステップ
+CocoonActionName,0,Action_Name_HealTank,レスタサイン
+CocoonActionName,0,Action_Name_PhotonBlast,フォトンブラスト
+CocoonActionName,0,Action_Name_Glide,グライド
+CocoonActionName,0,Action_Name_Dash,フォトンダッシュ
+CocoonActionName,0,Action_Name_Tech,テクニック
+CocoonActionName,0,Action_Name_PA,PA
+CocoonActionName,0,Action_Name_TechPA,テクニック/PA
 CocoonUITitle,1,Cocoon_UITitle_Main_Mission,Main Mission
 CocoonUITitle,1,Cocoon_UITitle_Sub_Mission,Side Mission
 CocoonUITitle,1,Cocoon_UITitle_Failure,Fail Conditions
@@ -91,31 +82,15 @@ CocoonUITitle,1,UITitle_FieldRace,Field Race
 CocoonUITitle,1,Trinites_UITitle_Score,Score
 CocoonUITitle,1,UITitle_EndCondition,Quest End Conditions
 CocoonUITitle,1,UITitle_ChipClearCondition,Ability Buff Conditions
-QuestCommon,0,CountDownTime,クエスト開始まで残り$(0)秒
-QuestCommon,0,TimeTextMS,$(0):$(1)
-QuestCommon,0,TimeTextHMS,$(0):$(1):$(2)
-QuestCommon,0,NumberTextCPM,$(0)/$(1)
-QuestCommon,0,QuestTitle,クエスト目標
-QuestCommon,0,Trinites_Update_SideMission,サイドミッション更新
-QuestCommon,0,ScorePt,$(0)Pt
-QuestCommon,0,LastDungeon_Buff_Atk001,通常攻撃の威力上昇効果が発生しました。
-QuestCommon,0,LastDungeon_Buff_Atk002,PA・テクニックの威力上昇効果が発生しました。
-QuestCommon,0,LastDungeon_Buff_Atk003,ダイブアタックの威力上昇効果が発生しました。
-QuestCommon,0,LastDungeon_Buff_Atk004,ステップカウンターの威力上昇効果が発生しました。
-QuestCommon,0,BuffLineText_Base,特定の条件を満たしたため、$(0)以下の効果が発生しました。<br>$(1)
-QuestCommon,0,BuffLineText_Target_1,参加者全員に
-QuestCommon,0,BuffLineText_Target_2,あなたに
-QuestCommon,0,BuffLineText_ConditionBase,$(0) Lv.$(1)
-QuestCommon,0,ScriptSequencer_Wait,他のプレイヤーを待っています。
-QuestCommon,0,BeginnerBlockWrongRegion,ビギナーブロックでは別リージョンのクエストは開始できません。
-QuestCommon,0,SkipCountDown,参加メンバーが集合したことにより、クエストを即時開始します。
-QuestCommon,0,QuestPointMagnifiUpFromTime,/delay2 探索時間経過により<br>取得ポイント倍率が$(0)％アップ！（現在の倍率：$(1)％）
-QuestCommon,0,PartyClearRanking,あなたのパーティーの順位：$(0)位
-QuestCommon,0,3452_25,30000ポイント到達！（現在の進捗率：25%）
-QuestCommon,0,3452_50,60000ポイント到達！（現在の進捗率：50%）
-QuestCommon,0,3452_70,84000ポイント到達！（現在の進捗率：70%）
-QuestCommon,0,3452_90,108000ポイント到達！（現在の進捗率：90%）
-QuestCommon,0,MessageOnSomeoneQuestDrop,クエストの参加者が$(0)人になりました。
+CocoonUITitle,0,Cocoon_UITitle_Main_Mission,メインミッション
+CocoonUITitle,0,Cocoon_UITitle_Sub_Mission,サイドミッション
+CocoonUITitle,0,Cocoon_UITitle_Failure,失敗条件
+CocoonUITitle,0,UITitle_Trial,トライアル
+CocoonUITitle,0,UITitle_World_Trial,ワールドトライアル
+CocoonUITitle,0,UITitle_FieldRace,フィールドレース
+CocoonUITitle,0,Trinites_UITitle_Score,スコア
+CocoonUITitle,0,UITitle_EndCondition,クエスト終了条件
+CocoonUITitle,0,UITitle_ChipClearCondition,能力強化条件
 QuestCommon,1,CountDownTime,Quest will start in $(0) seconds
 QuestCommon,1,TimeTextMS,$(0):$(1)
 QuestCommon,1,TimeTextHMS,$(0):$(1):$(2)
@@ -141,14 +116,46 @@ QuestCommon,1,3452_50,"Achieved 60,000 Points! (Current Progress: 50%)"
 QuestCommon,1,3452_70,"Achieved 84,000 Points! (Current Progress: 70%)"
 QuestCommon,1,3452_90,"Achieved 108,000 Points! (Current Progress: 90%)"
 QuestCommon,1,MessageOnSomeoneQuestDrop,There are now $(0) Quest members.
-Reward,0,Cocoon_Reward_SkillPoint,スキルポイント
-Reward,0,Cocoon_Reward_SkillPointNum,$(0)ポイント
-Reward,0,Cocoon_Reward_Clear,$(0)クリア
+QuestCommon,0,CountDownTime,クエスト開始まで残り$(0)秒
+QuestCommon,0,TimeTextMS,$(0):$(1)
+QuestCommon,0,TimeTextHMS,$(0):$(1):$(2)
+QuestCommon,0,NumberTextCPM,$(0)/$(1)
+QuestCommon,0,QuestTitle,クエスト目標
+QuestCommon,0,Trinites_Update_SideMission,サイドミッション更新
+QuestCommon,0,ScorePt,$(0)Pt
+QuestCommon,0,LastDungeon_Buff_Atk001,通常攻撃の威力上昇効果が発生しました。
+QuestCommon,0,LastDungeon_Buff_Atk002,PA・テクニックの威力上昇効果が発生しました。
+QuestCommon,0,LastDungeon_Buff_Atk003,ダイブアタックの威力上昇効果が発生しました。
+QuestCommon,0,LastDungeon_Buff_Atk004,ステップカウンターの威力上昇効果が発生しました。
+QuestCommon,0,BuffLineText_Base,特定の条件を満たしたため、$(0)以下の効果が発生しました。<br>$(1)
+QuestCommon,0,BuffLineText_Target_1,参加者全員に
+QuestCommon,0,BuffLineText_Target_2,あなたに
+QuestCommon,0,BuffLineText_ConditionBase,$(0) Lv.$(1)
+QuestCommon,0,ScriptSequencer_Wait,他のプレイヤーを待っています。
+QuestCommon,0,BeginnerBlockWrongRegion,ビギナーブロックでは別リージョンのクエストは開始できません。
+QuestCommon,0,SkipCountDown,参加メンバーが集合したことにより、クエストを即時開始します。
+QuestCommon,0,QuestPointMagnifiUpFromTime,/delay2 探索時間経過により<br>取得ポイント倍率が$(0)％アップ！（現在の倍率：$(1)％）
+QuestCommon,0,PartyClearRanking,あなたのパーティーの順位：$(0)位
+QuestCommon,0,3452_25,30000ポイント到達！（現在の進捗率：25%）
+QuestCommon,0,3452_50,60000ポイント到達！（現在の進捗率：50%）
+QuestCommon,0,3452_70,84000ポイント到達！（現在の進捗率：70%）
+QuestCommon,0,3452_90,108000ポイント到達！（現在の進捗率：90%）
+QuestCommon,0,MessageOnSomeoneQuestDrop,クエストの参加者が$(0)人になりました。
 Reward,1,Cocoon_Reward_SkillPoint,Skill Points
 Reward,1,Cocoon_Reward_SkillPointNum,$(0) Point(s)
 Reward,1,Cocoon_Reward_Clear,Clear $(0)
-Result,0,QuestClear,$(0)クリア
+Reward,0,Cocoon_Reward_SkillPoint,スキルポイント
+Reward,0,Cocoon_Reward_SkillPointNum,$(0)ポイント
+Reward,0,Cocoon_Reward_Clear,$(0)クリア
 Result,1,QuestClear,Clear $(0)
+Result,0,QuestClear,$(0)クリア
+TrialFailure,1,f0,Quest Aborted
+TrialFailure,1,f1,Time limit exceeded!
+TrialFailure,1,f3,Incapacitation limit exceeded!
+TrialFailure,1,f4,Fall limit exceeded!
+TrialFailure,1,f5,Trial “$(0)” failed!
+TrialFailure,1,f6,Failed Side Missions limit exceeded!
+TrialFailure,1,f7,Quest over<br>All LP lost!
 TrialFailure,0,f0,クエストリタイアを選択
 TrialFailure,0,f1,タイムオーバー！
 TrialFailure,0,f2,（仮）防衛失敗
@@ -158,44 +165,6 @@ TrialFailure,0,f5,トライアル“$(0)”失敗
 TrialFailure,0,f6,サイドミッションの失敗数オーバー！
 TrialFailure,0,f7,クエスト終了<br>全LPを消失！
 TrialFailure,0,f8,タイムオーバー！
-TrialFailure,1,f0,Quest Aborted
-TrialFailure,1,f1,Time limit exceeded!
-TrialFailure,1,f3,Incapacitation limit exceeded!
-TrialFailure,1,f4,Fall limit exceeded!
-TrialFailure,1,f5,Trial “$(0)” failed!
-TrialFailure,1,f6,Failed Side Missions limit exceeded!
-TrialFailure,1,f7,Quest over<br>All LP lost!
-TrialCommon,0,BeginMsgTemplate,<yellow>クエスト目標　$(0)<c>
-TrialCommon,0,SuccessMsg_1,<yellow>クエストクリア！<c>
-TrialCommon,0,SuccessMsg_2,<yellow>出現したテレパイプで帰還せよ<c>
-TrialCommon,0,FailureMsg,<yellow>クエスト失敗！<c>
-TrialCommon,0,RemainPoint,残り$(0)ポイント
-TrialCommon,0,IncidentQuestPoint,$(0)ポイントを得た
-TrialCommon,0,QuestOpenMsg,以下のクエストが解放されました。
-TrialCommon,0,QuestOpenOther,他
-TrialCommon,0,TimeLimitRemainingSec,制限時間まであと$(0)秒！
-TrialCommon,0,TimeLimitRemainingMin,制限時間まであと$(0)分！
-TrialCommon,0,LifePointRemaining,残りLP$(0)！
-TrialCommon,0,QuotationMarks,「$(0)」
-TrialCommon,0,AchieveQuestPointMin,クエストポイント目標達成！　更にためるとリザルトランクＵＰのチャンス！
-TrialCommon,0,AchieveQuestPointMax,最大クエストポイント達成！
-TrialCommon,0,UpdateMsgTemplate,<yellow>クエスト目標更新！　$(0)<c>
-TrialCommon,0,ResetHalfDoll,N-ハーフドールが再度使用可能になりました
-TrialCommon,0,TrigerActiveRetiredNotice,バトルトリガーの使用者がクエストを<br>リタイアしたことにより、フィールドに戻ります。
-TrialCommon,0,TrigerJoinDiscardNotice,バトルトリガーの使用者がクエストを<br>破棄したことにより、フィールドに戻ります。
-TrialCommon,0,FailureLimitRemaining,サイドミッションを<br>あと$(0)つ失敗するとクエスト失敗
-TrialCommon,0,FailureLimitRemaining_Dead,あと$(0)回戦闘不能でクエスト失敗
-TrialCommon,0,NextQuestLevel,$(0)のRank.$(1)が解放されました。
-TrialCommon,0,AreaLimitRemineTimeSec,制限時間まであと$(0)秒！
-TrialCommon,0,AreaLimitRemineTimeMin,制限時間まであと$(0)分！
-TrialCommon,0,AreaLimitRemineTimeMinSec,制限時間まであと$(0)分$(1)秒！
-TrialCommon,0,AreaLimitTimeMoveNext,制限時間経過<br>最深部に移動
-TrialCommon,0,AllClearMoveNext,最深部に移動
-TrialCommon,0,AllDeathClearRemainingSec,全滅から一定時間経過でクエスト終了
-TrialCommon,0,LostAllLives,全LPを消失！
-TrialCommon,0,FinishTheQuest,<yellow>クエスト終了！<c>
-TrialCommon,0,ReachedCertainNumberOfDeaths,戦闘不能回数上限！
-TrialCommon,0,TimeUp,タイムオーバー！
 TrialCommon,1,BeginMsgTemplate,<yellow>Quest Objective: $(0)<c>
 TrialCommon,1,SuccessMsg_1,<yellow>Quest Complete!<c>
 TrialCommon,1,SuccessMsg_2,<yellow>Use the provided Telepipe to return.<c>
@@ -227,13 +196,37 @@ TrialCommon,1,LostAllLives,All LP lost!
 TrialCommon,1,FinishTheQuest,<yellow>Quest Over!<c>
 TrialCommon,1,ReachedCertainNumberOfDeaths,Incapacitation limit exceeded!
 TrialCommon,1,TimeUp,Time up!
-QuestFailureCondition,0,None,なし
-QuestFailureCondition,0,TimeOver,$(0)以上経過する
-QuestFailureCondition,0,TrialFailure,指定トライアルの失敗
-QuestFailureCondition,0,DeadCount,$(0)回戦闘不能になる
-QuestFailureCondition,0,FallCount,$(0)回落下する
-QuestFailureCondition,0,DeadMenu,クエストリタイアを選択
-QuestFailureCondition,0,FailureSideMission,サイドミッションを$(0)回失敗
+TrialCommon,0,BeginMsgTemplate,<yellow>クエスト目標　$(0)<c>
+TrialCommon,0,SuccessMsg_1,<yellow>クエストクリア！<c>
+TrialCommon,0,SuccessMsg_2,<yellow>出現したテレパイプで帰還せよ<c>
+TrialCommon,0,FailureMsg,<yellow>クエスト失敗！<c>
+TrialCommon,0,RemainPoint,残り$(0)ポイント
+TrialCommon,0,IncidentQuestPoint,$(0)ポイントを得た
+TrialCommon,0,QuestOpenMsg,以下のクエストが解放されました。
+TrialCommon,0,QuestOpenOther,他
+TrialCommon,0,TimeLimitRemainingSec,制限時間まであと$(0)秒！
+TrialCommon,0,TimeLimitRemainingMin,制限時間まであと$(0)分！
+TrialCommon,0,LifePointRemaining,残りLP$(0)！
+TrialCommon,0,QuotationMarks,「$(0)」
+TrialCommon,0,AchieveQuestPointMin,クエストポイント目標達成！　更にためるとリザルトランクＵＰのチャンス！
+TrialCommon,0,AchieveQuestPointMax,最大クエストポイント達成！
+TrialCommon,0,UpdateMsgTemplate,<yellow>クエスト目標更新！　$(0)<c>
+TrialCommon,0,ResetHalfDoll,N-ハーフドールが再度使用可能になりました
+TrialCommon,0,TrigerActiveRetiredNotice,バトルトリガーの使用者がクエストを<br>リタイアしたことにより、フィールドに戻ります。
+TrialCommon,0,TrigerJoinDiscardNotice,バトルトリガーの使用者がクエストを<br>破棄したことにより、フィールドに戻ります。
+TrialCommon,0,FailureLimitRemaining,サイドミッションを<br>あと$(0)つ失敗するとクエスト失敗
+TrialCommon,0,FailureLimitRemaining_Dead,あと$(0)回戦闘不能でクエスト失敗
+TrialCommon,0,NextQuestLevel,$(0)のRank.$(1)が解放されました。
+TrialCommon,0,AreaLimitRemineTimeSec,制限時間まであと$(0)秒！
+TrialCommon,0,AreaLimitRemineTimeMin,制限時間まであと$(0)分！
+TrialCommon,0,AreaLimitRemineTimeMinSec,制限時間まであと$(0)分$(1)秒！
+TrialCommon,0,AreaLimitTimeMoveNext,制限時間経過<br>最深部に移動
+TrialCommon,0,AllClearMoveNext,最深部に移動
+TrialCommon,0,AllDeathClearRemainingSec,全滅から一定時間経過でクエスト終了
+TrialCommon,0,LostAllLives,全LPを消失！
+TrialCommon,0,FinishTheQuest,<yellow>クエスト終了！<c>
+TrialCommon,0,ReachedCertainNumberOfDeaths,戦闘不能回数上限！
+TrialCommon,0,TimeUp,タイムオーバー！
 QuestFailureCondition,1,None,N/A
 QuestFailureCondition,1,TimeOver,Time exceeds $(0)
 QuestFailureCondition,1,TrialFailure,Failure of designated trial
@@ -241,18 +234,13 @@ QuestFailureCondition,1,DeadCount,Incapacitated $(0) times
 QuestFailureCondition,1,FallCount,Fall $(0) times
 QuestFailureCondition,1,DeadMenu,Quest abandoned
 QuestFailureCondition,1,FailureSideMission,Fail Side Missions $(0) times
-QuestSuccessCondition,0,None,なし
-QuestSuccessCondition,0,Story,対象エネミーの撃破
-QuestSuccessCondition,0,Trainia,メインミッションの達成
-QuestSuccessCondition,0,Urgency,対象エネミーの撃破
-QuestSuccessCondition,0,Prize,対象エネミーの撃破
-QuestSuccessCondition,0,Colosseo,対象エネミーの撃破<br>制限時間の経過
-QuestSuccessCondition,0,Trinites,最深部を目指す
-QuestSuccessCondition,0,GoalGetter,エネミーを倒し目標を破壊する
-QuestSuccessCondition,0,FinalAttacker,対象エネミーの撃破
-QuestSuccessCondition,0,Babel,対象エネミーの撃破
-QuestSuccessCondition,0,GrowUp,最深部のエネミーを倒す
-QuestSuccessCondition,0,Groom,最深部のエネミーを倒す
+QuestFailureCondition,0,None,なし
+QuestFailureCondition,0,TimeOver,$(0)以上経過する
+QuestFailureCondition,0,TrialFailure,指定トライアルの失敗
+QuestFailureCondition,0,DeadCount,$(0)回戦闘不能になる
+QuestFailureCondition,0,FallCount,$(0)回落下する
+QuestFailureCondition,0,DeadMenu,クエストリタイアを選択
+QuestFailureCondition,0,FailureSideMission,サイドミッションを$(0)回失敗
 QuestSuccessCondition,1,None,N/A
 QuestSuccessCondition,1,Story,Defeat the target enemy
 QuestSuccessCondition,1,Trainia,Complete the Main Mission
@@ -265,18 +253,20 @@ QuestSuccessCondition,1,FinalAttacker,Defeat the target enemies
 QuestSuccessCondition,1,Babel,Defeat the target enemies
 QuestSuccessCondition,1,GrowUp,Defeat the enemies in the final area
 QuestSuccessCondition,1,Groom,Defeat the enemies in the final area
-questblockade,0,BlockadeMsg_1,現在このクエストを受注できません。詳しくは公式サイトをご確認ください
+QuestSuccessCondition,0,None,なし
+QuestSuccessCondition,0,Story,対象エネミーの撃破
+QuestSuccessCondition,0,Trainia,メインミッションの達成
+QuestSuccessCondition,0,Urgency,対象エネミーの撃破
+QuestSuccessCondition,0,Prize,対象エネミーの撃破
+QuestSuccessCondition,0,Colosseo,対象エネミーの撃破<br>制限時間の経過
+QuestSuccessCondition,0,Trinites,最深部を目指す
+QuestSuccessCondition,0,GoalGetter,エネミーを倒し目標を破壊する
+QuestSuccessCondition,0,FinalAttacker,対象エネミーの撃破
+QuestSuccessCondition,0,Babel,対象エネミーの撃破
+QuestSuccessCondition,0,GrowUp,最深部のエネミーを倒す
+QuestSuccessCondition,0,Groom,最深部のエネミーを倒す
 questblockade,1,BlockadeMsg_1,This quest cannot currently be accepted. Please check the Player Site for details.
-Common_highrank,0,highrank_text01,ハイランクセクション
-Common_highrank,0,highrank_text02,【Rank.1】エネミーLv.5～
-Common_highrank,0,highrank_text03,【Rank.2】エネミーLv.15～
-Common_highrank,0,highrank_text04,【Rank.2】必要戦闘力：1184以上
-Common_highrank,0,highrank_text05,【Rank.1】
-Common_highrank,0,highrank_text06,【Rank.2】
-Common_highrank,0,highrank_text07,必要戦闘力
-Common_highrank,0,highrank_text08,【Rank.2】必要戦闘力：1184以上
-Common_highrank,0,highrank_text09,【Rank.1】
-Common_highrank,0,highrank_text10,【Rank.2】
+questblockade,0,BlockadeMsg_1,現在このクエストを受注できません。詳しくは公式サイトをご確認ください
 Common_highrank,1,highrank_text01,High Rank Sectors
 Common_highrank,1,highrank_text02,[Rank 1] Enemy Level 5+
 Common_highrank,1,highrank_text03,[Rank 2] Enemy Level 15+
@@ -287,26 +277,16 @@ Common_highrank,1,highrank_text07,Required Battle Power
 Common_highrank,1,highrank_text08,[Rank 2]Required Battle Power: 1184 or higher
 Common_highrank,1,highrank_text09,[Rank 1]
 Common_highrank,1,highrank_text10,[Rank 2]
-RebootDefense,0,DefensePurpose,クエスト目標
-RebootDefense,0,DefensePurposeDetails,資源採掘リグを防衛せよ！
-RebootDefense,0,DefenseHP,防衛対象耐久値
-RebootDefense,0,DefenseMaterial,取得ポイント
-RebootDefense,0,DefenseMaterialPt,Pt
-RebootDefense,0,WaveRemainTime,残り時間
-RebootDefense,0,WaveEndRemainTimeDetails,Wave.$(0)終了まで
-RebootDefense,0,WaveStartRemainTimeDetails,Wave.$(0)開始まで
-RebootDefense,0,DefenseNavigation,アドバイス
-RebootDefense,0,MaterialEffectUseable,<yellow>$(0)<c>が使用可能になりました。
-RebootDefense,0,MaterialEffectBaseRecovery,耐久値回復
-RebootDefense,0,MaterialEffectBaseBarrier,バリアシールド
-RebootDefense,0,MaterialEffectSpeciallyArmedGatling,モバイルキャノン
-RebootDefense,0,MaterialEffectSpeciallyArmedSnowBoard,フローティングボード
-RebootDefense,0,MaterialEffectSpeciallyArmedMultiLockMissle,モバイルキャノンM2
-RebootDefense,0,DiscriptionAccidentWall,【SUDDEN INCIDENT!!】<br>阻塞壁<yellow>バリゲール<c>が出現！　進路の妨害に注意せよ！
-RebootDefense,0,DiscriptionAccidentErosionCoreRush,【SUDDEN INCIDENT!!】<br>拠点襲撃機<yellow>バックハック<c>が出現！　資源採掘リグから排除せよ！
-RebootDefense,0,DiscriptionAccidentErosionGunRush,【SUDDEN INCIDENT!!】<br>中距離重砲<yellow>メルドラーム<c>が出現！　攻撃開始前に撃破せよ！
-RebootDefense,0,DiscriptionAccidentBoostEnemy,【SUDDEN INCIDENT!!】<br>エンハンスドエネミーの一群を確認！　強力な攻撃に注意せよ！
-RebootDefense,0,NoticeDestroyAllBase,全資源採掘リグの被害甚大！<br>敵勢力が攻勢を停止……順次撤退する模様……！
+Common_highrank,0,highrank_text01,ハイランクセクション
+Common_highrank,0,highrank_text02,【Rank.1】エネミーLv.5～
+Common_highrank,0,highrank_text03,【Rank.2】エネミーLv.15～
+Common_highrank,0,highrank_text04,【Rank.2】必要戦闘力：1184以上
+Common_highrank,0,highrank_text05,【Rank.1】
+Common_highrank,0,highrank_text06,【Rank.2】
+Common_highrank,0,highrank_text07,必要戦闘力
+Common_highrank,0,highrank_text08,【Rank.2】必要戦闘力：1184以上
+Common_highrank,0,highrank_text09,【Rank.1】
+Common_highrank,0,highrank_text10,【Rank.2】
 RebootDefense,1,DefensePurpose,Quest Objective
 RebootDefense,1,DefensePurposeDetails,Defend the Mining Rig!
 RebootDefense,1,DefenseHP,Defense Target Structural Integrity
@@ -327,15 +307,26 @@ RebootDefense,1,DiscriptionAccidentErosionCoreRush,[EMERGENCY ALERT!]<br>Assault
 RebootDefense,1,DiscriptionAccidentErosionGunRush,[EMERGENCY ALERT!]<br>Mid-range Heavy Artillery <yellow>Meldrum<c> has appeared! Destroy it before it can attack!
 RebootDefense,1,DiscriptionAccidentBoostEnemy,[EMERGENCY ALERT!]<br>A group of Enhanced Enemies has been sighted! Beware of their powerful attacks!
 RebootDefense,1,NoticeDestroyAllBase,All Mining Rigs severely damaged!<br>The enemy has halted its assault and is withdrawing!
-BattleTriggerCommon,0,BattleTrigger_ConsumeItem,$(0)を消費しました。
-BattleTriggerCommon,0,BattleTrigger_Activate_Success,$(0)が、トリガーポータルを起動しました。
-BattleTriggerCommon,0,BattleTrigger_Activate_Error_PartyMember,トリガーポータルは、パーティーリーダーのみが起動できます。
-BattleTriggerCommon,0,BattleTrigger_Deactivate,バトルトリガーの使用者がこのセクションから移動したため、トリガーポータルが停止しました。
-BattleTriggerCommon,0,BattleTrigger_Deactivate_LostItem,トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
-BattleTriggerCommon,0,BattleTrigger_Deactivate_QuestDrop,トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
-BattleTriggerCommon,0,BattleTrigger_Deactivate_Worldmap,異なるトリガーポータルが起動したため、起動中だったポータルが停止しました。
-BattleTriggerCommon,0,BattleTrigger_Activate_Marge,トリガーポータルの稼働状況が、参加したパーティー側の状態に更新されました。
-BattleTriggerCommon,0,Questcounter_Deactivate_QuestDrop,必要なバトルトリガーの個数が不足したため、クエストを破棄しました。
+RebootDefense,0,DefensePurpose,クエスト目標
+RebootDefense,0,DefensePurposeDetails,資源採掘リグを防衛せよ！
+RebootDefense,0,DefenseHP,防衛対象耐久値
+RebootDefense,0,DefenseMaterial,取得ポイント
+RebootDefense,0,DefenseMaterialPt,Pt
+RebootDefense,0,WaveRemainTime,残り時間
+RebootDefense,0,WaveEndRemainTimeDetails,Wave.$(0)終了まで
+RebootDefense,0,WaveStartRemainTimeDetails,Wave.$(0)開始まで
+RebootDefense,0,DefenseNavigation,アドバイス
+RebootDefense,0,MaterialEffectUseable,<yellow>$(0)<c>が使用可能になりました。
+RebootDefense,0,MaterialEffectBaseRecovery,耐久値回復
+RebootDefense,0,MaterialEffectBaseBarrier,バリアシールド
+RebootDefense,0,MaterialEffectSpeciallyArmedGatling,モバイルキャノン
+RebootDefense,0,MaterialEffectSpeciallyArmedSnowBoard,フローティングボード
+RebootDefense,0,MaterialEffectSpeciallyArmedMultiLockMissle,モバイルキャノンM2
+RebootDefense,0,DiscriptionAccidentWall,【SUDDEN INCIDENT!!】<br>阻塞壁<yellow>バリゲール<c>が出現！　進路の妨害に注意せよ！
+RebootDefense,0,DiscriptionAccidentErosionCoreRush,【SUDDEN INCIDENT!!】<br>拠点襲撃機<yellow>バックハック<c>が出現！　資源採掘リグから排除せよ！
+RebootDefense,0,DiscriptionAccidentErosionGunRush,【SUDDEN INCIDENT!!】<br>中距離重砲<yellow>メルドラーム<c>が出現！　攻撃開始前に撃破せよ！
+RebootDefense,0,DiscriptionAccidentBoostEnemy,【SUDDEN INCIDENT!!】<br>エンハンスドエネミーの一群を確認！　強力な攻撃に注意せよ！
+RebootDefense,0,NoticeDestroyAllBase,全資源採掘リグの被害甚大！<br>敵勢力が攻勢を停止……順次撤退する模様……！
 BattleTriggerCommon,1,BattleTrigger_ConsumeItem,$(0) consumed.
 BattleTriggerCommon,1,BattleTrigger_Activate_Success,$(0) has opened a Trigger Portal.
 BattleTriggerCommon,1,BattleTrigger_Activate_Error_PartyMember,Trigger Portals can only be opened by the party leader.
@@ -345,178 +336,23 @@ BattleTriggerCommon,1,BattleTrigger_Deactivate_QuestDrop,The Trigger Portal has 
 BattleTriggerCommon,1,BattleTrigger_Deactivate_Worldmap,The active Trigger Portal was closed because a different Trigger Portal was opened.
 BattleTriggerCommon,1,BattleTrigger_Activate_Marge,The operating status of the Trigger Portal was updated to the participating party's.
 BattleTriggerCommon,1,Questcounter_Deactivate_QuestDrop,The quest has been abandoned because the required number of Battle Triggers has become insufficient.
-BlockMove,0,BlockMoveFailed,ブロック移動に失敗しました。
-BlockMove,0,RegionMoveConfirm,$(0)リージョンのブロックに移動します。<br><br>クエストのマッチングはキャンセルされ、<br>受注中のクエストは破棄されます。<br>よろしいですか？
-BlockMove,0,RegionCityMoveConfirm,$(0)シティに移動します。<br>よろしいですか？
-BlockMove,0,RegionMoving,$(0)リージョンに移動中です。
+BattleTriggerCommon,0,BattleTrigger_ConsumeItem,$(0)を消費しました。
+BattleTriggerCommon,0,BattleTrigger_Activate_Success,$(0)が、トリガーポータルを起動しました。
+BattleTriggerCommon,0,BattleTrigger_Activate_Error_PartyMember,トリガーポータルは、パーティーリーダーのみが起動できます。
+BattleTriggerCommon,0,BattleTrigger_Deactivate,バトルトリガーの使用者がこのセクションから移動したため、トリガーポータルが停止しました。
+BattleTriggerCommon,0,BattleTrigger_Deactivate_LostItem,トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
+BattleTriggerCommon,0,BattleTrigger_Deactivate_QuestDrop,トリガーポータルの起動に必要なバトルトリガーの個数が不足したため、機能が停止しました。
+BattleTriggerCommon,0,BattleTrigger_Deactivate_Worldmap,異なるトリガーポータルが起動したため、起動中だったポータルが停止しました。
+BattleTriggerCommon,0,BattleTrigger_Activate_Marge,トリガーポータルの稼働状況が、参加したパーティー側の状態に更新されました。
+BattleTriggerCommon,0,Questcounter_Deactivate_QuestDrop,必要なバトルトリガーの個数が不足したため、クエストを破棄しました。
 BlockMove,1,BlockMoveFailed,Block transfer failed.
 BlockMove,1,RegionMoveConfirm,Traveling to $(0).<br><br>This will cancel quest matchmaking and cause you to abandon currently accepted quests.<br>Do you wish to proceed?
 BlockMove,1,RegionCityMoveConfirm,Teleporting to $(0). Are you sure?
 BlockMove,1,RegionMoving,Teleporting to $(0).
-ChallengeBuff,0,UpdateToastMessage,新しいチャレンジ設定が解放されました。
-ChallengeBuff,0,CbEnemyHp01,エネミー最大HP＋10％
-ChallengeBuff,0,DescCbEnemyHp01,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp02,エネミー最大HP＋20％
-ChallengeBuff,0,DescCbEnemyHp02,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp03,エネミー最大HP＋30％
-ChallengeBuff,0,DescCbEnemyHp03,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp04,エネミー最大HP＋40％
-ChallengeBuff,0,DescCbEnemyHp04,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp05,エネミー最大HP＋50％
-ChallengeBuff,0,DescCbEnemyHp05,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp06,エネミー最大HP＋60％
-ChallengeBuff,0,DescCbEnemyHp06,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp07,エネミー最大HP＋75％
-ChallengeBuff,0,DescCbEnemyHp07,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp08,エネミー最大HP＋100％
-ChallengeBuff,0,DescCbEnemyHp08,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp09,エネミー最大HP＋125％
-ChallengeBuff,0,DescCbEnemyHp09,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyHp10,エネミー最大HP＋150％
-ChallengeBuff,0,DescCbEnemyHp10,エネミー最大HPが増加する。
-ChallengeBuff,0,CbEnemyAtkUp01,エネミー攻撃力＋10％
-ChallengeBuff,0,DescCbEnemyAtkUp01,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp02,エネミー攻撃力＋20％
-ChallengeBuff,0,DescCbEnemyAtkUp02,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp03,エネミー攻撃力＋30％
-ChallengeBuff,0,DescCbEnemyAtkUp03,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp04,エネミー攻撃力＋40％
-ChallengeBuff,0,DescCbEnemyAtkUp04,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp05,エネミー攻撃力＋50％
-ChallengeBuff,0,DescCbEnemyAtkUp05,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp06,エネミー攻撃力＋60％
-ChallengeBuff,0,DescCbEnemyAtkUp06,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp07,エネミー攻撃力＋70％
-ChallengeBuff,0,DescCbEnemyAtkUp07,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp08,エネミー攻撃力＋80％
-ChallengeBuff,0,DescCbEnemyAtkUp08,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp09,エネミー攻撃力＋90％
-ChallengeBuff,0,DescCbEnemyAtkUp09,エネミーの攻撃力が増加する。
-ChallengeBuff,0,CbEnemyAtkUp10,エネミー攻撃力＋100％
-ChallengeBuff,0,DescCbEnemyAtkUp10,エネミーの攻撃力が増加する。
-ChallengeBuff,0,FormidableEnemy,ランダムチャレンジC：ギガンティクス化
-ChallengeBuff,0,DescFormidableEnemy,一部のフロアでエネミーが<br>一定確率でギガンティクス化する。
-ChallengeBuff,0,HighRankEnemy_cocoon25,エネミーメガロティクス化25%
-ChallengeBuff,0,DescHighRankEnemy_cocoon25,出現するエネミーの25%が<br>メガロティクス化する。
-ChallengeBuff,0,HighRankEnemy_cocoon50,エネミーメガロティクス化50%
-ChallengeBuff,0,DescHighRankEnemy_cocoon50,出現するエネミーの50%が<br>メガロティクス化する。
-ChallengeBuff,0,HighRankEnemy_cocoon75,エネミーメガロティクス化75%
-ChallengeBuff,0,DescHighRankEnemy_cocoon75,出現するエネミーの75%が<br>メガロティクス化する。
-ChallengeBuff,0,HighRankEnemy_cocoon100,エネミーメガロティクス化100%
-ChallengeBuff,0,DescHighRankEnemy_cocoon100,出現するエネミーの100%が<br>メガロティクス化する。
-ChallengeBuff,0,BoostController_cocoon,エネミーエンハンスドエネミー化
-ChallengeBuff,0,DescBoostController_cocoon,一部のエネミーが<br>エンハンスドエネミー化する。
-ChallengeBuff,0,HighRankEnemy_cocoonBoss,全ボスエネミーメガロティクス化
-ChallengeBuff,0,DescHighRankEnemy_cocoonBoss,すべてのボスエネミーが<br>メガロティクス化する。
-ChallengeBuff,0,BoostController_cocoonBoss,全ボスエネミーエンハンサー付与
-ChallengeBuff,0,DescBoostController_cocoonBoss,すべてのボスエネミーが<br>エンハンスドエネミー化する。
-ChallengeBuff,0,RandomSetA,ランダムチャレンジA
-ChallengeBuff,0,DescRandomSetA,一部のフロアで<br>ランダムチャレンジが発生する。
-ChallengeBuff,0,RandomSetB,ランダムチャレンジB
-ChallengeBuff,0,DescRandomSetB,一部のフロアで<br>ランダムチャレンジが発生する。
-ChallengeBuff,0,RandomSetC,ランダムチャレンジC
-ChallengeBuff,0,DescRandomSetC,一部のフロアで<br>ランダムチャレンジが発生する。
-ChallengeBuff,0,CbPlayerHarvest1,レスタサイン消費数増加：Lv.1
-ChallengeBuff,0,DescCbPlayerHarvest1,レスタサインの消費数が2倍になる。
-ChallengeBuff,0,CbPlayerHarvest2,レスタサイン消費数増加：Lv.2
-ChallengeBuff,0,DescCbPlayerHarvest2,レスタサインの消費数が3倍になる。
-ChallengeBuff,0,CbPlayerHarvest3,レスタサイン消費数増加：Lv.3
-ChallengeBuff,0,DescCbPlayerHarvest3,レスタサインの消費数が4倍になる。
-ChallengeBuff,0,CbPlayerHarvest4,レスタサイン消費数増加：Lv.4
-ChallengeBuff,0,DescCbPlayerHarvest4,レスタサインの消費数が5倍になる。
-ChallengeBuff,0,CbPlayerHarvest5,レスタサイン消費数増加：Lv.5
-ChallengeBuff,0,DescCbPlayerHarvest5,レスタサインの消費数が6倍になる。
-ChallengeBuff,0,CbPlayerRecoveryGauge1,各サイン最大所持数減少：Lv.1
-ChallengeBuff,0,DescCbPlayerRecoveryGauge1,レスタサインとリバーサーサインの<br>最大所持数が1個減少する。
-ChallengeBuff,0,CbPlayerRecoveryGauge2,各サイン最大所持数減少：Lv.2
-ChallengeBuff,0,DescCbPlayerRecoveryGauge2,レスタサインとリバーサーサインの<br>最大所持数が2個減少する。
-ChallengeBuff,0,CbPlayerRecoveryGauge3,各サイン最大所持数減少：Lv.3
-ChallengeBuff,0,DescCbPlayerRecoveryGauge3,レスタサインとリバーサーサインの<br>最大所持数が3個減少する。
-ChallengeBuff,0,CbPlayerRecoveryGauge4,各サイン最大所持数減少：Lv.4
-ChallengeBuff,0,DescCbPlayerRecoveryGauge4,レスタサインとリバーサーサインの<br>最大所持数が4個減少する。
-ChallengeBuff,0,CbPlayerPbGuageReduction2,ランダムチャレンジB：PBゲージ増加量－90%
-ChallengeBuff,0,DescCbPlayerPbGuageReduction2,一部のフロアでフォトンブラストの<br>ゲージ増加量が90%減少する。
-ChallengeBuff,0,CbPlayerPpDecrease2,ランダムチャレンジB：PP消費量＋30%
-ChallengeBuff,0,DescCbPlayerPpDecrease2,一部のフロアで<br>PP消費量が30%増加する。
-ChallengeBuff,0,CbPlayerContinuousDamage2,ランダムチャレンジC：HP10秒毎－20
-ChallengeBuff,0,DescCbPlayerContinuousDamage2,一部のフロアで<br>HPが10秒毎20減少する。
-ChallengeBuff,0,Category2_QuestEnemyLevelUp_001,エネミーレベルアップ：Lv.1
-ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_001,出現するエネミーのレベルが＋1される。
-ChallengeBuff,0,Category2_QuestEnemyLevelUp_002,エネミーレベルアップ：Lv.2
-ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_002,出現するエネミーのレベルが＋2される。
-ChallengeBuff,0,Category2_QuestEnemyLevelUp_003,エネミーレベルアップ：Lv.3
-ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_003,出現するエネミーのレベルが＋3される。
-ChallengeBuff,0,Category2_QuestEnemyLevelUp_004,エネミーレベルアップ：Lv.4
-ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_004,出現するエネミーのレベルが＋4される。
-ChallengeBuff,0,BuffFirstLineMsg_1,チャレンジ設定<br>$(0)
-ChallengeBuff,0,BuffFirstLineMsg_2,チャレンジ設定<br>$(0)<br>$(1)
-ChallengeBuff,0,BuffFirstLineMsg_3,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)
-ChallengeBuff,0,BuffFirstLineMsg_4,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)
-ChallengeBuff,0,BuffFirstLineMsg_5,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
-ChallengeBuff,0,BuffFirstLineMsg_6,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
-ChallengeBuff,0,BuffFirstLineMsg_7,チャレンジ設定$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
-ChallengeBuff,0,BuffFirstLineMsg_8,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
-ChallengeBuff,0,BuffFirstLineMsg_9,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
-ChallengeBuff,0,BuffFirstLineMsg_10,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
-ChallengeBuff,0,BuffAccidentLineMsg_1,ランダムチャレンジ発生<br>$(0)
-ChallengeBuff,0,BuffAccidentLineMsg_2,ランダムチャレンジ発生<br>$(0)<br>$(1)
-ChallengeBuff,0,BuffAccidentLineMsg_3,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)
-ChallengeBuff,0,BuffAccidentLineMsg_4,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)
-ChallengeBuff,0,BuffAccidentLineMsg_5,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
-ChallengeBuff,0,BuffAccidentLineMsg_6,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
-ChallengeBuff,0,BuffAccidentLineMsg_7,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
-ChallengeBuff,0,BuffAccidentLineMsg_8,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
-ChallengeBuff,0,BuffAccidentLineMsg_9,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
-ChallengeBuff,0,BuffAccidentLineMsg_10,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
-ChallengeBuff,0,HPDownLV2,ランダムチャレンジA：HP－50%
-ChallengeBuff,0,DescHPDownLV2,一部のフロアで<br>HPが50%減少する。
-ChallengeBuff,0,PPDownLV2,ランダムチャレンジA：PP－50
-ChallengeBuff,0,DescPPDownLV2,一部のフロアで<br>PPが50減少する。
-ChallengeBuff,0,Pyramid_EnemyContensTrigger,イコライジングエネミー弱体化
-ChallengeBuff,0,DescPyramid_EnemyContensTrigger,イコライジングエネミーの<br>HPが50%減少し、撃破時の<br>周囲へのダメージが100%増加する。
-ChallengeBuff,0,Pyramid_ClearCountInflictDamage,クリア回数で攻撃威力上昇
-ChallengeBuff,0,DescPyramid_ClearCountInflictDamage,トリニテスのクリア回数に応じて<br>攻撃威力が上昇する。
-ChallengeBuff,0,Pyramid_SClearCountCriticalRate,Sランククリア回数でクリティカル率上昇
-ChallengeBuff,0,DescPyramid_SClearCountCriticalRate,トリニテスのSランククリア回数に応じて<br>クリティカル発生率が上昇する。
-ChallengeBuff,0,Pyramid_InflictDamageIncrease_SideMissionClear,攻撃威力＋５%
-ChallengeBuff,0,Pyramid_InflictDamageIncrease,攻撃威力＋25%
-ChallengeBuff,0,DescPyramid_InflictDamageIncrease,攻撃威力が25%上昇する。
-ChallengeBuff,0,Pyramid_DamageCut_SideMissionClear,ダメージ耐性＋10％
-ChallengeBuff,0,Pyramid_DamageCut,ダメージ耐性＋30％
-ChallengeBuff,0,DescPyramid_DamageCut,ダメージ耐性が＋30％上昇する。
-ChallengeBuff,0,Pyramid_AddCritical,クリティカル率＋30%
-ChallengeBuff,0,DescPyramid_AddCritical,クリティカル発生率が30%上昇する。
-ChallengeBuff,0,Pyramid_AddCriticalDamege,クリティカル威力＋50%
-ChallengeBuff,0,DescPyramid_AddCriticalDamege,クリティカル時の威力が50%上昇する。
-ChallengeBuff,0,Pyramid_AttackPpHealRateUp_SideMissionClear,攻撃時PP回復量＋15%
-ChallengeBuff,0,Pyramid_AttackPpHealRateUp,攻撃時PP回復量＋100%
-ChallengeBuff,0,DescPyramid_AttackPpHealRateUp,攻撃時のPP回復量が100%増加する。
-ChallengeBuff,0,Pyramid_PaTechniquePpDwon,PP消費量－30%
-ChallengeBuff,0,DescPyramid_PaTechniquePpDwon,PP消費量が30%減少する。
-ChallengeBuff,0,Pyramid_WeekPointDamegeUp,弱点部位攻撃威力＋50%
-ChallengeBuff,0,DescPyramid_WeekPointDamegeUp,弱点攻撃時の攻撃威力が50%上昇する。
-ChallengeBuff,0,Pyramid_EnemyKillCountHpAdd,エネミー撃破数で最大HP増加
-ChallengeBuff,0,DescPyramid_EnemyKillCountHpAdd,トリニテスで倒したエネミーの数に応じて<br>最大HPが増加する。
-ChallengeBuff,0,Pyramid_MaxHpAdd,HP増加＋50％
-ChallengeBuff,0,DescPyramid_MaxHpAdd,HPが50％増加する。
-ChallengeBuff,0,Pyramid_MaxPpAdd,PP増加＋20
-ChallengeBuff,0,DescPyramid_MaxPpAdd,PPが20増加する。
-ChallengeBuff,0,Pyramid_RecoveryGaugeIncrease,各サイン最大所持数2倍
-ChallengeBuff,0,DescPyramid_RecoveryGaugeIncrease,レスタサイン、リバーサーサインの<br>最大所持数が2倍になる。
-ChallengeBuff,0,Pyramid_PbGuageIncrease,フォトンブラストゲージ自然蓄積量＋100％
-ChallengeBuff,0,DescPyramid_PbGuageIncrease,フォトンブラストゲージの<br>自然蓄積量が100%増加する。
-ChallengeBuff,0,Category1_QuestEnemyLevelOffset-5,エネミーレベルダウン：Lv.5
-ChallengeBuff,0,DescCategory1_QuestEnemyLevelOffset-5,出現するエネミーの<br>レベルがー５される。
-ChallengeBuff,0,Category1_QuestEnemyLevelOffset-10,エネミーレベルダウン：Lv.10
-ChallengeBuff,0,DescCategory1_QuestEnemyLevelOffset-10,出現するエネミーの<br>レベルがー10される。
-ChallengeBuff,0,Pyramid_EqualizingKillCountAddPp,イコライジングエネミー撃破数で最大PP増加
-ChallengeBuff,0,DescPyramid_EqualizingKillCountAddPp,トリニテスで倒したイコライジングエネミー<br>の数に応じて最大PPが増加する。
-ChallengeBuff,0,Pyramid_PbGuageBossKillIncrease,ボスエネミー撃破数でPB自然蓄積量増加
-ChallengeBuff,0,DescPyramid_PbGuageBossKillIncrease,トリニテスで倒したボスエネミーの数に<br>応じてPBゲージの自然蓄積量が増加する。
-ChallengeBuff,0,RecordSetA,クリア難度倍率最大化セット
-ChallengeBuff,0,DescRecordSetA,クリア難度倍率が最大になる<br>チャレンジ項目をセットする。
-ChallengeBuff,0,Category1_EnemyLevelToLevelCap,エネミーレベル最大化
-ChallengeBuff,0,DescCategory1_EnemyLevelToLevelCap,出現するエネミーのレベルが、<br>現在のプレイヤーのレベル上限と<br>同一になる。
+BlockMove,0,BlockMoveFailed,ブロック移動に失敗しました。
+BlockMove,0,RegionMoveConfirm,$(0)リージョンのブロックに移動します。<br><br>クエストのマッチングはキャンセルされ、<br>受注中のクエストは破棄されます。<br>よろしいですか？
+BlockMove,0,RegionCityMoveConfirm,$(0)シティに移動します。<br>よろしいですか？
+BlockMove,0,RegionMoving,$(0)リージョンに移動中です。
 ChallengeBuff,1,UpdateToastMessage,A new Challenge Setting has been unlocked.
 ChallengeBuff,1,CbEnemyHp01,Enemy Max HP +10%
 ChallengeBuff,1,DescCbEnemyHp01,Increases Enemy Max HP.
@@ -681,28 +517,182 @@ ChallengeBuff,1,RecordSetA,Clear Difficulty Multiplier Maximization Set
 ChallengeBuff,1,DescRecordSetA,Add a set of challenges that maximize the Clear Difficulty Multiplier.
 ChallengeBuff,1,Category1_EnemyLevelToLevelCap,Maximize Enemy Level
 ChallengeBuff,1,DescCategory1_EnemyLevelToLevelCap,Sets Enemy Level to the Player's current<br>maximum level.
-TrinitesCommon,0,Trinites_PointSymbol,($(0)Pt)
-TrinitesCommon,0,Trinites_FloorInfo,現在のフロア:
-TrinitesCommon,0,Trinites_FloorSymbol,$(0)
-TrinitesCommon,0,Trinites_FailureCondition,サイドミッションの失敗
-TrinitesCommon,0,Trinites_Mission_Buff,サイドミッション達成ブースト
+ChallengeBuff,0,UpdateToastMessage,新しいチャレンジ設定が解放されました。
+ChallengeBuff,0,CbEnemyHp01,エネミー最大HP＋10％
+ChallengeBuff,0,DescCbEnemyHp01,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp02,エネミー最大HP＋20％
+ChallengeBuff,0,DescCbEnemyHp02,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp03,エネミー最大HP＋30％
+ChallengeBuff,0,DescCbEnemyHp03,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp04,エネミー最大HP＋40％
+ChallengeBuff,0,DescCbEnemyHp04,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp05,エネミー最大HP＋50％
+ChallengeBuff,0,DescCbEnemyHp05,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp06,エネミー最大HP＋60％
+ChallengeBuff,0,DescCbEnemyHp06,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp07,エネミー最大HP＋75％
+ChallengeBuff,0,DescCbEnemyHp07,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp08,エネミー最大HP＋100％
+ChallengeBuff,0,DescCbEnemyHp08,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp09,エネミー最大HP＋125％
+ChallengeBuff,0,DescCbEnemyHp09,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyHp10,エネミー最大HP＋150％
+ChallengeBuff,0,DescCbEnemyHp10,エネミー最大HPが増加する。
+ChallengeBuff,0,CbEnemyAtkUp01,エネミー攻撃力＋10％
+ChallengeBuff,0,DescCbEnemyAtkUp01,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp02,エネミー攻撃力＋20％
+ChallengeBuff,0,DescCbEnemyAtkUp02,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp03,エネミー攻撃力＋30％
+ChallengeBuff,0,DescCbEnemyAtkUp03,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp04,エネミー攻撃力＋40％
+ChallengeBuff,0,DescCbEnemyAtkUp04,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp05,エネミー攻撃力＋50％
+ChallengeBuff,0,DescCbEnemyAtkUp05,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp06,エネミー攻撃力＋60％
+ChallengeBuff,0,DescCbEnemyAtkUp06,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp07,エネミー攻撃力＋70％
+ChallengeBuff,0,DescCbEnemyAtkUp07,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp08,エネミー攻撃力＋80％
+ChallengeBuff,0,DescCbEnemyAtkUp08,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp09,エネミー攻撃力＋90％
+ChallengeBuff,0,DescCbEnemyAtkUp09,エネミーの攻撃力が増加する。
+ChallengeBuff,0,CbEnemyAtkUp10,エネミー攻撃力＋100％
+ChallengeBuff,0,DescCbEnemyAtkUp10,エネミーの攻撃力が増加する。
+ChallengeBuff,0,FormidableEnemy,ランダムチャレンジC：ギガンティクス化
+ChallengeBuff,0,DescFormidableEnemy,一部のフロアでエネミーが<br>一定確率でギガンティクス化する。
+ChallengeBuff,0,HighRankEnemy_cocoon25,エネミーメガロティクス化25%
+ChallengeBuff,0,DescHighRankEnemy_cocoon25,出現するエネミーの25%が<br>メガロティクス化する。
+ChallengeBuff,0,HighRankEnemy_cocoon50,エネミーメガロティクス化50%
+ChallengeBuff,0,DescHighRankEnemy_cocoon50,出現するエネミーの50%が<br>メガロティクス化する。
+ChallengeBuff,0,HighRankEnemy_cocoon75,エネミーメガロティクス化75%
+ChallengeBuff,0,DescHighRankEnemy_cocoon75,出現するエネミーの75%が<br>メガロティクス化する。
+ChallengeBuff,0,HighRankEnemy_cocoon100,エネミーメガロティクス化100%
+ChallengeBuff,0,DescHighRankEnemy_cocoon100,出現するエネミーの100%が<br>メガロティクス化する。
+ChallengeBuff,0,BoostController_cocoon,エネミーエンハンスドエネミー化
+ChallengeBuff,0,DescBoostController_cocoon,一部のエネミーが<br>エンハンスドエネミー化する。
+ChallengeBuff,0,HighRankEnemy_cocoonBoss,全ボスエネミーメガロティクス化
+ChallengeBuff,0,DescHighRankEnemy_cocoonBoss,すべてのボスエネミーが<br>メガロティクス化する。
+ChallengeBuff,0,BoostController_cocoonBoss,全ボスエネミーエンハンサー付与
+ChallengeBuff,0,DescBoostController_cocoonBoss,すべてのボスエネミーが<br>エンハンスドエネミー化する。
+ChallengeBuff,0,RandomSetA,ランダムチャレンジA
+ChallengeBuff,0,DescRandomSetA,一部のフロアで<br>ランダムチャレンジが発生する。
+ChallengeBuff,0,RandomSetB,ランダムチャレンジB
+ChallengeBuff,0,DescRandomSetB,一部のフロアで<br>ランダムチャレンジが発生する。
+ChallengeBuff,0,RandomSetC,ランダムチャレンジC
+ChallengeBuff,0,DescRandomSetC,一部のフロアで<br>ランダムチャレンジが発生する。
+ChallengeBuff,0,CbPlayerHarvest1,レスタサイン消費数増加：Lv.1
+ChallengeBuff,0,DescCbPlayerHarvest1,レスタサインの消費数が2倍になる。
+ChallengeBuff,0,CbPlayerHarvest2,レスタサイン消費数増加：Lv.2
+ChallengeBuff,0,DescCbPlayerHarvest2,レスタサインの消費数が3倍になる。
+ChallengeBuff,0,CbPlayerHarvest3,レスタサイン消費数増加：Lv.3
+ChallengeBuff,0,DescCbPlayerHarvest3,レスタサインの消費数が4倍になる。
+ChallengeBuff,0,CbPlayerHarvest4,レスタサイン消費数増加：Lv.4
+ChallengeBuff,0,DescCbPlayerHarvest4,レスタサインの消費数が5倍になる。
+ChallengeBuff,0,CbPlayerHarvest5,レスタサイン消費数増加：Lv.5
+ChallengeBuff,0,DescCbPlayerHarvest5,レスタサインの消費数が6倍になる。
+ChallengeBuff,0,CbPlayerRecoveryGauge1,各サイン最大所持数減少：Lv.1
+ChallengeBuff,0,DescCbPlayerRecoveryGauge1,レスタサインとリバーサーサインの<br>最大所持数が1個減少する。
+ChallengeBuff,0,CbPlayerRecoveryGauge2,各サイン最大所持数減少：Lv.2
+ChallengeBuff,0,DescCbPlayerRecoveryGauge2,レスタサインとリバーサーサインの<br>最大所持数が2個減少する。
+ChallengeBuff,0,CbPlayerRecoveryGauge3,各サイン最大所持数減少：Lv.3
+ChallengeBuff,0,DescCbPlayerRecoveryGauge3,レスタサインとリバーサーサインの<br>最大所持数が3個減少する。
+ChallengeBuff,0,CbPlayerRecoveryGauge4,各サイン最大所持数減少：Lv.4
+ChallengeBuff,0,DescCbPlayerRecoveryGauge4,レスタサインとリバーサーサインの<br>最大所持数が4個減少する。
+ChallengeBuff,0,CbPlayerPbGuageReduction2,ランダムチャレンジB：PBゲージ増加量－90%
+ChallengeBuff,0,DescCbPlayerPbGuageReduction2,一部のフロアでフォトンブラストの<br>ゲージ増加量が90%減少する。
+ChallengeBuff,0,CbPlayerPpDecrease2,ランダムチャレンジB：PP消費量＋30%
+ChallengeBuff,0,DescCbPlayerPpDecrease2,一部のフロアで<br>PP消費量が30%増加する。
+ChallengeBuff,0,CbPlayerContinuousDamage2,ランダムチャレンジC：HP10秒毎－20
+ChallengeBuff,0,DescCbPlayerContinuousDamage2,一部のフロアで<br>HPが10秒毎20減少する。
+ChallengeBuff,0,Category2_QuestEnemyLevelUp_001,エネミーレベルアップ：Lv.1
+ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_001,出現するエネミーのレベルが＋1される。
+ChallengeBuff,0,Category2_QuestEnemyLevelUp_002,エネミーレベルアップ：Lv.2
+ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_002,出現するエネミーのレベルが＋2される。
+ChallengeBuff,0,Category2_QuestEnemyLevelUp_003,エネミーレベルアップ：Lv.3
+ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_003,出現するエネミーのレベルが＋3される。
+ChallengeBuff,0,Category2_QuestEnemyLevelUp_004,エネミーレベルアップ：Lv.4
+ChallengeBuff,0,DescCategory2_QuestEnemyLevelUp_004,出現するエネミーのレベルが＋4される。
+ChallengeBuff,0,BuffFirstLineMsg_1,チャレンジ設定<br>$(0)
+ChallengeBuff,0,BuffFirstLineMsg_2,チャレンジ設定<br>$(0)<br>$(1)
+ChallengeBuff,0,BuffFirstLineMsg_3,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)
+ChallengeBuff,0,BuffFirstLineMsg_4,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+ChallengeBuff,0,BuffFirstLineMsg_5,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+ChallengeBuff,0,BuffFirstLineMsg_6,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+ChallengeBuff,0,BuffFirstLineMsg_7,チャレンジ設定$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+ChallengeBuff,0,BuffFirstLineMsg_8,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+ChallengeBuff,0,BuffFirstLineMsg_9,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+ChallengeBuff,0,BuffFirstLineMsg_10,チャレンジ設定<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+ChallengeBuff,0,BuffAccidentLineMsg_1,ランダムチャレンジ発生<br>$(0)
+ChallengeBuff,0,BuffAccidentLineMsg_2,ランダムチャレンジ発生<br>$(0)<br>$(1)
+ChallengeBuff,0,BuffAccidentLineMsg_3,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)
+ChallengeBuff,0,BuffAccidentLineMsg_4,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)
+ChallengeBuff,0,BuffAccidentLineMsg_5,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)
+ChallengeBuff,0,BuffAccidentLineMsg_6,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)
+ChallengeBuff,0,BuffAccidentLineMsg_7,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)
+ChallengeBuff,0,BuffAccidentLineMsg_8,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)
+ChallengeBuff,0,BuffAccidentLineMsg_9,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)
+ChallengeBuff,0,BuffAccidentLineMsg_10,ランダムチャレンジ発生<br>$(0)<br>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<br>$(6)<br>$(7)<br>$(8)<br>$(9)
+ChallengeBuff,0,HPDownLV2,ランダムチャレンジA：HP－50%
+ChallengeBuff,0,DescHPDownLV2,一部のフロアで<br>HPが50%減少する。
+ChallengeBuff,0,PPDownLV2,ランダムチャレンジA：PP－50
+ChallengeBuff,0,DescPPDownLV2,一部のフロアで<br>PPが50減少する。
+ChallengeBuff,0,Pyramid_EnemyContensTrigger,イコライジングエネミー弱体化
+ChallengeBuff,0,DescPyramid_EnemyContensTrigger,イコライジングエネミーの<br>HPが50%減少し、撃破時の<br>周囲へのダメージが100%増加する。
+ChallengeBuff,0,Pyramid_ClearCountInflictDamage,クリア回数で攻撃威力上昇
+ChallengeBuff,0,DescPyramid_ClearCountInflictDamage,トリニテスのクリア回数に応じて<br>攻撃威力が上昇する。
+ChallengeBuff,0,Pyramid_SClearCountCriticalRate,Sランククリア回数でクリティカル率上昇
+ChallengeBuff,0,DescPyramid_SClearCountCriticalRate,トリニテスのSランククリア回数に応じて<br>クリティカル発生率が上昇する。
+ChallengeBuff,0,Pyramid_InflictDamageIncrease_SideMissionClear,攻撃威力＋５%
+ChallengeBuff,0,Pyramid_InflictDamageIncrease,攻撃威力＋25%
+ChallengeBuff,0,DescPyramid_InflictDamageIncrease,攻撃威力が25%上昇する。
+ChallengeBuff,0,Pyramid_DamageCut_SideMissionClear,ダメージ耐性＋10％
+ChallengeBuff,0,Pyramid_DamageCut,ダメージ耐性＋30％
+ChallengeBuff,0,DescPyramid_DamageCut,ダメージ耐性が＋30％上昇する。
+ChallengeBuff,0,Pyramid_AddCritical,クリティカル率＋30%
+ChallengeBuff,0,DescPyramid_AddCritical,クリティカル発生率が30%上昇する。
+ChallengeBuff,0,Pyramid_AddCriticalDamege,クリティカル威力＋50%
+ChallengeBuff,0,DescPyramid_AddCriticalDamege,クリティカル時の威力が50%上昇する。
+ChallengeBuff,0,Pyramid_AttackPpHealRateUp_SideMissionClear,攻撃時PP回復量＋15%
+ChallengeBuff,0,Pyramid_AttackPpHealRateUp,攻撃時PP回復量＋100%
+ChallengeBuff,0,DescPyramid_AttackPpHealRateUp,攻撃時のPP回復量が100%増加する。
+ChallengeBuff,0,Pyramid_PaTechniquePpDwon,PP消費量－30%
+ChallengeBuff,0,DescPyramid_PaTechniquePpDwon,PP消費量が30%減少する。
+ChallengeBuff,0,Pyramid_WeekPointDamegeUp,弱点部位攻撃威力＋50%
+ChallengeBuff,0,DescPyramid_WeekPointDamegeUp,弱点攻撃時の攻撃威力が50%上昇する。
+ChallengeBuff,0,Pyramid_EnemyKillCountHpAdd,エネミー撃破数で最大HP増加
+ChallengeBuff,0,DescPyramid_EnemyKillCountHpAdd,トリニテスで倒したエネミーの数に応じて<br>最大HPが増加する。
+ChallengeBuff,0,Pyramid_MaxHpAdd,HP増加＋50％
+ChallengeBuff,0,DescPyramid_MaxHpAdd,HPが50％増加する。
+ChallengeBuff,0,Pyramid_MaxPpAdd,PP増加＋20
+ChallengeBuff,0,DescPyramid_MaxPpAdd,PPが20増加する。
+ChallengeBuff,0,Pyramid_RecoveryGaugeIncrease,各サイン最大所持数2倍
+ChallengeBuff,0,DescPyramid_RecoveryGaugeIncrease,レスタサイン、リバーサーサインの<br>最大所持数が2倍になる。
+ChallengeBuff,0,Pyramid_PbGuageIncrease,フォトンブラストゲージ自然蓄積量＋100％
+ChallengeBuff,0,DescPyramid_PbGuageIncrease,フォトンブラストゲージの<br>自然蓄積量が100%増加する。
+ChallengeBuff,0,Category1_QuestEnemyLevelOffset-5,エネミーレベルダウン：Lv.5
+ChallengeBuff,0,DescCategory1_QuestEnemyLevelOffset-5,出現するエネミーの<br>レベルがー５される。
+ChallengeBuff,0,Category1_QuestEnemyLevelOffset-10,エネミーレベルダウン：Lv.10
+ChallengeBuff,0,DescCategory1_QuestEnemyLevelOffset-10,出現するエネミーの<br>レベルがー10される。
+ChallengeBuff,0,Pyramid_EqualizingKillCountAddPp,イコライジングエネミー撃破数で最大PP増加
+ChallengeBuff,0,DescPyramid_EqualizingKillCountAddPp,トリニテスで倒したイコライジングエネミー<br>の数に応じて最大PPが増加する。
+ChallengeBuff,0,Pyramid_PbGuageBossKillIncrease,ボスエネミー撃破数でPB自然蓄積量増加
+ChallengeBuff,0,DescPyramid_PbGuageBossKillIncrease,トリニテスで倒したボスエネミーの数に<br>応じてPBゲージの自然蓄積量が増加する。
+ChallengeBuff,0,RecordSetA,クリア難度倍率最大化セット
+ChallengeBuff,0,DescRecordSetA,クリア難度倍率が最大になる<br>チャレンジ項目をセットする。
+ChallengeBuff,0,Category1_EnemyLevelToLevelCap,エネミーレベル最大化
+ChallengeBuff,0,DescCategory1_EnemyLevelToLevelCap,出現するエネミーのレベルが、<br>現在のプレイヤーのレベル上限と<br>同一になる。
 TrinitesCommon,1,Trinites_PointSymbol,($(0)Pt)
 TrinitesCommon,1,Trinites_FloorInfo,Current Floor: 
 TrinitesCommon,1,Trinites_FloorSymbol,$(0)
 TrinitesCommon,1,Trinites_FailureCondition,Failed Side Missions
 TrinitesCommon,1,Trinites_Mission_Buff,Side Mission Completion Boost
-QuestRetryError,0,RemainingPoolDrop,メンバーがクエスト倉庫の画面を開いているため、リトライが出来ません。
+TrinitesCommon,0,Trinites_PointSymbol,($(0)Pt)
+TrinitesCommon,0,Trinites_FloorInfo,現在のフロア:
+TrinitesCommon,0,Trinites_FloorSymbol,$(0)
+TrinitesCommon,0,Trinites_FailureCondition,サイドミッションの失敗
+TrinitesCommon,0,Trinites_Mission_Buff,サイドミッション達成ブースト
 QuestRetryError,1,RemainingPoolDrop,Cannot retry due to a party member(s) having their Quest Storage window open.
-GoalGetterCommon,0,GoalGetter_UITitle_TargetNum,ターゲット数
-GoalGetterCommon,0,GoalGetter_UITitle_BoalNum,出現中のキャノンボール数
-GoalGetterCommon,0,GoalGetter_UITitle_Time,制限時間
-GoalGetterCommon,0,GoalGetter_UITitle_Score,スコア
-GoalGetterCommon,0,GoalGetter_UITitle_Target_Details,$(0)/$(1)
-GoalGetterCommon,0,GoalGetter_UITitle_Ball_Details,$(0)
-GoalGetterCommon,0,GoalGetter_UITitle_Time_Details,Wave.$(0)終了まで
-GoalGetterCommon,0,GoalGetter_UITitle_Wave_Details,Wave.$(0)
-GoalGetterCommon,0,GoalGetter_UITitle_TimeUp,クエスト終了<br>制限時間超過<br>残りターゲット数：$(0)
-GoalGetterCommon,0,GoalGetter_UITitle_Target_Remaining,残りターゲット数：$(0)
+QuestRetryError,0,RemainingPoolDrop,メンバーがクエスト倉庫の画面を開いているため、リトライが出来ません。
 GoalGetterCommon,1,GoalGetter_UITitle_TargetNum,Number of Targets
 GoalGetterCommon,1,GoalGetter_UITitle_BoalNum,Cannon Balls in Play
 GoalGetterCommon,1,GoalGetter_UITitle_Time,Time Limit
@@ -713,22 +703,60 @@ GoalGetterCommon,1,GoalGetter_UITitle_Time_Details,Wave $(0) Time Remaining
 GoalGetterCommon,1,GoalGetter_UITitle_Wave_Details,Wave $(0)
 GoalGetterCommon,1,GoalGetter_UITitle_TimeUp,Quest Over<br>Time Limit Exceeded<br>Targets Remaining: $(0)
 GoalGetterCommon,1,GoalGetter_UITitle_Target_Remaining,Remaining No. of Targets: $(0)
-FinalAttackerCommon,0,Journal_MissionTitle,クエスト目標
-FinalAttackerCommon,0,Jounal_MissionExplanation,エネミーを倒してスコアGET!
-FinalAttackerCommon,0,Jounal_ScoreTitle,クエストポイント
-FinalAttackerCommon,0,Jounal_TopPlayerTitle,ベストプレイヤー
-FinalAttackerCommon,0,Jounal_Point,Pt
+GoalGetterCommon,0,GoalGetter_UITitle_TargetNum,ターゲット数
+GoalGetterCommon,0,GoalGetter_UITitle_BoalNum,出現中のキャノンボール数
+GoalGetterCommon,0,GoalGetter_UITitle_Time,制限時間
+GoalGetterCommon,0,GoalGetter_UITitle_Score,スコア
+GoalGetterCommon,0,GoalGetter_UITitle_Target_Details,$(0)/$(1)
+GoalGetterCommon,0,GoalGetter_UITitle_Ball_Details,$(0)
+GoalGetterCommon,0,GoalGetter_UITitle_Time_Details,Wave.$(0)終了まで
+GoalGetterCommon,0,GoalGetter_UITitle_Wave_Details,Wave.$(0)
+GoalGetterCommon,0,GoalGetter_UITitle_TimeUp,クエスト終了<br>制限時間超過<br>残りターゲット数：$(0)
+GoalGetterCommon,0,GoalGetter_UITitle_Target_Remaining,残りターゲット数：$(0)
 FinalAttackerCommon,1,Journal_MissionTitle,Quest Objective
 FinalAttackerCommon,1,Jounal_MissionExplanation,dummy_text
 FinalAttackerCommon,1,Jounal_ScoreTitle,Quest Points
 FinalAttackerCommon,1,Jounal_TopPlayerTitle,Best Player
 FinalAttackerCommon,1,Jounal_Point,Pts
-BabelCommon,0,Babel_FailureDueToDeath,戦闘不能$(0)回で失敗
-BabelCommon,0,Babel_FailureDueToTimeLimit,制限時間の経過
-BabelCommon,0,Babel_UITitle,到達ランク予想
+FinalAttackerCommon,0,Journal_MissionTitle,クエスト目標
+FinalAttackerCommon,0,Jounal_MissionExplanation,エネミーを倒してスコアGET!
+FinalAttackerCommon,0,Jounal_ScoreTitle,クエストポイント
+FinalAttackerCommon,0,Jounal_TopPlayerTitle,ベストプレイヤー
+FinalAttackerCommon,0,Jounal_Point,Pt
 BabelCommon,1,Babel_FailureDueToDeath,Fail if incapacitated $(0) times
 BabelCommon,1,Babel_FailureDueToTimeLimit,Time limit exceeded
 BabelCommon,1,Babel_UITitle,Expected Rank
+BabelCommon,0,Babel_FailureDueToDeath,戦闘不能$(0)回で失敗
+BabelCommon,0,Babel_FailureDueToTimeLimit,制限時間の経過
+BabelCommon,0,Babel_UITitle,到達ランク予想
+GrowUpCommon,1,GetBuffLevel, Sector $(0) conditions fulfilled. Earned <yellow>$(1)<c>. (Total: <yellow>$(2)<c>)
+GrowUpCommon,1,GetBuff, Sector $(0) conditions fulfilled. Earned <yellow>$(1) $(2)<c>.
+GrowUpCommon,1,StackBuff, Sector $(0) conditions fulfilled. Earned <yellow>$(1) $(2)<c>.
+GrowUpCommon,1,LifePoint,All LP lost
+GrowUpCommon,1,TimeOver,Time limit exceeded
+GrowUpCommon,1,ChipInfoHeader,Ability Buff Condition: $(0)
+GrowUpCommon,1,ChipInfoBattle,Defeat the enemies
+GrowUpCommon,1,ChipInfoItemContainer,Destroy all Shared Containers
+GrowUpCommon,1,ChipInfoSearch,Press 3 Pole Switches
+GrowUpCommon,1,ChipInfoNone,None
+GrowUpCommon,1,ChipInfoCleared,Acquired
+GrowUpCommon,1,GetFMTBuff,Trial completed. Earned <yellow>$(0)<c> and <yellow>$(1)<c>.
+GrowUpCommon,1,StackFMTBuff,Trial completed. Earned <yellow>$(0)<c> and <yellow>$(1)<c>.
+GrowUpCommon,1,GetBuffContainer,Earned <yellow>$(0) $(1)<c> from Photon Boost Crate.
+GrowUpCommon,1,StackBuffContainer,Earned <yellow>$(0) $(1)<c> from Photon Boost Crate.
+GrowUpCommon,1,AppearBuffContainer,A <yellow>Photon Boost Crate<c> has appeared nearby.
+GrowUpCommon,1,GetBuffList,Player Ability Buff
+GrowUpCommon,1,GetBuffLv,Lv.$(0)
+GrowUpCommon,1,Benefit_None,None
+GrowUpCommon,1,Benefit_LifeUp,LP + $(0)
+GrowUpCommon,1,AreaWait_QuestDetailsGuide,"This information can also be found in the <yellow>""Simple Quest Info"" that appears when opening the main menu<c> while the quest is in progress."
+GrowUpCommon,1,AreaWait_QuestDetailsTitle,Enemy Information
+GrowUpCommon,1,Growup_EnemyBuff_1,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<c>"
+GrowUpCommon,1,Growup_EnemyBuff_2,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<c>"
+GrowUpCommon,1,Growup_EnemyBuff_3,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<c>"
+GrowUpCommon,1,Growup_EnemyBuff_4,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<c>"
+GrowUpCommon,1,Growup_EnemyBuff_5,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<c>"
+GrowUpCommon,1,ChipClear_LineMessage,Completed the Ability Buff Condition in this sector.
 GrowUpCommon,0,GetBuffLevel,セクター$(0)の条件達成により、<yellow>$(1)<c>を獲得しました。(累積数：<yellow>$(2)<c>)
 GrowUpCommon,0,GetBuff,セクター$(0)の条件達成により、<yellow>$(1) $(2)<c>を獲得しました。
 GrowUpCommon,0,StackBuff,セクター$(0)の条件達成により、<yellow>$(1) $(2)<c>を獲得しました。
@@ -769,34 +797,327 @@ GrowUpCommon,0,Growup_EnemyBuff_3,/atime5 二つ名“$(0)”が付くエネミ�
 GrowUpCommon,0,Growup_EnemyBuff_4,/atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<c>
 GrowUpCommon,0,Growup_EnemyBuff_5,/atime5 二つ名“$(0)”が付くエネミーの能力が強化<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<c>
 GrowUpCommon,0,ChipClear_LineMessage,このセクターの能力強化条件を達成
-GrowUpCommon,1,GetBuffLevel, Sector $(0) conditions fulfilled. Earned <yellow>$(1)<c>. (Total: <yellow>$(2)<c>)
-GrowUpCommon,1,GetBuff, Sector $(0) conditions fulfilled. Earned <yellow>$(1) $(2)<c>.
-GrowUpCommon,1,StackBuff, Sector $(0) conditions fulfilled. Earned <yellow>$(1) $(2)<c>.
-GrowUpCommon,1,LifePoint,All LP lost
-GrowUpCommon,1,TimeOver,Time limit exceeded
-GrowUpCommon,1,ChipInfoHeader,Ability Buff Condition: $(0)
-GrowUpCommon,1,ChipInfoBattle,Defeat the enemies
-GrowUpCommon,1,ChipInfoItemContainer,Destroy all Shared Containers
-GrowUpCommon,1,ChipInfoSearch,Press 3 Pole Switches
-GrowUpCommon,1,ChipInfoNone,None
-GrowUpCommon,1,ChipInfoCleared,Acquired
-GrowUpCommon,1,GetFMTBuff,Trial completed. Earned <yellow>$(0)<c> and <yellow>$(1)<c>.
-GrowUpCommon,1,StackFMTBuff,Trial completed. Earned <yellow>$(0)<c> and <yellow>$(1)<c>.
-GrowUpCommon,1,GetBuffContainer,Earned <yellow>$(0) $(1)<c> from Photon Boost Crate.
-GrowUpCommon,1,StackBuffContainer,Earned <yellow>$(0) $(1)<c> from Photon Boost Crate.
-GrowUpCommon,1,AppearBuffContainer,A <yellow>Photon Boost Crate<c> has appeared nearby.
-GrowUpCommon,1,GetBuffList,Player Ability Buff
-GrowUpCommon,1,GetBuffLv,Lv.$(0)
-GrowUpCommon,1,Benefit_None,None
-GrowUpCommon,1,Benefit_LifeUp,LP + $(0)
-GrowUpCommon,1,AreaWait_QuestDetailsGuide,"This information can also be found in the <yellow>""Simple Quest Info"" that appears when opening the main menu<c> while the quest is in progress."
-GrowUpCommon,1,AreaWait_QuestDetailsTitle,Enemy Information
-GrowUpCommon,1,Growup_EnemyBuff_1,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<c>"
-GrowUpCommon,1,Growup_EnemyBuff_2,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<c>"
-GrowUpCommon,1,Growup_EnemyBuff_3,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<c>"
-GrowUpCommon,1,Growup_EnemyBuff_4,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<c>"
-GrowUpCommon,1,Growup_EnemyBuff_5,"/atime5 Ability buff to Enemies with ""$(0)"" in their names<br><yellow>$(1)<br>$(2)<br>$(3)<br>$(4)<br>$(5)<c>"
-GrowUpCommon,1,ChipClear_LineMessage,Completed the Ability Buff Condition in this sector.
+GrowUpBuff,1,GrowUpQuest_HpUp,Max HP Up
+GrowUpBuff,1,GrowUpQuest_HpUp1,Max HP Up Lv.1
+GrowUpBuff,1,GrowUpQuest_HpUp2,Max HP Up Lv.2
+GrowUpBuff,1,GrowUpQuest_HpUp3,Max HP Up Lv.3
+GrowUpBuff,1,GrowUpQuest_HpUp4,Max HP Up Lv.4
+GrowUpBuff,1,GrowUpQuest_Critical,Critical Rate Up
+GrowUpBuff,1,GrowUpQuest_Critical1,Critical Rate Up Lv.1
+GrowUpBuff,1,GrowUpQuest_Critical2,Critical Rate Up Lv.2
+GrowUpBuff,1,GrowUpQuest_Critical3,Critical Rate Up Lv.3
+GrowUpBuff,1,GrowUpQuest_Critical4,Critical Rate Up Lv.4
+GrowUpBuff,1,GrowUpQuest_CriticalDmg,Critical Potency Up
+GrowUpBuff,1,GrowUpQuest_CriticalDmg1,Critical Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_CriticalDmg2,Critical Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_CriticalDmg3,Critical Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_CriticalDmg4,Critical Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_DamageBuff,Potency Up
+GrowUpBuff,1,GrowUpQuest_DamageBuff1,Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_DamageBuff2,Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_DamageBuff3,Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_DamageBuff4,Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_MaxPpBuff,Max PP Up
+GrowUpBuff,1,GrowUpQuest_MaxPpBuff1,Max PP Up Lv.1
+GrowUpBuff,1,GrowUpQuest_MaxPpBuff2,Max PP Up Lv.2
+GrowUpBuff,1,GrowUpQuest_MaxPpBuff3,Max PP Up Lv.3
+GrowUpBuff,1,GrowUpQuest_MaxPpBuff4,Max PP Up Lv.4
+GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff,Normal Attack Potency Up
+GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff1,Normal Attack Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff2,Normal Attack Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff3,Normal Attack Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff4,Normal Attack Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff,HP Recovery on Normal Attack Hit
+GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff1,HP Recovery on Normal Attack Hit Lv.1
+GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff2,HP Recovery on Normal Attack Hit Lv.2
+GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff3,HP Recovery on Normal Attack Hit Lv.3
+GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff4,HP Recovery on Normal Attack Hit Lv.4
+GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff,PA/Technique Potency Up
+GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff1,PA/Technique Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff2,PA/Technique Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff3,PA/Technique Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff4,PA/Technique Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_PbDamageBuff,Photon Blast Potency Up
+GrowUpBuff,1,GrowUpQuest_PbDamageBuff1,Photon Blast Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_PbDamageBuff2,Photon Blast Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_PbDamageBuff3,Photon Blast Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_PbDamageBuff4,Photon Blast Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_PpHealRateBuff,PP Recovery Amount Up
+GrowUpBuff,1,GrowUpQuest_PpHealRateBuff1,PP Recovery Amount Up Lv.1
+GrowUpBuff,1,GrowUpQuest_PpHealRateBuff2,PP Recovery Amount Up Lv.2
+GrowUpBuff,1,GrowUpQuest_PpHealRateBuff3,PP Recovery Amount Up Lv.3
+GrowUpBuff,1,GrowUpQuest_PpHealRateBuff4,PP Recovery Amount Up Lv.4
+GrowUpBuff,1,GrowUpQuest_StateResistanceBuff,Ailment Resistance Up
+GrowUpBuff,1,GrowUpQuest_StateResistanceBuff1,Ailment Resistance Up Lv.1
+GrowUpBuff,1,GrowUpQuest_StateResistanceBuff2,Ailment Resistance Up Lv.2
+GrowUpBuff,1,GrowUpQuest_StateResistanceBuff3,Ailment Resistance Up Lv.3
+GrowUpBuff,1,GrowUpQuest_StateResistanceBuff4,Ailment Resistance Up Lv.4
+GrowUpBuff,1,GrowUpQuest_DamageCutBuff,Damage Resistance Up
+GrowUpBuff,1,GrowUpQuest_DamageCutBuff1,Damage Resistance Up Lv.1
+GrowUpBuff,1,GrowUpQuest_DamageCutBuff2,Damage Resistance Up Lv.2
+GrowUpBuff,1,GrowUpQuest_DamageCutBuff3,Damage Resistance Up Lv.3
+GrowUpBuff,1,GrowUpQuest_DamageCutBuff4,Damage Resistance Up Lv.4
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff,Auto HP Recovery
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff1,Auto HP Recovery Lv.1
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff2,Auto HP Recovery Lv.2
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff3,Auto HP Recovery Lv.3
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff4,Auto HP Recovery Lv.4
+GrowUpBuff,1,GrowUpQuest_DownValueBuff,Down Factor to Enemies Up
+GrowUpBuff,1,GrowUpQuest_DownValueBuff1,Down Factor to Enemies Up Lv.1
+GrowUpBuff,1,GrowUpQuest_DownValueBuff2,Down Factor to Enemies Up Lv.2
+GrowUpBuff,1,GrowUpQuest_DownValueBuff3,Down Factor to Enemies Up Lv.3
+GrowUpBuff,1,GrowUpQuest_DownValueBuff4,Down Factor to Enemies Up Lv.4
+GrowUpBuff,1,GrowUpQuest_PbGaugeBuff,Photon Blast Gauge Charge Up
+GrowUpBuff,1,GrowUpQuest_PbGaugeBuff1,Photon Blast Gauge Charge Up Lv.1
+GrowUpBuff,1,GrowUpQuest_PbGaugeBuff2,Photon Blast Gauge Charge Up Lv.2
+GrowUpBuff,1,GrowUpQuest_PbGaugeBuff3,Photon Blast Gauge Charge Up Lv.3
+GrowUpBuff,1,GrowUpQuest_PbGaugeBuff4,Photon Blast Gauge Charge Up Lv.4
+GrowUpBuff,1,GrowUpQuest_CounterAtkBuff,Sidestep Counter Potency Up
+GrowUpBuff,1,GrowUpQuest_CounterAtkBuff1,Sidestep Counter Potency Up Lv.1
+GrowUpBuff,1,GrowUpQuest_CounterAtkBuff2,Sidestep Counter Potency Up Lv.2
+GrowUpBuff,1,GrowUpQuest_CounterAtkBuff3,Sidestep Counter Potency Up Lv.3
+GrowUpBuff,1,GrowUpQuest_CounterAtkBuff4,Sidestep Counter Potency Up Lv.4
+GrowUpBuff,1,GrowUpQuest_HealRateBuff,HP Recovery Amount Up
+GrowUpBuff,1,GrowUpQuest_HealRateBuff1,HP Recovery Amount Up Lv.1
+GrowUpBuff,1,GrowUpQuest_HealRateBuff2,HP Recovery Amount Up Lv.2
+GrowUpBuff,1,GrowUpQuest_HealRateBuff3,HP Recovery Amount Up Lv.3
+GrowUpBuff,1,GrowUpQuest_HealRateBuff4,HP Recovery Amount Up Lv.4
+GrowUpBuff,1,GrowUpQuest_NodeDamageBuff,Attack Potency to Destructible Parts Up
+GrowUpBuff,1,GrowUpQuest_NodeDamageBuff1,Attack Potency to Destructible Parts Up Lv.1
+GrowUpBuff,1,GrowUpQuest_NodeDamageBuff2,Attack Potency to Destructible Parts Up Lv.2
+GrowUpBuff,1,GrowUpQuest_NodeDamageBuff3,Attack Potency to Destructible Parts Up Lv.3
+GrowUpBuff,1,GrowUpQuest_NodeDamageBuff4,Attack Potency to Destructible Parts Up Lv.4
+GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff,Attack Potency to Weak Points Up
+GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff1,Attack Potency to Weak Points Up Lv.1
+GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff2,Attack Potency to Weak Points Up Lv.2
+GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff3,Attack Potency to Weak Points Up Lv.3
+GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff4,Attack Potency to Weak Points Up Lv.4
+GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff,Active Skill Cooldown Reduction
+GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff1,Active Skill Cooldown Reduction Lv.1
+GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff2,Active Skill Cooldown Reduction Lv.2
+GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff3,Active Skill Cooldown Reduction Lv.3
+GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff4,Active Skill Cooldown Reduction Lv.4
+GrowUpBuff,1,GrowUpQuest_IronWillBuff,Incapacitation Negation (recharges)
+GrowUpBuff,1,GrowUpQuest_IronWillBuff1,Incapacitation Negation (recharges) Lv.1
+GrowUpBuff,1,GrowUpQuest_IronWillBuff2,Incapacitation Negation (recharges) Lv.2
+GrowUpBuff,1,GrowUpQuest_IronWillBuff3,Incapacitation Negation (recharges) Lv.3
+GrowUpBuff,1,GrowUpQuest_IronWillBuff4,Incapacitation Negation (recharges) Lv.4
+GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff,HP Recovery on Successful Sidestep
+GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff1,HP Recovery on Successful Sidestep Lv.1
+GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff2,HP Recovery on Successful Sidestep Lv.2
+GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff3,HP Recovery on Successful Sidestep Lv.3
+GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff4,HP Recovery on Successful Sidestep Lv.4
+GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease,Restasigne Carry Limit Up
+GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease1,Restasigne Carry Limit Up Lv.1
+GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease2,Restasigne Carry Limit Up Lv.2
+GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease3,Restasigne Carry Limit Up Lv.3
+GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease4,Restasigne Carry Limit Up Lv.4
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff,Periodic Restasigne Auto Replenishment
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff1,Periodic Restasigne Auto Replenishment Lv.1
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff2,Periodic Restasigne Auto Replenishment Lv.2
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff3,Periodic Restasigne Auto Replenishment Lv.3
+GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff4,Periodic Restasigne Auto Replenishment Lv.4
+GrowUpBuff,1,GrowUpQuest_HpBonusBuff,Potency/Damage Resist Up when HP 75%+
+GrowUpBuff,1,GrowUpQuest_HpBonusBuff1,Potency/Damage Resist Up when HP 75%+ Lv.1
+GrowUpBuff,1,GrowUpQuest_HpBonusBuff2,Potency/Damage Resist Up when HP 75%+ Lv.2
+GrowUpBuff,1,GrowUpQuest_HpBonusBuff3,Potency/Damage Resist Up when HP 75%+ Lv.3
+GrowUpBuff,1,GrowUpQuest_HpBonusBuff4,Potency/Damage Resist Up when HP 75%+ Lv.4
+GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff,PP Recovery Every 20 Successful Attacks
+GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff1,PP Recovery Every 20 Successful Attacks Lv.1
+GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff2,PP Recovery Every 20 Successful Attacks Lv.2
+GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff3,PP Recovery Every 20 Successful Attacks Lv.3
+GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff4,PP Recovery Every 20 Successful Attacks Lv.4
+GrowUpBuff,1,GrowUpQuest_BadEase,Status Ailment Duration Reduction
+GrowUpBuff,1,GrowUpQuest_BadEase1,Status Ailment Duration Reduction Lv.1
+GrowUpBuff,1,GrowUpQuest_BadEase2,Status Ailment Duration Reduction Lv.2
+GrowUpBuff,1,GrowUpQuest_BadEase3,Status Ailment Duration Reduction Lv.3
+GrowUpBuff,1,GrowUpQuest_BadEase4,Status Ailment Duration Reduction Lv.4
+GrowUpBuff,1,GrowUpQuest_DownDamageBuff,Attack Potency to Downed Enemies Up
+GrowUpBuff,1,GrowUpQuest_DownDamageBuff1,Attack Potency to Downed Enemies Up Lv.1
+GrowUpBuff,1,GrowUpQuest_DownDamageBuff2,Attack Potency to Downed Enemies Up Lv.2
+GrowUpBuff,1,GrowUpQuest_DownDamageBuff3,Attack Potency to Downed Enemies Up Lv.3
+GrowUpBuff,1,GrowUpQuest_DownDamageBuff4,Attack Potency to Downed Enemies Up Lv.4
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff,M.A.R.S. Battery Natural PP Recovery Amount Up
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff1,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 1
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff2,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 2
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff3,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 3
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff4,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 4
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff,M.A.R.S. Attack Potency Up
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff1,M.A.R.S. Attack Potency Up Lv. 1
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff2,M.A.R.S. Attack Potency Up Lv. 2
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff3,M.A.R.S. Attack Potency Up Lv. 3
+GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff4,M.A.R.S. Attack Potency Up Lv. 4
+GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff,Temp. Potency Up on Successful Sidestep
+GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff1,Temp. Potency Up on Successful Sidestep Lv. 1
+GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff2,Temp. Potency Up on Successful Sidestep Lv. 2
+GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff3,Temp. Potency Up on Successful Sidestep Lv. 3
+GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff4,Temp. Potency Up on Successful Sidestep Lv. 4
+GrowUpBuff,1,GrowUpQuest_S_PhotonArtsBuff,<yellow>Additional Damage on PA/Technique Hit<c>
+GrowUpBuff,1,GrowUpQuest_S_PhotonArtsBuff1,Additional Damage on PA/Technique Hit
+GrowUpBuff,1,GrowUpQuest_S_GlideAttackBuff,<yellow>Diving Attack Potency/Down Factor Up<c>
+GrowUpBuff,1,GrowUpQuest_S_GlideAttackBuff1,Diving Attack Potency/Down Factor Up
+GrowUpBuff,1,GrowUpQuest_S_DamageShieldBuff,<yellow>Reflect Shield Activation<c>
+GrowUpBuff,1,GrowUpQuest_S_DamageShieldBuff1,Reflect Shield Activation
+GrowUpBuff,1,GrowUpQuest_S_QuickAttackBuff,<yellow>Attack Speed Up<c>
+GrowUpBuff,1,GrowUpQuest_S_QuickAttackBuff1,Attack Speed Up
+GrowUpBuff,1,GrowUpQuest_S_NormalAttackBuff,<yellow>Additional Attack on Normal Attack<c>
+GrowUpBuff,1,GrowUpQuest_S_NormalAttackBuff1,Additional Attack on Normal Attack
+GrowUpBuff,1,GrowUpQuest_S_RangeDamageBuff,<yellow>Regular Automatic Additional Attacks<c>
+GrowUpBuff,1,GrowUpQuest_S_RangeDamageBuff1,Regular Automatic Additional Attacks
+GrowUpBuff,1,GrowUpQuest_S_OverRecoveryBuff,<yellow>Ability Up 10s After Using Restasigne<c>
+GrowUpBuff,1,GrowUpQuest_S_OverRecoveryBuff1,Ability Up 10s After Using Restasigne
+GrowUpBuff,1,GrowUpQuest_S_AdditionalCriticalAttackBuff,<yellow>Additional Damage on Critical Hit<c>
+GrowUpBuff,1,GrowUpQuest_S_AdditionalCriticalAttackBuff1,Additional Damage on Critical Hit
+GrowUpBuff,1,GrowUpQuest_S_DodgeBombBuff,<yellow>Additional Attack on Successful Sidestep<c>
+GrowUpBuff,1,GrowUpQuest_S_DodgeBombBuff1,Additional Attack on Successful Sidestep
+GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff,Throw Action Speed Up
+GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff1,Throw Action Speed Up Lv. 1
+GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff2,Throw Action Speed Up Lv. 2
+GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff3,Throw Action Speed Up Lv. 3
+GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff4,Throw Action Speed Up Lv. 4
+GrowUpBuff,1,GrowUpQuest_ThrowingBuff,Throw Action Potency Up
+GrowUpBuff,1,GrowUpQuest_ThrowingBuff1,Throw Action Potency Up Lv. 1
+GrowUpBuff,1,GrowUpQuest_ThrowingBuff2,Throw Action Potency Up Lv. 2
+GrowUpBuff,1,GrowUpQuest_ThrowingBuff3,Throw Action Potency Up Lv. 3
+GrowUpBuff,1,GrowUpQuest_ThrowingBuff4,Throw Action Potency Up Lv. 4
+GrowUpBuff,1,GrowUpQuest_S_AdditionalThrowAttackBuff,<yellow>Additional Damage on Throw Action Hit<c>
+GrowUpBuff,1,GrowUpQuest_S_AdditionalThrowAttackBuff1,Additional Damage on Throw Action Hit
+GrowUpBuff,1,GrowUpQuest_S_PbRecoveryBuff,<yellow>Use PB 2x Consecutively/Attack Speed Up<c>
+GrowUpBuff,1,GrowUpQuest_S_PbRecoveryBuff1,Use PB 2x Consecutively/Attack Speed Up
+GrowUpBuff,1,GrowUpQuest_S_PBMultiMissileBuff,<yellow>Activate PB to Equip Mobile Cannon ALR<c>
+GrowUpBuff,1,GrowUpQuest_S_PBMultiMissileBuff1,Activate PB to Equip Mobile Cannon ALR
+GrowUpBuff,1,GrowUpQuest_S_HPTradeTechArtsBuff,<yellow>PA/TEC Up/HP Down on use if HP below 75%<c>
+GrowUpBuff,1,GrowUpQuest_S_HPTradeTechArtsBuff1,PA/TEC Up/HP Down on use if HP below 75%
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp50,<yellow>Potency +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp100,<yellow>Potency +100%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp150,<yellow>Potency +150%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp200,<yellow>Potency +200%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp250,<yellow>Potency +250%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp300,<yellow>Potency +300%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp350,<yellow>Potency +350%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp400,<yellow>Potency +400%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp500,<yellow>Potency +500%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp600,<yellow>Potency +600%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp700,<yellow>Potency +700%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp800,<yellow>Potency +800%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AttackUp900,<yellow>Potency +900%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp50,<yellow>Status Ailment Efficacy +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp100,<yellow>Status Ailment Efficacy +100%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp150,<yellow>Status Ailment Efficacy +150%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp200,<yellow>Status Ailment Efficacy +200%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp250,<yellow>Status Ailment Efficacy +250%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp300,<yellow>Status Ailment Efficacy +300%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp350,<yellow>Status Ailment Efficacy +350%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_ElementUp400,<yellow>Status Ailment Efficacy +400%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist5,<yellow>Damage Resistance +5%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist10,<yellow>Damage Resistance +10%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist15,<yellow>Damage Resistance +15%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist20,<yellow>Damage Resistance +20%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist25,<yellow>Damage Resistance +25%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist30,<yellow>Damage Resistance +30%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist35,<yellow>Damage Resistance +35%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist40,<yellow>Damage Resistance +40%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist45,<yellow>Damage Resistance +45%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_DamageResist50,<yellow>Damage Resistance +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_10,Normal Attack Damage Resistance + 10%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_20,Normal Attack Damage Resistance + 20%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_30,Normal Attack Damage Resistance + 30%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_40,Normal Attack Damage Resistance + 40%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_50,Normal Attack Damage Resistance + 50%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_60,Normal Attack Damage Resistance + 60%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_70,Normal Attack Damage Resistance + 70%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_80,Normal Attack Damage Resistance + 80%
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_10,<yellow>PA/Technique Damage Resistance +10%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_20,<yellow>PA/Technique Damage Resistance +20%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_30,<yellow>PA/Technique Damage Resistance +30%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_40,<yellow>PA/Technique Damage Resistance +40%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_50,<yellow>PA/Technique Damage Resistance +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_60,<yellow>PA/Technique Damage Resistance +60%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_70,<yellow>PA/Technique Damage Resistance +70%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_80,<yellow>PA/Technique Damage Resistance +80%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp20,<yellow>Max HP +20%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp50,<yellow>Max HP +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp100,<yellow>Max HP +100%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp150,<yellow>Max HP +150%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp180,<yellow>Max HP +180%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp200,<yellow>Max HP +200%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp250,<yellow>Max HP +250%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp300,<yellow>Max HP +300%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp350,<yellow>Max HP +350%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_HPUp400,<yellow>Max HP +400%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AngerToDamage,<yellow>Sustained Player HP Damage on HP Decrease<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AngerToPPDamage,<yellow>Sustained Player PP Damage on HP Decrease<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AngerToHpDown50,<yellow>Max HP -50% on HP Decrease<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AngerToHpDown75,<yellow>Max HP -75% on HP Decrease<c>
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DamageDebuff5,<yellow>Player Potency/Resistance Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F20,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F40,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F60,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I20,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I40,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I60,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T20,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T40,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T60,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W20,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W40,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W60,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D20,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D40,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D60,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L20,<yellow>Light Added<c> to Attacks/Panic Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L40,<yellow>Light Added<c> to Attacks/Panic Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L60,<yellow>Light Added<c> to Attacks/Panic Accumulation: Large
+GrowUpBuff,1,Common:DownBombBoost,<yellow>Bomlode-enabled<c>
+GrowUpBuff,1,Common:DownBombBoost1,<yellow>Bomlode-enabled<c>
+GrowUpBuff,1,Common:DownBombBoost2,<yellow>Bomlode-enabled<c>
+GrowUpBuff,1,Common:TimerBuffBoost,<yellow>Growzard-enabled<c>
+GrowUpBuff,1,Common:TimerBuffBoost1,<yellow>Growzard-enabled<c>
+GrowUpBuff,1,Common:TimerBuffBoost2,<yellow>Growzard-enabled<c>
+GrowUpBuff,1,EnemyGrowUpQuest_AngerToSummon,<yellow>Additional Enemies Appear<c> on HP Decrease
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_10,<yellow>Non-Weak Point Damage Resistance +10%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_15,<yellow>Non-Weak Point Damage Resistance +15%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_20,<yellow>Non-Weak Point Damage Resistance +20%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_30,<yellow>Non-Weak Point Damage Resistance +30%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_40,<yellow>Non-Weak Point Damage Resistance +40%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_50,<yellow>Non-Weak Point Damage Resistance +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_60,<yellow>Non-Weak Point Damage Resistance +60%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_70,<yellow>Non-Weak Point Damage Resistance +70%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_80,<yellow>Non-Weak Point Damage Resistance +80%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_10,<yellow>Non-Critical Damage Resistance +10%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_20,<yellow>Non-Critical Damage Resistance +20%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_30,<yellow>Non-Critical Damage Resistance +30%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_40,<yellow>Non-Critical Damage Resistance +40%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_50,<yellow>Non-Critical Damage Resistance +50%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_60,<yellow>Non-Critical Damage Resistance +60%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_70,<yellow>Non-Critical Damage Resistance +70%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_80,<yellow>Non-Critical Damage Resistance +80%<c>
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShot15,<yellow>Automatic additional attacks<c> occur periodically
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFireBoss15,<yellow>Meteorites fall<c> at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFireBoss5,<yellow>Meteorites fall<c> at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFire15,<yellow>Meteorites fall<c> at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFire5,<yellow>Meteorites fall<c> at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IfDownReactionFinishAttackUp,<yellow>Temporary Potency Buff<c> After Down Recovery
+GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunS,<yellow>Additional Stun Attack<c> Within a Certain Range
+GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunM,<yellow>Additional Stun Attack<c> Within a Certain Range
+GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunL,<yellow>Additional Stun Attack<c> Within a Certain Range
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_PDamageDownDebuff5,<yellow>Player Potency Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff5,<yellow>Player Resistance Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff20,<yellow>Player Resistance Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff25,<yellow>Player Resistance Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff40,<yellow>Player Resistance Decrease<c> on Attack Hit
+GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp1,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Small
+GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp2,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Medium
+GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp3,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Large
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss5,<yellow>Laser attacks<c> occur at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss10,<yellow>Laser attacks<c> occur at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss15,<yellow>Laser attacks<c> occur at regular intervals
+GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss20,<yellow>Laser attacks<c> occur at regular intervals
+GrowUpBuff,1,EnemyGroom_AngerToDamage,<yellow>Sustained Player HP Damage<c> in Final Section
+GrowUpBuff,1,EnemyGroom_AngerToPPDamage,<yellow>Sustained Player PP Damage<c> in Final Section
+GrowUpBuff,1,EnemyGroom_AngerToHpDown50,<yellow>Max Player HP -50% <c>in Final Section
+GrowUpBuff,1,EnemyGroom_AngerToHpDown75,<yellow>Max Player HP -75% <c>in Final Section
+GrowUpBuff,1,EnemyGroom_AngerToSummon,<yellow>Additional Enemies Appear<c> in Final Section
 GrowUpBuff,0,GrowUpQuest_HpUp,最大HP増加
 GrowUpBuff,0,GrowUpQuest_HpUp1,最大HP増加　Lv１
 GrowUpBuff,0,GrowUpQuest_HpUp2,最大HP増加　Lv２
@@ -1125,389 +1446,6 @@ GrowUpBuff,0,EnemyGroom_AngerToPPDamage,最終区画で<yellow>プレイヤーPP
 GrowUpBuff,0,EnemyGroom_AngerToHpDown50,最終区画で<yellow>プレイヤー最大HP－50%<c>
 GrowUpBuff,0,EnemyGroom_AngerToHpDown75,最終区画で<yellow>プレイヤー最大HP－75%<c>
 GrowUpBuff,0,EnemyGroom_AngerToSummon,最終区画で<yellow>追加エネミー出現<c>
-GrowUpBuff,1,GrowUpQuest_HpUp,Max HP Up
-GrowUpBuff,1,GrowUpQuest_HpUp1,Max HP Up Lv.1
-GrowUpBuff,1,GrowUpQuest_HpUp2,Max HP Up Lv.2
-GrowUpBuff,1,GrowUpQuest_HpUp3,Max HP Up Lv.3
-GrowUpBuff,1,GrowUpQuest_HpUp4,Max HP Up Lv.4
-GrowUpBuff,1,GrowUpQuest_Critical,Critical Rate Up
-GrowUpBuff,1,GrowUpQuest_Critical1,Critical Rate Up Lv.1
-GrowUpBuff,1,GrowUpQuest_Critical2,Critical Rate Up Lv.2
-GrowUpBuff,1,GrowUpQuest_Critical3,Critical Rate Up Lv.3
-GrowUpBuff,1,GrowUpQuest_Critical4,Critical Rate Up Lv.4
-GrowUpBuff,1,GrowUpQuest_CriticalDmg,Critical Potency Up
-GrowUpBuff,1,GrowUpQuest_CriticalDmg1,Critical Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_CriticalDmg2,Critical Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_CriticalDmg3,Critical Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_CriticalDmg4,Critical Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_DamageBuff,Potency Up
-GrowUpBuff,1,GrowUpQuest_DamageBuff1,Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_DamageBuff2,Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_DamageBuff3,Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_DamageBuff4,Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_MaxPpBuff,Max PP Up
-GrowUpBuff,1,GrowUpQuest_MaxPpBuff1,Max PP Up Lv.1
-GrowUpBuff,1,GrowUpQuest_MaxPpBuff2,Max PP Up Lv.2
-GrowUpBuff,1,GrowUpQuest_MaxPpBuff3,Max PP Up Lv.3
-GrowUpBuff,1,GrowUpQuest_MaxPpBuff4,Max PP Up Lv.4
-GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff,Normal Attack Potency Up
-GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff1,Normal Attack Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff2,Normal Attack Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff3,Normal Attack Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_NormalAtkDamageBuff4,Normal Attack Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff,HP Recovery on Normal Attack Hit
-GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff1,HP Recovery on Normal Attack Hit Lv.1
-GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff2,HP Recovery on Normal Attack Hit Lv.2
-GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff3,HP Recovery on Normal Attack Hit Lv.3
-GrowUpBuff,1,GrowUpQuest_NormalAtkDrainBuff4,HP Recovery on Normal Attack Hit Lv.4
-GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff,PA/Technique Potency Up
-GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff1,PA/Technique Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff2,PA/Technique Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff3,PA/Technique Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_PaTechniqueBuff4,PA/Technique Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_PbDamageBuff,Photon Blast Potency Up
-GrowUpBuff,1,GrowUpQuest_PbDamageBuff1,Photon Blast Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_PbDamageBuff2,Photon Blast Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_PbDamageBuff3,Photon Blast Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_PbDamageBuff4,Photon Blast Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_PpHealRateBuff,PP Recovery Amount Up
-GrowUpBuff,1,GrowUpQuest_PpHealRateBuff1,PP Recovery Amount Up Lv.1
-GrowUpBuff,1,GrowUpQuest_PpHealRateBuff2,PP Recovery Amount Up Lv.2
-GrowUpBuff,1,GrowUpQuest_PpHealRateBuff3,PP Recovery Amount Up Lv.3
-GrowUpBuff,1,GrowUpQuest_PpHealRateBuff4,PP Recovery Amount Up Lv.4
-GrowUpBuff,1,GrowUpQuest_StateResistanceBuff,Ailment Resistance Up
-GrowUpBuff,1,GrowUpQuest_StateResistanceBuff1,Ailment Resistance Up Lv.1
-GrowUpBuff,1,GrowUpQuest_StateResistanceBuff2,Ailment Resistance Up Lv.2
-GrowUpBuff,1,GrowUpQuest_StateResistanceBuff3,Ailment Resistance Up Lv.3
-GrowUpBuff,1,GrowUpQuest_StateResistanceBuff4,Ailment Resistance Up Lv.4
-GrowUpBuff,1,GrowUpQuest_DamageCutBuff,Damage Resistance Up
-GrowUpBuff,1,GrowUpQuest_DamageCutBuff1,Damage Resistance Up Lv.1
-GrowUpBuff,1,GrowUpQuest_DamageCutBuff2,Damage Resistance Up Lv.2
-GrowUpBuff,1,GrowUpQuest_DamageCutBuff3,Damage Resistance Up Lv.3
-GrowUpBuff,1,GrowUpQuest_DamageCutBuff4,Damage Resistance Up Lv.4
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff,Auto HP Recovery
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff1,Auto HP Recovery Lv.1
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff2,Auto HP Recovery Lv.2
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff3,Auto HP Recovery Lv.3
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryBuff4,Auto HP Recovery Lv.4
-GrowUpBuff,1,GrowUpQuest_DownValueBuff,Down Factor to Enemies Up
-GrowUpBuff,1,GrowUpQuest_DownValueBuff1,Down Factor to Enemies Up Lv.1
-GrowUpBuff,1,GrowUpQuest_DownValueBuff2,Down Factor to Enemies Up Lv.2
-GrowUpBuff,1,GrowUpQuest_DownValueBuff3,Down Factor to Enemies Up Lv.3
-GrowUpBuff,1,GrowUpQuest_DownValueBuff4,Down Factor to Enemies Up Lv.4
-GrowUpBuff,1,GrowUpQuest_PbGaugeBuff,Photon Blast Gauge Charge Up
-GrowUpBuff,1,GrowUpQuest_PbGaugeBuff1,Photon Blast Gauge Charge Up Lv.1
-GrowUpBuff,1,GrowUpQuest_PbGaugeBuff2,Photon Blast Gauge Charge Up Lv.2
-GrowUpBuff,1,GrowUpQuest_PbGaugeBuff3,Photon Blast Gauge Charge Up Lv.3
-GrowUpBuff,1,GrowUpQuest_PbGaugeBuff4,Photon Blast Gauge Charge Up Lv.4
-GrowUpBuff,1,GrowUpQuest_CounterAtkBuff,Sidestep Counter Potency Up
-GrowUpBuff,1,GrowUpQuest_CounterAtkBuff1,Sidestep Counter Potency Up Lv.1
-GrowUpBuff,1,GrowUpQuest_CounterAtkBuff2,Sidestep Counter Potency Up Lv.2
-GrowUpBuff,1,GrowUpQuest_CounterAtkBuff3,Sidestep Counter Potency Up Lv.3
-GrowUpBuff,1,GrowUpQuest_CounterAtkBuff4,Sidestep Counter Potency Up Lv.4
-GrowUpBuff,1,GrowUpQuest_HealRateBuff,HP Recovery Amount Up
-GrowUpBuff,1,GrowUpQuest_HealRateBuff1,HP Recovery Amount Up Lv.1
-GrowUpBuff,1,GrowUpQuest_HealRateBuff2,HP Recovery Amount Up Lv.2
-GrowUpBuff,1,GrowUpQuest_HealRateBuff3,HP Recovery Amount Up Lv.3
-GrowUpBuff,1,GrowUpQuest_HealRateBuff4,HP Recovery Amount Up Lv.4
-GrowUpBuff,1,GrowUpQuest_NodeDamageBuff,Attack Potency to Destructible Parts Up
-GrowUpBuff,1,GrowUpQuest_NodeDamageBuff1,Attack Potency to Destructible Parts Up Lv.1
-GrowUpBuff,1,GrowUpQuest_NodeDamageBuff2,Attack Potency to Destructible Parts Up Lv.2
-GrowUpBuff,1,GrowUpQuest_NodeDamageBuff3,Attack Potency to Destructible Parts Up Lv.3
-GrowUpBuff,1,GrowUpQuest_NodeDamageBuff4,Attack Potency to Destructible Parts Up Lv.4
-GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff,Attack Potency to Weak Points Up
-GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff1,Attack Potency to Weak Points Up Lv.1
-GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff2,Attack Potency to Weak Points Up Lv.2
-GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff3,Attack Potency to Weak Points Up Lv.3
-GrowUpBuff,1,GrowUpQuest_WeakPointDamageBuff4,Attack Potency to Weak Points Up Lv.4
-GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff,Active Skill Cooldown Reduction
-GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff1,Active Skill Cooldown Reduction Lv.1
-GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff2,Active Skill Cooldown Reduction Lv.2
-GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff3,Active Skill Cooldown Reduction Lv.3
-GrowUpBuff,1,GrowUpQuest_ActiveSkillCooltimeBuff4,Active Skill Cooldown Reduction Lv.4
-GrowUpBuff,1,GrowUpQuest_IronWillBuff,Incapacitation Negation (recharges)
-GrowUpBuff,1,GrowUpQuest_IronWillBuff1,Incapacitation Negation (recharges) Lv.1
-GrowUpBuff,1,GrowUpQuest_IronWillBuff2,Incapacitation Negation (recharges) Lv.2
-GrowUpBuff,1,GrowUpQuest_IronWillBuff3,Incapacitation Negation (recharges) Lv.3
-GrowUpBuff,1,GrowUpQuest_IronWillBuff4,Incapacitation Negation (recharges) Lv.4
-GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff,HP Recovery on Successful Sidestep
-GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff1,HP Recovery on Successful Sidestep Lv.1
-GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff2,HP Recovery on Successful Sidestep Lv.2
-GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff3,HP Recovery on Successful Sidestep Lv.3
-GrowUpBuff,1,GrowUpQuest_DodgeRecoveryBuff4,HP Recovery on Successful Sidestep Lv.4
-GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease,Restasigne Carry Limit Up
-GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease1,Restasigne Carry Limit Up Lv.1
-GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease2,Restasigne Carry Limit Up Lv.2
-GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease3,Restasigne Carry Limit Up Lv.3
-GrowUpBuff,1,GrowUpQuest_RecoveryGaugeIncrease4,Restasigne Carry Limit Up Lv.4
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff,Periodic Restasigne Auto Replenishment
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff1,Periodic Restasigne Auto Replenishment Lv.1
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff2,Periodic Restasigne Auto Replenishment Lv.2
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff3,Periodic Restasigne Auto Replenishment Lv.3
-GrowUpBuff,1,GrowUpQuest_AutoRecoveryAddBuff4,Periodic Restasigne Auto Replenishment Lv.4
-GrowUpBuff,1,GrowUpQuest_HpBonusBuff,Potency/Damage Resist Up when HP 75%+
-GrowUpBuff,1,GrowUpQuest_HpBonusBuff1,Potency/Damage Resist Up when HP 75%+ Lv.1
-GrowUpBuff,1,GrowUpQuest_HpBonusBuff2,Potency/Damage Resist Up when HP 75%+ Lv.2
-GrowUpBuff,1,GrowUpQuest_HpBonusBuff3,Potency/Damage Resist Up when HP 75%+ Lv.3
-GrowUpBuff,1,GrowUpQuest_HpBonusBuff4,Potency/Damage Resist Up when HP 75%+ Lv.4
-GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff,PP Recovery Every 20 Successful Attacks
-GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff1,PP Recovery Every 20 Successful Attacks Lv.1
-GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff2,PP Recovery Every 20 Successful Attacks Lv.2
-GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff3,PP Recovery Every 20 Successful Attacks Lv.3
-GrowUpBuff,1,GrowUpQuest_HitCountPpHealBuff4,PP Recovery Every 20 Successful Attacks Lv.4
-GrowUpBuff,1,GrowUpQuest_BadEase,Status Ailment Duration Reduction
-GrowUpBuff,1,GrowUpQuest_BadEase1,Status Ailment Duration Reduction Lv.1
-GrowUpBuff,1,GrowUpQuest_BadEase2,Status Ailment Duration Reduction Lv.2
-GrowUpBuff,1,GrowUpQuest_BadEase3,Status Ailment Duration Reduction Lv.3
-GrowUpBuff,1,GrowUpQuest_BadEase4,Status Ailment Duration Reduction Lv.4
-GrowUpBuff,1,GrowUpQuest_DownDamageBuff,Attack Potency to Downed Enemies Up
-GrowUpBuff,1,GrowUpQuest_DownDamageBuff1,Attack Potency to Downed Enemies Up Lv.1
-GrowUpBuff,1,GrowUpQuest_DownDamageBuff2,Attack Potency to Downed Enemies Up Lv.2
-GrowUpBuff,1,GrowUpQuest_DownDamageBuff3,Attack Potency to Downed Enemies Up Lv.3
-GrowUpBuff,1,GrowUpQuest_DownDamageBuff4,Attack Potency to Downed Enemies Up Lv.4
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff,M.A.R.S. Battery Natural PP Recovery Amount Up
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff1,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 1
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff2,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 2
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff3,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 3
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleGaugeBuff4,M.A.R.S. Battery Natural PP Recovery Amount Up Lv. 4
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff,M.A.R.S. Attack Potency Up
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff1,M.A.R.S. Attack Potency Up Lv. 1
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff2,M.A.R.S. Attack Potency Up Lv. 2
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff3,M.A.R.S. Attack Potency Up Lv. 3
-GrowUpBuff,1,GrowUpQuest_ArsenalModuleDamageBuff4,M.A.R.S. Attack Potency Up Lv. 4
-GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff,Temp. Potency Up on Successful Sidestep
-GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff1,Temp. Potency Up on Successful Sidestep Lv. 1
-GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff2,Temp. Potency Up on Successful Sidestep Lv. 2
-GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff3,Temp. Potency Up on Successful Sidestep Lv. 3
-GrowUpBuff,1,GrowUpQuest_DodgeAtpBuff4,Temp. Potency Up on Successful Sidestep Lv. 4
-GrowUpBuff,1,GrowUpQuest_S_PhotonArtsBuff,<yellow>Additional Damage on PA/Technique Hit<c>
-GrowUpBuff,1,GrowUpQuest_S_PhotonArtsBuff1,Additional Damage on PA/Technique Hit
-GrowUpBuff,1,GrowUpQuest_S_GlideAttackBuff,<yellow>Diving Attack Potency/Down Factor Up<c>
-GrowUpBuff,1,GrowUpQuest_S_GlideAttackBuff1,Diving Attack Potency/Down Factor Up
-GrowUpBuff,1,GrowUpQuest_S_DamageShieldBuff,<yellow>Reflect Shield Activation<c>
-GrowUpBuff,1,GrowUpQuest_S_DamageShieldBuff1,Reflect Shield Activation
-GrowUpBuff,1,GrowUpQuest_S_QuickAttackBuff,<yellow>Attack Speed Up<c>
-GrowUpBuff,1,GrowUpQuest_S_QuickAttackBuff1,Attack Speed Up
-GrowUpBuff,1,GrowUpQuest_S_NormalAttackBuff,<yellow>Additional Attack on Normal Attack<c>
-GrowUpBuff,1,GrowUpQuest_S_NormalAttackBuff1,Additional Attack on Normal Attack
-GrowUpBuff,1,GrowUpQuest_S_RangeDamageBuff,<yellow>Regular Automatic Additional Attacks<c>
-GrowUpBuff,1,GrowUpQuest_S_RangeDamageBuff1,Regular Automatic Additional Attacks
-GrowUpBuff,1,GrowUpQuest_S_OverRecoveryBuff,<yellow>Ability Up 10s After Using Restasigne<c>
-GrowUpBuff,1,GrowUpQuest_S_OverRecoveryBuff1,Ability Up 10s After Using Restasigne
-GrowUpBuff,1,GrowUpQuest_S_AdditionalCriticalAttackBuff,<yellow>Additional Damage on Critical Hit<c>
-GrowUpBuff,1,GrowUpQuest_S_AdditionalCriticalAttackBuff1,Additional Damage on Critical Hit
-GrowUpBuff,1,GrowUpQuest_S_DodgeBombBuff,<yellow>Additional Attack on Successful Sidestep<c>
-GrowUpBuff,1,GrowUpQuest_S_DodgeBombBuff1,Additional Attack on Successful Sidestep
-GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff,Throw Action Speed Up
-GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff1,Throw Action Speed Up Lv. 1
-GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff2,Throw Action Speed Up Lv. 2
-GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff3,Throw Action Speed Up Lv. 3
-GrowUpBuff,1,GrowUpQuest_ThrowingSpeedUpBuff4,Throw Action Speed Up Lv. 4
-GrowUpBuff,1,GrowUpQuest_ThrowingBuff,Throw Action Potency Up
-GrowUpBuff,1,GrowUpQuest_ThrowingBuff1,Throw Action Potency Up Lv. 1
-GrowUpBuff,1,GrowUpQuest_ThrowingBuff2,Throw Action Potency Up Lv. 2
-GrowUpBuff,1,GrowUpQuest_ThrowingBuff3,Throw Action Potency Up Lv. 3
-GrowUpBuff,1,GrowUpQuest_ThrowingBuff4,Throw Action Potency Up Lv. 4
-GrowUpBuff,1,GrowUpQuest_S_AdditionalThrowAttackBuff,<yellow>Additional Damage on Throw Action Hit<c>
-GrowUpBuff,1,GrowUpQuest_S_AdditionalThrowAttackBuff1,Additional Damage on Throw Action Hit
-GrowUpBuff,1,GrowUpQuest_S_PbRecoveryBuff,<yellow>Use PB 2x Consecutively/Attack Speed Up<c>
-GrowUpBuff,1,GrowUpQuest_S_PbRecoveryBuff1,Use PB 2x Consecutively/Attack Speed Up
-GrowUpBuff,1,GrowUpQuest_S_PBMultiMissileBuff,<yellow>Activate PB to Equip Mobile Cannon ALR<c>
-GrowUpBuff,1,GrowUpQuest_S_PBMultiMissileBuff1,Activate PB to Equip Mobile Cannon ALR
-GrowUpBuff,1,GrowUpQuest_S_HPTradeTechArtsBuff,<yellow>PA/TEC Up/HP Down on use if HP below 75%<c>
-GrowUpBuff,1,GrowUpQuest_S_HPTradeTechArtsBuff1,PA/TEC Up/HP Down on use if HP below 75%
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp50,<yellow>Potency +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp100,<yellow>Potency +100%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp150,<yellow>Potency +150%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp200,<yellow>Potency +200%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp250,<yellow>Potency +250%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp300,<yellow>Potency +300%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp350,<yellow>Potency +350%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp400,<yellow>Potency +400%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp500,<yellow>Potency +500%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp600,<yellow>Potency +600%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp700,<yellow>Potency +700%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp800,<yellow>Potency +800%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AttackUp900,<yellow>Potency +900%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp50,<yellow>Status Ailment Efficacy +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp100,<yellow>Status Ailment Efficacy +100%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp150,<yellow>Status Ailment Efficacy +150%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp200,<yellow>Status Ailment Efficacy +200%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp250,<yellow>Status Ailment Efficacy +250%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp300,<yellow>Status Ailment Efficacy +300%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp350,<yellow>Status Ailment Efficacy +350%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_ElementUp400,<yellow>Status Ailment Efficacy +400%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist5,<yellow>Damage Resistance +5%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist10,<yellow>Damage Resistance +10%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist15,<yellow>Damage Resistance +15%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist20,<yellow>Damage Resistance +20%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist25,<yellow>Damage Resistance +25%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist30,<yellow>Damage Resistance +30%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist35,<yellow>Damage Resistance +35%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist40,<yellow>Damage Resistance +40%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist45,<yellow>Damage Resistance +45%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_DamageResist50,<yellow>Damage Resistance +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_10,Normal Attack Damage Resistance + 10%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_20,Normal Attack Damage Resistance + 20%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_30,Normal Attack Damage Resistance + 30%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_40,Normal Attack Damage Resistance + 40%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_50,Normal Attack Damage Resistance + 50%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_60,Normal Attack Damage Resistance + 60%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_70,Normal Attack Damage Resistance + 70%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NormalAtkAtpDownBuff1_80,Normal Attack Damage Resistance + 80%
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_10,<yellow>PA/Technique Damage Resistance +10%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_20,<yellow>PA/Technique Damage Resistance +20%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_30,<yellow>PA/Technique Damage Resistance +30%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_40,<yellow>PA/Technique Damage Resistance +40%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_50,<yellow>PA/Technique Damage Resistance +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_60,<yellow>PA/Technique Damage Resistance +60%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_70,<yellow>PA/Technique Damage Resistance +70%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_PaTechniqueAtpDownBuff1_80,<yellow>PA/Technique Damage Resistance +80%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp20,<yellow>Max HP +20%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp50,<yellow>Max HP +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp100,<yellow>Max HP +100%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp150,<yellow>Max HP +150%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp180,<yellow>Max HP +180%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp200,<yellow>Max HP +200%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp250,<yellow>Max HP +250%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp300,<yellow>Max HP +300%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp350,<yellow>Max HP +350%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_HPUp400,<yellow>Max HP +400%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AngerToDamage,<yellow>Sustained Player HP Damage on HP Decrease<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AngerToPPDamage,<yellow>Sustained Player PP Damage on HP Decrease<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AngerToHpDown50,<yellow>Max HP -50% on HP Decrease<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AngerToHpDown75,<yellow>Max HP -75% on HP Decrease<c>
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DamageDebuff5,<yellow>Player Potency/Resistance Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F20,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F40,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_F60,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I20,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I40,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_I60,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T20,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T40,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_T60,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W20,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W40,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_W60,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D20,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D40,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_D60,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L20,<yellow>Light Added<c> to Attacks/Panic Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L40,<yellow>Light Added<c> to Attacks/Panic Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuest_Elementboost_L60,<yellow>Light Added<c> to Attacks/Panic Accumulation: Large
-GrowUpBuff,1,Common:DownBombBoost,<yellow>Bomlode-enabled<c>
-GrowUpBuff,1,Common:DownBombBoost1,<yellow>Bomlode-enabled<c>
-GrowUpBuff,1,Common:DownBombBoost2,<yellow>Bomlode-enabled<c>
-GrowUpBuff,1,Common:TimerBuffBoost,<yellow>Growzard-enabled<c>
-GrowUpBuff,1,Common:TimerBuffBoost1,<yellow>Growzard-enabled<c>
-GrowUpBuff,1,Common:TimerBuffBoost2,<yellow>Growzard-enabled<c>
-GrowUpBuff,1,EnemyGrowUpQuest_AngerToSummon,<yellow>Additional Enemies Appear<c> on HP Decrease
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_10,<yellow>Non-Weak Point Damage Resistance +10%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_15,<yellow>Non-Weak Point Damage Resistance +15%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_20,<yellow>Non-Weak Point Damage Resistance +20%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_30,<yellow>Non-Weak Point Damage Resistance +30%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_40,<yellow>Non-Weak Point Damage Resistance +40%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_50,<yellow>Non-Weak Point Damage Resistance +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_60,<yellow>Non-Weak Point Damage Resistance +60%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_70,<yellow>Non-Weak Point Damage Resistance +70%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_CalcDmageRate_NotWeak_80,<yellow>Non-Weak Point Damage Resistance +80%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_10,<yellow>Non-Critical Damage Resistance +10%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_20,<yellow>Non-Critical Damage Resistance +20%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_30,<yellow>Non-Critical Damage Resistance +30%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_40,<yellow>Non-Critical Damage Resistance +40%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_50,<yellow>Non-Critical Damage Resistance +50%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_60,<yellow>Non-Critical Damage Resistance +60%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_70,<yellow>Non-Critical Damage Resistance +70%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_SendClient_NonCriticalAtpDownBuff1_80,<yellow>Non-Critical Damage Resistance +80%<c>
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShot15,<yellow>Automatic additional attacks<c> occur periodically
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFireBoss15,<yellow>Meteorites fall<c> at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFireBoss5,<yellow>Meteorites fall<c> at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFire15,<yellow>Meteorites fall<c> at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotFire5,<yellow>Meteorites fall<c> at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IfDownReactionFinishAttackUp,<yellow>Temporary Potency Buff<c> After Down Recovery
-GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunS,<yellow>Additional Stun Attack<c> Within a Certain Range
-GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunM,<yellow>Additional Stun Attack<c> Within a Certain Range
-GrowUpBuff,1,EnemyGrowUpQuest_RangeAttackStunL,<yellow>Additional Stun Attack<c> Within a Certain Range
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_PDamageDownDebuff5,<yellow>Player Potency Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff5,<yellow>Player Resistance Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff20,<yellow>Player Resistance Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff25,<yellow>Player Resistance Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuestAdditionalSkillOnHit_DRateUpDebuff40,<yellow>Player Resistance Decrease<c> on Attack Hit
-GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp1,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Small
-GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp2,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Medium
-GrowUpBuff,1,EnemyGrowUpQuestBuff_AttackDownUp3,<yellow>Stun Effect Added<c> to Attacks/Stun Accumulation: Large
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss5,<yellow>Laser attacks<c> occur at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss10,<yellow>Laser attacks<c> occur at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss15,<yellow>Laser attacks<c> occur at regular intervals
-GrowUpBuff,1,EnemyGrowUpQuest_IntervalShotGod3SibaBoss20,<yellow>Laser attacks<c> occur at regular intervals
-GrowUpBuff,1,EnemyGroom_AngerToDamage,<yellow>Sustained Player HP Damage<c> in Final Section
-GrowUpBuff,1,EnemyGroom_AngerToPPDamage,<yellow>Sustained Player PP Damage<c> in Final Section
-GrowUpBuff,1,EnemyGroom_AngerToHpDown50,<yellow>Max Player HP -50% <c>in Final Section
-GrowUpBuff,1,EnemyGroom_AngerToHpDown75,<yellow>Max Player HP -75% <c>in Final Section
-GrowUpBuff,1,EnemyGroom_AngerToSummon,<yellow>Additional Enemies Appear<c> in Final Section
-QuestCommonBuff,0,SonicQuest_MaxHpAdd,最大HP上昇
-QuestCommonBuff,0,SonicQuest_AddCriticalAndDamage,クリティカル強化
-QuestCommonBuff,0,CityQuest_DamageUpDebuff,防御力ダウン
-QuestCommonBuff,0,NewDuel_PpRecoveryDecrease1,PP回復量－５%
-QuestCommonBuff,0,NewDuel_PpRecoveryDecrease2,PP回復量－10%
-QuestCommonBuff,0,NewDuel_PpRecoveryDecrease3,PP回復量－15%
-QuestCommonBuff,0,NewDuel_PpRecoveryDecrease4,PP回復量－20%
-QuestCommonBuff,0,NewDuel_PpRecoveryDecrease5,PP回復量－25%
-QuestCommonBuff,0,NewDuel_PbGuageDecrease1,フォトンブラストゲージ蓄積量－５%
-QuestCommonBuff,0,NewDuel_PbGuageDecrease2,フォトンブラストゲージ蓄積量－10%
-QuestCommonBuff,0,NewDuel_PbGuageDecrease3,フォトンブラストゲージ蓄積量－15%
-QuestCommonBuff,0,NewDuel_PbGuageDecrease4,フォトンブラストゲージ蓄積量－20%
-QuestCommonBuff,0,NewDuel_PbGuageDecrease5,フォトンブラストゲージ蓄積量－25%
-QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease1,M.A.R.S.バッテリー自然回復量－10%
-QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease2,M.A.R.S.バッテリー自然回復量－20%
-QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease3,M.A.R.S.バッテリー自然回復量－30%
-QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease4,M.A.R.S.バッテリー自然回復量－40%
-QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease5,M.A.R.S.バッテリー自然回復量－50%
-QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend1,状態異常効果時間増加：小
-QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend2,状態異常効果時間増加：中
-QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend3,状態異常効果時間増加：大
-QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend4,状態異常効果時間増加：特大
-QuestCommonBuff,0,NewDuel_RestasignLimitChange1,レスタサイン最大所持数－１
-QuestCommonBuff,0,NewDuel_RestasignLimitChange2,レスタサイン最大所持数－２
-QuestCommonBuff,0,NewDuel_RestasignLimitChange3,レスタサイン最大所持数－３
-QuestCommonBuff,0,NewDuel_RestasignLimitChange4,レスタサイン最大所持数－４
-QuestCommonBuff,0,NewDuel_RestasignLimitChange5,レスタサイン最大所持数－５
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_5,弱点部位以外のダメージ耐性＋5%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_10,弱点部位以外のダメージ耐性＋10%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_15,弱点部位以外のダメージ耐性＋15%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_20,弱点部位以外のダメージ耐性＋20%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_30,弱点部位以外のダメージ耐性＋30%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_40,弱点部位以外のダメージ耐性＋40%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_50,弱点部位以外のダメージ耐性＋50%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_60,弱点部位以外のダメージ耐性＋60%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_70,弱点部位以外のダメージ耐性＋70%
-QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_80,弱点部位以外のダメージ耐性＋80%
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerL,攻撃命中時低確率で<br>プレイヤー威力低下：小
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerL,攻撃命中時低確率で<br>プレイヤー威力低下：中
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerL,攻撃命中時低確率で<br>プレイヤー威力低下：大
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerL,攻撃命中時低確率で<br>プレイヤー威力低下：特大
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerH,攻撃命中時高確率で<br>プレイヤー威力低下：小
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerH,攻撃命中時高確率で<br>プレイヤー威力低下：中
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerH,攻撃命中時高確率で<br>プレイヤー威力低下：大
-QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerH,攻撃命中時高確率で<br>プレイヤー威力低下：特大
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D10,攻撃に闇属性追加/ポイズン蓄積量：小
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D20,攻撃に闇属性追加/ポイズン蓄積量：中
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D40,攻撃に闇属性追加/ポイズン蓄積量：大
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D60,攻撃に闇属性追加/ポイズン蓄積量：特大
-QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow1,挑発行動時に分身体出現：１体
-QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow2,挑発行動時に分身体出現：２体
-QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow3,挑発行動時に分身体出現：３体
-QuestCommonBuff,0,r05_rem_akk_ba:Level100BuffDisplayCondition,？？？
-QuestCommonBuff,0,EnemyHpUp_025,最大HP＋25%
-QuestCommonBuff,0,EnemyHpUp_075,最大HP＋75%
-QuestCommonBuff,0,EnemyHpUp_100,最大HP＋100%
-QuestCommonBuff,0,HighRankEnemy,エネミーメガロティクス化
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_F60,攻撃に炎属性追加/バーン蓄積量：特大
-QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_T40,攻撃に雷属性追加/ショック蓄積量：大
-QuestCommonBuff,0,InjuryBoost<2>,攻撃にインジュリー追加
-QuestCommonBuff,0,CommonCustomizeAction1,エネミーアクション強化
-QuestCommonBuff,0,CommonCustomizeAction2,エネミーアクション強化
 QuestCommonBuff,1,SonicQuest_MaxHpAdd,Max HP Increased
 QuestCommonBuff,1,SonicQuest_AddCriticalAndDamage,Critical Up
 QuestCommonBuff,1,CityQuest_DamageUpDebuff,Defense Down
@@ -1570,14 +1508,68 @@ QuestCommonBuff,1,EnemyGrowUpQuest_Elementboost_T40,Lightning Added to Attacks/S
 QuestCommonBuff,1,InjuryBoost<2>,Injuries added to attacks
 QuestCommonBuff,1,CommonCustomizeAction1,Enemy actions buffed
 QuestCommonBuff,1,CommonCustomizeAction2,Enemy actions buffed
-JournalText,0,QuizAnswerCount,%(personalwork0)
-JournalText,0,QuizAnswerCount_Title,正解数
-JournalText,0,OngoingQuiz,問題
-JournalText,0,TFQuiz_1_1,なし
-JournalText,0,AnswerTimeLimit_Title,残り時間
-JournalText,0,AnswerTimeLimit_1,正解発表まで
-JournalText,0,AnswerTimeLimit_2,%(personalwork1) 秒
-JournalText,0,QuestPointAndTargetPoint,$(0)pt / $(1)pt
+QuestCommonBuff,0,SonicQuest_MaxHpAdd,最大HP上昇
+QuestCommonBuff,0,SonicQuest_AddCriticalAndDamage,クリティカル強化
+QuestCommonBuff,0,CityQuest_DamageUpDebuff,防御力ダウン
+QuestCommonBuff,0,NewDuel_PpRecoveryDecrease1,PP回復量－５%
+QuestCommonBuff,0,NewDuel_PpRecoveryDecrease2,PP回復量－10%
+QuestCommonBuff,0,NewDuel_PpRecoveryDecrease3,PP回復量－15%
+QuestCommonBuff,0,NewDuel_PpRecoveryDecrease4,PP回復量－20%
+QuestCommonBuff,0,NewDuel_PpRecoveryDecrease5,PP回復量－25%
+QuestCommonBuff,0,NewDuel_PbGuageDecrease1,フォトンブラストゲージ蓄積量－５%
+QuestCommonBuff,0,NewDuel_PbGuageDecrease2,フォトンブラストゲージ蓄積量－10%
+QuestCommonBuff,0,NewDuel_PbGuageDecrease3,フォトンブラストゲージ蓄積量－15%
+QuestCommonBuff,0,NewDuel_PbGuageDecrease4,フォトンブラストゲージ蓄積量－20%
+QuestCommonBuff,0,NewDuel_PbGuageDecrease5,フォトンブラストゲージ蓄積量－25%
+QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease1,M.A.R.S.バッテリー自然回復量－10%
+QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease2,M.A.R.S.バッテリー自然回復量－20%
+QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease3,M.A.R.S.バッテリー自然回復量－30%
+QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease4,M.A.R.S.バッテリー自然回復量－40%
+QuestCommonBuff,0,NewDuel_MarsRecoveryDecrease5,M.A.R.S.バッテリー自然回復量－50%
+QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend1,状態異常効果時間増加：小
+QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend2,状態異常効果時間増加：中
+QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend3,状態異常効果時間増加：大
+QuestCommonBuff,0,NewDuel_StatusEffectTimeExtend4,状態異常効果時間増加：特大
+QuestCommonBuff,0,NewDuel_RestasignLimitChange1,レスタサイン最大所持数－１
+QuestCommonBuff,0,NewDuel_RestasignLimitChange2,レスタサイン最大所持数－２
+QuestCommonBuff,0,NewDuel_RestasignLimitChange3,レスタサイン最大所持数－３
+QuestCommonBuff,0,NewDuel_RestasignLimitChange4,レスタサイン最大所持数－４
+QuestCommonBuff,0,NewDuel_RestasignLimitChange5,レスタサイン最大所持数－５
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_5,弱点部位以外のダメージ耐性＋5%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_10,弱点部位以外のダメージ耐性＋10%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_15,弱点部位以外のダメージ耐性＋15%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_20,弱点部位以外のダメージ耐性＋20%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_30,弱点部位以外のダメージ耐性＋30%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_40,弱点部位以外のダメージ耐性＋40%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_50,弱点部位以外のダメージ耐性＋50%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_60,弱点部位以外のダメージ耐性＋60%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_70,弱点部位以外のダメージ耐性＋70%
+QuestCommonBuff,0,EnemyGrowUpQuest_CalcDmageRate_NotWeak_80,弱点部位以外のダメージ耐性＋80%
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerL,攻撃命中時低確率で<br>プレイヤー威力低下：小
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerL,攻撃命中時低確率で<br>プレイヤー威力低下：中
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerL,攻撃命中時低確率で<br>プレイヤー威力低下：大
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerL,攻撃命中時低確率で<br>プレイヤー威力低下：特大
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownSPerH,攻撃命中時高確率で<br>プレイヤー威力低下：小
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownMPerH,攻撃命中時高確率で<br>プレイヤー威力低下：中
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownLPerH,攻撃命中時高確率で<br>プレイヤー威力低下：大
+QuestCommonBuff,0,r05_rem_akk_ba:AddSkillOnHit_PlayerDmgDownXLPerH,攻撃命中時高確率で<br>プレイヤー威力低下：特大
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D10,攻撃に闇属性追加/ポイズン蓄積量：小
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D20,攻撃に闇属性追加/ポイズン蓄積量：中
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D40,攻撃に闇属性追加/ポイズン蓄積量：大
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_D60,攻撃に闇属性追加/ポイズン蓄積量：特大
+QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow1,挑発行動時に分身体出現：１体
+QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow2,挑発行動時に分身体出現：２体
+QuestCommonBuff,0,r05_rem_akk_ba:ModeProvokeShadow3,挑発行動時に分身体出現：３体
+QuestCommonBuff,0,r05_rem_akk_ba:Level100BuffDisplayCondition,？？？
+QuestCommonBuff,0,EnemyHpUp_025,最大HP＋25%
+QuestCommonBuff,0,EnemyHpUp_075,最大HP＋75%
+QuestCommonBuff,0,EnemyHpUp_100,最大HP＋100%
+QuestCommonBuff,0,HighRankEnemy,エネミーメガロティクス化
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_F60,攻撃に炎属性追加/バーン蓄積量：特大
+QuestCommonBuff,0,EnemyGrowUpQuest_Elementboost_T40,攻撃に雷属性追加/ショック蓄積量：大
+QuestCommonBuff,0,InjuryBoost<2>,攻撃にインジュリー追加
+QuestCommonBuff,0,CommonCustomizeAction1,エネミーアクション強化
+QuestCommonBuff,0,CommonCustomizeAction2,エネミーアクション強化
 JournalText,1,QuizAnswerCount,%(personalwork0)
 JournalText,1,QuizAnswerCount_Title,Correct Answers
 JournalText,1,OngoingQuiz,Questions
@@ -1586,8 +1578,32 @@ JournalText,1,AnswerTimeLimit_Title,Time Remaining
 JournalText,1,AnswerTimeLimit_1,Answer revealed in
 JournalText,1,AnswerTimeLimit_2,%(personalwork1) second(s)
 JournalText,1,QuestPointAndTargetPoint,$(0)pt / $(1)pt
-BuffLineText,0,CityQuest_DamageUpDebuff,探索ポイントの変動により、被ダメージ増加Lv.$(0)の効果が発生します。
+JournalText,0,QuizAnswerCount,%(personalwork0)
+JournalText,0,QuizAnswerCount_Title,正解数
+JournalText,0,OngoingQuiz,問題
+JournalText,0,TFQuiz_1_1,なし
+JournalText,0,AnswerTimeLimit_Title,残り時間
+JournalText,0,AnswerTimeLimit_1,正解発表まで
+JournalText,0,AnswerTimeLimit_2,%(personalwork1) 秒
+JournalText,0,QuestPointAndTargetPoint,$(0)pt / $(1)pt
 BuffLineText,1,CityQuest_DamageUpDebuff,"Due to Exploration Points changes, Damage Taken Increase Lv. $(0) has been applied."
+BuffLineText,0,CityQuest_DamageUpDebuff,探索ポイントの変動により、被ダメージ増加Lv.$(0)の効果が発生します。
+GroomCommon,1,ChooseBuff,Obtained <yellow>$(0) Lv.$(1)<c>.
+GroomCommon,1,Toast_All_LevelUp,All acquired Ability Buffs have increased in level.
+GroomCommon,1,Toast_ComboBuff_Get,Obtained all-around buff <yellow>$(0)$(1)<c>.
+GroomCommon,1,TimeOver,Time limit exceeded
+GroomCommon,1,ChipInfoHeader,Ability Buff Condition: $(0)
+GroomCommon,1,ChipInfoBattle,Defeat the enemies
+GroomCommon,1,ChipInfoItemContainer,Destroy all Shared Containers
+GroomCommon,1,ChipInfoSearch,Press 3 Pole Switches
+GroomCommon,1,ChipInfoNone,None
+GroomCommon,1,ChipInfoCleared,Acquired
+GroomCommon,1,GetBuffList,Player Ability Buff
+GroomCommon,1,GetBuffLv,Lv.$(0)
+GroomCommon,1,Benefit_None,None
+GroomCommon,1,AreaWait_QuestDetailsGuide,"This information can also be found in the <yellow>""Simple Quest Info"" that appears when opening the main menu<c> while the quest is in progress."
+GroomCommon,1,AreaWait_QuestDetailsTitle,Enemy Information
+GroomCommon,1,BuffGet_WaitTime,Wainting for other players to get their buff.
 GroomCommon,0,ChooseBuff,<yellow>$(0) Lv.$(1)<c>を獲得しました。
 GroomCommon,0,Toast_All_LevelUp,獲得している能力強化のLvが上昇しました。
 GroomCommon,0,Toast_ComboBuff_Get,全体強化<yellow>$(0)$(1)<c>を獲得しました。
@@ -1607,22 +1623,160 @@ GroomCommon,0,BuffGet_WaitTime,他のプレイヤーのバフ取得を待って�
 GroomCommon,0,GroomDebuff_Start,\永続お邪魔効果発動！
 GroomCommon,0,GroomDebuff_End,\永続お邪魔効果が解除された！
 GroomCommon,0,Groom_PersistentJournalTitle,￥発動中の妨害効果
-GroomCommon,1,ChooseBuff,Obtained <yellow>$(0) Lv.$(1)<c>.
-GroomCommon,1,Toast_All_LevelUp,All acquired Ability Buffs have increased in level.
-GroomCommon,1,Toast_ComboBuff_Get,Obtained all-around buff <yellow>$(0)$(1)<c>.
-GroomCommon,1,TimeOver,Time limit exceeded
-GroomCommon,1,ChipInfoHeader,Ability Buff Condition: $(0)
-GroomCommon,1,ChipInfoBattle,Defeat the enemies
-GroomCommon,1,ChipInfoItemContainer,Destroy all Shared Containers
-GroomCommon,1,ChipInfoSearch,Press 3 Pole Switches
-GroomCommon,1,ChipInfoNone,None
-GroomCommon,1,ChipInfoCleared,Acquired
-GroomCommon,1,GetBuffList,Player Ability Buff
-GroomCommon,1,GetBuffLv,Lv.$(0)
-GroomCommon,1,Benefit_None,None
-GroomCommon,1,AreaWait_QuestDetailsGuide,"This information can also be found in the <yellow>""Simple Quest Info"" that appears when opening the main menu<c> while the quest is in progress."
-GroomCommon,1,AreaWait_QuestDetailsTitle,Enemy Information
-GroomCommon,1,BuffGet_WaitTime,Wainting for other players to get their buff.
+GroomBuff,1,Groom_HpUp,Max HP Up
+GroomBuff,1,Groom_Critical,Critical Rate Up
+GroomBuff,1,Groom_CriticalDmg,Critical Potency Up
+GroomBuff,1,Groom_DamageBuff,Potency Up
+GroomBuff,1,Groom_MaxPpBuff,Max PP Up
+GroomBuff,1,Groom_NormalAtkDamageBuff,Normal Attack Potency Up
+GroomBuff,1,Groom_NormalAtkDrainBuff,HP Recovery on Normal Attack Hit
+GroomBuff,1,Groom_PaTechniqueBuff,PA/Technique Potency Up
+GroomBuff,1,Groom_PbDamageBuff,Photon Blast Potency Up
+GroomBuff,1,Groom_PpHealRateBuff,PP Recovery Amount Up
+GroomBuff,1,Groom_StateResistanceBuff,Ailment Resistance Up
+GroomBuff,1,Groom_DamageCutBuff,Damage Resistance Up
+GroomBuff,1,Groom_AutoRecoveryBuff,Auto HP Recovery
+GroomBuff,1,Groom_DownValueBuff,Down Factor to Enemies Up
+GroomBuff,1,Groom_PbGaugeBuff,Photon Blast Gauge Charge Up
+GroomBuff,1,Groom_CounterAtkBuff,Sidestep Counter Potency Up
+GroomBuff,1,Groom_HealRateBuff,HP Recovery Amount Up
+GroomBuff,1,Groom_NodeDamageBuff,Attack Potency to Destructible Parts Up
+GroomBuff,1,Groom_WeakPointDamageBuff,Attack Potency to Weak Points Up
+GroomBuff,1,Groom_ActiveSkillCooltimeBuff,Active Skill Cooldown Reduction
+GroomBuff,1,Groom_IronWillBuff,Incapacitation Negation (recharges)
+GroomBuff,1,Groom_DodgeRecoveryBuff,HP Recovery on Successful Sidestep
+GroomBuff,1,Groom_RecoveryGaugeIncrease,Restasigne Carry Limit Up
+GroomBuff,1,Groom_AutoRecoveryAddBuff,Periodic Restasigne Auto Replenishment
+GroomBuff,1,Groom_HpBonusBuff,Potency/Damage Resist Up when HP 75%+
+GroomBuff,1,Groom_HitCountPpHealBuff,PP Recovery Every 20 Successful Attacks
+GroomBuff,1,Groom_BadEase,Status Ailment Duration Reduction
+GroomBuff,1,Groom_DownDamageBuff,Attack Potency to Downed Enemies Up
+GroomBuff,1,Groom_ArsenalModuleGaugeBuff,M.A.R.S. Battery Natural PP Recovery Amount Up
+GroomBuff,1,Groom_ArsenalModuleDamageBuff,M.A.R.S. Attack Potency Up
+GroomBuff,1,Groom_DodgeAtpBuff,Temp. Potency Up on Successful Sidestep
+GroomBuff,1,Groom_S_PhotonArtsBuff,<yellow>Additional Damage on PA/Technique Hit<c>
+GroomBuff,1,Groom_S_GlideAttackBuff,<yellow>Diving Attack Potency/Down Factor Up<c>
+GroomBuff,1,Groom_S_DamageShieldBuff,<yellow>Reflect Shield Activation<c>
+GroomBuff,1,Groom_S_QuickAttackBuff,<yellow>Attack Speed Up<c>
+GroomBuff,1,Groom_S_NormalAttackBuff,<yellow>Additional Attack on Normal Attack<c>
+GroomBuff,1,Groom_S_RangeDamageBuff,<yellow>Regular Automatic Additional Attacks<c>
+GroomBuff,1,Groom_S_OverRecoveryBuff,<yellow>Ability Up 10s After Using Restasigne<c>
+GroomBuff,1,Groom_S_AdditionalCriticalAttackBuff,<yellow>Additional Damage on Critical Hit<c>
+GroomBuff,1,Groom_S_DodgeBombBuff,<yellow>Additional Attack on Successful Sidestep<c>
+GroomBuff,1,Groom_ThrowingSpeedUpBuff,<yellow>Throw Action Speed Up<c>
+GroomBuff,1,Groom_ThrowingBuff,<yellow>Throw Action Potency Up<c>
+GroomBuff,1,Groom_S_AdditionalThrowAttackBuff,<yellow>Additional Damage on Throw Action Hit<c>
+GroomBuff,1,Groom_S_PbRecoveryBuff,<yellow>Use PB 2x Consecutively/Attack Speed Up<c>
+GroomBuff,1,Groom_S_PBMultiMissileBuff,<yellow>Activate PB to Equip Mobile Cannon ALR<c>
+GroomBuff,1,Groom_S_HPTradeTechArtsBuff,<yellow>If HP below 75% PA/TEC Potency Up/HP Down on use<c>
+GroomBuff,1,EnemyGroom_AttackUp50,<yellow>Potency +50%<c>
+GroomBuff,1,EnemyGroom_AttackUp100,<yellow>Potency +100%<c>
+GroomBuff,1,EnemyGroom_AttackUp150,<yellow>Potency +150%<c>
+GroomBuff,1,EnemyGroom_AttackUp200,<yellow>Potency +200%<c>
+GroomBuff,1,EnemyGroom_AttackUp250,<yellow>Potency +250%<c>
+GroomBuff,1,EnemyGroom_AttackUp300,<yellow>Potency +300%<c>
+GroomBuff,1,EnemyGroom_AttackUp350,<yellow>Potency +350%<c>
+GroomBuff,1,EnemyGroom_AttackUp400,<yellow>Potency +400%<c>
+GroomBuff,1,EnemyGroom_AttackUp500,<yellow>Potency +500%<c>
+GroomBuff,1,EnemyGroom_AttackUp600,<yellow>Potency +600%<c>
+GroomBuff,1,EnemyGroom_AttackUp700,<yellow>Potency +700%<c>
+GroomBuff,1,EnemyGroom_AttackUp800,<yellow>Potency +800%<c>
+GroomBuff,1,EnemyGroom_AttackUp900,<yellow>Potency +900%<c>
+GroomBuff,1,EnemyGroom_ElementUp50,<yellow>Status Ailment Efficacy +50%<c>
+GroomBuff,1,EnemyGroom_ElementUp100,<yellow>Status Ailment Efficacy +100%<c>
+GroomBuff,1,EnemyGroom_ElementUp150,<yellow>Status Ailment Efficacy +150%<c>
+GroomBuff,1,EnemyGroom_ElementUp200,<yellow>Status Ailment Efficacy +200%<c>
+GroomBuff,1,EnemyGroom_ElementUp250,<yellow>Status Ailment Efficacy +250%<c>
+GroomBuff,1,EnemyGroom_ElementUp300,<yellow>Status Ailment Efficacy +300%<c>
+GroomBuff,1,EnemyGroom_ElementUp350,<yellow>Status Ailment Efficacy +350%<c>
+GroomBuff,1,EnemyGroom_ElementUp400,<yellow>Status Ailment Efficacy +400%<c>
+GroomBuff,1,EnemyGroom_DamageResist5,<yellow>Damage Resistance +5%<c>
+GroomBuff,1,EnemyGroom_DamageResist10,<yellow>Damage Resistance +10%<c>
+GroomBuff,1,EnemyGroom_DamageResist15,<yellow>Damage Resistance +15%<c>
+GroomBuff,1,EnemyGroom_DamageResist20,<yellow>Damage Resistance +20%<c>
+GroomBuff,1,EnemyGroom_DamageResist25,<yellow>Damage Resistance +25%<c>
+GroomBuff,1,EnemyGroom_DamageResist30,<yellow>Damage Resistance +30%<c>
+GroomBuff,1,EnemyGroom_DamageResist35,<yellow>Damage Resistance +35%<c>
+GroomBuff,1,EnemyGroom_DamageResist40,<yellow>Damage Resistance +40%<c>
+GroomBuff,1,EnemyGroom_DamageResist45,<yellow>Damage Resistance +45%<c>
+GroomBuff,1,EnemyGroom_DamageResist50,<yellow>Damage Resistance +50%<c>
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_10,Normal Attack Damage Resistance + 10%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_20,Normal Attack Damage Resistance + 20%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_30,Normal Attack Damage Resistance + 30%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_40,Normal Attack Damage Resistance + 40%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_50,Normal Attack Damage Resistance + 50%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_60,Normal Attack Damage Resistance + 60%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_70,Normal Attack Damage Resistance + 70%
+GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_80,Normal Attack Damage Resistance + 80%
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_10,<yellow>PA/Technique Damage Resistance +10%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_20,<yellow>PA/Technique Damage Resistance +20%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_30,<yellow>PA/Technique Damage Resistance +30%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_40,<yellow>PA/Technique Damage Resistance +40%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_50,<yellow>PA/Technique Damage Resistance +50%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_60,<yellow>PA/Technique Damage Resistance +60%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_70,<yellow>PA/Technique Damage Resistance +70%<c>
+GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_80,<yellow>PA/Technique Damage Resistance +80%<c>
+GroomBuff,1,EnemyGroom_HPUp50,<yellow>Max HP +50%<c>
+GroomBuff,1,EnemyGroom_HPUp100,<yellow>Max HP +100%<c>
+GroomBuff,1,EnemyGroom_HPUp150,<yellow>Max HP +150%<c>
+GroomBuff,1,EnemyGroom_HPUp180,<yellow>Max HP +180%<c>
+GroomBuff,1,EnemyGroom_HPUp200,<yellow>Max HP +200%<c>
+GroomBuff,1,EnemyGroom_HPUp250,<yellow>Max HP +250%<c>
+GroomBuff,1,EnemyGroom_HPUp300,<yellow>Max HP +300%<c>
+GroomBuff,1,EnemyGroom_HPUp350,<yellow>Max HP +350%<c>
+GroomBuff,1,EnemyGroom_HPUp400,<yellow>Max HP +400%<c>
+GroomBuff,1,EnemyGroom_AngerToDamage,<yellow>Sustained Player HP Damage on HP Decrease<c>
+GroomBuff,1,EnemyGroom_AngerToPPDamage,<yellow>Sustained Player PP Damage on HP Decrease<c>
+GroomBuff,1,EnemyGroom_AngerToHpDown50,<yellow>Max HP -50% on HP Decrease<c>
+GroomBuff,1,EnemyGroom_AngerToHpDown75,<yellow>Max HP -75% on HP Decrease<c>
+GroomBuff,1,EnemyGroomAdditionalSkillOnHit_DamageDebuff5,<yellow>Player Potency/Resistance Decrease<c> on Attack Hit
+GroomBuff,1,EnemyGroom_Elementboost_F20,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_F40,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_F60,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Large
+GroomBuff,1,EnemyGroom_Elementboost_I20,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_I40,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_I60,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Large
+GroomBuff,1,EnemyGroom_Elementboost_T20,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_T40,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_T60,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Large
+GroomBuff,1,EnemyGroom_Elementboost_W20,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_W40,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_W60,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Large
+GroomBuff,1,EnemyGroom_Elementboost_D20,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_D40,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_D60,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Large
+GroomBuff,1,EnemyGroom_Elementboost_L20,<yellow>Light Added<c> to Attacks/Panic Accumulation: Small
+GroomBuff,1,EnemyGroom_Elementboost_L40,<yellow>Light Added<c> to Attacks/Panic Accumulation: Medium
+GroomBuff,1,EnemyGroom_Elementboost_L60,<yellow>Light Added<c> to Attacks/Panic Accumulation: Large
+GroomBuff,1,Common:DownBombBoost,<yellow>Bomlode-enabled<c>
+GroomBuff,1,Common:TimerBuffBoost,<yellow>Growzard-enabled<c>
+GroomBuff,1,EnemyGroom_AngerToSummon,<yellow>Additional Enemies Appear<c> on HP Decrease
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_10,<yellow>Non-Weak Point Damage Resistance +10%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_15,<yellow>Non-Weak Point Damage Resistance +15%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_20,<yellow>Non-Weak Point Damage Resistance +20%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_30,<yellow>Non-Weak Point Damage Resistance +30%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_40,<yellow>Non-Weak Point Damage Resistance +40%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_50,<yellow>Non-Weak Point Damage Resistance +50%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_60,<yellow>Non-Weak Point Damage Resistance +60%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_70,<yellow>Non-Weak Point Damage Resistance +70%<c>
+GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_80,<yellow>Non-Weak Point Damage Resistance +80%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_10,<yellow>Non-Critical Damage Resistance +10%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_20,<yellow>Non-Critical Damage Resistance +20%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_30,<yellow>Non-Critical Damage Resistance +30%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_40,<yellow>Non-Critical Damage Resistance +40%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_50,<yellow>Non-Critical Damage Resistance +50%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_60,<yellow>Non-Critical Damage Resistance +60%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_70,<yellow>Non-Critical Damage Resistance +70%<c>
+GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_80,<yellow>Non-Critical Damage Resistance +80%<c>
+GroomBuff,1,EnemyGroom_IntervalShot15,<yellow>Automatic additional attacks<c> occur periodically
+GroomBuff,1,EnemyGroom_IntervalShotFireBoss15,<yellow>Meteorites fall<c> at regular intervals
+GroomBuff,1,EnemyGroom_IntervalShotFireBoss5,<yellow>Meteorites fall<c> at regular intervals
+GroomBuff,1,EnemyGroom_IntervalShotFire15,<yellow>Meteorites fall<c> at regular intervals
+GroomBuff,1,EnemyGroom_IntervalShotFire5,<yellow>Meteorites fall<c> at regular intervals
+GroomBuff,1,Groom_S_All_LevelUp,All Acquired Ability Buffs Lv. +1
+GroomBuff,1,Groom_Combo_AutoRecoveryPPBuff,<pict icon_buffcon1>PP Recovery at Regular Intervals
+GroomBuff,1,Groom_Combo_DamageReductionBuff,<pict icon_buffcon2>Damage Resistance Up
+GroomBuff,1,Groom_Combo_PATecBuff,<pict icon_buffcon3>PA/Technique Potency Up
 GroomBuff,0,Groom_HpUp,最大HP増加
 GroomBuff,0,Groom_Critical,クリティカル率上昇
 GroomBuff,0,Groom_CriticalDmg,クリティカル威力上昇
@@ -1794,159 +1948,5 @@ GroomBuff,0,Groom_Persistent_NormalAtkDebuff,通常攻撃威力減少
 GroomBuff,0,Groom_Persistent_PATecDebuff,PA/テクニック威力減少
 GroomBuff,0,Groom_Persistent_VulnerabilityDebuff,被ダメージ上昇
 GroomBuff,0,Groom_Persistent_BadCondDebuff,状態異常耐性低下
-GroomBuff,1,Groom_HpUp,Max HP Up
-GroomBuff,1,Groom_Critical,Critical Rate Up
-GroomBuff,1,Groom_CriticalDmg,Critical Potency Up
-GroomBuff,1,Groom_DamageBuff,Potency Up
-GroomBuff,1,Groom_MaxPpBuff,Max PP Up
-GroomBuff,1,Groom_NormalAtkDamageBuff,Normal Attack Potency Up
-GroomBuff,1,Groom_NormalAtkDrainBuff,HP Recovery on Normal Attack Hit
-GroomBuff,1,Groom_PaTechniqueBuff,PA/Technique Potency Up
-GroomBuff,1,Groom_PbDamageBuff,Photon Blast Potency Up
-GroomBuff,1,Groom_PpHealRateBuff,PP Recovery Amount Up
-GroomBuff,1,Groom_StateResistanceBuff,Ailment Resistance Up
-GroomBuff,1,Groom_DamageCutBuff,Damage Resistance Up
-GroomBuff,1,Groom_AutoRecoveryBuff,Auto HP Recovery
-GroomBuff,1,Groom_DownValueBuff,Down Factor to Enemies Up
-GroomBuff,1,Groom_PbGaugeBuff,Photon Blast Gauge Charge Up
-GroomBuff,1,Groom_CounterAtkBuff,Sidestep Counter Potency Up
-GroomBuff,1,Groom_HealRateBuff,HP Recovery Amount Up
-GroomBuff,1,Groom_NodeDamageBuff,Attack Potency to Destructible Parts Up
-GroomBuff,1,Groom_WeakPointDamageBuff,Attack Potency to Weak Points Up
-GroomBuff,1,Groom_ActiveSkillCooltimeBuff,Active Skill Cooldown Reduction
-GroomBuff,1,Groom_IronWillBuff,Incapacitation Negation (recharges)
-GroomBuff,1,Groom_DodgeRecoveryBuff,HP Recovery on Successful Sidestep
-GroomBuff,1,Groom_RecoveryGaugeIncrease,Restasigne Carry Limit Up
-GroomBuff,1,Groom_AutoRecoveryAddBuff,Periodic Restasigne Auto Replenishment
-GroomBuff,1,Groom_HpBonusBuff,Potency/Damage Resist Up when HP 75%+
-GroomBuff,1,Groom_HitCountPpHealBuff,PP Recovery Every 20 Successful Attacks
-GroomBuff,1,Groom_BadEase,Status Ailment Duration Reduction
-GroomBuff,1,Groom_DownDamageBuff,Attack Potency to Downed Enemies Up
-GroomBuff,1,Groom_ArsenalModuleGaugeBuff,M.A.R.S. Battery Natural PP Recovery Amount Up
-GroomBuff,1,Groom_ArsenalModuleDamageBuff,M.A.R.S. Attack Potency Up
-GroomBuff,1,Groom_DodgeAtpBuff,Temp. Potency Up on Successful Sidestep
-GroomBuff,1,Groom_S_PhotonArtsBuff,<yellow>Additional Damage on PA/Technique Hit<c>
-GroomBuff,1,Groom_S_GlideAttackBuff,<yellow>Diving Attack Potency/Down Factor Up<c>
-GroomBuff,1,Groom_S_DamageShieldBuff,<yellow>Reflect Shield Activation<c>
-GroomBuff,1,Groom_S_QuickAttackBuff,<yellow>Attack Speed Up<c>
-GroomBuff,1,Groom_S_NormalAttackBuff,<yellow>Additional Attack on Normal Attack<c>
-GroomBuff,1,Groom_S_RangeDamageBuff,<yellow>Regular Automatic Additional Attacks<c>
-GroomBuff,1,Groom_S_OverRecoveryBuff,<yellow>Ability Up 10s After Using Restasigne<c>
-GroomBuff,1,Groom_S_AdditionalCriticalAttackBuff,<yellow>Additional Damage on Critical Hit<c>
-GroomBuff,1,Groom_S_DodgeBombBuff,<yellow>Additional Attack on Successful Sidestep<c>
-GroomBuff,1,Groom_ThrowingSpeedUpBuff,<yellow>Throw Action Speed Up<c>
-GroomBuff,1,Groom_ThrowingBuff,<yellow>Throw Action Potency Up<c>
-GroomBuff,1,Groom_S_AdditionalThrowAttackBuff,<yellow>Additional Damage on Throw Action Hit<c>
-GroomBuff,1,Groom_S_PbRecoveryBuff,<yellow>Use PB 2x Consecutively/Attack Speed Up<c>
-GroomBuff,1,Groom_S_PBMultiMissileBuff,<yellow>Activate PB to Equip Mobile Cannon ALR<c>
-GroomBuff,1,Groom_S_HPTradeTechArtsBuff,<yellow>If HP below 75% PA/TEC Potency Up/HP Down on use<c>
-GroomBuff,1,EnemyGroom_AttackUp50,<yellow>Potency +50%<c>
-GroomBuff,1,EnemyGroom_AttackUp100,<yellow>Potency +100%<c>
-GroomBuff,1,EnemyGroom_AttackUp150,<yellow>Potency +150%<c>
-GroomBuff,1,EnemyGroom_AttackUp200,<yellow>Potency +200%<c>
-GroomBuff,1,EnemyGroom_AttackUp250,<yellow>Potency +250%<c>
-GroomBuff,1,EnemyGroom_AttackUp300,<yellow>Potency +300%<c>
-GroomBuff,1,EnemyGroom_AttackUp350,<yellow>Potency +350%<c>
-GroomBuff,1,EnemyGroom_AttackUp400,<yellow>Potency +400%<c>
-GroomBuff,1,EnemyGroom_AttackUp500,<yellow>Potency +500%<c>
-GroomBuff,1,EnemyGroom_AttackUp600,<yellow>Potency +600%<c>
-GroomBuff,1,EnemyGroom_AttackUp700,<yellow>Potency +700%<c>
-GroomBuff,1,EnemyGroom_AttackUp800,<yellow>Potency +800%<c>
-GroomBuff,1,EnemyGroom_AttackUp900,<yellow>Potency +900%<c>
-GroomBuff,1,EnemyGroom_ElementUp50,<yellow>Status Ailment Efficacy +50%<c>
-GroomBuff,1,EnemyGroom_ElementUp100,<yellow>Status Ailment Efficacy +100%<c>
-GroomBuff,1,EnemyGroom_ElementUp150,<yellow>Status Ailment Efficacy +150%<c>
-GroomBuff,1,EnemyGroom_ElementUp200,<yellow>Status Ailment Efficacy +200%<c>
-GroomBuff,1,EnemyGroom_ElementUp250,<yellow>Status Ailment Efficacy +250%<c>
-GroomBuff,1,EnemyGroom_ElementUp300,<yellow>Status Ailment Efficacy +300%<c>
-GroomBuff,1,EnemyGroom_ElementUp350,<yellow>Status Ailment Efficacy +350%<c>
-GroomBuff,1,EnemyGroom_ElementUp400,<yellow>Status Ailment Efficacy +400%<c>
-GroomBuff,1,EnemyGroom_DamageResist5,<yellow>Damage Resistance +5%<c>
-GroomBuff,1,EnemyGroom_DamageResist10,<yellow>Damage Resistance +10%<c>
-GroomBuff,1,EnemyGroom_DamageResist15,<yellow>Damage Resistance +15%<c>
-GroomBuff,1,EnemyGroom_DamageResist20,<yellow>Damage Resistance +20%<c>
-GroomBuff,1,EnemyGroom_DamageResist25,<yellow>Damage Resistance +25%<c>
-GroomBuff,1,EnemyGroom_DamageResist30,<yellow>Damage Resistance +30%<c>
-GroomBuff,1,EnemyGroom_DamageResist35,<yellow>Damage Resistance +35%<c>
-GroomBuff,1,EnemyGroom_DamageResist40,<yellow>Damage Resistance +40%<c>
-GroomBuff,1,EnemyGroom_DamageResist45,<yellow>Damage Resistance +45%<c>
-GroomBuff,1,EnemyGroom_DamageResist50,<yellow>Damage Resistance +50%<c>
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_10,Normal Attack Damage Resistance + 10%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_20,Normal Attack Damage Resistance + 20%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_30,Normal Attack Damage Resistance + 30%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_40,Normal Attack Damage Resistance + 40%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_50,Normal Attack Damage Resistance + 50%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_60,Normal Attack Damage Resistance + 60%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_70,Normal Attack Damage Resistance + 70%
-GroomBuff,1,EnemyGroom_SendClient_NormalAtkAtpDownBuff1_80,Normal Attack Damage Resistance + 80%
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_10,<yellow>PA/Technique Damage Resistance +10%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_20,<yellow>PA/Technique Damage Resistance +20%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_30,<yellow>PA/Technique Damage Resistance +30%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_40,<yellow>PA/Technique Damage Resistance +40%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_50,<yellow>PA/Technique Damage Resistance +50%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_60,<yellow>PA/Technique Damage Resistance +60%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_70,<yellow>PA/Technique Damage Resistance +70%<c>
-GroomBuff,1,EnemyGroom_SendClient_PaTechniqueAtpDownBuff1_80,<yellow>PA/Technique Damage Resistance +80%<c>
-GroomBuff,1,EnemyGroom_HPUp50,<yellow>Max HP +50%<c>
-GroomBuff,1,EnemyGroom_HPUp100,<yellow>Max HP +100%<c>
-GroomBuff,1,EnemyGroom_HPUp150,<yellow>Max HP +150%<c>
-GroomBuff,1,EnemyGroom_HPUp180,<yellow>Max HP +180%<c>
-GroomBuff,1,EnemyGroom_HPUp200,<yellow>Max HP +200%<c>
-GroomBuff,1,EnemyGroom_HPUp250,<yellow>Max HP +250%<c>
-GroomBuff,1,EnemyGroom_HPUp300,<yellow>Max HP +300%<c>
-GroomBuff,1,EnemyGroom_HPUp350,<yellow>Max HP +350%<c>
-GroomBuff,1,EnemyGroom_HPUp400,<yellow>Max HP +400%<c>
-GroomBuff,1,EnemyGroom_AngerToDamage,<yellow>Sustained Player HP Damage on HP Decrease<c>
-GroomBuff,1,EnemyGroom_AngerToPPDamage,<yellow>Sustained Player PP Damage on HP Decrease<c>
-GroomBuff,1,EnemyGroom_AngerToHpDown50,<yellow>Max HP -50% on HP Decrease<c>
-GroomBuff,1,EnemyGroom_AngerToHpDown75,<yellow>Max HP -75% on HP Decrease<c>
-GroomBuff,1,EnemyGroomAdditionalSkillOnHit_DamageDebuff5,<yellow>Player Potency/Resistance Decrease<c> on Attack Hit
-GroomBuff,1,EnemyGroom_Elementboost_F20,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_F40,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_F60,<yellow>Fire Added<c> to Attacks/Burn Accumulation: Large
-GroomBuff,1,EnemyGroom_Elementboost_I20,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_I40,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_I60,<yellow>Ice Added<c> to Attacks/Freeze Accumulation: Large
-GroomBuff,1,EnemyGroom_Elementboost_T20,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_T40,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_T60,<yellow>Lightning Added<c> to Attacks/Shock Accumulation: Large
-GroomBuff,1,EnemyGroom_Elementboost_W20,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_W40,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_W60,<yellow>Wind Added<c> to Attacks/Blind Accumulation: Large
-GroomBuff,1,EnemyGroom_Elementboost_D20,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_D40,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_D60,<yellow>Dark Added<c> to Attacks/Poison Accumulation: Large
-GroomBuff,1,EnemyGroom_Elementboost_L20,<yellow>Light Added<c> to Attacks/Panic Accumulation: Small
-GroomBuff,1,EnemyGroom_Elementboost_L40,<yellow>Light Added<c> to Attacks/Panic Accumulation: Medium
-GroomBuff,1,EnemyGroom_Elementboost_L60,<yellow>Light Added<c> to Attacks/Panic Accumulation: Large
-GroomBuff,1,Common:DownBombBoost,<yellow>Bomlode-enabled<c>
-GroomBuff,1,Common:TimerBuffBoost,<yellow>Growzard-enabled<c>
-GroomBuff,1,EnemyGroom_AngerToSummon,<yellow>Additional Enemies Appear<c> on HP Decrease
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_10,<yellow>Non-Weak Point Damage Resistance +10%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_15,<yellow>Non-Weak Point Damage Resistance +15%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_20,<yellow>Non-Weak Point Damage Resistance +20%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_30,<yellow>Non-Weak Point Damage Resistance +30%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_40,<yellow>Non-Weak Point Damage Resistance +40%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_50,<yellow>Non-Weak Point Damage Resistance +50%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_60,<yellow>Non-Weak Point Damage Resistance +60%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_70,<yellow>Non-Weak Point Damage Resistance +70%<c>
-GroomBuff,1,EnemyGroom_CalcDmageRate_NotWeak_80,<yellow>Non-Weak Point Damage Resistance +80%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_10,<yellow>Non-Critical Damage Resistance +10%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_20,<yellow>Non-Critical Damage Resistance +20%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_30,<yellow>Non-Critical Damage Resistance +30%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_40,<yellow>Non-Critical Damage Resistance +40%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_50,<yellow>Non-Critical Damage Resistance +50%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_60,<yellow>Non-Critical Damage Resistance +60%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_70,<yellow>Non-Critical Damage Resistance +70%<c>
-GroomBuff,1,EnemyGroom_SendClient_NonCriticalAtpDownBuff1_80,<yellow>Non-Critical Damage Resistance +80%<c>
-GroomBuff,1,EnemyGroom_IntervalShot15,<yellow>Automatic additional attacks<c> occur periodically
-GroomBuff,1,EnemyGroom_IntervalShotFireBoss15,<yellow>Meteorites fall<c> at regular intervals
-GroomBuff,1,EnemyGroom_IntervalShotFireBoss5,<yellow>Meteorites fall<c> at regular intervals
-GroomBuff,1,EnemyGroom_IntervalShotFire15,<yellow>Meteorites fall<c> at regular intervals
-GroomBuff,1,EnemyGroom_IntervalShotFire5,<yellow>Meteorites fall<c> at regular intervals
-GroomBuff,1,Groom_S_All_LevelUp,All Acquired Ability Buffs Lv. +1
-GroomBuff,1,Groom_Combo_AutoRecoveryPPBuff,<pict icon_buffcon1>PP Recovery at Regular Intervals
-GroomBuff,1,Groom_Combo_DamageReductionBuff,<pict icon_buffcon2>Damage Resistance Up
-GroomBuff,1,Groom_Combo_PATecBuff,<pict icon_buffcon3>PA/Technique Potency Up
-NeonCityText,0,NeonCity_RewardZone_timer,あと$(0)秒でルームから退出します
 NeonCityText,1,NeonCity_RewardZone_timer,Leaving the room in $(0) second(s)
+NeonCityText,0,NeonCity_RewardZone_timer,あと$(0)秒でルームから退出します

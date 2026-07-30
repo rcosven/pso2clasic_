@@ -1,39 +1,16 @@
-section,group,id,text
-EditList,0,Cancel,変更せずに終了
-EditList,0,Decide,変更を確定
-EditList,0,Title,エステ
+﻿section,group,id,text
 EditList,1,Cancel,Discard & Exit
 EditList,1,Decide,Confirm Changes
 EditList,1,Title,SALON
-Confirm,0,Message,変更した内容を反映せずに終了します。<br>よろしいですか？
-Confirm,0,AllRandomTitle,確認
-Confirm,0,AllRandomMessage,すべての項目をランダムで設定しても、<br>よろしいですか？
+EditList,0,Cancel,変更せずに終了
+EditList,0,Decide,変更を確定
+EditList,0,Title,エステ
 Confirm,1,Message,You are about to exit without applying the changes.<br>Are you sure you wish to proceed?
 Confirm,1,AllRandomTitle,CONFIRM
 Confirm,1,AllRandomMessage,You are about to randomize settings for all options.<br>Are you sure you wish to proceed?
-Payment,0,PaymentCheckTitle,退店確認
-Payment,0,PaymentCheckMessage,変更内容に、<c ff4f3f>AC消費コンテンツ<c>が含まれています。<br><br>・変更を取り消す場合は、「いいえ」を選択し<br>　「編集内容確認」から変更を取り消してください。<br><br>・変更を適用して退店する場合は、<br>　「はい」を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
-Payment,0,ColorCheckMessage,変更内容に、<yellow>カラーチェンジパス、N-カラーチェンジパス<c><br>が必要な項目が含まれています。<br><br>変更内容を取り消す場合は、“いいえ”を選択し、<br>“編集内容確認”から変更内容を取り消してください。<br><br>変更内容を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
-Payment,0,ConsumeCheckTitle,パス使用確認
-Payment,0,ConsumeCheckMessage,<pict Arcscash><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。<c>
-Payment,0,ConsumeCheckMessage2,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br><yellow>※エステ無料パスには、プレミアム有効期間中の<br>　　再編集可能期間が適用されません。ご注意ください<c>
-Payment,0,ItemCheckMessage,<c 5fdf00>所持アイテムの使用<c><br>以下の所持アイテムを使用することで、<br>変更を適用して退店します。よろしいですか？
-Payment,0,BuyCheckTitle,パス購入確認
-Payment,0,BuyCheckMessage,<pict Arcscash><c ff4f3f>AC消費コンテンツ<c><br>変更を適用して退店するには以下のパスが必要です。<br>ACを消費して購入し、退店しますか？<br>(所持AC：$(0))<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
-Payment,0,BuyCheckItem,$(0)($(1)AC)
-Payment,0,PaymentCheckMessageSG,変更内容に、<c 1dedd7>SG消費コンテンツ<c>が含まれています。<br><br>変更を取り消す場合は、“いいえ”を選択し<br>“編集内容確認”から変更を取り消してください。<br>変更を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？<br><red>※ACで購入したエステ利用パスも利用できます。<c>
-Payment,0,ConsumeCheckMessageColor,<pict Arcscash><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス、<c><br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<c><br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<c><br><yellow>※キャストのカラー選択も再編集が可能です。<c>
-Payment,0,ConsumeCheckMessageSGColor,<pict StarGem><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス、<c><br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<c><br><yellow>※キャストのカラー選択も再編集が可能です。<c>
-Payment,0,ConsumeCheckMessageSG,<pict StarGem><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
-Payment,0,ConsumeCheckMessage2Color,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<br>※キャストのカラー選択も再編集が可能です。<br>※エステ無料パスには、プレミアム有効期間中の<br>　再編集可能期間が適用されません。ご注意ください。<c>
-Payment,0,ItemCheckMessage2,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<br>※キャストのカラー選択も再編集が可能です。<c>
-Payment,0,BuyCheckMessageSG,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br>変更を適用して退店するには以下のパスが必要です。<br>SGを消費して購入し、退店しますか？<br>(所持SG：$(0))<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
-Payment,0,BuyCheckItemSG,$(0)($(1)SG)
-Payment,0,CashIconAC,<white><pict Arcscash><c>
-Payment,0,CashIconSG,<white><pict StarGem><c>
-Payment,0,ColorChangePassIcon,<white><pict c_c_path><c>
-Payment,0,DefaultColorBackCheckTitle,デフォルトカラー確認
-Payment,0,DefaultColorBackCheckMessage,装備しているレイヤリングウェアに、<br><c ff4f3f>デフォルトカラーに戻るアイテム<c>が含まれています。<br><br>・変更を取り消す場合は、“いいえ”を選択し<br>　別のアイテムを身に着けてから退店してください。<br><br>・変更を適用して退店する場合は、<br>　“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
+Confirm,0,Message,変更した内容を反映せずに終了します。<br>よろしいですか？
+Confirm,0,AllRandomTitle,確認
+Confirm,0,AllRandomMessage,すべての項目をランダムで設定しても、<br>よろしいですか？
 Payment,1,PaymentCheckTitle,CONFIRM EXIT
 Payment,1,PaymentCheckMessage,"The current changes include certain content <br><c ff4f3f>for which AC payment is required<c>.<br><br>- To cancel the changes, select [No] and cancel <br>the changes under [Confirm Edits].<br>- To apply the changes and exit the store, <br>select [Yes] to bring up the confirmation screen.<br><br>Are you sure you wish to apply the changes <br>and exit the store?"
 Payment,1,ColorCheckMessage,"The current changes include items for which <br>a <yellow>Color-Change Pass or N-Color-Change Pass<c> is required.<br><br>To cancel the changes, select ""No"" and cancel <br>the changes under ""Confirm Edits"".<br>To apply the changes and exit the store, select ""Yes"" <br>to bring up the confirmation screen. <br><br>Are you sure you wish to apply the changes and exit the store?"
@@ -57,84 +34,29 @@ Payment,1,CashIconSG,<white><pict StarGem><c>
 Payment,1,ColorChangePassIcon,<white><pict c_c_path><c>
 Payment,1,DefaultColorBackCheckTitle,Confirm Default Color
 Payment,1,DefaultColorBackCheckMessage,"The equipped Layering Wear includes <c ff4f3f>an item <br>that switches back to the Default Color<c>.<br><br>- To cancel the changes, select ""No"" and equip a different <br>item before exiting.<br><br>- To apply the changes and exit the store, select ""Yes"" <br>to bring up the confirmation screen. <br><br>Are you sure you wish to apply the changes and exit the store?<br>"
-Error,0,Title,エステ
-Error,0,Result_0,無効
-Error,0,Result_1_1,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。
-Error,0,Result_1_2,お会計はありません。<br>ご利用ありがとうございました。
-Error,0,Result_1_3,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「エステ利用パス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
-Error,0,Result_1_4,再編集可能期間のため、お会計はありません。<br>ご利用ありがとうございました。
-Error,0,Result_2,外見の編集情報に問題が発生しました。<br><br>エラーコード[2000]
-Error,0,Result_3,ACが不足しています。<br>再度、ご確認ください。<br><br>エラーコード[2001]
-Error,0,Result_4,システムエラーが発生しました。<br>時間をおいてお試しください。
-Error,0,Result_5,所持品の編集情報に問題が発生しました。<br><br>エラーコード[2002]
-Error,0,Result_6,該当アイテムを所持していません。<br>もう一度ご確認ください。
-Error,0,Result_7,購入に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
-Error,0,Result_8,購入に失敗しました。<br>システムエラーの可能性があります。<br>時間をおいてお試しください。<br><br>エラーコード[2003]
-Error,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
-Error,0,Title_SPEdit,サポートパートナーエステ
-Error,0,Result_SPCreate_ParamError,正しいデータで作成されませんでした。
-Error,0,Result_SPCreate_MaxError,サポートパートナーを<br>これ以上追加することはできません。
-Error,0,Result_SPCreate_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
-Error,0,Result_SPCreate_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
-Error,0,Result_SPRemake_NoPartner,正しいデータで作成されませんでした。
-Error,0,Result_SPRemake_EquipError,アイテムパックに空きがありません。
-Error,0,Result_SPRemake_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
-Error,0,Result_SPRemake_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
-Error,0,Result_1_5,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
-Error,0,Result_1_6,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br>「エステ利用パス」<br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
-Error,0,Result_3_SG,SGが不足しています。<br>再度、ご確認ください。
-Error,0,Result_7_SG,購入に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
-Error,0,Result_9,サポートパートナーから外した<br>コスチューム（パーツ、アウターウェア）が<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
-Error,0,Result_10,キャラ倉庫から取り出したコスチュームが<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
-Error,0,Result_11,キャラクターの身長が脱衣状態で<br>下限を下回っているため、変更を確定できません。<br>脱衣状態の身長を$(0)cm以上にしてください<br><yellow>※<c><%TabForward><yellow>を押すことで脱衣状態の身長を確認できます。<c>
-Error,0,Result_12,カラー変更が行えないコスチューム、<br>レイヤリングウェア、セットウェアに<br>カラー変更が適用された可能性があります。<br><br>それぞれのカラーを元に戻してから、<br>エステを退店してください。
-Error,0,Error_ImproperData_Exit,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。<br><br>・該当箇所<br>$(0)
-Error,0,Error_ImproperData_LoadMyFashion,現在の外見データに問題があるため<br>マイファッションへ保存できません。
-Error,0,Error_ImproperData_InMyFashion,現在の外見データに問題があるため<br>マイファッションでの保存ができません。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。<br><br>・該当箇所<br>$(0)
-Error,0,Error_ImproperDataSaveMyFashion,現在の外見データに問題があるため<br>エステから退店できなくなることがあります。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。
-Error,0,Error_ImproperData_TypeNone,その他
-Error,0,Error_ImproperData_TypeSelect,選択項目
-Error,0,Error_ImproperData_TypeRace,種族
-Error,0,Error_ImproperData_TypeSex,タイプ
-Error,0,Error_ImproperData_TypeVoice,ボイス選択
-Error,0,Error_ImproperData_TypeSkinColor,肌カラー設定
-Error,0,Error_ImproperData_Sep,、
-Error,0,Error_ImproperData_SelectType_MainParts,コスチュームまたはボディ
-Error,0,Error_ImproperData_SelectType_BodyPaint1,ボディペイント１
-Error,0,Error_ImproperData_SelectType_BodyPaint2,ステッカー
-Error,0,Error_ImproperData_SelectType_Eye,瞳パターン
-Error,0,Error_ImproperData_SelectType_Eyebrow,まゆ
-Error,0,Error_ImproperData_SelectType_Eyelash,まつげ
-Error,0,Error_ImproperData_SelectType_Face,顔バリエーション
-Error,0,Error_ImproperData_SelectType_FacePaint1,顔バリエーション
-Error,0,Error_ImproperData_SelectType_FacePaint2,メイクパターン１
-Error,0,Error_ImproperData_SelectType_Hair,ヘアスタイルまたはヘッドパーツ
-Error,0,Error_ImproperData_SelectType_Acccessory1,アクセサリ１
-Error,0,Error_ImproperData_SelectType_Acccessory2,アクセサリ２
-Error,0,Error_ImproperData_SelectType_Acccessory3,アクセサリ３
-Error,0,Error_ImproperData_SelectType_FacePaint3,メイクパターン２
-Error,0,Error_ImproperData_SelectType_Leg,レッグ
-Error,0,Error_ImproperData_SelectType_Arm,アーム
-Error,0,Error_ImproperData_SelectType_Acccessory4,アクセサリ4
-Error,0,Error_ImproperData_SelectType_Basewear,ベースウェア
-Error,0,Error_ImproperData_SelectType_Innerwear,インナーウェア
-Error,0,Error_ImproperData_SelectType_BodyPaint3,ボディペイント2
-Error,0,Error_ImproperData_Select_Etc,その他
-Error,0,Error_ImproperData_SelectType_Skin,肌
-Error,0,Error_ImproperData_SelectType_Ears,耳
-Error,0,Error_ImproperData_SelectType_Dental,歯
-Error,0,Error_ImproperData_SelectType_Horn,角
-Error,0,Error_ImproperData_SelectType_Accessory5,アクセサリ５
-Error,0,Error_ImproperData_SelectType_Accessory6,アクセサリ６
-Error,0,Error_ImproperData_SelectType_Accessory7,アクセサリ７
-Error,0,Error_ImproperData_SelectType_Accessory8,アクセサリ８
-Error,0,Error_ImproperData_SelectType_Accessory9,アクセサリ９
-Error,0,Error_ImproperData_SelectType_Accessory10,アクセサリ１０
-Error,0,Error_ImproperData_SelectType_Accessory11,アクセサリ１１
-Error,0,Error_ImproperData_SelectType_Accessory12,アクセサリ１２
-Error,0,Result_SPCreate_ChargeError_SG,作成に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
-Error,0,Result_13,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。
-Error,0,Result_14,アイテムパックの空き容量不足のため、<br>ファッションアイテムを取り外せません。
+Payment,0,PaymentCheckTitle,退店確認
+Payment,0,PaymentCheckMessage,変更内容に、<c ff4f3f>AC消費コンテンツ<c>が含まれています。<br><br>・変更を取り消す場合は、「いいえ」を選択し<br>　「編集内容確認」から変更を取り消してください。<br><br>・変更を適用して退店する場合は、<br>　「はい」を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
+Payment,0,ColorCheckMessage,変更内容に、<yellow>カラーチェンジパス、N-カラーチェンジパス<c><br>が必要な項目が含まれています。<br><br>変更内容を取り消す場合は、“いいえ”を選択し、<br>“編集内容確認”から変更内容を取り消してください。<br><br>変更内容を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
+Payment,0,ConsumeCheckTitle,パス使用確認
+Payment,0,ConsumeCheckMessage,<pict Arcscash><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。<c>
+Payment,0,ConsumeCheckMessage2,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br><yellow>※エステ無料パスには、プレミアム有効期間中の<br>　　再編集可能期間が適用されません。ご注意ください<c>
+Payment,0,ItemCheckMessage,<c 5fdf00>所持アイテムの使用<c><br>以下の所持アイテムを使用することで、<br>変更を適用して退店します。よろしいですか？
+Payment,0,BuyCheckTitle,パス購入確認
+Payment,0,BuyCheckMessage,<pict Arcscash><c ff4f3f>AC消費コンテンツ<c><br>変更を適用して退店するには以下のパスが必要です。<br>ACを消費して購入し、退店しますか？<br>(所持AC：$(0))<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
+Payment,0,BuyCheckItem,$(0)($(1)AC)
+Payment,0,PaymentCheckMessageSG,変更内容に、<c 1dedd7>SG消費コンテンツ<c>が含まれています。<br><br>変更を取り消す場合は、“いいえ”を選択し<br>“編集内容確認”から変更を取り消してください。<br>変更を適用して退店する場合は、<br>“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？<br><red>※ACで購入したエステ利用パスも利用できます。<c>
+Payment,0,ConsumeCheckMessageColor,<pict Arcscash><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス、<c><br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<c><br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<c><br><yellow>※キャストのカラー選択も再編集が可能です。<c>
+Payment,0,ConsumeCheckMessageSGColor,<pict StarGem><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス、<c><br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<c><br><yellow>※キャストのカラー選択も再編集が可能です。<c>
+Payment,0,ConsumeCheckMessageSG,<pict StarGem><c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
+Payment,0,ConsumeCheckMessage2Color,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<br>※キャストのカラー選択も再編集が可能です。<br>※エステ無料パスには、プレミアム有効期間中の<br>　再編集可能期間が適用されません。ご注意ください。<c>
+Payment,0,ItemCheckMessage2,<c 5fdf00>アイテムの使用<c><br>以下のアイテムを使用することで、<br>変更内容を適用して退店します。よろしいですか？<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>カラーチェンジパス、N-カラーチェンジパス<c>を<br>消費せずに再編集が可能となります。<br><br><yellow>※カラーチェンジパス、N-カラーチェンジパスを<br>　使用したアイテムに限り再編集ができます。<br>※キャストのカラー選択も再編集が可能です。<c>
+Payment,0,BuyCheckMessageSG,<pict StarGem><c 1dedd7>SG消費コンテンツ<c><br>変更を適用して退店するには以下のパスが必要です。<br>SGを消費して購入し、退店しますか？<br>(所持SG：$(0))<br><br>プレミアム有効期間中は、退店後60分間<br><yellow>エステ利用パスS、エステ利用パス<c>を<br>消費せずに再編集が可能となります。
+Payment,0,BuyCheckItemSG,$(0)($(1)SG)
+Payment,0,CashIconAC,<white><pict Arcscash><c>
+Payment,0,CashIconSG,<white><pict StarGem><c>
+Payment,0,ColorChangePassIcon,<white><pict c_c_path><c>
+Payment,0,DefaultColorBackCheckTitle,デフォルトカラー確認
+Payment,0,DefaultColorBackCheckMessage,装備しているレイヤリングウェアに、<br><c ff4f3f>デフォルトカラーに戻るアイテム<c>が含まれています。<br><br>・変更を取り消す場合は、“いいえ”を選択し<br>　別のアイテムを身に着けてから退店してください。<br><br>・変更を適用して退店する場合は、<br>　“はい”を選択すると、確認画面に進みます。<br><br>変更を適用して、退店しますか？
 Error,1,Title,SALON
 Error,1,Result_0,Disabled
 Error,1,Result_1_1,You have purchased or used a pass and your changes have been applied.<br>Thank you for your business!
@@ -213,18 +135,84 @@ Error,1,Error_ImproperData_SelectType_Accessory12,Accessory 12
 Error,1,Result_SPCreate_ChargeError_SG,Creation failed. Your Star Gems balance <br>may be too low. Please verify your balance.
 Error,1,Result_13,There is a problem with the current appearance data so<br>changes could not be applied.<br><br>Exit the Salon after changing the affected areas or using<br>other saved data from Looks.
 Error,1,Result_14,Not enough space in your inventory to take off your fashion items.
-Common,0,Title,エステ
-Common,0,Message_1,再編集可能期間中のため、<br>「エステ利用パス」を消費せずに<br>編集が可能です。
-Common,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
-Common,0,Title_SPEdit,サポートパートナーエステ
-Common,0,Message_6,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
-Common,0,Message_7,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です<br><br>※対象アイテムには、アイテム一覧上で入店時<br>   の残り時間が表示されています。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
-Common,0,Message_8,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※キャストはカラー選択も対象になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
-Common,0,Message_9,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※キャストはカラー選択も対象になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
-Common,0,Message_2,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br><br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫<br>   にあるアイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
-Common,0,Message_3,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br><br>※対象アイテムにはアイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
-Common,0,Message_4,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>キャストはカラー選択も対象になります。<br><br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
-Common,0,Message_5,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br>キャストはカラー選択も対象になります。<br><br>※対象アイテムにはアイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Error,0,Title,エステ
+Error,0,Result_0,無効
+Error,0,Result_1_1,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。
+Error,0,Result_1_2,お会計はありません。<br>ご利用ありがとうございました。
+Error,0,Result_1_3,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「エステ利用パス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_1_4,再編集可能期間のため、お会計はありません。<br>ご利用ありがとうございました。
+Error,0,Result_2,外見の編集情報に問題が発生しました。<br><br>エラーコード[2000]
+Error,0,Result_3,ACが不足しています。<br>再度、ご確認ください。<br><br>エラーコード[2001]
+Error,0,Result_4,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_5,所持品の編集情報に問題が発生しました。<br><br>エラーコード[2002]
+Error,0,Result_6,該当アイテムを所持していません。<br>もう一度ご確認ください。
+Error,0,Result_7,購入に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_8,購入に失敗しました。<br>システムエラーの可能性があります。<br>時間をおいてお試しください。<br><br>エラーコード[2003]
+Error,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
+Error,0,Title_SPEdit,サポートパートナーエステ
+Error,0,Result_SPCreate_ParamError,正しいデータで作成されませんでした。
+Error,0,Result_SPCreate_MaxError,サポートパートナーを<br>これ以上追加することはできません。
+Error,0,Result_SPCreate_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_SPCreate_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_SPRemake_NoPartner,正しいデータで作成されませんでした。
+Error,0,Result_SPRemake_EquipError,アイテムパックに空きがありません。
+Error,0,Result_SPRemake_ChargeError,作成に失敗しました。<br>ACが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_SPRemake_SystemError,システムエラーが発生しました。<br>時間をおいてお試しください。
+Error,0,Result_1_5,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br><br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_1_6,パスを購入または使用し、変更を適用しました。<br>ご利用ありがとうございました。<br>「エステ利用パス」<br>「カラーチェンジパス」使用後、60分の間は<br>パスを消費せずに再編集が可能となります。
+Error,0,Result_3_SG,SGが不足しています。<br>再度、ご確認ください。
+Error,0,Result_7_SG,購入に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_9,サポートパートナーから外した<br>コスチューム（パーツ、アウターウェア）が<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
+Error,0,Result_10,キャラ倉庫から取り出したコスチュームが<br>アイテムパックの所持上限を超えるため<br>変更を確定できません。<br><br>コスチュームを元に戻してから<br>エステを退店してください。
+Error,0,Result_11,キャラクターの身長が脱衣状態で<br>下限を下回っているため、変更を確定できません。<br>脱衣状態の身長を$(0)cm以上にしてください<br><yellow>※<c><%TabForward><yellow>を押すことで脱衣状態の身長を確認できます。<c>
+Error,0,Result_12,カラー変更が行えないコスチューム、<br>レイヤリングウェア、セットウェアに<br>カラー変更が適用された可能性があります。<br><br>それぞれのカラーを元に戻してから、<br>エステを退店してください。
+Error,0,Error_ImproperData_Exit,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。<br><br>・該当箇所<br>$(0)
+Error,0,Error_ImproperData_LoadMyFashion,現在の外見データに問題があるため<br>マイファッションへ保存できません。
+Error,0,Error_ImproperData_InMyFashion,現在の外見データに問題があるため<br>マイファッションでの保存ができません。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。<br><br>・該当箇所<br>$(0)
+Error,0,Error_ImproperDataSaveMyFashion,現在の外見データに問題があるため<br>エステから退店できなくなることがあります。<br><br>マイファッションから他の保存データを適用するか<br>エステで該当する箇所を変更してください。
+Error,0,Error_ImproperData_TypeNone,その他
+Error,0,Error_ImproperData_TypeSelect,選択項目
+Error,0,Error_ImproperData_TypeRace,種族
+Error,0,Error_ImproperData_TypeSex,タイプ
+Error,0,Error_ImproperData_TypeVoice,ボイス選択
+Error,0,Error_ImproperData_TypeSkinColor,肌カラー設定
+Error,0,Error_ImproperData_Sep,、
+Error,0,Error_ImproperData_SelectType_MainParts,コスチュームまたはボディ
+Error,0,Error_ImproperData_SelectType_BodyPaint1,ボディペイント１
+Error,0,Error_ImproperData_SelectType_BodyPaint2,ステッカー
+Error,0,Error_ImproperData_SelectType_Eye,瞳パターン
+Error,0,Error_ImproperData_SelectType_Eyebrow,まゆ
+Error,0,Error_ImproperData_SelectType_Eyelash,まつげ
+Error,0,Error_ImproperData_SelectType_Face,顔バリエーション
+Error,0,Error_ImproperData_SelectType_FacePaint1,顔バリエーション
+Error,0,Error_ImproperData_SelectType_FacePaint2,メイクパターン１
+Error,0,Error_ImproperData_SelectType_Hair,ヘアスタイルまたはヘッドパーツ
+Error,0,Error_ImproperData_SelectType_Acccessory1,アクセサリ１
+Error,0,Error_ImproperData_SelectType_Acccessory2,アクセサリ２
+Error,0,Error_ImproperData_SelectType_Acccessory3,アクセサリ３
+Error,0,Error_ImproperData_SelectType_FacePaint3,メイクパターン２
+Error,0,Error_ImproperData_SelectType_Leg,レッグ
+Error,0,Error_ImproperData_SelectType_Arm,アーム
+Error,0,Error_ImproperData_SelectType_Acccessory4,アクセサリ4
+Error,0,Error_ImproperData_SelectType_Basewear,ベースウェア
+Error,0,Error_ImproperData_SelectType_Innerwear,インナーウェア
+Error,0,Error_ImproperData_SelectType_BodyPaint3,ボディペイント2
+Error,0,Error_ImproperData_Select_Etc,その他
+Error,0,Error_ImproperData_SelectType_Skin,肌
+Error,0,Error_ImproperData_SelectType_Ears,耳
+Error,0,Error_ImproperData_SelectType_Dental,歯
+Error,0,Error_ImproperData_SelectType_Horn,角
+Error,0,Error_ImproperData_SelectType_Accessory5,アクセサリ５
+Error,0,Error_ImproperData_SelectType_Accessory6,アクセサリ６
+Error,0,Error_ImproperData_SelectType_Accessory7,アクセサリ７
+Error,0,Error_ImproperData_SelectType_Accessory8,アクセサリ８
+Error,0,Error_ImproperData_SelectType_Accessory9,アクセサリ９
+Error,0,Error_ImproperData_SelectType_Accessory10,アクセサリ１０
+Error,0,Error_ImproperData_SelectType_Accessory11,アクセサリ１１
+Error,0,Error_ImproperData_SelectType_Accessory12,アクセサリ１２
+Error,0,Result_SPCreate_ChargeError_SG,作成に失敗しました。<br>SGが不足している可能性がありますので、<br>ご確認ください。
+Error,0,Result_13,現在の外見データに問題があるため<br>変更を確定できません。<br><br>該当する箇所を変更するか<br>マイファッションから他の保存データを適用してから<br>エステを退店してください。
+Error,0,Result_14,アイテムパックの空き容量不足のため、<br>ファッションアイテムを取り外せません。
 Common,1,Title,SALON
 Common,1,Message_1,"You are still in the allowed re-editing period, so<br>you may edit this character without using a<br>Salon Pass."
 Common,1,Title_SPCreate,AUXILIARY CHARACTER CREATION
@@ -237,7 +225,19 @@ Common,1,Message_2,"You have an item that still has time to be <br>re-edited wit
 Common,1,Message_3,"During the re-edit window, you can alter <br>applicable items without consuming a <br>Salon Pass or Color-Change Pass.<br><br>The time you have left to edit such items, as <br>of the moment you entered the store, is shown <br>on the item list. The remaining time will only be <br>shown for items in your inventory or Character <br>Storage. It will not be shown for items being <br>worn by Auxiliaries."
 Common,1,Message_4,"You have an item that still has time to be <br>re-edited with a Color-Change Pass. <br>This applies to color changes for CASTs <br>as well.<br><br>The time you have left to edit such items, <br>as of the moment you entered the store, <br>is shown on the item list. The remaining time <br>will only be shown for items in your inventory <br>or Character Storage. It will not be shown for <br>items being worn by Auxiliaries."
 Common,1,Message_5,"During the re-edit window, you can alter <br>applicable items without consuming a <br>Salon Pass or Color-Change Pass. This <br>applies to color changes for CASTs as well.<br><br>The time you have left to edit such items, <br>as of the moment you entered the store, <br>is shown on the item list. The remaining <br>time will only be shown for items in your <br>inventory or Character Storage. It will not <br>be shown for items being worn by Auxiliaries."
-Owner,0,Registered,<%Owner_icon>オーナー登録済み
-Owner,0,Unregistered,オーナー登録必要
+Common,0,Title,エステ
+Common,0,Message_1,再編集可能期間中のため、<br>「エステ利用パス」を消費せずに<br>編集が可能です。
+Common,0,Title_SPCreate,サポートパートナーキャラクタークリエイト
+Common,0,Title_SPEdit,サポートパートナーエステ
+Common,0,Message_6,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_7,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です<br><br>※対象アイテムには、アイテム一覧上で入店時<br>   の残り時間が表示されています。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_8,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※キャストはカラー選択も対象になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_9,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br>　<br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※キャストはカラー選択も対象になります。<br>※プレイヤーとの種族・性別の差により<br>   サポートパートナー側では再編集可能な<br>   アイテムが存在しない場合があります。<br>※プレイヤーが着用中のものは表示されません。
+Common,0,Message_2,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br><br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫<br>   にあるアイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Common,0,Message_3,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br><br>※対象アイテムにはアイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Common,0,Message_4,再編集可能期間中のカラーチェンジパス<br>対象アイテムがあります。<br>キャストはカラー選択も対象になります。<br><br>※対象アイテムには、アイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
+Common,0,Message_5,再編集可能期間中のため、<br>「エステ利用パス」「カラーチェンジパス」を<br>消費せずに編集が可能です。<br>キャストはカラー選択も対象になります。<br><br>※対象アイテムにはアイテム一覧上で<br>   入店時の残り時間が表示されています。<br>※アイテムパック、キャラ倉庫にある<br>   アイテムのみ表示されます。<br>※サポートパートナーが着用中のアイテムが<br>   再編集中の場合は表示されません。
 Owner,1,Registered,<%Owner_icon>Owner Registered
 Owner,1,Unregistered,Registeration Req.
+Owner,0,Registered,<%Owner_icon>オーナー登録済み
+Owner,0,Unregistered,オーナー登録必要

@@ -1,4 +1,117 @@
 ﻿section,group,id,text
+ScratchMain,1,ScratchMenue_Title,Play Scratch Tickets
+ScratchMain,1,ScratchMenue_Help,Purchase Scratch Tickets using currency or Tickets and get prizes.
+ScratchMain,1,ScratchChoice_Title,Scratch Ticket Selection
+ScratchMain,1,ScratchChoice_Possession,Current Cash
+ScratchMain,1,ScratchChoice__FreebieListButton,Prize List
+ScratchMain,1,ScratchChoice__PossessionTicket,Your Scratch Tickets
+ScratchMain,1,ScratchChoice__PossessionTicketCount,$(0)
+ScratchMain,1,ScratchChoice__StepUp1,Stage 1
+ScratchMain,1,ScratchChoice__StepUp2,Stage 2
+ScratchMain,1,ScratchChoice__StepUp3,Stage 3
+ScratchMain,1,ScratchChoice_IncentiveTicketName,$(0)
+ScratchMain,1,ScratchChoice_IncentiveTicketCount,$(0)
+ScratchMain,1,ScratchChoice__BuyScratchAC,Play $(1) time(s) with<br>AC: $(0) <pict ac_icon_22>
+ScratchMain,1,ScratchChoice__BuyScratchSG,Play $(1) time(s) with<br>SG: $(0) <pict sg_icon_22>
+ScratchMain,1,ScratchChoice__BuyScratchTicket,Play $(1) time(s) with Scratch Tickets<br>Required: $(0)
+ScratchMain,1,ScratchChoice__BuyScratchNoCharge,Play $(0) time(s) free<br>Resets Daily <utc>8:00</utc>
+ScratchMain,1,ScratchChoice__BuyScratchNoCharge_AddPlayLimit,$(0)<br>Remaining Plays: $(1)
+ScratchMain,1,ScratchChoice__BuyScratchNoChargeFTAC,Play $(0) time(s) free
+ScratchMain,1,ScratchChoice__CountBonus,$(0) more plays to get a gift!
+ScratchMain,1,ScratchChoice__CouponButton,Exchange Tickets<br>$(0)
+ScratchMain,1,ScratchChoice__ScratchCategory_AC,AC Scratch Tickets
+ScratchMain,1,ScratchChoice__ScratchCategory_SG,SG Scratch Tickets
+ScratchMain,1,ScratchChoice__ScratchCategory_Ticket,Special Scratch
+ScratchMain,1,ScratchChoice__ScratchCategory_NoCharge,Free Scratch Ticket
+ScratchMain,1,ScratchChoice__ScratchCategory_StepUp,Step Up
+ScratchMain,1,ScratchChoice_ConfirmationAC,<pict Arcscash> AC Payment Required<br>Purchase $(1)<br>for $(0)AC.<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationSG,<pict StarGem> SG Payment Required<br>Purchase $(1)<br>for $(0)SG.<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationTicket,Purchase $(1)<br>for $(0) Scratch Ticket(s).<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationNoCharge,Play $(1) $(0) time(s) for free.<br>Note: You can play every day at <utc>8:00</utc>.<br>Are you sure you wish to proceed?
+ScratchMain,1,ScratchChoice_ConfirmationNoChargeFTAC,Play $(1) $(0) time(s) for free.<br>Are you sure you wish to proceed?
+ScratchMain,1,ScratchChoice_ConfirmationACre,<pict Arcscash> AC Payment Required<br>Continue purchasing $(1)<br>for $(0)AC.<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationSGre,<pict StarGem> SG Payment Required<br>Continue purchasing $(1)<br>for $(0)SG.<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationTicketRe,Continue purchasing $(1)<br>for $(0) Scratch Ticket(s)..<br>Proceed?
+ScratchMain,1,ScratchChoice_ConfirmationNoChargeRe,Continue and play $(1) $(0) time(s) for free.<br>Note: You can play every day at <utc>15:00</utc>.<br>Are you sure you wish to proceed?
+ScratchMain,1,ScratchResult_Title,Scratch Ticket Result
+ScratchMain,1,ScratchResult_Explanation,You won the following prizes!<br>Retrieve them from Scratch Ticket Storage.<br><yellow>Please note that there is a time limit for retrieval.<c>
+ScratchMain,1,ScratchResult_UseTicket_Title,Confirm Ticket Use
+ScratchMain,1,ScratchResult_UseTicket_Mess,Use the selected item?
+ScratchMain,1,ScratchResult_1UseTicket_Mess,$(0) is available for use.<br>Continue and use it?
+ScratchMain,1,ScratchResult_UseTicket_AllUse,Use All
+ScratchMain,1,ScratchResult_AllUseTicket_Title,Confirm Ticket Use
+ScratchMain,1,ScratchResult_AllUseTicket_Mess,Use all available Ticket items?
+ScratchMain,1,ScratchError_StorageMax_Title,Scratch Ticket Storage Full
+ScratchMain,1,ScratchError_StorageMax_Mess,Could not purchase Scratch Tickets because your Scratch<br>Ticket Storage is full.<br><br>Remove some prizes and try again.
+ScratchMain,1,ScratchError_AC_Shortage_Title,Not Enough AC
+ScratchMain,1,ScratchError_AC_Shortage_Mess,You do not have enough AC.<br><br>Purchase more?
+ScratchMain,1,ScratchError_SG_Shortage_Title,Not Enough Star Gems
+ScratchMain,1,ScratchError_SG_Shortage_Mess,You do not have enough Star Gems.<br><br>Purchase more?
+ScratchMain,1,ScratchError_Ticket_Shortage_Title,Not Enough Tickets
+ScratchMain,1,ScratchError_Ticket_Shortage_Mess,You do not have enough of the required Scratch Tickets.
+ScratchMain,1,CardScratchDirectBillingConfirmation_Message,You do not have enough Card Scratch Vouchers to purchase.<br><br>Proceed to the AC Shop?
+ScratchMain,1,CardScratchACShopJumpConfirmation_Message,Card Scratch Vouchers can be purchased at the AC Shop.<br><br>Proceed to the AC Shop?
+ScratchMain,1,CardScratchDirectBillingConfirmation_Title,Confirm Card Scratch Voucher Purchase
+ScratchMain,1,ScratchError_FirstTime_Mess,Play the First Time Free AC Scratch Ticket(s) first.
+ScratchMain,1,ScratchPrizeList_Title,Prize List
+ScratchMain,1,ScratchPrizeList_PrizeItem,Prize Items
+ScratchMain,1,ScratchPrizeList_EmissionRate,Win Rate
+ScratchMain,1,Bonus_Title,Check Play Bonus
+ScratchMain,1,Bonus_Text01,Times You Have Played This Scratch Ticket
+ScratchMain,1,Bonus_Text02,<$Count> Times
+ScratchMain,1,Bonus_Text03,"Once everything has been earned, the counter is reset and you can begin earning again."
+ScratchMain,1,PrizeChange_Check_Title,Confirm Exchange Ticket Use
+ScratchMain,1,PrizeChange_Check_Mess01,Exchange 1 $(2) for $(0).<br>Are you sure?<br>Note: Only the below items will be consumed.<br><br>(Your Exchange Tickets: $(1))
+ScratchMain,1,PrizeChange_Check_Complete,Prize exchanged.
+ScratchMain,1,PrizeChange_Check_Error,Could not exchange. Either your inventory is full or you have exceeded your carry limit.
+ScratchMain,1,PrizeChange_Check_Error02,Unable to purchase the Scratch Ticket you selected. Please check the Player's Site for details.
+ScratchMain,1,EmissionParcent,$(0)%
+ScratchMain,1,ScratchLabelBonus,Bonus
+ScratchMain,1,ScratchLabelStage1,Stage 1
+ScratchMain,1,ScratchLabelStage2,Stage 2 (and up)
+ScratchMain,1,AllUse,Use All
+ScratchMain,1,Title_scratch,Acquired Items List
+ScratchMain,1,Title_useitem,Use Item
+ScratchMain,1,scratch_message,You won the following prizes!
+ScratchMain,1,bonus_message,Acquire all of the prizes at Stage 1 to proceed to Stage 2 and up.<br>At Stage 2 and up you can repeatedly get prizes.
+ScratchMain,1,useitem_message,Use all obtained available Ticket items?<br>You can also select which items to use one by one.<br><yellow>Note: Items sent to storage will not be displayed.<c>
+ScratchMain,1,useitem_message2,Use all obtained available Ticket items?<br>You can also select which items to use one by one.
+ScratchMain,1,Tags01,Featured
+ScratchMain,1,Tags02,HOT!
+ScratchMain,1,Tags03,Bonus!
+ScratchMain,1,Tags04,Display End
+ScratchMain,1,GachaBonusCommentNothing_re,This Scratch Ticket <br>doesn't have Count Bonus prizes.
+ScratchMain,1,GachaBonusCommentAchieved_re,You have earned <br>all count bonus prizes for this Ticket.
+ScratchMain,1,ScratchChoice_LimitedTime,Available until:
+ScratchMain,1,ScratchStep_CurrentStep,Current Stage
+ScratchMain,1,ScratchStep_CurrentStep2,Stage $(0) (Current Stage)
+ScratchMain,1,ScratchStep_Step,Stage $(0)
+ScratchMain,1,ScratchStep_CurrentStepBonus,<c 97e2fc>Current Stage Bonus<c><br>$(0)
+ScratchMain,1,ScratchStep_Bonus01,No Effects
+ScratchMain,1,ScratchStep_Bonus02,Featured Item Rate UP (x$(0))
+ScratchMain,1,ScratchStepBonus_Title,View Stage Bonus
+ScratchMain,1,ScratchStepBonus_Text,The stage goes up in accordance with the number of tickets you scratch.<br>You'll also get a stage bonus depending on your current stage.
+ScratchMain,1,ScratchSearchTitle,Category Settings
+ScratchMain,1,ScratchSearchItem_1,Show All
+ScratchMain,1,ScratchSearchItem_2,Outerwear
+ScratchMain,1,ScratchSearchItem_3,Basewear/Setwear
+ScratchMain,1,ScratchSearchItem_4,Innerwear
+ScratchMain,1,ScratchSearchItem_5,Hairstyles
+ScratchMain,1,ScratchSearchItem_6,Accessories
+ScratchMain,1,ScratchSearchItem_7,Body Paint
+ScratchMain,1,ScratchSearchItem_8,Outfits
+ScratchMain,1,ScratchSearchItem_9,Body Parts
+ScratchMain,1,ScratchSearchItem_10,Arm Parts
+ScratchMain,1,ScratchSearchItem_11,Leg Parts
+ScratchMain,1,ScratchSearchItem_12,Head Parts
+ScratchMain,1,ScratchSearchItem_13,Weapon Camo
+ScratchMain,1,ScratchSearchItem_14,Consumables
+ScratchMain,1,ScratchSearchItem_15,Misc.
+ScratchMain,1,ScratchSearchItem_none,No items found.
+ScratchMain,1,ScratchSearchItem_16,Build Parts
+ScratchMain,1,ScratchSearchItem_17,Portable Hologram
+ScratchMain,1,ScratchError_NotAchieved_Title,Conditions Not Met
+ScratchMain,1,ScratchError_NotAchieved_Mess,"You need to meet the following condition to play this Scratch Ticket.<br>- Complete Main Task ""To Retem City"""
 ScratchMain,0,ScratchMenue_Title,スクラッチを引く
 ScratchMain,0,ScratchMenue_Help,対応した通貨、チケットでスクラッチを購入し景品を入手できます。
 ScratchMain,0,ScratchChoice_Title,スクラッチ選択
@@ -113,149 +226,6 @@ ScratchMain,0,ScratchSearchItem_16,ビルドパーツ
 ScratchMain,0,ScratchSearchItem_17,ポータブルホログラム
 ScratchMain,0,ScratchError_NotAchieved_Title,条件未達成
 ScratchMain,0,ScratchError_NotAchieved_Mess,このスクラッチは以下の条件を満たすことで<br>引けるようになります。<br>　・メインタスク「リテムシティへ」を達成
-ScratchMain,1,ScratchMenue_Title,Play Scratch Tickets
-ScratchMain,1,ScratchMenue_Help,Purchase Scratch Tickets using currency or Tickets and get prizes.
-ScratchMain,1,ScratchChoice_Title,Scratch Ticket Selection
-ScratchMain,1,ScratchChoice_Possession,Current Cash
-ScratchMain,1,ScratchChoice__FreebieListButton,Prize List
-ScratchMain,1,ScratchChoice__PossessionTicket,Your Scratch Tickets
-ScratchMain,1,ScratchChoice__PossessionTicketCount,$(0)
-ScratchMain,1,ScratchChoice__StepUp1,Stage 1
-ScratchMain,1,ScratchChoice__StepUp2,Stage 2
-ScratchMain,1,ScratchChoice__StepUp3,Stage 3
-ScratchMain,1,ScratchChoice_IncentiveTicketName,$(0)
-ScratchMain,1,ScratchChoice_IncentiveTicketCount,$(0)
-ScratchMain,1,ScratchChoice__BuyScratchAC,Play $(1) time(s) with<br>AC: $(0) <pict ac_icon_22>
-ScratchMain,1,ScratchChoice__BuyScratchSG,Play $(1) time(s) with<br>SG: $(0) <pict sg_icon_22>
-ScratchMain,1,ScratchChoice__BuyScratchTicket,Play $(1) time(s) with Scratch Tickets<br>Required: $(0)
-ScratchMain,1,ScratchChoice__BuyScratchNoCharge,Play $(0) time(s) free<br>Resets Daily <utc>8:00</utc>
-ScratchMain,1,ScratchChoice__BuyScratchNoCharge_AddPlayLimit,$(0)<br>Remaining Plays: $(1)
-ScratchMain,1,ScratchChoice__BuyScratchNoChargeFTAC,Play $(0) time(s) free
-ScratchMain,1,ScratchChoice__CountBonus,$(0) more plays to get a gift!
-ScratchMain,1,ScratchChoice__CouponButton,Exchange Tickets<br>$(0)
-ScratchMain,1,ScratchChoice__ScratchCategory_AC,AC Scratch Tickets
-ScratchMain,1,ScratchChoice__ScratchCategory_SG,SG Scratch Tickets
-ScratchMain,1,ScratchChoice__ScratchCategory_Ticket,Special Scratch
-ScratchMain,1,ScratchChoice__ScratchCategory_NoCharge,Free Scratch Ticket
-ScratchMain,1,ScratchChoice__ScratchCategory_StepUp,Step Up
-ScratchMain,1,ScratchChoice_ConfirmationAC,<pict Arcscash> AC Payment Required<br>Purchase $(1)<br>for $(0)AC.<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationSG,<pict StarGem> SG Payment Required<br>Purchase $(1)<br>for $(0)SG.<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationTicket,Purchase $(1)<br>for $(0) Scratch Ticket(s).<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationNoCharge,Play $(1) $(0) time(s) for free.<br>Note: You can play every day at <utc>8:00</utc>.<br>Are you sure you wish to proceed?
-ScratchMain,1,ScratchChoice_ConfirmationNoChargeFTAC,Play $(1) $(0) time(s) for free.<br>Are you sure you wish to proceed?
-ScratchMain,1,ScratchChoice_ConfirmationACre,<pict Arcscash> AC Payment Required<br>Continue purchasing $(1)<br>for $(0)AC.<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationSGre,<pict StarGem> SG Payment Required<br>Continue purchasing $(1)<br>for $(0)SG.<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationTicketRe,Continue purchasing $(1)<br>for $(0) Scratch Ticket(s)..<br>Proceed?
-ScratchMain,1,ScratchChoice_ConfirmationNoChargeRe,Continue and play $(1) $(0) time(s) for free.<br>Note: You can play every day at <utc>15:00</utc>.<br>Are you sure you wish to proceed?
-ScratchMain,1,ScratchResult_Title,Scratch Ticket Result
-ScratchMain,1,ScratchResult_Explanation,You won the following prizes!<br>Retrieve them from Scratch Ticket Storage.<br><yellow>Please note that there is a time limit for retrieval.<c>
-ScratchMain,1,ScratchResult_UseTicket_Title,Confirm Ticket Use
-ScratchMain,1,ScratchResult_UseTicket_Mess,Use the selected item?
-ScratchMain,1,ScratchResult_1UseTicket_Mess,$(0) is available for use.<br>Continue and use it?
-ScratchMain,1,ScratchResult_UseTicket_AllUse,Use All
-ScratchMain,1,ScratchResult_AllUseTicket_Title,Confirm Ticket Use
-ScratchMain,1,ScratchResult_AllUseTicket_Mess,Use all available Ticket items?
-ScratchMain,1,ScratchError_StorageMax_Title,Scratch Ticket Storage Full
-ScratchMain,1,ScratchError_StorageMax_Mess,Could not purchase Scratch Tickets because your Scratch<br>Ticket Storage is full.<br><br>Remove some prizes and try again.
-ScratchMain,1,ScratchError_AC_Shortage_Title,Not Enough AC
-ScratchMain,1,ScratchError_AC_Shortage_Mess,You do not have enough AC.<br><br>Purchase more?
-ScratchMain,1,ScratchError_SG_Shortage_Title,Not Enough Star Gems
-ScratchMain,1,ScratchError_SG_Shortage_Mess,You do not have enough Star Gems.<br><br>Purchase more?
-ScratchMain,1,ScratchError_Ticket_Shortage_Title,Not Enough Tickets
-ScratchMain,1,ScratchError_Ticket_Shortage_Mess,You do not have enough of the required Scratch Tickets.
-ScratchMain,1,CardScratchDirectBillingConfirmation_Message,You do not have enough Card Scratch Vouchers to purchase.<br><br>Proceed to the AC Shop?
-ScratchMain,1,CardScratchACShopJumpConfirmation_Message,Card Scratch Vouchers can be purchased at the AC Shop.<br><br>Proceed to the AC Shop?
-ScratchMain,1,CardScratchDirectBillingConfirmation_Title,Confirm Card Scratch Voucher Purchase
-ScratchMain,1,ScratchError_FirstTime_Mess,Play the First Time Free AC Scratch Ticket(s) first.
-ScratchMain,1,ScratchPrizeList_Title,Prize List
-ScratchMain,1,ScratchPrizeList_PrizeItem,Prize Items
-ScratchMain,1,ScratchPrizeList_EmissionRate,Win Rate
-ScratchMain,1,Bonus_Title,Check Play Bonus
-ScratchMain,1,Bonus_Text01,Times You Have Played This Scratch Ticket
-ScratchMain,1,Bonus_Text02,<$Count> Times
-ScratchMain,1,Bonus_Text03,"Once everything has been earned, the counter is reset and you can begin earning again."
-ScratchMain,1,PrizeChange_Check_Title,Confirm Exchange Ticket Use
-ScratchMain,1,PrizeChange_Check_Mess01,Exchange 1 $(2) for $(0).<br>Are you sure?<br>Note: Only the below items will be consumed.<br><br>(Your Exchange Tickets: $(1))
-ScratchMain,1,PrizeChange_Check_Complete,Prize exchanged.
-ScratchMain,1,PrizeChange_Check_Error,Could not exchange. Either your inventory is full or you have exceeded your carry limit.
-ScratchMain,1,PrizeChange_Check_Error02,Unable to purchase the Scratch Ticket you selected. Please check the Player's Site for details.
-ScratchMain,1,EmissionParcent,$(0)%
-ScratchMain,1,ScratchLabelBonus,Bonus
-ScratchMain,1,ScratchLabelStage1,Stage 1
-ScratchMain,1,ScratchLabelStage2,Stage 2 (and up)
-ScratchMain,1,AllUse,Use All
-ScratchMain,1,Title_scratch,Acquired Items List
-ScratchMain,1,Title_useitem,Use Item
-ScratchMain,1,scratch_message,You won the following prizes!
-ScratchMain,1,bonus_message,Acquire all of the prizes at Stage 1 to proceed to Stage 2 and up.<br>At Stage 2 and up you can repeatedly get prizes.
-ScratchMain,1,useitem_message,Use all obtained available Ticket items?<br>You can also select which items to use one by one.<br><yellow>Note: Items sent to storage will not be displayed.<c>
-ScratchMain,1,useitem_message2,Use all obtained available Ticket items?<br>You can also select which items to use one by one.
-ScratchMain,1,Tags01,Featured
-ScratchMain,1,Tags02,HOT!
-ScratchMain,1,Tags03,Bonus!
-ScratchMain,1,Tags04,Display End
-ScratchMain,1,GachaBonusCommentNothing_re,This Scratch Ticket <br>doesn't have Count Bonus prizes.
-ScratchMain,1,GachaBonusCommentAchieved_re,You have earned <br>all count bonus prizes for this Ticket.
-ScratchMain,1,ScratchChoice_LimitedTime,Available until:
-ScratchMain,1,ScratchStep_CurrentStep,Current Stage
-ScratchMain,1,ScratchStep_CurrentStep2,Stage $(0) (Current Stage)
-ScratchMain,1,ScratchStep_Step,Stage $(0)
-ScratchMain,1,ScratchStep_CurrentStepBonus,<c 97e2fc>Current Stage Bonus<c><br>$(0)
-ScratchMain,1,ScratchStep_Bonus01,No Effects
-ScratchMain,1,ScratchStep_Bonus02,Featured Item Rate UP (x$(0))
-ScratchMain,1,ScratchStepBonus_Title,View Stage Bonus
-ScratchMain,1,ScratchStepBonus_Text,The stage goes up in accordance with the number of tickets you scratch.<br>You'll also get a stage bonus depending on your current stage.
-ScratchMain,1,ScratchSearchTitle,Category Settings
-ScratchMain,1,ScratchSearchItem_1,Show All
-ScratchMain,1,ScratchSearchItem_2,Outerwear
-ScratchMain,1,ScratchSearchItem_3,Basewear/Setwear
-ScratchMain,1,ScratchSearchItem_4,Innerwear
-ScratchMain,1,ScratchSearchItem_5,Hairstyles
-ScratchMain,1,ScratchSearchItem_6,Accessories
-ScratchMain,1,ScratchSearchItem_7,Body Paint
-ScratchMain,1,ScratchSearchItem_8,Outfits
-ScratchMain,1,ScratchSearchItem_9,Body Parts
-ScratchMain,1,ScratchSearchItem_10,Arm Parts
-ScratchMain,1,ScratchSearchItem_11,Leg Parts
-ScratchMain,1,ScratchSearchItem_12,Head Parts
-ScratchMain,1,ScratchSearchItem_13,Weapon Camo
-ScratchMain,1,ScratchSearchItem_14,Consumables
-ScratchMain,1,ScratchSearchItem_15,Misc.
-ScratchMain,1,ScratchSearchItem_none,No items found.
-ScratchMain,1,ScratchSearchItem_16,Build Parts
-ScratchMain,1,ScratchSearchItem_17,Portable Hologram
-ScratchMain,1,ScratchError_NotAchieved_Title,Conditions Not Met
-ScratchMain,1,ScratchError_NotAchieved_Mess,"You need to meet the following condition to play this Scratch Ticket.<br>- Complete Main Task ""To Retem City"""
-ScratchStorage,0,Title,スクラッチ倉庫
-ScratchStorage,0,Header_ItemName,アイテム名
-ScratchStorage,0,Header_SavePeriod,保存期限
-ScratchStorage,0,Sort_Save,保存期限
-ScratchStorage,0,Sort_Reality,レアリティ
-ScratchStorage,0,Sort_Costume,コスチューム/パーツ
-ScratchStorage,0,Sort_Camouflage,武器迷彩
-ScratchStorage,0,Sort_Consumables,消費アイテム
-ScratchStorage,0,Sort_etr,その他
-ScratchStorage,0,ReceiveButton,すべて受け取る
-ScratchStorage,0,SavePeriodNote_Title,保存期限
-ScratchStorage,0,SavePeriodNote_Header1,保存期限が切れたアイテムについて
-ScratchStorage,0,SavePeriodNote_Header1Mess,スクラッチ倉庫は、<yellow>格納された<br>アイテムそれぞれに保存期限があります。<c><br>保存期限を過ぎたアイテムは<br>「リサイクルポイント」に自動変換されます。<br>アイテムは必ず受け取るようにお願いします。
-ScratchStorage,0,SavePeriodNote_Header2,リサイクルポイントの変換
-ScratchStorage,0,SavePeriodNote_Header2Mess,景品に対応したスクラッチ1回分に変換
-ScratchStorage,0,StorageCheck_Title,受け取り倉庫確認
-ScratchStorage,0,StorageCheck_Mess,$(0)個のアイテムの受け取り先を選択してください。<br><yellow>※多すぎる場合、受け取れる分だけ受け取ります。<c>
-ScratchStorage,0,StorageCheck_BuckButton,戻る
-ScratchStorage,0,StorageCheck_GetPrize,アイテムを受け取りました。
-ScratchStorage,0,StorageCheck_MaxError,受け取り先に空きがないため、アイテムを受け取れません。<br>空いている受け取り先を選択するか<br>アイテムを整理してください。
-ScratchStorage,0,StorageCheck_GetPrize2,一部受け取れないアイテムがありました。
-ScratchStorage,0,ChangePoint_Title,スクラッチ
-ScratchStorage,0,ChangePoint_Text01,受け取り期限が過ぎたため<br>以下のアイテムをリサイクルポイントに変換しました。
-ScratchStorage,0,ChangePoint_Text02,景品名
-ScratchStorage,0,ChangePoint_Text03,保存期間
-ScratchStorage,0,ChangePoint_Text04,ポイント
-ScratchStorage,0,ChangePoint_Text05,$(0)まで
-ScratchStorage,0,ChangePoint_CloseButton,閉じる
-ScratchStorage,0,ChangePoint_mess01,スクラッチ倉庫に未受け取りアイテムがあります。
-ScratchStorage,0,ChangePoint_mess02,スクラッチ倉庫に<pure_red>受取期限が近い未受け取りアイテム<c>があります。
 ScratchStorage,1,Title,Scratch Ticket Storage
 ScratchStorage,1,Header_ItemName,Item Name
 ScratchStorage,1,Header_SavePeriod,Storage Expiration
@@ -286,3 +256,33 @@ ScratchStorage,1,ChangePoint_Text05,Until $(0)
 ScratchStorage,1,ChangePoint_CloseButton,Close
 ScratchStorage,1,ChangePoint_mess01,You have unretrieved items in Scratch Ticket Storage.
 ScratchStorage,1,ChangePoint_mess02,<pure_red>You have unretrieved items near expiration<c> in Scratch Ticket Storage.
+ScratchStorage,0,Title,スクラッチ倉庫
+ScratchStorage,0,Header_ItemName,アイテム名
+ScratchStorage,0,Header_SavePeriod,保存期限
+ScratchStorage,0,Sort_Save,保存期限
+ScratchStorage,0,Sort_Reality,レアリティ
+ScratchStorage,0,Sort_Costume,コスチューム/パーツ
+ScratchStorage,0,Sort_Camouflage,武器迷彩
+ScratchStorage,0,Sort_Consumables,消費アイテム
+ScratchStorage,0,Sort_etr,その他
+ScratchStorage,0,ReceiveButton,すべて受け取る
+ScratchStorage,0,SavePeriodNote_Title,保存期限
+ScratchStorage,0,SavePeriodNote_Header1,保存期限が切れたアイテムについて
+ScratchStorage,0,SavePeriodNote_Header1Mess,スクラッチ倉庫は、<yellow>格納された<br>アイテムそれぞれに保存期限があります。<c><br>保存期限を過ぎたアイテムは<br>「リサイクルポイント」に自動変換されます。<br>アイテムは必ず受け取るようにお願いします。
+ScratchStorage,0,SavePeriodNote_Header2,リサイクルポイントの変換
+ScratchStorage,0,SavePeriodNote_Header2Mess,景品に対応したスクラッチ1回分に変換
+ScratchStorage,0,StorageCheck_Title,受け取り倉庫確認
+ScratchStorage,0,StorageCheck_Mess,$(0)個のアイテムの受け取り先を選択してください。<br><yellow>※多すぎる場合、受け取れる分だけ受け取ります。<c>
+ScratchStorage,0,StorageCheck_BuckButton,戻る
+ScratchStorage,0,StorageCheck_GetPrize,アイテムを受け取りました。
+ScratchStorage,0,StorageCheck_MaxError,受け取り先に空きがないため、アイテムを受け取れません。<br>空いている受け取り先を選択するか<br>アイテムを整理してください。
+ScratchStorage,0,StorageCheck_GetPrize2,一部受け取れないアイテムがありました。
+ScratchStorage,0,ChangePoint_Title,スクラッチ
+ScratchStorage,0,ChangePoint_Text01,受け取り期限が過ぎたため<br>以下のアイテムをリサイクルポイントに変換しました。
+ScratchStorage,0,ChangePoint_Text02,景品名
+ScratchStorage,0,ChangePoint_Text03,保存期間
+ScratchStorage,0,ChangePoint_Text04,ポイント
+ScratchStorage,0,ChangePoint_Text05,$(0)まで
+ScratchStorage,0,ChangePoint_CloseButton,閉じる
+ScratchStorage,0,ChangePoint_mess01,スクラッチ倉庫に未受け取りアイテムがあります。
+ScratchStorage,0,ChangePoint_mess02,スクラッチ倉庫に<pure_red>受取期限が近い未受け取りアイテム<c>があります。

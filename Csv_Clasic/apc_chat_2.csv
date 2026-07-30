@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 5288,0,EnemyWeak,こ、このぐらいの敵なら<br>わたしでもなんとか……
 5288,0,EnemyLarge,お、大きい……<br>これが本物の迫力
 5288,0,EnemyBoss,わ、わわっ、すごいのが<br>出てきましたよ！
@@ -94,8 +94,8 @@ section,group,id,text
 5288,1,InvokeSkill1,¡Toma esto!
 5288,1,InvokeSkill2,¡Incluso yo debería ser capaz de encargarme de esto!
 5288,1,InvokeSkill3,¡Ahora sí que te vas a enterar!
-5288,1,TechFire,¡Por favor, quema!
-5288,1,TechIce,¡Por favor, congélate!
+5288,1,TechFire,¡Por favor
+5288,1,TechIce,¡Por favor
 5288,1,TechThunder,¡Zas!
 5288,1,TechWind,¡Vuela lejos!
 5288,1,TechLight,¡Aprecio tu cooperación!
@@ -116,7 +116,7 @@ section,group,id,text
 5288,1,QuestEnd1,¡Lo hicimos! ¡Sí!
 5288,1,QuestEnd2,¡No podría haberlo hecho sin ti!
 5288,1,IncidentStart,¿Q-Qué está pasando aquí?
-5288,1,IncidentSuccess,Me alegro tanto de que estuvieras aquí.<br>Si hubiera estado solo, quién sabe<br>qué podría haber pasado...
+5288,1,IncidentSuccess,Me alegro tanto de que estuvieras aquí.<br>Si hubiera estado solo
 5288,1,IncidentFailure,L-Lo siento...<br>Supongo que no estaba a la altura de la tarea...
 5288,1,PSE,"Hmmm, ¿podría ser esto<br>lo que llaman un ""PSE?"""
 5288,1,PSELevelUp,¡Eso fue excelente!<br>¡Exactamente como lo que leí en la sesión informativa!
@@ -133,7 +133,7 @@ section,group,id,text
 5288,1,MemberDamaged,¡A-Activa la recuperación!
 5288,1,MemberDead,N-No...<br>¡Esto no puede ser...!
 5288,1,AbilityExe,/toge ¡Me siento tan ligero! ¡Siento que hasta yo<br>puedo hacer cualquier cosa!
-5288,1,AbilitySpecial,/toge ¡Por favor, déjame esto a mí!
+5288,1,AbilitySpecial,/toge ¡Por favor
 5288,1,Resurrect,¡Intentaré hacerlo un poco mejor!
 5288,1,PartyJoin,"/ci1 1 ¡Ay, voy a tener que esforzarme más!"
 5288,1,Marvelous,¡Haré lo mejor que pueda!
@@ -233,7 +233,7 @@ section,group,id,text
 5289,1,PBFull,Armado y cargado. ¡Hagamos esto!
 5289,1,PBRelease,¡Poder... abrumador...!
 5289,1,TacticsFree,"Genial, ¡haré las cosas a mi manera!"
-5289,1,TacticsGuard,"¡Entonces mantendré la posición!"
+5289,1,TacticsGuard,¡Entonces mantendré la posición!
 5289,1,TacticsMassedAttack,"Entendido, ¡enfocándonos en un solo objetivo!"
 5289,1,TacticsAttack,¡Los distraeré!
 5289,1,Avoid,¡Ja!
@@ -245,10 +245,10 @@ section,group,id,text
 5289,1,QuestStart2,¡Daré todo lo que tengo!
 5289,1,QuestEnd1,"¡Eso concluye las cosas, profe!"
 5289,1,QuestEnd2,"¡Muy bien, profe!<br>Todo lo que puedo decir es: “¡Magistral!”"
-5289,1,IncidentStart,"Ohhhhhh......!?<br>¡Parece que algo está pasando!"
+5289,1,IncidentStart,Ohhhhhh......!?<br>¡Parece que algo está pasando!
 5289,1,IncidentSuccess,"¡Lo hicimos, profe!<br>¡Éxito!"
 5289,1,IncidentFailure,Lo siento... Parece que no sirvo para nada después de todo...
-5289,1,PSE,"¡Whoa!<br>¿Podría ser esto... PSE!?"
+5289,1,PSE,¡Whoa!<br>¿Podría ser esto... PSE!?
 5289,1,PSELevelUp,"¡Oye, profe!<br>¡Sigamos con esto!"
 5289,1,PSEBurst,"Wow, la etapa final... nunca pensé<br>que la vería con mis propios ojos!"
 5289,1,HP30,¡No me descarten todavía!
@@ -257,9 +257,9 @@ section,group,id,text
 5289,1,DamageSmall,¡Nada mal!
 5289,1,DamageMiddle,¡Ngh!
 5289,1,DamageLarge,¡Gwaah!!
-5289,1,Trap,"¡Qué bien lo hice!<br>¡Caminé directo a una trampa!"
+5289,1,Trap,¡Qué bien lo hice!<br>¡Caminé directo a una trampa!
 5289,1,ThankTrapRescue,¡Gracias por la ayuda!
-5289,1,TrapRescueOther,¡¿Estás bien!?"
+5289,1,TrapRescueOther,"¡¿Estás bien!?"""
 5289,1,MemberDamaged,¡Intenta no esforzarte demasiado!
 5289,1,MemberDead,... ¡Esto significa la guerra!
 5289,1,AbilityExe,/toge ¡Me siento bien!
@@ -274,72 +274,72 @@ section,group,id,text
 5292,0,EnemyWeak,まとめて吹き飛ばしてやる！
 5292,0,EnemyLarge,大きさなんて関係ない！<br>まとめて吹っ飛ばーす！
 5292,0,EnemyBoss,強敵だな！<br>私に任せておけ！
-5292,0,EnemyRare,ん,あいつ……珍しいヤツだ！
+5292,0,EnemyRare,ん、あいつ……珍しいヤツだ！
 5292,0,EnemyBoost,この気配……危ないヤツだ。<br>無理せず連携していくぞ！
 5292,0,DestroyEnemy1,決まりだ！
 5292,0,DestroyEnemy2,美しいだろう！
 5292,0,DestroyEnemy3,みとれてもいいぞ！
-5292,0,CondFreeze,冷たい,冷たいぞ！<br>おのれっ！
-5292,0,CondBurn,熱い！ 熱いな！ くそっ！
-5292,0,CondShock,痺れるぞ！ なんだこれは！
-5292,0,CondPoison,毒か……ううっ,気持ち悪い
+5292,0,CondFreeze,冷たい、冷たいぞ！<br>おのれっ！
+5292,0,CondBurn,熱い！　熱いな！　くそっ！
+5292,0,CondShock,痺れるぞ！　なんだこれは！
+5292,0,CondPoison,毒か……ううっ、気持ち悪い
 5292,0,CondPanic,混乱してても<br>全部吹き飛ばせば問題ない！
-5292,0,CondStan,う,動けないぞ……なんだこれは！
+5292,0,CondStan,う、動けないぞ……なんだこれは！
 5292,0,CondMirage,視界がおかしいぞ！<br>なんだこれは！
-5292,0,Die,まだみんな,戦ってるのに……私は……
-5292,0,ThankHeal,ありがと,助かったぞ！
-5292,0,ThankBuff,ありがと,感謝するぞ！
-5292,0,ThankCure,おおっ,気分爽快だぞ！
-5292,0,DefeatEnemy,ふふん,これで終わりだな！
-5292,0,LevelUp,ふん,私はもっと強い！
+5292,0,Die,まだみんな、戦ってるのに……私は……
+5292,0,ThankHeal,ありがと、助かったぞ！
+5292,0,ThankBuff,ありがと、感謝するぞ！
+5292,0,ThankCure,おおっ、気分爽快だぞ！
+5292,0,DefeatEnemy,ふふん、これで終わりだな！
+5292,0,LevelUp,ふん、私はもっと強い！
 5292,0,TechFire,全部まとめて燃やし尽くす！
-5292,0,PBFull,そのぐらいにしておけよ,貴様！
-5292,0,PBRelease,私は負けない！<br>私が持つ,この名にかけて！
+5292,0,PBFull,そのぐらいにしておけよ、貴様！
+5292,0,PBRelease,私は負けない！<br>私が持つ、この名にかけて！
 5292,0,TacticsFree,それでは私は自由にやるぞ！
-5292,0,TacticsGuard,えー,守るのはつまらない……
-5292,0,TacticsMassedAttack,集中的に,執拗に,燃やしてやる！
+5292,0,TacticsGuard,えー、守るのはつまらない……
+5292,0,TacticsMassedAttack,集中的に、執拗に、燃やしてやる！
 5292,0,Avoid,みえみえだ！
 5292,0,HealSelf,いっきに回復だっ！
 5292,0,BuffSelf,補助だって出来る！
-5292,0,HealOther,貴様,回復を忘れてどうする！
-5292,0,BuffOther,貴様,補助を忘れるな！
-5292,0,QuestStart1,よし行くぞ,ついてこい！
+5292,0,HealOther,貴様、回復を忘れてどうする！
+5292,0,BuffOther,貴様、補助を忘れるな！
+5292,0,QuestStart1,よし行くぞ、ついてこい！
 5292,0,QuestStart2,貴様がどうしてもというからだぞ！
-5292,0,QuestEnd1,ふふん,このぐらい普通だ
-5292,0,QuestEnd2,まあ,動きやすかったのは<br>認めよう！
+5292,0,QuestEnd1,ふふん、このぐらい普通だ
+5292,0,QuestEnd2,まあ、動きやすかったのは<br>認めよう！
 5292,0,IncidentStart,……んん？<br>何か起こるのか？
 5292,0,IncidentSuccess,大成功だろう！
 5292,0,IncidentFailure,えー……
-5292,0,PSE,おおっ,なんだこれは！<br>フォトンが騒がしいぞ！
-5292,0,PSELevelUp,なんかわくわくしてきた！<br>ほら,もっと続けるぞ！
-5292,0,PSEBurst,おおっ,すごいなこれは！<br>噂以上の状態だ！
+5292,0,PSE,おおっ、なんだこれは！<br>フォトンが騒がしいぞ！
+5292,0,PSELevelUp,なんかわくわくしてきた！<br>ほら、もっと続けるぞ！
+5292,0,PSEBurst,おおっ、すごいなこれは！<br>噂以上の状態だ！
 5292,0,HP30,あとで倍返しだ！
-5292,0,HP10,……私が,こんな！
+5292,0,HP10,……私が、こんな！
 5292,0,ItemRare,好きなだけもっていくといい！
 5292,0,DamageSmall,いたっ！
 5292,0,DamageMiddle,ううっ
 5292,0,DamageLarge,ぐうう……っ！
-5292,0,Trap,罠？ ずるいぞ,なんだそれ！
-5292,0,ThankTrapRescue,すまない,助かった！
+5292,0,Trap,罠？　ずるいぞ、なんだそれ！
+5292,0,ThankTrapRescue,すまない、助かった！
 5292,0,TrapRescueOther,罠には気をつけろよ！
 5292,0,MemberDamaged,私に任せて下がるといい！
-5292,0,MemberDead,……許さないぞ,ぜったいに！
-5292,0,AbilityExe,/toge ふふん,絶好調だ！
-5292,0,AbilitySpecial,/toge よし,私がやるぞ！
-5292,0,Resurrect,……私にも,守りたいものができたんだ！
+5292,0,MemberDead,……許さないぞ、ぜったいに！
+5292,0,AbilityExe,/toge ふふん、絶好調だ！
+5292,0,AbilitySpecial,/toge よし、私がやるぞ！
+5292,0,Resurrect,……私にも、守りたいものができたんだ！
 5292,0,PartyJoin,/ci1 1 貴様がどうしてもというからだぞ！
-5292,0,Marvelous,ふん,動けるじゃないか
-5292,0,IncidentJsApcBegin,/toge /ci2 2 おい,貴様！ 大丈夫か！<br>私も手伝うぞ！ 任せておけ！
-5292,0,IncidentJsApcFailure,/mn10  ぐっ……情けない……<br>すまない,私は退かせてもらう。
-5292,0,IncidentJsApcSuccess,/mn15 /ci2 1 ふっふっふ,決まったな！<br>困ったときはいつでも呼ぶといい！<br>それじゃあな！
-5292,0,IncidentJsApcBeginEvo,/mn15 /ci2 1 むっ,まだ来るのか！<br>あれも爆破してしまっていいのだろう？
-5292,0,IncidentJsMultiApcBegin,/toge /ci2 1 六芒均衡クラリスクレイス <br>かれいに参上だっ！<br>さあ,敵味方問わずに敬うといい！
-5292,0,IncidentJsMultiApcSuccess,/mn19 /ci2 4 うん！ 私には全然ちっとも<br>これっぽっちもわからないけど<br>ついていくぞ！ それじゃあな貴様！
+5292,0,Marvelous,ふん、動けるじゃないか
+5292,0,IncidentJsApcBegin,/toge /ci2 2 おい、貴様！　大丈夫か！<br>私も手伝うぞ！　任せておけ！
+5292,0,IncidentJsApcFailure,/mn10  ぐっ……情けない……<br>すまない、私は退かせてもらう。
+5292,0,IncidentJsApcSuccess,/mn15 /ci2 1 ふっふっふ、決まったな！<br>困ったときはいつでも呼ぶといい！<br>それじゃあな！
+5292,0,IncidentJsApcBeginEvo,/mn15 /ci2 1 むっ、まだ来るのか！<br>あれも爆破してしまっていいのだろう？
+5292,0,IncidentJsMultiApcBegin,/toge /ci2 1 六芒均衡クラリスクレイス <br>かれいに参上だっ！<br>さあ、敵味方問わずに敬うといい！
+5292,0,IncidentJsMultiApcSuccess,/mn19 /ci2 4 うん！　私には全然ちっとも<br>これっぽっちもわからないけど<br>ついていくぞ！　それじゃあな貴様！
 5292,1,EnemyWeak,¡Los voy a hacer volar a todos!
 5292,1,EnemyLarge,¡No me importa lo grandes que sean!<br>¡Los voy a hacer volar a todos!
 5292,1,EnemyBoss,¡Ese es un enemigo fuerte!<br>¡Déjame acabar con él!
 5292,1,EnemyRare,¿Hm? Ese de ahí... ¡es una especie rara!
-5292,1,EnemyBoost,"Puedo sentirlo... Este es peligroso.<br>¡Trabajemos juntos y no hagan nada estúpido!"
+5292,1,EnemyBoost,Puedo sentirlo... Este es peligroso.<br>¡Trabajemos juntos y no hagan nada estúpido!
 5292,1,DestroyEnemy1,¡Así es como se hace!
 5292,1,DestroyEnemy2,"¡Hermoso, ¿eh?!"
 5292,1,DestroyEnemy3,¡Está bien que me admires!
@@ -365,7 +365,7 @@ section,group,id,text
 5292,1,Avoid,¡Lo vi venir!
 5292,1,HealSelf,¡Hora de curarse!
 5292,1,BuffSelf,¡Puedo cuidar de mí misma!
-5292,1,HealOther,"¿Es que acaso no sabes<br>cómo curarte a ti mismo?"
+5292,1,HealOther,¿Es que acaso no sabes<br>cómo curarte a ti mismo?
 5292,1,BuffOther,¡Me debes una por esto!
 5292,1,QuestStart1,"¡Sí, allá vamos! ¡Yo lideraré el camino!"
 5292,1,QuestStart2,¡Solo porque insistes absolutamente!
@@ -389,16 +389,16 @@ section,group,id,text
 5292,1,MemberDamaged,¡Retrocede y déjame encargarme de esto!
 5292,1,MemberDead,"¡Haré que paguen por esto, sin importar qué!"
 5292,1,AbilityExe,/toge Hmph... ¡Ahora estoy en la zona!
-5292,1,AbilitySpecial,/toge ¡Vale, ahora es mi turno!
+5292,1,AbilitySpecial,/toge ¡Vale
 5292,1,Resurrect,.... ¡Ahora también tengo a gente que proteger!
 5292,1,PartyJoin,/ci1 1 ¡Solo porque insistes absolutamente!
-5292,1,Marvelous,"Hmph. Bastante hábil."
-5292,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye, cabeza hueca! ¿Estás bien?!<br>¡Voy a ayudar también! ¡Déjamelo a mí!"
-5292,1,IncidentJsApcFailure,/mn10 Guh....patético....<br>Lo siento.<br>Me voy ahora."
-5292,1,IncidentJsApcSuccess,/mn15 /ci2 1 Je je je, ¡todo listo!<br>¡Llámame cuando estés en problemas!<br>Bueno, ¡nos vemos más tarde!"
-5292,1,IncidentJsApcBeginEvo,/mn15 /ci2 1 ¿Eh? ¡Siguen viniendo!<br>¿Podemos volarlos también?"
-5292,1,IncidentJsMultiApcBegin,/toge /ci2 1 ¡Klariskrays del Consejo de los Seis<br>a tu servicio! Ahora, ¿no podemos todos simplemente<br>llevarnos bien?"
-5292,1,IncidentJsMultiApcSuccess,/mn19 /ci2 4 ¡Sí! No tengo idea<br>de quién es quién o qué es qué, pero<br>¡estoy contigo hasta el final! ¡Nos vemos luego, cabeza hueca!"
+5292,1,Marvelous,Hmph. Bastante hábil.
+5292,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye
+5292,1,IncidentJsApcFailure,"/mn10 Guh....patético....<br>Lo siento.<br>Me voy ahora."""
+5292,1,IncidentJsApcSuccess,/mn15 /ci2 1 Je je je
+5292,1,IncidentJsApcBeginEvo,"/mn15 /ci2 1 ¿Eh? ¡Siguen viniendo!<br>¿Podemos volarlos también?"""
+5292,1,IncidentJsMultiApcBegin,/toge /ci2 1 ¡Klariskrays del Consejo de los Seis<br>a tu servicio! Ahora
+5292,1,IncidentJsMultiApcSuccess,/mn19 /ci2 4 ¡Sí! No tengo idea<br>de quién es quién o qué es qué
 5293,0,EnemyWeak,弱い者いじめは嫌いなんだけど
 5293,0,EnemyLarge,大きいだけなら怖くない
 5293,0,EnemyBoss,歯応えがありそうね
@@ -506,7 +506,7 @@ section,group,id,text
 5293,1,IncidentStart,¿Viene algo?
 5293,1,IncidentSuccess,"Uff, parece que tuvimos éxito."
 5293,1,IncidentFailure,Esto no tiene nada que ver conmigo.
-5293,1,PSE,¿Es esto esa cosa del "PSE"?
+5293,1,PSE,"¿Es esto esa cosa del ""PSE""?"
 5293,1,PSELevelUp,"Se está volviendo más y más fuerte, ¿eh?"
 5293,1,PSEBurst,Hmmm... así que esto es un burst.<br>Supongo que los fotones deben estar en un estado excitado.
 5293,1,HP30,Hora de ponerse serio.
@@ -644,7 +644,7 @@ section,group,id,text
 5298,1,BuffOther,Déjame encargarme del apoyo.
 5298,1,QuestStart1,"Bueno, entonces, ¿vamos?"
 5298,1,QuestEnd1,"Bien, parece que ese es el final."
-5298,1,QuestEnd2,"¿Eso es más o menos lo que esperabas?"
+5298,1,QuestEnd2,¿Eso es más o menos lo que esperabas?
 5298,1,IncidentStart,¡Oh-hoh! Parece que<br>algo está a punto de suceder.
 5298,1,IncidentSuccess,¡Woo-hoo! ¡Eso salió genial!
 5298,1,IncidentFailure,Necesitamos identificar la razón por la que fallamos....
@@ -658,7 +658,7 @@ section,group,id,text
 5298,1,DamageMiddle,¡Ugh!
 5298,1,DamageLarge,¡Ay!
 5298,1,Trap,¿Una trampa!? ¡¿Aquí!?
-5298,1,ThankTrapRescue,"¡Gracias! ¡Eres un salvavidas!"
+5298,1,ThankTrapRescue,¡Gracias! ¡Eres un salvavidas!
 5298,1,TrapRescueOther,¿Estás bien?
 5298,1,MemberDamaged,¡Intenta no hacerte matar!
 5298,1,MemberDead,..... ¡No te perdonaré por eso!
@@ -715,10 +715,10 @@ section,group,id,text
 5299,0,IncidentFailure,想定が甘かったか……
 5299,0,PSE,フォトンの励起か？
 5299,0,PSELevelUp,まだ続くようだな
-5299,0,PSEBurst,なるほど,これが最終段階か
+5299,0,PSEBurst,なるほど、これが最終段階か
 5299,0,HP30,やってくれる……！
 5299,0,HP10,まずいな……
-5299,0,ItemRare,珍しい物品だな,取っておくといい
+5299,0,ItemRare,珍しい物品だな、取っておくといい
 5299,0,DamageSmall,ぐっ！
 5299,0,DamageMiddle,やってくれる！
 5299,0,DamageLarge,ぐあっ！
@@ -732,9 +732,9 @@ section,group,id,text
 5299,0,PartyJoin,/ci1 4 よろしく頼む
 5299,0,Marvelous,流石というべきか
 5299,0,IncidentJsApcBegin,/ci1 4 こうして出会ったのも何かの縁<br>助太刀させてもらおうか
-5299,0,IncidentJsApcFailure,ぐ……不覚をとった……<br>すまない,退かせてもらう
-5299,0,IncidentJsApcSuccess,/ci1 4 縁あれば,また会うこともあるだろう。<br>さらばだ。
-5299,0,IncidentJsApcBeginEvo,/ci3 4 まだ来るぞ 気を抜くな
+5299,0,IncidentJsApcFailure,ぐ……不覚をとった……<br>すまない、退かせてもらう
+5299,0,IncidentJsApcSuccess,/ci1 4 縁あれば、また会うこともあるだろう。<br>さらばだ。
+5299,0,IncidentJsApcBeginEvo,/ci3 4 まだ来るぞ　気を抜くな
 5299,1,EnemyWeak,Je. Novatos.
 5299,1,EnemyLarge,¿El tamaño es todo lo que tienes?
 5299,1,EnemyBoss,Este parece formidable.
@@ -906,7 +906,7 @@ section,group,id,text
 5306,1,Trap,¡Gwahhh!<br>¡He caído en una trampa!
 5306,1,ThankTrapRescue,¡Me salvaste!<br>¡Muchas gracias!
 5306,1,TrapRescueOther,¿E-Estás bien?
-5306,1,MemberDamaged,¡Por favor, déjamelo a mí!
+5306,1,MemberDamaged,¡Por favor
 5306,1,MemberDead,¡Pagarás por eso totalmente...!
 5306,1,AbilityExe,¡El poder se desborda!
 5306,1,AbilitySpecial,"De alguna manera, siento que ahora,<br>¡nada puede detenerme!"
@@ -1021,8 +1021,7 @@ section,group,id,text
 5314,1,BuffOther,Vamos con cuidado.
 5314,1,QuestStart1,"Bueno, entonces, ¿empezamos?"
 5314,1,QuestEnd1,"Eso es todo, ¿cierto?"
-5314,1,QuestEnd2,¿Es eso lo que esperabas?
-5314,1,IncidentStart,"Hay algún tipo de... peculiar presencia... cuidado."
+5314,1,IncidentStart,Hay algún tipo de... peculiar presencia... cuidado.
 5314,1,IncidentSuccess,Gracias al cielo que logramos salir de esta.
 5314,1,IncidentFailure,¿Mis suposiciones fueron demasiado optimistas....?
 5314,1,PSE,¿Se están excitando los fotones?
@@ -1040,10 +1039,11 @@ section,group,id,text
 5314,1,MemberDamaged,¡Retrocede!
 5314,1,MemberDead,...¡No te saldrás con la tuya!
 5314,1,AbilityExe,"Por fin, calentando."
+5314,1,AbilitySpecial,This'll show them!
 5314,1,Resurrect,¡No hay tiempo para una siesta!
 5314,1,PartyJoin,/ci2 1 Hagámoslo. Cuento contigo.
 5314,1,Marvelous,¿Quizás debería decir que es de esperarse?
-5314,1,IncidentJsApcBegin,/ci1 1 Ah, ¡lo siento!<br>Hay demasiados para mí...<br>¿Puedes ayudarme?
+5314,1,IncidentJsApcBegin,/ci1 1 Ah
 5314,1,IncidentJsApcFailure,...Lo siento.<br>Me voy a retirar.
 5314,1,IncidentJsApcSuccess,"/ci2 1 Muchas gracias.<br>Gracias a ti, logramos salir de esta."
 5314,1,IncidentJsApcBeginEvo,/ci1 2 Logramos salir de esta...<br>¿Eh? Siento... ¡que siguen viniendo!
@@ -1142,7 +1142,7 @@ section,group,id,text
 5315,1,TechWind,¡Viento!
 5315,1,TechLight,¡Luz!
 5315,1,TechDark,¡Oscuridad!
-5315,1,PBFull,¡Ya no me guardaré nada!
+5315,1,PBFull,¡No dejaré pasar esta oportunidad!
 5315,1,PBRelease,Aquí viene... ¡Explosión de Fotones!
 5315,1,Avoid,¡Ja!
 5315,1,HealSelf,No soy tan fácil de derrotar.
@@ -1156,7 +1156,7 @@ section,group,id,text
 5315,1,IncidentFailure,"Mis disculpas, estaba fuera de mi alcance..."
 5315,1,PSE,"Los fotones se están excitando...<br>¡Esto debe ser esa cosa del ""PSE""!"
 5315,1,PSELevelUp,¡Sigue así!
-5315,1,PSEBurst,"¡Así que esto es un PSE Burst!"
+5315,1,PSEBurst,¡Así que esto es un PSE Burst!
 5315,1,HP30,Si esto sigue así...
 5315,1,HP10,No puedo caer aquí...
 5315,1,ItemRare,Ese es un gran hallazgo.
@@ -1257,7 +1257,7 @@ section,group,id,text
 5316,1,CondPanic,"Oh, hombre. Estoy todo confundido..."
 5316,1,CondStan,Hnng... no puedo moverme... mi cuerpo....
 5316,1,CondMirage,¿Estoy... viendo cosas!?
-5316,1,Die,Maldición...<br>Pensé que podría superarlo a la fuerza... ja, ja...
+5316,1,Die,Maldición...<br>Pensé que podría superarlo a la fuerza... ja
 5316,1,ThankHeal,¡Gracias por la curación!
 5316,1,ThankBuff,¡Gracias!
 5316,1,ThankCure,"Uff, ¡me salvaste el trasero!"
@@ -1272,7 +1272,7 @@ section,group,id,text
 5316,1,TechWind,¿¡Qué tal un poco de esto!?
 5316,1,TechLight,¡Ni lo sueñes!
 5316,1,TechDark,¡Buen intento!
-5315,1,PBFull,¡No dejaré pasar esta oportunidad!
+5316,1,PBFull,I won't miss this chance!
 5316,1,PBRelease,¡¡Whhoaaaaa!!
 5316,1,Avoid,¡Ja!
 5316,1,HealSelf,¡Eso estuvo demasiado cerca!
@@ -1416,7 +1416,7 @@ section,group,id,text
 5318,1,IncidentFailure,Aww... ¿fallamos?
 5318,1,PSE,¡W-Wow! ¡Los fotones son increíbles!
 5318,1,PSELevelUp,¡Sigamos así!
-5318,1,PSEBurst,"Whoa...<br>¿Así que esto es un PSE Burst?"
+5318,1,PSEBurst,Whoa...<br>¿Así que esto es un PSE Burst?
 5318,1,HP30,Th-... esto es malo...
 5318,1,HP10,¡No puedo más!
 5318,1,ItemRare,"Oh, ese es raro, ¿eh?"
@@ -1445,57 +1445,57 @@ section,group,id,text
 5319,0,DestroyEnemy1,一丁あがり！
 5319,0,DestroyEnemy2,これで終わりっ！
 5319,0,DestroyEnemy3,邪魔するからよ！
-5319,0,CondFreeze,冷たっ……！ と、凍結！？
-5319,0,CondBurn,熱っ！ ちょっと、何すんのよ！
-5319,0,CondShock,か、身体がしびれて動けない！？
-5319,0,CondPoison,うう……気持ち悪い……<br>これ,毒……？
-5319,0,CondPanic,な、何がどうなってるの？
+5319,0,CondFreeze,冷たっ……！　と、凍結！？
+5319,0,CondBurn,熱っ！　ちょっと、何すんのよ！
+5319,0,CondShock,か、身体が痺れて動けない！？
+5319,0,CondPoison,うう……気持ち悪い……<br>これ、毒……？
+5319,0,CondPanic,な、なにがなんだかわからない－！
 5319,0,CondStan,か、身体が動かない……っ！
 5319,0,CondMirage,目がかすんで……なんか、ヘン……
-5319,0,Die,う,うそでしょ……こんなところで……？
+5319,0,Die,う、うそでしょ……こんなところで……？
 5319,0,ThankHeal,あ……ありがと……
-5319,0,ThankBuff,……助かった,かも
+5319,0,ThankBuff,……助かった、かも
 5319,0,ThankCure,その……お礼はいっとく
-5319,0,DefeatEnemy,さっさと次,行くわよ！
-5319,0,LevelUp,べ,別に羨ましくなんて……！
+5319,0,DefeatEnemy,さっさと次、行くわよ！
+5319,0,LevelUp,べ、別に羨ましくなんて……！
 5319,0,InvokeSkill1,逃がさないわよ！
-5319,0,InvokeSkill2,あーもう,ムカつくーッ！
+5319,0,InvokeSkill2,あーもう、ムカつくーッ！
 5319,0,InvokeSkill3,調子に乗るなーッ！
 5319,0,PBFull,いい加減にしなさいっ！
 5319,0,PBRelease,全部まとめて相手してあげるわよ！
 5319,0,Avoid,はっ！
 5319,0,HealSelf,危なかったぁ……
-5319,0,BuffSelf,準備はしっかり,っと
+5319,0,BuffSelf,準備はしっかり、っと
 5319,0,HealOther,気をつけなさいよ！
 5319,0,BuffOther,油断しちゃダメよ！
 5319,0,QuestStart1,さっさと終わらせましょう
 5319,0,QuestEnd1,結構ソツなく出来てんじゃん
 5319,0,IncidentStart,何か来そう……気をつけて！
-5319,0,IncidentSuccess,ま,まあまあね！<br>このぐらい当たり前よね！
-5319,0,IncidentFailure,はぁ……全然駄目だな,あたし……
+5319,0,IncidentSuccess,ま、まあまあね！<br>このぐらい当たり前よね！
+5319,0,IncidentFailure,はぁ……全然駄目だな、あたし……
 5319,0,PSE,なにこれ……？<br>フォトンが反応してるの？
 5319,0,PSELevelUp,もっと続けていきましょう！
 5319,0,PSEBurst,すごい……綺麗……！
-5319,0,HP30,こ,このぐらいでッ！
-5319,0,HP10,ど,どうなってるのよッ！
-5319,0,ItemRare,あ,それ……レアなやつ……<br>だ,大事にしたら！？
+5319,0,HP30,こ、このぐらいでッ！
+5319,0,HP10,ど、どうなってるのよッ！
+5319,0,ItemRare,あ、それ……レアなやつ……<br>だ、大事にしたら！？
 5319,0,DamageSmall,あうっ！
 5319,0,DamageMiddle,きゃああっ！
 5319,0,DamageLarge,このままじゃ……！
-5319,0,Trap,ちょっ,なんで罠ッ！
-5319,0,ThankTrapRescue,……手間かけて,ごめんなさい
-5319,0,TrapRescueOther,ちょっと,気をつけなさいよ！
+5319,0,Trap,ちょっ、なんで罠ッ！
+5319,0,ThankTrapRescue,……手間かけて、ごめんなさい
+5319,0,TrapRescueOther,ちょっと、気をつけなさいよ！
 5319,0,MemberDamaged,下がってなさい！
 5319,0,MemberDead,……絶対に許さないんだから！
 5319,0,AbilityExe,この調子なら……いける！
 5319,0,AbilitySpecial,こうなったらこっちのもの！
-5319,0,Resurrect,あーもう,アッタマきた！<br>やりかえしてやる！
+5319,0,Resurrect,あーもう、アッタマきた！<br>やりかえしてやる！
 5319,0,PartyJoin,/ci2 1 /moya ……よろしく
-5319,0,Marvelous,や,やるじゃない！
-5319,0,IncidentJsApcBegin,/toge /ci2 1 あっ,いいところに！<br>数が多くて,猫の手も借りたいの！<br>ちょっと手伝って！
-5319,0,IncidentJsApcFailure,もう少し頑張れると思ったのに……<br>……ごめんなさい,退きます！
-5319,0,IncidentJsApcSuccess,/ci2 1 ま,まあまあ連携出来てたんじゃない？<br>その……ありがと。
-5319,0,IncidentJsApcBeginEvo,/ci1 2 ……げ,なんかまだ出てきそう。<br>何だってのよ,まったく！
+5319,0,Marvelous,や、やるじゃない！
+5319,0,IncidentJsApcBegin,/toge /ci2 1 あっ、いいところに！<br>数が多くて、猫の手も借りたいの！<br>ちょっと手伝って！
+5319,0,IncidentJsApcFailure,もう少し頑張れると思ったのに……<br>……ごめんなさい、退きます！
+5319,0,IncidentJsApcSuccess,/ci2 1 ま、まあまあ連携出来てたんじゃない？<br>その……ありがと。
+5319,0,IncidentJsApcBeginEvo,/ci1 2 ……げ、なんかまだ出てきそう。<br>何だってのよ、まったく！
 5319,1,EnemyWeak,"¡Fuera de mi camino, debiluchos!"
 5319,1,EnemyLarge,"¡Es grande, pero no tiene el cerebro para igualarlo!"
 5319,1,EnemyBoss,Guh... ¡este parece realmente fuerte!
@@ -1516,7 +1516,7 @@ section,group,id,text
 5319,1,ThankBuff,Fue útil... tal vez.
 5319,1,ThankCure,Supongo que debería darte las gracias.
 5319,1,DefeatEnemy,"Muy bien, ¡pasemos a lo siguiente!"
-5319,1,LevelUp,¡No, no estoy celosa ni nada por el estilo!
+5319,1,LevelUp,¡No
 5319,1,InvokeSkill1,¿Escapando? ¡Piénsalo de nuevo!
 5319,1,InvokeSkill2,¡Ahora sí que me has hecho enojar!
 5319,1,InvokeSkill3,¡No tientes a tu suerte!
@@ -1534,7 +1534,7 @@ section,group,id,text
 5319,1,IncidentFailure,Uff... fui totalmente... inútil...
 5319,1,PSE,¿Qué es esto? <br>¿Los fotones están reaccionando?
 5319,1,PSELevelUp,¡Sigue así!
-5319,1,PSEBurst,"Wow... ¿los fotones<br>pueden energizarse así?"
+5319,1,PSEBurst,Wow... ¿los fotones<br>pueden energizarse así?
 5319,1,HP30,Si esto sigue así...
 5319,1,HP10,"Si no... hago algo, entonces...!"
 5319,1,ItemRare,"Ah, eso es... raro...<br>¡Deberías cuidarlo bien!"
@@ -1639,7 +1639,7 @@ section,group,id,text
 5320,1,InvokeSkill2,¡Tu final está cerca!
 5320,1,InvokeSkill3,¡Aniquilación total!
 5320,1,PBFull,Este jueguito está llegando a su fin...
-5320,1,PBRelease,¡Amigo mío! ¡Responde a mi llamado, muéstrate!
+5320,1,PBRelease,¡Amigo mío! ¡Responde a mi llamado
 5320,1,Avoid,Uff...
 5320,1,HealSelf,Mi táctica no está funcionando.
 5320,1,BuffSelf,¡Este mundo me otorga su protección divina!
@@ -1650,7 +1650,7 @@ section,group,id,text
 5320,1,IncidentStart,¡Siento... una distorsión en la realidad!
 5320,1,IncidentSuccess,¡Parece que hemos cortado la distorsión!
 5320,1,IncidentFailure,¡Qué impropio!
-5320,1,PSE,"Los fotones... ¡están aullando!"
+5320,1,PSE,Los fotones... ¡están aullando!
 5320,1,PSELevelUp,¿Nuestras esperanzas... respondidas!?
 5320,1,PSEBurst,¡Lo oigo! ¡El universo canta de alegría!
 5320,1,HP30,¡La crisis es el gran motivador!
@@ -1672,9 +1672,9 @@ section,group,id,text
 5320,1,IncidentJsApcBegin,"/toge /ci2 1 ¡Allí, mis camaradas!<br>¿Lucharemos juntos a través de esta batalla?"
 5320,1,IncidentJsApcFailure,"Qué ineptitud tan mortificante...<br>¡Lo siento, voy a retirarme!"
 5320,1,IncidentJsApcSuccess,/toge /ci2 1 ¡Permíteme expresar mi agradecimiento!<br>¡Esta es la verdadera emoción del trabajo en equipo!
-5320,1,IncidentJsApcBeginEvo,"¿Es ese el final?<br>¡No! ¡Nuevas señales del enemigo!"
+5320,1,IncidentJsApcBeginEvo,¿Es ese el final?<br>¡No! ¡Nuevas señales del enemigo!
 5321,0,EnemyWeak,一気に蹴散らしましょう！
-5321,0,EnemyLarge,その大きさ,良い的です！
+5321,0,EnemyLarge,その大きさ、良い的です！
 5321,0,EnemyBoss,手練れのようですわね
 5321,0,EnemyRare,珍しい相手ですね
 5321,0,EnemyBoost,この気配……注意が必要ですね
@@ -1697,24 +1697,24 @@ section,group,id,text
 5321,0,InvokeSkill1,見えました
 5321,0,InvokeSkill2,お覚悟を
 5321,0,InvokeSkill3,突破口を開きます
-5321,0,PBFull,好き勝手,させません
-5321,0,PBRelease,私たちに,お任せくださいませっ！
+5321,0,PBFull,好き勝手、させません
+5321,0,PBRelease,私たちに、お任せくださいませっ！
 5321,0,Avoid,はっ！
 5321,0,HealSelf,危ないところでした……
 5321,0,BuffSelf,準備は万端でございます
 5321,0,HealOther,回復いたします
 5321,0,BuffOther,援護いたします
-5321,0,QuestStart1,では,参りましょう
+5321,0,QuestStart1,では、参りましょう
 5321,0,QuestEnd1,無事終わって良かったです
 5321,0,IncidentStart,気をつけてください……<br>何かの気配を感じます
 5321,0,IncidentSuccess,上手くいったようです<br>見事なお手前でした
 5321,0,IncidentFailure,不甲斐ない結果……<br>申し訳ございません
-5321,0,PSE,これは,フォトンが<br>騒いでいるのですか？
+5321,0,PSE,これは、フォトンが<br>騒いでいるのですか？
 5321,0,PSELevelUp,まだまだ続けましょう
 5321,0,PSEBurst,これがＰＳＥバースト……<br>なんて美しいのでしょう
-5321,0,HP30,まだ,諦めません
+5321,0,HP30,まだ、諦めません
 5321,0,HP10,南無三……！
-5321,0,ItemRare,あら,それは希少品ではありませんか？
+5321,0,ItemRare,あら、それは希少品ではありませんか？
 5321,0,DamageSmall,つっ
 5321,0,DamageMiddle,このままでは……
 5321,0,DamageLarge,きゃあっ！
@@ -1722,13 +1722,13 @@ section,group,id,text
 5321,0,ThankTrapRescue,助かりました
 5321,0,TrapRescueOther,ご無事ですか？
 5321,0,MemberDamaged,無理をなさらぬよう
-5321,0,MemberDead,……謝っても,許しません
+5321,0,MemberDead,……謝っても、許しません
 5321,0,AbilityExe,私に任せていただけますか
 5321,0,AbilitySpecial,今が攻め時です！
 5321,0,Resurrect,二度は繰り返しませんわ
 5321,0,PartyJoin,/ci1 1 よろしくお願いいたします
 5321,0,Marvelous,お見事です！
-5321,0,IncidentJsApcBegin,/ci1 1 敵の対応に苦慮しております。<br>しばし,手伝っていただければと
+5321,0,IncidentJsApcBegin,/ci1 1 敵の対応に苦慮しております。<br>しばし、手伝っていただければと
 5321,0,IncidentJsApcFailure,申し訳ありません……<br>先に退かせていただきます
 5321,0,IncidentJsApcSuccess,/ci2 1 ありがとうございます。<br>大変助かりましたわ
 5321,0,IncidentJsApcBeginEvo,/ci1 2 これで終わり……というわけには<br>いかないようですわね
@@ -1765,7 +1765,7 @@ section,group,id,text
 5321,1,BuffOther,Te doy apoyo.
 5321,1,QuestStart1,"Bueno, sigamos adelante."
 5321,1,QuestEnd1,Es bueno que esto terminara a salvo.
-5321,1,IncidentStart,Por favor, ten cuidado...<br>Siento algo.
+5321,1,IncidentStart,Por favor
 5321,1,IncidentSuccess,Parece que salió bastante bien.<br>Tu habilidad fue excelente.
 5321,1,IncidentFailure,Un resultado desfavorable.....<br>Lo siento terriblemente.
 5321,1,PSE,¿Es esto los fotones<br>agitándose?
@@ -1788,9 +1788,9 @@ section,group,id,text
 5321,1,PartyJoin,/ci1 1 Gracias por dejarme unirme.
 5321,1,Marvelous,¡Eso fue maravilloso!
 5321,1,IncidentJsApcBegin,/ci1 1 Tengo un poco de problemas con estos<br>enemigos. Me preguntaba si podría asistirme.
-5321,1,IncidentJsApcFailure,Me disculpo sinceramente...<br>Por favor, permítame retirarme.
+5321,1,IncidentJsApcFailure,Me disculpo sinceramente...<br>Por favor
 5321,1,IncidentJsApcSuccess,/ci2 1 Muchas gracias.<br>Eso fue de gran ayuda.
-5321,1,IncidentJsApcBeginEvo,/ci1 2 Eso es el final de eso... err, parece<br>que todavía no puedo decir eso, supongo.
+5321,1,IncidentJsApcBeginEvo,/ci1 2 Eso es el final de eso... err
 5322,0,EnemyWeak,この程度の敵なら<br>まとめて蹴散らすでござる！
 5322,0,EnemyLarge,むむっ、なかなかの大物でござるな！
 5322,0,EnemyBoss,強敵登場、でござるか……<br>気を引き締めねば！
@@ -1897,7 +1897,7 @@ section,group,id,text
 5322,1,DamageLarge,¡Qué diablos...!
 5322,1,Trap,¡Qué! ¡¿Una trampa!?
 5322,1,ThankTrapRescue,Fue de gran ayuda; te lo agradezco.
-5322,1,TrapRescueOther,¡Por favor, sé más cauteloso!
+5322,1,TrapRescueOther,¡Por favor
 5322,1,MemberDamaged,¿Te encuentras bien?
 5322,1,MemberDead,... ¡Me vengaré!
 5322,1,AbilityExe,¡Nunca me había sentido tan ligero!
@@ -1906,8 +1906,8 @@ section,group,id,text
 5322,1,PartyJoin,/toge /ci2 1 Muy bien entonces. ¡Cuento contigo!
 5322,1,Marvelous,¡Maravilloso!
 5322,1,IncidentJsApcBegin,/ci1 1 ¡Oh! ¡Momento impecable!<br>¿Podría molestarte para que me ayudes<br>a dispersar a estos enemigos?
-5322,1,IncidentJsApcFailure,Mi habilidad fue inadecuada...<br>Por favor, permite mi retirada.
-5322,1,IncidentJsApcSuccess,/ci2 1 Y con eso, ahora podemos reposar.<br>Mi gratitud por tu hábil apoyo.
+5322,1,IncidentJsApcFailure,Mi habilidad fue inadecuada...<br>Por favor
+5322,1,IncidentJsApcSuccess,/ci2 1 Y con eso
 5322,1,IncidentJsApcBeginEvo,"/ci1 2 Eso es todo... err,<br>parece que he hablado prematuramente."
 5323,0,EnemyWeak,ケッ、雑魚ばっかかよ！
 5323,0,EnemyLarge,ハッ、図体だけはでかいようだな！
@@ -1921,9 +1921,9 @@ section,group,id,text
 5323,0,CondBurn,燃焼だと……っざけんな！
 5323,0,CondShock,感電だと……っざけんな！
 5323,0,CondPoison,毒だと……っざけんな！
-5323,0,CondPanic,クソ！ 頭がクラクラしやがる！
+5323,0,CondPanic,クソ！　頭がクラクラしやがる！
 5323,0,CondStan,動けねぇとか……っざけんな！
-5323,0,CondMirage,クソ！ 狙いが定まらねぇ！
+5323,0,CondMirage,クソ！　狙いが定まらねぇ！
 5323,0,Die,どうなってんだよ、これは……！
 5323,0,ThankHeal,……感謝はしておくぜ
 5323,0,ThankBuff,気が利くじゃねえか
@@ -1945,32 +1945,32 @@ section,group,id,text
 5323,0,BuffOther,無理してんじゃねえよ！
 5323,0,QuestStart1,さっさと終わらせるぞ！
 5323,0,QuestEnd1,当然だろ、このぐらいはよ
-5323,0,IncidentStart,何だ,何がきやがる！
-5323,0,IncidentSuccess,ヘッ,この程度かよ！<br>くっだらねェ！
+5323,0,IncidentStart,何だ、何がきやがる！
+5323,0,IncidentSuccess,ヘッ、この程度かよ！<br>くっだらねェ！
 5323,0,IncidentFailure,なんだよこりゃあ……<br>くっそつまんねえ！
-5323,0,PSE,おっ,こりゃＰＳＥってヤツか？
-5323,0,PSELevelUp,おらおら,もっと続けてくぞ！
-5323,0,PSEBurst,ヘッ,やりゃあ出来るじゃねえか！
+5323,0,PSE,おっ、こりゃＰＳＥってヤツか？
+5323,0,PSELevelUp,おらおら、もっと続けてくぞ！
+5323,0,PSEBurst,ヘッ、やりゃあ出来るじゃねえか！
 5323,0,HP30,調子にのってんじゃねえ……ッ！
 5323,0,HP10,この俺様が追い詰められてる……？<br>……ふっざけてんじゃねぇぞ！
-5323,0,ItemRare,あ,おいっ！<br>それ,珍しいヤツじゃねーか！
+5323,0,ItemRare,あ、おいっ！<br>それ、珍しいヤツじゃねーか！
 5323,0,DamageSmall,ちっ！
 5323,0,DamageMiddle,なんだと……！
 5323,0,DamageLarge,クソっ！
 5323,0,Trap,罠だと！
-5323,0,ThankTrapRescue,……ったく,ふざけやがって
+5323,0,ThankTrapRescue,……ったく、ふざけやがって
 5323,0,TrapRescueOther,くだらねーもんに<br>ひっかかってんじゃねーよ！
 5323,0,MemberDamaged,出しゃばるんじゃねえよ！
 5323,0,MemberDead,だから言っただろうが！<br>……クソッ！
-5323,0,AbilityExe,おら,どいつから消えてーんだ？
+5323,0,AbilityExe,おら、どいつから消えてーんだ？
 5323,0,AbilitySpecial,全部まとめて吹っ飛ばしてやるよ！
-5323,0,Resurrect,やってくれんじゃねえか,ゴミムシが！
+5323,0,Resurrect,やってくれんじゃねえか、ゴミムシが！
 5323,0,PartyJoin,/ci1 1 助けてやってもいいぞ
-5323,0,Marvelous,ふん,まあまあやるな
-5323,0,IncidentJsApcBegin,/ci1 1 おっ,良いところに来たじゃねーか！<br>雑魚散らししてんだ,手伝えよ！
-5323,0,IncidentJsApcFailure,ふざけんじゃねえ……この俺様が……<br>……ッ,付き合ってられるか！<br>俺様は先に帰らせてもらう！
+5323,0,Marvelous,ふん、まあまあやるな
+5323,0,IncidentJsApcBegin,/ci1 1 おっ、良いところに来たじゃねーか！<br>雑魚散らししてんだ、手伝えよ！
+5323,0,IncidentJsApcFailure,ふざけんじゃねえ……この俺様が……<br>……ッ、付き合ってられるか！<br>俺様は先に帰らせてもらう！
 5323,0,IncidentJsApcSuccess,/ci1 2 俺様もいるんだ。<br>このぐらい当然の結果だろ？<br>じゃあな！
-5323,0,IncidentJsApcBeginEvo,/ci1 2 これで終わり……じゃねえのか。<br>全く,雑魚がうじゃうじゃと……！
+5323,0,IncidentJsApcBeginEvo,/ci1 2 これで終わり……じゃねえのか。<br>全く、雑魚がうじゃうじゃと……！
 5323,1,EnemyWeak,¡Bah! ¡Pura morralla!
 5323,1,EnemyLarge,¡Ja! ¡El tamaño es todo lo que tienes!
 5323,1,EnemyBoss,Este sí que podría<br>valer nuestro tiempo.
@@ -2003,7 +2003,7 @@ section,group,id,text
 5323,1,Avoid,¡Ja!
 5323,1,HealSelf,¡Lástima por ti!
 5323,1,BuffSelf,¡Ahora voy a aplastarlos de verdad!
-5323,1,HealOther,¡Retrocede, idiota!
+5323,1,HealOther,¡Retrocede
 5323,1,BuffOther,¡No te vuelvas loco ahora!
 5323,1,QuestStart1,Vamos a terminar con esto rápido.
 5323,1,QuestEnd1,Eso no fue nada.
@@ -2020,7 +2020,7 @@ section,group,id,text
 5323,1,DamageMiddle,¿¡Qué demonios...!?
 5323,1,DamageLarge,¡MALDICIÓN!
 5323,1,Trap,¿¡Una trampa!?
-5323,1,ThankTrapRescue,...Maldición, esos bastardos...
+5323,1,ThankTrapRescue,...Maldición
 5323,1,TrapRescueOther,¿¡Qué demonios haces dejándote<br>atrapar en algo tan obvio!?
 5323,1,MemberDamaged,¡Fuera del camino!
 5323,1,MemberDead,"¡Argh, ¿¡qué te acabo de decir!?<br>...¡Maldición!"
@@ -2029,8 +2029,8 @@ section,group,id,text
 5323,1,Resurrect,¡Esas cucarachas me atraparon bien!
 5323,1,PartyJoin,"/ci1 1 ¡Claro, puedo ayudar a estos niños!"
 5323,1,Marvelous,"Hmph, lo hiciste bien."
-5323,1,IncidentJsApcBegin,/ci1 1 ¡Oye! ¡Buen momento!<br>¡Ayúdame a deshacerme de estos perdedores!<br>¡Échame una mano, ¿quieres!?"
-5323,1,IncidentJsApcFailure,¡Deja de hacer el tonto!<br>¡No puedo ser visto contigo, perdedor!<br>¡Me largo!
+5323,1,IncidentJsApcBegin,/ci1 1 ¡Oye! ¡Buen momento!<br>¡Ayúdame a deshacerme de estos perdedores!<br>¡Échame una mano
+5323,1,IncidentJsApcFailure,¡Deja de hacer el tonto!<br>¡No puedo ser visto contigo
 5323,1,IncidentJsApcSuccess,"/ci1 2 ¡Imagínate que ganaríamos,<br>ya que estoy aquí!<br>¡Hasta luego!"
 5323,1,IncidentJsApcBeginEvo,"/ci1 2 Y ese es el final de... o no.<br>Increíble, ¡mira cómo se amontonan esos malditos!"
 5327,0,EnemyWeak,このぐらいのエネミーなら！
@@ -2142,10 +2142,10 @@ section,group,id,text
 5327,1,IncidentFailure,Lo siento... es toda mi culpa.
 5327,1,PSE,¿Se están excitando los fotones?<br>¿¡Podría ser!?
 5327,1,PSELevelUp,¡Sigue así!
-5327,1,PSEBurst,"Wow... ¿los fotones<br>pueden energizarse así?"
+5327,1,PSEBurst,Wow... ¿los fotones<br>pueden energizarse así?
 5327,1,HP30,Si esto sigue así...
 5327,1,HP10,Esto no es bueno....
-5327,1,ItemRare,"¡Ah!<br>Ese es un objeto raro... ¿cierto?"
+5327,1,ItemRare,¡Ah!<br>Ese es un objeto raro... ¿cierto?
 5327,1,DamageSmall,¡Ugh!
 5327,1,DamageMiddle,¡Argh!
 5327,1,DamageLarge,¡Gwaah!
@@ -2159,9 +2159,9 @@ section,group,id,text
 5327,1,Resurrect,¡Necesito recomponerme!
 5327,1,PartyJoin,/ci2 1 ¡Hagámoslo!
 5327,1,Marvelous,¡Así es como se hace!
-5327,1,IncidentJsApcBegin,/ci1 1 ¡Ah, lo siento!<br>Hay demasiados para mí...<br>¿Puedes ayudarme?
+5327,1,IncidentJsApcBegin,/ci1 1 ¡Ah
 5327,1,IncidentJsApcFailure,...Lo siento.<br>Me voy a retirar.
-5327,1,IncidentJsApcSuccess,/ci2 1 ¡Muchas gracias.<br>Gracias a ti, logramos salir de esta."
+5327,1,IncidentJsApcSuccess,/ci2 1 ¡Muchas gracias.<br>Gracias a ti
 5327,1,IncidentJsApcBeginEvo,/ci1 2 Logramos salir de esta...<br>¿Eh? Siento... ¡que siguen viniendo!
 5328,0,EnemyWeak,一気に蹴散らしましょう！
 5328,0,EnemyLarge,その大きさ、良い的です！
@@ -2204,7 +2204,7 @@ section,group,id,text
 5328,0,PSEBurst,これがＰＳＥバースト……<br>なんて美しいのでしょう
 5328,0,HP30,まだ、諦めません
 5328,0,HP10,南無三……！
-5328,0,ItemRare,あら,それは希少品ではありませんか？
+5328,0,ItemRare,あら、それは希少品ではありませんか？
 5328,0,DamageSmall,つっ
 5328,0,DamageMiddle,このままでは……
 5328,0,DamageLarge,きゃあっ！
@@ -2212,13 +2212,13 @@ section,group,id,text
 5328,0,ThankTrapRescue,助かりました
 5328,0,TrapRescueOther,ご無事ですか？
 5328,0,MemberDamaged,無理をなさらぬよう
-5328,0,MemberDead,……謝っても,許しません
+5328,0,MemberDead,……謝っても、許しません
 5328,0,AbilityExe,私に任せていただけますか
 5328,0,AbilitySpecial,今が攻め時です！
 5328,0,Resurrect,二度は繰り返しませんわ
 5328,0,PartyJoin,/ci1 1 よろしくお願いいたします
 5328,0,Marvelous,お見事です！
-5328,0,IncidentJsApcBegin,/ci1 1 敵の対応に苦慮しております。<br>しばし,手伝っていただければと
+5328,0,IncidentJsApcBegin,/ci1 1 敵の対応に苦慮しております。<br>しばし、手伝っていただければと
 5328,0,IncidentJsApcFailure,申し訳ありません……<br>先に退かせていただきます
 5328,0,IncidentJsApcSuccess,/ci2 1 ありがとうございます。<br>大変助かりましたわ
 5328,0,IncidentJsApcBeginEvo,/ci1 2 これで終わり……というわけには<br>いかないようですわね
@@ -2255,7 +2255,7 @@ section,group,id,text
 5328,1,BuffOther,Te doy apoyo.
 5328,1,QuestStart1,"Bueno, sigamos adelante."
 5328,1,QuestEnd1,Es bueno que esto terminara a salvo.
-5328,1,IncidentStart,Por favor, ten cuidado...<br>Siento algo.
+5328,1,IncidentStart,Por favor
 5328,1,IncidentSuccess,Parece que salió bastante bien.<br>Tu habilidad fue excelente.
 5328,1,IncidentFailure,Un resultado desfavorable.....<br>Lo siento terriblemente.
 5328,1,PSE,¿Es esto los fotones<br>agitándose?
@@ -2278,7 +2278,7 @@ section,group,id,text
 5328,1,PartyJoin,/ci1 1 Gracias por dejarme unirme.
 5328,1,Marvelous,¡Eso fue maravilloso!
 5328,1,IncidentJsApcBegin,/ci1 1 Tengo un poco de problemas con estos<br>enemigos. Me preguntaba si podría asistirme.
-5328,1,IncidentJsApcFailure,Me disculpo sinceramente...<br>Por favor, permítame retirarme.
+5328,1,IncidentJsApcFailure,Me disculpo sinceramente...<br>Por favor
 5328,1,IncidentJsApcSuccess,/ci2 1 Muchas gracias.<br>Eso fue de gran ayuda.
 5328,1,IncidentJsApcBeginEvo,"/ci1 2 Eso es el final de eso... err, parece<br>que todavía no puedo decir eso, supongo."
 5329,0,EnemyWeak,僕たちの敵じゃあないね！
@@ -2477,14 +2477,14 @@ section,group,id,text
 5330,0,IncidentJsApcBeginEvo,/toge /ci3 2 ななっ、なんだよ！<br>すっげー巨大な敵性反応！？<br>相棒、気をつけろよ！
 5330,1,EnemyWeak,Este tipo parece bastante débil.
 5330,1,EnemyLarge,"Vaya, ese es grande..."
-5330,1,EnemyBoss,"¡Espera un segundo!<br>¡No me inscribí para esto!"
+5330,1,EnemyBoss,¡Espera un segundo!<br>¡No me inscribí para esto!
 5330,1,EnemyRare,¿Qué es esa cosa?<br>No todos los días ves uno de esos.
 5330,1,EnemyBoost,...¡Tengo un mal presentimiento sobre esto!
 5330,1,DestroyEnemy1,¡Muy bien!
-5330,1,DestroyEnemy2,¡Te tengo!
+5330,1,DestroyEnemy2,¡Nunca tuvo oportunidad!
 5330,1,DestroyEnemy3,¡Woohoo!
 5330,1,CondFreeze,¡F-F-F-Frío!
-5330,1,CondBurn,¡Caliente! ¡Caliente, caliente!
+5330,1,CondBurn,¡Caliente! ¡Caliente
 5330,1,CondShock,¡Me he quedado e-e-e-e-e-e-entumecido!
 5330,1,CondPoison,Ugh... ¿veneno...?<br>No me siento muy bien.
 5330,1,CondPanic,¡E-el mundo entero está dando vueltas!
@@ -2606,7 +2606,7 @@ section,group,id,text
 5331,0,IncidentJsApcFailure,ったぁ……やっちゃった……<br>ごめん、先に退かせてもらうね。
 5331,0,IncidentJsApcSuccess,/ci2 1 よーっし、大成功！<br>ありがとうございましたっ！
 5331,0,IncidentJsApcBeginEvo,/ci5 2 これで終わり……って、感じの<br>空気じゃなさそうだな……！
-5331,1,EnemyWeak,"¡Ja! ¿Qué tal si los rodeamos<br>y los aplastamos?"
+5331,1,EnemyWeak,¡Ja! ¿Qué tal si los rodeamos<br>y los aplastamos?
 5331,1,EnemyLarge,Es h-enorme.....
 5331,1,EnemyBoss,"Supongo que este es el jefe, ¿eh?"
 5331,1,EnemyRare,¿Eh? ¿Qué es eso?<br>Hay algo raro allá.
@@ -2751,7 +2751,7 @@ section,group,id,text
 5332,1,CondPanic,"Oh, hombre. Estoy todo confundido..."
 5332,1,CondStan,Hnng... no puedo moverme... mi cuerpo....
 5332,1,CondMirage,¿Estoy... viendo cosas!?
-5332,1,Die,Maldición...<br>Pensé que podría superarlo a la fuerza... ja, ja...
+5332,1,Die,Maldición...<br>Pensé que podría superarlo a la fuerza... ja
 5332,1,ThankHeal,¡Gracias por la curación!
 5332,1,ThankBuff,¡Gracias!
 5332,1,ThankCure,"Uff, ¡me salvaste el trasero!"
@@ -2910,7 +2910,7 @@ section,group,id,text
 5333,1,IncidentFailure,"Mis disculpas, estaba fuera de mi alcance..."
 5333,1,PSE,"Los fotones se están excitando...<br>¡Esto debe ser esa cosa del ""PSE""!"
 5333,1,PSELevelUp,¡Sigue así!
-5333,1,PSEBurst,"¡Así que esto es un PSE Burst!"
+5333,1,PSEBurst,¡Así que esto es un PSE Burst!
 5333,1,HP30,Si esto sigue así...
 5333,1,HP10,No puedo caer aquí...
 5333,1,ItemRare,Ese es un gran hallazgo.
@@ -2976,7 +2976,7 @@ section,group,id,text
 5334,0,DamageSmall,つっ！
 5334,0,DamageMiddle,ぐあっ！
 5334,0,DamageLarge,なんと……！
-5334,0,Trap,何！ 罠でござるか！？
+5334,0,Trap,何！　罠でござるか！？
 5334,0,ThankTrapRescue,助かったでござる
 5334,0,TrapRescueOther,気をつけるでござる！
 5334,0,MemberDamaged,大丈夫でござるか！？
@@ -2989,7 +2989,7 @@ section,group,id,text
 5334,0,IncidentJsApcBegin,/ci1 1 おや、良いところに！<br>すまぬが、敵を散らすのを<br>手伝ってもらえないでござるか？
 5334,0,IncidentJsApcFailure,全ては拙者の力不足が原因……<br>先に退かせてもらうでござる
 5334,0,IncidentJsApcSuccess,/ci2 1 これにて一件落着、でござるな。<br>助太刀感謝するでござるよ
-5334,0,IncidentJsApcBeginEvo,/ci1 2 これで終わり……というわけには<br>いかないようですわね
+5334,0,IncidentJsApcBeginEvo,/ci1 2 これにて終了……とは<br>いかないようでござるな
 5334,1,EnemyWeak,"¡Con enemigos tan insignificantes como estos,<br>podemos acabar con todos a la vez!"
 5334,1,EnemyLarge,Hnn... ¡Ese es bastante grande!
 5334,1,EnemyBoss,Parece que ha aparecido un enemigo poderoso...<br>¡Prepárense!
@@ -3037,7 +3037,7 @@ section,group,id,text
 5334,1,DamageLarge,¡Qué diablos...!
 5334,1,Trap,¡Qué! ¡¿Una trampa!?
 5334,1,ThankTrapRescue,Fue de gran ayuda; te lo agradezco.
-5334,1,TrapRescueOther,¡Por favor, sé más cauteloso!
+5334,1,TrapRescueOther,¡Por favor
 5334,1,MemberDamaged,¿Te encuentras bien?
 5334,1,MemberDead,... ¡Me vengaré!
 5334,1,AbilityExe,¡Nunca me había sentido tan ligero!
@@ -3046,8 +3046,8 @@ section,group,id,text
 5334,1,PartyJoin,/toge /ci2 1 Muy bien entonces. ¡Cuento contigo!
 5334,1,Marvelous,¡Maravilloso!
 5334,1,IncidentJsApcBegin,/ci1 1 ¡Oh! ¡Momento impecable!<br>¿Podría molestarte para que me ayudes<br>a dispersar a estos enemigos?
-5334,1,IncidentJsApcFailure,Mi habilidad fue inadecuada...<br>Por favor, permite mi retirada.
-5334,1,IncidentJsApcSuccess,/ci2 1 Y con eso, ahora podemos reposar.<br>Mi gratitud por tu hábil apoyo.
+5334,1,IncidentJsApcFailure,Mi habilidad fue inadecuada...<br>Por favor
+5334,1,IncidentJsApcSuccess,/ci2 1 Y con eso
 5334,1,IncidentJsApcBeginEvo,"/ci1 2 Eso es todo... err,<br>parece que he hablado prematuramente."
 5335,0,EnemyWeak,ふふふ……このぐらいの相手なら<br>私一人でも十分ですわ！
 5335,0,EnemyLarge,大きければいいというものでは<br>ないんですからね！
@@ -3147,9 +3147,9 @@ section,group,id,text
 5335,1,TacticsMassedAttack,¡Déjamelo a mí simplemente!<br>¡Concentremos el fuego!
 5335,1,TacticsAttack,"¡Déjamelo a mí simplemente!<br>... espera, ¿¡tengo que ser el señuelo!?"
 5335,1,Avoid,¡Una finta elegante!
-5335,1,HealSelf,"Simplemente no sería apropiado morir ahora."
+5335,1,HealSelf,Simplemente no sería apropiado morir ahora.
 5335,1,BuffSelf,¡Siempre es mejor reforzar nuestras habilidades con un poco de apoyo!
-5335,1,HealOther,¡Por favor, intenta no excederte!
+5335,1,HealOther,Por favor
 5335,1,BuffOther,¡No olvides reforzar tus habilidades!
 5335,1,QuestStart1,Lo espero con ansias.
 5335,1,QuestStart2,"Cuando estamos juntos,<br>¡me siento simplemente imparable!<br>Quizás sea solo mi imaginación."
@@ -3169,8 +3169,8 @@ section,group,id,text
 5335,1,DamageLarge,Eres cruel...
 5335,1,Trap,"¡Vaya, una trampa!<br>¿Por qué diablos habría una trampa aquí?"
 5335,1,ThankTrapRescue,G-Gracias.
-5335,1,TrapRescueOther,¡Por favor, vigila las trampas!<br>¡Casi piso una yo misma!
-5335,1,MemberDamaged,¡Por favor, intenta no excederte!
+5335,1,TrapRescueOther,¡Por favor
+5335,1,MemberDamaged,¡Por favor
 5335,1,MemberDead,... No puedo perdonar esto.<br>¡Simplemente no puedo!
 5335,1,AbilityExe,"Jejeje, ¡ahora<br>es mi turno!"
 5335,1,AbilitySpecial,¡Tengo esto bajo control!
@@ -3384,12 +3384,12 @@ section,group,id,text
 5337,0,IncidentJsApcBeginEvo,/mn18 /ci3 1<br>うわっ……なんか、やばそーな反応が<br>すっごい近くに……気をつけましょう！
 5337,1,EnemyWeak,¡Debería ser capaz de encargarme de esto...!
 5337,1,EnemyLarge,¿P-por qué es tan grande?
-5337,1,EnemyBoss,Supongo que correr está fuera de discusión, ¿verdad?
+5337,1,EnemyBoss,Supongo que correr está fuera de discusión
 5337,1,EnemyRare,"¡Oye, parece que ese es raro!"
 5337,1,EnemyBoost,E-ese es realmente poderoso....
 5337,1,DestroyEnemy1,¡Sí!
 5337,1,DestroyEnemy2,¡Conseguí uno! ¿Verdad?
-5337,1,DestroyEnemy3,"¿Ves?<br>¡Yo también puedo hacerlo!"
+5337,1,DestroyEnemy3,¿Ves?<br>¡Yo también puedo hacerlo!
 5337,1,CondFreeze,¡Frío!
 5337,1,CondBurn,"¡Oye, eso está caliente!"
 5337,1,CondShock,¿¡Me acabo de electrocutar!?
@@ -3418,7 +3418,7 @@ section,group,id,text
 5337,1,HealSelf,¡Aún no estoy listo para morir!
 5337,1,BuffSelf,Un poco de apoyo ayuda mucho.
 5337,1,HealOther,¿Estás bien? Déjame curarte.
-5337,1,BuffOther,¿Necesitas un impulso?<br>Por suerte, esta es mi especialidad.
+5337,1,BuffOther,¿Necesitas un impulso?<br>Por suerte
 5337,1,QuestStart1,¡Aquí vamos!
 5337,1,QuestStart2,"¡Aquí vamos,<br><%me>"
 5337,1,QuestEnd1,Ya terminamos... ¿verdad?
@@ -3522,19 +3522,19 @@ section,group,id,text
 5338,0,IncidentJsApcBeginEvo,/ci3 1 ……気配が消えない。<br>どうやら、まだ来るみたいだ
 5338,1,EnemyWeak,"Hmph... tales oponentes no son<br>rivales para mí, ¡ni siquiera por mi cuenta!"
 5338,1,EnemyLarge,¡Más grande no es necesariamente mejor!
-5338,1,EnemyBoss,"Ooh... se ve poderoso...<br>Hubiera preferido no haberlo visto."
+5338,1,EnemyBoss,Ooh... se ve poderoso...<br>Hubiera preferido no haberlo visto.
 5338,1,EnemyRare,"¿Oh? ¿Es esa de<br>allí una especie rara, por casualidad?"
 5338,1,EnemyBoost,Hmmm...<br>La presencia de este enemigo es<br>bastante repulsiva....
 5338,1,DestroyEnemy1,¡Empecemos con uno!
 5338,1,DestroyEnemy2,¿Quién sigue?
 5338,1,DestroyEnemy3,¡Eso es lo que obtienes por interponerte en mi camino!
 5338,1,CondFreeze,Ugh... ¡estoy congelada!
-5338,1,CondBurn,"Este tipo de calor<br>¡no es gran cosa!"
+5338,1,CondBurn,Este tipo de calor<br>¡no es gran cosa!
 5338,1,CondShock,Estoy... entumecida...
 5338,1,CondPoison,¡Un poco de veneno<br>no me detendrá!
 5338,1,CondPanic,"Todo se ve al revés, pero<br>¡eso no me impedirá cortar<br>algunas cabezas!"
 5338,1,CondStan,¡No puedo moverme...!
-5338,1,CondMirage,"¿Algo está alterando mi visión....?<br>¡Supongo que solo tendré que cortar cada cabeza que vea!"
+5338,1,CondMirage,¿Algo está alterando mi visión....?<br>¡Supongo que solo tendré que cortar cada cabeza que vea!
 5338,1,Die,No... aún no...
 5338,1,ThankHeal,¡Te lo agradezco!
 5338,1,ThankBuff,¡Estoy en deuda contigo!
@@ -3559,7 +3559,7 @@ section,group,id,text
 5338,1,Avoid,¡Ja!
 5338,1,HealSelf,Me descuidé.
 5338,1,BuffSelf,Ya es suficiente.
-5335,1,HealOther,Por favor, intenta no excederte.
+5338,1,HealOther,You'll be okay now.
 5338,1,BuffOther,¡No seas imprudente!
 5338,1,QuestStart1,¡Comenzando misión!
 5338,1,QuestStart2,"Si estoy contigo, entonces no hay necesidad de preocuparse."
@@ -3587,7 +3587,7 @@ section,group,id,text
 5338,1,Resurrect,¡Siento las molestias!
 5338,1,PartyJoin,"/ci1 1 Muy bien, hagamos esto."
 5338,1,Marvelous,Una exhibición verdaderamente cautivadora.
-5338,1,IncidentJsApcBegin,/ci2 2 ¡Ah! ¡Si no eres tú!<br>Ahora que he saltado- err, completado el entrenamiento,<br>¿serías tan amable de echar una mano?
+5338,1,IncidentJsApcBegin,/ci2 2 ¡Ah! ¡Si no eres tú!<br>Ahora que he saltado- err
 5338,1,IncidentJsApcFailure,"... Ugh, nos atraparon.<br>Lo siento, necesito reagruparme."
 5338,1,IncidentJsApcSuccess,"/ci2 1 Bien, ahora podemos relajarnos.<br>Agradezco tu asistencia."
 5338,1,IncidentJsApcBeginEvo,/ci3 1 ...Las señales no han desaparecido.<br>Parece que siguen viniendo.
@@ -3707,7 +3707,7 @@ section,group,id,text
 5339,1,DamageSmall,Ngh...
 5339,1,DamageMiddle,¡Yeeerrrgh!
 5339,1,DamageLarge,¡Gwaah!
-5339,1,Trap,"¿Qué demonios? ¿Una trampa aquí?"
+5339,1,Trap,¿Qué demonios? ¿Una trampa aquí?
 5339,1,ThankTrapRescue,Uff. ¡Gracias por eso!
 5339,1,TrapRescueOther,"Hey, ¿estás bien?"
 5339,1,MemberDamaged,¿Estás bien?
@@ -3781,13 +3781,13 @@ section,group,id,text
 5340,0,Resurrect,ふー、川が見えたよー！
 5340,0,PartyJoin,/ci1 1 はいはーい！　頑張るよ－！
 5340,0,Marvelous,いやー、楽チン楽チン
-5340,1,EnemyWeak,"¡Oh-ho-ho-ho!<br>¡Esto va a ser pan comido!"
+5340,1,EnemyWeak,¡Oh-ho-ho-ho!<br>¡Esto va a ser pan comido!
 5340,1,EnemyLarge,Eso es... gigantesco......
 5340,1,EnemyBoss,¡Este va a ser un problema!
 5340,1,EnemyRare,¡Ooh! ¡Allá!<br>¡Ese es un enemigo raro!
 5340,1,EnemyBoost,"¡Oh, cielos, vaya! Tengo un mal<br>presentimiento sobre esto..."
 5340,1,DestroyEnemy1,¡Hyah!
-5330,1,DestroyEnemy2,¡Nunca tuvo oportunidad!
+5340,1,DestroyEnemy2,Never stood a chance!
 5340,1,DestroyEnemy3,"¡Juego, set y partido!"
 5340,1,CondFreeze,¡Brrrrr...! ¡Achís!
 5340,1,CondBurn,"¡ME ESTOY QUEMANDO!<br>¡¡¡CALIENTE, CALIENTE, CALIENTE!!!"
@@ -3831,7 +3831,7 @@ section,group,id,text
 5340,1,DamageSmall,¡Ay!
 5340,1,DamageMiddle,¡Aieee!
 5340,1,DamageLarge,¡Ay! ¡Ya basta!
-5340,1,Trap,"¿Qué? ¿¡Una trampa!?<br>¿Acaso no hay algo un poco emocionante<br>en una chica en una trampa? ...¡o NO! ¡Sáquenme de aquí!"
+5340,1,Trap,¿Qué? ¿¡Una trampa!?<br>¿Acaso no hay algo un poco emocionante<br>en una chica en una trampa? ...¡o NO! ¡Sáquenme de aquí!
 5340,1,ThankTrapRescue,"Uff, gracias."
 5340,1,TrapRescueOther,"¡Qué dulce rescate, ¿eh?!"
 5340,1,MemberDamaged,¿Estás bien? ¡Tienes que tener más cuidado!
@@ -3908,7 +3908,7 @@ section,group,id,text
 5341,1,EnemyLarge,Es... masivo...
 5341,1,EnemyBoss,Este va a ser un problema...
 5341,1,EnemyRare,Esta es una especie extremadamente rara. Debe ser nuestro<br>día de suerte...
-5341,1,EnemyBoost,Odio decirlo, pero... tengo un mal presentimiento<br>sobre esto.
+5341,1,EnemyBoost,Odio decirlo
 5341,1,DestroyEnemy1,¡Lo logramos!
 5341,1,DestroyEnemy2,Eso se encarga de eso.
 5341,1,DestroyEnemy3,¡Hermosa eliminación!
@@ -3963,7 +3963,7 @@ section,group,id,text
 5341,1,MemberDamaged,No te excedas.
 5341,1,MemberDead,... ¿Cómo te atreves?
 5341,1,AbilityExe,/toge Ahora que estoy en la zona<br>supongo que empezaré a darlo todo.
-5341,1,AbilitySpecial,/toge Por favor, déjamelo a mí.
+5341,1,AbilitySpecial,/toge Por favor
 5341,1,Resurrect,Quizás me descuidé un poco.
 5341,1,PartyJoin,/ci1 1 Haré mi parte.
 5341,1,Marvelous,... Demasiado fácil.
@@ -4188,14 +4188,14 @@ section,group,id,text
 5343,1,InvokeSkill3,¡Te voy a rematar y me veré bien haciéndolo!
 5343,1,PBFull,¡Je!<br>¡Me estoy encendiendo!
 5343,1,PBRelease,¡Sí! ¡Ahora las cosas se están calentando DE VERDAD!
-5343,1,TacticsFree,"¡Al estilo Huey entonces!"
+5343,1,TacticsFree,¡Al estilo Huey entonces!
 5343,1,TacticsGuard,¿Defensa? ¡Pero si yo quiero atacar!
 5343,1,TacticsMassedAttack,¡Esa es una estrategia eficiente!
 5343,1,TacticsAttack,¡El nombre es Huey!<br>¡Ven a por mí!<br>¡A menos que tengas miedo! ¡Jajaja!
 5343,1,Avoid,¡Lo vi venir desde kilómetros de distancia!
 5343,1,HealSelf,¡Me curo con pura fuerza de voluntad!
 5343,1,BuffSelf,¡Potenciado por mi propio espíritu de lucha!
-5343,1,HealOther,"¡Tú también necesitas aprender a curarte con pura fuerza de voluntad!"
+5343,1,HealOther,¡Tú también necesitas aprender a curarte con pura fuerza de voluntad!
 5343,1,BuffOther,¡Haz algo útil con eso!
 5343,1,QuestStart1,¡Déjame encargarme de esto!
 5343,1,QuestStart2,"¡No es una mala sensación, formar equipo contigo!"
@@ -4223,10 +4223,10 @@ section,group,id,text
 5343,1,Resurrect,"¡He vuelto, nena!"
 5343,1,PartyJoin,/ci1 1 ¡Confío en ti con esto!
 5343,1,Marvelous,¡Esa es la actitud!
-5343,1,IncidentJsApcBegin,/toge /ci2 1 ¡Siento una perturbación en los fotones!<br>Es hora de que yo, el Comandante de Combate Huey,<br>entre en acción... ¡Me encargaré de esto!
+5343,1,IncidentJsApcBegin,/toge /ci2 1 ¡Siento una perturbación en los fotones!<br>Es hora de que yo
 5343,1,IncidentJsApcFailure,/toge ¡Incluso un Comandante de Combate<br>puede tener un mal día si baja la guardia!<br>¡Mantente alerta!
 5343,1,IncidentJsApcSuccess,"/toge /ci2 1 Bah, ¡necesitas al menos cien veces más<br>potencia de fuego si quieres enfrentarte a mí!"
-5343,1,IncidentJsApcBeginEvo,/toge /ci2 ¿De verdad siguen viniendo?<br>Jajaja, ¡al menos tienen agallas!<br>... ¡Aunque no me detendrán!
+5343,1,IncidentJsApcBeginEvo,/toge /ci2 ¿De verdad siguen viniendo?<br>Jajaja
 5343,1,IncidentJsMultiApcBegin,"/toge /ci2 1 /mn15 ¡Mwahaha! ¡Es hora de que yo, el gran<br>Comandante de Combate Huey, empiece esta fiesta! ¡Puede<br>que esté rodeado, pero no temo a nada!"
 5343,1,IncidentJsMultiApcSuccess,"/toge /ci2 1 /mn15 Bueno, ¡eso ya está resuelto! ¿Continuamos<br>hacia la siguiente fuente de fotones, Klariskrays?"
 5346,0,EnemyWeak,よっしゃ、弱いの来たな！
@@ -4288,9 +4288,9 @@ section,group,id,text
 5346,0,IncidentJsApcFailure,ちっ……しくじった……！
 5346,0,IncidentJsApcSuccess,/toge /ci2 2 お前のおかげで助かったぜ！<br>ありがとな！
 5346,0,IncidentJsApcBeginEvo,/toge /ci2 1 まだまだ何か起きるってか！<br>よっしゃ、楽しもうぜ！
-5346,1,EnemyWeak,"¡Sí! ¡Aquí vienen algunos debiluchos!"
+5346,1,EnemyWeak,¡Sí! ¡Aquí vienen algunos debiluchos!
 5346,1,EnemyLarge,"/toge Claro, la cosa es grande,<br>¡pero solo tienes que aplastarla!"
-5346,1,EnemyBoss,"/toge ¡Ha llegado un enemigo poderoso!<br>¡Mantente alerta!"
+5346,1,EnemyBoss,/toge ¡Ha llegado un enemigo poderoso!<br>¡Mantente alerta!
 5346,1,EnemyRare,¡Ahora ahí hay algo que no se ve muy a menudo!
 5346,1,EnemyBoost,"Hey, espera, ¿qué es eso?<br>¡Su grito de guerra es diferente!"
 5346,1,DestroyEnemy1,¡Uno menos!
@@ -4321,7 +4321,7 @@ section,group,id,text
 5346,1,BuffOther,¡Ahora estás listo para empezar!
 5346,1,QuestStart1,¡Vamos a patearles el trasero!
 5346,1,QuestEnd1,/toge ¡Fue divertido!<br>¡Vamos a otra misión juntos!
-5346,1,IncidentStart,"¿Hm!? ¡Algo se acerca!"
+5346,1,IncidentStart,¿Hm!? ¡Algo se acerca!
 5346,1,IncidentSuccess,¡No podría haber tenido un mejor resultado!
 5346,1,IncidentFailure,"Aw, hombre...<br>No puedo creer esto."
 5346,1,PSE,"¡Oh, parece que los<br>fotones se están volviendo más activos!"
@@ -4434,7 +4434,7 @@ section,group,id,text
 5347,1,PBRelease,No seamos egoístas.
 5347,1,Avoid,No es lo suficientemente bueno.
 5347,1,HealSelf,Curarse es importante.
-5347,1,BuffSelf,"El apoyo también es necesario."
+5347,1,BuffSelf,El apoyo también es necesario.
 5347,1,HealOther,Te curaré.
 5347,1,BuffOther,Te daré apoyo.
 5347,1,QuestStart1,Comencemos.
@@ -4497,7 +4497,7 @@ section,group,id,text
 5348,0,HealOther,回復は大切ニャン！
 5348,0,BuffOther,補助も忘れちゃだめニャン！
 5348,0,QuestStart1,さあいくニャン！
-5348,0,QuestEnd1,やったニャン！
+5348,0,QuestEnd1,やったニャン！　
 5348,0,IncidentStart,何かが起きそうニャン！
 5348,0,IncidentSuccess,やったニャン！　成功ニャン！
 5348,0,IncidentFailure,ニャアア……ごめんニャン
@@ -4527,7 +4527,7 @@ section,group,id,text
 5348,1,EnemyWeak,¡Miau!
 5348,1,EnemyLarge,¡Es grande miau!
 5348,1,EnemyBoss,¡Miau... necesitamos tener cuidado miau!
-5348,1,EnemyRare,"¿Miau-mow?<br>¡Eso es un objeto raro miau!"
+5348,1,EnemyRare,¿Miau-mow?<br>¡Eso es un objeto raro miau!
 5348,1,EnemyBoost,¡Ese está demasiado emocionado miau!
 5348,1,DestroyEnemy1,¡Los atrapé miau!
 5348,1,DestroyEnemy2,¡Una presa fácil miau!
@@ -4546,8 +4546,8 @@ section,group,id,text
 5348,1,DefeatEnemy,¡Al siguiente miau!
 5348,1,LevelUp,"¡Miaugnific, subiste de nivel!"
 5348,1,InvokeSkill1,¡Resolvamos esto ahora miau!
-5348,1,InvokeSkill2,¡Miau, toma esto!
-5348,1,InvokeSkill3,¡Miau, prepárense!
+5348,1,InvokeSkill2,¡Miau
+5348,1,InvokeSkill3,¡Miau
 5348,1,PBFull,¡Los preparativos están miau completos!
 5348,1,PBRelease,"¡Discúlpate todo lo que quieras, no te perdonaré miau!"
 5348,1,Avoid,¡Miau!
@@ -4558,14 +4558,14 @@ section,group,id,text
 5348,1,QuestStart1,¡Aquí va todo miau!
 5348,1,QuestEnd1,"¡Miau, lo logramos!"
 5348,1,IncidentStart,¡Algo está por suceder miau!
-5348,1,IncidentSuccess,"¡Miau, lo logramos!"
-5348,1,IncidentFailure,Miauww... lo siento.
+5348,1,IncidentSuccess,/ci2 1 ¡Lo logramos
+5348,1,IncidentFailure,"No puedo aguantar más.....<br>Me retiro, miau."
 5348,1,PSE,¡Los fotones se están activando miau!
-5348,1,PSELevelUp,¡Miau, mantén el ritmo!
+5348,1,PSELevelUp,¡Miau
 5348,1,PSEBurst,Meowzers...<br>¡Los fotones brillan tanto!
 5348,1,HP30,¿Fui demasiado descuidado hace un momento miau?
 5348,1,HP10,"Miau, esto es peor que quedarse atrapado en un árbol..."
-5348,1,ItemRare,¡Miau, ese es un buen objeto!
+5348,1,ItemRare,¡Miau
 5348,1,DamageSmall,¿¡Miau!?
 5348,1,DamageMiddle,¡Meeeouch!
 5348,1,DamageLarge,"¡Miau-y, esto está mal!"
@@ -4580,9 +4580,9 @@ section,group,id,text
 5348,1,PartyJoin,/ci2 1 ¡Saludos miau!
 5348,1,Marvelous,¡Meowsers!
 5348,1,IncidentJsApcBegin,/toge /ci2 1 ¡Gran momento miau!<br>¡Ayúdame miau!
-5348,1,IncidentFailure,"No puedo aguantar más.....<br>Me retiro, miau."
-5348,1,IncidentSuccess,/ci2 1 ¡Lo logramos, lo logramooos!<br>¡Éxito miau!"
-5348,1,IncidentJsApcBeginEvo,/ci5 2 Esta presencia...<br>¡Miau, siguen viniendo!
+5348,1,IncidentJsApcFailure,"I can't take anymore.....<br>I'm withdrawing, meow."
+5348,1,IncidentJsApcSuccess,"/ci2 1 We did it, we diiiid it!<br>Success meow!"
+5348,1,IncidentJsApcBeginEvo,/ci5 2 Esta presencia...<br>¡Miau
 5349,0,EnemyWeak,ザコが来たな！
 5349,0,EnemyLarge,でっけーのが来たな！
 5349,0,EnemyBoss,へへっ、楽しめそうだ！
@@ -4695,12 +4695,12 @@ section,group,id,text
 5349,1,AbilityExe,¡Voy a hacerte explotar con este poder!
 5349,1,AbilitySpecial,"Muy bien, ¡te voy a rematar!"
 5349,1,Resurrect,"Je, ¡gracias por el empujoncito!"
-5349,1,PartyJoin,/ci2 1 Je je, ¡solo déjamelo a mí!
+5349,1,PartyJoin,/ci2 1 Je je
 5349,1,Marvelous,¡Lo estás bordando!
-5349,1,IncidentJsApcBegin,/ci2 1 ¡Oh, viniste en un momento excelente!<br>¡Échame una mano!
+5349,1,IncidentJsApcBegin,/ci2 1 ¡Oh
 5349,1,IncidentJsApcFailure,"Grrr, ¿hablas en serio.....!?<br>¡Lo siento, me retiro!"
 5349,1,IncidentJsApcSuccess,/ci2 2 ¡Parece que terminamos aquí!<br>¡Eso fue divertido! ¡Hagámoslo de nuevo en otro momento!
-5349,1,IncidentJsApcBeginEvo,/ci2 1 ¡Parece que todavía queda algo!<br>¡Jum, voy a disfrutar esto!
+5349,1,IncidentJsApcBeginEvo,/ci2 1 ¡Parece que todavía queda algo!<br>¡Jum
 5363,0,EnemyWeak,この程度の敵でしたら
 5363,0,EnemyLarge,ずいぶん大きな相手ですね
 5363,0,EnemyBoss,油断は禁物ですね
@@ -4879,7 +4879,7 @@ section,group,id,text
 5364,0,Resurrect,ふー、川が見えたよー！
 5364,0,PartyJoin,/ci1 1 はいはーい！　頑張るよ－！
 5364,0,Marvelous,いやー、楽チン楽チン
-5364,1,EnemyWeak,"¡Oh-ho-ho-ho!<br>¡Esto va a ser pan comido!"
+5364,1,EnemyWeak,¡Oh-ho-ho-ho!<br>¡Esto va a ser pan comido!
 5364,1,EnemyLarge,Eso es... gigantesco......
 5364,1,EnemyBoss,¡Este va a ser un problema!
 5364,1,EnemyRare,¡Ooh! ¡Allá!<br>¡Ese es un enemigo raro!
@@ -4929,7 +4929,7 @@ section,group,id,text
 5364,1,DamageSmall,¡Ay!
 5364,1,DamageMiddle,¡Aieee!
 5364,1,DamageLarge,¡Ay! ¡Ya basta!
-5364,1,Trap,"¿Acaso no hay algo un poco emocionante<br>en una chica en una trampa? ...¡o NO! ¡Sáquenme de aquí!"
+5364,1,Trap,¿Acaso no hay algo un poco emocionante<br>en una chica en una trampa? ...¡o NO! ¡Sáquenme de aquí!
 5364,1,ThankTrapRescue,"Uff, gracias."
 5364,1,TrapRescueOther,"¡Qué dulce rescate, ¿eh?!"
 5364,1,MemberDamaged,¿Estás bien? ¡Tienes que tener más cuidado!
@@ -5006,7 +5006,7 @@ section,group,id,text
 5365,1,EnemyLarge,Es... masivo...
 5365,1,EnemyBoss,Este va a ser un problema...
 5365,1,EnemyRare,Esta es una especie extremadamente rara. Debe ser nuestro<br>día de suerte...
-5365,1,EnemyBoost,Odio decirlo, pero... tengo un mal presentimiento<br>sobre esto.
+5365,1,EnemyBoost,Odio decirlo
 5365,1,DestroyEnemy1,¡Lo logramos!
 5365,1,DestroyEnemy2,Eso se encarga de eso.
 5365,1,DestroyEnemy3,¡Hermosa eliminación!
@@ -5061,7 +5061,7 @@ section,group,id,text
 5365,1,MemberDamaged,No te excedas.
 5365,1,MemberDead,... ¿Cómo te atreves?
 5365,1,AbilityExe,/toge Ahora que estoy en la zona<br>supongo que empezaré a darlo todo.
-5365,1,AbilitySpecial,/toge Por favor, déjamelo a mí.
+5365,1,AbilitySpecial,/toge Por favor
 5365,1,Resurrect,Quizás me descuidé un poco.
 5365,1,PartyJoin,/ci1 1 Haré mi parte.
 5365,1,Marvelous,... Demasiado fácil.
@@ -5127,7 +5127,7 @@ section,group,id,text
 5366,0,IncidentJsApcBegin,/ci1 3 ……任務外ですが<br>放ってはおけません。
 5366,0,IncidentJsApcFailure,申し訳ありません……<br>私は撤退します。
 5366,0,IncidentJsApcSuccess,/ci1 5 ……お互い、無事で何よりです。<br>それでは。
-5366,0,IncidentJsApcBeginEvo,/ci1 1 ……まだ来るようですね。<br>さっさと片付けましょう。
+5366,0,IncidentJsApcBeginEvo,/ci1 1 ……まだ来るようですね。<br>さっさと片付けましょう。 
 5366,1,EnemyWeak,Quítate de mi camino.
 5366,1,EnemyLarge,No se puede fallar a algo tan grande.....
 5366,1,EnemyBoss,Objetivo adquirido.
@@ -5179,11 +5179,11 @@ section,group,id,text
 5366,1,DamageLarge,¡Argh!
 5366,1,Trap,Terminar en esta trampa rudimentaria...
 5366,1,ThankTrapRescue,Pido disculpas por los problemas.
-5366,1,TrapRescueOther,Por favor, mantente vigilante.
+5366,1,TrapRescueOther,Por favor
 5366,1,MemberDamaged,Ten cuidado de no sobreesforzarte.
 5366,1,MemberDead,...Pagarán por esto.
 5366,1,AbilityExe,/toge ¡Siguiendo la corriente....!
-5366,1,AbilitySpecial,/toge ¡Con tanto poder, puedo manejar cualquier cosa!
+5366,1,AbilitySpecial,/toge ¡Con tanto poder
 5366,1,Resurrect,Aún no he terminado.
 5366,1,PartyJoin,/ci1 1 Es un placer.
 5366,1,Marvelous,Eso fue mejor de lo que esperaba.
@@ -5387,7 +5387,7 @@ section,group,id,text
 5368,0,IncidentJsApcBeginEvo,/toge /ci3 2 ななっ、なんだよ！<br>すっげー巨大な敵性反応！？<br>相棒、気をつけろよ！
 5368,1,EnemyWeak,"¡Vaya, estos tipos no parecen gran cosa!"
 5368,1,EnemyLarge,"Whoa, ese es grande..."
-5368,1,EnemyBoss,"¡Espera un segundo!<br>¡Yo no me apunté a esto!"
+5368,1,EnemyBoss,¡Espera un segundo!<br>¡Yo no me apunté a esto!
 5368,1,EnemyRare,¿Qué es esa cosa?<br>No todos los días ves uno de esos.
 5368,1,EnemyBoost,...¡Tengo un mal presentimiento sobre esto!
 5368,1,DestroyEnemy1,¡Muy bien!
@@ -5396,7 +5396,7 @@ section,group,id,text
 5368,1,CondFreeze,¡F-f-f-frío!
 5368,1,CondBurn,¡Caliente! ¡Qué calor!
 5368,1,CondShock,¡Me he q-q-q-q-q-quedado entumecido!
-5368,1,CondPoison,"Ugh... ¿veneno...?<br>No me siento muy bien."
+5368,1,CondPoison,Ugh... ¿veneno...?<br>No me siento muy bien.
 5368,1,CondPanic,¡El mundo entero está dando vueltas!
 5368,1,CondStan,No puedo mover ni un músculo...<br>¿Qué está pasando?
 5368,1,CondMirage,¿Qué demonios...?<br>¿Por qué se ve todo borroso?
@@ -5442,15 +5442,15 @@ section,group,id,text
 5368,1,TrapRescueOther,¡Eso estuvo cerca!
 5368,1,MemberDamaged,¡No intentes ser un héroe!
 5368,1,MemberDead,¡Maldición!<br>¿¡Qué acaba de pasar!?
-5368,1,AbilityExe,/toge Jeje, ¡ahora estamos cocinando con fuego!
+5368,1,AbilityExe,/toge Jeje
 5368,1,AbilitySpecial,/toge ¡Déjame manejar esto!
 5368,1,Resurrect,¡Apenas estoy empezando!
-5368,1,PartyJoin,/ci1 1 ¡Cuento contigo como siempre, colega!
+5368,1,PartyJoin,/ci1 1 ¡Cuento contigo como siempre
 5368,1,Marvelous,¡Increíble!
-5368,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye, colega! ¡Buen momento!<br>Tengo una horda de enemigos encima.<br>¿Te importaría acompañarme un poco?
+5368,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye
 5368,1,IncidentJsApcFailure,"Me estoy quedando sin energía...<br>Lo siento, colega, tengo que salir de aquí."
-5368,1,IncidentJsApcSuccess,/ci2 1 Wow, realmente lo logramos.<br>¡Gracias, colega! Lo logramos,<br>gracias a ti.
-5368,1,IncidentJsApcBeginEvo,/toge /ci3 2 ¿Q-Qué?<br>¡Acabamos de detectar un enemigo masivo<br>en el escáner! ¡Cuidado, colega!
+5368,1,IncidentJsApcSuccess,/ci2 1 Wow
+5368,1,IncidentJsApcBeginEvo,/toge /ci3 2 ¿Q-Qué?<br>¡Acabamos de detectar un enemigo masivo<br>en el escáner! ¡Cuidado
 5369,0,EnemyWeak,大した相手じゃないわ
 5369,0,EnemyLarge,大きくて目障りね
 5369,0,EnemyBoss,油断しないほうがよさそうね
@@ -5523,7 +5523,7 @@ section,group,id,text
 5369,1,DestroyEnemy1,¡Fuera de mi camino!
 5369,1,DestroyEnemy2,¡Atrás!
 5369,1,DestroyEnemy3,¡Siguiente!
-5369,1,CondFreeze,Rrgh... ¡Hielo, no!
+5369,1,CondFreeze,Rrgh... ¡Hielo
 5369,1,CondBurn,¡Demasiado caliente...!
 5369,1,CondShock,Rrgh... ¡me siento entumecido!
 5369,1,CondPoison,Veneno... Realmente te has pasado ahora.
@@ -5573,7 +5573,7 @@ section,group,id,text
 5369,1,AbilityExe,¡Ahora estoy en calor!
 5369,1,AbilitySpecial,"¡Vamos, Aurora! ¡A mi señal!"
 5369,1,Resurrect,Parece que no voy a descansar todavía.
-5369,1,PartyJoin,/ci1 1 Hora de trabajar, Aurora.
+5369,1,PartyJoin,/ci1 1 Hora de trabajar
 5369,1,Marvelous,"Eres... realmente algo, ¿eh?"
 5369,1,IncidentJsApcBegin,/ci2 2 ¿No crees que podrías echarme<br>una mano por un segundo?
 5369,1,IncidentJsApcFailure,¡Un resultado decepcionante!
@@ -5648,7 +5648,7 @@ section,group,id,text
 5370,1,EnemyLarge,El tamaño por sí solo no me asusta.
 5370,1,EnemyBoss,Este parece un oponente bastante duro.
 5370,1,EnemyRare,"Hmm, no sabía que se podían<br>encontrar esos aquí."
-5360,1,EnemyBoost,Esa forma... ¿se ha vuelto completamente loca?
+5370,1,EnemyBoost,That form... has it gone completely crazed?
 5370,1,DestroyEnemy1,¡El siguiente! ¡Vamos!
 5370,1,DestroyEnemy2,¿Es eso todo lo que tienes?
 5370,1,DestroyEnemy3,¡Estás acabado!
@@ -5662,7 +5662,7 @@ section,group,id,text
 5370,1,Die,Maldición... no pude...
 5370,1,ThankHeal,Permíteme ofrecerte mis agradecimientos.
 5370,1,ThankBuff,¡Buena elección!
-5370,1,ThankCure,"De vuelta a la normalidad por fin."
+5370,1,ThankCure,De vuelta a la normalidad por fin.
 5370,1,DefeatEnemy,¿Terminamos de limpiar aquí?
 5370,1,LevelUp,"Hey, no está nada mal, ¿eh?"
 5370,1,InvokeSkill1,¡No seré blando contigo!
@@ -5686,7 +5686,7 @@ section,group,id,text
 5370,1,IncidentStart,¿Se acerca algo?
 5370,1,IncidentSuccess,"Uff, parece que tuvimos éxito."
 5370,1,IncidentFailure,Esto no tiene nada que ver conmigo.
-5370,1,PSE,¿Es esa cosa del "PSE"?
+5370,1,PSE,"¿Es esa cosa del ""PSE""?"
 5370,1,PSELevelUp,"Se vuelve más y más fuerte, ¿eh?"
 5370,1,PSEBurst,Hmmm... así que esto es un estallido.<br>Supongo que los fotones deben estar en estado excitado.
 5370,1,HP30,Hora de ponerse serio.
@@ -5707,8 +5707,8 @@ section,group,id,text
 5370,1,Marvelous,...María estaría impresionada.
 5370,1,IncidentJsApcBegin,/toge /ci3 1 No puedo quedarme aquí parado mirando. Voy<br>a ayudarte; ¡limpiemos esto!
 5370,1,IncidentJsApcFailure,"Hmm... Parece que todavía estoy un poco verde. Lo siento, pero <br>voy a retroceder."
-5370,1,IncidentJsApcSuccess,/ci2 2 Problema resuelto... tengo que irme ahora, así que intenta<br>no meterte en problemas, ¿vale?
-5370,1,IncidentJsApcBeginEvo,/ci1 1 Hmm....? ¿En serio?<br>De alguna manera, parece que<br>aún no hemos terminado.
+5370,1,IncidentJsApcSuccess,/ci2 2 Problema resuelto... tengo que irme ahora
+5370,1,IncidentJsApcBeginEvo,/ci1 1 Hmm....? ¿En serio?<br>De alguna manera
 5371,0,EnemyWeak,まとめて吹き飛ばしてやる！
 5371,0,EnemyLarge,大きさなんて関係ない！<br>まとめて吹っ飛ばーす！
 5371,0,EnemyBoss,強敵だな！<br>私に任せておけ！
@@ -5771,11 +5771,11 @@ section,group,id,text
 5371,0,IncidentJsApcFailure,/mn10  ぐっ……情けない……<br>すまない、私は退かせてもらう。
 5371,0,IncidentJsApcSuccess,/mn15 /ci2 1 ふっふっふ、決まったな！<br>困ったときはいつでも呼ぶといい！<br>それじゃあな！
 5371,0,IncidentJsApcBeginEvo,/mn15 /ci2 1 むっ、まだ来るのか！<br>あれも爆破してしまっていいのだろう？
-5371,1,EnemyWeak,"¡Voy a hacerlos volar a todos!"
-5371,1,EnemyLarge,"¡No me importa lo grandes que sean!<br>¡Voy a hacerlos volar a todos!"
-5371,1,EnemyBoss,"¡Ese es un enemigo fuerte!<br>¡Déjenme encargarme de él!"
+5371,1,EnemyWeak,¡Voy a hacerlos volar a todos!
+5371,1,EnemyLarge,¡No me importa lo grandes que sean!<br>¡Voy a hacerlos volar a todos!
+5371,1,EnemyBoss,¡Ese es un enemigo fuerte!<br>¡Déjenme encargarme de él!
 5371,1,EnemyRare,¿Hm? Esa de ahí... ¡es una raza rara!
-5371,1,EnemyBoost,"Puedo sentirlo... Este es peligroso.<br>¡Trabajemos juntos y no hagan nada estúpido!"
+5371,1,EnemyBoost,Puedo sentirlo... Este es peligroso.<br>¡Trabajemos juntos y no hagan nada estúpido!
 5371,1,DestroyEnemy1,¡Así es como se hace!
 5371,1,DestroyEnemy2,"Hermoso, ¿eh?"
 5371,1,DestroyEnemy3,¡Está bien si me admiran!
@@ -5789,27 +5789,27 @@ section,group,id,text
 5371,1,Die,"Todos siguen peleando, pero yo... yo...."
 5371,1,ThankHeal,"¡Gracias, gracias!"
 5371,1,ThankBuff,¡Gracias! ¡Muchas gracias!
-5371,1,ThankCure,"Aaahhh... ¡eso es refrescante!"
+5371,1,ThankCure,Aaahhh... ¡eso es refrescante!
 5371,1,DefeatEnemy,"Je je, ¡ese es el último!"
 5371,1,LevelUp,¡Jum! ¡Sigo siendo más fuerte que tú!
 5371,1,TechFire,¡Los reduciré a todos a cenizas!
 5371,1,PBFull,"¡Ya basta, cabeza hueca!"
-5371,1,PBRelease,"Por el honor de mi nombre...<br>¡No perderé!"
+5371,1,PBRelease,Por el honor de mi nombre...<br>¡No perderé!
 5371,1,TacticsFree,"¡Muy bien, haré las cosas a mi manera!"
 5371,1,TacticsGuard,"Aww, ¡jugar a la defensiva es aburrido!"
-5371,1,TacticsMassedAttack,"¡Los asaré uno por uno hasta que queden bien crujientes!"
+5371,1,TacticsMassedAttack,¡Los asaré uno por uno hasta que queden bien crujientes!
 5371,1,Avoid,¡Lo vi venir!
 5371,1,HealSelf,¡Hora de curarse!
 5371,1,BuffSelf,¡Puedo cuidarme solo!
-5371,1,HealOther,"¿Acaso ni siquiera sabes<br>cómo curarte a ti mismo?"
+5371,1,HealOther,¿Acaso ni siquiera sabes<br>cómo curarte a ti mismo?
 5371,1,BuffOther,¡Me debes una por esto!
 5371,1,QuestStart1,"Sí, ¡aquí vamos! ¡Yo lideraré el camino!"
 5371,1,QuestStart2,¡Solo porque insistes absolutamente!
 5371,1,QuestEnd1,"Jah, como se esperaba."
 5371,1,QuestEnd2,"Ok, ¡admito que fue un<br>viaje bastante suave!"
-5371,1,IncidentStart,"...¿Eh?<br>¿Está pasando algo?"
+5371,1,IncidentStart,...¿Eh?<br>¿Está pasando algo?
 5371,1,IncidentSuccess,¡Lo logramos!
-5371,1,IncidentFailure,¿En serio...?
+5371,1,IncidentFailure,/mn10 ¡Guh.... patético....<br>Lo siento
 5371,1,PSE,"¿Eh, qué demonios!?<br>¡Los fotones se están volviendo locos!"
 5371,1,PSELevelUp,¡Esto se está poniendo emocionante!<br>¡Aún no hemos terminado!
 5371,1,PSEBurst,¡Wow! ¡Esto es fantástico!<br>¡Incluso mejor de lo que había oído!
@@ -5825,13 +5825,13 @@ section,group,id,text
 5371,1,MemberDamaged,¡Retrocede y déjame manejar esto!
 5371,1,MemberDead,"¡Haré que paguen por esto, pase lo que pase!"
 5371,1,AbilityExe,/toge ¡Jum! ¡Ahora estoy en mi zona!
-5371,1,AbilitySpecial,/toge ¡Muy bien, ahora es mi turno!
+5371,1,AbilitySpecial,/toge ¡Muy bien
 5371,1,Resurrect,.... ¡Ahora también tengo gente que proteger!
 5371,1,PartyJoin,/ci1 1 ¡Solo porque insistes absolutamente!
-5371,1,Marvelous,"Jum. Bastante astuto."
-5371,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye, cabeza hueca! ¿Estás bien?!<br>¡Yo también voy a ayudar! ¡Déjamelo a mí!
-5371,1,IncidentFailure,/mn10 ¡Guh.... patético....<br>Lo siento, me voy ya."
-5371,1,IncidentJsApcSuccess,/mn15 /ci2 1 Je je je, ¡listo!<br>¡Llámame siempre que estés en problemas!<br>¡Bueno, hasta la próxima!"
+5371,1,Marvelous,Jum. Bastante astuto.
+5371,1,IncidentJsApcBegin,/toge /ci2 2 ¡Oye
+5371,1,IncidentJsApcFailure,"/mn10 Guh....pitiful....<br>I'm sorry, I’m leaving now."
+5371,1,IncidentJsApcSuccess,/mn15 /ci2 1 Je je je
 5371,1,IncidentJsApcBeginEvo,/mn15 /ci2 1 ¿Eh? ¡Siguen viniendo!<br>¿Podemos hacerlos volar también?
 5372,0,EnemyWeak,僕たちの敵じゃあないね！
 5372,0,EnemyLarge,おやおや、ずいぶん大きいやつだ<br>だが、僕たちにかかれば！
@@ -5937,10 +5937,10 @@ section,group,id,text
 5372,1,QuestEnd2,"¡Excelente, mon ami!"
 5372,1,IncidentStart,"Parece que algo está sucediendo, ¡mon ami!"
 5372,1,IncidentSuccess,Eso nos tomó por sorpresa<br>¡pero lo logramos!
-5372,1,IncidentFailure,"...Supongo que lo manejé mal, ¿eh?"
+5372,1,IncidentFailure,"Si yo cayera, ¡mis bebés podrían.....!<br>¡Lamento terriblemente, pero me retiro <br>antes de que eso suceda!"
 5372,1,PSE,Mis bebés se están inquietando...<br>¿Podría ser un PSE?
 5372,1,PSELevelUp,"Sigamos avanzando, ¿te parece?"
-5372,1,PSEBurst,"¿Pueden verlo todos...?<br>¡Qué hermoso PSE burst!"
+5372,1,PSEBurst,¿Pueden verlo todos...?<br>¡Qué hermoso PSE burst!
 5372,1,HP30,Mis bebés me han abandonado<br>a esta situación inauspiciosa...
 5372,1,HP10,Por el bien de mis amados bebés...<br>¡no debo caer todavía!
 5372,1,ItemRare,"¿Oh? Ahora ese no es un mal hallazgo, ¿verdad?<br>¡Felicidades, mon ami!"
@@ -5958,9 +5958,9 @@ section,group,id,text
 5372,1,PartyJoin,"/toge /ci2 1 ¡Gracias por dejarme unir, mon ami!"
 5372,1,Marvelous,/toge ¡Estamos justo detrás de ti!
 5372,1,IncidentJsApcBegin,"/ci2 2 ¡Gran momento, mon ami!<br>Estoy pidiendo dulces con mis adorables cariños.<br>¿Podrías echarnos una mano por un momento?"
-5372,1,IncidentFailure,"Si yo cayera, ¡mis bebés podrían.....!<br>¡Lamento terriblemente, pero me retiro <br>antes de que eso suceda!"
+5372,1,IncidentJsApcFailure,"If I were to fall, my babies would.....!<br>I'm terribly sorry, but I'm withdrawing <br>before that happens!"
 5372,1,IncidentJsApcSuccess,"/ci2 1 ¡Gracias, mon ami!<br>¡Mis bebés también están encantados!"
-5372,1,IncidentJsApcBeginEvo,/ci1 Parece que aún no hemos recolectado todos los <br>dulces, ¿eh? ¡Parece que siguen viniendo!
+5372,1,IncidentJsApcBeginEvo,/ci1 Parece que aún no hemos recolectado todos los <br>dulces
 5373,0,EnemyWeak,あらあらあ、雑魚さんが<br>迷い込んだんですかあ？
 5373,0,EnemyLarge,大きいことはいいことですよお<br>どこを狙っても当たりますからねえ
 5373,0,EnemyBoss,すごい強そうな感じですねえ<br>楽しそうな相手ですよお
@@ -6041,7 +6041,7 @@ section,group,id,text
 5373,1,CondPanic,¡Estar presa del pánico no es<br>diferente de lo loca que ya<br>siempre es Risa de todos modos!
 5373,1,CondStan,"Aunque sea solo por un<br>ratito, estar atada...<br>es bastante ardiente."
 5373,1,CondMirage,¡No puedo ver! ¡Da igual!<br>¡Ni que apuntara alguna vez de todas formas!
-5373,1,Die,Esto... no está tan mal...
+5373,1,Die,"Es demasiado... por favor, déjenme descansar..."
 5373,1,ThankHeal,"¡Ji-ji, gracias!"
 5373,1,ThankBuff,Me aseguraré de hacer un bueeen uso de eso.
 5373,1,ThankCure,"Ahora que me siento mucho mejor,<br>¡es hora de más masacre!"
@@ -6068,7 +6068,7 @@ section,group,id,text
 5373,1,IncidentStart,Ji-ji-ji<br>¡Creo que se nos viene una matanza!
 5373,1,IncidentSuccess,"Parece que salió muy bien, ¿eh?"
 5373,1,IncidentFailure,"Bueno, ESO no fue muy estimulante..."
-5373,1,PSE,¡Oh, cielos, oh, cielos!<br>¿Podría ser lo que creo que es?
+5373,1,PSE,¡Oh
 5373,1,PSELevelUp,"¡Sí, sí, sí, SÍ!<br>¡Sigamos así!"
 5373,1,PSEBurst,"Ji-ji, ¡es tan hermoso<br>que podría desmayarme!"
 5373,1,HP30,"Oooh, ¡esto se siente bien!"
@@ -6081,16 +6081,16 @@ section,group,id,text
 5373,1,ThankTrapRescue,"Aww, ¿ya terminó<br>la hora de jugar con la trampa?"
 5373,1,TrapRescueOther,¿Cómo estuvo la trampa?<br>¿Te gustó?
 5373,1,MemberDamaged,"¡Oye, Risa es la única a la que se le permite correr riesgos tan locos como ese!"
-5373,1,MemberDead,Grr...grrrr.....<br>Oh, cielos.<br>Hace tiempo que no me enojaba tanto.
+5373,1,MemberDead,Grr...grrrr.....<br>Oh
 5373,1,AbilityExe,/toge ¡Muajajaja! ¡Me siento BIEN!
 5373,1,AbilitySpecial,/toge ¡Déjaselo a Risa!
 5373,1,Resurrect,¡Buenos días!
-5373,1,PartyJoin,/ci1 1 Ten cuidado, ¿okay?
+5373,1,PartyJoin,/ci1 1 Ten cuidado
 5373,1,Marvelous,¡Me robaste la baja!
-5373,1,IncidentJsApcBegin,/mn9 /ci2 4 ¡Oh, cielos, cielos!<br>¿También estás aquí para cazar malos?<br>Es realmente divertido, ¿no?
+5373,1,IncidentJsApcBegin,/mn9 /ci2 4 ¡Oh
 5373,1,IncidentJsApcFailure,Ummm.....?<br>Risa se está aburriendo totalmente.<br>Me voy a casa. ¡Adiós-adiós!
-5373,1,IncidentJsApcSuccess,/ci2 4 ¿No te encanta la fiesta?<br>¡ME ENCANTA rociar balas por todas partes!<br>Muy bien, Risa se va a divertir un poco más ahora.
-5373,1,IncidentJsApcBeginEvo,/ci2 4 ¡Oh, cielos, cielos!<br>¡Siguen viniendo!
+5373,1,IncidentJsApcSuccess,/ci2 4 ¿No te encanta la fiesta?<br>¡ME ENCANTA rociar balas por todas partes!<br>Muy bien
+5373,1,IncidentJsApcBeginEvo,/ci2 4 ¡Oh
 5374,0,EnemyWeak,これなら私だけでも<br>余裕かもですね！
 5374,0,EnemyLarge,おっきいですねー
 5374,0,EnemyBoss,と、とっても強そうですね<br>気を引き締めないと
@@ -6158,7 +6158,7 @@ section,group,id,text
 5374,0,IncidentJsApcBeginEvo,/ci1 1 わわっ！<br>まだ来そうですよ！
 5374,1,EnemyWeak,¡Probablemente podría enfrentarme a ellos yo solo!
 5374,1,EnemyLarge,¡Ahora ESO sí que es grande!
-5374,1,EnemyBoss,"Se ve bastante fuerte.<br>¡Harían bien en prepararse!"
+5374,1,EnemyBoss,Se ve bastante fuerte.<br>¡Harían bien en prepararse!
 5374,1,EnemyRare,¡Mira!<br>¡Es una especie rara!
 5374,1,EnemyBoost,Esa cosa posee un poder vil...
 5374,1,DestroyEnemy1,¡Atrapé a uno!
@@ -6189,7 +6189,7 @@ section,group,id,text
 5374,1,Avoid,¡Whoosh!
 5374,1,HealSelf,¡Me siento cien veces mejor!
 5374,1,BuffSelf,"¡Todo está listo, y yo también!"
-5374,1,HealOther,"¿¡Estás bien!?<br>¿Se han curado tus heridas?"
+5374,1,HealOther,¿¡Estás bien!?<br>¿Se han curado tus heridas?
 5374,1,BuffOther,¡Asegúrate de estar listo!
 5374,1,QuestStart1,¡Allá vamos!
 5374,1,QuestStart2,"¡Cuento contigo, <br><%me>!"
@@ -6217,7 +6217,7 @@ section,group,id,text
 5374,1,Resurrect,¡No me rendiré!
 5374,1,PartyJoin,/ci1 1 ¡Estoy listo para pelear!
 5374,1,Marvelous,¡Genial como siempre!
-5374,1,IncidentJsApcBegin,/ci1 2 ¡Ah! ¿Podrías ayudarme aquí?<br>Vine con esos niños,<br>¡y terminé metido en esto.....!
+5374,1,IncidentJsApcBegin,/ci1 2 ¡Ah! ¿Podrías ayudarme aquí?<br>Vine con esos niños
 5374,1,IncidentJsApcFailure,"Quiero seguir pidiendo dulces, pero<br>no voy a tentar a la suerte.<br>Voy a volver para recuperarme. Lo siento...."
 5374,1,IncidentJsApcSuccess,/ci2 1 ¡Gracias por la ayuda!<br>Ahora puedo tomarme mi tiempo y disfrutar<br>pidiendo dulces con esos niños.
 5374,1,IncidentJsApcBeginEvo,/ci1 1 ¡Whaaa-!<br>¡Parece que siguen viniendo!
@@ -6253,7 +6253,7 @@ section,group,id,text
 5375,0,HealOther,回復は大切ニャン！
 5375,0,BuffOther,補助も忘れちゃだめニャン！
 5375,0,QuestStart1,さあいくニャン！
-5375,0,QuestEnd1,やったニャン！
+5375,0,QuestEnd1,やったニャン！　
 5375,0,IncidentStart,何かが起きそうニャン！
 5375,0,IncidentSuccess,やったニャン！　成功ニャン！
 5375,0,IncidentFailure,ニャアア……ごめんニャン
@@ -6283,7 +6283,7 @@ section,group,id,text
 5375,1,EnemyWeak,¡Miau!
 5375,1,EnemyLarge,¡Es grande miau!
 5375,1,EnemyBoss,¡Miau... necesitamos tener cuidado miau!
-5375,1,EnemyRare,"¿Miau-mow?<br>¡Eso es un objeto raro miau!"
+5375,1,EnemyRare,¿Miau-mow?<br>¡Eso es un objeto raro miau!
 5375,1,EnemyBoost,¡Ese está demasiado emocionado miau!
 5375,1,DestroyEnemy1,¡Los atrapé miau!
 5375,1,DestroyEnemy2,¡Una presa fácil miau!
@@ -6302,8 +6302,8 @@ section,group,id,text
 5375,1,DefeatEnemy,¡Al siguiente miau!
 5375,1,LevelUp,"¡Miaugnific, subiste de nivel!"
 5375,1,InvokeSkill1,¡Resolvamos esto ahora miau!
-5375,1,InvokeSkill2,¡Miau, toma esto!
-5375,1,InvokeSkill3,¡Miau, prepárense!
+5375,1,InvokeSkill2,¡Miau
+5375,1,InvokeSkill3,¡Miau
 5375,1,PBFull,¡Los preparativos están miau completos!
 5375,1,PBRelease,"¡Discúlpate todo lo que quieras, no te perdonaré miau!"
 5375,1,Avoid,¡Miau!
@@ -6317,11 +6317,11 @@ section,group,id,text
 5375,1,IncidentSuccess,"¡Miau, lo logramos!"
 5375,1,IncidentFailure,Miauww... lo siento.
 5375,1,PSE,¡Los fotones se están activando miau!
-5375,1,PSELevelUp,¡Miau, mantén el ritmo!
+5375,1,PSELevelUp,¡Miau
 5375,1,PSEBurst,Meowzers...<br>¡Los fotones brillan tanto!
 5375,1,HP30,¿Fui demasiado descuidado hace un momento miau?
 5375,1,HP10,"Miau, esto es peor que quedarse atrapado en un árbol..."
-5375,1,ItemRare,¡Miau, ese es un buen objeto!
+5375,1,ItemRare,¡Miau
 5375,1,DamageSmall,¿¡Miau!?
 5375,1,DamageMiddle,¡Meeeouch!
 5375,1,DamageLarge,"¡Miau-y, esto está mal!"
@@ -6337,8 +6337,8 @@ section,group,id,text
 5375,1,Marvelous,¡Meowsers!
 5375,1,IncidentJsApcBegin,/toge /ci2 1 ¡Gran momento miau!<br>¡Ayúdame miau!
 5375,1,IncidentJsApcFailure,"No puedo aguantar más.....<br>Me retiro, miau."
-5375,1,IncidentJsApcSuccess,/ci2 1 ¡Lo logramos, lo logramooos!<br>¡Éxito miau!"
-5375,1,IncidentJsApcBeginEvo,/ci5 2 Esta presencia...<br>¡Miau, siguen viniendo!
+5375,1,IncidentJsApcSuccess,/ci2 1 ¡Lo logramos
+5375,1,IncidentJsApcBeginEvo,/ci5 2 Esta presencia...<br>¡Miau
 5376,0,EnemyWeak,ザコが来たな！
 5376,0,EnemyLarge,でっけーのが来たな！
 5376,0,EnemyBoss,へへっ、楽しめそうだ！
@@ -6451,12 +6451,12 @@ section,group,id,text
 5376,1,AbilityExe,¡Voy a hacerte explotar con este poder!
 5376,1,AbilitySpecial,"Muy bien, ¡te voy a rematar!"
 5376,1,Resurrect,"Je, ¡gracias por el empujoncito!"
-5376,1,PartyJoin,/ci2 1 Je je, ¡solo déjamelo a mí!
+5376,1,PartyJoin,/ci2 1 Je je
 5376,1,Marvelous,¡Lo estás bordando!
-5376,1,IncidentJsApcBegin,/ci2 1 ¡Oh, viniste en un momento excelente!<br>¡Échame una mano!
+5376,1,IncidentJsApcBegin,/ci2 1 ¡Oh
 5376,1,IncidentJsApcFailure,"Grrr, ¿hablas en serio.....!?<br>¡Lo siento, me retiro!"
 5376,1,IncidentJsApcSuccess,/ci2 2 ¡Parece que terminamos aquí!<br>¡Eso fue divertido! ¡Hagámoslo de nuevo en otro momento!
-5376,1,IncidentJsApcBeginEvo,/ci2 1 ¡Parece que todavía queda algo!<br>¡Jum, voy a disfrutar esto!
+5376,1,IncidentJsApcBeginEvo,/ci2 1 ¡Parece que todavía queda algo!<br>¡Jum
 5382,0,EnemyWeak,私たちの敵ではないな
 5382,0,EnemyLarge,大型か
 5382,0,EnemyBoss,強敵のようだな
@@ -6581,10 +6581,10 @@ section,group,id,text
 5382,1,Resurrect,¡Un poco de muerte no me va a detener!
 5382,1,PartyJoin,/ci2 1 Hagamos esto.
 5382,1,Marvelous,Así que de esto eres capaz.
-5382,1,IncidentJsApcBegin,/ci1 3 Genial, gracias por echar una mano.<br>Hmm, ¿qué pasa...? ¿Este atuendo?<br>Escuché que era la vestimenta formal de esta era...
+5382,1,IncidentJsApcBegin,/ci1 3 Genial
 5382,1,IncidentJsApcFailure,"Lo siento...<br>No puedo seguir luchando.<br>Aunque soy reacio, debo retirarme."
-5382,1,IncidentJsApcSuccess,/ci1 1 Estoy agradecido por tu ayuda.<br>Er, no... estoy seguro de que en este caso debería<br>decir 'Feliz Navidad', ¿cierto?
-5382,1,IncidentJsApcBeginEvo,/ci1 1 ¿Se acabó?<br>...No, parece que siguen viniendo.<br>¿Te quedarás conmigo un poco más?
+5382,1,IncidentJsApcSuccess,/ci1 1 Estoy agradecido por tu ayuda.<br>Er
+5382,1,IncidentJsApcBeginEvo,/ci1 1 ¿Se acabó?<br>...No
 5383,0,EnemyWeak,ふふふ……このぐらいの相手なら<br>私一人でも十分ですわ！
 5383,0,EnemyLarge,大きければいいというものでは<br>ないんですからね！
 5383,0,EnemyBoss,うう……なんだか強そう……<br>見なかったことにしたいですわ
@@ -6651,7 +6651,7 @@ section,group,id,text
 5383,0,IncidentJsApcFailure,うう……これ以上はちょっと……<br>申し訳ありませんが<br>先に撤退させていただきます……
 5383,0,IncidentJsApcSuccess,/mn15 /ci2 1 この格好ならば、無敵！<br>ご感想、お待ちしております！<br>それと、メリークリスマスですわ！
 5383,0,IncidentJsApcBeginEvo,/ci1 2 ふー、ようやく落ち着いて……<br>……とは、いかないようですわね！
-5383,1,EnemyWeak,"Jajaja... ¡puedo manejar a oponentes<br>como estos fácilmente por mi cuenta!"
+5383,1,EnemyWeak,Jajaja... ¡puedo manejar a oponentes<br>como estos fácilmente por mi cuenta!
 5383,1,EnemyLarge,"¡""Cuanto más grande, mejor"" no<br>aplica en este caso!"
 5383,1,EnemyBoss,Ooh... parece algo poderoso...<br>¡Ojalá pudiera fingir que no lo vi!
 5383,1,EnemyRare,"Oh, ¿es ese de allá<br>una raza rara, por casualidad?"
@@ -6667,7 +6667,7 @@ section,group,id,text
 5383,1,CondPanic,Jejeje...<br>¡En este momento siento que no hay<br>nada que no pueda hacer!
 5383,1,CondStan,"Digas lo que digas,<br>¡no daré ni un solo paso de este lugar!<br>Es decir, ¡NO PUEDO moverme!"
 5383,1,CondMirage,"Siempre he sido una soñadora, ¡pero ilusiones como<br>estas son diferentes! Espera... allá...<br>¿es ese un pastel delicioso lo que veo?"
-5373,1,Die,"Es demasiado... por favor, déjenme descansar..."
+5383,1,Die,"It's too much... please, let me rest..."
 5383,1,ThankHeal,¡Tienes mi agradecimiento!
 5383,1,ThankBuff,¡Me siento más fuerte ahora!
 5383,1,ThankCure,¡Eso realmente dio en el clavo!
@@ -6678,9 +6678,9 @@ section,group,id,text
 5383,1,InvokeSkill3,¡Cumplo con mi deber cuando es necesario!
 5383,1,PBFull,¡Estoy lista por aquí!
 5383,1,PBRelease,"¡Por favor, préstame tu poder!"
-5383,1,TacticsFree,¡Déjamelo a mí!<br>¡Ahora les mostraré cómo hago las cosas<br>cuando puedo moverme con más libertad!"
-5383,1,TacticsGuard,¡Déjamelo a mí!<br>¡Mira y aprende cómo mantener tu posición correctamente!"
-5383,1,TacticsMassedAttack,¡Déjamelo a mí!<br>¡Vamos con fuego concentrado!"
+5383,1,TacticsFree,"¡Déjamelo a mí!<br>¡Ahora les mostraré cómo hago las cosas<br>cuando puedo moverme con más libertad!"""
+5383,1,TacticsGuard,"¡Déjamelo a mí!<br>¡Mira y aprende cómo mantener tu posición correctamente!"""
+5383,1,TacticsMassedAttack,"¡Déjamelo a mí!<br>¡Vamos con fuego concentrado!"""
 5383,1,TacticsAttack,"¡Déjamelo a mí!<br>...espera, ¡¿soy el señuelo?!"
 5383,1,Avoid,¡Una esquiva hermosa!
 5383,1,HealSelf,"No quiero morir todavía, ¿sabes?"
@@ -6689,31 +6689,31 @@ section,group,id,text
 5383,1,BuffOther,¡No olvides potenciar tus habilidades!
 5383,1,QuestStart1,¡Espero esto con ansias!
 5383,1,QuestStart2,"Cuando estoy contigo,<br>¡siento que puedo hacer cualquier cosa!<br>¡Pero tal vez sea solo mi imaginación!"
-5383,1,QuestEnd1,Puede que me hayas llevado<br>todo el camino...<br>¡Pero bien está lo que bien acaba!"
+5383,1,QuestEnd1,"Puede que me hayas llevado<br>todo el camino...<br>¡Pero bien está lo que bien acaba!"""
 5383,1,QuestEnd2,"Y con eso, ¡Misión Cumplida!"
-5383,1,IncidentStart,¡Crecemos más al superar obstáculos!<br>¡Estoy lista para lo que venga!"
+5383,1,IncidentStart,"¡Crecemos más al superar obstáculos!<br>¡Estoy lista para lo que venga!"""
 5383,1,IncidentSuccess,"¡Lo logramos!<br>Fue fácil porque estoy contigo...<br>En realidad no, ¡todo es gracias a ti!"
 5383,1,IncidentFailure,Ughh...<br>He arruinado nuestros esfuerzos...
 5383,1,PSE,"Hmm, ¡¿qué es esto!?<br>¡Se siente como un PSE!"
-5383,1,PSELevelUp,¡Muy bien hecho!<br>¡Sigamos así!"
-5383,1,PSEBurst,¡Maravilloso!<br>¡Esto es un PSE Burst!"
+5383,1,PSELevelUp,"¡Muy bien hecho!<br>¡Sigamos así!"""
+5383,1,PSEBurst,"¡Maravilloso!<br>¡Esto es un PSE Burst!"""
 5383,1,HP30,"De alguna manera, siento que todos<br>están apuntando hacia mí..."
-5383,1,HP10,He completado un análisis de fuerza de combate.<br>¡Están golpeando al más débil... YO!<br>...P-por favor, ¡ayúdame!"
+5383,1,HP10,He completado un análisis de fuerza de combate.<br>¡Están golpeando al más débil... YO!<br>...P-por favor
 5383,1,ItemRare,¿Encontraste algo prometedor?
 5383,1,DamageSmall,¡Ay!
 5383,1,DamageMiddle,¡Whoa!
 5383,1,DamageLarge,"Urk, ese fue malo..."
 5383,1,Trap,"Qué... ¡es una trampa!<br>¡¿Por qué ponen trampas, de todos modos!?"
 5383,1,ThankTrapRescue,G-Gracias por el rescate...
-5383,1,TrapRescueOther,¡Por favor, ten cuidado con las trampas!<br>¡Yo casi pisé una hace un momento también!"
+5383,1,TrapRescueOther,¡Por favor
 5383,1,MemberDamaged,¡No te esfuerces demasiado!
 5383,1,MemberDead,...No olvidaré esto.<br>¡Pagarás por ello!
-5383,1,AbilityExe,/toge Jejeje, ¡ahora<br>es mi turno!"
+5383,1,AbilityExe,/toge Jejeje
 5383,1,AbilitySpecial,/toge ¡Yo me encargo de esto!
 5383,1,Resurrect,¿Nos ponemos en marcha?
 5383,1,PartyJoin,/ci1 1 ¡Estoy aquí!
 5383,1,Marvelous,¡Qué habilidad tan asombrosa!
-5383,1,IncidentJsApcBegin,/mn15 2 ¡Ah! ¡Llegas justo a tiempo!<br>He querido que me vieras...<br>¡Pero veo que no estás en condiciones!"
+5383,1,IncidentJsApcBegin,"/mn15 2 ¡Ah! ¡Llegas justo a tiempo!<br>He querido que me vieras...<br>¡Pero veo que no estás en condiciones!"""
 5383,1,IncidentJsApcFailure,"Urgh... no creo que pueda seguir adelante...<br>Lo siento muchísimo, pero<br>me temo que debo retirarme."
 5383,1,IncidentJsApcSuccess,"/mn15 1 ¡Soy intocable con este atuendo!<br>¡Estoy ansiosa por saber qué piensas!<br>¡Y, Feliz Navidad!"
 5383,1,IncidentJsApcBeginEvo,"/ci1 2 Uff... finalmente puedo relajarme... Er, supongo que aún no puedo decir eso."
@@ -6795,7 +6795,7 @@ section,group,id,text
 5384,1,EnemyRare,"¡Wow, una raza rara!"
 5384,1,EnemyBoost,...Este enemigo realmente me da escalofríos.
 5384,1,WeatherChange,¿Se están inquietando los fotones atmosféricos?
-5384,1,DestroyEnemy1,¡Bueno, eso salió bien!
+5384,1,DestroyEnemy1,¡Bueno
 5384,1,DestroyEnemy2,¡Así es como se hace!
 5384,1,DestroyEnemy3,¡Los tengo!
 5384,1,CondFreeze,¿¡E-estoy congelado!?
@@ -6803,7 +6803,7 @@ section,group,id,text
 5384,1,CondShock,"M-m-mi c-c-cuerpo, ¡está entumecido!"
 5384,1,CondPoison,Ugh... ¿es esto veneno? No me siento muy bien.
 5384,1,CondPanic,"Umm, uhh, ¡ejem!<br>¿Qué se supone que debo hacer de nuevo?<br>¿Solo atacar sin ton ni son?"
-5384,1,CondStan,"¡N-no puedo moverme ni un centímetro!"
+5384,1,CondStan,¡N-no puedo moverme ni un centímetro!
 5384,1,CondMirage,"Augh, qué le pasa a mis ojos..."
 5384,1,Die,Lo siento. He fallado...
 5384,1,ThankHeal,G-Gracias.
@@ -6820,7 +6820,7 @@ section,group,id,text
 5384,1,TechWind,¡Córtalos en pedazos!
 5384,1,TechLight,¡Luz!
 5384,1,TechDark,¡Atraviésalos directamente!
-5384,1,PBFull,"<%me>!<br>¡Nosotros también estamos listos!"
+5384,1,PBFull,<%me>!<br>¡Nosotros también estamos listos!
 5384,1,PBRelease,Ya no estoy solo... ¡ya no más!
 5384,1,TacticsFree,¡Entendido!<br>¡Intentaré hacer las cosas a mi manera!
 5384,1,TacticsGuard,Aquí es donde nos plantamos. Déjamelo a mí. ¡Esperar es lo que mejor hago!
@@ -6834,19 +6834,19 @@ section,group,id,text
 5384,1,QuestStart1,¡Allá vamos! ¡Haré mi mejor esfuerzo!
 5384,1,QuestStart2,Mientras esté contigo... ¡sí!<br>¡Todo estará bien!
 5384,1,QuestEnd1,¡Sabía que podía contar contigo!
-5384,1,QuestEnd2,¡Oh, wow! ¡Increíble!
+5384,1,QuestEnd2,¡Oh
 5384,1,IncidentStart,"Uhh, ¿q-qué está pasando?"
 5384,1,IncidentSuccess,"Gracias a Dios, salimos adelante."
 5384,1,IncidentFailure,Oh... lo siento...<br>Retuve a todos...
 5384,1,PSE,"Siento un cambio en los fotones...<br>¿Podría ser esa cosa del ""PSE""?"
-5384,1,PSELevelUp,¡Parece que estamos progresando bien!<br>¡Sigamos trabajando duro!"
+5384,1,PSELevelUp,"¡Parece que estamos progresando bien!<br>¡Sigamos trabajando duro!"""
 5384,1,PSEBurst,"Whoa... ¿así que esto es ese ""PSE burst""?<br>¡Increíble!"
 5384,1,HP30,Oof... ¡n-no hay problema!<br>¡Sigo bien!
 5384,1,HP10,"...¡Ahhh!<br>Lo siento, pero esto podría terminar mal..."
 5384,1,ItemRare,"Ah, ese es un hallazgo<br>bastante raro, ¿no?"
 5384,1,DamageSmall,¡Ay!
 5384,1,DamageMiddle,¡Ouch!
-5384,1,DamageLarge,¡Ay, ay, ay!
+5384,1,DamageLarge,¡Ay
 5384,1,Trap,"¿Eh, una trampa!?"
 5384,1,ThankTrapRescue,Lo siento por eso...<br>Gracias por la ayuda.
 5384,1,TrapRescueOther,¿Estás bien?<br>Hay que estar atentos a las trampas.
@@ -6857,10 +6857,10 @@ section,group,id,text
 5384,1,Resurrect,¡Voy a darlo todo de aquí en adelante!
 5384,1,PartyJoin,/ci1 1 ¡Saludos!
 5384,1,Marvelous,¡Increíble! ¡Mejor trabajaré duro para estar a la altura!
-5384,1,IncidentJsApcBegin,/mn9 2 ¡Hey, <%me>!<br>Um... te estaba buscando...<br>B-bueno, de todos modos, ¿podrías echarme una mano?"
+5384,1,IncidentJsApcBegin,/mn9 2 ¡Hey
 5384,1,IncidentJsApcFailure,"Lo siento...<br>No puedo seguir peleando más.<br>Aunque soy reacio, debo retirarme."
 5384,1,IncidentJsApcSuccess,"/mn6 1 Uff, volvimos intactos.<br>Um, er... verás, estas ropas...<br>Er... ¡Feliz Navidad!"
-5384,1,IncidentJsApcBeginEvo,/ci3 2 Uff, esto debería hacerlo, finalmente...<br>P-¡pero todavía hay un aura extraña en el aire!<br>...¡Dios mío! ¡Tengo cosas que hacer!"
+5384,1,IncidentJsApcBeginEvo,/ci3 2 Uff
 5385,0,EnemyWeak,よっしゃ、弱いの来たな！
 5385,0,EnemyLarge,/toge あんなのは、ただのデカブツ<br>ぶっ潰すだけだ！
 5385,0,EnemyBoss,/toge 強敵登場、ってヤツだな！<br>気をつけろよ！
@@ -6923,7 +6923,7 @@ section,group,id,text
 5385,1,EnemyWeak,¡Sí! ¡Aquí vienen los debiluchos!
 5385,1,EnemyLarge,"/toge Claro, la cosa es grande,<br>¡pero solo tienes que aplastarla!"
 5385,1,EnemyBoss,/toge ¡Ha llegado un enemigo poderoso!<br>¡En guardia!
-5385,1,EnemyRare,¡Ahora, eso es algo que no se ve muy a menudo!
+5385,1,EnemyRare,¡Ahora
 5385,1,EnemyBoost,"Oye, espera, ¿qué es eso?<br>¡Su grito de guerra es diferente!"
 5385,1,DestroyEnemy1,¿¡Qué te pareció eso!?
 5385,1,DestroyEnemy2,"Muy bien, ¡siguiente!"
@@ -6955,7 +6955,7 @@ section,group,id,text
 5385,1,QuestEnd1,/toge ¡Eso fue divertido!<br>¡Vamos a otra misión juntos en algún momento!
 5385,1,IncidentStart,¿¡Hmm!? ¡Algo se acerca!
 5385,1,IncidentSuccess,¡No podría pedir un mejor resultado!
-5385,1,IncidentFailure,Oh, Dios mío...<br>¡No puedo creer que haya terminado así!
+5385,1,IncidentFailure,Oh
 5385,1,PSE,"Oh, ¡parece que los<br>fotones se están volviendo más activos!"
 5385,1,PSELevelUp,¡A este paso se va a volver una locura total!<br>¡Hay que seguir dándole!
 5385,1,PSEBurst,/toge Whoa... ¡esto es increíble!<br>¡Me estoy emocionando!
@@ -6975,10 +6975,10 @@ section,group,id,text
 5385,1,Resurrect,/toge ¿Pensaste que te habías librado de mí? ¡Piénsalo otra vez!
 5385,1,PartyJoin,/toge /ci2 1 ¡Sé que puedes hacerlo!
 5385,1,Marvelous,"¡Bien hecho, como siempre!"
-5385,1,IncidentJsApcBegin,/toge 1 ¡Oye, ¿me puedes echar una mano aquí!?<br>¡Te lo ruego!"
+5385,1,IncidentJsApcBegin,/toge 1 ¡Oye
 5385,1,IncidentJsApcFailure,Guhh... ¡he fallado!
-5385,1,IncidentJsApcSuccess,/toge 2 ¡Realmente me salvaste el pellejo!<br>¡Gracias!"
-5385,1,IncidentJsApcBeginEvo,/toge 1 ¿Aún sigue pasando algo?<br>¡Bueno, supongo que deberíamos intentar disfrutar esto!"
+5385,1,IncidentJsApcSuccess,"/toge 2 ¡Realmente me salvaste el pellejo!<br>¡Gracias!"""
+5385,1,IncidentJsApcBeginEvo,/toge 1 ¿Aún sigue pasando algo?<br>¡Bueno
 5386,0,EnemyWeak,一気に蹴散らすぞ
 5386,0,EnemyLarge,なかなかの大きさだな
 5386,0,EnemyBoss,強敵登場、といったところか
@@ -7088,7 +7088,7 @@ section,group,id,text
 5386,1,IncidentFailure,"Lo siento, esto me supera..."
 5386,1,PSE,"Los fotones se están excitando...<br>¡Esto debe ser esa cosa del ""PSE""!"
 5386,1,PSELevelUp,¡Sigamos adelante!
-5386,1,PSEBurst,"¡Así que esto es un PSE Burst!"
+5386,1,PSEBurst,¡Así que esto es un PSE Burst!
 5386,1,HP30,Si esto continúa...
 5386,1,HP10,¡No puedo permitirme caer aquí!
 5386,1,ItemRare,Es un gran hallazgo.
@@ -7105,9 +7105,9 @@ section,group,id,text
 5386,1,Resurrect,¡Cosechas lo que siembras!
 5386,1,PartyJoin,/ci2 1 ¿Te gustaría unir fuerzas?
 5386,1,Marvelous,¡Excelente!
-5386,1,IncidentJsApcBegin,/ci2 1 Oye, ¡esperaba que aparecieras! Hay demasiados<br>para mí solo. ¿Puedes ayudarme?
+5386,1,IncidentJsApcBegin,/ci2 1 Oye
 5386,1,IncidentJsApcFailure,"Lo siento, no pretendo usar mi inexperiencia<br>como excusa, pero... me retiro."
-5386,1,IncidentJsApcSuccess,/ci2 1 Genial, lo logramos.<br>Gracias por aceptar mi<br>petición repentina. Estoy muy agradecido.
+5386,1,IncidentJsApcSuccess,/ci2 1 Genial
 5386,1,IncidentJsApcBeginEvo,/ci2 2 ¿Los hemos repelido?<br>¡No! ¡Siguen viniendo!<br>¡Alerta! ¡Alerta!
 5387,0,EnemyWeak,弱いヤツはどいてなさいっ！
 5387,0,EnemyLarge,でっかいだけのヤツなんて！
@@ -7179,10 +7179,10 @@ section,group,id,text
 5387,1,CondFreeze,¡Brrrr! ¿¡Qué!? ¿¡Estoy congelado!?
 5387,1,CondBurn,"¡Ay, eso está CALIENTE! ¿¡Qué te traes entre manos!?"
 5387,1,CondShock,M-mi cuerpo está todo entumecido... ¿¡por qué no puedo moverme!?
-5387,1,CondPoison,"Ugh... no me siento muy bien...<br>¿Es esto... veneno?"
+5387,1,CondPoison,Ugh... no me siento muy bien...<br>¿Es esto... veneno?
 5387,1,CondPanic,¡Ya ni siquiera sé qué es qué!
 5387,1,CondStan,¡N-no puedo moverme!
-5387,1,CondMirage,"Mi visión está borrosa... esto es raro..."
+5387,1,CondMirage,Mi visión está borrosa... esto es raro...
 5387,1,Die,N-no puede ser... ¡no en un lugar como este!
 5387,1,ThankHeal,G-gracias...
 5387,1,ThankBuff,Creo que me salvaste.
@@ -7223,10 +7223,10 @@ section,group,id,text
 5387,1,Resurrect,"Grrrr, ¡ahora sí que me has hecho enojar!<br>¡Es hora de vengarse!"
 5387,1,PartyJoin,/ci2 1 ...Oye.
 5387,1,Marvelous,"¡E-eres un verdadero profesional, ¿no?!"
-5387,1,IncidentJsApcBegin,/toge 1 ¡Ah, excelente momento!<br>¡Estoy nadando en malos, así que necesito toda la ayuda posible!<br>¡Échame una mano, quieres!?"
+5387,1,IncidentJsApcBegin,/toge 1 ¡Ah
 5387,1,IncidentJsApcFailure,"Pensé que podría aguantar un poco más...<br>Bueno, lo siento. ¡Tengo que correr!"
-5387,1,IncidentJsApcSuccess,/ci2 1 Bueno, bueno... parece que hicimos un buen equipo, ¿eh?<br>Además... gracias.
-5387,1,IncidentJsApcBeginEvo,/ci1 2 Guhh... Parece que aún podría aparecer algo.<br>¡Maldición, qué demonios!"
+5387,1,IncidentJsApcSuccess,/ci2 1 Bueno
+5387,1,IncidentJsApcBeginEvo,/ci1 2 Guhh... Parece que aún podría aparecer algo.<br>¡Maldición
 5388,0,EnemyWeak,ケッ、雑魚ばっかかよ！
 5388,0,EnemyLarge,ハッ、図体だけはでかいようだな！
 5388,0,EnemyBoss,少しは手応えのありそうなヤツが<br>出てきたじゃねえか！
@@ -7347,10 +7347,10 @@ section,group,id,text
 5388,1,Resurrect,"Me atraparon bien, ¿no?, ¡esas malditas cucarachas!"
 5388,1,PartyJoin,"/ci1 1 ¡Claro, puedo ayudar a estos niños!"
 5388,1,Marvelous,"Jum, lo hiciste bien."
-5388,1,IncidentJsApcBegin,/ci1 1 ¡Hey! ¡Buen momento!<br>¡Ayúdame a deshacerme de estos perdedores!"
-5388,1,IncidentJsApcFailure,¡Ustedes solo están perdiendo el tiempo!<br>¡No puedo ser visto con perdedores como ustedes!<br>¡Me largo de aquí!"
+5388,1,IncidentJsApcBegin,"/ci1 1 ¡Hey! ¡Buen momento!<br>¡Ayúdame a deshacerme de estos perdedores!"""
+5388,1,IncidentJsApcFailure,"¡Ustedes solo están perdiendo el tiempo!<br>¡No puedo ser visto con perdedores como ustedes!<br>¡Me largo de aquí!"""
 5388,1,IncidentJsApcSuccess,"/ci1 2 ¡Era de esperarse que ganáramos,<br>ya que estoy yo aquí!<br>¡Hasta luego!"
-5388,1,IncidentJsApcBeginEvo,/ci1 2 Y ese es el final de... o no.<br>Increíble, ¡mira cómo se amontonan esas malditas cosas!"
+5388,1,IncidentJsApcBeginEvo,/ci1 2 Y ese es el final de... o no.<br>Increíble
 5389,0,EnemyWeak,ふっ……雑兵のお出ましか
 5389,0,EnemyLarge,無為なる巨体を持ちしものか
 5389,0,EnemyBoss,この気配……ヤツか！
@@ -7425,11 +7425,11 @@ section,group,id,text
 5389,1,CondPanic,¡La sociedad se está desmoronando!
 5389,1,CondStan,¡Atado como una mosca en una telaraña!
 5389,1,CondMirage,¡Un laberinto de ilusiones!
-5389,1,Die,"Este poder que he tejido...<br>se está desvaneciendo..."
+5389,1,Die,Este poder que he tejido...<br>se está desvaneciendo...
 5389,1,ThankHeal,¡Estoy en deuda contigo!
 5389,1,ThankBuff,¡Gracias!
 5389,1,ThankCure,¡Siento las molestias!
-5389,1,DefeatEnemy,"Hemos forjado un momento de paz...<br>¿Procedemos al siguiente campo de batalla?"
+5389,1,DefeatEnemy,Hemos forjado un momento de paz...<br>¿Procedemos al siguiente campo de batalla?
 5389,1,LevelUp,...Así que te has hecho aún más fuerte.
 5389,1,InvokeSkill1,¡Muere!
 5389,1,InvokeSkill2,¡Tu fin está cerca!
@@ -7450,7 +7450,7 @@ section,group,id,text
 5389,1,PSELevelUp,¿Nuestras esperanzas están dando frutos?
 5389,1,PSEBurst,¡Puedo oírlo! ¡El júbilo del mundo!
 5389,1,HP30,¡La crisis es el gran motivador!
-5389,1,HP10,"Guhh...<br>Puedo oír al inframundo... llamándome..."
+5389,1,HP10,Guhh...<br>Puedo oír al inframundo... llamándome...
 5389,1,ItemRare,¡Esa es una reliquia preciosa!
 5389,1,DamageSmall,Hgh.
 5389,1,DamageMiddle,¡Hrngh!
@@ -7461,11 +7461,11 @@ section,group,id,text
 5389,1,MemberDamaged,No te esfuerces demasiado.
 5389,1,MemberDead,...No habrá piedad.
 5389,1,AbilityExe,"¡No pueden detenerme, sin importar cuántos lo intenten!"
-5389,1,AbilitySpecial,¡Soy imparable ahora, y no te engañes pensando lo contrario!
+5389,1,AbilitySpecial,¡Soy imparable ahora
 5389,1,Resurrect,...Parecería que mi último aliento aún está por llegar.
 5389,1,PartyJoin,/toge 1 ¡Emprendamos nuestro viaje sin fin!
 5389,1,Marvelous,¡Excelente!
-5389,1,IncidentJsApcBegin,/toge 1 Por allá, mis camaradas.<br>¿Pelearemos juntos a través de esta batalla?
+5389,1,IncidentJsApcBegin,/toge 1 Por allá
 5389,1,IncidentJsApcFailure,"Qué ineptitud tan mortificante...<br>¡Lo siento mucho, me voy a retirar!"
 5389,1,IncidentJsApcSuccess,/toge 1 ¡Permíteme expresar mi agradecimiento!<br>¡Esta es la verdadera emoción del trabajo en equipo!
 5389,1,IncidentJsApcBeginEvo,/ci5 2 ¿Es ese el final?<br>¡No! ¡Nuevas señales del enemigo!
@@ -7534,7 +7534,7 @@ section,group,id,text
 5390,0,IncidentJsApcFailure,ったぁ……やっちゃった……<br>ごめん、先に退かせてもらうね。
 5390,0,IncidentJsApcSuccess,/ci2 1 よーっし、大成功！<br>ありがとうございましたっ！
 5390,0,IncidentJsApcBeginEvo,/ci5 2 これで終わり……って、感じの<br>空気じゃなさそうだな……！
-5390,1,EnemyWeak,"¡Ja! ¿Qué tal si los reunimos<br>y los aplastamos?"
+5390,1,EnemyWeak,¡Ja! ¿Qué tal si los reunimos<br>y los aplastamos?
 5390,1,EnemyLarge,Es g-grande...
 5390,1,EnemyBoss,"¡Así que ha aparecido un enemigo poderoso, eh!?"
 5390,1,EnemyRare,¿Eh? ¿Qué es eso de ahí?<br>Hay algún tipo de enemigo raro.
@@ -7568,7 +7568,7 @@ section,group,id,text
 5390,1,PBRelease,Oooh... ¡eso se siente bien!
 5390,1,Avoid,¡Ja!
 5390,1,HealSelf,¡Ay!
-5390,1,BuffSelf,"El apoyo también es importante."
+5390,1,BuffSelf,El apoyo también es importante.
 5390,1,HealOther,¡Cuidado!
 5390,1,BuffOther,¡Necesitamos cuidarnos las espaldas!
 5390,1,QuestStart1,"¡Sí, hagámoslo!"
@@ -7595,10 +7595,10 @@ section,group,id,text
 5390,1,Resurrect,"Uff, ¡la próxima vez no me derrotarán, lo prometo!"
 5390,1,PartyJoin,/ci2 1 ¡El placer es mío!
 5390,1,Marvelous,¡Excelente!
-5390,1,IncidentJsApcBegin,/ci2 1 Ah, ¡momento perfecto!<br>Hay una gran cantidad...<br>¿Podrías echarme una mano aquí?"
+5390,1,IncidentJsApcBegin,/ci2 1 Ah
 5390,1,IncidentJsApcFailure,"Graaah! Nos vencieron bien...<br>Lo siento, necesito retirarme ahora."
-5390,1,IncidentJsApcSuccess,/ci2 1 Wooo! ¡Un éxito impresionante!<br>¡Muchas gracias!"
-5390,1,IncidentJsApcBeginEvo,/ci5 2 Parece que eso es todo... errr,<br>¡olvida que dije eso!"
+5390,1,IncidentJsApcSuccess,"/ci2 1 Wooo! ¡Un éxito impresionante!<br>¡Muchas gracias!"""
+5390,1,IncidentJsApcBeginEvo,/ci5 2 Parece que eso es todo... errr
 5378,0,EnemyWeak,手早く片付けましょう。
 5378,0,EnemyLarge,大型のエネミーね。<br>注意して。
 5378,0,EnemyBoss,相手の動きをよく見て。<br>必ず隙があるはず……
@@ -7692,7 +7692,7 @@ section,group,id,text
 5378,1,PBRelease,¡Ahora puedo liberarlo!
 5378,1,Avoid,¡Ja!
 5378,1,HealSelf,Ahora estoy bien.
-5378,1,BuffSelf,Ahora, a atacar.
+5378,1,BuffSelf,Ahora
 5378,1,HealOther,No te excedas...
 5378,1,BuffOther,Te estoy respaldando.
 5378,1,QuestStart1,Mantengamos la calma y terminemos esto.
@@ -7737,7 +7737,7 @@ Boyish,1,PartyJoin,/toge /ci2 1 ¡No te decepcionaré!
 Boyish,1,IncidentJsApcBegin,"/ci3 1 Estás haciendo todo esto por mí...<br>Odio imponer, ¡pero agradezco la ayuda!"
 Boyish,1,IncidentJsApcFailure,"...Y-ya no puedo soportar más esto.<br>Lo siento, tengo que irme."
 Boyish,1,IncidentJsApcSuccess,/ci2 1 ¡Y con eso es suficiente!<br>Um... ¡muchas gracias!<br>¡No podría haberlo hecho sin ti!
-Boyish,1,IncidentJsApcBeginEvo,/ci3 1 ...Cuidado.<br>¡Una señal masiva se<br>está acercando!"
+Boyish,1,IncidentJsApcBeginEvo,"/ci3 1 ...Cuidado.<br>¡Una señal masiva se<br>está acercando!"""
 Boyish,1,AbilityExeRareU,(Provisional) Potencial activado al equipar una Unidad rara.
 Boyish,1,EnemyLargeRareW,(Provisional) Un enemigo grande apareció al equipar un arma rara.
 Boyish,1,EnemyBossRareW,(Provisional) Un jefe apareció al equipar un arma rara.
@@ -7754,8 +7754,8 @@ Pure,0,EnemyBossRareW,マスターに頂いた<br><weapon>で<br>決着をつけ
 Pure,0,EnemyRareRareW,珍種を発見しました。<br>私の武器とどちらが珍しいでしょうか？
 Pure,0,EnemyBoostRareW,雰囲気が異なるようですが……<br><weapon>なら<br>やれます！
 Pure,1,PartyJoin,/ci1 1 Es un placer estar a tu lado.
-Pure,1,IncidentJsApcBegin,/ci1 1 Discúlpame, Handler, pero debo pedir tu<br>asistencia en una situación muy problemática.
-Pure,1,IncidentJsApcFailure,...Incapaz de seguir luchando.<br>Perdóname, debo retirarme.
+Pure,1,IncidentJsApcBegin,/ci1 1 Discúlpame
+Pure,1,IncidentJsApcFailure,...Incapaz de seguir luchando.<br>Perdóname
 Pure,1,IncidentJsApcSuccess,/ci1 1 La situación está bajo control.<br>Estoy agradecida por tu ayuda.
 Pure,1,IncidentJsApcBeginEvo,/ci1 4 He confirmado lecturas de un enemigo aún más grande<br>en las inmediaciones... Aquí viene.
 Pure,1,AbilityExeRareU,¡Siempre me va genial cuando tengo<br>algo bonito equipado!
@@ -7763,97 +7763,97 @@ Pure,1,EnemyLargeRareW,¡Seguro que gano con el<br><weapon><br>que me diste!
 Pure,1,EnemyBossRareW,¡Derrotaré a este enemigo con el<br><weapon><br>que me diste!
 Pure,1,EnemyRareRareW,"Divisé una especie rara. Dime, ¿cuál<br>es más rara: este enemigo o mi arma?"
 Pure,1,EnemyBoostRareW,"Este se siente diferente de alguna manera, ¡pero puedo<br>derrotarlo siempre que tenga el<br><weapon>!"
-Bracing,0,PartyJoin,/ci2 1 Está bien, contemos con ello.
-Bracing,0,IncidentJsApcBegin,/ci2 2 Lo siento, no quería<br>molestarte con esto... ¡pero...!
-Bracing,0,IncidentJsApcFailure,……No puedo más.<br>Me retiraré primero.
-Bracing,0,IncidentJsApcSuccess,/ci2 1 ……Pudimos arreglárnoslas.<br>Gracias, fue gracias a ti.
-Bracing,0,IncidentJsApcBeginEvo,/ci5 2 ……Ten cuidado.<br>Todavía hay una señal grande.
-Bracing,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Bracing,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Bracing,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Bracing,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Bracing,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Bracing,1,PartyJoin,/ci2 1 Muy bien, hagámoslo.
-Bracing,1,IncidentJsApcBegin,/ci2 2 Lo siento, ¡no quería<br>causarte problemas con esto!
+Bracing,0,PartyJoin,/ci2 1 それじゃ、よろしくね
+Bracing,0,IncidentJsApcBegin,/ci2 2 ごめん、君に迷惑は<br>かけたくなかったんだけど……！
+Bracing,0,IncidentJsApcFailure,……これ以上は、もたない。<br>先に撤退させてもらうよ。
+Bracing,0,IncidentJsApcSuccess,/ci2 1 ……なんとかなったね。<br>ありがとう、君のおかげだよ。
+Bracing,0,IncidentJsApcBeginEvo,/ci5 2 ……気をつけて。<br>まだ、大きな反応がある。
+Bracing,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Bracing,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Bracing,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Bracing,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Bracing,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
+Bracing,1,PartyJoin,/ci2 1 Muy bien
+Bracing,1,IncidentJsApcBegin,/ci2 2 Lo siento
 Bracing,1,IncidentJsApcFailure,I... no puedo más.<br>Voy a retirarme.
-Bracing,1,IncidentJsApcSuccess,/ci2 1 ...Lo logramos, de alguna manera.<br>¡Todo es gracias a ti!
+Bracing,1,IncidentJsApcSuccess,/ci2 1 ...Lo logramos
 Bracing,1,IncidentJsApcBeginEvo,/ci5 2 ...Ten cuidado. Mis lecturas indican<br>que algo grande sigue ahí fuera.
 Bracing,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Bracing,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Bracing,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Bracing,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Bracing,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Cool,0,PartyJoin,/ci2 1 ¡Hey, cuento contigo!
-Cool,0,IncidentJsApcBegin,/toge /ci4 1 ......¡Ah, tú eres! <br>¡Po-por favor, ayúdame! <br>¡Me han rodeado!
-Cool,0,IncidentJsApcFailure,......Ya no puedo más. <br>Lo siento, me retiro primero.
-Cool,0,IncidentJsApcSuccess,/ci2 1 ¡Ah, muchas gracias! <br>¡Gracias a ti me salvé! <br>¡Realmente, realmente, gracias!
-Cool,0,IncidentJsApcBeginEvo,/moya /ci4 4 ¿Qué será esto... <br>una reacción muy grande...!
-Cool,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Cool,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Cool,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Cool,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Cool,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
+Cool,0,PartyJoin,/ci2 1 よ、よろしくお願いします！
+Cool,0,IncidentJsApcBegin,/toge /ci4 1 ……あっ、あなたはっ！<br>た、助けて下さい！<br>敵に囲まれてしまって……！
+Cool,0,IncidentJsApcFailure,……これ以上は無理です。<br>すみません、先に撤退します。
+Cool,0,IncidentJsApcSuccess,/ci2 1 あ、ありがとうございました！<br>おかげで助かりました！<br>本当に本当に、感謝です！
+Cool,0,IncidentJsApcBeginEvo,/moya /ci4 4 なんだろうこれ……<br>すごくおっきな反応が……！
+Cool,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Cool,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Cool,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Cool,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Cool,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
 Cool,1,PartyJoin,/ci2 1 ¡V-vamos a hacerlo!
-Cool,1,IncidentJsApcBegin,/toge /ci41 ¡Hey, t-tú de ahí! <br>¡Estoy rodeado! <br>¡P-por favor, ayúdame!
+Cool,1,IncidentJsApcBegin,/toge /ci41 ¡Hey
 Cool,1,IncidentJsApcFailure,"...Esto es demasiado para mí. <br>Lo siento, pero tengo que regresar."
-Cool,1,IncidentJsApcSuccess,/ci2 1 ¡M-muchas gracias! <br>¡Realmente me salvaste allá afuera! <br>¡Estoy verdadera y profundamente agradecido!"
+Cool,1,IncidentJsApcSuccess,"/ci2 1 ¡M-muchas gracias! <br>¡Realmente me salvaste allá afuera! <br>¡Estoy verdadera y profundamente agradecido!"""
 Cool,1,IncidentJsApcBeginEvo,/moya /ci4 4 ¿¡Qué podría ser esto!? ¡Estoy recibiendo<br>una lectura de algo gigantesco!
 Cool,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Cool,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Cool,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Cool,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Cool,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Pride,0,PartyJoin,/ci1 4 Entonces, cuento contigo.
-Pride,0,IncidentJsApcBegin,/ci1 2 Lo siento, solo te doy<br>trabajo constantemente.
-Pride,0,IncidentJsApcFailure,……Hasta aquí llego.<br>Lo siento, me retiraré primero.
-Pride,0,IncidentJsApcSuccess,/ci2 5 Supresión…… completada.<br>Gracias a ti, agradezco.
-Pride,0,IncidentJsApcBeginEvo,/ci3 2 ……No bajes la guardia.<br>Parece que viene uno especial.
-Pride,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Pride,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Pride,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Pride,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Pride,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Pride,1,PartyJoin,/ci1 4 Muy bien entonces, confío en ti.
-Pride,1,IncidentJsApcBegin,/ci1 2 Lo siento, <br>siempre estoy en deuda contigo.
+Pride,0,PartyJoin,/ci1 4 では、よろしく頼む
+Pride,0,IncidentJsApcBegin,/ci1 2 すまない、お前には<br>世話になってばかりだな。
+Pride,0,IncidentJsApcFailure,……ここまでか。<br>すまない、先に撤退させてもらう。
+Pride,0,IncidentJsApcSuccess,/ci2 5 制圧……完了。<br>お前のおかげだ、感謝する。
+Pride,0,IncidentJsApcBeginEvo,/ci3 2 ……気を抜くな。<br>とびきりのヤツが来るようだぞ。
+Pride,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Pride,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Pride,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Pride,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Pride,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
+Pride,1,PartyJoin,/ci1 4 Muy bien entonces
+Pride,1,IncidentJsApcBegin,/ci1 2 Lo siento
 Pride,1,IncidentJsApcFailure,Supongo que hasta aquí llego...<br>Me temo que debo retirarme.
-Pride,1,IncidentJsApcSuccess,/ci2 5 El enemigo está neutralizado, gracias<br>a ti. Tienes mi gratitud.
+Pride,1,IncidentJsApcSuccess,/ci2 5 El enemigo está neutralizado
 Pride,1,IncidentJsApcBeginEvo,/ci3 2 ...Mantente alerta.<br>¡Puedo notar que algo formidable viene hacia aquí!
 Pride,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Pride,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Pride,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Pride,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Pride,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Naughty,0,PartyJoin,/toge /ci2 1 ¡Muy bien, hagámoslo!
-Naughty,0,IncidentJsApcBegin,/ci2 3 /toge ¡Oh, tú, llegaste en buen momento! <br>Como hay demasiados enemigos <br>¡ayúdame!
-Naughty,0,IncidentJsApcFailure,……Uuugh, ¡maldición! <br>Lo siento, ¡me retiro primero!
-Naughty,0,IncidentJsApcSuccess,/mn15 /ci2 1 ¡Yeeeesss, yeeesss! <br>¡Terminó! <br>¡Gracias por cooperar!
-Naughty,0,IncidentJsApcBeginEvo,/ci5 2 ¡Gah!, ¿esta reacción gigante <br>significa que aún vienen más?
-Naughty,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Naughty,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Naughty,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Naughty,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Naughty,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
+Naughty,0,PartyJoin,/toge /ci2 1 よろしくなっ！
+Naughty,0,IncidentJsApcBegin,/ci2 3 /toge おっ、あんた、いいところに！<br>ちょっと敵が多すぎるから<br>手伝ってくれっ！
+Naughty,0,IncidentJsApcFailure,……ううっ、くそっ！<br>わり、先に撤退するっ！
+Naughty,0,IncidentJsApcSuccess,/mn15 /ci2 1 よーっしゃよっしゃー！　<br>終わったー！<br>協力してくれてありがとな！
+Naughty,0,IncidentJsApcBeginEvo,/ci5 2 げげっ、このでっかい反応<br>まだ来るってことかよ！
+Naughty,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Naughty,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Naughty,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Naughty,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Naughty,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
 Naughty,1,PartyJoin,/toge /ci2 1 ¡Hola!
-Naughty,1,IncidentJsApcBegin,/ci2 3 /toge ¡Hey, tú! ¡Llegaste<br>justo a tiempo para salvarme<br>de esta horda de enemigos!"
+Naughty,1,IncidentJsApcBegin,/ci2 3 /toge ¡Hey
 Naughty,1,IncidentJsApcFailure,"Ugh, ¡maldición!<br>Lo siento, ¡tengo que largarme!"
 Naughty,1,IncidentJsApcSuccess,/mn15 /ci2 1 ¡Muy bien! <br>¡Eso termina con todo! <br>¡Gracias por la ayuda!
-Naughty,1,IncidentJsApcBeginEvo,/ci5 2 ¡Oh-oh! Aún no terminamos. <br>¡Mis lecturas sugieren que algo enorme se acerca!"
+Naughty,1,IncidentJsApcBeginEvo,"/ci5 2 ¡Oh-oh! Aún no terminamos. <br>¡Mis lecturas sugieren que algo enorme se acerca!"""
 Naughty,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Naughty,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Naughty,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Naughty,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Naughty,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Urbane,0,PartyJoin,/ci2 3 Entonces, cuento contigo.
-Urbane,0,IncidentJsApcBegin,/ci4 1 Disculpe...<br>Siempre dependiendo de usted...
-Urbane,0,IncidentJsApcFailure,……No puedo más.<br>Lo siento mucho, me retiraré.
-Urbane,0,IncidentJsApcSuccess,/ci2 1 Uff…… terminó a salvo.<br>Gracias a usted.<br>Muchas gracias.
-Urbane,0,IncidentJsApcBeginEvo,/ci5 3 ……Parece que aún no termina.<br>Se acerca una reacción enorme.
-Urbane,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Urbane,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Urbane,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Urbane,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Urbane,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Urbane,1,PartyJoin,/ci2 3 Muy bien entonces, cúbreme allá afuera, ¿de acuerdo?
+Urbane,0,PartyJoin,/ci2 3 それでは、よろしくお願いします
+Urbane,0,IncidentJsApcBegin,/ci4 1 すみません……<br>貴方に頼ってばかりで……
+Urbane,0,IncidentJsApcFailure,……これ以上は、もちません。<br>申し訳ありません、撤退させて<br>いただきます。
+Urbane,0,IncidentJsApcSuccess,/ci2 1 ふぅ……無事、終わりましたね。<br>貴方のおかげです<br>ありがとうございました。
+Urbane,0,IncidentJsApcBeginEvo,/ci5 3 ……まだ、終わらないようです。<br>巨大な反応が近づいています。
+Urbane,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Urbane,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Urbane,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Urbane,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Urbane,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
+Urbane,1,PartyJoin,/ci2 3 Muy bien entonces
 Urbane,1,IncidentJsApcBegin,/ci4 1 Lo siento... me siento terrible por<br>depender tanto de ti.
 Urbane,1,IncidentJsApcFailure,"...Simplemente no puedo soportar más.<br>Lo siento terriblemente,<br>pero debo despedirme."
 Urbane,1,IncidentJsApcSuccess,"/ci2 1 Uff... salimos ilesos,<br>gracias a ti.<br>Te lo agradezco mucho."
@@ -7863,41 +7863,41 @@ Urbane,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma 
 Urbane,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Urbane,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Urbane,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Noisy,0,PartyJoin,/mn16 /ci2 1 ¡Sí, cuento contigo!
-Noisy,0,IncidentJsApcBegin,/mn17 /ci2 1 ¡Viniste! <br>¡Gracias, con esto puedo!
-Noisy,0,IncidentJsApcFailure,……Uu, soy muy inmadura. <br>Lo siento, me retiro primero.
-Noisy,0,IncidentJsApcSuccess,/ci2 2 ¡Yay! ¡De alguna forma lo logramos! <br>¡Gracias a ti! ¡Gracias!
-Noisy,0,IncidentJsApcBeginEvo,/mn19 /ci2 1 ¿Eh, eh, eh? <br>¡Algo con una reacción grande <br>se está acercando!
-Noisy,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Noisy,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Noisy,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Noisy,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Noisy,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
+Noisy,0,PartyJoin,/mn16 /ci2 1 はーい、よろしくっ！
+Noisy,0,IncidentJsApcBegin,/mn17 /ci2 1 来てくれたんだ！<br>ありがとー、これでなんとか！
+Noisy,0,IncidentJsApcFailure,……うう、あたし未熟すぎ。<br>ごめん、先に撤退しちゃうね。
+Noisy,0,IncidentJsApcSuccess,/ci2 2 やたーっ！　なんとかしのげたよ！<br>あなたのお陰！　ありがとう！
+Noisy,0,IncidentJsApcBeginEvo,/mn19 /ci2 1 あれあれあれれっ？<br>なんかおっきな反応が<br>近づいてくるよ！
+Noisy,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Noisy,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Noisy,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Noisy,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Noisy,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
 Noisy,1,PartyJoin,/mn16 /ci2 1 ¡Hola!
 Noisy,1,IncidentJsApcBegin,/mn17 /ci2 1 ¡Viniste solo por mí!<br>¡Gracias! ¡Ahora parece factible!
 Noisy,1,IncidentJsApcFailure,"Ugh... supongo que necesito más entrenamiento.<br>Siento dejarte plantado, ¡pero tengo que irme!"
 Noisy,1,IncidentJsApcSuccess,"/ci2 2 Woohoo, ¡lo hicimos! No sé<br>cómo, ¡pero lo hicimos! ¡Eres el mejor! ¡Gracias!"
-Noisy,1,IncidentJsApcBeginEvo,/mn19 /ci2 1 ¿Qué rayos...?<br>¡Algo enorme<br>se dirige hacia aquí!"
+Noisy,1,IncidentJsApcBeginEvo,"/mn19 /ci2 1 ¿Qué rayos...?<br>¡Algo enorme<br>se dirige hacia aquí!"""
 Noisy,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Noisy,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Noisy,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
 Noisy,1,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
 Noisy,1,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
-Sharp,0,PartyJoin,/ci1 2 ……Terminemos rápido.
-Sharp,0,IncidentJsApcBegin,/ci4 3 ……Siento haberte <br>causado problemas.
-Sharp,0,IncidentJsApcFailure,……Maldición, todo han sido problemas. <br>Me retiro…… ¡lo siento!
-Sharp,0,IncidentJsApcSuccess,/ci2 5 ……Ese, cómo decirlo, <br>lo siento. Además, gracias.
-Sharp,0,IncidentJsApcBeginEvo,/moya /ci5 2 ……Aún no. <br>Aún no termina.
-Sharp,0,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
-Sharp,0,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
-Sharp,0,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara
-Sharp,0,EnemyRareRareW,(Provisional) Enemigo raro apareció al equipar arma rara
-Sharp,0,EnemyBoostRareW,(Provisional) Enemigo potenciado apareció al equipar arma rara
+Sharp,0,PartyJoin,/ci1 2 ……さっさと終わらせよう
+Sharp,0,IncidentJsApcBegin,/ci4 3 ……迷惑をかけてしまって<br>ごめん。
+Sharp,0,IncidentJsApcFailure,……くそ、迷惑かけっぱなしだ。<br>わたしは退く……ごめん！
+Sharp,0,IncidentJsApcSuccess,/ci2 5 ……その、なんていうか<br>ごめんなさい。あと、ありがとう。
+Sharp,0,IncidentJsApcBeginEvo,/moya /ci5 2 ……まだだ。<br>まだ、終わりじゃない。
+Sharp,0,AbilityExeRareU,(仮)レアユニット装備時のポテンシャル発動
+Sharp,0,EnemyLargeRareW,(仮)レア武器装備時に大型エネミーが出現した
+Sharp,0,EnemyBossRareW,(仮)レア武器装備時にボスが出現した
+Sharp,0,EnemyRareRareW,(仮)レア武器装備時にレアエネミーが出現した
+Sharp,0,EnemyBoostRareW,(仮)レア武器装備時にブーストEが出現した
 Sharp,1,PartyJoin,/ci1 2 ...Terminemos esto rápido.
 Sharp,1,IncidentJsApcBegin,/ci4 3 ...Siento<br>causarte problemas.
 Sharp,1,IncidentJsApcFailure,"...Maldición, no he sido más que problemas para ti.<br>Debo retirarme... ¡lo siento!"
 Sharp,1,IncidentJsApcSuccess,"/ci2 5 ...Yo, uh, no sé qué decir...<br>Lo siento. Y... gracias."
-Sharp,1,IncidentJsApcBeginEvo,/moya /ci5 2 ...Aún no. <br>¡Esto aún no termina!"
+Sharp,1,IncidentJsApcBeginEvo,"/moya /ci5 2 ...Aún no. <br>¡Esto aún no termina!"""
 Sharp,1,AbilityExeRareU,(Provisional) Potencial activado al equipar Unidad rara
 Sharp,1,EnemyLargeRareW,(Provisional) Enemigo grande apareció al equipar arma rara
 Sharp,1,EnemyBossRareW,(Provisional) Jefe apareció al equipar arma rara

@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 Compress,0,SetMessage1,ロックされているキャンディーは圧縮できません。
 Compress,0,SetMessage2,すでに限界まで圧縮されているため、<br>これ以上圧縮できません。
 Compress,0,CompressMessage,圧縮を開始します。<br>よろしいですか？<br><br>※補助アイテムを使用することで、<br>　成功確率を上げることができます。
@@ -22,7 +22,7 @@ Compress,0,CompressSuccessRateMessage4,<red>危険<c>
 Compress,0,CompressSuccessRateMessage5,<red>危険<c>
 Compress,0,CompressSuccessRate,成功確率
 Compress,0,SetErrorMessage,限界まで圧縮されているため、<br>これ以上圧縮できません。
-Compress,0,CompressBackpackErrorMessage,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。
+Compress,0,CompressBackpackErrorMessage,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>圧縮できませんでした。 
 Compress,0,CompressReturnButton,戻る
 Compress,1,SetMessage1,Los dulces bloqueados no se pueden comprimir.
 Compress,1,SetMessage2,"Este artículo ya no se puede comprimir,<br>porque ha alcanzado su límite de compresión."
@@ -107,7 +107,7 @@ LaboShop,1,Error_Candy_List_Empty,No tienes dulces para comprimir.
 LaboShop,1,Error_Pet_List_Empty,No hay mascotas disponibles.
 Inheritance,0,Message_Title,レアリティ進化
 Inheritance,0,Inheritance_Message,レアリティ進化を開始します。<br>よろしいですか？
-Inheritance,0,Inheritance_Message_Reinforce,種族に戻せなくなります。<c><br><br><yellow>※装備中のペットを上位種に進化させた場合<br>　セットされているPAが外れます。<c>
+Inheritance,0,Inheritance_Message_Reinforce,レアリティ進化を開始します。<br>よろしいですか？<br><br><red>※上位種のエッグが選択されています。<br>　レアリティ進化を行うと元の種族に戻せなくなります。<c><br><br><yellow>※装備中のペットを上位種に進化させた場合<br>　セットされているPAが外れます。<c>
 Inheritance,0,Inheritance_Result_OK,レアリティ進化に成功しました。
 Inheritance,0,Inheritance_Result_NG,レアリティ進化に失敗しました。
 Inheritance,0,Inheritance_Result_Reinforce,$(0)は、$(1)種にレアリティ進化しました。
@@ -142,7 +142,7 @@ Inheritance,1,Inheritance_Confirm_Color,"<yellow>Nota: debido a que se seleccion
 ReverseEgg,0,Message_Title,ペットをエッグに戻す
 ReverseEgg,0,Warning_Message,以下のアイテムや効果はすべて削除されます。<br><red>エッグ合成：チャージした合成回数<c><br><red>キャンディーボックス：セットしているキャンディー<c><br><red>キャンディーボックス：削除したキャラメルキューブ<c><br>よろしいですか？
 ReverseEgg,0,Warning_Rarity,セットされているキャンディーの中に<br>レアリティ$(0)以上のキャンディーが含まれています。<br>本当に実行してもよろしいですか？
-ReverseEgg,0,FinalConfirm_Message,すべて削除され<br>合成可能回数は０となります。<c><br>セット中のキャンディー数：$(0)<br>残り<pict pet_stone_yellow>合成可能数：$(1)<br>削除した全てのキャラメルキューブ
+ReverseEgg,0,FinalConfirm_Message,ペット『$(2)』をエッグに戻します。<br>よろしいですか？<br>※<yellow>オーナー登録<c>が行われ、他のプレイヤーとの<br>取引ができなくなります。<br><br><red>※以下のアイテムや効果はすべて削除され<br>合成可能回数は０となります。<c><br>セット中のキャンディー数：$(0)<br>残り<pict pet_stone_yellow>合成可能数：$(1)<br>削除した全てのキャラメルキューブ
 ReverseEgg,0,Result,ペットをエッグに戻しました。
 ReverseEgg,0,ReverseEggBackpackErrorMessage,アイテムパックの空き容量不足、<br>または所持数の限界を超えているため、<br>エッグに戻せませんでした。
 ReverseEgg,0,FinalConfirm_GuideBar,<c f0df60>エッグに戻す最終確認画面です。<c>

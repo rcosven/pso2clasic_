@@ -1,4 +1,4 @@
-section,group,id,text
+﻿section,group,id,text
 common,0,MySpaceCommonLabel_EditMode,編集モード
 common,0,MySpaceMenuText_OverPeople,同時に編集できる人数を超えたため、編集モードに移行できません。
 common,0,MySpaceMenuText_NoEditAuth2,編集権限がないため、編集モードに移行できません。
@@ -323,7 +323,7 @@ CreativeSpaceMenu,0,PermissionList_Names,$(0) $(1)
 CreativeSpaceMenu,0,PermissionList_AuthorizeConfirm,$(0)に編集権限を付与しますか？<br>$(1)の<br>すべてのキャラクターに対して<br>編集権限が付与されます。
 CreativeSpaceMenu,0,PermissionList_RejectConfirm,$(0)の編集権限を無効化しますか？<br>$(1)の<br>すべてのキャラクターに対して<br>編集権限が無効化されます。
 CreativeSpaceMenu,0,PermissionList_EditorsNumberMax,編集権限を付与できる人数が、上限に達しています。
-CreativeSpaceMenu,0,TeamSpaceMenuText_Editpermission_Guide,<br>使用可能になります。<br><br>・編集モード<br>・ビルドパーツの購入と登録<br>・時間の変更<br>・ギミックを設定時の状態に戻す
+CreativeSpaceMenu,0,TeamSpaceMenuText_Editpermission_Guide,チームマスターとマネージャー以外の役職に、<br>編集権限を付与するかを設定をします。<br>権限を付与すると、<br>チームスペースの以下の機能が<br>使用可能になります。<br><br>・編集モード<br>・ビルドパーツの購入と登録<br>・時間の変更<br>・ギミックを設定時の状態に戻す
 CreativeSpaceMenu,0,TeamSpaceMenuText_Editpermission_PositionTitle,編集権限を付与する役職
 CreativeSpaceMenu,0,TeamSpaceMenuText_Editpermission_NoAuthority,権限付与対象を変更しない
 CreativeSpaceMenu,0,TeamSpaceMenuText_Editpermission_Commonmember,コモンメンバー
@@ -549,16 +549,16 @@ Journal,0,MySpaceJournalTextInst_EditTerrain_Downlift,地形のダウン
 Journal,0,MySpaceJournalTextInst_EditTerrain_LandLeveling,地形の整地
 Journal,0,MySpaceJournalTextInst_Installation,設置
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingFunction,ビルドパーツ編集メニュー
-Journal,0,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,編集モードを終了
+Journal,0,MySpaceJournalTextInst_Sub_SwitchingGeneralControl,　編集モードを終了
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingAux,ビルドパーツ設置メニュー
 Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation,キャンセル
-Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation_Space,ビルドパーツ設置を終了
+Journal,0,MySpaceJournalTextInst_Sub_ExitInstallation_Space,　ビルドパーツ設置を終了
 Journal,0,MySpaceJournalTextInst_Sub_CraftMenu,ビルドメニュー
 Journal,0,MySpaceJournalTextInst_Sub_SwitchingEditTerrainFunction,地形編集メニュー
-Journal,0,MySpaceJournalTextInst_Sub_ExitEditTerrain,地形編集を終了
-Journal,0,MySpaceJournalTextInst_Sub_InstConfig,ビルドオプション
-Journal,0,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,Ｃスペースメニュー
-Journal,0,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,チームスペースメニュー
+Journal,0,MySpaceJournalTextInst_Sub_ExitEditTerrain,　地形編集を終了
+Journal,0,MySpaceJournalTextInst_Sub_InstConfig,　ビルドオプション
+Journal,0,MySpaceJournalTextInst_Sub_CreativeSpaceMenu,　Ｃスペースメニュー
+Journal,0,TeamSpaceJournalTextInst_Sub_CreativeSpaceMenu,　チームスペースメニュー
 Journal,0,MySpaceJournalTextInst_SubTitle_Aux,<%WeaponAction_2>でメニュー表示中に
 Journal,0,MySpaceJournalTextInst_SubTitle_Function,<%WeaponAction_2>でメニュー表示中に
 Journal,0,MySpaceJournalTextInst_SubTitle_TerrainFunction,<%WeaponAction_2>でメニュー表示中に
@@ -985,7 +985,7 @@ PartsConfig_Blueprint,0,ConfirmEdit,保存または公開をせずに終了し�
 PartsConfig_Blueprint,0,LockFailedConfirm_Title,編集内容の確認
 PartsConfig_Blueprint,0,LockFailedConfirm1,設計図の範囲内を、他のプレイヤーが編集中のため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
 PartsConfig_Blueprint,0,LockFailedConfirm2,範囲内にビルドパーツがないため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
-PartsConfig_Blueprint,0,LockFailedConfirm3,(0)個<br>設計図のビルドパーツ数上限：$(1)個<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
+PartsConfig_Blueprint,0,LockFailedConfirm3,範囲内のビルドパーツ数が、<br>設計図の上限を超えているため、<br>設定を適用できません。<br><br>範囲内のビルドパーツ数：$(0)個<br>設計図のビルドパーツ数上限：$(1)個<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
 PartsConfig_Blueprint,0,LockFailedConfirm4,設計図に含むことができない<br>ビルドパーツが含まれているため、<br>設定を適用できません。<br><br>$(0)<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
 PartsConfig_Blueprint,0,LockFailedConfirm5,他の設計図端末と指定範囲が重複しているため、<br>設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
 PartsConfig_Blueprint,0,LockFailedConfirm6,別の設計図で再現された構築物と指定範囲が<br>重複しているため、設定を適用できません。<br><br>編集内容を破棄して、<br>編集メニューに戻ってもよろしいですか？
@@ -1001,7 +1001,7 @@ PartsConfig_Blueprint,0,ConfirmOverwrite1,設計図を上書き保存します�
 PartsConfig_Blueprint,0,ConfirmOverwrite2,設計図を上書き保存します。<br>よろしいですか？
 PartsConfig_Blueprint,0,ConfirmOverwrite3,設計図を上書き保存します。<br>よろしいですか？
 PartsConfig_Blueprint,0,ConfirmPublish_Title,設計図公開の確認
-PartsConfig_Blueprint,0,ConfirmPublish,ができなくなります。<br>・設計図の範囲内でのビルドパーツ編集<br>・設計図情報および設計図の範囲設定の編集<br><br>公開してもよろしいですか？
+PartsConfig_Blueprint,0,ConfirmPublish,設計図を公開すると、<br>他のプレイヤーが設計図端末から、<br>その設計図をダウンロードできるようになります。<br><br>また、公開中は以下の編集ができなくなります。<br>・設計図の範囲内でのビルドパーツ編集<br>・設計図情報および設計図の範囲設定の編集<br><br>公開してもよろしいですか？
 PartsConfig_Blueprint,0,ConfirmUnpublish_Title,設計図公開停止の確認
 PartsConfig_Blueprint,0,ConfirmUnpublish,この設計図の公開を停止しますか？<br><br><yellow>※公開を停止すると、<br>　“注目の設計図”の集計はリセットされます。<c>
 PartsConfig_Blueprint,0,ConfirmDownload_Title,上書き保存確認
@@ -1168,7 +1168,7 @@ Mag,0,MagMenu_Appearance_Title,チームマグのフォルム変更
 Mag,0,MagMenu_Appearance_SubTitle_L,マグフォルム
 Mag,0,MagMenu_Appearance_SubTitle_R,必要N-チームポイント
 Mag,0,MagMenu_Appearance_Preview_Title,変更後のフォルム
-Mag,0,MagMenu_Appearance_Confirm,：$(0)<pict 4space><pict reb_team>TP）<br><br><yellow>※変更するたびに、N-チームポイントを消費します。<c>
+Mag,0,MagMenu_Appearance_Confirm,マグの見た目を$(1)<pict 4space><pict reb_team>TPで変更します。<br>よろしいですか？<br><br>（所持N-チームポイント：$(0)<pict 4space><pict reb_team>TP）<br><br><yellow>※変更するたびに、N-チームポイントを消費します。<c>
 Mag,0,MagMenu_Message_Loading,読み込み中…
 Mag,0,MagMenu_Message_Busy,通信中…
 Mag,0,MagMenu_Success_Boost,チームマグブーストの効果が発生しました。
