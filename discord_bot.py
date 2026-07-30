@@ -413,8 +413,31 @@ async def web_api_search(request):
     deep_raw = (request.query.get("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
 
+    # Paginación: page (1-based), per_page (default 50, max 100)
+    try:
+        page = max(1, int(request.query.get("page") or "1"))
+    except ValueError:
+        page = 1
+    try:
+        per_page = int(request.query.get("per_page") or "50")
+    except ValueError:
+        per_page = 50
+    per_page = max(10, min(100, per_page))
+
+    # Tope de coincidencias a recolectar (evita respuestas enormes en queries muy genéricas)
+    MAX_MATCHES = 5000
+
+    empty = {
+        "items": [],
+        "deep": deep,
+        "page": page,
+        "per_page": per_page,
+        "total": 0,
+        "total_pages": 0,
+        "capped": False,
+    }
     if len(query) < 3:
-        return web.json_response({"items": [], "deep": deep})
+        return web.json_response(empty)
 
     query_norm = "".join(
         c
@@ -482,10 +505,25 @@ async def web_api_search(request):
                 "match": match_where,
             })
 
-        if len(coincidencias) >= 100:  # Limitar resultados
+        if len(coincidencias) >= MAX_MATCHES:
             break
 
-    return web.json_response({"items": coincidencias, "deep": deep})
+    total = len(coincidencias)
+    total_pages = (total + per_page - 1) // per_page if total else 0
+    if total_pages and page > total_pages:
+        page = total_pages
+    start = (page - 1) * per_page
+    page_items = coincidencias[start : start + per_page]
+
+    return web.json_response({
+        "items": page_items,
+        "deep": deep,
+        "page": page,
+        "per_page": per_page,
+        "total": total,
+        "total_pages": total_pages,
+        "capped": total >= MAX_MATCHES,
+    })
 
 async def web_api_file(request):
     filename = request.query.get("name")
