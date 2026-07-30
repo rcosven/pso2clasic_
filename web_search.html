@@ -226,6 +226,37 @@
             background: rgba(247, 120, 186, 0.12);
         }
 
+        .result-fixed {
+            font-size: 13px;
+            color: #3fb950;
+            line-height: 1.4;
+            padding: 8px 10px;
+            background: rgba(63, 185, 80, 0.08);
+            border: 1px solid rgba(63, 185, 80, 0.25);
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .result-fixed-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #3fb950;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+        }
+
+        .result-corrupt-raw {
+            font-size: 12px;
+            color: var(--text-secondary);
+            opacity: 0.75;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
         .result-cmd {
             font-size: 12px;
             color: #a371f7;
@@ -434,9 +465,17 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
+        <label class="deep-toggle" title="Texto dañado tipo 夀漀甀 (UTF-16 mal leído)">
+            <input type="checkbox" id="corruptSearch">
+            <span>Texto corrupto</span>
+        </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
+        </span>
+        <span class="deep-hint" id="corruptHint" style="display: none;">
+            Lista líneas con caracteres tipo <code>夀漀甀 眀椀氀氀</code> (UTF-16 invertido).
+            Query opcional. Muestra vista reparada en verde.
         </span>
     </div>
 
@@ -460,6 +499,8 @@
         const searchInput = document.getElementById('searchInput');
         const deepSearch = document.getElementById('deepSearch');
         const deepHint = document.getElementById('deepHint');
+        const corruptSearch = document.getElementById('corruptSearch');
+        const corruptHint = document.getElementById('corruptHint');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -474,11 +515,29 @@
         let lastDeep = false;
         let currentScope = 'all'; // all | classic | ng
 
+        function updatePlaceholders() {
+            if (corruptSearch.checked) {
+                searchInput.placeholder = 'Opcional: filtrar (vacío = listar todo lo corrupto)...';
+                corruptHint.style.display = 'block';
+                deepHint.style.display = 'none';
+            } else if (deepSearch.checked) {
+                searchInput.placeholder = 'Ej: Basic,1,Explanation  o  texto vacío / ID...';
+                deepHint.style.display = 'block';
+                corruptHint.style.display = 'none';
+            } else {
+                searchInput.placeholder = 'Ej: Pose elemental: oscuridad y luz...';
+                deepHint.style.display = 'none';
+                corruptHint.style.display = 'none';
+            }
+        }
+
         function scheduleSearch(resetPage = true) {
             clearTimeout(debounceTimer);
             const query = searchInput.value.trim();
+            const corruptMode = corruptSearch.checked;
 
-            if (query.length < 3) {
+            // Modo corrupto: permite query vacía (lista todo)
+            if (!corruptMode && query.length < 3) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -490,7 +549,7 @@
 
             debounceTimer = setTimeout(() => {
                 performSearch(query, currentPage);
-            }, 500);
+            }, corruptMode && !query ? 150 : 500);
         }
 
         scopeButtons.forEach(btn => {
@@ -503,10 +562,14 @@
         });
 
         deepSearch.addEventListener('change', () => {
-            deepHint.style.display = deepSearch.checked ? 'block' : 'none';
-            searchInput.placeholder = deepSearch.checked
-                ? 'Ej: Basic,1,Explanation  o  texto vacío / ID...'
-                : 'Ej: Pose elemental: oscuridad y luz...';
+            if (deepSearch.checked) corruptSearch.checked = false;
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        corruptSearch.addEventListener('change', () => {
+            if (corruptSearch.checked) deepSearch.checked = false;
+            updatePlaceholders();
             scheduleSearch(true);
         });
 
@@ -519,6 +582,7 @@
             resultsList.innerHTML = '';
 
             const deep = deepSearch.checked ? '1' : '0';
+            const corrupt = corruptSearch.checked ? '1' : '0';
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -527,6 +591,7 @@
                 const params = new URLSearchParams({
                     q: query,
                     deep,
+                    corrupt,
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -637,17 +702,21 @@
 
             resultsContainer.style.display = 'flex';
 
+            const corruptMode = !!data.corrupt;
+
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
-                const tip = deep
+                const tip = corruptMode
+                    ? "No hay líneas con el patrón UTF-16 corrupto en este ámbito."
+                    : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Búsqueda avanzada</strong> para buscar por section/id/comando.";
+                    : "Activa <strong>Búsqueda avanzada</strong> o <strong>Texto corrupto</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
             }
 
-            const modeLabel = deep ? " · avanzada" : "";
+            const modeLabel = corruptMode ? " · corrupto" : (deep ? " · avanzada" : "");
             const scopeLabel = {
                 all: " · Ambos",
                 classic: " · Classic",
@@ -671,8 +740,11 @@
                 const displayTxt = escapeHtml(
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
                 );
+                const fixedTxt = item.text_fixed
+                    ? escapeHtml(String(item.text_fixed).replace(/<br>/gi, "\n"))
+                    : '';
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || (item.match && item.match !== 'text');
+                const showCmd = deep || corruptMode || (item.match && item.match !== 'text');
                 const matchBadge = (item.match && item.match !== 'text')
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
@@ -681,13 +753,18 @@
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
 
+                const bodyHtml = (item.corrupt && fixedTxt)
+                    ? `<div class="result-fixed"><div class="result-fixed-label">Reparación sugerida</div>${fixedTxt}</div>
+                       <div class="result-corrupt-raw">${displayTxt}</div>`
+                    : `<div class="result-text">${displayTxt}</div>`;
+
                 a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(item.file)}</div>
                     ${corpusBadge}
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
-                    <div class="result-id">ID: ${escapeHtml(item.id)}</div>
-                    <div class="result-text">${displayTxt}</div>
+                    <div class="result-id">ID: ${escapeHtml(item.id)}${item.group != null ? ` · g${escapeHtml(item.group)}` : ''}</div>
+                    ${bodyHtml}
                 `;
 
                 resultsList.appendChild(a);
