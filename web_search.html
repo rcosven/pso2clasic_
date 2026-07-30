@@ -73,7 +73,7 @@
         .search-container {
             width: 100%;
             max-width: 800px;
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             position: relative;
         }
 
@@ -105,6 +105,90 @@
             color: var(--text-secondary);
             font-size: 24px;
             pointer-events: none;
+        }
+
+        .search-options {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px 20px;
+        }
+
+        .deep-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 14px;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            transition: border-color 0.2s, color 0.2s, background 0.2s;
+        }
+
+        .deep-toggle:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }
+
+        .deep-toggle:has(input:checked) {
+            border-color: var(--accent-blue);
+            background: rgba(88, 166, 255, 0.08);
+            color: var(--accent-blue);
+        }
+
+        .deep-toggle input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent-blue);
+            cursor: pointer;
+        }
+
+        .deep-hint {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .deep-hint code {
+            font-family: ui-monospace, monospace;
+            font-size: 12px;
+            background: rgba(88, 166, 255, 0.12);
+            color: var(--accent-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .result-cmd {
+            font-size: 12px;
+            color: #a371f7;
+            font-family: ui-monospace, monospace;
+            background-color: rgba(163, 113, 247, 0.12);
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            align-self: flex-start;
+        }
+
+        .result-match-badge {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #d29922;
+            background: rgba(210, 153, 34, 0.12);
+            padding: 2px 6px;
+            border-radius: 4px;
+            align-self: flex-start;
         }
 
         .results-container {
@@ -210,6 +294,17 @@
         <div class="search-icon">🔍</div>
     </div>
 
+    <div class="search-options">
+        <label class="deep-toggle" title="Incluye section, group e id del CSV (comandos)">
+            <input type="checkbox" id="deepSearch">
+            <span>Búsqueda profunda</span>
+        </label>
+        <span class="deep-hint" id="deepHint" style="display: none;">
+            También busca en comandos CSV: <code>section,group,id</code>
+            — ej. <code>Basic,1,Explanation</code> o textos vacíos
+        </span>
+    </div>
+
     <div id="loader" class="loader"></div>
 
     <div class="results-container" id="resultsContainer" style="display: none;">
@@ -224,6 +319,8 @@
 
     <script>
         const searchInput = document.getElementById('searchInput');
+        const deepSearch = document.getElementById('deepSearch');
+        const deepHint = document.getElementById('deepHint');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -231,33 +328,49 @@
 
         let debounceTimer;
 
-        searchInput.addEventListener('input', (e) => {
+        function scheduleSearch() {
             clearTimeout(debounceTimer);
-            const query = e.target.value.trim();
-            
+            const query = searchInput.value.trim();
+
             if (query.length < 3) {
                 resultsContainer.style.display = 'none';
+                loader.style.display = 'none';
                 return;
             }
 
             debounceTimer = setTimeout(() => {
                 performSearch(query);
-            }, 500); // 500ms debounce
+            }, 500);
+        }
+
+        deepSearch.addEventListener('change', () => {
+            deepHint.style.display = deepSearch.checked ? 'block' : 'none';
+            searchInput.placeholder = deepSearch.checked
+                ? 'Ej: Basic,1,Explanation  o  texto vacío / ID...'
+                : 'Ej: Pose elemental: oscuridad y luz...';
+            // Rebuscar con el modo actual si ya hay query
+            scheduleSearch();
         });
+
+        searchInput.addEventListener('input', scheduleSearch);
 
         async function performSearch(query) {
             resultsContainer.style.display = 'none';
             loader.style.display = 'block';
             resultsList.innerHTML = '';
-            
+
+            const deep = deepSearch.checked ? '1' : '0';
+
             try {
-                const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                const response = await fetch(
+                    `/api/search?q=${encodeURIComponent(query)}&deep=${deep}`
+                );
                 if (!response.ok) throw new Error("Error en la búsqueda");
-                
+
                 const data = await response.json();
-                
+
                 loader.style.display = 'none';
-                renderResults(data.items);
+                renderResults(data.items || [], !!data.deep);
             } catch (error) {
                 loader.style.display = 'none';
                 resultsContainer.style.display = 'block';
@@ -265,40 +378,60 @@
             }
         }
 
-        function renderResults(items) {
+        function escapeHtml(s) {
+            return String(s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function renderResults(items, deep) {
             resultsContainer.style.display = 'flex';
-            
+
             if (items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
-                resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. Intenta con otras palabras.</div>`;
+                const tip = deep
+                    ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
+                    : "Activa <strong>Búsqueda profunda</strong> para buscar por section/id/comando.";
+                resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 return;
             }
 
             const isTruncated = items.length >= 100;
             const displayCount = isTruncated ? "Más de 100" : items.length;
-            resultsCount.textContent = `${displayCount} resultados encontrados`;
-            
+            const modeLabel = deep ? " (profunda)" : "";
+            resultsCount.textContent = `${displayCount} resultados encontrados${modeLabel}`;
+
             resultsList.innerHTML = '';
-            
+
             items.forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'result-item';
                 div.onclick = () => {
                     window.location.href = `/edit?file=${encodeURIComponent(item.file)}&id=${encodeURIComponent(item.id)}`;
                 };
-                
-                // Formatear texto, reemplazando <br> visualmente para la lista
-                let displayTxt = (item.text || "(Sin texto)").replace(/<br>/g, " ");
-                
+
+                const displayTxt = escapeHtml(
+                    (item.text || "(Sin texto)").replace(/<br>/gi, " ")
+                );
+                const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
+                const showCmd = deep || (item.match && item.match !== 'text');
+                const matchBadge = (item.match && item.match !== 'text')
+                    ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
+                    : '';
+
                 div.innerHTML = `
-                    <div class="result-file">📁 ${item.file}</div>
-                    <div class="result-id">ID: ${item.id}</div>
+                    <div class="result-file">📁 ${escapeHtml(item.file)}</div>
+                    ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
+                    ${matchBadge}
+                    <div class="result-id">ID: ${escapeHtml(item.id)}</div>
                     <div class="result-text">${displayTxt}</div>
                 `;
-                
+
                 resultsList.appendChild(div);
             });
-            
+
             if (isTruncated) {
                 const warningDiv = document.createElement('div');
                 warningDiv.className = 'empty-state';
