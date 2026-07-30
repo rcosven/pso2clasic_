@@ -279,6 +279,78 @@
             color: var(--text-secondary);
             font-size: 15px;
         }
+
+        a.result-item {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .pagination {
+            display: none;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 16px;
+            padding: 14px 12px;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pagination.visible {
+            display: flex;
+        }
+
+        .page-btn {
+            min-width: 36px;
+            height: 36px;
+            padding: 0 10px;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+        }
+
+        .page-btn:hover:not(:disabled):not(.active) {
+            background: var(--item-hover);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .page-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: #0d1117;
+            font-weight: 700;
+            cursor: default;
+        }
+
+        .page-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .page-ellipsis {
+            color: var(--text-secondary);
+            padding: 0 4px;
+            user-select: none;
+        }
+
+        .page-info {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
     </style>
 </head>
 <body>
@@ -310,11 +382,15 @@
     <div class="results-container" id="resultsContainer" style="display: none;">
         <div class="results-header">
             <span id="resultsCount">0 resultados encontrados</span>
-            <span>Haz clic para editar</span>
+            <span>Se abre en pestaña nueva</span>
         </div>
         <div id="resultsList">
             <!-- Resultados se insertan aquí -->
         </div>
+    </div>
+
+    <div class="pagination" id="pagination" aria-label="Paginación de resultados">
+        <!-- botones de página -->
     </div>
 
     <script>
@@ -324,22 +400,31 @@
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
+        const paginationEl = document.getElementById('pagination');
         const loader = document.getElementById('loader');
 
+        const PER_PAGE = 50;
         let debounceTimer;
+        let currentPage = 1;
+        let lastQuery = '';
+        let lastDeep = false;
 
-        function scheduleSearch() {
+        function scheduleSearch(resetPage = true) {
             clearTimeout(debounceTimer);
             const query = searchInput.value.trim();
 
             if (query.length < 3) {
                 resultsContainer.style.display = 'none';
+                paginationEl.classList.remove('visible');
+                paginationEl.innerHTML = '';
                 loader.style.display = 'none';
                 return;
             }
 
+            if (resetPage) currentPage = 1;
+
             debounceTimer = setTimeout(() => {
-                performSearch(query);
+                performSearch(query, currentPage);
             }, 500);
         }
 
@@ -348,32 +433,40 @@
             searchInput.placeholder = deepSearch.checked
                 ? 'Ej: Basic,1,Explanation  o  texto vacío / ID...'
                 : 'Ej: Pose elemental: oscuridad y luz...';
-            // Rebuscar con el modo actual si ya hay query
-            scheduleSearch();
+            scheduleSearch(true);
         });
 
-        searchInput.addEventListener('input', scheduleSearch);
+        searchInput.addEventListener('input', () => scheduleSearch(true));
 
-        async function performSearch(query) {
+        async function performSearch(query, page = 1) {
             resultsContainer.style.display = 'none';
+            paginationEl.classList.remove('visible');
             loader.style.display = 'block';
             resultsList.innerHTML = '';
 
             const deep = deepSearch.checked ? '1' : '0';
+            lastQuery = query;
+            lastDeep = deepSearch.checked;
+            currentPage = page;
 
             try {
-                const response = await fetch(
-                    `/api/search?q=${encodeURIComponent(query)}&deep=${deep}`
-                );
+                const params = new URLSearchParams({
+                    q: query,
+                    deep,
+                    page: String(page),
+                    per_page: String(PER_PAGE),
+                });
+                const response = await fetch(`/api/search?${params.toString()}`);
                 if (!response.ok) throw new Error("Error en la búsqueda");
 
                 const data = await response.json();
 
                 loader.style.display = 'none';
-                renderResults(data.items || [], !!data.deep);
+                renderResults(data);
             } catch (error) {
                 loader.style.display = 'none';
                 resultsContainer.style.display = 'block';
+                paginationEl.classList.remove('visible');
                 resultsList.innerHTML = `<div class="empty-state">❌ Error al realizar la búsqueda. Verifica la conexión con el servidor.</div>`;
             }
         }
@@ -386,31 +479,114 @@
                 .replace(/"/g, '&quot;');
         }
 
-        function renderResults(items, deep) {
+        /** Números de página visibles con elipsis (estilo webs típicas). */
+        function pageWindow(current, total) {
+            if (total <= 9) {
+                return Array.from({ length: total }, (_, i) => i + 1);
+            }
+            const pages = new Set([1, total, current]);
+            for (let i = current - 2; i <= current + 2; i++) {
+                if (i >= 1 && i <= total) pages.add(i);
+            }
+            // siempre un par cerca del inicio/fin
+            pages.add(2);
+            pages.add(total - 1);
+
+            const sorted = [...pages].sort((a, b) => a - b);
+            const out = [];
+            let prev = 0;
+            for (const p of sorted) {
+                if (prev && p - prev > 1) out.push('…');
+                out.push(p);
+                prev = p;
+            }
+            return out;
+        }
+
+        function renderPagination(page, totalPages, total, capped) {
+            if (totalPages <= 1) {
+                paginationEl.classList.remove('visible');
+                paginationEl.innerHTML = '';
+                return;
+            }
+
+            paginationEl.classList.add('visible');
+            paginationEl.innerHTML = '';
+
+            const addBtn = (label, targetPage, { active = false, disabled = false, aria = '' } = {}) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'page-btn' + (active ? ' active' : '');
+                btn.textContent = label;
+                btn.disabled = disabled || active;
+                if (aria) btn.setAttribute('aria-label', aria);
+                if (!disabled && !active) {
+                    btn.addEventListener('click', () => {
+                        performSearch(lastQuery, targetPage);
+                        resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    });
+                }
+                paginationEl.appendChild(btn);
+            };
+
+            addBtn('‹', page - 1, { disabled: page <= 1, aria: 'Página anterior' });
+
+            for (const entry of pageWindow(page, totalPages)) {
+                if (entry === '…') {
+                    const span = document.createElement('span');
+                    span.className = 'page-ellipsis';
+                    span.textContent = '…';
+                    paginationEl.appendChild(span);
+                } else {
+                    addBtn(String(entry), entry, { active: entry === page, aria: `Página ${entry}` });
+                }
+            }
+
+            addBtn('›', page + 1, { disabled: page >= totalPages, aria: 'Página siguiente' });
+
+            const info = document.createElement('div');
+            info.className = 'page-info';
+            const capNote = capped ? ' (límite de búsqueda alcanzado; afina el texto si falta algo)' : '';
+            info.textContent = `Página ${page} de ${totalPages} · ${total} resultados${capNote}`;
+            paginationEl.appendChild(info);
+        }
+
+        function renderResults(data) {
+            const items = data.items || [];
+            const deep = !!data.deep;
+            const page = data.page || 1;
+            const total = data.total || 0;
+            const totalPages = data.total_pages || 0;
+            const perPage = data.per_page || PER_PAGE;
+            const capped = !!data.capped;
+
             resultsContainer.style.display = 'flex';
 
-            if (items.length === 0) {
+            if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
                     : "Activa <strong>Búsqueda avanzada</strong> para buscar por section/id/comando.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
+                renderPagination(1, 0, 0, false);
                 return;
             }
 
-            const isTruncated = items.length >= 100;
-            const displayCount = isTruncated ? "Más de 100" : items.length;
             const modeLabel = deep ? " (avanzada)" : "";
-            resultsCount.textContent = `${displayCount} resultados encontrados${modeLabel}`;
+            const from = (page - 1) * perPage + 1;
+            const to = Math.min(page * perPage, total);
+            resultsCount.textContent = `${total} resultados${modeLabel} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
 
             items.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'result-item';
-                div.onclick = () => {
-                    window.location.href = `/edit?file=${encodeURIComponent(item.file)}&id=${encodeURIComponent(item.id)}`;
-                };
+                const href = `/edit?file=${encodeURIComponent(item.file)}&id=${encodeURIComponent(item.id)}`;
+                // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
+                const a = document.createElement('a');
+                a.className = 'result-item';
+                a.href = href;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
 
                 const displayTxt = escapeHtml(
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
@@ -421,7 +597,7 @@
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
 
-                div.innerHTML = `
+                a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(item.file)}</div>
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
@@ -429,17 +605,10 @@
                     <div class="result-text">${displayTxt}</div>
                 `;
 
-                resultsList.appendChild(div);
+                resultsList.appendChild(a);
             });
 
-            if (isTruncated) {
-                const warningDiv = document.createElement('div');
-                warningDiv.className = 'empty-state';
-                warningDiv.style.padding = '20px';
-                warningDiv.style.borderTop = '1px solid var(--panel-border)';
-                warningDiv.innerHTML = `⚠️ <i>Se muestran los primeros 100 resultados. Sé más específico si no encuentras lo que buscas.</i>`;
-                resultsList.appendChild(warningDiv);
-            }
+            renderPagination(page, totalPages, total, capped);
         }
     </script>
 </body>
