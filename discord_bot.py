@@ -407,11 +407,40 @@ async def web_index(request):
     except Exception as e:
         return web.Response(text=f"Error al cargar UI: {e}", status=500)
 
+def _item_corpus(file_path: str) -> str:
+    """
+    Clasifica un path del índice: 'classic' | 'ng' | 'other'.
+    Acepta Csv_Clasic, Csv_Clasic_Raw, Csv_Ngs, Csv_Ngs_Raw (con o sin _Raw).
+    """
+    f = (file_path or "").replace("\\", "/").lower()
+    # Quitar carpeta editable normalizada
+    base = f.split("/", 1)[0].replace("_raw", "")
+    if "clasic" in base or "classic" in base:
+        return "classic"
+    if "ngs" in base or base.endswith("/ng") or base == "ng" or "csv_ng" in base:
+        return "ng"
+    # fallback por subcadena en path completo
+    if "clasic" in f or "classic" in f:
+        return "classic"
+    if "ngs" in f or "/ng/" in f:
+        return "ng"
+    return "other"
+
+
 async def web_api_search(request):
     query = request.query.get("q", "").strip()
     # deep=1 | true | yes  → también busca en section/group/id (comandos CSV)
     deep_raw = (request.query.get("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
+
+    # scope=all|classic|ng  (default: all = Classic + NGS)
+    scope_raw = (request.query.get("scope") or "all").strip().lower()
+    if scope_raw in ("classic", "clasic", "c", "win32"):
+        scope = "classic"
+    elif scope_raw in ("ng", "ngs", "n", "reboot"):
+        scope = "ng"
+    else:
+        scope = "all"
 
     # Paginación: page (1-based), per_page (default 50, max 100)
     try:
@@ -430,6 +459,7 @@ async def web_api_search(request):
     empty = {
         "items": [],
         "deep": deep,
+        "scope": scope,
         "page": page,
         "per_page": per_page,
         "total": 0,
@@ -454,6 +484,13 @@ async def web_api_search(request):
     ids_vistos = set()
 
     for item in bot.index_datos:
+        # Filtro Classic / NGS / ambos
+        corpus = _item_corpus(item.get("file", ""))
+        if scope == "classic" and corpus != "classic":
+            continue
+        if scope == "ng" and corpus != "ng":
+            continue
+
         matched = False
         match_where = "text"
 
@@ -503,6 +540,7 @@ async def web_api_search(request):
                 "text": item["text"],
                 "cmd": item.get("cmd", ""),
                 "match": match_where,
+                "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
             })
 
         if len(coincidencias) >= MAX_MATCHES:
@@ -518,6 +556,7 @@ async def web_api_search(request):
     return web.json_response({
         "items": page_items,
         "deep": deep,
+        "scope": scope,
         "page": page,
         "per_page": per_page,
         "total": total,
