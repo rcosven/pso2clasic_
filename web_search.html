@@ -297,7 +297,7 @@
     <div class="search-options">
         <label class="deep-toggle" title="Incluye section, group e id del CSV (comandos)">
             <input type="checkbox" id="deepSearch">
-            <span>Búsqueda profunda</span>
+            <span>Búsqueda avanzada</span>
         </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
@@ -393,14 +393,14 @@
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Búsqueda profunda</strong> para buscar por section/id/comando.";
+                    : "Activa <strong>Búsqueda avanzada</strong> para buscar por section/id/comando.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 return;
             }
 
             const isTruncated = items.length >= 100;
             const displayCount = isTruncated ? "Más de 100" : items.length;
-            const modeLabel = deep ? " (profunda)" : "";
+            const modeLabel = deep ? " (avanzada)" : "";
             resultsCount.textContent = `${displayCount} resultados encontrados${modeLabel}`;
 
             resultsList.innerHTML = '';
