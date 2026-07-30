@@ -62,6 +62,17 @@ class BuscadorBot(commands.Bot):
             
         logger.info("Sincronización completada.")
 
+    @staticmethod
+    def _norm_search(s: str) -> str:
+        """Normaliza texto para búsqueda (minúsculas, sin tildes)."""
+        if not s:
+            return ""
+        return "".join(
+            c
+            for c in unicodedata.normalize("NFKD", s.lower())
+            if not unicodedata.combining(c)
+        )
+
     def cargar_indices(self):
         """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
         self.index_datos.clear()
@@ -79,14 +90,26 @@ class BuscadorBot(commands.Bot):
                             reader = csv.DictReader(f)
                             for row in reader:
                                 if 'id' in row:
-                                    texto_original = row.get('text', '')
-                                    texto_norm = ''.join(c for c in unicodedata.normalize('NFKD', texto_original.lower()) if not unicodedata.combining(c))
+                                    section = row.get('section', '') or ''
+                                    group = row.get('group', '') or ''
+                                    row_id = row.get('id', '') or ''
+                                    texto_original = row.get('text', '') or ''
+                                    texto_norm = self._norm_search(texto_original)
+                                    # Comando CSV: section,group,id[,text]
+                                    # Permite encontrar filas vacías o por clave (ej. Basic,1,Explanation)
+                                    cmd = f"{section},{group},{row_id}"
+                                    cmd_full = f"{cmd},{texto_original}"
                                     self.index_datos.append({
-                                        'section': row.get('section', ''),
-                                        'group': row.get('group', ''),
-                                        'id': row['id'],
+                                        'section': section,
+                                        'group': group,
+                                        'id': row_id,
                                         'text': texto_original,
                                         'text_norm': texto_norm,
+                                        'cmd': cmd,
+                                        'cmd_norm': self._norm_search(cmd),
+                                        'cmd_full_norm': self._norm_search(cmd_full),
+                                        'id_norm': self._norm_search(row_id),
+                                        'section_norm': self._norm_search(section),
                                         'file': f"{dir_name}/{archivo_csv.name}",
                                         'line': reader.line_num
                                     })
@@ -385,35 +408,84 @@ async def web_index(request):
         return web.Response(text=f"Error al cargar UI: {e}", status=500)
 
 async def web_api_search(request):
-    query = request.query.get("q", "").strip().lower()
+    query = request.query.get("q", "").strip()
+    # deep=1 | true | yes  → también busca en section/group/id (comandos CSV)
+    deep_raw = (request.query.get("deep") or "").strip().lower()
+    deep = deep_raw in ("1", "true", "yes", "on")
+
     if len(query) < 3:
-        return web.json_response({"items": []})
-        
-    query_norm = ''.join(c for c in unicodedata.normalize('NFKD', query) if not unicodedata.combining(c))
-    
+        return web.json_response({"items": [], "deep": deep})
+
+    query_norm = "".join(
+        c
+        for c in unicodedata.normalize("NFKD", query.lower())
+        if not unicodedata.combining(c)
+    )
+    # Quitar espacios alrededor de comas: "Basic, 1, Explanation" → "basic,1,explanation"
+    query_cmd = ",".join(p.strip() for p in query_norm.split(","))
+    # Permitir "Basic,1,Explanation," (coma final de text vacío)
+    query_cmd = query_cmd.rstrip(",")
+
     bot = request.app['bot']
     coincidencias = []
     ids_vistos = set()
-    
+
     for item in bot.index_datos:
-        # Buscar en TODOS los textos (Español, Inglés, Japonés) usando texto normalizado (sin tildes)
-        if query_norm in item.get('text_norm', ''):
-            # Calcular el archivo editable real (quitar _Raw)
-            editable_file = item['file'].replace('_Raw', '')
-            clave_unica = f"{editable_file}_{item['id']}"
-            
-            if clave_unica not in ids_vistos:
-                ids_vistos.add(clave_unica)
-                coincidencias.append({
-                    "file": editable_file,
-                    "id": item['id'],
-                    "text": item['text']
-                })
-            
-            if len(coincidencias) >= 100:  # Limitar resultados
-                break
-                
-    return web.json_response({"items": coincidencias})
+        matched = False
+        match_where = "text"
+
+        # Búsqueda normal: solo en el texto de la línea
+        if query_norm in item.get("text_norm", ""):
+            matched = True
+            match_where = "text"
+        elif deep:
+            # Búsqueda profunda: section, group, id y comando CSV
+            cmd_norm = item.get("cmd_norm", "")
+            cmd_full = item.get("cmd_full_norm", "")
+            if (
+                query_cmd
+                and (
+                    query_cmd in cmd_norm
+                    or query_cmd in cmd_full
+                    or cmd_norm in query_cmd
+                )
+            ):
+                matched = True
+                match_where = "command"
+            elif query_norm in item.get("id_norm", ""):
+                matched = True
+                match_where = "id"
+            elif query_norm in item.get("section_norm", ""):
+                matched = True
+                match_where = "section"
+            elif query_norm in (item.get("group") or "").lower():
+                matched = True
+                match_where = "group"
+
+        if not matched:
+            continue
+
+        # Calcular el archivo editable real (quitar _Raw)
+        editable_file = item["file"].replace("_Raw", "")
+        # Clave única: section+id+group (mismo id puede existir en varias sections)
+        clave_unica = f"{editable_file}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
+
+        if clave_unica not in ids_vistos:
+            ids_vistos.add(clave_unica)
+            coincidencias.append({
+                "file": editable_file,
+                "id": item["id"],
+                "section": item.get("section", ""),
+                "group": item.get("group", ""),
+                "text": item["text"],
+                "cmd": item.get("cmd", ""),
+                "match": match_where,
+            })
+
+        if len(coincidencias) >= 100:  # Limitar resultados
+            break
+
+    return web.json_response({"items": coincidencias, "deep": deep})
 
 async def web_api_file(request):
     filename = request.query.get("name")
