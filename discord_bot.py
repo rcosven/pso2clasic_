@@ -73,12 +73,56 @@ class BuscadorBot(commands.Bot):
             if not unicodedata.combining(c)
         )
 
+    @staticmethod
+    def fix_utf16_swapped(s: str) -> str:
+        """
+        Repara texto corrupto por UTF-16LE leído como UTF-16BE
+        (p.ej. 'You' → '夀漀甀', '<br>' → '㰀戀爀㸀').
+        Cada codepoint con byte bajo 0x00 se interpreta como el byte alto (ASCII/Latin-1).
+        """
+        if not s:
+            return s
+        out: list[str] = []
+        for ch in s:
+            cp = ord(ch)
+            if cp > 0xFF and (cp & 0xFF) == 0:
+                hi = cp >> 8
+                # ASCII / control + Latin-1 útil
+                if hi <= 0xFF:
+                    out.append(chr(hi))
+                    continue
+            # Espacios “raros” frecuentemente producidos por la misma corrupción
+            if cp in (0x2000, 0x2001, 0x2002, 0x2003, 0x3000):
+                out.append(" ")
+                continue
+            out.append(ch)
+        return "".join(out)
+
+    @staticmethod
+    def is_utf16_swapped_corrupt(s: str) -> bool:
+        """
+        Detecta el patrón típico de corrupción UTF-16 swap:
+        muchos caracteres con forma U+XX00 (XX = ASCII imprimible).
+        """
+        if not s or len(s) < 6:
+            return False
+        swapped = 0
+        for ch in s:
+            cp = ord(ch)
+            if (cp & 0xFF) == 0:
+                hi = cp >> 8
+                if 0x09 <= hi <= 0x7E:
+                    swapped += 1
+        # Umbral: al menos 6 chars “swapped” y >= 25% del texto
+        return swapped >= 6 and (swapped / len(s)) >= 0.25
+
     def cargar_indices(self):
         """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
         self.index_datos.clear()
         
         # Agrega aquí los nombres de las carpetas que contienen tus CSV
         directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_Raw", "Csv_Clasic_Raw"]
+        corrupt_count = 0
         
         for dir_name in directorios_datos:
             ruta = Path(dir_name)
@@ -99,6 +143,12 @@ class BuscadorBot(commands.Bot):
                                     # Permite encontrar filas vacías o por clave (ej. Basic,1,Explanation)
                                     cmd = f"{section},{group},{row_id}"
                                     cmd_full = f"{cmd},{texto_original}"
+                                    is_corrupt = self.is_utf16_swapped_corrupt(texto_original)
+                                    text_fixed = (
+                                        self.fix_utf16_swapped(texto_original) if is_corrupt else ""
+                                    )
+                                    if is_corrupt:
+                                        corrupt_count += 1
                                     self.index_datos.append({
                                         'section': section,
                                         'group': group,
@@ -111,14 +161,20 @@ class BuscadorBot(commands.Bot):
                                         'id_norm': self._norm_search(row_id),
                                         'section_norm': self._norm_search(section),
                                         'file': f"{dir_name}/{archivo_csv.name}",
-                                        'line': reader.line_num
+                                        'line': reader.line_num,
+                                        'corrupt_utf16': is_corrupt,
+                                        'text_fixed': text_fixed,
+                                        'text_fixed_norm': self._norm_search(text_fixed) if text_fixed else '',
                                     })
                     except Exception as e:
                         logger.error(f"Error leyendo {archivo_csv.name}: {e}")
             else:
                 logger.warning(f"Advertencia: No se encontró la carpeta {dir_name}")
                 
-        logger.info(f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)}")
+        logger.info(
+            f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)} "
+            f"(texto corrupto UTF-16: {corrupt_count})"
+        )
 
 def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig_id: str, nuevo_texto: str, nueva_section: str = None, nuevo_group: str = None, nuevo_id: str = None):
     """
@@ -433,6 +489,10 @@ async def web_api_search(request):
     deep_raw = (request.query.get("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
 
+    # corrupt=1 → solo líneas con texto UTF-16 corrupto (夀漀甀…); no exige query
+    corrupt_raw = (request.query.get("corrupt") or "").strip().lower()
+    corrupt_only = corrupt_raw in ("1", "true", "yes", "on")
+
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
@@ -459,6 +519,7 @@ async def web_api_search(request):
     empty = {
         "items": [],
         "deep": deep,
+        "corrupt": corrupt_only,
         "scope": scope,
         "page": page,
         "per_page": per_page,
@@ -466,16 +527,17 @@ async def web_api_search(request):
         "total_pages": 0,
         "capped": False,
     }
-    if len(query) < 3:
+    # En modo corrupto se permite query vacía (lista todo lo dañado)
+    if not corrupt_only and len(query) < 3:
         return web.json_response(empty)
 
     query_norm = "".join(
         c
         for c in unicodedata.normalize("NFKD", query.lower())
         if not unicodedata.combining(c)
-    )
+    ) if query else ""
     # Quitar espacios alrededor de comas: "Basic, 1, Explanation" → "basic,1,explanation"
-    query_cmd = ",".join(p.strip() for p in query_norm.split(","))
+    query_cmd = ",".join(p.strip() for p in query_norm.split(",")) if query_norm else ""
     # Permitir "Basic,1,Explanation," (coma final de text vacío)
     query_cmd = query_cmd.rstrip(",")
 
@@ -494,33 +556,49 @@ async def web_api_search(request):
         matched = False
         match_where = "text"
 
-        # Búsqueda normal: solo en el texto de la línea
-        if query_norm in item.get("text_norm", ""):
+        if corrupt_only:
+            # Solo texto dañado por swap UTF-16 (intervención IA / encoding malo)
+            if not item.get("corrupt_utf16"):
+                continue
             matched = True
-            match_where = "text"
-        elif deep:
-            # Búsqueda avanzada: section, group, id y comando CSV
-            cmd_norm = item.get("cmd_norm", "")
-            cmd_full = item.get("cmd_full_norm", "")
-            if (
-                query_cmd
-                and (
-                    query_cmd in cmd_norm
-                    or query_cmd in cmd_full
-                    or cmd_norm in query_cmd
-                )
-            ):
+            match_where = "corrupt"
+            # Filtro opcional: también acotar por query en texto reparado o crudo
+            if query_norm:
+                if (
+                    query_norm not in item.get("text_norm", "")
+                    and query_norm not in item.get("text_fixed_norm", "")
+                    and query_norm not in item.get("id_norm", "")
+                    and query_norm not in item.get("cmd_norm", "")
+                ):
+                    continue
+        else:
+            # Búsqueda normal: solo en el texto de la línea
+            if query_norm in item.get("text_norm", ""):
                 matched = True
-                match_where = "command"
-            elif query_norm in item.get("id_norm", ""):
-                matched = True
-                match_where = "id"
-            elif query_norm in item.get("section_norm", ""):
-                matched = True
-                match_where = "section"
-            elif query_norm in (item.get("group") or "").lower():
-                matched = True
-                match_where = "group"
+                match_where = "text"
+            elif deep:
+                # Búsqueda avanzada: section, group, id y comando CSV
+                cmd_norm = item.get("cmd_norm", "")
+                cmd_full = item.get("cmd_full_norm", "")
+                if (
+                    query_cmd
+                    and (
+                        query_cmd in cmd_norm
+                        or query_cmd in cmd_full
+                        or cmd_norm in query_cmd
+                    )
+                ):
+                    matched = True
+                    match_where = "command"
+                elif query_norm in item.get("id_norm", ""):
+                    matched = True
+                    match_where = "id"
+                elif query_norm in item.get("section_norm", ""):
+                    matched = True
+                    match_where = "section"
+                elif query_norm in (item.get("group") or "").lower():
+                    matched = True
+                    match_where = "group"
 
         if not matched:
             continue
@@ -532,7 +610,7 @@ async def web_api_search(request):
 
         if clave_unica not in ids_vistos:
             ids_vistos.add(clave_unica)
-            coincidencias.append({
+            entry = {
                 "file": editable_file,
                 "id": item["id"],
                 "section": item.get("section", ""),
@@ -541,7 +619,11 @@ async def web_api_search(request):
                 "cmd": item.get("cmd", ""),
                 "match": match_where,
                 "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
-            })
+            }
+            if item.get("corrupt_utf16"):
+                entry["corrupt"] = True
+                entry["text_fixed"] = item.get("text_fixed") or ""
+            coincidencias.append(entry)
 
         if len(coincidencias) >= MAX_MATCHES:
             break
@@ -556,6 +638,7 @@ async def web_api_search(request):
     return web.json_response({
         "items": page_items,
         "deep": deep,
+        "corrupt": corrupt_only,
         "scope": scope,
         "page": page,
         "per_page": per_page,
