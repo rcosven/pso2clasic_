@@ -103,18 +103,54 @@ class BuscadorBot(commands.Bot):
         """
         Detecta el patrón típico de corrupción UTF-16 swap:
         muchos caracteres con forma U+XX00 (XX = ASCII imprimible).
+        Ej: 'You' → '夀漀甀', '<br>' → '㰀戀爀㸀'
         """
-        if not s or len(s) < 6:
+        if not s or len(s) < 4:
             return False
         swapped = 0
+        run = 0
+        max_run = 0
         for ch in s:
             cp = ord(ch)
             if (cp & 0xFF) == 0:
                 hi = cp >> 8
                 if 0x09 <= hi <= 0x7E:
                     swapped += 1
-        # Umbral: al menos 6 chars “swapped” y >= 25% del texto
-        return swapped >= 6 and (swapped / len(s)) >= 0.25
+                    run += 1
+                    if run > max_run:
+                        max_run = run
+                    continue
+            run = 0
+        # Al menos 4 chars "swapped", o racha de 4, o >=20% del texto
+        n = len(s)
+        return (
+            swapped >= 4
+            and (max_run >= 4 or swapped >= 6 or (swapped / n) >= 0.20)
+        )
+
+    @staticmethod
+    def has_rare_chars(s: str) -> bool:
+        """
+        Líneas con caracteres no comunes para el parche ES/JP:
+        - patrón UTF-16 invertido (夀漀甀…)
+        - replacement char, private use, controles raros
+        """
+        if not s:
+            return False
+        if BuscadorBot.is_utf16_swapped_corrupt(s):
+            return True
+        for ch in s:
+            cp = ord(ch)
+            # Controles (salvo tab/LF/CR)
+            if cp < 32 and cp not in (9, 10, 13):
+                return True
+            # Replacement / objetos / private use
+            if cp in (0xFFFD, 0xFFFE, 0xFFFF) or 0xE000 <= cp <= 0xF8FF:
+                return True
+            # Surrogates sueltos (no deberían aparecer en str Python normal)
+            if 0xD800 <= cp <= 0xDFFF:
+                return True
+        return False
 
     def cargar_indices(self):
         """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
@@ -143,11 +179,12 @@ class BuscadorBot(commands.Bot):
                                     # Permite encontrar filas vacías o por clave (ej. Basic,1,Explanation)
                                     cmd = f"{section},{group},{row_id}"
                                     cmd_full = f"{cmd},{texto_original}"
+                                    is_rare = self.has_rare_chars(texto_original)
                                     is_corrupt = self.is_utf16_swapped_corrupt(texto_original)
                                     text_fixed = (
                                         self.fix_utf16_swapped(texto_original) if is_corrupt else ""
                                     )
-                                    if is_corrupt:
+                                    if is_rare:
                                         corrupt_count += 1
                                     self.index_datos.append({
                                         'section': section,
@@ -162,6 +199,7 @@ class BuscadorBot(commands.Bot):
                                         'section_norm': self._norm_search(section),
                                         'file': f"{dir_name}/{archivo_csv.name}",
                                         'line': reader.line_num,
+                                        'rare_chars': is_rare,
                                         'corrupt_utf16': is_corrupt,
                                         'text_fixed': text_fixed,
                                         'text_fixed_norm': self._norm_search(text_fixed) if text_fixed else '',
@@ -173,7 +211,7 @@ class BuscadorBot(commands.Bot):
                 
         logger.info(
             f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)} "
-            f"(texto corrupto UTF-16: {corrupt_count})"
+            f"(líneas raras: {corrupt_count})"
         )
 
 def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig_id: str, nuevo_texto: str, nueva_section: str = None, nuevo_group: str = None, nuevo_id: str = None):
@@ -489,9 +527,10 @@ async def web_api_search(request):
     deep_raw = (request.query.get("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
 
-    # corrupt=1 → solo líneas con texto UTF-16 corrupto (夀漀甀…); no exige query
-    corrupt_raw = (request.query.get("corrupt") or "").strip().lower()
-    corrupt_only = corrupt_raw in ("1", "true", "yes", "on")
+    # rare=1 / corrupt=1 → solo líneas con caracteres raros; no exige query (edición manual)
+    rare_raw = (request.query.get("rare") or request.query.get("corrupt") or "").strip().lower()
+    rare_only = rare_raw in ("1", "true", "yes", "on")
+    corrupt_only = rare_only  # alias retrocompatible
 
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
@@ -519,7 +558,8 @@ async def web_api_search(request):
     empty = {
         "items": [],
         "deep": deep,
-        "corrupt": corrupt_only,
+        "rare": rare_only,
+        "corrupt": rare_only,
         "scope": scope,
         "page": page,
         "per_page": per_page,
@@ -527,8 +567,8 @@ async def web_api_search(request):
         "total_pages": 0,
         "capped": False,
     }
-    # En modo corrupto se permite query vacía (lista todo lo dañado)
-    if not corrupt_only and len(query) < 3:
+    # En modo líneas raras se permite query vacía (lista todo sin escribir nada)
+    if not rare_only and len(query) < 3:
         return web.json_response(empty)
 
     query_norm = "".join(
@@ -556,19 +596,20 @@ async def web_api_search(request):
         matched = False
         match_where = "text"
 
-        if corrupt_only:
-            # Solo texto dañado por swap UTF-16 (intervención IA / encoding malo)
-            if not item.get("corrupt_utf16"):
+        if rare_only:
+            # Solo líneas con caracteres no comunes (sin necesidad de escribir la query)
+            if not (item.get("rare_chars") or item.get("corrupt_utf16")):
                 continue
             matched = True
-            match_where = "corrupt"
-            # Filtro opcional: también acotar por query en texto reparado o crudo
+            match_where = "rare"
+            # Filtro opcional por archivo/id/texto si el usuario escribe algo
             if query_norm:
                 if (
                     query_norm not in item.get("text_norm", "")
                     and query_norm not in item.get("text_fixed_norm", "")
                     and query_norm not in item.get("id_norm", "")
                     and query_norm not in item.get("cmd_norm", "")
+                    and query_norm not in (item.get("file") or "").lower()
                 ):
                     continue
         else:
@@ -620,9 +661,11 @@ async def web_api_search(request):
                 "match": match_where,
                 "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
             }
-            if item.get("corrupt_utf16"):
-                entry["corrupt"] = True
-                entry["text_fixed"] = item.get("text_fixed") or ""
+            if item.get("rare_chars") or item.get("corrupt_utf16"):
+                entry["rare"] = True
+                entry["corrupt"] = bool(item.get("corrupt_utf16"))
+                if item.get("text_fixed"):
+                    entry["text_fixed"] = item.get("text_fixed") or ""
             coincidencias.append(entry)
 
         if len(coincidencias) >= MAX_MATCHES:
@@ -638,7 +681,8 @@ async def web_api_search(request):
     return web.json_response({
         "items": page_items,
         "deep": deep,
-        "corrupt": corrupt_only,
+        "rare": rare_only,
+        "corrupt": rare_only,
         "scope": scope,
         "page": page,
         "per_page": per_page,
