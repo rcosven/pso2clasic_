@@ -101,56 +101,74 @@ class BuscadorBot(commands.Bot):
     @staticmethod
     def is_utf16_swapped_corrupt(s: str) -> bool:
         """
-        Detecta el patrón típico de corrupción UTF-16 swap:
-        muchos caracteres con forma U+XX00 (XX = ASCII imprimible).
-        Ej: 'You' → '夀漀甀', '<br>' → '㰀戀爀㸀'
+        Detecta basura por UTF-16 LE/BE intercambiado (solo group 1 en la práctica).
+
+        Patrón real (NO es japonés normal):
+          'You' → '夀漀甀', '<br>' → '㰀戀爀㸀', espacios → U+2000.. / U+3000
+
+        Heurística estricta para evitar falsos positivos en CJK (group 0):
+          1) Muchos no-espacios son codepoints U+XX00 con XX = ASCII imprimible
+          2) Al “reparar”, el texto queda mayoritariamente latino/ASCII legible
         """
         if not s or len(s) < 4:
             return False
+
         swapped = 0
+        non_ws = 0
         run = 0
         max_run = 0
         for ch in s:
+            if ch.isspace():
+                run = 0
+                continue
+            non_ws += 1
             cp = ord(ch)
+            # U+XX00 donde XX es ASCII imprimible (resultado típico del swap)
             if (cp & 0xFF) == 0:
                 hi = cp >> 8
-                if 0x09 <= hi <= 0x7E:
+                if 0x20 <= hi <= 0x7E:
                     swapped += 1
                     run += 1
                     if run > max_run:
                         max_run = run
                     continue
             run = 0
-        # Al menos 4 chars "swapped", o racha de 4, o >=20% del texto
-        n = len(s)
-        return (
-            swapped >= 4
-            and (max_run >= 4 or swapped >= 6 or (swapped / n) >= 0.20)
+
+        if non_ws < 3 or swapped < 4:
+            return False
+        # La mayoría del contenido no-espacio debe ser del patrón basura
+        if (swapped / non_ws) < 0.40 and max_run < 6:
+            return False
+
+        fixed = BuscadorBot.fix_utf16_swapped(s)
+        if fixed == s:
+            return False
+
+        # Tras reparar: predominio de Latin-1/ASCII (inglés/español con tags)
+        latin = sum(1 for c in fixed if ord(c) < 0x100)
+        if latin / max(1, len(fixed)) < 0.70:
+            return False
+
+        # Debe quedar algo legible (letras, dígitos o tags de juego)
+        useful = sum(
+            1
+            for c in fixed
+            if c.isalnum() or c in "<>/.,;:!?-_'\"&= "
         )
+        if useful < 3:
+            return False
+
+        return True
 
     @staticmethod
     def has_rare_chars(s: str) -> bool:
         """
-        Líneas con caracteres no comunes para el parche ES/JP:
-        - patrón UTF-16 invertido (夀漀甀…)
-        - replacement char, private use, controles raros
+        Alias de basura UTF-16 swap (夀漀甀 / 㰀戀爀㸀…).
+
+        Antes incluía controles/PUA y generaba miles de falsos positivos en japonés.
+        La búsqueda «Líneas raras» solo debe listar este patrón en group 1.
         """
-        if not s:
-            return False
-        if BuscadorBot.is_utf16_swapped_corrupt(s):
-            return True
-        for ch in s:
-            cp = ord(ch)
-            # Controles (salvo tab/LF/CR)
-            if cp < 32 and cp not in (9, 10, 13):
-                return True
-            # Replacement / objetos / private use
-            if cp in (0xFFFD, 0xFFFE, 0xFFFF) or 0xE000 <= cp <= 0xF8FF:
-                return True
-            # Surrogates sueltos (no deberían aparecer en str Python normal)
-            if 0xD800 <= cp <= 0xDFFF:
-                return True
-        return False
+        return BuscadorBot.is_utf16_swapped_corrupt(s)
 
     def cargar_indices(self):
         """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
@@ -179,8 +197,15 @@ class BuscadorBot(commands.Bot):
                                     # Permite encontrar filas vacías o por clave (ej. Basic,1,Explanation)
                                     cmd = f"{section},{group},{row_id}"
                                     cmd_full = f"{cmd},{texto_original}"
-                                    is_rare = self.has_rare_chars(texto_original)
-                                    is_corrupt = self.is_utf16_swapped_corrupt(texto_original)
+                                    # Basura UTF-16: solo tiene sentido marcarlo en group 1
+                                    # (traducción ES/EN). Group 0 es JP y daba falsos positivos.
+                                    is_g1 = str(group) == "1"
+                                    is_corrupt = (
+                                        self.is_utf16_swapped_corrupt(texto_original)
+                                        if is_g1
+                                        else False
+                                    )
+                                    is_rare = is_corrupt  # misma definición (solo group 1)
                                     text_fixed = (
                                         self.fix_utf16_swapped(texto_original) if is_corrupt else ""
                                     )
@@ -211,13 +236,24 @@ class BuscadorBot(commands.Bot):
                 
         logger.info(
             f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)} "
-            f"(líneas raras: {corrupt_count})"
+            f"(líneas raras group1 UTF-16: {corrupt_count})"
         )
 
-def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig_id: str, nuevo_texto: str, nueva_section: str = None, nuevo_group: str = None, nuevo_id: str = None):
+def modificar_texto_csv(
+    file_path: str,
+    orig_section: str,
+    orig_group: str,
+    orig_id: str,
+    nuevo_texto: str,
+    nueva_section: str = None,
+    nuevo_group: str = None,
+    nuevo_id: str = None,
+    create_if_missing: bool = False,
+):
     """
-    Lee un archivo CSV, busca la fila exacta por section, group e id original, 
+    Lee un archivo CSV, busca la fila exacta por section, group e id original,
     y reemplaza el texto, o incluso la section/group/id si se especifican.
+    Si create_if_missing=True y no existe la fila, la añade al final.
     """
     ruta = Path(file_path)
     if not ruta.exists():
@@ -229,7 +265,7 @@ def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig
 
     with open(ruta, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
-        headers = reader.fieldnames
+        headers = list(reader.fieldnames or ["section", "group", "id", "text"])
         for row in reader:
             # Si hay columnas extra por comas sin escapar en el CSV original, unirlas al texto
             if None in row:
@@ -247,6 +283,16 @@ def modificar_texto_csv(file_path: str, orig_section: str, orig_group: str, orig
                     row['id'] = nuevo_id
                 modificado = True
             filas.append(row)
+
+    if not modificado and create_if_missing:
+        # Crear fila nueva (p. ej. group 1 de traducción que aún no existe)
+        new_row = {h: "" for h in headers}
+        new_row["section"] = nueva_section if nueva_section is not None else (orig_section or "")
+        new_row["group"] = nuevo_group if nuevo_group is not None else (orig_group or "1")
+        new_row["id"] = nuevo_id if nuevo_id is not None else (orig_id or "")
+        new_row["text"] = nuevo_texto
+        filas.append(new_row)
+        modificado = True
 
     if not modificado:
         return False
@@ -597,19 +643,41 @@ async def web_api_search(request):
         match_where = "text"
 
         if rare_only:
-            # Solo líneas con caracteres no comunes (sin necesidad de escribir la query)
-            if not (item.get("rare_chars") or item.get("corrupt_utf16")):
+            # ═══════════════════════════════════════════════════════════
+            # Líneas raras: SOLO group 1 con basura UTF-16 (夀漀甀 / 㰀戀爀㸀)
+            # Ignora SIEMPRE group 0 (japonés) y carpetas *_Raw.
+            # ═══════════════════════════════════════════════════════════
+            grp = str(item.get("group", "") or "").strip()
+            if grp != "1":
                 continue
+
+            fpath = (item.get("file") or "").replace("\\", "/")
+            if "_Raw/" in fpath or "/Csv_Clasic_Raw/" in fpath or "/Csv_Ngs_Raw/" in fpath:
+                continue
+            # Solo CSV del parche editable
+            if not (
+                fpath.startswith("Csv_Clasic/")
+                or fpath.startswith("Csv_Ngs/")
+            ):
+                continue
+
+            text = item.get("text") or ""
+            # Preferir flag del índice; re-detectar en vivo por si el flag quedó desfasado
+            is_corrupt = bool(item.get("corrupt_utf16")) or BuscadorBot.is_utf16_swapped_corrupt(text)
+            if not is_corrupt:
+                continue
+
             matched = True
             match_where = "rare"
-            # Filtro opcional por archivo/id/texto si el usuario escribe algo
+            # Filtro opcional: si el usuario escribe algo, acota por archivo/id/texto
             if query_norm:
                 if (
                     query_norm not in item.get("text_norm", "")
                     and query_norm not in item.get("text_fixed_norm", "")
+                    and query_norm not in BuscadorBot._norm_search(BuscadorBot.fix_utf16_swapped(text))
                     and query_norm not in item.get("id_norm", "")
                     and query_norm not in item.get("cmd_norm", "")
-                    and query_norm not in (item.get("file") or "").lower()
+                    and query_norm not in fpath.lower()
                 ):
                     continue
         else:
@@ -661,11 +729,14 @@ async def web_api_search(request):
                 "match": match_where,
                 "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
             }
-            if item.get("rare_chars") or item.get("corrupt_utf16"):
+            if rare_only or item.get("rare_chars") or item.get("corrupt_utf16"):
                 entry["rare"] = True
-                entry["corrupt"] = bool(item.get("corrupt_utf16"))
-                if item.get("text_fixed"):
-                    entry["text_fixed"] = item.get("text_fixed") or ""
+                entry["corrupt"] = True
+                fixed = item.get("text_fixed") or ""
+                if not fixed and rare_only:
+                    fixed = BuscadorBot.fix_utf16_swapped(item.get("text") or "")
+                if fixed:
+                    entry["text_fixed"] = fixed
             coincidencias.append(entry)
 
         if len(coincidencias) >= MAX_MATCHES:
@@ -706,23 +777,58 @@ async def web_api_file(request):
     raw_filename = filename.replace("Csv_Ngs", "Csv_Ngs_Raw").replace("Csv_Clasic", "Csv_Clasic_Raw")
     raw_items = [item for item in bot.index_datos if item['file'] == raw_filename]
     
-    # 3. Crear diccionarios para búsqueda O(1)
-    g0_dict = {(item.get('section'), item['id']): item.get('text', '') for item in file_items if item.get('group') == '0'}
-    g_raw_dict = {(item.get('section'), item['id']): item.get('text', '') for item in raw_items if item.get('group') == '1'}
-    
-    # 4. Emparejar con grupo 1 (traducción al español)
-    for g1 in file_items:
-        if g1.get('group') == '1':
-            original_text = g0_dict.get((g1.get('section'), g1['id']), "")
-            english_text = g_raw_dict.get((g1.get('section'), g1['id']), "")
-            
-            items.append({
-                'section': g1.get('section', ''),
-                'id': g1['id'],
-                'text': g1.get('text', ''),
-                'original': original_text,
-                'english': english_text
-            })
+    # 3. Agrupar por (section, id): group 0 = JP, group 1 = ES (u otros grupos)
+    #    Antes solo se devolvía group==1 → archivos solo con group 0 salían vacíos en el editor.
+    by_key = {}
+    order = []
+    for item in file_items:
+        key = (item.get("section", ""), item["id"])
+        if key not in by_key:
+            by_key[key] = {
+                "section": item.get("section", ""),
+                "id": item["id"],
+                "groups": {},
+                "line": item.get("line", 0),
+            }
+            order.append(key)
+        by_key[key]["groups"][str(item.get("group", ""))] = item.get("text", "")
+        # Conservar la línea más baja como ancla de orden
+        ln = item.get("line", 0) or 0
+        if ln and (not by_key[key]["line"] or ln < by_key[key]["line"]):
+            by_key[key]["line"] = ln
+
+    g_raw_dict = {
+        (item.get("section"), item["id"]): item.get("text", "")
+        for item in raw_items
+        if str(item.get("group", "")) == "1"
+    }
+
+    # Orden estable: por línea de aparición
+    order.sort(key=lambda k: (by_key[k]["line"] or 0, k[0], k[1]))
+
+    for key in order:
+        entry = by_key[key]
+        groups = entry["groups"]
+        original_text = groups.get("0", "")
+        spanish_text = groups.get("1", "")
+        # Si no hay group 1, el texto “principal” visible puede ser g0 u otro grupo
+        other_groups = {g: t for g, t in groups.items() if g not in ("0", "1")}
+        preview = spanish_text or original_text
+        if not preview and other_groups:
+            preview = next(iter(other_groups.values()), "")
+
+        items.append({
+            "section": entry["section"],
+            "id": entry["id"],
+            "group": "1" if "1" in groups else ("0" if "0" in groups else next(iter(groups.keys()), "1")),
+            "text": spanish_text,  # español (puede ir vacío si aún no hay traducción)
+            "original": original_text,
+            "english": g_raw_dict.get(key, ""),
+            "has_group1": "1" in groups,
+            "has_group0": "0" in groups,
+            "groups": groups,
+            "preview": preview,
+        })
             
     return web.json_response({"items": items})
 
@@ -752,17 +858,29 @@ async def web_api_save(request):
         data = await request.json()
         filename = data.get('file')
         orig_section = data.get('orig_section', data.get('section', ''))
-        orig_group = data.get('orig_group', '1')
+        orig_group = str(data.get('orig_group', data.get('group', '1')) or '1')
         orig_id = data.get('orig_id', data.get('id'))
         
         new_section = data.get('section')
         new_group = data.get('group')
         new_id = data.get('id')
         new_text = data.get('text', '')
+        # Por defecto crear la fila si no existe (p. ej. group 1 de una línea solo JP)
+        create_if_missing = data.get('create_if_missing', True)
         
         bot = request.app['bot']
         
-        exito = modificar_texto_csv(filename, orig_section, orig_group, orig_id, new_text, new_section, new_group, new_id)
+        exito = modificar_texto_csv(
+            filename,
+            orig_section,
+            orig_group,
+            orig_id,
+            new_text,
+            new_section,
+            new_group,
+            new_id,
+            create_if_missing=bool(create_if_missing),
+        )
         if not exito:
             # DEBUG: find out WHY it failed
             ruta = Path(filename)
@@ -777,13 +895,58 @@ async def web_api_save(request):
                         debug_info += f"[sec: '{m.get('section')}', grp: '{m.get('group')}'] "
             return web.json_response({"error": f"No se pudo modificar CSV. {debug_info}"}, status=500)
             
+        # Actualizar índice en memoria (modificar o insertar)
+        updated = False
         for item in bot.index_datos:
-            if item['file'] == filename and item.get('section') == orig_section and item['id'] == orig_id and item.get('group') == orig_group:
+            if item['file'] == filename and item.get('section') == orig_section and item['id'] == orig_id and str(item.get('group', '')) == orig_group:
                 item['text'] = new_text
                 if new_section is not None: item['section'] = new_section
-                if new_group is not None: item['group'] = new_group
+                if new_group is not None: item['group'] = str(new_group)
                 if new_id is not None: item['id'] = new_id
+                # refrescar flags de rareza (solo group 1 cuenta como «línea rara»)
+                g_now = str(item.get("group", ""))
+                is_corrupt = (
+                    BuscadorBot.is_utf16_swapped_corrupt(new_text) if g_now == "1" else False
+                )
+                item['rare_chars'] = is_corrupt
+                item['corrupt_utf16'] = is_corrupt
+                item['text_fixed'] = (
+                    BuscadorBot.fix_utf16_swapped(new_text) if is_corrupt else ""
+                )
+                item['text_fixed_norm'] = (
+                    BuscadorBot._norm_search(item['text_fixed']) if item['text_fixed'] else ""
+                )
+                item['text_norm'] = BuscadorBot._norm_search(new_text)
+                updated = True
                 break
+        if not updated:
+            final_section = new_section if new_section is not None else orig_section
+            final_group = str(new_group if new_group is not None else orig_group)
+            final_id = new_id if new_id is not None else orig_id
+            is_corrupt = (
+                BuscadorBot.is_utf16_swapped_corrupt(new_text) if final_group == "1" else False
+            )
+            is_rare = is_corrupt
+            text_fixed = BuscadorBot.fix_utf16_swapped(new_text) if is_corrupt else ""
+            cmd = f"{final_section},{final_group},{final_id}"
+            bot.index_datos.append({
+                "section": final_section or "",
+                "group": final_group,
+                "id": final_id or "",
+                "text": new_text,
+                "text_norm": BuscadorBot._norm_search(new_text),
+                "cmd": cmd,
+                "cmd_norm": BuscadorBot._norm_search(cmd),
+                "cmd_full_norm": BuscadorBot._norm_search(f"{cmd},{new_text}"),
+                "id_norm": BuscadorBot._norm_search(final_id or ""),
+                "section_norm": BuscadorBot._norm_search(final_section or ""),
+                "file": filename,
+                "line": 0,
+                "rare_chars": is_rare,
+                "corrupt_utf16": is_corrupt,
+                "text_fixed": text_fixed,
+                "text_fixed_norm": BuscadorBot._norm_search(text_fixed) if text_fixed else "",
+            })
                 
         bot.modified_files.add(filename)
         return web.json_response({"success": True})

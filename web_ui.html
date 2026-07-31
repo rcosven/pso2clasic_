@@ -110,6 +110,16 @@
             font-weight: 600;
             color: var(--accent-blue);
             margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .list-item .item-sec {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-secondary);
         }
 
         .list-item .item-text {
@@ -185,11 +195,82 @@
             font-weight: 600;
             color: #fff;
             margin-bottom: 8px;
+            word-break: break-word;
         }
 
         .editor-header p {
             color: var(--text-secondary);
             font-size: 14px;
+        }
+
+        .editor-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        .editor-meta .chip {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(88, 166, 255, 0.12);
+            color: var(--accent-blue);
+            border: 1px solid rgba(88, 166, 255, 0.25);
+        }
+
+        .editor-meta .chip.warn {
+            background: rgba(218, 165, 32, 0.12);
+            color: #daa520;
+            border-color: rgba(218, 165, 32, 0.35);
+        }
+
+        .editor-empty {
+            max-width: 640px;
+            margin: 80px auto;
+            text-align: center;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .editor-empty h2 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .box-group {
+            margin-bottom: 8px;
+        }
+
+        .box-group label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .badge {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-left: 6px;
+        }
+
+        .badge-edit {
+            font-size: 11px;
+            font-weight: 500;
+            color: #3fb950;
+            margin-left: 6px;
+        }
+
+        #editor-area {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 40px;
         }
 
         .input-group {
@@ -331,10 +412,16 @@
             </a>
         </div>
 
+        <div class="editor-empty" id="editor-placeholder">
+            <h2>Cargando líneas…</h2>
+            <p>Si no aparece nada, elige una línea en la barra lateral izquierda.</p>
+        </div>
+
         <div class="editor-area" id="editor-area" style="display: none;">
             <div class="editor-header">
                 <h1 id="item-id-title">TitleLogo_Enter</h1>
-                <p>Haz clic en un elemento de la barra lateral para comenzar a editar.</p>
+                <p id="item-subtitle">Haz clic en un elemento de la barra lateral para comenzar a editar.</p>
+                <div class="editor-meta" id="item-meta"></div>
             </div>
             
             <div class="editor-boxes">
@@ -389,12 +476,12 @@
 
                 <div class="box-group">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-                        <label style="margin-bottom: 0;">Traducción al Español <span class="badge-edit">(Al realizar enter y guardar el texto, el programa generará automáticamente un &lt;br&gt; al código)</span></label>
+                        <label style="margin-bottom: 0;" id="label-editable">Traducción al Español <span class="badge-edit">(Enter se guarda como &lt;br&gt;)</span></label>
                         <div>
                             <button class="btn btn-primary" onclick="pasteText('box-spanish')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #238636; border-color: #2ea043;">Pegar</button>
                         </div>
                     </div>
-                    <textarea id="box-spanish" class="textarea-editable" placeholder="Escribe la traducción aquí..."></textarea>
+                    <textarea id="box-spanish" class="textarea-editable" placeholder="Escribe la traducción o corrige el texto aquí..."></textarea>
                 </div>
             </div>
             <div style="display: flex; justify-content: flex-end; align-items: center; margin-top: 15px;">
@@ -441,14 +528,20 @@
         const urlParams = new URLSearchParams(window.location.search);
         const fileName = urlParams.get('file');
         const targetId = urlParams.get('id');
+        const targetSection = urlParams.get('section') || '';
+        // group de la búsqueda: 0 = original JP (p. ej. líneas raras), 1 = español
+        const targetGroup = (urlParams.get('group') || '').trim();
         
         let allItems = [];
         let currentItem = null;
         let currentIndex = -1;
+        // Grupo que se edita/guarda (normalmente 1; 0 si se abrió una línea rara del original)
+        let editGroup = targetGroup || '1';
 
         const itemListEl = document.getElementById('item-list');
         const filenameDisplayEl = document.getElementById('filename-display');
         const editorArea = document.getElementById('editor-area');
+        const editorPlaceholder = document.getElementById('editor-placeholder');
         const boxJapanese = document.getElementById('box-japanese');
         const boxEnglish = document.getElementById('box-english');
         const boxSpanish = document.getElementById('box-spanish');
@@ -457,9 +550,36 @@
         
         if (!fileName) {
             filenameDisplayEl.textContent = "Error: No se especificó archivo.";
+            if (editorPlaceholder) {
+                editorPlaceholder.innerHTML = '<h2>Falta el archivo</h2><p>Abre una línea desde el buscador (<code>/edit?file=...</code>).</p>';
+            }
         } else {
             filenameDisplayEl.textContent = fileName;
             loadFileData();
+        }
+
+        function setPlaceholder(title, bodyHtml) {
+            if (!editorPlaceholder) return;
+            editorPlaceholder.style.display = 'block';
+            editorPlaceholder.innerHTML = `<h2>${title}</h2><p>${bodyHtml}</p>`;
+            editorArea.style.display = 'none';
+        }
+
+        function hidePlaceholder() {
+            if (editorPlaceholder) editorPlaceholder.style.display = 'none';
+        }
+
+        function findTargetIndex() {
+            if (!targetId) return -1;
+            // 1) section + id exactos
+            if (targetSection) {
+                const bySec = allItems.findIndex(
+                    item => item.id === targetId && (item.section || '') === targetSection
+                );
+                if (bySec !== -1) return bySec;
+            }
+            // 2) solo id
+            return allItems.findIndex(item => item.id === targetId);
         }
 
         async function loadFileData() {
@@ -468,25 +588,60 @@
                 if (!response.ok) throw new Error("Error al cargar datos");
                 
                 const data = await response.json();
-                allItems = data.items;
+                allItems = data.items || [];
                 
                 renderList();
                 if (allItems.length > 0) {
                     btnGithubEl.disabled = false;
                 }
-                
-                if (targetId) {
-                    const targetIndex = allItems.findIndex(item => item.id === targetId);
-                    if (targetIndex !== -1) {
-                        selectItem(targetIndex);
-                        setTimeout(() => {
-                            document.getElementById(`item-${targetIndex}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 100);
+
+                if (allItems.length === 0) {
+                    setPlaceholder(
+                        'No hay líneas en este archivo',
+                        'El CSV no tiene filas reconocibles, o el nombre del archivo no coincide con el índice. Vuelve al buscador e inténtalo de nuevo.'
+                    );
+                    return;
+                }
+
+                let targetIndex = findTargetIndex();
+                // Si venimos del buscador y no hay match, o no hay id: abrir la primera línea
+                // (antes el panel de edición quedaba oculto y parecía “vacío”)
+                if (targetIndex === -1) {
+                    targetIndex = 0;
+                    if (targetId) {
+                        showNotification("⚠️", "No se encontró el id exacto; se abrió la primera línea del archivo.");
                     }
                 }
+
+                // Preferir editar el group de la URL; si no, group 1, o el disponible
+                const hit = allItems[targetIndex];
+                if (targetGroup) {
+                    editGroup = targetGroup;
+                } else if (hit && hit.has_group1) {
+                    editGroup = '1';
+                } else if (hit && hit.has_group0) {
+                    editGroup = '0';
+                } else {
+                    editGroup = (hit && hit.group) || '1';
+                }
+
+                selectItem(targetIndex);
+                setTimeout(() => {
+                    const el = document.getElementById(`item-${targetIndex}`);
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
             } catch (e) {
+                setPlaceholder(
+                    'Error al cargar el archivo',
+                    'No se pudo contactar con la API del bot o el archivo no existe en el índice.'
+                );
                 showNotification("❌", "Error al cargar el archivo desde el bot.");
             }
+        }
+
+        function previewText(item) {
+            const raw = item.preview || item.text || item.original || '';
+            return (raw || '(Sin texto)').replace(/<br>/gi, ' ');
         }
 
         function renderList() {
@@ -498,23 +653,49 @@
                 
                 const idDiv = document.createElement('div');
                 idDiv.className = 'item-id';
-                idDiv.textContent = item.id;
+                const secSpan = document.createElement('span');
+                secSpan.className = 'item-sec';
+                secSpan.textContent = item.section ? `${item.section} · ` : '';
+                idDiv.appendChild(secSpan);
+                idDiv.appendChild(document.createTextNode(item.id || '(sin id)'));
+                if (!item.has_group1) {
+                    const tag = document.createElement('span');
+                    tag.className = 'item-sec';
+                    tag.textContent = ' · sin ES';
+                    tag.style.color = '#daa520';
+                    idDiv.appendChild(tag);
+                }
                 
                 const txtDiv = document.createElement('div');
                 txtDiv.className = 'item-text';
-                txtDiv.textContent = item.text || '(Sin traducción)';
+                txtDiv.textContent = previewText(item);
                 
                 div.appendChild(idDiv);
                 div.appendChild(txtDiv);
                 
-                div.addEventListener('click', () => selectItem(index));
+                div.addEventListener('click', () => {
+                    // Al elegir en la lista, preferir group 1 si existe (flujo de traducción)
+                    if (item.has_group1) editGroup = '1';
+                    else if (item.has_group0) editGroup = '0';
+                    else editGroup = item.group || '1';
+                    selectItem(index);
+                });
                 itemListEl.appendChild(div);
             });
         }
 
+        function getEditableText(item, group) {
+            const g = String(group || '1');
+            if (g === '1') return item.text || '';
+            if (g === '0') return item.original || '';
+            if (item.groups && item.groups[g] != null) return item.groups[g] || '';
+            return item.text || item.original || '';
+        }
+
         function selectItem(index) {
+            if (index < 0 || index >= allItems.length) return;
+
             document.querySelectorAll('.list-item').forEach(el => el.classList.remove('active'));
-            // Add active class to current
             const targetEl = document.getElementById(`item-${index}`);
             if (targetEl) {
                 targetEl.classList.add('active');
@@ -522,30 +703,70 @@
             }
             
             currentIndex = index;
-            
             currentItem = allItems[index];
+
+            // Ajustar grupo editable si el actual no existe en la línea
+            if (editGroup === '1' && !currentItem.has_group1 && currentItem.has_group0) {
+                // Se puede crear group 1; dejamos editGroup=1 con texto vacío (o relleno opcional)
+                // Si el usuario vino de rare group 0, respetar editGroup 0
+                if (targetGroup === '0') editGroup = '0';
+            }
+            if (editGroup === '0' && !currentItem.has_group0 && currentItem.has_group1) {
+                editGroup = '1';
+            }
             
-            document.getElementById('item-id-title').textContent = currentItem.id;
+            document.getElementById('item-id-title').textContent = currentItem.id || '(sin id)';
+            const sub = document.getElementById('item-subtitle');
+            if (sub) {
+                sub.textContent = editGroup === '0'
+                    ? 'Editando el texto original (group 0). Guarda para corregir esta línea.'
+                    : (currentItem.has_group1
+                        ? 'Editando la traducción al español (group 1).'
+                        : 'No hay group 1 aún: al guardar se creará la traducción en español.');
+            }
+            const meta = document.getElementById('item-meta');
+            if (meta) {
+                meta.innerHTML = `
+                    <span class="chip">section: ${escapeHtml(currentItem.section || '—')}</span>
+                    <span class="chip">group: ${escapeHtml(editGroup)}</span>
+                    <span class="chip">id: ${escapeHtml(currentItem.id || '—')}</span>
+                    ${!currentItem.has_group1 && editGroup === '1' ? '<span class="chip warn">se creará group 1 al guardar</span>' : ''}
+                `;
+            }
+
+            const label = document.getElementById('label-editable');
+            if (label) {
+                label.innerHTML = editGroup === '0'
+                    ? 'Texto a editar (group 0 / original) <span class="badge-edit">(Enter → &lt;br&gt;)</span>'
+                    : 'Traducción al Español (group 1) <span class="badge-edit">(Enter → &lt;br&gt;)</span>';
+            }
             
             document.getElementById('dev-section').value = currentItem.section || "";
-            document.getElementById('dev-group').value = currentItem.group || "";
+            document.getElementById('dev-group').value = editGroup;
             document.getElementById('dev-id').value = currentItem.id || "";
             
-            // Reemplazar <br> con saltos de línea reales para visualización
-            boxJapanese.value = (currentItem.original || "").replace(/<br>/g, "\n");
-            boxEnglish.value = (currentItem.english || "").replace(/<br>/g, "\n");
-            boxSpanish.value = (currentItem.text || "").replace(/<br>/g, "\n");
+            // Referencias: JP / EN siempre en cajas de solo lectura
+            boxJapanese.value = (currentItem.original || "").replace(/<br>/gi, "\n");
+            boxEnglish.value = (currentItem.english || "").replace(/<br>/gi, "\n");
+            boxSpanish.value = getEditableText(currentItem, editGroup).replace(/<br>/gi, "\n");
             
             // Auto resize textareas
-            boxJapanese.style.height = 'auto';
-            boxJapanese.style.height = (boxJapanese.scrollHeight) + 'px';
-            boxEnglish.style.height = 'auto';
-            boxEnglish.style.height = (boxEnglish.scrollHeight) + 'px';
-            boxSpanish.style.height = 'auto';
-            boxSpanish.style.height = (boxSpanish.scrollHeight) + 'px';
+            [boxJapanese, boxEnglish, boxSpanish].forEach(el => {
+                el.style.height = 'auto';
+                el.style.height = Math.max(120, el.scrollHeight) + 'px';
+            });
             
+            hidePlaceholder();
             editorArea.style.display = 'block';
             boxSpanish.focus();
+        }
+
+        function escapeHtml(s) {
+            return String(s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
         }
 
         // (Paste and Enter overrides removed so physical newlines render naturally)
@@ -595,10 +816,18 @@
             const newText = boxSpanish.value.replace(/\r\n|\n|\r/g, "<br>");
             
             const reqSection = isDevMode ? document.getElementById('dev-section').value : currentItem.section;
-            const reqGroup = isDevMode ? document.getElementById('dev-group').value : currentItem.group;
+            const reqGroup = isDevMode ? document.getElementById('dev-group').value : editGroup;
             const reqId = isDevMode ? document.getElementById('dev-id').value : currentItem.id;
 
-            if (newText === currentItem.text && reqSection === currentItem.section && reqGroup === currentItem.group && reqId === currentItem.id) return; // No changes
+            const prevText = getEditableText(currentItem, editGroup);
+            if (
+                newText === prevText &&
+                reqSection === currentItem.section &&
+                String(reqGroup) === String(editGroup) &&
+                reqId === currentItem.id
+            ) {
+                return; // No changes
+            }
 
             btnSave.innerHTML = '<div class="loader" style="display:block;"></div> Guardando...';
             btnSave.classList.remove('btn-success', 'btn-error');
@@ -609,23 +838,43 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         file: fileName,
+                        // Buscar por la clave actual del group que se edita
                         orig_section: currentItem.section,
-                        orig_group: currentItem.group,
+                        orig_group: editGroup,
                         orig_id: currentItem.id,
                         section: reqSection,
                         group: reqGroup,
                         id: reqId,
-                        text: newText
+                        text: newText,
+                        // Crear group 1 (u otra fila) si no existía
+                        create_if_missing: true
                     })
                 });
                 
                 if (response.ok) {
-                    currentItem.text = newText;
+                    // Actualizar modelo en memoria
+                    if (String(editGroup) === '1' || String(reqGroup) === '1') {
+                        currentItem.text = newText;
+                        currentItem.has_group1 = true;
+                    }
+                    if (String(editGroup) === '0' || String(reqGroup) === '0') {
+                        currentItem.original = newText;
+                        currentItem.has_group0 = true;
+                    }
+                    if (!currentItem.groups) currentItem.groups = {};
+                    currentItem.groups[String(reqGroup)] = newText;
                     currentItem.section = reqSection;
                     currentItem.group = reqGroup;
                     currentItem.id = reqId;
+                    currentItem.preview = currentItem.text || currentItem.original || newText;
+                    editGroup = String(reqGroup);
+
                     document.getElementById('item-id-title').textContent = reqId;
-                    document.getElementById(`item-${allItems.indexOf(currentItem)}`).querySelector('.item-text').textContent = newText;
+                    const listEl = document.getElementById(`item-${allItems.indexOf(currentItem)}`);
+                    if (listEl) {
+                        const txtEl = listEl.querySelector('.item-text');
+                        if (txtEl) txtEl.textContent = previewText(currentItem);
+                    }
                     
                     btnSave.innerHTML = '¡Guardado!';
                     btnSave.classList.add('btn-success');
@@ -637,7 +886,7 @@
                     }, 1500);
                     
                 } else {
-                    const data = await response.json();
+                    const data = await response.json().catch(() => ({}));
                     btnSave.innerHTML = 'Error al guardar';
                     btnSave.classList.add('btn-error');
                     showNotification("❌", data.error || "Error al guardar");

@@ -465,7 +465,7 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
-        <label class="deep-toggle" title="Lista todas las líneas con caracteres raros (sin escribir nada)">
+        <label class="deep-toggle" title="Solo group 1 con basura UTF-16 (夀漀甀 / 㰀戀爀㸀…)">
             <input type="checkbox" id="corruptSearch">
             <span>Líneas raras</span>
         </label>
@@ -474,8 +474,9 @@
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
         </span>
         <span class="deep-hint" id="corruptHint" style="display: none;">
-            <strong>No hace falta escribir nada.</strong> Lista todas las filas (group 0/1/…)
-            con caracteres no comunes (ej. <code>夀漀甀</code>). Edición manual al abrir.
+            <strong>Solo group 1</strong> con basura tipo
+            <code>夀漀甀</code> / <code>㰀戀爀㸀</code> (UTF-16 invertido).
+            No lista japonés (group 0). Sin escribir nada ya filtra.
         </span>
     </div>
 
@@ -573,8 +574,9 @@
         corruptSearch.addEventListener('change', () => {
             if (corruptSearch.checked) {
                 deepSearch.checked = false;
-                // Limpiar caja: no hace falta escribir caracteres raros
-                // (se deja el valor si el usuario quiere filtrar después)
+                // Al activar: limpiar la caja y listar SOLO basura group 1
+                // (no hace falta pegar 夀漀甀… a mano)
+                searchInput.value = '';
             }
             updatePlaceholders();
             scheduleSearch(true);
@@ -714,10 +716,10 @@
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = rareMode
-                    ? "No hay líneas con caracteres raros en este ámbito (Classic/NGS)."
+                    ? "No hay group 1 con basura UTF-16 (夀漀甀…) en este ámbito (Classic/NGS)."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Líneas raras</strong> (sin escribir) o <strong>Búsqueda avanzada</strong>.";
+                    : "Activa <strong>Líneas raras</strong> (group 1 corruptas) o <strong>Búsqueda avanzada</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
@@ -736,7 +738,15 @@
             resultsList.innerHTML = '';
 
             items.forEach(item => {
-                const href = `/edit?file=${encodeURIComponent(item.file)}&id=${encodeURIComponent(item.id)}`;
+                // Pasar section + group para que el editor abra la línea exacta
+                // (antes solo iba el id → panel vacío o línea incorrecta, sobre todo en group 0 / raras)
+                const qs = new URLSearchParams({
+                    file: item.file || '',
+                    id: item.id || '',
+                    section: item.section || '',
+                    group: item.group != null && item.group !== '' ? String(item.group) : '1',
+                });
+                const href = `/edit?${qs.toString()}`;
                 // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
                 const a = document.createElement('a');
                 a.className = 'result-item';
@@ -753,7 +763,7 @@
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
                 const showCmd = deep || rareMode || (item.match && item.match !== 'text');
                 const matchBadge = rareMode
-                    ? `<span class="result-match-badge">caracteres raros</span>`
+                    ? `<span class="result-match-badge">UTF-16 group 1</span>`
                     : (item.match && item.match !== 'text')
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
