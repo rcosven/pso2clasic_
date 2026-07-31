@@ -99,75 +99,49 @@ class BuscadorBot(commands.Bot):
         return "".join(out)
 
     @staticmethod
+    def is_utf16_mojibake_char(ch: str) -> bool:
+        """
+        Un carácter «raro» del patrón UTF-16 LE/BE intercambiado (U+XX00).
+
+        Ejemplos (XX = byte ASCII original):
+          't' → 琀 (U+7400)   'T' → 吀 (U+5400)
+          'o' → 漀 (U+6F00)   'l' → 氀 (U+6C00)
+          'Y' → 夀 (U+5900)   'u' → 甀 (U+7500)
+          '<' → 㰀  'b' → 戀  'r' → 爀  '>' → 㸀   (= <br>)
+
+        Excluye U+3000 (espacio ideográfico), habitual en textos OK del juego.
+        """
+        if not ch:
+            return False
+        cp = ord(ch)
+        if cp == 0x3000:
+            return False
+        # U+XX00 con XX = ASCII imprimible (espacio .. ~)
+        if cp > 0xFF and (cp & 0xFF) == 0:
+            hi = cp >> 8
+            return 0x20 <= hi <= 0x7E
+        return False
+
+    @staticmethod
+    def count_utf16_mojibake_chars(s: str) -> int:
+        """Cuenta caracteres basura U+XX00 en el texto."""
+        if not s:
+            return 0
+        return sum(1 for ch in s if BuscadorBot.is_utf16_mojibake_char(ch))
+
+    @staticmethod
     def is_utf16_swapped_corrupt(s: str) -> bool:
         """
-        Detecta basura por UTF-16 LE/BE intercambiado (solo group 1 en la práctica).
+        True si el texto CONTIENE al menos un carácter basura (琀, 吀, 漀, 氀, …).
 
-        Patrón real (NO es japonés normal):
-          'You' → '夀漀甀', '<br>' → '㰀戀爀㸀', espacios → U+2000.. / U+3000
-
-        Heurística estricta para evitar falsos positivos en CJK (group 0):
-          1) Muchos no-espacios son codepoints U+XX00 con XX = ASCII imprimible
-          2) Al “reparar”, el texto queda mayoritariamente latino/ASCII legible
+        No exige la frase entera corrupta: con un solo carácter raro basta.
+        La búsqueda «Líneas raras» además filtra solo group 1.
         """
-        if not s or len(s) < 4:
-            return False
-
-        swapped = 0
-        non_ws = 0
-        run = 0
-        max_run = 0
-        for ch in s:
-            if ch.isspace():
-                run = 0
-                continue
-            non_ws += 1
-            cp = ord(ch)
-            # U+XX00 donde XX es ASCII imprimible (resultado típico del swap)
-            if (cp & 0xFF) == 0:
-                hi = cp >> 8
-                if 0x20 <= hi <= 0x7E:
-                    swapped += 1
-                    run += 1
-                    if run > max_run:
-                        max_run = run
-                    continue
-            run = 0
-
-        if non_ws < 3 or swapped < 4:
-            return False
-        # La mayoría del contenido no-espacio debe ser del patrón basura
-        if (swapped / non_ws) < 0.40 and max_run < 6:
-            return False
-
-        fixed = BuscadorBot.fix_utf16_swapped(s)
-        if fixed == s:
-            return False
-
-        # Tras reparar: predominio de Latin-1/ASCII (inglés/español con tags)
-        latin = sum(1 for c in fixed if ord(c) < 0x100)
-        if latin / max(1, len(fixed)) < 0.70:
-            return False
-
-        # Debe quedar algo legible (letras, dígitos o tags de juego)
-        useful = sum(
-            1
-            for c in fixed
-            if c.isalnum() or c in "<>/.,;:!?-_'\"&= "
-        )
-        if useful < 3:
-            return False
-
-        return True
+        return BuscadorBot.count_utf16_mojibake_chars(s) >= 1
 
     @staticmethod
     def has_rare_chars(s: str) -> bool:
-        """
-        Alias de basura UTF-16 swap (夀漀甀 / 㰀戀爀㸀…).
-
-        Antes incluía controles/PUA y generaba miles de falsos positivos en japonés.
-        La búsqueda «Líneas raras» solo debe listar este patrón en group 1.
-        """
+        """Contiene algún carácter basura UTF-16 (琀 吀 漀 氀 夀 㰀 …)."""
         return BuscadorBot.is_utf16_swapped_corrupt(s)
 
     def cargar_indices(self):

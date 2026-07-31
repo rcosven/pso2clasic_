@@ -465,7 +465,7 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
-        <label class="deep-toggle" title="Solo group 1 con basura UTF-16 (夀漀甀 / 㰀戀爀㸀…)">
+        <label class="deep-toggle" title="Group 1 con cualquier carácter basura: 琀 吀 漀 氀 夀 㰀…">
             <input type="checkbox" id="corruptSearch">
             <span>Líneas raras</span>
         </label>
@@ -474,9 +474,9 @@
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
         </span>
         <span class="deep-hint" id="corruptHint" style="display: none;">
-            <strong>Solo group 1</strong> con basura tipo
-            <code>夀漀甀</code> / <code>㰀戀爀㸀</code> (UTF-16 invertido).
-            No lista japonés (group 0). Sin escribir nada ya filtra.
+            <strong>Solo group 1</strong> si contiene <em>cualquier</em> carácter basura:
+            <code>琀</code> <code>吀</code> <code>漀</code> <code>氀</code> <code>夀</code> <code>㰀</code>…
+            (no hace falta pegar una frase). Ignora japonés group 0.
         </span>
     </div>
 
@@ -716,10 +716,10 @@
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = rareMode
-                    ? "No hay group 1 con basura UTF-16 (夀漀甀…) en este ámbito (Classic/NGS)."
+                    ? "No hay group 1 con caracteres basura (琀 吀 漀 氀 夀 㰀…) en este ámbito."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Líneas raras</strong> (group 1 corruptas) o <strong>Búsqueda avanzada</strong>.";
+                    : "Activa <strong>Líneas raras</strong> (group 1 con 琀/吀/漀…) o <strong>Búsqueda avanzada</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
