@@ -442,7 +442,7 @@ def listar_pull_requests_abiertos(base: str | None = None):
                 "per_page": 100,
                 "page": page,
             },
-            timeout=30,
+            timeout=20,
         )
         if res.status_code != 200:
             return None, f"Error al listar PRs: {res.status_code} {res.text[:300]}"
@@ -460,7 +460,7 @@ def listar_pull_requests_abiertos(base: str | None = None):
 
 def merge_pull_request(pr_number: int, merge_method: str = "squash", commit_title: str | None = None):
     """
-    Hace merge de un PR por número.
+    Hace merge de un PR por número (sin pre-chequeo largo de mergeable).
     merge_method: 'merge' | 'squash' | 'rebase'
     Devuelve (ok: bool, mensaje: str).
     """
@@ -469,47 +469,77 @@ def merge_pull_request(pr_number: int, merge_method: str = "squash", commit_titl
         return False, "GITHUB_TOKEN no está configurado."
 
     base_url = f"https://api.github.com/repos/{GITHUB_REPO}"
-
-    # Comprobar si es mergeable (puede ser null al principio; reintentar 1 vez)
-    mergeable = None
-    for _ in range(3):
-        res = requests.get(f"{base_url}/pulls/{pr_number}", headers=headers, timeout=30)
-        if res.status_code != 200:
-            return False, f"No se pudo leer PR #{pr_number}: {res.status_code}"
-        data = res.json()
-        mergeable = data.get("mergeable")
-        if mergeable is not None:
-            break
-        time.sleep(1.2)
-
-    if mergeable is False:
-        return False, f"PR #{pr_number} tiene conflictos o no se puede mergear."
-
     payload = {"merge_method": merge_method}
     if commit_title:
         payload["commit_title"] = commit_title
 
-    res = requests.put(
-        f"{base_url}/pulls/{pr_number}/merge",
-        headers=headers,
-        json=payload,
-        timeout=45,
-    )
-    if res.status_code == 200:
-        sha = res.json().get("sha", "")[:7]
-        return True, f"Merged (sha `{sha}`)" if sha else "Merged"
-    if res.status_code == 405:
-        return False, f"No mergeable: {res.json().get('message', res.text)[:200]}"
-    if res.status_code == 409:
-        return False, f"Conflicto: {res.json().get('message', res.text)[:200]}"
-    return False, f"Error {res.status_code}: {res.text[:250]}"
+    # Hasta 3 intentos: rate-limit / "Base branch was modified" / red
+    last_err = "Error desconocido"
+    for attempt in range(1, 4):
+        try:
+            res = requests.put(
+                f"{base_url}/pulls/{pr_number}/merge",
+                headers=headers,
+                json=payload,
+                timeout=20,
+            )
+        except requests.Timeout:
+            last_err = f"Timeout (20s) en intento {attempt}"
+            time.sleep(1.5 * attempt)
+            continue
+        except requests.RequestException as e:
+            last_err = f"Red: {type(e).__name__}: {e}"
+            time.sleep(1.5 * attempt)
+            continue
+
+        if res.status_code == 200:
+            sha = (res.json().get("sha") or "")[:7]
+            return True, f"Merged (sha `{sha}`)" if sha else "Merged"
+
+        # Ya estaba mergeado
+        if res.status_code == 405:
+            try:
+                msg = res.json().get("message", res.text)
+            except Exception:
+                msg = res.text
+            msg_l = (msg or "").lower()
+            if "already been merged" in msg_l or "pull request is not open" in msg_l:
+                return True, "Ya estaba mergeado"
+            return False, f"No mergeable: {str(msg)[:180]}"
+
+        if res.status_code == 409:
+            # Base cambió: reintentar tras breve espera
+            last_err = f"Conflicto/base actualizada (intento {attempt})"
+            time.sleep(1.5 * attempt)
+            continue
+
+        if res.status_code in (403, 429):
+            # Rate limit secundario de GitHub
+            retry_after = res.headers.get("Retry-After") or res.headers.get("retry-after")
+            try:
+                wait_s = min(int(retry_after), 30) if retry_after else 5 * attempt
+            except ValueError:
+                wait_s = 5 * attempt
+            last_err = f"Rate limit {res.status_code}, esperando {wait_s}s"
+            time.sleep(wait_s)
+            continue
+
+        try:
+            detail = res.json().get("message", res.text)
+        except Exception:
+            detail = res.text
+        return False, f"Error {res.status_code}: {str(detail)[:200]}"
+
+    return False, last_err
 
 
 def puede_usar_merge(interaction: discord.Interaction) -> bool:
     """Solo administradores del servidor Discord (o dueño del servidor)."""
+    if not interaction.guild:
+        return False
     if interaction.user.id == interaction.guild.owner_id:
         return True
-    perms = interaction.user.guild_permissions
+    perms = getattr(interaction.user, "guild_permissions", None)
     return bool(perms and perms.administrator)
 
 
@@ -1270,7 +1300,15 @@ async def merge_all(
     merge_method = (metodo.value if metodo else "squash")
     await interaction.response.defer(ephemeral=False)
 
-    prs, error = await asyncio.to_thread(listar_pull_requests_abiertos)
+    try:
+        prs, error = await asyncio.wait_for(
+            asyncio.to_thread(listar_pull_requests_abiertos),
+            timeout=45,
+        )
+    except asyncio.TimeoutError:
+        await interaction.followup.send("❌ Timeout al listar PRs en GitHub (45s).")
+        return
+
     if error:
         await interaction.followup.send(f"❌ {error}")
         return
@@ -1292,15 +1330,32 @@ async def merge_all(
 
     status_msg = await interaction.followup.send(
         f"⏳ Mergeando **{len(prs)}** PR(s) con método `{merge_method}`...\n"
-        f"Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`"
+        f"Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`\n"
+        f"Procesando: `#{prs[0]['number']}`..."
     )
 
     ok_list = []
     fail_list = []
 
+    async def _update_status(i: int, current_num: int | None = None, done: bool = False):
+        if done:
+            return
+        cur = f"\n🔄 Ahora: `#{current_num}`" if current_num else ""
+        try:
+            await status_msg.edit(
+                content=(
+                    f"⏳ Progreso: `{i}/{len(prs)}`{cur}\n"
+                    f"✅ OK: {len(ok_list)} | ❌ Fallidos: {len(fail_list)}"
+                )
+            )
+        except Exception as e:
+            logger.warning(f"[merge_all] No se pudo editar progreso: {e}")
+
     for i, pr in enumerate(prs, start=1):
         num = pr["number"]
         title = (pr.get("title") or f"PR #{num}")[:50]
+
+        await _update_status(i - 1, current_num=num)
 
         def _do_merge(n=num, t=title):
             return merge_pull_request(
@@ -1309,7 +1364,17 @@ async def merge_all(
                 commit_title=f"{t} (#{n})",
             )
 
-        success, detail = await asyncio.to_thread(_do_merge)
+        try:
+            # Tope duro por PR: evita que un hang de red deje el comando pegado
+            success, detail = await asyncio.wait_for(
+                asyncio.to_thread(_do_merge),
+                timeout=70,
+            )
+        except asyncio.TimeoutError:
+            success, detail = False, "Timeout global 70s en este PR"
+        except Exception as e:
+            success, detail = False, f"Excepción: {type(e).__name__}: {e}"
+
         if success:
             ok_list.append(f"#{num}")
             logger.info(f"[merge_all] OK #{num}: {detail}")
@@ -1317,20 +1382,10 @@ async def merge_all(
             fail_list.append(f"#{num}: {detail}")
             logger.warning(f"[merge_all] FAIL #{num}: {detail}")
 
-        # Actualizar progreso cada 5 PRs o al final
-        if i % 5 == 0 or i == len(prs):
-            try:
-                await status_msg.edit(
-                    content=(
-                        f"⏳ Progreso: `{i}/{len(prs)}`\n"
-                        f"✅ OK: {len(ok_list)} | ❌ Fallidos: {len(fail_list)}"
-                    )
-                )
-            except Exception:
-                pass
+        await _update_status(i)
 
-        # Pequeña pausa para no saturar la API de GitHub
-        await asyncio.sleep(0.4)
+        # Pausa un poco más generosa: menos rate-limit de GitHub tras muchos merges
+        await asyncio.sleep(1.0)
 
     resumen = [
         f"## Resultado `/merge_all`",
@@ -1340,15 +1395,18 @@ async def merge_all(
         f"- ❌ Fallidos: **{len(fail_list)}**",
     ]
     if ok_list:
-        resumen.append(f"\n**OK:** {', '.join(ok_list[:40])}" + ("…" if len(ok_list) > 40 else ""))
+        resumen.append(
+            f"\n**OK:** {', '.join(ok_list[:40])}" + ("…" if len(ok_list) > 40 else "")
+        )
     if fail_list:
         fails_txt = "\n".join(f"• {f}" for f in fail_list[:15])
         resumen.append(f"\n**Fallos:**\n{fails_txt}")
         if len(fail_list) > 15:
             resumen.append(f"*... y {len(fail_list) - 15} más.*")
     resumen.append(
-        "\n💡 Los CSV del bot en ejecución **no se actualizan solos**. "
-        "Tras el deploy/pull de `main`, usa `/recargar`."
+        "\n💡 Si se cortó a mitad, vuelve a ejecutar `/merge_all` "
+        "(solo intentará los que sigan abiertos).\n"
+        "Tras el deploy de `main`, usa `/recargar` en el bot."
     )
 
     final = "\n".join(resumen)
@@ -1357,7 +1415,10 @@ async def merge_all(
     try:
         await status_msg.edit(content=final)
     except Exception:
-        await interaction.followup.send(final)
+        try:
+            await interaction.followup.send(final)
+        except Exception as e:
+            logger.error(f"[merge_all] No se pudo enviar resumen final: {e}")
 
 # --- ARRANQUE DEL BOT ---
 
