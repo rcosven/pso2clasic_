@@ -405,6 +405,114 @@ def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: st
     else:
         return None, f"Error al crear Pull Request: {res.text}"
 
+
+def _github_headers():
+    if not GITHUB_TOKEN:
+        return None
+    return {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+
+def listar_pull_requests_abiertos(base: str | None = None):
+    """
+    Lista PRs abiertos del repositorio (paginado).
+    Devuelve (lista_de_prs, error_str).
+    """
+    headers = _github_headers()
+    if not headers:
+        return None, "GITHUB_TOKEN no está configurado en las variables de entorno."
+
+    base_url = f"https://api.github.com/repos/{GITHUB_REPO}"
+    branch_base = base or GITHUB_BASE_BRANCH
+    prs = []
+    page = 1
+
+    while True:
+        res = requests.get(
+            f"{base_url}/pulls",
+            headers=headers,
+            params={
+                "state": "open",
+                "base": branch_base,
+                "sort": "created",
+                "direction": "asc",
+                "per_page": 100,
+                "page": page,
+            },
+            timeout=30,
+        )
+        if res.status_code != 200:
+            return None, f"Error al listar PRs: {res.status_code} {res.text[:300]}"
+
+        batch = res.json()
+        if not batch:
+            break
+        prs.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+
+    return prs, None
+
+
+def merge_pull_request(pr_number: int, merge_method: str = "squash", commit_title: str | None = None):
+    """
+    Hace merge de un PR por número.
+    merge_method: 'merge' | 'squash' | 'rebase'
+    Devuelve (ok: bool, mensaje: str).
+    """
+    headers = _github_headers()
+    if not headers:
+        return False, "GITHUB_TOKEN no está configurado."
+
+    base_url = f"https://api.github.com/repos/{GITHUB_REPO}"
+
+    # Comprobar si es mergeable (puede ser null al principio; reintentar 1 vez)
+    mergeable = None
+    for _ in range(3):
+        res = requests.get(f"{base_url}/pulls/{pr_number}", headers=headers, timeout=30)
+        if res.status_code != 200:
+            return False, f"No se pudo leer PR #{pr_number}: {res.status_code}"
+        data = res.json()
+        mergeable = data.get("mergeable")
+        if mergeable is not None:
+            break
+        time.sleep(1.2)
+
+    if mergeable is False:
+        return False, f"PR #{pr_number} tiene conflictos o no se puede mergear."
+
+    payload = {"merge_method": merge_method}
+    if commit_title:
+        payload["commit_title"] = commit_title
+
+    res = requests.put(
+        f"{base_url}/pulls/{pr_number}/merge",
+        headers=headers,
+        json=payload,
+        timeout=45,
+    )
+    if res.status_code == 200:
+        sha = res.json().get("sha", "")[:7]
+        return True, f"Merged (sha `{sha}`)" if sha else "Merged"
+    if res.status_code == 405:
+        return False, f"No mergeable: {res.json().get('message', res.text)[:200]}"
+    if res.status_code == 409:
+        return False, f"Conflicto: {res.json().get('message', res.text)[:200]}"
+    return False, f"Error {res.status_code}: {res.text[:250]}"
+
+
+def puede_usar_merge(interaction: discord.Interaction) -> bool:
+    """Solo administradores del servidor Discord (o dueño del servidor)."""
+    if interaction.user.id == interaction.guild.owner_id:
+        return True
+    perms = interaction.user.guild_permissions
+    return bool(perms and perms.administrator)
+
+
 def construir_mensaje_archivo(bot_instance, filepath: str, match_item: dict = None):
     # Encontrar el número de líneas traducibles para información general
     count = 0
@@ -1077,6 +1185,179 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
 async def recargar(interaction: discord.Interaction):
     bot.cargar_indices()
     await interaction.response.send_message(f"🔄 Datos recargados con éxito. IDs mapeados: {len(bot.index_datos)}")
+
+
+@bot.tree.command(
+    name="listar_prs",
+    description="Lista los Pull Requests abiertos del repositorio GitHub",
+)
+async def listar_prs(interaction: discord.Interaction):
+    if not puede_usar_merge(interaction):
+        await interaction.response.send_message(
+            "❌ Solo administradores del servidor pueden usar este comando.",
+            ephemeral=True,
+        )
+        return
+
+    await interaction.response.defer(ephemeral=True)
+    prs, error = await asyncio.to_thread(listar_pull_requests_abiertos)
+    if error:
+        await interaction.followup.send(f"❌ {error}", ephemeral=True)
+        return
+    if not prs:
+        await interaction.followup.send(
+            f"✅ No hay PRs abiertos hacia `{GITHUB_BASE_BRANCH}` en `{GITHUB_REPO}`.",
+            ephemeral=True,
+        )
+        return
+
+    lineas = [
+        f"📋 **{len(prs)} PR(s) abiertos** en `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`:\n"
+    ]
+    for pr in prs[:25]:
+        num = pr.get("number")
+        title = (pr.get("title") or "")[:70]
+        user = (pr.get("user") or {}).get("login", "?")
+        lineas.append(f"• **#{num}** — {title} *(by {user})*")
+    if len(prs) > 25:
+        lineas.append(f"\n*... y {len(prs) - 25} más.*")
+    lineas.append("\n💡 Usa `/merge_all` para mergear todos (solo admins).")
+
+    msg = "\n".join(lineas)
+    if len(msg) > 2000:
+        msg = msg[:1990] + "\n..."
+    await interaction.followup.send(msg, ephemeral=True)
+
+
+@bot.tree.command(
+    name="merge_all",
+    description="Hace merge de TODOS los Pull Requests abiertos (solo administradores)",
+)
+@app_commands.describe(
+    metodo="Método de merge en GitHub",
+    dry_run="Si es True, solo lista qué haría sin mergear",
+)
+@app_commands.choices(
+    metodo=[
+        app_commands.Choice(name="squash (recomendado)", value="squash"),
+        app_commands.Choice(name="merge commit", value="merge"),
+        app_commands.Choice(name="rebase", value="rebase"),
+    ]
+)
+async def merge_all(
+    interaction: discord.Interaction,
+    metodo: app_commands.Choice[str] = None,
+    dry_run: bool = False,
+):
+    """
+    Lista PRs abiertos y los mergea uno a uno (del más antiguo al más nuevo).
+    Requiere GITHUB_TOKEN con permiso de escritura en el repo.
+    """
+    if not puede_usar_merge(interaction):
+        await interaction.response.send_message(
+            "❌ Solo administradores del servidor pueden usar este comando.",
+            ephemeral=True,
+        )
+        return
+
+    if not GITHUB_TOKEN:
+        await interaction.response.send_message(
+            "❌ `GITHUB_TOKEN` no está configurado en el entorno del bot.",
+            ephemeral=True,
+        )
+        return
+
+    merge_method = (metodo.value if metodo else "squash")
+    await interaction.response.defer(ephemeral=False)
+
+    prs, error = await asyncio.to_thread(listar_pull_requests_abiertos)
+    if error:
+        await interaction.followup.send(f"❌ {error}")
+        return
+    if not prs:
+        await interaction.followup.send(
+            f"✅ No hay PRs abiertos hacia `{GITHUB_BASE_BRANCH}`."
+        )
+        return
+
+    if dry_run:
+        preview = "\n".join(
+            f"• #{pr['number']} — {(pr.get('title') or '')[:60]}" for pr in prs[:30]
+        )
+        extra = f"\n*... y {len(prs) - 30} más.*" if len(prs) > 30 else ""
+        await interaction.followup.send(
+            f"🔎 **Dry-run:** se mergearían **{len(prs)}** PR(s) con método `{merge_method}`:\n{preview}{extra}"
+        )
+        return
+
+    status_msg = await interaction.followup.send(
+        f"⏳ Mergeando **{len(prs)}** PR(s) con método `{merge_method}`...\n"
+        f"Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`"
+    )
+
+    ok_list = []
+    fail_list = []
+
+    for i, pr in enumerate(prs, start=1):
+        num = pr["number"]
+        title = (pr.get("title") or f"PR #{num}")[:50]
+
+        def _do_merge(n=num, t=title):
+            return merge_pull_request(
+                n,
+                merge_method=merge_method,
+                commit_title=f"{t} (#{n})",
+            )
+
+        success, detail = await asyncio.to_thread(_do_merge)
+        if success:
+            ok_list.append(f"#{num}")
+            logger.info(f"[merge_all] OK #{num}: {detail}")
+        else:
+            fail_list.append(f"#{num}: {detail}")
+            logger.warning(f"[merge_all] FAIL #{num}: {detail}")
+
+        # Actualizar progreso cada 5 PRs o al final
+        if i % 5 == 0 or i == len(prs):
+            try:
+                await status_msg.edit(
+                    content=(
+                        f"⏳ Progreso: `{i}/{len(prs)}`\n"
+                        f"✅ OK: {len(ok_list)} | ❌ Fallidos: {len(fail_list)}"
+                    )
+                )
+            except Exception:
+                pass
+
+        # Pequeña pausa para no saturar la API de GitHub
+        await asyncio.sleep(0.4)
+
+    resumen = [
+        f"## Resultado `/merge_all`",
+        f"- Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`",
+        f"- Método: `{merge_method}`",
+        f"- ✅ Mergeados: **{len(ok_list)}**",
+        f"- ❌ Fallidos: **{len(fail_list)}**",
+    ]
+    if ok_list:
+        resumen.append(f"\n**OK:** {', '.join(ok_list[:40])}" + ("…" if len(ok_list) > 40 else ""))
+    if fail_list:
+        fails_txt = "\n".join(f"• {f}" for f in fail_list[:15])
+        resumen.append(f"\n**Fallos:**\n{fails_txt}")
+        if len(fail_list) > 15:
+            resumen.append(f"*... y {len(fail_list) - 15} más.*")
+    resumen.append(
+        "\n💡 Los CSV del bot en ejecución **no se actualizan solos**. "
+        "Tras el deploy/pull de `main`, usa `/recargar`."
+    )
+
+    final = "\n".join(resumen)
+    if len(final) > 2000:
+        final = final[:1990] + "\n..."
+    try:
+        await status_msg.edit(content=final)
+    except Exception:
+        await interaction.followup.send(final)
 
 # --- ARRANQUE DEL BOT ---
 
