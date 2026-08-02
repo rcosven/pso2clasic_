@@ -19091,7 +19091,7 @@ MySpace,1,MainMenu_MySpace_DirectBuy_Rental,CONFIRMAR COMPRA DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Rental,¿norte?
 MySpace,1,MainMenu_MySpace_DirectUse_Rental,CONFIRMAR USO DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_ItemUseRental,¿norte?
-MySpace,1,MainMenu_MySpace_WorldMapNotUse,"n Emparejamiento de todos los barcos, esto hará que abandones tu grupo actual."
+MySpace,1,MainMenu_MySpace_WorldMapNotUse,"No puedes usar el Mapa mundial aquí. ¿Volver a la base de ARKS?<br>*Si estás en el Emparejamiento entre todas las Naves, abandonarás tu grupo actual.<br>"
 MySpace,1,ZoneErrorMessage,No se puede utilizar dentro del Espacio Creativo.
 MySpace,1,MySpaceBgmText_NotPlay,La música seleccionada no se puede reproducir.<br>Descargue los datos de PSO2 para poder reproducirlo.
 MySpace,1,MySpaceCampaignBoost_Title,Impulso de campaña
@@ -19334,7 +19334,7 @@ AMSkillExplanation,0,ArsenalModule:Backpack03:CountShot,攻撃を一定回数当
 AMSkillExplanation,0,ArsenalModule:Boost:Dodge,ロックオン中に、<br>左右もしくは後ろに方向入力しながらジャンプすると、<br>攻撃を回避しながら高速移動する挙動に変化する。
 AMSkillExplanation,0,ArsenalModule:Boost:Approach,ロックオン中に、<br>前方に方向入力しながらジャンプすると、<br>攻撃を回避しながら高速移動する挙動に変化する。
 AMSkillExplanation,0,ArsenalModule:Boost:Vertical,ロックオン中に、<br>方向入力を行わずにジャンプすると、<br>攻撃を回避しながらロックオン座標と同じ高さに<br>高速移動する挙動に変化する。
-AMSkillExplanation,0,ArsenalModule:Parameter:ArsenalModule,時間経過でゲージを蓄積し、M.A.R.S.を展開する。<br>展開中に再度発動することで、M.A.R.S.を終了する。
+AMSkillExplanation,0,ArsenalModule:Parameter:ArsenalModule,El indicador se llena con el tiempo y el sistema M.A.R.S. se despliega.<br>Activarlo de nuevo mientras el sistema M.A.R.S. está desplegado lo desactivará.
 AMSkillExplanation,0,ArsenalModule:Parameter:DmgUp,M.A.R.S.兵装の<br>威力が上昇する。
 AMSkillExplanation,0,ArsenalModule:Parameter:CritUp,M.A.R.S.兵装の<br>クリティカル発生率が上昇する。
 AMSkillExplanation,0,ArsenalModule:Parameter:CritDmgUp,M.A.R.S.兵装の<br>クリティカル時の威力が上昇する。
@@ -19359,7 +19359,7 @@ AMSkillExplanation,1,ArsenalModule:Railgun:TacticalReload,"Al pulsar el botón d
 AMSkillExplanation,1,ArsenalModule:Railgun:Perpetual,Un ataque normal se convierte en un ataque poderoso cuando los PP son 5 o menos.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
 AMSkillExplanation,1,ArsenalModule:Railgun:Payback,Golpear a un enemigo con Hydra Termination extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
 AMSkillExplanation,1,ArsenalModule:Broom:3DGraze,"Cuando los enemigos permanecen dentro de un cierto rango o si los golpeas con ataques, aparecerán hasta 3 estrellas.<br>Usar un ataque de acción de arma en ese estado consumirá las estrellas y hará que tus proyectiles explosivos sean más potentes según su cantidad.<br>Pierdes 1 estrella cuando los enemigos están fuera de alcance por un tiempo, recibes un ataque o realizas una esquiva lateral.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
-AMSkillExplanation,1,ArsenalModule:Broom:BlinkCombo,Golpear a un enemigo con Hydra Termination extiende M.A.R.S. tiempo de uso.<br><yellow> *Solo se puede utilizar con VA-3LRM Hydra. <c>
+AMSkillExplanation,1,ArsenalModule:Broom:BlinkCombo,"Los ataques normales de Scylla, realizados tras <br>activar un PA con cada arma, se transforman en<br> un máximo de 3 ataques de alta movilidad.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
 AMSkillExplanation,1,ArsenalModule:Broom:Euphoria,"Al golpear a un enemigo con un ataque de acción de arma mientras tienes 3 estrellas, te vuelves temporalmente invulnerable.<br>No recuperas PP de forma natural mientras estás en este estado de invulnerabilidad, pero la potencia de Represalia de Scylla aumenta.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
 AMSkillExplanation,1,ArsenalModule:Broom:Retaliate,Ataca automáticamente cuando los enemigos permanezcan dentro de un cierto rango y no recibas daño.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>
 AMSkillExplanation,1,ArsenalModule:Broom:Annihilation,"Al golpear a un enemigo con Scylla Retaliation, se crea temporalmente un campo a tu alrededor que ocasionalmente produce ataques en una amplia zona.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
@@ -19374,7 +19374,7 @@ AMSkillExplanation,1,ArsenalModule:Backpack03:EcmLockOn,"Aplica un efecto negati
 AMSkillExplanation,1,ArsenalModule:Backpack03:CountShot,Produce un ataque adicional después de golpear una cierta cantidad de veces.<br><yellow> *Solo se puede utilizar con SA-3HFP Lindworm. <c>
 AMSkillExplanation,1,ArsenalModule:Boost:Dodge,Es el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
 AMSkillExplanation,1,ArsenalModule:Boost:Approach,Saltar con el avance presionado mientras estás fijado cambia el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
-AMSkillExplanation,1,ArsenalModule:Boost:Vertical,"Ver que esquiva los ataques mientras se mueve rápidamente, a la misma altura que la ubicación de bloqueo."
+AMSkillExplanation,1,ArsenalModule:Boost:Vertical,"Saltar sin pulsar ningún botón direccional mientras se tiene fijado el objetivo cambia el salto a una maniobra que esquiva los ataques mientras se mueve rápidamente, hasta la misma altura que la ubicación del objetivo fijado."
 AMSkillExplanation,1,ArsenalModule:Parameter:DmgUp,Aumenta M.A.R.S. Potencia.
 AMSkillExplanation,1,ArsenalModule:Parameter:CritUp,Aumenta M.A.R.S. Tasa de golpes críticos.
 AMSkillExplanation,1,ArsenalModule:Parameter:CritDmgUp,Aumenta M.A.R.S. Potencia de golpe crítico.
