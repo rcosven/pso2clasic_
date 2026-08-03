@@ -18,6 +18,31 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BASE_BRANCH = os.getenv("GITHUB_BASE_BRANCH", "main")
 
+# URL pública del Traductor Visual (sin barra final).
+# En Railway: PUBLIC_URL=https://pso2clasic.remnoirel.com
+# (subdominio propio, sin modal de edad del catálogo en remnoirel.com)
+PUBLIC_URL_DEFAULT = "https://pso2clasic.remnoirel.com"
+
+
+def get_public_url() -> str:
+    """
+    URL base del traductor para botones de Discord y logs.
+    Prioridad: PUBLIC_URL → RAILWAY_PUBLIC_DOMAIN → default del subdominio → localhost.
+    """
+    explicit = (os.getenv("PUBLIC_URL") or "").strip().rstrip("/")
+    if explicit:
+        return explicit
+    railway_domain = (os.getenv("RAILWAY_PUBLIC_DOMAIN") or "").strip().rstrip("/")
+    if railway_domain:
+        if railway_domain.startswith("http://") or railway_domain.startswith("https://"):
+            return railway_domain
+        return f"https://{railway_domain}"
+    # En producción se espera el subdominio del traductor (sin modal NSFW).
+    if os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("RAILWAY_PROJECT_ID"):
+        return PUBLIC_URL_DEFAULT.rstrip("/")
+    return "http://localhost:5000"
+
+
 # Configurar el logger
 logger = logging.getLogger("discord.bot")
 
@@ -568,12 +593,12 @@ class DescargarCSVView(discord.ui.View):
         self.bot = bot_instance
         self.filepath = filepath
 
-        public_url = os.getenv("PUBLIC_URL", "http://localhost:5000")
+        public_url = get_public_url()
         url_edit = f"{public_url}/edit?file={filepath}"
         if target_id:
             url_edit += f"&id={target_id}"
 
-        # Botón para el Editor Web
+        # Botón para el Editor Web (apunta al subdominio del traductor, sin modal de edad)
         self.add_item(discord.ui.Button(
             label="Abrir Editor Visual (Recomendado)", 
             style=discord.ButtonStyle.link, 
@@ -1150,8 +1175,11 @@ async def start_web_server(bot):
     bot.web_runner = runner
     bot.web_site = site
     
-    public_url = os.getenv("PUBLIC_URL", "http://localhost:5000")
-    logger.info(f"Servidor Web (Traductor Visual) iniciado en puerto {port}. URL pública: {public_url}")
+    public_url = get_public_url()
+    logger.info(
+        f"Servidor Web (Traductor Visual) iniciado en puerto {port}. "
+        f"URL pública: {public_url} (sin modal de edad; el catálogo NSFW está en remnoirel.com)"
+    )
 
 bot = BuscadorBot()
 

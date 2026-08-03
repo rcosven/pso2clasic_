@@ -28,7 +28,11 @@ En nuestro servidor de Discord encontrarás:
 
 Si no estás familiarizado con GitHub, puedes colaborar fácilmente utilizando nuestro Traductor Visual:
 
-**https://pso2clasic-production.up.railway.app/**
+**https://pso2clasic.remnoirel.com/**
+
+(URL de respaldo Railway: https://pso2clasic-production.up.railway.app/)
+
+El traductor **no** tiene modal de edad. El catálogo de mods (con restricción 18+) está en **https://remnoirel.com/**.
 
 Con esta herramienta podrás:
 
