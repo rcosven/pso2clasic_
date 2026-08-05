@@ -55,10 +55,16 @@ class BuscadorBot(commands.Bot):
         super().__init__(command_prefix="!", intents=intents)
         
         # 2. Lista en memoria para búsquedas rápidas
-        self.index_datos = [] 
+        self.index_datos = []
+
+        # 2b. Líneas/archivos nuevos del update (para el botón «Líneas nuevas» de la web)
+        #     key: (corpus, file_basename, section, group, id)
+        self.new_line_keys = set()
+        #     archivos completos nuevos: (corpus, file_basename) cuando el CSV es 100% nuevo
+        self.new_file_stems = set()
 
         # 3. Conjunto para rastrear archivos modificados localmente
-        self.modified_files = set() 
+        self.modified_files = set()
 
     async def setup_hook(self):
         self.cargar_indices()
@@ -169,14 +175,74 @@ class BuscadorBot(commands.Bot):
         """Contiene algún carácter basura UTF-16 (琀 吀 漀 氀 夀 㰀 …)."""
         return BuscadorBot.is_utf16_swapped_corrupt(s)
 
+    def cargar_lineas_nuevas(self):
+        """
+        Carga listas de líneas/archivos nuevos del update para la web.
+
+        Archivos esperados (UTF-8, header: file,section,group,id,text):
+          data/lineas_nuevas/LINEAS_NUEVAS_group1_Classic.csv
+          data/lineas_nuevas/LINEAS_NUEVAS_group1_NGS.csv
+        """
+        self.new_line_keys.clear()
+        self.new_file_stems.clear()
+        base = Path("data") / "lineas_nuevas"
+        sources = [
+            ("classic", base / "LINEAS_NUEVAS_group1_Classic.csv"),
+            ("ng", base / "LINEAS_NUEVAS_group1_NGS.csv"),
+        ]
+        loaded_rows = 0
+        for corpus, path in sources:
+            if not path.exists():
+                logger.warning(f"Lista de líneas nuevas no encontrada: {path}")
+                continue
+            try:
+                with open(path, "r", encoding="utf-8-sig", newline="") as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        fname = (row.get("file") or "").strip()
+                        if not fname:
+                            continue
+                        if not fname.lower().endswith(".csv"):
+                            fname = fname + ".csv"
+                        stem = Path(fname).name
+                        section = (row.get("section") or "").strip()
+                        group = str(row.get("group") or "").strip()
+                        row_id = (row.get("id") or "").strip()
+                        self.new_line_keys.add((corpus, stem, section, group, row_id))
+                        self.new_file_stems.add((corpus, stem))
+                        loaded_rows += 1
+            except Exception as e:
+                logger.error(f"Error cargando líneas nuevas {path}: {e}")
+        logger.info(
+            f"Líneas nuevas cargadas: {loaded_rows} filas | "
+            f"keys={len(self.new_line_keys)} | archivos={len(self.new_file_stems)}"
+        )
+
+    def is_new_line_item(self, item: dict) -> bool:
+        """True si la fila del índice está en la lista de líneas nuevas del update."""
+        fpath = (item.get("file") or "").replace("\\", "/")
+        # Solo CSV editables del parche (no *_Raw)
+        if not (fpath.startswith("Csv_Clasic/") or fpath.startswith("Csv_Ngs/")):
+            return False
+        if "_Raw/" in fpath:
+            return False
+        corpus = "classic" if fpath.startswith("Csv_Clasic/") else "ng"
+        stem = Path(fpath).name
+        section = (item.get("section") or "").strip()
+        group = str(item.get("group") or "").strip()
+        row_id = (item.get("id") or "").strip()
+        return (corpus, stem, section, group, row_id) in self.new_line_keys
+
     def cargar_indices(self):
         """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
         self.index_datos.clear()
-        
+        self.cargar_lineas_nuevas()
+
         # Agrega aquí los nombres de las carpetas que contienen tus CSV
         directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_Raw", "Csv_Clasic_Raw"]
         corrupt_count = 0
-        
+        new_flag_count = 0
+
         for dir_name in directorios_datos:
             ruta = Path(dir_name)
             if ruta.exists():
@@ -210,6 +276,23 @@ class BuscadorBot(commands.Bot):
                                     )
                                     if is_rare:
                                         corrupt_count += 1
+                                    file_rel = f"{dir_name}/{archivo_csv.name}"
+                                    corpus = (
+                                        "classic" if dir_name.startswith("Csv_Clasic")
+                                        else "ng" if dir_name.startswith("Csv_Ngs")
+                                        else "other"
+                                    )
+                                    is_new = False
+                                    if corpus in ("classic", "ng") and not dir_name.endswith("_Raw"):
+                                        is_new = (
+                                            corpus,
+                                            archivo_csv.name,
+                                            section.strip(),
+                                            str(group).strip(),
+                                            (row_id or "").strip(),
+                                        ) in self.new_line_keys
+                                        if is_new:
+                                            new_flag_count += 1
                                     self.index_datos.append({
                                         'section': section,
                                         'group': group,
@@ -221,21 +304,23 @@ class BuscadorBot(commands.Bot):
                                         'cmd_full_norm': self._norm_search(cmd_full),
                                         'id_norm': self._norm_search(row_id),
                                         'section_norm': self._norm_search(section),
-                                        'file': f"{dir_name}/{archivo_csv.name}",
+                                        'file': file_rel,
                                         'line': reader.line_num,
                                         'rare_chars': is_rare,
                                         'corrupt_utf16': is_corrupt,
                                         'text_fixed': text_fixed,
                                         'text_fixed_norm': self._norm_search(text_fixed) if text_fixed else '',
+                                        'is_new_line': is_new,
                                     })
                     except Exception as e:
                         logger.error(f"Error leyendo {archivo_csv.name}: {e}")
             else:
                 logger.warning(f"Advertencia: No se encontró la carpeta {dir_name}")
-                
+
         logger.info(
             f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)} "
-            f"(líneas raras group1 UTF-16: {corrupt_count})"
+            f"(líneas raras group1 UTF-16: {corrupt_count}; "
+            f"líneas nuevas del update en índice: {new_flag_count})"
         )
 
 def modificar_texto_csv(
@@ -710,10 +795,17 @@ async def web_api_search(request):
     deep_raw = (request.query.get("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
 
-    # rare=1 / corrupt=1 → solo líneas con caracteres raros; no exige query (edición manual)
-    rare_raw = (request.query.get("rare") or request.query.get("corrupt") or "").strip().lower()
-    rare_only = rare_raw in ("1", "true", "yes", "on")
-    corrupt_only = rare_only  # alias retrocompatible
+    # new=1 / nuevas=1 → líneas y archivos del update (listas en data/lineas_nuevas/)
+    # rare/corrupt se reutilizan como alias del mismo modo (botón web antiguo)
+    new_raw = (
+        request.query.get("new")
+        or request.query.get("nuevas")
+        or request.query.get("rare")
+        or request.query.get("corrupt")
+        or ""
+    ).strip().lower()
+    new_only = new_raw in ("1", "true", "yes", "on")
+    rare_only = new_only  # alias retrocompatible para la UI
 
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
@@ -741,6 +833,8 @@ async def web_api_search(request):
     empty = {
         "items": [],
         "deep": deep,
+        "new": new_only,
+        "nuevas": new_only,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -750,8 +844,8 @@ async def web_api_search(request):
         "total_pages": 0,
         "capped": False,
     }
-    # En modo líneas raras se permite query vacía (lista todo sin escribir nada)
-    if not rare_only and len(query) < 3:
+    # En modo líneas nuevas se permite query vacía (lista todo sin escribir nada)
+    if not new_only and len(query) < 3:
         return web.json_response(empty)
 
     query_norm = "".join(
@@ -779,41 +873,33 @@ async def web_api_search(request):
         matched = False
         match_where = "text"
 
-        if rare_only:
+        if new_only:
             # ═══════════════════════════════════════════════════════════
-            # Líneas raras: SOLO group 1 con basura UTF-16 (夀漀甀 / 㰀戀爀㸀)
-            # Ignora SIEMPRE group 0 (japonés) y carpetas *_Raw.
+            # Líneas nuevas: filas listadas en data/lineas_nuevas/*
+            # (archivos y keys del update de Classic/NGS). Solo editables.
             # ═══════════════════════════════════════════════════════════
-            grp = str(item.get("group", "") or "").strip()
-            if grp != "1":
-                continue
-
             fpath = (item.get("file") or "").replace("\\", "/")
             if "_Raw/" in fpath or "/Csv_Clasic_Raw/" in fpath or "/Csv_Ngs_Raw/" in fpath:
                 continue
-            # Solo CSV del parche editable
             if not (
                 fpath.startswith("Csv_Clasic/")
                 or fpath.startswith("Csv_Ngs/")
             ):
                 continue
 
-            text = item.get("text") or ""
-            # Preferir flag del índice; re-detectar en vivo por si el flag quedó desfasado
-            is_corrupt = bool(item.get("corrupt_utf16")) or BuscadorBot.is_utf16_swapped_corrupt(text)
-            if not is_corrupt:
+            is_new = bool(item.get("is_new_line")) or bot.is_new_line_item(item)
+            if not is_new:
                 continue
 
             matched = True
-            match_where = "rare"
-            # Filtro opcional: si el usuario escribe algo, acota por archivo/id/texto
+            match_where = "new"
+            # Filtro opcional: acotar por archivo / id / texto / comando
             if query_norm:
                 if (
                     query_norm not in item.get("text_norm", "")
-                    and query_norm not in item.get("text_fixed_norm", "")
-                    and query_norm not in BuscadorBot._norm_search(BuscadorBot.fix_utf16_swapped(text))
                     and query_norm not in item.get("id_norm", "")
                     and query_norm not in item.get("cmd_norm", "")
+                    and query_norm not in item.get("section_norm", "")
                     and query_norm not in fpath.lower()
                 ):
                     continue
@@ -866,12 +952,14 @@ async def web_api_search(request):
                 "match": match_where,
                 "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
             }
-            if rare_only or item.get("rare_chars") or item.get("corrupt_utf16"):
+            if new_only or item.get("is_new_line"):
+                entry["new"] = True
+                entry["nuevas"] = True
+            # Mantener flags de rareza solo si realmente hay basura UTF-16
+            if item.get("rare_chars") or item.get("corrupt_utf16"):
                 entry["rare"] = True
                 entry["corrupt"] = True
                 fixed = item.get("text_fixed") or ""
-                if not fixed and rare_only:
-                    fixed = BuscadorBot.fix_utf16_swapped(item.get("text") or "")
                 if fixed:
                     entry["text_fixed"] = fixed
             coincidencias.append(entry)
@@ -889,6 +977,8 @@ async def web_api_search(request):
     return web.json_response({
         "items": page_items,
         "deep": deep,
+        "new": new_only,
+        "nuevas": new_only,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
