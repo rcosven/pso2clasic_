@@ -641,9 +641,19 @@
                     per_page: String(PER_PAGE),
                 });
                 const response = await fetch(`/api/search?${params.toString()}`);
-                if (!response.ok) throw new Error("Error en la búsqueda");
+                const data = await response.json().catch(() => ({}));
 
-                const data = await response.json();
+                // Índice aún cargando en el servidor (deploy / reinicio)
+                if (response.status === 503 || data.loading) {
+                    loader.style.display = 'none';
+                    resultsContainer.style.display = 'block';
+                    paginationEl.classList.remove('visible');
+                    resultsList.innerHTML = `<div class="empty-state">⏳ Cargando índice de traducciones… reintentando en 3 s.</div>`;
+                    setTimeout(() => performSearch(query, page), 3000);
+                    return;
+                }
+
+                if (!response.ok) throw new Error(data.error || "Error en la búsqueda");
 
                 loader.style.display = 'none';
                 renderResults(data);

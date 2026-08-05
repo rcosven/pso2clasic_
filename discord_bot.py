@@ -56,6 +56,10 @@ class BuscadorBot(commands.Bot):
         
         # 2. Lista en memoria para búsquedas rápidas
         self.index_datos = []
+        # True cuando cargar_indices terminó (Railway healthcheck no debe esperar esto)
+        self.index_ready = False
+        self.index_loading = False
+        self.index_error = None
 
         # 2b. Líneas/archivos nuevos del update (para el botón «Líneas nuevas» de la web)
         #     key: (corpus, file_basename, section, group, id)
@@ -67,31 +71,67 @@ class BuscadorBot(commands.Bot):
         self.modified_files = set()
 
     async def setup_hook(self):
-        self.cargar_indices()
-        
-        # 0. Arrancar servidor web de inmediato
+        # 0. Web PRIMERO (puerto abierto al instante → Railway no mata el contenedor)
         try:
             await start_web_server(self)
         except Exception as e:
             logger.error(f"Error al iniciar el servidor web: {e}")
-        
-        # 1. Sincronización instantánea en tu servidor de pruebas
-        mi_servidor = discord.Object(id=1525057654446100553) 
+
+        # 1. Índices en background (puede tardar 20–60s con ~1.2M filas)
+        self.loop.create_task(self._load_indices_bg())
+
+        # 2. Sync Discord en background (rate-limit 429 no debe tumbar el deploy)
+        self.loop.create_task(self._sync_discord_commands_bg())
+
+    async def _load_indices_bg(self):
+        """Carga CSV sin bloquear el puerto HTTP ni el login de Discord."""
+        if self.index_loading:
+            return
+        self.index_loading = True
+        self.index_ready = False
+        self.index_error = None
+        try:
+            logger.info("Cargando índices CSV en segundo plano...")
+            await asyncio.to_thread(self.cargar_indices)
+            self.index_ready = True
+            logger.info(
+                f"Índices listos para la web. IDs: {len(self.index_datos)}"
+            )
+        except Exception as e:
+            self.index_error = str(e)
+            logger.error(f"Error cargando índices en background: {e}")
+        finally:
+            self.index_loading = False
+
+    async def _sync_discord_commands_bg(self):
+        """Sincroniza slash commands sin bloquear setup_hook / healthcheck."""
+        await asyncio.sleep(2)  # deja respirar al login
+        mi_servidor = discord.Object(id=1525057654446100553)
         try:
             self.tree.copy_global_to(guild=mi_servidor)
             logger.info("Sincronizando comandos de barra en el servidor de pruebas...")
             await self.tree.sync(guild=mi_servidor)
+            logger.info("Sync de guild OK.")
         except Exception as e:
-            logger.error(f"Error al sincronizar comandos en el servidor de pruebas: {e}")
-        
-        # 2. Sincronización global para los demás servidores
+            logger.warning(
+                f"Sync guild omitido/falló (no crítico para la web): {e}"
+            )
+
         try:
-            logger.info("Sincronizando comandos globalmente (puede tardar hasta 1 hora en propagarse)...")
-            await self.tree.sync()
+            # Global sync es lento y a menudo pega 429; no es necesario para la web
+            if os.getenv("DISCORD_SYNC_GLOBAL", "").strip().lower() in (
+                "1", "true", "yes", "on"
+            ):
+                logger.info("Sincronizando comandos globalmente...")
+                await self.tree.sync()
+                logger.info("Sync global OK.")
+            else:
+                logger.info(
+                    "Sync global Discord desactivado "
+                    "(pon DISCORD_SYNC_GLOBAL=1 para forzarlo)."
+                )
         except Exception as e:
-            logger.error(f"Error al sincronizar comandos globalmente: {e}")
-            
-        logger.info("Sincronización completada.")
+            logger.warning(f"Sync global omitido/falló: {e}")
 
     @staticmethod
     def _norm_search(s: str) -> str:
@@ -790,6 +830,22 @@ def _item_corpus(file_path: str) -> str:
 
 
 async def web_api_search(request):
+    bot = request.app["bot"]
+    # Mientras cargan ~1.2M filas, no tumbar la web: respuesta clara
+    if not getattr(bot, "index_ready", False):
+        return web.json_response(
+            {
+                "items": [],
+                "total": 0,
+                "total_pages": 0,
+                "page": 1,
+                "per_page": 50,
+                "loading": True,
+                "error": "Índice aún cargando. Espera unos segundos y reintenta.",
+            },
+            status=503,
+        )
+
     query = request.query.get("q", "").strip()
     # deep=1 | true | yes  → también busca en section/group/id (comandos CSV)
     deep_raw = (request.query.get("deep") or "").strip().lower()
@@ -879,7 +935,6 @@ async def web_api_search(request):
         query_file_stem = query_file
     query_file_csv = query_file_stem + ".csv"
 
-    bot = request.app['bot']
     coincidencias = []
     ids_vistos = set()
 
@@ -1298,9 +1353,35 @@ async def web_api_github(request):
     except Exception as e:
         return web.json_response({"error": str(e)}, status=500)
 
+async def web_health(request):
+    """
+    Healthcheck de Railway / proxy: siempre 200 si el proceso vive.
+    No depende de que los CSV estén indexados.
+    """
+    bot = request.app.get("bot")
+    ready = bool(bot and getattr(bot, "index_ready", False))
+    loading = bool(bot and getattr(bot, "index_loading", False))
+    n = len(bot.index_datos) if bot and getattr(bot, "index_datos", None) is not None else 0
+    err = getattr(bot, "index_error", None) if bot else None
+    return web.json_response(
+        {
+            "ok": True,
+            "status": "ready" if ready else ("loading" if loading else "starting"),
+            "index_ready": ready,
+            "index_loading": loading,
+            "index_count": n,
+            "index_error": err,
+        },
+        status=200,
+    )
+
+
 async def start_web_server(bot):
     app = web.Application()
     app['bot'] = bot
+    # Health primero: Railway/proxy lo pegan y no deben esperar índices
+    app.router.add_get('/health', web_health)
+    app.router.add_get('/healthz', web_health)
     app.router.add_get('/', web_home)
     app.router.add_get('/edit', web_index)
     app.router.add_get('/api/search', web_api_search)
@@ -1387,8 +1468,23 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
 
 @bot.tree.command(name="recargar", description="Vuelve a leer los archivos CSV sin reiniciar el bot")
 async def recargar(interaction: discord.Interaction):
-    bot.cargar_indices()
-    await interaction.response.send_message(f"🔄 Datos recargados con éxito. IDs mapeados: {len(bot.index_datos)}")
+    await interaction.response.defer(thinking=True)
+    if bot.index_loading:
+        await interaction.followup.send("⏳ Ya hay una recarga en curso. Espera un momento.")
+        return
+    bot.index_ready = False
+    bot.index_loading = True
+    try:
+        await asyncio.to_thread(bot.cargar_indices)
+        bot.index_ready = True
+        await interaction.followup.send(
+            f"🔄 Datos recargados con éxito. IDs mapeados: {len(bot.index_datos)}"
+        )
+    except Exception as e:
+        bot.index_error = str(e)
+        await interaction.followup.send(f"❌ Error al recargar: {e}")
+    finally:
+        bot.index_loading = False
 
 
 @bot.tree.command(
