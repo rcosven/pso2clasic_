@@ -465,6 +465,10 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
+        <label class="deep-toggle" title="Busca por nombre de archivo: cl0421450101 o trial_boss_weak_evolution.csv">
+            <input type="checkbox" id="fileSearch">
+            <span>Por archivo</span>
+        </label>
         <label class="deep-toggle" title="Lista líneas y archivos nuevos del update (Classic + NGS)">
             <input type="checkbox" id="corruptSearch">
             <span>Líneas nuevas</span>
@@ -472,6 +476,12 @@
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
+        </span>
+        <span class="deep-hint" id="fileHint" style="display: none;">
+            Escribe el <strong>nombre del CSV</strong> con o sin extensión:
+            <code>cl0421450101</code>, <code>cl0421450101.csv</code>,
+            <code>trial_boss_weak_evolution</code>, <code>msn_041280</code>.
+            Lista todas las líneas de ese archivo (ámbito Classic / NGS / Ambos).
         </span>
         <span class="deep-hint" id="corruptHint" style="display: none;">
             <strong>Líneas y archivos del update</strong> (listas en
@@ -501,6 +511,8 @@
         const searchInput = document.getElementById('searchInput');
         const deepSearch = document.getElementById('deepSearch');
         const deepHint = document.getElementById('deepHint');
+        const fileSearch = document.getElementById('fileSearch');
+        const fileHint = document.getElementById('fileHint');
         const corruptSearch = document.getElementById('corruptSearch');
         const corruptHint = document.getElementById('corruptHint');
         const resultsContainer = document.getElementById('resultsContainer');
@@ -517,22 +529,33 @@
         let lastDeep = false;
         let currentScope = 'all'; // all | classic | ng
 
+        function exclusiveMode(active) {
+            // Solo un modo especial a la vez
+            if (active !== 'deep') deepSearch.checked = false;
+            if (active !== 'file') fileSearch.checked = false;
+            if (active !== 'new') corruptSearch.checked = false;
+            if (active === 'deep') deepSearch.checked = true;
+            if (active === 'file') fileSearch.checked = true;
+            if (active === 'new') corruptSearch.checked = true;
+        }
+
         function updatePlaceholders() {
+            deepHint.style.display = 'none';
+            fileHint.style.display = 'none';
+            corruptHint.style.display = 'none';
+            searchInput.disabled = false;
+
             if (corruptSearch.checked) {
                 searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
-                searchInput.disabled = false; // filtro opcional por archivo/id
                 corruptHint.style.display = 'block';
-                deepHint.style.display = 'none';
+            } else if (fileSearch.checked) {
+                searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
+                fileHint.style.display = 'block';
             } else if (deepSearch.checked) {
                 searchInput.placeholder = 'Ej: Basic,1,Explanation  o  texto vacío / ID...';
-                searchInput.disabled = false;
                 deepHint.style.display = 'block';
-                corruptHint.style.display = 'none';
             } else {
                 searchInput.placeholder = 'Ej: Pose elemental: oscuridad y luz...';
-                searchInput.disabled = false;
-                deepHint.style.display = 'none';
-                corruptHint.style.display = 'none';
             }
         }
 
@@ -540,9 +563,11 @@
             clearTimeout(debounceTimer);
             const query = searchInput.value.trim();
             const newMode = corruptSearch.checked;
+            const fileMode = fileSearch.checked;
+            const minLen = fileMode ? 2 : 3;
 
             // Líneas nuevas: no requiere texto (lista todo al activar)
-            if (!newMode && query.length < 3) {
+            if (!newMode && query.length < minLen) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -567,14 +592,20 @@
         });
 
         deepSearch.addEventListener('change', () => {
-            if (deepSearch.checked) corruptSearch.checked = false;
+            if (deepSearch.checked) exclusiveMode('deep');
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        fileSearch.addEventListener('change', () => {
+            if (fileSearch.checked) exclusiveMode('file');
             updatePlaceholders();
             scheduleSearch(true);
         });
 
         corruptSearch.addEventListener('change', () => {
             if (corruptSearch.checked) {
-                deepSearch.checked = false;
+                exclusiveMode('new');
                 // Al activar: limpiar la caja y listar líneas/archivos nuevos del update
                 searchInput.value = '';
             }
@@ -591,6 +622,7 @@
             resultsList.innerHTML = '';
 
             const deep = deepSearch.checked ? '1' : '0';
+            const byfile = fileSearch.checked ? '1' : '0';
             const nuevas = corruptSearch.checked ? '1' : '0';
             lastQuery = query;
             lastDeep = deepSearch.checked;
@@ -600,6 +632,8 @@
                 const params = new URLSearchParams({
                     q: query,
                     deep,
+                    file: byfile,
+                    byfile,
                     new: nuevas,
                     nuevas,
                     scope: currentScope,
@@ -713,20 +747,27 @@
             resultsContainer.style.display = 'flex';
 
             const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
+            const fileMode = !!(data.file || data.byfile);
 
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = newMode
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
+                    : fileMode
+                    ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Líneas nuevas</strong> (update) o <strong>Búsqueda avanzada</strong>.";
+                    : "Activa <strong>Por archivo</strong>, <strong>Líneas nuevas</strong> o <strong>Búsqueda avanzada</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
             }
 
-            const modeLabel = newMode ? " · líneas nuevas" : (deep ? " · avanzada" : "");
+            const modeLabel = newMode
+                ? " · líneas nuevas"
+                : fileMode
+                ? " · por archivo"
+                : (deep ? " · avanzada" : "");
             const scopeLabel = {
                 all: " · Ambos",
                 classic: " · Classic",
@@ -758,12 +799,15 @@
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
                 );
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || newMode || (item.match && item.match !== 'text');
-                const matchBadge = newMode
-                    ? `<span class="result-match-badge">update · nueva</span>`
-                    : (item.match && item.match !== 'text')
-                    ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
-                    : '';
+                const showCmd = deep || newMode || fileMode || (item.match && item.match !== 'text');
+                let matchBadge = '';
+                if (newMode) {
+                    matchBadge = `<span class="result-match-badge">update · nueva</span>`;
+                } else if (fileMode || item.match === 'file') {
+                    matchBadge = `<span class="result-match-badge">archivo</span>`;
+                } else if (item.match && item.match !== 'text') {
+                    matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
+                }
                 const corpus = item.corpus || (String(item.file).toLowerCase().includes('ng') ? 'ng' : 'classic');
                 const corpusBadge = corpus === 'ng'
                     ? `<span class="result-corpus ng">NGS</span>`

@@ -807,6 +807,16 @@ async def web_api_search(request):
     new_only = new_raw in ("1", "true", "yes", "on")
     rare_only = new_only  # alias retrocompatible para la UI
 
+    # file=1 / byfile=1 / filename=1 → buscar por nombre de archivo CSV
+    file_raw = (
+        request.query.get("file")
+        or request.query.get("byfile")
+        or request.query.get("filename")
+        or request.query.get("archivo")
+        or ""
+    ).strip().lower()
+    file_only = file_raw in ("1", "true", "yes", "on")
+
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
@@ -835,6 +845,8 @@ async def web_api_search(request):
         "deep": deep,
         "new": new_only,
         "nuevas": new_only,
+        "file": file_only,
+        "byfile": file_only,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -845,7 +857,9 @@ async def web_api_search(request):
         "capped": False,
     }
     # En modo líneas nuevas se permite query vacía (lista todo sin escribir nada)
-    if not new_only and len(query) < 3:
+    # Por archivo: mínimo 2 caracteres (ej. "cl" / "ms")
+    min_q = 2 if file_only else 3
+    if not new_only and len(query) < min_q:
         return web.json_response(empty)
 
     query_norm = "".join(
@@ -857,6 +871,13 @@ async def web_api_search(request):
     query_cmd = ",".join(p.strip() for p in query_norm.split(",")) if query_norm else ""
     # Permitir "Basic,1,Explanation," (coma final de text vacío)
     query_cmd = query_cmd.rstrip(",")
+    # Nombre de archivo: aceptar con o sin .csv
+    query_file = query_norm
+    if query_file.endswith(".csv"):
+        query_file_stem = query_file[:-4]
+    else:
+        query_file_stem = query_file
+    query_file_csv = query_file_stem + ".csv"
 
     bot = request.app['bot']
     coincidencias = []
@@ -903,6 +924,39 @@ async def web_api_search(request):
                     and query_norm not in fpath.lower()
                 ):
                     continue
+        elif file_only:
+            # ═══════════════════════════════════════════════════════════
+            # Por nombre de archivo: cl0421450101 / cl0421450101.csv
+            # Solo CSV editables (no *_Raw). Coincide stem, nombre o ruta.
+            # ═══════════════════════════════════════════════════════════
+            fpath = (item.get("file") or "").replace("\\", "/")
+            if "_Raw/" in fpath or fpath.endswith("_Raw"):
+                continue
+            if not (
+                fpath.startswith("Csv_Clasic/")
+                or fpath.startswith("Csv_Ngs/")
+            ):
+                continue
+
+            fname = Path(fpath).name.lower()  # ej. trial_boss_weak_evolution.csv
+            stem = Path(fname).stem.lower()   # sin .csv
+            fpath_l = fpath.lower()
+
+            # Coincidencia flexible:
+            # - exacta stem / nombre.csv
+            # - substring en stem o nombre (para parciales)
+            if (
+                query_file_stem == stem
+                or query_file_csv == fname
+                or query_file == fname
+                or query_file_stem in stem
+                or query_file in fname
+                or query_file in fpath_l
+            ):
+                matched = True
+                match_where = "file"
+            else:
+                continue
         else:
             # Búsqueda normal: solo en el texto de la línea
             if query_norm in item.get("text_norm", ""):
@@ -979,6 +1033,8 @@ async def web_api_search(request):
         "deep": deep,
         "new": new_only,
         "nuevas": new_only,
+        "file": file_only,
+        "byfile": file_only,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
