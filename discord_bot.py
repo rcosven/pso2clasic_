@@ -920,6 +920,18 @@ async def web_api_search(request):
         or ""
     ).strip().lower()
     equal_only = equal_raw in ("1", "true", "yes", "on")
+    # chars / min_chars = longitud MÍNIMA del texto (filtra "??", "-", "aina", etc.)
+    # NO es match parcial: la igualdad sigue siendo del texto completo.
+    try:
+        equal_min_chars = int(
+            request.query.get("chars")
+            or request.query.get("min_chars")
+            or request.query.get("n")
+            or "20"
+        )
+    except ValueError:
+        equal_min_chars = 20
+    equal_min_chars = max(1, min(500, equal_min_chars))
 
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
@@ -953,6 +965,8 @@ async def web_api_search(request):
         "byfile": file_only,
         "equal": equal_only,
         "iguales": equal_only,
+        "chars": equal_min_chars,
+        "min_chars": equal_min_chars,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -978,6 +992,15 @@ async def web_api_search(request):
         if seed_key is not None and not seed_key:
             empty["error"] = "La frase de búsqueda está vacía."
             return web.json_response(empty)
+        # Con frase: también debe cumplir longitud mínima (evita basura corta)
+        if seed_key is not None and len(seed_key) < equal_min_chars:
+            empty["error"] = (
+                f"La frase tiene {len(seed_key)} caracteres; "
+                f"mínimo configurado = {equal_min_chars}. Baja Chars o usa una frase más larga."
+            )
+            empty["chars"] = equal_min_chars
+            empty["min_chars"] = equal_min_chars
+            return web.json_response(empty)
 
         # Agrupar SOLO por texto completo idéntico (clave exacta)
         buckets: dict[str, list] = defaultdict(list)
@@ -998,6 +1021,9 @@ async def web_api_search(request):
             key = _exact_line_key(text)
             if not key:
                 continue  # vacío no cuenta
+            # Filtro de longitud mínima: ignora "??", "-", "...", "manon", "aina", etc.
+            if len(key) < equal_min_chars:
+                continue
 
             if seed_key is not None:
                 # Con frase: solo la línea cuyo texto es EXACTAMENTE esa frase
@@ -1017,7 +1043,6 @@ async def web_api_search(request):
                 if len(items) < 2:
                     continue
                 if len(files) < 2 and not ({"main", "raw"} <= layers):
-                    # misma línea duplicada en un solo archivo: aún es "igual" si hay 2+ filas
                     if len(items) < 2:
                         continue
             ranked.append((len(files), len(items), key, items))
@@ -1050,6 +1075,8 @@ async def web_api_search(request):
                     "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
                     "layer": layer,
                     "exact": True,
+                    "min_chars": equal_min_chars,
+                    "text_len": len(key),
                     "dup_files": n_files,
                     "dup_lines": n_items,
                 })
@@ -1074,6 +1101,8 @@ async def web_api_search(request):
             "equal": True,
             "iguales": True,
             "exact": True,
+            "chars": equal_min_chars,
+            "min_chars": equal_min_chars,
             "rare": False,
             "corrupt": False,
             "scope": scope,

@@ -507,6 +507,10 @@
             <input type="checkbox" id="equalSearch">
             <span>Líneas iguales</span>
         </label>
+        <label class="deep-toggle chars-toggle" id="charsToggle" style="display: none;" title="Longitud mínima del texto (filtra basura corta: ??, -, manon, aina…)">
+            <span>Mín. chars</span>
+            <input type="number" id="equalChars" min="1" max="500" value="20" step="1">
+        </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
@@ -524,12 +528,10 @@
             Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
         </span>
         <span class="deep-hint" id="equalHint" style="display: none;">
-            Solo <strong>group 1</strong>. Compara el <strong>texto completo</strong>:
-            debe ser <em>idéntico</em> carácter a carácter (si cambia uno, no aparece).
-            Main + Raw. Pega la frase o la línea CSV
-            (<code>SubObjectives,1,text0106,Defeat enemies in the Nameless City…</code>).
-            Sin texto: lista frases que se repiten iguales en varios archivos
-            (inglés duplicado sin traducir).
+            Solo <strong>group 1</strong>. El texto debe ser <em>idéntico entero</em>
+            (un carácter distinto = no sale). <strong>Mín. chars</strong> filtra basura corta
+            (<code>??</code>, <code>-</code>, <code>manon</code>, <code>aina</code>…):
+            prueba 20, 30, 40… Main + Raw. Sin texto en la caja = escanea duplicados largos.
         </span>
     </div>
 
@@ -559,6 +561,8 @@
         const corruptHint = document.getElementById('corruptHint');
         const equalSearch = document.getElementById('equalSearch');
         const equalHint = document.getElementById('equalHint');
+        const equalChars = document.getElementById('equalChars');
+        const charsToggle = document.getElementById('charsToggle');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -590,14 +594,16 @@
             fileHint.style.display = 'none';
             corruptHint.style.display = 'none';
             equalHint.style.display = 'none';
+            charsToggle.style.display = 'none';
             searchInput.disabled = false;
 
             if (corruptSearch.checked) {
                 searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
                 corruptHint.style.display = 'block';
             } else if (equalSearch.checked) {
-                searchInput.placeholder = 'Pega la frase completa idéntica (o la línea CSV con el texto)';
+                searchInput.placeholder = 'Opcional: frase completa idéntica · usa Mín. chars para filtrar basura corta';
                 equalHint.style.display = 'block';
+                charsToggle.style.display = 'inline-flex';
             } else if (fileSearch.checked) {
                 searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
                 fileHint.style.display = 'block';
@@ -670,6 +676,17 @@
             scheduleSearch(true);
         });
 
+        equalChars.addEventListener('change', () => {
+            let n = parseInt(equalChars.value, 10);
+            if (Number.isNaN(n)) n = 20;
+            n = Math.max(1, Math.min(500, n));
+            equalChars.value = String(n);
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+        equalChars.addEventListener('input', () => {
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+
         searchInput.addEventListener('input', () => scheduleSearch(true));
 
         async function performSearch(query, page = 1) {
@@ -682,6 +699,9 @@
             const byfile = fileSearch.checked ? '1' : '0';
             const nuevas = corruptSearch.checked ? '1' : '0';
             const iguales = equalSearch.checked ? '1' : '0';
+            let chars = parseInt(equalChars.value, 10);
+            if (Number.isNaN(chars)) chars = 20;
+            chars = Math.max(1, Math.min(500, chars));
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -696,6 +716,8 @@
                     nuevas,
                     equal: iguales,
                     iguales,
+                    chars: String(chars),
+                    min_chars: String(chars),
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -825,7 +847,7 @@
                 const tip = newMode
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
                     : equalMode
-                    ? "No hay otra línea group&nbsp;1 con ese <strong>texto idéntico</strong>. Debe coincidir la frase entera."
+                    ? "No hay líneas group&nbsp;1 <strong>idénticas</strong> con esa longitud mínima. Sube/baja <strong>Mín. chars</strong> (ej. 20, 30, 40)."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
@@ -836,10 +858,13 @@
                 return;
             }
 
+            const minCharsLabel = equalMode && (data.min_chars || data.chars)
+                ? ` · mín≥${data.min_chars || data.chars}`
+                : '';
             const modeLabel = newMode
                 ? " · líneas nuevas"
                 : equalMode
-                ? " · líneas iguales (idénticas)"
+                ? ` · iguales idénticas${minCharsLabel}`
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
