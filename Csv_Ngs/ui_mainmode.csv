@@ -1866,14 +1866,14 @@ QuestDifficulty,0,QuestRank08_Short,HC
 QuestDifficulty,0,QuestRank_None,-
 QuestDifficulty,0,QuestRankEx_Ultimate,ULT
 QuestDifficulty,1,QuestRank01,Normal
-QuestDifficulty,1,QuestRank02,Duro
-QuestDifficulty,1,QuestRank03,muy duro
-QuestDifficulty,1,QuestRank04,Súper duro
+QuestDifficulty,1,QuestRank02,Hard
+QuestDifficulty,1,QuestRank03,Very Hard
+QuestDifficulty,1,QuestRank04,Super Hard
 QuestDifficulty,1,QuestRank05,Extremadamente duro
-QuestDifficulty,1,QuestRank06,Ultraduro
-QuestDifficulty,1,QuestRank00_Short,mi
-QuestDifficulty,1,QuestRank01_Short,norte
-QuestDifficulty,1,QuestRank02_Short,h
+QuestDifficulty,1,QuestRank06,Ultra Hard
+QuestDifficulty,1,QuestRank00_Short,E
+QuestDifficulty,1,QuestRank01_Short,N
+QuestDifficulty,1,QuestRank02_Short,H
 QuestDifficulty,1,QuestRank03_Short,VH
 QuestDifficulty,1,QuestRank04_Short,SH
 QuestDifficulty,1,QuestRank05_Short,XH
@@ -19629,18 +19629,18 @@ AreaName,0,AreaName1133800,オルタレルム：凍土西部
 AreaName,0,AreaName041020,9章：オルタレルムの任務の報告
 AreaName,0,AreaName041190,9章：異変の報せ
 AreaName,0,AreaName041210,9章：アブダクションホール
-AreaName,1,AreaName0000010,Control Tower
+AreaName,1,AreaName0000010,Torre de control
 AreaName,1,AreaName0000011,Alter Realm: Phantom Tower Interior
 AreaName,1,AreaName1133300,Alter Realm: Central Tundra
 AreaName,1,AreaName1133800,Alter Realm: West Tundra
-AreaName,1,AreaName041020,Chapter 9: Alter Realm Mission Report
-AreaName,1,AreaName041190,Chapter 9: Anomaly Report
-AreaName,1,AreaName041210,Chapter 9: Abduction Hole
+AreaName,1,AreaName041020,Capítulo 9: Informe de la misión Alter Realm
+AreaName,1,AreaName041190,Capítulo 9: Informe de anomalías
+AreaName,1,AreaName041210,Capítulo 9: El agujero de abducción
 FieldName,0,11172,ビーチウォーズ'26
 FieldName,1,11172,Beach Wars '26
 WeatherName,0,BeachWars_Fine,晴れ
 WeatherName,0,BeachWars_Collapse,壊晴
-WeatherName,1,BeachWars_Fine,Sunny
+WeatherName,1,BeachWars_Fine,Soleado
 WeatherName,1,BeachWars_Collapse,Broken Sunny
 Worldmap,0,Window_FasttravelTerminal_3_3,おすすめレシピで作る
 Worldmap,1,Window_FasttravelTerminal_3_3,Recommended Recipe
@@ -19650,7 +19650,7 @@ SubStyleSkillExplanation,0,AjaxFirstStrike,クエストが開始したときや�
 SubStyleSkillExplanation,0,AjaxBlastEchoTriggerReload,ブラストエコーを発動したとき、<br>またはその段階が最大になったとき、<br>追加攻撃を１つストックする。<br>次に攻撃を当てたとき、<br>ストックした追加攻撃を行う。<br>さらにフォトンブラストゲージを蓄積し、<br>フォトンブラストの再使用が<br>可能になるまでの時間も短縮する。
 SubStyleSkillExplanation,0,KetosFirstStrike,クエストが開始したときや、<br>各拠点から探索や戦闘セクションに移動したとき、<br>またはリージョンをまたいで<br>別のセクションに移動したときに、<br>フォトンブラストゲージが<br>一定量蓄積した状態になる。
 SubStyleSkillExplanation,0,KetosBlastEchoTriggerReload,ブラストエコーを発動したとき、<br>またはその段階が最大になったとき、<br>追加攻撃を１つストックする。<br>次に攻撃を当てたとき、<br>ストックした追加攻撃を行う。<br>さらにフォトンブラストゲージを蓄積し、<br>フォトンブラストの再使用が<br>可能になるまでの時間も短縮する。
-SubStyleSkillExplanation,1,HelixFirstStrike,"A certain amount of the Photon Blast Gauge will be filled when a quest begins, when moving from a base to an Exploration or Combat Sector, or when moving to a sector in another region."
+SubStyleSkillExplanation,1,HelixFirstStrike,"Una cierta cantidad del medidor de explosión de fotones se llenará cuando comience una misión, cuando se pase de una base a un sector de exploración o combate, o cuando se pase a un sector en otra región."
 SubStyleSkillExplanation,1,HelixBlastEchoTriggerReload,"Cuando Blast Echo es activado, o cuando llega a su etapa máxima, ganas 1 carga extra. La próxima vez que aciertes con un ataque, la carga extra almacenada se aplica. Esta llena la barra de Photon Blast y reduce su cooldown."
 SubStyleSkillExplanation,1,AjaxFirstStrike,"Cierta cantidad de Barra de Photon Blast será llenada al iniciar la misión, al moverse de la base a un Sector de Exploración o Combate, o al moverse a un sector en otra región."
 SubStyleSkillExplanation,1,AjaxBlastEchoTriggerReload,"Cuando Blast Echo es activado, o cuando llega a su etapa máxima, ganas 1 carga extra. La próxima vez que aciertes con un ataque, la carga extra almacenada se aplica. Esta llena la barra de Photon Blast y reduce su cooldown."
@@ -19662,9 +19662,9 @@ SubStyleSkillName,0,AjaxFirstStrike,ファーストストライク
 SubStyleSkillName,0,AjaxBlastEchoTriggerReload,ブラストエコー<br>クイックトリガー
 SubStyleSkillName,0,KetosFirstStrike,ファーストストライク
 SubStyleSkillName,0,KetosBlastEchoTriggerReload,ブラストエコー<br>クイックトリガー
-SubStyleSkillName,1,HelixFirstStrike,First Strike
+SubStyleSkillName,1,HelixFirstStrike,Primer ataque
 SubStyleSkillName,1,HelixBlastEchoTriggerReload,Blast Echo<br>Quick Trigger
-SubStyleSkillName,1,AjaxFirstStrike,First Strike
+SubStyleSkillName,1,AjaxFirstStrike,Primer ataque
 SubStyleSkillName,1,AjaxBlastEchoTriggerReload,Blast Echo<br>Quick Trigger
-SubStyleSkillName,1,KetosFirstStrike,First Strike
+SubStyleSkillName,1,KetosFirstStrike,Primer ataque
 SubStyleSkillName,1,KetosBlastEchoTriggerReload,Blast Echo<br>Quick Trigger
