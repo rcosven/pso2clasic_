@@ -465,18 +465,19 @@
             <input type="checkbox" id="deepSearch">
             <span>Búsqueda avanzada</span>
         </label>
-        <label class="deep-toggle" title="Group 1 con cualquier carácter basura: 琀 吀 漀 氀 夀 㰀…">
+        <label class="deep-toggle" title="Lista líneas y archivos nuevos del update (Classic + NGS)">
             <input type="checkbox" id="corruptSearch">
-            <span>Líneas raras</span>
+            <span>Líneas nuevas</span>
         </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
         </span>
         <span class="deep-hint" id="corruptHint" style="display: none;">
-            <strong>Solo group 1</strong> si contiene <em>cualquier</em> carácter basura:
-            <code>琀</code> <code>吀</code> <code>漀</code> <code>氀</code> <code>夀</code> <code>㰀</code>…
-            (no hace falta pegar una frase). Ignora japonés group 0.
+            <strong>Líneas y archivos del update</strong> (listas en
+            <code>data/lineas_nuevas/</code>). No hace falta escribir:
+            se listan solas. Puedes filtrar por nombre de archivo, id o texto.
+            Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
         </span>
     </div>
 
@@ -518,7 +519,7 @@
 
         function updatePlaceholders() {
             if (corruptSearch.checked) {
-                searchInput.placeholder = 'No hace falta escribir — lista todas las líneas raras';
+                searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
                 searchInput.disabled = false; // filtro opcional por archivo/id
                 corruptHint.style.display = 'block';
                 deepHint.style.display = 'none';
@@ -538,10 +539,10 @@
         function scheduleSearch(resetPage = true) {
             clearTimeout(debounceTimer);
             const query = searchInput.value.trim();
-            const rareMode = corruptSearch.checked;
+            const newMode = corruptSearch.checked;
 
-            // Líneas raras: no requiere texto (lista todo al activar)
-            if (!rareMode && query.length < 3) {
+            // Líneas nuevas: no requiere texto (lista todo al activar)
+            if (!newMode && query.length < 3) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -553,7 +554,7 @@
 
             debounceTimer = setTimeout(() => {
                 performSearch(query, currentPage);
-            }, rareMode && !query ? 100 : 500);
+            }, newMode && !query ? 100 : 500);
         }
 
         scopeButtons.forEach(btn => {
@@ -574,8 +575,7 @@
         corruptSearch.addEventListener('change', () => {
             if (corruptSearch.checked) {
                 deepSearch.checked = false;
-                // Al activar: limpiar la caja y listar SOLO basura group 1
-                // (no hace falta pegar 夀漀甀… a mano)
+                // Al activar: limpiar la caja y listar líneas/archivos nuevos del update
                 searchInput.value = '';
             }
             updatePlaceholders();
@@ -591,7 +591,7 @@
             resultsList.innerHTML = '';
 
             const deep = deepSearch.checked ? '1' : '0';
-            const corrupt = corruptSearch.checked ? '1' : '0';
+            const nuevas = corruptSearch.checked ? '1' : '0';
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -600,7 +600,8 @@
                 const params = new URLSearchParams({
                     q: query,
                     deep,
-                    corrupt,
+                    new: nuevas,
+                    nuevas,
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -711,21 +712,21 @@
 
             resultsContainer.style.display = 'flex';
 
-            const rareMode = !!(data.rare || data.corrupt);
+            const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
 
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
-                const tip = rareMode
-                    ? "No hay group 1 con caracteres basura (琀 吀 漀 氀 夀 㰀…) en este ámbito."
+                const tip = newMode
+                    ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Líneas raras</strong> (group 1 con 琀/吀/漀…) o <strong>Búsqueda avanzada</strong>.";
+                    : "Activa <strong>Líneas nuevas</strong> (update) o <strong>Búsqueda avanzada</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
             }
 
-            const modeLabel = rareMode ? " · líneas raras" : (deep ? " · avanzada" : "");
+            const modeLabel = newMode ? " · líneas nuevas" : (deep ? " · avanzada" : "");
             const scopeLabel = {
                 all: " · Ambos",
                 classic: " · Classic",
@@ -739,7 +740,6 @@
 
             items.forEach(item => {
                 // Pasar section + group para que el editor abra la línea exacta
-                // (antes solo iba el id → panel vacío o línea incorrecta, sobre todo en group 0 / raras)
                 const qs = new URLSearchParams({
                     file: item.file || '',
                     id: item.id || '',
@@ -757,13 +757,10 @@
                 const displayTxt = escapeHtml(
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
                 );
-                const fixedTxt = item.text_fixed
-                    ? escapeHtml(String(item.text_fixed).replace(/<br>/gi, "\n"))
-                    : '';
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || rareMode || (item.match && item.match !== 'text');
-                const matchBadge = rareMode
-                    ? `<span class="result-match-badge">UTF-16 group 1</span>`
+                const showCmd = deep || newMode || (item.match && item.match !== 'text');
+                const matchBadge = newMode
+                    ? `<span class="result-match-badge">update · nueva</span>`
                     : (item.match && item.match !== 'text')
                     ? `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`
                     : '';
@@ -772,11 +769,7 @@
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
 
-                // En modo raras: mostrar texto tal cual (para editar a mano); si hay preview reparado, como ayuda
-                const bodyHtml = (rareMode && fixedTxt)
-                    ? `<div class="result-fixed"><div class="result-fixed-label">Vista legible (solo ayuda — edita a mano)</div>${fixedTxt}</div>
-                       <div class="result-corrupt-raw">${displayTxt}</div>`
-                    : `<div class="result-text">${displayTxt}</div>`;
+                const bodyHtml = `<div class="result-text">${displayTxt}</div>`;
 
                 a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(item.file)}</div>
