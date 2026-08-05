@@ -1055,28 +1055,26 @@ async def web_api_search(request):
         ranked_keys.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
 
         for corpus, stem, section, row_id, tkey, main_it, raw_it in ranked_keys:
-            for layer, item in (("main", main_it), ("raw", raw_it)):
-                fpath = (item.get("file") or "").replace("\\", "/")
-                # Editor: main → path editable; raw → path raw real
-                open_file = fpath if layer == "raw" else fpath.replace("_Raw", "")
-                coincidencias.append({
-                    "file": open_file,
-                    "id": item.get("id", ""),
-                    "section": item.get("section", ""),
-                    "group": item.get("group", ""),
-                    "text": item.get("text", ""),
-                    "cmd": item.get("cmd", ""),
-                    "match": "equal",
-                    "corpus": corpus,
-                    "layer": layer,
-                    "exact": True,
-                    "main_raw": True,
-                    "min_chars": equal_min_chars,
-                    "text_len": len(tkey),
-                    "pair_stem": stem,
-                })
-                if len(coincidencias) >= MAX_MATCHES:
-                    break
+            # Solo se muestra/abre MAIN. RAW es solo referencia de comparación.
+            item = main_it
+            fpath = (item.get("file") or "").replace("\\", "/")
+            open_file = fpath.replace("_Raw", "")  # nunca abrir raw
+            coincidencias.append({
+                "file": open_file,
+                "id": item.get("id", ""),
+                "section": item.get("section", ""),
+                "group": item.get("group", ""),
+                "text": item.get("text", ""),
+                "cmd": item.get("cmd", ""),
+                "match": "equal",
+                "corpus": corpus,
+                "layer": "main",
+                "exact": True,
+                "main_raw": True,
+                "min_chars": equal_min_chars,
+                "text_len": len(tkey),
+                "pair_stem": stem,
+            })
             if len(coincidencias) >= MAX_MATCHES:
                 break
 
@@ -1086,8 +1084,6 @@ async def web_api_search(request):
             page = total_pages
         start = (page - 1) * per_page
         page_items = coincidencias[start : start + per_page]
-        # half pairs for display
-        pair_count = total // 2
         return web.json_response({
             "items": page_items,
             "deep": False,
@@ -1101,7 +1097,7 @@ async def web_api_search(request):
             "main_raw": True,
             "chars": equal_min_chars,
             "min_chars": equal_min_chars,
-            "pair_count": pair_count,
+            "pair_count": total,
             "rare": False,
             "corrupt": False,
             "scope": scope,
@@ -1238,8 +1234,8 @@ async def web_api_search(request):
         if not matched:
             continue
 
-        # Calcular el archivo editable real (quitar _Raw)
-        editable_file = item["file"].replace("_Raw", "")
+        # Siempre MAIN editable: raw solo se usa para comparar, nunca se abre
+        editable_file = (item.get("file") or "").replace("\\", "/").replace("_Raw", "")
         # Clave única: section+id+group (mismo id puede existir en varias sections)
         clave_unica = f"{editable_file}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
 
