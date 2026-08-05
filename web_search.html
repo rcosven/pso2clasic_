@@ -503,13 +503,9 @@
             <input type="checkbox" id="corruptSearch">
             <span>Líneas nuevas</span>
         </label>
-        <label class="deep-toggle" title="Group 1: textos iguales por prefijo de N caracteres (main + raw)">
+        <label class="deep-toggle" title="Group 1: solo textos 100% idénticos (main + raw). Un carácter distinto = no coincide.">
             <input type="checkbox" id="equalSearch">
             <span>Líneas iguales</span>
-        </label>
-        <label class="deep-toggle chars-toggle" id="charsToggle" style="display: none;" title="Cuántos caracteres deben coincidir al inicio de la frase">
-            <span>Chars =</span>
-            <input type="number" id="equalChars" min="5" max="120" value="15" step="1">
         </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
@@ -528,12 +524,12 @@
             Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
         </span>
         <span class="deep-hint" id="equalHint" style="display: none;">
-            Solo <strong>group 1</strong>, en <strong>main y raw</strong>.
-            Pega una frase o una línea CSV
-            (<code>SubObjectives,1,text0106,Defeat enemies in the…</code>)
-            y ajusta <strong>Chars</strong> (5, 6, 7…): se buscan textos que empiecen
-            por esos N caracteres. Sin texto: lista prefijos repetidos en varios archivos
-            (útil para inglés sin traducir).
+            Solo <strong>group 1</strong>. Compara el <strong>texto completo</strong>:
+            debe ser <em>idéntico</em> carácter a carácter (si cambia uno, no aparece).
+            Main + Raw. Pega la frase o la línea CSV
+            (<code>SubObjectives,1,text0106,Defeat enemies in the Nameless City…</code>).
+            Sin texto: lista frases que se repiten iguales en varios archivos
+            (inglés duplicado sin traducir).
         </span>
     </div>
 
@@ -563,8 +559,6 @@
         const corruptHint = document.getElementById('corruptHint');
         const equalSearch = document.getElementById('equalSearch');
         const equalHint = document.getElementById('equalHint');
-        const equalChars = document.getElementById('equalChars');
-        const charsToggle = document.getElementById('charsToggle');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -596,16 +590,14 @@
             fileHint.style.display = 'none';
             corruptHint.style.display = 'none';
             equalHint.style.display = 'none';
-            charsToggle.style.display = 'none';
             searchInput.disabled = false;
 
             if (corruptSearch.checked) {
                 searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
                 corruptHint.style.display = 'block';
             } else if (equalSearch.checked) {
-                searchInput.placeholder = 'Ej: Defeat enemies in the…  o  SubObjectives,1,text0106,Defeat…';
+                searchInput.placeholder = 'Pega la frase completa idéntica (o la línea CSV con el texto)';
                 equalHint.style.display = 'block';
-                charsToggle.style.display = 'inline-flex';
             } else if (fileSearch.checked) {
                 searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
                 fileHint.style.display = 'block';
@@ -678,17 +670,6 @@
             scheduleSearch(true);
         });
 
-        equalChars.addEventListener('change', () => {
-            let n = parseInt(equalChars.value, 10);
-            if (Number.isNaN(n)) n = 15;
-            n = Math.max(5, Math.min(120, n));
-            equalChars.value = String(n);
-            if (equalSearch.checked) scheduleSearch(true);
-        });
-        equalChars.addEventListener('input', () => {
-            if (equalSearch.checked) scheduleSearch(true);
-        });
-
         searchInput.addEventListener('input', () => scheduleSearch(true));
 
         async function performSearch(query, page = 1) {
@@ -701,9 +682,6 @@
             const byfile = fileSearch.checked ? '1' : '0';
             const nuevas = corruptSearch.checked ? '1' : '0';
             const iguales = equalSearch.checked ? '1' : '0';
-            let chars = parseInt(equalChars.value, 10);
-            if (Number.isNaN(chars)) chars = 15;
-            chars = Math.max(5, Math.min(120, chars));
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -718,7 +696,6 @@
                     nuevas,
                     equal: iguales,
                     iguales,
-                    chars: String(chars),
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -848,7 +825,7 @@
                 const tip = newMode
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
                     : equalMode
-                    ? "No hay líneas group&nbsp;1 con ese prefijo. Sube/baja <strong>Chars</strong> o pega otra frase."
+                    ? "No hay otra línea group&nbsp;1 con ese <strong>texto idéntico</strong>. Debe coincidir la frase entera."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
@@ -859,11 +836,10 @@
                 return;
             }
 
-            const charsLabel = equalMode && data.chars ? ` · chars=${data.chars}` : '';
             const modeLabel = newMode
                 ? " · líneas nuevas"
                 : equalMode
-                ? ` · líneas iguales${charsLabel}`
+                ? " · líneas iguales (idénticas)"
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
@@ -874,10 +850,7 @@
             }[data.scope || currentScope] || "";
             const from = (page - 1) * perPage + 1;
             const to = Math.min(page * perPage, total);
-            const prefixNote = equalMode && data.prefix
-                ? ` · prefijo «${String(data.prefix).slice(0, 40)}${String(data.prefix).length > 40 ? '…' : ''}»`
-                : '';
-            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel}${prefixNote} · mostrando ${from}–${to}`;
+            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
 
@@ -907,8 +880,8 @@
                 if (newMode) {
                     matchBadge = `<span class="result-match-badge">update · nueva</span>`;
                 } else if (equalMode || item.match === 'equal') {
-                    const df = item.dup_files != null ? ` · ${item.dup_files} archivos` : '';
-                    matchBadge = `<span class="result-match-badge">igual g1${df}</span>`;
+                    const df = item.dup_files != null ? ` · ${item.dup_files} arch.` : '';
+                    matchBadge = `<span class="result-match-badge">idéntica g1${df}</span>`;
                 } else if (fileMode || item.match === 'file') {
                     matchBadge = `<span class="result-match-badge">archivo</span>`;
                 } else if (item.match && item.match !== 'text') {

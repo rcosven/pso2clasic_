@@ -829,15 +829,14 @@ def _item_corpus(file_path: str) -> str:
     return "other"
 
 
-def _norm_equal_text(s: str) -> str:
-    """Normaliza texto para igualdad de frases (group 1)."""
+def _exact_line_key(s: str) -> str:
+    """
+    Clave de igualdad EXACTA de la línea de texto.
+    Solo normaliza finales de línea; un carácter distinto → otra clave.
+    """
     if not s:
         return ""
-    # Quitar tags simples tipo <br> para no romper prefijos
-    t = s.replace("<br>", " ").replace("<BR>", " ").replace("<br/>", " ").replace("<br />", " ")
-    t = BuscadorBot._norm_search(t)
-    # Colapsar espacios
-    return " ".join(t.split())
+    return s.replace("\r\n", "\n").replace("\r", "\n").strip()
 
 
 def _seed_phrase_from_query(q: str) -> str:
@@ -912,7 +911,7 @@ async def web_api_search(request):
     ).strip().lower()
     file_only = file_raw in ("1", "true", "yes", "on")
 
-    # equal=1 / iguales=1 / same=1 → líneas iguales group 1 por prefijo de N caracteres
+    # equal=1 / iguales=1 / same=1 → líneas group 1 con texto EXACTAMENTE idéntico
     equal_raw = (
         request.query.get("equal")
         or request.query.get("iguales")
@@ -921,11 +920,6 @@ async def web_api_search(request):
         or ""
     ).strip().lower()
     equal_only = equal_raw in ("1", "true", "yes", "on")
-    try:
-        equal_chars = int(request.query.get("chars") or request.query.get("n") or "15")
-    except ValueError:
-        equal_chars = 15
-    equal_chars = max(5, min(120, equal_chars))
 
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
@@ -959,7 +953,6 @@ async def web_api_search(request):
         "byfile": file_only,
         "equal": equal_only,
         "iguales": equal_only,
-        "chars": equal_chars,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -970,28 +963,23 @@ async def web_api_search(request):
         "capped": False,
     }
     # En modo líneas nuevas se permite query vacía (lista todo sin escribir nada)
-    # Líneas iguales: query opcional (sin query = escanear duplicados por prefijo)
+    # Líneas iguales: query opcional (sin query = textos idénticos repetidos 2+ veces)
     # Por archivo: mínimo 2 caracteres (ej. "cl" / "ms")
     min_q = 2 if file_only else 3
     if not new_only and not equal_only and len(query) < min_q:
         return web.json_response(empty)
 
-    # ─── Modo líneas iguales (group 1, main + raw) ───────────────────────
+    # ─── Modo líneas iguales (group 1, main + raw) — SOLO texto idéntico ─
     if equal_only:
-        seed_raw = _seed_phrase_from_query(query)
-        seed_norm = _norm_equal_text(seed_raw)
-        # Prefijo de N caracteres (o la frase entera si es más corta)
-        if seed_norm:
-            prefix = seed_norm[:equal_chars] if len(seed_norm) >= equal_chars else seed_norm
-            if len(prefix) < 5:
-                empty["error"] = "La frase / prefijo debe tener al menos 5 caracteres útiles."
-                return web.json_response(empty)
-        else:
-            prefix = None  # escanear duplicados globales
-
-        # Agrupar por prefijo de N chars
         from collections import defaultdict
 
+        seed_raw = _seed_phrase_from_query(query)
+        seed_key = _exact_line_key(seed_raw) if seed_raw else None
+        if seed_key is not None and not seed_key:
+            empty["error"] = "La frase de búsqueda está vacía."
+            return web.json_response(empty)
+
+        # Agrupar SOLO por texto completo idéntico (clave exacta)
         buckets: dict[str, list] = defaultdict(list)
         for item in bot.index_datos:
             if str(item.get("group", "") or "").strip() != "1":
@@ -1007,43 +995,36 @@ async def web_api_search(request):
                 continue
 
             text = item.get("text") or ""
-            tnorm = _norm_equal_text(text)
-            if len(tnorm) < equal_chars and not (prefix and tnorm.startswith(prefix) and len(tnorm) >= 5):
-                # Sin query: exigir al menos N chars; con query: permitir frases cortas si empiezan igual
-                if not prefix or not tnorm.startswith(prefix):
-                    continue
-            if len(tnorm) < 5:
-                continue
+            key = _exact_line_key(text)
+            if not key:
+                continue  # vacío no cuenta
 
-            pfx = tnorm[:equal_chars] if len(tnorm) >= equal_chars else tnorm
-            if prefix is not None:
-                # Con frase: el texto debe empezar por el prefijo elegido
-                if not tnorm.startswith(prefix):
+            if seed_key is not None:
+                # Con frase: solo la línea cuyo texto es EXACTAMENTE esa frase
+                if key != seed_key:
                     continue
-                pfx = prefix
-
-            buckets[pfx].append(item)
+            buckets[key].append(item)
 
         coincidencias = []
         ids_vistos = set()
-        # Orden: prefijos con más archivos distintos primero
         ranked = []
-        for pfx, items in buckets.items():
-            files = { (it.get("file") or "").replace("\\", "/") for it in items }
-            layers = { _file_layer(f) for f in files }
-            # Con query: devolver todo lo que matchea (aunque sea 1)
-            # Sin query: solo grupos con 2+ líneas O main+raw O 2+ archivos
-            if prefix is None:
-                if len(items) < 2 and len(files) < 2:
+        for key, items in buckets.items():
+            files = {(it.get("file") or "").replace("\\", "/") for it in items}
+            layers = {_file_layer(f) for f in files}
+            # Con query: devolver todas las copias idénticas (1+ en main/raw)
+            # Sin query: solo textos que se repiten (2+ líneas o main+raw o 2+ archivos)
+            if seed_key is None:
+                if len(items) < 2:
                     continue
-                if len(files) < 2 and not ({"main", "raw"} <= layers) and len(items) < 2:
-                    continue
-            ranked.append((len(files), len(items), pfx, items))
+                if len(files) < 2 and not ({"main", "raw"} <= layers):
+                    # misma línea duplicada en un solo archivo: aún es "igual" si hay 2+ filas
+                    if len(items) < 2:
+                        continue
+            ranked.append((len(files), len(items), key, items))
 
-        ranked.sort(key=lambda x: (-x[0], -x[1], x[2]))
+        ranked.sort(key=lambda x: (-x[0], -x[1], x[2][:80]))
 
-        for n_files, n_items, pfx, items in ranked:
-            # Ordenar: main antes que raw, luego por archivo
+        for n_files, n_items, key, items in ranked:
             def sort_key(it):
                 f = (it.get("file") or "").replace("\\", "/")
                 layer = 0 if _file_layer(f) == "main" else 1
@@ -1068,8 +1049,7 @@ async def web_api_search(request):
                     "match": "equal",
                     "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
                     "layer": layer,
-                    "prefix": pfx,
-                    "equal_chars": equal_chars,
+                    "exact": True,
                     "dup_files": n_files,
                     "dup_lines": n_items,
                 })
@@ -1093,8 +1073,7 @@ async def web_api_search(request):
             "byfile": False,
             "equal": True,
             "iguales": True,
-            "chars": equal_chars,
-            "prefix": prefix,
+            "exact": True,
             "rare": False,
             "corrupt": False,
             "scope": scope,
