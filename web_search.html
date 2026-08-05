@@ -528,10 +528,10 @@
             Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
         </span>
         <span class="deep-hint" id="equalHint" style="display: none;">
-            Solo <strong>group 1</strong>. El texto debe ser <em>idéntico entero</em>
-            (un carácter distinto = no sale). <strong>Mín. chars</strong> filtra basura corta
-            (<code>??</code>, <code>-</code>, <code>manon</code>, <code>aina</code>…):
-            prueba 20, 30, 40… Main + Raw. Sin texto en la caja = escanea duplicados largos.
+            Compara <strong>main vs raw del mismo archivo</strong> (mismo section/id, group&nbsp;1).
+            Solo sale si el <em>texto es idéntico</em> en ambos (inglés sin traducir).
+            Un carácter distinto = no aparece. <strong>Mín. chars</strong> filtra basura corta
+            (<code>??</code>, nombres cortos…). Deja la caja vacía para listar todos los pares MAIN=RAW.
         </span>
     </div>
 
@@ -847,7 +847,7 @@
                 const tip = newMode
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
                     : equalMode
-                    ? "No hay líneas group&nbsp;1 <strong>idénticas</strong> con esa longitud mínima. Sube/baja <strong>Mín. chars</strong> (ej. 20, 30, 40)."
+                    ? "No hay pares MAIN=RAW con texto idéntico (group&nbsp;1) y esa longitud mínima. Baja <strong>Mín. chars</strong> o vacía el buscador para listar todos."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
@@ -861,10 +861,13 @@
             const minCharsLabel = equalMode && (data.min_chars || data.chars)
                 ? ` · mín≥${data.min_chars || data.chars}`
                 : '';
+            const pairLabel = equalMode && data.pair_count != null
+                ? ` · ${data.pair_count} pares main=raw`
+                : '';
             const modeLabel = newMode
                 ? " · líneas nuevas"
                 : equalMode
-                ? ` · iguales idénticas${minCharsLabel}`
+                ? ` · main=raw idénticas${minCharsLabel}${pairLabel}`
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
@@ -905,8 +908,7 @@
                 if (newMode) {
                     matchBadge = `<span class="result-match-badge">update · nueva</span>`;
                 } else if (equalMode || item.match === 'equal') {
-                    const df = item.dup_files != null ? ` · ${item.dup_files} arch.` : '';
-                    matchBadge = `<span class="result-match-badge">idéntica g1${df}</span>`;
+                    matchBadge = `<span class="result-match-badge">main=raw g1</span>`;
                 } else if (fileMode || item.match === 'file') {
                     matchBadge = `<span class="result-match-badge">archivo</span>`;
                 } else if (item.match && item.match !== 'text') {
