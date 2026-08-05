@@ -1091,6 +1091,11 @@ Common,1,ColorCopy_Menu02,Apply copied color
 Common,1,ColorCopy_Notice01,Color copied.
 Common,1,ColorCopy_Notice02,Copied color applied.
 Common,1,ColorCopy_Notice03,Failed to apply color.
+Common,1,ExpressionCopy_Menu01,Copy expression
+Common,1,ExpressionCopy_Menu02,Apply copied expression
+Common,1,ExpressionCopy_Notice01,Expression copied.
+Common,1,ExpressionCopy_Notice02,Copied expression applied.
+Common,1,ExpressionCopy_Notice03,Failed to apply expression.
 Common,0,Label_Next,決定
 Common,0,Label_Back,戻る
 Common,0,Label_EditCheck,編集内容確認
@@ -1156,6 +1161,11 @@ Common,0,ColorCopy_Menu02,コピーしたカラーを反映する
 Common,0,ColorCopy_Notice01,カラーをコピーしました。
 Common,0,ColorCopy_Notice02,コピーしたカラーを反映しました。
 Common,0,ColorCopy_Notice03,カラーの反映に失敗しました。
+Common,0,ExpressionCopy_Menu01,表情をコピーする
+Common,0,ExpressionCopy_Menu02,コピーした表情を反映する
+Common,0,ExpressionCopy_Notice01,表情をコピーしました。
+Common,0,ExpressionCopy_Notice02,コピーした表情を反映しました。
+Common,0,ExpressionCopy_Notice03,表情の反映に失敗しました。
 FacialExpressionList,1,Key_Reset,Reset
 FacialExpressionList,1,Key_Normal,Normal
 FacialExpressionList,1,Key_Smile,Smile
@@ -1626,11 +1636,13 @@ SkipCheck,1,ScenarioSelectText_1_5,Begin from Chapter 5
 SkipCheck,1,ScenarioSelectText_1_6,Begin from Chapter 6
 SkipCheck,1,ScenarioSelectText_1_7,Begin from Chapter 7
 SkipCheck,1,ScenarioSelectText_1_8,Begin from Chapter 8
+SkipCheck,1,ScenarioSelectText_1_9,Begin from Chapter 9
 SkipCheck,1,ScenarioSelectConfirmText_1_4,"Begin from <yellow>Chapter 4 of the Main Story<c>? <br><br>If you have already completed Chapter 3 of the Main Story <br>(The Kvaris Region Main Story) with a different character,<br>you can start the game from <yellow>Main Task ""A New Battle Begins""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. <br>After skipping, you will start at a higher level.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_5,"Begin from <yellow>Chapter 5 of the Main Story<c>? <br><br>If you have already completed Chapter 4 of the Main Story <br>(The Stia Region Main Story) with a different character,<br>you can start the game from <yellow>Main Task ""Before the Final Battle""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. <br>After skipping, you will start at a higher level.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_6,"Begin from <yellow>Chapter 6 of the Main Story<c>? <br><br>If you have already completed Chapter 5 of the Main Story (The Floating Island Leciel Main Story) with a different character, you can start the game from <yellow>Main Task ""An Artificial World""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_7,"Begin from <yellow>Chapter 7 of the Main Story<c>?<br><br>If you have already completed Chapter 6 of the Main Story with a different character, you can start the game from <yellow>Main Task ""An Urgent Message From Ilma""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<c>"
-SkipCheck,1,ScenarioSelectConfirmText_1_8,"Begin from <yellow>Chapter 8 of the Main Story<c>?<br><br>If you have already completed Chapter 7 of the Main Story with a different character, you can start the game from <yellow>Main Task ""A Mysterious Realm""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<c>"
+SkipCheck,1,ScenarioSelectConfirmText_1_8,"Begin from <yellow>Chapter 8 of the Main Story<c>?<br><br>If you have already completed Chapter 7 of the Main Story with a different character, you can start the game from <yellow>Main Task ""A Mysterious Realm""<c>.<br><br><yellow>Note: With the exception of certain items, you will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<c>"
+SkipCheck,1,ScenarioSelectConfirmText_1_9,"Begin from <yellow>Chapter 9 of the Main Story<c>?<br><br>If you have already completed Chapter 8 of the Main Story with a different character, you can start the game from <yellow>Main Task ""Alter Realm Mission Report""<c>.<br><br><yellow>Note: With the exception of certain items, you will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_4_Playgo,"Begin from <yellow>Chapter 4 of the Main Story<c>? <br><br>If you have already completed Chapter 3 of the Main Story <br>(The Kvaris Region Main Story) with a different character,<br>you can start the game from <yellow>Main Task ""A New Battle Begins""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. <br>After skipping, you will start at a higher level.<br>Note: You will return to the Title Screen if the download hasn't been completed.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_5_Playgo,"Begin from <yellow>Chapter 5 of the Main Story<c>? <br><br>If you have already completed Chapter 4 of the Main Story <br>(The Stia Region Main Story) with a different character,<br>you can start the game from <yellow>Main Task ""Before the Final Battle""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. <br>After skipping, you will start at a higher level.<br>Note: You will be returned to the title screen if the download hasn't been<br>completed.<c>"
 SkipCheck,1,ScenarioSelectConfirmText_1_6_Playgo,"Begin from <yellow>Chapter 6 of the Main Story<c>? <br><br>If you have already completed Chapter 5 of the Main Story (The Floating Island Leciel Main Story) with a different character, you can start the game from <yellow>Main Task ""An Artificial World""<c>.<br><br><yellow>Note: You will not receive rewards for any skipped tasks. After skipping, you will start at a higher level.<br>Note: You will be returned to the title screen if the download hasn't been completed.<c>"
@@ -1665,11 +1677,13 @@ SkipCheck,0,ScenarioSelectText_1_5,５章から開始
 SkipCheck,0,ScenarioSelectText_1_6,６章から開始
 SkipCheck,0,ScenarioSelectText_1_7,７章から開始
 SkipCheck,0,ScenarioSelectText_1_8,８章から開始
+SkipCheck,0,ScenarioSelectText_1_9,９章から開始
 SkipCheck,0,ScenarioSelectConfirmText_1_4,<yellow>メインストーリー“4章”<c>から開始しますか？<br><br>メインストーリー“3章”<br>（クヴァリスリージョンのメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“新たな戦いの始まり”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_5,<yellow>メインストーリー“5章”<c>から開始しますか？<br><br>メインストーリー“4章”<br>（スティアリージョンのメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“決戦の前に”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_6,<yellow>メインストーリー“6章”<c>から開始しますか？<br><br>メインストーリー“5章”<br>（浮島“ルシエル”を舞台にしたメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“つくられたセカイ”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_7,<yellow>メインストーリー“7章”<c>から開始しますか？<br><br>メインストーリー“6章”を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“イルマからの緊急連絡”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
-SkipCheck,0,ScenarioSelectConfirmText_1_8,<yellow>メインストーリー“8章”<c>から開始しますか？<br><br>メインストーリー“7章”を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“謎の領域”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
+SkipCheck,0,ScenarioSelectConfirmText_1_8,<yellow>メインストーリー“8章”<c>から開始しますか？<br><br>メインストーリー“7章”を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“謎の領域”<c>から<br>ゲームを始めることができます。<br><br><yellow>※一部のアイテムを除き、<br>　スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
+SkipCheck,0,ScenarioSelectConfirmText_1_9,<yellow>メインストーリー“9章”<c>から開始しますか？<br><br>メインストーリー“8章”を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“オルタレルムの任務の報告”<c>から<br>ゲームを始めることができます。<br><br><yellow>※一部のアイテムを除き、<br>　スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_4_Playgo,<yellow>メインストーリー“4章”<c>から開始しますか？<br><br>メインストーリー“3章”<br>（クヴァリスリージョンのメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“新たな戦いの始まり”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<br>※ダウンロードが完了していない場合、<br>　タイトル画面に戻ります。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_5_Playgo,<yellow>メインストーリー“5章”<c>から開始しますか？<br><br>メインストーリー“4章”<br>（スティアリージョンのメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“決戦の前に”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<br>※ダウンロードが完了していない場合、<br>　タイトル画面に戻ります。<c>
 SkipCheck,0,ScenarioSelectConfirmText_1_6_Playgo,<yellow>メインストーリー“6章”<c>から開始しますか？<br><br>メインストーリー“5章”<br>（浮島“ルシエル”を舞台にしたメインストーリー）を、<br>他のキャラクターでクリア済みの場合、<br><yellow>メインタスク“つくられたセカイ”<c>から<br>ゲームを始めることができます。<br><br><yellow>※スキップしたタスクの報酬は、獲得できません。<br>　スキップ後、レベルアップした状態で開始されます。<br>※ダウンロードが完了していない場合、<br>　タイトル画面に戻ります。<c>
