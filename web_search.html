@@ -883,8 +883,8 @@
             resultsList.innerHTML = '';
 
             items.forEach(item => {
-                // Editor: main usa path editable; raw se abre por su path real si está en raw
-                const openFile = item.file || '';
+                // Nunca abrir RAW: solo comparar. Siempre path MAIN editable.
+                let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '');
                 const qs = new URLSearchParams({
                     file: openFile,
                     id: item.id || '',
@@ -908,27 +908,22 @@
                 if (newMode) {
                     matchBadge = `<span class="result-match-badge">update · nueva</span>`;
                 } else if (equalMode || item.match === 'equal') {
-                    matchBadge = `<span class="result-match-badge">main=raw g1</span>`;
+                    matchBadge = `<span class="result-match-badge">main=raw · editar MAIN</span>`;
                 } else if (fileMode || item.match === 'file') {
                     matchBadge = `<span class="result-match-badge">archivo</span>`;
                 } else if (item.match && item.match !== 'text') {
                     matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
                 }
-                const corpus = item.corpus || (String(item.file).toLowerCase().includes('ng') ? 'ng' : 'classic');
+                const corpus = item.corpus || (String(openFile).toLowerCase().includes('ng') ? 'ng' : 'classic');
                 const corpusBadge = corpus === 'ng'
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
-                const layer = item.layer || (String(item.file || '').includes('_Raw') ? 'raw' : 'main');
-                const layerBadge = equalMode
-                    ? `<span class="result-layer-badge ${layer === 'raw' ? 'raw' : 'main'}">${layer === 'raw' ? 'RAW' : 'MAIN'}</span>`
-                    : '';
 
                 const bodyHtml = `<div class="result-text">${displayTxt}</div>`;
 
                 a.innerHTML = `
-                    <div class="result-file">📁 ${escapeHtml(item.file)}</div>
+                    <div class="result-file">📁 ${escapeHtml(openFile)}</div>
                     ${corpusBadge}
-                    ${layerBadge}
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(String(item.group ?? ''))} · id: ${escapeHtml(item.id)}</div>
