@@ -983,27 +983,27 @@ async def web_api_search(request):
     if not new_only and not equal_only and len(query) < min_q:
         return web.json_response(empty)
 
-    # ─── Modo líneas iguales (group 1, main + raw) — SOLO texto idéntico ─
+    # ─── Modo líneas iguales (group 1): MAIN vs RAW del MISMO archivo/clave ─
+    # Empareja Csv_Ngs/foo.csv ↔ Csv_Ngs_Raw/foo.csv (y Classic igual).
+    # Solo sale si el text de group 1 es EXACTAMENTE idéntico en ambos.
+    # Mín. chars filtra basura corta; no es match parcial.
     if equal_only:
-        from collections import defaultdict
-
         seed_raw = _seed_phrase_from_query(query)
         seed_key = _exact_line_key(seed_raw) if seed_raw else None
         if seed_key is not None and not seed_key:
             empty["error"] = "La frase de búsqueda está vacía."
             return web.json_response(empty)
-        # Con frase: también debe cumplir longitud mínima (evita basura corta)
         if seed_key is not None and len(seed_key) < equal_min_chars:
             empty["error"] = (
                 f"La frase tiene {len(seed_key)} caracteres; "
-                f"mínimo configurado = {equal_min_chars}. Baja Chars o usa una frase más larga."
+                f"mínimo configurado = {equal_min_chars}. Baja «Mín. chars» o usa una frase más larga."
             )
             empty["chars"] = equal_min_chars
             empty["min_chars"] = equal_min_chars
             return web.json_response(empty)
 
-        # Agrupar SOLO por texto completo idéntico (clave exacta)
-        buckets: dict[str, list] = defaultdict(list)
+        # key = (corpus, stem, section, id) → { "main": item, "raw": item }
+        pairs: dict[tuple, dict] = {}
         for item in bot.index_datos:
             if str(item.get("group", "") or "").strip() != "1":
                 continue
@@ -1012,73 +1012,68 @@ async def web_api_search(request):
                 continue
             if scope == "ng" and corpus != "ng":
                 continue
+            if corpus not in ("classic", "ng"):
+                continue
+
             fpath = (item.get("file") or "").replace("\\", "/")
             layer = _file_layer(fpath)
-            if layer == "other":
+            if layer not in ("main", "raw"):
                 continue
 
+            stem = Path(fpath).name  # common.csv
+            section = (item.get("section") or "").strip()
+            row_id = (item.get("id") or "").strip()
             text = item.get("text") or ""
-            key = _exact_line_key(text)
-            if not key:
-                continue  # vacío no cuenta
-            # Filtro de longitud mínima: ignora "??", "-", "...", "manon", "aina", etc.
-            if len(key) < equal_min_chars:
+            tkey = _exact_line_key(text)
+            if not tkey or len(tkey) < equal_min_chars:
                 continue
 
-            if seed_key is not None:
-                # Con frase: solo la línea cuyo texto es EXACTAMENTE esa frase
-                if key != seed_key:
-                    continue
-            buckets[key].append(item)
+            if seed_key is not None and tkey != seed_key:
+                continue
+
+            pk = (corpus, stem, section, row_id)
+            slot = pairs.setdefault(pk, {})
+            # Si hay duplicados en el mismo layer, nos quedamos con el primero
+            if layer not in slot:
+                slot[layer] = item
 
         coincidencias = []
-        ids_vistos = set()
-        ranked = []
-        for key, items in buckets.items():
-            files = {(it.get("file") or "").replace("\\", "/") for it in items}
-            layers = {_file_layer(f) for f in files}
-            # Con query: devolver todas las copias idénticas (1+ en main/raw)
-            # Sin query: solo textos que se repiten (2+ líneas o main+raw o 2+ archivos)
-            if seed_key is None:
-                if len(items) < 2:
-                    continue
-                if len(files) < 2 and not ({"main", "raw"} <= layers):
-                    if len(items) < 2:
-                        continue
-            ranked.append((len(files), len(items), key, items))
+        # Solo pares donde MAIN y RAW existen y el texto es idéntico
+        ranked_keys = []
+        for pk, slot in pairs.items():
+            main_it = slot.get("main")
+            raw_it = slot.get("raw")
+            if not main_it or not raw_it:
+                continue
+            main_t = _exact_line_key(main_it.get("text") or "")
+            raw_t = _exact_line_key(raw_it.get("text") or "")
+            if not main_t or main_t != raw_t:
+                continue  # un carácter distinto → no es "igual"
+            ranked_keys.append((pk[0], pk[1], pk[2], pk[3], main_t, main_it, raw_it))
 
-        ranked.sort(key=lambda x: (-x[0], -x[1], x[2][:80]))
+        # Orden: archivo, section, id
+        ranked_keys.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
 
-        for n_files, n_items, key, items in ranked:
-            def sort_key(it):
-                f = (it.get("file") or "").replace("\\", "/")
-                layer = 0 if _file_layer(f) == "main" else 1
-                return (layer, f, it.get("section", ""), it.get("id", ""))
-
-            for item in sorted(items, key=sort_key):
-                editable_file = item["file"].replace("_Raw", "")
+        for corpus, stem, section, row_id, tkey, main_it, raw_it in ranked_keys:
+            for layer, item in (("main", main_it), ("raw", raw_it)):
                 fpath = (item.get("file") or "").replace("\\", "/")
-                clave = f"{fpath}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
-                if clave in ids_vistos:
-                    continue
-                ids_vistos.add(clave)
-                corpus = _item_corpus(fpath)
-                layer = _file_layer(fpath)
+                # Editor: main → path editable; raw → path raw real
+                open_file = fpath if layer == "raw" else fpath.replace("_Raw", "")
                 coincidencias.append({
-                    "file": editable_file if layer == "main" else fpath,
-                    "id": item["id"],
+                    "file": open_file,
+                    "id": item.get("id", ""),
                     "section": item.get("section", ""),
                     "group": item.get("group", ""),
-                    "text": item["text"],
+                    "text": item.get("text", ""),
                     "cmd": item.get("cmd", ""),
                     "match": "equal",
-                    "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
+                    "corpus": corpus,
                     "layer": layer,
                     "exact": True,
+                    "main_raw": True,
                     "min_chars": equal_min_chars,
-                    "text_len": len(key),
-                    "dup_files": n_files,
-                    "dup_lines": n_items,
+                    "text_len": len(tkey),
+                    "pair_stem": stem,
                 })
                 if len(coincidencias) >= MAX_MATCHES:
                     break
@@ -1091,6 +1086,8 @@ async def web_api_search(request):
             page = total_pages
         start = (page - 1) * per_page
         page_items = coincidencias[start : start + per_page]
+        # half pairs for display
+        pair_count = total // 2
         return web.json_response({
             "items": page_items,
             "deep": False,
@@ -1101,8 +1098,10 @@ async def web_api_search(request):
             "equal": True,
             "iguales": True,
             "exact": True,
+            "main_raw": True,
             "chars": equal_min_chars,
             "min_chars": equal_min_chars,
+            "pair_count": pair_count,
             "rare": False,
             "corrupt": False,
             "scope": scope,
