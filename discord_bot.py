@@ -829,6 +829,45 @@ def _item_corpus(file_path: str) -> str:
     return "other"
 
 
+def _norm_equal_text(s: str) -> str:
+    """Normaliza texto para igualdad de frases (group 1)."""
+    if not s:
+        return ""
+    # Quitar tags simples tipo <br> para no romper prefijos
+    t = s.replace("<br>", " ").replace("<BR>", " ").replace("<br/>", " ").replace("<br />", " ")
+    t = BuscadorBot._norm_search(t)
+    # Colapsar espacios
+    return " ".join(t.split())
+
+
+def _seed_phrase_from_query(q: str) -> str:
+    """
+    Si pegan 'section,group,id,texto' toma el texto;
+    si no, usa la query entera como frase.
+    """
+    if not q:
+        return ""
+    try:
+        rows = list(csv.reader([q]))
+        if rows and len(rows[0]) >= 4:
+            return rows[0][3] or ""
+        if rows and len(rows[0]) == 1:
+            return rows[0][0]
+    except Exception:
+        pass
+    return q
+
+
+def _file_layer(fpath: str) -> str:
+    """main | raw | other — para badges de resultados."""
+    f = (fpath or "").replace("\\", "/")
+    if "_Raw/" in f or f.startswith("Csv_Clasic_Raw/") or f.startswith("Csv_Ngs_Raw/"):
+        return "raw"
+    if f.startswith("Csv_Clasic/") or f.startswith("Csv_Ngs/"):
+        return "main"
+    return "other"
+
+
 async def web_api_search(request):
     bot = request.app["bot"]
     # Mientras cargan ~1.2M filas, no tumbar la web: respuesta clara
@@ -873,6 +912,21 @@ async def web_api_search(request):
     ).strip().lower()
     file_only = file_raw in ("1", "true", "yes", "on")
 
+    # equal=1 / iguales=1 / same=1 → líneas iguales group 1 por prefijo de N caracteres
+    equal_raw = (
+        request.query.get("equal")
+        or request.query.get("iguales")
+        or request.query.get("same")
+        or request.query.get("dup")
+        or ""
+    ).strip().lower()
+    equal_only = equal_raw in ("1", "true", "yes", "on")
+    try:
+        equal_chars = int(request.query.get("chars") or request.query.get("n") or "15")
+    except ValueError:
+        equal_chars = 15
+    equal_chars = max(5, min(120, equal_chars))
+
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
@@ -903,6 +957,9 @@ async def web_api_search(request):
         "nuevas": new_only,
         "file": file_only,
         "byfile": file_only,
+        "equal": equal_only,
+        "iguales": equal_only,
+        "chars": equal_chars,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -913,10 +970,140 @@ async def web_api_search(request):
         "capped": False,
     }
     # En modo líneas nuevas se permite query vacía (lista todo sin escribir nada)
+    # Líneas iguales: query opcional (sin query = escanear duplicados por prefijo)
     # Por archivo: mínimo 2 caracteres (ej. "cl" / "ms")
     min_q = 2 if file_only else 3
-    if not new_only and len(query) < min_q:
+    if not new_only and not equal_only and len(query) < min_q:
         return web.json_response(empty)
+
+    # ─── Modo líneas iguales (group 1, main + raw) ───────────────────────
+    if equal_only:
+        seed_raw = _seed_phrase_from_query(query)
+        seed_norm = _norm_equal_text(seed_raw)
+        # Prefijo de N caracteres (o la frase entera si es más corta)
+        if seed_norm:
+            prefix = seed_norm[:equal_chars] if len(seed_norm) >= equal_chars else seed_norm
+            if len(prefix) < 5:
+                empty["error"] = "La frase / prefijo debe tener al menos 5 caracteres útiles."
+                return web.json_response(empty)
+        else:
+            prefix = None  # escanear duplicados globales
+
+        # Agrupar por prefijo de N chars
+        from collections import defaultdict
+
+        buckets: dict[str, list] = defaultdict(list)
+        for item in bot.index_datos:
+            if str(item.get("group", "") or "").strip() != "1":
+                continue
+            corpus = _item_corpus(item.get("file", ""))
+            if scope == "classic" and corpus != "classic":
+                continue
+            if scope == "ng" and corpus != "ng":
+                continue
+            fpath = (item.get("file") or "").replace("\\", "/")
+            layer = _file_layer(fpath)
+            if layer == "other":
+                continue
+
+            text = item.get("text") or ""
+            tnorm = _norm_equal_text(text)
+            if len(tnorm) < equal_chars and not (prefix and tnorm.startswith(prefix) and len(tnorm) >= 5):
+                # Sin query: exigir al menos N chars; con query: permitir frases cortas si empiezan igual
+                if not prefix or not tnorm.startswith(prefix):
+                    continue
+            if len(tnorm) < 5:
+                continue
+
+            pfx = tnorm[:equal_chars] if len(tnorm) >= equal_chars else tnorm
+            if prefix is not None:
+                # Con frase: el texto debe empezar por el prefijo elegido
+                if not tnorm.startswith(prefix):
+                    continue
+                pfx = prefix
+
+            buckets[pfx].append(item)
+
+        coincidencias = []
+        ids_vistos = set()
+        # Orden: prefijos con más archivos distintos primero
+        ranked = []
+        for pfx, items in buckets.items():
+            files = { (it.get("file") or "").replace("\\", "/") for it in items }
+            layers = { _file_layer(f) for f in files }
+            # Con query: devolver todo lo que matchea (aunque sea 1)
+            # Sin query: solo grupos con 2+ líneas O main+raw O 2+ archivos
+            if prefix is None:
+                if len(items) < 2 and len(files) < 2:
+                    continue
+                if len(files) < 2 and not ({"main", "raw"} <= layers) and len(items) < 2:
+                    continue
+            ranked.append((len(files), len(items), pfx, items))
+
+        ranked.sort(key=lambda x: (-x[0], -x[1], x[2]))
+
+        for n_files, n_items, pfx, items in ranked:
+            # Ordenar: main antes que raw, luego por archivo
+            def sort_key(it):
+                f = (it.get("file") or "").replace("\\", "/")
+                layer = 0 if _file_layer(f) == "main" else 1
+                return (layer, f, it.get("section", ""), it.get("id", ""))
+
+            for item in sorted(items, key=sort_key):
+                editable_file = item["file"].replace("_Raw", "")
+                fpath = (item.get("file") or "").replace("\\", "/")
+                clave = f"{fpath}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
+                if clave in ids_vistos:
+                    continue
+                ids_vistos.add(clave)
+                corpus = _item_corpus(fpath)
+                layer = _file_layer(fpath)
+                coincidencias.append({
+                    "file": editable_file if layer == "main" else fpath,
+                    "id": item["id"],
+                    "section": item.get("section", ""),
+                    "group": item.get("group", ""),
+                    "text": item["text"],
+                    "cmd": item.get("cmd", ""),
+                    "match": "equal",
+                    "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
+                    "layer": layer,
+                    "prefix": pfx,
+                    "equal_chars": equal_chars,
+                    "dup_files": n_files,
+                    "dup_lines": n_items,
+                })
+                if len(coincidencias) >= MAX_MATCHES:
+                    break
+            if len(coincidencias) >= MAX_MATCHES:
+                break
+
+        total = len(coincidencias)
+        total_pages = (total + per_page - 1) // per_page if total else 0
+        if total_pages and page > total_pages:
+            page = total_pages
+        start = (page - 1) * per_page
+        page_items = coincidencias[start : start + per_page]
+        return web.json_response({
+            "items": page_items,
+            "deep": False,
+            "new": False,
+            "nuevas": False,
+            "file": False,
+            "byfile": False,
+            "equal": True,
+            "iguales": True,
+            "chars": equal_chars,
+            "prefix": prefix,
+            "rare": False,
+            "corrupt": False,
+            "scope": scope,
+            "page": page,
+            "per_page": per_page,
+            "total": total,
+            "total_pages": total_pages,
+            "capped": total >= MAX_MATCHES,
+        })
 
     query_norm = "".join(
         c

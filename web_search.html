@@ -151,6 +151,36 @@
             cursor: pointer;
         }
 
+        .chars-toggle input[type="number"] {
+            width: 56px;
+            height: 28px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+            background: var(--bg-primary, #0d1117);
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0 4px;
+        }
+
+        .result-layer-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 999px;
+            margin-right: 6px;
+        }
+        .result-layer-badge.main {
+            background: rgba(63, 185, 80, 0.15);
+            color: #3fb950;
+        }
+        .result-layer-badge.raw {
+            background: rgba(210, 153, 34, 0.15);
+            color: #d29922;
+        }
+
         .deep-hint {
             font-size: 13px;
             color: var(--text-secondary);
@@ -473,6 +503,14 @@
             <input type="checkbox" id="corruptSearch">
             <span>Líneas nuevas</span>
         </label>
+        <label class="deep-toggle" title="Group 1: textos iguales por prefijo de N caracteres (main + raw)">
+            <input type="checkbox" id="equalSearch">
+            <span>Líneas iguales</span>
+        </label>
+        <label class="deep-toggle chars-toggle" id="charsToggle" style="display: none;" title="Cuántos caracteres deben coincidir al inicio de la frase">
+            <span>Chars =</span>
+            <input type="number" id="equalChars" min="5" max="120" value="15" step="1">
+        </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
@@ -488,6 +526,14 @@
             <code>data/lineas_nuevas/</code>). No hace falta escribir:
             se listan solas. Puedes filtrar por nombre de archivo, id o texto.
             Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
+        </span>
+        <span class="deep-hint" id="equalHint" style="display: none;">
+            Solo <strong>group 1</strong>, en <strong>main y raw</strong>.
+            Pega una frase o una línea CSV
+            (<code>SubObjectives,1,text0106,Defeat enemies in the…</code>)
+            y ajusta <strong>Chars</strong> (5, 6, 7…): se buscan textos que empiecen
+            por esos N caracteres. Sin texto: lista prefijos repetidos en varios archivos
+            (útil para inglés sin traducir).
         </span>
     </div>
 
@@ -515,6 +561,10 @@
         const fileHint = document.getElementById('fileHint');
         const corruptSearch = document.getElementById('corruptSearch');
         const corruptHint = document.getElementById('corruptHint');
+        const equalSearch = document.getElementById('equalSearch');
+        const equalHint = document.getElementById('equalHint');
+        const equalChars = document.getElementById('equalChars');
+        const charsToggle = document.getElementById('charsToggle');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -534,20 +584,28 @@
             if (active !== 'deep') deepSearch.checked = false;
             if (active !== 'file') fileSearch.checked = false;
             if (active !== 'new') corruptSearch.checked = false;
+            if (active !== 'equal') equalSearch.checked = false;
             if (active === 'deep') deepSearch.checked = true;
             if (active === 'file') fileSearch.checked = true;
             if (active === 'new') corruptSearch.checked = true;
+            if (active === 'equal') equalSearch.checked = true;
         }
 
         function updatePlaceholders() {
             deepHint.style.display = 'none';
             fileHint.style.display = 'none';
             corruptHint.style.display = 'none';
+            equalHint.style.display = 'none';
+            charsToggle.style.display = 'none';
             searchInput.disabled = false;
 
             if (corruptSearch.checked) {
                 searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
                 corruptHint.style.display = 'block';
+            } else if (equalSearch.checked) {
+                searchInput.placeholder = 'Ej: Defeat enemies in the…  o  SubObjectives,1,text0106,Defeat…';
+                equalHint.style.display = 'block';
+                charsToggle.style.display = 'inline-flex';
             } else if (fileSearch.checked) {
                 searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
                 fileHint.style.display = 'block';
@@ -564,10 +622,11 @@
             const query = searchInput.value.trim();
             const newMode = corruptSearch.checked;
             const fileMode = fileSearch.checked;
+            const equalMode = equalSearch.checked;
             const minLen = fileMode ? 2 : 3;
 
-            // Líneas nuevas: no requiere texto (lista todo al activar)
-            if (!newMode && query.length < minLen) {
+            // Líneas nuevas / iguales: query opcional
+            if (!newMode && !equalMode && query.length < minLen) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -579,7 +638,7 @@
 
             debounceTimer = setTimeout(() => {
                 performSearch(query, currentPage);
-            }, newMode && !query ? 100 : 500);
+            }, (newMode || equalMode) && !query ? 150 : 500);
         }
 
         scopeButtons.forEach(btn => {
@@ -613,6 +672,23 @@
             scheduleSearch(true);
         });
 
+        equalSearch.addEventListener('change', () => {
+            if (equalSearch.checked) exclusiveMode('equal');
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        equalChars.addEventListener('change', () => {
+            let n = parseInt(equalChars.value, 10);
+            if (Number.isNaN(n)) n = 15;
+            n = Math.max(5, Math.min(120, n));
+            equalChars.value = String(n);
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+        equalChars.addEventListener('input', () => {
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+
         searchInput.addEventListener('input', () => scheduleSearch(true));
 
         async function performSearch(query, page = 1) {
@@ -624,6 +700,10 @@
             const deep = deepSearch.checked ? '1' : '0';
             const byfile = fileSearch.checked ? '1' : '0';
             const nuevas = corruptSearch.checked ? '1' : '0';
+            const iguales = equalSearch.checked ? '1' : '0';
+            let chars = parseInt(equalChars.value, 10);
+            if (Number.isNaN(chars)) chars = 15;
+            chars = Math.max(5, Math.min(120, chars));
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -636,6 +716,9 @@
                     byfile,
                     new: nuevas,
                     nuevas,
+                    equal: iguales,
+                    iguales,
+                    chars: String(chars),
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -758,23 +841,29 @@
 
             const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
             const fileMode = !!(data.file || data.byfile);
+            const equalMode = !!(data.equal || data.iguales);
 
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
                 const tip = newMode
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
+                    : equalMode
+                    ? "No hay líneas group&nbsp;1 con ese prefijo. Sube/baja <strong>Chars</strong> o pega otra frase."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Por archivo</strong>, <strong>Líneas nuevas</strong> o <strong>Búsqueda avanzada</strong>.";
+                    : "Activa <strong>Líneas iguales</strong>, <strong>Por archivo</strong> o <strong>Líneas nuevas</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
             }
 
+            const charsLabel = equalMode && data.chars ? ` · chars=${data.chars}` : '';
             const modeLabel = newMode
                 ? " · líneas nuevas"
+                : equalMode
+                ? ` · líneas iguales${charsLabel}`
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
@@ -785,14 +874,18 @@
             }[data.scope || currentScope] || "";
             const from = (page - 1) * perPage + 1;
             const to = Math.min(page * perPage, total);
-            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
+            const prefixNote = equalMode && data.prefix
+                ? ` · prefijo «${String(data.prefix).slice(0, 40)}${String(data.prefix).length > 40 ? '…' : ''}»`
+                : '';
+            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel}${prefixNote} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
 
             items.forEach(item => {
-                // Pasar section + group para que el editor abra la línea exacta
+                // Editor: main usa path editable; raw se abre por su path real si está en raw
+                const openFile = item.file || '';
                 const qs = new URLSearchParams({
-                    file: item.file || '',
+                    file: openFile,
                     id: item.id || '',
                     section: item.section || '',
                     group: item.group != null && item.group !== '' ? String(item.group) : '1',
@@ -809,10 +902,13 @@
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
                 );
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || newMode || fileMode || (item.match && item.match !== 'text');
+                const showCmd = deep || newMode || fileMode || equalMode || (item.match && item.match !== 'text');
                 let matchBadge = '';
                 if (newMode) {
                     matchBadge = `<span class="result-match-badge">update · nueva</span>`;
+                } else if (equalMode || item.match === 'equal') {
+                    const df = item.dup_files != null ? ` · ${item.dup_files} archivos` : '';
+                    matchBadge = `<span class="result-match-badge">igual g1${df}</span>`;
                 } else if (fileMode || item.match === 'file') {
                     matchBadge = `<span class="result-match-badge">archivo</span>`;
                 } else if (item.match && item.match !== 'text') {
@@ -822,12 +918,17 @@
                 const corpusBadge = corpus === 'ng'
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
+                const layer = item.layer || (String(item.file || '').includes('_Raw') ? 'raw' : 'main');
+                const layerBadge = equalMode
+                    ? `<span class="result-layer-badge ${layer === 'raw' ? 'raw' : 'main'}">${layer === 'raw' ? 'RAW' : 'MAIN'}</span>`
+                    : '';
 
                 const bodyHtml = `<div class="result-text">${displayTxt}</div>`;
 
                 a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(item.file)}</div>
                     ${corpusBadge}
+                    ${layerBadge}
                     ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                     ${matchBadge}
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(String(item.group ?? ''))} · id: ${escapeHtml(item.id)}</div>
