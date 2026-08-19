@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<meta name="rating" content="general">
+<title>PSO2 Animation Viewer - User Guide | Rem Noirel</title>
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1502035453556297740/1515831329756020847/iXhei0wc_400x400.png">
+<style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+    body {
+        background:#0f1115;
+        color:#e1e7ed;
+        padding:20px;
+        background-image: url('https://cdn.discordapp.com/attachments/1328092288630521887/1515236050837180436/image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    header {
+        text-align:center;
+        margin:0 auto 25px auto;
+        padding:22px 40px;
+        background:rgba(30,34,43,0.95);
+        border-radius:14px;
+        border:1px solid #2a2f3d;
+        max-width:900px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .header-top { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 12px; }
+    header h1 {color:#FF1493;font-size:2.2rem;text-transform:uppercase;letter-spacing:2px; white-space:nowrap;}
+
+    .icon-btn {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .icon-btn svg { width:24px; height:24px; display:block; }
+
+    .key-btn {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 6px;
+        background: rgba(255,20,147,0.15);
+        border: 1px solid #FF1493;
+        transition: transform 0.2s, background 0.2s;
+    }
+    .key-btn:hover {
+        transform: scale(1.25);
+        background: rgba(255,20,147,0.3);
+    }
+
+    .nav-btn {
+        background: #1e222b;
+        color: #fff;
+        border: 1px solid #2a2f3d;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s;
+    }
+    .nav-btn:hover {
+        background: #FF1493;
+        border-color: #FF1493;
+        color: white;
+        transform: translateY(-2px);
+    }
+    .nav-btn-download {
+        background: #FF1493 !important;
+        border-color: #FF1493 !important;
+        color: white !important;
+        box-shadow: 0 0 12px rgba(255, 20, 147, 0.4);
+    }
+    .nav-btn-download:hover {
+        background: #e01080 !important;
+        box-shadow: 0 0 18px rgba(255, 20, 147, 0.7);
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-card {
+        background: rgba(21, 24, 31, 0.95);
+        border: 1px solid #2a2f3d;
+        border-radius: 14px;
+        padding: 30px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .tool-badge {
+        display: inline-block;
+        background: rgba(255, 20, 147, 0.15);
+        color: #FF1493;
+        border: 1px solid rgba(255, 20, 147, 0.4);
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        color: #fff;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-desc {
+        font-size: 1.15rem;
+        color: #b9bbbe;
+        line-height: 1.6;
+    }
+
+    .btn-download-hero {
+        background: linear-gradient(135deg, #FF1493 0%, #d0006f 100%);
+        color: white;
+        padding: 14px 26px;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 0.25s ease;
+        box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-download-hero:hover {
+        background: linear-gradient(135deg, #ff33a3 0%, #e6007e 100%);
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 10px 28px rgba(255, 20, 147, 0.6);
+        color: white;
+    }
+
+    .btn-discord-hero {
+        background: #2f3136;
+        color: white;
+        border: 1px solid #2a2f3d;
+        padding: 14px 22px;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.2s;
+    }
+    .btn-discord-hero:hover {
+        background: #3f4555;
+        border-color: #5865F2;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .video-section {
+        background: rgba(21, 24, 31, 0.95);
+        border: 1px solid #2a2f3d;
+        border-radius: 14px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    .guide-video {
+        width: 100%;
+        max-height: 520px;
+        border-radius: 10px;
+        border: 2px solid #FF1493;
+        box-shadow: 0 8px 30px rgba(255, 20, 147, 0.25);
+        outline: none;
+        background: #000;
+    }
+
+    .guide-card {
+        background: rgba(21, 24, 31, 0.95);
+        border: 1px solid #2a2f3d;
+        border-radius: 14px;
+        padding: 28px;
+        backdrop-filter: blur(10px);
+        transition: border-color 0.2s;
+    }
+    .guide-card:hover {
+        border-color: rgba(255, 20, 147, 0.5);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid #2a2f3d;
+        padding-bottom: 12px;
+    }
+    .card-header h2 {
+        font-size: 1.45rem;
+        color: #FF1493;
+        font-weight: 700;
+    }
+
+    .badge-pill {
+        background: #1e222b;
+        color: #20b2aa;
+        border: 1px solid #2a2f3d;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .info-box {
+        background: rgba(255, 20, 147, 0.08);
+        border-left: 4px solid #FF1493;
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 16px 0;
+        color: #e1e7ed;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .path-chip {
+        display: inline-block;
+        background: #101217;
+        color: #00ffcc;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-family: 'Consolas', 'Courier New', monospace;
+        font-size: 0.9rem;
+        border: 1px solid #2a2f3d;
+        word-break: break-all;
+        margin: 6px 0;
+    }
+
+    ul.guide-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    ul.guide-list li {
+        position: relative;
+        padding-left: 24px;
+        line-height: 1.6;
+        color: #d1d5db;
+        font-size: 0.98rem;
+    }
+    ul.guide-list li::before {
+        content: "🔹";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-size: 0.85rem;
+    }
+
+    .cmd-tag {
+        background: #2a2f3d;
+        color: #FF1493;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-weight: bold;
+    }
+
+    .step-block {
+        background: #181b22;
+        border: 1px solid #2a2f3d;
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 14px;
+    }
+    .step-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-note {
+        text-align: center;
+        padding: 25px;
+        background: rgba(30,34,43,0.95);
+        border: 1px solid #2a2f3d;
+        border-radius: 14px;
+        color: #b9bbbe;
+        font-size: 0.95rem;
+        margin-top: 10px;
+    }
+
+    .btn-discord-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        background: #5865F2;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+    .btn-discord-link:hover { filter: brightness(1.1); }
+
+    @media (max-width: 700px) {
+        header { padding: 18px 16px; }
+        header h1 { font-size: 1.35rem; }
+        .hero-title { font-size: 1.55rem; }
+        .header-top { flex-wrap: wrap; gap: 10px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>✨ Rem Noirel ✨</h1>
+        <a class="icon-btn" href="https://x.com/Rem_NoireL" target="_blank" rel="noopener noreferrer" title="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+        </a>
+        <a class="icon-btn" href="https://discord.gg/S7UcQYyB8" target="_blank" rel="noopener noreferrer" title="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C1.536 7.729.932 10.999 1.22 14.227a.076.076 0 0 0 .028.053 20.113 20.113 0 0 0 6.096 3.084.075.075 0 0 0 .081-.027 14.16 14.16 0 0 0 1.226-1.99.076.076 0 0 0-.041-.105 13.09 13.09 0 0 1-1.93-0.92.078.078 0 0 1-.008-.127c.131-.098.261-.199.387-.302a.075.075 0 0 1 .077-.01c4.057 1.86 8.441 1.86 12.446 0a.075.075 0 0 1 .078.01c.126.103.256.204.387.302a.078.078 0 0 1-.006.127 12.616 12.616 0 0 1-1.931.92.076.076 0 0 0-.04.105 14.936 14.936 0 0 0 1.226 1.99.075.075 0 0 0 .08.027 20.083 20.083 0 0 0 6.096-3.084.077.077 0 0 0 .028-.053c.358-3.791-.568-7.031-2.427-9.83a.07.07 0 0 0-.033-.027ZM8.735 12.186a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 8.735 7.87a2.031 2.031 0 0 1 1.921 2.158A2.031 2.031 0 0 1 8.735 12.186Zm6.529 0a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 15.264 7.87A2.031 2.031 0 0 1 17.185 10.028A2.031 2.031 0 0 1 15.264 12.186Z"></path></svg>
+        </a>
+        <a class="icon-btn" href="https://www.patreon.com/Rem_NoireL" target="_blank" rel="noopener noreferrer" title="Patreon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.957 7.21c-.004-3.045-2.469-5.508-5.511-5.511-3.044-.004-5.507 2.469-5.511 5.511-.004 3.044 2.469 5.508 5.511 5.511 3.044.004 5.507-2.469 5.511-5.511Z"></path><path d="M1.333 24h3.733V1.667H1.333V24Z"></path></svg>
+        </a>
+        <a class="icon-btn" href="https://rem-noirel.fanbox.cc/" target="_blank" rel="noopener noreferrer" title="Fanbox">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2.25L2.121 7.189c-.078.04-.121.127-.121.22v9.182c0 .093.043.18.121.22L12 21.75l9.88-4.939c.078-.04.121-.127.121-.22V7.409c0-.093-.043-.18-.121-.22L12.001 2.25zm0 1.233l8.601 4.301-3.957 1.978-8.602-4.3 3.958-1.979zM3.235 8.358l3.666 1.833v8.117L3.235 16.47V8.358zm4.899 2.45l3.366 1.683v8.117l-3.366-1.683v-8.117zm4.367 1.683l7.264-3.632v8.112l-7.264 3.632v-8.112z"></path></svg>
+        </a>
+        <!-- Llave / tornillo: sale de esta página SFW y entra al catálogo 18+ -->
+        <a class="key-btn" href="{{CATALOG_URL}}" title="Rem Noirel Mod Catalog (18+)">🔧</a>
+    </div>
+    <div style="margin-top: 10px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+        <a href="{{CATALOG_URL}}" class="nav-btn">🏠 Return to Mod Catalog</a>
+        <a href="{{DOWNLOAD_HREF}}" class="nav-btn nav-btn-download">📥 Download Pso2AnimViewer.zip</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="hero-card">
+        <span class="tool-badge">🎭 User Guide & Documentation</span>
+        <h1 class="hero-title">PSO2 Animation Viewer</h1>
+        <p class="hero-desc">
+            <strong>PSO2 Animation Viewer</strong> is a portable tool for previewing and swapping animations (Lobby Actions / Emotes & Substitute Motions) from <strong>Phantasy Star Online 2 / NGS</strong>.
+        </p>
+        <div style="margin-top: 22px; display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+            <a href="{{DOWNLOAD_HREF}}" class="btn-download-hero">
+                <span style="font-size: 1.4rem;">📥</span>
+                <div style="display: flex; flex-direction: column; text-align: left;">
+                    <span style="font-size: 1.1rem; font-weight: 800;">Download Pso2AnimViewer.zip</span>
+                    <span style="font-size: 0.82rem; font-weight: 500; opacity: 0.9;">Portable Release • 100% Free & Standalone</span>
+                </div>
+            </a>
+            <a href="{{DISCORD_POST_URL}}" target="_blank" rel="noopener noreferrer" class="btn-discord-hero">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C1.536 7.729.932 10.999 1.22 14.227a.076.076 0 0 0 .028.053 20.113 20.113 0 0 0 6.096 3.084.075.075 0 0 0 .081-.027 14.16 14.16 0 0 0 1.226-1.99.076.076 0 0 0-.041-.105 13.09 13.09 0 0 1-1.93-0.92.078.078 0 0 1-.008-.127c.131-.098.261-.199.387-.302a.075.075 0 0 1 .077-.01c4.057 1.86 8.441 1.86 12.446 0a.075.075 0 0 1 .078.01c.126.103.256.204.387.302a.078.078 0 0 1-.006.127 12.616 12.616 0 0 1-1.931.92.076.076 0 0 0-.04.105 14.936 14.936 0 0 0 1.226 1.99.075.075 0 0 0 .08.027 20.083 20.083 0 0 0 6.096-3.084.077.077 0 0 0 .028-.053c.358-3.791-.568-7.031-2.427-9.83a.07.07 0 0 0-.033-.027ZM8.735 12.186a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 8.735 7.87a2.031 2.031 0 0 1 1.921 2.158A2.031 2.031 0 0 1 8.735 12.186Zm6.529 0a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 15.264 7.87A2.031 2.031 0 0 1 17.185 10.028A2.031 2.031 0 0 1 15.264 12.186Z"></path></svg>
+                View Post on Discord
+            </a>
+        </div>
+    </div>
+
+    <div class="video-section">
+        {{VIDEO_BLOCK}}
+    </div>
+
+    <div class="guide-card">
+        <div class="card-header">
+            <h2>🚀 1. Initial Setup (Linking with Game Data)</h2>
+        </div>
+        <p style="margin-bottom: 16px; color: #b9bbbe; line-height: 1.6;">
+            The program is <strong>100% portable</strong> and requires no installation. You can run it from any folder or USB drive.
+        </p>
+
+        <div style="margin: 18px 0;">
+            <a href="{{DOWNLOAD_HREF}}" class="btn-download-hero" style="padding: 12px 22px; font-size: 0.95rem;">
+                📥 Download Pso2AnimViewer.zip
+            </a>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">👤 Load 3D Base Model:</div>
+            <p style="color: #d1d5db;">In the top <strong>MODEL</strong> panel, click <span class="cmd-tag">M1</span> or <span class="cmd-tag">M2</span> to load a default mannequin test model.</p>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">📁 Link Game Data Directory (<span style="color:#FF1493">pso2 data...</span>):</div>
+            <ul class="guide-list" style="margin-top: 6px;">
+                <li>In the <strong>GAME DATA</strong> panel, click <strong>pso2 data…</strong>.</li>
+                <li>Select the <strong>data</strong> folder from your PSO2 NGS installation.</li>
+                <li>Typical path: <div class="path-chip">.../PHANTASYSTARONLINE2_NGS/pso2_bin/data/win32</div> <em>(or win32reboot)</em></li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Why is this needed?</strong><br>
+            This allows the viewer to extract and display weapons, props, visual effects (VFX), and accessories in real-time.
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <div class="card-header">
+            <h2>🔍 2. Searching & Filtering Animations</h2>
+        </div>
+        <p style="margin-bottom: 16px; color: #b9bbbe;">In the left <strong>ANIMATIONS</strong> panel:</p>
+
+        <div class="step-block">
+            <div class="step-title">🏷️ Filter by Type:</div>
+            <ul class="guide-list">
+                <li><strong>All:</strong> Shows the complete catalog (Motions + Emotes).</li>
+                <li><strong>Emotes:</strong> Lobby Actions and dances.</li>
+                <li><strong>Motions:</strong> NGS Substitute Motions (Standby, Dash, Glide, Run, Jump, Landing, Swim).</li>
+            </ul>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">♀️♂️ Gender Filter for Emotes (Emote F/M):</div>
+            <ul class="guide-list">
+                <li><strong>F:</strong> Shows Female emote variants (equivalent to <span class="cmd-tag">/fla</span> commands in-game).</li>
+                <li><strong>M:</strong> Shows Male emote variants (equivalent to <span class="cmd-tag">/mla</span> commands in-game).</li>
+                <li><strong>Both:</strong> Shows all variants.</li>
+            </ul>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">🔎 Search Bar:</div>
+            <p style="color: #d1d5db; margin-bottom: 8px;">You can search by:</p>
+            <ul class="guide-list">
+                <li><strong>English name:</strong> (e.g., <span class="cmd-tag">Shiva Pose 1</span>, <span class="cmd-tag">On the Phone</span>)</li>
+                <li><strong>Japanese name:</strong> (e.g., <span class="cmd-tag">シバポーズ1</span>, <span class="cmd-tag">スマートフォン</span>)</li>
+                <li><strong>Chat command with slash:</strong> (e.g., <span class="cmd-tag">/sivapose1</span>, <span class="cmd-tag">/smartphone</span>)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <div class="card-header">
+            <h2>▶️ 3. Playback & Interactive Multi-Stage Poses (HSI / CLICK Button)</h2>
+        </div>
+        <p style="margin-bottom: 16px; color: #b9bbbe;">Click any animation row in the list to preview it in the 3D viewport.</p>
+
+        <div class="step-block">
+            <div class="step-title">⚡ Interactive Multi-Stage Click Emotes (HSI):</div>
+            <ul class="guide-list">
+                <li>Many emotes (On the Phone, Shiva Pose 1, Sparkler, etc.) have multiple hand poses or click stages (e.g., <span class="badge-pill">stage 1/3</span>).</li>
+                <li>Upon loading a multi-stage emote, the top toolbar will display its stage count (e.g., <span class="badge-pill">stage 1/3</span>).</li>
+                <li>To advance to the next pose or hand variant, click the <strong>HSI / CLICK</strong> button on the top toolbar (or the <strong>HSI</strong> button on the playback bar).</li>
+                <li>Each click advances the animation and updates attached props/weapons in real time, matching in-game action key behavior.</li>
+            </ul>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">🎛️ Top Timeline Controls:</div>
+            <ul class="guide-list">
+                <li><strong>PLAY / Stop:</strong> Start or pause animation playback.</li>
+                <li><strong>Loop ON/OFF:</strong> Enable or disable continuous looping.</li>
+                <li><strong>Speed Slider (1x):</strong> Adjust playback speed.</li>
+                <li><strong>Camera Controls:</strong> Left Mouse Button to rotate | Scroll Wheel to zoom | Middle Mouse Button / Ctrl+LMB to pan.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <div class="card-header">
+            <h2>🔄 4. Swapping Animations In-Game (Replace Tab)</h2>
+        </div>
+        <p style="margin-bottom: 16px; color: #b9bbbe;">
+            This feature allows you to replace an animation you own in-game with any other animation from the catalog.
+        </p>
+
+        <div class="step-block">
+            <div class="step-title">1️⃣ Switch to the Replace tab on the left panel.</div>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">2️⃣ Step 1 - ORIGINAL (In-game slot):</div>
+            <p style="color: #d1d5db;">Under <strong>1) ORIGINAL</strong>, search and select the base emote/motion you want to replace (e.g., default emote <span class="cmd-tag">Sit 1</span>).</p>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">3️⃣ Step 2 - NEW (In-game content):</div>
+            <p style="color: #d1d5db;">Under <strong>2) NEW</strong>, search and select the new animation you want to see in-game (e.g., <span class="cmd-tag">Shiva Pose 1</span> or a custom Motion).</p>
+        </div>
+
+        <div class="step-block">
+            <div class="step-title">4️⃣ Step 3 - Apply to Game:</div>
+            <p style="color: #d1d5db; margin-bottom: 6px;">Click <strong>Apply to Game (backup first)</strong>.</p>
+            <p style="color: #b9bbbe; font-size: 0.92rem;">The program writes the modification into game files and automatically creates a backup in <span class="path-chip">./portable/backups</span>.</p>
+        </div>
+
+        <div class="info-box" style="background: rgba(0, 255, 204, 0.08); border-left-color: #00ffcc;">
+            <strong>🎉 You're done!</strong><br>
+            Launch the game or type <span class="cmd-tag">/sit1</span> to see your new animation.
+        </div>
+
+        <div class="step-block" style="border-color: rgba(255, 20, 147, 0.4); background: rgba(255, 20, 147, 0.05); margin-top: 20px;">
+            <div class="step-title" style="color: #FF1493;">🛡️ Restoring Backups</div>
+            <p style="color: #d1d5db; margin-bottom: 8px;">To revert modifications back to official game files:</p>
+            <p style="color: #b9bbbe;">On the <strong>Replace</strong> tab, click <strong>Restore last backup</strong> or <strong>Open backups</strong> to restore original files in 1 click.</p>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        <p style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-bottom: 12px;">
+            PSO2 Animation Viewer — Portable animation viewer and swapper for PSO2 / NGS.
+        </p>
+        <div style="margin-bottom: 15px;">
+            <a href="{{DOWNLOAD_HREF}}" class="btn-download-hero" style="padding: 10px 20px; font-size: 0.95rem;">
+                📥 Download Pso2AnimViewer.zip
+            </a>
+        </div>
+        <p>© Rem Noirel — All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

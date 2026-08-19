@@ -34,6 +34,12 @@ Si no estás familiarizado con GitHub, puedes colaborar fácilmente utilizando n
 
 El traductor **no** tiene modal de edad. El catálogo de mods (con restricción 18+) está en **https://remnoirel.com/**.
 
+La guía de **PSO2 Animation Viewer** vive en el mismo subdominio (también sin modal 18+):
+
+**https://pso2clasic.remnoirel.com/Pso2AnimViewer**
+
+El tornillo 🔧 de esa página abre el catálogo en **https://remnoirel.com/** (ahí sí hay aviso de edad). Las descargas se siguen registrando en el mismo canal de Discord del catálogo.
+
 Con esta herramienta podrás:
 
 * Buscar cualquier texto en japonés, inglés o español.
