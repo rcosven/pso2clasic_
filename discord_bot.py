@@ -12,6 +12,7 @@ import time
 import json
 import asyncio
 from aiohttp import web
+import pso2_anim_viewer
 
 # Configurar variables de GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -76,6 +77,11 @@ class BuscadorBot(commands.Bot):
             await start_web_server(self)
         except Exception as e:
             logger.error(f"Error al iniciar el servidor web: {e}")
+
+        try:
+            asyncio.create_task(pso2_anim_viewer.cargar_contador_al_arrancar(self))
+        except Exception as e:
+            logger.error(f"Error al cargar contador Pso2AnimViewer: {e}")
 
         # 1. Índices en background (puede tardar 20–60s con ~1.2M filas)
         self.loop.create_task(self._load_indices_bg())
@@ -1579,6 +1585,7 @@ async def start_web_server(bot):
     app.router.add_get('/api/file_raw', web_api_file_raw)
     app.router.add_post('/api/save', web_api_save)
     app.router.add_post('/api/github', web_api_github)
+    pso2_anim_viewer.setup(app, bot)
     
     runner = web.AppRunner(app)
     await runner.setup()
