@@ -35,7 +35,7 @@ PSO2_POST_THREAD_ID = int(os.getenv("PSO2_POST_THREAD_ID", "1536856506295914626"
 
 PSO2_DOWNLOAD_URL_FALLBACK = os.getenv(
     "PSO2_DOWNLOAD_URL_FALLBACK",
-    "https://mega.nz/file/BsZgUZzY#ZapLzAtAgY9osAQTm7p55NR-_zkkCfADmbyxvIbxqYM",
+    "https://mega.nz/file/00Jn3K5J#BLJ5kym1YrjA0qHfZaZGT1oAcCSDF7k07oITONJz4Vo",
 )
 PSO2_DISCORD_POST_URL = os.getenv(
     "PSO2_DISCORD_POST_URL",
@@ -309,7 +309,7 @@ async def resolver_media_pso2animviewer():
         video_url = cat_video
     if cat_post:
         discord_post_url = cat_post
-    download_url = PSO2_DOWNLOAD_URL_FALLBACK
+    download_url = os.getenv("PSO2_DOWNLOAD_URL_FALLBACK", PSO2_DOWNLOAD_URL_FALLBACK)
     if video_url:
         return video_url, download_url, discord_post_url
 
@@ -342,7 +342,7 @@ async def resolver_media_pso2animviewer():
     await scan_channel(CANAL_DESCARGAS_PSO2_ID, want_video=True, want_download=False)
     if not video_url:
         await scan_channel(PSO2_POST_THREAD_ID, want_video=True, want_download=False)
-    download_url = PSO2_DOWNLOAD_URL_FALLBACK
+    download_url = os.getenv("PSO2_DOWNLOAD_URL_FALLBACK", PSO2_DOWNLOAD_URL_FALLBACK)
     return video_url, download_url, discord_post_url
 
 
