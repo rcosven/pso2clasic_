@@ -340,6 +340,8 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
+            user-select: text;
+            -webkit-user-select: text;
         }
 
         .result-item:last-child {
@@ -348,6 +350,25 @@
 
         .result-item:hover {
             background-color: var(--item-hover);
+        }
+
+        .result-file,
+        .result-id,
+        .result-text,
+        .result-cmd,
+        .result-match-badge,
+        .result-corpus,
+        .result-fixed {
+            cursor: text;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        .result-item button,
+        .result-item summary {
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
         .result-file {
@@ -492,6 +513,34 @@
             border-color: #f85149;
             color: #fff;
             transform: scale(1.03);
+        }
+
+        .btn-copy-cmd {
+            background: rgba(88, 166, 255, 0.1);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            color: var(--accent-blue);
+            border-radius: 6px;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.15s ease;
+            flex-shrink: 0;
+            user-select: none;
+        }
+        .btn-copy-cmd:hover {
+            background: rgba(88, 166, 255, 0.25);
+            border-color: var(--accent-blue);
+            color: #fff;
+            transform: scale(1.03);
+        }
+        .btn-copy-cmd.copied {
+            background: rgba(63, 185, 80, 0.2) !important;
+            border-color: #3fb950 !important;
+            color: #3fb950 !important;
         }
 
         .custom-modal {
@@ -1333,6 +1382,8 @@
                 a.href = href;
                 a.target = '_blank';
                 a.rel = 'noopener noreferrer';
+                a.draggable = false;
+                a.addEventListener('dragstart', (e) => e.preventDefault());
 
                 const displayTxt = escapeHtml(
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
@@ -1391,21 +1442,71 @@
                             ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                             ${matchBadge}
                         </div>
-                        <button type="button" class="btn-exclude" title="Quitar este resultado de la lista de búsqueda">
-                            🚫 Excluir
-                        </button>
+                        <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
+                            <button type="button" class="btn-copy-cmd" title="Copiar referencia al portapapeles (${escapeHtml(openFile)}, ${escapeHtml(cmd || item.id)})">
+                                📋 Copiar
+                            </button>
+                            <button type="button" class="btn-exclude" title="Quitar este resultado de la lista de búsqueda">
+                                🚫 Excluir
+                            </button>
+                        </div>
                     </div>
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
                     ${bodyHtml}
                 `;
 
-                // Evitar que hacer clic en el botón de excluir o desplegar detalles navegue a la edición
+                // Evitar que hacer clic en botones, detalles o texto seleccionado navegue a la edición
                 a.addEventListener('click', (e) => {
-                    if (e.target.closest('.btn-exclude') || e.target.closest('details')) {
+                    const sel = window.getSelection();
+                    if (sel && sel.toString().trim().length > 0) {
+                        e.preventDefault();
+                        return;
+                    }
+                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
                         e.preventDefault();
                         e.stopPropagation();
                     }
                 });
+
+                const btnCopy = a.querySelector('.btn-copy-cmd');
+                if (btnCopy) {
+                    btnCopy.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const copyContent = `${openFile},${item.section || ''},${itemGroup},${item.id}`;
+                        const setCopied = () => {
+                            btnCopy.innerHTML = '✓ ¡Copiado!';
+                            btnCopy.classList.add('copied');
+                            setTimeout(() => {
+                                btnCopy.innerHTML = '📋 Copiar';
+                                btnCopy.classList.remove('copied');
+                            }, 1500);
+                        };
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(copyContent).then(setCopied).catch(() => {
+                                const ta = document.createElement('textarea');
+                                ta.value = copyContent;
+                                ta.style.position = 'fixed';
+                                ta.style.opacity = '0';
+                                document.body.appendChild(ta);
+                                ta.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(ta);
+                                setCopied();
+                            });
+                        } else {
+                            const ta = document.createElement('textarea');
+                            ta.value = copyContent;
+                            ta.style.position = 'fixed';
+                            ta.style.opacity = '0';
+                            document.body.appendChild(ta);
+                            ta.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(ta);
+                            setCopied();
+                        }
+                    });
+                }
 
                 const btnExclude = a.querySelector('.btn-exclude');
                 if (btnExclude) {
