@@ -1363,18 +1363,18 @@
                     const cleanMain = escapeHtml((item.text || '(Vacío)').replace(/<br>/gi, ' '));
                     bodyHtml = `
                         <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
-                            <div style="background: rgba(88, 166, 255, 0.08); border: 1px solid rgba(88, 166, 255, 0.25); border-radius: 6px; padding: 8px 12px;">
-                                <div style="font-size: 11px; font-weight: 700; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
-                                    Inglés Original (Raw) · ${item.raw_len} chars
-                                </div>
-                                <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanRaw}</div>
-                            </div>
                             <div style="background: rgba(248, 81, 73, 0.08); border: 1px solid rgba(248, 81, 73, 0.25); border-radius: 6px; padding: 8px 12px;">
                                 <div style="font-size: 11px; font-weight: 700; color: #f85149; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
                                     Traducción al Español (Main) · ${item.main_len} chars
                                 </div>
                                 <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanMain}</div>
                             </div>
+                            <details style="background: rgba(88, 166, 255, 0.05); border: 1px solid rgba(88, 166, 255, 0.2); border-radius: 6px; padding: 6px 12px; cursor: pointer;">
+                                <summary style="font-size: 11px; font-weight: 700; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.04em; user-select: none;">
+                                    Ver Inglés Original de referencia (Raw) · ${item.raw_len} chars
+                                </summary>
+                                <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4; margin-top: 6px; max-height: 180px; overflow-y: auto; white-space: pre-wrap;">${cleanRaw}</div>
+                            </details>
                         </div>
                     `;
                 } else {

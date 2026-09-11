@@ -1302,6 +1302,17 @@ async def web_api_search(request):
         if scope == "ng" and corpus != "ng":
             continue
 
+        # Solo archivos editables de traducción (no *_Raw).
+        # Los Raw solo se usan como referencia de comparación en líneas iguales y brecha.
+        fpath = (item.get("file") or "").replace("\\", "/")
+        if "_raw/" in fpath.lower() or fpath.lower().endswith("_raw") or "/csv_clasic_raw/" in fpath.lower() or "/csv_ngs_raw/" in fpath.lower():
+            continue
+        if not (
+            fpath.startswith("Csv_Clasic/")
+            or fpath.startswith("Csv_Ngs/")
+        ):
+            continue
+
         matched = False
         match_where = "text"
 
@@ -1310,15 +1321,6 @@ async def web_api_search(request):
             # Líneas nuevas: filas listadas en data/lineas_nuevas/*
             # (archivos y keys del update de Classic/NGS). Solo editables.
             # ═══════════════════════════════════════════════════════════
-            fpath = (item.get("file") or "").replace("\\", "/")
-            if "_Raw/" in fpath or "/Csv_Clasic_Raw/" in fpath or "/Csv_Ngs_Raw/" in fpath:
-                continue
-            if not (
-                fpath.startswith("Csv_Clasic/")
-                or fpath.startswith("Csv_Ngs/")
-            ):
-                continue
-
             is_new = bool(item.get("is_new_line")) or bot.is_new_line_item(item)
             if not is_new:
                 continue
