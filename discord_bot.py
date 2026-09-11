@@ -10,7 +10,9 @@ import base64
 import requests
 import time
 import json
+import re
 import asyncio
+import aiohttp
 from aiohttp import web
 import pso2_anim_viewer
 
@@ -1711,6 +1713,76 @@ async def web_api_github(request):
     except Exception as e:
         return web.json_response({"error": str(e)}, status=500)
 
+
+async def web_api_translate(request):
+    """
+    Endpoint para traducir automáticamente texto (inglés o japonés -> español).
+    Usa Google Translate API de forma directa y divide en bloques si es muy largo.
+    """
+    try:
+        data = await request.json()
+    except Exception:
+        return web.json_response({"ok": False, "error": "JSON inválido"}, status=400)
+
+    text = (data.get("text") or "").strip()
+    if not text:
+        return web.json_response({"ok": True, "translation": ""})
+
+    sl = data.get("sl") or "auto"
+    tl = data.get("tl") or "es"
+
+    # Reemplazar <br> por saltos de línea para traducir párrafos limpios
+    clean_text = re.sub(r'(?i)<br\s*/?>', '\n', text)
+
+    # Dividir en bloques si el texto es muy extenso para evitar límites de tamaño
+    chunks = []
+    current_chunk = []
+    current_len = 0
+    for line in clean_text.splitlines(keepends=True):
+        if current_len + len(line) > 2000 and current_chunk:
+            chunks.append("".join(current_chunk))
+            current_chunk = [line]
+            current_len = len(line)
+        else:
+            current_chunk.append(line)
+            current_len += len(line)
+    if current_chunk:
+        chunks.append("".join(current_chunk))
+
+    translated_parts = []
+    timeout = aiohttp.ClientTimeout(total=15)
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        for chunk in chunks:
+            if not chunk.strip():
+                translated_parts.append(chunk)
+                continue
+            payload = {
+                "client": "gtx",
+                "sl": sl,
+                "tl": tl,
+                "dt": "t",
+                "q": chunk,
+            }
+            try:
+                async with session.post("https://translate.googleapis.com/translate_a/single", data=payload) as resp:
+                    if resp.status == 200:
+                        res_json = await resp.json(content_type=None)
+                        if res_json and isinstance(res_json, list) and res_json[0]:
+                            part = "".join(item[0] for item in res_json[0] if item and item[0])
+                            translated_parts.append(part)
+                        else:
+                            translated_parts.append(chunk)
+                    else:
+                        logger.warning(f"Error {resp.status} traduciendo con Google Translate")
+                        translated_parts.append(chunk)
+            except Exception as e:
+                logger.error(f"Excepción en traducción automática: {e}")
+                translated_parts.append(chunk)
+
+    final_translation = "".join(translated_parts)
+    return web.json_response({"ok": True, "translation": final_translation})
+
+
 async def web_health(request):
     """
     Healthcheck de Railway / proxy: siempre 200 si el proceso vive.
@@ -1747,6 +1819,7 @@ async def start_web_server(bot):
     app.router.add_get('/api/file_raw', web_api_file_raw)
     app.router.add_post('/api/save', web_api_save)
     app.router.add_post('/api/github', web_api_github)
+    app.router.add_post('/api/translate', web_api_translate)
     pso2_anim_viewer.setup(app, bot)
     
     runner = web.AppRunner(app)
