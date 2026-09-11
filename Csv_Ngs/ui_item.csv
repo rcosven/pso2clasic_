@@ -1500,10 +1500,10 @@ ItemCommon,1,ConsumeErrorMessage4,No puedes usar el mismo tipo de elemento hasta
 ItemCommon,1,ConsumeErrorMessage5,Los personajes de esa raza<br>no pueden usar este objeto.
 ItemCommon,1,ConsumeErrorMessage6,Los personajes de ese sexo<br>no pueden usar este objeto.
 ItemCommon,1,ConsumeErrorMessage7,Los personajes de esa raza y sexo<br>no pueden usar este objeto.
-ItemCommon,1,ConsumeErrorMessage8,"l Vencimiento"" en<br>""Historial de compras/Vencimiento"" del Menú principal<br>para verificar los períodos de validez ampliables."
-ItemCommon,1,ConsumeErrorMessage9,"This item is currently unavailable because<br>the period of validity has surpassed 90 days.<br><br>Select ""Rental Expiration"" under<br> ""Purchase History/Expiration"" from the Main Menu<br>to check extendable validity periods."
-ItemCommon,1,ConsumeErrorMessage10,"xpiración"" en<br>""Historial de compras/Expiración"" en el menú principal<br>para verificar los períodos de validez ampliables."
-ItemCommon,1,ConsumeErrorMessage11,"You cannot purchase any more because<br>the period of validity has surpassed 90 days.<br><br>Select ""Rental Expiration"" under<br> ""Purchase History/Expiration"" from the Main Menu<br>to check extendable validity periods."
+ItemCommon,1,ConsumeErrorMessage8,"Este artículo no está disponible actualmente porque<br>el periodo de validez ha superado los 180 días.<br><br>Seleccione ""Caducidad del alquiler"" en la opción<br>""Historial de compras/Caducidad"" del menú principal<br>para consultar los periodos de validez prorrogables."
+ItemCommon,1,ConsumeErrorMessage9,"Este artículo no está disponible actualmente porque<br>el periodo de validez ha superado los 90 días.<br><br>Seleccione ""Caducidad del alquiler"" en la opción<br>""Historial de compras/Caducidad"" del menú principal<br>para consultar los periodos de validez ampliables."
+ItemCommon,1,ConsumeErrorMessage10,"Ya no es posible realizar más compras porque<br>el periodo de validez ha superado los 180 días.<br><br>Seleccione ""Caducidad del alquiler"" en la opción<br>""Historial de compras/Caducidad"" del menú principal<br>para consultar los periodos de validez prorrogables."
+ItemCommon,1,ConsumeErrorMessage11,"Ya no es posible realizar más compras porque<br>el periodo de validez ha superado los 90 días.<br><br>Seleccione ""Caducidad del alquiler"" dentro de<br>""Historial de compras/Caducidad"" en el menú principal<br>para consultar los periodos de validez prorrogables."
 ItemCommon,1,ConsumeErrorMessage13,No se puede utilizar este artículo porque se ha superado el número máximo de días<br>de validez del alquiler.
 ItemCommon,1,ResultItemFull,No pudiste aceptar la recompensa porque no te queda espacio para artículos.
 ItemCommon,1,ResultMesetaFull,Ya tienes la cantidad máxima de meseta. No pudiste aceptar la recompensa.
@@ -1511,14 +1511,14 @@ ItemCommon,1,ItemSetWareHouse,Ya estás llevando el máximo. número de artícul
 ItemCommon,1,NoUseItemSetWareHouse_Reboot,"Todos los elementos se movieron al Almacenamiento, incluidos los elementos que no se pueden usar en PSO2:NGS."
 ItemCommon,1,ItemSetPost,"Artículo enviado a almacenamiento temporal. Si este almacenamiento supera los 30 elementos, se eliminará el más antiguo."
 ItemCommon,1,CheckPostNoticeMessage1,<yellow> El Almacenamiento Temporal está casi lleno. Deberías liberar espacio en tu Almacenamiento ahora. <c>
-ItemCommon,1,CheckPostNoticeMessage2,Se eliminarán del más antiguo al más nuevo. Libere algo de espacio. <c>
+ItemCommon,1,CheckPostNoticeMessage2,"<c ff4f3f>Ya no queda espacio en el Almacenamiento temporal. Los objetos se eliminarán del más antiguo al más reciente. Por favor, libera algo de espacio.<c>"
 ItemCommon,1,RequestActionNoUse,No podrías usar el artículo porque no tendría ningún efecto.
 ItemCommon,1,RequestActionOutOfRange,No podías usar el objeto porque no había objetivos dentro del alcance.
 ItemCommon,1,UseTicketTitle,CONFIRMAR USO DEL ARTÍCULO
 ItemCommon,1,UseTicketMessage,"Se utilizará ""$(0)"".<br>¿Está seguro de que desea continuar?"
 ItemCommon,1,UseTicketTitle2,Confirmar el uso del artículo
 ItemCommon,1,UseTicketForSGMessage,Se pueden utilizar varios $(0) a la vez. Ingrese la cantidad deseada.
-ItemCommon,1,UseTicketForSPMessage,carácter<br>u otro carácter. <c>
+ItemCommon,1,UseTicketForSPMessage,"El personaje del jugador no puede utilizar este objeto<br>debido a restricciones de raza<br>o sexo.<br><br>Esto vinculará ""$(0)""<br>como objeto auxiliar.<br>¿Seguro que deseas continuar?<br><br><yellow>Tras usar este ticket,<br>podrás realizar la selección con todos los personajes<br>usando otro ticket con el mismo personaje<br>o con otro distinto.<c>"
 ItemCommon,1,CopyClipBoard,"""$(0)"" se ha copiado al portapapeles."
 ItemCommon,1,CountStopRewardItem,Adquirir
 ItemCommon,1,CountItemDisp,$(0)x$(1)
@@ -1531,7 +1531,7 @@ ItemCommon,1,UseItemBagError1,No pudiste usarlo debido a la falta de espacio en 
 ItemCommon,1,UseItemBagError2,No pudiste usarlo porque excediste la cantidad máxima de elementos permitidos.
 ItemCommon,1,UseItemBagError3,Error en la adquisición del artículo.
 ItemCommon,1,ConsumeErrorMessage12,"No puedes usar el mismo elemento,<br>ya que se excederá el límite superior de la Duración del efecto."
-ItemCommon,1,UseCraftEnchantItemMessage,"Effects of the Timed Ability Data can be applied to the<br>following Unit.<br><yellow>$(0)<c><br><br>Due to <yellow>Owner Registration<c>, transactions with<br>other players will no longer be possible."
+ItemCommon,1,UseCraftEnchantItemMessage,"Los efectos de los datos de habilidad temporal pueden aplicarse a la<br>siguiente unidad.<br><yellow>$(0)<c><br><br>Debido al <yellow>Registro de propietario<c>, ya no será posible<br>realizar transacciones con otros jugadores."
 ItemCommon,1,CraftEnchantItemUseErrorNoEquip,No puedes usar la Unidad objetivo porque no está equipada.
 ItemCommon,1,UseItemMessage,Usaste $(0).
 ItemCommon,1,CraftEnchantItemUseErrorServerBug,El artículo no se pudo utilizar.
@@ -1555,8 +1555,8 @@ ItemCommon,1,NoGoodsMessageDish,No se pueden depositar muebles
 ItemCommon,1,NoQuestitemMessageDish,Sin materiales
 ItemCommon,1,NoOtherMessageDish,No se pueden depositar artículos varios
 ItemCommon,1,Empty_NoData_Favorite,Presione<%Decide>para cargar $(0). <br>Este almacenamiento está configurado como su<br>Almacenamiento favorito. <c>
-ItemCommon,1,Empty_NoData_FavoriteSettable,"Press <%Decide> to load $(0). <br>You can set it as your Favorite Storage by pressing <%Function>.<br><br><yellow>Extended Storage set as ""Favorite Storage"" is included in ""All Storage.""<c>"
-ItemCommon,1,Empty_NoData_FavoriteSettable_Loaded,"br><yellow>El almacenamiento extendido configurado como ""Almacenamiento favorito"" se incluye en ""Todo el almacenamiento"". <c>"
+ItemCommon,1,Empty_NoData_FavoriteSettable,"Pulsa <%Decide> para cargar $(0).<br>Puedes establecerlo como tu almacenamiento favorito pulsando <%Function>.<br><br><yellow>El almacenamiento extendido configurado como ""Almacenamiento favorito"" se incluye en ""Todo el almacenamiento"".<c>"
+ItemCommon,1,Empty_NoData_FavoriteSettable_Loaded,"Cargando $(0).<br>Puedes establecerlo como tu almacenamiento favorito pulsando <%Function>.<br><br><yellow>El almacenamiento extendido establecido como ""Almacenamiento favorito"" se incluye en ""Todo el almacenamiento"".<c>"
 ItemCommon,1,Empty_NoData,Presione$(0)<br>para cargar$(1).
 ItemCommon,1,Empty_Unreadable_Favorite,<c f0df60> No se puede cargar $(0).<br>Este almacenamiento está configurado como su<br>Almacenamiento favorito. <c>
 ItemCommon,1,Empty_Unreadable_FavoriteSettable,"No se puede cargar<br>$(1) en este momento.<br>Puede configurarlo en ""Almacenamiento favorito""<br>presionando $(0)."
@@ -1584,23 +1584,23 @@ ItemCommon,1,PutMultiMessage,Dejarás estos artículos. ¿Desea continuar?
 ItemCommon,1,PutSuccessMessage,Artículos caídos.
 ItemCommon,1,PutErrorMessage5,No puedes soltar objetos en esta área.
 ItemCommon,1,PutNoticeMessage1,Hay uno o más elementos que no se pueden eliminar.
-ItemCommon,1,SendWarehouseErrorMessage11,medicina<br><br> El almacenamiento de PSO2es está habilitado<br>cuando se vincula con PSO2es.
+ItemCommon,1,SendWarehouseErrorMessage11,No se pudieron mover los objetos<br>porque no se pudo confirmar la vinculación con PSO2es.<br><br>El almacenamiento de PSO2es se habilita<br>al vincularse con PSO2es.
 ItemCommon,1,SendWarehouseErrorMessage12,El almacenamiento extendido no está cargado.<br>Cargue el almacenamiento extendido<br>e inténtelo de nuevo.
 ItemCommon,1,SendWarehouseErrorMessage13,No se pueden mover elementos entre almacenamientos extendidos.<br>Conéctate a tu inventario o a otro Almacenamiento<br>e inténtalo de nuevo.
 ItemCommon,1,SendWarehouseErrorMessage14,No se puede depositar este artículo en el Almacenamiento de materiales.
 ItemCommon,1,AllSendWarehouseDishErrorMessage,"El ""Almacenamiento de Material"" no está disponible.<br>Utilice el ""Ticket de almacenamiento de material""<br>para habilitarlo."
 ItemCommon,1,MoveWarehouseErrorMessage7,Este artículo no se puede mover al almacén de materiales.
-ItemCommon,1,MoveWarehouseErrorMessage8,tem en su inventario<br>y luego muévalo.<br><yellow> Esto se abordará en una actualización futura. <c>
-ItemCommon,1,MoveWarehouseErrorMessage9,tem en su inventario<br>y luego muévalo.<br><yellow> Esto se abordará en una actualización futura. <c>
+ItemCommon,1,MoveWarehouseErrorMessage8,"No puedes mover objetos directamente<br>desde el Almacén de materiales a otro almacén.<br>Por favor, coloca el objeto en tu inventario<br>y luego muévelo.<br><yellow>Esto se solucionará en una futura actualización.<c>"
+ItemCommon,1,MoveWarehouseErrorMessage9,"No puedes mover objetos directamente<br>desde otro almacenamiento al Almacenamiento de materiales.<br>Por favor, coloca el objeto en tu inventario<br>y luego muévelo.<br><yellow>Esto se solucionará en una futura actualización.<c>"
 ItemCommon,1,MoveWarehouseNoticeMessage2,No hay artículos que puedan ser depositados en el Almacén de Materiales.
 ItemCommon,1,MoveWarehouseNoticeMessage3,No puede depositar artículos en el Almacenamiento de materiales<br>porque está en su límite de almacenamiento.
 ItemCommon,1,RequestActionNoExpire,No se pudo utilizar porque el período de validez de uso ha expirado.
 ItemCommon,1,RequestActionUnlimitedAMCoinErrorTitle,MENSAJE
-ItemCommon,1,RequestActionUnlimitedAMCoinErrorMessage,"r><br><yellow> Puede cambiar cualquier ""Eliminar límite de retiro CC<br>por $(0) días"" que tenga por un artículo en<br>la Tienda de intercambio. <c>"
+ItemCommon,1,RequestActionUnlimitedAMCoinErrorMessage,"Dado que se ha eliminado el límite de retirada de CC,<br>ya no puedes utilizar el objeto ""Eliminar límite<br>de retirada de CC durante $(0) días"".<br><br><yellow>Puedes canjear cualquier objeto ""Eliminar límite<br>de retirada de CC durante $(0) días"" que tengas<br>por otro artículo en la Tienda de Canje.<c>"
 ItemCommon,1,UsePetEggTitle,CONFIRMAR USO DEL ARTÍCULO
 ItemCommon,1,UsePetEggMessage1,"Se utilizará ""$(0)"".<br>¿Está seguro de que desea continuar?"
 ItemCommon,1,UsePetEggMessage2,"Se utilizará ""$(0)"".<br>¿Está seguro de que desea continuar?<br><br><yellow>Se ha seleccionado un elemento bloqueado. <c>"
-ItemCommon,1,UseHatchedPetEgg,"llow>Debido a que se trata de una mascota que se ha vuelto a registrar,<br>los puntos de síntesis son 0. <c>"
+ItemCommon,1,UseHatchedPetEgg,"Mascota registrada.<br>Puedes crear un conjunto con armas «Harmonizer».<br><br><yellow>Al tratarse de una mascota registrada de nuevo,<br>los Puntos de síntesis son 0.<c>"
 ItemCommon,1,GrindNumAwardBackpackMessage,"+$(0)Recompensa de mejora ""$(1)"" depositada en el Inventario."
 ItemCommon,1,GrindNumAwardStorageMessage,"+$(0)Recompensa de mejora ""$(1)"" depositada en el Almacenamiento."
 ItemCommon,1,GrindNumAwardPostMessage,"+$(0)Recompensa de mejora ""$(1)"" depositada en el Almacenamiento Temporal."
@@ -1617,29 +1617,29 @@ ItemCommon,1,ItemAutoPickUpRarityOff,<yellow> $(0)<c>recibido.
 ItemCommon,1,ConsumeTicketErrorAllRegisted,No se puede utilizar<br>porque Ticket está registrado<br>para todos los personajes.
 ItemCommon,1,TicketItemUseErrorServerBug,$(0) no se puede utilizar.
 ItemCommon,1,TicketItemUseErrorServerBug_2,El artículo no se pudo utilizar.
-ItemCommon,1,UseTicketMessage1,rs.
-ItemCommon,1,UseTicketMessage2,"Utilice este elemento, podrá seleccionar el elemento relacionado con todos los caracteres. <c>"
-ItemCommon,1,UseTicketMessage3,"""$(0)"" will be used.<br>Are you sure you wish to proceed?<br><br><yellow>Once you use this item, you will be able to use the related item with all characters on the current ship.<c>"
-ItemCommon,1,UseTicketForSPMessage2,<c>
+ItemCommon,1,UseTicketMessage1,"Se utilizará ""$(0)"".<br>¿Estás seguro de que deseas continuar?<br><br><yellow>Una vez que uses este objeto, podrás utilizar el objeto relacionado con este personaje.<br>Si usas este mismo objeto dos veces, podrás utilizar el objeto relacionado con cualquiera de tus personajes."
+ItemCommon,1,UseTicketMessage2,"Se utilizará «$(0)».<br>¿Seguro que deseas continuar?<br><br><yellow>Una vez que uses este objeto, podrás seleccionar el objeto relacionado con todos los personajes.<c>"
+ItemCommon,1,UseTicketMessage3,"Se utilizará ""$(0)"".<br>¿Está seguro de que desea continuar?<br><br><yellow>Una vez que utilice este objeto, podrá usar el objeto relacionado con todos los personajes de la nave actual.<c>"
+ItemCommon,1,UseTicketForSPMessage2,"Este personaje no puede<br>usar este objeto debido a restricciones<br>de raza o sexo.<br><br>Esto vinculará ""$(0)""<br>a un auxiliar.<br>¿Seguro que deseas continuar?<br><br><yellow>Una vez que uses este ticket,<br>podrás realizar la selección con todos los personajes.<c>"
 ItemCommon,1,FlagTicketAllRegistedTitle,CONFIRMACIÓN DE BOLETO REGISTRADO
-ItemCommon,1,FlagTicketAllRegisted,Con todos los caracteres<br>usando 2 boletos. <c><br><br> ¿Está seguro de que desea continuar?
+ItemCommon,1,FlagTicketAllRegisted,El siguiente artículo es un<br><red>ticket usado<c>.<br>Podrás <yellow>seleccionar a todos los personajes<c><br>usando 2 tickets.<br><br>¿Seguro que deseas continuar?
 ItemCommon,1,UseTraceItemTitle,CONFIRMAR ARTÍCULO
 ItemCommon,1,UseTraceItemMessage,Se ha seleccionado un objeto que ha sufrido transmutación de arma.<br>¿Estás seguro de que esto está bien?
 ItemCommon,1,FloatTextItem_1,$(2) $(0) $(1)
 ItemCommon,1,FloatTextItem_2,$(3) $(0) $(1) x$(2)
 ItemCommon,1,FloatTextItem_3,$(0) $(1)
 ItemCommon,1,FloatTextItem_4,$(0) $(1) x$(2)
-ItemCommon,1,FloatTextItemUnidentified_1,<pict rarity_unk> $(0)<c 00ffff>$(1) <c>
-ItemCommon,1,FloatTextItemUnidentified_2,<pict rarity_unk> $(0)<c 00ffff>$(1)<c>x$(2)
-ItemCommon,1,FloatTextMeseta,<pict reb_meseta> $(0)
-ItemCommon,1,FloatTextSeasonPoint,<pict event_point> $(0)
+ItemCommon,1,FloatTextItemUnidentified_1,<pict rarity_unk> $(0)<c 00ffff>$(1) <c> 
+ItemCommon,1,FloatTextItemUnidentified_2,<pict rarity_unk> $(0)<c 00ffff>$(1)<c>x$(2) 
+ItemCommon,1,FloatTextMeseta,<pict reb_meseta> $(0) 
+ItemCommon,1,FloatTextSeasonPoint,<pict event_point> $(0) 
 ItemCommon,1,UseDiskError_ForChallenge,Las clases Scion no se pueden usar en esta misión.
 ItemCommon,1,UseTicketUpgrade_UsedNormal_UsePlus,"Actualizar de la versión normal ""$(0)""<br>a la versión Plus, ""$(1)"".<br><br><yellow>La versión normal seguirá siendo accesible mediante:<c><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?"""
-ItemCommon,1,UseTicketUpgrade_UsedPlus_UseNormal,Selecciona lo siguiente:<br><br>• Comandos de chat<br>• Atajos de teclado<br><br>¿Estás seguro de que deseas continuar?
+ItemCommon,1,UseTicketUpgrade_UsedPlus_UseNormal,La versión Plus de «$(1)»<br>ya se ha registrado.<br>A la versión normal «$(0)»<br><yellow>todavía se puede acceder mediante:<c><br><br>・Comandos de chat<br>・Atajos de teclado<br><br>¿Seguro que deseas continuar?
 ItemCommon,1,CostumeRemoveError,No hay suficiente espacio en tu inventario para sacar tus artículos de moda.
 ItemCommon,1,MoveWarehouseErrorMessage10,"No se puede mover, ya que no tienes suficiente espacio<br>en tu inventario de PSO2, o has excedido la<br>capacidad máxima de carga para los objetos."
 ItemCommon,1,Missionpass_ReceiveMessage1,"Actualmente tienes recompensas de Mission Pass no reclamadas. Reclámalos desde el ""Pase de misión"" en ""Tareas/Misiones"" en el menú principal."
-ItemCommon,1,BoostCaveatMessage1,<c>
+ItemCommon,1,BoostCaveatMessage1,"Estás a punto de usar un potenciador.<br>¿Seguro que quieres continuar?<br><br><yellow>Ya estás usando un potenciador con el mismo efecto, por lo que usar este potenciador prolongará la duración del efecto sin cambiar el nombre del objeto que aparece en «Efectos actuales».<c>"
 ItemCommon,1,Use_StorySkip_Message,"¿Usar <yellow>""$(0)""<c>?<br><br>Avanzarás hasta el comienzo del <yellow>capítulo más reciente de la historia principal<c>.<br><br><scarlet>Nota: Se cerrará tu sesión automáticamente tras usarlo.<c><br><br><yellow>Nota: Obtendrás EXP dependiendo de tu progreso tras usarlo.<c><br><yellow>Nota: El contenido de este objeto está sujeto a cambios en futuras actualizaciones.<c>"
 ItemCommon,1,Use_Ticket_Logout,Artículo usado.<br>Se aplicará después de cerrar sesión.
 ItemCommon,1,Error_Use_Ticket_OutsideCity,Este artículo solo se puede usar en bases ARKS como Central City.
