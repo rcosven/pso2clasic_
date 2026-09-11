@@ -11949,8 +11949,8 @@ Synchronize,1,AdvanceRiskReset,Amenaza AQ Lv. El aumento se restableció debido 
 Synchronize,1,BootupLandingCraft,ow>Nota: No podrás cancelar una vez que inicies la persecución. <c>
 Synchronize,1,PaidLeaderMessageWarning,desea continuar?
 Synchronize,1,PaidMemberMessage4,Etapa alcanzada: $(1)
-Synchronize,1,PaidMemberMessage4Warning,"etapa editada, por lo que, incluso si<br>la borra, su estado [Etapa alcanzada] no se actualizará. <c>"
-Synchronize,1,PaidMemberMessage4Warning2,"etapa editada, por lo que, incluso si<br>la borra, su estado [Etapa alcanzada] no se actualizará. <c>"
+Synchronize,1,PaidMemberMessage4Warning,"Estás a punto de gastar los [Artículos requeridos]<br>necesario para comenzar la búsqueda. Tenga en cuenta que no<br>lo hará recupere estos artículos en caso de que abandonar<br>la misión o estar desconectado desde el servidor. ¿Está<br>seguro de que desea continuar? Etapa seleccionada: $(0) Tu<br>etapa actual alcanzada: <yellow>$(1)<br><br>Aún no has llegado a la etapa seleccionada, por lo que,<br>incluso si bórralo, tu estado [Etapa alcanzada] no se<br>actualizará.<c>"
+Synchronize,1,PaidMemberMessage4Warning2,"Estás a punto de gastar los [Artículos requeridos]<br>necesario para comenzar la búsqueda. Tenga en cuenta que no<br>lo hará recupere estos artículos en caso de que abandonar<br>la misión o estar desconectado desde el servidor. ¿Está<br>seguro de que desea continuar? Etapa seleccionada: $(0) Tu<br>etapa actual alcanzada: <yellow>-<br><br>Aún no has llegado a la etapa seleccionada, así que,<br>incluso si Si lo borras, tu estado de [Etapa alcanzada] no<br>se actualizará.<c>"
 Synchronize,1,MaxFloorWarning,No se pudo adquirir su estado de progreso.
 Synchronize,1,MemberMaxFloorWarning,No se pudo adquirir el estado de progreso del miembro.
 Synchronize,1,SelectFloorWarning,Tu [Etapa alcanzada] no se actualizará debido a los requisitos.
@@ -13721,7 +13721,7 @@ Esthetic,1,Reset_Result_DBError,El reinicio auxiliar falló debido a un error de
 Esthetic,1,Reset_Result_Error,Falló el reinicio auxiliar.
 Esthetic,1,DirectUse_Title,CONFIRMAR USO DEL ARTÍCULO
 Esthetic,1,DirectBuy_Title,CONFIRMAR COMPRA DE PASE
-Esthetic,1,Remake_Message,"Al recrear un Auxiliar se restablecerá su apariencia,<br>disposición, afinidad y nivel de clase. <c>"
+Esthetic,1,Remake_Message,"No puedes enviar mensajes de chat mientras estás en el<br>salón. Los mensajes que reciba se conservarán en la ventana<br>de registro.<br><br>Además, tenga en cuenta que las notificaciones relacionadas<br>con fiestas y misiones no te alcanzará mientras estés en el<br>salón.<br><br>Estás a punto de ingresar al salón y recrear tu Auxiliar.<br>¿Está seguro de que desea continuar?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su apariencia,<br>disposición, afinidad y nivel de clase.<c>"
 Esthetic,1,Remake_BuyMessage,"<pict Arcscash> <c ff4f3f>AC Pago requerido<c> Se requiere un <yellow>Pase de reinicio<br>auxiliar<c> para poder recrear tu Auxiliar.<br><br>¿Estás seguro de que quieres pagar 500 AC para comprar<br>un <yellow>Pase de reinicio de auxiliar<c> y recrear tu auxiliar<br>ahora?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su<br>apariencia, disposición, afinidad y nivel de clase.<c><br><br><yellow>Tu AC: $(0)<c>"
 Esthetic,1,Remake_UseMessage,afinidad y nivel de clase. <c>
 Esthetic,1,Remake_OK,Su Auxiliar ha sido restablecido a su estado original.
@@ -19343,7 +19343,7 @@ AMSkillExplanation,0,ArsenalModule:Parameter:HpRecovery,M.A.R.S.の<br>HPが自�
 AMSkillExplanation,0,ArsenalModule:Parameter:PpUp,M.A.R.S.の<br>最大PPが増加する。
 AMSkillExplanation,0,ArsenalModule:Parameter:AtkPpUp,M.A.R.S.兵装による<br>攻撃時のPP回復量が増加する。
 AMSkillExplanation,0,ArsenalModule:Parameter:ResistUp,状態異常になりにくくなる。<br>さらに効果時間を短縮する。
-AMSkillExplanation,1,ArsenalModule:Sword:Overheat,Aumentar daño<br>Consumo total
+AMSkillExplanation,1,ArsenalModule:Sword:Overheat,"Almacena hasta dos cargas de energía golpeando a los enemigos con ataques un número determinado de veces. Aumenta la<br>potencia y la HP recuperada por ataques normales dependiendo del número de cargas. Cuando usas Garm Detonation, todas<br>tus cargas de energía se consumen y el ataque aumenta según el número. <yellow>*Solo se puede utilizar con VA-1SRM Garm.<c>"
 AMSkillExplanation,1,ArsenalModule:Sword:BoostArcane,Aumentar daño<br>Reducción de velocidad
 AMSkillExplanation,1,ArsenalModule:Sword:BoardControl,Recupera HP y PP cuando destruyes enemigos cercanos.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
 AMSkillExplanation,1,ArsenalModule:Sword:BurnerLinkage,Esquiva hábilmente con Forward Thrust.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
