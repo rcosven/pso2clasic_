@@ -100,10 +100,10 @@ Block,1,BlockForm_PublicShip_Exp,"Trasladarte a la Nave Universal implicará aba
 Block,1,BlockForm_PublicShip_Exp_TriggerQuest,"<yellow>¡Hay una misión de activador en curso!</c><br><br>Si te trasladas al Ship común, abandonarás el grupo automáticamente y la misión se cancelará para<br><yellow>todos los participantes, incluido el multiparty.</c><br>¡Solo si aún queda tiempo disponible<br>o intentos para volver a aceptar la misión.<br><br>Además, todos los efectos obtenidos dentro<br>de la misión desaparecerán por completo.<br><br><red>Las mesetas o los objetos consumidos para comenzar<br>la misión no se devolverán, lo que podría<br>causar inconvenientes con otros jugadores.<br>Por favor, ten cuidado.</c><br><br>¿Quieres trasladarte al Ship común?"
 Block,1,BlockForm_MyShip_Exp,"Si regresas a tu nave de origen, abandonarás<br>el grupo automáticamente y la misión que tengas<br>aceptada se cancelará.<br><br>Además, si estás en una misión, todos los<br>efectos obtenidos dentro de ella también<br>desaparecerán por completo.<br><br>¿Quieres regresar a tu nave de origen?"
 Block,1,BlockForm_MyShip_Exp_TriggerQuest,"<yellow>¡Hay una misión de activador en curso!</c><br><br>Si regresas a tu nave de origen, abandonarás el grupo automáticamente y la misión se cancelará para<br><yellow>todos los participantes, incluido el multiparty.</c><br>¡Solo si aún queda tiempo disponible<br>o intentos para volver a aceptar la misión.<br><br>Además, todos los efectos obtenidos dentro<br>de la misión desaparecerán por completo.<br><br><red>Las mesetas o los objetos consumidos para comenzar<br>la misión no se devolverán, lo que podría<br>causar inconvenientes con otros jugadores.<br>Por favor, ten cuidado.</c><br><br>¿Quieres regresar a tu nave de origen?"
-Block,1,BlockForm_Move_Exp_TriggerQuest,"enviado a usted, lo que podría causar problemas. <c>"
+Block,1,BlockForm_Move_Exp_TriggerQuest,"<yellow>¡Tienes una Trigger Quest activa!<c><br><br>Si te mueves a un bloque diferente, automáticamente<br>abandonar tu grupo y <yellow>cualquier miembro del equipo que se<br>haya unido la misión, incluidos los miembros de varios<br>partidos, será forzada para abandonar la misión.<c> *Esto<br>es válido sólo si tienes suficiente tiempo o Quedan<br>oportunidades para volver a aceptar la Trigger Quest.<br><br>Además, cualquier efecto aplicado durante la misión será<br>eliminado.<br><br><red>Tenga en cuenta: Cualquier meseta o elementos consumidos<br>para comenzar la misión. no se le devolverá, lo que<br>podría causar problemas.<c>"
 Block,1,BlockForm_ToMyShip_Exp,"Si te mudas a tu barco, se cancelará el emparejamiento <br>.<br><br> ¿Se muda a su barco?"
 Block,1,BlockForm_ToChallengeLobby_Exp,"Si te mudas al lobby del desafío, se cancelará el emparejamiento <br>.<br><br> ¿Te mudas al lobby del desafío?"
-Block,1,BlockForm_ToBattleLobby_Exp,ing video u<br>otras transmisiones. <c><br><br> ¿Moverte al lobby de batalla?
+Block,1,BlockForm_ToBattleLobby_Exp,"Moverse a un lobby de batalla hará que abandones tu grupo<br>actual y abandonar cualquier misión que hayas aceptado.<br><br>Además, si has aceptado alguna misión, algún efecto<br>aplicado durante esas misiones será cancelado. <red>*Se<br>permite la grabación de video en todos los bloques de<br>batalla. Tu personaje puede aparecer en streaming de<br>vídeo o otras transmisiones.<c><br><br>¿Moverte al lobby de batalla?"
 Block,1,BlockForm_BattleLobbyToBattleLobby_Exp,"Si te mueves a un bloque de batalla, se cancelará el emparejamiento <br>.<br><br> ¿Mover al bloque de batalla?"
 Block,1,BlockForm_BattleLobbyToBattleLobby_Exp_NoMatching,"Te trasladarás a otro bloque de batalla.<br>¿De acuerdo?<br><br><c c0c0c0> Dado que el emparejamiento para el Battle Arena<br> se realiza abarcando todos los bloques, no es necesario<br> que te traslades a un bloque muy concurrido.</c>"
 Block,1,AreaForm_BridgeArea_Exp,¿Mover al puente?
@@ -526,16 +526,16 @@ ConnectError,1,Code224_Code,No se puede confirmar la versión del software.
 ConnectError,1,Code224_Message,No se pudo localizar el servidor.<br>Intente volver a conectarse más tarde.
 ConnectError,1,Code225_Title,Actualización de software
 ConnectError,1,Code225_Code,No se pueden descargar actualizaciones de archivos del sistema.
-ConnectError,1,Code225_Message,".<br>Si este error continúa ocurriendo,<br>por favor contacta a Soporte<br>a través del sitio web oficial."
+ConnectError,1,Code225_Message,"No se puede actualizar a última versión del<br>software. Intente volver a conectarse más tarde.<br>Si este error continúa ocurriendo, por favor<br>contacte a soporte a través del sitio web<br>oficial."
 ConnectError,1,Code226_Title,Actualización de software
 ConnectError,1,Code226_Code,No se pueden descargar actualizaciones de archivos del sistema.
-ConnectError,1,Code226_Message,".<br>Si este error continúa ocurriendo,<br>por favor contacta a Soporte<br>a través del sitio web oficial."
+ConnectError,1,Code226_Message,"No se puede actualizar a última versión del<br>software. Intente volver a conectarse más tarde.<br>Si este error continúa ocurriendo, por favor<br>contacte a soporte a través del sitio web<br>oficial."
 ConnectError,1,Code227_Title,Actualización de software
 ConnectError,1,Code227_Code,No se pueden descargar archivos.
-ConnectError,1,Code227_Message,".<br>Si este error continúa ocurriendo,<br>por favor contacta a Soporte<br>a través del sitio web oficial."
+ConnectError,1,Code227_Message,"No se puede actualizar a última versión del<br>software. Intente volver a conectarse más tarde.<br>Si este error continúa ocurriendo, por favor<br>contacte a soporte a través del sitio web<br>oficial."
 ConnectError,1,Code228_Title,Actualización de software
 ConnectError,1,Code228_Code,No se pueden descargar archivos.
-ConnectError,1,Code228_Message,".<br>Si este error continúa ocurriendo,<br>por favor contacta a Soporte<br>a través del sitio web oficial."
+ConnectError,1,Code228_Message,"No se puede actualizar a última versión del<br>software. Intente volver a conectarse más tarde.<br>Si este error continúa ocurriendo, por favor<br>contacte a soporte a través del sitio web<br>oficial."
 ConnectError,1,Code230_Title,Conexión a la red
 ConnectError,1,Code230_Code,Se ha producido un error de conexión de red.
 ConnectError,1,Code230_Message,No hay respuesta del servidor DNS.<br>Verifique la configuración de su red<br>e inténtelo nuevamente.
@@ -547,16 +547,16 @@ ConnectError,1,Code240_Code,Se ha producido un error de conexión de red.
 ConnectError,1,Code240_Message,No se puede conectar al servidor.<br>Confirme que el servidor está operativo<br>a través de las notificaciones en el sitio web oficial.
 ConnectError,1,Code241_Title,Conexión a la red
 ConnectError,1,Code241_Code,Se ha producido un error de conexión de red.
-ConnectError,1,Code241_Message,"este error continúa ocurriendo,<br>por favor contacta a Soporte a través del sitio web oficial."
+ConnectError,1,Code241_Message,"No se puede conectar al servidor. Intente volver<br>a conectarse más tarde. Si este error continúa<br>ocurriendo, comuníquese con el soporte a través<br>del sitio web oficial."
 ConnectError,1,Code242_Title,Conexión a la red
 ConnectError,1,Code242_Code,Se ha producido un error de conexión de red.
 ConnectError,1,Code242_Message,No se puede conectar al servidor.<br>Intente volver a conectarse más tarde.
 ConnectError,1,Code249_Title,Conexión a la red
 ConnectError,1,Code249_Code,Se ha producido un error de conexión de red.
-ConnectError,1,Code249_Message,"este error continúa ocurriendo, por favor contacta a<br>Soporte a través del sitio web oficial."
+ConnectError,1,Code249_Message,"No se puede conectar al servidor. Intente volver<br>a conectarse más tarde. Si este error continúa<br>ocurriendo, por favor contacte Soporte a través<br>del sitio web oficial."
 ConnectError,1,Code250_Title,Conexión a la red
 ConnectError,1,Code250_Code,Se ha producido un error de conexión de red.
-ConnectError,1,Code250_Message,"continúa ocurriendo,<br>comuníquese con Soporte a través del sitio web oficial.<br>[Nº250 - $(0) ]"
+ConnectError,1,Code250_Message,"No se puede conectar al servidor. Intente volver<br>a conectarse más tarde. Si este error continúa<br>ocurriendo, comuníquese con el soporte a través<br>del sitio web oficial. [ N°250 - $(0) ]"
 ConnectError,1,Code601_Title,Error de autenticación de ID
 ConnectError,1,Code601_Code,No se puede autenticar PlayID.
 ConnectError,1,Code601_Message,asy Star Online 2<br>official website for maintenance information.
@@ -769,16 +769,16 @@ ConnectError,1,Code712_Code,No tienes suficiente aire acondicionado para acceder
 ConnectError,1,Code712_Message,"Para comprar aire acondicionado,<br>visite la tienda de aire acondicionado desde el menú principal<br>y seleccione ""Comprar aire acondicionado""."
 ConnectError,1,Code810_Title,Advertencia
 ConnectError,1,Code810_Code,Se ha presentado una denuncia en su contra.
-ConnectError,1,Code810_Message,"conducto.<br>Para obtener más información, visite<br>el sitio web oficial de Phantasy Star Online 2."
+ConnectError,1,Code810_Message,"Tenga en cuenta que su cuenta puede estar restringida si<br>no observa una conducta adecuada en línea. Para obtener<br>más información, visite el sitio web oficial de Phantasy<br>Star Online 2."
 ConnectError,1,Code811_Title,Advertencia
 ConnectError,1,Code811_Code,Se ha presentado una denuncia en su contra.
-ConnectError,1,Code811_Message,"ne<br>conducta. Para obtener más información, visite<br>el sitio web oficial de Phantasy Star Online 2."
+ConnectError,1,Code811_Message,"Tenga en cuenta que podemos bloquear su conexión. al<br>servidor si no cumple con las normas en línea adecuadas<br>conducta. Para obtener más información, visite el sitio<br>web oficial de Phantasy Star Online 2."
 ConnectError,1,Code812_Title,Cuenta suspendida
 ConnectError,1,Code812_Code,Su cuenta está actualmente suspendida.
 ConnectError,1,Code812_Message,"Para comunicarse con el soporte, <br>, visite el sitio web oficial de Phantasy Star Online 2."
 ConnectError,1,Code813_Title,Cuenta suspendida
 ConnectError,1,Code813_Code,Su cuenta ha sido suspendida temporalmente.
-ConnectError,1,Code813_Message,"this time.<br>To contact Support,<br>please visit the Phantasy Star Online 2 official website."
+ConnectError,1,Code813_Message,"A tu suspensión le quedan %d. No podrás jugar Phantasy Star<br>Online 2 durante este tiempo. Para contactar con soporte,<br>visita el sitio web oficial de Phantasy Star Online 2."
 ConnectError,1,Code814_Title,Cuenta suspendida
 ConnectError,1,Code814_Code,Su cuenta está actualmente suspendida.
 ConnectError,1,Code814_Message,"Para comunicarse con el soporte, <br>, visite el sitio web oficial de Phantasy Star Online 2."
@@ -787,7 +787,7 @@ ConnectError,1,Code815_Code,Ciertas funciones están actualmente restringidas en
 ConnectError,1,Code815_Message,"Para comunicarse con el soporte, <br>, visite el sitio web oficial de Phantasy Star Online 2."
 ConnectError,1,Code911_Title,Confirmación del entorno operativo
 ConnectError,1,Code911_Code,Ha ocurrido un error inesperado.
-ConnectError,1,Code911_Message,"En línea 2. Si necesita más<br>asistencia, comuníquese con el fabricante o<br>minorista de su computadora."
+ConnectError,1,Code911_Message,"Confirme que su plataforma actual es compatible con<br>los requisitos de funcionamiento para Phantasy Star<br>Online 2. Si necesita más asistencia, póngase en<br>contacto con el fabricante o minorista de su<br>computadora."
 ConnectError,1,SignOut_PS4,Has cerrado sesión en “PlayStation™Network”.<br>Volverás a la pantalla de título.
 ConnectError,1,TokuteiURL,<&URL pso2_players_support_rule_tokutei>
 ConnectError,1,TokuteiURL_v,<&URL pso2_players_support_rule_tokutei_vita>
@@ -800,7 +800,7 @@ ConnectError,1,Code662_Code,No se puede mover al servidor seleccionado.
 ConnectError,1,Code662_Message,No se puede mover al servidor seleccionado<br>debido a una misión en curso.
 ConnectError,1,Code704_Title,Transferencia en bloque
 ConnectError,1,Code704_Code,No se puede mover al bloque. Los siguientes 3 títulos no se han obtenido.
-ConnectError,1,Code704_Message,las 3 categorías a +10 y equípalas.
+ConnectError,1,Code704_Message,"<yellow>Defensor solitario<c> → Completa hasta la Etapa 5 de ""Entrenamiento de<br>élite: Polo a Polo"" a pie. <yellow>Creador de armas finas/Un entrenador de<br>mascotas pionero<c> → Mejora el arma o entrena una mascota de rareza 13<br>o superior al máximo. nivel. <yellow>Una base sólida como una roca<c> → Mejora<br>Rarity 12 unidades para las 3 categorías a +10 y equípalas."
 ConnectError,1,Code705_Title,Transferencia en bloque
 ConnectError,1,Code705_Code,No se puede pasar al bloque seleccionado.
 ConnectError,1,Code705_Message,No se puede transferir. Uno o más miembros del grupo no pueden transferirse al bloque seleccionado.
@@ -4204,9 +4204,9 @@ Notice,1,NewTitleTeam,Responder a la Alianza Scouting
 Notice,1,NewTitleTrade,Responder a la solicitud comercial
 Notice,1,NewCheckMail,Indefinido
 Notice,1,NewCheckFriendList,"Si selecciona ""No"", también puede enviar una respuesta<br>más tarde seleccionando ""Lista de amigos"" en el menú principal."
-Notice,1,NewCheckParty,"Si seleccionas ""No"", puedes enviar una respuesta más tarde<br>seleccionando ""Comandos de grupo"" en el Menú principal."
+Notice,1,NewCheckParty,"Has recibido una invitación a una fiesta de $(0).<br>¿Le gustaría abrir una ventana de respuesta?<br><br>*Si seleccionas ""No"", también puedes enviar una<br>respuesta más tarde seleccionando ""Comandos del<br>grupo"" en el menú principal."
 Notice,1,NewCheckTrade,Has recibido una solicitud de intercambio de<br>$(0).<br>¿Te gustaría abrir una ventana de respuesta?
-Notice,1,NewCheckTeam,"><yellow>Si seleccionas ""No"", puedes enviar una respuesta más tarde seleccionando [Comandos de Alliance] en el Menú principal.<c>"
+Notice,1,NewCheckTeam,"Has sido explorado por $(0) para su Alianza $(1). ¿Le gustaría abrir una ventana de respuesta?<br><br><yellow>*Si seleccionas ""No"", también puedes enviar una respuesta más tarde seleccionando [Comandos de Alianza]<br>en el Menú Principal.<c>"
 Notice,1,PremiumEnd,Tu estado Premium está a punto de caducar.
 Notice,1,NewQuest,Confirmar la aceptación de la misión
 Notice,1,NewExpQuest,Te han invitado a unirte a una misión.
@@ -4261,15 +4261,15 @@ PlayGo,0,PlayGo_DLC_Confirm_Message_Epic,移動先のエリアのデータがイ
 PlayGo,1,download_progress,Progreso de la instalación: $(0)%
 PlayGo,1,PlayGo_AreaMove_Message,"Por favor, espera a que finalice la instalación<br>antes de intentar acceder.<br><br>Progreso de la instalación: $(0)%"
 PlayGo,1,PlayGo_Confirm_Message,<br><yellow>Requiere suficiente espacio en disco. La descarga puede tardar un tiempo.<c>
-PlayGo,1,PlayGo_Confirm_Message_FirstTime,<yellow>Este proceso puede requerir una cantidad considerable de tiempo.<c><br><br>¿Descargar datos adicionales?
-PlayGo,1,PlayGo_Confirm_Message_FirstTime_Epic,<yellow>Debes salir del juego para poder descargar datos adicionales.<c><br><br>¿Descargar datos adicionales?
+PlayGo,1,PlayGo_Confirm_Message_FirstTime,"Se requieren datos adicionales para descargar y jugar Phantasy Star Online 2, que se lanzó antes de Phantasy Star Online 2 New<br>Genesis.<br><br>Si no tienes intención de jugar Phantasy Star Online 2 ahora, selecciona [No].<br><br>Nota: Siempre podrás descargar estos datos más tarde.<br><br><yellow>La descarga puede tardar una cantidad de tiempo considerable.<c><br><br>¿Descargar datos adicionales?"
+PlayGo,1,PlayGo_Confirm_Message_FirstTime_Epic,"Se requieren datos adicionales para descargar y jugar Phantasy Star Online 2, que se lanzó antes de Phantasy Star Online 2 New<br>Genesis.<br><br>Si no tienes intención de jugar Phantasy Star Online 2 ahora, selecciona [No].<br><br>Nota: Siempre podrás descargar estos datos más tarde.<br><br><yellow>La descarga puede tardar una cantidad de tiempo considerable. Debes salir del juego para poder descargar datos adicionales.<c><br><br>¿Descargar datos adicionales?"
 PlayGo,1,PlayGo_DL_ Notice_Message,"Se produjo un error al descargar los datos del área.<br><br>Por favor, intente descargar los datos de nuevo."
 PlayGo,1,PlayGo_IS_ Notice_Message,"Se produjo un error al instalar los datos del área.<br><br>Por favor, intenta descargar los datos de nuevo."
 PlayGo,1,PlayGo_CharaSelect_Title,MENSAJE
 PlayGo,1,PlayGo_CharaSelect_Message,No puede acceder a este archivo hasta que se complete la instalación de datos.<br><br>Intente hacer su selección nuevamente después de que los datos hayan terminado de instalarse.
 PlayGo,1,PlayGo_IS_Uncompleted_Message,"Por favor, espera a que finalice la instalación<br>antes de intentar acceder.<br><br>"
-PlayGo,1,PlayGo_DLC_Confirm_Message,<yellow>Este proceso puede llevar algo de tiempo.<c>
-PlayGo,1,PlayGo_DLC_Confirm_Message_Epic,<yellow>Debes salir del juego para poder descargar datos adicionales.<c>
+PlayGo,1,PlayGo_DLC_Confirm_Message,No puedo moverme. Los datos para el área de destino no están instalados o no han terminado de<br>descargarse.<br><br>¿Descargar datos adicionales ahora? Al seleccionar [Sí] se abrirá la página del almacén de datos<br>adicional.<br><br><yellow>Requiere suficiente espacio disponible en disco. La descarga puede tardar algún tiempo.<c>
+PlayGo,1,PlayGo_DLC_Confirm_Message_Epic,No puedo moverme. Los datos para el área de destino no están instalados o no han terminado de<br>descargarse.<br><br>¿Descargar datos adicionales ahora? Al seleccionar [Sí] se abrirá la página del almacén de datos<br>adicional.<br><br><yellow>Requiere suficiente espacio disponible en disco. La descarga puede tardar algún tiempo. Debes<br>salir del juego para poder descargar datos adicionales.<c>
 QuickCharge,0,AcQuickChargeCoin,$(0)<pict Arcscash>
 QuickCharge,0,AcQuickChargePrice,$(0)円(税込)
 QuickCharge,0,AcQuickChargeTitle,ACクイックチャージ確認
@@ -4368,7 +4368,7 @@ QuickCharge,1,PayCharge_MenuTitle,Cobrar con LINE Pay
 QuickCharge,1,PayCharge_MenuQRButton,Próximo
 QuickCharge,1,PayCharge_MenuReturnButton,Atrás
 QuickCharge,1,PayCharge_MenuExplain,"Seleccione cómo desea<br>cargar CA y presione ""Siguiente""."
-QuickCharge,1,PayCharge_MenuDetails,"Para usar LINE Pay,<br>debes tener la aplicación LINE instalada en tu smartphone,<br>tablet u otro dispositivo.<br><br><yellow>Instala LINE aquí.<c>"
+QuickCharge,1,PayCharge_MenuDetails,"Carga AC con LINE Pay.<br><br>La cantidad seleccionada será deducido de su<br>saldo de LINE Pay.<br><br>Para utilizar LINE Pay, debes tener LINE<br>instalado en tu teléfono inteligente, tableta u<br>otro dispositivo.<br><br><yellow>Instala LINE aquí.<c>"
 QuickCharge,1,PayCharge_QRTitle,Cobrar con LINE Pay
 QuickCharge,1,PayCharge_QRExplainDown,N.º de código: $(0)
 QuickCharge,1,PayCharge_RedrawYes,Actualizar
@@ -4494,7 +4494,7 @@ SecondPassword,0,VitaOpenWeb_Title,ブラウザー起動確認
 SecondPassword,0,VitaOpenWeb_Text,Webページへ移動します。<br>ログアウトしてゲームを終了しますが<br>よろしいですか？
 SecondPassword,0,Erase_Error,お客様が現在プレイされている環境では、<br>アイテム取引パスワードをリセットできません。<br><br>アイテム取引パスワードのリセットは<br>サポートページでも、受け付けております。<br><br>サポートページより、リセット申請を行いますか？
 SecondPassword,1,Notice_Title,Segunda contraseña no establecida
-SecondPassword,1,Notice_Text,"o <yellow>números fáciles de adivinar<c>, como dígitos repetidos<br>o números consecutivos."
+SecondPassword,1,Notice_Text,"Su segunda contraseña se utiliza para evitar compras de<br>artículos de inicios de sesión no autorizados.<br><br>Necesitará establecer una segunda contraseña para acceder<br>a ciertos funciones, como el comercio de artículos.<br><br>Su segunda contraseña debería ser difícil de adivinar para<br>otros. No debe contener información personal como su fecha<br>de nacimiento, dirección o número de teléfono, o <yellow>números<br>fáciles de adivinar<c> como repetidos o dígitos consecutivos."
 SecondPassword,1,Notice_Button1,Confirmar
 SecondPassword,1,Notice_Button2,Cancelar
 SecondPassword,1,Edit_Title,Registrar segunda contraseña
@@ -4521,8 +4521,8 @@ SecondPassword,1,Edit_Error_Button1,Confirmar
 SecondPassword,1,Entry_Title,Ingrese la segunda contraseña
 SecondPassword,1,Entry_Text,Por favor ingrese su segunda contraseña. (<yellow>5 dígitos<c>)
 SecondPassword,1,Entry_Menu1,Contraseña
-SecondPassword,1,Entry_Notice,"et."""
-SecondPassword,1,Entry_NoticeV,"Olvidó su segunda contraseña, <br>, seleccione la opción ""Segunda contraseña"" en el manual en línea. <c>"
+SecondPassword,1,Entry_Notice,"Para su seguridad, ingrese su segunda contraseña<br>utilizando el ratón y los botones que se muestran a la<br>derecha.<br><br>Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces. Para cambiar o restablecer su<br>segunda contraseña, seleccione ""Cambiar/Restablecer""."
+SecondPassword,1,Entry_NoticeV,"Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces. <yellow>Si has olvidado tu segunda<br>contraseña, seleccione la opción ""Segunda contraseña"" en el<br>manual en línea.<c>"
 SecondPassword,1,Entry_Button1,Confirmar
 SecondPassword,1,Entry_Button2,Cancelar
 SecondPassword,1,Entry_Text2,Cambie o elimine su segunda contraseña.
@@ -4535,8 +4535,8 @@ SecondPassword,1,Change_Text,Por favor ingrese su segunda contraseña. (<yellow>
 SecondPassword,1,Change_Menu1,Contraseña anterior
 SecondPassword,1,Change_Menu2,Nueva contraseña
 SecondPassword,1,Change_Menu3,Volver a entrar en
-SecondPassword,1,Change_Notice,"Para restablecer tu segunda contraseña,<br>por favor, selecciona ""Restablecer contraseña""."
-SecondPassword,1,Change_NoticeV,"><br>Para restablecer tu segunda contraseña,<br>selecciona ""Restablecer contraseña""."
+SecondPassword,1,Change_Notice,"Para su seguridad, ingrese su segunda contraseña<br>utilizando el ratón y los botones que se muestran a la<br>derecha. Para restablecer su segunda contraseña,<br>seleccione ""Restablecer contraseña""."
+SecondPassword,1,Change_NoticeV,"Necesitará su segunda contraseña para<br>realizar transacciones de artículos.<br><br>Para restablecer su segunda contraseña,<br>seleccione ""Restablecer contraseña""."
 SecondPassword,1,Change_Button2,Cancelar
 SecondPassword,1,Change2_Title,Confirmar
 SecondPassword,1,Change2_Text,Tu segunda contraseña será modificada.<br>¿Estás seguro de que deseas continuar?
@@ -4548,8 +4548,8 @@ SecondPassword,1,Changed_Button1,Confirmar
 SecondPassword,1,Remove_Title,Eliminar segunda contraseña
 SecondPassword,1,Remove_Text,"Por favor, introduce tu segunda contraseña. (<yellow>5 dígitos<c>)"
 SecondPassword,1,Remove_Menu1,Contraseña
-SecondPassword,1,Remove_Notice,Tu segunda contraseña se bloqueará<br>si se introduce incorrectamente 6 veces.
-SecondPassword,1,Remove_NoticeV,"Si olvidaste tu segunda contraseña,<br>consulta la sección ""Segunda contraseña"" en el manual en línea.<c>"
+SecondPassword,1,Remove_Notice,"Para su seguridad, ingrese su segunda contraseña<br>utilizando el ratón y los botones que se muestran a la<br>derecha.<br><br>Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces."
+SecondPassword,1,Remove_NoticeV,"Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces. <yellow>Si has olvidado tu segunda<br>contraseña, seleccione la opción ""Segunda contraseña"" en el<br>manual en línea.<c>"
 SecondPassword,1,Remove_Button1,Borrar
 SecondPassword,1,Remove_Button2,Cancelar
 SecondPassword,1,Remove2_Title,Confirmar
@@ -4559,11 +4559,11 @@ SecondPassword,1,Remove2_Button2,No
 SecondPassword,1,Removed_Title,Eliminar segunda contraseña
 SecondPassword,1,Removed_Text,Tu segunda contraseña ha sido eliminada.
 SecondPassword,1,Removed_Button1,Confirmar
-SecondPassword,1,Edit_NoticePS4,br><br>Puede usar el mouse y los botones que se muestran a la derecha<br>para ingresar su segunda contraseña.
-SecondPassword,1,Entry_NoticePS4,e Manual en línea. <c>
+SecondPassword,1,Edit_NoticePS4,Se requerirá la segunda contraseña que haya registrado cada<br>vez que realiza una transacción de artículo.<br><br>Puede utilizar el ratón y los botones que se muestran a la<br>derecha. para ingresar su segunda contraseña.
+SecondPassword,1,Entry_NoticePS4,"Puede utilizar el ratón y los botones que se muestran a la<br>derecha. para ingresar su segunda contraseña.<br><br>Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces. <yellow>Si has olvidado tu segunda<br>contraseña, seleccione la opción ""Segunda contraseña"" en el<br>manual en línea.<c>"
 SecondPassword,1,Entry_Button5,Restablecer contraseña
-SecondPassword,1,Change_NoticePS4,"Tu segunda contraseña.<br>Para restablecer tu segunda contraseña,<br>selecciona ""Restablecer contraseña""."
-SecondPassword,1,Remove_NoticePS4,Tu segunda contraseña se bloqueará<br>si se ingresa incorrectamente 6 veces.
+SecondPassword,1,Change_NoticePS4,"Puede utilizar el ratón y los botones que se muestran a la<br>derecha. para ingresar su segunda contraseña. Para<br>restablecer su segunda contraseña, seleccione ""Restablecer<br>contraseña""."
+SecondPassword,1,Remove_NoticePS4,Puede utilizar el ratón y los botones que se muestran a la<br>derecha. para ingresar su segunda contraseña.<br><br>Su segunda contraseña será bloqueada si se ingresa<br>incorrectamente 6 veces.
 SecondPassword,1,Erase_Title,Restablecer segunda contraseña
 SecondPassword,1,Erase_Text,"Por favor, revisa los detalles de tu plataforma.<br>Si no se requieren cambios, se restablecerá tu contraseña.<br>¿Deseas restablecer tu contraseña?"
 SecondPassword,1,Erased_Text,Tu segunda contraseña ha sido restablecida.
@@ -4609,9 +4609,9 @@ ShipBattle,1,GmMsgF_000,¡Atención! La competición de naves ARKS N.º $(4) est
 ShipBattle,1,GmMsgF_001,¡Atención! La ronda $(1) de la competición de naves ARKS N.º $(0) está en marcha. Les deseamos a todos los competidores mucha suerte.
 ShipBattle,1,GmMsgF_002,"¡Atención! La ronda $(4) comenzará el $(0)/$(1) a las $(2):$(3). Participantes, hagan todos los preparativos necesarios."
 ShipBattle,1,GmMsgF_004,esperan a que se anuncien. Gracias a todos por su participación y paciencia.
-ShipBattle,1,GmMsgF_005,Preséntense frente al monitor del vestíbulo en la zona comercial. Se requiere su presencia. Cambio.
+ShipBattle,1,GmMsgF_005,"¡Atención! El $(0)/$(1), en$(2):$(3), los resultados de la reciente ronda de competencia se presentarán frente al Lobby Monitor en Shopping Plaza. Se solicita su presencia. Encima."
 ShipBattle,1,GmMsgF_006,Deseamos expresar nuestro más sincero agradecimiento a todos nuestros competidores.
-ShipBattle,1,GmMsgF_007,$(0)/$(1) a las $(2):$(3) frente al monitor del vestíbulo en la zona comercial. Esperamos verlos allí.
+ShipBattle,1,GmMsgF_007,¡Atención! Los resultados de la ronda final del ARKS Concurso de Barcos No. $(4) se presentarán el $(0)/$(1) en $(2):$(3) frente al Lobby Monitor en Shopping Plaza. Esperamos verte allí.
 ShipName,0,Ship01,Ship01:フェオ
 ShipName,0,Ship02,Ship02:ウル
 ShipName,0,Ship03,Ship03:ソーン
@@ -4864,7 +4864,7 @@ FullSizeGuide,1,Guide_ItemPack_01,Selección múltiple:<%MultiSelect>Cambiar ven
 FullSizeGuide,1,Guide_Scratch_01,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo:<%NextWidget>Restablecer vista previa: <%MultiSelect>
 FullSizeGuide,1,Guide_Shop_01,e Ventana activa:<%ChangeCtrlWindowForward>Detalles del paquete abierto: <%NextTabDetails>
 FullSizeGuide,1,Guide_Submenu_01,Change Sorting: <%MultiSelect>     Reset Sorting: <%ChangeCtrlWindowForward>
-FullSizeGuide,1,Guide_Vitaldesign_01,n> Agregar a/Editar favoritos:<%NextTabDetails>Cambiar ventana activa: <%ChangeCtrlWindowForward>
+FullSizeGuide,1,Guide_Vitaldesign_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Vista previa: <%Function> Agregar a/Editar favoritos: <%NextTabDetails> Cambiar ventana<br>activa: <%ChangeCtrlWindowForward>
 FullSizeGuide,1,Guide_ItemRecycle_01,Ventana activa: <%ChangeCtrlWindowForward>    Eliminar todos los iconos nuevos: <%NextTabDetails>
 FullSizeGuide,1,Guide_AlwaysLockon_01,Bloqueo:
 FullSizeGuide,1,Guide_AlwaysLockon_02,<%LockOn>
