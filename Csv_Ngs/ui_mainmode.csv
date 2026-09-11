@@ -15861,7 +15861,7 @@ PokaMenu,1,PokaMenu_GatheringInfo,Recopilación de información
 PokaMenu,1,PokaMenu_MoveBlockTitle,CONFIRMAR TRANSFERENCIA EN BLOQUE
 PokaMenu,1,PokaMenu_MoveShipTitle,CONFIRMAR TRANSFERENCIA DE ENVÍO
 PokaMenu,1,PokaMenu_MoveBlockMessage,para proceder al Bloque de Batalla?
-PokaMenu,1,PokaMenu_MoveShipMessage,en cualquier momento regresando al Barco Universal.<c><br> ¿Estás seguro de que quieres regresar a tu barco?
+PokaMenu,1,PokaMenu_MoveShipMessage,"Estás a punto de regresar a tu propio barco. las condiciones<br>especiales que se aplican en el Universal Ship ya no se<br>aplicarán.<br><br>- No podrás acceder a Amigos, al correo ni al arte simbólico.<br>añadido mientras estás en el Barco Universal.<br>- Las monedas de batalla obtenidas en Battle Arena se<br>compartirán<br>con tu barco.<br>- Información relativa a tu batalla de barcos universal<br>La clasificación se tabulará por separado de la información de<br>su propio barco.<br><br><yellow>Cuando regreses a tu barco, una entrada de inicio de sesión se<br>agregará a su historial de inicio de sesión.<c><br><br><red>Nota: Puedes consultar tu estado en el Barco Universal en<br>cualquier momento regresando al Barco Universal.<c> ¿Estás seguro<br>de que quieres regresar a tu barco?"
 PokaMenu,1,PokaMenu_Content_BasnetInfo,Información sobre la misión Buster
 BonusEffect,0,BonusEffect_Title1,特殊能力因子確認
 BonusEffect,0,BonusEffect_Head1,特殊能力因子名
@@ -15878,8 +15878,8 @@ BonusEffect,1,BonusEffect_Title1,Efectos de bonificación
 BonusEffect,1,BonusEffect_Head1,Efecto de bonificación
 BonusEffect,1,BonusEffect_Head2,Tasa de éxito
 BonusEffect,1,BonusEffect_Head3,Detalles
-BonusEffect,1,Confirm_Desc,g [Factor(es) de aumento] pasarán a ser<br>desbloqueados y seleccionables al colocar aumentos.
-BonusEffect,1,Confirm_Desc2,Detalles
+BonusEffect,1,Confirm_Desc,"Cuando <yellow>$(0)<c> El nivel de mejora aumenta <green>+35,<c> los<br>siguientes [Factor(es) de aumento] se<br>convertirán desbloqueado y seleccionable al<br>colocar aumentos."
+BonusEffect,1,Confirm_Desc2,"Cuando <yellow>$(0)<c> El nivel de mejora<br>aumenta <green>+10<c>, los siguientes factores<br>de aumento se desbloquea y se puede<br>seleccionar al colocar aumentos."
 BonusEffect,1,Confirm_Probability,$(0)%
 BonusEffect,1,Confirm_GetDataErrorTitle,VERIFICAR EL FACTOR DE AUMENTO
 BonusEffect,1,Confirm_GetDataErrorMessage,No se pudo adquirir la información del factor de aumento.
@@ -15907,7 +15907,7 @@ EP5Prologue,1,ChangeToEP4Mode,Cambiado al episodio 4.
 EP5Prologue,1,ChangeToEP5Mode,Cambiado al episodio 5.
 EP5Prologue,1,ChangeToEP6Mode,Cambiado al episodio 6.
 EP5Prologue,1,EP5Prologue_EP4StoryBoard_Title,CAMBIO DE EPISODIOS EN CURSO
-EP5Prologue,1,EP5Prologue_EP4StoryBoard_Message,Cambiado al episodio 6.
+EP5Prologue,1,EP5Prologue_EP4StoryBoard_Message,Storyboard (Ep. 4) sólo se puede seleccionar en<br>Ep. 4 modos.<br><br>Por favor haz tu selección después de hablar con<br>Xiera. en el Puente y cambiando al Ep. 4.
 EP5Prologue,1,EP5Prologue_ProgressionEP_1-3,Eps. 1 a 3
 EP5Prologue,1,EP5Prologue_ProgressionEP_4,Ep. 4
 EP5Prologue,1,EP5Prologue_ProgressionEP_5,Ep. 5
@@ -15956,7 +15956,7 @@ Basnet,1,Basnet_Grade_Limited,<bright_orange> Partido principal <c>
 Basnet,1,Basnet_Grade_Story,<soft_pink2> Historia <c>
 Basnet,1,Basnet_Down_Support,"Se unió al modo<yellow>Free Match <c>, debido a miembros de bajo nivel."
 EventQuest,0,Reward_Message,以下の報酬を受け取りました。
-EventQuest,1,Reward_Message,Received the following reward(s).
+EventQuest,1,Reward_Message,Recibiste las siguientes<br>recompensas.
 ChallengeQuest,0,Achievement_Up,実績名(+$(0)CP)
 ChallengeQuest,0,Achievement_Down,を達成しました！
 ChallengeQuest,0,Clear_Msg,チャレンジクリア率：MISSION$(0) $(1)%
@@ -16062,7 +16062,7 @@ SeasonEvent,1,SeasonEventNpcText2,Ver información del evento en línea
 SeasonEvent,1,SeasonEventNpcText3,Ver recompensas de puntos individuales
 SeasonEvent,1,SeasonEventNpcText4,Ver recompensas de clasificación
 SeasonEvent,1,SeasonEventNpcText5,Ver clasificación de puntos por barco
-SeasonEvent,1,SeasonEventQRWindowHelp,Ver recompensas de clasificación
+SeasonEvent,1,SeasonEventQRWindowHelp,"Esto abrirá la página del evento en su navegador. ¿Está seguro de<br>que desea continuar? Si tienes un smartphone o tablet, también<br>puedes escanear el código QR."
 SeasonEvent,1,SeasonEventQRWindowTitle,INICIAR NAVEGADOR
 SeasonEvent,1,SeasonEventRankingRewardTitle,RECOMPENSAS DE CLASIFICACIÓN DE PUNTOS DE ENVÍO
 SeasonEvent,1,SeasonEventPointRewardTitle,RECOMPENSAS DE PUNTOS INDIVIDUALES
@@ -16095,7 +16095,7 @@ SeasonEvent,1,SeasonEvent_Reb_Exchange_Title,Intercambio de artículos
 SeasonEvent,1,SeasonEvent_Reb_Exchange_TitleTelop,Tienda de intercambio de puntos de temporada
 SeasonEvent,1,SeasonEvent_Reb_Exchange_2lineguide,Puedes canjear los puntos de temporada obtenidos por artículos.
 SeasonEvent,1,SeasonEvent_Reb_ItemExchange_TitleTelop,Tienda de intercambio de artículos de temporada
-SeasonEvent,1,SeasonEvent_Reb_ItemExchange_2lineguide,Puedes canjear los puntos de temporada obtenidos por artículos.
+SeasonEvent,1,SeasonEvent_Reb_ItemExchange_2lineguide,Intercambie ciertos artículos para recibir productos. Obtendrá mayores rendimientos para algunos productos entregando más de la<br>cantidad requerida.
 SeasonEvent,1,Title_BuyData,Información de compra
 SeasonEvent,1,SeasonEvent_Reb_Exchange_1,Puntos actuales
 SeasonEvent,1,SeasonEvent_Reb_Exchange_2,Puntos necesarios
