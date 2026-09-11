@@ -999,15 +999,50 @@
             });
         }
         
+        function getVisibleLength(str) {
+            if (!str) return 0;
+            // Elimina etiquetas del juego <yellow>, <c>, etc. para contar caracteres visuales reales
+            return str.replace(/<[^>]+>/g, '').length;
+        }
+
+        function restoreGameTags(str) {
+            if (!str) return str;
+            const map = {
+                'amarillo': 'yellow',
+                'rojo': 'red',
+                'verde': 'green',
+                'azul': 'blue',
+                'naranja': 'orange',
+                'blanco': 'white',
+                'negro': 'black',
+                'gris': 'gray',
+                'rosa': 'pink',
+                'rosado': 'pink',
+                'morado': 'purple',
+                'violeta': 'purple',
+                'cian': 'cyan',
+                'dorado': 'gold',
+                'verde oscuro': 'Dgreen',
+                'verdeoscuro': 'Dgreen'
+            };
+            return str.replace(/<([a-záéíóúñ\s_]+)>/gi, (match, p1) => {
+                const lower = p1.trim().toLowerCase();
+                if (map[lower]) {
+                    return `<${map[lower]}>`;
+                }
+                return match;
+            });
+        }
+
         function getEnglishMaxLineLength() {
             const boxEn = document.getElementById('box-english');
             if (!boxEn || !boxEn.value) return 0;
             const lines = boxEn.value.replace(/<br\s*\/?>/gi, '\n').split(/\r?\n/);
             let maxLen = 0;
             for (const rawLine of lines) {
-                const trimmed = rawLine.trim();
-                if (trimmed.length > maxLen) {
-                    maxLen = trimmed.length;
+                const visLen = getVisibleLength(rawLine.trim());
+                if (visLen > maxLen) {
+                    maxLen = visLen;
                 }
             }
             return maxLen;
@@ -1028,8 +1063,8 @@
                     continue;
                 }
 
-                // Si la línea ya entra dentro del ancho máximo, NO tocarla ni fusionarla
-                if (trimmed.length <= maxLen) {
+                // Si los caracteres visuales de la línea entran dentro del máximo, NO tocarla
+                if (getVisibleLength(trimmed) <= maxLen) {
                     resultLines.push(trimmed);
                     continue;
                 }
@@ -1040,7 +1075,7 @@
                 for (const word of words) {
                     if (!curLine) {
                         curLine = word;
-                    } else if ((curLine + ' ' + word).length <= maxLen) {
+                    } else if (getVisibleLength(curLine + ' ' + word) <= maxLen) {
                         curLine += ' ' + word;
                     } else {
                         resultLines.push(curLine);
@@ -1070,12 +1105,13 @@
                 maxEnLen = Math.max(maxEnLen, 35);
             }
 
-            const originalText = target.value;
-            const wrapped = wrapTextRespectingWords(originalText, maxEnLen);
+            // Restaurar cualquier etiqueta de color traducida por error (ej: <amarillo> -> <yellow>)
+            let processedText = restoreGameTags(target.value);
+            const wrapped = wrapTextRespectingWords(processedText, maxEnLen);
 
             target.value = wrapped;
             target.dispatchEvent(new Event('input', { bubbles: true }));
-            showNotification("📏", `Líneas ajustadas sin cortar palabras (máx: ${maxEnLen} caracteres)`);
+            showNotification("📏", `Líneas ajustadas (etiquetas protegidas, máx: ${maxEnLen} chars)`);
         }
 
         async function translateAndPaste(id, btn) {
@@ -1091,8 +1127,16 @@
                 btn.innerHTML = '⏳ Traduciendo...';
             }
 
-            const textToTranslate = el.value.replace(/<br\s*\/?>/gi, "\n");
+            let textToTranslate = el.value.replace(/<br\s*\/?>/gi, "\n");
             const srcLang = id === 'box-japanese' ? 'ja' : (id === 'box-english' ? 'en' : 'auto');
+
+            // Proteger etiquetas del juego <...> (ej: <yellow>, <c>, <tab>) para que Google no las traduzca
+            const tags = [];
+            textToTranslate = textToTranslate.replace(/<(?!br\s*\/?>)[^>]+>/gi, (match) => {
+                const idx = tags.length;
+                tags.push(match);
+                return `[[TAG${idx}]]`;
+            });
 
             try {
                 let translatedText = '';
@@ -1143,6 +1187,15 @@
                     throw new Error("No se obtuvo respuesta del servicio de traducción.");
                 }
 
+                // Restaurar las etiquetas originales intactas
+                for (let i = 0; i < tags.length; i++) {
+                    const tagRegex = new RegExp(`\\[\\[\\s*TAG${i}\\s*\\]\\]`, 'gi');
+                    translatedText = translatedText.replace(tagRegex, tags[i]);
+                }
+
+                // Asegurar que ninguna etiqueta de color quede en español
+                translatedText = restoreGameTags(translatedText);
+
                 // Ajustar líneas automáticamente respetando palabras completas según el inglés
                 const maxEnLen = getEnglishMaxLineLength();
                 if (maxEnLen >= 25) {
@@ -1158,7 +1211,7 @@
                     target.focus();
                 }
 
-                showNotification("✨", "¡Texto traducido y ajustado por líneas!");
+                showNotification("✨", "¡Texto traducido con etiquetas protegidas!");
             } catch (err) {
                 console.error("Error al traducir automáticamente:", err);
                 showNotification("❌", "No se pudo traducir automáticamente. Abriendo Google Traductor...");
