@@ -481,6 +481,7 @@
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <label style="margin-bottom: 0;" id="label-editable">Traducción al Español <span class="badge-edit">(Enter se guarda como &lt;br&gt;)</span> <span id="count-spanish" style="font-size: 11px; color: #8b949e; margin-left: 6px; font-weight: 500;"></span></label>
                         <div>
+                            <button class="btn btn-secondary" onclick="autoWrapSpanishLines()" style="padding: 2px 10px; font-size: 12px; min-height: 24px; margin-right: 5px; background: #21262d; border-color: #30363d;" title="Ajusta los saltos de línea respetando palabras completas según el largo máximo del inglés">📏 Ajustar líneas</button>
                             <button class="btn btn-primary" onclick="pasteText('box-spanish')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #238636; border-color: #2ea043;">Pegar</button>
                         </div>
                     </div>
@@ -998,6 +999,107 @@
             });
         }
         
+        function getEnglishMaxLineLength() {
+            const boxEn = document.getElementById('box-english');
+            if (!boxEn || !boxEn.value) return 0;
+            const lines = boxEn.value.replace(/<br\s*\/?>/gi, '\n').split(/\r?\n/);
+            let maxLen = 0;
+            for (const rawLine of lines) {
+                const trimmed = rawLine.trim();
+                if (trimmed.length > maxLen) {
+                    maxLen = trimmed.length;
+                }
+            }
+            return maxLen;
+        }
+
+        function wrapTextRespectingWords(text, maxLen) {
+            if (!text || maxLen <= 0) return text;
+
+            const lines = text.split(/\r?\n/);
+            const resultLines = [];
+            let currentParagraphWords = [];
+
+            function flushParagraph() {
+                if (currentParagraphWords.length === 0) return;
+                let curLine = '';
+                for (const word of currentParagraphWords) {
+                    if (!curLine) {
+                        curLine = word;
+                    } else if ((curLine + ' ' + word).length <= maxLen) {
+                        curLine += ' ' + word;
+                    } else {
+                        resultLines.push(curLine);
+                        curLine = word;
+                    }
+                }
+                if (curLine) {
+                    resultLines.push(curLine);
+                }
+                currentParagraphWords = [];
+            }
+
+            for (const rawLine of lines) {
+                const trimmed = rawLine.trim();
+                // Línea vacía = salto de párrafo explícito
+                if (!trimmed) {
+                    flushParagraph();
+                    resultLines.push('');
+                    continue;
+                }
+                // Si la línea es un ítem de lista/viñeta o encabezado (ej: 1., -, *, A)), preservarlo
+                if (/^(\d+\.|\-|\*|•|[A-Z]\))\s+/.test(trimmed)) {
+                    flushParagraph();
+                    const words = trimmed.split(/\s+/);
+                    let curLine = '';
+                    for (const word of words) {
+                        if (!curLine) {
+                            curLine = word;
+                        } else if ((curLine + ' ' + word).length <= maxLen) {
+                            curLine += ' ' + word;
+                        } else {
+                            resultLines.push(curLine);
+                            curLine = word;
+                        }
+                    }
+                    if (curLine) resultLines.push(curLine);
+                    continue;
+                }
+
+                // Palabras de párrafo continuo
+                const words = trimmed.split(/\s+/);
+                for (const w of words) {
+                    currentParagraphWords.push(w);
+                }
+            }
+            flushParagraph();
+
+            return resultLines.join('\n');
+        }
+
+        function autoWrapSpanishLines() {
+            const target = document.getElementById('box-spanish');
+            if (!target || !target.value || !target.value.trim()) {
+                showNotification("⚠️", "No hay texto en español para ajustar.");
+                return;
+            }
+
+            let maxEnLen = getEnglishMaxLineLength();
+            if (maxEnLen <= 0) {
+                maxEnLen = 52; // Valor estándar seguro si no hay inglés
+            } else if (maxEnLen < 30) {
+                // Si el inglés era ultra-corto (ej. un título de 1 sola palabra), no romper palabras a 10 chars
+                maxEnLen = Math.max(maxEnLen, 35);
+            }
+
+            const originalText = target.value;
+            const wrapped = wrapTextRespectingWords(originalText, maxEnLen);
+
+            target.value = wrapped;
+            target.dispatchEvent(new Event('input', { bubbles: true }));
+            showNotification("📏", `Líneas ajustadas sin cortar palabras (máx: ${maxEnLen} caracteres)`);
+        }
+
         async function translateAndPaste(id, btn) {
             const el = document.getElementById(id);
             if (!el || !el.value || !el.value.trim()) {
@@ -1063,6 +1165,12 @@
                     throw new Error("No se obtuvo respuesta del servicio de traducción.");
                 }
 
+                // Ajustar líneas automáticamente respetando palabras completas según el inglés
+                const maxEnLen = getEnglishMaxLineLength();
+                if (maxEnLen >= 25) {
+                    translatedText = wrapTextRespectingWords(translatedText, maxEnLen);
+                }
+
                 // Pegar directamente en la caja de traducción editable
                 const target = document.getElementById('box-spanish');
                 if (target) {
@@ -1072,7 +1180,7 @@
                     target.focus();
                 }
 
-                showNotification("✨", "¡Texto traducido y copiado abajo!");
+                showNotification("✨", "¡Texto traducido y ajustado por líneas!");
             } catch (err) {
                 console.error("Error al traducir automáticamente:", err);
                 showNotification("❌", "No se pudo traducir automáticamente. Abriendo Google Traductor...");
