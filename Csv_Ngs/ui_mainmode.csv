@@ -4399,9 +4399,9 @@ PlayerDeadMenu,1,BuckToField,Regresar
 PlayerDeadMenu,1,BuckToField_GetOutParty,Deja el partido y regresa al campo.
 PlayerDeadMenu,1,BuckToField_GetOutMyself,Regresa por tu cuenta
 PlayerDeadMenu,1,BuckToField_CheckMessage,¿Abandonar?<br><br><yellow>Los miembros del grupo acompañantes<c> también regresarán a casa.
-PlayerDeadMenu,1,BuckToField_CheckMessage_GetOutMyself,"<red>es el único<c><br>que regresará a casa, aunque permanecerá en el grupo."
+PlayerDeadMenu,1,BuckToField_CheckMessage_GetOutMyself,¿Estás seguro de que quieres volver a casa?<br><br><yellow>Serás el único<c><br>que vuelva a casa sin abandonar el grupo.
 PlayerDeadMenu,1,RetryMessage2,"¿Estás seguro de que quieres volver a intentar la misión?<br><red>Nota: Si vuelves a intentarlo, se perderá el progreso de la misión actual.<c>"
-PlayerDeadMenu,1,TrigerActiveRetired,"Retire from the quest?<br><br>If the <yellow>Battle Trigger initiator<c> retires from the quest, <yellow>all members of the party<c> will be returned to the field at the same time.<br><br>Also, you will lose any effects gained during the quest, such as ability<br>increases."
+PlayerDeadMenu,1,TrigerActiveRetired,"¿Abandonar la misión?<br><br>Si quien <yellow>inició el combate<c> abandona la misión, <yellow>todos los miembros del grupo<c> regresarán al campo al mismo tiempo.<br><br>Además, perderás cualquier efecto obtenido durante la misión, como los aumentos<br>de habilidad."
 PlayerDeadMenu,1,TrigerJoinRetired,la misión en<br>progreso.<c>
 PlayerDeadMenu,1,TrigerJoinRetiredBlue,misión en<br>progreso.<c>
 PlayerDeadMenu,1,TrinitesQuestRetireLeaderMessage,"regresad al campo.<br><br>Además, perderéis todos los efectos obtenidos durante la misión, como los aumentos de habilidades."
@@ -8422,61 +8422,61 @@ SkillExplanation,1,SummonerForest,Aumenta el factor de derribo (Down Factor) de 
 SkillExplanation,1,SummonerForestFinish,Detona la marca acumulada. <yellow>Solo armonizadores.
 SkillExplanation,1,SummonerPetAutoAttack,Activa tácticas automáticas según el último familiar invocado. <yellow>Solo armonizadores.
 SkillExplanation,1,SummonerPetGear,Respuesta de equipo del familiar. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerInOutBlink,Desplazamiento táctico; retrocede al presionar atrás. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerInOutBlinkPlus,Versión mejorada del movimiento táctico tras un accionamiento lineal. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerWeaponActionCounter,La acción de arma desata un contraataque. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerOldFriends,Posibilidad de recuperar HP cuando tu salud cae por debajo de cierto umbral.
-SkillExplanation,1,SummonerRecoveryHarvestExtend,Reduce la curación instantánea de Restasigne a cambio de una regeneración de HP sostenida.
-SkillExplanation,1,SummonerSuperParryInsurance,Protección contra ataques enemigos. <yellow>Solo Clase Principal/Armonizador.
-SkillExplanation,1,SummonerWeaponActionStrikeHoming,Marmelo Strike obtiene capacidad de fijado de objetivo (homing). <yellow>Solo Clase Principal/Armonizador.
-SkillExplanation,1,SummonerWeaponActionPPGain,Recupera PP al anular ataques con la acción de arma. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerAutoAttackContdGaugeUp,Aumenta el indicador de enfoque durante un tiempo. <yellow>Solo armonizadores.
-SkillExplanation,1,SummonerLuckySign,Probabilidad de no consumir Restasigne o Reversasigne.
-SkillExplanation,1,SummonerHealthManagement,Reduce daño recibido y mejora la curación de Restasigne cuando tu HP está bajo.
-SkillExplanation,1,HunterWLanceParryingWA,La acción de arma (Wired Lance) aumenta la potencia tras un parry. <yellow>Solo Clase Principal/Wired Lance.
-SkillExplanation,1,HunterWLanceWAPlus,Mejora de la Lanza Cableada.
-SkillExplanation,1,HunterPartisanParryingAssaultCharge,Parry aumenta la potencia de Assault Charge (Partisano). <yellow>Solo Partisano.
-SkillExplanation,1,FighterLimitBreak,Aumenta el daño infligido. <yellow>Solo Clase Principal/Arma Fighter.
-SkillExplanation,1,ForcePhotonFlare,Potencia técnica por tiempo limitado. <yellow>Solo Clase Principal.
-SkillExplanation,1,ForceChargeEscape,Permite esquivar mientras cargas (Vara). <yellow>Solo varas.
-SkillExplanation,1,ForceTalisTecBurstHeatUp,El indicador de ráfaga se llena más rápido con Talis. <yellow>Solo Clase Principal/Talis.
-SkillExplanation,1,TechterElementWeakBonus,Aumenta la acumulación del indicador de ráfaga por debilidad elemental.
+SkillExplanation,1,SummonerInOutBlink,Avanza a gran velocidad y ataca pulsando el botón de Ataque normal en el momento justo tras una Técnica de fotones. Pulsar hacia atrás en la cruceta hará que retrocedas.<br><yellow>*Solo se puede usar con un Harmonizer.<c>
+SkillExplanation,1,SummonerInOutBlinkPlus,Realiza un movimiento adicional hacia adelante y hacia atrás y lanza un ataque pulsando el botón de Ataque normal en el momento justo tras un Linear Drive.<br><yellow>*Solo se puede usar con un Harmonizer.<c>
+SkillExplanation,1,SummonerWeaponActionCounter,"Al anular con éxito un ataque con una acción de arma, realizar un ataque normal desata un contraataque.<br><yellow>*Solo se puede usar con un armonizador.<c>"
+SkillExplanation,1,SummonerOldFriends,Tienes la posibilidad de recuperar HP cuando tu HP desciende un cierto porcentaje por debajo del máximo.
+SkillExplanation,1,SummonerRecoveryHarvestExtend,"Al usar Restasigne, la cantidad de HP que recuperas se reduce, pero obtienes una recuperación de HP sostenida durante un tiempo determinado."
+SkillExplanation,1,SummonerSuperParryInsurance,El tiempo de reutilización de Hot Marmalade Parry se reduce cuando el escudo no recibe ataques de los enemigos.<br><yellow>*Solo puede ser utilizado por una Clase Principal/Harmonizer.<c>
+SkillExplanation,1,SummonerWeaponActionStrikeHoming,Marmelo Strike adquiere la capacidad de dirigirse automáticamente hacia los enemigos.<br><yellow>*Solo puede ser utilizado por una Clase Principal/Harmonizer.<c>
+SkillExplanation,1,SummonerWeaponActionPPGain,Recupera PP cuando niegues con éxito un ataque con una Acción de Arma.<br><br><yellow>*Solo se puede usar con un Armonizador.<c>
+SkillExplanation,1,SummonerAutoAttackContdGaugeUp,"Cada vez que actives el Apoyo Familiar mientras ya está activo, el Indicador de Enfoque de ese Familiar aumentará durante un tiempo determinado.<br><br><yellow>*Solo se puede usar con un Armonizador.<c>"
+SkillExplanation,1,SummonerLuckySign,"Al utilizar Restasigne y Reversasigne, existe la posibilidad de que no se consuman."
+SkillExplanation,1,SummonerHealthManagement,Reduce el daño recibido y aumenta la cantidad de curación de Restasigne cuando tus PS caen por debajo de un porcentaje determinado.
+SkillExplanation,1,HunterWLanceParryingWA,"Al activarse Hunter Arts Avenger, realizar una Acción de arma inmediatamente después de una Photon Art aumenta su potencia.<br><yellow>*Solo puede utilizarse con la Clase principal/Lanza de cable.<c>"
+SkillExplanation,1,HunterWLanceWAPlus,"Introducir ""Adelante"" o ""Atrás"" al activar una Acción de arma te desplaza en esa dirección mientras realizas el ataque.<br>Introducir ""Derecha"" o ""Izquierda"" ejecuta un ataque de área que se mantiene mientras se pulsa el botón de Acción de arma.<br><yellow>*Solo se puede usar con una Lanza de cable.<c>"
+SkillExplanation,1,HunterPartisanParryingAssaultCharge,Ejecutar un Assault Charge como Photon Art mediante la habilidad Hunter Arts Avenger aumenta su potencia.<br><yellow>*Solo se puede utilizar con una Partisan.<c>
+SkillExplanation,1,FighterLimitBreak,<yellow>[Habilidad activa]<c><br>Aumenta el daño recibido durante un tiempo determinado a cambio de infligir más daño.<br><yellow>*Solo puede utilizarse con un arma de clase principal o de luchador.<c>
+SkillExplanation,1,ForcePhotonFlare,<yellow>[Habilidad activa]<c><br>Aumenta los PP máximos y el daño infligido durante un tiempo determinado.<br><yellow>*Solo puede utilizarse con un arma de Clase principal o de Force.<c>
+SkillExplanation,1,ForceChargeEscape,"Moverse lateralmente o utilizar una acción <br>de arma mientras se carga una técnica<br>mantiene el estado de carga hasta que se <br>vuelve a utilizar una técnica. Si se utiliza la<br>misma técnica de nuevo durante este estado, <br>no se consumen PP y se reduce el tiempo de carga.<br><yellow>*Solo se puede utilizar con un bastón.<c>"
+SkillExplanation,1,ForceTalisTecBurstHeatUp,"Durante un tiempo limitado tras activar el Tricky Capacitor, su medidor se llenará más rápido.<br><yellow>*Solo puede ser utilizado por una Clase Principal/Talis.<c>"
+SkillExplanation,1,TechterElementWeakBonus,Aumenta la acumulación de la barra de Photon Blast cuando el elemento de un ataque coincide con la debilidad elemental del enemigo.
 SkillExplanation,1,TechterAwakeYell,Aumenta la acumulación del indicador de ráfaga cerca de enemigos jefes.
-SkillExplanation,1,HunterPartisanGuardParryingAssaultCharge,Parry aumenta el daño de Assault Charge. <yellow>Solo Clase Principal/Partisano.
-SkillExplanation,1,FighterTDSpinCounter,La acción de arma desata un contraataque (Twin Daggers).
-SkillExplanation,1,FighterDSDodgeWindCounter,La esquiva desata un contraataque (Double Saber).
-SkillExplanation,1,FighterDSDodgeWindWACounter,La esquiva desata un contraataque especial con arma (Double Saber).
-SkillExplanation,1,ForceRodCounterTechnic,Invulnerabilidad temporal durante el Sidestep con Vara. <yellow>Solo varas.
-SkillExplanation,1,TechterWandCounterReflection,Desata Photonic Fury tras anular un ataque exitosamente. <yellow>Solo varitas.
-SkillExplanation,1,TechterWandGuardCounter,La acción desata un contraataque (Varita).
-SkillExplanation,1,SlayerUnleashAction,Consume energía para disparar una ráfaga poderosa. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerUnleashActionCriticalBonus,Aumenta la tasa de críticos tras activar Ira Desatada. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerGear,Mecánica de equipo para Gunblade.
-SkillExplanation,1,SlayerGearOverTime,Habilidad que finaliza con un ataque poderoso al reactivarla. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerGearHungry,Aumenta la carga del indicador de enfoque (Gunblade). <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerGearResetBonus,Bonificación según el nivel de enfoque. <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerGearCritical,Aumenta la tasa de críticos con sobremarcha activa. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerGearHeat,Aumenta la carga y reduce el tiempo de reutilización. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerHysteric,Ataque adicional tras P.A. <yellow>Solo Gunblade.
+SkillExplanation,1,HunterPartisanGuardParryingAssaultCharge,"Tras neutralizar con éxito un ataque mediante una Acción de arma, aumenta la potencia de tu siguiente Carga de asalto.<br><yellow>*Solo puede ser utilizada por una Clase principal/Partisan.<c>"
+SkillExplanation,1,FighterTDSpinCounter,Realizar un ataque normal tras anular con éxito un ataque mediante una acción de arma desencadena un contraataque.<br><yellow>*Solo se puede usar con dagas dobles.<c>
+SkillExplanation,1,FighterDSDodgeWindCounter,Realizar un ataque normal tras anular con éxito un ataque mediante una Acción de Arma desencadena un contraataque.<br><yellow>*Solo se puede utilizar con un sable doble.<c>
+SkillExplanation,1,FighterDSDodgeWindWACounter,"Al realizar otra acción de arma tras anular con éxito un ataque con una acción de arma, se desata un contraataque especial.<br><br><yellow>*Solo se puede usar con un sable doble.<c>"
+SkillExplanation,1,ForceRodCounterTechnic,Utilizar una técnica tras anular con éxito un ataque mediante una Acción de arma o esquivar con un Paso lateral te vuelve invulnerable durante un breve periodo.<br><yellow>*Solo se puede usar con un bastón.<c>
+SkillExplanation,1,TechterWandCounterReflection,Desata una furia fotónica al anular con éxito un ataque.<br><yellow>*Solo se puede usar con una varita.<c>
+SkillExplanation,1,TechterWandGuardCounter,Realizar un ataque normal tras anular con éxito un ataque mediante una acción de arma desencadena un contraataque.<br><yellow>*Solo se puede usar con una varita.<c>
+SkillExplanation,1,SlayerUnleashAction,"<yellow>[Habilidad activa]<c><br>Llena la barra usando Artes de fotones y/o Relentless Blade; luego, consúmela para disparar una única y potente descarga.<br><yellow>*Solo clase principal/Espada pistola<c>"
+SkillExplanation,1,SlayerUnleashActionCriticalBonus,Aumenta temporalmente la probabilidad de golpe crítico tras activar Furia Desatada.<br><br><yellow>*Solo para clase principal/Gunblade <c>
+SkillExplanation,1,SlayerGear,"Acumula la barra de concentración golpeando enemigos. La potencia de ataque y la recuperación de PP ofensivos aumentan, mientras que el consumo de PP disminuye según el nivel de la barra. La barra de concentración se reiniciará a cero tras un cierto tiempo sin golpear a ningún enemigo.<br><br><yellow>*Solo con Gunblade<c>"
+SkillExplanation,1,SlayerGearOverTime,"<yellow>[Habilidad activa]<c><br>Consume toda la barra de Enfoque para potenciar temporalmente los efectos de Enfoque de Gunblade. Si vuelves a usar la habilidad mientras está activa, desatarás un ataque poderoso.<br><yellow>*Solo para clase principal/Gunblade<c>"
+SkillExplanation,1,SlayerGearHungry,Aumenta la carga del medidor de concentración hasta el nivel uno del medidor de concentración de la Espada Pistola.<br><br><amarillo>*Solo Espada Pistola<c>
+SkillExplanation,1,SlayerGearResetBonus,"Cuando se reinicia el indicador de Enfoque de la Espada Pistola, recupera una cantidad de PP acorde al nivel del indicador.<br><br><yellow>*Solo Espada Pistola<c>"
+SkillExplanation,1,SlayerGearCritical,La probabilidad de golpe crítico aumenta según el nivel del medidor de concentración de la Gunblade. El medidor de concentración se considera «al máximo» mientras el Gunblade Focus Overdrive está activo.<br><yellow>*Solo clase principal/Gunblade<c>
+SkillExplanation,1,SlayerGearHeat,"Cuando la barra de Concentración de Gunblade esté al máximo o el Sobrecarga de Concentración de Gunblade esté activo, la barra de Furia Desatada se cargará y su tiempo de reutilización se reducirá.<br><yellow>*Solo clase principal/Gunblade<c>"
+SkillExplanation,1,SlayerHysteric,"Si pulsas el botón de Ataque Normal en el momento justo mientras realizas un Arte Fotónico, podrás realizar un ataque adicional.<br><br><yellow>*Solo con Gunblade<c>"
 SkillExplanation,1,SlayerHystericEnhance,Potencia el ataque de Espada Implacable. <yellow>Solo Clase Principal/Gunblade.
-SkillExplanation,1,SlayerWeaponActionMove,Ataque en movimiento e invulnerable. <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerWeaponActionMoveCounter,Contraataque móvil según el estilo. <yellow>Solo Gunblade.
+SkillExplanation,1,SlayerWeaponActionMove,Usar una acción de arma mientras introduces una dirección te hará temporalmente invencible y te permitirá atacar mientras te mueves.<br><br><yellow>*Solo con la Gunblade<c>
+SkillExplanation,1,SlayerWeaponActionMoveCounter,"Si esquivas con éxito usando Mobile Blade, realizar un ataque normal o una acción de arma desencadenará un contraataque. El contraataque varía según la acción que utilices.<br><yellow>*Solo para Gunblade<c>"
 SkillExplanation,1,SlayerCriticalUp,Aumenta la tasa de críticos.
-SkillExplanation,1,SlayerStrongEnemyCriticalUp,Aumenta la tasa de críticos contra jefes.
-SkillExplanation,1,SlayerWeaponActionStayCounter,Contraataque estático según el estilo. <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerZeroRangeAABonus,Aumenta potencia con ataques normales a corta distancia. <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerQuickShot,Disparo de corto alcance tras P.A. <yellow>Solo Gunblade.
-SkillExplanation,1,SlayerCriticalPpGain,Posibilidad de recuperar PP con golpes críticos.
-SkillExplanation,1,RangerStealthAttack,Reduce la agresividad de los enemigos hacia ti.
-SkillExplanation,1,RangerWeakBulletBonus,Aumenta el daño de Blight Rounds (solo para tus propios ataques).
-SkillExplanation,1,RangerRifleGrenadeEscape,Invulnerabilidad al usar granadas (Rifle).
-SkillExplanation,1,RangerLauncherFanatic,Potencia de ataque para Lanzadores. <yellow>Solo Clase Principal/Lanzador.
-SkillExplanation,1,GunnerChainTriggerFinishEscape,Invulnerabilidad tras Chain Finish.
-SkillExplanation,1,GunnerChainTriggerFinishPPSave,Ahorro de PP tras Chain Finish. <yellow>Solo Clase Principal/Machine Guns.
-SkillExplanation,1,GunnerInfinityFire,Ataque especial sin bono de Chain Finish o Boost. <yellow>Solo Machine Guns.
-SkillExplanation,1,BouncerDBladeFullConnect,Conexión completa tras ataques. <yellow>Solo Soaring Blades.
-SkillExplanation,1,BouncerFrailJellen,Aplica debilidad física y elemental. <yellow>Solo Clase Principal/Bouncer.
-SkillExplanation,1,BouncerElementBurstSpeedBoost,Aumenta velocidad de ráfaga. <yellow>Solo Clase Principal/Botas Jet.
+SkillExplanation,1,SlayerStrongEnemyCriticalUp,Aumenta la probabilidad de golpe crítico al atacar a jefes.
+SkillExplanation,1,SlayerWeaponActionStayCounter,"Cuando logras anular un ataque con una Acción de Arma, usar un Ataque Normal o una Acción de Arma desatará un contraataque. El contraataque varía según la acción que uses.<br><br><yellow>*Solo con Gunblade<c>"
+SkillExplanation,1,SlayerZeroRangeAABonus,Aumenta la potencia al golpear a un enemigo con un ataque normal a corta distancia.<br><br><yellow>*Solo con la Gunblade<c>
+SkillExplanation,1,SlayerQuickShot,"Si pulsas el botón de ataque normal sin introducir ninguna dirección justo después de realizar un Arte Fotónico, se lanzará un disparo de corto alcance.<br><br><yellow>*Solo con Gunblade<c>"
+SkillExplanation,1,SlayerCriticalPpGain,Existe la posibilidad de recuperar PP al acertar un golpe crítico.
+SkillExplanation,1,RangerStealthAttack,"Reduce la probabilidad de que los enemigos te elijan como objetivo, incluso al atacar."
+SkillExplanation,1,RangerWeakBulletBonus,Aumenta el daño a otras partes al impactar una parte enemiga con una munición de plaga.<br>Este efecto se aplica únicamente a tus propios ataques.
+SkillExplanation,1,RangerRifleGrenadeEscape,Te hace invulnerable durante un tiempo determinado al usar Granadero con fusil.<br><yellow>*Solo se puede usar con un fusil de asalto.<c>
+SkillExplanation,1,RangerLauncherFanatic,<yellow>[Habilidad activa]<c><br>Aumenta la potencia y la velocidad de los ataques normales sin cargar durante un tiempo determinado.<br><yellow>*Solo puede ser utilizada por una clase principal de tipo Lanzador.<c>
+SkillExplanation,1,GunnerChainTriggerFinishEscape,Te hace invulnerable durante un tiempo determinado al ejecutar un Chain Finish.<br><yellow>*Solo puede ser utilizado por una clase principal equipada con pistolas gemelas.<c>
+SkillExplanation,1,GunnerChainTriggerFinishPPSave,Reduce el consumo de PP durante un tiempo determinado al ejecutar un Remate de Cadena (Chain Finish).<br><yellow>*Solo puede ser utilizado por una Clase Principal equipada con Pistolas Gemelas.<c>
+SkillExplanation,1,GunnerInfinityFire,<yellow>[Habilidad activa]<c><br>Ejecuta un ataque sostenido de fuego rápido consumiendo una barra de energía acumulada al atacar.<br>Los efectos de Remate de cadena (Chain Finish) y Potenciador de cadena (Chain Boost) no se aplican a este ataque.<br><yellow>*Solo se puede utilizar con ametralladoras dobles.<c>
+SkillExplanation,1,BouncerDBladeFullConnect,<yellow>[Habilidad activa]<c><br>Desata un poderoso tajo frontal consumiendo una barra de energía acumulada al atacar.<br><yellow>*Solo se puede usar con las Espadas aladas.<c>
+SkillExplanation,1,BouncerFrailJellen,Añade un efecto de debilitamiento del ataque enemigo a «Declive físico» y «Declive elemental».<br>El efecto aumenta si infliges al enemigo tanto «Declive físico» como «Declive elemental».<br><yellow>*Solo puede utilizarse con un arma de clase principal o de Bouncer.<c>
+SkillExplanation,1,BouncerElementBurstSpeedBoost,Aumenta la velocidad de ataque de tus Photon Arts durante un tiempo determinado al usar Jetsweep Jolt.<br><yellow>*Solo puede utilizarse con la Clase Principal/Jet Boots.<c>
 SkillExplanation,1,BouncerOptionChange,"Los bonificadores de Potencia de arma cuerpo a cuerpo y Potencia de arma de técnica, provenientes de los aumentos de tus armas y armaduras equipadas, se suman por separado; el valor más alto se aplica a ambas estadísticas (Potencia de arma cuerpo a cuerpo y Potencia de arma de técnica).<br><yellow>*Solo puede utilizarse con un arma de la Clase principal o de Bouncer.<c>"
 SkillExplanation,1,BraverOptionChange,"Los bonificadores de Potencia de arma cuerpo a cuerpo y Potencia de arma a distancia, provenientes de los aumentos de tus armas y armaduras equipadas, se suman por separado; el valor más alto resultante se aplica a tu Potencia de arma tanto cuerpo a cuerpo como a distancia.<br><yellow>*Solo puede utilizarse con un arma de la Clase principal o de Braver.<c>"
 SkillExplanation,1,BraverRestaPPGain,Restaura PP cuando usas Restasigne.
@@ -8533,28 +8533,28 @@ SkillExplanation,1,RangerLauncherWeakBulletExtend,Reinicia la duración de las B
 SkillExplanation,1,GunnerChainFinishPartyPPGain,Recuperación de PP para el grupo basada en el número de cadena. <yellow>Solo Clase Principal/Machine Guns.
 SkillExplanation,1,GunnerTMGAccel,Permite elevarse atacando hasta dos veces. <yellow>Solo Clase Principal/Machine Guns.
 SkillExplanation,1,FighterTDAltAccel,Aceleración alternativa para Twin Daggers.
-SkillExplanation,1,FighterArtsImpact,"Hitting an enemy multiple times with a PA fills the gauge. Hitting an enemy with a PA with the gauge full releases an additional attack.<br>While charging a single gauge, increases the charge amount of the 1st and 2nd half of PA attacks that haven't yet hit an enemy.<br><yellow>*Can only be used by a Main Class/Fighter weapon.<c>"
-SkillExplanation,1,TechterEnhanceField,"Grants support effects to you and nearby<br>characters when performing certain actions.<br>Photon Blast Gauge increases when Wand<br>Element Pursuit is activated. Also, when<br>Photon Blast is activated, additional attacks<br>temporarily occur after an attack lands.<br><yellow>*Can only be used with a Main<br>Class/Techter weapon.<c>"
+SkillExplanation,1,FighterArtsImpact,"Golpear a un enemigo varias veces con una PA llena la barra. Golpear a un enemigo con una PA cuando la barra está llena desencadena un ataque adicional.<br>Mientras se carga la barra, aumenta la cantidad de carga de la primera y segunda mitad de los ataques de PA que aún no han impactado contra un enemigo.<br><yellow>*Solo puede utilizarse con armas de la Clase Principal o de Fighter.<c>"
+SkillExplanation,1,TechterEnhanceField,"Los Grants otorgan efectos beneficiosos a ti y a los personajes cercanos al realizar ciertas acciones.<br>El medidor de Photon Blast aumenta cuando se activa Wand Element Pursuit. Además, al activar el Photon Blast, se producen ataques adicionales temporalmente tras impactar con un ataque.<br><yellow>*Solo se puede usar con un arma de Clase Principal/Techter.<c>"
 SkillExplanation,1,TechterQuickElementChange,Cambio de elemento rápido incluso sin cargar. <yellow>Solo varitas.
 SkillExplanation,1,TechterWandTechSkipAttack,Salta al ataque técnico tras realizar una técnica. <yellow>Solo varitas.
 SkillExplanation,1,ForceRodTechniqueBonus,Aumenta daño y reducción elemental de técnicas. <yellow>Solo varas.
-SkillExplanation,1,ForcePhotonFlareExtension,Extiende duración de Photon Flare. <yellow>Solo Clase Principal.
-SkillExplanation,1,ForcePhotonFlareTecShortCharge,Reduce carga de técnica durante Photon Flare/PP Conversion. <yellow>Solo Clase Principal.
-SkillExplanation,1,ForceTalisShotMarking,Marca objetivos con disparos de Talis.
-SkillExplanation,1,TechterTalisShotMarking,Marca objetivos con disparos de Talis.
-SkillExplanation,1,HunterParryingPa,Aumenta daño y factor de derribo de PA mediante parry. <yellow>Solo armas Hunter.
-SkillExplanation,1,HunterAllGuard,Recupera PP al anular ataques con acción de arma. <yellow>Solo armas Hunter.
-SkillExplanation,1,HunterReflectFort,Reflejo de fortaleza. <yellow>Solo Clase Principal/Hunter.
-SkillExplanation,1,BraverCombatAfterPaExtension,Extensión de efectos tras usar un PA durante Braver Combat. <yellow>Solo Clase Principal/Braver.
-SkillExplanation,1,SummonerWeaponActionStrike,Lanza a Marmelo para una explosión tras contacto. <yellow>Solo Clase Principal/Armonizador.
+SkillExplanation,1,ForcePhotonFlareExtension,"Prolonga la duración de Photon Flare si este está activo al momento de activar una Técnica Combinada o un Photon Blast.<br>Si Photon Flare no está activo, se almacenarán hasta tres acumulaciones de este efecto, las cuales se aplicarán la próxima vez que se active Photon Flare.<br><yellow>*Solo puede ser utilizado por una Clase Principal.<c>"
+SkillExplanation,1,ForcePhotonFlareTecShortCharge,Reduce los tiempos de carga de las técnicas mientras Photon Flare o PP Conversion están activas.<br><br><yellow>*Solo para armas de clase principal/fuerza.<c>
+SkillExplanation,1,ForceTalisShotMarking,"Al golpear varias veces a un enemigo con Ataques Normales, Acciones de Arma o Técnicas cuando se despliega un Talis con Disparo Disperso (paso dos), se le marcará.<br>Aumenta el daño infligido a los enemigos marcados con Técnicas cuando se despliega un Talis.<br><br>*Solo Talis.<c>"
+SkillExplanation,1,TechterTalisShotMarking,"Al golpear varias veces a un enemigo con Ataques Normales, Acciones de Arma o Técnicas cuando se despliega un Talis con Disparo Disperso (paso dos), se le marcará.<br>Aumenta el daño infligido a los enemigos marcados con Técnicas cuando se despliega un Talis.<br><br>*Solo Talis.<c>"
+SkillExplanation,1,HunterParryingPa,Recibir un golpe dentro de un tiempo determinado después de usar un Arte Fotónico aumentará el daño y el factor de derribo de dicho Arte Fotónico.<br><br><yellow>*Solo armas de Cazador.<c>
+SkillExplanation,1,HunterAllGuard,Recupera PP cuando anules con éxito un ataque con una acción de arma.<br><br><yellow>*Solo armas de cazador.<c>
+SkillExplanation,1,HunterReflectFort,"Cuando haya un enemigo cerca, si anulas un ataque con una Acción de arma, activas la Habilidad de cazador «Avenger» o recibes un ataque mientras están activos «Físico de cazador» o «Escudo extra de Físico de cazador», contraatacarás con una onda expansiva y reducirás temporalmente el daño que recibes tú y los personajes cercanos.<br><yellow>*Solo para armas de la clase principal o de cazador.<c>"
+SkillExplanation,1,BraverCombatAfterPaExtension,"Al finalizar Brave Combat, obtendrás una mejora si el número de golpes de «Final Bonus» supera una cantidad determinada. Tras activarse un cierto número de veces, la PA de Katana pasará a su tercera fase y aumentará la acumulación del medidor de impacto de ataque del Photon Bow para las PA de Photon Bow (a excepción de Dimensional Ray al cargarse).<br><yellow>*Solo para armas de la clase principal o de Braver.<c>"
+SkillExplanation,1,SummonerWeaponActionStrike,"Al contrarrestar ataques con una Acción de Arma, Marmelo crecerá hasta tres veces. Mantén pulsado el botón de Acción de Arma para lanzar a Marmelo; al impactar, provocará una explosión.<br><br><yellow>*Solo para Clase Principal/Armonizador.<c>"
 SkillExplanation,1,GunnerChainTrigger,Se activa al golpear a un enemigo con un Arte Fotónico cargado. Durante un tiempo determinado<br>el Número de Cadena aumenta cada vez que golpeas. Acertar otro Arte Fotónico cargado durante este tiempo lanza un Impulso de Remate de Cadena<br>aumentando el daño infligido y el Factor de Derribo durante un tiempo determinado<br>según el Número de Cadena.<br><yellow>*Solo para la Clase Principal/Ametralladoras Gemelas.<c>
-SkillExplanation,1,GunnerChainTriggerOverLimit,Aumenta potencia y factor de derribo por cadena. <yellow>Solo Clase Principal/Machine Guns.
-SkillExplanation,1,GunnerChainBoostDodgeAdvance,Extiende el Chain Boost con la acción de arma. <yellow>Solo Clase Principal/Machine Guns.
-SkillExplanation,1,GunnerCounterPABurst,Aumenta potencia de PA a costa de más PP. <yellow>Solo Machine Guns.
-SkillExplanation,1,GunnerCounterPABurstEscape,Otorga invulnerabilidad tras Counter PA Burst. <yellow>Solo Clase Principal/Machine Guns.
-SkillExplanation,1,GunnerSRollCounterBullet,Dispara una bala de contraataque durante el Side Roll. <yellow>Solo Machine Guns.
-SkillExplanation,1,SummonerMarmeloAssist,Asistencia de Marmelo. <yellow>Solo Clase Principal/Armonizador.
-SkillExplanation,1,SlayerGearAnotherDrive,Habilidad de equipo adicional. <yellow>Solo Gunblade.
+SkillExplanation,1,GunnerChainTriggerOverLimit,"Aumenta a 150 el número máximo de cadena de un Chain Trigger.<br>A partir de la cadena 101, aumenta la potencia y el incremento del factor de derribo (Down Factor) por cadena.<br><yellow>*Solo para clase principal/pistolas gemelas.<c>"
+SkillExplanation,1,GunnerChainBoostDodgeAdvance,"Durante un Impulso en Cadena, la invulnerabilidad de tu Acción de Arma se extiende. Esquivar o anular ataques con éxito mediante una Acción de Arma extenderá la duración del impulso en cadena.<br><br><yellow>*Solo para Clase Principal/Ametralladoras Gemelas.<c>"
+SkillExplanation,1,GunnerCounterPABurst,"Tras esquivar o anular con éxito un ataque mediante una Acción de arma, la siguiente Técnica de fotones que utilices consumirá más PP, pero tendrá una mayor potencia.<br><yellow>*Solo para pistolas gemelas.<c>"
+SkillExplanation,1,GunnerCounterPABurstEscape,"Tras esquivar o anular con éxito un ataque con una Acción de Arma, el siguiente Arte Fotónico que uses te otorgará un período de invulnerabilidad.<br><br><yellow>*Solo para la Clase Principal/Ametralladoras Gemelas.<c>"
+SkillExplanation,1,GunnerSRollCounterBullet,Esquivar o anular con éxito un ataque con una acción de arma desatará simultáneamente un contraataque.<br><br><yellow>*Solo ametralladoras gemelas.<c>
+SkillExplanation,1,SummonerMarmeloAssist,Los enemigos alcanzados por un Golpe Marmelo de 3.ª fase o por Armonía de Familiar Marmelo+ quedan marcados. Mantener pulsado el botón de Ataque normal detona la marca y crea un emblema Marmelo que ataca periódicamente. Estos ataques cargan las barras de concentración de ambos familiares; la barra inferior recibe más carga.<br><yellow>*Solo para la clase principal/Armonizador.<c>
+SkillExplanation,1,SlayerGearAnotherDrive,"<yellow>[Habilidad activa]<c><br>Consume 3 niveles del medidor de concentración de Gunblade para aumentar temporalmente la potencia de Relentless Blade y la velocidad de carga del medidor de concentración.<br>Además, el primer Slug Shot utilizado mientras la habilidad está activa se transforma en un ataque poderoso.<br><yellow>*Solo para clase principal/Gunblade<c>"
 SkillParameter,0,Duration,効果時間
 SkillParameter,0,Recast,リキャスト
 SkillParameter,0,AtpRate,威力
@@ -13964,7 +13964,7 @@ License,1,LicenseGetMessage,Adquiriste los siguientes títulos.
 License,1,Help,<c f0df60> Solo podrás recibir una recompensa una vez por cada título que adquieras. Seleccione un título. <c>
 License,1,LicenseTitle,TÍTULOS ADQUIRIDOS
 License,1,RewardTitle,"RECOMPENSA POR ""$(0)"""
-License,1,RewardSet,You have set your title to <yellow>$(0)<c>.<br><br>Select [Currently Set Title/Character Name]<br>under [Toggle Character Overhead Display] in<br>the Quick Menu to display the title you just set.
+License,1,RewardSet,Has establecido tu título como <yellow>$(0)<c>.<br><br>Selecciona [Título/Nombre del personaje actual]<br>en [Alternar visualización sobre el personaje]<br>dentro del Menú rápido para mostrar el título que acabas de establecer.
 License,1,RewardClear,Título eliminado.
 License,1,RewardSetTitle,ESTABLECER TÍTULO
 License,1,ActivityMsg,"¡Recompensa recibida por ""$(0)""!"
@@ -19478,7 +19478,7 @@ AMWeaponExplanation,0,0,<yellow>近接戦闘向きのメイン兵装<c><br>大�
 AMWeaponExplanation,0,1,<yellow>近接戦闘向きのメイン兵装<c><br>大鎌型の兵装で、<br>周囲のエネミーを薙ぎ払う。<br>大鎌を振るうあいだに、<br>エネミーからの攻撃を防ぐ特性をもつ。
 AMWeaponExplanation,0,2,<yellow>遠距離戦闘向きのメイン兵装<c><br>大砲型の兵装で、<br>遠距離のエネミーを撃ちぬく。<br>周囲の味方を回復する<br>支援弾を撃つこともできる。
 AMWeaponExplanation,0,3,<yellow>特殊戦闘向きのメイン兵装<c><br>長杖型の兵装で、<br>あらゆる距離のエネミーを攻撃する。<br>可変機構をもち、<br>高速移動しながら攻撃もできる。
-AMWeaponExplanation,1,0,<yellow>A main armament created for close combat<c><br>The greatsword lays waste to nearby enemies.<br>Recover HP when attacks hit.
+AMWeaponExplanation,1,0,<yellow>Arma principal diseñada para el combate cuerpo a cuerpo<c><br>El espadón arrasa con los enemigos cercanos.<br>Recupera VIT al acertar ataques.
 AMWeaponExplanation,1,1,<yellow>Arma principal diseñada para el combate cuerpo a cuerpo<c><br>La gran guadaña siega a los enemigos cercanos.<br>Te protege de los ataques enemigos mientras<br>la blandes.
 AMWeaponExplanation,1,2,<yellow>Un armamento principal diseñado para el combate a distancia<c><br>Este lanzador arrasa con los enemigos desde lejos.<br>También puede disparar proyectiles que curan a los aliados cercanos.
 AMWeaponExplanation,1,3,<yellow>Un armamento principal creado para la guerra especial<c><br>Esta vara ataca a los enemigos a cualquier distancia.<br>Puede transformarse y atacar mientras se desplaza a gran velocidad.
