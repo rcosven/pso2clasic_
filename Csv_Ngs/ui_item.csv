@@ -3485,7 +3485,7 @@ LaboMain,1,Explanation8,"<c f0df60> Esta es la pantalla de confirmación final p
 LaboMain,1,Explanation9,"Hesizers y un arma material. Seleccione un arma ""objetivo"" para mejorar el elemento. <c>"
 LaboMain,1,Explanation9_v,<c f0df60> Se pueden utilizar sintetizadores y materiales para aumentar el nivel de elemento de un arma. Selecciona un arma. <c>
 LaboMain,1,Explanation10,<c f0df60>El arma utilizada como material debe compartir la misma rareza y categoría que el arma de destino. El material seleccionado <c ff4f3f>se consumirá una vez finalizado el proceso<c f0df60>.<c>
-LaboMain,1,Explanation10_v,<c f0df60>Weapon used must share Rarity & Category with target weapon. Material <c ff4f3f>will be consumed after process <c f0df60>.<c>
+LaboMain,1,Explanation10_v,<c f0df60>El arma utilizada debe compartir rareza y categoría con el arma objetivo. El material <c ff4f3f>se consumirá tras el proceso <c f0df60>.<c>
 LaboMain,1,Explanation11,"cemento. Si tiene elementos de soporte, puede seleccionarlos aquí. <c>"
 LaboMain,1,Explanation12,"<c f0df60> Desbloquear potencial te permite desbloquear el potencial de un elemento mediante el uso de una esfera de fotones. Seleccione un elemento ""objetivo"". <c>"
 LaboMain,1,Explanation12_v,"<c f0df60> Puedes usar el elemento ""Esfera de fotones"" para desbloquear el potencial de un elemento. Selecciona un arma. <c>"
@@ -5521,7 +5521,7 @@ UserShopIntendExhibit,1,ExhibitMessage_v,Está a punto de poner a la venta los a
 UserShopIntendExhibit,1,StackExhibitInputNumberTitle,PONER ARTÍCULO(S) A LA VENTA
 UserShopIntendExhibit,1,StackExhibitInputNumberMessage,Ingrese el número de artículos a poner a la venta.
 UserShopIntendExhibit,1,SetValueInputNumberTitle,PRECIO FIJADO
-UserShopIntendExhibit,1,SetValueInputNumberMessage,Enter the price you wish to set.<br>Note: This cannot be set to less than the item's minimum value.<br>Note: A seller's fee will be deducted.
+UserShopIntendExhibit,1,SetValueInputNumberMessage,Ingrese el precio que desea establecer.<br>Nota: No se puede establecer un precio inferior al valor mínimo del artículo.<br>Nota: Se deducirá una comisión de venta.
 UserShopIntendExhibit,1,SetValueInputNumberMessage_2,(Beneficio después de la deducción:
 UserShopIntendExhibit,1,SetValueInputNumberMessage_3,$(1)<pict 4space>$(0))
 UserShopIntendExhibit,1,SetValueInputNumberMessage_4,(Precio con impuestos incluidos:
@@ -21458,11 +21458,11 @@ ItemSkillHelp,1,item_RodCombat_2,"Aumenta la potencia en un 8%.<br>Mejora los at
 ItemSkillHelp,1,item_RodCombat_3,"Aumenta la potencia en un 10%.<br>Mejora los ataques normales,<br>y aumenta la potencia de Photon Bullet <br>."
 ItemSkillHelp,1,item_RodCombat_4,"Aumenta la potencia en un 11%.<br>Mejora los ataques normales,<br>y aumenta la potencia de Photon Bullet <br>."
 ItemSkillHelp,1,item_RodCombat_5,"Aumenta la potencia en un 12%.<br>Mejora los ataques normales,<br>y aumenta la potencia de Photon Bullet <br>."
-ItemSkillHelp,1,item_ScissorCounter_1,"Increases potency by 7%.<br>Increases Focus during <br>successful Double-Saber Wind <br>Parry, slashing away with <br>a powerful string of attacks."
-ItemSkillHelp,1,item_ScissorCounter_2,"Increases potency by 8%.<br>Increases Focus during <br>successful Double-Saber Wind <br>Parry, slashing away with <br>a powerful string of attacks."
-ItemSkillHelp,1,item_ScissorCounter_3,"Sabre Wind<br>Parry, cortando con<br>una poderosa serie de ataques."
-ItemSkillHelp,1,item_ScissorCounter_4,"Sabre Wind<br>Parry, cortando con una<br>poderosa serie de ataques."
-ItemSkillHelp,1,item_ScissorCounter_5,"Sabre Wind<br>Parry, cortando con una<br>poderosa serie de ataques."
+ItemSkillHelp,1,item_ScissorCounter_1,"Aumenta la potencia un 7%.<br>Aumenta el Enfoque al ejecutar<br>con éxito el Parada de Torbellino<br>de Sable Doble, lanzando<br>una poderosa ráfaga de ataques."
+ItemSkillHelp,1,item_ScissorCounter_2,"Aumenta la potencia un 8%.<br>Aumenta el Enfoque al ejecutar<br>con éxito el Parada de Torbellino<br>de Sable Doble, lanzando<br>una poderosa ráfaga de ataques."
+ItemSkillHelp,1,item_ScissorCounter_3,"Aumenta la potencia un 10%.<br>Aumenta el Enfoque al ejecutar<br>con éxito el Parada de Torbellino<br>de Sable Doble, lanzando<br>una poderosa ráfaga de ataques."
+ItemSkillHelp,1,item_ScissorCounter_4,"Aumenta la potencia un 11%.<br>Aumenta el Enfoque al ejecutar<br>con éxito el Parada de Torbellino<br>de Sable Doble, lanzando<br>una poderosa ráfaga de ataques."
+ItemSkillHelp,1,item_ScissorCounter_5,"Aumenta la potencia un 12%.<br>Aumenta el Enfoque al ejecutar<br>con éxito el Parada de Torbellino<br>de Sable Doble, lanzando<br>una poderosa ráfaga de ataques."
 ItemSkillHelp,1,item_CountDamageUp2_1,Aumenta la potencia hasta<br>25% por un tiempo limitado.
 ItemSkillHelp,1,item_CountDamageUp2_2,Aumenta la potencia hasta<br>25% por un tiempo limitado.
 ItemSkillHelp,1,item_CountDamageUp2_3,Aumenta la potencia hasta<br>25% por un tiempo limitado.
@@ -24605,13 +24605,13 @@ SkillRingSkillHelp,1,ring_TMachineGunStanceUp,"Postura con ametralladoras dobles
 SkillRingSkillHelp,1,ring_Sprint,****
 SkillRingSkillHelp,1,ring_PartyToughness,"Dureza del grupo<br>Cuando hay dos o más miembros en el grupo, el daño recibido<br>de los enemigos se reduce al número de miembros."
 SkillRingSkillHelp,1,ring_WeakPPRestraint,Ganancia de PP de golpe de precisión<br>Aumenta la recuperación de PP cuando golpeas el punto débil de un enemigo con<br>un ataque normal.
-SkillRingSkillHelp,1,ring_MultiHu,"Perfect Guard Counter<br>Provides Perfect Guard Heavenly Drop, Perfect Guard Impact<br>Rise, and Perfect Guard Sonic Arrow Ring Skill Lv. 20 effects."
-SkillRingSkillHelp,1,ring_MultiFi,"ggers Air Pursuit,<br>y Knuckles Pursuit Ring Skill Nivel 20 efectos."
+SkillRingSkillHelp,1,ring_MultiHu,"Contraataque de Guardia Perfecta<br>Otorga los efectos de nivel 20 de las habilidades Guardia Perfecta: Caída Celestial, Guardia Perfecta: Impacto Ascendente y Guardia Perfecta: Anillo de Flecha Sónica."
+SkillRingSkillHelp,1,ring_MultiFi,"Soporte para Whirlwind y Pursuit<br>Proporciona los efectos de nivel 20 de las habilidades Whirlwind (Sable doble), Air Pursuit (Dagas dobles) y Pursuit Ring (Puños)."
 SkillRingSkillHelp,1,ring_MultiGu,Time and Roll<br>Proporciona efectos de giro elegante hacia adelante y Time After Time<br>Preservation Ring Skill Level 20.
 SkillRingSkillHelp,1,ring_MultiTe,"Técnicas de defensa<br>Proporciona efectos de nivel 20 de ""Parada técnica C"" y ""Espejismo corto"" <br>."
 SkillRingSkillHelp,1,ring_MultiBr,"Brave Mighty Arm<br>Proporciona los efectos ""Katana C Count Up"" y ""Photon Bow Homing""<br>Ring Skill Nivel 20."
 SkillRingSkillHelp,1,ring_MultiBo,"Patada y placaje<br>Proporciona efectos de placaje con cuchillas elevadas y ""JB Tech Art SC""<br>Ring Skill Nivel 20."
-SkillRingSkillHelp,1,ring_WandElementChangeAnother,"Another Wand Element Change<br>When Wand Focus is charging, the Wand's Element changes<br>to that of the charged Technique (excepting support)."
+SkillRingSkillHelp,1,ring_WandElementChangeAnother,"Otro cambio de elemento de la varita<br>Cuando la Concentración de varita se está cargando, el elemento de la varita cambia<br>al de la técnica cargada (a excepción de las técnicas de apoyo)."
 SkillRingSkillHelp,1,ring_SkillNoHold,"Modo cableado alternativo<br>Al usar Wired Lance, mantén presionado Photon Arts, habilita el ataque<br>sin capturar ni retener al enemigo."
 SkillRingSkillHelp,1,ring_CriticalStrikeStrike,Golpe crítico: cuerpo a cuerpo<br>Aumenta tu tasa de críticos y proporciona una bonificación de daño crítico de<br>para ataques cuerpo a cuerpo.
 SkillRingSkillHelp,1,ring_CriticalStrikeFirearm,Golpe crítico: a distancia<br>Aumenta tu tasa de críticos y proporciona una bonificación de daño crítico de<br>para ataques a distancia.
@@ -24981,7 +24981,7 @@ LaboElementInherit,1,ErrorMsg,Error en la transferencia de aumento. Espere un mo
 LaboElementInherit,1,ButtonText1,Atrás
 LaboElementInherit,1,ButtonText2,Confirmar
 LaboElementInherit,1,ButtonText3,Comenzar la transferencia de aumento
-LaboElementInherit,1,Message_Explanation2,All Augments added to items selected as materials <c ff4f3f>will be lost.<c> Are you sure you wish to proceed?<br>Note: <yellow>S-Grade Augments will not be lost.<c>
+LaboElementInherit,1,Message_Explanation2,Todos los aumentos aplicados a los objetos seleccionados como materiales <c ff4f3f>se perderán.<c> ¿Estás seguro de que deseas continuar?<br>Nota: <yellow>Los aumentos de grado S no se perderán.<c>
 LaboElementInherit,1,ResultMessage1,Transferencia de aumento<green>exitosa <c>.
 LaboElementInherit,1,ResultMessage2,<yellow> Registro de propietario<c>Completo.
 LaboElementInherit,1,Decrease_Title,Confirmar aumento
@@ -26209,7 +26209,7 @@ LaboElementPorting,1,Small_Title1,$(0)
 LaboElementPorting,1,Small_Title2,<yellow> $(0) <c>
 LaboElementPorting,1,Small_Title3,<yellow> - <c>
 LaboElementPorting,1,Message_Confirm1,Los aumentos del artículo inicial<c>se consumirán <yellow><c>y el artículo base<br>adquirirá los aumentos.
-LaboElementPorting,1,Message_Confirm2,Transferring Augments. Are you sure you wish to proceed?<br><br><red>An N-Augment Transfer Pass will be consumed.<c><br><yellow>All<c> of the <yellow>Material Item's Augments<c> will<br>be <yellow>consumed<c> and the Base Item will<br>acquire the Augments.
+LaboElementPorting,1,Message_Confirm2,Transferencia de mejoras. ¿Estás seguro de que deseas continuar?<br><br><red>Se consumirá un Pase de transferencia de mejoras N.<c><br><yellow>Todas<c> las <yellow>mejoras del objeto de material<c><br>se <yellow>consumirán<c> y el objeto base<br>adquirirá dichas mejoras.
 LaboElementPorting,1,Message_Attention1,inferior a<c>que el artículo base.<br>¿Está seguro de que desea continuar?
 LaboElementPorting,1,Message_Attention2,The total Augment number of the item you've selected is <scarlet>lower<c> than the Base Item.<br>Are you sure you wish to proceed?
 LaboElementPorting,1,Message_PassConsumption,Este artículo requiere un<red>Pase de transferencia N-Augment <c>.<br><br> ¿Está seguro de que desea continuar?
