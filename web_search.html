@@ -511,6 +511,14 @@
             <span>Mín. chars</span>
             <input type="number" id="equalChars" min="1" max="500" value="20" step="1">
         </label>
+        <label class="deep-toggle" title="Compara la versión en inglés (Raw) con la traducción al español (Main). Encuentra líneas donde la diferencia de caracteres es desproporcionada.">
+            <input type="checkbox" id="diffSearch">
+            <span>Brecha de caracteres</span>
+        </label>
+        <label class="deep-toggle chars-toggle" id="diffCharsToggle" style="display: none;" title="Diferencia mínima de caracteres entre inglés y español (ej: 40 o 50 caracteres de brecha)">
+            <span>Dif. mín.</span>
+            <input type="number" id="diffChars" min="10" max="1000" value="40" step="5">
+        </label>
         <span class="deep-hint" id="deepHint" style="display: none;">
             También busca en comandos CSV: <code>section,group,id</code>
             — ej. <code>Basic,1,Explanation</code> o textos vacíos
@@ -532,6 +540,11 @@
             Solo sale si el <em>texto es idéntico</em> en ambos (inglés sin traducir).
             Un carácter distinto = no aparece. <strong>Mín. chars</strong> filtra basura corta
             (<code>??</code>, nombres cortos…). Deja la caja vacía para listar todos los pares MAIN=RAW.
+        </span>
+        <span class="deep-hint" id="diffHint" style="display: none;">
+            Compara <strong>Inglés (Raw)</strong> vs <strong>Español (Main)</strong> del mismo archivo y clave (group&nbsp;1).
+            Encuentra líneas con brechas abismales de longitud (cortadas, alucinadas o errores de IA).
+            Ordenadas de <em>mayor a menor brecha</em>. Deja la caja vacía para listar todas o escribe para filtrar.
         </span>
     </div>
 
@@ -563,6 +576,10 @@
         const equalHint = document.getElementById('equalHint');
         const equalChars = document.getElementById('equalChars');
         const charsToggle = document.getElementById('charsToggle');
+        const diffSearch = document.getElementById('diffSearch');
+        const diffHint = document.getElementById('diffHint');
+        const diffChars = document.getElementById('diffChars');
+        const diffCharsToggle = document.getElementById('diffCharsToggle');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -583,10 +600,12 @@
             if (active !== 'file') fileSearch.checked = false;
             if (active !== 'new') corruptSearch.checked = false;
             if (active !== 'equal') equalSearch.checked = false;
+            if (active !== 'diff') diffSearch.checked = false;
             if (active === 'deep') deepSearch.checked = true;
             if (active === 'file') fileSearch.checked = true;
             if (active === 'new') corruptSearch.checked = true;
             if (active === 'equal') equalSearch.checked = true;
+            if (active === 'diff') diffSearch.checked = true;
         }
 
         function updatePlaceholders() {
@@ -594,7 +613,9 @@
             fileHint.style.display = 'none';
             corruptHint.style.display = 'none';
             equalHint.style.display = 'none';
+            diffHint.style.display = 'none';
             charsToggle.style.display = 'none';
+            diffCharsToggle.style.display = 'none';
             searchInput.disabled = false;
 
             if (corruptSearch.checked) {
@@ -604,6 +625,10 @@
                 searchInput.placeholder = 'Opcional: frase completa idéntica · usa Mín. chars para filtrar basura corta';
                 equalHint.style.display = 'block';
                 charsToggle.style.display = 'inline-flex';
+            } else if (diffSearch.checked) {
+                searchInput.placeholder = 'Opcional: filtra por texto, ID o archivo · ordenado por mayor brecha';
+                diffHint.style.display = 'block';
+                diffCharsToggle.style.display = 'inline-flex';
             } else if (fileSearch.checked) {
                 searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
                 fileHint.style.display = 'block';
@@ -621,10 +646,11 @@
             const newMode = corruptSearch.checked;
             const fileMode = fileSearch.checked;
             const equalMode = equalSearch.checked;
+            const diffMode = diffSearch.checked;
             const minLen = fileMode ? 2 : 3;
 
-            // Líneas nuevas / iguales: query opcional
-            if (!newMode && !equalMode && query.length < minLen) {
+            // Líneas nuevas / iguales / brecha: query opcional
+            if (!newMode && !equalMode && !diffMode && query.length < minLen) {
                 resultsContainer.style.display = 'none';
                 paginationEl.classList.remove('visible');
                 paginationEl.innerHTML = '';
@@ -636,7 +662,7 @@
 
             debounceTimer = setTimeout(() => {
                 performSearch(query, currentPage);
-            }, (newMode || equalMode) && !query ? 150 : 500);
+            }, (newMode || equalMode || diffMode) && !query ? 150 : 500);
         }
 
         scopeButtons.forEach(btn => {
@@ -687,6 +713,26 @@
             if (equalSearch.checked) scheduleSearch(true);
         });
 
+        diffSearch.addEventListener('change', () => {
+            if (diffSearch.checked) {
+                exclusiveMode('diff');
+                searchInput.value = '';
+            }
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        diffChars.addEventListener('change', () => {
+            let n = parseInt(diffChars.value, 10);
+            if (Number.isNaN(n)) n = 40;
+            n = Math.max(5, Math.min(1000, n));
+            diffChars.value = String(n);
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+        diffChars.addEventListener('input', () => {
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+
         searchInput.addEventListener('input', () => scheduleSearch(true));
 
         async function performSearch(query, page = 1) {
@@ -699,9 +745,13 @@
             const byfile = fileSearch.checked ? '1' : '0';
             const nuevas = corruptSearch.checked ? '1' : '0';
             const iguales = equalSearch.checked ? '1' : '0';
+            const diff = diffSearch.checked ? '1' : '0';
             let chars = parseInt(equalChars.value, 10);
             if (Number.isNaN(chars)) chars = 20;
             chars = Math.max(1, Math.min(500, chars));
+            let diffCharsVal = parseInt(diffChars.value, 10);
+            if (Number.isNaN(diffCharsVal)) diffCharsVal = 40;
+            diffCharsVal = Math.max(5, Math.min(1000, diffCharsVal));
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -716,8 +766,12 @@
                     nuevas,
                     equal: iguales,
                     iguales,
+                    diff,
+                    brecha: diff,
                     chars: String(chars),
                     min_chars: String(chars),
+                    diff_chars: String(diffCharsVal),
+                    min_diff: String(diffCharsVal),
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -841,6 +895,7 @@
             const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
             const fileMode = !!(data.file || data.byfile);
             const equalMode = !!(data.equal || data.iguales);
+            const diffMode = !!(data.diff || data.brecha);
 
             if (total === 0 || items.length === 0) {
                 resultsCount.textContent = "0 resultados encontrados";
@@ -848,11 +903,13 @@
                     ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
                     : equalMode
                     ? "No hay pares MAIN=RAW con texto idéntico (group&nbsp;1) y esa longitud mínima. Baja <strong>Mín. chars</strong> o vacía el buscador para listar todos."
+                    : diffMode
+                    ? "No se encontraron líneas con una diferencia de caracteres mayor o igual a " + (data.diff_chars || 40) + ". Prueba a reducir <strong>Dif. mín.</strong> o vaciar el texto de búsqueda."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
                     ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Líneas iguales</strong>, <strong>Por archivo</strong> o <strong>Líneas nuevas</strong>.";
+                    : "Activa <strong>Brecha de caracteres</strong>, <strong>Líneas iguales</strong>, <strong>Por archivo</strong> o <strong>Líneas nuevas</strong>.";
                 resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
                 renderPagination(1, 0, 0, false);
                 return;
@@ -868,6 +925,8 @@
                 ? " · líneas nuevas"
                 : equalMode
                 ? ` · main=raw idénticas${minCharsLabel}${pairLabel}`
+                : diffMode
+                ? ` · brecha EN vs ES (dif≥${data.diff_chars || 40} chars)`
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
@@ -903,12 +962,17 @@
                     (item.text || "(Sin texto)").replace(/<br>/gi, " ")
                 );
                 const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || newMode || fileMode || equalMode || (item.match && item.match !== 'text');
+                const showCmd = deep || newMode || fileMode || equalMode || diffMode || (item.match && item.match !== 'text');
                 let matchBadge = '';
                 if (newMode) {
                     matchBadge = `<span class="result-match-badge">update · nueva</span>`;
                 } else if (equalMode || item.match === 'equal') {
                     matchBadge = `<span class="result-match-badge">main=raw · editar MAIN</span>`;
+                } else if (diffMode || item.match === 'diff') {
+                    const dirText = item.diff_dir === 'raw_longer'
+                        ? 'EN mucho mayor que ES'
+                        : 'ES mucho mayor que EN';
+                    matchBadge = `<span class="result-match-badge" style="background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.35);">⚠️ Brecha: ${item.char_diff} chars · ${dirText} (EN: ${item.raw_len} | ES: ${item.main_len})</span>`;
                 } else if (fileMode || item.match === 'file') {
                     matchBadge = `<span class="result-match-badge">archivo</span>`;
                 } else if (item.match && item.match !== 'text') {
@@ -919,7 +983,29 @@
                     ? `<span class="result-corpus ng">NGS</span>`
                     : `<span class="result-corpus classic">Classic</span>`;
 
-                const bodyHtml = `<div class="result-text">${displayTxt}</div>`;
+                let bodyHtml = '';
+                if (diffMode && item.raw_text !== undefined) {
+                    const cleanRaw = escapeHtml(item.raw_text.replace(/<br>/gi, ' '));
+                    const cleanMain = escapeHtml((item.text || '(Vacío)').replace(/<br>/gi, ' '));
+                    bodyHtml = `
+                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+                            <div style="background: rgba(88, 166, 255, 0.08); border: 1px solid rgba(88, 166, 255, 0.25); border-radius: 6px; padding: 8px 12px;">
+                                <div style="font-size: 11px; font-weight: 700; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
+                                    Inglés Original (Raw) · ${item.raw_len} chars
+                                </div>
+                                <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanRaw}</div>
+                            </div>
+                            <div style="background: rgba(248, 81, 73, 0.08); border: 1px solid rgba(248, 81, 73, 0.25); border-radius: 6px; padding: 8px 12px;">
+                                <div style="font-size: 11px; font-weight: 700; color: #f85149; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
+                                    Traducción al Español (Main) · ${item.main_len} chars
+                                </div>
+                                <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanMain}</div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    bodyHtml = `<div class="result-text">${displayTxt}</div>`;
+                }
 
                 a.innerHTML = `
                     <div class="result-file">📁 ${escapeHtml(openFile)}</div>
