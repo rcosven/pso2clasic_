@@ -820,19 +820,13 @@ async def web_index(request):
 def _item_corpus(file_path: str) -> str:
     """
     Clasifica un path del índice: 'classic' | 'ng' | 'other'.
-    Acepta Csv_Clasic, Csv_Clasic_Raw, Csv_Ngs, Csv_Ngs_Raw (con o sin _Raw).
+    Csv_Clasic / Csv_Clasic_Raw siempre corresponde a 'classic'
+    Csv_Ngs / Csv_Ngs_Raw siempre corresponde a 'ng'
     """
     f = (file_path or "").replace("\\", "/").lower()
-    # Quitar carpeta editable normalizada
-    base = f.split("/", 1)[0].replace("_raw", "")
-    if "clasic" in base or "classic" in base:
+    if f.startswith("csv_clasic") or "/csv_clasic" in f:
         return "classic"
-    if "ngs" in base or base.endswith("/ng") or base == "ng" or "csv_ng" in base:
-        return "ng"
-    # fallback por subcadena en path completo
-    if "clasic" in f or "classic" in f:
-        return "classic"
-    if "ngs" in f or "/ng/" in f:
+    if f.startswith("csv_ngs") or "/csv_ngs" in f:
         return "ng"
     return "other"
 

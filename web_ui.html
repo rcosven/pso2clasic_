@@ -1045,17 +1045,55 @@
             return res;
         }
 
-        function getEnglishMaxLineLength() {
-            const boxEn = document.getElementById('box-english');
-            if (!boxEn || !boxEn.value) return 0;
-            const lines = boxEn.value.replace(/<br\s*\/?>/gi, '\n').split(/\r?\n/);
-            let maxLen = 0;
-            for (const rawLine of lines) {
-                const visLen = getVisibleLength(rawLine.trim());
-                if (visLen > maxLen) {
-                    maxLen = visLen;
+        function getVisualWidth(str) {
+            if (!str) return 0;
+            // Elimina etiquetas del juego <yellow>, <c>, etc. para contar ancho visual real
+            const clean = str.replace(/<[^>]+>/g, '').trim();
+            let width = 0;
+            for (let i = 0; i < clean.length; i++) {
+                const code = clean.charCodeAt(i);
+                // Caracteres CJK full-width (japonés: kanji, hiragana, katakana, puntuación CJK)
+                if (
+                    (code >= 0x3000 && code <= 0x9FFF) ||
+                    (code >= 0xFF00 && code <= 0xFF60) ||
+                    (code >= 0xF900 && code <= 0xFAFF)
+                ) {
+                    width += 2; // 1 kanji/kana ocupa 2 anchos de caracter latino en el motor
+                } else {
+                    width += 1;
                 }
             }
+            return width;
+        }
+
+        function getReferenceMaxLineLength() {
+            // Mide ambas variantes (Inglés Original y Japonés Original) y toma la línea más larga de las 2
+            const boxEn = document.getElementById('box-english');
+            const boxJp = document.getElementById('box-japanese');
+            let maxLen = 0;
+
+            // 1. Analizar líneas del inglés (NA)
+            if (boxEn && boxEn.value) {
+                const enLines = boxEn.value.replace(/<br\s*\/?>/gi, '\n').split(/\r?\n/);
+                for (const rawLine of enLines) {
+                    const visLen = getVisibleLength(rawLine.trim());
+                    if (visLen > maxLen) {
+                        maxLen = visLen;
+                    }
+                }
+            }
+
+            // 2. Analizar líneas del japonés (JP) con ancho visual (1 kanji/kana = 2 unidades latinas)
+            if (boxJp && boxJp.value) {
+                const jpLines = boxJp.value.replace(/<br\s*\/?>/gi, '\n').split(/\r?\n/);
+                for (const rawLine of jpLines) {
+                    const jpVisualLen = getVisualWidth(rawLine.trim());
+                    if (jpVisualLen > maxLen) {
+                        maxLen = jpVisualLen;
+                    }
+                }
+            }
+
             return maxLen;
         }
 
@@ -1108,21 +1146,21 @@
                 return;
             }
 
-            let maxEnLen = getEnglishMaxLineLength();
-            if (maxEnLen <= 0) {
-                maxEnLen = 52; // Valor estándar seguro si no hay inglés
-            } else if (maxEnLen < 30) {
-                // Si el inglés era ultra-corto (ej. un título de 1 sola palabra), no romper palabras a 10 chars
-                maxEnLen = Math.max(maxEnLen, 35);
+            let maxRefLen = getReferenceMaxLineLength();
+            if (maxRefLen <= 0) {
+                maxRefLen = 52; // Valor estándar seguro si no hay referencias
+            } else if (maxRefLen < 30) {
+                // Si ambas referencias eran ultra-cortas (ej. un título de 1 sola palabra), mantener al menos 35 chars
+                maxRefLen = Math.max(maxRefLen, 35);
             }
 
             // Restaurar etiquetas y limpiar términos traducidos por error (ej: aire acondicionado -> AC)
             let processedText = cleanGameTerminology(target.value);
-            const wrapped = wrapTextRespectingWords(processedText, maxEnLen);
+            const wrapped = wrapTextRespectingWords(processedText, maxRefLen);
 
             target.value = wrapped;
             target.dispatchEvent(new Event('input', { bubbles: true }));
-            showNotification("📏", `Líneas ajustadas (términos protegidos, máx: ${maxEnLen} chars)`);
+            showNotification("📏", `Líneas ajustadas (guía máx JP/EN: ${maxRefLen} chars)`);
         }
 
         async function translateAndPaste(id, btn) {
@@ -1214,10 +1252,10 @@
                 // Asegurar que ninguna etiqueta de color quede en español y limpiar términos del juego
                 translatedText = cleanGameTerminology(translatedText);
 
-                // Ajustar líneas automáticamente respetando palabras completas según el inglés
-                const maxEnLen = getEnglishMaxLineLength();
-                if (maxEnLen >= 25) {
-                    translatedText = wrapTextRespectingWords(translatedText, maxEnLen);
+                // Ajustar líneas automáticamente respetando palabras completas según el máximo de JP y EN
+                const maxRefLen = getReferenceMaxLineLength();
+                if (maxRefLen >= 25) {
+                    translatedText = wrapTextRespectingWords(translatedText, maxRefLen);
                 }
 
                 // Pegar directamente en la caja de traducción editable
