@@ -113,14 +113,14 @@ Block,1,InPublicShipToast,Estado establecido temporalmente en Universal Ship-onl
 Block,1,InChallengeShipToast,Estado establecido temporalmente en Challenge Ship-only.
 Block,1,InPokaShipToast,Estado establecido temporalmente en Battle Arena-only.
 Block,1,BlockForm_Move_Exp_HighLevelQuest,"<red>¡La misión que tienes aceptada está sujeta a la<br>""penalización por abandono""!<c><br><br>Abandonarla causará molestias a otros jugadores, por lo que<br>no podrás volver a aceptar la misión urgente en curso.<br>Además, se te trasladará a otro bloque de forma obligatoria.<br><br>Si cambias de bloque, abandonarás el grupo<br>automáticamente y la misión aceptada se cancelará."
-Block,1,BlockForm_PublicShip_Exp_HighLevelQuest,¿Seguro que deseas continuar?
-Block,1,BlockForm_MyShip_Exp_HighLevelQuest,desea continuar?
+Block,1,BlockForm_PublicShip_Exp_HighLevelQuest,"<red>¡Tu misión actual está sujeta a una penalización por<br>abandono!<c><br><br>Como abandonar esta búsqueda puede causar problemas a<br>otros jugadores, ya no podrás volver a aceptar Misiones<br>urgentes si eliges abandonar tu actual búsqueda. También<br>será trasladado por la fuerza a otro bloque. Mudarse al<br>Barco Universal hará que usted retirarse automáticamente<br>de su grupo y abandonar tu búsqueda actual.<br><br>Estás a punto de transferirte al Barco Universal y aceptar<br>una pena de abandono.<br><br>¿Está seguro de que desea continuar?"
+Block,1,BlockForm_MyShip_Exp_HighLevelQuest,"<red>¡Tu misión actual está sujeta a una penalización por<br>abandono!<c><br><br>Como abandonar esta búsqueda puede causar problemas a<br>otros jugadores, ya no podrás volver a aceptar Misiones<br>urgentes si eliges abandonar tu actual búsqueda. También<br>será trasladado por la fuerza a otro bloque. Mudarse a<br>su barco hará que usted retirarse automáticamente de su<br>grupo y abandonar tu búsqueda actual.<br><br>Estás a punto de transferirte a tu barco y aceptar. una<br>pena de abandono.<br><br>¿Está seguro de que desea continuar?"
 Block,1,BlockForm_Complete_Toast,Transferido a $(0).
 Block,1,BlockForm_GuideText,Puedes transferir a otros bloques o PSO2.
 Block,1,BlockForm_TutrialStart,Reanudarás la reproducción de PSO2 desde el prólogo.<br><br> ¿Está seguro de que desea continuar?
 Block,1,BlockForm_RegionMove_Title,Transferencia de región
 Block,1,BlockForm_RegionMove_Exp,Transferir a $(0). ¿Está seguro?
-Block,1,BlockForm_NotOnlyBlock_Exp_PS4,Forme<br>grupos y comuníquese con jugadores en otras plataformas.<br><br> ¿Está seguro de que desea continuar?
+Block,1,BlockForm_NotOnlyBlock_Exp_PS4,Estás a punto de abandonar un bloque exclusivo de PS4.<br><br>Salir de este Bloque Exclusivo permitirá formar grupos y<br>comunicarse con jugadores en otras plataformas.<br><br>¿Está seguro de que desea continuar?
 Block,1,BlockForm_Error_IllegalMember,No se puede transferir. Uno o más miembros del grupo no pueden transferir<br>al bloque seleccionado.
 Block,1,MeetForm_Title,Transferencia a la ubicación del personaje
 Block,1,MeetForm_Explanation,"¿Quieres trasladarte a la ubicación de $(0)?<br><br><yellow>• Si es un sector de exploración o de combate, te trasladarás a un Ryuker Device;<br>si es una base ARKS, te trasladarás a la entrada.<br>• Al trasladarte, se cancelará la misión que tengas aceptada<br>y también se perderán los efectos obtenidos durante su progreso.<br>• Si eres el único que ha establecido una palabra clave de sala,<br>dicha configuración se desactivará.</c>"
@@ -4833,7 +4833,7 @@ Window,1,NoName,Ninguno
 Window,1,Percent,%
 Window,1,PercentNum,$(0)%
 Window,1,ScratchNote_Title,Precauciones relacionadas con los premios
-Window,1,ScratchNote,ing.<br>Consulte las preguntas frecuentes para obtener más detalles sobre las funciones.
+Window,1,ScratchNote,"Se muestra la tasa de ganancia mostrada para cada artículo<br>individual. después de redondear al sexto decimal y luego cortar<br>en el 5to decimal en adelante. Como tal, es posible que no salga<br>al 100%. aunque todo esté sumado. Se muestra la tasa de ganancia<br>de todos los elementos insertados. Posteriormente, Esto<br>significa que para un artículo con una tasa de ganancia del 1%,<br>esto no Esto no significa que seguramente resultará en 1 empate<br>cada 100 veces. Tenga en cuenta que los premios liberados en<br>este billete rasca y gana también pueden ser liberado en otros<br>boletos rasca y gana. *Algunos artículos no son compatibles con<br>Cel Shading. Consulte las preguntas frecuentes para obtener más<br>detalles sobre las funciones."
 FullSizeGuide,0,Guide_Common_01,決定：<%Decide>　　キャンセル：<%Cancel>
 FullSizeGuide,0,Guide_Common_02,決定：<%Decide>　　キャンセル：<%Cancel>　　操作ウィンドウ切り替え：<%ChangeCtrlWindowForward>
 FullSizeGuide,0,Guide_Common_03,決定：<%Decide>　　キャンセル：<%Cancel>　　操作項目の移動：<%NextWidget>
