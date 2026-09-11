@@ -905,8 +905,8 @@ AcShopCommon,1,TabName8,9. Indefinido
 AcShopCommon,1,Date,Fecha
 AcShopCommon,1,NewHistory,Nueva historia
 AcShopCommon,1,HistoryDBError,Error al acceder al registro. Inténtelo de nuevo más tarde.
-AcShopCommon,1,MultiCheckMessage,Los siguientes objetos <yellow>solo pueden usarse un número limitado<br>de veces<c> por personaje:<br>• N-Inventario +10<br>El uso de este objeto expande tu inventario en 10 espacios.<br><yellow>Puede usarse un máx. de 10 veces para expandir tu inventario<br>hasta 100 espacios.<c><br>• Expansión de almacenamiento de personaje (50)<br>El uso de este objeto expande tu almacenamiento de personaje en 50.<br><yellow>Puede usarse un máx. de 34 veces para expandir tu almacenamiento<br>hasta 1700 espacios.<c><br>• «Ticket de subpaleta»<br><yellow>Esto expande tus espacios de subpaleta al máximo en un solo uso.<c><br><br><c ff4f3f>*Comprueba tu estado de uso antes de comprar.<c><br>¿Deseas continuar a la pantalla de confirmación de compra?
-AcShopCommon,1,MultiCheckMessage_v,ge estado antes de comprar.<c><br> ¿Le gustaría pasar a la pantalla de Confirmación de compra <br>?
+AcShopCommon,1,MultiCheckMessage,"Los siguientes elementos<yellow> solo se pueden utilizar en un número<br>limitado<br>de veces<c> por carácter.<br>■ N-Inventario +10<br>Un solo uso de este artículo amplía tu inventario en 10<br>espacios.<br><yellow>Se puede utilizar un máx. de 10 veces para ampliar tu<br>inventario<br>en hasta 100 espacios.<c><br>■ Expansión del almacenamiento de personajes (50)<br>Un solo uso de este objeto amplía el almacenamiento de tu<br>personaje en 50.<br><yellow>Se puede utilizar un máx. de 34 veces para ampliar tu<br>almacenamiento<br>en hasta 1700 espacios.<c><br>■ ""Ticket de subpaleta""<br><yellow>Esto expande tus espacios de subpaleta al máximo. en un solo<br>uso.<c><br><br><c ff4f3f>*Comprueba tu estado de uso antes de comprar.<c><br>¿Quieres proceder a la Confirmación de Compra?<br>pantalla?"
+AcShopCommon,1,MultiCheckMessage_v,"Los siguientes elementos<yellow> solo se pueden utilizar en un número<br>limitado<br>de veces<c> por carácter.<br>■ N-Inventario +10<br>Un solo uso de este artículo amplía tu inventario en 10<br>espacios.<br><yellow>Se puede utilizar un máx. de 10 veces para ampliar tu<br>inventario<br>en hasta 100 espacios.<c><br>■ Expansión del almacenamiento de personajes (50)<br>Un solo uso de este objeto amplía el almacenamiento de tu<br>personaje en 50.<br><yellow>Se puede utilizar un máx. de 14 veces para ampliar su<br>almacenamiento en<br>hasta 700 espacios.<c><br>■ ""Ticket de subpaleta""<br><yellow>Esto expande tus espacios de subpaleta al máximo. en un solo<br>uso.<c><br><br><c ff4f3f>*Comprueba tu estado de uso antes de comprar.<c><br>¿Quieres proceder a la Confirmación de Compra?<br>pantalla?"
 AcShopCommon,1,HistoryItem,Nombre del artículo
 AcShopCommon,1,HistoryMoney,Cantidad
 AcShopCommon,1,TimesaleTitle,¡OFERTA POR TIEMPO LIMITADO!
@@ -914,11 +914,11 @@ AcShopCommon,1,TimesaleBuyCheck,Comprará los siguientes artículos a<br><s> $(3
 AcShopCommon,1,TimesalePrice,<red> $(0) <c>
 AcShopCommon,1,TimesaleErrorTitle,La alineación ha cambiado.
 AcShopCommon,1,TimesaleErrorMessage,<red> Los precios de los artículos han cambiado.<c><br><br>La pantalla se recargará.
-AcShopCommon,1,TimesaleHaveTicket,el siguiente artículo<br><c 5fdf00> que ya has comprado. <c><br>¿Está seguro de que desea continuar?<br>(Su aire acondicionado: $(1))
+AcShopCommon,1,TimesaleHaveTicket,<pict Arcscash><c ff4f3f>Compra adicional de artículos ya comprados<c><br><s>$(3)</s><red>$(2)$(0)<c> se agregará al siguiente elemento<br><c 5fdf00>que ya has comprado.<c><br>¿Está seguro de que desea continuar?<br>(Su aire acondicionado: $(1))
 AcShopCommon,1,MessageLimitOver,Has excedido el límite de compra.<br><br> [No. 2104]
 AcShopCommon,1,MessageSoldOut,El período de venta ha pasado.<br><br> [No. 2105]
 AcShopCommon,1,MessageLimitOverError,La compra no se puede completar porque excede<br>del límite.
-AcShopCommon,1,MessageSoldOutError,La compra no se puede completar porque ha pasado el período de venta <br>.
+AcShopCommon,1,MessageSoldOutError,La compra no se puede completar porque ha pasado el<br>período de venta
 AcShopCommon,1,TokuteiURL,<&URL pso2_players_support_rule_tokutei>
 AcShopCommon,1,TokuteiURL_v,<&URL pso2_players_support_rule_tokutei_vita>
 AcShopCommon,1,TokuteiURL_c,<&URL pso2_players_support_rule_tokutei_cloud>
