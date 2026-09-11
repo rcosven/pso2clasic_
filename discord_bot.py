@@ -939,6 +939,26 @@ async def web_api_search(request):
         equal_min_chars = 20
     equal_min_chars = max(1, min(500, equal_min_chars))
 
+    # diff=1 / brecha=1 / gap=1 → comparar longitud de texto EN (Raw) vs ES (Main) en group 1
+    diff_raw = (
+        request.query.get("diff")
+        or request.query.get("brecha")
+        or request.query.get("gap")
+        or request.query.get("discrepancia")
+        or ""
+    ).strip().lower()
+    diff_only = diff_raw in ("1", "true", "yes", "on")
+    try:
+        diff_min_chars = int(
+            request.query.get("diff_chars")
+            or request.query.get("min_diff")
+            or request.query.get("diffchars")
+            or "40"
+        )
+    except ValueError:
+        diff_min_chars = 40
+    diff_min_chars = max(5, min(2000, diff_min_chars))
+
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (request.query.get("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
@@ -973,6 +993,10 @@ async def web_api_search(request):
         "iguales": equal_only,
         "chars": equal_min_chars,
         "min_chars": equal_min_chars,
+        "diff": diff_only,
+        "brecha": diff_only,
+        "diff_chars": diff_min_chars,
+        "min_diff": diff_min_chars,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -983,10 +1007,10 @@ async def web_api_search(request):
         "capped": False,
     }
     # En modo líneas nuevas se permite query vacía (lista todo sin escribir nada)
-    # Líneas iguales: query opcional (sin query = textos idénticos repetidos 2+ veces)
+    # Líneas iguales / Brecha de caracteres: query opcional
     # Por archivo: mínimo 2 caracteres (ej. "cl" / "ms")
     min_q = 2 if file_only else 3
-    if not new_only and not equal_only and len(query) < min_q:
+    if not new_only and not equal_only and not diff_only and len(query) < min_q:
         return web.json_response(empty)
 
     # ─── Modo líneas iguales (group 1): MAIN vs RAW del MISMO archivo/clave ─
@@ -1106,6 +1130,142 @@ async def web_api_search(request):
             "pair_count": total,
             "rare": False,
             "corrupt": False,
+            "scope": scope,
+            "page": page,
+            "per_page": per_page,
+            "total": total,
+            "total_pages": total_pages,
+            "capped": total >= MAX_MATCHES,
+        })
+
+    # ─── Modo brecha de caracteres (group 1): MAIN vs RAW del MISMO archivo/clave ─
+    # Compara la longitud del texto en inglés original (Raw) vs la traducción al español (Main).
+    # Detecta líneas donde la brecha de caracteres es abismal (traducciones cortadas o alucinadas).
+    if diff_only:
+        query_norm_search = "".join(
+            c
+            for c in unicodedata.normalize("NFKD", query.lower())
+            if not unicodedata.combining(c)
+        ) if query else ""
+
+        pairs: dict[tuple, dict] = {}
+        for item in bot.index_datos:
+            if str(item.get("group", "") or "").strip() != "1":
+                continue
+            corpus = _item_corpus(item.get("file", ""))
+            if scope == "classic" and corpus != "classic":
+                continue
+            if scope == "ng" and corpus != "ng":
+                continue
+            if corpus not in ("classic", "ng"):
+                continue
+
+            fpath = (item.get("file") or "").replace("\\", "/")
+            layer = _file_layer(fpath)
+            if layer not in ("main", "raw"):
+                continue
+
+            stem = Path(fpath).name
+            section = (item.get("section") or "").strip()
+            row_id = (item.get("id") or "").strip()
+
+            pk = (corpus, stem, section, row_id)
+            slot = pairs.setdefault(pk, {})
+            if layer not in slot:
+                slot[layer] = item
+
+        ranked_diffs = []
+        for (corpus, stem, section, row_id), slot in pairs.items():
+            main_it = slot.get("main")
+            raw_it = slot.get("raw")
+            if not main_it or not raw_it:
+                continue
+
+            raw_text = (raw_it.get("text") or "").strip()
+            main_text = (main_it.get("text") or "").strip()
+            len_raw = len(raw_text)
+            len_main = len(main_text)
+            char_diff = abs(len_raw - len_main)
+
+            if char_diff < diff_min_chars:
+                continue
+
+            # Filtro opcional de búsqueda si el usuario escribió algo
+            if query_norm_search:
+                match_query = (
+                    query_norm_search in main_it.get("text_norm", "")
+                    or query_norm_search in raw_it.get("text_norm", "")
+                    or query_norm_search in main_it.get("id_norm", "")
+                    or query_norm_search in main_it.get("section_norm", "")
+                    or query_norm_search in stem.lower()
+                )
+                if not match_query:
+                    continue
+
+            ranked_diffs.append({
+                "corpus": corpus,
+                "stem": stem,
+                "section": section,
+                "row_id": row_id,
+                "main_it": main_it,
+                "raw_it": raw_it,
+                "raw_text": raw_text,
+                "main_text": main_text,
+                "raw_len": len_raw,
+                "main_len": len_main,
+                "char_diff": char_diff,
+                "diff_dir": "raw_longer" if len_raw > len_main else "main_longer",
+            })
+
+        # Ordenar de mayor a menor brecha de caracteres
+        ranked_diffs.sort(key=lambda x: (x["char_diff"], x["raw_len"]), reverse=True)
+
+        coincidencias = []
+        for entry in ranked_diffs:
+            item = entry["main_it"]
+            fpath = (item.get("file") or "").replace("\\", "/")
+            open_file = fpath.replace("_Raw", "")
+            coincidencias.append({
+                "file": open_file,
+                "id": item.get("id", ""),
+                "section": item.get("section", ""),
+                "group": item.get("group", "1"),
+                "text": entry["main_text"],
+                "raw_text": entry["raw_text"],
+                "main_len": entry["main_len"],
+                "raw_len": entry["raw_len"],
+                "char_diff": entry["char_diff"],
+                "diff_dir": entry["diff_dir"],
+                "cmd": item.get("cmd", ""),
+                "match": "diff",
+                "corpus": entry["corpus"],
+                "layer": "main",
+                "diff": True,
+                "min_diff": diff_min_chars,
+            })
+            if len(coincidencias) >= MAX_MATCHES:
+                break
+
+        total = len(coincidencias)
+        total_pages = (total + per_page - 1) // per_page if total else 0
+        if total_pages and page > total_pages:
+            page = total_pages
+        start = (page - 1) * per_page
+        page_items = coincidencias[start : start + per_page]
+
+        return web.json_response({
+            "items": page_items,
+            "deep": False,
+            "new": False,
+            "nuevas": False,
+            "file": False,
+            "byfile": False,
+            "equal": False,
+            "iguales": False,
+            "diff": True,
+            "brecha": True,
+            "diff_chars": diff_min_chars,
+            "min_diff": diff_min_chars,
             "scope": scope,
             "page": page,
             "per_page": per_page,
