@@ -1100,28 +1100,15 @@
         function wrapTextRespectingWords(text, maxLen) {
             if (!text || maxLen <= 0) return text;
 
-            // Procesar línea por línea sin fusionar saltos intencionales ni oraciones separadas
+            // Re-organiza las palabras para aprovechar al máximo el espacio de cada línea
             const rawLines = text.split(/\r?\n/);
             const resultLines = [];
+            let currentParagraphWords = [];
 
-            for (const rawLine of rawLines) {
-                const trimmed = rawLine.trim();
-                // Si la línea está vacía, preservarla
-                if (!trimmed) {
-                    resultLines.push('');
-                    continue;
-                }
-
-                // Si los caracteres visuales de la línea entran dentro del máximo, NO tocarla
-                if (getVisibleLength(trimmed) <= maxLen) {
-                    resultLines.push(trimmed);
-                    continue;
-                }
-
-                // Si la línea supera el ancho máximo, envolver SOLO esta línea por palabras completas
-                const words = trimmed.split(/\s+/);
+            function flushParagraph() {
+                if (currentParagraphWords.length === 0) return;
                 let curLine = '';
-                for (const word of words) {
+                for (const word of currentParagraphWords) {
                     if (!curLine) {
                         curLine = word;
                     } else if (getVisibleLength(curLine + ' ' + word) <= maxLen) {
@@ -1134,7 +1121,44 @@
                 if (curLine) {
                     resultLines.push(curLine);
                 }
+                currentParagraphWords = [];
             }
+
+            for (const rawLine of rawLines) {
+                const trimmed = rawLine.trim();
+                // Línea vacía = salto de párrafo explícito
+                if (!trimmed) {
+                    flushParagraph();
+                    resultLines.push('');
+                    continue;
+                }
+
+                // Si es un ítem de lista/viñeta (1., -, *, A)), preservarlo en su propia línea
+                if (/^(\d+\.|\-|\*|•|[A-Z]\))\s+/.test(trimmed)) {
+                    flushParagraph();
+                    const words = trimmed.split(/\s+/);
+                    let curLine = '';
+                    for (const word of words) {
+                        if (!curLine) {
+                            curLine = word;
+                        } else if (getVisibleLength(curLine + ' ' + word) <= maxLen) {
+                            curLine += ' ' + word;
+                        } else {
+                            resultLines.push(curLine);
+                            curLine = word;
+                        }
+                    }
+                    if (curLine) resultLines.push(curLine);
+                    continue;
+                }
+
+                // Agrupar palabras para que fluyan y aprovechen el ancho completo
+                const words = trimmed.split(/\s+/);
+                for (const w of words) {
+                    currentParagraphWords.push(w);
+                }
+            }
+            flushParagraph();
 
             return resultLines.join('\n');
         }
