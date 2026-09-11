@@ -1381,8 +1381,6 @@
                     bodyHtml = `<div class="result-text">${displayTxt}</div>`;
                 }
 
-                const rawPreview = (item.raw_text || item.text || '').replace(/<br>/gi, ' ');
-
                 a.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
                         <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1;">
@@ -1391,13 +1389,31 @@
                             ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                             ${matchBadge}
                         </div>
-                        <button type="button" class="btn-exclude" title="Quitar este resultado de la lista de búsqueda" onclick="promptExcludeItem(event, '${escapeHtml(itemKey)}', '${escapeHtml(item.id)}', '${escapeHtml(item.section || '')}', '${escapeHtml(openFile)}', '${escapeHtml(itemGroup)}', '${escapeHtml(rawPreview)}')">
+                        <button type="button" class="btn-exclude" title="Quitar este resultado de la lista de búsqueda">
                             🚫 Excluir
                         </button>
                     </div>
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
                     ${bodyHtml}
                 `;
+
+                // Evitar que hacer clic en el botón de excluir o desplegar detalles navegue a la edición
+                a.addEventListener('click', (e) => {
+                    if (e.target.closest('.btn-exclude') || e.target.closest('details')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                });
+
+                const btnExclude = a.querySelector('.btn-exclude');
+                if (btnExclude) {
+                    btnExclude.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const snippet = (item.text || item.raw_text || '').replace(/<br>/gi, ' ').slice(0, 120);
+                        promptExcludeItem(e, itemKey, item.id, item.section || '', openFile, itemGroup, snippet);
+                    });
+                }
 
                 resultsList.appendChild(a);
             });
