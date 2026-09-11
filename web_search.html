@@ -1032,8 +1032,10 @@
             btn.addEventListener('click', () => {
                 scopeButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                currentScope = btn.dataset.scope || 'all';
-                scheduleSearch(true);
+                currentScope = btn.getAttribute('data-scope') || btn.dataset.scope || 'all';
+                clearTimeout(debounceTimer);
+                currentPage = 1;
+                performSearch(searchInput.value.trim(), 1);
             });
         });
 
