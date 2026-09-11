@@ -1034,6 +1034,17 @@
             });
         }
 
+        function cleanGameTerminology(str) {
+            if (!str) return str;
+            let res = restoreGameTags(str);
+            // Correcciones de inventos de Google Translate para términos de PSO2
+            res = res.replace(/\baire\s+acondicionado\b/gi, 'AC');
+            res = res.replace(/\bcorriente\s+alterna\b/gi, 'AC');
+            res = res.replace(/\bpuntos\s+de\s+diversi[oó]n\b/gi, 'puntos FUN');
+            res = res.replace(/\bgemas?\s+estrella\b/gi, 'SG');
+            return res;
+        }
+
         function getEnglishMaxLineLength() {
             const boxEn = document.getElementById('box-english');
             if (!boxEn || !boxEn.value) return 0;
@@ -1105,13 +1116,13 @@
                 maxEnLen = Math.max(maxEnLen, 35);
             }
 
-            // Restaurar cualquier etiqueta de color traducida por error (ej: <amarillo> -> <yellow>)
-            let processedText = restoreGameTags(target.value);
+            // Restaurar etiquetas y limpiar términos traducidos por error (ej: aire acondicionado -> AC)
+            let processedText = cleanGameTerminology(target.value);
             const wrapped = wrapTextRespectingWords(processedText, maxEnLen);
 
             target.value = wrapped;
             target.dispatchEvent(new Event('input', { bubbles: true }));
-            showNotification("📏", `Líneas ajustadas (etiquetas protegidas, máx: ${maxEnLen} chars)`);
+            showNotification("📏", `Líneas ajustadas (términos protegidos, máx: ${maxEnLen} chars)`);
         }
 
         async function translateAndPaste(id, btn) {
@@ -1130,13 +1141,20 @@
             let textToTranslate = el.value.replace(/<br\s*\/?>/gi, "\n");
             const srcLang = id === 'box-japanese' ? 'ja' : (id === 'box-english' ? 'en' : 'auto');
 
-            // Proteger etiquetas del juego <...> (ej: <yellow>, <c>, <tab>) para que Google no las traduzca
+            // Proteger etiquetas del juego <...>, variables $(1) y acrónimos como AC, SG, PP, etc.
             const tags = [];
-            textToTranslate = textToTranslate.replace(/<(?!br\s*\/?>)[^>]+>/gi, (match) => {
+            const protectMatch = (m) => {
                 const idx = tags.length;
-                tags.push(match);
+                tags.push(m);
                 return `[[TAG${idx}]]`;
-            });
+            };
+
+            // 1. Proteger etiquetas <...>
+            textToTranslate = textToTranslate.replace(/<(?!br\s*\/?>)[^>]+>/gi, protectMatch);
+            // 2. Proteger variables $(1), {0}, %s
+            textToTranslate = textToTranslate.replace(/(\$\([^\)]+\)|\{[0-9]+\}|%[a-zA-Z0-9_]+%)/g, protectMatch);
+            // 3. Proteger acrónimos y monedas sagradas de PSO2 (ej: AC no debe ser aire acondicionado)
+            textToTranslate = textToTranslate.replace(/\b(AC|SG|PP|HP|CP|EXP|FUN|Meseta|N-Meseta|ARKS)\b/g, protectMatch);
 
             try {
                 let translatedText = '';
@@ -1193,8 +1211,8 @@
                     translatedText = translatedText.replace(tagRegex, tags[i]);
                 }
 
-                // Asegurar que ninguna etiqueta de color quede en español
-                translatedText = restoreGameTags(translatedText);
+                // Asegurar que ninguna etiqueta de color quede en español y limpiar términos del juego
+                translatedText = cleanGameTerminology(translatedText);
 
                 // Ajustar líneas automáticamente respetando palabras completas según el inglés
                 const maxEnLen = getEnglishMaxLineLength();
