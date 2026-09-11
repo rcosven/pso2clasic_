@@ -2406,7 +2406,7 @@ ConfigContents,1,Config_097_Name,Tipo de visualización para las explosiones osc
 ConfigContents,1,Config_097_Choices_0,Predeterminado a la configuración de otros
 ConfigContents,1,Config_097_Choices_1,Mostrar aura
 ConfigContents,1,Config_097_Choices_2,Carácter de visualización
-ConfigContents,1,Config_097_Hint,".<br><br>This setting will not be applied if<br>[Graphics] > [Shader Quality] is set to ""Simple."""
+ConfigContents,1,Config_097_Hint,"Establece cómo aparecen las Explosiones Oscuras de otros<br>jugadores.<br><br>[Predeterminado en la configuración de otros]<br>Visualización según la configuración de otros jugadores.<br><br>[Mostrar aura] Muestra Explosiones oscuras como un aura.<br>La transparencia del aura estará determinada por otros<br>configuración de los jugadores.<br><br>[Mostrar carácter] Muestra siempre el personaje y no<br>muestres Dark Blasts.<br><br>Esta configuración no se aplicará si [Gráficos] ><br>[Calidad de sombreador] está configurado en ""Simple""."
 ConfigContents,1,Config_097_Hint_PS4,isplay the character and do not show Dark Blasts.
 ConfigContents,1,Config_097_Hint_Switch,isplay the character and do not show Dark Blasts.
 ConfigContents,1,Config_097_Hint_PCCloud,isplay the character and do not show Dark Blasts.
@@ -3089,7 +3089,7 @@ ConfigContents,1,Config_Reb_173_Hint,br><yellow>*La prioridad de orientación se
 ConfigContents,1,Config_Reb_173_Select_0,Desactivar
 ConfigContents,1,Config_Reb_173_Select_1,Permitir
 ConfigContents,1,Config_Reb_174_Name,Mostrar hologramas portátiles de otros jugadores
-ConfigContents,1,Config_Reb_174_Hint,será visible al moverse a otro sector.<c>
+ConfigContents,1,Config_Reb_174_Hint,"Establece si se mostrarán o no los hologramas portátiles colocados por otros jugadores.<br><br><yellow>*Si se establece en [Pantalla], la cantidad de hologramas mostrados variará según la configuración [Visualización máxima<br>detallada del modelo] en [Gráficos].<br><br><yellow>*Al cambiar de [Ocultar] a [Mostrar], los hologramas colocados por otros jugadores se volverán visibles al moverse a otro sector.<c>"
 ConfigContents,1,Config_Reb_174_Select_0,Mostrar en todas partes
 ConfigContents,1,Config_Reb_174_Select_1,Ocultarse en sectores de combate
 ConfigContents,1,Config_Reb_174_Select_2,Ocultarse en sectores de combate/exploración
@@ -3163,7 +3163,7 @@ ConfigContents,1,Config_Reb_183_Hint,"Los movimientos de los personajes parecen 
 ConfigContents,1,Config_Reb_183_Select_0,Apagado
 ConfigContents,1,Config_Reb_183_Select_1,En
 ConfigContents,1,Config_Reb_Title_Toon,<white> Configuración de sombreado de celdas <c>
-ConfigContents,1,Config_CollaboMode_Hint,>-<pict collab_photo_ok>: Enviable<br>-<pict collab_photo_ng>: No enviado (contiene elementos no autorizados)
+ConfigContents,1,Config_CollaboMode_Hint,"Establezca si desea mostrar un icono que indique si su Equipo<br>actual del personaje, apariencia, discos de música ambientados en<br>C-Space/A-Space, y piezas de construcción actualmente colocadas y<br>Se pueden enviar hologramas portátiles para eventos como Campañas<br>de envío de capturas de pantalla.<br><br><yellow>*El ícono siempre aparecerá en la parte superior derecha de la<br>pantalla.<c><br><br>[Iconos]<br>- <pict collab_photo_ok>: Enviable<br>- <pict collab_photo_ng>: No se puede enviar (contiene elementos no autorizados)"
 ConfigContents,1,Config_Reb_186_Name,Establecer la posición de visualización del daño por segundo (DPS)
 ConfigContents,1,Config_Reb_186_Hint,Establezca la posición de visualización de daños por segundo (DPS).
 ConfigContents,1,Config_Reb_186_Select_0,Arriba a la derecha
@@ -3209,7 +3209,7 @@ InitOpeSettings,0,message,おもに、どちらの操作機器を使用します
 InitOpeSettings,1,title,Dispositivo de control primario
 InitOpeSettings,1,button1,Teclado y ratón
 InitOpeSettings,1,button2,Controlador
-InitOpeSettings,1,message,"seleccionando [Configuración de control]<br>en [Sistema] en el Menú principal, luego [Dispositivo de control principal]. <c>"
+InitOpeSettings,1,message,"¿Qué dispositivo te gustaría usar como controlador principal?<br><br>Cuando se selecciona [Teclado y mouse] Muévete con el teclado. Ataca y<br>cambia de orientación con el ratón.<br><br>Cuando se selecciona [Gamepad] Muévete, ataca y cambia de orientación<br>con el gamepad. Chat disponible a través del teclado.<br><br><yellow>Esta configuración se puede cambiar en cualquier momento seleccionando<br>[Configuración de control] en [Sistema] en el Menú principal, luego<br>[Dispositivo de control principal].<c>"
 PlayerStatus,0,MiKakin,未使用
 PlayerStatus,0,IsPremium,<yellow>プレミアム有効期間中<c>
 PlayerStatus,0,NonPremium,<red>プレミアム有効期限切れ<c>
