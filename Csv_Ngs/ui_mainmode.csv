@@ -716,12 +716,12 @@ Poka,0,PokaRanking_Rule_BattleCrystal,エンブレム争奪戦
 Poka,0,PokaRanking_Rule_BattleRoyal_Switch,バトルロイヤル(クラウド版)
 Poka,0,PokaRanking_Rule_BattleCrystal_Switch,エンブレム争奪戦(クラウド版)
 Poka,0,PokaRanking_PrizeMessage,バトルランキング報酬をアークスリーグ管理官ミミからお受け取りください。
-Poka,1,Confirm_Title,CONFIRMAR TRANSFERENCIA DE ENVÍO
-Poka,1,Confirm_Message,the Universal Ship<br>Battle Lobby?
+Poka,1,Confirm_Title,CONFIRMAR TRANSFERENCIA DE SHIP
+Poka,1,Confirm_Message,"Las siguientes condiciones temporales se aplicarán en el<br>Universal<br>Bloque de batalla de barcos.<br><br>- Sólo se permite la clase especial [Battle Warrior].<br>- Las artes, técnicas y habilidades de clase de los fotones<br>mostrar no aprendido<br>- No podrás llevar ninguna meseta, CC o artículos.<br>- Uso de almacenamiento, alojamiento personal y de la Alianza<br>no está permitido.<br>- No se mostrarán las notificaciones de misiones urgentes.<br>- Sólo podrás acceder a una versión especializada de tu<br>Lista de amigos, correo y arte de símbolos.<br>- No se mostrará el indicador de afinidad.<br><red>Nota: Las condiciones anteriores ya no<br>aplicar una vez que regreses del Barco Universal.<c><br><red>La captura de imágenes y videos es compatible con todos los<br>Battle Blocks.<br>Tu personaje puede aparecer en imágenes en vivo.<c><br>¿Le gustaría proceder al Barco Universal?<br>¿Lobby de batalla?"
 Poka,1,Confirm_Title_InBlock,CONFIRMAR TRANSFERENCIA EN BLOQUE
-Poka,1,Confirm_Message_InBlock,r>original state when you return from the Battle Block.<c><br><br>Are you sure you want to move to the Battle Lobby?
+Poka,1,Confirm_Message_InBlock,"Estás a punto de pasar a un bloque de batalla.<br>Tenga en cuenta que se aplicarán las siguientes condiciones.<br><br>- Sólo se permite la clase especial [Battle Warrior].<br>- Las artes, técnicas y habilidades de clase de los fotones se<br>mostrarán como no aprendidas.<br>- No podrás llevar ninguna meseta, CC o artículos.<br>- Uso de almacenamiento, alojamiento personal,<br>y Alliance Quarters no está permitido.<br>- No se mostrarán las notificaciones de misiones urgentes.<br>- Sólo podrás acceder a un<br>versión especializada de su lista de amigos, correo y arte<br>simbólico.<br>- No se mostrará el indicador de afinidad.<br><br><red>Nota: Todos los estados se restablecerán a sus<br>estado original cuando regresas del Bloque de Batalla.<c><br><br>¿Estás seguro de que quieres pasar al lobby de batalla?"
 Poka,1,Confirm_Title_InNormal,CONFIRMAR TRANSFERENCIA DE ENVÍO
-Poka,1,Confirm_Message_InNormal,o your login history.<br><br>Are you sure you want to return to your ship?
+Poka,1,Confirm_Message_InNormal,"Tenga en cuenta que ya no podrá comprobar el<br>Amigos, correo o arte simbólico que agregaste<br>mientras estabas en<br>el Barco Universal una vez que regreses a tu propio<br>barco.<br><br>Sin embargo, podrás comprobar lo anterior<br>nuevamente.<br>cada vez que regreses al Barco Universal.<br><br>Cuando regrese a su barco, una entrada de inicio de<br>sesión<br>se agregará a su historial de inicio de sesión.<br><br>¿Estás seguro de que quieres regresar a tu barco?"
 Poka,1,ShopTitleText,TIENDA DE INTERCAMBIO DE MONEDAS DE BATALLA
 Poka,1,ShopGuideText,<c f0df60> Puedes intercambiar las monedas de batalla obtenidas por artículos. <c>
 Poka,1,ShopListTitle,MENÚ DE LA TIENDA
@@ -733,7 +733,7 @@ Poka,1,BuyTitle,CONFIRMAR COMPRA
 Poka,1,BuyCheck,¿Está seguro de que desea comprar los siguientes artículos<br>por $(1) $(0)?
 Poka,1,CPDenomination,Monedas de batalla
 Poka,1,BuyResultMessage1,Compra completa.
-Poka,1,BuyErrorMessage2,"h espacio en tu inventario, o excederías<br>tu límite de transporte."
+Poka,1,BuyErrorMessage2,"Tu compra no se pudo completar porque no<br>tener suficiente espacio en su inventario, o excedería<br>tu límite de carga."
 Poka,1,CPInsufficient,Actualmente no tienes suficientes monedas de batalla.
 Poka,1,BuyResultMessage2,No se pudo completar tu compra.
 Poka,1,BuyResultTitle,COMPRAR ARTÍCULOS
@@ -741,10 +741,10 @@ Poka,1,CancelTitle,CONFIRMAR CANCELACIÓN DE COMPRA
 Poka,1,CancelMessage,¿Estás seguro de que deseas cancelar<br>tu compra?
 Poka,1,SelectItemInputVita,Ingrese la cantidad deseada.
 Poka,1,MenuErrorTitle,ERROR
-Poka,1,MenuErrorMessage,est.<c><br><br>Actualmente no puedes usar la tienda porque no has<br>completado una misión.
+Poka,1,MenuErrorMessage,<yellow>Puedes empezar a usar [Battle Coin Exchange<br>Shop 2]<br>una vez que hayas completado una misión.<c><br><br>Actualmente no puedes usar la tienda porque no tienes<br>completado una misión.
 Poka,1,PokaQuest_SummaryName,Campo de batalla
 Poka,1,PokaRanking_Title,RECIBIR RECOMPENSA DE CLASIFICACIÓN DE BATALLA
-Poka,1,PokaRanking_RewardConfirm,Has recibido los siguientes artículos como recompensa de clasificación de batalla <br>.
+Poka,1,PokaRanking_RewardConfirm,Has recibido los siguientes objetos como clasificación de<br>batalla.<br>Recompensa.
 Poka,1,PokaRanking_Date,Fecha
 Poka,1,PokaRanking_Caption,"$(1) ""$(0)"" Recompensa"
 Poka,1,PokaRanking_Rule_BattleRoyal,Battle Royale
@@ -780,11 +780,11 @@ Challenge,0,MenuErrorTitle,メッセージ
 Challenge,0,MenuErrorMessage,「CM交換ショップ2」は、<br><yellow>チャレンジクエスト「MISSION：決断」を<br>ミッション3までクリアすることで利用可能となります。<c><br><br>チャレンジクエスト「MISSION：決断」のミッション3を<br>クリアしていないため、利用することができません。
 Challenge,0,ChallengePoint,所持チャレンジマイル
 Challenge,1,Confirm_Title,CONFIRMAR TRANSFERENCIA DE SHIP
-Challenge,1,Confirm_Message,"Las siguientes condiciones temporales se aplicarán en el Bloque de Desafío de la Nave Universal.<br>- Solo se permite la clase especial [Desafiante].<br>- Las Artes Fotónicas, Técnicas y Habilidades de Clase aparecerán como no aprendidas.<br>- No podrás llevar meseta, CC ni objetos.<br>- No se permite el uso del Almacén, el Espacio Personal ni los Alojamientos de la Alianza.<br>- No se mostrarán las notificaciones de Misiones Urgentes.<br>- Solo podrás acceder a una versión especializada de tu Lista de Amigos, Correo y Arte de Símbolos.<br>- No se mostrará el Indicador de Afinidad.<br><red>Nota: Las condiciones anteriores dejarán de aplicarse una vez que regreses de la Nave Universal.<c><br><br>¿Deseas acceder al<br>Lobby del Desafío de la Nave Universal?"
+Challenge,1,Confirm_Message,"Las siguientes condiciones temporales se aplicarán en el Bloque<br>de Desafío de la Nave Universal.<br>- Solo se permite la clase especial [Desafiante].<br>- Las Artes Fotónicas, Técnicas y Habilidades de Clase<br>aparecerán como no aprendidas.<br>- No podrás llevar meseta, CC ni objetos.<br>- No se permite el uso del Almacén, el Espacio Personal ni los<br>Alojamientos de la Alianza.<br>- No se mostrarán las notificaciones de Misiones Urgentes.<br>- Solo podrás acceder a una versión especializada de tu Lista de<br>Amigos, Correo y Arte de Símbolos.<br>- No se mostrará el Indicador de Afinidad.<br><red>Nota: Las condiciones anteriores dejarán de aplicarse una<br>vez que regreses de la Nave Universal.<c><br><br>¿Deseas acceder al<br>Lobby del Desafío de la Nave Universal?"
 Challenge,1,Confirm_Title_InBlock,CONFIRMAR TRANSFERENCIA EN BLOQUE
-Challenge,1,Confirm_Message_InBlock,proceed to<br>the Challenge Block?
+Challenge,1,Confirm_Message_InBlock,"Estás a punto de pasar a un bloque de desafío.<br>Tenga en cuenta que se aplicarán las siguientes<br>condiciones.<br><br>- No se permiten clases que no sean el Nivel 1<br>[Challenger]<br>- Las artes, técnicas y habilidades de clase de Photon<br>se restablecerá a un estado no aprendido y no<br>se le permitirá llevar en cualquier meseta, Monedas de<br>Casino o artículos.<br>- No se le permitirá acceder al Almacenamiento.<br>- No se mostrará el indicador de afinidad.<br><br><red>Nota: Las condiciones anteriores ya no<br>aplicar cuando regreses del Bloque de Desafío.<c><br><br>¿Le gustaría continuar con<br>el bloque de desafío?"
 Challenge,1,Confirm_Title_InNormal,CONFIRMAR TRANSFERENCIA DE ENVÍO
-Challenge,1,Confirm_Message_InNormal,ny time by returning to the Universal Ship.<c><br><br>Are you sure you want to return to your ship?
+Challenge,1,Confirm_Message_InNormal,"Estás a punto de regresar a tu propio barco. las condiciones<br>especiales<br>que se aplican en el Universal Ship ya no se aplicarán.<br><br>- No podrás acceder a Amigos, correo o Símbolo<br>Arte agregado mientras estás en el Barco Universal.<br>- Las Millas Challenge obtenidas en Challenge Quests se<br>compartirán<br>con tu barco.<br>- Información relacionada con su Universal Ship Challenge<br>Las clasificaciones se tabularán por separado de la información<br>de su barco.<br><br><yellow>Cuando regreses a tu barco, se abrirá una entrada de<br>inicio de sesión.<br>agregado a su historial de inicio de sesión.<c><br><br><red>Nota: Puedes verificar tu estado en el Barco Universal<br>en cualquier momento regresando al Barco Universal.<c><br><br>¿Estás seguro de que quieres regresar a tu barco?"
 Challenge,1,ShopTitleText,TIENDA DE CANJE DE MILLAS DEL DESAFÍO
 Challenge,1,ShopGuideText,<c f0df60> Aquí puede canjear las Millas Challenge obtenidas por artículos. <c>
 Challenge,1,ShopListTitle,MENÚ DE LA TIENDA
@@ -796,7 +796,7 @@ Challenge,1,BuyTitle,CONFIRMAR COMPRA
 Challenge,1,BuyCheck,¿Está seguro de que desea comprar los siguientes artículos<br>por $(1) $(0)?
 Challenge,1,CPDenomination,Millas de desafío
 Challenge,1,BuyResultMessage1,Compra completa.
-Challenge,1,BuyErrorMessage2,"h espacio en tu inventario, o excederías<br>tu límite de transporte."
+Challenge,1,BuyErrorMessage2,"Tu compra no se pudo completar porque no<br>tener suficiente espacio en su inventario, o excedería<br>tu límite de carga."
 Challenge,1,CPInsufficient,No tienes suficientes Millas Challenge.
 Challenge,1,BuyResultMessage2,No se pudo completar tu compra.
 Challenge,1,BuyResultTitle,COMPRAR ARTÍCULOS
@@ -804,8 +804,8 @@ Challenge,1,CancelTitle,CONFIRMAR CANCELACIÓN DE COMPRA
 Challenge,1,CancelMessage,¿Estás seguro de que deseas cancelar<br>tu compra?
 Challenge,1,SelectItemInputVita,Ingrese la cantidad deseada.
 Challenge,1,MenuErrorTitle,ERROR
-Challenge,1,MenuErrorMessage,"Decisión."""
-Challenge,1,ChallengePoint,Tus Millas de Desafío
+Challenge,1,MenuErrorMessage,"Puedes usar [Challenge Miles Exchange Shop 2] una vez<br><yellow>has completado la misión de desafío<br>""MISIÓN: Decisión"", hasta la Misión 3.<c><br>Actualmente no puedes usar la tienda porque<br>Aún no he completado la Misión 3 del<br>Misión de desafío ""MISIÓN: Decisión""."
+Challenge,1,ChallengePoint,Tus  Challenge Miles
 black_bord,0,BlackbordCharaName,キャラクター名
 black_bord,0,BlackbordPlayerIDname,プレイヤーIDネーム
 black_bord,0,BlackbordTime,投稿時間
@@ -832,7 +832,7 @@ black_bord,1,BlackbordMessage,Publicar Mensaje
 black_bord,1,BlackbordTitleText,Tablero de Mensajes
 black_bord,1,BlackbordTitleTextTeam,Tablón de Anuncios de la Alianza
 black_bord,1,Blackbord_InputMessage,Ingresa el mensaje que deseas publicar.
-black_bord,1,Blackbord_InputMessageTeam,<br><yellow>* <pict key_alt>+<pict key_enter> to create a line break.<c>
+black_bord,1,Blackbord_InputMessageTeam,Ingresa el mensaje que deseas publicar<br>al tablón de anuncios de la Alianza.<br><br><yellow>* <pict key_alt>+<pict key_enter> para crear un salto de<br>línea.<c>
 black_bord,1,Blackbord_NoMessage,No se ha introducido ningún mensaje.<br>Ingrese un mensaje<br>y seleccione [Confirmar].
 black_bord,1,Blackbord_MessageWriteError,No se puede publicar su mensaje.<br><br> Espere un momento y vuelva a intentarlo.
 black_bord,1,Blackbord_WriteToast,Mensaje publicado.
