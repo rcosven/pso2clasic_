@@ -2618,7 +2618,7 @@ PartyMenu,1,PartyMenuLabel06,Comandos comunes
 PartyMenu,1,PartyMenuText01,¿Unirte a la PARTY a la que te invitaron?
 PartyMenu,1,PartyMenuText03,"<red>es el único<c> que regresará a casa.<br><br>Además, los efectos activados durante la misión<br>también se eliminarán."
 PartyMenu,1,PartyMenuText03ex,¿Seguro que quieres irte del grupo?
-PartyMenu,1,PartyMenuText03TriggerQuest,¿Estás seguro de que quieres abandonar el grupo?
+PartyMenu,1,PartyMenuText03TriggerQuest,"Si abandonas tu grupo durante una misión desencadenante,<br><yellow>todos miembros que se han adherido, incluidos los miembros de<br>varios partidos, se verá obligado a abandonar la misión<c> y<br>cualquier miembro en el campo será devuelto al lobby ARKS.<br>Nota: Sólo aplicable cuando todavía hay tiempo o al menos<br>queda uno oportunidad de volver a aceptar Trigger Quest.<br>Además, todos los efectos aplicado durante la misión será<br>eliminado.<br><br><red>Ten en cuenta que cualquier meseta o elemento utilizado para<br>comenzar la misión no te será devuelto.<c><br><br>¿Estás seguro de que quieres abandonar la fiesta?"
 PartyMenu,1,PartyMenuError01,Ha perdido derechos de liderazgo.
 PartyMenu,1,PartyMenuError02,No hay otros miembros en el partido.
 PartyMenu,1,PartyMenuError99,Ha ocurrido un error.<br><br> [No. 1035]
@@ -8327,7 +8327,7 @@ SkillExplanation,1,Photonblast,Ataque especial definitivo (requiere recarga).
 SkillExplanation,1,EasyControl,Automatiza acciones basadas en el arma y distancia.
 SkillExplanation,1,GunnerEscapePPGain,Recupera PP tras esquivar con éxito.
 SkillExplanation,1,ForceZanWindBall,Ataque de viento generado por técnicas.
-SkillExplanation,1,ForceGrantzCharge,Carga de luz que reinicia duraciones de efecto.
+SkillExplanation,1,ForceGrantzCharge,"Golpear a un enemigo varias veces con una luz<br>La técnica hará que estés temporalmente rodeado<br>por un halo. Mientras está activo, usando Las<br>técnicas ligeras provocarán ataques<br>adicionales. dependiendo de la técnica.<br>Activando otro halo mientras uno ya esté activo<br>no causará el efecto se acumula, pero en su<br>lugar restablecerá el duración del efecto del<br>ya activo."
 SkillExplanation,1,ForceMegidoCharge,Consume orbes oscuros para potenciar la técnica.
 SkillExplanation,1,ForceTechDownAdvance,Aumenta daño contra enemigos derribados. <yellow>Solo Clase Principal.
 SkillExplanation,1,TechterZanWindBall,"Golpear a un enemigo con una técnica de <br>Viento sin cargar colocará un vórtice. <br>Si golpeas dicho vórtice con una técnica <br>cargada del mismo elemento, este se activará <br>y provocará ataques adicionales. El tipo de<br>ataques que genera el vórtice varía según<br>la técnica utilizada para golpearlo."
@@ -8346,7 +8346,7 @@ SkillExplanation,1,HunterSwordParryingAuto,Ataque automático con Hunter Arts Av
 SkillExplanation,1,HunterParryingPaJustGuardEscape,Permite Perfect Parry en artes. <yellow>Solo Clase Principal/Hunter.
 SkillExplanation,1,ForceStayReflectCounterShot,Acumula balas elementales tras esquiva. <yellow>Solo Clase Principal/Rod.
 SkillExplanation,1,BouncerZanWindBall,Ataque de viento para Bouncer.
-SkillExplanation,1,BouncerGrantzCharge,Carga de luz para Bouncer.
+SkillExplanation,1,BouncerGrantzCharge,"Golpear a un enemigo varias veces con una luz<br>La técnica hará que estés temporalmente rodeado<br>por un halo. Mientras está activo, usando Las<br>técnicas ligeras provocarán ataques<br>adicionales. dependiendo de la técnica.<br>Activando otro halo mientras uno ya esté activo<br>no causará el efecto se acumula, pero en su<br>lugar restablecerá el duración del efecto del<br>ya activo."
 SkillExplanation,1,BouncerMegidoCharge,Carga oscura para Bouncer.
 SkillExplanation,1,HunterWarCry,Provoca a los enemigos cercanos. <yellow>Solo Clase Principal.
 SkillExplanation,1,HunterIronWill,Evita ser derrotado (oportunidad de sobrevivir). <yellow>Solo Clase Principal.
@@ -13668,10 +13668,10 @@ Esthetic,1,Esthetic_Exit,Salir del salón
 Esthetic,1,Esthetic_Help,Salir del salón
 Esthetic,1,EnterConfirmMessage,En el Salón puedes cambiar tu apariencia y voz. El uso de algunas funciones requiere un Pase de Salón.
 Esthetic,1,EnterConfirmMessage2,"En el Salón,<br>también puedes usar un Pase de Salón, comprable con AC.<c>"
-Esthetic,1,EnterConfirmMessage3,tus<br>Tiempo de edición restante: <yellow>$(0)<c>
-Esthetic,1,EnterConfirmMessage4,Estado de sage<br>Elementos que se están reeditando:<yellow>$(1) <c><br><yellow> $(3) <c><br>Tiempo de edición restante:<yellow>$(2) <c>
-Esthetic,1,EnterConfirmMessage5,Estado de sage<br>Elementos que se están reeditando:<yellow>$(1) <c><br><yellow> $(3) <c><br>Tiempo de edición restante:<yellow>$(2) <c>
-Esthetic,1,EnterConfirmMessage6,Estado de sage<br>Elementos que se están reeditando:<yellow>$(1) <c><br><yellow> $(3) <c><br>Tiempo de edición restante:<yellow>$(2) <c>
+Esthetic,1,EnterConfirmMessage3,"¿Entrar al salón?<br><br>No se recibirán notificaciones relacionadas con fiestas y<br>misiones. y estarás exento del emparejamiento de misiones.<br><yellow>Si no hay suficiente espacio en tu inventario, no podrás<br>cambiarte y ponerte ropa de tu Almacenamiento de<br>personajes.<c><br><br>Estado de uso del pase de cambio de color Elementos que se<br>están reeditando: <yellow>$(0)<c> <yellow>$(2)<c> Tiempo de edición restante:<br><yellow>$(1)<c>"
+Esthetic,1,EnterConfirmMessage4,"¿Entrar al salón?<br><br>No se recibirán notificaciones relacionadas con fiestas y<br>misiones. y estarás exento del emparejamiento de misiones.<br><yellow>Si no hay suficiente espacio en tu inventario, no podrás<br>cambiarte y ponerte ropa de tu Almacenamiento de<br>personajes.<c><br><br>Estado de uso del pase de salón Tiempo de edición restante:<br><yellow>$(0)<c> Estado de uso del pase de cambio de color Elementos<br>que se están reeditando: <yellow>$(1)<c> <yellow>$(3)<c> Tiempo de edición<br>restante: <yellow>$(2)<c>"
+Esthetic,1,EnterConfirmMessage5,"¿Entrar al salón?<br><br>No se recibirán notificaciones relacionadas con fiestas y<br>misiones. y estarás exento del emparejamiento de misiones.<br><yellow>Si no hay suficiente espacio en tu inventario, no podrás<br>cambiarte y ponerte ropa de tu Almacenamiento de<br>personajes.<c><br><br>Estado de creación del personaje Tiempo de edición<br>restante: <yellow>$(0)<c>"
+Esthetic,1,EnterConfirmMessage6,"¿Entrar al salón?<br><br>No se recibirán notificaciones relacionadas con fiestas y<br>misiones. y estarás exento del emparejamiento de misiones.<br><yellow>Si no hay suficiente espacio en tu inventario, no podrás<br>cambiarte y ponerte ropa de tu Almacenamiento de<br>personajes.<c><br><br>Estado de creación del personaje Tiempo de edición<br>restante: <yellow>$(0)<c> Estado de uso del pase de cambio de color<br>Elementos que se están reeditando: <yellow>$(1)<c> <yellow>$(3)<c> Tiempo de<br>edición restante: <yellow>$(2)<c>"
 Esthetic,1,Esthetic_More,$(0) Minutos
 Esthetic,1,Esthetic_Less,Menos de 1 minuto
 Esthetic,1,Esthetic_None,Se acabó el tiempo
@@ -13687,19 +13687,19 @@ Esthetic,1,Esthetic_Pop_PartnerInitialization,Restablecer disposición y afinida
 Esthetic,1,Esthetic_Pop_PartnerPrimeField,Recrear auxiliar <pict Arcscash>
 Esthetic,1,Esthetic_CharaMake,Realizar cambio de personaje
 Esthetic,1,Esthetic_Back,Atrás
-Esthetic,1,EnterConfirm_SP_Message,"el salón está en Star Gems, pero<br>puedes usar un Salon Pass comprado con ARKS Cash. <c>"
-Esthetic,1,EnterConfirm_SP_Message2,r Almacenamiento<c>.<br><br> Estado de uso del pase de salón<br>Tiempo de edición restante: $(0)
-Esthetic,1,EnterConfirm_SP_Message3,r Almacenamiento<c>.<br><br> Estado de uso del pase de salón<br>Tiempo de edición restante: $(0)
-Esthetic,1,EnterConfirm_SP_Message4,Estado del mensaje<br>Artículos siendo reeditados: <yellow>$(0)<c><br><yellow>$(2)<c><br>Tiempo de edición restante: <yellow>$(1)<c>
-Esthetic,1,EnterConfirm_SP_Message5,Almacenamiento <c>.<br><br> Estado de creación del personaje<br>Tiempo de edición restante: $(0)
-Esthetic,1,EnterConfirm_SP_Message6,Almacenamiento <c>.<br><br> Estado de creación del personaje<br>Tiempo de edición restante: $(0)
+Esthetic,1,EnterConfirm_SP_Message,"No puedes enviar mensajes de chat mientras Auxiliary<br>está en el salón. Los mensajes recibidos se guardarán<br>en la ventana de registro.<br><br><yellow>Si no tienes suficiente espacio en tu inventario, no<br>podrás cambiarte de ropa desde tu Almacenamiento de<br>Personajes.<c><br><br>¿Estás seguro de que quieres enviar Auxiliar al salón?<br><br><red>Nota: Los precios en el salón están en Star Gems, pero<br>puedes usar un Salon Pass comprado con ARKS Efectivo.<c>"
+Esthetic,1,EnterConfirm_SP_Message2,"¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>No puedes enviar mensajes de chat mientras Auxiliary esté en<br>el salón. <yellow>Los mensajes recibidos se guardarán en la ventana<br>de registro.<c> Si no tienes suficiente espacio en tu<br>inventario, no podrá cambiarse a <yellow>atuendos almacenados en tu<br>Almacenamiento de Personajes<c>.<br><br>Estado de uso del pase de salón Tiempo de edición restante:<br>$(0)"
+Esthetic,1,EnterConfirm_SP_Message3,"¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>No puedes enviar mensajes de chat mientras Auxiliary esté en<br>el salón. <yellow>Los mensajes recibidos se guardarán en la ventana<br>de registro.<c> Si no tienes suficiente espacio en tu<br>inventario, no podrá cambiarse a <yellow>atuendos almacenados en tu<br>Almacenamiento de Personajes<c>.<br><br>Estado de uso del pase de cambio de color Elementos que se<br>están reeditando: <yellow>$(0)<c> <yellow>$(2)<c> Tiempo de edición restante: <yellow>$(1)<c>"
+Esthetic,1,EnterConfirm_SP_Message4,"¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>No puedes enviar mensajes de chat mientras Auxiliary esté en<br>el salón. <yellow>Los mensajes recibidos se guardarán en la ventana<br>de registro.<c> Si no tienes suficiente espacio en tu<br>inventario, no podrá cambiarse a <yellow>atuendos almacenados en tu<br>Almacenamiento de Personajes<c>.<br><br>Estado de uso del pase de salón Tiempo de edición restante:<br>$(1) Estado de uso del pase de cambio de color Elementos que<br>se están reeditando: <yellow>$(0)<c> <yellow>$(2)<c> Tiempo de edición restante:<br><yellow>$(1)<c>"
+Esthetic,1,EnterConfirm_SP_Message5,"¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>No puedes enviar mensajes de chat mientras Auxiliary esté en<br>el salón. <yellow>Los mensajes recibidos se guardarán en la ventana<br>de registro.<c> Si no tienes suficiente espacio en tu<br>inventario, no podrá cambiarse a <yellow>atuendos almacenados en tu<br>Almacenamiento de Personajes<c>.<br><br>Estado de creación del personaje Tiempo de edición restante:<br>$(0)"
+Esthetic,1,EnterConfirm_SP_Message6,"¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>No puedes enviar mensajes de chat mientras Auxiliary esté en<br>el salón. <yellow>Los mensajes recibidos se guardarán en la ventana<br>de registro.<c> Si no tienes suficiente espacio en tu<br>inventario, no podrá cambiarse a <yellow>atuendos almacenados en tu<br>Almacenamiento de Personajes<c>.<br><br>Estado de creación del personaje Tiempo de edición restante:<br>$(1) Estado de uso del pase de cambio de color Elementos que<br>se están reeditando: <yellow>$(0)<c> <yellow>$(2)<c> Tiempo de edición restante:<br><yellow>$(1)<c>"
 Esthetic,1,Standard_Result_OK,Procesamiento exitoso.
 Esthetic,1,Standard_Result_NoFlag,El procesamiento falló. Aún no cumples con las<br>condiciones requeridas para adquirir un<br>Auxiliar.
 Esthetic,1,Standard_Result_SystemError,El procesamiento falló debido a un error del sistema.
 Esthetic,1,Standard_Result_DBError,El procesamiento falló debido a un error de la base de datos.
 Esthetic,1,Standard_Result_Error,El procesamiento falló.
-Esthetic,1,Charamake_NewCreate,"base de carácter.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
-Esthetic,1,Charamake_Message,"base de carácter.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
+Esthetic,1,Charamake_NewCreate,"No puedes enviar mensajes de chat mientras estás en el salón. Los mensajes que reciba se conservarán en la<br>ventana de registro.<br><br>Además, ten en cuenta que las notificaciones relacionadas con grupos y misiones no te llegarán mientras estés en<br>el salón.<br><br>¿Estás seguro de que te gustaría ingresar al salón y crear un nuevo Auxiliar?<br><br><yellow>Ten en cuenta que los auxiliares se guardan por carácter.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión con el mismo personaje la próxima vez que juegues."
+Esthetic,1,Charamake_Message,"No puedes enviar mensajes de chat mientras estás en el salón. Los mensajes que reciba se conservarán en la<br>ventana de registro.<br><br>Además, ten en cuenta que las notificaciones relacionadas con grupos y misiones no te llegarán mientras estés en<br>el salón.<br><br>¿Estás seguro de que te gustaría ingresar al salón y crear un nuevo Auxiliar?<br><br><yellow>Ten en cuenta que los auxiliares se guardan por carácter.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión con el mismo personaje la próxima vez que juegues."
 Esthetic,1,Charamake_Num,$(0) izquierda
 Esthetic,1,Charamake_UseInfo,$(0) izquierda
 Esthetic,1,Charamake_BuyInfo,"<pict Arcscash> <c ff4f3f>Se requiere pago con AC<c><br>Se necesita un <yellow>Pase de auxiliar adicional<c> para añadir un auxiliar.<br><br><yellow>Ten en cuenta que los auxiliares se guardan por personaje.<c><br><br>Para usar el auxiliar que has creado, inicia sesión con el mismo personaje la próxima vez que juegues.<br><br>¿Quieres comprar un <yellow>Pase de auxiliar adicional<c> por 300 AC para crear un nuevo auxiliar ahora?<br><br><yellow>Tu saldo de AC: $(0)<br>Número de creaciones permitidas: $(2)<c> (Hasta $(1) por personaje)"
@@ -13722,7 +13722,7 @@ Esthetic,1,Reset_Result_Error,Falló el reinicio auxiliar.
 Esthetic,1,DirectUse_Title,CONFIRMAR USO DEL ARTÍCULO
 Esthetic,1,DirectBuy_Title,CONFIRMAR COMPRA DE PASE
 Esthetic,1,Remake_Message,"Al recrear un Auxiliar se restablecerá su apariencia,<br>disposición, afinidad y nivel de clase. <c>"
-Esthetic,1,Remake_BuyMessage,CONFIRM PASS PURCHASE
+Esthetic,1,Remake_BuyMessage,"<pict Arcscash> <c ff4f3f>AC Pago requerido<c> Se requiere un <yellow>Pase de reinicio<br>auxiliar<c> para poder recrear tu Auxiliar.<br><br>¿Estás seguro de que quieres pagar 500 AC para comprar<br>un <yellow>Pase de reinicio de auxiliar<c> y recrear tu auxiliar<br>ahora?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su<br>apariencia, disposición, afinidad y nivel de clase.<c><br><br><yellow>Tu AC: $(0)<c>"
 Esthetic,1,Remake_UseMessage,afinidad y nivel de clase. <c>
 Esthetic,1,Remake_OK,Su Auxiliar ha sido restablecido a su estado original.
 Esthetic,1,Remake_PointError,El reinicio auxiliar falló debido a CA insuficiente.
@@ -15860,7 +15860,7 @@ PokaMenu,1,PokaMenu_ContentInfo,Información de contenido
 PokaMenu,1,PokaMenu_GatheringInfo,Recopilación de información
 PokaMenu,1,PokaMenu_MoveBlockTitle,CONFIRMAR TRANSFERENCIA EN BLOQUE
 PokaMenu,1,PokaMenu_MoveShipTitle,CONFIRMAR TRANSFERENCIA DE ENVÍO
-PokaMenu,1,PokaMenu_MoveBlockMessage,para proceder al Bloque de Batalla?
+PokaMenu,1,PokaMenu_MoveBlockMessage,"Estás a punto de pasar a un bloque de batalla. Tenga en<br>cuenta que se aplicarán las siguientes condiciones.<br><br>- No se permiten clases distintas a las de Guerrero de<br>batalla de nivel 1.<br>- Las artes, técnicas y habilidades de clase de Photon<br>se restablecerá a un estado no aprendido y no se le permitirá<br>llevar en cualquier meseta, Monedas de Casino o artículos.<br>- No se le permitirá acceder al Almacenamiento.<br>- No se mostrará el indicador de afinidad.<br><br><red>Nota: Las condiciones anteriores ya no se aplica cuando<br>regresas del bloque Battle Arena.<c> ¿Te gustaría pasar al<br>bloque de batalla?"
 PokaMenu,1,PokaMenu_MoveShipMessage,"Estás a punto de regresar a tu propio barco. las condiciones<br>especiales que se aplican en el Universal Ship ya no se<br>aplicarán.<br><br>- No podrás acceder a Amigos, al correo ni al arte simbólico.<br>añadido mientras estás en el Barco Universal.<br>- Las monedas de batalla obtenidas en Battle Arena se<br>compartirán<br>con tu barco.<br>- Información relativa a tu batalla de barcos universal<br>La clasificación se tabulará por separado de la información de<br>su propio barco.<br><br><yellow>Cuando regreses a tu barco, una entrada de inicio de sesión se<br>agregará a su historial de inicio de sesión.<c><br><br><red>Nota: Puedes consultar tu estado en el Barco Universal en<br>cualquier momento regresando al Barco Universal.<c> ¿Estás seguro<br>de que quieres regresar a tu barco?"
 PokaMenu,1,PokaMenu_Content_BasnetInfo,Información sobre la misión Buster
 BonusEffect,0,BonusEffect_Title1,特殊能力因子確認
@@ -18216,9 +18216,9 @@ AutoSaleOption,1,Index_ExcludedItems,Artículos vendidos automáticamente indepe
 AutoSaleOption,1,Toast_Update,Se han actualizado las configuraciones de venta automática.
 AutoSaleOption,1,Explanation_Cancel,Se han realizado cambios en su configuración de venta automática. ¿Está seguro de que desea salir sin aplicar cambios?
 AutoSaleOption,1,DirectBuy_Premium,CONFIRMAR COMPRA DEL ARTÍCULO
-AutoSaleOption,1,Explanation_PurchaseConfirmation,ly. Consulte Tienda SG en el menú principal para obtener más detalles. <c>
+AutoSaleOption,1,Explanation_PurchaseConfirmation,<pict Arcscash><scarlet>AC Pago requerido<c> Su derecho a utilizar la función seleccionada ha caducado.<br><br>Puedes activar un <yellow>Conjunto Premium<c> para obtener acceso a la función de venta automática de<br>artículos entregados. ¿Continuar con la pantalla de compra del Conjunto Premium?<br><br><yellow>Nota: Algunos derechos de acceso se venden individualmente. Consulta SG Comprar en el menú<br>principal para obtener más detalles.<c>
 AutoSaleOption,1,DirectUse_Premium,CONFIRMAR USO DEL ARTÍCULO
-AutoSaleOption,1,Explanation_ItemUse,ly. Consulte Tienda SG en el menú principal para obtener más detalles. <c>
+AutoSaleOption,1,Explanation_ItemUse,"<pict Arcscash><c 5fdf00>Usando un artículo comprado previamente<c> Su derecho a utilizar la función seleccionada ha<br>caducado.<br><br>¿Usar un <yellow>Conjunto Premium<c> de su inventario para permitir el uso de artículos de venta<br>automática?<br><br><yellow>Nota: Si tienes varios en tu poder, se usará el que sume más tiempo.<c> <yellow>Nota: Si deseas<br>confirmar qué artículo se utilizará, selecciónalo de tu inventario.<c>"
 AutoSaleOption,1,Title_AutoSale,Artículos de venta automática
 AutoSaleOption,1,Standard_Result_Error,El procesamiento falló.
 Vitalgauge,0,Vitalgauge_PsnMode_PsnUser,<pict psn_icon> $(0)
@@ -19086,11 +19086,11 @@ MySpace,1,MainMenu_MySpace_BuyCheck,¿Comprar los siguientes artículos por $(2)
 MySpace,1,MainMenu_MySpace_DirectBuy_Premium,CONFIRMAR COMPRA DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Premium,¿Comprar los siguientes artículos por $(2)$(0)?<br>¿Estás seguro?<br><br> (Su aire acondicionado: $(1))
 MySpace,1,MainMenu_MySpace_DirectUse_Premium,CONFIRMAR USO DEL ARTÍCULO
-MySpace,1,MainMenu_MySpace_Explanation_ItemUsePremium,"><br><br><yellow>Nota: Si desea confirmar qué artículo se utilizará,<br>selecciónelo de su inventario. <c>"
+MySpace,1,MainMenu_MySpace_Explanation_ItemUsePremium,"<pict Arcscash><c 5fdf00>Usar artículo comprado anteriormente<c> O no tienes un Conjunto<br>Premium (obligatorio para Premium C-Space), o su acceso ha<br>caducado.<br><br>Utilice un <yellow>Conjunto Premium<c> de su inventario para permitir<br>el uso de ¿Espacio C premium?<br><br><yellow>Nota: Si tienes varios en tu poder, el que agrega se<br>utilizará la mayor cantidad de tiempo.<c><br><br><yellow>Nota: Si desea confirmar qué elemento se utilizará, por<br>favor selecciónalo de tu inventario.<c>"
 MySpace,1,MainMenu_MySpace_DirectBuy_Rental,CONFIRMAR COMPRA DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Rental,¿norte?
 MySpace,1,MainMenu_MySpace_DirectUse_Rental,CONFIRMAR USO DEL ARTÍCULO
-MySpace,1,MainMenu_MySpace_Explanation_ItemUseRental,¿norte?
+MySpace,1,MainMenu_MySpace_Explanation_ItemUseRental,"<pict Arcscash><c 5fdf00>Usar artículo comprado anteriormente<c> No tiene permiso para<br>utilizar Rental C-Space, o su acceso ha caducado.<br><br>Utilice un billete de su inventario para permitir el uso de<br>¿Alquilar C-Space?<br><br><yellow>Nota: Si desea confirmar qué elemento se utilizará, por<br>favor selecciónalo de tu inventario.<c>"
 MySpace,1,MainMenu_MySpace_WorldMapNotUse,"No puedes usar el Mapa mundial aquí. ¿Volver a la base de ARKS?<br>*Si estás en el Emparejamiento entre todas las Naves, abandonarás tu grupo actual.<br>"
 MySpace,1,ZoneErrorMessage,No se puede utilizar dentro del Espacio Creativo.
 MySpace,1,MySpaceBgmText_NotPlay,La música seleccionada no se puede reproducir.<br>Descargue los datos de PSO2 para poder reproducirlo.
