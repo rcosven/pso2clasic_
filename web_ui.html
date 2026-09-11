@@ -1016,14 +1016,28 @@
         function wrapTextRespectingWords(text, maxLen) {
             if (!text || maxLen <= 0) return text;
 
-            const lines = text.split(/\r?\n/);
+            // Procesar línea por línea sin fusionar saltos intencionales ni oraciones separadas
+            const rawLines = text.split(/\r?\n/);
             const resultLines = [];
-            let currentParagraphWords = [];
 
-            function flushParagraph() {
-                if (currentParagraphWords.length === 0) return;
+            for (const rawLine of rawLines) {
+                const trimmed = rawLine.trim();
+                // Si la línea está vacía, preservarla
+                if (!trimmed) {
+                    resultLines.push('');
+                    continue;
+                }
+
+                // Si la línea ya entra dentro del ancho máximo, NO tocarla ni fusionarla
+                if (trimmed.length <= maxLen) {
+                    resultLines.push(trimmed);
+                    continue;
+                }
+
+                // Si la línea supera el ancho máximo, envolver SOLO esta línea por palabras completas
+                const words = trimmed.split(/\s+/);
                 let curLine = '';
-                for (const word of currentParagraphWords) {
+                for (const word of words) {
                     if (!curLine) {
                         curLine = word;
                     } else if ((curLine + ' ' + word).length <= maxLen) {
@@ -1036,43 +1050,7 @@
                 if (curLine) {
                     resultLines.push(curLine);
                 }
-                currentParagraphWords = [];
             }
-
-            for (const rawLine of lines) {
-                const trimmed = rawLine.trim();
-                // Línea vacía = salto de párrafo explícito
-                if (!trimmed) {
-                    flushParagraph();
-                    resultLines.push('');
-                    continue;
-                }
-                // Si la línea es un ítem de lista/viñeta o encabezado (ej: 1., -, *, A)), preservarlo
-                if (/^(\d+\.|\-|\*|•|[A-Z]\))\s+/.test(trimmed)) {
-                    flushParagraph();
-                    const words = trimmed.split(/\s+/);
-                    let curLine = '';
-                    for (const word of words) {
-                        if (!curLine) {
-                            curLine = word;
-                        } else if ((curLine + ' ' + word).length <= maxLen) {
-                            curLine += ' ' + word;
-                        } else {
-                            resultLines.push(curLine);
-                            curLine = word;
-                        }
-                    }
-                    if (curLine) resultLines.push(curLine);
-                    continue;
-                }
-
-                // Palabras de párrafo continuo
-                const words = trimmed.split(/\s+/);
-                for (const w of words) {
-                    currentParagraphWords.push(w);
-                }
-            }
-            flushParagraph();
 
             return resultLines.join('\n');
         }
