@@ -892,10 +892,10 @@ Config,1,CtrlAnnounceSelAlphabet,Letras
 Config,1,CtrlAnnounceSelNumber,Números
 Config,1,CtrlAnnounceSelKeyboard,Teclado
 Config,1,CtrlAnnounceExample,Muestras:
-Config,1,CtrlAnnounceExampleKey,<pict Key_ENTER> [Esc] [ ↑ ] <pict Key_SPACE>
-Config,1,CtrlAnnounceExampleAlpha,<pict Alpha_A><pict 4space><pict Alpha_B><pict 4space><pict Alpha_RB><pict 4space><pict Alpha_UP>
-Config,1,CtrlAnnounceExampleSign,<pict Sign_CIRCLE><pict 4space><pict Sign_CROSS><pict 4space><pict Sign_R1><pict 4space><pict Sign_UP>
-Config,1,CtrlAnnounceExampleNumber,<pict Number_1><pict 4space><pict Number_2><pict 4space><pict Number_5><pict 4space><pict Number_UP>
+Config,1,CtrlAnnounceExampleKey,<pict Key_ENTER> [Esc] [ ↑ ]  <pict Key_SPACE>
+Config,1,CtrlAnnounceExampleAlpha,<pict Alpha_A><pict 4space><pict Alpha_B><pict 4space><pict Alpha_RB><pict 4space> <pict Alpha_UP>
+Config,1,CtrlAnnounceExampleSign,<pict Sign_CIRCLE><pict 4space><pict Sign_CROSS><pict 4space><pict Sign_R1> <pict 4space><pict Sign_UP>
+Config,1,CtrlAnnounceExampleNumber,<pict Number_1><pict 4space><pict Number_2><pict 4space><pict Number_5><pict 4space> <pict Number_UP>
 Config,1,CtrlAnnounceHint,Indefinido
 Config,1,CtrlPadBehaviorTitle,Configuración predeterminada del controlador
 Config,1,CtrlPadBehaviorSetting,Configurar manualmente
@@ -985,7 +985,7 @@ Config,1,Config_Padinput02_Select02,Vibración apagada
 Config,1,Config_Padinput03_Select01,Permitir
 Config,1,Config_Padinput03_Select02,Desactivar
 Config,1,Config_PadInput04,Selección del tipo de entrada del gamepad
-Config,1,Config_PadInput05,ot work properly
+Config,1,Config_PadInput05,"Seleccione el método de entrada según el mando.<br><yellow>Nota: Si ""XInput"" no funciona correctamente, vuelva a cambiarlo a ""DirectInput""<br>utilizando el teclado o el ratón.<c>"
 Config,1,Config_PadInput06,Alternar<%GamePad>Vibración
 Config,1,Config_PadInput07,La vibración solo está disponible cuando se selecciona XInput.<br>Nota: Es posible que ciertos<%GamePad>no admitan vibraciones.
 Config,1,Config_PadInput07_PS4,<yellow> Nota: Es posible que algunos controladores no admitan vibraciones. <c>
@@ -996,8 +996,8 @@ Config,1,Config_PadInput13,Establece si las entradas del gamepad se aceptan<br>c
 Config,1,Config_PadInput17,Configuración predeterminada del mando
 Config,1,Config_PadInput18,"Los ajustes iniciales (calibración) sólo se pueden realizar cuando se selecciona ""DirectInput""."
 Config,1,SubCategory_ToonTitle,Configuración de visualización de celdas de caracteres
-Config,1,SubCategory_ToonDetail,Salon] .<c>
-Config,1,SubCategory_ToonDetail2,applies to NGS blocks.<br>This setting can be changed or adjusted later under [Options] or [Salon].<c>
+Config,1,SubCategory_ToonDetail,Elige si deseas mostrar a los personajes y sus atuendos con estilo *cel-shading*.<br><br>Esta configuración se aplica a <yellow>todos los personajes creados<c>.<br><br><yellow>Solo se aplica a los bloques NGS.<br>Esta configuración se puede modificar o ajustar posteriormente para cada personaje en [Opciones] o en el [Salón].<c>
+Config,1,SubCategory_ToonDetail2,Elige si deseas mostrar a los personajes y sus atuendos con sombreado tipo cel (cel shading).<br><br><yellow>Esta configuración solo se aplica a los bloques NGS.<br>Puedes cambiar o ajustar esta opción más adelante en [Opciones] o en el [Salón].<c>
 Config,1,SubCategory_ToonSelect1,Habilitar sombreado de celdas
 Config,1,SubCategory_ToonSelect2,Sin cambios
 ConfigContents,0,Subject_000,アクション機能設定
@@ -2143,27 +2143,27 @@ ConfigContents,1,Subject_036,Ajustes de visualización de datos en tiempo real/s
 ConfigContents,1,Config_000_Name,Modo de bloqueo
 ConfigContents,1,Config_000_Choices_0,Pulsación única
 ConfigContents,1,Config_000_Choices_1,Mantenga presionada la tecla/botón
-ConfigContents,1,Config_000_Hint,/apagar<br>con solo presionar un botón/tecla o hacer que se active solo<br>mientras se mantiene presionado un botón/tecla.
+ConfigContents,1,Config_000_Hint,"Para los controles de fijación de objetivo, <br>elige si quieres activar o desactivar la fijación cada<br>vez que pulses el botón o la tecla, o bien <br>mantenerla activa solo mientras lo mantienes presionado."
 ConfigContents,1,Config_001_Name,Cambiar el objetivo de bloqueo usando <%RStick>
 ConfigContents,1,Config_001_Choices_0,Permitir
 ConfigContents,1,Config_001_Choices_1,Desactivar
 ConfigContents,1,Config_001_Hint,Seleccione si desea cambiar su objetivo de bloqueo<br>usando<%RStick>al bloquear.
 ConfigContents,1,Config_002_Name,Cambio de paleta posterior
-ConfigContents,1,Config_002_Hint,Paleta con un botón/tecla<br>presione o haga que se active solo mientras se mantiene presionado un botón/tecla.
+ConfigContents,1,Config_002_Hint,"Seleccione cómo desea cambiar a la Paleta posterior.<br>Puede cambiar a la Paleta posterior pulsando un botón<br>o una tecla, o bien hacer que se active únicamente <br>mientras mantiene pulsado el botón o la tecla."
 ConfigContents,1,Config_003_Name,Toca dos veces esquivando
 ConfigContents,1,Config_003_Choices_0,Intervalo largo
 ConfigContents,1,Config_003_Choices_1,Intervalo moderado
 ConfigContents,1,Config_003_Choices_2,Intervalo corto
 ConfigContents,1,Config_003_Choices_3,Desactivado
-ConfigContents,1,Config_003_Hint,e [W]/[A]/[S]/[D] keys (initial settings) <br>twice in quick succession.
+ConfigContents,1,Config_003_Hint,"Establece el intervalo de activación para las acciones de <br>esquiva que se inician al pulsar dos veces seguidas <br>y con rapidez las teclas [W], [A], [S] o [D] (configuración inicial)."
 ConfigContents,1,Config_004_Name,Rotación del mapa de radar
 ConfigContents,1,Config_004_Choices_0,No rotar
 ConfigContents,1,Config_004_Choices_1,Girar
-ConfigContents,1,Config_004_Hint,Seleccione si el mapa de radar girará junto con la cámara <br>.
+ConfigContents,1,Config_004_Hint,Seleccione si el mapa de radar girará junto con la cámara
 ConfigContents,1,Config_005_Name,Alternar mapa de radar durante pruebas de emergencia
 ConfigContents,1,Config_005_Choices_0,Alejar
 ConfigContents,1,Config_005_Choices_1,No cambies
-ConfigContents,1,Config_005_Hint,Cada vez que se activa una prueba de emergencia y se amplía el mapa <br>.
+ConfigContents,1,Config_005_Hint,Seleccione si desea alejar automáticamente la vista del<br>mapa de radar cuando se active una prueba de <br>emergencia y el mapa esté ampliado.
 ConfigContents,1,Config_006_Name,Mostrar el contenido de la subpaleta durante la selección
 ConfigContents,1,Config_006_Choices_0,Esconder
 ConfigContents,1,Config_006_Choices_1,Solo se muestra al cambiar
@@ -2180,9 +2180,9 @@ ConfigContents,1,Config_008_Hint,Selecciona el color de los nombres<br>de los pe
 ConfigContents,1,Config_009_Name,Color de la barra de HP según el tipo de ataque elemental
 ConfigContents,1,Config_009_Choices_0,Sin cambios basados en elementos
 ConfigContents,1,Config_009_Choices_1,Los elementos cambian el color de la barra.
-ConfigContents,1,Config_009_Hint,"el daño fue infligido por un<br>ataque cuerpo a cuerpo, ataque a distancia o técnica."
+ConfigContents,1,Config_009_Hint,"Selecciona si el color de la barra de HP cambiará<br>según si el daño fue infligido mediante un<br>ataque cuerpo a cuerpo, un ataque a distancia o una técnica."
 ConfigContents,1,Config_010_Name,"Icono ""Jugador que regresa"""
-ConfigContents,1,Config_010_Hint,reciba bonificaciones para jugadores que regresan incluso si<br>no se muestra el ícono.
+ConfigContents,1,Config_010_Hint,"Selecciona si deseas mostrar el icono de ""Jugador que regresa"".<br>*Podrás recibir las bonificaciones para jugadores que regresan<br>aunque no se muestre el icono."
 ConfigContents,1,Config_011_Name,Posición inicial del cursor de almacenamiento
 ConfigContents,1,Config_011_Choices_0,Todo el almacenamiento
 ConfigContents,1,Config_011_Choices_1,Almacenamiento predeterminado
@@ -2190,7 +2190,7 @@ ConfigContents,1,Config_011_Choices_2,Almacenamiento de personajes
 ConfigContents,1,Config_011_Choices_3,Almacenamiento premium
 ConfigContents,1,Config_011_Choices_4,Almacenamiento OTP
 ConfigContents,1,Config_011_Choices_5,Almacenamiento de PSO2es
-ConfigContents,1,Config_011_Hint,rminal
+ConfigContents,1,Config_011_Hint,"Selecciona la posición inicial del cursor en la interfaz de <br>almacenamiento al acceder a una terminal de almacenamiento,<br>vender objetos en tu tienda personal o comprar o vender <br>objetos en la tienda de un PNJ."
 ConfigContents,1,Config_012_Name,Información de recopilación simplificada
 ConfigContents,1,Config_012_Hint,Seleccione si se mostrará información simplificada de la reunión<br>cuando el menú principal esté abierto.
 ConfigContents,1,Config_013_Name,Formato de visualización del menú de caracteres
