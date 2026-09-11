@@ -1428,9 +1428,9 @@ ItemCommon,1,DisposeErrorMessage3,No puedes descartar este artículo.
 ItemCommon,1,DisposeNoticeMessage1,No se pudieron descartar uno o más elementos.
 ItemCommon,1,DisposeTicketMessage,Hay Entradas o Pases<br>entre los elementos que intentas descartar.<br>¿Estás seguro de que quieres descartarlos?
 ItemCommon,1,DisposeRarityMessage,¿Está seguro de que desea continuar?<br><br> Algunos elementos que no se pueden convertir pueden ser<br><yellow> elementos valiosos en PSO2 <c>.
-ItemCommon,1,DisposeRarityMessage2,There are items with a Rarity of $(0) or higher<br>among the items you are trying to sell.<br>Are you sure you wish to sell them?
+ItemCommon,1,DisposeRarityMessage2,Hay objetos con una rareza de $(0) o superior<br>entre los objetos que intentas vender.<br>¿Estás seguro de que quieres venderlos?
 ItemCommon,1,PutErrorTitle,SOLTAR ARTÍCULO
-ItemCommon,1,PutErrorMessage1,>Algunos artículos consumibles se pueden dejar caer en el suelo<br>para que otros jugadores puedan recogerlos.
+ItemCommon,1,PutErrorMessage1,"No puedes soltar ese objeto aquí.<br><br>Solo se puede soltar en el campo, durante una misión.<br>Algunos objetos consumibles se pueden dejar en el<br>suelo para que otros jugadores los recojan."
 ItemCommon,1,PutErrorMessage2,Este artículo no se puede eliminar.
 ItemCommon,1,PutErrorMessage3,No puedes soltar este artículo<br>porque actualmente está equipado.
 ItemCommon,1,PutErrorMessage4,No puedes eliminar este elemento<br>porque actualmente está bloqueado.
@@ -1445,7 +1445,7 @@ ItemCommon,1,SendWarehouseErrorMessage6,El Almacenamiento Temporal está diseña
 ItemCommon,1,SendWarehouseErrorMessage7,Ese artículo está actualmente equipado.<br>No puedes depositarlo.
 ItemCommon,1,SendWarehouseErrorMessage8,OP Team Storage está diseñado especialmente para recuperar<br>elementos. No puedes depositar artículos allí.
 ItemCommon,1,SendWarehouseErrorMessage9,No puedes depositar tantos de ese artículo.<br>Reducir el número a depositar.
-ItemCommon,1,SendWarehouseErrorMessage10,espada.
+ItemCommon,1,SendWarehouseErrorMessage10,"No se pudo confirmar el uso de una contraseña de un solo uso,<br>por lo que no fue posible mover el elemento.<br><br>El almacenamiento 1TP se habilita<br>al utilizar una contraseña<br>de un solo uso.<br><br>Si el usuario no puede mover el elemento,<br>por favor, verifique el estado de la contraseña de un solo uso."
 ItemCommon,1,SendWarehouseNoticeMessage1,No se pudieron depositar uno o más artículos.
 ItemCommon,1,TakeWarehouseErrorTitle,RECUPERAR ARTÍCULOS
 ItemCommon,1,TakeWarehouseErrorMessage0,No se pueden recuperar elementos.
@@ -1455,7 +1455,7 @@ ItemCommon,1,TakeWarehouseNoticeMessage1,No se pudieron recuperar uno o más ele
 ItemCommon,1,MoveWarehouseErrorTitle,MOVER ARTÍCULOS
 ItemCommon,1,MoveWarehouseErrorMessage0,No se pueden mover elementos.
 ItemCommon,1,MoveWarehouseErrorMessage1,No se pudieron mover uno o más elementos.<br>No hay suficiente espacio en el almacén.
-ItemCommon,1,MoveWarehouseErrorMessage2,You need the<br><yellow>Premium Set<c> to use the Premium<br>Storage and a<br><yellow>Material Storage Ticket<c> to use the Material Storage.<br>You need an<br><yellow>Extended Storage Ticket<c> to use the Extended Storage.
+ItemCommon,1,MoveWarehouseErrorMessage2,Necesitas el<br><yellow>Set Premium<c> para usar el Almacenamiento Premium<br>y un<br><yellow>Ticket de almacenamiento de materiales<c> para usar el Almacenamiento de materiales.<br>Necesitas un<br><yellow>Ticket de almacenamiento ampliado<c> para usar el Almacenamiento ampliado.
 ItemCommon,1,MoveWarehouseErrorMessage3,No puede mover elementos a este Almacenamiento<br>porque su período de uso ha expirado.
 ItemCommon,1,MoveWarehouseErrorMessage4,El almacenamiento temporal está diseñado especialmente para recuperar artículos.<br>No puedes mover elementos allí.
 ItemCommon,1,MoveWarehouseErrorMessage5,OP Team Storage está diseñado especialmente para recuperar<br>elementos. No puedes depositar artículos allí.
@@ -1464,12 +1464,12 @@ ItemCommon,1,MoveWarehouseNoticeMessage1,No se pudieron mover uno o más element
 ItemCommon,1,SendGuildWarehouseErrorTitle,DEPÓSITO ARTÍCULOS AL ALMACENAMIENTO DE LA ALIANZA
 ItemCommon,1,SendGuildWarehouseErrorMessage0,No se pueden depositar artículos en Alliance Storage.
 ItemCommon,1,SendGuildWarehouseErrorMessage1,Este artículo no se puede depositar en Alliance Storage.
-ItemCommon,1,SendGuildWarehouseErrorMessage2,The Alliance Storage is full.<br>No puedes depositar más artículos allí.
+ItemCommon,1,SendGuildWarehouseErrorMessage2,El almacén de la alianza está lleno.<br>No puedes depositar más objetos allí.
 ItemCommon,1,SendGuildWarehouseErrorMessage7,Ese artículo está actualmente equipado.<br>No puedes depositarlo.
 ItemCommon,1,SendGuildWarehouseErrorMessage10,No se pueden depositar artículos porque<br>hay una consulta en curso.
 ItemCommon,1,SendGuildWarehouseErrorMessage11,"No se pudieron depositar artículos.<br><br> O su estado Premium ha expirado,<br>o su Posición de Alianza<br>es ""Provisional""."
-ItemCommon,1,SendGuildWarehouseErrorMessage12,This item is currently locked.<br>No puedes depositarlo en Alliance Storage.
-ItemCommon,1,SendGuildWarehouseErrorMessage13,O no se pudo depositar $(0) o<br>no hay suficiente espacio en el Almacenamiento de la Alianza.<br>All deposits canceled.
+ItemCommon,1,SendGuildWarehouseErrorMessage12,Este objeto está bloqueado actualmente.<br>No puedes depositarlo en el Almacén de la Alianza.
+ItemCommon,1,SendGuildWarehouseErrorMessage13,No se pudo depositar $(0) o no hay <br>suficiente espacio en el Almacén de la Alianza.<br>Todos los depósitos fueron cancelados.
 ItemCommon,1,SendGuildWarehouseErrorMessage14,Ese artículo está actualmente equipado.<br>You cannot retrieve it.
 ItemCommon,1,SendGuildWarehouseNoticeMessage1,No se pudieron depositar uno o más artículos.
 ItemCommon,1,SendGuildWarehouseNoticeMessage2,Uno o más artículos no pueden ingresarse en el Almacenamiento.
@@ -1481,14 +1481,14 @@ ItemCommon,1,TakeGuildWarehouseErrorMessage3,No se pudieron recuperar los elemen
 ItemCommon,1,TakeGuildWarehouseErrorMessage4,"No se pudieron recuperar los elementos.<br><br> O su estado Premium ha expirado,<br>o su Posición de Alianza<br>es ""Provisional""."
 ItemCommon,1,TakeGuildWarehouseNoticeMessage1,No se pudieron recuperar uno o más elementos.
 ItemCommon,1,MoveGuildWarehouseTitle,MOVER AL ALMACENAMIENTO DE LA ALIANZA
-ItemCommon,1,MoveGuildWarehouseMessage,You will be moving items to Alliance Storage.<br>Are you sure you wish to proceed?<br><br><yellow>Please be aware that other players<br>also use the Alliance Storage.<c>
+ItemCommon,1,MoveGuildWarehouseMessage,Vas a trasladar objetos al Almacén de la Alianza.<br>¿Estás seguro de que deseas continuar?<br><br><yellow>Ten en cuenta que otros jugadores<br>también utilizan el Almacén de la Alianza.<c>
 ItemCommon,1,MoveGuildWarehouseErrorTitle,MOVER ARTÍCULOS AL ALMACENAMIENTO DE LA ALIANZA
 ItemCommon,1,MoveGuildWarehouseErrorMessage0,No se pudieron mover elementos al Almacenamiento de la Alianza.
 ItemCommon,1,MoveGuildWarehouseErrorMessage1,Este artículo no se puede mover<br>al Almacenamiento de la Alianza.
 ItemCommon,1,MoveGuildWarehouseErrorMessage2,No se pudieron mover uno o más elementos.<br>No hay suficiente espacio en el Almacenamiento de la Alianza.
-ItemCommon,1,MoveGuildWarehouseErrorMessage3,"m ha expirado,<br>o su Posición de Alianza<br>es ""Provisional""."
+ItemCommon,1,MoveGuildWarehouseErrorMessage3,"No se pudieron mover los objetos al almacén de la alianza.<br><br>O bien tu estatus Premium ha caducado,<br>o tu rango en la alianza<br>es «provisional»."
 ItemCommon,1,MoveGuildWarehouseErrorMessage4,Este elemento está actualmente bloqueado.<br>No puedes moverlo al Almacenamiento de la Alianza.
-ItemCommon,1,MoveGuildWarehouseErrorMessage13,O no se pudo depositar $(0) o<br>no hay suficiente espacio en el Almacenamiento de la Alianza.<br>Todos los depósitos cancelados.
+ItemCommon,1,MoveGuildWarehouseErrorMessage13,No se pudo depositar $(0) o no hay <br>suficiente espacio en el Almacén de la Alianza.<br>Todos los depósitos fueron cancelados.
 ItemCommon,1,MoveGuildWarehouseNoticeMessage1,No se pudieron mover uno o más elementos.
 ItemCommon,1,MoveGuildWarehouseNoticeMessage2,Uno o más artículos no pueden ingresarse en el Almacenamiento.
 ItemCommon,1,ConsumeErrorTitle,USAR ARTÍCULO
