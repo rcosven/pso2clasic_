@@ -460,7 +460,7 @@
                         <label style="margin-bottom: 0;">Texto Original Japonés <span class="badge">Solo Lectura</span></label>
                         <div>
                             <button class="btn btn-primary" onclick="copyText('box-japanese')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; margin-right: 5px;">Copiar</button>
-                            <button class="btn btn-primary" onclick="openTranslate('box-japanese')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #4285f4; border-color: #4285f4;">Traducir</button>
+                            <button class="btn btn-primary" onclick="translateAndPaste('box-japanese', this)" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #4285f4; border-color: #4285f4;" title="Traduce automáticamente y copia el resultado abajo en Español">Traducir</button>
                         </div>
                     </div>
                     <textarea id="box-japanese" class="textarea-readonly" readonly></textarea>
@@ -471,7 +471,7 @@
                         <label style="margin-bottom: 0;">Inglés Original (Raw) <span class="badge">Solo Lectura</span> <span id="count-english" style="font-size: 11px; color: #8b949e; margin-left: 6px; font-weight: 500;"></span></label>
                         <div>
                             <button class="btn btn-primary" onclick="copyText('box-english')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; margin-right: 5px;">Copiar</button>
-                            <button class="btn btn-primary" onclick="openTranslate('box-english')" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #4285f4; border-color: #4285f4;">Traducir</button>
+                            <button class="btn btn-primary" onclick="translateAndPaste('box-english', this)" style="padding: 2px 10px; font-size: 12px; min-height: 24px; background-color: #4285f4; border-color: #4285f4;" title="Traduce automáticamente y copia el resultado abajo en Español">Traducir</button>
                         </div>
                     </div>
                     <textarea id="box-english" class="textarea-readonly" readonly></textarea>
@@ -998,14 +998,102 @@
             });
         }
         
+        async function translateAndPaste(id, btn) {
+            const el = document.getElementById(id);
+            if (!el || !el.value || !el.value.trim()) {
+                showNotification("⚠️", "No hay texto para traducir");
+                return;
+            }
+
+            const originalBtnHtml = btn ? btn.innerHTML : 'Traducir';
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '⏳ Traduciendo...';
+            }
+
+            const textToTranslate = el.value.replace(/<br\s*\/?>/gi, "\n");
+            const srcLang = id === 'box-japanese' ? 'ja' : (id === 'box-english' ? 'en' : 'auto');
+
+            try {
+                let translatedText = '';
+
+                // 1. Intentar con el servidor local del bot (/api/translate)
+                try {
+                    const resp = await fetch('/api/translate', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            text: textToTranslate,
+                            sl: srcLang,
+                            tl: 'es'
+                        })
+                    });
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        if (data.ok && data.translation) {
+                            translatedText = data.translation;
+                        }
+                    }
+                } catch (apiErr) {
+                    console.warn("Fallo /api/translate, intentando fallback directo:", apiErr);
+                }
+
+                // 2. Fallback directo a Google Translate API si el backend no respondió
+                if (!translatedText) {
+                    const params = new URLSearchParams({
+                        client: 'gtx',
+                        sl: srcLang,
+                        tl: 'es',
+                        dt: 't',
+                        q: textToTranslate
+                    });
+                    const gResp = await fetch('https://translate.googleapis.com/translate_a/single', {
+                        method: 'POST',
+                        body: params
+                    });
+                    if (gResp.ok) {
+                        const gData = await gResp.json();
+                        if (gData && Array.isArray(gData[0])) {
+                            translatedText = gData[0].map(part => (part && part[0]) ? part[0] : '').join('');
+                        }
+                    }
+                }
+
+                if (!translatedText) {
+                    throw new Error("No se obtuvo respuesta del servicio de traducción.");
+                }
+
+                // Pegar directamente en la caja de traducción editable
+                const target = document.getElementById('box-spanish');
+                if (target) {
+                    target.value = translatedText;
+                    // Disparar input para autoajustar altura, contadores y advertencias
+                    target.dispatchEvent(new Event('input', { bubbles: true }));
+                    target.focus();
+                }
+
+                showNotification("✨", "¡Texto traducido y copiado abajo!");
+            } catch (err) {
+                console.error("Error al traducir automáticamente:", err);
+                showNotification("❌", "No se pudo traducir automáticamente. Abriendo Google Traductor...");
+                openTranslate(id);
+            } finally {
+                if (btn) {
+                    btn.disabled = false;
+                    btn.innerHTML = originalBtnHtml;
+                }
+            }
+        }
+
         function openTranslate(id) {
             const el = document.getElementById(id);
             if (!el || !el.value) return;
             
-            // Reemplazar <br> con espacios y decodificar etiquetas del juego si es necesario, 
-            // pero para Google Translate es mejor mandarlo limpio para que no rompa el contexto.
-            let textToTranslate = el.value.replace(/<br>/g, "\n");
-            
+            let textToTranslate = el.value.replace(/<br\s*\/?>/gi, "\n");
+            // Para textos muy largos, recortar a 1800 caracteres para evitar Error 400 de Google
+            if (textToTranslate.length > 1800) {
+                textToTranslate = textToTranslate.slice(0, 1800);
+            }
             const encodedText = encodeURIComponent(textToTranslate);
             const url = `https://translate.google.com/?sl=auto&tl=es&text=${encodedText}&op=translate`;
             window.open(url, "GoogleTranslatePopup", "width=850,height=650,menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes");
