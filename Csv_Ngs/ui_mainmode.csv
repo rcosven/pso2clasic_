@@ -1489,7 +1489,7 @@ FriendList,1,Ship_Menu_Myroom,Mover a cuartos personales
 FriendList,1,Frined_Invite_Menu_Remove,Cancelar solicitud de amistad
 FriendList,1,Frined_Invite_Menu_Accept,Aceptar solicitud de amistad
 FriendList,1,Frined_Invite_Menu_Reject,Rechazar solicitud de amistad
-FriendList,1,Frined_Invite_Reject_Exp,(Aún podrás recibir solicitudes de amistad<br>de ese jugador en el futuro).
+FriendList,1,Frined_Invite_Reject_Exp,¿Está seguro de que desea eliminar el<br>¿Solicitud de amistad que recibiste de<br>$(0)?<br><br>(Aún podrás recibir Friend Solicitudes de<br>ese jugador en el futuro.)
 FriendList,1,Frined_List_Remove_Exp,¿Estás seguro de que quieres eliminar este<br>jugador de tu lista de amigos?
 FriendList,1,Frined_Invite_Remove_Exp,¿Estás seguro de que deseas cancelar la<br>Solicitud de amistad que enviaste a $(0)?
 FriendList,1,Friend_Menu_None,-
@@ -2602,7 +2602,7 @@ PartyMenu,0,ToHalphaMenuText02,クエストを破棄しますか？<br><br>ク�
 PartyMenu,0,NeonCityMenuLabel01,報酬エリアに移動
 PartyMenu,0,NeonCityMenuText01,報酬エリアに移動しますか？？<br><br>報酬エリアに移動すると、<br><yellow>“同じパーティーのメンバー”<c>がいる場合は<br>同時に移動します。<br><br>また、現在のエリアには戻ることができず、<br>報酬獲得後はクエストクリアとなります。
 PartyMenu,1,LeaderMenuLabel06,Reunir a los miembros del partido
-PartyMenu,1,PartyMenuText06,"<br>destination in $(1) second(s) if you select <br>""Yes"". Do you accept?<br>Destination: $(2)"
+PartyMenu,1,PartyMenuText06,"$(0) ha solicitado una reunión del Partido. Serás teletransportado<br>automáticamente a lo siguiente destino en $(1) segundo(s) si selecciona ""Sí"".<br>¿Aceptas? Destino: $(2)"
 PartyMenu,1,PartyConfigLabel25,<pict icon_voice_chat><pict 4space>Chat de voz recomendado
 PartyMenu,1,PartyConfigLabel26,Condiciones para unirse
 PartyMenu,1,PartyConfigLabel27,Configuración actual del grupo
@@ -2616,7 +2616,7 @@ PartyMenu,1,PartyMenuLabel04,Comandos del líder
 PartyMenu,1,PartyMenuLabel05,Miembros del partido
 PartyMenu,1,PartyMenuLabel06,Comandos comunes
 PartyMenu,1,PartyMenuText01,¿Unirte a la PARTY a la que te invitaron?
-PartyMenu,1,PartyMenuText03,"<red>es el único<c> que regresará a casa.<br><br>Además, los efectos activados durante la misión<br>también se eliminarán."
+PartyMenu,1,PartyMenuText03,"¿Estás seguro de que quieres abandonar la<br>fiesta?<br><br>Si abandonas el grupo durante una misión, <yellow>serás<br>el único<c> en regresar a casa.<br><br>Además, los efectos se activan durante la<br>misión. también será eliminado."
 PartyMenu,1,PartyMenuText03ex,"Estás a punto de abandonar tu fiesta. Si hay una<br>misión en progreso, la abandonarás. la búsqueda.<br>Además, todos los efectos aplicados. durante la<br>misión será eliminado.<br><br><red>Tenga en cuenta que cualquier meseta o elemento<br>usado para iniciar la misión no te será devuelto.<c><br><br>¿Estás seguro de que quieres abandonar la fiesta?"
 PartyMenu,1,PartyMenuText03TriggerQuest,"Si abandonas tu grupo durante una misión desencadenante,<br><yellow>todos miembros que se han adherido, incluidos los miembros de<br>varios partidos, se verá obligado a abandonar la misión<c> y<br>cualquier miembro en el campo será devuelto al lobby ARKS.<br>Nota: Sólo aplicable cuando todavía hay tiempo o al menos<br>queda uno oportunidad de volver a aceptar Trigger Quest.<br>Además, todos los efectos aplicado durante la misión será<br>eliminado.<br><br><red>Ten en cuenta que cualquier meseta o elemento utilizado para<br>comenzar la misión no te será devuelto.<c><br><br>¿Estás seguro de que quieres abandonar la fiesta?"
 PartyMenu,1,PartyMenuError01,Ha perdido derechos de liderazgo.
@@ -2725,8 +2725,8 @@ PartyMenu,1,PartyConfigLabel28_AccessTitle,Mantenga presionado para habilitar<pi
 PartyMenu,1,PartyConfigLabel28_AccessHint,<space><pict rare_drop_icon><pict 4space>se activará al unirse a un grupo.
 PartyMenu,1,PartyConfigLabel28_AccessToast,sangró. Se creará un grupo cuando se encuentren otros jugadores con la misma configuración.
 PartyMenu,1,ToHalphaMenuLabel,Abandonar la misión
-PartyMenu,1,ToHalphaMenuText01,"> (si<br>alguno) también regresará a casa.<br><br> Además, los efectos activados durante la misión serán<br>eliminados."
-PartyMenu,1,ToHalphaMenuText02,"y uno<c>a<br>regresa a casa.<br><br> Además, los efectos activados durante la misión serán<br>eliminados."
+PartyMenu,1,ToHalphaMenuText01,"¿Estás seguro de que quieres abandonar la misión?<br><br>Al abandonar la misión, los <yellow>miembros del grupo<br>acompañantes<c> (si cualquiera) también regresará a casa.<br><br>Además, los efectos activados durante la misión serán<br>eliminado."
+PartyMenu,1,ToHalphaMenuText02,"¿Estás seguro de que quieres abandonar la misión?<br><br>Al abandonar la misión, <yellow>serás el único<c> en volver a casa.<br><br>Además, los efectos activados durante la misión serán<br>eliminado."
 PartyMenu,1,NeonCityMenuLabel01,ficticio
 PartyMenu,1,NeonCityMenuText01,ficticio
 PlayerStatus,0,Title,簡易ステータス
@@ -4325,7 +4325,7 @@ PlayerDeadMenu,1,Label_Return,Regreso al barco de entrada
 PlayerDeadMenu,1,Label_Revival,Revivir en la ubicación actual
 PlayerDeadMenu,1,Title_Return,REGRESO AL BARCO DE ENTRADA
 PlayerDeadMenu,1,Message_Return,Estás a punto de regresar al barco Gateway.<br>¿Estás seguro de que deseas continuar?
-PlayerDeadMenu,1,Message_Return_NoReward,"<red>Nota: Una vez que regreses al barco Gateway, ya no<br>podrás recibir recompensas.<c>"
+PlayerDeadMenu,1,Message_Return_NoReward,"Estás a punto de regresar al barco Gateway. ¿Está<br>seguro de que desea continuar?<br><br><red>Nota: Una vez que regreses al barco Gateway, podrás<br>ya no podrás recibir recompensas.<c>"
 PlayerDeadMenu,1,Title_Revival,REVIVIR EN LA UBICACIÓN ACTUAL
 PlayerDeadMenu,1,Message_Revival,¿Estás seguro de que quieres ser<br>revivido en este lugar?
 PlayerDeadMenu,1,Message_Revival_NoReward,"<red>Nota: Una vez revivido, ya no podrás<br>recibir recompensas.<c>"
@@ -4369,11 +4369,11 @@ PlayerDeadMenu,1,ApllyHelp,-
 PlayerDeadMenu,1,CancelHelp,-
 PlayerDeadMenu,1,ReturnTitle,REGRESO AL BARCO DE ENTRADA
 PlayerDeadMenu,1,ReturnMessage,Estás a punto de regresar al barco Gateway.<br>¿Está seguro de que desea continuar?
-PlayerDeadMenu,1,ReturnMessage2,"ote: Once you return to the Gateway Ship, you will<br>no longer be able to receive rewards.<c>"
+PlayerDeadMenu,1,ReturnMessage2,"Estás a punto de regresar al barco Gateway. ¿Está<br>seguro de que desea continuar?<br><br><red>Nota: Una vez que regreses al barco Gateway, podrás<br>ya no podrás recibir recompensas.<c>"
 PlayerDeadMenu,1,ScapeDollBuyTitle,COMPRAR N-SCAPE DOLL
 PlayerDeadMenu,1,ScapeDollBuyMessage,to purchase a N-Scape Doll and revive.<br>Are you sure you wish to proceed?
 PlayerDeadMenu,1,ScapeDollUseTitle,USAR N-SCAPE DOLL
-PlayerDeadMenu,1,ScapeDollUseMessage,Compré<br>N-Scape Doll para revivir.<br>¿Está seguro de que desea continuar?<br><br> (Tienes:$(0))
+PlayerDeadMenu,1,ScapeDollUseMessage,<pict Arcscash><pict 4space><c 5fdf00>Usar artículo comprado anteriormente<c> Estás<br>a punto de utilizar un comprado previamente<br>Muñeca N-Scape para revivir. ¿Está seguro<br>de que desea continuar?<br><br>(Tienes:$(0))
 PlayerDeadMenu,1,ReturnFailure,Actualmente no puedes regresar al barco Gateway.
 PlayerDeadMenu,1,Failure,Retirarse de la misión
 PlayerDeadMenu,1,FailureMessage,Estás a punto de retirarte de tu misión actual.<br>¿Está seguro de que desea continuar?
@@ -4404,13 +4404,13 @@ PlayerDeadMenu,1,RetryMessage2,"¿Estás seguro de que quieres volver a intentar
 PlayerDeadMenu,1,TrigerActiveRetired,"¿Abandonar la misión?<br><br>Si quien <yellow>inició el combate<c> abandona la misión, <yellow>todos los miembros del grupo<c> regresarán al campo al mismo tiempo.<br><br>Además, perderás cualquier efecto obtenido durante la misión, como los aumentos<br>de habilidad."
 PlayerDeadMenu,1,TrigerJoinRetired,"¿Retirarse de la misión?<br><br>Si te retiras de la misión, <yellow>solo tú<c> volverás al campo.<br><br>Además, perderás todos los efectos obtenidos durante la misión, como los aumentos<br>de habilidades.<br><br><yellow>Nota: Si abandonas Battledia, no podrás volver a unirte a la misión en progreso.<c>"
 PlayerDeadMenu,1,TrigerJoinRetiredBlue,"¿Retirarse de la misión?<br><br>Si te retiras de la misión, <yellow>solo tú<c> volverás al campo.<br><br>Además, perderás todos los efectos obtenidos durante la misión, como los aumentos<br>de habilidades.<br><br><yellow>Nota: Si abandonas la misión, no podrás volver a unirte a ella en progreso.<c>"
-PlayerDeadMenu,1,TrinitesQuestRetireLeaderMessage,"regresad al campo.<br><br>Además, perderéis todos los efectos obtenidos durante la misión, como los aumentos de habilidades."
-PlayerDeadMenu,1,TrinitesQuestRetireMemberMessage,"campo.<br><br>Además, perderás todos los efectos obtenidos durante la misión, como los aumentos de habilidades."
+PlayerDeadMenu,1,TrinitesQuestRetireLeaderMessage,"¿Retirarse de la misión?<br><br>Si te retiras de la misión, los <yellow>miembros del grupo que te acompañen<c> también regresarán al<br>campo.<br><br>Además, perderás todos los efectos obtenidos durante la misión, como los aumentos de<br>habilidades."
+PlayerDeadMenu,1,TrinitesQuestRetireMemberMessage,"¿Retirarse de la misión?<br><br>Si regresas de la misión, <yellow>solo tú<c> volverás al campo.<br><br>Además, perderás todos los efectos obtenidos durante la misión, como los aumentos de<br>habilidades."
 PlayerDeadMenu,1,ContinueMessage1,La misión termina poco después de que todos queden incapacitados.
 PlayerDeadMenu,1,ContinueMessage2,Tiempo restante para revivir: $(0) segundos
 PlayerDeadMenu,1,NextQuest,Aceptar la siguiente dificultad
 PlayerDeadMenu,1,NextQuestSelect,Confirmar aceptación de misión
-PlayerDeadMenu,1,NextQuestMessage,"<c><br><br>Además, perderás los efectos de aumento de estadísticas obtenidos durante la misión.<c>"
+PlayerDeadMenu,1,NextQuestMessage,"¿Aceptar la siguiente dificultad de la misión?<br><br>Si aceptas la misión, serás transferido junto <yellow>con los mismos miembros del grupo.<c><br><br>Además, perderás los efectos de mejora de estadísticas obtenidos durante la misión."
 PlayerDeadMenu,1,NextQuestErrorMessage,"No se pudo aceptar la siguiente dificultad de la misión.<br>Selecciona ""Regresar"" para regresar a la base ARKS."
 PlayerDeadMenu,1,Emergency_Revival_ErrorToast,No se pudo revivir.
 PlayerDeadMenu,1,PointUse_Message,Revive usando $(0)<pict buffcon_point><pict 4space> puntos de energía.<br>¿Continuar?
@@ -7617,7 +7617,7 @@ SkillExplanation,1,FighterSkipArts,Usar un PA sin presionar un botón direcciona
 SkillExplanation,1,FighterTDAnotherDerive,Carga hacia el enemigo presionando el botón de Ataque Normal en un momento específico después de un<br>Photon Art. <yellow>*Solo se puede usar con Twin Daggers.<c>
 SkillExplanation,1,FighterTDAttackExtra,Puedes realizar hasta 4 ataques normales.<br><yellow> *Solo se puede usar con Dagas Gemelas. <c>
 SkillExplanation,1,FighterDSDeadlyArcher,"Al presionar y mantener presionado el botón de acción del arma mientras se usa el segundo estado de torbellino, se convertirá todo el torbellino en energía y se lanzará el<br>arma hacia el enemigo. <yellow>*Solo se puede usar con un Double Sabre.<c>"
-SkillExplanation,1,FighterDSEnhanceAttack,all of whirlwind into energy and spawn a cyclone.<br><yellow>*Can only be used with a Double Saber.<c>
+SkillExplanation,1,FighterDSEnhanceAttack,Presionar y mantener presionado el botón de Ataque Normal mientras usas el segundo estado de torbellino convertirá todo el torbellino en energía y<br>generará un ciclón. <yellow>*Solo se puede usar con un Double Sabre.<c>
 SkillExplanation,1,GunnerFallSlowAttack,Ralentiza la velocidad de caída al realizar un ataque normal.<br><yellow> *Solo se puede usar con armas Gunner. <c>
 SkillExplanation,1,GunnerFallSlowCharge,Reduce la velocidad de caída al cargar un Photon Art.<br><yellow> *Solo se puede usar con armas Gunner. <c>
 SkillExplanation,1,GunnerGaugeShotGunAway,Marcar una dirección también ampliará la distancia de la acción evasiva.
@@ -7795,7 +7795,7 @@ SkillExplanation,1,TechterReverseBonus,Confiere Shifta/Deband a un aliado revivi
 SkillExplanation,1,TechterWandGuardCounterEdge,Agrega una onda de choque a los contraataques de Wand Parry.
 SkillExplanation,1,TechterFallSlowCharge,Ralentiza la velocidad de caída al cargar Técnicas y Photon Arts.<br><yellow>*Solo se puede usar con armas de Techter.<c>
 SkillExplanation,1,TechterBartaBlot,"Cuando golpeas a un enemigo con una técnica de hielo descargada, se graba un sello de hielo que se puede mejorar hasta dos veces dependiendo de la cantidad de golpes. Cuando golpeas con una técnica de hielo cargada, el sigilo explota y causa daño adicional dependiendo de su<br>nivel de mejora."
-SkillExplanation,1,TechterZondeClad,Carga un estado eléctrico al usar técnicas de Zonde. Esto fortalecerá la siguiente técnica de rayo cargada.
+SkillExplanation,1,TechterZondeClad,Golpear a un enemigo con una cantidad de descargas Las Técnicas de Rayo te harán entrar en un estado de alto voltaje. Este<br>estado fortalecerá la próxima Técnica Lightning cargada. Después de lo cual volverá a la normalidad.
 SkillExplanation,1,TechterTalisQuickMarkShot,Permite realizar disparos rápidos con Talis al no realizar entradas direccionales.<br><yellow>*Solo puede usarse con un Talis.<c>
 SkillExplanation,1,TechterTalisSetRevok,Permite retirar el Talis desplegado usando un Photon Art.<br><yellow>*Solo puede usarse con un Talis.<c>
 SkillExplanation,1,BraverGuardRelief,Reduce el daño recibido y el consumo de PP al protegerte con una acción de arma.
@@ -7830,7 +7830,7 @@ SkillExplanation,1,BouncerJetBootsEnhancePA,Mantener presionado el botón PA pot
 SkillExplanation,1,BouncerJetBootsWeaponActionCounter,Realizar una acción de arma contra un ataque enemigo permite un contraataque.<br><yellow>*Solo se puede usar con Jet Boots.<c>
 SkillExplanation,1,BouncerJetBootsBlink,Te permite realizar una carga rápida hacia el enemigo.<br><yellow>*Solo se puede usar con Jet Boots.<c>
 SkillExplanation,1,BouncerBartaBlot,"Cuando golpeas a un enemigo con una técnica de hielo descargada, se graba un sello de hielo que se puede mejorar hasta dos veces dependiendo de la cantidad de golpes. Cuando golpeas con una técnica de hielo cargada, el sigilo explota y causa daño adicional dependiendo de su<br>nivel de mejora."
-SkillExplanation,1,BouncerZondeClad,Carga un estado eléctrico al usar técnicas de Zonde. Esto fortalecerá la siguiente técnica de rayo cargada.
+SkillExplanation,1,BouncerZondeClad,Golpear a un enemigo con una serie de Técnicas de Rayo descargadas hará que entres en un estado de alto voltaje. Este estado fortalecerá la próxima Técnica Lightning cargada. Después de lo cual volverá a la<br>normalidad.
 SkillExplanation,1,BouncerPhotonBladeGuard,"Permite realizar una guardia con las Photon Blades. Si tiene éxito, es posible parar nuevamente.<br><yellow>*Solo Clase Principal/Soaring Blades.<c>"
 SkillExplanation,1,BouncerElementBurstPPSave,Reduce el consumo de PP al activar Element Burst.<br><yellow>*Solo puede ser utilizado por una Clase Principal/Jet Boots.<c>
 SkillExplanation,1,TwinmachinegunGear,Carga tu medidor de enfoque y aumenta la potencia de ataque al realizar ataques exitosos.
@@ -8045,7 +8045,7 @@ SkillExplanation,1,PhotonBladeFever,Duplica la cantidad de disparos de Photon Bl
 SkillExplanation,1,PhotonBladeFeverUp1,Aumenta la potencia de tus Photon Blades mientras Photon Blade Fever está activo.
 SkillExplanation,1,PhotonBladeEscape,Activa un periodo de invulnerabilidad al moverte mientras usas Photon Blades.
 SkillExplanation,1,ElementalStance,Aumenta el daño infligido al golpear la debilidad elemental del enemigo con una técnica o arma del mismo elemento.
-SkillExplanation,1,ElementalStanceUp1,Aumenta el bono de daño de Elemental Stance.
+SkillExplanation,1,ElementalStanceUp1,"Mientras la Postura elemental está activa, otorga una bonificación de daño al explotar la debilidad del enemigo con una técnica o arma elemental<br>contra la que el enemigo es débil."
 SkillExplanation,1,ElementalStanceCritical,Aumenta la tasa de golpes críticos al atacar la debilidad elemental con una técnica o arma del mismo elemento.
 SkillExplanation,1,BreakStance,Aumenta el daño infligido a partes del cuerpo destructibles. Hace que Elemental Stance sea ineficaz.
 SkillExplanation,1,BreakStanceUp1,Otorga una bonificación de daño al atacar una parte del cuerpo destructible mientras Break Stance está activo.
@@ -8112,7 +8112,7 @@ SkillExplanation,1,SummonerAirReversal,Le permite realizar una caída mientras e
 SkillExplanation,1,SummonerDushJump,Saltar durante una acción de esquivar te convierte en una carrera.
 SkillExplanation,1,SummonerStepJACombo,Hace que se aplique el tiempo de ataque perfecto durante un paso lateral.
 SkillExplanation,1,SummonerJustReversalJACombo,Hace que el tiempo de Perfect-Attack se aplique después de una Perfect Recovery.
-SkillExplanation,1,Intensive,f your HP in a short time. Short PoteTime.
+SkillExplanation,1,Intensive,Aumenta gradualmente la potencia. Se reinicia al recibir daño correspondiente al % establecido de tu HP en un corto tiempo. Las ráfagas de potencia<br>cortas aumentan en Hero Time.
 SkillExplanation,1,WpnmanWeaponBonus1,"Aumenta tu potencia cuando estás equipado con una espada, ametralladoras gemelas o un Talis."
 SkillExplanation,1,WpnmanWeaponBonus2,"Aumenta tu potencia cuando estás equipado con una espada, ametralladoras gemelas o un Talis."
 SkillExplanation,1,WeakAttackCritical,Aumenta la tasa crítica de ataques contra puntos débiles del enemigo y Técnicas que explotan la Debilidad Elemental del enemigo.
@@ -8215,7 +8215,7 @@ SkillExplanation,1,MasterDoublesaverGear,Consume 1 carga de enfoque para desatar
 SkillExplanation,1,MasterDualbladeGear,Inicia una conexión completa de Photon Blades. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterWandGear,Ejecuta un ataque proporcional al enfoque consumido. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterMag,"Convierte el total de stats de tu Mag en ataque cuerpo a cuerpo, a distancia y técnico."
-SkillExplanation,1,MasterDSaberSkipArts,Omite la primera mitad de la animación de un Photon Art. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterDSaberSkipArts,"Cuando tienes un Double Sabre equipado, usar un Photon Art sin ninguna entrada direccional te saltará la primera mitad del Photon Art. <yellow>Esta habilidad solo puede ser utilizada<br>por una Clase Principal."
 SkillExplanation,1,MasterDSaberBlink,Permite teletransportarse durante ataques para moverse a alta velocidad. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterStepAttack,Permite atacar mientras realizas un paso lateral.
 SkillExplanation,1,MasterJustReversal,Permite levantarse rápidamente tras ser derribado.
@@ -8224,19 +8224,19 @@ SkillExplanation,1,MasterDfpAllUp1,"Aumenta todas las defensas (cuerpo a cuerpo,
 SkillExplanation,1,MasterHPUp1,Aumenta tu HP máximo.
 SkillExplanation,1,MasterPPUp1,Aumenta tu PP máximo.
 SkillExplanation,1,MasterAtpAllUp1,"Aumenta tu poder cuerpo a cuerpo, a distancia y técnico."
-SkillExplanation,1,MasterCoherence,Ejecuta una guardia perfecta. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterDBladeNaHoming,Te acerca automáticamente a un enemigo fijado. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterDBladeGearSkill,Obtén una bonificación de daño durante un tiempo determinado. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterHeatArtsPPSave,Reduce el consumo de PP de los Photon Arts (con límite). <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterCoherence,Restaura una cantidad fija de PP para todos los miembros de la Alianza en el área cuando realizas una Guardia Perfecta. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal.
+SkillExplanation,1,MasterDBladeNaHoming,"Con Soaring Blades, al ataque normal le sigue una acción de avance que te acerca a un enemigo fijado. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
+SkillExplanation,1,MasterDBladeGearSkill,"Cuando Soaring Blades está equipado, usar Connect o Full Connect te otorga una bonificación de aumento del indicador de enfoque durante un tiempo determinado. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
+SkillExplanation,1,MasterHeatArtsPPSave,Los usos sucesivos del mismo Photon Art en un combo consumirán menos PP por uso. Hay un límite en cuanto a cuánto se puede reducir el consumo de PP.
 SkillExplanation,1,MasterJACritical,Aumenta la tasa de golpes críticos con Ataques Perfectos.
 SkillExplanation,1,MasterFlatAttackBonus,Bonificación de daño a ataques normales y artes que no sean Ataques Perfectos.
-SkillExplanation,1,MasterOverClock,Aumenta el tiempo restante de uso conforme pasa el tiempo. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterWandNimble,Aumenta la agilidad durante un combo. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterOverClock,"Recupera HP/PP, aumenta el PP máximo para todos los miembros de la Alianza cercanos durante un tiempo determinado. El número de usos restantes aumenta con el tiempo. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
+SkillExplanation,1,MasterWandNimble,"Con la varita equipada, un arte de fotones enfocados exitoso otorga una mayor velocidad de movimiento durante un tiempo determinado mientras estás en un combo.<br><yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
 SkillExplanation,1,MasterAllAttackBonus,Bonificación al daño infligido por el jugador y sus mascotas.
 SkillExplanation,1,MasterClockUp,Potencia a los aliados en el área. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterEfficient,Reduce el consumo de ítems y añade efecto de recuperación de PP. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterInstinct,Reduce el daño recibido cada vez que te golpean (la bonificación decae con el tiempo).
-SkillExplanation,1,MasterArcane,Permite activar un contraataque especial. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterArcane,"Cuando un Double Sabre está equipado, dar un paso al frente mientras un enemigo fijo ataca desencadenará un contraataque especial. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal."
 SkillExplanation,1,MasterHPRestraint,Recupera HP gradualmente cuando tu vida cae bajo un cierto umbral.
 SkillExplanation,1,MasterAmbitionMassive,Protección contra derribos y retroceso mientras estás parado.
 SkillExplanation,1,MasterTimeLeap,"Al recibir daño que te incapacitaría, tu HP, PP y tu indicador de enfoque se llenarán por completo y serás invulnerable por un tiempo. Este efecto sólo se activa una vez. <yellow>Esta habilidad solo puede ser utilizada por una<br>Clase Principal."
@@ -8350,35 +8350,35 @@ SkillExplanation,1,BouncerGrantzCharge,"Golpear a un enemigo varias veces con un
 SkillExplanation,1,BouncerMegidoCharge,"Cuando golpeas a un enemigo con Dark<br>descargado Técnicas, puedes almacenar hasta 3<br>orbes oscuros. Usar una Técnica Oscura cargada<br>consumirá todos los orbes y aumentar el poder<br>de ese técnica en una cantidad correspondiente<br>a cómo muchos estaban abastecidos."
 SkillExplanation,1,HunterWarCry,<yellow>[Habilidad activa]<c> Llama la atención de los<br>enemigos cercanos durante un tiempo. tiempo<br>establecido. Los enemigos a los que golpeas<br>tienen más probabilidades de apuntarte.<br><yellow>*Solo puede ser utilizado por una clase<br>principal.<c>
 SkillExplanation,1,HunterIronWill,Evita ser derrotado (oportunidad de sobrevivir). <yellow>Solo Clase Principal.
-SkillExplanation,1,HunterMassiveHunter,Reduce daño y previene derribos.
+SkillExplanation,1,HunterMassiveHunter,<yellow>[Habilidad activa]<c> Reduce temporalmente el daño recibido y evita que los ataques enemigos te lancen o<br>te derriben.
 SkillExplanation,1,HunterSwordGuardCounterPlus,Contraataque adicional tras Sword Guard.
 SkillExplanation,1,RangerWeakBullet,Dispara una bala que aumenta el daño en la parte impactada. <yellow>Solo Clase Principal/Rifle.
-SkillExplanation,1,RangerWeakBulletParse,Extiende la duración de los efectos de la bala. <yellow>Solo Clase Principal.
+SkillExplanation,1,RangerWeakBulletParse,Las partes golpeadas por Blight Rounds que sean impactadas una cantidad determinada de veces recibirán un mayor daño y la duración del efecto de<br>la habilidad se extenderá. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,RangerWeaponActionAvoid,Invulnerabilidad con acciones de arma (Rifle).
 SkillExplanation,1,RangerGrenadeTrap,"Mantenga presionado el botón de acción del arma<br>para realizar un ataque con granadas.<br>Introduzca una dirección al mismo tiempo lanzar<br>la granada, o ingrese none para colocarlo en la<br>ubicación actual. <yellow>*Solo se puede usar con un<br>rifle de asalto.<c>"
-SkillExplanation,1,ForcePpConvert,Recuperación de PP sacrificando HP máximo.
+SkillExplanation,1,ForcePpConvert,<yellow>[Habilidad activa]<c> Consume HP en un porcentaje de tu HP máximo a cambio de una mayor velocidad de recuperación<br>natural de PP durante un tiempo determinado.
 SkillExplanation,1,ForcePpConvertReCharge,Aumenta el stock de Conversión PP.
 SkillExplanation,1,ForceChargePpRevival,Recuperación natural de PP mientras cargas técnicas. <yellow>Solo Armas Fuerza.
 SkillExplanation,1,ForceHeal,Cura a aliados cercanos al usar Restasigne. <yellow>Solo Clase Principal.
 SkillExplanation,1,FighterLimitBreakPhotonCharge,Recupera PP tras finalizar Limit Break. <yellow>Solo Clase Principal.
 SkillExplanation,1,FighterLimitBreakInsurance,"Durante la Sobrecarga, un ataque incapacitante te dejará con 1 HP y finalizará la Sobrecarga. También obtienes un momento de invulnerabilidad<br>cuando esto se activa. <yellow>*Solo puede ser utilizado por una clase principal.<c>"
-SkillExplanation,1,KnuckleDodgeHeatRevenge,Combos de Knuckles hasta el quinto paso.
+SkillExplanation,1,KnuckleDodgeHeatRevenge,"Después de esquivar con éxito con una acción de arma, tu ataque normal inicial cambiará a su quinto paso.<br><yellow>*Solo se puede usar con Knuckles.<c>"
 SkillExplanation,1,FighterKnuckleSwayCounterPlus,Contraataque adicional tras Knuckle Sway.
 SkillExplanation,1,FighterKnuckleNormalAttackPlus,Permite combos de hasta 5 ataques normales con Knuckles.
-SkillExplanation,1,GunnerChainFinishTimeBonus,Reduce el tiempo de reutilización tras un Chain Finish. <yellow>Solo Clase Principal.
-SkillExplanation,1,GunnerSRollArts,Ataque de alta potencia tras voltereta. <yellow>Solo Twin Machine Guns.
+SkillExplanation,1,GunnerChainFinishTimeBonus,"Después de que se haya activado Chain Finisher Boost, dependiendo del tamaño de la cadena durante la activación de cadena, el tiempo<br>de reutilización se acortará. <yellow>*Solo puede ser utilizado por una clase principal.<c>"
+SkillExplanation,1,GunnerSRollArts,"Mientras la acción de arma está activa, presionar el botón PA consumirá PP para realizar un ataque de<br>alta potencia. <yellow>*Solo se puede usar con ametralladoras gemelas.<c>"
 SkillExplanation,1,GunnerChainBoost,"Durante un tiempo determinado después de que se haya<br>completado el impulso de remate en cadena. activada,<br>las acciones de armas cambiarán y La velocidad de<br>ataque aumentará dependiendo de la Tamaño de la<br>cadena. <yellow>*Solo puede ser utilizado por una clase<br>principal/ametralladoras gemelas.<c>"
-SkillExplanation,1,GunnerNeutralDeadApproach,Movimiento de aproximación rápida.
+SkillExplanation,1,GunnerNeutralDeadApproach,Realizar acciones con armas sin ninguna entrada direccional lo convertirá en una carrera de<br>avance. <yellow>*Solo se puede usar con ametralladoras gemelas.<c>
 SkillExplanation,1,GunnerAttackPPRestraint,Aumenta recuperación de PP al atacar.
 SkillExplanation,1,TechterShiftaDeband,<yellow>[Habilidad activa]<c> Aumenta el daño infligido a los enemigos y disminuye el daño recibido por ti y los<br>personajes cercanos durante un tiempo determinado. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,TechterPartyAssist,Buffs automáticos de Shifta/Deband. <yellow>Solo Clase Principal.
 SkillExplanation,1,TechterWandElementChange,Cambia el elemento de la varita según la técnica. <yellow>Solo Varita.
-SkillExplanation,1,TechterWandElementDiscard,Elimina el elemento acumulado. <yellow>Solo Varita.
+SkillExplanation,1,TechterWandElementDiscard,Mantén presionado el botón de acción del arma para revertir los cambios elementales aplicados a Photonic Fury<br>mediante el cambio de elemento de varita. <yellow>*Solo se puede usar con una varita.<c>
 SkillExplanation,1,TechterHeal,Cura a aliados cercanos. <yellow>Solo Clase Principal.
 SkillExplanation,1,FighterKnuckleAttackExtra,Combos extendidos con Knuckles.
 SkillExplanation,1,ForceMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
 SkillExplanation,1,TechterMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
-SkillExplanation,1,MixTechFD,Corte masivo de fuego y oscuridad.
+SkillExplanation,1,MixTechFD,Técnica compuesta de fuego y oscuridad. Utiliza el medidor de técnica<br>compuesta. Corta frente a ti con una enorme espada forjada en fuego y<br>oscuridad.
 SkillExplanation,1,MixTechIL,"Técnica compuesta de hielo y luz. Utiliza el medidor de técnica compuesta.<br>Lanza una lanza forjada con hielo y luz frente a ti, creando un vórtice de<br>hielo."
 SkillExplanation,1,MixTechWT,"Técnica compuesta de rayos y viento. Utiliza el medidor de técnica compuesta. Después de cargar y azotar<br>cubierto de relámpagos y viento, te retiras, dejando un tornado a tu paso."
 SkillExplanation,1,GunnerChainTriggerCountKeep,"Cuando un activador de cadena termina sin un impulso de remate de cadena, el número de cadena del siguiente activador de cadena que uses comenzará en un número más alto según<br>el número de cadena anterior. <yellow>*Solo puede ser utilizado por una clase principal/ametralladoras gemelas.<c>"
@@ -8477,8 +8477,8 @@ SkillExplanation,1,GunnerInfinityFire,<yellow>[Habilidad activa]<c><br>Ejecuta u
 SkillExplanation,1,BouncerDBladeFullConnect,<yellow>[Habilidad activa]<c><br>Desata un poderoso tajo frontal consumiendo una barra de energía acumulada al atacar.<br><yellow>*Solo se puede usar con las Espadas aladas.<c>
 SkillExplanation,1,BouncerFrailJellen,Añade un efecto de debilitamiento del ataque enemigo a «Declive físico» y «Declive elemental».<br>El efecto aumenta si infliges al enemigo tanto «Declive físico» como «Declive elemental».<br><yellow>*Solo puede utilizarse con un arma de clase principal o de Bouncer.<c>
 SkillExplanation,1,BouncerElementBurstSpeedBoost,Aumenta la velocidad de ataque de tus Photon Arts durante un tiempo determinado al usar Jetsweep Jolt.<br><yellow>*Solo puede utilizarse con la Clase Principal/Jet Boots.<c>
-SkillExplanation,1,BouncerOptionChange,"Los bonificadores de Potencia de arma cuerpo a cuerpo y Potencia de arma de técnica, provenientes de los aumentos de tus armas y armaduras equipadas, se suman por separado; el valor más alto se aplica a ambas estadísticas (Potencia de arma cuerpo a cuerpo y Potencia de arma de técnica).<br><yellow>*Solo puede utilizarse con un arma de la Clase principal o de Bouncer.<c>"
-SkillExplanation,1,BraverOptionChange,"Los bonificadores de Potencia de arma cuerpo a cuerpo y Potencia de arma a distancia, provenientes de los aumentos de tus armas y armaduras equipadas, se suman por separado; el valor más alto resultante se aplica a tu Potencia de arma tanto cuerpo a cuerpo como a distancia.<br><yellow>*Solo puede utilizarse con un arma de la Clase principal o de Braver.<c>"
+SkillExplanation,1,BouncerOptionChange,"Las bonificaciones de potencia de arma cuerpo a cuerpo y potencia de arma técnica de tus aumentos de arma y armadura equipadas se suman, y la que es mayor se aplica tanto a tu potencia de arma cuerpo a cuerpo<br>como a tu potencia de arma técnica. <yellow>*Solo puede ser usado por un arma de Clase Principal/Bouncer.<c>"
+SkillExplanation,1,BraverOptionChange,"Las bonificaciones de potencia de arma cuerpo a cuerpo y potencia de arma a distancia de tus aumentos de arma y armadura equipadas se suman, y la que es mayor se aplica tanto a tu potencia de arma cuerpo a<br>cuerpo como a tu potencia de arma a distancia. <yellow>*Solo puede ser utilizado por un arma de clase principal/Braver.<c>"
 SkillExplanation,1,BraverRestaPPGain,Restaura PP cuando usas Restasigne.
 SkillExplanation,1,BraverKatanaAmbitionStrikeBack,Reduce el consumo de PP del primer Photon Art que uses después de activar Fearless Attitude.<br><yellow>*Solo se puede usar con Katanas.<c>
 SkillExplanation,1,BraverCompoundbowSlideDodgeCounter,Lanzar un ataque normal cuando esquivas con éxito con Bow Elusion Plus desata un contraataque.<br><yellow>*Solo se puede usar con arcos.<c>
@@ -8535,7 +8535,7 @@ SkillExplanation,1,GunnerTMGAccel,"En el momento justo después de realizar una 
 SkillExplanation,1,FighterTDAltAccel,"Después del cuarto paso de tu ataque normal, un impulso de aceleración, un contador de giro de daga o una explosión de fotones, presionar el botón de ataque normal en el momento justo hace que ataques mientras te<br>mueves a alta velocidad. <yellow>*Solo se puede usar con Twin Daggers.<c>"
 SkillExplanation,1,FighterArtsImpact,"Golpear a un enemigo varias veces con una PA llena la barra. Golpear a un enemigo con una PA cuando la barra está llena desencadena un ataque adicional.<br>Mientras se carga la barra, aumenta la cantidad de carga de la primera y segunda mitad de los ataques de PA que aún no han impactado contra un enemigo.<br><yellow>*Solo puede utilizarse con armas de la Clase Principal o de Fighter.<c>"
 SkillExplanation,1,TechterEnhanceField,"Los Grants otorgan efectos beneficiosos a ti y a los personajes cercanos al realizar ciertas acciones.<br>El medidor de Photon Blast aumenta cuando se activa Wand Element Pursuit. Además, al activar el Photon Blast, se producen ataques adicionales temporalmente tras impactar con un ataque.<br><yellow>*Solo se puede usar con un arma de Clase Principal/Techter.<c>"
-SkillExplanation,1,TechterQuickElementChange,Cambio de elemento rápido incluso sin cargar. <yellow>Solo varitas.
+SkillExplanation,1,TechterQuickElementChange,La explosión de Técnica resultante del Cambio de Elemento de Varita coincidirá con el mismo elemento incluso cuando una<br>Técnica no esté cargada. <yellow>*Solo se puede usar con una varita.<c>
 SkillExplanation,1,TechterWandTechSkipAttack,Salta al ataque técnico tras realizar una técnica. <yellow>Solo varitas.
 SkillExplanation,1,ForceRodTechniqueBonus,Aumenta daño y reducción elemental de técnicas. <yellow>Solo varas.
 SkillExplanation,1,ForcePhotonFlareExtension,"Prolonga la duración de Photon Flare si este está activo al momento de activar una Técnica Combinada o un Photon Blast.<br>Si Photon Flare no está activo, se almacenarán hasta tres acumulaciones de este efecto, las cuales se aplicarán la próxima vez que se active Photon Flare.<br><yellow>*Solo puede ser utilizado por una Clase Principal.<c>"
@@ -11892,7 +11892,7 @@ Synchronize,1,SynchronizeStartButtonRemove,Puerta de salida
 Synchronize,1,SynchronizeInaccessible,Este teletransportador no está disponible actualmente.<br><br> Estará disponible para su uso nuevamente<br>después de un tiempo establecido.
 Synchronize,1,SynchronizeTransferStart,Teletransportador activado. Comenzando la teletransportación.
 Synchronize,1,SynchronizeMultiBossWakeUp,¿Activar el teletransportador?
-Synchronize,1,SynchronizeMultiBossMessage,¿Activar el teletransportador?
+Synchronize,1,SynchronizeMultiBossMessage,El Teletransportador ha sido activado. Los<br>miembros del partido que estén dentro serán<br>teletransportados. en 30 segundos.<br><br>¿Quieres detener el teletransportador?
 Synchronize,1,SynchronizeMultiBossMessageExc,informó<br>después de un tiempo establecido.<br>¿Te gustaría detener el Teletransportador?
 Synchronize,1,SynchronizeMultiBossRemove,Detén el teletransportador.
 Synchronize,1,SynchronizeMultiBossGoto,Teletransportador activado. Ingrese al Teletransportador dentro de los próximos 30 segundos.
@@ -12073,11 +12073,11 @@ Synchronize,1,DBMultiBossGoto,Comenzaron los preparativos de combate. Reúnanse 
 Synchronize,1,DBMultiBossGotoExc,Comenzaron los preparativos de combate. Reúnanse en el área de transporte en los próximos 30 segundos.
 Synchronize,1,DBMultiBossStart,Preparativos completos. Comenzando la batalla.
 Synchronize,1,DBBootup,¿Comenzar la batalla con la Oscuridad Primordial?
-Synchronize,1,DBMultiBossMessage,¿Comenzar la batalla con la Oscuridad Primordial?
+Synchronize,1,DBMultiBossMessage,Comenzando los preparativos de batalla.<br>Los miembros del partido en los<br>alrededores serán desplegado después de<br>un tiempo determinado.<br><br>¿Le gustaría cancelar los preparativos?
 Synchronize,1,DBMultiBossMessageExc,r>deployed after a set time.<br><br>Would you like to cancel preparation?
 Synchronize,1,DBMultiBossRemove,Cancelar preparativos
 Synchronize,1,DFMultiBossStart,Comenzar la batalla
-Synchronize,1,DFBootup,Comenzar la batalla
+Synchronize,1,DFBootup,¿Comenzar la batalla final con la Oscuridad Primordial?<br><yellow>Nota: No podrás cancelar una vez que inicies el combate.<c>
 Synchronize,1,DFSoloMultiBossStart,Preparativos completos. Comenzando la batalla final.
 Synchronize,1,DFSoloBootup,¿Comenzar la batalla final con la Oscuridad Primordial?
 Synchronize,1,MackMultiBossGoto,Teletransportador activado.<br>Ingresa al Teletransportador dentro del tiempo asignado.
@@ -12223,7 +12223,7 @@ TeamBoost,1,TeamBoost_GrowForm_Tag_Grow,Efecto arriba
 TeamBoost,1,TeamBoost_GrowForm_Tag_TeamPoint,Puntos de alianza consumidos
 TeamBoost,1,TeamBoost_GrowForm_PercentageLV,Nivel $(1) ($(0)%)
 TeamBoost,1,TeamBoost_GrowForm_TimeLV,Nivel $(1) ($(0) horas)
-TeamBoost,1,TeamBoost_GrowForm_Grow_Check_Message,Nivel $(1) ($(0) horas)
+TeamBoost,1,TeamBoost_GrowForm_Grow_Check_Message,Estás a punto de consumir $(2) Puntos de Alianza para subir de<br>nivel $(0). (Puntos de alianza actuales: $(1)) ¿Está seguro de<br>que desea continuar?
 TeamBoost,1,TeamBoost_GrowForm_Grow_Message,El $(0) del árbol de fotones subió de nivel.
 TeamBoost,1,TeamBoost_Error_Unknown,No se puede completar la selección debido a un error.<br>Espere un momento y vuelva a intentarlo.<br><br> [No. 1049]
 TeamBoost,1,TeamBoost_Error_NotMember,No se puede completar la selección porque<br>no eres miembro de la alianza.<br>Verifique su afiliación de alianza actual.
@@ -15325,7 +15325,7 @@ PartyMaker,1,PartyMakerError2,No se puede colocar una baliza de PARTY porque ya 
 PartyMaker,1,WindowTitle3,Cancelar reclutamiento
 PartyMaker,1,WindowTitle4,Iniciar Reclutamiento
 PartyMaker,1,PartyMakerMessage4,Estás a punto de abandonar el reclutamiento de miembros del partido.<br><br> ¿Está seguro de que desea continuar?
-PartyMaker,1,PartyMakerMessage5,Iniciar Reclutamiento
+PartyMaker,1,PartyMakerMessage5,Estás a punto de unirte al grupo de<br><yellow>$(0)<c>. <yellow>(Tamaño del grupo:<br>Transmitiendo...)<c><br><br>¿Está seguro de que desea<br>continuar?
 PartyMaker,1,PartyMakerMessage6,Por favor seleccione un objetivo.
 PartyMaker,1,PartyMakerMessage7,Nivel $(0)
 PartyMaker,1,PartyMakerMessage8,"<yellow> No se aplicará el contenido de ""Configuración del grupo"". <c>"
@@ -15559,7 +15559,7 @@ Gat,1,Menu_Open_Win_Menu02,Tienda de anillos L
 Gat,1,Menu_Open_Win_Menu03,Tienda de anillos R
 Gat,1,Menu_Open_Win_Menu04,Tienda de anillos de habilidad compuestos
 Gat,1,Menu_Open_Win_Close,Atrás
-Gat,1,Menu_Open_Disable,Tienda de anillos de habilidad compuestos
+Gat,1,Menu_Open_Disable,Actualmente no puedes usar la Terminal de<br>reunión. Ayuda a Sophia en Franca's Café a<br>completarla Órdenes de Clientes para permitir<br>el uso de la Terminal de reunión.
 Gat,1,Title_Gat_Simple_Status,RECOPILACIÓN DE INFORMACIÓN SIMPLIFICADA
 Gat,1,AchieveNoItem,Sin logros.
 Gat,1,Result_C_1,Reunido $(0).
@@ -15692,11 +15692,11 @@ SG,1,SGItemName7,Nombre del producto 7
 SG,1,SGItemName8,Nombre del producto 8
 SG,1,SGItemName9,Nombre del producto 9
 SG,1,JumpSGShopTitle,¿MOVER A LA PANTALLA DE COMPRA DE GEMAS ESTRELLA?
-SG,1,JumpSGShopMessage,Nombre del producto 9
+SG,1,JumpSGShopMessage,Actualmente no tienes suficientes Star Gems.<br>¿Le gustaría cerrar la pantalla actual y ¿Abre<br>la pantalla “Comprar SG”?
 SG,1,DirectBuyTitle,CONFIRMAR COMPRA DEL ARTÍCULO
 SG,1,DirectBuyMessage,ose the current screen and <br>ope?
 SG,1,DirectBuyConfirmTitle,CONFIRMAR COMPRA DEL ARTÍCULO
-SG,1,DirectBuyConfirmMessage,?<br><br> $(1)<br>La tasa de descuento otorgada puede variar dependiendo del número de compras realizadas.<br><br> (Su SG: $(0))
+SG,1,DirectBuyConfirmMessage,Está a punto de comprar los siguientes artículos para $(2) SG (normalmente $(3)<br>SG). ¿Está seguro de que desea continuar?<br><br>$(1) La tasa de descuento otorgada puede variar dependiendo del número de<br>compras realizadas.<br><br>(Tu SG: $(0))
 SG,1,DirectBuyResultTitle,RESULTADOS DE LA COMPRA DEL ARTÍCULO
 SG,1,DirectBuySuccessTitle,COMPRA DEL ARTÍCULO COMPLETADA
 SG,1,DirectBuySuccessMessage,$(0)<br><br> Tu cuota de compras se restablecerá todos los días<br>a las<utc>15:00 </utc>.
@@ -17195,7 +17195,7 @@ MagMenu,1,Mag_Color_ColorPalette,Elige entre la paleta de colores
 MagMenu,1,Mag_Color_Unselected,No seleccionado
 MagMenu,1,Mag_ColorChangeError,El color no cambió.<br>No se consumió un kit de cambio de color N-Mag.
 MagMenu,1,Mag_ColorChangeTitle,Cambiar color magnético
-MagMenu,1,Mag_ColorChangeMessage,El color no cambió.<br>No se consumió un kit de cambio de color N-Mag.
+MagMenu,1,Mag_ColorChangeMessage,Utilice el dispositivo de cambio de color N-Mag y cambie<br>el color de tu Mag. ¿Está seguro de que desea continuar?<br><br><yellow>La configuración de color modificada se aplicará a todos<br>los Mag Forms.<c>
 MagMenu,1,Mag_ColorSyncMessage,Utilice el dispositivo de cambio de color N-Mag y<br>sincronice su Los colores de Mag con tu outfit. ¿Está<br>seguro de que desea continuar?<br><br><yellow>La configuración de color modificada se aplicará a todos<br>los Mag Forms.<c>
 MagMenu,1,Mag_ColorSyncError,Este formulario ya es del mismo color que tu disfraz de <br>.
 MagMenu,1,Mag_ColorDeviceError,No se puede utilizar el dispositivo. El color de este formulario no se puede cambiar <br>.
@@ -17266,10 +17266,10 @@ MagMenu,1,Mag_Jukebox_Play_013,Punto de inicio
 MagMenu,1,Mag_Jukebox_Play_014,Punto final
 MagMenu,1,Mag_Jukebox_Play_015,Avance rápido 15 segundos
 MagMenu,1,Mag_Jukebox_Play_016,Rebobinar 15 segundos
-MagMenu,1,Mag_Jukebox_Play_018,", consulte la sección Funciones en la página de inicio oficial.<br><br> https://pso2.com/players/manual/gamestart/start/"
+MagMenu,1,Mag_Jukebox_Play_018,"Necesitas <yellow>descargar datos adicionales de PSO2<c> para jugar ""$(0)"".<br><br>Para obtener más información sobre cómo descargar, consulte la sección Funciones en la página de<br>inicio oficial.<br><br>https://pso2.com/players/manual/gamestart/start/"
 MagMenu,1,Mag_Jukebox_Play_018_PS4,"n sobre cómo descargar, consulte la página de inicio oficial.<br><br> https://pso2.com/players/manual/"
 MagMenu,1,Mag_Jukebox_Play_019,El disco de música seleccionado solo se puede reproducir en NGS Blocks.
-MagMenu,1,Mag_Jukebox_Play_020,Sí.<br><br> No podrás reproducir música desde tu Mag<br>Jukebox mientras se reproduce esta música.
+MagMenu,1,Mag_Jukebox_Play_020,"Alguna música del juego, como la que se reproduce<br>durante el evento. escenas, tendrá prioridad cuando<br>se reproduzca.<br><br>No podrás reproducir música desde tu Mag Jukebox<br>mientras suena esta música."
 MagMenu,1,Mag_Jukebox_Play_022,$(0)
 MagMenu,1,Mag_Jukebox_Play_023,"$(0),$(1)"
 MagMenu,1,Mag_Jukebox_Play_024,<yellow> $(0) <c>
@@ -17277,7 +17277,7 @@ MagMenu,1,Mag_Jukebox_Play_025,"<yellow> $(0),$(1) <c>"
 MagMenu,1,Mag_Jukebox_Play_026,No establecido
 MagMenu,1,Mag_Jukebox_Play_027,<yellow> No establecido <c>
 MagMenu,1,Mag_Jukebox_Play_028,No se puede reproducir la canción seleccionada porque otra canción tiene prioridad.
-MagMenu,1,Mag_Jukebox_Play_029,<yellow> No establecido <c>
+MagMenu,1,Mag_Jukebox_Play_029,Vista previa con <%Function><pict 4space><c> <yellow>Puedes ajustar qué parte de<br>la canción reproducir.<c> <gray>La melodía no se puede<br>cambiar.<c>
 MagMenu,1,Mag_Jukebox_Play_030,No se puede reproducir la canción seleccionada porque otra canción tiene prioridad.
 MagMenu,1,Mag_Jukebox_Play_031,Jugando
 MagMenu,1,Mag_Jukebox_Play_032,La canción se detuvo porque la música de fondo tiene<br>prioridad.
@@ -17416,7 +17416,7 @@ RegionMag,1,RMag_Max,<bright_orange> MÁXIMO <c>
 RegionMag,1,RMag_Lv_Energy,Nivel$(0) $(1)
 RegionMag,1,RMag_Msg9,El almacenamiento no se puede utilizar.
 RegionMag,1,RMag_Msg10,Este almacenamiento no se puede utilizar en un Region Mag.
-RegionMag,1,RMag_Msg11,El almacenamiento no se puede utilizar.
+RegionMag,1,RMag_Msg11,"Artículo insertado en Region Mag. <yellow>El cargador ahora está lleno y se han activado un ""R Mag Boost<br>[Todos]"" y un ""R Mag Boost [Personal]"".<c>"
 RegionMag,1,RMag_Msg14,Seleccione un elemento para insertar en Region Mag. El artículo será consumido.
 RegionMag,1,RMag_Msg16,Insertando el siguiente elemento en Region Mag. ¿Está seguro?<br><br><yellow>Nota: La Energía Mag de Región no aumentará debido a que R Mag Boost [Todos] y R Mag Boost [Personal] estén<br>activos.
 RegionMag,1,RMag_SelectItem,Seleccionar artículo material
@@ -17483,7 +17483,7 @@ Stamp,1,StampWindow_Title,Stamps Preview
 Stamp,1,StampWindow_Help01,<%Function> to Playback
 Stamp,1,StampWindow_Help02,<%NextTabDetails> Arte del símbolo
 Stamp,1,StampWindow_ControlHelp_GamesPad,Ventana activa:<%NextWidget>Agregar o editar Favoritos: <%NextTabDetails>
-Stamp,1,StampWindow_ControlHelp_KeyBoard,<%NextTabDetails> Arte del símbolo
+Stamp,1,StampWindow_ControlHelp_KeyBoard,Confirmar: <%Decide> Atrás: <%Cancel> Reproducción: [Tab]> Cambiar ventana activa: <%NextWidget> Agregar o editar<br>favoritos: <%NextTabDetails>
 Stamp,1,StampWindow_Shop,No puedes utilizar este sello.<br><br> Algunos sellos se pueden comprar en la Tienda.<br><br> ¿Abrir la tienda?
 Stamp,1,StampWindow_TabFavorite,0. Favoritos
 Stamp,1,StampWindow_TabAll,1. Mostrar todo
@@ -17871,14 +17871,14 @@ Worldmap,1,Window_FasttravelTerminal_6,Reunir a los miembros del partido
 Worldmap,1,Window_FasttravelTerminal_7,Transferencia en bloque
 Worldmap,1,Window_FasttravelTerminal_8,Traslado de habitación
 Worldmap,1,Window_FasttravelTerminal_10,Espacio Creativo
-Worldmap,1,Window_FasttravelTerminal_6_1,el Salón<br>simplemente recibirá una notificación.<br>Nota: Los miembros que no puedan ingresar al sector no serán reunidos. <c>
+Worldmap,1,Window_FasttravelTerminal_6_1,Es posible reunir miembros del grupo en este dispositivo Ryuker.<br><light_red>Nota: Miembros que asisten a un Evento o visitan el Salón<br>simplemente recibirá una notificación. Nota: Los miembros que no<br>puedan ingresar al sector no serán reunidos.<c>
 Worldmap,1,Window_FasttravelTerminal_6_2,Entrada al sector no posible
 Worldmap,1,Window_FasttravelTerminal_6_3,Solicitar a los miembros del partido que se reúnan
 Worldmap,1,Window_FasttravelTerminal_6_4,Charlar
 Worldmap,1,Window_FasttravelTerminal_6_5,<c 00ff00> Reunir OK <c>
 Worldmap,1,Window_FasttravelTerminal_6_6,<light_red> Reunir no es posible <c>
 Worldmap,1,Window_FasttravelTerminal_6_7,Solicitar a los miembros que se reúnan.<br>¿Está seguro de que desea continuar?
-Worldmap,1,Window_FasttravelTerminal_6_8,<light_red> Reunir no es posible <c>
+Worldmap,1,Window_FasttravelTerminal_6_8,"$(0) ha solicitado al Partido que se reúna. Abra el menú principal y confirme <yellow>""Reunir nuevos<br>miembros del grupo""<c> en ""nuevas notificaciones""."
 Worldmap,1,Window_FasttravelTerminal_6_9,-
 Worldmap,1,Window_FasttravelTerminal_6_10,$(0) segundos para reunirse
 Worldmap,1,Window_FasttravelTerminal_6_11,"$(0) ha solicitado a la Parte que se reúna.<br>Confirme<yellow>""Reunir nuevos miembros del grupo""<c>en ""nuevas notificaciones""."
@@ -19084,7 +19084,7 @@ MySpace,1,MainMenu_MySpace_ErrMSG,Mensaje
 MySpace,1,MainMenu_MySpace_MoveFailToast,No se puede mover a este espacio creativo.
 MySpace,1,MainMenu_MySpace_BuyCheck,¿Comprar los siguientes artículos por $(2)$(0)?<br>¿Estás seguro?<br><br> (Su aire acondicionado: $(1))
 MySpace,1,MainMenu_MySpace_DirectBuy_Premium,CONFIRMAR COMPRA DEL ARTÍCULO
-MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Premium,¿Comprar los siguientes artículos por $(2)$(0)?<br>¿Estás seguro?<br><br> (Su aire acondicionado: $(1))
+MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Premium,<pict Arcscash><scarlet>AC Pago requerido<c> Su derecho a utilizar la función<br>seleccionada ha caducado.<br><br>Debes activar un <yellow>Conjunto Premium<c> para ganar acceso<br>a esta función. ¿Pasar a la pantalla de compra?
 MySpace,1,MainMenu_MySpace_DirectUse_Premium,CONFIRMAR USO DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_ItemUsePremium,"<pict Arcscash><c 5fdf00>Usar artículo comprado anteriormente<c> O no tienes un Conjunto<br>Premium (obligatorio para Premium C-Space), o su acceso ha<br>caducado.<br><br>Utilice un <yellow>Conjunto Premium<c> de su inventario para permitir<br>el uso de ¿Espacio C premium?<br><br><yellow>Nota: Si tienes varios en tu poder, el que agrega se<br>utilizará la mayor cantidad de tiempo.<c><br><br><yellow>Nota: Si desea confirmar qué elemento se utilizará, por<br>favor selecciónalo de tu inventario.<c>"
 MySpace,1,MainMenu_MySpace_DirectBuy_Rental,CONFIRMAR COMPRA DEL ARTÍCULO
@@ -19347,7 +19347,7 @@ AMSkillExplanation,1,ArsenalModule:Sword:Overheat,"Almacena hasta dos cargas de 
 AMSkillExplanation,1,ArsenalModule:Sword:BoostArcane,El arma cambia automáticamente a Garm y corre hacia adelante con un ataque cuando esquivas con éxito con Forward<br>Thrust. <yellow>*Solo se puede utilizar con VA-1SRM Garm.<c>
 AMSkillExplanation,1,ArsenalModule:Sword:BoardControl,Recupera HP y PP cuando destruyes enemigos cercanos.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
 AMSkillExplanation,1,ArsenalModule:Sword:BurnerLinkage,Mantén presionado el botón de ataque normal para gastar HP y realizar hasta 2 ataques. Los<br>ataques normales de todos los armamentos que uses después de este ataque cambian a su ataque<br>final. <yellow>*Solo se puede utilizar con VA-1SRM Garm.<c>
-AMSkillExplanation,1,ArsenalModule:Sword:Quicksilver,Recupera HP y PP cuando destruyes enemigos cercanos.<br><yellow> *Solo se puede utilizar con VA-1SRM Garm. <c>
+AMSkillExplanation,1,ArsenalModule:Sword:Quicksilver,"Golpear a un enemigo caído con Garm Detonation extiende el tiempo que permanece caído.<br>Algunos enemigos poderosos no se ven afectados, pero la potencia de Garm Detonation<br>aumenta. <yellow>*Solo se puede utilizar con VA-1SRM Garm.<c>"
 AMSkillExplanation,1,ArsenalModule:Scythe:LacerationMarker,"Marca a los enemigos golpeándolos un número determinado de veces con tus ataques.<br>Puedes marcar a un enemigo hasta dos veces, reduciendo el daño que recibes según la cantidad de marcas.<br>Golpear a un enemigo marcado con Ejecución Nidhoggr provocará una explosión, causando ataques adicionales de una potencia que dependerá del número de marcas.<br>*Solo se puede usar con VA-2MRM Nidhoggr."
 AMSkillExplanation,1,ArsenalModule:Scythe:Vengeance,"Genera un ataque adicional cuando un ataque se anula con éxito.<br>Mientras Nidhoggr esté configurado como una de las armas principales, este efecto se activará incluso si se está usando otra arma.<br><yellow>*Solo se puede usar con VA-2MRM Nidhoggr.<c>"
 AMSkillExplanation,1,ArsenalModule:Scythe:Serenity,Retrasar tu siguiente ataque tras uno genera un ataque adicional.<br>La potencia del ataque adicional aumenta según la duración del retraso.<br><yellow>*Solo se puede usar con VA-2MRM Nidhoggr.<c>
@@ -19363,7 +19363,7 @@ AMSkillExplanation,1,ArsenalModule:Broom:BlinkCombo,"Los ataques normales de Scy
 AMSkillExplanation,1,ArsenalModule:Broom:Euphoria,"Al golpear a un enemigo con un ataque de acción de arma mientras tienes 3 estrellas, te vuelves temporalmente invulnerable.<br>No recuperas PP de forma natural mientras estás en este estado de invulnerabilidad, pero la potencia de Represalia de Scylla aumenta.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
 AMSkillExplanation,1,ArsenalModule:Broom:Retaliate,Ataca automáticamente cuando los enemigos permanezcan dentro de un cierto rango y no recibas daño.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>
 AMSkillExplanation,1,ArsenalModule:Broom:Annihilation,"Al golpear a un enemigo con Scylla Retaliation, se crea temporalmente un campo a tu alrededor que ocasionalmente produce ataques en una amplia zona.<br><yellow>*Solo se puede usar con VA-4XRM Scylla.<c>"
-AMSkillExplanation,1,ArsenalModule:BackPack01:Passive,"Me quedé quieto por un tiempo.<br>Además, tu velocidad de movimiento aumenta.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>"
+AMSkillExplanation,1,ArsenalModule:BackPack01:Passive,"Produce automáticamente ataques de soporte periódicos. Estos ataques de apoyo se vuelven<br>más poderosos después de que M.A.R.S. Ha estado equipado por un tiempo. Además, aumenta<br>tu velocidad de movimiento. <yellow>*Solo se puede usar con SA-1HMP Fenrir.<c>"
 AMSkillExplanation,1,ArsenalModule:BackPack01:StepCombo,Le permite realizar dos pasos laterales consecutivos.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
 AMSkillExplanation,1,ArsenalModule:BackPack01:DodgeRicochet,Produce un ataque adicional cuando esquivas un ataque.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
 AMSkillExplanation,1,ArsenalModule:Backpack02:Passive,"Genera automáticamente ataques de apoyo periódicos.<br>Estos ataques de apoyo se vuelven más poderosos después de equipar M.A.R.S. durante un tiempo.<br>Además, el daño que recibes se reduce una vez que tus PV están por debajo de cierto nivel.<br><yellow>*Solo se puede usar con SA-2HDP Fafnir.<c>"
@@ -19609,7 +19609,7 @@ LimitItemList,0,LimitItemList_NoItem,有効期限が近いアイテムはあり�
 LimitItemList,1,LimitItemList_Title1,Lista de objetos limitados 1
 LimitItemList,1,LimitItemList_Title2,Lista de objetos limitados 2
 LimitItemList,1,LimitItemList_Title3,Artículos a punto de vencer
-LimitItemList,1,LimitItemList_Text1,Artículos caducados
+LimitItemList,1,LimitItemList_Text1,Tienes artículos que están a punto de<br>caducar. Considere verificar los detalles<br>del artículo. y usar los artículos antes de<br>que caduquen.
 LimitItemList,1,LimitItemList_Text2,"ms, como<br>Billetes rasca y gana especiales, en el<br>Intercambio de artículos del comerciante de artículos."
 LimitItemList,1,LimitItemList_Text3,Considere utilizar artículos con vencimiento<br>antes de que caduquen.
 LimitItemList,1,LimitItemList_MainMenuTitle,Artículos a punto de vencer
