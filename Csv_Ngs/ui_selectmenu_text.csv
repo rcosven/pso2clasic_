@@ -237,7 +237,7 @@ CameraCommand,1,Toast_ExitEditinglight,Se ha desbloqueado el modo de configuraci
 CameraCommand,1,ErrorTitle_ShaderSetting,ERRORES DE CONFIGURACIÓN
 CameraCommand,1,Error_ShaderSetting,La configuración de luz personalizada solo puede <br>utilizarse cuando la Calidad de Sombreado <br>está configurada en alta.<br>Abre la Configuración del Entorno desde la<br>pantalla del Lanzador y cambia la Calidad de <br>Sombreado en la pestaña de Gráficos.
 CameraCommand,1,Message_DiscardLightSettings,Estás a punto de salir sin aplicar los cambios que realizaste.<br>¿Está seguro de que desea continuar?
-CameraCommand,1,Selfie_OperationGuide,rd> Acción del lobby:<%TabBack>Variante de botón:<%NextWidget>Configuración de la cámara:<%ChangeCtrlWindowForward>Cancelar: <%Cancel>
+CameraCommand,1,Selfie_OperationGuide,Ocultar UI: <%NextTabDetails> Frente a la cámara: <%Decide> Mirar a la cámara: <%MultiSelect>+<%Decide> Cambiar expresión: <%TabForward> Acción del lobby: <%TabBack> Variante de botón: <%NextWidget> Configuración de la cámara: <%ChangeCtrlWindowForward> Cancelar: <%Cancel>
 CameraCommand,1,Selfie_OperationGuide_Camera_Screenshot,Captura de pantalla:
 CameraCommand,1,Selfie_OperationGuide_Camera_Move,Movimiento de cámara:
 CameraCommand,1,Selfie_OperationGuide_Camera_Rotate,Rotación de cámara:
@@ -675,7 +675,7 @@ Common,1,CustomizeGuideVita,Intercambiar diseño con<pict Sign_TRIANGLE><c f0df6
 Common,1,ConfirmHideInterface,La interfaz de usuario estará oculta. Volverá a aparecer cuando<br>se muestre el Menú Rápido (provisional).
 Common,1,Title_chatmenu,EJECUTAR MACROS DE CHAT
 Common,1,InChallengeShip_DirectBuy_ErrorTitle,ERROR DE COMPRA
-Common,1,InChallengeShip_NotPremium_ErrorMessage,Elige un<yellow>Conjunto Premium<c><br> de un Bloque de Desafío o Bloque de Batalla. Por favor<br>compre uno de un bloque diferente.
+Common,1,InChallengeShip_NotPremium_ErrorMessage,"O no tienes permiso para usar el función<br>seleccionada, o su acceso ha caducado.<br><br>No puedes comprar un <yellow>Juego Premium<c> <br>desde un bloque de desafío o bloque de batalla. <br>por favor compre uno de un bloque diferente."
 Common,1,QuickMenu_PatternEdit_Menu,Personalizar diseño
 Common,1,QuickMenu_PatternSelect,Selección de diseño
 Common,1,QuickMenu_PatternDetail,Detalles de diseño
@@ -699,11 +699,11 @@ Common,1,QuickMenu_MenuDelete,Borrar
 Common,1,QuickMenu_MenuAdd_Text1,El artículo no se pudo agregar porque alcanzó el límite.
 Common,1,QuickMenu_MenuAdd_Text2,No se puede agregar. Ha alcanzado el número máximo de elementos del menú.
 Common,1,QuickMenu_PremiumExpired_Text1,El menú rápido cambió a básico porque la prima expiró.
-Common,1,QuickMenu_Edit_Text1,"Actualmente, un elemento que no pertenece a la categoría se encuentra en la parte superior de la lista.<br><br> Seleccione una categoría como elemento principal para guardar."
+Common,1,QuickMenu_Edit_Text1,"Actualmente, un elemento que no pertenece a la categoría<br>se encuentra en la parte superior de la lista.<br><br>Seleccione una categoría como elemento principal para<br>guardar."
 Common,1,QuickMenu_Cancel_Text1,Cancelar ediciones. ¿Está seguro de que desea continuar?
 Common,1,QuickMenu_SaveError_Text1,No se pudo guardar porque el diseño está en blanco.
-Common,1,QuickMenu_SaveError_Text2,"Actualmente, un elemento que no pertenece a la categoría se encuentra en la parte superior de la lista.<br><br> Seleccione una categoría como elemento principal para guardar."
-Common,1,QuickMenu_SaveError_Text3,m de la lista.<br><br> Reorganice los elementos de la categoría para poder guardarlos.
+Common,1,QuickMenu_SaveError_Text2,"Actualmente, un elemento que no pertenece a la categoría<br>se encuentra en la parte superior de la lista.<br><br>Seleccione una categoría como elemento principal para<br>guardar."
+Common,1,QuickMenu_SaveError_Text3,Hay dos elementos de categoría seguidos o un elemento de<br>categoría está al final de la lista.<br><br>Reorganice los elementos de la categoría para poder<br>guardarlos.
 Common,1,QuickMenu_SaveError_Text4,"No se puede guardar solo con ""Categoría"".<br><br> Agregue otra selección e intente guardar nuevamente."
 Common,1,QuickMenu_SaveConfirm_Text1,Hay duplicados. ¿Está seguro de que desea continuar?
 Common,1,QuickMenu_SaveConfirm_Text2,"Aunque añadas $(0) al menú rápido, no podrás usarlo porque no es compatible con esta plataforma.<br><br>¿Deseas añadirlo?"
