@@ -287,7 +287,7 @@ QuestInfo,1,QuestTypeSelectTitle,Seleccione el tipo de misión
 QuestInfo,1,QuestSelectCheckTitle,Confirmar la aceptación de la misión
 QuestInfo,1,QuestSelectCheck,¿Aceptar esta misión?
 QuestInfo,1,BattlePointNum,$(0)~
-QuestInfo,1,AttentionNewRoom,No puedes aceptar otra misión o Line Strike durante el emparejamiento de misiones.<br><br> ¿Cancelar el emparejamiento?
+QuestInfo,1,AttentionNewRoom,No puedes aceptar otra misión o Line Strike durante el emparejamiento de misiones.<br>¿Cancelar el emparejamiento?
 QuestInfo,1,OrdersOptionBlock3,Iniciar el emparejamiento
 QuestInfo,1,NoMust_Quest_Conditions,Ninguno
 QuestInfo,1,Title_TargetEnemy_Unknown,???
@@ -309,8 +309,8 @@ QuestInfo,1,EnemyLvTitle,Lv. de enemigos presentes
 QuestInfo,1,EnemyLv,Nivel$(0)
 QuestInfo,1,EnemyLvWarning,<yellow> Nivel$(0) <c>
 QuestInfo,1,EnemyLvATTENTIONTitle,Confirmar la aceptación de la misión
-QuestInfo,1,EnemyLvATTENTION,"Hay un miembro cuyo nivel es 5 o más niveles inferior al de los enemigos que aparecen durante la misión.<br><br>¿Seguro que deseas iniciar la misión?<br><br><yellow>Nota: Cuando el nivel del jugador es 5 o más niveles inferior al del enemigo, el daño infligido se reducirá considerablemente.<c><br>"
-QuestInfo,1,EnemyLvATTENTION2,alt<br>disminuirá significativamente. <c>
+QuestInfo,1,EnemyLvATTENTION,"Hay un miembro cuyo nivel es 5 o más niveles<br>inferior al de los enemigos que aparecen durante<br>la misión.<br>¿Seguro que deseas iniciar la misión?<br><yellow>Nota: Cuando el nivel del jugador es 5 o más<br>niveles inferior al del enemigo, el daño<br>infligido se reducirá considerablemente.<c><br>"
+QuestInfo,1,EnemyLvATTENTION2,"Hay un Miembro que causará daños reducidos a enemigos<br>que aparecen durante la misión. ¿Estás seguro de que<br>deseas comenzar la misión?<br><br><yellow>Nota: Cuando el nivel del jugador es $(0) o más niveles<br>por debajo del nivel del enemigo y el poder de batalla<br>está por debajo de cierto valor, el daño infligido<br>disminuirá significativamente.<c>"
 QuestInfo,1,BoostInfo_Title,Efectos de la misión
 QuestInfo,1,CampaignBoost_Experience,<pict exp_icon><pict 4space>EXP ganada +$(0)%
 QuestInfo,1,CampaignBoost_MesetaDrop,<pict meseta_icon2><pict 4space>Meseta Ganada +$(0)%
@@ -342,7 +342,7 @@ QuestInfo,1,WeeklyRanking_Close,No hay clasificaciones programadas actualmente
 QuestInfo,1,WeeklyRanking_Message_Open,Puedes recibir estas recompensas por participar.<br>*Consulte Registros ARKS para obtener más detalles.
 QuestInfo,1,WeeklyRanking_Message_Notice,ARKS Records comenzará en $(0).<br>*Consulte Registros ARKS para obtener más detalles.
 QuestInfo,1,WeeklyRanking_Message_Notice_Soon,ARKS Records comenzará en breve.<br>*Consulte Registros ARKS para obtener más detalles.
-QuestInfo,1,SeasonQuest_Detail_Description,Gana recompensas adicionales según tu clasificación al completar la misión.
+QuestInfo,1,SeasonQuest_Detail_Description,Gana puntos de misión adicionales por cada uno de los siguientes<br>objetivos. Gana recompensas adicionales según tu clasificación al<br>completar la misión.
 QuestInfo,1,SeasonQuest_Detail_Label1,Recompensas de clasificación clara de misiones
 QuestInfo,1,SeasonQuest_Detail_Label2,Bonificación de puntos de misión
 QuestInfo,1,SeasonQuest_Rank_1_3,$(0)
@@ -350,13 +350,13 @@ QuestInfo,1,SeasonQuest_Rank_4,4 o menos
 QuestInfo,1,SeasonQuest_SeasonalPoint,+$(0)
 QuestInfo,1,SeasonQuest_AddScore,+$(0) Puntos
 QuestInfo,1,WeeklyRanking_Close_Rank_Notcovered,Este rango de misión no es elegible.<br>*Consulte Registros ARKS para obtener más detalles.
-QuestInfo,1,WeeklyRanking_Close_Not_Aggregate_Class,"detalles del pedido, vaya al Menú principal y seleccione ""Personal"", luego ""ARKS<br>Registros""."
+QuestInfo,1,WeeklyRanking_Close_Not_Aggregate_Class,"Este Registro ARKS no se aplica a su Clase Principal actual. Para ver los detalles<br>del registro ARKS, vaya al menú principal y seleccione ""Personal"", luego ""ARKS<br>Registros""."
 QuestInfo,1,QuestReward_Empty,No hay una recompensa clara
 QuestInfo,1,Recommended_Empty,No hay entregas de artículos destacados
 QuestInfo,1,QuestRewardInformation_Title,Detalles de la recompensa de la misión
 QuestInfo,1,QuestRewardInformation_ClearTabText,Borrar recompensa
 QuestInfo,1,QuestRewardInformation_DropTabText,Entrega de artículos destacados
-QuestInfo,1,QuestCounterInformation_GuideText,Detalles de recompensa:<%Function>Cambiar ventana activa: <%ChangeCtrlWindowForward>
+QuestInfo,1,QuestCounterInformation_GuideText,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Abrir detalles de recompensa: <%Function> Cambiar ventana activa: <%ChangeCtrlWindowForward>
 QuestInfo,1,Title_Quest_Reward_3,1er rango S Recompensa clara<yellow>*Una vez por cuenta <c>
 QuestInfo,1,QuestReward_etr,Varios.
 Caution,0,None,不明なエラーです。<br><br>[No.3000]
@@ -432,7 +432,7 @@ Caution,0,CantStartCapacityOverInTraning,練習クエストを開始できませ
 Caution,0,LeavePenalty,マッチング制限中のため<br>対象クエストを受注できません。<br><br>しばらく時間を空けてから受注してください。
 Caution,1,None,An unknown error occurred.<br><br>[No. 3000]
 Caution,1,NotReceptQuestPartyGuest,No puedes aceptar la misión porque<br>no eres un líder del grupo.
-Caution,1,NotReceptQuestAlreadyQuest,La búsqueda ya ha comenzado. Se recomienda dirigirse<br>hacia la puerta).
+Caution,1,NotReceptQuestAlreadyQuest,No puedes aceptar la misión porque usted<br>no es un líder del partido. (La misión<br>ya ha comenzado. Rumbo Se recomienda<br>hacia la puerta.)
 Caution,1,NotFoundQuestSearch,No se pudo encontrar una misión que coincida con<br>las condiciones que ingresaste.
 Caution,1,NotFoundRoomSearch,No se pudo encontrar una habitación que coincida con<br>las condiciones que ingresaste.
 Caution,1,NotFoundPartyList,No se pudo encontrar una fiesta.
@@ -440,7 +440,7 @@ Caution,1,NotFoundQuestType,No hay misiones que aceptar.
 Caution,1,NotFoundQuestList,No hay misiones que aceptar.
 Caution,1,CantStartQuestNotFoundRoom,No se puede iniciar la misión porque<br>no se pudo encontrar la habitación objetivo.
 Caution,1,CantStartQuestCapacityOverRoom,No se puede unir porque la sala está llena.
-Caution,1,CantStartQuestCapacityOverRoom2,No se puede unir porque la sala está llena.
+Caution,1,CantStartQuestCapacityOverRoom2,"No se puede unir porque la sala está llena. El número en el<br>La sala incluye jugadores que intentan unirse a la sala, lo<br>que Es posible que no se refleje en el número de<br>participantes.<br><yellow>Nota: Un jugador solo puede intentar unirse a una sala<br>durante un minuto a la vez. un tiempo, por lo que es posible<br>que pueda unirse a la sala esperando y intentándolo de<br>nuevo.<c>"
 Caution,1,CantStartQuestNewRaidQuest,La misión no se puede aceptar porque los miembros del grupo<br>no han derrotado a los enemigos en las Condiciones de unión.
 Caution,1,CantStartQuestNotNotFoundParty,No se puede iniciar la misión porque no se pudo encontrar el grupo objetivo <br>.
 Caution,1,CantStartQuestCapacityOverParty,No puedo unirme porque la fiesta está llena.
@@ -453,9 +453,9 @@ Caution,1,CantStartQuestDifferenceConditionLine2,No puedes unirte a un grupo o a
 Caution,1,CantStartQuestDifferenceConditionLine3,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)
 Caution,1,CantStartQuestDifferenceConditionLine4,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
 Caution,1,CantStartQuestDifferenceConditionLine5,No puedes unirte a un grupo o aceptar una misión<br>debido a las siguientes razones:<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
-Caution,1,CantStartQuestDifferenceConditionLine6,wing reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
-Caution,1,CantStartQuestDifferenceConditionLine7,reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)
-Caution,1,CantStartQuestDifferenceConditionLine8,ns:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)
+Caution,1,CantStartQuestDifferenceConditionLine6,No puedes unirte a un grupo ni aceptar una<br>misión. debido a las siguientes razones:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)
+Caution,1,CantStartQuestDifferenceConditionLine7,No puedes unirte a un grupo ni aceptar una<br>misión. debido a las siguientes razones:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)
+Caution,1,CantStartQuestDifferenceConditionLine8,No puedes unirte a un grupo ni aceptar una<br>misión. debido a las siguientes razones:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)<br>- $(7)
 Caution,1,QuestLevel,<pict mainclass_icon> Nivel $(0) y superior
 Caution,1,PartyLevel,Condiciones para unirse al grupo: Nivel $(1) a $(0)
 Caution,1,FriendOnly,Sólo amigos
@@ -469,13 +469,13 @@ Caution,1,CapacityOverParty,Restricciones de número de partido
 Caution,1,PlatformError,Restricciones de plataforma
 Caution,1,RaidQuestDisable,Unirse a la condición de enemigos no derrotados
 Caution,1,NotFoundPartyListtInBasnet,No se pudo encontrar una fiesta.
-Caution,1,CantStartQuestClearCountLimit,No se pudo encontrar una fiesta.
+Caution,1,CantStartQuestClearCountLimit,No puedes unirte a la misión porque uno o más<br>grupos Los miembros han superado el número máximo<br>de veces. la misión puede ser completada.
 Caution,1,QuestSubLevel,<pict subclass_icon> Nivel $(0) y superior
 Caution,1,ClearCountLimit,Has excedido el máximo de borrados para esta misión.
 Caution,1,CantStartQuestIgnoreQuest,Esta misión no se puede aceptar en este momento.<br>Consulte el sitio del jugador para obtener más detalles.
 Caution,1,IgnoreQuest,Esta misión no se puede aceptar en este momento.<br>Consulte el sitio del jugador para obtener más detalles.
 Caution,1,QuestDropPenalty,"Uno o más miembros tienen una ""penalización por abandono""."
-Caution,1,CantStartQuestDropPenalty,"Uno o más miembros tienen una ""penalización por abandono""."
+Caution,1,CantStartQuestDropPenalty,No puedes unirte a un grupo ni aceptar una misión debido a<br>la siguientes razones:<br><br>- Uno o más miembros tienen una “Penalción por Abandono”.
 Caution,1,CantStartProhibitQuestDropTitleCnt,TERMINAL DEL MENÚ DE ACEPTACIÓN DE MISIONES
 Caution,1,CantStartProhibitQuestDropTitleTlp,TELEPORTADOR
 Caution,1,CantStartProhibitQuestDropForStart,Esto no está disponible actualmente.
@@ -491,15 +491,15 @@ Caution,1,CautionQuestRaidQuest,No puedes aceptar esta misión porque no has cum
 Caution,1,CautionMultiConditionLine1,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)
 Caution,1,CautionMultiConditionLine2,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)<br>- $(1)
 Caution,1,CautionMultiConditionLine3,No puedes aceptar esta misión porque no todos los miembros del Partido<br>han cumplido las condiciones siguientes.<br><br> - $(0)<br>- $(1)<br>- $(2)
-Caution,1,CautionMultiConditionLine4,Et las condiciones a continuación.<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)
-Caution,1,CautionMultiConditionLine5,Las condiciones a continuación.<br><br> - $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
+Caution,1,CautionMultiConditionLine4,No puedes aceptar esta misión porque no todos los miembros<br>del Partido han cumplido las siguientes condiciones.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CautionMultiConditionLine5,No puedes aceptar esta misión porque no todos los miembros<br>del Partido han cumplido las siguientes condiciones.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
 Caution,1,CautionQuestClearCountLimit,No puedes aceptar esta misión porque has alcanzado el número máximo de<br>veces que se puede completar esta misión.
 Caution,1,CautionNothingQuest,No existen misiones de este tipo.
 Caution,1,NotFoundQuestRecord,No hay registros de misiones.
 Caution,1,CantStartQuestNewNetCafeQuest,Un miembro del grupo no tiene Net Café Premium y no puede aceptar esta Misión.
 Caution,1,CantStartQuestOutExtraQuest,El período de campaña para esta misión ha finalizado. Por favor vuelva a aceptar.
 Caution,1,CantStartQuestInExtraQuest,Ahora se aplica un período de campaña a esta misión. Por favor vuelva a aceptar.
-Caution,1,CantStartCapacityOverInTraning,Lo intentaría de nuevo.<br><br> Nota: Las misiones de práctica se llevan a cabo en el bloque de desafío de su barco.
+Caution,1,CantStartCapacityOverInTraning,No se pudo iniciar Practice Quest porque el bloque está al límite de su capacidad. Espere un momento e<br>inténtelo de nuevo.<br>Nota: Las misiones de práctica se llevan a cabo en el bloque de desafío de su barco.
 Caution,1,LeavePenalty,No puedes aceptar la misión<br>debido a restricciones de emparejamiento.<br><br> Espere un poco y luego acepte la misión.
 ChallengeBuff,0,Window_Main_Title,チャレンジ設定
 ChallengeBuff,0,Window_List_Title,チャレンジ項目リスト
@@ -575,7 +575,7 @@ ChallengeBuff,1,Dialog_Load_Title,CONFIRMAR
 ChallengeBuff,1,Dialog_Load_Message,Esto sobrescribirá la configuración que se haya modificado.<br>¿Está seguro de que desea continuar?
 ChallengeBuff,1,Challenge_Buff_Error1,No se pueden seleccionar varios desafíos similares.
 ChallengeBuff,1,Challenge_Buff_Error2,No se puede seleccionar porque el efecto total excede $(0).
-ChallengeBuff,1,Window_Guide_Message,No se puede seleccionar porque el efecto total excede $(0).
+ChallengeBuff,1,Window_Guide_Message,"Cambiar las habilidades de los enemigos y de los jugadores afectará el nivel de dificultad<br>de la misión.<br><yellow>Cuanto mayor sea la dificultad, mayor será el multiplicador aplicado a la puntuación.<br>Tu puntuación afectará tu rango cuando completes la misión y las recompensas que recibas.<c>"
 ChallengeBuff,1,Window_Guide_Message2,Cambiar las habilidades de los enemigos y de los jugadores afectará el nivel de dificultad de la misión.
 ChallengeBuff,1,Window_List_Tab_Popup_All,Todos los desafíos
 ChallengeBuff,1,Window_List_Tab_Popup_1,HP del enemigo aumentado
