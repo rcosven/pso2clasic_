@@ -3611,7 +3611,7 @@ EquipInventory,1,Addon3Hint,Puedes equipar armadura en esta ranura.
 EquipInventory,1,FashionHint,Puedes equipar un atuendo en esta ranura.
 EquipInventory,1,CostumeHint1,N-Traje
 EquipInventory,1,CostumeHint2,Trajes/Piezas/Camuflaje de armas
-EquipInventory,1,CostumeError,lock. You may only modify your equipment <br>after returning to a standard block.
+EquipInventory,1,CostumeError,No puedes quitarte un atuendo o ropa de abrigo en el Barco<br>Universal o un bloque de desafío. Sólo podrás modificar tu<br>equipo. después de regresar a un bloque estándar.
 EquipInventory,1,CostumeErrorTitle,PALETA DE ARMADURA
 EquipInventory,1,PartsError,"No se pueden eliminar partes del brazo o de la pierna. Si<br>quieres Cambie su equipo, intente intercambiar diferentes<br>partes del cuerpo.<br><br>Además, no puedes quitarte un traje o ropa de abrigo en el<br>Barco universal o un bloque de desafío. Sólo puedes modificar<br>su equipo después de regresar a un bloque estándar."
 EquipInventory,1,PartsErrorTitle,PALETA DE ARMADURA
@@ -4473,11 +4473,11 @@ SkillTree,1,LevelUp_Ask,Estás a punto de subir de nivel consumiendo $(0) SP.<br
 SkillTree,1,LevelUp_AskNoCost,Estás a punto de subir de nivel<yellow>sin consumir ningún SP <c>.<br>¿Está seguro de que desea continuar?
 SkillTree,1,LevelUp_Success,Puntos de habilidad asignados.
 SkillTree,1,LevelUp_Lack,Nuestro estado en cada nivel de habilidad<br>a través de <%NextTabDetails>.<br><br> (Puntos de habilidad requeridos: $(0))
-SkillTree,1,LevelUp_Lack_v,r status at each skill level<br>via <pict Sign_SELECT>.<br><br>(Required Skill Points: $(0))
+SkillTree,1,LevelUp_Lack_v,No puedo aprender esta habilidad porque no tienes<br>suficientes puntos de habilidad. Puedes ver tu<br>estado en cada nivel de habilidad. a través de<br><pict Sign_SELECT>.<br><br>(Puntos de habilidad requeridos: $(0))
 SkillTree,1,LevelUp_LackLv,Nivel de aprendizaje aún no alcanzado.
 SkillTree,1,LevelUp_Max,No se puede subir más de nivel.
 SkillTree,1,LevelUp_Wait,Espere por favor.
-SkillTree,1,LevelUp_LackPre,vel.<br><br>You can view your status at each skill level<br>via <%NextTabDetails>.
+SkillTree,1,LevelUp_LackPre,No puedes aprender esta habilidad porque no la<br>has hecho. alcanzado el nivel de habilidad<br>previo requerido.<br><br>Puedes ver tu estado en cada nivel de<br>habilidad. a través de <%NextTabDetails>.
 SkillTree,1,LevelUp_LackPre_v,vel.<br><br> Puede ver su estado en cada nivel de habilidad<br>a través de <pict Sign_SELECT>.
 SkillTree,1,LevelUp_SabStyle_Success,Puntos de estilo asignados.
 SkillTree,1,Rename,Se ha cambiado el nombre del árbol de habilidades.
@@ -8089,7 +8089,7 @@ SkillExplanation,1,PetAssist,Confiere un marcador que aumenta el daño infligido
 SkillExplanation,1,PetAssistPlus,Aumenta el daño que infliges a cualquier área de un enemigo que tenga adjunta una Marca de Invocador.
 SkillExplanation,1,SubPetRrcoverUp,Aumenta la tasa de recuperación de mascotas que no están equipadas y están incluidas en la paleta de armas.
 SkillExplanation,1,PetHPRestraint,Permite que las mascotas desplegadas recuperen gradualmente su HP. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
-SkillExplanation,1,PetSympathy,your pet for Shifta or Resta. <yellow>This skill can only be used with a Main Class.
+SkillExplanation,1,PetSympathy,Aumenta la recuperación de la mascota y el daño infligido durante un tiempo determinado cuando respondes a una solicitud de tu mascota de Shifta o Resta. <yellow>Esta<br>habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,HarmonizeUp,Aumenta la probabilidad de que surjan signos de simpatía por las mascotas. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,SympathyTime,Extiende la duración del efecto de Simpatía por las mascotas. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,EasySympathy,Amplía el periodo receptivo de Pet Sympathy. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
@@ -8101,7 +8101,7 @@ SkillExplanation,1,PetSwtichShoot,ed Power. <yellow>This skill can only be used 
 SkillExplanation,1,AllAttackBonus1,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,AllAttackBonus2,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,PetElementalWeakPoint,Aumenta el daño infligido al explotar una debilidad elemental. Aumenta enormemente el daño infligido por una mascota.
-SkillExplanation,1,PetElementPPRestraint,latter's Elemental Weakness. <yellow>This skill can only be used with a Main Class.
+SkillExplanation,1,PetElementPPRestraint,Aumenta la recuperación de PP cuando una mascota golpea al enemigo con un ataque normal que explota la debilidad elemental de este último. <yellow>Esta habilidad solo<br>se puede usar con una clase principal.
 SkillExplanation,1,LongDistanceLove,r pet leaves your side. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,TakeOver,", as well as other effects such as Shifta and Deband. <yellow>Main Class only."
 SkillExplanation,1,PetStandHarmony,and Alter Ego is active. <yellow>This skill can only be used with a Main Class.
@@ -8180,7 +8180,7 @@ SkillExplanation,1,VillainTecShortCharge,"Reduce la potencia de las técnicas, p
 SkillExplanation,1,VillainMag,Agrega un porcentaje de la destreza de tu Mag equipado al ataque total.
 SkillExplanation,1,VillainPhotonStream1,Otorga una bonificación de daño basada en tu PP máximo (con límite).
 SkillExplanation,1,VillainStepDash,Realizar una acción de movimiento durante un paso lateral (dodge) activa un dash.
-SkillExplanation,1,VillainFirstBlood,Añade un bono de primer ataque. No afecta a Técnicas. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainFirstBlood,Convierte los ataques iniciales y los ataques realizados después de una acción de arma en ATK perfectos. No afecta las Técnicas. <yellow>Esta habilidad solo se puede<br>usar con una clase principal.
 SkillExplanation,1,VillainChargeTechJA,Convierte las técnicas cargadas en Ataques Perfectos tras un tiempo de reutilización.
 SkillExplanation,1,VillainPPRestraint,Aumenta la recuperación de PP y la regeneración automática al golpear con ataques normales.
 SkillExplanation,1,VillainLoadOfThorn,Potencia el daño de las detonaciones de marcador. <yellow>Solo Clase Principal.
@@ -8205,15 +8205,15 @@ SkillExplanation,1,MasterAirReversal,Permite realizar una recuperación rápida 
 SkillExplanation,1,MasterDushJump,Saltar durante una esquiva activa un salto con impulso.
 SkillExplanation,1,MasterStepJACombo,Permite aplicar el tiempo de Ataque Perfecto durante un paso lateral.
 SkillExplanation,1,MasterJustReversalJACombo,Permite aplicar el tiempo de Ataque Perfecto tras una recuperación perfecta.
-SkillExplanation,1,MasterFirstBlood,Añade bono de primer ataque. No afecta a Técnicas. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterFirstBlood,Convierte los ataques iniciales y los ataques realizados después de una acción de arma en ataques perfectos. No afecta las Técnicas. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal.
 SkillExplanation,1,MasterNextJump,Permite realizar un segundo salto.
 SkillExplanation,1,MasterStep,Permite un desplazamiento rápido mediante pasos hábiles.
-SkillExplanation,1,MasterAxel,Habilidad de movimiento rápido con Double Saber. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterAxel,Muévete suavemente una distancia fija esquivando nuevamente en medio de un paso lateral mientras tienes un Double Sabre equipado. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal.
 SkillExplanation,1,MasterWeaponBonus1,Aumenta la potencia al equipar un arma de clase Étoile. <yellow>Solo Clase Principal.
 SkillExplanation,1,MasterWeaponBonus2,Aumenta la potencia al equipar un arma de clase Étoile. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterDoublesaverGear,Consume 1 carga de enfoque para desatar un ataque poderoso. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterDualbladeGear,Inicia una conexión completa de Photon Blades. <yellow>Solo Clase Principal.
-SkillExplanation,1,MasterWandGear,Ejecuta un ataque proporcional al enfoque consumido. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterDoublesaverGear,Gasta 1 carga del indicador de enfoque cuando te golpean para reducir el daño recibido. Mantén presionado el ataque normal para usar 1 carga del indicador de enfoque<br>y desatar un ataque poderoso. <yellow>Utilizable sólo por una clase principal.
+SkillExplanation,1,MasterDualbladeGear,Gasta una carga del indicador de enfoque para iniciar una conexión. Gastar otro cargo iniciará una Conexión completa. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal.
+SkillExplanation,1,MasterWandGear,"Mantén presionada la acción del arma para usar el indicador de enfoque y habilitar una P. Guard extendida. Seguirá un ATK fuerte, proporcional al enfoque<br>utilizado. <yellow>Utilizable sólo por una clase principal."
 SkillExplanation,1,MasterMag,"Convierte el total de stats de tu Mag en ataque cuerpo a cuerpo, a distancia y técnico."
 SkillExplanation,1,MasterDSaberSkipArts,"Cuando tienes un Double Sabre equipado, usar un Photon Art sin ninguna entrada direccional te saltará la primera mitad del Photon Art. <yellow>Esta habilidad solo puede ser utilizada<br>por una Clase Principal."
 SkillExplanation,1,MasterDSaberBlink,Permite teletransportarse durante ataques para moverse a alta velocidad. <yellow>Solo Clase Principal.
@@ -8343,13 +8343,13 @@ SkillExplanation,1,RangerWeakBulletLauncher,Permite usar Blight Rounds con lanza
 SkillExplanation,1,RangerGaugeShotGunPlus,Transforma Spread Shot en ataque de área frontal. <yellow>Solo Clase Principal/Rifle.
 SkillExplanation,1,RangerClusterBombEscape,Invulnerabilidad al usar acción de arma con lanzador.
 SkillExplanation,1,HunterSwordParryingAuto,"Una vez que hayas cargado un arte de fotones durante un cierto período de tiempo, ser golpeado por un enemigo hará que el arte de fotones se libere con Hunter Arts<br>Avenger aplicado. <yellow>*Solo puede ser utilizado por una clase principal/espada.<c>"
-SkillExplanation,1,HunterParryingPaJustGuardEscape,Permite Perfect Parry en artes. <yellow>Solo Clase Principal/Hunter.
-SkillExplanation,1,ForceStayReflectCounterShot,Acumula balas elementales tras esquiva. <yellow>Solo Clase Principal/Rod.
+SkillExplanation,1,HunterParryingPaJustGuardEscape,Confiere un período de invulnerabilidad adicional a una parada perfecta de Hunter Arts<br>exitosa. <yellow>*Solo puede ser utilizado por armas de clase principal/cazador.<c>
+SkillExplanation,1,ForceStayReflectCounterShot,"Si te abstienes de atacar o esquivar después de usar una técnica, acumularás balas elementales. <yellow>*Solo<br>puede ser utilizado por una clase principal/varilla.<c>"
 SkillExplanation,1,BouncerZanWindBall,"Golpear a un enemigo con un viento descargado La<br>técnica colocará un vórtice. Golpear eso con una<br>técnica cargada del mismo elemento activa el<br>vórtice, provocando ataques adicionales. El tipo<br>de ataques causados por el vórtice. cambiar<br>dependiendo de la técnica que utilices. golpear<br>con."
 SkillExplanation,1,BouncerGrantzCharge,"Golpear a un enemigo varias veces con una luz<br>La técnica hará que estés temporalmente rodeado<br>por un halo. Mientras está activo, usando Las<br>técnicas ligeras provocarán ataques<br>adicionales. dependiendo de la técnica.<br>Activando otro halo mientras uno ya esté activo<br>no causará el efecto se acumula, pero en su<br>lugar restablecerá el duración del efecto del<br>ya activo."
 SkillExplanation,1,BouncerMegidoCharge,"Cuando golpeas a un enemigo con Dark<br>descargado Técnicas, puedes almacenar hasta 3<br>orbes oscuros. Usar una Técnica Oscura cargada<br>consumirá todos los orbes y aumentar el poder<br>de ese técnica en una cantidad correspondiente<br>a cómo muchos estaban abastecidos."
 SkillExplanation,1,HunterWarCry,<yellow>[Habilidad activa]<c> Llama la atención de los<br>enemigos cercanos durante un tiempo. tiempo<br>establecido. Los enemigos a los que golpeas<br>tienen más probabilidades de apuntarte.<br><yellow>*Solo puede ser utilizado por una clase<br>principal.<c>
-SkillExplanation,1,HunterIronWill,Evita ser derrotado (oportunidad de sobrevivir). <yellow>Solo Clase Principal.
+SkillExplanation,1,HunterIronWill,Un ataque incapacitante te dejará con 1 HP y un momento de invulnerabilidad cuando se active esta habilidad.<br><yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,HunterMassiveHunter,<yellow>[Habilidad activa]<c> Reduce temporalmente el daño recibido y evita que los ataques enemigos te lancen o<br>te derriben.
 SkillExplanation,1,HunterSwordGuardCounterPlus,Contraataque adicional tras Sword Guard.
 SkillExplanation,1,RangerWeakBullet,Dispara una bala que aumenta el daño en la parte impactada. <yellow>Solo Clase Principal/Rifle.
@@ -8374,7 +8374,7 @@ SkillExplanation,1,TechterShiftaDeband,<yellow>[Habilidad activa]<c> Aumenta el 
 SkillExplanation,1,TechterPartyAssist,Buffs automáticos de Shifta/Deband. <yellow>Solo Clase Principal.
 SkillExplanation,1,TechterWandElementChange,Cambia el elemento de la varita según la técnica. <yellow>Solo Varita.
 SkillExplanation,1,TechterWandElementDiscard,Mantén presionado el botón de acción del arma para revertir los cambios elementales aplicados a Photonic Fury<br>mediante el cambio de elemento de varita. <yellow>*Solo se puede usar con una varita.<c>
-SkillExplanation,1,TechterHeal,Cura a aliados cercanos. <yellow>Solo Clase Principal.
+SkillExplanation,1,TechterHeal,Aumenta la cantidad de salud recuperada cuando usas Restasigne y también cura a los personajes<br>cercanos. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,FighterKnuckleAttackExtra,Combos extendidos con Knuckles.
 SkillExplanation,1,ForceMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
 SkillExplanation,1,TechterMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
@@ -8520,14 +8520,14 @@ SkillExplanation,1,BraverBowReinForce,"Aumenta un indicador cuando un enemigo es
 SkillExplanation,1,BouncerDBladeStepCounterExtend,Realizar un ataque normal después de esquivar con éxito una acción de arma cambiará tu contador de pasos laterales a una<br>carga. <yellow>*Solo cuchillas elevadas.<c>
 SkillExplanation,1,BouncerTecArtsSkipAttack,"Después de usar diferentes Photon Arts sucesivamente, el Ataque Normal cambia a un ataque poderoso tratado como<br>tercera etapa. <yellow>*Solo se puede usar con Jet Boots.<c>"
 SkillExplanation,1,SummonerTwoPlatoonsMarmeloPlus,"Mientras Familiar Harmony está activo, si el indicador de Marmelo está en la Etapa 1 o superior, Marmelo realiza un ataque adicional y<br>consume 1 carga. <yellow>*Solo se puede utilizar con una clase principal/armonizador.<c>"
-SkillExplanation,1,SlayerGearOverTimeAfterAmplify,Efecto residual tras finalizar el Focus Overdrive. <yellow>Solo Clase Principal/Gunblade.
+SkillExplanation,1,SlayerGearOverTimeAfterAmplify,La tasa de carga del indicador Gunblade Focus aumenta temporalmente después de que los efectos de Gunblade Focus<br>Overdrive hayan terminado. <yellow>*Solo se puede usar con una clase principal/Gunblade.<c>
 SkillExplanation,1,BraverNoTargetBossAtpUp,Aumenta daño de PA a jefes que no te fijan. <yellow>Solo Clase Principal/Arcos.
 SkillExplanation,1,RangerNoTargetBossAtpUp,Aumenta daño de PA a jefes que no te fijan. <yellow>Solo Clase Principal/Ranger.
 SkillExplanation,1,GunnerNoTargetBossAtpUp,Aumenta daño de PA a jefes que no te fijan. <yellow>Solo Clase Principal/Artillero.
 SkillExplanation,1,ForceNoTargetBossAtpUp,Aumenta daño técnico/PA a jefes que no te fijan. <yellow>Solo Clase Principal/Force.
 SkillExplanation,1,TechterNoTargetBossAtpUp,Aumenta daño técnico/PA a jefes que no te fijan. <yellow>Solo Clase Principal/Talis.
 SkillExplanation,1,HunterPartisanVolgraptorShortRecast,"Reduce el tiempo de recuperación de Volkraptor cuando niegas con éxito un ataque. Sin embargo, existe un límite<br>en cuanto a cómo muchas veces se puede reducir el tiempo de recuperación. <yellow>*Solo se puede usar con una clase<br>principal/partidista<c>"
-SkillExplanation,1,ForceReflectCounterShot,Dispara una bala fotónica elemental tras una esquiva. <yellow>Solo varas.
+SkillExplanation,1,ForceReflectCounterShot,"Después de negar con éxito un ataque, la siguiente técnica que uses también disparará una bala fotónica del mismo<br>elemento. <yellow>*Solo se puede usar con una varilla.<c>"
 SkillExplanation,1,ArsenalModule,"La batería se carga con el tiempo, lo que le permite<br>convocar MARTE una vez que alcance el 25% o más.<br>Presionando el botón nuevamente mientras M.A.R.S. está<br>equipado lo desequipará."
 SkillExplanation,1,RangerLauncherWeakBulletExtend,"Cuando una bomba adhesiva aplicada con una acción de arma explota, o un impacto divino o un borrador de miedo cargado golpea a un enemigo, el tiempo efectivo de cualquier bala de plaga activa<br>que hayas disparado contra ese enemigo se reinicia. <yellow>*Clase principal/Lanzadores solamente<c>"
 SkillExplanation,1,GunnerChainFinishPartyPPGain,Recuperación de PP para el grupo basada en el número de cadena. <yellow>Solo Clase Principal/Machine Guns.
@@ -10186,9 +10186,9 @@ ClassCounter,1,SkillTreeResetAllAsk,r>permitiéndote reasignar tus puntos de hab
 ClassCounter,1,SkillTreeResetAllSuccess,Se han reiniciado todos los árboles de habilidades. <br>No olvides reasignar tus puntos de habilidad.
 ClassCounter,1,SkillTreeResetAllFailed,Error al restablecer todos los árboles de habilidades. <br>Espere un momento y vuelva a intentarlo.
 ClassCounter,1,SkillTreeResetAllFailedNG,No se puede realizar un reinicio porque<br>no posees [N-Restablecer todas las habilidades].
-ClassCounter,1,ClassSelectExplain,"e Skill Trees, you can choose the one you want to set with the [Select Skill Tree] option.<c>"
+ClassCounter,1,ClassSelectExplain,"<c f0df60>Puedes cambiar tu clase actual a través de la opción [Seleccionar clase]. Si tiene varios árboles de habilidades, puede elegir el que desea configurar con la opción<br>[Seleccionar árbol de habilidades].<c>"
 ClassCounter,1,ClassSelectExplain_v,"Guarde varios árboles de habilidades, elija uno con [Seleccionar árbol de habilidades]. <c>"
-ClassCounter,1,SkillTreeAddPath,¿Deseas proceder a la pantalla de <br><yellow>Confirmación de compra de Adición de Árbol de Habilidades N<c>? <br><br>(Actualmente tienes: $(1))
+ClassCounter,1,SkillTreeAddPath,<pict Arcscash><c ff4f3f>AC Pago requerido<c> Esto agregará un<br>árbol de habilidades $(0). ¿Está seguro<br>de que desea continuar con el <yellow>Adición<br>al árbol de N-habilidades<c> ¿Pantalla de<br>confirmación de compra?<br><br>(Actualmente tienes: $(1))
 ClassCounter,1,SkillTreeAddTicket,¿Deseas utilizar un <yellow>Adición de Árbol de Habilidades N<c> para <br>agregar un árbol de habilidades $(0)?<br><br>(Actualmente tienes: $(1))
 ClassCounter,1,SkillTreeResetPath,<pict Arcscash><c ff4f3f>Se requiere pago con AC<c><br>¿Estás seguro de que deseas continuar a la<br><yellow>pantalla de confirmación de compra<c><br>para cambiar a la rama de habilidades adicional?<br><br>Restablecer y mover: Rama de habilidades $(1)<br>A: Rama de habilidades $(0)<br>(Actualmente tienes: $(2))
 ClassCounter,1,SkillTreeResetPathSG,<pict StarGem><c 1dedd7>Se requiere pago en SG<c><br>¿Seguro que deseas continuar a la<br><yellow>pantalla de confirmación de compra<c><br>para cambiar a un árbol de habilidades adicional?<br><br>Restablecer y mover: Árbol de habilidades $(1)<br>Al árbol de habilidades: $(0)<br>(Actualmente tienes: $(2))
@@ -10665,7 +10665,7 @@ Profile,1,ErrorMessageDBError,No se pudo completar el procesamiento<br>debido a 
 Profile,1,ErrorMessageUnknown,No se pudo completar el procesamiento<br>debido a un error.<br><br> [No. 1037]
 Profile,1,ErrorMessageNgWordTitle,No se puede agregar debido a que se detectó una combinación<br>inapropiada de títulos.
 Profile,1,ErrorMessageNgWordComment,Una parte del texto se cambió debido a que se detectó texto<br>inapropiado en la Configuración de comentarios.
-Profile,1,ErrorMessageNgWordTitle_Comment,n del texto se cambió debido a que se detectó texto<br>inapropiado en la Configuración de comentarios.
+Profile,1,ErrorMessageNgWordTitle_Comment,No se puede agregar debido a una información<br>inapropiada. combinación de títulos que se detecta.<br><br>Una parte del texto fue cambiada debido a información<br>inapropiada. texto que se detecta en la Configuración<br>de comentarios.
 Profile,1,CloseText,Cerca
 Profile,1,WishListRegisterFormTitle,AÑADIR A LA LISTA DE DESEOS
 Profile,1,PresentListRegisterFormTitle,AÑADIR A LA LISTA DE REGALOS
@@ -10887,7 +10887,7 @@ Trade,1,OfferTradeTitle,SOLICITUD COMERCIAL ENVIADA
 Trade,1,OfferTradeMessage,Enviaste una solicitud comercial.<br>Esperando la respuesta del otro jugador...
 Trade,1,CantTradeMsg,No puedes operar con $(0).
 Trade,1,CantTradeByRangeMsg,El jugador que seleccionaste está fuera del rango comercial.
-Trade,1,CantTradeByNoRightMsg,"Tenga un conjunto premium,<br>compre uno visitando la tienda AC<br>en el menú principal."
+Trade,1,CantTradeByNoRightMsg,"Ambos jugadores deben ser <yellow>Usuarios Premium<c> para poder<br>comerciar.<br><br>Si no tienes un Conjunto Premium, compre uno<br>visitando el AC Compra en el Menú Principal."
 Trade,1,CantTradeByBeOfferingMsg,No puedes proponer un intercambio mientras una<br>solicitud de intercambio enviada por un jugador diferente<br>todavía esté activa.
 Trade,1,CantTradeByOppTradingMsg,No se puede enviar una propuesta comercial porque $(0) se está negociando actualmente.
 Trade,1,CancelOfferMsg,Solicitud comercial cancelada.
@@ -11905,8 +11905,8 @@ Synchronize,1,PaidErrorInsufficient1,"No tienes los elementos especificados a co
 Synchronize,1,PaidErrorInsufficient2,Los elementos anteriores son necesarios para comenzar la misión.
 Synchronize,1,PaidErrorBonusGame,No se puede localizar una clave vigente en su inventario.
 Synchronize,1,PaidTitle,PUERTA DE SALIDA
-Synchronize,1,PaidLeaderMessage,especificado en la lista actual<br>[Elementos requeridos].<br><br> ¿Está seguro de que desea continuar?
-Synchronize,1,PaidMemberMessage,especificado en la lista actual<br>[Elementos requeridos].<br><br> ¿Está seguro de que desea continuar?
+Synchronize,1,PaidLeaderMessage,"Si se selecciona [El líder paga por todos], el líder del<br>partido necesitará la cantidad de elementos especificados<br>en el actual Lista [Elementos requeridos].<br><br>¿Está seguro de que desea continuar?"
+Synchronize,1,PaidMemberMessage,Estás a punto de gastar los [Artículos requeridos]<br>para comenzar la búsqueda. No recibirás estos<br>artículos Volver si abandonas la misión o te<br>desconectas. desde el servidor. ¿Está seguro de<br>que desea continuar?
 Synchronize,1,PaidMemberMessage2,Estás a punto de gastar los [Artículos requeridos]<br>para comenzar la búsqueda. No recibirás estos<br>artículos Volver si abandonas la misión o te<br>desconectas. desde el servidor. ¿Está seguro de<br>que desea continuar?<br><br>Etapa seleccionada: $(0)
 Synchronize,1,PaidBonusGameMessage,"Necesitarás gastar el siguiente artículo para<br>comenzar la búsqueda:<br>[[ETIQUETA0]][[ETIQUETA2]][[ETIQUETA1]]<br><br>Precaución: si abandonas la misión o te<br>desconectas desde el servidor, cualquier<br>elemento o misión comienza Las autorizaciones<br>utilizadas no le serán devueltas. ¿Quieres<br>comenzar la búsqueda?"
 Synchronize,1,PaidButtonYes,Confirmar
@@ -11932,7 +11932,7 @@ Synchronize,1,EternalFloorChange,Etapa de cambio
 Synchronize,1,PaidLeaderMessage2,"Si se selecciona [El líder paga por todos], el<br>partido El líder necesitará la cantidad de elementos<br>especificados. en la lista actual de [Elementos<br>requeridos].<br><br><c ffff00>[Aumento del nivel de amenaza AQ]<c> El líder puede<br>aumentar su propio nivel de amenaza AQ. agregando<br>una Cápsula Anticipada como parte del pago.<br><br>Cuando el nivel de amenaza AQ aumenta, los enemigos<br>volverse más fuerte y la tasa de generación de raros<br>Los enemigos en el área final aumentan.<br><br>Para aumentar el riesgo en 1 para esta misión, Se<br>necesitarán $(1) $(0)."
 Synchronize,1,PaidMemberMessage3,"Debes pagar los [Artículos requeridos] para poder<br>comenzar la búsqueda. Tenga en cuenta que los artículos<br>anteriores no serán devueltos. si abandonas la misión o<br>te desconectas del servidor.<br><br><c ffff00>[Aumento del nivel de amenaza AQ]<c> El líder puede<br>aumentar su propio nivel de amenaza AQ. agregando una<br>Cápsula Anticipada como parte del pago.<br><br>Cuando aumenta el nivel de amenaza de AQ, los enemigos<br>se vuelven más fuerte y la tasa de generación de<br>enemigos raros en el El área final aumenta.<br><br>Para aumentar el riesgo en 1 para esta misión, Se<br>necesitarán $(1) $(0)."
 Synchronize,1,AdvanceRiskMessage,"Puede aumentar el nivel de amenaza AQ al añadiendo<br>$(2) $(0)(s). ¿Está seguro de que desea continuar?<br><br><c ffff00>Hay un límite máximo en el nivel de amenaza AQ. para<br>cada personaje, y el nivel de amenaza AQ no puede ser<br>aumentó más allá de este umbral.<br><br>Nota: Si su líder cambia después de haber aceptado la<br>misión, existe el riesgo de que la misión y el<br>personaje Los niveles de amenaza de AQ ya no serán los<br>mismos.<c> (Tus $(1)s: $(3))"
-Synchronize,1,PaidSelectMessage2,"Para comenzar esta misión, cada miembro del grupo debe pagar el<br>elementos de la lista [Elementos requeridos] individualmente, o<br>el El líder debe pagar colectivamente en nombre de todos los<br>miembros.<br><br>Nota: Si abandonas la misión o tu conexión con el El servidor<br>se pierde durante la misión, los artículos gastados no serán<br>devueltos.<br><br>¿Cómo le gustaría pagar?<br><br><c ffff00>Es posible aumentar el AQ del líder del partido Nivel de<br>amenaza pagando [Artículos requeridos] adicionales una vez<br>seleccionado un método de pago.<br><br>Tenga en cuenta, sin embargo, que dichos artículos sólo puede<br>ser pagado por el líder del partido.<c>"
+Synchronize,1,PaidSelectMessage2,"Para comenzar esta misión, cada miembro del grupo debe pagar el<br>elementos de la lista [Elementos requeridos] individualmente, o<br>el El líder debe pagar colectivamente en nombre de todos los<br>miembros.<br><br>Nota: Si abandonas la misión o tu conexión con el El servidor<br>se pierde durante la misión, los artículos gastados no serán<br>devueltos.<br><br>¿Cómo le gustaría pagar?<br><br><c ffff00>Es posible aumentar el AQ del líder del partido Nivel de<br>amenaza pagando [Artículos requeridos] adicionales una vez<br>seleccionado un método de pago.<br><br>Tenga en cuenta, sin embargo, que dichos artículos sólo puede<br>ser pagado por el líder del Grupo.<c>"
 Synchronize,1,AdvanceRiskTitle1,AUMENTAR EL NIVEL DE AMENAZA DE AQ
 Synchronize,1,AdvanceRiskTitle2,NIVEL DE AMENAZA DE AQ
 Synchronize,1,AdvanceRiskTitle3,CÁPSULAS ADVANCE ADICIONALES
@@ -12031,9 +12031,9 @@ Synchronize,1,ArmadaBootup,¿Está seguro de que desea implementar?
 Synchronize,1,SynchronizeArmadaTitle,Dispositivo de control de secuencia de lanzamiento
 Synchronize,1,SynchronizeArmadaInaccessible,Preparación del dispositivo de control de secuencia de lanzamiento en curso.<br>Espere un momento antes de volver a intentar el acceso.
 Synchronize,1,ArmadaMessage1Exc,Preparación del dispositivo de control de secuencia de lanzamiento en curso.<br>Espere un momento antes de volver a intentar el acceso.
-Synchronize,1,ArmadaMessage2Exc,<br>deployed after a set time.<br>Would you like to stop the deployment sequence?
-Synchronize,1,ArmadaMessage1,<br>deployed after a set time.<br>Would you like to stop the AIS boarding sequence?
-Synchronize,1,ArmadaMessage2,<br>deployed after a set time.<br>Would you like to stop the deployment sequence?
+Synchronize,1,ArmadaMessage2Exc,La secuencia de embarque AIS ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegado después de un tiempo determinado. ¿Le<br>gustaría detener la secuencia de embarque AIS?
+Synchronize,1,ArmadaMessage1,La secuencia de despliegue ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegado después de un tiempo determinado.<br>¿Le gustaría detener la secuencia de<br>implementación?
+Synchronize,1,ArmadaMessage2,La secuencia de embarque AIS ha sido activada.<br>Los miembros del grupo en el hangar serán<br>desplegado después de un tiempo determinado. ¿Le<br>gustaría detener la secuencia de embarque AIS?
 Synchronize,1,ArmadaRemove1,Termine la secuencia de implementación.
 Synchronize,1,ArmadaRemove2,Terminar la secuencia de embarque.
 Synchronize,1,ArmadaQuestGoto2,Secuencia de embarque AIS activada. Ingrese al hangar dentro del tiempo asignado.
@@ -12212,10 +12212,10 @@ TeamBoost,1,TeamBoost_TreatForm_Water_Medium,Una cantidad moderada
 TeamBoost,1,TeamBoost_TreatForm_Water_Low,Una cantidad bastante pequeña
 TeamBoost,1,TeamBoost_TreatForm_Water_Min,Una cantidad minúscula
 TeamBoost,1,TeamBoost_TreatForm_Water_Full_Message,Agua de fotones.<br>(Puntos Alliance actuales: $(0))<br>¿Está seguro de que desea continuar?
-TeamBoost,1,TeamBoost_TreatForm_Water_High_Message,Agua de fotones.<br>(Puntos Alliance actuales: $(0))<br>¿Está seguro de que desea continuar?
-TeamBoost,1,TeamBoost_TreatForm_Water_Medium_Message,f Photon Water.<br>(Current Alliance Points: $(0))<br>Are you sure you wish to proceed?
-TeamBoost,1,TeamBoost_TreatForm_Water_Low_Message,de agua fotónica.<br>(Puntos Alliance actuales: $(0))<br>¿Está seguro de que desea continuar?
-TeamBoost,1,TeamBoost_TreatForm_Water_Min_Message,Agua de fotones.<br>(Puntos Alliance actuales: $(0))<br>¿Está seguro de que desea continuar?
+TeamBoost,1,TeamBoost_TreatForm_Water_High_Message,Estás a punto de utilizar $(1) Puntos de<br>Alianza para darle al árbol una cantidad<br>considerable de agua fotónica. (Puntos de<br>alianza actuales: $(0)) ¿Está seguro de<br>que desea continuar?
+TeamBoost,1,TeamBoost_TreatForm_Water_Medium_Message,Estás a punto de utilizar $(1) Puntos de<br>Alianza para darle al árbol un moderado<br>cantidad de agua fotónica. (Puntos de<br>alianza actuales: $(0)) ¿Está seguro de<br>que desea continuar?
+TeamBoost,1,TeamBoost_TreatForm_Water_Low_Message,Estás a punto de utilizar $(1) Puntos de<br>Alianza para darle al árbol un aspecto<br>más bien pequeño cantidad de agua<br>fotónica. (Puntos de alianza actuales:<br>$(0)) ¿Está seguro de que desea<br>continuar?
+TeamBoost,1,TeamBoost_TreatForm_Water_Min_Message,Estás a punto de utilizar $(1) Puntos de<br>Alianza para darle al árbol una minúscula<br>cantidad de agua fotónica. (Puntos de<br>alianza actuales: $(0)) ¿Está seguro de<br>que desea continuar?
 TeamBoost,1,TeamBoost_TreatForm_Water_Message,Diste $(0) de Photon Water.
 TeamBoost,1,TeamBoost_GrowForm_Title,SELECCIONAR EFECTO DE CULTIVO
 TeamBoost,1,TeamBoost_GrowForm_Tag_Name,Nombre del efecto
@@ -12229,7 +12229,7 @@ TeamBoost,1,TeamBoost_Error_Unknown,No se puede completar la selección debido a
 TeamBoost,1,TeamBoost_Error_NotMember,No se puede completar la selección porque<br>no eres miembro de la alianza.<br>Verifique su afiliación de alianza actual.
 TeamBoost,1,TeamBoost_Error_NoPrivilege,No puedo completar la selección porque usted<br>no tiene derechos de oficial.<br>Por favor verifique su posición actual dentro de la alianza.
 TeamBoost,1,TeamBoost_Error_LevelMismatch,Es posible que otro miembro de la alianza<br>ya haya subido de nivel. Confirme el nivel<br>del elemento seleccionado.
-TeamBoost,1,TeamBoost_Error_Water_Max,"Otro miembro ya ha<br>dado Photon Water, así que verifique el estado del<br>Photon Tree."
+TeamBoost,1,TeamBoost_Error_Water_Max,"Estás intentando dar más Photo Water de lo<br>permitido.<br><br>Es posible que otro miembro ya haya dado<br>Photon Water, así que verifique el Estado del<br>árbol de fotones."
 TeamBoost,1,TeamBoost_Error_NotEnough,Puntos de alianza insuficientes.<br>Por favor verifique su total actual.
 TeamBoost,1,TeamBoost_Error_PortError,No se puede completar la selección debido a un error.<br>Espere un momento y vuelva a intentarlo.<br><br> [No. 1050]
 TeamBoost,1,TeamBoost_Error_DontHave,El efecto fotónico seleccionado no está actualmente<br>activado. Por favor verifique el efecto fotónico.
@@ -12473,7 +12473,7 @@ ItemCode,0,Hint,<c f0df60>16文字のアイテムコードを入力すると、�
 ItemCode,1,Title,ENTER ITEM CODE
 ItemCode,1,Decide,Enviar
 ItemCode,1,Message,"Introduzca un código de artículo.<br><br>Puede recoger su artículo seleccionando Artículos de<br>menú principal y luego cambie el ""Inventario"" en en<br>la parte superior del menú hasta ""OP Team Storage"".<br><br><yellow>Ten en cuenta que tu uso estará restringido hasta el<br>próximo período de mantenimiento si ingresa un valor<br>incorrecto código de artículo diez veces.<c>"
-ItemCode,1,Message_v,Tenga en cuenta que su uso estará restringido<br>hasta el próximo período de mantenimiento si<br>ingresa un código de artículo no válido diez veces. <c>
+ItemCode,1,Message_v,Introduzca un código de artículo.<br><br>Puedes recoger tu artículo seleccionando<br>OP Team Storage en el menú<br>Almacenamiento.<br><br><yellow>Ten en cuenta que tu uso estará<br>restringido hasta el próximo período de<br>mantenimiento si ingrese un código de<br>artículo no válido diez veces.<c>
 ItemCode,1,ItemGetMessage,Recibido $(0).
 ItemCode,1,ItemGetMessage_Num,Recibido $(0) × $(1).
 ItemCode,1,ItemGetMessage_Red,Recibido<light_red2>$(0) <c>
@@ -13732,10 +13732,10 @@ Esthetic,1,Remake_ErrorDB,El reinicio auxiliar falló debido a un error de la ba
 Esthetic,1,Remake_Error,No se puede restablecer su auxiliar.
 Esthetic,1,Cast_color,Seleccionar color
 Esthetic,1,Item_EnterConfirmMessage,"No se podrán recibir notificaciones dentro del salón,<br>ni dentro del juego."
-Esthetic,1,Item_EnterConfirmMessage2,No se recibirán notificaciones dentro del juego.<br><br> Estado de uso del pase de salón<br>Tiempo de edición restante: $(0)
+Esthetic,1,Item_EnterConfirmMessage2,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de salón Tiempo de edición<br>restante: $(0)"
 Esthetic,1,Item_EnterConfirmMessage3,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de cambio de color<br>Elementos que se están reeditando: <yellow>$(0)<c><br>[[ETIQUETA2]][[ETIQUETA7]][[ETIQUETA3]] Tiempo de<br>edición restante: <yellow>$(1)<c>"
 Esthetic,1,Item_EnterConfirmMessage4,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de salón Tiempo de edición<br>restante: $(1) Estado de uso del pase de cambio<br>de color Elementos que se están reeditando: <yellow>$(0)<c><br>[[ETIQUETA2]][[ETIQUETA8]][[ETIQUETA3]] Tiempo de<br>edición restante: <yellow>$(1)<c>"
-Esthetic,1,Item_EnterConfirmMessage5,No se recibirán notificaciones dentro del juego.<br><br>Estado de creación del personaje<br>Tiempo de edición restante: $(0)
+Esthetic,1,Item_EnterConfirmMessage5,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de creación del personaje Tiempo de<br>edición restante: $(0)"
 Esthetic,1,Item_EnterConfirmMessage6,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de creación del personaje Tiempo de<br>edición restante: $(1) Estado de uso del pase de<br>cambio de color Elementos que se están<br>reeditando: <yellow>$(0)<c><br>[[ETIQUETA2]][[ETIQUETA8]][[ETIQUETA3]] Tiempo de<br>edición restante: <yellow>$(1)<c>"
 Esthetic,1,Esthetic_CampaignTimeHead,Período de campaña
 Esthetic,1,Esthetic_CampaignTime,Hasta $(0)
@@ -15135,7 +15135,7 @@ MySet,1,MySetMessage02,r>contenido de [Loadout $(0) $(1)].<br>¿Está seguro de 
 MySet,1,MySetMessage03,Estás a punto de cambiar el nombre de [Loadout $(0) $(1)].<br>Ingrese un nuevo nombre.
 MySet,1,MySetMessage04,Estás a punto de eliminar [Loadout $(0) $(1)].<br>¿Está seguro de que desea continuar?
 MySet,1,MySetMessage05,t clase y estado del equipo.<br>¿Está seguro de que desea continuar?
-MySet,1,MySetMessage06,<br><yellow>Nota: El nombre del equipamiento no cambiará. <c><br>¿Está seguro de que desea continuar?
+MySet,1,MySetMessage06,Estás a punto de sobrescribir [Loadout $(0)<br>$(1)] con su clase actual y estado del equipo.<br><yellow>Nota: El nombre del Loadout no cambiará.<c> ¿Está<br>seguro de que desea continuar?
 MySet,1,MySetMessage07,Estás a punto de guardar tu clase actual<br>y el estado del equipo en [Loadout $(0)].<br>¿Está seguro de que desea continuar?
 MySet,1,Error,Error de carga
 MySet,1,RenameError01,El nombre especificado no se puede utilizar.
@@ -15192,7 +15192,7 @@ Seteffect,0,Set_Message_3,このアイテムにはセット効果がありませ
 Seteffect,1,Title,Conjunto de equipo
 Seteffect,1,OtherTitle,Otros ajustes de configuración
 Seteffect,1,Set_Message_1,Este elemento producirá un efecto establecido cuando<br>esté equipado en la posición<yellow>$(0) <c>.
-Seteffect,1,Set_Message_2,")<c>.<br>Cuanto menor sea el número de posiciones equipadas,<br>menor será el aumento en las estadísticas correspondientes."
+Seteffect,1,Set_Message_2,"Este elemento producirá un efecto establecido cuando<br>equipado en cualquier lugar desde la <yellow>Posición $(1)<br>hasta la Posición $(0)<c>. Cuanto menor sea el número de<br>puestos equipados, cuanto menor sea el aumento en las<br>estadísticas correspondientes."
 Seteffect,1,Set_Message_3,Este elemento no produce un efecto establecido.
 PartyMaker,0,WindowTitle1,募集情報入力メニュー
 PartyMaker,0,TitleText1,クエストの設定
@@ -15283,7 +15283,7 @@ PartyMaker,1,Titlehead6,Poder de batalla
 PartyMaker,1,Titlehead7,Lv. Restricciones
 PartyMaker,1,Titlehead8,o mayor
 PartyMaker,1,Titlehead9,Sí
-PartyMaker,1,PartyMakerMessage3,"r está en una habitación diferente, será transferido a esa habitación.<br><br> ¿Está seguro de que desea continuar?"
+PartyMaker,1,PartyMakerMessage3,"Estás a punto de unirte al grupo de <yellow>$(0)<c>. <yellow>(Tamaño del grupo: $(1)/4)<c><br><br>Si el reclutador está en una sala diferente, usted será transferido a esa<br>sala.<br><br>¿Está seguro de que desea continuar?"
 PartyMaker,1,WindowTitle2,Confirmar unirse al grupo
 PartyMaker,1,TitleText2,Comentarios
 PartyMaker,1,TitleText3,Poder de batalla
@@ -15694,7 +15694,7 @@ SG,1,SGItemName9,Nombre del producto 9
 SG,1,JumpSGShopTitle,¿MOVER A LA PANTALLA DE COMPRA DE GEMAS ESTRELLA?
 SG,1,JumpSGShopMessage,Actualmente no tienes suficientes Star Gems.<br>¿Le gustaría cerrar la pantalla actual y ¿Abre<br>la pantalla “Comprar SG”?
 SG,1,DirectBuyTitle,CONFIRMAR COMPRA DEL ARTÍCULO
-SG,1,DirectBuyMessage,ose the current screen and <br>ope?
+SG,1,DirectBuyMessage,<pict StarGem><c 1dedd7>SG Pago requerido<c><br><br>$(1)<br><br>¿Está seguro de que desea pasar a la pantalla de compra [$(0)]?
 SG,1,DirectBuyConfirmTitle,CONFIRMAR COMPRA DEL ARTÍCULO
 SG,1,DirectBuyConfirmMessage,Está a punto de comprar los siguientes artículos para $(2) SG (normalmente $(3)<br>SG). ¿Está seguro de que desea continuar?<br><br>$(1) La tasa de descuento otorgada puede variar dependiendo del número de<br>compras realizadas.<br><br>(Tu SG: $(0))
 SG,1,DirectBuyResultTitle,RESULTADOS DE LA COMPRA DEL ARTÍCULO
@@ -17267,7 +17267,7 @@ MagMenu,1,Mag_Jukebox_Play_014,Punto final
 MagMenu,1,Mag_Jukebox_Play_015,Avance rápido 15 segundos
 MagMenu,1,Mag_Jukebox_Play_016,Rebobinar 15 segundos
 MagMenu,1,Mag_Jukebox_Play_018,"Necesitas <yellow>descargar datos adicionales de PSO2<c> para jugar ""$(0)"".<br><br>Para obtener más información sobre cómo descargar, consulte la sección Funciones en la página de<br>inicio oficial.<br><br>https://pso2.com/players/manual/gamestart/start/"
-MagMenu,1,Mag_Jukebox_Play_018_PS4,"n sobre cómo descargar, consulte la página de inicio oficial.<br><br> https://pso2.com/players/manual/"
+MagMenu,1,Mag_Jukebox_Play_018_PS4,"Necesitas <yellow>descargar datos adicionales de PSO2<c> para jugar ""$(0)"".<br><br>Para obtener más información sobre cómo descargar, consulte la página de<br>inicio oficial.<br><br>https://pso2.com/players/manual/"
 MagMenu,1,Mag_Jukebox_Play_019,El disco de música seleccionado solo se puede reproducir en NGS Blocks.
 MagMenu,1,Mag_Jukebox_Play_020,"Alguna música del juego, como la que se reproduce<br>durante el evento. escenas, tendrá prioridad cuando<br>se reproduzca.<br><br>No podrás reproducir música desde tu Mag Jukebox<br>mientras suena esta música."
 MagMenu,1,Mag_Jukebox_Play_022,$(0)
@@ -17405,7 +17405,7 @@ RegionMag,1,RMag_Wishlist,Lista de deseos
 RegionMag,1,RMag_Msg1,Seleccione un elemento para insertar en Region Mag. El artículo será consumido.
 RegionMag,1,RMag_Msg2,Insertando el siguiente elemento en Region Mag.<br>¿Estás seguro?
 RegionMag,1,RMag_Msg3,Seleccione un elemento para insertar en Region Mag. El artículo será consumido.
-RegionMag,1,RMag_Msg4,Insertando el siguiente elemento en Region Mag.<br>¿Estás seguro?
+RegionMag,1,RMag_Msg4,"Insertando el siguiente elemento en Region Mag. ¿Está seguro?<br><br><yellow>""R Mag Boost [Personal]"" está activo, por lo que la energía Mag de región<br>no aumentará.<c>"
 RegionMag,1,RMag_Msg5,"El artículo no se puede insertar.<br><yellow> Un ""R Mag Boost [Todos]"" está activo y un ""R Mag Boost<br>[Personal]"" está activo. <c>"
 RegionMag,1,RMag_Msg6,La energía magnética de la región aumentó.
 RegionMag,1,RMag_Msg7,"Artículo insertado en Region Mag.<br><yellow> El cargador ahora está lleno y se ha activado un ""R Mag Boost [Todos]"" <br>. <c>"
@@ -17835,7 +17835,7 @@ Worldmap,1,Personal_Guide_Window_Main_Memo,Escribe una nota (límite de caracter
 Worldmap,1,Personal_Guide_Window_Main_Button1,Colocar $(0)
 Worldmap,1,Personal_Guide_Window_Main_Button2,Quitar el $(0)
 Worldmap,1,Personal_Guide_Window_Main_Title,Puntos de referencia
-Worldmap,1,Personal_Guide_Window_ControlGuide,Quitar el $(0)
+Worldmap,1,Personal_Guide_Window_ControlGuide,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar<br>pestaña: <%TabBack><%TabForward>
 Worldmap,1,World_End_Message,No puede proceder a la ubicación seleccionada.
 Worldmap,1,World_Lock_Message,Entrada al sector no posible
 Worldmap,1,Section_Unlock_Requirement_Maintask,Avanzar en las tareas principales para desbloquear.
@@ -17954,7 +17954,7 @@ Worldmap,1,Window_FasttravelTerminal_9_25,Esta función sólo puede ser utilizad
 Worldmap,1,Window_FasttravelTerminal_9_26,Ha ingresado una<yellow>Sala de fotografías<c>con una palabra clave de sala. Los multipartidos en este sector están restringidos.
 Worldmap,1,Window_FasttravelTerminal_9_27,Ha creado una<yellow>Sala de fotografías<c>con una palabra clave de sala. Los multipartidos en este sector están restringidos.
 Worldmap,1,Window_FasttravelTerminal_9_28,Deshabilitar NPC de asistencia
-Worldmap,1,Window_FasttravelTerminal_9_29,hay espacios abiertos.<br><br><yellow>Esta configuración no se puede cambiar después de crear la sala. <c>
+Worldmap,1,Window_FasttravelTerminal_9_29,Assist NPC es una función donde los NPC se unen<br>automáticamente a ti. para luchar en las salas del Sector<br>de Combate cuando hay espacios abiertos.<br><br><yellow>Esta configuración no se puede cambiar después de crear la<br>sala.<c>
 Worldmap,1,FasttravelTerminal_LineWindow,Ahora puedes teletransportarte a esta ubicación.
 Worldmap,1,FasttravelTerminal_Error1,No puedes hacer eso con enemigos cerca.
 Worldmap,1,Crossing_Title,Explorado:
@@ -19046,7 +19046,7 @@ MySpace,1,MainMenu_MySpace_IndexAllHave,Todo propiedad
 MySpace,1,MainMenu_MySpace_IndexReportCSNameNumber,Nombre del espacio C/Número del espacio C
 MySpace,1,MainMenu_MySpace_ChoiceMoveCSpace,Viaja a este C-Space
 MySpace,1,MainMenu_MySpace_BlockMoveCSpace,Pasando al espacio creativo.<br>¿Estás seguro?
-MySpace,1,MainMenu_MySpace_BlockMoveCSpace_AllShip,"tu barco, esto hará que abandones tu grupo actual.<br>¿Estás seguro?"
+MySpace,1,MainMenu_MySpace_BlockMoveCSpace_AllShip,"Pasando al espacio creativo con Matchmaking en todos los barcos. Si te mudas de tu<br>barco, esto hará que abandones tu grupo actual. ¿Está seguro?"
 MySpace,1,MainMenu_MySpace_BlockMoveTeamSpace,Pasando al Espacio de la Alianza.<br>¿Estás seguro?
 MySpace,1,MainMenu_MySpace_BlockMoveCSpaceError,Texto temporal.<br>No se pudo pasar al espacio creativo.
 MySpace,1,MainMenu_MySpace_Blocklist,Texto tentativo<br>El propietario del espacio al que te mudas está en la lista de bloqueo <br>.
@@ -19057,7 +19057,7 @@ MySpace,1,MainMenu_MySpace_CrossPlaySpaceEnable,r>Es necesario habilitarlo para 
 MySpace,1,MainMenu_MySpace_CrossPlaySpaceReset,"El Espacio Creativo seleccionado es Multiplataforma<br>Interacción habilitada. Para poder trasladarse allí,<br>el Espacio Creativo debe ser <yellow>""reset""<c> y La<br>interacción multiplataforma debe estar<br>deshabilitada. ¿Desactivar ahora?"
 MySpace,1,MainMenu_MySpace_NoticeTeamUnderstaffed,Necesita 4 o más miembros para utilizar Alliance Space.
 MySpace,1,MainMenu_MySpace_TeamSpaceBuyTitle,Comprar espacio de alianza
-MySpace,1,MainMenu_MySpace_TeamSpaceBuyCheck,¿Compra la pantalla?<br><br><yellow>Nota: Necesita 4 o más miembros para poder comprar. <c>
+MySpace,1,MainMenu_MySpace_TeamSpaceBuyCheck,Puedes comprar un Alliance Space adicional con Puntos<br>N-Alliance.<br><br>¿Pasar a la pantalla de compra?<br><br><yellow>Nota: Necesitas 4 o más miembros para poder comprar.<c>
 MySpace,1,MainMenu_MySpace_TeamSpaceBuyPrice,¿Puntos de ance?<br><br> (Puntos N-Alliance actuales: $(0)<pict 4space><pict reb_team> )
 MySpace,1,MainMenu_MySpace_TeamSpaceBuy,Se compró espacio de alianza adicional.
 MySpace,1,MainMenu_MySpace_TeamSpaceBuyNotPoint,No hay suficientes puntos N-Alliance.
@@ -19084,7 +19084,7 @@ MySpace,1,MainMenu_MySpace_ErrMSG,Mensaje
 MySpace,1,MainMenu_MySpace_MoveFailToast,No se puede mover a este espacio creativo.
 MySpace,1,MainMenu_MySpace_BuyCheck,¿Comprar los siguientes artículos por $(2)$(0)?<br>¿Estás seguro?<br><br> (Su aire acondicionado: $(1))
 MySpace,1,MainMenu_MySpace_DirectBuy_Premium,CONFIRMAR COMPRA DEL ARTÍCULO
-MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Premium,<pict Arcscash><scarlet>AC Pago requerido<c> Su derecho a utilizar la función<br>seleccionada ha caducado.<br><br>Debes activar un <yellow>Conjunto Premium<c> para ganar acceso<br>a esta función. ¿Pasar a la pantalla de compra?
+MySpace,1,MainMenu_MySpace_Explanation_PurchaseConfirmation_Premium,<pict Arcscash><scarlet>AC Pago requerido<c><br>Su derecho a utilizar la función<br>seleccionada ha caducado.<br><br>Debes activar un <yellow>Conjunto Premium<c><br>para ganar acceso a esta función. <br>¿Pasar a la pantalla de compra?
 MySpace,1,MainMenu_MySpace_DirectUse_Premium,CONFIRMAR USO DEL ARTÍCULO
 MySpace,1,MainMenu_MySpace_Explanation_ItemUsePremium,"<pict Arcscash><c 5fdf00>Usar artículo comprado anteriormente<c> O no tienes un Conjunto<br>Premium (obligatorio para Premium C-Space), o su acceso ha<br>caducado.<br><br>Utilice un <yellow>Conjunto Premium<c> de su inventario para permitir<br>el uso de ¿Espacio C premium?<br><br><yellow>Nota: Si tienes varios en tu poder, el que agrega se<br>utilizará la mayor cantidad de tiempo.<c><br><br><yellow>Nota: Si desea confirmar qué elemento se utilizará, por<br>favor selecciónalo de tu inventario.<c>"
 MySpace,1,MainMenu_MySpace_DirectBuy_Rental,CONFIRMAR COMPRA DEL ARTÍCULO
@@ -19466,7 +19466,7 @@ AMBackpackExplanation,0,0,<yellow>高機動型のサブ兵装<c><br>移動能力
 AMBackpackExplanation,0,1,<yellow>高耐久型のサブ兵装<c><br>ガード能力や耐久性能を<br>向上させる特性をもつ。<br>自動で支援攻撃も行う。
 AMBackpackExplanation,0,2,<yellow>支援型のサブ兵装<c><br>PP回復能力を向上させ、<br>前方のエネミーの攻撃力を<br>低下させる特性をもつ。<br>自動で支援攻撃も行う。
 AMBackpackExplanation,1,0,<yellow>Armamento secundario de alta movilidad<c><br>Tiene características que mejoran la<br>capacidad de movimiento y el rendimiento de evasión.<br>También realiza ataques de apoyo automáticos.
-AMBackpackExplanation,1,1,<yellow>Armamento secundario de alta durabilidad<c><br>Tiene características que mejoran la<br>capacidad de guardia y el rendimiento de durabilidad.<br>También realiza ataques de apoyo automáticos.
+AMBackpackExplanation,1,1,<yellow>Un subarmamento muy duradero<c> Mejora<br>la guardia y la resistencia.<br>Proporciona ataques de soporte<br>automatizados.
 AMBackpackExplanation,1,2,<yellow>Un armamento secundario de apoyo<c><br>Mejora la recuperación de PP y reduce el poder de ataque<br>de los enemigos que tienes delante.<br>Proporciona ataques de apoyo automáticos.
 AMBackpackName,0,0,SA-1HMP フェンリル
 AMBackpackName,0,1,SA-2HDP ファブニル
