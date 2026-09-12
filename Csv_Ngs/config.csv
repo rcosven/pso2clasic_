@@ -2206,7 +2206,7 @@ ConfigContents,1,Config_015_Hint,Configure el tipo de visualización del menú C
 ConfigContents,1,Config_016_Name,Guardar configuración de fiesta
 ConfigContents,1,Config_016_Choices_0,Ahorrar
 ConfigContents,1,Config_016_Choices_1,No guardar
-ConfigContents,1,Config_016_Hint,"Seleccione si la configuración de la fiesta se<br>guarda cuando cerrar sesión o mover bloques.<br><br><yellow>Nota: La configuración guardada de la fiesta<br>permanece vigente hasta sales del juego.<c><br><br><yellow>Nota: La configuración de contraseña permanece<br>vigente hasta cierras la sesión incluso si<br>seleccionas ""No guardar"".<c>"
+ConfigContents,1,Config_016_Hint,"Seleccione si la configuración del grupo se<br>guarda cuando cerrar sesión o mover bloques.<br><yellow>Nota: La configuración guardada de la fiesta<br>permanece vigente hasta sales del juego.<c><br><yellow>Nota: La configuración de contraseña permanece<br>vigente hasta cierras la sesión incluso si<br>seleccionas ""No guardar"".<c>"
 ConfigContents,1,Config_017_Name,Nombrar grupo al aceptar misiones
 ConfigContents,1,Config_017_Choices_0,Nombre de la misión
 ConfigContents,1,Config_017_Choices_1,Nombre del personaje
@@ -2528,7 +2528,7 @@ ConfigContents,1,Config_Reb_008_Hint,"Seleccione si los videos se reproducirán 
 ConfigContents,1,Config_Reb_008_Select_0,no juegues
 ConfigContents,1,Config_Reb_008_Select_1,Jugar
 ConfigContents,1,Config_Reb_009_Name,Guardar configuración de fiesta/Palabra de emparejamiento
-ConfigContents,1,Config_Reb_009_Hint,"Seleccione si la configuración del grupo/palabras de emparejamiento se guardan temporalmente al cerrar sesión o al<br>transferir entre bloques.<br><br><yellow>Nota: La configuración guardada del grupo/las palabras de emparejamiento permanecen vigentes hasta que salgas del<br>juego.<c><br><br><yellow>Nota: La configuración de contraseña permanece vigente hasta que cierre la sesión, incluso si selecciona ""No guardar"".<c>"
+ConfigContents,1,Config_Reb_009_Hint,"Seleccione si la configuración del grupo/palabras de emparejamiento se guardan temporalmente al cerrar sesión o al<br>transferir entre bloques.<br><yellow>Nota: La configuración guardada del grupo/las palabras de emparejamiento permanecen vigentes hasta que salgas del juego.<c><br><yellow>Nota: La configuración de contraseña permanece vigente hasta que cierre la sesión, incluso si selecciona ""No guardar"".<c>"
 ConfigContents,1,Config_Reb_009_Select_0,No guardar
 ConfigContents,1,Config_Reb_009_Select_1,Ahorrar
 ConfigContents,1,Config_Reb_010_Name,Función de enfoque de eventos
@@ -2830,7 +2830,7 @@ ConfigContents,1,Config_Reb_089_Name,Configuración de prioridad de objetivo de 
 ConfigContents,1,Config_Reb_089_Select_0,Dirección de la cámara
 ConfigContents,1,Config_Reb_089_Select_1,Dirección del personaje 1
 ConfigContents,1,Config_Reb_089_Select_2,Dirección del personaje 2
-ConfigContents,1,Config_Reb_089_Hint,Establece tu prioridad de objetivo al bloquear.<br><br>[Dirección de la cámara] <br>Priorice los objetivos en la dirección hacia la que mira su cámara.<br>[Dirección del personaje 1] <br>Prioriza los objetivos en la dirección en la que mira tu personaje. <br>[Dirección del personaje 2] <br>Prioriza los puntos débiles del enemigo y los enemigos en la dirección en la que mira tu<br>personaje y que están más cerca.
+ConfigContents,1,Config_Reb_089_Hint,Establece tu prioridad de objetivo al bloquear.<br>[Dirección de la cámara] Priorice los objetivos en la<br>dirección hacia la que mira su cámara.<br>[Dirección del personaje 1] Prioriza los objetivos en<br>la dirección en la que mira tu personaje. <br>[Dirección del personaje 2] Prioriza los puntos<br>débiles del enemigo y los enemigos en la dirección<br>en la que mira tu personaje y que están más cerca.
 ConfigContents,1,Config_Reb_090_Name,Efectos de sonido de sello
 ConfigContents,1,Config_Reb_090_Hint,"Seleccione si desea reproducir voces y efectos de<br>sonido de Stamps.<br><br><yellow>Nota: Si se selecciona ""No reproducir"", no podrás capaz<br>de escucharte a ti mismo o a otros jugadores.<c>"
 ConfigContents,1,Config_Reb_090_Select_0,Jugar
@@ -2981,9 +2981,9 @@ ConfigContents,1,Config_Reb_139_Select_2,Calidad
 ConfigContents,1,Config_Reb_139_Select_3,Equilibrado
 ConfigContents,1,Config_Reb_139_Select_4,Actuación
 ConfigContents,1,Config_Reb_140_Name,Envío automático al almacenamiento de materiales
-ConfigContents,1,Config_Reb_140_Hint,"Establezca si desea enviar automáticamente elementos categorizados como materiales a su Almacenamiento<br>de materiales, si está disponible.<br><br>[Formas más comunes de obtener materiales] <br>-Gotas de artículos <br>-Reunión <br>-Recompensas de prueba<br>-Recompensas de tareas/misiones <br>-Recompensas del pase de misión <br>-Recompensas adicionales de rasca y<br>gana"
+ConfigContents,1,Config_Reb_140_Hint,"Establezca si desea enviar automáticamente<br>elementos categorizados como materiales a su<br>Almacenamiento de materiales, si está disponible.<br>[Formas más comunes de obtener materiales] <br>-Gotas de artículos <br>-Reunión <br>-Recompensas de prueba<br>-Recompensas de tareas/misiones <br>-Recompensas del pase de misión <br>-Recompensas adicionales de rasca y gana"
 ConfigContents,1,Config_Reb_141_Name,AMDFSR 1.0
-ConfigContents,1,Config_Reb_141_Hint,"Establezca si se activa AMD FidelityFX Super Resolución 1.0.<br><br>Cuando se activa, la carga de procesamiento de imágenes se reducirá y la velocidad de fotogramas se maximizará de acuerdo con la configuración<br>de gráficos más alta.<br><br><yellow>Para usar FSR 1.0, debes tener una tarjeta gráfica que admita esta función.<c>"
+ConfigContents,1,Config_Reb_141_Hint,"Establezca si se activa AMD FidelityFX Super Resolución 1.0.<br>Cuando se activa, la carga de procesamiento de imágenes se reducirá y la velocidad de fotogramas se maximizará de acuerdo con la configuración de gráficos más alta.<br><yellow>Para usar FSR 1.0, debes tener una tarjeta gráfica que admita esta función.<c>"
 ConfigContents,1,Config_Reb_141_Select_0,Apagado
 ConfigContents,1,Config_Reb_141_Select_1,Auto
 ConfigContents,1,Config_Reb_141_Select_2,Ultracalidad
@@ -2992,7 +2992,7 @@ ConfigContents,1,Config_Reb_141_Select_4,Equilibrado
 ConfigContents,1,Config_Reb_141_Select_5,Actuación
 ConfigContents,1,Config_Reb_142_Name,Ícono de jugador nuevo/regresado
 ConfigContents,1,Config_Reb_142_Hint,Seleccione si desea mostrar el ícono para jugador nuevo/regresado. 
-ConfigContents,1,Config_047_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una invitación para unirse a un<br>grupo.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
+ConfigContents,1,Config_047_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una invitación para unirse a un<br>grupo.<br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_048_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una solicitud de amistad.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
 ConfigContents,1,Config_049_Hint_Streamer,Especificar si se muestra una nueva notificación<br>siempre que seas explorado por una alianza.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
 ConfigContents,1,Config_058_Hint_Streamer,Seleccione si desea recibir una notificación al<br>iniciar sesión cuando tu Conjunto Premium es válido<br>por más de 7 días.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
@@ -3170,7 +3170,7 @@ ConfigContents,1,Config_Reb_186_Select_0,Arriba a la derecha
 ConfigContents,1,Config_Reb_186_Select_1,Centro superior
 ConfigContents,1,Config_Reb_186_Select_2,Centro inferior
 ConfigContents,1,Config_Reb_184_Name,Mostrar mensaje de unión automática al grupo
-ConfigContents,1,Config_Reb_184_Hint,"Establece si se mostrará el mensaje ""Unirse automáticamente al grupo"" mientras esperas eventos como misiones urgentes<br>y ráfagas de PSE.<br><br>Al aceptar el mensaje, podrás formar automáticamente un grupo con otros jugadores que también hayan seleccionado<br>Unirse automáticamente al grupo.<br><br><yellow>*Este mensaje no se mostrará si ya has habilitado la unión automática.<c>"
+ConfigContents,1,Config_Reb_184_Hint,"Establece si se mostrará el mensaje <br>""Unirse automáticamente al grupo"" <br>mientras esperas eventos como <br>misiones urgentes y ráfagas de PSE.<br>Al aceptar el mensaje, podrás formar<br>automáticamente un grupo con otros<br>jugadores que también hayan seleccionado<br>Unirse automáticamente al grupo.<br><yellow>*Este mensaje no se mostrará si ya has habilitado la unión automática.<c>"
 ConfigContents,1,Config_Reb_184_Select_0,Esconder
 ConfigContents,1,Config_Reb_184_Select_1,Mostrar
 ConfigContents,1,Config_Reb_185_Name,Habilitar siempre la opción de unirse automáticamente al grupo
