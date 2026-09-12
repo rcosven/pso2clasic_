@@ -2722,8 +2722,8 @@ PartyMenu,1,Shootingroom_Command_Label_TimeCount,$(0):$(1)
 PartyMenu,1,Shootingroom_Command_Label_TimeGuide,Cambiar por 1 hora:<swguidetype T_ItemWarehouse>mientras presiona <%Decide>
 PartyMenu,1,LeaderMenuLabel08,Reclutar miembros del partido
 PartyMenu,1,PartyConfigLabel28_AccessTitle,Mantenga presionado para habilitar<pict 4space><pict auto_party><pict 4space>Auto-Unirse al grupo.
-PartyMenu,1,PartyConfigLabel28_AccessHint,<space><pict rare_drop_icon><pict 4space>se activará al unirse a un grupo.
-PartyMenu,1,PartyConfigLabel28_AccessToast,sangró. Se creará un grupo cuando se encuentren otros jugadores con la misma configuración.
+PartyMenu,1,PartyConfigLabel28_AccessHint,Un impulso<pict 4space><pict exp_icon><pict 4space><pict meseta_icon2><pict 4space><pict rare_drop_icon><br><pict 4space>se activará al unirse a un grupo.
+PartyMenu,1,PartyConfigLabel28_AccessToast,Se ha habilitado la función <pict 4space><pict auto_party><pict 4space>Unirse automáticamente al grupo. Se creará un grupo cuando se encuentren otros jugadores con<br>la misma configuración.
 PartyMenu,1,ToHalphaMenuLabel,Abandonar la misión
 PartyMenu,1,ToHalphaMenuText01,"¿Estás seguro de que quieres abandonar la misión?<br><br>Al abandonar la misión, los <yellow>miembros del grupo<br>acompañantes<c> (si cualquiera) también regresará a casa.<br><br>Además, los efectos activados durante la misión serán<br>eliminado."
 PartyMenu,1,ToHalphaMenuText02,"¿Estás seguro de que quieres abandonar la misión?<br><br>Al abandonar la misión, <yellow>serás el único<c> en volver a casa.<br><br>Además, los efectos activados durante la misión serán<br>eliminado."
@@ -3831,7 +3831,7 @@ Palette,1,WeaponSlotHint,Una ranura en la que se puede equipar un arma.<br>(Espa
 Palette,1,MainSlotHint,Esta es una ranura en la que se pueden configurar Photon Arts<br>o Techniques.
 Palette,1,SubSlotHint,"Un espacio en el que se pueden configurar técnicas, habilidades de clase,<br>o consumibles."
 Palette,1,IndicateTextMain,"En la paleta de armas, equipa <yellow>armas<c>, <c 00ffff>Artes fotónicas (PA)<c> o <green>Técnicas<c> <br><c ff007f>seleccionándolas de la pestaña<c>."
-Palette,1,IndicateTextSub,<green>Artes fotónicas/Técnicas<c> <c ff007f>seleccionándolas desde la pestaña<c>.
+Palette,1,IndicateTextSub,"En la subpaleta, equipa <yellow>consumibles<c>, <c 00ffff>habilidades de clase<c> o <green>artes/técnicas fotónicas<c> <c ff007f>seleccionándolas de la<br>pestaña<c>."
 Palette,1,IndicateTextEquip,")<c>, o <green>Anillos<c> <c ff007f>seleccionándolos desde la pestaña<c>."
 Palette,1,IndicateTextAvatar,Puedes equipar<yellow>Weapon Camo<c>para alterar la apariencia de tus armas.
 Palette,1,IndicateTextWeaponPos,Puedes alterar la posición de la funda de las armas para cada paleta usando [Ajuste de posición de la funda].
@@ -3873,7 +3873,7 @@ Palette,1,Costume,Ropa
 Palette,1,SubWindowChange1,<pict Sign_TRIANGLE> Intercambiar
 Palette,1,SubWindowChange2,<pict Sign_TRIANGLE> Intercambiar
 Palette,1,SubWindowChange3,<pict Sign_TRIANGLE> Intercambiar
-Palette,1,StrongEquipText,y artículos para cada categoría actualmente equipada.<br>¿Está seguro de que desea continuar?
+Palette,1,StrongEquipText,Estás a punto de cambiar al más fuerte. equipo<br>encontrado entre sus artículos de inventario para<br>cada categoría actualmente equipada. ¿Está seguro de<br>que desea continuar?
 Palette,1,StrongEquipTitle,AUTO-EQUIPAMIENTO
 Palette,1,StrongEquipWeaponRevised,Nueva arma
 Palette,1,StrongEquipPalleteRevised,Nueva unidad
@@ -4094,14 +4094,14 @@ CharaInfo,1,NoTitle,Ninguno
 CharaInfo,1,Name,Nombre del personaje
 CharaInfo,1,Guild,Nombre de la alianza
 CharaInfo,1,NoGuild,Sin alianza
-CharaInfo,1,HunterExplanation,"Especialistas en combate cercano. Con un alto HP y una defensa <br>sólida, pueden defenderse cuando operan solos."
+CharaInfo,1,HunterExplanation,"<yellow>Una clase orientada al combate a corta distancia,<c><br>sobresalen en enfrentarse a enemigos en espacios<br>reducidos. Con alto HP y Defensa, pueden defenderse<br>cuando operan solos."
 CharaInfo,1,RangerExplanation,"Especialistas en combate a distancia, manteniendo la distancia<br>óptima. También pueden apoyar a otros jugadores con una<br>gama de proyectiles especiales."
 CharaInfo,1,ForceExplanation,"Especialistas en ataques a una distancia. Haciendo uso<br>de una variedad de técnicas, pueden explotar las<br>debilidades elementales de un enemigo."
 CharaInfo,1,FighterExplanation,Especialistas en combate cuerpo a cuerpo agresivo. Lo que les falta en defensa lo compensan con sus ataques devastadores y pulverizadores.
 CharaInfo,1,GunnerExplanation,Especialistas en combate de rango cercano y medio. Acaban rápidamente<br>con los enemigos gracias a su gran movilidad y un torrente incesante<br>de balas.
 CharaInfo,1,TecherExplanation,"Especialistas en combate cuerpo a cuerpo y Técnicas. Con<br>mejora de habilidades temporales y curación, pueden<br>inclinar cualquier batalla a su favor."
 CharaInfo,1,BraverExplanation,Especialistas en combate cercano y a largo alcance. Cada ataque es simple pero esconde una complejidad<br>más profunda.
-CharaInfo,1,BouncerExplanation,Especialistas en combate aéreo. Sus habilidades físicas y<br>elementales te darán la ventaja en la batalla.
+CharaInfo,1,BouncerExplanation,<yellow>Una clase orientada al combate a corta y media distancia.<c><br>Altamente móvil y hábil en el combate aéreo. Su físico y<br>Elemental Downs te dará la ventaja en la batalla.
 CharaInfo,1,SummonerExplanation,Especialistas en el uso de Familiares.<br>Esta clase brilla cuando utiliza sus Familiares para adaptarse hábilmente<br>a cualquier situación.
 CharaInfo,1,SlayerExplanation,Especialistas en combate a corta distancia. Los Slayers eliminan fácilmente<br>a los enemigos con una combinación de ataques de disparo y cuerpo a cuerpo.
 CharaInfo,1,NoPaMessage,No hay artes fotónicas disponibles.
@@ -4478,7 +4478,7 @@ SkillTree,1,LevelUp_LackLv,Nivel de aprendizaje aún no alcanzado.
 SkillTree,1,LevelUp_Max,No se puede subir más de nivel.
 SkillTree,1,LevelUp_Wait,Espere por favor.
 SkillTree,1,LevelUp_LackPre,No puedes aprender esta habilidad porque no la<br>has hecho. alcanzado el nivel de habilidad<br>previo requerido.<br><br>Puedes ver tu estado en cada nivel de<br>habilidad. a través de <%NextTabDetails>.
-SkillTree,1,LevelUp_LackPre_v,vel.<br><br> Puede ver su estado en cada nivel de habilidad<br>a través de <pict Sign_SELECT>.
+SkillTree,1,LevelUp_LackPre_v,No puedes aprender esta habilidad porque no la<br>has hecho. alcanzado el nivel de habilidad<br>previo requerido.<br><br>Puedes ver tu estado en cada nivel de<br>habilidad. a través de <pict Sign_SELECT>.
 SkillTree,1,LevelUp_SabStyle_Success,Puntos de estilo asignados.
 SkillTree,1,Rename,Se ha cambiado el nombre del árbol de habilidades.
 SkillTree,1,Rename_Text,Cambie el nombre del árbol de habilidades seleccionado.
@@ -4510,8 +4510,8 @@ SkillTree,1,SKillTreeNameChangeVita,<pict Sign_SQUARE> Cambio de nombre del árb
 SkillTree,1,NameInput,Introduzca el nombre
 SkillTree,1,RenameExplain,Ingrese un nombre para el árbol de habilidades seleccionado<br>y presione el botón [Confirmar].
 SkillTree,1,RenameError,El nombre especificado no se puede utilizar.
-SkillTree,1,LevelUp_LackClassLv,ss level.<br><br>Required Class Level Information<br>$(0) $(1) Level $(2)
-SkillTree,1,LevelUp_LackClassLv_v,ss level.<br><br>Required Class Level Information<br>$(0) $(1) Level $(2)
+SkillTree,1,LevelUp_LackClassLv,No puedes aprender esta habilidad porque no la<br>has hecho. alcanzó el nivel de clase<br>requerido.<br><br>Información requerida sobre el nivel de clase<br>$(0) $(1) Nivel $(2)
+SkillTree,1,LevelUp_LackClassLv_v,No puedes aprender esta habilidad porque no la<br>has hecho. alcanzó el nivel de clase<br>requerido.<br><br>Información requerida sobre el nivel de clase<br>$(0) $(1) Nivel $(2)
 SkillTree,1,RebootText001,Puntos de habilidad
 SkillTree,1,RebootText002,Se asignarán puntos de habilidad.<br>¿Está seguro de que desea continuar?
 SkillTree,1,RebootText003,No hay suficientes puntos de habilidad.
@@ -7700,7 +7700,7 @@ SkillExplanation,1,WiseCritical,Aumenta la tasa de golpes críticos al infligir 
 SkillExplanation,1,WiseStance,Habilidad de postura activa que aumenta el daño que infliges desde atrás de un enemigo. Hace que Brave Stance sea ineficaz.
 SkillExplanation,1,FighterHPUp2,Aumenta tu HP máximo.
 SkillExplanation,1,FighterAtpStrikeUp3,Aumenta tu poder de ataque cuerpo a cuerpo. Produce un efecto más fuerte que el nivel 1.
-SkillExplanation,1,DoublesaverGear,"Ataca para liberar un viento dañino, cuya potencia depende de la carga del medidor."
+SkillExplanation,1,DoublesaverGear,"Carga el indicador de enfoque con cada ataque que realizas y luego te permite usar una acción de arma para desatar un viento dañino, cuyo poder se basa en la<br>carga del indicador."
 SkillExplanation,1,HalflineSlayer,"Aumenta tu poder cuerpo a cuerpo, a distancia y técnico cuando tu HP cae por debajo del 50%."
 SkillExplanation,1,DeadlineSlayer,"Aumenta tu poder cuerpo a cuerpo, a distancia y técnico cuando tu HP cae por debajo del 25%."
 SkillExplanation,1,Rare10Fighter,Bonificación al equipar armas de rareza 10 o superior. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
@@ -7953,7 +7953,7 @@ SkillExplanation,1,SuperTreatment,"Al curar una alteración de estado, aumenta l
 SkillExplanation,1,ExtendAssist,Extiende la duración máxima de Shifta y Deband a 180 segundos.
 SkillExplanation,1,TerritoryPPSave,Reduce el costo de PP de las técnicas de apoyo. Solo funciona si Territory Burst está aprendido.
 SkillExplanation,1,TecherAtpStrikeUp,Aumenta tu poder de ataque cuerpo a cuerpo.
-SkillExplanation,1,MainWand,Permite ataques rápidos de paso lateral. Solo funciona si Wand Focus está aprendido.
+SkillExplanation,1,MainWand,"Otorga una bonificación a la potencia de concentración de tu varita, ataque normal y furia fotónica, y permite ataques rápidos de paso lateral. Sólo<br>funciona si se ha aprendido Wand Focus."
 SkillExplanation,1,LongTimeAssist,Aumenta la duración de Shifta y Deband. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,ShiftaStrike,Aumenta el daño infligido mientras Shifta está activo. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,DebandToughness,Aumenta tu HP máximo mientras Deband está activo. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
@@ -8081,7 +8081,7 @@ SkillExplanation,1,PetPhotonBarrier,Da una probabilidad determinada de neutraliz
 SkillExplanation,1,PetResque,la invulnerabilidad ocurre después de la activación. <yellow>Sólo se puede utilizar con una clase principal.
 SkillExplanation,1,HPAutoRestraint,Hace que recuperes HP gradualmente cuando tu HP cae por debajo de un cierto umbral.
 SkillExplanation,1,MassiveMate,Elimina el retroceso y reduce el daño recibido cuando usas un elemento de recuperación.
-SkillExplanation,1,GetReadyGetUp,g up. Also reduces the time required to recover after getting knocked down.
+SkillExplanation,1,GetReadyGetUp,Reduce la cantidad de daño recibido cuando te empujan hacia atrás y al levantarte. También reduce el tiempo necesario para recuperarse después de ser<br>derribado.
 SkillExplanation,1,QuickRecovery,"Reduce la duración de tu Jellen, Blight Rounds y problemas de estado."
 SkillExplanation,1,SummonerSubClassEXPUp,ng a quest. <yellow>This skill can only be used with a Main Class.
 SkillExplanation,1,SummonerJAPPSave,Reduce el costo de PP para las artes y técnicas de fotones cuando realizas un ataque perfecto.
@@ -8107,7 +8107,7 @@ SkillExplanation,1,TakeOver,"Cuando cambias de mascota, permite que la mascota q
 SkillExplanation,1,PetStandHarmony,El daño se reduce y los problemas de estado se neutralizan mientras tu mascota está desplegada y Alter Ego está activo. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,SummonerHighLevelBonus,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,SummonerNextJump,Permite saltar en dos etapas.
-SkillExplanation,1,SummonerFirstArtsJAAddition,"activation. Doesn't affect Harmonizer attacks, pet attacks, or Techniques."
+SkillExplanation,1,SummonerFirstArtsJAAddition,"Convierte tu primer ataque en un ataque perfecto. Se aplica un tiempo de reutilización después de la activación. No afecta los ataques de<br>Armonizador, los ataques de mascotas ni las Técnicas."
 SkillExplanation,1,SummonerAirReversal,Le permite realizar una caída mientras está en el aire.
 SkillExplanation,1,SummonerDushJump,Saltar durante una acción de esquivar te convierte en una carrera.
 SkillExplanation,1,SummonerStepJACombo,Hace que se aplique el tiempo de ataque perfecto durante un paso lateral.
@@ -8172,7 +8172,7 @@ SkillExplanation,1,VillainFullDrive,Otorga una bonificación al incremento de tu
 SkillExplanation,1,VillainMarker,Acumula un marcador en el enemigo cada vez que conectas un ataque. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainMarkHeal,Recupera HP cuando el nivel del Phantom Marker alcanza el máximo. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainMarkPpDrain,Recupera PP cuando el nivel del Phantom Marker alcanza el máximo. <yellow>Solo Clase Principal.
-SkillExplanation,1,VillainZeroRangeBoost,Bonificación de daño al realizar ataques a corta distancia. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainZeroRangeBoost,Aumenta el nivel de acumulación de marcador fantasma por cada ataque realizado con éxito a corta distancia. <yellow>Esta habilidad solo se puede usar con una<br>clase principal.
 SkillExplanation,1,VillainLongRangeBoost,Aumenta el nivel de acumulación de Marcador Fantasma por cada ataque realizado con éxito a distancia. <yellow>Esta habilidad solo se puede usar con una clase<br>principal.
 SkillExplanation,1,VillainChaseMarkBoost,"Bonificación de daño contra enemigos afectados por elementos, Jellen o Blight Rounds. <yellow>Solo Clase Principal."
 SkillExplanation,1,PrimalTimePlus,Aumenta el daño infligido con un arma Phantom durante Phantom Time. <yellow>Solo Clase Principal.
@@ -8187,7 +8187,7 @@ SkillExplanation,1,VillainLoadOfThorn,Potencia el daño de las detonaciones de m
 SkillExplanation,1,VillainBullsEye,"Cuando se equipa un rifle, se produce un efecto de reacumulación de marcadores basado en el nivel del marcador en el momento de la detonación. <yellow>Esta habilidad solo se puede usar con una clase principal."
 SkillExplanation,1,VillainAttackJellen,Los ataques con armas Phantom tienen probabilidad de aplicar el efecto Jellen. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainJellenRedress,Reduce el daño infligido por enemigos que tienen el efecto Jellen. <yellow>Solo Clase Principal.
-SkillExplanation,1,VillainQuickCut,Ejecuta ataques normales y PA cronometrados especiales. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainQuickCut,"Cuando se equipa una Katana, se permite el movimiento a alta velocidad con una acción de arma con ATK y PA normales especialmente sincronizados. <yellow>Solo<br>se puede usar con la clase principal."
 SkillExplanation,1,VillainDodgeCounterShot,Permite realizar un contraataque tras esquivar con una Vara. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainSprintTecCharge,Permite moverse a alta velocidad mientras se carga una técnica.
 SkillExplanation,1,VillainGespenst,Activa un efecto especial al ser atacado mientras tu HP se reduce. <yellow>Solo Clase Principal.
@@ -8233,7 +8233,7 @@ SkillExplanation,1,MasterFlatAttackBonus,Bonificación de daño a ataques normal
 SkillExplanation,1,MasterOverClock,"Recupera HP/PP, aumenta el PP máximo para todos los miembros de la Alianza cercanos durante un tiempo determinado. El número de usos restantes aumenta con el tiempo. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
 SkillExplanation,1,MasterWandNimble,"Con la varita equipada, un arte de fotones enfocados exitoso otorga una mayor velocidad de movimiento durante un tiempo determinado mientras estás en un combo.<br><yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
 SkillExplanation,1,MasterAllAttackBonus,Bonificación al daño infligido por el jugador y sus mascotas.
-SkillExplanation,1,MasterClockUp,Potencia a los aliados en el área. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterClockUp,El tiempo de recuperación de la habilidad activa se reduce para todos los miembros de la Alianza que no sean Étoile en el área.<br><yellow>Esta habilidad solo puede ser utilizada por una Clase Principal.
 SkillExplanation,1,MasterEfficient,"Cada vez que un miembro de la Alianza cercano usa un elemento de recuperación, la cantidad de HP recuperada aumenta y se agrega el efecto de recuperación de PP. <yellow>Esta<br>habilidad solo puede ser utilizada por una Clase Principal."
 SkillExplanation,1,MasterInstinct,Reduce el daño recibido cada vez que te golpean (la bonificación decae con el tiempo).
 SkillExplanation,1,MasterArcane,"Cuando un Double Sabre está equipado, dar un paso al frente mientras un enemigo fijo ataca desencadenará un contraataque especial. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal."
@@ -8351,7 +8351,7 @@ SkillExplanation,1,BouncerMegidoCharge,"Cuando golpeas a un enemigo con Dark<br>
 SkillExplanation,1,HunterWarCry,<yellow>[Habilidad activa]<c> Llama la atención de los<br>enemigos cercanos durante un tiempo. tiempo<br>establecido. Los enemigos a los que golpeas<br>tienen más probabilidades de apuntarte.<br><yellow>*Solo puede ser utilizado por una clase<br>principal.<c>
 SkillExplanation,1,HunterIronWill,Un ataque incapacitante te dejará con 1 HP y un momento de invulnerabilidad cuando se active esta habilidad.<br><yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,HunterMassiveHunter,<yellow>[Habilidad activa]<c> Reduce temporalmente el daño recibido y evita que los ataques enemigos te lancen o<br>te derriben.
-SkillExplanation,1,HunterSwordGuardCounterPlus,Contraataque adicional tras Sword Guard.
+SkillExplanation,1,HunterSwordGuardCounterPlus,Realizar una Guardia de Espada y seguir<br>con un ataque normal desatará un<br>contraataque adicional.
 SkillExplanation,1,RangerWeakBullet,Dispara una bala que aumenta el daño en la parte impactada. <yellow>Solo Clase Principal/Rifle.
 SkillExplanation,1,RangerWeakBulletParse,Las partes golpeadas por Blight Rounds que sean impactadas una cantidad determinada de veces recibirán un mayor daño y la duración del efecto de<br>la habilidad se extenderá. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,RangerWeaponActionAvoid,Invulnerabilidad con acciones de arma (Rifle).
@@ -8372,7 +8372,7 @@ SkillExplanation,1,GunnerNeutralDeadApproach,Realizar acciones con armas sin nin
 SkillExplanation,1,GunnerAttackPPRestraint,Aumenta recuperación de PP al atacar.
 SkillExplanation,1,TechterShiftaDeband,<yellow>[Habilidad activa]<c> Aumenta el daño infligido a los enemigos y disminuye el daño recibido por ti y los<br>personajes cercanos durante un tiempo determinado. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,TechterPartyAssist,Los personajes distantes de tu grupo seguirán recibiendo el efecto de Shifta/Deband cuando se<br>utilice. <yellow>*Solo puede ser utilizado por una clase principal.<c>
-SkillExplanation,1,TechterWandElementChange,Cambia el elemento de la varita según la técnica. <yellow>Solo Varita.
+SkillExplanation,1,TechterWandElementChange,"Cuando usas una Técnica Cargada, tu Furia Fotónica adoptará el elemento de esa Técnica. <yellow>*Solo se<br>puede usar con una varita.<c>"
 SkillExplanation,1,TechterWandElementDiscard,Mantén presionado el botón de acción del arma para revertir los cambios elementales aplicados a Photonic Fury<br>mediante el cambio de elemento de varita. <yellow>*Solo se puede usar con una varita.<c>
 SkillExplanation,1,TechterHeal,Aumenta la cantidad de salud recuperada cuando usas Restasigne y también cura a los personajes<br>cercanos. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,FighterKnuckleAttackExtra,Combos extendidos con Knuckles.
@@ -10212,11 +10212,11 @@ ClassCounter,1,TreeListCaption,Árboles ($(0))
 ClassCounter,1,TreeListPoint,SP restantes
 ClassCounter,1,MoreDetails,Selecciona<pict Sign_SELECT> para más detalles.
 ClassCounter,1,MySetExplain,<c f0df60>Puedes guardar tu equipamiento para usarlo más adelante.<c>
-ClassCounter,1,MySetExplain2button,Tu tipo de control actual está configurado en 2 botones.<c>
-ClassCounter,1,MySetExplain3button,Tu tipo de control actual está configurado en 3 botones.<c>
+ClassCounter,1,MySetExplain2button,<c f0df60>Puedes guardar tu equipamiento para usarlo más adelante.<c><red> Nota: Tu tipo de control actual está configurado en<br>una configuración de 2 botones.<c>
+ClassCounter,1,MySetExplain3button,<c f0df60>Puedes guardar tu equipamiento para usarlo más adelante.<c><red> Nota: Tu tipo de control actual está configurado en una configuración de 3 botones.<c>
 ClassCounter,1,ManualSkillTreeGet,Configuración personalizada
 ClassCounter,1,AutoSkillTreeGet,Configuración recomendada
-ClassCounter,1,AutoSkillTreeAsk,"<yellow>Nota: Tu árbol de habilidades existente se sobrescribirá,<br>incluyendo las habilidades aprendidas.<c>"
+ClassCounter,1,AutoSkillTreeAsk,Tus puntos de habilidad serán reasignados<br>automáticamente. ¿Está seguro de que desea<br>continuar? <yellow>Nota: Su árbol de habilidades existente<br>se sobrescribirá. incluidas las habilidades<br>aprendidas.<c>
 ClassCounter,1,AutoSkillTreeList,Las siguientes habilidades que se configuraron en<br>función de Se sobrescribirá una configuración<br>recomendada. ¿Está seguro de que desea continuar?<br><br><red>Nota: Se requiere un [Restablecer pase de todos los<br>árboles de habilidades] si quieres reasignar puntos<br>de habilidad tú mismo.<c>
 ClassCounter,1,AutoSkillTreeListVita,¿Estás seguro de que deseas continuar?<br><red>Nota: Se requiere un [Pase para restablecer todos los árboles de habilidades].<c>
 ClassCounter,1,AutoSkillTreeSuccess,Habilidades recomendadas sobrescritas.
@@ -11357,7 +11357,7 @@ SiriusPointShop,1,PrizeExchangePoint,$(0)<pict sirius_icon>
 SiriusPointShop,1,PrizeExchangePointRed,<red> $(0)<c><pict sirius_icon>
 SiriusPointShop,1,ExchangeCheckTitle,CONFIRMAR CAMBIO
 SiriusPointShop,1,ExchangeCheckMessage,Está a punto de cambiar los siguientes<br>artículos por $(0) <pict sirius_icon>.<br>¿Está seguro de que desea continuar? <br>
-SiriusPointShop,1,ExchangeLimitCheckMessage,Está a punto de cambiar los siguientes<br>artículos por $(0) <pict sirius_icon>.<br>¿Está seguro de que desea continuar? <br>
+SiriusPointShop,1,ExchangeLimitCheckMessage,Estás a punto de intercambiar lo siguiente elemento(s) para<br>$(0)<pict sirius_icon>. ¿Está seguro de que desea continuar? (Tu cuota de<br>intercambio se restablecerá cada <utcdow>miércoles a las 4:00</utcdow>)
 SiriusPointShop,1,PreExchangeLimitMessage,wish to proceed?<br>(Your exchange quota will be reset every <utcdow>Wednesday at 4:00</utcdow>)
 SiriusPointShop,1,ExchangeLimitMessage,No se puede completar su intercambio porque<br>excedió el número máximo de intercambios permitidos.
 SiriusPointShop,1,ExchangeCancelTitle,CONFIRMAR CANCELACIÓN
@@ -11961,7 +11961,7 @@ Synchronize,1,PhantomShipMultiBossRemove,Detenga el dispositivo de embarque AIS.
 Synchronize,1,PhantomShipMultiBossStart,Preparativos de combate completos. Ahora implementando.
 Synchronize,1,DPP1MultiBossGoto,Proveedor Ridroid activado. Llega a la lancha de desembarco en los próximos 30 segundos.
 Synchronize,1,DPP1Bootup,¿Activar el proveedor Ridroid?
-Synchronize,1,DPP1MultiBossMessage,Se implementa en<br>30 segundos.<br><br> ¿Le gustaría detener al proveedor Ridroid?
+Synchronize,1,DPP1MultiBossMessage,El vendedor de Ridroid ha sido activado. Los<br>miembros del partido en las cercanías serán<br>desplegados en 30 segundos.<br><br>¿Le gustaría detener al vendedor de Ridroid?
 Synchronize,1,DPP1MultiBossRemove,Detén al vendedor de Ridroid.
 Synchronize,1,DPP1MultiBossStart,Preparativos de combate completos. Implementando Ridroid.
 Synchronize,1,DEMultiBossGoto,Círculo Hechicero activado. Llega al Círculo Hechicero en los próximos 30 segundos.
@@ -12004,20 +12004,20 @@ Synchronize,1,SelectDifficultyQuestLV0,Seleccione una profundidad para su estudi
 Synchronize,1,SelectDifficultyQuestCountCheck,¿Quieres comenzar la búsqueda? (Un total de $(0) intentos de supresión<br>permanecer para la misión objetivo)<br><br>*El contador de intentos de supresión se reinicia todos los días a las<br><utc>20:00</utc>. *Tenga en cuenta que los intentos de supresión restantes no<br>utilizados no se transferirán a al día siguiente. Un intento de<br>supresión se consumirá cuando Completa con éxito la misión.
 Synchronize,1,DPP1MultiBossMessageExc,El vendedor de Ridroid ha sido activado. Los<br>miembros del partido en los alrededores<br>serán desplegado después de un tiempo<br>determinado. ¿Le gustaría detener al<br>vendedor de Ridroid?
 Synchronize,1,DPP1MultiBossGotoExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
-Synchronize,1,DEMultiBossMessageExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
+Synchronize,1,DEMultiBossMessageExc,El Círculo Hechicero ha sido activado. Los<br>miembros del partido en los alrededores<br>desplegarse después de un tiempo<br>determinado. ¿Te gustaría detener el Círculo<br>Hechicero?
 Synchronize,1,DEMultiBossGotoExc,Círculo Hechicero activado. Llega al Círculo Hechicero dentro del tiempo asignado.
 Synchronize,1,PhantomShipMultiBossMessageExc,El dispositivo de embarque AIS ha sido activado.<br>Los miembros del grupo dentro del hangar<br>abordarán después un tiempo determinado. ¿Le<br>gustaría detener el dispositivo de embarque AIS?
 Synchronize,1,PhantomShipMultiBossGotoExc,Dispositivo de embarque AIS activado. Ingrese al hangar AIS dentro del tiempo asignado.
 Synchronize,1,BasnetMessageExc,Serás<br>desplegado en el campo de batalla después de que haya transcurrido un tiempo determinado <br>.
 Synchronize,1,BasnetGotoExc,Se completaron los preparativos para el despliegue. Llega al campamento dentro del tiempo asignado.
-Synchronize,1,BasnetMessageSkitExc,inity será<br>desplegado en el campo de batalla después de un tiempo establecido <br>.
-Synchronize,1,RDMultiBossMessageExc,inity será<br>desplegado en el campo de batalla después de un tiempo establecido <br>.
+Synchronize,1,BasnetMessageSkitExc,Se completaron los preparativos para el<br>despliegue. Todos los miembros del grupo en<br>las cercanías serán desplegado en el campo<br>de batalla después de un set tiempo.
+Synchronize,1,RDMultiBossMessageExc,Se ha activado la Barrera de Transporte. Los<br>miembros del partido en los alrededores serán<br>desplegado después de un tiempo determinado.<br>¿Le gustaría acabar con la barrera al<br>transporte?
 Synchronize,1,RDMultiBossGotoExc,Barrera de transporte activada. Llegue al sitio de teletransportación dentro del tiempo asignado.
 Synchronize,1,DKMultiBossMessageExc,Los miembros del grupo que se encuentren cerca serán teletransportados<br>después de un tiempo determinado.<br>¿Le gustaría abandonar el Punto de Entrada?
 Synchronize,1,DKMultiBossGotoExc,Punto de entrada activado. Llegue al punto de entrada dentro del tiempo asignado.
 Synchronize,1,MEDMultiBossGoto,Se completan los preparativos de la huelga. Llega a la lancha de desembarco en los próximos 30 segundos.
 Synchronize,1,MEDMultiBossWakeUp,¿Comenzar los preparativos para la huelga?
-Synchronize,1,MEDMultiBossMessage,>la batalla en 30 segundos.<br>¿Le gustaría detener los preparativos de la huelga?
+Synchronize,1,MEDMultiBossMessage,Comenzando los preparativos para la huelga. Los<br>miembros del partido en los alrededores<br>comenzarán La batalla en 30 segundos. ¿Le<br>gustaría detener los preparativos de huelga?
 Synchronize,1,MEDMultiBossRemove,Los preparativos de la huelga terminaron.
 Synchronize,1,MEDMultiBossTrans,Se completan los preparativos de la huelga. Entrando en el espacio alterado.
 Synchronize,1,MEDInaccessible,Los preparativos de la huelga terminaron.
@@ -13731,7 +13731,7 @@ Esthetic,1,Remake_ErrorNoSpace,Su Auxiliar no se pudo restablecer porque su equi
 Esthetic,1,Remake_ErrorDB,El reinicio auxiliar falló debido a un error de la base de datos.
 Esthetic,1,Remake_Error,No se puede restablecer su auxiliar.
 Esthetic,1,Cast_color,Seleccionar color
-Esthetic,1,Item_EnterConfirmMessage,"No se podrán recibir notificaciones dentro del salón,<br>ni dentro del juego."
+Esthetic,1,Item_EnterConfirmMessage,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego."
 Esthetic,1,Item_EnterConfirmMessage2,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de salón Tiempo de edición<br>restante: $(0)"
 Esthetic,1,Item_EnterConfirmMessage3,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de cambio de color<br>Elementos que se están reeditando: <yellow>$(0)<c><br>[[ETIQUETA2]][[ETIQUETA7]][[ETIQUETA3]] Tiempo de<br>edición restante: <yellow>$(1)<c>"
 Esthetic,1,Item_EnterConfirmMessage4,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Estado de uso del pase de salón Tiempo de edición<br>restante: $(1) Estado de uso del pase de cambio<br>de color Elementos que se están reeditando: <yellow>$(0)<c><br>[[ETIQUETA2]][[ETIQUETA8]][[ETIQUETA3]] Tiempo de<br>edición restante: <yellow>$(1)<c>"
@@ -15513,7 +15513,7 @@ Gat,1,Help_Status_Title,ESTADÍSTICAS DE REUNIÓN
 Gat,1,Help_Achievement_Title,LOGROS DE REUNIÓN DISPONIBLES
 Gat,1,Help_Top_Explain,<c f0df60> Aquí puedes consultar varios logros que se pueden obtener durante la reunión. <c>
 Gat,1,Help_Status_Explain,<c f0df60> Lista de estadísticas relacionadas con la reunión <c>
-Gat,1,Help_Achievement_Explain,El nivel de pesca también aumentará cuando se haya desbloqueado una cantidad determinada de logros. <c>
+Gat,1,Help_Achievement_Explain,<c f0df60>Puedes recibir recompensas desbloqueando logros. Tu nivel de recolección o nivel de pesca también aumentará cuando se haya desbloqueado una cantidad determinada<br>de logros.<c>
 Gat,1,Menu_Gat_Info,Recopilación de información
 Gat,1,Menu_Gat_Status,Recopilación de estadísticas
 Gat,1,Menu_Gat_Results,Logros de recopilación disponibles
@@ -15739,9 +15739,9 @@ CostumeGauge,1,TeamWarehouseMessage,Estás a punto de colocar ropa para la cual 
 CostumeGauge,1,TeamWarehouseTitle2,ADVERTENCIA
 CostumeGauge,1,TeamWarehouseMessage2,Estás a punto de mover este artículo a tu Almacenamiento de<br>Alianza. ¿Está seguro de que desea continuar?<br><br>El indicador de afinidad se restablecerá para la ropa<br>colocada. en Almacenamiento de la Alianza.<br><br><yellow>Nota: Tu Almacenamiento de Alianza puede ser utilizado por<br>otros jugadores también.<c>
 CostumeGauge,1,PresentBoxTitle,ADVERTENCIA
-CostumeGauge,1,PresentBoxMessage,Se adquiere en una caja de regalo.<br>¿Está seguro de que desea continuar?
+CostumeGauge,1,PresentBoxMessage,Estás a punto de colocar ropa para la cual no<br>Las Star Gems se han adquirido en una caja de<br>regalo. ¿Está seguro de que desea continuar?
 CostumeGauge,1,GachaTitle,ADVERTENCIA
-CostumeGauge,1,GachaMessage,Se adquiere en una caja de regalo.<br>¿Está seguro de que desea continuar?
+CostumeGauge,1,GachaMessage,Estás a punto de colocar ropa para la<br>cual no se han adquirido Star Gems en una<br>máquina de cápsulas de fotones. ¿Está<br>seguro de que desea continuar?
 CostumeGauge,1,RecycleTitle,CONFIRMAR
 CostumeGauge,1,RecycleMessage,Intercambie los siguientes elementos por $(0)x$(1). <red>Nota: Los<br>artículos seleccionados incluyen prendas para las cuales no hay<br>Gemas Estelares. han sido adquiridos.<c> ¿Continuar?
 CostumeGauge,1,RecycleMessage2,Intercambie los siguientes elementos por $(0)($(1))x$(2). <red>Nota:<br>Los artículos seleccionados incluyen prendas para las cuales no<br>hay Gemas Estelares. han sido adquiridos.<c> ¿Continuar?
@@ -17482,7 +17482,7 @@ Stamp,0,StampWindow_Favorite_Max,これ以上お気に入り登録できませ�
 Stamp,1,StampWindow_Title,Stamps Preview
 Stamp,1,StampWindow_Help01,<%Function> to Playback
 Stamp,1,StampWindow_Help02,<%NextTabDetails> Arte del símbolo
-Stamp,1,StampWindow_ControlHelp_GamesPad,Ventana activa:<%NextWidget>Agregar o editar Favoritos: <%NextTabDetails>
+Stamp,1,StampWindow_ControlHelp_GamesPad,Confirmar: <%Decide> Atrás: <%Cancel> Reproducción: <%Function> Cambiar ventana activa: <%NextWidget> Agregar o editar favoritos: <%NextTabDetails>
 Stamp,1,StampWindow_ControlHelp_KeyBoard,Confirmar: <%Decide> Atrás: <%Cancel> Reproducción: [Tab]> Cambiar ventana activa: <%NextWidget> Agregar o editar<br>favoritos: <%NextTabDetails>
 Stamp,1,StampWindow_Shop,No puedes utilizar este sello.<br><br> Algunos sellos se pueden comprar en la Tienda.<br><br> ¿Abrir la tienda?
 Stamp,1,StampWindow_TabFavorite,0. Favoritos
@@ -18416,7 +18416,7 @@ AdditionalSkillExplanation,1,AdditionalSkillBr_RestaHealUp,Aumenta la cantidad d
 AdditionalSkillExplanation,1,AdditionalSkillBo_SpecialPpHeal,Obtenga recuperación natural de PP al usar<br>Photon Dash o Photon Glide.
 AdditionalSkillExplanation,1,AdditionalSkillHu_SpeedChargePA,Aumenta tu velocidad de movimiento mientras<br>carga Photon Arts.
 AdditionalSkillExplanation,1,AdditionalSkillFi_JumpBoost,Aumenta la altura de tu salto habitual.
-AdditionalSkillExplanation,1,AdditionalSkillBo_OneMoreJump,Aumenta tu velocidad de movimiento mientras<br>carga Photon Arts.
+AdditionalSkillExplanation,1,AdditionalSkillBo_OneMoreJump,"Saltar en el aire y aterrizar sobre un<br>enemigo. provocará que se desate un ataque, y<br>le permitirá realizar un salto adicional."
 AdditionalSkillExplanation,1,AdditionalSkillWa_WaitHpHeal,Obtén una recuperación sostenida de HP después de permanecer<br>inmóvil durante un tiempo determinado con tu arma<br>envainada.
 AdditionalSkillExplanation,1,AdditionalSkillSl_DownEnemyAddCritical,Aumenta la tasa de golpes críticos al atacar a enemigos caídos.
 AdditionalSkillExplanation,1,AdditionalSkillSl_PhotonblastRecastQuick,Reduce el tiempo antes de que se pueda volver a utilizar Photon Blast.
@@ -19053,7 +19053,7 @@ MySpace,1,MainMenu_MySpace_Blocklist,Texto tentativo<br>El propietario del espac
 MySpace,1,MainMenu_MySpace_BlockMoveBlueprint,Pasando al Espacio Creativo donde se encuentra el Diseño <br>.<br>¿Estás seguro?
 MySpace,1,MainMenu_MySpace_BlockMoveBlueprintShortage,¿seguro?<br><br><yellow>Le faltan las piezas de construcción necesarias para el diseño. <c>
 MySpace,1,MainMenu_MySpace_CrossPlaySpaceMoveFail,No se puede mover debido a la configuración del espacio creativo seleccionado.
-MySpace,1,MainMenu_MySpace_CrossPlaySpaceEnable,r>Es necesario habilitarlo para poder moverse allí. ¿Habilitar<br>juego multiplataforma?
+MySpace,1,MainMenu_MySpace_CrossPlaySpaceEnable,El Espacio Creativo seleccionado no tiene juego<br>multiplataforma habilitado.<br><br>Es necesario habilitarlo para poder moverse allí. Habilitar<br>¿Juego multiplataforma?
 MySpace,1,MainMenu_MySpace_CrossPlaySpaceReset,"El Espacio Creativo seleccionado es Multiplataforma<br>Interacción habilitada. Para poder trasladarse allí,<br>el Espacio Creativo debe ser <yellow>""reset""<c> y La<br>interacción multiplataforma debe estar<br>deshabilitada. ¿Desactivar ahora?"
 MySpace,1,MainMenu_MySpace_NoticeTeamUnderstaffed,Necesita 4 o más miembros para utilizar Alliance Space.
 MySpace,1,MainMenu_MySpace_TeamSpaceBuyTitle,Comprar espacio de alianza
