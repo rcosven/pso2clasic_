@@ -550,7 +550,7 @@ EveryMP,1,RewardReceiptFormAcceptanceTitle,CONFIRMAR ACEPTACIÓN
 EveryMP,1,RewardReceiptFormAcceptanceMessage,Recupera los siguientes objetos.<br><br>¿Estás seguro?<br><br><yellow>Algunos objetos pueden tener condiciones<br>para equiparlos y/o utilizarlos.<br>Solo pueden recuperarse una vez por cuenta.<c>
 EveryMP,1,RewardReceiptFormPurchaseTitle,CONFIRMAR COMPRA
 EveryMP,1,RewardReceiptFormPurchaseMessage,¿Está seguro de que desea comprar los siguientes<br>artículos por $(2)$(0)?<br><br> (Tienes: $(1)SG)
-EveryMP,1,RewardReceiptFormTierPurchaseMessage,(1))<br><br> Nivel de compra anterior: $(3)<br>Nivel después de la compra: $(4)
+EveryMP,1,RewardReceiptFormTierPurchaseMessage,Compra un nivel para $(2) $(0). <br>¿Está seguro?<br><br>(Tu SG: $(1))<br><br>Compra previa del nivel: $(3) Nivel<br>después de la compra: $(4)
 EveryMP,1,LimitedTimeMessage,$(0)<br><br> Período de compra:<utcymdt>$(1) </utcymdt>
 EveryMP,1,RewardUpTicketFormTitle,CONFIRMAR COMPRA DEL ARTÍCULO
 EveryMP,1,RewardUpTicketFormMessage,"<pict StarGem><c 1dedd7> Se requiere pago de SG<c><br>No tienes derecho a utilizar la función seleccionada <br>o tu derecho de uso ha expirado.<br>¿Deseas comprar un <yellow>N-Mission Pass Gold<c> <br>para utilizar esta función?<br><red>Al comprar objetos individuales,<br>selecciona Tienda en el Menú Principal y realiza la compra <br>desde la Tienda de AC/SG.<c>"
@@ -581,9 +581,9 @@ EveryMP,1,MPRewardDetailSwitching,<%Function> para mostrar vista previa
 EveryMP,1,MPRewardDetailSwitching_Key,<%MultiSelect> para mostrar vista previa
 EveryMP,1,RewardAcceptanceForm_other,Otros x$(0)
 EveryMP,1,ErrorMessageGeneral2,Se produjo un error inesperado.
-EveryMP,1,MP_Error_Inventorylimit,"h espacio en tu inventario,<br>o excederías tu límite de transporte."
+EveryMP,1,MP_Error_Inventorylimit,No has podido recibir los artículos porque no tienes suficiente espacio en tu inventario. o<br>excederías tu límite de transporte.
 EveryMP,1,RewardDetailsFormMessage,<br><yellow>Algunos artículos pueden tener condiciones de equipamiento y/o uso. <c>
-EveryMP,1,RewardReceivingFormMessage1,arriba.<c><br><yellow>Algunos artículos pueden tener condiciones de equipamiento y/o uso. <c>
+EveryMP,1,RewardReceivingFormMessage1,Seleccione su recompensa para este nivel. <br><yellow>Solo puedes seleccionar un grupo de recompensas.<c> <br><yellow>Algunos objetos pueden tener condiciones de equipamiento y/o uso.<c>
 EveryMP,1,RewardReceivingFormMessage2,¿Recuperar recompensas para este nivel?
 EveryMP,1,TakeText,Llevar
 EveryMP,1,MP_PopupMessage,Texto ficticio
