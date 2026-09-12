@@ -144,7 +144,7 @@ Common,1,Lupe_TextStart,Modo de Ampliación Activado.
 Common,1,Lupe_TextEnd,Modo de Ampliación Desactivado.
 Common,1,Lupe_TextTerminate1,La configuración cambió. Modo de ampliación desactivado.
 Common,1,Lupe_TextTerminate2,La configuración cambió. Modo de ampliación desactivado.
-Common,1,Lupe_ControlGuide,Modo de ampliación desactivado:<swguidetype ShiftTrigger>+ <swguidetype EscMenu>
+Common,1,Lupe_ControlGuide,Mostrar movimiento de área: <swguidetype CursorMove> Zoom: <swguidetype Zoom> Modo de<br>ampliación desactivado:<swguidetype ShiftTrigger>+<swguidetype EscMenu>
 Common,1,NotReceptQuestPartyGuest,No puedes aceptar la misión porque no eres un líder del grupo.
 Common,1,NotFoundQuestSearch,No se pudo encontrar una misión que coincida con las condiciones que ingresaste.
 Common,1,CantStartQuestCapacityOverRoom,No se puede unir porque la sala está llena.
@@ -1554,7 +1554,7 @@ FriendList,1,FriendList_Error_MyBlack,Tu solicitud de amistad no se puede enviar
 FriendList,1,FriendList_Error_Default,Un error provocó que fallara el procesamiento de <br>.<br><br> [No. 1034]
 FriendList,1,FriendList_Error_NotInviting,El procesamiento falló porque la solicitud de amistad<br>ya fue cancelada.
 FriendList,1,FriendList_ConfirmTitle,ENVIAR SOLICITUD DE AMIGO
-FriendList,1,FriendList_Confirm,También puedes adjuntar un mensaje.<br>¿Enviar una solicitud de amistad<br>con el siguiente mensaje?
+FriendList,1,FriendList_Confirm,Esta función le permite enviar una<br>solicitud de amistad a $(0).<br><br>También puedes adjuntar un mensaje.<br>Enviar una solicitud de amistad con el<br>siguiente mensaje?
 FriendList,1,FriendList_DefaultMessage,¡Seamos amigos!
 FriendList,1,FriendList_YesNo_Title,Responder a la solicitud de amistad
 FriendList,1,FriendList_YesNo_Message,"$(0) te ha enviado un amigo Solicitud.<br><br>Si te haces amigo, aparecerás en la lista de<br>amigos de cada uno y podrán para ver si el<br>otro jugador ha iniciado sesión.<br><br>¿Aceptar la solicitud de amistad?"
@@ -1564,7 +1564,7 @@ FriendList,1,FriendList_NoButton,Rechazar solicitud
 FriendList,1,FriendList_Exp_Title,ACEPTAR SOLICITUD DE AMISTAD
 FriendList,1,FriendList_Exp,Estás a punto de aceptar una solicitud de amistad<br>de $(0).<br><br>¿Estás seguro de que deseas continuar?
 FriendList,1,SendTitle,CONFIRMAR ENVÍO DE SOLICITUD DE AMISTAD
-FriendList,1,SendMsg,También puedes adjuntar un mensaje.<br>¿Enviar una solicitud de amistad<br>con el siguiente mensaje?
+FriendList,1,SendMsg,Esta función le permite enviar una<br>solicitud de amistad a $(0).<br><br>También puedes adjuntar un mensaje.<br>Enviar una solicitud de amistad con el<br>siguiente mensaje?
 FriendList,1,Friend_Where_ChallengeShip,Barco de desafío
 FriendList,1,FriendGroupTypeA,<pict FriendGroupA>
 FriendList,1,FriendGroupTypeB,<pict FriendGroupB>
@@ -2696,7 +2696,7 @@ PartyMenu,1,MultiPartyAskTitle,CONFIRMAR EL EMPAREJAMIENTO MULTIBLOQUE
 PartyMenu,1,MultiPartyAskMessage,"La búsqueda de compañeros se limitará a bloques del<br>mismo nombre.<br><br>Como resultado, <yellow>el número de jugadores que se unan<br>a la misión podría ser muy limitado,<c> incluso si<br>se selecciona [Buscar en varios bloques y aceptar].<c><br><br>Nota: Si deseas buscar compañeros sin limitarte<br>a bloques del mismo nombre, deberías cambiarte a un bloque que<br>no indique en su descripción: ""La búsqueda de compañeros entre<br>bloques está restringida a bloques del mismo nombre"".<br><br>¿Seguro que quieres realizar una misión en este bloque?"
 PartyMenu,1,PartyConfigLabel22,<pict party_request><pict 4space>Reclutamiento Activo
 PartyMenu,1,PartyConfigLabel23,<pict Sign_SQUARE> Reclutamiento Activo
-PartyMenu,1,PartyConfigHint01,"En la habitación,<br>cualquier Socio presente será enviado de regreso automáticamente."
+PartyMenu,1,PartyConfigHint01,"Si marca [Reclutamiento activo], cuando aparecen 4<br>reclutas en la habitación, todos los Socios presentes<br>serán enviados de regreso automáticamente."
 PartyMenu,1,PartyConfigLeaderChangeNotTitle,CAMBIO DE LÍDER NO PERMITIDO
 PartyMenu,1,PartyConfigLeaderChangeNotMessage,No puedes cambiar el líder del grupo durante esta misión.
 PartyMenu,1,LeaderMenuText04_HighLevelQuest,"<red>La misión que estás realizando actualmente está<br>sujeta a una [Penalización por abandono].<c><br><br>Dado que abandonar esta misión causará<br>inconvenientes a otros jugadores, ya no<br>podrás volver a aceptar misiones urgentes en curso.<br>Además, serás trasladado a la fuerza<br>a otro bloque.<br><br>Todos los miembros del grupo se verán obligados a abandonar la misión<br>también, y serán trasladados de vuelta al vestíbulo de ARKS.<br><br>Estás a punto de abandonar la misión y<br>aceptar una [Penalización por abandono].<br>¿Estás seguro de que deseas continuar?"
@@ -4097,10 +4097,10 @@ CharaInfo,1,NoGuild,Sin alianza
 CharaInfo,1,HunterExplanation,"<yellow>Una clase orientada al combate a corta distancia,<c><br>sobresalen en enfrentarse a enemigos en espacios<br>reducidos. Con alto HP y Defensa, pueden defenderse<br>cuando operan solos."
 CharaInfo,1,RangerExplanation,"<yellow>Una clase orientada al combate a medio alcance,<c> usan<br>distancia armas para enfrentarse a los enemigos manteniendo<br>la óptima distancia. También pueden apoyar a otros<br>jugadores con un rango de rondas especiales."
 CharaInfo,1,ForceExplanation,"<yellow>Una clase orientada al combate de largo alcance,<c> hacen uso<br>de Técnicas para asaltar al enemigo a distancia. haciendo<br>uso de una variedad de Técnicas, pueden explotar la<br>habilidad de un enemigo. Debilidades elementales."
-CharaInfo,1,FighterExplanation,Especialistas en combate cuerpo a cuerpo agresivo. Lo que les falta en defensa lo compensan con sus ataques devastadores y pulverizadores.
-CharaInfo,1,GunnerExplanation,Especialistas en combate de rango cercano y medio. Acaban rápidamente<br>con los enemigos gracias a su gran movilidad y un torrente incesante<br>de balas.
+CharaInfo,1,FighterExplanation,"<yellow>Una clase orientada al combate a ultra corta distancia,<c> están en su mejor momento cuando presionan al enemigo. Lo que les falta en Defensa lo compensan sus ataques devastadores y pulverizadores."
+CharaInfo,1,GunnerExplanation,"<yellow>Una clase orientada al combate a corta distancia,<c> que<br>sobresale en empuñando armas a distancia a quemarropa. Hacen<br>el trabajo ligero de enemigos con su gran movilidad y un<br>torrente implacable de balas."
 CharaInfo,1,TecherExplanation,"Especialistas en combate cuerpo a cuerpo y Técnicas. Con<br>mejora de habilidades temporales y curación, pueden<br>inclinar cualquier batalla a su favor."
-CharaInfo,1,BraverExplanation,Especialistas en combate cercano y a largo alcance. Cada ataque es simple pero esconde una complejidad<br>más profunda.
+CharaInfo,1,BraverExplanation,<yellow>Una clase adecuada para el combate a cualquier<br>distancia.<c> Puede cambiar sin problemas entre corto y<br>largo alcance armas. Cada ataque es simple pero<br>esconde un problema más profundo. complejidad.
 CharaInfo,1,BouncerExplanation,<yellow>Una clase orientada al combate a corta y media distancia.<c><br>Altamente móvil y hábil en el combate aéreo. Su físico y<br>Elemental Downs te dará la ventaja en la batalla.
 CharaInfo,1,SummonerExplanation,Especialistas en el uso de Familiares.<br>Esta clase brilla cuando utiliza sus Familiares para adaptarse hábilmente<br>a cualquier situación.
 CharaInfo,1,SlayerExplanation,Especialistas en combate a corta distancia. Los Slayers eliminan fácilmente<br>a los enemigos con una combinación de ataques de disparo y cuerpo a cuerpo.
@@ -7574,7 +7574,7 @@ SkillExplanation,1,HealTank,Recupera el 50% de tu HP máximo.
 SkillExplanation,1,RecoveryMoonAtomizer,Revive a un jugador incapacitado cercano.
 SkillExplanation,1,HunterSwordNormalAttackPlus,Puedes realizar 5 ataques normales con una espada.
 SkillExplanation,1,HunterSwordAttackExtra,Puedes realizar hasta 5 ataques normales.<br><yellow> *Solo se puede usar con una espada. <c>
-SkillExplanation,1,HunterSwordGuardCounter,facilitar un contraataque. <br><yellow> *Solo se puede usar con una espada. <c>
+SkillExplanation,1,HunterSwordGuardCounter,Realizar una Guardia Perfecta con Acción de Arma desatará automáticamente un<br>contraataque. <yellow>*Solo se puede usar con una espada.<c>
 SkillExplanation,1,HunterFlashGuard,Reduce el daño recibido.
 SkillExplanation,1,HunterParryingPPHeal,Recupera PP al ejecutar Hunter Arts Avenger.
 SkillExplanation,1,HunterParryingPaJustGuard,Niega los ataques enemigos cuando sueltas un Photon Art.<br><yellow> *Solo se puede usar con armas de cazador. <c>
@@ -7643,7 +7643,7 @@ SkillExplanation,1,WarCry,Llama la atención del enemigo hacia ti.
 SkillExplanation,1,IronWill,Agrega la posibilidad de retener 1 HP cuando sufres daño que de otro modo te habría incapacitado. Te vuelve invencible por un corto tiempo cuando se activa.
 SkillExplanation,1,HunterAtpStrikeUp1,Aumenta tu poder cuerpo a cuerpo.
 SkillExplanation,1,HunterAtpStrikeUp2,Aumenta tu poder cuerpo a cuerpo. Produce un efecto más fuerte que Melee Power Up 1.
-SkillExplanation,1,FuryStance,atacas a los enemigos y al mismo tiempo aumentas el daño cuerpo a cuerpo que recibes.
+SkillExplanation,1,FuryStance,Habilidad de postura pasiva que aumenta el daño de ataque cuerpo a cuerpo y a distancia que infliges a los enemigos y al mismo tiempo aumenta el daño cuerpo a cuerpo que recibes.
 SkillExplanation,1,FuryStanceUp1,Aumenta el daño de ataque cuerpo a cuerpo y a distancia que infliges a los enemigos mientras usas Fury Stance.
 SkillExplanation,1,FuryStanceUp2,Aumenta el daño de ataque cuerpo a cuerpo y a distancia que infliges a los enemigos mientras usas Fury Stance.
 SkillExplanation,1,FuryStanceCritical,Aumenta tu tasa de golpes críticos mientras usas Fury Stance.
@@ -7657,7 +7657,7 @@ SkillExplanation,1,HunterDfpFirearmUp1,Aumenta tu defensa a distancia.
 SkillExplanation,1,JustGuard,Niega el daño cuando haces guardia justo antes de ser golpeado por un ataque enemigo.
 SkillExplanation,1,JustCounter,Los ataques realizados inmediatamente después de una Guardia Perfecta exitosa se convierten en Ataques Perfectos.
 SkillExplanation,1,Rare10Hunter,Aumenta el daño que infliges cuando estás equipada con un arma de rareza 10☆ o superior. <yellow>Esta habilidad solo se puede usar<br>con una clase principal.
-SkillExplanation,1,FuryComboUp,Atacar mientras Fury Stance está activo. La bonificación máxima de daño es del 10%.
+SkillExplanation,1,FuryComboUp,Otorga una bonificación de daño cada vez que realizas un ataque perfecto exitoso mientras Fury Stance está activo. La bonificación máxima de daño es del 10%.
 SkillExplanation,1,PrettyGood,Reduce la duración de las dolencias de estado que te afectan.
 SkillExplanation,1,Sacrifice,Restaura HP cuando un enemigo muere dentro de un rango fijo mientras Guard Stance está activo.
 SkillExplanation,1,HunterAtpStrikeUp3,Aumenta tu poder cuerpo a cuerpo. Produce un efecto más fuerte que Melee Power Up 2.
@@ -7812,7 +7812,7 @@ SkillExplanation,1,Katana:ComboCountSkill,Usar otro Photon Art no interrumpirá 
 SkillExplanation,1,Katana:Ambition,"Neutraliza los ataques enemigos en un momento determinado después de lanzar un Photon Art o un ataque normal, y<br>automáticamente desata un contador. <yellow>*Solo se puede usar con una Katana.<c>"
 SkillExplanation,1,BraverCounterArrow,Realizar un contraataque con la acción de arma desatará una contraflecha.<br><yellow>*Solo se puede usar con arco.<c>
 SkillExplanation,1,BraverCompoundbowHoming,Las flechas lanzadas con ataques normales obtienen capacidad de seguimiento.<br><yellow>*Solo se puede usar con arco.<c>
-SkillExplanation,1,BraverCompoundbowSlideDodge,Usar un Photon Art mientras realizas una esquiva lateral te hará deslizarte mientras atacas.<br><yellow>*Solo se puede usar con arco.<c>
+SkillExplanation,1,BraverCompoundbowSlideDodge,Usar una acción de arma mientras presionas el control direccional en el momento justo después de soltar un Photon Art te hará deslizarte mientras atacas. <yellow>*Solo se puede usar con un arco.<c>
 SkillExplanation,1,BouncerDownRateUp,Aumenta el factor de derribo (Down Factor) aplicado a tus enemigos.
 SkillExplanation,1,BouncerNakedKiller,Aumenta el daño que infliges y reduce el daño que recibes según la cantidad de partes enemigas destruidas en un solo enemigo.
 SkillExplanation,1,BouncerDefeatPpGain,Recuperas PP cuando un enemigo cercano es derribado.<br><yellow>*Solo puede ser utilizado por una Clase Principal.<c>
@@ -7822,7 +7822,7 @@ SkillExplanation,1,BouncerElementFrail,Las Jet Boots infligen un factor de reduc
 SkillExplanation,1,BouncerPhotonBladeFever,Aumenta la cantidad de Photon Blades disparadas en momentos específicos durante los Photon Arts.<br><yellow>*Solo Clase Principal/Soaring Blades.<c>
 SkillExplanation,1,BouncerPhotonBladeFeverUp,Aumenta la cantidad de Photon Blades disparadas mientras Fanatic Blade está activo.<br><yellow>*Solo Clase Principal/Soaring Blades.<c>
 SkillExplanation,1,BouncerPhotonBladePpGain,Recuperas PP al golpear a un enemigo con una Photon Blade.<br><yellow>*Solo se puede usar con Soaring Blades.<c>
-SkillExplanation,1,BouncerElementBurst,Consume el elemento de las Jet Boots para disparar una ráfaga potente.<br><yellow>*Solo se puede usar con Jet Boots.<c>
+SkillExplanation,1,BouncerElementBurst,"<yellow>[Habilidad activa]<c> <br>Aumenta el indicador atacando o esquivando, luego gástalo para disparar<br>una sola explosión poderosa. <yellow>*Solo se puede usar con Jet Boots.<c>"
 SkillExplanation,1,BouncerJetBootsElementChange,Cambia el elemento de las Jet Boots al golpear a un enemigo con Photon Arts.<br><yellow>*Solo se puede usar con Jet Boots.<c>
 SkillExplanation,1,BouncerJetBootsAttackExtra,Puedes encadenar 4 ataques normales juntos.<br><yellow>*Solo se puede usar con Jet Boots.<c>
 SkillExplanation,1,BouncerJetBootsJetAttack,Mantener presionado el botón de ataque normal cuando los enemigos están dentro de un cierto rango desatará ataques combinados que aumentan<br>gradualmente en velocidad. <yellow>*Solo se puede usar con Jet Boots.<c>
@@ -7848,7 +7848,7 @@ SkillExplanation,1,PerfectKeeper,Aumenta el daño infligido cuando tu HP es del 
 SkillExplanation,1,SRollUP,Aumenta el daño infligido mientras realizas un Stylish Roll.
 SkillExplanation,1,SRollCombo,Otorga una bonificación de potencia a los Ataques Perfectos realizados durante un Stylish Roll.
 SkillExplanation,1,SRollArts,Consume PP para desatar un ataque potente durante un Stylish Roll.
-SkillExplanation,1,ToughnessTime,Reduce el daño recibido durante Showtime. Requiere haber aprendido Twin Machine Guns Focus.
+SkillExplanation,1,ToughnessTime,Disminuye la reducción del indicador de enfoque que ocurre cuando recibes daño durante Showtime. Solo funciona si se ha aprendido Twin Machine Guns Focus.
 SkillExplanation,1,ShowTimeStar,Aumenta el PP máximo mientras Showtime está activo y las ametralladoras gemelas están equipadas.
 SkillExplanation,1,HighTime,Aumenta el daño infligido si no recibes daño durante Showtime. <yellow>Solo se puede usar con una Clase Principal.
 SkillExplanation,1,GunnerZeroRangeCritical,Aumenta tu tasa crítica al golpear a un enemigo a corta distancia.
@@ -7931,7 +7931,7 @@ SkillExplanation,1,ElementalWeakPoint,Aumenta el daño infligido al atacar la de
 SkillExplanation,1,TecherPPUp1,Aumenta tu PP máximo.
 SkillExplanation,1,TecherDfpTechnicUp1,Aumenta tu defensa técnica.
 SkillExplanation,1,PPRestraint,Impulsa la recuperación automática de PP. Aumenta aún más la recuperación mientras estás estático.
-SkillExplanation,1,WandGear,Acumula energía de técnica y activa Photonic Fury al realizar un ataque normal.
+SkillExplanation,1,WandGear,Carga tu indicador de enfoque cuando golpeas a un enemigo con una técnica cargada y activa la furia fotónica cuando realizas un ataque normal.
 SkillExplanation,1,TerritoryBurst,Potencia el área de efecto de las técnicas de apoyo.
 SkillExplanation,1,TecherPPUp2,Aumenta tu PP máximo.
 SkillExplanation,1,TecherPPConvert,"Aumenta la recuperación automática de PP durante un tiempo, reduciendo temporalmente tu HP máximo."
@@ -7975,8 +7975,8 @@ SkillExplanation,1,BraverGuard,Te permite protegerte contra ataques enemigos lev
 SkillExplanation,1,BraverStep,Te desplaza rápidamente una corta distancia con destreza.
 SkillExplanation,1,BraverStepAdvance,Extiende la duración de la invulnerabilidad durante un paso lateral.
 SkillExplanation,1,BraverStepAttack,Te permite atacar mientras realizas un paso lateral.
-SkillExplanation,1,BraverJustReversal,Te permite levantarte rápidamente tras ser derribado.
-SkillExplanation,1,Combat,Activa el poder de combate. Úsalo nuevamente para liberar un golpe final. <yellow>*Solo armas Braver.<c>
+SkillExplanation,1,BraverJustReversal,Te permite saltar rápidamente después de haber sido derribado al suelo.
+SkillExplanation,1,Combat,Solo katana. Muévete a gran velocidad y realiza ataques cortantes a los enemigos cercanos durante un tiempo determinado. Presiona el ícono de habilidad nuevamente para dar un golpe final.
 SkillExplanation,1,CombatJABonus1,Otorga una bonificación de daño a los Ataques Perfectos realizados durante Katana Combat.
 SkillExplanation,1,CombatFinish,Otorga una bonificación de daño al golpe final de Katana Combat.
 SkillExplanation,1,ShortTime,"Sólo inclinarse. Durante un tiempo determinado, sacrifica la potencia de ataque estándar y el intervalo de ataque de tu arco para realizar un combo de<br>hasta tres ataques normales consecutivos."
@@ -7986,14 +7986,14 @@ SkillExplanation,1,AverageStance,Habilidad de postura pasiva que proporciona una
 SkillExplanation,1,AverageStanceUp1,Otorga una bonificación de daño a los ataques realizados durante Average Stance.
 SkillExplanation,1,AverageStanceCritical,Aumenta tu tasa de golpes críticos durante Average Stance.
 SkillExplanation,1,AverageChargeBonus,Aumenta el daño de ataques cargados realizados durante Average Stance.
-SkillExplanation,1,WeakStance,Aumenta el daño al atacar la debilidad elemental de un enemigo. Hace que Average Stance sea ineficaz.
+SkillExplanation,1,WeakStance,Habilidad de postura activa. Aumenta el daño al explotar el punto débil de un enemigo o la debilidad elemental con una técnica. Hace que la postura básica sea ineficaz.
 SkillExplanation,1,WeakStanceUp1,Otorga una bonificación de daño al atacar la debilidad elemental durante Weak Stance.
 SkillExplanation,1,WeakStanceCritical,Aumenta la tasa de golpes críticos al atacar la debilidad elemental durante Weak Stance.
 SkillExplanation,1,WeakChargeBonus,Otorga una bonificación de daño a los ataques cargados contra la debilidad elemental durante Weak Stance.
 SkillExplanation,1,BraverMag,Agrega un porcentaje de la destreza de tu Mag al poder cuerpo a cuerpo y a distancia.
 SkillExplanation,1,Rare10Braver,Bonificación al equipar armas de rareza 10 o superior. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,JustReversalBonus,Recupera HP al activar una recuperación perfecta (Just Reversal).
-SkillExplanation,1,KatanaGear,Aumenta el daño y la tasa de críticos mientras el indicador de enfoque (Focus Gauge) está al máximo.
+SkillExplanation,1,KatanaGear,Aumenta la potencia cuerpo a cuerpo a medida que se carga el indicador de enfoque. Otorga poder cuerpo a cuerpo adicional y tasa crítica por un tiempo cuando contraatacas con el indicador de enfoque al máximo.
 SkillExplanation,1,SnatchStep,Permite infligir daño cuerpo a cuerpo al realizar un paso lateral.
 SkillExplanation,1,BraverDexUp1,Aumenta tu destreza.
 SkillExplanation,1,BraverDexUp2,Aumenta tu destreza. Produce un efecto más fuerte que el nivel 1.
@@ -8001,7 +8001,7 @@ SkillExplanation,1,BraverAtpStrikeUp1,Aumenta tu poder de ataque cuerpo a cuerpo
 SkillExplanation,1,BraverAtpFirearmUp1,Aumenta tu poder de ataque a distancia.
 SkillExplanation,1,CombatEscape,Activa un periodo de invulnerabilidad al iniciar Katana Combat. <yellow>Solo Clase Principal.
 SkillExplanation,1,ShortTimeUp2,Aumenta tu poder a distancia con arco en modo Fuego Rápido. Más fuerte que el nivel 1.
-SkillExplanation,1,ShortTimeAdvance,Potencia los efectos al realizar un ataque normal durante el modo Fuego Rápido.
+SkillExplanation,1,ShortTimeAdvance,Reduce el período de recuperación de Rapid Fire y aumenta la recuperación de PP inducida al realizar un ataque normal mientras se está en modo Rapid Fire.
 SkillExplanation,1,CounterEdge,Lanza un golpe adicional que atraviesa enemigos tras un contraataque.
 SkillExplanation,1,AttackAdvance,Aumenta la potencia de los ataques normales.
 SkillExplanation,1,ChargeShoot,Aumenta la potencia y velocidad de los ataques normales cargados con arco.
@@ -8040,7 +8040,7 @@ SkillExplanation,1,HealShare,"Al recuperar HP, los personajes cercanos también 
 SkillExplanation,1,HealBonus,Otorga una bonificación de recuperación adicional al curar HP.
 SkillExplanation,1,RapidBurst,Aumenta la velocidad de ataque de las Botas Jet mientras está activo. También aumenta ligeramente la velocidad de carga de Técnicas.
 SkillExplanation,1,RapidBurstJABonus,Solo Botas Jet. Otorga una bonificación de potencia a los Ataques Perfectos realizados durante Rapid Boost.
-SkillExplanation,1,ElementalBurst,La acción de arma cancela el elemento almacenado en tu medidor de enfoque. Requiere medidor de enfoque en Botas Jet.
+SkillExplanation,1,ElementalBurst,Activa una explosión elemental que puede infligir una alteración de estado cuando una acción de arma cancela un elemento almacenado en tu indicador de enfoque. Se requiere enfoque en botas a reacción.
 SkillExplanation,1,PhotonBladeFever,Duplica la cantidad de disparos de Photon Blade mientras está activo.
 SkillExplanation,1,PhotonBladeFeverUp1,Aumenta la potencia de tus Photon Blades mientras Photon Blade Fever está activo.
 SkillExplanation,1,PhotonBladeEscape,Activa un periodo de invulnerabilidad al moverte mientras usas Photon Blades.
@@ -8054,9 +8054,9 @@ SkillExplanation,1,JetBootsStrike,Convierte el daño de las Botas Jet a daño cu
 SkillExplanation,1,BreakStanceDualBonus,Aumenta el daño infligido a partes destructibles con Soaring Blades. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,FieldRemain,Mantiene los efectos de campo activos por un tiempo tras alejarse. Solo efectivo para campos que producen efectos de mejora.
 SkillExplanation,1,JetBootsEscape,Te hace invulnerable por un período de tiempo cuando realizas un ataque normal o PA mientras tienes Jet Boots equipadas. <yellow>Esta habilidad solo se puede usar con una clase principal.
-SkillExplanation,1,JetBootsGearBoost,Aumenta la tasa de carga de Jet Boots Gear mientras Shifta o Deband están activos. <yellow>Solo Clase Principal.
+SkillExplanation,1,JetBootsGearBoost,Aumenta el incremento de tu indicador de enfoque debido a los ataques mientras Shifta o Deband están en efecto y Jet Boots están equipadas. <yellow>Solo clase principal.
 SkillExplanation,1,OnemoreJump,Permite realizar un salto adicional al ejecutar un ataque normal o PA con Botas Jet equipadas. <yellow>Solo Clase Principal.
-SkillExplanation,1,DodgeAutoField,Mantiene los efectos de campo activos al realizar un paso lateral (dodge). <yellow>Solo Clase Principal.
+SkillExplanation,1,DodgeAutoField,Implementa automáticamente un campo aprendido cuando realizas con éxito un paso lateral cegador. Esta habilidad no incluye un tiempo de reutilización. <yellow>Solo clase principal.
 SkillExplanation,1,BouncerHighLevelBonus,Otorga una bonificación al daño infligido por el jugador.
 SkillExplanation,1,BouncerNextJump,Permite realizar un segundo salto.
 SkillExplanation,1,BouncerFirstArtsJAAddition,Añade un bono de Ataque Perfecto a la primera acción tras su activación. No afecta a mascotas ni Técnicas.
@@ -8096,7 +8096,7 @@ SkillExplanation,1,EasySympathy,Amplía el periodo receptivo de Pet Sympathy. <y
 SkillExplanation,1,PetStand,Otorga una bonificación de daño durante un tiempo determinado a cambio de que el jugador también reciba daño cada vez que una mascota reciba daño. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,SummonerPPAdvance,Aumenta el daño de Photon Blast.
 SkillExplanation,1,TamingMaster,Todas las estadísticas se agregan cuando maximizas el pedigrí de tu mascota.
-SkillExplanation,1,PetSwtichStrike,ee Poder. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
+SkillExplanation,1,PetSwtichStrike,Convierte los ataques de tu mascota para que se realicen con Melee Power. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,PetSwtichShoot,Convierte los ataques de tu mascota para que se realicen con Poder a Distancia. <yellow>Esta habilidad solo se puede usar con una<br>clase principal.
 SkillExplanation,1,AllAttackBonus1,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,AllAttackBonus2,Otorga una bonificación al daño infligido por el jugador y las mascotas.
@@ -8141,7 +8141,7 @@ SkillExplanation,1,WpnmanJustReversal,Te permite saltar rápidamente después de
 SkillExplanation,1,WpnmanNextJump,Permite saltar en dos etapas.
 SkillExplanation,1,WpnmanOneMoreJump,"Te permite realizar un segundo salto después de pisotear a un enemigo usando [Salto doble] mientras estás equipado con una espada, ametralladoras gemelas o un Talis."
 SkillExplanation,1,WpnmanComeAgain,Le permite pasar a un tiro de marcado hasta dos veces.
-SkillExplanation,1,WpnmanChargeKeep,Realiza una acción de esquivar mientras se carga una acción o técnica de arma.
+SkillExplanation,1,WpnmanChargeKeep,"Cuando un Talis está equipado, mantiene temporalmente una carga cuando realizas una acción de esquivar mientras se carga una acción o técnica de arma."
 SkillExplanation,1,WpnmanTMGAttackPPSave,Reduce la cantidad de PP consumidos por los ataques normales de Twin Machine Guns.
 SkillExplanation,1,WpnmanGearTimeGain,Aumenta gradualmente tu indicador de concentración de héroe después de comenzar una misión.
 SkillExplanation,1,FirstBlood,Convierte los ataques iniciales y los ataques realizados después de una acción de arma en ataques perfectos. No afecta las Técnicas.
@@ -8169,13 +8169,13 @@ SkillExplanation,1,VillainWeaponBonus1,Aumenta la potencia cuando se equipa un a
 SkillExplanation,1,VillainWeaponBonus2,Aumenta la potencia cuando se equipa un arma fantasma. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,VillainDodgePPRegain,Recupera PP cuando realizas con éxito un paso lateral fantasma. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,VillainFullDrive,Otorga una bonificación al incremento de tu indicador de enfoque.
-SkillExplanation,1,VillainMarker,Acumula un marcador en el enemigo cada vez que conectas un ataque. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainMarker,Hace que los marcadores que se pueden detonar mediante una acción de arma cargada se acumulen en el enemigo cada vez que realizas un ataque. <yellow>Solo para la clase principal.
 SkillExplanation,1,VillainMarkHeal,Recupera HP cuando el nivel del Phantom Marker alcanza el máximo. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainMarkPpDrain,Recupera PP cuando el nivel del Phantom Marker alcanza el máximo. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainZeroRangeBoost,Aumenta el nivel de acumulación de marcador fantasma por cada ataque realizado con éxito a corta distancia. <yellow>Esta habilidad solo se puede usar con una<br>clase principal.
 SkillExplanation,1,VillainLongRangeBoost,Aumenta el nivel de acumulación de Marcador Fantasma por cada ataque realizado con éxito a distancia. <yellow>Esta habilidad solo se puede usar con una clase<br>principal.
-SkillExplanation,1,VillainChaseMarkBoost,"Bonificación de daño contra enemigos afectados por elementos, Jellen o Blight Rounds. <yellow>Solo Clase Principal."
-SkillExplanation,1,PrimalTimePlus,Aumenta el daño infligido con un arma Phantom durante Phantom Time. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainChaseMarkBoost,"Aumenta el nivel de acumulación de marcadores fantasma en enemigos afectados por un estado alterado, Jellen o Blight Rounds. <yellow>Esta habilidad solo se puede usar con una clase principal."
+SkillExplanation,1,PrimalTimePlus,Da una probabilidad determinada de infligir Jellen a los enemigos atacados con éxito con un arma fantasma durante el tiempo fantasma. <yellow>Solo para la clase principal.
 SkillExplanation,1,VillainTecShortCharge,"Reduce la potencia de las técnicas, pero disminuye el tiempo de carga y el coste de PP."
 SkillExplanation,1,VillainMag,Agrega un porcentaje de la destreza de tu Mag equipado al ataque total.
 SkillExplanation,1,VillainPhotonStream1,Otorga una bonificación de daño basada en tu PP máximo (con límite).
@@ -8185,13 +8185,13 @@ SkillExplanation,1,VillainChargeTechJA,Convierte las técnicas cargadas en Ataqu
 SkillExplanation,1,VillainPPRestraint,Aumenta la recuperación de PP y la regeneración automática al golpear con ataques normales.
 SkillExplanation,1,VillainLoadOfThorn,Reduce el nivel de acumulación de Phantom Marker y aumenta el daño causado por las detonaciones. <yellow>Esta habilidad solo se puede usar con una<br>clase principal.
 SkillExplanation,1,VillainBullsEye,"Cuando se equipa un rifle, se produce un efecto de reacumulación de marcadores basado en el nivel del marcador en el momento de la detonación. <yellow>Esta habilidad solo se puede usar con una clase principal."
-SkillExplanation,1,VillainAttackJellen,Los ataques con armas Phantom tienen probabilidad de aplicar el efecto Jellen. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainAttackJellen,Da una probabilidad determinada de infligir Jellen a enemigos atacados con éxito con un arma fantasma. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,VillainJellenRedress,Mejora el efecto Jellen cuando lanzas un ataque con arma fantasma a un enemigo que tiene el efecto Jellen. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,VillainQuickCut,"Cuando se equipa una Katana, se permite el movimiento a alta velocidad con una acción de arma con ATK y PA normales especialmente sincronizados. <yellow>Solo<br>se puede usar con la clase principal."
 SkillExplanation,1,VillainDodgeCounterShot,"Recarga rondas de ATK para Phantom Sidestep y agrega ATK de seguimiento cuando usas un ATK, PA o técnica normal con una varilla. <yellow>Solo disponible con<br>una clase principal."
 SkillExplanation,1,VillainSprintTecCharge,Permite moverse a alta velocidad mientras se carga una técnica.
 SkillExplanation,1,VillainGespenst,El daño recibido se reduce y los problemas de estado se neutralizan durante un tiempo determinado cuando eres atacado mientras se reduce HP. <yellow>Solo se puede usar con una clase principal.
-SkillExplanation,1,VillainAmbivalence,Permite realizar ataques poderosos con técnicas usando una Vara. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainAmbivalence,Provoca acumulación de marcadores y aumento en tu indicador de enfoque cuando golpeas al enemigo con una técnica usando una vara. <yellow>Solo se puede usar con una clase principal.
 SkillExplanation,1,VillainTouchDown,Habilidad de aterrizaje.
 SkillExplanation,1,VillainDodge,Aumenta el movimiento de carga y otorga invulnerabilidad momentánea después de cargar la técnica con un arma fantasma. <yellow>Solo disponible con una clase principal.
 SkillExplanation,1,PrimalTimePlus2,Aumenta la velocidad de acumulación de marcadores durante Phantom Time. <yellow>Solo Clase Principal.
@@ -8216,7 +8216,7 @@ SkillExplanation,1,MasterDualbladeGear,Gasta una carga del indicador de enfoque 
 SkillExplanation,1,MasterWandGear,"Mantén presionada la acción del arma para usar el indicador de enfoque y habilitar una P. Guard extendida. Seguirá un ATK fuerte, proporcional al enfoque<br>utilizado. <yellow>Utilizable sólo por una clase principal."
 SkillExplanation,1,MasterMag,"Convierte el total de stats de tu Mag en ataque cuerpo a cuerpo, a distancia y técnico."
 SkillExplanation,1,MasterDSaberSkipArts,"Cuando tienes un Double Sabre equipado, usar un Photon Art sin ninguna entrada direccional te saltará la primera mitad del Photon Art. <yellow>Esta habilidad solo puede ser utilizada<br>por una Clase Principal."
-SkillExplanation,1,MasterDSaberBlink,Permite teletransportarse durante ataques para moverse a alta velocidad. <yellow>Solo Clase Principal.
+SkillExplanation,1,MasterDSaberBlink,"Con Double Sabre equipado, realiza acciones de arma o ataques normales cronometrados especialmente para moverte a gran velocidad. <yellow>Esta habilidad solo puede ser utilizada por una Clase Principal."
 SkillExplanation,1,MasterStepAttack,Permite atacar mientras realizas un paso lateral.
 SkillExplanation,1,MasterJustReversal,Permite levantarse rápidamente tras ser derribado.
 SkillExplanation,1,MasterHighLevelBonus,Otorga una bonificación al daño infligido por el jugador.
@@ -8336,11 +8336,11 @@ SkillExplanation,1,TechterMegidoCharge,"Al golpear a un enemigo con técnicas de
 SkillExplanation,1,TechterOverDrive,"<yellow>[Habilidad activa]<c> Recuperar PP y HP, así<br>como temporalmente aumentar el PP máximo<br>tanto para usted como para otros<br>personajes de tu grupo. <yellow>*Solo puede ser<br>utilizado por una clase principal.<c>"
 SkillExplanation,1,TechterWandFanatic,La velocidad y la potencia de tus ataques normales aumentan durante Wand Lovers.<br><yellow>*Solo puede ser utilizado por una clase principal equipada con un bastón.<c>
 SkillExplanation,1,BraverFinishPrizeBossPlus,Duplica la cantidad de golpes de bonificación final de Brave Combat cuando atacas a un jefe enemigo<br>durante Brave Combat. <yellow>*Solo puede ser utilizado por armas de clase principal/Braver.<c>
-SkillExplanation,1,BraverJustGuardPpGain,Recupera PP tras una Guardia Perfecta. <yellow>Solo Clase Principal/Katana.
-SkillExplanation,1,BraverCompoundBowPARush,Encadena artes con menor costo de PP. <yellow>Solo Clase Principal/Arco.
+SkillExplanation,1,BraverJustGuardPpGain,Recupera PP cuando ejecutas con éxito una guardia<br>perfecta. <yellow>*Solo puede ser utilizado por una Clase<br>Principal/Katana.<c>
+SkillExplanation,1,BraverCompoundBowPARush,Encadenar Photon Arts reduce tu PP<br>consumo. <yellow>*Solo puede ser utilizado por una<br>Clase Principal/Arco.<c>
 SkillExplanation,1,BraverBraveGear,Aumenta temporalmente la recuperación de PP<br>cuando atacando así como la potencia de tu<br>ataques y contraataques normales cuando realizar<br>una guardia perfecta exitosa con una acción de<br>arma. <yellow>*Solo puede ser utilizado por armas de<br>clase principal/Braver.<c>
-SkillExplanation,1,RangerWeakBulletLauncher,Permite usar Blight Rounds con lanzador. <yellow>Solo Clase Principal/Lanzador.
-SkillExplanation,1,RangerGaugeShotGunPlus,Transforma Spread Shot en ataque de área frontal. <yellow>Solo Clase Principal/Rifle.
+SkillExplanation,1,RangerWeakBulletLauncher,Te permite usar Blight Rounds mientras estás equipado con un<br>lanzador. <yellow>*Solo puede ser utilizado por una clase<br>principal/lanzador.<c>
+SkillExplanation,1,RangerGaugeShotGunPlus,Cambia Spread Shot a un ataque de área de efecto hacia tu<br>frente. <yellow>*Solo puede ser utilizado por un rifle de asalto/clase<br>principal.<c>
 SkillExplanation,1,RangerClusterBombEscape,Activa un período de invulnerabilidad cuando usas la acción de tu arma. <br><yellow>*Solo se puede usar con un iniciador.<c>
 SkillExplanation,1,HunterSwordParryingAuto,"Una vez que hayas cargado un arte de fotones durante un cierto período de tiempo, ser golpeado por un enemigo hará que el arte de fotones se libere con Hunter Arts<br>Avenger aplicado. <yellow>*Solo puede ser utilizado por una clase principal/espada.<c>"
 SkillExplanation,1,HunterParryingPaJustGuardEscape,Confiere un período de invulnerabilidad adicional a una parada perfecta de Hunter Arts<br>exitosa. <yellow>*Solo puede ser utilizado por armas de clase principal/cazador.<c>
@@ -8352,18 +8352,18 @@ SkillExplanation,1,HunterWarCry,<yellow>[Habilidad activa]<c> Llama la atención
 SkillExplanation,1,HunterIronWill,Un ataque incapacitante te dejará con 1 HP y un momento de invulnerabilidad cuando se active esta habilidad.<br><yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,HunterMassiveHunter,<yellow>[Habilidad activa]<c> Reduce temporalmente el daño recibido y evita que los ataques enemigos te lancen o<br>te derriben.
 SkillExplanation,1,HunterSwordGuardCounterPlus,Realizar una Guardia de Espada y seguir<br>con un ataque normal desatará un<br>contraataque adicional.
-SkillExplanation,1,RangerWeakBullet,Dispara una bala que aumenta el daño en la parte impactada. <yellow>Solo Clase Principal/Rifle.
+SkillExplanation,1,RangerWeakBullet,<yellow>[Habilidad activa]<c> Dispara una bala que aumenta el daño<br>infligido a la parte impactada. <yellow>*Solo puede ser utilizado<br>por un rifle de asalto/clase principal.<c>
 SkillExplanation,1,RangerWeakBulletParse,Las partes golpeadas por Blight Rounds que sean impactadas una cantidad determinada de veces recibirán un mayor daño y la duración del efecto de<br>la habilidad se extenderá. <yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,RangerWeaponActionAvoid,Las acciones con armas desencadenarán un período de<br>invulnerabilidad. <yellow>*Solo se puede usar con un rifle de<br>asalto.<c>
 SkillExplanation,1,RangerGrenadeTrap,"Mantenga presionado el botón de acción del arma<br>para realizar un ataque con granadas.<br>Introduzca una dirección al mismo tiempo lanzar<br>la granada, o ingrese none para colocarlo en la<br>ubicación actual. <yellow>*Solo se puede usar con un<br>rifle de asalto.<c>"
 SkillExplanation,1,ForcePpConvert,<yellow>[Habilidad activa]<c> Consume HP en un porcentaje de tu HP máximo a cambio de una mayor velocidad de recuperación<br>natural de PP durante un tiempo determinado.
 SkillExplanation,1,ForcePpConvertReCharge,Aumenta el stock de Conversión PP.
 SkillExplanation,1,ForceChargePpRevival,Recuperación natural de PP mientras cargas técnicas. <yellow>Solo Armas Fuerza.
-SkillExplanation,1,ForceHeal,Cura a aliados cercanos al usar Restasigne. <yellow>Solo Clase Principal.
+SkillExplanation,1,ForceHeal,Los personajes cercanos también se curarán cuando uses un Restasigne. <br><yellow>*Solo puede ser utilizado por una clase principal.<c>
 SkillExplanation,1,FighterLimitBreakPhotonCharge,Recupera PP tras finalizar Limit Break. <yellow>Solo Clase Principal.
 SkillExplanation,1,FighterLimitBreakInsurance,"Durante la Sobrecarga, un ataque incapacitante te dejará con 1 HP y finalizará la Sobrecarga. También obtienes un momento de invulnerabilidad<br>cuando esto se activa. <yellow>*Solo puede ser utilizado por una clase principal.<c>"
 SkillExplanation,1,KnuckleDodgeHeatRevenge,"Después de esquivar con éxito con una acción de arma, tu ataque normal inicial cambiará a su quinto paso.<br><yellow>*Solo se puede usar con Knuckles.<c>"
-SkillExplanation,1,FighterKnuckleSwayCounterPlus,Contraataque adicional tras Knuckle Sway.
+SkillExplanation,1,FighterKnuckleSwayCounterPlus,"Cuando se activa Knuckle Sway Counter, realizar una acción de arma desatará un contraataque adicional."
 SkillExplanation,1,FighterKnuckleNormalAttackPlus,Permite combos de hasta 5 ataques normales con Knuckles.
 SkillExplanation,1,GunnerChainFinishTimeBonus,"Después de que se haya activado Chain Finisher Boost, dependiendo del tamaño de la cadena durante la activación de cadena, el tiempo<br>de reutilización se acortará. <yellow>*Solo puede ser utilizado por una clase principal.<c>"
 SkillExplanation,1,GunnerSRollArts,"Mientras la acción de arma está activa, presionar el botón PA consumirá PP para realizar un ataque de<br>alta potencia. <yellow>*Solo se puede usar con ametralladoras gemelas.<c>"
@@ -8375,7 +8375,7 @@ SkillExplanation,1,TechterPartyAssist,Los personajes distantes de tu grupo segui
 SkillExplanation,1,TechterWandElementChange,"Cuando usas una Técnica Cargada, tu Furia Fotónica adoptará el elemento de esa Técnica. <yellow>*Solo se<br>puede usar con una varita.<c>"
 SkillExplanation,1,TechterWandElementDiscard,Mantén presionado el botón de acción del arma para revertir los cambios elementales aplicados a Photonic Fury<br>mediante el cambio de elemento de varita. <yellow>*Solo se puede usar con una varita.<c>
 SkillExplanation,1,TechterHeal,Aumenta la cantidad de salud recuperada cuando usas Restasigne y también cura a los personajes<br>cercanos. <yellow>*Solo puede ser utilizado por una clase principal.<c>
-SkillExplanation,1,FighterKnuckleAttackExtra,Combos extendidos con Knuckles.
+SkillExplanation,1,FighterKnuckleAttackExtra,Puedes realizar hasta 5 ataques normales. <br><yellow>*Solo se puede usar con Knuckles.<c>
 SkillExplanation,1,ForceMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
 SkillExplanation,1,TechterMixTech,"Permite el uso de técnicas compuestas. Llene el indicador de técnicas compuestas atacando, luego<br>use el indicador para implementar técnicas compuestas. Se puede almacenar hasta 2 veces. <yellow>*Solo<br>puede ser utilizado por armas de clase principal/fuerza y ​​Techter.<c>"
 SkillExplanation,1,MixTechFD,Técnica compuesta de fuego y oscuridad. Utiliza el medidor de técnica<br>compuesta. Corta frente a ti con una enorme espada forjada en fuego y<br>oscuridad.
@@ -8470,7 +8470,7 @@ SkillExplanation,1,SlayerCriticalPpGain,Existe la posibilidad de recuperar PP al
 SkillExplanation,1,RangerStealthAttack,"Reduce la probabilidad de que los enemigos te elijan como objetivo, incluso al atacar."
 SkillExplanation,1,RangerWeakBulletBonus,Aumenta el daño a otras partes al impactar una parte enemiga con una munición de plaga.<br>Este efecto se aplica únicamente a tus propios ataques.
 SkillExplanation,1,RangerRifleGrenadeEscape,Te hace invulnerable durante un tiempo determinado al usar Granadero con fusil.<br><yellow>*Solo se puede usar con un fusil de asalto.<c>
-SkillExplanation,1,RangerLauncherFanatic,<yellow>[Habilidad activa]<c><br>Aumenta la potencia y la velocidad de los ataques normales sin cargar durante un tiempo determinado.<br><yellow>*Solo puede ser utilizada por una clase principal de tipo Lanzador.<c>
+SkillExplanation,1,RangerLauncherFanatic,<yellow>[Habilidad activa]<c> <br>Aumenta la potencia y velocidad de los ataques normales<br>sin carga durante un tiempo determinado. <yellow>*Solo puede ser utilizado por una<br>clase principal/lanzador.<c>
 SkillExplanation,1,GunnerChainTriggerFinishEscape,Te hace invulnerable durante un tiempo determinado al ejecutar un Chain Finish.<br><yellow>*Solo puede ser utilizado por una clase principal equipada con pistolas gemelas.<c>
 SkillExplanation,1,GunnerChainTriggerFinishPPSave,Reduce el consumo de PP durante un tiempo determinado al ejecutar un Remate de Cadena (Chain Finish).<br><yellow>*Solo puede ser utilizado por una Clase Principal equipada con Pistolas Gemelas.<c>
 SkillExplanation,1,GunnerInfinityFire,<yellow>[Habilidad activa]<c><br>Ejecuta un ataque sostenido de fuego rápido consumiendo una barra de energía acumulada al atacar.<br>Los efectos de Remate de cadena (Chain Finish) y Potenciador de cadena (Chain Boost) no se aplican a este ataque.<br><yellow>*Solo se puede utilizar con ametralladoras dobles.<c>
@@ -11133,7 +11133,7 @@ Visiphon,0,VisiphonBuyItemMessage,以下のアイテムを受け取ります。<
 Visiphon,0,RecruitTeamManager_None,チームが解散しているため表示できません。
 Visiphon,1,VisiphonTitle,VISÍFONO
 Visiphon,1,VisiphonFullTitle,VISÍFONO
-Visiphon,1,VisiphonFullTitleHint,"Op, gane artículos ingresando códigos de artículos y use varios menús. <c>"
+Visiphon,1,VisiphonFullTitleHint,"<c f0df60>Te permite buscar jugadores, usar tu Tienda personal, ganar artículos ingresando códigos de artículos y usar varios menús.<c>"
 Visiphon,1,VisiphonFullTitleHint_v,"<c f0df61> Te permite buscar jugadores, usar tu Tienda personal y usar varios menús. <c>"
 Visiphon,1,VisiphonMenu_Search,Búsqueda de ARCAS
 Visiphon,1,VisiphonMenu_Shop,Tienda personal
@@ -11893,7 +11893,7 @@ Synchronize,1,SynchronizeInaccessible,Este teletransportador no está disponible
 Synchronize,1,SynchronizeTransferStart,Teletransportador activado. Comenzando la teletransportación.
 Synchronize,1,SynchronizeMultiBossWakeUp,¿Activar el teletransportador?
 Synchronize,1,SynchronizeMultiBossMessage,El Teletransportador ha sido activado. Los<br>miembros del partido que estén dentro serán<br>teletransportados. en 30 segundos.<br><br>¿Quieres detener el teletransportador?
-Synchronize,1,SynchronizeMultiBossMessageExc,informó<br>después de un tiempo establecido.<br>¿Te gustaría detener el Teletransportador?
+Synchronize,1,SynchronizeMultiBossMessageExc,El Teletransportador ha sido activado. Los<br>miembros del partido que estén dentro<br>serán teletransportados. después de un<br>tiempo establecido. ¿Quieres detener el<br>teletransportador?
 Synchronize,1,SynchronizeMultiBossRemove,Detén el teletransportador.
 Synchronize,1,SynchronizeMultiBossGoto,Teletransportador activado. Ingrese al Teletransportador dentro de los próximos 30 segundos.
 Synchronize,1,SynchronizeMultiBossGotoExc,Teletransportado activado. Ingrese al Teletransportador dentro del tiempo asignado.
@@ -12062,7 +12062,7 @@ Synchronize,1,DKMultiBossGoto,Ir al jefe de misiones múltiples
 Synchronize,1,DKMultiBossWakeUp,Despertar al jefe de misiones múltiples
 Synchronize,1,DKMultiBossMessage,Mensaje del jefe de misiones múltiples
 Synchronize,1,DKMultiBossRemove,Eliminar jefe de misiones múltiples
-Synchronize,1,DKMultiBossTrans,Transferencia del jefe de misiones múltiples
+Synchronize,1,DKMultiBossTrans,※※※
 Synchronize,1,DKInaccessible,Inaccesible
 Synchronize,1,SynchronizeBossTitleDK,Sincronizar jefe
 Synchronize,1,SynchronizeBossMessageDK,※※※
@@ -13316,7 +13316,7 @@ TreasureDetail,1,Treasure_041,Tarjeta de Socio de Quna.<br>Puedes convocar al pe
 TreasureDetail,1,Treasure_042,Una unidad de estudio geológico<br>que te regaló Rojio.
 TreasureDetail,1,Treasure_043,Una pequeña tela que recogiste en el desierto.
 TreasureDetail,1,Treasure_044,Un fragmento de arma que te confiaron<br>los draconianos del planeta Amduskia.<br>Parece ser un núcleo de forma esférica.
-TreasureDetail,1,Treasure_045,"orejas para ser parte de<br>un arma, pero su origen específico no está claro."
+TreasureDetail,1,Treasure_045,"Un pedazo de algo que encontraste en el<br>Tundra de Naverius. Parece ser parte de un<br>arma, pero su origen específico no está<br>claro."
 TreasureDetail,1,Treasure_046,Un fragmento de arma al que te llevaron los Lillipans.<br>Parece ser un mango con un hermoso color<br>blanco puro.
 TreasureDetail,1,Treasure_047,Un arma que Zig restauró para ti.<br>Parece que podría ser algún tipo de varilla...
 TreasureDetail,1,Treasure_048,Un permiso emitido por ARKS HQ que<br>te permite cambiar tu clase a Luchador.
@@ -13346,7 +13346,7 @@ TreasureDetail,1,Treasure_072,＊＊＊
 TreasureDetail,1,Treasure_073,Tarjeta de socio de Io.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_074,Tarjeta de socio de Theodor.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_075,Un permiso emitido por ARKS HQ que<br>le permite explorar el área de Harukotan de la provincia<br>Daybreak.
-TreasureDetail,1,Treasure_076,exploración icted<br>del área de la provincia de Daybreak en Harukotan.
+TreasureDetail,1,Treasure_076,Un permiso emitido por ARKS HQ que le permite<br>realizar exploración sin restricciones del<br>área de la provincia de Daybreak en Harukotan.
 TreasureDetail,1,Treasure_077,Tarjeta de socio de Saga.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_078,Tarjeta de socio de Katori.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_079,Tarjeta de socio de Matoi.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
@@ -13383,7 +13383,7 @@ TreasureDetail,1,Treasure_110,Tarjeta de socio de Musashi.<br>Puedes convocar al
 TreasureDetail,1,Treasure_111,Tarjeta de socio de Yumiko.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_112,Tarjeta de socio del último samurái.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_113,Un permiso emitido por ARKS HQ que<br>le permite explorar el área<br>de Las Vegas en la Tierra.
-TreasureDetail,1,Treasure_114,Se registraron redadas en una<br>parte aislada del área de Las Vegas en la Tierra.
+TreasureDetail,1,Treasure_114,Un permiso emitido por ARKS HQ que le permite<br>realizar redadas sin restricciones en un parte<br>aislada del área de Las Vegas de la Tierra.
 TreasureDetail,1,Treasure_115,Un permiso que le permite<br>operar un Ridroid.
 TreasureDetail,1,Treasure_116,Tarjeta de pareja para niños.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_117,Tarjeta de Socio de Silva.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
@@ -17278,7 +17278,7 @@ MagMenu,1,Mag_Jukebox_Play_026,No establecido
 MagMenu,1,Mag_Jukebox_Play_027,<yellow> No establecido <c>
 MagMenu,1,Mag_Jukebox_Play_028,No se puede reproducir la canción seleccionada porque otra canción tiene prioridad.
 MagMenu,1,Mag_Jukebox_Play_029,Vista previa con <%Function><pict 4space><c> <yellow>Puedes ajustar qué parte de<br>la canción reproducir.<c> <gray>La melodía no se puede<br>cambiar.<c>
-MagMenu,1,Mag_Jukebox_Play_030,No se puede reproducir la canción seleccionada porque otra canción tiene prioridad.
+MagMenu,1,Mag_Jukebox_Play_030,Vista previa con <%Function><pict 4space><c><br><yellow>Puedes cambiar la melodía.<c> <br><gray>No puedes ajustar qué parte de la canción<br>reproducir.<c>
 MagMenu,1,Mag_Jukebox_Play_031,Jugando
 MagMenu,1,Mag_Jukebox_Play_032,La canción se detuvo porque la música de fondo tiene<br>prioridad.
 MagMenu,1,Mag_Jukebox_Play_033,--:-- / --:--
@@ -17847,7 +17847,7 @@ Worldmap,1,Fast_Travel_Toast_Mes,Teletransportándose a $(0).
 Worldmap,1,Location_Notification_Mes,$(0) ha usado la notificación de ubicación
 Worldmap,1,Window_Titletelop,Mapa mundial
 Worldmap,1,Window_TwolineGuide,Vea ubicaciones en el mapa mundial y teletransporte a ellas.
-Worldmap,1,Window_ControlGuide,Alternar visualización del nombre del lugar:<%TabForward>Alternar visualización del navegador de reproducción: <%TabBack>
+Worldmap,1,Window_ControlGuide,Información del sector: <%NextWidget> Lugar Waypoint: <%Function> Zoom: <%Exception> Alternar visualización del nombre del lugar: <%TabForward> Alternar visualización del navegador de reproducción: <%TabBack>
 Worldmap,1,Locationname_cocoon,Capullo
 Worldmap,1,Locationname_tower,Torre
 Worldmap,1,Locationname_fasttravel,Dispositivo Ryuker
@@ -19367,12 +19367,12 @@ AMSkillExplanation,1,ArsenalModule:BackPack01:Passive,"Produce automáticamente 
 AMSkillExplanation,1,ArsenalModule:BackPack01:StepCombo,Le permite realizar dos pasos laterales consecutivos.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
 AMSkillExplanation,1,ArsenalModule:BackPack01:DodgeRicochet,Produce un ataque adicional cuando esquivas un ataque.<br><yellow> *Solo se puede utilizar con SA-1HMP Fenrir. <c>
 AMSkillExplanation,1,ArsenalModule:Backpack02:Passive,"Genera automáticamente ataques de apoyo periódicos.<br>Estos ataques de apoyo se vuelven más poderosos después de equipar M.A.R.S. durante un tiempo.<br>Además, el daño que recibes se reduce una vez que tus PV están por debajo de cierto nivel.<br><yellow>*Solo se puede usar con SA-2HDP Fafnir.<c>"
-AMSkillExplanation,1,ArsenalModule:Backpack02:DefenseBuffArea,golpes de ataque.<br><yellow> *Solo se puede utilizar con SA-2HDP Fafnir. <c>
+AMSkillExplanation,1,ArsenalModule:Backpack02:DefenseBuffArea,Crea un campo que reduzca el daño recibido centrado alrededor del lugar donde<br>golpea el ataque. <yellow>*Solo se puede utilizar con SA-2HDP Fafnir.<c>
 AMSkillExplanation,1,ArsenalModule:Backpack02:GuardEmp,Produce un ataque adicional cuando anulas con éxito un ataque.<br><yellow> *Solo se puede utilizar con SA-2HDP Fafnir. <c>
 AMSkillExplanation,1,ArsenalModule:Backpack03:Passive,"Genera automáticamente ataques de apoyo periódicos.<br>Estos ataques de apoyo se vuelven más poderosos después de equipar M.A.R.S. durante un tiempo.<br>Además, aumenta tu tasa de recuperación de PP natural y la tasa de recuperación de PP durante los ataques.<br><yellow>*Solo se puede usar con SA-3HFP Lindworm.<c>"
 AMSkillExplanation,1,ArsenalModule:Backpack03:EcmLockOn,"Aplica un efecto negativo a los enemigos dentro de tu campo de visión, reduciendo el daño que te infligen.<br>Algunos enemigos poderosos no se ven afectados.<br>*Solo se puede usar con SA-3HFP Lindworm."
 AMSkillExplanation,1,ArsenalModule:Backpack03:CountShot,Produce un ataque adicional después de golpear una cierta cantidad de veces.<br><yellow> *Solo se puede utilizar con SA-3HFP Lindworm. <c>
-AMSkillExplanation,1,ArsenalModule:Boost:Dodge,Es el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
+AMSkillExplanation,1,ArsenalModule:Boost:Dodge,"Saltar con la espalda, la izquierda o la derecha presionadas mientras estás bloqueado cambia el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente."
 AMSkillExplanation,1,ArsenalModule:Boost:Approach,Saltar con el avance presionado mientras estás fijado cambia el salto a una maniobra que esquiva los ataques mientras te mueves rápidamente.
 AMSkillExplanation,1,ArsenalModule:Boost:Vertical,"Saltar sin pulsar ningún botón direccional mientras se tiene fijado el objetivo cambia el salto a una maniobra que esquiva los ataques mientras se mueve rápidamente, hasta la misma altura que la ubicación del objetivo fijado."
 AMSkillExplanation,1,ArsenalModule:Parameter:DmgUp,Aumenta M.A.R.S. Potencia.
@@ -19610,7 +19610,7 @@ LimitItemList,1,LimitItemList_Title1,Lista de objetos limitados 1
 LimitItemList,1,LimitItemList_Title2,Lista de objetos limitados 2
 LimitItemList,1,LimitItemList_Title3,Artículos a punto de vencer
 LimitItemList,1,LimitItemList_Text1,Tienes artículos que están a punto de<br>caducar. Considere verificar los detalles<br>del artículo. y usar los artículos antes de<br>que caduquen.
-LimitItemList,1,LimitItemList_Text2,"ms, como<br>Billetes rasca y gana especiales, en el<br>Intercambio de artículos del comerciante de artículos."
+LimitItemList,1,LimitItemList_Text2,"Tienes artículos que han caducado. Algunos<br>artículos Se puede cambiar por otros<br>artículos, como Boletos rasca y gana<br>especiales, en el comerciante de artículos<br>Intercambio de artículos."
 LimitItemList,1,LimitItemList_Text3,Considere utilizar artículos con vencimiento<br>antes de que caduquen.
 LimitItemList,1,LimitItemList_MainMenuTitle,Artículos a punto de vencer
 LimitItemList,1,LimitItemList_NoItem,No tienes ningún artículo a punto de caducar.
