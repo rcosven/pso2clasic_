@@ -352,6 +352,17 @@
             background-color: var(--item-hover);
         }
 
+        .result-item.is-excluded {
+            opacity: 0.72;
+            border-left: 4px solid #da3633;
+            background-color: rgba(218, 54, 51, 0.04);
+        }
+
+        .result-item.is-excluded:hover {
+            opacity: 1;
+            background-color: rgba(218, 54, 51, 0.08);
+        }
+
         .result-file,
         .result-id,
         .result-text,
@@ -933,20 +944,9 @@
             saveExcludedToStorage();
             closeExcludeModal();
 
-            // Animar y quitar la tarjeta del DOM de inmediato
-            const card = document.querySelector(`[data-item-key="${CSS.escape(item.key)}"]`);
-            if (card) {
-                card.style.transition = 'all 0.25s ease';
-                card.style.opacity = '0';
-                card.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    card.remove();
-                    const remaining = resultsList.querySelectorAll('.result-item').length;
-                    if (remaining === 0) {
-                        resultsList.innerHTML = `<div class="empty-state">Todos los resultados mostrados en esta página fueron excluidos.<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="renderExcludedList(); manageExcludedModal.style.display='flex';">Ver líneas excluidas</button></div>`;
-                    }
-                }, 250);
-            }
+            // Refrescar de inmediato para que la línea excluida pase al final de la búsqueda
+            // y las líneas siguientes avancen automáticamente llenando la lista.
+            performSearch(lastQuery, currentPage);
         });
 
         if (btnManageExcluded) {
@@ -1171,7 +1171,7 @@
             currentPage = page;
 
             try {
-                const params = new URLSearchParams({
+                const searchPayload = {
                     q: query,
                     deep,
                     file: byfile,
@@ -1189,8 +1189,13 @@
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
+                    excluded: Array.from(excludedMap.keys()),
+                };
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(searchPayload),
                 });
-                const response = await fetch(`/api/search?${params.toString()}`);
                 const data = await response.json().catch(() => ({}));
 
                 // Índice aún cargando en el servidor (deploy / reinicio)
@@ -1351,7 +1356,13 @@
             }[data.scope || currentScope] || "";
             const from = (page - 1) * perPage + 1;
             const to = Math.min(page * perPage, total);
-            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
+            const activeTotal = data.active_total != null ? data.active_total : (total - excludedMap.size);
+            const excludedTotal = data.excluded_total != null ? data.excluded_total : (total - activeTotal);
+            let countsText = `${total} resultados`;
+            if (excludedTotal > 0) {
+                countsText = `${total} resultados (${activeTotal} activos · ${excludedTotal} excluidos al final)`;
+            }
+            resultsCount.textContent = `${countsText}${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
             let renderedCount = 0;
@@ -1361,11 +1372,8 @@
                 let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '');
                 const itemGroup = item.group != null && item.group !== '' ? String(item.group) : '1';
                 const itemKey = `${openFile}|${item.section || ''}|${itemGroup}|${item.id}`.toLowerCase();
+                const isExcluded = Boolean(item.excluded || excludedMap.has(itemKey));
 
-                // Filtrar si el usuario excluyó esta línea
-                if (excludedMap.has(itemKey)) {
-                    return;
-                }
                 renderedCount++;
 
                 const qs = new URLSearchParams({
@@ -1377,7 +1385,7 @@
                 const href = `/edit?${qs.toString()}`;
                 // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
                 const a = document.createElement('a');
-                a.className = 'result-item';
+                a.className = 'result-item' + (isExcluded ? ' is-excluded' : '');
                 a.dataset.itemKey = itemKey;
                 a.href = href;
                 a.target = '_blank';
@@ -1405,6 +1413,9 @@
                 } else if (item.match && item.match !== 'text') {
                     matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
                 }
+                const excludedBadge = isExcluded
+                    ? `<span class="result-match-badge" style="background: rgba(248, 81, 73, 0.18); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.4);">🚫 Excluida (al final)</span>`
+                    : '';
                 const corpus = item.corpus || (String(openFile).toLowerCase().includes('ng') ? 'ng' : 'classic');
                 const corpusBadge = corpus === 'ng'
                     ? `<span class="result-corpus ng">NGS</span>`
@@ -1434,6 +1445,10 @@
                     bodyHtml = `<div class="result-text">${displayTxt}</div>`;
                 }
 
+                const actionBtnHtml = isExcluded
+                    ? `<button type="button" class="btn-restore" title="Quitar de la lista de exclusión y devolver al orden activo">↩️ Restaurar</button>`
+                    : `<button type="button" class="btn-exclude" title="Mover este resultado al final de la lista de búsqueda">🚫 Excluir</button>`;
+
                 a.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
                         <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1;">
@@ -1441,14 +1456,13 @@
                             ${corpusBadge}
                             ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                             ${matchBadge}
+                            ${excludedBadge}
                         </div>
                         <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
                             <button type="button" class="btn-copy-cmd" title="Copiar referencia al portapapeles (${escapeHtml(openFile)}, ${escapeHtml(cmd || item.id)})">
                                 📋 Copiar
                             </button>
-                            <button type="button" class="btn-exclude" title="Quitar este resultado de la lista de búsqueda">
-                                🚫 Excluir
-                            </button>
+                            ${actionBtnHtml}
                         </div>
                     </div>
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
@@ -1462,7 +1476,7 @@
                         e.preventDefault();
                         return;
                     }
-                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
+                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-restore') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
                         e.preventDefault();
                         e.stopPropagation();
                     }
@@ -1518,11 +1532,22 @@
                     });
                 }
 
+                const btnRestore = a.querySelector('.btn-restore');
+                if (btnRestore) {
+                    btnRestore.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        excludedMap.delete(itemKey);
+                        saveExcludedToStorage();
+                        performSearch(lastQuery, currentPage);
+                    });
+                }
+
                 resultsList.appendChild(a);
             });
 
             if (renderedCount === 0 && items.length > 0) {
-                resultsList.innerHTML = `<div class="empty-state">Los resultados de esta página están en tu lista de exclusión.<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="renderExcludedList(); manageExcludedModal.style.display='flex';">Ver líneas excluidas (${excludedMap.size})</button></div>`;
+                resultsList.innerHTML = `<div class="empty-state">Todos los resultados están en tu lista de exclusión.<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="renderExcludedList(); manageExcludedModal.style.display='flex';">Ver líneas excluidas (${excludedMap.size})</button></div>`;
             }
 
             renderPagination(page, totalPages, total, capped);
