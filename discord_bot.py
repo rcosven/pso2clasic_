@@ -869,6 +869,14 @@ def _file_layer(fpath: str) -> str:
     return "other"
 
 
+def _make_item_key(file_path: str, section: str, group: str, row_id: str) -> str:
+    clean_file = (file_path or "").replace("\\", "/").replace("_Raw", "").lstrip("./").lower()
+    clean_sec = (section or "").strip().lower()
+    clean_grp = str(group or "1").strip().lower() or "1"
+    clean_id = str(row_id or "").strip().lower()
+    return f"{clean_file}|{clean_sec}|{clean_grp}|{clean_id}"
+
+
 async def web_api_search(request):
     bot = request.app["bot"]
     # Mientras cargan ~1.2M filas, no tumbar la web: respuesta clara
@@ -886,18 +894,33 @@ async def web_api_search(request):
             status=503,
         )
 
-    query = request.query.get("q", "").strip()
+    post_data = {}
+    if request.method == "POST":
+        try:
+            post_data = await request.json()
+        except Exception:
+            try:
+                post_data = dict(await request.post())
+            except Exception:
+                post_data = {}
+
+    def get_param(key, default=""):
+        if key in post_data and post_data[key] is not None:
+            return str(post_data[key])
+        return request.query.get(key, default)
+
+    query = get_param("q", "").strip()
     # deep=1 | true | yes  → también busca en section/group/id (comandos CSV)
-    deep_raw = (request.query.get("deep") or "").strip().lower()
+    deep_raw = (get_param("deep") or "").strip().lower()
     deep = deep_raw in ("1", "true", "yes", "on")
 
     # new=1 / nuevas=1 → líneas y archivos del update (listas en data/lineas_nuevas/)
     # rare/corrupt se reutilizan como alias del mismo modo (botón web antiguo)
     new_raw = (
-        request.query.get("new")
-        or request.query.get("nuevas")
-        or request.query.get("rare")
-        or request.query.get("corrupt")
+        get_param("new")
+        or get_param("nuevas")
+        or get_param("rare")
+        or get_param("corrupt")
         or ""
     ).strip().lower()
     new_only = new_raw in ("1", "true", "yes", "on")
@@ -905,20 +928,20 @@ async def web_api_search(request):
 
     # file=1 / byfile=1 / filename=1 → buscar por nombre de archivo CSV
     file_raw = (
-        request.query.get("file")
-        or request.query.get("byfile")
-        or request.query.get("filename")
-        or request.query.get("archivo")
+        get_param("file")
+        or get_param("byfile")
+        or get_param("filename")
+        or get_param("archivo")
         or ""
     ).strip().lower()
     file_only = file_raw in ("1", "true", "yes", "on")
 
     # equal=1 / iguales=1 / same=1 → líneas group 1 con texto EXACTAMENTE idéntico
     equal_raw = (
-        request.query.get("equal")
-        or request.query.get("iguales")
-        or request.query.get("same")
-        or request.query.get("dup")
+        get_param("equal")
+        or get_param("iguales")
+        or get_param("same")
+        or get_param("dup")
         or ""
     ).strip().lower()
     equal_only = equal_raw in ("1", "true", "yes", "on")
@@ -926,9 +949,9 @@ async def web_api_search(request):
     # NO es match parcial: la igualdad sigue siendo del texto completo.
     try:
         equal_min_chars = int(
-            request.query.get("chars")
-            or request.query.get("min_chars")
-            or request.query.get("n")
+            get_param("chars")
+            or get_param("min_chars")
+            or get_param("n")
             or "20"
         )
     except ValueError:
@@ -937,18 +960,18 @@ async def web_api_search(request):
 
     # diff=1 / brecha=1 / gap=1 → comparar longitud de texto EN (Raw) vs ES (Main) en group 1
     diff_raw = (
-        request.query.get("diff")
-        or request.query.get("brecha")
-        or request.query.get("gap")
-        or request.query.get("discrepancia")
+        get_param("diff")
+        or get_param("brecha")
+        or get_param("gap")
+        or get_param("discrepancia")
         or ""
     ).strip().lower()
     diff_only = diff_raw in ("1", "true", "yes", "on")
     try:
         diff_min_chars = int(
-            request.query.get("diff_chars")
-            or request.query.get("min_diff")
-            or request.query.get("diffchars")
+            get_param("diff_chars")
+            or get_param("min_diff")
+            or get_param("diffchars")
             or "40"
         )
     except ValueError:
@@ -956,7 +979,7 @@ async def web_api_search(request):
     diff_min_chars = max(5, min(2000, diff_min_chars))
 
     # scope=all|classic|ng  (default: all = Classic + NGS)
-    scope_raw = (request.query.get("scope") or "all").strip().lower()
+    scope_raw = (get_param("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
         scope = "classic"
     elif scope_raw in ("ng", "ngs", "n", "reboot"):
@@ -966,14 +989,33 @@ async def web_api_search(request):
 
     # Paginación: page (1-based), per_page (default 50, max 100)
     try:
-        page = max(1, int(request.query.get("page") or "1"))
+        page = max(1, int(get_param("page") or "1"))
     except ValueError:
         page = 1
     try:
-        per_page = int(request.query.get("per_page") or "50")
+        per_page = int(get_param("per_page") or "50")
     except ValueError:
         per_page = 50
     per_page = max(10, min(100, per_page))
+
+    # Lista de claves excluidas por el usuario (Map en localstorage / cliente)
+    excluded_raw = post_data.get("excluded")
+    if excluded_raw is None:
+        excluded_raw = request.query.get("excluded", "")
+    if isinstance(excluded_raw, str):
+        if excluded_raw.startswith("["):
+            try:
+                excluded_list = json.loads(excluded_raw)
+            except Exception:
+                excluded_list = [k.strip() for k in excluded_raw.split(",") if k.strip()]
+        else:
+            excluded_list = [k.strip() for k in excluded_raw.split(",") if k.strip()]
+    elif isinstance(excluded_raw, (list, set, tuple)):
+        excluded_list = list(excluded_raw)
+    else:
+        excluded_list = []
+
+    excluded_set = {str(k).strip().lower() for k in excluded_list if k}
 
     # Tope de coincidencias a recolectar (evita respuestas enormes en queries muy genéricas)
     MAX_MATCHES = 5000
@@ -999,6 +1041,8 @@ async def web_api_search(request):
         "page": page,
         "per_page": per_page,
         "total": 0,
+        "active_total": 0,
+        "excluded_total": 0,
         "total_pages": 0,
         "capped": False,
     }
@@ -1075,12 +1119,19 @@ async def web_api_search(request):
             raw_t = _exact_line_key(raw_it.get("text") or "")
             if not main_t or main_t != raw_t:
                 continue  # un carácter distinto → no es "igual"
-            ranked_keys.append((pk[0], pk[1], pk[2], pk[3], main_t, main_it, raw_it))
+            item_key = _make_item_key(
+                main_it.get("file", ""),
+                main_it.get("section", ""),
+                main_it.get("group", "1"),
+                main_it.get("id", ""),
+            )
+            is_excluded = item_key in excluded_set
+            ranked_keys.append((1 if is_excluded else 0, pk[0], pk[1], pk[2], pk[3], main_t, main_it, raw_it, is_excluded, item_key))
 
-        # Orden: archivo, section, id
-        ranked_keys.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
+        # Orden: primero no excluidas (0), al último excluidas (1), y luego archivo, section, id
+        ranked_keys.sort(key=lambda x: (x[0], x[1], x[2], x[3], x[4]))
 
-        for corpus, stem, section, row_id, tkey, main_it, raw_it in ranked_keys:
+        for sort_ex, corpus, stem, section, row_id, tkey, main_it, raw_it, is_excluded, item_key in ranked_keys:
             # Solo se muestra/abre MAIN. RAW es solo referencia de comparación.
             item = main_it
             fpath = (item.get("file") or "").replace("\\", "/")
@@ -1100,11 +1151,15 @@ async def web_api_search(request):
                 "min_chars": equal_min_chars,
                 "text_len": len(tkey),
                 "pair_stem": stem,
+                "excluded": is_excluded,
+                "item_key": item_key,
             })
             if len(coincidencias) >= MAX_MATCHES:
                 break
 
         total = len(coincidencias)
+        excluded_total = sum(1 for it in coincidencias if it.get("excluded"))
+        active_total = total - excluded_total
         total_pages = (total + per_page - 1) // per_page if total else 0
         if total_pages and page > total_pages:
             page = total_pages
@@ -1130,6 +1185,8 @@ async def web_api_search(request):
             "page": page,
             "per_page": per_page,
             "total": total,
+            "active_total": active_total,
+            "excluded_total": excluded_total,
             "total_pages": total_pages,
             "capped": total >= MAX_MATCHES,
         })
@@ -1198,6 +1255,14 @@ async def web_api_search(request):
                 if not match_query:
                     continue
 
+            item_key = _make_item_key(
+                main_it.get("file", ""),
+                section,
+                main_it.get("group", "1"),
+                row_id,
+            )
+            is_excluded = item_key in excluded_set
+
             ranked_diffs.append({
                 "corpus": corpus,
                 "stem": stem,
@@ -1211,10 +1276,13 @@ async def web_api_search(request):
                 "main_len": len_main,
                 "char_diff": char_diff,
                 "diff_dir": "raw_longer" if len_raw > len_main else "main_longer",
+                "is_excluded": is_excluded,
+                "item_key": item_key,
             })
 
-        # Ordenar de mayor a menor brecha de caracteres
-        ranked_diffs.sort(key=lambda x: (x["char_diff"], x["raw_len"]), reverse=True)
+        # Ordenar: primero no excluidas (0), al último excluidas (1).
+        # Dentro de cada grupo, de mayor a menor brecha de caracteres.
+        ranked_diffs.sort(key=lambda x: (1 if x["is_excluded"] else 0, -x["char_diff"], -x["raw_len"]))
 
         coincidencias = []
         for entry in ranked_diffs:
@@ -1238,11 +1306,15 @@ async def web_api_search(request):
                 "layer": "main",
                 "diff": True,
                 "min_diff": diff_min_chars,
+                "excluded": entry["is_excluded"],
+                "item_key": entry["item_key"],
             })
             if len(coincidencias) >= MAX_MATCHES:
                 break
 
         total = len(coincidencias)
+        excluded_total = sum(1 for it in coincidencias if it.get("excluded"))
+        active_total = total - excluded_total
         total_pages = (total + per_page - 1) // per_page if total else 0
         if total_pages and page > total_pages:
             page = total_pages
@@ -1266,6 +1338,8 @@ async def web_api_search(request):
             "page": page,
             "per_page": per_page,
             "total": total,
+            "active_total": active_total,
+            "excluded_total": excluded_total,
             "total_pages": total_pages,
             "capped": total >= MAX_MATCHES,
         })
@@ -1405,6 +1479,13 @@ async def web_api_search(request):
 
         if clave_unica not in ids_vistos:
             ids_vistos.add(clave_unica)
+            item_key = _make_item_key(
+                editable_file,
+                item.get("section", ""),
+                item.get("group", "1"),
+                item.get("id", ""),
+            )
+            is_excluded = item_key in excluded_set
             entry = {
                 "file": editable_file,
                 "id": item["id"],
@@ -1414,6 +1495,8 @@ async def web_api_search(request):
                 "cmd": item.get("cmd", ""),
                 "match": match_where,
                 "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
+                "excluded": is_excluded,
+                "item_key": item_key,
             }
             if new_only or item.get("is_new_line"):
                 entry["new"] = True
@@ -1430,7 +1513,12 @@ async def web_api_search(request):
         if len(coincidencias) >= MAX_MATCHES:
             break
 
+    # Ordenar: primero no excluidas (0), al último excluidas (1), manteniendo el orden previo
+    coincidencias.sort(key=lambda it: 1 if it.get("excluded") else 0)
+
     total = len(coincidencias)
+    excluded_total = sum(1 for it in coincidencias if it.get("excluded"))
+    active_total = total - excluded_total
     total_pages = (total + per_page - 1) // per_page if total else 0
     if total_pages and page > total_pages:
         page = total_pages
@@ -1450,6 +1538,8 @@ async def web_api_search(request):
         "page": page,
         "per_page": per_page,
         "total": total,
+        "active_total": active_total,
+        "excluded_total": excluded_total,
         "total_pages": total_pages,
         "capped": total >= MAX_MATCHES,
     })
@@ -1809,6 +1899,7 @@ async def start_web_server(bot):
     app.router.add_get('/', web_home)
     app.router.add_get('/edit', web_index)
     app.router.add_get('/api/search', web_api_search)
+    app.router.add_post('/api/search', web_api_search)
     app.router.add_get('/api/file', web_api_file)
     app.router.add_get('/api/file_raw', web_api_file_raw)
     app.router.add_post('/api/save', web_api_save)
