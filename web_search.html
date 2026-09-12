@@ -352,17 +352,6 @@
             background-color: var(--item-hover);
         }
 
-        .result-item.is-excluded {
-            opacity: 0.72;
-            border-left: 4px solid #da3633;
-            background-color: rgba(218, 54, 51, 0.04);
-        }
-
-        .result-item.is-excluded:hover {
-            opacity: 1;
-            background-color: rgba(218, 54, 51, 0.08);
-        }
-
         .result-file,
         .result-id,
         .result-text,
@@ -706,6 +695,37 @@
             background: var(--accent-blue);
             color: #0d1117;
         }
+        .btn-exclude-file {
+            background: rgba(210, 153, 34, 0.12);
+            border: 1px solid rgba(210, 153, 34, 0.35);
+            color: #d29922;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        .btn-exclude-file:hover {
+            background: rgba(210, 153, 34, 0.25);
+            border-color: #d29922;
+            color: #fff;
+        }
+        .btn-modal-warning {
+            background: #9e6a03;
+            border: 1px solid rgba(210, 153, 34, 0.5);
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-modal-warning:hover {
+            background: #bb8009;
+        }
     </style>
 </head>
 <body>
@@ -803,41 +823,78 @@
         <!-- botones de página -->
     </div>
 
-    <!-- Modal para Confirmar Exclusión de una línea -->
+    <!-- Modal para Confirmar Exclusión de una línea individual -->
     <div id="excludeModal" class="custom-modal" style="display: none;">
         <div class="modal-backdrop" onclick="closeExcludeModal()"></div>
         <div class="modal-content">
             <div class="modal-header">
-                <h3>🚫 Excluir de la búsqueda</h3>
+                <h3>🚫 Excluir línea de la búsqueda</h3>
                 <button class="modal-close-btn" onclick="closeExcludeModal()">&times;</button>
             </div>
             <div class="modal-body">
                 <p>¿Estás seguro de que quieres quitar de la lista de búsqueda este resultado?</p>
                 <div id="modalExcludeTarget" class="modal-target-box"></div>
                 <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
-                    Esta línea se ocultará permanentemente en las búsquedas (incluso tras refrescar). Podrás restaurarla en cualquier momento haciendo clic en el botón <strong>«🚫 Excluidas»</strong>.
+                    Esta línea se ocultará permanentemente en las búsquedas (incluso tras refrescar). Podrás restaurarla en cualquier momento haciendo clic en el botón superior de exclusiones.
                 </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn-modal-cancel" onclick="closeExcludeModal()">Cancelar</button>
-                <button type="button" id="btnConfirmExclude" class="btn-modal-danger">Sí, quitar resultado</button>
+                <button type="button" id="btnConfirmExclude" class="btn-modal-danger">Sí, quitar línea</button>
             </div>
         </div>
     </div>
 
-    <!-- Modal para Gestionar / Restaurar líneas excluidas -->
+    <!-- Modal para Confirmar Exclusión de un ARCHIVO CSV COMPLETO -->
+    <div id="excludeFileModal" class="custom-modal" style="display: none;">
+        <div class="modal-backdrop" onclick="closeExcludeFileModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📁 Excluir archivo CSV completo</h3>
+                <button class="modal-close-btn" onclick="closeExcludeFileModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas excluir <strong>todas las líneas</strong> del siguiente archivo CSV?</p>
+                <div id="modalExcludeFileTarget" class="modal-target-box"></div>
+                <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
+                    Todas las líneas de este archivo (incluyendo <em>Brecha de caracteres</em>, <em>Líneas iguales</em>, etc.) se omitirán permanentemente de las búsquedas para no estorbar con otros archivos. Podrás restaurarlo en cualquier momento.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal-cancel" onclick="closeExcludeFileModal()">Cancelar</button>
+                <button type="button" id="btnConfirmExcludeFile" class="btn-modal-warning">📁 Sí, excluir todo el CSV</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Gestionar / Restaurar exclusiones (Archivos CSV y Líneas) -->
     <div id="manageExcludedModal" class="custom-modal" style="display: none;">
         <div class="modal-backdrop" onclick="closeManageExcludedModal()"></div>
-        <div class="modal-content" style="max-width: 620px;">
-            <div class="modal-header">
-                <h3>🚫 Líneas Excluidas de la Búsqueda (<span id="excludedCountSpan">0</span>)</h3>
-                <button class="modal-close-btn" onclick="closeManageExcludedModal()">&times;</button>
+        <div class="modal-content" style="max-width: 650px;">
+            <div class="modal-header" style="padding-bottom: 12px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <h3>🚫 Gestión de Exclusiones</h3>
+                    <button class="modal-close-btn" onclick="closeManageExcludedModal()">&times;</button>
+                </div>
             </div>
-            <div class="modal-body" style="max-height: 380px; overflow-y: auto; padding: 12px 16px;">
+            <div style="display: flex; gap: 8px; padding: 0 20px 12px 20px; border-bottom: 1px solid var(--panel-border);">
+                <button type="button" id="tabExcludedFiles" class="scope-btn active" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">📁 Archivos CSV (<span id="excludedFilesCountSpan">0</span>)</button>
+                <button type="button" id="tabExcludedLines" class="scope-btn" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">🚫 Líneas (<span id="excludedCountSpan">0</span>)</button>
+            </div>
+            <!-- Pestaña Archivos CSV -->
+            <div id="sectionExcludedFiles" class="modal-body" style="max-height: 400px; overflow-y: auto; padding: 16px 20px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 14px;">
+                    <input type="text" id="inputManualExcludeFile" placeholder="Escribe o pega nombre de CSV (ej. cl0421450101.csv)" style="flex: 1; height: 36px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--panel-border); background: var(--bg-primary, #0d1117); color: var(--text-primary); font-size: 13px;">
+                    <button type="button" id="btnManualExcludeFile" class="btn-exclude-file" style="padding: 0 14px; font-size: 12px; height: 36px;">➕ Excluir CSV</button>
+                </div>
+                <div id="excludedFilesListContainer"></div>
+            </div>
+            <!-- Pestaña Líneas Individuales -->
+            <div id="sectionExcludedLines" class="modal-body" style="display: none; max-height: 400px; overflow-y: auto; padding: 16px 20px;">
                 <div id="excludedListContainer"></div>
             </div>
             <div class="modal-footer" style="justify-content: space-between;">
-                <button type="button" class="btn-modal-danger" style="background: transparent; border-color: rgba(248,81,73,0.4); color: #f85149;" onclick="restoreAllExcluded()">Restaurar todas</button>
+                <button type="button" id="btnRestoreCurrentTab" class="btn-modal-danger" style="background: transparent; border-color: rgba(248,81,73,0.4); color: #f85149;">Restaurar todos los archivos</button>
                 <button type="button" class="btn-modal-cancel" onclick="closeManageExcludedModal()">Cerrar</button>
             </div>
         </div>
@@ -862,11 +919,23 @@
         const btnManageExcluded = document.getElementById('btnManageExcluded');
         const btnExcludedText = document.getElementById('btnExcludedText');
         const excludeModal = document.getElementById('excludeModal');
+        const excludeFileModal = document.getElementById('excludeFileModal');
         const manageExcludedModal = document.getElementById('manageExcludedModal');
         const modalExcludeTarget = document.getElementById('modalExcludeTarget');
+        const modalExcludeFileTarget = document.getElementById('modalExcludeFileTarget');
         const btnConfirmExclude = document.getElementById('btnConfirmExclude');
+        const btnConfirmExcludeFile = document.getElementById('btnConfirmExcludeFile');
+        const tabExcludedFiles = document.getElementById('tabExcludedFiles');
+        const tabExcludedLines = document.getElementById('tabExcludedLines');
+        const sectionExcludedFiles = document.getElementById('sectionExcludedFiles');
+        const sectionExcludedLines = document.getElementById('sectionExcludedLines');
+        const inputManualExcludeFile = document.getElementById('inputManualExcludeFile');
+        const btnManualExcludeFile = document.getElementById('btnManualExcludeFile');
         const excludedCountSpan = document.getElementById('excludedCountSpan');
+        const excludedFilesCountSpan = document.getElementById('excludedFilesCountSpan');
         const excludedListContainer = document.getElementById('excludedListContainer');
+        const excludedFilesListContainer = document.getElementById('excludedFilesListContainer');
+        const btnRestoreCurrentTab = document.getElementById('btnRestoreCurrentTab');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsList = document.getElementById('resultsList');
         const resultsCount = document.getElementById('resultsCount');
@@ -887,6 +956,34 @@
             console.warn("Error leyendo excluidas de localStorage", e);
         }
 
+        // Archivos CSV completos excluidos guardados en localStorage: Map de key -> { key, name, path, corpus }
+        let excludedFilesMap = new Map();
+        try {
+            const savedFiles = JSON.parse(localStorage.getItem('pso2_search_excluded_files') || '[]');
+            if (Array.isArray(savedFiles)) {
+                savedFiles.forEach(item => {
+                    if (item && item.key) excludedFilesMap.set(item.key.toLowerCase(), item);
+                });
+            }
+        } catch (e) {
+            console.warn("Error leyendo archivos excluidos de localStorage", e);
+        }
+
+        function normalizeFileKey(f) {
+            if (!f) return '';
+            let s = String(f).replace(/\\/g, '/').replace(/_Raw/gi, '').trim();
+            if (s.startsWith('./')) s = s.slice(2);
+            return s.replace(/^\/+/, '').toLowerCase();
+        }
+
+        function isCsvExcluded(filePath) {
+            if (excludedFilesMap.size === 0 || !filePath) return false;
+            const norm = normalizeFileKey(filePath);
+            const fname = norm.split('/').pop();
+            const fstem = fname.replace(/\.csv$/i, '');
+            return excludedFilesMap.has(norm) || excludedFilesMap.has(fname) || excludedFilesMap.has(fstem);
+        }
+
         function saveExcludedToStorage() {
             try {
                 const arr = Array.from(excludedMap.values());
@@ -897,12 +994,37 @@
             updateExcludedButton();
         }
 
+        function saveExcludedFilesToStorage() {
+            try {
+                const arr = Array.from(excludedFilesMap.values());
+                localStorage.setItem('pso2_search_excluded_files', JSON.stringify(arr));
+            } catch (e) {
+                console.warn("Error guardando archivos excluidos en localStorage", e);
+            }
+            updateExcludedButton();
+        }
+
         function updateExcludedButton() {
             if (!btnManageExcluded) return;
-            const count = excludedMap.size;
-            if (count > 0) {
+            const lineCount = excludedMap.size;
+            const uniqueFiles = new Set();
+            excludedFilesMap.forEach(item => {
+                if (item && item.path) uniqueFiles.add(normalizeFileKey(item.path));
+                else if (item && item.key) uniqueFiles.add(item.key.toLowerCase());
+            });
+            const fileCount = uniqueFiles.size;
+            const totalCount = lineCount + fileCount;
+            if (totalCount > 0) {
                 btnManageExcluded.style.display = 'inline-flex';
-                btnExcludedText.textContent = `${count} excluida${count > 1 ? 's' : ''}`;
+                let text = '';
+                if (fileCount > 0 && lineCount > 0) {
+                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} · ${lineCount} línea${lineCount > 1 ? 's' : ''}`;
+                } else if (fileCount > 0) {
+                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} excluido${fileCount > 1 ? 's' : ''}`;
+                } else {
+                    text = `${lineCount} línea${lineCount > 1 ? 's' : ''} excluida${lineCount > 1 ? 's' : ''}`;
+                }
+                btnExcludedText.textContent = text;
             } else {
                 btnManageExcluded.style.display = 'none';
             }
@@ -944,20 +1066,157 @@
             saveExcludedToStorage();
             closeExcludeModal();
 
-            // Refrescar de inmediato para que la línea excluida pase al final de la búsqueda
-            // y las líneas siguientes avancen automáticamente llenando la lista.
+            // Refrescar de inmediato para que la línea excluida desaparezca por completo de la búsqueda
+            // y las líneas siguientes avancen automáticamente llenando la lista sin huecos ni páginas vacías.
             performSearch(lastQuery, currentPage);
         });
 
+        let pendingExcludeFile = null;
+
+        function promptExcludeFile(e, openFile, corpus) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            const cleanKey = normalizeFileKey(openFile);
+            const fileName = cleanKey.split('/').pop();
+            pendingExcludeFile = {
+                key: cleanKey,
+                name: fileName,
+                path: openFile,
+                corpus: corpus || (openFile.toLowerCase().includes('ng') ? 'ng' : 'classic')
+            };
+            modalExcludeFileTarget.innerHTML = `
+                <div><strong>Archivo:</strong> ${escapeHtml(openFile)}</div>
+                <div style="margin-top: 4px;"><strong>Ámbito:</strong> ${escapeHtml(pendingExcludeFile.corpus.toUpperCase())}</div>
+                <div style="margin-top: 6px; color: #d29922;"><strong>Alcance:</strong> Se omitirán todas las líneas de este CSV en las búsquedas.</div>
+            `;
+            excludeFileModal.style.display = 'flex';
+        }
+
+        function closeExcludeFileModal() {
+            excludeFileModal.style.display = 'none';
+            pendingExcludeFile = null;
+        }
+
+        btnConfirmExcludeFile.addEventListener('click', () => {
+            if (!pendingExcludeFile) return;
+            const fileItem = pendingExcludeFile;
+            excludedFilesMap.set(fileItem.key, fileItem);
+            if (fileItem.name && fileItem.name !== fileItem.key) {
+                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
+            }
+            saveExcludedFilesToStorage();
+            closeExcludeFileModal();
+
+            performSearch(lastQuery, currentPage);
+        });
+
+        // Pestañas de Gestión de Exclusiones
+        let currentExcludedTab = 'files'; // 'files' | 'lines'
+
+        function setExcludedTab(tab) {
+            currentExcludedTab = tab;
+            if (tab === 'files') {
+                tabExcludedFiles.classList.add('active');
+                tabExcludedLines.classList.remove('active');
+                sectionExcludedFiles.style.display = 'block';
+                sectionExcludedLines.style.display = 'none';
+                btnRestoreCurrentTab.textContent = 'Restaurar todos los archivos';
+                renderExcludedFilesList();
+            } else {
+                tabExcludedFiles.classList.remove('active');
+                tabExcludedLines.classList.add('active');
+                sectionExcludedFiles.style.display = 'none';
+                sectionExcludedLines.style.display = 'block';
+                btnRestoreCurrentTab.textContent = 'Restaurar todas las líneas';
+                renderExcludedList();
+            }
+        }
+
+        tabExcludedFiles.addEventListener('click', () => setExcludedTab('files'));
+        tabExcludedLines.addEventListener('click', () => setExcludedTab('lines'));
+
         if (btnManageExcluded) {
             btnManageExcluded.addEventListener('click', () => {
-                renderExcludedList();
+                if (excludedFilesMap.size === 0 && excludedMap.size > 0) {
+                    setExcludedTab('lines');
+                } else {
+                    setExcludedTab('files');
+                }
                 manageExcludedModal.style.display = 'flex';
             });
         }
 
         function closeManageExcludedModal() {
             manageExcludedModal.style.display = 'none';
+        }
+
+        btnManualExcludeFile.addEventListener('click', () => {
+            const raw = inputManualExcludeFile.value.trim();
+            if (!raw) return;
+            const cleanKey = normalizeFileKey(raw);
+            const fileName = cleanKey.split('/').pop();
+            const fileItem = {
+                key: cleanKey,
+                name: fileName,
+                path: raw,
+                corpus: raw.toLowerCase().includes('ng') ? 'ng' : 'classic'
+            };
+            excludedFilesMap.set(fileItem.key, fileItem);
+            if (fileItem.name && fileItem.name !== fileItem.key) {
+                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
+            }
+            saveExcludedFilesToStorage();
+            inputManualExcludeFile.value = '';
+            renderExcludedFilesList();
+            scheduleSearch(false);
+        });
+        inputManualExcludeFile.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                btnManualExcludeFile.click();
+            }
+        });
+
+        function renderExcludedFilesList() {
+            const uniqueFiles = new Map();
+            excludedFilesMap.forEach(item => {
+                if (item && item.path) uniqueFiles.set(item.path.toLowerCase(), item);
+                else if (item && item.key) uniqueFiles.set(item.key.toLowerCase(), item);
+            });
+            excludedFilesCountSpan.textContent = uniqueFiles.size;
+
+            if (uniqueFiles.size === 0) {
+                excludedFilesListContainer.innerHTML = `<div class="empty-state" style="padding: 24px;">No hay archivos CSV excluidos actualmente.</div>`;
+                return;
+            }
+            excludedFilesListContainer.innerHTML = '';
+            uniqueFiles.forEach((item, uniqueKey) => {
+                const row = document.createElement('div');
+                row.className = 'excluded-item-row';
+                const corpusBadge = item.corpus === 'ng' ? '<span class="result-corpus ng" style="font-size: 10px;">NGS</span>' : '<span class="result-corpus classic" style="font-size: 10px;">Classic</span>';
+                row.innerHTML = `
+                    <div style="min-width: 0; flex: 1;">
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <span style="color: #d29922; font-family: monospace; font-size: 12px; font-weight: 600;">📁 ${escapeHtml(item.path || item.key)}</span>
+                            ${corpusBadge}
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 11px; margin-top: 2px;">Todas las líneas de este CSV están omitidas</div>
+                    </div>
+                    <button type="button" class="btn-restore" title="Volver a mostrar este CSV en las búsquedas">Restaurar CSV</button>
+                `;
+                row.querySelector('.btn-restore').addEventListener('click', () => {
+                    excludedFilesMap.delete(item.key);
+                    if (item.name) excludedFilesMap.delete(item.name.toLowerCase());
+                    if (item.path) excludedFilesMap.delete(normalizeFileKey(item.path));
+                    uniqueFiles.delete(uniqueKey);
+                    saveExcludedFilesToStorage();
+                    renderExcludedFilesList();
+                    scheduleSearch(false);
+                });
+                excludedFilesListContainer.appendChild(row);
+            });
         }
 
         function renderExcludedList() {
@@ -994,10 +1253,24 @@
             if (confirm("¿Deseas restaurar TODAS las líneas excluidas para que vuelvan a aparecer en las búsquedas?")) {
                 excludedMap.clear();
                 saveExcludedToStorage();
-                closeManageExcludedModal();
+                renderExcludedList();
                 scheduleSearch(false);
             }
         }
+
+        btnRestoreCurrentTab.addEventListener('click', () => {
+            if (currentExcludedTab === 'files') {
+                if (excludedFilesMap.size === 0) return;
+                if (confirm("¿Deseas restaurar TODOS los archivos CSV excluidos para que vuelvan a aparecer en las búsquedas?")) {
+                    excludedFilesMap.clear();
+                    saveExcludedFilesToStorage();
+                    renderExcludedFilesList();
+                    scheduleSearch(false);
+                }
+            } else {
+                restoreAllExcluded();
+            }
+        });
 
         const PER_PAGE = 50;
         let debounceTimer;
@@ -1190,6 +1463,7 @@
                     page: String(page),
                     per_page: String(PER_PAGE),
                     excluded: Array.from(excludedMap.keys()),
+                    excluded_files: Array.from(excludedFilesMap.keys()),
                 };
                 const response = await fetch('/api/search', {
                     method: 'POST',
@@ -1356,23 +1630,23 @@
             }[data.scope || currentScope] || "";
             const from = (page - 1) * perPage + 1;
             const to = Math.min(page * perPage, total);
-            const activeTotal = data.active_total != null ? data.active_total : (total - excludedMap.size);
-            const excludedTotal = data.excluded_total != null ? data.excluded_total : (total - activeTotal);
-            let countsText = `${total} resultados`;
-            if (excludedTotal > 0) {
-                countsText = `${total} resultados (${activeTotal} activos · ${excludedTotal} excluidos al final)`;
-            }
-            resultsCount.textContent = `${countsText}${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
+            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
 
             resultsList.innerHTML = '';
             let renderedCount = 0;
 
             items.forEach(item => {
                 // Nunca abrir RAW: solo comparar. Siempre path MAIN editable.
-                let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '');
-                const itemGroup = item.group != null && item.group !== '' ? String(item.group) : '1';
-                const itemKey = `${openFile}|${item.section || ''}|${itemGroup}|${item.id}`.toLowerCase();
-                const isExcluded = Boolean(item.excluded || excludedMap.has(itemKey));
+                let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '').replace(/^\.?\//, '');
+                const itemGroup = item.group != null && String(item.group).trim() !== '' ? String(item.group).trim() : '1';
+                const itemSection = String(item.section || '').trim();
+                const itemId = String(item.id || '').trim();
+                const itemKey = `${openFile}|${itemSection}|${itemGroup}|${itemId}`.toLowerCase();
+
+                // Omitir si la línea o su archivo CSV completo fue excluido
+                if (isCsvExcluded(openFile) || excludedMap.has(itemKey)) {
+                    return;
+                }
 
                 renderedCount++;
 
@@ -1385,7 +1659,7 @@
                 const href = `/edit?${qs.toString()}`;
                 // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
                 const a = document.createElement('a');
-                a.className = 'result-item' + (isExcluded ? ' is-excluded' : '');
+                a.className = 'result-item';
                 a.dataset.itemKey = itemKey;
                 a.href = href;
                 a.target = '_blank';
@@ -1413,9 +1687,6 @@
                 } else if (item.match && item.match !== 'text') {
                     matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
                 }
-                const excludedBadge = isExcluded
-                    ? `<span class="result-match-badge" style="background: rgba(248, 81, 73, 0.18); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.4);">🚫 Excluida (al final)</span>`
-                    : '';
                 const corpus = item.corpus || (String(openFile).toLowerCase().includes('ng') ? 'ng' : 'classic');
                 const corpusBadge = corpus === 'ng'
                     ? `<span class="result-corpus ng">NGS</span>`
@@ -1445,10 +1716,6 @@
                     bodyHtml = `<div class="result-text">${displayTxt}</div>`;
                 }
 
-                const actionBtnHtml = isExcluded
-                    ? `<button type="button" class="btn-restore" title="Quitar de la lista de exclusión y devolver al orden activo">↩️ Restaurar</button>`
-                    : `<button type="button" class="btn-exclude" title="Mover este resultado al final de la lista de búsqueda">🚫 Excluir</button>`;
-
                 a.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
                         <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1;">
@@ -1456,13 +1723,17 @@
                             ${corpusBadge}
                             ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
                             ${matchBadge}
-                            ${excludedBadge}
                         </div>
                         <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
                             <button type="button" class="btn-copy-cmd" title="Copiar referencia al portapapeles (${escapeHtml(openFile)}, ${escapeHtml(cmd || item.id)})">
                                 📋 Copiar
                             </button>
-                            ${actionBtnHtml}
+                            <button type="button" class="btn-exclude" title="Omitir solo esta línea de las búsquedas">
+                                🚫 Excluir línea
+                            </button>
+                            <button type="button" class="btn-exclude-file" title="Omitir TODO este archivo CSV de las búsquedas">
+                                📁 Excluir CSV
+                            </button>
                         </div>
                     </div>
                     <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
@@ -1476,7 +1747,7 @@
                         e.preventDefault();
                         return;
                     }
-                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-restore') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
+                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-exclude-file') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
                         e.preventDefault();
                         e.stopPropagation();
                     }
@@ -1532,14 +1803,12 @@
                     });
                 }
 
-                const btnRestore = a.querySelector('.btn-restore');
-                if (btnRestore) {
-                    btnRestore.addEventListener('click', (e) => {
+                const btnExcludeFile = a.querySelector('.btn-exclude-file');
+                if (btnExcludeFile) {
+                    btnExcludeFile.addEventListener('click', (e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        excludedMap.delete(itemKey);
-                        saveExcludedToStorage();
-                        performSearch(lastQuery, currentPage);
+                        promptExcludeFile(e, openFile, corpus);
                     });
                 }
 
@@ -1547,7 +1816,7 @@
             });
 
             if (renderedCount === 0 && items.length > 0) {
-                resultsList.innerHTML = `<div class="empty-state">Todos los resultados están en tu lista de exclusión.<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="renderExcludedList(); manageExcludedModal.style.display='flex';">Ver líneas excluidas (${excludedMap.size})</button></div>`;
+                resultsList.innerHTML = `<div class="empty-state">Todos los resultados coinciden con tus reglas de exclusión (líneas o archivos CSV completos).<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="if (excludedFilesMap.size > 0) setExcludedTab('files'); else setExcludedTab('lines'); manageExcludedModal.style.display='flex';">Gestionar exclusiones</button></div>`;
             }
 
             renderPagination(page, totalPages, total, capped);
