@@ -2802,7 +2802,7 @@ ItemWarehouse,1,WarehouseQuest_ReceivingWindow_WarehouseLittleSpace,No se pudier
 ItemWarehouse,1,WarehouseQuest_ReceivingWindow_Close_Buy,Vender los artículos restantes
 ItemWarehouse,1,WarehouseQuest_Receiving_Auto_Sell,Todos los artículos restantes en Quest Storage se vendieron por $(0)<pict reb_meseta>N-Meseta.
 ItemWarehouse,1,WarehouseQuest_Receiving_Guidance_Window_title,Verifique los elementos restantes en el almacenamiento temporal de misiones
-ItemWarehouse,1,WarehouseQuest_Receiving_Guidance_Window_mes,una vez que comience tu próxima búsqueda.<br>¿Abrir Quest Storage y revisar tus artículos ahora?
+ItemWarehouse,1,WarehouseQuest_Receiving_Guidance_Window_mes,Tus artículos en el almacenamiento temporal de misiones<br>serán <yellow>automáticamente vendido<c> una vez que comience tu<br>próxima misión. ¿Abrir Quest Storage y revisar tus<br>artículos ahora?
 ItemWarehouse,1,WarehouseQuest_Receiving_Warning_Message,No se puede comenzar la misión. Hay un miembro del grupo al que le queda un artículo<br>en su<yellow>Almacenamiento temporal de misiones <c>.
 ItemWarehouse,1,WarehouseQuest_Receiving_Confirm_MoveAll,Mover por lotes al almacenamiento de materiales desde el almacenamiento temporal de la misión <br>.<br>¿Está seguro de que desea continuar?
 ItemWarehouse,1,Explanation_AllItems,Muestre todos los artículos que tenga en su poder excepto los siguientes:<br><br>Almacenamiento Temporal <br>Almacenamiento temporal <br>Almacenamiento temporal de misiones <br>Almacenamiento del equipo OP <br>Almacenamiento extendido<br><br><yellow>Nota: El almacenamiento extendido configurado como almacenamiento<br>favorito aún se mostrará.<c>
@@ -2912,7 +2912,7 @@ ItemDetails,1,AddingParameter,Estadísticas adicionales
 ItemDetails,1,Aggressivity,Ataque
 ItemDetails,1,Resistant,Resistencia
 ItemDetails,1,FlagTicketAllRegistedCaption_1,Estado de uso:<yellow>Sin usar<c><br> Su uso lo vinculará a este personaje.
-ItemDetails,1,FlagTicketAllRegistedCaption_2,le permitirá seleccionar<br>con todos los personajes de su cuenta.
+ItemDetails,1,FlagTicketAllRegistedCaption_2,Estado de uso: <yellow> Vinculado a otro personaje <c><br>Usar esto le permitirá seleccionar con todos<br>los personajes de tu cuenta.
 ItemDetails,1,FlagTicketAllRegistedCaption_2_1,Estado de uso:<yellow>Vinculado a este personaje<c><br> El uso de esto le permitirá seleccionar<br>con todos los personajes de su cuenta.
 ItemDetails,1,FlagTicketAllRegistedCaption_3,Estado de uso:<yellow>Vinculado a la cuenta<c><br> Seleccionable por todos los personajes de su cuenta.
 ItemDetails,1,FlagTicketAllRegistedCaption_10,"Estado de uso:<yellow>Sin usar<c><br> Al usar esto, se abre para seleccionar<br>con todos los personajes de su cuenta."
@@ -3476,9 +3476,9 @@ LaboMain,1,Explanation3_v,<c f0df60> Los elementos de soporte se pueden seleccio
 LaboMain,1,Explanation4,<c f0df60>La opción «Affix Augment» te permite seleccionar mejoras de varias armas o unidades y añadirlas a un objeto. Selecciona el objeto «objetivo» al que quieras aplicarlas.<c>
 LaboMain,1,Explanation4_v,"<c f0df60> Se pueden agregar aumentos desde un arma o unidad. Seleccione un elemento ""objetivo"" para agregarlo. <c>"
 LaboMain,1,Explanation5,"<c f0df60>Selecciona un elemento para usarlo como ""material"". Debe ser un arma con la misma cantidad de aumentos que el objeto objetivo. <c ff4f3f>El material se consumirá<br>una vez finalizado<c f0df60>.<c>"
-LaboMain,1,Explanation5_v,y artículo. <c ff4f3f>Se consumirá una vez hecho <c f0df60>. <c>
+LaboMain,1,Explanation5_v,<c f0df60>Seleccione un elemento con el mismo número de aumentos que el elemento de destino. <c ff4f3f>Se consumirá una vez hecho<c f0df60>.<c>
 LaboMain,1,Explanation6,"<c f0df60>Selecciona un elemento para usarlo como ""material"". Debe ser un arma con la misma cantidad de aumentos que el objeto objetivo. <c ff4f3f>El material se consumirá una vez finalizado<c f0df60>.<c>"
-LaboMain,1,Explanation6_v,y artículo. <c ff4f3f>Se consumirá una vez hecho <c f0df60>. <c>
+LaboMain,1,Explanation6_v,<c f0df60>Seleccione un elemento con el mismo número de aumentos que el elemento de destino. <c ff4f3f>Se consumirá una vez hecho<c f0df60>.<c>
 LaboMain,1,Explanation7,"<c f0df60> Seleccione los aumentos que desea agregar y complete la lista ""Aumentos para agregar"" para comenzar. (La ranura adicional es opcional). <c>"
 LaboMain,1,Explanation7_v,<c f0df60> Seleccione Aumentos y complete la lista para comenzar. (La ranura adicional es opcional). <c>
 LaboMain,1,Explanation8,"<c f0df60> Esta es la pantalla de confirmación final para agregar aumentos. Si tiene elementos de soporte, puede seleccionarlos aquí. <c>"
@@ -3519,7 +3519,7 @@ LaboMain,1,Explanation17,"<c f0df62> Se puede utilizar un pase ""Cancelar regist
 LaboMain,1,Explanation18,<c f0df62> Esta es la confirmación final para cancelar el registro de propietario. <c>
 LaboMain,1,Explanation19,"<c f0df60> Se pueden usar elementos específicos para intercambiar potenciales de armas. Selecciona un arma ""objetivo"". <c>"
 LaboMain,1,Explanation20,<c f0df60> Seleccione un potencial que desee intercambiar. <c>
-LaboMain,1,Explanation21,s. Asegúrate de tener la meseta requerida y los artículos para intercambiar. <c>
+LaboMain,1,Explanation21,<c f0df60>Esta es la pantalla de confirmación final para intercambiar Potenciales. Asegúrate de tener la meseta requerida y los artículos<br>para intercambiar.<c>
 LaboMain,1,RegisterOwnerShipConfirmMessage,"* Para una rareza de $(0) o superior, se producirá<yellow>registro de propietario <c>, lo que hará imposible tratar con otros jugadores <br>."
 LaboMain,1,RegisterOwnerShipResultMessage,<yellow> El registro del propietario está completo <c>.
 LaboMain,1,CategoryNewWeapon,Mejorar arma o armadura
@@ -3806,14 +3806,14 @@ LaboGrind,1,GrindResultMessage_Gamma2,La mejora fue un <c ff007f>Gran éxito<c>.
 LaboGrind,1,GrindResultMessage_Gamma3,La mejora fue un <c ff007f>Gran éxito<c>.
 LaboGrind,1,GrindResultMessage_Gamma_BonusElement,"Factor de aumento desbloqueado.<br><br> Si seleccionaste esta arma en Affix Augment,<br><pict bonus_elem_icon> $(0) será seleccionable."
 LaboGrind,1,GrindResultMessage_Waker_BonusElement,"Factor de aumento desbloqueado.<br><br> Si seleccionaste esta arma en Affix Augment,<br><pict awake_sp_icon> $(0) será seleccionable."
-LaboGrind,1,GrindResultMessage_Unit_BonusElement,"Aumento de afijo],<br><pict bonus_elem_icon> $(0) será seleccionable."
+LaboGrind,1,GrindResultMessage_Unit_BonusElement,"Factor de aumento desbloqueado.<br><br>Si seleccionó esta unidad en [Aumento de afijo],<br>Se podrá seleccionar <pict bonus_elem_icon>$(0)."
 LaboGrind,1,GrindResultMessage_GammaUnit_BonusElement,"Factor de aumento desbloqueado.<br><br>Si seleccionó esta unidad en [Aumento de afijo],<br>Se podrá seleccionar <pict awake_sp_icon>$(0)."
 LaboGrind,1,BonusElementReleaseTitle,DESBLOQUEAR EL FACTOR DE AUMENTO
 LaboGrind,1,BonusWakerElementReleaseTitle,DESBLOQUEAR EL FACTOR DE AUMENTO
 LaboGrind,1,SetErrorMessage_Limit,"Este elemento ya no se puede mejorar,<br>porque ya alcanzó su valor máximo."
 LaboGrind,1,SetErrorMessage_Exp,Este artículo ha alcanzado la mejora máxima. Lv. disponible.<br>Gana más Ring EXP para aumentar la mejora máxima. Lv.
-LaboGrind,1,SetErrorMessage_Gamma1,"Máximo, el elemento no se puede<br>mejorar más. Puedes cambiar su elemento."
-LaboGrind,1,SetErrorMessage_Gamma2,no se puede mejorar más.<br>Puedes mejorar o cambiar su elemento.
+LaboGrind,1,SetErrorMessage_Gamma1,"Porque el nivel de mejora y el nivel de<br>elemento ya están al máximo, el artículo no<br>puede ser mejorado aún más. Puedes cambiar su<br>elemento."
+LaboGrind,1,SetErrorMessage_Gamma2,"Debido a que el nivel de mejora ya está al máximo, el<br>artículo no se puede mejorar más. Puedes mejorar o<br>cambiar su elemento."
 LaboGrind,1,SetErrorMessage_Gamma3,"Dado que el nivel del elemento ya está al máximo,<br>no es posible aumentarlo más.<br>Puedes mejorar el objeto o cambiar su elemento."
 LaboGrind,1,SetErrorMessage_Gamma4,Los elementos bloqueados no se pueden utilizar como materiales.
 LaboGrind,1,MaterialSelectListTitle,SELECCIONAR ARTÍCULO MATERIAL
@@ -4090,7 +4090,7 @@ LaboGrindAttribute,1,DropSrc,Establecer un elemento para usarlo como material
 LaboGrindAttribute,1,GrindTitle,ELEMENTO DEL ARTÍCULO ENH.
 LaboGrindAttribute,1,GrindMessage,<br> * Los elementos de soporte se pueden usar para cambiar<br>elementos y aumentar los niveles de los elementos.
 LaboGrindAttribute,1,GrindMessage_v,La mejora está a punto de comenzar. ¿Deseas continuar?<br> Se pueden usar objetos de soporte para cambiar<br> elementos y aumentar los niveles de elemento.
-LaboGrindAttribute,1,AttributeMessage,Nivel.<br><br> * Se puede<br>seleccionar un elemento de cambio de elemento para cambiar el elemento del elemento.
+LaboGrindAttribute,1,AttributeMessage,"Este artículo no se puede mejorar de<br>ninguna manera. más, ya que ha<br>alcanzado el máximo Nivel de elemento.<br>* Un elemento de cambio de elemento<br>puede ser seleccionado para cambiar<br>el elemento del elemento."
 LaboGrindAttribute,1,AttributeMessage_v,ement Cambiar elemento<br>se puede seleccionar para cambiar el elemento del elemento.
 LaboGrindAttribute,1,GrindSupport1,Artículo de soporte 1
 LaboGrindAttribute,1,GrindNoSupport1Item,No usar
@@ -5670,7 +5670,7 @@ IdentifyMain,1,IdentifyItem,Tasar artículo(s)
 IdentifyMain,1,Exit,Tasación de salida
 IdentifyMain,1,Explanation1,"<c f0df60> Puedes valorar objetos no valorados (<c 00ffff>? Armas especiales <c f0df60>, <c 00ffff>? Huevos especiales <c f0df60>) <c>"
 IdentifyMain,1,Explanation2,<c f0df60>Selecciona el arma (<c 00ffff>? Armas especiales<c f0df60>) que deseas evaluar.<c> Puedes seleccionar múltiples armas con<%MultiSelect><c f0df60>.<c>
-IdentifyMain,1,Explanation3,"Un artículo ha sido tasado, puedes agregarle Elementos y Aumentos. <c>"
+IdentifyMain,1,Explanation3,"<c f0df60>Esta es la pantalla final para confirmar la tasación del artículo. Una vez que un artículo ha sido evaluado, puedes agregarle Elementos y Aumentos.<c>"
 IdentifyMain,1,IdentifyItem_special,Evaluación mejorada
 IdentifyMain,1,IdentifyEgg,tasar huevos
 IdentifyMain,1,Explanation4,<c f0df60>Selecciona el o los huevos (<c 00ffff>? Huevo(s) especial(es)<c f0df60>) que deseas tasar.<c> Puedes seleccionar varios huevos con <%MultiSelect><c f0df60><c>
@@ -5765,7 +5765,7 @@ IdentifyIdentify,1,NoMatchItemErrorTitle,EVALUACIÓN DEL ARTÍCULO
 IdentifyIdentify,1,NoMatchItemErrorMessage1,No hay artículos para Tasar.
 IdentifyIdentify,1,SetErrorTitle,EVALUACIÓN DEL ARTÍCULO
 IdentifyIdentify,1,SetErrorMessage1,Este artículo no se puede tasar.<br><br> [No. 2108]
-IdentifyIdentify,1,ConfirmMessage2,"mi.<br><br> Seleccione un Elemento, luego<br>seleccione el botón Iniciar Evaluación."
+IdentifyIdentify,1,ConfirmMessage2,"Una vez que un artículo ha sido tasado,<br>usted puede agréguele un elemento de<br>forma gratuita.<br>Seleccione un elemento, luego seleccione<br>el botón Iniciar tasación."
 IdentifyIdentify,1,PackReturn,Cancelar tasación
 IdentifyIdentify,1,PackNext10,Continuar tasación
 IdentifyIdentify,1,PackEnd,Tasación completa
@@ -5781,8 +5781,8 @@ IdentifyIdentify,1,ConfirmMessage4,"Puedes agregar un elemento a los elementos<b
 IdentifyIdentify,1,IdentifyResultMessage3,Se han tasado los siguientes elementos.
 IdentifyIdentify,1,PackErrorTitle,ERROR DE EVALUACIÓN
 IdentifyIdentify,1,PackErrorMessage,La tasación falló.
-IdentifyIdentify,1,PackResultMesage,"bajo>($(1)/$(2))<c><br><br>Presione el botón ""Continuar tasación""."
-IdentifyIdentify,1,PackResultMesage2,"bajo>($(1)/$(2))<c><br><br>Presione el botón ""Evaluación completa""."
+IdentifyIdentify,1,PackResultMesage,"Se han tasado los siguientes artículos <yellow>$(0)<c>.<br><yellow>($(1)/$(2))<c><br><br>Presione el botón ""Continuar Tasación""."
+IdentifyIdentify,1,PackResultMesage2,"Se han tasado los siguientes artículos <yellow>$(0)<c>.<br><yellow>($(1)/$(2))<c><br><br>Presione el botón ""Evaluación completa""."
 ItemOwnership,0,Title,装備（オーナー登録）の実行確認
 ItemOwnership,0,Message,「$(0)」を装備すると、<br>自動的に<yellow>オーナー登録<c>が行われます。<br><br>オーナー登録が行われたアイテムは、<br>他のプレイヤーと取り引き不可になります。<br>（アイテムトレード、マイショップへの出品など）<br><br>※シティショップでの売却は可能です。<br><br>装備して、オーナー登録しますか？
 ItemOwnership,0,Message2,「$(0)」のオーナー登録が完了しました。
@@ -23306,7 +23306,7 @@ PaCustomizeExplanation,0,DbladePA05_02,デュアルブレードPA5・カスタ�
 PaCustomizeExplanation,0,DbladePA06_02,デュアルブレードPA6・カスタム2説明文
 PaCustomizeExplanation,0,DbladePA07_02,デュアルブレードPA7・カスタム2説明文
 PaCustomizeExplanation,1,SwordPA01_01,Descripción de Sword Photon Art 1 / Personalizado 1
-PaCustomizeExplanation,1,SwordPA02_01,Mantén presionado el botón mientras<br>un ataque giratorio prolongará tu tiempo de ataque.
+PaCustomizeExplanation,1,SwordPA02_01,Le permite moverse en una dirección determinada<br>mientras un ataque giratorio. Mantenga<br>presionado el botón mientras un ataque giratorio<br>prolongará su tiempo de ataque.
 PaCustomizeExplanation,1,SwordPA03_01,Descripción de Sword Photon Art 3 / Personalizado 1
 PaCustomizeExplanation,1,SwordPA04_01,Descripción de Sword Photon Art 4 / Personalizado 1
 PaCustomizeExplanation,1,SwordPA05_01,Descripción de Sword Photon Art 5 / Personalizado 1
@@ -23405,10 +23405,10 @@ PaCustomizeExplanation,1,LauncherPA09_01,Lanzagranadas Photon Art 9 / Personaliz
 PaCustomizeExplanation,1,LauncherPA10_01,Lanzagranadas Photon Art 10 / Personalizado 1 descripción
 PaCustomizeExplanation,1,LauncherPA11_01,Lanzagranadas Photon Art 11 / Personalizado 1 descripción
 PaCustomizeExplanation,1,MachinegunPA01_01,Descripción de Twin Machine Guns Photon Art 1 / Custom 1
-PaCustomizeExplanation,1,MachinegunPA02_01,Al presionar repetidamente el botón aumentará<br>el número de ataques.
+PaCustomizeExplanation,1,MachinegunPA02_01,Tira a tu objetivo al suelo y luego llueve un granizo.<br>de disparos. Al presionar repetidamente el botón<br>aumentará el número de ataques.
 PaCustomizeExplanation,1,MachinegunPA03_01,Descripción de Twin Machine Guns Photon Art 3 / Custom 1
 PaCustomizeExplanation,1,MachinegunPA04_01,Descripción de Twin Machine Guns Photon Art 4 / Custom 1
-PaCustomizeExplanation,1,MachinegunPA05_01,Enfoca los fotones acumulados para liberar<br>un poderoso ataque contra tu objetivo.
+PaCustomizeExplanation,1,MachinegunPA05_01,"Mantenga presionado el botón para liberar un aluvión<br>salvaje de disparos. Finalmente, enfoca los fotones<br>acumulados para liberarlos. un poderoso ataque a tu<br>objetivo."
 PaCustomizeExplanation,1,MachinegunPA06_01,Descripción de Twin Machine Guns Photon Art 6 / Custom 1
 PaCustomizeExplanation,1,MachinegunPA07_01,Descripción de Twin Machine Guns Photon Art 7 / Custom 1
 PaCustomizeExplanation,1,MachinegunPA08_01,Descripción de Twin Machine Guns Photon Art 8 / Custom 1
@@ -24529,11 +24529,11 @@ SkillRingSkillHelp,1,ring_BoostAttack,"Boosted Enemy Slayer<br>Aumenta el poder 
 SkillRingSkillHelp,1,ring_WpnSword01,Perfect Guard Sonic Arrow<br>Sonic Arrow se activa cuando realizas con éxito un<br>Perfect Guard con una espada.
 SkillRingSkillHelp,1,ring_WpnWLance01,Perfect Guard Heavenly Drop<br>Heavenly Drop se activa cuando realizas con éxito un<br>Perfect Guard con lanzas cableadas.
 SkillRingSkillHelp,1,ring_WpnPartisan01,Perfect Guard Impact Rise<br>Impact Rise se activa cuando realizas con éxito un<br>Perfect Guard con un partisano.
-SkillRingSkillHelp,1,ring_WpnDSaber01,"Sabre,<br>aparece un torbellino en algunos casos, dependiendo de tu enfoque."
+SkillRingSkillHelp,1,ring_WpnDSaber01,"Torbellino de doble sable Al realizar un Arte Fotónico con<br>un Sable Doble, En algunos casos aparece un torbellino,<br>dependiendo de tu enfoque."
 SkillRingSkillHelp,1,ring_WpnTDagger01,Persecución aérea con dagas gemelas Te hace acercarte a un<br>enemigo en el aire mientras estás fijado. usando Dagas<br>Gemelas para un Ataque Normal o algunas Artes Fotónicas.
 SkillRingSkillHelp,1,ring_WpnKnuckle01,Persecución de nudillos Te hace acercarte a un enemigo en<br>el suelo mientras estás bloqueado. sobre el uso de<br>Knuckles para un ataque normal o algunas artes fotónicas.
 SkillRingSkillHelp,1,ring_WpnTMachineGun01,Forward Stylish Roll<br>Te permite avanzar usando Stylish Roll con ametralladoras gemelas <br>.
-SkillRingSkillHelp,1,ring_WpnKatana01,"con una<br>Katana. A medida que aumenta el nivel, el enfoque aumentará durante esta versión."
+SkillRingSkillHelp,1,ring_WpnKatana01,"Liberación de guardia de enfoque de Katana Libera el enfoque al<br>mantener la posición de guardia con un Katana. A medida que<br>aumenta el nivel, el enfoque aumentará durante esta versión."
 SkillRingSkillHelp,1,ring_WpnDBlade01,"Tackle de Soaring Blades<br>Al moverse con una acción de arma de Soaring Blades,<br>el enemigo recibirá daño cuerpo a cuerpo."
 SkillRingSkillHelp,1,ring_TechChargeGuard,Técnica de parada de carga<br>Te permite realizar una guardia perfecta en el instante en que comienzas<br>a cargar un arma tecnológica.
 SkillRingSkillHelp,1,ring_RecastRateRebirtherField,Refundición del campo inverso<br>Se reduce el tiempo de recuperación para el campo inverso.
@@ -24584,7 +24584,7 @@ SkillRingSkillHelp,1,ring_SpecialEffectPh,Emblema del valor del fantasma<br>El e
 SkillRingSkillHelp,1,ring_SpecialEffectEt,"Emblema de valor de Étoile<br>El emblema de un guerrero distinguido, obtenido a través de<br>esfuerzo diligente."
 SkillRingSkillHelp,1,ring_SpecialEffectLu,Emblema de valor de Lustre<br>El emblema de un maestro brillante<br>ganado a través de<br>esfuerzo diligente.
 SkillRingSkillHelp,1,ring_SpecialEffectCo,Protección de la Amistad<br>Un anillo de amistad entre Itsuki y RINA.<br>Reduce el daño recibido.
-SkillRingSkillHelp,1,ring_TecArtsJAPPSave,Forma un ataque<br>perfecto mientras encadenas diferentes artes y técnicas de fotones.
+SkillRingSkillHelp,1,ring_TecArtsJAPPSave,Var. combinada. P. Ataque PP Guardar (Anillo) Reduce tu<br>consumo de PP cuando realizas un Perfect Ataca mientras<br>encadenas diferentes artes y técnicas de fotones.
 SkillRingSkillHelp,1,ring_HighJump,Esquivar con salto<br>Aumenta tu velocidad para esquivar los ataques enemigos cuando se usa después de que<br>se registre en la paleta secundaria.
 SkillRingSkillHelp,1,ring_AnyTimeAutoAttack,Objetivo automático cercano Girar el armonizador<br>una vez provocará tu mascota para atacar<br>automáticamente al enemigo estás apuntando.
 SkillRingSkillHelp,1,ring_PhotonBladeHoming,Photon Blades Homing<br>Agrega una función de guía a tus ataques Photon Blade<br>mientras te mueves.
@@ -24969,7 +24969,7 @@ LaboElementInherit,1,Constitution3,Augment Transferido
 LaboElementInherit,1,Constitution4,Capsula de Augment será Consumida
 LaboElementInherit,1,Constitution5,Pase de Transferencia de Augments sera Consumido
 LaboElementInherit,1,Constitution6,Cuenta
-LaboElementInherit,1,Message_Explanation,número de ranuras.<br><br> Nota: Los aumentos de grado S se pueden seleccionar desde la base.
+LaboElementInherit,1,Message_Explanation,Seleccione un aumento para transferirlo al elemento<br>base con un número correspondiente de espacios.<br>Nota: Los aumentos de grado S se pueden seleccionar<br>desde la base.
 LaboElementInherit,1,Need_Item,<yellow> $(1) Requerido: $(2) (Tienes: $(0))<c><br><yellow>Meseta Requerido: $(4) (Tienes: $(3)) <c>
 LaboElementInherit,1,Need_Item2,Base: $(0)<br>Materiales: $(1)
 LaboElementInherit,1,Message_Confirm,Transferencia de aumento inicial. ¿Está seguro?<br><br>Nota: Los aumentos no transferidos <scarlet> se perderán.<c> Todos los<br>aumentos agregados a los elementos seleccionados como materiales<br><scarlet>>se perderán.<c>
@@ -25104,7 +25104,7 @@ LaboElementCompose,1,ConfirmationNum3,Cápsula de aumento para consumir
 LaboElementCompose,1,ConfirmationNum4,Contar
 LaboElementCompose,1,ConfirmationNum5,Categoría $(0)
 LaboElementCompose,1,AttentionMessage,Ya se ha añadido un aumento con el mismo efecto.
-LaboElementCompose,1,ConfirmationAttentionMessage,¿Deseas continuar?<br><br><br>- Rareza 4+<br>- En el nivel máximo de mejora
+LaboElementCompose,1,ConfirmationAttentionMessage,Uno o más de los siguientes se aplican a este artículo.<br>¿Está seguro de que desea continuar?<br><br>-Rareza 4★+<br>-En el nivel máximo de mejora
 LaboElementCompose,1,ConfirmationAbilityDisappearMessage,"No se ha seleccionado ningún aumento de equipo.<br>Si realiza un Aumento sin seleccionar, esa<br>habilidad <scarlet>desaparecerá<c>.<br><br>¿Está seguro de que desea continuar?<br><br><yellow>Nota: Si el Aumento EX desaparece no se puede<br>agregar más tarde.<c>"
 LaboElementSupplement,0,Explanation1,特殊能力を付与したい武器、または防具を選んでください。
 LaboElementSupplement,0,Explanation2,特殊能力カプセルを選んでください。選んだ特殊能力カプセルは、<scarlet>付与後に消滅<c>します。
