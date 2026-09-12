@@ -4472,7 +4472,7 @@ SkillTree,0,Message_SkillAcquisitionLack,M.A.R.S.スキルポイントが不足�
 SkillTree,1,LevelUp_Ask,Estás a punto de subir de nivel consumiendo $(0) SP.<br>¿Está seguro de que desea continuar?<br><br> (Tus puntos de habilidad: $(1))
 SkillTree,1,LevelUp_AskNoCost,Estás a punto de subir de nivel<yellow>sin consumir ningún SP <c>.<br>¿Está seguro de que desea continuar?
 SkillTree,1,LevelUp_Success,Puntos de habilidad asignados.
-SkillTree,1,LevelUp_Lack,Nuestro estado en cada nivel de habilidad<br>a través de <%NextTabDetails>.<br><br> (Puntos de habilidad requeridos: $(0))
+SkillTree,1,LevelUp_Lack,No puedo aprender esta habilidad porque no tienes<br>suficientes puntos de habilidad. Puedes ver tu<br>estado en cada nivel de habilidad. a través de <br><%NextTabDetails>.<br><br>(Puntos de habilidad requeridos: $(0))
 SkillTree,1,LevelUp_Lack_v,No puedo aprender esta habilidad porque no tienes<br>suficientes puntos de habilidad. Puedes ver tu<br>estado en cada nivel de habilidad. a través de<br><pict Sign_SELECT>.<br><br>(Puntos de habilidad requeridos: $(0))
 SkillTree,1,LevelUp_LackLv,Nivel de aprendizaje aún no alcanzado.
 SkillTree,1,LevelUp_Max,No se puede subir más de nivel.
@@ -7628,7 +7628,7 @@ SkillExplanation,1,StepAdvance,Extiende la duración de la invulnerabilidad dura
 SkillExplanation,1,StepAttack,Te permite atacar mientras realizas un paso lateral.
 SkillExplanation,1,HunterJustReversal,Te permite saltar rápidamente después de haber sido derribado al suelo.
 SkillExplanation,1,HunterHPUp1,Aumenta tu HP máximo.
-SkillExplanation,1,GuardStance,o reducir el nivel de daño cuerpo a cuerpo que recibes. Hace que la postura de furia sea ineficaz.
+SkillExplanation,1,GuardStance,Habilidad de postura activa que reduce el daño cuerpo a cuerpo y a distancia que infliges y al mismo tiempo reduce el nivel de daño cuerpo a cuerpo que<br>recibes. Hace que la postura de furia sea ineficaz.
 SkillExplanation,1,GuardStanceUp1,Aumenta tu resistencia cuerpo a cuerpo mientras estás en posición de guardia.
 SkillExplanation,1,HunterHPUp2,Aumenta tu HP máximo. Produce un efecto más fuerte que HP Up 1.
 SkillExplanation,1,HunterHPUp3,Aumenta tu HP máximo. Produce un efecto más fuerte que HP Up 2.
@@ -7662,8 +7662,8 @@ SkillExplanation,1,PrettyGood,Reduce la duración de las dolencias de estado que
 SkillExplanation,1,Sacrifice,Restaura HP cuando un enemigo muere dentro de un rango fijo mientras Guard Stance está activo.
 SkillExplanation,1,HunterAtpStrikeUp3,Aumenta tu poder cuerpo a cuerpo. Produce un efecto más fuerte que Melee Power Up 2.
 SkillExplanation,1,JustGuardAdvance,Guardia perfecta avanzada
-SkillExplanation,1,FuryGearBoost,Postura de furia o postura de guardia. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
-SkillExplanation,1,NeverGiveup,Aumentar el nivel de habilidad aumenta el poder cuerpo a cuerpo y extiende aún más la invulnerabilidad.
+SkillExplanation,1,FuryGearBoost,Otorga una bonificación a la tasa de aumento del indicador de enfoque de las armas de cazador durante la postura de furia o la postura de guardia. <yellow>Esta habilidad solo se puede usar con una clase principal.
+SkillExplanation,1,NeverGiveup,Aumenta el poder cuerpo a cuerpo durante 60 segundos después de usar Iron Will y extiende la invulnerabilidad. Aumentar el nivel de habilidad aumenta el poder<br>cuerpo a cuerpo y extiende aún más la invulnerabilidad.
 SkillExplanation,1,MassiveHunter,Reduce el daño y evita que te lancen al aire o te derriben.
 SkillExplanation,1,AdvanceGuard,Recupera tu HP y el HP de otras personas en las cercanías cuando realizas una Perfect Guard exitosa.
 SkillExplanation,1,WarBrave,Obtén bonificación cuando Grito de guerra está activo. Esta habilidad sólo se puede utilizar con una clase principal.
@@ -7979,7 +7979,7 @@ SkillExplanation,1,BraverJustReversal,Te permite levantarte rápidamente tras se
 SkillExplanation,1,Combat,Activa el poder de combate. Úsalo nuevamente para liberar un golpe final. <yellow>*Solo armas Braver.<c>
 SkillExplanation,1,CombatJABonus1,Otorga una bonificación de daño a los Ataques Perfectos realizados durante Katana Combat.
 SkillExplanation,1,CombatFinish,Otorga una bonificación de daño al golpe final de Katana Combat.
-SkillExplanation,1,ShortTime,Reduce el intervalo de ataque para realizar un combo de hasta tres ataques normales rápidos.
+SkillExplanation,1,ShortTime,"Sólo inclinarse. Durante un tiempo determinado, sacrifica la potencia de ataque estándar y el intervalo de ataque de tu arco para realizar un combo de<br>hasta tres ataques normales consecutivos."
 SkillExplanation,1,ShortTimeUp1,Aumenta tu poder a distancia mientras el arco está en modo Fuego Rápido (Rapid Fire).
 SkillExplanation,1,ShortTimeBonus1,Otorga una bonificación de daño con arco durante el modo Fuego Rápido.
 SkillExplanation,1,AverageStance,Habilidad de postura pasiva que proporciona una bonificación de daño incondicional.
@@ -8078,7 +8078,7 @@ SkillExplanation,1,AllFDiffenceUp2,"Aumenta enormemente tu defensa cuerpo a cuer
 SkillExplanation,1,AllJAUp,Aumenta el daño de ataque infligido por todas las armas.
 SkillExplanation,1,AllJAComboUp,Aumenta todo el daño cuando realizas dos o más ataques perfectos seguidos.
 SkillExplanation,1,PetPhotonBarrier,Da una probabilidad determinada de neutralizar el daño sufrido por una mascota. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
-SkillExplanation,1,PetResque,la invulnerabilidad ocurre después de la activación. <yellow>Sólo se puede utilizar con una clase principal.
+SkillExplanation,1,PetResque,Agrega la posibilidad de que tu mascota reciba daño incapacitante. Después de la activación se produce un período de invulnerabilidad. <yellow>Solo se puede usar con<br>una clase principal.
 SkillExplanation,1,HPAutoRestraint,Hace que recuperes HP gradualmente cuando tu HP cae por debajo de un cierto umbral.
 SkillExplanation,1,MassiveMate,Elimina el retroceso y reduce el daño recibido cuando usas un elemento de recuperación.
 SkillExplanation,1,GetReadyGetUp,Reduce la cantidad de daño recibido cuando te empujan hacia atrás y al levantarte. También reduce el tiempo necesario para recuperarse después de ser<br>derribado.
@@ -8097,7 +8097,7 @@ SkillExplanation,1,PetStand,Otorga una bonificación de daño durante un tiempo 
 SkillExplanation,1,SummonerPPAdvance,Aumenta el daño de Photon Blast.
 SkillExplanation,1,TamingMaster,Todas las estadísticas se agregan cuando maximizas el pedigrí de tu mascota.
 SkillExplanation,1,PetSwtichStrike,ee Poder. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
-SkillExplanation,1,PetSwtichShoot,ed Power. <yellow>This skill can only be used with a Main Class.
+SkillExplanation,1,PetSwtichShoot,Convierte los ataques de tu mascota para que se realicen con Poder a Distancia. <yellow>Esta habilidad solo se puede usar con una<br>clase principal.
 SkillExplanation,1,AllAttackBonus1,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,AllAttackBonus2,Otorga una bonificación al daño infligido por el jugador y las mascotas.
 SkillExplanation,1,PetElementalWeakPoint,Aumenta el daño infligido al explotar una debilidad elemental. Aumenta enormemente el daño infligido por una mascota.
@@ -8139,7 +8139,7 @@ SkillExplanation,1,WpnmanPPUp1,Aumenta tu PP máximo.
 SkillExplanation,1,WpnmanWill,Agrega una posibilidad única de retener 1 HP cuando sufres daño que te habría incapacitado. Te vuelve invencible por un corto tiempo cuando se activa.
 SkillExplanation,1,WpnmanJustReversal,Te permite saltar rápidamente después de haber sido derribado al suelo.
 SkillExplanation,1,WpnmanNextJump,Permite saltar en dos etapas.
-SkillExplanation,1,WpnmanOneMoreJump,"Doble salto] mientras se equipa una espada, ametralladoras gemelas o un Talis."
+SkillExplanation,1,WpnmanOneMoreJump,"Te permite realizar un segundo salto después de pisotear a un enemigo usando [Salto doble] mientras estás equipado con una espada, ametralladoras gemelas o un Talis."
 SkillExplanation,1,WpnmanComeAgain,Le permite pasar a un tiro de marcado hasta dos veces.
 SkillExplanation,1,WpnmanChargeKeep,Realiza una acción de esquivar mientras se carga una acción o técnica de arma.
 SkillExplanation,1,WpnmanTMGAttackPPSave,Reduce la cantidad de PP consumidos por los ataques normales de Twin Machine Guns.
@@ -8190,7 +8190,7 @@ SkillExplanation,1,VillainJellenRedress,Mejora el efecto Jellen cuando lanzas un
 SkillExplanation,1,VillainQuickCut,"Cuando se equipa una Katana, se permite el movimiento a alta velocidad con una acción de arma con ATK y PA normales especialmente sincronizados. <yellow>Solo<br>se puede usar con la clase principal."
 SkillExplanation,1,VillainDodgeCounterShot,"Recarga rondas de ATK para Phantom Sidestep y agrega ATK de seguimiento cuando usas un ATK, PA o técnica normal con una varilla. <yellow>Solo disponible con<br>una clase principal."
 SkillExplanation,1,VillainSprintTecCharge,Permite moverse a alta velocidad mientras se carga una técnica.
-SkillExplanation,1,VillainGespenst,Activa un efecto especial al ser atacado mientras tu HP se reduce. <yellow>Solo Clase Principal.
+SkillExplanation,1,VillainGespenst,El daño recibido se reduce y los problemas de estado se neutralizan durante un tiempo determinado cuando eres atacado mientras se reduce HP. <yellow>Solo se puede usar con una clase principal.
 SkillExplanation,1,VillainAmbivalence,Permite realizar ataques poderosos con técnicas usando una Vara. <yellow>Solo Clase Principal.
 SkillExplanation,1,VillainTouchDown,Habilidad de aterrizaje.
 SkillExplanation,1,VillainDodge,Aumenta el movimiento de carga y otorga invulnerabilidad momentánea después de cargar la técnica con un arma fantasma. <yellow>Solo disponible con una clase principal.
@@ -8275,7 +8275,7 @@ SkillExplanation,1,SlayerGSlashReferenceChange,"Al atacar con un Gunblade, los c
 SkillExplanation,1,SlayerIgnoreResist,"Cuando un Gunblade está equipado, inflige daño que ignora las resistencias de las armas de enemigos especiales. <yellow>Esta habilidad solo puede ser<br>utilizada por una Clase Principal."
 SkillExplanation,1,SlayerTension,Los voltios aumentan de acuerdo con el número de ataques exitosos. Recibes bonificaciones de potencia y sufres menos daño dependiendo de cuántos voltios<br>tengas.
 SkillExplanation,1,SlayerTensionAssist,Activa automáticamente Shifta y Deband al alcanzar una cantidad fija de Voltios.
-SkillExplanation,1,SlayerTensionHighBonus,La tasa crítica y la recuperación de PP aumentan cuando los voltios se elevan por encima de una cantidad fija. El tiempo de reutilización de cualquiera de las<br>habilidades activas de tus clases disminuirá hasta que se reinicie.
+SkillExplanation,1,SlayerTensionHighBonus,La tasa crítica y la recuperación de PP aumentan cuando los voltios se elevan por encima de una cantidad fija. El tiempo de reutilización de cualquiera de las habilidades activas de tus clases disminuirá hasta que se reinicie.
 SkillExplanation,1,SlayerTensionResetGain,"Cuando se restablecen los voltios, se recuperan HP y PP. La cantidad recuperada dependerá de cuántos<br>Voltios se hayan elevado."
 SkillExplanation,1,SlayerTensionAwake,Bonificación que otorga Voltios adicionales cuando tus ataques<br>golpean a los jefes.
 SkillExplanation,1,SlayerZealot,Aumenta la duración del efecto de cada Shifta o Deband que recibas. La duración del efecto se puede ampliar hasta 120 segundos como máximo.
@@ -10201,7 +10201,7 @@ ClassCounter,1,SkillTreeResetExplain,<c f0df60>Reinicia tu árbol de habilidades
 ClassCounter,1,SkillTreeResetExplainSG,<c f0df60>Reinicia tu árbol de habilidades utilizando un [N-Additional Skill Tree Change] adquirido previamente o comprando uno con Star Gems. Empieza seleccionando el árbol de habilidades que deseas reiniciar.<c>
 ClassCounter,1,SkillTreeResetExplain_v,"Cambio de árbol de habilidades adicional], o comprar uno con ARKS Cash."
 ClassCounter,1,SkillTreeResetExplainSG_v,"Cambio de árbol de habilidades adicional], o comprar uno con Star Gems.<c>"
-ClassCounter,1,SkillTreeReset2Explain,puedes mover el árbol a otra clase. <c f0df60>Selecciona la clase a la que te gustaría mover el árbol de habilidades.<c>
+ClassCounter,1,SkillTreeReset2Explain,<c f0df60>Restablece el árbol de habilidades seleccionado. Durante el reinicio también puedes <yellow>mover el árbol a otra clase. <c f0df60>Selecciona la clase a la que te gustaría mover el árbol de habilidades.<c>
 ClassCounter,1,SkillTreeReset2Explain_v,<c f0df60>Restablece el árbol de habilidades seleccionado. Durante el reinicio también puedes <yellow>mover el árbol a otra<br>clase. <c f0df61>Selecciona una clase.<c>
 ClassCounter,1,ClassCounterExplain,<c f0df60>Puedes cambiar de clase y aprender habilidades de clase a través de árboles de habilidades.<c>
 ClassCounter,1,SkillTreeAddNum,Número de árboles de habilidades que se pueden agregar
@@ -11358,7 +11358,7 @@ SiriusPointShop,1,PrizeExchangePointRed,<red> $(0)<c><pict sirius_icon>
 SiriusPointShop,1,ExchangeCheckTitle,CONFIRMAR CAMBIO
 SiriusPointShop,1,ExchangeCheckMessage,Está a punto de cambiar los siguientes<br>artículos por $(0) <pict sirius_icon>.<br>¿Está seguro de que desea continuar? <br>
 SiriusPointShop,1,ExchangeLimitCheckMessage,Estás a punto de intercambiar lo siguiente elemento(s) para<br>$(0)<pict sirius_icon>. ¿Está seguro de que desea continuar? (Tu cuota de<br>intercambio se restablecerá cada <utcdow>miércoles a las 4:00</utcdow>)
-SiriusPointShop,1,PreExchangeLimitMessage,wish to proceed?<br>(Your exchange quota will be reset every <utcdow>Wednesday at 4:00</utcdow>)
+SiriusPointShop,1,PreExchangeLimitMessage,Has excedido el número máximo de intercambios. Por favor<br>vuelve más tarde. (Tu cuota de intercambio se restablecerá<br>cada <utcdow>miércoles a las 4:00</utcdow>)
 SiriusPointShop,1,ExchangeLimitMessage,No se puede completar su intercambio porque<br>excedió el número máximo de intercambios permitidos.
 SiriusPointShop,1,ExchangeCancelTitle,CONFIRMAR CANCELACIÓN
 SiriusPointShop,1,ExchangeCancelMessage,Estás a punto de cancelar el intercambio actual.<br>¿Está seguro de que desea continuar?
@@ -11974,7 +11974,7 @@ Synchronize,1,BasnetBootup,Se completaron los preparativos para el despliegue. L
 Synchronize,1,BasnetBootupUnlimited,¿Está seguro de que desea implementar? (Actualmente hay $(0) miembros).
 Synchronize,1,BasnetBootupSkit,¿Está seguro de que desea implementar?
 Synchronize,1,BasnetMessage,Se completaron los preparativos para el despliegue.<br>Un total de $(0) miembros del grupo serán<br>desplegados en el campo de batalla en 30 segundos.
-Synchronize,1,BasnetMessageSkit,La ciudad será<br>desplegada en el campo de batalla en 30 segundos.
+Synchronize,1,BasnetMessageSkit,Se completaron los preparativos para el<br>despliegue. Todos los miembros del grupo en<br>las cercanías serán desplegado en el campo de<br>batalla en 30 segundos.
 Synchronize,1,BasnetRemove,Retrasar la implementación
 Synchronize,1,BasnetStart,Desplegar
 Synchronize,1,BasnetFailed1,No se puede implementar.<br>Se requiere que al menos $(0) miembros estén presentes en la sala.
@@ -13292,7 +13292,7 @@ TreasureDetail,1,Treasure_017,Un permiso emitido por ARKS HQ que<br>le permite r
 TreasureDetail,1,Treasure_018,Un permiso emitido por ARKS HQ que<br>le permite realizar exploración sin restricciones<br>del área del desierto de Lillipa.
 TreasureDetail,1,Treasure_019,Un permiso emitido por ARKS HQ que<br>le permite realizar exploración sin restricciones<br>del área de Tundra de Naverius.
 TreasureDetail,1,Treasure_020,Un permiso emitido por ARKS HQ que<br>le permite explorar el área de<br>pozos subterráneos de Lillipa.
-TreasureDetail,1,Treasure_021,Exploración ictada<br>del área del continente flotante de Amduskia.
+TreasureDetail,1,Treasure_021,Un permiso emitido por ARKS HQ que le permite<br>realizar exploración sin restricciones del<br>área del Continente Flotante de Amduskia.
 TreasureDetail,1,Treasure_022,Un permiso emitido por ARKS HQ que<br>le permite realizar exploración sin restricciones<br>del área de las Ruinas de Naverius.
 TreasureDetail,1,Treasure_023,Un permiso emitido por ARKS HQ que<br>te permite realizar misiones difíciles.
 TreasureDetail,1,Treasure_024,Un permiso emitido por ARKS HQ que<br>te permite realizar misiones muy difíciles.
@@ -13460,7 +13460,7 @@ TreasureDetail,1,Treasure_187,Un permiso emitido por ARKS HQ<br>que le permite d
 TreasureDetail,1,Treasure_188,Un permiso emitido por ARKS HQ<br>que le permite desbloquear<br>el límite de quinto nivel del Fantasma.
 TreasureDetail,1,Treasure_189,Un permiso emitido por ARKS HQ<br>que le permite desbloquear el límite de nivel<br>de la clase Phantom hasta el nivel 100.
 TreasureDetail,1,Treasure_190,Tarjeta de socio de Kyokuya.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
-TreasureDetail,1,Treasure_191,lly genera posibilidades<br>para el futuro basándose en eventos pasados.
+TreasureDetail,1,Treasure_191,Una guía hacia el futuro que se te ha confiado<br>por Xion. Genera posibilidades algorítmicamente<br>para el futuro basándose en acontecimientos<br>pasados.
 TreasureDetail,1,Treasure_192,Tarjeta de socio de Mitarashi.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_193,Tarjeta de socio de Tetra.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
 TreasureDetail,1,Treasure_194,Tarjeta de Socio de § Ichika §.<br>Puedes convocar al personaje que figura en la tarjeta<br>a través de una terminal de Gateway Ship.
@@ -15134,7 +15134,7 @@ MySet,1,MySetPopup07,Agregar equipamiento
 MySet,1,MySetMessage02,Estás a punto de cambiar tu clase y<br>equipamiento según el contenido de<br>[Loadout $(0) $(1)]. ¿Está seguro de<br>que desea continuar?
 MySet,1,MySetMessage03,Estás a punto de cambiar el nombre de [Loadout $(0) $(1)].<br>Ingrese un nuevo nombre.
 MySet,1,MySetMessage04,Estás a punto de eliminar [Loadout $(0) $(1)].<br>¿Está seguro de que desea continuar?
-MySet,1,MySetMessage05,t clase y estado del equipo.<br>¿Está seguro de que desea continuar?
+MySet,1,MySetMessage05,Estás a punto de sobrescribir [Loadout $(0)<br>$(1)] con su clase actual y estado del equipo.<br>¿Está seguro de que desea continuar?
 MySet,1,MySetMessage06,Estás a punto de sobrescribir [Loadout $(0)<br>$(1)] con su clase actual y estado del equipo.<br><yellow>Nota: El nombre del Loadout no cambiará.<c> ¿Está<br>seguro de que desea continuar?
 MySet,1,MySetMessage07,Estás a punto de guardar tu clase actual<br>y el estado del equipo en [Loadout $(0)].<br>¿Está seguro de que desea continuar?
 MySet,1,Error,Error de carga
