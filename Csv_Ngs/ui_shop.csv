@@ -51,30 +51,30 @@ ShopCommon,1,StarDenomination,estrellas
 ShopCommon,1,CcDenomination,CC
 ShopCommon,1,CmDenomination,CENTÍMETRO
 ShopCommon,1,SgDenomination,SG
-ShopCommon,1,BcDenomination,ANTES DE CRISTO
+ShopCommon,1,BcDenomination,BC
 ShopCommon,1,SpDenomination,SP
 ShopCommon,1,Cash,dinero
-ShopCommon,1,CashMeseta,meseta
+ShopCommon,1,CashMeseta,Meseta
 ShopCommon,1,CashAc,AC
-ShopCommon,1,CashCp,ordenador personal
-ShopCommon,1,CashFun,DIVERTIDO
-ShopCommon,1,CashStar,estrellas
+ShopCommon,1,CashCp,CP
+ShopCommon,1,CashFun,FUN
+ShopCommon,1,CashStar,Stars
 ShopCommon,1,CashCc,CC
-ShopCommon,1,CashCm,CENTÍMETRO
+ShopCommon,1,CashCm,CM
 ShopCommon,1,CashSg,SG
-ShopCommon,1,CashBc,ANTES DE CRISTO
+ShopCommon,1,CashBc,BC
 ShopCommon,1,CashSp,SP
 ShopCommon,1,CashDenomi,$(0)
 ShopCommon,1,TotalAmount,dinero total
-ShopCommon,1,TotalMeseta,total de la meseta
-ShopCommon,1,TotalAc,aire acondicionado total
-ShopCommon,1,TotalCp,total de ordenadores
-ShopCommon,1,TotalFun,DESVÍO TOTAL
-ShopCommon,1,TotalStar,estrellas totales
+ShopCommon,1,TotalMeseta,total de meseta
+ShopCommon,1,TotalAc,Total AC
+ShopCommon,1,TotalCp,Total CP
+ShopCommon,1,TotalFun,Total FUN
+ShopCommon,1,TotalStar,Total Stars
 ShopCommon,1,TotalCc,CC totales
 ShopCommon,1,TotalCm,CM totales
-ShopCommon,1,TotalSg,totales gs
-ShopCommon,1,TotalBc,total antes de Cristo
+ShopCommon,1,TotalSg,Totales SG
+ShopCommon,1,TotalBc,Total BC
 ShopCommon,1,TotalSp,SP totales
 ShopCommon,1,TotalDenomi,Total $(0)
 ShopCommon,1,InputBuyNumberTitle_Vita,SELECCIONA CANTIDAD A COMPRAR
@@ -176,8 +176,8 @@ BlackMarket,1,ShopTitle,TIENDA DEL TESORO
 BlackMarket,1,ShopTitle_N_SG,Tienda del tesoro<pict 4space><pict StarGem>
 BlackMarket,1,ShopTitle_N_Meseta,Tienda del tesoro<pict 4space><pict reb_meseta>
 BlackMarket,1,MenuGuide,<c f0df60> Por favor seleccione una tienda. <c>
-BlackMarket,1,MenuGuide_N_SG,"Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
-BlackMarket,1,MenuGuide_N_Meseta,"Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
+BlackMarket,1,MenuGuide_N_SG,"Una tienda de artículos que se puede comprar con SG donde la lista de productos cambia todos los días. Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
+BlackMarket,1,MenuGuide_N_Meseta,"Una tienda de artículos que se puede comprar con N-Meseta donde la lista de productos cambia todos los días. Seleccione ""Actualizar producto"" para actualizar la lista de productos inmediatamente. (Gratis 1 vez al día)"
 BlackMarket,1,MenuTitle,MENÚ DE LA TIENDA
 BlackMarket,1,MenuSG,Comprar con gemas estrella
 BlackMarket,1,MenuMeseta,Comprar con meseta
@@ -201,10 +201,10 @@ BlackMarket,1,RenewConfirmTitle,ACTUALIZAR LISTA MANUALMENTE
 BlackMarket,1,RenewConfirmTitle_N,Actualizar producto
 BlackMarket,1,RenewConfirmMessage,"<pict StarGem><c 1dedd7>Se requiere pago de SG<c><br><br>Puedes comprar $(0) y actualizar inmediatamente la lista de productos.<br>¿Continuar a la pantalla de confirmación de compra?<br><br><yellow>Nota: La selección de productos es aleatoria, <br>por lo que pueden seleccionarse los mismos productos.<c><br>(Tus SG: $(1))"
 BlackMarket,1,RenewConfirmMessage_N_Free,"Actualiza ahora gratis la lista de productos de $(1). ¿Actualizar?<br><br><yellow>La lista de productos se genera aleatoriamente, por lo que pueden aparecer algunos de los mismos productos. Puedes actualizarla gratis una vez al día. Un Set Premium permite realizar una actualización adicional.<c><br><br>Actualizaciones manuales gratuitas restantes: <yellow>$(0)<c>"
-BlackMarket,1,RenewConfirmMessage_N_Premium,:<yellow>$(0) <c>
+BlackMarket,1,RenewConfirmMessage_N_Premium,"<yellow>Bono de conjunto premium<c><br>Puede actualizar la lista de productos $(1) una vez más de forma gratuita debido a su Conjunto Premium activo. ¿Proceder?<br><yellow>La lista de productos es aleatoria, por lo que pueden aparecer algunos de los mismos productos.<c><br>Actualizaciones manuales gratuitas restantes: <yellow>$(0)<c>"
 BlackMarket,1,RenewBuyTitle,ACTUALIZAR LISTA MANUALMENTE
-BlackMarket,1,RenewBuyMessage,las compras se reinician todos los días a las<utc>20:00 </utc>.<br>(Su SG: $(2)).
-BlackMarket,1,RenewBuyMessage_N_SG,r><pict StarGem>Su SG: $(2)
+BlackMarket,1,RenewBuyMessage,"Puede comprar el siguiente artículo por $(0) SG (normalmente<br>$(1) SG) y actualizar inmediatamente el lista de productos.<br>¿Está seguro de que desea continuar?<br><br><yellow>Nota: Al realizar varias compras seguidas, el precio se<br>descontará para los primeros nueve, pero el descuento se<br>aplicará disminuir más allá de eso.<c> El número de compras se<br>restablece todos los días a las <utc>20:00</utc>. (Tu SG: $(2))."
+BlackMarket,1,RenewBuyMessage_N_SG,"<pict StarGem><c 1dedd7>SG Pago requerido<c><br>Puede actualizar el $(1) ahora mismo para <pict StarGem><yellow>10 SG<c>. ¿Proceder?<br><yellow>La lista de productos es aleatoria, por lo que pueden aparecer algunos de los mismos productos<c>.<br>Actualizaciones manuales gratuitas restantes: <yellow>$(0)<c> <pict StarGem>Tu SG: $(2)"
 BlackMarket,1,RenewResultTitle,RESULTADOS DE LA LISTA DE PRODUCTOS REFRESCANTES
 BlackMarket,1,RenewResultMessage,La lista de productos se actualizó correctamente.
 BlackMarket,1,RenewResultError,La lista de productos no se pudo actualizar.
@@ -253,7 +253,7 @@ BlackMarket,1,BuyError_IllegalParam,La compra no se pudo completar.<br>Espere un
 BlackMarket,1,BuyError_NoSpace,La compra no se pudo completar porque su inventario<br>está lleno o excedió el límite de cantidad.
 BlackMarket,1,BuyError_ExchangeLimit,La compra no se pudo completar porque<br>alcanzó su máximo de compra.
 BlackMarket,1,BuyError_Other,La compra no se pudo completar.<br>Espere un momento y vuelva a intentarlo.
-BlackMarket,1,BuyError_N_BuyPremium,El conjunto<c>ha caducado. Activar un Conjunto Premium le permitirá realizar la compra.<br><br> ¿Pasar a la pantalla de compra?
+BlackMarket,1,BuyError_N_BuyPremium,<pict Arcscash><scarlet>AC Pago requerido<c> Hay algunos productos que no puedes comprar porque tu <yellow>Premium Set<c> ha caducado. Activar un Conjunto Premium le permitirá<br>realizar la compra.<br><br>¿Pasar a la pantalla de compra?
 BlackMarket,1,BuyError_N_UsePremium,"<pict Arcscash><c 5fdf00>Usar artículo comprado anteriormente<c> Hay algunos productos que no puedes comprar porque tu<br>Conjunto Premium ha caducado. ¿Usar un <yellow>Juego Premium<c> en tu poder para permitir la compra?<br><br><yellow>Nota: Si tienes más de uno en tu poder, se utilizará el que sume más tiempo.<c>"
 BlackMarket,1,Mark_Premium,De primera calidad
 BlackMarket,1,Open_SgShop,¡Productos por tiempo limitado ya a la venta en SG Shop!
@@ -288,7 +288,7 @@ PokaShop,1,Buy,comprar
 PokaShop,1,NameNumber,$(0) x $(1)
 PokaShop,1,BuyTitle,CONFIRMAR COMPRA
 PokaShop,1,BuyCheck,¿Comprar los siguientes artículos por $(1) $(0)?
-PokaShop,1,BCDenomination,ANTES DE CRISTO
+PokaShop,1,BCDenomination,BC
 PokaShop,1,BuyResultMessage1,Compra completa.
 PokaShop,1,BuyErrorMessage2,La compra no se pudo completar porque su inventario<br>está lleno o excedió el límite de cantidad.
 PokaShop,1,BCInsufficient,No tienes suficiente BC.
