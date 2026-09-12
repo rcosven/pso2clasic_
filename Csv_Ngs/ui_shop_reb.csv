@@ -114,8 +114,8 @@ Exchange_RecycleShop,1,Window_Exchange_Itemselection,Selección de artículo de 
 Exchange_RecycleShop,1,Window_Material_Itemselection,Artículos para intercambiar
 Exchange_RecycleShop,1,Window_Target_Itemselection,Selección de elementos de destino
 Exchange_RecycleShop,1,Window_Exchange_Quantity,Intercambio de reseñas
-Exchange_RecycleShop,1,Mes_Exchange_Quantity,"amarillo>Para realizar el intercambio usando el menú estándar,<yellow>alterna la pantalla<c><br> con <%Function>."
-Exchange_RecycleShop,1,Mes_Exchange_Quantity2,"br><yellow>Para realizar el intercambio usando el menú estándar,<yellow>alterna la pantalla<c><br> con <%Function>."
+Exchange_RecycleShop,1,Mes_Exchange_Quantity,"Intercambiando los siguientes elementos por <yellow>$(0)<c>. Selecciona el<br>número de artículos a intercambiar.<br><yellow>Para realizar el intercambio usando el menú estándar, <yellow>cambia la<br>pantalla<c> con <%Function>."
+Exchange_RecycleShop,1,Mes_Exchange_Quantity2,"Intercambiando los siguientes elementos por <yellow>$(0) x($(1))<c>.<br>Selecciona el número de artículos a intercambiar.<br><br><yellow>Para realizar el intercambio usando el menú estándar, <yellow>cambia la<br>pantalla<c> con <%Function>."
 Exchange_RecycleShop,1,Window_Target_Itemlist,Lista de elementos de destino
 Exchange_RecycleShop,1,Window_Target_Itemlist_ExchangePattern,<%MultiSelect> Patrones de intercambio
 Exchange_RecycleShop,1,Window_ExchangeCandidate_Itemlist,Lista de artículos de intercambio
@@ -136,8 +136,8 @@ Exchange_RecycleShop,1,Mes_Item_Unequipped_Unlock,Los siguientes elementos está
 Exchange_RecycleShop,1,Label_Unequipped,Equipado
 Exchange_RecycleShop,1,Label_Unlock,bloqueado
 Exchange_RecycleShop,1,Label_NoItem,No hay artículos aplicables.
-Exchange_RecycleShop,1,Mes_Exchange_Start,"Se selecciona un número específico de artículos,<br>solo se consumirá la cantidad necesaria.  <c>"
-Exchange_RecycleShop,1,Mes_Exchange_Start2,"Se selecciona el número especificado de artículos,<br>solo se consumirá la cantidad necesaria.  <c>"
+Exchange_RecycleShop,1,Mes_Exchange_Start,"Intercambie los siguientes elementos por $(0) x$(1). ¿Proceder?<br><yellow>Nota: Si se selecciona más del número especificado de elementos,<br>sólo se consumirá la cantidad necesaria. <c>"
+Exchange_RecycleShop,1,Mes_Exchange_Start2,"Intercambie los siguientes elementos por $(0) (x$(1)) x$(2).<br>¿Proceder?<br><yellow>Nota: Si se selecciona más del número especificado de elementos,<br>sólo se consumirá la cantidad necesaria. <c>"
 Exchange_RecycleShop,1,Mes_Exchange_Completed,Artículos intercambiados
 Exchange_RecycleShop,1,Window_Get_Method,Obtener artículos
 Exchange_RecycleShop,1,Label_Recommended_TaskList,Lista de tareas recomendadas
@@ -256,7 +256,7 @@ PaidShop,1,PaidShop_Top_CashItem01,CA actual
 PaidShop,1,PaidShop_Top_CashItem02,SG actual
 PaidShop,1,PaidShop_Top_BannerTitle,Notificaciones
 PaidShop,1,PaidShop_Top_BannerWebOperation,<%NextTabDetails> para ver detalles a través de la página web.
-PaidShop,1,PaidShop_Top_OperationHelp,bAdelante><pict 4space><%TabBack> Abrir página web: <%NextTabDetails>
+PaidShop,1,PaidShop_Top_OperationHelp,Confirmar: <%Decide> Atrás: <%Cancel> Cambiar a Notificaciones: <%TabForward><pict 4space><%TabBack> Abrir página web: <%NextTabDetails>
 PaidShop,1,PaidShop_LimitedItemTitle01,Información del artículo premium
 PaidShop,1,PaidShop_LimitedItemTitle02,<c 76d1ff> Artículos por tiempo limitado <c>
 PaidShop,1,PaidShop_LimitedItemTitle03,<c 76d1ff> Artículos de edición limitada <c>
@@ -377,7 +377,7 @@ ShopMain,1,Recommended,Destacado
 ShopMain,1,Shop_Present,Reciba un regalo por visitar (una vez por cuenta)
 ShopMain,1,Shop_Present_Done,Recibidos
 ShopMain,1,Shop_Present_Receive1,Has recibido un regalo por visitar la tienda.<br>$(0) x $(1)<br><br> ¡Gracias por visitarnos!
-ShopMain,1,Shop_Present_Receive2,"¡gramo!<br><pure_orange> Actualmente estamos vendiendo algunos productos increíbles. <c><br>Por favor, eche un vistazo."
+ShopMain,1,Shop_Present_Receive2,Has recibido un regalo por visitar la tienda.<br>$(0) x $(1)<br><br>¡Gracias por visitarnos! <br><pure_orange>Actualmente estamos<br>vendiendo algunos productos increíbles.<c> <br>Por favor echa un vistazo.
 ShopMain,1,Shop_Present_Message1,Ya has recibido el regalo o ha pasado el plazo.
 ShopMain,1,Shop_Present_Message2,No se puede recibir el regalo.
 ShopMain,1,SelectLockItemMessage1,Los artículos equipados o bloqueados no se pueden seleccionar.
