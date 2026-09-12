@@ -2,7 +2,7 @@
 CheckAssignMap,0,CorrectionAssignMapTitle,操作設定の修復
 CheckAssignMap,0,CorrectionAssignMapMessage,操作設定のうち「決定」や「キャンセル」など<br>重要な操作の割り当て内容に問題があったため<br>自動修復を行いました。
 CheckAssignMap,1,CorrectionAssignMapTitle,Configuración de control restaurada
-CheckAssignMap,1,CorrectionAssignMapMessage,<br>en su configuración de control. La configuración de control inicial ha<br>sido restaurada automáticamente.
+CheckAssignMap,1,CorrectionAssignMapMessage,"Se ha encontrado un problema con la tarea. de comandos<br>importantes como ""Confirmar"" o ""Cancelar"" en la<br>configuración de control. Los ajustes de control<br>iniciales tienen sido restaurado automáticamente."
 Config,0,Title,オプション
 Config,0,Category_Game,ゲーム設定
 Config,0,Category_Game_Hint,ゲームプレイに関連する機能や<br>カメラ操作などの設定をします。
@@ -517,7 +517,7 @@ Config,1,SubCategory_Camera,Configuración de la cámara
 Config,1,SubCategory_Camera_VITA,Configuración de la cámara en el juego
 Config,1,SubCategory_Camera_Hint,Configuraciones relacionadas con el movimiento de la cámara.
 Config,1,SubCategory_TextEffect,Configuración de visualización de texto
-Config,1,SubCategory_TextEffect_Hint,"Configuraciones relacionadas con el texto que se muestra por daños, adquisición del artículo <br>, etc."
+Config,1,SubCategory_TextEffect_Hint,"Configuraciones relacionadas con el texto que se muestra<br>por daño, artículo adquisición, etcétera."
 Config,1,SubCategory_Notice,Configuración de notificaciones
 Config,1,SubCategory_Notice_Hint,Configuraciones relacionadas con varias notificaciones de juegos.
 Config,1,SubCategory_Talk,Configuración de chat
@@ -525,7 +525,7 @@ Config,1,SubCategory_Talk_Hint,Configuraciones relacionadas con el sistema de ch
 Config,1,SubCategory_Capture,Configuración de captura de pantalla
 Config,1,SubCategory_Capture_Hint,Configuraciones relacionadas con capturas de pantalla.
 Config,1,SubCategory_Other,Otras configuraciones
-Config,1,SubCategory_Other_Hint,"Configuraciones relacionadas con sistemas como el salón, Ridroid, Dark<br>Blast, etc."
+Config,1,SubCategory_Other_Hint,"Configuraciones relacionadas con sistemas como el salón,<br>Ridroid, Dark Explosión, etc"
 Config,1,SubCategory_InputGuide,Tipo de pantalla de control
 Config,1,SubCategory_InputGuide_Hint,Configuraciones para el tipo de visualización de la guía del juego.
 Config,1,SubCategory_PadDefine,Configuración del controlador
@@ -553,7 +553,7 @@ Config,1,SubCategory_FilterView_Hint,Establecer filtros de pantalla.
 Config,1,SubCategory_ResetWindow,Inicialización de ventana
 Config,1,SubCategory_ResetWindow_Hint,Tamaños y posiciones de visualización de ventanas inicializadas.
 Config,1,SubCategory_GraphicsPreset,Configuración de gráficos simples
-Config,1,SubCategory_GraphicsPreset_Hint,mprove the graphical quality but also<br>increase the processing load.
+Config,1,SubCategory_GraphicsPreset_Hint,Ajusta la configuración general de gráficos. Poniéndolo<br>en alto El valor mejorará la calidad gráfica pero<br>también aumentar la carga de procesamiento.
 Config,1,GraphicsPreset_Info,Ajusta la configuración general de gráficos. Establecerlo en<br>un valor alto mejorará la calidad gráfica pero también<br>aumentará la carga de procesamiento.<br><br>Su configuración recomendada es <yellow>$(0)<c>.
 Config,1,GraphicsPreset_Info_CS,Ajusta la configuración general de gráficos. Poniéndolo<br>en alto El valor mejorará la calidad gráfica pero<br>también aumentar la carga de procesamiento.
 Config,1,GraphicsPreset_Button_Change,Cambiar
@@ -628,7 +628,7 @@ Config,1,WindowTitleInitText,Configuración de inicialización de ventana
 Config,1,WindowInitHint,Tamaños y posiciones de visualización de ventanas inicializadas.
 Config,1,WindowRadioButtonInitText,Inicialice todos los tamaños y posiciones de visualización de ventanas
 Config,1,EstheTitleText,"Formato de selección de peinado, partes de la cabeza y accesorios"
-Config,1,EstheHint,d accessories selectable<br>during character creation and in the Salon.
+Config,1,EstheHint,"Seleccione el tipo de ventanas utilizadas para<br>mostrar peinados, partes de la cabeza y accesorios<br>seleccionables durante la creación de personajes y<br>en el Salón."
 Config,1,EstheRadioButtonText1,Ventanas pequeñas (se pueden mostrar múltiples vistas)
 Config,1,EstheRadioButtonText2,Ventana grande con pestañas (no se pueden mostrar varias vistas)
 Config,1,CtrlKeyboardTitle,Configuración de control del teclado
@@ -907,9 +907,9 @@ Config,1,CtrlPadBehaviorStickMessageLU,"Realice una prueba de detección de movi
 Config,1,CtrlPadBehaviorStickSubTitleLL,"2.<%LStick>Prueba de detección ""izquierda"""
 Config,1,CtrlPadBehaviorStickMessageLL,"Luego,<br>incline el<%LStick><green> hacia la izquierda<c>mientras presiona $(0)."
 Config,1,CtrlPadBehaviorStickSubTitleRU,"3. Prueba de detección ""arriba"""
-Config,1,CtrlPadBehaviorStickMessageRU,actuando<%RStick>movimiento.<br>Incline el<%RStick><c ff007f> hacia arriba<c>mientras presiona $(0).
+Config,1,CtrlPadBehaviorStickMessageRU,"La prueba de detección de <%LStick> está completa.<br><br>A continuación, realizaremos una prueba para<br>detectar el movimiento de <%RStick>. Incline la <%RStick> <c ff007f>hacia<br>arriba<c> mientras presiona $(0)."
 Config,1,CtrlPadBehaviorStickSubTitleRL,"4.<%RStick>Prueba de detección ""izquierda"""
-Config,1,CtrlPadBehaviorStickMessageRL,"Luego,<br>incline el<%RStick><green> hacia la izquierda<c>mientras presiona $(0)."
+Config,1,CtrlPadBehaviorStickMessageRL,"Siguiente,<br>incline el<%RStick><green> hacia la izquierda<c>mientras presiona $(0)."
 Config,1,CtrlPadBehaviorTriggerTitle,Operación del disparador
 Config,1,CtrlPadBehaviorTriggerMessageL,"Realice una prueba para detectar si el botón izquierdo en la parte posterior del controlador es un<br>disparador analógico. Presione el botón que está iluminado en el diagrama a continuación.<br><br><yellow>Si no sucede nada cuando presionas el botón designado, entonces no es un disparador analógico. En<br>ese caso, presione <c>$(0)<yellow>, luego configure el botón en la siguiente pantalla.<c>"
 Config,1,CtrlPadBehaviorTriggerMessageR,"Realice una prueba para detectar si el botón derecho en la parte posterior del controlador es un<br>disparador analógico. Presione el botón que está iluminado en el diagrama a continuación.<br><br><yellow>Si no sucede nada cuando presionas el botón designado, entonces no es un disparador analógico. En ese<br>caso, presione <c>$(0)<yellow>, luego configure el botón en la siguiente pantalla.<c>"
@@ -964,10 +964,10 @@ Config,1,DrawFilterSepia,Sepia
 Config,1,DrawFilterFading,Antiguo
 Config,1,DrawFilter8bit,Píxel
 Config,1,DrawFilter,Seleccione un filtro para aplicar.
-Config,1,DrawFilterMessageText,<br>Select the screen filter you would like to use from the list below.
-Config,1,xx_DrawFilterMessageText,<br>Select the screen filter you would like to use from the list below.
-Config,1,cc_DrawFilterMessageText,<br>Select the screen filter you would like to use from the list below.
-Config,1,DrawFilterMessagePremiumOn,<yellow> Estado de la prima al día <c>
+Config,1,DrawFilterMessageText,Esta función está disponible solo con la compra de un Conjunto Premium<br>válido. Seleccione el filtro de pantalla que le gustaría usar de la<br>lista a continuación.
+Config,1,xx_DrawFilterMessageText,Esta función está disponible solo con la compra de un Conjunto Premium<br>válido. Seleccione el filtro de pantalla que le gustaría usar de la<br>lista a continuación.
+Config,1,cc_DrawFilterMessageText,Esta función está disponible solo con la compra de un Conjunto Premium<br>válido. Seleccione el filtro de pantalla que le gustaría usar de la<br>lista a continuación.
+Config,1,DrawFilterMessagePremiumOn,<yellow> Estado Premium al día <c>
 Config,1,DrawFilterMessagePremiumOff,<red> El estado premium ha expirado <c>
 Config,1,DetailPolluteOthers,-
 Config,1,AuraSlider_Text_0,Transparencia
@@ -2222,13 +2222,13 @@ ConfigContents,1,Config_019_Hint,Selecciona si deseas activar la función de bot
 ConfigContents,1,Config_020_Name,Adquisición inmediata de armas
 ConfigContents,1,Config_020_Choices_0,Desactivar
 ConfigContents,1,Config_020_Choices_1,Usar cuando 13★ o más
-ConfigContents,1,Config_020_Hint,Se añadirán directamente al inventario de tu personaje<br>en lugar de dejar que caigan al campo y arriesgarte a perderlos.
+ConfigContents,1,Config_020_Hint,Seleccione si desea recolectar armas de Rarity 13 o<br>superior automáticamente en el inventario de tu<br>personaje en lugar de dejarlos caer en el campo y<br>correr el riesgo de perderlos.
 ConfigContents,1,Config_021_Name,Adquisición inmediata de unidades
 ConfigContents,1,Config_021_Choices_0,Desactivar
 ConfigContents,1,Config_021_Choices_1,Usar cuando 12★ o más
-ConfigContents,1,Config_021_Hint,Se añadirán directamente al inventario de tu personaje<br>en lugar de dejar que caigan al campo y arriesgarte a perderlos.
+ConfigContents,1,Config_021_Hint,Seleccione si desea reunir unidades de rareza 13 o<br>superiores automáticamente en el inventario de tu<br>personaje en lugar de dejarlos caer en el campo y<br>correr el riesgo de perderlos.
 ConfigContents,1,Config_022_Name,Adquisición inmediata de artículos materiales
-ConfigContents,1,Config_022_Hint,Se recogerán automáticamente sin dejar caer<br>en el campo para evitar perderlos.
+ConfigContents,1,Config_022_Hint,Selecciona si se mueve la orden del cliente<br>artículos/materiales a su inventario<br>automáticamente sin caer al campo para evitar<br>perderlos.
 ConfigContents,1,Config_023_Name,Adquisición Inmediata de Otros Artículos
 ConfigContents,1,Config_023_Hint,"Seleccione si desea recolectar artículos de alta rareza<br>(que no sean armas, Unidades o materiales)<br>automáticamente, moviéndolos al inventario de tu personaje<br>en lugar de dejarlos caer en el campo y corre el riesgo de<br>perderlos."
 ConfigContents,1,Config_024_Name,Mostrar animaciones de caídas raras
@@ -2237,7 +2237,7 @@ ConfigContents,1,Config_024_Choices_1,10★ o mayor
 ConfigContents,1,Config_024_Choices_2,13★ o mayor
 ConfigContents,1,Config_024_Hint,Seleccione si desea presentar diferentes animaciones<br>según la rareza para los objetos raros.
 ConfigContents,1,Config_025_Name,Función de enfoque de eventos
-ConfigContents,1,Config_025_Hint,Seleccione si desea centrarse en los eventos de la historia mientras mantiene presionado el botón de acceso <br>.
+ConfigContents,1,Config_025_Hint,Seleccione si desea centrarse en los eventos de la<br>historia cuando mantenga presionado el botón botón de<br>acceso.
 ConfigContents,1,Config_026_Name,Reproducción de vídeo del monitor del juego
 ConfigContents,1,Config_026_Choices_0,Jugar
 ConfigContents,1,Config_026_Choices_1,no juegues
@@ -2297,9 +2297,9 @@ ConfigContents,1,Config_051_Hint,Especifique si desea mostrar una ventana de sel
 ConfigContents,1,Config_052_Name,Notificaciones de pedidos recomendados
 ConfigContents,1,Config_052_Hint,Seleccione si desea mostrar la ventana Pedidos de cliente recomendado<br>al aceptar una misión recomendada.
 ConfigContents,1,Config_053_Name,Confirmación de aceptación del emparejamiento de bloques múltiples
-ConfigContents,1,Config_053_Hint,ty Leader acepta una misión<br>que admite el emparejamiento de bloques múltiples.
+ConfigContents,1,Config_053_Hint,Seleccione si desea mostrar una ventana de<br>confirmación cada vez que el líder del grupo<br>acepta una misión que admite el emparejamiento<br>de múltiples bloques.
 ConfigContents,1,Config_054_Name,<%GamePad> Configuración Notificaciones
-ConfigContents,1,Config_054_Hint,n el<%GamePad>crea un problema y la configuración de control debe restaurarse automáticamente.
+ConfigContents,1,Config_054_Hint,Seleccione si desea mostrar una notificación cada vez que la asignación de operaciones importantes en <%GamePad> cree un problema y la configuración de control deba restaurarse automáticamente.
 ConfigContents,1,Config_055_Name,Número de visualización del mensaje de notificación
 ConfigContents,1,Config_055_Choices_0,1
 ConfigContents,1,Config_055_Choices_1,3
@@ -2319,7 +2319,7 @@ ConfigContents,1,Config_060_Hint,"Selecciona si deseas habilitar las notificacio
 ConfigContents,1,Config_061_Name,Notificación de su incapacidad
 ConfigContents,1,Config_061_Hint,"Selecciona si mostrar un ícono a los jugadores cercanos cuando estés incapacitado.<br><br><yellow>Nota: El ícono no se mostrará si otros jugadores tienen la configuración ""Notificación de incapacitación de otros jugadores""<br>desactivada.<c>"
 ConfigContents,1,Config_062_Name,Chat directo
-ConfigContents,1,Config_062_Hint,other players <br>instead of moving your character and performing <br>other actions.
+ConfigContents,1,Config_062_Hint,Habilitar esta función le permitirá utilizar su<br>teclado para chatear directamente con otros<br>jugadores en lugar de mover tu personaje y actuar<br>otras acciones.
 ConfigContents,1,Config_063_Name,Alternar clave de chat directo
 ConfigContents,1,Config_063_Hint,"Seleccione si desea alternar la activación de<br>Direct Chat mediante la tecla [Bloqueo de<br>desplazamiento]. Si el chat directo no es<br>funcionando correctamente, activando esta<br>configuración puede resolver el problema."
 ConfigContents,1,Config_064_Name,Citar mensajes en respuestas
@@ -2338,7 +2338,7 @@ ConfigContents,1,Config_067_Hint,Especifique las condiciones para mostrar los gl
 ConfigContents,1,Config_068_Name,Nombre del grupo/alianza/orador susurrante
 ConfigContents,1,Config_068_Choices_0,Nombre de identificación del jugador
 ConfigContents,1,Config_068_Choices_1,Nombre del personaje
-ConfigContents,1,Config_068_Hint,"n participar en<br>Group Chat, Alliance Chat o Whisper Chat."
+ConfigContents,1,Config_068_Hint,"Seleccione si desea mostrar su ID de<br>jugador o Nombre del personaje al<br>participar en Chat grupal, chat de alianza<br>o chat en susurro."
 ConfigContents,1,Config_069_Name,Color de fondo de entrada de chat
 ConfigContents,1,Config_069_Choices_0,No coincidir con el color del canal
 ConfigContents,1,Config_069_Choices_1,Coincidir color del canal
@@ -2348,7 +2348,7 @@ ConfigContents,1,Config_070_Choices_0,Aceptar
 ConfigContents,1,Config_070_Choices_1,no aceptar
 ConfigContents,1,Config_070_Hint,"Seleccione si desea recibir invitaciones de chat grupal.<br>Si está configurado para rechazar invitaciones, no recibirá ninguna."
 ConfigContents,1,Config_071_Name,Uso del chat automático
-ConfigContents,1,Config_071_Hint,"Esta configuración evitará que se envíen<br>mensajes de chat automático, incluso si está configurado. <c>"
+ConfigContents,1,Config_071_Hint,"Seleccione si desea utilizar el chat automático.<br><br><yellow>Seleccionar ""No utilizado"" para esta configuración<br>evitará Mensajes de chat automático que no se envíen,<br>incluso si están configurados.<c>"
 ConfigContents,1,Config_072_Name,Mostrar chat automático en el registro
 ConfigContents,1,Config_072_Hint,Seleccione si desea mostrar los mensajes de chat automático en<br>el registro.
 ConfigContents,1,Config_073_Name,Orden de visualización de la ventana de registro
@@ -2360,8 +2360,8 @@ ConfigContents,1,Config_074_Hint,Seleccione si desea mostrar ciertas categorías
 ConfigContents,1,Config_075_Name,Miembros
 ConfigContents,1,Config_076_Name,Comportamiento
 ConfigContents,1,Config_077_Name,Área
-ConfigContents,1,Config_077_Hint,"Especifique el contenido que se mostrará en la ventana de registro ""Mostrar todo"" <br>."
-ConfigContents,1,Config_078_Name,Fiesta
+ConfigContents,1,Config_077_Hint,"Especifique el contenido que se mostrará en ""Mostrar<br>todo"" Ventana de registro."
+ConfigContents,1,Config_078_Name,Grupo
 ConfigContents,1,Config_079_Name,Alianza
 ConfigContents,1,Config_080_Name,Susurro
 ConfigContents,1,Config_081_Name,Sistema
@@ -2376,14 +2376,14 @@ ConfigContents,1,Config_085_Name,Visualización de la interfaz de usuario al tom
 ConfigContents,1,Config_085_Choices_0,Mostrar todo
 ConfigContents,1,Config_085_Choices_1,Mostrar solo globos
 ConfigContents,1,Config_085_Choices_2,Esconder
-ConfigContents,1,Config_085_Hint,eenshots.<br>Note: This setting affects the screenshot function only.
+ConfigContents,1,Config_085_Hint,"Seleccione si desea mostrar la interfaz de usuario<br>(ventanas, interfaces, etc.) en capturas de pantalla. Nota:<br>Esta configuración afecta únicamente a la función de captura<br>de pantalla."
 ConfigContents,1,Config_085_Choices_0_Switch,Mostrar ventanas
 ConfigContents,1,Config_085_Choices_1_Switch,No mostrar ventanas
-ConfigContents,1,Config_085_Hint_Switch,eenshots.<br>Note: This setting affects the screenshot function only.
+ConfigContents,1,Config_085_Hint_Switch,"Seleccione si desea mostrar la interfaz de usuario<br>(ventanas, interfaces, etc.) en capturas de pantalla. Nota:<br>Esta configuración afecta únicamente a la función de captura<br>de pantalla."
 ConfigContents,1,Config_086_Name,Sincronización del tipo de cuerpo en el Salón I
 ConfigContents,1,Config_086_Choices_0,Sincronizar automáticamente
 ConfigContents,1,Config_086_Choices_1,Editar modelos por separado
-ConfigContents,1,Config_086_Hint,"Selecciona si deseas cambiar automáticamente entre <yellow>tipos de cuerpo humano y CAST<c> o editarlos individualmente al cambiar atuendos, partes CAST, etc. en<br>el Salón."
+ConfigContents,1,Config_086_Hint,"Selecciona si deseas cambiar automáticamente entre <yellow>tipos de cuerpo humano y CAST<c> o editarlos individualmente al cambiar atuendos, partes CAST, etc. en el Salón."
 ConfigContents,1,Config_087_Name,Configuración de controles
 ConfigContents,1,Config_087_Choices_0,Manual
 ConfigContents,1,Config_087_Choices_1,Auto
@@ -2413,9 +2413,9 @@ ConfigContents,1,Config_097_Hint_PCCloud,Establece cómo aparecen las Explosione
 ConfigContents,1,Config_098_Hint,Ajusta el volumen de la música de fondo.
 ConfigContents,1,Config_099_Hint,Ajusta el volumen de los efectos de sonido.
 ConfigContents,1,Config_100_Hint,Ajusta el volumen de las voces y los diálogos.
-ConfigContents,1,Config_101_Hint,"Ajusta el volumen de los videos que se muestran en el juego, incluso en <br>, el monitor gigante en el lobby de ARKS."
+ConfigContents,1,Config_101_Hint,"Ajusta el volumen de los videos que se muestran en el<br>juego, incluso en, el monitor gigante en el lobby de ARKS."
 ConfigContents,1,Config_102_Name,Sonido envolvente
-ConfigContents,1,Config_102_Choices_0,En
+ConfigContents,1,Config_102_Choices_0,Encendido
 ConfigContents,1,Config_102_Choices_1,Apagado
 ConfigContents,1,Config_102_Hint,Activa o desactiva el sonido envolvente.
 ConfigContents,1,Config_103_Name,Reproducción de sonido de enfoque global
@@ -2428,21 +2428,21 @@ ConfigContents,1,Config_105_Hint_PS4,Encender/apagar la iluminación del terreno
 ConfigContents,1,Config_105_Hint_Switch,Encender/apagar la iluminación del terreno.
 ConfigContents,1,Config_105_Hint_PCCloud,Encender/apagar la iluminación del terreno.
 ConfigContents,1,Config_106_Name,Floración
-ConfigContents,1,Config_106_Hint,een images on/off.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_106_Hint_PS4,een images on/off.<br><br>Switching this effect off reduces the processing load.
+ConfigContents,1,Config_106_Hint,Cambie el filtro para áreas brillantes para mejorar el<br>aspecto general. Activar/desactivar la apariencia de las<br>imágenes en pantalla.<br><br>Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_106_Hint_PS4,Cambie el filtro para áreas brillantes para mejorar el<br>aspecto general. Activar/desactivar la apariencia de las<br>imágenes en pantalla.<br><br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_107_Name,Profundidad de campo
 ConfigContents,1,Config_107_Hint,Activa o desactiva el efecto de desenfoque de fondo para ciertos eventos.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_107_Hint_PS4,Activa o desactiva el efecto de desenfoque de fondo para ciertos eventos.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_108_Name,Difuminar
-ConfigContents,1,Config_108_Hint,on/off.<br><br>Switching this effect off reduces the processing load.
+ConfigContents,1,Config_108_Hint,Cambia el efecto de imagen residual cuando la cámara o<br>El personaje se activa o desactiva.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_109_Name,Rayos de luz
 ConfigContents,1,Config_109_Hint,Activa o desactiva la visualización de los rayos de luz que emanan del sol.<br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_109_Hint_PS4,Activa o desactiva la visualización de los rayos de luz que emanan del sol.<br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_110_Name,Antialiasing
 ConfigContents,1,Config_110_Hint,Cambie la función para mostrar líneas curvas o<br>inclinadas encendido/apagado suavemente. Desactivar<br>este efecto reduce la carga de procesamiento.<br><br><yellow>Nota: Incluir TAA puede cambiar la apariencia de<br>algunos de los elementos de PSO2.<c>
 ConfigContents,1,Config_111_Name,Partículas blandas
-ConfigContents,1,Config_111_Hint,o certain effects.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_111_Hint_PS4,o certain effects.<br><br>Switching this effect off reduces the processing load.
+ConfigContents,1,Config_111_Hint,Hace que las partículas de efecto se desvanezcan a medida<br>que se acercan al suelo. Sólo aplicable a determinados<br>efectos.<br><br>Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_111_Hint_PS4,Hace que las partículas de efecto se desvanezcan a medida<br>que se acercan al suelo. Sólo aplicable a determinados<br>efectos.<br><br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_112_Name,Reducir algunos efectos de iluminación
 ConfigContents,1,Config_112_Choices_0,Normal
 ConfigContents,1,Config_112_Choices_1,Reducido
@@ -2452,26 +2452,26 @@ ConfigContents,1,Config_112_Hint_PCCloud,"Activa o desactiva los patrones de luz
 ConfigContents,1,Config_113_Name,Rango de visualización para ciertos efectos de los jugadores
 ConfigContents,1,Config_113_Choices_0,Sólo efectos cercanos
 ConfigContents,1,Config_113_Choices_1,Mostrar todos los efectos
-ConfigContents,1,Config_113_Hint,"g ""Mostrar todos los efectos"" garantiza que los efectos<br>se mostrarán a cualquier distancia."
+ConfigContents,1,Config_113_Hint,Oclusión ambiental
 ConfigContents,1,Config_114_Name,Oclusión ambiental
-ConfigContents,1,Config_114_Hint,/off.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_114_Hint_PS4,/off.<br><br>Switching this effect off reduces the processing load.
+ConfigContents,1,Config_114_Hint,Cambie el dibujo preciso de las sombras en los bordes<br>de encendido/apagado de objetos.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
+ConfigContents,1,Config_114_Hint_PS4,Cambie el dibujo preciso de las sombras en los bordes<br>de encendido/apagado de objetos.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_115_Name,Oscurecimiento del borde de la pantalla
 ConfigContents,1,Config_115_Hint,Activa o desactiva la función para oscurecer los bordes de la pantalla.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_115_Hint_PS4,Activa o desactiva la función para oscurecer los bordes de la pantalla.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_116_Name,Curva de tono de color
-ConfigContents,1,Config_116_Hint,or each field on/off.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_116_Hint_PS4,or each field on/off.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_116_Hint_Switch,or each field on/off.<br><br>Switching this effect off reduces the processing load.
-ConfigContents,1,Config_116_Hint_PCCloud,or each field on/off.<br><br>Switching this effect off reduces the processing load.
+ConfigContents,1,Config_116_Hint,"Cambie la función para ajustar el tono de color<br>general, contraste y brillo para cada campo<br>activado/desactivado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento."
+ConfigContents,1,Config_116_Hint_PS4,"Cambie la función para ajustar el tono de color<br>general, contraste y brillo para cada campo<br>activado/desactivado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento."
+ConfigContents,1,Config_116_Hint_Switch,"Cambie la función para ajustar el tono de color<br>general, contraste y brillo para cada campo<br>activado/desactivado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento."
+ConfigContents,1,Config_116_Hint_PCCloud,"Cambie la función para ajustar el tono de color<br>general, contraste y brillo para cada campo<br>activado/desactivado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento."
 ConfigContents,1,Config_117_Name,Iluminación de borde
-ConfigContents,1,Config_117_Hint,t off reduce la carga de procesamiento.<br><br> La calidad del sombreador debe estar configurada en alta.
+ConfigContents,1,Config_117_Hint,Optimice la cantidad de luz que rodea los objetos.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.<br><br>La calidad del sombreador debe establecerse en alta.
 ConfigContents,1,Config_117_Hint_PS4,Optimice la cantidad de luz que rodea los objetos.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_117_Hint_Switch,Optimice la cantidad de luz que rodea los objetos.
 ConfigContents,1,Config_117_Hint_PCCloud,Optimice la cantidad de luz que rodea los objetos.
 ConfigContents,1,Config_118_Name,Ajuste automático de resolución
-ConfigContents,1,Config_118_Hint_PS4,<br> Desactivar esta función puede producir velocidades de cuadro<br>bajas en la batalla y en otros lugares.
-ConfigContents,1,Config_119_Hint,Especifique el número de modelos de personajes detallados para renderizar <br>.<br><br> Los valores más bajos reducen la carga de procesamiento.
+ConfigContents,1,Config_118_Hint_PS4,Reducir la resolución durante períodos de alta<br>carga de trabajo para mantener una alta velocidad<br>de fotogramas.<br><br>Desactivar esta función puede producir imágenes<br>bajas tasas en la batalla y en otros lugares.
+ConfigContents,1,Config_119_Hint,Especifica el número de modelos de personajes<br>detallados que deseas renderizar.<br><br>Los valores más bajos reducen la carga de<br>procesamiento.
 ConfigContents,1,Config_120_Hint,Especifique el número de explosiones de fotones que se mostrarán.<br><br> Los valores más bajos reducen la carga de procesamiento.
 ConfigContents,1,Config_121_Hint,Ajusta la calidad de los reflejos en las superficies del agua.<br>Los valores más bajos reducen la carga de procesamiento.
 ConfigContents,1,Config_122_Hint,Ajusta el nivel de precisión de las sombras que caen sobre los objetos.<br><br> Los valores más bajos reducen la carga de procesamiento.
@@ -2482,11 +2482,11 @@ ConfigContents,1,Config_127_Name,Ocultar los accesorios de otros jugadores
 ConfigContents,1,Config_127_Choices_0,No usado
 ConfigContents,1,Config_127_Choices_1,Personajes bloqueados
 ConfigContents,1,Config_127_Choices_2,Todos los personajes
-ConfigContents,1,Config_127_Hint,"Personajes"" o<br>""Todos los personajes"" ocultarán los accesorios de esos<br>personajes."
+ConfigContents,1,Config_127_Hint,"Selecciona si se muestran los accesorios de otros<br>jugadores. Seleccionando ""Personajes bloqueados"" o<br>""Todos los personajes"" ocultará los accesorios de<br>aquellos personajes."
 ConfigContents,1,Config_128_Name,Configuración del chat de voz
 ConfigContents,1,Config_128_Choices_0,Usar
 ConfigContents,1,Config_128_Choices_1,No usado
-ConfigContents,1,Config_128_Hint,"Seleccione si desea utilizar el chat de voz. Si esta opción está desactivada <br>, no podrás escucharte a ti mismo ni a<br>otros jugadores."
+ConfigContents,1,Config_128_Hint,"Seleccione si desea utilizar el chat de voz. Si esto<br>está alternado apagado, no podrá escucharse a sí<br>mismo ni otros jugadores."
 ConfigContents,1,Config_129_Name,Opciones de lista de deseos/lista de regalos
 ConfigContents,1,Config_129_Choices_0,Esconder
 ConfigContents,1,Config_129_Choices_1,Mostrar
@@ -2494,13 +2494,13 @@ ConfigContents,1,Config_129_Hint,"Seleccione si desea mostrar ""Agregar a la lis
 ConfigContents,1,Config_130_Name,Envío automático al almacenamiento de materiales
 ConfigContents,1,Config_130_Choices_0,Usar
 ConfigContents,1,Config_130_Choices_1,No usado
-ConfigContents,1,Config_130_Hint,ion.<br><br> Adquisiciones elegibles:<br>-Objetos de artículos<br>-Recolección<br>-Recompensas de prueba E<br>-Recompensas de resultados de misiones
+ConfigContents,1,Config_130_Hint,Selecciona si enviar la orden del cliente<br>Artículos/materiales para almacenamiento de<br>materiales. automáticamente al momento de la<br>adquisición.<br><br>Adquisiciones elegibles: <br>-Gotas de artículos<br>-Reunión <br>-Recompensas de prueba<br>-Recompensas por resultados de misiones
 ConfigContents,1,Config_Reb_001_Name,Rotación del mapa de radar
 ConfigContents,1,Config_Reb_001_Hint,Seleccione si el mapa de radar girará a lo largo de<br>con la cámara.
 ConfigContents,1,Config_Reb_001_Select_0,No rotar
 ConfigContents,1,Config_Reb_001_Select_1,Girar
 ConfigContents,1,Config_Reb_002_Name,Color de la barra de HP según el tipo de ataque elemental
-ConfigContents,1,Config_Reb_002_Hint,"el daño fue infligido por un<br>ataque cuerpo a cuerpo, ataque a distancia o técnica."
+ConfigContents,1,Config_Reb_002_Hint,"Seleccione si el color de la barra HP cambiará<br>dependiendo de si el daño fue infligido por un<br>Ataque cuerpo a cuerpo, ataque a distancia o<br>técnica."
 ConfigContents,1,Config_Reb_002_Select_0,Sin cambios basados en elementos
 ConfigContents,1,Config_Reb_002_Select_1,Los elementos cambian el color de la barra.
 ConfigContents,1,Config_Reb_003_Name,Mostrar nombre del icono de la subpaleta
@@ -2520,7 +2520,7 @@ ConfigContents,1,Config_Reb_006_Hint,"Especifique el formato de visualización u
 ConfigContents,1,Config_Reb_006_Select_0,Vista de categoría
 ConfigContents,1,Config_Reb_006_Select_1,Vista de resumen
 ConfigContents,1,Config_Reb_007_Name,"Icono ""Jugador que regresa"""
-ConfigContents,1,Config_Reb_007_Hint,reciba bonificaciones para jugadores que regresan incluso si<br>no se muestra el ícono.
+ConfigContents,1,Config_Reb_007_Hint,"Seleccione si desea mostrar el icono de ""Jugador que<br>regresa"". *Aún puedes recibir bonos para jugadores que<br>regresan incluso si el icono no se muestra."
 ConfigContents,1,Config_Reb_007_Select_0,Esconder
 ConfigContents,1,Config_Reb_007_Select_1,Mostrar
 ConfigContents,1,Config_Reb_008_Name,Reproducción de vídeo del monitor del juego
@@ -2532,7 +2532,7 @@ ConfigContents,1,Config_Reb_009_Hint,"Seleccione si la configuración del grupo/
 ConfigContents,1,Config_Reb_009_Select_0,No guardar
 ConfigContents,1,Config_Reb_009_Select_1,Ahorrar
 ConfigContents,1,Config_Reb_010_Name,Función de enfoque de eventos
-ConfigContents,1,Config_Reb_010_Hint,Seleccione si desea centrarse en los eventos de la historia mientras mantiene presionado el botón de acceso <br>.
+ConfigContents,1,Config_Reb_010_Hint,Seleccione si desea centrarse en los eventos de la<br>historia cuando mantenga presionado el botón botón de<br>acceso.
 ConfigContents,1,Config_Reb_010_Select_0,Desactivar
 ConfigContents,1,Config_Reb_010_Select_1,Permitir
 ConfigContents,1,Config_Reb_011_Name,Color de texto para nombres de personajes de otras partes
@@ -2588,7 +2588,7 @@ ConfigContents,1,Config_Reb_023_Hint,Selecciona si deseas recibir una notificaci
 ConfigContents,1,Config_Reb_023_Select_0,Esconder
 ConfigContents,1,Config_Reb_023_Select_1,Mostrar
 ConfigContents,1,Config_Reb_024_Name,Número de modelos mostrados: Sectores de exploración
-ConfigContents,1,Config_Reb_024_Hint,me for Exploration Sectors.<br><br>Lower values reduce processing load.
+ConfigContents,1,Config_Reb_024_Hint,Ajustar el máximo de modelos de personajes<br>mostrados. en pantalla al mismo tiempo para los<br>sectores de exploración.<br><br>Los valores más bajos reducen la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_024_Select_0,Esconder
 ConfigContents,1,Config_Reb_024_Select_1,Mostrar
 ConfigContents,1,Config_Reb_025_Name,Anuncio de inicio de sesión
@@ -2600,15 +2600,15 @@ ConfigContents,1,Config_Reb_026_Hint,"Selecciona si deseas habilitar las notific
 ConfigContents,1,Config_Reb_026_Select_0,Esconder
 ConfigContents,1,Config_Reb_026_Select_1,Mostrar
 ConfigContents,1,Config_Reb_027_Name,Notificación de su incapacidad
-ConfigContents,1,Config_Reb_027_Hint,"Selecciona si mostrar un ícono a los jugadores cercanos cuando estés incapacitado.<br><br><yellow>Nota: El ícono no se mostrará si otros jugadores tienen la configuración ""Notificación de incapacitación de otros jugadores""<br>desactivada.<c>"
+ConfigContents,1,Config_Reb_027_Hint,"Selecciona si mostrar un ícono a los jugadores cercanos cuando estés incapacitado.<br><br><yellow>Nota: El ícono no se mostrará si otros jugadores tienen la configuración ""Notificación de incapacitación de otros jugadores"" desactivada.<c>"
 ConfigContents,1,Config_Reb_027_Select_0,Esconder
 ConfigContents,1,Config_Reb_027_Select_1,Mostrar
 ConfigContents,1,Config_Reb_028_Name,Sincronización del tipo de cuerpo en el Salón I
-ConfigContents,1,Config_Reb_028_Hint,"Selecciona si deseas cambiar automáticamente entre <yellow>tipos de cuerpo humano y CAST<c> o editarlos individualmente al cambiar atuendos, partes CAST, etc.<br>en Salon."
+ConfigContents,1,Config_Reb_028_Hint,"Selecciona si deseas cambiar automáticamente entre <yellow>tipos de cuerpo humano y CAST<c> o editarlos individualmente al cambiar atuendos, partes CAST, etc. en Salon."
 ConfigContents,1,Config_Reb_028_Select_0,Sincronizar automáticamente
 ConfigContents,1,Config_Reb_028_Select_1,Editar modelos por separado
 ConfigContents,1,Config_Reb_029_Name,Modo de bloqueo
-ConfigContents,1,Config_Reb_029_Hint,/apagar<br>con solo presionar un botón/tecla o hacer que se active solo<br>mientras se mantiene presionado un botón/tecla.
+ConfigContents,1,Config_Reb_029_Hint,Seleccione cómo le gustaría cambiar a Lock-On<br>modo. Puede activar o desactivar el modo Lock-On<br>con solo presionar un botón/tecla o hacer que se<br>active solo mientras se mantiene presionado un<br>botón/tecla.
 ConfigContents,1,Config_Reb_029_Select_0,Pulsación única
 ConfigContents,1,Config_Reb_029_Select_1,Mantenga presionada la tecla/botón
 ConfigContents,1,Config_Reb_030_Name,Cambiar el objetivo de bloqueo usando <%RStick>
@@ -2634,11 +2634,11 @@ ConfigContents,1,Config_Reb_034_Hint,Configuración de orientación vertical de 
 ConfigContents,1,Config_Reb_034_Select_0,Estándar
 ConfigContents,1,Config_Reb_034_Select_1,invertido
 ConfigContents,1,Config_Reb_035_Name,Vista estándar: velocidad de rotación de la cámara (izquierda/derecha)
-ConfigContents,1,Config_Reb_035_Hint,ate the camera slower.<br><br><yellow>Note: Standard View only.<c>
+ConfigContents,1,Config_Reb_035_Hint,Configuración de velocidad de rotación de<br>la cámara horizontal. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista estándar únicamente.<c>
 ConfigContents,1,Config_Reb_036_Name,Vista estándar: velocidad de rotación de la cámara (arriba/abajo)
-ConfigContents,1,Config_Reb_036_Hint,te the camera slower.<br><br><yellow>Note: Standard View only.<c>
+ConfigContents,1,Config_Reb_036_Hint,Configuración de velocidad de rotación de<br>la cámara vertical. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista estándar únicamente.<c>
 ConfigContents,1,Config_Reb_037_Name,Vista estándar: control de prioridad del mouse
-ConfigContents,1,Config_Reb_037_Hint,when you use your mouse.<br><br><yellow>Note: Standard View only.<c>
+ConfigContents,1,Config_Reb_037_Hint,Seleccione si desea priorizar el movimiento de la<br>cámara o el cursor del mouse cuando usa el mouse.<br><br><yellow>Nota: Vista estándar únicamente.<c>
 ConfigContents,1,Config_Reb_037_Select_0,Cámara
 ConfigContents,1,Config_Reb_037_Select_1,Cursor del ratón
 ConfigContents,1,Config_Reb_038_Name,Vista por encima del hombro: rotación de la cámara (izquierda/derecha)
@@ -2650,11 +2650,11 @@ ConfigContents,1,Config_Reb_039_Hint,Configuración de orientación vertical de 
 ConfigContents,1,Config_Reb_039_Select_0,Estándar
 ConfigContents,1,Config_Reb_039_Select_1,invertido
 ConfigContents,1,Config_Reb_040_Name,Vista por encima del hombro: velocidad de rotación (izquierda/derecha)
-ConfigContents,1,Config_Reb_040_Hint,la cámara más lenta.<br><br><yellow>Nota: Vista sobre el hombro únicamente. <c>
+ConfigContents,1,Config_Reb_040_Hint,Configuración de velocidad de rotación de<br>la cámara horizontal. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista sobre el hombro únicamente.<c>
 ConfigContents,1,Config_Reb_041_Name,Vista por encima del hombro: velocidad de rotación (arriba/abajo)
-ConfigContents,1,Config_Reb_041_Hint,La cámara más lenta.<br><br><yellow>Nota: Vista sobre el hombro únicamente. <c>
+ConfigContents,1,Config_Reb_041_Hint,Configuración de velocidad de rotación de<br>la cámara vertical. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista sobre el hombro únicamente.<c>
 ConfigContents,1,Config_Reb_042_Name,Vista por encima del hombro: control de prioridad del mouse
-ConfigContents,1,Config_Reb_042_Hint,usas tu mouse.<br><br><yellow>Nota: Vista sobre el hombro únicamente. <c>
+ConfigContents,1,Config_Reb_042_Hint,Seleccione si desea priorizar el movimiento de la<br>cámara o el cursor del mouse cuando usa el mouse.<br><br><yellow>Nota: Vista sobre el hombro únicamente.<c>
 ConfigContents,1,Config_Reb_042_Select_0,Cámara
 ConfigContents,1,Config_Reb_042_Select_1,Cursor del ratón
 ConfigContents,1,Config_Reb_047_Name,Uso del chat directo
@@ -2662,7 +2662,7 @@ ConfigContents,1,Config_Reb_047_Hint,"Establecer si usar el teclado solo para in
 ConfigContents,1,Config_Reb_047_Select_0,No usado
 ConfigContents,1,Config_Reb_047_Select_1,Usar
 ConfigContents,1,Config_Reb_048_Name,Uso del chat automático
-ConfigContents,1,Config_Reb_048_Hint,"Esta configuración evitará que se envíen<br>mensajes de chat automático, incluso si están configurados. <c>"
+ConfigContents,1,Config_Reb_048_Hint,"Seleccione si desea utilizar el chat automático.<br><br><yellow>Nota: Seleccionar ""No utilizado"" para esta configuración<br>evitará Mensajes de chat automático que no se envíen,<br>incluso si están configurados.<c>"
 ConfigContents,1,Config_Reb_048_Select_0,No usado
 ConfigContents,1,Config_Reb_048_Select_1,Usar
 ConfigContents,1,Config_Reb_049_Name,Otras configuraciones de visualización del chat automático del jugador: Evento
@@ -2678,7 +2678,7 @@ ConfigContents,1,Config_Reb_092_Hint,"Selecciona si deseas mostrar los chats aut
 ConfigContents,1,Config_Reb_092_Select_0,Esconder
 ConfigContents,1,Config_Reb_092_Select_1,Mostrar
 ConfigContents,1,Config_Reb_050_Name,Mostrar chat automático en el registro
-ConfigContents,1,Config_Reb_050_Hint,Seleccione si desea mostrar los mensajes de chat automático en<br>el registro.
+ConfigContents,1,Config_Reb_050_Hint,Seleccione si desea mostrar los mensajes de<br>chat automático en el registro.
 ConfigContents,1,Config_Reb_050_Select_0,Esconder
 ConfigContents,1,Config_Reb_050_Select_1,Mostrar
 ConfigContents,1,Config_Reb_051_Name,Citar mensajes en respuestas
@@ -2695,7 +2695,7 @@ ConfigContents,1,Config_Reb_053_Select_0,Mostrar todo
 ConfigContents,1,Config_Reb_053_Select_1,Solo mensajes de sala
 ConfigContents,1,Config_Reb_053_Select_2,Esconder
 ConfigContents,1,Config_Reb_054_Name,Mostrando arte simbólico
-ConfigContents,1,Config_Reb_054_Hint,"Seleccione si desea mostrar el arte del símbolo.<br><br><yellow>Nota: Al seleccionar ""Ocultar"" también se ocultará su propio arte del símbolo <br>. <c>"
+ConfigContents,1,Config_Reb_054_Hint,"Seleccione si desea mostrar el arte del símbolo.<br><br><yellow>Nota: Al seleccionar ""Ocultar""<br>también se ocultará su propio arte del símbolo<c>"
 ConfigContents,1,Config_Reb_054_Select_0,Esconder
 ConfigContents,1,Config_Reb_054_Select_1,Mostrar
 ConfigContents,1,Config_Reb_118_Name,Visualización de arte simbólico: área
@@ -2706,9 +2706,9 @@ ConfigContents,1,Config_Reb_118_Select_2,Mostrar
 ConfigContents,1,Config_Reb_119_Name,Exhibición de arte simbólico: fiesta
 ConfigContents,1,Config_Reb_119_Hint,"Seleccione si desea mostrar gráficos de Symbol Art en Party<br>Charla.<br><br><yellow>Nota: Cuando se elige ""Ocultar"", el arte del símbolo Los gráficos<br>enviados por usted u otros jugadores no se mostrarán.<c>"
 ConfigContents,1,Config_Reb_120_Name,Exhibición de arte simbólico: Alianza
-ConfigContents,1,Config_Reb_120_Hint,está seleccionado
+ConfigContents,1,Config_Reb_120_Hint,"Seleccione si desea mostrar gráficos de Symbol Art en Chat de<br>alianza.<br><br><yellow>Nota: Cuando se elige ""Ocultar"", el arte del símbolo Los gráficos<br>enviados por usted u otros jugadores no se mostrarán.<c>"
 ConfigContents,1,Config_Reb_121_Name,Exhibición de arte simbólico: grupo
-ConfigContents,1,Config_Reb_121_Hint,"Si se elige, los gráficos Symbol Art<br>enviados por usted u otros jugadores no se mostrarán. <c>"
+ConfigContents,1,Config_Reb_121_Hint,"Seleccione si desea mostrar gráficos de símbolos en el chat<br>grupal.<br><br><yellow>Nota: Cuando se elige ""Ocultar"", el arte del símbolo Los gráficos<br>enviados por usted u otros jugadores no se mostrarán.<c>"
 ConfigContents,1,Config_Reb_055_Name,Mostrar el nombre del orador del chat
 ConfigContents,1,Config_Reb_055_Hint,"Seleccione si desea mostrar los nombres de los oradores en<br>Group Chat, Alliance Chat o Whisper Chat."
 ConfigContents,1,Config_Reb_055_Select_0,Nombre de identificación del jugador
@@ -2730,51 +2730,51 @@ ConfigContents,1,Config_Reb_060_Hint,Ajusta el volumen de los vídeos del juego.
 ConfigContents,1,Config_Reb_061_Name,Sonido envolvente
 ConfigContents,1,Config_Reb_061_Hint,Activa o desactiva el sonido envolvente.
 ConfigContents,1,Config_Reb_061_Select_0,Apagado
-ConfigContents,1,Config_Reb_061_Select_1,En
+ConfigContents,1,Config_Reb_061_Select_1,Encendido
 ConfigContents,1,Config_Reb_062_Name,Sonido de enfoque global
 ConfigContents,1,Config_Reb_062_Hint,Especifica si se reproducirá el audio del juego cuando el juego<br>no esté en la ventana activa.
 ConfigContents,1,Config_Reb_062_Select_0,Apagado
-ConfigContents,1,Config_Reb_062_Select_1,En
+ConfigContents,1,Config_Reb_062_Select_1,Encendido
 ConfigContents,1,Config_Reb_063_Name,Formato de captura de pantalla
 ConfigContents,1,Config_Reb_063_Hint,Seleccione el formato de imagen utilizado al guardar capturas de pantalla.
 ConfigContents,1,Config_Reb_063_Select_0,JPEG
 ConfigContents,1,Config_Reb_063_Select_1,PNG
 ConfigContents,1,Config_Reb_063_Select_2,BMP
 ConfigContents,1,Config_Reb_064_Name,Visualización de la interfaz de usuario al tomar capturas de pantalla
-ConfigContents,1,Config_Reb_064_Hint,s.<br><yellow> Nota: esta configuración afecta únicamente a la función de captura de pantalla<br>del juego. <c>
+ConfigContents,1,Config_Reb_064_Hint,"Seleccione si desea mostrar la interfaz de<br>usuario (Windows, interfaces, etc.) sobre<br>cómo guardar capturas de pantalla. <yellow>Nota:<br>Esta configuración afecta el juego Función<br>de captura de pantalla únicamente.<c>"
 ConfigContents,1,Config_Reb_064_Select_0,Mostrar todo
 ConfigContents,1,Config_Reb_064_Select_1,Mostrar solo globos
 ConfigContents,1,Config_Reb_064_Select_2,Esconder
 ConfigContents,1,Config_Reb_065_Name,Fuente de luz de efecto
-ConfigContents,1,Config_Reb_065_Hint,Activa o desactiva la iluminación para efectos especiales.<br>Desactivar estos efectos reduce la carga de procesamiento de <br>.
+ConfigContents,1,Config_Reb_065_Hint,Activa o desactiva la iluminación para<br>efectos especiales. Desactivar estos<br>efectos reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_065_Select_0,Apagado
-ConfigContents,1,Config_Reb_065_Select_1,En
+ConfigContents,1,Config_Reb_065_Select_1,Encendido
 ConfigContents,1,Config_Reb_066_Name,Iluminación del terreno
-ConfigContents,1,Config_Reb_066_Hint,Encender/apagar la iluminación del terreno.<br>Desactivar estos efectos reduce la carga de procesamiento de <br>.
+ConfigContents,1,Config_Reb_066_Hint,Encender/apagar la iluminación del<br>terreno. Desactivar estos efectos<br>reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_066_Select_0,Apagado
-ConfigContents,1,Config_Reb_066_Select_1,En
+ConfigContents,1,Config_Reb_066_Select_1,Encendido
 ConfigContents,1,Config_Reb_138_Name,Floración
-ConfigContents,1,Config_Reb_138_Hint,imágenes de pantalla.<br><br>Establecer el valor en 0 reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_138_Hint,Agregue un filtro a las áreas brillantes para<br>mejorar el aspecto general. apariencia de las<br>imágenes en pantalla.<br><br>Establecer el valor en 0 reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_067_Name,Floración
-ConfigContents,1,Config_Reb_067_Hint,Activar/desactivar imágenes.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_067_Hint,Cambie el filtro a áreas brillantes para mejorar el<br>aspecto general. Activar/desactivar la apariencia de las<br>imágenes en pantalla.<br><br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_067_Select_0,Apagado
-ConfigContents,1,Config_Reb_067_Select_1,En
+ConfigContents,1,Config_Reb_067_Select_1,Encendido
 ConfigContents,1,Config_Reb_068_Name,Profundidad de campo
-ConfigContents,1,Config_Reb_068_Hint,Activa o desactiva el efecto de desenfoque de fondo para ciertos eventos <br>.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_068_Hint,Cambiar el efecto de desenfoque del fondo para ciertos<br>eventos encendido/apagado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_068_Select_0,Apagado
-ConfigContents,1,Config_Reb_068_Select_1,En
+ConfigContents,1,Config_Reb_068_Select_1,Encendido
 ConfigContents,1,Config_Reb_137_Name,Difuminar
-ConfigContents,1,Config_Reb_137_Hint,Establece un efecto similar a una imagen residual cuando la cámara o el personaje<br>se mueve.<br><br> Establecer el valor en 0 reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_137_Hint,Establezca un efecto similar a una imagen residual<br>cuando la cámara o movimientos del personaje.<br><br>Establecer el valor en 0 reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_069_Name,Difuminar
-ConfigContents,1,Config_Reb_069_Hint,encendido/apagado.<br><br>Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_069_Hint,Cambia el efecto de imagen residual cuando la cámara o<br>El personaje se activa o desactiva.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_069_Select_0,Apagado
-ConfigContents,1,Config_Reb_069_Select_1,En
+ConfigContents,1,Config_Reb_069_Select_1,Encendido
 ConfigContents,1,Config_Reb_070_Name,Rayos de luz
-ConfigContents,1,Config_Reb_070_Hint,Activa o desactiva la visualización de los rayos de luz que emanan del sol.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_070_Hint,Activa o desactiva la visualización de los rayos de luz que<br>emanan del sol.<br>Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_070_Select_0,Apagado
-ConfigContents,1,Config_Reb_070_Select_1,En
+ConfigContents,1,Config_Reb_070_Select_1,Encendido
 ConfigContents,1,Config_Reb_071_Name,Antialiasing
-ConfigContents,1,Config_Reb_071_Hint,la carga de procesamiento.<br><br><yellow>Nota: La inclusión de TAA puede cambiar la apariencia<br>de algunos elementos de PSO2. <c>
+ConfigContents,1,Config_Reb_071_Hint,Cambie la función para mostrar líneas curvas o<br>inclinadas encendido/apagado suavemente. Desactivar<br>este efecto reduce la carga de procesamiento.<br><br><yellow>Nota: Incluir TAA puede cambiar la apariencia de<br>algunos de los elementos de PSO2.<c>
 ConfigContents,1,Config_Reb_071_Select_0,APAGADO
 ConfigContents,1,Config_Reb_071_Select_1,FXAA
 ConfigContents,1,Config_Reb_071_Select_2,taa
@@ -2784,29 +2784,29 @@ ConfigContents,1,Config_Reb_072_Hint,Ajusta el volumen del chat de voz.
 ConfigContents,1,Config_Reb_073_Name,Chat grupal de otros jugadores
 ConfigContents,1,Config_Reb_073_Hint,Establece si se mostrarán los mensajes de chat del Grupo<br>de otros jugadores.
 ConfigContents,1,Config_Reb_074_Name,Oclusión ambiental
-ConfigContents,1,Config_Reb_074_Hint,Activa o desactiva el dibujo preciso de las sombras de los bordes del objeto <br>.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_074_Hint,Cambia el dibujo preciso de las sombras de los bordes<br>de los objetos. encendido/apagado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_074_Select_0,Apagado
-ConfigContents,1,Config_Reb_074_Select_1,En
+ConfigContents,1,Config_Reb_074_Select_1,Encendido
 ConfigContents,1,Config_Reb_075_Name,Oscurecimiento del borde de la pantalla
 ConfigContents,1,Config_Reb_075_Hint,Activa o desactiva la función para oscurecer los bordes de la pantalla.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_075_Select_0,Apagado
-ConfigContents,1,Config_Reb_075_Select_1,En
+ConfigContents,1,Config_Reb_075_Select_1,Encendido
 ConfigContents,1,Config_Reb_076_Name,Curva de tono de color
-ConfigContents,1,Config_Reb_076_Hint,para cada campo encendido/apagado.<br><br>Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_076_Hint,"Cambie la función para ajustar el tono de color<br>general, contraste y brillo para cada campo<br>activado/desactivado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento."
 ConfigContents,1,Config_Reb_076_Select_0,Apagado
-ConfigContents,1,Config_Reb_076_Select_1,En
+ConfigContents,1,Config_Reb_076_Select_1,Encendido
 ConfigContents,1,Config_Reb_078_Name,Ajuste automático de resolución
-ConfigContents,1,Config_Reb_078_Hint,n/apagado.<br><br> Desactivar esta función puede producir velocidades de cuadro<br>bajas en la batalla y en otros lugares.
+ConfigContents,1,Config_Reb_078_Hint,Cambie la función para reducir la resolución durante períodos de alta carga de trabajo para mantener<br>activada/desactivada la velocidad de fotogramas.<br><br>Desactivar esta función puede producir imágenes bajas tasas en la batalla y en otros lugares.
 ConfigContents,1,Config_Reb_078_Select_0,Apagado
-ConfigContents,1,Config_Reb_078_Select_1,En
+ConfigContents,1,Config_Reb_078_Select_1,Encendido
 ConfigContents,1,Config_Reb_079_Name,Visualización máxima del modelo detallado
-ConfigContents,1,Config_Reb_079_Hint,Especifique el número de modelos de personajes detallados para renderizar <br>.<br><br> Los valores más bajos reducen la carga de procesamiento.
+ConfigContents,1,Config_Reb_079_Hint,Especifica el número de modelos de personajes<br>detallados que deseas renderizar.<br><br>Los valores más bajos reducen la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_080_Name,Opacidad de los efectos de otros jugadores
 ConfigContents,1,Config_Reb_080_Hint,Ajusta la opacidad de los efectos que ocurren alrededor de<br>otros jugadores.<br><br> Los valores más bajos disminuyen la opacidad del efecto.
 ConfigContents,1,Config_Reb_081_Name,Calidad de la sombra
 ConfigContents,1,Config_Reb_081_Hint,Ajusta el nivel de precisión de las sombras que caen sobre los objetos.<br><br> Los valores más bajos reducen la carga de procesamiento.
 ConfigContents,1,Config_Reb_082_Name,Iluminación de la cámara
-ConfigContents,1,Config_Reb_082_Hint,Reduce ligeramente la carga de procesamiento <br>.<br><br><yellow>*Las luces personalizadas tendrán prioridad cuando estén activas. <c>
+ConfigContents,1,Config_Reb_082_Hint,"Ajusta la cantidad de luz de la cámara que brilla<br>personajes, etc<br><br>Establecer este valor en 0 reduce ligeramente el<br>procesamiento. carga.<br><br><yellow>*Las luces personalizadas tendrán prioridad cuando<br>estén activas.<c>"
 ConfigContents,1,Config_Reb_083_Name_old,Visualización de marcadores enemigos
 ConfigContents,1,Config_Reb_083_Hint_old,Ajusta la configuración de visualización del marcador enemigo en el mapa de radar.
 ConfigContents,1,Config_Reb_083_Select_0,Esconder
@@ -2825,21 +2825,21 @@ ConfigContents,1,Config_Reb_083_Hint,"Establece el efecto de movimiento de la c�
 ConfigContents,1,Config_Reb_086_Name,Controles de cámara del jefe
 ConfigContents,1,Config_Reb_086_Hint,Establece si cambiar la cámara a un gran angular durante el combate con enemigos grandes.
 ConfigContents,1,Config_Reb_086_Select_0,Apagado
-ConfigContents,1,Config_Reb_086_Select_1,En
+ConfigContents,1,Config_Reb_086_Select_1,Encendido
 ConfigContents,1,Config_Reb_089_Name,Configuración de prioridad de objetivo de bloqueo
 ConfigContents,1,Config_Reb_089_Select_0,Dirección de la cámara
 ConfigContents,1,Config_Reb_089_Select_1,Dirección del personaje 1
 ConfigContents,1,Config_Reb_089_Select_2,Dirección del personaje 2
-ConfigContents,1,Config_Reb_089_Hint,Establece tu prioridad de objetivo al bloquear.<br><br>[Dirección de la cámara] Priorice los objetivos en la dirección hacia la que mira su cámara. [Dirección<br>del personaje 1] Prioriza los objetivos en la dirección en la que mira tu personaje. [Dirección del<br>personaje 2] Prioriza los puntos débiles del enemigo y los enemigos en la dirección en la que mira tu<br>personaje y que están más cerca.
+ConfigContents,1,Config_Reb_089_Hint,Establece tu prioridad de objetivo al bloquear.<br><br>[Dirección de la cámara] <br>Priorice los objetivos en la dirección hacia la que mira su cámara.<br>[Dirección del personaje 1] <br>Prioriza los objetivos en la dirección en la que mira tu personaje. <br>[Dirección del personaje 2] <br>Prioriza los puntos débiles del enemigo y los enemigos en la dirección en la que mira tu<br>personaje y que están más cerca.
 ConfigContents,1,Config_Reb_090_Name,Efectos de sonido de sello
 ConfigContents,1,Config_Reb_090_Hint,"Seleccione si desea reproducir voces y efectos de<br>sonido de Stamps.<br><br><yellow>Nota: Si se selecciona ""No reproducir"", no podrás capaz<br>de escucharte a ti mismo o a otros jugadores.<c>"
 ConfigContents,1,Config_Reb_090_Select_0,Jugar
 ConfigContents,1,Config_Reb_090_Select_1,Área silenciada solamente
 ConfigContents,1,Config_Reb_090_Select_2,No jugar
 ConfigContents,1,Config_Reb_108_Name,Reflexión del espacio de la pantalla
-ConfigContents,1,Config_Reb_108_Hint,está encendido/apagado.<br><br>Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_108_Hint,Desactiva el dibujo preciso de los reflejos de algunos<br>activar/desactivar características del terreno.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_106_Name,Sombra del espacio de la pantalla
-ConfigContents,1,Config_Reb_106_Hint,/apagado.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_106_Hint,Cambiar el dibujo preciso de ciertas sombras que caen<br>encendido/apagado de objetos.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_093_Name,Calidad de la nube
 ConfigContents,1,Config_Reb_093_Hint,Ajuste el nivel de precisión para mostrar las nubes.<br><br> Los valores más bajos reducen la carga de procesamiento.
 ConfigContents,1,Config_Reb_093_Select_0,Bajo
@@ -2850,25 +2850,25 @@ ConfigContents,1,Config_Reb_094_Hint,Ajuste la calidad de visualización de los 
 ConfigContents,1,Config_Reb_095_Name,Representación de pieles
 ConfigContents,1,Config_Reb_095_Hint,Activa o desactiva el dibujo preciso de algunas partes del cabello del personaje.<br><br> Desactivar este efecto reduce la carga de procesamiento.
 ConfigContents,1,Config_Reb_096_Name,Antialiasing especular
-ConfigContents,1,Config_Reb_096_Hint,Active o desactive la reducción de ruido de reflexión para obtener un dibujo<br>más claro.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_096_Hint,Cambie la reducción del ruido de reflexión para una<br>mayor claridad. activar/desactivar el dibujo.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_097_Name,Iluminación global
-ConfigContents,1,Config_Reb_097_Hint,reduce la carga de procesamiento.<br><br><yellow>Nota: Los cambios surtirán efecto la próxima vez <br>que inicies sesión.<c>
-ConfigContents,1,Config_Reb_098_Name,teselado
-ConfigContents,1,Config_Reb_098_Hint,Activa o desactiva el dibujo preciso de algunas ondulaciones del terreno <br>.<br><br> Desactivar este efecto reduce la carga de procesamiento.
+ConfigContents,1,Config_Reb_097_Hint,Efecto de cambio para crear efectos de iluminación más<br>naturales encendido/apagado.<br><br>Desactivar este efecto reduce la carga de procesamiento.<br><br><yellow>Nota: Los cambios entrarán en vigor la próxima vez<br>inicias sesión.<c>
+ConfigContents,1,Config_Reb_098_Name,Teselado
+ConfigContents,1,Config_Reb_098_Hint,Cambiar dibujo preciso de algunas ondulaciones del<br>terreno. encendido/apagado.<br><br>Desactivar este efecto reduce la carga de<br>procesamiento.
 ConfigContents,1,Config_Reb_099_Name,sincronización vertical
 ConfigContents,1,Config_Reb_099_Hint,"Reduce el desgarro de la pantalla.<br><br>Deshabilitado automáticamente cuando se procesa el<br>juego. El tiempo es mayor que la frecuencia de<br>actualización de la pantalla.<br><br><yellow>Cuando se selecciona ""Activado obligatorio"", no se<br>activará. deshabilitado cuando el tiempo de<br>procesamiento del juego es mayor.<c>"
 ConfigContents,1,Config_Reb_099_Select_0,Apagado
-ConfigContents,1,Config_Reb_099_Select_1,En
+ConfigContents,1,Config_Reb_099_Select_1,Encendido
 ConfigContents,1,Config_Reb_099_Select_2,Obligatorio encendido
 ConfigContents,1,Config_Reb_100_Name,Filtrado de texturas
-ConfigContents,1,Config_Reb_100_Hint,El oído reduce la carga de procesamiento.<br><yellow> Nota: Los cambios entrarán en vigor la próxima vez que<br>inicie sesión. <c>
+ConfigContents,1,Config_Reb_100_Hint,Ajusta la suavidad de la textura.<br><br>La carga de procesamiento varía según la<br>configuración. Establecer esto en bilineal reduce la<br>carga de procesamiento. <br><yellow>Nota: Los cambios entrarán en<br>vigor la próxima vez que iniciar sesión.<c>
 ConfigContents,1,Config_Reb_100_Select_0,bilineal
-ConfigContents,1,Config_Reb_100_Select_1,trilineal
+ConfigContents,1,Config_Reb_100_Select_1,Trilineal
 ConfigContents,1,Config_Reb_100_Select_2,Anisotropía x4
 ConfigContents,1,Config_Reb_100_Select_3,Anisotropía x8
 ConfigContents,1,Config_Reb_100_Select_4,Anisotropía x16
 ConfigContents,1,Config_Reb_101_Name,Resolución de textura
-ConfigContents,1,Config_Reb_101_Hint,carga.<br><br><yellow>Nota: Los cambios surtirán efecto la próxima vez <br>que inicies sesión.<c>
+ConfigContents,1,Config_Reb_101_Hint,Ajuste la configuración de resolución de textura.<br><br>Reducir la configuración reduce la carga de<br>procesamiento.<br><br><yellow>Nota: Los cambios entrarán en vigor la próxima<br>vez inicias sesión.<c>
 ConfigContents,1,Config_Reb_101_Select_0,Bajo
 ConfigContents,1,Config_Reb_101_Select_1,Medio
 ConfigContents,1,Config_Reb_101_Select_2,Alto
@@ -2900,7 +2900,7 @@ ConfigContents,1,Config_Reb_109_Select_0,Cambiar
 ConfigContents,1,Config_Reb_043_Name,Ataque en picado con pulsaciones simultáneas de botones
 ConfigContents,1,Config_Reb_043_Select_0,Desactivar
 ConfigContents,1,Config_Reb_043_Select_1,Permitir
-ConfigContents,1,Config_Reb_043_Hint,ataque normal>.<br>El Glide Attack también se puede utilizar a través de tu subpaleta.
+ConfigContents,1,Config_Reb_043_Hint,Seleccione si desea realizar un ataque en picado<br>presionando <%Jump> + <%NormalAttack>. <br>El Glide Attack también se puede<br>utilizar a través de su subpaleta.
 ConfigContents,1,Config_Reb_110_Name,Ocultar los accesorios de otros jugadores
 ConfigContents,1,Config_Reb_110_Select_0,No te escondas
 ConfigContents,1,Config_Reb_110_Select_1,Personajes en la lista de bloqueo de PSO2
@@ -2916,15 +2916,15 @@ ConfigContents,1,Config_Reb_113_Select_2,Alto (Estándar)
 ConfigContents,1,Config_Reb_115_Name,Sincronización del tipo de cuerpo en el Salón II
 ConfigContents,1,Config_Reb_115_Choices_0,Sincronizar automáticamente
 ConfigContents,1,Config_Reb_115_Choices_1,Editar modelos por separado
-ConfigContents,1,Config_Reb_115_Hint,"es<c>o edítalos individualmente cuando cambies de vestimenta, piezas CAST, etc. en Salon."
+ConfigContents,1,Config_Reb_115_Hint,"Selecciona si deseas cambiar automáticamente entre <yellow>PSO2:NGS y PSO2 tipos de cuerpo<c> o editarlos individualmente al cambiar atuendos, piezas CAST, etc.<br>en Salon."
 ConfigContents,1,Config_Reb_116_Name,Cambiar información al aceptar tareas
 ConfigContents,1,Config_Reb_116_Hint,Seleccione si desea cambiar automáticamente la información<br>cuando acepte tareas de los NPC.
 ConfigContents,1,Config_Reb_116_Select_0,No cambiar
 ConfigContents,1,Config_Reb_116_Select_1,Cambiar
 ConfigContents,1,Config_Reb_045_Name,Vista estándar: corrección de la rotación del mouse
-ConfigContents,1,Config_Reb_045_Hint,girará la cámara más lentamente.<br><br><yellow>Nota: Solo Vista Estándar.<c>
+ConfigContents,1,Config_Reb_045_Hint,Ajuste la velocidad de rotación de la cámara<br>cuando utilice la ratón. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista estándar únicamente.<c>
 ConfigContents,1,Config_Reb_046_Name,Vista por encima del hombro: corrección de la rotación del mouse
-ConfigContents,1,Config_Reb_046_Hint,Gire la cámara más lentamente.<br><br><yellow>Nota: Vista sobre el hombro únicamente. <c>
+ConfigContents,1,Config_Reb_046_Hint,Ajuste la velocidad de rotación de la cámara<br>cuando utilice la ratón. Los valores más bajos<br>harán que la cámara gire más lentamente.<br><br><yellow>Nota: Vista sobre el hombro únicamente.<c>
 ConfigContents,1,Config_Reb_088_Name,Invitaciones de chat grupal
 ConfigContents,1,Config_Reb_088_Hint,Establezca si desea aceptar invitaciones de chat grupal.<br><yellow> No recibirás invitaciones si seleccionas Rechazar. <c>
 ConfigContents,1,Config_Reb_088_Select_0,Aceptar
@@ -2991,31 +2991,31 @@ ConfigContents,1,Config_Reb_141_Select_3,Calidad
 ConfigContents,1,Config_Reb_141_Select_4,Equilibrado
 ConfigContents,1,Config_Reb_141_Select_5,Actuación
 ConfigContents,1,Config_Reb_142_Name,Ícono de jugador nuevo/regresado
-ConfigContents,1,Config_Reb_142_Hint,Seleccione si desea mostrar el ícono para jugador nuevo/regresado. <br>
-ConfigContents,1,Config_047_Hint_Streamer,para unirse a un partido.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer. <c>
+ConfigContents,1,Config_Reb_142_Hint,Seleccione si desea mostrar el ícono para jugador nuevo/regresado. 
+ConfigContents,1,Config_047_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una invitación para unirse a un<br>grupo.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_048_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una solicitud de amistad.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
 ConfigContents,1,Config_049_Hint_Streamer,Especificar si se muestra una nueva notificación<br>siempre que seas explorado por una alianza.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
-ConfigContents,1,Config_058_Hint_Streamer,r más de 7 días.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_059_Hint_Streamer,n.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_070_Hint_Streamer,no recibirá ninguno.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_049_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_091_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_092_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_050_Hint_Streamer,Seleccione si desea mostrar mensajes de chat automático en el registro.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
+ConfigContents,1,Config_058_Hint_Streamer,Seleccione si desea recibir una notificación al<br>iniciar sesión cuando tu Conjunto Premium es válido<br>por más de 7 días.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
+ConfigContents,1,Config_059_Hint_Streamer,Seleccione si desea enviar anuncios de inicio de sesión a amigos cada vez<br>que inicie sesión.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
+ConfigContents,1,Config_070_Hint_Streamer,"Seleccione si desea recibir invitaciones de chat<br>grupal. Si está configurado para rechazar invitaciones,<br>no recibirá ninguna.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>"
+ConfigContents,1,Config_Reb_049_Hint_Streamer,"Selecciona si deseas mostrar los chats automáticos de<br>""Eventos"" de otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>"
+ConfigContents,1,Config_Reb_091_Hint_Streamer,"Seleccione si desea mostrar los chats automáticos de<br>""miembros"" de otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>"
+ConfigContents,1,Config_Reb_092_Hint_Streamer,"Selecciona si deseas mostrar los chats automáticos de<br>""Acción"" de otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>"
+ConfigContents,1,Config_Reb_050_Hint_Streamer,Seleccione si desea mostrar mensajes de chat<br>automático en el registro.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_Reb_088_Hint_Streamer,Establezca si desea aceptar invitaciones de chat grupal.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_Reb_118_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
+ConfigContents,1,Config_Reb_118_Hint_Streamer,Seleccione si desea mostrar gráficos de arte simbólico en<br>el chat de área.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_Reb_120_Hint_Streamer,Seleccione si desea mostrar gráficos de Symbol Art en Alliance<br>Chat.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_Reb_121_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_122_Hint_Streamer,Pestaña.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_124_Hint_Streamer,Pestaña.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_125_Hint_Streamer,Pestaña.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_Reb_128_Hint_Streamer,Pestaña.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
+ConfigContents,1,Config_Reb_121_Hint_Streamer,Seleccione si desea mostrar gráficos de símbolos en el chat<br>grupal.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
+ConfigContents,1,Config_Reb_122_Hint_Streamer,Muestra mensajes del canal de Área en el Ventana<br>de registro Mostrar pestaña Todo.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
+ConfigContents,1,Config_Reb_124_Hint_Streamer,Muestra mensajes del canal de la Alianza en el<br>Ventana de registro Mostrar pestaña Todo.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
+ConfigContents,1,Config_Reb_125_Hint_Streamer,Muestra mensajes del canal Whisper en el Ventana<br>de registro Mostrar pestaña Todo.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
+ConfigContents,1,Config_Reb_128_Hint_Streamer,Muestra mensajes del canal de chat grupal en la pestaña Mostrar todo de la<br>ventana de registro.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
 ConfigContents,1,Config_Reb_132_Hint_Streamer,Establece si se mostrarán los mensajes del chat de área de otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_Reb_053_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_134_Hint_Streamer,estado.<br><br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
-ConfigContents,1,Config_Reb_135_Hint_Streamer,<br><yellow>No se pueden cambiar las configuraciones mientras se está en modo Streamer.<c>
+ConfigContents,1,Config_Reb_053_Hint_Streamer,Establece si se mostrarán los mensajes del chat de alianza de<br>otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
+ConfigContents,1,Config_Reb_134_Hint_Streamer,Seleccione si desea mostrar los mensajes abiertos de otros jugadores sobre su<br>estado en línea.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
+ConfigContents,1,Config_Reb_135_Hint_Streamer,Establece si se mostrarán los mensajes de Whisper Chat de<br>otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_Reb_136_Hint_Streamer,Establece si se mostrarán los mensajes del chat grupal de otros jugadores.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
-ConfigContents,1,Config_Reb_016_Hint_Streamer,para unirse a un grupo.<br><br><yellow>No se pueden cambiar las configuraciones en el modo Streamer.<c>
+ConfigContents,1,Config_Reb_016_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una invitación para unirse a un<br>grupo.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
 ConfigContents,1,Config_Reb_017_Hint_Streamer,Especificar si se muestra una nueva notificación<br>cada vez que reciba una solicitud de amistad.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
 ConfigContents,1,Config_Reb_018_Hint_Streamer,Especificar si se muestra una nueva notificación<br>siempre que seas explorado por una alianza.<br><br><yellow>No se pueden cambiar las configuraciones en el<br>modo Streamer.<c>
 ConfigContents,1,Config_Reb_021_Hint_Streamer,Seleccione si desea recibir una notificación al<br>iniciar sesión cuando tu Conjunto Premium es válido<br>por más de 7 días.<br><br><yellow>No se pueden cambiar las configuraciones en el modo<br>Streamer.<c>
@@ -3045,36 +3045,36 @@ ConfigContents,1,Config_Reb_157_Hint,Ajuste el brillo hasta que la imagen en la 
 ConfigContents,1,Config_Reb_158_Name,Configuración HDR: Saturación
 ConfigContents,1,Config_Reb_158_Hint,Ajuste la saturación de color cuando HDR esté habilitado.
 ConfigContents,1,Config_Reb_159_Name,Corrección de movimiento de personajes
-ConfigContents,1,Config_Reb_159_Hint,"Si los movimientos de los personajes parecen poco naturales, desactivarlos a veces soluciona el problema."
+ConfigContents,1,Config_Reb_159_Hint,"Activa o desactiva los movimientos naturales de los personajes de tu personaje y de los<br>miembros del grupo.<br><br>Cuando los movimientos de los personajes parecen poco naturales, desactivarlos a veces<br>soluciona el problema."
 ConfigContents,1,Config_Reb_161_Name,Exhibición de arte simbólico: tiendas personales
-ConfigContents,1,Config_Reb_161_Hint,"se selecciona de"", los<br>gráficos artísticos del símbolo de la tienda personal de otros jugadores no se mostrarán. <c>"
+ConfigContents,1,Config_Reb_161_Hint,"Seleccione si desea mostrar gráficos de Symbol Art en Tiendas<br>personales.<br><br><yellow>Nota: Cuando se selecciona ""Ocultar"", los otros jugadores Los<br>gráficos del arte del símbolo de la tienda personal no se<br>mostrarán.<c>"
 ConfigContents,1,Config_Reb_162_Name,Visualización de modelo simple
-ConfigContents,1,Config_Reb_162_Hint,Seleccione la configuración de visualización para cuando no se<br>puedan cargar los detalles del personaje.<br><br>[Modelado 1] Muestra una silueta. [Modelado 2] Muestra un modelo<br>blanco. [Modelado 3] Muestra un modelo semitranslúcido.<br><br><yellow>La carga de procesamiento para Modeling 3 es algo grande.<c>
+ConfigContents,1,Config_Reb_162_Hint,Seleccione la configuración de visualización para cuando no se<br>puedan cargar los detalles del personaje.<br><br>[Modelado 1] Muestra una silueta. <br>[Modelado 2] Muestra un modelo blanco. <br>[Modelado 3] Muestra un modelo semitranslúcido.<br><br><yellow>La carga de procesamiento para Modeling 3 es algo grande.<c>
 ConfigContents,1,Config_Reb_162_Select_0,Modelado 1
 ConfigContents,1,Config_Reb_162_Select_1,Modelado 2
 ConfigContents,1,Config_Reb_162_Select_2,Modelado 3
 ConfigContents,1,Config_Reb_163_Name,Usando el modo de ampliación
-ConfigContents,1,Config_Reb_163_Hint,Seleccione si desea habilitar el modo de<br>ampliación.<br><br><yellow>Nota: Puede habilitar el modo de ampliación con<br><c><swguidetype ShiftTrigger> <yellow>+<c> <swguidetype EscMenu><yellow> cuando se selecciona [Activar].<c>
+ConfigContents,1,Config_Reb_163_Hint,Seleccione si desea habilitar el modo de ampliación.<br><br><yellow>Nota: Puede habilitar el modo de ampliación con<br><c><swguidetype ShiftTrigger> <yellow>+<c> <swguidetype EscMenu><yellow> cuando se selecciona [Activar].<c>
 ConfigContents,1,Config_Reb_164_Name,Número de mensajes de notificación mostrados
 ConfigContents,1,Config_Reb_164_Hint,Seleccione cuántos mensajes de notificación mostrar<br>simultáneamente en la parte inferior de la pantalla.
 ConfigContents,1,Config_Reb_164_Select_0,3
 ConfigContents,1,Config_Reb_164_Select_1,1
 ConfigContents,1,Config_Reb_165_Name,Visualización de daño enemigo: personaje del jugador
-ConfigContents,1,Config_Reb_165_Hint,Establece el tamaño de los números que se muestran cuando el personaje del jugador<br>causa daño.
+ConfigContents,1,Config_Reb_165_Hint,Establece el tamaño de los números que se muestran<br>cuando el personaje del jugador causa daño.
 ConfigContents,1,Config_Reb_165_Select_0,Estándar
 ConfigContents,1,Config_Reb_165_Select_1,Pequeño
 ConfigContents,1,Config_Reb_165_Select_2,Pequeñito
 ConfigContents,1,Config_Reb_165_Select_3,No mostrar
 ConfigContents,1,Config_Reb_166_Name,Visualización de daño enemigo: miembros del grupo
-ConfigContents,1,Config_Reb_166_Hint,Establece el tamaño de los números que se muestran cuando los miembros del grupo<br>causan daño.
+ConfigContents,1,Config_Reb_166_Hint,Establece el tamaño de los números que se muestran<br>cuando los miembros del grupo causan daño.
 ConfigContents,1,Config_Reb_167_Name,Visualización de daño enemigo: Misc. Personajes
-ConfigContents,1,Config_Reb_167_Hint,Establece el tamaño de los números que se muestran cuando<br>personajes varios causan daño.
+ConfigContents,1,Config_Reb_167_Hint,Establece el tamaño de los números que se<br>muestran cuando personajes varios causan<br>daño.
 ConfigContents,1,Config_Reb_168_Name,Pantalla de daño recibido y recuperación: personaje del jugador
-ConfigContents,1,Config_Reb_168_Hint,Establece el tamaño de los números que se muestran cuando el personaje del jugador<br>sufre daño o se recupera.
+ConfigContents,1,Config_Reb_168_Hint,Establece el tamaño de los números que se<br>muestran cuando el personaje del jugador sufre<br>daño o se recupera.
 ConfigContents,1,Config_Reb_169_Name,Visualización de daños recibidos y recuperación: miembros del grupo
 ConfigContents,1,Config_Reb_169_Hint,Establezca el tamaño de los números que se muestran cuando los miembros del grupo<br>sufren daños o se recuperan.
 ConfigContents,1,Config_Reb_170_Name,Pantalla de daños recibidos y recuperación: Misc. Personajes
-ConfigContents,1,Config_Reb_170_Hint,Establece el tamaño de los números que se muestran cuando<br>personajes diversos sufren daños o se recuperan.
+ConfigContents,1,Config_Reb_170_Hint,Establece el tamaño de los números que se<br>muestran cuando personajes diversos sufren daños<br>o se recuperan.
 ConfigContents,1,Config_Reb_171_Name,Pantalla destacada de daños críticos
 ConfigContents,1,Config_Reb_171_Hint,Establece si se resaltarán los números que se muestran cuando el personaje del jugador asesta un<br>golpe crítico.<br><br>[Resaltado 1] Amplía números.<br><br>[Resaltado 2] Amplía los números y añade un efecto.
 ConfigContents,1,Config_Reb_171_Select_0,Desactivar
@@ -3085,7 +3085,7 @@ ConfigContents,1,Config_Reb_172_Hint,"Seleccione si desea mostrar anuncios de in
 ConfigContents,1,Config_Reb_172_Select_0,Esconder
 ConfigContents,1,Config_Reb_172_Select_1,Mostrar
 ConfigContents,1,Config_Reb_173_Name,Objetivo de bloqueo de cambio automático
-ConfigContents,1,Config_Reb_173_Hint,br><yellow>*La prioridad de orientación se puede ajustar en la configuración de prioridad de objetivo de bloqueo. <c>
+ConfigContents,1,Config_Reb_173_Hint,Selecciona si deseas fijar automáticamente un nuevo objetivo después de derrotar<br>a un enemigo.<br><br><yellow>*La prioridad de orientación se puede ajustar en la configuración de prioridad de<br>objetivo de bloqueo.<c>
 ConfigContents,1,Config_Reb_173_Select_0,Desactivar
 ConfigContents,1,Config_Reb_173_Select_1,Permitir
 ConfigContents,1,Config_Reb_174_Name,Mostrar hologramas portátiles de otros jugadores
@@ -3095,15 +3095,15 @@ ConfigContents,1,Config_Reb_174_Select_1,Ocultarse en sectores de combate
 ConfigContents,1,Config_Reb_174_Select_2,Ocultarse en sectores de combate/exploración
 ConfigContents,1,Config_Reb_174_Select_3,Esconder
 ConfigContents,1,Config_Reb_175_Name,Reducir la frecuencia de actualización del sorteo de personajes y enemigos
-ConfigContents,1,Config_Reb_175_Hint,d.<br><br><yellow>*Habilitar esto reducirá ligeramente la carga del procesador. <c>
+ConfigContents,1,Config_Reb_175_Hint,Reduce la frecuencia de actualización de enemigos y personajes lejanos<br>cuando está habilitado.<br><br><yellow>*Habilitar esto reducirá ligeramente la carga del procesador.<c>
 ConfigContents,1,Config_Reb_175_Select_0,Desactivar
 ConfigContents,1,Config_Reb_175_Select_1,Permitir
 ConfigContents,1,Config_Reb_176_Name,Visualización en alta resolución de otros jugadores
-ConfigContents,1,Config_Reb_176_Hint,Establezca si desea representar personajes y disfraces con sombreado<br>de celdas.<br><br><yellow>Al seleccionar [Activar] aumentará ligeramente la carga de<br>procesamiento.<c>
+ConfigContents,1,Config_Reb_176_Hint,Esta configuración hará que otros reproductores dentro de un cierto rango se muestren en la misma resolución que su configuración de [Resolución de<br>textura] en [Gráficos].<br><br><yellow>La cantidad de otros reproductores que se mostrarán en alta resolución cambiará dependiendo de tu sistema.<br><br><yellow>Al seleccionar [Activar] aumentará ligeramente la carga de procesamiento.<c>
 ConfigContents,1,Config_Reb_176_Select_0,Desactivar
 ConfigContents,1,Config_Reb_176_Select_1,Permitir
 ConfigContents,1,Config_Reb_177_Name,Sombreado de celdas de caracteres
-ConfigContents,1,Config_Reb_177_Hint,<br><yellow>Seleccionar [Permitir] aumentará ligeramente la carga de procesamiento.<c>
+ConfigContents,1,Config_Reb_177_Hint,Establezca si desea representar personajes y disfraces con sombreado<br>de celdas.<br><br><yellow>Al seleccionar [Activar] aumentará ligeramente la carga de<br>procesamiento.<c>
 ConfigContents,1,Config_Reb_177_Select_0,Desactivar
 ConfigContents,1,Config_Reb_177_Select_1,Permitir
 ConfigContents,1,Config_Reb_178_Name,Sombreado de celdas de caracteres: énfasis en el contorno
@@ -3139,7 +3139,7 @@ ConfigContents,1,Config_Reb_Title_Simple,<white> Configuración de visualizació
 ConfigContents,1,Config_Reb_Title_Hdr,<white> Configuración HDR <c>
 ConfigContents,1,Config_Reb_Title_Custom,<white> Varios. <c>
 ConfigContents,1,Config_Reb_180_Name,Mostrar daño por segundo (DPS)
-ConfigContents,1,Config_Reb_180_Hint,><br><yellow>*El daño se mostrará en la parte superior derecha de la pantalla.<c>
+ConfigContents,1,Config_Reb_180_Hint,Seleccione si desea mostrar el daño por segundo tratas<br>con los enemigos.<br><br><yellow>*El daño se mostrará en la parte superior derecha de la<br>pantalla.<c>
 ConfigContents,1,Config_Reb_180_Select_0,Esconder
 ConfigContents,1,Config_Reb_180_Select_1,Mostrar
 ConfigContents,1,Config_Reb_Title_Light,<white> Configuración de fuente de luz <c>
@@ -3155,13 +3155,13 @@ ConfigContents,1,Config_Reb_181_Select_0,Desactivar
 ConfigContents,1,Config_Reb_181_Select_1,Todos los personajes
 ConfigContents,1,Config_Reb_181_Select_2,Usar configuración de caracteres
 ConfigContents,1,Config_Reb_182_Name,Sombreado de cel de personaje: NPC
-ConfigContents,1,Config_Reb_182_Hint,Ahora>Seleccionar [Activar] aumentará ligeramente la carga de procesamiento. <c>
+ConfigContents,1,Config_Reb_182_Hint,Establezca si desea representar o no a los NPC con<br>sombreado de celdas.<br><br><yellow>Al seleccionar [Activar] aumentará ligeramente la carga de<br>procesamiento.<c>
 ConfigContents,1,Config_Reb_182_Select_0,Desactivar
 ConfigContents,1,Config_Reb_182_Select_1,Permitir
 ConfigContents,1,Config_Reb_183_Name,Corrección de movimiento del movimiento del jugador
-ConfigContents,1,Config_Reb_183_Hint,"Los movimientos de los personajes parecen antinaturales, desactivarlos a veces soluciona el problema."
+ConfigContents,1,Config_Reb_183_Hint,"Activa o desactiva los movimientos naturales de tu personaje cuando te mueves.<br><br>Cuando los movimientos de los personajes parecen poco naturales, desactivarlos a veces<br>soluciona el problema."
 ConfigContents,1,Config_Reb_183_Select_0,Apagado
-ConfigContents,1,Config_Reb_183_Select_1,En
+ConfigContents,1,Config_Reb_183_Select_1,Encendido
 ConfigContents,1,Config_Reb_Title_Toon,<white> Configuración de sombreado de celdas <c>
 ConfigContents,1,Config_CollaboMode_Hint,"Establezca si desea mostrar un icono que indique si su Equipo<br>actual del personaje, apariencia, discos de música ambientados en<br>C-Space/A-Space, y piezas de construcción actualmente colocadas y<br>Se pueden enviar hologramas portátiles para eventos como Campañas<br>de envío de capturas de pantalla.<br><br><yellow>*El ícono siempre aparecerá en la parte superior derecha de la<br>pantalla.<c><br><br>[Iconos]<br>- <pict collab_photo_ok>: Enviable<br>- <pict collab_photo_ng>: No se puede enviar (contiene elementos no autorizados)"
 ConfigContents,1,Config_Reb_186_Name,Establecer la posición de visualización del daño por segundo (DPS)
@@ -3180,16 +3180,16 @@ ConfigContents,1,Config_Reb_185_Select_1,Habilitar siempre
 ConfigContents,1,Config_Reb_187_Name,Cámara de animación después de la explosión
 ConfigContents,1,Config_Reb_187_Hint,Seleccione si desea cambiar a una cámara de animación<br>al activar un After Blast.
 ConfigContents,1,Config_Reb_187_Select_0,Apagado
-ConfigContents,1,Config_Reb_187_Select_1,En
+ConfigContents,1,Config_Reb_187_Select_1,Encendido
 ConfigContents,1,Config_Reb_Title_GraphicStaging,<white> Configuración de animación de gráficos <c>
 ConfigContents,1,Config_Reb_188_Name,Configuración de animación de gráficos para estilos EX
-ConfigContents,1,Config_Reb_188_Hint,Seleccione si se mostrarán los efectos de animación de pantalla de carácter de estilo EX o <br>.
+ConfigContents,1,Config_Reb_188_Hint,Seleccione si el carácter de estilo EX o Se<br>mostrarán los efectos de animación de la<br>pantalla.
 ConfigContents,1,Config_Reb_188_Select_0,Mostrar todo
 ConfigContents,1,Config_Reb_188_Select_1,Ocultar sólo efectos del jugador
 ConfigContents,1,Config_Reb_188_Select_2,Ocultar sólo efectos de pantalla
 ConfigContents,1,Config_Reb_188_Select_3,Ocultar todo
 ConfigContents,1,Config_Reb_189_Name,Mostrar tasa crítica con DPS
-ConfigContents,1,Config_Reb_189_Hint,Seleccione si desea mostrar la tasa crítica cuando Mostrar daño por segundo (DPS) esté configurado en Mostrar.
+ConfigContents,1,Config_Reb_189_Hint,Seleccione si desea mostrar la tasa crítica cuando Mostrar daño por segundo (DPS) esté configurado<br>en Mostrar.
 ConfigContents,1,Config_Reb_189_Select_0,Esconder
 ConfigContents,1,Config_Reb_189_Select_1,Mostrar
 InitActionStyle,0,Title,アクションパレットのタイプ選択
@@ -3389,14 +3389,14 @@ InitPadInput,0,Config_PadInput16,-
 InitPadInput,0,Config_PadInput17,ゲームパッド初期設定
 InitPadInput,0,Config_PadInput18,「DirectInput」を選択している場合のみ設定できます。
 InitPadInput,1,Config_PadInput01,Selección del tipo de gamepad
-InitPadInput,1,Config_PadInput02,Es posible que algunas combinaciones de gamepad y tipo de entrada<br>no funcionen correctamente.<br>Cambie el tipo de entrada si esto ocurre.
+InitPadInput,1,Config_PadInput02,Cierto gamepad y tipo de entrada Es posible<br>que las combinaciones no funcionen<br>correctamente. Cambie el tipo de entrada si<br>esto ocurre.
 InitPadInput,1,Config_PadInput03,Tipo de entrada
 InitPadInput,1,Config_PadInput04,Entrada directa
 InitPadInput,1,Config_PadInput05,Entrada X
 InitPadInput,1,Config_PadInput06,Alternar vibración del gamepad
 InitPadInput,1,Config_PadInput07,La vibración solo está disponible cuando se selecciona la entrada X.<br>Nota: Es posible que algunos gamepads no admitan vibración.
 InitPadInput,1,Config_PadInput08,Vibración del mando
-InitPadInput,1,Config_PadInput09,En
+InitPadInput,1,Config_PadInput09,Encendido
 InitPadInput,1,Config_PadInput10,Apagado
 InitPadInput,1,Config_PadInput11,Opciones del mando
 InitPadInput,1,Config_PadInput12,Control de gamepad inactivo
