@@ -610,7 +610,7 @@ ConnectError,1,Code627_Code,No se puede seleccionar alojamiento personal.
 ConnectError,1,Code627_Message,No se puede trasladar a alojamiento personal.<br>O no estás autorizado o tu período de uso ha expirado.
 ConnectError,1,Code628_Title,Selección de alojamiento personal
 ConnectError,1,Code628_Code,No se puede seleccionar alojamiento personal.
-ConnectError,1,Code628_Message,"La autorización requerida para los trimestres seleccionados,<br>o su período de uso ha vencido."
+ConnectError,1,Code628_Message,"No se puede trasladar a las habitaciones personales del propietario<br>objetivo. No cuentas con la autorización requerida para los<br>trimestres seleccionados, o su período de uso ha expirado."
 ConnectError,1,Code630_Title,Comunicación del servidor
 ConnectError,1,Code630_Code,No hay respuesta del servidor PSO2.
 ConnectError,1,Code630_Message,No hay respuesta del servidor PSO2. <br>Volviendo a la pantalla de título.
@@ -727,7 +727,7 @@ ConnectError,1,Code678_Code,No se puede mover al espacio creativo seleccionado.
 ConnectError,1,Code678_Message,No puedo moverme. El espacio seleccionado ha caducado.
 ConnectError,1,Code679_Title,Mensaje
 ConnectError,1,Code679_Code,No se puede mover al espacio creativo seleccionado.
-ConnectError,1,Code679_Message,d while we investigate.<br>Please check the player's site for details.
+ConnectError,1,Code679_Message,Actualmente hay un problema con la <br>función seleccionada.<br>Está desactivado mientras investigamos.<br>Consulte elsitio del jugador para obtener<br>más detalles.
 ConnectError,1,Code680_Title,Mensaje
 ConnectError,1,Code680_Code,No se puede mover al espacio creativo seleccionado.
 ConnectError,1,Code680_Message,No se puede mover debido a la configuración del espacio creativo seleccionado.
@@ -754,7 +754,7 @@ ConnectError,1,Code687_Code,No se puede restaurar el espacio creativo selecciona
 ConnectError,1,Code687_Message,No se pudo restaurar el Espacio Creativo a sus valores predeterminados.
 ConnectError,1,Code700_Title,Transferencia en bloque
 ConnectError,1,Code700_Code,No se puede pasar al bloque seleccionado.
-ConnectError,1,Code700_Message,transfer to the block<br>if you do not have a user ticket<br>or if your user ticket has expired.
+ConnectError,1,Code700_Message,Este bloque está abierto para<br>transferencias sólo con la posesión de un<br>Conjunto Premium válido. No puedes<br>transferir al bloque. si no tienes ticket<br>de usuario o si su ticket de usuario ha<br>caducado.
 ConnectError,1,Code701_Title,Transferencia en bloque
 ConnectError,1,Code701_Code,No se puede pasar al bloque seleccionado.
 ConnectError,1,Code701_Message,No puedes transferir a este bloque en tu plataforma actual.
@@ -4203,7 +4203,7 @@ Notice,1,NewTitleFriend,Responder a la solicitud de amistad
 Notice,1,NewTitleTeam,Responder a la Alianza Scouting
 Notice,1,NewTitleTrade,Responder a la solicitud comercial
 Notice,1,NewCheckMail,Indefinido
-Notice,1,NewCheckFriendList,"Si selecciona ""No"", también puede enviar una respuesta<br>más tarde seleccionando ""Lista de amigos"" en el menú principal."
+Notice,1,NewCheckFriendList,"Has recibido una solicitud de amistad de $(0). ¿Le<br>gustaría abrir una ventana de respuesta?<br><br>*Si seleccionas ""No"", también puedes enviar una<br>respuesta más tarde seleccionando ""Lista de<br>amigos"" en el menú principal."
 Notice,1,NewCheckParty,"Has recibido una invitación a una fiesta de $(0).<br>¿Le gustaría abrir una ventana de respuesta?<br><br>*Si seleccionas ""No"", también puedes enviar una<br>respuesta más tarde seleccionando ""Comandos del<br>grupo"" en el menú principal."
 Notice,1,NewCheckTrade,Has recibido una solicitud de intercambio de<br>$(0).<br>¿Te gustaría abrir una ventana de respuesta?
 Notice,1,NewCheckTeam,"Has sido explorado por $(0) para su Alianza $(1). ¿Le gustaría abrir una ventana de respuesta?<br><br><yellow>*Si seleccionas ""No"", también puedes enviar una respuesta más tarde seleccionando [Comandos de Alianza]<br>en el Menú Principal.<c>"
@@ -4362,7 +4362,7 @@ QuickCharge,1,ACChargeSelect_Button_Web,Cargar con SEGA ID
 QuickCharge,1,ACChargeSelect_Button_LinePay,Cargar con <pict linepay_icon>
 QuickCharge,1,ACChargeSelect_Button_NeShop,Cargar desde Nintendo eShop
 QuickCharge,1,ACChargeSelect_Desc_Quick,Configurar AC Quick Charge te permite<br>cargar AC mientras estás en el juego.
-QuickCharge,1,ACChargeSelect_Desc_Web,"Después de configurar AC Quick Charge,<br>podrás<br>cargar AC en el juego."
+QuickCharge,1,ACChargeSelect_Desc_Web,"Abra la página ARKS Efectivo (AC) en el<br>navegador.<br><br>*Se requiere una identificación de SEGA.<br>*Después de configurar AC Carga rápida,<br>podrás carga AC en el juego."
 QuickCharge,1,ACChargeSelect_Desc_NeShop,Cargar CA desde Nintendo eShop
 QuickCharge,1,PayCharge_MenuTitle,Cobrar con LINE Pay
 QuickCharge,1,PayCharge_MenuQRButton,Próximo
@@ -4375,7 +4375,7 @@ QuickCharge,1,PayCharge_RedrawYes,Actualizar
 QuickCharge,1,PayCharge_RedrawNo,Cancelar
 QuickCharge,1,PayCharge_TimeOut,<space>
 QuickCharge,1,PayCharge_AgeCheckTitle,Aviso
-QuickCharge,1,PayCharge_AgeCheckMessage,">Si tienes el permiso necesario<br>o no eres menor de edad, por favor pulsa<br>""Aceptar y continuar""."
+QuickCharge,1,PayCharge_AgeCheckMessage,"Los menores deben tener permiso.<br>de un padre o tutor antes de<br>cargar AC.<br><br>Si tienes permiso o no eres menor<br>de edad, por favor presiona<br>""Aceptar y continuar""."
 QuickCharge,1,PayCharge_AgeCheckYes,Aceptar y continuar
 QuickCharge,1,PayCharge_AgeCheckNo,Atrás
 QuickCharge,1,PayCharge_ChargeErrorTitle,Confirmar carga de CA
@@ -4501,7 +4501,7 @@ SecondPassword,1,Edit_Title,Registrar segunda contraseña
 SecondPassword,1,Edit_Text,"Por favor, introduce tu segunda contraseña. (<yellow>5 dígitos<c>)"
 SecondPassword,1,Edit_Menu1,Contraseña
 SecondPassword,1,Edit_Menu2,Confirmar contraseña
-SecondPassword,1,Edit_Notice,"Por favor, introduce tu segunda contraseña<br>usando el ratón y los botones que se muestran a la derecha."
+SecondPassword,1,Edit_Notice,"Debes registrar una segunda contraseña para realizar<br>transacciones de artículos.<br><br>Por razones de seguridad, ingrese su segunda contraseña<br>utilizando el ratón y los botones que se muestran a la<br>derecha."
 SecondPassword,1,Edit_NoticeV,Se requerirá tu segunda contraseña<br>cada vez que realices una transacción de objetos.
 SecondPassword,1,Edit_Button1,Confirmar
 SecondPassword,1,Edit_Button2,Cancelar
@@ -4568,8 +4568,8 @@ SecondPassword,1,Erase_Title,Restablecer segunda contraseña
 SecondPassword,1,Erase_Text,"Por favor, revisa los detalles de tu plataforma.<br>Si no se requieren cambios, se restablecerá tu contraseña.<br>¿Deseas restablecer tu contraseña?"
 SecondPassword,1,Erased_Text,Tu segunda contraseña ha sido restablecida.
 SecondPassword,1,VitaOpenWeb_Title,Iniciar navegador
-SecondPassword,1,VitaOpenWeb_Text,Tu sesión actual finalizará.<br>¿Estás seguro de que deseas continuar?
-SecondPassword,1,Erase_Error,Ordene<br>a través de la página de soporte de Phantasy Star Online 2.<br><br> Intente emitir una solicitud de reinicio desde la página de soporte.
+SecondPassword,1,VitaOpenWeb_Text,Esto iniciará su navegador y lo redirigirá<br>al sitio web de PSO2. Su sesión actual<br>finalizará. ¿Está seguro de que desea<br>continuar?
+SecondPassword,1,Erase_Error,Su segunda contraseña no se puede restablecer dado<br>su entorno de juego actual.<br>Puedes restablecer tu segunda contraseña a través<br>de la página de soporte de Phantasy Star Online 2.<br>Intente emitir una solicitud de reinicio desde la<br>página de Soporte.
 Sex,0,All,すべて
 Sex,0,TypeA,タイプ1
 Sex,0,TypeB,タイプ2
@@ -4677,9 +4677,9 @@ SystemMessage,1,SystemMesBusy,Transmitiendo...
 SystemMessage,1,SystemGmAlertFormMessage,Aceptar y continuar
 SystemMessage,1,SystemGmAlertFormMessageTitle,Alerta del equipo de desarrollo
 SystemMessage,1,SystemGmMessageFormMessageTitle,Anuncio del equipo de desarrollo
-SystemMessage,1,EmergencyStopMessage,cted for investigation.<br>Please check the player's site for details.
+SystemMessage,1,EmergencyStopMessage,Actualmente hay un problema con la función<br>seleccionada. El uso está restringido para<br>investigación. Consulte el sitio del jugador para<br>obtener más detalles.
 SystemMessage,1,EmergencyStopMessageTitle,Uso restringido
-SystemMessage,1,EmergencyStopItemMessage,cted for investigation.<br>Please check the player's site for details.
+SystemMessage,1,EmergencyStopItemMessage,Actualmente hay un problema con el elemento<br>seleccionado. El comercio está restringido para<br>investigación. Consulte el sitio del jugador para<br>obtener más detalles.
 SystemMessage,1,EmergencyStopItemMessageTitle,Restricciones comerciales para artículos específicos
 SystemMessage,1,Toast_StoryQuestAnnounce,"Solicite ""Un encuentro con Xion"" del ""EPISODIO 1"" de Story Quest."
 SystemMessage,1,RestrictionTitle,Restricción funcional
@@ -4860,12 +4860,12 @@ FullSizeGuide,1,Guide_Common_01,Confirmar:<%Decide>Cancelar: <%Cancel>
 FullSizeGuide,1,Guide_Common_02,Confirmar:<%Decide>Cancelar:<%Cancel>Cambiar ventana activa: <%ChangeCtrlWindowForward>
 FullSizeGuide,1,Guide_Common_03,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo: <%NextWidget>
 FullSizeGuide,1,Guide_Common_04,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo:<%NextWidget>Cambiar ventana activa: <%ChangeCtrlWindowForward>
-FullSizeGuide,1,Guide_ItemPack_01,Selección múltiple:<%MultiSelect>Cambiar ventana activa: <%ChangeCtrlWindowForward>
+FullSizeGuide,1,Guide_ItemPack_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Selección múltiple: <%MultiSelect> Cambiar ventana activa: <%ChangeCtrlWindowForward>
 FullSizeGuide,1,Guide_Scratch_01,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo:<%NextWidget>Restablecer vista previa: <%MultiSelect>
-FullSizeGuide,1,Guide_Shop_01,e Ventana activa:<%ChangeCtrlWindowForward>Detalles del paquete abierto: <%NextTabDetails>
-FullSizeGuide,1,Guide_Submenu_01,Change Sorting: <%MultiSelect>     Reset Sorting: <%ChangeCtrlWindowForward>
+FullSizeGuide,1,Guide_Shop_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar ventana activa: <%ChangeCtrlWindowForward> Abrir detalles del paquete: <%NextTabDetails>
+FullSizeGuide,1,Guide_Submenu_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar clasificación: <%MultiSelect> Restablecer clasificación: <%ChangeCtrlWindowForward>
 FullSizeGuide,1,Guide_Vitaldesign_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Vista previa: <%Function> Agregar a/Editar favoritos: <%NextTabDetails> Cambiar ventana<br>activa: <%ChangeCtrlWindowForward>
-FullSizeGuide,1,Guide_ItemRecycle_01,Ventana activa: <%ChangeCtrlWindowForward>    Eliminar todos los iconos nuevos: <%NextTabDetails>
+FullSizeGuide,1,Guide_ItemRecycle_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar ventana activa: <%ChangeCtrlWindowForward> Eliminar todos los iconos nuevos: <%NextTabDetails>
 FullSizeGuide,1,Guide_AlwaysLockon_01,Bloqueo:
 FullSizeGuide,1,Guide_AlwaysLockon_02,<%LockOn>
 FullSizeGuide,1,Guide_AlwaysLockon_03,Mantenga presionado <%LockOn>
@@ -4876,8 +4876,8 @@ FullSizeGuide,1,Guide_AlwaysDash_02,Mantenga presionado<%Avoid><br> mientras se 
 FullSizeGuide,1,Guide_ItemRecycle_02,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo:<%NextWidget>Cambiar ventana activa: <%ChangeCtrlWindowForward>
 FullSizeGuide,1,Guide_MySpace_01,Confirmar:<%Decide>Cancelar:<%Cancel>Mover elemento activo:<%NextWidget>Agregar a/Editar favoritos: <%NextTabDetails>
 FullSizeGuide,1,Guide_Event_01,Control de cámara: <swguidetype EventCamera>
-FullSizeGuide,1,Guide_CoordCatalog_01,Cambiar ventana activa:<%ChangeCtrlWindowForward>Submenú: <%Function>
-FullSizeGuide,1,Guid_LaboItemDetail,Ventana activa:<%ChangeCtrlWindowForward>Pestaña siguiente en la ventana Detalles: <%NextTabDetails>
+FullSizeGuide,1,Guide_CoordCatalog_01,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar ventana activa: <%ChangeCtrlWindowForward> Submenú: <%Function>
+FullSizeGuide,1,Guid_LaboItemDetail,Confirmar: <%Decide> Cancelar: <%Cancel> Mover elemento activo: <%NextWidget> Cambiar ventana activa: <%ChangeCtrlWindowForward> Siguiente pestaña en la ventana Detalles: <%NextTabDetails>
 Substitute,0,Substitute_Idle_0,標準
 Substitute,0,Substitute_Idle_1,シンプル
 Substitute,0,Substitute_Idle_2,シンプル2
