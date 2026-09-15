@@ -164,6 +164,25 @@
             padding: 0 4px;
         }
 
+        .chars-toggle select {
+            height: 28px;
+            max-width: 168px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+            background: var(--bg-primary, #0d1117);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 0 6px;
+            cursor: pointer;
+        }
+
+        .chars-toggle select:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
         .result-layer-badge {
             display: inline-block;
             font-size: 11px;
@@ -771,6 +790,14 @@
             <input type="checkbox" id="diffSearch">
             <span>Brecha de caracteres</span>
         </label>
+        <label class="deep-toggle chars-toggle" id="diffDirToggle" style="display: none;" title="Dirección de la diferencia: Raw más corto, Raw más largo, o cualquiera">
+            <span>Comparar</span>
+            <select id="diffDir" disabled>
+                <option value="raw-shorter">Raw &lt; Español</option>
+                <option value="raw-longer">Raw &gt; Español</option>
+                <option value="any" selected>Cualquiera</option>
+            </select>
+        </label>
         <label class="deep-toggle chars-toggle" id="diffCharsToggle" style="display: none;" title="Diferencia mínima de caracteres entre inglés y español (ej: 40 o 50 caracteres de brecha)">
             <span>Dif. mín.</span>
             <input type="number" id="diffChars" min="10" max="1000" value="40" step="5">
@@ -799,8 +826,14 @@
         </span>
         <span class="deep-hint" id="diffHint" style="display: none;">
             Compara <strong>Inglés (Raw)</strong> vs <strong>Español (Main)</strong> del mismo archivo y clave (group&nbsp;1).
-            Encuentra líneas con brechas abismales de longitud (cortadas, alucinadas o errores de IA).
-            Ordenadas de <em>mayor a menor brecha</em>. Deja la caja vacía para listar todas o escribe para filtrar.
+            La diferencia mínima determina cuántos caracteres deben separar ambos textos.
+            Usa la dirección para buscar cuando Raw sea más corto, Raw sea más largo o en cualquier dirección.
+            Ordenadas de <em>mayor a menor brecha</em>.
+            <br>
+            <strong>Raw &lt; Español:</strong> busca cuando el español tiene más caracteres.
+            <strong>Raw &gt; Español:</strong> busca cuando el Raw tiene más caracteres.
+            <strong>Cualquiera:</strong> busca diferencias en ambas direcciones.
+            Deja la caja vacía para listar todas o escribe para filtrar.
         </span>
         <button type="button" id="btnManageExcluded" class="deep-toggle" style="display: none; border-color: rgba(248, 81, 73, 0.4); color: #f85149;" title="Ver y gestionar las líneas excluidas de la búsqueda">
             <span>🚫 <span id="btnExcludedText">0 excluidas</span></span>
@@ -916,6 +949,8 @@
         const diffHint = document.getElementById('diffHint');
         const diffChars = document.getElementById('diffChars');
         const diffCharsToggle = document.getElementById('diffCharsToggle');
+        const diffDir = document.getElementById('diffDir');
+        const diffDirToggle = document.getElementById('diffDirToggle');
         const btnManageExcluded = document.getElementById('btnManageExcluded');
         const btnExcludedText = document.getElementById('btnExcludedText');
         const excludeModal = document.getElementById('excludeModal');
@@ -1301,6 +1336,8 @@
             diffHint.style.display = 'none';
             charsToggle.style.display = 'none';
             diffCharsToggle.style.display = 'none';
+            diffDirToggle.style.display = 'none';
+            diffDir.disabled = true;
             searchInput.disabled = false;
 
             if (corruptSearch.checked) {
@@ -1313,6 +1350,8 @@
             } else if (diffSearch.checked) {
                 searchInput.placeholder = 'Opcional: filtra por texto, ID o archivo · ordenado por mayor brecha';
                 diffHint.style.display = 'block';
+                diffDirToggle.style.display = 'inline-flex';
+                diffDir.disabled = false;
                 diffCharsToggle.style.display = 'inline-flex';
             } else if (fileSearch.checked) {
                 searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
@@ -1420,6 +1459,10 @@
             if (diffSearch.checked) scheduleSearch(true);
         });
 
+        diffDir.addEventListener('change', () => {
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+
         searchInput.addEventListener('input', () => scheduleSearch(true));
 
         async function performSearch(query, page = 1) {
@@ -1439,6 +1482,7 @@
             let diffCharsVal = parseInt(diffChars.value, 10);
             if (Number.isNaN(diffCharsVal)) diffCharsVal = 40;
             diffCharsVal = Math.max(5, Math.min(1000, diffCharsVal));
+            const diffCompare = (diffDir.value || 'any');
             lastQuery = query;
             lastDeep = deepSearch.checked;
             currentPage = page;
@@ -1459,6 +1503,8 @@
                     min_chars: String(chars),
                     diff_chars: String(diffCharsVal),
                     min_diff: String(diffCharsVal),
+                    diff_compare: diffCompare,
+                    compare: diffCompare,
                     scope: currentScope,
                     page: String(page),
                     per_page: String(PER_PAGE),
@@ -1597,7 +1643,7 @@
                     : equalMode
                     ? "No hay pares MAIN=RAW con texto idéntico (group&nbsp;1) y esa longitud mínima. Baja <strong>Mín. chars</strong> o vacía el buscador para listar todos."
                     : diffMode
-                    ? "No se encontraron líneas con una diferencia de caracteres mayor o igual a " + (data.diff_chars || 40) + ". Prueba a reducir <strong>Dif. mín.</strong> o vaciar el texto de búsqueda."
+                    ? "No se encontraron líneas con una diferencia de caracteres mayor o igual a " + (data.diff_chars || 40) + (data.diff_compare && data.diff_compare !== "any" ? " en la dirección seleccionada" : "") + ". Prueba a reducir <strong>Dif. mín.</strong>, cambiar <strong>Comparar</strong> o vaciar el texto de búsqueda."
                     : fileMode
                     ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
                     : deep
@@ -1619,7 +1665,7 @@
                 : equalMode
                 ? ` · main=raw idénticas${minCharsLabel}${pairLabel}`
                 : diffMode
-                ? ` · brecha EN vs ES (dif≥${data.diff_chars || 40} chars)`
+                ? ` · brecha EN vs ES${({ "raw-shorter": " · Raw < Español", "raw-longer": " · Raw > Español", any: "" }[data.diff_compare] || "")} (dif≥${data.diff_chars || 40} chars)`
                 : fileMode
                 ? " · por archivo"
                 : (deep ? " · avanzada" : "");
