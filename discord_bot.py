@@ -981,6 +981,38 @@ async def web_api_search(request):
         diff_min_chars = 40
     diff_min_chars = max(5, min(2000, diff_min_chars))
 
+    # Dirección de la brecha (solo filtra; NO cambia char_diff ni el orden).
+    # raw-shorter = Raw < Español, raw-longer = Raw > Español, any = comportamiento actual.
+    diff_compare_raw = (
+        get_param("diff_compare")
+        or get_param("compare")
+        or get_param("diff_direction")
+        or get_param("direction")
+        or "any"
+    ).strip().lower().replace(" ", "-").replace("_", "-")
+    if diff_compare_raw in (
+        "raw-shorter",
+        "raw<es",
+        "raw<español",
+        "raw<espanol",
+        "shorter",
+        "es-longer",
+        "main-longer",
+    ):
+        diff_compare = "raw-shorter"
+    elif diff_compare_raw in (
+        "raw-longer",
+        "raw>es",
+        "raw>español",
+        "raw>espanol",
+        "longer",
+        "es-shorter",
+        "main-shorter",
+    ):
+        diff_compare = "raw-longer"
+    else:
+        diff_compare = "any"
+
     # scope=all|classic|ng  (default: all = Classic + NGS)
     scope_raw = (get_param("scope") or "all").strip().lower()
     if scope_raw in ("classic", "clasic", "c", "win32"):
@@ -1083,6 +1115,7 @@ async def web_api_search(request):
         "brecha": diff_only,
         "diff_chars": diff_min_chars,
         "min_diff": diff_min_chars,
+        "diff_compare": diff_compare,
         "rare": rare_only,
         "corrupt": rare_only,
         "scope": scope,
@@ -1294,6 +1327,11 @@ async def web_api_search(request):
             if char_diff < diff_min_chars:
                 continue
 
+            if diff_compare == "raw-shorter" and not (len_raw < len_main):
+                continue
+            if diff_compare == "raw-longer" and not (len_raw > len_main):
+                continue
+
             # Filtro opcional de búsqueda si el usuario escribió algo
             if query_norm_search:
                 match_query = (
@@ -1379,6 +1417,7 @@ async def web_api_search(request):
             "brecha": True,
             "diff_chars": diff_min_chars,
             "min_diff": diff_min_chars,
+            "diff_compare": diff_compare,
             "scope": scope,
             "page": page,
             "per_page": per_page,
