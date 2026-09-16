@@ -20,6 +20,9 @@ import pso2_anim_viewer
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "rcosven/pso2clasic_")
 GITHUB_BASE_BRANCH = os.getenv("GITHUB_BASE_BRANCH", "main")
+# Un solo PR abierto para el Traductor Visual → un solo deploy en Railway al mergear.
+GITHUB_LOTE_BRANCH = os.getenv("GITHUB_LOTE_BRANCH", "translation-lote")
+GITHUB_LOTE_PR_TITLE = "📝 Sugerencias de traducción (lote)"
 
 # URL pública del Traductor Visual (sin barra final).
 # En Railway: PUBLIC_URL=https://pso2clasic.remnoirel.com
@@ -485,83 +488,173 @@ def obtener_contexto_csv(file_path: str):
         
     return resultado_completo
 
+def _github_json(res):
+    try:
+        return res.json()
+    except Exception:
+        return {}
+
+
+def _find_lote_pr(base_url: str, headers: dict):
+    """PR abierto cuyo head es la rama lote. Devuelve (pr|None, error|None)."""
+    owner = GITHUB_REPO.split("/")[0]
+    res = requests.get(
+        f"{base_url}/pulls",
+        headers=headers,
+        params={
+            "state": "open",
+            "head": f"{owner}:{GITHUB_LOTE_BRANCH}",
+            "base": GITHUB_BASE_BRANCH,
+            "per_page": 5,
+        },
+        timeout=20,
+    )
+    if res.status_code != 200:
+        return None, f"Error buscando PR lote: {res.status_code} {res.text[:200]}"
+    prs = res.json() or []
+    return (prs[0] if prs else None), None
+
+
+def _ensure_lote_branch(base_url: str, headers: dict, reset: bool):
+    """
+    Crea translation-lote desde main.
+    Si reset=True (no hay PR abierto), la apunta de nuevo a main para no arrastrar un lote ya mergeado.
+    """
+    res_main = requests.get(
+        f"{base_url}/git/ref/heads/{GITHUB_BASE_BRANCH}",
+        headers=headers,
+        timeout=20,
+    )
+    if res_main.status_code != 200:
+        return None, f"Error al obtener rama base '{GITHUB_BASE_BRANCH}': {res_main.text[:200]}"
+    main_sha = res_main.json()["object"]["sha"]
+
+    res = requests.get(
+        f"{base_url}/git/ref/heads/{GITHUB_LOTE_BRANCH}",
+        headers=headers,
+        timeout=20,
+    )
+    if res.status_code == 200:
+        if reset:
+            res_reset = requests.patch(
+                f"{base_url}/git/refs/heads/{GITHUB_LOTE_BRANCH}",
+                headers=headers,
+                json={"sha": main_sha, "force": True},
+                timeout=20,
+            )
+            if res_reset.status_code not in (200, 201):
+                return None, f"Error al resetear '{GITHUB_LOTE_BRANCH}': {res_reset.text[:200]}"
+        return main_sha, None
+
+    res_create = requests.post(
+        f"{base_url}/git/refs",
+        headers=headers,
+        json={"ref": f"refs/heads/{GITHUB_LOTE_BRANCH}", "sha": main_sha},
+        timeout=20,
+    )
+    if res_create.status_code not in (200, 201):
+        return None, f"Error al crear rama '{GITHUB_LOTE_BRANCH}': {res_create.text[:200]}"
+    return main_sha, None
+
+
 def crear_pull_request_traduccion(ruta_archivo_local: str, ruta_archivo_repo: str, row_id: str, usuario_discord: str):
     """
-    Crea una rama temporal a partir de la rama base, sube el archivo modificado y genera un Pull Request.
+    Acumula la sugerencia en UN solo PR (rama translation-lote).
+    Así Railway solo despliega cuando se mergea ese lote, no en cada guardado.
     """
     if not GITHUB_TOKEN:
         return None, "GITHUB_TOKEN no está configurado en las variables de entorno."
 
     base_url = f"https://api.github.com/repos/{GITHUB_REPO}"
-    nombre_branch_seguro = "".join(c if c.isalnum() or c in "-_" else "_" for c in row_id)[:30]
-    nombre_rama = f"translation-{nombre_branch_seguro}-{int(time.time())}"
     headers_api = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json"
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
     }
-    
-    # 1. Obtener SHA de la rama base
-    res = requests.get(f"{base_url}/git/ref/heads/{GITHUB_BASE_BRANCH}", headers=headers_api)
-    if res.status_code != 200:
-        return None, f"Error al obtener rama base '{GITHUB_BASE_BRANCH}': {res.text}"
-    base_sha = res.json()["object"]["sha"]
+    ruta_archivo_repo_url = (ruta_archivo_repo or "").replace("\\", "/")
 
-    # 2. Crear rama temporal
-    payload_ref = {
-        "ref": f"refs/heads/{nombre_rama}",
-        "sha": base_sha
-    }
-    res = requests.post(f"{base_url}/git/refs", headers=headers_api, json=payload_ref)
-    if res.status_code != 201:
-        return None, f"Error al crear rama temporal: {res.text}"
+    lote_pr, err = _find_lote_pr(base_url, headers_api)
+    if err:
+        return None, err
 
-    # 3. Obtener SHA del archivo original en el repo (para poder actualizarlo)
-    res = requests.get(f"{base_url}/contents/{ruta_archivo_repo}?ref={GITHUB_BASE_BRANCH}", headers=headers_api)
-    file_sha = None
-    if res.status_code == 200:
-        file_sha = res.json()["sha"]
+    _, err = _ensure_lote_branch(base_url, headers_api, reset=(lote_pr is None))
+    if err:
+        return None, err
 
-    # 4. Codificar archivo en Base64
     try:
         with open(ruta_archivo_local, "rb") as f:
             content_b64 = base64.b64encode(f.read()).decode("utf-8")
     except Exception as e:
         return None, f"Error al leer archivo local: {e}"
 
-    # 5. Subir el cambio a la rama temporal
-    payload_content = {
-        "message": f"Traduccion sugerida por {usuario_discord} para ID: {row_id}",
-        "content": content_b64,
-        "branch": nombre_rama
-    }
-    if file_sha:
-        payload_content["sha"] = file_sha
+    file_sha = None
+    res_file = requests.get(
+        f"{base_url}/contents/{ruta_archivo_repo_url}",
+        headers=headers_api,
+        params={"ref": GITHUB_LOTE_BRANCH},
+        timeout=20,
+    )
+    if res_file.status_code == 200:
+        file_sha = res_file.json().get("sha")
 
-    # Normalizar ruta del archivo para URL
-    ruta_archivo_repo_url = ruta_archivo_repo.replace("\\", "/")
-    res = requests.put(f"{base_url}/contents/{ruta_archivo_repo_url}", headers=headers_api, json=payload_content)
-    if res.status_code not in [200, 201]:
-        return None, f"Error al actualizar archivo en GitHub: {res.text}"
+    last_err = "Error al subir el archivo"
+    for attempt in range(1, 4):
+        payload_content = {
+            "message": f"Traduccion sugerida por {usuario_discord} para ID: {row_id}",
+            "content": content_b64,
+            "branch": GITHUB_LOTE_BRANCH,
+        }
+        if file_sha:
+            payload_content["sha"] = file_sha
+        res = requests.put(
+            f"{base_url}/contents/{ruta_archivo_repo_url}",
+            headers=headers_api,
+            json=payload_content,
+            timeout=30,
+        )
+        if res.status_code in (200, 201):
+            break
+        if res.status_code == 409 and attempt < 3:
+            res_retry = requests.get(
+                f"{base_url}/contents/{ruta_archivo_repo_url}",
+                headers=headers_api,
+                params={"ref": GITHUB_LOTE_BRANCH},
+                timeout=20,
+            )
+            if res_retry.status_code == 200:
+                file_sha = res_retry.json().get("sha")
+            time.sleep(0.8 * attempt)
+            continue
+        last_err = f"Error al actualizar archivo en GitHub: {res.text[:300]}"
+        return None, last_err
+    else:
+        return None, last_err
 
-    # 6. Crear el Pull Request (cuenta del bot/token; el traductor no necesita GitHub)
+    if lote_pr:
+        return lote_pr.get("html_url"), None
+
     payload_pr = {
-        "title": f"📝 Sugerencia: {row_id} por {usuario_discord}",
-        "head": nombre_rama,
+        "title": GITHUB_LOTE_PR_TITLE,
+        "head": GITHUB_LOTE_BRANCH,
         "base": GITHUB_BASE_BRANCH,
         "body": (
-            f"## Sugerencia de traducción (sin cuenta GitHub del autor)\n\n"
-            f"- **Autor (nick):** `{usuario_discord}`\n"
-            f"- **ID / lote:** `{row_id}`\n"
-            f"- **Archivo:** `{ruta_archivo_repo}`\n\n"
-            f"Esta PR la abrió el bot del proyecto de forma anónima para el editor. "
-            f"**Solo contribuidores del repositorio deben hacer merge** tras revisar los cambios.\n"
-        )
+            "## Lote de sugerencias de traducción\n\n"
+            "El Traductor Visual acumula **todas** las sugerencias en este único PR "
+            "para que Railway despliegue **una sola vez** al hacer merge.\n\n"
+            f"- Última: `{row_id}` por `{usuario_discord}`\n"
+            f"- Archivo: `{ruta_archivo_repo_url}`\n\n"
+            "Mergea este PR cuando quieras publicar el lote "
+            "(Discord: `/merge_all`, o el `.bat` de escritorio).\n"
+        ),
     }
-    res = requests.post(f"{base_url}/pulls", headers=headers_api, json=payload_pr)
+    res = requests.post(f"{base_url}/pulls", headers=headers_api, json=payload_pr, timeout=20)
     if res.status_code == 201:
         return res.json()["html_url"], None
-    else:
-        return None, f"Error al crear Pull Request: {res.text}"
+    if res.status_code == 422:
+        lote_pr, err = _find_lote_pr(base_url, headers_api)
+        if lote_pr:
+            return lote_pr.get("html_url"), None
+    return None, f"Error al crear Pull Request: {res.text[:300]}"
 
 
 def _github_headers():
@@ -768,7 +861,10 @@ class DescargarCSVView(discord.ui.View):
         else:
             if self.filepath in self.bot.modified_files:
                 self.bot.modified_files.remove(self.filepath)
-            await interaction.followup.send(f"✅ **Pull Request creado exitosamente:**\n🔗 <{pr_url}>", ephemeral=True)
+            await interaction.followup.send(
+                f"✅ **Añadido al PR lote (un solo deploy al mergear):**\n🔗 <{pr_url}>",
+                ephemeral=True,
+            )
 
 class DescargarDropdown(discord.ui.Select):
     def __init__(self, bot_instance, files: list):
@@ -1865,7 +1961,7 @@ async def web_api_github(request):
                     f"🚀 **¡Nueva sugerencia anónima (sin cuenta GitHub)!**\n"
                     f"**Autor (nick):** `{author_display}`\n"
                     f"**Archivo:** `{filename}`\n"
-                    f"**Solo contribuidores pueden hacer merge:** {pr_url}"
+                    f"**Acumulada en el PR lote (1 deploy al mergear):** {pr_url}"
                 )
         except Exception as e:
             print(f"Error al enviar notificación de Discord: {e}")
@@ -2115,7 +2211,9 @@ async def listar_prs(interaction: discord.Interaction):
         lineas.append(f"• **#{num}** — {title} *(by {user})*")
     if len(prs) > 25:
         lineas.append(f"\n*... y {len(prs) - 25} más.*")
-    lineas.append("\n💡 Usa `/merge_all` para mergear todos (solo admins).")
+    lineas.append(
+        "\n💡 Usa `/merge_all` para mergear el **PR lote** (1 deploy en Railway)."
+    )
 
     msg = "\n".join(lineas)
     if len(msg) > 2000:
@@ -2123,9 +2221,22 @@ async def listar_prs(interaction: discord.Interaction):
     await interaction.followup.send(msg, ephemeral=True)
 
 
+def _head_ref(pr: dict) -> str:
+    return ((pr.get("head") or {}).get("ref") or "").strip()
+
+
+def _es_pr_lote(pr: dict) -> bool:
+    return _head_ref(pr) == GITHUB_LOTE_BRANCH
+
+
+def _es_pr_traduccion_suelta(pr: dict) -> bool:
+    ref = _head_ref(pr)
+    return ref.startswith("translation-") and ref != GITHUB_LOTE_BRANCH
+
+
 @bot.tree.command(
     name="merge_all",
-    description="Hace merge de TODOS los Pull Requests abiertos (solo administradores)",
+    description="Mergea el PR lote de traducciones (un solo deploy en Railway)",
 )
 @app_commands.describe(
     metodo="Método de merge en GitHub",
@@ -2144,8 +2255,8 @@ async def merge_all(
     dry_run: bool = False,
 ):
     """
-    Lista PRs abiertos y los mergea uno a uno (del más antiguo al más nuevo).
-    Requiere GITHUB_TOKEN con permiso de escritura en el repo.
+    Mergea SOLO el PR lote (translation-lote) para disparar un único deploy en Railway.
+    No mergea PRs individuales translation-WebUpdate-* (eso inundaba Railway).
     """
     if not puede_usar_merge(interaction):
         await interaction.response.send_message(
@@ -2182,98 +2293,99 @@ async def merge_all(
         )
         return
 
+    lote_prs = [p for p in prs if _es_pr_lote(p)]
+    sueltos = [p for p in prs if _es_pr_traduccion_suelta(p)]
+    otros = [p for p in prs if not _es_pr_lote(p) and not _es_pr_traduccion_suelta(p)]
+
     if dry_run:
-        preview = "\n".join(
-            f"• #{pr['number']} — {(pr.get('title') or '')[:60]}" for pr in prs[:30]
-        )
-        extra = f"\n*... y {len(prs) - 30} más.*" if len(prs) > 30 else ""
+        lineas = [
+            f"🔎 **Dry-run** `{merge_method}` — Railway solo se toca con el **lote**:",
+        ]
+        if lote_prs:
+            lineas.append(
+                f"• Mergearía lote **#{lote_prs[0]['number']}** — {(lote_prs[0].get('title') or '')[:60]}"
+            )
+        else:
+            lineas.append("• No hay PR lote abierto (`translation-lote`).")
+        if sueltos:
+            lineas.append(
+                f"• Ignoraría **{len(sueltos)}** PR(s) sueltos `translation-*` (no se mergean a main)."
+            )
+        if otros:
+            lineas.append(
+                f"• PRs que no son traducción (no se tocan): "
+                + ", ".join(f"#{p['number']}" for p in otros[:10])
+            )
+        await interaction.followup.send("\n".join(lineas))
+        return
+
+    if not lote_prs:
+        extra = ""
+        if sueltos:
+            extra = (
+                f"\nHay **{len(sueltos)}** PR(s) sueltos `translation-WebUpdate-*`. "
+                "Combínalos con `merge-prs-pso2clasic.bat` (ahora genera un solo lote) "
+                "o espera a que el bot los acumule en `translation-lote`."
+            )
+        if otros:
+            extra += (
+                f"\nPRs que no son traducción: "
+                + ", ".join(f"#{p['number']}" for p in otros[:10])
+            )
         await interaction.followup.send(
-            f"🔎 **Dry-run:** se mergearían **{len(prs)}** PR(s) con método `{merge_method}`:\n{preview}{extra}"
+            "ℹ️ No hay **PR lote** abierto. El traductor ahora acumula sugerencias "
+            f"en `{GITHUB_LOTE_BRANCH}` en lugar de un PR por guardado.{extra}"
         )
         return
 
+    pr = lote_prs[0]
+    num = pr["number"]
+    title = (pr.get("title") or f"PR #{num}")[:70]
     status_msg = await interaction.followup.send(
-        f"⏳ Mergeando **{len(prs)}** PR(s) con método `{merge_method}`...\n"
-        f"Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`\n"
-        f"Procesando: `#{prs[0]['number']}`..."
+        f"⏳ Mergeando **PR lote #{num}** (`{merge_method}`) — 1 deploy en Railway...\n"
+        f"{title}"
     )
 
-    ok_list = []
-    fail_list = []
-
-    async def _update_status(i: int, current_num: int | None = None, done: bool = False):
-        if done:
-            return
-        cur = f"\n🔄 Ahora: `#{current_num}`" if current_num else ""
-        try:
-            await status_msg.edit(
-                content=(
-                    f"⏳ Progreso: `{i}/{len(prs)}`{cur}\n"
-                    f"✅ OK: {len(ok_list)} | ❌ Fallidos: {len(fail_list)}"
-                )
-            )
-        except Exception as e:
-            logger.warning(f"[merge_all] No se pudo editar progreso: {e}")
-
-    for i, pr in enumerate(prs, start=1):
-        num = pr["number"]
-        title = (pr.get("title") or f"PR #{num}")[:50]
-
-        await _update_status(i - 1, current_num=num)
-
-        def _do_merge(n=num, t=title):
-            return merge_pull_request(
-                n,
-                merge_method=merge_method,
-                commit_title=f"{t} (#{n})",
-            )
-
-        try:
-            # Tope duro por PR: evita que un hang de red deje el comando pegado
-            success, detail = await asyncio.wait_for(
-                asyncio.to_thread(_do_merge),
-                timeout=70,
-            )
-        except asyncio.TimeoutError:
-            success, detail = False, "Timeout global 70s en este PR"
-        except Exception as e:
-            success, detail = False, f"Excepción: {type(e).__name__}: {e}"
-
-        if success:
-            ok_list.append(f"#{num}")
-            logger.info(f"[merge_all] OK #{num}: {detail}")
-        else:
-            fail_list.append(f"#{num}: {detail}")
-            logger.warning(f"[merge_all] FAIL #{num}: {detail}")
-
-        await _update_status(i)
-
-        # Pausa un poco más generosa: menos rate-limit de GitHub tras muchos merges
-        await asyncio.sleep(1.0)
-
-    resumen = [
-        f"## Resultado `/merge_all`",
-        f"- Repo: `{GITHUB_REPO}` → `{GITHUB_BASE_BRANCH}`",
-        f"- Método: `{merge_method}`",
-        f"- ✅ Mergeados: **{len(ok_list)}**",
-        f"- ❌ Fallidos: **{len(fail_list)}**",
-    ]
-    if ok_list:
-        resumen.append(
-            f"\n**OK:** {', '.join(ok_list[:40])}" + ("…" if len(ok_list) > 40 else "")
+    def _do_merge():
+        return merge_pull_request(
+            num,
+            merge_method=merge_method,
+            commit_title=f"{title} (#{num})",
         )
-    if fail_list:
-        fails_txt = "\n".join(f"• {f}" for f in fail_list[:15])
-        resumen.append(f"\n**Fallos:**\n{fails_txt}")
-        if len(fail_list) > 15:
-            resumen.append(f"*... y {len(fail_list) - 15} más.*")
-    resumen.append(
-        "\n💡 Si se cortó a mitad, vuelve a ejecutar `/merge_all` "
-        "(solo intentará los que sigan abiertos).\n"
-        "Tras el deploy de `main`, usa `/recargar` en el bot."
-    )
 
-    final = "\n".join(resumen)
+    try:
+        success, detail = await asyncio.wait_for(
+            asyncio.to_thread(_do_merge),
+            timeout=70,
+        )
+    except asyncio.TimeoutError:
+        success, detail = False, "Timeout global 70s en el PR lote"
+    except Exception as e:
+        success, detail = False, f"Excepción: {type(e).__name__}: {e}"
+
+    if success:
+        extra_sueltos = ""
+        if sueltos:
+            extra_sueltos = (
+                f"\n⚠️ Quedan **{len(sueltos)}** PR(s) sueltos `translation-*` "
+                "(no mergeados, para no inundar Railway). "
+                "Ciérralos o combínalos con el `.bat`."
+            )
+        final = (
+            f"## Resultado `/merge_all`\n"
+            f"- ✅ Lote **#{num}** mergeado: {detail}\n"
+            f"- Railway: **un** deploy desde `main`.\n"
+            f"- Tras el deploy, usa `/recargar` si el índice no se actualiza.{extra_sueltos}"
+        )
+        logger.info(f"[merge_all] OK lote #{num}: {detail}")
+    else:
+        final = (
+            f"## Resultado `/merge_all`\n"
+            f"- ❌ No se pudo mergear el lote **#{num}**: {detail}\n"
+            f"- Revisa conflictos en GitHub y vuelve a intentar."
+        )
+        logger.warning(f"[merge_all] FAIL lote #{num}: {detail}")
+
     if len(final) > 2000:
         final = final[:1990] + "\n..."
     try:
