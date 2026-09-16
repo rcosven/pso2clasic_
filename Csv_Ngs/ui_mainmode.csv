@@ -3412,7 +3412,7 @@ StatusEffect,1,RuinBuff_StarlessBusterEnd,El efecto de apoyo a la misión<yellow
 StatusEffect,1,RuinBuff_AlterBuster,Inflige mayor daño a los ALTERS
 StatusEffect,1,RuinBuff_AlterBusterEnd,El efecto de apoyo a la misión<yellow>inflige daño aumentado a ALTERS<c>ha finalizado.
 StatusEffect,1,RuinBuff_GodBuster,Inflige mayor daño a los DOLLS
-StatusEffect,1,RuinBuff_GodBusterEnd,El efecto de apoyo a la misión<yellow>inflige daño aumentado a las MUÑECAS<c>ha finalizado.
+StatusEffect,1,RuinBuff_GodBusterEnd,El efecto de apoyo a la misión<yellow>inflige daño aumentado a los DOLLS<c>ha finalizado.
 StatusEffect,1,Obj:MonolithPlayerBuff,Potencia +10%/Resistencia al daño aumentada +75%
 StatusEffect,1,RuinBuff_DropRareUp,Tasa de aparición rara +25 %
 StatusEffect,1,RuinBuff_DropRareUpEnd,El efecto de apoyo a la misión<yellow>Tasa de aparición rara +25 %<c>ha finalizado.
@@ -4371,9 +4371,9 @@ PlayerDeadMenu,1,ReturnTitle,REGRESO AL BARCO DE ENTRADA
 PlayerDeadMenu,1,ReturnMessage,Estás a punto de regresar al barco Gateway.<br>¿Está seguro de que desea continuar?
 PlayerDeadMenu,1,ReturnMessage2,"Estás a punto de regresar al barco Gateway. ¿Está<br>seguro de que desea continuar?<br><br><red>Nota: Una vez que regreses al barco Gateway, podrás<br>ya no podrás recibir recompensas.<c>"
 PlayerDeadMenu,1,ScapeDollBuyTitle,COMPRAR N-SCAPE DOLL
-PlayerDeadMenu,1,ScapeDollBuyMessage,<pict Arcscash><pict 4space><c ff4f3f>AC Pago requerido<c> Estás a punto de comprar una<br>muñeca N-Scape y revivir. ¿Está seguro de que desea continuar?
+PlayerDeadMenu,1,ScapeDollBuyMessage,<pict Arcscash><pict 4space><c ff4f3f>AC Pago requerido<c> Estás a punto de comprar una<br>N-Scape Doll y revivir. ¿Está seguro de que desea continuar?
 PlayerDeadMenu,1,ScapeDollUseTitle,USAR N-SCAPE DOLL
-PlayerDeadMenu,1,ScapeDollUseMessage,<pict Arcscash><pict 4space><c 5fdf00>Usar artículo comprado anteriormente<c> Estás<br>a punto de utilizar un comprado previamente<br>Muñeca N-Scape para revivir. ¿Está seguro<br>de que desea continuar?<br><br>(Tienes:$(0))
+PlayerDeadMenu,1,ScapeDollUseMessage,<pict Arcscash><pict 4space><c 5fdf00>Usar artículo comprado anteriormente<c> Estás<br>a punto de utilizar un comprado previamente<br>N-Scape Doll  para revivir. ¿Está seguro<br>de que desea continuar?<br><br>(Tienes:$(0))
 PlayerDeadMenu,1,ReturnFailure,Actualmente no puedes regresar al barco Gateway.
 PlayerDeadMenu,1,Failure,Retirarse de la misión
 PlayerDeadMenu,1,FailureMessage,Estás a punto de retirarte de tu misión actual.<br>¿Está seguro de que desea continuar?
@@ -4384,7 +4384,7 @@ PlayerDeadMenu,1,UseHalf,Usa N-Half Scape Doll y revive
 PlayerDeadMenu,1,HalfDollUseTitle,USAR N-HALF SCAPE DOLL
 PlayerDeadMenu,1,HalfDollUseMessage,Estás a punto de usar un N-Half Scape Doll para<br>revivir. ¿Está seguro de que desea continuar?<br><br><yellow>Nota: Actualmente tienes $(1) N-Half Scape Doll<br>usos restantes. Puedes restablecer tus usos<br>restantes borrando o retirarse de la misión o<br>regresar a la ciudad.<c> (Actualmente tienes: $(0)<br>N-Half Scape Doll)
 PlayerDeadMenu,1,HalfDollNotRemainMessage,Actualmente no puedes revivir porque tienes $(1) N-Half<br>Scape Doll usa el resto.<br><br><yellow>Nota: actualmente tienes $(1) N-Half Scape Doll usos<br>restantes. Puedes restablecer tus usos restantes borrando o<br>retirarse de la misión o regresar a la ciudad.<c> (Actualmente<br>tienes: $(0) N-Half Scape Doll)
-PlayerDeadMenu,1,HalfDollNotHaveMessage,Actualmente no puedes revivir porque no tener una<br>muñeca N-Half Scape.<br><br><yellow>Nota: Actualmente tienes $(1) N-Half Scape Doll usos<br>restantes. Puedes restablecer tus usos restantes<br>borrando o retirarse de la misión o regresar a la<br>ciudad.<c> (Actualmente tienes: $(0) N-Half Scape Doll)
+PlayerDeadMenu,1,HalfDollNotHaveMessage,Actualmente no puedes revivir <br>porque no tienes N-Half Scape Doll<br><br><yellow>Nota: Actualmente tienes $(1) N-Half Scape Doll usos<br>restantes. Puedes restablecer tus usos restantes<br>borrando o retirarse de la misión o regresar a la<br>ciudad.<c> (Actualmente tienes: $(0) N-Half Scape Doll)
 PlayerDeadMenu,1,CanNowUseHalfDoll,Los usos restantes de tu N-Half Scape Doll se han restablecido.
 PlayerDeadMenu,1,Revive_count,Revivirás automáticamente en 10 segundos.
 PlayerDeadMenu,1,Revive_count_vita,Revivirás automáticamente en 10 segundos.
