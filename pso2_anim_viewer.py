@@ -2,7 +2,7 @@
 PSO2 Modding Tools Suite (SFW) hosted on pso2clasic.remnoirel.com.
 
 Tools featured:
-  1. PSO2 Animation Viewer (Pso2AnimViewer) - Portable 3D Viewer, Swapper & Mod Manager
+  1. PSO2 Animation Viewer (Pso2AnimViewer) - Portable 3D Viewer & Animation Swapper
   2. CMX Helper / Outfit Tool - Enables jackets & ornaments unsupported by costumes
   3. PSO2 Voice Modifier - Custom audio & voice swapper (MP3, OGG, WAV) for JP/Global
 
@@ -17,10 +17,12 @@ Routes:
   GET /Pso2AnimViewer/download/voice
   (plus lowercase aliases)
 
-Environment Variables for Dynamic Downloads (Configurable in Railway without git commits):
+Environment Variables for Dynamic Downloads & Media (Configurable in Railway):
   - DOWNLOAD_ANIM_VIEWER (or PSO2_DOWNLOAD_URL_FALLBACK)
   - DOWNLOAD_CMX_TOOL
   - DOWNLOAD_VOICE_TOOL
+  - VIDEO_ANIM_VIEWER
+  - VIDEO_VOICE_MODIFIER
 """
 from __future__ import annotations
 
@@ -49,23 +51,20 @@ DEFAULT_DOWNLOAD_ANIM = "https://mega.nz/file/00Jn3K5J#BLJ5kym1YrjA0qHfZaZGT1oAc
 DEFAULT_DOWNLOAD_CMX = "https://mega.nz/file/ohQwWCaC#WNd-TTOkT2jnJ2FrAF2EeixfVga_-xSNLiGz0W1onLM"
 DEFAULT_DOWNLOAD_VOICE = "https://mega.nz/file/J4YRmRbY#Ksk5NKEi524ibjwDqRObKwbldPpzYZP-EEOxXtZl0jo"
 
+# Permanent Catbox media links
+DEFAULT_VIDEO_ANIM = "https://files.catbox.moe/2qckjd.mp4"
+DEFAULT_VIDEO_VOICE = "https://files.catbox.moe/gyvvz1.mp4"
+IMG_CMX_1 = "https://files.catbox.moe/88eto9.png"
+IMG_CMX_2 = "https://files.catbox.moe/qizc35.png"
+IMG_VOICE_1 = "https://files.catbox.moe/wiptaj.png"
+IMG_VOICE_2 = "https://files.catbox.moe/7jxgik.png"
+
 PSO2_DISCORD_POST_URL = os.getenv(
     "PSO2_DISCORD_POST_URL",
     "https://discord.com/channels/1328102593532268696/1536856506295914626/1536875746847490138",
 )
 
-DOWNLOAD_LINK_RE = re.compile(
-    r"https?://(?:mega\.nz/\S+|files\.catbox\.moe/\S+|www\.mediafire\.com/\S+|mediafire\.com/\S+|drive\.google\.com/\S+)",
-    re.IGNORECASE,
-)
-
 HTML_PATH = Path(__file__).with_name("pso2_anim_viewer.html")
-
-DISCORD_ICON_SVG = (
-    '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">'
-    '<path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C1.536 7.729.932 10.999 1.22 14.227a.076.076 0 0 0 .028.053 20.113 20.113 0 0 0 6.096 3.084.075.075 0 0 0 .081-.027 14.16 14.16 0 0 0 1.226-1.99.076.076 0 0 0-.041-.105 13.09 13.09 0 0 1-1.93-0.92.078.078 0 0 1-.008-.127c.131-.098.261-.199.387-.302a.075.075 0 0 1 .077-.01c4.057 1.86 8.441 1.86 12.446 0a.075.075 0 0 1 .078.01c.126.103.256.204.387.302a.078.078 0 0 1-.006.127 12.616 12.616 0 0 1-1.931.92.076.076 0 0 0-.04.105 14.936 14.936 0 0 0 1.226 1.99.075.075 0 0 0 .08.027 20.083 20.083 0 0 0 6.096-3.084.077.077 0 0 0 .028-.053c.358-3.791-.568-7.031-2.427-9.83a.07.07 0 0 0-.033-.027ZM8.735 12.186a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 8.735 7.87a2.031 2.031 0 0 1 1.921 2.158A2.031 2.031 0 0 1 8.735 12.186Zm6.529 0a2.031 2.031 0 0 1-1.921-2.158A2.031 2.031 0 0 1 15.264 7.87A2.031 2.031 0 0 1 17.185 10.028A2.031 2.031 0 0 1 15.264 12.186Z"></path>'
-    "</svg>"
-)
 
 DOWNLOAD_COUNT_LOCK = asyncio.Lock()
 STATE = {
@@ -77,7 +76,6 @@ _bot = None
 
 
 def get_download_url_anim() -> str:
-    """Lee variable de entorno o fallback para Animation Viewer."""
     return (
         os.getenv("DOWNLOAD_ANIM_VIEWER")
         or os.getenv("PSO2_DOWNLOAD_URL_FALLBACK")
@@ -86,13 +84,19 @@ def get_download_url_anim() -> str:
 
 
 def get_download_url_cmx() -> str:
-    """Lee variable de entorno o fallback para CMX Helper."""
     return os.getenv("DOWNLOAD_CMX_TOOL") or DEFAULT_DOWNLOAD_CMX
 
 
 def get_download_url_voice() -> str:
-    """Lee variable de entorno o fallback para PSO2 Voice Modifier."""
     return os.getenv("DOWNLOAD_VOICE_TOOL") or DEFAULT_DOWNLOAD_VOICE
+
+
+def get_video_url_anim() -> str:
+    return os.getenv("VIDEO_ANIM_VIEWER") or DEFAULT_VIDEO_ANIM
+
+
+def get_video_url_voice() -> str:
+    return os.getenv("VIDEO_VOICE_MODIFIER") or DEFAULT_VIDEO_VOICE
 
 
 def setup(app: web.Application, bot) -> None:
@@ -117,10 +121,7 @@ def setup(app: web.Application, bot) -> None:
     for r in ("/Pso2AnimViewer/download/voice", "/pso2animviewer/download/voice"):
         app.router.add_get(r, download_handler_voice)
 
-    logger.info(
-        "PSO2 Modding Tools Suite montado en /Pso2AnimViewer "
-        f"(sin modal 18+; llave → {CATALOG_URL}/)"
-    )
+    logger.info("PSO2 Modding Tools Suite montado en /Pso2AnimViewer")
 
 
 async def cargar_contador_al_arrancar(bot) -> None:
@@ -131,7 +132,7 @@ async def cargar_contador_al_arrancar(bot) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Discord helpers (registro y contador de descargas)
+# Discord helpers
 # ---------------------------------------------------------------------------
 async def _obtener_canal_con_historial(channel_id):
     bot = _bot
@@ -317,113 +318,31 @@ async def registrar_descarga(app_name="Pso2AnimViewer", filename="Pso2AnimViewer
 
 
 # ---------------------------------------------------------------------------
-# Media (demos dinámicas de Discord)
-# ---------------------------------------------------------------------------
-async def _media_desde_catalogo():
-    url = f"{CATALOG_API_URL}/api/pso2animviewer-media"
-    try:
-        timeout = aiohttp.ClientTimeout(total=8)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            async with session.get(url) as resp:
-                if resp.status != 200:
-                    return None, None, None
-                data = await resp.json()
-                return (
-                    data.get("video_url"),
-                    data.get("download_url"),
-                    data.get("discord_post_url") or PSO2_DISCORD_POST_URL,
-                )
-    except Exception as e:
-        logger.warning(f"[Pso2AnimViewer] Media API catálogo: {e}")
-        return None, None, None
-
-
-async def resolver_media_pso2animviewer():
-    video_url = None
-    download_url = get_download_url_anim()
-    discord_post_url = PSO2_DISCORD_POST_URL
-
-    cat_video, cat_dl, cat_post = await _media_desde_catalogo()
-    if cat_video:
-        video_url = cat_video
-    if cat_post:
-        discord_post_url = cat_post
-    if video_url:
-        return video_url, download_url, discord_post_url
-
-    async def scan_channel(channel_id, limit=40):
-        nonlocal video_url
-        channel = await _obtener_canal_con_historial(channel_id)
-        if not channel:
-            return
-        try:
-            async for msg in channel.history(limit=limit, oldest_first=False):
-                for att in msg.attachments:
-                    name = att.filename.lower()
-                    is_video = (att.content_type and "video" in att.content_type) or name.endswith(
-                        (".mp4", ".webm", ".mov")
-                    )
-                    if is_video and not video_url:
-                        video_url = att.url
-                        break
-                if video_url:
-                    break
-        except Exception as e:
-            logger.warning(f"[Pso2AnimViewer] media scan {channel_id}: {e}")
-
-    await scan_channel(CANAL_DESCARGAS_PSO2_ID)
-    if not video_url:
-        await scan_channel(PSO2_POST_THREAD_ID)
-    return video_url, download_url, discord_post_url
-
-
-def _video_block(video_url, discord_post_url):
-    link = (
-        f'<a href="{discord_post_url}" target="_blank" rel="noopener noreferrer" class="btn-discord-link">'
-        f"{DISCORD_ICON_SVG} Abrir Publicación en Discord</a>"
-    )
-    # Video por defecto seguro en caso de que Discord no esté disponible
-    src = video_url or "https://cdn.discordapp.com/attachments/1536856506295914626/1536875746046382151/Pso2AnimViewer_0h4K8SNnIM.mp4"
-    return f"""
-    <div class="video-wrapper">
-        <video controls autoplay loop muted playsinline preload="metadata" referrerpolicy="no-referrer" class="guide-video">
-            <source src="{src}" type="video/mp4">
-            Tu navegador no soporta el tag de video HTML5.
-        </video>
-        <div style="margin-top: 15px; text-align: center;">{link}</div>
-    </div>
-    """
-
-
-# ---------------------------------------------------------------------------
 # Handlers HTTP
 # ---------------------------------------------------------------------------
 async def page_handler(request):
-    video_url, _download_url, discord_post_url = await resolver_media_pso2animviewer()
     try:
         html = HTML_PATH.read_text(encoding="utf-8")
     except Exception as e:
         return web.Response(text=f"Error al cargar Suite de Programas: {e}", status=500)
 
-    total_anim_dl = STATE.get("descargas_pso2animviewer", 0)
-
     html = (
-        html.replace("{{VIDEO_BLOCK}}", _video_block(video_url, discord_post_url))
+        html.replace("{{VIDEO_ANIM_SRC}}", get_video_url_anim())
+        .replace("{{VIDEO_VOICE_SRC}}", get_video_url_voice())
+        .replace("{{IMG_CMX_1}}", IMG_CMX_1)
+        .replace("{{IMG_CMX_2}}", IMG_CMX_2)
+        .replace("{{IMG_VOICE_1}}", IMG_VOICE_1)
+        .replace("{{IMG_VOICE_2}}", IMG_VOICE_2)
         .replace("{{DOWNLOAD_ANIM_HREF}}", "/Pso2AnimViewer/download/anim")
         .replace("{{DOWNLOAD_CMX_HREF}}", "/Pso2AnimViewer/download/cmx")
         .replace("{{DOWNLOAD_VOICE_HREF}}", "/Pso2AnimViewer/download/voice")
-        .replace("{{DOWNLOAD_ANIM_URL}}", get_download_url_anim())
-        .replace("{{DOWNLOAD_CMX_URL}}", get_download_url_cmx())
-        .replace("{{DOWNLOAD_VOICE_URL}}", get_download_url_voice())
-        .replace("{{TOTAL_ANIM_DOWNLOADS}}", str(total_anim_dl))
-        .replace("{{DISCORD_POST_URL}}", discord_post_url)
+        .replace("{{DISCORD_POST_URL}}", PSO2_DISCORD_POST_URL)
         .replace("{{CATALOG_URL}}", f"{CATALOG_URL}/")
     )
     return web.Response(text=html, content_type="text/html")
 
 
 async def download_handler_anim(request):
-    """Descarga de Animation Viewer: registra en Discord y redirige."""
     try:
         await registrar_descarga("Pso2AnimViewer", "Pso2AnimViewer.zip")
     except Exception as e:
@@ -433,7 +352,6 @@ async def download_handler_anim(request):
 
 
 async def download_handler_cmx(request):
-    """Descarga de CMX Helper Tool."""
     try:
         await registrar_descarga("CMX_Helper", "CMX_Helper_Tool.zip")
     except Exception as e:
@@ -443,7 +361,6 @@ async def download_handler_cmx(request):
 
 
 async def download_handler_voice(request):
-    """Descarga de PSO2 Voice Modifier."""
     try:
         await registrar_descarga("PSO2_Voice_Modifier", "PSO2_Voice_Modifier.zip")
     except Exception as e:
