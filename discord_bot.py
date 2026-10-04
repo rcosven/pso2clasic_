@@ -15,6 +15,7 @@ import asyncio
 import aiohttp
 from aiohttp import web
 import pso2_anim_viewer
+import db_manager
 
 # Configurar variables de GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -60,7 +61,8 @@ class BuscadorBot(commands.Bot):
         
         super().__init__(command_prefix="!", intents=intents)
         
-        # 2. Lista en memoria para búsquedas rápidas
+        # 2. Base de datos SQLite (ahorra ~1.8 GB de memoria RAM en Railway)
+        self.db = db_manager.DatabaseManager()
         self.index_datos = []
         # True cuando cargar_indices terminó (Railway healthcheck no debe esperar esto)
         self.index_ready = False
@@ -95,22 +97,22 @@ class BuscadorBot(commands.Bot):
         self.loop.create_task(self._sync_discord_commands_bg())
 
     async def _load_indices_bg(self):
-        """Carga CSV sin bloquear el puerto HTTP ni el login de Discord."""
+        """Carga índices SQLite sin bloquear el puerto HTTP ni el login de Discord."""
         if self.index_loading:
             return
         self.index_loading = True
         self.index_ready = False
         self.index_error = None
         try:
-            logger.info("Cargando índices CSV en segundo plano...")
-            await asyncio.to_thread(self.cargar_indices)
+            logger.info("Cargando / verificando base de datos SQLite en segundo plano...")
+            total = await asyncio.to_thread(self.db.build_database, self)
             self.index_ready = True
             logger.info(
-                f"Índices listos para la web. IDs: {len(self.index_datos)}"
+                f"Base de datos SQLite lista para la web. Total IDs principales: {total}"
             )
         except Exception as e:
             self.index_error = str(e)
-            logger.error(f"Error cargando índices en background: {e}")
+            logger.error(f"Error cargando base de datos SQLite en background: {e}")
         finally:
             self.index_loading = False
 
@@ -285,94 +287,10 @@ class BuscadorBot(commands.Bot):
         return (corpus, stem, section, group, row_id) in self.new_line_keys
 
     def cargar_indices(self):
-        """Lee los CSV locales y guarda los IDs y textos para búsquedas."""
-        self.index_datos.clear()
+        """Lee los CSV locales y actualiza la base de datos SQLite."""
         self.cargar_lineas_nuevas()
+        return self.db.build_database(self, force=True)
 
-        # Agrega aquí los nombres de las carpetas que contienen tus CSV
-        directorios_datos = ["Csv_Clasic", "Csv_Ngs", "Csv_Ngs_Raw", "Csv_Clasic_Raw"]
-        corrupt_count = 0
-        new_flag_count = 0
-
-        for dir_name in directorios_datos:
-            ruta = Path(dir_name)
-            if ruta.exists():
-                for archivo_csv in ruta.glob("*.csv"):
-                    try:
-                        # utf-8-sig previene errores de formato con Excel/GitHub
-                        with open(archivo_csv, 'r', encoding='utf-8-sig') as f:
-                            reader = csv.DictReader(f)
-                            for row in reader:
-                                if 'id' in row:
-                                    section = row.get('section', '') or ''
-                                    group = row.get('group', '') or ''
-                                    row_id = row.get('id', '') or ''
-                                    texto_original = row.get('text', '') or ''
-                                    texto_norm = self._norm_search(texto_original)
-                                    # Comando CSV: section,group,id[,text]
-                                    # Permite encontrar filas vacías o por clave (ej. Basic,1,Explanation)
-                                    cmd = f"{section},{group},{row_id}"
-                                    cmd_full = f"{cmd},{texto_original}"
-                                    # Basura UTF-16: solo tiene sentido marcarlo en group 1
-                                    # (traducción ES/EN). Group 0 es JP y daba falsos positivos.
-                                    is_g1 = str(group) == "1"
-                                    is_corrupt = (
-                                        self.is_utf16_swapped_corrupt(texto_original)
-                                        if is_g1
-                                        else False
-                                    )
-                                    is_rare = is_corrupt  # misma definición (solo group 1)
-                                    text_fixed = (
-                                        self.fix_utf16_swapped(texto_original) if is_corrupt else ""
-                                    )
-                                    if is_rare:
-                                        corrupt_count += 1
-                                    file_rel = f"{dir_name}/{archivo_csv.name}"
-                                    corpus = (
-                                        "classic" if dir_name.startswith("Csv_Clasic")
-                                        else "ng" if dir_name.startswith("Csv_Ngs")
-                                        else "other"
-                                    )
-                                    is_new = False
-                                    if corpus in ("classic", "ng") and not dir_name.endswith("_Raw"):
-                                        is_new = (
-                                            corpus,
-                                            archivo_csv.name,
-                                            section.strip(),
-                                            str(group).strip(),
-                                            (row_id or "").strip(),
-                                        ) in self.new_line_keys
-                                        if is_new:
-                                            new_flag_count += 1
-                                    self.index_datos.append({
-                                        'section': section,
-                                        'group': group,
-                                        'id': row_id,
-                                        'text': texto_original,
-                                        'text_norm': texto_norm,
-                                        'cmd': cmd,
-                                        'cmd_norm': self._norm_search(cmd),
-                                        'cmd_full_norm': self._norm_search(cmd_full),
-                                        'id_norm': self._norm_search(row_id),
-                                        'section_norm': self._norm_search(section),
-                                        'file': file_rel,
-                                        'line': reader.line_num,
-                                        'rare_chars': is_rare,
-                                        'corrupt_utf16': is_corrupt,
-                                        'text_fixed': text_fixed,
-                                        'text_fixed_norm': self._norm_search(text_fixed) if text_fixed else '',
-                                        'is_new_line': is_new,
-                                    })
-                    except Exception as e:
-                        logger.error(f"Error leyendo {archivo_csv.name}: {e}")
-            else:
-                logger.warning(f"Advertencia: No se encontró la carpeta {dir_name}")
-
-        logger.info(
-            f"Índices cargados correctamente. Total de IDs: {len(self.index_datos)} "
-            f"(líneas raras group1 UTF-16: {corrupt_count}; "
-            f"líneas nuevas del update en índice: {new_flag_count})"
-        )
 
 def modificar_texto_csv(
     file_path: str,
@@ -796,10 +714,7 @@ def puede_usar_merge(interaction: discord.Interaction) -> bool:
 
 def construir_mensaje_archivo(bot_instance, filepath: str, match_item: dict = None):
     # Encontrar el número de líneas traducibles para información general
-    count = 0
-    for item in bot_instance.index_datos:
-        if item['file'] == filepath and item.get('group') == '1':
-            count += 1
+    count = bot_instance.db.count_file_translatable_lines(filepath) if hasattr(bot_instance, "db") else 0
 
     mensaje_lineas = [
         f"📁 **Archivo:** `{filepath}`",
@@ -1249,473 +1164,49 @@ async def web_api_search(request):
             empty["min_chars"] = equal_min_chars
             return web.json_response(empty)
 
-        # key = (corpus, stem, section, id) → { "main": item, "raw": item }
-        pairs: dict[tuple, dict] = {}
-        for item in bot.index_datos:
-            if str(item.get("group", "") or "").strip() != "1":
-                continue
-            corpus = _item_corpus(item.get("file", ""))
-            if scope == "classic" and corpus != "classic":
-                continue
-            if scope == "ng" and corpus != "ng":
-                continue
-            if corpus not in ("classic", "ng"):
-                continue
-
-            fpath = (item.get("file") or "").replace("\\", "/")
-            if _is_file_excluded(fpath):
-                continue
-            layer = _file_layer(fpath)
-            if layer not in ("main", "raw"):
-                continue
-
-            stem = Path(fpath).name  # common.csv
-            section = (item.get("section") or "").strip()
-            row_id = (item.get("id") or "").strip()
-            text = item.get("text") or ""
-            tkey = _exact_line_key(text)
-            if not tkey or len(tkey) < equal_min_chars:
-                continue
-
-            if seed_key is not None and tkey != seed_key:
-                continue
-
-            pk = (corpus, stem, section, row_id)
-            slot = pairs.setdefault(pk, {})
-            # Si hay duplicados en el mismo layer, nos quedamos con el primero
-            if layer not in slot:
-                slot[layer] = item
-
-        coincidencias = []
-        # Solo pares donde MAIN y RAW existen y el texto es idéntico
-        ranked_keys = []
-        for pk, slot in pairs.items():
-            main_it = slot.get("main")
-            raw_it = slot.get("raw")
-            if not main_it or not raw_it:
-                continue
-            if _is_file_excluded(main_it.get("file", "")):
-                continue
-            item_key = _make_item_key(
-                main_it.get("file", ""),
-                main_it.get("section", ""),
-                main_it.get("group", "1"),
-                main_it.get("id", ""),
-            )
-            if item_key in excluded_set:
-                continue  # Omitir por completo de la búsqueda si fue excluida
-            main_t = _exact_line_key(main_it.get("text") or "")
-            raw_t = _exact_line_key(raw_it.get("text") or "")
-            if not main_t or main_t != raw_t:
-                continue  # un carácter distinto → no es "igual"
-            ranked_keys.append((pk[0], pk[1], pk[2], pk[3], main_t, main_it, raw_it))
-
-        # Orden: archivo, section, id
-        ranked_keys.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
-
-        for corpus, stem, section, row_id, tkey, main_it, raw_it in ranked_keys:
-            # Solo se muestra/abre MAIN. RAW es solo referencia de comparación.
-            item = main_it
-            fpath = (item.get("file") or "").replace("\\", "/")
-            open_file = fpath.replace("_Raw", "")  # nunca abrir raw
-            coincidencias.append({
-                "file": open_file,
-                "id": item.get("id", ""),
-                "section": item.get("section", ""),
-                "group": item.get("group", ""),
-                "text": item.get("text", ""),
-                "cmd": item.get("cmd", ""),
-                "match": "equal",
-                "corpus": corpus,
-                "layer": "main",
-                "exact": True,
-                "main_raw": True,
-                "min_chars": equal_min_chars,
-                "text_len": len(tkey),
-                "pair_stem": stem,
-            })
-            if len(coincidencias) >= MAX_MATCHES:
-                break
-
-        total = len(coincidencias)
-        total_pages = (total + per_page - 1) // per_page if total else 0
-        if total_pages and page > total_pages:
-            page = total_pages
-        start = (page - 1) * per_page
-        page_items = coincidencias[start : start + per_page]
-        return web.json_response({
-            "items": page_items,
-            "deep": False,
-            "new": False,
-            "nuevas": False,
-            "file": False,
-            "byfile": False,
-            "equal": True,
-            "iguales": True,
-            "exact": True,
-            "main_raw": True,
-            "chars": equal_min_chars,
-            "min_chars": equal_min_chars,
-            "pair_count": total,
-            "rare": False,
-            "corrupt": False,
-            "scope": scope,
-            "page": page,
-            "per_page": per_page,
-            "total": total,
-            "total_pages": total_pages,
-            "capped": total >= MAX_MATCHES,
-        })
+        res = bot.db.search_equal_lines(
+            seed_key=seed_key,
+            equal_min_chars=equal_min_chars,
+            scope=scope,
+            page=page,
+            per_page=per_page,
+            max_matches=MAX_MATCHES,
+            excluded_files_set=excluded_files_set,
+            excluded_lines_set=excluded_set,
+        )
+        return web.json_response(res)
 
     # ─── Modo brecha de caracteres (group 1): MAIN vs RAW del MISMO archivo/clave ─
     # Compara la longitud del texto en inglés original (Raw) vs la traducción al español (Main).
     # Detecta líneas donde la brecha de caracteres es abismal (traducciones cortadas o alucinadas).
     if diff_only:
-        query_norm_search = "".join(
-            c
-            for c in unicodedata.normalize("NFKD", query.lower())
-            if not unicodedata.combining(c)
-        ) if query else ""
+        res = bot.db.search_gap(
+            diff_min_chars=diff_min_chars,
+            diff_compare=diff_compare,
+            scope=scope,
+            query=query,
+            page=page,
+            per_page=per_page,
+            max_matches=MAX_MATCHES,
+            excluded_files_set=excluded_files_set,
+            excluded_lines_set=excluded_set,
+        )
+        return web.json_response(res)
 
-        pairs: dict[tuple, dict] = {}
-        for item in bot.index_datos:
-            if str(item.get("group", "") or "").strip() != "1":
-                continue
-            corpus = _item_corpus(item.get("file", ""))
-            if scope == "classic" and corpus != "classic":
-                continue
-            if scope == "ng" and corpus != "ng":
-                continue
-            if corpus not in ("classic", "ng"):
-                continue
-
-            fpath = (item.get("file") or "").replace("\\", "/")
-            if _is_file_excluded(fpath):
-                continue
-            layer = _file_layer(fpath)
-            if layer not in ("main", "raw"):
-                continue
-
-            stem = Path(fpath).name
-            section = (item.get("section") or "").strip()
-            row_id = (item.get("id") or "").strip()
-
-            pk = (corpus, stem, section, row_id)
-            slot = pairs.setdefault(pk, {})
-            if layer not in slot:
-                slot[layer] = item
-
-        ranked_diffs = []
-        for (corpus, stem, section, row_id), slot in pairs.items():
-            main_it = slot.get("main")
-            raw_it = slot.get("raw")
-            if not main_it or not raw_it:
-                continue
-            if _is_file_excluded(main_it.get("file", "")):
-                continue
-
-            raw_text = (raw_it.get("text") or "").strip()
-            main_text = (main_it.get("text") or "").strip()
-            len_raw = len(raw_text)
-            len_main = len(main_text)
-            char_diff = abs(len_raw - len_main)
-
-            if char_diff < diff_min_chars:
-                continue
-
-            if diff_compare == "raw-shorter" and not (len_raw < len_main):
-                continue
-            if diff_compare == "raw-longer" and not (len_raw > len_main):
-                continue
-
-            # Filtro opcional de búsqueda si el usuario escribió algo
-            if query_norm_search:
-                match_query = (
-                    query_norm_search in main_it.get("text_norm", "")
-                    or query_norm_search in raw_it.get("text_norm", "")
-                    or query_norm_search in main_it.get("id_norm", "")
-                    or query_norm_search in main_it.get("section_norm", "")
-                    or query_norm_search in stem.lower()
-                )
-                if not match_query:
-                    continue
-
-            item_key = _make_item_key(
-                main_it.get("file", ""),
-                section,
-                main_it.get("group", "1"),
-                row_id,
-            )
-            if item_key in excluded_set:
-                continue  # Omitir por completo de la búsqueda si fue excluida
-
-            ranked_diffs.append({
-                "corpus": corpus,
-                "stem": stem,
-                "section": section,
-                "row_id": row_id,
-                "main_it": main_it,
-                "raw_it": raw_it,
-                "raw_text": raw_text,
-                "main_text": main_text,
-                "raw_len": len_raw,
-                "main_len": len_main,
-                "char_diff": char_diff,
-                "diff_dir": "raw_longer" if len_raw > len_main else "main_longer",
-            })
-
-        # Ordenar de mayor a menor brecha de caracteres
-        ranked_diffs.sort(key=lambda x: (x["char_diff"], x["raw_len"]), reverse=True)
-
-        coincidencias = []
-        for entry in ranked_diffs:
-            item = entry["main_it"]
-            fpath = (item.get("file") or "").replace("\\", "/")
-            open_file = fpath.replace("_Raw", "")
-            coincidencias.append({
-                "file": open_file,
-                "id": item.get("id", ""),
-                "section": item.get("section", ""),
-                "group": item.get("group", "1"),
-                "text": entry["main_text"],
-                "raw_text": entry["raw_text"],
-                "main_len": entry["main_len"],
-                "raw_len": entry["raw_len"],
-                "char_diff": entry["char_diff"],
-                "diff_dir": entry["diff_dir"],
-                "cmd": item.get("cmd", ""),
-                "match": "diff",
-                "corpus": entry["corpus"],
-                "layer": "main",
-                "diff": True,
-                "min_diff": diff_min_chars,
-            })
-            if len(coincidencias) >= MAX_MATCHES:
-                break
-
-        total = len(coincidencias)
-        total_pages = (total + per_page - 1) // per_page if total else 0
-        if total_pages and page > total_pages:
-            page = total_pages
-        start = (page - 1) * per_page
-        page_items = coincidencias[start : start + per_page]
-
-        return web.json_response({
-            "items": page_items,
-            "deep": False,
-            "new": False,
-            "nuevas": False,
-            "file": False,
-            "byfile": False,
-            "equal": False,
-            "iguales": False,
-            "diff": True,
-            "brecha": True,
-            "diff_chars": diff_min_chars,
-            "min_diff": diff_min_chars,
-            "diff_compare": diff_compare,
-            "scope": scope,
-            "page": page,
-            "per_page": per_page,
-            "total": total,
-            "total_pages": total_pages,
-            "capped": total >= MAX_MATCHES,
-        })
-
-    query_norm = "".join(
-        c
-        for c in unicodedata.normalize("NFKD", query.lower())
-        if not unicodedata.combining(c)
-    ) if query else ""
-    # Quitar espacios alrededor de comas: "Basic, 1, Explanation" → "basic,1,explanation"
-    query_cmd = ",".join(p.strip() for p in query_norm.split(",")) if query_norm else ""
-    # Permitir "Basic,1,Explanation," (coma final de text vacío)
-    query_cmd = query_cmd.rstrip(",")
-    # Nombre de archivo: aceptar con o sin .csv
-    query_file = query_norm
-    if query_file.endswith(".csv"):
-        query_file_stem = query_file[:-4]
-    else:
-        query_file_stem = query_file
-    query_file_csv = query_file_stem + ".csv"
-
-    coincidencias = []
-    ids_vistos = set()
-
-    for item in bot.index_datos:
-        # Filtro Classic / NGS / ambos
-        corpus = _item_corpus(item.get("file", ""))
-        if scope == "classic" and corpus != "classic":
-            continue
-        if scope == "ng" and corpus != "ng":
-            continue
-
-        # Solo archivos editables de traducción (no *_Raw).
-        # Los Raw solo se usan como referencia de comparación en líneas iguales y brecha.
-        fpath = (item.get("file") or "").replace("\\", "/")
-        if "_raw/" in fpath.lower() or fpath.lower().endswith("_raw") or "/csv_clasic_raw/" in fpath.lower() or "/csv_ngs_raw/" in fpath.lower():
-            continue
-        if not (
-            fpath.startswith("Csv_Clasic/")
-            or fpath.startswith("Csv_Ngs/")
-        ):
-            continue
-
-        if _is_file_excluded(fpath):
-            continue
-
-        matched = False
-        match_where = "text"
-
-        if new_only:
-            # ═══════════════════════════════════════════════════════════
-            # Líneas nuevas: filas listadas en data/lineas_nuevas/*
-            # (archivos y keys del update de Classic/NGS). Solo editables.
-            # ═══════════════════════════════════════════════════════════
-            is_new = bool(item.get("is_new_line")) or bot.is_new_line_item(item)
-            if not is_new:
-                continue
-
-            matched = True
-            match_where = "new"
-            # Filtro opcional: acotar por archivo / id / texto / comando
-            if query_norm:
-                if (
-                    query_norm not in item.get("text_norm", "")
-                    and query_norm not in item.get("id_norm", "")
-                    and query_norm not in item.get("cmd_norm", "")
-                    and query_norm not in item.get("section_norm", "")
-                    and query_norm not in fpath.lower()
-                ):
-                    continue
-        elif file_only:
-            # ═══════════════════════════════════════════════════════════
-            # Por nombre de archivo: cl0421450101 / cl0421450101.csv
-            # Solo CSV editables (no *_Raw). Coincide stem, nombre o ruta.
-            # ═══════════════════════════════════════════════════════════
-            fpath = (item.get("file") or "").replace("\\", "/")
-            if "_Raw/" in fpath or fpath.endswith("_Raw"):
-                continue
-            if not (
-                fpath.startswith("Csv_Clasic/")
-                or fpath.startswith("Csv_Ngs/")
-            ):
-                continue
-
-            fname = Path(fpath).name.lower()  # ej. trial_boss_weak_evolution.csv
-            stem = Path(fname).stem.lower()   # sin .csv
-            fpath_l = fpath.lower()
-
-            # Coincidencia flexible:
-            # - exacta stem / nombre.csv
-            # - substring en stem o nombre (para parciales)
-            if (
-                query_file_stem == stem
-                or query_file_csv == fname
-                or query_file == fname
-                or query_file_stem in stem
-                or query_file in fname
-                or query_file in fpath_l
-            ):
-                matched = True
-                match_where = "file"
-            else:
-                continue
-        else:
-            # Búsqueda normal: solo en el texto de la línea
-            if query_norm in item.get("text_norm", ""):
-                matched = True
-                match_where = "text"
-            elif deep:
-                # Búsqueda avanzada: section, group, id y comando CSV
-                cmd_norm = item.get("cmd_norm", "")
-                cmd_full = item.get("cmd_full_norm", "")
-                if (
-                    query_cmd
-                    and (
-                        query_cmd in cmd_norm
-                        or query_cmd in cmd_full
-                        or cmd_norm in query_cmd
-                    )
-                ):
-                    matched = True
-                    match_where = "command"
-                elif query_norm in item.get("id_norm", ""):
-                    matched = True
-                    match_where = "id"
-                elif query_norm in item.get("section_norm", ""):
-                    matched = True
-                    match_where = "section"
-                elif query_norm in (item.get("group") or "").lower():
-                    matched = True
-                    match_where = "group"
-
-        if not matched:
-            continue
-
-        # Siempre MAIN editable: raw solo se usa para comparar, nunca se abre
-        editable_file = (item.get("file") or "").replace("\\", "/").replace("_Raw", "")
-        # Clave única: section+id+group (mismo id puede existir en varias sections)
-        clave_unica = f"{editable_file}_{item.get('section','')}_{item['id']}_{item.get('group','')}"
-
-        if clave_unica not in ids_vistos:
-            ids_vistos.add(clave_unica)
-            item_key = _make_item_key(
-                editable_file,
-                item.get("section", ""),
-                item.get("group", "1"),
-                item.get("id", ""),
-            )
-            if item_key in excluded_set:
-                continue  # Omitir por completo de la búsqueda si fue excluida
-            entry = {
-                "file": editable_file,
-                "id": item["id"],
-                "section": item.get("section", ""),
-                "group": item.get("group", ""),
-                "text": item["text"],
-                "cmd": item.get("cmd", ""),
-                "match": match_where,
-                "corpus": corpus if corpus != "other" else _item_corpus(editable_file),
-            }
-            if new_only or item.get("is_new_line"):
-                entry["new"] = True
-                entry["nuevas"] = True
-            # Mantener flags de rareza solo si realmente hay basura UTF-16
-            if item.get("rare_chars") or item.get("corrupt_utf16"):
-                entry["rare"] = True
-                entry["corrupt"] = True
-                fixed = item.get("text_fixed") or ""
-                if fixed:
-                    entry["text_fixed"] = fixed
-            coincidencias.append(entry)
-
-        if len(coincidencias) >= MAX_MATCHES:
-            break
-
-    total = len(coincidencias)
-    total_pages = (total + per_page - 1) // per_page if total else 0
-    if total_pages and page > total_pages:
-        page = total_pages
-    start = (page - 1) * per_page
-    page_items = coincidencias[start : start + per_page]
-
-    return web.json_response({
-        "items": page_items,
-        "deep": deep,
-        "new": new_only,
-        "nuevas": new_only,
-        "file": file_only,
-        "byfile": file_only,
-        "rare": rare_only,
-        "corrupt": rare_only,
-        "scope": scope,
-        "page": page,
-        "per_page": per_page,
-        "total": total,
-        "total_pages": total_pages,
-        "capped": total >= MAX_MATCHES,
-    })
+    res = bot.db.search_query(
+        query=query,
+        scope=scope,
+        deep=deep,
+        new_only=new_only,
+        file_only=file_only,
+        rare_only=rare_only,
+        page=page,
+        per_page=per_page,
+        max_matches=MAX_MATCHES,
+        excluded_files_set=excluded_files_set,
+        excluded_lines_set=excluded_set,
+    )
+    return web.json_response(res)
 
 async def web_api_file(request):
     filename = request.query.get("name")
@@ -1723,17 +1214,9 @@ async def web_api_file(request):
         return web.json_response({"error": "Falta parámetro 'name'"}, status=400)
         
     bot = request.app['bot']
-    items = []
+    file_items, raw_items = bot.db.get_file_comparison_rows(filename)
     
-    # 1. Obtener todos los items del archivo (O(N))
-    file_items = [item for item in bot.index_datos if item['file'] == filename]
-    
-    # 2. Obtener los items del archivo Raw (O(N))
-    raw_filename = filename.replace("Csv_Ngs", "Csv_Ngs_Raw").replace("Csv_Clasic", "Csv_Clasic_Raw")
-    raw_items = [item for item in bot.index_datos if item['file'] == raw_filename]
-    
-    # 3. Agrupar por (section, id): group 0 = JP, group 1 = ES (u otros grupos)
-    #    Antes solo se devolvía group==1 → archivos solo con group 0 salían vacíos en el editor.
+    # Agrupar por (section, id): group 0 = JP, group 1 = ES (u otros grupos)
     by_key = {}
     order = []
     for item in file_items:
@@ -1747,7 +1230,6 @@ async def web_api_file(request):
             }
             order.append(key)
         by_key[key]["groups"][str(item.get("group", ""))] = item.get("text", "")
-        # Conservar la línea más baja como ancla de orden
         ln = item.get("line", 0) or 0
         if ln and (not by_key[key]["line"] or ln < by_key[key]["line"]):
             by_key[key]["line"] = ln
@@ -1761,12 +1243,12 @@ async def web_api_file(request):
     # Orden estable: por línea de aparición
     order.sort(key=lambda k: (by_key[k]["line"] or 0, k[0], k[1]))
 
+    items = []
     for key in order:
         entry = by_key[key]
         groups = entry["groups"]
         original_text = groups.get("0", "")
         spanish_text = groups.get("1", "")
-        # Si no hay group 1, el texto “principal” visible puede ser g0 u otro grupo
         other_groups = {g: t for g, t in groups.items() if g not in ("0", "1")}
         preview = spanish_text or original_text
         if not preview and other_groups:
@@ -1776,7 +1258,7 @@ async def web_api_file(request):
             "section": entry["section"],
             "id": entry["id"],
             "group": "1" if "1" in groups else ("0" if "0" in groups else next(iter(groups.keys()), "1")),
-            "text": spanish_text,  # español (puede ir vacío si aún no hay traducción)
+            "text": spanish_text,
             "original": original_text,
             "english": g_raw_dict.get(key, ""),
             "has_group1": "1" in groups,
@@ -1793,7 +1275,7 @@ async def web_api_file_raw(request):
         return web.json_response({"error": "Falta parámetro 'name'"}, status=400)
         
     bot = request.app['bot']
-    file_items = [item for item in bot.index_datos if item['file'] == filename]
+    file_items = bot.db.get_file_rows(filename)
     file_items.sort(key=lambda x: x.get('line', 0))
     
     items = []
@@ -1820,7 +1302,6 @@ async def web_api_save(request):
         new_group = data.get('group')
         new_id = data.get('id')
         new_text = data.get('text', '')
-        # Por defecto crear la fila si no existe (p. ej. group 1 de una línea solo JP)
         create_if_missing = data.get('create_if_missing', True)
         
         bot = request.app['bot']
@@ -1837,7 +1318,6 @@ async def web_api_save(request):
             create_if_missing=bool(create_if_missing),
         )
         if not exito:
-            # DEBUG: find out WHY it failed
             ruta = Path(filename)
             debug_info = f"Exists: {ruta.exists()}. "
             if ruta.exists():
@@ -1850,58 +1330,17 @@ async def web_api_save(request):
                         debug_info += f"[sec: '{m.get('section')}', grp: '{m.get('group')}'] "
             return web.json_response({"error": f"No se pudo modificar CSV. {debug_info}"}, status=500)
             
-        # Actualizar índice en memoria (modificar o insertar)
-        updated = False
-        for item in bot.index_datos:
-            if item['file'] == filename and item.get('section') == orig_section and item['id'] == orig_id and str(item.get('group', '')) == orig_group:
-                item['text'] = new_text
-                if new_section is not None: item['section'] = new_section
-                if new_group is not None: item['group'] = str(new_group)
-                if new_id is not None: item['id'] = new_id
-                # refrescar flags de rareza (solo group 1 cuenta como «línea rara»)
-                g_now = str(item.get("group", ""))
-                is_corrupt = (
-                    BuscadorBot.is_utf16_swapped_corrupt(new_text) if g_now == "1" else False
-                )
-                item['rare_chars'] = is_corrupt
-                item['corrupt_utf16'] = is_corrupt
-                item['text_fixed'] = (
-                    BuscadorBot.fix_utf16_swapped(new_text) if is_corrupt else ""
-                )
-                item['text_fixed_norm'] = (
-                    BuscadorBot._norm_search(item['text_fixed']) if item['text_fixed'] else ""
-                )
-                item['text_norm'] = BuscadorBot._norm_search(new_text)
-                updated = True
-                break
-        if not updated:
-            final_section = new_section if new_section is not None else orig_section
-            final_group = str(new_group if new_group is not None else orig_group)
-            final_id = new_id if new_id is not None else orig_id
-            is_corrupt = (
-                BuscadorBot.is_utf16_swapped_corrupt(new_text) if final_group == "1" else False
-            )
-            is_rare = is_corrupt
-            text_fixed = BuscadorBot.fix_utf16_swapped(new_text) if is_corrupt else ""
-            cmd = f"{final_section},{final_group},{final_id}"
-            bot.index_datos.append({
-                "section": final_section or "",
-                "group": final_group,
-                "id": final_id or "",
-                "text": new_text,
-                "text_norm": BuscadorBot._norm_search(new_text),
-                "cmd": cmd,
-                "cmd_norm": BuscadorBot._norm_search(cmd),
-                "cmd_full_norm": BuscadorBot._norm_search(f"{cmd},{new_text}"),
-                "id_norm": BuscadorBot._norm_search(final_id or ""),
-                "section_norm": BuscadorBot._norm_search(final_section or ""),
-                "file": filename,
-                "line": 0,
-                "rare_chars": is_rare,
-                "corrupt_utf16": is_corrupt,
-                "text_fixed": text_fixed,
-                "text_fixed_norm": BuscadorBot._norm_search(text_fixed) if text_fixed else "",
-            })
+        # Actualizar índice en la base de datos SQLite
+        bot.db.save_row(
+            filename=filename,
+            orig_section=orig_section,
+            orig_group=orig_group,
+            orig_id=orig_id,
+            new_section=new_section,
+            new_group=new_group,
+            new_id=new_id,
+            new_text=new_text,
+        )
                 
         bot.modified_files.add(filename)
         return web.json_response({"success": True})
@@ -2048,7 +1487,7 @@ async def web_health(request):
     bot = request.app.get("bot")
     ready = bool(bot and getattr(bot, "index_ready", False))
     loading = bool(bot and getattr(bot, "index_loading", False))
-    n = len(bot.index_datos) if bot and getattr(bot, "index_datos", None) is not None else 0
+    n = bot.db.get_total_count() if bot and getattr(bot, "db", None) is not None else 0
     err = getattr(bot, "index_error", None) if bot else None
     return web.json_response(
         {
@@ -2105,13 +1544,9 @@ bot = BuscadorBot()
 @bot.tree.command(name="buscar_id", description="Busca un fragmento de texto en los archivos CSV")
 @app_commands.describe(id_buscado="El texto que deseas encontrar")
 async def buscar_id(interaction: discord.Interaction, id_buscado: str):
-    query = id_buscado.lower()
-    coincidencias = []
+    res = bot.db.search_query(query=id_buscado, max_matches=100)
+    coincidencias = res.get("items", [])
     
-    for item in bot.index_datos:
-        if query in item['text'].lower():
-            coincidencias.append(item)
-            
     if not coincidencias:
         await interaction.response.send_message(f"❌ No se encontraron coincidencias para: **{id_buscado}**")
         return
@@ -2133,7 +1568,7 @@ async def buscar_id(interaction: discord.Interaction, id_buscado: str):
         lineas = [f"✅ **Se encontraron {total} coincidencias (mostrando las primeras {limite}):**"]
         for match in coincidencias[:limite]:
             lineas.append(
-                f"📁 `{match['file']}` (Línea {match['line']})\n"
+                f"📁 `{match['file']}` (Línea {match.get('line', 0)})\n"
                 f"   📝 *Texto:* {match['text'][:150]}"
             )
         if total > limite:
@@ -2167,8 +1602,9 @@ async def recargar(interaction: discord.Interaction):
     try:
         await asyncio.to_thread(bot.cargar_indices)
         bot.index_ready = True
+        total_count = bot.db.get_total_count() if getattr(bot, "db", None) else 0
         await interaction.followup.send(
-            f"🔄 Datos recargados con éxito. IDs mapeados: {len(bot.index_datos)}"
+            f"🔄 Datos recargados con éxito. IDs mapeados: {total_count}"
         )
     except Exception as e:
         bot.index_error = str(e)
