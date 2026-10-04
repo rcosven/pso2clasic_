@@ -260,7 +260,7 @@
     }
     .media-box video {
         width: 100%;
-        max-height: 450px;
+        max-height: 460px;
         border-radius: 8px;
         border: 1px solid var(--accent-pink);
         background: #000;
@@ -272,8 +272,17 @@
         border-radius: 8px;
         border: 1px solid var(--border-color);
     }
+    .media-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+        .media-grid { grid-template-columns: 1fr; }
+    }
     .media-caption {
-        font-size: 0.85rem;
+        font-size: 0.88rem;
         color: var(--text-secondary);
         margin-top: 10px;
     }
@@ -367,8 +376,12 @@
             💡 <strong>Gestor de Mods incluido:</strong> Puedes arrastrar e instalar mods en formato <span class="code-tag">.zip</span> desde la pestaña <strong>Mods</strong> para activarlos o desactivarlos cuando quieras con 1 clic.
         </div>
 
+        <!-- Video Permanente del Animation Viewer -->
         <div class="media-box">
-            {{VIDEO_BLOCK}}
+            <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
+                <source src="{{VIDEO_ANIM_SRC}}" type="video/mp4">
+                Tu navegador no soporta el tag de video HTML5.
+            </video>
             <p class="media-caption">Demostración en video de reproducción 3D y reemplazo de animaciones.</p>
         </div>
     </section>
@@ -401,21 +414,30 @@
             <div class="step-item">
                 <div class="step-badge">2</div>
                 <div class="step-text">
-                    Selecciona tu traje y usa los botones del panel para <strong>habilitar chaquetas y capas adicionales</strong> en prendas que por defecto vienen bloqueadas.
+                    <strong>Habilitar chaquetas (Outerwear):</strong> Activa el botón <span class="code-tag">Allow Outerwear: ON</span> para que en el salón del juego te permita equipar chaquetas sobre trajes base que vienen bloqueados por defecto.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">3</div>
                 <div class="step-text">
-                    Activa o desactiva ornamentos y accesorios de la indumentaria según tu gusto.
+                    <strong>Ocultar adornos (Hide Ornamentation):</strong> Activa <span class="code-tag">Hide Ornament 1</span> o <span class="code-tag">Hide Ornament 2</span> para poder ocultar partes específicas de la ropa o escenografía en el salón.
                 </div>
             </div>
         </div>
 
+        <!-- Capturas de CMX Helper -->
         <div class="media-box">
-            <img src="https://cdn.discordapp.com/attachments/1536856506295914626/1550464278186688632/image.png" alt="CMX Helper Tool">
-            <p class="media-caption">Botones del panel para activar compatibilidad de chaquetas y prendas.</p>
+            <div class="media-grid">
+                <div>
+                    <img src="{{IMG_CMX_1}}" alt="Outerwear Jacket Toggle en CMX">
+                    <p class="media-caption">1. Activar chaquetas sobre trajes en el salón del juego.</p>
+                </div>
+                <div>
+                    <img src="{{IMG_CMX_2}}" alt="Hide Ornamentation en CMX">
+                    <p class="media-caption">2. Ocultar adornos y partes secundarias de la ropa.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -470,10 +492,27 @@
             </div>
         </div>
 
+        <!-- Video Demostrativo del Voice Modifier -->
         <div class="media-box">
-            <img src="https://cdn.discordapp.com/attachments/1536856506295914626/1551145241350905906/image.png" alt="Voice Modifier Panel" style="margin-bottom:12px;">
-            <img src="https://cdn.discordapp.com/attachments/1536856506295914626/1551145650668970045/image.png" alt="Voice Modifier Presets">
-            <p class="media-caption">Asignación de audios por voz y guardado de paquetes de presets.</p>
+            <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
+                <source src="{{VIDEO_VOICE_SRC}}" type="video/mp4">
+                Tu navegador no soporta el tag de video HTML5.
+            </video>
+            <p class="media-caption">Demostración en video de sustitución de voz en el juego.</p>
+        </div>
+
+        <!-- Capturas de Voice Modifier -->
+        <div class="media-box" style="margin-top:15px;">
+            <div class="media-grid">
+                <div>
+                    <img src="{{IMG_VOICE_1}}" alt="Panel Voice Modifier">
+                    <p class="media-caption">1. Asignación de audios y selección de idiomas.</p>
+                </div>
+                <div>
+                    <img src="{{IMG_VOICE_2}}" alt="Presets Voice Modifier">
+                    <p class="media-caption">2. Guardado y carga de paquetes de presets.</p>
+                </div>
+            </div>
         </div>
     </section>
 
