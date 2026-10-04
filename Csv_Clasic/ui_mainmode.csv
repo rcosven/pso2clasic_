@@ -395,7 +395,7 @@ Poka,1,CancelTitle,CONFIRMAR CANCELACIÓN DE COMPRA
 Poka,1,CancelMessage,¿Estás seguro de que quieres cancelar<br>tu compra?
 Poka,1,SelectItemInputVita,Ingrese la cantidad deseada.
 Poka,1,MenuErrorTitle,ERROR
-Poka,1,MenuErrorMessage,est.<c><br><br>Actualmente no puedes usar la tienda porque no has<br>completado una misión.
+Poka,1,MenuErrorMessage,<yellow>Puedes comenzar a usar [Battle Coin Exchange Shop 2]<br>una vez que hayas completado una misión.<c><br><br>Actualmente no puedes usar la tienda porque no<br>tienes completado una misión.
 Poka,1,PokaQuest_SummaryName,campo de batalla
 Poka,1,PokaRanking_Title,RECIBIR RECOMPENSA DE CLASIFICACIÓN DE BATALLA
 Poka,1,PokaRanking_RewardConfirm,Has recibido los siguientes artículos como Recompensa<br>de Clasificación de Batalla.
@@ -458,7 +458,7 @@ Challenge,1,CancelTitle,CONFIRMAR CANCELACIÓN DE COMPRA
 Challenge,1,CancelMessage,¿Estás seguro de que quieres cancelar<br>tu compra?
 Challenge,1,SelectItemInputVita,Ingrese la cantidad deseada.
 Challenge,1,MenuErrorTitle,ERROR
-Challenge,1,MenuErrorMessage,"Decision."""
+Challenge,1,MenuErrorMessage,"Puedes usar [Challenge Miles Exchange Shop 2] una<br>vez <yellow>has completado la misión de desafío ""MISIÓN:<br>Decisión"", hasta la Misión 3.<c> Actualmente no puedes<br>usar la tienda porque Aún no he completado la<br>Misión 3 del Misión de desafío ""MISIÓN: Decisión""."
 Challenge,1,ChallengePoint,Tus Millas de Desafio
 black_bord,0,BlackbordCharaName,キャラクター名
 black_bord,0,BlackbordPlayerIDname,プレイヤーIDネーム
@@ -1167,7 +1167,7 @@ FriendList,1,BlackList_Error_Default,Un error causó que el procesamiento<br>fal
 FriendList,1,BlackList_Result_Add,Agregaste a $(0) a tu lista de bloqueo de PSO2.
 FriendList,1,BlackList_Result_Remove,Eliminaste a $(0) de tu lista de bloqueo de PSO2.
 FriendList,1,BlackList_Add_Title,AÑADIR A LA LISTA DE BLOQUEO DE PSO2
-FriendList,1,BlackList_Add_Exp,¿Quieres añadir a este<br>jugador a tu lista de bloqueo de PSO2?
+FriendList,1,BlackList_Add_Exp,"Los jugadores que agregues a la lista de bloqueo de<br>PSO2 no poder comunicarnos con usted, incluyendo envío<br>de invitaciones a fiestas, otros tipos de<br>invitaciones, correo o chat.<br><br>Nota: puedes eliminar un jugador de tu lista de<br>bloqueo de PSO2 seleccionando [Eliminar de la lista de<br>bloqueo de PSO2] en cualquier momento.<br><br>¿Estás seguro de que quieres agregar esto? jugador a<br>tu lista de bloqueo de PSO2?"
 FriendList,1,BlackList_Result_Unknown,Un error causó que el procesamiento<br>fallara.<br><br>[No. 1025]
 FriendList,1,BlackList_Error_TooMany,No puedes añadir más jugadores a<br>tu lista de bloqueo de PSO2 porque tu lista de bloqueo de PSO2 está llena.
 FriendList,1,FriendList_Error_MailErr,Un error causó que el procesamiento<br>fallara.<br><br>[No. 1026]
@@ -2161,7 +2161,7 @@ PartyMenu,1,PartyMenuLabel05,Miembros del partido
 PartyMenu,1,PartyMenuLabel06,Comandos comunes
 PartyMenu,1,PartyMenuText01,¿Unirte a la fiesta a la que te invitaron?
 PartyMenu,1,PartyMenuText03,abandonar<br>la misión.<br><br>¿Estás seguro de que quieres salir del grupo?
-PartyMenu,1,PartyMenuText03ex,¿Seguro que quieres irte del grupo?
+PartyMenu,1,PartyMenuText03ex,"Estás a punto de abandonar tu fiesta. Si hay una<br>misión en progreso, la abandonarás. la búsqueda.<br>Además, todos los efectos aplicados. durante la<br>misión será eliminado.<br><br><red>Tenga en cuenta que cualquier meseta o elemento<br>usado para iniciar la misión no te será devuelto.<c><br><br>¿Estás seguro de que quieres abandonar la fiesta?"
 PartyMenu,1,PartyMenuText03TriggerQuest,"Si abandonas tu grupo durante una Misión de Activación, <yellow>todos <br>los miembros que se hayan unido, incluidos los miembros de grupos múltiples, <br>serán forzados a abandonar la misión<c> y cualquier miembro <br>en el campo será devuelto al Lobby de ARCAS. Nota: Solo <br>aplicable cuando todavía hay tiempo o al menos una oportunidad restante <br>para volver a aceptar la Misión de Activación. Además, todos los efectos <br>aplicados durante la misión serán eliminados.<br><br><red>Ten en cuenta que cualquier meseta o artículo utilizado para <br>iniciar la misión no te será devuelto.<c><br><br>¿Estás seguro de que quieres salir del grupo?"
 PartyMenu,1,PartyMenuError01,Has perdido los derechos de liderazgo.
 PartyMenu,1,PartyMenuError02,No hay otros miembros en el grupo.
@@ -2175,11 +2175,11 @@ PartyMenu,1,LeaderMenuLabel05,Disolver el grupo
 PartyMenu,1,LeaderMenuText02,Los derechos de liderazgo serán transferidos a $(0).<br><br>¿Estás seguro de que quieres cambiar al líder?
 PartyMenu,1,LeaderMenuText03,"Estás a punto de eliminar a $(0) del grupo.<br>Si estás realizando una misión, el jugador mencionado será <br>forzado a abandonar la misión.<br><br>Además, todos los efectos aplicados durante la misión <br>serán eliminados.<br><br>¿Estás seguro de que quieres eliminar al jugador mencionado<br>del grupo?"
 PartyMenu,1,LeaderMenuText03ex,"Estás a punto de eliminar a $(0) del grupo.<br>Si estás realizando una misión, el jugador mencionado será <br>forzado a abandonar la misión.<br><br><red>Ten en cuenta que cualquier meseta o artículo utilizado para iniciar <br>la misión no será devuelto.<c><br><br>¿Estás seguro de que deseas eliminar al jugador mencionado<br>del grupo?"
-PartyMenu,1,LeaderMenuText04,¿abandonar la misión?
-PartyMenu,1,LeaderMenuText04ex,no serán devueltos.<c><br><br>¿Estás seguro de que quieres abandonar la misión?
+PartyMenu,1,LeaderMenuText04,"Si abandonas tu misión, todos los demás miembros del<br>grupo se verá obligado a abandonar la misión también, y<br>cualquier los miembros en el campo serán devueltos al<br>lobby ARKS.<br><br>Además, todos los efectos aplicados. durante la misión<br>será eliminado.<br><br>¿Estás seguro de que quieres abandonar la misión?"
+PartyMenu,1,LeaderMenuText04ex,"Si abandonas tu misión, todos los demás miembros del<br>grupo se verá obligado a abandonar la misión también, y<br>cualquier los miembros en el campo serán devueltos al<br>lobby ARKS.<br><br>Además, todos los efectos adquiridos dentro de la misión<br>será cancelada.<br><br><red>Ten en cuenta que cualquier meseta o elemento utilizado<br>para iniciar la misión no será devuelto.<c><br><br>¿Estás seguro de que quieres abandonar la misión?"
 PartyMenu,1,LeaderMenuText05,"Si disuelves tu grupo mientras realizas<br>una misión, todos los miembros del grupo serán forzados a <br>abandonar la misión, y cualquier miembro en el <br>campo será devuelto al Lobby de ARCAS.<br><br>Además, todos los efectos aplicados<br>durante la misión serán eliminados.<br><br>¿Estás seguro de que quieres disolver tu grupo?<br>"
 PartyMenu,1,LeaderMenuText05ex,"Si disuelves tu grupo mientras realizas<br>una misión, abandonarás la misión y<br>devolverás a todos los miembros en el campo al Lobby de ARCAS. Además, todos los efectos adquiridos <br>dentro de las misiones serán cancelados.<br><br><red>Ten en cuenta que cualquier meseta o artículo <br>utilizado para iniciar la misión no será devuelto.<c><br><br>¿Estás seguro de que quieres disolver tu grupo?"
-PartyMenu,1,LeaderMenuText05TriggerQuest,¿Estás seguro de que quieres disolver tu grupo?
+PartyMenu,1,LeaderMenuText05TriggerQuest,"Si disuelve tu grupo durante una Trigger Quest, <yellow>todos los<br>miembros que se han unido a la misión, incluido miembros de<br>varios partidos, se verán obligados a abandonar la misión<c><br>también, y cualquier miembro en el campo será devuelto a el<br>vestíbulo. Nota: Sólo aplica cuando aún hay tiempo o al<br>menos una oportunidad restante para volver a aceptar la<br>Misión.<br><br>Además, todos los efectos aplicados durante la misión será<br>eliminada.<br><br><red>Ten en cuenta que cualquier meseta o elemento utilizado para<br>comenzar la misión no será devuelta.<c> ¿Estás seguro de que<br>quieres disolver tu partido?"
 PartyMenu,1,LeaderMenuText06,"Tus configuraciones de grupo han cambiado.<br>Si te mueves a otro elemento del menú, los cambios<br>en tus configuraciones se perderán.<br>¿Estás seguro de que deseas continuar?"
 PartyMenu,1,LeaderMenuText07TriggerQuest,"Si abandonas la misión durante una Misión de Activación,<br><yellow>todos los miembros que se hayan unido, incluidos <br>los miembros de grupos múltiples, serán forzados a abandonar la <br>misión<c> también, y cualquier miembro en el campo <br>será devuelto al Lobby de ARCAS. Nota: Solo aplicable <br>cuando todavía hay tiempo o al menos una oportunidad restante <br>para volver a aceptar la misión. Además, todos los efectos <br>aplicados durante la misión serán eliminados.<br><br><red>Ten en cuenta que cualquier meseta o artículo utilizado <br>para iniciar la misión no será devuelto.<c><br>¿Estás seguro de que quieres abandonar la misión?"
 PartyMenu,1,PartyConfigTab01,Configuraciones básicas
@@ -2243,8 +2243,8 @@ PartyMenu,1,PartyConfigHint01,"la habitación,<br>cualquier Socio presente será
 PartyMenu,1,PartyConfigLeaderChangeNotTitle,CAMBIO DE LÍDER NO PERMITIDO
 PartyMenu,1,PartyConfigLeaderChangeNotMessage,No puedes cambiar al líder del grupo durante esta misión.
 PartyMenu,1,LeaderMenuText04_HighLevelQuest,"<red>La misión que estás realizando actualmente está<br>sujeta a una [Penalización por Abandono].<c><br><br>Debido a que el abandono de esta misión causará<br>problemas a otros jugadores, ya no podrás<br>volver a aceptar Misiones Urgentes en curso.<br>Además, serás transferido a la fuerza<br>a otro bloque.<br><br>Todos los miembros del grupo serán forzados a abandonar la misión<br>también, y serán transferidos de vuelta al Lobby de ARCAS.<br><br>Estás a punto de abandonar la misión y<br>aceptar una [Penalización por Abandono].<br>¿Estás seguro de que deseas continuar?"
-PartyMenu,1,LeaderMenuText05_HighLevelQuest,¿Cómo proceder?
-PartyMenu,1,PartyMenuText03_HighLevelQuest,¿procedimiento?
+PartyMenu,1,LeaderMenuText05_HighLevelQuest,"<red>La misión que estás realizando actualmente es sujeto<br>a una [Sanción por Abandono].<c><br><br>Porque el abandono de esta búsqueda causará<br>problemas para otros jugadores, ya no podrás poder<br>volver a aceptar misiones urgentes en curso. Además,<br>será trasladado por la fuerza. a otro bloque.<br><br>Si disuelve tu partido, abandonarás el misión y ser<br>transferido de regreso al lobby ARKS. Estás a punto<br>de disolver tu partido y aceptar una [Penalización<br>por Abandono]. ¿Está seguro de que desea continuar?"
+PartyMenu,1,PartyMenuText03_HighLevelQuest,"<red>La misión que estás realizando actualmente es sujeto a<br>una [Sanción por Abandono].<c><br><br>Porque el abandono de esta búsqueda causará problemas<br>para otros jugadores, ya no podrás poder volver a<br>aceptar misiones urgentes en curso. Además, será<br>trasladado por la fuerza. a otro bloque.<br><br>Si abandonas tu partido, abandonarás el misión y ser<br>transferido de regreso al lobby ARKS. Estás a punto de<br>abandonar tu fiesta y aceptar una [Penalización por<br>Abandono]. ¿Está seguro de que desea continuar?"
 PartyMenu,1,PartyConfigTypeChange01,Cambiado al modo detalle.
 PartyMenu,1,PartyConfigTypeChange02,Cambiado al modo estandar.
 PlayerStatus,0,Title,簡易ステータス
@@ -2823,7 +2823,7 @@ EquipInventory,1,FashionHint,Puedes equipar un atuendo en esta ranura.
 EquipInventory,1,CostumeHint2,Trajes / Piezas / Camuflaje de armas
 EquipInventory,1,CostumeError,No puedes quitarte un atuendo o prenda exterior en la Nave Universal <br>o en un Bloque de Desafío. Solo puedes modificar tu equipo <br>después de regresar a un bloque estándar.
 EquipInventory,1,CostumeErrorTitle,PALETA DE ARMADURA
-EquipInventory,1,PartsError,Pasando a un bloque estandar.
+EquipInventory,1,PartsError,"No se pueden eliminar partes del brazo o de la pierna. Si<br>quisieras Cambie su equipo, intente intercambiar diferentes<br>partes del cuerpo.<br><br>Además, no puedes quitarte un traje o ropa de abrigo en el<br>Barco universal o un bloque de desafío. Sólo puedes modificar<br>su equipo después de regresar a un bloque estándar."
 EquipInventory,1,PartsErrorTitle,PALETA DE ARMADURA
 EquipInventory,1,Costume,Trajes
 EquipInventory,1,Parts,Regiones
@@ -3237,7 +3237,7 @@ CharaInfo,1,Guild,Nombre de la alianza
 CharaInfo,1,NoGuild,sin alianza
 CharaInfo,1,HunterExplanation,"tienen HP y Defensa altos,<br>lo que los convierte en luchadores excepcionales por sí mismos."
 CharaInfo,1,RangerExplanation,"-combate a distancia. Los Rangers son capaces de <br>realizar ataques de precisión desde lejos."""
-CharaInfo,1,ForceExplanation,"t. Poseen un alto Poder de Técnica <br>y una diversa pero poderosa variedad de Técnicas."""
+CharaInfo,1,ForceExplanation,Los expertos en el uso de técnicas basadas en fotones<br>son los mejores. Adecuado para combates de largo<br>alcance. Cuentan con alta técnica. Poder y una gama<br>diversa pero poderosa de Técnicas.
 CharaInfo,1,FighterExplanation,Los Fighters sobresalen en combate usando armas ligeras<br>de corto alcance. Su verdadero valor sale a relucir<br>bajo condiciones especiales.
 CharaInfo,1,GunnerExplanation,"a sus oponentes mediante una mezcla <br>de ataques rápidos de proyectiles y alta movilidad."""
 CharaInfo,1,TecherExplanation,"t papel, y es especialmente capaz cuando <br>se trata de mejora y recuperación."
@@ -3248,7 +3248,7 @@ CharaInfo,1,SummonerExplanation,"Participa en la batalla invocando a una mascota
 CharaInfo,1,PokaExplanation,"Esta es una clase especial utilizada en la Arena de Batalla.<br>Está diseñada para el combate entre operativos de ARCAS,<br>y puede ser utilizada para el entrenamiento bajo una amplia gama de condiciones."
 CharaInfo,1,WpnmanExplanation,"Fue concebida para sobresalir en el combate contra grupos de múltiples <br>enemigos. Soporta tres tipos diferentes de armas para llevar a cabo <br>ataques cuerpo a cuerpo, ataques a distancia y Técnicas."
 CharaInfo,1,VillainExplanation,"habilidades, y está bien adaptada para <br>mantenerse en movimiento mientras atraviesa los ataques enemigos."
-CharaInfo,1,MasterExplanation,"un frente ofensivo/defensivo unificado y controlar al enemigo sin mostrarle ningún defecto."""
+CharaInfo,1,MasterExplanation,Clase Scion con énfasis en ATK y DEF de corto alcance. Realiza una batalla sólida con un frente ofensivo/defensivo<br>unificado y controla al enemigo sin mostrarle ningún defecto.
 CharaInfo,1,SlayerExplanation,"estilos de juego basados en el Elemento del Arma,<br>cada uno con capacidades únicas."
 CharaInfo,1,NoPaMessage,No hay artes fotonicas disponibles.
 CharaInfo,1,NoTechnicMessage,No hay tecnicas disponibles.
@@ -5540,7 +5540,7 @@ SkillExplanation,1,PrettyGood,Reduce la duración de las dolencias de estado que
 SkillExplanation,1,Sacrifice,Restaura HP cuando un enemigo muere dentro de un rango fijo mientras Guard Stance está activo.
 SkillExplanation,1,HunterAtpStrikeUp3,Aumenta tu poder cuerpo a cuerpo. Produce un efecto más fuerte que Melee Power Up 2.
 SkillExplanation,1,JustGuardAdvance,Guardia perfecta avanzada.
-SkillExplanation,1,FuryGearBoost,Fury Stance o Guard Stance. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
+SkillExplanation,1,FuryGearBoost,Otorga una bonificación a la tasa de aumento del indicador de enfoque de las armas de cazador durante la postura de furia o la postura de guardia. <yellow>Esta habilidad solo se puede usar con una clase principal.
 SkillExplanation,1,NeverGiveup,Aumentar el nivel de habilidad aumenta el poder cuerpo a cuerpo y extiende aún más la invulnerabilidad.
 SkillExplanation,1,MassiveHunter,Reduce el daño y evita que te lancen al aire o te derriben.
 SkillExplanation,1,AdvanceGuard,Recupera tu HP y el HP de otras personas en las cercanías cuando realizas una Perfect Guard exitosa.
@@ -5840,7 +5840,7 @@ SkillExplanation,1,QuickMate,"Permite el uso acelerado de elementos ""-mate""."
 SkillExplanation,1,BowChargeBonus,Reduce tu consumo de PP y el tiempo de carga para los Photon Arts cargados realizados mientras un Arco está equipado. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,KatanaCounterBonus,se realiza. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,KatanaGearBoost,Aumenta tu Enfoque de Katana y potencia la recuperación de PP. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
-SkillExplanation,1,BraverCombination,al cambiar entre Katana y Arco de Fotones. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
+SkillExplanation,1,BraverCombination,La tasa crítica aumenta cuando está equipado con una Katana o un arco de fotones. El indicador de enfoque activo se mantiene al cambiar entre Katana y Photon Bow. <yellow>Esta habilidad solo se<br>puede usar con una clase principal.
 SkillExplanation,1,BraverHighLevelBonus,Otorga una bonificación al daño infligido por el jugador.
 SkillExplanation,1,BraverNextJump,Permite saltar en dos etapas.
 SkillExplanation,1,BraverFirstArtsJAAddition,"Convierte tu primer ataque en un Ataque Perfecto. Se aplica un tiempo de reutilización tras la activación. No afecta los ataques de Harmonizer, ataques de mascotas o Técnicas."
@@ -6023,7 +6023,7 @@ SkillExplanation,1,VillainSprintTecCharge,Te permite moverte a alta velocidad mi
 SkillExplanation,1,VillainGespenst,eres atacado mientras tu HP está reducido. <yellow>Solo se puede usar con una Clase Principal.
 SkillExplanation,1,VillainAmbivalence,a con una Técnica usando una Vara (Rod). <yellow>Solo se puede usar con una Clase Principal.
 SkillExplanation,1,VillainTouchDown,aterrizaje
-SkillExplanation,1,VillainDodge,g Técnica con un Arma Fantasma. <yellow>Solo disponible con una Clase Principal.
+SkillExplanation,1,VillainDodge,Aumenta el movimiento de carga y otorga invulnerabilidad momentánea después de cargar la técnica con un arma fantasma. <yellow>Solo disponible con una clase principal.
 SkillExplanation,1,PrimalTimePlus2,Aumenta la acumulación de marcadores durante Phantom Time. <yellow>Esta habilidad solo se puede usar con una Clase Principal.
 SkillExplanation,1,VillainHighLevelBonus,Otorga una bonificación al daño infligido por el jugador.
 SkillExplanation,1,VillainAllAttackBonus,Otorga una bonificación al daño infligido por el jugador y las mascotas.
@@ -6073,8 +6073,8 @@ SkillExplanation,1,MasterTimeLeap,"ll be invulnerable for a time (serás invulne
 SkillExplanation,1,MasterWandTeleport,"Cuando se equipa una Varita, muévete una distancia fija y ataca en la dirección que ingresas manteniendo presionado el botón de Acción de Arma por un corto tiempo y soltándolo. <yellow>Esta habilidad solo puede ser usada por una Clase Principal."
 SkillExplanation,1,MasterCountArtsBonus,Usar diferentes Artes Fotónicas en sucesión durante un combo disminuirá el coste de PP para un número fijo de Artes Fotónicas y otorgará una bonificación de daño.
 SkillExplanation,1,MasterJABonus,Otorga una bonificación de daño a los ataques perfectos.
-SkillExplanation,1,MasterDamageThrottling,"efecto de fuentes distintas a objetos, objetos y habilidades de clase Étoile."
-SkillExplanation,1,MasterWandReferenceChange,"lues from weapon Augments (valores de aumentos de arma). <yellow>Esta habilidad solo puede ser usada por una Clase Principal."""
+SkillExplanation,1,MasterDamageThrottling,"Reduce considerablemente el daño recibido, pero también disminuye el efecto de recuperación de HP proveniente de fuentes distintas a objetos y habilidades de la clase Étoile."
+SkillExplanation,1,MasterWandReferenceChange,"Al atacar con varas, los cambios de estado utilizarán los valores más altos de Cuerpo a cuerpo y Técnica provenientes de las mejoras del arma. <yellow>Esta habilidad solo puede ser utilizada por una clase principal."
 SkillExplanation,1,MasterStepAdvance,Extiende la duración de la invulnerabilidad durante un paso lateral o una tirada en picado.
 SkillExplanation,1,SlayerTime,habilidad está activa desatará un ataque poderoso. <yellow>Utilizable solo por una Clase Principal.
 SkillExplanation,1,SlayerStyleFM,l Style (Estilo Fomel) se especializa en repartir ataques totales. <yellow>Utilizable solo por una Clase Principal.
@@ -7069,7 +7069,7 @@ ClassCounter,1,ClassLevel,Nivel (MAX.)
 ClassCounter,1,SkillTreeConfirmTitle,COMPROBAR HABILIDADES
 ClassCounter,1,MainClassChangeMessage,¿Estás seguro de que deseas cambiar tu Clase Principal a<br>Nivel $(1) $(0)?
 ClassCounter,1,MainClassChangeSuccess,Cambiaste tu clase principal.
-ClassCounter,1,SubClassChangeMessage,>¿Está seguro de que desea continuar?
+ClassCounter,1,SubClassChangeMessage,Estás a punto de seleccionar Nivel $(1) $(0) como su<br>Subclase. Se aplicarán los siguientes efectos para<br>la clase que seleccione como su subclase:<br>- Los valores de las estadísticas se complementarán<br>ligeramente.<br>- Las habilidades serán utilizables.<br>- Las artes/técnicas de fotones serán utilizables.<br>¿Está seguro de que desea continuar?
 ClassCounter,1,SubClassChangeMessageVillain,Estás a punto de seleccionar<br>Nivel $(1) $(0) como tu Sub-Clase.<br>Se aplicarán los siguientes efectos<br>a la clase que selecciones como tu Sub-Clase:<br>- Los valores de habilidad de estadística serán ligeramente complementados.<br>- Las habilidades se volverán utilizables.<br>- Las técnicas se volverán utilizables.<br><yellow>Las Artes Fotónicas de $(0) no serán utilizables.<c><br>¿Estás seguro de que deseas continuar?
 ClassCounter,1,SubClassChangeMessageMaster,Estás a punto de seleccionar Nivel $(1) $(0) como tu Sub-Clase.<br>Se aplicarán los siguientes efectos:<br><br>- Los valores de habilidad de estadística serán ligeramente complementados.<br>- Las habilidades se volverán utilizables.<br><yellow>Nota: Las Artes Fotónicas de $(0) no serán utilizables.<c><br><br>¿Estás seguro de que deseas continuar?
 ClassCounter,1,SubClassChangeMessageSlayer,Estás a punto de seleccionar Nivel $(1) $(0) como tu Sub-Clase.<br>Se aplicarán los siguientes efectos:<br><br>- Los valores de habilidad de estadística serán ligeramente complementados.<br>- Las habilidades se volverán utilizables.<br><yellow>Nota: Las Artes Fotónicas de $(0) no serán utilizables.<c><br><br>¿Estás seguro de que deseas continuar?
@@ -7082,10 +7082,10 @@ ClassCounter,1,MainClassChangeFailMessage,Tu clase principal actual es $(0).
 ClassCounter,1,SubClassChangeFailMessage,Tu subclase actual es $(0).
 ClassCounter,1,SubClassChangeWpnmanFailMessage,La clase $(0) no admite la selección de una subclase.
 ClassCounter,1,MainClassChangeWpnmanMessage,<yellow>Nota: Tu subclase actual será eliminada si seleccionas <br>$(0).<c>
-ClassCounter,1,MainClassChangeWpnmanFailMessage,para alcanzar el Nivel 75<br>con cualquier personaje posterior.<c>
-ClassCounter,1,MainClassChangeVillainFailMessage,para alcanzar el Nivel 75<br>con cualquier personaje posterior.<c>
-ClassCounter,1,MainClassChangeEtoileFailMessage,para alcanzar el Nivel 75<br>con cualquier personaje posterior.<c>
-ClassCounter,1,MainClassChangeSlayerFailMessage,para alcanzar el Nivel 75<br>con cualquier personaje posterior.<c>
+ClassCounter,1,MainClassChangeWpnmanFailMessage,"Debes cumplir la siguiente condición para<br>seleccionar la clase $(0).<br><br>- Completar el Pedido de Cliente Cofy titulado<br>[$(0) Prueba de Calificación de Clase]. <yellow>Estará<br>disponible cuando haya de tus clases alcanzan el<br>nivel 75. Después de completar el pedido del<br>cliente una vez, ya no necesitarás alcanzar el<br>nivel 75 con los caracteres posteriores.<c>"
+ClassCounter,1,MainClassChangeVillainFailMessage,"Debes cumplir la siguiente condición para<br>seleccionar la clase $(0).<br><br>- Completar el Pedido de Cliente Cofy titulado<br>[$(0) Prueba de Calificación de Clase]. <yellow>Estará<br>disponible cuando haya de tus clases alcanzan el<br>nivel 75. Después de completar el pedido del<br>cliente una vez, ya no necesitarás alcanzar el<br>nivel 75 con los caracteres posteriores.<c>"
+ClassCounter,1,MainClassChangeEtoileFailMessage,"Debes cumplir la siguiente condición para<br>seleccionar la clase $(0).<br><br>- Completar el Pedido de Cliente Cofy titulado<br>""$(0) Prueba de calificación de clase"". <yellow>Estará<br>disponible cuando haya de tus clases alcanzan el<br>nivel 75. Después de completar el pedido del<br>cliente una vez, ya no necesitarás alcanzar el<br>nivel 75 con los caracteres posteriores.<c>"
+ClassCounter,1,MainClassChangeSlayerFailMessage,"Debes cumplir la siguiente condición para<br>seleccionar la clase $(0).<br><br>- Completar el Pedido de Cliente Cofy titulado<br>""$(0) Prueba de calificación de clase"". <yellow>Estará<br>disponible cuando haya de tus clases alcanzan el<br>nivel 75. Después de completar el pedido del<br>cliente una vez, ya no necesitarás alcanzar el<br>nivel 75 con los caracteres posteriores.<c>"
 ClassCounter,1,SkillTreeAdd,Añadir Árbol de Habilidades <pict Arcscash>
 ClassCounter,1,SkillTreeReset,Mover Árbol de Habilidades <pict Arcscash>
 ClassCounter,1,SkillTreeResetSG,Mover Árbol de Habilidades <pict StarGem>
@@ -7116,13 +7116,13 @@ ClassCounter,1,ClassSelectExplain_v,"tienes múltiples Árboles de Habilidades, 
 ClassCounter,1,SkillTreeAddPath,a la pantalla de <br><yellow>Confirmación de Compra de Pase de Adición de Árbol de Habilidades<c>?<br><br>(Actualmente tienes: $(1))
 ClassCounter,1,SkillTreeAddTicket,<pict Arcscash> <c 5fdf00>Usar artículo comprado previamente<c><br>¿Estás seguro de que quieres usar un <yellow>Pase de Adición de Árbol de Habilidades<c> para<br>añadir un Árbol de Habilidades $(0)?<br><br>(Actualmente tienes: $(1))
 ClassCounter,1,SkillTreeResetPath,<pict Arcscash><c ff4f3f>Pago con AC requerido<c><br>¿Estás seguro de que deseas continuar a la <br>pantalla de <yellow>Confirmación de Compra de Pase de Restablecimiento y Traslado de Árbol de Habilidades<c>?<br><br>Antes del traslado: Árbol de Habilidades $(1)<br>Después del traslado: Árbol de Habilidades $(0)<br>(Actualmente tienes: $(2))
-ClassCounter,1,SkillTreeResetPathSG,(2))
-ClassCounter,1,SkillTreeResetTicket,$(2))
+ClassCounter,1,SkillTreeResetPathSG,<pict StarGem><c 1dedd7>SG Pago requerido<c> ¿Está seguro de que<br>desea continuar con el <yellow>Restablecer<br>árbol de habilidades y pasar pase<c><br>¿Pantalla de confirmación de compra?<br><br>Antes del movimiento: $(1) Árbol de<br>habilidades Después del movimiento:<br>$(0) Árbol de habilidades (Actualmente<br>tienes: $(2))
+ClassCounter,1,SkillTreeResetTicket,<pict Arcscash> <c 5fdf00>Usar artículo comprado anteriormente<c> <br>¿Estás seguro de que quieres utilizar un <yellow>Pase de reinicio y <br>movimiento del árbol de habilidades<c> <br>para mover tu clase de árbol de habilidades?<br><br>Antes del movimiento: $(1) Árbol de habilidades Después del<br>movimiento: $(0) Árbol de habilidades<br><br>(Actualmente tienes: $(2))
 ClassCounter,1,SkillTreeResetTicketSG,<pict StarGem> <c 5fdf00>Usar artículo comprado previamente<c><br>¿Estás seguro de que quieres usar un <yellow>Pase de Restablecimiento y Traslado de Árbol de Habilidades<c><br>para trasladar la clase de tu Árbol de Habilidades?<br><br>Antes del traslado: Árbol de Habilidades $(1)<br>Después del traslado: Árbol de Habilidades $(0)<br><br>(Actualmente tienes: $(2))
 ClassCounter,1,SkillTreeExplain,<c f0df60>Consume Puntos de Habilidad (SP) para aprender Habilidades de Clase. Puedes ganar SP subiendo de nivel. Revisa <%NextTabDetails> <c f0df60>para más detalles.<c>
 ClassCounter,1,SkillTreeExplain_v,<c f0df60>Consume Puntos de Habilidad (SP) para aprender Habilidades de Clase. Puedes ganar SP subiendo de nivel.<c>
 ClassCounter,1,SkillTreeAddExplain,"<c f0df60>Añade un Árbol de Habilidades usando un [Pase de Adición de Árbol de Habilidades] comprado previamente, o comprando uno con ARKS Cash.<c>"
-ClassCounter,1,SkillTreeResetExplain,", o comprando uno con ARKS Cash. Empieza seleccionando el Árbol de Habilidades que quieres restablecer.<c>"
+ClassCounter,1,SkillTreeResetExplain,<c f0df60>Restablece tu árbol de habilidades usando un [Pase de reinicio y movimiento del árbol de habilidades] comprado previamente o comprando uno con ARKS efectivo. Comience<br>seleccionando el árbol de habilidades que desea restablecer.<c>
 ClassCounter,1,SkillTreeResetExplainSG,", o comprando uno con Star Gems. Empieza seleccionando el Árbol de Habilidades que quieres restablecer.<c>"
 ClassCounter,1,SkillTreeResetExplain_v,"<c f0df61>Restablece tu Árbol de Habilidades usando un [Pase de Restablecimiento y Traslado de Árbol de Habilidades] comprado previamente, o comprando uno con ARKS Cash."
 ClassCounter,1,SkillTreeResetExplainSG_v,"Pase de Restablecimiento y Traslado de Árbol de Habilidades], o comprando uno con Star Gems.<c>"
@@ -7492,7 +7492,7 @@ Trade,1,FailByOppFullStackableItem,El comercio fue cancelado porque completar<br
 Trade,1,FailByOppFullMeseta,El comercio fue cancelado porque completar<br>el intercambio excedería el límite de carga de meseta de $(0).
 Trade,1,UrgeToSelectAndDecideItem,"ón [Confirmar Objetos]. Para cancelar el comercio, presiona el botón [Cancelar].<c>"
 Trade,1,WaitOpponentDecideItemGuide,"<c f0df60>Esperando a que el otro jugador ($(0)) confirme sus objetos de intercambio. Para volver a la operación anterior, presiona el botón [Cancelar].<c>"
-Trade,1,UrgeToApproveTradeGuide,"Confirmar Comercio]. Para volver a la operación anterior, presiona el botón [Cancelar].<c>"
+Trade,1,UrgeToApproveTradeGuide,"<c f0df60>Los artículos a intercambiar han sido confirmados. Si está de acuerdo con el intercambio, presione el botón [Confirmar intercambio]. Para volver a la operación<br>anterior, presione el botón [Cancelar].<c>"
 Trade,1,WaitOpponentApproveTradeGuide,"<c f0df60>Esperando a que el otro jugador ($(0)) confirme el comercio. Para volver a la operación anterior, presiona el botón [Cancelar].<c>"
 Trade,1,UrgeToSelectAndDecideItem_v,<c f0df60>Añade el/los objeto(s) que quieres intercambiar y presiona [Confirmar Objetos].<c>
 Trade,1,WaitOpponentDecideItemGuide_v,<c f0df60>Esperando a que $(0) confirme sus objetos.<c>
@@ -7764,7 +7764,7 @@ Visiphon,1,CampaignMenuTab1,Nombre de la campaña
 Visiphon,1,CampaignMenuTab2,Periodo activo
 Visiphon,1,CampaignMenuNoItem,No hay campañas en marcha.
 Visiphon,1,CampaignConfirmTitle,CONFIRMAR RECEPCIÓN
-Visiphon,1,CampaignConfirmMessage,(s).
+Visiphon,1,CampaignConfirmMessage,Estás a punto de recibir los siguientes elementos de la campaña.<br>¿Está seguro de que desea continuar?<br><br>Sólo se podrá realizar una recepción de artículo por cuenta<br>individual. Por favor asegúrese de haber especificado<br>correctamente el barco donde recibirá su(s) artículo(s).
 Visiphon,1,CampaignConfirmCharaMessage,Estás a punto de recibir<br>el/los siguiente(s) artículo(s) de campaña.<br>¿Estás seguro de que deseas continuar?<br><br>Solo se puede realizar una recepción de artículos por personaje.
 Visiphon,1,CampaignError1,La recepción fue cancelada debido a<br>un error inesperado.
 Visiphon,1,CampaignError2,"con espacio en tu inventario,<br>o excederías tu límite de carga."
@@ -7782,13 +7782,13 @@ Visiphon,1,CampaignPlatformEpicGames,- Epic Games
 Visiphon,1,CampaignBondPlatform,$(0)<br>$(1)
 Visiphon,1,CampaignSuccess,Recibiste un artículo de<br>$(0).
 Visiphon,1,CampaignNum,$(0) × $(1)
-Visiphon,1,CharaSaveMessage,br>el Socio correspondiente.<br>Nota: Los accesorios de Alianza no se guardarán.
-Visiphon,1,CharaSaveOverwriteMessage,Tarjeta de Socio<br>no evitará que uses al Socio correspondiente.<br>Nota: Los accesorios de Alianza no se guardarán.
+Visiphon,1,CharaSaveMessage,"Se guardarán los datos del personaje actualmente en uso,<br>y datos correspondientes a sus Socios y Se actualizarán<br>emoticones adicionales. ¿Está seguro de que desea<br>continuar?<br><br>Nota: Puede utilizar Socios adquiriendo Tarjetas de<br>Socio. Guardar datos sin poseer una determinada La<br>tarjeta de socio no le impedirá usar el Socio<br>correspondiente. Nota: Los accesorios de la Alianza no se<br>guardarán."
+Visiphon,1,CharaSaveOverwriteMessage,"El espacio actual ya contiene datos de personajes.<br><br>Los datos del personaje actualmente en uso se utilizarán para<br>sobrescribir el datos existentes, y datos correspondientes a sus Socios<br>y adicionales Los gestos se actualizarán. ¿Está seguro de que desea<br>continuar?<br><br>Nota: Puede utilizar Socios adquiriendo Tarjetas de Socio. Guardar datos<br>sin poseer una determinada Tarjeta de Socio no le impedirá utilizar el<br>Socio correspondiente. Nota: Los accesorios de la Alianza no se<br>guardarán."
 Visiphon,1,CharaSaveSucsessMessage,"Los datos del personaje, Socio y<br>emote adicional<br>han sido guardados."
 Visiphon,1,CharaSaveFailureMessage,"Los datos del personaje, Socio y emote<br>adicional no pudieron guardarse.<br><br>Intenta presionar [Guardar Datos de Retrato] de nuevo."
 Visiphon,1,CharaSaveNone,Sin datos guardados.
 Visiphon,1,CharaSaveMemoryCardNone,"No se puede localizar la tarjeta de memoria.<br><br>Por favor, comprueba que la tarjeta de memoria<br>esté insertada correctamente."
-Visiphon,1,CharaSaveCrashData,los datos se eliminarán y se crearán datos nuevos.<br><br>¿Estás seguro de que deseas continuar?
+Visiphon,1,CharaSaveCrashData,"Parece que tus datos guardados de ""Phantasy Star Online 2"" están dañados.<br>Los datos corruptos se eliminarán y se crearán nuevos datos.<br><br>¿Está seguro de que desea continuar?"
 Visiphon,1,CharaSaveDataSave,Socio invocable<br>y los datos de emote adicional<br>se actualizarán.<br><br>¿Estás seguro de que deseas continuar?
 Visiphon,1,CharaSaveFailureMessage01,No se puede guardar en la tarjeta de memoria actual<br>ya que los datos que se guardan pueden ser fraudulentos.
 Visiphon,1,CharaSaveFailureMessage02,"No se puede guardar tu personaje, Socio<br>y datos de emote adicional, porque no hay<br>suficiente espacio disponible en<br>la tarjeta de memoria actual.<br><br>Asegúrate de que al menos <$capacity> kb de espacio libre<br>estén disponibles en la tarjeta de memoria actual e inténtalo de nuevo."
@@ -8439,7 +8439,7 @@ Synchronize,1,SynchronizeStageClear,etapas completadas
 Synchronize,1,SynchronizeQuestName,Nombre de la mision
 Synchronize,1,SynchronizeBossTitle,TELEPORTADOR
 Synchronize,1,SynchronizeStartTitle,PUERTA DE SALIDA
-Synchronize,1,SynchronizeBossMessage,START GATE
+Synchronize,1,SynchronizeBossMessage,Este Teletransportador se activará<br>automáticamente. una vez que todos los<br>miembros del partido estén presentes.<br><br>Tenga en cuenta que el líder del partido tiene<br>la opción de activar el Teletransportador<br>manualmente para que Los miembros del partido<br>que ya estén presentes pueden establece<br>primero.
 Synchronize,1,SynchronizeBossMessage_ex,Este teletransportador se activará automáticamente cuando todos<br>los miembros del grupo estén presentes.
 Synchronize,1,SynchronizeStartMessage,Esta puerta se abrirá automáticamente una vez que<br>todos los miembros del grupo estén cerca.
 Synchronize,1,SynchronizeButtonForward,Iniciar teletransportación
@@ -8470,7 +8470,7 @@ Synchronize,1,PaidButtonNo,Cancelar
 Synchronize,1,PaidButtonCancel,Cancelar
 Synchronize,1,PaidButtonChange,Cambiar método de pago
 Synchronize,1,PaidSelectTitle,PUERTA DE SALIDA
-Synchronize,1,PaidSelectMessage,PUERTA DE INICIO
+Synchronize,1,PaidSelectMessage,"Para comenzar esta misión, cada miembro del grupo debe<br>pagar los artículos en el [Artículos requeridos]<br>listar individualmente, o el líder debe pagar<br>colectivamente en nombre de todos los miembros. Nota:<br>Si la misión es abandonada o tu conexión al servidor<br>se pierde durante la misión, Los artículos gastados no<br>serán devueltos. ¿Cómo le gustaría pagar?"
 Synchronize,1,PaidSelectTag1,El líder paga por todos
 Synchronize,1,PaidSelectTag2,Cada miembro paga por separado
 Synchronize,1,PaidWaitTitle,PUERTA DE SALIDA
@@ -8485,9 +8485,9 @@ Synchronize,1,EternalWaitSelect,"Por favor, espera hasta que el líder del grupo
 Synchronize,1,EternalSelectWessage,"Por favor, selecciona la etapa<br>que deseas jugar."
 Synchronize,1,EternalPlayFloor,Escenario de juego
 Synchronize,1,EternalFloorChange,Etapa de cambio
-Synchronize,1,PaidLeaderMessage2,Cambiar etapa
+Synchronize,1,PaidLeaderMessage2,"Si se selecciona [El líder paga por todos], el<br>partido El líder necesitará la cantidad de elementos<br>especificados. en la lista actual de [Elementos<br>requeridos].<br><br><c ffff00>[Aumento del nivel de amenaza AQ]<c> El líder puede<br>aumentar su propio nivel de amenaza AQ. agregando<br>una Cápsula Anticipada como parte del pago.<br><br>Cuando el nivel de amenaza AQ aumenta, los enemigos<br>volverse más fuerte y la tasa de generación de raros<br>Los enemigos en el área final aumentan.<br><br>Para aumentar el riesgo en 1 para esta misión, Se<br>necesitarán $(1) $(0)."
 Synchronize,1,PaidMemberMessage3,"Si se selecciona [El líder paga por todos], el líder del grupo <br>necesitará el número de artículos especificados <br>en la lista actual de [Artículos Requeridos].<br><br><c ffff00>[Aumento de Nivel de Amenaza AQ]<c><br>El líder puede aumentar su propio Nivel de Amenaza AQ<br>añadiendo una Cápsula de Avance como parte del pago.<br><br>Cuando se aumenta el Nivel de Amenaza AQ, los enemigos<br>se vuelven más fuertes y aumenta la tasa de aparición de enemigos<br>raros en el área final.<br><br>Para aumentar el Riesgo en 1 para esta misión,<br>se necesitarán $(1) $(0)(s)."
-Synchronize,1,AdvanceRiskMessage,la misión y los niveles de Amenaza AQ del personaje<br>ya no serán los mismos.<c><br>(Tus $(1)s: $(3))
+Synchronize,1,AdvanceRiskMessage,"Puede aumentar el nivel de amenaza AQ al añadiendo<br>$(2) $(0)(s). ¿Está seguro de que desea continuar?<br><br><c ffff00>Hay un límite máximo en el nivel de amenaza AQ. para<br>cada personaje, y el nivel de amenaza AQ no puede ser<br>aumentó más allá de este umbral.<br><br>Nota: Si su líder cambia después de haber aceptado la<br>misión, existe el riesgo de que la misión y el<br>personaje Los niveles de amenaza de AQ ya no serán los<br>mismos.<c> (Tus $(1)s: $(3))"
 Synchronize,1,PaidSelectMessage2,"Puedes aumentar el Nivel de Amenaza AQ <br>añadiendo $(2) $(0)(s).<br>¿Estás seguro de que deseas continuar?<br><br><c ffff00>Hay un límite máximo en el Nivel de Amenaza AQ<br>para cada personaje, y el Nivel de Amenaza AQ no se puede <br>aumentar más allá de este umbral.<br><br>Nota: Si tu líder cambia después de que hayas aceptado <br>la misión, existe el riesgo de que los niveles de Amenaza AQ de la misión y del personaje <br>ya no sean los mismos.<c><br>(Tus $(1)s: $(3))"
 Synchronize,1,AdvanceRiskTitle1,AUMENTAR EL NIVEL DE AMENAZA DE AQ
 Synchronize,1,AdvanceRiskTitle2,NIVEL DE AMENAZA DE AQ
@@ -8503,9 +8503,9 @@ Synchronize,1,AdvanceRiskTitle11,<c ffff00>[CONSUMIR CÁPSULAS DE AVANCE]<c>
 Synchronize,1,AdvanceRiskDisp,Nivel de amenaza AQ: $(0)
 Synchronize,1,AdvanceRiskReset,Aumento de Nivel de Amenaza AQ restablecido debido a que el método de pago cambió.
 Synchronize,1,BootupLandingCraft,ow>Nota: No podrás cancelar una vez que inicies la persecución.<c>
-Synchronize,1,PaidLeaderMessageWarning,¿Quieres continuar?
-Synchronize,1,PaidMemberMessage4,Etapa alcanzada: $(1)
-Synchronize,1,PaidMemberMessage4Warning,"etapa, por lo que, incluso si <br>la completas, tu estado de [Etapa Alcanzada] no se actualizará.<c>"
+Synchronize,1,PaidLeaderMessageWarning,"Si se selecciona [El líder paga por todos], el<br>partido El líder necesitará la cantidad de elementos<br>en el Lista [Elementos requeridos].<br><br><yellow>Nota: Miembros del grupo que aún no han llegado $(0)<br>no tendrá actualizado su estado [Etapa alcanzada].<c><br><br>¿Está seguro de que desea continuar?"
+Synchronize,1,PaidMemberMessage4,Estás a punto de gastar los [Artículos requeridos]<br>necesarios para comienza la búsqueda. Tenga en cuenta que<br>no recuperará estos artículos en caso de que abandones la<br>misión o te desconectes desde el servidor. ¿Está seguro de<br>que desea continuar? Etapa seleccionada: $(0) Tu etapa<br>actual alcanzada: $(1)
+Synchronize,1,PaidMemberMessage4Warning,"Estás a punto de gastar los [Artículos requeridos]<br>necesario para comenzar la búsqueda. Tenga en cuenta que no<br>lo hará recupere estos artículos en caso de que abandonar<br>la misión o estar desconectado desde el servidor. ¿Está<br>seguro de que desea continuar? Etapa seleccionada: $(0) Tu<br>etapa actual alcanzada: <yellow>$(1)<br><br>Aún no has llegado a la etapa seleccionada, por lo que,<br>incluso si bórralo, tu estado [Etapa alcanzada] no se<br>actualizará.<c>"
 Synchronize,1,PaidMemberMessage4Warning2,"Estás a punto de gastar los [Artículos Requeridos]<br>necesarios para iniciar la misión. Ten en cuenta que no<br>recuperarás estos artículos en caso de que<br>abandones la misión o te desconectes<br>del servidor. ¿Estás seguro de que deseas continuar?<br>Etapa seleccionada: $(0)<br>Tu Etapa Alcanzada Actual: <yellow>$(1)<br><br>Aún no has alcanzado la etapa seleccionada, por lo que, incluso si <br>la completas, tu estado de [Etapa Alcanzada] no se actualizará.<c>"
 Synchronize,1,MaxFloorWarning,No se pudo adquirir tu estado de progreso.
 Synchronize,1,MemberMaxFloorWarning,No se pudo adquirir el estado de progreso del miembro.
@@ -8522,7 +8522,7 @@ Synchronize,1,DPP1MultiBossRemove,Detén al vendedor de Ridroid.
 Synchronize,1,DPP1MultiBossStart,Preparativos de combate completos. Implementando Ridroid.
 Synchronize,1,DEMultiBossGoto,Círculo Hechicero activado. Llega al Círculo Hechicero en los próximos 30 segundos.
 Synchronize,1,DEBootup,¿Activar el Círculo Hechicero?
-Synchronize,1,DEMultiBossMessage,e deployed in<br>30 seconds.<br><br>¿Deseas detener el Círculo Hechicero?
+Synchronize,1,DEMultiBossMessage,El Círculo Hechicero ha sido activado. Los<br>miembros del partido en las cercanías serán<br>desplegados en 30 segundos.<br><br>¿Te gustaría detener el Círculo Hechicero?
 Synchronize,1,DEMultiBossRemove,Termina la activación del Círculo Hechicero.
 Synchronize,1,DEMultiBossStart,Activación del Círculo Hechicero completa. Ahora implementando.
 Synchronize,1,BasnetGoto,Se completaron los preparativos para el despliegue. Llega al campamento en los próximos 30 segundos.
@@ -8557,10 +8557,10 @@ Synchronize,1,OmegaMultiBossMessageExc,ll<br>será teletransportado después de 
 Synchronize,1,OmegaMultiBossGotoExc,Anillo de teletransporte activado. Ingresa al anillo de teletransporte dentro del tiempo asignado.
 Synchronize,1,SelectDifficultyQuestLV,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Nivel de Profundidad $(0))"
 Synchronize,1,SelectDifficultyQuestLV0,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)"
-Synchronize,1,SelectDifficultyQuestCountCheck,"Por favor, selecciona una profundidad para tu exploración.<br>(Profundidad Máxima Alcanzada: Aún no se ha realizado ninguna exploración)"
+Synchronize,1,SelectDifficultyQuestCountCheck,¿Quieres comenzar la búsqueda? (Un total de $(0) intentos de<br>supresión permanecer para la misión objetivo)<br><br>El contador de intentos de supresión se pone a cero todos<br>los días a las <utc>20:00</utc>. Los intentos de supresión restantes no<br>utilizados no se renovarán. al día siguiente. Se consumirá<br>un intento de supresión. cuando completes con éxito la<br>misión.
 Synchronize,1,DPP1MultiBossMessageExc,¿Deseas iniciar la misión?<br>(Un total de $(0) intentos de supresión<br>quedan para la misión objetivo)<br><br>El contador de intentos de supresión se restablece cada día a las <utc>20:00</utc>.<br>Cualquier intento de supresión no utilizado no se acumulará<br>para el día siguiente. Se consumirá un intento de supresión<br>cuando completes con éxito la misión.
 Synchronize,1,DPP1MultiBossGotoExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
-Synchronize,1,DEMultiBossMessageExc,Proveedor Ridroid activado. Llega a la lancha de desembarco dentro del tiempo asignado.
+Synchronize,1,DEMultiBossMessageExc,El Círculo Hechicero ha sido activado. Los<br>miembros del partido en los alrededores<br>desplegarse después de un tiempo<br>determinado. ¿Te gustaría detener el Círculo<br>Hechicero?
 Synchronize,1,DEMultiBossGotoExc,Círculo Hechicero activado. Llega al Círculo Hechicero dentro del tiempo asignado.
 Synchronize,1,PhantomShipMultiBossMessageExc,Círculo Hechicero activado. Llega al Círculo Hechicero dentro del tiempo asignado.
 Synchronize,1,PhantomShipMultiBossGotoExc,Dispositivo de embarque AIS activado. Ingresa al hangar AIS dentro del tiempo asignado.
@@ -8610,8 +8610,8 @@ Synchronize,1,CypherMultiBossGotoExc,Teletransportador activado.<br>Ingresa al t
 Synchronize,1,BhMultiBossGoto,Dispositivo de embarque AIS activado. Ingresa al arco del acorazado ARKS en los próximos 30 segundos.
 Synchronize,1,BhMultiBossGotoExc,Dispositivo de embarque AIS activado. Ingresa al arco del acorazado ARKS en los próximos 30 segundos.
 Synchronize,1,BhBootup,¿Activar el dispositivo de embarque AIS?
-Synchronize,1,BhMultiBossMessage,p Bow<br>abordará en 30 segundos.<br><br>¿Apagar el dispositivo de embarque AIS?
-Synchronize,1,BhMultiBossMessageExc,p Bow<br>abordará en 30 segundos.<br><br>¿Apagar el dispositivo de embarque AIS?
+Synchronize,1,BhMultiBossMessage,The AIS Boarding Device has been activated.<br>Members in the ARKS Battleship Bow will<br>board in 30 seconds.<br><br>Shut down the AIS Boarding Device?
+Synchronize,1,BhMultiBossMessageExc,El dispositivo de embarque AIS ha sido<br>activado. Miembros en el ARKS Arco del<br>Acorazado Embarcará en 30 segundos.<br><br>¿Apagar el dispositivo de embarque AIS?
 Synchronize,1,BhMultiBossRemove,Apague el dispositivo de embarque AIS.
 Synchronize,1,BhMultiBossStart,Preparativos de combate completos. Ahora implementando.
 Synchronize,1,DKMultiBossGoto,※※※
@@ -9030,7 +9030,7 @@ ItemCode,0,ErrorItemCodeSpentCIIDMessage,既にアイテムを入手していま
 ItemCode,0,Hint,<c f0df60>16文字のアイテムコードを入力すると、アイテムを入手できます。<c>
 ItemCode,1,Title,INGRESE EL CODIGO DEL ARTICULO
 ItemCode,1,Decide,enviar
-ItemCode,1,Message,imes.<c>
+ItemCode,1,Message,Introduzca un código de artículo.<br><br>Puedes recoger tu artículo seleccionando<br>Almacenamiento del equipo OP en<br>Almacenamiento de recogida en el menú<br>Almacenamiento.<br><br><yellow>Ten en cuenta que tu uso estará<br>restringido hasta el próximo período de<br>mantenimiento si ingrese un código de<br>artículo incorrecto diez veces.<c>
 ItemCode,1,Message_v,Ten en cuenta que tu uso será restringido<br>hasta el próximo periodo de mantenimiento si<br>ingresas un código de artículo inválido diez veces.<c>
 ItemCode,1,ItemGetMessage,Recibido $(0).
 ItemCode,1,ItemGetMessage_Num,Recibido $(0) × $(1).
@@ -9061,7 +9061,7 @@ GoodJob,0,Plus,＋
 GoodJob,0,Cross,×
 GoodJob,1,SendTitle,ENVIAR FELICITACIONES
 GoodJob,1,Decide,enviar
-GoodJob,1,Message,el primero enviado <br>cada día te hará ganar FUN.
+GoodJob,1,Message,"Envía un saludo. Puedes agregar un comentario a tus Kudos. Agregar<br>comentarios ¡Te permite ganar aún más FUN! (Puedes ver más allá<br>comentarios en el Registro de comunicaciones). Nota: Puede ganar<br>FUN hasta diez veces al día enviando Kudos. puedes enviar Múltiples<br>felicitaciones a un jugador en particular, pero solo el primero.<br>enviado cada día le otorgará FUN."
 GoodJob,1,ReceiveTitle,Felicitaciones enviadas
 GoodJob,1,ReceiveMessage,¡Enviaste un Felicitaciones!
 GoodJob,1,Point,Puntos Basicos
@@ -9919,7 +9919,7 @@ TreasureDetail,1,Treasure_079,Tarjeta de Socio de Matoi.<br>Puedes invocar al pe
 TreasureDetail,1,Treasure_080,Un permiso emitido por el Cuartel General de ARKS que<br>te permite explorar el<br>área de la Instalación Flotante de Wopal.
 TreasureDetail,1,Treasure_081,Un permiso emitido por el Cuartel General de ARKS que<br>te permite realizar una exploración sin restricciones<br>del área de la Instalación Flotante de Wopal.
 TreasureDetail,1,Treasure_082,Tarjeta de Socio de Sarah.<br>Puedes invocar al personaje indicado en la<br>tarjeta mediante una terminal en la Nave de Acceso.
-TreasureDetail,1,Treasure_084,que puedes aprovechar<br>al colocarlo en tu inventario.
+TreasureDetail,1,Treasure_084,Regalo del herrero Zig. El arma está imbuida<br>con el poder de Augmentalist que puedes tomar<br>Aprovecha colocándolo en tu inventario.
 TreasureDetail,1,Treasure_085,Regalo del maestro espadero Zig. Arma imbuida<br>con el poder del aumentador que puedes aprovechar<br>al colocarla en tu inventario.
 TreasureDetail,1,Treasure_086,Tarjeta de Socio de Nagisa.<br>Puedes invocar al personaje indicado en la<br>tarjeta mediante una terminal en la Nave de Acceso.
 TreasureDetail,1,Treasure_087,Tarjeta de Socio del Guardián Bermellón Shiki.<br>Puedes invocar al personaje indicado en la<br>tarjeta mediante una terminal en la Nave de Acceso.
@@ -10234,12 +10234,12 @@ Esthetic,1,Esthetic_Enter,Enter Salon
 Esthetic,1,Esthetic_Partner,auxiliares administrativos
 Esthetic,1,Esthetic_Exit,Salir del salon
 Esthetic,1,Esthetic_Help,ariencia y voz. Se requiere un [Pase de Salón] para usar algunas funciones.<c>
-Esthetic,1,EnterConfirmMessage,"ces dentro del Salón se muestran en Star Gems, <br>pero también puedes usar un Pase de Salón que fue comprado <br>con ARKS Cash.<c>"
-Esthetic,1,EnterConfirmMessage2,r><br>¿Estás seguro de que quieres entrar al salón?<br>Pase de Salón: Periodo de Re-edición Compatible: $(0)
-Esthetic,1,EnterConfirmMessage3,para entrar al salón?<br><br>Pase de Cambio de Color: Artículos actualmente siendo re-editados: $(0)<br>Tiempo restante mínimo: $(1)<br>$(2)
+Esthetic,1,EnterConfirmMessage,"No puedes enviar mensajes de chat desde el Salón. Mensajes<br>recibido se guardará en la ventana de registro. Además, fiesta<br>y Las notificaciones de misiones no te llegarán mientras estés<br>en el Salón.<br><br><yellow>Si no tienes espacio en tu inventario, puedes no podrás usar<br>atuendos de tu Almacenamiento de personajes.<c><br><br>¿Estás seguro de que quieres entrar al Salón?<br><br><red>Nota: Los precios dentro del Salón se muestran en SG, pero<br>también puedes usar un Salon Pass que hayas comprado con ARKS<br>Efectivo.<c>"
+Esthetic,1,EnterConfirmMessage2,"No puedes enviar mensajes de chat desde el salón.<br>Los mensajes recibidos se guardarán en la ventana de<br>registro.<br><br>Además, tenga en cuenta que las notificaciones de<br>grupos y misiones no te alcanzará mientras estés en<br>el salón.<br><br><yellow>Si no tienes espacio en tu inventario, no podrás<br>cambiarte y ponerte la ropa guardada en tu<br>Almacenamiento de Personajes.<c><br><br>¿Estás seguro de que quieres entrar al salón? Pase<br>de salón: Período de reedición admitido: $(0)"
+Esthetic,1,EnterConfirmMessage3,"No puedes enviar mensajes de chat desde el salón. Los<br>mensajes recibidos se guardarán en la ventana de<br>registro.<br><br>Además, tenga en cuenta que las notificaciones de grupos<br>y misiones no te alcanzará mientras estés en el salón.<br><br><yellow>Si no tienes espacio en tu inventario, no podrás<br>cambiarte y ponerte la ropa guardada en tu<br>Almacenamiento de Personajes.<c><br><br>¿Estás seguro de que quieres entrar al salón?<br><br>Pase de cambio de color: elementos que se están<br>reeditando actualmente: $(0) Tiempo mínimo restante:<br>$(1) $(2)"
 Esthetic,1,EnterConfirmMessage4,"No puedes enviar mensajes de chat desde el salón. <br>Los mensajes recibidos se guardarán en la Ventana de Registro.<br><br>Además, ten en cuenta que las notificaciones de grupo y misión <br>no te llegarán mientras estés en el salón.<br><br><yellow>Si no tienes espacio en tu inventario, <br>no podrás cambiarte a atuendos almacenados <br>en tu Almacenamiento de Personaje.<c><br><br>¿Estás seguro de que quieres entrar al salón?<br>Pase de Salón: Periodo de Re-edición Compatible: $(0)"
-Esthetic,1,EnterConfirmMessage5,seguro de que quieres entrar al salón?<br><br>Creación de Personaje: Tiempo restante para re-editar: $(0)
-Esthetic,1,EnterConfirmMessage6,Creación de Personaje: Tiempo restante para re-editar: $(0)<br>Pase de Cambio de Color: Artículos editables: $(1)<br>Tiempo restante mínimo: $(2)<br>$(3)
+Esthetic,1,EnterConfirmMessage5,"El chat no está disponible dentro del salón. Los<br>mensajes recibidos permanecerán en la ventana de<br>registro. Además, tenga en cuenta que las<br>notificaciones relacionadas con No se recibirán<br>fiestas ni misiones.<br><br><yellow>No podrás cambiarte a trajes en el<br>almacenamiento de tu personaje a menos que tener<br>suficiente espacio de inventario.<c><br><br>¿Estás seguro de que quieres entrar al salón?<br><br>Creación de personaje: Tiempo restante para<br>reeditar: $(0)"
+Esthetic,1,EnterConfirmMessage6,El chat no está disponible dentro del salón.<br>Mensajes recibido permanecerá en la ventana de<br>registro.<br><br>Tenga en cuenta que las notificaciones<br>relacionadas con las partes y no se recibirán<br>misiones.<br><br><yellow>No podrás cambiarte a trajes en el<br>almacenamiento de tu personaje a menos que tener<br>suficiente espacio de inventario.<c><br><br>¿Estás seguro de que quieres entrar al salón?<br><br>Creación de personaje: Tiempo restante para<br>reeditar: $(0) Pase de cambio de color:<br>Elementos editables: $(1) Mín. Tiempo restante:<br>$(2) $(3)
 Esthetic,1,Esthetic_More,$(0) Minutos restantes
 Esthetic,1,Esthetic_Less,Hace menos de 1 minuto
 Esthetic,1,Esthetic_None,Se acabó el tiempo
@@ -10255,18 +10255,18 @@ Esthetic,1,Esthetic_Pop_PartnerInitialization,Restablecer disposición y afinida
 Esthetic,1,Esthetic_Pop_PartnerPrimeField,Recrear Auxiliar <pict Arcscash>
 Esthetic,1,Esthetic_CharaMake,Realizar cambio de personaje
 Esthetic,1,Esthetic_Back,Atrás
-Esthetic,1,EnterConfirm_SP_Message,"el salón están en Star Gems, pero <br>puedes usar un Pase de Salón comprado con ARKS Cash.<c>"
-Esthetic,1,EnterConfirm_SP_Message2,al salón?<br><br>Pase de Salón: Periodo de Re-edición Compatible: $(0)
-Esthetic,1,EnterConfirm_SP_Message3,-Pase de Cambio: Artículos siendo re-editados: $(0)<br>Tiempo restante mínimo: $(1)<br>$(2)
-Esthetic,1,EnterConfirm_SP_Message4,Periodo de Re-edición:$(0)<br>Pase de Cambio de Color: Artículos siendo re-editados: $(1)<br>Tiempo restante mínimo: $(2)<br>$(3)
-Esthetic,1,EnterConfirm_SP_Message5,ón?<br><br>Creación de Personaje: Tiempo restante para re-editar: $(0)
+Esthetic,1,EnterConfirm_SP_Message,"No puedes enviar mensajes de chat mientras Auxiliary<br>está en el salón. Los mensajes recibidos se guardarán<br>en la ventana de registro.<br><br><yellow>Si no tienes suficiente espacio en tu inventario, no<br>podrás cambiarte de ropa desde tu Almacenamiento de<br>Personajes.<c><br><br>¿Estás seguro de que quieres enviar Auxiliar al salón?<br><br><red>Nota: Los precios en el salón están en Star Gems, pero<br>puedes usar un Salon Pass comprado con ARKS Efectivo.<c>"
+Esthetic,1,EnterConfirm_SP_Message2,"No puedes enviar mensajes de chat mientras Auxiliary está<br>en el salón. Los mensajes recibidos se guardarán en la<br>ventana de registro.<br><br><yellow>Si no tienes suficiente espacio en tu inventario, no<br>podrá cambiarse a atuendos almacenados en tu<br>Almacenamiento de Personajes.<c><br><br>¿Estás seguro de que quieres enviar tu ¿Auxiliar del<br>salón?<br><br>Pase de salón: Período de reedición admitido: $(0)"
+Esthetic,1,EnterConfirm_SP_Message3,"No puedes enviar mensajes de chat mientras Auxiliary está<br>en el salón. Los mensajes recibidos se guardarán en la<br>ventana de registro.<br><br><yellow>Si no tienes suficiente espacio en tu inventario, no<br>podrás cambiarte de ropa desde tu Almacenamiento de<br>Personajes.<c><br><br>¿Estás seguro de que quieres enviar Auxiliar al salón?<br><br>Pase de cambio de color: elementos que se están<br>reeditando: $(0) Tiempo mínimo restante: $(1) $(2)"
+Esthetic,1,EnterConfirm_SP_Message4,"No puedes enviar mensajes de chat mientras Auxiliary está<br>en el salón. Los mensajes recibidos se guardarán en la<br>ventana de registro.<br><br><yellow>Si no tienes suficiente espacio en tu inventario, no<br>podrás cambiarte de ropa almacenado en tu Almacenamiento<br>de Personajes.<c><br><br>¿Estás seguro de que quieres enviar Auxiliar al salón?<br><br>Pase de salón: Período de reedición admitido:$(0) Pase de<br>cambio de color: elementos que se están reeditando: $(1)<br>Mín. Tiempo restante: $(2) $(3)"
+Esthetic,1,EnterConfirm_SP_Message5,El chat no está disponible mientras tengas un Auxiliar en el<br>salón. Los mensajes que reciba permanecerán en la ventana de<br>registro.<br><br><yellow>No podrás cambiarte de ropa en tu Almacenamiento de<br>personajes a menos que tengas suficiente espacio en el<br>inventario.<c><br><br>¿Estás segura de que quieres traer tu Auxiliar al salón?<br><br>Creación de personaje: Tiempo restante para reeditar: $(0)
 Esthetic,1,EnterConfirm_SP_Message6,"No puedes enviar mensajes de chat mientras el Auxiliar está en el <br>salón. Los mensajes recibidos se guardarán en la Ventana de Registro.<br><br><yellow>Si no tienes suficiente espacio en tu<br>inventario, no podrás cambiarte a atuendos <br>almacenados en tu Almacenamiento de Personaje.<c><br><br>¿Estás seguro de que quieres enviar al Auxiliar al salón?<br><br>Pase de Salón: Periodo de Re-edición Compatible:$(0)<br>Pase de Cambio de Color: Artículos siendo re-editados: $(1)<br>Tiempo restante mínimo: $(2)<br>$(3)"
 Esthetic,1,Standard_Result_OK,Procesamiento exitoso.
 Esthetic,1,Standard_Result_NoFlag,El procesamiento falló. Aún no cumples con las<br>condiciones requeridas para adquirir un<br>Auxiliar.
 Esthetic,1,Standard_Result_SystemError,El procesamiento falló debido a un error del sistema.
 Esthetic,1,Standard_Result_DBError,El procesamiento falló debido a un error de la base de datos.
 Esthetic,1,Standard_Result_Error,El procesamiento falló.
-Esthetic,1,Charamake_NewCreate,"base del personaje.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
+Esthetic,1,Charamake_NewCreate,"No puedes enviar mensajes de chat mientras estás en el salón. Los mensajes que reciba se conservarán en la<br>ventana de registro.<br><br>Además, ten en cuenta que las notificaciones relacionadas con grupos y misiones no te llegarán mientras estés en<br>el salón.<br><br>¿Estás seguro de que te gustaría ingresar al salón y crear un nuevo Auxiliar?<br><br><yellow>Ten en cuenta que los auxiliares se guardan por carácter.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
 Esthetic,1,Charamake_Message,"base del personaje.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
 Esthetic,1,Charamake_Num,$(0) restante
 Esthetic,1,Charamake_UseInfo,"No puedes enviar mensajes de chat mientras estás en el salón. Los mensajes que recibas se conservarán en la Ventana de Registro.<br><br>Además, ten en cuenta que las notificaciones relacionadas con grupos y misiones no te llegarán mientras estés en el salón.<br><br>¿Estás seguro de que deseas entrar al salón y crear un nuevo Auxiliar?<br><br><yellow>Ten en cuenta que los Auxiliares se guardan por cada personaje.<c><br><br>Para usar el Auxiliar que has creado, inicia sesión como el mismo personaje la próxima vez que juegues."
@@ -10289,9 +10289,9 @@ Esthetic,1,Reset_Result_DBError,El reinicio del auxiliar falló debido a un erro
 Esthetic,1,Reset_Result_Error,Falló el reinicio del auxiliar.
 Esthetic,1,DirectUse_Title,CONFIRMAR USO DEL ARTÍCULO
 Esthetic,1,DirectBuy_Title,CONFIRMAR COMPRA DE PASE
-Esthetic,1,Remake_Message,"Recrear un Auxiliar restablecerá su apariencia,<br>disposición, afinidad y nivel de clase.<c>"
-Esthetic,1,Remake_BuyMessage,CONFIRMAR USO DE ARTÍCULO
-Esthetic,1,Remake_UseMessage,afinidad y nivel de clase.<c>
+Esthetic,1,Remake_Message,"No puedes enviar mensajes de chat mientras estás en el<br>salón. Los mensajes que reciba se conservarán en la ventana<br>de registro.<br><br>Además, tenga en cuenta que las notificaciones relacionadas<br>con fiestas y misiones no te alcanzará mientras estés en el<br>salón.<br><br>Estás a punto de ingresar al salón y recrear tu Auxiliar.<br>¿Está seguro de que desea continuar?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su apariencia,<br>disposición, afinidad y nivel de clase.<c>"
+Esthetic,1,Remake_BuyMessage,"<pict Arcscash> <c ff4f3f>AC Pago requerido<c> Se requiere un <yellow>Pase de reinicio<br>auxiliar<c> para poder recrear tu Auxiliar.<br><br>¿Estás seguro de que quieres pagar 500 AC para comprar<br>un <yellow>Pase de reinicio de auxiliar<c> y recrear tu auxiliar<br>ahora?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su<br>apariencia, disposición, afinidad y nivel de clase.<c><br><br><yellow>Tu AC: $(0)<c>"
+Esthetic,1,Remake_UseMessage,"<pict Arcscash> <c 5fdf00>Usar artículo comprado anteriormente<c> Se utilizará un <yellow>Pase<br>de reinicio auxiliar<c> comprado previamente para recrea tu<br>Auxiliar ahora. ¿Está seguro de que desea continuar?<br><br><red>Nota: Al recrear un Auxiliar se restablecerá su apariencia,<br>disposición, afinidad y nivel de clase.<c>"
 Esthetic,1,Remake_OK,Tu Auxiliar ha sido restablecido a su estado original.
 Esthetic,1,Remake_PointError,El reinicio del auxiliar falló debido a AC insuficiente.
 Esthetic,1,Remake_ErrorNoPartner,Tu Auxiliar no se pudo restablecer porque no se encontró el Auxiliar especificado.
@@ -10300,10 +10300,10 @@ Esthetic,1,Remake_ErrorDB,El reinicio del auxiliar falló debido a un error de l
 Esthetic,1,Remake_Error,No se puede restablecer tu auxiliar.
 Esthetic,1,Cast_color,Seleccionar color
 Esthetic,1,Item_EnterConfirmMessage,"sible dentro del Salón, <br>y no se recibirán notificaciones del juego."
-Esthetic,1,Item_EnterConfirmMessage2,<br>y no se recibirán notificaciones del juego.<br><br>Pase de Salón: Tiempo restante para re-editar: $(0)
-Esthetic,1,Item_EnterConfirmMessage3,Seleccionar Color
+Esthetic,1,Item_EnterConfirmMessage2,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Salon Pass: Tiempo restante para volver a editar:<br>$(0)"
+Esthetic,1,Item_EnterConfirmMessage3,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Pase de cambio de color: elementos editables:<br>$(0) Tiempo mínimo restante: $(1) $(2)"
 Esthetic,1,Item_EnterConfirmMessage4,"¿Dejar tus Aposentos Personales e ir al Salón?<br>Nota: El chat no está disponible dentro del Salón, <br>y no se recibirán notificaciones del juego."
-Esthetic,1,Item_EnterConfirmMessage5,y no se recibirán notificaciones del juego.<br><br>Creación de Personaje: Tiempo restante para re-editar: $(0)
+Esthetic,1,Item_EnterConfirmMessage5,"¿Dejar tu habitación personal e ir al salón?<br>Nota: el chat no está disponible dentro del<br>salón, y no se recibirán notificaciones dentro<br>del juego.<br><br>Creación de personaje: Tiempo restante para<br>volver a editar: $(0)"
 Esthetic,1,Item_EnterConfirmMessage6,"¿Dejar tus Aposentos Personales e ir al salón?<br>Nota: El chat no está disponible dentro del salón, <br>y no se recibirán notificaciones del juego.<br><br>Pase de Cambio de Color: Artículos editables: $(0)<br>Tiempo restante mínimo: $(1)<br>$(2)"
 Esthetic,1,Esthetic_CampaignTimeHead,Periodo de campaña
 Esthetic,1,Esthetic_CampaignTime,Hasta $(0)
@@ -10532,7 +10532,7 @@ License,1,LicenseGetMessage,Adquiriste los siguientes títulos.
 License,1,Help,<c f0df60>Solo puedes recibir una recompensa una vez por cada título que adquieras. Selecciona un título.<c>
 License,1,LicenseTitle,LISTA DE TÍTULOS ADQUIRIDOS
 License,1,RewardTitle,"RECOMPENSA POR ""$(0)"""
-License,1,RewardSet,<c f0df60>Solo puedes recibir una recompensa una vez por cada título que adquieras. Selecciona un título.<c>
+License,1,RewardSet,Ha configurado su título en <yellow>$(0)<c>.<br><br>Seleccione [Establecer título/nombre de personaje<br>actualmente] en [Alternar visualización superior de<br>caracteres] en Menú rápido para mostrar el título<br>que acaba de configurar.
 License,1,RewardClear,Titulo eliminado.
 License,1,RewardSetTitle,ESTABLECER TITULO
 License,1,ActivityMsg,"¡Recompensa recibida por ""$(0)""!"
@@ -10979,10 +10979,10 @@ BlockhelpMessage,1,Block_help_teamroom,"チャレンジクエストをプレイ�
 BlockhelpMessage,1,Block_help_publicship,Puedes jugar con gente de otros barcos<br>en este barco.
 BlockhelpMessage,1,Block_help_publicship_poka,modo [Arena de Batalla] en el lobby y<br>afina tus habilidades desafiando a otros al combate.
 BlockhelpMessage,1,Block_help_publicship_challenge,"e,<br>donde los jugadores tienen la tarea de cooperar para<br>superar varias pruebas y completar cada etapa."
-BlockhelpMessage,1,Block_help_publicship_to_challenge_block,Puedes jugar con gente de otros barcos<br>en este barco.
+BlockhelpMessage,1,Block_help_publicship_to_challenge_block,"En este lobby, puedes jugar en el modo<br>[Desafío], donde los jugadores tienen la tarea<br>de cooperar para Supera varias pruebas y<br>completa cada etapa."
 BlockhelpMessage,1,Block_help_publicship_to_poka_block,Puedes jugar en modo [Arena de Batalla] en este lobby<br>y afinar tus habilidades desafiando a otros<br>al combate.
 BlockhelpMessage,1,Block_help_myship,Este es el barco al que perteneces.
-BlockhelpMessage,1,Block_help_Message_001,¡también<br>pueden unirse! El matchmaking multibarco está<br>restringido a bloques del mismo nombre.
+BlockhelpMessage,1,Block_help_Message_001,Este bloque es donde los principiantes pueden<br>jugar juntos. Los jugadores veteranos dispuestos a<br>ayudar a los principiantes también bienvenido a<br>unirse! Emparejamiento multibloque restringido a<br>bloques del mismo nombre.
 BlockhelpMessage,1,Block_help_Message_002,"Este bloque es donde los jugadores que quieren<br>jugar misiones Normales pueden reunirse,<br>independientemente del campo."
 BlockhelpMessage,1,Block_help_Message_003,"Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles pueden reunirse,<br>independientemente del campo."
 BlockhelpMessage,1,Block_help_Message_004,"Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles pueden reunirse,<br>independientemente del campo."
@@ -11010,16 +11010,16 @@ BlockhelpMessage,1,Block_help_Message_025,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_026,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Ataque de Tiempo formen<br>un grupo.
 BlockhelpMessage,1,Block_help_Message_027,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Avance formen un grupo.
 BlockhelpMessage,1,Block_help_Message_028,¡Misiones de Historia!<br>Nota: El matchmaking multibarco está restringido<br>a bloques del mismo nombre.
-BlockhelpMessage,1,Block_help_Message_029,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Ataque de Tiempo formen<br>un grupo.
+BlockhelpMessage,1,Block_help_Message_029,"Este bloque es para jugadores que deseen<br>comunicarse. con otros jugadores, y es útil para<br>reunirse con ¡Amigos y reclutando miembros de la<br>alianza! multibloque emparejamiento restringido a<br>bloques del mismo nombre."
 BlockhelpMessage,1,Block_help_Message_030,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Avance formen un grupo.
 BlockhelpMessage,1,Block_help_Message_031,Este bloque puede ser utilizado libremente por los jugadores para cualquier<br>propósito. Matchmaking multibarco restringido<br>a bloques del mismo nombre.
 BlockhelpMessage,1,Block_help_Message_032,"Este bloque es para jugadores que desean comunicarse<br>con otros jugadores, ¡y es útil para reunirse con<br>Amigos y reclutar miembros de alianza! Matchmaking multibarco<br>restringido a bloques del mismo nombre."
 BlockhelpMessage,1,Block_help_Message_033,"matchmaking restringido a bloques del mismo nombre.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_034,"<br>independientemente del campo. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_035,"<br>independientemente del campo. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_034,"Este bloque es donde los jugadores que<br>quieran jugar misiones normales se<br>pueden reunir, independientemente del<br>campo. [Juego cruzado con Versiones ""PS<br>Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_035,"Este bloque es donde los jugadores que<br>quieran jugar misiones difíciles pueden<br>reunirse, independientemente del campo.<br>[Juego cruzado con Versiones ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_036,"Este bloque es donde los principiantes pueden jugar juntos.<br>¡Los jugadores veteranos también son bienvenidos! Matchmaking multibarco<br>restringido a bloques del mismo nombre.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_037," Misión de Ataque de Tiempo para formar<br>un grupo. [Juego cruzado con ""PS Vita"" y<br>""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_038," Misión para formar un grupo.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_038,"Este bloque está diseñado para ponérselo fácil a los<br>jugadores. que quieran jugar una misión avanzada<br>para formar un grupo. [Juego cruzado con las<br>versiones ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_039,"Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles pueden reunirse,<br>independientemente del campo. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_040,"Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Ataque de Tiempo formen<br>un grupo. [Juego cruzado con ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_041,"Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión de Avance formen un grupo.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
@@ -11032,12 +11032,12 @@ BlockhelpMessage,1,Block_help_Message_047,la misión de luminarios pueden<br>reu
 BlockhelpMessage,1,Block_help_Message_048,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Altar del Dragón<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_049,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión Extrema formen un grupo.
 BlockhelpMessage,1,Block_help_Message_050,"campo<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_051," Misión para formar un grupo.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_051,"Este bloque está diseñado para ponérselo fácil a los<br>jugadores. que quieran jugar una Búsqueda Extrema<br>para formar un grupo. [Juego cruzado con las<br>versiones ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_052,Este bloque es donde los jugadores que quieren<br>jugar misiones Normales en el campo Costa<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_053,Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Costa<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_054,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Costa<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_055,"<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_056,"<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_055,"Este bloque es donde los jugadores que<br>quieran jugar misiones normales en el<br>campo de la costa pueden reunirse.<br>[Juego cruzado con Versiones ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_056,"Este bloque es donde los jugadores que<br>quieran jugar misiones difíciles en el<br>campo de la costa pueden reunirse.<br>[Juego cruzado con Versiones ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_057,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Costa<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_058,Este bloque es donde los jugadores que quieren jugar<br>misiones Normales en Naverius pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_059,Este bloque es donde los jugadores que quieren jugar<br>misiones Difíciles en Naverius pueden reunirse.
@@ -11051,18 +11051,18 @@ BlockhelpMessage,1,Block_help_Message_066,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_067,Este bloque es donde los jugadores que quieren jugar<br>misiones Normales en Wopal pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_068,Este bloque es donde los jugadores que quieren jugar<br>misiones Difíciles en Wopal pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_069,Este bloque es donde los jugadores que quieren jugar<br>misiones Muy Difíciles en Wopal pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_070,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_071,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_070,"Este bloque es donde los jugadores que quieran jugar<br>Las misiones normales en Naverius se pueden reunir.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_071,"Este bloque es donde los jugadores que quieran jugar<br>Se pueden reunir misiones difíciles en Naverius.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_072,Este bloque es donde los jugadores que quieren jugar<br>misiones Muy Difíciles en Wopal pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_073,"Este bloque es donde los jugadores que quieren jugar<br>misiones Normales en Naverius pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_074,"Este bloque es donde los jugadores que quieren jugar<br>misiones Difíciles en Naverius pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_075,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_076,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_077,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_075,"Este bloque es donde los jugadores que quieran jugar<br>Se pueden reunir misiones muy difíciles en Lillipa.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_076,"Este bloque es donde los jugadores que quieran jugar<br>Las misiones normales en Amduskia se pueden reunir.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_077,"Este bloque es donde los jugadores que quieran jugar<br>Se pueden reunir misiones difíciles en Amduskia.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_078,"Este bloque es donde los jugadores que quieren jugar<br>misiones Muy Difíciles en Lillipa pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_079,"Este bloque es donde los jugadores que quieren jugar<br>misiones Normales en Amduskia pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_080,"Este bloque es donde los jugadores que quieren jugar<br>misiones Difíciles en Amduskia pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_081,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_081,"Este bloque es donde los jugadores que quieran jugar<br>Se pueden reunir misiones muy difíciles en Wopal.<br>[Juego cruzado con las versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_082,Este bloque es donde los jugadores que quieren<br>jugar misiones Normales en el campo Mina Abandonada<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_083,Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Mina Abandonada<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_084,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Mina Abandonada<br>pueden reunirse.
@@ -11084,28 +11084,28 @@ BlockhelpMessage,1,Block_help_Message_099,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_100,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Lillipa pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_101,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Amduskia pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_102,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Wopal pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_103,"r,<br>independientemente del campo. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_103,"Este bloque es donde los jugadores que quieran<br>jugar misiones súper difíciles se pueden reunir,<br>independientemente del campo. [Juego cruzado con<br>""PS Vita"" y versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_104,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Amduskia pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_105,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Wopal pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_106,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles pueden reunirse,<br>independientemente del campo. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_107,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Bosque<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_108,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Cuevas Volcánicas<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_109,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Desierto<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_110,"campo<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_110,"Este bloque es donde los jugadores que quieran<br>juega misiones súper difíciles en el campo de<br>ruinas pueden reunirse. [Juego cruzado con ""PS<br>Vita"" y versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_111,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Pozos Subterráneos<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_112,"campo<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_112,"Este bloque es donde los jugadores que quieran<br>juega misiones súper difíciles en el campo de<br>la costa pueden reunirse. [Juego cruzado con<br>""PS Vita"" y versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_113,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Ruinas<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_114,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Altar del Dragón<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_115,"r>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_115,"Este bloque es donde los jugadores que quieran<br>juega misiones súper difíciles en Lillipa<br>pueden reunirse. [Juego cruzado con ""PS Vita"" y<br>versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_116,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Mina Abandonada<br>pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_117,">pueden reunirse. [Juego cruzado con ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_117,"Este bloque es donde los jugadores que quieran<br>juega misiones súper difíciles en Wopal pueden<br>reunirse. [Juego cruzado con ""PS Vita"" y<br>versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_118,Este bloque es donde los jugadores que quieren<br>jugar misiones Normales en el campo Fondo Marino<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_119,Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Fondo Marino<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_120,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Fondo Marino<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_121,Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Fondo Marino<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_122,Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Fondo Marino<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_123,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Fondo Marino<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_124,"campo<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_124,"Este bloque es donde los jugadores que<br>quieran juega misiones muy difíciles en<br>el campo del fondo marino pueden<br>reunirse. [Juego cruzado con Versiones<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_125,"Este bloque es donde los jugadores que quieren<br>jugar misiones Normales en el campo Fondo Marino<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_126,"Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Fondo Marino<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_127,"br>Misión del Festival Frente Unido ARKS 2014 para formar un grupo.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
@@ -11117,8 +11117,8 @@ BlockhelpMessage,1,Block_help_Message_132,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_133,Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles en Harukotan pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_134,Este bloque es donde los jugadores que quieren jugar<br>misiones Difíciles en Harukotan pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_135,Este bloque es donde los jugadores que quieren jugar<br>misiones Muy Difíciles en Harukotan pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_136,"pueden reunirse.<br>[Juego cruzado con ""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_137,"pueden reunirse<br>juntos. [Juego cruzado con ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_136,"Este bloque es donde los jugadores que quieran jugar<br>Se pueden reunir misiones muy difíciles en<br>Harukotan. [Juego cruzado con las versiones ""PS<br>Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_137,"Este bloque es donde los jugadores que<br>quieran jugar Se pueden reunir misiones<br>súper difíciles en Harukotan juntos. [Juego<br>cruzado con ""PS Vita"" y Versiones<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_138,Este bloque es donde los jugadores que quieren<br>jugar misiones Normales en el campo Provincia del Amanecer<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_139,Este bloque es donde los jugadores que quieren<br>jugar misiones Difíciles en el campo Provincia del Amanecer<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_140,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Provincia del Amanecer<br>pueden reunirse.
@@ -11139,18 +11139,18 @@ BlockhelpMessage,1,Block_help_Message_154,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_155,"campo<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_156,"Este bloque es donde los jugadores que quieren<br>jugar misiones Extremadamente Difíciles pueden reunirse,<br>independientemente del campo."
 BlockhelpMessage,1,Block_help_Message_157,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión Definitiva formen un grupo.
-BlockhelpMessage,1,Block_help_Message_158,"her,<br>independientemente del campo. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_158,"Este bloque es donde los jugadores que quieran<br>jugar misiones extremadamente difíciles se<br>pueden reunir, independientemente del campo.<br>[Juego cruzado con Versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_159,"Este bloque es donde los jugadores que quieren<br>jugar misiones Extremadamente Difíciles pueden reunirse,<br>independientemente del campo."
 BlockhelpMessage,1,Block_help_Message_160,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión Recomendada formen<br>un grupo.
-BlockhelpMessage,1,Block_help_Message_161," Misión para formar<br>un grupo. [Juego cruzado con ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_161,"Este bloque está diseñado para ponérselo fácil a<br>los jugadores. que quieran jugar una misión<br>recomendada para formar una fiesta. [Juego cruzado<br>con ""PS Vita"" y Versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_162,Este bloque es donde los jugadores que quieren jugar una<br>Misión Definitiva o una misión Extremadamente Difícil pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_163,Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión Recomendada formen<br>un grupo.
 BlockhelpMessage,1,Block_help_Message_164,"Este bloque está diseñado para facilitar que los jugadores<br>que quieren jugar una Misión Recomendada formen<br>un grupo. [Juego cruzado con ""PS Vita"" y<br>""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_165,"misiones solo se pueden aceptar en un Bloque de Desafío.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_165,"Este bloque es donde los jugadores que quieran<br>jugar se puede reunir una misión de desafío.<br>Desafío Las misiones sólo se pueden aceptar en un<br>bloque de desafío. [Juego cruzado con las versiones<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_166,"Este bloque es donde los jugadores que quieren jugar una<br>Misión Definitiva o una misión Extremadamente Difícil pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_167,"ran<br>jugadores también son bienvenidos!<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_168,Este bloque es donde los jugadores que quieren disfrutar<br>de una Misión de Desafío a un ritmo más suave<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_169,"ce pueden reunirse<br>juntos. [Juego cruzado con ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_169,"Este bloque es donde los jugadores que quieran<br>disfrutar una misión de desafío a un ritmo más<br>suave puede reunir juntos. [Juego cruzado con<br>""PS Vita"" y Versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_170,Este bloque es donde los jugadores que quieren<br>probar diferentes estrategias para completar una<br>Misión de Desafío pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_171,Este bloque es donde los jugadores que quieren disfrutar<br>de una Misión de Desafío a un ritmo más suave<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_172,"Este bloque es donde los jugadores que quieren disfrutar<br>de una Misión de Desafío a un ritmo más suave pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
@@ -11167,10 +11167,10 @@ BlockhelpMessage,1,Block_help_Message_182,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_183,Este bloque es donde los jugadores que quieren<br>jugar misiones Muy Difíciles en el campo Tokio<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_184,Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Tokio<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_185,Este bloque es donde los jugadores que quieren<br>jugar misiones Extremadamente Difíciles en el campo Tokio<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_186,"<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
-BlockhelpMessage,1,Block_help_Message_187,"br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_186,"Este bloque es donde los jugadores que<br>quieran jugar misiones normales en el<br>campo de Tokio pueden reunirse. [Juego<br>cruzado con Versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_187,"Este bloque es donde los jugadores que<br>quieran juega misiones difíciles en el<br>campo de Tokio pueden reunirse. [Juego<br>cruzado con Versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_188,Este bloque es donde los jugadores que quieren<br>jugar misiones Extremadamente Difíciles en el campo Tokio<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_189,"campo<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_189,"Este bloque es donde los jugadores que<br>quieran juega misiones súper difíciles en<br>el campo de Tokio pueden reunirse. [Juego<br>cruzado con Versiones ""PS Vita"" y<br>""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_190,"campo<br>pueden reunirse. [Juego cruzado con<br>""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_191,Este bloque es donde los jugadores pueden participar en<br>la Recolección (Gathering). Recomendado para aquellos que<br>quieren jugar con amigos.
 BlockhelpMessage,1,Block_help_Message_192,"Este bloque es donde los jugadores que quieren<br>jugar misiones Súper Difíciles en el campo Tokio<br>pueden reunirse. [Juego cruzado con versiones de<br>""PS Vita"" y ""PC""/""PS4"".]"
@@ -11191,7 +11191,7 @@ BlockhelpMessage,1,Block_help_Message_206,"y <br>pueden reunirse. [Admite juego 
 BlockhelpMessage,1,Block_help_Message_207,Este bloque está diseñado para facilitar<br>a los jugadores que quieren jugar en el campo de<br>Las Vegas formar un grupo.
 BlockhelpMessage,1,Block_help_Message_208,Este bloque es donde los jugadores que quieren<br>jugar una Misión Ridroid en dificultad Extremadamente Difícil<br>pueden reunirse.
 BlockhelpMessage,1,Block_help_Message_209,Este bloque es donde los jugadores que quieren<br>jugar misiones Extremadamente Difíciles en el campo de Las Vegas<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_210,"campo<br>pueden reunirse. [Juego cruzado con versiones de ""PS Vita""<br>y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_210,"Este bloque es donde los jugadores que quieran<br>juega misiones extremadamente difíciles en el<br>campo de Las Vegas pueden reunirse. [Juego<br>cruzado con ""PS Vita"" y versiones ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_211,"Este bloque es para jugadores que tienen el título<br>""Lone Defender"" (Defensor Solitario) y quieren realizar<br>misiones de alta dificultad juntos."
 BlockhelpMessage,1,Block_help_Message_212,"misiones de alta dificultad juntos.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_213,"realizado<br>en todos los bloques, por lo que no hay diferencias<br>entre los bloques individuales."
@@ -11203,7 +11203,7 @@ BlockhelpMessage,1,Block_help_Message_218,Este bloque es donde los jugadores que
 BlockhelpMessage,1,Block_help_Message_219,"reunirse juntos.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_220,"Este bloque está diseñado para jugadores que han ganado<br>un título especial y quieren realizar misiones<br>juntos. Consulta el sitio web oficial para los títulos que califican.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_221,Este bloque es donde los jugadores que quieren jugar<br>una misión usando un Disparador de Misión o Disparador de Enemigo<br>pueden reunirse.
-BlockhelpMessage,1,Block_help_Message_222,"Disparador<br>pueden reunirse.<br>[Juego cruzado con versiones de ""PS Vita"" y ""PC""/""PS4"".]"
+BlockhelpMessage,1,Block_help_Message_222,"Este bloque es donde los jugadores que quieran jugar<br>una misión usando un disparador de misión o un<br>disparador enemigo pueden reunirse. [Juego cruzado<br>con las versiones ""PS Vita"" y ""PC""/""PS4"".]"
 BlockhelpMessage,1,Block_help_Message_223,"Este bloque puede ser usado para capturar video e<br>imágenes de introducciones de juegos, transmisiones en vivo, etc.<br>Está destinado solo para jugadores a quienes no les importa<br>que su personaje y su información relacionada sean compartidos."
 BlockhelpMessage,1,Block_help_Message_224,"her,<br>independientemente del campo. [Juego cruzado con<br>versiones de ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_225,"er, independientemente<br>del campo. [Juego cruzado con versiones de ""Cloud"" y<br>""PC"".]"
@@ -11214,7 +11214,7 @@ BlockhelpMessage,1,Block_help_Message_229,"reunirse juntos.<br>[Juego cruzado co
 BlockhelpMessage,1,Block_help_Message_230,"Este bloque es donde los jugadores que quieren jugar<br>misiones Súper Difíciles pueden reunirse,<br>independientemente del campo. [Juego cruzado con<br>versiones de ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_231,"Disparador de Enemigo<br>pueden reunirse.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_232,"Este bloque es donde los jugadores que quieren<br>jugar Misiones Buster pueden reunirse.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
-BlockhelpMessage,1,Block_help_Message_233,"para<br>aquellos que quieren jugar con amigos.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
+BlockhelpMessage,1,Block_help_Message_233,"Este bloque es donde los jugadores que quieran<br>disfrutar del El casino puede reunirse.<br>Recomendado para aquellos que quieren jugar con<br>amigos. [Juego cruzado con las versiones ""Nube"" y<br>""PC"".]"
 BlockhelpMessage,1,Block_help_Message_234,"Este bloque es donde los jugadores que quieren jugar<br>una misión usando un Disparador de Misión o Disparador de Enemigo<br>pueden reunirse.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_235,r>información del personaje mostrada. Matchmaking multibarco<br>restringido a bloques del mismo nombre.
 BlockhelpMessage,1,Block_help_Message_236,"Este bloque es donde los jugadores que quieren disfrutar<br>del Casino pueden reunirse. Recomendado para<br>aquellos que quieren jugar con amigos.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
@@ -11224,7 +11224,7 @@ BlockhelpMessage,1,Block_help_Message_239,"br>¡Los jugadores veteranos también
 BlockhelpMessage,1,Block_help_Message_240,"pueden reunirse<br>juntos. [Admite juego cruzado con ambas versiones: ""Cloud""<br>y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_241,"Usado para introducciones de juegos, transmisiones en vivo, etc., este<br>bloque está destinado a jugadores que desean que su propia<br>información de personaje sea mostrada. Matchmaking multibarco<br>restringido a bloques del mismo nombre."
 BlockhelpMessage,1,Block_help_Message_242,"Este bloque es donde los jugadores nuevos en<br>Misiones de Desafío pueden reunirse.<br>¡Los jugadores veteranos también son bienvenidos!<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
-BlockhelpMessage,1,Block_help_Message_243,">en todos los bloques, por lo que no hay diferencias<br>entre los bloques individuales. [Solo versión ""Cloud"".]"
+BlockhelpMessage,1,Block_help_Message_243,"Este bloque es para jugar en el modo ""Battle<br>Arena"". Se realiza el emparejamiento para Battle<br>Arena. en todos los bloques, por lo que no hay<br>diferencias entre bloques individuales. [Solo<br>versión ""Nube"".]"
 BlockhelpMessage,1,Block_help_Message_244,"k<br>matchmaking restringido a bloques del mismo nombre.<br>[Juego cruzado con ambas versiones: ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_245,"restringido<br>a bloques del mismo nombre.<br>[Juego cruzado con versiones de ""Cloud"" y ""PC"".]"
 BlockhelpMessage,1,Block_help_Message_246,"Este bloque es donde los jugadores que quieren<br>jugar misiones Ultra Difíciles pueden reunirse,<br>independientemente del campo."
@@ -11300,7 +11300,7 @@ MyRoomError,1,Error_Custom_Installed,No se pudo colocar debido a<br>la presencia
 MyRoomError,1,Error_Consume_Item,No se puede ejecutar porque falló el consumo del objeto.<br><br>[No. 1106]
 MyRoomError,1,Error_MesetaCheck_DB_Present,Ocurrió un problema al actualizar tu meseta.<br>No se pueden almacenar muebles.<br><br>[No. 1107]
 MyRoomError,1,Error_RoomGoods_Reform,No puedes colocar muebles mientras<br>la remodelación está en curso.
-MyRoomError,1,Error_RoomGoods_Update_False,09]
+MyRoomError,1,Error_RoomGoods_Update_False,"No se pudo actualizar el mobiliario. Si los<br>muebles no se muestran correctamente, retire a<br>todos los invitados y vuelva a ingresar a la<br>habitación. Cuando vuelvas a entrar en la<br>habitación, los muebles se exhibirán o movido a<br>su inventario o almacenamiento. [No. 1109]"
 MyRoomError,1,Error_RoomGoods_PhotoGachan_PrizeItemNone,No es posible girar el dial porque actualmente<br>no hay artículos en la Máquina de Cápsulas Fotónicas.
 MyRoomError,1,Error_RoomGoods_PhotoGachan_MesetaNone,No es posible girar el dial de la<br>Máquina de Cápsulas Fotónicas porque<br>no tienes suficiente meseta.
 MyRoomError,1,Error_RoomGoods_PhotoGachan_MesetaNone_Serever,No es posible girar el dial de la<br>Máquina de Cápsulas Fotónicas porque<br>no tienes suficiente meseta.<br><br>[No. 1108]
@@ -11492,7 +11492,7 @@ LoginStamp,1,RewardGetMessage_2,Recompensa de Sello de Inicio de Sesión Adquiri
 LoginStamp,1,RewardGetMessage_3,Recompensa de Sello de Inicio de Sesión Adquirida:<br><yellow>$(0)<c><br><yellow>$(1)<c><br><yellow>$(2)<c>
 LoginStamp,1,RewardGetMessage_4,Recompensa de Sello de Inicio de Sesión Adquirida:<br><yellow>$(0)<c><br><yellow>$(1)<c><br><yellow>$(2)<c><br><yellow>$(3)<c>
 LoginStamp,1,RewardGetMessage_5,Recompensa de Sello de Inicio de Sesión Adquirida:<br><yellow>$(0)<c><br><yellow>$(1)<c><br><yellow>$(2)<c><br><yellow>$(3)<c><br><yellow>$(4)<c>
-LoginStamp,1,RewardGetMessage_6,yellow>$(2)<c><br><yellow>$(3)<c><br><yellow>$(4)<c><br><yellow>$(5)<c>
+LoginStamp,1,RewardGetMessage_6,Recompensa del sello de inicio de sesión adquirida:<br><yellow>$(0)<c><br><yellow>$(1)<c><br><yellow>$(2)<c><br><yellow>$(3)<c><br><yellow>$(4)<c><br><yellow>$(5)<c>
 LoginStamp,1,RewardGetMessage_7,Recompensa de Sello de Inicio de Sesión Adquirida:<br><yellow>$(0)<c><br><yellow>$(1)<c><br><yellow>$(2)<c><br><yellow>$(3)<c>
 LoginStamp,1,RewardGetMessage_Warehouse,Tu Recompensa de Sello de Inicio de Sesión <yellow>$(0) × $(1)<c><br>fue enviada a $(2).
 LoginStamp,1,NextGetRewardMessage,La próxima Recompensa de Sello de Inicio de Sesión que puedes<br>adquirir es <yellow>$(0) × $(1)<c>.
@@ -11648,7 +11648,7 @@ MySet,1,MySetMessage02,r>contenido de [Carga $(0) $(1)].<br>¿Estás seguro de q
 MySet,1,MySetMessage03,"Estás a punto de cambiar el nombre de [Carga $(0) $(1)].<br>Por favor, ingresa un nuevo nombre."
 MySet,1,MySetMessage04,Estás a punto de eliminar [Carga $(0) $(1)].<br>¿Estás seguro de que deseas continuar?
 MySet,1,MySetMessage05,t estado de clase y equipamiento.<br>¿Estás seguro de que deseas continuar?
-MySet,1,MySetMessage06,<br><yellow>Nota: El nombre de la Carga no cambiará.<c><br>¿Estás seguro de que deseas continuar?
+MySet,1,MySetMessage06,Estás a punto de sobrescribir [Loadout $(0)<br>$(1)] con su clase actual y estado del equipo.<br><yellow>Nota: El nombre del Loadout no cambiará.<c> ¿Está<br>seguro de que desea continuar?
 MySet,1,MySetMessage07,Estás a punto de guardar tu estado actual de clase<br>y equipamiento en [Carga $(0)].<br>¿Estás seguro de que deseas continuar?
 MySet,1,Error,Error de carga
 MySet,1,RenameError01,El nombre especificado no se puede utilizar.
@@ -11689,7 +11689,7 @@ Seteffect,0,Set_Message_3,このアイテムにはセット効果がありませ
 Seteffect,1,Title,AUMENTOS/POTENCIALES
 Seteffect,1,OtherTitle,ARTICULO CON EFECTO DE CONFIGURACION CONDICIONAL
 Seteffect,1,Set_Message_1,Este artículo producirá un Efecto de Conjunto cuando<br>se equipe en la <yellow>Posición $(0)<c>.
-Seteffect,1,Set_Message_2,")<c>.<br>Cuanto menor sea el número de posiciones equipadas,<br>menor será el aumento de las estadísticas correspondientes."
+Seteffect,1,Set_Message_2,"Este elemento producirá un efecto establecido cuando<br>equipado en cualquier lugar desde la <yellow>Posición $(1)<br>hasta la Posición $(0)<c>. Cuanto menor sea el número de<br>puestos equipados, cuanto menor sea el aumento en las<br>estadísticas correspondientes."
 Seteffect,1,Set_Message_3,Este elemento no produce un efecto establecido.
 PartyMaker,0,WindowTitle1,募集情報入力メニュー
 PartyMaker,0,TitleText1,クエストの設定
@@ -12155,15 +12155,15 @@ CostumeGauge,1,MyshopMessage,Estás a punto de registrar ropa por la cual<br>no 
 CostumeGauge,1,TradeTitle,CONFIRMAR REGISTRO
 CostumeGauge,1,TradeMessage,Estás a punto de registrar ropa por la cual<br>no se han adquirido Gemas Estrella.<br>¿Estás seguro de que deseas continuar?
 CostumeGauge,1,TeamWarehouseTitle,ADVERTENCIA
-CostumeGauge,1,TeamWarehouseMessage,El Medidor de Afinidad se restablecerá para la ropa colocada<br>en el Almacenamiento de la Alianza.<br><br>¿Estás seguro de que deseas continuar?
+CostumeGauge,1,TeamWarehouseMessage,Estás a punto de colocar ropa para la cual no se han<br>adquirido Star Gems en tu Almacenamiento de la<br>Alianza.<br><br>El indicador de afinidad se restablecerá para la<br>ropa colocada. en Almacenamiento de la Alianza.<br><br>¿Está seguro de que desea continuar?
 CostumeGauge,1,TeamWarehouseTitle2,ADVERTENCIA
-CostumeGauge,1,TeamWarehouseMessage2,ADVERTENCIA
+CostumeGauge,1,TeamWarehouseMessage2,Estás a punto de mover este artículo a tu Almacenamiento de<br>Alianza. ¿Está seguro de que desea continuar?<br><br>El indicador de afinidad se restablecerá para la ropa<br>colocada. en Almacenamiento de la Alianza.<br><br><yellow>Nota: Tu Almacenamiento de Alianza puede ser utilizado por<br>otros jugadores también.<c>
 CostumeGauge,1,PresentBoxTitle,ADVERTENCIA
 CostumeGauge,1,PresentBoxMessage,en adquirido en una caja de regalo.<br>¿Estás seguro de que deseas continuar?
 CostumeGauge,1,GachaTitle,ADVERTENCIA
-CostumeGauge,1,GachaMessage,ADVERTENCIA
+CostumeGauge,1,GachaMessage,Estás a punto de colocar ropa para la<br>cual no se han adquirido Star Gems en una<br>máquina de cápsulas de fotones. ¿Está<br>seguro de que desea continuar?
 CostumeGauge,1,RecycleTitle,CONFIRMAR
-CostumeGauge,1,RecycleMessage,ADVERTENCIA
+CostumeGauge,1,RecycleMessage,Estás a punto de intercambiar <c f0df60>$(0)<c> × $(1) por los artículos<br>seleccionados. <yellow>No se consumirán otros artículos que no sean los<br>que se enumeran a continuación.<c> <red>Nota: Los artículos seleccionados<br>incluyen prendas para las cuales no hay Star Gems han sido<br>adquiridos.<c> ¿Está seguro de que desea continuar?
 CostumeGauge,1,RecycleMessageVita,Estás a punto de colocar ropa por la cual<br>no se han adquirido Gemas Estrella<br>en una Máquina de Cápsulas Fotónicas.<br>¿Estás seguro de que deseas continuar?
 CostumeGauge,1,RewardPopupMenu,Adquirir Gemas Estrella
 CostumeGauge,1,RewardTitle,CONFIRMAR ADQUISICIÓN DE GEMA ESTRELLA
@@ -12279,8 +12279,8 @@ PokaMenu,1,PokaMenu_ContentInfo,Informacion de contenido
 PokaMenu,1,PokaMenu_GatheringInfo,Recopilacion de informacion
 PokaMenu,1,PokaMenu_MoveBlockTitle,CONFIRMAR TRANSFERENCIA EN BLOQUE
 PokaMenu,1,PokaMenu_MoveShipTitle,CONFIRMAR TRANSFERENCIA DE ENVIO
-PokaMenu,1,PokaMenu_MoveBlockMessage,¿Para proceder al Bloque de Batalla?
-PokaMenu,1,PokaMenu_MoveShipMessage,en cualquier momento regresando al Barco Universal.<c><br>¿Estás seguro de que quieres regresar a tu Ship?
+PokaMenu,1,PokaMenu_MoveBlockMessage,"Estás a punto de pasar a un bloque de batalla. Tenga en<br>cuenta que se aplicarán las siguientes condiciones.<br><br>- No se permiten clases distintas a las de Guerrero de<br>batalla de nivel 1.<br>- Las artes, técnicas y habilidades de clase de Photon<br>se restablecerá a un estado no aprendido y no se le permitirá<br>llevar en cualquier meseta, Monedas de Casino o artículos.<br>- No se le permitirá acceder al Almacenamiento.<br>- No se mostrará el indicador de afinidad.<br><br><red>Nota: Las condiciones anteriores ya no se aplica cuando<br>regresas del bloque Battle Arena.<c> ¿Te gustaría pasar al<br>bloque de batalla?"
+PokaMenu,1,PokaMenu_MoveShipMessage,"Estás a punto de regresar a tu propio barco. las condiciones<br>especiales que se aplican en el Universal Ship ya no se<br>aplicarán.<br><br>- No podrás acceder a Amigos, al correo ni al arte simbólico.<br>añadido mientras estás en el Barco Universal.<br>- Las monedas de batalla obtenidas en Battle Arena se<br>compartirán<br>con tu barco.<br>- Información relativa a tu batalla de barcos universal<br>La clasificación se tabulará por separado de la información de<br>su propio barco.<br><br><yellow>Cuando regreses a tu barco, una entrada de inicio de sesión se<br>agregará a su historial de inicio de sesión.<c><br><br><red>Nota: Puedes consultar tu estado en el Barco Universal en<br>cualquier momento regresando al Barco Universal.<c> ¿Estás seguro<br>de que quieres regresar a tu barco?"
 PokaMenu,1,PokaMenu_Content_BasnetInfo,Informacion sobre la mision Buster
 BonusEffect,0,BonusEffect_Title1,特殊能力因子確認
 BonusEffect,0,BonusEffect_Head1,特殊能力因子名
