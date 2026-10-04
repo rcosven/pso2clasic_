@@ -70,6 +70,7 @@ class DatabaseManager:
             c.execute("CREATE INDEX IF NOT EXISTS idx_tr_search ON translations(layer, corpus, is_new_line)")
             c.execute("CREATE INDEX IF NOT EXISTS idx_tr_sec_grp_id ON translations(file, section, grp, row_id)")
             c.execute("CREATE INDEX IF NOT EXISTS idx_tr_equal ON translations(layer, grp, stem, section, row_id)")
+            c.execute("CREATE INDEX IF NOT EXISTS idx_tr_equal_corpus ON translations(layer, corpus, grp, stem, section, row_id)")
             conn.commit()
 
     def is_built(self) -> bool:
@@ -464,7 +465,7 @@ class DatabaseManager:
         sql = f"""
         SELECT m.file, m.stem, m.section, m.grp, m.row_id, m.text as main_text, r.text as raw_text, m.corpus
         FROM translations m
-        JOIN translations r ON m.stem = r.stem AND m.section = r.section AND m.row_id = r.row_id AND r.grp = '1' AND r.layer = 'raw'
+        JOIN translations r ON m.stem = r.stem AND m.corpus = r.corpus AND m.section = r.section AND m.row_id = r.row_id AND r.grp = '1' AND r.layer = 'raw'
         WHERE m.layer = 'main' AND m.grp = '1' {sql_scope}
         AND length(trim(m.text)) >= ?
         AND trim(m.text) = trim(r.text)
@@ -478,6 +479,7 @@ class DatabaseManager:
         sql += f" LIMIT {max_matches * 2}"
 
         coincidencias = []
+        ids_vistos = set()
         with self.get_connection() as conn:
             for row in conn.execute(sql, params):
                 fpath = row["file"]
@@ -486,6 +488,11 @@ class DatabaseManager:
                 line_key = f"{fpath}:{row['section']}:{row['grp']}:{row['row_id']}"
                 if line_key in excluded_lines_set:
                     continue
+
+                clave_unica = f"{fpath}_{row['section']}_{row['row_id']}_{row['grp']}"
+                if clave_unica in ids_vistos:
+                    continue
+                ids_vistos.add(clave_unica)
 
                 cmd = f"{row['section']},{row['grp']},{row['row_id']}"
                 coincidencias.append({
@@ -547,7 +554,7 @@ class DatabaseManager:
         sql = f"""
         SELECT m.file, m.stem, m.section, m.grp, m.row_id, m.text as main_text, r.text as raw_text, m.corpus
         FROM translations m
-        JOIN translations r ON m.stem = r.stem AND m.section = r.section AND m.row_id = r.row_id AND r.grp = '1' AND r.layer = 'raw'
+        JOIN translations r ON m.stem = r.stem AND m.corpus = r.corpus AND m.section = r.section AND m.row_id = r.row_id AND r.grp = '1' AND r.layer = 'raw'
         WHERE m.layer = 'main' AND m.grp = '1' {sql_scope}
         AND abs(length(trim(r.text)) - length(trim(m.text))) >= ?
         """
@@ -555,12 +562,14 @@ class DatabaseManager:
 
         if query:
             q_norm = norm_search(query)
-            sql += " AND (m.text_norm LIKE ? OR m.stem LIKE ?)"
-            params.extend([f"%{q_norm}%", f"%{q_norm}%"])
+            sql += " AND (m.text_norm LIKE ? OR m.row_id LIKE ? OR m.section LIKE ? OR m.stem LIKE ?)"
+            like_q = f"%{q_norm}%"
+            params.extend([like_q, like_q, like_q, like_q])
 
         sql += f" LIMIT {max_matches * 2}"
 
         coincidencias = []
+        ids_vistos = set()
         with self.get_connection() as conn:
             for row in conn.execute(sql, params):
                 fpath = row["file"]
@@ -569,6 +578,11 @@ class DatabaseManager:
                 line_key = f"{fpath}:{row['section']}:{row['grp']}:{row['row_id']}"
                 if line_key in excluded_lines_set:
                     continue
+
+                clave_unica = f"{fpath}_{row['section']}_{row['row_id']}_{row['grp']}"
+                if clave_unica in ids_vistos:
+                    continue
+                ids_vistos.add(clave_unica)
 
                 raw_len = len(row["raw_text"].strip())
                 main_len = len(row["main_text"].strip())
