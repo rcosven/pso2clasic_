@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Herramientas PSO2 / NGS | Rem Noirel</title>
-<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1502035453556297740/1515831329756020847/iXhei0wc_400x400.png">
+<meta name="description" content="PSO2 & NGS Portable Modding Tools: PSO2 Animation Viewer, CMX Helper, and Voice Modifier.">
+<title>PSO2 & NGS Modding Tools | Rem Noirel</title>
+<link rel="icon" type="image/png" href="https://files.catbox.moe/u48fzy.png">
 <style>
     :root {
         --bg-main: #0c0e12;
@@ -24,11 +25,9 @@
         color: var(--text-primary);
         padding: 20px 15px 60px 15px;
         background-image: 
-            radial-gradient(circle at 10% 20%, rgba(255, 20, 147, 0.08) 0%, transparent 40%),
-            radial-gradient(circle at 90% 80%, rgba(0, 255, 204, 0.06) 0%, transparent 40%),
-            url('https://cdn.discordapp.com/attachments/1328092288630521887/1515236050837180436/image.jpg');
-        background-size: cover;
-        background-position: center;
+            radial-gradient(circle at 10% 20%, rgba(255, 20, 147, 0.10) 0%, transparent 40%),
+            radial-gradient(circle at 90% 80%, rgba(0, 255, 204, 0.08) 0%, transparent 40%),
+            radial-gradient(circle at 50% 50%, rgba(15, 17, 23, 0.95) 0%, #0c0e12 100%);
         background-attachment: fixed;
         min-height: 100vh;
     }
@@ -40,7 +39,7 @@
         z-index: 100;
         max-width: 980px;
         margin: 0 auto 25px auto;
-        background: rgba(15, 17, 23, 0.92);
+        background: rgba(15, 17, 23, 0.94);
         backdrop-filter: blur(14px);
         border: 1px solid var(--border-color);
         border-radius: 14px;
@@ -59,10 +58,11 @@
         color: #fff;
     }
     .nav-brand-logo {
-        width: 32px;
-        height: 32px;
+        width: 34px;
+        height: 34px;
         border-radius: 8px;
-        border: 1px solid var(--accent-pink);
+        border: 1.5px solid var(--accent-pink);
+        object-fit: cover;
     }
     .nav-brand-title {
         font-size: 1.1rem;
@@ -302,227 +302,227 @@
 </head>
 <body>
 
-<!-- Navegación Superior -->
+<!-- Top Sticky Navbar -->
 <nav class="top-navbar">
     <a href="#" class="nav-brand">
-        <img src="https://cdn.discordapp.com/attachments/1502035453556297740/1515831329756020847/iXhei0wc_400x400.png" class="nav-brand-logo" alt="Logo">
+        <img src="https://files.catbox.moe/u48fzy.png" class="nav-brand-logo" alt="Rem Noirel Logo">
         <span class="nav-brand-title">Rem <span>Noirel</span> Tools</span>
     </a>
     <div class="nav-links">
         <a href="#anim-viewer" class="nav-pill">🎬 Animation Viewer</a>
         <a href="#cmx-tool" class="nav-pill">👗 CMX Helper</a>
         <a href="#voice-modifier" class="nav-pill">🎙️ Voice Modifier</a>
-        <a href="{{CATALOG_URL}}" target="_blank" class="nav-pill nav-pill-external">🌐 Catálogo</a>
-        <a href="/edit" target="_blank" class="nav-pill nav-pill-external">📝 Traductor</a>
+        <a href="{{CATALOG_URL}}" target="_blank" class="nav-pill nav-pill-external">🌐 Mod Catalog</a>
+        <a href="/" target="_blank" class="nav-pill nav-pill-external">📝 Spanish Translator</a>
     </div>
 </nav>
 
 <div class="container">
 
-    <!-- Encabezado -->
+    <!-- Header Banner -->
     <header class="suite-hero">
-        <h1>Herramientas para <span>PSO2 & NGS</span></h1>
-        <p>Programas portables para ver y cambiar animaciones, ajustar prendas de ropa y personalizar voces en el juego.</p>
+        <h1>PSO2 & NGS <span>Modding Tools</span></h1>
+        <p>Portable tools to preview & swap animations, adjust costume layers, and customize character voices in-game.</p>
     </header>
 
     <!-- ======================================================== -->
-    <!-- PROGRAMA 1: PSO2 ANIMATION VIEWER                        -->
+    <!-- PROGRAM 1: PSO2 ANIMATION VIEWER                        -->
     <!-- ======================================================== -->
     <section id="anim-viewer" class="tool-card">
         <div class="tool-header">
             <div class="tool-title-group">
                 <h2>🎬 PSO2 Animation Viewer</h2>
-                <p>Te permite ver en 3D cualquier animación del juego (Emotes y Motions) y cambiarlas por las que quieras.</p>
+                <p>Preview any in-game animation (Emotes & Motions) in 3D and swap them directly into your game.</p>
             </div>
-            <a href="{{DOWNLOAD_ANIM_HREF}}" class="btn-download" title="Descargar Animation Viewer">
+            <a href="{{DOWNLOAD_ANIM_HREF}}" class="btn-download" title="Download PSO2 Animation Viewer">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Descargar Programa
+                Download Program
             </a>
         </div>
 
-        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">¿Cómo se usa?</h3>
+        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">How to Use</h3>
 
         <div class="steps-container">
             <div class="step-item">
                 <div class="step-badge">1</div>
                 <div class="step-text">
-                    <strong>Carga un modelo base:</strong> En el panel superior haz clic en <span class="code-tag">M1</span> o <span class="code-tag">M2</span> para ver el maniquí 3D.
+                    <strong>Load a test model:</strong> In the top panel, click <span class="code-tag">M1</span> or <span class="code-tag">M2</span> to load a default 3D mannequin.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">2</div>
                 <div class="step-text">
-                    <strong>Vincula los datos de tu juego:</strong> Pulsa en <em>pso2 data…</em> y selecciona la carpeta <span class="code-tag">pso2_bin/data/win32</span> de tu instalación de PSO2. Esto sirve para que el programa cargue las armas, accesorios y efectos visuales de cada animación.
+                    <strong>Link your game data directory:</strong> Click <em>pso2 data…</em> and select your game's <span class="code-tag">pso2_bin/data/win32</span> folder (or <span class="code-tag">win32reboot</span>). This allows the viewer to extract and display weapons, props, and VFX in real time.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">3</div>
                 <div class="step-text">
-                    <strong>Busca y prueba animaciones:</strong> Usa el buscador para filtrar por nombre en inglés, japonés o por el comando de chat del juego (por ejemplo <span class="code-tag">/sivapose1</span>). Si la animación tiene varias poses de manos o etapas, pulsa el botón <strong>HSI / CLICK</strong> para avanzar de pose.
+                    <strong>Search and preview animations:</strong> Filter by Emotes or Motions, and search by English name, Japanese name, or chat command (e.g. <span class="code-tag">/sivapose1</span>). If an emote has multiple hand poses or click stages, press the <strong>HSI / CLICK</strong> button to cycle through variants.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">4</div>
                 <div class="step-text">
-                    <strong>Cambiar la animación en tu juego:</strong> Ve a la pestaña <strong>Replace</strong>. En <em>1) ORIGINAL</em> elige la animación que tienes en el juego (ejemplo: sentarse) y en <em>2) NEW</em> la animación que quieres ver. Pulsa <strong>Apply to Game</strong>. El programa aplica el cambio y crea un respaldo automático en la carpeta <span class="code-tag">./portable/backups</span> por si quieres regresar a la original.
+                    <strong>Swap animations in-game:</strong> Switch to the <strong>Replace</strong> tab. Under <em>1) ORIGINAL</em>, select the base animation you own in-game (e.g. Sit 1). Under <em>2) NEW</em>, choose the animation you want to see. Click <strong>Apply to Game</strong>. An automatic backup is created in <span class="code-tag">./portable/backups</span> so you can revert anytime with 1 click.
                 </div>
             </div>
         </div>
 
         <div class="notice-box">
-            💡 <strong>Gestor de Mods incluido:</strong> Puedes arrastrar e instalar mods en formato <span class="code-tag">.zip</span> desde la pestaña <strong>Mods</strong> para activarlos o desactivarlos cuando quieras con 1 clic.
+            💡 <strong>Built-in Mod Manager:</strong> You can install mods from <span class="code-tag">.zip</span> archives in the <strong>Mods</strong> tab and toggle them on/off. It automatically resolves conflicts by deactivating older mods modifying the same animation.
         </div>
 
-        <!-- Video Permanente del Animation Viewer -->
+        <!-- Video Demonstration -->
         <div class="media-box">
             <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
                 <source src="{{VIDEO_ANIM_SRC}}" type="video/mp4">
-                Tu navegador no soporta el tag de video HTML5.
+                Your browser does not support the HTML5 video tag.
             </video>
-            <p class="media-caption">Demostración en video de reproducción 3D y reemplazo de animaciones.</p>
+            <p class="media-caption">Live 3D viewport playback and in-game animation replacement demo.</p>
         </div>
     </section>
 
     <!-- ======================================================== -->
-    <!-- PROGRAMA 2: CMX HELPER TOOL                              -->
+    <!-- PROGRAM 2: CMX HELPER TOOL                              -->
     <!-- ======================================================== -->
     <section id="cmx-tool" class="tool-card">
         <div class="tool-header">
             <div class="tool-title-group">
                 <h2>👗 CMX Helper Tool</h2>
-                <p>Te permite activar chaquetas con trajes que normalmente no las permiten y activar u ocultar ornamentos de la ropa.</p>
+                <p>Enables jackets over outfits that normally don't support them, and toggles hidden ornamentation layers.</p>
             </div>
-            <a href="{{DOWNLOAD_CMX_HREF}}" class="btn-download" title="Descargar CMX Helper">
+            <a href="{{DOWNLOAD_CMX_HREF}}" class="btn-download" title="Download CMX Helper Tool">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Descargar Programa
+                Download Program
             </a>
         </div>
 
-        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">¿Cómo se usa?</h3>
+        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">How to Use</h3>
 
         <div class="steps-container">
             <div class="step-item">
                 <div class="step-badge">1</div>
                 <div class="step-text">
-                    Abre el programa junto con el juego o con el Animation Viewer.
+                    Open the tool alongside your game or the Animation Viewer.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">2</div>
                 <div class="step-text">
-                    <strong>Habilitar chaquetas (Outerwear):</strong> Activa el botón <span class="code-tag">Allow Outerwear: ON</span> para que en el salón del juego te permita equipar chaquetas sobre trajes base que vienen bloqueados por defecto.
+                    <strong>Enable Outerwear (Jackets):</strong> Turn <span class="code-tag">Allow Outerwear: ON</span> to allow equipping outer jackets over base costumes in the Salon that are locked by default.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">3</div>
                 <div class="step-text">
-                    <strong>Ocultar adornos (Hide Ornamentation):</strong> Activa <span class="code-tag">Hide Ornament 1</span> o <span class="code-tag">Hide Ornament 2</span> para poder ocultar partes específicas de la ropa o escenografía en el salón.
+                    <strong>Hide Ornamentation:</strong> Turn on <span class="code-tag">Hide Ornament 1</span> or <span class="code-tag">Hide Ornament 2</span> to hide specific clothing ornaments or stage parts in the Salon.
                 </div>
             </div>
         </div>
 
-        <!-- Capturas de CMX Helper -->
+        <!-- CMX Screenshots -->
         <div class="media-box">
             <div class="media-grid">
                 <div>
-                    <img src="{{IMG_CMX_1}}" alt="Outerwear Jacket Toggle en CMX">
-                    <p class="media-caption">1. Activar chaquetas sobre trajes en el salón del juego.</p>
+                    <img src="{{IMG_CMX_1}}" alt="Outerwear Jacket Toggle in CMX">
+                    <p class="media-caption">1. Enable outer jackets over base costumes in Salon.</p>
                 </div>
                 <div>
-                    <img src="{{IMG_CMX_2}}" alt="Hide Ornamentation en CMX">
-                    <p class="media-caption">2. Ocultar adornos y partes secundarias de la ropa.</p>
+                    <img src="{{IMG_CMX_2}}" alt="Hide Ornamentation in CMX">
+                    <p class="media-caption">2. Toggle and hide clothing ornamentation parts.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ======================================================== -->
-    <!-- PROGRAMA 3: PSO2 VOICE MODIFIER                          -->
+    <!-- PROGRAM 3: PSO2 VOICE MODIFIER                          -->
     <!-- ======================================================== -->
     <section id="voice-modifier" class="tool-card">
         <div class="tool-header">
             <div class="tool-title-group">
                 <h2>🎙️ PSO2 Voice Modifier</h2>
-                <p>Te permite cambiar las voces de los personajes del juego por tus propias pistas de audio (canciones o voces personalizadas).</p>
+                <p>Customize and replace in-game character voices with your own custom audio tracks (MP3, OGG, WAV).</p>
             </div>
-            <a href="{{DOWNLOAD_VOICE_HREF}}" class="btn-download" title="Descargar Voice Modifier">
+            <a href="{{DOWNLOAD_VOICE_HREF}}" class="btn-download" title="Download PSO2 Voice Modifier">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Descargar Programa
+                Download Program
             </a>
         </div>
 
         <div class="notice-box" style="border-left-color: #00ffcc; background: rgba(0, 255, 204, 0.08);">
-            ⚠️ <strong>Importante:</strong> Este programa debe ejecutarse siempre dentro de la carpeta <span class="code-tag">pso2_bin</span> de tu juego para que funcione correctamente.
+            ⚠️ <strong>Important Requirement:</strong> This program must always be run from inside your game's <span class="code-tag">pso2_bin</span> directory.
         </div>
 
-        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">¿Cómo se usa?</h3>
+        <h3 style="color:#fff; font-size:1.15rem; margin-bottom:12px;">How to Use</h3>
 
         <div class="steps-container">
             <div class="step-item">
                 <div class="step-badge">1</div>
                 <div class="step-text">
-                    <strong>Elige el idioma del audio:</strong> Si juegas en la versión Global con voces en inglés, selecciona <span class="code-tag">EN (win32na)</span>. Si juegas con voces en japonés, selecciona <span class="code-tag">jp (Win32)</span>. <em>(Si juegas en el servidor japonés nativo, no necesitas pulsar ningún botón).</em>
+                    <strong>Select Audio Language:</strong> If playing Global with English audio, select <span class="code-tag">EN (win32na)</span>. If playing with Japanese audio, select <span class="code-tag">jp (Win32)</span>. <em>(Native Japanese server players do not need to press language buttons).</em>
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">2</div>
                 <div class="step-text">
-                    <strong>Selecciona la voz que quieres cambiar:</strong> Elige la voz del personaje en la lista.
+                    <strong>Select Voice to Modify:</strong> Pick the target character voice from the list.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">3</div>
                 <div class="step-text">
-                    <strong>Añade tus audios:</strong> Puedes usar archivos en formato <span class="code-tag">MP3</span>, <span class="code-tag">OGG</span> o <span class="code-tag">WAV</span>.
+                    <strong>Add Your Audio Tracks:</strong> Assign your custom audio files in <span class="code-tag">MP3</span>, <span class="code-tag">OGG</span>, or <span class="code-tag">WAV</span> format.
                 </div>
             </div>
 
             <div class="step-item">
                 <div class="step-badge">4</div>
                 <div class="step-text">
-                    <strong>Guarda tus presets:</strong> Puedes guardar tus paquetes de audios personalizados para reutilizarlos en otras voces en cualquier momento.
+                    <strong>Save Voice Presets:</strong> You can export and save your customized voice packs to reuse them on other character voices anytime.
                 </div>
             </div>
         </div>
 
-        <!-- Video Demostrativo del Voice Modifier -->
+        <!-- Video Demonstration -->
         <div class="media-box">
             <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
                 <source src="{{VIDEO_VOICE_SRC}}" type="video/mp4">
-                Tu navegador no soporta el tag de video HTML5.
+                Your browser does not support the HTML5 video tag.
             </video>
-            <p class="media-caption">Demostración en video de sustitución de voz en el juego.</p>
+            <p class="media-caption">Live voice replacement in-game demonstration.</p>
         </div>
 
-        <!-- Capturas de Voice Modifier -->
+        <!-- Voice Modifier Screenshots -->
         <div class="media-box" style="margin-top:15px;">
             <div class="media-grid">
                 <div>
-                    <img src="{{IMG_VOICE_1}}" alt="Panel Voice Modifier">
-                    <p class="media-caption">1. Asignación de audios y selección de idiomas.</p>
+                    <img src="{{IMG_VOICE_1}}" alt="Voice Modifier Panel">
+                    <p class="media-caption">1. Voice selection and language assignment panel.</p>
                 </div>
                 <div>
-                    <img src="{{IMG_VOICE_2}}" alt="Presets Voice Modifier">
-                    <p class="media-caption">2. Guardado y carga de paquetes de presets.</p>
+                    <img src="{{IMG_VOICE_2}}" alt="Voice Modifier Presets">
+                    <p class="media-caption">2. Save and load custom audio presets.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de Página -->
+    <!-- Footer -->
     <footer>
-        <p>Herramientas de Modding para PSO2 / NGS &bull; Rem Noirel</p>
+        <p>PSO2 / NGS Modding Tools Suite &bull; Rem Noirel</p>
         <p style="margin-top: 6px;">
-            <a href="{{CATALOG_URL}}" target="_blank">Catálogo de Mods</a> &bull; 
-            <a href="/edit" target="_blank">Traductor</a> &bull; 
-            <a href="{{DISCORD_POST_URL}}" target="_blank">Discord</a>
+            <a href="{{CATALOG_URL}}" target="_blank">Mod Catalog</a> &bull; 
+            <a href="/" target="_blank">Spanish Translator</a> &bull; 
+            <a href="{{DISCORD_POST_URL}}" target="_blank">Discord Community</a>
         </p>
     </footer>
 
