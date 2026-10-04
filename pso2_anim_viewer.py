@@ -39,7 +39,6 @@ from aiohttp import web
 logger = logging.getLogger("discord.bot")
 
 CATALOG_URL = (os.getenv("CATALOG_URL") or "https://remnoirel.com").rstrip("/")
-CATALOG_API_URL = (os.getenv("CATALOG_API_URL") or CATALOG_URL).rstrip("/")
 
 # Discord channels
 CANAL_ESTADO_ID = int(os.getenv("CANAL_ESTADO_ID", "1502034400119099512"))
@@ -68,7 +67,9 @@ HTML_PATH = Path(__file__).with_name("pso2_anim_viewer.html")
 
 DOWNLOAD_COUNT_LOCK = asyncio.Lock()
 STATE = {
-    "descargas_pso2animviewer": 0,
+    "descargas_anim": 0,
+    "descargas_cmx": 0,
+    "descargas_voice": 0,
     "mensaje_descargas_id": None,
 }
 
@@ -132,7 +133,7 @@ async def cargar_contador_al_arrancar(bot) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Discord helpers
+# Discord helpers con contadores separados para cada programa
 # ---------------------------------------------------------------------------
 async def _obtener_canal_con_historial(channel_id):
     bot = _bot
@@ -161,36 +162,45 @@ def _parsear_total_descargas(contenido):
     return int(match.group(1)) if match else None
 
 
-def _parsear_numero_registro(contenido):
+def _parsear_numero_registro(contenido, app_label):
     if not contenido:
         return None
-    match = re.search(r"Descarga Pso2AnimViewer\*\*\s*`#(\d+)`", contenido)
+    match = re.search(rf"Descarga {re.escape(app_label)}\*\*\s*`#(\d+)`", contenido)
     return int(match.group(1)) if match else None
 
 
 async def _escanear_registros_descarga(canal, limit=None):
     master_msg = None
-    master_count = 0
-    registros = 0
-    max_registro = 0
+    master_anim = 0
+    max_anim = 0
+    max_cmx = 0
+    max_voice = 0
     if not canal:
-        return master_msg, master_count, registros, max_registro
+        return master_msg, max_anim, max_cmx, max_voice
     bot = _bot
     async for msg in canal.history(limit=limit):
         if bot and msg.author and msg.author.bot is False:
             continue
-        if "Contador de Descargas" in msg.content:
+        if "Contador de Descargas" in msg.content or "Contadores de Descargas" in msg.content:
             if master_msg is None:
                 master_msg = msg
                 parsed = _parsear_total_descargas(msg.content)
                 if parsed is not None:
-                    master_count = parsed
-        elif "Descarga Pso2AnimViewer" in msg.content:
-            registros += 1
-            num = _parsear_numero_registro(msg.content)
-            if num is not None and num > max_registro:
-                max_registro = num
-    return master_msg, master_count, registros, max_registro
+                    master_anim = parsed
+
+        n_anim = _parsear_numero_registro(msg.content, "Pso2AnimViewer")
+        if n_anim and n_anim > max_anim:
+            max_anim = n_anim
+
+        n_cmx = _parsear_numero_registro(msg.content, "CMX Helper")
+        if n_cmx and n_cmx > max_cmx:
+            max_cmx = n_cmx
+
+        n_voice = _parsear_numero_registro(msg.content, "PSO2 Voice Modifier")
+        if n_voice and n_voice > max_voice:
+            max_voice = n_voice
+
+    return master_msg, max(master_anim, max_anim), max_cmx, max_voice
 
 
 async def cargar_contador_descargas_discord():
@@ -199,28 +209,25 @@ async def cargar_contador_descargas_discord():
         return
     try:
         canal = await _obtener_canal_con_historial(CANAL_ESTADO_ID)
-        master_msg, master_count, registros, max_registro = await _escanear_registros_descarga(canal)
+        master_msg, anim_cnt, cmx_cnt, voice_cnt = await _escanear_registros_descarga(canal)
 
         canal_extra = await _obtener_canal_con_historial(CANAL_DESCARGAS_PSO2_ID)
-        _, extra_count, extra_reg, extra_max = await _escanear_registros_descarga(canal_extra, limit=200)
+        _, extra_anim, extra_cmx, extra_voice = await _escanear_registros_descarga(canal_extra, limit=200)
 
-        best = max(
-            STATE.get("descargas_pso2animviewer", 0),
-            master_count,
-            registros,
-            max_registro,
-            extra_count,
-            extra_reg,
-            extra_max,
-        )
-        STATE["descargas_pso2animviewer"] = best
+        STATE["descargas_anim"] = max(STATE.get("descargas_anim", 0), anim_cnt, extra_anim)
+        STATE["descargas_cmx"] = max(STATE.get("descargas_cmx", 0), cmx_cnt, extra_cmx)
+        STATE["descargas_voice"] = max(STATE.get("descargas_voice", 0), voice_cnt, extra_voice)
+
         if master_msg:
             STATE["mensaje_descargas_id"] = master_msg.id
-        logger.info(f"📥 Descargas Pso2AnimViewer restauradas: {best} (registros={registros})")
-        if canal and (not master_msg or master_count < best):
+        logger.info(
+            f"📥 Contadores restaurados: Anim={STATE['descargas_anim']}, "
+            f"CMX={STATE['descargas_cmx']}, Voice={STATE['descargas_voice']}"
+        )
+        if canal and not master_msg:
             await actualizar_mensaje_descargas_discord()
     except Exception as e:
-        logger.warning(f"[Pso2AnimViewer] Error cargando contador: {e}")
+        logger.warning(f"[Pso2AnimViewer] Error cargando contadores: {e}")
 
 
 async def actualizar_mensaje_descargas_discord():
@@ -245,13 +252,17 @@ async def actualizar_mensaje_descargas_discord():
             if target_msg:
                 STATE["mensaje_descargas_id"] = target_msg.id
 
-        total = STATE.get("descargas_pso2animviewer", 0)
+        total_anim = STATE.get("descargas_anim", 0)
+        total_cmx = STATE.get("descargas_cmx", 0)
+        total_voice = STATE.get("descargas_voice", 0)
         ahora_ts = int(datetime.now(timezone.utc).timestamp())
         texto = (
-            f"📥 **Contador de Descargas - PSO2 Animation Viewer**\n\n"
-            f"Total de descargas: **{total}** descargas (`Pso2AnimViewer.zip`)\n"
+            f"📥 **Contadores de Descargas - Modding Tools Suite**\n\n"
+            f"🎬 **PSO2 Animation Viewer:** **{total_anim}** descargas (`Pso2AnimViewer.zip`)\n"
+            f"👗 **CMX Helper Tool:** **{total_cmx}** descargas (`CMX_Helper_Tool.zip`)\n"
+            f"🎙️ **PSO2 Voice Modifier:** **{total_voice}** descargas (`PSO2_Voice_Modifier.zip`)\n\n"
             f"Última descarga registrada: <t:{ahora_ts}:R> (<t:{ahora_ts}:f>)\n"
-            f"Cada click del botón de la web deja un registro debajo. Este mensaje no se borra al actualizar el catálogo."
+            f"Cada click en los botones de la web deja su propio registro debajo."
         )
 
         if target_msg:
@@ -261,11 +272,11 @@ async def actualizar_mensaje_descargas_discord():
             STATE["mensaje_descargas_id"] = nuevo_msg.id
         return True
     except Exception as e:
-        logger.warning(f"[Pso2AnimViewer] Discord Download Counter Error: {e}")
+        logger.warning(f"[Pso2AnimViewer] Discord Master Counter Error: {e}")
         return False
 
 
-async def _publicar_registro_descarga(total, app_name="Pso2AnimViewer", filename="Pso2AnimViewer.zip"):
+async def _publicar_registro_descarga(total, app_name, filename):
     canal = await _obtener_canal_con_historial(CANAL_ESTADO_ID)
     if not canal:
         return False
@@ -275,46 +286,24 @@ async def _publicar_registro_descarga(total, app_name="Pso2AnimViewer", filename
         f"Archivo: `{filename}`\n"
         f"<t:{ahora_ts}:f> (<t:{ahora_ts}:R>)"
     )
-    if app_name == "Pso2AnimViewer":
-        await actualizar_mensaje_descargas_discord()
+    await actualizar_mensaje_descargas_discord()
     logger.info(f"📥 Registro de descarga #{total} ({app_name}) publicado en #server-status")
     return True
 
 
-async def _incrementar_descargas_discord(app_name="Pso2AnimViewer", filename="Pso2AnimViewer.zip"):
+async def _incrementar_descargas_discord(tool_key, app_label, filename):
     async with DOWNLOAD_COUNT_LOCK:
-        if app_name == "Pso2AnimViewer":
-            STATE["descargas_pso2animviewer"] = STATE.get("descargas_pso2animviewer", 0) + 1
-            total = STATE["descargas_pso2animviewer"]
-        else:
-            total = STATE.get(f"descargas_{app_name}", 0) + 1
-            STATE[f"descargas_{app_name}"] = total
-    ok = await _publicar_registro_descarga(total, app_name=app_name, filename=filename)
+        STATE[tool_key] = STATE.get(tool_key, 0) + 1
+        total = STATE[tool_key]
+    ok = await _publicar_registro_descarga(total, app_name=app_label, filename=filename)
     return ok, total
 
 
-async def _notificar_catalogo(app_name="Pso2AnimViewer") -> bool:
-    url = f"{CATALOG_API_URL}/api/track_download"
-    try:
-        timeout = aiohttp.ClientTimeout(total=8)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            async with session.post(url, json={"app": app_name}) as resp:
-                if resp.status == 200:
-                    logger.info(f"📥 Descarga ({app_name}) notificada al catálogo remnoirel.com")
-                    return True
-                return False
-    except Exception as e:
-        logger.warning(f"[Pso2AnimViewer] No se pudo notificar al catálogo: {e}")
-        return False
-
-
-async def registrar_descarga(app_name="Pso2AnimViewer", filename="Pso2AnimViewer.zip"):
-    """Registra 1 clic de descarga."""
-    if await _notificar_catalogo(app_name):
-        return
-    ok, total = await _incrementar_descargas_discord(app_name, filename)
+async def registrar_descarga(tool_key, app_label, filename):
+    """Registra 1 clic de descarga de forma separada para cada programa."""
+    ok, total = await _incrementar_descargas_discord(tool_key, app_label, filename)
     if not ok:
-        logger.warning(f"[Pso2AnimViewer] Descarga #{total} ({app_name}) no pudo escribirse en Discord.")
+        logger.warning(f"[Pso2AnimViewer] Descarga #{total} ({app_label}) no pudo escribirse en Discord.")
 
 
 # ---------------------------------------------------------------------------
@@ -344,7 +333,7 @@ async def page_handler(request):
 
 async def download_handler_anim(request):
     try:
-        await registrar_descarga("Pso2AnimViewer", "Pso2AnimViewer.zip")
+        await registrar_descarga("descargas_anim", "Pso2AnimViewer", "Pso2AnimViewer.zip")
     except Exception as e:
         logger.warning(f"[Pso2AnimViewer] Download increment error: {e}")
     target = get_download_url_anim()
@@ -353,7 +342,7 @@ async def download_handler_anim(request):
 
 async def download_handler_cmx(request):
     try:
-        await registrar_descarga("CMX_Helper", "CMX_Helper_Tool.zip")
+        await registrar_descarga("descargas_cmx", "CMX Helper", "CMX_Helper_Tool.zip")
     except Exception as e:
         logger.warning(f"[CMX_Helper] Download error: {e}")
     target = get_download_url_cmx()
@@ -362,7 +351,7 @@ async def download_handler_cmx(request):
 
 async def download_handler_voice(request):
     try:
-        await registrar_descarga("PSO2_Voice_Modifier", "PSO2_Voice_Modifier.zip")
+        await registrar_descarga("descargas_voice", "PSO2 Voice Modifier", "PSO2_Voice_Modifier.zip")
     except Exception as e:
         logger.warning(f"[PSO2_Voice_Modifier] Download error: {e}")
     target = get_download_url_voice()
