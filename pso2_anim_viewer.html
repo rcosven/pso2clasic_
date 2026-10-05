@@ -312,6 +312,7 @@
         <a href="#anim-viewer" class="nav-pill">🎬 Animation Viewer</a>
         <a href="#cmx-tool" class="nav-pill">👗 CMX Helper</a>
         <a href="#voice-modifier" class="nav-pill">🎙️ Voice Modifier</a>
+        <a href="#video-studio" class="nav-pill">📺 Video Studio</a>
         <a href="{{CATALOG_URL}}" target="_blank" class="nav-pill nav-pill-external">🌐 Mod Catalog</a>
         <a href="/" target="_blank" class="nav-pill nav-pill-external">📝 Spanish Translator</a>
     </div>
@@ -322,7 +323,7 @@
     <!-- Header Banner -->
     <header class="suite-hero">
         <h1>PSO2 & NGS <span>Modding Tools</span></h1>
-        <p>Portable tools to preview & swap animations, adjust costume layers, and customize character voices in-game.</p>
+        <p>Portable tools to preview &amp; swap animations, adjust costume layers, replace in-game videos, and customize character voices.</p>
     </header>
 
     <!-- ======================================================== -->
@@ -513,6 +514,145 @@
                     <p class="media-caption">2. Save and load custom audio presets.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- PROGRAM 4: PSO2 VIDEO STUDIO                             -->
+    <!-- ======================================================== -->
+    <section id="video-studio" class="tool-card">
+        <div class="tool-header">
+            <div class="tool-title-group">
+                <h2>📺 PSO2 Video Studio</h2>
+                <p>All-in-one video modding and customization suite for Phantasy Star Online 2 (Classic &amp; NGS). Replace cutscenes, lobby monitors, openings, and create multi-screen composite textures with SEGA CRI USM encryption.</p>
+            </div>
+            <a href="{{DOWNLOAD_VIDEO_HREF}}" class="btn-download" title="Download PSO2 Video Studio">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Program
+            </a>
+        </div>
+
+        <div class="notice-box" style="border-left-color: #00d4ff; background: rgba(0, 212, 255, 0.08);">
+            ⚡ <strong>What is this program?</strong> PSO2 Video Studio is an all-in-one video modding and customization suite designed for <strong>Phantasy Star Online 2 (PSO2 Classic and New Genesis / NGS)</strong>. The game uses a proprietary format called <em>CRI Sofdec (USM)</em> with SEGA encryption and custom audio tracks (ADX/HCA).
+            <ul style="margin: 8px 0 0 20px; line-height: 1.6;">
+                <li><strong>View &amp; Play:</strong> Play any internal video from the game (openings, cutscenes, concerts, lobby monitors).</li>
+                <li><strong>Drag &amp; Drop Replacement:</strong> Replace any video with your own files (.mp4, .avi, .mkv, etc.) with automatic resolution &amp; profile matching.</li>
+                <li><strong>Multi-Screen Collage:</strong> Build coordinated multi-screen mosaic textures for lobby and command bridge displays (<em>monitor_commander_001</em> &amp; <em>monitor_shop_001</em>).</li>
+                <li><strong>Multi-Version Management:</strong> Keep multiple versions for each mod, disable/enable, toggle between versions, or restore the original SEGA video with one click.</li>
+                <li><strong>Pack &amp; Share:</strong> Package and install ready-to-share .zip mods for the community.</li>
+                <li><strong>Automatic Integrity Bypass (SpecialIce):</strong> Automatically ensures modded files load properly in-game without being reverted or ignored by the official launcher.</li>
+            </ul>
+        </div>
+
+        <h3 style="color:#fff; font-size:1.15rem; margin-top:24px; margin-bottom:12px;">How to use each tab</h3>
+
+        <!-- Tab 1: Video Explorer -->
+        <div class="steps-container">
+            <div class="step-item">
+                <div class="step-badge">1</div>
+                <div class="step-text">
+                    <strong>Tab 1: Video Explorer (Complete Catalog &amp; Instant Modding)</strong><br>
+                    <strong>Purpose:</strong> A complete catalog containing all 780+ PSO2 and NGS internal video files, organized by internal name, folder, and in-game purpose.<br>
+                    <strong>How to use it:</strong>
+                    <ul style="margin: 6px 0 0 18px; line-height: 1.5;">
+                        <li><strong>Search &amp; Filter:</strong> Use the search bar or the Classic / NGS filter buttons to find any video (e.g. <code>ui_title_loop_01.usm</code> for the title screen loop).</li>
+                        <li><strong>Preview:</strong> Click on any video in the list to watch and listen with synchronized video and audio playback.</li>
+                        <li><strong>Replace Video (Instant Modding):</strong> Simply drag &amp; drop your video file (.mp4, etc.) directly onto the video player area. The application automatically detects the profile and resolution, encodes &amp; encrypts with SEGA keys, backs up the original video, and injects it into the game with an immediate preview.</li>
+                        <li><strong>Extract Video:</strong> Click this button to export an original game video to your PC as .mp4 or .usm.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 1 Demo -->
+        <div class="media-box">
+            <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
+                <source src="{{VIDEO_STUDIO_1}}" type="video/mp4">
+                Your browser does not support the HTML5 video tag.
+            </video>
+            <p class="media-caption">Demo: Replace and install in-game videos instantly via Drag &amp; Drop.</p>
+        </div>
+
+        <!-- Tab 2: Installed Mods -->
+        <div class="steps-container" style="margin-top:20px;">
+            <div class="step-item">
+                <div class="step-badge">2</div>
+                <div class="step-text">
+                    <strong>Tab 2: Installed Mods (Version Control &amp; Management)</strong><br>
+                    <strong>Purpose:</strong> Manage all currently modded videos in your client, keeping multiple alternatives and revision history without losing any files.<br>
+                    <strong>How to use it:</strong>
+                    <ul style="margin: 6px 0 0 18px; line-height: 1.5;">
+                        <li><strong>In-Game Version (Version Dropdown):</strong> If you replace a video multiple times (e.g. Video A, Video B, Video C), they are saved as Version 1, Version 2, etc. Select which version you want active in-game directly from the dropdown.</li>
+                        <li><strong>Disable Mod / Enable Mod:</strong> Temporarily disable the mod to play the original SEGA game video without deleting your mods, or re-enable it with a single click.</li>
+                        <li><strong>+ Save Version:</strong> Saves the currently active in-game video as a new version snapshot.</li>
+                        <li><strong>Delete Version:</strong> Permanently deletes the selected version. If you delete the last remaining mod version, the game automatically restores the original SEGA video.</li>
+                        <li><strong>Uninstall Mod:</strong> Fully uninstalls the mod, removes all stored versions and backups, and restores the original video to 100%.</li>
+                        <li><strong>Export Mod / Export All:</strong> Exports one or all active mods into a distribution-ready .zip archive.</li>
+                        <li><strong>Bypass (SpecialIce):</strong> Displays the checksum bypass status (<em>Bypass: OK</em>). If outdated or missing, click it to install it with one click.</li>
+                        <li><strong>Deep Scan:</strong> Performs an asynchronous background scan across your game drive to locate any external or manually placed mod backups without freezing the UI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 2 Demo -->
+        <div class="media-box">
+            <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
+                <source src="{{VIDEO_STUDIO_2}}" type="video/mp4">
+                Your browser does not support the HTML5 video tag.
+            </video>
+            <p class="media-caption">Demo: Manage versions, toggle mods on/off, and restore original videos.</p>
+        </div>
+
+        <!-- Tab 3: Mod Installer -->
+        <div class="steps-container" style="margin-top:20px;">
+            <div class="step-item">
+                <div class="step-badge">3</div>
+                <div class="step-text">
+                    <strong>Tab 3: Mod Installer (Install Community ZIP Packs)</strong><br>
+                    <strong>Purpose:</strong> Easily install mod packs shared by other community creators.<br>
+                    <strong>How to use it:</strong>
+                    <ul style="margin: 6px 0 0 18px; line-height: 1.5;">
+                        <li>Drag and drop any .zip file into the dashed drop area (or click Browse ZIP).</li>
+                        <li>The application scans the archive and lists all detected mod files.</li>
+                        <li>Check the boxes for the videos you wish to install.</li>
+                        <li>Click <strong>&quot;Install Mod Package into Game&quot;</strong>. It will automatically back up your original files, place the modded videos into their exact subdirectories, and guarantee the checksum bypass is enabled.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Multi-Screen Studio -->
+        <div class="steps-container" style="margin-top:20px;">
+            <div class="step-item">
+                <div class="step-badge">4</div>
+                <div class="step-text">
+                    <strong>Tab 4: Multi-Screen Studio (Synchronized Monitor Collages)</strong><br>
+                    <strong>Purpose:</strong> Design composite in-game monitor textures by combining several videos into a single coordinated display matching the game's 3D UV mapping:
+                    <ul style="margin: 6px 0 0 18px; line-height: 1.5;">
+                        <li><code>monitor_shop_001</code>: A 4-screen 2x2 grid layout used for lobby shopping kiosk screens.</li>
+                        <li><code>monitor_commander_001</code>: The giant curved command bridge screen, joining 6 video feeds: 4 horizontal monitors and 2 vertical side monitors (which are automatically rotated 90&deg; to match the texture map layout).</li>
+                    </ul>
+                    <br>
+                    <strong>How to use it:</strong>
+                    <ul style="margin: 6px 0 0 18px; line-height: 1.5;">
+                        <li>Select your target monitor template (<code>monitor_shop_001</code> or <code>monitor_commander_001</code>).</li>
+                        <li>Drag and drop individual videos from Windows Explorer directly onto each slot box (Slot 1, Slot 2, Slot 3, etc.).</li>
+                        <li>Configure the output duration (shorter videos loop automatically until reaching the target length) and select which audio feed to retain.</li>
+                        <li>Click <strong>&quot;Play Realtime Preview&quot;</strong> to inspect a live simulation of all videos animating together.</li>
+                        <li>Click <strong>&quot;Generate &amp; Install Mod into Game&quot;</strong> to compile the video into the official PSO2 format and inject it straight into your game.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 3 Demo -->
+        <div class="media-box">
+            <video controls autoplay loop muted playsinline preload="metadata" class="guide-video">
+                <source src="{{VIDEO_STUDIO_3}}" type="video/mp4">
+                Your browser does not support the HTML5 video tag.
+            </video>
+            <p class="media-caption">Demo: Multi-Screen Studio - Merge and synchronize multiple videos into complex monitor textures.</p>
         </div>
     </section>
 
