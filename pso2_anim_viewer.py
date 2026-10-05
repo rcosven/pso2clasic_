@@ -50,10 +50,14 @@ PSO2_POST_THREAD_ID = int(os.getenv("PSO2_POST_THREAD_ID", "1536856506295914626"
 DEFAULT_DOWNLOAD_ANIM = "https://mega.nz/file/00Jn3K5J#BLJ5kym1YrjA0qHfZaZGT1oAcCSDF7k07oITONJz4Vo"
 DEFAULT_DOWNLOAD_CMX = "https://mega.nz/file/ohQwWCaC#WNd-TTOkT2jnJ2FrAF2EeixfVga_-xSNLiGz0W1onLM"
 DEFAULT_DOWNLOAD_VOICE = "https://mega.nz/file/J4YRmRbY#Ksk5NKEi524ibjwDqRObKwbldPpzYZP-EEOxXtZl0jo"
+DEFAULT_DOWNLOAD_VIDEO = "https://mega.nz/file/FxgijCRI#WKjbOZHlDyY63X2UYFAVtZqoEeCTxsTuPo0vSJXJulI"
 
 # Permanent Catbox media links
 DEFAULT_VIDEO_ANIM = "https://files.catbox.moe/2qckjd.mp4"
 DEFAULT_VIDEO_VOICE = "https://files.catbox.moe/gyvvz1.mp4"
+DEFAULT_VIDEO_STUDIO_1 = "https://files.catbox.moe/hwibuo.mp4"
+DEFAULT_VIDEO_STUDIO_2 = "https://files.catbox.moe/9f7jgl.mp4"
+DEFAULT_VIDEO_STUDIO_3 = "https://files.catbox.moe/pz7le2.mp4"
 IMG_CMX_1 = "https://files.catbox.moe/88eto9.png"
 IMG_CMX_2 = "https://files.catbox.moe/qizc35.png"
 IMG_VOICE_1 = "https://files.catbox.moe/wiptaj.png"
@@ -91,6 +95,10 @@ def get_download_url_voice() -> str:
     return os.getenv("DOWNLOAD_VOICE_TOOL") or DEFAULT_DOWNLOAD_VOICE
 
 
+def get_download_url_video() -> str:
+    return os.getenv("DOWNLOAD_VIDEO_STUDIO") or DEFAULT_DOWNLOAD_VIDEO
+
+
 def get_video_url_anim() -> str:
     return os.getenv("VIDEO_ANIM_VIEWER") or DEFAULT_VIDEO_ANIM
 
@@ -120,6 +128,9 @@ def setup(app: web.Application, bot) -> None:
 
     for r in ("/Pso2AnimViewer/download/voice", "/pso2animviewer/download/voice"):
         app.router.add_get(r, download_handler_voice)
+
+    for r in ("/Pso2AnimViewer/download/video", "/pso2animviewer/download/video"):
+        app.router.add_get(r, download_handler_video)
 
     logger.info("PSO2 Modding Tools Suite montado en /Pso2AnimViewer")
 
@@ -336,6 +347,10 @@ async def page_handler(request):
         .replace("{{DOWNLOAD_ANIM_HREF}}", "/Pso2AnimViewer/download/anim")
         .replace("{{DOWNLOAD_CMX_HREF}}", "/Pso2AnimViewer/download/cmx")
         .replace("{{DOWNLOAD_VOICE_HREF}}", "/Pso2AnimViewer/download/voice")
+        .replace("{{DOWNLOAD_VIDEO_HREF}}", "/Pso2AnimViewer/download/video")
+        .replace("{{VIDEO_STUDIO_1}}", DEFAULT_VIDEO_STUDIO_1)
+        .replace("{{VIDEO_STUDIO_2}}", DEFAULT_VIDEO_STUDIO_2)
+        .replace("{{VIDEO_STUDIO_3}}", DEFAULT_VIDEO_STUDIO_3)
         .replace("{{DISCORD_POST_URL}}", PSO2_DISCORD_POST_URL)
         .replace("{{CATALOG_URL}}", f"{CATALOG_URL}/")
     )
@@ -366,4 +381,13 @@ async def download_handler_voice(request):
     except Exception as e:
         logger.warning(f"[PSO2_Voice_Modifier] Download error: {e}")
     target = get_download_url_voice()
+    raise web.HTTPFound(target)
+
+
+async def download_handler_video(request):
+    try:
+        await registrar_descarga("PSO2_Video_Studio", "PSO2_Video_Studio.zip")
+    except Exception as e:
+        logger.warning(f"[PSO2_Video_Studio] Download error: {e}")
+    target = get_download_url_video()
     raise web.HTTPFound(target)
