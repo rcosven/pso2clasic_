@@ -85,6 +85,7 @@ Common,1,TascSuccessInfo_AchievementName,Title Name “$(0)”
 Common,1,ShopAccessError,The shop could not be accessed.
 Common,1,MySpace_RegisterText,New Build Parts have been bound.
 Common,1,Mag_RegisterText,Mag form added.
+Common,1,LoginBonus_TicketScratch,You obtained a Scratch Ticket.<br>Would you like to check the eligible Scratch Ticket?
 Common,0,YesText,はい
 Common,0,NoText,いいえ
 Common,0,CloseText,閉じる
@@ -173,6 +174,7 @@ Common,0,TascSuccessInfo_AchievementName,称号名“$(0)”
 Common,0,ShopAccessError,ショップにアクセスできませんでした。
 Common,0,MySpace_RegisterText,ビルドパーツを登録しました。
 Common,0,Mag_RegisterText,マグのフォルムを登録しました。
+Common,0,LoginBonus_TicketScratch,スクラッチ券を獲得しました。<br>対応するスクラッチを確認しますか？
 MainMenu,1,Non_Text,No Display Text
 MainMenu,1,Menu_Main,Main Menu
 MainMenu,1,Menu_Sub,Sub Menu
@@ -2770,6 +2772,7 @@ PlayerStatus,1,StatusLabelSeasonPoint_34,Spring '25 Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_35,Super Origin Festival '25 Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_37,Super Phantasy Festival '25 Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_38,Halloween '25 Seasonal Points
+PlayerStatus,1,StatusLabelSeasonPoint_46,Halloween '26 Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_39,Super Genesis Festival '25 (Pt.1) Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_40,Super Genesis Festival '25 (Pt.2) Seasonal Points
 PlayerStatus,1,StatusLabelSeasonPoint_41,Spring '26 Seasonal Points
@@ -2861,6 +2864,7 @@ PlayerStatus,0,StatusLabelSeasonPoint_34,スプリング'25シーズナルポイ
 PlayerStatus,0,StatusLabelSeasonPoint_35,超・星譚祭'25シーズナルポイント
 PlayerStatus,0,StatusLabelSeasonPoint_37,超・夢幻祭'25シーズナルポイント
 PlayerStatus,0,StatusLabelSeasonPoint_38,ハロウィン'25シーズナルポイント
+PlayerStatus,0,StatusLabelSeasonPoint_46,ハロウィン'26シーズナルポイント
 PlayerStatus,0,StatusLabelSeasonPoint_39,超・創世祭'25（前半）シーズナルポイント
 PlayerStatus,0,StatusLabelSeasonPoint_40,超・創世祭'25（後半）シーズナルポイント
 PlayerStatus,0,StatusLabelSeasonPoint_41,スプリング'26シーズナルポイント
@@ -3162,6 +3166,9 @@ StatusEffect,1,RuinBuff_GodBusterEnd,Quest Support Effect <yellow>Deal Increased
 StatusEffect,1,Obj:MonolithPlayerBuff,Potency +10%/Damage Resistance Up +75%
 StatusEffect,1,RuinBuff_DropRareUp,Rare Drop Rate +25%
 StatusEffect,1,RuinBuff_DropRareUpEnd,Quest Support Effect <yellow>Rare Drop Rate +25%<c> has ended.
+StatusEffect,1,WhiteABuff_MarsBoost,M.A.R.S. battery fully restored. M.A.R.S. Alter Boost acquired.
+StatusEffect,1,WhiteABuff_MarsBoostTimeAttention,"M.A.R.S. Alter Boost, 10 seconds remaining."
+StatusEffect,1,WhiteABuff_MarsBoostEnd,The effects of M.A.R.S. Alter Boost have expired.
 StatusEffect,1,ForceWalk_Start,You've entered a Photon Dash restricted zone.
 StatusEffect,1,ForceWalk_End,The Photon Dash restricted zone has ended.
 StatusEffect,0,PlBadCond:Burn,バーン
@@ -3420,6 +3427,9 @@ StatusEffect,0,RuinBuff_GodBusterEnd,クエスト支援効果<yellow>ドール�
 StatusEffect,0,Obj:MonolithPlayerBuff,威力+10%／ダメージ耐性アップ+75%
 StatusEffect,0,RuinBuff_DropRareUp,レアドロップ倍率＋25%
 StatusEffect,0,RuinBuff_DropRareUpEnd,クエスト支援効果<yellow>レアドロップ倍率＋25%<c>の効果が切れました。
+StatusEffect,0,WhiteABuff_MarsBoost,M.A.R.S.バッテリーが全回復し、M.A.R.S.オルタブーストを獲得しました。
+StatusEffect,0,WhiteABuff_MarsBoostTimeAttention,M.A.R.S.オルタブースト　残り10秒。
+StatusEffect,0,WhiteABuff_MarsBoostEnd,M.A.R.S.オルタブーストの効果が切れました。
 StatusEffect,0,ForceWalk_Start,フォトンダッシュ制限エリアに入りました。
 StatusEffect,0,ForceWalk_End,フォトンダッシュ制限エリアが終了しました。
 Inventory,1,Item,Items
@@ -3603,6 +3613,7 @@ EquipInventory,1,Rring,Right Rings
 EquipInventory,1,Ring1Hint,You can equip a Type 1 Skill Ring to this slot.
 EquipInventory,1,Ring2Hint,You can equip a Type 2 Skill Ring to this slot.
 EquipInventory,1,Ring3Hint,You can equip a Type 3 Skill Ring to this slot.
+EquipInventory,1,Amulet1Hint,You can equip a Neck Amulet to this slot.
 EquipInventory,0,Title,防具パレット
 EquipInventory,0,WarningTitle,注意
 EquipInventory,0,WarningMessage,このコスチュームを装備すると<br>一部ユニットが外れます。<br>よろしいですか？
@@ -3630,6 +3641,7 @@ EquipInventory,0,Rring,Rリング
 EquipInventory,0,Ring1Hint,タイプ1のスキルリングを装備できるスロットです
 EquipInventory,0,Ring2Hint,タイプ2のスキルリングを装備できるスロットです
 EquipInventory,0,Ring3Hint,タイプ3のスキルリングを装備できるスロットです
+EquipInventory,0,Amulet1Hint,Neckのアミュレットを装備できるスロットです
 Palette,1,WindowTitleCustom,WEAPON PALETTE
 Palette,1,WindowTitleCustomSub,SUB-PALETTE
 Palette,1,WindowTitleIconbox,ITEM LIST
@@ -16208,6 +16220,7 @@ AreaName,1,AreaName1133400,Alter Realm: South Tundra
 AreaName,1,AreaName1133700,Alter Realm: Tundra Gorge
 AreaName,1,AreaName1133300,Alter Realm: Central Tundra
 AreaName,1,AreaName1133800,Alter Realm: West Tundra
+AreaName,1,AreaName1113300,Alter Realm: Northeast Plains
 AreaName,1,AreaName1130001,Kvaris Camp
 AreaName,1,AreaName1130002,North Kvaris
 AreaName,1,AreaName1130003,West Kvaris
@@ -16466,6 +16479,7 @@ AreaName,0,AreaName1133400,オルタレルム：凍土南部
 AreaName,0,AreaName1133700,オルタレルム：凍土峡江部
 AreaName,0,AreaName1133300,オルタレルム：凍土中央部
 AreaName,0,AreaName1133800,オルタレルム：凍土西部
+AreaName,0,AreaName1113300,オルタレルム：平原北東部
 AreaName,0,AreaName1130001,クヴァリスキャンプ
 AreaName,0,AreaName1130002,北クヴァリス
 AreaName,0,AreaName1130003,西クヴァリス
@@ -16846,6 +16860,8 @@ EquipMenu,1,Unit_TitleText2,Skill Rings
 EquipMenu,1,Ring_Label1,Type 1
 EquipMenu,1,Ring_Label2,Type 2
 EquipMenu,1,Ring_Label3,Type 3
+EquipMenu,1,Amulet_TitleText,Amulet
+EquipMenu,1,Amulet_Label1,Neck
 EquipMenu,0,EquipTitle,装備メニュー
 EquipMenu,0,Title_WeaponPallet,武器パレット
 EquipMenu,0,Title_UnitPallet,防具パレット
@@ -16867,6 +16883,8 @@ EquipMenu,0,Unit_TitleText2,スキルリング
 EquipMenu,0,Ring_Label1,Type1
 EquipMenu,0,Ring_Label2,Type2
 EquipMenu,0,Ring_Label3,Type3
+EquipMenu,0,Amulet_TitleText,アミュレット
+EquipMenu,0,Amulet_Label1,Neck
 FieldName,1,11100,Central City
 FieldName,1,11101,Central Aelio
 FieldName,1,11102,West Aelio
@@ -16877,6 +16895,7 @@ FieldName,1,11106,South Aelio
 FieldName,1,11109,North Aelio
 FieldName,1,11111,Resol Forest
 FieldName,1,11199,Forbidden Area (Entering will cause bugs)
+FieldName,1,11133,Alter Realm: Northeast Plains
 FieldName,1,11172,Beach Wars '26
 FieldName,1,11200,Retem City
 FieldName,1,11201,West Retem
@@ -16937,6 +16956,7 @@ FieldName,0,11106,南エアリオ
 FieldName,0,11109,北エアリオ
 FieldName,0,11111,レゾルの森
 FieldName,0,11199,進入禁止エリア（ここに入れたらバグです）
+FieldName,0,11133,オルタレルム：平原エリア北東部
 FieldName,0,11172,ビーチウォーズ'26
 FieldName,0,11200,リテムシティ
 FieldName,0,11201,西リテム
@@ -17554,6 +17574,8 @@ WeatherName,1,Ruin_Gold,Radiant Rain
 WeatherName,1,Ruin_Monolith,Miasma
 WeatherName,1,BeachWars_Fine,Sunny
 WeatherName,1,BeachWars_Collapse,Broken Sunny
+WeatherName,1,White_Default_A,Default
+WeatherName,1,White_Default_A2,Factor Excitation
 WeatherName,0,Weather_Fine,晴れ
 WeatherName,0,Weather_Cloudy,曇り
 WeatherName,0,Weather_Rain,雨
@@ -17588,6 +17610,8 @@ WeatherName,0,Ruin_Gold,光雨
 WeatherName,0,Ruin_Monolith,瘴気
 WeatherName,0,BeachWars_Fine,晴れ
 WeatherName,0,BeachWars_Collapse,壊晴
+WeatherName,0,White_Default_A,通常
+WeatherName,0,White_Default_A2,因子励起
 Worldmap,1,Personal_Guide_Set,$(1) placed. (You can place $(0) more in this region)
 Worldmap,1,Personal_Guide_Set_2,$(0) placed. (You cannot place any more in this region)
 Worldmap,1,Personal_Guide_Release,$(1) removed. (You can place $(0) more in this region)
@@ -19238,6 +19262,8 @@ ActionCustomizeMenu,1,OnMouseTechnicAttributeWind,<pict attr_wind><pict 4space>W
 ActionCustomizeMenu,1,OnMouseTechnicAttributeLight,<pict attr_light><pict 4space>Light Techniques
 ActionCustomizeMenu,1,OnMouseTechnicAttributeDark,<pict attr_dark><pict 4space>Dark Techniques
 ActionCustomizeMenu,1,Yellow,<yellow>$(0)<c>
+ActionCustomizeMenu,1,FullRelease,All Tech Arts Customizations for the selected class will be removed. Are you sure?
+ActionCustomizeMenu,1,FullRelease_Success,Tech Arts Customizations removed.
 ActionCustomizeMenu,0,ActionCustomize,テックアーツカスタマイズ
 ActionCustomizeMenu,0,ActionCustomizeTitle,テックアーツカスタマイズ
 ActionCustomizeMenu,0,Explanation1,テックアーツカスタマイズの実行とセットができます。
@@ -19310,6 +19336,8 @@ ActionCustomizeMenu,0,OnMouseTechnicAttributeWind,<pict attr_wind><pict 4space>�
 ActionCustomizeMenu,0,OnMouseTechnicAttributeLight,<pict attr_light><pict 4space>光属性テクニック
 ActionCustomizeMenu,0,OnMouseTechnicAttributeDark,<pict attr_dark><pict 4space>闇属性テクニック
 ActionCustomizeMenu,0,Yellow,<yellow>$(0)<c>
+ActionCustomizeMenu,0,FullRelease,選択中のクラスの<br>すべてのテックアーツカスタマイズを外します。<br>よろしいですか？
+ActionCustomizeMenu,0,FullRelease_Success,テックアーツカスタマイズをすべて外しました。
 GuildMag,1,GuildMagBoostTitle,Alliance Mag Boost
 GuildMag,1,MagMenu_buff_HP,HP Up 
 GuildMag,1,MagMenu_buff_PP,PP Up 

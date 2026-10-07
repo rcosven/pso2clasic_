@@ -392,8 +392,12 @@ Enemy,1,r05_non_cml4_crf,Alter Crawford
 Enemy,1,r05_stl_bhu_ba1,Alter Noetica
 Enemy,1,r03_nat_mam_deh,High Zo Marmoth
 Enemy,1,r05_rem_ang_ba1,Ruine Anga
+Enemy,1,r01_gd_dra_raih,High Nex
+Enemy,1,r05_stl_gia_ba1h,High Herzig
 Enemy,1,r05_rem_zsh_ba,Ruine Shraider Λ
 Enemy,1,r05_nat_zmr_rsh,High Gillnach
+Enemy,1,r05_stl_dnt_exh,Dalio Ludian
+Enemy,1,r01_ani_rbt_wh,High Sunny
 Enemy,0,r01_gd_flo_wi,フワン
 Enemy,0,r01_gd_pyc_ba,ティノス
 Enemy,0,r01_gd_sol_sw,ペダス・ソード
@@ -788,8 +792,12 @@ Enemy,0,r05_non_cml4_crf,オルタ・クロフォード
 Enemy,0,r05_stl_bhu_ba1,オルタ・ノエティカ
 Enemy,0,r03_nat_mam_deh,ハイ・ゾ・マルモス
 Enemy,0,r05_rem_ang_ba1,ルイノ・アンガ
+Enemy,0,r01_gd_dra_raih,ハイ・ネクス
+Enemy,0,r05_stl_gia_ba1h,ハイ・ヘルジーグ
 Enemy,0,r05_rem_zsh_ba,ルイノ・シュレイダΛ
 Enemy,0,r05_nat_zmr_rsh,ハイ・ギルナッチ
+Enemy,0,r05_stl_dnt_exh,ダリオ・ルデアン
+Enemy,0,r01_ani_rbt_wh,ハイ・サニィ
 EnemyTitle,1,EnemyTitleRareEnemyGti,Golden
 EnemyTitle,1,EnemyTitleRareEnemySti,Silver
 EnemyTitle,1,EnemyTitleStrongEnemy,Malevolent
@@ -1585,6 +1593,33 @@ ActionCustomize,1,TaktPA03_Pattern3,Charging before Variant Attack changes attac
 ActionCustomize,1,Thunder02_Pattern1,<yellow>$(0)<c> charge generated for high-voltage state<br>Technique Potency <yellow>$(1)<c>/Reduces attack range when charged<br>PP Cost <yellow>$(2)<c>
 ActionCustomize,1,Thunder02_Pattern2,Strikes all enemies within range with lightning when uncharged<br>Attack range expands when charged<br>PP Cost <yellow>$(0)<c>
 ActionCustomize,1,Thunder02_Pattern3,Lightning attack occurs at the target location when uncharged<br>Shortens attack interval/duration when uncharged<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,WlancePA04_Pattern1,Increase Attack Speed/PA Potency <yellow>$(0)<c> when uncharged<br>Increase travel distance/Add vertical homing/Reduce vertical<br>movement after slam/PP Cost <yellow>$(1)<c> when uncharged
+ActionCustomize,1,WlancePA04_Pattern2,Add short 1 stage charge<br>Charged attacks release a shockwave<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,WlancePA04_Pattern3,"When Hunter Arts Avenger is triggered, the PA Potency of the<br>next Wired Lance PA activated (excluding this PA) is <yellow>$(0)<c><br>PP Cost <yellow>$(1)<c>"
+ActionCustomize,1,PartisanPA03_Pattern1,Increase Attack Range<br>No forward movement when not inputting a direction<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,PartisanPA03_Pattern2,Increase Number of Attacks<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,PartisanPA03_Pattern3,Send Out Shockwaves/Reduce Number of Attacks<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,DsaberPA04_Pattern1,Increase distance travelled forward in PA first half/<br>Add vertical homing/No descent in PA second half<br>when activated from the first half/PP Cost <yellow>$(0)<c>
+ActionCustomize,1,DsaberPA04_Pattern2,Nullify enemy attacks when PA first or second half is activated<br>Additional attacks occur around you when you successfully<br>nullify attacks/PP Cost <yellow>$(0)<c>
+ActionCustomize,1,KnucklePA01_Pattern1,Increase distance travelled forward in PA first half/<br>Add upwards homing/Increase Attack Range<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,KnucklePA01_Pattern2,Increase Attack Speed<br>Reduce retreat distance in PA second half<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,Gunslash_AtkSpeedAtp,Increase Attack Speed/Potency <yellow>$(0)<c> when not inputting a<br>direction/Potency <yellow>$(1)<c> when inputting a direction<br>PP Cost <yellow>$(2)<c>
+ActionCustomize,1,GunslashPA02_Pattern2,Increase range/Reduce lateral range when not inputting a direction<br>Increase Attack Range when inputting a direction<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,GunslashPA02_Pattern3,Unleash a powerful attack after attacking 3 times in a row while<br>not inputting a direction<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,LauncherPA04_Pattern1,Increase Attack Speed/fire rounds that continuously explode<br>on impact with enemies when uncharged<br>Reduce retreat distance/PP Cost <yellow>$(0)<c>
+ActionCustomize,1,LauncherPA04_Pattern2,Reduce Attack Speed/Increase Attack Range when uncharged<br>Potency <yellow>$(0)<c> when you successfully nullify enemy attacks<br>Reduce retreat distance/PP Cost <yellow>$(1)<c>
+ActionCustomize,1,LauncherPA04_Pattern3,Increase Attack Range at 1st Stage and 2nd Stage Charge<br>Expend Blight Round stocks to apply the Blight Round debuff<br>to enemies you hit/PP Cost <yellow>$(0)<c>
+ActionCustomize,1,CompoundBowPA01_Pattern1,1st Stage Charged Attacks deal continuous damage when<br>you hit an enemy<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,CompoundBowPA01_Pattern2,2nd Stage Charged Attack Potency <yellow>$(0)<c>/Charge Time <yellow>$(1)<c><br>PP Cost <yellow>$(2)<c>
+ActionCustomize,1,CompoundBowPA01_Pattern3,Elusion Plus immediately after has Potency <yellow>$(0)<c> &<br>Photon Bow Attack Impact Charge Effect<br>PP Cost <yellow>$(1)<c>
+ActionCustomize,1,JetBootsPA04_Pattern1,Increase Attack Speed/Increase Travel Distance/<br>PA Potency <yellow>$(0)<c> for Non-Variant Attacks <br>PP Cost <yellow>$(1)<c>
+ActionCustomize,1,JetBootsPA04_Pattern2,The photon blade from Variant Attacks deals damage<br>to nearby enemies for a set amount of time<br>Increase Attack Range/PP Cost <yellow>$(0)<c>
+ActionCustomize,1,JetBootsPA04_Pattern3,Activate Thrust Drive by pressing the Normal Attack<br>Button after activating this PA<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,Wind02_Pattern1,Uncharged and charged attacks become a single hit<br>Charged Potency <yellow>$(0)<c>/Charge Time <yellow>$(1)<c><br>PP Cost <yellow>$(2)<c>
+ActionCustomize,1,Wind02_Pattern2,Charged attacks don't activate vortexes/resets vortex affix time<br>Charged Potency to enemies affixed with a vortex <yellow>$(0)<c>/<br>Compound Technique Gauge Charge <yellow>$(1)<c>/PP Cost <yellow>$(2)<c>
+ActionCustomize,1,Dark02_Pattern1,Increase Attack Speed/Charge Time <yellow>$(0)<c><br>Charged Potency <yellow>$(1)<c>/Uncharged Potency <yellow>$(2)<c>
+ActionCustomize,1,Dark02_Pattern2,Uncharged Attacks deal continuous attacks<br>PP Cost <yellow>$(0)<c>
+ActionCustomize,1,Dark02_Pattern3,"With 3 Dark Orbs stocked, Uncharged Potency <yellow>$(0)<c> &<br>Compound Technique Gauge Charge <yellow>$(1)<c><br>PP Cost <yellow>$(2)<c>"
 ActionCustomize,0,Common_RangeExtendPP,攻撃範囲拡大<br>消費PP<yellow>$(0)<c>
 ActionCustomize,0,Common_LongChargeAtp,チャージ時威力<yellow>$(0)<c><br>チャージ時間<yellow>$(1)<c>
 ActionCustomize,0,Common_AtkSpeedAtp,攻撃速度上昇<br>PA威力<yellow>$(0)<c><br>消費PP<yellow>$(1)<c>
@@ -1731,6 +1766,33 @@ ActionCustomize,0,TaktPA03_Pattern3,派生前からチャージを開始しチ�
 ActionCustomize,0,Thunder02_Pattern1,帯電状態になるまでの蓄電量<yellow>$(0)<c><br>チャージ時のテクニック威力<yellow>$(1)<c>／攻撃範囲縮小<br>消費PP<yellow>$(2)<c>
 ActionCustomize,0,Thunder02_Pattern2,非チャージ時範囲内の全てのエネミーに雷撃を行う挙動に変化<br>チャージ時の攻撃範囲拡大<br>消費PP<yellow>$(0)<c>
 ActionCustomize,0,Thunder02_Pattern3,非チャージ時雷撃範囲をターゲット位置に生成する挙動に変化<br>非チャージ時の攻撃間隔短縮／持続時間短縮<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,WlancePA04_Pattern1,非チャージ時の攻撃速度上昇／PA威力<yellow>$(0)<c><br>非チャージ時の移動距離増加／上下方向への追尾性能追加／<br>叩きつけ後の上昇緩和／消費PP<yellow>$(1)<c>
+ActionCustomize,0,WlancePA04_Pattern2,短い1段階チャージを追加<br>チャージ時の攻撃が衝撃波を飛ばす挙動に変化<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,WlancePA04_Pattern3,ハンターアーツアヴェンジ発動時<br>次に発動するこのPA以外のワイヤードランスPA威力<yellow>$(0)<c><br>消費PP<yellow>$(1)<c>
+ActionCustomize,0,PartisanPA03_Pattern1,攻撃範囲拡大<br>非方向入力時に前進無効化<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,PartisanPA03_Pattern2,攻撃回数増加<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,PartisanPA03_Pattern3,衝撃波を飛ばす挙動に変化／攻撃回数減少<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,DsaberPA04_Pattern1,PA前半部分の前進距離増加／上下方向への追尾性能追加／<br>PA前半から発動したときに後半部分の下降無効化<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,DsaberPA04_Pattern2,PA前半部分と後半部分発動時にエネミーからの攻撃を無効化<br>攻撃の無効化成功時に自分の周囲に追加攻撃発生<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,KnucklePA01_Pattern1,PA前半部分の前進距離増加／上方向への追尾性能追加<br>攻撃範囲拡大<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,KnucklePA01_Pattern2,攻撃速度上昇<br>PA後半部分の後退距離緩和<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,Gunslash_AtkSpeedAtp,攻撃速度上昇<br>非方向入力時の威力<yellow>$(0)<c>／方向入力時の威力<yellow>$(1)<c><br>消費PP<yellow>$(2)<c>
+ActionCustomize,0,GunslashPA02_Pattern2,非方向入力時の射程距離延長／左右の攻撃範囲縮小<br>方向入力時の攻撃範囲拡大<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,GunslashPA02_Pattern3,非方向入力時の攻撃を連続で3回発動したとき<br>強力な攻撃が発生<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,LauncherPA04_Pattern1,非チャージ時の攻撃速度上昇<br>エネミーに命中したときに持続する爆発弾を発射<br>後退距離緩和／消費PP<yellow>$(0)<c>
+ActionCustomize,0,LauncherPA04_Pattern2,非チャージ時の攻撃速度低下／攻撃範囲拡大<br>エネミーからの攻撃の無効化成功時に威力<yellow>$(0)<c><br>後退距離緩和／消費PP<yellow>$(1)<c>
+ActionCustomize,0,LauncherPA04_Pattern3,1段チャージ時と2段チャージ時の攻撃範囲拡大<br>ウィークバレットのストックを消費して<br>命中したエネミーにウィークバレットを付与／消費PP<yellow>$(0)<c>
+ActionCustomize,0,CompoundBowPA01_Pattern1,1段チャージ時の攻撃が<br>エネミーに命中したときに持続する挙動に変化<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,CompoundBowPA01_Pattern2,2段チャージ時の威力<yellow>$(0)<c>／チャージ時間<yellow>$(1)<c><br>消費PP<yellow>$(2)<c>
+ActionCustomize,0,CompoundBowPA01_Pattern3,直後に発動するイルードエクスパンド威力<yellow>$(0)<c><br>その攻撃にバレットボウアタックインパクトの蓄積効果追加<br>消費PP<yellow>$(1)<c>
+ActionCustomize,0,JetBootsPA04_Pattern1,非派生時の攻撃速度上昇／移動距離増加／PA威力<yellow>$(0)<c><br>消費PP<yellow>$(1)<c>
+ActionCustomize,0,JetBootsPA04_Pattern2,派生時に展開されるフォトンの刃が<br>一定時間、周囲のエネミーにダメージを与える挙動に変化<br>攻撃範囲拡大／消費PP<yellow>$(0)<c>
+ActionCustomize,0,JetBootsPA04_Pattern3,PA発動後に通常攻撃ボタンを押すことで<br>スラストドライブ発動可能<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,Wind02_Pattern1,非チャージ時とチャージ時の攻撃が1ヒットに変化<br>チャージ時威力<yellow>$(0)<c>／チャージ時間<yellow>$(1)<c><br>消費PP<yellow>$(2)<c>
+ActionCustomize,0,Wind02_Pattern2,チャージ時の攻撃で風環が展開しない／風環付着時間リセット<br>風環が展開されたエネミーへのチャージ時威力<yellow>$(0)<c>／<br>複合属性テクニックのゲージ蓄積量<yellow>$(1)<c>／消費PP<yellow>$(2)<c>
+ActionCustomize,0,Dark02_Pattern1,攻撃速度上昇／チャージ時間<yellow>$(0)<c><br>チャージ時威力<yellow>$(1)<c>／非チャージ時威力<yellow>$(2)<c>
+ActionCustomize,0,Dark02_Pattern2,非チャージ時の攻撃が持続攻撃に変化<br>消費PP<yellow>$(0)<c>
+ActionCustomize,0,Dark02_Pattern3,暗黒珠のストック数が3つの状態での非チャージ時の<br>威力<yellow>$(0)<c>／複合属性テクニックのゲージ蓄積量<yellow>$(1)<c><br>消費PP<yellow>$(2)<c>
 AM,1,<ArsenalModule>Sword:NormalAttack,Garm: Normal Attack
 AM,1,<ArsenalModule>Sword:PA,Absolute Shatter
 AM,1,<ArsenalModule>Sword:WA,Garm: Weapon Action
