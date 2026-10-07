@@ -85,7 +85,7 @@ Common,1,TascSuccessInfo_AchievementName,Nombre del Título (0)
 Common,1,ShopAccessError,No se pudo acceder a la tienda.
 Common,1,MySpace_RegisterText,Nuevas Piezas de Construcción han sido vinculadas.
 Common,1,Mag_RegisterText,Forma de Mag añadida.
-Common,1,LoginBonus_TicketScratch,You obtained a Scratch Ticket.<br>Would you like to check the eligible Scratch Ticket?
+Common,1,LoginBonus_TicketScratch,Obtuviste un billete rasca y gana. ¿Le gustaría<br>comprobar el billete rasca y gana elegible?
 Common,0,YesText,はい
 Common,0,NoText,いいえ
 Common,0,CloseText,閉じる
@@ -3166,11 +3166,11 @@ StatusEffect,1,RuinBuff_GodBusterEnd,El efecto de apoyo a la misión<yellow>infl
 StatusEffect,1,Obj:MonolithPlayerBuff,Potencia +10%/Resistencia al daño aumentada +75%
 StatusEffect,1,RuinBuff_DropRareUp,Tasa de aparición rara +25 %
 StatusEffect,1,RuinBuff_DropRareUpEnd,El efecto de apoyo a la misión<yellow>Tasa de aparición rara +25 %<c>ha finalizado.
-StatusEffect,1,WhiteABuff_MarsBoost,M.A.R.S. battery fully restored. M.A.R.S. Alter Boost acquired.
-StatusEffect,1,WhiteABuff_MarsBoostTimeAttention,"M.A.R.S. Alter Boost, 10 seconds remaining."
-StatusEffect,1,WhiteABuff_MarsBoostEnd,The effects of M.A.R.S. Alter Boost have expired.
-StatusEffect,1,ForceWalk_Start,You've entered a Photon Dash restricted zone.
-StatusEffect,1,ForceWalk_End,The Photon Dash restricted zone has ended.
+StatusEffect,1,WhiteABuff_MarsBoost,M.A.R.S. Batería totalmente restaurada. M.A.R.S.  Alter Boost adquirido.
+StatusEffect,1,WhiteABuff_MarsBoostTimeAttention,"M.A.R.S.  Alter Boost, quedan 10 segundos."
+StatusEffect,1,WhiteABuff_MarsBoostEnd,Los efectos de M.A.R.S. Alter Boost han caducado.
+StatusEffect,1,ForceWalk_Start,Has ingresado al área restringida de Photon Dash.
+StatusEffect,1,ForceWalk_End,La zona restringida de Photon Dash ha finalizado.
 StatusEffect,0,PlBadCond:Burn,バーン
 StatusEffect,0,PlBadCond:Freeze,フリーズ
 StatusEffect,0,PlBadCond:Shock,ショック
@@ -3613,7 +3613,7 @@ EquipInventory,1,Rring,Anillos derechos
 EquipInventory,1,Ring1Hint,Puedes equipar un anillo de habilidad tipo 1 en esta ranura.
 EquipInventory,1,Ring2Hint,Puedes equipar un anillo de habilidad tipo 2 en esta ranura.
 EquipInventory,1,Ring3Hint,Puedes equipar un anillo de habilidad tipo 3 en esta ranura.
-EquipInventory,1,Amulet1Hint,You can equip a Neck Amulet to this slot.
+EquipInventory,1,Amulet1Hint,Puedes equipar un amuleto de cuello en<br>esta ranura.
 EquipInventory,0,Title,防具パレット
 EquipInventory,0,WarningTitle,注意
 EquipInventory,0,WarningMessage,このコスチュームを装備すると<br>一部ユニットが外れます。<br>よろしいですか？
@@ -16220,7 +16220,7 @@ AreaName,1,AreaName1133400,Alterar Reino: Tundra del Sur
 AreaName,1,AreaName1133700,Alterar Reino: Garganta de la Tundra
 AreaName,1,AreaName1133300,Alter Realm: Central Tundra
 AreaName,1,AreaName1133800,Alter Realm: West Tundra
-AreaName,1,AreaName1113300,Alter Realm: Northeast Plains
+AreaName,1,AreaName1113300,Alter Realm: Llanuras del Noreste
 AreaName,1,AreaName1130001,Campamento de Kvaris
 AreaName,1,AreaName1130002,Kvaris del Norte
 AreaName,1,AreaName1130003,Kvaris occidental
@@ -16860,8 +16860,8 @@ EquipMenu,1,Unit_TitleText2,Anillos de habilidad
 EquipMenu,1,Ring_Label1,Tipo 1
 EquipMenu,1,Ring_Label2,Tipo 2
 EquipMenu,1,Ring_Label3,Tipo 3
-EquipMenu,1,Amulet_TitleText,Amulet
-EquipMenu,1,Amulet_Label1,Neck
+EquipMenu,1,Amulet_TitleText,Amuleto
+EquipMenu,1,Amulet_Label1,Cuello
 EquipMenu,0,EquipTitle,装備メニュー
 EquipMenu,0,Title_WeaponPallet,武器パレット
 EquipMenu,0,Title_UnitPallet,防具パレット
@@ -16895,7 +16895,7 @@ FieldName,1,11106,Aelio del Sur
 FieldName,1,11109,Aelio del Norte
 FieldName,1,11111,Bosque de Resol
 FieldName,1,11199,Área Prohibida (Entrar causará errores)
-FieldName,1,11133,Alter Realm: Northeast Plains
+FieldName,1,11133,Alter Realm: Llanuras del Noreste
 FieldName,1,11172,Beach Wars '26
 FieldName,1,11200,ciudad retem
 FieldName,1,11201,Retem occidental
@@ -17573,9 +17573,9 @@ WeatherName,1,Ruin_Boss,Lluvia torrencial
 WeatherName,1,Ruin_Gold,Lluvia Radiante
 WeatherName,1,Ruin_Monolith,Miasma
 WeatherName,1,BeachWars_Fine,Soleado
-WeatherName,1,BeachWars_Collapse,Broken Sunny
-WeatherName,1,White_Default_A,Default
-WeatherName,1,White_Default_A2,Factor Excitation
+WeatherName,1,BeachWars_Collapse,Despejado
+WeatherName,1,White_Default_A,Por defecto
+WeatherName,1,White_Default_A2,excitación de factores
 WeatherName,0,Weather_Fine,晴れ
 WeatherName,0,Weather_Cloudy,曇り
 WeatherName,0,Weather_Rain,雨
@@ -19262,8 +19262,8 @@ ActionCustomizeMenu,1,OnMouseTechnicAttributeWind,<pict attr_wind><pict 4space>T
 ActionCustomizeMenu,1,OnMouseTechnicAttributeLight,<pict attr_light><pict 4space>Técnicas de luz
 ActionCustomizeMenu,1,OnMouseTechnicAttributeDark,<pict attr_dark><pict 4space>Técnicas Oscuras
 ActionCustomizeMenu,1,Yellow,<yellow> $(0) <c>
-ActionCustomizeMenu,1,FullRelease,All Tech Arts Customizations for the selected class will be removed. Are you sure?
-ActionCustomizeMenu,1,FullRelease_Success,Tech Arts Customizations removed.
+ActionCustomizeMenu,1,FullRelease,Se eliminarán todas las personalizaciones de Tech Arts para la clase seleccionada.<br>¿Está seguro?
+ActionCustomizeMenu,1,FullRelease_Success,Se eliminaron las personalizaciones de Tech Arts.
 ActionCustomizeMenu,0,ActionCustomize,テックアーツカスタマイズ
 ActionCustomizeMenu,0,ActionCustomizeTitle,テックアーツカスタマイズ
 ActionCustomizeMenu,0,Explanation1,テックアーツカスタマイズの実行とセットができます。
