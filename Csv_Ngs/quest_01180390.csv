@@ -2,15 +2,25 @@
 AcceptCondition,0,a1,特定のクライアントオーダーのクリア
 AcceptCondition,0,a2,特定のクライアントオーダーのクリア
 AcceptCondition,0,a3,スーパーハード受注許可証の所持
-Basic,0,Title,星砕の暴進
-Basic,0,Explanation,北クヴァリス周辺で、“ダークファルス・ソウラス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
-Basic,0,Explanation_r2,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+AreaName,1,Area0S,Planetcrusher Blitz
+AreaName,1,Area0L,Planetcrusher Blitz
+AreaName,0,Area0S,星砕の暴進
+AreaName,0,Area0L,星砕の暴進
 Basic,1,Title,Bombardeo aplastaplanetas
 Basic,1,Explanation,"Se observó una potente respuesta energética, comparable a la de Dark Falz Solus, en las proximidades de Kvaris Norte.<br>Todos los defensores de ARKS, preséntense inmediatamente en el punto de emergencia para eliminar esta amenaza desconocida.<br><yellow>Los PNJ de apoyo no pueden participar.<c>"
 Basic,1,Explanation_r2,"Se ha detectado una potente lectura de energía similar a la de Starless en las proximidades de North Kvaris. Todos los defensores de ARKS, preséntense inmediatamente en el punto designado para eliminar esta amenaza desconocida.<br><yellow>*Aparecerá un espécimen cuyo nombre incluye ""Malignant"".<br>Los PNJ de apoyo no pueden participar.<c>"
-FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
+Basic,1,Explanation_r3,"A powerful energy reading resembling that of Starless was observed in the vicinity of North Kvaris. All ARKS defenders, report to the emergence point immediately to eliminate this unknown menace.<br><yellow>Assist NPCs cannot participate.<c>"
+Basic,0,Title,星砕の暴進
+Basic,0,Explanation,北クヴァリス周辺で、“ダークファルス・ソウラス”に比肩する<br>強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※アシストNPC参加不可<c>
+Basic,0,Explanation_r2,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>※二つ名“深禍の”が付いた個体が出現／アシストNPC参加不可<c>
+Basic,0,Explanation_r3,北クヴァリス周辺で、<br>スターレスのものと思われる強力なエネルギー反応が確認された。<br>アークス各員は、当該ポイントに急行し、迫りくる未知なる脅威を排除せよ。<br>――――――――――――――――――――――――――――――――――――――<br><yellow>アシストNPC参加不可<c>
 FailureCondition,1,f0,Quedar incapacitado 5 veces<br>Exceder el límite de tiempo
-QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
+FailureCondition,0,f0,５回戦闘不能になる<br>制限時間が経過する
 QuestTarget,1,SimpleExplanation,Derrota a Dark Falz Dalion
-SuccessCondition,0,s0,対象エネミーの撃破
+QuestTarget,1,SimpleExplanation_r2,Defeat Dark Falz Dalion
+QuestTarget,1,SimpleExplanation_r3,Defeat Dalio Ludian
+QuestTarget,0,SimpleExplanation,ダークファルス・ダリオンを倒す
+QuestTarget,0,SimpleExplanation_r2,ダークファルス・ダリオンを倒す
+QuestTarget,0,SimpleExplanation_r3,ダリオ・ルデアンを倒す
 SuccessCondition,1,s0,Derrota a los enemigos objetivo.
+SuccessCondition,0,s0,対象エネミーの撃破
