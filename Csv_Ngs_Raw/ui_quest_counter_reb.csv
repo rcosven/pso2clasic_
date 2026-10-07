@@ -1,4 +1,336 @@
 ﻿section,group,id,text
+Caution,1,None,An unknown error occurred.<br><br>[No. 3000]
+Caution,1,NotReceptQuestPartyGuest,You cannot accept the quest because<br>you are not a Party Leader.
+Caution,1,NotReceptQuestAlreadyQuest,You cannot accept the quest because<br>you are not a Party Leader.<br>(The quest has already begun. Heading <br>toward the gate is recommended.)
+Caution,1,NotFoundQuestSearch,Could not find a quest that matches<br>the conditions you entered.
+Caution,1,NotFoundRoomSearch,Could not find a room that matches<br>the conditions you entered.
+Caution,1,NotFoundPartyList,Could not find a party.
+Caution,1,NotFoundQuestType,There are no quests to accept.
+Caution,1,NotFoundQuestList,There are no quests to accept.
+Caution,1,CantStartQuestNotFoundRoom,Unable to start the quest because<br>the target room could not be found.
+Caution,1,CantStartQuestCapacityOverRoom,Unable to join because the room is full.
+Caution,1,CantStartQuestCapacityOverRoom2,"Unable to join because the room is full. The number in the<br>room includes players who are trying to join the room, which<br>may not be reflected in Number of Participants.<br><br><yellow>Note: A player can only try to join a room for one minute at<br>a time, so you may be able to join the room by waiting and<br>trying again.<c>"
+Caution,1,CantStartQuestNewRaidQuest,The quest cannot be accepted because the party members have<br>not defeated the enemies in the Join Conditions.
+Caution,1,CantStartQuestNotNotFoundParty,Unable to start the quest because the<br>target Party could not be found.
+Caution,1,CantStartQuestCapacityOverParty,Unable to join because the party is full.
+Caution,1,CantStartQuestDifferencePasswordParty,Unable to join because the password is incorrect.
+Caution,1,CantStartQuestAlreadyFinished,Unable to join this quest because this party<br>has already completed it.
+Caution,1,CautionNotSoloParty,Cannot transfer to another block because you are<br>currently in a party.
+Caution,1,CantStartQuestDifferenceCondition,Unable to join the party because you do not meet the<br>Join Conditions.
+Caution,1,CantStartQuestDifferenceConditionLine1,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)
+Caution,1,CantStartQuestDifferenceConditionLine2,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)
+Caution,1,CantStartQuestDifferenceConditionLine3,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)
+Caution,1,CantStartQuestDifferenceConditionLine4,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CantStartQuestDifferenceConditionLine5,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
+Caution,1,CantStartQuestDifferenceConditionLine6,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)
+Caution,1,CantStartQuestDifferenceConditionLine7,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)
+Caution,1,CantStartQuestDifferenceConditionLine8,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)<br>- $(7)
+Caution,1,QuestLevel,<pict mainclass_icon> Level $(0) and up
+Caution,1,PartyLevel,Party Join Conditions: Level $(1) to $(0)
+Caution,1,FriendOnly,Friends Only
+Caution,1,GuildOnly,Alliance Members Only
+Caution,1,PasswordNG,Incorrect Password
+Caution,1,BurstIntoNG,Joining Partway Restricted for this Quest
+Caution,1,ReasonEventFlag,Special Acceptance Conditions
+Caution,1,RareAreaNG,Party is in a Special Area
+Caution,1,CantStartQuestTimeLimitOver,Quest Can no Longer be Accepted
+Caution,1,CapacityOverParty,Party Number Restrictions
+Caution,1,PlatformError,Platform Restrictions
+Caution,1,RaidQuestDisable,Join Condition Enemies not Defeated
+Caution,1,NotFoundPartyListtInBasnet,Could not find a party.
+Caution,1,CantStartQuestClearCountLimit,You cannot join the quest because one or more party<br>members have exceeded the maximum number of times<br>the quest may be cleared.
+Caution,1,QuestSubLevel,<pict subclass_icon> Level $(0) and up
+Caution,1,ClearCountLimit,You have exceeded the maximum clears for this quest.
+Caution,1,CantStartQuestIgnoreQuest,This quest cannot be accepted at this time.<br>Please check the Player's Site for details.
+Caution,1,IgnoreQuest,This quest cannot be accepted at this time.<br>Please check the Player's Site for details.
+Caution,1,QuestDropPenalty,"One or more members have an ""Abandonment Penalty."""
+Caution,1,CantStartQuestDropPenalty,"You are unable to join a party or accept a quest due to the<br>following reasons:<br><br>- One or more members have an ""Abandonment Penalty."""
+Caution,1,CantStartProhibitQuestDropTitleCnt,QUEST ACCEPTANCE MENU TERMINAL
+Caution,1,CantStartProhibitQuestDropTitleTlp,TELEPORTER
+Caution,1,CantStartProhibitQuestDropForStart,This is currently unavailable.
+Caution,1,TitleConfirmForQuest,CONFIRM QUEST ACCEPTANCE
+Caution,1,CautionNon,Unknown Error
+Caution,1,CautionQuestLimitTimeOver,The quest can no longer be accepted.
+Caution,1,CautionQuestLevelNG,You have not met the required conditions for this quest.
+Caution,1,CautionQuestLevelNG2,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- Level $(0) and up
+Caution,1,CautionQuestPartyMemberMax,You cannot accept this quest because the Party has more than<br>$(0) members.
+Caution,1,CautionQuestPartyMemberJoinMax,You cannot join this Party because it is in the middle of a<br>quest that allows only $(0) members to join.
+Caution,1,CautionQuestPlatform,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)
+Caution,1,CautionQuestRaidQuest,You cannot accept this quest because you have not met the<br>required conditions.
+Caution,1,CautionMultiConditionLine1,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)
+Caution,1,CautionMultiConditionLine2,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)
+Caution,1,CautionMultiConditionLine3,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)
+Caution,1,CautionMultiConditionLine4,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)
+Caution,1,CautionMultiConditionLine5,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
+Caution,1,CautionQuestClearCountLimit,You cannot accept this quest because you have reached the<br>maximum number of times this quest can be cleared.
+Caution,1,CautionNothingQuest,There are no Quests of this type.
+Caution,1,NotFoundQuestRecord,No Quest records.
+Caution,1,CantStartQuestNewNetCafeQuest,A party member does not have Net Café Premium and cannot accept this Quest.
+Caution,1,CantStartQuestOutExtraQuest,The Campaign period for this Quest has ended. Please reaccept.
+Caution,1,CantStartQuestInExtraQuest,A Campaign period now applies to this Quest. Please reaccept.
+Caution,1,CantStartCapacityOverInTraning,Could not initiate Practice Quest because the block is at capacity. Please wait a while and try again.<br><br>Note: Practice Quests take place on the Challenge Block of their ship.
+Caution,1,LeavePenalty,You cannot accept the quest<br>due to Matchmaking restrictions.<br><br>Please wait a little and then accept the quest.
+Caution,0,None,不明なエラーです。<br><br>[No.3000]
+Caution,0,NotReceptQuestPartyGuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。
+Caution,0,NotReceptQuestAlreadyQuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。<br>（すでにクエストが始まっています。<br>出発ゲートに向かうことをおすすめします）
+Caution,0,NotFoundQuestSearch,条件に当てはまるクエストが<br>見つかりませんでした。
+Caution,0,NotFoundRoomSearch,条件に当てはまるルームが<br>見つかりませんでした。
+Caution,0,NotFoundPartyList,パーティーが見つかりませんでした。
+Caution,0,NotFoundQuestType,受注可能なクエストがありません。
+Caution,0,NotFoundQuestList,受注可能なクエストがありません。
+Caution,0,CantStartQuestNotFoundRoom,対象ルームが見つからなかったため<br>クエストを開始できません。
+Caution,0,CantStartQuestCapacityOverRoom,ルームの人数オーバーのため参加できません。
+Caution,0,CantStartQuestCapacityOverRoom2,　ルームの人数オーバーのため参加できません。<br>　人数にはルームに参加予定のプレイヤーも含んでおり、<br>　参加人数に反映されていない場合があります。<br>　<br>　<yellow>※参加予定の有効期限は1分ですので、<br>　　時間を置いて再度お試しいただくことで、<br>　　参加可能となる場合もあります。<c>
+Caution,0,CantStartQuestNewRaidQuest,パーティーメンバーが<br>参加条件であるエネミーを倒していないため、<br>クエストを受注できません。
+Caution,0,CantStartQuestNotNotFoundParty,対象パーティーが見つからなかったため、<br>クエストを開始できません。
+Caution,0,CantStartQuestCapacityOverParty,パーティーの人数オーバーのため参加できません。
+Caution,0,CantStartQuestDifferencePasswordParty,パスワードが間違っているため参加できません。
+Caution,0,CantStartQuestAlreadyFinished,このパーティーは<br>すでにクエストを終了しているため、<br>参加できません。
+Caution,0,CautionNotSoloParty,現在パーティーを組んでいるため<br>他のブロックに移動することはできません。
+Caution,0,CantStartQuestDifferenceCondition,このパーティーの参加条件を満たしていないため、<br>参加できません。
+Caution,0,CantStartQuestDifferenceConditionLine1,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)
+Caution,0,CantStartQuestDifferenceConditionLine2,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)
+Caution,0,CantStartQuestDifferenceConditionLine3,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)
+Caution,0,CantStartQuestDifferenceConditionLine4,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
+Caution,0,CantStartQuestDifferenceConditionLine5,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
+Caution,0,CantStartQuestDifferenceConditionLine6,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)
+Caution,0,CantStartQuestDifferenceConditionLine7,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)
+Caution,0,CantStartQuestDifferenceConditionLine8,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)<br>・$(7)
+Caution,0,QuestLevel,<pict mainclass_icon>Lv.$(0)～
+Caution,0,PartyLevel,パーティー参加条件レベル/Lv.$(1)～$(0)
+Caution,0,FriendOnly,フレンド限定
+Caution,0,GuildOnly,チームメンバー限定
+Caution,0,PasswordNG,パスワードが間違っている
+Caution,0,BurstIntoNG,クエストにより途中参加が制限されている
+Caution,0,ReasonEventFlag,特殊な受注条件
+Caution,0,RareAreaNG,パーティーが特別なエリアにいる
+Caution,0,CantStartQuestTimeLimitOver,クエストの受注可能期間が過ぎています。
+Caution,0,CapacityOverParty,パーティーの人数制限
+Caution,0,PlatformError,プラットフォーム制限
+Caution,0,RaidQuestDisable,参加条件であるエネミーを倒していない
+Caution,0,NotFoundPartyListtInBasnet,パーティーが見つかりませんでした。
+Caution,0,CantStartQuestClearCountLimit,パーティーメンバーが<br>クエストのクリア回数制限を超えているため、<br>参加できません。
+Caution,0,QuestSubLevel,<pict subclass_icon>Lv.$(0)～
+Caution,0,ClearCountLimit,クエストのクリア回数制限を超えている
+Caution,0,CantStartQuestIgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
+Caution,0,IgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
+Caution,0,QuestDropPenalty,「破棄ペナルティー」を受けているメンバーがいます。
+Caution,0,CantStartQuestDropPenalty,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・「破棄ペナルティー」を受けているメンバーがいます。
+Caution,0,CantStartProhibitQuestDropTitleCnt,クエスト受注メニュー端末
+Caution,0,CantStartProhibitQuestDropTitleTlp,テレポーター
+Caution,0,CantStartProhibitQuestDropForStart,現在使用することができません。
+Caution,0,TitleConfirmForQuest,クエスト受注確認
+Caution,0,CautionNon,不明なエラー
+Caution,0,CautionQuestLimitTimeOver,クエストの受注可能期間が過ぎています。
+Caution,0,CautionQuestLevelNG,クエスト受注条件を満たしていません。
+Caution,0,CautionQuestLevelNG2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・Lv.$(0)～
+Caution,0,CautionQuestPartyMemberMax,パーティーメンバーが$(0)人以上いるため<br>このクエストは受注できません。
+Caution,0,CautionQuestPartyMemberJoinMax,参加可能人数が$(0)人以内の<br>クエストを受注中のため<br>このパーティーに参加できません。
+Caution,0,CautionQuestPlatform,パーティーメンバー全員が<br>以下の受注条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
+Caution,0,CautionQuestRaidQuest,クエスト条件を満たしていないため、<br>受注できません。
+Caution,0,CautionMultiConditionLine1,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
+Caution,0,CautionMultiConditionLine2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)
+Caution,0,CautionMultiConditionLine3,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)
+Caution,0,CautionMultiConditionLine4,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
+Caution,0,CautionMultiConditionLine5,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
+Caution,0,CautionQuestClearCountLimit,クエストのクリア回数制限を超えているため、<br>このクエストは受注できません。
+Caution,0,CautionNothingQuest,このクエストタイプのクエストは現在１つもありません。
+Caution,0,NotFoundQuestRecord,クエストレコードが存在しません。
+Caution,0,CantStartQuestNewNetCafeQuest,パーティーメンバーが<br>ネットカフェプレミアムではないため、<br>クエストを受注できません。
+Caution,0,CantStartQuestOutExtraQuest,このクエストのキャンペーン対象期間は終了しました。<br>クエストを再受注してください。
+Caution,0,CantStartQuestInExtraQuest,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
+Caution,0,CantStartCapacityOverInTraning,練習クエストを開始できませんでした。<br>移動先のブロックが混雑している場合は<br>しばらく時間をあけてからお試しください。<br><br>※練習クエストは所属シップの<br>　　チャレンジブロックで行われます。
+Caution,0,LeavePenalty,マッチング制限中のため<br>対象クエストを受注できません。<br><br>しばらく時間を空けてから受注してください。
+ChallengeBuff,1,Window_Main_Title,Challenge Settings
+ChallengeBuff,1,Window_List_Title,Challenge List
+ChallengeBuff,1,Challenge_Buff_Bonus1,<c 76d1ff>Score Multiplier<c>
+ChallengeBuff,1,Challenge_Buff_Bonus2,<yellow>+$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_Bonus2_Minus,<yellow>-$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_Bonus3,<c 76d1ff>Clear Difficulty Multiplier:<c>
+ChallengeBuff,1,Challenge_Buff_Bonus4,<yellow>$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_Bonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus1,<yellow>Score Multiplier<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus2,<yellow>+$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus2_Minus,<yellow>-$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus3,<yellow>Total Clear Difficulty Multiplier:<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus4,<yellow>$(0)%<c>
+ChallengeBuff,1,Challenge_Buff_TotalBonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank1,<yellow>Attainable Quest Clear Rank: <c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank2,<yellow>$(0)<c>
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_S,S
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_A,A
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_B,B
+ChallengeBuff,1,Challenge_Buff_Attainable_Rank_C,C
+ChallengeBuff,1,Window_Main_Button_Add1,Add Challenges 
+ChallengeBuff,1,Window_Main_Button_Add2,($(0) more available)
+ChallengeBuff,1,Window_Main_Button_Clear,Restore Settings to Default
+ChallengeBuff,1,Window_Main_Button_Load,Load Previous Settings
+ChallengeBuff,1,Dialog_Reset_Title,Confirm Reset Settings
+ChallengeBuff,1,Dialog_Reset_Message,Challenge Settings will reset.<br>Are you sure you wish to proceed?
+ChallengeBuff,1,Window_Load_Menu1,Load Previous Settings
+ChallengeBuff,1,Window_Load_Menu2,Load (Solo) High Score Settings
+ChallengeBuff,1,Window_Load_Menu3,Load (Party) High Score Settings
+ChallengeBuff,1,Dialog_Load_Title,CONFIRM
+ChallengeBuff,1,Dialog_Load_Message,This will overwrite settings that have been changed.<br>Are you sure you wish to proceed?
+ChallengeBuff,1,Challenge_Buff_Error1,Cannot select several similar challenges.
+ChallengeBuff,1,Challenge_Buff_Error2,Cannot be selected because the total effect exceeds $(0).
+ChallengeBuff,1,Window_Guide_Message,"Changing the enemies' and players' abilities will affect the difficulty level of the quest.<br><br><yellow>The higher the difficulty is, the higher the multiplier applied to the score.<br><br>Your score will affect your rank when you clear the quest and the rewards you receive.<c>"
+ChallengeBuff,1,Window_Guide_Message2,Changing the enemies' and players' abilities will affect the difficulty level of the quest.
+ChallengeBuff,1,Window_List_Tab_Popup_All,All Challenges
+ChallengeBuff,1,Window_List_Tab_Popup_1,Enemy HP Up
+ChallengeBuff,1,Window_List_Tab_Popup_2,Enemy Attack Up
+ChallengeBuff,1,Window_List_Tab_Popup_3,Player Ability Down
+ChallengeBuff,1,Window_List_Tab_Popup_4,Misc.
+ChallengeBuff,1,Window_List_Tab_Popup_5,Player Ability Up
+ChallengeBuff,0,Window_Main_Title,チャレンジ設定
+ChallengeBuff,0,Window_List_Title,チャレンジ項目リスト
+ChallengeBuff,0,Challenge_Buff_Bonus1,<c 76d1ff>スコア倍率<c>
+ChallengeBuff,0,Challenge_Buff_Bonus2,<yellow>＋$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_Bonus2_Minus,<yellow>－$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_Bonus3,<c 76d1ff>クリア難度倍率：<c>
+ChallengeBuff,0,Challenge_Buff_Bonus4,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_Bonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus1,<yellow>スコア倍率<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus2,<yellow>＋$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus2_Minus,<yellow>－$(0)%<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus3,<yellow>合計クリア難度倍率：<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus4,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_TotalBonus4_Minus,<yellow>$(0)％<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank1,<yellow>到達可能クエストクリアランク：<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank2,<yellow>$(0)<c>
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_S,Ｓ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_A,Ａ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_B,Ｂ
+ChallengeBuff,0,Challenge_Buff_Attainable_Rank_C,Ｃ
+ChallengeBuff,0,Window_Main_Button_Add1,チャレンジを追加する
+ChallengeBuff,0,Window_Main_Button_Add2,（あと$(0)枠追加可能）
+ChallengeBuff,0,Window_Main_Button_Clear,設定を初期化する
+ChallengeBuff,0,Window_Main_Button_Load,以前の設定を読み込む
+ChallengeBuff,0,Dialog_Reset_Title,設定のリセット確認
+ChallengeBuff,0,Dialog_Reset_Message,編集中のチャレンジ設定をリセットします。<br>よろしいですか？
+ChallengeBuff,0,Window_Load_Menu1,前回の設定を読み込む
+ChallengeBuff,0,Window_Load_Menu2,ハイスコア(ソロ)達成時の設定を読み込む
+ChallengeBuff,0,Window_Load_Menu3,ハイスコア(パーティー)達成時の設定を読み込む
+ChallengeBuff,0,Dialog_Load_Title,設定の読み込み確認
+ChallengeBuff,0,Dialog_Load_Message,編集中の設定が上書きされます。<br>よろしいですか？
+ChallengeBuff,0,Challenge_Buff_Error1,類似のチャレンジ項目は重複して選択できません。
+ChallengeBuff,0,Challenge_Buff_Error2,効果が合計で$(0)個を超えるため、選択できません。
+ChallengeBuff,0,Window_Guide_Message,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。<br><br><yellow>難度を上げるほど、<br>スコアにかかる倍率も上昇します。<br><br>スコアはクエストクリア時の<br>ランクに影響し、報酬が変動します。<c>
+ChallengeBuff,0,Window_Guide_Message2,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。
+ChallengeBuff,0,Window_List_Tab_Popup_All,すべてのチャレンジ
+ChallengeBuff,0,Window_List_Tab_Popup_1,エネミーHPアップ
+ChallengeBuff,0,Window_List_Tab_Popup_2,エネミー攻撃力アップ
+ChallengeBuff,0,Window_List_Tab_Popup_3,プレイヤー能力ダウン
+ChallengeBuff,0,Window_List_Tab_Popup_4,その他
+ChallengeBuff,0,Window_List_Tab_Popup_5,プレイヤー能力アップ
+NpcCounter,1,Window_Titletelop,Quest Counter
+NpcCounter,1,Window_TwolineGuide,Select the Quest(s) you would like to accept.
+NpcCounter,1,Window_Main_Title,Quest Menu
+NpcCounter,1,Exit_NpcCounter,Leave Quest Counter
+NpcCounter,1,NpcCounter_Category1,Limited-Time Quests
+NpcCounter,1,NpcCounter_Category2,The ARKS Chronicles: Main Story
+NpcCounter,1,NpcCounter_Category3,Standing Quests
+NpcCounter,1,NpcCounter_Category4,The ARKS Chronicles: Other
+NpcCounter,1,NpcCounter_Category_0,Recommended Quests
+NpcCounter,1,NpcCounter_Category_1,Trigger Quests
+NpcCounter,1,NpcCounter_Category_2,The ARKS Chronicles: Main Story
+NpcCounter,1,NpcCounter_Category_3,The ARKS Chronicles: Other
+NpcCounter,1,NpcCounter_Category_4,Standard Duels
+NpcCounter,1,NpcCounter_Category_5,Leciel Exploration
+NpcCounter,1,NpcCounter_Category_6,Time Extension Quests
+NpcCounter,1,NpcCounter_Category_7,Nameless City Exploration
+NpcCounter,1,NpcCounter_Category_10,Duel Quests
+NpcCounter,1,NpcCounter_Category_20,Other
+NpcCounter,1,NpcCounter_Category_11,Extra Duel: Fictitious Beam
+NpcCounter,1,NpcCounter_Category_12,Various Quests
+NpcCounter,1,NpcCounter_Category_13,Alter Realm Exploration
+NpcCounter,1,NpcCounter_Category_30,Alter Realm Exploration
+NpcCounter,1,NpcCounter_Category_14,Interception Sectors
+NpcCounter,1,NpcCounter_Category_15,Combat Sectors
+NpcCounter,1,NpcCounter_Category_18,Phantom Tower Assault
+NpcCounter,1,NpcCounter_Category_17,Splinter Realm Exploration
+NpcCounter,1,NpcCounter_Error1,There are no quests to accept.
+NpcCounter,1,Arkshistory_TwolineGuide,Replay completed Story Quests.
+NpcCounter,1,Window_QuestSelect_Title,Select Quest
+NpcCounter,1,Window_QuestSelect_Chapter,Ch. $(0)
+NpcCounter,1,Window_QuestSelect_FirstChapter,Prologue
+NpcCounter,1,Window_QuestSelect_FilterMenu,$(1). $(0)
+NpcCounter,1,Filter_Category_All,Show All
+NpcCounter,1,Filter_Category_1,Story Quests
+NpcCounter,1,Filter_Category_2,Side Stories
+NpcCounter,1,Filter_Category_3,Play Scenes
+NpcCounter,1,Filter_Category_4,Seasonal Quests
+NpcCounter,1,Filter_Category_5,Limited-Time Trigger Quests
+NpcCounter,1,Filter_Category_6,Trigger Quests
+NpcCounter,1,Filter_Category_7,Urgent Quests
+NpcCounter,1,Filter_Category_8,Trainia
+NpcCounter,1,Filter_Category_9,Normal Quests
+NpcCounter,1,Filter_Trigger_Category_Prize,Battledia: Yellow
+NpcCounter,1,Filter_Trigger_Category_Colosseo,Battledia: Purple
+NpcCounter,1,Filter_Trigger_Category_Region_111,Drill: Aelio
+NpcCounter,1,Filter_Trigger_Category_Region_112,Drill: Retem
+NpcCounter,1,Filter_Trigger_Category_Region_113,Drill: Kvaris
+NpcCounter,1,Filter_Trigger_Category_Region_114,Drill: Stia
+NpcCounter,1,Dialog_Play_Scene_Title,Confirm Scene Replay
+NpcCounter,1,Dialog_Play_Scene_Text,The scene will be played. Do you wish to proceed?
+NpcCounter,1,Category_AddText,Mini Episodes
+NpcCounter,1,Category_Misc,Other
+NpcCounter,1,NpcCounter_BoostOccurrence,Boost Effect Active
+NpcCounter,1,NpcCounter_Category_16,Extra Duel: Planetfall Strike
+NpcCounter,0,Window_Titletelop,クエストカウンター
+NpcCounter,0,Window_TwolineGuide,受注したいクエストを選んでください。
+NpcCounter,0,Window_Main_Title,クエストメニュー
+NpcCounter,0,Exit_NpcCounter,クエストカウンターを出る
+NpcCounter,0,NpcCounter_Category1,期間限定クエスト
+NpcCounter,0,NpcCounter_Category2,アークスヒストリー：メインストーリー
+NpcCounter,0,NpcCounter_Category3,常設クエスト
+NpcCounter,0,NpcCounter_Category4,アークスヒストリー：その他
+NpcCounter,0,NpcCounter_Category_0,ピックアップクエスト
+NpcCounter,0,NpcCounter_Category_1,トリガークエスト
+NpcCounter,0,NpcCounter_Category_2,アークスヒストリー：メインストーリー
+NpcCounter,0,NpcCounter_Category_3,アークスヒストリー：その他
+NpcCounter,0,NpcCounter_Category_4,スタンダードデュエル
+NpcCounter,0,NpcCounter_Category_5,ルシエル探索
+NpcCounter,0,NpcCounter_Category_6,タイムエクステンションクエスト
+NpcCounter,0,NpcCounter_Category_7,ネームレスシティ探索
+NpcCounter,0,NpcCounter_Category_10,デュエルクエスト
+NpcCounter,0,NpcCounter_Category_20,その他
+NpcCounter,0,NpcCounter_Category_11,エクストラデュエル：虚構の光芒
+NpcCounter,0,NpcCounter_Category_12,ヴァリアスクエスト
+NpcCounter,0,NpcCounter_Category_13,オルタレルム探索
+NpcCounter,0,NpcCounter_Category_30,オルタレルム探索
+NpcCounter,0,NpcCounter_Category_14,迎撃セクション
+NpcCounter,0,NpcCounter_Category_15,戦闘セクション
+NpcCounter,0,NpcCounter_Category_18,虚塔制圧戦
+NpcCounter,0,NpcCounter_Category_17,分岐界域探索
+NpcCounter,0,NpcCounter_Error1,受注可能なクエストはありません。
+NpcCounter,0,Arkshistory_TwolineGuide,クリアしたストーリークエストを再度プレイすることができます。
+NpcCounter,0,Window_QuestSelect_Title,クエスト選択
+NpcCounter,0,Window_QuestSelect_Chapter,$(0)章
+NpcCounter,0,Window_QuestSelect_FirstChapter,序章
+NpcCounter,0,Window_QuestSelect_FilterMenu,$(1).$(0)
+NpcCounter,0,Filter_Category_All,すべて表示
+NpcCounter,0,Filter_Category_1,ストーリークエスト
+NpcCounter,0,Filter_Category_2,サイドストーリー
+NpcCounter,0,Filter_Category_3,シーン再生
+NpcCounter,0,Filter_Category_4,シーズナルクエスト
+NpcCounter,0,Filter_Category_5,期間限定トリガークエスト
+NpcCounter,0,Filter_Category_6,トリガークエスト
+NpcCounter,0,Filter_Category_7,緊急クエスト
+NpcCounter,0,Filter_Category_8,トレイニア
+NpcCounter,0,Filter_Category_9,通常クエスト
+NpcCounter,0,Filter_Trigger_Category_Prize,バトルディア：イエロー
+NpcCounter,0,Filter_Trigger_Category_Colosseo,バトルディア：パープル
+NpcCounter,0,Filter_Trigger_Category_Region_111,想定演習：エアリオ
+NpcCounter,0,Filter_Trigger_Category_Region_112,想定演習：リテム
+NpcCounter,0,Filter_Trigger_Category_Region_113,想定演習：クヴァリス
+NpcCounter,0,Filter_Trigger_Category_Region_114,想定演習：スティア
+NpcCounter,0,Dialog_Play_Scene_Title,シーン再生確認
+NpcCounter,0,Dialog_Play_Scene_Text,シーンを再生します。<br>よろしいですか？
+NpcCounter,0,Category_AddText,ショートエピソード
+NpcCounter,0,Category_Misc,その他
+NpcCounter,0,NpcCounter_BoostOccurrence,ブースト効果あり
+NpcCounter,0,NpcCounter_Category_16,エクストラデュエル：星崩の猛攻
 PartySelect,1,Title_Partyselect,Party Selection
 PartySelect,1,Room_Friend_Filter,Rooms With Friends Only
 PartySelect,1,Room_Team_Filter,Rooms With Alliance Members Only
@@ -367,335 +699,3 @@ QuestInfo,0,QuestReward_etr,他
 QuestInfo,0,EnemyAttribute_Element1,$(0)
 QuestInfo,0,EnemyAttribute_Element2,$(0) $(1)
 QuestInfo,0,DropItem_ListClose,リストを閉じる
-Caution,1,None,An unknown error occurred.<br><br>[No. 3000]
-Caution,1,NotReceptQuestPartyGuest,You cannot accept the quest because<br>you are not a Party Leader.
-Caution,1,NotReceptQuestAlreadyQuest,You cannot accept the quest because<br>you are not a Party Leader.<br>(The quest has already begun. Heading <br>toward the gate is recommended.)
-Caution,1,NotFoundQuestSearch,Could not find a quest that matches<br>the conditions you entered.
-Caution,1,NotFoundRoomSearch,Could not find a room that matches<br>the conditions you entered.
-Caution,1,NotFoundPartyList,Could not find a party.
-Caution,1,NotFoundQuestType,There are no quests to accept.
-Caution,1,NotFoundQuestList,There are no quests to accept.
-Caution,1,CantStartQuestNotFoundRoom,Unable to start the quest because<br>the target room could not be found.
-Caution,1,CantStartQuestCapacityOverRoom,Unable to join because the room is full.
-Caution,1,CantStartQuestCapacityOverRoom2,"Unable to join because the room is full. The number in the<br>room includes players who are trying to join the room, which<br>may not be reflected in Number of Participants.<br><br><yellow>Note: A player can only try to join a room for one minute at<br>a time, so you may be able to join the room by waiting and<br>trying again.<c>"
-Caution,1,CantStartQuestNewRaidQuest,The quest cannot be accepted because the party members have<br>not defeated the enemies in the Join Conditions.
-Caution,1,CantStartQuestNotNotFoundParty,Unable to start the quest because the<br>target Party could not be found.
-Caution,1,CantStartQuestCapacityOverParty,Unable to join because the party is full.
-Caution,1,CantStartQuestDifferencePasswordParty,Unable to join because the password is incorrect.
-Caution,1,CantStartQuestAlreadyFinished,Unable to join this quest because this party<br>has already completed it.
-Caution,1,CautionNotSoloParty,Cannot transfer to another block because you are<br>currently in a party.
-Caution,1,CantStartQuestDifferenceCondition,Unable to join the party because you do not meet the<br>Join Conditions.
-Caution,1,CantStartQuestDifferenceConditionLine1,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)
-Caution,1,CantStartQuestDifferenceConditionLine2,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)
-Caution,1,CantStartQuestDifferenceConditionLine3,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)
-Caution,1,CantStartQuestDifferenceConditionLine4,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)
-Caution,1,CantStartQuestDifferenceConditionLine5,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
-Caution,1,CantStartQuestDifferenceConditionLine6,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)
-Caution,1,CantStartQuestDifferenceConditionLine7,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)
-Caution,1,CantStartQuestDifferenceConditionLine8,You are unable to join a party or accept a quest<br>due to the following reasons:<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)<br>- $(5)<br>- $(6)<br>- $(7)
-Caution,1,QuestLevel,<pict mainclass_icon> Level $(0) and up
-Caution,1,PartyLevel,Party Join Conditions: Level $(1) to $(0)
-Caution,1,FriendOnly,Friends Only
-Caution,1,GuildOnly,Alliance Members Only
-Caution,1,PasswordNG,Incorrect Password
-Caution,1,BurstIntoNG,Joining Partway Restricted for this Quest
-Caution,1,ReasonEventFlag,Special Acceptance Conditions
-Caution,1,RareAreaNG,Party is in a Special Area
-Caution,1,CantStartQuestTimeLimitOver,Quest Can no Longer be Accepted
-Caution,1,CapacityOverParty,Party Number Restrictions
-Caution,1,PlatformError,Platform Restrictions
-Caution,1,RaidQuestDisable,Join Condition Enemies not Defeated
-Caution,1,NotFoundPartyListtInBasnet,Could not find a party.
-Caution,1,CantStartQuestClearCountLimit,You cannot join the quest because one or more party<br>members have exceeded the maximum number of times<br>the quest may be cleared.
-Caution,1,QuestSubLevel,<pict subclass_icon> Level $(0) and up
-Caution,1,ClearCountLimit,You have exceeded the maximum clears for this quest.
-Caution,1,CantStartQuestIgnoreQuest,This quest cannot be accepted at this time.<br>Please check the Player's Site for details.
-Caution,1,IgnoreQuest,This quest cannot be accepted at this time.<br>Please check the Player's Site for details.
-Caution,1,QuestDropPenalty,"One or more members have an ""Abandonment Penalty."""
-Caution,1,CantStartQuestDropPenalty,"You are unable to join a party or accept a quest due to the<br>following reasons:<br><br>- One or more members have an ""Abandonment Penalty."""
-Caution,1,CantStartProhibitQuestDropTitleCnt,QUEST ACCEPTANCE MENU TERMINAL
-Caution,1,CantStartProhibitQuestDropTitleTlp,TELEPORTER
-Caution,1,CantStartProhibitQuestDropForStart,This is currently unavailable.
-Caution,1,TitleConfirmForQuest,CONFIRM QUEST ACCEPTANCE
-Caution,1,CautionNon,Unknown Error
-Caution,1,CautionQuestLimitTimeOver,The quest can no longer be accepted.
-Caution,1,CautionQuestLevelNG,You have not met the required conditions for this quest.
-Caution,1,CautionQuestLevelNG2,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- Level $(0) and up
-Caution,1,CautionQuestPartyMemberMax,You cannot accept this quest because the Party has more than<br>$(0) members.
-Caution,1,CautionQuestPartyMemberJoinMax,You cannot join this Party because it is in the middle of a<br>quest that allows only $(0) members to join.
-Caution,1,CautionQuestPlatform,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)
-Caution,1,CautionQuestRaidQuest,You cannot accept this quest because you have not met the<br>required conditions.
-Caution,1,CautionMultiConditionLine1,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)
-Caution,1,CautionMultiConditionLine2,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)
-Caution,1,CautionMultiConditionLine3,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)
-Caution,1,CautionMultiConditionLine4,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)
-Caution,1,CautionMultiConditionLine5,You cannot accept this quest because not all Party members<br>have met the conditions below.<br><br>- $(0)<br>- $(1)<br>- $(2)<br>- $(3)<br>- $(4)
-Caution,1,CautionQuestClearCountLimit,You cannot accept this quest because you have reached the<br>maximum number of times this quest can be cleared.
-Caution,1,CautionNothingQuest,There are no Quests of this type.
-Caution,1,NotFoundQuestRecord,No Quest records.
-Caution,1,CantStartQuestNewNetCafeQuest,A party member does not have Net Café Premium and cannot accept this Quest.
-Caution,1,CantStartQuestOutExtraQuest,The Campaign period for this Quest has ended. Please reaccept.
-Caution,1,CantStartQuestInExtraQuest,A Campaign period now applies to this Quest. Please reaccept.
-Caution,1,CantStartCapacityOverInTraning,Could not initiate Practice Quest because the block is at capacity. Please wait a while and try again.<br><br>Note: Practice Quests take place on the Challenge Block of their ship.
-Caution,1,LeavePenalty,You cannot accept the quest<br>due to Matchmaking restrictions.<br><br>Please wait a little and then accept the quest.
-Caution,0,None,不明なエラーです。<br><br>[No.3000]
-Caution,0,NotReceptQuestPartyGuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。
-Caution,0,NotReceptQuestAlreadyQuest,あなたはパーティーリーダーではないため<br>クエストを受注できません。<br>（すでにクエストが始まっています。<br>出発ゲートに向かうことをおすすめします）
-Caution,0,NotFoundQuestSearch,条件に当てはまるクエストが<br>見つかりませんでした。
-Caution,0,NotFoundRoomSearch,条件に当てはまるルームが<br>見つかりませんでした。
-Caution,0,NotFoundPartyList,パーティーが見つかりませんでした。
-Caution,0,NotFoundQuestType,受注可能なクエストがありません。
-Caution,0,NotFoundQuestList,受注可能なクエストがありません。
-Caution,0,CantStartQuestNotFoundRoom,対象ルームが見つからなかったため<br>クエストを開始できません。
-Caution,0,CantStartQuestCapacityOverRoom,ルームの人数オーバーのため参加できません。
-Caution,0,CantStartQuestCapacityOverRoom2,　ルームの人数オーバーのため参加できません。<br>　人数にはルームに参加予定のプレイヤーも含んでおり、<br>　参加人数に反映されていない場合があります。<br>　<br>　<yellow>※参加予定の有効期限は1分ですので、<br>　　時間を置いて再度お試しいただくことで、<br>　　参加可能となる場合もあります。<c>
-Caution,0,CantStartQuestNewRaidQuest,パーティーメンバーが<br>参加条件であるエネミーを倒していないため、<br>クエストを受注できません。
-Caution,0,CantStartQuestNotNotFoundParty,対象パーティーが見つからなかったため、<br>クエストを開始できません。
-Caution,0,CantStartQuestCapacityOverParty,パーティーの人数オーバーのため参加できません。
-Caution,0,CantStartQuestDifferencePasswordParty,パスワードが間違っているため参加できません。
-Caution,0,CantStartQuestAlreadyFinished,このパーティーは<br>すでにクエストを終了しているため、<br>参加できません。
-Caution,0,CautionNotSoloParty,現在パーティーを組んでいるため<br>他のブロックに移動することはできません。
-Caution,0,CantStartQuestDifferenceCondition,このパーティーの参加条件を満たしていないため、<br>参加できません。
-Caution,0,CantStartQuestDifferenceConditionLine1,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)
-Caution,0,CantStartQuestDifferenceConditionLine2,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)
-Caution,0,CantStartQuestDifferenceConditionLine3,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)
-Caution,0,CantStartQuestDifferenceConditionLine4,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
-Caution,0,CantStartQuestDifferenceConditionLine5,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
-Caution,0,CantStartQuestDifferenceConditionLine6,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)
-Caution,0,CantStartQuestDifferenceConditionLine7,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)
-Caution,0,CantStartQuestDifferenceConditionLine8,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)<br>・$(5)<br>・$(6)<br>・$(7)
-Caution,0,QuestLevel,<pict mainclass_icon>Lv.$(0)～
-Caution,0,PartyLevel,パーティー参加条件レベル/Lv.$(1)～$(0)
-Caution,0,FriendOnly,フレンド限定
-Caution,0,GuildOnly,チームメンバー限定
-Caution,0,PasswordNG,パスワードが間違っている
-Caution,0,BurstIntoNG,クエストにより途中参加が制限されている
-Caution,0,ReasonEventFlag,特殊な受注条件
-Caution,0,RareAreaNG,パーティーが特別なエリアにいる
-Caution,0,CantStartQuestTimeLimitOver,クエストの受注可能期間が過ぎています。
-Caution,0,CapacityOverParty,パーティーの人数制限
-Caution,0,PlatformError,プラットフォーム制限
-Caution,0,RaidQuestDisable,参加条件であるエネミーを倒していない
-Caution,0,NotFoundPartyListtInBasnet,パーティーが見つかりませんでした。
-Caution,0,CantStartQuestClearCountLimit,パーティーメンバーが<br>クエストのクリア回数制限を超えているため、<br>参加できません。
-Caution,0,QuestSubLevel,<pict subclass_icon>Lv.$(0)～
-Caution,0,ClearCountLimit,クエストのクリア回数制限を超えている
-Caution,0,CantStartQuestIgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
-Caution,0,IgnoreQuest,このクエストは現在、受注できません。 <br>詳しくはプレイヤーズサイトをご確認ください。
-Caution,0,QuestDropPenalty,「破棄ペナルティー」を受けているメンバーがいます。
-Caution,0,CantStartQuestDropPenalty,以下の理由により、パーティーへの参加、<br>またはクエストの受注ができません。<br><br>・「破棄ペナルティー」を受けているメンバーがいます。
-Caution,0,CantStartProhibitQuestDropTitleCnt,クエスト受注メニュー端末
-Caution,0,CantStartProhibitQuestDropTitleTlp,テレポーター
-Caution,0,CantStartProhibitQuestDropForStart,現在使用することができません。
-Caution,0,TitleConfirmForQuest,クエスト受注確認
-Caution,0,CautionNon,不明なエラー
-Caution,0,CautionQuestLimitTimeOver,クエストの受注可能期間が過ぎています。
-Caution,0,CautionQuestLevelNG,クエスト受注条件を満たしていません。
-Caution,0,CautionQuestLevelNG2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・Lv.$(0)～
-Caution,0,CautionQuestPartyMemberMax,パーティーメンバーが$(0)人以上いるため<br>このクエストは受注できません。
-Caution,0,CautionQuestPartyMemberJoinMax,参加可能人数が$(0)人以内の<br>クエストを受注中のため<br>このパーティーに参加できません。
-Caution,0,CautionQuestPlatform,パーティーメンバー全員が<br>以下の受注条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
-Caution,0,CautionQuestRaidQuest,クエスト条件を満たしていないため、<br>受注できません。
-Caution,0,CautionMultiConditionLine1,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)
-Caution,0,CautionMultiConditionLine2,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)
-Caution,0,CautionMultiConditionLine3,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)
-Caution,0,CautionMultiConditionLine4,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)
-Caution,0,CautionMultiConditionLine5,パーティーメンバー全員が<br>以下の条件を満たしていないため<br>このクエストは受注できません。<br><br>・$(0)<br>・$(1)<br>・$(2)<br>・$(3)<br>・$(4)
-Caution,0,CautionQuestClearCountLimit,クエストのクリア回数制限を超えているため、<br>このクエストは受注できません。
-Caution,0,CautionNothingQuest,このクエストタイプのクエストは現在１つもありません。
-Caution,0,NotFoundQuestRecord,クエストレコードが存在しません。
-Caution,0,CantStartQuestNewNetCafeQuest,パーティーメンバーが<br>ネットカフェプレミアムではないため、<br>クエストを受注できません。
-Caution,0,CantStartQuestOutExtraQuest,このクエストのキャンペーン対象期間は終了しました。<br>クエストを再受注してください。
-Caution,0,CantStartQuestInExtraQuest,このクエストがキャンペーン対象期間になりました。<br>クエストを再受注してください。
-Caution,0,CantStartCapacityOverInTraning,練習クエストを開始できませんでした。<br>移動先のブロックが混雑している場合は<br>しばらく時間をあけてからお試しください。<br><br>※練習クエストは所属シップの<br>　　チャレンジブロックで行われます。
-Caution,0,LeavePenalty,マッチング制限中のため<br>対象クエストを受注できません。<br><br>しばらく時間を空けてから受注してください。
-ChallengeBuff,1,Window_Main_Title,Challenge Settings
-ChallengeBuff,1,Window_List_Title,Challenge List
-ChallengeBuff,1,Challenge_Buff_Bonus1,<c 76d1ff>Score Multiplier<c>
-ChallengeBuff,1,Challenge_Buff_Bonus2,<yellow>+$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_Bonus2_Minus,<yellow>-$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_Bonus3,<c 76d1ff>Clear Difficulty Multiplier:<c>
-ChallengeBuff,1,Challenge_Buff_Bonus4,<yellow>$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_Bonus4_Minus,<yellow>$(0)％<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus1,<yellow>Score Multiplier<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus2,<yellow>+$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus2_Minus,<yellow>-$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus3,<yellow>Total Clear Difficulty Multiplier:<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus4,<yellow>$(0)%<c>
-ChallengeBuff,1,Challenge_Buff_TotalBonus4_Minus,<yellow>$(0)％<c>
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank1,<yellow>Attainable Quest Clear Rank: <c>
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank2,<yellow>$(0)<c>
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank_S,S
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank_A,A
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank_B,B
-ChallengeBuff,1,Challenge_Buff_Attainable_Rank_C,C
-ChallengeBuff,1,Window_Main_Button_Add1,Add Challenges 
-ChallengeBuff,1,Window_Main_Button_Add2,($(0) more available)
-ChallengeBuff,1,Window_Main_Button_Clear,Restore Settings to Default
-ChallengeBuff,1,Window_Main_Button_Load,Load Previous Settings
-ChallengeBuff,1,Dialog_Reset_Title,Confirm Reset Settings
-ChallengeBuff,1,Dialog_Reset_Message,Challenge Settings will reset.<br>Are you sure you wish to proceed?
-ChallengeBuff,1,Window_Load_Menu1,Load Previous Settings
-ChallengeBuff,1,Window_Load_Menu2,Load (Solo) High Score Settings
-ChallengeBuff,1,Window_Load_Menu3,Load (Party) High Score Settings
-ChallengeBuff,1,Dialog_Load_Title,CONFIRM
-ChallengeBuff,1,Dialog_Load_Message,This will overwrite settings that have been changed.<br>Are you sure you wish to proceed?
-ChallengeBuff,1,Challenge_Buff_Error1,Cannot select several similar challenges.
-ChallengeBuff,1,Challenge_Buff_Error2,Cannot be selected because the total effect exceeds $(0).
-ChallengeBuff,1,Window_Guide_Message,"Changing the enemies' and players' abilities will affect the difficulty level of the quest.<br><br><yellow>The higher the difficulty is, the higher the multiplier applied to the score.<br><br>Your score will affect your rank when you clear the quest and the rewards you receive.<c>"
-ChallengeBuff,1,Window_Guide_Message2,Changing the enemies' and players' abilities will affect the difficulty level of the quest.
-ChallengeBuff,1,Window_List_Tab_Popup_All,All Challenges
-ChallengeBuff,1,Window_List_Tab_Popup_1,Enemy HP Up
-ChallengeBuff,1,Window_List_Tab_Popup_2,Enemy Attack Up
-ChallengeBuff,1,Window_List_Tab_Popup_3,Player Ability Down
-ChallengeBuff,1,Window_List_Tab_Popup_4,Misc.
-ChallengeBuff,1,Window_List_Tab_Popup_5,Player Ability Up
-ChallengeBuff,0,Window_Main_Title,チャレンジ設定
-ChallengeBuff,0,Window_List_Title,チャレンジ項目リスト
-ChallengeBuff,0,Challenge_Buff_Bonus1,<c 76d1ff>スコア倍率<c>
-ChallengeBuff,0,Challenge_Buff_Bonus2,<yellow>＋$(0)%<c>
-ChallengeBuff,0,Challenge_Buff_Bonus2_Minus,<yellow>－$(0)%<c>
-ChallengeBuff,0,Challenge_Buff_Bonus3,<c 76d1ff>クリア難度倍率：<c>
-ChallengeBuff,0,Challenge_Buff_Bonus4,<yellow>$(0)％<c>
-ChallengeBuff,0,Challenge_Buff_Bonus4_Minus,<yellow>$(0)％<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus1,<yellow>スコア倍率<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus2,<yellow>＋$(0)%<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus2_Minus,<yellow>－$(0)%<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus3,<yellow>合計クリア難度倍率：<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus4,<yellow>$(0)％<c>
-ChallengeBuff,0,Challenge_Buff_TotalBonus4_Minus,<yellow>$(0)％<c>
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank1,<yellow>到達可能クエストクリアランク：<c>
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank2,<yellow>$(0)<c>
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank_S,Ｓ
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank_A,Ａ
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank_B,Ｂ
-ChallengeBuff,0,Challenge_Buff_Attainable_Rank_C,Ｃ
-ChallengeBuff,0,Window_Main_Button_Add1,チャレンジを追加する
-ChallengeBuff,0,Window_Main_Button_Add2,（あと$(0)枠追加可能）
-ChallengeBuff,0,Window_Main_Button_Clear,設定を初期化する
-ChallengeBuff,0,Window_Main_Button_Load,以前の設定を読み込む
-ChallengeBuff,0,Dialog_Reset_Title,設定のリセット確認
-ChallengeBuff,0,Dialog_Reset_Message,編集中のチャレンジ設定をリセットします。<br>よろしいですか？
-ChallengeBuff,0,Window_Load_Menu1,前回の設定を読み込む
-ChallengeBuff,0,Window_Load_Menu2,ハイスコア(ソロ)達成時の設定を読み込む
-ChallengeBuff,0,Window_Load_Menu3,ハイスコア(パーティー)達成時の設定を読み込む
-ChallengeBuff,0,Dialog_Load_Title,設定の読み込み確認
-ChallengeBuff,0,Dialog_Load_Message,編集中の設定が上書きされます。<br>よろしいですか？
-ChallengeBuff,0,Challenge_Buff_Error1,類似のチャレンジ項目は重複して選択できません。
-ChallengeBuff,0,Challenge_Buff_Error2,効果が合計で$(0)個を超えるため、選択できません。
-ChallengeBuff,0,Window_Guide_Message,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。<br><br><yellow>難度を上げるほど、<br>スコアにかかる倍率も上昇します。<br><br>スコアはクエストクリア時の<br>ランクに影響し、報酬が変動します。<c>
-ChallengeBuff,0,Window_Guide_Message2,エネミーやプレイヤーの<br>能力値を変動させることで、<br>クエストの難度を変更できます。
-ChallengeBuff,0,Window_List_Tab_Popup_All,すべてのチャレンジ
-ChallengeBuff,0,Window_List_Tab_Popup_1,エネミーHPアップ
-ChallengeBuff,0,Window_List_Tab_Popup_2,エネミー攻撃力アップ
-ChallengeBuff,0,Window_List_Tab_Popup_3,プレイヤー能力ダウン
-ChallengeBuff,0,Window_List_Tab_Popup_4,その他
-ChallengeBuff,0,Window_List_Tab_Popup_5,プレイヤー能力アップ
-NpcCounter,1,Window_Titletelop,Quest Counter
-NpcCounter,1,Window_TwolineGuide,Select the Quest(s) you would like to accept.
-NpcCounter,1,Window_Main_Title,Quest Menu
-NpcCounter,1,Exit_NpcCounter,Leave Quest Counter
-NpcCounter,1,NpcCounter_Category1,Limited-Time Quests
-NpcCounter,1,NpcCounter_Category2,The ARKS Chronicles: Main Story
-NpcCounter,1,NpcCounter_Category3,Standing Quests
-NpcCounter,1,NpcCounter_Category4,The ARKS Chronicles: Other
-NpcCounter,1,NpcCounter_Category_0,Recommended Quests
-NpcCounter,1,NpcCounter_Category_1,Trigger Quests
-NpcCounter,1,NpcCounter_Category_2,The ARKS Chronicles: Main Story
-NpcCounter,1,NpcCounter_Category_3,The ARKS Chronicles: Other
-NpcCounter,1,NpcCounter_Category_4,Standard Duels
-NpcCounter,1,NpcCounter_Category_5,Leciel Exploration
-NpcCounter,1,NpcCounter_Category_6,Time Extension Quests
-NpcCounter,1,NpcCounter_Category_7,Nameless City Exploration
-NpcCounter,1,NpcCounter_Category_10,Duel Quests
-NpcCounter,1,NpcCounter_Category_20,Other
-NpcCounter,1,NpcCounter_Category_11,Extra Duel: Fictitious Beam
-NpcCounter,1,NpcCounter_Category_12,Various Quests
-NpcCounter,1,NpcCounter_Category_13,Alter Realm Exploration
-NpcCounter,1,NpcCounter_Category_30,Alter Realm Exploration
-NpcCounter,1,NpcCounter_Category_14,Interception Sectors
-NpcCounter,1,NpcCounter_Category_15,Combat Sectors
-NpcCounter,1,NpcCounter_Category_18,Phantom Tower Assault
-NpcCounter,1,NpcCounter_Category_17,Splinter Realm Exploration
-NpcCounter,1,NpcCounter_Error1,There are no quests to accept.
-NpcCounter,1,Arkshistory_TwolineGuide,Replay completed Story Quests.
-NpcCounter,1,Window_QuestSelect_Title,Select Quest
-NpcCounter,1,Window_QuestSelect_Chapter,Ch. $(0)
-NpcCounter,1,Window_QuestSelect_FirstChapter,Prologue
-NpcCounter,1,Window_QuestSelect_FilterMenu,$(1). $(0)
-NpcCounter,1,Filter_Category_All,Show All
-NpcCounter,1,Filter_Category_1,Story Quests
-NpcCounter,1,Filter_Category_2,Side Stories
-NpcCounter,1,Filter_Category_3,Play Scenes
-NpcCounter,1,Filter_Category_4,Seasonal Quests
-NpcCounter,1,Filter_Category_5,Limited-Time Trigger Quests
-NpcCounter,1,Filter_Category_6,Trigger Quests
-NpcCounter,1,Filter_Category_7,Urgent Quests
-NpcCounter,1,Filter_Category_8,Trainia
-NpcCounter,1,Filter_Category_9,Normal Quests
-NpcCounter,1,Filter_Trigger_Category_Prize,Battledia: Yellow
-NpcCounter,1,Filter_Trigger_Category_Colosseo,Battledia: Purple
-NpcCounter,1,Filter_Trigger_Category_Region_111,Drill: Aelio
-NpcCounter,1,Filter_Trigger_Category_Region_112,Drill: Retem
-NpcCounter,1,Filter_Trigger_Category_Region_113,Drill: Kvaris
-NpcCounter,1,Filter_Trigger_Category_Region_114,Drill: Stia
-NpcCounter,1,Dialog_Play_Scene_Title,Confirm Scene Replay
-NpcCounter,1,Dialog_Play_Scene_Text,The scene will be played. Do you wish to proceed?
-NpcCounter,1,Category_AddText,Mini Episodes
-NpcCounter,1,Category_Misc,Other
-NpcCounter,1,NpcCounter_BoostOccurrence,Boost Effect Active
-NpcCounter,1,NpcCounter_Category_16,Extra Duel: Planetfall Strike
-NpcCounter,0,Window_Titletelop,クエストカウンター
-NpcCounter,0,Window_TwolineGuide,受注したいクエストを選んでください。
-NpcCounter,0,Window_Main_Title,クエストメニュー
-NpcCounter,0,Exit_NpcCounter,クエストカウンターを出る
-NpcCounter,0,NpcCounter_Category1,期間限定クエスト
-NpcCounter,0,NpcCounter_Category2,アークスヒストリー：メインストーリー
-NpcCounter,0,NpcCounter_Category3,常設クエスト
-NpcCounter,0,NpcCounter_Category4,アークスヒストリー：その他
-NpcCounter,0,NpcCounter_Category_0,ピックアップクエスト
-NpcCounter,0,NpcCounter_Category_1,トリガークエスト
-NpcCounter,0,NpcCounter_Category_2,アークスヒストリー：メインストーリー
-NpcCounter,0,NpcCounter_Category_3,アークスヒストリー：その他
-NpcCounter,0,NpcCounter_Category_4,スタンダードデュエル
-NpcCounter,0,NpcCounter_Category_5,ルシエル探索
-NpcCounter,0,NpcCounter_Category_6,タイムエクステンションクエスト
-NpcCounter,0,NpcCounter_Category_7,ネームレスシティ探索
-NpcCounter,0,NpcCounter_Category_10,デュエルクエスト
-NpcCounter,0,NpcCounter_Category_20,その他
-NpcCounter,0,NpcCounter_Category_11,エクストラデュエル：虚構の光芒
-NpcCounter,0,NpcCounter_Category_12,ヴァリアスクエスト
-NpcCounter,0,NpcCounter_Category_13,オルタレルム探索
-NpcCounter,0,NpcCounter_Category_30,オルタレルム探索
-NpcCounter,0,NpcCounter_Category_14,迎撃セクション
-NpcCounter,0,NpcCounter_Category_15,戦闘セクション
-NpcCounter,0,NpcCounter_Category_18,虚塔制圧戦
-NpcCounter,0,NpcCounter_Category_17,分岐界域探索
-NpcCounter,0,NpcCounter_Error1,受注可能なクエストはありません。
-NpcCounter,0,Arkshistory_TwolineGuide,クリアしたストーリークエストを再度プレイすることができます。
-NpcCounter,0,Window_QuestSelect_Title,クエスト選択
-NpcCounter,0,Window_QuestSelect_Chapter,$(0)章
-NpcCounter,0,Window_QuestSelect_FirstChapter,序章
-NpcCounter,0,Window_QuestSelect_FilterMenu,$(1).$(0)
-NpcCounter,0,Filter_Category_All,すべて表示
-NpcCounter,0,Filter_Category_1,ストーリークエスト
-NpcCounter,0,Filter_Category_2,サイドストーリー
-NpcCounter,0,Filter_Category_3,シーン再生
-NpcCounter,0,Filter_Category_4,シーズナルクエスト
-NpcCounter,0,Filter_Category_5,期間限定トリガークエスト
-NpcCounter,0,Filter_Category_6,トリガークエスト
-NpcCounter,0,Filter_Category_7,緊急クエスト
-NpcCounter,0,Filter_Category_8,トレイニア
-NpcCounter,0,Filter_Category_9,通常クエスト
-NpcCounter,0,Filter_Trigger_Category_Prize,バトルディア：イエロー
-NpcCounter,0,Filter_Trigger_Category_Colosseo,バトルディア：パープル
-NpcCounter,0,Filter_Trigger_Category_Region_111,想定演習：エアリオ
-NpcCounter,0,Filter_Trigger_Category_Region_112,想定演習：リテム
-NpcCounter,0,Filter_Trigger_Category_Region_113,想定演習：クヴァリス
-NpcCounter,0,Filter_Trigger_Category_Region_114,想定演習：スティア
-NpcCounter,0,Dialog_Play_Scene_Title,シーン再生確認
-NpcCounter,0,Dialog_Play_Scene_Text,シーンを再生します。<br>よろしいですか？
-NpcCounter,0,Category_AddText,ショートエピソード
-NpcCounter,0,Category_Misc,その他
-NpcCounter,0,NpcCounter_BoostOccurrence,ブースト効果あり
-NpcCounter,0,NpcCounter_Category_16,エクストラデュエル：星崩の猛攻
