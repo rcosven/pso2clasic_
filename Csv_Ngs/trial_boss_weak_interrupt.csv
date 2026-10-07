@@ -1,1 +1,13 @@
 ﻿section,group,id,text
+common,1,TrialName,$(0) Suppression
+common,1,TrialBeginMsg,Defeat the $(0)!
+common,1,TrialAbstract,Defeat the $(0)
+common,0,TrialName,$(0)討伐
+common,0,TrialBeginMsg,出現した$(0)を倒せ！
+common,0,TrialAbstract,$(0)を倒す
+type102,1,NpcComOnBegin,Powerful new enemies detected!<br>Please eliminate them at once!
+type102,1,NpcComOnSuccess,The enemy has been destroyed!<br>Great work!
+type102,1,NpcComOnForetaste,Something's coming!<br>Be on your guard!
+type102,0,NpcComOnBegin,強力なエネミーが新たに出現！<br>至急、討伐をお願いします！
+type102,0,NpcComOnSuccess,エネミーの撃破を確認！<br>お疲れ様でした。
+type102,0,NpcComOnForetaste,何か来ます！<br>警戒してください！

@@ -1,63 +1,4 @@
 ﻿section,group,id,text
-Common,0,Window_Titletelop_WeeklyRanking,アトランダムイベントレコード
-Common,0,Window_TwolineGuide_WeeklyRanking,開催中のアークスレコードやその詳細を確認できます。
-Common,0,Window_Title_Main,アークスレコード詳細
-Common,0,Window_Title_RankingList,レコードリスト
-Common,0,Window_Title_ClearInfo,クリア情報詳細
-Common,0,Window_Title_RewardDetail,報酬詳細
-Common,0,RankingList_Headline_Open,開催中
-Common,0,RankingList_Headline_Notice,開催予定
-Common,0,RankingList_Headline_Archive,開催終了
-Common,0,RankingList_Headline_All,すべて表示
-Common,0,RankingList_StartDate,$(0)開催<br>$(1)
-Common,0,RankingList_StartDate_All,$(0)開催（$(1)）<br>$(2)
-Common,0,RankingList_Open_Description,表示できるレコードがありません。
-Common,0,RankingList_Notice_Description,表示できるレコードがありません。
-Common,0,RankingList_Archive_Description,表示できるレコードがありません。
-Common,0,RankingList_Loading,レコードリスト取得中……
-Common,0,Main_Headline_TitleName,レコード名
-Common,0,Main_Headline_Category,種別
-Common,0,Main_Headline_Description,詳細
-Common,0,Main_Headline_Period_Open,開催期間
-Common,0,Main_Headline_Period_Notice,開催予定
-Common,0,Main_Headline_Period_Close,開催日時
-Common,0,Main_Headline_MyRank_Open,現在のレコード（毎日$(0)に更新）
-Common,0,Main_Headline_MyRank_Close,最終レコード
-Common,0,Main_Headline_Reward,参加報酬
-Common,0,Main_Headline_Reward_Description,最終的な記録に応じて獲得できる報酬が変わります。
-Common,0,Main_Headline_TopRank_Open,現在の上位レコード（最大$(0)人まで表示）
-Common,0,Main_Headline_TopRank_Close,上位レコード（最大$(0)人まで表示）
-Common,0,MyRank_Description,まだアークスレコードに参加していません。<br>対象のコンテンツをプレイすることで参加できます。
-Common,0,TopRank_Description,上位レコード情報はありません。<br>（開催初日以降、毎日$(0)に更新されます。）
-Common,0,Reward_ControlGuide,<%Function>で上位レコードを確認する
-Common,0,TopRank_ControlGuide,<%Function>で参加報酬を確認する
-Common,0,TabButton_Class_All,クラス総合
-Common,0,Ranking_Period_Open,$(1)から<br>$(0)まで
-Common,0,Ranking_Period_Notice,あと$(0)後に開催されます。
-Common,0,Ranking_Period_Notice_Soon,まもなく開催されます。
-Common,0,Ranking_Period_Close,$(0)に終了
-Common,0,Rank_Name_Tier1,ゴールド
-Common,0,Rank_Name_Tier2,シルバー
-Common,0,Rank_Name_Tier3,ブロンズ
-Common,0,RewardDetail_Headline1,報酬情報
-Common,0,RewardDetail_Headline2,報酬
-Common,0,Window_Titletelop_TeamtaskRanking,チームタスクレコード
-Common,0,Window_TwolineGuide_TeamtaskRanking,開催中のチームタスクレコードやその詳細を確認できます。
-Common,0,Ranking_Reward_Nmeseta,$(0)<pict 4space><pict reb_meseta>
-Common,0,Ranking_Reward_StarGem,$(0)<pict 4space><pict StarGem>
-Common,0,Ranking_Reward_Item,$(0)
-Common,0,Ranking_Reward_Item_Num,$(1) x $(0)
-Common,0,Ranking_Reward_Other,$(0)　他
-Common,0,ScoreCategory,$(0)/$(1)
-Common,0,Main_Headline_MyRank_Best,現在のベストレコード
-Common,0,Main_Headline_MyRank_Update,<yellow>ベストレコードを更新<c>
-Common,0,ScoreDisplay_Best,<yellow>$(0)<c>
-Common,0,ScoreDisplay_Max,<pure_orange>$(0)<c>
-Common,0,ScoreDisplay_Star,★
-Common,0,ScoreDisplay_TimeSS,$(0):$(1).$(2)
-Common,0,Main_Headline_UpdateTime_Open,集計日時：---
-Common,0,Main_Headline_UpdateTime,集計日時：$(0)
-Common,0,Main_Headline_UpdateTime_Close,最終集計日時：$(0)
 Common,1,Window_Titletelop_WeeklyRanking,Registros de Desafíos Aleatorios
 Common,1,Window_TwolineGuide_WeeklyRanking,Puede ver los ARKS Records y detalles.
 Common,1,Window_Title_Main,Detalles de los ARKS Records
@@ -117,6 +58,153 @@ Common,1,ScoreDisplay_TimeSS,$(0):$(1).$(2)
 Common,1,Main_Headline_UpdateTime_Open,Fecha de Clasificación: ---
 Common,1,Main_Headline_UpdateTime,Fecha de clasificación: $(0)
 Common,1,Main_Headline_UpdateTime_Close,Fecha de Clasificación Final: $(0)
+Common,0,Window_Titletelop_WeeklyRanking,アトランダムイベントレコード
+Common,0,Window_TwolineGuide_WeeklyRanking,開催中のアークスレコードやその詳細を確認できます。
+Common,0,Window_Title_Main,アークスレコード詳細
+Common,0,Window_Title_RankingList,レコードリスト
+Common,0,Window_Title_ClearInfo,クリア情報詳細
+Common,0,Window_Title_RewardDetail,報酬詳細
+Common,0,RankingList_Headline_Open,開催中
+Common,0,RankingList_Headline_Notice,開催予定
+Common,0,RankingList_Headline_Archive,開催終了
+Common,0,RankingList_Headline_All,すべて表示
+Common,0,RankingList_StartDate,$(0)開催<br>$(1)
+Common,0,RankingList_StartDate_All,$(0)開催（$(1)）<br>$(2)
+Common,0,RankingList_Open_Description,表示できるレコードがありません。
+Common,0,RankingList_Notice_Description,表示できるレコードがありません。
+Common,0,RankingList_Archive_Description,表示できるレコードがありません。
+Common,0,RankingList_Loading,レコードリスト取得中……
+Common,0,Main_Headline_TitleName,レコード名
+Common,0,Main_Headline_Category,種別
+Common,0,Main_Headline_Description,詳細
+Common,0,Main_Headline_Period_Open,開催期間
+Common,0,Main_Headline_Period_Notice,開催予定
+Common,0,Main_Headline_Period_Close,開催日時
+Common,0,Main_Headline_MyRank_Open,現在のレコード（毎日$(0)に更新）
+Common,0,Main_Headline_MyRank_Close,最終レコード
+Common,0,Main_Headline_Reward,参加報酬
+Common,0,Main_Headline_Reward_Description,最終的な記録に応じて獲得できる報酬が変わります。
+Common,0,Main_Headline_TopRank_Open,現在の上位レコード（最大$(0)人まで表示）
+Common,0,Main_Headline_TopRank_Close,上位レコード（最大$(0)人まで表示）
+Common,0,MyRank_Description,まだアークスレコードに参加していません。<br>対象のコンテンツをプレイすることで参加できます。
+Common,0,TopRank_Description,上位レコード情報はありません。<br>（開催初日以降、毎日$(0)に更新されます。）
+Common,0,Reward_ControlGuide,<%Function>で上位レコードを確認する
+Common,0,TopRank_ControlGuide,<%Function>で参加報酬を確認する
+Common,0,TabButton_Class_All,クラス総合
+Common,0,Ranking_Period_Open,$(1)から<br>$(0)まで
+Common,0,Ranking_Period_Notice,あと$(0)後に開催されます。
+Common,0,Ranking_Period_Notice_Soon,まもなく開催されます。
+Common,0,Ranking_Period_Close,$(0)に終了
+Common,0,Rank_Name_Tier1,ゴールド
+Common,0,Rank_Name_Tier2,シルバー
+Common,0,Rank_Name_Tier3,ブロンズ
+Common,0,RewardDetail_Headline1,報酬情報
+Common,0,RewardDetail_Headline2,報酬
+Common,0,Window_Titletelop_TeamtaskRanking,チームタスクレコード
+Common,0,Window_TwolineGuide_TeamtaskRanking,開催中のチームタスクレコードやその詳細を確認できます。
+Common,0,Ranking_Reward_Nmeseta,$(0)<pict 4space><pict reb_meseta>
+Common,0,Ranking_Reward_StarGem,$(0)<pict 4space><pict StarGem>
+Common,0,Ranking_Reward_Item,$(0)
+Common,0,Ranking_Reward_Item_Num,$(1) x $(0)
+Common,0,Ranking_Reward_Other,$(0)　他
+Common,0,ScoreCategory,$(0)/$(1)
+Common,0,Main_Headline_MyRank_Best,現在のベストレコード
+Common,0,Main_Headline_MyRank_Update,<yellow>ベストレコードを更新<c>
+Common,0,ScoreDisplay_Best,<yellow>$(0)<c>
+Common,0,ScoreDisplay_Max,<pure_orange>$(0)<c>
+Common,0,ScoreDisplay_Star,★
+Common,0,ScoreDisplay_TimeSS,$(0):$(1).$(2)
+Common,0,Main_Headline_UpdateTime_Open,集計日時：---
+Common,0,Main_Headline_UpdateTime,集計日時：$(0)
+Common,0,Main_Headline_UpdateTime_Close,最終集計日時：$(0)
+Ranking,1,ScoreCategory_Score,Puntaje
+Ranking,1,ScoreCategory_ClearTime,Tiempo de la Run
+Ranking,1,ScoreCategory_Score_and_ClearTime,Puntuación/tiempo claro
+Ranking,1,ScoreCategory_Mission_Success_Level,Logros
+Ranking,1,ScoreCategory_ClearTime2,Tiempo total
+Ranking,1,ScoreCategory_Clear_Difficulty_Multiplier,Multiplicador de Dificultad
+Ranking,1,ScoreCategory_Teamtask_Name,Nombre de Alianza
+Ranking,1,ScoreCategory_Teamtask_Score,Puntaje
+Ranking,1,ScoreList_RecruitMembers,texto_dummy
+Ranking,1,WeeklyRanking_Category_Score,Ordenar por Ships: Registro de Puntuación por Clase
+Ranking,1,WeeklyRanking_Category_ClearTime,Ordenar por Ships: Record de Tiempo por Clase
+Ranking,1,WeeklyRanking_Category_Score_AllClasses,Ordenar por Ships: Registro de Puntuación para Todas las Clases
+Ranking,1,WeeklyRanking_Category_ClearTime_AllClasses,Ordenar por Ships:  Registro de Puntuación para Todas las Clases
+Ranking,1,WeeklyRanking_Category_Mission_AllClasses,Por Ship: Registro de Misión para Todas las Clases
+Ranking,1,WeeklyRanking_Description_Trinites_Solo,Completa la misión designada para Trainia/Trinitas tú solo.
+Ranking,1,WeeklyRanking_Description_Trinites_Party,Completa la misión designada para Trainia/Trinitas con al menos otra persona.
+Ranking,1,WeeklyRanking_Description_Trinites_R2_Solo,Completa la misión designada para Trainia/Trinitas tú solo.
+Ranking,1,WeeklyRanking_Description_Trinites_R2_Party,Completa la misión designada para Trainia/Trinitas con al menos otra persona.
+Ranking,1,WeeklyRanking_Description_Goalgetter_Solo,Completa la misión designada para Trainia Advance: Bunker Type 1 por ti mismo.
+Ranking,1,WeeklyRanking_Description_Goalgetter_Party,Completa la misión designada para Trainia Advance: Bunker Type 1 con al menos otra persona.
+Ranking,1,WeeklyRanking_Description_FieldRace,Completa la carrera designada para Field Race por ti mismo.
+Ranking,1,WeeklyRanking_Description_Cocoon,Completa la misión designada para Trainia: Cocoons<br>ya sea solo o con un grupo.
+Ranking,1,WeeklyRanking_Description_Cocoon_Mission_Solo,Completa la misión designada para Trainia: Cocoons<br>por ti mismo.
+Ranking,1,WeeklyRanking_Teamtask_Description,Puede recibir mejores recompensas al completar más tareas de la Alianza con los miembros de<br>su Alianza. <yellow>Puedes enviar solicitudes de miembro a Alianzas con <pict party_request><c>
+Ranking,1,WeeklyRanking_Title_Trinites_Solo,Laberinto Geométrico: Solo
+Ranking,1,WeeklyRanking_Title_Trinites_Party,Laberinto Geométrico:<br>Party
+Ranking,1,WeeklyRanking_Title_Goalgetter_Solo,Cannonball Strike: Solo
+Ranking,1,WeeklyRanking_Title_Goalgetter_Party,Cannonball Strike:<br>Party
+Ranking,1,WeeklyRanking_Title_FieldRace_AelioSouth,South Aelio Dash (Etapa 1): Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_RetemWest,West Retem Dash (Etapa 1): Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_KvarisCenter,Central Kvaris Dash (Etapa 1): Solo
+Ranking,1,WeeklyRanking_Title_Teamtask,Records de Misiones de Alianza
+Ranking,1,TabButton_Teamtask_All,Mostrar todo
+Ranking,1,Reward_Description_Teamtask,<yellow>*Completa al menos 3 Tareas de Alianza y sé miembro de una Alianza <br>que haya completado las tareas antes se contabilicen las <br>puntuaciones para recibir recompensas.<c>                                                                                                                                                                                                                     
+Ranking,1,WeeklyRanking_Title_FieldRace_AelioCenter,Central Aelio Tabla (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_RetemCenter,Central Retem Tapa (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_OrdinalTower_Solo,Torre Ordinal (Rango 7):<br>Solo
+Ranking,1,WeeklyRanking_Title_OrdinalTower_Party,Torre Ordinal (Rango 7):<br>Party
+Ranking,1,WeeklyRanking_Description_OrdinalTower_Solo,Completa la misión designada Trainia Advance Bunker Type 2 por ti mismo.
+Ranking,1,WeeklyRanking_Description_OrdinalTower_Party,Completa la misión designada Trainia Advance Bunker Type 2 con al menos otra persona.
+Ranking,1,WeeklyRanking_Title_FieldRace_HotSpring,Afueras de Stia Dash (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_UndergroundFactory,Dreisen Plant Tabla (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_AelioNorth_Board,Aelio Norte Tabla (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_RetemSouth_Run,Retem Sur Dash (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_KvarisSouth_Run,Kvaris Sur Dash (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_AelioWest_Run,Aelio Oeste Dash (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_RetemNorth_Board,Retem Norte Tabla (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_Trinites_R2_Solo,Laberinto Geométrico (rango 2):<br>Solo
+Ranking,1,WeeklyRanking_Title_Trinites_R2_Party,Laberinto Geométrico (Rango 2):<br>Grupo
+Ranking,1,WeeklyRanking_Title_Cocoon_HelicalLine,Línea Helicoidal:<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_MediolaOuter_Board,Mediola Outer Area 2 Tabla (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Quarterstaff,Quarterstaff:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_FacetheDarkness,Enfréntate a la Oscuridad:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_BrokenWorld,Mundo Roto:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_FleetingFight,Pelea Fugaz:<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_HalphiaLake_Boar,Tabla del lago Halphia (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_KvarisWest_Run,Kvaris Oeste Dash (Etapa 1):<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_VanishingPath2,Camino de Fuga II:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_SlopeStyle,Estilo de Pendiente:<br>Solo
+Ranking,1,WeeklyRanking_Title_Standard_Continuousbattle1,Batalla Ardiente: Party
+Ranking,1,WeeklyRanking_Title_Standard_Continuousbattle2,Batalla Nocturna Fría:<br>Party
+Ranking,1,WeeklyRanking_Description_Standard_Party,<br> Completa la misión con al menos dos jugadores.
+Ranking,1,WeeklyRanking_Title_Cocoon_CrazyTail,Cola loca: en solitario
+Ranking,1,WeeklyRanking_Title_Cocoon_Narrow Cage,Jaula Estrecha:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Vanishing Path,Camino Desvaneciente:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Parkour Master,Maestro de Parkour:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Dyna Assault,Asalto Dina:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Horrible Flapping,Aleteo Horrible:<br>Solo
+Ranking,1,WeeklyRanking_Title_FieldRace_LimitedSeason1,Dash de Kvaris del Sur (primavera '24):<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Buddy Attack,Ataque de amigos:<br>Solo
+Ranking,1,WeeklyRanking_Title_Finalattacker_RoadSprint,Sprint en carretera de arena:<br>en solitario
+Ranking,1,WeeklyRanking_Description_Standard_Soro,Completa la misión designada tú solo.
+Ranking,1,WeeklyRanking_Title_Cocoon_Wild Avalanche,Avalancha salvaje:<br>Solo
+Ranking,1,WeeklyRanking_Title_OrdinalTower2_Solo,Torre Ordinal (Rango 8):<br>Solo
+Ranking,1,WeeklyRanking_Title_OrdinalTower2_Party,Torre Ordinal (Rango 8):<br>Party
+Ranking,1,WeeklyRanking_Title_Cocoon_Aero Runner,Corredor de Flechas:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Wild Rush,Carga Salvaje:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Alters Rush,Carga ALTERS:<br>Solo
+Ranking,1,WeeklyRanking_Standard_Yedi_Hunt_Solo,Ejercicio: Una Persecución Aún Más Fría:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Dolls Burrow,DOLLS Madriguera:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Clockwork Prison,Prisión Mecánica:<br>Solo
+Ranking,1,WeeklyRanking_Title_Cocoon_Deepwell,Pozo Profundo:<br>Solo
+Ranking,1,WeeklyRanking_Standard_surfing_Solo,Ejercicio: Hot Summer Dash:<br>Solo
+Ranking,1,WeeklyRanking_Standard_DragonX_Solo,Ejercicio: Ruin EX Batalla:<br>Solo
+Ranking,1,WeeklyRanking_Standard_R4surfing_Solo,Ejercicio: Fiery Hell Dash:<br>Solo
+Ranking,1,WeeklyRanking_Title_Standard_Zeshreida_Solo,Ejercicio: Ruine Shraider Λ Batalla -<br>Solo
+Ranking,1,WeeklyRanking_Title_Standard_Noetika_Solo,Restos de sabiduría riéndose en otro<br>mundo: solo
+Ranking,1,WeeklyRanking_Title_Standard_Anga_Solo,Drill: Ruine Anga Battle - Solo
 Ranking,0,ScoreCategory_Score,スコア
 Ranking,0,ScoreCategory_ClearTime,クリアタイム
 Ranking,0,ScoreCategory_Score_and_ClearTime,スコア/クリアタイム
@@ -208,91 +296,5 @@ Ranking,0,WeeklyRanking_Standard_surfing_Solo,想定演習：烈夏の疾駆戦�
 Ranking,0,WeeklyRanking_Standard_DragonX_Solo,想定演習：ルイノ・エクス戦：<br>ソロ
 Ranking,0,WeeklyRanking_Standard_R4surfing_Solo,想定演習：焔獄の疾駆戦：<br>ソロ
 Ranking,0,WeeklyRanking_Title_Standard_Zeshreida_Solo,想定演習：ルイノ・シュレイダΛ戦：<br>ソロ
-Ranking,1,ScoreCategory_Score,Puntaje
-Ranking,1,ScoreCategory_ClearTime,Tiempo de la Run
-Ranking,1,ScoreCategory_Score_and_ClearTime,Puntuación/tiempo claro
-Ranking,1,ScoreCategory_Mission_Success_Level,Logros
-Ranking,1,ScoreCategory_ClearTime2,Tiempo total
-Ranking,1,ScoreCategory_Clear_Difficulty_Multiplier,Multiplicador de Dificultad
-Ranking,1,ScoreCategory_Teamtask_Name,Nombre de Alianza
-Ranking,1,ScoreCategory_Teamtask_Score,Puntaje
-Ranking,1,ScoreList_RecruitMembers,texto_dummy
-Ranking,1,WeeklyRanking_Category_Score,Ordenar por Ships: Registro de Puntuación por Clase
-Ranking,1,WeeklyRanking_Category_ClearTime,Ordenar por Ships: Record de Tiempo por Clase
-Ranking,1,WeeklyRanking_Category_Score_AllClasses,Ordenar por Ships: Registro de Puntuación para Todas las Clases
-Ranking,1,WeeklyRanking_Category_ClearTime_AllClasses,Ordenar por Ships:  Registro de Puntuación para Todas las Clases
-Ranking,1,WeeklyRanking_Category_Mission_AllClasses,Por Ship: Registro de Misión para Todas las Clases
-Ranking,1,WeeklyRanking_Description_Trinites_Solo,Completa la misión designada para Trainia/Trinitas tú solo.
-Ranking,1,WeeklyRanking_Description_Trinites_Party,Completa la misión designada para Trainia/Trinitas con al menos otra persona.
-Ranking,1,WeeklyRanking_Description_Trinites_R2_Solo,Completa la misión designada para Trainia/Trinitas tú solo.
-Ranking,1,WeeklyRanking_Description_Trinites_R2_Party,Completa la misión designada para Trainia/Trinitas con al menos otra persona.
-Ranking,1,WeeklyRanking_Description_Goalgetter_Solo,Completa la misión designada para Trainia Advance: Bunker Type 1 por ti mismo.
-Ranking,1,WeeklyRanking_Description_Goalgetter_Party,Completa la misión designada para Trainia Advance: Bunker Type 1 con al menos otra persona.
-Ranking,1,WeeklyRanking_Description_FieldRace,Completa la carrera designada para Field Race por ti mismo.
-Ranking,1,WeeklyRanking_Description_Cocoon,Completa la misión designada para Trainia: Cocoons<br>ya sea solo o con un grupo.
-Ranking,1,WeeklyRanking_Description_Cocoon_Mission_Solo,Completa la misión designada para Trainia: Cocoons<br>por ti mismo.
-Ranking,1,WeeklyRanking_Teamtask_Description,Puede recibir mejores recompensas al completar más tareas de la Alianza con los miembros de<br>su Alianza. <yellow>Puedes enviar solicitudes de miembro a Alianzas con <pict party_request><c>
-Ranking,1,WeeklyRanking_Title_Trinites_Solo,Laberinto Geométrico: Solo
-Ranking,1,WeeklyRanking_Title_Trinites_Party,Laberinto Geométrico:<br>Party
-Ranking,1,WeeklyRanking_Title_Goalgetter_Solo,Cannonball Strike: Solo
-Ranking,1,WeeklyRanking_Title_Goalgetter_Party,Cannonball Strike:<br>Party
-Ranking,1,WeeklyRanking_Title_FieldRace_AelioSouth,South Aelio Dash (Etapa 1): Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_RetemWest,West Retem Dash (Etapa 1): Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_KvarisCenter,Central Kvaris Dash (Etapa 1): Solo
-Ranking,1,WeeklyRanking_Title_Teamtask,Records de Misiones de Alianza
-Ranking,1,TabButton_Teamtask_All,Mostrar todo
-Ranking,1,Reward_Description_Teamtask,<yellow>*Completa al menos 3 Tareas de Alianza y sé miembro de una Alianza <br>que haya completado las tareas antes se contabilicen las <br>puntuaciones para recibir recompensas.<c>                                                                                                                                                                                                                     
-Ranking,1,WeeklyRanking_Title_FieldRace_AelioCenter,Central Aelio Tabla (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_RetemCenter,Central Retem Tapa (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_OrdinalTower_Solo,Torre Ordinal (Rango 7):<br>Solo
-Ranking,1,WeeklyRanking_Title_OrdinalTower_Party,Torre Ordinal (Rango 7):<br>Party
-Ranking,1,WeeklyRanking_Description_OrdinalTower_Solo,Completa la misión designada Trainia Advance Bunker Type 2 por ti mismo.
-Ranking,1,WeeklyRanking_Description_OrdinalTower_Party,Completa la misión designada Trainia Advance Bunker Type 2 con al menos otra persona.
-Ranking,1,WeeklyRanking_Title_FieldRace_HotSpring,Afueras de Stia Dash (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_UndergroundFactory,Dreisen Plant Tabla (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_AelioNorth_Board,Aelio Norte Tabla (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_RetemSouth_Run,Retem Sur Dash (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_KvarisSouth_Run,Kvaris Sur Dash (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_AelioWest_Run,Aelio Oeste Dash (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_RetemNorth_Board,Retem Norte Tabla (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_Trinites_R2_Solo,Laberinto Geométrico (rango 2):<br>Solo
-Ranking,1,WeeklyRanking_Title_Trinites_R2_Party,Laberinto Geométrico (Rango 2):<br>Grupo
-Ranking,1,WeeklyRanking_Title_Cocoon_HelicalLine,Línea Helicoidal:<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_MediolaOuter_Board,Mediola Outer Area 2 Tabla (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Quarterstaff,Quarterstaff:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_FacetheDarkness,Enfréntate a la Oscuridad:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_BrokenWorld,Mundo Roto:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_FleetingFight,Pelea Fugaz:<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_HalphiaLake_Boar,Tabla del lago Halphia (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_KvarisWest_Run,Kvaris Oeste Dash (Etapa 1):<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_VanishingPath2,Camino de Fuga II:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_SlopeStyle,Estilo de Pendiente:<br>Solo
-Ranking,1,WeeklyRanking_Title_Standard_Continuousbattle1,Batalla Ardiente: Party
-Ranking,1,WeeklyRanking_Title_Standard_Continuousbattle2,Batalla Nocturna Fría:<br>Party
-Ranking,1,WeeklyRanking_Description_Standard_Party,<br> Completa la misión con al menos dos jugadores.
-Ranking,1,WeeklyRanking_Title_Cocoon_CrazyTail,Cola loca: en solitario
-Ranking,1,WeeklyRanking_Title_Cocoon_Narrow Cage,Jaula Estrecha:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Vanishing Path,Camino Desvaneciente:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Parkour Master,Maestro de Parkour:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Dyna Assault,Asalto Dina:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Horrible Flapping,Aleteo Horrible:<br>Solo
-Ranking,1,WeeklyRanking_Title_FieldRace_LimitedSeason1,Dash de Kvaris del Sur (primavera '24):<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Buddy Attack,Ataque de amigos:<br>Solo
-Ranking,1,WeeklyRanking_Title_Finalattacker_RoadSprint,Sprint en carretera de arena:<br>en solitario
-Ranking,1,WeeklyRanking_Description_Standard_Soro,Completa la misión designada tú solo.
-Ranking,1,WeeklyRanking_Title_Cocoon_Wild Avalanche,Avalancha salvaje:<br>Solo
-Ranking,1,WeeklyRanking_Title_OrdinalTower2_Solo,Torre Ordinal (Rango 8):<br>Solo
-Ranking,1,WeeklyRanking_Title_OrdinalTower2_Party,Torre Ordinal (Rango 8):<br>Party
-Ranking,1,WeeklyRanking_Title_Cocoon_Aero Runner,Corredor de Flechas:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Wild Rush,Carga Salvaje:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Alters Rush,Carga ALTERS:<br>Solo
-Ranking,1,WeeklyRanking_Standard_Yedi_Hunt_Solo,Ejercicio: Una Persecución Aún Más Fría:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Dolls Burrow,DOLLS Madriguera:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Clockwork Prison,Prisión Mecánica:<br>Solo
-Ranking,1,WeeklyRanking_Title_Cocoon_Deepwell,Pozo Profundo:<br>Solo
-Ranking,1,WeeklyRanking_Standard_surfing_Solo,Ejercicio: Hot Summer Dash:<br>Solo
-Ranking,1,WeeklyRanking_Standard_DragonX_Solo,Ejercicio: Ruin EX Batalla:<br>Solo
-Ranking,1,WeeklyRanking_Standard_R4surfing_Solo,Ejercicio: Fiery Hell Dash:<br>Solo
-Ranking,1,WeeklyRanking_Title_Standard_Zeshreida_Solo,Ejercicio: Ruine Shraider Λ Batalla -<br>Solo
 Ranking,0,WeeklyRanking_Title_Standard_Noetika_Solo,異界に嗤う智の残影：<br>ソロ
-Ranking,1,WeeklyRanking_Title_Standard_Noetika_Solo,Restos de sabiduría riéndose en otro<br>mundo: solo
+Ranking,0,WeeklyRanking_Title_Standard_Anga_Solo,想定演習：ルイノ・アンガ戦：ソロ
