@@ -1,1872 +1,1885 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador - Traductor Visual PSO2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --panel-bg: #161b22;
-            --panel-border: #30363d;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --accent-blue: #58a6ff;
-            --accent-blue-hover: #3182ce;
-            --item-hover: #21262d;
-            --item-active: #1f6feb;
-            --font-main: 'Inter', -apple-system, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-main);
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .header h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: #ffffff;
-            background: linear-gradient(90deg, #58a6ff, #a371f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .header p {
-            color: var(--text-secondary);
-            font-size: 16px;
-        }
-
-        .header .anon-note {
-            margin-top: 14px;
-            font-size: 14px;
-            color: #8b949e;
-            max-width: 640px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.5;
-        }
-
-        .header .anon-note strong {
-            color: #58a6ff;
-        }
-
-        .search-container {
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 12px;
-            position: relative;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 20px 24px;
-            padding-right: 60px;
-            font-size: 18px;
-            background-color: var(--panel-bg);
-            border: 2px solid var(--panel-border);
-            border-radius: 12px;
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: var(--accent-blue);
-            box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.2);
-        }
-
-        .search-icon {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-secondary);
-            font-size: 24px;
-            pointer-events: none;
-        }
-
-        .search-options {
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 24px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px 20px;
-        }
-
-        .deep-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            user-select: none;
-            color: var(--text-secondary);
-            font-size: 14px;
-            font-weight: 500;
-            padding: 8px 14px;
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            transition: border-color 0.2s, color 0.2s, background 0.2s;
-        }
-
-        .deep-toggle:hover {
-            border-color: var(--accent-blue);
-            color: var(--text-primary);
-        }
-
-        .deep-toggle:has(input:checked) {
-            border-color: var(--accent-blue);
-            background: rgba(88, 166, 255, 0.08);
-            color: var(--accent-blue);
-        }
-
-        .deep-toggle input {
-            width: 16px;
-            height: 16px;
-            accent-color: var(--accent-blue);
-            cursor: pointer;
-        }
-
-        .chars-toggle input[type="number"] {
-            width: 56px;
-            height: 28px;
-            border-radius: 6px;
-            border: 1px solid var(--panel-border);
-            background: var(--bg-primary, #0d1117);
-            color: var(--text-primary);
-            font-size: 14px;
-            font-weight: 600;
-            text-align: center;
-            padding: 0 4px;
-        }
-
-        .chars-toggle select {
-            height: 28px;
-            max-width: 168px;
-            border-radius: 6px;
-            border: 1px solid var(--panel-border);
-            background: var(--bg-primary, #0d1117);
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            font-size: 13px;
-            font-weight: 600;
-            padding: 0 6px;
-            cursor: pointer;
-        }
-
-        .chars-toggle select:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .result-layer-badge {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 2px 8px;
-            border-radius: 999px;
-            margin-right: 6px;
-        }
-        .result-layer-badge.main {
-            background: rgba(63, 185, 80, 0.15);
-            color: #3fb950;
-        }
-        .result-layer-badge.raw {
-            background: rgba(210, 153, 34, 0.15);
-            color: #d29922;
-        }
-
-        .deep-hint {
-            font-size: 13px;
-            color: var(--text-secondary);
-            line-height: 1.4;
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .deep-hint code {
-            font-family: ui-monospace, monospace;
-            font-size: 12px;
-            background: rgba(88, 166, 255, 0.12);
-            color: var(--accent-blue);
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-
-        .scope-group {
-            display: inline-flex;
-            align-items: center;
-            gap: 0;
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .scope-group .scope-btn {
-            border: none;
-            border-right: 1px solid var(--panel-border);
-            background: transparent;
-            color: var(--text-secondary);
-            font-family: var(--font-main);
-            font-size: 13px;
-            font-weight: 600;
-            padding: 8px 14px;
-            cursor: pointer;
-            transition: background 0.15s, color 0.15s;
-        }
-
-        .scope-group .scope-btn:last-child {
-            border-right: none;
-        }
-
-        .scope-group .scope-btn:hover:not(.active) {
-            background: var(--item-hover);
-            color: var(--text-primary);
-        }
-
-        .scope-group .scope-btn.active {
-            background: rgba(88, 166, 255, 0.18);
-            color: var(--accent-blue);
-        }
-
-        .result-corpus {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            padding: 2px 7px;
-            border-radius: 4px;
-            align-self: flex-start;
-        }
-
-        .result-corpus.classic {
-            color: #3fb950;
-            background: rgba(63, 185, 80, 0.12);
-        }
-
-        .result-corpus.ng {
-            color: #f778ba;
-            background: rgba(247, 120, 186, 0.12);
-        }
-
-        .result-fixed {
-            font-size: 13px;
-            color: #3fb950;
-            line-height: 1.4;
-            padding: 8px 10px;
-            background: rgba(63, 185, 80, 0.08);
-            border: 1px solid rgba(63, 185, 80, 0.25);
-            border-radius: 6px;
-            white-space: pre-wrap;
-            word-break: break-word;
-        }
-
-        .result-fixed-label {
-            font-size: 11px;
-            font-weight: 700;
-            color: #3fb950;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            margin-bottom: 4px;
-        }
-
-        .result-corrupt-raw {
-            font-size: 12px;
-            color: var(--text-secondary);
-            opacity: 0.75;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .result-cmd {
-            font-size: 12px;
-            color: #a371f7;
-            font-family: ui-monospace, monospace;
-            background-color: rgba(163, 113, 247, 0.12);
-            padding: 3px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            align-self: flex-start;
-        }
-
-        .result-match-badge {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            color: #d29922;
-            background: rgba(210, 153, 34, 0.12);
-            padding: 2px 6px;
-            border-radius: 4px;
-            align-self: flex-start;
-        }
-
-        .results-container {
-            width: 100%;
-            max-width: 800px;
-            background-color: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .results-header {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--panel-border);
-            color: var(--text-secondary);
-            font-size: 14px;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .result-item {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--panel-border);
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            user-select: text;
-            -webkit-user-select: text;
-        }
-
-        .result-item:last-child {
-            border-bottom: none;
-        }
-
-        .result-item:hover {
-            background-color: var(--item-hover);
-        }
-
-        .result-file,
-        .result-id,
-        .result-text,
-        .result-cmd,
-        .result-match-badge,
-        .result-corpus,
-        .result-fixed {
-            cursor: text;
-            user-select: text;
-            -webkit-user-select: text;
-        }
-
-        .result-item button,
-        .result-item summary {
-            cursor: pointer;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .result-file {
-            font-size: 12px;
-            color: var(--accent-blue);
-            font-family: monospace;
-            background-color: rgba(88, 166, 255, 0.1);
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            align-self: flex-start;
-        }
-
-        .result-id {
-            font-size: 13px;
-            color: var(--text-secondary);
-            font-family: monospace;
-        }
-
-        .result-text {
-            font-size: 15px;
-            color: var(--text-primary);
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .loader {
-            display: none;
-            width: 24px;
-            height: 24px;
-            border: 3px solid var(--panel-border);
-            border-top-color: var(--accent-blue);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 40px auto;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .empty-state {
-            padding: 60px 20px;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 15px;
-        }
-
-        a.result-item {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .pagination {
-            display: none;
-            width: 100%;
-            max-width: 800px;
-            margin-top: 16px;
-            padding: 14px 12px;
-            background-color: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .pagination.visible {
-            display: flex;
-        }
-
-        .page-btn {
-            min-width: 36px;
-            height: 36px;
-            padding: 0 10px;
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            background: transparent;
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.15s, border-color 0.15s, color 0.15s;
-        }
-
-        .page-btn:hover:not(:disabled):not(.active) {
-            background: var(--item-hover);
-            border-color: var(--accent-blue);
-            color: var(--accent-blue);
-        }
-
-        .page-btn.active {
-            background: var(--accent-blue);
-            border-color: var(--accent-blue);
-            color: #0d1117;
-            font-weight: 700;
-            cursor: default;
-        }
-
-        .page-btn:disabled {
-            opacity: 0.35;
-            cursor: not-allowed;
-        }
-
-        .page-ellipsis {
-            color: var(--text-secondary);
-            padding: 0 4px;
-            user-select: none;
-        }
-
-        .page-info {
-            width: 100%;
-            text-align: center;
-            font-size: 12px;
-            color: var(--text-secondary);
-            margin-top: 4px;
-        }
-
-        .btn-exclude {
-            background: rgba(248, 81, 73, 0.1);
-            border: 1px solid rgba(248, 81, 73, 0.3);
-            color: #f85149;
-            border-radius: 6px;
-            padding: 3px 8px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            transition: all 0.15s ease;
-            flex-shrink: 0;
-            user-select: none;
-        }
-        .btn-exclude:hover {
-            background: rgba(248, 81, 73, 0.25);
-            border-color: #f85149;
-            color: #fff;
-            transform: scale(1.03);
-        }
-
-        .btn-copy-cmd {
-            background: rgba(88, 166, 255, 0.1);
-            border: 1px solid rgba(88, 166, 255, 0.3);
-            color: var(--accent-blue);
-            border-radius: 6px;
-            padding: 3px 8px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            transition: all 0.15s ease;
-            flex-shrink: 0;
-            user-select: none;
-        }
-        .btn-copy-cmd:hover {
-            background: rgba(88, 166, 255, 0.25);
-            border-color: var(--accent-blue);
-            color: #fff;
-            transform: scale(1.03);
-        }
-        .btn-copy-cmd.copied {
-            background: rgba(63, 185, 80, 0.2) !important;
-            border-color: #3fb950 !important;
-            color: #3fb950 !important;
-        }
-
-        .custom-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-        .modal-backdrop {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(2px);
-        }
-        .modal-content {
-            position: relative;
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            width: 90%;
-            max-width: 500px;
-            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            animation: modalFadeIn 0.2s ease-out;
-        }
-        @keyframes modalFadeIn {
-            from { opacity: 0; transform: scale(0.95) translateY(-10px); }
-            to { opacity: 1; transform: scale(1) translateY(0); }
-        }
-        .modal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--panel-border);
-        }
-        .modal-header h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #fff;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .modal-close-btn {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 20px;
-            cursor: pointer;
-            line-height: 1;
-            padding: 2px 6px;
-            border-radius: 4px;
-            transition: color 0.15s;
-        }
-        .modal-close-btn:hover {
-            color: #fff;
-        }
-        .modal-body {
-            padding: 20px;
-            font-size: 14px;
-            color: var(--text-primary);
-            line-height: 1.5;
-        }
-        .modal-target-box {
-            background: rgba(13, 17, 23, 0.8);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            padding: 12px;
-            margin: 12px 0 0 0;
-            font-family: ui-monospace, monospace;
-            font-size: 12px;
-            color: var(--text-secondary);
-            word-break: break-all;
-        }
-        .modal-target-box strong {
-            color: var(--accent-blue);
-        }
-        .modal-footer {
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-            padding: 14px 20px;
-            border-top: 1px solid var(--panel-border);
-            background: rgba(13, 17, 23, 0.4);
-        }
-        .btn-modal-cancel {
-            background: transparent;
-            border: 1px solid var(--panel-border);
-            color: var(--text-secondary);
-            border-radius: 6px;
-            padding: 8px 14px;
-            font-size: 13px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .btn-modal-cancel:hover {
-            border-color: var(--text-primary);
-            color: var(--text-primary);
-        }
-        .btn-modal-danger {
-            background: #da3633;
-            border: 1px solid rgba(248, 81, 73, 0.4);
-            color: #fff;
-            border-radius: 6px;
-            padding: 8px 16px;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .btn-modal-danger:hover {
-            background: #f85149;
-        }
-        .excluded-item-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--panel-border);
-            font-size: 12px;
-            gap: 10px;
-        }
-        .excluded-item-row:last-child {
-            border-bottom: none;
-        }
-        .btn-restore {
-            background: rgba(88, 166, 255, 0.12);
-            border: 1px solid rgba(88, 166, 255, 0.3);
-            color: var(--accent-blue);
-            border-radius: 4px;
-            padding: 4px 10px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s;
-            white-space: nowrap;
-        }
-        .btn-restore:hover {
-            background: var(--accent-blue);
-            color: #0d1117;
-        }
-        .btn-exclude-file {
-            background: rgba(210, 153, 34, 0.12);
-            border: 1px solid rgba(210, 153, 34, 0.35);
-            color: #d29922;
-            border-radius: 6px;
-            padding: 4px 10px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s;
-            white-space: nowrap;
-        }
-        .btn-exclude-file:hover {
-            background: rgba(210, 153, 34, 0.25);
-            border-color: #d29922;
-            color: #fff;
-        }
-        .btn-modal-warning {
-            background: #9e6a03;
-            border: 1px solid rgba(210, 153, 34, 0.5);
-            color: #fff;
-            border-radius: 6px;
-            padding: 8px 16px;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .btn-modal-warning:hover {
-            background: #bb8009;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <h1>Traductor Visual PSO2</h1>
-        <p>Busca cualquier texto en inglés, japonés o español para comenzar a traducir</p>
-        <p class="anon-note">Cualquiera puede sugerir cambios <strong>sin cuenta de GitHub</strong>. El nick es opcional; si no lo pones se envía como anónimo. Los contribuidores del proyecto revisan y hacen el merge.</p>
-    </div>
-
-    <div class="search-container">
-        <input type="text" id="searchInput" class="search-input" placeholder="Ej: Pose elemental: oscuridad y luz..." autofocus autocomplete="off">
-        <div class="search-icon">🔍</div>
-    </div>
-
-    <div class="search-options">
-        <div class="scope-group" role="group" aria-label="Ámbito de búsqueda">
-            <button type="button" class="scope-btn active" data-scope="all" title="Classic + NGS">Ambos</button>
-            <button type="button" class="scope-btn" data-scope="classic" title="Solo Csv_Clasic">Classic</button>
-            <button type="button" class="scope-btn" data-scope="ng" title="Solo Csv_Ngs">NGS</button>
-        </div>
-        <label class="deep-toggle" title="Incluye section, group e id del CSV (comandos)">
-            <input type="checkbox" id="deepSearch">
-            <span>Búsqueda avanzada</span>
-        </label>
-        <label class="deep-toggle" title="Busca por nombre de archivo: cl0421450101 o trial_boss_weak_evolution.csv">
-            <input type="checkbox" id="fileSearch">
-            <span>Por archivo</span>
-        </label>
-        <label class="deep-toggle" title="Lista líneas y archivos nuevos del update (Classic + NGS)">
-            <input type="checkbox" id="corruptSearch">
-            <span>Líneas nuevas</span>
-        </label>
-        <label class="deep-toggle" title="Group 1: solo textos 100% idénticos (main + raw). Un carácter distinto = no coincide.">
-            <input type="checkbox" id="equalSearch">
-            <span>Líneas iguales</span>
-        </label>
-        <label class="deep-toggle chars-toggle" id="charsToggle" style="display: none;" title="Longitud mínima del texto (filtra basura corta: ??, -, manon, aina…)">
-            <span>Mín. chars</span>
-            <input type="number" id="equalChars" min="1" max="500" value="20" step="1">
-        </label>
-        <label class="deep-toggle" title="Compara la versión en inglés (Raw) con la traducción al español (Main). Encuentra líneas donde la diferencia de caracteres es desproporcionada.">
-            <input type="checkbox" id="diffSearch">
-            <span>Brecha de caracteres</span>
-        </label>
-        <label class="deep-toggle chars-toggle" id="diffDirToggle" style="display: none;" title="Dirección de la diferencia: Raw más corto, Raw más largo, o cualquiera">
-            <span>Comparar</span>
-            <select id="diffDir" disabled>
-                <option value="raw-shorter">Raw &lt; Español</option>
-                <option value="raw-longer">Raw &gt; Español</option>
-                <option value="any" selected>Cualquiera</option>
-            </select>
-        </label>
-        <label class="deep-toggle chars-toggle" id="diffCharsToggle" style="display: none;" title="Diferencia mínima de caracteres entre inglés y español (ej: 40 o 50 caracteres de brecha)">
-            <span>Dif. mín.</span>
-            <input type="number" id="diffChars" min="10" max="1000" value="40" step="5">
-        </label>
-        <span class="deep-hint" id="deepHint" style="display: none;">
-            También busca en comandos CSV: <code>section,group,id</code>
-            — ej. <code>Basic,1,Explanation</code> o textos vacíos
-        </span>
-        <span class="deep-hint" id="fileHint" style="display: none;">
-            Escribe el <strong>nombre del CSV</strong> con o sin extensión:
-            <code>cl0421450101</code>, <code>cl0421450101.csv</code>,
-            <code>trial_boss_weak_evolution</code>, <code>msn_041280</code>.
-            Lista todas las líneas de ese archivo (ámbito Classic / NGS / Ambos).
-        </span>
-        <span class="deep-hint" id="corruptHint" style="display: none;">
-            <strong>Líneas y archivos del update</strong> (listas en
-            <code>data/lineas_nuevas/</code>). No hace falta escribir:
-            se listan solas. Puedes filtrar por nombre de archivo, id o texto.
-            Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
-        </span>
-        <span class="deep-hint" id="equalHint" style="display: none;">
-            Compara <strong>main vs raw del mismo archivo</strong> (mismo section/id, group&nbsp;1).
-            Solo sale si el <em>texto es idéntico</em> en ambos (inglés sin traducir).
-            Un carácter distinto = no aparece. <strong>Mín. chars</strong> filtra basura corta
-            (<code>??</code>, nombres cortos…). Deja la caja vacía para listar todos los pares MAIN=RAW.
-        </span>
-        <span class="deep-hint" id="diffHint" style="display: none;">
-            Compara <strong>Inglés (Raw)</strong> vs <strong>Español (Main)</strong> del mismo archivo y clave (group&nbsp;1).
-            La diferencia mínima determina cuántos caracteres deben separar ambos textos.
-            Usa la dirección para buscar cuando Raw sea más corto, Raw sea más largo o en cualquier dirección.
-            Ordenadas de <em>mayor a menor brecha</em>.
-            <br>
-            <strong>Raw &lt; Español:</strong> busca cuando el español tiene más caracteres.
-            <strong>Raw &gt; Español:</strong> busca cuando el Raw tiene más caracteres.
-            <strong>Cualquiera:</strong> busca diferencias en ambas direcciones.
-            Deja la caja vacía para listar todas o escribe para filtrar.
-        </span>
-        <button type="button" id="btnManageExcluded" class="deep-toggle" style="display: none; border-color: rgba(248, 81, 73, 0.4); color: #f85149;" title="Ver y gestionar las líneas excluidas de la búsqueda">
-            <span>🚫 <span id="btnExcludedText">0 excluidas</span></span>
-        </button>
-    </div>
-
-    <div id="loader" class="loader"></div>
-
-    <div class="results-container" id="resultsContainer" style="display: none;">
-        <div class="results-header">
-            <span id="resultsCount">0 resultados encontrados</span>
-            <span>Se abre en pestaña nueva</span>
-        </div>
-        <div id="resultsList">
-            <!-- Resultados se insertan aquí -->
-        </div>
-    </div>
-
-    <div class="pagination" id="pagination" aria-label="Paginación de resultados">
-        <!-- botones de página -->
-    </div>
-
-    <!-- Modal para Confirmar Exclusión de una línea individual -->
-    <div id="excludeModal" class="custom-modal" style="display: none;">
-        <div class="modal-backdrop" onclick="closeExcludeModal()"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>🚫 Excluir línea de la búsqueda</h3>
-                <button class="modal-close-btn" onclick="closeExcludeModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>¿Estás seguro de que quieres quitar de la lista de búsqueda este resultado?</p>
-                <div id="modalExcludeTarget" class="modal-target-box"></div>
-                <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
-                    Esta línea se ocultará permanentemente en las búsquedas (incluso tras refrescar). Podrás restaurarla en cualquier momento haciendo clic en el botón superior de exclusiones.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn-modal-cancel" onclick="closeExcludeModal()">Cancelar</button>
-                <button type="button" id="btnConfirmExclude" class="btn-modal-danger">Sí, quitar línea</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal para Confirmar Exclusión de un ARCHIVO CSV COMPLETO -->
-    <div id="excludeFileModal" class="custom-modal" style="display: none;">
-        <div class="modal-backdrop" onclick="closeExcludeFileModal()"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>📁 Excluir archivo CSV completo</h3>
-                <button class="modal-close-btn" onclick="closeExcludeFileModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>¿Estás seguro de que deseas excluir <strong>todas las líneas</strong> del siguiente archivo CSV?</p>
-                <div id="modalExcludeFileTarget" class="modal-target-box"></div>
-                <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
-                    Todas las líneas de este archivo (incluyendo <em>Brecha de caracteres</em>, <em>Líneas iguales</em>, etc.) se omitirán permanentemente de las búsquedas para no estorbar con otros archivos. Podrás restaurarlo en cualquier momento.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn-modal-cancel" onclick="closeExcludeFileModal()">Cancelar</button>
-                <button type="button" id="btnConfirmExcludeFile" class="btn-modal-warning">📁 Sí, excluir todo el CSV</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal para Gestionar / Restaurar exclusiones (Archivos CSV y Líneas) -->
-    <div id="manageExcludedModal" class="custom-modal" style="display: none;">
-        <div class="modal-backdrop" onclick="closeManageExcludedModal()"></div>
-        <div class="modal-content" style="max-width: 650px;">
-            <div class="modal-header" style="padding-bottom: 12px;">
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-                    <h3>🚫 Gestión de Exclusiones</h3>
-                    <button class="modal-close-btn" onclick="closeManageExcludedModal()">&times;</button>
-                </div>
-            </div>
-            <div style="display: flex; gap: 8px; padding: 0 20px 12px 20px; border-bottom: 1px solid var(--panel-border);">
-                <button type="button" id="tabExcludedFiles" class="scope-btn active" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">📁 Archivos CSV (<span id="excludedFilesCountSpan">0</span>)</button>
-                <button type="button" id="tabExcludedLines" class="scope-btn" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">🚫 Líneas (<span id="excludedCountSpan">0</span>)</button>
-            </div>
-            <!-- Pestaña Archivos CSV -->
-            <div id="sectionExcludedFiles" class="modal-body" style="max-height: 400px; overflow-y: auto; padding: 16px 20px;">
-                <div style="display: flex; gap: 8px; margin-bottom: 14px;">
-                    <input type="text" id="inputManualExcludeFile" placeholder="Escribe o pega nombre de CSV (ej. cl0421450101.csv)" style="flex: 1; height: 36px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--panel-border); background: var(--bg-primary, #0d1117); color: var(--text-primary); font-size: 13px;">
-                    <button type="button" id="btnManualExcludeFile" class="btn-exclude-file" style="padding: 0 14px; font-size: 12px; height: 36px;">➕ Excluir CSV</button>
-                </div>
-                <div id="excludedFilesListContainer"></div>
-            </div>
-            <!-- Pestaña Líneas Individuales -->
-            <div id="sectionExcludedLines" class="modal-body" style="display: none; max-height: 400px; overflow-y: auto; padding: 16px 20px;">
-                <div id="excludedListContainer"></div>
-            </div>
-            <div class="modal-footer" style="justify-content: space-between;">
-                <button type="button" id="btnRestoreCurrentTab" class="btn-modal-danger" style="background: transparent; border-color: rgba(248,81,73,0.4); color: #f85149;">Restaurar todos los archivos</button>
-                <button type="button" class="btn-modal-cancel" onclick="closeManageExcludedModal()">Cerrar</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const searchInput = document.getElementById('searchInput');
-        const deepSearch = document.getElementById('deepSearch');
-        const deepHint = document.getElementById('deepHint');
-        const fileSearch = document.getElementById('fileSearch');
-        const fileHint = document.getElementById('fileHint');
-        const corruptSearch = document.getElementById('corruptSearch');
-        const corruptHint = document.getElementById('corruptHint');
-        const equalSearch = document.getElementById('equalSearch');
-        const equalHint = document.getElementById('equalHint');
-        const equalChars = document.getElementById('equalChars');
-        const charsToggle = document.getElementById('charsToggle');
-        const diffSearch = document.getElementById('diffSearch');
-        const diffHint = document.getElementById('diffHint');
-        const diffChars = document.getElementById('diffChars');
-        const diffCharsToggle = document.getElementById('diffCharsToggle');
-        const diffDir = document.getElementById('diffDir');
-        const diffDirToggle = document.getElementById('diffDirToggle');
-        const btnManageExcluded = document.getElementById('btnManageExcluded');
-        const btnExcludedText = document.getElementById('btnExcludedText');
-        const excludeModal = document.getElementById('excludeModal');
-        const excludeFileModal = document.getElementById('excludeFileModal');
-        const manageExcludedModal = document.getElementById('manageExcludedModal');
-        const modalExcludeTarget = document.getElementById('modalExcludeTarget');
-        const modalExcludeFileTarget = document.getElementById('modalExcludeFileTarget');
-        const btnConfirmExclude = document.getElementById('btnConfirmExclude');
-        const btnConfirmExcludeFile = document.getElementById('btnConfirmExcludeFile');
-        const tabExcludedFiles = document.getElementById('tabExcludedFiles');
-        const tabExcludedLines = document.getElementById('tabExcludedLines');
-        const sectionExcludedFiles = document.getElementById('sectionExcludedFiles');
-        const sectionExcludedLines = document.getElementById('sectionExcludedLines');
-        const inputManualExcludeFile = document.getElementById('inputManualExcludeFile');
-        const btnManualExcludeFile = document.getElementById('btnManualExcludeFile');
-        const excludedCountSpan = document.getElementById('excludedCountSpan');
-        const excludedFilesCountSpan = document.getElementById('excludedFilesCountSpan');
-        const excludedListContainer = document.getElementById('excludedListContainer');
-        const excludedFilesListContainer = document.getElementById('excludedFilesListContainer');
-        const btnRestoreCurrentTab = document.getElementById('btnRestoreCurrentTab');
-        const resultsContainer = document.getElementById('resultsContainer');
-        const resultsList = document.getElementById('resultsList');
-        const resultsCount = document.getElementById('resultsCount');
-        const paginationEl = document.getElementById('pagination');
-        const loader = document.getElementById('loader');
-        const scopeButtons = document.querySelectorAll('.scope-btn');
-
-        // Líneas excluidas guardadas en localStorage: Map de key -> { key, file, section, group, id, preview }
-        let excludedMap = new Map();
-        try {
-            const saved = JSON.parse(localStorage.getItem('pso2_search_excluded_items') || '[]');
-            if (Array.isArray(saved)) {
-                saved.forEach(item => {
-                    if (item && item.key) excludedMap.set(item.key.toLowerCase(), item);
-                });
-            }
-        } catch (e) {
-            console.warn("Error leyendo excluidas de localStorage", e);
-        }
-
-        // Archivos CSV completos excluidos guardados en localStorage: Map de key -> { key, name, path, corpus }
-        let excludedFilesMap = new Map();
-        try {
-            const savedFiles = JSON.parse(localStorage.getItem('pso2_search_excluded_files') || '[]');
-            if (Array.isArray(savedFiles)) {
-                savedFiles.forEach(item => {
-                    if (item && item.key) excludedFilesMap.set(item.key.toLowerCase(), item);
-                });
-            }
-        } catch (e) {
-            console.warn("Error leyendo archivos excluidos de localStorage", e);
-        }
-
-        function normalizeFileKey(f) {
-            if (!f) return '';
-            let s = String(f).replace(/\\/g, '/').replace(/_Raw/gi, '').trim();
-            if (s.startsWith('./')) s = s.slice(2);
-            return s.replace(/^\/+/, '').toLowerCase();
-        }
-
-        function isCsvExcluded(filePath) {
-            if (excludedFilesMap.size === 0 || !filePath) return false;
-            const norm = normalizeFileKey(filePath);
-            const fname = norm.split('/').pop();
-            const fstem = fname.replace(/\.csv$/i, '');
-            return excludedFilesMap.has(norm) || excludedFilesMap.has(fname) || excludedFilesMap.has(fstem);
-        }
-
-        function saveExcludedToStorage() {
-            try {
-                const arr = Array.from(excludedMap.values());
-                localStorage.setItem('pso2_search_excluded_items', JSON.stringify(arr));
-            } catch (e) {
-                console.warn("Error guardando excluidas en localStorage", e);
-            }
-            updateExcludedButton();
-        }
-
-        function saveExcludedFilesToStorage() {
-            try {
-                const arr = Array.from(excludedFilesMap.values());
-                localStorage.setItem('pso2_search_excluded_files', JSON.stringify(arr));
-            } catch (e) {
-                console.warn("Error guardando archivos excluidos en localStorage", e);
-            }
-            updateExcludedButton();
-        }
-
-        function updateExcludedButton() {
-            if (!btnManageExcluded) return;
-            const lineCount = excludedMap.size;
-            const uniqueFiles = new Set();
-            excludedFilesMap.forEach(item => {
-                if (item && item.path) uniqueFiles.add(normalizeFileKey(item.path));
-                else if (item && item.key) uniqueFiles.add(item.key.toLowerCase());
-            });
-            const fileCount = uniqueFiles.size;
-            const totalCount = lineCount + fileCount;
-            if (totalCount > 0) {
-                btnManageExcluded.style.display = 'inline-flex';
-                let text = '';
-                if (fileCount > 0 && lineCount > 0) {
-                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} · ${lineCount} línea${lineCount > 1 ? 's' : ''}`;
-                } else if (fileCount > 0) {
-                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} excluido${fileCount > 1 ? 's' : ''}`;
-                } else {
-                    text = `${lineCount} línea${lineCount > 1 ? 's' : ''} excluida${lineCount > 1 ? 's' : ''}`;
-                }
-                btnExcludedText.textContent = text;
-            } else {
-                btnManageExcluded.style.display = 'none';
-            }
-        }
-        updateExcludedButton();
-
-        let pendingExcludeItem = null;
-
-        function promptExcludeItem(e, key, id, section, file, group, preview) {
-            if (e) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-            pendingExcludeItem = {
-                key: key.toLowerCase(),
-                id,
-                section,
-                file,
-                group: group || '1',
-                preview: preview || ''
-            };
-            modalExcludeTarget.innerHTML = `
-                <div><strong>Archivo:</strong> ${escapeHtml(file)}</div>
-                <div style="margin-top: 4px;"><strong>Comando:</strong> ${escapeHtml([section, group || '1', id].filter(Boolean).join(','))}</div>
-                ${preview ? `<div style="margin-top: 4px; color: #8b949e; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;"><strong>Texto:</strong> ${escapeHtml(preview)}</div>` : ''}
-            `;
-            excludeModal.style.display = 'flex';
-        }
-
-        function closeExcludeModal() {
-            excludeModal.style.display = 'none';
-            pendingExcludeItem = null;
-        }
-
-        btnConfirmExclude.addEventListener('click', () => {
-            if (!pendingExcludeItem) return;
-            const item = pendingExcludeItem;
-            excludedMap.set(item.key, item);
-            saveExcludedToStorage();
-            closeExcludeModal();
-
-            // Refrescar de inmediato para que la línea excluida desaparezca por completo de la búsqueda
-            // y las líneas siguientes avancen automáticamente llenando la lista sin huecos ni páginas vacías.
-            performSearch(lastQuery, currentPage);
-        });
-
-        let pendingExcludeFile = null;
-
-        function promptExcludeFile(e, openFile, corpus) {
-            if (e) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-            const cleanKey = normalizeFileKey(openFile);
-            const fileName = cleanKey.split('/').pop();
-            pendingExcludeFile = {
-                key: cleanKey,
-                name: fileName,
-                path: openFile,
-                corpus: corpus || (openFile.toLowerCase().includes('ng') ? 'ng' : 'classic')
-            };
-            modalExcludeFileTarget.innerHTML = `
-                <div><strong>Archivo:</strong> ${escapeHtml(openFile)}</div>
-                <div style="margin-top: 4px;"><strong>Ámbito:</strong> ${escapeHtml(pendingExcludeFile.corpus.toUpperCase())}</div>
-                <div style="margin-top: 6px; color: #d29922;"><strong>Alcance:</strong> Se omitirán todas las líneas de este CSV en las búsquedas.</div>
-            `;
-            excludeFileModal.style.display = 'flex';
-        }
-
-        function closeExcludeFileModal() {
-            excludeFileModal.style.display = 'none';
-            pendingExcludeFile = null;
-        }
-
-        btnConfirmExcludeFile.addEventListener('click', () => {
-            if (!pendingExcludeFile) return;
-            const fileItem = pendingExcludeFile;
-            excludedFilesMap.set(fileItem.key, fileItem);
-            if (fileItem.name && fileItem.name !== fileItem.key) {
-                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
-            }
-            saveExcludedFilesToStorage();
-            closeExcludeFileModal();
-
-            performSearch(lastQuery, currentPage);
-        });
-
-        // Pestañas de Gestión de Exclusiones
-        let currentExcludedTab = 'files'; // 'files' | 'lines'
-
-        function setExcludedTab(tab) {
-            currentExcludedTab = tab;
-            if (tab === 'files') {
-                tabExcludedFiles.classList.add('active');
-                tabExcludedLines.classList.remove('active');
-                sectionExcludedFiles.style.display = 'block';
-                sectionExcludedLines.style.display = 'none';
-                btnRestoreCurrentTab.textContent = 'Restaurar todos los archivos';
-                renderExcludedFilesList();
-            } else {
-                tabExcludedFiles.classList.remove('active');
-                tabExcludedLines.classList.add('active');
-                sectionExcludedFiles.style.display = 'none';
-                sectionExcludedLines.style.display = 'block';
-                btnRestoreCurrentTab.textContent = 'Restaurar todas las líneas';
-                renderExcludedList();
-            }
-        }
-
-        tabExcludedFiles.addEventListener('click', () => setExcludedTab('files'));
-        tabExcludedLines.addEventListener('click', () => setExcludedTab('lines'));
-
-        if (btnManageExcluded) {
-            btnManageExcluded.addEventListener('click', () => {
-                if (excludedFilesMap.size === 0 && excludedMap.size > 0) {
-                    setExcludedTab('lines');
-                } else {
-                    setExcludedTab('files');
-                }
-                manageExcludedModal.style.display = 'flex';
-            });
-        }
-
-        function closeManageExcludedModal() {
-            manageExcludedModal.style.display = 'none';
-        }
-
-        btnManualExcludeFile.addEventListener('click', () => {
-            const raw = inputManualExcludeFile.value.trim();
-            if (!raw) return;
-            const cleanKey = normalizeFileKey(raw);
-            const fileName = cleanKey.split('/').pop();
-            const fileItem = {
-                key: cleanKey,
-                name: fileName,
-                path: raw,
-                corpus: raw.toLowerCase().includes('ng') ? 'ng' : 'classic'
-            };
-            excludedFilesMap.set(fileItem.key, fileItem);
-            if (fileItem.name && fileItem.name !== fileItem.key) {
-                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
-            }
-            saveExcludedFilesToStorage();
-            inputManualExcludeFile.value = '';
-            renderExcludedFilesList();
-            scheduleSearch(false);
-        });
-        inputManualExcludeFile.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                btnManualExcludeFile.click();
-            }
-        });
-
-        function renderExcludedFilesList() {
-            const uniqueFiles = new Map();
-            excludedFilesMap.forEach(item => {
-                if (item && item.path) uniqueFiles.set(item.path.toLowerCase(), item);
-                else if (item && item.key) uniqueFiles.set(item.key.toLowerCase(), item);
-            });
-            excludedFilesCountSpan.textContent = uniqueFiles.size;
-
-            if (uniqueFiles.size === 0) {
-                excludedFilesListContainer.innerHTML = `<div class="empty-state" style="padding: 24px;">No hay archivos CSV excluidos actualmente.</div>`;
-                return;
-            }
-            excludedFilesListContainer.innerHTML = '';
-            uniqueFiles.forEach((item, uniqueKey) => {
-                const row = document.createElement('div');
-                row.className = 'excluded-item-row';
-                const corpusBadge = item.corpus === 'ng' ? '<span class="result-corpus ng" style="font-size: 10px;">NGS</span>' : '<span class="result-corpus classic" style="font-size: 10px;">Classic</span>';
-                row.innerHTML = `
-                    <div style="min-width: 0; flex: 1;">
-                        <div style="display: flex; align-items: center; gap: 6px;">
-                            <span style="color: #d29922; font-family: monospace; font-size: 12px; font-weight: 600;">📁 ${escapeHtml(item.path || item.key)}</span>
-                            ${corpusBadge}
-                        </div>
-                        <div style="color: var(--text-secondary); font-size: 11px; margin-top: 2px;">Todas las líneas de este CSV están omitidas</div>
-                    </div>
-                    <button type="button" class="btn-restore" title="Volver a mostrar este CSV en las búsquedas">Restaurar CSV</button>
-                `;
-                row.querySelector('.btn-restore').addEventListener('click', () => {
-                    excludedFilesMap.delete(item.key);
-                    if (item.name) excludedFilesMap.delete(item.name.toLowerCase());
-                    if (item.path) excludedFilesMap.delete(normalizeFileKey(item.path));
-                    uniqueFiles.delete(uniqueKey);
-                    saveExcludedFilesToStorage();
-                    renderExcludedFilesList();
-                    scheduleSearch(false);
-                });
-                excludedFilesListContainer.appendChild(row);
-            });
-        }
-
-        function renderExcludedList() {
-            excludedCountSpan.textContent = excludedMap.size;
-            if (excludedMap.size === 0) {
-                excludedListContainer.innerHTML = `<div class="empty-state" style="padding: 24px;">No hay líneas excluidas actualmente.</div>`;
-                return;
-            }
-            excludedListContainer.innerHTML = '';
-            excludedMap.forEach((item, key) => {
-                const row = document.createElement('div');
-                row.className = 'excluded-item-row';
-                row.innerHTML = `
-                    <div style="min-width: 0; flex: 1;">
-                        <div style="color: var(--accent-blue); font-family: monospace; font-size: 11px; margin-bottom: 2px;">📁 ${escapeHtml(item.file)}</div>
-                        <div style="color: #fff; font-weight: 600; font-size: 13px; word-break: break-all;">${escapeHtml(item.section ? item.section + ' · ' : '')}${escapeHtml(item.id)}</div>
-                        ${item.preview ? `<div style="color: var(--text-secondary); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">${escapeHtml(item.preview)}</div>` : ''}
-                    </div>
-                    <button type="button" class="btn-restore" title="Volver a mostrar esta línea en las búsquedas">Restaurar</button>
-                `;
-                row.querySelector('.btn-restore').addEventListener('click', () => {
-                    excludedMap.delete(key);
-                    saveExcludedToStorage();
-                    renderExcludedList();
-                    // Refrescar resultados
-                    scheduleSearch(false);
-                });
-                excludedListContainer.appendChild(row);
-            });
-        }
-
-        function restoreAllExcluded() {
-            if (excludedMap.size === 0) return;
-            if (confirm("¿Deseas restaurar TODAS las líneas excluidas para que vuelvan a aparecer en las búsquedas?")) {
-                excludedMap.clear();
-                saveExcludedToStorage();
-                renderExcludedList();
-                scheduleSearch(false);
-            }
-        }
-
-        btnRestoreCurrentTab.addEventListener('click', () => {
-            if (currentExcludedTab === 'files') {
-                if (excludedFilesMap.size === 0) return;
-                if (confirm("¿Deseas restaurar TODOS los archivos CSV excluidos para que vuelvan a aparecer en las búsquedas?")) {
-                    excludedFilesMap.clear();
-                    saveExcludedFilesToStorage();
-                    renderExcludedFilesList();
-                    scheduleSearch(false);
-                }
-            } else {
-                restoreAllExcluded();
-            }
-        });
-
-        const PER_PAGE = 50;
-        let debounceTimer;
-        let currentPage = 1;
-        let lastQuery = '';
-        let lastDeep = false;
-        let currentScope = 'all'; // all | classic | ng
-
-        function exclusiveMode(active) {
-            // Solo un modo especial a la vez
-            if (active !== 'deep') deepSearch.checked = false;
-            if (active !== 'file') fileSearch.checked = false;
-            if (active !== 'new') corruptSearch.checked = false;
-            if (active !== 'equal') equalSearch.checked = false;
-            if (active !== 'diff') diffSearch.checked = false;
-            if (active === 'deep') deepSearch.checked = true;
-            if (active === 'file') fileSearch.checked = true;
-            if (active === 'new') corruptSearch.checked = true;
-            if (active === 'equal') equalSearch.checked = true;
-            if (active === 'diff') diffSearch.checked = true;
-        }
-
-        function updatePlaceholders() {
-            deepHint.style.display = 'none';
-            fileHint.style.display = 'none';
-            corruptHint.style.display = 'none';
-            equalHint.style.display = 'none';
-            diffHint.style.display = 'none';
-            charsToggle.style.display = 'none';
-            diffCharsToggle.style.display = 'none';
-            diffDirToggle.style.display = 'none';
-            diffDir.disabled = true;
-            searchInput.disabled = false;
-
-            if (corruptSearch.checked) {
-                searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
-                corruptHint.style.display = 'block';
-            } else if (equalSearch.checked) {
-                searchInput.placeholder = 'Opcional: frase completa idéntica · usa Mín. chars para filtrar basura corta';
-                equalHint.style.display = 'block';
-                charsToggle.style.display = 'inline-flex';
-            } else if (diffSearch.checked) {
-                searchInput.placeholder = 'Opcional: filtra por texto, ID o archivo · ordenado por mayor brecha';
-                diffHint.style.display = 'block';
-                diffDirToggle.style.display = 'inline-flex';
-                diffDir.disabled = false;
-                diffCharsToggle.style.display = 'inline-flex';
-            } else if (fileSearch.checked) {
-                searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
-                fileHint.style.display = 'block';
-            } else if (deepSearch.checked) {
-                searchInput.placeholder = 'Ej: Basic,1,Explanation  o  texto vacío / ID...';
-                deepHint.style.display = 'block';
-            } else {
-                searchInput.placeholder = 'Ej: Pose elemental: oscuridad y luz...';
-            }
-        }
-
-        function scheduleSearch(resetPage = true) {
-            clearTimeout(debounceTimer);
-            const query = searchInput.value.trim();
-            const newMode = corruptSearch.checked;
-            const fileMode = fileSearch.checked;
-            const equalMode = equalSearch.checked;
-            const diffMode = diffSearch.checked;
-            const minLen = fileMode ? 2 : 3;
-
-            // Líneas nuevas / iguales / brecha: query opcional
-            if (!newMode && !equalMode && !diffMode && query.length < minLen) {
-                resultsContainer.style.display = 'none';
-                paginationEl.classList.remove('visible');
-                paginationEl.innerHTML = '';
-                loader.style.display = 'none';
-                return;
-            }
-
-            if (resetPage) currentPage = 1;
-
-            debounceTimer = setTimeout(() => {
-                performSearch(query, currentPage);
-            }, (newMode || equalMode || diffMode) && !query ? 150 : 500);
-        }
-
-        scopeButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                scopeButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentScope = btn.getAttribute('data-scope') || btn.dataset.scope || 'all';
-                clearTimeout(debounceTimer);
-                currentPage = 1;
-                performSearch(searchInput.value.trim(), 1);
-            });
-        });
-
-        deepSearch.addEventListener('change', () => {
-            if (deepSearch.checked) exclusiveMode('deep');
-            updatePlaceholders();
-            scheduleSearch(true);
-        });
-
-        fileSearch.addEventListener('change', () => {
-            if (fileSearch.checked) exclusiveMode('file');
-            updatePlaceholders();
-            scheduleSearch(true);
-        });
-
-        corruptSearch.addEventListener('change', () => {
-            if (corruptSearch.checked) {
-                exclusiveMode('new');
-                // Al activar: limpiar la caja y listar líneas/archivos nuevos del update
-                searchInput.value = '';
-            }
-            updatePlaceholders();
-            scheduleSearch(true);
-        });
-
-        equalSearch.addEventListener('change', () => {
-            if (equalSearch.checked) exclusiveMode('equal');
-            updatePlaceholders();
-            scheduleSearch(true);
-        });
-
-        equalChars.addEventListener('change', () => {
-            let n = parseInt(equalChars.value, 10);
-            if (Number.isNaN(n)) n = 20;
-            n = Math.max(1, Math.min(500, n));
-            equalChars.value = String(n);
-            if (equalSearch.checked) scheduleSearch(true);
-        });
-        equalChars.addEventListener('input', () => {
-            if (equalSearch.checked) scheduleSearch(true);
-        });
-
-        diffSearch.addEventListener('change', () => {
-            if (diffSearch.checked) {
-                exclusiveMode('diff');
-                searchInput.value = '';
-            }
-            updatePlaceholders();
-            scheduleSearch(true);
-        });
-
-        diffChars.addEventListener('change', () => {
-            let n = parseInt(diffChars.value, 10);
-            if (Number.isNaN(n)) n = 40;
-            n = Math.max(5, Math.min(1000, n));
-            diffChars.value = String(n);
-            if (diffSearch.checked) scheduleSearch(true);
-        });
-        diffChars.addEventListener('input', () => {
-            if (diffSearch.checked) scheduleSearch(true);
-        });
-
-        diffDir.addEventListener('change', () => {
-            if (diffSearch.checked) scheduleSearch(true);
-        });
-
-        searchInput.addEventListener('input', () => scheduleSearch(true));
-
-        async function performSearch(query, page = 1) {
-            resultsContainer.style.display = 'none';
-            paginationEl.classList.remove('visible');
-            loader.style.display = 'block';
-            resultsList.innerHTML = '';
-
-            const deep = deepSearch.checked ? '1' : '0';
-            const byfile = fileSearch.checked ? '1' : '0';
-            const nuevas = corruptSearch.checked ? '1' : '0';
-            const iguales = equalSearch.checked ? '1' : '0';
-            const diff = diffSearch.checked ? '1' : '0';
-            let chars = parseInt(equalChars.value, 10);
-            if (Number.isNaN(chars)) chars = 20;
-            chars = Math.max(1, Math.min(500, chars));
-            let diffCharsVal = parseInt(diffChars.value, 10);
-            if (Number.isNaN(diffCharsVal)) diffCharsVal = 40;
-            diffCharsVal = Math.max(5, Math.min(1000, diffCharsVal));
-            const diffCompare = (diffDir.value || 'any');
-            lastQuery = query;
-            lastDeep = deepSearch.checked;
-            currentPage = page;
-
-            try {
-                const searchPayload = {
-                    q: query,
-                    deep,
-                    file: byfile,
-                    byfile,
-                    new: nuevas,
-                    nuevas,
-                    equal: iguales,
-                    iguales,
-                    diff,
-                    brecha: diff,
-                    chars: String(chars),
-                    min_chars: String(chars),
-                    diff_chars: String(diffCharsVal),
-                    min_diff: String(diffCharsVal),
-                    diff_compare: diffCompare,
-                    compare: diffCompare,
-                    scope: currentScope,
-                    page: String(page),
-                    per_page: String(PER_PAGE),
-                    excluded: Array.from(excludedMap.keys()),
-                    excluded_files: Array.from(excludedFilesMap.keys()),
-                };
-                const response = await fetch('/api/search', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(searchPayload),
-                });
-                const data = await response.json().catch(() => ({}));
-
-                // Índice aún cargando en el servidor (deploy / reinicio)
-                if (response.status === 503 || data.loading) {
-                    loader.style.display = 'none';
-                    resultsContainer.style.display = 'block';
-                    paginationEl.classList.remove('visible');
-                    resultsList.innerHTML = `<div class="empty-state">⏳ Cargando índice de traducciones… reintentando en 3 s.</div>`;
-                    setTimeout(() => performSearch(query, page), 3000);
-                    return;
-                }
-
-                if (!response.ok) throw new Error(data.error || "Error en la búsqueda");
-
-                loader.style.display = 'none';
-                renderResults(data);
-            } catch (error) {
-                loader.style.display = 'none';
-                resultsContainer.style.display = 'block';
-                paginationEl.classList.remove('visible');
-                resultsList.innerHTML = `<div class="empty-state">❌ Error al realizar la búsqueda. Verifica la conexión con el servidor.</div>`;
-            }
-        }
-
-        function escapeHtml(s) {
-            return String(s)
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;');
-        }
-
-        /** Números de página visibles con elipsis (estilo webs típicas). */
-        function pageWindow(current, total) {
-            if (total <= 9) {
-                return Array.from({ length: total }, (_, i) => i + 1);
-            }
-            const pages = new Set([1, total, current]);
-            for (let i = current - 2; i <= current + 2; i++) {
-                if (i >= 1 && i <= total) pages.add(i);
-            }
-            // siempre un par cerca del inicio/fin
-            pages.add(2);
-            pages.add(total - 1);
-
-            const sorted = [...pages].sort((a, b) => a - b);
-            const out = [];
-            let prev = 0;
-            for (const p of sorted) {
-                if (prev && p - prev > 1) out.push('…');
-                out.push(p);
-                prev = p;
-            }
-            return out;
-        }
-
-        function renderPagination(page, totalPages, total, capped) {
-            if (totalPages <= 1) {
-                paginationEl.classList.remove('visible');
-                paginationEl.innerHTML = '';
-                return;
-            }
-
-            paginationEl.classList.add('visible');
-            paginationEl.innerHTML = '';
-
-            const addBtn = (label, targetPage, { active = false, disabled = false, aria = '' } = {}) => {
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'page-btn' + (active ? ' active' : '');
-                btn.textContent = label;
-                btn.disabled = disabled || active;
-                if (aria) btn.setAttribute('aria-label', aria);
-                if (!disabled && !active) {
-                    btn.addEventListener('click', () => {
-                        performSearch(lastQuery, targetPage);
-                        resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    });
-                }
-                paginationEl.appendChild(btn);
-            };
-
-            addBtn('‹', page - 1, { disabled: page <= 1, aria: 'Página anterior' });
-
-            for (const entry of pageWindow(page, totalPages)) {
-                if (entry === '…') {
-                    const span = document.createElement('span');
-                    span.className = 'page-ellipsis';
-                    span.textContent = '…';
-                    paginationEl.appendChild(span);
-                } else {
-                    addBtn(String(entry), entry, { active: entry === page, aria: `Página ${entry}` });
-                }
-            }
-
-            addBtn('›', page + 1, { disabled: page >= totalPages, aria: 'Página siguiente' });
-
-            const info = document.createElement('div');
-            info.className = 'page-info';
-            const capNote = capped ? ' (límite de búsqueda alcanzado; afina el texto si falta algo)' : '';
-            info.textContent = `Página ${page} de ${totalPages} · ${total} resultados${capNote}`;
-            paginationEl.appendChild(info);
-        }
-
-        function renderResults(data) {
-            const items = data.items || [];
-            const deep = !!data.deep;
-            const page = data.page || 1;
-            const total = data.total || 0;
-            const totalPages = data.total_pages || 0;
-            const perPage = data.per_page || PER_PAGE;
-            const capped = !!data.capped;
-
-            resultsContainer.style.display = 'flex';
-
-            const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
-            const fileMode = !!(data.file || data.byfile);
-            const equalMode = !!(data.equal || data.iguales);
-            const diffMode = !!(data.diff || data.brecha);
-
-            if (total === 0 || items.length === 0) {
-                resultsCount.textContent = "0 resultados encontrados";
-                const tip = newMode
-                    ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
-                    : equalMode
-                    ? "No hay pares MAIN=RAW con texto idéntico (group&nbsp;1) y esa longitud mínima. Baja <strong>Mín. chars</strong> o vacía el buscador para listar todos."
-                    : diffMode
-                    ? "No se encontraron líneas con una diferencia de caracteres mayor o igual a " + (data.diff_chars || 40) + (data.diff_compare && data.diff_compare !== "any" ? " en la dirección seleccionada" : "") + ". Prueba a reducir <strong>Dif. mín.</strong>, cambiar <strong>Comparar</strong> o vaciar el texto de búsqueda."
-                    : fileMode
-                    ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
-                    : deep
-                    ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
-                    : "Activa <strong>Brecha de caracteres</strong>, <strong>Líneas iguales</strong>, <strong>Por archivo</strong> o <strong>Líneas nuevas</strong>.";
-                resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
-                renderPagination(1, 0, 0, false);
-                return;
-            }
-
-            const minCharsLabel = equalMode && (data.min_chars || data.chars)
-                ? ` · mín≥${data.min_chars || data.chars}`
-                : '';
-            const pairLabel = equalMode && data.pair_count != null
-                ? ` · ${data.pair_count} pares main=raw`
-                : '';
-            const modeLabel = newMode
-                ? " · líneas nuevas"
-                : equalMode
-                ? ` · main=raw idénticas${minCharsLabel}${pairLabel}`
-                : diffMode
-                ? ` · brecha EN vs ES${({ "raw-shorter": " · Raw < Español", "raw-longer": " · Raw > Español", any: "" }[data.diff_compare] || "")} (dif≥${data.diff_chars || 40} chars)`
-                : fileMode
-                ? " · por archivo"
-                : (deep ? " · avanzada" : "");
-            const scopeLabel = {
-                all: " · Ambos",
-                classic: " · Classic",
-                ng: " · NGS",
-            }[data.scope || currentScope] || "";
-            const from = (page - 1) * perPage + 1;
-            const to = Math.min(page * perPage, total);
-            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
-
-            resultsList.innerHTML = '';
-            let renderedCount = 0;
-
-            items.forEach(item => {
-                // Nunca abrir RAW: solo comparar. Siempre path MAIN editable.
-                let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '').replace(/^\.?\//, '');
-                const itemGroup = item.group != null && String(item.group).trim() !== '' ? String(item.group).trim() : '1';
-                const itemSection = String(item.section || '').trim();
-                const itemId = String(item.id || '').trim();
-                const itemKey = `${openFile}|${itemSection}|${itemGroup}|${itemId}`.toLowerCase();
-
-                // Omitir si la línea o su archivo CSV completo fue excluido
-                if (isCsvExcluded(openFile) || excludedMap.has(itemKey)) {
-                    return;
-                }
-
-                renderedCount++;
-
-                const qs = new URLSearchParams({
-                    file: openFile,
-                    id: item.id || '',
-                    section: item.section || '',
-                    group: itemGroup,
-                });
-                const href = `/edit?${qs.toString()}`;
-                // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
-                const a = document.createElement('a');
-                a.className = 'result-item';
-                a.dataset.itemKey = itemKey;
-                a.href = href;
-                a.target = '_blank';
-                a.rel = 'noopener noreferrer';
-                a.draggable = false;
-                a.addEventListener('dragstart', (e) => e.preventDefault());
-
-                const displayTxt = escapeHtml(
-                    (item.text || "(Sin texto)").replace(/<br>/gi, " ")
-                );
-                const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
-                const showCmd = deep || newMode || fileMode || equalMode || diffMode || (item.match && item.match !== 'text');
-                let matchBadge = '';
-                if (newMode) {
-                    matchBadge = `<span class="result-match-badge">update · nueva</span>`;
-                } else if (equalMode || item.match === 'equal') {
-                    matchBadge = `<span class="result-match-badge">main=raw · editar MAIN</span>`;
-                } else if (diffMode || item.match === 'diff') {
-                    const dirText = item.diff_dir === 'raw_longer'
-                        ? 'EN mucho mayor que ES'
-                        : 'ES mucho mayor que EN';
-                    matchBadge = `<span class="result-match-badge" style="background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.35);">⚠️ Brecha: ${item.char_diff} chars · ${dirText} (EN: ${item.raw_len} | ES: ${item.main_len})</span>`;
-                } else if (fileMode || item.match === 'file') {
-                    matchBadge = `<span class="result-match-badge">archivo</span>`;
-                } else if (item.match && item.match !== 'text') {
-                    matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
-                }
-                const corpus = item.corpus || (String(openFile).toLowerCase().includes('ng') ? 'ng' : 'classic');
-                const corpusBadge = corpus === 'ng'
-                    ? `<span class="result-corpus ng">NGS</span>`
-                    : `<span class="result-corpus classic">Classic</span>`;
-
-                let bodyHtml = '';
-                if (diffMode && item.raw_text !== undefined) {
-                    const cleanRaw = escapeHtml(item.raw_text.replace(/<br>/gi, ' '));
-                    const cleanMain = escapeHtml((item.text || '(Vacío)').replace(/<br>/gi, ' '));
-                    bodyHtml = `
-                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
-                            <div style="background: rgba(248, 81, 73, 0.08); border: 1px solid rgba(248, 81, 73, 0.25); border-radius: 6px; padding: 8px 12px;">
-                                <div style="font-size: 11px; font-weight: 700; color: #f85149; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
-                                    Traducción al Español (Main) · ${item.main_len} chars
-                                </div>
-                                <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanMain}</div>
-                            </div>
-                            <details style="background: rgba(88, 166, 255, 0.05); border: 1px solid rgba(88, 166, 255, 0.2); border-radius: 6px; padding: 6px 12px; cursor: pointer;">
-                                <summary style="font-size: 11px; font-weight: 700; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.04em; user-select: none;">
-                                    Ver Inglés Original de referencia (Raw) · ${item.raw_len} chars
-                                </summary>
-                                <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4; margin-top: 6px; max-height: 180px; overflow-y: auto; white-space: pre-wrap;">${cleanRaw}</div>
-                            </details>
-                        </div>
-                    `;
-                } else {
-                    bodyHtml = `<div class="result-text">${displayTxt}</div>`;
-                }
-
-                a.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
-                        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1;">
-                            <div class="result-file">📁 ${escapeHtml(openFile)}</div>
-                            ${corpusBadge}
-                            ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
-                            ${matchBadge}
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
-                            <button type="button" class="btn-copy-cmd" title="Copiar referencia al portapapeles (${escapeHtml(openFile)}, ${escapeHtml(cmd || item.id)})">
-                                📋 Copiar
-                            </button>
-                            <button type="button" class="btn-exclude" title="Omitir solo esta línea de las búsquedas">
-                                🚫 Excluir línea
-                            </button>
-                            <button type="button" class="btn-exclude-file" title="Omitir TODO este archivo CSV de las búsquedas">
-                                📁 Excluir CSV
-                            </button>
-                        </div>
-                    </div>
-                    <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
-                    ${bodyHtml}
-                `;
-
-                // Evitar que hacer clic en botones, detalles o texto seleccionado navegue a la edición
-                a.addEventListener('click', (e) => {
-                    const sel = window.getSelection();
-                    if (sel && sel.toString().trim().length > 0) {
-                        e.preventDefault();
-                        return;
-                    }
-                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-exclude-file') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                    }
-                });
-
-                const btnCopy = a.querySelector('.btn-copy-cmd');
-                if (btnCopy) {
-                    btnCopy.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        const copyContent = `${openFile},${item.section || ''},${itemGroup},${item.id}`;
-                        const setCopied = () => {
-                            btnCopy.innerHTML = '✓ ¡Copiado!';
-                            btnCopy.classList.add('copied');
-                            setTimeout(() => {
-                                btnCopy.innerHTML = '📋 Copiar';
-                                btnCopy.classList.remove('copied');
-                            }, 1500);
-                        };
-                        if (navigator.clipboard && navigator.clipboard.writeText) {
-                            navigator.clipboard.writeText(copyContent).then(setCopied).catch(() => {
-                                const ta = document.createElement('textarea');
-                                ta.value = copyContent;
-                                ta.style.position = 'fixed';
-                                ta.style.opacity = '0';
-                                document.body.appendChild(ta);
-                                ta.select();
-                                document.execCommand('copy');
-                                document.body.removeChild(ta);
-                                setCopied();
-                            });
-                        } else {
-                            const ta = document.createElement('textarea');
-                            ta.value = copyContent;
-                            ta.style.position = 'fixed';
-                            ta.style.opacity = '0';
-                            document.body.appendChild(ta);
-                            ta.select();
-                            document.execCommand('copy');
-                            document.body.removeChild(ta);
-                            setCopied();
-                        }
-                    });
-                }
-
-                const btnExclude = a.querySelector('.btn-exclude');
-                if (btnExclude) {
-                    btnExclude.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        const snippet = (item.text || item.raw_text || '').replace(/<br>/gi, ' ').slice(0, 120);
-                        promptExcludeItem(e, itemKey, item.id, item.section || '', openFile, itemGroup, snippet);
-                    });
-                }
-
-                const btnExcludeFile = a.querySelector('.btn-exclude-file');
-                if (btnExcludeFile) {
-                    btnExcludeFile.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        promptExcludeFile(e, openFile, corpus);
-                    });
-                }
-
-                resultsList.appendChild(a);
-            });
-
-            if (renderedCount === 0 && items.length > 0) {
-                resultsList.innerHTML = `<div class="empty-state">Todos los resultados coinciden con tus reglas de exclusión (líneas o archivos CSV completos).<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="if (excludedFilesMap.size > 0) setExcludedTab('files'); else setExcludedTab('lines'); manageExcludedModal.style.display='flex';">Gestionar exclusiones</button></div>`;
-            }
-
-            renderPagination(page, totalPages, total, capped);
-        }
-    </script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador - Traductor Visual PSO2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --panel-bg: #161b22;
+            --panel-border: #30363d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-blue-hover: #3182ce;
+            --item-hover: #21262d;
+            --item-active: #1f6feb;
+            --font-main: 'Inter', -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #ffffff;
+            background: linear-gradient(90deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .header .anon-note {
+            margin-top: 14px;
+            font-size: 14px;
+            color: #8b949e;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .header .anon-note strong {
+            color: #58a6ff;
+        }
+
+        .search-container {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 24px;
+            padding-right: 60px;
+            font-size: 18px;
+            background-color: var(--panel-bg);
+            border: 2px solid var(--panel-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 24px;
+            pointer-events: none;
+        }
+
+        .search-options {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px 20px;
+        }
+
+        .deep-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 14px;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            transition: border-color 0.2s, color 0.2s, background 0.2s;
+        }
+
+        .deep-toggle:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }
+
+        .deep-toggle:has(input:checked) {
+            border-color: var(--accent-blue);
+            background: rgba(88, 166, 255, 0.08);
+            color: var(--accent-blue);
+        }
+
+        .deep-toggle input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent-blue);
+            cursor: pointer;
+        }
+
+        .chars-toggle input[type="number"] {
+            width: 56px;
+            height: 28px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+            background: var(--bg-primary, #0d1117);
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0 4px;
+        }
+
+        .chars-toggle select {
+            height: 28px;
+            max-width: 168px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+            background: var(--bg-primary, #0d1117);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 0 6px;
+            cursor: pointer;
+        }
+
+        .chars-toggle select:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .result-layer-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 999px;
+            margin-right: 6px;
+        }
+        .result-layer-badge.main {
+            background: rgba(63, 185, 80, 0.15);
+            color: #3fb950;
+        }
+        .result-layer-badge.raw {
+            background: rgba(210, 153, 34, 0.15);
+            color: #d29922;
+        }
+
+        .deep-hint {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .deep-hint code {
+            font-family: ui-monospace, monospace;
+            font-size: 12px;
+            background: rgba(88, 166, 255, 0.12);
+            color: var(--accent-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .scope-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 0;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .scope-group .scope-btn {
+            border: none;
+            border-right: 1px solid var(--panel-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: var(--font-main);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 14px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .scope-group .scope-btn:last-child {
+            border-right: none;
+        }
+
+        .scope-group .scope-btn:hover:not(.active) {
+            background: var(--item-hover);
+            color: var(--text-primary);
+        }
+
+        .scope-group .scope-btn.active {
+            background: rgba(88, 166, 255, 0.18);
+            color: var(--accent-blue);
+        }
+
+        .result-corpus {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 2px 7px;
+            border-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .result-corpus.classic {
+            color: #3fb950;
+            background: rgba(63, 185, 80, 0.12);
+        }
+
+        .result-corpus.ng {
+            color: #f778ba;
+            background: rgba(247, 120, 186, 0.12);
+        }
+
+        .result-fixed {
+            font-size: 13px;
+            color: #3fb950;
+            line-height: 1.4;
+            padding: 8px 10px;
+            background: rgba(63, 185, 80, 0.08);
+            border: 1px solid rgba(63, 185, 80, 0.25);
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .result-fixed-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #3fb950;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+        }
+
+        .result-corrupt-raw {
+            font-size: 12px;
+            color: var(--text-secondary);
+            opacity: 0.75;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .result-cmd {
+            font-size: 12px;
+            color: #a371f7;
+            font-family: ui-monospace, monospace;
+            background-color: rgba(163, 113, 247, 0.12);
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            align-self: flex-start;
+        }
+
+        .result-match-badge {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #d29922;
+            background: rgba(210, 153, 34, 0.12);
+            padding: 2px 6px;
+            border-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .results-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .results-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--panel-border);
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .result-item {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--panel-border);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-item:hover {
+            background-color: var(--item-hover);
+        }
+
+        .result-file,
+        .result-id,
+        .result-text,
+        .result-cmd,
+        .result-match-badge,
+        .result-corpus,
+        .result-fixed {
+            cursor: text;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        .result-item button,
+        .result-item summary {
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .result-file {
+            font-size: 12px;
+            color: var(--accent-blue);
+            font-family: monospace;
+            background-color: rgba(88, 166, 255, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            align-self: flex-start;
+        }
+
+        .result-id {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: monospace;
+        }
+
+        .result-text {
+            font-size: 15px;
+            color: var(--text-primary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .loader {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--panel-border);
+            border-top-color: var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 40px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .empty-state {
+            padding: 60px 20px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        a.result-item {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .pagination {
+            display: none;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 16px;
+            padding: 14px 12px;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pagination.visible {
+            display: flex;
+        }
+
+        .page-btn {
+            min-width: 36px;
+            height: 36px;
+            padding: 0 10px;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+        }
+
+        .page-btn:hover:not(:disabled):not(.active) {
+            background: var(--item-hover);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .page-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: #0d1117;
+            font-weight: 700;
+            cursor: default;
+        }
+
+        .page-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .page-ellipsis {
+            color: var(--text-secondary);
+            padding: 0 4px;
+            user-select: none;
+        }
+
+        .page-info {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .btn-exclude {
+            background: rgba(248, 81, 73, 0.1);
+            border: 1px solid rgba(248, 81, 73, 0.3);
+            color: #f85149;
+            border-radius: 6px;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.15s ease;
+            flex-shrink: 0;
+            user-select: none;
+        }
+        .btn-exclude:hover {
+            background: rgba(248, 81, 73, 0.25);
+            border-color: #f85149;
+            color: #fff;
+            transform: scale(1.03);
+        }
+
+        .btn-copy-cmd {
+            background: rgba(88, 166, 255, 0.1);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            color: var(--accent-blue);
+            border-radius: 6px;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.15s ease;
+            flex-shrink: 0;
+            user-select: none;
+        }
+        .btn-copy-cmd:hover {
+            background: rgba(88, 166, 255, 0.25);
+            border-color: var(--accent-blue);
+            color: #fff;
+            transform: scale(1.03);
+        }
+        .btn-copy-cmd.copied {
+            background: rgba(63, 185, 80, 0.2) !important;
+            border-color: #3fb950 !important;
+            color: #3fb950 !important;
+        }
+
+        .custom-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .modal-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(2px);
+        }
+        .modal-content {
+            position: relative;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            animation: modalFadeIn 0.2s ease-out;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.95) translateY(-10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--panel-border);
+        }
+        .modal-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .modal-close-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 20px;
+            cursor: pointer;
+            line-height: 1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: color 0.15s;
+        }
+        .modal-close-btn:hover {
+            color: #fff;
+        }
+        .modal-body {
+            padding: 20px;
+            font-size: 14px;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+        .modal-target-box {
+            background: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0 0 0;
+            font-family: ui-monospace, monospace;
+            font-size: 12px;
+            color: var(--text-secondary);
+            word-break: break-all;
+        }
+        .modal-target-box strong {
+            color: var(--accent-blue);
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 14px 20px;
+            border-top: 1px solid var(--panel-border);
+            background: rgba(13, 17, 23, 0.4);
+        }
+        .btn-modal-cancel {
+            background: transparent;
+            border: 1px solid var(--panel-border);
+            color: var(--text-secondary);
+            border-radius: 6px;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-modal-cancel:hover {
+            border-color: var(--text-primary);
+            color: var(--text-primary);
+        }
+        .btn-modal-danger {
+            background: #da3633;
+            border: 1px solid rgba(248, 81, 73, 0.4);
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-modal-danger:hover {
+            background: #f85149;
+        }
+        .excluded-item-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--panel-border);
+            font-size: 12px;
+            gap: 10px;
+        }
+        .excluded-item-row:last-child {
+            border-bottom: none;
+        }
+        .btn-restore {
+            background: rgba(88, 166, 255, 0.12);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            color: var(--accent-blue);
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        .btn-restore:hover {
+            background: var(--accent-blue);
+            color: #0d1117;
+        }
+        .btn-exclude-file {
+            background: rgba(210, 153, 34, 0.12);
+            border: 1px solid rgba(210, 153, 34, 0.35);
+            color: #d29922;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        .btn-exclude-file:hover {
+            background: rgba(210, 153, 34, 0.25);
+            border-color: #d29922;
+            color: #fff;
+        }
+        .btn-modal-warning {
+            background: #9e6a03;
+            border: 1px solid rgba(210, 153, 34, 0.5);
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-modal-warning:hover {
+            background: #bb8009;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Traductor Visual PSO2</h1>
+        <p>Busca cualquier texto en inglés, japonés o español para comenzar a traducir</p>
+        <p class="anon-note">Cualquiera puede sugerir cambios <strong>sin cuenta de GitHub</strong>. El nick es opcional; si no lo pones se envía como anónimo. Los contribuidores del proyecto revisan y hacen el merge.</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Ej: Pose elemental: oscuridad y luz..." autofocus autocomplete="off">
+        <div class="search-icon">🔍</div>
+    </div>
+
+    <div class="search-options">
+        <div class="scope-group" role="group" aria-label="Ámbito de búsqueda">
+            <button type="button" class="scope-btn active" data-scope="all" title="Classic + NGS">Ambos</button>
+            <button type="button" class="scope-btn" data-scope="classic" title="Solo Csv_Clasic">Classic</button>
+            <button type="button" class="scope-btn" data-scope="ng" title="Solo Csv_Ngs">NGS</button>
+        </div>
+        <label class="deep-toggle" title="Incluye section, group e id del CSV (comandos)">
+            <input type="checkbox" id="deepSearch">
+            <span>Búsqueda avanzada</span>
+        </label>
+        <label class="deep-toggle" title="Busca por nombre de archivo: cl0421450101 o trial_boss_weak_evolution.csv">
+            <input type="checkbox" id="fileSearch">
+            <span>Por archivo</span>
+        </label>
+        <label class="deep-toggle" title="Lista líneas y archivos nuevos del update (Classic + NGS)">
+            <input type="checkbox" id="corruptSearch">
+            <span>Líneas nuevas</span>
+        </label>
+        <label class="deep-toggle" title="Group 1: solo textos 100% idénticos (main + raw). Un carácter distinto = no coincide.">
+            <input type="checkbox" id="equalSearch">
+            <span>Líneas iguales</span>
+        </label>
+        <label class="deep-toggle chars-toggle" id="charsToggle" style="display: none;" title="Longitud mínima del texto (filtra basura corta: ??, -, manon, aina…)">
+            <span>Mín. chars</span>
+            <input type="number" id="equalChars" min="1" max="500" value="20" step="1">
+        </label>
+        <label class="deep-toggle" title="Compara la versión en inglés (Raw) con la traducción al español (Main). Encuentra líneas donde la diferencia de caracteres es desproporcionada.">
+            <input type="checkbox" id="diffSearch">
+            <span>Brecha de caracteres</span>
+        </label>
+        <label class="deep-toggle chars-toggle" id="diffDirToggle" style="display: none;" title="Dirección de la diferencia: Raw más corto, Raw más largo, o cualquiera">
+            <span>Comparar</span>
+            <select id="diffDir" disabled>
+                <option value="raw-shorter">Raw &lt; Español</option>
+                <option value="raw-longer">Raw &gt; Español</option>
+                <option value="any" selected>Cualquiera</option>
+            </select>
+        </label>
+        <label class="deep-toggle chars-toggle" id="diffCharsToggle" style="display: none;" title="Diferencia mínima de caracteres entre inglés y español (ej: 40 o 50 caracteres de brecha)">
+            <span>Dif. mín.</span>
+            <input type="number" id="diffChars" min="10" max="1000" value="40" step="5">
+        </label>
+        <span class="deep-hint" id="deepHint" style="display: none;">
+            También busca en comandos CSV: <code>section,group,id</code>
+            — ej. <code>Basic,1,Explanation</code> o textos vacíos
+        </span>
+        <span class="deep-hint" id="fileHint" style="display: none;">
+            Escribe el <strong>nombre del CSV</strong> con o sin extensión:
+            <code>cl0421450101</code>, <code>cl0421450101.csv</code>,
+            <code>trial_boss_weak_evolution</code>, <code>msn_041280</code>.
+            Lista todas las líneas de ese archivo (ámbito Classic / NGS / Ambos).
+        </span>
+        <span class="deep-hint" id="corruptHint" style="display: none;">
+            <strong>Líneas y archivos del update</strong> (listas en
+            <code>data/lineas_nuevas/</code>). No hace falta escribir:
+            se listan solas. Puedes filtrar por nombre de archivo, id o texto.
+            Usa el ámbito <em>Classic</em> / <em>NGS</em> para acotar.
+        </span>
+        <span class="deep-hint" id="equalHint" style="display: none;">
+            Compara <strong>main vs raw del mismo archivo</strong> (mismo section/id, group&nbsp;1).
+            Solo sale si el <em>texto es idéntico</em> en ambos (inglés sin traducir).
+            Un carácter distinto = no aparece. <strong>Mín. chars</strong> filtra basura corta
+            (<code>??</code>, nombres cortos…). Deja la caja vacía para listar todos los pares MAIN=RAW.
+        </span>
+        <span class="deep-hint" id="diffHint" style="display: none;">
+            Compara <strong>Inglés (Raw)</strong> vs <strong>Español (Main)</strong> del mismo archivo y clave (group&nbsp;1).
+            La diferencia mínima determina cuántos caracteres deben separar ambos textos.
+            Usa la dirección para buscar cuando Raw sea más corto, Raw sea más largo o en cualquier dirección.
+            Ordenadas de <em>mayor a menor brecha</em>.
+            <br>
+            <strong>Raw &lt; Español:</strong> busca cuando el español tiene más caracteres.
+            <strong>Raw &gt; Español:</strong> busca cuando el Raw tiene más caracteres.
+            <strong>Cualquiera:</strong> busca diferencias en ambas direcciones.
+            Deja la caja vacía para listar todas o escribe para filtrar.
+        </span>
+        <button type="button" id="btnManageExcluded" class="deep-toggle" style="display: none; border-color: rgba(248, 81, 73, 0.4); color: #f85149;" title="Ver y gestionar las líneas excluidas de la búsqueda">
+            <span>🚫 <span id="btnExcludedText">0 excluidas</span></span>
+        </button>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <div class="results-container" id="resultsContainer" style="display: none;">
+        <div class="results-header">
+            <span id="resultsCount">0 resultados encontrados</span>
+            <span>Se abre en pestaña nueva</span>
+        </div>
+        <div id="resultsList">
+            <!-- Resultados se insertan aquí -->
+        </div>
+    </div>
+
+    <div class="pagination" id="pagination" aria-label="Paginación de resultados">
+        <!-- botones de página -->
+    </div>
+
+    <!-- Modal para Confirmar Exclusión de una línea individual -->
+    <div id="excludeModal" class="custom-modal" style="display: none;">
+        <div class="modal-backdrop" onclick="closeExcludeModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🚫 Excluir línea de la búsqueda</h3>
+                <button class="modal-close-btn" onclick="closeExcludeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que quieres quitar de la lista de búsqueda este resultado?</p>
+                <div id="modalExcludeTarget" class="modal-target-box"></div>
+                <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
+                    Esta línea se ocultará permanentemente en las búsquedas (incluso tras refrescar). Podrás restaurarla en cualquier momento haciendo clic en el botón superior de exclusiones.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal-cancel" onclick="closeExcludeModal()">Cancelar</button>
+                <button type="button" id="btnConfirmExclude" class="btn-modal-danger">Sí, quitar línea</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Confirmar Exclusión de un ARCHIVO CSV COMPLETO -->
+    <div id="excludeFileModal" class="custom-modal" style="display: none;">
+        <div class="modal-backdrop" onclick="closeExcludeFileModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📁 Excluir archivo CSV completo</h3>
+                <button class="modal-close-btn" onclick="closeExcludeFileModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas excluir <strong>todas las líneas</strong> del siguiente archivo CSV?</p>
+                <div id="modalExcludeFileTarget" class="modal-target-box"></div>
+                <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">
+                    Todas las líneas de este archivo (incluyendo <em>Brecha de caracteres</em>, <em>Líneas iguales</em>, etc.) se omitirán permanentemente de las búsquedas para no estorbar con otros archivos. Podrás restaurarlo en cualquier momento.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal-cancel" onclick="closeExcludeFileModal()">Cancelar</button>
+                <button type="button" id="btnConfirmExcludeFile" class="btn-modal-warning">📁 Sí, excluir todo el CSV</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Gestionar / Restaurar exclusiones (Archivos CSV y Líneas) -->
+    <div id="manageExcludedModal" class="custom-modal" style="display: none;">
+        <div class="modal-backdrop" onclick="closeManageExcludedModal()"></div>
+        <div class="modal-content" style="max-width: 650px;">
+            <div class="modal-header" style="padding-bottom: 12px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <h3>🚫 Gestión de Exclusiones</h3>
+                    <button class="modal-close-btn" onclick="closeManageExcludedModal()">&times;</button>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px; padding: 0 20px 12px 20px; border-bottom: 1px solid var(--panel-border);">
+                <button type="button" id="tabExcludedFiles" class="scope-btn active" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">📁 Archivos CSV (<span id="excludedFilesCountSpan">0</span>)</button>
+                <button type="button" id="tabExcludedLines" class="scope-btn" style="padding: 6px 14px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 12px; cursor: pointer;">🚫 Líneas (<span id="excludedCountSpan">0</span>)</button>
+            </div>
+            <!-- Pestaña Archivos CSV -->
+            <div id="sectionExcludedFiles" class="modal-body" style="max-height: 400px; overflow-y: auto; padding: 16px 20px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 14px;">
+                    <input type="text" id="inputManualExcludeFile" placeholder="Escribe o pega nombre de CSV (ej. cl0421450101.csv)" style="flex: 1; height: 36px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--panel-border); background: var(--bg-primary, #0d1117); color: var(--text-primary); font-size: 13px;">
+                    <button type="button" id="btnManualExcludeFile" class="btn-exclude-file" style="padding: 0 14px; font-size: 12px; height: 36px;">➕ Excluir CSV</button>
+                </div>
+                <div id="excludedFilesListContainer"></div>
+            </div>
+            <!-- Pestaña Líneas Individuales -->
+            <div id="sectionExcludedLines" class="modal-body" style="display: none; max-height: 400px; overflow-y: auto; padding: 16px 20px;">
+                <div id="excludedListContainer"></div>
+            </div>
+            <div class="modal-footer" style="justify-content: space-between;">
+                <button type="button" id="btnRestoreCurrentTab" class="btn-modal-danger" style="background: transparent; border-color: rgba(248,81,73,0.4); color: #f85149;">Restaurar todos los archivos</button>
+                <button type="button" class="btn-modal-cancel" onclick="closeManageExcludedModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const deepSearch = document.getElementById('deepSearch');
+        const deepHint = document.getElementById('deepHint');
+        const fileSearch = document.getElementById('fileSearch');
+        const fileHint = document.getElementById('fileHint');
+        const corruptSearch = document.getElementById('corruptSearch');
+        const corruptHint = document.getElementById('corruptHint');
+        const equalSearch = document.getElementById('equalSearch');
+        const equalHint = document.getElementById('equalHint');
+        const equalChars = document.getElementById('equalChars');
+        const charsToggle = document.getElementById('charsToggle');
+        const diffSearch = document.getElementById('diffSearch');
+        const diffHint = document.getElementById('diffHint');
+        const diffChars = document.getElementById('diffChars');
+        const diffCharsToggle = document.getElementById('diffCharsToggle');
+        const diffDir = document.getElementById('diffDir');
+        const diffDirToggle = document.getElementById('diffDirToggle');
+        const btnManageExcluded = document.getElementById('btnManageExcluded');
+        const btnExcludedText = document.getElementById('btnExcludedText');
+        const excludeModal = document.getElementById('excludeModal');
+        const excludeFileModal = document.getElementById('excludeFileModal');
+        const manageExcludedModal = document.getElementById('manageExcludedModal');
+        const modalExcludeTarget = document.getElementById('modalExcludeTarget');
+        const modalExcludeFileTarget = document.getElementById('modalExcludeFileTarget');
+        const btnConfirmExclude = document.getElementById('btnConfirmExclude');
+        const btnConfirmExcludeFile = document.getElementById('btnConfirmExcludeFile');
+        const tabExcludedFiles = document.getElementById('tabExcludedFiles');
+        const tabExcludedLines = document.getElementById('tabExcludedLines');
+        const sectionExcludedFiles = document.getElementById('sectionExcludedFiles');
+        const sectionExcludedLines = document.getElementById('sectionExcludedLines');
+        const inputManualExcludeFile = document.getElementById('inputManualExcludeFile');
+        const btnManualExcludeFile = document.getElementById('btnManualExcludeFile');
+        const excludedCountSpan = document.getElementById('excludedCountSpan');
+        const excludedFilesCountSpan = document.getElementById('excludedFilesCountSpan');
+        const excludedListContainer = document.getElementById('excludedListContainer');
+        const excludedFilesListContainer = document.getElementById('excludedFilesListContainer');
+        const btnRestoreCurrentTab = document.getElementById('btnRestoreCurrentTab');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultsList = document.getElementById('resultsList');
+        const resultsCount = document.getElementById('resultsCount');
+        const paginationEl = document.getElementById('pagination');
+        const loader = document.getElementById('loader');
+        const scopeButtons = document.querySelectorAll('.scope-btn');
+
+        // Líneas excluidas guardadas en localStorage: Map de key -> { key, file, section, group, id, preview }
+        let excludedMap = new Map();
+        try {
+            const saved = JSON.parse(localStorage.getItem('pso2_search_excluded_items') || '[]');
+            if (Array.isArray(saved)) {
+                saved.forEach(item => {
+                    if (item && item.key) excludedMap.set(item.key.toLowerCase(), item);
+                });
+            }
+        } catch (e) {
+            console.warn("Error leyendo excluidas de localStorage", e);
+        }
+
+        // Archivos CSV completos excluidos guardados en localStorage: Map de key -> { key, name, path, corpus }
+        let excludedFilesMap = new Map();
+        try {
+            const savedFiles = JSON.parse(localStorage.getItem('pso2_search_excluded_files') || '[]');
+            if (Array.isArray(savedFiles)) {
+                savedFiles.forEach(item => {
+                    if (item && item.key) excludedFilesMap.set(item.key.toLowerCase(), item);
+                });
+            }
+        } catch (e) {
+            console.warn("Error leyendo archivos excluidos de localStorage", e);
+        }
+
+        function normalizeFileKey(f) {
+            if (!f) return '';
+            let s = String(f).replace(/\\/g, '/').replace(/_Raw/gi, '').trim();
+            if (s.startsWith('./')) s = s.slice(2);
+            return s.replace(/^\/+/, '').toLowerCase();
+        }
+
+        function isCsvExcluded(filePath) {
+            if (excludedFilesMap.size === 0 || !filePath) return false;
+            const norm = normalizeFileKey(filePath);
+            const fname = norm.split('/').pop();
+            const fstem = fname.replace(/\.csv$/i, '');
+            return excludedFilesMap.has(norm) || excludedFilesMap.has(fname) || excludedFilesMap.has(fstem);
+        }
+
+        function saveExcludedToStorage() {
+            try {
+                const arr = Array.from(excludedMap.values());
+                localStorage.setItem('pso2_search_excluded_items', JSON.stringify(arr));
+            } catch (e) {
+                console.warn("Error guardando excluidas en localStorage", e);
+            }
+            updateExcludedButton();
+        }
+
+        function saveExcludedFilesToStorage() {
+            try {
+                const arr = Array.from(excludedFilesMap.values());
+                localStorage.setItem('pso2_search_excluded_files', JSON.stringify(arr));
+            } catch (e) {
+                console.warn("Error guardando archivos excluidos en localStorage", e);
+            }
+            updateExcludedButton();
+        }
+
+        function updateExcludedButton() {
+            if (!btnManageExcluded) return;
+            const lineCount = excludedMap.size;
+            const uniqueFiles = new Set();
+            excludedFilesMap.forEach(item => {
+                if (item && item.path) uniqueFiles.add(normalizeFileKey(item.path));
+                else if (item && item.key) uniqueFiles.add(item.key.toLowerCase());
+            });
+            const fileCount = uniqueFiles.size;
+            const totalCount = lineCount + fileCount;
+            if (totalCount > 0) {
+                btnManageExcluded.style.display = 'inline-flex';
+                let text = '';
+                if (fileCount > 0 && lineCount > 0) {
+                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} · ${lineCount} línea${lineCount > 1 ? 's' : ''}`;
+                } else if (fileCount > 0) {
+                    text = `${fileCount} CSV${fileCount > 1 ? 's' : ''} excluido${fileCount > 1 ? 's' : ''}`;
+                } else {
+                    text = `${lineCount} línea${lineCount > 1 ? 's' : ''} excluida${lineCount > 1 ? 's' : ''}`;
+                }
+                btnExcludedText.textContent = text;
+            } else {
+                btnManageExcluded.style.display = 'none';
+            }
+        }
+        updateExcludedButton();
+
+        let pendingExcludeItem = null;
+
+        function promptExcludeItem(e, key, id, section, file, group, preview) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            pendingExcludeItem = {
+                key: key.toLowerCase(),
+                id,
+                section,
+                file,
+                group: group || '1',
+                preview: preview || ''
+            };
+            modalExcludeTarget.innerHTML = `
+                <div><strong>Archivo:</strong> ${escapeHtml(file)}</div>
+                <div style="margin-top: 4px;"><strong>Comando:</strong> ${escapeHtml([section, group || '1', id].filter(Boolean).join(','))}</div>
+                ${preview ? `<div style="margin-top: 4px; color: #8b949e; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;"><strong>Texto:</strong> ${escapeHtml(preview)}</div>` : ''}
+            `;
+            excludeModal.style.display = 'flex';
+        }
+
+        function closeExcludeModal() {
+            excludeModal.style.display = 'none';
+            pendingExcludeItem = null;
+        }
+
+        btnConfirmExclude.addEventListener('click', () => {
+            if (!pendingExcludeItem) return;
+            const item = pendingExcludeItem;
+            excludedMap.set(item.key, item);
+            saveExcludedToStorage();
+            closeExcludeModal();
+
+            // Refrescar de inmediato para que la línea excluida desaparezca por completo de la búsqueda
+            // y las líneas siguientes avancen automáticamente llenando la lista sin huecos ni páginas vacías.
+            performSearch(lastQuery, currentPage);
+        });
+
+        let pendingExcludeFile = null;
+
+        function promptExcludeFile(e, openFile, corpus) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            const cleanKey = normalizeFileKey(openFile);
+            const fileName = cleanKey.split('/').pop();
+            pendingExcludeFile = {
+                key: cleanKey,
+                name: fileName,
+                path: openFile,
+                corpus: corpus || (openFile.toLowerCase().includes('ng') ? 'ng' : 'classic')
+            };
+            modalExcludeFileTarget.innerHTML = `
+                <div><strong>Archivo:</strong> ${escapeHtml(openFile)}</div>
+                <div style="margin-top: 4px;"><strong>Ámbito:</strong> ${escapeHtml(pendingExcludeFile.corpus.toUpperCase())}</div>
+                <div style="margin-top: 6px; color: #d29922;"><strong>Alcance:</strong> Se omitirán todas las líneas de este CSV en las búsquedas.</div>
+            `;
+            excludeFileModal.style.display = 'flex';
+        }
+
+        function closeExcludeFileModal() {
+            excludeFileModal.style.display = 'none';
+            pendingExcludeFile = null;
+        }
+
+        btnConfirmExcludeFile.addEventListener('click', () => {
+            if (!pendingExcludeFile) return;
+            const fileItem = pendingExcludeFile;
+            excludedFilesMap.set(fileItem.key, fileItem);
+            if (fileItem.name && fileItem.name !== fileItem.key) {
+                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
+            }
+            saveExcludedFilesToStorage();
+            closeExcludeFileModal();
+
+            performSearch(lastQuery, currentPage);
+        });
+
+        // Pestañas de Gestión de Exclusiones
+        let currentExcludedTab = 'files'; // 'files' | 'lines'
+
+        function setExcludedTab(tab) {
+            currentExcludedTab = tab;
+            if (tab === 'files') {
+                tabExcludedFiles.classList.add('active');
+                tabExcludedLines.classList.remove('active');
+                sectionExcludedFiles.style.display = 'block';
+                sectionExcludedLines.style.display = 'none';
+                btnRestoreCurrentTab.textContent = 'Restaurar todos los archivos';
+                renderExcludedFilesList();
+            } else {
+                tabExcludedFiles.classList.remove('active');
+                tabExcludedLines.classList.add('active');
+                sectionExcludedFiles.style.display = 'none';
+                sectionExcludedLines.style.display = 'block';
+                btnRestoreCurrentTab.textContent = 'Restaurar todas las líneas';
+                renderExcludedList();
+            }
+        }
+
+        tabExcludedFiles.addEventListener('click', () => setExcludedTab('files'));
+        tabExcludedLines.addEventListener('click', () => setExcludedTab('lines'));
+
+        if (btnManageExcluded) {
+            btnManageExcluded.addEventListener('click', () => {
+                if (excludedFilesMap.size === 0 && excludedMap.size > 0) {
+                    setExcludedTab('lines');
+                } else {
+                    setExcludedTab('files');
+                }
+                manageExcludedModal.style.display = 'flex';
+            });
+        }
+
+        function closeManageExcludedModal() {
+            manageExcludedModal.style.display = 'none';
+        }
+
+        btnManualExcludeFile.addEventListener('click', () => {
+            const raw = inputManualExcludeFile.value.trim();
+            if (!raw) return;
+            const cleanKey = normalizeFileKey(raw);
+            const fileName = cleanKey.split('/').pop();
+            const fileItem = {
+                key: cleanKey,
+                name: fileName,
+                path: raw,
+                corpus: raw.toLowerCase().includes('ng') ? 'ng' : 'classic'
+            };
+            excludedFilesMap.set(fileItem.key, fileItem);
+            if (fileItem.name && fileItem.name !== fileItem.key) {
+                excludedFilesMap.set(fileItem.name.toLowerCase(), fileItem);
+            }
+            saveExcludedFilesToStorage();
+            inputManualExcludeFile.value = '';
+            renderExcludedFilesList();
+            scheduleSearch(false);
+        });
+        inputManualExcludeFile.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                btnManualExcludeFile.click();
+            }
+        });
+
+        function renderExcludedFilesList() {
+            const uniqueFiles = new Map();
+            excludedFilesMap.forEach(item => {
+                if (item && item.path) uniqueFiles.set(item.path.toLowerCase(), item);
+                else if (item && item.key) uniqueFiles.set(item.key.toLowerCase(), item);
+            });
+            excludedFilesCountSpan.textContent = uniqueFiles.size;
+
+            if (uniqueFiles.size === 0) {
+                excludedFilesListContainer.innerHTML = `<div class="empty-state" style="padding: 24px;">No hay archivos CSV excluidos actualmente.</div>`;
+                return;
+            }
+            excludedFilesListContainer.innerHTML = '';
+            uniqueFiles.forEach((item, uniqueKey) => {
+                const row = document.createElement('div');
+                row.className = 'excluded-item-row';
+                const corpusBadge = item.corpus === 'ng' ? '<span class="result-corpus ng" style="font-size: 10px;">NGS</span>' : '<span class="result-corpus classic" style="font-size: 10px;">Classic</span>';
+                row.innerHTML = `
+                    <div style="min-width: 0; flex: 1;">
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <span style="color: #d29922; font-family: monospace; font-size: 12px; font-weight: 600;">📁 ${escapeHtml(item.path || item.key)}</span>
+                            ${corpusBadge}
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 11px; margin-top: 2px;">Todas las líneas de este CSV están omitidas</div>
+                    </div>
+                    <button type="button" class="btn-restore" title="Volver a mostrar este CSV en las búsquedas">Restaurar CSV</button>
+                `;
+                row.querySelector('.btn-restore').addEventListener('click', () => {
+                    excludedFilesMap.delete(item.key);
+                    if (item.name) excludedFilesMap.delete(item.name.toLowerCase());
+                    if (item.path) excludedFilesMap.delete(normalizeFileKey(item.path));
+                    uniqueFiles.delete(uniqueKey);
+                    saveExcludedFilesToStorage();
+                    renderExcludedFilesList();
+                    scheduleSearch(false);
+                });
+                excludedFilesListContainer.appendChild(row);
+            });
+        }
+
+        function renderExcludedList() {
+            excludedCountSpan.textContent = excludedMap.size;
+            if (excludedMap.size === 0) {
+                excludedListContainer.innerHTML = `<div class="empty-state" style="padding: 24px;">No hay líneas excluidas actualmente.</div>`;
+                return;
+            }
+            excludedListContainer.innerHTML = '';
+            excludedMap.forEach((item, key) => {
+                const row = document.createElement('div');
+                row.className = 'excluded-item-row';
+                row.innerHTML = `
+                    <div style="min-width: 0; flex: 1;">
+                        <div style="color: var(--accent-blue); font-family: monospace; font-size: 11px; margin-bottom: 2px;">📁 ${escapeHtml(item.file)}</div>
+                        <div style="color: #fff; font-weight: 600; font-size: 13px; word-break: break-all;">${escapeHtml(item.section ? item.section + ' · ' : '')}${escapeHtml(item.id)}</div>
+                        ${item.preview ? `<div style="color: var(--text-secondary); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">${escapeHtml(item.preview)}</div>` : ''}
+                    </div>
+                    <button type="button" class="btn-restore" title="Volver a mostrar esta línea en las búsquedas">Restaurar</button>
+                `;
+                row.querySelector('.btn-restore').addEventListener('click', () => {
+                    excludedMap.delete(key);
+                    saveExcludedToStorage();
+                    renderExcludedList();
+                    // Refrescar resultados
+                    scheduleSearch(false);
+                });
+                excludedListContainer.appendChild(row);
+            });
+        }
+
+        function restoreAllExcluded() {
+            if (excludedMap.size === 0) return;
+            if (confirm("¿Deseas restaurar TODAS las líneas excluidas para que vuelvan a aparecer en las búsquedas?")) {
+                excludedMap.clear();
+                saveExcludedToStorage();
+                renderExcludedList();
+                scheduleSearch(false);
+            }
+        }
+
+        btnRestoreCurrentTab.addEventListener('click', () => {
+            if (currentExcludedTab === 'files') {
+                if (excludedFilesMap.size === 0) return;
+                if (confirm("¿Deseas restaurar TODOS los archivos CSV excluidos para que vuelvan a aparecer en las búsquedas?")) {
+                    excludedFilesMap.clear();
+                    saveExcludedFilesToStorage();
+                    renderExcludedFilesList();
+                    scheduleSearch(false);
+                }
+            } else {
+                restoreAllExcluded();
+            }
+        });
+
+        const PER_PAGE = 50;
+        let debounceTimer;
+        let currentPage = 1;
+        let lastQuery = '';
+        let lastDeep = false;
+        let currentScope = 'all'; // all | classic | ng
+
+        function exclusiveMode(active) {
+            // Solo un modo especial a la vez
+            if (active !== 'deep') deepSearch.checked = false;
+            if (active !== 'file') fileSearch.checked = false;
+            if (active !== 'new') corruptSearch.checked = false;
+            if (active !== 'equal') equalSearch.checked = false;
+            if (active !== 'diff') diffSearch.checked = false;
+            if (active === 'deep') deepSearch.checked = true;
+            if (active === 'file') fileSearch.checked = true;
+            if (active === 'new') corruptSearch.checked = true;
+            if (active === 'equal') equalSearch.checked = true;
+            if (active === 'diff') diffSearch.checked = true;
+        }
+
+        function updatePlaceholders() {
+            deepHint.style.display = 'none';
+            fileHint.style.display = 'none';
+            corruptHint.style.display = 'none';
+            equalHint.style.display = 'none';
+            diffHint.style.display = 'none';
+            charsToggle.style.display = 'none';
+            diffCharsToggle.style.display = 'none';
+            diffDirToggle.style.display = 'none';
+            diffDir.disabled = true;
+            searchInput.disabled = false;
+
+            if (corruptSearch.checked) {
+                searchInput.placeholder = 'No hace falta escribir — lista líneas/archivos nuevos del update';
+                corruptHint.style.display = 'block';
+            } else if (equalSearch.checked) {
+                searchInput.placeholder = 'Opcional: frase completa idéntica · usa Mín. chars para filtrar basura corta';
+                equalHint.style.display = 'block';
+                charsToggle.style.display = 'inline-flex';
+            } else if (diffSearch.checked) {
+                searchInput.placeholder = 'Opcional: filtra por texto, ID o archivo · ordenado por mayor brecha';
+                diffHint.style.display = 'block';
+                diffDirToggle.style.display = 'inline-flex';
+                diffDir.disabled = false;
+                diffCharsToggle.style.display = 'inline-flex';
+            } else if (fileSearch.checked) {
+                searchInput.placeholder = 'Ej: cl0421450101  o  trial_boss_weak_evolution.csv';
+                fileHint.style.display = 'block';
+            } else if (deepSearch.checked) {
+                searchInput.placeholder = 'Ej: Basic,1,Explanation  o  texto vacío / ID...';
+                deepHint.style.display = 'block';
+            } else {
+                searchInput.placeholder = 'Ej: Pose elemental: oscuridad y luz...';
+            }
+        }
+
+        function scheduleSearch(resetPage = true) {
+            clearTimeout(debounceTimer);
+            const query = searchInput.value.trim();
+            const newMode = corruptSearch.checked;
+            const fileMode = fileSearch.checked;
+            const equalMode = equalSearch.checked;
+            const diffMode = diffSearch.checked;
+            const minLen = fileMode ? 2 : 3;
+
+            // Líneas nuevas / iguales / brecha: query opcional
+            if (!newMode && !equalMode && !diffMode && query.length < minLen) {
+                resultsContainer.style.display = 'none';
+                paginationEl.classList.remove('visible');
+                paginationEl.innerHTML = '';
+                loader.style.display = 'none';
+                return;
+            }
+
+            if (resetPage) currentPage = 1;
+
+            debounceTimer = setTimeout(() => {
+                performSearch(query, currentPage);
+            }, (newMode || equalMode || diffMode) && !query ? 150 : 500);
+        }
+
+        scopeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                scopeButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentScope = btn.getAttribute('data-scope') || btn.dataset.scope || 'all';
+                clearTimeout(debounceTimer);
+                currentPage = 1;
+                performSearch(searchInput.value.trim(), 1);
+            });
+        });
+
+        deepSearch.addEventListener('change', () => {
+            if (deepSearch.checked) exclusiveMode('deep');
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        fileSearch.addEventListener('change', () => {
+            if (fileSearch.checked) exclusiveMode('file');
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        corruptSearch.addEventListener('change', () => {
+            if (corruptSearch.checked) {
+                exclusiveMode('new');
+                // Al activar: limpiar la caja y listar líneas/archivos nuevos del update
+                searchInput.value = '';
+            }
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        equalSearch.addEventListener('change', () => {
+            if (equalSearch.checked) exclusiveMode('equal');
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        equalChars.addEventListener('change', () => {
+            let n = parseInt(equalChars.value, 10);
+            if (Number.isNaN(n)) n = 20;
+            n = Math.max(1, Math.min(500, n));
+            equalChars.value = String(n);
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+        equalChars.addEventListener('input', () => {
+            if (equalSearch.checked) scheduleSearch(true);
+        });
+
+        diffSearch.addEventListener('change', () => {
+            if (diffSearch.checked) {
+                exclusiveMode('diff');
+                searchInput.value = '';
+            }
+            updatePlaceholders();
+            scheduleSearch(true);
+        });
+
+        diffChars.addEventListener('change', () => {
+            let n = parseInt(diffChars.value, 10);
+            if (Number.isNaN(n)) n = 40;
+            n = Math.max(5, Math.min(1000, n));
+            diffChars.value = String(n);
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+        diffChars.addEventListener('input', () => {
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+
+        diffDir.addEventListener('change', () => {
+            if (diffSearch.checked) scheduleSearch(true);
+        });
+
+        searchInput.addEventListener('input', () => scheduleSearch(true));
+
+        async function performSearch(query, page = 1) {
+            resultsContainer.style.display = 'none';
+            paginationEl.classList.remove('visible');
+            loader.style.display = 'block';
+            resultsList.innerHTML = '';
+
+            const deep = deepSearch.checked ? '1' : '0';
+            const byfile = fileSearch.checked ? '1' : '0';
+            const nuevas = corruptSearch.checked ? '1' : '0';
+            const iguales = equalSearch.checked ? '1' : '0';
+            const diff = diffSearch.checked ? '1' : '0';
+            let chars = parseInt(equalChars.value, 10);
+            if (Number.isNaN(chars)) chars = 20;
+            chars = Math.max(1, Math.min(500, chars));
+            let diffCharsVal = parseInt(diffChars.value, 10);
+            if (Number.isNaN(diffCharsVal)) diffCharsVal = 40;
+            diffCharsVal = Math.max(5, Math.min(1000, diffCharsVal));
+            const diffCompare = (diffDir.value || 'any');
+            lastQuery = query;
+            lastDeep = deepSearch.checked;
+            currentPage = page;
+
+            try {
+                const searchPayload = {
+                    q: query,
+                    deep,
+                    file: byfile,
+                    byfile,
+                    new: nuevas,
+                    nuevas,
+                    equal: iguales,
+                    iguales,
+                    diff,
+                    brecha: diff,
+                    chars: String(chars),
+                    min_chars: String(chars),
+                    diff_chars: String(diffCharsVal),
+                    min_diff: String(diffCharsVal),
+                    diff_compare: diffCompare,
+                    compare: diffCompare,
+                    scope: currentScope,
+                    page: String(page),
+                    per_page: String(PER_PAGE),
+                    excluded: Array.from(excludedMap.keys()),
+                    excluded_files: Array.from(excludedFilesMap.keys()),
+                };
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(searchPayload),
+                });
+                const data = await response.json().catch(() => ({}));
+
+                // Índice aún cargando en el servidor (deploy / reinicio)
+                if (response.status === 503 || data.loading) {
+                    loader.style.display = 'none';
+                    resultsContainer.style.display = 'block';
+                    paginationEl.classList.remove('visible');
+                    resultsList.innerHTML = `<div class="empty-state">⏳ Cargando índice de traducciones… reintentando en 3 s.</div>`;
+                    setTimeout(() => performSearch(query, page), 3000);
+                    return;
+                }
+
+                if (!response.ok) throw new Error(data.error || "Error en la búsqueda");
+
+                loader.style.display = 'none';
+                renderResults(data);
+            } catch (error) {
+                loader.style.display = 'none';
+                resultsContainer.style.display = 'block';
+                paginationEl.classList.remove('visible');
+                resultsList.innerHTML = `<div class="empty-state">❌ Error al realizar la búsqueda. Verifica la conexión con el servidor.</div>`;
+            }
+        }
+
+        function escapeHtml(s) {
+            return String(s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        /** Números de página visibles con elipsis (estilo webs típicas). */
+        function pageWindow(current, total) {
+            if (total <= 9) {
+                return Array.from({ length: total }, (_, i) => i + 1);
+            }
+            const pages = new Set([1, total, current]);
+            for (let i = current - 2; i <= current + 2; i++) {
+                if (i >= 1 && i <= total) pages.add(i);
+            }
+            // siempre un par cerca del inicio/fin
+            pages.add(2);
+            pages.add(total - 1);
+
+            const sorted = [...pages].sort((a, b) => a - b);
+            const out = [];
+            let prev = 0;
+            for (const p of sorted) {
+                if (prev && p - prev > 1) out.push('…');
+                out.push(p);
+                prev = p;
+            }
+            return out;
+        }
+
+        function renderPagination(page, totalPages, total, capped) {
+            if (totalPages <= 1) {
+                paginationEl.classList.remove('visible');
+                paginationEl.innerHTML = '';
+                return;
+            }
+
+            paginationEl.classList.add('visible');
+            paginationEl.innerHTML = '';
+
+            const addBtn = (label, targetPage, { active = false, disabled = false, aria = '' } = {}) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'page-btn' + (active ? ' active' : '');
+                btn.textContent = label;
+                btn.disabled = disabled || active;
+                if (aria) btn.setAttribute('aria-label', aria);
+                if (!disabled && !active) {
+                    btn.addEventListener('click', () => {
+                        performSearch(lastQuery, targetPage);
+                        resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    });
+                }
+                paginationEl.appendChild(btn);
+            };
+
+            addBtn('‹', page - 1, { disabled: page <= 1, aria: 'Página anterior' });
+
+            for (const entry of pageWindow(page, totalPages)) {
+                if (entry === '…') {
+                    const span = document.createElement('span');
+                    span.className = 'page-ellipsis';
+                    span.textContent = '…';
+                    paginationEl.appendChild(span);
+                } else {
+                    addBtn(String(entry), entry, { active: entry === page, aria: `Página ${entry}` });
+                }
+            }
+
+            addBtn('›', page + 1, { disabled: page >= totalPages, aria: 'Página siguiente' });
+
+            const info = document.createElement('div');
+            info.className = 'page-info';
+            const capNote = capped ? ' (límite de búsqueda alcanzado; afina el texto si falta algo)' : '';
+            info.textContent = `Página ${page} de ${totalPages} · ${total} resultados${capNote}`;
+            paginationEl.appendChild(info);
+        }
+
+        function renderResults(data) {
+            const items = data.items || [];
+            const deep = !!data.deep;
+            const page = data.page || 1;
+            const total = data.total || 0;
+            const totalPages = data.total_pages || 0;
+            const perPage = data.per_page || PER_PAGE;
+            const capped = !!data.capped;
+
+            resultsContainer.style.display = 'flex';
+
+            const newMode = !!(data.new || data.nuevas || data.rare || data.corrupt);
+            const fileMode = !!(data.file || data.byfile);
+            const equalMode = !!(data.equal || data.iguales);
+            const diffMode = !!(data.diff || data.brecha);
+
+            if (total === 0 || items.length === 0) {
+                resultsCount.textContent = "0 resultados encontrados";
+                const tip = newMode
+                    ? "No hay líneas nuevas del update en este ámbito (o la lista <code>data/lineas_nuevas/</code> no está cargada)."
+                    : equalMode
+                    ? "No hay pares MAIN=RAW con texto idéntico (group&nbsp;1) y esa longitud mínima. Baja <strong>Mín. chars</strong> o vacía el buscador para listar todos."
+                    : diffMode
+                    ? "No se encontraron líneas con una diferencia de caracteres mayor o igual a " + (data.diff_chars || 40) + (data.diff_compare && data.diff_compare !== "any" ? " en la dirección seleccionada" : "") + ". Prueba a reducir <strong>Dif. mín.</strong>, cambiar <strong>Comparar</strong> o vaciar el texto de búsqueda."
+                    : fileMode
+                    ? "No hay archivo con ese nombre. Prueba sin <code>.csv</code> o un fragmento: <code>msn_041</code>, <code>trial_boss</code>."
+                    : deep
+                    ? "Prueba el comando completo: <code>Basic,1,Explanation</code>"
+                    : "Activa <strong>Brecha de caracteres</strong>, <strong>Líneas iguales</strong>, <strong>Por archivo</strong> o <strong>Líneas nuevas</strong>.";
+                resultsList.innerHTML = `<div class="empty-state">No se encontraron coincidencias. ${tip}</div>`;
+                renderPagination(1, 0, 0, false);
+                return;
+            }
+
+            const minCharsLabel = equalMode && (data.min_chars || data.chars)
+                ? ` · mín≥${data.min_chars || data.chars}`
+                : '';
+            const pairLabel = equalMode && data.pair_count != null
+                ? ` · ${data.pair_count} pares main=raw`
+                : '';
+            const modeLabel = newMode
+                ? " · líneas nuevas"
+                : equalMode
+                ? ` · main=raw idénticas${minCharsLabel}${pairLabel}`
+                : diffMode
+                ? ` · brecha EN vs ES${({ "raw-shorter": " · Raw < Español", "raw-longer": " · Raw > Español", any: "" }[data.diff_compare] || "")} (dif≥${data.diff_chars || 40} chars)`
+                : fileMode
+                ? " · por archivo"
+                : (deep ? " · avanzada" : "");
+            const scopeLabel = {
+                all: " · Ambos",
+                classic: " · Classic",
+                ng: " · NGS",
+            }[data.scope || currentScope] || "";
+            const from = (page - 1) * perPage + 1;
+            const to = Math.min(page * perPage, total);
+            resultsCount.textContent = `${total} resultados${scopeLabel}${modeLabel} · mostrando ${from}–${to}`;
+
+            resultsList.innerHTML = '';
+            let renderedCount = 0;
+
+            items.forEach(item => {
+                // Nunca abrir RAW: solo comparar. Siempre path MAIN editable.
+                let openFile = String(item.file || '').replace(/\\/g, '/').replace(/_Raw/g, '').replace(/^\.?\//, '');
+                const itemGroup = item.group != null && String(item.group).trim() !== '' ? String(item.group).trim() : '1';
+                const itemSection = String(item.section || '').trim();
+                const itemId = String(item.id || '').trim();
+                const itemKey = `${openFile}|${itemSection}|${itemGroup}|${itemId}`.toLowerCase();
+
+                // Omitir si la línea o su archivo CSV completo fue excluido
+                if (isCsvExcluded(openFile) || excludedMap.has(itemKey)) {
+                    return;
+                }
+
+                renderedCount++;
+
+                const qs = new URLSearchParams({
+                    file: openFile,
+                    id: item.id || '',
+                    section: item.section || '',
+                    group: itemGroup,
+                });
+                const href = `/edit?${qs.toString()}`;
+                // <a target=_blank> permite clic normal, rueda y Ctrl+clic en pestaña nueva
+                const a = document.createElement('a');
+                a.className = 'result-item';
+                a.dataset.itemKey = itemKey;
+                a.href = href;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.draggable = false;
+                a.addEventListener('dragstart', (e) => e.preventDefault());
+
+                const displayTxt = escapeHtml(
+                    (item.text || "(Sin texto)").replace(/<br>/gi, " ")
+                );
+                const cmd = item.cmd || [item.section, item.group, item.id].filter(Boolean).join(',');
+                const showCmd = deep || newMode || fileMode || equalMode || diffMode || (item.match && item.match !== 'text');
+                let matchBadge = '';
+                if (newMode) {
+                    matchBadge = `<span class="result-match-badge">update · nueva</span>`;
+                } else if (equalMode || item.match === 'equal') {
+                    matchBadge = `<span class="result-match-badge">main=raw · editar MAIN</span>`;
+                } else if (diffMode || item.match === 'diff') {
+                    const dirText = item.diff_dir === 'raw_longer'
+                        ? 'EN mucho mayor que ES'
+                        : 'ES mucho mayor que EN';
+                    matchBadge = `<span class="result-match-badge" style="background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.35);">⚠️ Brecha: ${item.char_diff} chars · ${dirText} (EN: ${item.raw_len} | ES: ${item.main_len})</span>`;
+                } else if (fileMode || item.match === 'file') {
+                    matchBadge = `<span class="result-match-badge">archivo</span>`;
+                } else if (item.raw_match || item.match === 'raw') {
+                    matchBadge = `<span class="result-match-badge" style="background: rgba(88, 166, 255, 0.15); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.35);">encontrado en raw · editar MAIN</span>`;
+                } else if (item.match && item.match !== 'text') {
+                    matchBadge = `<span class="result-match-badge">por ${escapeHtml(item.match)}</span>`;
+                }
+                const corpus = item.corpus || (String(openFile).toLowerCase().includes('ng') ? 'ng' : 'classic');
+                const corpusBadge = corpus === 'ng'
+                    ? `<span class="result-corpus ng">NGS</span>`
+                    : `<span class="result-corpus classic">Classic</span>`;
+
+                let bodyHtml = '';
+                if (diffMode && item.raw_text !== undefined) {
+                    const cleanRaw = escapeHtml(item.raw_text.replace(/<br>/gi, ' '));
+                    const cleanMain = escapeHtml((item.text || '(Vacío)').replace(/<br>/gi, ' '));
+                    bodyHtml = `
+                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+                            <div style="background: rgba(248, 81, 73, 0.08); border: 1px solid rgba(248, 81, 73, 0.25); border-radius: 6px; padding: 8px 12px;">
+                                <div style="font-size: 11px; font-weight: 700; color: #f85149; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">
+                                    Traducción al Español (Main) · ${item.main_len} chars
+                                </div>
+                                <div style="font-size: 14px; color: var(--text-primary); line-height: 1.4;">${cleanMain}</div>
+                            </div>
+                            <details style="background: rgba(88, 166, 255, 0.05); border: 1px solid rgba(88, 166, 255, 0.2); border-radius: 6px; padding: 6px 12px; cursor: pointer;">
+                                <summary style="font-size: 11px; font-weight: 700; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.04em; user-select: none;">
+                                    Ver Inglés Original de referencia (Raw) · ${item.raw_len} chars
+                                </summary>
+                                <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4; margin-top: 6px; max-height: 180px; overflow-y: auto; white-space: pre-wrap;">${cleanRaw}</div>
+                            </details>
+                        </div>
+                    `;
+                } else if (item.raw_match && item.raw_text) {
+                    const cleanRaw = escapeHtml(item.raw_text.replace(/<br>/gi, ' '));
+                    const cleanMain = escapeHtml((item.main_text || '').replace(/<br>/gi, ' '));
+                    const isPending = !cleanMain || cleanMain === '-';
+                    bodyHtml = `
+                        <div class="result-text">${isPending ? cleanRaw : cleanMain}</div>
+                        <div style="font-size: 12px; color: var(--accent-blue, #58a6ff); margin-top: 4px; display: flex; align-items: center; gap: 8px;">
+                            <span>🔍 Original (Raw): <em>${cleanRaw}</em></span>
+                            ${isPending ? '<span style="color: #d29922; background: rgba(210, 153, 34, 0.15); padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 600;">Sin traducir en Main</span>' : ''}
+                        </div>
+                    `;
+                } else {
+                    bodyHtml = `<div class="result-text">${displayTxt}</div>`;
+                }
+
+                a.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1;">
+                            <div class="result-file">📁 ${escapeHtml(openFile)}</div>
+                            ${corpusBadge}
+                            ${showCmd && cmd ? `<div class="result-cmd">${escapeHtml(cmd)}</div>` : ''}
+                            ${matchBadge}
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
+                            <button type="button" class="btn-copy-cmd" title="Copiar referencia al portapapeles (${escapeHtml(openFile)}, ${escapeHtml(cmd || item.id)})">
+                                📋 Copiar
+                            </button>
+                            <button type="button" class="btn-exclude" title="Omitir solo esta línea de las búsquedas">
+                                🚫 Excluir línea
+                            </button>
+                            <button type="button" class="btn-exclude-file" title="Omitir TODO este archivo CSV de las búsquedas">
+                                📁 Excluir CSV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="result-id">section: ${escapeHtml(item.section || '')} · group: ${escapeHtml(itemGroup)} · id: ${escapeHtml(item.id)}</div>
+                    ${bodyHtml}
+                `;
+
+                // Evitar que hacer clic en botones, detalles o texto seleccionado navegue a la edición
+                a.addEventListener('click', (e) => {
+                    const sel = window.getSelection();
+                    if (sel && sel.toString().trim().length > 0) {
+                        e.preventDefault();
+                        return;
+                    }
+                    if (e.target.closest('.btn-exclude') || e.target.closest('.btn-exclude-file') || e.target.closest('.btn-copy-cmd') || e.target.closest('details')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                });
+
+                const btnCopy = a.querySelector('.btn-copy-cmd');
+                if (btnCopy) {
+                    btnCopy.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const copyContent = `${openFile},${item.section || ''},${itemGroup},${item.id}`;
+                        const setCopied = () => {
+                            btnCopy.innerHTML = '✓ ¡Copiado!';
+                            btnCopy.classList.add('copied');
+                            setTimeout(() => {
+                                btnCopy.innerHTML = '📋 Copiar';
+                                btnCopy.classList.remove('copied');
+                            }, 1500);
+                        };
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(copyContent).then(setCopied).catch(() => {
+                                const ta = document.createElement('textarea');
+                                ta.value = copyContent;
+                                ta.style.position = 'fixed';
+                                ta.style.opacity = '0';
+                                document.body.appendChild(ta);
+                                ta.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(ta);
+                                setCopied();
+                            });
+                        } else {
+                            const ta = document.createElement('textarea');
+                            ta.value = copyContent;
+                            ta.style.position = 'fixed';
+                            ta.style.opacity = '0';
+                            document.body.appendChild(ta);
+                            ta.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(ta);
+                            setCopied();
+                        }
+                    });
+                }
+
+                const btnExclude = a.querySelector('.btn-exclude');
+                if (btnExclude) {
+                    btnExclude.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const snippet = (item.text || item.raw_text || '').replace(/<br>/gi, ' ').slice(0, 120);
+                        promptExcludeItem(e, itemKey, item.id, item.section || '', openFile, itemGroup, snippet);
+                    });
+                }
+
+                const btnExcludeFile = a.querySelector('.btn-exclude-file');
+                if (btnExcludeFile) {
+                    btnExcludeFile.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        promptExcludeFile(e, openFile, corpus);
+                    });
+                }
+
+                resultsList.appendChild(a);
+            });
+
+            if (renderedCount === 0 && items.length > 0) {
+                resultsList.innerHTML = `<div class="empty-state">Todos los resultados coinciden con tus reglas de exclusión (líneas o archivos CSV completos).<br><button type="button" class="btn-restore" style="margin-top: 10px;" onclick="if (excludedFilesMap.size > 0) setExcludedTab('files'); else setExcludedTab('lines'); manageExcludedModal.style.display='flex';">Gestionar exclusiones</button></div>`;
+            }
+
+            renderPagination(page, totalPages, total, capped);
+        }
+    </script>
+</body>
+</html>
